@@ -2695,6 +2695,8 @@ type SesConfigurationSet interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TrackingOptions() SesConfigurationSetTrackingOptionsOutputReference
+	TrackingOptionsInput() *SesConfigurationSetTrackingOptions
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -2721,6 +2723,7 @@ type SesConfigurationSet interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDeliveryOptions(value *SesConfigurationSetDeliveryOptions)
+	PutTrackingOptions(value *SesConfigurationSetTrackingOptions)
 	ResetDeliveryOptions()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -2728,6 +2731,7 @@ type SesConfigurationSet interface {
 	ResetOverrideLogicalId()
 	ResetReputationMetricsEnabled()
 	ResetSendingEnabled()
+	ResetTrackingOptions()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -3018,6 +3022,26 @@ func (j *jsiiProxy_SesConfigurationSet) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesConfigurationSet) TrackingOptions() SesConfigurationSetTrackingOptionsOutputReference {
+	var returns SesConfigurationSetTrackingOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"trackingOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesConfigurationSet) TrackingOptionsInput() *SesConfigurationSetTrackingOptions {
+	var returns *SesConfigurationSetTrackingOptions
+	_jsii_.Get(
+		j,
+		"trackingOptionsInput",
 		&returns,
 	)
 	return returns
@@ -3335,6 +3359,14 @@ func (s *jsiiProxy_SesConfigurationSet) PutDeliveryOptions(value *SesConfigurati
 	)
 }
 
+func (s *jsiiProxy_SesConfigurationSet) PutTrackingOptions(value *SesConfigurationSetTrackingOptions) {
+	_jsii_.InvokeVoid(
+		s,
+		"putTrackingOptions",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SesConfigurationSet) ResetDeliveryOptions() {
 	_jsii_.InvokeVoid(
 		s,
@@ -3371,6 +3403,14 @@ func (s *jsiiProxy_SesConfigurationSet) ResetSendingEnabled() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSendingEnabled",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SesConfigurationSet) ResetTrackingOptions() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTrackingOptions",
 		nil, // no parameters
 	)
 }
@@ -3458,6 +3498,10 @@ type SesConfigurationSetConfig struct {
 	ReputationMetricsEnabled interface{} `field:"optional" json:"reputationMetricsEnabled" yaml:"reputationMetricsEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_configuration_set#sending_enabled SesConfigurationSet#sending_enabled}.
 	SendingEnabled interface{} `field:"optional" json:"sendingEnabled" yaml:"sendingEnabled"`
+	// tracking_options block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_configuration_set#tracking_options SesConfigurationSet#tracking_options}
+	TrackingOptions *SesConfigurationSetTrackingOptions `field:"optional" json:"trackingOptions" yaml:"trackingOptions"`
 }
 
 type SesConfigurationSetDeliveryOptions struct {
@@ -3878,6 +3922,436 @@ func (s *jsiiProxy_SesConfigurationSetDeliveryOptionsOutputReference) Resolve(_c
 }
 
 func (s *jsiiProxy_SesConfigurationSetDeliveryOptionsOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		s,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type SesConfigurationSetTrackingOptions struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ses_configuration_set#custom_redirect_domain SesConfigurationSet#custom_redirect_domain}.
+	CustomRedirectDomain *string `field:"optional" json:"customRedirectDomain" yaml:"customRedirectDomain"`
+}
+
+type SesConfigurationSetTrackingOptionsOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	CustomRedirectDomain() *string
+	SetCustomRedirectDomain(val *string)
+	CustomRedirectDomainInput() *string
+	// Experimental.
+	Fqn() *string
+	InternalValue() *SesConfigurationSetTrackingOptions
+	SetInternalValue(val *SesConfigurationSetTrackingOptions)
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCustomRedirectDomain()
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for SesConfigurationSetTrackingOptionsOutputReference
+type jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) CustomRedirectDomain() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customRedirectDomain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) CustomRedirectDomainInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customRedirectDomainInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) InternalValue() *SesConfigurationSetTrackingOptions {
+	var returns *SesConfigurationSetTrackingOptions
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewSesConfigurationSetTrackingOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SesConfigurationSetTrackingOptionsOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.ses.SesConfigurationSetTrackingOptionsOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		&j,
+	)
+
+	return &j
+}
+
+func NewSesConfigurationSetTrackingOptionsOutputReference_Override(s SesConfigurationSetTrackingOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.ses.SesConfigurationSetTrackingOptionsOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		s,
+	)
+}
+
+func (j *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) SetCustomRedirectDomain(val *string) {
+	_jsii_.Set(
+		j,
+		"customRedirectDomain",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) SetInternalValue(val *SesConfigurationSetTrackingOptions) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (s *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		s,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		s,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		s,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		s,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		s,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		s,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		s,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		s,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		s,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		s,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		s,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		s,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) ResetCustomRedirectDomain() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomRedirectDomain",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (s *jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

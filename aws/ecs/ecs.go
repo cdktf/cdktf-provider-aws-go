@@ -2113,6 +2113,9 @@ type DataAwsEcsService interface {
 	ServiceName() *string
 	SetServiceName(val *string)
 	ServiceNameInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	TaskDefinition() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -2149,6 +2152,7 @@ type DataAwsEcsService interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -2374,6 +2378,26 @@ func (j *jsiiProxy_DataAwsEcsService) ServiceNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEcsService) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsService) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEcsService) TaskDefinition() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2501,6 +2525,14 @@ func (j *jsiiProxy_DataAwsEcsService) SetServiceName(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsEcsService) SetTags(val *map[string]*string) {
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -2710,6 +2742,14 @@ func (d *jsiiProxy_DataAwsEcsService) ResetOverrideLogicalId() {
 	)
 }
 
+func (d *jsiiProxy_DataAwsEcsService) ResetTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataAwsEcsService) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
@@ -2787,6 +2827,8 @@ type DataAwsEcsServiceConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ecs_service#tags DataAwsEcsService#tags}.
+	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 }
 
 // Represents a {@link https://www.terraform.io/docs/providers/aws/d/ecs_task_definition aws_ecs_task_definition}.
