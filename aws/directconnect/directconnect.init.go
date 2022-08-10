@@ -125,6 +125,7 @@ func init() {
 		reflect.TypeOf((*DataAwsDxLocation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "availableMacsecPortSpeeds", GoGetter: "AvailableMacsecPortSpeeds"},
 			_jsii_.MemberProperty{JsiiProperty: "availablePortSpeeds", GoGetter: "AvailablePortSpeeds"},
 			_jsii_.MemberProperty{JsiiProperty: "availableProviders", GoGetter: "AvailableProviders"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},

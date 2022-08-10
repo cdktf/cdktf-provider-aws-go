@@ -19584,6 +19584,9 @@ type ApiGatewayRestApi interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PutRestApiMode() *string
+	SetPutRestApiMode(val *string)
+	PutRestApiModeInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	RootResourceId() *string
@@ -19638,6 +19641,7 @@ type ApiGatewayRestApi interface {
 	ResetOverrideLogicalId()
 	ResetParameters()
 	ResetPolicy()
+	ResetPutRestApiMode()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -20025,6 +20029,26 @@ func (j *jsiiProxy_ApiGatewayRestApi) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ApiGatewayRestApi) PutRestApiMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"putRestApiMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayRestApi) PutRestApiModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"putRestApiModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiGatewayRestApi) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -20274,6 +20298,14 @@ func (j *jsiiProxy_ApiGatewayRestApi) SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayRestApi) SetPutRestApiMode(val *string) {
+	_jsii_.Set(
+		j,
+		"putRestApiMode",
 		val,
 	)
 }
@@ -20579,6 +20611,14 @@ func (a *jsiiProxy_ApiGatewayRestApi) ResetPolicy() {
 	)
 }
 
+func (a *jsiiProxy_ApiGatewayRestApi) ResetPutRestApiMode() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPutRestApiMode",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_ApiGatewayRestApi) ResetTags() {
 	_jsii_.InvokeVoid(
 		a,
@@ -20690,6 +20730,8 @@ type ApiGatewayRestApiConfig struct {
 	Parameters *map[string]*string `field:"optional" json:"parameters" yaml:"parameters"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_rest_api#policy ApiGatewayRestApi#policy}.
 	Policy *string `field:"optional" json:"policy" yaml:"policy"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_rest_api#put_rest_api_mode ApiGatewayRestApi#put_rest_api_mode}.
+	PutRestApiMode *string `field:"optional" json:"putRestApiMode" yaml:"putRestApiMode"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_rest_api#tags ApiGatewayRestApi#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_rest_api#tags_all ApiGatewayRestApi#tags_all}.

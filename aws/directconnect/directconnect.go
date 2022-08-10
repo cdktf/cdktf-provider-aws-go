@@ -1414,6 +1414,7 @@ type DataAwsDxGatewayConfig struct {
 // Represents a {@link https://www.terraform.io/docs/providers/aws/d/dx_location aws_dx_location}.
 type DataAwsDxLocation interface {
 	cdktf.TerraformDataSource
+	AvailableMacsecPortSpeeds() *[]*string
 	AvailablePortSpeeds() *[]*string
 	AvailableProviders() *[]*string
 	// Experimental.
@@ -1503,6 +1504,16 @@ type DataAwsDxLocation interface {
 // The jsii proxy struct for DataAwsDxLocation
 type jsiiProxy_DataAwsDxLocation struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataAwsDxLocation) AvailableMacsecPortSpeeds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"availableMacsecPortSpeeds",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAwsDxLocation) AvailablePortSpeeds() *[]*string {

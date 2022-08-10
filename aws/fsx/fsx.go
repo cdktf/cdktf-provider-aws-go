@@ -20826,6 +20826,8 @@ type FsxOpenzfsFileSystemRootVolumeConfiguration struct {
 	NfsExports *FsxOpenzfsFileSystemRootVolumeConfigurationNfsExports `field:"optional" json:"nfsExports" yaml:"nfsExports"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_file_system#read_only FsxOpenzfsFileSystem#read_only}.
 	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_file_system#record_size_kib FsxOpenzfsFileSystem#record_size_kib}.
+	RecordSizeKib *float64 `field:"optional" json:"recordSizeKib" yaml:"recordSizeKib"`
 	// user_and_group_quotas block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_file_system#user_and_group_quotas FsxOpenzfsFileSystem#user_and_group_quotas}
@@ -21948,6 +21950,9 @@ type FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference interface {
 	ReadOnly() interface{}
 	SetReadOnly(val interface{})
 	ReadOnlyInput() interface{}
+	RecordSizeKib() *float64
+	SetRecordSizeKib(val *float64)
+	RecordSizeKibInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -21988,6 +21993,7 @@ type FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference interface {
 	ResetDataCompressionType()
 	ResetNfsExports()
 	ResetReadOnly()
+	ResetRecordSizeKib()
 	ResetUserAndGroupQuotas()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -22134,6 +22140,26 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) R
 	return returns
 }
 
+func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) RecordSizeKib() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"recordSizeKib",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) RecordSizeKibInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"recordSizeKibInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -22243,6 +22269,14 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) S
 	_jsii_.Set(
 		j,
 		"readOnly",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) SetRecordSizeKib(val *float64) {
+	_jsii_.Set(
+		j,
+		"recordSizeKib",
 		val,
 	)
 }
@@ -22463,6 +22497,14 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) R
 	_jsii_.InvokeVoid(
 		f,
 		"resetReadOnly",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference) ResetRecordSizeKib() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRecordSizeKib",
 		nil, // no parameters
 	)
 }
@@ -25197,6 +25239,9 @@ type FsxOpenzfsVolume interface {
 	ReadOnly() interface{}
 	SetReadOnly(val interface{})
 	ReadOnlyInput() interface{}
+	RecordSizeKib() *float64
+	SetRecordSizeKib(val *float64)
+	RecordSizeKibInput() *float64
 	StorageCapacityQuotaGib() *float64
 	SetStorageCapacityQuotaGib(val *float64)
 	StorageCapacityQuotaGibInput() *float64
@@ -25260,6 +25305,7 @@ type FsxOpenzfsVolume interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetReadOnly()
+	ResetRecordSizeKib()
 	ResetStorageCapacityQuotaGib()
 	ResetStorageCapacityReservationGib()
 	ResetTags()
@@ -25582,6 +25628,26 @@ func (j *jsiiProxy_FsxOpenzfsVolume) ReadOnlyInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FsxOpenzfsVolume) RecordSizeKib() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"recordSizeKib",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOpenzfsVolume) RecordSizeKibInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"recordSizeKibInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxOpenzfsVolume) StorageCapacityQuotaGib() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -25879,6 +25945,14 @@ func (j *jsiiProxy_FsxOpenzfsVolume) SetReadOnly(val interface{}) {
 	_jsii_.Set(
 		j,
 		"readOnly",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxOpenzfsVolume) SetRecordSizeKib(val *float64) {
+	_jsii_.Set(
+		j,
+		"recordSizeKib",
 		val,
 	)
 }
@@ -26200,6 +26274,14 @@ func (f *jsiiProxy_FsxOpenzfsVolume) ResetReadOnly() {
 	)
 }
 
+func (f *jsiiProxy_FsxOpenzfsVolume) ResetRecordSizeKib() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRecordSizeKib",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FsxOpenzfsVolume) ResetStorageCapacityQuotaGib() {
 	_jsii_.InvokeVoid(
 		f,
@@ -26347,6 +26429,8 @@ type FsxOpenzfsVolumeConfig struct {
 	OriginSnapshot *FsxOpenzfsVolumeOriginSnapshot `field:"optional" json:"originSnapshot" yaml:"originSnapshot"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#read_only FsxOpenzfsVolume#read_only}.
 	ReadOnly interface{} `field:"optional" json:"readOnly" yaml:"readOnly"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#record_size_kib FsxOpenzfsVolume#record_size_kib}.
+	RecordSizeKib *float64 `field:"optional" json:"recordSizeKib" yaml:"recordSizeKib"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#storage_capacity_quota_gib FsxOpenzfsVolume#storage_capacity_quota_gib}.
 	StorageCapacityQuotaGib *float64 `field:"optional" json:"storageCapacityQuotaGib" yaml:"storageCapacityQuotaGib"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_openzfs_volume#storage_capacity_reservation_gib FsxOpenzfsVolume#storage_capacity_reservation_gib}.
