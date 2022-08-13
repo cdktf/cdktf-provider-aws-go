@@ -6835,6 +6835,4099 @@ type ConnectInstanceConfig struct {
 	Timeouts *ConnectInstanceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 
+// Represents a {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config aws_connect_instance_storage_config}.
+type ConnectInstanceStorageConfig interface {
+	cdktf.TerraformResource
+	AssociationId() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	InstanceId() *string
+	SetInstanceId(val *string)
+	InstanceIdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	// The tree node.
+	Node() constructs.Node
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	ResourceType() *string
+	SetResourceType(val *string)
+	ResourceTypeInput() *string
+	StorageConfig() ConnectInstanceStorageConfigStorageConfigOutputReference
+	StorageConfigInput() *ConnectInstanceStorageConfigStorageConfig
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutStorageConfig(value *ConnectInstanceStorageConfigStorageConfig)
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for ConnectInstanceStorageConfig
+type jsiiProxy_ConnectInstanceStorageConfig struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) AssociationId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"associationId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) InstanceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) InstanceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) ResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) ResourceTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) StorageConfig() ConnectInstanceStorageConfigStorageConfigOutputReference {
+	var returns ConnectInstanceStorageConfigStorageConfigOutputReference
+	_jsii_.Get(
+		j,
+		"storageConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) StorageConfigInput() *ConnectInstanceStorageConfigStorageConfig {
+	var returns *ConnectInstanceStorageConfigStorageConfig
+	_jsii_.Get(
+		j,
+		"storageConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config aws_connect_instance_storage_config} Resource.
+func NewConnectInstanceStorageConfig(scope constructs.Construct, id *string, config *ConnectInstanceStorageConfigConfig) ConnectInstanceStorageConfig {
+	_init_.Initialize()
+
+	j := jsiiProxy_ConnectInstanceStorageConfig{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.connect.ConnectInstanceStorageConfig",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config aws_connect_instance_storage_config} Resource.
+func NewConnectInstanceStorageConfig_Override(c ConnectInstanceStorageConfig, scope constructs.Construct, id *string, config *ConnectInstanceStorageConfigConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.connect.ConnectInstanceStorageConfig",
+		[]interface{}{scope, id, config},
+		c,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) SetConnection(val interface{}) {
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) SetInstanceId(val *string) {
+	_jsii_.Set(
+		j,
+		"instanceId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) SetProvisioners(val *[]interface{}) {
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfig) SetResourceType(val *string) {
+	_jsii_.Set(
+		j,
+		"resourceType",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func ConnectInstanceStorageConfig_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.connect.ConnectInstanceStorageConfig",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func ConnectInstanceStorageConfig_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-aws.connect.ConnectInstanceStorageConfig",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfig) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		c,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfig) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfig) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfig) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		c,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfig) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfig) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfig) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfig) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfig) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		c,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfig) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfig) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		c,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfig) PutStorageConfig(value *ConnectInstanceStorageConfigStorageConfig) {
+	_jsii_.InvokeVoid(
+		c,
+		"putStorageConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfig) ResetId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfig) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfig) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfig) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfig) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfig) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+// AWS Connect.
+type ConnectInstanceStorageConfigConfig struct {
+	// Experimental.
+	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// Experimental.
+	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config#instance_id ConnectInstanceStorageConfig#instance_id}.
+	InstanceId *string `field:"required" json:"instanceId" yaml:"instanceId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config#resource_type ConnectInstanceStorageConfig#resource_type}.
+	ResourceType *string `field:"required" json:"resourceType" yaml:"resourceType"`
+	// storage_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config#storage_config ConnectInstanceStorageConfig#storage_config}
+	StorageConfig *ConnectInstanceStorageConfigStorageConfig `field:"required" json:"storageConfig" yaml:"storageConfig"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config#id ConnectInstanceStorageConfig#id}.
+	//
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+}
+
+type ConnectInstanceStorageConfigStorageConfig struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config#storage_type ConnectInstanceStorageConfig#storage_type}.
+	StorageType *string `field:"required" json:"storageType" yaml:"storageType"`
+	// kinesis_firehose_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config#kinesis_firehose_config ConnectInstanceStorageConfig#kinesis_firehose_config}
+	KinesisFirehoseConfig *ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig `field:"optional" json:"kinesisFirehoseConfig" yaml:"kinesisFirehoseConfig"`
+	// kinesis_stream_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config#kinesis_stream_config ConnectInstanceStorageConfig#kinesis_stream_config}
+	KinesisStreamConfig *ConnectInstanceStorageConfigStorageConfigKinesisStreamConfig `field:"optional" json:"kinesisStreamConfig" yaml:"kinesisStreamConfig"`
+	// kinesis_video_stream_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config#kinesis_video_stream_config ConnectInstanceStorageConfig#kinesis_video_stream_config}
+	KinesisVideoStreamConfig *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig `field:"optional" json:"kinesisVideoStreamConfig" yaml:"kinesisVideoStreamConfig"`
+	// s3_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config#s3_config ConnectInstanceStorageConfig#s3_config}
+	S3Config *ConnectInstanceStorageConfigStorageConfigS3Config `field:"optional" json:"s3Config" yaml:"s3Config"`
+}
+
+type ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config#firehose_arn ConnectInstanceStorageConfig#firehose_arn}.
+	FirehoseArn *string `field:"required" json:"firehoseArn" yaml:"firehoseArn"`
+}
+
+type ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	FirehoseArn() *string
+	SetFirehoseArn(val *string)
+	FirehoseArnInput() *string
+	// Experimental.
+	Fqn() *string
+	InternalValue() *ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig
+	SetInternalValue(val *ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig)
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference
+type jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) FirehoseArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firehoseArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) FirehoseArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firehoseArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) InternalValue() *ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig {
+	var returns *ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.connect.ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		&j,
+	)
+
+	return &j
+}
+
+func NewConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference_Override(c ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.connect.ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		c,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) SetFirehoseArn(val *string) {
+	_jsii_.Set(
+		j,
+		"firehoseArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) SetInternalValue(val *ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		c,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		c,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type ConnectInstanceStorageConfigStorageConfigKinesisStreamConfig struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config#stream_arn ConnectInstanceStorageConfig#stream_arn}.
+	StreamArn *string `field:"required" json:"streamArn" yaml:"streamArn"`
+}
+
+type ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() *ConnectInstanceStorageConfigStorageConfigKinesisStreamConfig
+	SetInternalValue(val *ConnectInstanceStorageConfigStorageConfigKinesisStreamConfig)
+	StreamArn() *string
+	SetStreamArn(val *string)
+	StreamArnInput() *string
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference
+type jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) InternalValue() *ConnectInstanceStorageConfigStorageConfigKinesisStreamConfig {
+	var returns *ConnectInstanceStorageConfigStorageConfigKinesisStreamConfig
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) StreamArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"streamArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) StreamArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"streamArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.connect.ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		&j,
+	)
+
+	return &j
+}
+
+func NewConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference_Override(c ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.connect.ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		c,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) SetInternalValue(val *ConnectInstanceStorageConfigStorageConfigKinesisStreamConfig) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) SetStreamArn(val *string) {
+	_jsii_.Set(
+		j,
+		"streamArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		c,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		c,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig struct {
+	// encryption_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config#encryption_config ConnectInstanceStorageConfig#encryption_config}
+	EncryptionConfig *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig `field:"required" json:"encryptionConfig" yaml:"encryptionConfig"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config#prefix ConnectInstanceStorageConfig#prefix}.
+	Prefix *string `field:"required" json:"prefix" yaml:"prefix"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config#retention_period_hours ConnectInstanceStorageConfig#retention_period_hours}.
+	RetentionPeriodHours *float64 `field:"required" json:"retentionPeriodHours" yaml:"retentionPeriodHours"`
+}
+
+type ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config#encryption_type ConnectInstanceStorageConfig#encryption_type}.
+	EncryptionType *string `field:"required" json:"encryptionType" yaml:"encryptionType"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config#key_id ConnectInstanceStorageConfig#key_id}.
+	KeyId *string `field:"required" json:"keyId" yaml:"keyId"`
+}
+
+type ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	EncryptionType() *string
+	SetEncryptionType(val *string)
+	EncryptionTypeInput() *string
+	// Experimental.
+	Fqn() *string
+	InternalValue() *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig
+	SetInternalValue(val *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig)
+	KeyId() *string
+	SetKeyId(val *string)
+	KeyIdInput() *string
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference
+type jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) EncryptionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) EncryptionTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) InternalValue() *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig {
+	var returns *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) KeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) KeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.connect.ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		&j,
+	)
+
+	return &j
+}
+
+func NewConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference_Override(c ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.connect.ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		c,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) SetEncryptionType(val *string) {
+	_jsii_.Set(
+		j,
+		"encryptionType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) SetInternalValue(val *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) SetKeyId(val *string) {
+	_jsii_.Set(
+		j,
+		"keyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		c,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		c,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	EncryptionConfig() ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference
+	EncryptionConfigInput() *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig
+	// Experimental.
+	Fqn() *string
+	InternalValue() *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig
+	SetInternalValue(val *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig)
+	Prefix() *string
+	SetPrefix(val *string)
+	PrefixInput() *string
+	RetentionPeriodHours() *float64
+	SetRetentionPeriodHours(val *float64)
+	RetentionPeriodHoursInput() *float64
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutEncryptionConfig(value *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig)
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference
+type jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) EncryptionConfig() ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference {
+	var returns ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) EncryptionConfigInput() *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig {
+	var returns *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig
+	_jsii_.Get(
+		j,
+		"encryptionConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) InternalValue() *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig {
+	var returns *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) Prefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"prefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) PrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"prefixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) RetentionPeriodHours() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retentionPeriodHours",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) RetentionPeriodHoursInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"retentionPeriodHoursInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.connect.ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		&j,
+	)
+
+	return &j
+}
+
+func NewConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference_Override(c ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.connect.ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		c,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) SetInternalValue(val *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) SetPrefix(val *string) {
+	_jsii_.Set(
+		j,
+		"prefix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) SetRetentionPeriodHours(val *float64) {
+	_jsii_.Set(
+		j,
+		"retentionPeriodHours",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		c,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		c,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) PutEncryptionConfig(value *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigEncryptionConfig) {
+	_jsii_.InvokeVoid(
+		c,
+		"putEncryptionConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type ConnectInstanceStorageConfigStorageConfigOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() *ConnectInstanceStorageConfigStorageConfig
+	SetInternalValue(val *ConnectInstanceStorageConfigStorageConfig)
+	KinesisFirehoseConfig() ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference
+	KinesisFirehoseConfigInput() *ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig
+	KinesisStreamConfig() ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference
+	KinesisStreamConfigInput() *ConnectInstanceStorageConfigStorageConfigKinesisStreamConfig
+	KinesisVideoStreamConfig() ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference
+	KinesisVideoStreamConfigInput() *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig
+	S3Config() ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference
+	S3ConfigInput() *ConnectInstanceStorageConfigStorageConfigS3Config
+	StorageType() *string
+	SetStorageType(val *string)
+	StorageTypeInput() *string
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutKinesisFirehoseConfig(value *ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig)
+	PutKinesisStreamConfig(value *ConnectInstanceStorageConfigStorageConfigKinesisStreamConfig)
+	PutKinesisVideoStreamConfig(value *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig)
+	PutS3Config(value *ConnectInstanceStorageConfigStorageConfigS3Config)
+	ResetKinesisFirehoseConfig()
+	ResetKinesisStreamConfig()
+	ResetKinesisVideoStreamConfig()
+	ResetS3Config()
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for ConnectInstanceStorageConfigStorageConfigOutputReference
+type jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) InternalValue() *ConnectInstanceStorageConfigStorageConfig {
+	var returns *ConnectInstanceStorageConfigStorageConfig
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) KinesisFirehoseConfig() ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference {
+	var returns ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigOutputReference
+	_jsii_.Get(
+		j,
+		"kinesisFirehoseConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) KinesisFirehoseConfigInput() *ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig {
+	var returns *ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig
+	_jsii_.Get(
+		j,
+		"kinesisFirehoseConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) KinesisStreamConfig() ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference {
+	var returns ConnectInstanceStorageConfigStorageConfigKinesisStreamConfigOutputReference
+	_jsii_.Get(
+		j,
+		"kinesisStreamConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) KinesisStreamConfigInput() *ConnectInstanceStorageConfigStorageConfigKinesisStreamConfig {
+	var returns *ConnectInstanceStorageConfigStorageConfigKinesisStreamConfig
+	_jsii_.Get(
+		j,
+		"kinesisStreamConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) KinesisVideoStreamConfig() ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference {
+	var returns ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfigOutputReference
+	_jsii_.Get(
+		j,
+		"kinesisVideoStreamConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) KinesisVideoStreamConfigInput() *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig {
+	var returns *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig
+	_jsii_.Get(
+		j,
+		"kinesisVideoStreamConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) S3Config() ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference {
+	var returns ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference
+	_jsii_.Get(
+		j,
+		"s3Config",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) S3ConfigInput() *ConnectInstanceStorageConfigStorageConfigS3Config {
+	var returns *ConnectInstanceStorageConfigStorageConfigS3Config
+	_jsii_.Get(
+		j,
+		"s3ConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) StorageType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) StorageTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewConnectInstanceStorageConfigStorageConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ConnectInstanceStorageConfigStorageConfigOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.connect.ConnectInstanceStorageConfigStorageConfigOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		&j,
+	)
+
+	return &j
+}
+
+func NewConnectInstanceStorageConfigStorageConfigOutputReference_Override(c ConnectInstanceStorageConfigStorageConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.connect.ConnectInstanceStorageConfigStorageConfigOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		c,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) SetInternalValue(val *ConnectInstanceStorageConfigStorageConfig) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) SetStorageType(val *string) {
+	_jsii_.Set(
+		j,
+		"storageType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		c,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		c,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) PutKinesisFirehoseConfig(value *ConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfig) {
+	_jsii_.InvokeVoid(
+		c,
+		"putKinesisFirehoseConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) PutKinesisStreamConfig(value *ConnectInstanceStorageConfigStorageConfigKinesisStreamConfig) {
+	_jsii_.InvokeVoid(
+		c,
+		"putKinesisStreamConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) PutKinesisVideoStreamConfig(value *ConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig) {
+	_jsii_.InvokeVoid(
+		c,
+		"putKinesisVideoStreamConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) PutS3Config(value *ConnectInstanceStorageConfigStorageConfigS3Config) {
+	_jsii_.InvokeVoid(
+		c,
+		"putS3Config",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) ResetKinesisFirehoseConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetKinesisFirehoseConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) ResetKinesisStreamConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetKinesisStreamConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) ResetKinesisVideoStreamConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetKinesisVideoStreamConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) ResetS3Config() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetS3Config",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type ConnectInstanceStorageConfigStorageConfigS3Config struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config#bucket_name ConnectInstanceStorageConfig#bucket_name}.
+	BucketName *string `field:"required" json:"bucketName" yaml:"bucketName"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config#bucket_prefix ConnectInstanceStorageConfig#bucket_prefix}.
+	BucketPrefix *string `field:"required" json:"bucketPrefix" yaml:"bucketPrefix"`
+	// encryption_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config#encryption_config ConnectInstanceStorageConfig#encryption_config}
+	EncryptionConfig *ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig `field:"optional" json:"encryptionConfig" yaml:"encryptionConfig"`
+}
+
+type ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config#encryption_type ConnectInstanceStorageConfig#encryption_type}.
+	EncryptionType *string `field:"required" json:"encryptionType" yaml:"encryptionType"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance_storage_config#key_id ConnectInstanceStorageConfig#key_id}.
+	KeyId *string `field:"required" json:"keyId" yaml:"keyId"`
+}
+
+type ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	EncryptionType() *string
+	SetEncryptionType(val *string)
+	EncryptionTypeInput() *string
+	// Experimental.
+	Fqn() *string
+	InternalValue() *ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig
+	SetInternalValue(val *ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig)
+	KeyId() *string
+	SetKeyId(val *string)
+	KeyIdInput() *string
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference
+type jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) EncryptionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) EncryptionTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) InternalValue() *ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig {
+	var returns *ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) KeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) KeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.connect.ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		&j,
+	)
+
+	return &j
+}
+
+func NewConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference_Override(c ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.connect.ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		c,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) SetEncryptionType(val *string) {
+	_jsii_.Set(
+		j,
+		"encryptionType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) SetInternalValue(val *ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) SetKeyId(val *string) {
+	_jsii_.Set(
+		j,
+		"keyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		c,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		c,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference interface {
+	cdktf.ComplexObject
+	BucketName() *string
+	SetBucketName(val *string)
+	BucketNameInput() *string
+	BucketPrefix() *string
+	SetBucketPrefix(val *string)
+	BucketPrefixInput() *string
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	EncryptionConfig() ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference
+	EncryptionConfigInput() *ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig
+	// Experimental.
+	Fqn() *string
+	InternalValue() *ConnectInstanceStorageConfigStorageConfigS3Config
+	SetInternalValue(val *ConnectInstanceStorageConfigStorageConfigS3Config)
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutEncryptionConfig(value *ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig)
+	ResetEncryptionConfig()
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference
+type jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) BucketName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) BucketNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) BucketPrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketPrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) BucketPrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketPrefixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) EncryptionConfig() ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference {
+	var returns ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) EncryptionConfigInput() *ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig {
+	var returns *ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig
+	_jsii_.Get(
+		j,
+		"encryptionConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) InternalValue() *ConnectInstanceStorageConfigStorageConfigS3Config {
+	var returns *ConnectInstanceStorageConfigStorageConfigS3Config
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.connect.ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		&j,
+	)
+
+	return &j
+}
+
+func NewConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference_Override(c ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.connect.ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		c,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) SetBucketName(val *string) {
+	_jsii_.Set(
+		j,
+		"bucketName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) SetBucketPrefix(val *string) {
+	_jsii_.Set(
+		j,
+		"bucketPrefix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) SetInternalValue(val *ConnectInstanceStorageConfigStorageConfigS3Config) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		c,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		c,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		c,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		c,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		c,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) PutEncryptionConfig(value *ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig) {
+	_jsii_.InvokeVoid(
+		c,
+		"putEncryptionConfig",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) ResetEncryptionConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEncryptionConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		c,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 type ConnectInstanceTimeouts struct {
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance#create ConnectInstance#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`

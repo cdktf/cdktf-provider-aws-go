@@ -6025,6 +6025,7 @@ type DataAwsElasticsearchDomainEbsOptionsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Throughput() *float64
 	VolumeSize() *float64
 	VolumeType() *string
 	// Experimental.
@@ -6151,6 +6152,16 @@ func (j *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) Terrafor
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) Throughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"throughput",
 		&returns,
 	)
 	return returns
@@ -16405,6 +16416,8 @@ type ElasticsearchDomainEbsOptions struct {
 	EbsEnabled interface{} `field:"required" json:"ebsEnabled" yaml:"ebsEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#iops ElasticsearchDomain#iops}.
 	Iops *float64 `field:"optional" json:"iops" yaml:"iops"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#throughput ElasticsearchDomain#throughput}.
+	Throughput *float64 `field:"optional" json:"throughput" yaml:"throughput"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#volume_size ElasticsearchDomain#volume_size}.
 	VolumeSize *float64 `field:"optional" json:"volumeSize" yaml:"volumeSize"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain#volume_type ElasticsearchDomain#volume_type}.
@@ -16446,6 +16459,9 @@ type ElasticsearchDomainEbsOptionsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Throughput() *float64
+	SetThroughput(val *float64)
+	ThroughputInput() *float64
 	VolumeSize() *float64
 	SetVolumeSize(val *float64)
 	VolumeSizeInput() *float64
@@ -16477,6 +16493,7 @@ type ElasticsearchDomainEbsOptionsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetIops()
+	ResetThroughput()
 	ResetVolumeSize()
 	ResetVolumeType()
 	// Produce the Token's value at resolution time.
@@ -16604,6 +16621,26 @@ func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) TerraformResour
 	return returns
 }
 
+func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) Throughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"throughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) ThroughputInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"throughputInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) VolumeSize() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -16721,6 +16758,14 @@ func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) SetTerraformRes
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) SetThroughput(val *float64) {
+	_jsii_.Set(
+		j,
+		"throughput",
 		val,
 	)
 }
@@ -16901,6 +16946,14 @@ func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) ResetIops() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetIops",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference) ResetThroughput() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetThroughput",
 		nil, // no parameters
 	)
 }

@@ -31771,6 +31771,9 @@ type GlueJob interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	ExecutionClass() *string
+	SetExecutionClass(val *string)
+	ExecutionClassInput() *string
 	ExecutionProperty() GlueJobExecutionPropertyOutputReference
 	ExecutionPropertyInput() *GlueJobExecutionProperty
 	// Experimental.
@@ -31875,6 +31878,7 @@ type GlueJob interface {
 	ResetConnections()
 	ResetDefaultArguments()
 	ResetDescription()
+	ResetExecutionClass()
 	ResetExecutionProperty()
 	ResetGlueVersion()
 	ResetId()
@@ -32041,6 +32045,26 @@ func (j *jsiiProxy_GlueJob) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) ExecutionClass() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionClass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) ExecutionClassInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionClassInput",
 		&returns,
 	)
 	return returns
@@ -32531,6 +32555,14 @@ func (j *jsiiProxy_GlueJob) SetDescription(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GlueJob) SetExecutionClass(val *string) {
+	_jsii_.Set(
+		j,
+		"executionClass",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GlueJob) SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -32900,6 +32932,14 @@ func (g *jsiiProxy_GlueJob) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetExecutionClass() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExecutionClass",
 		nil, // no parameters
 	)
 }
@@ -33603,6 +33643,8 @@ type GlueJobConfig struct {
 	DefaultArguments *map[string]*string `field:"optional" json:"defaultArguments" yaml:"defaultArguments"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_job#description GlueJob#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_job#execution_class GlueJob#execution_class}.
+	ExecutionClass *string `field:"optional" json:"executionClass" yaml:"executionClass"`
 	// execution_property block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_job#execution_property GlueJob#execution_property}
