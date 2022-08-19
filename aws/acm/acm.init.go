@@ -44,6 +44,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
+			_jsii_.MemberProperty{JsiiProperty: "notAfter", GoGetter: "NotAfter"},
+			_jsii_.MemberProperty{JsiiProperty: "notBefore", GoGetter: "NotBefore"},
 			_jsii_.MemberProperty{JsiiProperty: "options", GoGetter: "Options"},
 			_jsii_.MemberProperty{JsiiProperty: "optionsInput", GoGetter: "OptionsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},

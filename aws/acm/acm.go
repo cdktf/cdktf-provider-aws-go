@@ -59,6 +59,8 @@ type AcmCertificate interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	NotAfter() *string
+	NotBefore() *string
 	Options() AcmCertificateOptionsOutputReference
 	OptionsInput() *AcmCertificateOptions
 	PrivateKey() *string
@@ -368,6 +370,26 @@ func (j *jsiiProxy_AcmCertificate) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AcmCertificate) NotAfter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notAfter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AcmCertificate) NotBefore() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"notBefore",
 		&returns,
 	)
 	return returns

@@ -1448,6 +1448,1786 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewallEncryptionConfigurationOutputRe
 type DataAwsNetworkfirewallFirewallFirewallStatus struct {
 }
 
+type DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummary struct {
+}
+
+type DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrs struct {
+}
+
+type DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferences struct {
+}
+
+type DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList interface {
+	cdktf.ComplexList
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	// The attribute on the parent resource this class is referencing.
+	TerraformAttribute() *string
+	SetTerraformAttribute(val *string)
+	// The parent resource.
+	TerraformResource() cdktf.IInterpolatingParent
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	WrapsSet() *bool
+	SetWrapsSet(val *bool)
+	// Experimental.
+	ComputeFqn() *string
+	Get(index *float64) DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList
+type jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList struct {
+	internal.Type__cdktfComplexList
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList) WrapsSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"wrapsSet",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewDataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList {
+	_init_.Initialize()
+
+	j := jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.networkfirewall.DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewDataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList_Override(d DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.networkfirewall.DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList) SetWrapsSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"wrapsSet",
+		val,
+	)
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList) Get(index *float64) DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference {
+	var returns DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference
+
+	_jsii_.Invoke(
+		d,
+		"get",
+		[]interface{}{index},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() *DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferences
+	SetInternalValue(val *DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferences)
+	ResolvedCidrCount() *float64
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference
+type jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) InternalValue() *DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferences {
+	var returns *DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferences
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) ResolvedCidrCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"resolvedCidrCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewDataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.networkfirewall.DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewDataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference_Override(d DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.networkfirewall.DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) SetInternalValue(val *DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferences) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		d,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		d,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList interface {
+	cdktf.ComplexList
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	// The attribute on the parent resource this class is referencing.
+	TerraformAttribute() *string
+	SetTerraformAttribute(val *string)
+	// The parent resource.
+	TerraformResource() cdktf.IInterpolatingParent
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	WrapsSet() *bool
+	SetWrapsSet(val *bool)
+	// Experimental.
+	ComputeFqn() *string
+	Get(index *float64) DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList
+type jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList struct {
+	internal.Type__cdktfComplexList
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList) WrapsSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"wrapsSet",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewDataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList {
+	_init_.Initialize()
+
+	j := jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.networkfirewall.DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewDataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList_Override(d DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.networkfirewall.DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList) SetWrapsSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"wrapsSet",
+		val,
+	)
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList) Get(index *float64) DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference {
+	var returns DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference
+
+	_jsii_.Invoke(
+		d,
+		"get",
+		[]interface{}{index},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference interface {
+	cdktf.ComplexObject
+	AvailableCidrCount() *float64
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() *DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrs
+	SetInternalValue(val *DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrs)
+	IpSetReferences() DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UtilizedCidrCount() *float64
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference
+type jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) AvailableCidrCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"availableCidrCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) InternalValue() *DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrs {
+	var returns *DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrs
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) IpSetReferences() DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList {
+	var returns DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsIpSetReferencesList
+	_jsii_.Get(
+		j,
+		"ipSetReferences",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) UtilizedCidrCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"utilizedCidrCount",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewDataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.networkfirewall.DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewDataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference_Override(d DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.networkfirewall.DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) SetInternalValue(val *DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrs) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		d,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		d,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList interface {
+	cdktf.ComplexList
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	// The attribute on the parent resource this class is referencing.
+	TerraformAttribute() *string
+	SetTerraformAttribute(val *string)
+	// The parent resource.
+	TerraformResource() cdktf.IInterpolatingParent
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	WrapsSet() *bool
+	SetWrapsSet(val *bool)
+	// Experimental.
+	ComputeFqn() *string
+	Get(index *float64) DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList
+type jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList struct {
+	internal.Type__cdktfComplexList
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList) WrapsSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"wrapsSet",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewDataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList {
+	_init_.Initialize()
+
+	j := jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.networkfirewall.DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewDataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList_Override(d DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.networkfirewall.DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList) SetWrapsSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"wrapsSet",
+		val,
+	)
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList) Get(index *float64) DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference {
+	var returns DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference
+
+	_jsii_.Invoke(
+		d,
+		"get",
+		[]interface{}{index},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference interface {
+	cdktf.ComplexObject
+	Cidrs() DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() *DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummary
+	SetInternalValue(val *DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummary)
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference
+type jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) Cidrs() DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList {
+	var returns DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrsList
+	_jsii_.Get(
+		j,
+		"cidrs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) InternalValue() *DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummary {
+	var returns *DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummary
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewDataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.networkfirewall.DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewDataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference_Override(d DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.networkfirewall.DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) SetInternalValue(val *DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummary) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		d,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		d,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		d,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		d,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		d,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 type DataAwsNetworkfirewallFirewallFirewallStatusList interface {
 	cdktf.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
@@ -1637,6 +3417,7 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusList) ToString() 
 
 type DataAwsNetworkfirewallFirewallFirewallStatusOutputReference interface {
 	cdktf.ComplexObject
+	CapacityUsageSummary() DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -1647,6 +3428,7 @@ type DataAwsNetworkfirewallFirewallFirewallStatusOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfigurationSyncStateSummary() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -1656,6 +3438,7 @@ type DataAwsNetworkfirewallFirewallFirewallStatusOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataAwsNetworkfirewallFirewallFirewallStatus
 	SetInternalValue(val *DataAwsNetworkfirewallFirewallFirewallStatus)
+	Status() *string
 	SyncStates() DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesList
 	// Experimental.
 	TerraformAttribute() *string
@@ -1704,6 +3487,16 @@ type jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusOutputReference struc
 	internal.Type__cdktfComplexObject
 }
 
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusOutputReference) CapacityUsageSummary() DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList {
+	var returns DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryList
+	_jsii_.Get(
+		j,
+		"capacityUsageSummary",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1719,6 +3512,16 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusOutputReference) 
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusOutputReference) ConfigurationSyncStateSummary() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configurationSyncStateSummary",
 		&returns,
 	)
 	return returns
@@ -1749,6 +3552,16 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusOutputReference) 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusOutputReference) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
 		&returns,
 	)
 	return returns
@@ -2246,6 +4059,7 @@ type DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputRefer
 	Fqn() *string
 	InternalValue() *DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachment
 	SetInternalValue(val *DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachment)
+	Status() *string
 	SubnetId() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -2349,6 +4163,16 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachm
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusSyncStatesAttachmentOutputReference) Status() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"status",
 		&returns,
 	)
 	return returns

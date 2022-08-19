@@ -51118,8 +51118,8 @@ type OpsworksStack interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
-	CustomCookbooksSource() OpsworksStackCustomCookbooksSourceList
-	CustomCookbooksSourceInput() interface{}
+	CustomCookbooksSource() OpsworksStackCustomCookbooksSourceOutputReference
+	CustomCookbooksSourceInput() *OpsworksStackCustomCookbooksSource
 	CustomJson() *string
 	SetCustomJson(val *string)
 	CustomJsonInput() *string
@@ -51200,6 +51200,8 @@ type OpsworksStack interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() OpsworksStackTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	UseCustomCookbooks() interface{}
 	SetUseCustomCookbooks(val interface{})
 	UseCustomCookbooksInput() interface{}
@@ -51234,7 +51236,8 @@ type OpsworksStack interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutCustomCookbooksSource(value interface{})
+	PutCustomCookbooksSource(value *OpsworksStackCustomCookbooksSource)
+	PutTimeouts(value *OpsworksStackTimeouts)
 	ResetAgentVersion()
 	ResetBerkshelfVersion()
 	ResetColor()
@@ -51255,6 +51258,7 @@ type OpsworksStack interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	ResetUseCustomCookbooks()
 	ResetUseOpsworksSecurityGroups()
 	ResetVpcId()
@@ -51423,8 +51427,8 @@ func (j *jsiiProxy_OpsworksStack) Count() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksStack) CustomCookbooksSource() OpsworksStackCustomCookbooksSourceList {
-	var returns OpsworksStackCustomCookbooksSourceList
+func (j *jsiiProxy_OpsworksStack) CustomCookbooksSource() OpsworksStackCustomCookbooksSourceOutputReference {
+	var returns OpsworksStackCustomCookbooksSourceOutputReference
 	_jsii_.Get(
 		j,
 		"customCookbooksSource",
@@ -51433,8 +51437,8 @@ func (j *jsiiProxy_OpsworksStack) CustomCookbooksSource() OpsworksStackCustomCoo
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksStack) CustomCookbooksSourceInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksStack) CustomCookbooksSourceInput() *OpsworksStackCustomCookbooksSource {
+	var returns *OpsworksStackCustomCookbooksSource
 	_jsii_.Get(
 		j,
 		"customCookbooksSourceInput",
@@ -51868,6 +51872,26 @@ func (j *jsiiProxy_OpsworksStack) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksStack) Timeouts() OpsworksStackTimeoutsOutputReference {
+	var returns OpsworksStackTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksStack) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -52389,10 +52413,18 @@ func (o *jsiiProxy_OpsworksStack) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (o *jsiiProxy_OpsworksStack) PutCustomCookbooksSource(value interface{}) {
+func (o *jsiiProxy_OpsworksStack) PutCustomCookbooksSource(value *OpsworksStackCustomCookbooksSource) {
 	_jsii_.InvokeVoid(
 		o,
 		"putCustomCookbooksSource",
+		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OpsworksStack) PutTimeouts(value *OpsworksStackTimeouts) {
+	_jsii_.InvokeVoid(
+		o,
+		"putTimeouts",
 		[]interface{}{value},
 	)
 }
@@ -52541,6 +52573,14 @@ func (o *jsiiProxy_OpsworksStack) ResetTagsAll() {
 	)
 }
 
+func (o *jsiiProxy_OpsworksStack) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
 func (o *jsiiProxy_OpsworksStack) ResetUseCustomCookbooks() {
 	_jsii_.InvokeVoid(
 		o,
@@ -52654,7 +52694,7 @@ type OpsworksStackConfig struct {
 	// custom_cookbooks_source block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack#custom_cookbooks_source OpsworksStack#custom_cookbooks_source}
-	CustomCookbooksSource interface{} `field:"optional" json:"customCookbooksSource" yaml:"customCookbooksSource"`
+	CustomCookbooksSource *OpsworksStackCustomCookbooksSource `field:"optional" json:"customCookbooksSource" yaml:"customCookbooksSource"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack#custom_json OpsworksStack#custom_json}.
 	CustomJson *string `field:"optional" json:"customJson" yaml:"customJson"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack#default_availability_zone OpsworksStack#default_availability_zone}.
@@ -52680,6 +52720,10 @@ type OpsworksStackConfig struct {
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack#tags_all OpsworksStack#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
+	// timeouts block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack#timeouts OpsworksStack#timeouts}
+	Timeouts *OpsworksStackTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack#use_custom_cookbooks OpsworksStack#use_custom_cookbooks}.
 	UseCustomCookbooks interface{} `field:"optional" json:"useCustomCookbooks" yaml:"useCustomCookbooks"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack#use_opsworks_security_groups OpsworksStack#use_opsworks_security_groups}.
@@ -52703,213 +52747,6 @@ type OpsworksStackCustomCookbooksSource struct {
 	Username *string `field:"optional" json:"username" yaml:"username"`
 }
 
-type OpsworksStackCustomCookbooksSourceList interface {
-	cdktf.ComplexList
-	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
-	//
-	// If this returns an empty array the stack will not be attached.
-	// Experimental.
-	CreationStack() *[]*string
-	// Experimental.
-	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
-	TerraformAttribute() *string
-	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-	WrapsSet() *bool
-	SetWrapsSet(val *bool)
-	// Experimental.
-	ComputeFqn() *string
-	Get(index *float64) OpsworksStackCustomCookbooksSourceOutputReference
-	// Produce the Token's value at resolution time.
-	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
-	// Return a string representation of this resolvable object.
-	//
-	// Returns a reversible string representation.
-	// Experimental.
-	ToString() *string
-}
-
-// The jsii proxy struct for OpsworksStackCustomCookbooksSourceList
-type jsiiProxy_OpsworksStackCustomCookbooksSourceList struct {
-	internal.Type__cdktfComplexList
-}
-
-func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceList) CreationStack() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"creationStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceList) Fqn() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"fqn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceList) InternalValue() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceList) TerraformAttribute() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"terraformAttribute",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
-	_jsii_.Get(
-		j,
-		"terraformResource",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceList) WrapsSet() *bool {
-	var returns *bool
-	_jsii_.Get(
-		j,
-		"wrapsSet",
-		&returns,
-	)
-	return returns
-}
-
-
-func NewOpsworksStackCustomCookbooksSourceList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OpsworksStackCustomCookbooksSourceList {
-	_init_.Initialize()
-
-	j := jsiiProxy_OpsworksStackCustomCookbooksSourceList{}
-
-	_jsii_.Create(
-		"@cdktf/provider-aws.opsworks.OpsworksStackCustomCookbooksSourceList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
-		&j,
-	)
-
-	return &j
-}
-
-func NewOpsworksStackCustomCookbooksSourceList_Override(o OpsworksStackCustomCookbooksSourceList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
-	_init_.Initialize()
-
-	_jsii_.Create(
-		"@cdktf/provider-aws.opsworks.OpsworksStackCustomCookbooksSourceList",
-		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
-		o,
-	)
-}
-
-func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceList) SetInternalValue(val interface{}) {
-	_jsii_.Set(
-		j,
-		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceList) SetTerraformAttribute(val *string) {
-	_jsii_.Set(
-		j,
-		"terraformAttribute",
-		val,
-	)
-}
-
-func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceList) SetTerraformResource(val cdktf.IInterpolatingParent) {
-	_jsii_.Set(
-		j,
-		"terraformResource",
-		val,
-	)
-}
-
-func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceList) SetWrapsSet(val *bool) {
-	_jsii_.Set(
-		j,
-		"wrapsSet",
-		val,
-	)
-}
-
-func (o *jsiiProxy_OpsworksStackCustomCookbooksSourceList) ComputeFqn() *string {
-	var returns *string
-
-	_jsii_.Invoke(
-		o,
-		"computeFqn",
-		nil, // no parameters
-		&returns,
-	)
-
-	return returns
-}
-
-func (o *jsiiProxy_OpsworksStackCustomCookbooksSourceList) Get(index *float64) OpsworksStackCustomCookbooksSourceOutputReference {
-	var returns OpsworksStackCustomCookbooksSourceOutputReference
-
-	_jsii_.Invoke(
-		o,
-		"get",
-		[]interface{}{index},
-		&returns,
-	)
-
-	return returns
-}
-
-func (o *jsiiProxy_OpsworksStackCustomCookbooksSourceList) Resolve(_context cdktf.IResolveContext) interface{} {
-	var returns interface{}
-
-	_jsii_.Invoke(
-		o,
-		"resolve",
-		[]interface{}{_context},
-		&returns,
-	)
-
-	return returns
-}
-
-func (o *jsiiProxy_OpsworksStackCustomCookbooksSourceList) ToString() *string {
-	var returns *string
-
-	_jsii_.Invoke(
-		o,
-		"toString",
-		nil, // no parameters
-		&returns,
-	)
-
-	return returns
-}
-
 type OpsworksStackCustomCookbooksSourceOutputReference interface {
 	cdktf.ComplexObject
 	// the index of the complex object in a list.
@@ -52929,8 +52766,8 @@ type OpsworksStackCustomCookbooksSourceOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *OpsworksStackCustomCookbooksSource
+	SetInternalValue(val *OpsworksStackCustomCookbooksSource)
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
@@ -53040,8 +52877,8 @@ func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference) InternalValue() *OpsworksStackCustomCookbooksSource {
+	var returns *OpsworksStackCustomCookbooksSource
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -53191,26 +53028,26 @@ func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference) UsernameIn
 }
 
 
-func NewOpsworksStackCustomCookbooksSourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OpsworksStackCustomCookbooksSourceOutputReference {
+func NewOpsworksStackCustomCookbooksSourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OpsworksStackCustomCookbooksSourceOutputReference {
 	_init_.Initialize()
 
 	j := jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworks.OpsworksStackCustomCookbooksSourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewOpsworksStackCustomCookbooksSourceOutputReference_Override(o OpsworksStackCustomCookbooksSourceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewOpsworksStackCustomCookbooksSourceOutputReference_Override(o OpsworksStackCustomCookbooksSourceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.opsworks.OpsworksStackCustomCookbooksSourceOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)
 }
@@ -53231,7 +53068,7 @@ func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference) SetComplex
 	)
 }
 
-func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference) SetInternalValue(val *OpsworksStackCustomCookbooksSource) {
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -53505,6 +53342,436 @@ func (o *jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference) Resolve(_c
 }
 
 func (o *jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		o,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type OpsworksStackTimeouts struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack#create OpsworksStack#create}.
+	Create *string `field:"optional" json:"create" yaml:"create"`
+}
+
+type OpsworksStackTimeoutsOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	Create() *string
+	SetCreate(val *string)
+	CreateInput() *string
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCreate()
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for OpsworksStackTimeoutsOutputReference
+type jsiiProxy_OpsworksStackTimeoutsOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_OpsworksStackTimeoutsOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksStackTimeoutsOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksStackTimeoutsOutputReference) Create() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"create",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksStackTimeoutsOutputReference) CreateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksStackTimeoutsOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksStackTimeoutsOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksStackTimeoutsOutputReference) InternalValue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksStackTimeoutsOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksStackTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewOpsworksStackTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OpsworksStackTimeoutsOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_OpsworksStackTimeoutsOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.opsworks.OpsworksStackTimeoutsOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		&j,
+	)
+
+	return &j
+}
+
+func NewOpsworksStackTimeoutsOutputReference_Override(o OpsworksStackTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.opsworks.OpsworksStackTimeoutsOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		o,
+	)
+}
+
+func (j *jsiiProxy_OpsworksStackTimeoutsOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksStackTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksStackTimeoutsOutputReference) SetCreate(val *string) {
+	_jsii_.Set(
+		j,
+		"create",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksStackTimeoutsOutputReference) SetInternalValue(val interface{}) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksStackTimeoutsOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpsworksStackTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (o *jsiiProxy_OpsworksStackTimeoutsOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		o,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksStackTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		o,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksStackTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		o,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksStackTimeoutsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		o,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksStackTimeoutsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		o,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksStackTimeoutsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		o,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksStackTimeoutsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		o,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksStackTimeoutsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		o,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksStackTimeoutsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		o,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksStackTimeoutsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		o,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksStackTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		o,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksStackTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		o,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksStackTimeoutsOutputReference) ResetCreate() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetCreate",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksStackTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OpsworksStackTimeoutsOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

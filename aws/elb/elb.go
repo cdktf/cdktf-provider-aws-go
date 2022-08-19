@@ -19992,6 +19992,9 @@ type AlbTargetGroup interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpAddressType() *string
+	SetIpAddressType(val *string)
+	IpAddressTypeInput() *string
 	LambdaMultiValueHeadersEnabled() interface{}
 	SetLambdaMultiValueHeadersEnabled(val interface{})
 	LambdaMultiValueHeadersEnabledInput() interface{}
@@ -20089,6 +20092,7 @@ type AlbTargetGroup interface {
 	ResetDeregistrationDelay()
 	ResetHealthCheck()
 	ResetId()
+	ResetIpAddressType()
 	ResetLambdaMultiValueHeadersEnabled()
 	ResetLoadBalancingAlgorithmType()
 	ResetName()
@@ -20297,6 +20301,26 @@ func (j *jsiiProxy_AlbTargetGroup) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) IpAddressType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) IpAddressTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressTypeInput",
 		&returns,
 	)
 	return returns
@@ -20765,6 +20789,14 @@ func (j *jsiiProxy_AlbTargetGroup) SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AlbTargetGroup) SetIpAddressType(val *string) {
+	_jsii_.Set(
+		j,
+		"ipAddressType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AlbTargetGroup) SetLambdaMultiValueHeadersEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
@@ -21134,6 +21166,14 @@ func (a *jsiiProxy_AlbTargetGroup) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetIpAddressType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIpAddressType",
 		nil, // no parameters
 	)
 }
@@ -22144,6 +22184,8 @@ type AlbTargetGroupConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group#ip_address_type AlbTargetGroup#ip_address_type}.
+	IpAddressType *string `field:"optional" json:"ipAddressType" yaml:"ipAddressType"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group#lambda_multi_value_headers_enabled AlbTargetGroup#lambda_multi_value_headers_enabled}.
 	LambdaMultiValueHeadersEnabled interface{} `field:"optional" json:"lambdaMultiValueHeadersEnabled" yaml:"lambdaMultiValueHeadersEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group#load_balancing_algorithm_type AlbTargetGroup#load_balancing_algorithm_type}.
@@ -71039,6 +71081,9 @@ type LbTargetGroup interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpAddressType() *string
+	SetIpAddressType(val *string)
+	IpAddressTypeInput() *string
 	LambdaMultiValueHeadersEnabled() interface{}
 	SetLambdaMultiValueHeadersEnabled(val interface{})
 	LambdaMultiValueHeadersEnabledInput() interface{}
@@ -71136,6 +71181,7 @@ type LbTargetGroup interface {
 	ResetDeregistrationDelay()
 	ResetHealthCheck()
 	ResetId()
+	ResetIpAddressType()
 	ResetLambdaMultiValueHeadersEnabled()
 	ResetLoadBalancingAlgorithmType()
 	ResetName()
@@ -71344,6 +71390,26 @@ func (j *jsiiProxy_LbTargetGroup) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbTargetGroup) IpAddressType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbTargetGroup) IpAddressTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressTypeInput",
 		&returns,
 	)
 	return returns
@@ -71812,6 +71878,14 @@ func (j *jsiiProxy_LbTargetGroup) SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_LbTargetGroup) SetIpAddressType(val *string) {
+	_jsii_.Set(
+		j,
+		"ipAddressType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LbTargetGroup) SetLambdaMultiValueHeadersEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
@@ -72181,6 +72255,14 @@ func (l *jsiiProxy_LbTargetGroup) ResetId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbTargetGroup) ResetIpAddressType() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetIpAddressType",
 		nil, // no parameters
 	)
 }
@@ -73191,6 +73273,8 @@ type LbTargetGroupConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_target_group#ip_address_type LbTargetGroup#ip_address_type}.
+	IpAddressType *string `field:"optional" json:"ipAddressType" yaml:"ipAddressType"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_target_group#lambda_multi_value_headers_enabled LbTargetGroup#lambda_multi_value_headers_enabled}.
 	LambdaMultiValueHeadersEnabled interface{} `field:"optional" json:"lambdaMultiValueHeadersEnabled" yaml:"lambdaMultiValueHeadersEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lb_target_group#load_balancing_algorithm_type LbTargetGroup#load_balancing_algorithm_type}.

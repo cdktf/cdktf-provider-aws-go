@@ -98493,6 +98493,1281 @@ type NetworkInterfaceSgAttachmentConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 }
 
+// Represents a {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_attachment_accepter aws_networkmanager_attachment_accepter}.
+type NetworkmanagerAttachmentAccepter interface {
+	cdktf.TerraformResource
+	AttachmentId() *string
+	SetAttachmentId(val *string)
+	AttachmentIdInput() *string
+	AttachmentPolicyRuleNumber() *float64
+	AttachmentType() *string
+	SetAttachmentType(val *string)
+	AttachmentTypeInput() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	CoreNetworkArn() *string
+	CoreNetworkId() *string
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	EdgeLocation() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	// The tree node.
+	Node() constructs.Node
+	OwnerAccountId() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	ResourceArn() *string
+	SegmentName() *string
+	State() *string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() NetworkmanagerAttachmentAccepterTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *NetworkmanagerAttachmentAccepterTimeouts)
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetTimeouts()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for NetworkmanagerAttachmentAccepter
+type jsiiProxy_NetworkmanagerAttachmentAccepter struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) AttachmentId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"attachmentId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) AttachmentIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"attachmentIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) AttachmentPolicyRuleNumber() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"attachmentPolicyRuleNumber",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) AttachmentType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"attachmentType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) AttachmentTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"attachmentTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) CoreNetworkArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"coreNetworkArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) CoreNetworkId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"coreNetworkId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) EdgeLocation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edgeLocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) OwnerAccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerAccountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) ResourceArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) SegmentName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"segmentName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) Timeouts() NetworkmanagerAttachmentAccepterTimeoutsOutputReference {
+	var returns NetworkmanagerAttachmentAccepterTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_attachment_accepter aws_networkmanager_attachment_accepter} Resource.
+func NewNetworkmanagerAttachmentAccepter(scope constructs.Construct, id *string, config *NetworkmanagerAttachmentAccepterConfig) NetworkmanagerAttachmentAccepter {
+	_init_.Initialize()
+
+	j := jsiiProxy_NetworkmanagerAttachmentAccepter{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.vpc.NetworkmanagerAttachmentAccepter",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_attachment_accepter aws_networkmanager_attachment_accepter} Resource.
+func NewNetworkmanagerAttachmentAccepter_Override(n NetworkmanagerAttachmentAccepter, scope constructs.Construct, id *string, config *NetworkmanagerAttachmentAccepterConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.vpc.NetworkmanagerAttachmentAccepter",
+		[]interface{}{scope, id, config},
+		n,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) SetAttachmentId(val *string) {
+	_jsii_.Set(
+		j,
+		"attachmentId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) SetAttachmentType(val *string) {
+	_jsii_.Set(
+		j,
+		"attachmentType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) SetConnection(val interface{}) {
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) SetProvisioners(val *[]interface{}) {
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func NetworkmanagerAttachmentAccepter_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.vpc.NetworkmanagerAttachmentAccepter",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func NetworkmanagerAttachmentAccepter_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-aws.vpc.NetworkmanagerAttachmentAccepter",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		n,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		n,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		n,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		n,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		n,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) PutTimeouts(value *NetworkmanagerAttachmentAccepterTimeouts) {
+	_jsii_.InvokeVoid(
+		n,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) ResetId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		n,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+// AWS VPC.
+type NetworkmanagerAttachmentAccepterConfig struct {
+	// Experimental.
+	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// Experimental.
+	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_attachment_accepter#attachment_id NetworkmanagerAttachmentAccepter#attachment_id}.
+	AttachmentId *string `field:"required" json:"attachmentId" yaml:"attachmentId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_attachment_accepter#attachment_type NetworkmanagerAttachmentAccepter#attachment_type}.
+	AttachmentType *string `field:"required" json:"attachmentType" yaml:"attachmentType"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_attachment_accepter#id NetworkmanagerAttachmentAccepter#id}.
+	//
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+	// timeouts block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_attachment_accepter#timeouts NetworkmanagerAttachmentAccepter#timeouts}
+	Timeouts *NetworkmanagerAttachmentAccepterTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+}
+
+type NetworkmanagerAttachmentAccepterTimeouts struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_attachment_accepter#create NetworkmanagerAttachmentAccepter#create}.
+	Create *string `field:"optional" json:"create" yaml:"create"`
+}
+
+type NetworkmanagerAttachmentAccepterTimeoutsOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	Create() *string
+	SetCreate(val *string)
+	CreateInput() *string
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCreate()
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for NetworkmanagerAttachmentAccepterTimeoutsOutputReference
+type jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) Create() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"create",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) CreateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) InternalValue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewNetworkmanagerAttachmentAccepterTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkmanagerAttachmentAccepterTimeoutsOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.vpc.NetworkmanagerAttachmentAccepterTimeoutsOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		&j,
+	)
+
+	return &j
+}
+
+func NewNetworkmanagerAttachmentAccepterTimeoutsOutputReference_Override(n NetworkmanagerAttachmentAccepterTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.vpc.NetworkmanagerAttachmentAccepterTimeoutsOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		n,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) SetCreate(val *string) {
+	_jsii_.Set(
+		j,
+		"create",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) SetInternalValue(val interface{}) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		n,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		n,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		n,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) ResetCreate() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetCreate",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepterTimeoutsOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 // Represents a {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_connection aws_networkmanager_connection}.
 type NetworkmanagerConnection interface {
 	cdktf.TerraformResource
@@ -113038,6 +114313,1958 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistrationTimeoutsOutputReferen
 }
 
 func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistrationTimeoutsOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+// Represents a {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_vpc_attachment aws_networkmanager_vpc_attachment}.
+type NetworkmanagerVpcAttachment interface {
+	cdktf.TerraformResource
+	Arn() *string
+	AttachmentPolicyRuleNumber() *float64
+	AttachmentType() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	CoreNetworkArn() *string
+	CoreNetworkId() *string
+	SetCoreNetworkId(val *string)
+	CoreNetworkIdInput() *string
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	EdgeLocation() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	// The tree node.
+	Node() constructs.Node
+	Options() NetworkmanagerVpcAttachmentOptionsOutputReference
+	OptionsInput() *NetworkmanagerVpcAttachmentOptions
+	OwnerAccountId() *string
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	ResourceArn() *string
+	SegmentName() *string
+	State() *string
+	SubnetArns() *[]*string
+	SetSubnetArns(val *[]*string)
+	SubnetArnsInput() *[]*string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() NetworkmanagerVpcAttachmentTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	VpcArn() *string
+	SetVpcArn(val *string)
+	VpcArnInput() *string
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutOptions(value *NetworkmanagerVpcAttachmentOptions)
+	PutTimeouts(value *NetworkmanagerVpcAttachmentTimeouts)
+	ResetId()
+	ResetOptions()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetTags()
+	ResetTagsAll()
+	ResetTimeouts()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for NetworkmanagerVpcAttachment
+type jsiiProxy_NetworkmanagerVpcAttachment struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) AttachmentPolicyRuleNumber() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"attachmentPolicyRuleNumber",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) AttachmentType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"attachmentType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) CoreNetworkArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"coreNetworkArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) CoreNetworkId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"coreNetworkId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) CoreNetworkIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"coreNetworkIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) EdgeLocation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edgeLocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) Options() NetworkmanagerVpcAttachmentOptionsOutputReference {
+	var returns NetworkmanagerVpcAttachmentOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"options",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) OptionsInput() *NetworkmanagerVpcAttachmentOptions {
+	var returns *NetworkmanagerVpcAttachmentOptions
+	_jsii_.Get(
+		j,
+		"optionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) OwnerAccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerAccountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) ResourceArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) SegmentName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"segmentName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) SubnetArns() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"subnetArns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) SubnetArnsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"subnetArnsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) Timeouts() NetworkmanagerVpcAttachmentTimeoutsOutputReference {
+	var returns NetworkmanagerVpcAttachmentTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) VpcArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpcArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) VpcArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpcArnInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_vpc_attachment aws_networkmanager_vpc_attachment} Resource.
+func NewNetworkmanagerVpcAttachment(scope constructs.Construct, id *string, config *NetworkmanagerVpcAttachmentConfig) NetworkmanagerVpcAttachment {
+	_init_.Initialize()
+
+	j := jsiiProxy_NetworkmanagerVpcAttachment{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.vpc.NetworkmanagerVpcAttachment",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_vpc_attachment aws_networkmanager_vpc_attachment} Resource.
+func NewNetworkmanagerVpcAttachment_Override(n NetworkmanagerVpcAttachment, scope constructs.Construct, id *string, config *NetworkmanagerVpcAttachmentConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.vpc.NetworkmanagerVpcAttachment",
+		[]interface{}{scope, id, config},
+		n,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) SetConnection(val interface{}) {
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) SetCoreNetworkId(val *string) {
+	_jsii_.Set(
+		j,
+		"coreNetworkId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) SetProvisioners(val *[]interface{}) {
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) SetSubnetArns(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"subnetArns",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) SetTags(val *map[string]*string) {
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) SetTagsAll(val *map[string]*string) {
+	_jsii_.Set(
+		j,
+		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) SetVpcArn(val *string) {
+	_jsii_.Set(
+		j,
+		"vpcArn",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func NetworkmanagerVpcAttachment_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.vpc.NetworkmanagerVpcAttachment",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func NetworkmanagerVpcAttachment_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-aws.vpc.NetworkmanagerVpcAttachment",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		n,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		n,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		n,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		n,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		n,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) PutOptions(value *NetworkmanagerVpcAttachmentOptions) {
+	_jsii_.InvokeVoid(
+		n,
+		"putOptions",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) PutTimeouts(value *NetworkmanagerVpcAttachmentTimeouts) {
+	_jsii_.InvokeVoid(
+		n,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) ResetId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) ResetOptions() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetOptions",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) ResetTags() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		n,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachment) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+// AWS VPC.
+type NetworkmanagerVpcAttachmentConfig struct {
+	// Experimental.
+	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// Experimental.
+	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_vpc_attachment#core_network_id NetworkmanagerVpcAttachment#core_network_id}.
+	CoreNetworkId *string `field:"required" json:"coreNetworkId" yaml:"coreNetworkId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_vpc_attachment#subnet_arns NetworkmanagerVpcAttachment#subnet_arns}.
+	SubnetArns *[]*string `field:"required" json:"subnetArns" yaml:"subnetArns"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_vpc_attachment#vpc_arn NetworkmanagerVpcAttachment#vpc_arn}.
+	VpcArn *string `field:"required" json:"vpcArn" yaml:"vpcArn"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_vpc_attachment#id NetworkmanagerVpcAttachment#id}.
+	//
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+	// options block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_vpc_attachment#options NetworkmanagerVpcAttachment#options}
+	Options *NetworkmanagerVpcAttachmentOptions `field:"optional" json:"options" yaml:"options"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_vpc_attachment#tags NetworkmanagerVpcAttachment#tags}.
+	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_vpc_attachment#tags_all NetworkmanagerVpcAttachment#tags_all}.
+	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
+	// timeouts block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_vpc_attachment#timeouts NetworkmanagerVpcAttachment#timeouts}
+	Timeouts *NetworkmanagerVpcAttachmentTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+}
+
+type NetworkmanagerVpcAttachmentOptions struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_vpc_attachment#ipv6_support NetworkmanagerVpcAttachment#ipv6_support}.
+	Ipv6Support interface{} `field:"required" json:"ipv6Support" yaml:"ipv6Support"`
+}
+
+type NetworkmanagerVpcAttachmentOptionsOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() *NetworkmanagerVpcAttachmentOptions
+	SetInternalValue(val *NetworkmanagerVpcAttachmentOptions)
+	Ipv6Support() interface{}
+	SetIpv6Support(val interface{})
+	Ipv6SupportInput() interface{}
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for NetworkmanagerVpcAttachmentOptionsOutputReference
+type jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) InternalValue() *NetworkmanagerVpcAttachmentOptions {
+	var returns *NetworkmanagerVpcAttachmentOptions
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) Ipv6Support() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipv6Support",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) Ipv6SupportInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipv6SupportInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewNetworkmanagerVpcAttachmentOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkmanagerVpcAttachmentOptionsOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.vpc.NetworkmanagerVpcAttachmentOptionsOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		&j,
+	)
+
+	return &j
+}
+
+func NewNetworkmanagerVpcAttachmentOptionsOutputReference_Override(n NetworkmanagerVpcAttachmentOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.vpc.NetworkmanagerVpcAttachmentOptionsOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		n,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) SetInternalValue(val *NetworkmanagerVpcAttachmentOptions) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) SetIpv6Support(val interface{}) {
+	_jsii_.Set(
+		j,
+		"ipv6Support",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		n,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		n,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		n,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type NetworkmanagerVpcAttachmentTimeouts struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_vpc_attachment#create NetworkmanagerVpcAttachment#create}.
+	Create *string `field:"optional" json:"create" yaml:"create"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_vpc_attachment#delete NetworkmanagerVpcAttachment#delete}.
+	Delete *string `field:"optional" json:"delete" yaml:"delete"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_vpc_attachment#update NetworkmanagerVpcAttachment#update}.
+	Update *string `field:"optional" json:"update" yaml:"update"`
+}
+
+type NetworkmanagerVpcAttachmentTimeoutsOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	Create() *string
+	SetCreate(val *string)
+	CreateInput() *string
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	Delete() *string
+	SetDelete(val *string)
+	DeleteInput() *string
+	// Experimental.
+	Fqn() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Update() *string
+	SetUpdate(val *string)
+	UpdateInput() *string
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCreate()
+	ResetDelete()
+	ResetUpdate()
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for NetworkmanagerVpcAttachmentTimeoutsOutputReference
+type jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) Create() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"create",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) CreateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) Delete() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"delete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) DeleteInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) InternalValue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) Update() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"update",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) UpdateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateInput",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewNetworkmanagerVpcAttachmentTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkmanagerVpcAttachmentTimeoutsOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.vpc.NetworkmanagerVpcAttachmentTimeoutsOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		&j,
+	)
+
+	return &j
+}
+
+func NewNetworkmanagerVpcAttachmentTimeoutsOutputReference_Override(n NetworkmanagerVpcAttachmentTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.vpc.NetworkmanagerVpcAttachmentTimeoutsOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		n,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) SetCreate(val *string) {
+	_jsii_.Set(
+		j,
+		"create",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) SetDelete(val *string) {
+	_jsii_.Set(
+		j,
+		"delete",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) SetInternalValue(val interface{}) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) SetUpdate(val *string) {
+	_jsii_.Set(
+		j,
+		"update",
+		val,
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		n,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		n,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		n,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		n,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		n,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		n,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		n,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) ResetCreate() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetCreate",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) ResetDelete() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetDelete",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) ResetUpdate() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetUpdate",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentTimeoutsOutputReference) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(

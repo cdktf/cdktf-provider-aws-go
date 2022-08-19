@@ -18697,6 +18697,3304 @@ type MskScramSecretAssociationConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 }
 
+// Represents a {@link https://www.terraform.io/docs/providers/aws/r/msk_serverless_cluster aws_msk_serverless_cluster}.
+type MskServerlessCluster interface {
+	cdktf.TerraformResource
+	Arn() *string
+	// Experimental.
+	CdktfStack() cdktf.TerraformStack
+	ClientAuthentication() MskServerlessClusterClientAuthenticationOutputReference
+	ClientAuthenticationInput() *MskServerlessClusterClientAuthentication
+	ClusterName() *string
+	SetClusterName(val *string)
+	ClusterNameInput() *string
+	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
+	ConstructNodeMetadata() *map[string]interface{}
+	// Experimental.
+	Count() *float64
+	// Experimental.
+	SetCount(val *float64)
+	// Experimental.
+	DependsOn() *[]*string
+	// Experimental.
+	SetDependsOn(val *[]*string)
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
+	Fqn() *string
+	// Experimental.
+	FriendlyUniqueId() *string
+	Id() *string
+	SetId(val *string)
+	IdInput() *string
+	// Experimental.
+	Lifecycle() *cdktf.TerraformResourceLifecycle
+	// Experimental.
+	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	// The tree node.
+	Node() constructs.Node
+	// Experimental.
+	Provider() cdktf.TerraformProvider
+	// Experimental.
+	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
+	// Experimental.
+	RawOverrides() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
+	// Experimental.
+	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	// Experimental.
+	TerraformMetaArguments() *map[string]interface{}
+	// Experimental.
+	TerraformResourceType() *string
+	Timeouts() MskServerlessClusterTimeoutsOutputReference
+	TimeoutsInput() interface{}
+	VpcConfig() MskServerlessClusterVpcConfigList
+	VpcConfigInput() interface{}
+	// Experimental.
+	AddOverride(path *string, value interface{})
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Overrides the auto-generated logical ID with a specific ID.
+	// Experimental.
+	OverrideLogicalId(newLogicalId *string)
+	PutClientAuthentication(value *MskServerlessClusterClientAuthentication)
+	PutTimeouts(value *MskServerlessClusterTimeouts)
+	PutVpcConfig(value interface{})
+	ResetId()
+	// Resets a previously passed logical Id to use the auto-generated logical id again.
+	// Experimental.
+	ResetOverrideLogicalId()
+	ResetTags()
+	ResetTagsAll()
+	ResetTimeouts()
+	SynthesizeAttributes() *map[string]interface{}
+	// Experimental.
+	ToMetadata() interface{}
+	// Returns a string representation of this construct.
+	ToString() *string
+	// Adds this resource to the terraform JSON output.
+	// Experimental.
+	ToTerraform() interface{}
+}
+
+// The jsii proxy struct for MskServerlessCluster
+type jsiiProxy_MskServerlessCluster struct {
+	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_MskServerlessCluster) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) CdktfStack() cdktf.TerraformStack {
+	var returns cdktf.TerraformStack
+	_jsii_.Get(
+		j,
+		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) ClientAuthentication() MskServerlessClusterClientAuthenticationOutputReference {
+	var returns MskServerlessClusterClientAuthenticationOutputReference
+	_jsii_.Get(
+		j,
+		"clientAuthentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) ClientAuthenticationInput() *MskServerlessClusterClientAuthentication {
+	var returns *MskServerlessClusterClientAuthentication
+	_jsii_.Get(
+		j,
+		"clientAuthenticationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) ClusterName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) ClusterNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) ConstructNodeMetadata() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) Count() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) FriendlyUniqueId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) Id() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) IdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) Lifecycle() *cdktf.TerraformResourceLifecycle {
+	var returns *cdktf.TerraformResourceLifecycle
+	_jsii_.Get(
+		j,
+		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) Node() constructs.Node {
+	var returns constructs.Node
+	_jsii_.Get(
+		j,
+		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) Provider() cdktf.TerraformProvider {
+	var returns cdktf.TerraformProvider
+	_jsii_.Get(
+		j,
+		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) RawOverrides() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+	var returns *cdktf.TerraformProviderGeneratorMetadata
+	_jsii_.Get(
+		j,
+		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) TerraformMetaArguments() *map[string]interface{} {
+	var returns *map[string]interface{}
+	_jsii_.Get(
+		j,
+		"terraformMetaArguments",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) TerraformResourceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) Timeouts() MskServerlessClusterTimeoutsOutputReference {
+	var returns MskServerlessClusterTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) VpcConfig() MskServerlessClusterVpcConfigList {
+	var returns MskServerlessClusterVpcConfigList
+	_jsii_.Get(
+		j,
+		"vpcConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessCluster) VpcConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vpcConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/msk_serverless_cluster aws_msk_serverless_cluster} Resource.
+func NewMskServerlessCluster(scope constructs.Construct, id *string, config *MskServerlessClusterConfig) MskServerlessCluster {
+	_init_.Initialize()
+
+	j := jsiiProxy_MskServerlessCluster{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.msk.MskServerlessCluster",
+		[]interface{}{scope, id, config},
+		&j,
+	)
+
+	return &j
+}
+
+// Create a new {@link https://www.terraform.io/docs/providers/aws/r/msk_serverless_cluster aws_msk_serverless_cluster} Resource.
+func NewMskServerlessCluster_Override(m MskServerlessCluster, scope constructs.Construct, id *string, config *MskServerlessClusterConfig) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.msk.MskServerlessCluster",
+		[]interface{}{scope, id, config},
+		m,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessCluster) SetClusterName(val *string) {
+	_jsii_.Set(
+		j,
+		"clusterName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessCluster) SetConnection(val interface{}) {
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessCluster) SetCount(val *float64) {
+	_jsii_.Set(
+		j,
+		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessCluster) SetDependsOn(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessCluster) SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessCluster) SetId(val *string) {
+	_jsii_.Set(
+		j,
+		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessCluster) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	_jsii_.Set(
+		j,
+		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessCluster) SetProvider(val cdktf.TerraformProvider) {
+	_jsii_.Set(
+		j,
+		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessCluster) SetProvisioners(val *[]interface{}) {
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessCluster) SetTags(val *map[string]*string) {
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessCluster) SetTagsAll(val *map[string]*string) {
+	_jsii_.Set(
+		j,
+		"tagsAll",
+		val,
+	)
+}
+
+// Checks if `x` is a construct.
+//
+// Use this method instead of `instanceof` to properly detect `Construct`
+// instances, even when the construct library is symlinked.
+//
+// Explanation: in JavaScript, multiple copies of the `constructs` library on
+// disk are seen as independent, completely different libraries. As a
+// consequence, the class `Construct` in each copy of the `constructs` library
+// is seen as a different class, and an instance of one class will not test as
+// `instanceof` the other class. `npm install` will not create installations
+// like this, but users may manually symlink construct libraries together or
+// use a monorepo tool: in those cases, multiple copies of the `constructs`
+// library can be accidentally installed, and `instanceof` will behave
+// unpredictably. It is safest to avoid using `instanceof`, and using
+// this type-testing method instead.
+//
+// Returns: true if `x` is an object created from a class which extends `Construct`.
+func MskServerlessCluster_IsConstruct(x interface{}) *bool {
+	_init_.Initialize()
+
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.msk.MskServerlessCluster",
+		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func MskServerlessCluster_TfResourceType() *string {
+	_init_.Initialize()
+	var returns *string
+	_jsii_.StaticGet(
+		"@cdktf/provider-aws.msk.MskServerlessCluster",
+		"tfResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessCluster) AddOverride(path *string, value interface{}) {
+	_jsii_.InvokeVoid(
+		m,
+		"addOverride",
+		[]interface{}{path, value},
+	)
+}
+
+func (m *jsiiProxy_MskServerlessCluster) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		m,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessCluster) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessCluster) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		m,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessCluster) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		m,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessCluster) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessCluster) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessCluster) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessCluster) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessCluster) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		m,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessCluster) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"interpolationForAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessCluster) OverrideLogicalId(newLogicalId *string) {
+	_jsii_.InvokeVoid(
+		m,
+		"overrideLogicalId",
+		[]interface{}{newLogicalId},
+	)
+}
+
+func (m *jsiiProxy_MskServerlessCluster) PutClientAuthentication(value *MskServerlessClusterClientAuthentication) {
+	_jsii_.InvokeVoid(
+		m,
+		"putClientAuthentication",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MskServerlessCluster) PutTimeouts(value *MskServerlessClusterTimeouts) {
+	_jsii_.InvokeVoid(
+		m,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MskServerlessCluster) PutVpcConfig(value interface{}) {
+	_jsii_.InvokeVoid(
+		m,
+		"putVpcConfig",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MskServerlessCluster) ResetId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskServerlessCluster) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskServerlessCluster) ResetTags() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskServerlessCluster) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskServerlessCluster) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskServerlessCluster) SynthesizeAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		m,
+		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessCluster) ToMetadata() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"toMetadata",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessCluster) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessCluster) ToTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"toTerraform",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type MskServerlessClusterClientAuthentication struct {
+	// sasl block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_serverless_cluster#sasl MskServerlessCluster#sasl}
+	Sasl *MskServerlessClusterClientAuthenticationSasl `field:"required" json:"sasl" yaml:"sasl"`
+}
+
+type MskServerlessClusterClientAuthenticationOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() *MskServerlessClusterClientAuthentication
+	SetInternalValue(val *MskServerlessClusterClientAuthentication)
+	Sasl() MskServerlessClusterClientAuthenticationSaslOutputReference
+	SaslInput() *MskServerlessClusterClientAuthenticationSasl
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSasl(value *MskServerlessClusterClientAuthenticationSasl)
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for MskServerlessClusterClientAuthenticationOutputReference
+type jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) InternalValue() *MskServerlessClusterClientAuthentication {
+	var returns *MskServerlessClusterClientAuthentication
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) Sasl() MskServerlessClusterClientAuthenticationSaslOutputReference {
+	var returns MskServerlessClusterClientAuthenticationSaslOutputReference
+	_jsii_.Get(
+		j,
+		"sasl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) SaslInput() *MskServerlessClusterClientAuthenticationSasl {
+	var returns *MskServerlessClusterClientAuthenticationSasl
+	_jsii_.Get(
+		j,
+		"saslInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewMskServerlessClusterClientAuthenticationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MskServerlessClusterClientAuthenticationOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.msk.MskServerlessClusterClientAuthenticationOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		&j,
+	)
+
+	return &j
+}
+
+func NewMskServerlessClusterClientAuthenticationOutputReference_Override(m MskServerlessClusterClientAuthenticationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.msk.MskServerlessClusterClientAuthenticationOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		m,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) SetInternalValue(val *MskServerlessClusterClientAuthentication) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		m,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		m,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		m,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		m,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) PutSasl(value *MskServerlessClusterClientAuthenticationSasl) {
+	_jsii_.InvokeVoid(
+		m,
+		"putSasl",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type MskServerlessClusterClientAuthenticationSasl struct {
+	// iam block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_serverless_cluster#iam MskServerlessCluster#iam}
+	Iam *MskServerlessClusterClientAuthenticationSaslIam `field:"required" json:"iam" yaml:"iam"`
+}
+
+type MskServerlessClusterClientAuthenticationSaslIam struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_serverless_cluster#enabled MskServerlessCluster#enabled}.
+	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+}
+
+type MskServerlessClusterClientAuthenticationSaslIamOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
+	// Experimental.
+	Fqn() *string
+	InternalValue() *MskServerlessClusterClientAuthenticationSaslIam
+	SetInternalValue(val *MskServerlessClusterClientAuthenticationSaslIam)
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for MskServerlessClusterClientAuthenticationSaslIamOutputReference
+type jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) InternalValue() *MskServerlessClusterClientAuthenticationSaslIam {
+	var returns *MskServerlessClusterClientAuthenticationSaslIam
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewMskServerlessClusterClientAuthenticationSaslIamOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MskServerlessClusterClientAuthenticationSaslIamOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.msk.MskServerlessClusterClientAuthenticationSaslIamOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		&j,
+	)
+
+	return &j
+}
+
+func NewMskServerlessClusterClientAuthenticationSaslIamOutputReference_Override(m MskServerlessClusterClientAuthenticationSaslIamOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.msk.MskServerlessClusterClientAuthenticationSaslIamOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		m,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) SetEnabled(val interface{}) {
+	_jsii_.Set(
+		j,
+		"enabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) SetInternalValue(val *MskServerlessClusterClientAuthenticationSaslIam) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		m,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		m,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		m,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		m,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type MskServerlessClusterClientAuthenticationSaslOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	Iam() MskServerlessClusterClientAuthenticationSaslIamOutputReference
+	IamInput() *MskServerlessClusterClientAuthenticationSaslIam
+	InternalValue() *MskServerlessClusterClientAuthenticationSasl
+	SetInternalValue(val *MskServerlessClusterClientAuthenticationSasl)
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutIam(value *MskServerlessClusterClientAuthenticationSaslIam)
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for MskServerlessClusterClientAuthenticationSaslOutputReference
+type jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) Iam() MskServerlessClusterClientAuthenticationSaslIamOutputReference {
+	var returns MskServerlessClusterClientAuthenticationSaslIamOutputReference
+	_jsii_.Get(
+		j,
+		"iam",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) IamInput() *MskServerlessClusterClientAuthenticationSaslIam {
+	var returns *MskServerlessClusterClientAuthenticationSaslIam
+	_jsii_.Get(
+		j,
+		"iamInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) InternalValue() *MskServerlessClusterClientAuthenticationSasl {
+	var returns *MskServerlessClusterClientAuthenticationSasl
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewMskServerlessClusterClientAuthenticationSaslOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MskServerlessClusterClientAuthenticationSaslOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.msk.MskServerlessClusterClientAuthenticationSaslOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		&j,
+	)
+
+	return &j
+}
+
+func NewMskServerlessClusterClientAuthenticationSaslOutputReference_Override(m MskServerlessClusterClientAuthenticationSaslOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.msk.MskServerlessClusterClientAuthenticationSaslOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		m,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) SetInternalValue(val *MskServerlessClusterClientAuthenticationSasl) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		m,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		m,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		m,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		m,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) PutIam(value *MskServerlessClusterClientAuthenticationSaslIam) {
+	_jsii_.InvokeVoid(
+		m,
+		"putIam",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+// AWS Managed Streaming for Kafka.
+type MskServerlessClusterConfig struct {
+	// Experimental.
+	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	// Experimental.
+	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	// Experimental.
+	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	// Experimental.
+	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
+	// Experimental.
+	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
+	// Experimental.
+	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// Experimental.
+	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	// client_authentication block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_serverless_cluster#client_authentication MskServerlessCluster#client_authentication}
+	ClientAuthentication *MskServerlessClusterClientAuthentication `field:"required" json:"clientAuthentication" yaml:"clientAuthentication"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_serverless_cluster#cluster_name MskServerlessCluster#cluster_name}.
+	ClusterName *string `field:"required" json:"clusterName" yaml:"clusterName"`
+	// vpc_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_serverless_cluster#vpc_config MskServerlessCluster#vpc_config}
+	VpcConfig interface{} `field:"required" json:"vpcConfig" yaml:"vpcConfig"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_serverless_cluster#id MskServerlessCluster#id}.
+	//
+	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_serverless_cluster#tags MskServerlessCluster#tags}.
+	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_serverless_cluster#tags_all MskServerlessCluster#tags_all}.
+	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
+	// timeouts block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_serverless_cluster#timeouts MskServerlessCluster#timeouts}
+	Timeouts *MskServerlessClusterTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+}
+
+type MskServerlessClusterTimeouts struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_serverless_cluster#create MskServerlessCluster#create}.
+	Create *string `field:"optional" json:"create" yaml:"create"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_serverless_cluster#delete MskServerlessCluster#delete}.
+	Delete *string `field:"optional" json:"delete" yaml:"delete"`
+}
+
+type MskServerlessClusterTimeoutsOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	Create() *string
+	SetCreate(val *string)
+	CreateInput() *string
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	Delete() *string
+	SetDelete(val *string)
+	DeleteInput() *string
+	// Experimental.
+	Fqn() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCreate()
+	ResetDelete()
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for MskServerlessClusterTimeoutsOutputReference
+type jsiiProxy_MskServerlessClusterTimeoutsOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) Create() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"create",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) CreateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) Delete() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"delete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) DeleteInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) InternalValue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewMskServerlessClusterTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MskServerlessClusterTimeoutsOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_MskServerlessClusterTimeoutsOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.msk.MskServerlessClusterTimeoutsOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		&j,
+	)
+
+	return &j
+}
+
+func NewMskServerlessClusterTimeoutsOutputReference_Override(m MskServerlessClusterTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.msk.MskServerlessClusterTimeoutsOutputReference",
+		[]interface{}{terraformResource, terraformAttribute},
+		m,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) SetCreate(val *string) {
+	_jsii_.Set(
+		j,
+		"create",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) SetDelete(val *string) {
+	_jsii_.Set(
+		j,
+		"delete",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) SetInternalValue(val interface{}) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		m,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		m,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		m,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		m,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) ResetCreate() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCreate",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) ResetDelete() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDelete",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterTimeoutsOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type MskServerlessClusterVpcConfig struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_serverless_cluster#subnet_ids MskServerlessCluster#subnet_ids}.
+	SubnetIds *[]*string `field:"required" json:"subnetIds" yaml:"subnetIds"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/msk_serverless_cluster#security_group_ids MskServerlessCluster#security_group_ids}.
+	SecurityGroupIds *[]*string `field:"optional" json:"securityGroupIds" yaml:"securityGroupIds"`
+}
+
+type MskServerlessClusterVpcConfigList interface {
+	cdktf.ComplexList
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	// The attribute on the parent resource this class is referencing.
+	TerraformAttribute() *string
+	SetTerraformAttribute(val *string)
+	// The parent resource.
+	TerraformResource() cdktf.IInterpolatingParent
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	WrapsSet() *bool
+	SetWrapsSet(val *bool)
+	// Experimental.
+	ComputeFqn() *string
+	Get(index *float64) MskServerlessClusterVpcConfigOutputReference
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for MskServerlessClusterVpcConfigList
+type jsiiProxy_MskServerlessClusterVpcConfigList struct {
+	internal.Type__cdktfComplexList
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigList) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigList) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigList) InternalValue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigList) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigList) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigList) WrapsSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"wrapsSet",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewMskServerlessClusterVpcConfigList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MskServerlessClusterVpcConfigList {
+	_init_.Initialize()
+
+	j := jsiiProxy_MskServerlessClusterVpcConfigList{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.msk.MskServerlessClusterVpcConfigList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewMskServerlessClusterVpcConfigList_Override(m MskServerlessClusterVpcConfigList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.msk.MskServerlessClusterVpcConfigList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		m,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigList) SetInternalValue(val interface{}) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigList) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigList) SetWrapsSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"wrapsSet",
+		val,
+	)
+}
+
+func (m *jsiiProxy_MskServerlessClusterVpcConfigList) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterVpcConfigList) Get(index *float64) MskServerlessClusterVpcConfigOutputReference {
+	var returns MskServerlessClusterVpcConfigOutputReference
+
+	_jsii_.Invoke(
+		m,
+		"get",
+		[]interface{}{index},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterVpcConfigList) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterVpcConfigList) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type MskServerlessClusterVpcConfigOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	SecurityGroupIds() *[]*string
+	SetSecurityGroupIds(val *[]*string)
+	SecurityGroupIdsInput() *[]*string
+	SubnetIds() *[]*string
+	SetSubnetIds(val *[]*string)
+	SubnetIdsInput() *[]*string
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetSecurityGroupIds()
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for MskServerlessClusterVpcConfigOutputReference
+type jsiiProxy_MskServerlessClusterVpcConfigOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) InternalValue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) SecurityGroupIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) SecurityGroupIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"securityGroupIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) SubnetIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"subnetIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) SubnetIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"subnetIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewMskServerlessClusterVpcConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MskServerlessClusterVpcConfigOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_MskServerlessClusterVpcConfigOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.msk.MskServerlessClusterVpcConfigOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewMskServerlessClusterVpcConfigOutputReference_Override(m MskServerlessClusterVpcConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.msk.MskServerlessClusterVpcConfigOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		m,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) SetInternalValue(val interface{}) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) SetSecurityGroupIds(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"securityGroupIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) SetSubnetIds(val *[]*string) {
+	_jsii_.Set(
+		j,
+		"subnetIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		m,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		m,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		m,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		m,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		m,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		m,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) ResetSecurityGroupIds() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSecurityGroupIds",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskServerlessClusterVpcConfigOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		m,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 // Represents a {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_connector aws_mskconnect_connector}.
 type MskconnectConnector interface {
 	cdktf.TerraformResource

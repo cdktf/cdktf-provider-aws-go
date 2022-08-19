@@ -1379,6 +1379,8 @@ type InspectorAssessmentTemplate interface {
 	Duration() *float64
 	SetDuration(val *float64)
 	DurationInput() *float64
+	EventSubscription() InspectorAssessmentTemplateEventSubscriptionList
+	EventSubscriptionInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -1452,6 +1454,8 @@ type InspectorAssessmentTemplate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEventSubscription(value interface{})
+	ResetEventSubscription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -1548,6 +1552,26 @@ func (j *jsiiProxy_InspectorAssessmentTemplate) DurationInput() *float64 {
 	_jsii_.Get(
 		j,
 		"durationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplate) EventSubscription() InspectorAssessmentTemplateEventSubscriptionList {
+	var returns InspectorAssessmentTemplateEventSubscriptionList
+	_jsii_.Get(
+		j,
+		"eventSubscription",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplate) EventSubscriptionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"eventSubscriptionInput",
 		&returns,
 	)
 	return returns
@@ -2111,6 +2135,22 @@ func (i *jsiiProxy_InspectorAssessmentTemplate) OverrideLogicalId(newLogicalId *
 	)
 }
 
+func (i *jsiiProxy_InspectorAssessmentTemplate) PutEventSubscription(value interface{}) {
+	_jsii_.InvokeVoid(
+		i,
+		"putEventSubscription",
+		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_InspectorAssessmentTemplate) ResetEventSubscription() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetEventSubscription",
+		nil, // no parameters
+	)
+}
+
 func (i *jsiiProxy_InspectorAssessmentTemplate) ResetId() {
 	_jsii_.InvokeVoid(
 		i,
@@ -2219,6 +2259,10 @@ type InspectorAssessmentTemplateConfig struct {
 	RulesPackageArns *[]*string `field:"required" json:"rulesPackageArns" yaml:"rulesPackageArns"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector_assessment_template#target_arn InspectorAssessmentTemplate#target_arn}.
 	TargetArn *string `field:"required" json:"targetArn" yaml:"targetArn"`
+	// event_subscription block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector_assessment_template#event_subscription InspectorAssessmentTemplate#event_subscription}
+	EventSubscription interface{} `field:"optional" json:"eventSubscription" yaml:"eventSubscription"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector_assessment_template#id InspectorAssessmentTemplate#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -2228,6 +2272,667 @@ type InspectorAssessmentTemplateConfig struct {
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector_assessment_template#tags_all InspectorAssessmentTemplate#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
+}
+
+type InspectorAssessmentTemplateEventSubscription struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector_assessment_template#event InspectorAssessmentTemplate#event}.
+	Event *string `field:"required" json:"event" yaml:"event"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/inspector_assessment_template#topic_arn InspectorAssessmentTemplate#topic_arn}.
+	TopicArn *string `field:"required" json:"topicArn" yaml:"topicArn"`
+}
+
+type InspectorAssessmentTemplateEventSubscriptionList interface {
+	cdktf.ComplexList
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	// The attribute on the parent resource this class is referencing.
+	TerraformAttribute() *string
+	SetTerraformAttribute(val *string)
+	// The parent resource.
+	TerraformResource() cdktf.IInterpolatingParent
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	WrapsSet() *bool
+	SetWrapsSet(val *bool)
+	// Experimental.
+	ComputeFqn() *string
+	Get(index *float64) InspectorAssessmentTemplateEventSubscriptionOutputReference
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for InspectorAssessmentTemplateEventSubscriptionList
+type jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList struct {
+	internal.Type__cdktfComplexList
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList) InternalValue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList) WrapsSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"wrapsSet",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewInspectorAssessmentTemplateEventSubscriptionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) InspectorAssessmentTemplateEventSubscriptionList {
+	_init_.Initialize()
+
+	j := jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.inspector.InspectorAssessmentTemplateEventSubscriptionList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewInspectorAssessmentTemplateEventSubscriptionList_Override(i InspectorAssessmentTemplateEventSubscriptionList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.inspector.InspectorAssessmentTemplateEventSubscriptionList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		i,
+	)
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList) SetInternalValue(val interface{}) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList) SetWrapsSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"wrapsSet",
+		val,
+	)
+}
+
+func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		i,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList) Get(index *float64) InspectorAssessmentTemplateEventSubscriptionOutputReference {
+	var returns InspectorAssessmentTemplateEventSubscriptionOutputReference
+
+	_jsii_.Invoke(
+		i,
+		"get",
+		[]interface{}{index},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionList) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		i,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+type InspectorAssessmentTemplateEventSubscriptionOutputReference interface {
+	cdktf.ComplexObject
+	// the index of the complex object in a list.
+	// Experimental.
+	ComplexObjectIndex() interface{}
+	// Experimental.
+	SetComplexObjectIndex(val interface{})
+	// set to true if this item is from inside a set and needs tolist() for accessing it set to "0" for single list items.
+	// Experimental.
+	ComplexObjectIsFromSet() *bool
+	// Experimental.
+	SetComplexObjectIsFromSet(val *bool)
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	Event() *string
+	SetEvent(val *string)
+	EventInput() *string
+	// Experimental.
+	Fqn() *string
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	// Experimental.
+	TerraformAttribute() *string
+	// Experimental.
+	SetTerraformAttribute(val *string)
+	// Experimental.
+	TerraformResource() cdktf.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TopicArn() *string
+	SetTopicArn(val *string)
+	TopicArnInput() *string
+	// Experimental.
+	ComputeFqn() *string
+	// Experimental.
+	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+	// Experimental.
+	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Experimental.
+	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+	// Experimental.
+	GetListAttribute(terraformAttribute *string) *[]*string
+	// Experimental.
+	GetNumberAttribute(terraformAttribute *string) *float64
+	// Experimental.
+	GetNumberListAttribute(terraformAttribute *string) *[]*float64
+	// Experimental.
+	GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64
+	// Experimental.
+	GetStringAttribute(terraformAttribute *string) *string
+	// Experimental.
+	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+	// Experimental.
+	InterpolationAsList() cdktf.IResolvable
+	// Experimental.
+	InterpolationForAttribute(property *string) cdktf.IResolvable
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for InspectorAssessmentTemplateEventSubscriptionOutputReference
+type jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference struct {
+	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) ComplexObjectIndex() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"complexObjectIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) ComplexObjectIsFromSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) Event() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"event",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) EventInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"eventInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) InternalValue() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) TopicArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"topicArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) TopicArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"topicArnInput",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewInspectorAssessmentTemplateEventSubscriptionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) InspectorAssessmentTemplateEventSubscriptionOutputReference {
+	_init_.Initialize()
+
+	j := jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.inspector.InspectorAssessmentTemplateEventSubscriptionOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewInspectorAssessmentTemplateEventSubscriptionOutputReference_Override(i InspectorAssessmentTemplateEventSubscriptionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.inspector.InspectorAssessmentTemplateEventSubscriptionOutputReference",
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		i,
+	)
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) SetComplexObjectIndex(val interface{}) {
+	_jsii_.Set(
+		j,
+		"complexObjectIndex",
+		val,
+	)
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) SetComplexObjectIsFromSet(val *bool) {
+	_jsii_.Set(
+		j,
+		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) SetEvent(val *string) {
+	_jsii_.Set(
+		j,
+		"event",
+		val,
+	)
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) SetInternalValue(val interface{}) {
+	_jsii_.Set(
+		j,
+		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) SetTerraformAttribute(val *string) {
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) SetTopicArn(val *string) {
+	_jsii_.Set(
+		j,
+		"topicArn",
+		val,
+	)
+}
+
+func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		i,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		i,
+		"getAnyMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		i,
+		"getBooleanAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	var returns *map[string]*bool
+
+	_jsii_.Invoke(
+		i,
+		"getBooleanMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	var returns *[]*string
+
+	_jsii_.Invoke(
+		i,
+		"getListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	var returns *float64
+
+	_jsii_.Invoke(
+		i,
+		"getNumberAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	var returns *[]*float64
+
+	_jsii_.Invoke(
+		i,
+		"getNumberListAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	var returns *map[string]*float64
+
+	_jsii_.Invoke(
+		i,
+		"getNumberMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		i,
+		"getStringAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	var returns *map[string]*string
+
+	_jsii_.Invoke(
+		i,
+		"getStringMapAttribute",
+		[]interface{}{terraformAttribute},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) InterpolationAsList() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		i,
+		"interpolationAsList",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	var returns cdktf.IResolvable
+
+	_jsii_.Invoke(
+		i,
+		"interpolationForAttribute",
+		[]interface{}{property},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_InspectorAssessmentTemplateEventSubscriptionOutputReference) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		i,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
 }
 
 // Represents a {@link https://www.terraform.io/docs/providers/aws/r/inspector_resource_group aws_inspector_resource_group}.

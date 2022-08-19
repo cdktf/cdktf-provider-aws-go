@@ -2179,6 +2179,9 @@ type ChimeVoiceConnectorLogging interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnableMediaMetricLogs() interface{}
+	SetEnableMediaMetricLogs(val interface{})
+	EnableMediaMetricLogsInput() interface{}
 	EnableSipLogs() interface{}
 	SetEnableSipLogs(val interface{})
 	EnableSipLogsInput() interface{}
@@ -2243,6 +2246,7 @@ type ChimeVoiceConnectorLogging interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetEnableMediaMetricLogs()
 	ResetEnableSipLogs()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -2308,6 +2312,26 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) EnableMediaMetricLogs() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableMediaMetricLogs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) EnableMediaMetricLogsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableMediaMetricLogsInput",
 		&returns,
 	)
 	return returns
@@ -2530,6 +2554,14 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) SetEnableMediaMetricLogs(val interface{}) {
+	_jsii_.Set(
+		j,
+		"enableMediaMetricLogs",
 		val,
 	)
 }
@@ -2779,6 +2811,14 @@ func (c *jsiiProxy_ChimeVoiceConnectorLogging) OverrideLogicalId(newLogicalId *s
 	)
 }
 
+func (c *jsiiProxy_ChimeVoiceConnectorLogging) ResetEnableMediaMetricLogs() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEnableMediaMetricLogs",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ChimeVoiceConnectorLogging) ResetEnableSipLogs() {
 	_jsii_.InvokeVoid(
 		c,
@@ -2873,6 +2913,8 @@ type ChimeVoiceConnectorLoggingConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_logging#voice_connector_id ChimeVoiceConnectorLogging#voice_connector_id}.
 	VoiceConnectorId *string `field:"required" json:"voiceConnectorId" yaml:"voiceConnectorId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_logging#enable_media_metric_logs ChimeVoiceConnectorLogging#enable_media_metric_logs}.
+	EnableMediaMetricLogs interface{} `field:"optional" json:"enableMediaMetricLogs" yaml:"enableMediaMetricLogs"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_logging#enable_sip_logs ChimeVoiceConnectorLogging#enable_sip_logs}.
 	EnableSipLogs interface{} `field:"optional" json:"enableSipLogs" yaml:"enableSipLogs"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_logging#id ChimeVoiceConnectorLogging#id}.
