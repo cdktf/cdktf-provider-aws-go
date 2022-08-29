@@ -1764,6 +1764,7 @@ type DataAwsDbInstance interface {
 	MonitoringInterval() *float64
 	MonitoringRoleArn() *string
 	MultiAz() cdktf.IResolvable
+	NetworkType() *string
 	// The tree node.
 	Node() constructs.Node
 	OptionGroupMemberships() *[]*string
@@ -2212,6 +2213,16 @@ func (j *jsiiProxy_DataAwsDbInstance) MultiAz() cdktf.IResolvable {
 	_jsii_.Get(
 		j,
 		"multiAz",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDbInstance) NetworkType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkType",
 		&returns,
 	)
 	return returns
@@ -5264,6 +5275,7 @@ type DataAwsDbSubnetGroup interface {
 	RawOverrides() interface{}
 	Status() *string
 	SubnetIds() *[]*string
+	SupportedNetworkTypes() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -5500,6 +5512,16 @@ func (j *jsiiProxy_DataAwsDbSubnetGroup) SubnetIds() *[]*string {
 	_jsii_.Get(
 		j,
 		"subnetIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDbSubnetGroup) SupportedNetworkTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"supportedNetworkTypes",
 		&returns,
 	)
 	return returns
@@ -8585,6 +8607,7 @@ type DataAwsRdsOrderableDbInstance interface {
 	SetStorageType(val *string)
 	StorageTypeInput() *string
 	SupportedEngineModes() *[]*string
+	SupportedNetworkTypes() *[]*string
 	SupportsEnhancedMonitoring() interface{}
 	SetSupportsEnhancedMonitoring(val interface{})
 	SupportsEnhancedMonitoringInput() interface{}
@@ -9073,6 +9096,16 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) SupportedEngineModes() *[]*str
 	_jsii_.Get(
 		j,
 		"supportedEngineModes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) SupportedNetworkTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"supportedNetworkTypes",
 		&returns,
 	)
 	return returns
@@ -13096,6 +13129,9 @@ type DbInstance interface {
 	NcharCharacterSetName() *string
 	SetNcharCharacterSetName(val *string)
 	NcharCharacterSetNameInput() *string
+	NetworkType() *string
+	SetNetworkType(val *string)
+	NetworkTypeInput() *string
 	// The tree node.
 	Node() constructs.Node
 	OptionGroupName() *string
@@ -13246,6 +13282,7 @@ type DbInstance interface {
 	ResetMultiAz()
 	ResetName()
 	ResetNcharCharacterSetName()
+	ResetNetworkType()
 	ResetOptionGroupName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -14152,6 +14189,26 @@ func (j *jsiiProxy_DbInstance) NcharCharacterSetNameInput() *string {
 	_jsii_.Get(
 		j,
 		"ncharCharacterSetNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) NetworkType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) NetworkTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkTypeInput",
 		&returns,
 	)
 	return returns
@@ -15072,6 +15129,14 @@ func (j *jsiiProxy_DbInstance) SetNcharCharacterSetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DbInstance) SetNetworkType(val *string) {
+	_jsii_.Set(
+		j,
+		"networkType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DbInstance) SetOptionGroupName(val *string) {
 	_jsii_.Set(
 		j,
@@ -15737,6 +15802,14 @@ func (d *jsiiProxy_DbInstance) ResetNcharCharacterSetName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetNcharCharacterSetName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbInstance) ResetNetworkType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNetworkType",
 		nil, // no parameters
 	)
 }
@@ -17398,6 +17471,8 @@ type DbInstanceConfig struct {
 	Name *string `field:"optional" json:"name" yaml:"name"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#nchar_character_set_name DbInstance#nchar_character_set_name}.
 	NcharCharacterSetName *string `field:"optional" json:"ncharCharacterSetName" yaml:"ncharCharacterSetName"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#network_type DbInstance#network_type}.
+	NetworkType *string `field:"optional" json:"networkType" yaml:"networkType"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#option_group_name DbInstance#option_group_name}.
 	OptionGroupName *string `field:"optional" json:"optionGroupName" yaml:"optionGroupName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#parameter_group_name DbInstance#parameter_group_name}.
@@ -35961,6 +36036,7 @@ type DbSubnetGroup interface {
 	SubnetIds() *[]*string
 	SetSubnetIds(val *[]*string)
 	SubnetIdsInput() *[]*string
+	SupportedNetworkTypes() *[]*string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -36257,6 +36333,16 @@ func (j *jsiiProxy_DbSubnetGroup) SubnetIdsInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"subnetIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbSubnetGroup) SupportedNetworkTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"supportedNetworkTypes",
 		&returns,
 	)
 	return returns
