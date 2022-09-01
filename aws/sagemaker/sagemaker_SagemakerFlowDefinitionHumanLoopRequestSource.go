@@ -1,0 +1,8 @@
+package sagemaker
+
+
+type SagemakerFlowDefinitionHumanLoopRequestSource struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_flow_definition#aws_managed_human_loop_request_source SagemakerFlowDefinition#aws_managed_human_loop_request_source}.
+	AwsManagedHumanLoopRequestSource *string `field:"required" json:"awsManagedHumanLoopRequestSource" yaml:"awsManagedHumanLoopRequestSource"`
+}
+

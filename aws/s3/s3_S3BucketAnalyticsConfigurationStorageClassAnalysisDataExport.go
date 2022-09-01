@@ -1,0 +1,12 @@
+package s3
+
+
+type S3BucketAnalyticsConfigurationStorageClassAnalysisDataExport struct {
+	// destination block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration#destination S3BucketAnalyticsConfiguration#destination}
+	Destination *S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportDestination `field:"required" json:"destination" yaml:"destination"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_analytics_configuration#output_schema_version S3BucketAnalyticsConfiguration#output_schema_version}.
+	OutputSchemaVersion *string `field:"optional" json:"outputSchemaVersion" yaml:"outputSchemaVersion"`
+}
+

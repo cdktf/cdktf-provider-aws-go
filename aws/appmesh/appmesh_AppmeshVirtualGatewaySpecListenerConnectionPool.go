@@ -1,0 +1,18 @@
+package appmesh
+
+
+type AppmeshVirtualGatewaySpecListenerConnectionPool struct {
+	// grpc block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway#grpc AppmeshVirtualGateway#grpc}
+	Grpc *AppmeshVirtualGatewaySpecListenerConnectionPoolGrpc `field:"optional" json:"grpc" yaml:"grpc"`
+	// http block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway#http AppmeshVirtualGateway#http}
+	Http *AppmeshVirtualGatewaySpecListenerConnectionPoolHttp `field:"optional" json:"http" yaml:"http"`
+	// http2 block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway#http2 AppmeshVirtualGateway#http2}
+	Http2 *AppmeshVirtualGatewaySpecListenerConnectionPoolHttp2 `field:"optional" json:"http2" yaml:"http2"`
+}
+

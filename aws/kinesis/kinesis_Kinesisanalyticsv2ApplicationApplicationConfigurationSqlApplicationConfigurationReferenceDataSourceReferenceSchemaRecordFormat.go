@@ -1,0 +1,12 @@
+package kinesis
+
+
+type Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormat struct {
+	// mapping_parameters block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#mapping_parameters Kinesisanalyticsv2Application#mapping_parameters}
+	MappingParameters *Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParameters `field:"required" json:"mappingParameters" yaml:"mappingParameters"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/kinesisanalyticsv2_application#record_format_type Kinesisanalyticsv2Application#record_format_type}.
+	RecordFormatType *string `field:"required" json:"recordFormatType" yaml:"recordFormatType"`
+}
+

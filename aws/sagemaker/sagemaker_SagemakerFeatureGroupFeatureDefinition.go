@@ -1,0 +1,10 @@
+package sagemaker
+
+
+type SagemakerFeatureGroupFeatureDefinition struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#feature_name SagemakerFeatureGroup#feature_name}.
+	FeatureName *string `field:"optional" json:"featureName" yaml:"featureName"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#feature_type SagemakerFeatureGroup#feature_type}.
+	FeatureType *string `field:"optional" json:"featureType" yaml:"featureType"`
+}
+

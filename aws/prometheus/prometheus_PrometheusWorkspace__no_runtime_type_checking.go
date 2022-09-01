@@ -1,0 +1,91 @@
+//go:build no_runtime_type_checking
+// +build no_runtime_type_checking
+
+package prometheus
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (p *jsiiProxy_PrometheusWorkspace) validateAddOverrideParameters(path *string, value interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrometheusWorkspace) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrometheusWorkspace) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrometheusWorkspace) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrometheusWorkspace) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrometheusWorkspace) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrometheusWorkspace) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrometheusWorkspace) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrometheusWorkspace) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrometheusWorkspace) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrometheusWorkspace) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrometheusWorkspace) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validatePrometheusWorkspace_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PrometheusWorkspace) validateSetAliasParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PrometheusWorkspace) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PrometheusWorkspace) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PrometheusWorkspace) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_PrometheusWorkspace) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PrometheusWorkspace) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_PrometheusWorkspace) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
+func validateNewPrometheusWorkspaceParameters(scope constructs.Construct, id *string, config *PrometheusWorkspaceConfig) error {
+	return nil
+}
+

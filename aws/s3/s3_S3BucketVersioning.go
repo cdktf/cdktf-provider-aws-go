@@ -1,0 +1,10 @@
+package s3
+
+
+type S3BucketVersioning struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#enabled S3Bucket#enabled}.
+	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#mfa_delete S3Bucket#mfa_delete}.
+	MfaDelete interface{} `field:"optional" json:"mfaDelete" yaml:"mfaDelete"`
+}
+

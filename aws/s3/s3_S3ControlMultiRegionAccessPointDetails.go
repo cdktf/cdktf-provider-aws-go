@@ -1,0 +1,16 @@
+package s3
+
+
+type S3ControlMultiRegionAccessPointDetails struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point#name S3ControlMultiRegionAccessPoint#name}.
+	Name *string `field:"required" json:"name" yaml:"name"`
+	// region block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point#region S3ControlMultiRegionAccessPoint#region}
+	Region interface{} `field:"required" json:"region" yaml:"region"`
+	// public_access_block block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3control_multi_region_access_point#public_access_block S3ControlMultiRegionAccessPoint#public_access_block}
+	PublicAccessBlock *S3ControlMultiRegionAccessPointDetailsPublicAccessBlock `field:"optional" json:"publicAccessBlock" yaml:"publicAccessBlock"`
+}
+

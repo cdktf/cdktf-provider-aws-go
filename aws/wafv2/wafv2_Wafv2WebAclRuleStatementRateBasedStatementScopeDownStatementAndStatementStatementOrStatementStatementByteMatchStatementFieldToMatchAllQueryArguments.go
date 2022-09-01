@@ -1,0 +1,6 @@
+package wafv2
+
+
+type Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementOrStatementStatementByteMatchStatementFieldToMatchAllQueryArguments struct {
+}
+

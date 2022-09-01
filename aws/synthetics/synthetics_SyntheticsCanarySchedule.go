@@ -1,0 +1,10 @@
+package synthetics
+
+
+type SyntheticsCanarySchedule struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/synthetics_canary#expression SyntheticsCanary#expression}.
+	Expression *string `field:"required" json:"expression" yaml:"expression"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/synthetics_canary#duration_in_seconds SyntheticsCanary#duration_in_seconds}.
+	DurationInSeconds *float64 `field:"optional" json:"durationInSeconds" yaml:"durationInSeconds"`
+}
+

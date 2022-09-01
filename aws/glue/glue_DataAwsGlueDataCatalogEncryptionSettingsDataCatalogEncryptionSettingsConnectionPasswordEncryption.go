@@ -1,0 +1,6 @@
+package glue
+
+
+type DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption struct {
+}
+

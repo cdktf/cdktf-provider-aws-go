@@ -1,0 +1,103 @@
+//go:build no_runtime_type_checking
+// +build no_runtime_type_checking
+
+package wafv2
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validatePutAllQueryArgumentsParameters(value *Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validatePutBodyParameters(value *Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchBody) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validatePutMethodParameters(value *Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchMethod) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validatePutQueryStringParameters(value *Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchQueryString) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validatePutSingleHeaderParameters(value *Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchSingleHeader) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validatePutSingleQueryArgumentParameters(value *Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchSingleQueryArgument) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validatePutUriPathParameters(value *Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchUriPath) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validateSetInternalValueParameters(val *Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatch) error {
+	return nil
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewWafv2WebAclRuleStatementOrStatementStatementSizeConstraintStatementFieldToMatchOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

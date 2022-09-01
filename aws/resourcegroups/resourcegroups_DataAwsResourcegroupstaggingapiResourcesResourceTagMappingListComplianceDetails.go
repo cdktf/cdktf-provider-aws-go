@@ -1,0 +1,6 @@
+package resourcegroups
+
+
+type DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListComplianceDetails struct {
+}
+

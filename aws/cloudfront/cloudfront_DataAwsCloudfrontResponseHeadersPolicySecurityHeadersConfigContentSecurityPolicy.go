@@ -1,0 +1,6 @@
+package cloudfront
+
+
+type DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy struct {
+}
+

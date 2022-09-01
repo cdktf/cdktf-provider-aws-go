@@ -1,0 +1,6 @@
+package networkfirewall
+
+
+type DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition struct {
+}
+

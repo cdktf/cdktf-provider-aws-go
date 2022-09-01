@@ -1,0 +1,103 @@
+//go:build no_runtime_type_checking
+// +build no_runtime_type_checking
+
+package eventbridge
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (c *jsiiProxy_CloudwatchEventApiDestination) validateAddOverrideParameters(path *string, value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchEventApiDestination) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchEventApiDestination) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchEventApiDestination) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchEventApiDestination) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchEventApiDestination) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchEventApiDestination) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchEventApiDestination) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchEventApiDestination) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchEventApiDestination) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchEventApiDestination) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchEventApiDestination) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCloudwatchEventApiDestination_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudwatchEventApiDestination) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudwatchEventApiDestination) validateSetConnectionArnParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudwatchEventApiDestination) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudwatchEventApiDestination) validateSetHttpMethodParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudwatchEventApiDestination) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudwatchEventApiDestination) validateSetInvocationEndpointParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudwatchEventApiDestination) validateSetInvocationRateLimitPerSecondParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudwatchEventApiDestination) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudwatchEventApiDestination) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudwatchEventApiDestination) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func validateNewCloudwatchEventApiDestinationParameters(scope constructs.Construct, id *string, config *CloudwatchEventApiDestinationConfig) error {
+	return nil
+}
+

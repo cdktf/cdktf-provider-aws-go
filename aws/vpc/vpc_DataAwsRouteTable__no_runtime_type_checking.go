@@ -1,0 +1,99 @@
+//go:build no_runtime_type_checking
+// +build no_runtime_type_checking
+
+package vpc
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DataAwsRouteTable) validateAddOverrideParameters(path *string, value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsRouteTable) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsRouteTable) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsRouteTable) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsRouteTable) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsRouteTable) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsRouteTable) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsRouteTable) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsRouteTable) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsRouteTable) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsRouteTable) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsRouteTable) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsRouteTable) validatePutFilterParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsRouteTable) validatePutTimeoutsParameters(value *DataAwsRouteTableTimeouts) error {
+	return nil
+}
+
+func validateDataAwsRouteTable_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsRouteTable) validateSetGatewayIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsRouteTable) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsRouteTable) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsRouteTable) validateSetRouteTableIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsRouteTable) validateSetSubnetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsRouteTable) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsRouteTable) validateSetVpcIdParameters(val *string) error {
+	return nil
+}
+
+func validateNewDataAwsRouteTableParameters(scope constructs.Construct, id *string, config *DataAwsRouteTableConfig) error {
+	return nil
+}
+

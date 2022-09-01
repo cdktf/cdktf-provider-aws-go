@@ -1,0 +1,16 @@
+package iot
+
+
+type IotIndexingConfigurationThingGroupIndexingConfiguration struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_indexing_configuration#thing_group_indexing_mode IotIndexingConfiguration#thing_group_indexing_mode}.
+	ThingGroupIndexingMode *string `field:"required" json:"thingGroupIndexingMode" yaml:"thingGroupIndexingMode"`
+	// custom_field block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_indexing_configuration#custom_field IotIndexingConfiguration#custom_field}
+	CustomField interface{} `field:"optional" json:"customField" yaml:"customField"`
+	// managed_field block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/iot_indexing_configuration#managed_field IotIndexingConfiguration#managed_field}
+	ManagedField interface{} `field:"optional" json:"managedField" yaml:"managedField"`
+}
+

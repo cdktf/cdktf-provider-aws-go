@@ -1,0 +1,16 @@
+package codepipeline
+
+
+type CodepipelineArtifactStore struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codepipeline#location Codepipeline#location}.
+	Location *string `field:"required" json:"location" yaml:"location"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codepipeline#type Codepipeline#type}.
+	Type *string `field:"required" json:"type" yaml:"type"`
+	// encryption_key block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codepipeline#encryption_key Codepipeline#encryption_key}
+	EncryptionKey *CodepipelineArtifactStoreEncryptionKey `field:"optional" json:"encryptionKey" yaml:"encryptionKey"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/codepipeline#region Codepipeline#region}.
+	Region *string `field:"optional" json:"region" yaml:"region"`
+}
+

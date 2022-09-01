@@ -1,0 +1,10 @@
+package datasync
+
+
+type DatasyncLocationEfsEc2Config struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_efs#security_group_arns DatasyncLocationEfs#security_group_arns}.
+	SecurityGroupArns *[]*string `field:"required" json:"securityGroupArns" yaml:"securityGroupArns"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/datasync_location_efs#subnet_arn DatasyncLocationEfs#subnet_arn}.
+	SubnetArn *string `field:"required" json:"subnetArn" yaml:"subnetArn"`
+}
+

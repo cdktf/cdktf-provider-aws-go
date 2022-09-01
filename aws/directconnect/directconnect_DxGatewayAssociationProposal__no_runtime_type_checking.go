@@ -1,0 +1,95 @@
+//go:build no_runtime_type_checking
+// +build no_runtime_type_checking
+
+package directconnect
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (d *jsiiProxy_DxGatewayAssociationProposal) validateAddOverrideParameters(path *string, value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxGatewayAssociationProposal) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxGatewayAssociationProposal) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxGatewayAssociationProposal) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxGatewayAssociationProposal) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxGatewayAssociationProposal) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxGatewayAssociationProposal) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxGatewayAssociationProposal) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxGatewayAssociationProposal) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxGatewayAssociationProposal) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxGatewayAssociationProposal) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxGatewayAssociationProposal) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDxGatewayAssociationProposal_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DxGatewayAssociationProposal) validateSetAllowedPrefixesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DxGatewayAssociationProposal) validateSetAssociatedGatewayIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DxGatewayAssociationProposal) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DxGatewayAssociationProposal) validateSetDxGatewayIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DxGatewayAssociationProposal) validateSetDxGatewayOwnerAccountIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DxGatewayAssociationProposal) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DxGatewayAssociationProposal) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DxGatewayAssociationProposal) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func validateNewDxGatewayAssociationProposalParameters(scope constructs.Construct, id *string, config *DxGatewayAssociationProposalConfig) error {
+	return nil
+}
+
