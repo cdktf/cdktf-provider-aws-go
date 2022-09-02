@@ -24,6 +24,8 @@ type Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchOutputReference inter
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Cookies() Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchCookiesOutputReference
+	CookiesInput() *Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchCookies
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -33,6 +35,8 @@ type Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchOutputReference inter
 	Fqn() *string
 	InternalValue() *Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatch
 	SetInternalValue(val *Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatch)
+	JsonBody() Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBodyOutputReference
+	JsonBodyInput() *Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBody
 	Method() Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchMethodOutputReference
 	MethodInput() *Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchMethod
 	QueryString() Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchQueryStringOutputReference
@@ -77,6 +81,8 @@ type Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchOutputReference inter
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAllQueryArguments(value *Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchAllQueryArguments)
 	PutBody(value *Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchBody)
+	PutCookies(value *Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchCookies)
+	PutJsonBody(value *Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBody)
 	PutMethod(value *Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchMethod)
 	PutQueryString(value *Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchQueryString)
 	PutSingleHeader(value *Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchSingleHeader)
@@ -84,6 +90,8 @@ type Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchOutputReference inter
 	PutUriPath(value *Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchUriPath)
 	ResetAllQueryArguments()
 	ResetBody()
+	ResetCookies()
+	ResetJsonBody()
 	ResetMethod()
 	ResetQueryString()
 	ResetSingleHeader()
@@ -164,6 +172,26 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchOutputR
 	return returns
 }
 
+func (j *jsiiProxy_Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchOutputReference) Cookies() Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchCookiesOutputReference {
+	var returns Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchCookiesOutputReference
+	_jsii_.Get(
+		j,
+		"cookies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchOutputReference) CookiesInput() *Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchCookies {
+	var returns *Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchCookies
+	_jsii_.Get(
+		j,
+		"cookiesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -189,6 +217,26 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchOutputR
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchOutputReference) JsonBody() Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBodyOutputReference {
+	var returns Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBodyOutputReference
+	_jsii_.Get(
+		j,
+		"jsonBody",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchOutputReference) JsonBodyInput() *Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBody {
+	var returns *Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBody
+	_jsii_.Get(
+		j,
+		"jsonBodyInput",
 		&returns,
 	)
 	return returns
@@ -605,6 +653,28 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchOutputR
 	)
 }
 
+func (w *jsiiProxy_Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchOutputReference) PutCookies(value *Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchCookies) {
+	if err := w.validatePutCookiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putCookies",
+		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchOutputReference) PutJsonBody(value *Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchJsonBody) {
+	if err := w.validatePutJsonBodyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putJsonBody",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchOutputReference) PutMethod(value *Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchMethod) {
 	if err := w.validatePutMethodParameters(value); err != nil {
 		panic(err)
@@ -672,6 +742,22 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchOutputR
 	_jsii_.InvokeVoid(
 		w,
 		"resetBody",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchOutputReference) ResetCookies() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetCookies",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementSqliMatchStatementFieldToMatchOutputReference) ResetJsonBody() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetJsonBody",
 		nil, // no parameters
 	)
 }

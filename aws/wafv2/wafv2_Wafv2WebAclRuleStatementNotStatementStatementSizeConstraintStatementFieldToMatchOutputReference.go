@@ -24,6 +24,8 @@ type Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldTo
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Cookies() Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchCookiesOutputReference
+	CookiesInput() *Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchCookies
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -33,6 +35,8 @@ type Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldTo
 	Fqn() *string
 	InternalValue() *Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatch
 	SetInternalValue(val *Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatch)
+	JsonBody() Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchJsonBodyOutputReference
+	JsonBodyInput() *Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchJsonBody
 	Method() Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchMethodOutputReference
 	MethodInput() *Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchMethod
 	QueryString() Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchQueryStringOutputReference
@@ -77,6 +81,8 @@ type Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldTo
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAllQueryArguments(value *Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchAllQueryArguments)
 	PutBody(value *Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchBody)
+	PutCookies(value *Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchCookies)
+	PutJsonBody(value *Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchJsonBody)
 	PutMethod(value *Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchMethod)
 	PutQueryString(value *Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchQueryString)
 	PutSingleHeader(value *Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleHeader)
@@ -84,6 +90,8 @@ type Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldTo
 	PutUriPath(value *Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchUriPath)
 	ResetAllQueryArguments()
 	ResetBody()
+	ResetCookies()
+	ResetJsonBody()
 	ResetMethod()
 	ResetQueryString()
 	ResetSingleHeader()
@@ -164,6 +172,26 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintSt
 	return returns
 }
 
+func (j *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchOutputReference) Cookies() Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchCookiesOutputReference {
+	var returns Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchCookiesOutputReference
+	_jsii_.Get(
+		j,
+		"cookies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchOutputReference) CookiesInput() *Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchCookies {
+	var returns *Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchCookies
+	_jsii_.Get(
+		j,
+		"cookiesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -189,6 +217,26 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintSt
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchOutputReference) JsonBody() Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchJsonBodyOutputReference {
+	var returns Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchJsonBodyOutputReference
+	_jsii_.Get(
+		j,
+		"jsonBody",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchOutputReference) JsonBodyInput() *Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchJsonBody {
+	var returns *Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchJsonBody
+	_jsii_.Get(
+		j,
+		"jsonBodyInput",
 		&returns,
 	)
 	return returns
@@ -605,6 +653,28 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintSt
 	)
 }
 
+func (w *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchOutputReference) PutCookies(value *Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchCookies) {
+	if err := w.validatePutCookiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putCookies",
+		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchOutputReference) PutJsonBody(value *Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchJsonBody) {
+	if err := w.validatePutJsonBodyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putJsonBody",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchOutputReference) PutMethod(value *Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchMethod) {
 	if err := w.validatePutMethodParameters(value); err != nil {
 		panic(err)
@@ -672,6 +742,22 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintSt
 	_jsii_.InvokeVoid(
 		w,
 		"resetBody",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchOutputReference) ResetCookies() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetCookies",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchOutputReference) ResetJsonBody() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetJsonBody",
 		nil, // no parameters
 	)
 }

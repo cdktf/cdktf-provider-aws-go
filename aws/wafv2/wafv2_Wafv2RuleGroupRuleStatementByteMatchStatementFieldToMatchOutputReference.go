@@ -24,6 +24,8 @@ type Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchOutputReference in
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Cookies() Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchCookiesOutputReference
+	CookiesInput() *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchCookies
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -33,6 +35,8 @@ type Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchOutputReference in
 	Fqn() *string
 	InternalValue() *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatch
 	SetInternalValue(val *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatch)
+	JsonBody() Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBodyOutputReference
+	JsonBodyInput() *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBody
 	Method() Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchMethodOutputReference
 	MethodInput() *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchMethod
 	QueryString() Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchQueryStringOutputReference
@@ -77,6 +81,8 @@ type Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchOutputReference in
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAllQueryArguments(value *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchAllQueryArguments)
 	PutBody(value *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchBody)
+	PutCookies(value *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchCookies)
+	PutJsonBody(value *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBody)
 	PutMethod(value *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchMethod)
 	PutQueryString(value *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchQueryString)
 	PutSingleHeader(value *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchSingleHeader)
@@ -84,6 +90,8 @@ type Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchOutputReference in
 	PutUriPath(value *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchUriPath)
 	ResetAllQueryArguments()
 	ResetBody()
+	ResetCookies()
+	ResetJsonBody()
 	ResetMethod()
 	ResetQueryString()
 	ResetSingleHeader()
@@ -164,6 +172,26 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchOutp
 	return returns
 }
 
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchOutputReference) Cookies() Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchCookiesOutputReference {
+	var returns Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchCookiesOutputReference
+	_jsii_.Get(
+		j,
+		"cookies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchOutputReference) CookiesInput() *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchCookies {
+	var returns *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchCookies
+	_jsii_.Get(
+		j,
+		"cookiesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -189,6 +217,26 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchOutp
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchOutputReference) JsonBody() Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBodyOutputReference {
+	var returns Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBodyOutputReference
+	_jsii_.Get(
+		j,
+		"jsonBody",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchOutputReference) JsonBodyInput() *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBody {
+	var returns *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBody
+	_jsii_.Get(
+		j,
+		"jsonBodyInput",
 		&returns,
 	)
 	return returns
@@ -605,6 +653,28 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchOutp
 	)
 }
 
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchOutputReference) PutCookies(value *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchCookies) {
+	if err := w.validatePutCookiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putCookies",
+		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchOutputReference) PutJsonBody(value *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBody) {
+	if err := w.validatePutJsonBodyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putJsonBody",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchOutputReference) PutMethod(value *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchMethod) {
 	if err := w.validatePutMethodParameters(value); err != nil {
 		panic(err)
@@ -672,6 +742,22 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchOutp
 	_jsii_.InvokeVoid(
 		w,
 		"resetBody",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchOutputReference) ResetCookies() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetCookies",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchOutputReference) ResetJsonBody() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetJsonBody",
 		nil, // no parameters
 	)
 }

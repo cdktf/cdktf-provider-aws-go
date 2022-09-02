@@ -1164,6 +1164,8 @@ func init() {
 		reflect.TypeOf((*LambdaEventSourceMapping)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "amazonManagedKafkaEventSourceConfig", GoGetter: "AmazonManagedKafkaEventSourceConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "amazonManagedKafkaEventSourceConfigInput", GoGetter: "AmazonManagedKafkaEventSourceConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "batchSize", GoGetter: "BatchSize"},
 			_jsii_.MemberProperty{JsiiProperty: "batchSizeInput", GoGetter: "BatchSizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "bisectBatchOnFunctionError", GoGetter: "BisectBatchOnFunctionError"},
@@ -1216,13 +1218,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "parallelizationFactorInput", GoGetter: "ParallelizationFactorInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putAmazonManagedKafkaEventSourceConfig", GoMethod: "PutAmazonManagedKafkaEventSourceConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putDestinationConfig", GoMethod: "PutDestinationConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putFilterCriteria", GoMethod: "PutFilterCriteria"},
 			_jsii_.MemberMethod{JsiiMethod: "putSelfManagedEventSource", GoMethod: "PutSelfManagedEventSource"},
+			_jsii_.MemberMethod{JsiiMethod: "putSelfManagedKafkaEventSourceConfig", GoMethod: "PutSelfManagedKafkaEventSourceConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putSourceAccessConfiguration", GoMethod: "PutSourceAccessConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "queues", GoGetter: "Queues"},
 			_jsii_.MemberProperty{JsiiProperty: "queuesInput", GoGetter: "QueuesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAmazonManagedKafkaEventSourceConfig", GoMethod: "ResetAmazonManagedKafkaEventSourceConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBatchSize", GoMethod: "ResetBatchSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBisectBatchOnFunctionError", GoMethod: "ResetBisectBatchOnFunctionError"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDestinationConfig", GoMethod: "ResetDestinationConfig"},
@@ -1238,6 +1243,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetParallelizationFactor", GoMethod: "ResetParallelizationFactor"},
 			_jsii_.MemberMethod{JsiiMethod: "resetQueues", GoMethod: "ResetQueues"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSelfManagedEventSource", GoMethod: "ResetSelfManagedEventSource"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSelfManagedKafkaEventSourceConfig", GoMethod: "ResetSelfManagedKafkaEventSourceConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSourceAccessConfiguration", GoMethod: "ResetSourceAccessConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStartingPosition", GoMethod: "ResetStartingPosition"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStartingPositionTimestamp", GoMethod: "ResetStartingPositionTimestamp"},
@@ -1245,6 +1251,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTumblingWindowInSeconds", GoMethod: "ResetTumblingWindowInSeconds"},
 			_jsii_.MemberProperty{JsiiProperty: "selfManagedEventSource", GoGetter: "SelfManagedEventSource"},
 			_jsii_.MemberProperty{JsiiProperty: "selfManagedEventSourceInput", GoGetter: "SelfManagedEventSourceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "selfManagedKafkaEventSourceConfig", GoGetter: "SelfManagedKafkaEventSourceConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "selfManagedKafkaEventSourceConfigInput", GoGetter: "SelfManagedKafkaEventSourceConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceAccessConfiguration", GoGetter: "SourceAccessConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceAccessConfigurationInput", GoGetter: "SourceAccessConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "startingPosition", GoGetter: "StartingPosition"},
@@ -1269,6 +1277,45 @@ func init() {
 		func() interface{} {
 			j := jsiiProxy_LambdaEventSourceMapping{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.lambdafunction.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig",
+		reflect.TypeOf((*LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.lambdafunction.LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference",
+		reflect.TypeOf((*LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "consumerGroupId", GoGetter: "ConsumerGroupId"},
+			_jsii_.MemberProperty{JsiiProperty: "consumerGroupIdInput", GoGetter: "ConsumerGroupIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConsumerGroupId", GoMethod: "ResetConsumerGroupId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)
@@ -1488,6 +1535,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LambdaEventSourceMappingSelfManagedEventSourceOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.lambdafunction.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig",
+		reflect.TypeOf((*LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.lambdafunction.LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference",
+		reflect.TypeOf((*LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "consumerGroupId", GoGetter: "ConsumerGroupId"},
+			_jsii_.MemberProperty{JsiiProperty: "consumerGroupIdInput", GoGetter: "ConsumerGroupIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConsumerGroupId", GoMethod: "ResetConsumerGroupId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

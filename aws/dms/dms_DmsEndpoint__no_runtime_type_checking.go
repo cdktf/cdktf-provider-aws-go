@@ -69,6 +69,10 @@ func (d *jsiiProxy_DmsEndpoint) validatePutMongodbSettingsParameters(value *DmsE
 	return nil
 }
 
+func (d *jsiiProxy_DmsEndpoint) validatePutRedisSettingsParameters(value *DmsEndpointRedisSettings) error {
+	return nil
+}
+
 func (d *jsiiProxy_DmsEndpoint) validatePutRedshiftSettingsParameters(value *DmsEndpointRedshiftSettings) error {
 	return nil
 }

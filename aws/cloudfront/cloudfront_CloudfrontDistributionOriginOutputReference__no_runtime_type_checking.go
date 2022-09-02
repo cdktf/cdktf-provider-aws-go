@@ -89,6 +89,10 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) validateSetInter
 	return nil
 }
 
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) validateSetOriginAccessControlIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) validateSetOriginIdParameters(val *string) error {
 	return nil
 }

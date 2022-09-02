@@ -22,6 +22,10 @@ type LambdaEventSourceMappingConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping#function_name LambdaEventSourceMapping#function_name}.
 	FunctionName *string `field:"required" json:"functionName" yaml:"functionName"`
+	// amazon_managed_kafka_event_source_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping#amazon_managed_kafka_event_source_config LambdaEventSourceMapping#amazon_managed_kafka_event_source_config}
+	AmazonManagedKafkaEventSourceConfig *LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig `field:"optional" json:"amazonManagedKafkaEventSourceConfig" yaml:"amazonManagedKafkaEventSourceConfig"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping#batch_size LambdaEventSourceMapping#batch_size}.
 	BatchSize *float64 `field:"optional" json:"batchSize" yaml:"batchSize"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping#bisect_batch_on_function_error LambdaEventSourceMapping#bisect_batch_on_function_error}.
@@ -59,6 +63,10 @@ type LambdaEventSourceMappingConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping#self_managed_event_source LambdaEventSourceMapping#self_managed_event_source}
 	SelfManagedEventSource *LambdaEventSourceMappingSelfManagedEventSource `field:"optional" json:"selfManagedEventSource" yaml:"selfManagedEventSource"`
+	// self_managed_kafka_event_source_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping#self_managed_kafka_event_source_config LambdaEventSourceMapping#self_managed_kafka_event_source_config}
+	SelfManagedKafkaEventSourceConfig *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig `field:"optional" json:"selfManagedKafkaEventSourceConfig" yaml:"selfManagedKafkaEventSourceConfig"`
 	// source_access_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping#source_access_configuration LambdaEventSourceMapping#source_access_configuration}

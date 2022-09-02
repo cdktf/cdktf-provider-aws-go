@@ -108,6 +108,9 @@ type SpotFleetRequest interface {
 	TargetCapacity() *float64
 	SetTargetCapacity(val *float64)
 	TargetCapacityInput() *float64
+	TargetCapacityUnitType() *string
+	SetTargetCapacityUnitType(val *string)
+	TargetCapacityUnitTypeInput() *string
 	TargetGroupArns() *[]*string
 	SetTargetGroupArns(val *[]*string)
 	TargetGroupArnsInput() *[]*string
@@ -183,6 +186,7 @@ type SpotFleetRequest interface {
 	ResetSpotPrice()
 	ResetTags()
 	ResetTagsAll()
+	ResetTargetCapacityUnitType()
 	ResetTargetGroupArns()
 	ResetTerminateInstancesOnDelete()
 	ResetTerminateInstancesWithExpiration()
@@ -735,6 +739,26 @@ func (j *jsiiProxy_SpotFleetRequest) TargetCapacityInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_SpotFleetRequest) TargetCapacityUnitType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetCapacityUnitType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpotFleetRequest) TargetCapacityUnitTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetCapacityUnitTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SpotFleetRequest) TargetGroupArns() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1172,6 +1196,17 @@ func (j *jsiiProxy_SpotFleetRequest)SetTargetCapacity(val *float64) {
 	_jsii_.Set(
 		j,
 		"targetCapacity",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpotFleetRequest)SetTargetCapacityUnitType(val *string) {
+	if err := j.validateSetTargetCapacityUnitTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetCapacityUnitType",
 		val,
 	)
 }
@@ -1654,6 +1689,14 @@ func (s *jsiiProxy_SpotFleetRequest) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpotFleetRequest) ResetTargetCapacityUnitType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTargetCapacityUnitType",
 		nil, // no parameters
 	)
 }

@@ -153,6 +153,10 @@ func (j *jsiiProxy_Instance) validateSetHostIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Instance) validateSetHostResourceGroupArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Instance) validateSetIamInstanceProfileParameters(val *string) error {
 	return nil
 }

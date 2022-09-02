@@ -10,6 +10,14 @@ type Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatch struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#body Wafv2RuleGroup#body}
 	Body *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchBody `field:"optional" json:"body" yaml:"body"`
+	// cookies block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#cookies Wafv2RuleGroup#cookies}
+	Cookies *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchCookies `field:"optional" json:"cookies" yaml:"cookies"`
+	// json_body block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#json_body Wafv2RuleGroup#json_body}
+	JsonBody *Wafv2RuleGroupRuleStatementByteMatchStatementFieldToMatchJsonBody `field:"optional" json:"jsonBody" yaml:"jsonBody"`
 	// method block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#method Wafv2RuleGroup#method}

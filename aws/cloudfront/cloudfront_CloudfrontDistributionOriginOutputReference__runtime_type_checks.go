@@ -276,6 +276,14 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) validateSetInter
 	return nil
 }
 
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) validateSetOriginAccessControlIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) validateSetOriginIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

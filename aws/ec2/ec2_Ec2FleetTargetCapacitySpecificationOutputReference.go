@@ -38,6 +38,9 @@ type Ec2FleetTargetCapacitySpecificationOutputReference interface {
 	SpotTargetCapacity() *float64
 	SetSpotTargetCapacity(val *float64)
 	SpotTargetCapacityInput() *float64
+	TargetCapacityUnitType() *string
+	SetTargetCapacityUnitType(val *string)
+	TargetCapacityUnitTypeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -75,6 +78,7 @@ type Ec2FleetTargetCapacitySpecificationOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetOnDemandTargetCapacity()
 	ResetSpotTargetCapacity()
+	ResetTargetCapacityUnitType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -195,6 +199,26 @@ func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) SpotTarge
 	_jsii_.Get(
 		j,
 		"spotTargetCapacityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) TargetCapacityUnitType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetCapacityUnitType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) TargetCapacityUnitTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetCapacityUnitTypeInput",
 		&returns,
 	)
 	return returns
@@ -330,6 +354,17 @@ func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference)SetSpotTar
 	_jsii_.Set(
 		j,
 		"spotTargetCapacity",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference)SetTargetCapacityUnitType(val *string) {
+	if err := j.validateSetTargetCapacityUnitTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetCapacityUnitType",
 		val,
 	)
 }
@@ -565,6 +600,14 @@ func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) ResetSpot
 	_jsii_.InvokeVoid(
 		e,
 		"resetSpotTargetCapacity",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) ResetTargetCapacityUnitType() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTargetCapacityUnitType",
 		nil, // no parameters
 	)
 }

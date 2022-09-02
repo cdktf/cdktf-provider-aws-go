@@ -83,6 +83,9 @@ type SpotInstanceRequest interface {
 	HostId() *string
 	SetHostId(val *string)
 	HostIdInput() *string
+	HostResourceGroupArn() *string
+	SetHostResourceGroupArn(val *string)
+	HostResourceGroupArnInput() *string
 	IamInstanceProfile() *string
 	SetIamInstanceProfile(val *string)
 	IamInstanceProfileInput() *string
@@ -273,6 +276,7 @@ type SpotInstanceRequest interface {
 	ResetFetchPasswordData()
 	ResetHibernation()
 	ResetHostId()
+	ResetHostResourceGroupArn()
 	ResetIamInstanceProfile()
 	ResetId()
 	ResetInstanceInitiatedShutdownBehavior()
@@ -753,6 +757,26 @@ func (j *jsiiProxy_SpotInstanceRequest) HostIdInput() *string {
 	_jsii_.Get(
 		j,
 		"hostIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpotInstanceRequest) HostResourceGroupArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostResourceGroupArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpotInstanceRequest) HostResourceGroupArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostResourceGroupArnInput",
 		&returns,
 	)
 	return returns
@@ -1875,6 +1899,17 @@ func (j *jsiiProxy_SpotInstanceRequest)SetHostId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_SpotInstanceRequest)SetHostResourceGroupArn(val *string) {
+	if err := j.validateSetHostResourceGroupArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hostResourceGroupArn",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SpotInstanceRequest)SetIamInstanceProfile(val *string) {
 	if err := j.validateSetIamInstanceProfileParameters(val); err != nil {
 		panic(err)
@@ -2727,6 +2762,14 @@ func (s *jsiiProxy_SpotInstanceRequest) ResetHostId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetHostId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpotInstanceRequest) ResetHostResourceGroupArn() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetHostResourceGroupArn",
 		nil, // no parameters
 	)
 }

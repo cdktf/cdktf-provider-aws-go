@@ -10,6 +10,14 @@ type Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatch struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#body Wafv2RuleGroup#body}
 	Body *Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchBody `field:"optional" json:"body" yaml:"body"`
+	// cookies block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#cookies Wafv2RuleGroup#cookies}
+	Cookies *Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookies `field:"optional" json:"cookies" yaml:"cookies"`
+	// json_body block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#json_body Wafv2RuleGroup#json_body}
+	JsonBody *Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchJsonBody `field:"optional" json:"jsonBody" yaml:"jsonBody"`
 	// method block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#method Wafv2RuleGroup#method}

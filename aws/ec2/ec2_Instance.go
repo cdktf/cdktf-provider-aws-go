@@ -80,6 +80,9 @@ type Instance interface {
 	HostId() *string
 	SetHostId(val *string)
 	HostIdInput() *string
+	HostResourceGroupArn() *string
+	SetHostResourceGroupArn(val *string)
+	HostResourceGroupArnInput() *string
 	IamInstanceProfile() *string
 	SetIamInstanceProfile(val *string)
 	IamInstanceProfileInput() *string
@@ -245,6 +248,7 @@ type Instance interface {
 	ResetFetchPasswordData()
 	ResetHibernation()
 	ResetHostId()
+	ResetHostResourceGroupArn()
 	ResetIamInstanceProfile()
 	ResetId()
 	ResetInstanceInitiatedShutdownBehavior()
@@ -698,6 +702,26 @@ func (j *jsiiProxy_Instance) HostIdInput() *string {
 	_jsii_.Get(
 		j,
 		"hostIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Instance) HostResourceGroupArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostResourceGroupArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Instance) HostResourceGroupArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostResourceGroupArnInput",
 		&returns,
 	)
 	return returns
@@ -1639,6 +1663,17 @@ func (j *jsiiProxy_Instance)SetHostId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Instance)SetHostResourceGroupArn(val *string) {
+	if err := j.validateSetHostResourceGroupArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hostResourceGroupArn",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Instance)SetIamInstanceProfile(val *string) {
 	if err := j.validateSetIamInstanceProfileParameters(val); err != nil {
 		panic(err)
@@ -2406,6 +2441,14 @@ func (i *jsiiProxy_Instance) ResetHostId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetHostId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_Instance) ResetHostResourceGroupArn() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetHostResourceGroupArn",
 		nil, // no parameters
 	)
 }

@@ -149,6 +149,10 @@ func (j *jsiiProxy_SpotFleetRequest) validateSetTargetCapacityParameters(val *fl
 	return nil
 }
 
+func (j *jsiiProxy_SpotFleetRequest) validateSetTargetCapacityUnitTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpotFleetRequest) validateSetTargetGroupArnsParameters(val *[]*string) error {
 	return nil
 }

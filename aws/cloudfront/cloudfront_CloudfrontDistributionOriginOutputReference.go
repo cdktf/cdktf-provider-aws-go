@@ -42,6 +42,9 @@ type CloudfrontDistributionOriginOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	OriginAccessControlId() *string
+	SetOriginAccessControlId(val *string)
+	OriginAccessControlIdInput() *string
 	OriginId() *string
 	SetOriginId(val *string)
 	OriginIdInput() *string
@@ -92,6 +95,7 @@ type CloudfrontDistributionOriginOutputReference interface {
 	ResetConnectionTimeout()
 	ResetCustomHeader()
 	ResetCustomOriginConfig()
+	ResetOriginAccessControlId()
 	ResetOriginPath()
 	ResetOriginShield()
 	ResetS3OriginConfig()
@@ -255,6 +259,26 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) InternalValue() 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) OriginAccessControlId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"originAccessControlId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference) OriginAccessControlIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"originAccessControlIdInput",
 		&returns,
 	)
 	return returns
@@ -450,6 +474,17 @@ func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetInternalValue(
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudfrontDistributionOriginOutputReference)SetOriginAccessControlId(val *string) {
+	if err := j.validateSetOriginAccessControlIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"originAccessControlId",
 		val,
 	)
 }
@@ -756,6 +791,14 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) ResetCustomOrigi
 	_jsii_.InvokeVoid(
 		c,
 		"resetCustomOriginConfig",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudfrontDistributionOriginOutputReference) ResetOriginAccessControlId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOriginAccessControlId",
 		nil, // no parameters
 	)
 }

@@ -112,6 +112,17 @@ func (l *jsiiProxy_LambdaEventSourceMapping) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (l *jsiiProxy_LambdaEventSourceMapping) validatePutAmazonManagedKafkaEventSourceConfigParameters(value *LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (l *jsiiProxy_LambdaEventSourceMapping) validatePutDestinationConfigParameters(value *LambdaEventSourceMappingDestinationConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -135,6 +146,17 @@ func (l *jsiiProxy_LambdaEventSourceMapping) validatePutFilterCriteriaParameters
 }
 
 func (l *jsiiProxy_LambdaEventSourceMapping) validatePutSelfManagedEventSourceParameters(value *LambdaEventSourceMappingSelfManagedEventSource) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) validatePutSelfManagedKafkaEventSourceConfigParameters(value *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

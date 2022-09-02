@@ -14,6 +14,7 @@ type DataAwsEksNodeGroup interface {
 	cdktf.TerraformDataSource
 	AmiType() *string
 	Arn() *string
+	CapacityType() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterName() *string
@@ -136,6 +137,16 @@ func (j *jsiiProxy_DataAwsEksNodeGroup) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEksNodeGroup) CapacityType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"capacityType",
 		&returns,
 	)
 	return returns

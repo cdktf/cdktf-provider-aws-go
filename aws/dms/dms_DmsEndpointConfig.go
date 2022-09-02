@@ -59,6 +59,10 @@ type DmsEndpointConfig struct {
 	Password *string `field:"optional" json:"password" yaml:"password"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#port DmsEndpoint#port}.
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
+	// redis_settings block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#redis_settings DmsEndpoint#redis_settings}
+	RedisSettings *DmsEndpointRedisSettings `field:"optional" json:"redisSettings" yaml:"redisSettings"`
 	// redshift_settings block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dms_endpoint#redshift_settings DmsEndpoint#redshift_settings}

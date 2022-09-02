@@ -53,6 +53,14 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchOutputRe
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchOutputReference) validatePutCookiesParameters(value *Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchCookies) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchOutputReference) validatePutJsonBodyParameters(value *Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchJsonBody) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchOutputReference) validatePutMethodParameters(value *Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchMethod) error {
 	return nil
 }

@@ -73,6 +73,10 @@ func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) validateSetTargetCapacityUnitTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2FleetTargetCapacitySpecificationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

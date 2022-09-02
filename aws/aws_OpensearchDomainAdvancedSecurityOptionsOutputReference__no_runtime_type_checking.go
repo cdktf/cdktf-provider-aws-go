@@ -54,6 +54,10 @@ func (o *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) validateSetAnonymousAuthEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

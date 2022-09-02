@@ -18,6 +18,8 @@ type CloudfrontDistributionOrigin struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution#custom_origin_config CloudfrontDistribution#custom_origin_config}
 	CustomOriginConfig *CloudfrontDistributionOriginCustomOriginConfig `field:"optional" json:"customOriginConfig" yaml:"customOriginConfig"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution#origin_access_control_id CloudfrontDistribution#origin_access_control_id}.
+	OriginAccessControlId *string `field:"optional" json:"originAccessControlId" yaml:"originAccessControlId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution#origin_path CloudfrontDistribution#origin_path}.
 	OriginPath *string `field:"optional" json:"originPath" yaml:"originPath"`
 	// origin_shield block.

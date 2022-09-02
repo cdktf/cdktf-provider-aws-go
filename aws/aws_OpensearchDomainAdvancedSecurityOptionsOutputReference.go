@@ -11,6 +11,9 @@ import (
 
 type OpensearchDomainAdvancedSecurityOptionsOutputReference interface {
 	cdktf.ComplexObject
+	AnonymousAuthEnabled() interface{}
+	SetAnonymousAuthEnabled(val interface{})
+	AnonymousAuthEnabledInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -71,6 +74,7 @@ type OpensearchDomainAdvancedSecurityOptionsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutMasterUserOptions(value *OpensearchDomainAdvancedSecurityOptionsMasterUserOptions)
+	ResetAnonymousAuthEnabled()
 	ResetInternalUserDatabaseEnabled()
 	ResetMasterUserOptions()
 	// Produce the Token's value at resolution time.
@@ -86,6 +90,26 @@ type OpensearchDomainAdvancedSecurityOptionsOutputReference interface {
 // The jsii proxy struct for OpensearchDomainAdvancedSecurityOptionsOutputReference
 type jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) AnonymousAuthEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"anonymousAuthEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) AnonymousAuthEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"anonymousAuthEnabledInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) ComplexObjectIndex() interface{} {
@@ -243,6 +267,17 @@ func NewOpensearchDomainAdvancedSecurityOptionsOutputReference_Override(o Opense
 		"@cdktf/provider-aws.OpensearchDomainAdvancedSecurityOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
+	)
+}
+
+func (j *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference)SetAnonymousAuthEnabled(val interface{}) {
+	if err := j.validateSetAnonymousAuthEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"anonymousAuthEnabled",
+		val,
 	)
 }
 
@@ -517,6 +552,14 @@ func (o *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) PutMa
 		o,
 		"putMasterUserOptions",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomainAdvancedSecurityOptionsOutputReference) ResetAnonymousAuthEnabled() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAnonymousAuthEnabled",
+		nil, // no parameters
 	)
 }
 

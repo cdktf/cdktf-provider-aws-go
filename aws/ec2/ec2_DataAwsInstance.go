@@ -52,6 +52,7 @@ type DataAwsInstance interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	HostId() *string
+	HostResourceGroupArn() *string
 	IamInstanceProfile() *string
 	Id() *string
 	SetId(val *string)
@@ -409,6 +410,16 @@ func (j *jsiiProxy_DataAwsInstance) HostId() *string {
 	_jsii_.Get(
 		j,
 		"hostId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsInstance) HostResourceGroupArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"hostResourceGroupArn",
 		&returns,
 	)
 	return returns

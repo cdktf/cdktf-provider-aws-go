@@ -134,10 +134,13 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putKafkaSettings", GoMethod: "PutKafkaSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putKinesisSettings", GoMethod: "PutKinesisSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putMongodbSettings", GoMethod: "PutMongodbSettings"},
+			_jsii_.MemberMethod{JsiiMethod: "putRedisSettings", GoMethod: "PutRedisSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putRedshiftSettings", GoMethod: "PutRedshiftSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putS3Settings", GoMethod: "PutS3Settings"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberProperty{JsiiProperty: "redisSettings", GoGetter: "RedisSettings"},
+			_jsii_.MemberProperty{JsiiProperty: "redisSettingsInput", GoGetter: "RedisSettingsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "redshiftSettings", GoGetter: "RedshiftSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "redshiftSettingsInput", GoGetter: "RedshiftSettingsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCertificateArn", GoMethod: "ResetCertificateArn"},
@@ -152,6 +155,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPassword", GoMethod: "ResetPassword"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPort", GoMethod: "ResetPort"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRedisSettings", GoMethod: "ResetRedisSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRedshiftSettings", GoMethod: "ResetRedshiftSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetS3Settings", GoMethod: "ResetS3Settings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecretsManagerAccessRoleArn", GoMethod: "ResetSecretsManagerAccessRoleArn"},
@@ -449,6 +453,60 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DmsEndpointMongodbSettingsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.dms.DmsEndpointRedisSettings",
+		reflect.TypeOf((*DmsEndpointRedisSettings)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.dms.DmsEndpointRedisSettingsOutputReference",
+		reflect.TypeOf((*DmsEndpointRedisSettingsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "authPassword", GoGetter: "AuthPassword"},
+			_jsii_.MemberProperty{JsiiProperty: "authPasswordInput", GoGetter: "AuthPasswordInput"},
+			_jsii_.MemberProperty{JsiiProperty: "authType", GoGetter: "AuthType"},
+			_jsii_.MemberProperty{JsiiProperty: "authTypeInput", GoGetter: "AuthTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "authUserName", GoGetter: "AuthUserName"},
+			_jsii_.MemberProperty{JsiiProperty: "authUserNameInput", GoGetter: "AuthUserNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "port", GoGetter: "Port"},
+			_jsii_.MemberProperty{JsiiProperty: "portInput", GoGetter: "PortInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthPassword", GoMethod: "ResetAuthPassword"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAuthUserName", GoMethod: "ResetAuthUserName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSslCaCertificateArn", GoMethod: "ResetSslCaCertificateArn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSslSecurityProtocol", GoMethod: "ResetSslSecurityProtocol"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "serverName", GoGetter: "ServerName"},
+			_jsii_.MemberProperty{JsiiProperty: "serverNameInput", GoGetter: "ServerNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sslCaCertificateArn", GoGetter: "SslCaCertificateArn"},
+			_jsii_.MemberProperty{JsiiProperty: "sslCaCertificateArnInput", GoGetter: "SslCaCertificateArnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sslSecurityProtocol", GoGetter: "SslSecurityProtocol"},
+			_jsii_.MemberProperty{JsiiProperty: "sslSecurityProtocolInput", GoGetter: "SslSecurityProtocolInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DmsEndpointRedisSettingsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

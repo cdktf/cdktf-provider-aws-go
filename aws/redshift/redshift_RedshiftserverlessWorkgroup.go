@@ -34,6 +34,7 @@ type RedshiftserverlessWorkgroup interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Endpoint() RedshiftserverlessWorkgroupEndpointList
 	EnhancedVpcRouting() interface{}
 	SetEnhancedVpcRouting(val interface{})
 	EnhancedVpcRoutingInput() interface{}
@@ -240,6 +241,16 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftserverlessWorkgroup) Endpoint() RedshiftserverlessWorkgroupEndpointList {
+	var returns RedshiftserverlessWorkgroupEndpointList
+	_jsii_.Get(
+		j,
+		"endpoint",
 		&returns,
 	)
 	return returns

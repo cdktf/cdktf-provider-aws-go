@@ -431,6 +431,14 @@ func (j *jsiiProxy_SpotFleetRequest) validateSetTargetCapacityParameters(val *fl
 	return nil
 }
 
+func (j *jsiiProxy_SpotFleetRequest) validateSetTargetCapacityUnitTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SpotFleetRequest) validateSetTargetGroupArnsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

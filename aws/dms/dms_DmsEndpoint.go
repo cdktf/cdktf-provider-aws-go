@@ -91,6 +91,8 @@ type DmsEndpoint interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RedisSettings() DmsEndpointRedisSettingsOutputReference
+	RedisSettingsInput() *DmsEndpointRedisSettings
 	RedshiftSettings() DmsEndpointRedshiftSettingsOutputReference
 	RedshiftSettingsInput() *DmsEndpointRedshiftSettings
 	S3Settings() DmsEndpointS3SettingsOutputReference
@@ -156,6 +158,7 @@ type DmsEndpoint interface {
 	PutKafkaSettings(value *DmsEndpointKafkaSettings)
 	PutKinesisSettings(value *DmsEndpointKinesisSettings)
 	PutMongodbSettings(value *DmsEndpointMongodbSettings)
+	PutRedisSettings(value *DmsEndpointRedisSettings)
 	PutRedshiftSettings(value *DmsEndpointRedshiftSettings)
 	PutS3Settings(value *DmsEndpointS3Settings)
 	PutTimeouts(value *DmsEndpointTimeouts)
@@ -173,6 +176,7 @@ type DmsEndpoint interface {
 	ResetOverrideLogicalId()
 	ResetPassword()
 	ResetPort()
+	ResetRedisSettings()
 	ResetRedshiftSettings()
 	ResetS3Settings()
 	ResetSecretsManagerAccessRoleArn()
@@ -614,6 +618,26 @@ func (j *jsiiProxy_DmsEndpoint) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) RedisSettings() DmsEndpointRedisSettingsOutputReference {
+	var returns DmsEndpointRedisSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"redisSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) RedisSettingsInput() *DmsEndpointRedisSettings {
+	var returns *DmsEndpointRedisSettings
+	_jsii_.Get(
+		j,
+		"redisSettingsInput",
 		&returns,
 	)
 	return returns
@@ -1434,6 +1458,17 @@ func (d *jsiiProxy_DmsEndpoint) PutMongodbSettings(value *DmsEndpointMongodbSett
 	)
 }
 
+func (d *jsiiProxy_DmsEndpoint) PutRedisSettings(value *DmsEndpointRedisSettings) {
+	if err := d.validatePutRedisSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRedisSettings",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DmsEndpoint) PutRedshiftSettings(value *DmsEndpointRedshiftSettings) {
 	if err := d.validatePutRedshiftSettingsParameters(value); err != nil {
 		panic(err)
@@ -1559,6 +1594,14 @@ func (d *jsiiProxy_DmsEndpoint) ResetPort() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetRedisSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRedisSettings",
 		nil, // no parameters
 	)
 }

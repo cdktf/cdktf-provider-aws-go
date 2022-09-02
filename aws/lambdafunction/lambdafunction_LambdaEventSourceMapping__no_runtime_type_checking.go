@@ -53,6 +53,10 @@ func (l *jsiiProxy_LambdaEventSourceMapping) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (l *jsiiProxy_LambdaEventSourceMapping) validatePutAmazonManagedKafkaEventSourceConfigParameters(value *LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaEventSourceMapping) validatePutDestinationConfigParameters(value *LambdaEventSourceMappingDestinationConfig) error {
 	return nil
 }
@@ -62,6 +66,10 @@ func (l *jsiiProxy_LambdaEventSourceMapping) validatePutFilterCriteriaParameters
 }
 
 func (l *jsiiProxy_LambdaEventSourceMapping) validatePutSelfManagedEventSourceParameters(value *LambdaEventSourceMappingSelfManagedEventSource) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) validatePutSelfManagedKafkaEventSourceConfigParameters(value *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig) error {
 	return nil
 }
 

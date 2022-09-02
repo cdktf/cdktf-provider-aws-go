@@ -33,6 +33,10 @@ type AwsProviderAssumeRole struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#session_name AwsProvider#session_name}
 	SessionName *string `field:"optional" json:"sessionName" yaml:"sessionName"`
+	// Source identity specified by the principal assuming the role.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#source_identity AwsProvider#source_identity}
+	SourceIdentity *string `field:"optional" json:"sourceIdentity" yaml:"sourceIdentity"`
 	// Assume role session tags.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#tags AwsProvider#tags}

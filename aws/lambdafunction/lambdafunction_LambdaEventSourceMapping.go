@@ -12,6 +12,8 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping aws_lambda_event_source_mapping}.
 type LambdaEventSourceMapping interface {
 	cdktf.TerraformResource
+	AmazonManagedKafkaEventSourceConfig() LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference
+	AmazonManagedKafkaEventSourceConfigInput() *LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig
 	BatchSize() *float64
 	SetBatchSize(val *float64)
 	BatchSizeInput() *float64
@@ -97,6 +99,8 @@ type LambdaEventSourceMapping interface {
 	RawOverrides() interface{}
 	SelfManagedEventSource() LambdaEventSourceMappingSelfManagedEventSourceOutputReference
 	SelfManagedEventSourceInput() *LambdaEventSourceMappingSelfManagedEventSource
+	SelfManagedKafkaEventSourceConfig() LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference
+	SelfManagedKafkaEventSourceConfigInput() *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig
 	SourceAccessConfiguration() LambdaEventSourceMappingSourceAccessConfigurationList
 	SourceAccessConfigurationInput() interface{}
 	StartingPosition() *string
@@ -145,10 +149,13 @@ type LambdaEventSourceMapping interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAmazonManagedKafkaEventSourceConfig(value *LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig)
 	PutDestinationConfig(value *LambdaEventSourceMappingDestinationConfig)
 	PutFilterCriteria(value *LambdaEventSourceMappingFilterCriteria)
 	PutSelfManagedEventSource(value *LambdaEventSourceMappingSelfManagedEventSource)
+	PutSelfManagedKafkaEventSourceConfig(value *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig)
 	PutSourceAccessConfiguration(value interface{})
+	ResetAmazonManagedKafkaEventSourceConfig()
 	ResetBatchSize()
 	ResetBisectBatchOnFunctionError()
 	ResetDestinationConfig()
@@ -166,6 +173,7 @@ type LambdaEventSourceMapping interface {
 	ResetParallelizationFactor()
 	ResetQueues()
 	ResetSelfManagedEventSource()
+	ResetSelfManagedKafkaEventSourceConfig()
 	ResetSourceAccessConfiguration()
 	ResetStartingPosition()
 	ResetStartingPositionTimestamp()
@@ -184,6 +192,26 @@ type LambdaEventSourceMapping interface {
 // The jsii proxy struct for LambdaEventSourceMapping
 type jsiiProxy_LambdaEventSourceMapping struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) AmazonManagedKafkaEventSourceConfig() LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference {
+	var returns LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"amazonManagedKafkaEventSourceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) AmazonManagedKafkaEventSourceConfigInput() *LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig {
+	var returns *LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig
+	_jsii_.Get(
+		j,
+		"amazonManagedKafkaEventSourceConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_LambdaEventSourceMapping) BatchSize() *float64 {
@@ -641,6 +669,26 @@ func (j *jsiiProxy_LambdaEventSourceMapping) SelfManagedEventSourceInput() *Lamb
 	_jsii_.Get(
 		j,
 		"selfManagedEventSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) SelfManagedKafkaEventSourceConfig() LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference {
+	var returns LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"selfManagedKafkaEventSourceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) SelfManagedKafkaEventSourceConfigInput() *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig {
+	var returns *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig
+	_jsii_.Get(
+		j,
+		"selfManagedKafkaEventSourceConfigInput",
 		&returns,
 	)
 	return returns
@@ -1305,6 +1353,17 @@ func (l *jsiiProxy_LambdaEventSourceMapping) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (l *jsiiProxy_LambdaEventSourceMapping) PutAmazonManagedKafkaEventSourceConfig(value *LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig) {
+	if err := l.validatePutAmazonManagedKafkaEventSourceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putAmazonManagedKafkaEventSourceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LambdaEventSourceMapping) PutDestinationConfig(value *LambdaEventSourceMappingDestinationConfig) {
 	if err := l.validatePutDestinationConfigParameters(value); err != nil {
 		panic(err)
@@ -1338,6 +1397,17 @@ func (l *jsiiProxy_LambdaEventSourceMapping) PutSelfManagedEventSource(value *La
 	)
 }
 
+func (l *jsiiProxy_LambdaEventSourceMapping) PutSelfManagedKafkaEventSourceConfig(value *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig) {
+	if err := l.validatePutSelfManagedKafkaEventSourceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putSelfManagedKafkaEventSourceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LambdaEventSourceMapping) PutSourceAccessConfiguration(value interface{}) {
 	if err := l.validatePutSourceAccessConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1346,6 +1416,14 @@ func (l *jsiiProxy_LambdaEventSourceMapping) PutSourceAccessConfiguration(value 
 		l,
 		"putSourceAccessConfiguration",
 		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetAmazonManagedKafkaEventSourceConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAmazonManagedKafkaEventSourceConfig",
+		nil, // no parameters
 	)
 }
 
@@ -1465,6 +1543,14 @@ func (l *jsiiProxy_LambdaEventSourceMapping) ResetSelfManagedEventSource() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetSelfManagedEventSource",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetSelfManagedKafkaEventSourceConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSelfManagedKafkaEventSourceConfig",
 		nil, // no parameters
 	)
 }
