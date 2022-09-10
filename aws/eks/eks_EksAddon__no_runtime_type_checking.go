@@ -53,6 +53,10 @@ func (e *jsiiProxy_EksAddon) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
+func (e *jsiiProxy_EksAddon) validatePutTimeoutsParameters(value *EksAddonTimeouts) error {
+	return nil
+}
+
 func validateEksAddon_IsConstructParameters(x interface{}) error {
 	return nil
 }

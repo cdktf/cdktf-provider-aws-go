@@ -61,6 +61,7 @@ type DataAwsRdsCluster interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MasterUsername() *string
+	NetworkType() *string
 	// The tree node.
 	Node() constructs.Node
 	Port() *float64
@@ -435,6 +436,16 @@ func (j *jsiiProxy_DataAwsRdsCluster) MasterUsername() *string {
 	_jsii_.Get(
 		j,
 		"masterUsername",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsCluster) NetworkType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkType",
 		&returns,
 	)
 	return returns

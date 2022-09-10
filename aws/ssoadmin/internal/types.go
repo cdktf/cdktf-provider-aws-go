@@ -4,3 +4,4 @@ import (
 )
 type Type__cdktfTerraformDataSource = cdktf.TerraformDataSource
 type Type__cdktfTerraformResource = cdktf.TerraformResource
+type Type__cdktfComplexObject = cdktf.ComplexObject

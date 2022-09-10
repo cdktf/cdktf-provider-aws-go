@@ -107,6 +107,7 @@ type S3BucketObjectLockConfigurationA interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRule()
 	ResetToken()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -820,6 +821,14 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketObjectLockConfigurationA) ResetRule() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRule",
 		nil, // no parameters
 	)
 }

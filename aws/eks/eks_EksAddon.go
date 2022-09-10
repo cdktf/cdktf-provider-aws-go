@@ -88,6 +88,8 @@ type EksAddon interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() EksAddonTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -113,6 +115,7 @@ type EksAddon interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *EksAddonTimeouts)
 	ResetAddonVersion()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -123,6 +126,7 @@ type EksAddon interface {
 	ResetServiceAccountRoleArn()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -503,6 +507,26 @@ func (j *jsiiProxy_EksAddon) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksAddon) Timeouts() EksAddonTimeoutsOutputReference {
+	var returns EksAddonTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksAddon) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -930,6 +954,17 @@ func (e *jsiiProxy_EksAddon) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (e *jsiiProxy_EksAddon) PutTimeouts(value *EksAddonTimeouts) {
+	if err := e.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EksAddon) ResetAddonVersion() {
 	_jsii_.InvokeVoid(
 		e,
@@ -990,6 +1025,14 @@ func (e *jsiiProxy_EksAddon) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksAddon) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

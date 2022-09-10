@@ -3830,6 +3830,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetObjectLockEnabled", GoMethod: "ResetObjectLockEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRule", GoMethod: "ResetRule"},
 			_jsii_.MemberMethod{JsiiMethod: "resetToken", GoMethod: "ResetToken"},
 			_jsii_.MemberProperty{JsiiProperty: "rule", GoGetter: "Rule"},
 			_jsii_.MemberProperty{JsiiProperty: "ruleInput", GoGetter: "RuleInput"},

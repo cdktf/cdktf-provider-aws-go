@@ -40,6 +40,7 @@ type RdsGlobalCluster interface {
 	EngineInput() *string
 	EngineVersion() *string
 	SetEngineVersion(val *string)
+	EngineVersionActual() *string
 	EngineVersionInput() *string
 	ForceDestroy() interface{}
 	SetForceDestroy(val interface{})
@@ -268,6 +269,16 @@ func (j *jsiiProxy_RdsGlobalCluster) EngineVersion() *string {
 	_jsii_.Get(
 		j,
 		"engineVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsGlobalCluster) EngineVersionActual() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engineVersionActual",
 		&returns,
 	)
 	return returns

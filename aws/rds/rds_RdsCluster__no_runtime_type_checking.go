@@ -209,6 +209,10 @@ func (j *jsiiProxy_RdsCluster) validateSetMasterUsernameParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_RdsCluster) validateSetNetworkTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsCluster) validateSetPortParameters(val *float64) error {
 	return nil
 }

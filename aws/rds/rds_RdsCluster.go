@@ -138,6 +138,9 @@ type RdsCluster interface {
 	MasterUsername() *string
 	SetMasterUsername(val *string)
 	MasterUsernameInput() *string
+	NetworkType() *string
+	SetNetworkType(val *string)
+	NetworkTypeInput() *string
 	// The tree node.
 	Node() constructs.Node
 	Port() *float64
@@ -264,6 +267,7 @@ type RdsCluster interface {
 	ResetKmsKeyId()
 	ResetMasterPassword()
 	ResetMasterUsername()
+	ResetNetworkType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -1054,6 +1058,26 @@ func (j *jsiiProxy_RdsCluster) MasterUsernameInput() *string {
 	_jsii_.Get(
 		j,
 		"masterUsernameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) NetworkType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) NetworkTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkTypeInput",
 		&returns,
 	)
 	return returns
@@ -1896,6 +1920,17 @@ func (j *jsiiProxy_RdsCluster)SetMasterUsername(val *string) {
 	)
 }
 
+func (j *jsiiProxy_RdsCluster)SetNetworkType(val *string) {
+	if err := j.validateSetNetworkTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RdsCluster)SetPort(val *float64) {
 	if err := j.validateSetPortParameters(val); err != nil {
 		panic(err)
@@ -2574,6 +2609,14 @@ func (r *jsiiProxy_RdsCluster) ResetMasterUsername() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetMasterUsername",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsCluster) ResetNetworkType() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetNetworkType",
 		nil, // no parameters
 	)
 }

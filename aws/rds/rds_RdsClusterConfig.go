@@ -85,6 +85,8 @@ type RdsClusterConfig struct {
 	MasterPassword *string `field:"optional" json:"masterPassword" yaml:"masterPassword"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#master_username RdsCluster#master_username}.
 	MasterUsername *string `field:"optional" json:"masterUsername" yaml:"masterUsername"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#network_type RdsCluster#network_type}.
+	NetworkType *string `field:"optional" json:"networkType" yaml:"networkType"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#port RdsCluster#port}.
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rds_cluster#preferred_backup_window RdsCluster#preferred_backup_window}.

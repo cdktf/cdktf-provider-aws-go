@@ -93,6 +93,7 @@ type RdsClusterInstance interface {
 	MonitoringRoleArn() *string
 	SetMonitoringRoleArn(val *string)
 	MonitoringRoleArnInput() *string
+	NetworkType() *string
 	// The tree node.
 	Node() constructs.Node
 	PerformanceInsightsEnabled() interface{}
@@ -666,6 +667,16 @@ func (j *jsiiProxy_RdsClusterInstance) MonitoringRoleArnInput() *string {
 	_jsii_.Get(
 		j,
 		"monitoringRoleArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsClusterInstance) NetworkType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkType",
 		&returns,
 	)
 	return returns

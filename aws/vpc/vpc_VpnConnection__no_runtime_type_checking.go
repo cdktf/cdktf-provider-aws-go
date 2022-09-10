@@ -53,6 +53,14 @@ func (v *jsiiProxy_VpnConnection) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (v *jsiiProxy_VpnConnection) validatePutTunnel1LogOptionsParameters(value *VpnConnectionTunnel1LogOptions) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpnConnection) validatePutTunnel2LogOptionsParameters(value *VpnConnectionTunnel2LogOptions) error {
+	return nil
+}
+
 func validateVpnConnection_IsConstructParameters(x interface{}) error {
 	return nil
 }

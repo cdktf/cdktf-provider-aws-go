@@ -61,6 +61,10 @@ type VpnConnectionConfig struct {
 	Tunnel1InsideCidr *string `field:"optional" json:"tunnel1InsideCidr" yaml:"tunnel1InsideCidr"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection#tunnel1_inside_ipv6_cidr VpnConnection#tunnel1_inside_ipv6_cidr}.
 	Tunnel1InsideIpv6Cidr *string `field:"optional" json:"tunnel1InsideIpv6Cidr" yaml:"tunnel1InsideIpv6Cidr"`
+	// tunnel1_log_options block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection#tunnel1_log_options VpnConnection#tunnel1_log_options}
+	Tunnel1LogOptions *VpnConnectionTunnel1LogOptions `field:"optional" json:"tunnel1LogOptions" yaml:"tunnel1LogOptions"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection#tunnel1_phase1_dh_group_numbers VpnConnection#tunnel1_phase1_dh_group_numbers}.
 	Tunnel1Phase1DhGroupNumbers *[]*float64 `field:"optional" json:"tunnel1Phase1DhGroupNumbers" yaml:"tunnel1Phase1DhGroupNumbers"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection#tunnel1_phase1_encryption_algorithms VpnConnection#tunnel1_phase1_encryption_algorithms}.
@@ -97,6 +101,10 @@ type VpnConnectionConfig struct {
 	Tunnel2InsideCidr *string `field:"optional" json:"tunnel2InsideCidr" yaml:"tunnel2InsideCidr"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection#tunnel2_inside_ipv6_cidr VpnConnection#tunnel2_inside_ipv6_cidr}.
 	Tunnel2InsideIpv6Cidr *string `field:"optional" json:"tunnel2InsideIpv6Cidr" yaml:"tunnel2InsideIpv6Cidr"`
+	// tunnel2_log_options block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection#tunnel2_log_options VpnConnection#tunnel2_log_options}
+	Tunnel2LogOptions *VpnConnectionTunnel2LogOptions `field:"optional" json:"tunnel2LogOptions" yaml:"tunnel2LogOptions"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection#tunnel2_phase1_dh_group_numbers VpnConnection#tunnel2_phase1_dh_group_numbers}.
 	Tunnel2Phase1DhGroupNumbers *[]*float64 `field:"optional" json:"tunnel2Phase1DhGroupNumbers" yaml:"tunnel2Phase1DhGroupNumbers"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpn_connection#tunnel2_phase1_encryption_algorithms VpnConnection#tunnel2_phase1_encryption_algorithms}.

@@ -13684,6 +13684,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putTunnel1LogOptions", GoMethod: "PutTunnel1LogOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putTunnel2LogOptions", GoMethod: "PutTunnel2LogOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteIpv4NetworkCidr", GoGetter: "RemoteIpv4NetworkCidr"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteIpv4NetworkCidrInput", GoGetter: "RemoteIpv4NetworkCidrInput"},
@@ -13707,6 +13709,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTunnel1IkeVersions", GoMethod: "ResetTunnel1IkeVersions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTunnel1InsideCidr", GoMethod: "ResetTunnel1InsideCidr"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTunnel1InsideIpv6Cidr", GoMethod: "ResetTunnel1InsideIpv6Cidr"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTunnel1LogOptions", GoMethod: "ResetTunnel1LogOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTunnel1Phase1DhGroupNumbers", GoMethod: "ResetTunnel1Phase1DhGroupNumbers"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTunnel1Phase1EncryptionAlgorithms", GoMethod: "ResetTunnel1Phase1EncryptionAlgorithms"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTunnel1Phase1IntegrityAlgorithms", GoMethod: "ResetTunnel1Phase1IntegrityAlgorithms"},
@@ -13725,6 +13728,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTunnel2IkeVersions", GoMethod: "ResetTunnel2IkeVersions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTunnel2InsideCidr", GoMethod: "ResetTunnel2InsideCidr"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTunnel2InsideIpv6Cidr", GoMethod: "ResetTunnel2InsideIpv6Cidr"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTunnel2LogOptions", GoMethod: "ResetTunnel2LogOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTunnel2Phase1DhGroupNumbers", GoMethod: "ResetTunnel2Phase1DhGroupNumbers"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTunnel2Phase1EncryptionAlgorithms", GoMethod: "ResetTunnel2Phase1EncryptionAlgorithms"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTunnel2Phase1IntegrityAlgorithms", GoMethod: "ResetTunnel2Phase1IntegrityAlgorithms"},
@@ -13773,6 +13777,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tunnel1InsideCidrInput", GoGetter: "Tunnel1InsideCidrInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnel1InsideIpv6Cidr", GoGetter: "Tunnel1InsideIpv6Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnel1InsideIpv6CidrInput", GoGetter: "Tunnel1InsideIpv6CidrInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tunnel1LogOptions", GoGetter: "Tunnel1LogOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "tunnel1LogOptionsInput", GoGetter: "Tunnel1LogOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnel1Phase1DhGroupNumbers", GoGetter: "Tunnel1Phase1DhGroupNumbers"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnel1Phase1DhGroupNumbersInput", GoGetter: "Tunnel1Phase1DhGroupNumbersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnel1Phase1EncryptionAlgorithms", GoGetter: "Tunnel1Phase1EncryptionAlgorithms"},
@@ -13814,6 +13820,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tunnel2InsideCidrInput", GoGetter: "Tunnel2InsideCidrInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnel2InsideIpv6Cidr", GoGetter: "Tunnel2InsideIpv6Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnel2InsideIpv6CidrInput", GoGetter: "Tunnel2InsideIpv6CidrInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tunnel2LogOptions", GoGetter: "Tunnel2LogOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "tunnel2LogOptionsInput", GoGetter: "Tunnel2LogOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnel2Phase1DhGroupNumbers", GoGetter: "Tunnel2Phase1DhGroupNumbers"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnel2Phase1DhGroupNumbersInput", GoGetter: "Tunnel2Phase1DhGroupNumbersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnel2Phase1EncryptionAlgorithms", GoGetter: "Tunnel2Phase1EncryptionAlgorithms"},
@@ -13969,6 +13977,176 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_VpnConnectionRoutesOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.vpc.VpnConnectionTunnel1LogOptions",
+		reflect.TypeOf((*VpnConnectionTunnel1LogOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.vpc.VpnConnectionTunnel1LogOptionsCloudwatchLogOptions",
+		reflect.TypeOf((*VpnConnectionTunnel1LogOptionsCloudwatchLogOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.vpc.VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference",
+		reflect.TypeOf((*VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "logEnabled", GoGetter: "LogEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "logEnabledInput", GoGetter: "LogEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "logGroupArn", GoGetter: "LogGroupArn"},
+			_jsii_.MemberProperty{JsiiProperty: "logGroupArnInput", GoGetter: "LogGroupArnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "logOutputFormat", GoGetter: "LogOutputFormat"},
+			_jsii_.MemberProperty{JsiiProperty: "logOutputFormatInput", GoGetter: "LogOutputFormatInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLogEnabled", GoMethod: "ResetLogEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLogGroupArn", GoMethod: "ResetLogGroupArn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLogOutputFormat", GoMethod: "ResetLogOutputFormat"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_VpnConnectionTunnel1LogOptionsCloudwatchLogOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.vpc.VpnConnectionTunnel1LogOptionsOutputReference",
+		reflect.TypeOf((*VpnConnectionTunnel1LogOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogOptions", GoGetter: "CloudwatchLogOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogOptionsInput", GoGetter: "CloudwatchLogOptionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putCloudwatchLogOptions", GoMethod: "PutCloudwatchLogOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCloudwatchLogOptions", GoMethod: "ResetCloudwatchLogOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_VpnConnectionTunnel1LogOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.vpc.VpnConnectionTunnel2LogOptions",
+		reflect.TypeOf((*VpnConnectionTunnel2LogOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.vpc.VpnConnectionTunnel2LogOptionsCloudwatchLogOptions",
+		reflect.TypeOf((*VpnConnectionTunnel2LogOptionsCloudwatchLogOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.vpc.VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference",
+		reflect.TypeOf((*VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "logEnabled", GoGetter: "LogEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "logEnabledInput", GoGetter: "LogEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "logGroupArn", GoGetter: "LogGroupArn"},
+			_jsii_.MemberProperty{JsiiProperty: "logGroupArnInput", GoGetter: "LogGroupArnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "logOutputFormat", GoGetter: "LogOutputFormat"},
+			_jsii_.MemberProperty{JsiiProperty: "logOutputFormatInput", GoGetter: "LogOutputFormatInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLogEnabled", GoMethod: "ResetLogEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLogGroupArn", GoMethod: "ResetLogGroupArn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLogOutputFormat", GoMethod: "ResetLogOutputFormat"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_VpnConnectionTunnel2LogOptionsCloudwatchLogOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.vpc.VpnConnectionTunnel2LogOptionsOutputReference",
+		reflect.TypeOf((*VpnConnectionTunnel2LogOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogOptions", GoGetter: "CloudwatchLogOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogOptionsInput", GoGetter: "CloudwatchLogOptionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putCloudwatchLogOptions", GoMethod: "PutCloudwatchLogOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCloudwatchLogOptions", GoMethod: "ResetCloudwatchLogOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_VpnConnectionTunnel2LogOptionsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

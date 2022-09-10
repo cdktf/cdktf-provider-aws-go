@@ -122,6 +122,8 @@ type VpnConnection interface {
 	Tunnel1InsideIpv6Cidr() *string
 	SetTunnel1InsideIpv6Cidr(val *string)
 	Tunnel1InsideIpv6CidrInput() *string
+	Tunnel1LogOptions() VpnConnectionTunnel1LogOptionsOutputReference
+	Tunnel1LogOptionsInput() *VpnConnectionTunnel1LogOptions
 	Tunnel1Phase1DhGroupNumbers() *[]*float64
 	SetTunnel1Phase1DhGroupNumbers(val *[]*float64)
 	Tunnel1Phase1DhGroupNumbersInput() *[]*float64
@@ -181,6 +183,8 @@ type VpnConnection interface {
 	Tunnel2InsideIpv6Cidr() *string
 	SetTunnel2InsideIpv6Cidr(val *string)
 	Tunnel2InsideIpv6CidrInput() *string
+	Tunnel2LogOptions() VpnConnectionTunnel2LogOptionsOutputReference
+	Tunnel2LogOptionsInput() *VpnConnectionTunnel2LogOptions
 	Tunnel2Phase1DhGroupNumbers() *[]*float64
 	SetTunnel2Phase1DhGroupNumbers(val *[]*float64)
 	Tunnel2Phase1DhGroupNumbersInput() *[]*float64
@@ -256,6 +260,8 @@ type VpnConnection interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTunnel1LogOptions(value *VpnConnectionTunnel1LogOptions)
+	PutTunnel2LogOptions(value *VpnConnectionTunnel2LogOptions)
 	ResetEnableAcceleration()
 	ResetId()
 	ResetLocalIpv4NetworkCidr()
@@ -276,6 +282,7 @@ type VpnConnection interface {
 	ResetTunnel1IkeVersions()
 	ResetTunnel1InsideCidr()
 	ResetTunnel1InsideIpv6Cidr()
+	ResetTunnel1LogOptions()
 	ResetTunnel1Phase1DhGroupNumbers()
 	ResetTunnel1Phase1EncryptionAlgorithms()
 	ResetTunnel1Phase1IntegrityAlgorithms()
@@ -294,6 +301,7 @@ type VpnConnection interface {
 	ResetTunnel2IkeVersions()
 	ResetTunnel2InsideCidr()
 	ResetTunnel2InsideIpv6Cidr()
+	ResetTunnel2LogOptions()
 	ResetTunnel2Phase1DhGroupNumbers()
 	ResetTunnel2Phase1EncryptionAlgorithms()
 	ResetTunnel2Phase1IntegrityAlgorithms()
@@ -944,6 +952,26 @@ func (j *jsiiProxy_VpnConnection) Tunnel1InsideIpv6CidrInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VpnConnection) Tunnel1LogOptions() VpnConnectionTunnel1LogOptionsOutputReference {
+	var returns VpnConnectionTunnel1LogOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"tunnel1LogOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnConnection) Tunnel1LogOptionsInput() *VpnConnectionTunnel1LogOptions {
+	var returns *VpnConnectionTunnel1LogOptions
+	_jsii_.Get(
+		j,
+		"tunnel1LogOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpnConnection) Tunnel1Phase1DhGroupNumbers() *[]*float64 {
 	var returns *[]*float64
 	_jsii_.Get(
@@ -1349,6 +1377,26 @@ func (j *jsiiProxy_VpnConnection) Tunnel2InsideIpv6CidrInput() *string {
 	_jsii_.Get(
 		j,
 		"tunnel2InsideIpv6CidrInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnConnection) Tunnel2LogOptions() VpnConnectionTunnel2LogOptionsOutputReference {
+	var returns VpnConnectionTunnel2LogOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"tunnel2LogOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnConnection) Tunnel2LogOptionsInput() *VpnConnectionTunnel2LogOptions {
+	var returns *VpnConnectionTunnel2LogOptions
+	_jsii_.Get(
+		j,
+		"tunnel2LogOptionsInput",
 		&returns,
 	)
 	return returns
@@ -2589,6 +2637,28 @@ func (v *jsiiProxy_VpnConnection) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (v *jsiiProxy_VpnConnection) PutTunnel1LogOptions(value *VpnConnectionTunnel1LogOptions) {
+	if err := v.validatePutTunnel1LogOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putTunnel1LogOptions",
+		[]interface{}{value},
+	)
+}
+
+func (v *jsiiProxy_VpnConnection) PutTunnel2LogOptions(value *VpnConnectionTunnel2LogOptions) {
+	if err := v.validatePutTunnel2LogOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putTunnel2LogOptions",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VpnConnection) ResetEnableAcceleration() {
 	_jsii_.InvokeVoid(
 		v,
@@ -2733,6 +2803,14 @@ func (v *jsiiProxy_VpnConnection) ResetTunnel1InsideIpv6Cidr() {
 	)
 }
 
+func (v *jsiiProxy_VpnConnection) ResetTunnel1LogOptions() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetTunnel1LogOptions",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VpnConnection) ResetTunnel1Phase1DhGroupNumbers() {
 	_jsii_.InvokeVoid(
 		v,
@@ -2873,6 +2951,14 @@ func (v *jsiiProxy_VpnConnection) ResetTunnel2InsideIpv6Cidr() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetTunnel2InsideIpv6Cidr",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpnConnection) ResetTunnel2LogOptions() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetTunnel2LogOptions",
 		nil, // no parameters
 	)
 }
