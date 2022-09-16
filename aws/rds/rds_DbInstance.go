@@ -59,6 +59,9 @@ type DbInstance interface {
 	CustomerOwnedIpEnabled() interface{}
 	SetCustomerOwnedIpEnabled(val interface{})
 	CustomerOwnedIpEnabledInput() interface{}
+	CustomIamInstanceProfile() *string
+	SetCustomIamInstanceProfile(val *string)
+	CustomIamInstanceProfileInput() *string
 	DbName() *string
 	SetDbName(val *string)
 	DbNameInput() *string
@@ -283,6 +286,7 @@ type DbInstance interface {
 	ResetCharacterSetName()
 	ResetCopyTagsToSnapshot()
 	ResetCustomerOwnedIpEnabled()
+	ResetCustomIamInstanceProfile()
 	ResetDbName()
 	ResetDbSubnetGroupName()
 	ResetDeleteAutomatedBackups()
@@ -624,6 +628,26 @@ func (j *jsiiProxy_DbInstance) CustomerOwnedIpEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"customerOwnedIpEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) CustomIamInstanceProfile() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customIamInstanceProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) CustomIamInstanceProfileInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customIamInstanceProfileInput",
 		&returns,
 	)
 	return returns
@@ -1969,6 +1993,17 @@ func (j *jsiiProxy_DbInstance)SetCustomerOwnedIpEnabled(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_DbInstance)SetCustomIamInstanceProfile(val *string) {
+	if err := j.validateSetCustomIamInstanceProfileParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customIamInstanceProfile",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DbInstance)SetDbName(val *string) {
 	if err := j.validateSetDbNameParameters(val); err != nil {
 		panic(err)
@@ -2866,6 +2901,14 @@ func (d *jsiiProxy_DbInstance) ResetCustomerOwnedIpEnabled() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetCustomerOwnedIpEnabled",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbInstance) ResetCustomIamInstanceProfile() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCustomIamInstanceProfile",
 		nil, // no parameters
 	)
 }

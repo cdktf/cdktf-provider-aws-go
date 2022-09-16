@@ -103,6 +103,7 @@ type LambdaFunction interface {
 	SetPublish(val interface{})
 	PublishInput() interface{}
 	QualifiedArn() *string
+	QualifiedInvokeArn() *string
 	// Experimental.
 	RawOverrides() interface{}
 	ReservedConcurrentExecutions() *float64
@@ -746,6 +747,16 @@ func (j *jsiiProxy_LambdaFunction) QualifiedArn() *string {
 	_jsii_.Get(
 		j,
 		"qualifiedArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunction) QualifiedInvokeArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"qualifiedInvokeArn",
 		&returns,
 	)
 	return returns

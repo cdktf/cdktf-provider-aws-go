@@ -117,6 +117,10 @@ func (j *jsiiProxy_DbInstance) validateSetCustomerOwnedIpEnabledParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_DbInstance) validateSetCustomIamInstanceProfileParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbInstance) validateSetDbNameParameters(val *string) error {
 	return nil
 }

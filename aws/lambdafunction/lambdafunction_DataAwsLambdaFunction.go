@@ -64,6 +64,7 @@ type DataAwsLambdaFunction interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	QualifiedArn() *string
+	QualifiedInvokeArn() *string
 	Qualifier() *string
 	SetQualifier(val *string)
 	QualifierInput() *string
@@ -430,6 +431,16 @@ func (j *jsiiProxy_DataAwsLambdaFunction) QualifiedArn() *string {
 	_jsii_.Get(
 		j,
 		"qualifiedArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLambdaFunction) QualifiedInvokeArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"qualifiedInvokeArn",
 		&returns,
 	)
 	return returns
