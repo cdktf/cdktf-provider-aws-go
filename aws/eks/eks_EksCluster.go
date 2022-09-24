@@ -60,6 +60,8 @@ type EksCluster interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OutpostConfig() EksClusterOutpostConfigOutputReference
+	OutpostConfigInput() *EksClusterOutpostConfig
 	PlatformVersion() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -121,12 +123,14 @@ type EksCluster interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutEncryptionConfig(value *EksClusterEncryptionConfig)
 	PutKubernetesNetworkConfig(value *EksClusterKubernetesNetworkConfig)
+	PutOutpostConfig(value *EksClusterOutpostConfig)
 	PutTimeouts(value *EksClusterTimeouts)
 	PutVpcConfig(value *EksClusterVpcConfig)
 	ResetEnabledClusterLogTypes()
 	ResetEncryptionConfig()
 	ResetId()
 	ResetKubernetesNetworkConfig()
+	ResetOutpostConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -394,6 +398,26 @@ func (j *jsiiProxy_EksCluster) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksCluster) OutpostConfig() EksClusterOutpostConfigOutputReference {
+	var returns EksClusterOutpostConfigOutputReference
+	_jsii_.Get(
+		j,
+		"outpostConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksCluster) OutpostConfigInput() *EksClusterOutpostConfig {
+	var returns *EksClusterOutpostConfig
+	_jsii_.Get(
+		j,
+		"outpostConfigInput",
 		&returns,
 	)
 	return returns
@@ -1021,6 +1045,17 @@ func (e *jsiiProxy_EksCluster) PutKubernetesNetworkConfig(value *EksClusterKuber
 	)
 }
 
+func (e *jsiiProxy_EksCluster) PutOutpostConfig(value *EksClusterOutpostConfig) {
+	if err := e.validatePutOutpostConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putOutpostConfig",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EksCluster) PutTimeouts(value *EksClusterTimeouts) {
 	if err := e.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1071,6 +1106,14 @@ func (e *jsiiProxy_EksCluster) ResetKubernetesNetworkConfig() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetKubernetesNetworkConfig",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksCluster) ResetOutpostConfig() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetOutpostConfig",
 		nil, // no parameters
 	)
 }

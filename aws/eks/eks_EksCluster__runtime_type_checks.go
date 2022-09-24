@@ -134,6 +134,17 @@ func (e *jsiiProxy_EksCluster) validatePutKubernetesNetworkConfigParameters(valu
 	return nil
 }
 
+func (e *jsiiProxy_EksCluster) validatePutOutpostConfigParameters(value *EksClusterOutpostConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (e *jsiiProxy_EksCluster) validatePutTimeoutsParameters(value *EksClusterTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

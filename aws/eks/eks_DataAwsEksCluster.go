@@ -51,6 +51,7 @@ type DataAwsEksCluster interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OutpostConfig() DataAwsEksClusterOutpostConfigList
 	PlatformVersion() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -311,6 +312,16 @@ func (j *jsiiProxy_DataAwsEksCluster) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEksCluster) OutpostConfig() DataAwsEksClusterOutpostConfigList {
+	var returns DataAwsEksClusterOutpostConfigList
+	_jsii_.Get(
+		j,
+		"outpostConfig",
 		&returns,
 	)
 	return returns

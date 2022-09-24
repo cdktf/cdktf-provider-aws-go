@@ -61,6 +61,10 @@ func (e *jsiiProxy_EksCluster) validatePutKubernetesNetworkConfigParameters(valu
 	return nil
 }
 
+func (e *jsiiProxy_EksCluster) validatePutOutpostConfigParameters(value *EksClusterOutpostConfig) error {
+	return nil
+}
+
 func (e *jsiiProxy_EksCluster) validatePutTimeoutsParameters(value *EksClusterTimeouts) error {
 	return nil
 }
