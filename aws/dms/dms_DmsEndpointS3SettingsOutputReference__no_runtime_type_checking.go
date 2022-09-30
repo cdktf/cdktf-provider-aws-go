@@ -213,6 +213,10 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetUseCsvNoSupV
 	return nil
 }
 
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetUseTaskStartTimeForFullLoadTimestampParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewDmsEndpointS3SettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

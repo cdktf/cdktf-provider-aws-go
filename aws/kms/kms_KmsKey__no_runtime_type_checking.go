@@ -69,6 +69,10 @@ func (j *jsiiProxy_KmsKey) validateSetCustomerMasterKeySpecParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_KmsKey) validateSetCustomKeyStoreIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsKey) validateSetDeletionWindowInDaysParameters(val *float64) error {
 	return nil
 }

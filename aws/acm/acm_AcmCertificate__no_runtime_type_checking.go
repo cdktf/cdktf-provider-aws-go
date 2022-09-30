@@ -85,6 +85,10 @@ func (j *jsiiProxy_AcmCertificate) validateSetDomainNameParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_AcmCertificate) validateSetEarlyRenewalDurationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AcmCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

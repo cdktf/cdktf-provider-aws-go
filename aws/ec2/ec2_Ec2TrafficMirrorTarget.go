@@ -40,6 +40,9 @@ type Ec2TrafficMirrorTarget interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GatewayLoadBalancerEndpointId() *string
+	SetGatewayLoadBalancerEndpointId(val *string)
+	GatewayLoadBalancerEndpointIdInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -104,6 +107,7 @@ type Ec2TrafficMirrorTarget interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDescription()
+	ResetGatewayLoadBalancerEndpointId()
 	ResetId()
 	ResetNetworkInterfaceId()
 	ResetNetworkLoadBalancerArn()
@@ -232,6 +236,26 @@ func (j *jsiiProxy_Ec2TrafficMirrorTarget) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2TrafficMirrorTarget) GatewayLoadBalancerEndpointId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gatewayLoadBalancerEndpointId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2TrafficMirrorTarget) GatewayLoadBalancerEndpointIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gatewayLoadBalancerEndpointIdInput",
 		&returns,
 	)
 	return returns
@@ -499,6 +523,17 @@ func (j *jsiiProxy_Ec2TrafficMirrorTarget)SetForEach(val cdktf.ITerraformIterato
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2TrafficMirrorTarget)SetGatewayLoadBalancerEndpointId(val *string) {
+	if err := j.validateSetGatewayLoadBalancerEndpointIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gatewayLoadBalancerEndpointId",
 		val,
 	)
 }
@@ -820,6 +855,14 @@ func (e *jsiiProxy_Ec2TrafficMirrorTarget) ResetDescription() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2TrafficMirrorTarget) ResetGatewayLoadBalancerEndpointId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetGatewayLoadBalancerEndpointId",
 		nil, // no parameters
 	)
 }

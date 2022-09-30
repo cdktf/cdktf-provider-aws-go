@@ -27,6 +27,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "domainName", GoGetter: "DomainName"},
 			_jsii_.MemberProperty{JsiiProperty: "domainNameInput", GoGetter: "DomainNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "domainValidationOptions", GoGetter: "DomainValidationOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "earlyRenewalDuration", GoGetter: "EarlyRenewalDuration"},
+			_jsii_.MemberProperty{JsiiProperty: "earlyRenewalDurationInput", GoGetter: "EarlyRenewalDurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -49,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "options", GoGetter: "Options"},
 			_jsii_.MemberProperty{JsiiProperty: "optionsInput", GoGetter: "OptionsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "pendingRenewal", GoGetter: "PendingRenewal"},
 			_jsii_.MemberProperty{JsiiProperty: "privateKey", GoGetter: "PrivateKey"},
 			_jsii_.MemberProperty{JsiiProperty: "privateKeyInput", GoGetter: "PrivateKeyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
@@ -56,10 +59,13 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putOptions", GoMethod: "PutOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putValidationOption", GoMethod: "PutValidationOption"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberProperty{JsiiProperty: "renewalEligibility", GoGetter: "RenewalEligibility"},
+			_jsii_.MemberProperty{JsiiProperty: "renewalSummary", GoGetter: "RenewalSummary"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCertificateAuthorityArn", GoMethod: "ResetCertificateAuthorityArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCertificateBody", GoMethod: "ResetCertificateBody"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCertificateChain", GoMethod: "ResetCertificateChain"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDomainName", GoMethod: "ResetDomainName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEarlyRenewalDuration", GoMethod: "ResetEarlyRenewalDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOptions", GoMethod: "ResetOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -83,6 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "validationEmails", GoGetter: "ValidationEmails"},
 			_jsii_.MemberProperty{JsiiProperty: "validationMethod", GoGetter: "ValidationMethod"},
 			_jsii_.MemberProperty{JsiiProperty: "validationMethodInput", GoGetter: "ValidationMethodInput"},
@@ -194,6 +201,65 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AcmCertificateOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.acm.AcmCertificateRenewalSummary",
+		reflect.TypeOf((*AcmCertificateRenewalSummary)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.acm.AcmCertificateRenewalSummaryList",
+		reflect.TypeOf((*AcmCertificateRenewalSummaryList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AcmCertificateRenewalSummaryList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.acm.AcmCertificateRenewalSummaryOutputReference",
+		reflect.TypeOf((*AcmCertificateRenewalSummaryOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "renewalStatus", GoGetter: "RenewalStatus"},
+			_jsii_.MemberProperty{JsiiProperty: "renewalStatusReason", GoGetter: "RenewalStatusReason"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AcmCertificateRenewalSummaryOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

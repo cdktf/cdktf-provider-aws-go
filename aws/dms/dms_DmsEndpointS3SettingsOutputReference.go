@@ -145,6 +145,9 @@ type DmsEndpointS3SettingsOutputReference interface {
 	UseCsvNoSupValue() interface{}
 	SetUseCsvNoSupValue(val interface{})
 	UseCsvNoSupValueInput() interface{}
+	UseTaskStartTimeForFullLoadTimestamp() interface{}
+	SetUseTaskStartTimeForFullLoadTimestamp(val interface{})
+	UseTaskStartTimeForFullLoadTimestampInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -205,6 +208,7 @@ type DmsEndpointS3SettingsOutputReference interface {
 	ResetServiceAccessRoleArn()
 	ResetTimestampColumnName()
 	ResetUseCsvNoSupValue()
+	ResetUseTaskStartTimeForFullLoadTimestamp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -1010,6 +1014,26 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) UseCsvNoSupValueInput()
 	return returns
 }
 
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) UseTaskStartTimeForFullLoadTimestamp() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useTaskStartTimeForFullLoadTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) UseTaskStartTimeForFullLoadTimestampInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useTaskStartTimeForFullLoadTimestampInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDmsEndpointS3SettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DmsEndpointS3SettingsOutputReference {
 	_init_.Initialize()
@@ -1489,6 +1513,17 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetUseCsvNoSupValue(val 
 	)
 }
 
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetUseTaskStartTimeForFullLoadTimestamp(val interface{}) {
+	if err := j.validateSetUseTaskStartTimeForFullLoadTimestampParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useTaskStartTimeForFullLoadTimestamp",
+		val,
+	)
+}
+
 func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) ComputeFqn() *string {
 	var returns *string
 
@@ -1959,6 +1994,14 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) ResetUseCsvNoSupValue()
 	_jsii_.InvokeVoid(
 		d,
 		"resetUseCsvNoSupValue",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) ResetUseTaskStartTimeForFullLoadTimestamp() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUseTaskStartTimeForFullLoadTimestamp",
 		nil, // no parameters
 	)
 }

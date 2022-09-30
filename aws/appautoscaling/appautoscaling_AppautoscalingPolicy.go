@@ -12,6 +12,7 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/aws/r/appautoscaling_policy aws_appautoscaling_policy}.
 type AppautoscalingPolicy interface {
 	cdktf.TerraformResource
+	AlarmArns() *[]*string
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -128,6 +129,16 @@ type AppautoscalingPolicy interface {
 // The jsii proxy struct for AppautoscalingPolicy
 type jsiiProxy_AppautoscalingPolicy struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_AppautoscalingPolicy) AlarmArns() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"alarmArns",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AppautoscalingPolicy) Arn() *string {

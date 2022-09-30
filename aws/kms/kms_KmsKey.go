@@ -31,6 +31,9 @@ type KmsKey interface {
 	CustomerMasterKeySpec() *string
 	SetCustomerMasterKeySpec(val *string)
 	CustomerMasterKeySpecInput() *string
+	CustomKeyStoreId() *string
+	SetCustomKeyStoreId(val *string)
+	CustomKeyStoreIdInput() *string
 	DeletionWindowInDays() *float64
 	SetDeletionWindowInDays(val *float64)
 	DeletionWindowInDaysInput() *float64
@@ -123,6 +126,7 @@ type KmsKey interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetBypassPolicyLockoutSafetyCheck()
 	ResetCustomerMasterKeySpec()
+	ResetCustomKeyStoreId()
 	ResetDeletionWindowInDays()
 	ResetDescription()
 	ResetEnableKeyRotation()
@@ -236,6 +240,26 @@ func (j *jsiiProxy_KmsKey) CustomerMasterKeySpecInput() *string {
 	_jsii_.Get(
 		j,
 		"customerMasterKeySpecInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsKey) CustomKeyStoreId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customKeyStoreId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsKey) CustomKeyStoreIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customKeyStoreIdInput",
 		&returns,
 	)
 	return returns
@@ -642,6 +666,17 @@ func (j *jsiiProxy_KmsKey)SetCustomerMasterKeySpec(val *string) {
 	)
 }
 
+func (j *jsiiProxy_KmsKey)SetCustomKeyStoreId(val *string) {
+	if err := j.validateSetCustomKeyStoreIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customKeyStoreId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_KmsKey)SetDeletionWindowInDays(val *float64) {
 	if err := j.validateSetDeletionWindowInDaysParameters(val); err != nil {
 		panic(err)
@@ -1038,6 +1073,14 @@ func (k *jsiiProxy_KmsKey) ResetCustomerMasterKeySpec() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetCustomerMasterKeySpec",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmsKey) ResetCustomKeyStoreId() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetCustomKeyStoreId",
 		nil, // no parameters
 	)
 }

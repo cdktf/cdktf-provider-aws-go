@@ -683,6 +683,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceAccessRoleArn", GoMethod: "ResetServiceAccessRoleArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimestampColumnName", GoMethod: "ResetTimestampColumnName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUseCsvNoSupValue", GoMethod: "ResetUseCsvNoSupValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUseTaskStartTimeForFullLoadTimestamp", GoMethod: "ResetUseTaskStartTimeForFullLoadTimestamp"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "rfc4180", GoGetter: "Rfc4180"},
 			_jsii_.MemberProperty{JsiiProperty: "rfc4180Input", GoGetter: "Rfc4180Input"},
@@ -699,6 +700,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberProperty{JsiiProperty: "useCsvNoSupValue", GoGetter: "UseCsvNoSupValue"},
 			_jsii_.MemberProperty{JsiiProperty: "useCsvNoSupValueInput", GoGetter: "UseCsvNoSupValueInput"},
+			_jsii_.MemberProperty{JsiiProperty: "useTaskStartTimeForFullLoadTimestamp", GoGetter: "UseTaskStartTimeForFullLoadTimestamp"},
+			_jsii_.MemberProperty{JsiiProperty: "useTaskStartTimeForFullLoadTimestampInput", GoGetter: "UseTaskStartTimeForFullLoadTimestampInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DmsEndpointS3SettingsOutputReference{}

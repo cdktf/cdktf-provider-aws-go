@@ -42,6 +42,9 @@ type AcmCertificate interface {
 	SetDomainName(val *string)
 	DomainNameInput() *string
 	DomainValidationOptions() AcmCertificateDomainValidationOptionsList
+	EarlyRenewalDuration() *string
+	SetEarlyRenewalDuration(val *string)
+	EarlyRenewalDurationInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -63,6 +66,7 @@ type AcmCertificate interface {
 	NotBefore() *string
 	Options() AcmCertificateOptionsOutputReference
 	OptionsInput() *AcmCertificateOptions
+	PendingRenewal() cdktf.IResolvable
 	PrivateKey() *string
 	SetPrivateKey(val *string)
 	PrivateKeyInput() *string
@@ -76,6 +80,8 @@ type AcmCertificate interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RenewalEligibility() *string
+	RenewalSummary() AcmCertificateRenewalSummaryList
 	Status() *string
 	SubjectAlternativeNames() *[]*string
 	SetSubjectAlternativeNames(val *[]*string)
@@ -92,6 +98,7 @@ type AcmCertificate interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Type() *string
 	ValidationEmails() *[]*string
 	ValidationMethod() *string
 	SetValidationMethod(val *string)
@@ -129,6 +136,7 @@ type AcmCertificate interface {
 	ResetCertificateBody()
 	ResetCertificateChain()
 	ResetDomainName()
+	ResetEarlyRenewalDuration()
 	ResetId()
 	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -305,6 +313,26 @@ func (j *jsiiProxy_AcmCertificate) DomainValidationOptions() AcmCertificateDomai
 	return returns
 }
 
+func (j *jsiiProxy_AcmCertificate) EarlyRenewalDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"earlyRenewalDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AcmCertificate) EarlyRenewalDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"earlyRenewalDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AcmCertificate) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -415,6 +443,16 @@ func (j *jsiiProxy_AcmCertificate) OptionsInput() *AcmCertificateOptions {
 	return returns
 }
 
+func (j *jsiiProxy_AcmCertificate) PendingRenewal() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"pendingRenewal",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AcmCertificate) PrivateKey() *string {
 	var returns *string
 	_jsii_.Get(
@@ -460,6 +498,26 @@ func (j *jsiiProxy_AcmCertificate) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AcmCertificate) RenewalEligibility() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"renewalEligibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AcmCertificate) RenewalSummary() AcmCertificateRenewalSummaryList {
+	var returns AcmCertificateRenewalSummaryList
+	_jsii_.Get(
+		j,
+		"renewalSummary",
 		&returns,
 	)
 	return returns
@@ -560,6 +618,16 @@ func (j *jsiiProxy_AcmCertificate) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AcmCertificate) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
 		&returns,
 	)
 	return returns
@@ -712,6 +780,17 @@ func (j *jsiiProxy_AcmCertificate)SetDomainName(val *string) {
 	_jsii_.Set(
 		j,
 		"domainName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AcmCertificate)SetEarlyRenewalDuration(val *string) {
+	if err := j.validateSetEarlyRenewalDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"earlyRenewalDuration",
 		val,
 	)
 }
@@ -1098,6 +1177,14 @@ func (a *jsiiProxy_AcmCertificate) ResetDomainName() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDomainName",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AcmCertificate) ResetEarlyRenewalDuration() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEarlyRenewalDuration",
 		nil, // no parameters
 	)
 }

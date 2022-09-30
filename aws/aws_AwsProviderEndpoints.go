@@ -349,6 +349,10 @@ type AwsProviderEndpoints struct {
 	Connectwisdomservice *string `field:"optional" json:"connectwisdomservice" yaml:"connectwisdomservice"`
 	// Use this to override the default service endpoint URL.
 	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#controltower AwsProvider#controltower}
+	Controltower *string `field:"optional" json:"controltower" yaml:"controltower"`
+	// Use this to override the default service endpoint URL.
+	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#costandusagereportservice AwsProvider#costandusagereportservice}
 	Costandusagereportservice *string `field:"optional" json:"costandusagereportservice" yaml:"costandusagereportservice"`
 	// Use this to override the default service endpoint URL.
@@ -663,6 +667,10 @@ type AwsProviderEndpoints struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#inspector2 AwsProvider#inspector2}
 	Inspector2 *string `field:"optional" json:"inspector2" yaml:"inspector2"`
+	// Use this to override the default service endpoint URL.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#inspectorv2 AwsProvider#inspectorv2}
+	Inspectorv2 *string `field:"optional" json:"inspectorv2" yaml:"inspectorv2"`
 	// Use this to override the default service endpoint URL.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#iot AwsProvider#iot}

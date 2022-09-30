@@ -28,6 +28,8 @@ type AcmCertificateConfig struct {
 	CertificateChain *string `field:"optional" json:"certificateChain" yaml:"certificateChain"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acm_certificate#domain_name AcmCertificate#domain_name}.
 	DomainName *string `field:"optional" json:"domainName" yaml:"domainName"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acm_certificate#early_renewal_duration AcmCertificate#early_renewal_duration}.
+	EarlyRenewalDuration *string `field:"optional" json:"earlyRenewalDuration" yaml:"earlyRenewalDuration"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acm_certificate#id AcmCertificate#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
