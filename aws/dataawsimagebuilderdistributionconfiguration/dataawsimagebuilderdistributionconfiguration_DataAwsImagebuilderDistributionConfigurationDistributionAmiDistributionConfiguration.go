@@ -1,0 +1,6 @@
+package dataawsimagebuilderdistributionconfiguration
+
+
+type DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfiguration struct {
+}
+

@@ -1,0 +1,10 @@
+package ekscluster
+
+
+type EksClusterOutpostConfig struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#control_plane_instance_type EksCluster#control_plane_instance_type}.
+	ControlPlaneInstanceType *string `field:"required" json:"controlPlaneInstanceType" yaml:"controlPlaneInstanceType"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_cluster#outpost_arns EksCluster#outpost_arns}.
+	OutpostArns *[]*string `field:"required" json:"outpostArns" yaml:"outpostArns"`
+}
+

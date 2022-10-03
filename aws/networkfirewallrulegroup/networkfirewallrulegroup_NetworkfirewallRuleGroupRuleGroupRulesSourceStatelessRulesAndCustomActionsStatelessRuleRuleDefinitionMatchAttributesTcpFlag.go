@@ -1,0 +1,10 @@
+package networkfirewallrulegroup
+
+
+type NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlag struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#flags NetworkfirewallRuleGroup#flags}.
+	Flags *[]*string `field:"required" json:"flags" yaml:"flags"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#masks NetworkfirewallRuleGroup#masks}.
+	Masks *[]*string `field:"optional" json:"masks" yaml:"masks"`
+}
+

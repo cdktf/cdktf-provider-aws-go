@@ -1,0 +1,6 @@
+package dataawselasticsearchdomain
+
+
+type DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration struct {
+}
+

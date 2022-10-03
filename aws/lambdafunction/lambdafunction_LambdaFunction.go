@@ -2,10 +2,10 @@ package lambdafunction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/hashicorp/cdktf-provider-aws-go/aws/v9/jsii"
+	_init_ "github.com/hashicorp/cdktf-provider-aws-go/aws/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/cdktf-provider-aws-go/aws/v9/lambdafunction/internal"
+	"github.com/hashicorp/cdktf-provider-aws-go/aws/v10/lambdafunction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1113,7 +1113,7 @@ func NewLambdaFunction(scope constructs.Construct, id *string, config *LambdaFun
 	j := jsiiProxy_LambdaFunction{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lambdafunction.LambdaFunction",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunction",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -1126,7 +1126,7 @@ func NewLambdaFunction_Override(l LambdaFunction, scope constructs.Construct, id
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lambdafunction.LambdaFunction",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunction",
 		[]interface{}{scope, id, config},
 		l,
 	)
@@ -1476,7 +1476,7 @@ func LambdaFunction_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-aws.lambdafunction.LambdaFunction",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunction",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1489,7 +1489,7 @@ func LambdaFunction_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-aws.lambdafunction.LambdaFunction",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunction",
 		"tfResourceType",
 		&returns,
 	)

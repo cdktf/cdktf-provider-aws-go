@@ -1,6 +1,0 @@
-package cloudfront
-
-
-type DataAwsCloudfrontCachePolicyParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStrings struct {
-}
-

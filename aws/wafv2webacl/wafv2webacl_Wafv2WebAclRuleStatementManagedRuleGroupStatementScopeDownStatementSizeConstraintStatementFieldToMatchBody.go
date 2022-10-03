@@ -1,0 +1,6 @@
+package wafv2webacl
+
+
+type Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementSizeConstraintStatementFieldToMatchBody struct {
+}
+

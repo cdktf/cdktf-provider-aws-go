@@ -2,9 +2,9 @@ package lambdafunction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/hashicorp/cdktf-provider-aws-go/aws/v9/jsii"
+	_init_ "github.com/hashicorp/cdktf-provider-aws-go/aws/v10/jsii"
 
-	"github.com/hashicorp/cdktf-provider-aws-go/aws/v9/lambdafunction/internal"
+	"github.com/hashicorp/cdktf-provider-aws-go/aws/v10/lambdafunction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -180,7 +180,7 @@ func NewLambdaFunctionEnvironmentOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_LambdaFunctionEnvironmentOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lambdafunction.LambdaFunctionEnvironmentOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionEnvironmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewLambdaFunctionEnvironmentOutputReference_Override(l LambdaFunctionEnviro
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lambdafunction.LambdaFunctionEnvironmentOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionEnvironmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

@@ -1,0 +1,6 @@
+package dataawsnetworkfirewallfirewallpolicy
+
+
+type DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReference struct {
+}
+

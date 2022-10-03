@@ -2,9 +2,9 @@ package lambdafunction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/hashicorp/cdktf-provider-aws-go/aws/v9/jsii"
+	_init_ "github.com/hashicorp/cdktf-provider-aws-go/aws/v10/jsii"
 
-	"github.com/hashicorp/cdktf-provider-aws-go/aws/v9/lambdafunction/internal"
+	"github.com/hashicorp/cdktf-provider-aws-go/aws/v10/lambdafunction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -180,7 +180,7 @@ func NewLambdaFunctionEphemeralStorageOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_LambdaFunctionEphemeralStorageOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lambdafunction.LambdaFunctionEphemeralStorageOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionEphemeralStorageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -192,7 +192,7 @@ func NewLambdaFunctionEphemeralStorageOutputReference_Override(l LambdaFunctionE
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lambdafunction.LambdaFunctionEphemeralStorageOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionEphemeralStorageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

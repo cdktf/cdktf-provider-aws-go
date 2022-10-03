@@ -2,9 +2,9 @@ package lambdafunction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/hashicorp/cdktf-provider-aws-go/aws/v9/jsii"
+	_init_ "github.com/hashicorp/cdktf-provider-aws-go/aws/v10/jsii"
 
-	"github.com/hashicorp/cdktf-provider-aws-go/aws/v9/lambdafunction/internal"
+	"github.com/hashicorp/cdktf-provider-aws-go/aws/v10/lambdafunction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -228,7 +228,7 @@ func NewLambdaFunctionImageConfigOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_LambdaFunctionImageConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lambdafunction.LambdaFunctionImageConfigOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionImageConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -240,7 +240,7 @@ func NewLambdaFunctionImageConfigOutputReference_Override(l LambdaFunctionImageC
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lambdafunction.LambdaFunctionImageConfigOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionImageConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

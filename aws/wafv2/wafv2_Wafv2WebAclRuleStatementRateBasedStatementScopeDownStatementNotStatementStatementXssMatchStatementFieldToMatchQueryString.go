@@ -1,6 +1,0 @@
-package wafv2
-
-
-type Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatementFieldToMatchQueryString struct {
-}
-

@@ -4,7 +4,6 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// AWS Lambda.
 type LambdaFunctionConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`

@@ -1,0 +1,6 @@
+package dataawsservicecataloglaunchpaths
+
+
+type DataAwsServicecatalogLaunchPathsSummariesConstraintSummaries struct {
+}
+

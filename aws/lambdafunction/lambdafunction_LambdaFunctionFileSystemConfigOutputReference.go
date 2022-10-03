@@ -2,9 +2,9 @@ package lambdafunction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/hashicorp/cdktf-provider-aws-go/aws/v9/jsii"
+	_init_ "github.com/hashicorp/cdktf-provider-aws-go/aws/v10/jsii"
 
-	"github.com/hashicorp/cdktf-provider-aws-go/aws/v9/lambdafunction/internal"
+	"github.com/hashicorp/cdktf-provider-aws-go/aws/v10/lambdafunction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -202,7 +202,7 @@ func NewLambdaFunctionFileSystemConfigOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_LambdaFunctionFileSystemConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lambdafunction.LambdaFunctionFileSystemConfigOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionFileSystemConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -214,7 +214,7 @@ func NewLambdaFunctionFileSystemConfigOutputReference_Override(l LambdaFunctionF
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lambdafunction.LambdaFunctionFileSystemConfigOutputReference",
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionFileSystemConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)

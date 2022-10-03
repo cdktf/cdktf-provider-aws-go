@@ -1,0 +1,6 @@
+package dataawsnetworkfirewallfirewall
+
+
+type DataAwsNetworkfirewallFirewallFirewallStatusCapacityUsageSummaryCidrs struct {
+}
+

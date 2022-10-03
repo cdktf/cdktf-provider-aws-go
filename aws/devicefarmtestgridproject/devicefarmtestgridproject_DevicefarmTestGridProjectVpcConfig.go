@@ -1,0 +1,12 @@
+package devicefarmtestgridproject
+
+
+type DevicefarmTestGridProjectVpcConfig struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_test_grid_project#security_group_ids DevicefarmTestGridProject#security_group_ids}.
+	SecurityGroupIds *[]*string `field:"required" json:"securityGroupIds" yaml:"securityGroupIds"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_test_grid_project#subnet_ids DevicefarmTestGridProject#subnet_ids}.
+	SubnetIds *[]*string `field:"required" json:"subnetIds" yaml:"subnetIds"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_test_grid_project#vpc_id DevicefarmTestGridProject#vpc_id}.
+	VpcId *string `field:"required" json:"vpcId" yaml:"vpcId"`
+}
+
