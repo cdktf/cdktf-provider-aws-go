@@ -35,6 +35,7 @@ type EksClusterKubernetesNetworkConfigOutputReference interface {
 	ServiceIpv4Cidr() *string
 	SetServiceIpv4Cidr(val *string)
 	ServiceIpv4CidrInput() *string
+	ServiceIpv6Cidr() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -169,6 +170,16 @@ func (j *jsiiProxy_EksClusterKubernetesNetworkConfigOutputReference) ServiceIpv4
 	_jsii_.Get(
 		j,
 		"serviceIpv4CidrInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksClusterKubernetesNetworkConfigOutputReference) ServiceIpv6Cidr() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceIpv6Cidr",
 		&returns,
 	)
 	return returns

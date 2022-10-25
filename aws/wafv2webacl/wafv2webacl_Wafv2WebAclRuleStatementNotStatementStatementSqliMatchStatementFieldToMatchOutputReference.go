@@ -33,6 +33,8 @@ type Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStatementFieldToMatch
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Headers() Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStatementFieldToMatchHeadersList
+	HeadersInput() interface{}
 	InternalValue() *Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStatementFieldToMatch
 	SetInternalValue(val *Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStatementFieldToMatch)
 	JsonBody() Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStatementFieldToMatchJsonBodyOutputReference
@@ -82,6 +84,7 @@ type Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStatementFieldToMatch
 	PutAllQueryArguments(value *Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStatementFieldToMatchAllQueryArguments)
 	PutBody(value *Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStatementFieldToMatchBody)
 	PutCookies(value *Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStatementFieldToMatchCookies)
+	PutHeaders(value interface{})
 	PutJsonBody(value *Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStatementFieldToMatchJsonBody)
 	PutMethod(value *Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStatementFieldToMatchMethod)
 	PutQueryString(value *Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStatementFieldToMatchQueryString)
@@ -91,6 +94,7 @@ type Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStatementFieldToMatch
 	ResetAllQueryArguments()
 	ResetBody()
 	ResetCookies()
+	ResetHeaders()
 	ResetJsonBody()
 	ResetMethod()
 	ResetQueryString()
@@ -207,6 +211,26 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStateme
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStatementFieldToMatchOutputReference) Headers() Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStatementFieldToMatchHeadersList {
+	var returns Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStatementFieldToMatchHeadersList
+	_jsii_.Get(
+		j,
+		"headers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStatementFieldToMatchOutputReference) HeadersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"headersInput",
 		&returns,
 	)
 	return returns
@@ -664,6 +688,17 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStateme
 	)
 }
 
+func (w *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStatementFieldToMatchOutputReference) PutHeaders(value interface{}) {
+	if err := w.validatePutHeadersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putHeaders",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStatementFieldToMatchOutputReference) PutJsonBody(value *Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStatementFieldToMatchJsonBody) {
 	if err := w.validatePutJsonBodyParameters(value); err != nil {
 		panic(err)
@@ -750,6 +785,14 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStateme
 	_jsii_.InvokeVoid(
 		w,
 		"resetCookies",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementSqliMatchStatementFieldToMatchOutputReference) ResetHeaders() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetHeaders",
 		nil, // no parameters
 	)
 }

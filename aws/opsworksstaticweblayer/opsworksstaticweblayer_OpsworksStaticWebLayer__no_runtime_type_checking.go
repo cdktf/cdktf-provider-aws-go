@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package opsworksstaticweblayer
 
@@ -58,6 +57,10 @@ func (o *jsiiProxy_OpsworksStaticWebLayer) validatePutCloudwatchConfigurationPar
 }
 
 func (o *jsiiProxy_OpsworksStaticWebLayer) validatePutEbsVolumeParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksStaticWebLayer) validatePutLoadBasedAutoScalingParameters(value *OpsworksStaticWebLayerLoadBasedAutoScaling) error {
 	return nil
 }
 

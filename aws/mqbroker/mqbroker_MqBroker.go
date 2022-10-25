@@ -115,6 +115,8 @@ type MqBroker interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() MqBrokerTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	User() MqBrokerUserList
 	UserInput() interface{}
 	// Experimental.
@@ -147,6 +149,7 @@ type MqBroker interface {
 	PutLdapServerMetadata(value *MqBrokerLdapServerMetadata)
 	PutLogs(value *MqBrokerLogs)
 	PutMaintenanceWindowStartTime(value *MqBrokerMaintenanceWindowStartTime)
+	PutTimeouts(value *MqBrokerTimeouts)
 	PutUser(value interface{})
 	ResetApplyImmediately()
 	ResetAuthenticationStrategy()
@@ -167,6 +170,7 @@ type MqBroker interface {
 	ResetSubnetIds()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -762,6 +766,26 @@ func (j *jsiiProxy_MqBroker) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MqBroker) Timeouts() MqBrokerTimeoutsOutputReference {
+	var returns MqBrokerTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MqBroker) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MqBroker) User() MqBrokerUserList {
 	var returns MqBrokerUserList
 	_jsii_.Get(
@@ -1325,6 +1349,17 @@ func (m *jsiiProxy_MqBroker) PutMaintenanceWindowStartTime(value *MqBrokerMainte
 	)
 }
 
+func (m *jsiiProxy_MqBroker) PutTimeouts(value *MqBrokerTimeouts) {
+	if err := m.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MqBroker) PutUser(value interface{}) {
 	if err := m.validatePutUserParameters(value); err != nil {
 		panic(err)
@@ -1468,6 +1503,14 @@ func (m *jsiiProxy_MqBroker) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MqBroker) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

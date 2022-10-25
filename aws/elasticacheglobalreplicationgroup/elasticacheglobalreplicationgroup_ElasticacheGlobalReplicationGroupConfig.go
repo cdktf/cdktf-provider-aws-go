@@ -23,6 +23,10 @@ type ElasticacheGlobalReplicationGroupConfig struct {
 	GlobalReplicationGroupIdSuffix *string `field:"required" json:"globalReplicationGroupIdSuffix" yaml:"globalReplicationGroupIdSuffix"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_global_replication_group#primary_replication_group_id ElasticacheGlobalReplicationGroup#primary_replication_group_id}.
 	PrimaryReplicationGroupId *string `field:"required" json:"primaryReplicationGroupId" yaml:"primaryReplicationGroupId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_global_replication_group#automatic_failover_enabled ElasticacheGlobalReplicationGroup#automatic_failover_enabled}.
+	AutomaticFailoverEnabled interface{} `field:"optional" json:"automaticFailoverEnabled" yaml:"automaticFailoverEnabled"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_global_replication_group#cache_node_type ElasticacheGlobalReplicationGroup#cache_node_type}.
+	CacheNodeType *string `field:"optional" json:"cacheNodeType" yaml:"cacheNodeType"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_global_replication_group#engine_version ElasticacheGlobalReplicationGroup#engine_version}.
 	EngineVersion *string `field:"optional" json:"engineVersion" yaml:"engineVersion"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_global_replication_group#global_replication_group_description ElasticacheGlobalReplicationGroup#global_replication_group_description}.

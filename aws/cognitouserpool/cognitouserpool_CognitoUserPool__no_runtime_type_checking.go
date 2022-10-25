@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package cognitouserpool
 
@@ -86,6 +85,10 @@ func (c *jsiiProxy_CognitoUserPool) validatePutSmsConfigurationParameters(value 
 }
 
 func (c *jsiiProxy_CognitoUserPool) validatePutSoftwareTokenMfaConfigurationParameters(value *CognitoUserPoolSoftwareTokenMfaConfiguration) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoUserPool) validatePutUserAttributeUpdateSettingsParameters(value *CognitoUserPoolUserAttributeUpdateSettings) error {
 	return nil
 }
 

@@ -59,6 +59,7 @@ type Route53Zone interface {
 	NameServers() *[]*string
 	// The tree node.
 	Node() constructs.Node
+	PrimaryNameServer() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -350,6 +351,16 @@ func (j *jsiiProxy_Route53Zone) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53Zone) PrimaryNameServer() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryNameServer",
 		&returns,
 	)
 	return returns

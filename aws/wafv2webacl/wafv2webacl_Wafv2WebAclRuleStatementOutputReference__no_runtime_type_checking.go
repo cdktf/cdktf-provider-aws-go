@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package wafv2webacl
 
@@ -78,6 +77,10 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementOutputReference) validatePutOrStateme
 }
 
 func (w *jsiiProxy_Wafv2WebAclRuleStatementOutputReference) validatePutRateBasedStatementParameters(value *Wafv2WebAclRuleStatementRateBasedStatement) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOutputReference) validatePutRegexMatchStatementParameters(value *Wafv2WebAclRuleStatementRegexMatchStatement) error {
 	return nil
 }
 

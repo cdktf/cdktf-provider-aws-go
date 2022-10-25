@@ -50,6 +50,7 @@ type DataAwsRoute53Zone interface {
 	NameServers() *[]*string
 	// The tree node.
 	Node() constructs.Node
+	PrimaryNameServer() *string
 	PrivateZone() interface{}
 	SetPrivateZone(val interface{})
 	PrivateZoneInput() interface{}
@@ -312,6 +313,16 @@ func (j *jsiiProxy_DataAwsRoute53Zone) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRoute53Zone) PrimaryNameServer() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryNameServer",
 		&returns,
 	)
 	return returns

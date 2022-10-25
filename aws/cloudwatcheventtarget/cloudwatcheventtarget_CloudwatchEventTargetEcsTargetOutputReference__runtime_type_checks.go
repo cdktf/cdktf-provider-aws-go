@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package cloudwatcheventtarget
 
@@ -86,6 +85,37 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) validateGetStr
 func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
 	if property == nil {
 		return fmt.Errorf("parameter property is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) validatePutCapacityProviderStrategyParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*CloudwatchEventTargetEcsTargetCapacityProviderStrategy:
+		value := value.(*[]*CloudwatchEventTargetEcsTargetCapacityProviderStrategy)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*CloudwatchEventTargetEcsTargetCapacityProviderStrategy:
+		value_ := value.([]*CloudwatchEventTargetEcsTargetCapacityProviderStrategy)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CloudwatchEventTargetEcsTargetCapacityProviderStrategy; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil

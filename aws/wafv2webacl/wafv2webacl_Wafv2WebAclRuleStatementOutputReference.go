@@ -47,6 +47,8 @@ type Wafv2WebAclRuleStatementOutputReference interface {
 	OrStatementInput() *Wafv2WebAclRuleStatementOrStatement
 	RateBasedStatement() Wafv2WebAclRuleStatementRateBasedStatementOutputReference
 	RateBasedStatementInput() *Wafv2WebAclRuleStatementRateBasedStatement
+	RegexMatchStatement() Wafv2WebAclRuleStatementRegexMatchStatementOutputReference
+	RegexMatchStatementInput() *Wafv2WebAclRuleStatementRegexMatchStatement
 	RegexPatternSetReferenceStatement() Wafv2WebAclRuleStatementRegexPatternSetReferenceStatementOutputReference
 	RegexPatternSetReferenceStatementInput() *Wafv2WebAclRuleStatementRegexPatternSetReferenceStatement
 	RuleGroupReferenceStatement() Wafv2WebAclRuleStatementRuleGroupReferenceStatementOutputReference
@@ -98,6 +100,7 @@ type Wafv2WebAclRuleStatementOutputReference interface {
 	PutNotStatement(value *Wafv2WebAclRuleStatementNotStatement)
 	PutOrStatement(value *Wafv2WebAclRuleStatementOrStatement)
 	PutRateBasedStatement(value *Wafv2WebAclRuleStatementRateBasedStatement)
+	PutRegexMatchStatement(value *Wafv2WebAclRuleStatementRegexMatchStatement)
 	PutRegexPatternSetReferenceStatement(value *Wafv2WebAclRuleStatementRegexPatternSetReferenceStatement)
 	PutRuleGroupReferenceStatement(value *Wafv2WebAclRuleStatementRuleGroupReferenceStatement)
 	PutSizeConstraintStatement(value *Wafv2WebAclRuleStatementSizeConstraintStatement)
@@ -112,6 +115,7 @@ type Wafv2WebAclRuleStatementOutputReference interface {
 	ResetNotStatement()
 	ResetOrStatement()
 	ResetRateBasedStatement()
+	ResetRegexMatchStatement()
 	ResetRegexPatternSetReferenceStatement()
 	ResetRuleGroupReferenceStatement()
 	ResetSizeConstraintStatement()
@@ -357,6 +361,26 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementOutputReference) RateBasedStatementIn
 	_jsii_.Get(
 		j,
 		"rateBasedStatementInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementOutputReference) RegexMatchStatement() Wafv2WebAclRuleStatementRegexMatchStatementOutputReference {
+	var returns Wafv2WebAclRuleStatementRegexMatchStatementOutputReference
+	_jsii_.Get(
+		j,
+		"regexMatchStatement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementOutputReference) RegexMatchStatementInput() *Wafv2WebAclRuleStatementRegexMatchStatement {
+	var returns *Wafv2WebAclRuleStatementRegexMatchStatement
+	_jsii_.Get(
+		j,
+		"regexMatchStatementInput",
 		&returns,
 	)
 	return returns
@@ -850,6 +874,17 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementOutputReference) PutRateBasedStatemen
 	)
 }
 
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOutputReference) PutRegexMatchStatement(value *Wafv2WebAclRuleStatementRegexMatchStatement) {
+	if err := w.validatePutRegexMatchStatementParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putRegexMatchStatement",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2WebAclRuleStatementOutputReference) PutRegexPatternSetReferenceStatement(value *Wafv2WebAclRuleStatementRegexPatternSetReferenceStatement) {
 	if err := w.validatePutRegexPatternSetReferenceStatementParameters(value); err != nil {
 		panic(err)
@@ -973,6 +1008,14 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementOutputReference) ResetRateBasedStatem
 	_jsii_.InvokeVoid(
 		w,
 		"resetRateBasedStatement",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOutputReference) ResetRegexMatchStatement() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRegexMatchStatement",
 		nil, // no parameters
 	)
 }

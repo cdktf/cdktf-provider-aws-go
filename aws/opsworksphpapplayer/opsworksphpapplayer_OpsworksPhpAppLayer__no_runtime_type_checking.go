@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package opsworksphpapplayer
 
@@ -58,6 +57,10 @@ func (o *jsiiProxy_OpsworksPhpAppLayer) validatePutCloudwatchConfigurationParame
 }
 
 func (o *jsiiProxy_OpsworksPhpAppLayer) validatePutEbsVolumeParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksPhpAppLayer) validatePutLoadBasedAutoScalingParameters(value *OpsworksPhpAppLayerLoadBasedAutoScaling) error {
 	return nil
 }
 

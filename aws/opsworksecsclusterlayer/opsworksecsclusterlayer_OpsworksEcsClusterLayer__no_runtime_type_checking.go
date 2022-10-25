@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package opsworksecsclusterlayer
 
@@ -58,6 +57,10 @@ func (o *jsiiProxy_OpsworksEcsClusterLayer) validatePutCloudwatchConfigurationPa
 }
 
 func (o *jsiiProxy_OpsworksEcsClusterLayer) validatePutEbsVolumeParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksEcsClusterLayer) validatePutLoadBasedAutoScalingParameters(value *OpsworksEcsClusterLayerLoadBasedAutoScaling) error {
 	return nil
 }
 

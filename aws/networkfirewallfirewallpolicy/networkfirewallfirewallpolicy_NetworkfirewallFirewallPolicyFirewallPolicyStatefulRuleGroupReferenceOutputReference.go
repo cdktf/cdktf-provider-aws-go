@@ -29,6 +29,8 @@ type NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutput
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Override() NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverrideOutputReference
+	OverrideInput() *NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverride
 	Priority() *float64
 	SetPriority(val *float64)
 	PriorityInput() *float64
@@ -67,6 +69,8 @@ type NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutput
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutOverride(value *NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverride)
+	ResetOverride()
 	ResetPriority()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -128,6 +132,26 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupR
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference) Override() NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverrideOutputReference {
+	var returns NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverrideOutputReference
+	_jsii_.Get(
+		j,
+		"override",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference) OverrideInput() *NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverride {
+	var returns *NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverride
+	_jsii_.Get(
+		j,
+		"overrideInput",
 		&returns,
 	)
 	return returns
@@ -482,6 +506,25 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupR
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference) PutOverride(value *NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverride) {
+	if err := n.validatePutOverrideParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putOverride",
+		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference) ResetOverride() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetOverride",
+		nil, // no parameters
+	)
 }
 
 func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference) ResetPriority() {

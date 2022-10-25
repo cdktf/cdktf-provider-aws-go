@@ -293,6 +293,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ipFamily", GoGetter: "IpFamily"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceIpv4Cidr", GoGetter: "ServiceIpv4Cidr"},
+			_jsii_.MemberProperty{JsiiProperty: "serviceIpv6Cidr", GoGetter: "ServiceIpv6Cidr"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},

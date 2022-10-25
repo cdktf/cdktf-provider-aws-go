@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package resourcegroupsgroup
 
@@ -53,7 +52,15 @@ func (r *jsiiProxy_ResourcegroupsGroup) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (r *jsiiProxy_ResourcegroupsGroup) validatePutConfigurationParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourcegroupsGroup) validatePutResourceQueryParameters(value *ResourcegroupsGroupResourceQuery) error {
+	return nil
+}
+
+func (r *jsiiProxy_ResourcegroupsGroup) validatePutTimeoutsParameters(value *ResourcegroupsGroupTimeouts) error {
 	return nil
 }
 

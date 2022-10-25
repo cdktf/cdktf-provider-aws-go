@@ -96,6 +96,8 @@ type OpsworksMemcachedLayer interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LoadBasedAutoScaling() OpsworksMemcachedLayerLoadBasedAutoScalingOutputReference
+	LoadBasedAutoScalingInput() *OpsworksMemcachedLayerLoadBasedAutoScaling
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -159,6 +161,7 @@ type OpsworksMemcachedLayer interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCloudwatchConfiguration(value *OpsworksMemcachedLayerCloudwatchConfiguration)
 	PutEbsVolume(value interface{})
+	PutLoadBasedAutoScaling(value *OpsworksMemcachedLayerLoadBasedAutoScaling)
 	ResetAllocatedMemory()
 	ResetAutoAssignElasticIps()
 	ResetAutoAssignPublicIps()
@@ -178,6 +181,7 @@ type OpsworksMemcachedLayer interface {
 	ResetId()
 	ResetInstallUpdatesOnBoot()
 	ResetInstanceShutdownTimeout()
+	ResetLoadBasedAutoScaling()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -676,6 +680,26 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) Lifecycle() *cdktf.TerraformResourceL
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksMemcachedLayer) LoadBasedAutoScaling() OpsworksMemcachedLayerLoadBasedAutoScalingOutputReference {
+	var returns OpsworksMemcachedLayerLoadBasedAutoScalingOutputReference
+	_jsii_.Get(
+		j,
+		"loadBasedAutoScaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksMemcachedLayer) LoadBasedAutoScalingInput() *OpsworksMemcachedLayerLoadBasedAutoScaling {
+	var returns *OpsworksMemcachedLayerLoadBasedAutoScaling
+	_jsii_.Get(
+		j,
+		"loadBasedAutoScalingInput",
 		&returns,
 	)
 	return returns
@@ -1469,6 +1493,17 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) PutEbsVolume(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OpsworksMemcachedLayer) PutLoadBasedAutoScaling(value *OpsworksMemcachedLayerLoadBasedAutoScaling) {
+	if err := o.validatePutLoadBasedAutoScalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putLoadBasedAutoScaling",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OpsworksMemcachedLayer) ResetAllocatedMemory() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1617,6 +1652,14 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) ResetInstanceShutdownTimeout() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetInstanceShutdownTimeout",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksMemcachedLayer) ResetLoadBasedAutoScaling() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLoadBasedAutoScaling",
 		nil, // no parameters
 	)
 }

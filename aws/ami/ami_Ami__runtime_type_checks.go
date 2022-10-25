@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package ami
 
@@ -287,6 +286,14 @@ func (j *jsiiProxy_Ami) validateSetIdParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Ami) validateSetImageLocationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Ami) validateSetImdsSupportParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

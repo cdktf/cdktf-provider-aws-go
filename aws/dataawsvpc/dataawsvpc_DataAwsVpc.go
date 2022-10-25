@@ -37,6 +37,7 @@ type DataAwsVpc interface {
 	DhcpOptionsIdInput() *string
 	EnableDnsHostnames() cdktf.IResolvable
 	EnableDnsSupport() cdktf.IResolvable
+	EnableNetworkAddressUsageMetrics() cdktf.IResolvable
 	Filter() DataAwsVpcFilterList
 	FilterInput() interface{}
 	// Experimental.
@@ -269,6 +270,16 @@ func (j *jsiiProxy_DataAwsVpc) EnableDnsSupport() cdktf.IResolvable {
 	_jsii_.Get(
 		j,
 		"enableDnsSupport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsVpc) EnableNetworkAddressUsageMetrics() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableNetworkAddressUsageMetrics",
 		&returns,
 	)
 	return returns

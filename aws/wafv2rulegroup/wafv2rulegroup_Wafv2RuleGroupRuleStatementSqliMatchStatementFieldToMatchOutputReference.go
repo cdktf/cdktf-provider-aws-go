@@ -33,6 +33,8 @@ type Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchOutputReference in
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Headers() Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchHeadersList
+	HeadersInput() interface{}
 	InternalValue() *Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatch
 	SetInternalValue(val *Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatch)
 	JsonBody() Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchJsonBodyOutputReference
@@ -82,6 +84,7 @@ type Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchOutputReference in
 	PutAllQueryArguments(value *Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchAllQueryArguments)
 	PutBody(value *Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchBody)
 	PutCookies(value *Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchCookies)
+	PutHeaders(value interface{})
 	PutJsonBody(value *Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchJsonBody)
 	PutMethod(value *Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchMethod)
 	PutQueryString(value *Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchQueryString)
@@ -91,6 +94,7 @@ type Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchOutputReference in
 	ResetAllQueryArguments()
 	ResetBody()
 	ResetCookies()
+	ResetHeaders()
 	ResetJsonBody()
 	ResetMethod()
 	ResetQueryString()
@@ -207,6 +211,26 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchOutp
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchOutputReference) Headers() Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchHeadersList {
+	var returns Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchHeadersList
+	_jsii_.Get(
+		j,
+		"headers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchOutputReference) HeadersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"headersInput",
 		&returns,
 	)
 	return returns
@@ -664,6 +688,17 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchOutp
 	)
 }
 
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchOutputReference) PutHeaders(value interface{}) {
+	if err := w.validatePutHeadersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putHeaders",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchOutputReference) PutJsonBody(value *Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchJsonBody) {
 	if err := w.validatePutJsonBodyParameters(value); err != nil {
 		panic(err)
@@ -750,6 +785,14 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchOutp
 	_jsii_.InvokeVoid(
 		w,
 		"resetCookies",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementSqliMatchStatementFieldToMatchOutputReference) ResetHeaders() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetHeaders",
 		nil, // no parameters
 	)
 }

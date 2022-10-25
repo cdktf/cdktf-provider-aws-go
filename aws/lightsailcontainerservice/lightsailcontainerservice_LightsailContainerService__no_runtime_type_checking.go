@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package lightsailcontainerservice
 
@@ -50,6 +49,10 @@ func (l *jsiiProxy_LightsailContainerService) validateInterpolationForAttributeP
 }
 
 func (l *jsiiProxy_LightsailContainerService) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LightsailContainerService) validatePutPrivateRegistryAccessParameters(value *LightsailContainerServicePrivateRegistryAccess) error {
 	return nil
 }
 

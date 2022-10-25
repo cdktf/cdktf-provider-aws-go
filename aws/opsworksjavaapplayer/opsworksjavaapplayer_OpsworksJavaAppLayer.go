@@ -108,6 +108,8 @@ type OpsworksJavaAppLayer interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LoadBasedAutoScaling() OpsworksJavaAppLayerLoadBasedAutoScalingOutputReference
+	LoadBasedAutoScalingInput() *OpsworksJavaAppLayerLoadBasedAutoScaling
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -171,6 +173,7 @@ type OpsworksJavaAppLayer interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCloudwatchConfiguration(value *OpsworksJavaAppLayerCloudwatchConfiguration)
 	PutEbsVolume(value interface{})
+	PutLoadBasedAutoScaling(value *OpsworksJavaAppLayerLoadBasedAutoScaling)
 	ResetAppServer()
 	ResetAppServerVersion()
 	ResetAutoAssignElasticIps()
@@ -194,6 +197,7 @@ type OpsworksJavaAppLayer interface {
 	ResetJvmOptions()
 	ResetJvmType()
 	ResetJvmVersion()
+	ResetLoadBasedAutoScaling()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -772,6 +776,26 @@ func (j *jsiiProxy_OpsworksJavaAppLayer) Lifecycle() *cdktf.TerraformResourceLif
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksJavaAppLayer) LoadBasedAutoScaling() OpsworksJavaAppLayerLoadBasedAutoScalingOutputReference {
+	var returns OpsworksJavaAppLayerLoadBasedAutoScalingOutputReference
+	_jsii_.Get(
+		j,
+		"loadBasedAutoScaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksJavaAppLayer) LoadBasedAutoScalingInput() *OpsworksJavaAppLayerLoadBasedAutoScaling {
+	var returns *OpsworksJavaAppLayerLoadBasedAutoScaling
+	_jsii_.Get(
+		j,
+		"loadBasedAutoScalingInput",
 		&returns,
 	)
 	return returns
@@ -1609,6 +1633,17 @@ func (o *jsiiProxy_OpsworksJavaAppLayer) PutEbsVolume(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OpsworksJavaAppLayer) PutLoadBasedAutoScaling(value *OpsworksJavaAppLayerLoadBasedAutoScaling) {
+	if err := o.validatePutLoadBasedAutoScalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putLoadBasedAutoScaling",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OpsworksJavaAppLayer) ResetAppServer() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1789,6 +1824,14 @@ func (o *jsiiProxy_OpsworksJavaAppLayer) ResetJvmVersion() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetJvmVersion",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksJavaAppLayer) ResetLoadBasedAutoScaling() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLoadBasedAutoScaling",
 		nil, // no parameters
 	)
 }

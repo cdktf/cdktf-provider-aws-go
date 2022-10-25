@@ -32,6 +32,10 @@ type LightsailContainerServiceConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_container_service#is_disabled LightsailContainerService#is_disabled}.
 	IsDisabled interface{} `field:"optional" json:"isDisabled" yaml:"isDisabled"`
+	// private_registry_access block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_container_service#private_registry_access LightsailContainerService#private_registry_access}
+	PrivateRegistryAccess *LightsailContainerServicePrivateRegistryAccess `field:"optional" json:"privateRegistryAccess" yaml:"privateRegistryAccess"`
 	// public_domain_names block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_container_service#public_domain_names LightsailContainerService#public_domain_names}

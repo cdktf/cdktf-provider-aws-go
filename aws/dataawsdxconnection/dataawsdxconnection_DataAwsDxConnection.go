@@ -65,6 +65,7 @@ type DataAwsDxConnection interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	VlanId() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -365,6 +366,16 @@ func (j *jsiiProxy_DataAwsDxConnection) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDxConnection) VlanId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vlanId",
 		&returns,
 	)
 	return returns

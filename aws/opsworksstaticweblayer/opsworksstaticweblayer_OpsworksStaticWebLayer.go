@@ -93,6 +93,8 @@ type OpsworksStaticWebLayer interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LoadBasedAutoScaling() OpsworksStaticWebLayerLoadBasedAutoScalingOutputReference
+	LoadBasedAutoScalingInput() *OpsworksStaticWebLayerLoadBasedAutoScaling
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -156,6 +158,7 @@ type OpsworksStaticWebLayer interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCloudwatchConfiguration(value *OpsworksStaticWebLayerCloudwatchConfiguration)
 	PutEbsVolume(value interface{})
+	PutLoadBasedAutoScaling(value *OpsworksStaticWebLayerLoadBasedAutoScaling)
 	ResetAutoAssignElasticIps()
 	ResetAutoAssignPublicIps()
 	ResetAutoHealing()
@@ -174,6 +177,7 @@ type OpsworksStaticWebLayer interface {
 	ResetId()
 	ResetInstallUpdatesOnBoot()
 	ResetInstanceShutdownTimeout()
+	ResetLoadBasedAutoScaling()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -652,6 +656,26 @@ func (j *jsiiProxy_OpsworksStaticWebLayer) Lifecycle() *cdktf.TerraformResourceL
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksStaticWebLayer) LoadBasedAutoScaling() OpsworksStaticWebLayerLoadBasedAutoScalingOutputReference {
+	var returns OpsworksStaticWebLayerLoadBasedAutoScalingOutputReference
+	_jsii_.Get(
+		j,
+		"loadBasedAutoScaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksStaticWebLayer) LoadBasedAutoScalingInput() *OpsworksStaticWebLayerLoadBasedAutoScaling {
+	var returns *OpsworksStaticWebLayerLoadBasedAutoScaling
+	_jsii_.Get(
+		j,
+		"loadBasedAutoScalingInput",
 		&returns,
 	)
 	return returns
@@ -1434,6 +1458,17 @@ func (o *jsiiProxy_OpsworksStaticWebLayer) PutEbsVolume(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OpsworksStaticWebLayer) PutLoadBasedAutoScaling(value *OpsworksStaticWebLayerLoadBasedAutoScaling) {
+	if err := o.validatePutLoadBasedAutoScalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putLoadBasedAutoScaling",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OpsworksStaticWebLayer) ResetAutoAssignElasticIps() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1574,6 +1609,14 @@ func (o *jsiiProxy_OpsworksStaticWebLayer) ResetInstanceShutdownTimeout() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetInstanceShutdownTimeout",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksStaticWebLayer) ResetLoadBasedAutoScaling() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLoadBasedAutoScaling",
 		nil, // no parameters
 	)
 }

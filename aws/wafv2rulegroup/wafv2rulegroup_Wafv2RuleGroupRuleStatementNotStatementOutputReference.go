@@ -29,8 +29,8 @@ type Wafv2RuleGroupRuleStatementNotStatementOutputReference interface {
 	Fqn() *string
 	InternalValue() *Wafv2RuleGroupRuleStatementNotStatement
 	SetInternalValue(val *Wafv2RuleGroupRuleStatementNotStatement)
-	Statement() Wafv2RuleGroupRuleStatementOutputReference
-	StatementInput() *Wafv2RuleGroupRuleStatement
+	Statement() Wafv2RuleGroupRuleStatementNotStatementStatementList
+	StatementInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -63,7 +63,7 @@ type Wafv2RuleGroupRuleStatementNotStatementOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutStatement(value *Wafv2RuleGroupRuleStatement)
+	PutStatement(value interface{})
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -129,8 +129,8 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementOutputReference) Inter
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementOutputReference) Statement() Wafv2RuleGroupRuleStatementOutputReference {
-	var returns Wafv2RuleGroupRuleStatementOutputReference
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementOutputReference) Statement() Wafv2RuleGroupRuleStatementNotStatementStatementList {
+	var returns Wafv2RuleGroupRuleStatementNotStatementStatementList
 	_jsii_.Get(
 		j,
 		"statement",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementOutputReference) State
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementOutputReference) StatementInput() *Wafv2RuleGroupRuleStatement {
-	var returns *Wafv2RuleGroupRuleStatement
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementOutputReference) StatementInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"statementInput",
@@ -438,7 +438,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementOutputReference) Inter
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementOutputReference) PutStatement(value *Wafv2RuleGroupRuleStatement) {
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementOutputReference) PutStatement(value interface{}) {
 	if err := w.validatePutStatementParameters(value); err != nil {
 		panic(err)
 	}

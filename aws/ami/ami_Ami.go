@@ -65,6 +65,9 @@ type Ami interface {
 	ImageLocationInput() *string
 	ImageOwnerAlias() *string
 	ImageType() *string
+	ImdsSupport() *string
+	SetImdsSupport(val *string)
+	ImdsSupportInput() *string
 	KernelId() *string
 	SetKernelId(val *string)
 	KernelIdInput() *string
@@ -160,6 +163,7 @@ type Ami interface {
 	ResetEphemeralBlockDevice()
 	ResetId()
 	ResetImageLocation()
+	ResetImdsSupport()
 	ResetKernelId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -482,6 +486,26 @@ func (j *jsiiProxy_Ami) ImageType() *string {
 	_jsii_.Get(
 		j,
 		"imageType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ami) ImdsSupport() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"imdsSupport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ami) ImdsSupportInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"imdsSupportInput",
 		&returns,
 	)
 	return returns
@@ -979,6 +1003,17 @@ func (j *jsiiProxy_Ami)SetImageLocation(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Ami)SetImdsSupport(val *string) {
+	if err := j.validateSetImdsSupportParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"imdsSupport",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Ami)SetKernelId(val *string) {
 	if err := j.validateSetKernelIdParameters(val); err != nil {
 		panic(err)
@@ -1437,6 +1472,14 @@ func (a *jsiiProxy_Ami) ResetImageLocation() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetImageLocation",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Ami) ResetImdsSupport() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetImdsSupport",
 		nil, // no parameters
 	)
 }

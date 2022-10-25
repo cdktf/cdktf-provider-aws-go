@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package wafv2rulegroup
 
@@ -54,6 +53,10 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementXssMatchStatementFieldToMatchOutpu
 }
 
 func (w *jsiiProxy_Wafv2RuleGroupRuleStatementXssMatchStatementFieldToMatchOutputReference) validatePutCookiesParameters(value *Wafv2RuleGroupRuleStatementXssMatchStatementFieldToMatchCookies) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementXssMatchStatementFieldToMatchOutputReference) validatePutHeadersParameters(value interface{}) error {
 	return nil
 }
 

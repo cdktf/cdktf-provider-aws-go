@@ -43,6 +43,10 @@ type Wafv2RuleGroupRuleStatementOutputReference interface {
 	NotStatementInput() *Wafv2RuleGroupRuleStatementNotStatement
 	OrStatement() Wafv2RuleGroupRuleStatementOrStatementOutputReference
 	OrStatementInput() *Wafv2RuleGroupRuleStatementOrStatement
+	RateBasedStatement() Wafv2RuleGroupRuleStatementRateBasedStatementOutputReference
+	RateBasedStatementInput() *Wafv2RuleGroupRuleStatementRateBasedStatement
+	RegexMatchStatement() Wafv2RuleGroupRuleStatementRegexMatchStatementOutputReference
+	RegexMatchStatementInput() *Wafv2RuleGroupRuleStatementRegexMatchStatement
 	RegexPatternSetReferenceStatement() Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatementOutputReference
 	RegexPatternSetReferenceStatementInput() *Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatement
 	SizeConstraintStatement() Wafv2RuleGroupRuleStatementSizeConstraintStatementOutputReference
@@ -90,6 +94,8 @@ type Wafv2RuleGroupRuleStatementOutputReference interface {
 	PutLabelMatchStatement(value *Wafv2RuleGroupRuleStatementLabelMatchStatement)
 	PutNotStatement(value *Wafv2RuleGroupRuleStatementNotStatement)
 	PutOrStatement(value *Wafv2RuleGroupRuleStatementOrStatement)
+	PutRateBasedStatement(value *Wafv2RuleGroupRuleStatementRateBasedStatement)
+	PutRegexMatchStatement(value *Wafv2RuleGroupRuleStatementRegexMatchStatement)
 	PutRegexPatternSetReferenceStatement(value *Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatement)
 	PutSizeConstraintStatement(value *Wafv2RuleGroupRuleStatementSizeConstraintStatement)
 	PutSqliMatchStatement(value *Wafv2RuleGroupRuleStatementSqliMatchStatement)
@@ -101,6 +107,8 @@ type Wafv2RuleGroupRuleStatementOutputReference interface {
 	ResetLabelMatchStatement()
 	ResetNotStatement()
 	ResetOrStatement()
+	ResetRateBasedStatement()
+	ResetRegexMatchStatement()
 	ResetRegexPatternSetReferenceStatement()
 	ResetSizeConstraintStatement()
 	ResetSqliMatchStatement()
@@ -305,6 +313,46 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleStatementOutputReference) OrStatementInput(
 	_jsii_.Get(
 		j,
 		"orStatementInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementOutputReference) RateBasedStatement() Wafv2RuleGroupRuleStatementRateBasedStatementOutputReference {
+	var returns Wafv2RuleGroupRuleStatementRateBasedStatementOutputReference
+	_jsii_.Get(
+		j,
+		"rateBasedStatement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementOutputReference) RateBasedStatementInput() *Wafv2RuleGroupRuleStatementRateBasedStatement {
+	var returns *Wafv2RuleGroupRuleStatementRateBasedStatement
+	_jsii_.Get(
+		j,
+		"rateBasedStatementInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementOutputReference) RegexMatchStatement() Wafv2RuleGroupRuleStatementRegexMatchStatementOutputReference {
+	var returns Wafv2RuleGroupRuleStatementRegexMatchStatementOutputReference
+	_jsii_.Get(
+		j,
+		"regexMatchStatement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementOutputReference) RegexMatchStatementInput() *Wafv2RuleGroupRuleStatementRegexMatchStatement {
+	var returns *Wafv2RuleGroupRuleStatementRegexMatchStatement
+	_jsii_.Get(
+		j,
+		"regexMatchStatementInput",
 		&returns,
 	)
 	return returns
@@ -756,6 +804,28 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementOutputReference) PutOrStatement(va
 	)
 }
 
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementOutputReference) PutRateBasedStatement(value *Wafv2RuleGroupRuleStatementRateBasedStatement) {
+	if err := w.validatePutRateBasedStatementParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putRateBasedStatement",
+		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementOutputReference) PutRegexMatchStatement(value *Wafv2RuleGroupRuleStatementRegexMatchStatement) {
+	if err := w.validatePutRegexMatchStatementParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putRegexMatchStatement",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2RuleGroupRuleStatementOutputReference) PutRegexPatternSetReferenceStatement(value *Wafv2RuleGroupRuleStatementRegexPatternSetReferenceStatement) {
 	if err := w.validatePutRegexPatternSetReferenceStatementParameters(value); err != nil {
 		panic(err)
@@ -852,6 +922,22 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementOutputReference) ResetOrStatement(
 	_jsii_.InvokeVoid(
 		w,
 		"resetOrStatement",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementOutputReference) ResetRateBasedStatement() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRateBasedStatement",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementOutputReference) ResetRegexMatchStatement() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRegexMatchStatement",
 		nil, // no parameters
 	)
 }

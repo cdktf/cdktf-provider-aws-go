@@ -12,6 +12,12 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/aws/r/sns_platform_application aws_sns_platform_application}.
 type SnsPlatformApplication interface {
 	cdktf.TerraformResource
+	ApplePlatformBundleId() *string
+	SetApplePlatformBundleId(val *string)
+	ApplePlatformBundleIdInput() *string
+	ApplePlatformTeamId() *string
+	SetApplePlatformTeamId(val *string)
+	ApplePlatformTeamIdInput() *string
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -120,6 +126,8 @@ type SnsPlatformApplication interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetApplePlatformBundleId()
+	ResetApplePlatformTeamId()
 	ResetEventDeliveryFailureTopicArn()
 	ResetEventEndpointCreatedTopicArn()
 	ResetEventEndpointDeletedTopicArn()
@@ -145,6 +153,46 @@ type SnsPlatformApplication interface {
 // The jsii proxy struct for SnsPlatformApplication
 type jsiiProxy_SnsPlatformApplication struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_SnsPlatformApplication) ApplePlatformBundleId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"applePlatformBundleId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnsPlatformApplication) ApplePlatformBundleIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"applePlatformBundleIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnsPlatformApplication) ApplePlatformTeamId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"applePlatformTeamId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnsPlatformApplication) ApplePlatformTeamIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"applePlatformTeamIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SnsPlatformApplication) Arn() *string {
@@ -587,6 +635,28 @@ func NewSnsPlatformApplication_Override(s SnsPlatformApplication, scope construc
 	)
 }
 
+func (j *jsiiProxy_SnsPlatformApplication)SetApplePlatformBundleId(val *string) {
+	if err := j.validateSetApplePlatformBundleIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"applePlatformBundleId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SnsPlatformApplication)SetApplePlatformTeamId(val *string) {
+	if err := j.validateSetApplePlatformTeamIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"applePlatformTeamId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SnsPlatformApplication)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -1009,6 +1079,22 @@ func (s *jsiiProxy_SnsPlatformApplication) OverrideLogicalId(newLogicalId *strin
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_SnsPlatformApplication) ResetApplePlatformBundleId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetApplePlatformBundleId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SnsPlatformApplication) ResetApplePlatformTeamId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetApplePlatformTeamId",
+		nil, // no parameters
 	)
 }
 

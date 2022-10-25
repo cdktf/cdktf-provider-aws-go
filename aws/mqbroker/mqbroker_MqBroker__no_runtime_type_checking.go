@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package mqbroker
 
@@ -70,6 +69,10 @@ func (m *jsiiProxy_MqBroker) validatePutLogsParameters(value *MqBrokerLogs) erro
 }
 
 func (m *jsiiProxy_MqBroker) validatePutMaintenanceWindowStartTimeParameters(value *MqBrokerMaintenanceWindowStartTime) error {
+	return nil
+}
+
+func (m *jsiiProxy_MqBroker) validatePutTimeoutsParameters(value *MqBrokerTimeouts) error {
 	return nil
 }
 

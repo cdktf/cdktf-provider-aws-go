@@ -67,7 +67,6 @@ type AppstreamStackApplicationSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetEnabled()
 	ResetSettingsGroup()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -483,14 +482,6 @@ func (a *jsiiProxy_AppstreamStackApplicationSettingsOutputReference) Interpolati
 	)
 
 	return returns
-}
-
-func (a *jsiiProxy_AppstreamStackApplicationSettingsOutputReference) ResetEnabled() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetEnabled",
-		nil, // no parameters
-	)
 }
 
 func (a *jsiiProxy_AppstreamStackApplicationSettingsOutputReference) ResetSettingsGroup() {

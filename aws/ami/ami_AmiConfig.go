@@ -46,6 +46,8 @@ type AmiConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami#image_location Ami#image_location}.
 	ImageLocation *string `field:"optional" json:"imageLocation" yaml:"imageLocation"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami#imds_support Ami#imds_support}.
+	ImdsSupport *string `field:"optional" json:"imdsSupport" yaml:"imdsSupport"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami#kernel_id Ami#kernel_id}.
 	KernelId *string `field:"optional" json:"kernelId" yaml:"kernelId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ami#ramdisk_id Ami#ramdisk_id}.

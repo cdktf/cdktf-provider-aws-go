@@ -96,6 +96,8 @@ type OpsworksEcsClusterLayer interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LoadBasedAutoScaling() OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference
+	LoadBasedAutoScalingInput() *OpsworksEcsClusterLayerLoadBasedAutoScaling
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -159,6 +161,7 @@ type OpsworksEcsClusterLayer interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCloudwatchConfiguration(value *OpsworksEcsClusterLayerCloudwatchConfiguration)
 	PutEbsVolume(value interface{})
+	PutLoadBasedAutoScaling(value *OpsworksEcsClusterLayerLoadBasedAutoScaling)
 	ResetAutoAssignElasticIps()
 	ResetAutoAssignPublicIps()
 	ResetAutoHealing()
@@ -177,6 +180,7 @@ type OpsworksEcsClusterLayer interface {
 	ResetId()
 	ResetInstallUpdatesOnBoot()
 	ResetInstanceShutdownTimeout()
+	ResetLoadBasedAutoScaling()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -675,6 +679,26 @@ func (j *jsiiProxy_OpsworksEcsClusterLayer) Lifecycle() *cdktf.TerraformResource
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksEcsClusterLayer) LoadBasedAutoScaling() OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference {
+	var returns OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference
+	_jsii_.Get(
+		j,
+		"loadBasedAutoScaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksEcsClusterLayer) LoadBasedAutoScalingInput() *OpsworksEcsClusterLayerLoadBasedAutoScaling {
+	var returns *OpsworksEcsClusterLayerLoadBasedAutoScaling
+	_jsii_.Get(
+		j,
+		"loadBasedAutoScalingInput",
 		&returns,
 	)
 	return returns
@@ -1468,6 +1492,17 @@ func (o *jsiiProxy_OpsworksEcsClusterLayer) PutEbsVolume(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OpsworksEcsClusterLayer) PutLoadBasedAutoScaling(value *OpsworksEcsClusterLayerLoadBasedAutoScaling) {
+	if err := o.validatePutLoadBasedAutoScalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putLoadBasedAutoScaling",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OpsworksEcsClusterLayer) ResetAutoAssignElasticIps() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1608,6 +1643,14 @@ func (o *jsiiProxy_OpsworksEcsClusterLayer) ResetInstanceShutdownTimeout() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetInstanceShutdownTimeout",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksEcsClusterLayer) ResetLoadBasedAutoScaling() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLoadBasedAutoScaling",
 		nil, // no parameters
 	)
 }

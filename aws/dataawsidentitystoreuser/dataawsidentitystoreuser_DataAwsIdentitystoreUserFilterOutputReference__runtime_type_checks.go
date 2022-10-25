@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package dataawsidentitystoreuser
 
@@ -180,25 +179,9 @@ func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case *DataAwsIdentitystoreUserFilter:
-		val := val.(*DataAwsIdentitystoreUserFilter)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataAwsIdentitystoreUserFilter:
-		val_ := val.(DataAwsIdentitystoreUserFilter)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataAwsIdentitystoreUserFilter, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) validateSetInternalValueParameters(val *DataAwsIdentitystoreUserFilter) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -220,21 +203,13 @@ func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) validateSetTer
 	return nil
 }
 
-func validateNewDataAwsIdentitystoreUserFilterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsIdentitystoreUserFilterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
-	}
-
-	if complexObjectIndex == nil {
-		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
-	}
-
-	if complexObjectIsFromSet == nil {
-		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

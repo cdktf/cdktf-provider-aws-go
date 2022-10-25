@@ -27,7 +27,7 @@ type IdentitystoreUserExternalIdsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	Id() cdktf.IResolvable
+	Id() *string
 	InternalValue() *IdentitystoreUserExternalIds
 	SetInternalValue(val *IdentitystoreUserExternalIds)
 	Issuer() *string
@@ -118,8 +118,8 @@ func (j *jsiiProxy_IdentitystoreUserExternalIdsOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IdentitystoreUserExternalIdsOutputReference) Id() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_IdentitystoreUserExternalIdsOutputReference) Id() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"id",

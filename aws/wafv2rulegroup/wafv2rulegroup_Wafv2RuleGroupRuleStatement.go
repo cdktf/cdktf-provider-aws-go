@@ -30,6 +30,14 @@ type Wafv2RuleGroupRuleStatement struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#or_statement Wafv2RuleGroup#or_statement}
 	OrStatement *Wafv2RuleGroupRuleStatementOrStatement `field:"optional" json:"orStatement" yaml:"orStatement"`
+	// rate_based_statement block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#rate_based_statement Wafv2RuleGroup#rate_based_statement}
+	RateBasedStatement *Wafv2RuleGroupRuleStatementRateBasedStatement `field:"optional" json:"rateBasedStatement" yaml:"rateBasedStatement"`
+	// regex_match_statement block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#regex_match_statement Wafv2RuleGroup#regex_match_statement}
+	RegexMatchStatement *Wafv2RuleGroupRuleStatementRegexMatchStatement `field:"optional" json:"regexMatchStatement" yaml:"regexMatchStatement"`
 	// regex_pattern_set_reference_statement block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#regex_pattern_set_reference_statement Wafv2RuleGroup#regex_pattern_set_reference_statement}

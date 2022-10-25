@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package vpc
 
@@ -82,6 +81,10 @@ func (j *jsiiProxy_Vpc) validateSetEnableDnsHostnamesParameters(val interface{})
 }
 
 func (j *jsiiProxy_Vpc) validateSetEnableDnsSupportParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Vpc) validateSetEnableNetworkAddressUsageMetricsParameters(val interface{}) error {
 	return nil
 }
 

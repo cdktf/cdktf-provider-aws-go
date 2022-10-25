@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package mwaaenvironment
 
@@ -58,6 +57,10 @@ func (m *jsiiProxy_MwaaEnvironment) validatePutLoggingConfigurationParameters(va
 }
 
 func (m *jsiiProxy_MwaaEnvironment) validatePutNetworkConfigurationParameters(value *MwaaEnvironmentNetworkConfiguration) error {
+	return nil
+}
+
+func (m *jsiiProxy_MwaaEnvironment) validatePutTimeoutsParameters(value *MwaaEnvironmentTimeouts) error {
 	return nil
 }
 

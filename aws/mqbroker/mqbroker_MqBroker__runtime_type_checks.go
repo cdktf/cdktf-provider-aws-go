@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package mqbroker
 
@@ -157,6 +156,17 @@ func (m *jsiiProxy_MqBroker) validatePutLogsParameters(value *MqBrokerLogs) erro
 }
 
 func (m *jsiiProxy_MqBroker) validatePutMaintenanceWindowStartTimeParameters(value *MqBrokerMaintenanceWindowStartTime) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MqBroker) validatePutTimeoutsParameters(value *MqBrokerTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

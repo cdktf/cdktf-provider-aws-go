@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package dataawsidentitystoreuser
 
@@ -112,32 +111,23 @@ func (d *jsiiProxy_DataAwsIdentitystoreUser) validateOverrideLogicalIdParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreUser) validatePutFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsIdentitystoreUser) validatePutAlternateIdentifierParameters(value *DataAwsIdentitystoreUserAlternateIdentifier) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataAwsIdentitystoreUserFilter:
-		value := value.(*[]*DataAwsIdentitystoreUserFilter)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataAwsIdentitystoreUserFilter:
-		value_ := value.([]*DataAwsIdentitystoreUserFilter)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataAwsIdentitystoreUserFilter; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsIdentitystoreUser) validatePutFilterParameters(value *DataAwsIdentitystoreUserFilter) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

@@ -26,6 +26,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dhcpOptionsIdInput", GoGetter: "DhcpOptionsIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "enableDnsHostnames", GoGetter: "EnableDnsHostnames"},
 			_jsii_.MemberProperty{JsiiProperty: "enableDnsSupport", GoGetter: "EnableDnsSupport"},
+			_jsii_.MemberProperty{JsiiProperty: "enableNetworkAddressUsageMetrics", GoGetter: "EnableNetworkAddressUsageMetrics"},
 			_jsii_.MemberProperty{JsiiProperty: "filter", GoGetter: "Filter"},
 			_jsii_.MemberProperty{JsiiProperty: "filterInput", GoGetter: "FilterInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},

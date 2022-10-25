@@ -14,6 +14,10 @@ type Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatch struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#cookies Wafv2RuleGroup#cookies}
 	Cookies *Wafv2RuleGroupRuleStatementSizeConstraintStatementFieldToMatchCookies `field:"optional" json:"cookies" yaml:"cookies"`
+	// headers block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#headers Wafv2RuleGroup#headers}
+	Headers interface{} `field:"optional" json:"headers" yaml:"headers"`
 	// json_body block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#json_body Wafv2RuleGroup#json_body}

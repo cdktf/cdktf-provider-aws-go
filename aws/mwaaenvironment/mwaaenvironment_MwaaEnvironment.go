@@ -121,6 +121,8 @@ type MwaaEnvironment interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() MwaaEnvironmentTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	WebserverAccessMode() *string
 	SetWebserverAccessMode(val *string)
 	WebserverAccessModeInput() *string
@@ -155,6 +157,7 @@ type MwaaEnvironment interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutLoggingConfiguration(value *MwaaEnvironmentLoggingConfiguration)
 	PutNetworkConfiguration(value *MwaaEnvironmentNetworkConfiguration)
+	PutTimeouts(value *MwaaEnvironmentTimeouts)
 	ResetAirflowConfigurationOptions()
 	ResetAirflowVersion()
 	ResetEnvironmentClass()
@@ -173,6 +176,7 @@ type MwaaEnvironment interface {
 	ResetSchedulers()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	ResetWebserverAccessMode()
 	ResetWeeklyMaintenanceWindowStart()
 	SynthesizeAttributes() *map[string]interface{}
@@ -800,6 +804,26 @@ func (j *jsiiProxy_MwaaEnvironment) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MwaaEnvironment) Timeouts() MwaaEnvironmentTimeoutsOutputReference {
+	var returns MwaaEnvironmentTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwaaEnvironment) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MwaaEnvironment) WebserverAccessMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1415,6 +1439,17 @@ func (m *jsiiProxy_MwaaEnvironment) PutNetworkConfiguration(value *MwaaEnvironme
 	)
 }
 
+func (m *jsiiProxy_MwaaEnvironment) PutTimeouts(value *MwaaEnvironmentTimeouts) {
+	if err := m.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MwaaEnvironment) ResetAirflowConfigurationOptions() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1539,6 +1574,14 @@ func (m *jsiiProxy_MwaaEnvironment) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwaaEnvironment) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

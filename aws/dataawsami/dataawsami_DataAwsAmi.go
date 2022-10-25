@@ -53,6 +53,7 @@ type DataAwsAmi interface {
 	ImageLocation() *string
 	ImageOwnerAlias() *string
 	ImageType() *string
+	ImdsSupport() *string
 	IncludeDeprecated() interface{}
 	SetIncludeDeprecated(val interface{})
 	IncludeDeprecatedInput() interface{}
@@ -414,6 +415,16 @@ func (j *jsiiProxy_DataAwsAmi) ImageType() *string {
 	_jsii_.Get(
 		j,
 		"imageType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAmi) ImdsSupport() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"imdsSupport",
 		&returns,
 	)
 	return returns

@@ -33,8 +33,8 @@ type DataAwsIdentitystoreUserFilterOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsIdentitystoreUserFilter
+	SetInternalValue(val *DataAwsIdentitystoreUserFilter)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) Fqn() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) InternalValue() *DataAwsIdentitystoreUserFilter {
+	var returns *DataAwsIdentitystoreUserFilter
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,29 +193,29 @@ func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) TerraformResou
 }
 
 
-func NewDataAwsIdentitystoreUserFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsIdentitystoreUserFilterOutputReference {
+func NewDataAwsIdentitystoreUserFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataAwsIdentitystoreUserFilterOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataAwsIdentitystoreUserFilterOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewDataAwsIdentitystoreUserFilterOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataAwsIdentitystoreUserFilterOutputReference_Override(d DataAwsIdentitystoreUserFilterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataAwsIdentitystoreUserFilterOutputReference_Override(d DataAwsIdentitystoreUserFilterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
 }
@@ -264,7 +264,7 @@ func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference)SetInternalValue(val *DataAwsIdentitystoreUserFilter) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

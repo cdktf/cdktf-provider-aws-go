@@ -93,6 +93,8 @@ type OpsworksMysqlLayer interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LoadBasedAutoScaling() OpsworksMysqlLayerLoadBasedAutoScalingOutputReference
+	LoadBasedAutoScalingInput() *OpsworksMysqlLayerLoadBasedAutoScaling
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -162,6 +164,7 @@ type OpsworksMysqlLayer interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCloudwatchConfiguration(value *OpsworksMysqlLayerCloudwatchConfiguration)
 	PutEbsVolume(value interface{})
+	PutLoadBasedAutoScaling(value *OpsworksMysqlLayerLoadBasedAutoScaling)
 	ResetAutoAssignElasticIps()
 	ResetAutoAssignPublicIps()
 	ResetAutoHealing()
@@ -180,6 +183,7 @@ type OpsworksMysqlLayer interface {
 	ResetId()
 	ResetInstallUpdatesOnBoot()
 	ResetInstanceShutdownTimeout()
+	ResetLoadBasedAutoScaling()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -660,6 +664,26 @@ func (j *jsiiProxy_OpsworksMysqlLayer) Lifecycle() *cdktf.TerraformResourceLifec
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksMysqlLayer) LoadBasedAutoScaling() OpsworksMysqlLayerLoadBasedAutoScalingOutputReference {
+	var returns OpsworksMysqlLayerLoadBasedAutoScalingOutputReference
+	_jsii_.Get(
+		j,
+		"loadBasedAutoScaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksMysqlLayer) LoadBasedAutoScalingInput() *OpsworksMysqlLayerLoadBasedAutoScaling {
+	var returns *OpsworksMysqlLayerLoadBasedAutoScaling
+	_jsii_.Get(
+		j,
+		"loadBasedAutoScalingInput",
 		&returns,
 	)
 	return returns
@@ -1504,6 +1528,17 @@ func (o *jsiiProxy_OpsworksMysqlLayer) PutEbsVolume(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OpsworksMysqlLayer) PutLoadBasedAutoScaling(value *OpsworksMysqlLayerLoadBasedAutoScaling) {
+	if err := o.validatePutLoadBasedAutoScalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putLoadBasedAutoScaling",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OpsworksMysqlLayer) ResetAutoAssignElasticIps() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1644,6 +1679,14 @@ func (o *jsiiProxy_OpsworksMysqlLayer) ResetInstanceShutdownTimeout() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetInstanceShutdownTimeout",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksMysqlLayer) ResetLoadBasedAutoScaling() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLoadBasedAutoScaling",
 		nil, // no parameters
 	)
 }

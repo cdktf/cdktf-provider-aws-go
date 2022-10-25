@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package dataawsidentitystoreuser
 
@@ -53,7 +52,11 @@ func (d *jsiiProxy_DataAwsIdentitystoreUser) validateOverrideLogicalIdParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreUser) validatePutFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsIdentitystoreUser) validatePutAlternateIdentifierParameters(value *DataAwsIdentitystoreUserAlternateIdentifier) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsIdentitystoreUser) validatePutFilterParameters(value *DataAwsIdentitystoreUserFilter) error {
 	return nil
 }
 

@@ -14,6 +14,7 @@ type RumAppMonitor interface {
 	cdktf.TerraformResource
 	AppMonitorConfiguration() RumAppMonitorAppMonitorConfigurationOutputReference
 	AppMonitorConfigurationInput() *RumAppMonitorAppMonitorConfiguration
+	AppMonitorId() *string
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -144,6 +145,16 @@ func (j *jsiiProxy_RumAppMonitor) AppMonitorConfigurationInput() *RumAppMonitorA
 	_jsii_.Get(
 		j,
 		"appMonitorConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RumAppMonitor) AppMonitorId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appMonitorId",
 		&returns,
 	)
 	return returns

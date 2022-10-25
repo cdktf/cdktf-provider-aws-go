@@ -116,6 +116,8 @@ type CognitoUserPool interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UserAttributeUpdateSettings() CognitoUserPoolUserAttributeUpdateSettingsOutputReference
+	UserAttributeUpdateSettingsInput() *CognitoUserPoolUserAttributeUpdateSettings
 	UsernameAttributes() *[]*string
 	SetUsernameAttributes(val *[]*string)
 	UsernameAttributesInput() *[]*string
@@ -159,6 +161,7 @@ type CognitoUserPool interface {
 	PutSchema(value interface{})
 	PutSmsConfiguration(value *CognitoUserPoolSmsConfiguration)
 	PutSoftwareTokenMfaConfiguration(value *CognitoUserPoolSoftwareTokenMfaConfiguration)
+	PutUserAttributeUpdateSettings(value *CognitoUserPoolUserAttributeUpdateSettings)
 	PutUsernameConfiguration(value *CognitoUserPoolUsernameConfiguration)
 	PutUserPoolAddOns(value *CognitoUserPoolUserPoolAddOns)
 	PutVerificationMessageTemplate(value *CognitoUserPoolVerificationMessageTemplate)
@@ -184,6 +187,7 @@ type CognitoUserPool interface {
 	ResetSoftwareTokenMfaConfiguration()
 	ResetTags()
 	ResetTagsAll()
+	ResetUserAttributeUpdateSettings()
 	ResetUsernameAttributes()
 	ResetUsernameConfiguration()
 	ResetUserPoolAddOns()
@@ -833,6 +837,26 @@ func (j *jsiiProxy_CognitoUserPool) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CognitoUserPool) UserAttributeUpdateSettings() CognitoUserPoolUserAttributeUpdateSettingsOutputReference {
+	var returns CognitoUserPoolUserAttributeUpdateSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"userAttributeUpdateSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) UserAttributeUpdateSettingsInput() *CognitoUserPoolUserAttributeUpdateSettings {
+	var returns *CognitoUserPoolUserAttributeUpdateSettings
+	_jsii_.Get(
+		j,
+		"userAttributeUpdateSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CognitoUserPool) UsernameAttributes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1467,6 +1491,17 @@ func (c *jsiiProxy_CognitoUserPool) PutSoftwareTokenMfaConfiguration(value *Cogn
 	)
 }
 
+func (c *jsiiProxy_CognitoUserPool) PutUserAttributeUpdateSettings(value *CognitoUserPoolUserAttributeUpdateSettings) {
+	if err := c.validatePutUserAttributeUpdateSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putUserAttributeUpdateSettings",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CognitoUserPool) PutUsernameConfiguration(value *CognitoUserPoolUsernameConfiguration) {
 	if err := c.validatePutUsernameConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1656,6 +1691,14 @@ func (c *jsiiProxy_CognitoUserPool) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetUserAttributeUpdateSettings() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetUserAttributeUpdateSettings",
 		nil, // no parameters
 	)
 }

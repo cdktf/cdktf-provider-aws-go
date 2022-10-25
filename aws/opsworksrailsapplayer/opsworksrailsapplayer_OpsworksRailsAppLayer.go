@@ -99,6 +99,8 @@ type OpsworksRailsAppLayer interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LoadBasedAutoScaling() OpsworksRailsAppLayerLoadBasedAutoScalingOutputReference
+	LoadBasedAutoScalingInput() *OpsworksRailsAppLayerLoadBasedAutoScaling
 	ManageBundler() interface{}
 	SetManageBundler(val interface{})
 	ManageBundlerInput() interface{}
@@ -174,6 +176,7 @@ type OpsworksRailsAppLayer interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCloudwatchConfiguration(value *OpsworksRailsAppLayerCloudwatchConfiguration)
 	PutEbsVolume(value interface{})
+	PutLoadBasedAutoScaling(value *OpsworksRailsAppLayerLoadBasedAutoScaling)
 	ResetAppServer()
 	ResetAutoAssignElasticIps()
 	ResetAutoAssignPublicIps()
@@ -194,6 +197,7 @@ type OpsworksRailsAppLayer interface {
 	ResetId()
 	ResetInstallUpdatesOnBoot()
 	ResetInstanceShutdownTimeout()
+	ResetLoadBasedAutoScaling()
 	ResetManageBundler()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -716,6 +720,26 @@ func (j *jsiiProxy_OpsworksRailsAppLayer) Lifecycle() *cdktf.TerraformResourceLi
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksRailsAppLayer) LoadBasedAutoScaling() OpsworksRailsAppLayerLoadBasedAutoScalingOutputReference {
+	var returns OpsworksRailsAppLayerLoadBasedAutoScalingOutputReference
+	_jsii_.Get(
+		j,
+		"loadBasedAutoScaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpsworksRailsAppLayer) LoadBasedAutoScalingInput() *OpsworksRailsAppLayerLoadBasedAutoScaling {
+	var returns *OpsworksRailsAppLayerLoadBasedAutoScaling
+	_jsii_.Get(
+		j,
+		"loadBasedAutoScalingInput",
 		&returns,
 	)
 	return returns
@@ -1644,6 +1668,17 @@ func (o *jsiiProxy_OpsworksRailsAppLayer) PutEbsVolume(value interface{}) {
 	)
 }
 
+func (o *jsiiProxy_OpsworksRailsAppLayer) PutLoadBasedAutoScaling(value *OpsworksRailsAppLayerLoadBasedAutoScaling) {
+	if err := o.validatePutLoadBasedAutoScalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putLoadBasedAutoScaling",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OpsworksRailsAppLayer) ResetAppServer() {
 	_jsii_.InvokeVoid(
 		o,
@@ -1800,6 +1835,14 @@ func (o *jsiiProxy_OpsworksRailsAppLayer) ResetInstanceShutdownTimeout() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetInstanceShutdownTimeout",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpsworksRailsAppLayer) ResetLoadBasedAutoScaling() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLoadBasedAutoScaling",
 		nil, // no parameters
 	)
 }

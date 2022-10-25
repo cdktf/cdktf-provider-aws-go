@@ -47,6 +47,8 @@ type PrometheusWorkspace interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LoggingConfiguration() PrometheusWorkspaceLoggingConfigurationOutputReference
+	LoggingConfigurationInput() *PrometheusWorkspaceLoggingConfiguration
 	// The tree node.
 	Node() constructs.Node
 	PrometheusEndpoint() *string
@@ -97,8 +99,10 @@ type PrometheusWorkspace interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutLoggingConfiguration(value *PrometheusWorkspaceLoggingConfiguration)
 	ResetAlias()
 	ResetId()
+	ResetLoggingConfiguration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -254,6 +258,26 @@ func (j *jsiiProxy_PrometheusWorkspace) Lifecycle() *cdktf.TerraformResourceLife
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrometheusWorkspace) LoggingConfiguration() PrometheusWorkspaceLoggingConfigurationOutputReference {
+	var returns PrometheusWorkspaceLoggingConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"loggingConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrometheusWorkspace) LoggingConfigurationInput() *PrometheusWorkspaceLoggingConfiguration {
+	var returns *PrometheusWorkspaceLoggingConfiguration
+	_jsii_.Get(
+		j,
+		"loggingConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -746,6 +770,17 @@ func (p *jsiiProxy_PrometheusWorkspace) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (p *jsiiProxy_PrometheusWorkspace) PutLoggingConfiguration(value *PrometheusWorkspaceLoggingConfiguration) {
+	if err := p.validatePutLoggingConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putLoggingConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PrometheusWorkspace) ResetAlias() {
 	_jsii_.InvokeVoid(
 		p,
@@ -758,6 +793,14 @@ func (p *jsiiProxy_PrometheusWorkspace) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PrometheusWorkspace) ResetLoggingConfiguration() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetLoggingConfiguration",
 		nil, // no parameters
 	)
 }

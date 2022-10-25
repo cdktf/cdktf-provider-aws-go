@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package opsworksstaticweblayer
 
@@ -149,6 +148,17 @@ func (o *jsiiProxy_OpsworksStaticWebLayer) validatePutEbsVolumeParameters(value 
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*OpsworksStaticWebLayerEbsVolume; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksStaticWebLayer) validatePutLoadBasedAutoScalingParameters(value *OpsworksStaticWebLayerLoadBasedAutoScaling) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

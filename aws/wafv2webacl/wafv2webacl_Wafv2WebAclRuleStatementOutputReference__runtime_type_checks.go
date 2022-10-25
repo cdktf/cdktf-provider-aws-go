@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package wafv2webacl
 
@@ -180,6 +179,17 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementOutputReference) validatePutOrStateme
 }
 
 func (w *jsiiProxy_Wafv2WebAclRuleStatementOutputReference) validatePutRateBasedStatementParameters(value *Wafv2WebAclRuleStatementRateBasedStatement) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOutputReference) validatePutRegexMatchStatementParameters(value *Wafv2WebAclRuleStatementRegexMatchStatement) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

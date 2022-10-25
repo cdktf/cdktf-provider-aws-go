@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/aws/d/identitystore_user aws_identitystore_user}.
 type DataAwsIdentitystoreUser interface {
 	cdktf.TerraformDataSource
+	Addresses() DataAwsIdentitystoreUserAddressesList
+	AlternateIdentifier() DataAwsIdentitystoreUserAlternateIdentifierOutputReference
+	AlternateIdentifierInput() *DataAwsIdentitystoreUserAlternateIdentifier
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -24,8 +27,11 @@ type DataAwsIdentitystoreUser interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	Filter() DataAwsIdentitystoreUserFilterList
-	FilterInput() interface{}
+	DisplayName() *string
+	Emails() DataAwsIdentitystoreUserEmailsList
+	ExternalIds() DataAwsIdentitystoreUserExternalIdsList
+	Filter() DataAwsIdentitystoreUserFilterOutputReference
+	FilterInput() *DataAwsIdentitystoreUserFilter
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -44,8 +50,14 @@ type DataAwsIdentitystoreUser interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Locale() *string
+	Name() DataAwsIdentitystoreUserNameList
+	Nickname() *string
 	// The tree node.
 	Node() constructs.Node
+	PhoneNumbers() DataAwsIdentitystoreUserPhoneNumbersList
+	PreferredLanguage() *string
+	ProfileUrl() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -58,10 +70,13 @@ type DataAwsIdentitystoreUser interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timezone() *string
+	Title() *string
 	UserId() *string
 	SetUserId(val *string)
 	UserIdInput() *string
 	UserName() *string
+	UserType() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -87,7 +102,10 @@ type DataAwsIdentitystoreUser interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutAlternateIdentifier(value *DataAwsIdentitystoreUserAlternateIdentifier)
+	PutFilter(value *DataAwsIdentitystoreUserFilter)
+	ResetAlternateIdentifier()
+	ResetFilter()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -106,6 +124,36 @@ type DataAwsIdentitystoreUser interface {
 // The jsii proxy struct for DataAwsIdentitystoreUser
 type jsiiProxy_DataAwsIdentitystoreUser struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataAwsIdentitystoreUser) Addresses() DataAwsIdentitystoreUserAddressesList {
+	var returns DataAwsIdentitystoreUserAddressesList
+	_jsii_.Get(
+		j,
+		"addresses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIdentitystoreUser) AlternateIdentifier() DataAwsIdentitystoreUserAlternateIdentifierOutputReference {
+	var returns DataAwsIdentitystoreUserAlternateIdentifierOutputReference
+	_jsii_.Get(
+		j,
+		"alternateIdentifier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIdentitystoreUser) AlternateIdentifierInput() *DataAwsIdentitystoreUserAlternateIdentifier {
+	var returns *DataAwsIdentitystoreUserAlternateIdentifier
+	_jsii_.Get(
+		j,
+		"alternateIdentifierInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAwsIdentitystoreUser) CdktfStack() cdktf.TerraformStack {
@@ -148,8 +196,38 @@ func (j *jsiiProxy_DataAwsIdentitystoreUser) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreUser) Filter() DataAwsIdentitystoreUserFilterList {
-	var returns DataAwsIdentitystoreUserFilterList
+func (j *jsiiProxy_DataAwsIdentitystoreUser) DisplayName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIdentitystoreUser) Emails() DataAwsIdentitystoreUserEmailsList {
+	var returns DataAwsIdentitystoreUserEmailsList
+	_jsii_.Get(
+		j,
+		"emails",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIdentitystoreUser) ExternalIds() DataAwsIdentitystoreUserExternalIdsList {
+	var returns DataAwsIdentitystoreUserExternalIdsList
+	_jsii_.Get(
+		j,
+		"externalIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIdentitystoreUser) Filter() DataAwsIdentitystoreUserFilterOutputReference {
+	var returns DataAwsIdentitystoreUserFilterOutputReference
 	_jsii_.Get(
 		j,
 		"filter",
@@ -158,8 +236,8 @@ func (j *jsiiProxy_DataAwsIdentitystoreUser) Filter() DataAwsIdentitystoreUserFi
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreUser) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsIdentitystoreUser) FilterInput() *DataAwsIdentitystoreUserFilter {
+	var returns *DataAwsIdentitystoreUserFilter
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -248,11 +326,71 @@ func (j *jsiiProxy_DataAwsIdentitystoreUser) Lifecycle() *cdktf.TerraformResourc
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsIdentitystoreUser) Locale() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locale",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIdentitystoreUser) Name() DataAwsIdentitystoreUserNameList {
+	var returns DataAwsIdentitystoreUserNameList
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIdentitystoreUser) Nickname() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nickname",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsIdentitystoreUser) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIdentitystoreUser) PhoneNumbers() DataAwsIdentitystoreUserPhoneNumbersList {
+	var returns DataAwsIdentitystoreUserPhoneNumbersList
+	_jsii_.Get(
+		j,
+		"phoneNumbers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIdentitystoreUser) PreferredLanguage() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preferredLanguage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIdentitystoreUser) ProfileUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"profileUrl",
 		&returns,
 	)
 	return returns
@@ -308,6 +446,26 @@ func (j *jsiiProxy_DataAwsIdentitystoreUser) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsIdentitystoreUser) Timezone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"timezone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIdentitystoreUser) Title() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"title",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsIdentitystoreUser) UserId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -333,6 +491,16 @@ func (j *jsiiProxy_DataAwsIdentitystoreUser) UserName() *string {
 	_jsii_.Get(
 		j,
 		"userName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIdentitystoreUser) UserType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userType",
 		&returns,
 	)
 	return returns
@@ -672,7 +840,18 @@ func (d *jsiiProxy_DataAwsIdentitystoreUser) OverrideLogicalId(newLogicalId *str
 	)
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreUser) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsIdentitystoreUser) PutAlternateIdentifier(value *DataAwsIdentitystoreUserAlternateIdentifier) {
+	if err := d.validatePutAlternateIdentifierParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAlternateIdentifier",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataAwsIdentitystoreUser) PutFilter(value *DataAwsIdentitystoreUserFilter) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
@@ -680,6 +859,22 @@ func (d *jsiiProxy_DataAwsIdentitystoreUser) PutFilter(value interface{}) {
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataAwsIdentitystoreUser) ResetAlternateIdentifier() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAlternateIdentifier",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsIdentitystoreUser) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
+		nil, // no parameters
 	)
 }
 

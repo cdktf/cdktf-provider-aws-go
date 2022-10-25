@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package dataawsidentitystoreuser
 
@@ -65,7 +64,7 @@ func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) validateSetInternalValueParameters(val *DataAwsIdentitystoreUserFilter) error {
 	return nil
 }
 
@@ -77,7 +76,7 @@ func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) validateSetTer
 	return nil
 }
 
-func validateNewDataAwsIdentitystoreUserFilterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsIdentitystoreUserFilterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

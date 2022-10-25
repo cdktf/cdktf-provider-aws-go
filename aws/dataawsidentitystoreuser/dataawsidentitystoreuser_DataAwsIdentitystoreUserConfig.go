@@ -19,12 +19,16 @@ type DataAwsIdentitystoreUserConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/identitystore_user#identity_store_id DataAwsIdentitystoreUser#identity_store_id}.
+	IdentityStoreId *string `field:"required" json:"identityStoreId" yaml:"identityStoreId"`
+	// alternate_identifier block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/identitystore_user#alternate_identifier DataAwsIdentitystoreUser#alternate_identifier}
+	AlternateIdentifier *DataAwsIdentitystoreUserAlternateIdentifier `field:"optional" json:"alternateIdentifier" yaml:"alternateIdentifier"`
 	// filter block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/identitystore_user#filter DataAwsIdentitystoreUser#filter}
-	Filter interface{} `field:"required" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/identitystore_user#identity_store_id DataAwsIdentitystoreUser#identity_store_id}.
-	IdentityStoreId *string `field:"required" json:"identityStoreId" yaml:"identityStoreId"`
+	Filter *DataAwsIdentitystoreUserFilter `field:"optional" json:"filter" yaml:"filter"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/identitystore_user#id DataAwsIdentitystoreUser#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

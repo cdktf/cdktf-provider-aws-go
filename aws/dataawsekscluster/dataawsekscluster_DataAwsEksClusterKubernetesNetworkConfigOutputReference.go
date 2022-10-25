@@ -31,6 +31,7 @@ type DataAwsEksClusterKubernetesNetworkConfigOutputReference interface {
 	SetInternalValue(val *DataAwsEksClusterKubernetesNetworkConfig)
 	IpFamily() *string
 	ServiceIpv4Cidr() *string
+	ServiceIpv6Cidr() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -143,6 +144,16 @@ func (j *jsiiProxy_DataAwsEksClusterKubernetesNetworkConfigOutputReference) Serv
 	_jsii_.Get(
 		j,
 		"serviceIpv4Cidr",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEksClusterKubernetesNetworkConfigOutputReference) ServiceIpv6Cidr() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceIpv6Cidr",
 		&returns,
 	)
 	return returns

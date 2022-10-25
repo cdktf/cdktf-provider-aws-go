@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package prometheusworkspace
 
@@ -50,6 +49,10 @@ func (p *jsiiProxy_PrometheusWorkspace) validateInterpolationForAttributeParamet
 }
 
 func (p *jsiiProxy_PrometheusWorkspace) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrometheusWorkspace) validatePutLoggingConfigurationParameters(value *PrometheusWorkspaceLoggingConfiguration) error {
 	return nil
 }
 

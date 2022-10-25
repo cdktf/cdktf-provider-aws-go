@@ -51,6 +51,9 @@ type Vpc interface {
 	EnableDnsSupport() interface{}
 	SetEnableDnsSupport(val interface{})
 	EnableDnsSupportInput() interface{}
+	EnableNetworkAddressUsageMetrics() interface{}
+	SetEnableNetworkAddressUsageMetrics(val interface{})
+	EnableNetworkAddressUsageMetricsInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -145,6 +148,7 @@ type Vpc interface {
 	ResetEnableClassiclinkDnsSupport()
 	ResetEnableDnsHostnames()
 	ResetEnableDnsSupport()
+	ResetEnableNetworkAddressUsageMetrics()
 	ResetId()
 	ResetInstanceTenancy()
 	ResetIpv4IpamPoolId()
@@ -388,6 +392,26 @@ func (j *jsiiProxy_Vpc) EnableDnsSupportInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableDnsSupportInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Vpc) EnableNetworkAddressUsageMetrics() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableNetworkAddressUsageMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Vpc) EnableNetworkAddressUsageMetricsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableNetworkAddressUsageMetricsInput",
 		&returns,
 	)
 	return returns
@@ -856,6 +880,17 @@ func (j *jsiiProxy_Vpc)SetEnableDnsSupport(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Vpc)SetEnableNetworkAddressUsageMetrics(val interface{}) {
+	if err := j.validateSetEnableNetworkAddressUsageMetricsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableNetworkAddressUsageMetrics",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Vpc)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -1276,6 +1311,14 @@ func (v *jsiiProxy_Vpc) ResetEnableDnsSupport() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetEnableDnsSupport",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_Vpc) ResetEnableNetworkAddressUsageMetrics() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetEnableNetworkAddressUsageMetrics",
 		nil, // no parameters
 	)
 }

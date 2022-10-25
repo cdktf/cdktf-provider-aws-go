@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package ami
 
@@ -98,6 +97,10 @@ func (j *jsiiProxy_Ami) validateSetIdParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Ami) validateSetImageLocationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Ami) validateSetImdsSupportParameters(val *string) error {
 	return nil
 }
 

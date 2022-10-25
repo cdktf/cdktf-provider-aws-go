@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package cloudwatcheventtarget
 
@@ -42,6 +41,10 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) validateGetStr
 }
 
 func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) validatePutCapacityProviderStrategyParameters(value interface{}) error {
 	return nil
 }
 

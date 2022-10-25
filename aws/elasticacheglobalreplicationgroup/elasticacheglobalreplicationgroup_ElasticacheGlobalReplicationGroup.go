@@ -15,7 +15,12 @@ type ElasticacheGlobalReplicationGroup interface {
 	Arn() *string
 	AtRestEncryptionEnabled() cdktf.IResolvable
 	AuthTokenEnabled() cdktf.IResolvable
+	AutomaticFailoverEnabled() interface{}
+	SetAutomaticFailoverEnabled(val interface{})
+	AutomaticFailoverEnabledInput() interface{}
 	CacheNodeType() *string
+	SetCacheNodeType(val *string)
+	CacheNodeTypeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterEnabled() cdktf.IResolvable
@@ -110,6 +115,8 @@ type ElasticacheGlobalReplicationGroup interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAutomaticFailoverEnabled()
+	ResetCacheNodeType()
 	ResetEngineVersion()
 	ResetGlobalReplicationGroupDescription()
 	ResetId()
@@ -162,11 +169,41 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) AuthTokenEnabled() cdktf.I
 	return returns
 }
 
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) AutomaticFailoverEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticFailoverEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) AutomaticFailoverEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"automaticFailoverEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) CacheNodeType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"cacheNodeType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) CacheNodeTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cacheNodeTypeInput",
 		&returns,
 	)
 	return returns
@@ -532,6 +569,28 @@ func NewElasticacheGlobalReplicationGroup_Override(e ElasticacheGlobalReplicatio
 	)
 }
 
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroup)SetAutomaticFailoverEnabled(val interface{}) {
+	if err := j.validateSetAutomaticFailoverEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"automaticFailoverEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroup)SetCacheNodeType(val *string) {
+	if err := j.validateSetCacheNodeTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cacheNodeType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ElasticacheGlobalReplicationGroup)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -888,6 +947,22 @@ func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) OverrideLogicalId(newLogic
 		e,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) ResetAutomaticFailoverEnabled() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetAutomaticFailoverEnabled",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) ResetCacheNodeType() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetCacheNodeType",
+		nil, // no parameters
 	)
 }
 

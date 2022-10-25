@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package globalacceleratoraccelerator
 
@@ -196,6 +195,14 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator) validateSetEnabledParameters(va
 }
 
 func (j *jsiiProxy_GlobalacceleratorAccelerator) validateSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GlobalacceleratorAccelerator) validateSetIpAddressesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

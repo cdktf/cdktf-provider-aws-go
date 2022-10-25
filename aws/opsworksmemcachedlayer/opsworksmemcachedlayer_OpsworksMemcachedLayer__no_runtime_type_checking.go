@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package opsworksmemcachedlayer
 
@@ -58,6 +57,10 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) validatePutCloudwatchConfigurationPar
 }
 
 func (o *jsiiProxy_OpsworksMemcachedLayer) validatePutEbsVolumeParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksMemcachedLayer) validatePutLoadBasedAutoScalingParameters(value *OpsworksMemcachedLayerLoadBasedAutoScaling) error {
 	return nil
 }
 

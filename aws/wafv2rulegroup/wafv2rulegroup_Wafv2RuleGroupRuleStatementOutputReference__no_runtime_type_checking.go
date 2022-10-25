@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package wafv2rulegroup
 
@@ -70,6 +69,14 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementOutputReference) validatePutNotSta
 }
 
 func (w *jsiiProxy_Wafv2RuleGroupRuleStatementOutputReference) validatePutOrStatementParameters(value *Wafv2RuleGroupRuleStatementOrStatement) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementOutputReference) validatePutRateBasedStatementParameters(value *Wafv2RuleGroupRuleStatementRateBasedStatement) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementOutputReference) validatePutRegexMatchStatementParameters(value *Wafv2RuleGroupRuleStatementRegexMatchStatement) error {
 	return nil
 }
 

@@ -46,6 +46,9 @@ type GlobalacceleratorAccelerator interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpAddresses() *[]*string
+	SetIpAddresses(val *[]*string)
+	IpAddressesInput() *[]*string
 	IpAddressType() *string
 	SetIpAddressType(val *string)
 	IpAddressTypeInput() *string
@@ -113,6 +116,7 @@ type GlobalacceleratorAccelerator interface {
 	ResetAttributes()
 	ResetEnabled()
 	ResetId()
+	ResetIpAddresses()
 	ResetIpAddressType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -290,6 +294,26 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlobalacceleratorAccelerator) IpAddresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipAddresses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlobalacceleratorAccelerator) IpAddressesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipAddressesInput",
 		&returns,
 	)
 	return returns
@@ -568,6 +592,17 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlobalacceleratorAccelerator)SetIpAddresses(val *[]*string) {
+	if err := j.validateSetIpAddressesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipAddresses",
 		val,
 	)
 }
@@ -916,6 +951,14 @@ func (g *jsiiProxy_GlobalacceleratorAccelerator) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlobalacceleratorAccelerator) ResetIpAddresses() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpAddresses",
 		nil, // no parameters
 	)
 }

@@ -42,6 +42,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nameServers", GoGetter: "NameServers"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "primaryNameServer", GoGetter: "PrimaryNameServer"},
 			_jsii_.MemberProperty{JsiiProperty: "privateZone", GoGetter: "PrivateZone"},
 			_jsii_.MemberProperty{JsiiProperty: "privateZoneInput", GoGetter: "PrivateZoneInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},

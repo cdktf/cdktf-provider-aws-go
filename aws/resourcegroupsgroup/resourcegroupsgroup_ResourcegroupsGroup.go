@@ -15,6 +15,8 @@ type ResourcegroupsGroup interface {
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Configuration() ResourcegroupsGroupConfigurationList
+	ConfigurationInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -76,6 +78,8 @@ type ResourcegroupsGroup interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() ResourcegroupsGroupTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -101,14 +105,19 @@ type ResourcegroupsGroup interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutConfiguration(value interface{})
 	PutResourceQuery(value *ResourcegroupsGroupResourceQuery)
+	PutTimeouts(value *ResourcegroupsGroupTimeouts)
+	ResetConfiguration()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetResourceQuery()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -139,6 +148,26 @@ func (j *jsiiProxy_ResourcegroupsGroup) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ResourcegroupsGroup) Configuration() ResourcegroupsGroupConfigurationList {
+	var returns ResourcegroupsGroupConfigurationList
+	_jsii_.Get(
+		j,
+		"configuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ResourcegroupsGroup) ConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"configurationInput",
 		&returns,
 	)
 	return returns
@@ -409,6 +438,26 @@ func (j *jsiiProxy_ResourcegroupsGroup) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ResourcegroupsGroup) Timeouts() ResourcegroupsGroupTimeoutsOutputReference {
+	var returns ResourcegroupsGroupTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ResourcegroupsGroup) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -792,6 +841,17 @@ func (r *jsiiProxy_ResourcegroupsGroup) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (r *jsiiProxy_ResourcegroupsGroup) PutConfiguration(value interface{}) {
+	if err := r.validatePutConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_ResourcegroupsGroup) PutResourceQuery(value *ResourcegroupsGroupResourceQuery) {
 	if err := r.validatePutResourceQueryParameters(value); err != nil {
 		panic(err)
@@ -800,6 +860,25 @@ func (r *jsiiProxy_ResourcegroupsGroup) PutResourceQuery(value *ResourcegroupsGr
 		r,
 		"putResourceQuery",
 		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_ResourcegroupsGroup) PutTimeouts(value *ResourcegroupsGroupTimeouts) {
+	if err := r.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_ResourcegroupsGroup) ResetConfiguration() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetConfiguration",
+		nil, // no parameters
 	)
 }
 
@@ -827,6 +906,14 @@ func (r *jsiiProxy_ResourcegroupsGroup) ResetOverrideLogicalId() {
 	)
 }
 
+func (r *jsiiProxy_ResourcegroupsGroup) ResetResourceQuery() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetResourceQuery",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_ResourcegroupsGroup) ResetTags() {
 	_jsii_.InvokeVoid(
 		r,
@@ -839,6 +926,14 @@ func (r *jsiiProxy_ResourcegroupsGroup) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_ResourcegroupsGroup) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

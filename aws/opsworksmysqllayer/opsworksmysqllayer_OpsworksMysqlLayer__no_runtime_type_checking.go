@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package opsworksmysqllayer
 
@@ -58,6 +57,10 @@ func (o *jsiiProxy_OpsworksMysqlLayer) validatePutCloudwatchConfigurationParamet
 }
 
 func (o *jsiiProxy_OpsworksMysqlLayer) validatePutEbsVolumeParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksMysqlLayer) validatePutLoadBasedAutoScalingParameters(value *OpsworksMysqlLayerLoadBasedAutoScaling) error {
 	return nil
 }
 

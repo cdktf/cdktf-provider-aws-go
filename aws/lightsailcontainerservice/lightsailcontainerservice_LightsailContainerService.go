@@ -60,6 +60,8 @@ type LightsailContainerService interface {
 	PowerInput() *string
 	PrincipalArn() *string
 	PrivateDomainName() *string
+	PrivateRegistryAccess() LightsailContainerServicePrivateRegistryAccessOutputReference
+	PrivateRegistryAccessInput() *LightsailContainerServicePrivateRegistryAccess
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -117,6 +119,7 @@ type LightsailContainerService interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutPrivateRegistryAccess(value *LightsailContainerServicePrivateRegistryAccess)
 	PutPublicDomainNames(value *LightsailContainerServicePublicDomainNames)
 	PutTimeouts(value *LightsailContainerServiceTimeouts)
 	ResetId()
@@ -124,6 +127,7 @@ type LightsailContainerService interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrivateRegistryAccess()
 	ResetPublicDomainNames()
 	ResetTags()
 	ResetTagsAll()
@@ -378,6 +382,26 @@ func (j *jsiiProxy_LightsailContainerService) PrivateDomainName() *string {
 	_jsii_.Get(
 		j,
 		"privateDomainName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LightsailContainerService) PrivateRegistryAccess() LightsailContainerServicePrivateRegistryAccessOutputReference {
+	var returns LightsailContainerServicePrivateRegistryAccessOutputReference
+	_jsii_.Get(
+		j,
+		"privateRegistryAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LightsailContainerService) PrivateRegistryAccessInput() *LightsailContainerServicePrivateRegistryAccess {
+	var returns *LightsailContainerServicePrivateRegistryAccess
+	_jsii_.Get(
+		j,
+		"privateRegistryAccessInput",
 		&returns,
 	)
 	return returns
@@ -973,6 +997,17 @@ func (l *jsiiProxy_LightsailContainerService) OverrideLogicalId(newLogicalId *st
 	)
 }
 
+func (l *jsiiProxy_LightsailContainerService) PutPrivateRegistryAccess(value *LightsailContainerServicePrivateRegistryAccess) {
+	if err := l.validatePutPrivateRegistryAccessParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putPrivateRegistryAccess",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LightsailContainerService) PutPublicDomainNames(value *LightsailContainerServicePublicDomainNames) {
 	if err := l.validatePutPublicDomainNamesParameters(value); err != nil {
 		panic(err)
@@ -1015,6 +1050,14 @@ func (l *jsiiProxy_LightsailContainerService) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LightsailContainerService) ResetPrivateRegistryAccess() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPrivateRegistryAccess",
 		nil, // no parameters
 	)
 }

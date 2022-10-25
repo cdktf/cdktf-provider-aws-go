@@ -25,6 +25,10 @@ type SnsPlatformApplicationConfig struct {
 	Platform *string `field:"required" json:"platform" yaml:"platform"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_platform_application#platform_credential SnsPlatformApplication#platform_credential}.
 	PlatformCredential *string `field:"required" json:"platformCredential" yaml:"platformCredential"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_platform_application#apple_platform_bundle_id SnsPlatformApplication#apple_platform_bundle_id}.
+	ApplePlatformBundleId *string `field:"optional" json:"applePlatformBundleId" yaml:"applePlatformBundleId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_platform_application#apple_platform_team_id SnsPlatformApplication#apple_platform_team_id}.
+	ApplePlatformTeamId *string `field:"optional" json:"applePlatformTeamId" yaml:"applePlatformTeamId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_platform_application#event_delivery_failure_topic_arn SnsPlatformApplication#event_delivery_failure_topic_arn}.
 	EventDeliveryFailureTopicArn *string `field:"optional" json:"eventDeliveryFailureTopicArn" yaml:"eventDeliveryFailureTopicArn"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_platform_application#event_endpoint_created_topic_arn SnsPlatformApplication#event_endpoint_created_topic_arn}.

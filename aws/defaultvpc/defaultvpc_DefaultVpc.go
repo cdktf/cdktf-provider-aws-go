@@ -49,6 +49,9 @@ type DefaultVpc interface {
 	EnableDnsSupport() interface{}
 	SetEnableDnsSupport(val interface{})
 	EnableDnsSupportInput() interface{}
+	EnableNetworkAddressUsageMetrics() interface{}
+	SetEnableNetworkAddressUsageMetrics(val interface{})
+	EnableNetworkAddressUsageMetricsInput() interface{}
 	ExistingDefaultVpc() cdktf.IResolvable
 	ForceDestroy() interface{}
 	SetForceDestroy(val interface{})
@@ -138,6 +141,7 @@ type DefaultVpc interface {
 	ResetEnableClassiclinkDnsSupport()
 	ResetEnableDnsHostnames()
 	ResetEnableDnsSupport()
+	ResetEnableNetworkAddressUsageMetrics()
 	ResetForceDestroy()
 	ResetId()
 	ResetIpv6CidrBlock()
@@ -369,6 +373,26 @@ func (j *jsiiProxy_DefaultVpc) EnableDnsSupportInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableDnsSupportInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DefaultVpc) EnableNetworkAddressUsageMetrics() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableNetworkAddressUsageMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DefaultVpc) EnableNetworkAddressUsageMetricsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableNetworkAddressUsageMetricsInput",
 		&returns,
 	)
 	return returns
@@ -806,6 +830,17 @@ func (j *jsiiProxy_DefaultVpc)SetEnableDnsSupport(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_DefaultVpc)SetEnableNetworkAddressUsageMetrics(val interface{}) {
+	if err := j.validateSetEnableNetworkAddressUsageMetricsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableNetworkAddressUsageMetrics",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DefaultVpc)SetForceDestroy(val interface{}) {
 	if err := j.validateSetForceDestroyParameters(val); err != nil {
 		panic(err)
@@ -1196,6 +1231,14 @@ func (d *jsiiProxy_DefaultVpc) ResetEnableDnsSupport() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetEnableDnsSupport",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DefaultVpc) ResetEnableNetworkAddressUsageMetrics() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnableNetworkAddressUsageMetrics",
 		nil, // no parameters
 	)
 }

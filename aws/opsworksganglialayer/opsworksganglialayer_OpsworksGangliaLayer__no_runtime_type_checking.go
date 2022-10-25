@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package opsworksganglialayer
 
@@ -58,6 +57,10 @@ func (o *jsiiProxy_OpsworksGangliaLayer) validatePutCloudwatchConfigurationParam
 }
 
 func (o *jsiiProxy_OpsworksGangliaLayer) validatePutEbsVolumeParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksGangliaLayer) validatePutLoadBasedAutoScalingParameters(value *OpsworksGangliaLayerLoadBasedAutoScaling) error {
 	return nil
 }
 

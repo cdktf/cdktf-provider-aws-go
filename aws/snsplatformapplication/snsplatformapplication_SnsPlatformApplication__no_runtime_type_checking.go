@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package snsplatformapplication
 
@@ -54,6 +53,14 @@ func (s *jsiiProxy_SnsPlatformApplication) validateOverrideLogicalIdParameters(n
 }
 
 func validateSnsPlatformApplication_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SnsPlatformApplication) validateSetApplePlatformBundleIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SnsPlatformApplication) validateSetApplePlatformTeamIdParameters(val *string) error {
 	return nil
 }
 

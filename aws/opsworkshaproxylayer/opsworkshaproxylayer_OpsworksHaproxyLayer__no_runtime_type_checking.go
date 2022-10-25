@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package opsworkshaproxylayer
 
@@ -58,6 +57,10 @@ func (o *jsiiProxy_OpsworksHaproxyLayer) validatePutCloudwatchConfigurationParam
 }
 
 func (o *jsiiProxy_OpsworksHaproxyLayer) validatePutEbsVolumeParameters(value interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksHaproxyLayer) validatePutLoadBasedAutoScalingParameters(value *OpsworksHaproxyLayerLoadBasedAutoScaling) error {
 	return nil
 }
 

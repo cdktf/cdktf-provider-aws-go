@@ -38,6 +38,10 @@ type Wafv2WebAclRuleStatement struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#rate_based_statement Wafv2WebAcl#rate_based_statement}
 	RateBasedStatement *Wafv2WebAclRuleStatementRateBasedStatement `field:"optional" json:"rateBasedStatement" yaml:"rateBasedStatement"`
+	// regex_match_statement block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#regex_match_statement Wafv2WebAcl#regex_match_statement}
+	RegexMatchStatement *Wafv2WebAclRuleStatementRegexMatchStatement `field:"optional" json:"regexMatchStatement" yaml:"regexMatchStatement"`
 	// regex_pattern_set_reference_statement block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#regex_pattern_set_reference_statement Wafv2WebAcl#regex_pattern_set_reference_statement}

@@ -14,6 +14,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "appMonitorConfiguration", GoGetter: "AppMonitorConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "appMonitorConfigurationInput", GoGetter: "AppMonitorConfigurationInput"},
+			_jsii_.MemberProperty{JsiiProperty: "appMonitorId", GoGetter: "AppMonitorId"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},

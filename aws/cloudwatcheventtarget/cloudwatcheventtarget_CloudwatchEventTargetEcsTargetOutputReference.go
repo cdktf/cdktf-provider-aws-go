@@ -10,6 +10,8 @@ import (
 
 type CloudwatchEventTargetEcsTargetOutputReference interface {
 	cdktf.ComplexObject
+	CapacityProviderStrategy() CloudwatchEventTargetEcsTargetCapacityProviderStrategyList
+	CapacityProviderStrategyInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -92,8 +94,10 @@ type CloudwatchEventTargetEcsTargetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCapacityProviderStrategy(value interface{})
 	PutNetworkConfiguration(value *CloudwatchEventTargetEcsTargetNetworkConfiguration)
 	PutPlacementConstraint(value interface{})
+	ResetCapacityProviderStrategy()
 	ResetEnableEcsManagedTags()
 	ResetEnableExecuteCommand()
 	ResetGroup()
@@ -117,6 +121,26 @@ type CloudwatchEventTargetEcsTargetOutputReference interface {
 // The jsii proxy struct for CloudwatchEventTargetEcsTargetOutputReference
 type jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) CapacityProviderStrategy() CloudwatchEventTargetEcsTargetCapacityProviderStrategyList {
+	var returns CloudwatchEventTargetEcsTargetCapacityProviderStrategyList
+	_jsii_.Get(
+		j,
+		"capacityProviderStrategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) CapacityProviderStrategyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"capacityProviderStrategyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) ComplexObjectIndex() interface{} {
@@ -777,6 +801,17 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) InterpolationF
 	return returns
 }
 
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) PutCapacityProviderStrategy(value interface{}) {
+	if err := c.validatePutCapacityProviderStrategyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putCapacityProviderStrategy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) PutNetworkConfiguration(value *CloudwatchEventTargetEcsTargetNetworkConfiguration) {
 	if err := c.validatePutNetworkConfigurationParameters(value); err != nil {
 		panic(err)
@@ -796,6 +831,14 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) PutPlacementCo
 		c,
 		"putPlacementConstraint",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) ResetCapacityProviderStrategy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetCapacityProviderStrategy",
+		nil, // no parameters
 	)
 }
 

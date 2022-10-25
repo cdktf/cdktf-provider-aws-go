@@ -30,6 +30,10 @@ type Wafv2WebAclRuleStatementOrStatementStatement struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#or_statement Wafv2WebAcl#or_statement}
 	OrStatement *Wafv2WebAclRuleStatementOrStatement `field:"optional" json:"orStatement" yaml:"orStatement"`
+	// regex_match_statement block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#regex_match_statement Wafv2WebAcl#regex_match_statement}
+	RegexMatchStatement *Wafv2WebAclRuleStatementOrStatementStatementRegexMatchStatement `field:"optional" json:"regexMatchStatement" yaml:"regexMatchStatement"`
 	// regex_pattern_set_reference_statement block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#regex_pattern_set_reference_statement Wafv2WebAcl#regex_pattern_set_reference_statement}
