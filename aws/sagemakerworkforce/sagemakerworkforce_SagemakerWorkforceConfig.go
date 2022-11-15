@@ -38,5 +38,9 @@ type SagemakerWorkforceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#source_ip_config SagemakerWorkforce#source_ip_config}
 	SourceIpConfig *SagemakerWorkforceSourceIpConfig `field:"optional" json:"sourceIpConfig" yaml:"sourceIpConfig"`
+	// workforce_vpc_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_workforce#workforce_vpc_config SagemakerWorkforce#workforce_vpc_config}
+	WorkforceVpcConfig *SagemakerWorkforceWorkforceVpcConfig `field:"optional" json:"workforceVpcConfig" yaml:"workforceVpcConfig"`
 }
 

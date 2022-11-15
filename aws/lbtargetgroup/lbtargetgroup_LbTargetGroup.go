@@ -106,6 +106,8 @@ type LbTargetGroup interface {
 	SetTagsAll(val *map[string]*string)
 	TagsAllInput() *map[string]*string
 	TagsInput() *map[string]*string
+	TargetFailover() LbTargetGroupTargetFailoverList
+	TargetFailoverInput() interface{}
 	TargetType() *string
 	SetTargetType(val *string)
 	TargetTypeInput() *string
@@ -145,6 +147,7 @@ type LbTargetGroup interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutHealthCheck(value *LbTargetGroupHealthCheck)
 	PutStickiness(value *LbTargetGroupStickiness)
+	PutTargetFailover(value interface{})
 	ResetConnectionTermination()
 	ResetDeregistrationDelay()
 	ResetHealthCheck()
@@ -166,6 +169,7 @@ type LbTargetGroup interface {
 	ResetStickiness()
 	ResetTags()
 	ResetTagsAll()
+	ResetTargetFailover()
 	ResetTargetType()
 	ResetVpcId()
 	SynthesizeAttributes() *map[string]interface{}
@@ -688,6 +692,26 @@ func (j *jsiiProxy_LbTargetGroup) TagsInput() *map[string]*string {
 	_jsii_.Get(
 		j,
 		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbTargetGroup) TargetFailover() LbTargetGroupTargetFailoverList {
+	var returns LbTargetGroupTargetFailoverList
+	_jsii_.Get(
+		j,
+		"targetFailover",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbTargetGroup) TargetFailoverInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"targetFailoverInput",
 		&returns,
 	)
 	return returns
@@ -1306,6 +1330,17 @@ func (l *jsiiProxy_LbTargetGroup) PutStickiness(value *LbTargetGroupStickiness) 
 	)
 }
 
+func (l *jsiiProxy_LbTargetGroup) PutTargetFailover(value interface{}) {
+	if err := l.validatePutTargetFailoverParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putTargetFailover",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LbTargetGroup) ResetConnectionTermination() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1454,6 +1489,14 @@ func (l *jsiiProxy_LbTargetGroup) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbTargetGroup) ResetTargetFailover() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTargetFailover",
 		nil, // no parameters
 	)
 }

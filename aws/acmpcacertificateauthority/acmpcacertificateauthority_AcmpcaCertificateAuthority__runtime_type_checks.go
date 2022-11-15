@@ -299,6 +299,14 @@ func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetTypeParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetUsageModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewAcmpcaCertificateAuthorityParameters(scope constructs.Construct, id *string, config *AcmpcaCertificateAuthorityConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

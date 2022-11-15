@@ -10,5 +10,7 @@ type LightsailInstancePublicPortsPortInfo struct {
 	ToPort *float64 `field:"required" json:"toPort" yaml:"toPort"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_instance_public_ports#cidrs LightsailInstancePublicPorts#cidrs}.
 	Cidrs *[]*string `field:"optional" json:"cidrs" yaml:"cidrs"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_instance_public_ports#ipv6_cidrs LightsailInstancePublicPorts#ipv6_cidrs}.
+	Ipv6Cidrs *[]*string `field:"optional" json:"ipv6Cidrs" yaml:"ipv6Cidrs"`
 }
 

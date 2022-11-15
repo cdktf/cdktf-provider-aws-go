@@ -96,6 +96,10 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) validateSetPreserveDevice
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) validateSetSecurityDescriptorCopyFlagsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) validateSetTaskQueueingParameters(val *string) error {
 	return nil
 }

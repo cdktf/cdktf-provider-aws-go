@@ -32,5 +32,9 @@ type VpcIpamScopeConfig struct {
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_scope#tags_all VpcIpamScope#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
+	// timeouts block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_scope#timeouts VpcIpamScope#timeouts}
+	Timeouts *VpcIpamScopeTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

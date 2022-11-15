@@ -41,8 +41,8 @@ type Wafv2RuleGroupRuleStatementOrStatementStatementOutputReference interface {
 	LabelMatchStatementInput() *Wafv2RuleGroupRuleStatementOrStatementStatementLabelMatchStatement
 	NotStatement() Wafv2RuleGroupRuleStatementOrStatementStatementNotStatementOutputReference
 	NotStatementInput() *Wafv2RuleGroupRuleStatementOrStatementStatementNotStatement
-	OrStatement() Wafv2RuleGroupRuleStatementOrStatementStatementOrStatementOutputReference
-	OrStatementInput() *Wafv2RuleGroupRuleStatementOrStatementStatementOrStatement
+	OrStatement() Wafv2RuleGroupRuleStatementOrStatementOutputReference
+	OrStatementInput() *Wafv2RuleGroupRuleStatementOrStatement
 	RegexMatchStatement() Wafv2RuleGroupRuleStatementOrStatementStatementRegexMatchStatementOutputReference
 	RegexMatchStatementInput() *Wafv2RuleGroupRuleStatementOrStatementStatementRegexMatchStatement
 	RegexPatternSetReferenceStatement() Wafv2RuleGroupRuleStatementOrStatementStatementRegexPatternSetReferenceStatementOutputReference
@@ -91,7 +91,7 @@ type Wafv2RuleGroupRuleStatementOrStatementStatementOutputReference interface {
 	PutIpSetReferenceStatement(value *Wafv2RuleGroupRuleStatementOrStatementStatementIpSetReferenceStatement)
 	PutLabelMatchStatement(value *Wafv2RuleGroupRuleStatementOrStatementStatementLabelMatchStatement)
 	PutNotStatement(value *Wafv2RuleGroupRuleStatementOrStatementStatementNotStatement)
-	PutOrStatement(value *Wafv2RuleGroupRuleStatementOrStatementStatementOrStatement)
+	PutOrStatement(value *Wafv2RuleGroupRuleStatementOrStatement)
 	PutRegexMatchStatement(value *Wafv2RuleGroupRuleStatementOrStatementStatementRegexMatchStatement)
 	PutRegexPatternSetReferenceStatement(value *Wafv2RuleGroupRuleStatementOrStatementStatementRegexPatternSetReferenceStatement)
 	PutSizeConstraintStatement(value *Wafv2RuleGroupRuleStatementOrStatementStatementSizeConstraintStatement)
@@ -294,8 +294,8 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleStatementOrStatementStatementOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleStatementOrStatementStatementOutputReference) OrStatement() Wafv2RuleGroupRuleStatementOrStatementStatementOrStatementOutputReference {
-	var returns Wafv2RuleGroupRuleStatementOrStatementStatementOrStatementOutputReference
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementOrStatementStatementOutputReference) OrStatement() Wafv2RuleGroupRuleStatementOrStatementOutputReference {
+	var returns Wafv2RuleGroupRuleStatementOrStatementOutputReference
 	_jsii_.Get(
 		j,
 		"orStatement",
@@ -304,8 +304,8 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleStatementOrStatementStatementOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleStatementOrStatementStatementOutputReference) OrStatementInput() *Wafv2RuleGroupRuleStatementOrStatementStatementOrStatement {
-	var returns *Wafv2RuleGroupRuleStatementOrStatementStatementOrStatement
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementOrStatementStatementOutputReference) OrStatementInput() *Wafv2RuleGroupRuleStatementOrStatement {
+	var returns *Wafv2RuleGroupRuleStatementOrStatement
 	_jsii_.Get(
 		j,
 		"orStatementInput",
@@ -769,7 +769,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementOrStatementStatementOutputReferenc
 	)
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleStatementOrStatementStatementOutputReference) PutOrStatement(value *Wafv2RuleGroupRuleStatementOrStatementStatementOrStatement) {
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementOrStatementStatementOutputReference) PutOrStatement(value *Wafv2RuleGroupRuleStatementOrStatement) {
 	if err := w.validatePutOrStatementParameters(value); err != nil {
 		panic(err)
 	}

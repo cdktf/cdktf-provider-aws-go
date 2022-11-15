@@ -60,6 +60,10 @@ func (a *jsiiProxy_AlbTargetGroup) validatePutStickinessParameters(value *AlbTar
 	return nil
 }
 
+func (a *jsiiProxy_AlbTargetGroup) validatePutTargetFailoverParameters(value interface{}) error {
+	return nil
+}
+
 func validateAlbTargetGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

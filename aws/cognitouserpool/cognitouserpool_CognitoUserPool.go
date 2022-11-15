@@ -37,6 +37,9 @@ type CognitoUserPool interface {
 	SetCount(val *float64)
 	CreationDate() *string
 	CustomDomain() *string
+	DeletionProtection() *string
+	SetDeletionProtection(val *string)
+	DeletionProtectionInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,6 +172,7 @@ type CognitoUserPool interface {
 	ResetAdminCreateUserConfig()
 	ResetAliasAttributes()
 	ResetAutoVerifiedAttributes()
+	ResetDeletionProtection()
 	ResetDeviceConfiguration()
 	ResetEmailConfiguration()
 	ResetEmailVerificationMessage()
@@ -352,6 +356,26 @@ func (j *jsiiProxy_CognitoUserPool) CustomDomain() *string {
 	_jsii_.Get(
 		j,
 		"customDomain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) DeletionProtection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPool) DeletionProtectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
 		&returns,
 	)
 	return returns
@@ -1008,6 +1032,17 @@ func (j *jsiiProxy_CognitoUserPool)SetCount(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_CognitoUserPool)SetDeletionProtection(val *string) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CognitoUserPool)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -1563,6 +1598,14 @@ func (c *jsiiProxy_CognitoUserPool) ResetAutoVerifiedAttributes() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAutoVerifiedAttributes",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPool) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetDeletionProtection",
 		nil, // no parameters
 	)
 }

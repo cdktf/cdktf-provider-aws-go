@@ -47,6 +47,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "imageLocation", GoGetter: "ImageLocation"},
 			_jsii_.MemberProperty{JsiiProperty: "imageOwnerAlias", GoGetter: "ImageOwnerAlias"},
 			_jsii_.MemberProperty{JsiiProperty: "imageType", GoGetter: "ImageType"},
+			_jsii_.MemberProperty{JsiiProperty: "imdsSupport", GoGetter: "ImdsSupport"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "kernelId", GoGetter: "KernelId"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},

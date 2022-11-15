@@ -29,6 +29,8 @@ type ApprunnerServiceNetworkConfigurationOutputReference interface {
 	EgressConfigurationInput() *ApprunnerServiceNetworkConfigurationEgressConfiguration
 	// Experimental.
 	Fqn() *string
+	IngressConfiguration() ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference
+	IngressConfigurationInput() *ApprunnerServiceNetworkConfigurationIngressConfiguration
 	InternalValue() *ApprunnerServiceNetworkConfiguration
 	SetInternalValue(val *ApprunnerServiceNetworkConfiguration)
 	// Experimental.
@@ -64,7 +66,9 @@ type ApprunnerServiceNetworkConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutEgressConfiguration(value *ApprunnerServiceNetworkConfigurationEgressConfiguration)
+	PutIngressConfiguration(value *ApprunnerServiceNetworkConfigurationIngressConfiguration)
 	ResetEgressConfiguration()
+	ResetIngressConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -135,6 +139,26 @@ func (j *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) Fqn() *s
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) IngressConfiguration() ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference {
+	var returns ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"ingressConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) IngressConfigurationInput() *ApprunnerServiceNetworkConfigurationIngressConfiguration {
+	var returns *ApprunnerServiceNetworkConfigurationIngressConfiguration
+	_jsii_.Get(
+		j,
+		"ingressConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -450,10 +474,29 @@ func (a *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) PutEgres
 	)
 }
 
+func (a *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) PutIngressConfiguration(value *ApprunnerServiceNetworkConfigurationIngressConfiguration) {
+	if err := a.validatePutIngressConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putIngressConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) ResetEgressConfiguration() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEgressConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) ResetIngressConfiguration() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIngressConfiguration",
 		nil, // no parameters
 	)
 }

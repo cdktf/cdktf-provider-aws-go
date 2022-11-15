@@ -107,6 +107,8 @@ type VpcIpamPool interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() VpcIpamPoolTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -132,6 +134,7 @@ type VpcIpamPool interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *VpcIpamPoolTimeouts)
 	ResetAllocationDefaultNetmaskLength()
 	ResetAllocationMaxNetmaskLength()
 	ResetAllocationMinNetmaskLength()
@@ -148,6 +151,7 @@ type VpcIpamPool interface {
 	ResetSourceIpamPoolId()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -663,6 +667,26 @@ func (j *jsiiProxy_VpcIpamPool) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VpcIpamPool) Timeouts() VpcIpamPoolTimeoutsOutputReference {
+	var returns VpcIpamPoolTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcIpamPool) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool aws_vpc_ipam_pool} Resource.
 func NewVpcIpamPool(scope constructs.Construct, id *string, config *VpcIpamPoolConfig) VpcIpamPool {
@@ -1151,6 +1175,17 @@ func (v *jsiiProxy_VpcIpamPool) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (v *jsiiProxy_VpcIpamPool) PutTimeouts(value *VpcIpamPoolTimeouts) {
+	if err := v.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VpcIpamPool) ResetAllocationDefaultNetmaskLength() {
 	_jsii_.InvokeVoid(
 		v,
@@ -1259,6 +1294,14 @@ func (v *jsiiProxy_VpcIpamPool) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcIpamPool) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

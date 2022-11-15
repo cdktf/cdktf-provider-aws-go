@@ -90,6 +90,17 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validateIn
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutCanvasAppSettingsParameters(value *SagemakerDomainDefaultUserSettingsCanvasAppSettings) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutJupyterServerAppSettingsParameters(value *SagemakerDomainDefaultUserSettingsJupyterServerAppSettings) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -102,6 +113,17 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePu
 }
 
 func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutKernelGatewayAppSettingsParameters(value *SagemakerDomainDefaultUserSettingsKernelGatewayAppSettings) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutRSessionAppSettingsParameters(value *SagemakerDomainDefaultUserSettingsRSessionAppSettings) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

@@ -48,6 +48,10 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 	return nil
 }
 
+func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) validatePutStatmuxSettingsParameters(value *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

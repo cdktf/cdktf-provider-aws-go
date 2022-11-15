@@ -52,6 +52,7 @@ type DataAwsSesv2DedicatedIpPool interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	ScalingMode() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -271,6 +272,16 @@ func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) ScalingMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scalingMode",
 		&returns,
 	)
 	return returns

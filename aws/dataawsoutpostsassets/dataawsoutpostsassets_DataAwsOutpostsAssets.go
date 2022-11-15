@@ -36,6 +36,9 @@ type DataAwsOutpostsAssets interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HostIdFilter() *[]*string
+	SetHostIdFilter(val *[]*string)
+	HostIdFilterInput() *[]*string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -51,6 +54,9 @@ type DataAwsOutpostsAssets interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	StatusIdFilter() *[]*string
+	SetStatusIdFilter(val *[]*string)
+	StatusIdFilterInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -82,10 +88,12 @@ type DataAwsOutpostsAssets interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetHostIdFilter()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStatusIdFilter()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -201,6 +209,26 @@ func (j *jsiiProxy_DataAwsOutpostsAssets) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsOutpostsAssets) HostIdFilter() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"hostIdFilter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsOutpostsAssets) HostIdFilterInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"hostIdFilterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsOutpostsAssets) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -256,6 +284,26 @@ func (j *jsiiProxy_DataAwsOutpostsAssets) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsOutpostsAssets) StatusIdFilter() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"statusIdFilter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsOutpostsAssets) StatusIdFilterInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"statusIdFilterInput",
 		&returns,
 	)
 	return returns
@@ -356,6 +404,17 @@ func (j *jsiiProxy_DataAwsOutpostsAssets)SetForEach(val cdktf.ITerraformIterator
 	)
 }
 
+func (j *jsiiProxy_DataAwsOutpostsAssets)SetHostIdFilter(val *[]*string) {
+	if err := j.validateSetHostIdFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hostIdFilter",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataAwsOutpostsAssets)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
@@ -382,6 +441,17 @@ func (j *jsiiProxy_DataAwsOutpostsAssets)SetProvider(val cdktf.TerraformProvider
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsOutpostsAssets)SetStatusIdFilter(val *[]*string) {
+	if err := j.validateSetStatusIdFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"statusIdFilter",
 		val,
 	)
 }
@@ -614,6 +684,14 @@ func (d *jsiiProxy_DataAwsOutpostsAssets) OverrideLogicalId(newLogicalId *string
 	)
 }
 
+func (d *jsiiProxy_DataAwsOutpostsAssets) ResetHostIdFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHostIdFilter",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataAwsOutpostsAssets) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -626,6 +704,14 @@ func (d *jsiiProxy_DataAwsOutpostsAssets) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsOutpostsAssets) ResetStatusIdFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStatusIdFilter",
 		nil, // no parameters
 	)
 }

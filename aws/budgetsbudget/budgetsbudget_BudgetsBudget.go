@@ -16,6 +16,8 @@ type BudgetsBudget interface {
 	SetAccountId(val *string)
 	AccountIdInput() *string
 	Arn() *string
+	AutoAdjustData() BudgetsBudgetAutoAdjustDataOutputReference
+	AutoAdjustDataInput() *BudgetsBudgetAutoAdjustData
 	BudgetType() *string
 	SetBudgetType(val *string)
 	BudgetTypeInput() *string
@@ -73,6 +75,8 @@ type BudgetsBudget interface {
 	Node() constructs.Node
 	Notification() BudgetsBudgetNotificationList
 	NotificationInput() interface{}
+	PlannedLimit() BudgetsBudgetPlannedLimitList
+	PlannedLimitInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -123,20 +127,26 @@ type BudgetsBudget interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAutoAdjustData(value *BudgetsBudgetAutoAdjustData)
 	PutCostFilter(value interface{})
 	PutCostTypes(value *BudgetsBudgetCostTypes)
 	PutNotification(value interface{})
+	PutPlannedLimit(value interface{})
 	ResetAccountId()
+	ResetAutoAdjustData()
 	ResetCostFilter()
 	ResetCostFilters()
 	ResetCostTypes()
 	ResetId()
+	ResetLimitAmount()
+	ResetLimitUnit()
 	ResetName()
 	ResetNamePrefix()
 	ResetNotification()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPlannedLimit()
 	ResetTimePeriodEnd()
 	ResetTimePeriodStart()
 	SynthesizeAttributes() *map[string]interface{}
@@ -179,6 +189,26 @@ func (j *jsiiProxy_BudgetsBudget) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) AutoAdjustData() BudgetsBudgetAutoAdjustDataOutputReference {
+	var returns BudgetsBudgetAutoAdjustDataOutputReference
+	_jsii_.Get(
+		j,
+		"autoAdjustData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) AutoAdjustDataInput() *BudgetsBudgetAutoAdjustData {
+	var returns *BudgetsBudgetAutoAdjustData
+	_jsii_.Get(
+		j,
+		"autoAdjustDataInput",
 		&returns,
 	)
 	return returns
@@ -479,6 +509,26 @@ func (j *jsiiProxy_BudgetsBudget) NotificationInput() interface{} {
 	_jsii_.Get(
 		j,
 		"notificationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) PlannedLimit() BudgetsBudgetPlannedLimitList {
+	var returns BudgetsBudgetPlannedLimitList
+	_jsii_.Get(
+		j,
+		"plannedLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) PlannedLimitInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"plannedLimitInput",
 		&returns,
 	)
 	return returns
@@ -1048,6 +1098,17 @@ func (b *jsiiProxy_BudgetsBudget) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (b *jsiiProxy_BudgetsBudget) PutAutoAdjustData(value *BudgetsBudgetAutoAdjustData) {
+	if err := b.validatePutAutoAdjustDataParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putAutoAdjustData",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BudgetsBudget) PutCostFilter(value interface{}) {
 	if err := b.validatePutCostFilterParameters(value); err != nil {
 		panic(err)
@@ -1081,10 +1142,29 @@ func (b *jsiiProxy_BudgetsBudget) PutNotification(value interface{}) {
 	)
 }
 
+func (b *jsiiProxy_BudgetsBudget) PutPlannedLimit(value interface{}) {
+	if err := b.validatePutPlannedLimitParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putPlannedLimit",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BudgetsBudget) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) ResetAutoAdjustData() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetAutoAdjustData",
 		nil, // no parameters
 	)
 }
@@ -1121,6 +1201,22 @@ func (b *jsiiProxy_BudgetsBudget) ResetId() {
 	)
 }
 
+func (b *jsiiProxy_BudgetsBudget) ResetLimitAmount() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetLimitAmount",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) ResetLimitUnit() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetLimitUnit",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BudgetsBudget) ResetName() {
 	_jsii_.InvokeVoid(
 		b,
@@ -1149,6 +1245,14 @@ func (b *jsiiProxy_BudgetsBudget) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) ResetPlannedLimit() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetPlannedLimit",
 		nil, // no parameters
 	)
 }

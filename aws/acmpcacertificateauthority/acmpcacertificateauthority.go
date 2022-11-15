@@ -62,6 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUsageMode", GoMethod: "ResetUsageMode"},
 			_jsii_.MemberProperty{JsiiProperty: "revocationConfiguration", GoGetter: "RevocationConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "revocationConfigurationInput", GoGetter: "RevocationConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serial", GoGetter: "Serial"},
@@ -81,6 +82,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "usageMode", GoGetter: "UsageMode"},
+			_jsii_.MemberProperty{JsiiProperty: "usageModeInput", GoGetter: "UsageModeInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AcmpcaCertificateAuthority{}

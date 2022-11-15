@@ -77,6 +77,9 @@ type Ec2CapacityReservation interface {
 	SetOutpostArn(val *string)
 	OutpostArnInput() *string
 	OwnerId() *string
+	PlacementGroupArn() *string
+	SetPlacementGroupArn(val *string)
+	PlacementGroupArnInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -137,6 +140,7 @@ type Ec2CapacityReservation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPlacementGroupArn()
 	ResetTags()
 	ResetTagsAll()
 	ResetTenancy()
@@ -495,6 +499,26 @@ func (j *jsiiProxy_Ec2CapacityReservation) OwnerId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2CapacityReservation) PlacementGroupArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"placementGroupArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2CapacityReservation) PlacementGroupArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"placementGroupArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2CapacityReservation) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -808,6 +832,17 @@ func (j *jsiiProxy_Ec2CapacityReservation)SetOutpostArn(val *string) {
 	_jsii_.Set(
 		j,
 		"outpostArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2CapacityReservation)SetPlacementGroupArn(val *string) {
+	if err := j.validateSetPlacementGroupArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"placementGroupArn",
 		val,
 	)
 }
@@ -1152,6 +1187,14 @@ func (e *jsiiProxy_Ec2CapacityReservation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2CapacityReservation) ResetPlacementGroupArn() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetPlacementGroupArn",
 		nil, // no parameters
 	)
 }

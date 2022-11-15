@@ -243,6 +243,14 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) validateSetPreserveDevice
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) validateSetSecurityDescriptorCopyFlagsParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) validateSetTaskQueueingParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

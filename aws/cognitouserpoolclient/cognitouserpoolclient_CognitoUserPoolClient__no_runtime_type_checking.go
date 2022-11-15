@@ -80,6 +80,10 @@ func (j *jsiiProxy_CognitoUserPoolClient) validateSetAllowedOauthScopesParameter
 	return nil
 }
 
+func (j *jsiiProxy_CognitoUserPoolClient) validateSetAuthSessionValidityParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoUserPoolClient) validateSetCallbackUrlsParameters(val *[]*string) error {
 	return nil
 }

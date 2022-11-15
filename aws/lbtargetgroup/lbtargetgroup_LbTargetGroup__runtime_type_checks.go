@@ -133,6 +133,37 @@ func (l *jsiiProxy_LbTargetGroup) validatePutStickinessParameters(value *LbTarge
 	return nil
 }
 
+func (l *jsiiProxy_LbTargetGroup) validatePutTargetFailoverParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*LbTargetGroupTargetFailover:
+		value := value.(*[]*LbTargetGroupTargetFailover)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*LbTargetGroupTargetFailover:
+		value_ := value.([]*LbTargetGroupTargetFailover)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*LbTargetGroupTargetFailover; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func validateLbTargetGroup_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")

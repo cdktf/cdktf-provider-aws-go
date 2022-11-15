@@ -111,6 +111,17 @@ func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) validateOverrideLogicalIdP
 	return nil
 }
 
+func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) validatePutTimeoutsParameters(value *ElasticacheGlobalReplicationGroupTimeouts) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateElasticacheGlobalReplicationGroup_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
@@ -215,6 +226,14 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) validateSetIdParameters(va
 func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) validateSetNumNodeGroupsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

@@ -79,6 +79,8 @@ type VpcIpam interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() VpcIpamTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -105,6 +107,7 @@ type VpcIpam interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutOperatingRegions(value interface{})
+	PutTimeouts(value *VpcIpamTimeouts)
 	ResetCascade()
 	ResetDescription()
 	ResetId()
@@ -113,6 +116,7 @@ type VpcIpam interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -443,6 +447,26 @@ func (j *jsiiProxy_VpcIpam) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcIpam) Timeouts() VpcIpamTimeoutsOutputReference {
+	var returns VpcIpamTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcIpam) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -837,6 +861,17 @@ func (v *jsiiProxy_VpcIpam) PutOperatingRegions(value interface{}) {
 	)
 }
 
+func (v *jsiiProxy_VpcIpam) PutTimeouts(value *VpcIpamTimeouts) {
+	if err := v.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VpcIpam) ResetCascade() {
 	_jsii_.InvokeVoid(
 		v,
@@ -881,6 +916,14 @@ func (v *jsiiProxy_VpcIpam) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcIpam) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

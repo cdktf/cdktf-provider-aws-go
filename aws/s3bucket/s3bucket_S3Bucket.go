@@ -19,8 +19,6 @@ type S3Bucket interface {
 	SetAcl(val *string)
 	AclInput() *string
 	Arn() *string
-	SetArn(val *string)
-	ArnInput() *string
 	Bucket() *string
 	SetBucket(val *string)
 	BucketDomainName() *string
@@ -61,8 +59,6 @@ type S3Bucket interface {
 	Grant() S3BucketGrantList
 	GrantInput() interface{}
 	HostedZoneId() *string
-	SetHostedZoneId(val *string)
-	HostedZoneIdInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -159,13 +155,11 @@ type S3Bucket interface {
 	PutWebsite(value *S3BucketWebsite)
 	ResetAccelerationStatus()
 	ResetAcl()
-	ResetArn()
 	ResetBucket()
 	ResetBucketPrefix()
 	ResetCorsRule()
 	ResetForceDestroy()
 	ResetGrant()
-	ResetHostedZoneId()
 	ResetId()
 	ResetLifecycleRule()
 	ResetLogging()
@@ -243,16 +237,6 @@ func (j *jsiiProxy_S3Bucket) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_S3Bucket) ArnInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"arnInput",
 		&returns,
 	)
 	return returns
@@ -463,16 +447,6 @@ func (j *jsiiProxy_S3Bucket) HostedZoneId() *string {
 	_jsii_.Get(
 		j,
 		"hostedZoneId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_S3Bucket) HostedZoneIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"hostedZoneIdInput",
 		&returns,
 	)
 	return returns
@@ -920,17 +894,6 @@ func (j *jsiiProxy_S3Bucket)SetAcl(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3Bucket)SetArn(val *string) {
-	if err := j.validateSetArnParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"arn",
-		val,
-	)
-}
-
 func (j *jsiiProxy_S3Bucket)SetBucket(val *string) {
 	if err := j.validateSetBucketParameters(val); err != nil {
 		panic(err)
@@ -995,17 +958,6 @@ func (j *jsiiProxy_S3Bucket)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_S3Bucket)SetHostedZoneId(val *string) {
-	if err := j.validateSetHostedZoneIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"hostedZoneId",
 		val,
 	)
 }
@@ -1460,14 +1412,6 @@ func (s *jsiiProxy_S3Bucket) ResetAcl() {
 	)
 }
 
-func (s *jsiiProxy_S3Bucket) ResetArn() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetArn",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_S3Bucket) ResetBucket() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1504,14 +1448,6 @@ func (s *jsiiProxy_S3Bucket) ResetGrant() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetGrant",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_S3Bucket) ResetHostedZoneId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetHostedZoneId",
 		nil, // no parameters
 	)
 }

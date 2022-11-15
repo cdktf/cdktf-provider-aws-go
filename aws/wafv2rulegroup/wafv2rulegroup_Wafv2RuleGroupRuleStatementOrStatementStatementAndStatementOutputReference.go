@@ -29,7 +29,7 @@ type Wafv2RuleGroupRuleStatementOrStatementStatementAndStatementOutputReference 
 	Fqn() *string
 	InternalValue() *Wafv2RuleGroupRuleStatementOrStatementStatementAndStatement
 	SetInternalValue(val *Wafv2RuleGroupRuleStatementOrStatementStatementAndStatement)
-	Statement() Wafv2RuleGroupRuleStatementOrStatementStatementAndStatementStatementList
+	Statement() Wafv2RuleGroupRuleStatementOrStatementStatementList
 	StatementInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
@@ -129,8 +129,8 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleStatementOrStatementStatementAndStatementOu
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleStatementOrStatementStatementAndStatementOutputReference) Statement() Wafv2RuleGroupRuleStatementOrStatementStatementAndStatementStatementList {
-	var returns Wafv2RuleGroupRuleStatementOrStatementStatementAndStatementStatementList
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementOrStatementStatementAndStatementOutputReference) Statement() Wafv2RuleGroupRuleStatementOrStatementStatementList {
+	var returns Wafv2RuleGroupRuleStatementOrStatementStatementList
 	_jsii_.Get(
 		j,
 		"statement",

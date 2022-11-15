@@ -51,6 +51,9 @@ type LightsailInstance interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpAddressType() *string
+	SetIpAddressType(val *string)
+	IpAddressTypeInput() *string
 	Ipv6Address() *string
 	Ipv6Addresses() *[]*string
 	IsStaticIp() cdktf.IResolvable
@@ -121,6 +124,7 @@ type LightsailInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetIpAddressType()
 	ResetKeyPairName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -328,6 +332,26 @@ func (j *jsiiProxy_LightsailInstance) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LightsailInstance) IpAddressType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LightsailInstance) IpAddressTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressTypeInput",
 		&returns,
 	)
 	return returns
@@ -692,6 +716,17 @@ func (j *jsiiProxy_LightsailInstance)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_LightsailInstance)SetIpAddressType(val *string) {
+	if err := j.validateSetIpAddressTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipAddressType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LightsailInstance)SetKeyPairName(val *string) {
 	if err := j.validateSetKeyPairNameParameters(val); err != nil {
 		panic(err)
@@ -1009,6 +1044,14 @@ func (l *jsiiProxy_LightsailInstance) ResetId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LightsailInstance) ResetIpAddressType() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetIpAddressType",
 		nil, // no parameters
 	)
 }

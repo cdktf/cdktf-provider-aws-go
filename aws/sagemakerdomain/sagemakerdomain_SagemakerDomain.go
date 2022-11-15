@@ -15,6 +15,9 @@ type SagemakerDomain interface {
 	AppNetworkAccessType() *string
 	SetAppNetworkAccessType(val *string)
 	AppNetworkAccessTypeInput() *string
+	AppSecurityGroupManagement() *string
+	SetAppSecurityGroupManagement(val *string)
+	AppSecurityGroupManagementInput() *string
 	Arn() *string
 	AuthMode() *string
 	SetAuthMode(val *string)
@@ -40,6 +43,8 @@ type SagemakerDomain interface {
 	DomainName() *string
 	SetDomainName(val *string)
 	DomainNameInput() *string
+	DomainSettings() SagemakerDomainDomainSettingsOutputReference
+	DomainSettingsInput() *SagemakerDomainDomainSettings
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -73,6 +78,7 @@ type SagemakerDomain interface {
 	RawOverrides() interface{}
 	RetentionPolicy() SagemakerDomainRetentionPolicyOutputReference
 	RetentionPolicyInput() *SagemakerDomainRetentionPolicy
+	SecurityGroupIdForDomainBoundary() *string
 	SingleSignOnManagedApplicationInstanceId() *string
 	SubnetIds() *[]*string
 	SetSubnetIds(val *[]*string)
@@ -119,8 +125,11 @@ type SagemakerDomain interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDefaultUserSettings(value *SagemakerDomainDefaultUserSettings)
+	PutDomainSettings(value *SagemakerDomainDomainSettings)
 	PutRetentionPolicy(value *SagemakerDomainRetentionPolicy)
 	ResetAppNetworkAccessType()
+	ResetAppSecurityGroupManagement()
+	ResetDomainSettings()
 	ResetId()
 	ResetKmsKeyId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -159,6 +168,26 @@ func (j *jsiiProxy_SagemakerDomain) AppNetworkAccessTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"appNetworkAccessTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomain) AppSecurityGroupManagement() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appSecurityGroupManagement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomain) AppSecurityGroupManagementInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appSecurityGroupManagementInput",
 		&returns,
 	)
 	return returns
@@ -279,6 +308,26 @@ func (j *jsiiProxy_SagemakerDomain) DomainNameInput() *string {
 	_jsii_.Get(
 		j,
 		"domainNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomain) DomainSettings() SagemakerDomainDomainSettingsOutputReference {
+	var returns SagemakerDomainDomainSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"domainSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomain) DomainSettingsInput() *SagemakerDomainDomainSettings {
+	var returns *SagemakerDomainDomainSettings
+	_jsii_.Get(
+		j,
+		"domainSettingsInput",
 		&returns,
 	)
 	return returns
@@ -429,6 +478,16 @@ func (j *jsiiProxy_SagemakerDomain) RetentionPolicyInput() *SagemakerDomainReten
 	_jsii_.Get(
 		j,
 		"retentionPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomain) SecurityGroupIdForDomainBoundary() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityGroupIdForDomainBoundary",
 		&returns,
 	)
 	return returns
@@ -601,6 +660,17 @@ func (j *jsiiProxy_SagemakerDomain)SetAppNetworkAccessType(val *string) {
 	_jsii_.Set(
 		j,
 		"appNetworkAccessType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerDomain)SetAppSecurityGroupManagement(val *string) {
+	if err := j.validateSetAppSecurityGroupManagementParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"appSecurityGroupManagement",
 		val,
 	)
 }
@@ -997,6 +1067,17 @@ func (s *jsiiProxy_SagemakerDomain) PutDefaultUserSettings(value *SagemakerDomai
 	)
 }
 
+func (s *jsiiProxy_SagemakerDomain) PutDomainSettings(value *SagemakerDomainDomainSettings) {
+	if err := s.validatePutDomainSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putDomainSettings",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerDomain) PutRetentionPolicy(value *SagemakerDomainRetentionPolicy) {
 	if err := s.validatePutRetentionPolicyParameters(value); err != nil {
 		panic(err)
@@ -1012,6 +1093,22 @@ func (s *jsiiProxy_SagemakerDomain) ResetAppNetworkAccessType() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAppNetworkAccessType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerDomain) ResetAppSecurityGroupManagement() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAppSecurityGroupManagement",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerDomain) ResetDomainSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDomainSettings",
 		nil, // no parameters
 	)
 }

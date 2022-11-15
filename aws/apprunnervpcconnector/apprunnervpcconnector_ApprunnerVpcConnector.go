@@ -65,6 +65,9 @@ type ApprunnerVpcConnector interface {
 	SubnetsInput() *[]*string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -106,6 +109,7 @@ type ApprunnerVpcConnector interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
+	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -341,6 +345,26 @@ func (j *jsiiProxy_ApprunnerVpcConnector) Tags() *map[string]*string {
 	return returns
 }
 
+func (j *jsiiProxy_ApprunnerVpcConnector) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApprunnerVpcConnector) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApprunnerVpcConnector) TagsInput() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -546,6 +570,17 @@ func (j *jsiiProxy_ApprunnerVpcConnector)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApprunnerVpcConnector)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -809,6 +844,14 @@ func (a *jsiiProxy_ApprunnerVpcConnector) ResetTags() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApprunnerVpcConnector) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }

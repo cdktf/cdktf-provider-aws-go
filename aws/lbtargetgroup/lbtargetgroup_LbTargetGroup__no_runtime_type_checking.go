@@ -60,6 +60,10 @@ func (l *jsiiProxy_LbTargetGroup) validatePutStickinessParameters(value *LbTarge
 	return nil
 }
 
+func (l *jsiiProxy_LbTargetGroup) validatePutTargetFailoverParameters(value interface{}) error {
+	return nil
+}
+
 func validateLbTargetGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

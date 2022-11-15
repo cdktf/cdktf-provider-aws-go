@@ -10,8 +10,8 @@ import (
 
 type Wafv2RuleGroupRuleStatementAndStatementStatementOutputReference interface {
 	cdktf.ComplexObject
-	AndStatement() Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementOutputReference
-	AndStatementInput() *Wafv2RuleGroupRuleStatementAndStatementStatementAndStatement
+	AndStatement() Wafv2RuleGroupRuleStatementAndStatementOutputReference
+	AndStatementInput() *Wafv2RuleGroupRuleStatementAndStatement
 	ByteMatchStatement() Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementOutputReference
 	ByteMatchStatementInput() *Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatement
 	// the index of the complex object in a list.
@@ -85,7 +85,7 @@ type Wafv2RuleGroupRuleStatementAndStatementStatementOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAndStatement(value *Wafv2RuleGroupRuleStatementAndStatementStatementAndStatement)
+	PutAndStatement(value *Wafv2RuleGroupRuleStatementAndStatement)
 	PutByteMatchStatement(value *Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatement)
 	PutGeoMatchStatement(value *Wafv2RuleGroupRuleStatementAndStatementStatementGeoMatchStatement)
 	PutIpSetReferenceStatement(value *Wafv2RuleGroupRuleStatementAndStatementStatementIpSetReferenceStatement)
@@ -124,8 +124,8 @@ type jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementOutputReference s
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementOutputReference) AndStatement() Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementOutputReference {
-	var returns Wafv2RuleGroupRuleStatementAndStatementStatementAndStatementOutputReference
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementOutputReference) AndStatement() Wafv2RuleGroupRuleStatementAndStatementOutputReference {
+	var returns Wafv2RuleGroupRuleStatementAndStatementOutputReference
 	_jsii_.Get(
 		j,
 		"andStatement",
@@ -134,8 +134,8 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementOutputReference) AndStatementInput() *Wafv2RuleGroupRuleStatementAndStatementStatementAndStatement {
-	var returns *Wafv2RuleGroupRuleStatementAndStatementStatementAndStatement
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementOutputReference) AndStatementInput() *Wafv2RuleGroupRuleStatementAndStatement {
+	var returns *Wafv2RuleGroupRuleStatementAndStatement
 	_jsii_.Get(
 		j,
 		"andStatementInput",
@@ -703,7 +703,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementOutputReferen
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementOutputReference) PutAndStatement(value *Wafv2RuleGroupRuleStatementAndStatementStatementAndStatement) {
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementOutputReference) PutAndStatement(value *Wafv2RuleGroupRuleStatementAndStatement) {
 	if err := w.validatePutAndStatementParameters(value); err != nil {
 		panic(err)
 	}

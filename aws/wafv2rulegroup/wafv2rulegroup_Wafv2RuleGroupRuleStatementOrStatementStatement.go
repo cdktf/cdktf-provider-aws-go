@@ -29,7 +29,7 @@ type Wafv2RuleGroupRuleStatementOrStatementStatement struct {
 	// or_statement block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#or_statement Wafv2RuleGroup#or_statement}
-	OrStatement *Wafv2RuleGroupRuleStatementOrStatementStatementOrStatement `field:"optional" json:"orStatement" yaml:"orStatement"`
+	OrStatement *Wafv2RuleGroupRuleStatementOrStatement `field:"optional" json:"orStatement" yaml:"orStatement"`
 	// regex_match_statement block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#regex_match_statement Wafv2RuleGroup#regex_match_statement}

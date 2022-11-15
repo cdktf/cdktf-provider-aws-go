@@ -69,6 +69,7 @@ type DataAwsAcmpcaCertificateAuthority interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
+	UsageMode() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -411,6 +412,16 @@ func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthority) Type() *string {
 	_jsii_.Get(
 		j,
 		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthority) UsageMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usageMode",
 		&returns,
 	)
 	return returns

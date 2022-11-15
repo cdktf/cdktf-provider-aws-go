@@ -5,7 +5,7 @@ type Wafv2RuleGroupRuleStatementAndStatementStatement struct {
 	// and_statement block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#and_statement Wafv2RuleGroup#and_statement}
-	AndStatement *Wafv2RuleGroupRuleStatementAndStatementStatementAndStatement `field:"optional" json:"andStatement" yaml:"andStatement"`
+	AndStatement *Wafv2RuleGroupRuleStatementAndStatement `field:"optional" json:"andStatement" yaml:"andStatement"`
 	// byte_match_statement block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#byte_match_statement Wafv2RuleGroup#byte_match_statement}

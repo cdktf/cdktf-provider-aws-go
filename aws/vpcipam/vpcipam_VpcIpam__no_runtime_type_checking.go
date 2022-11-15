@@ -56,6 +56,10 @@ func (v *jsiiProxy_VpcIpam) validatePutOperatingRegionsParameters(value interfac
 	return nil
 }
 
+func (v *jsiiProxy_VpcIpam) validatePutTimeoutsParameters(value *VpcIpamTimeouts) error {
+	return nil
+}
+
 func validateVpcIpam_IsConstructParameters(x interface{}) error {
 	return nil
 }

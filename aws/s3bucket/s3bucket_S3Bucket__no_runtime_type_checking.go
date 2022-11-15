@@ -104,10 +104,6 @@ func (j *jsiiProxy_S3Bucket) validateSetAclParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_S3Bucket) validateSetArnParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_S3Bucket) validateSetBucketParameters(val *string) error {
 	return nil
 }
@@ -121,10 +117,6 @@ func (j *jsiiProxy_S3Bucket) validateSetConnectionParameters(val interface{}) er
 }
 
 func (j *jsiiProxy_S3Bucket) validateSetForceDestroyParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_S3Bucket) validateSetHostedZoneIdParameters(val *string) error {
 	return nil
 }
 

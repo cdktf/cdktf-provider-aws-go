@@ -84,6 +84,10 @@ func (j *jsiiProxy_ApprunnerVpcConnector) validateSetTagsParameters(val *map[str
 	return nil
 }
 
+func (j *jsiiProxy_ApprunnerVpcConnector) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerVpcConnector) validateSetVpcConnectorNameParameters(val *string) error {
 	return nil
 }

@@ -57,6 +57,7 @@ type AmiFromInstance interface {
 	ImageLocation() *string
 	ImageOwnerAlias() *string
 	ImageType() *string
+	ImdsSupport() *string
 	KernelId() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -419,6 +420,16 @@ func (j *jsiiProxy_AmiFromInstance) ImageType() *string {
 	_jsii_.Get(
 		j,
 		"imageType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AmiFromInstance) ImdsSupport() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"imdsSupport",
 		&returns,
 	)
 	return returns

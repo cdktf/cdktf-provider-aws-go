@@ -1,0 +1,6 @@
+package wafv2rulegroup
+
+
+type Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementXssMatchStatementFieldToMatchUriPath struct {
+}
+

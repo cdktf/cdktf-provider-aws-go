@@ -56,6 +56,10 @@ func (s *jsiiProxy_SagemakerDomain) validatePutDefaultUserSettingsParameters(val
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDomain) validatePutDomainSettingsParameters(value *SagemakerDomainDomainSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDomain) validatePutRetentionPolicyParameters(value *SagemakerDomainRetentionPolicy) error {
 	return nil
 }
@@ -65,6 +69,10 @@ func validateSagemakerDomain_IsConstructParameters(x interface{}) error {
 }
 
 func (j *jsiiProxy_SagemakerDomain) validateSetAppNetworkAccessTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerDomain) validateSetAppSecurityGroupManagementParameters(val *string) error {
 	return nil
 }
 

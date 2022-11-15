@@ -76,6 +76,10 @@ func (j *jsiiProxy_LightsailInstance) validateSetIdParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_LightsailInstance) validateSetIpAddressTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailInstance) validateSetKeyPairNameParameters(val *string) error {
 	return nil
 }

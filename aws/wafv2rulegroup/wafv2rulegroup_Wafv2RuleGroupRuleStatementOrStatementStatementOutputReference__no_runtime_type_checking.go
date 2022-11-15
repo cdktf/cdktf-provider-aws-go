@@ -68,7 +68,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementOrStatementStatementOutputReferenc
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleStatementOrStatementStatementOutputReference) validatePutOrStatementParameters(value *Wafv2RuleGroupRuleStatementOrStatementStatementOrStatement) error {
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementOrStatementStatementOutputReference) validatePutOrStatementParameters(value *Wafv2RuleGroupRuleStatementOrStatement) error {
 	return nil
 }
 

@@ -64,6 +64,10 @@ func (s *jsiiProxy_SagemakerWorkforce) validatePutSourceIpConfigParameters(value
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerWorkforce) validatePutWorkforceVpcConfigParameters(value *SagemakerWorkforceWorkforceVpcConfig) error {
+	return nil
+}
+
 func validateSagemakerWorkforce_IsConstructParameters(x interface{}) error {
 	return nil
 }

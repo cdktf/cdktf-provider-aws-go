@@ -48,7 +48,7 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConf
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsOutputReference) validateSetAsnParameters(val *float64) error {
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsOutputReference) validateSetAsnParameters(val *string) error {
 	return nil
 }
 

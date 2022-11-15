@@ -38,6 +38,8 @@ type BatchComputeEnvironment interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EcsClusterArn() *string
+	EksConfiguration() BatchComputeEnvironmentEksConfigurationOutputReference
+	EksConfigurationInput() *BatchComputeEnvironmentEksConfiguration
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -114,9 +116,11 @@ type BatchComputeEnvironment interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutComputeResources(value *BatchComputeEnvironmentComputeResources)
+	PutEksConfiguration(value *BatchComputeEnvironmentEksConfiguration)
 	ResetComputeEnvironmentName()
 	ResetComputeEnvironmentNamePrefix()
 	ResetComputeResources()
+	ResetEksConfiguration()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -265,6 +269,26 @@ func (j *jsiiProxy_BatchComputeEnvironment) EcsClusterArn() *string {
 	_jsii_.Get(
 		j,
 		"ecsClusterArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchComputeEnvironment) EksConfiguration() BatchComputeEnvironmentEksConfigurationOutputReference {
+	var returns BatchComputeEnvironmentEksConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"eksConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchComputeEnvironment) EksConfigurationInput() *BatchComputeEnvironmentEksConfiguration {
+	var returns *BatchComputeEnvironmentEksConfiguration
+	_jsii_.Get(
+		j,
+		"eksConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -942,6 +966,17 @@ func (b *jsiiProxy_BatchComputeEnvironment) PutComputeResources(value *BatchComp
 	)
 }
 
+func (b *jsiiProxy_BatchComputeEnvironment) PutEksConfiguration(value *BatchComputeEnvironmentEksConfiguration) {
+	if err := b.validatePutEksConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putEksConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BatchComputeEnvironment) ResetComputeEnvironmentName() {
 	_jsii_.InvokeVoid(
 		b,
@@ -962,6 +997,14 @@ func (b *jsiiProxy_BatchComputeEnvironment) ResetComputeResources() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetComputeResources",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BatchComputeEnvironment) ResetEksConfiguration() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetEksConfiguration",
 		nil, // no parameters
 	)
 }

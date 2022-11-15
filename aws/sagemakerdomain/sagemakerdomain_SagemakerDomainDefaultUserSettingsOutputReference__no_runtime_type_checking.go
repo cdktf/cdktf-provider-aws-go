@@ -44,11 +44,19 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validateIn
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutCanvasAppSettingsParameters(value *SagemakerDomainDefaultUserSettingsCanvasAppSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutJupyterServerAppSettingsParameters(value *SagemakerDomainDefaultUserSettingsJupyterServerAppSettings) error {
 	return nil
 }
 
 func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutKernelGatewayAppSettingsParameters(value *SagemakerDomainDefaultUserSettingsKernelGatewayAppSettings) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutRSessionAppSettingsParameters(value *SagemakerDomainDefaultUserSettingsRSessionAppSettings) error {
 	return nil
 }
 

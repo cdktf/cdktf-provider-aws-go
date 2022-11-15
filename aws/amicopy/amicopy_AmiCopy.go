@@ -63,6 +63,7 @@ type AmiCopy interface {
 	ImageLocation() *string
 	ImageOwnerAlias() *string
 	ImageType() *string
+	ImdsSupport() *string
 	KernelId() *string
 	KmsKeyId() *string
 	SetKmsKeyId(val *string)
@@ -470,6 +471,16 @@ func (j *jsiiProxy_AmiCopy) ImageType() *string {
 	_jsii_.Get(
 		j,
 		"imageType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AmiCopy) ImdsSupport() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"imdsSupport",
 		&returns,
 	)
 	return returns

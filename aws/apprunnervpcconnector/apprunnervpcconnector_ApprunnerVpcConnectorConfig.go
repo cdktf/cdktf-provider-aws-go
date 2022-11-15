@@ -32,5 +32,7 @@ type ApprunnerVpcConnectorConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_vpc_connector#tags ApprunnerVpcConnector#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/apprunner_vpc_connector#tags_all ApprunnerVpcConnector#tags_all}.
+	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 }
 

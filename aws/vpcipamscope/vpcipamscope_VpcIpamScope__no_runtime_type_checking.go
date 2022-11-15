@@ -52,6 +52,10 @@ func (v *jsiiProxy_VpcIpamScope) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (v *jsiiProxy_VpcIpamScope) validatePutTimeoutsParameters(value *VpcIpamScopeTimeouts) error {
+	return nil
+}
+
 func validateVpcIpamScope_IsConstructParameters(x interface{}) error {
 	return nil
 }

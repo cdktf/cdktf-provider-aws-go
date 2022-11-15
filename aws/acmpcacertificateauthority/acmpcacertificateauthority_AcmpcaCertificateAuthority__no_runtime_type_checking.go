@@ -104,6 +104,10 @@ func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetTypeParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetUsageModeParameters(val *string) error {
+	return nil
+}
+
 func validateNewAcmpcaCertificateAuthorityParameters(scope constructs.Construct, id *string, config *AcmpcaCertificateAuthorityConfig) error {
 	return nil
 }

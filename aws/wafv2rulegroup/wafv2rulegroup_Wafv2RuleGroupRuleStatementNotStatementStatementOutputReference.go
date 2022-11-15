@@ -39,8 +39,8 @@ type Wafv2RuleGroupRuleStatementNotStatementStatementOutputReference interface {
 	IpSetReferenceStatementInput() *Wafv2RuleGroupRuleStatementNotStatementStatementIpSetReferenceStatement
 	LabelMatchStatement() Wafv2RuleGroupRuleStatementNotStatementStatementLabelMatchStatementOutputReference
 	LabelMatchStatementInput() *Wafv2RuleGroupRuleStatementNotStatementStatementLabelMatchStatement
-	NotStatement() Wafv2RuleGroupRuleStatementNotStatementStatementNotStatementOutputReference
-	NotStatementInput() *Wafv2RuleGroupRuleStatementNotStatementStatementNotStatement
+	NotStatement() Wafv2RuleGroupRuleStatementNotStatementOutputReference
+	NotStatementInput() *Wafv2RuleGroupRuleStatementNotStatement
 	OrStatement() Wafv2RuleGroupRuleStatementNotStatementStatementOrStatementOutputReference
 	OrStatementInput() *Wafv2RuleGroupRuleStatementNotStatementStatementOrStatement
 	RegexMatchStatement() Wafv2RuleGroupRuleStatementNotStatementStatementRegexMatchStatementOutputReference
@@ -90,7 +90,7 @@ type Wafv2RuleGroupRuleStatementNotStatementStatementOutputReference interface {
 	PutGeoMatchStatement(value *Wafv2RuleGroupRuleStatementNotStatementStatementGeoMatchStatement)
 	PutIpSetReferenceStatement(value *Wafv2RuleGroupRuleStatementNotStatementStatementIpSetReferenceStatement)
 	PutLabelMatchStatement(value *Wafv2RuleGroupRuleStatementNotStatementStatementLabelMatchStatement)
-	PutNotStatement(value *Wafv2RuleGroupRuleStatementNotStatementStatementNotStatement)
+	PutNotStatement(value *Wafv2RuleGroupRuleStatementNotStatement)
 	PutOrStatement(value *Wafv2RuleGroupRuleStatementNotStatementStatementOrStatement)
 	PutRegexMatchStatement(value *Wafv2RuleGroupRuleStatementNotStatementStatementRegexMatchStatement)
 	PutRegexPatternSetReferenceStatement(value *Wafv2RuleGroupRuleStatementNotStatementStatementRegexPatternSetReferenceStatement)
@@ -274,8 +274,8 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementStatementOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementStatementOutputReference) NotStatement() Wafv2RuleGroupRuleStatementNotStatementStatementNotStatementOutputReference {
-	var returns Wafv2RuleGroupRuleStatementNotStatementStatementNotStatementOutputReference
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementStatementOutputReference) NotStatement() Wafv2RuleGroupRuleStatementNotStatementOutputReference {
+	var returns Wafv2RuleGroupRuleStatementNotStatementOutputReference
 	_jsii_.Get(
 		j,
 		"notStatement",
@@ -284,8 +284,8 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementStatementOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementStatementOutputReference) NotStatementInput() *Wafv2RuleGroupRuleStatementNotStatementStatementNotStatement {
-	var returns *Wafv2RuleGroupRuleStatementNotStatementStatementNotStatement
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementStatementOutputReference) NotStatementInput() *Wafv2RuleGroupRuleStatementNotStatement {
+	var returns *Wafv2RuleGroupRuleStatementNotStatement
 	_jsii_.Get(
 		j,
 		"notStatementInput",
@@ -758,7 +758,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementStatementOutputReferen
 	)
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementStatementOutputReference) PutNotStatement(value *Wafv2RuleGroupRuleStatementNotStatementStatementNotStatement) {
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementStatementOutputReference) PutNotStatement(value *Wafv2RuleGroupRuleStatementNotStatement) {
 	if err := w.validatePutNotStatementParameters(value); err != nil {
 		panic(err)
 	}

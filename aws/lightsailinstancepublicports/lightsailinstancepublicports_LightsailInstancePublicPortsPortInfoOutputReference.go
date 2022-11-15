@@ -35,6 +35,9 @@ type LightsailInstancePublicPortsPortInfoOutputReference interface {
 	FromPortInput() *float64
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Ipv6Cidrs() *[]*string
+	SetIpv6Cidrs(val *[]*string)
+	Ipv6CidrsInput() *[]*string
 	Protocol() *string
 	SetProtocol(val *string)
 	ProtocolInput() *string
@@ -74,6 +77,7 @@ type LightsailInstancePublicPortsPortInfoOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCidrs()
+	ResetIpv6Cidrs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +178,26 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) Internal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) Ipv6Cidrs() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipv6Cidrs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) Ipv6CidrsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipv6CidrsInput",
 		&returns,
 	)
 	return returns
@@ -318,6 +342,17 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetIntern
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetIpv6Cidrs(val *[]*string) {
+	if err := j.validateSetIpv6CidrsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Cidrs",
 		val,
 	)
 }
@@ -556,6 +591,14 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) ResetCid
 	_jsii_.InvokeVoid(
 		l,
 		"resetCidrs",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) ResetIpv6Cidrs() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetIpv6Cidrs",
 		nil, // no parameters
 	)
 }

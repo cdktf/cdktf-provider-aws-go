@@ -1,6 +1,0 @@
-package wafv2rulegroup
-
-
-type Wafv2RuleGroupRuleStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchQueryString struct {
-}
-

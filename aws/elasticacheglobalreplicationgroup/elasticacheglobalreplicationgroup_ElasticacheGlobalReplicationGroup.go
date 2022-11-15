@@ -51,6 +51,7 @@ type ElasticacheGlobalReplicationGroup interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GlobalNodeGroups() ElasticacheGlobalReplicationGroupGlobalNodeGroupsList
 	GlobalReplicationGroupDescription() *string
 	SetGlobalReplicationGroupDescription(val *string)
 	GlobalReplicationGroupDescriptionInput() *string
@@ -67,6 +68,9 @@ type ElasticacheGlobalReplicationGroup interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	NumNodeGroups() *float64
+	SetNumNodeGroups(val *float64)
+	NumNodeGroupsInput() *float64
 	ParameterGroupName() *string
 	SetParameterGroupName(val *string)
 	ParameterGroupNameInput() *string
@@ -89,6 +93,8 @@ type ElasticacheGlobalReplicationGroup interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() ElasticacheGlobalReplicationGroupTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	TransitEncryptionEnabled() cdktf.IResolvable
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -115,15 +121,18 @@ type ElasticacheGlobalReplicationGroup interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *ElasticacheGlobalReplicationGroupTimeouts)
 	ResetAutomaticFailoverEnabled()
 	ResetCacheNodeType()
 	ResetEngineVersion()
 	ResetGlobalReplicationGroupDescription()
 	ResetId()
+	ResetNumNodeGroups()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameterGroupName()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -339,6 +348,16 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) FriendlyUniqueId() *string
 	return returns
 }
 
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) GlobalNodeGroups() ElasticacheGlobalReplicationGroupGlobalNodeGroupsList {
+	var returns ElasticacheGlobalReplicationGroupGlobalNodeGroupsList
+	_jsii_.Get(
+		j,
+		"globalNodeGroups",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) GlobalReplicationGroupDescription() *string {
 	var returns *string
 	_jsii_.Get(
@@ -424,6 +443,26 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) NumNodeGroups() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"numNodeGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) NumNodeGroupsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"numNodeGroupsInput",
 		&returns,
 	)
 	return returns
@@ -524,6 +563,26 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) TerraformResourceType() *s
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) Timeouts() ElasticacheGlobalReplicationGroupTimeoutsOutputReference {
+	var returns ElasticacheGlobalReplicationGroupTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -677,6 +736,17 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroup)SetLifecycle(val *cdktf.Ter
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroup)SetNumNodeGroups(val *float64) {
+	if err := j.validateSetNumNodeGroupsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"numNodeGroups",
 		val,
 	)
 }
@@ -950,6 +1020,17 @@ func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) OverrideLogicalId(newLogic
 	)
 }
 
+func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) PutTimeouts(value *ElasticacheGlobalReplicationGroupTimeouts) {
+	if err := e.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) ResetAutomaticFailoverEnabled() {
 	_jsii_.InvokeVoid(
 		e,
@@ -990,6 +1071,14 @@ func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) ResetId() {
 	)
 }
 
+func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) ResetNumNodeGroups() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetNumNodeGroups",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1002,6 +1091,14 @@ func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) ResetParameterGroupName() 
 	_jsii_.InvokeVoid(
 		e,
 		"resetParameterGroupName",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

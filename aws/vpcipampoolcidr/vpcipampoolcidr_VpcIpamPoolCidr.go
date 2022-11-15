@@ -69,6 +69,8 @@ type VpcIpamPoolCidr interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() VpcIpamPoolCidrTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -95,12 +97,14 @@ type VpcIpamPoolCidr interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCidrAuthorizationContext(value *VpcIpamPoolCidrCidrAuthorizationContext)
+	PutTimeouts(value *VpcIpamPoolCidrTimeouts)
 	ResetCidr()
 	ResetCidrAuthorizationContext()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -351,6 +355,26 @@ func (j *jsiiProxy_VpcIpamPoolCidr) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcIpamPoolCidr) Timeouts() VpcIpamPoolCidrTimeoutsOutputReference {
+	var returns VpcIpamPoolCidrTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcIpamPoolCidr) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -723,6 +747,17 @@ func (v *jsiiProxy_VpcIpamPoolCidr) PutCidrAuthorizationContext(value *VpcIpamPo
 	)
 }
 
+func (v *jsiiProxy_VpcIpamPoolCidr) PutTimeouts(value *VpcIpamPoolCidrTimeouts) {
+	if err := v.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VpcIpamPoolCidr) ResetCidr() {
 	_jsii_.InvokeVoid(
 		v,
@@ -751,6 +786,14 @@ func (v *jsiiProxy_VpcIpamPoolCidr) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcIpamPoolCidr) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

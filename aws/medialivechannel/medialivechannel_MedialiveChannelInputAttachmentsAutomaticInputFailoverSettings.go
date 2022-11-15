@@ -1,0 +1,16 @@
+package medialivechannel
+
+
+type MedialiveChannelInputAttachmentsAutomaticInputFailoverSettings struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#secondary_input_id MedialiveChannel#secondary_input_id}.
+	SecondaryInputId *string `field:"required" json:"secondaryInputId" yaml:"secondaryInputId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#error_clear_time_msec MedialiveChannel#error_clear_time_msec}.
+	ErrorClearTimeMsec *float64 `field:"optional" json:"errorClearTimeMsec" yaml:"errorClearTimeMsec"`
+	// failover_condition block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#failover_condition MedialiveChannel#failover_condition}
+	FailoverCondition interface{} `field:"optional" json:"failoverCondition" yaml:"failoverCondition"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#input_preference MedialiveChannel#input_preference}.
+	InputPreference *string `field:"optional" json:"inputPreference" yaml:"inputPreference"`
+}
+

@@ -60,11 +60,19 @@ func (j *jsiiProxy_DataAwsOutpostsAssets) validateSetArnParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOutpostsAssets) validateSetHostIdFilterParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsOutpostsAssets) validateSetIdParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataAwsOutpostsAssets) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsOutpostsAssets) validateSetStatusIdFilterParameters(val *[]*string) error {
 	return nil
 }
 

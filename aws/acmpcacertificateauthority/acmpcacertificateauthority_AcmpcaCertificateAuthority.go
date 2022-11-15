@@ -90,6 +90,9 @@ type AcmpcaCertificateAuthority interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	UsageMode() *string
+	SetUsageMode(val *string)
+	UsageModeInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -129,6 +132,7 @@ type AcmpcaCertificateAuthority interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetType()
+	ResetUsageMode()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -564,6 +568,26 @@ func (j *jsiiProxy_AcmpcaCertificateAuthority) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AcmpcaCertificateAuthority) UsageMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usageMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AcmpcaCertificateAuthority) UsageModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"usageModeInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority aws_acmpca_certificate_authority} Resource.
 func NewAcmpcaCertificateAuthority(scope constructs.Construct, id *string, config *AcmpcaCertificateAuthorityConfig) AcmpcaCertificateAuthority {
@@ -721,6 +745,17 @@ func (j *jsiiProxy_AcmpcaCertificateAuthority)SetType(val *string) {
 	_jsii_.Set(
 		j,
 		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AcmpcaCertificateAuthority)SetUsageMode(val *string) {
+	if err := j.validateSetUsageModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"usageMode",
 		val,
 	)
 }
@@ -1054,6 +1089,14 @@ func (a *jsiiProxy_AcmpcaCertificateAuthority) ResetType() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetType",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AcmpcaCertificateAuthority) ResetUsageMode() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUsageMode",
 		nil, // no parameters
 	)
 }

@@ -1,0 +1,6 @@
+package wafv2rulegroup
+
+
+type Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementOrStatementStatementRegexMatchStatementFieldToMatchAllQueryArguments struct {
+}
+

@@ -53,6 +53,9 @@ type SfnStateMachine interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NamePrefix() *string
+	SetNamePrefix(val *string)
+	NamePrefixInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -115,6 +118,8 @@ type SfnStateMachine interface {
 	PutTracingConfiguration(value *SfnStateMachineTracingConfiguration)
 	ResetId()
 	ResetLoggingConfiguration()
+	ResetName()
+	ResetNamePrefix()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -322,6 +327,26 @@ func (j *jsiiProxy_SfnStateMachine) NameInput() *string {
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfnStateMachine) NamePrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfnStateMachine) NamePrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefixInput",
 		&returns,
 	)
 	return returns
@@ -612,6 +637,17 @@ func (j *jsiiProxy_SfnStateMachine)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SfnStateMachine)SetNamePrefix(val *string) {
+	if err := j.validateSetNamePrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namePrefix",
 		val,
 	)
 }
@@ -941,6 +977,22 @@ func (s *jsiiProxy_SfnStateMachine) ResetLoggingConfiguration() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetLoggingConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SfnStateMachine) ResetName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SfnStateMachine) ResetNamePrefix() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNamePrefix",
 		nil, // no parameters
 	)
 }

@@ -10,9 +10,9 @@ import (
 
 type DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsOutputReference interface {
 	cdktf.ComplexObject
-	Asn() *float64
-	SetAsn(val *float64)
-	AsnInput() *float64
+	Asn() *string
+	SetAsn(val *string)
+	AsnInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -87,8 +87,8 @@ type jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigur
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsOutputReference) Asn() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsOutputReference) Asn() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"asn",
@@ -97,8 +97,8 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsOutputReference) AsnInput() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsOutputReference) AsnInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"asnInput",
@@ -245,7 +245,7 @@ func NewDataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEd
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsOutputReference)SetAsn(val *float64) {
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentCoreNetworkConfigurationEdgeLocationsOutputReference)SetAsn(val *string) {
 	if err := j.validateSetAsnParameters(val); err != nil {
 		panic(err)
 	}

@@ -90,6 +90,17 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStateme
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementOutputReference) validatePutAndStatementParameters(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementAndStatement) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementOutputReference) validatePutByteMatchStatementParameters(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementByteMatchStatement) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -124,6 +135,28 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStateme
 }
 
 func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementOutputReference) validatePutLabelMatchStatementParameters(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementLabelMatchStatement) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementOutputReference) validatePutNotStatementParameters(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatement) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementOutputReference) validatePutOrStatementParameters(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementOrStatement) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

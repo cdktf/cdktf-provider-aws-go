@@ -84,10 +84,6 @@ func (j *jsiiProxy_SecretsmanagerSecretRotation) validateSetSecretIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_SecretsmanagerSecretRotation) validateSetTagsParameters(val *map[string]*string) error {
-	return nil
-}
-
 func validateNewSecretsmanagerSecretRotationParameters(scope constructs.Construct, id *string, config *SecretsmanagerSecretRotationConfig) error {
 	return nil
 }

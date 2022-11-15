@@ -59,6 +59,9 @@ type Sesv2DedicatedIpPool interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ScalingMode() *string
+	SetScalingMode(val *string)
+	ScalingModeInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -103,6 +106,7 @@ type Sesv2DedicatedIpPool interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetScalingMode()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -296,6 +300,26 @@ func (j *jsiiProxy_Sesv2DedicatedIpPool) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Sesv2DedicatedIpPool) ScalingMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scalingMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Sesv2DedicatedIpPool) ScalingModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scalingModeInput",
 		&returns,
 	)
 	return returns
@@ -504,6 +528,17 @@ func (j *jsiiProxy_Sesv2DedicatedIpPool)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Sesv2DedicatedIpPool)SetScalingMode(val *string) {
+	if err := j.validateSetScalingModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scalingMode",
 		val,
 	)
 }
@@ -781,6 +816,14 @@ func (s *jsiiProxy_Sesv2DedicatedIpPool) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Sesv2DedicatedIpPool) ResetScalingMode() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetScalingMode",
 		nil, // no parameters
 	)
 }

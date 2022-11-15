@@ -84,6 +84,10 @@ func (j *jsiiProxy_SfnStateMachine) validateSetNameParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_SfnStateMachine) validateSetNamePrefixParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SfnStateMachine) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

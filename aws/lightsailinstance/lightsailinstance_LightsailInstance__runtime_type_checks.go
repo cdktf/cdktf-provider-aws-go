@@ -184,6 +184,14 @@ func (j *jsiiProxy_LightsailInstance) validateSetIdParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_LightsailInstance) validateSetIpAddressTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LightsailInstance) validateSetKeyPairNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

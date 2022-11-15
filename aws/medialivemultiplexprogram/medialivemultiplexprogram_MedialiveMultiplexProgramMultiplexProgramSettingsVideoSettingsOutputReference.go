@@ -34,6 +34,8 @@ type MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReferen
 	SetInternalValue(val *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings)
 	StatemuxSettings() MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsOutputReference
 	StatemuxSettingsInput() *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings
+	StatmuxSettings() MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference
+	StatmuxSettingsInput() *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,8 +69,10 @@ type MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReferen
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutStatemuxSettings(value *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings)
+	PutStatmuxSettings(value *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings)
 	ResetConstantBitrate()
 	ResetStatemuxSettings()
+	ResetStatmuxSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -169,6 +173,26 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 	_jsii_.Get(
 		j,
 		"statemuxSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) StatmuxSettings() MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference {
+	var returns MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"statmuxSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) StatmuxSettingsInput() *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings {
+	var returns *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings
+	_jsii_.Get(
+		j,
+		"statmuxSettingsInput",
 		&returns,
 	)
 	return returns
@@ -485,6 +509,17 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 	)
 }
 
+func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) PutStatmuxSettings(value *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings) {
+	if err := m.validatePutStatmuxSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putStatmuxSettings",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) ResetConstantBitrate() {
 	_jsii_.InvokeVoid(
 		m,
@@ -497,6 +532,14 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 	_jsii_.InvokeVoid(
 		m,
 		"resetStatemuxSettings",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) ResetStatmuxSettings() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetStatmuxSettings",
 		nil, // no parameters
 	)
 }

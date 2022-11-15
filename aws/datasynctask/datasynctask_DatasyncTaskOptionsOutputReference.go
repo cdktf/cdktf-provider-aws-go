@@ -56,6 +56,9 @@ type DatasyncTaskOptionsOutputReference interface {
 	PreserveDevices() *string
 	SetPreserveDevices(val *string)
 	PreserveDevicesInput() *string
+	SecurityDescriptorCopyFlags() *string
+	SetSecurityDescriptorCopyFlags(val *string)
+	SecurityDescriptorCopyFlagsInput() *string
 	TaskQueueing() *string
 	SetTaskQueueing(val *string)
 	TaskQueueingInput() *string
@@ -109,6 +112,7 @@ type DatasyncTaskOptionsOutputReference interface {
 	ResetPosixPermissions()
 	ResetPreserveDeletedFiles()
 	ResetPreserveDevices()
+	ResetSecurityDescriptorCopyFlags()
 	ResetTaskQueueing()
 	ResetTransferMode()
 	ResetUid()
@@ -353,6 +357,26 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) PreserveDevicesInput() *s
 	_jsii_.Get(
 		j,
 		"preserveDevicesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) SecurityDescriptorCopyFlags() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityDescriptorCopyFlags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) SecurityDescriptorCopyFlagsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityDescriptorCopyFlagsInput",
 		&returns,
 	)
 	return returns
@@ -614,6 +638,17 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetPreserveDevices(val *st
 	_jsii_.Set(
 		j,
 		"preserveDevices",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetSecurityDescriptorCopyFlags(val *string) {
+	if err := j.validateSetSecurityDescriptorCopyFlagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityDescriptorCopyFlags",
 		val,
 	)
 }
@@ -938,6 +973,14 @@ func (d *jsiiProxy_DatasyncTaskOptionsOutputReference) ResetPreserveDevices() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPreserveDevices",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatasyncTaskOptionsOutputReference) ResetSecurityDescriptorCopyFlags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSecurityDescriptorCopyFlags",
 		nil, // no parameters
 	)
 }

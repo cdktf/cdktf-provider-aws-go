@@ -56,6 +56,10 @@ func (v *jsiiProxy_VpcIpamPoolCidr) validatePutCidrAuthorizationContextParameter
 	return nil
 }
 
+func (v *jsiiProxy_VpcIpamPoolCidr) validatePutTimeoutsParameters(value *VpcIpamPoolCidrTimeouts) error {
+	return nil
+}
+
 func validateVpcIpamPoolCidr_IsConstructParameters(x interface{}) error {
 	return nil
 }

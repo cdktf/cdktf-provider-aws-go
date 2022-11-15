@@ -72,6 +72,8 @@ type SagemakerWorkforce interface {
 	WorkforceName() *string
 	SetWorkforceName(val *string)
 	WorkforceNameInput() *string
+	WorkforceVpcConfig() SagemakerWorkforceWorkforceVpcConfigOutputReference
+	WorkforceVpcConfigInput() *SagemakerWorkforceWorkforceVpcConfig
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -100,6 +102,7 @@ type SagemakerWorkforce interface {
 	PutCognitoConfig(value *SagemakerWorkforceCognitoConfig)
 	PutOidcConfig(value *SagemakerWorkforceOidcConfig)
 	PutSourceIpConfig(value *SagemakerWorkforceSourceIpConfig)
+	PutWorkforceVpcConfig(value *SagemakerWorkforceWorkforceVpcConfig)
 	ResetCognitoConfig()
 	ResetId()
 	ResetOidcConfig()
@@ -107,6 +110,7 @@ type SagemakerWorkforce interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSourceIpConfig()
+	ResetWorkforceVpcConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -397,6 +401,26 @@ func (j *jsiiProxy_SagemakerWorkforce) WorkforceNameInput() *string {
 	_jsii_.Get(
 		j,
 		"workforceNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerWorkforce) WorkforceVpcConfig() SagemakerWorkforceWorkforceVpcConfigOutputReference {
+	var returns SagemakerWorkforceWorkforceVpcConfigOutputReference
+	_jsii_.Get(
+		j,
+		"workforceVpcConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerWorkforce) WorkforceVpcConfigInput() *SagemakerWorkforceWorkforceVpcConfig {
+	var returns *SagemakerWorkforceWorkforceVpcConfig
+	_jsii_.Get(
+		j,
+		"workforceVpcConfigInput",
 		&returns,
 	)
 	return returns
@@ -780,6 +804,17 @@ func (s *jsiiProxy_SagemakerWorkforce) PutSourceIpConfig(value *SagemakerWorkfor
 	)
 }
 
+func (s *jsiiProxy_SagemakerWorkforce) PutWorkforceVpcConfig(value *SagemakerWorkforceWorkforceVpcConfig) {
+	if err := s.validatePutWorkforceVpcConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putWorkforceVpcConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerWorkforce) ResetCognitoConfig() {
 	_jsii_.InvokeVoid(
 		s,
@@ -816,6 +851,14 @@ func (s *jsiiProxy_SagemakerWorkforce) ResetSourceIpConfig() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSourceIpConfig",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerWorkforce) ResetWorkforceVpcConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetWorkforceVpcConfig",
 		nil, // no parameters
 	)
 }

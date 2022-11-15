@@ -10,6 +10,8 @@ import (
 
 type Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOutputReference interface {
 	cdktf.ComplexObject
+	AndStatement() Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementOutputReference
+	AndStatementInput() *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatement
 	ByteMatchStatement() Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementOutputReference
 	ByteMatchStatementInput() *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatement
 	// the index of the complex object in a list.
@@ -37,6 +39,10 @@ type Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatement
 	IpSetReferenceStatementInput() *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementIpSetReferenceStatement
 	LabelMatchStatement() Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementLabelMatchStatementOutputReference
 	LabelMatchStatementInput() *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementLabelMatchStatement
+	NotStatement() Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementOutputReference
+	NotStatementInput() *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatement
+	OrStatement() Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementOutputReference
+	OrStatementInput() *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatement
 	RegexMatchStatement() Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexMatchStatementOutputReference
 	RegexMatchStatementInput() *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexMatchStatement
 	RegexPatternSetReferenceStatement() Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatementOutputReference
@@ -79,19 +85,25 @@ type Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatement
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAndStatement(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatement)
 	PutByteMatchStatement(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatement)
 	PutGeoMatchStatement(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementGeoMatchStatement)
 	PutIpSetReferenceStatement(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementIpSetReferenceStatement)
 	PutLabelMatchStatement(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementLabelMatchStatement)
+	PutNotStatement(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatement)
+	PutOrStatement(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatement)
 	PutRegexMatchStatement(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexMatchStatement)
 	PutRegexPatternSetReferenceStatement(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementRegexPatternSetReferenceStatement)
 	PutSizeConstraintStatement(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSizeConstraintStatement)
 	PutSqliMatchStatement(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementSqliMatchStatement)
 	PutXssMatchStatement(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementXssMatchStatement)
+	ResetAndStatement()
 	ResetByteMatchStatement()
 	ResetGeoMatchStatement()
 	ResetIpSetReferenceStatement()
 	ResetLabelMatchStatement()
+	ResetNotStatement()
+	ResetOrStatement()
 	ResetRegexMatchStatement()
 	ResetRegexPatternSetReferenceStatement()
 	ResetSizeConstraintStatement()
@@ -110,6 +122,26 @@ type Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatement
 // The jsii proxy struct for Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOutputReference
 type jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOutputReference) AndStatement() Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementOutputReference {
+	var returns Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatementOutputReference
+	_jsii_.Get(
+		j,
+		"andStatement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOutputReference) AndStatementInput() *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatement {
+	var returns *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatement
+	_jsii_.Get(
+		j,
+		"andStatementInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOutputReference) ByteMatchStatement() Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatementOutputReference {
@@ -237,6 +269,46 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStateme
 	_jsii_.Get(
 		j,
 		"labelMatchStatementInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOutputReference) NotStatement() Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementOutputReference {
+	var returns Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatementOutputReference
+	_jsii_.Get(
+		j,
+		"notStatement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOutputReference) NotStatementInput() *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatement {
+	var returns *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatement
+	_jsii_.Get(
+		j,
+		"notStatementInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOutputReference) OrStatement() Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementOutputReference {
+	var returns Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatementOutputReference
+	_jsii_.Get(
+		j,
+		"orStatement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOutputReference) OrStatementInput() *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatement {
+	var returns *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatement
+	_jsii_.Get(
+		j,
+		"orStatementInput",
 		&returns,
 	)
 	return returns
@@ -631,6 +703,17 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStateme
 	return returns
 }
 
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOutputReference) PutAndStatement(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementAndStatement) {
+	if err := w.validatePutAndStatementParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putAndStatement",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOutputReference) PutByteMatchStatement(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementByteMatchStatement) {
 	if err := w.validatePutByteMatchStatementParameters(value); err != nil {
 		panic(err)
@@ -671,6 +754,28 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStateme
 	_jsii_.InvokeVoid(
 		w,
 		"putLabelMatchStatement",
+		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOutputReference) PutNotStatement(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementNotStatement) {
+	if err := w.validatePutNotStatementParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putNotStatement",
+		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOutputReference) PutOrStatement(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOrStatement) {
+	if err := w.validatePutOrStatementParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putOrStatement",
 		[]interface{}{value},
 	)
 }
@@ -730,6 +835,14 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStateme
 	)
 }
 
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOutputReference) ResetAndStatement() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAndStatement",
+		nil, // no parameters
+	)
+}
+
 func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOutputReference) ResetByteMatchStatement() {
 	_jsii_.InvokeVoid(
 		w,
@@ -758,6 +871,22 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStateme
 	_jsii_.InvokeVoid(
 		w,
 		"resetLabelMatchStatement",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOutputReference) ResetNotStatement() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetNotStatement",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementNotStatementStatementOutputReference) ResetOrStatement() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetOrStatement",
 		nil, // no parameters
 	)
 }

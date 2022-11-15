@@ -23,8 +23,6 @@ type S3BucketConfig struct {
 	AccelerationStatus *string `field:"optional" json:"accelerationStatus" yaml:"accelerationStatus"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#acl S3Bucket#acl}.
 	Acl *string `field:"optional" json:"acl" yaml:"acl"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#arn S3Bucket#arn}.
-	Arn *string `field:"optional" json:"arn" yaml:"arn"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#bucket S3Bucket#bucket}.
 	Bucket *string `field:"optional" json:"bucket" yaml:"bucket"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#bucket_prefix S3Bucket#bucket_prefix}.
@@ -39,8 +37,6 @@ type S3BucketConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#grant S3Bucket#grant}
 	Grant interface{} `field:"optional" json:"grant" yaml:"grant"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#hosted_zone_id S3Bucket#hosted_zone_id}.
-	HostedZoneId *string `field:"optional" json:"hostedZoneId" yaml:"hostedZoneId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket#id S3Bucket#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

@@ -10,6 +10,8 @@ import (
 
 type SagemakerDomainDefaultUserSettingsOutputReference interface {
 	cdktf.ComplexObject
+	CanvasAppSettings() SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference
+	CanvasAppSettingsInput() *SagemakerDomainDefaultUserSettingsCanvasAppSettings
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,6 +38,8 @@ type SagemakerDomainDefaultUserSettingsOutputReference interface {
 	JupyterServerAppSettingsInput() *SagemakerDomainDefaultUserSettingsJupyterServerAppSettings
 	KernelGatewayAppSettings() SagemakerDomainDefaultUserSettingsKernelGatewayAppSettingsOutputReference
 	KernelGatewayAppSettingsInput() *SagemakerDomainDefaultUserSettingsKernelGatewayAppSettings
+	RSessionAppSettings() SagemakerDomainDefaultUserSettingsRSessionAppSettingsOutputReference
+	RSessionAppSettingsInput() *SagemakerDomainDefaultUserSettingsRSessionAppSettings
 	SecurityGroups() *[]*string
 	SetSecurityGroups(val *[]*string)
 	SecurityGroupsInput() *[]*string
@@ -75,12 +79,16 @@ type SagemakerDomainDefaultUserSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCanvasAppSettings(value *SagemakerDomainDefaultUserSettingsCanvasAppSettings)
 	PutJupyterServerAppSettings(value *SagemakerDomainDefaultUserSettingsJupyterServerAppSettings)
 	PutKernelGatewayAppSettings(value *SagemakerDomainDefaultUserSettingsKernelGatewayAppSettings)
+	PutRSessionAppSettings(value *SagemakerDomainDefaultUserSettingsRSessionAppSettings)
 	PutSharingSettings(value *SagemakerDomainDefaultUserSettingsSharingSettings)
 	PutTensorBoardAppSettings(value *SagemakerDomainDefaultUserSettingsTensorBoardAppSettings)
+	ResetCanvasAppSettings()
 	ResetJupyterServerAppSettings()
 	ResetKernelGatewayAppSettings()
+	ResetRSessionAppSettings()
 	ResetSecurityGroups()
 	ResetSharingSettings()
 	ResetTensorBoardAppSettings()
@@ -97,6 +105,26 @@ type SagemakerDomainDefaultUserSettingsOutputReference interface {
 // The jsii proxy struct for SagemakerDomainDefaultUserSettingsOutputReference
 type jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) CanvasAppSettings() SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference {
+	var returns SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"canvasAppSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) CanvasAppSettingsInput() *SagemakerDomainDefaultUserSettingsCanvasAppSettings {
+	var returns *SagemakerDomainDefaultUserSettingsCanvasAppSettings
+	_jsii_.Get(
+		j,
+		"canvasAppSettingsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) ComplexObjectIndex() interface{} {
@@ -204,6 +232,26 @@ func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) KernelGate
 	_jsii_.Get(
 		j,
 		"kernelGatewayAppSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) RSessionAppSettings() SagemakerDomainDefaultUserSettingsRSessionAppSettingsOutputReference {
+	var returns SagemakerDomainDefaultUserSettingsRSessionAppSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"rSessionAppSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) RSessionAppSettingsInput() *SagemakerDomainDefaultUserSettingsRSessionAppSettings {
+	var returns *SagemakerDomainDefaultUserSettingsRSessionAppSettings
+	_jsii_.Get(
+		j,
+		"rSessionAppSettingsInput",
 		&returns,
 	)
 	return returns
@@ -580,6 +628,17 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) Interpolat
 	return returns
 }
 
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) PutCanvasAppSettings(value *SagemakerDomainDefaultUserSettingsCanvasAppSettings) {
+	if err := s.validatePutCanvasAppSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCanvasAppSettings",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) PutJupyterServerAppSettings(value *SagemakerDomainDefaultUserSettingsJupyterServerAppSettings) {
 	if err := s.validatePutJupyterServerAppSettingsParameters(value); err != nil {
 		panic(err)
@@ -598,6 +657,17 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) PutKernelG
 	_jsii_.InvokeVoid(
 		s,
 		"putKernelGatewayAppSettings",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) PutRSessionAppSettings(value *SagemakerDomainDefaultUserSettingsRSessionAppSettings) {
+	if err := s.validatePutRSessionAppSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putRSessionAppSettings",
 		[]interface{}{value},
 	)
 }
@@ -624,6 +694,14 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) PutTensorB
 	)
 }
 
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) ResetCanvasAppSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCanvasAppSettings",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) ResetJupyterServerAppSettings() {
 	_jsii_.InvokeVoid(
 		s,
@@ -636,6 +714,14 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) ResetKerne
 	_jsii_.InvokeVoid(
 		s,
 		"resetKernelGatewayAppSettings",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) ResetRSessionAppSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRSessionAppSettings",
 		nil, // no parameters
 	)
 }

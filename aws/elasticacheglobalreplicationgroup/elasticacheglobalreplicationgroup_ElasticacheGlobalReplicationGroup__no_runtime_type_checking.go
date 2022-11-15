@@ -52,6 +52,10 @@ func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) validateOverrideLogicalIdP
 	return nil
 }
 
+func (e *jsiiProxy_ElasticacheGlobalReplicationGroup) validatePutTimeoutsParameters(value *ElasticacheGlobalReplicationGroupTimeouts) error {
+	return nil
+}
+
 func validateElasticacheGlobalReplicationGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) validateSetIdParameters(va
 }
 
 func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) validateSetNumNodeGroupsParameters(val *float64) error {
 	return nil
 }
 

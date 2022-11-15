@@ -145,7 +145,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementStatementOutputReferen
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementStatementOutputReference) validatePutNotStatementParameters(value *Wafv2RuleGroupRuleStatementNotStatementStatementNotStatement) error {
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementStatementOutputReference) validatePutNotStatementParameters(value *Wafv2RuleGroupRuleStatementNotStatement) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

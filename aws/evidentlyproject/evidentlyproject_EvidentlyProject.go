@@ -84,6 +84,8 @@ type EvidentlyProject interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() EvidentlyProjectTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -110,6 +112,7 @@ type EvidentlyProject interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDataDelivery(value *EvidentlyProjectDataDelivery)
+	PutTimeouts(value *EvidentlyProjectTimeouts)
 	ResetDataDelivery()
 	ResetDescription()
 	ResetId()
@@ -118,6 +121,7 @@ type EvidentlyProject interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -498,6 +502,26 @@ func (j *jsiiProxy_EvidentlyProject) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EvidentlyProject) Timeouts() EvidentlyProjectTimeoutsOutputReference {
+	var returns EvidentlyProjectTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EvidentlyProject) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -892,6 +916,17 @@ func (e *jsiiProxy_EvidentlyProject) PutDataDelivery(value *EvidentlyProjectData
 	)
 }
 
+func (e *jsiiProxy_EvidentlyProject) PutTimeouts(value *EvidentlyProjectTimeouts) {
+	if err := e.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EvidentlyProject) ResetDataDelivery() {
 	_jsii_.InvokeVoid(
 		e,
@@ -936,6 +971,14 @@ func (e *jsiiProxy_EvidentlyProject) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EvidentlyProject) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

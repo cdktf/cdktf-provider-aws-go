@@ -52,6 +52,10 @@ func (b *jsiiProxy_BudgetsBudget) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (b *jsiiProxy_BudgetsBudget) validatePutAutoAdjustDataParameters(value *BudgetsBudgetAutoAdjustData) error {
+	return nil
+}
+
 func (b *jsiiProxy_BudgetsBudget) validatePutCostFilterParameters(value interface{}) error {
 	return nil
 }
@@ -61,6 +65,10 @@ func (b *jsiiProxy_BudgetsBudget) validatePutCostTypesParameters(value *BudgetsB
 }
 
 func (b *jsiiProxy_BudgetsBudget) validatePutNotificationParameters(value interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BudgetsBudget) validatePutPlannedLimitParameters(value interface{}) error {
 	return nil
 }
 

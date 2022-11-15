@@ -122,6 +122,17 @@ func (s *jsiiProxy_SagemakerDomain) validatePutDefaultUserSettingsParameters(val
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDomain) validatePutDomainSettingsParameters(value *SagemakerDomainDomainSettings) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDomain) validatePutRetentionPolicyParameters(value *SagemakerDomainRetentionPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -142,6 +153,14 @@ func validateSagemakerDomain_IsConstructParameters(x interface{}) error {
 }
 
 func (j *jsiiProxy_SagemakerDomain) validateSetAppNetworkAccessTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerDomain) validateSetAppSecurityGroupManagementParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

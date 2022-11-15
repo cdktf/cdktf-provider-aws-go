@@ -26,6 +26,9 @@ type CognitoUserPoolClient interface {
 	AllowedOauthScopesInput() *[]*string
 	AnalyticsConfiguration() CognitoUserPoolClientAnalyticsConfigurationOutputReference
 	AnalyticsConfigurationInput() *CognitoUserPoolClientAnalyticsConfiguration
+	AuthSessionValidity() *float64
+	SetAuthSessionValidity(val *float64)
+	AuthSessionValidityInput() *float64
 	CallbackUrls() *[]*string
 	SetCallbackUrls(val *[]*string)
 	CallbackUrlsInput() *[]*string
@@ -155,6 +158,7 @@ type CognitoUserPoolClient interface {
 	ResetAllowedOauthFlowsUserPoolClient()
 	ResetAllowedOauthScopes()
 	ResetAnalyticsConfiguration()
+	ResetAuthSessionValidity()
 	ResetCallbackUrls()
 	ResetDefaultRedirectUri()
 	ResetEnablePropagateAdditionalUserContextData()
@@ -283,6 +287,26 @@ func (j *jsiiProxy_CognitoUserPoolClient) AnalyticsConfigurationInput() *Cognito
 	_jsii_.Get(
 		j,
 		"analyticsConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPoolClient) AuthSessionValidity() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"authSessionValidity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPoolClient) AuthSessionValidityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"authSessionValidityInput",
 		&returns,
 	)
 	return returns
@@ -872,6 +896,17 @@ func (j *jsiiProxy_CognitoUserPoolClient)SetAllowedOauthScopes(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_CognitoUserPoolClient)SetAuthSessionValidity(val *float64) {
+	if err := j.validateSetAuthSessionValidityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authSessionValidity",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CognitoUserPoolClient)SetCallbackUrls(val *[]*string) {
 	if err := j.validateSetCallbackUrlsParameters(val); err != nil {
 		panic(err)
@@ -1399,6 +1434,14 @@ func (c *jsiiProxy_CognitoUserPoolClient) ResetAnalyticsConfiguration() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAnalyticsConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPoolClient) ResetAuthSessionValidity() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAuthSessionValidity",
 		nil, // no parameters
 	)
 }

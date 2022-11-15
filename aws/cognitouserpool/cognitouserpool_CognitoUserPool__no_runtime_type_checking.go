@@ -120,6 +120,10 @@ func (j *jsiiProxy_CognitoUserPool) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_CognitoUserPool) validateSetDeletionProtectionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoUserPool) validateSetEmailVerificationMessageParameters(val *string) error {
 	return nil
 }

@@ -90,7 +90,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementOutputReferen
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementOutputReference) validatePutAndStatementParameters(value *Wafv2RuleGroupRuleStatementAndStatementStatementAndStatement) error {
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementOutputReference) validatePutAndStatementParameters(value *Wafv2RuleGroupRuleStatementAndStatement) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

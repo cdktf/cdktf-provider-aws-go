@@ -64,9 +64,6 @@ type SecretsmanagerSecretRotation interface {
 	SecretId() *string
 	SetSecretId(val *string)
 	SecretIdInput() *string
-	Tags() *map[string]*string
-	SetTags(val *map[string]*string)
-	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -103,7 +100,6 @@ type SecretsmanagerSecretRotation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -339,26 +335,6 @@ func (j *jsiiProxy_SecretsmanagerSecretRotation) SecretIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SecretsmanagerSecretRotation) Tags() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"tags",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SecretsmanagerSecretRotation) TagsInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"tagsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SecretsmanagerSecretRotation) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -513,17 +489,6 @@ func (j *jsiiProxy_SecretsmanagerSecretRotation)SetSecretId(val *string) {
 	_jsii_.Set(
 		j,
 		"secretId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SecretsmanagerSecretRotation)SetTags(val *map[string]*string) {
-	if err := j.validateSetTagsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tags",
 		val,
 	)
 }
@@ -779,14 +744,6 @@ func (s *jsiiProxy_SecretsmanagerSecretRotation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SecretsmanagerSecretRotation) ResetTags() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetTags",
 		nil, // no parameters
 	)
 }

@@ -97,15 +97,15 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementO
 	switch value.(type) {
 	case cdktf.IResolvable:
 		// ok
-	case *[]*Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatement:
-		value := value.(*[]*Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatement)
+	case *[]*Wafv2RuleGroupRuleStatementNotStatementStatement:
+		value := value.(*[]*Wafv2RuleGroupRuleStatementNotStatementStatement)
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
 				return err
 			}
 		}
-	case []*Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatement:
-		value_ := value.([]*Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatement)
+	case []*Wafv2RuleGroupRuleStatementNotStatementStatement:
+		value_ := value.([]*Wafv2RuleGroupRuleStatementNotStatementStatement)
 		value := &value_
 		for idx_cd4240, v := range *value {
 			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
@@ -114,7 +114,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementO
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*Wafv2RuleGroupRuleStatementNotStatementStatementAndStatementStatement; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*Wafv2RuleGroupRuleStatementNotStatementStatement; received %#v (a %T)", value, value)
 		}
 	}
 

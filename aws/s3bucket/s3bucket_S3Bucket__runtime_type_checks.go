@@ -305,14 +305,6 @@ func (j *jsiiProxy_S3Bucket) validateSetAclParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_S3Bucket) validateSetArnParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_S3Bucket) validateSetBucketParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -377,14 +369,6 @@ func (j *jsiiProxy_S3Bucket) validateSetForceDestroyParameters(val interface{}) 
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_S3Bucket) validateSetHostedZoneIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

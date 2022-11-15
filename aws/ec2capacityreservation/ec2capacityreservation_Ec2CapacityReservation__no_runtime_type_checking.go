@@ -108,6 +108,10 @@ func (j *jsiiProxy_Ec2CapacityReservation) validateSetOutpostArnParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_Ec2CapacityReservation) validateSetPlacementGroupArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2CapacityReservation) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

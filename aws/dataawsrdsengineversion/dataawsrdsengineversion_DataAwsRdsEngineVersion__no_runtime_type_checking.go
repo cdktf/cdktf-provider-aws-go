@@ -52,7 +52,15 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsRdsEngineVersion) validatePutFilterParameters(value interface{}) error {
+	return nil
+}
+
 func validateDataAwsRdsEngineVersion_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion) validateSetDefaultOnlyParameters(val interface{}) error {
 	return nil
 }
 
@@ -61,6 +69,10 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) validateSetEngineParameters(val *str
 }
 
 func (j *jsiiProxy_DataAwsRdsEngineVersion) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion) validateSetIncludeAllParameters(val interface{}) error {
 	return nil
 }
 

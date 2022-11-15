@@ -48,6 +48,10 @@ func (a *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) validate
 	return nil
 }
 
+func (a *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) validatePutIngressConfigurationParameters(value *ApprunnerServiceNetworkConfigurationIngressConfiguration) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

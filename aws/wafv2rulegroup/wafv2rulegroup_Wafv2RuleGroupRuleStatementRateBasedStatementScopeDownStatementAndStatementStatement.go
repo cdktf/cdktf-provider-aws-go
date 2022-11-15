@@ -2,6 +2,10 @@ package wafv2rulegroup
 
 
 type Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementStatement struct {
+	// and_statement block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#and_statement Wafv2RuleGroup#and_statement}
+	AndStatement *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementAndStatement `field:"optional" json:"andStatement" yaml:"andStatement"`
 	// byte_match_statement block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#byte_match_statement Wafv2RuleGroup#byte_match_statement}
@@ -18,6 +22,14 @@ type Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatement
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#label_match_statement Wafv2RuleGroup#label_match_statement}
 	LabelMatchStatement *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementLabelMatchStatement `field:"optional" json:"labelMatchStatement" yaml:"labelMatchStatement"`
+	// not_statement block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#not_statement Wafv2RuleGroup#not_statement}
+	NotStatement *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatement `field:"optional" json:"notStatement" yaml:"notStatement"`
+	// or_statement block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#or_statement Wafv2RuleGroup#or_statement}
+	OrStatement *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementOrStatement `field:"optional" json:"orStatement" yaml:"orStatement"`
 	// regex_match_statement block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#regex_match_statement Wafv2RuleGroup#regex_match_statement}

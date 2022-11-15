@@ -46,5 +46,7 @@ type AcmpcaCertificateAuthorityConfig struct {
 	Timeouts *AcmpcaCertificateAuthorityTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#type AcmpcaCertificateAuthority#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority#usage_mode AcmpcaCertificateAuthority#usage_mode}.
+	UsageMode *string `field:"optional" json:"usageMode" yaml:"usageMode"`
 }
 

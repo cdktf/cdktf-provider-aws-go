@@ -45,12 +45,14 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCognitoConfig", GoMethod: "PutCognitoConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putOidcConfig", GoMethod: "PutOidcConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putSourceIpConfig", GoMethod: "PutSourceIpConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putWorkforceVpcConfig", GoMethod: "PutWorkforceVpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCognitoConfig", GoMethod: "ResetCognitoConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOidcConfig", GoMethod: "ResetOidcConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSourceIpConfig", GoMethod: "ResetSourceIpConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkforceVpcConfig", GoMethod: "ResetWorkforceVpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceIpConfig", GoGetter: "SourceIpConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceIpConfigInput", GoGetter: "SourceIpConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "subdomain", GoGetter: "Subdomain"},
@@ -63,6 +65,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "workforceName", GoGetter: "WorkforceName"},
 			_jsii_.MemberProperty{JsiiProperty: "workforceNameInput", GoGetter: "WorkforceNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workforceVpcConfig", GoGetter: "WorkforceVpcConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "workforceVpcConfigInput", GoGetter: "WorkforceVpcConfigInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SagemakerWorkforce{}
@@ -200,6 +204,52 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SagemakerWorkforceSourceIpConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfig",
+		reflect.TypeOf((*SagemakerWorkforceWorkforceVpcConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceWorkforceVpcConfigOutputReference",
+		reflect.TypeOf((*SagemakerWorkforceWorkforceVpcConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecurityGroupIds", GoMethod: "ResetSecurityGroupIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSubnets", GoMethod: "ResetSubnets"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVpcId", GoMethod: "ResetVpcId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "securityGroupIds", GoGetter: "SecurityGroupIds"},
+			_jsii_.MemberProperty{JsiiProperty: "securityGroupIdsInput", GoGetter: "SecurityGroupIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "subnets", GoGetter: "Subnets"},
+			_jsii_.MemberProperty{JsiiProperty: "subnetsInput", GoGetter: "SubnetsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "vpcEndpointId", GoGetter: "VpcEndpointId"},
+			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
+			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SagemakerWorkforceWorkforceVpcConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -119,6 +119,7 @@ type BatchComputeEnvironmentComputeResourcesOutputReference interface {
 	ResetInstanceType()
 	ResetLaunchTemplate()
 	ResetMinVcpus()
+	ResetSecurityGroupIds()
 	ResetSpotIamFleetRole()
 	ResetTags()
 	// Produce the Token's value at resolution time.
@@ -1047,6 +1048,14 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) Reset
 	_jsii_.InvokeVoid(
 		b,
 		"resetMinVcpus",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) ResetSecurityGroupIds() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSecurityGroupIds",
 		nil, // no parameters
 	)
 }

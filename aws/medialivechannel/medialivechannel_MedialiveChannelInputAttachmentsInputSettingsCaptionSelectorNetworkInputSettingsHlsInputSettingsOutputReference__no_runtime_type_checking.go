@@ -1,0 +1,94 @@
+//go:build no_runtime_type_checking
+
+package medialivechannel
+
+// Building without runtime type checking enabled, so all the below just return nil
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference) validateGetListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference) validateGetStringAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference) validateSetBandwidthParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference) validateSetBufferSegmentsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference) validateSetInternalValueParameters(val *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettings) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference) validateSetRetriesParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference) validateSetRetryIntervalParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference) validateSetScte35SourceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func validateNewMedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettingsHlsInputSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+	return nil
+}
+

@@ -21,6 +21,9 @@ type DataAwsRdsEngineVersion interface {
 	// Experimental.
 	SetCount(val *float64)
 	DefaultCharacterSet() *string
+	DefaultOnly() interface{}
+	SetDefaultOnly(val interface{})
+	DefaultOnlyInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -30,6 +33,8 @@ type DataAwsRdsEngineVersion interface {
 	EngineDescription() *string
 	EngineInput() *string
 	ExportableLogTypes() *[]*string
+	Filter() DataAwsRdsEngineVersionFilterList
+	FilterInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -41,6 +46,9 @@ type DataAwsRdsEngineVersion interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IncludeAll() interface{}
+	SetIncludeAll(val interface{})
+	IncludeAllInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -104,7 +112,11 @@ type DataAwsRdsEngineVersion interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutFilter(value interface{})
+	ResetDefaultOnly()
+	ResetFilter()
 	ResetId()
+	ResetIncludeAll()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -166,6 +178,26 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) DefaultCharacterSet() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsRdsEngineVersion) DefaultOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion) DefaultOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultOnlyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsRdsEngineVersion) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -216,6 +248,26 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) ExportableLogTypes() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsRdsEngineVersion) Filter() DataAwsRdsEngineVersionFilterList {
+	var returns DataAwsRdsEngineVersionFilterList
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion) FilterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"filterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsRdsEngineVersion) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -261,6 +313,26 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion) IncludeAll() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion) IncludeAllInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeAllInput",
 		&returns,
 	)
 	return returns
@@ -544,6 +616,17 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion)SetCount(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_DataAwsRdsEngineVersion)SetDefaultOnly(val interface{}) {
+	if err := j.validateSetDefaultOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultOnly",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataAwsRdsEngineVersion)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -578,6 +661,17 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion)SetIncludeAll(val interface{}) {
+	if err := j.validateSetIncludeAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeAll",
 		val,
 	)
 }
@@ -862,10 +956,45 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (d *jsiiProxy_DataAwsRdsEngineVersion) PutFilter(value interface{}) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataAwsRdsEngineVersion) ResetDefaultOnly() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDefaultOnly",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsRdsEngineVersion) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataAwsRdsEngineVersion) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsRdsEngineVersion) ResetIncludeAll() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIncludeAll",
 		nil, // no parameters
 	)
 }

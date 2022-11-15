@@ -25,7 +25,7 @@ type Wafv2RuleGroupRuleStatementNotStatementStatement struct {
 	// not_statement block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#not_statement Wafv2RuleGroup#not_statement}
-	NotStatement *Wafv2RuleGroupRuleStatementNotStatementStatementNotStatement `field:"optional" json:"notStatement" yaml:"notStatement"`
+	NotStatement *Wafv2RuleGroupRuleStatementNotStatement `field:"optional" json:"notStatement" yaml:"notStatement"`
 	// or_statement block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#or_statement Wafv2RuleGroup#or_statement}

@@ -56,6 +56,10 @@ func (e *jsiiProxy_EvidentlyProject) validatePutDataDeliveryParameters(value *Ev
 	return nil
 }
 
+func (e *jsiiProxy_EvidentlyProject) validatePutTimeoutsParameters(value *EvidentlyProjectTimeouts) error {
+	return nil
+}
+
 func validateEvidentlyProject_IsConstructParameters(x interface{}) error {
 	return nil
 }
