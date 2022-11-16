@@ -68,6 +68,14 @@ func validateRedshiftCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRedshiftCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRedshiftCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftCluster) validateSetAllowVersionUpgradeParameters(val interface{}) error {
 	return nil
 }

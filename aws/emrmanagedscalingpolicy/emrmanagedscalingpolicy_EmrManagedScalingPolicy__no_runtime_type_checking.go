@@ -60,6 +60,14 @@ func validateEmrManagedScalingPolicy_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateEmrManagedScalingPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEmrManagedScalingPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrManagedScalingPolicy) validateSetClusterIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataAwsDbSnapshot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsDbSnapshot_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsDbSnapshot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDbSnapshot) validateSetDbInstanceIdentifierParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateIotThingPrincipalAttachment_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateIotThingPrincipalAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIotThingPrincipalAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotThingPrincipalAttachment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

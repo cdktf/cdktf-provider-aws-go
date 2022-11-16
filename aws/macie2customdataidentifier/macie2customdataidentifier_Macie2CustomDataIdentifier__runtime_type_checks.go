@@ -119,6 +119,22 @@ func validateMacie2CustomDataIdentifier_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateMacie2CustomDataIdentifier_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateMacie2CustomDataIdentifier_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Macie2CustomDataIdentifier) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

@@ -60,6 +60,14 @@ func validateEc2TransitGatewayConnect_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateEc2TransitGatewayConnect_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2TransitGatewayConnect_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayConnect) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

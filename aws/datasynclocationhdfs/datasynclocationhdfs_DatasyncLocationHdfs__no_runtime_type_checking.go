@@ -64,6 +64,14 @@ func validateDatasyncLocationHdfs_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDatasyncLocationHdfs_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatasyncLocationHdfs_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationHdfs) validateSetAgentArnsParameters(val *[]*string) error {
 	return nil
 }

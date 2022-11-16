@@ -68,6 +68,14 @@ func validateElasticacheReplicationGroup_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateElasticacheReplicationGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateElasticacheReplicationGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetApplyImmediatelyParameters(val interface{}) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package efsfilesystem
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/efsfilesystem/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/efsfilesystem/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -824,6 +824,44 @@ func EfsFileSystem_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.efsFileSystem.EfsFileSystem",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EfsFileSystem_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEfsFileSystem_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystem",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EfsFileSystem_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEfsFileSystem_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystem",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

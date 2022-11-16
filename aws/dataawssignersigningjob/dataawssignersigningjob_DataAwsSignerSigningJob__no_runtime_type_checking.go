@@ -56,6 +56,14 @@ func validateDataAwsSignerSigningJob_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataAwsSignerSigningJob_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsSignerSigningJob_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSignerSigningJob) validateSetIdParameters(val *string) error {
 	return nil
 }

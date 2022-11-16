@@ -60,6 +60,14 @@ func validateGlacierVault_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGlacierVault_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGlacierVault_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlacierVault) validateSetAccessPolicyParameters(val *string) error {
 	return nil
 }

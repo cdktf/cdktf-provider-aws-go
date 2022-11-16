@@ -2,10 +2,10 @@ package dataawsssmmaintenancewindows
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/dataawsssmmaintenancewindows/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/dataawsssmmaintenancewindows/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -404,6 +404,44 @@ func DataAwsSsmMaintenanceWindows_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindows",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataAwsSsmMaintenanceWindows_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataAwsSsmMaintenanceWindows_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindows",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataAwsSsmMaintenanceWindows_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataAwsSsmMaintenanceWindows_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsSsmMaintenanceWindows.DataAwsSsmMaintenanceWindows",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

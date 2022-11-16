@@ -56,6 +56,14 @@ func validateLightsailLbStickinessPolicy_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateLightsailLbStickinessPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLightsailLbStickinessPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailLbStickinessPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

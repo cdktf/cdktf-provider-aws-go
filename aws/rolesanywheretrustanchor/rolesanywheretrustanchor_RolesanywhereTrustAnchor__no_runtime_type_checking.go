@@ -60,6 +60,14 @@ func validateRolesanywhereTrustAnchor_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateRolesanywhereTrustAnchor_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRolesanywhereTrustAnchor_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RolesanywhereTrustAnchor) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

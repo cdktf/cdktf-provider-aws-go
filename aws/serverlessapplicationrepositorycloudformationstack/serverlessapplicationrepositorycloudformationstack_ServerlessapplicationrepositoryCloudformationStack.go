@@ -2,10 +2,10 @@ package serverlessapplicationrepositorycloudformationstack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/serverlessapplicationrepositorycloudformationstack/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/serverlessapplicationrepositorycloudformationstack/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -696,6 +696,44 @@ func ServerlessapplicationrepositoryCloudformationStack_IsConstruct(x interface{
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ServerlessapplicationrepositoryCloudformationStack_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateServerlessapplicationrepositoryCloudformationStack_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ServerlessapplicationrepositoryCloudformationStack_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateServerlessapplicationrepositoryCloudformationStack_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.serverlessapplicationrepositoryCloudformationStack.ServerlessapplicationrepositoryCloudformationStack",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

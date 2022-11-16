@@ -60,6 +60,14 @@ func validateAppmeshGatewayRoute_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppmeshGatewayRoute_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppmeshGatewayRoute_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppmeshGatewayRoute) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

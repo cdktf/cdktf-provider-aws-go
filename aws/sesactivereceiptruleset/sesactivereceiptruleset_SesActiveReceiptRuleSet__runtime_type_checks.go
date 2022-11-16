@@ -119,6 +119,22 @@ func validateSesActiveReceiptRuleSet_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateSesActiveReceiptRuleSet_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateSesActiveReceiptRuleSet_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SesActiveReceiptRuleSet) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

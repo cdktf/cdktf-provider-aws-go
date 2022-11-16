@@ -2,10 +2,10 @@ package vpcpeeringconnectionaccepter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/vpcpeeringconnectionaccepter/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/vpcpeeringconnectionaccepter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -685,6 +685,44 @@ func VpcPeeringConnectionAccepterA_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VpcPeeringConnectionAccepterA_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVpcPeeringConnectionAccepterA_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VpcPeeringConnectionAccepterA_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVpcPeeringConnectionAccepterA_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.vpcPeeringConnectionAccepter.VpcPeeringConnectionAccepterA",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

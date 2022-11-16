@@ -130,6 +130,22 @@ func validateCloudcontrolapiResource_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateCloudcontrolapiResource_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateCloudcontrolapiResource_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CloudcontrolapiResource) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

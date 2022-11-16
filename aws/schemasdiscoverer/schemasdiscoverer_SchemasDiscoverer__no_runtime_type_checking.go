@@ -56,6 +56,14 @@ func validateSchemasDiscoverer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSchemasDiscoverer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSchemasDiscoverer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SchemasDiscoverer) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

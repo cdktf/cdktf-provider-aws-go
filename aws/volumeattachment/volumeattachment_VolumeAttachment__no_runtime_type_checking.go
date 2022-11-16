@@ -60,6 +60,14 @@ func validateVolumeAttachment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVolumeAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVolumeAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VolumeAttachment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateLambdaLayerVersion_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLambdaLayerVersion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLambdaLayerVersion_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaLayerVersion) validateSetCompatibleArchitecturesParameters(val *[]*string) error {
 	return nil
 }

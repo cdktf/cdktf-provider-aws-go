@@ -56,6 +56,14 @@ func validateDataAwsS3Objects_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsS3Objects_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsS3Objects_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsS3Objects) validateSetBucketParameters(val *string) error {
 	return nil
 }

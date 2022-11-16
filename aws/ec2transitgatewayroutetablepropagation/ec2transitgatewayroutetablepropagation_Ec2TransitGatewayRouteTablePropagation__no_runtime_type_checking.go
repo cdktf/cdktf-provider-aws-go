@@ -56,6 +56,14 @@ func validateEc2TransitGatewayRouteTablePropagation_IsConstructParameters(x inte
 	return nil
 }
 
+func validateEc2TransitGatewayRouteTablePropagation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2TransitGatewayRouteTablePropagation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayRouteTablePropagation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

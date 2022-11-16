@@ -56,6 +56,14 @@ func validateIotThingGroupMembership_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateIotThingGroupMembership_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIotThingGroupMembership_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotThingGroupMembership) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

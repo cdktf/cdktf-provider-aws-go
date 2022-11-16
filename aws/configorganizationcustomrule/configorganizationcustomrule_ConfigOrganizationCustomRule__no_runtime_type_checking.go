@@ -60,6 +60,14 @@ func validateConfigOrganizationCustomRule_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateConfigOrganizationCustomRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConfigOrganizationCustomRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigOrganizationCustomRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

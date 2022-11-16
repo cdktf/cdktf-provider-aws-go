@@ -56,6 +56,14 @@ func validateNetworkAclRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNetworkAclRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkAclRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkAclRule) validateSetCidrBlockParameters(val *string) error {
 	return nil
 }

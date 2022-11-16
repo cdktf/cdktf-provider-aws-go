@@ -60,6 +60,14 @@ func validateSesv2DedicatedIpPool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSesv2DedicatedIpPool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSesv2DedicatedIpPool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Sesv2DedicatedIpPool) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

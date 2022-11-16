@@ -56,6 +56,14 @@ func validateSagemakerImageVersion_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSagemakerImageVersion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSagemakerImageVersion_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerImageVersion) validateSetBaseImageParameters(val *string) error {
 	return nil
 }

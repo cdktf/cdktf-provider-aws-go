@@ -56,6 +56,14 @@ func validateGlueSchema_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGlueSchema_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGlueSchema_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueSchema) validateSetCompatibilityParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataAwsNetworkfirewallFirewallPolicy_IsConstructParameters(x interf
 	return nil
 }
 
+func validateDataAwsNetworkfirewallFirewallPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsNetworkfirewallFirewallPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNetworkfirewallFirewallPolicy) validateSetArnParameters(val *string) error {
 	return nil
 }

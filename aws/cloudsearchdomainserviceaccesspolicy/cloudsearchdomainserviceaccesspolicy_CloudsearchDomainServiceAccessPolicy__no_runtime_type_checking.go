@@ -60,6 +60,14 @@ func validateCloudsearchDomainServiceAccessPolicy_IsConstructParameters(x interf
 	return nil
 }
 
+func validateCloudsearchDomainServiceAccessPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudsearchDomainServiceAccessPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateSetAccessPolicyParameters(val *string) error {
 	return nil
 }

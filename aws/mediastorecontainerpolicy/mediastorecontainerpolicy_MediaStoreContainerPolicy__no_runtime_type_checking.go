@@ -56,6 +56,14 @@ func validateMediaStoreContainerPolicy_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateMediaStoreContainerPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMediaStoreContainerPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaStoreContainerPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateCodebuildSourceCredential_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateCodebuildSourceCredential_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCodebuildSourceCredential_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodebuildSourceCredential) validateSetAuthTypeParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateS3BucketPublicAccessBlock_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateS3BucketPublicAccessBlock_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateS3BucketPublicAccessBlock_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketPublicAccessBlock) validateSetBlockPublicAclsParameters(val interface{}) error {
 	return nil
 }

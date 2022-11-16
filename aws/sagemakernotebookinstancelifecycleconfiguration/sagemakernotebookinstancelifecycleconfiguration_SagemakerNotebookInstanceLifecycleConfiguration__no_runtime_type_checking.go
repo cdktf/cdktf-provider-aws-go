@@ -56,6 +56,14 @@ func validateSagemakerNotebookInstanceLifecycleConfiguration_IsConstructParamete
 	return nil
 }
 
+func validateSagemakerNotebookInstanceLifecycleConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSagemakerNotebookInstanceLifecycleConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -161,6 +161,22 @@ func validateDataAwsNetworkInterface_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataAwsNetworkInterface_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataAwsNetworkInterface_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNetworkInterface) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

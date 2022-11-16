@@ -119,6 +119,22 @@ func validateApiGatewayDocumentationVersion_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateApiGatewayDocumentationVersion_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateApiGatewayDocumentationVersion_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayDocumentationVersion) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

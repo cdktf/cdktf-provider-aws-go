@@ -72,6 +72,14 @@ func validateLaunchConfiguration_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLaunchConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLaunchConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LaunchConfiguration) validateSetAssociatePublicIpAddressParameters(val interface{}) error {
 	return nil
 }

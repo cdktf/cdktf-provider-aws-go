@@ -56,6 +56,14 @@ func validateSfnActivity_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSfnActivity_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSfnActivity_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SfnActivity) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

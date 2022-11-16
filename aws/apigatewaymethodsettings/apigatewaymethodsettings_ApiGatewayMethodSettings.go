@@ -2,10 +2,10 @@ package apigatewaymethodsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/apigatewaymethodsettings/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/apigatewaymethodsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -544,6 +544,44 @@ func ApiGatewayMethodSettings_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettings",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ApiGatewayMethodSettings_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApiGatewayMethodSettings_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettings",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ApiGatewayMethodSettings_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApiGatewayMethodSettings_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.apiGatewayMethodSettings.ApiGatewayMethodSettings",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

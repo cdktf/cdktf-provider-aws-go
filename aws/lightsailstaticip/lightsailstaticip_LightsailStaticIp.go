@@ -2,10 +2,10 @@ package lightsailstaticip
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/lightsailstaticip/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/lightsailstaticip/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -486,6 +486,44 @@ func LightsailStaticIp_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIp",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LightsailStaticIp_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLightsailStaticIp_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIp",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LightsailStaticIp_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLightsailStaticIp_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.lightsailStaticIp.LightsailStaticIp",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

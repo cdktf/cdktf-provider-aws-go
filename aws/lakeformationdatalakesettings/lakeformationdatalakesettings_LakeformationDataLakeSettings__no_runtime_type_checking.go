@@ -64,6 +64,14 @@ func validateLakeformationDataLakeSettings_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateLakeformationDataLakeSettings_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLakeformationDataLakeSettings_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetAdminsParameters(val *[]*string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateGlueDevEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGlueDevEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGlueDevEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueDevEndpoint) validateSetArgumentsParameters(val *map[string]*string) error {
 	return nil
 }

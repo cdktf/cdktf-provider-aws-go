@@ -60,6 +60,14 @@ func validateLocationRouteCalculator_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateLocationRouteCalculator_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLocationRouteCalculator_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LocationRouteCalculator) validateSetCalculatorNameParameters(val *string) error {
 	return nil
 }

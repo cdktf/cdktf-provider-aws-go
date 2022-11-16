@@ -2,10 +2,10 @@ package snstopicsubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/snstopicsubscription/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/snstopicsubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -810,6 +810,44 @@ func SnsTopicSubscription_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SnsTopicSubscription_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSnsTopicSubscription_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SnsTopicSubscription_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSnsTopicSubscription_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.snsTopicSubscription.SnsTopicSubscription",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

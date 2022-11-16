@@ -56,6 +56,14 @@ func validateDataAwsCeCostCategory_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsCeCostCategory_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCeCostCategory_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCeCostCategory) validateSetCostCategoryArnParameters(val *string) error {
 	return nil
 }

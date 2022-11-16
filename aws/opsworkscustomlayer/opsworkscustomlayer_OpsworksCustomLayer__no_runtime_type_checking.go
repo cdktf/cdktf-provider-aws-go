@@ -68,6 +68,14 @@ func validateOpsworksCustomLayer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOpsworksCustomLayer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOpsworksCustomLayer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpsworksCustomLayer) validateSetAutoAssignElasticIpsParameters(val interface{}) error {
 	return nil
 }

@@ -130,6 +130,22 @@ func validateVpcIpv4CidrBlockAssociation_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateVpcIpv4CidrBlockAssociation_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateVpcIpv4CidrBlockAssociation_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpv4CidrBlockAssociation) validateSetCidrBlockParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -2,10 +2,10 @@ package rolesanywhereprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/rolesanywhereprofile/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/rolesanywhereprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -743,6 +743,44 @@ func RolesanywhereProfile_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rolesanywhereProfile.RolesanywhereProfile",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func RolesanywhereProfile_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRolesanywhereProfile_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.rolesanywhereProfile.RolesanywhereProfile",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func RolesanywhereProfile_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRolesanywhereProfile_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.rolesanywhereProfile.RolesanywhereProfile",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

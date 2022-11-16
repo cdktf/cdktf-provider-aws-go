@@ -56,6 +56,14 @@ func validateDataAwsRedshiftSubnetGroup_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataAwsRedshiftSubnetGroup_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsRedshiftSubnetGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRedshiftSubnetGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

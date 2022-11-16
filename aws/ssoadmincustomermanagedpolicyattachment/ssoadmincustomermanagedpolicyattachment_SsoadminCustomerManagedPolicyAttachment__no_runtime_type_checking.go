@@ -60,6 +60,14 @@ func validateSsoadminCustomerManagedPolicyAttachment_IsConstructParameters(x int
 	return nil
 }
 
+func validateSsoadminCustomerManagedPolicyAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSsoadminCustomerManagedPolicyAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

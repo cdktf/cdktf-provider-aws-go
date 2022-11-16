@@ -64,6 +64,14 @@ func validateBackupPlan_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBackupPlan_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBackupPlan_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupPlan) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

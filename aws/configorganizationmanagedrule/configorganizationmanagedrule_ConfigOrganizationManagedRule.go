@@ -2,10 +2,10 @@ package configorganizationmanagedrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/configorganizationmanagedrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/configorganizationmanagedrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -802,6 +802,44 @@ func ConfigOrganizationManagedRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.configOrganizationManagedRule.ConfigOrganizationManagedRule",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ConfigOrganizationManagedRule_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateConfigOrganizationManagedRule_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.configOrganizationManagedRule.ConfigOrganizationManagedRule",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ConfigOrganizationManagedRule_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateConfigOrganizationManagedRule_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.configOrganizationManagedRule.ConfigOrganizationManagedRule",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -2,10 +2,10 @@ package cloudwatcheventarchive
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/cloudwatcheventarchive/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/cloudwatcheventarchive/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -603,6 +603,44 @@ func CloudwatchEventArchive_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CloudwatchEventArchive_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCloudwatchEventArchive_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CloudwatchEventArchive_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCloudwatchEventArchive_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.cloudwatchEventArchive.CloudwatchEventArchive",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

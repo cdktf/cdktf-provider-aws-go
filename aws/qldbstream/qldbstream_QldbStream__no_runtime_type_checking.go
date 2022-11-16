@@ -60,6 +60,14 @@ func validateQldbStream_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateQldbStream_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateQldbStream_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_QldbStream) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

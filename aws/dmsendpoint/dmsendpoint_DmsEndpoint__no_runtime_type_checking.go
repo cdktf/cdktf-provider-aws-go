@@ -88,6 +88,14 @@ func validateDmsEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDmsEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDmsEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsEndpoint) validateSetCertificateArnParameters(val *string) error {
 	return nil
 }

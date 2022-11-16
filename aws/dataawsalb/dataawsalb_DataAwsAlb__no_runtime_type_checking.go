@@ -60,6 +60,14 @@ func validateDataAwsAlb_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsAlb_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsAlb_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAlb) validateSetArnParameters(val *string) error {
 	return nil
 }

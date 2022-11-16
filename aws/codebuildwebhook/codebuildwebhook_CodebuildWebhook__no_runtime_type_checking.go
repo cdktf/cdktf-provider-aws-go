@@ -60,6 +60,14 @@ func validateCodebuildWebhook_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCodebuildWebhook_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCodebuildWebhook_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodebuildWebhook) validateSetBranchFilterParameters(val *string) error {
 	return nil
 }

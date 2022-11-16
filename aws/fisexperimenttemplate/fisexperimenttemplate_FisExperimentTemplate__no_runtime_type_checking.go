@@ -72,6 +72,14 @@ func validateFisExperimentTemplate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFisExperimentTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFisExperimentTemplate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FisExperimentTemplate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

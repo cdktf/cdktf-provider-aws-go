@@ -60,6 +60,14 @@ func validateS3BucketObjectLockConfigurationA_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateS3BucketObjectLockConfigurationA_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateS3BucketObjectLockConfigurationA_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketObjectLockConfigurationA) validateSetBucketParameters(val *string) error {
 	return nil
 }

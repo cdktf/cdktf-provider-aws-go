@@ -56,6 +56,14 @@ func validateStoragegatewayUploadBuffer_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateStoragegatewayUploadBuffer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStoragegatewayUploadBuffer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewayUploadBuffer) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

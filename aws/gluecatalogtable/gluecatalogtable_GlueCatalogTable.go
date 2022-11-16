@@ -2,10 +2,10 @@ package gluecatalogtable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/gluecatalogtable/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/gluecatalogtable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -874,6 +874,44 @@ func GlueCatalogTable_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTable",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GlueCatalogTable_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGlueCatalogTable_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTable",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GlueCatalogTable_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGlueCatalogTable_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTable",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

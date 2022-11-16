@@ -56,6 +56,14 @@ func validateDataAwsEfsAccessPoints_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsEfsAccessPoints_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsEfsAccessPoints_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEfsAccessPoints) validateSetFileSystemIdParameters(val *string) error {
 	return nil
 }

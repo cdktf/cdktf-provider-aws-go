@@ -56,6 +56,14 @@ func validateCloudwatchQueryDefinition_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateCloudwatchQueryDefinition_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudwatchQueryDefinition_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchQueryDefinition) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

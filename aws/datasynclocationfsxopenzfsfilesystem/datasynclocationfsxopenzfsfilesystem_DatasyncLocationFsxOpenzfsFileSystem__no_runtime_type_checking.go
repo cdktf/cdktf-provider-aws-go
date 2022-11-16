@@ -60,6 +60,14 @@ func validateDatasyncLocationFsxOpenzfsFileSystem_IsConstructParameters(x interf
 	return nil
 }
 
+func validateDatasyncLocationFsxOpenzfsFileSystem_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatasyncLocationFsxOpenzfsFileSystem_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

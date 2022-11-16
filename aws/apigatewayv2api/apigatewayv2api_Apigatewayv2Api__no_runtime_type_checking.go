@@ -60,6 +60,14 @@ func validateApigatewayv2Api_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApigatewayv2Api_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApigatewayv2Api_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2Api) validateSetApiKeySelectionExpressionParameters(val *string) error {
 	return nil
 }

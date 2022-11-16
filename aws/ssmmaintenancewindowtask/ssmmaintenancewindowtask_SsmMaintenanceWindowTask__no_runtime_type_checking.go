@@ -64,6 +64,14 @@ func validateSsmMaintenanceWindowTask_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateSsmMaintenanceWindowTask_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSsmMaintenanceWindowTask_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmMaintenanceWindowTask) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

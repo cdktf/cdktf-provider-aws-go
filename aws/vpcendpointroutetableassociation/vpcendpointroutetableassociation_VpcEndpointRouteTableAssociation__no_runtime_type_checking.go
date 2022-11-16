@@ -56,6 +56,14 @@ func validateVpcEndpointRouteTableAssociation_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateVpcEndpointRouteTableAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpcEndpointRouteTableAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointRouteTableAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

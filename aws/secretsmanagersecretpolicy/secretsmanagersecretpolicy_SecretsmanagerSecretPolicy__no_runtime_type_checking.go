@@ -56,6 +56,14 @@ func validateSecretsmanagerSecretPolicy_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateSecretsmanagerSecretPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecretsmanagerSecretPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsmanagerSecretPolicy) validateSetBlockPublicPolicyParameters(val interface{}) error {
 	return nil
 }

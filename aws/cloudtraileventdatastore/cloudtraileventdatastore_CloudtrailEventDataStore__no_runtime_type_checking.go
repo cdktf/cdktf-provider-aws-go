@@ -64,6 +64,14 @@ func validateCloudtrailEventDataStore_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateCloudtrailEventDataStore_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudtrailEventDataStore_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudtrailEventDataStore) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

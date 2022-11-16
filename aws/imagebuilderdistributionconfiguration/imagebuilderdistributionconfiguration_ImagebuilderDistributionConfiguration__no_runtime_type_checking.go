@@ -60,6 +60,14 @@ func validateImagebuilderDistributionConfiguration_IsConstructParameters(x inter
 	return nil
 }
 
+func validateImagebuilderDistributionConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateImagebuilderDistributionConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImagebuilderDistributionConfiguration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateRoute53ResolverDnssecConfig_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateRoute53ResolverDnssecConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoute53ResolverDnssecConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53ResolverDnssecConfig) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateSsmDocument_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSsmDocument_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSsmDocument_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmDocument) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

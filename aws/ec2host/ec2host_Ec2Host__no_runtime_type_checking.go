@@ -56,6 +56,14 @@ func validateEc2Host_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEc2Host_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2Host_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2Host) validateSetAutoPlacementParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,14 @@ func validateSpotFleetRequest_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSpotFleetRequest_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSpotFleetRequest_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpotFleetRequest) validateSetAllocationStrategyParameters(val *string) error {
 	return nil
 }

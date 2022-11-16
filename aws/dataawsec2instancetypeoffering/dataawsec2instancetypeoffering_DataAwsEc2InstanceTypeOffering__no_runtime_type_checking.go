@@ -64,6 +64,14 @@ func validateDataAwsEc2InstanceTypeOffering_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataAwsEc2InstanceTypeOffering_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsEc2InstanceTypeOffering_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2InstanceTypeOffering) validateSetIdParameters(val *string) error {
 	return nil
 }

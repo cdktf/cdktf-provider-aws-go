@@ -56,6 +56,14 @@ func validateDataAwsMskconnectConnector_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataAwsMskconnectConnector_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsMskconnectConnector_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsMskconnectConnector) validateSetIdParameters(val *string) error {
 	return nil
 }

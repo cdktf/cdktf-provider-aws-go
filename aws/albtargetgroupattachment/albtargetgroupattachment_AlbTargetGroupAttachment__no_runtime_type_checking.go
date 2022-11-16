@@ -56,6 +56,14 @@ func validateAlbTargetGroupAttachment_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateAlbTargetGroupAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAlbTargetGroupAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlbTargetGroupAttachment) validateSetAvailabilityZoneParameters(val *string) error {
 	return nil
 }

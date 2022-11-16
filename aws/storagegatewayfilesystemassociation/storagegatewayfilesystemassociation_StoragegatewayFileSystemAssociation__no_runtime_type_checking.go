@@ -60,6 +60,14 @@ func validateStoragegatewayFileSystemAssociation_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateStoragegatewayFileSystemAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStoragegatewayFileSystemAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewayFileSystemAssociation) validateSetAuditDestinationArnParameters(val *string) error {
 	return nil
 }

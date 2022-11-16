@@ -56,6 +56,14 @@ func validateDataAwsServerlessapplicationrepositoryApplication_IsConstructParame
 	return nil
 }
 
+func validateDataAwsServerlessapplicationrepositoryApplication_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsServerlessapplicationrepositoryApplication_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsServerlessapplicationrepositoryApplication) validateSetApplicationIdParameters(val *string) error {
 	return nil
 }

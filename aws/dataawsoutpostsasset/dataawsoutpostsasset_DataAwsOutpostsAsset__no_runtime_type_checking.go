@@ -56,6 +56,14 @@ func validateDataAwsOutpostsAsset_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsOutpostsAsset_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsOutpostsAsset_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsOutpostsAsset) validateSetArnParameters(val *string) error {
 	return nil
 }

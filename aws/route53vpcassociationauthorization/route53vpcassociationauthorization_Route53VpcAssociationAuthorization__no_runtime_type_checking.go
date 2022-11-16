@@ -56,6 +56,14 @@ func validateRoute53VpcAssociationAuthorization_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateRoute53VpcAssociationAuthorization_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoute53VpcAssociationAuthorization_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53VpcAssociationAuthorization) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

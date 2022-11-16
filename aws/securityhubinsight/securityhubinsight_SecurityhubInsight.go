@@ -2,10 +2,10 @@ package securityhubinsight
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/securityhubinsight/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/securityhubinsight/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -521,6 +521,44 @@ func SecurityhubInsight_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsight",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SecurityhubInsight_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSecurityhubInsight_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsight",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SecurityhubInsight_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSecurityhubInsight_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsight",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

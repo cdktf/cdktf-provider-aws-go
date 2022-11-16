@@ -2,10 +2,10 @@ package opsworksjavaapplayer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/opsworksjavaapplayer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/opsworksjavaapplayer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1411,6 +1411,44 @@ func OpsworksJavaAppLayer_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OpsworksJavaAppLayer_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOpsworksJavaAppLayer_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OpsworksJavaAppLayer_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOpsworksJavaAppLayer_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.opsworksJavaAppLayer.OpsworksJavaAppLayer",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

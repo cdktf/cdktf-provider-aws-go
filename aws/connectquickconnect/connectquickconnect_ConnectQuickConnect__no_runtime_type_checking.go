@@ -60,6 +60,14 @@ func validateConnectQuickConnect_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateConnectQuickConnect_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConnectQuickConnect_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectQuickConnect) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateNeptuneEventSubscription_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateNeptuneEventSubscription_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNeptuneEventSubscription_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NeptuneEventSubscription) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateIotThing_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIotThing_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIotThing_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotThing) validateSetAttributesParameters(val *map[string]*string) error {
 	return nil
 }

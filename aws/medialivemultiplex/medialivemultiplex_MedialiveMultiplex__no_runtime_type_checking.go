@@ -64,6 +64,14 @@ func validateMedialiveMultiplex_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMedialiveMultiplex_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMedialiveMultiplex_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MedialiveMultiplex) validateSetAvailabilityZonesParameters(val *[]*string) error {
 	return nil
 }

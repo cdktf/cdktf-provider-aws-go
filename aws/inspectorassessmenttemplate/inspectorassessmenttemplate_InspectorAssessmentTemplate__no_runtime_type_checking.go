@@ -60,6 +60,14 @@ func validateInspectorAssessmentTemplate_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateInspectorAssessmentTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateInspectorAssessmentTemplate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_InspectorAssessmentTemplate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

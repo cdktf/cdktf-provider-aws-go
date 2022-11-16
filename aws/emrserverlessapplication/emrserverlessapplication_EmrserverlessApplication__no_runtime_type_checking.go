@@ -76,6 +76,14 @@ func validateEmrserverlessApplication_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateEmrserverlessApplication_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEmrserverlessApplication_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrserverlessApplication) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

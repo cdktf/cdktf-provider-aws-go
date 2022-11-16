@@ -60,6 +60,14 @@ func validateEc2TransitGatewayMulticastDomainAssociation_IsConstructParameters(x
 	return nil
 }
 
+func validateEc2TransitGatewayMulticastDomainAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2TransitGatewayMulticastDomainAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

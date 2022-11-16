@@ -64,6 +64,14 @@ func validateDatasyncLocationNfs_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDatasyncLocationNfs_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatasyncLocationNfs_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationNfs) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateNetworkmanagerSiteToSiteVpnAttachment_IsConstructParameters(x inter
 	return nil
 }
 
+func validateNetworkmanagerSiteToSiteVpnAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkmanagerSiteToSiteVpnAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

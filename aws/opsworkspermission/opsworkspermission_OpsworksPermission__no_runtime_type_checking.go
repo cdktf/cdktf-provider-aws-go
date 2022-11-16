@@ -56,6 +56,14 @@ func validateOpsworksPermission_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOpsworksPermission_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOpsworksPermission_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpsworksPermission) validateSetAllowSshParameters(val interface{}) error {
 	return nil
 }

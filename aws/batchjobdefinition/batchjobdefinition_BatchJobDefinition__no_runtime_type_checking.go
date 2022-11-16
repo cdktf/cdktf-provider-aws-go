@@ -64,6 +64,14 @@ func validateBatchJobDefinition_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBatchJobDefinition_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBatchJobDefinition_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchJobDefinition) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

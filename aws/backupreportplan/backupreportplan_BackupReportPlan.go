@@ -2,10 +2,10 @@ package backupreportplan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/backupreportplan/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/backupreportplan/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -637,6 +637,44 @@ func BackupReportPlan_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.backupReportPlan.BackupReportPlan",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BackupReportPlan_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBackupReportPlan_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.backupReportPlan.BackupReportPlan",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BackupReportPlan_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBackupReportPlan_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.backupReportPlan.BackupReportPlan",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

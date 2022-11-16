@@ -150,6 +150,22 @@ func validateWafregionalSqlInjectionMatchSet_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateWafregionalSqlInjectionMatchSet_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateWafregionalSqlInjectionMatchSet_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_WafregionalSqlInjectionMatchSet) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

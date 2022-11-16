@@ -64,6 +64,14 @@ func validateDataAwsVpnGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsVpnGateway_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsVpnGateway_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpnGateway) validateSetAmazonSideAsnParameters(val *string) error {
 	return nil
 }

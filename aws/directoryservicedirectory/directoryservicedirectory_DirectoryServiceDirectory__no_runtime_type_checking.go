@@ -68,6 +68,14 @@ func validateDirectoryServiceDirectory_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDirectoryServiceDirectory_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDirectoryServiceDirectory_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DirectoryServiceDirectory) validateSetAliasParameters(val *string) error {
 	return nil
 }

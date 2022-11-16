@@ -56,6 +56,14 @@ func validateDataAwsOrganizationsOrganizationalUnits_IsConstructParameters(x int
 	return nil
 }
 
+func validateDataAwsOrganizationsOrganizationalUnits_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsOrganizationsOrganizationalUnits_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsOrganizationsOrganizationalUnits) validateSetIdParameters(val *string) error {
 	return nil
 }

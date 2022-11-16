@@ -56,6 +56,14 @@ func validateDataAwsCloudfrontRealtimeLogConfig_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateDataAwsCloudfrontRealtimeLogConfig_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCloudfrontRealtimeLogConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudfrontRealtimeLogConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

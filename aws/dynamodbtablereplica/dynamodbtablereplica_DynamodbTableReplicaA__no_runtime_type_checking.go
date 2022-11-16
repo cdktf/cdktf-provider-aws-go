@@ -60,6 +60,14 @@ func validateDynamodbTableReplicaA_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDynamodbTableReplicaA_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDynamodbTableReplicaA_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbTableReplicaA) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

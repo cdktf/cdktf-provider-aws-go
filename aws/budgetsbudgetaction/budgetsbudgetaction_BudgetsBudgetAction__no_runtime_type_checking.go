@@ -68,6 +68,14 @@ func validateBudgetsBudgetAction_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBudgetsBudgetAction_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBudgetsBudgetAction_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BudgetsBudgetAction) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

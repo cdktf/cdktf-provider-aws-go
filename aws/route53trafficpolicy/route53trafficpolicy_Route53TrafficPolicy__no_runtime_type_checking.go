@@ -56,6 +56,14 @@ func validateRoute53TrafficPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRoute53TrafficPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoute53TrafficPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53TrafficPolicy) validateSetCommentParameters(val *string) error {
 	return nil
 }

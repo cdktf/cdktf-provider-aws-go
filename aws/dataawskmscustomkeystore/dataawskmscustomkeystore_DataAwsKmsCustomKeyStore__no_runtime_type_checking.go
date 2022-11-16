@@ -56,6 +56,14 @@ func validateDataAwsKmsCustomKeyStore_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataAwsKmsCustomKeyStore_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsKmsCustomKeyStore_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsKmsCustomKeyStore) validateSetCustomKeyStoreIdParameters(val *string) error {
 	return nil
 }

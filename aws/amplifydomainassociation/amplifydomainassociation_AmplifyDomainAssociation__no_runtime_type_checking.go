@@ -60,6 +60,14 @@ func validateAmplifyDomainAssociation_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateAmplifyDomainAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAmplifyDomainAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AmplifyDomainAssociation) validateSetAppIdParameters(val *string) error {
 	return nil
 }

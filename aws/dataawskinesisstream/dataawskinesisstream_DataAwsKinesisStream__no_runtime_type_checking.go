@@ -56,6 +56,14 @@ func validateDataAwsKinesisStream_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsKinesisStream_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsKinesisStream_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsKinesisStream) validateSetIdParameters(val *string) error {
 	return nil
 }

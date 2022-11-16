@@ -56,6 +56,14 @@ func validateWafregionalRegexPatternSet_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateWafregionalRegexPatternSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWafregionalRegexPatternSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafregionalRegexPatternSet) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

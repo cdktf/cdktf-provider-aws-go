@@ -56,6 +56,14 @@ func validateBackupVaultLockConfiguration_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateBackupVaultLockConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBackupVaultLockConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupVaultLockConfiguration) validateSetBackupVaultNameParameters(val *string) error {
 	return nil
 }

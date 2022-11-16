@@ -60,6 +60,14 @@ func validateWafregionalGeoMatchSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWafregionalGeoMatchSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWafregionalGeoMatchSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafregionalGeoMatchSet) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

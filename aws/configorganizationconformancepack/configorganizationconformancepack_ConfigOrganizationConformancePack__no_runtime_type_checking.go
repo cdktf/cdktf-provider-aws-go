@@ -64,6 +64,14 @@ func validateConfigOrganizationConformancePack_IsConstructParameters(x interface
 	return nil
 }
 
+func validateConfigOrganizationConformancePack_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConfigOrganizationConformancePack_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigOrganizationConformancePack) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

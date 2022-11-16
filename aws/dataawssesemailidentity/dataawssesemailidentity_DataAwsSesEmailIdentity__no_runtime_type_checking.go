@@ -56,6 +56,14 @@ func validateDataAwsSesEmailIdentity_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataAwsSesEmailIdentity_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsSesEmailIdentity_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSesEmailIdentity) validateSetEmailParameters(val *string) error {
 	return nil
 }

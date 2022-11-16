@@ -56,6 +56,14 @@ func validateCodecommitRepository_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCodecommitRepository_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCodecommitRepository_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodecommitRepository) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

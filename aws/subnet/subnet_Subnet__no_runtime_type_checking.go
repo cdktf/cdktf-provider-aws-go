@@ -60,6 +60,14 @@ func validateSubnet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSubnet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSubnet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Subnet) validateSetAssignIpv6AddressOnCreationParameters(val interface{}) error {
 	return nil
 }

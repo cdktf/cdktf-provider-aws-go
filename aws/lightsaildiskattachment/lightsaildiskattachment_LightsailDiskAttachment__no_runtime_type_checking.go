@@ -56,6 +56,14 @@ func validateLightsailDiskAttachment_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateLightsailDiskAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLightsailDiskAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailDiskAttachment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

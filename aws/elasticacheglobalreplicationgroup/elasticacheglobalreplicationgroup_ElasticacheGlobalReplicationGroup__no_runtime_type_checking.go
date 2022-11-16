@@ -60,6 +60,14 @@ func validateElasticacheGlobalReplicationGroup_IsConstructParameters(x interface
 	return nil
 }
 
+func validateElasticacheGlobalReplicationGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateElasticacheGlobalReplicationGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) validateSetAutomaticFailoverEnabledParameters(val interface{}) error {
 	return nil
 }

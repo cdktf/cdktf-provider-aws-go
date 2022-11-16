@@ -64,6 +64,14 @@ func validateEc2TrafficMirrorFilterRule_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateEc2TrafficMirrorFilterRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2TrafficMirrorFilterRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TrafficMirrorFilterRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

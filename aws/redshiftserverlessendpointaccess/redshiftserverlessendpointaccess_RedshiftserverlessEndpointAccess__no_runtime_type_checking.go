@@ -56,6 +56,14 @@ func validateRedshiftserverlessEndpointAccess_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateRedshiftserverlessEndpointAccess_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRedshiftserverlessEndpointAccess_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftserverlessEndpointAccess) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

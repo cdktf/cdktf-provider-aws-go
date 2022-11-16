@@ -119,6 +119,22 @@ func validateDataAwsSsmParametersByPath_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataAwsSsmParametersByPath_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataAwsSsmParametersByPath_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSsmParametersByPath) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

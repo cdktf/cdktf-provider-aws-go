@@ -60,6 +60,14 @@ func validateNetworkmanagerTransitGatewayRegistration_IsConstructParameters(x in
 	return nil
 }
 
+func validateNetworkmanagerTransitGatewayRegistration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkmanagerTransitGatewayRegistration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

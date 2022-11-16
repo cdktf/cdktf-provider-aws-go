@@ -56,6 +56,14 @@ func validateServiceDiscoveryInstance_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateServiceDiscoveryInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServiceDiscoveryInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceDiscoveryInstance) validateSetAttributesParameters(val *map[string]*string) error {
 	return nil
 }

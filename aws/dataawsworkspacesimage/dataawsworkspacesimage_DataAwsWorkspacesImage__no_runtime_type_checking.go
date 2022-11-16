@@ -56,6 +56,14 @@ func validateDataAwsWorkspacesImage_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsWorkspacesImage_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsWorkspacesImage_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsWorkspacesImage) validateSetIdParameters(val *string) error {
 	return nil
 }

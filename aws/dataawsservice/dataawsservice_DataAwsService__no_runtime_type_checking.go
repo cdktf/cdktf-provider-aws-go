@@ -56,6 +56,14 @@ func validateDataAwsService_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsService_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsService) validateSetDnsNameParameters(val *string) error {
 	return nil
 }

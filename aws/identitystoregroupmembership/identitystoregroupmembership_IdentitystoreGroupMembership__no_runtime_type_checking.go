@@ -56,6 +56,14 @@ func validateIdentitystoreGroupMembership_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateIdentitystoreGroupMembership_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIdentitystoreGroupMembership_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentitystoreGroupMembership) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

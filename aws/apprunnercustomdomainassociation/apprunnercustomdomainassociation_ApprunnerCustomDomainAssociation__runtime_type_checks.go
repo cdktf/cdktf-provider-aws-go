@@ -119,6 +119,22 @@ func validateApprunnerCustomDomainAssociation_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateApprunnerCustomDomainAssociation_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateApprunnerCustomDomainAssociation_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerCustomDomainAssociation) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

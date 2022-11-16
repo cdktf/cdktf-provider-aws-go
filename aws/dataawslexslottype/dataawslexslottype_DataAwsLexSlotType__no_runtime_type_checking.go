@@ -56,6 +56,14 @@ func validateDataAwsLexSlotType_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsLexSlotType_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsLexSlotType_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLexSlotType) validateSetIdParameters(val *string) error {
 	return nil
 }

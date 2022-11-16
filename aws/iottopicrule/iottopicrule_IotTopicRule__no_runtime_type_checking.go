@@ -136,6 +136,14 @@ func validateIotTopicRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIotTopicRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIotTopicRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotTopicRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

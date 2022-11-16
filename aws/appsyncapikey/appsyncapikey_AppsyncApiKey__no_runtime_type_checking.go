@@ -56,6 +56,14 @@ func validateAppsyncApiKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppsyncApiKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppsyncApiKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncApiKey) validateSetApiIdParameters(val *string) error {
 	return nil
 }

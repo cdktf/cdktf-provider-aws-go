@@ -68,6 +68,14 @@ func validateLightsailContainerService_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateLightsailContainerService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLightsailContainerService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailContainerService) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

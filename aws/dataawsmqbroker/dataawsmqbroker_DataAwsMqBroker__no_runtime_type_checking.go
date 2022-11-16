@@ -56,6 +56,14 @@ func validateDataAwsMqBroker_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsMqBroker_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsMqBroker_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsMqBroker) validateSetBrokerIdParameters(val *string) error {
 	return nil
 }

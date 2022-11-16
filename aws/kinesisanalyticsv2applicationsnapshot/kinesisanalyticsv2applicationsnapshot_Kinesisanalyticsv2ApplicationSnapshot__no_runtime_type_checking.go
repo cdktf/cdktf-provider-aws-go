@@ -60,6 +60,14 @@ func validateKinesisanalyticsv2ApplicationSnapshot_IsConstructParameters(x inter
 	return nil
 }
 
+func validateKinesisanalyticsv2ApplicationSnapshot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKinesisanalyticsv2ApplicationSnapshot_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateSetApplicationNameParameters(val *string) error {
 	return nil
 }

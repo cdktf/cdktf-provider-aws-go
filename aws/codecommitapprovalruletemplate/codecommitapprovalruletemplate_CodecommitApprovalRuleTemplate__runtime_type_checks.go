@@ -119,6 +119,22 @@ func validateCodecommitApprovalRuleTemplate_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateCodecommitApprovalRuleTemplate_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateCodecommitApprovalRuleTemplate_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CodecommitApprovalRuleTemplate) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

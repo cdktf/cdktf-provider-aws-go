@@ -132,6 +132,14 @@ func validateLaunchTemplate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLaunchTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLaunchTemplate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LaunchTemplate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

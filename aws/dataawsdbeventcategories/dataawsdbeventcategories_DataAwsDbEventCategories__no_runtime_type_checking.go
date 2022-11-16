@@ -56,6 +56,14 @@ func validateDataAwsDbEventCategories_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataAwsDbEventCategories_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsDbEventCategories_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDbEventCategories) validateSetIdParameters(val *string) error {
 	return nil
 }

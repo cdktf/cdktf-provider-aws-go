@@ -130,6 +130,22 @@ func validateNetworkmanagerTransitGatewayConnectPeerAssociation_IsConstructParam
 	return nil
 }
 
+func validateNetworkmanagerTransitGatewayConnectPeerAssociation_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateNetworkmanagerTransitGatewayConnectPeerAssociation_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerTransitGatewayConnectPeerAssociation) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

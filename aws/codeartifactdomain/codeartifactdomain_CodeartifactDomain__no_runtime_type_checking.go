@@ -56,6 +56,14 @@ func validateCodeartifactDomain_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCodeartifactDomain_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCodeartifactDomain_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodeartifactDomain) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

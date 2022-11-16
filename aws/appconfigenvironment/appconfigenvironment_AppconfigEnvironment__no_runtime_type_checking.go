@@ -60,6 +60,14 @@ func validateAppconfigEnvironment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppconfigEnvironment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppconfigEnvironment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppconfigEnvironment) validateSetApplicationIdParameters(val *string) error {
 	return nil
 }

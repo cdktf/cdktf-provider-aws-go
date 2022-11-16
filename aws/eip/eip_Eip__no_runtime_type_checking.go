@@ -60,6 +60,14 @@ func validateEip_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEip_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEip_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Eip) validateSetAddressParameters(val *string) error {
 	return nil
 }

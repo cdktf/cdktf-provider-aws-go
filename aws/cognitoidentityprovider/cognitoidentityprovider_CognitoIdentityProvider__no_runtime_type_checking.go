@@ -56,6 +56,14 @@ func validateCognitoIdentityProvider_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateCognitoIdentityProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCognitoIdentityProvider_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoIdentityProvider) validateSetAttributeMappingParameters(val *map[string]*string) error {
 	return nil
 }

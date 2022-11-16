@@ -56,6 +56,14 @@ func validateSqsQueueRedrivePolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSqsQueueRedrivePolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSqsQueueRedrivePolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqsQueueRedrivePolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

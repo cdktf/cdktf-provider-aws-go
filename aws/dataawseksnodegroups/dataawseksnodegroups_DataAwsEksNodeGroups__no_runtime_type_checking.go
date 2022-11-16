@@ -56,6 +56,14 @@ func validateDataAwsEksNodeGroups_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsEksNodeGroups_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsEksNodeGroups_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEksNodeGroups) validateSetClusterNameParameters(val *string) error {
 	return nil
 }

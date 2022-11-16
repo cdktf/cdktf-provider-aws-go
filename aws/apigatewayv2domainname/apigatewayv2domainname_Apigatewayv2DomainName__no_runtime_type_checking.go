@@ -68,6 +68,14 @@ func validateApigatewayv2DomainName_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApigatewayv2DomainName_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApigatewayv2DomainName_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2DomainName) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

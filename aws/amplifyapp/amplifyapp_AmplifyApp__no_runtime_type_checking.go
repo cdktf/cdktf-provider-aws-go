@@ -64,6 +64,14 @@ func validateAmplifyApp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAmplifyApp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAmplifyApp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AmplifyApp) validateSetAccessTokenParameters(val *string) error {
 	return nil
 }

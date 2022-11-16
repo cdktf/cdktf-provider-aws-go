@@ -60,6 +60,14 @@ func validateDataAwsAcmpcaCertificateAuthority_IsConstructParameters(x interface
 	return nil
 }
 
+func validateDataAwsAcmpcaCertificateAuthority_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsAcmpcaCertificateAuthority_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthority) validateSetArnParameters(val *string) error {
 	return nil
 }

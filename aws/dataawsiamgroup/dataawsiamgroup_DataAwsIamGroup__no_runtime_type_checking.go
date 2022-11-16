@@ -56,6 +56,14 @@ func validateDataAwsIamGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsIamGroup_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsIamGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsIamGroup) validateSetGroupNameParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateLightsailLbHttpsRedirectionPolicy_IsConstructParameters(x interface
 	return nil
 }
 
+func validateLightsailLbHttpsRedirectionPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLightsailLbHttpsRedirectionPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataAwsSecretsmanagerRandomPassword_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateDataAwsSecretsmanagerRandomPassword_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsSecretsmanagerRandomPassword_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetExcludeCharactersParameters(val *string) error {
 	return nil
 }

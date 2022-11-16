@@ -60,6 +60,14 @@ func validateDocdbClusterSnapshot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDocdbClusterSnapshot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDocdbClusterSnapshot_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DocdbClusterSnapshot) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

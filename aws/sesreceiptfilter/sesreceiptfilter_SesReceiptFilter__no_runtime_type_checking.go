@@ -56,6 +56,14 @@ func validateSesReceiptFilter_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSesReceiptFilter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSesReceiptFilter_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesReceiptFilter) validateSetCidrParameters(val *string) error {
 	return nil
 }

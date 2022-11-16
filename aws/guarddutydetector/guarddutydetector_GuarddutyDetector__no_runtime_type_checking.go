@@ -60,6 +60,14 @@ func validateGuarddutyDetector_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGuarddutyDetector_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGuarddutyDetector_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GuarddutyDetector) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

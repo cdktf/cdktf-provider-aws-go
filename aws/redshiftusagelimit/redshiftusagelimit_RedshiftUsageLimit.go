@@ -2,10 +2,10 @@ package redshiftusagelimit
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/redshiftusagelimit/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/redshiftusagelimit/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -706,6 +706,44 @@ func RedshiftUsageLimit_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftUsageLimit.RedshiftUsageLimit",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func RedshiftUsageLimit_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRedshiftUsageLimit_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.redshiftUsageLimit.RedshiftUsageLimit",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func RedshiftUsageLimit_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRedshiftUsageLimit_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.redshiftUsageLimit.RedshiftUsageLimit",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

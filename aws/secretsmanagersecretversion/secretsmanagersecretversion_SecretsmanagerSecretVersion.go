@@ -2,10 +2,10 @@ package secretsmanagersecretversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/secretsmanagersecretversion/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/secretsmanagersecretversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -580,6 +580,44 @@ func SecretsmanagerSecretVersion_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.secretsmanagerSecretVersion.SecretsmanagerSecretVersion",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SecretsmanagerSecretVersion_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSecretsmanagerSecretVersion_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.secretsmanagerSecretVersion.SecretsmanagerSecretVersion",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SecretsmanagerSecretVersion_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSecretsmanagerSecretVersion_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.secretsmanagerSecretVersion.SecretsmanagerSecretVersion",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

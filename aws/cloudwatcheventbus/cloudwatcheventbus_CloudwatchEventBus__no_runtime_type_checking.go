@@ -56,6 +56,14 @@ func validateCloudwatchEventBus_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudwatchEventBus_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudwatchEventBus_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchEventBus) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

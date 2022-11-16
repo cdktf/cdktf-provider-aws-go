@@ -56,6 +56,14 @@ func validateEbsDefaultKmsKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEbsDefaultKmsKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEbsDefaultKmsKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EbsDefaultKmsKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

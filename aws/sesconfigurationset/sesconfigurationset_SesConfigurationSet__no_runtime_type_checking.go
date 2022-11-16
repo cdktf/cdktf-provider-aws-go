@@ -64,6 +64,14 @@ func validateSesConfigurationSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSesConfigurationSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSesConfigurationSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesConfigurationSet) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

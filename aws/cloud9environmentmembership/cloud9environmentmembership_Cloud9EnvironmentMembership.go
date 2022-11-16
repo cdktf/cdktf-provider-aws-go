@@ -2,10 +2,10 @@ package cloud9environmentmembership
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/cloud9environmentmembership/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/cloud9environmentmembership/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -532,6 +532,44 @@ func Cloud9EnvironmentMembership_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Cloud9EnvironmentMembership_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCloud9EnvironmentMembership_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Cloud9EnvironmentMembership_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCloud9EnvironmentMembership_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.cloud9EnvironmentMembership.Cloud9EnvironmentMembership",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

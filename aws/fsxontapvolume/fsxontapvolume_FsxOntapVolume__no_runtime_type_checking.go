@@ -64,6 +64,14 @@ func validateFsxOntapVolume_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFsxOntapVolume_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFsxOntapVolume_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOntapVolume) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

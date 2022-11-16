@@ -56,6 +56,14 @@ func validateIamAccountAlias_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIamAccountAlias_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIamAccountAlias_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamAccountAlias) validateSetAccountAliasParameters(val *string) error {
 	return nil
 }

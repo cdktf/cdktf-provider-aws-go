@@ -119,6 +119,22 @@ func validateDataAwsLambdaFunctionUrl_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataAwsLambdaFunctionUrl_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataAwsLambdaFunctionUrl_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLambdaFunctionUrl) validateSetFunctionNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

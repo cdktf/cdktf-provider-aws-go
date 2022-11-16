@@ -130,6 +130,22 @@ func validateLocationRouteCalculator_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateLocationRouteCalculator_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateLocationRouteCalculator_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LocationRouteCalculator) validateSetCalculatorNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

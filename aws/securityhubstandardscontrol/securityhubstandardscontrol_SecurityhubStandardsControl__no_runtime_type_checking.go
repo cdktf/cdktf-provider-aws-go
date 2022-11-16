@@ -56,6 +56,14 @@ func validateSecurityhubStandardsControl_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateSecurityhubStandardsControl_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecurityhubStandardsControl_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityhubStandardsControl) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

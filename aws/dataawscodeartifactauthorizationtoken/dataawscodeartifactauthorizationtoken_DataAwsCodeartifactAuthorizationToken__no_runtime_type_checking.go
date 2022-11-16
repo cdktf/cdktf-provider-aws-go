@@ -56,6 +56,14 @@ func validateDataAwsCodeartifactAuthorizationToken_IsConstructParameters(x inter
 	return nil
 }
 
+func validateDataAwsCodeartifactAuthorizationToken_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCodeartifactAuthorizationToken_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) validateSetDomainParameters(val *string) error {
 	return nil
 }

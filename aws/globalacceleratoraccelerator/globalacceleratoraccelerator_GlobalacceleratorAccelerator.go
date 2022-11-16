@@ -2,10 +2,10 @@ package globalacceleratoraccelerator
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/globalacceleratoraccelerator/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/globalacceleratoraccelerator/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -709,6 +709,44 @@ func GlobalacceleratorAccelerator_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GlobalacceleratorAccelerator_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGlobalacceleratorAccelerator_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GlobalacceleratorAccelerator_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGlobalacceleratorAccelerator_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.globalacceleratorAccelerator.GlobalacceleratorAccelerator",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

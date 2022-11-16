@@ -56,6 +56,14 @@ func validateRedshiftserverlessNamespace_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateRedshiftserverlessNamespace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRedshiftserverlessNamespace_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetAdminUsernameParameters(val *string) error {
 	return nil
 }

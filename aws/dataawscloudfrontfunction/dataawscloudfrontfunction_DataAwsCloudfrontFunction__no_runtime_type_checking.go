@@ -56,6 +56,14 @@ func validateDataAwsCloudfrontFunction_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataAwsCloudfrontFunction_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCloudfrontFunction_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudfrontFunction) validateSetIdParameters(val *string) error {
 	return nil
 }

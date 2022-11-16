@@ -56,6 +56,14 @@ func validateApiGatewayMethodResponse_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateApiGatewayMethodResponse_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiGatewayMethodResponse_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayMethodResponse) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

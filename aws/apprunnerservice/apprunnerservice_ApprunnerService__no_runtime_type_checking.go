@@ -80,6 +80,14 @@ func validateApprunnerService_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApprunnerService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApprunnerService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerService) validateSetAutoScalingConfigurationArnParameters(val *string) error {
 	return nil
 }

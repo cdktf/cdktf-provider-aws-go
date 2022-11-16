@@ -2,10 +2,10 @@ package servicecatalogtagoptionresourceassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/servicecatalogtagoptionresourceassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/servicecatalogtagoptionresourceassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -555,6 +555,44 @@ func ServicecatalogTagOptionResourceAssociation_IsConstruct(x interface{}) *bool
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociation",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ServicecatalogTagOptionResourceAssociation_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateServicecatalogTagOptionResourceAssociation_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociation",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ServicecatalogTagOptionResourceAssociation_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateServicecatalogTagOptionResourceAssociation_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociation",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -64,6 +64,14 @@ func validateDataAwsEc2TransitGatewayPeeringAttachment_IsConstructParameters(x i
 	return nil
 }
 
+func validateDataAwsEc2TransitGatewayPeeringAttachment_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsEc2TransitGatewayPeeringAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachment) validateSetIdParameters(val *string) error {
 	return nil
 }

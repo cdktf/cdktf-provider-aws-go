@@ -56,6 +56,14 @@ func validateConnectSecurityProfile_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateConnectSecurityProfile_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConnectSecurityProfile_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectSecurityProfile) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

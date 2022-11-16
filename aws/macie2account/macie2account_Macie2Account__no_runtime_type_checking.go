@@ -56,6 +56,14 @@ func validateMacie2Account_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMacie2Account_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMacie2Account_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Macie2Account) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

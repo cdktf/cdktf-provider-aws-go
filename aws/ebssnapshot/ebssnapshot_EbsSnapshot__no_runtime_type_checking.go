@@ -60,6 +60,14 @@ func validateEbsSnapshot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEbsSnapshot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEbsSnapshot_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EbsSnapshot) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

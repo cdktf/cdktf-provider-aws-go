@@ -119,6 +119,22 @@ func validateShieldProtectionHealthCheckAssociation_IsConstructParameters(x inte
 	return nil
 }
 
+func validateShieldProtectionHealthCheckAssociation_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateShieldProtectionHealthCheckAssociation_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ShieldProtectionHealthCheckAssociation) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

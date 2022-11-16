@@ -68,6 +68,14 @@ func validateFsxWindowsFileSystem_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFsxWindowsFileSystem_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFsxWindowsFileSystem_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxWindowsFileSystem) validateSetActiveDirectoryIdParameters(val *string) error {
 	return nil
 }

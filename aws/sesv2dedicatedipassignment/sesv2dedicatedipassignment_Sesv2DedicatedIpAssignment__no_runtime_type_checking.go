@@ -60,6 +60,14 @@ func validateSesv2DedicatedIpAssignment_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateSesv2DedicatedIpAssignment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSesv2DedicatedIpAssignment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Sesv2DedicatedIpAssignment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

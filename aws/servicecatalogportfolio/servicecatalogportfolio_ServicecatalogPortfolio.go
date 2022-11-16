@@ -2,10 +2,10 @@ package servicecatalogportfolio
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/servicecatalogportfolio/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/servicecatalogportfolio/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -638,6 +638,44 @@ func ServicecatalogPortfolio_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolio",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ServicecatalogPortfolio_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateServicecatalogPortfolio_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolio",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ServicecatalogPortfolio_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateServicecatalogPortfolio_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.servicecatalogPortfolio.ServicecatalogPortfolio",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

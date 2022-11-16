@@ -60,6 +60,14 @@ func validateLocationGeofenceCollection_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateLocationGeofenceCollection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLocationGeofenceCollection_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LocationGeofenceCollection) validateSetCollectionNameParameters(val *string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package apigatewayintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/apigatewayintegration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/apigatewayintegration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -999,6 +999,44 @@ func ApiGatewayIntegration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegration",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ApiGatewayIntegration_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApiGatewayIntegration_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegration",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ApiGatewayIntegration_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApiGatewayIntegration_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.apiGatewayIntegration.ApiGatewayIntegration",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -60,6 +60,14 @@ func validateGrafanaRoleAssociation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGrafanaRoleAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGrafanaRoleAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GrafanaRoleAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

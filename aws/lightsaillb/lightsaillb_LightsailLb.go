@@ -2,10 +2,10 @@ package lightsaillb
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/lightsaillb/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/lightsaillb/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -693,6 +693,44 @@ func LightsailLb_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lightsailLb.LightsailLb",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LightsailLb_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLightsailLb_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.lightsailLb.LightsailLb",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LightsailLb_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLightsailLb_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.lightsailLb.LightsailLb",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

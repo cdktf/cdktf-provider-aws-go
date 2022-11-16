@@ -56,6 +56,14 @@ func validateMediaPackageChannel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMediaPackageChannel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMediaPackageChannel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaPackageChannel) validateSetChannelIdParameters(val *string) error {
 	return nil
 }

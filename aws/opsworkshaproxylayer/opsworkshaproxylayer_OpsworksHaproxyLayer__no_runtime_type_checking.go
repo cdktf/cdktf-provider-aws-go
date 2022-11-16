@@ -68,6 +68,14 @@ func validateOpsworksHaproxyLayer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOpsworksHaproxyLayer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOpsworksHaproxyLayer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpsworksHaproxyLayer) validateSetAutoAssignElasticIpsParameters(val interface{}) error {
 	return nil
 }

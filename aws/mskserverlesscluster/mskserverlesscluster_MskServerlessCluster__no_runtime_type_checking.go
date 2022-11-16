@@ -68,6 +68,14 @@ func validateMskServerlessCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMskServerlessCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMskServerlessCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MskServerlessCluster) validateSetClusterNameParameters(val *string) error {
 	return nil
 }

@@ -88,6 +88,14 @@ func validateCloudfrontDistribution_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudfrontDistribution_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudfrontDistribution_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontDistribution) validateSetAliasesParameters(val *[]*string) error {
 	return nil
 }

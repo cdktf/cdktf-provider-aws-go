@@ -64,6 +64,14 @@ func validateDbProxyDefaultTargetGroup_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDbProxyDefaultTargetGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDbProxyDefaultTargetGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbProxyDefaultTargetGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateKmsKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKmsKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKmsKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsKey) validateSetBypassPolicyLockoutSafetyCheckParameters(val interface{}) error {
 	return nil
 }

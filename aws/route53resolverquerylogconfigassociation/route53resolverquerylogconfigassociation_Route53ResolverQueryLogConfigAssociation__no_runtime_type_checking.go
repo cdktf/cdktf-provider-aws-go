@@ -56,6 +56,14 @@ func validateRoute53ResolverQueryLogConfigAssociation_IsConstructParameters(x in
 	return nil
 }
 
+func validateRoute53ResolverQueryLogConfigAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoute53ResolverQueryLogConfigAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -80,6 +80,14 @@ func validateEcsTaskDefinition_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEcsTaskDefinition_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEcsTaskDefinition_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsTaskDefinition) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

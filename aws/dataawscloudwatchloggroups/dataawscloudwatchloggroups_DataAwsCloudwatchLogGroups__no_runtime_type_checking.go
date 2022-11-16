@@ -56,6 +56,14 @@ func validateDataAwsCloudwatchLogGroups_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataAwsCloudwatchLogGroups_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCloudwatchLogGroups_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudwatchLogGroups) validateSetIdParameters(val *string) error {
 	return nil
 }

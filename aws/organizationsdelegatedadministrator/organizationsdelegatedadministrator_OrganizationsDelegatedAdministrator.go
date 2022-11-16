@@ -2,10 +2,10 @@ package organizationsdelegatedadministrator
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/organizationsdelegatedadministrator/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/organizationsdelegatedadministrator/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -564,6 +564,44 @@ func OrganizationsDelegatedAdministrator_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OrganizationsDelegatedAdministrator_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOrganizationsDelegatedAdministrator_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OrganizationsDelegatedAdministrator_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOrganizationsDelegatedAdministrator_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.organizationsDelegatedAdministrator.OrganizationsDelegatedAdministrator",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -56,6 +56,14 @@ func validateRoute53HostedZoneDnssec_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateRoute53HostedZoneDnssec_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoute53HostedZoneDnssec_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53HostedZoneDnssec) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package defaultvpc
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/defaultvpc/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/defaultvpc/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -995,6 +995,44 @@ func DefaultVpc_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.defaultVpc.DefaultVpc",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DefaultVpc_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDefaultVpc_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.defaultVpc.DefaultVpc",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DefaultVpc_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDefaultVpc_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.defaultVpc.DefaultVpc",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

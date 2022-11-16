@@ -2,10 +2,10 @@ package locationmap
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/locationmap/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/locationmap/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -614,6 +614,44 @@ func LocationMap_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.locationMap.LocationMap",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LocationMap_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLocationMap_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.locationMap.LocationMap",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LocationMap_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLocationMap_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.locationMap.LocationMap",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -2,10 +2,10 @@ package s3controlmultiregionaccesspoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/s3controlmultiregionaccesspoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/s3controlmultiregionaccesspoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -545,6 +545,44 @@ func S3ControlMultiRegionAccessPoint_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func S3ControlMultiRegionAccessPoint_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateS3ControlMultiRegionAccessPoint_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func S3ControlMultiRegionAccessPoint_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateS3ControlMultiRegionAccessPoint_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.s3ControlMultiRegionAccessPoint.S3ControlMultiRegionAccessPoint",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

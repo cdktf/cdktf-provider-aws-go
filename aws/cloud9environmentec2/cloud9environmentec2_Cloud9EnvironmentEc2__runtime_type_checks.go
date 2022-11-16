@@ -119,6 +119,22 @@ func validateCloud9EnvironmentEc2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloud9EnvironmentEc2_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateCloud9EnvironmentEc2_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Cloud9EnvironmentEc2) validateSetAutomaticStopTimeMinutesParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

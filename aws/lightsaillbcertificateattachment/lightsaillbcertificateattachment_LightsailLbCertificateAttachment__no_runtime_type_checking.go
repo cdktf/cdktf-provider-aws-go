@@ -56,6 +56,14 @@ func validateLightsailLbCertificateAttachment_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateLightsailLbCertificateAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLightsailLbCertificateAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailLbCertificateAttachment) validateSetCertificateNameParameters(val *string) error {
 	return nil
 }

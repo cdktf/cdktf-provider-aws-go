@@ -64,6 +64,14 @@ func validateDefaultRouteTable_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDefaultRouteTable_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDefaultRouteTable_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DefaultRouteTable) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

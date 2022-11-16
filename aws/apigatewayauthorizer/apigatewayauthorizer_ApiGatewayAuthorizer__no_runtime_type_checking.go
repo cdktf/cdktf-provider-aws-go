@@ -56,6 +56,14 @@ func validateApiGatewayAuthorizer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApiGatewayAuthorizer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiGatewayAuthorizer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayAuthorizer) validateSetAuthorizerCredentialsParameters(val *string) error {
 	return nil
 }

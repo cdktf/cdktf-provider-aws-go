@@ -56,6 +56,14 @@ func validateQuicksightGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateQuicksightGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateQuicksightGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightGroup) validateSetAwsAccountIdParameters(val *string) error {
 	return nil
 }

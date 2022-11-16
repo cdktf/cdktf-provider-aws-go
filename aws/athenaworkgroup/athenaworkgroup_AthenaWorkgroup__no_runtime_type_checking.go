@@ -60,6 +60,14 @@ func validateAthenaWorkgroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAthenaWorkgroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAthenaWorkgroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AthenaWorkgroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

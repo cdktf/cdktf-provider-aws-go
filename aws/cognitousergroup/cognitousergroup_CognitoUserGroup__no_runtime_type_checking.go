@@ -56,6 +56,14 @@ func validateCognitoUserGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCognitoUserGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCognitoUserGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoUserGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

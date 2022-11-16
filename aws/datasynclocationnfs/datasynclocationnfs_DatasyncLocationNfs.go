@@ -2,10 +2,10 @@ package datasynclocationnfs
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/datasynclocationnfs/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/datasynclocationnfs/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -626,6 +626,44 @@ func DatasyncLocationNfs_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.datasyncLocationNfs.DatasyncLocationNfs",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DatasyncLocationNfs_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDatasyncLocationNfs_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.datasyncLocationNfs.DatasyncLocationNfs",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DatasyncLocationNfs_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDatasyncLocationNfs_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.datasyncLocationNfs.DatasyncLocationNfs",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

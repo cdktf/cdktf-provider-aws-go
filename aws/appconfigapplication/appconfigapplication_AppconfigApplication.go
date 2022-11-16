@@ -2,10 +2,10 @@ package appconfigapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/appconfigapplication/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/appconfigapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -569,6 +569,44 @@ func AppconfigApplication_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appconfigApplication.AppconfigApplication",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AppconfigApplication_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAppconfigApplication_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.appconfigApplication.AppconfigApplication",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AppconfigApplication_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAppconfigApplication_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.appconfigApplication.AppconfigApplication",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

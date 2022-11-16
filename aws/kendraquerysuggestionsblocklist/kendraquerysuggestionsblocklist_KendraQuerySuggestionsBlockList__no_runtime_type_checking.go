@@ -64,6 +64,14 @@ func validateKendraQuerySuggestionsBlockList_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateKendraQuerySuggestionsBlockList_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKendraQuerySuggestionsBlockList_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KendraQuerySuggestionsBlockList) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

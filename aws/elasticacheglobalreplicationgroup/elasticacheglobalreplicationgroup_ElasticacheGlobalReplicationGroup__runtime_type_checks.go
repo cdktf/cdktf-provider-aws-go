@@ -130,6 +130,22 @@ func validateElasticacheGlobalReplicationGroup_IsConstructParameters(x interface
 	return nil
 }
 
+func validateElasticacheGlobalReplicationGroup_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateElasticacheGlobalReplicationGroup_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) validateSetAutomaticFailoverEnabledParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

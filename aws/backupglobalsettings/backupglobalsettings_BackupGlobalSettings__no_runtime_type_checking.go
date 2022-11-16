@@ -56,6 +56,14 @@ func validateBackupGlobalSettings_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBackupGlobalSettings_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBackupGlobalSettings_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupGlobalSettings) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

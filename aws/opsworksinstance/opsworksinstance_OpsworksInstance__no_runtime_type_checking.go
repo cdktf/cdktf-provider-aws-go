@@ -72,6 +72,14 @@ func validateOpsworksInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOpsworksInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOpsworksInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpsworksInstance) validateSetAgentVersionParameters(val *string) error {
 	return nil
 }

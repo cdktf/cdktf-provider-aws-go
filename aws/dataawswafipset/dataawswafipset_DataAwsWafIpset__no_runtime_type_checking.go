@@ -56,6 +56,14 @@ func validateDataAwsWafIpset_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsWafIpset_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsWafIpset_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsWafIpset) validateSetIdParameters(val *string) error {
 	return nil
 }

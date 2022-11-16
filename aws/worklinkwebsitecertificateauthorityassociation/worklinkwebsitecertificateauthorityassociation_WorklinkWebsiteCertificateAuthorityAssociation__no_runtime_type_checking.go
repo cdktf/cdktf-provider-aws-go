@@ -56,6 +56,14 @@ func validateWorklinkWebsiteCertificateAuthorityAssociation_IsConstructParameter
 	return nil
 }
 
+func validateWorklinkWebsiteCertificateAuthorityAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWorklinkWebsiteCertificateAuthorityAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateSetCertificateParameters(val *string) error {
 	return nil
 }

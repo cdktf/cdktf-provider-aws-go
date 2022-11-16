@@ -56,6 +56,14 @@ func validateMemorydbAcl_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMemorydbAcl_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMemorydbAcl_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemorydbAcl) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

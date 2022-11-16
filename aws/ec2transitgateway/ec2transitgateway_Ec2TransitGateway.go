@@ -2,10 +2,10 @@ package ec2transitgateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/ec2transitgateway/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/ec2transitgateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -872,6 +872,44 @@ func Ec2TransitGateway_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Ec2TransitGateway_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEc2TransitGateway_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Ec2TransitGateway_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEc2TransitGateway_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ec2TransitGateway.Ec2TransitGateway",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

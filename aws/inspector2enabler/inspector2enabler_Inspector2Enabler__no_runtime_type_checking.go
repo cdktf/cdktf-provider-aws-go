@@ -60,6 +60,14 @@ func validateInspector2Enabler_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateInspector2Enabler_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateInspector2Enabler_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Inspector2Enabler) validateSetAccountIdsParameters(val *[]*string) error {
 	return nil
 }

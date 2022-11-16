@@ -80,6 +80,14 @@ func validateKendraIndex_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKendraIndex_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKendraIndex_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KendraIndex) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

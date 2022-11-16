@@ -2,10 +2,10 @@ package sagemakerdevicefleet
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/sagemakerdevicefleet/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/sagemakerdevicefleet/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -672,6 +672,44 @@ func SagemakerDeviceFleet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerDeviceFleet.SagemakerDeviceFleet",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SagemakerDeviceFleet_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSagemakerDeviceFleet_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.sagemakerDeviceFleet.SagemakerDeviceFleet",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SagemakerDeviceFleet_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSagemakerDeviceFleet_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.sagemakerDeviceFleet.SagemakerDeviceFleet",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -56,6 +56,14 @@ func validateAcmpcaCertificateAuthorityCertificate_IsConstructParameters(x inter
 	return nil
 }
 
+func validateAcmpcaCertificateAuthorityCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAcmpcaCertificateAuthorityCertificate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificate) validateSetCertificateParameters(val *string) error {
 	return nil
 }

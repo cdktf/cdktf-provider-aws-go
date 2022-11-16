@@ -2,10 +2,10 @@ package storagegatewaynfsfileshare
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/storagegatewaynfsfileshare/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/storagegatewaynfsfileshare/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1185,6 +1185,44 @@ func StoragegatewayNfsFileShare_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func StoragegatewayNfsFileShare_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateStoragegatewayNfsFileShare_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func StoragegatewayNfsFileShare_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateStoragegatewayNfsFileShare_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.storagegatewayNfsFileShare.StoragegatewayNfsFileShare",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -56,6 +56,14 @@ func validateDataAwsCloudformationExport_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAwsCloudformationExport_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCloudformationExport_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudformationExport) validateSetIdParameters(val *string) error {
 	return nil
 }

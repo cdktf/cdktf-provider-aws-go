@@ -64,6 +64,14 @@ func validateDataAwsVpcDhcpOptions_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsVpcDhcpOptions_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsVpcDhcpOptions_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpcDhcpOptions) validateSetDhcpOptionsIdParameters(val *string) error {
 	return nil
 }

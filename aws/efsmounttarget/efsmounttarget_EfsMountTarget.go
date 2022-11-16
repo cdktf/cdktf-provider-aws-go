@@ -2,10 +2,10 @@ package efsmounttarget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/efsmounttarget/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/efsmounttarget/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -634,6 +634,44 @@ func EfsMountTarget_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.efsMountTarget.EfsMountTarget",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EfsMountTarget_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEfsMountTarget_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.efsMountTarget.EfsMountTarget",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EfsMountTarget_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEfsMountTarget_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.efsMountTarget.EfsMountTarget",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

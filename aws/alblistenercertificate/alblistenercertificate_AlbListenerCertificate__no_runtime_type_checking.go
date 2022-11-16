@@ -56,6 +56,14 @@ func validateAlbListenerCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAlbListenerCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAlbListenerCertificate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlbListenerCertificate) validateSetCertificateArnParameters(val *string) error {
 	return nil
 }

@@ -119,6 +119,22 @@ func validateDataAwsNeptuneEngineVersion_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAwsNeptuneEngineVersion_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataAwsNeptuneEngineVersion_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNeptuneEngineVersion) validateSetEngineParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

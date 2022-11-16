@@ -64,6 +64,14 @@ func validateTransferServer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateTransferServer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTransferServer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransferServer) validateSetCertificateParameters(val *string) error {
 	return nil
 }

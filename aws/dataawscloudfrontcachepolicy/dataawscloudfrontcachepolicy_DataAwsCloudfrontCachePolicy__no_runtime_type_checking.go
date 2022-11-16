@@ -56,6 +56,14 @@ func validateDataAwsCloudfrontCachePolicy_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataAwsCloudfrontCachePolicy_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCloudfrontCachePolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudfrontCachePolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -119,6 +119,22 @@ func validateS3OutpostsEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateS3OutpostsEndpoint_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateS3OutpostsEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_S3OutpostsEndpoint) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

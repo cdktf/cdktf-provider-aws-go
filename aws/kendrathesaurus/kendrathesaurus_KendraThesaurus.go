@@ -2,10 +2,10 @@ package kendrathesaurus
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/kendrathesaurus/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/kendrathesaurus/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -706,6 +706,44 @@ func KendraThesaurus_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kendraThesaurus.KendraThesaurus",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func KendraThesaurus_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateKendraThesaurus_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.kendraThesaurus.KendraThesaurus",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func KendraThesaurus_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateKendraThesaurus_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.kendraThesaurus.KendraThesaurus",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

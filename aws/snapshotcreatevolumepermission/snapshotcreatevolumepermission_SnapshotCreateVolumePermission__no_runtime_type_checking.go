@@ -60,6 +60,14 @@ func validateSnapshotCreateVolumePermission_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateSnapshotCreateVolumePermission_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSnapshotCreateVolumePermission_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SnapshotCreateVolumePermission) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

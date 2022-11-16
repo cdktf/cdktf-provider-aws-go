@@ -56,6 +56,14 @@ func validateBackupVaultNotifications_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateBackupVaultNotifications_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBackupVaultNotifications_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupVaultNotifications) validateSetBackupVaultEventsParameters(val *[]*string) error {
 	return nil
 }

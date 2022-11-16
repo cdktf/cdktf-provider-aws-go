@@ -56,6 +56,14 @@ func validateWafv2IpSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWafv2IpSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWafv2IpSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Wafv2IpSet) validateSetAddressesParameters(val *[]*string) error {
 	return nil
 }

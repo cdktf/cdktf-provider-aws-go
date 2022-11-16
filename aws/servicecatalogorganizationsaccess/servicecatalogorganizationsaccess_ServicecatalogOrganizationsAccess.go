@@ -2,10 +2,10 @@ package servicecatalogorganizationsaccess
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/servicecatalogorganizationsaccess/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/servicecatalogorganizationsaccess/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -477,6 +477,44 @@ func ServicecatalogOrganizationsAccess_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ServicecatalogOrganizationsAccess_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateServicecatalogOrganizationsAccess_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ServicecatalogOrganizationsAccess_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateServicecatalogOrganizationsAccess_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.servicecatalogOrganizationsAccess.ServicecatalogOrganizationsAccess",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

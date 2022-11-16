@@ -56,6 +56,14 @@ func validateSesDomainDkim_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSesDomainDkim_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSesDomainDkim_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesDomainDkim) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

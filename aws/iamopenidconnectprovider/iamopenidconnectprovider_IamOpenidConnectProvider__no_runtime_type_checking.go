@@ -56,6 +56,14 @@ func validateIamOpenidConnectProvider_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateIamOpenidConnectProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIamOpenidConnectProvider_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamOpenidConnectProvider) validateSetClientIdListParameters(val *[]*string) error {
 	return nil
 }

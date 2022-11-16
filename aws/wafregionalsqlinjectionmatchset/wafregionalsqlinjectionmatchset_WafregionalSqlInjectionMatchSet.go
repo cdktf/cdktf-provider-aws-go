@@ -2,10 +2,10 @@ package wafregionalsqlinjectionmatchset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/wafregionalsqlinjectionmatchset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/wafregionalsqlinjectionmatchset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -477,6 +477,44 @@ func WafregionalSqlInjectionMatchSet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSet",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func WafregionalSqlInjectionMatchSet_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateWafregionalSqlInjectionMatchSet_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSet",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func WafregionalSqlInjectionMatchSet_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateWafregionalSqlInjectionMatchSet_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.wafregionalSqlInjectionMatchSet.WafregionalSqlInjectionMatchSet",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

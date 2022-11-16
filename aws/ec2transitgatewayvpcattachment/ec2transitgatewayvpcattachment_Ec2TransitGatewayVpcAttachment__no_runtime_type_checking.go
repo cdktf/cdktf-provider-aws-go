@@ -56,6 +56,14 @@ func validateEc2TransitGatewayVpcAttachment_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateEc2TransitGatewayVpcAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2TransitGatewayVpcAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayVpcAttachment) validateSetApplianceModeSupportParameters(val *string) error {
 	return nil
 }

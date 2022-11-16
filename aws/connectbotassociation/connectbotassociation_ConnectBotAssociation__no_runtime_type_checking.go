@@ -60,6 +60,14 @@ func validateConnectBotAssociation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateConnectBotAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConnectBotAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectBotAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

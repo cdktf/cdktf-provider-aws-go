@@ -60,6 +60,14 @@ func validateSecretsmanagerSecretRotation_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateSecretsmanagerSecretRotation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecretsmanagerSecretRotation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsmanagerSecretRotation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

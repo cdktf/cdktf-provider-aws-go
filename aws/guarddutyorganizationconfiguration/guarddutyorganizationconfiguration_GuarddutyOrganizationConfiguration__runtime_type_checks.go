@@ -130,6 +130,22 @@ func validateGuarddutyOrganizationConfiguration_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateGuarddutyOrganizationConfiguration_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGuarddutyOrganizationConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GuarddutyOrganizationConfiguration) validateSetAutoEnableParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

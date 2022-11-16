@@ -64,6 +64,14 @@ func validateBatchComputeEnvironment_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateBatchComputeEnvironment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBatchComputeEnvironment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchComputeEnvironment) validateSetComputeEnvironmentNameParameters(val *string) error {
 	return nil
 }

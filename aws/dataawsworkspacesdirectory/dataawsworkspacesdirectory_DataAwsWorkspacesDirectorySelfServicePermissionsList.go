@@ -2,9 +2,9 @@ package dataawsworkspacesdirectory
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/dataawsworkspacesdirectory/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/dataawsworkspacesdirectory/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

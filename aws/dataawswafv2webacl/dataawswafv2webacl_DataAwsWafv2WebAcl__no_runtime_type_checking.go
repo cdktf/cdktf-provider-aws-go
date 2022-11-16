@@ -56,6 +56,14 @@ func validateDataAwsWafv2WebAcl_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsWafv2WebAcl_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsWafv2WebAcl_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsWafv2WebAcl) validateSetIdParameters(val *string) error {
 	return nil
 }

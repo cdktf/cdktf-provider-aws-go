@@ -56,6 +56,14 @@ func validateSecurityhubInviteAccepter_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateSecurityhubInviteAccepter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecurityhubInviteAccepter_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityhubInviteAccepter) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

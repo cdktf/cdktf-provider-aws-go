@@ -64,6 +64,14 @@ func validateGluePartitionIndex_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGluePartitionIndex_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGluePartitionIndex_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GluePartitionIndex) validateSetCatalogIdParameters(val *string) error {
 	return nil
 }

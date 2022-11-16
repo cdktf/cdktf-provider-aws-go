@@ -108,6 +108,14 @@ func validateCognitoUserPool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCognitoUserPool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCognitoUserPool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoUserPool) validateSetAliasAttributesParameters(val *[]*string) error {
 	return nil
 }

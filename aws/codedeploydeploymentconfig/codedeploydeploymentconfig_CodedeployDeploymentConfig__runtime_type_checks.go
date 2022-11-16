@@ -141,6 +141,22 @@ func validateCodedeployDeploymentConfig_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateCodedeployDeploymentConfig_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateCodedeployDeploymentConfig_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CodedeployDeploymentConfig) validateSetComputePlatformParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -2,10 +2,10 @@ package datasynctask
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/datasynctask/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/datasynctask/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -758,6 +758,44 @@ func DatasyncTask_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.datasyncTask.DatasyncTask",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DatasyncTask_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDatasyncTask_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.datasyncTask.DatasyncTask",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DatasyncTask_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDatasyncTask_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.datasyncTask.DatasyncTask",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

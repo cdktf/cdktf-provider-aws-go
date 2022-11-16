@@ -60,6 +60,14 @@ func validateConnectQueue_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateConnectQueue_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConnectQueue_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectQueue) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateLbCookieStickinessPolicy_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateLbCookieStickinessPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLbCookieStickinessPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbCookieStickinessPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

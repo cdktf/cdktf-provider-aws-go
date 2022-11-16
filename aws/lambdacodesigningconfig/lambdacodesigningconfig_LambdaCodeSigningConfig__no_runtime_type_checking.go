@@ -64,6 +64,14 @@ func validateLambdaCodeSigningConfig_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateLambdaCodeSigningConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLambdaCodeSigningConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaCodeSigningConfig) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

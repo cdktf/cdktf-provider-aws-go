@@ -56,6 +56,14 @@ func validateDataAwsMemorydbUser_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsMemorydbUser_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsMemorydbUser_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsMemorydbUser) validateSetIdParameters(val *string) error {
 	return nil
 }

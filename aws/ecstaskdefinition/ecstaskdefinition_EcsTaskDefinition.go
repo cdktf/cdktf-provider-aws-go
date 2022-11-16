@@ -2,10 +2,10 @@ package ecstaskdefinition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/ecstaskdefinition/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/ecstaskdefinition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1038,6 +1038,44 @@ func EcsTaskDefinition_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EcsTaskDefinition_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEcsTaskDefinition_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EcsTaskDefinition_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEcsTaskDefinition_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ecsTaskDefinition.EcsTaskDefinition",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

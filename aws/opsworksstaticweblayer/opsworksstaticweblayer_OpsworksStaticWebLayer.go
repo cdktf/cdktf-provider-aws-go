@@ -2,10 +2,10 @@ package opsworksstaticweblayer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/opsworksstaticweblayer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/opsworksstaticweblayer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1236,6 +1236,44 @@ func OpsworksStaticWebLayer_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OpsworksStaticWebLayer_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOpsworksStaticWebLayer_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OpsworksStaticWebLayer_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOpsworksStaticWebLayer_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.opsworksStaticWebLayer.OpsworksStaticWebLayer",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

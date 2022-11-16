@@ -60,6 +60,14 @@ func validateS3ControlBucketLifecycleConfiguration_IsConstructParameters(x inter
 	return nil
 }
 
+func validateS3ControlBucketLifecycleConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateS3ControlBucketLifecycleConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3ControlBucketLifecycleConfiguration) validateSetBucketParameters(val *string) error {
 	return nil
 }

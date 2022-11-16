@@ -60,6 +60,14 @@ func validateDatasyncAgent_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDatasyncAgent_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatasyncAgent_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncAgent) validateSetActivationKeyParameters(val *string) error {
 	return nil
 }

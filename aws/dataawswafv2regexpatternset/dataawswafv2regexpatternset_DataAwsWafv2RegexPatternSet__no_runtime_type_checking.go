@@ -56,6 +56,14 @@ func validateDataAwsWafv2RegexPatternSet_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAwsWafv2RegexPatternSet_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsWafv2RegexPatternSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsWafv2RegexPatternSet) validateSetIdParameters(val *string) error {
 	return nil
 }

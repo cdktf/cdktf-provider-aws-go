@@ -60,6 +60,14 @@ func validateConnectInstanceStorageConfig_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateConnectInstanceStorageConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConnectInstanceStorageConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectInstanceStorageConfig) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

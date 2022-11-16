@@ -56,6 +56,14 @@ func validateEipAssociation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEipAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEipAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EipAssociation) validateSetAllocationIdParameters(val *string) error {
 	return nil
 }

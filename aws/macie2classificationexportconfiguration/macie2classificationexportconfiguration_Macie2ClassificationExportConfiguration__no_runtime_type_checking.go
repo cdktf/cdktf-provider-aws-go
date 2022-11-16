@@ -60,6 +60,14 @@ func validateMacie2ClassificationExportConfiguration_IsConstructParameters(x int
 	return nil
 }
 
+func validateMacie2ClassificationExportConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMacie2ClassificationExportConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Macie2ClassificationExportConfiguration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

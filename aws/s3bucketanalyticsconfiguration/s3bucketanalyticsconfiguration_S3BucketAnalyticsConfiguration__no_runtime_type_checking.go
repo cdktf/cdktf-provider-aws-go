@@ -64,6 +64,14 @@ func validateS3BucketAnalyticsConfiguration_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateS3BucketAnalyticsConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateS3BucketAnalyticsConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketAnalyticsConfiguration) validateSetBucketParameters(val *string) error {
 	return nil
 }

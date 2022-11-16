@@ -56,6 +56,14 @@ func validateDataAwsRoute53DelegationSet_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAwsRoute53DelegationSet_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsRoute53DelegationSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRoute53DelegationSet) validateSetIdParameters(val *string) error {
 	return nil
 }

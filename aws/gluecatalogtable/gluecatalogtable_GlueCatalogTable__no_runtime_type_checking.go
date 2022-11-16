@@ -72,6 +72,14 @@ func validateGlueCatalogTable_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGlueCatalogTable_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGlueCatalogTable_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueCatalogTable) validateSetCatalogIdParameters(val *string) error {
 	return nil
 }

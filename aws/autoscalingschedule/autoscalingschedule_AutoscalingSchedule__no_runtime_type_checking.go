@@ -56,6 +56,14 @@ func validateAutoscalingSchedule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAutoscalingSchedule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAutoscalingSchedule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingSchedule) validateSetAutoscalingGroupNameParameters(val *string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package macie2findingsfilter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/macie2findingsfilter/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/macie2findingsfilter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -697,6 +697,44 @@ func Macie2FindingsFilter_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.macie2FindingsFilter.Macie2FindingsFilter",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Macie2FindingsFilter_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMacie2FindingsFilter_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.macie2FindingsFilter.Macie2FindingsFilter",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Macie2FindingsFilter_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMacie2FindingsFilter_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.macie2FindingsFilter.Macie2FindingsFilter",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -56,6 +56,14 @@ func validateDataAwsDxLocation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsDxLocation_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsDxLocation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDxLocation) validateSetIdParameters(val *string) error {
 	return nil
 }

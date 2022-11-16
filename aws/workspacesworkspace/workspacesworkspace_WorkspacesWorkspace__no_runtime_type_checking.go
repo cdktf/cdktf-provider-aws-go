@@ -64,6 +64,14 @@ func validateWorkspacesWorkspace_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWorkspacesWorkspace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWorkspacesWorkspace_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkspacesWorkspace) validateSetBundleIdParameters(val *string) error {
 	return nil
 }

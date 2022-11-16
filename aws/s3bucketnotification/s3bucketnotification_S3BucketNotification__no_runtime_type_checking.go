@@ -68,6 +68,14 @@ func validateS3BucketNotification_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateS3BucketNotification_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateS3BucketNotification_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketNotification) validateSetBucketParameters(val *string) error {
 	return nil
 }

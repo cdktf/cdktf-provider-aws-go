@@ -64,6 +64,14 @@ func validateDefaultNetworkAcl_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDefaultNetworkAcl_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDefaultNetworkAcl_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DefaultNetworkAcl) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

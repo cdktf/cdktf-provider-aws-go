@@ -2,10 +2,10 @@ package sagemakerimageversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/sagemakerimageversion/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/sagemakerimageversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -531,6 +531,44 @@ func SagemakerImageVersion_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SagemakerImageVersion_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSagemakerImageVersion_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SagemakerImageVersion_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSagemakerImageVersion_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.sagemakerImageVersion.SagemakerImageVersion",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

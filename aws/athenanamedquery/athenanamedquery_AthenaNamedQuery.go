@@ -2,10 +2,10 @@ package athenanamedquery
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/athenanamedquery/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/athenanamedquery/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -591,6 +591,44 @@ func AthenaNamedQuery_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQuery",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AthenaNamedQuery_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAthenaNamedQuery_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQuery",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AthenaNamedQuery_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAthenaNamedQuery_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.athenaNamedQuery.AthenaNamedQuery",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

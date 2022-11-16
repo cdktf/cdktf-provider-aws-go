@@ -60,6 +60,14 @@ func validateS3BucketServerSideEncryptionConfigurationA_IsConstructParameters(x 
 	return nil
 }
 
+func validateS3BucketServerSideEncryptionConfigurationA_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateS3BucketServerSideEncryptionConfigurationA_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateSetBucketParameters(val *string) error {
 	return nil
 }

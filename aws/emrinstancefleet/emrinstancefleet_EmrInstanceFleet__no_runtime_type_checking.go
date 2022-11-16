@@ -64,6 +64,14 @@ func validateEmrInstanceFleet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEmrInstanceFleet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEmrInstanceFleet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrInstanceFleet) validateSetClusterIdParameters(val *string) error {
 	return nil
 }

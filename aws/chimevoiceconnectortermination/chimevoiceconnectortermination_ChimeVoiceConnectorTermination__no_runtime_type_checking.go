@@ -56,6 +56,14 @@ func validateChimeVoiceConnectorTermination_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateChimeVoiceConnectorTermination_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateChimeVoiceConnectorTermination_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ChimeVoiceConnectorTermination) validateSetCallingRegionsParameters(val *[]*string) error {
 	return nil
 }

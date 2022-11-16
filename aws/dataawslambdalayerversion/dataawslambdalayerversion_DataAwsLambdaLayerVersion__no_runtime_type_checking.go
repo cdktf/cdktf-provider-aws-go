@@ -56,6 +56,14 @@ func validateDataAwsLambdaLayerVersion_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataAwsLambdaLayerVersion_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsLambdaLayerVersion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLambdaLayerVersion) validateSetCompatibleArchitectureParameters(val *string) error {
 	return nil
 }

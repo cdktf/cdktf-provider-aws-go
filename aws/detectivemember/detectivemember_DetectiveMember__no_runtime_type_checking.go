@@ -56,6 +56,14 @@ func validateDetectiveMember_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDetectiveMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDetectiveMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DetectiveMember) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateMacie2FindingsFilter_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMacie2FindingsFilter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMacie2FindingsFilter_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Macie2FindingsFilter) validateSetActionParameters(val *string) error {
 	return nil
 }

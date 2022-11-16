@@ -119,6 +119,22 @@ func validateSecurityhubOrganizationConfiguration_IsConstructParameters(x interf
 	return nil
 }
 
+func validateSecurityhubOrganizationConfiguration_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateSecurityhubOrganizationConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SecurityhubOrganizationConfiguration) validateSetAutoEnableParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

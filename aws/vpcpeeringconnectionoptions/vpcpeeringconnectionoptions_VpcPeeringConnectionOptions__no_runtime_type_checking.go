@@ -64,6 +64,14 @@ func validateVpcPeeringConnectionOptions_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateVpcPeeringConnectionOptions_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpcPeeringConnectionOptions_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcPeeringConnectionOptions) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

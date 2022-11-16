@@ -56,6 +56,14 @@ func validateDynamodbTag_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDynamodbTag_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDynamodbTag_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbTag) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

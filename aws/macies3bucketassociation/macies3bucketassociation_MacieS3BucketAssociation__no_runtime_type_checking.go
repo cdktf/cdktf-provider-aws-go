@@ -60,6 +60,14 @@ func validateMacieS3BucketAssociation_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateMacieS3BucketAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMacieS3BucketAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MacieS3BucketAssociation) validateSetBucketNameParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateNetworkmanagerVpcAttachment_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateNetworkmanagerVpcAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkmanagerVpcAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerVpcAttachment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataAwsElasticBeanstalkApplication_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateDataAwsElasticBeanstalkApplication_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsElasticBeanstalkApplication_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsElasticBeanstalkApplication) validateSetIdParameters(val *string) error {
 	return nil
 }

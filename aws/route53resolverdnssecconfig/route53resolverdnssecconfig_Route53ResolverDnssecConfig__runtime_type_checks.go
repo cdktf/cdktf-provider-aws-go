@@ -119,6 +119,22 @@ func validateRoute53ResolverDnssecConfig_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateRoute53ResolverDnssecConfig_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateRoute53ResolverDnssecConfig_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Route53ResolverDnssecConfig) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

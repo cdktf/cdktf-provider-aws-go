@@ -2,10 +2,10 @@ package codepipelinewebhook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/codepipelinewebhook/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/codepipelinewebhook/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -694,6 +694,44 @@ func CodepipelineWebhook_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhook",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CodepipelineWebhook_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCodepipelineWebhook_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhook",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CodepipelineWebhook_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCodepipelineWebhook_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.codepipelineWebhook.CodepipelineWebhook",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

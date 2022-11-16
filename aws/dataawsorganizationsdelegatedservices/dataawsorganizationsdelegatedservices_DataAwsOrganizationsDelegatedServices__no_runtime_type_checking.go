@@ -56,6 +56,14 @@ func validateDataAwsOrganizationsDelegatedServices_IsConstructParameters(x inter
 	return nil
 }
 
+func validateDataAwsOrganizationsDelegatedServices_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsOrganizationsDelegatedServices_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsOrganizationsDelegatedServices) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

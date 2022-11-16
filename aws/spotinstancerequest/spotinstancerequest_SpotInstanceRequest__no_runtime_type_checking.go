@@ -104,6 +104,14 @@ func validateSpotInstanceRequest_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSpotInstanceRequest_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSpotInstanceRequest_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpotInstanceRequest) validateSetAmiParameters(val *string) error {
 	return nil
 }

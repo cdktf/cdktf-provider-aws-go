@@ -60,6 +60,14 @@ func validateCloudcontrolapiResource_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateCloudcontrolapiResource_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudcontrolapiResource_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudcontrolapiResource) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

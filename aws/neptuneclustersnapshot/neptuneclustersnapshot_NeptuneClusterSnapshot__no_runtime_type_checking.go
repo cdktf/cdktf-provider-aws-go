@@ -60,6 +60,14 @@ func validateNeptuneClusterSnapshot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNeptuneClusterSnapshot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNeptuneClusterSnapshot_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NeptuneClusterSnapshot) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

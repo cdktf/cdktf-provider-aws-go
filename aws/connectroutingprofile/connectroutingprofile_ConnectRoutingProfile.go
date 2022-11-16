@@ -2,10 +2,10 @@ package connectroutingprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/connectroutingprofile/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/connectroutingprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -705,6 +705,44 @@ func ConnectRoutingProfile_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfile",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ConnectRoutingProfile_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateConnectRoutingProfile_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfile",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ConnectRoutingProfile_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateConnectRoutingProfile_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfile",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -2,10 +2,10 @@ package transfersshkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/transfersshkey/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/transfersshkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -521,6 +521,44 @@ func TransferSshKey_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.transferSshKey.TransferSshKey",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func TransferSshKey_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateTransferSshKey_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.transferSshKey.TransferSshKey",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func TransferSshKey_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateTransferSshKey_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.transferSshKey.TransferSshKey",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -2,10 +2,10 @@ package appsyncfunction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/appsyncfunction/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/appsyncfunction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -740,6 +740,44 @@ func AppsyncFunction_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appsyncFunction.AppsyncFunction",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AppsyncFunction_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAppsyncFunction_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.appsyncFunction.AppsyncFunction",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AppsyncFunction_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAppsyncFunction_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.appsyncFunction.AppsyncFunction",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

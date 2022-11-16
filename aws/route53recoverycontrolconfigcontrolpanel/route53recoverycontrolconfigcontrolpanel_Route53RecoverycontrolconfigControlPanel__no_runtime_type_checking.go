@@ -56,6 +56,14 @@ func validateRoute53RecoverycontrolconfigControlPanel_IsConstructParameters(x in
 	return nil
 }
 
+func validateRoute53RecoverycontrolconfigControlPanel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoute53RecoverycontrolconfigControlPanel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53RecoverycontrolconfigControlPanel) validateSetClusterArnParameters(val *string) error {
 	return nil
 }

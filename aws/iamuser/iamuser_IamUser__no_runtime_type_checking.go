@@ -56,6 +56,14 @@ func validateIamUser_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIamUser_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIamUser_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamUser) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

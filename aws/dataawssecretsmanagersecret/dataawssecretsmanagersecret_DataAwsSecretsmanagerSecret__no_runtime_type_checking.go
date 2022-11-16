@@ -56,6 +56,14 @@ func validateDataAwsSecretsmanagerSecret_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAwsSecretsmanagerSecret_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsSecretsmanagerSecret_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSecretsmanagerSecret) validateSetArnParameters(val *string) error {
 	return nil
 }

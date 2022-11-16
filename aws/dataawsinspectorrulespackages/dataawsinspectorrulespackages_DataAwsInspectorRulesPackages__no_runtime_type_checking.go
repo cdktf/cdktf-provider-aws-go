@@ -56,6 +56,14 @@ func validateDataAwsInspectorRulesPackages_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataAwsInspectorRulesPackages_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsInspectorRulesPackages_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsInspectorRulesPackages) validateSetIdParameters(val *string) error {
 	return nil
 }

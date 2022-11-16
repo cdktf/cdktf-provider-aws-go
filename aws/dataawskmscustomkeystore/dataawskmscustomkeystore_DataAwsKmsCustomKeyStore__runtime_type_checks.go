@@ -119,6 +119,22 @@ func validateDataAwsKmsCustomKeyStore_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataAwsKmsCustomKeyStore_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataAwsKmsCustomKeyStore_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsKmsCustomKeyStore) validateSetCustomKeyStoreIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

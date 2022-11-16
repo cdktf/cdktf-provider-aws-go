@@ -64,6 +64,14 @@ func validateDirectoryServiceRegion_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDirectoryServiceRegion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDirectoryServiceRegion_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DirectoryServiceRegion) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

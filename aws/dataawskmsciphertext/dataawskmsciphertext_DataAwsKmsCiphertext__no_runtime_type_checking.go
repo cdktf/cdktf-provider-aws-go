@@ -56,6 +56,14 @@ func validateDataAwsKmsCiphertext_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsKmsCiphertext_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsKmsCiphertext_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsKmsCiphertext) validateSetContextParameters(val *map[string]*string) error {
 	return nil
 }

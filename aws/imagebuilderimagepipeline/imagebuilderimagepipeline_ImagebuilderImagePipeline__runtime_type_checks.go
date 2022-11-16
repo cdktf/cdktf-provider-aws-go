@@ -141,6 +141,22 @@ func validateImagebuilderImagePipeline_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateImagebuilderImagePipeline_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateImagebuilderImagePipeline_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

@@ -56,6 +56,14 @@ func validateLambdaInvocation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLambdaInvocation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLambdaInvocation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaInvocation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

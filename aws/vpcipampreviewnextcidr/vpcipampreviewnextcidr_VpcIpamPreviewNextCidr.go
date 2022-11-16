@@ -2,10 +2,10 @@ package vpcipampreviewnextcidr
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/vpcipampreviewnextcidr/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/vpcipampreviewnextcidr/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -534,6 +534,44 @@ func VpcIpamPreviewNextCidr_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcIpamPreviewNextCidr.VpcIpamPreviewNextCidr",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VpcIpamPreviewNextCidr_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVpcIpamPreviewNextCidr_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.vpcIpamPreviewNextCidr.VpcIpamPreviewNextCidr",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VpcIpamPreviewNextCidr_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVpcIpamPreviewNextCidr_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.vpcIpamPreviewNextCidr.VpcIpamPreviewNextCidr",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

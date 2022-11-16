@@ -56,6 +56,14 @@ func validateDataAwsMskCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsMskCluster_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsMskCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsMskCluster) validateSetClusterNameParameters(val *string) error {
 	return nil
 }

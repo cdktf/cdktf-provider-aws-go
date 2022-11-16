@@ -119,6 +119,22 @@ func validateS3ControlAccessPointPolicy_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateS3ControlAccessPointPolicy_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateS3ControlAccessPointPolicy_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_S3ControlAccessPointPolicy) validateSetAccessPointArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

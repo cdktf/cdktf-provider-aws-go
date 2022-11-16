@@ -60,6 +60,14 @@ func validateServerlessapplicationrepositoryCloudformationStack_IsConstructParam
 	return nil
 }
 
+func validateServerlessapplicationrepositoryCloudformationStack_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServerlessapplicationrepositoryCloudformationStack_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateSetApplicationIdParameters(val *string) error {
 	return nil
 }

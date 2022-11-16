@@ -2,9 +2,9 @@ package wafv2webacl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/wafv2webacl/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/wafv2webacl/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

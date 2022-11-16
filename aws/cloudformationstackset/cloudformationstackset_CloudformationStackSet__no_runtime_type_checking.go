@@ -68,6 +68,14 @@ func validateCloudformationStackSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudformationStackSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudformationStackSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudformationStackSet) validateSetAdministrationRoleArnParameters(val *string) error {
 	return nil
 }

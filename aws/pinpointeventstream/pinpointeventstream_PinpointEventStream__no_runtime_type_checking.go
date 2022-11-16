@@ -56,6 +56,14 @@ func validatePinpointEventStream_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePinpointEventStream_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePinpointEventStream_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointEventStream) validateSetApplicationIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDxConnectionConfirmation_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDxConnectionConfirmation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDxConnectionConfirmation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DxConnectionConfirmation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

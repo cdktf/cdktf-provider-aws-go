@@ -60,6 +60,14 @@ func validateDirectoryServiceRadiusSettings_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDirectoryServiceRadiusSettings_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDirectoryServiceRadiusSettings_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DirectoryServiceRadiusSettings) validateSetAuthenticationProtocolParameters(val *string) error {
 	return nil
 }

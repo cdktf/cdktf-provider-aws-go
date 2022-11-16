@@ -60,6 +60,14 @@ func validateAppmeshMesh_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppmeshMesh_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppmeshMesh_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppmeshMesh) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataAwsIamAccountAlias_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsIamAccountAlias_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsIamAccountAlias_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsIamAccountAlias) validateSetIdParameters(val *string) error {
 	return nil
 }

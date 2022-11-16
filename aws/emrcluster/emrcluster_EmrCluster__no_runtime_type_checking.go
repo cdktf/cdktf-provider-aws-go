@@ -92,6 +92,14 @@ func validateEmrCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEmrCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEmrCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrCluster) validateSetAdditionalInfoParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateSagemakerNotebookInstance_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateSagemakerNotebookInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSagemakerNotebookInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerNotebookInstance) validateSetAcceleratorTypesParameters(val *[]*string) error {
 	return nil
 }

@@ -72,6 +72,14 @@ func validateCloudwatchMetricStream_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudwatchMetricStream_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudwatchMetricStream_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchMetricStream) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataAwsImagebuilderImageRecipe_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataAwsImagebuilderImageRecipe_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsImagebuilderImageRecipe_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsImagebuilderImageRecipe) validateSetArnParameters(val *string) error {
 	return nil
 }

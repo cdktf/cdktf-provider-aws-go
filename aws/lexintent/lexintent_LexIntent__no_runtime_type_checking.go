@@ -88,6 +88,14 @@ func validateLexIntent_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLexIntent_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLexIntent_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LexIntent) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package secretsmanagersecretrotation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/secretsmanagersecretrotation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/secretsmanagersecretrotation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -521,6 +521,44 @@ func SecretsmanagerSecretRotation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SecretsmanagerSecretRotation_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSecretsmanagerSecretRotation_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SecretsmanagerSecretRotation_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSecretsmanagerSecretRotation_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.secretsmanagerSecretRotation.SecretsmanagerSecretRotation",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

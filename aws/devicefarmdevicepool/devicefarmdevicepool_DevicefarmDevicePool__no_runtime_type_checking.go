@@ -60,6 +60,14 @@ func validateDevicefarmDevicePool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDevicefarmDevicePool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDevicefarmDevicePool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicefarmDevicePool) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

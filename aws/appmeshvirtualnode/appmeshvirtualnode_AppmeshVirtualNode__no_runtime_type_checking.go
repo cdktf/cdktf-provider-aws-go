@@ -60,6 +60,14 @@ func validateAppmeshVirtualNode_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppmeshVirtualNode_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppmeshVirtualNode_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppmeshVirtualNode) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

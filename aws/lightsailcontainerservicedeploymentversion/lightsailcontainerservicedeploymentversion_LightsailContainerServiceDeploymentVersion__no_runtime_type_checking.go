@@ -68,6 +68,14 @@ func validateLightsailContainerServiceDeploymentVersion_IsConstructParameters(x 
 	return nil
 }
 
+func validateLightsailContainerServiceDeploymentVersion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLightsailContainerServiceDeploymentVersion_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailContainerServiceDeploymentVersion) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -68,6 +68,14 @@ func validateMwaaEnvironment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMwaaEnvironment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMwaaEnvironment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwaaEnvironment) validateSetAirflowConfigurationOptionsParameters(val *map[string]*string) error {
 	return nil
 }

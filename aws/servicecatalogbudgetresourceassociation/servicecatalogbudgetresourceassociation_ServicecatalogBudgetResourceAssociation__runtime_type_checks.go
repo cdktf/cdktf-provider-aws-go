@@ -130,6 +130,22 @@ func validateServicecatalogBudgetResourceAssociation_IsConstructParameters(x int
 	return nil
 }
 
+func validateServicecatalogBudgetResourceAssociation_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateServicecatalogBudgetResourceAssociation_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateSetBudgetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

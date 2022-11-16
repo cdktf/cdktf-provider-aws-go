@@ -2,10 +2,10 @@ package spotfleetrequest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/spotfleetrequest/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/spotfleetrequest/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1305,6 +1305,44 @@ func SpotFleetRequest_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequest",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SpotFleetRequest_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSpotFleetRequest_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequest",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SpotFleetRequest_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSpotFleetRequest_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequest",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -56,6 +56,14 @@ func validateDataAwsWorkspacesDirectory_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataAwsWorkspacesDirectory_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsWorkspacesDirectory_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsWorkspacesDirectory) validateSetDirectoryIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataAwsImagebuilderDistributionConfiguration_IsConstructParameters(
 	return nil
 }
 
+func validateDataAwsImagebuilderDistributionConfiguration_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsImagebuilderDistributionConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsImagebuilderDistributionConfiguration) validateSetArnParameters(val *string) error {
 	return nil
 }

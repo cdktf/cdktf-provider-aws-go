@@ -60,6 +60,14 @@ func validateSagemakerApp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSagemakerApp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSagemakerApp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerApp) validateSetAppNameParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateSnsPlatformApplication_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSnsPlatformApplication_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSnsPlatformApplication_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SnsPlatformApplication) validateSetApplePlatformBundleIdParameters(val *string) error {
 	return nil
 }

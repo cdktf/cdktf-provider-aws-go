@@ -76,6 +76,14 @@ func validateRdsCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRdsCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRdsCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsCluster) validateSetAllocatedStorageParameters(val *float64) error {
 	return nil
 }

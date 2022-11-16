@@ -68,6 +68,14 @@ func validateCloudtrail_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudtrail_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudtrail_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cloudtrail) validateSetCloudWatchLogsGroupArnParameters(val *string) error {
 	return nil
 }

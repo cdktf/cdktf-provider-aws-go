@@ -60,6 +60,14 @@ func validateAppintegrationsEventIntegration_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateAppintegrationsEventIntegration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppintegrationsEventIntegration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppintegrationsEventIntegration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

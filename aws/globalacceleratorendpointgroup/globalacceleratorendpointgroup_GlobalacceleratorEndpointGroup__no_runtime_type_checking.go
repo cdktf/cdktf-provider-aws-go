@@ -68,6 +68,14 @@ func validateGlobalacceleratorEndpointGroup_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateGlobalacceleratorEndpointGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGlobalacceleratorEndpointGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlobalacceleratorEndpointGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

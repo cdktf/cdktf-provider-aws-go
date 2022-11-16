@@ -56,6 +56,14 @@ func validateLightsailDisk_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLightsailDisk_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLightsailDisk_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailDisk) validateSetAvailabilityZoneParameters(val *string) error {
 	return nil
 }

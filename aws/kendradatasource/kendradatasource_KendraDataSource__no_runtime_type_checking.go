@@ -68,6 +68,14 @@ func validateKendraDataSource_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKendraDataSource_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKendraDataSource_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KendraDataSource) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

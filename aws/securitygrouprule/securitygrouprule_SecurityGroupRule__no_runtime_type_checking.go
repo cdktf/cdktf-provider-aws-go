@@ -60,6 +60,14 @@ func validateSecurityGroupRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSecurityGroupRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecurityGroupRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityGroupRule) validateSetCidrBlocksParameters(val *[]*string) error {
 	return nil
 }

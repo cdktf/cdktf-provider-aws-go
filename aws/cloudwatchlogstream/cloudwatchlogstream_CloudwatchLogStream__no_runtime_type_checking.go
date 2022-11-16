@@ -56,6 +56,14 @@ func validateCloudwatchLogStream_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudwatchLogStream_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudwatchLogStream_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchLogStream) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

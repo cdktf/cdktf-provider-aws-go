@@ -60,6 +60,14 @@ func validateWafRegexMatchSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWafRegexMatchSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWafRegexMatchSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafRegexMatchSet) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

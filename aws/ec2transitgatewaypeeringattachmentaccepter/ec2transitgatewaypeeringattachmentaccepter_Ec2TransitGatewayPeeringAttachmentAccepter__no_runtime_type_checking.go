@@ -56,6 +56,14 @@ func validateEc2TransitGatewayPeeringAttachmentAccepter_IsConstructParameters(x 
 	return nil
 }
 
+func validateEc2TransitGatewayPeeringAttachmentAccepter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2TransitGatewayPeeringAttachmentAccepter_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachmentAccepter) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

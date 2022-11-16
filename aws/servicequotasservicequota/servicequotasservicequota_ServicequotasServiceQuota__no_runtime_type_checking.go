@@ -56,6 +56,14 @@ func validateServicequotasServiceQuota_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateServicequotasServiceQuota_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServicequotasServiceQuota_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicequotasServiceQuota) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -130,6 +130,22 @@ func validateDatasyncLocationFsxOpenzfsFileSystem_IsConstructParameters(x interf
 	return nil
 }
 
+func validateDatasyncLocationFsxOpenzfsFileSystem_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDatasyncLocationFsxOpenzfsFileSystem_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

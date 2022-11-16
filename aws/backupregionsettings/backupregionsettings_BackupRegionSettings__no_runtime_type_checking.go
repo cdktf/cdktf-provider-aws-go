@@ -56,6 +56,14 @@ func validateBackupRegionSettings_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBackupRegionSettings_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBackupRegionSettings_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupRegionSettings) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

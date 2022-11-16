@@ -60,6 +60,14 @@ func validateCognitoIdentityPool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCognitoIdentityPool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCognitoIdentityPool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoIdentityPool) validateSetAllowClassicFlowParameters(val interface{}) error {
 	return nil
 }

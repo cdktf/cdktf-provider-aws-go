@@ -56,6 +56,14 @@ func validateEmrStudioSessionMapping_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateEmrStudioSessionMapping_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEmrStudioSessionMapping_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrStudioSessionMapping) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

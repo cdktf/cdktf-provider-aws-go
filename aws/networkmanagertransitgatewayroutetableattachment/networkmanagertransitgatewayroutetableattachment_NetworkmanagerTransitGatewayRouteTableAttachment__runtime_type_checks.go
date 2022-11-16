@@ -130,6 +130,22 @@ func validateNetworkmanagerTransitGatewayRouteTableAttachment_IsConstructParamet
 	return nil
 }
 
+func validateNetworkmanagerTransitGatewayRouteTableAttachment_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateNetworkmanagerTransitGatewayRouteTableAttachment_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

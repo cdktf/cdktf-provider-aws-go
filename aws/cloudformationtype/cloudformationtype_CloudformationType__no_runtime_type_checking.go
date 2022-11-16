@@ -60,6 +60,14 @@ func validateCloudformationType_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudformationType_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudformationType_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudformationType) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataAwsBatchComputeEnvironment_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataAwsBatchComputeEnvironment_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsBatchComputeEnvironment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsBatchComputeEnvironment) validateSetComputeEnvironmentNameParameters(val *string) error {
 	return nil
 }

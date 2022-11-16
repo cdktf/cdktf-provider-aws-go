@@ -56,6 +56,14 @@ func validateVpcEndpointConnectionNotification_IsConstructParameters(x interface
 	return nil
 }
 
+func validateVpcEndpointConnectionNotification_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpcEndpointConnectionNotification_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointConnectionNotification) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

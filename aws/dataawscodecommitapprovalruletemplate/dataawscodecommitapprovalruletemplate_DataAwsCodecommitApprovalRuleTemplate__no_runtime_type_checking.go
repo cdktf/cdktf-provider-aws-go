@@ -56,6 +56,14 @@ func validateDataAwsCodecommitApprovalRuleTemplate_IsConstructParameters(x inter
 	return nil
 }
 
+func validateDataAwsCodecommitApprovalRuleTemplate_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCodecommitApprovalRuleTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCodecommitApprovalRuleTemplate) validateSetIdParameters(val *string) error {
 	return nil
 }

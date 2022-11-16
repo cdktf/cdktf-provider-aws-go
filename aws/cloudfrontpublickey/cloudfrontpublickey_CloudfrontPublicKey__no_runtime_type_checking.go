@@ -56,6 +56,14 @@ func validateCloudfrontPublicKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudfrontPublicKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudfrontPublicKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontPublicKey) validateSetCommentParameters(val *string) error {
 	return nil
 }

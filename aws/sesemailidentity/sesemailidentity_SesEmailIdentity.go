@@ -2,10 +2,10 @@ package sesemailidentity
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/sesemailidentity/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/sesemailidentity/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -464,6 +464,44 @@ func SesEmailIdentity_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SesEmailIdentity_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSesEmailIdentity_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SesEmailIdentity_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSesEmailIdentity_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.sesEmailIdentity.SesEmailIdentity",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

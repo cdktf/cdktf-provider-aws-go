@@ -64,6 +64,14 @@ func validateEksFargateProfile_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEksFargateProfile_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEksFargateProfile_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EksFargateProfile) validateSetClusterNameParameters(val *string) error {
 	return nil
 }

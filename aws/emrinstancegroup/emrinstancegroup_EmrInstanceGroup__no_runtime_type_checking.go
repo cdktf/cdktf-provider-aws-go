@@ -60,6 +60,14 @@ func validateEmrInstanceGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEmrInstanceGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEmrInstanceGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrInstanceGroup) validateSetAutoscalingPolicyParameters(val *string) error {
 	return nil
 }

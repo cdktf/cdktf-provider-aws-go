@@ -56,6 +56,14 @@ func validateDataexchangeDataSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataexchangeDataSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataexchangeDataSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataexchangeDataSet) validateSetAssetTypeParameters(val *string) error {
 	return nil
 }

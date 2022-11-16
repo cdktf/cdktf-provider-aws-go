@@ -60,6 +60,14 @@ func validateAutoscalingGroupTagA_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAutoscalingGroupTagA_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAutoscalingGroupTagA_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingGroupTagA) validateSetAutoscalingGroupNameParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,14 @@ func validateAppsyncGraphqlApi_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppsyncGraphqlApi_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppsyncGraphqlApi_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncGraphqlApi) validateSetAuthenticationTypeParameters(val *string) error {
 	return nil
 }

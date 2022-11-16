@@ -68,6 +68,14 @@ func validateAutoscalingPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAutoscalingPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAutoscalingPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingPolicy) validateSetAdjustmentTypeParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateRoute53ResolverFirewallRuleGroup_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateRoute53ResolverFirewallRuleGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoute53ResolverFirewallRuleGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53ResolverFirewallRuleGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

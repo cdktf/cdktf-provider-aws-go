@@ -56,6 +56,14 @@ func validateSesIdentityNotificationTopic_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateSesIdentityNotificationTopic_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSesIdentityNotificationTopic_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesIdentityNotificationTopic) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

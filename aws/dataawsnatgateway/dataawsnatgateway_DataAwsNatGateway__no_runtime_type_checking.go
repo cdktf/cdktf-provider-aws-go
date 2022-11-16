@@ -64,6 +64,14 @@ func validateDataAwsNatGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsNatGateway_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsNatGateway_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNatGateway) validateSetIdParameters(val *string) error {
 	return nil
 }

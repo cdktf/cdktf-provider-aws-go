@@ -56,6 +56,14 @@ func validateNeptuneClusterEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateNeptuneClusterEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNeptuneClusterEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NeptuneClusterEndpoint) validateSetClusterEndpointIdentifierParameters(val *string) error {
 	return nil
 }

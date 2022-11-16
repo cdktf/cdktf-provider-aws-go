@@ -60,6 +60,14 @@ func validateSecurityhubInsight_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSecurityhubInsight_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecurityhubInsight_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityhubInsight) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

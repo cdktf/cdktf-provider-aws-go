@@ -2,10 +2,10 @@ package inspector2delegatedadminaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/inspector2delegatedadminaccount/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/inspector2delegatedadminaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -488,6 +488,44 @@ func Inspector2DelegatedAdminAccount_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccount",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Inspector2DelegatedAdminAccount_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateInspector2DelegatedAdminAccount_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccount",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Inspector2DelegatedAdminAccount_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateInspector2DelegatedAdminAccount_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.inspector2DelegatedAdminAccount.Inspector2DelegatedAdminAccount",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

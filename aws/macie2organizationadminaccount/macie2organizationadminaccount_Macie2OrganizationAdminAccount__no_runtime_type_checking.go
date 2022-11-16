@@ -56,6 +56,14 @@ func validateMacie2OrganizationAdminAccount_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateMacie2OrganizationAdminAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMacie2OrganizationAdminAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Macie2OrganizationAdminAccount) validateSetAdminAccountIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateCustomerGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCustomerGateway_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCustomerGateway_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomerGateway) validateSetBgpAsnParameters(val *string) error {
 	return nil
 }

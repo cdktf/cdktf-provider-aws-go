@@ -2,10 +2,10 @@ package sagemakerhumantaskui
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/sagemakerhumantaskui/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/sagemakerhumantaskui/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -557,6 +557,44 @@ func SagemakerHumanTaskUi_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SagemakerHumanTaskUi_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSagemakerHumanTaskUi_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SagemakerHumanTaskUi_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSagemakerHumanTaskUi_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.sagemakerHumanTaskUi.SagemakerHumanTaskUi",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

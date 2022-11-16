@@ -56,6 +56,14 @@ func validateDataAwsCloudwatchEventBus_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataAwsCloudwatchEventBus_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCloudwatchEventBus_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudwatchEventBus) validateSetIdParameters(val *string) error {
 	return nil
 }

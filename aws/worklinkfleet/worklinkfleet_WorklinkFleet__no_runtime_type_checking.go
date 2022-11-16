@@ -64,6 +64,14 @@ func validateWorklinkFleet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWorklinkFleet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWorklinkFleet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorklinkFleet) validateSetAuditStreamArnParameters(val *string) error {
 	return nil
 }

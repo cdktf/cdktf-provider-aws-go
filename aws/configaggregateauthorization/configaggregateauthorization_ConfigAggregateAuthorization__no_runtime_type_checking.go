@@ -56,6 +56,14 @@ func validateConfigAggregateAuthorization_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateConfigAggregateAuthorization_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConfigAggregateAuthorization_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigAggregateAuthorization) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

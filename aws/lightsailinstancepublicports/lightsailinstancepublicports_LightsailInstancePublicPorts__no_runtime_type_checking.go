@@ -60,6 +60,14 @@ func validateLightsailInstancePublicPorts_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateLightsailInstancePublicPorts_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLightsailInstancePublicPorts_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailInstancePublicPorts) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

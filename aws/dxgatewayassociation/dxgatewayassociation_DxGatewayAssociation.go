@@ -2,10 +2,10 @@ package dxgatewayassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/dxgatewayassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/dxgatewayassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -685,6 +685,44 @@ func DxGatewayAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociation",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DxGatewayAssociation_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDxGatewayAssociation_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociation",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DxGatewayAssociation_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDxGatewayAssociation_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dxGatewayAssociation.DxGatewayAssociation",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

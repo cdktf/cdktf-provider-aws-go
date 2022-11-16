@@ -88,6 +88,14 @@ func validateDynamodbTable_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDynamodbTable_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDynamodbTable_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbTable) validateSetBillingModeParameters(val *string) error {
 	return nil
 }

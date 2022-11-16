@@ -76,6 +76,14 @@ func validateGameliftFleet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGameliftFleet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGameliftFleet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GameliftFleet) validateSetBuildIdParameters(val *string) error {
 	return nil
 }

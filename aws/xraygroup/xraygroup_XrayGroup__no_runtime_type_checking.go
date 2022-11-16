@@ -60,6 +60,14 @@ func validateXrayGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateXrayGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateXrayGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_XrayGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

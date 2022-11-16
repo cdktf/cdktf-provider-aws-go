@@ -56,6 +56,14 @@ func validateDataAwsLakeformationDataLakeSettings_IsConstructParameters(x interf
 	return nil
 }
 
+func validateDataAwsLakeformationDataLakeSettings_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsLakeformationDataLakeSettings_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) validateSetCatalogIdParameters(val *string) error {
 	return nil
 }

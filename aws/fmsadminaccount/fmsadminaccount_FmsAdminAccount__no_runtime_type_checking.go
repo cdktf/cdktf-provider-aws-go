@@ -56,6 +56,14 @@ func validateFmsAdminAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFmsAdminAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFmsAdminAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FmsAdminAccount) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package opsworkshaproxylayer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/opsworkshaproxylayer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/opsworkshaproxylayer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1445,6 +1445,44 @@ func OpsworksHaproxyLayer_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayer",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OpsworksHaproxyLayer_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOpsworksHaproxyLayer_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayer",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OpsworksHaproxyLayer_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOpsworksHaproxyLayer_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.opsworksHaproxyLayer.OpsworksHaproxyLayer",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

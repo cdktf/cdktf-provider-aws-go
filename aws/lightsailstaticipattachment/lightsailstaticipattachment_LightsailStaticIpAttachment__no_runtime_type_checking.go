@@ -56,6 +56,14 @@ func validateLightsailStaticIpAttachment_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateLightsailStaticIpAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLightsailStaticIpAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailStaticIpAttachment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

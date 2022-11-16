@@ -56,6 +56,14 @@ func validateDataAwsRegion_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsRegion_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsRegion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRegion) validateSetEndpointParameters(val *string) error {
 	return nil
 }

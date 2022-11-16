@@ -2,10 +2,10 @@ package lakeformationdatalakesettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/lakeformationdatalakesettings/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/lakeformationdatalakesettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -572,6 +572,44 @@ func LakeformationDataLakeSettings_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettings",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LakeformationDataLakeSettings_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLakeformationDataLakeSettings_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettings",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LakeformationDataLakeSettings_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLakeformationDataLakeSettings_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.lakeformationDataLakeSettings.LakeformationDataLakeSettings",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -56,6 +56,14 @@ func validateAmplifyBackendEnvironment_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateAmplifyBackendEnvironment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAmplifyBackendEnvironment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AmplifyBackendEnvironment) validateSetAppIdParameters(val *string) error {
 	return nil
 }

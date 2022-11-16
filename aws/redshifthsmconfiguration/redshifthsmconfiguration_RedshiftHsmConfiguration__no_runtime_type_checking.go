@@ -56,6 +56,14 @@ func validateRedshiftHsmConfiguration_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateRedshiftHsmConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRedshiftHsmConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftHsmConfiguration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

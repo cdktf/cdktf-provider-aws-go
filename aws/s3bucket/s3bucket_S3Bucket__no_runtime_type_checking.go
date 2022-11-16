@@ -96,6 +96,14 @@ func validateS3Bucket_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateS3Bucket_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateS3Bucket_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3Bucket) validateSetAccelerationStatusParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateDaxParameterGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDaxParameterGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDaxParameterGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DaxParameterGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

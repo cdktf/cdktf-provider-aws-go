@@ -64,6 +64,14 @@ func validateCodestarconnectionsHost_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateCodestarconnectionsHost_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCodestarconnectionsHost_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodestarconnectionsHost) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

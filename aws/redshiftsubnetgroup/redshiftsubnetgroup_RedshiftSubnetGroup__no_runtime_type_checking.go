@@ -56,6 +56,14 @@ func validateRedshiftSubnetGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRedshiftSubnetGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRedshiftSubnetGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftSubnetGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateMemorydbSnapshot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMemorydbSnapshot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMemorydbSnapshot_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemorydbSnapshot) validateSetClusterNameParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,14 @@ func validateSesv2ConfigurationSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSesv2ConfigurationSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSesv2ConfigurationSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Sesv2ConfigurationSet) validateSetConfigurationSetNameParameters(val *string) error {
 	return nil
 }

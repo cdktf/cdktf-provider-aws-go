@@ -56,6 +56,14 @@ func validateAthenaNamedQuery_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAthenaNamedQuery_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAthenaNamedQuery_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AthenaNamedQuery) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

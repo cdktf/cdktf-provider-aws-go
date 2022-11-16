@@ -150,6 +150,22 @@ func validateS3BucketServerSideEncryptionConfigurationA_IsConstructParameters(x 
 	return nil
 }
 
+func validateS3BucketServerSideEncryptionConfigurationA_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateS3BucketServerSideEncryptionConfigurationA_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateSetBucketParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

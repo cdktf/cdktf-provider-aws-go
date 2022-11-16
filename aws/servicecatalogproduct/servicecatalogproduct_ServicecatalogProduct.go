@@ -2,10 +2,10 @@ package servicecatalogproduct
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/servicecatalogproduct/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/servicecatalogproduct/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -892,6 +892,44 @@ func ServicecatalogProduct_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProduct",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ServicecatalogProduct_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateServicecatalogProduct_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProduct",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ServicecatalogProduct_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateServicecatalogProduct_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.servicecatalogProduct.ServicecatalogProduct",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

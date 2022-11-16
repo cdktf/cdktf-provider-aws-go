@@ -56,6 +56,14 @@ func validateDataAwsWorkspacesBundle_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataAwsWorkspacesBundle_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsWorkspacesBundle_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsWorkspacesBundle) validateSetBundleIdParameters(val *string) error {
 	return nil
 }

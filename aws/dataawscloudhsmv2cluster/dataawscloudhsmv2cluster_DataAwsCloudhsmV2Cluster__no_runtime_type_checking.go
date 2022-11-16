@@ -56,6 +56,14 @@ func validateDataAwsCloudhsmV2Cluster_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataAwsCloudhsmV2Cluster_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCloudhsmV2Cluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudhsmV2Cluster) validateSetClusterIdParameters(val *string) error {
 	return nil
 }

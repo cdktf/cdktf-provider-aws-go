@@ -130,6 +130,22 @@ func validateCloudhsmV2Hsm_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudhsmV2Hsm_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateCloudhsmV2Hsm_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CloudhsmV2Hsm) validateSetAvailabilityZoneParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

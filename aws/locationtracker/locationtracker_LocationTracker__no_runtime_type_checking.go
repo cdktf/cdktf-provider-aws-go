@@ -56,6 +56,14 @@ func validateLocationTracker_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLocationTracker_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLocationTracker_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LocationTracker) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

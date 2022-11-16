@@ -119,6 +119,22 @@ func validateDataAwsSecretsmanagerSecret_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAwsSecretsmanagerSecret_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataAwsSecretsmanagerSecret_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSecretsmanagerSecret) validateSetArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

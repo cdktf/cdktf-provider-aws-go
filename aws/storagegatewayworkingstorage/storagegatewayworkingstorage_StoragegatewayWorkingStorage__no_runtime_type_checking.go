@@ -56,6 +56,14 @@ func validateStoragegatewayWorkingStorage_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateStoragegatewayWorkingStorage_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStoragegatewayWorkingStorage_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewayWorkingStorage) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

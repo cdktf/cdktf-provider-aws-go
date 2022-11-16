@@ -2,10 +2,10 @@ package sesv2emailidentityfeedbackattributes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/sesv2emailidentityfeedbackattributes/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/sesv2emailidentityfeedbackattributes/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -488,6 +488,44 @@ func Sesv2EmailIdentityFeedbackAttributes_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesv2EmailIdentityFeedbackAttributes.Sesv2EmailIdentityFeedbackAttributes",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Sesv2EmailIdentityFeedbackAttributes_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSesv2EmailIdentityFeedbackAttributes_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.sesv2EmailIdentityFeedbackAttributes.Sesv2EmailIdentityFeedbackAttributes",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Sesv2EmailIdentityFeedbackAttributes_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSesv2EmailIdentityFeedbackAttributes_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.sesv2EmailIdentityFeedbackAttributes.Sesv2EmailIdentityFeedbackAttributes",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

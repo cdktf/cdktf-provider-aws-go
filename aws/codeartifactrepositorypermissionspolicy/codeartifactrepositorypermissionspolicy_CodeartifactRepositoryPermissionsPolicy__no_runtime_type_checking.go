@@ -56,6 +56,14 @@ func validateCodeartifactRepositoryPermissionsPolicy_IsConstructParameters(x int
 	return nil
 }
 
+func validateCodeartifactRepositoryPermissionsPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCodeartifactRepositoryPermissionsPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodeartifactRepositoryPermissionsPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDirectoryServiceConditionalForwarder_IsConstructParameters(x interf
 	return nil
 }
 
+func validateDirectoryServiceConditionalForwarder_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDirectoryServiceConditionalForwarder_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DirectoryServiceConditionalForwarder) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

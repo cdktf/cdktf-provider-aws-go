@@ -56,6 +56,14 @@ func validateEc2LocalGatewayRoute_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEc2LocalGatewayRoute_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2LocalGatewayRoute_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2LocalGatewayRoute) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

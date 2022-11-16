@@ -2,10 +2,10 @@ package dynamodbtable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/dynamodbtable/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/dynamodbtable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1133,6 +1133,44 @@ func DynamodbTable_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTable",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DynamodbTable_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDynamodbTable_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTable",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DynamodbTable_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDynamodbTable_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dynamodbTable.DynamodbTable",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -56,6 +56,14 @@ func validateRedshiftAuthenticationProfile_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateRedshiftAuthenticationProfile_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRedshiftAuthenticationProfile_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftAuthenticationProfile) validateSetAuthenticationProfileContentParameters(val *string) error {
 	return nil
 }

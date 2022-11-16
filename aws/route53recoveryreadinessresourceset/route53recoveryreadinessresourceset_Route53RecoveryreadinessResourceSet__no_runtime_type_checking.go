@@ -64,6 +64,14 @@ func validateRoute53RecoveryreadinessResourceSet_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateRoute53RecoveryreadinessResourceSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoute53RecoveryreadinessResourceSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53RecoveryreadinessResourceSet) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

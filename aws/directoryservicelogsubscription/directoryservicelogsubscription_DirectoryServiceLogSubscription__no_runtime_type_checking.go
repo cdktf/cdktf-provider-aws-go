@@ -56,6 +56,14 @@ func validateDirectoryServiceLogSubscription_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateDirectoryServiceLogSubscription_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDirectoryServiceLogSubscription_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DirectoryServiceLogSubscription) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

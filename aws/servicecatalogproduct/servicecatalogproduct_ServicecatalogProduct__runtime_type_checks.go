@@ -141,6 +141,22 @@ func validateServicecatalogProduct_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateServicecatalogProduct_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateServicecatalogProduct_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogProduct) validateSetAcceptLanguageParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

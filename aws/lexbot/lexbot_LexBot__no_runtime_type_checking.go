@@ -72,6 +72,14 @@ func validateLexBot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLexBot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLexBot_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LexBot) validateSetChildDirectedParameters(val interface{}) error {
 	return nil
 }

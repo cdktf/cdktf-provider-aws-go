@@ -56,6 +56,14 @@ func validateDataAwsCloudfrontOriginAccessIdentity_IsConstructParameters(x inter
 	return nil
 }
 
+func validateDataAwsCloudfrontOriginAccessIdentity_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCloudfrontOriginAccessIdentity_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentity) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package inspectorassessmenttarget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/inspectorassessmenttarget/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/inspectorassessmenttarget/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -499,6 +499,44 @@ func InspectorAssessmentTarget_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func InspectorAssessmentTarget_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateInspectorAssessmentTarget_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func InspectorAssessmentTarget_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateInspectorAssessmentTarget_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.inspectorAssessmentTarget.InspectorAssessmentTarget",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

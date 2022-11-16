@@ -56,6 +56,14 @@ func validateIotCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIotCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIotCertificate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotCertificate) validateSetActiveParameters(val interface{}) error {
 	return nil
 }

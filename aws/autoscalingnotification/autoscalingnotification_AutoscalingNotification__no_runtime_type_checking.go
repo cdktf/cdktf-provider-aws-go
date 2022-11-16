@@ -56,6 +56,14 @@ func validateAutoscalingNotification_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateAutoscalingNotification_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAutoscalingNotification_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingNotification) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

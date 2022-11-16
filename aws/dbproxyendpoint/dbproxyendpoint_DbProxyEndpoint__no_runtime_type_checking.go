@@ -60,6 +60,14 @@ func validateDbProxyEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDbProxyEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDbProxyEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbProxyEndpoint) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

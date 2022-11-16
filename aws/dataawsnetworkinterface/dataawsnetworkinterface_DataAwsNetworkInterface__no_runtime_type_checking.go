@@ -64,6 +64,14 @@ func validateDataAwsNetworkInterface_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataAwsNetworkInterface_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsNetworkInterface_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNetworkInterface) validateSetIdParameters(val *string) error {
 	return nil
 }

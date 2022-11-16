@@ -68,6 +68,14 @@ func validateEcsCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEcsCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEcsCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsCluster) validateSetCapacityProvidersParameters(val *[]*string) error {
 	return nil
 }

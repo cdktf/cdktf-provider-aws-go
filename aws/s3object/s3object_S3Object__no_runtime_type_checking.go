@@ -56,6 +56,14 @@ func validateS3Object_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateS3Object_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateS3Object_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3Object) validateSetAclParameters(val *string) error {
 	return nil
 }

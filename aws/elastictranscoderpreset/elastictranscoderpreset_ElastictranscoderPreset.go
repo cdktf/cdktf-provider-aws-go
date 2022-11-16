@@ -2,10 +2,10 @@ package elastictranscoderpreset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/elastictranscoderpreset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/elastictranscoderpreset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -724,6 +724,44 @@ func ElastictranscoderPreset_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPreset",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ElastictranscoderPreset_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateElastictranscoderPreset_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPreset",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ElastictranscoderPreset_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateElastictranscoderPreset_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPreset",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

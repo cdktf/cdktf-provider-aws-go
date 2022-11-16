@@ -2,10 +2,10 @@ package vpcipv4cidrblockassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/vpcipv4cidrblockassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/vpcipv4cidrblockassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -582,6 +582,44 @@ func VpcIpv4CidrBlockAssociation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VpcIpv4CidrBlockAssociation_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVpcIpv4CidrBlockAssociation_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VpcIpv4CidrBlockAssociation_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVpcIpv4CidrBlockAssociation_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.vpcIpv4CidrBlockAssociation.VpcIpv4CidrBlockAssociation",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

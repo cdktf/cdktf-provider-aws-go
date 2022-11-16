@@ -56,6 +56,14 @@ func validateApiGatewayBasePathMapping_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateApiGatewayBasePathMapping_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiGatewayBasePathMapping_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayBasePathMapping) validateSetApiIdParameters(val *string) error {
 	return nil
 }

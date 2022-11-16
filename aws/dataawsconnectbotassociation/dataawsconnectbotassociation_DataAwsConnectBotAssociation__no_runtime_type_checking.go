@@ -60,6 +60,14 @@ func validateDataAwsConnectBotAssociation_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataAwsConnectBotAssociation_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsConnectBotAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectBotAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

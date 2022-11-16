@@ -68,6 +68,14 @@ func validateCognitoRiskConfiguration_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateCognitoRiskConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCognitoRiskConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoRiskConfiguration) validateSetClientIdParameters(val *string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package s3bucketinventory
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/s3bucketinventory/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/s3bucketinventory/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -661,6 +661,44 @@ func S3BucketInventory_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventory",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func S3BucketInventory_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateS3BucketInventory_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventory",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func S3BucketInventory_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateS3BucketInventory_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.s3BucketInventory.S3BucketInventory",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

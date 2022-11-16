@@ -56,6 +56,14 @@ func validateDataAwsKmsAlias_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsKmsAlias_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsKmsAlias_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsKmsAlias) validateSetIdParameters(val *string) error {
 	return nil
 }

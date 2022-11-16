@@ -56,6 +56,14 @@ func validateKmsCiphertext_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKmsCiphertext_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKmsCiphertext_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsCiphertext) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

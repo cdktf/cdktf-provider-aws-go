@@ -56,6 +56,14 @@ func validateTimestreamwriteDatabase_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateTimestreamwriteDatabase_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTimestreamwriteDatabase_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TimestreamwriteDatabase) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

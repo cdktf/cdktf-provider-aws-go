@@ -56,6 +56,14 @@ func validateSecurityhubOrganizationConfiguration_IsConstructParameters(x interf
 	return nil
 }
 
+func validateSecurityhubOrganizationConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecurityhubOrganizationConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityhubOrganizationConfiguration) validateSetAutoEnableParameters(val interface{}) error {
 	return nil
 }

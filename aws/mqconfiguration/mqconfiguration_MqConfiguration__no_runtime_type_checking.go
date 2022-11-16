@@ -56,6 +56,14 @@ func validateMqConfiguration_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMqConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMqConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MqConfiguration) validateSetAuthenticationStrategyParameters(val *string) error {
 	return nil
 }

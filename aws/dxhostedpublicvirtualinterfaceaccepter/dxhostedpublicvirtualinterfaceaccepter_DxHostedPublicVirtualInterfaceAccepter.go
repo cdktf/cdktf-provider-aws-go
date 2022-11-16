@@ -2,10 +2,10 @@ package dxhostedpublicvirtualinterfaceaccepter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/dxhostedpublicvirtualinterfaceaccepter/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/dxhostedpublicvirtualinterfaceaccepter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -558,6 +558,44 @@ func DxHostedPublicVirtualInterfaceAccepter_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dxHostedPublicVirtualInterfaceAccepter.DxHostedPublicVirtualInterfaceAccepter",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DxHostedPublicVirtualInterfaceAccepter_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDxHostedPublicVirtualInterfaceAccepter_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dxHostedPublicVirtualInterfaceAccepter.DxHostedPublicVirtualInterfaceAccepter",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DxHostedPublicVirtualInterfaceAccepter_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDxHostedPublicVirtualInterfaceAccepter_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dxHostedPublicVirtualInterfaceAccepter.DxHostedPublicVirtualInterfaceAccepter",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

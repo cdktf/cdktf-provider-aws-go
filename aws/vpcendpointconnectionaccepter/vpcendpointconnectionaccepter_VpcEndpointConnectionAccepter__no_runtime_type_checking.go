@@ -56,6 +56,14 @@ func validateVpcEndpointConnectionAccepter_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateVpcEndpointConnectionAccepter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpcEndpointConnectionAccepter_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointConnectionAccepter) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

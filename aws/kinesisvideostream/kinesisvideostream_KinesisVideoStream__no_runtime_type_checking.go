@@ -60,6 +60,14 @@ func validateKinesisVideoStream_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKinesisVideoStream_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKinesisVideoStream_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KinesisVideoStream) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

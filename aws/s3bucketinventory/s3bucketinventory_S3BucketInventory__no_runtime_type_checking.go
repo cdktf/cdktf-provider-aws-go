@@ -68,6 +68,14 @@ func validateS3BucketInventory_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateS3BucketInventory_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateS3BucketInventory_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketInventory) validateSetBucketParameters(val *string) error {
 	return nil
 }

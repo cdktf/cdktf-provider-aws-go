@@ -56,6 +56,14 @@ func validateVpcDhcpOptions_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVpcDhcpOptions_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpcDhcpOptions_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcDhcpOptions) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

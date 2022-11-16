@@ -2,10 +2,10 @@ package ssmresourcedatasync
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/ssmresourcedatasync/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/ssmresourcedatasync/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -476,6 +476,44 @@ func SsmResourceDataSync_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSync",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SsmResourceDataSync_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSsmResourceDataSync_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSync",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SsmResourceDataSync_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSsmResourceDataSync_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ssmResourceDataSync.SsmResourceDataSync",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

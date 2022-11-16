@@ -56,6 +56,14 @@ func validateDxGatewayAssociationProposal_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDxGatewayAssociationProposal_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDxGatewayAssociationProposal_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DxGatewayAssociationProposal) validateSetAllowedPrefixesParameters(val *[]*string) error {
 	return nil
 }

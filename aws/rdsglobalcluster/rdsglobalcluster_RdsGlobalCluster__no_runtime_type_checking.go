@@ -60,6 +60,14 @@ func validateRdsGlobalCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRdsGlobalCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRdsGlobalCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsGlobalCluster) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

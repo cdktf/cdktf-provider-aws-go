@@ -203,6 +203,22 @@ func validateGlueCatalogTable_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGlueCatalogTable_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGlueCatalogTable_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GlueCatalogTable) validateSetCatalogIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

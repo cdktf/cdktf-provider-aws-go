@@ -2,10 +2,10 @@ package pinpointemailchannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/pinpointemailchannel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/pinpointemailchannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -637,6 +637,44 @@ func PinpointEmailChannel_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.pinpointEmailChannel.PinpointEmailChannel",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PinpointEmailChannel_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePinpointEmailChannel_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.pinpointEmailChannel.PinpointEmailChannel",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PinpointEmailChannel_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePinpointEmailChannel_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.pinpointEmailChannel.PinpointEmailChannel",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -56,6 +56,14 @@ func validateDataAwsSsmParameter_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsSsmParameter_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsSsmParameter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSsmParameter) validateSetIdParameters(val *string) error {
 	return nil
 }

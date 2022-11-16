@@ -76,6 +76,14 @@ func validateDatasyncTask_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDatasyncTask_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatasyncTask_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncTask) validateSetCloudwatchLogGroupArnParameters(val *string) error {
 	return nil
 }

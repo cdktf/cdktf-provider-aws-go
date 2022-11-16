@@ -64,6 +64,14 @@ func validateConfigRemediationConfiguration_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateConfigRemediationConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConfigRemediationConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigRemediationConfiguration) validateSetAutomaticParameters(val interface{}) error {
 	return nil
 }

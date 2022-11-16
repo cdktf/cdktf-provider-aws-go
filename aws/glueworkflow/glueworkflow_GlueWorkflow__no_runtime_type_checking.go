@@ -56,6 +56,14 @@ func validateGlueWorkflow_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGlueWorkflow_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGlueWorkflow_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueWorkflow) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -119,6 +119,22 @@ func validateMskScramSecretAssociation_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateMskScramSecretAssociation_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateMskScramSecretAssociation_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MskScramSecretAssociation) validateSetClusterArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

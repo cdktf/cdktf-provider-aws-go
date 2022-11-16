@@ -56,6 +56,14 @@ func validateLicensemanagerAssociation_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateLicensemanagerAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLicensemanagerAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LicensemanagerAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

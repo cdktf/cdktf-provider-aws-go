@@ -60,6 +60,14 @@ func validateDataAwsRamResourceShare_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataAwsRamResourceShare_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsRamResourceShare_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRamResourceShare) validateSetIdParameters(val *string) error {
 	return nil
 }

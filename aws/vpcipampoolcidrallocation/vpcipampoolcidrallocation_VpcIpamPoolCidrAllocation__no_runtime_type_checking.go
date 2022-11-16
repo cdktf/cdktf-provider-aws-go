@@ -56,6 +56,14 @@ func validateVpcIpamPoolCidrAllocation_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateVpcIpamPoolCidrAllocation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpcIpamPoolCidrAllocation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpamPoolCidrAllocation) validateSetCidrParameters(val *string) error {
 	return nil
 }

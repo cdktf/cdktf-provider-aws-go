@@ -60,6 +60,14 @@ func validateEc2ClientVpnRoute_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEc2ClientVpnRoute_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2ClientVpnRoute_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2ClientVpnRoute) validateSetClientVpnEndpointIdParameters(val *string) error {
 	return nil
 }

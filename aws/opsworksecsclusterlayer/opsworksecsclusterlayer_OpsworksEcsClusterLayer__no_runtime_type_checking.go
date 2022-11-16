@@ -68,6 +68,14 @@ func validateOpsworksEcsClusterLayer_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateOpsworksEcsClusterLayer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOpsworksEcsClusterLayer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpsworksEcsClusterLayer) validateSetAutoAssignElasticIpsParameters(val interface{}) error {
 	return nil
 }

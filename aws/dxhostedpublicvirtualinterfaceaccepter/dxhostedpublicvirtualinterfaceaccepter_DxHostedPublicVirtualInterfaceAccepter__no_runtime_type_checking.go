@@ -60,6 +60,14 @@ func validateDxHostedPublicVirtualInterfaceAccepter_IsConstructParameters(x inte
 	return nil
 }
 
+func validateDxHostedPublicVirtualInterfaceAccepter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDxHostedPublicVirtualInterfaceAccepter_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DxHostedPublicVirtualInterfaceAccepter) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

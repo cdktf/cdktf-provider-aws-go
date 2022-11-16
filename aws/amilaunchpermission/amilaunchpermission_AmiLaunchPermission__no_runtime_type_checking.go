@@ -56,6 +56,14 @@ func validateAmiLaunchPermission_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAmiLaunchPermission_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAmiLaunchPermission_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AmiLaunchPermission) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

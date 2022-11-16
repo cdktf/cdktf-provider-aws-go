@@ -119,6 +119,22 @@ func validateQuicksightGroupMembership_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateQuicksightGroupMembership_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateQuicksightGroupMembership_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightGroupMembership) validateSetAwsAccountIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -64,6 +64,14 @@ func validateS3BucketIntelligentTieringConfiguration_IsConstructParameters(x int
 	return nil
 }
 
+func validateS3BucketIntelligentTieringConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateS3BucketIntelligentTieringConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateSetBucketParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataAwsEcsTaskDefinition_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataAwsEcsTaskDefinition_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsEcsTaskDefinition_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEcsTaskDefinition) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package s3bucketmetric
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/s3bucketmetric/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/s3bucketmetric/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -511,6 +511,44 @@ func S3BucketMetric_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetric",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func S3BucketMetric_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateS3BucketMetric_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetric",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func S3BucketMetric_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateS3BucketMetric_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetric",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

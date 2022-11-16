@@ -64,6 +64,14 @@ func validateInspector2OrganizationConfiguration_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateInspector2OrganizationConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateInspector2OrganizationConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Inspector2OrganizationConfiguration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateSsoadminPermissionSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSsoadminPermissionSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSsoadminPermissionSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsoadminPermissionSet) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validatePrometheusAlertManagerDefinition_IsConstructParameters(x interface{
 	return nil
 }
 
+func validatePrometheusAlertManagerDefinition_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePrometheusAlertManagerDefinition_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrometheusAlertManagerDefinition) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

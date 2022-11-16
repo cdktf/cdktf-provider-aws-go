@@ -68,6 +68,14 @@ func validateOpsworksMysqlLayer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOpsworksMysqlLayer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOpsworksMysqlLayer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpsworksMysqlLayer) validateSetAutoAssignElasticIpsParameters(val interface{}) error {
 	return nil
 }

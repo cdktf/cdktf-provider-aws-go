@@ -64,6 +64,14 @@ func validateKendraExperience_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKendraExperience_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKendraExperience_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KendraExperience) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

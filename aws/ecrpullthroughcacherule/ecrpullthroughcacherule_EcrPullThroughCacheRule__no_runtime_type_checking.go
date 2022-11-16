@@ -56,6 +56,14 @@ func validateEcrPullThroughCacheRule_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateEcrPullThroughCacheRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEcrPullThroughCacheRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

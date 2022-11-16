@@ -64,6 +64,14 @@ func validateFsxOntapStorageVirtualMachine_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateFsxOntapStorageVirtualMachine_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFsxOntapStorageVirtualMachine_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOntapStorageVirtualMachine) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateAutoscalingLifecycleHook_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateAutoscalingLifecycleHook_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAutoscalingLifecycleHook_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetAutoscalingGroupNameParameters(val *string) error {
 	return nil
 }

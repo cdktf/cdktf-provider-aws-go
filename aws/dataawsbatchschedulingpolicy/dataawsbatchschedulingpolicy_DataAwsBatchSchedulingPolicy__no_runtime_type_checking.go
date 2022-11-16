@@ -56,6 +56,14 @@ func validateDataAwsBatchSchedulingPolicy_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataAwsBatchSchedulingPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsBatchSchedulingPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) validateSetArnParameters(val *string) error {
 	return nil
 }

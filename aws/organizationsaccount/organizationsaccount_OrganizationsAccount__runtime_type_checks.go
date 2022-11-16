@@ -119,6 +119,22 @@ func validateOrganizationsAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOrganizationsAccount_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateOrganizationsAccount_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_OrganizationsAccount) validateSetCloseOnDeletionParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

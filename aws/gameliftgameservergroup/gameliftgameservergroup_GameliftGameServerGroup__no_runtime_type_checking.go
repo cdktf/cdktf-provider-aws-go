@@ -72,6 +72,14 @@ func validateGameliftGameServerGroup_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateGameliftGameServerGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGameliftGameServerGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GameliftGameServerGroup) validateSetBalancingStrategyParameters(val *string) error {
 	return nil
 }

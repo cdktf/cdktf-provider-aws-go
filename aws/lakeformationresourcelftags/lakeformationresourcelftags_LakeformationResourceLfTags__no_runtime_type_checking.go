@@ -76,6 +76,14 @@ func validateLakeformationResourceLfTags_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateLakeformationResourceLfTags_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLakeformationResourceLfTags_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LakeformationResourceLfTags) validateSetCatalogIdParameters(val *string) error {
 	return nil
 }

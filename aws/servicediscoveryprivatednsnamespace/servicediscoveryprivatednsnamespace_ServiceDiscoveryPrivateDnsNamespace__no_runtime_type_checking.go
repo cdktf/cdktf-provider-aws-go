@@ -56,6 +56,14 @@ func validateServiceDiscoveryPrivateDnsNamespace_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateServiceDiscoveryPrivateDnsNamespace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServiceDiscoveryPrivateDnsNamespace_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

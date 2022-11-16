@@ -60,6 +60,14 @@ func validateCognitoResourceServer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCognitoResourceServer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCognitoResourceServer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoResourceServer) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateDbInstanceAutomatedBackupsReplication_IsConstructParameters(x inter
 	return nil
 }
 
+func validateDbInstanceAutomatedBackupsReplication_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDbInstanceAutomatedBackupsReplication_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

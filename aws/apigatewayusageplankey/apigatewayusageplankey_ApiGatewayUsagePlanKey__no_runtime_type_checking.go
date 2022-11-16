@@ -56,6 +56,14 @@ func validateApiGatewayUsagePlanKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApiGatewayUsagePlanKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiGatewayUsagePlanKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayUsagePlanKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

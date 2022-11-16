@@ -16,6 +16,14 @@ func validateAwsProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAwsProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAwsProvider_IsTerraformProviderParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AwsProvider) validateSetAssumeRoleParameters(val *AwsProviderAssumeRole) error {
 	return nil
 }

@@ -119,6 +119,22 @@ func validateSagemakerStudioLifecycleConfig_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateSagemakerStudioLifecycleConfig_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateSagemakerStudioLifecycleConfig_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerStudioLifecycleConfig) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

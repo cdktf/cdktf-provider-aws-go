@@ -68,6 +68,14 @@ func validateWafregionalWebAcl_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWafregionalWebAcl_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWafregionalWebAcl_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafregionalWebAcl) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

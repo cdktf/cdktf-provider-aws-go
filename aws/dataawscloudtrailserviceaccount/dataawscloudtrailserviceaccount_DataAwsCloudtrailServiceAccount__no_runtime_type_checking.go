@@ -56,6 +56,14 @@ func validateDataAwsCloudtrailServiceAccount_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateDataAwsCloudtrailServiceAccount_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCloudtrailServiceAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

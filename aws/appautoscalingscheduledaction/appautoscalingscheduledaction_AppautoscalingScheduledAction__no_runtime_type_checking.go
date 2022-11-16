@@ -60,6 +60,14 @@ func validateAppautoscalingScheduledAction_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateAppautoscalingScheduledAction_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppautoscalingScheduledAction_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppautoscalingScheduledAction) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

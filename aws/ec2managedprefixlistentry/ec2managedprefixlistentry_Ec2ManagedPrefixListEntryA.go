@@ -2,10 +2,10 @@ package ec2managedprefixlistentry
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/ec2managedprefixlistentry/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/ec2managedprefixlistentry/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -522,6 +522,44 @@ func Ec2ManagedPrefixListEntryA_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Ec2ManagedPrefixListEntryA_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEc2ManagedPrefixListEntryA_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Ec2ManagedPrefixListEntryA_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEc2ManagedPrefixListEntryA_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ec2ManagedPrefixListEntry.Ec2ManagedPrefixListEntryA",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

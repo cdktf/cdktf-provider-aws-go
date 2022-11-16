@@ -2,10 +2,10 @@ package ec2carriergateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/ec2carriergateway/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/ec2carriergateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -545,6 +545,44 @@ func Ec2CarrierGateway_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Ec2CarrierGateway_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEc2CarrierGateway_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Ec2CarrierGateway_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEc2CarrierGateway_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ec2CarrierGateway.Ec2CarrierGateway",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

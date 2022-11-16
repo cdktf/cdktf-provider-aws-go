@@ -72,6 +72,14 @@ func validateGlueClassifier_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGlueClassifier_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGlueClassifier_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueClassifier) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

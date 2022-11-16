@@ -72,6 +72,14 @@ func validateEc2ClientVpnEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEc2ClientVpnEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2ClientVpnEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2ClientVpnEndpoint) validateSetClientCidrBlockParameters(val *string) error {
 	return nil
 }

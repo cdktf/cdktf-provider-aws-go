@@ -2,10 +2,10 @@ package wafipset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/wafipset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/wafipset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -488,6 +488,44 @@ func WafIpset_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafIpset.WafIpset",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func WafIpset_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateWafIpset_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.wafIpset.WafIpset",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func WafIpset_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateWafIpset_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.wafIpset.WafIpset",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

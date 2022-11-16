@@ -56,6 +56,14 @@ func validateEc2ManagedPrefixListEntryA_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateEc2ManagedPrefixListEntryA_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2ManagedPrefixListEntryA_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2ManagedPrefixListEntryA) validateSetCidrParameters(val *string) error {
 	return nil
 }

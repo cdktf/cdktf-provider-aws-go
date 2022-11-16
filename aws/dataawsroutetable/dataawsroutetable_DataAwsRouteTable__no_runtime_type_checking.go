@@ -64,6 +64,14 @@ func validateDataAwsRouteTable_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsRouteTable_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsRouteTable_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRouteTable) validateSetGatewayIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,14 @@ func validateElastictranscoderPipeline_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateElastictranscoderPipeline_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateElastictranscoderPipeline_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastictranscoderPipeline) validateSetAwsKmsKeyArnParameters(val *string) error {
 	return nil
 }

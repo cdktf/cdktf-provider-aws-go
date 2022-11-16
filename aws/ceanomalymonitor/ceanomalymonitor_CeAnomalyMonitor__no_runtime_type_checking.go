@@ -56,6 +56,14 @@ func validateCeAnomalyMonitor_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCeAnomalyMonitor_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCeAnomalyMonitor_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CeAnomalyMonitor) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

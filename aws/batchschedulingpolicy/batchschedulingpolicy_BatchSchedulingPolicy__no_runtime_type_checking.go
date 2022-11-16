@@ -60,6 +60,14 @@ func validateBatchSchedulingPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBatchSchedulingPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBatchSchedulingPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchSchedulingPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

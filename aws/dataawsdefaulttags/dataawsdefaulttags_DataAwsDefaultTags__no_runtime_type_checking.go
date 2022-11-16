@@ -56,6 +56,14 @@ func validateDataAwsDefaultTags_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsDefaultTags_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsDefaultTags_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDefaultTags) validateSetIdParameters(val *string) error {
 	return nil
 }

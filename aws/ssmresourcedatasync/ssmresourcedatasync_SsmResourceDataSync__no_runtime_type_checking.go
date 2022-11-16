@@ -60,6 +60,14 @@ func validateSsmResourceDataSync_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSsmResourceDataSync_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSsmResourceDataSync_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmResourceDataSync) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

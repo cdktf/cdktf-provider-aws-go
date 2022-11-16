@@ -68,6 +68,14 @@ func validateSesEventDestination_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSesEventDestination_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSesEventDestination_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesEventDestination) validateSetConfigurationSetNameParameters(val *string) error {
 	return nil
 }

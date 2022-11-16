@@ -56,6 +56,14 @@ func validateEfsFileSystemPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEfsFileSystemPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEfsFileSystemPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EfsFileSystemPolicy) validateSetBypassPolicyLockoutSafetyCheckParameters(val interface{}) error {
 	return nil
 }

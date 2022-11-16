@@ -2,10 +2,10 @@ package vpcipamscope
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/vpcipamscope/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/vpcipamscope/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -637,6 +637,44 @@ func VpcIpamScope_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.vpcIpamScope.VpcIpamScope",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VpcIpamScope_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVpcIpamScope_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.vpcIpamScope.VpcIpamScope",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VpcIpamScope_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVpcIpamScope_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.vpcIpamScope.VpcIpamScope",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

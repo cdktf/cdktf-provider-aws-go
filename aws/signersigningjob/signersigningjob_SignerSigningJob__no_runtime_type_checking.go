@@ -64,6 +64,14 @@ func validateSignerSigningJob_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSignerSigningJob_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSignerSigningJob_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SignerSigningJob) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

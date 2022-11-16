@@ -2,10 +2,10 @@ package kmskey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/kmskey/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/kmskey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -861,6 +861,44 @@ func KmsKey_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kmsKey.KmsKey",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func KmsKey_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateKmsKey_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.kmsKey.KmsKey",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func KmsKey_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateKmsKey_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.kmsKey.KmsKey",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

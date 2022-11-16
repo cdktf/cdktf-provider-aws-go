@@ -64,6 +64,14 @@ func validateSfnStateMachine_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSfnStateMachine_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSfnStateMachine_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SfnStateMachine) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

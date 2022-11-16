@@ -64,6 +64,14 @@ func validateDataAwsVpcPeeringConnection_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAwsVpcPeeringConnection_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsVpcPeeringConnection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpcPeeringConnection) validateSetCidrBlockParameters(val *string) error {
 	return nil
 }

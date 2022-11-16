@@ -60,6 +60,14 @@ func validateRamResourceShareAccepter_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateRamResourceShareAccepter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRamResourceShareAccepter_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RamResourceShareAccepter) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

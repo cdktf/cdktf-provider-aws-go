@@ -60,6 +60,14 @@ func validateDataAwsFsxOpenzfsSnapshot_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataAwsFsxOpenzfsSnapshot_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsFsxOpenzfsSnapshot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshot) validateSetIdParameters(val *string) error {
 	return nil
 }

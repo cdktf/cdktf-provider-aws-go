@@ -60,6 +60,14 @@ func validateElasticBeanstalkApplication_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateElasticBeanstalkApplication_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateElasticBeanstalkApplication_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticBeanstalkApplication) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

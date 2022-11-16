@@ -88,6 +88,14 @@ func validateKinesisFirehoseDeliveryStream_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateKinesisFirehoseDeliveryStream_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKinesisFirehoseDeliveryStream_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KinesisFirehoseDeliveryStream) validateSetArnParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateTranscribeVocabularyFilter_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateTranscribeVocabularyFilter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTranscribeVocabularyFilter_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TranscribeVocabularyFilter) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

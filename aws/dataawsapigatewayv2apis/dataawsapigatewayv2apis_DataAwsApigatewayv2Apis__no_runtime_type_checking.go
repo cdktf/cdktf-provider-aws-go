@@ -56,6 +56,14 @@ func validateDataAwsApigatewayv2Apis_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataAwsApigatewayv2Apis_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsApigatewayv2Apis_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsApigatewayv2Apis) validateSetIdParameters(val *string) error {
 	return nil
 }

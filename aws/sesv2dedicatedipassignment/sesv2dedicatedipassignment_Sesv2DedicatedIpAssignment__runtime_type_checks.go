@@ -130,6 +130,22 @@ func validateSesv2DedicatedIpAssignment_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateSesv2DedicatedIpAssignment_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateSesv2DedicatedIpAssignment_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Sesv2DedicatedIpAssignment) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

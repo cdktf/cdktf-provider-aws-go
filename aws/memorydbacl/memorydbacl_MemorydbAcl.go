@@ -2,10 +2,10 @@ package memorydbacl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/memorydbacl/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/memorydbacl/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -616,6 +616,44 @@ func MemorydbAcl_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.memorydbAcl.MemorydbAcl",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MemorydbAcl_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMemorydbAcl_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.memorydbAcl.MemorydbAcl",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MemorydbAcl_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMemorydbAcl_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.memorydbAcl.MemorydbAcl",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

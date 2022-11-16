@@ -130,6 +130,22 @@ func validateDevicefarmTestGridProject_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDevicefarmTestGridProject_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDevicefarmTestGridProject_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DevicefarmTestGridProject) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

@@ -60,6 +60,14 @@ func validateKmsCustomKeyStore_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKmsCustomKeyStore_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKmsCustomKeyStore_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsCustomKeyStore) validateSetCloudHsmClusterIdParameters(val *string) error {
 	return nil
 }

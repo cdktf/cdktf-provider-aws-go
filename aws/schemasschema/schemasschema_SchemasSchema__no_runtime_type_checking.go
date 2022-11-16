@@ -56,6 +56,14 @@ func validateSchemasSchema_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSchemasSchema_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSchemasSchema_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SchemasSchema) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

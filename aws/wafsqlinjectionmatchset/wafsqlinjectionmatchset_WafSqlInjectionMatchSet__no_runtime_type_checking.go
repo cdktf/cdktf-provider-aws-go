@@ -60,6 +60,14 @@ func validateWafSqlInjectionMatchSet_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateWafSqlInjectionMatchSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWafSqlInjectionMatchSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafSqlInjectionMatchSet) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

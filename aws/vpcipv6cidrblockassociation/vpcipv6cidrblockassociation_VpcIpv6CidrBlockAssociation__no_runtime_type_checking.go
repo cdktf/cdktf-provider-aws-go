@@ -60,6 +60,14 @@ func validateVpcIpv6CidrBlockAssociation_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateVpcIpv6CidrBlockAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpcIpv6CidrBlockAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

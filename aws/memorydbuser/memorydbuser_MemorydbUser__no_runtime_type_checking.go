@@ -60,6 +60,14 @@ func validateMemorydbUser_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMemorydbUser_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMemorydbUser_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemorydbUser) validateSetAccessStringParameters(val *string) error {
 	return nil
 }

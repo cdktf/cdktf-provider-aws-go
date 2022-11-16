@@ -56,6 +56,14 @@ func validateDataAwsAppconfigEnvironments_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataAwsAppconfigEnvironments_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsAppconfigEnvironments_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAppconfigEnvironments) validateSetApplicationIdParameters(val *string) error {
 	return nil
 }

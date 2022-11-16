@@ -56,6 +56,14 @@ func validateApprunnerAutoScalingConfigurationVersion_IsConstructParameters(x in
 	return nil
 }
 
+func validateApprunnerAutoScalingConfigurationVersion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApprunnerAutoScalingConfigurationVersion_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateSetAutoScalingConfigurationNameParameters(val *string) error {
 	return nil
 }

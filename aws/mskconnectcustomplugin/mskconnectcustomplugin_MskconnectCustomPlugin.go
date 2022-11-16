@@ -2,10 +2,10 @@ package mskconnectcustomplugin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/mskconnectcustomplugin/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/mskconnectcustomplugin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -602,6 +602,44 @@ func MskconnectCustomPlugin_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPlugin",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MskconnectCustomPlugin_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMskconnectCustomPlugin_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPlugin",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MskconnectCustomPlugin_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMskconnectCustomPlugin_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.mskconnectCustomPlugin.MskconnectCustomPlugin",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

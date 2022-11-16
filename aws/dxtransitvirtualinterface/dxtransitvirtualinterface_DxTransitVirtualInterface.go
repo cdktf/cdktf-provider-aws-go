@@ -2,10 +2,10 @@ package dxtransitvirtualinterface
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/dxtransitvirtualinterface/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/dxtransitvirtualinterface/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -936,6 +936,44 @@ func DxTransitVirtualInterface_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterface",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DxTransitVirtualInterface_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDxTransitVirtualInterface_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterface",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DxTransitVirtualInterface_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDxTransitVirtualInterface_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dxTransitVirtualInterface.DxTransitVirtualInterface",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

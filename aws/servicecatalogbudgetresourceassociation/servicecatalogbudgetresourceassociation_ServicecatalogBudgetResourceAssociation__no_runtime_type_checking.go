@@ -60,6 +60,14 @@ func validateServicecatalogBudgetResourceAssociation_IsConstructParameters(x int
 	return nil
 }
 
+func validateServicecatalogBudgetResourceAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServicecatalogBudgetResourceAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateSetBudgetNameParameters(val *string) error {
 	return nil
 }

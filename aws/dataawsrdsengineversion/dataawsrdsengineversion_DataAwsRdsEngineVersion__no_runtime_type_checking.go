@@ -60,6 +60,14 @@ func validateDataAwsRdsEngineVersion_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataAwsRdsEngineVersion_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsRdsEngineVersion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRdsEngineVersion) validateSetDefaultOnlyParameters(val interface{}) error {
 	return nil
 }

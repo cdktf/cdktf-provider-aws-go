@@ -56,6 +56,14 @@ func validateDetectiveGraph_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDetectiveGraph_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDetectiveGraph_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DetectiveGraph) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

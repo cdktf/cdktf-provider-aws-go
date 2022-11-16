@@ -60,6 +60,14 @@ func validateCloudwatchMetricAlarm_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudwatchMetricAlarm_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudwatchMetricAlarm_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchMetricAlarm) validateSetActionsEnabledParameters(val interface{}) error {
 	return nil
 }

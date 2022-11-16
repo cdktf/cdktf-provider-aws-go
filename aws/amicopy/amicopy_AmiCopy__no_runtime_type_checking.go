@@ -68,6 +68,14 @@ func validateAmiCopy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAmiCopy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAmiCopy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AmiCopy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

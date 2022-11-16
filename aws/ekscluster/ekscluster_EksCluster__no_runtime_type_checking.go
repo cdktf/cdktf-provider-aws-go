@@ -76,6 +76,14 @@ func validateEksCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEksCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEksCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EksCluster) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

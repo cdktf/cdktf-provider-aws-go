@@ -60,6 +60,14 @@ func validateDataAwsServicecatalogPortfolio_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataAwsServicecatalogPortfolio_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsServicecatalogPortfolio_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsServicecatalogPortfolio) validateSetAcceptLanguageParameters(val *string) error {
 	return nil
 }

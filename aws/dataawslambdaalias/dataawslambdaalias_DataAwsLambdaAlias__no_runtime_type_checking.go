@@ -56,6 +56,14 @@ func validateDataAwsLambdaAlias_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsLambdaAlias_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsLambdaAlias_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLambdaAlias) validateSetFunctionNameParameters(val *string) error {
 	return nil
 }

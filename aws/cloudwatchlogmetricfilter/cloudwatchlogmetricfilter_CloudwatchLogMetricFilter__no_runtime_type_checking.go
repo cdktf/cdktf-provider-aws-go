@@ -60,6 +60,14 @@ func validateCloudwatchLogMetricFilter_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateCloudwatchLogMetricFilter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudwatchLogMetricFilter_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchLogMetricFilter) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package connectuserhierarchystructure
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/connectuserhierarchystructure/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/connectuserhierarchystructure/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -476,6 +476,44 @@ func ConnectUserHierarchyStructure_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ConnectUserHierarchyStructure_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateConnectUserHierarchyStructure_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ConnectUserHierarchyStructure_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateConnectUserHierarchyStructure_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.connectUserHierarchyStructure.ConnectUserHierarchyStructure",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

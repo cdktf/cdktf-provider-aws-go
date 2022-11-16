@@ -56,6 +56,14 @@ func validateElbAttachment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateElbAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateElbAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElbAttachment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

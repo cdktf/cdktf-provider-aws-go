@@ -2,10 +2,10 @@ package lambdafunction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/lambdafunction/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/lambdafunction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1478,6 +1478,44 @@ func LambdaFunction_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunction",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LambdaFunction_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLambdaFunction_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunction",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LambdaFunction_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLambdaFunction_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunction",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

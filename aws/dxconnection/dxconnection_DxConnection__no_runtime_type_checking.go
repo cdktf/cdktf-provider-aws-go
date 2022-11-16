@@ -56,6 +56,14 @@ func validateDxConnection_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDxConnection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDxConnection_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DxConnection) validateSetBandwidthParameters(val *string) error {
 	return nil
 }

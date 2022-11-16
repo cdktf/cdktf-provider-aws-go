@@ -2,10 +2,10 @@ package accessanalyzeranalyzer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/accessanalyzeranalyzer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/accessanalyzeranalyzer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -569,6 +569,44 @@ func AccessanalyzerAnalyzer_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AccessanalyzerAnalyzer_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAccessanalyzerAnalyzer_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AccessanalyzerAnalyzer_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAccessanalyzerAnalyzer_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.accessanalyzerAnalyzer.AccessanalyzerAnalyzer",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

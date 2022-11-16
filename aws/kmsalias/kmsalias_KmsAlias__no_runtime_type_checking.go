@@ -56,6 +56,14 @@ func validateKmsAlias_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKmsAlias_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKmsAlias_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsAlias) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

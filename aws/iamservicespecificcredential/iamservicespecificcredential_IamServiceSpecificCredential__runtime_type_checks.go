@@ -119,6 +119,22 @@ func validateIamServiceSpecificCredential_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateIamServiceSpecificCredential_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateIamServiceSpecificCredential_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_IamServiceSpecificCredential) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

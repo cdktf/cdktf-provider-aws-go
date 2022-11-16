@@ -150,6 +150,22 @@ func validateWafregionalRuleGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWafregionalRuleGroup_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateWafregionalRuleGroup_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_WafregionalRuleGroup) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

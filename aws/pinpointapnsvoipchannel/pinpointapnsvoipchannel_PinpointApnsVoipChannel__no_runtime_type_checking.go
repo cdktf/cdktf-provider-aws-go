@@ -56,6 +56,14 @@ func validatePinpointApnsVoipChannel_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validatePinpointApnsVoipChannel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePinpointApnsVoipChannel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointApnsVoipChannel) validateSetApplicationIdParameters(val *string) error {
 	return nil
 }

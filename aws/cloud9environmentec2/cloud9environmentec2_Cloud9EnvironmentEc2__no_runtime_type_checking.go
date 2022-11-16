@@ -56,6 +56,14 @@ func validateCloud9EnvironmentEc2_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloud9EnvironmentEc2_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloud9EnvironmentEc2_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cloud9EnvironmentEc2) validateSetAutomaticStopTimeMinutesParameters(val *float64) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataAwsEfsFileSystem_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsEfsFileSystem_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsEfsFileSystem_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEfsFileSystem) validateSetCreationTokenParameters(val *string) error {
 	return nil
 }

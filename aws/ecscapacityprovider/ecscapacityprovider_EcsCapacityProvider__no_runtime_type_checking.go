@@ -60,6 +60,14 @@ func validateEcsCapacityProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEcsCapacityProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEcsCapacityProvider_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsCapacityProvider) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

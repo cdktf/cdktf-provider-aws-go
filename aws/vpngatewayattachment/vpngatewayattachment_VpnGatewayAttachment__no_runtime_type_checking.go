@@ -56,6 +56,14 @@ func validateVpnGatewayAttachment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVpnGatewayAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpnGatewayAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpnGatewayAttachment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

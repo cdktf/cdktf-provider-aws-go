@@ -56,6 +56,14 @@ func validatePinpointGcmChannel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePinpointGcmChannel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePinpointGcmChannel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointGcmChannel) validateSetApiKeyParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateDataAwsEc2TransitGatewayVpnAttachment_IsConstructParameters(x inter
 	return nil
 }
 
+func validateDataAwsEc2TransitGatewayVpnAttachment_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsEc2TransitGatewayVpnAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2TransitGatewayVpnAttachment) validateSetIdParameters(val *string) error {
 	return nil
 }

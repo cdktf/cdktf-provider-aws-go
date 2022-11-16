@@ -68,6 +68,14 @@ func validateOpsworksGangliaLayer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOpsworksGangliaLayer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOpsworksGangliaLayer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpsworksGangliaLayer) validateSetAutoAssignElasticIpsParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataAwsApiGatewayExport_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataAwsApiGatewayExport_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsApiGatewayExport_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsApiGatewayExport) validateSetAcceptsParameters(val *string) error {
 	return nil
 }

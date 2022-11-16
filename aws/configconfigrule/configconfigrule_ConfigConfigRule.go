@@ -2,10 +2,10 @@ package configconfigrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/configconfigrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/configconfigrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -697,6 +697,44 @@ func ConfigConfigRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.configConfigRule.ConfigConfigRule",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ConfigConfigRule_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateConfigConfigRule_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRule",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ConfigConfigRule_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateConfigConfigRule_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.configConfigRule.ConfigConfigRule",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

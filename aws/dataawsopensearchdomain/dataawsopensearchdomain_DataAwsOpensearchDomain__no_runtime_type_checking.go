@@ -56,6 +56,14 @@ func validateDataAwsOpensearchDomain_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataAwsOpensearchDomain_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsOpensearchDomain_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsOpensearchDomain) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

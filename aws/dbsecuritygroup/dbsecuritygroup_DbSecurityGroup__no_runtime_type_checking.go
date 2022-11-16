@@ -60,6 +60,14 @@ func validateDbSecurityGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDbSecurityGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDbSecurityGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbSecurityGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

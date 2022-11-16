@@ -2,10 +2,10 @@ package codestarnotificationsnotificationrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/codestarnotificationsnotificationrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/codestarnotificationsnotificationrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -695,6 +695,44 @@ func CodestarnotificationsNotificationRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRule",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CodestarnotificationsNotificationRule_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCodestarnotificationsNotificationRule_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRule",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CodestarnotificationsNotificationRule_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCodestarnotificationsNotificationRule_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.codestarnotificationsNotificationRule.CodestarnotificationsNotificationRule",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

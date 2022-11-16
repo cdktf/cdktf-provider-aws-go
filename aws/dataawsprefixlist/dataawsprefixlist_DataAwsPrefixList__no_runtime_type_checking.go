@@ -64,6 +64,14 @@ func validateDataAwsPrefixList_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsPrefixList_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsPrefixList_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsPrefixList) validateSetIdParameters(val *string) error {
 	return nil
 }

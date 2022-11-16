@@ -60,6 +60,14 @@ func validateNetworkmanagerTransitGatewayConnectPeerAssociation_IsConstructParam
 	return nil
 }
 
+func validateNetworkmanagerTransitGatewayConnectPeerAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkmanagerTransitGatewayConnectPeerAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerTransitGatewayConnectPeerAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

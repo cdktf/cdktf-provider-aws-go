@@ -56,6 +56,14 @@ func validateSimpledbDomain_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSimpledbDomain_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSimpledbDomain_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SimpledbDomain) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

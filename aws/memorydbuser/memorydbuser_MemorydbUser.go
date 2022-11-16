@@ -2,10 +2,10 @@ package memorydbuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/memorydbuser/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/memorydbuser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -602,6 +602,44 @@ func MemorydbUser_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.memorydbUser.MemorydbUser",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MemorydbUser_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMemorydbUser_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.memorydbUser.MemorydbUser",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MemorydbUser_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMemorydbUser_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.memorydbUser.MemorydbUser",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

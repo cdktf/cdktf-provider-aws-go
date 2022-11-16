@@ -56,6 +56,14 @@ func validateDataAwsLocationGeofenceCollection_IsConstructParameters(x interface
 	return nil
 }
 
+func validateDataAwsLocationGeofenceCollection_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsLocationGeofenceCollection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLocationGeofenceCollection) validateSetCollectionNameParameters(val *string) error {
 	return nil
 }

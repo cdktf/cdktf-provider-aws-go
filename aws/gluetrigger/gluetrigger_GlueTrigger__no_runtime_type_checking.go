@@ -72,6 +72,14 @@ func validateGlueTrigger_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGlueTrigger_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGlueTrigger_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueTrigger) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

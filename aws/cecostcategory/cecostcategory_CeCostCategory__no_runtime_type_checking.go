@@ -64,6 +64,14 @@ func validateCeCostCategory_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCeCostCategory_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCeCostCategory_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CeCostCategory) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

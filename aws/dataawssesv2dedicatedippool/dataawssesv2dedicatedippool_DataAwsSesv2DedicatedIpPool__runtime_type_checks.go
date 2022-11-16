@@ -119,6 +119,22 @@ func validateDataAwsSesv2DedicatedIpPool_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAwsSesv2DedicatedIpPool_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataAwsSesv2DedicatedIpPool_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

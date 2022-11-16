@@ -60,6 +60,14 @@ func validateWafXssMatchSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWafXssMatchSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWafXssMatchSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafXssMatchSet) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateEvidentlyProject_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEvidentlyProject_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEvidentlyProject_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EvidentlyProject) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

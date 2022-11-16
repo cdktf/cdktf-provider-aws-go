@@ -68,6 +68,14 @@ func validateApigatewayv2Stage_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApigatewayv2Stage_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApigatewayv2Stage_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2Stage) validateSetApiIdParameters(val *string) error {
 	return nil
 }

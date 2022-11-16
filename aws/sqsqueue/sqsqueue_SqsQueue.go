@@ -2,10 +2,10 @@ package sqsqueue
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/sqsqueue/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/sqsqueue/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1106,6 +1106,44 @@ func SqsQueue_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sqsQueue.SqsQueue",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SqsQueue_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSqsQueue_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.sqsQueue.SqsQueue",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SqsQueue_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSqsQueue_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.sqsQueue.SqsQueue",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

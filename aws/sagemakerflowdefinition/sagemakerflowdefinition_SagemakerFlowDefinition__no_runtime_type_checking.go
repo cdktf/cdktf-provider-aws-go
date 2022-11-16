@@ -72,6 +72,14 @@ func validateSagemakerFlowDefinition_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateSagemakerFlowDefinition_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSagemakerFlowDefinition_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerFlowDefinition) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

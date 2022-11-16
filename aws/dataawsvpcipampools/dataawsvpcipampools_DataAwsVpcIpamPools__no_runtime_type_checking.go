@@ -60,6 +60,14 @@ func validateDataAwsVpcIpamPools_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsVpcIpamPools_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsVpcIpamPools_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpcIpamPools) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateApigatewayv2RouteResponse_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateApigatewayv2RouteResponse_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApigatewayv2RouteResponse_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2RouteResponse) validateSetApiIdParameters(val *string) error {
 	return nil
 }

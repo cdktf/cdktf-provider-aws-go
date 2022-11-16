@@ -56,6 +56,14 @@ func validateDataAwsCodeartifactRepositoryEndpoint_IsConstructParameters(x inter
 	return nil
 }
 
+func validateDataAwsCodeartifactRepositoryEndpoint_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCodeartifactRepositoryEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCodeartifactRepositoryEndpoint) validateSetDomainParameters(val *string) error {
 	return nil
 }

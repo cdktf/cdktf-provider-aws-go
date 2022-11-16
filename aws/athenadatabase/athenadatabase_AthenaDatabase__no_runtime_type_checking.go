@@ -64,6 +64,14 @@ func validateAthenaDatabase_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAthenaDatabase_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAthenaDatabase_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AthenaDatabase) validateSetBucketParameters(val *string) error {
 	return nil
 }

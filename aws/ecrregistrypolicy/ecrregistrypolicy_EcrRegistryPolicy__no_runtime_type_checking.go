@@ -56,6 +56,14 @@ func validateEcrRegistryPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEcrRegistryPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEcrRegistryPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcrRegistryPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateLambdaAlias_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLambdaAlias_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLambdaAlias_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaAlias) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

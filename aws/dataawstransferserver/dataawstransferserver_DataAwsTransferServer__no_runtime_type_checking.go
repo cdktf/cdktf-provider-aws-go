@@ -56,6 +56,14 @@ func validateDataAwsTransferServer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsTransferServer_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsTransferServer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsTransferServer) validateSetIdParameters(val *string) error {
 	return nil
 }

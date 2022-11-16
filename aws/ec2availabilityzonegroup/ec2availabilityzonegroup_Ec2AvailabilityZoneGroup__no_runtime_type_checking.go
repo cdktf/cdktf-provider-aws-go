@@ -56,6 +56,14 @@ func validateEc2AvailabilityZoneGroup_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateEc2AvailabilityZoneGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2AvailabilityZoneGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2AvailabilityZoneGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

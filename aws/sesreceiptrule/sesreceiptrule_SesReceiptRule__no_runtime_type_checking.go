@@ -84,6 +84,14 @@ func validateSesReceiptRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSesReceiptRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSesReceiptRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesReceiptRule) validateSetAfterParameters(val *string) error {
 	return nil
 }

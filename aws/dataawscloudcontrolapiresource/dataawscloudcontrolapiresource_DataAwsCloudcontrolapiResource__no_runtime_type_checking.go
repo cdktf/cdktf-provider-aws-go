@@ -56,6 +56,14 @@ func validateDataAwsCloudcontrolapiResource_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataAwsCloudcontrolapiResource_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCloudcontrolapiResource_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudcontrolapiResource) validateSetIdParameters(val *string) error {
 	return nil
 }

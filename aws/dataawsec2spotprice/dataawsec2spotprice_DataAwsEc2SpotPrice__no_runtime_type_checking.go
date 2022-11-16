@@ -64,6 +64,14 @@ func validateDataAwsEc2SpotPrice_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsEc2SpotPrice_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsEc2SpotPrice_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2SpotPrice) validateSetAvailabilityZoneParameters(val *string) error {
 	return nil
 }

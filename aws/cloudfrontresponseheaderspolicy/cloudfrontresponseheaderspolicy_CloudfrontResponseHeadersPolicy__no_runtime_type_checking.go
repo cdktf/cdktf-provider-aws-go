@@ -72,6 +72,14 @@ func validateCloudfrontResponseHeadersPolicy_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateCloudfrontResponseHeadersPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudfrontResponseHeadersPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontResponseHeadersPolicy) validateSetCommentParameters(val *string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package eksfargateprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/eksfargateprofile/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/eksfargateprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -695,6 +695,44 @@ func EksFargateProfile_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfile",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EksFargateProfile_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEksFargateProfile_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfile",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EksFargateProfile_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEksFargateProfile_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.eksFargateProfile.EksFargateProfile",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -60,6 +60,14 @@ func validateGrafanaWorkspaceSamlConfiguration_IsConstructParameters(x interface
 	return nil
 }
 
+func validateGrafanaWorkspaceSamlConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGrafanaWorkspaceSamlConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateSetAdminRoleValuesParameters(val *[]*string) error {
 	return nil
 }

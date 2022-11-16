@@ -172,6 +172,22 @@ func validateImagebuilderContainerRecipe_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateImagebuilderContainerRecipe_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateImagebuilderContainerRecipe_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ImagebuilderContainerRecipe) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

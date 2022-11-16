@@ -60,6 +60,14 @@ func validateDataAwsPricingProduct_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsPricingProduct_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsPricingProduct_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsPricingProduct) validateSetIdParameters(val *string) error {
 	return nil
 }

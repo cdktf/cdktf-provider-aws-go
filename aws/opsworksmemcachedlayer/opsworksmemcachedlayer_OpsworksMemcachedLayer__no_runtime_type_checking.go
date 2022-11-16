@@ -68,6 +68,14 @@ func validateOpsworksMemcachedLayer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOpsworksMemcachedLayer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOpsworksMemcachedLayer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetAllocatedMemoryParameters(val *float64) error {
 	return nil
 }

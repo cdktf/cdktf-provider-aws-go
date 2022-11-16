@@ -60,6 +60,14 @@ func validateDataAwsAutoscalingGroups_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataAwsAutoscalingGroups_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsAutoscalingGroups_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAutoscalingGroups) validateSetIdParameters(val *string) error {
 	return nil
 }

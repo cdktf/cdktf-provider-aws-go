@@ -56,6 +56,14 @@ func validateDataAwsSesDomainIdentity_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataAwsSesDomainIdentity_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsSesDomainIdentity_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSesDomainIdentity) validateSetDomainParameters(val *string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package locationplaceindex
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/locationplaceindex/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/locationplaceindex/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -649,6 +649,44 @@ func LocationPlaceIndex_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LocationPlaceIndex_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLocationPlaceIndex_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LocationPlaceIndex_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLocationPlaceIndex_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.locationPlaceIndex.LocationPlaceIndex",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

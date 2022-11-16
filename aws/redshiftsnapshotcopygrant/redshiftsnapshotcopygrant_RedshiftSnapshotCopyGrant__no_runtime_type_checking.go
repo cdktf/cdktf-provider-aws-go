@@ -56,6 +56,14 @@ func validateRedshiftSnapshotCopyGrant_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateRedshiftSnapshotCopyGrant_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRedshiftSnapshotCopyGrant_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftSnapshotCopyGrant) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

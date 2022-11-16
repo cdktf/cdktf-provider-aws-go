@@ -56,6 +56,14 @@ func validateRoute53QueryLog_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRoute53QueryLog_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoute53QueryLog_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53QueryLog) validateSetCloudwatchLogGroupArnParameters(val *string) error {
 	return nil
 }

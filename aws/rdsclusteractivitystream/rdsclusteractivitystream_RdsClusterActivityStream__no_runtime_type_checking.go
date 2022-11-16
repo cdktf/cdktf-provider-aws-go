@@ -56,6 +56,14 @@ func validateRdsClusterActivityStream_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateRdsClusterActivityStream_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRdsClusterActivityStream_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsClusterActivityStream) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

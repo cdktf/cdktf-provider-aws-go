@@ -56,6 +56,14 @@ func validateCloud9EnvironmentMembership_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateCloud9EnvironmentMembership_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloud9EnvironmentMembership_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cloud9EnvironmentMembership) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

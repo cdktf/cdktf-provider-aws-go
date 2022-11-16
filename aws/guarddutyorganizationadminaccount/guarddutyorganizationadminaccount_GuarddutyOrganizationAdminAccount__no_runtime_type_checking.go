@@ -56,6 +56,14 @@ func validateGuarddutyOrganizationAdminAccount_IsConstructParameters(x interface
 	return nil
 }
 
+func validateGuarddutyOrganizationAdminAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGuarddutyOrganizationAdminAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GuarddutyOrganizationAdminAccount) validateSetAdminAccountIdParameters(val *string) error {
 	return nil
 }

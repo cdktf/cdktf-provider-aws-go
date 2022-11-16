@@ -2,10 +2,10 @@ package opsworkscustomlayer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/opsworkscustomlayer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/opsworkscustomlayer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1269,6 +1269,44 @@ func OpsworksCustomLayer_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OpsworksCustomLayer_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOpsworksCustomLayer_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OpsworksCustomLayer_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOpsworksCustomLayer_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayer",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

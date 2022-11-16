@@ -2,10 +2,10 @@ package wafregexmatchset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/wafregexmatchset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/wafregexmatchset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -488,6 +488,44 @@ func WafRegexMatchSet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSet",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func WafRegexMatchSet_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateWafRegexMatchSet_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSet",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func WafRegexMatchSet_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateWafRegexMatchSet_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.wafRegexMatchSet.WafRegexMatchSet",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

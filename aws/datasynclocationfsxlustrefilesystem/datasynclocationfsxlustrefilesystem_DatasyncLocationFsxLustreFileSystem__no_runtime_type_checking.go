@@ -56,6 +56,14 @@ func validateDatasyncLocationFsxLustreFileSystem_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateDatasyncLocationFsxLustreFileSystem_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatasyncLocationFsxLustreFileSystem_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationFsxLustreFileSystem) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

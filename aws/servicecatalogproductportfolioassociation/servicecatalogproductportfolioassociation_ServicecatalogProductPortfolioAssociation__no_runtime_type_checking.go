@@ -60,6 +60,14 @@ func validateServicecatalogProductPortfolioAssociation_IsConstructParameters(x i
 	return nil
 }
 
+func validateServicecatalogProductPortfolioAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServicecatalogProductPortfolioAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogProductPortfolioAssociation) validateSetAcceptLanguageParameters(val *string) error {
 	return nil
 }

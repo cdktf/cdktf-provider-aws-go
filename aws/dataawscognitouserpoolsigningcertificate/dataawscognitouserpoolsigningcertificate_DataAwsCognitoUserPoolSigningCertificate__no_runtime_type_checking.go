@@ -56,6 +56,14 @@ func validateDataAwsCognitoUserPoolSigningCertificate_IsConstructParameters(x in
 	return nil
 }
 
+func validateDataAwsCognitoUserPoolSigningCertificate_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCognitoUserPoolSigningCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

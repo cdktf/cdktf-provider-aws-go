@@ -64,6 +64,14 @@ func validateMacie2ClassificationJob_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateMacie2ClassificationJob_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMacie2ClassificationJob_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Macie2ClassificationJob) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateConfigConfigurationRecorderStatus_IsConstructParameters(x interface
 	return nil
 }
 
+func validateConfigConfigurationRecorderStatus_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConfigConfigurationRecorderStatus_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigConfigurationRecorderStatus) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateIamSamlProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIamSamlProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIamSamlProvider_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamSamlProvider) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

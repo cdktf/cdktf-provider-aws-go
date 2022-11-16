@@ -56,6 +56,14 @@ func validateVpcIpamPreviewNextCidr_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVpcIpamPreviewNextCidr_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpcIpamPreviewNextCidr_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpamPreviewNextCidr) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

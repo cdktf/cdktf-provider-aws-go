@@ -2,10 +2,10 @@ package detectivegraph
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/detectivegraph/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/detectivegraph/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -511,6 +511,44 @@ func DetectiveGraph_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.detectiveGraph.DetectiveGraph",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DetectiveGraph_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDetectiveGraph_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.detectiveGraph.DetectiveGraph",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DetectiveGraph_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDetectiveGraph_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.detectiveGraph.DetectiveGraph",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

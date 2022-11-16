@@ -84,6 +84,14 @@ func validateKeyspacesTable_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKeyspacesTable_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKeyspacesTable_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KeyspacesTable) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

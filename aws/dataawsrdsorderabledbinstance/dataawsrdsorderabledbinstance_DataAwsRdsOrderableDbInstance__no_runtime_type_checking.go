@@ -56,6 +56,14 @@ func validateDataAwsRdsOrderableDbInstance_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataAwsRdsOrderableDbInstance_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsRdsOrderableDbInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetAvailabilityZoneGroupParameters(val *string) error {
 	return nil
 }

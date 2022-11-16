@@ -56,6 +56,14 @@ func validateSnsTopicSubscription_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSnsTopicSubscription_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSnsTopicSubscription_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SnsTopicSubscription) validateSetConfirmationTimeoutInMinutesParameters(val *float64) error {
 	return nil
 }

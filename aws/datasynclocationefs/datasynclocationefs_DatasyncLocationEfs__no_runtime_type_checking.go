@@ -60,6 +60,14 @@ func validateDatasyncLocationEfs_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDatasyncLocationEfs_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatasyncLocationEfs_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationEfs) validateSetAccessPointArnParameters(val *string) error {
 	return nil
 }

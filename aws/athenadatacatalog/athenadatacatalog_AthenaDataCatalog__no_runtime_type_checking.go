@@ -56,6 +56,14 @@ func validateAthenaDataCatalog_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAthenaDataCatalog_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAthenaDataCatalog_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AthenaDataCatalog) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

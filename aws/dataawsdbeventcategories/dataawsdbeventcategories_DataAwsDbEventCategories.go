@@ -2,10 +2,10 @@ package dataawsdbeventcategories
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/dataawsdbeventcategories/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/dataawsdbeventcategories/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -415,6 +415,44 @@ func DataAwsDbEventCategories_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataAwsDbEventCategories_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataAwsDbEventCategories_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataAwsDbEventCategories_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataAwsDbEventCategories_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsDbEventCategories.DataAwsDbEventCategories",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

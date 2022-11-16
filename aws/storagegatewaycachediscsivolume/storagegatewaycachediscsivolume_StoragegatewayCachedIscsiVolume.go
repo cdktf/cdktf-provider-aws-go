@@ -2,10 +2,10 @@ package storagegatewaycachediscsivolume
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/storagegatewaycachediscsivolume/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/storagegatewaycachediscsivolume/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -842,6 +842,44 @@ func StoragegatewayCachedIscsiVolume_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.storagegatewayCachedIscsiVolume.StoragegatewayCachedIscsiVolume",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func StoragegatewayCachedIscsiVolume_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateStoragegatewayCachedIscsiVolume_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.storagegatewayCachedIscsiVolume.StoragegatewayCachedIscsiVolume",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func StoragegatewayCachedIscsiVolume_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateStoragegatewayCachedIscsiVolume_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.storagegatewayCachedIscsiVolume.StoragegatewayCachedIscsiVolume",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

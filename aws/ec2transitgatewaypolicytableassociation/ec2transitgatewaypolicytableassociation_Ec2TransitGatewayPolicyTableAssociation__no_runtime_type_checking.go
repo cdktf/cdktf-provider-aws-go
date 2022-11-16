@@ -56,6 +56,14 @@ func validateEc2TransitGatewayPolicyTableAssociation_IsConstructParameters(x int
 	return nil
 }
 
+func validateEc2TransitGatewayPolicyTableAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2TransitGatewayPolicyTableAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayPolicyTableAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package fsxontapstoragevirtualmachine
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/fsxontapstoragevirtualmachine/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/fsxontapstoragevirtualmachine/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -719,6 +719,44 @@ func FsxOntapStorageVirtualMachine_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func FsxOntapStorageVirtualMachine_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateFsxOntapStorageVirtualMachine_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func FsxOntapStorageVirtualMachine_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateFsxOntapStorageVirtualMachine_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.fsxOntapStorageVirtualMachine.FsxOntapStorageVirtualMachine",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

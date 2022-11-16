@@ -119,6 +119,22 @@ func validateDataAwsEmrcontainersVirtualCluster_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateDataAwsEmrcontainersVirtualCluster_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataAwsEmrcontainersVirtualCluster_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEmrcontainersVirtualCluster) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

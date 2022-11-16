@@ -2,10 +2,10 @@ package elasticacheuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/elasticacheuser/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/elasticacheuser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -730,6 +730,44 @@ func ElasticacheUser_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.elasticacheUser.ElasticacheUser",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ElasticacheUser_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateElasticacheUser_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.elasticacheUser.ElasticacheUser",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ElasticacheUser_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateElasticacheUser_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.elasticacheUser.ElasticacheUser",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -56,6 +56,14 @@ func validateSesEmailIdentity_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSesEmailIdentity_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSesEmailIdentity_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesEmailIdentity) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

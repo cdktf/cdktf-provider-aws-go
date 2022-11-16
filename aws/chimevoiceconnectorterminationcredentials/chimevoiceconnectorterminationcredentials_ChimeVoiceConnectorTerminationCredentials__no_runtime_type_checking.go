@@ -60,6 +60,14 @@ func validateChimeVoiceConnectorTerminationCredentials_IsConstructParameters(x i
 	return nil
 }
 
+func validateChimeVoiceConnectorTerminationCredentials_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateChimeVoiceConnectorTerminationCredentials_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ChimeVoiceConnectorTerminationCredentials) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

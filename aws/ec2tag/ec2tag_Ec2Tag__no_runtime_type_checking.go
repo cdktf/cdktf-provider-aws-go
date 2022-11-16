@@ -56,6 +56,14 @@ func validateEc2Tag_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEc2Tag_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2Tag_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2Tag) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

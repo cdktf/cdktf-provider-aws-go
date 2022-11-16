@@ -56,6 +56,14 @@ func validateDefaultVpc_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDefaultVpc_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDefaultVpc_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DefaultVpc) validateSetAssignGeneratedIpv6CidrBlockParameters(val interface{}) error {
 	return nil
 }

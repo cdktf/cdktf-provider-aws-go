@@ -56,6 +56,14 @@ func validateDevicefarmNetworkProfile_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDevicefarmNetworkProfile_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDevicefarmNetworkProfile_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicefarmNetworkProfile) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

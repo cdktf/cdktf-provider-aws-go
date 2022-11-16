@@ -68,6 +68,14 @@ func validateOpsworksApplication_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOpsworksApplication_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOpsworksApplication_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpsworksApplication) validateSetAutoBundleOnDeployParameters(val *string) error {
 	return nil
 }

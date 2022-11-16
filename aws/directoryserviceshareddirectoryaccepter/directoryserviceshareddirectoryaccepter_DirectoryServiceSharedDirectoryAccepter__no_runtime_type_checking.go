@@ -60,6 +60,14 @@ func validateDirectoryServiceSharedDirectoryAccepter_IsConstructParameters(x int
 	return nil
 }
 
+func validateDirectoryServiceSharedDirectoryAccepter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDirectoryServiceSharedDirectoryAccepter_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

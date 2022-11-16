@@ -2,10 +2,10 @@ package quicksightdatasource
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/quicksightdatasource/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/quicksightdatasource/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -756,6 +756,44 @@ func QuicksightDataSource_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSource",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func QuicksightDataSource_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateQuicksightDataSource_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSource",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func QuicksightDataSource_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateQuicksightDataSource_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSource",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

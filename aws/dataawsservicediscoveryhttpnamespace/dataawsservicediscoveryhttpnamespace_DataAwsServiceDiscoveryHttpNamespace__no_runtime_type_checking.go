@@ -56,6 +56,14 @@ func validateDataAwsServiceDiscoveryHttpNamespace_IsConstructParameters(x interf
 	return nil
 }
 
+func validateDataAwsServiceDiscoveryHttpNamespace_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsServiceDiscoveryHttpNamespace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsServiceDiscoveryHttpNamespace) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateEfsFileSystem_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEfsFileSystem_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEfsFileSystem_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EfsFileSystem) validateSetAvailabilityZoneNameParameters(val *string) error {
 	return nil
 }

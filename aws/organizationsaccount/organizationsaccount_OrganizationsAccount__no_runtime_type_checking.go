@@ -56,6 +56,14 @@ func validateOrganizationsAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOrganizationsAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOrganizationsAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrganizationsAccount) validateSetCloseOnDeletionParameters(val interface{}) error {
 	return nil
 }

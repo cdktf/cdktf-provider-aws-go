@@ -64,6 +64,14 @@ func validateDataAwsGlueScript_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsGlueScript_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsGlueScript_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsGlueScript) validateSetIdParameters(val *string) error {
 	return nil
 }

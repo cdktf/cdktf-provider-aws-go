@@ -64,6 +64,14 @@ func validateKinesisStream_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKinesisStream_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKinesisStream_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KinesisStream) validateSetArnParameters(val *string) error {
 	return nil
 }

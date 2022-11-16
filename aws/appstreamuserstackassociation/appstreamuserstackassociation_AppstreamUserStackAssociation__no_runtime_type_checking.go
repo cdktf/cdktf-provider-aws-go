@@ -56,6 +56,14 @@ func validateAppstreamUserStackAssociation_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateAppstreamUserStackAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppstreamUserStackAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppstreamUserStackAssociation) validateSetAuthenticationTypeParameters(val *string) error {
 	return nil
 }

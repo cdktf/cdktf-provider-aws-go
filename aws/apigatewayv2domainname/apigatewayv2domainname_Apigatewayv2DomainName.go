@@ -2,10 +2,10 @@ package apigatewayv2domainname
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/apigatewayv2domainname/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/apigatewayv2domainname/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -616,6 +616,44 @@ func Apigatewayv2DomainName_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainName",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Apigatewayv2DomainName_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApigatewayv2DomainName_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainName",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Apigatewayv2DomainName_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApigatewayv2DomainName_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.apigatewayv2DomainName.Apigatewayv2DomainName",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

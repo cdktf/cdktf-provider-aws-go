@@ -60,6 +60,14 @@ func validateDynamodbContributorInsights_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDynamodbContributorInsights_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDynamodbContributorInsights_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbContributorInsights) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

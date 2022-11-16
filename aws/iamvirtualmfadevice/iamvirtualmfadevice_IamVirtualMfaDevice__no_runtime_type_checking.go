@@ -56,6 +56,14 @@ func validateIamVirtualMfaDevice_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIamVirtualMfaDevice_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIamVirtualMfaDevice_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamVirtualMfaDevice) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

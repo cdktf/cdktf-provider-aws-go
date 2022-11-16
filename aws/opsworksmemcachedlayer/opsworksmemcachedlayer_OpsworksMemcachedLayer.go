@@ -2,10 +2,10 @@ package opsworksmemcachedlayer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/opsworksmemcachedlayer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/opsworksmemcachedlayer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1271,6 +1271,44 @@ func OpsworksMemcachedLayer_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OpsworksMemcachedLayer_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOpsworksMemcachedLayer_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func OpsworksMemcachedLayer_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateOpsworksMemcachedLayer_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

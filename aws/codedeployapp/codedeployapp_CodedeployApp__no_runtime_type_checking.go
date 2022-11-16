@@ -56,6 +56,14 @@ func validateCodedeployApp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCodedeployApp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCodedeployApp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodedeployApp) validateSetComputePlatformParameters(val *string) error {
 	return nil
 }

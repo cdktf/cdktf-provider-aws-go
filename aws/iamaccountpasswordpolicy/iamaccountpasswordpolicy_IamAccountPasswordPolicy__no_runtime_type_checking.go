@@ -56,6 +56,14 @@ func validateIamAccountPasswordPolicy_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateIamAccountPasswordPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIamAccountPasswordPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetAllowUsersToChangePasswordParameters(val interface{}) error {
 	return nil
 }

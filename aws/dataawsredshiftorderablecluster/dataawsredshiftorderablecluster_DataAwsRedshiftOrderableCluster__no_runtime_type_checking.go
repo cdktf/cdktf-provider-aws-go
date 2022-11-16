@@ -56,6 +56,14 @@ func validateDataAwsRedshiftOrderableCluster_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateDataAwsRedshiftOrderableCluster_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsRedshiftOrderableCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRedshiftOrderableCluster) validateSetClusterTypeParameters(val *string) error {
 	return nil
 }

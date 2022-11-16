@@ -56,6 +56,14 @@ func validateDataAwsMskconnectCustomPlugin_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataAwsMskconnectCustomPlugin_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsMskconnectCustomPlugin_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsMskconnectCustomPlugin) validateSetIdParameters(val *string) error {
 	return nil
 }

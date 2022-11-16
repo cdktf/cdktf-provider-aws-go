@@ -60,6 +60,14 @@ func validateConnectHoursOfOperation_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateConnectHoursOfOperation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConnectHoursOfOperation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectHoursOfOperation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

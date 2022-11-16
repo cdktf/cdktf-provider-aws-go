@@ -60,6 +60,14 @@ func validateVpcIpamPool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVpcIpamPool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpcIpamPool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpamPool) validateSetAddressFamilyParameters(val *string) error {
 	return nil
 }

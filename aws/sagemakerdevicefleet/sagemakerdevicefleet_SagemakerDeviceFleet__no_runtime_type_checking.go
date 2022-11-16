@@ -60,6 +60,14 @@ func validateSagemakerDeviceFleet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSagemakerDeviceFleet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSagemakerDeviceFleet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerDeviceFleet) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

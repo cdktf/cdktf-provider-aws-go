@@ -60,6 +60,14 @@ func validateFsxOpenzfsSnapshot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFsxOpenzfsSnapshot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFsxOpenzfsSnapshot_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOpenzfsSnapshot) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

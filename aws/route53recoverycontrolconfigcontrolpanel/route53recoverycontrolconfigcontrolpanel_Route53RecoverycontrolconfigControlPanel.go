@@ -2,10 +2,10 @@ package route53recoverycontrolconfigcontrolpanel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/route53recoverycontrolconfigcontrolpanel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/route53recoverycontrolconfigcontrolpanel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -531,6 +531,44 @@ func Route53RecoverycontrolconfigControlPanel_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53RecoverycontrolconfigControlPanel.Route53RecoverycontrolconfigControlPanel",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Route53RecoverycontrolconfigControlPanel_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRoute53RecoverycontrolconfigControlPanel_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.route53RecoverycontrolconfigControlPanel.Route53RecoverycontrolconfigControlPanel",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Route53RecoverycontrolconfigControlPanel_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRoute53RecoverycontrolconfigControlPanel_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.route53RecoverycontrolconfigControlPanel.Route53RecoverycontrolconfigControlPanel",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

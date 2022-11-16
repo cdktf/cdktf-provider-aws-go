@@ -60,6 +60,14 @@ func validateApiGatewayRestApi_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApiGatewayRestApi_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiGatewayRestApi_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayRestApi) validateSetApiKeySourceParameters(val *string) error {
 	return nil
 }

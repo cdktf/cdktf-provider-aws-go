@@ -56,6 +56,14 @@ func validateSsmParameter_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSsmParameter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSsmParameter_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmParameter) validateSetAllowedPatternParameters(val *string) error {
 	return nil
 }

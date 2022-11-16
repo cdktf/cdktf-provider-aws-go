@@ -64,6 +64,14 @@ func validateEmrcontainersVirtualCluster_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateEmrcontainersVirtualCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEmrcontainersVirtualCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrcontainersVirtualCluster) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

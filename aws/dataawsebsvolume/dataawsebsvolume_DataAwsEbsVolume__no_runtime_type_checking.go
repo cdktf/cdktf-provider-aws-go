@@ -64,6 +64,14 @@ func validateDataAwsEbsVolume_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsEbsVolume_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsEbsVolume_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEbsVolume) validateSetIdParameters(val *string) error {
 	return nil
 }

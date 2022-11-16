@@ -2,10 +2,10 @@ package macie2member
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/macie2member/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/macie2member/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -787,6 +787,44 @@ func Macie2Member_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.macie2Member.Macie2Member",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Macie2Member_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMacie2Member_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.macie2Member.Macie2Member",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Macie2Member_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMacie2Member_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.macie2Member.Macie2Member",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

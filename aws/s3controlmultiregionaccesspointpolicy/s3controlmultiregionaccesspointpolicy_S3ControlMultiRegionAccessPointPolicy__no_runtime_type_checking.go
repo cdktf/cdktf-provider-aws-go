@@ -64,6 +64,14 @@ func validateS3ControlMultiRegionAccessPointPolicy_IsConstructParameters(x inter
 	return nil
 }
 
+func validateS3ControlMultiRegionAccessPointPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateS3ControlMultiRegionAccessPointPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3ControlMultiRegionAccessPointPolicy) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

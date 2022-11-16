@@ -56,6 +56,14 @@ func validateDataAwsSfnActivity_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsSfnActivity_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsSfnActivity_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSfnActivity) validateSetArnParameters(val *string) error {
 	return nil
 }

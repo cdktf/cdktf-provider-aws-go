@@ -60,6 +60,14 @@ func validateDataAwsKmsSecret_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsKmsSecret_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsKmsSecret_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsKmsSecret) validateSetIdParameters(val *string) error {
 	return nil
 }

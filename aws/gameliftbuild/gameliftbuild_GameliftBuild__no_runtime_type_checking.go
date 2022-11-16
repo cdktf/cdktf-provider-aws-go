@@ -60,6 +60,14 @@ func validateGameliftBuild_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGameliftBuild_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGameliftBuild_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GameliftBuild) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

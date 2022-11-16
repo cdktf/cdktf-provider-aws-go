@@ -68,6 +68,14 @@ func validateServicecatalogProvisionedProduct_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateServicecatalogProvisionedProduct_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServicecatalogProvisionedProduct_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogProvisionedProduct) validateSetAcceptLanguageParameters(val *string) error {
 	return nil
 }

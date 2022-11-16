@@ -56,6 +56,14 @@ func validateLakeformationResource_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLakeformationResource_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLakeformationResource_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LakeformationResource) validateSetArnParameters(val *string) error {
 	return nil
 }

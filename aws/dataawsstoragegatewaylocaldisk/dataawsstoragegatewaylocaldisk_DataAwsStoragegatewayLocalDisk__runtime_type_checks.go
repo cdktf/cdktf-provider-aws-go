@@ -119,6 +119,22 @@ func validateDataAwsStoragegatewayLocalDisk_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataAwsStoragegatewayLocalDisk_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataAwsStoragegatewayLocalDisk_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsStoragegatewayLocalDisk) validateSetDiskNodeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

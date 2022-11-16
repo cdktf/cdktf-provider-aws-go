@@ -56,6 +56,14 @@ func validatePlacementGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePlacementGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePlacementGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PlacementGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

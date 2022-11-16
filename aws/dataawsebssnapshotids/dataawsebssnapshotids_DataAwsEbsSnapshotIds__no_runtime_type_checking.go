@@ -64,6 +64,14 @@ func validateDataAwsEbsSnapshotIds_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsEbsSnapshotIds_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsEbsSnapshotIds_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEbsSnapshotIds) validateSetIdParameters(val *string) error {
 	return nil
 }

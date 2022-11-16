@@ -68,6 +68,14 @@ func validateOpsworksStaticWebLayer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOpsworksStaticWebLayer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOpsworksStaticWebLayer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetAutoAssignElasticIpsParameters(val interface{}) error {
 	return nil
 }

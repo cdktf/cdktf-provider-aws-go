@@ -56,6 +56,14 @@ func validateDataAwsBackupFramework_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsBackupFramework_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsBackupFramework_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsBackupFramework) validateSetIdParameters(val *string) error {
 	return nil
 }

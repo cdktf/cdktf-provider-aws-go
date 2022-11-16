@@ -56,6 +56,14 @@ func validateDataAwsApiGatewayResource_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataAwsApiGatewayResource_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsApiGatewayResource_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsApiGatewayResource) validateSetIdParameters(val *string) error {
 	return nil
 }

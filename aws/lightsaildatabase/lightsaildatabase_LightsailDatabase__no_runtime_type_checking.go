@@ -56,6 +56,14 @@ func validateLightsailDatabase_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLightsailDatabase_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLightsailDatabase_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailDatabase) validateSetApplyImmediatelyParameters(val interface{}) error {
 	return nil
 }

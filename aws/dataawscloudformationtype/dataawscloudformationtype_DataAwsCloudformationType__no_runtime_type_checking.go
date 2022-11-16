@@ -56,6 +56,14 @@ func validateDataAwsCloudformationType_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataAwsCloudformationType_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCloudformationType_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudformationType) validateSetArnParameters(val *string) error {
 	return nil
 }

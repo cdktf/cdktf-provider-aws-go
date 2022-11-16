@@ -56,6 +56,14 @@ func validateAppconfigDeploymentStrategy_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateAppconfigDeploymentStrategy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppconfigDeploymentStrategy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppconfigDeploymentStrategy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

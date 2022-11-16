@@ -88,6 +88,14 @@ func validateMedialiveChannel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMedialiveChannel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMedialiveChannel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MedialiveChannel) validateSetChannelClassParameters(val *string) error {
 	return nil
 }

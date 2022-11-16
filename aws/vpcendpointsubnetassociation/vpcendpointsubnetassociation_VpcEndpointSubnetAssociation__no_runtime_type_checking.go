@@ -60,6 +60,14 @@ func validateVpcEndpointSubnetAssociation_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateVpcEndpointSubnetAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpcEndpointSubnetAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointSubnetAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

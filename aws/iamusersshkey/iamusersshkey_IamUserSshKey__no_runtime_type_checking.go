@@ -56,6 +56,14 @@ func validateIamUserSshKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIamUserSshKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIamUserSshKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamUserSshKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

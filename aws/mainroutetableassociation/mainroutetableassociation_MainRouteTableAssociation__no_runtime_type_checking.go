@@ -56,6 +56,14 @@ func validateMainRouteTableAssociation_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateMainRouteTableAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMainRouteTableAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MainRouteTableAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

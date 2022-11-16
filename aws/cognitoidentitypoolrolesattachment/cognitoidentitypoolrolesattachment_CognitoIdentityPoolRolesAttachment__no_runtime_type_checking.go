@@ -60,6 +60,14 @@ func validateCognitoIdentityPoolRolesAttachment_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateCognitoIdentityPoolRolesAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCognitoIdentityPoolRolesAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

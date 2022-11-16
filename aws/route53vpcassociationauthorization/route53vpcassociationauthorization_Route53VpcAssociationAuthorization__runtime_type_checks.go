@@ -119,6 +119,22 @@ func validateRoute53VpcAssociationAuthorization_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateRoute53VpcAssociationAuthorization_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateRoute53VpcAssociationAuthorization_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Route53VpcAssociationAuthorization) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

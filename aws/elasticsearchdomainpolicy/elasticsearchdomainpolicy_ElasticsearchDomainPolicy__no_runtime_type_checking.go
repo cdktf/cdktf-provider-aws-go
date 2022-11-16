@@ -60,6 +60,14 @@ func validateElasticsearchDomainPolicy_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateElasticsearchDomainPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateElasticsearchDomainPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticsearchDomainPolicy) validateSetAccessPoliciesParameters(val *string) error {
 	return nil
 }

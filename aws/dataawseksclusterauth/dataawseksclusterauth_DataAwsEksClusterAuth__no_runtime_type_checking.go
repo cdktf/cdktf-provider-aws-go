@@ -56,6 +56,14 @@ func validateDataAwsEksClusterAuth_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsEksClusterAuth_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsEksClusterAuth_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEksClusterAuth) validateSetIdParameters(val *string) error {
 	return nil
 }

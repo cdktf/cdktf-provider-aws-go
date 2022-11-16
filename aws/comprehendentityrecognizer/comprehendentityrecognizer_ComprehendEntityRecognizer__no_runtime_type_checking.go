@@ -68,6 +68,14 @@ func validateComprehendEntityRecognizer_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateComprehendEntityRecognizer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateComprehendEntityRecognizer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComprehendEntityRecognizer) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package wafv2regexpatternset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/wafv2regexpatternset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/wafv2regexpatternset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -638,6 +638,44 @@ func Wafv2RegexPatternSet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSet",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Wafv2RegexPatternSet_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateWafv2RegexPatternSet_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSet",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Wafv2RegexPatternSet_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateWafv2RegexPatternSet_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.wafv2RegexPatternSet.Wafv2RegexPatternSet",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -56,6 +56,14 @@ func validateApiGatewayAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApiGatewayAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApiGatewayAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayAccount) validateSetCloudwatchRoleArnParameters(val *string) error {
 	return nil
 }

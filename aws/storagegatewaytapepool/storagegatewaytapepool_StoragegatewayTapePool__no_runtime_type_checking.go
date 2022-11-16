@@ -56,6 +56,14 @@ func validateStoragegatewayTapePool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateStoragegatewayTapePool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStoragegatewayTapePool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewayTapePool) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

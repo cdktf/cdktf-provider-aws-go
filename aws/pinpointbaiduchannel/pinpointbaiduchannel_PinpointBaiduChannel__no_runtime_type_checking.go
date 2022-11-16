@@ -56,6 +56,14 @@ func validatePinpointBaiduChannel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePinpointBaiduChannel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePinpointBaiduChannel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointBaiduChannel) validateSetApiKeyParameters(val *string) error {
 	return nil
 }

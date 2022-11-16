@@ -60,6 +60,14 @@ func validateNetworkmanagerGlobalNetwork_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateNetworkmanagerGlobalNetwork_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkmanagerGlobalNetwork_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerGlobalNetwork) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

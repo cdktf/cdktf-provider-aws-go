@@ -56,6 +56,14 @@ func validateSesTemplate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSesTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSesTemplate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesTemplate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

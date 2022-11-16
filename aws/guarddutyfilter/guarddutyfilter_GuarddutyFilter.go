@@ -2,10 +2,10 @@ package guarddutyfilter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/guarddutyfilter/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/guarddutyfilter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -694,6 +694,44 @@ func GuarddutyFilter_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilter",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GuarddutyFilter_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGuarddutyFilter_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilter",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GuarddutyFilter_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGuarddutyFilter_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.guarddutyFilter.GuarddutyFilter",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

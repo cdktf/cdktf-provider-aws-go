@@ -161,6 +161,22 @@ func validateDataAwsEc2TransitGatewayDxGatewayAttachment_IsConstructParameters(x
 	return nil
 }
 
+func validateDataAwsEc2TransitGatewayDxGatewayAttachment_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataAwsEc2TransitGatewayDxGatewayAttachment_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachment) validateSetDxGatewayIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

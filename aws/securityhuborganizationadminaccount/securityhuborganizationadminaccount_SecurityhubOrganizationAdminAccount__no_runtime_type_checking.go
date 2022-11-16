@@ -56,6 +56,14 @@ func validateSecurityhubOrganizationAdminAccount_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateSecurityhubOrganizationAdminAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecurityhubOrganizationAdminAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityhubOrganizationAdminAccount) validateSetAdminAccountIdParameters(val *string) error {
 	return nil
 }

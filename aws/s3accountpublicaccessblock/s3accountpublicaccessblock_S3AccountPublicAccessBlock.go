@@ -2,10 +2,10 @@ package s3accountpublicaccessblock
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/s3accountpublicaccessblock/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/s3accountpublicaccessblock/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -594,6 +594,44 @@ func S3AccountPublicAccessBlock_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3AccountPublicAccessBlock.S3AccountPublicAccessBlock",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func S3AccountPublicAccessBlock_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateS3AccountPublicAccessBlock_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.s3AccountPublicAccessBlock.S3AccountPublicAccessBlock",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func S3AccountPublicAccessBlock_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateS3AccountPublicAccessBlock_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.s3AccountPublicAccessBlock.S3AccountPublicAccessBlock",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

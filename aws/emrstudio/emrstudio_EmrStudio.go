@@ -2,10 +2,10 @@ package emrstudio
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/emrstudio/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/emrstudio/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -923,6 +923,44 @@ func EmrStudio_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.emrStudio.EmrStudio",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EmrStudio_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEmrStudio_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.emrStudio.EmrStudio",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EmrStudio_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEmrStudio_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.emrStudio.EmrStudio",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -56,6 +56,14 @@ func validateDataAwsDbSubnetGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsDbSubnetGroup_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsDbSubnetGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDbSubnetGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

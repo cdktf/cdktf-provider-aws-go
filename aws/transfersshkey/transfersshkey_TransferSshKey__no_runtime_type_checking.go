@@ -56,6 +56,14 @@ func validateTransferSshKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateTransferSshKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTransferSshKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransferSshKey) validateSetBodyParameters(val *string) error {
 	return nil
 }

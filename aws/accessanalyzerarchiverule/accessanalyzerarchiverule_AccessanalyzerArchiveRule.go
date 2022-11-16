@@ -2,10 +2,10 @@ package accessanalyzerarchiverule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/accessanalyzerarchiverule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/accessanalyzerarchiverule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -510,6 +510,44 @@ func AccessanalyzerArchiveRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRule",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AccessanalyzerArchiveRule_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAccessanalyzerArchiveRule_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRule",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AccessanalyzerArchiveRule_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAccessanalyzerArchiveRule_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.accessanalyzerArchiveRule.AccessanalyzerArchiveRule",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

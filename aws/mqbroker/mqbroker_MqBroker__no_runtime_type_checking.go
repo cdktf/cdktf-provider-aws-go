@@ -84,6 +84,14 @@ func validateMqBroker_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMqBroker_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMqBroker_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MqBroker) validateSetApplyImmediatelyParameters(val interface{}) error {
 	return nil
 }

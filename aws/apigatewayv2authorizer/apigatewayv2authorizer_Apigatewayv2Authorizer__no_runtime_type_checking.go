@@ -60,6 +60,14 @@ func validateApigatewayv2Authorizer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApigatewayv2Authorizer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApigatewayv2Authorizer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2Authorizer) validateSetApiIdParameters(val *string) error {
 	return nil
 }

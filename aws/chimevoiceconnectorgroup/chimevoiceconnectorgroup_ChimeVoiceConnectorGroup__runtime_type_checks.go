@@ -150,6 +150,22 @@ func validateChimeVoiceConnectorGroup_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateChimeVoiceConnectorGroup_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateChimeVoiceConnectorGroup_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ChimeVoiceConnectorGroup) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

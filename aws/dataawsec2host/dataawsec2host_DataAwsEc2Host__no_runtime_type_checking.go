@@ -64,6 +64,14 @@ func validateDataAwsEc2Host_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsEc2Host_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsEc2Host_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2Host) validateSetHostIdParameters(val *string) error {
 	return nil
 }

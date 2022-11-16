@@ -60,6 +60,14 @@ func validateCloudfrontFieldLevelEncryptionProfile_IsConstructParameters(x inter
 	return nil
 }
 
+func validateCloudfrontFieldLevelEncryptionProfile_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudfrontFieldLevelEncryptionProfile_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontFieldLevelEncryptionProfile) validateSetCommentParameters(val *string) error {
 	return nil
 }

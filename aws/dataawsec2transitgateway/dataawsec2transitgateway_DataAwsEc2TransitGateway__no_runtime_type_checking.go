@@ -64,6 +64,14 @@ func validateDataAwsEc2TransitGateway_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataAwsEc2TransitGateway_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsEc2TransitGateway_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2TransitGateway) validateSetIdParameters(val *string) error {
 	return nil
 }

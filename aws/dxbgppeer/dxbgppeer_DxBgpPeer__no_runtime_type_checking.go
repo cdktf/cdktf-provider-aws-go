@@ -60,6 +60,14 @@ func validateDxBgpPeer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDxBgpPeer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDxBgpPeer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DxBgpPeer) validateSetAddressFamilyParameters(val *string) error {
 	return nil
 }

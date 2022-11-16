@@ -56,6 +56,14 @@ func validateApigatewayv2VpcLink_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApigatewayv2VpcLink_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApigatewayv2VpcLink_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2VpcLink) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

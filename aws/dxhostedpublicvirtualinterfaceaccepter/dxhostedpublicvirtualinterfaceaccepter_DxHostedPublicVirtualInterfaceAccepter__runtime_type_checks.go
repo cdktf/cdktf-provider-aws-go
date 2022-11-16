@@ -130,6 +130,22 @@ func validateDxHostedPublicVirtualInterfaceAccepter_IsConstructParameters(x inte
 	return nil
 }
 
+func validateDxHostedPublicVirtualInterfaceAccepter_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDxHostedPublicVirtualInterfaceAccepter_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DxHostedPublicVirtualInterfaceAccepter) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

@@ -84,6 +84,14 @@ func validateAutoscalingGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAutoscalingGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAutoscalingGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingGroup) validateSetAvailabilityZonesParameters(val *[]*string) error {
 	return nil
 }

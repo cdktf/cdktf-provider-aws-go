@@ -56,6 +56,14 @@ func validateElasticBeanstalkApplicationVersion_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateElasticBeanstalkApplicationVersion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateElasticBeanstalkApplicationVersion_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetApplicationParameters(val *string) error {
 	return nil
 }

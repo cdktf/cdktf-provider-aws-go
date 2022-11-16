@@ -56,6 +56,14 @@ func validateCurReportDefinition_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCurReportDefinition_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCurReportDefinition_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CurReportDefinition) validateSetAdditionalArtifactsParameters(val *[]*string) error {
 	return nil
 }

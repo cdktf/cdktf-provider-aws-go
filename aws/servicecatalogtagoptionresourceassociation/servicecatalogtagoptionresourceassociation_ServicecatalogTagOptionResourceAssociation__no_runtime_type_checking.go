@@ -60,6 +60,14 @@ func validateServicecatalogTagOptionResourceAssociation_IsConstructParameters(x 
 	return nil
 }
 
+func validateServicecatalogTagOptionResourceAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServicecatalogTagOptionResourceAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

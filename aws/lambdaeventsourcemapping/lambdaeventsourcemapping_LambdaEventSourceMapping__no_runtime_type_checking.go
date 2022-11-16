@@ -80,6 +80,14 @@ func validateLambdaEventSourceMapping_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateLambdaEventSourceMapping_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLambdaEventSourceMapping_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaEventSourceMapping) validateSetBatchSizeParameters(val *float64) error {
 	return nil
 }

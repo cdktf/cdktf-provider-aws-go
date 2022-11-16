@@ -64,6 +64,14 @@ func validateSsmAssociation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSsmAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSsmAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmAssociation) validateSetApplyOnlyAtCronIntervalParameters(val interface{}) error {
 	return nil
 }

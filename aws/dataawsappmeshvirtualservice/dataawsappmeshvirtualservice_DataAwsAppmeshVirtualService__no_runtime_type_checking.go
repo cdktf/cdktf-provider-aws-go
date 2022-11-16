@@ -56,6 +56,14 @@ func validateDataAwsAppmeshVirtualService_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataAwsAppmeshVirtualService_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsAppmeshVirtualService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAppmeshVirtualService) validateSetIdParameters(val *string) error {
 	return nil
 }

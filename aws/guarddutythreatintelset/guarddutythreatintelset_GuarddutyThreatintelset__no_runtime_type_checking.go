@@ -56,6 +56,14 @@ func validateGuarddutyThreatintelset_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateGuarddutyThreatintelset_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGuarddutyThreatintelset_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GuarddutyThreatintelset) validateSetActivateParameters(val interface{}) error {
 	return nil
 }

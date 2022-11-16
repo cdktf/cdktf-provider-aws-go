@@ -64,6 +64,14 @@ func validateConfigConfigRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateConfigConfigRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConfigConfigRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigConfigRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

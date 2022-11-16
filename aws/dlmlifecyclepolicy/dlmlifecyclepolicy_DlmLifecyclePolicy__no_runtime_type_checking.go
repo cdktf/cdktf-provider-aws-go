@@ -60,6 +60,14 @@ func validateDlmLifecyclePolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDlmLifecyclePolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDlmLifecyclePolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DlmLifecyclePolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

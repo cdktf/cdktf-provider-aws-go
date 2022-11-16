@@ -2,10 +2,10 @@ package ami
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/ami/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/ami/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1171,6 +1171,44 @@ func Ami_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ami.Ami",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Ami_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAmi_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ami.Ami",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Ami_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAmi_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ami.Ami",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

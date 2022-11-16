@@ -56,6 +56,14 @@ func validateDataAwsRdsCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsRdsCluster_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsRdsCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRdsCluster) validateSetClusterIdentifierParameters(val *string) error {
 	return nil
 }

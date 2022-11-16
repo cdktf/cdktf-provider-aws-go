@@ -56,6 +56,14 @@ func validateMskScramSecretAssociation_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateMskScramSecretAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMskScramSecretAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MskScramSecretAssociation) validateSetClusterArnParameters(val *string) error {
 	return nil
 }

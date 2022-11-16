@@ -88,6 +88,14 @@ func validateMskconnectConnector_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMskconnectConnector_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMskconnectConnector_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MskconnectConnector) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

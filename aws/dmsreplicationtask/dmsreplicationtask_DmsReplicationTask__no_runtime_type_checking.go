@@ -56,6 +56,14 @@ func validateDmsReplicationTask_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDmsReplicationTask_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDmsReplicationTask_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsReplicationTask) validateSetCdcStartPositionParameters(val *string) error {
 	return nil
 }

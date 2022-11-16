@@ -60,6 +60,14 @@ func validateNetworkmanagerCustomerGatewayAssociation_IsConstructParameters(x in
 	return nil
 }
 
+func validateNetworkmanagerCustomerGatewayAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkmanagerCustomerGatewayAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

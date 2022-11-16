@@ -64,6 +64,14 @@ func validateCognitoUserPoolClient_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCognitoUserPoolClient_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCognitoUserPoolClient_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoUserPoolClient) validateSetAccessTokenValidityParameters(val *float64) error {
 	return nil
 }

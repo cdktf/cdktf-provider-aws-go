@@ -64,6 +64,14 @@ func validateFsxOntapFileSystem_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFsxOntapFileSystem_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFsxOntapFileSystem_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOntapFileSystem) validateSetAutomaticBackupRetentionDaysParameters(val *float64) error {
 	return nil
 }

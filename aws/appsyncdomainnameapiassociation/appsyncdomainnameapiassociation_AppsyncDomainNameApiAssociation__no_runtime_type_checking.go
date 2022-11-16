@@ -56,6 +56,14 @@ func validateAppsyncDomainNameApiAssociation_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateAppsyncDomainNameApiAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppsyncDomainNameApiAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncDomainNameApiAssociation) validateSetApiIdParameters(val *string) error {
 	return nil
 }

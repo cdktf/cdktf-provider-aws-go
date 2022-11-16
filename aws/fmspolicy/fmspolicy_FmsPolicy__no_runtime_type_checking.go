@@ -68,6 +68,14 @@ func validateFmsPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFmsPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFmsPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FmsPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

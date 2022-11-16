@@ -56,6 +56,14 @@ func validateGrafanaWorkspaceApiKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGrafanaWorkspaceApiKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGrafanaWorkspaceApiKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GrafanaWorkspaceApiKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateMemorydbSubnetGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMemorydbSubnetGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMemorydbSubnetGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemorydbSubnetGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

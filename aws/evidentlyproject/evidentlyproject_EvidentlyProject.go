@@ -2,10 +2,10 @@ package evidentlyproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/evidentlyproject/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/evidentlyproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -705,6 +705,44 @@ func EvidentlyProject_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.evidentlyProject.EvidentlyProject",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EvidentlyProject_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEvidentlyProject_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.evidentlyProject.EvidentlyProject",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EvidentlyProject_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEvidentlyProject_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.evidentlyProject.EvidentlyProject",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

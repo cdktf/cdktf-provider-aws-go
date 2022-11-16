@@ -56,6 +56,14 @@ func validateDataAwsIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsIamPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsIamPolicy) validateSetArnParameters(val *string) error {
 	return nil
 }

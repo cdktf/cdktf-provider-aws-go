@@ -56,6 +56,14 @@ func validateRedshiftSnapshotSchedule_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateRedshiftSnapshotSchedule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRedshiftSnapshotSchedule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftSnapshotSchedule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

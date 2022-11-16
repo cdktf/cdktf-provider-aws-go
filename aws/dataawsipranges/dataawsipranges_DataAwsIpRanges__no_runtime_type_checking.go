@@ -56,6 +56,14 @@ func validateDataAwsIpRanges_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsIpRanges_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsIpRanges_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsIpRanges) validateSetIdParameters(val *string) error {
 	return nil
 }

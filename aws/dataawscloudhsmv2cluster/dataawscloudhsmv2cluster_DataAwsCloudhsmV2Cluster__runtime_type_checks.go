@@ -119,6 +119,22 @@ func validateDataAwsCloudhsmV2Cluster_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataAwsCloudhsmV2Cluster_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataAwsCloudhsmV2Cluster_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudhsmV2Cluster) validateSetClusterIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

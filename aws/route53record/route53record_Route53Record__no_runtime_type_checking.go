@@ -76,6 +76,14 @@ func validateRoute53Record_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRoute53Record_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoute53Record_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53Record) validateSetAllowOverwriteParameters(val interface{}) error {
 	return nil
 }

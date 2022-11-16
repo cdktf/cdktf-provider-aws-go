@@ -56,6 +56,14 @@ func validateApprunnerVpcConnector_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateApprunnerVpcConnector_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApprunnerVpcConnector_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerVpcConnector) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

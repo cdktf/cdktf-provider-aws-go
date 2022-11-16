@@ -56,6 +56,14 @@ func validateDmsCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDmsCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDmsCertificate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsCertificate) validateSetCertificateIdParameters(val *string) error {
 	return nil
 }

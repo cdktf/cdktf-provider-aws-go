@@ -72,6 +72,14 @@ func validateAppflowFlow_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppflowFlow_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppflowFlow_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppflowFlow) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

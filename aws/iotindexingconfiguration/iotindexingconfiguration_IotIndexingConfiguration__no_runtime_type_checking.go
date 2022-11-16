@@ -64,6 +64,14 @@ func validateIotIndexingConfiguration_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateIotIndexingConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIotIndexingConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotIndexingConfiguration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

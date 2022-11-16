@@ -60,6 +60,14 @@ func validateAccessanalyzerArchiveRule_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateAccessanalyzerArchiveRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAccessanalyzerArchiveRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessanalyzerArchiveRule) validateSetAnalyzerNameParameters(val *string) error {
 	return nil
 }

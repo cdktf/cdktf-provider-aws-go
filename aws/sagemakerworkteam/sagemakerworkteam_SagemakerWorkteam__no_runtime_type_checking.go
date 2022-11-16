@@ -64,6 +64,14 @@ func validateSagemakerWorkteam_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSagemakerWorkteam_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSagemakerWorkteam_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerWorkteam) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

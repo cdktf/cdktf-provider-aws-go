@@ -2,9 +2,9 @@ package route53resolverendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/route53resolverendpoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/route53resolverendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

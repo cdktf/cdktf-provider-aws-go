@@ -56,6 +56,14 @@ func validateDxConnectionAssociation_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDxConnectionAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDxConnectionAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DxConnectionAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

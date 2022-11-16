@@ -2,10 +2,10 @@ package xraysamplingrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/xraysamplingrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/xraysamplingrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -910,6 +910,44 @@ func XraySamplingRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.xraySamplingRule.XraySamplingRule",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func XraySamplingRule_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateXraySamplingRule_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.xraySamplingRule.XraySamplingRule",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func XraySamplingRule_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateXraySamplingRule_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.xraySamplingRule.XraySamplingRule",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -56,6 +56,14 @@ func validateLightsailInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLightsailInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLightsailInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailInstance) validateSetAvailabilityZoneParameters(val *string) error {
 	return nil
 }

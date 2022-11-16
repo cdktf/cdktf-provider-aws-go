@@ -60,6 +60,14 @@ func validateCeAnomalySubscription_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCeAnomalySubscription_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCeAnomalySubscription_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CeAnomalySubscription) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

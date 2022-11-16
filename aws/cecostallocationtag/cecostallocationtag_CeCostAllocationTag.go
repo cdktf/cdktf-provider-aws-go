@@ -2,10 +2,10 @@ package cecostallocationtag
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/cecostallocationtag/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/cecostallocationtag/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -498,6 +498,44 @@ func CeCostAllocationTag_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CeCostAllocationTag_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCeCostAllocationTag_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CeCostAllocationTag_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCeCostAllocationTag_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

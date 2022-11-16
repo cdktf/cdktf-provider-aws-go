@@ -68,6 +68,14 @@ func validateFsxFileCache_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFsxFileCache_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFsxFileCache_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxFileCache) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

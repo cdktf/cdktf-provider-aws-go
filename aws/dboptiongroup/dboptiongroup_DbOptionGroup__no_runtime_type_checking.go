@@ -64,6 +64,14 @@ func validateDbOptionGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDbOptionGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDbOptionGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbOptionGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

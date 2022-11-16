@@ -72,6 +72,14 @@ func validateIdentitystoreUser_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIdentitystoreUser_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIdentitystoreUser_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentitystoreUser) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

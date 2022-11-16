@@ -56,6 +56,14 @@ func validateGuarddutyIpset_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGuarddutyIpset_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGuarddutyIpset_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GuarddutyIpset) validateSetActivateParameters(val interface{}) error {
 	return nil
 }

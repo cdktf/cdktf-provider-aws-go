@@ -64,6 +64,14 @@ func validateDaxCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDaxCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDaxCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DaxCluster) validateSetAvailabilityZonesParameters(val *[]*string) error {
 	return nil
 }

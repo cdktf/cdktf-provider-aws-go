@@ -64,6 +64,14 @@ func validateCodepipeline_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCodepipeline_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCodepipeline_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Codepipeline) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

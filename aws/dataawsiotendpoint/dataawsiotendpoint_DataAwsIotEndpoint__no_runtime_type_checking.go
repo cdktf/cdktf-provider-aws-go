@@ -56,6 +56,14 @@ func validateDataAwsIotEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsIotEndpoint_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsIotEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsIotEndpoint) validateSetEndpointTypeParameters(val *string) error {
 	return nil
 }

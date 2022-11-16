@@ -56,6 +56,14 @@ func validateDataAwsConnectSecurityProfile_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataAwsConnectSecurityProfile_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsConnectSecurityProfile_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectSecurityProfile) validateSetIdParameters(val *string) error {
 	return nil
 }

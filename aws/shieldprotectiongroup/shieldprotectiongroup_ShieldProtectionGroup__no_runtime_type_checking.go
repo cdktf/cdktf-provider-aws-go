@@ -56,6 +56,14 @@ func validateShieldProtectionGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateShieldProtectionGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateShieldProtectionGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ShieldProtectionGroup) validateSetAggregationParameters(val *string) error {
 	return nil
 }

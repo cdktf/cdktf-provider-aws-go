@@ -2,10 +2,10 @@ package directoryserviceshareddirectory
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/directoryserviceshareddirectory/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/directoryserviceshareddirectory/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -581,6 +581,44 @@ func DirectoryServiceSharedDirectory_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DirectoryServiceSharedDirectory_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDirectoryServiceSharedDirectory_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DirectoryServiceSharedDirectory_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDirectoryServiceSharedDirectory_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.directoryServiceSharedDirectory.DirectoryServiceSharedDirectory",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

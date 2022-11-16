@@ -60,6 +60,14 @@ func validateFsxBackup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFsxBackup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFsxBackup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxBackup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

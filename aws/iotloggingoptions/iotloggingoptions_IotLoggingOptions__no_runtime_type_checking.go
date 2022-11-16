@@ -56,6 +56,14 @@ func validateIotLoggingOptions_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIotLoggingOptions_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIotLoggingOptions_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotLoggingOptions) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

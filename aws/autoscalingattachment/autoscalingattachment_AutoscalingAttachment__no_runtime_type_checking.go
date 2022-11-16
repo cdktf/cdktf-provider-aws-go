@@ -56,6 +56,14 @@ func validateAutoscalingAttachment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAutoscalingAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAutoscalingAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingAttachment) validateSetAlbTargetGroupArnParameters(val *string) error {
 	return nil
 }

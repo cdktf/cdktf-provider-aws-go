@@ -68,6 +68,14 @@ func validateStoragegatewayNfsFileShare_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateStoragegatewayNfsFileShare_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStoragegatewayNfsFileShare_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetAuditDestinationArnParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateAlbListener_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAlbListener_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAlbListener_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlbListener) validateSetAlpnPolicyParameters(val *string) error {
 	return nil
 }

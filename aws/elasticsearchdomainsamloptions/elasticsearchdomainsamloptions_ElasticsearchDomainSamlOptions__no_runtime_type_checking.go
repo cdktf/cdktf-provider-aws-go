@@ -64,6 +64,14 @@ func validateElasticsearchDomainSamlOptions_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateElasticsearchDomainSamlOptions_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateElasticsearchDomainSamlOptions_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticsearchDomainSamlOptions) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

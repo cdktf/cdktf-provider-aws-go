@@ -56,6 +56,14 @@ func validateIotRoleAlias_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIotRoleAlias_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIotRoleAlias_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotRoleAlias) validateSetAliasParameters(val *string) error {
 	return nil
 }

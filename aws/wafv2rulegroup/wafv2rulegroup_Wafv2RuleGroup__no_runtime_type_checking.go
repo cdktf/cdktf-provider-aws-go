@@ -68,6 +68,14 @@ func validateWafv2RuleGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWafv2RuleGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWafv2RuleGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Wafv2RuleGroup) validateSetCapacityParameters(val *float64) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateSnsTopicPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSnsTopicPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSnsTopicPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SnsTopicPolicy) validateSetArnParameters(val *string) error {
 	return nil
 }

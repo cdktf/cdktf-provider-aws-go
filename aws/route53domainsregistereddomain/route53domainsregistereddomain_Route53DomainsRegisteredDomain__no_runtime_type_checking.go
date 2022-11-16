@@ -76,6 +76,14 @@ func validateRoute53DomainsRegisteredDomain_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateRoute53DomainsRegisteredDomain_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoute53DomainsRegisteredDomain_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53DomainsRegisteredDomain) validateSetAdminPrivacyParameters(val interface{}) error {
 	return nil
 }

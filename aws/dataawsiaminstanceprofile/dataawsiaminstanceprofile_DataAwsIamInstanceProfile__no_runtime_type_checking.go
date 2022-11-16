@@ -56,6 +56,14 @@ func validateDataAwsIamInstanceProfile_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataAwsIamInstanceProfile_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsIamInstanceProfile_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsIamInstanceProfile) validateSetIdParameters(val *string) error {
 	return nil
 }

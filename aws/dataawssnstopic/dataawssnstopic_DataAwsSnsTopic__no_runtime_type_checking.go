@@ -56,6 +56,14 @@ func validateDataAwsSnsTopic_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsSnsTopic_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsSnsTopic_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSnsTopic) validateSetIdParameters(val *string) error {
 	return nil
 }

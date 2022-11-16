@@ -92,6 +92,14 @@ func validateEcsService_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEcsService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEcsService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsService) validateSetClusterParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateElasticacheCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateElasticacheCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateElasticacheCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheCluster) validateSetApplyImmediatelyParameters(val interface{}) error {
 	return nil
 }

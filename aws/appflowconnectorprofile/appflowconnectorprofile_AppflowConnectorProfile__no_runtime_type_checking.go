@@ -60,6 +60,14 @@ func validateAppflowConnectorProfile_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateAppflowConnectorProfile_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppflowConnectorProfile_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppflowConnectorProfile) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

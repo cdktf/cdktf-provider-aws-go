@@ -56,6 +56,14 @@ func validateRoute53HealthCheck_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRoute53HealthCheck_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoute53HealthCheck_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53HealthCheck) validateSetChildHealthchecksParameters(val *[]*string) error {
 	return nil
 }

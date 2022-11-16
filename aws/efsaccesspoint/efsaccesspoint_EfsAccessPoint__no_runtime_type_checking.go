@@ -64,6 +64,14 @@ func validateEfsAccessPoint_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEfsAccessPoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEfsAccessPoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EfsAccessPoint) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

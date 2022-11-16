@@ -56,6 +56,14 @@ func validateSignerSigningProfilePermission_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateSignerSigningProfilePermission_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSignerSigningProfilePermission_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SignerSigningProfilePermission) validateSetActionParameters(val *string) error {
 	return nil
 }

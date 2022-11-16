@@ -60,6 +60,14 @@ func validateDataAwsLbTargetGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsLbTargetGroup_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsLbTargetGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLbTargetGroup) validateSetArnParameters(val *string) error {
 	return nil
 }

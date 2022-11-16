@@ -56,6 +56,14 @@ func validateRolesanywhereProfile_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRolesanywhereProfile_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRolesanywhereProfile_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RolesanywhereProfile) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

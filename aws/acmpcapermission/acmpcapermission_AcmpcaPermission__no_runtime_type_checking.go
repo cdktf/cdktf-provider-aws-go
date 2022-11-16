@@ -56,6 +56,14 @@ func validateAcmpcaPermission_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAcmpcaPermission_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAcmpcaPermission_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AcmpcaPermission) validateSetActionsParameters(val *[]*string) error {
 	return nil
 }

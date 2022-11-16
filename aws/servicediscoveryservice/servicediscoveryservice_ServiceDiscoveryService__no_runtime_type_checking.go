@@ -68,6 +68,14 @@ func validateServiceDiscoveryService_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateServiceDiscoveryService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServiceDiscoveryService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceDiscoveryService) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

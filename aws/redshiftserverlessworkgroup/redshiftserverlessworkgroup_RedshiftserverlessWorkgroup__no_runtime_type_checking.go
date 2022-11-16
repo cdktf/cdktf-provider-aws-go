@@ -60,6 +60,14 @@ func validateRedshiftserverlessWorkgroup_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateRedshiftserverlessWorkgroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRedshiftserverlessWorkgroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetBaseCapacityParameters(val *float64) error {
 	return nil
 }

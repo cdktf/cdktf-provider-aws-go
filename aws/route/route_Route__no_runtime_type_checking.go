@@ -60,6 +60,14 @@ func validateRoute_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRoute_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoute_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route) validateSetCarrierGatewayIdParameters(val *string) error {
 	return nil
 }

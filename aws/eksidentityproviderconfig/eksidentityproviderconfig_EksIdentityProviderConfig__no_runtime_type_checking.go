@@ -64,6 +64,14 @@ func validateEksIdentityProviderConfig_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateEksIdentityProviderConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEksIdentityProviderConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EksIdentityProviderConfig) validateSetClusterNameParameters(val *string) error {
 	return nil
 }

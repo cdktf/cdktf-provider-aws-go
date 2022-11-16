@@ -2,10 +2,10 @@ package dataawsapigatewayv2apis
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/dataawsapigatewayv2apis/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/dataawsapigatewayv2apis/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -485,6 +485,44 @@ func DataAwsApigatewayv2Apis_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2Apis",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataAwsApigatewayv2Apis_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataAwsApigatewayv2Apis_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2Apis",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataAwsApigatewayv2Apis_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataAwsApigatewayv2Apis_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsApigatewayv2Apis.DataAwsApigatewayv2Apis",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

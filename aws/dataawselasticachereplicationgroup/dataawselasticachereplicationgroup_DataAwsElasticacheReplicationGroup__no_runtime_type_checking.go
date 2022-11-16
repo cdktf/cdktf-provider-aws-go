@@ -56,6 +56,14 @@ func validateDataAwsElasticacheReplicationGroup_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateDataAwsElasticacheReplicationGroup_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsElasticacheReplicationGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

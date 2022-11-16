@@ -2,10 +2,10 @@ package apigatewayv2routeresponse
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/apigatewayv2routeresponse/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/apigatewayv2routeresponse/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -591,6 +591,44 @@ func Apigatewayv2RouteResponse_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Apigatewayv2RouteResponse_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApigatewayv2RouteResponse_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Apigatewayv2RouteResponse_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateApigatewayv2RouteResponse_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.apigatewayv2RouteResponse.Apigatewayv2RouteResponse",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

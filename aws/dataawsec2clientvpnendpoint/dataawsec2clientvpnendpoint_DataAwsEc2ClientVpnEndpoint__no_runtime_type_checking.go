@@ -64,6 +64,14 @@ func validateDataAwsEc2ClientVpnEndpoint_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAwsEc2ClientVpnEndpoint_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsEc2ClientVpnEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2ClientVpnEndpoint) validateSetClientVpnEndpointIdParameters(val *string) error {
 	return nil
 }

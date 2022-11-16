@@ -56,6 +56,14 @@ func validateDataAwsDatapipelinePipeline_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAwsDatapipelinePipeline_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsDatapipelinePipeline_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDatapipelinePipeline) validateSetIdParameters(val *string) error {
 	return nil
 }

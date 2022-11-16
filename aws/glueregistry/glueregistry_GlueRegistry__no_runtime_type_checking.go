@@ -56,6 +56,14 @@ func validateGlueRegistry_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGlueRegistry_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGlueRegistry_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueRegistry) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

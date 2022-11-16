@@ -56,6 +56,14 @@ func validateElasticacheUser_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateElasticacheUser_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateElasticacheUser_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheUser) validateSetAccessStringParameters(val *string) error {
 	return nil
 }

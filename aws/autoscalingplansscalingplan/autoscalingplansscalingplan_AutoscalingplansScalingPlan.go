@@ -2,10 +2,10 @@ package autoscalingplansscalingplan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/autoscalingplansscalingplan/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/autoscalingplansscalingplan/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -510,6 +510,44 @@ func AutoscalingplansScalingPlan_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlan",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AutoscalingplansScalingPlan_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAutoscalingplansScalingPlan_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlan",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AutoscalingplansScalingPlan_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAutoscalingplansScalingPlan_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlan",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

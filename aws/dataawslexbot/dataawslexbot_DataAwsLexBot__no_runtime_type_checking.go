@@ -56,6 +56,14 @@ func validateDataAwsLexBot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsLexBot_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsLexBot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLexBot) validateSetIdParameters(val *string) error {
 	return nil
 }

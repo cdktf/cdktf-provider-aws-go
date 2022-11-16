@@ -130,6 +130,22 @@ func validateSecretsmanagerSecretRotation_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateSecretsmanagerSecretRotation_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateSecretsmanagerSecretRotation_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SecretsmanagerSecretRotation) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

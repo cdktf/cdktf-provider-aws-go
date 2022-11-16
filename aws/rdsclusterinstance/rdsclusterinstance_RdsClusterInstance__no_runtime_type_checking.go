@@ -60,6 +60,14 @@ func validateRdsClusterInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRdsClusterInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRdsClusterInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsClusterInstance) validateSetApplyImmediatelyParameters(val interface{}) error {
 	return nil
 }

@@ -72,6 +72,14 @@ func validateCodepipelineCustomActionType_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateCodepipelineCustomActionType_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCodepipelineCustomActionType_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodepipelineCustomActionType) validateSetCategoryParameters(val *string) error {
 	return nil
 }

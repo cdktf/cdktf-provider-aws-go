@@ -2,10 +2,10 @@ package sesreceiptrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/sesreceiptrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/sesreceiptrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -841,6 +841,44 @@ func SesReceiptRule_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRule",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SesReceiptRule_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSesReceiptRule_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRule",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SesReceiptRule_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSesReceiptRule_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.sesReceiptRule.SesReceiptRule",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

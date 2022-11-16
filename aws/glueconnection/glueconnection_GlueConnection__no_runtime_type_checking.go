@@ -60,6 +60,14 @@ func validateGlueConnection_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGlueConnection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGlueConnection_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueConnection) validateSetCatalogIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateCognitoIdentityPoolProviderPrincipalTag_IsConstructParameters(x int
 	return nil
 }
 
+func validateCognitoIdentityPoolProviderPrincipalTag_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCognitoIdentityPoolProviderPrincipalTag_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoIdentityPoolProviderPrincipalTag) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

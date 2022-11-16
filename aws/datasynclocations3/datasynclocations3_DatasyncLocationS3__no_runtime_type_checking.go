@@ -60,6 +60,14 @@ func validateDatasyncLocationS3_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDatasyncLocationS3_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatasyncLocationS3_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationS3) validateSetAgentArnsParameters(val *[]*string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package route53healthcheck
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/route53healthcheck/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/route53healthcheck/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1199,6 +1199,44 @@ func Route53HealthCheck_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.route53HealthCheck.Route53HealthCheck",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Route53HealthCheck_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRoute53HealthCheck_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.route53HealthCheck.Route53HealthCheck",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Route53HealthCheck_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRoute53HealthCheck_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.route53HealthCheck.Route53HealthCheck",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

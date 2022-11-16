@@ -2,10 +2,10 @@ package ebssnapshotimport
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/ebssnapshotimport/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/ebssnapshotimport/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -882,6 +882,44 @@ func EbsSnapshotImport_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EbsSnapshotImport_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEbsSnapshotImport_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func EbsSnapshotImport_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEbsSnapshotImport_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ebsSnapshotImport.EbsSnapshotImport",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

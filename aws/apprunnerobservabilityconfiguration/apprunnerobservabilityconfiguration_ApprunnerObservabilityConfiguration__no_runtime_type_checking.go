@@ -60,6 +60,14 @@ func validateApprunnerObservabilityConfiguration_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateApprunnerObservabilityConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApprunnerObservabilityConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerObservabilityConfiguration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

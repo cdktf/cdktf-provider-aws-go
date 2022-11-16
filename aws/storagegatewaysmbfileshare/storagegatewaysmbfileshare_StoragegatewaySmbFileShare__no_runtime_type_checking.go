@@ -64,6 +64,14 @@ func validateStoragegatewaySmbFileShare_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateStoragegatewaySmbFileShare_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStoragegatewaySmbFileShare_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetAccessBasedEnumerationParameters(val interface{}) error {
 	return nil
 }

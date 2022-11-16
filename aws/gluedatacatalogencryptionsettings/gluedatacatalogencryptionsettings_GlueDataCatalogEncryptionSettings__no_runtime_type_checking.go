@@ -60,6 +60,14 @@ func validateGlueDataCatalogEncryptionSettings_IsConstructParameters(x interface
 	return nil
 }
 
+func validateGlueDataCatalogEncryptionSettings_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGlueDataCatalogEncryptionSettings_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueDataCatalogEncryptionSettings) validateSetCatalogIdParameters(val *string) error {
 	return nil
 }

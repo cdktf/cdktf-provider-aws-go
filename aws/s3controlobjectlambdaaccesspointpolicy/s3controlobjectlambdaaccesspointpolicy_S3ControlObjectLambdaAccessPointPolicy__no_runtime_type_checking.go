@@ -56,6 +56,14 @@ func validateS3ControlObjectLambdaAccessPointPolicy_IsConstructParameters(x inte
 	return nil
 }
 
+func validateS3ControlObjectLambdaAccessPointPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateS3ControlObjectLambdaAccessPointPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

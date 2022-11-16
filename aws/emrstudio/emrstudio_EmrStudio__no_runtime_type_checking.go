@@ -56,6 +56,14 @@ func validateEmrStudio_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEmrStudio_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEmrStudio_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrStudio) validateSetAuthModeParameters(val *string) error {
 	return nil
 }

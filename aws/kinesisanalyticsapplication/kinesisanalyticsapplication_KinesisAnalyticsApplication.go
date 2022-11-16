@@ -2,10 +2,10 @@ package kinesisanalyticsapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/kinesisanalyticsapplication/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/kinesisanalyticsapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -779,6 +779,44 @@ func KinesisAnalyticsApplication_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func KinesisAnalyticsApplication_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateKinesisAnalyticsApplication_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func KinesisAnalyticsApplication_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateKinesisAnalyticsApplication_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplication",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

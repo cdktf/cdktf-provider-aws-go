@@ -56,6 +56,14 @@ func validateDocdbSubnetGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDocdbSubnetGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDocdbSubnetGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DocdbSubnetGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

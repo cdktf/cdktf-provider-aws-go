@@ -56,6 +56,14 @@ func validateCodecommitApprovalRuleTemplateAssociation_IsConstructParameters(x i
 	return nil
 }
 
+func validateCodecommitApprovalRuleTemplateAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCodecommitApprovalRuleTemplateAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) validateSetApprovalRuleTemplateNameParameters(val *string) error {
 	return nil
 }

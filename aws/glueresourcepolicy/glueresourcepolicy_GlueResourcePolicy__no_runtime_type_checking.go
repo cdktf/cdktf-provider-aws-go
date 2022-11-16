@@ -56,6 +56,14 @@ func validateGlueResourcePolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGlueResourcePolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGlueResourcePolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueResourcePolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

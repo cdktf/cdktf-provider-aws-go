@@ -56,6 +56,14 @@ func validateDataAwsCloudfrontOriginAccessIdentities_IsConstructParameters(x int
 	return nil
 }
 
+func validateDataAwsCloudfrontOriginAccessIdentities_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCloudfrontOriginAccessIdentities_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) validateSetCommentsParameters(val *[]*string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateInspector2DelegatedAdminAccount_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateInspector2DelegatedAdminAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateInspector2DelegatedAdminAccount_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Inspector2DelegatedAdminAccount) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

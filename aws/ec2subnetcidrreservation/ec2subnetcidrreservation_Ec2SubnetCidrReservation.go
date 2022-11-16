@@ -2,10 +2,10 @@ package ec2subnetcidrreservation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/ec2subnetcidrreservation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/ec2subnetcidrreservation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -567,6 +567,44 @@ func Ec2SubnetCidrReservation_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservation",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Ec2SubnetCidrReservation_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEc2SubnetCidrReservation_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservation",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Ec2SubnetCidrReservation_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateEc2SubnetCidrReservation_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ec2SubnetCidrReservation.Ec2SubnetCidrReservation",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

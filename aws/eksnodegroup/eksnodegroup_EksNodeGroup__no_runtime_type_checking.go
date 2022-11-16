@@ -80,6 +80,14 @@ func validateEksNodeGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEksNodeGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEksNodeGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EksNodeGroup) validateSetAmiTypeParameters(val *string) error {
 	return nil
 }

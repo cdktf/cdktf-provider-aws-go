@@ -2,10 +2,10 @@ package amicopy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/amicopy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/amicopy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1080,6 +1080,44 @@ func AmiCopy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.amiCopy.AmiCopy",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AmiCopy_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAmiCopy_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.amiCopy.AmiCopy",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AmiCopy_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAmiCopy_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.amiCopy.AmiCopy",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

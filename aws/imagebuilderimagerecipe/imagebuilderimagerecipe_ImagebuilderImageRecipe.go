@@ -2,10 +2,10 @@ package imagebuilderimagerecipe
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/imagebuilderimagerecipe/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/imagebuilderimagerecipe/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -811,6 +811,44 @@ func ImagebuilderImageRecipe_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipe",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ImagebuilderImageRecipe_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateImagebuilderImageRecipe_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipe",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ImagebuilderImageRecipe_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateImagebuilderImageRecipe_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.imagebuilderImageRecipe.ImagebuilderImageRecipe",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

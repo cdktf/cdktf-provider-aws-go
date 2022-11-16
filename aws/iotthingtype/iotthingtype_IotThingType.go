@@ -2,10 +2,10 @@ package iotthingtype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/iotthingtype/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/iotthingtype/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -593,6 +593,44 @@ func IotThingType_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.iotThingType.IotThingType",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func IotThingType_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateIotThingType_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.iotThingType.IotThingType",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func IotThingType_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateIotThingType_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.iotThingType.IotThingType",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

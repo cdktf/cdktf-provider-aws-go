@@ -64,6 +64,14 @@ func validateGlobalacceleratorListener_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateGlobalacceleratorListener_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGlobalacceleratorListener_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlobalacceleratorListener) validateSetAcceleratorArnParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateRoute53KeySigningKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRoute53KeySigningKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoute53KeySigningKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53KeySigningKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

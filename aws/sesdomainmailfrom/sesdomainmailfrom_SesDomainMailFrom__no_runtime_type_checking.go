@@ -56,6 +56,14 @@ func validateSesDomainMailFrom_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSesDomainMailFrom_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSesDomainMailFrom_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesDomainMailFrom) validateSetBehaviorOnMxFailureParameters(val *string) error {
 	return nil
 }

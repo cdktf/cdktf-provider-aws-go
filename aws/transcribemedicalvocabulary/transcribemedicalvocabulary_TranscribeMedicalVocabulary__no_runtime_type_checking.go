@@ -60,6 +60,14 @@ func validateTranscribeMedicalVocabulary_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateTranscribeMedicalVocabulary_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTranscribeMedicalVocabulary_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TranscribeMedicalVocabulary) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

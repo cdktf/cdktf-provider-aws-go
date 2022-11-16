@@ -56,6 +56,14 @@ func validateDataAwsApiGatewayVpcLink_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataAwsApiGatewayVpcLink_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsApiGatewayVpcLink_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsApiGatewayVpcLink) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

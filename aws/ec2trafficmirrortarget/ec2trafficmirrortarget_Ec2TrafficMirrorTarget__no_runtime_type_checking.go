@@ -56,6 +56,14 @@ func validateEc2TrafficMirrorTarget_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEc2TrafficMirrorTarget_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2TrafficMirrorTarget_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TrafficMirrorTarget) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

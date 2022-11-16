@@ -56,6 +56,14 @@ func validateSesActiveReceiptRuleSet_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateSesActiveReceiptRuleSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSesActiveReceiptRuleSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesActiveReceiptRuleSet) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

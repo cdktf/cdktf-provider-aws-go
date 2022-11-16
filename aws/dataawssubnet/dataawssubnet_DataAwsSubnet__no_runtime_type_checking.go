@@ -64,6 +64,14 @@ func validateDataAwsSubnet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsSubnet_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsSubnet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSubnet) validateSetAvailabilityZoneParameters(val *string) error {
 	return nil
 }

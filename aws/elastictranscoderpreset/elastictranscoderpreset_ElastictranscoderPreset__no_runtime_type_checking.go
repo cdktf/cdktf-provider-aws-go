@@ -76,6 +76,14 @@ func validateElastictranscoderPreset_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateElastictranscoderPreset_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateElastictranscoderPreset_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastictranscoderPreset) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

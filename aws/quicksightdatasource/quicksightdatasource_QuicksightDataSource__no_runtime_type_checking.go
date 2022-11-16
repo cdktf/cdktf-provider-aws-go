@@ -76,6 +76,14 @@ func validateQuicksightDataSource_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateQuicksightDataSource_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateQuicksightDataSource_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightDataSource) validateSetAwsAccountIdParameters(val *string) error {
 	return nil
 }

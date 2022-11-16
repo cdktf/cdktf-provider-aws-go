@@ -56,6 +56,14 @@ func validateEvidentlySegment_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEvidentlySegment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEvidentlySegment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EvidentlySegment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

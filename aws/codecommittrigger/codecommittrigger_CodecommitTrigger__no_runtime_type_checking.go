@@ -60,6 +60,14 @@ func validateCodecommitTrigger_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCodecommitTrigger_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCodecommitTrigger_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodecommitTrigger) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

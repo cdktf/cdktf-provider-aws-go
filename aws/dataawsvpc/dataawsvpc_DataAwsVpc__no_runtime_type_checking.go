@@ -64,6 +64,14 @@ func validateDataAwsVpc_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsVpc_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsVpc_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpc) validateSetCidrBlockParameters(val *string) error {
 	return nil
 }

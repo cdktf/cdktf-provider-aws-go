@@ -56,6 +56,14 @@ func validateDataAwsConnectContactFlowModule_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateDataAwsConnectContactFlowModule_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsConnectContactFlowModule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectContactFlowModule) validateSetContactFlowModuleIdParameters(val *string) error {
 	return nil
 }

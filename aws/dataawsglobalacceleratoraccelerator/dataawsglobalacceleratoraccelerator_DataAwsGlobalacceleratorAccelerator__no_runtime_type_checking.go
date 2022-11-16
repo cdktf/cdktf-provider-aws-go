@@ -56,6 +56,14 @@ func validateDataAwsGlobalacceleratorAccelerator_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateDataAwsGlobalacceleratorAccelerator_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsGlobalacceleratorAccelerator_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) validateSetArnParameters(val *string) error {
 	return nil
 }

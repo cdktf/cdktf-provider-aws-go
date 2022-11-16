@@ -130,6 +130,22 @@ func validateEc2TransitGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEc2TransitGateway_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateEc2TransitGateway_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGateway) validateSetAmazonSideAsnParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

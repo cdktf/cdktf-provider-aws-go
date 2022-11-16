@@ -60,6 +60,14 @@ func validatePrometheusWorkspace_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePrometheusWorkspace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePrometheusWorkspace_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrometheusWorkspace) validateSetAliasParameters(val *string) error {
 	return nil
 }

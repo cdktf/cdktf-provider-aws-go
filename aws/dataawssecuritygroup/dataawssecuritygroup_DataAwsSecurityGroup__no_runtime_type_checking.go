@@ -64,6 +64,14 @@ func validateDataAwsSecurityGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsSecurityGroup_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsSecurityGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSecurityGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

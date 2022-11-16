@@ -56,6 +56,14 @@ func validateDataAwsWafregionalSubscribedRuleGroup_IsConstructParameters(x inter
 	return nil
 }
 
+func validateDataAwsWafregionalSubscribedRuleGroup_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsWafregionalSubscribedRuleGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

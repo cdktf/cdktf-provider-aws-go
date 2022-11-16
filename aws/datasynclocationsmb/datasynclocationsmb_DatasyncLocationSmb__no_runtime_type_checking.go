@@ -60,6 +60,14 @@ func validateDatasyncLocationSmb_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDatasyncLocationSmb_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDatasyncLocationSmb_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationSmb) validateSetAgentArnsParameters(val *[]*string) error {
 	return nil
 }

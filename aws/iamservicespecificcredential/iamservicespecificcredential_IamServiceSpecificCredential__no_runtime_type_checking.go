@@ -56,6 +56,14 @@ func validateIamServiceSpecificCredential_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateIamServiceSpecificCredential_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIamServiceSpecificCredential_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamServiceSpecificCredential) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

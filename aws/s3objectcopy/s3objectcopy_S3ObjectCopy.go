@@ -2,10 +2,10 @@ package s3objectcopy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/s3objectcopy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/s3objectcopy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1836,6 +1836,44 @@ func S3ObjectCopy_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func S3ObjectCopy_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateS3ObjectCopy_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func S3ObjectCopy_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateS3ObjectCopy_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

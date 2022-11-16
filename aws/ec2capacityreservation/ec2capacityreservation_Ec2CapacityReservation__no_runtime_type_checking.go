@@ -56,6 +56,14 @@ func validateEc2CapacityReservation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEc2CapacityReservation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2CapacityReservation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2CapacityReservation) validateSetAvailabilityZoneParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateCloudfrontFieldLevelEncryptionConfig_IsConstructParameters(x interf
 	return nil
 }
 
+func validateCloudfrontFieldLevelEncryptionConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudfrontFieldLevelEncryptionConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateSetCommentParameters(val *string) error {
 	return nil
 }

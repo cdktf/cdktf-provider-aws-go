@@ -64,6 +64,14 @@ func validateLambdaFunctionUrl_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLambdaFunctionUrl_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLambdaFunctionUrl_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaFunctionUrl) validateSetAuthorizationTypeParameters(val *string) error {
 	return nil
 }

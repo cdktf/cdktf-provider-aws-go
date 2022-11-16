@@ -56,6 +56,14 @@ func validateEc2LocalGatewayRouteTableVpcAssociation_IsConstructParameters(x int
 	return nil
 }
 
+func validateEc2LocalGatewayRouteTableVpcAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2LocalGatewayRouteTableVpcAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

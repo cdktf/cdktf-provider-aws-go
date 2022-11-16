@@ -56,6 +56,14 @@ func validateImagebuilderComponent_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateImagebuilderComponent_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateImagebuilderComponent_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImagebuilderComponent) validateSetChangeDescriptionParameters(val *string) error {
 	return nil
 }

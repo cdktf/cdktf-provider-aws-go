@@ -60,6 +60,14 @@ func validateAcmCertificateValidation_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateAcmCertificateValidation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAcmCertificateValidation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AcmCertificateValidation) validateSetCertificateArnParameters(val *string) error {
 	return nil
 }

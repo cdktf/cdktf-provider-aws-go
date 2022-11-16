@@ -60,6 +60,14 @@ func validateServicecatalogPortfolio_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateServicecatalogPortfolio_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateServicecatalogPortfolio_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogPortfolio) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

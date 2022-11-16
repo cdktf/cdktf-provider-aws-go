@@ -60,6 +60,14 @@ func validateGuarddutyOrganizationConfiguration_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateGuarddutyOrganizationConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGuarddutyOrganizationConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GuarddutyOrganizationConfiguration) validateSetAutoEnableParameters(val interface{}) error {
 	return nil
 }

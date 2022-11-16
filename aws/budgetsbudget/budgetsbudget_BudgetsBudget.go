@@ -2,10 +2,10 @@ package budgetsbudget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/budgetsbudget/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/budgetsbudget/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -898,6 +898,44 @@ func BudgetsBudget_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.budgetsBudget.BudgetsBudget",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BudgetsBudget_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBudgetsBudget_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudget",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BudgetsBudget_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBudgetsBudget_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.budgetsBudget.BudgetsBudget",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

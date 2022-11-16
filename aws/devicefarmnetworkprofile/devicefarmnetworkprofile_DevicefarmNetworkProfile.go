@@ -2,10 +2,10 @@ package devicefarmnetworkprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/devicefarmnetworkprofile/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/devicefarmnetworkprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -918,6 +918,44 @@ func DevicefarmNetworkProfile_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DevicefarmNetworkProfile_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDevicefarmNetworkProfile_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DevicefarmNetworkProfile_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDevicefarmNetworkProfile_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

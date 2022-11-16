@@ -60,6 +60,14 @@ func validateRoute53RecoverycontrolconfigSafetyRule_IsConstructParameters(x inte
 	return nil
 }
 
+func validateRoute53RecoverycontrolconfigSafetyRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoute53RecoverycontrolconfigSafetyRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) validateSetAssertedControlsParameters(val *[]*string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateAppsyncFunction_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppsyncFunction_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppsyncFunction_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncFunction) validateSetApiIdParameters(val *string) error {
 	return nil
 }

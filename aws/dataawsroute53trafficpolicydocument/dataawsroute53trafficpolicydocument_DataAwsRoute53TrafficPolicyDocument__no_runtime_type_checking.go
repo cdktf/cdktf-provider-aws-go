@@ -64,6 +64,14 @@ func validateDataAwsRoute53TrafficPolicyDocument_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateDataAwsRoute53TrafficPolicyDocument_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsRoute53TrafficPolicyDocument_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocument) validateSetIdParameters(val *string) error {
 	return nil
 }

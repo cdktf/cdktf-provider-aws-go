@@ -56,6 +56,14 @@ func validateGlacierVaultLock_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGlacierVaultLock_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGlacierVaultLock_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlacierVaultLock) validateSetCompleteLockParameters(val interface{}) error {
 	return nil
 }

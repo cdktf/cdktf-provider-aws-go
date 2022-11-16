@@ -56,6 +56,14 @@ func validateBatchJobQueue_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateBatchJobQueue_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateBatchJobQueue_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchJobQueue) validateSetComputeEnvironmentsParameters(val *[]*string) error {
 	return nil
 }

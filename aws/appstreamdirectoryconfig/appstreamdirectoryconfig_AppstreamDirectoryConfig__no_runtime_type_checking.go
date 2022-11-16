@@ -60,6 +60,14 @@ func validateAppstreamDirectoryConfig_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateAppstreamDirectoryConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppstreamDirectoryConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppstreamDirectoryConfig) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateEbsEncryptionByDefault_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEbsEncryptionByDefault_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEbsEncryptionByDefault_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EbsEncryptionByDefault) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

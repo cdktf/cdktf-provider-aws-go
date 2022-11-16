@@ -56,6 +56,14 @@ func validateAppsyncDomainName_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppsyncDomainName_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppsyncDomainName_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncDomainName) validateSetCertificateArnParameters(val *string) error {
 	return nil
 }

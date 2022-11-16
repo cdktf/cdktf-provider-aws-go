@@ -76,6 +76,14 @@ func validateEc2Fleet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEc2Fleet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2Fleet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2Fleet) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

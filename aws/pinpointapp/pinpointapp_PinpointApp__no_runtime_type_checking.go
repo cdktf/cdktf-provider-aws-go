@@ -68,6 +68,14 @@ func validatePinpointApp_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePinpointApp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePinpointApp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointApp) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

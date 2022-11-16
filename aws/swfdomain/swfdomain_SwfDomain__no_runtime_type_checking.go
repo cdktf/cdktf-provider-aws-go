@@ -56,6 +56,14 @@ func validateSwfDomain_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSwfDomain_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSwfDomain_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SwfDomain) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

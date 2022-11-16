@@ -60,6 +60,14 @@ func validateEksAddon_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEksAddon_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEksAddon_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EksAddon) validateSetAddonNameParameters(val *string) error {
 	return nil
 }

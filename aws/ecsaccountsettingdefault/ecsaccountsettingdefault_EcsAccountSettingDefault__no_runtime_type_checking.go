@@ -56,6 +56,14 @@ func validateEcsAccountSettingDefault_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateEcsAccountSettingDefault_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEcsAccountSettingDefault_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsAccountSettingDefault) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateInternetGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateInternetGateway_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateInternetGateway_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_InternetGateway) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

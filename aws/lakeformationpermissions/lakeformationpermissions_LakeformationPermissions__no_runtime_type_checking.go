@@ -80,6 +80,14 @@ func validateLakeformationPermissions_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateLakeformationPermissions_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLakeformationPermissions_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LakeformationPermissions) validateSetCatalogIdParameters(val *string) error {
 	return nil
 }

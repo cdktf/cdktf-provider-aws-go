@@ -68,6 +68,14 @@ func validateAmi_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAmi_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAmi_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ami) validateSetArchitectureParameters(val *string) error {
 	return nil
 }

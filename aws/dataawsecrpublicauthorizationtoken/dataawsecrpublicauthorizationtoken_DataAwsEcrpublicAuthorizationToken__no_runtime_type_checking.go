@@ -56,6 +56,14 @@ func validateDataAwsEcrpublicAuthorizationToken_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateDataAwsEcrpublicAuthorizationToken_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsEcrpublicAuthorizationToken_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEcrpublicAuthorizationToken) validateSetIdParameters(val *string) error {
 	return nil
 }

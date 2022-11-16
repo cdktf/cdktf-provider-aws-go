@@ -119,6 +119,22 @@ func validateDataAwsRoute53ResolverFirewallDomainList_IsConstructParameters(x in
 	return nil
 }
 
+func validateDataAwsRoute53ResolverFirewallDomainList_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataAwsRoute53ResolverFirewallDomainList_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRoute53ResolverFirewallDomainList) validateSetFirewallDomainListIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

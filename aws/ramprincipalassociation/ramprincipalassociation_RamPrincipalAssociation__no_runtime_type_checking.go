@@ -56,6 +56,14 @@ func validateRamPrincipalAssociation_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateRamPrincipalAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRamPrincipalAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RamPrincipalAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

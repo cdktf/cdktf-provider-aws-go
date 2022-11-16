@@ -56,6 +56,14 @@ func validateRedshiftSnapshotScheduleAssociation_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateRedshiftSnapshotScheduleAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRedshiftSnapshotScheduleAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateSetClusterIdentifierParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateRedshiftClusterIamRoles_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateRedshiftClusterIamRoles_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRedshiftClusterIamRoles_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftClusterIamRoles) validateSetClusterIdentifierParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateDataAwsEip_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsEip_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsEip_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEip) validateSetIdParameters(val *string) error {
 	return nil
 }

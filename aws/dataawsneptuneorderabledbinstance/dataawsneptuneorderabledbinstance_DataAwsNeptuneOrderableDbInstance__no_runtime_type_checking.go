@@ -56,6 +56,14 @@ func validateDataAwsNeptuneOrderableDbInstance_IsConstructParameters(x interface
 	return nil
 }
 
+func validateDataAwsNeptuneOrderableDbInstance_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsNeptuneOrderableDbInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) validateSetEngineParameters(val *string) error {
 	return nil
 }

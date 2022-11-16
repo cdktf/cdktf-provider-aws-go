@@ -56,6 +56,14 @@ func validateCognitoUserPoolUiCustomization_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateCognitoUserPoolUiCustomization_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCognitoUserPoolUiCustomization_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoUserPoolUiCustomization) validateSetClientIdParameters(val *string) error {
 	return nil
 }

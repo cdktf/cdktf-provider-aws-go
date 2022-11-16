@@ -56,6 +56,14 @@ func validatePinpointSmsChannel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePinpointSmsChannel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePinpointSmsChannel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointSmsChannel) validateSetApplicationIdParameters(val *string) error {
 	return nil
 }

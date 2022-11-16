@@ -60,6 +60,14 @@ func validateCloudfrontCachePolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudfrontCachePolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudfrontCachePolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontCachePolicy) validateSetCommentParameters(val *string) error {
 	return nil
 }

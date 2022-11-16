@@ -60,6 +60,14 @@ func validateDevicefarmTestGridProject_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDevicefarmTestGridProject_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDevicefarmTestGridProject_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicefarmTestGridProject) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

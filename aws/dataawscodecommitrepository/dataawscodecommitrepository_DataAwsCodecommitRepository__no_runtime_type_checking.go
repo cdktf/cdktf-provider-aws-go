@@ -56,6 +56,14 @@ func validateDataAwsCodecommitRepository_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAwsCodecommitRepository_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCodecommitRepository_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCodecommitRepository) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataAwsCloudfrontResponseHeadersPolicy_IsConstructParameters(x inte
 	return nil
 }
 
+func validateDataAwsCloudfrontResponseHeadersPolicy_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCloudfrontResponseHeadersPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

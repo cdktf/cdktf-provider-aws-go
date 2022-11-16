@@ -56,6 +56,14 @@ func validateDataAwsBatchJobQueue_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsBatchJobQueue_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsBatchJobQueue_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsBatchJobQueue) validateSetIdParameters(val *string) error {
 	return nil
 }

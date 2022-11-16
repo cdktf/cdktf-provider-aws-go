@@ -56,6 +56,14 @@ func validateApprunnerCustomDomainAssociation_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateApprunnerCustomDomainAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApprunnerCustomDomainAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerCustomDomainAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -68,6 +68,14 @@ func validateAppsyncResolver_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppsyncResolver_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppsyncResolver_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncResolver) validateSetApiIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateConnectUserHierarchyGroup_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateConnectUserHierarchyGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConnectUserHierarchyGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectUserHierarchyGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataAwsCloudwatchEventSource_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataAwsCloudwatchEventSource_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCloudwatchEventSource_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudwatchEventSource) validateSetIdParameters(val *string) error {
 	return nil
 }

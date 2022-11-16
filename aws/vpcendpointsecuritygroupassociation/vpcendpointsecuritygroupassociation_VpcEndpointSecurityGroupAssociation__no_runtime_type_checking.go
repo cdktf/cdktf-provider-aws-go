@@ -56,6 +56,14 @@ func validateVpcEndpointSecurityGroupAssociation_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateVpcEndpointSecurityGroupAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpcEndpointSecurityGroupAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

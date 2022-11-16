@@ -56,6 +56,14 @@ func validateDataAwsGrafanaWorkspace_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataAwsGrafanaWorkspace_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsGrafanaWorkspace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsGrafanaWorkspace) validateSetIdParameters(val *string) error {
 	return nil
 }

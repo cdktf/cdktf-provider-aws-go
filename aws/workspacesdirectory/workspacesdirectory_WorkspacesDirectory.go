@@ -2,10 +2,10 @@ package workspacesdirectory
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/workspacesdirectory/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/workspacesdirectory/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -753,6 +753,44 @@ func WorkspacesDirectory_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectory",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func WorkspacesDirectory_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateWorkspacesDirectory_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectory",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func WorkspacesDirectory_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateWorkspacesDirectory_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.workspacesDirectory.WorkspacesDirectory",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

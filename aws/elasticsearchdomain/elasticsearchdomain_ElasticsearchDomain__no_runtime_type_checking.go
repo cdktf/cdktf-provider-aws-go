@@ -104,6 +104,14 @@ func validateElasticsearchDomain_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateElasticsearchDomain_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateElasticsearchDomain_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticsearchDomain) validateSetAccessPoliciesParameters(val *string) error {
 	return nil
 }

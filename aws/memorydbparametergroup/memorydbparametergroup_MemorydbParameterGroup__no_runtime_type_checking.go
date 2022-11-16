@@ -60,6 +60,14 @@ func validateMemorydbParameterGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMemorydbParameterGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMemorydbParameterGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemorydbParameterGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

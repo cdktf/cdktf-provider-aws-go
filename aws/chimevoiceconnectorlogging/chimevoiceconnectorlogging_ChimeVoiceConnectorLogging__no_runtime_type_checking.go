@@ -56,6 +56,14 @@ func validateChimeVoiceConnectorLogging_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateChimeVoiceConnectorLogging_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateChimeVoiceConnectorLogging_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ChimeVoiceConnectorLogging) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

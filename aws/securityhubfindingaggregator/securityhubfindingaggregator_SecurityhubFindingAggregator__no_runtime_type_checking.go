@@ -56,6 +56,14 @@ func validateSecurityhubFindingAggregator_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateSecurityhubFindingAggregator_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSecurityhubFindingAggregator_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityhubFindingAggregator) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

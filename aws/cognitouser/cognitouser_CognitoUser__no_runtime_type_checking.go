@@ -56,6 +56,14 @@ func validateCognitoUser_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCognitoUser_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCognitoUser_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoUser) validateSetAttributesParameters(val *map[string]*string) error {
 	return nil
 }

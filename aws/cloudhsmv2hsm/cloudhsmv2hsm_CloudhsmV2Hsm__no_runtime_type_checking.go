@@ -60,6 +60,14 @@ func validateCloudhsmV2Hsm_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudhsmV2Hsm_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudhsmV2Hsm_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudhsmV2Hsm) validateSetAvailabilityZoneParameters(val *string) error {
 	return nil
 }

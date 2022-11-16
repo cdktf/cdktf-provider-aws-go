@@ -56,6 +56,14 @@ func validateDataAwsElbServiceAccount_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataAwsElbServiceAccount_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsElbServiceAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsElbServiceAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

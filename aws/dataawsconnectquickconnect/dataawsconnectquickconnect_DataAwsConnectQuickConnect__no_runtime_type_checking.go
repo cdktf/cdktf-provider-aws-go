@@ -56,6 +56,14 @@ func validateDataAwsConnectQuickConnect_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataAwsConnectQuickConnect_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsConnectQuickConnect_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectQuickConnect) validateSetIdParameters(val *string) error {
 	return nil
 }

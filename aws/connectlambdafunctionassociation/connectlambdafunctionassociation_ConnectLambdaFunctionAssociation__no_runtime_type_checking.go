@@ -56,6 +56,14 @@ func validateConnectLambdaFunctionAssociation_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateConnectLambdaFunctionAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConnectLambdaFunctionAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectLambdaFunctionAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

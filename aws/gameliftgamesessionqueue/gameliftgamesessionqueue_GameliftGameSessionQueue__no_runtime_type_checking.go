@@ -60,6 +60,14 @@ func validateGameliftGameSessionQueue_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateGameliftGameSessionQueue_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGameliftGameSessionQueue_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GameliftGameSessionQueue) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

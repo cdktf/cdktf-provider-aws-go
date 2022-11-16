@@ -56,6 +56,14 @@ func validateDataAwsMemorydbSubnetGroup_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataAwsMemorydbSubnetGroup_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsMemorydbSubnetGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsMemorydbSubnetGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

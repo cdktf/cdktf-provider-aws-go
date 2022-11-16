@@ -56,6 +56,14 @@ func validateDataAwsGlueDataCatalogEncryptionSettings_IsConstructParameters(x in
 	return nil
 }
 
+func validateDataAwsGlueDataCatalogEncryptionSettings_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsGlueDataCatalogEncryptionSettings_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) validateSetCatalogIdParameters(val *string) error {
 	return nil
 }

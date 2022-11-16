@@ -56,6 +56,14 @@ func validateDataAwsNetworkmanagerSite_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataAwsNetworkmanagerSite_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsNetworkmanagerSite_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNetworkmanagerSite) validateSetGlobalNetworkIdParameters(val *string) error {
 	return nil
 }

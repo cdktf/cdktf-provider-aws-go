@@ -60,6 +60,14 @@ func validateLambdaFunctionEventInvokeConfig_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateLambdaFunctionEventInvokeConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLambdaFunctionEventInvokeConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaFunctionEventInvokeConfig) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package gameliftbuild
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/gameliftbuild/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/gameliftbuild/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -626,6 +626,44 @@ func GameliftBuild_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.gameliftBuild.GameliftBuild",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GameliftBuild_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGameliftBuild_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.gameliftBuild.GameliftBuild",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GameliftBuild_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGameliftBuild_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.gameliftBuild.GameliftBuild",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

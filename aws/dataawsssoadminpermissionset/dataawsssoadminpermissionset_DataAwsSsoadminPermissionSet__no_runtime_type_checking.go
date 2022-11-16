@@ -56,6 +56,14 @@ func validateDataAwsSsoadminPermissionSet_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataAwsSsoadminPermissionSet_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsSsoadminPermissionSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSsoadminPermissionSet) validateSetArnParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataAwsDbClusterSnapshot_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataAwsDbClusterSnapshot_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsDbClusterSnapshot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDbClusterSnapshot) validateSetDbClusterIdentifierParameters(val *string) error {
 	return nil
 }

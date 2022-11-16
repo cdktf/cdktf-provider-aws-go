@@ -56,6 +56,14 @@ func validateApplicationinsightsApplication_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateApplicationinsightsApplication_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateApplicationinsightsApplication_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationinsightsApplication) validateSetAutoConfigEnabledParameters(val interface{}) error {
 	return nil
 }

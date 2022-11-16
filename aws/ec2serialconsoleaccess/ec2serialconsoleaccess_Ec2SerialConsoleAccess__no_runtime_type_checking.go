@@ -56,6 +56,14 @@ func validateEc2SerialConsoleAccess_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEc2SerialConsoleAccess_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2SerialConsoleAccess_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2SerialConsoleAccess) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

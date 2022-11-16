@@ -56,6 +56,14 @@ func validateDataAwsIamUserSshKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsIamUserSshKey_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsIamUserSshKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsIamUserSshKey) validateSetEncodingParameters(val *string) error {
 	return nil
 }

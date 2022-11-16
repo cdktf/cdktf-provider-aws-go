@@ -56,6 +56,14 @@ func validateCloudfrontOriginAccessIdentity_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateCloudfrontOriginAccessIdentity_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudfrontOriginAccessIdentity_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontOriginAccessIdentity) validateSetCommentParameters(val *string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package redshifteventsubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/redshifteventsubscription/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/redshifteventsubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -789,6 +789,44 @@ func RedshiftEventSubscription_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscription",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func RedshiftEventSubscription_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRedshiftEventSubscription_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscription",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func RedshiftEventSubscription_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRedshiftEventSubscription_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscription",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

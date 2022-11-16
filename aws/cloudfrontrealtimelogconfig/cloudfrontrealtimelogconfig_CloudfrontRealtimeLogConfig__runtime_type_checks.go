@@ -130,6 +130,22 @@ func validateCloudfrontRealtimeLogConfig_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateCloudfrontRealtimeLogConfig_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateCloudfrontRealtimeLogConfig_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontRealtimeLogConfig) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

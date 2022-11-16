@@ -56,6 +56,14 @@ func validateDynamodbKinesisStreamingDestination_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateDynamodbKinesisStreamingDestination_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDynamodbKinesisStreamingDestination_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbKinesisStreamingDestination) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

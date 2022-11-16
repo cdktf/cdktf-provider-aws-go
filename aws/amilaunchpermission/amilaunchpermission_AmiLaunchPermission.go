@@ -2,10 +2,10 @@ package amilaunchpermission
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/amilaunchpermission/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/amilaunchpermission/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -593,6 +593,44 @@ func AmiLaunchPermission_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.amiLaunchPermission.AmiLaunchPermission",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AmiLaunchPermission_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAmiLaunchPermission_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.amiLaunchPermission.AmiLaunchPermission",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AmiLaunchPermission_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAmiLaunchPermission_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.amiLaunchPermission.AmiLaunchPermission",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

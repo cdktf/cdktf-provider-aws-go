@@ -56,6 +56,14 @@ func validateIotAuthorizer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIotAuthorizer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIotAuthorizer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotAuthorizer) validateSetAuthorizerFunctionArnParameters(val *string) error {
 	return nil
 }

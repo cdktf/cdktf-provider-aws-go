@@ -60,6 +60,14 @@ func validateEc2ClientVpnAuthorizationRule_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateEc2ClientVpnAuthorizationRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2ClientVpnAuthorizationRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateSetAccessGroupIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataAwsLambdaCodeSigningConfig_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateDataAwsLambdaCodeSigningConfig_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsLambdaCodeSigningConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLambdaCodeSigningConfig) validateSetArnParameters(val *string) error {
 	return nil
 }

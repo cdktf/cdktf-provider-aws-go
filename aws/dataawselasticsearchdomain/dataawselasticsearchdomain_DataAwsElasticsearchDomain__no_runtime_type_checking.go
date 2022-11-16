@@ -56,6 +56,14 @@ func validateDataAwsElasticsearchDomain_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataAwsElasticsearchDomain_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsElasticsearchDomain_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsElasticsearchDomain) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

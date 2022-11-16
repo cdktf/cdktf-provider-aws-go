@@ -64,6 +64,14 @@ func validateTransferAccess_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateTransferAccess_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTransferAccess_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransferAccess) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

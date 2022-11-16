@@ -56,6 +56,14 @@ func validateDataAwsBillingServiceAccount_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataAwsBillingServiceAccount_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsBillingServiceAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsBillingServiceAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

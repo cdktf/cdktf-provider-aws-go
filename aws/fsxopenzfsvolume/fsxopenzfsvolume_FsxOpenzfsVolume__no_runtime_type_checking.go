@@ -72,6 +72,14 @@ func validateFsxOpenzfsVolume_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateFsxOpenzfsVolume_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateFsxOpenzfsVolume_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOpenzfsVolume) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

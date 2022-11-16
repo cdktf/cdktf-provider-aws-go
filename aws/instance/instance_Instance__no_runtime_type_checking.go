@@ -104,6 +104,14 @@ func validateInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Instance) validateSetAmiParameters(val *string) error {
 	return nil
 }

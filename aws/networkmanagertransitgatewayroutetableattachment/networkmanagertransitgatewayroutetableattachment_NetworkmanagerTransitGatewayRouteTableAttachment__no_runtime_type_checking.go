@@ -60,6 +60,14 @@ func validateNetworkmanagerTransitGatewayRouteTableAttachment_IsConstructParamet
 	return nil
 }
 
+func validateNetworkmanagerTransitGatewayRouteTableAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkmanagerTransitGatewayRouteTableAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

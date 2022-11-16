@@ -56,6 +56,14 @@ func validateDataAwsNeptuneEngineVersion_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAwsNeptuneEngineVersion_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsNeptuneEngineVersion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNeptuneEngineVersion) validateSetEngineParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateCloudwatchLogDestinationPolicy_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateCloudwatchLogDestinationPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudwatchLogDestinationPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchLogDestinationPolicy) validateSetAccessPolicyParameters(val *string) error {
 	return nil
 }

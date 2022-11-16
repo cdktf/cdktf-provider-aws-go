@@ -56,6 +56,14 @@ func validateChimeVoiceConnector_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateChimeVoiceConnector_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateChimeVoiceConnector_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ChimeVoiceConnector) validateSetAwsRegionParameters(val *string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package securityhubmember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/securityhubmember/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/securityhubmember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -544,6 +544,44 @@ func SecurityhubMember_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.securityhubMember.SecurityhubMember",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SecurityhubMember_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSecurityhubMember_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.securityhubMember.SecurityhubMember",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func SecurityhubMember_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateSecurityhubMember_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.securityhubMember.SecurityhubMember",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -60,6 +60,14 @@ func validateSesv2EmailIdentity_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSesv2EmailIdentity_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSesv2EmailIdentity_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Sesv2EmailIdentity) validateSetConfigurationSetNameParameters(val *string) error {
 	return nil
 }

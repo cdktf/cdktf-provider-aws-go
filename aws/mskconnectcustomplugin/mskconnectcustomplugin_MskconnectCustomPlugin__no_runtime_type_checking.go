@@ -64,6 +64,14 @@ func validateMskconnectCustomPlugin_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateMskconnectCustomPlugin_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMskconnectCustomPlugin_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MskconnectCustomPlugin) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

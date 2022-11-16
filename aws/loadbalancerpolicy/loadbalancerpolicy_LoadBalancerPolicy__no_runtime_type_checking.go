@@ -60,6 +60,14 @@ func validateLoadBalancerPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLoadBalancerPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLoadBalancerPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadBalancerPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

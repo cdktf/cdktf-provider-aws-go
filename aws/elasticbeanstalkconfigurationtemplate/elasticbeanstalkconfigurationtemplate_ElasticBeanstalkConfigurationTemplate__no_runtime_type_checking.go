@@ -60,6 +60,14 @@ func validateElasticBeanstalkConfigurationTemplate_IsConstructParameters(x inter
 	return nil
 }
 
+func validateElasticBeanstalkConfigurationTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateElasticBeanstalkConfigurationTemplate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateSetApplicationParameters(val *string) error {
 	return nil
 }

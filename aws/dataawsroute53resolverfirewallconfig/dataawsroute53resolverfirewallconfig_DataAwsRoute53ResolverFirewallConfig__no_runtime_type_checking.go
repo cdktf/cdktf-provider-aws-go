@@ -56,6 +56,14 @@ func validateDataAwsRoute53ResolverFirewallConfig_IsConstructParameters(x interf
 	return nil
 }
 
+func validateDataAwsRoute53ResolverFirewallConfig_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsRoute53ResolverFirewallConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRoute53ResolverFirewallConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

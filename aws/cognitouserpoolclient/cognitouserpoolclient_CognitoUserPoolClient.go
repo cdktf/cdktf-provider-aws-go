@@ -2,10 +2,10 @@ package cognitouserpoolclient
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/cognitouserpoolclient/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/cognitouserpoolclient/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1176,6 +1176,44 @@ func CognitoUserPoolClient_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClient",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CognitoUserPoolClient_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCognitoUserPoolClient_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClient",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CognitoUserPoolClient_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCognitoUserPoolClient_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClient",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

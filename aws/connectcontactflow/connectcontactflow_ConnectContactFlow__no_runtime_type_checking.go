@@ -56,6 +56,14 @@ func validateConnectContactFlow_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateConnectContactFlow_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConnectContactFlow_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectContactFlow) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDaxSubnetGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDaxSubnetGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDaxSubnetGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DaxSubnetGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

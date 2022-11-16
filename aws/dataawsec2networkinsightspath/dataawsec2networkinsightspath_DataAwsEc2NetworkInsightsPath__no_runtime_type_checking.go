@@ -60,6 +60,14 @@ func validateDataAwsEc2NetworkInsightsPath_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataAwsEc2NetworkInsightsPath_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsEc2NetworkInsightsPath_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2NetworkInsightsPath) validateSetIdParameters(val *string) error {
 	return nil
 }

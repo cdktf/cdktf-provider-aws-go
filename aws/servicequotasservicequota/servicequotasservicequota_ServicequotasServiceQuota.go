@@ -2,10 +2,10 @@ package servicequotasservicequota
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/servicequotasservicequota/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/servicequotasservicequota/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -598,6 +598,44 @@ func ServicequotasServiceQuota_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ServicequotasServiceQuota_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateServicequotasServiceQuota_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ServicequotasServiceQuota_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateServicequotasServiceQuota_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.servicequotasServiceQuota.ServicequotasServiceQuota",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

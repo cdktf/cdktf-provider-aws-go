@@ -60,6 +60,14 @@ func validateRoute53RecoveryreadinessCell_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateRoute53RecoveryreadinessCell_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoute53RecoveryreadinessCell_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53RecoveryreadinessCell) validateSetCellNameParameters(val *string) error {
 	return nil
 }

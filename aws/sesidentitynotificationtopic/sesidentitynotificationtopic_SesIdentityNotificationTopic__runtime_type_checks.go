@@ -119,6 +119,22 @@ func validateSesIdentityNotificationTopic_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateSesIdentityNotificationTopic_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateSesIdentityNotificationTopic_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SesIdentityNotificationTopic) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

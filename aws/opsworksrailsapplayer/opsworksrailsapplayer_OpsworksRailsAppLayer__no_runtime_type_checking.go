@@ -68,6 +68,14 @@ func validateOpsworksRailsAppLayer_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOpsworksRailsAppLayer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOpsworksRailsAppLayer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetAppServerParameters(val *string) error {
 	return nil
 }

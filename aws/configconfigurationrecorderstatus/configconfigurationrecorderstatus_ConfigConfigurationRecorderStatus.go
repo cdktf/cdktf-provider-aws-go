@@ -2,10 +2,10 @@ package configconfigurationrecorderstatus
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/configconfigurationrecorderstatus/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/configconfigurationrecorderstatus/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -487,6 +487,44 @@ func ConfigConfigurationRecorderStatus_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ConfigConfigurationRecorderStatus_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateConfigConfigurationRecorderStatus_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func ConfigConfigurationRecorderStatus_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateConfigConfigurationRecorderStatus_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.configConfigurationRecorderStatus.ConfigConfigurationRecorderStatus",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

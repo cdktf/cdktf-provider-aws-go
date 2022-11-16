@@ -68,6 +68,14 @@ func validateAppstreamFleet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppstreamFleet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppstreamFleet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppstreamFleet) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

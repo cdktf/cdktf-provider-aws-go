@@ -56,6 +56,14 @@ func validateLambdaPermission_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateLambdaPermission_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLambdaPermission_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaPermission) validateSetActionParameters(val *string) error {
 	return nil
 }

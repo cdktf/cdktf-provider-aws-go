@@ -56,6 +56,14 @@ func validateEc2TransitGatewayMulticastGroupSource_IsConstructParameters(x inter
 	return nil
 }
 
+func validateEc2TransitGatewayMulticastGroupSource_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2TransitGatewayMulticastGroupSource_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupSource) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

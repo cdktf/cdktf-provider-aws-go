@@ -60,6 +60,14 @@ func validateDataAwsResourcegroupstaggingapiResources_IsConstructParameters(x in
 	return nil
 }
 
+func validateDataAwsResourcegroupstaggingapiResources_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsResourcegroupstaggingapiResources_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validateSetExcludeCompliantResourcesParameters(val interface{}) error {
 	return nil
 }

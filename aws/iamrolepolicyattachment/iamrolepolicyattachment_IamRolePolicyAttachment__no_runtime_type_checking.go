@@ -56,6 +56,14 @@ func validateIamRolePolicyAttachment_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateIamRolePolicyAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIamRolePolicyAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamRolePolicyAttachment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

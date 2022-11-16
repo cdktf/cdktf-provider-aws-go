@@ -56,6 +56,14 @@ func validateOrganizationsDelegatedAdministrator_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateOrganizationsDelegatedAdministrator_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOrganizationsDelegatedAdministrator_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrganizationsDelegatedAdministrator) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

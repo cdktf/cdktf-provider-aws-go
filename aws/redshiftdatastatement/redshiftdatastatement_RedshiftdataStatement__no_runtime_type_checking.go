@@ -64,6 +64,14 @@ func validateRedshiftdataStatement_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRedshiftdataStatement_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRedshiftdataStatement_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftdataStatement) validateSetClusterIdentifierParameters(val *string) error {
 	return nil
 }

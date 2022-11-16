@@ -56,6 +56,14 @@ func validatePinpointEmailChannel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validatePinpointEmailChannel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePinpointEmailChannel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointEmailChannel) validateSetApplicationIdParameters(val *string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package appintegrationseventintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/appintegrationseventintegration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/appintegrationseventintegration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -626,6 +626,44 @@ func AppintegrationsEventIntegration_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegration",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AppintegrationsEventIntegration_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAppintegrationsEventIntegration_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegration",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AppintegrationsEventIntegration_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAppintegrationsEventIntegration_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.appintegrationsEventIntegration.AppintegrationsEventIntegration",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

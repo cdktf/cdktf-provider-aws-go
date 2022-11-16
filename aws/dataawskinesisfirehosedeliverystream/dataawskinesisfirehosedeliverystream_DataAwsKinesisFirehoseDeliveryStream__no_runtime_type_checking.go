@@ -56,6 +56,14 @@ func validateDataAwsKinesisFirehoseDeliveryStream_IsConstructParameters(x interf
 	return nil
 }
 
+func validateDataAwsKinesisFirehoseDeliveryStream_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsKinesisFirehoseDeliveryStream_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsKinesisFirehoseDeliveryStream) validateSetIdParameters(val *string) error {
 	return nil
 }

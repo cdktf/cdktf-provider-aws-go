@@ -56,6 +56,14 @@ func validateRoute53ZoneAssociation_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRoute53ZoneAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoute53ZoneAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53ZoneAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

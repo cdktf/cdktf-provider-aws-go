@@ -56,6 +56,14 @@ func validateDataAwsRoute53ResolverRule_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataAwsRoute53ResolverRule_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsRoute53ResolverRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRoute53ResolverRule) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

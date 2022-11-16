@@ -56,6 +56,14 @@ func validateSsoadminAccountAssignment_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateSsoadminAccountAssignment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSsoadminAccountAssignment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsoadminAccountAssignment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

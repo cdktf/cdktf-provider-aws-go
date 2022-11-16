@@ -64,6 +64,14 @@ func validateCodepipelineWebhook_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCodepipelineWebhook_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCodepipelineWebhook_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodepipelineWebhook) validateSetAuthenticationParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateIotThingGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateIotThingGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIotThingGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotThingGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateImagebuilderImagePipeline_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateImagebuilderImagePipeline_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateImagebuilderImagePipeline_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

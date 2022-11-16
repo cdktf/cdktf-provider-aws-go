@@ -56,6 +56,14 @@ func validateGuarddutyPublishingDestination_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateGuarddutyPublishingDestination_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGuarddutyPublishingDestination_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GuarddutyPublishingDestination) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

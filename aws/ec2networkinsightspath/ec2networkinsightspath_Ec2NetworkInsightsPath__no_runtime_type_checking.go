@@ -56,6 +56,14 @@ func validateEc2NetworkInsightsPath_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEc2NetworkInsightsPath_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2NetworkInsightsPath_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2NetworkInsightsPath) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

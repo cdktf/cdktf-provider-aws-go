@@ -72,6 +72,14 @@ func validateS3BucketWebsiteConfiguration_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateS3BucketWebsiteConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateS3BucketWebsiteConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketWebsiteConfiguration) validateSetBucketParameters(val *string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package appconfigdeployment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/appconfigdeployment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/appconfigdeployment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -727,6 +727,44 @@ func AppconfigDeployment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.appconfigDeployment.AppconfigDeployment",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AppconfigDeployment_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAppconfigDeployment_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.appconfigDeployment.AppconfigDeployment",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func AppconfigDeployment_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateAppconfigDeployment_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.appconfigDeployment.AppconfigDeployment",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

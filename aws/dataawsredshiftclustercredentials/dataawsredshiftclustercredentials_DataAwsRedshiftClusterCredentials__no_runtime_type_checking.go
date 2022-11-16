@@ -56,6 +56,14 @@ func validateDataAwsRedshiftClusterCredentials_IsConstructParameters(x interface
 	return nil
 }
 
+func validateDataAwsRedshiftClusterCredentials_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsRedshiftClusterCredentials_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRedshiftClusterCredentials) validateSetAutoCreateParameters(val interface{}) error {
 	return nil
 }

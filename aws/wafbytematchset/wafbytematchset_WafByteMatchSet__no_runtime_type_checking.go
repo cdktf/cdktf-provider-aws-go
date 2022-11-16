@@ -60,6 +60,14 @@ func validateWafByteMatchSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWafByteMatchSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWafByteMatchSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafByteMatchSet) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

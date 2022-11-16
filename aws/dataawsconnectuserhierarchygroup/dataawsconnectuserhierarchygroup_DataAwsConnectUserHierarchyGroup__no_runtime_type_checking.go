@@ -56,6 +56,14 @@ func validateDataAwsConnectUserHierarchyGroup_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateDataAwsConnectUserHierarchyGroup_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsConnectUserHierarchyGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) validateSetHierarchyGroupIdParameters(val *string) error {
 	return nil
 }

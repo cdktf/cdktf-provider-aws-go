@@ -2,10 +2,10 @@ package fsxbackup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/fsxbackup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/fsxbackup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -627,6 +627,44 @@ func FsxBackup_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fsxBackup.FsxBackup",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func FsxBackup_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateFsxBackup_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.fsxBackup.FsxBackup",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func FsxBackup_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateFsxBackup_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.fsxBackup.FsxBackup",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

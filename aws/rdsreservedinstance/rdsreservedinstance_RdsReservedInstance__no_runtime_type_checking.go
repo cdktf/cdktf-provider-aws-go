@@ -60,6 +60,14 @@ func validateRdsReservedInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRdsReservedInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRdsReservedInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsReservedInstance) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

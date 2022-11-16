@@ -64,6 +64,14 @@ func validateRoute53ResolverEndpoint_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateRoute53ResolverEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoute53ResolverEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53ResolverEndpoint) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

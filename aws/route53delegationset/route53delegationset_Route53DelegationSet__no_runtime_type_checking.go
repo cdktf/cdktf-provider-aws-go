@@ -56,6 +56,14 @@ func validateRoute53DelegationSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRoute53DelegationSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoute53DelegationSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53DelegationSet) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

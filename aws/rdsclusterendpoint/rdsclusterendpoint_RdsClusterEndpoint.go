@@ -2,10 +2,10 @@ package rdsclusterendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/rdsclusterendpoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/rdsclusterendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -683,6 +683,44 @@ func RdsClusterEndpoint_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func RdsClusterEndpoint_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRdsClusterEndpoint_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func RdsClusterEndpoint_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRdsClusterEndpoint_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.rdsClusterEndpoint.RdsClusterEndpoint",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

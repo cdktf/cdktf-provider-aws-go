@@ -60,6 +60,14 @@ func validateDataAwsEc2ManagedPrefixLists_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateDataAwsEc2ManagedPrefixLists_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsEc2ManagedPrefixLists_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists) validateSetIdParameters(val *string) error {
 	return nil
 }

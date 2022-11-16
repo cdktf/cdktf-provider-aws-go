@@ -60,6 +60,14 @@ func validateCloudfrontRealtimeLogConfig_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateCloudfrontRealtimeLogConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudfrontRealtimeLogConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontRealtimeLogConfig) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

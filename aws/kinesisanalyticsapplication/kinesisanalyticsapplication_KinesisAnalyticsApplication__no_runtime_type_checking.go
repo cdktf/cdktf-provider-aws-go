@@ -72,6 +72,14 @@ func validateKinesisAnalyticsApplication_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateKinesisAnalyticsApplication_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKinesisAnalyticsApplication_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KinesisAnalyticsApplication) validateSetCodeParameters(val *string) error {
 	return nil
 }

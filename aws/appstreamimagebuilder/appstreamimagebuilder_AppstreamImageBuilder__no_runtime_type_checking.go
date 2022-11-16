@@ -68,6 +68,14 @@ func validateAppstreamImageBuilder_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppstreamImageBuilder_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppstreamImageBuilder_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppstreamImageBuilder) validateSetAppstreamAgentVersionParameters(val *string) error {
 	return nil
 }

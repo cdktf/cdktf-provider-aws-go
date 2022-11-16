@@ -60,6 +60,14 @@ func validateAccountAlternateContact_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateAccountAlternateContact_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAccountAlternateContact_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccountAlternateContact) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

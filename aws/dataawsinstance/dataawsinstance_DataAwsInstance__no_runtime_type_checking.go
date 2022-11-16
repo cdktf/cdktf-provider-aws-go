@@ -64,6 +64,14 @@ func validateDataAwsInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsInstance_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsInstance) validateSetFetchPasswordDataParameters(val interface{}) error {
 	return nil
 }

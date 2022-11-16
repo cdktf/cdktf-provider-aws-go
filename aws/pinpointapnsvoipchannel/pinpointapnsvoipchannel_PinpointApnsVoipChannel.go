@@ -2,10 +2,10 @@ package pinpointapnsvoipchannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/pinpointapnsvoipchannel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/pinpointapnsvoipchannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -733,6 +733,44 @@ func PinpointApnsVoipChannel_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.pinpointApnsVoipChannel.PinpointApnsVoipChannel",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PinpointApnsVoipChannel_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePinpointApnsVoipChannel_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.pinpointApnsVoipChannel.PinpointApnsVoipChannel",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PinpointApnsVoipChannel_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePinpointApnsVoipChannel_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.pinpointApnsVoipChannel.PinpointApnsVoipChannel",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

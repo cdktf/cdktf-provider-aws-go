@@ -68,6 +68,14 @@ func validateKinesisanalyticsv2Application_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateKinesisanalyticsv2Application_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKinesisanalyticsv2Application_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Kinesisanalyticsv2Application) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateEc2TransitGatewayRoute_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEc2TransitGatewayRoute_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2TransitGatewayRoute_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayRoute) validateSetBlackholeParameters(val interface{}) error {
 	return nil
 }

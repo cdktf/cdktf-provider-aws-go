@@ -56,6 +56,14 @@ func validateRedshiftserverlessUsageLimit_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateRedshiftserverlessUsageLimit_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRedshiftserverlessUsageLimit_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftserverlessUsageLimit) validateSetAmountParameters(val *float64) error {
 	return nil
 }

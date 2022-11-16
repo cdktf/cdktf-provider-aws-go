@@ -60,6 +60,14 @@ func validateEfsBackupPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEfsBackupPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEfsBackupPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EfsBackupPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataAwsCodestarconnectionsConnection_IsConstructParameters(x interf
 	return nil
 }
 
+func validateDataAwsCodestarconnectionsConnection_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCodestarconnectionsConnection_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) validateSetArnParameters(val *string) error {
 	return nil
 }

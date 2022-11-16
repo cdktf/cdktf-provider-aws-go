@@ -60,6 +60,14 @@ func validateSesDomainIdentityVerification_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateSesDomainIdentityVerification_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSesDomainIdentityVerification_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesDomainIdentityVerification) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

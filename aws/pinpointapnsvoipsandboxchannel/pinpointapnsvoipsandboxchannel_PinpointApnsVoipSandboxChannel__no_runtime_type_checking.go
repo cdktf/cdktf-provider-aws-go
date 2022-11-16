@@ -56,6 +56,14 @@ func validatePinpointApnsVoipSandboxChannel_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validatePinpointApnsVoipSandboxChannel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validatePinpointApnsVoipSandboxChannel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) validateSetApplicationIdParameters(val *string) error {
 	return nil
 }

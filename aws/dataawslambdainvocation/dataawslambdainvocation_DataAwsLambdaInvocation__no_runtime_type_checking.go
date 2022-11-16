@@ -56,6 +56,14 @@ func validateDataAwsLambdaInvocation_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateDataAwsLambdaInvocation_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsLambdaInvocation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLambdaInvocation) validateSetFunctionNameParameters(val *string) error {
 	return nil
 }

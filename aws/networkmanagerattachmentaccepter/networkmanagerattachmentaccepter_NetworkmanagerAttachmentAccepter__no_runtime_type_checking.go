@@ -60,6 +60,14 @@ func validateNetworkmanagerAttachmentAccepter_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateNetworkmanagerAttachmentAccepter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkmanagerAttachmentAccepter_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) validateSetAttachmentIdParameters(val *string) error {
 	return nil
 }

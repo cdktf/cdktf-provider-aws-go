@@ -60,6 +60,14 @@ func validateOpensearchDomainPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOpensearchDomainPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOpensearchDomainPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpensearchDomainPolicy) validateSetAccessPoliciesParameters(val *string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package mwaaenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/mwaaenvironment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/mwaaenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1217,6 +1217,44 @@ func MwaaEnvironment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MwaaEnvironment_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMwaaEnvironment_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func MwaaEnvironment_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateMwaaEnvironment_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironment",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

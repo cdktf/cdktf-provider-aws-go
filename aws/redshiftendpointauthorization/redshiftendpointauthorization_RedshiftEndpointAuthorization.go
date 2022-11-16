@@ -2,10 +2,10 @@ package redshiftendpointauthorization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/redshiftendpointauthorization/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/redshiftendpointauthorization/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -601,6 +601,44 @@ func RedshiftEndpointAuthorization_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func RedshiftEndpointAuthorization_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRedshiftEndpointAuthorization_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func RedshiftEndpointAuthorization_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRedshiftEndpointAuthorization_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.redshiftEndpointAuthorization.RedshiftEndpointAuthorization",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

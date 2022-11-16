@@ -68,6 +68,14 @@ func validateIvsRecordingConfiguration_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateIvsRecordingConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateIvsRecordingConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IvsRecordingConfiguration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

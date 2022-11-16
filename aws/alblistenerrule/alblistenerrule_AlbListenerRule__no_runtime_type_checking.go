@@ -64,6 +64,14 @@ func validateAlbListenerRule_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAlbListenerRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAlbListenerRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlbListenerRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

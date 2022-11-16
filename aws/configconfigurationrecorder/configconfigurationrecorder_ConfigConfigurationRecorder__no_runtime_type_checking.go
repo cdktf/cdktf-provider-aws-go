@@ -60,6 +60,14 @@ func validateConfigConfigurationRecorder_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateConfigConfigurationRecorder_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConfigConfigurationRecorder_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigConfigurationRecorder) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

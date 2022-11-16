@@ -60,6 +60,14 @@ func validateDmsEventSubscription_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDmsEventSubscription_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDmsEventSubscription_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsEventSubscription) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

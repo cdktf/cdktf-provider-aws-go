@@ -56,6 +56,14 @@ func validateDynamodbTableItem_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDynamodbTableItem_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDynamodbTableItem_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbTableItem) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

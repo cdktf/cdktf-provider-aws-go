@@ -56,6 +56,14 @@ func validateShieldProtectionHealthCheckAssociation_IsConstructParameters(x inte
 	return nil
 }
 
+func validateShieldProtectionHealthCheckAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateShieldProtectionHealthCheckAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ShieldProtectionHealthCheckAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

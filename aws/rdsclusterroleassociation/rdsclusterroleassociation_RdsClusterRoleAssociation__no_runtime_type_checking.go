@@ -56,6 +56,14 @@ func validateRdsClusterRoleAssociation_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateRdsClusterRoleAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRdsClusterRoleAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsClusterRoleAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

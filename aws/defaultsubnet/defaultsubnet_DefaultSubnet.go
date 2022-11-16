@@ -2,10 +2,10 @@ package defaultsubnet
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/defaultsubnet/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/defaultsubnet/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1020,6 +1020,44 @@ func DefaultSubnet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.defaultSubnet.DefaultSubnet",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DefaultSubnet_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDefaultSubnet_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.defaultSubnet.DefaultSubnet",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DefaultSubnet_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDefaultSubnet_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.defaultSubnet.DefaultSubnet",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

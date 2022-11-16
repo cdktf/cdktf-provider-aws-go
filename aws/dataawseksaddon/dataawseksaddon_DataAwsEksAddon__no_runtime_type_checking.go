@@ -56,6 +56,14 @@ func validateDataAwsEksAddon_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsEksAddon_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsEksAddon_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEksAddon) validateSetAddonNameParameters(val *string) error {
 	return nil
 }

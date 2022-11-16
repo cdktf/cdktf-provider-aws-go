@@ -60,6 +60,14 @@ func validateConfigDeliveryChannel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateConfigDeliveryChannel_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConfigDeliveryChannel_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigDeliveryChannel) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

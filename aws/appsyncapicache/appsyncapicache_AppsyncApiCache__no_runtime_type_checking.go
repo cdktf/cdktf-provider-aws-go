@@ -56,6 +56,14 @@ func validateAppsyncApiCache_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppsyncApiCache_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppsyncApiCache_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncApiCache) validateSetApiCachingBehaviorParameters(val *string) error {
 	return nil
 }

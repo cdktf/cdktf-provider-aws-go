@@ -56,6 +56,14 @@ func validateDataAwsEcsService_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsEcsService_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsEcsService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEcsService) validateSetClusterArnParameters(val *string) error {
 	return nil
 }

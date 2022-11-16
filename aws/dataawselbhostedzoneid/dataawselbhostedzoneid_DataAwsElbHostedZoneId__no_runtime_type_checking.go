@@ -56,6 +56,14 @@ func validateDataAwsElbHostedZoneId_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDataAwsElbHostedZoneId_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsElbHostedZoneId_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsElbHostedZoneId) validateSetIdParameters(val *string) error {
 	return nil
 }

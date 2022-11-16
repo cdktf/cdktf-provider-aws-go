@@ -60,6 +60,14 @@ func validateWafSizeConstraintSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateWafSizeConstraintSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWafSizeConstraintSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafSizeConstraintSet) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

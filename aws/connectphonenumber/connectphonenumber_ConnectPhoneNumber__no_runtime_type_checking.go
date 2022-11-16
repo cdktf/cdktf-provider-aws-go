@@ -60,6 +60,14 @@ func validateConnectPhoneNumber_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateConnectPhoneNumber_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateConnectPhoneNumber_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectPhoneNumber) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

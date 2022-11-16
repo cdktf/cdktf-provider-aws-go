@@ -60,6 +60,14 @@ func validateDbSnapshotCopy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateDbSnapshotCopy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDbSnapshotCopy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbSnapshotCopy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

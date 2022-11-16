@@ -60,6 +60,14 @@ func validateVpcIpamScope_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateVpcIpamScope_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVpcIpamScope_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpamScope) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

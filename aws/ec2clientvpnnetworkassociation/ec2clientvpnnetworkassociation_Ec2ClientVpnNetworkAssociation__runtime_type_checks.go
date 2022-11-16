@@ -130,6 +130,22 @@ func validateEc2ClientVpnNetworkAssociation_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateEc2ClientVpnNetworkAssociation_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateEc2ClientVpnNetworkAssociation_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Ec2ClientVpnNetworkAssociation) validateSetClientVpnEndpointIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

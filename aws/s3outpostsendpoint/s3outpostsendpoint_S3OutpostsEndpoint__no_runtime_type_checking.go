@@ -56,6 +56,14 @@ func validateS3OutpostsEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateS3OutpostsEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateS3OutpostsEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3OutpostsEndpoint) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

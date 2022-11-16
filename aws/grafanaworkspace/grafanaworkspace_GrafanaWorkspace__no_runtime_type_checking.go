@@ -60,6 +60,14 @@ func validateGrafanaWorkspace_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGrafanaWorkspace_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGrafanaWorkspace_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GrafanaWorkspace) validateSetAccountAccessTypeParameters(val *string) error {
 	return nil
 }

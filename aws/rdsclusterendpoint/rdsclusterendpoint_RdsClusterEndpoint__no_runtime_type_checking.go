@@ -56,6 +56,14 @@ func validateRdsClusterEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRdsClusterEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRdsClusterEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsClusterEndpoint) validateSetClusterEndpointIdentifierParameters(val *string) error {
 	return nil
 }

@@ -2,10 +2,10 @@ package fmsadminaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/fmsadminaccount/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/fmsadminaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -454,6 +454,44 @@ func FmsAdminAccount_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccount",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func FmsAdminAccount_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateFmsAdminAccount_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccount",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func FmsAdminAccount_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateFmsAdminAccount_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.fmsAdminAccount.FmsAdminAccount",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

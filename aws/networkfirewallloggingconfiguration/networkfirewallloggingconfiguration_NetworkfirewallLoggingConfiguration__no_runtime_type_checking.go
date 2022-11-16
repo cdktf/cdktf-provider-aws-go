@@ -60,6 +60,14 @@ func validateNetworkfirewallLoggingConfiguration_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateNetworkfirewallLoggingConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkfirewallLoggingConfiguration_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkfirewallLoggingConfiguration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateSesIdentityPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSesIdentityPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSesIdentityPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesIdentityPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateCodestarnotificationsNotificationRule_IsConstructParameters(x inter
 	return nil
 }
 
+func validateCodestarnotificationsNotificationRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCodestarnotificationsNotificationRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodestarnotificationsNotificationRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

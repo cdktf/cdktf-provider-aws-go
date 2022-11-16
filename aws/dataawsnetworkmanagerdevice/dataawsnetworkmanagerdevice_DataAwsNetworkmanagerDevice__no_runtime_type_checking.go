@@ -56,6 +56,14 @@ func validateDataAwsNetworkmanagerDevice_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateDataAwsNetworkmanagerDevice_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsNetworkmanagerDevice_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNetworkmanagerDevice) validateSetDeviceIdParameters(val *string) error {
 	return nil
 }

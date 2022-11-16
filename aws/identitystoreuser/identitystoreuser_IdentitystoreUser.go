@@ -2,10 +2,10 @@ package identitystoreuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/identitystoreuser/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/identitystoreuser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -883,6 +883,44 @@ func IdentitystoreUser_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUser",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func IdentitystoreUser_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateIdentitystoreUser_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUser",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func IdentitystoreUser_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateIdentitystoreUser_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUser",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

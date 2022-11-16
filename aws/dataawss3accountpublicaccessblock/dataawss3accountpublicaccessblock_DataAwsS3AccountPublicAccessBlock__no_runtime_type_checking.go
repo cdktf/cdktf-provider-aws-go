@@ -56,6 +56,14 @@ func validateDataAwsS3AccountPublicAccessBlock_IsConstructParameters(x interface
 	return nil
 }
 
+func validateDataAwsS3AccountPublicAccessBlock_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsS3AccountPublicAccessBlock_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsS3AccountPublicAccessBlock) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

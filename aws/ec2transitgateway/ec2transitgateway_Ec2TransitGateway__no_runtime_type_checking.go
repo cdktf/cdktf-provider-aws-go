@@ -60,6 +60,14 @@ func validateEc2TransitGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEc2TransitGateway_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2TransitGateway_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGateway) validateSetAmazonSideAsnParameters(val *float64) error {
 	return nil
 }

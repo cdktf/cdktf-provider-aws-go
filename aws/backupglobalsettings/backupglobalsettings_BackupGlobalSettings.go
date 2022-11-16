@@ -2,10 +2,10 @@ package backupglobalsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/backupglobalsettings/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/backupglobalsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -453,6 +453,44 @@ func BackupGlobalSettings_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BackupGlobalSettings_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBackupGlobalSettings_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func BackupGlobalSettings_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateBackupGlobalSettings_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.backupGlobalSettings.BackupGlobalSettings",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

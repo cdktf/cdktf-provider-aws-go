@@ -56,6 +56,14 @@ func validateOpsworksUserProfile_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateOpsworksUserProfile_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateOpsworksUserProfile_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpsworksUserProfile) validateSetAllowSelfManagementParameters(val interface{}) error {
 	return nil
 }

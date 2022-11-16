@@ -2,10 +2,10 @@ package grafanaworkspace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/grafanaworkspace/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/grafanaworkspace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -939,6 +939,44 @@ func GrafanaWorkspace_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspace",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GrafanaWorkspace_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGrafanaWorkspace_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspace",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GrafanaWorkspace_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGrafanaWorkspace_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.grafanaWorkspace.GrafanaWorkspace",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -72,6 +72,14 @@ func validateSyntheticsCanary_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSyntheticsCanary_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSyntheticsCanary_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsCanary) validateSetArtifactS3LocationParameters(val *string) error {
 	return nil
 }

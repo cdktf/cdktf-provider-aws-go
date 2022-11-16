@@ -60,6 +60,14 @@ func validateRedshiftParameterGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRedshiftParameterGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRedshiftParameterGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftParameterGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateDataAwsVpcEndpointService_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataAwsVpcEndpointService_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsVpcEndpointService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpcEndpointService) validateSetIdParameters(val *string) error {
 	return nil
 }

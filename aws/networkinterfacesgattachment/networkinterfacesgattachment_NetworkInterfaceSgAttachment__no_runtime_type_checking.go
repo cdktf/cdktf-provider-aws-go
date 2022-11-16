@@ -56,6 +56,14 @@ func validateNetworkInterfaceSgAttachment_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateNetworkInterfaceSgAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkInterfaceSgAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkInterfaceSgAttachment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

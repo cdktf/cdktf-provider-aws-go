@@ -2,10 +2,10 @@ package codestarconnectionshost
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/codestarconnectionshost/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/codestarconnectionshost/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -591,6 +591,44 @@ func CodestarconnectionsHost_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CodestarconnectionsHost_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCodestarconnectionsHost_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func CodestarconnectionsHost_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateCodestarconnectionsHost_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

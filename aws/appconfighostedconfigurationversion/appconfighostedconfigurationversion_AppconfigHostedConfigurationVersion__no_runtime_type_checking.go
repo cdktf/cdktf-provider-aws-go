@@ -56,6 +56,14 @@ func validateAppconfigHostedConfigurationVersion_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateAppconfigHostedConfigurationVersion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppconfigHostedConfigurationVersion_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppconfigHostedConfigurationVersion) validateSetApplicationIdParameters(val *string) error {
 	return nil
 }

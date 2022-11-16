@@ -56,6 +56,14 @@ func validateDbInstanceRoleAssociation_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDbInstanceRoleAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDbInstanceRoleAssociation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbInstanceRoleAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateMacie2CustomDataIdentifier_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateMacie2CustomDataIdentifier_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMacie2CustomDataIdentifier_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Macie2CustomDataIdentifier) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

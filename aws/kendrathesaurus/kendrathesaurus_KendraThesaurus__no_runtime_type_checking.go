@@ -64,6 +64,14 @@ func validateKendraThesaurus_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKendraThesaurus_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKendraThesaurus_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KendraThesaurus) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateS3AccountPublicAccessBlock_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateS3AccountPublicAccessBlock_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateS3AccountPublicAccessBlock_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateSsmDefaultPatchBaseline_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateSsmDefaultPatchBaseline_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSsmDefaultPatchBaseline_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmDefaultPatchBaseline) validateSetBaselineIdParameters(val *string) error {
 	return nil
 }

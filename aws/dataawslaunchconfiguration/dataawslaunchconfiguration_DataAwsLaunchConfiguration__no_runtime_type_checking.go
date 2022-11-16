@@ -56,6 +56,14 @@ func validateDataAwsLaunchConfiguration_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataAwsLaunchConfiguration_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsLaunchConfiguration_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLaunchConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

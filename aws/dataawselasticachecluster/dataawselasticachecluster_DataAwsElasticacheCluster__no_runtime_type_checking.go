@@ -56,6 +56,14 @@ func validateDataAwsElasticacheCluster_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateDataAwsElasticacheCluster_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsElasticacheCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsElasticacheCluster) validateSetClusterIdParameters(val *string) error {
 	return nil
 }

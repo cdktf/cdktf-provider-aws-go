@@ -119,6 +119,22 @@ func validateDataAwsKinesisFirehoseDeliveryStream_IsConstructParameters(x interf
 	return nil
 }
 
+func validateDataAwsKinesisFirehoseDeliveryStream_IsTerraformDataSourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateDataAwsKinesisFirehoseDeliveryStream_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsKinesisFirehoseDeliveryStream) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

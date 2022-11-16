@@ -56,6 +56,14 @@ func validateQldbLedger_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateQldbLedger_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateQldbLedger_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_QldbLedger) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

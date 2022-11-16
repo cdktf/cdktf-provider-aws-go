@@ -60,6 +60,14 @@ func validateS3ObjectCopy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateS3ObjectCopy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateS3ObjectCopy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3ObjectCopy) validateSetAclParameters(val *string) error {
 	return nil
 }

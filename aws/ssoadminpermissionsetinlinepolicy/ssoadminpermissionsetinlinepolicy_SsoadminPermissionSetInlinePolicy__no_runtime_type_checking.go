@@ -56,6 +56,14 @@ func validateSsoadminPermissionSetInlinePolicy_IsConstructParameters(x interface
 	return nil
 }
 
+func validateSsoadminPermissionSetInlinePolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSsoadminPermissionSetInlinePolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

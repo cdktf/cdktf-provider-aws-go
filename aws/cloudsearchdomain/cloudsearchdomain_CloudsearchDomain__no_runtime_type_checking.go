@@ -72,6 +72,14 @@ func validateCloudsearchDomain_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateCloudsearchDomain_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudsearchDomain_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudsearchDomain) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -76,6 +76,14 @@ func validateEcsTaskSet_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEcsTaskSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEcsTaskSet_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsTaskSet) validateSetClusterParameters(val *string) error {
 	return nil
 }

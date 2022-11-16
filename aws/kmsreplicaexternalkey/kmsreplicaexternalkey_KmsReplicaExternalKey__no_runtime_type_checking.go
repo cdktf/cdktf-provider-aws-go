@@ -56,6 +56,14 @@ func validateKmsReplicaExternalKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateKmsReplicaExternalKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKmsReplicaExternalKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsReplicaExternalKey) validateSetBypassPolicyLockoutSafetyCheckParameters(val interface{}) error {
 	return nil
 }

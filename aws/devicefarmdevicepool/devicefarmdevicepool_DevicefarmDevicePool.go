@@ -2,10 +2,10 @@ package devicefarmdevicepool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/devicefarmdevicepool/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/devicefarmdevicepool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -672,6 +672,44 @@ func DevicefarmDevicePool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePool",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DevicefarmDevicePool_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDevicefarmDevicePool_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePool",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DevicefarmDevicePool_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDevicefarmDevicePool_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.devicefarmDevicePool.DevicefarmDevicePool",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

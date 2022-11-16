@@ -68,6 +68,14 @@ func validateImagebuilderContainerRecipe_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateImagebuilderContainerRecipe_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateImagebuilderContainerRecipe_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImagebuilderContainerRecipe) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

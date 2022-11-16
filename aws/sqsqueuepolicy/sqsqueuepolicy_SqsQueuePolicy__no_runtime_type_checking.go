@@ -56,6 +56,14 @@ func validateSqsQueuePolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateSqsQueuePolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSqsQueuePolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqsQueuePolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

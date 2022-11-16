@@ -56,6 +56,14 @@ func validateRedshiftPartner_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateRedshiftPartner_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRedshiftPartner_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftPartner) validateSetAccountIdParameters(val *string) error {
 	return nil
 }

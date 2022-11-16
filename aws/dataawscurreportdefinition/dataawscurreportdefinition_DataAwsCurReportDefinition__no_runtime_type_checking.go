@@ -56,6 +56,14 @@ func validateDataAwsCurReportDefinition_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateDataAwsCurReportDefinition_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAwsCurReportDefinition_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCurReportDefinition) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -96,6 +96,14 @@ func validateCodedeployDeploymentGroup_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateCodedeployDeploymentGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCodedeployDeploymentGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetAppNameParameters(val *string) error {
 	return nil
 }

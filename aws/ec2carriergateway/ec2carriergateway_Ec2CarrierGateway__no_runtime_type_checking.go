@@ -56,6 +56,14 @@ func validateEc2CarrierGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateEc2CarrierGateway_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEc2CarrierGateway_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2CarrierGateway) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

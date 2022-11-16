@@ -60,6 +60,14 @@ func validateMacie2InvitationAccepter_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateMacie2InvitationAccepter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateMacie2InvitationAccepter_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Macie2InvitationAccepter) validateSetAdministratorAccountIdParameters(val *string) error {
 	return nil
 }

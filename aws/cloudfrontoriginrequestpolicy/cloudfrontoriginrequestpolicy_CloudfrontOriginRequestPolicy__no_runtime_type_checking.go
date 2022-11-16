@@ -68,6 +68,14 @@ func validateCloudfrontOriginRequestPolicy_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateCloudfrontOriginRequestPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudfrontOriginRequestPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontOriginRequestPolicy) validateSetCommentParameters(val *string) error {
 	return nil
 }

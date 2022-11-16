@@ -68,6 +68,14 @@ func validateAcmpcaCertificateAuthority_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateAcmpcaCertificateAuthority_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAcmpcaCertificateAuthority_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

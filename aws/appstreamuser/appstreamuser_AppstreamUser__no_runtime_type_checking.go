@@ -56,6 +56,14 @@ func validateAppstreamUser_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateAppstreamUser_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAppstreamUser_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppstreamUser) validateSetAuthenticationTypeParameters(val *string) error {
 	return nil
 }

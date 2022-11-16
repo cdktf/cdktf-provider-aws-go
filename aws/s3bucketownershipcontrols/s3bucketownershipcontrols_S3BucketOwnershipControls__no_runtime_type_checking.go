@@ -60,6 +60,14 @@ func validateS3BucketOwnershipControls_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateS3BucketOwnershipControls_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateS3BucketOwnershipControls_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketOwnershipControls) validateSetBucketParameters(val *string) error {
 	return nil
 }

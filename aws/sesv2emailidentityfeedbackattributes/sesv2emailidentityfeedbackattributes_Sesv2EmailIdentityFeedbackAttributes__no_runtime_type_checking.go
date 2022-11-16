@@ -56,6 +56,14 @@ func validateSesv2EmailIdentityFeedbackAttributes_IsConstructParameters(x interf
 	return nil
 }
 
+func validateSesv2EmailIdentityFeedbackAttributes_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateSesv2EmailIdentityFeedbackAttributes_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

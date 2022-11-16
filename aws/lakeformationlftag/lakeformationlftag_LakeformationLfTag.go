@@ -2,10 +2,10 @@ package lakeformationlftag
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v10/lakeformationlftag/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/lakeformationlftag/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -522,6 +522,44 @@ func LakeformationLfTag_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LakeformationLfTag_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLakeformationLfTag_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LakeformationLfTag_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLakeformationLfTag_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.lakeformationLfTag.LakeformationLfTag",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

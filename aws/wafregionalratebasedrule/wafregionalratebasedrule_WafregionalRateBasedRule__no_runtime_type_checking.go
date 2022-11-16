@@ -60,6 +60,14 @@ func validateWafregionalRateBasedRule_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateWafregionalRateBasedRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWafregionalRateBasedRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafregionalRateBasedRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

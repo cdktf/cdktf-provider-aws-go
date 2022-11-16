@@ -56,6 +56,14 @@ func validateEgressOnlyInternetGateway_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateEgressOnlyInternetGateway_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateEgressOnlyInternetGateway_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EgressOnlyInternetGateway) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
