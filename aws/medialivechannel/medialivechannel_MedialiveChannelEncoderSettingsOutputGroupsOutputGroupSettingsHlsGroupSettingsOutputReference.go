@@ -72,6 +72,9 @@ type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSetti
 	HlsId3SegmentTagging() *string
 	SetHlsId3SegmentTagging(val *string)
 	HlsId3SegmentTaggingInput() *string
+	IframeOnlyPlaylists() *string
+	SetIframeOnlyPlaylists(val *string)
+	IframeOnlyPlaylistsInput() *string
 	IncompleteSegmentBehavior() *string
 	SetIncompleteSegmentBehavior(val *string)
 	IncompleteSegmentBehaviorInput() *string
@@ -89,15 +92,17 @@ type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSetti
 	IvSource() *string
 	SetIvSource(val *string)
 	IvSourceInput() *string
-	KeepSegment() *float64
-	SetKeepSegment(val *float64)
-	KeepSegmentInput() *float64
+	KeepSegments() *float64
+	SetKeepSegments(val *float64)
+	KeepSegmentsInput() *float64
 	KeyFormat() *string
 	SetKeyFormat(val *string)
 	KeyFormatInput() *string
 	KeyFormatVersions() *string
 	SetKeyFormatVersions(val *string)
 	KeyFormatVersionsInput() *string
+	KeyProviderSettings() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsOutputReference
+	KeyProviderSettingsInput() *MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings
 	ManifestCompression() *string
 	SetManifestCompression(val *string)
 	ManifestCompressionInput() *string
@@ -110,6 +115,9 @@ type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSetti
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
+	OutputSelection() *string
+	SetOutputSelection(val *string)
+	OutputSelectionInput() *string
 	ProgramDateTime() *string
 	SetProgramDateTime(val *string)
 	ProgramDateTimeClock() *string
@@ -139,9 +147,12 @@ type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSetti
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	TimeMetadataId3Frame() *string
-	SetTimeMetadataId3Frame(val *string)
-	TimeMetadataId3FrameInput() *string
+	TimedMetadataId3Frame() *string
+	SetTimedMetadataId3Frame(val *string)
+	TimedMetadataId3FrameInput() *string
+	TimedMetadataId3Period() *float64
+	SetTimedMetadataId3Period(val *float64)
+	TimedMetadataId3PeriodInput() *float64
 	TimestampDeltaMilliseconds() *float64
 	SetTimestampDeltaMilliseconds(val *float64)
 	TimestampDeltaMillisecondsInput() *float64
@@ -175,6 +186,7 @@ type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSetti
 	PutCaptionLanguageMappings(value interface{})
 	PutDestination(value *MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsDestination)
 	PutHlsCdnSettings(value interface{})
+	PutKeyProviderSettings(value *MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings)
 	ResetAdMarkers()
 	ResetBaseUrlContent()
 	ResetBaseUrlContent1()
@@ -190,18 +202,21 @@ type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSetti
 	ResetEncryptionType()
 	ResetHlsCdnSettings()
 	ResetHlsId3SegmentTagging()
+	ResetIframeOnlyPlaylists()
 	ResetIncompleteSegmentBehavior()
 	ResetIndexNSegments()
 	ResetInputLossAction()
 	ResetIvInManifest()
 	ResetIvSource()
-	ResetKeepSegment()
+	ResetKeepSegments()
 	ResetKeyFormat()
 	ResetKeyFormatVersions()
+	ResetKeyProviderSettings()
 	ResetManifestCompression()
 	ResetManifestDurationFormat()
 	ResetMinSegmentLength()
 	ResetMode()
+	ResetOutputSelection()
 	ResetProgramDateTime()
 	ResetProgramDateTimeClock()
 	ResetProgramDateTimePeriod()
@@ -209,7 +224,8 @@ type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSetti
 	ResetSegmentLength()
 	ResetSegmentsPerSubdirectory()
 	ResetStreamInfResolution()
-	ResetTimeMetadataId3Frame()
+	ResetTimedMetadataId3Frame()
+	ResetTimedMetadataId3Period()
 	ResetTimestampDeltaMilliseconds()
 	ResetTsFileMode()
 	// Produce the Token's value at resolution time.
@@ -587,6 +603,26 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	return returns
 }
 
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) IframeOnlyPlaylists() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iframeOnlyPlaylists",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) IframeOnlyPlaylistsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iframeOnlyPlaylistsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) IncompleteSegmentBehavior() *string {
 	var returns *string
 	_jsii_.Get(
@@ -697,21 +733,21 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) KeepSegment() *float64 {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) KeepSegments() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"keepSegment",
+		"keepSegments",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) KeepSegmentInput() *float64 {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) KeepSegmentsInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"keepSegmentInput",
+		"keepSegmentsInput",
 		&returns,
 	)
 	return returns
@@ -752,6 +788,26 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	_jsii_.Get(
 		j,
 		"keyFormatVersionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) KeyProviderSettings() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsOutputReference {
+	var returns MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"keyProviderSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) KeyProviderSettingsInput() *MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings {
+	var returns *MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings
+	_jsii_.Get(
+		j,
+		"keyProviderSettingsInput",
 		&returns,
 	)
 	return returns
@@ -832,6 +888,26 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	_jsii_.Get(
 		j,
 		"modeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) OutputSelection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outputSelection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) OutputSelectionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outputSelectionInput",
 		&returns,
 	)
 	return returns
@@ -997,21 +1073,41 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) TimeMetadataId3Frame() *string {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) TimedMetadataId3Frame() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"timeMetadataId3Frame",
+		"timedMetadataId3Frame",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) TimeMetadataId3FrameInput() *string {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) TimedMetadataId3FrameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"timeMetadataId3FrameInput",
+		"timedMetadataId3FrameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) TimedMetadataId3Period() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"timedMetadataId3Period",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) TimedMetadataId3PeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"timedMetadataId3PeriodInput",
 		&returns,
 	)
 	return returns
@@ -1250,6 +1346,17 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	)
 }
 
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference)SetIframeOnlyPlaylists(val *string) {
+	if err := j.validateSetIframeOnlyPlaylistsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"iframeOnlyPlaylists",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference)SetIncompleteSegmentBehavior(val *string) {
 	if err := j.validateSetIncompleteSegmentBehaviorParameters(val); err != nil {
 		panic(err)
@@ -1316,13 +1423,13 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference)SetKeepSegment(val *float64) {
-	if err := j.validateSetKeepSegmentParameters(val); err != nil {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference)SetKeepSegments(val *float64) {
+	if err := j.validateSetKeepSegmentsParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"keepSegment",
+		"keepSegments",
 		val,
 	)
 }
@@ -1389,6 +1496,17 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	_jsii_.Set(
 		j,
 		"mode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference)SetOutputSelection(val *string) {
+	if err := j.validateSetOutputSelectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"outputSelection",
 		val,
 	)
 }
@@ -1492,13 +1610,24 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference)SetTimeMetadataId3Frame(val *string) {
-	if err := j.validateSetTimeMetadataId3FrameParameters(val); err != nil {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference)SetTimedMetadataId3Frame(val *string) {
+	if err := j.validateSetTimedMetadataId3FrameParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"timeMetadataId3Frame",
+		"timedMetadataId3Frame",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference)SetTimedMetadataId3Period(val *float64) {
+	if err := j.validateSetTimedMetadataId3PeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timedMetadataId3Period",
 		val,
 	)
 }
@@ -1744,6 +1873,17 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	)
 }
 
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) PutKeyProviderSettings(value *MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings) {
+	if err := m.validatePutKeyProviderSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putKeyProviderSettings",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) ResetAdMarkers() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1864,6 +2004,14 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	)
 }
 
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) ResetIframeOnlyPlaylists() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetIframeOnlyPlaylists",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) ResetIncompleteSegmentBehavior() {
 	_jsii_.InvokeVoid(
 		m,
@@ -1904,10 +2052,10 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	)
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) ResetKeepSegment() {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) ResetKeepSegments() {
 	_jsii_.InvokeVoid(
 		m,
-		"resetKeepSegment",
+		"resetKeepSegments",
 		nil, // no parameters
 	)
 }
@@ -1924,6 +2072,14 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	_jsii_.InvokeVoid(
 		m,
 		"resetKeyFormatVersions",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) ResetKeyProviderSettings() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetKeyProviderSettings",
 		nil, // no parameters
 	)
 }
@@ -1956,6 +2112,14 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	_jsii_.InvokeVoid(
 		m,
 		"resetMode",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) ResetOutputSelection() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetOutputSelection",
 		nil, // no parameters
 	)
 }
@@ -2016,10 +2180,18 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	)
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) ResetTimeMetadataId3Frame() {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) ResetTimedMetadataId3Frame() {
 	_jsii_.InvokeVoid(
 		m,
-		"resetTimeMetadataId3Frame",
+		"resetTimedMetadataId3Frame",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) ResetTimedMetadataId3Period() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTimedMetadataId3Period",
 		nil, // no parameters
 	)
 }

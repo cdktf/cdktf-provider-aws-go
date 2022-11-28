@@ -59,9 +59,7 @@ type DataAwsGlobalacceleratorAccelerator interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	Tags() *map[string]*string
-	SetTags(val *map[string]*string)
-	TagsInput() *map[string]*string
+	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -99,7 +97,6 @@ type DataAwsGlobalacceleratorAccelerator interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -345,21 +342,11 @@ func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) RawOverrides() interface
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) Tags() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
 	_jsii_.Get(
 		j,
 		"tags",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) TagsInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"tagsInput",
 		&returns,
 	)
 	return returns
@@ -497,17 +484,6 @@ func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator)SetProvider(val cdktf.Ter
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator)SetTags(val *map[string]*string) {
-	if err := j.validateSetTagsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tags",
 		val,
 	)
 }
@@ -806,14 +782,6 @@ func (d *jsiiProxy_DataAwsGlobalacceleratorAccelerator) ResetOverrideLogicalId()
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAwsGlobalacceleratorAccelerator) ResetTags() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTags",
 		nil, // no parameters
 	)
 }

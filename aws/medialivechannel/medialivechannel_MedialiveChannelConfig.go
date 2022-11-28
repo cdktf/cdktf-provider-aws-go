@@ -56,6 +56,8 @@ type MedialiveChannelConfig struct {
 	Maintenance *MedialiveChannelMaintenance `field:"optional" json:"maintenance" yaml:"maintenance"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#role_arn MedialiveChannel#role_arn}.
 	RoleArn *string `field:"optional" json:"roleArn" yaml:"roleArn"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#start_channel MedialiveChannel#start_channel}.
+	StartChannel interface{} `field:"optional" json:"startChannel" yaml:"startChannel"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#tags MedialiveChannel#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#tags_all MedialiveChannel#tags_all}.

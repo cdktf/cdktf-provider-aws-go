@@ -80,10 +80,6 @@ func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) validateSetNameParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) validateSetTagsParameters(val *map[string]*string) error {
-	return nil
-}
-
 func validateNewDataAwsGlobalacceleratorAcceleratorParameters(scope constructs.Construct, id *string, config *DataAwsGlobalacceleratorAcceleratorConfig) error {
 	return nil
 }

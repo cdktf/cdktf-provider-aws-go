@@ -14,6 +14,10 @@ type MedialiveChannelEncoderSettings struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#audio_descriptions MedialiveChannel#audio_descriptions}
 	AudioDescriptions interface{} `field:"optional" json:"audioDescriptions" yaml:"audioDescriptions"`
+	// avail_blanking block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#avail_blanking MedialiveChannel#avail_blanking}
+	AvailBlanking *MedialiveChannelEncoderSettingsAvailBlanking `field:"optional" json:"availBlanking" yaml:"availBlanking"`
 	// video_descriptions block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#video_descriptions MedialiveChannel#video_descriptions}

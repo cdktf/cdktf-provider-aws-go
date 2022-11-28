@@ -283,6 +283,14 @@ func (j *jsiiProxy_ElasticacheCluster) validateSetIdParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheCluster) validateSetIpDiscoveryParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -292,6 +300,14 @@ func (j *jsiiProxy_ElasticacheCluster) validateSetLifecycleParameters(val *cdktf
 }
 
 func (j *jsiiProxy_ElasticacheCluster) validateSetMaintenanceWindowParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ElasticacheCluster) validateSetNetworkTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -323,6 +339,14 @@ func (j *jsiiProxy_ElasticacheCluster) validateSetNumCacheNodesParameters(val *f
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheCluster) validateSetOutpostModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheCluster) validateSetParameterGroupNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -340,6 +364,14 @@ func (j *jsiiProxy_ElasticacheCluster) validateSetPortParameters(val *float64) e
 }
 
 func (j *jsiiProxy_ElasticacheCluster) validateSetPreferredAvailabilityZonesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ElasticacheCluster) validateSetPreferredOutpostArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

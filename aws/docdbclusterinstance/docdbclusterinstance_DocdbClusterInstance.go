@@ -46,6 +46,9 @@ type DocdbClusterInstance interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnablePerformanceInsights() interface{}
+	SetEnablePerformanceInsights(val interface{})
+	EnablePerformanceInsightsInput() interface{}
 	Endpoint() *string
 	Engine() *string
 	SetEngine(val *string)
@@ -78,6 +81,9 @@ type DocdbClusterInstance interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	PerformanceInsightsKmsKeyId() *string
+	SetPerformanceInsightsKmsKeyId(val *string)
+	PerformanceInsightsKmsKeyIdInput() *string
 	Port() *float64
 	PreferredBackupWindow() *string
 	PreferredMaintenanceWindow() *string
@@ -143,6 +149,7 @@ type DocdbClusterInstance interface {
 	ResetAutoMinorVersionUpgrade()
 	ResetAvailabilityZone()
 	ResetCaCertIdentifier()
+	ResetEnablePerformanceInsights()
 	ResetEngine()
 	ResetId()
 	ResetIdentifier()
@@ -150,6 +157,7 @@ type DocdbClusterInstance interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPerformanceInsightsKmsKeyId()
 	ResetPreferredMaintenanceWindow()
 	ResetPromotionTier()
 	ResetTags()
@@ -350,6 +358,26 @@ func (j *jsiiProxy_DocdbClusterInstance) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DocdbClusterInstance) EnablePerformanceInsights() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePerformanceInsights",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbClusterInstance) EnablePerformanceInsightsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePerformanceInsightsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DocdbClusterInstance) Endpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -525,6 +553,26 @@ func (j *jsiiProxy_DocdbClusterInstance) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbClusterInstance) PerformanceInsightsKmsKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"performanceInsightsKmsKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbClusterInstance) PerformanceInsightsKmsKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"performanceInsightsKmsKeyIdInput",
 		&returns,
 	)
 	return returns
@@ -852,6 +900,17 @@ func (j *jsiiProxy_DocdbClusterInstance)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_DocdbClusterInstance)SetEnablePerformanceInsights(val interface{}) {
+	if err := j.validateSetEnablePerformanceInsightsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enablePerformanceInsights",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DocdbClusterInstance)SetEngine(val *string) {
 	if err := j.validateSetEngineParameters(val); err != nil {
 		panic(err)
@@ -922,6 +981,17 @@ func (j *jsiiProxy_DocdbClusterInstance)SetLifecycle(val *cdktf.TerraformResourc
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DocdbClusterInstance)SetPerformanceInsightsKmsKeyId(val *string) {
+	if err := j.validateSetPerformanceInsightsKmsKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"performanceInsightsKmsKeyId",
 		val,
 	)
 }
@@ -1298,6 +1368,14 @@ func (d *jsiiProxy_DocdbClusterInstance) ResetCaCertIdentifier() {
 	)
 }
 
+func (d *jsiiProxy_DocdbClusterInstance) ResetEnablePerformanceInsights() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEnablePerformanceInsights",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DocdbClusterInstance) ResetEngine() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1334,6 +1412,14 @@ func (d *jsiiProxy_DocdbClusterInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DocdbClusterInstance) ResetPerformanceInsightsKmsKeyId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPerformanceInsightsKmsKeyId",
 		nil, // no parameters
 	)
 }

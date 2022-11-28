@@ -200,6 +200,14 @@ func (j *jsiiProxy_NatGateway) validateSetLifecycleParameters(val *cdktf.Terrafo
 	return nil
 }
 
+func (j *jsiiProxy_NatGateway) validateSetPrivateIpParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_NatGateway) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {

@@ -67,6 +67,7 @@ type ResourcegroupsGroupConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutParameters(value interface{})
+	ResetParameters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -480,6 +481,14 @@ func (r *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) PutParameter
 		r,
 		"putParameters",
 		[]interface{}{value},
+	)
+}
+
+func (r *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) ResetParameters() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetParameters",
+		nil, // no parameters
 	)
 }
 

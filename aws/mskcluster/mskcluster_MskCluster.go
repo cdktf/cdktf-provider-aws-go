@@ -88,6 +88,9 @@ type MskCluster interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	StorageMode() *string
+	SetStorageMode(val *string)
+	StorageModeInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -146,6 +149,7 @@ type MskCluster interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetStorageMode()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -604,6 +608,26 @@ func (j *jsiiProxy_MskCluster) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MskCluster) StorageMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskCluster) StorageModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MskCluster) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -860,6 +884,17 @@ func (j *jsiiProxy_MskCluster)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskCluster)SetStorageMode(val *string) {
+	if err := j.validateSetStorageModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageMode",
 		val,
 	)
 }
@@ -1289,6 +1324,14 @@ func (m *jsiiProxy_MskCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskCluster) ResetStorageMode() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetStorageMode",
 		nil, // no parameters
 	)
 }

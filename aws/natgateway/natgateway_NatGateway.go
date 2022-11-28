@@ -53,6 +53,8 @@ type NatGateway interface {
 	// The tree node.
 	Node() constructs.Node
 	PrivateIp() *string
+	SetPrivateIp(val *string)
+	PrivateIpInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -110,6 +112,7 @@ type NatGateway interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrivateIp()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -302,6 +305,16 @@ func (j *jsiiProxy_NatGateway) PrivateIp() *string {
 	_jsii_.Get(
 		j,
 		"privateIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NatGateway) PrivateIpInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateIpInput",
 		&returns,
 	)
 	return returns
@@ -542,6 +555,17 @@ func (j *jsiiProxy_NatGateway)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NatGateway)SetPrivateIp(val *string) {
+	if err := j.validateSetPrivateIpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateIp",
 		val,
 	)
 }
@@ -892,6 +916,14 @@ func (n *jsiiProxy_NatGateway) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NatGateway) ResetPrivateIp() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetPrivateIp",
 		nil, // no parameters
 	)
 }

@@ -42,6 +42,8 @@ type ConnectInstanceConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance#instance_alias ConnectInstance#instance_alias}.
 	InstanceAlias *string `field:"optional" json:"instanceAlias" yaml:"instanceAlias"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance#multi_party_conference_enabled ConnectInstance#multi_party_conference_enabled}.
+	MultiPartyConferenceEnabled interface{} `field:"optional" json:"multiPartyConferenceEnabled" yaml:"multiPartyConferenceEnabled"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/connect_instance#timeouts ConnectInstance#timeouts}

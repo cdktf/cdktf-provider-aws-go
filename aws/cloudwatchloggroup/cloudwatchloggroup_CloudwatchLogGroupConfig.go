@@ -32,6 +32,8 @@ type CloudwatchLogGroupConfig struct {
 	NamePrefix *string `field:"optional" json:"namePrefix" yaml:"namePrefix"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_group#retention_in_days CloudwatchLogGroup#retention_in_days}.
 	RetentionInDays *float64 `field:"optional" json:"retentionInDays" yaml:"retentionInDays"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_group#skip_destroy CloudwatchLogGroup#skip_destroy}.
+	SkipDestroy interface{} `field:"optional" json:"skipDestroy" yaml:"skipDestroy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_group#tags CloudwatchLogGroup#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_log_group#tags_all CloudwatchLogGroup#tags_all}.

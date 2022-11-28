@@ -748,6 +748,10 @@ type AwsProviderEndpoints struct {
 	Ivs *string `field:"optional" json:"ivs" yaml:"ivs"`
 	// Use this to override the default service endpoint URL.
 	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#ivschat AwsProvider#ivschat}
+	Ivschat *string `field:"optional" json:"ivschat" yaml:"ivschat"`
+	// Use this to override the default service endpoint URL.
+	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#kafka AwsProvider#kafka}
 	Kafka *string `field:"optional" json:"kafka" yaml:"kafka"`
 	// Use this to override the default service endpoint URL.
@@ -1258,6 +1262,10 @@ type AwsProviderEndpoints struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#savingsplans AwsProvider#savingsplans}
 	Savingsplans *string `field:"optional" json:"savingsplans" yaml:"savingsplans"`
+	// Use this to override the default service endpoint URL.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#scheduler AwsProvider#scheduler}
+	Scheduler *string `field:"optional" json:"scheduler" yaml:"scheduler"`
 	// Use this to override the default service endpoint URL.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#schemas AwsProvider#schemas}

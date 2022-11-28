@@ -94,6 +94,8 @@ type EcsServiceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#timeouts EcsService#timeouts}
 	Timeouts *EcsServiceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#triggers EcsService#triggers}.
+	Triggers *map[string]*string `field:"optional" json:"triggers" yaml:"triggers"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#wait_for_steady_state EcsService#wait_for_steady_state}.
 	WaitForSteadyState interface{} `field:"optional" json:"waitForSteadyState" yaml:"waitForSteadyState"`
 }

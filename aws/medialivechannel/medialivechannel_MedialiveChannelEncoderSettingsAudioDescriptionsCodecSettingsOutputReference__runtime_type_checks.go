@@ -112,6 +112,17 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	return nil
 }
 
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference) validatePutEac3AtmosSettingsParameters(value *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference) validatePutEac3SettingsParameters(value *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -124,6 +135,17 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 }
 
 func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference) validatePutMp2SettingsParameters(value *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference) validatePutPassThroughSettingsParameters(value *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

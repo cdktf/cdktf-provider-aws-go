@@ -44,15 +44,7 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorO
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validatePutNetworkInputSettingsParameters(value *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettings) error {
-	return nil
-}
-
 func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validatePutSelectorSettingsParameters(value *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings) error {
-	return nil
-}
-
-func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validatePutVideoSelectorParameters(value *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorVideoSelector) error {
 	return nil
 }
 
@@ -68,22 +60,6 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorO
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validateSetDeblockFilterParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validateSetDenoiseFilterParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validateSetFilterStrengthParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validateSetInputFilterParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
@@ -93,18 +69,6 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorO
 }
 
 func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validateSetNameParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validateSetScte35PidParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validateSetSmpte2038DataPreferenceParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validateSetSourceEndBehaviorParameters(val *string) error {
 	return nil
 }
 

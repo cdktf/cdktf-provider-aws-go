@@ -68,6 +68,9 @@ type ElasticacheCluster interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpDiscovery() *string
+	SetIpDiscovery(val *string)
+	IpDiscoveryInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -77,6 +80,9 @@ type ElasticacheCluster interface {
 	MaintenanceWindow() *string
 	SetMaintenanceWindow(val *string)
 	MaintenanceWindowInput() *string
+	NetworkType() *string
+	SetNetworkType(val *string)
+	NetworkTypeInput() *string
 	// The tree node.
 	Node() constructs.Node
 	NodeType() *string
@@ -88,6 +94,9 @@ type ElasticacheCluster interface {
 	NumCacheNodes() *float64
 	SetNumCacheNodes(val *float64)
 	NumCacheNodesInput() *float64
+	OutpostMode() *string
+	SetOutpostMode(val *string)
+	OutpostModeInput() *string
 	ParameterGroupName() *string
 	SetParameterGroupName(val *string)
 	ParameterGroupNameInput() *string
@@ -97,6 +106,9 @@ type ElasticacheCluster interface {
 	PreferredAvailabilityZones() *[]*string
 	SetPreferredAvailabilityZones(val *[]*string)
 	PreferredAvailabilityZonesInput() *[]*string
+	PreferredOutpostArn() *string
+	SetPreferredOutpostArn(val *string)
+	PreferredOutpostArnInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -177,17 +189,21 @@ type ElasticacheCluster interface {
 	ResetEngineVersion()
 	ResetFinalSnapshotIdentifier()
 	ResetId()
+	ResetIpDiscovery()
 	ResetLogDeliveryConfiguration()
 	ResetMaintenanceWindow()
+	ResetNetworkType()
 	ResetNodeType()
 	ResetNotificationTopicArn()
 	ResetNumCacheNodes()
+	ResetOutpostMode()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameterGroupName()
 	ResetPort()
 	ResetPreferredAvailabilityZones()
+	ResetPreferredOutpostArn()
 	ResetReplicationGroupId()
 	ResetSecurityGroupIds()
 	ResetSecurityGroupNames()
@@ -523,6 +539,26 @@ func (j *jsiiProxy_ElasticacheCluster) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ElasticacheCluster) IpDiscovery() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipDiscovery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheCluster) IpDiscoveryInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipDiscoveryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElasticacheCluster) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -568,6 +604,26 @@ func (j *jsiiProxy_ElasticacheCluster) MaintenanceWindowInput() *string {
 	_jsii_.Get(
 		j,
 		"maintenanceWindowInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheCluster) NetworkType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheCluster) NetworkTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkTypeInput",
 		&returns,
 	)
 	return returns
@@ -643,6 +699,26 @@ func (j *jsiiProxy_ElasticacheCluster) NumCacheNodesInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_ElasticacheCluster) OutpostMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outpostMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheCluster) OutpostModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outpostModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElasticacheCluster) ParameterGroupName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -698,6 +774,26 @@ func (j *jsiiProxy_ElasticacheCluster) PreferredAvailabilityZonesInput() *[]*str
 	_jsii_.Get(
 		j,
 		"preferredAvailabilityZonesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheCluster) PreferredOutpostArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preferredOutpostArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheCluster) PreferredOutpostArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preferredOutpostArnInput",
 		&returns,
 	)
 	return returns
@@ -1127,6 +1223,17 @@ func (j *jsiiProxy_ElasticacheCluster)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ElasticacheCluster)SetIpDiscovery(val *string) {
+	if err := j.validateSetIpDiscoveryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipDiscovery",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ElasticacheCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -1145,6 +1252,17 @@ func (j *jsiiProxy_ElasticacheCluster)SetMaintenanceWindow(val *string) {
 	_jsii_.Set(
 		j,
 		"maintenanceWindow",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElasticacheCluster)SetNetworkType(val *string) {
+	if err := j.validateSetNetworkTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkType",
 		val,
 	)
 }
@@ -1182,6 +1300,17 @@ func (j *jsiiProxy_ElasticacheCluster)SetNumCacheNodes(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_ElasticacheCluster)SetOutpostMode(val *string) {
+	if err := j.validateSetOutpostModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"outpostMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ElasticacheCluster)SetParameterGroupName(val *string) {
 	if err := j.validateSetParameterGroupNameParameters(val); err != nil {
 		panic(err)
@@ -1211,6 +1340,17 @@ func (j *jsiiProxy_ElasticacheCluster)SetPreferredAvailabilityZones(val *[]*stri
 	_jsii_.Set(
 		j,
 		"preferredAvailabilityZones",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElasticacheCluster)SetPreferredOutpostArn(val *string) {
+	if err := j.validateSetPreferredOutpostArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preferredOutpostArn",
 		val,
 	)
 }
@@ -1685,6 +1825,14 @@ func (e *jsiiProxy_ElasticacheCluster) ResetId() {
 	)
 }
 
+func (e *jsiiProxy_ElasticacheCluster) ResetIpDiscovery() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetIpDiscovery",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_ElasticacheCluster) ResetLogDeliveryConfiguration() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1697,6 +1845,14 @@ func (e *jsiiProxy_ElasticacheCluster) ResetMaintenanceWindow() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetMaintenanceWindow",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElasticacheCluster) ResetNetworkType() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetNetworkType",
 		nil, // no parameters
 	)
 }
@@ -1721,6 +1877,14 @@ func (e *jsiiProxy_ElasticacheCluster) ResetNumCacheNodes() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetNumCacheNodes",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElasticacheCluster) ResetOutpostMode() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetOutpostMode",
 		nil, // no parameters
 	)
 }
@@ -1753,6 +1917,14 @@ func (e *jsiiProxy_ElasticacheCluster) ResetPreferredAvailabilityZones() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetPreferredAvailabilityZones",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElasticacheCluster) ResetPreferredOutpostArn() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetPreferredOutpostArn",
 		nil, // no parameters
 	)
 }

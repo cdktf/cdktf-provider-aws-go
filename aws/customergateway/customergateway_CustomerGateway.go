@@ -111,6 +111,7 @@ type CustomerGateway interface {
 	ResetCertificateArn()
 	ResetDeviceName()
 	ResetId()
+	ResetIpAddress()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -930,6 +931,14 @@ func (c *jsiiProxy_CustomerGateway) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CustomerGateway) ResetIpAddress() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIpAddress",
 		nil, // no parameters
 	)
 }

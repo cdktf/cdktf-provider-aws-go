@@ -112,6 +112,10 @@ func (j *jsiiProxy_ConnectInstance) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
+func (j *jsiiProxy_ConnectInstance) validateSetMultiPartyConferenceEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectInstance) validateSetOutboundCallsEnabledParameters(val interface{}) error {
 	return nil
 }

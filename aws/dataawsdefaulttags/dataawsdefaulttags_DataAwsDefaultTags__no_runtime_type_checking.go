@@ -72,10 +72,6 @@ func (j *jsiiProxy_DataAwsDefaultTags) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDefaultTags) validateSetTagsParameters(val *map[string]*string) error {
-	return nil
-}
-
 func validateNewDataAwsDefaultTagsParameters(scope constructs.Construct, id *string, config *DataAwsDefaultTagsConfig) error {
 	return nil
 }

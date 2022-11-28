@@ -39,6 +39,7 @@ type DataAwsRdsCluster interface {
 	EnabledCloudwatchLogsExports() *[]*string
 	Endpoint() *string
 	Engine() *string
+	EngineMode() *string
 	EngineVersion() *string
 	FinalSnapshotIdentifier() *string
 	// Experimental.
@@ -306,6 +307,16 @@ func (j *jsiiProxy_DataAwsRdsCluster) Engine() *string {
 	_jsii_.Get(
 		j,
 		"engine",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsCluster) EngineMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engineMode",
 		&returns,
 	)
 	return returns

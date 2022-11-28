@@ -68,6 +68,10 @@ func (j *jsiiProxy_CognitoUserPoolSmsConfigurationOutputReference) validateSetSn
 	return nil
 }
 
+func (j *jsiiProxy_CognitoUserPoolSmsConfigurationOutputReference) validateSetSnsRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoUserPoolSmsConfigurationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

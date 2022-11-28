@@ -81,6 +81,9 @@ type MedialiveChannel interface {
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
+	StartChannel() interface{}
+	SetStartChannel(val interface{})
+	StartChannelInput() interface{}
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -138,6 +141,7 @@ type MedialiveChannel interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRoleArn()
+	ResetStartChannel()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -527,6 +531,26 @@ func (j *jsiiProxy_MedialiveChannel) RoleArnInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MedialiveChannel) StartChannel() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"startChannel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannel) StartChannelInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"startChannelInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MedialiveChannel) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -783,6 +807,17 @@ func (j *jsiiProxy_MedialiveChannel)SetRoleArn(val *string) {
 	_jsii_.Set(
 		j,
 		"roleArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MedialiveChannel)SetStartChannel(val interface{}) {
+	if err := j.validateSetStartChannelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"startChannel",
 		val,
 	)
 }
@@ -1207,6 +1242,14 @@ func (m *jsiiProxy_MedialiveChannel) ResetRoleArn() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetRoleArn",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannel) ResetStartChannel() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetStartChannel",
 		nil, // no parameters
 	)
 }

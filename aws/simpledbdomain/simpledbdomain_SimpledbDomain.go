@@ -37,8 +37,6 @@ type SimpledbDomain interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -89,7 +87,6 @@ type SimpledbDomain interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -193,16 +190,6 @@ func (j *jsiiProxy_SimpledbDomain) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SimpledbDomain) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -369,17 +356,6 @@ func (j *jsiiProxy_SimpledbDomain)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SimpledbDomain)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -688,14 +664,6 @@ func (s *jsiiProxy_SimpledbDomain) OverrideLogicalId(newLogicalId *string) {
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (s *jsiiProxy_SimpledbDomain) ResetId() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

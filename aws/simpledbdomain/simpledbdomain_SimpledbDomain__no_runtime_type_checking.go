@@ -68,10 +68,6 @@ func (j *jsiiProxy_SimpledbDomain) validateSetConnectionParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_SimpledbDomain) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_SimpledbDomain) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

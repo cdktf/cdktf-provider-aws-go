@@ -48,6 +48,10 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) validatePutAu
 	return nil
 }
 
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) validatePutAvailBlankingParameters(value *MedialiveChannelEncoderSettingsAvailBlanking) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) validatePutOutputGroupsParameters(value interface{}) error {
 	return nil
 }

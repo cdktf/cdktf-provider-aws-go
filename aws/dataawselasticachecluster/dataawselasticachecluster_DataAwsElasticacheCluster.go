@@ -45,12 +45,14 @@ type DataAwsElasticacheCluster interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpDiscovery() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LogDeliveryConfiguration() DataAwsElasticacheClusterLogDeliveryConfigurationList
 	MaintenanceWindow() *string
+	NetworkType() *string
 	// The tree node.
 	Node() constructs.Node
 	NodeType() *string
@@ -58,6 +60,7 @@ type DataAwsElasticacheCluster interface {
 	NumCacheNodes() *float64
 	ParameterGroupName() *string
 	Port() *float64
+	PreferredOutpostArn() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -304,6 +307,16 @@ func (j *jsiiProxy_DataAwsElasticacheCluster) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsElasticacheCluster) IpDiscovery() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipDiscovery",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsElasticacheCluster) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -329,6 +342,16 @@ func (j *jsiiProxy_DataAwsElasticacheCluster) MaintenanceWindow() *string {
 	_jsii_.Get(
 		j,
 		"maintenanceWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsElasticacheCluster) NetworkType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkType",
 		&returns,
 	)
 	return returns
@@ -389,6 +412,16 @@ func (j *jsiiProxy_DataAwsElasticacheCluster) Port() *float64 {
 	_jsii_.Get(
 		j,
 		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsElasticacheCluster) PreferredOutpostArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preferredOutpostArn",
 		&returns,
 	)
 	return returns

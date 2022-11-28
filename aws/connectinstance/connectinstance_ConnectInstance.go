@@ -69,6 +69,9 @@ type ConnectInstance interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MultiPartyConferenceEnabled() interface{}
+	SetMultiPartyConferenceEnabled(val interface{})
+	MultiPartyConferenceEnabledInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	OutboundCallsEnabled() interface{}
@@ -127,6 +130,7 @@ type ConnectInstance interface {
 	ResetEarlyMediaEnabled()
 	ResetId()
 	ResetInstanceAlias()
+	ResetMultiPartyConferenceEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -436,6 +440,26 @@ func (j *jsiiProxy_ConnectInstance) Lifecycle() *cdktf.TerraformResourceLifecycl
 	return returns
 }
 
+func (j *jsiiProxy_ConnectInstance) MultiPartyConferenceEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"multiPartyConferenceEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConnectInstance) MultiPartyConferenceEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"multiPartyConferenceEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConnectInstance) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -737,6 +761,17 @@ func (j *jsiiProxy_ConnectInstance)SetLifecycle(val *cdktf.TerraformResourceLife
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ConnectInstance)SetMultiPartyConferenceEnabled(val interface{}) {
+	if err := j.validateSetMultiPartyConferenceEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"multiPartyConferenceEnabled",
 		val,
 	)
 }
@@ -1100,6 +1135,14 @@ func (c *jsiiProxy_ConnectInstance) ResetInstanceAlias() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetInstanceAlias",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConnectInstance) ResetMultiPartyConferenceEnabled() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMultiPartyConferenceEnabled",
 		nil, // no parameters
 	)
 }

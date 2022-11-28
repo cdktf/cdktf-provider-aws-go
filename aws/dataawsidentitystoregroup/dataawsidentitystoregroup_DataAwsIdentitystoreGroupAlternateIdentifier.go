@@ -1,0 +1,14 @@
+package dataawsidentitystoregroup
+
+
+type DataAwsIdentitystoreGroupAlternateIdentifier struct {
+	// external_id block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/identitystore_group#external_id DataAwsIdentitystoreGroup#external_id}
+	ExternalId *DataAwsIdentitystoreGroupAlternateIdentifierExternalId `field:"optional" json:"externalId" yaml:"externalId"`
+	// unique_attribute block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/identitystore_group#unique_attribute DataAwsIdentitystoreGroup#unique_attribute}
+	UniqueAttribute *DataAwsIdentitystoreGroupAlternateIdentifierUniqueAttribute `field:"optional" json:"uniqueAttribute" yaml:"uniqueAttribute"`
+}
+

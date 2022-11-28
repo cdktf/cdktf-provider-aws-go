@@ -56,6 +56,10 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	return nil
 }
 
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) validatePutKeyProviderSettingsParameters(value *MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -120,6 +124,10 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	return nil
 }
 
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) validateSetIframeOnlyPlaylistsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) validateSetIncompleteSegmentBehaviorParameters(val *string) error {
 	return nil
 }
@@ -144,7 +152,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) validateSetKeepSegmentParameters(val *float64) error {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) validateSetKeepSegmentsParameters(val *float64) error {
 	return nil
 }
 
@@ -169,6 +177,10 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 }
 
 func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) validateSetModeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) validateSetOutputSelectionParameters(val *string) error {
 	return nil
 }
 
@@ -208,7 +220,11 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) validateSetTimeMetadataId3FrameParameters(val *string) error {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) validateSetTimedMetadataId3FrameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsOutputReference) validateSetTimedMetadataId3PeriodParameters(val *float64) error {
 	return nil
 }
 

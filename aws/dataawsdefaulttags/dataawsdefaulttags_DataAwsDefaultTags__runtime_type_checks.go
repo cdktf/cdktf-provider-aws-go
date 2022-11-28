@@ -151,14 +151,6 @@ func (j *jsiiProxy_DataAwsDefaultTags) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDefaultTags) validateSetTagsParameters(val *map[string]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewDataAwsDefaultTagsParameters(scope constructs.Construct, id *string, config *DataAwsDefaultTagsConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -35,6 +35,9 @@ type CognitoUserPoolSmsConfigurationOutputReference interface {
 	SnsCallerArn() *string
 	SetSnsCallerArn(val *string)
 	SnsCallerArnInput() *string
+	SnsRegion() *string
+	SetSnsRegion(val *string)
+	SnsRegionInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type CognitoUserPoolSmsConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetSnsRegion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -172,6 +176,26 @@ func (j *jsiiProxy_CognitoUserPoolSmsConfigurationOutputReference) SnsCallerArnI
 	return returns
 }
 
+func (j *jsiiProxy_CognitoUserPoolSmsConfigurationOutputReference) SnsRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snsRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPoolSmsConfigurationOutputReference) SnsRegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snsRegionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CognitoUserPoolSmsConfigurationOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -271,6 +295,17 @@ func (j *jsiiProxy_CognitoUserPoolSmsConfigurationOutputReference)SetSnsCallerAr
 	_jsii_.Set(
 		j,
 		"snsCallerArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPoolSmsConfigurationOutputReference)SetSnsRegion(val *string) {
+	if err := j.validateSetSnsRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"snsRegion",
 		val,
 	)
 }
@@ -481,6 +516,14 @@ func (c *jsiiProxy_CognitoUserPoolSmsConfigurationOutputReference) Interpolation
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CognitoUserPoolSmsConfigurationOutputReference) ResetSnsRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSnsRegion",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CognitoUserPoolSmsConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

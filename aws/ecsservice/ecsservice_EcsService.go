@@ -130,6 +130,9 @@ type EcsService interface {
 	TerraformResourceType() *string
 	Timeouts() EcsServiceTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	Triggers() *map[string]*string
+	SetTriggers(val *map[string]*string)
+	TriggersInput() *map[string]*string
 	WaitForSteadyState() interface{}
 	SetWaitForSteadyState(val interface{})
 	WaitForSteadyStateInput() interface{}
@@ -196,6 +199,7 @@ type EcsService interface {
 	ResetTagsAll()
 	ResetTaskDefinition()
 	ResetTimeouts()
+	ResetTriggers()
 	ResetWaitForSteadyState()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -912,6 +916,26 @@ func (j *jsiiProxy_EcsService) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_EcsService) Triggers() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"triggers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsService) TriggersInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"triggersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EcsService) WaitForSteadyState() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1221,6 +1245,17 @@ func (j *jsiiProxy_EcsService)SetTaskDefinition(val *string) {
 	_jsii_.Set(
 		j,
 		"taskDefinition",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsService)SetTriggers(val *map[string]*string) {
+	if err := j.validateSetTriggersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"triggers",
 		val,
 	)
 }
@@ -1813,6 +1848,14 @@ func (e *jsiiProxy_EcsService) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsService) ResetTriggers() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTriggers",
 		nil, // no parameters
 	)
 }

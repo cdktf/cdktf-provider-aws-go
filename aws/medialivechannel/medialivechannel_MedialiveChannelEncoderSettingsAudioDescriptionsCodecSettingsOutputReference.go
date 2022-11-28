@@ -29,6 +29,8 @@ type MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReferenc
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Eac3AtmosSettings() MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettingsOutputReference
+	Eac3AtmosSettingsInput() *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings
 	Eac3Settings() MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3SettingsOutputReference
 	Eac3SettingsInput() *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings
 	// Experimental.
@@ -37,6 +39,8 @@ type MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReferenc
 	SetInternalValue(val *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings)
 	Mp2Settings() MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2SettingsOutputReference
 	Mp2SettingsInput() *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings
+	PassThroughSettings() MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettingsOutputReference
+	PassThroughSettingsInput() *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,13 +77,17 @@ type MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReferenc
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAacSettings(value *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings)
 	PutAc3Settings(value *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAc3Settings)
+	PutEac3AtmosSettings(value *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings)
 	PutEac3Settings(value *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings)
 	PutMp2Settings(value *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings)
+	PutPassThroughSettings(value *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings)
 	PutWavSettings(value *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsWavSettings)
 	ResetAacSettings()
 	ResetAc3Settings()
+	ResetEac3AtmosSettings()
 	ResetEac3Settings()
 	ResetMp2Settings()
+	ResetPassThroughSettings()
 	ResetWavSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -166,6 +174,26 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	return returns
 }
 
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference) Eac3AtmosSettings() MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettingsOutputReference {
+	var returns MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"eac3AtmosSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference) Eac3AtmosSettingsInput() *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings {
+	var returns *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings
+	_jsii_.Get(
+		j,
+		"eac3AtmosSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference) Eac3Settings() MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3SettingsOutputReference {
 	var returns MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3SettingsOutputReference
 	_jsii_.Get(
@@ -221,6 +249,26 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	_jsii_.Get(
 		j,
 		"mp2SettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference) PassThroughSettings() MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettingsOutputReference {
+	var returns MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"passThroughSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference) PassThroughSettingsInput() *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings {
+	var returns *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings
+	_jsii_.Get(
+		j,
+		"passThroughSettingsInput",
 		&returns,
 	)
 	return returns
@@ -557,6 +605,17 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	)
 }
 
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference) PutEac3AtmosSettings(value *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings) {
+	if err := m.validatePutEac3AtmosSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putEac3AtmosSettings",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference) PutEac3Settings(value *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings) {
 	if err := m.validatePutEac3SettingsParameters(value); err != nil {
 		panic(err)
@@ -575,6 +634,17 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	_jsii_.InvokeVoid(
 		m,
 		"putMp2Settings",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference) PutPassThroughSettings(value *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings) {
+	if err := m.validatePutPassThroughSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putPassThroughSettings",
 		[]interface{}{value},
 	)
 }
@@ -606,6 +676,14 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	)
 }
 
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference) ResetEac3AtmosSettings() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetEac3AtmosSettings",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference) ResetEac3Settings() {
 	_jsii_.InvokeVoid(
 		m,
@@ -618,6 +696,14 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	_jsii_.InvokeVoid(
 		m,
 		"resetMp2Settings",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference) ResetPassThroughSettings() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPassThroughSettings",
 		nil, // no parameters
 	)
 }

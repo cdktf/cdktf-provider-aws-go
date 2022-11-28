@@ -64,7 +64,7 @@ func (j *jsiiProxy_DataAwsIdentitystoreGroupFilterOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreGroupFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsIdentitystoreGroupFilterOutputReference) validateSetInternalValueParameters(val *DataAwsIdentitystoreGroupFilter) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DataAwsIdentitystoreGroupFilterOutputReference) validateSetTe
 	return nil
 }
 
-func validateNewDataAwsIdentitystoreGroupFilterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsIdentitystoreGroupFilterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

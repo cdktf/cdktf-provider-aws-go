@@ -52,6 +52,10 @@ func (n *jsiiProxy_NeptuneCluster) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (n *jsiiProxy_NeptuneCluster) validatePutServerlessV2ScalingConfigurationParameters(value *NeptuneClusterServerlessV2ScalingConfiguration) error {
+	return nil
+}
+
 func (n *jsiiProxy_NeptuneCluster) validatePutTimeoutsParameters(value *NeptuneClusterTimeouts) error {
 	return nil
 }

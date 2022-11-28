@@ -90,29 +90,7 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorO
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validatePutNetworkInputSettingsParameters(value *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorNetworkInputSettings) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validatePutSelectorSettingsParameters(value *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettings) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validatePutVideoSelectorParameters(value *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorVideoSelector) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -196,38 +174,6 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorO
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validateSetDeblockFilterParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validateSetDenoiseFilterParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validateSetFilterStrengthParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validateSetInputFilterParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case *MedialiveChannelInputAttachmentsInputSettingsCaptionSelector:
@@ -261,30 +207,6 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorO
 }
 
 func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validateSetNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validateSetScte35PidParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validateSetSmpte2038DataPreferenceParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorOutputReference) validateSetSourceEndBehaviorParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -53,6 +53,7 @@ type DataAwsConnectInstance interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MultiPartyConferenceEnabled() cdktf.IResolvable
 	// The tree node.
 	Node() constructs.Node
 	OutboundCallsEnabled() cdktf.IResolvable
@@ -331,6 +332,16 @@ func (j *jsiiProxy_DataAwsConnectInstance) Lifecycle() *cdktf.TerraformResourceL
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsConnectInstance) MultiPartyConferenceEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"multiPartyConferenceEnabled",
 		&returns,
 	)
 	return returns

@@ -84,6 +84,10 @@ func (j *jsiiProxy_NatGateway) validateSetLifecycleParameters(val *cdktf.Terrafo
 	return nil
 }
 
+func (j *jsiiProxy_NatGateway) validateSetPrivateIpParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NatGateway) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

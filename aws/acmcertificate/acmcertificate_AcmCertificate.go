@@ -56,6 +56,9 @@ type AcmCertificate interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KeyAlgorithm() *string
+	SetKeyAlgorithm(val *string)
+	KeyAlgorithmInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -138,6 +141,7 @@ type AcmCertificate interface {
 	ResetDomainName()
 	ResetEarlyRenewalDuration()
 	ResetId()
+	ResetKeyAlgorithm()
 	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -378,6 +382,26 @@ func (j *jsiiProxy_AcmCertificate) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AcmCertificate) KeyAlgorithm() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyAlgorithm",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AcmCertificate) KeyAlgorithmInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyAlgorithmInput",
 		&returns,
 	)
 	return returns
@@ -814,6 +838,17 @@ func (j *jsiiProxy_AcmCertificate)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AcmCertificate)SetKeyAlgorithm(val *string) {
+	if err := j.validateSetKeyAlgorithmParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyAlgorithm",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AcmCertificate)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -1231,6 +1266,14 @@ func (a *jsiiProxy_AcmCertificate) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AcmCertificate) ResetKeyAlgorithm() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetKeyAlgorithm",
 		nil, // no parameters
 	)
 }

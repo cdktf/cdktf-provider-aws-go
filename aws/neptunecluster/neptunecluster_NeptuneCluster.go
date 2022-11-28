@@ -124,6 +124,8 @@ type NeptuneCluster interface {
 	ReplicationSourceIdentifier() *string
 	SetReplicationSourceIdentifier(val *string)
 	ReplicationSourceIdentifierInput() *string
+	ServerlessV2ScalingConfiguration() NeptuneClusterServerlessV2ScalingConfigurationOutputReference
+	ServerlessV2ScalingConfigurationInput() *NeptuneClusterServerlessV2ScalingConfiguration
 	SkipFinalSnapshot() interface{}
 	SetSkipFinalSnapshot(val interface{})
 	SkipFinalSnapshotInput() interface{}
@@ -175,6 +177,7 @@ type NeptuneCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutServerlessV2ScalingConfiguration(value *NeptuneClusterServerlessV2ScalingConfiguration)
 	PutTimeouts(value *NeptuneClusterTimeouts)
 	ResetAllowMajorVersionUpgrade()
 	ResetApplyImmediately()
@@ -201,6 +204,7 @@ type NeptuneCluster interface {
 	ResetPreferredBackupWindow()
 	ResetPreferredMaintenanceWindow()
 	ResetReplicationSourceIdentifier()
+	ResetServerlessV2ScalingConfiguration()
 	ResetSkipFinalSnapshot()
 	ResetSnapshotIdentifier()
 	ResetStorageEncrypted()
@@ -848,6 +852,26 @@ func (j *jsiiProxy_NeptuneCluster) ReplicationSourceIdentifierInput() *string {
 	_jsii_.Get(
 		j,
 		"replicationSourceIdentifierInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NeptuneCluster) ServerlessV2ScalingConfiguration() NeptuneClusterServerlessV2ScalingConfigurationOutputReference {
+	var returns NeptuneClusterServerlessV2ScalingConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"serverlessV2ScalingConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NeptuneCluster) ServerlessV2ScalingConfigurationInput() *NeptuneClusterServerlessV2ScalingConfiguration {
+	var returns *NeptuneClusterServerlessV2ScalingConfiguration
+	_jsii_.Get(
+		j,
+		"serverlessV2ScalingConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -1692,6 +1716,17 @@ func (n *jsiiProxy_NeptuneCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (n *jsiiProxy_NeptuneCluster) PutServerlessV2ScalingConfiguration(value *NeptuneClusterServerlessV2ScalingConfiguration) {
+	if err := n.validatePutServerlessV2ScalingConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putServerlessV2ScalingConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NeptuneCluster) PutTimeouts(value *NeptuneClusterTimeouts) {
 	if err := n.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1883,6 +1918,14 @@ func (n *jsiiProxy_NeptuneCluster) ResetReplicationSourceIdentifier() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetReplicationSourceIdentifier",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NeptuneCluster) ResetServerlessV2ScalingConfiguration() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetServerlessV2ScalingConfiguration",
 		nil, // no parameters
 	)
 }

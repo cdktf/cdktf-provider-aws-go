@@ -76,6 +76,7 @@ type SecurityGroupRule interface {
 	SecurityGroupId() *string
 	SetSecurityGroupId(val *string)
 	SecurityGroupIdInput() *string
+	SecurityGroupRuleId() *string
 	SelfAttribute() interface{}
 	SetSelfAttribute(val interface{})
 	SelfAttributeInput() interface{}
@@ -433,6 +434,16 @@ func (j *jsiiProxy_SecurityGroupRule) SecurityGroupIdInput() *string {
 	_jsii_.Get(
 		j,
 		"securityGroupIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityGroupRule) SecurityGroupRuleId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityGroupRuleId",
 		&returns,
 	)
 	return returns

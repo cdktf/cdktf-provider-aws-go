@@ -47,9 +47,7 @@ type DataAwsDefaultTags interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	Tags() *map[string]*string
-	SetTags(val *map[string]*string)
-	TagsInput() *map[string]*string
+	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -85,7 +83,6 @@ type DataAwsDefaultTags interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -231,21 +228,11 @@ func (j *jsiiProxy_DataAwsDefaultTags) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDefaultTags) Tags() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_DataAwsDefaultTags) Tags() cdktf.StringMap {
+	var returns cdktf.StringMap
 	_jsii_.Get(
 		j,
 		"tags",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsDefaultTags) TagsInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"tagsInput",
 		&returns,
 	)
 	return returns
@@ -361,17 +348,6 @@ func (j *jsiiProxy_DataAwsDefaultTags)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAwsDefaultTags)SetTags(val *map[string]*string) {
-	if err := j.validateSetTagsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tags",
 		val,
 	)
 }
@@ -654,14 +630,6 @@ func (d *jsiiProxy_DataAwsDefaultTags) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAwsDefaultTags) ResetTags() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetTags",
 		nil, // no parameters
 	)
 }

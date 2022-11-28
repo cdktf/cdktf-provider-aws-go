@@ -108,11 +108,19 @@ func (j *jsiiProxy_ElasticacheCluster) validateSetIdParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheCluster) validateSetIpDiscoveryParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_ElasticacheCluster) validateSetMaintenanceWindowParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ElasticacheCluster) validateSetNetworkTypeParameters(val *string) error {
 	return nil
 }
 
@@ -128,6 +136,10 @@ func (j *jsiiProxy_ElasticacheCluster) validateSetNumCacheNodesParameters(val *f
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheCluster) validateSetOutpostModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheCluster) validateSetParameterGroupNameParameters(val *string) error {
 	return nil
 }
@@ -137,6 +149,10 @@ func (j *jsiiProxy_ElasticacheCluster) validateSetPortParameters(val *float64) e
 }
 
 func (j *jsiiProxy_ElasticacheCluster) validateSetPreferredAvailabilityZonesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ElasticacheCluster) validateSetPreferredOutpostArnParameters(val *string) error {
 	return nil
 }
 

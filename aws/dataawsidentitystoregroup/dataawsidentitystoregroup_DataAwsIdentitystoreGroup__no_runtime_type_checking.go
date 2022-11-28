@@ -52,7 +52,11 @@ func (d *jsiiProxy_DataAwsIdentitystoreGroup) validateOverrideLogicalIdParameter
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreGroup) validatePutFilterParameters(value interface{}) error {
+func (d *jsiiProxy_DataAwsIdentitystoreGroup) validatePutAlternateIdentifierParameters(value *DataAwsIdentitystoreGroupAlternateIdentifier) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsIdentitystoreGroup) validatePutFilterParameters(value *DataAwsIdentitystoreGroupFilter) error {
 	return nil
 }
 

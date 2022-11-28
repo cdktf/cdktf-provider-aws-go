@@ -100,6 +100,10 @@ func (j *jsiiProxy_AcmCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_AcmCertificate) validateSetKeyAlgorithmParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AcmCertificate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

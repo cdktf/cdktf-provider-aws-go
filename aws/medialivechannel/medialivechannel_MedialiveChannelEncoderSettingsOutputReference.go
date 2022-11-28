@@ -12,6 +12,8 @@ type MedialiveChannelEncoderSettingsOutputReference interface {
 	cdktf.ComplexObject
 	AudioDescriptions() MedialiveChannelEncoderSettingsAudioDescriptionsList
 	AudioDescriptionsInput() interface{}
+	AvailBlanking() MedialiveChannelEncoderSettingsAvailBlankingOutputReference
+	AvailBlankingInput() *MedialiveChannelEncoderSettingsAvailBlanking
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,10 +72,12 @@ type MedialiveChannelEncoderSettingsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAudioDescriptions(value interface{})
+	PutAvailBlanking(value *MedialiveChannelEncoderSettingsAvailBlanking)
 	PutOutputGroups(value interface{})
 	PutTimecodeConfig(value *MedialiveChannelEncoderSettingsTimecodeConfig)
 	PutVideoDescriptions(value interface{})
 	ResetAudioDescriptions()
+	ResetAvailBlanking()
 	ResetVideoDescriptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -105,6 +109,26 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) AudioDescript
 	_jsii_.Get(
 		j,
 		"audioDescriptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) AvailBlanking() MedialiveChannelEncoderSettingsAvailBlankingOutputReference {
+	var returns MedialiveChannelEncoderSettingsAvailBlankingOutputReference
+	_jsii_.Get(
+		j,
+		"availBlanking",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) AvailBlankingInput() *MedialiveChannelEncoderSettingsAvailBlanking {
+	var returns *MedialiveChannelEncoderSettingsAvailBlanking
+	_jsii_.Get(
+		j,
+		"availBlankingInput",
 		&returns,
 	)
 	return returns
@@ -520,6 +544,17 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) PutAudioDescr
 	)
 }
 
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) PutAvailBlanking(value *MedialiveChannelEncoderSettingsAvailBlanking) {
+	if err := m.validatePutAvailBlankingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putAvailBlanking",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) PutOutputGroups(value interface{}) {
 	if err := m.validatePutOutputGroupsParameters(value); err != nil {
 		panic(err)
@@ -557,6 +592,14 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) ResetAudioDes
 	_jsii_.InvokeVoid(
 		m,
 		"resetAudioDescriptions",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) ResetAvailBlanking() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetAvailBlanking",
 		nil, // no parameters
 	)
 }

@@ -68,6 +68,9 @@ type CloudwatchLogGroup interface {
 	RetentionInDays() *float64
 	SetRetentionInDays(val *float64)
 	RetentionInDaysInput() *float64
+	SkipDestroy() interface{}
+	SetSkipDestroy(val interface{})
+	SkipDestroyInput() interface{}
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -113,6 +116,7 @@ type CloudwatchLogGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRetentionInDays()
+	ResetSkipDestroy()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -370,6 +374,26 @@ func (j *jsiiProxy_CloudwatchLogGroup) RetentionInDaysInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_CloudwatchLogGroup) SkipDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchLogGroup) SkipDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudwatchLogGroup) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -586,6 +610,17 @@ func (j *jsiiProxy_CloudwatchLogGroup)SetRetentionInDays(val *float64) {
 	_jsii_.Set(
 		j,
 		"retentionInDays",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchLogGroup)SetSkipDestroy(val interface{}) {
+	if err := j.validateSetSkipDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipDestroy",
 		val,
 	)
 }
@@ -922,6 +957,14 @@ func (c *jsiiProxy_CloudwatchLogGroup) ResetRetentionInDays() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRetentionInDays",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchLogGroup) ResetSkipDestroy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSkipDestroy",
 		nil, // no parameters
 	)
 }

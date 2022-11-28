@@ -30,6 +30,8 @@ type MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings s
 	FramerateControl *string `field:"optional" json:"framerateControl" yaml:"framerateControl"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#framerate_denominator MedialiveChannel#framerate_denominator}.
 	FramerateDenominator *float64 `field:"optional" json:"framerateDenominator" yaml:"framerateDenominator"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#framerate_numerator MedialiveChannel#framerate_numerator}.
+	FramerateNumerator *float64 `field:"optional" json:"framerateNumerator" yaml:"framerateNumerator"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#gop_b_reference MedialiveChannel#gop_b_reference}.
 	GopBReference *string `field:"optional" json:"gopBReference" yaml:"gopBReference"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#gop_closed_cadence MedialiveChannel#gop_closed_cadence}.

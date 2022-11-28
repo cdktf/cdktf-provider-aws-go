@@ -184,6 +184,10 @@ func (j *jsiiProxy_EcsService) validateSetTaskDefinitionParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_EcsService) validateSetTriggersParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsService) validateSetWaitForSteadyStateParameters(val interface{}) error {
 	return nil
 }

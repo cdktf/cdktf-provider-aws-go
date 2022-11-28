@@ -32,6 +32,7 @@ type ElasticacheClusterCacheNodesOutputReference interface {
 	Id() *string
 	InternalValue() *ElasticacheClusterCacheNodes
 	SetInternalValue(val *ElasticacheClusterCacheNodes)
+	OutpostArn() *string
 	Port() *float64
 	// Experimental.
 	TerraformAttribute() *string
@@ -155,6 +156,16 @@ func (j *jsiiProxy_ElasticacheClusterCacheNodesOutputReference) InternalValue() 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheClusterCacheNodesOutputReference) OutpostArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outpostArn",
 		&returns,
 	)
 	return returns

@@ -96,6 +96,10 @@ func (j *jsiiProxy_CloudwatchLogGroup) validateSetRetentionInDaysParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchLogGroup) validateSetSkipDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchLogGroup) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

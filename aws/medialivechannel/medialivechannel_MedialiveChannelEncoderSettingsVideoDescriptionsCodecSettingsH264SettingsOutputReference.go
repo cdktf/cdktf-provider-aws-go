@@ -65,6 +65,9 @@ type MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOu
 	FramerateDenominator() *float64
 	SetFramerateDenominator(val *float64)
 	FramerateDenominatorInput() *float64
+	FramerateNumerator() *float64
+	SetFramerateNumerator(val *float64)
+	FramerateNumeratorInput() *float64
 	GopBReference() *string
 	SetGopBReference(val *string)
 	GopBReferenceInput() *string
@@ -191,6 +194,7 @@ type MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOu
 	ResetForceFieldPictures()
 	ResetFramerateControl()
 	ResetFramerateDenominator()
+	ResetFramerateNumerator()
 	ResetGopBReference()
 	ResetGopClosedCadence()
 	ResetGopNumBFrames()
@@ -527,6 +531,26 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	_jsii_.Get(
 		j,
 		"framerateDenominatorInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) FramerateNumerator() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"framerateNumerator",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) FramerateNumeratorInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"framerateNumeratorInput",
 		&returns,
 	)
 	return returns
@@ -1264,6 +1288,17 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetFramerateNumerator(val *float64) {
+	if err := j.validateSetFramerateNumeratorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"framerateNumerator",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference)SetGopBReference(val *string) {
 	if err := j.validateSetGopBReferenceParameters(val); err != nil {
 		panic(err)
@@ -1880,6 +1915,14 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	_jsii_.InvokeVoid(
 		m,
 		"resetFramerateDenominator",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) ResetFramerateNumerator() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetFramerateNumerator",
 		nil, // no parameters
 	)
 }

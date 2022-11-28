@@ -52,11 +52,19 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	return nil
 }
 
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference) validatePutEac3AtmosSettingsParameters(value *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3AtmosSettings) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference) validatePutEac3SettingsParameters(value *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsEac3Settings) error {
 	return nil
 }
 
 func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference) validatePutMp2SettingsParameters(value *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsMp2Settings) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsOutputReference) validatePutPassThroughSettingsParameters(value *MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsPassThroughSettings) error {
 	return nil
 }
 

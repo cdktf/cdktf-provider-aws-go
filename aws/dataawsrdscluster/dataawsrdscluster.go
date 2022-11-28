@@ -30,6 +30,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "enabledCloudwatchLogsExports", GoGetter: "EnabledCloudwatchLogsExports"},
 			_jsii_.MemberProperty{JsiiProperty: "endpoint", GoGetter: "Endpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "engine", GoGetter: "Engine"},
+			_jsii_.MemberProperty{JsiiProperty: "engineMode", GoGetter: "EngineMode"},
 			_jsii_.MemberProperty{JsiiProperty: "engineVersion", GoGetter: "EngineVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "finalSnapshotIdentifier", GoGetter: "FinalSnapshotIdentifier"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},

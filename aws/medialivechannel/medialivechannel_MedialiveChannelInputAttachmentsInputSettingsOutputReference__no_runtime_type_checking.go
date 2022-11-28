@@ -52,6 +52,14 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference)
 	return nil
 }
 
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) validatePutNetworkInputSettingsParameters(value *MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) validatePutVideoSelectorParameters(value *MedialiveChannelInputAttachmentsInputSettingsVideoSelector) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -64,7 +72,35 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) validateSetDeblockFilterParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) validateSetDenoiseFilterParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) validateSetFilterStrengthParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) validateSetInputFilterParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) validateSetInternalValueParameters(val *MedialiveChannelInputAttachmentsInputSettings) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) validateSetScte35PidParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) validateSetSmpte2038DataPreferenceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) validateSetSourceEndBehaviorParameters(val *string) error {
 	return nil
 }
 

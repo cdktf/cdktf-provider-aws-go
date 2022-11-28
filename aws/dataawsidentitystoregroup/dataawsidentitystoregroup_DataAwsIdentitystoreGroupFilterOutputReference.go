@@ -33,8 +33,8 @@ type DataAwsIdentitystoreGroupFilterOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsIdentitystoreGroupFilter
+	SetInternalValue(val *DataAwsIdentitystoreGroupFilter)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DataAwsIdentitystoreGroupFilterOutputReference) Fqn() *string
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreGroupFilterOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsIdentitystoreGroupFilterOutputReference) InternalValue() *DataAwsIdentitystoreGroupFilter {
+	var returns *DataAwsIdentitystoreGroupFilter
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,29 +193,29 @@ func (j *jsiiProxy_DataAwsIdentitystoreGroupFilterOutputReference) TerraformReso
 }
 
 
-func NewDataAwsIdentitystoreGroupFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsIdentitystoreGroupFilterOutputReference {
+func NewDataAwsIdentitystoreGroupFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataAwsIdentitystoreGroupFilterOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewDataAwsIdentitystoreGroupFilterOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewDataAwsIdentitystoreGroupFilterOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_DataAwsIdentitystoreGroupFilterOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewDataAwsIdentitystoreGroupFilterOutputReference_Override(d DataAwsIdentitystoreGroupFilterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataAwsIdentitystoreGroupFilterOutputReference_Override(d DataAwsIdentitystoreGroupFilterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.dataAwsIdentitystoreGroup.DataAwsIdentitystoreGroupFilterOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
 }
@@ -264,7 +264,7 @@ func (j *jsiiProxy_DataAwsIdentitystoreGroupFilterOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreGroupFilterOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsIdentitystoreGroupFilterOutputReference)SetInternalValue(val *DataAwsIdentitystoreGroupFilter) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

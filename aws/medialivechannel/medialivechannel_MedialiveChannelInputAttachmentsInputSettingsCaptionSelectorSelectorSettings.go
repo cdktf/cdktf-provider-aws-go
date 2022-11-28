@@ -14,13 +14,13 @@ type MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSetting
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#embedded_source_settings MedialiveChannel#embedded_source_settings}
 	EmbeddedSourceSettings *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings `field:"optional" json:"embeddedSourceSettings" yaml:"embeddedSourceSettings"`
-	// scte_20_source_settings block.
+	// scte20_source_settings block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#scte_20_source_settings MedialiveChannel#scte_20_source_settings}
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#scte20_source_settings MedialiveChannel#scte20_source_settings}
 	Scte20SourceSettings *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings `field:"optional" json:"scte20SourceSettings" yaml:"scte20SourceSettings"`
-	// scte_27_source_settings block.
+	// scte27_source_settings block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#scte_27_source_settings MedialiveChannel#scte_27_source_settings}
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#scte27_source_settings MedialiveChannel#scte27_source_settings}
 	Scte27SourceSettings *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings `field:"optional" json:"scte27SourceSettings" yaml:"scte27SourceSettings"`
 	// teletext_source_settings block.
 	//

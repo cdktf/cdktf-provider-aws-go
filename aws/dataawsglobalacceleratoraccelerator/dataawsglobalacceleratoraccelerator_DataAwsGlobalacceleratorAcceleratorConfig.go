@@ -28,7 +28,5 @@ type DataAwsGlobalacceleratorAcceleratorConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/globalaccelerator_accelerator#name DataAwsGlobalacceleratorAccelerator#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/globalaccelerator_accelerator#tags DataAwsGlobalacceleratorAccelerator#tags}.
-	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 }
 

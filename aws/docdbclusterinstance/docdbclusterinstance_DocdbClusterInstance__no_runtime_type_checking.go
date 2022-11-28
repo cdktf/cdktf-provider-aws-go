@@ -92,6 +92,10 @@ func (j *jsiiProxy_DocdbClusterInstance) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_DocdbClusterInstance) validateSetEnablePerformanceInsightsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DocdbClusterInstance) validateSetEngineParameters(val *string) error {
 	return nil
 }
@@ -113,6 +117,10 @@ func (j *jsiiProxy_DocdbClusterInstance) validateSetInstanceClassParameters(val 
 }
 
 func (j *jsiiProxy_DocdbClusterInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_DocdbClusterInstance) validateSetPerformanceInsightsKmsKeyIdParameters(val *string) error {
 	return nil
 }
 

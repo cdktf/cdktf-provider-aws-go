@@ -40,6 +40,8 @@ type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSetti
 	HlsCdnSettings interface{} `field:"optional" json:"hlsCdnSettings" yaml:"hlsCdnSettings"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#hls_id3_segment_tagging MedialiveChannel#hls_id3_segment_tagging}.
 	HlsId3SegmentTagging *string `field:"optional" json:"hlsId3SegmentTagging" yaml:"hlsId3SegmentTagging"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#iframe_only_playlists MedialiveChannel#iframe_only_playlists}.
+	IframeOnlyPlaylists *string `field:"optional" json:"iframeOnlyPlaylists" yaml:"iframeOnlyPlaylists"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#incomplete_segment_behavior MedialiveChannel#incomplete_segment_behavior}.
 	IncompleteSegmentBehavior *string `field:"optional" json:"incompleteSegmentBehavior" yaml:"incompleteSegmentBehavior"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#index_n_segments MedialiveChannel#index_n_segments}.
@@ -50,12 +52,16 @@ type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSetti
 	IvInManifest *string `field:"optional" json:"ivInManifest" yaml:"ivInManifest"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#iv_source MedialiveChannel#iv_source}.
 	IvSource *string `field:"optional" json:"ivSource" yaml:"ivSource"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#keep_segment MedialiveChannel#keep_segment}.
-	KeepSegment *float64 `field:"optional" json:"keepSegment" yaml:"keepSegment"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#keep_segments MedialiveChannel#keep_segments}.
+	KeepSegments *float64 `field:"optional" json:"keepSegments" yaml:"keepSegments"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#key_format MedialiveChannel#key_format}.
 	KeyFormat *string `field:"optional" json:"keyFormat" yaml:"keyFormat"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#key_format_versions MedialiveChannel#key_format_versions}.
 	KeyFormatVersions *string `field:"optional" json:"keyFormatVersions" yaml:"keyFormatVersions"`
+	// key_provider_settings block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#key_provider_settings MedialiveChannel#key_provider_settings}
+	KeyProviderSettings *MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSettingsKeyProviderSettings `field:"optional" json:"keyProviderSettings" yaml:"keyProviderSettings"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#manifest_compression MedialiveChannel#manifest_compression}.
 	ManifestCompression *string `field:"optional" json:"manifestCompression" yaml:"manifestCompression"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#manifest_duration_format MedialiveChannel#manifest_duration_format}.
@@ -64,6 +70,8 @@ type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSetti
 	MinSegmentLength *float64 `field:"optional" json:"minSegmentLength" yaml:"minSegmentLength"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#mode MedialiveChannel#mode}.
 	Mode *string `field:"optional" json:"mode" yaml:"mode"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#output_selection MedialiveChannel#output_selection}.
+	OutputSelection *string `field:"optional" json:"outputSelection" yaml:"outputSelection"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#program_date_time MedialiveChannel#program_date_time}.
 	ProgramDateTime *string `field:"optional" json:"programDateTime" yaml:"programDateTime"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#program_date_time_clock MedialiveChannel#program_date_time_clock}.
@@ -78,8 +86,10 @@ type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsHlsGroupSetti
 	SegmentsPerSubdirectory *float64 `field:"optional" json:"segmentsPerSubdirectory" yaml:"segmentsPerSubdirectory"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#stream_inf_resolution MedialiveChannel#stream_inf_resolution}.
 	StreamInfResolution *string `field:"optional" json:"streamInfResolution" yaml:"streamInfResolution"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#time_metadata_id3_frame MedialiveChannel#time_metadata_id3_frame}.
-	TimeMetadataId3Frame *string `field:"optional" json:"timeMetadataId3Frame" yaml:"timeMetadataId3Frame"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#timed_metadata_id3_frame MedialiveChannel#timed_metadata_id3_frame}.
+	TimedMetadataId3Frame *string `field:"optional" json:"timedMetadataId3Frame" yaml:"timedMetadataId3Frame"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#timed_metadata_id3_period MedialiveChannel#timed_metadata_id3_period}.
+	TimedMetadataId3Period *float64 `field:"optional" json:"timedMetadataId3Period" yaml:"timedMetadataId3Period"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#timestamp_delta_milliseconds MedialiveChannel#timestamp_delta_milliseconds}.
 	TimestampDeltaMilliseconds *float64 `field:"optional" json:"timestampDeltaMilliseconds" yaml:"timestampDeltaMilliseconds"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#ts_file_mode MedialiveChannel#ts_file_mode}.

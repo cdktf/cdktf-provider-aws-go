@@ -108,6 +108,10 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	return nil
 }
 
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) validateSetFramerateNumeratorParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference) validateSetGopBReferenceParameters(val *string) error {
 	return nil
 }

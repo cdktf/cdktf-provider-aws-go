@@ -62,6 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "securityGroupId", GoGetter: "SecurityGroupId"},
 			_jsii_.MemberProperty{JsiiProperty: "securityGroupIdInput", GoGetter: "SecurityGroupIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "securityGroupRuleId", GoGetter: "SecurityGroupRuleId"},
 			_jsii_.MemberProperty{JsiiProperty: "selfAttribute", GoGetter: "SelfAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "selfAttributeInput", GoGetter: "SelfAttributeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceSecurityGroupId", GoGetter: "SourceSecurityGroupId"},

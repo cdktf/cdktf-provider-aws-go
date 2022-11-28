@@ -29,10 +29,33 @@ type MedialiveChannelInputAttachmentsInputSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeblockFilter() *string
+	SetDeblockFilter(val *string)
+	DeblockFilterInput() *string
+	DenoiseFilter() *string
+	SetDenoiseFilter(val *string)
+	DenoiseFilterInput() *string
+	FilterStrength() *float64
+	SetFilterStrength(val *float64)
+	FilterStrengthInput() *float64
 	// Experimental.
 	Fqn() *string
+	InputFilter() *string
+	SetInputFilter(val *string)
+	InputFilterInput() *string
 	InternalValue() *MedialiveChannelInputAttachmentsInputSettings
 	SetInternalValue(val *MedialiveChannelInputAttachmentsInputSettings)
+	NetworkInputSettings() MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsOutputReference
+	NetworkInputSettingsInput() *MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings
+	Scte35Pid() *float64
+	SetScte35Pid(val *float64)
+	Scte35PidInput() *float64
+	Smpte2038DataPreference() *string
+	SetSmpte2038DataPreference(val *string)
+	Smpte2038DataPreferenceInput() *string
+	SourceEndBehavior() *string
+	SetSourceEndBehavior(val *string)
+	SourceEndBehaviorInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -41,6 +64,8 @@ type MedialiveChannelInputAttachmentsInputSettingsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VideoSelector() MedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputReference
+	VideoSelectorInput() *MedialiveChannelInputAttachmentsInputSettingsVideoSelector
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -67,8 +92,19 @@ type MedialiveChannelInputAttachmentsInputSettingsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAudioSelector(value interface{})
 	PutCaptionSelector(value interface{})
+	PutNetworkInputSettings(value *MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings)
+	PutVideoSelector(value *MedialiveChannelInputAttachmentsInputSettingsVideoSelector)
 	ResetAudioSelector()
 	ResetCaptionSelector()
+	ResetDeblockFilter()
+	ResetDenoiseFilter()
+	ResetFilterStrength()
+	ResetInputFilter()
+	ResetNetworkInputSettings()
+	ResetScte35Pid()
+	ResetSmpte2038DataPreference()
+	ResetSourceEndBehavior()
+	ResetVideoSelector()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -154,6 +190,66 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) DeblockFilter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deblockFilter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) DeblockFilterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deblockFilterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) DenoiseFilter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"denoiseFilter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) DenoiseFilterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"denoiseFilterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) FilterStrength() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"filterStrength",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) FilterStrengthInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"filterStrengthInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -164,11 +260,111 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) InputFilter() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inputFilter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) InputFilterInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inputFilterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) InternalValue() *MedialiveChannelInputAttachmentsInputSettings {
 	var returns *MedialiveChannelInputAttachmentsInputSettings
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) NetworkInputSettings() MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsOutputReference {
+	var returns MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"networkInputSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) NetworkInputSettingsInput() *MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings {
+	var returns *MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings
+	_jsii_.Get(
+		j,
+		"networkInputSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) Scte35Pid() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"scte35Pid",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) Scte35PidInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"scte35PidInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) Smpte2038DataPreference() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"smpte2038DataPreference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) Smpte2038DataPreferenceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"smpte2038DataPreferenceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) SourceEndBehavior() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceEndBehavior",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) SourceEndBehaviorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceEndBehaviorInput",
 		&returns,
 	)
 	return returns
@@ -189,6 +385,26 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference)
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) VideoSelector() MedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputReference {
+	var returns MedialiveChannelInputAttachmentsInputSettingsVideoSelectorOutputReference
+	_jsii_.Get(
+		j,
+		"videoSelector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) VideoSelectorInput() *MedialiveChannelInputAttachmentsInputSettingsVideoSelector {
+	var returns *MedialiveChannelInputAttachmentsInputSettingsVideoSelector
+	_jsii_.Get(
+		j,
+		"videoSelectorInput",
 		&returns,
 	)
 	return returns
@@ -244,6 +460,50 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference)
 	)
 }
 
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference)SetDeblockFilter(val *string) {
+	if err := j.validateSetDeblockFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deblockFilter",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference)SetDenoiseFilter(val *string) {
+	if err := j.validateSetDenoiseFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"denoiseFilter",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference)SetFilterStrength(val *float64) {
+	if err := j.validateSetFilterStrengthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filterStrength",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference)SetInputFilter(val *string) {
+	if err := j.validateSetInputFilterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"inputFilter",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference)SetInternalValue(val *MedialiveChannelInputAttachmentsInputSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -251,6 +511,39 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference)
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference)SetScte35Pid(val *float64) {
+	if err := j.validateSetScte35PidParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scte35Pid",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference)SetSmpte2038DataPreference(val *string) {
+	if err := j.validateSetSmpte2038DataPreferenceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"smpte2038DataPreference",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference)SetSourceEndBehavior(val *string) {
+	if err := j.validateSetSourceEndBehaviorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceEndBehavior",
 		val,
 	)
 }
@@ -485,6 +778,28 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference)
 	)
 }
 
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) PutNetworkInputSettings(value *MedialiveChannelInputAttachmentsInputSettingsNetworkInputSettings) {
+	if err := m.validatePutNetworkInputSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putNetworkInputSettings",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) PutVideoSelector(value *MedialiveChannelInputAttachmentsInputSettingsVideoSelector) {
+	if err := m.validatePutVideoSelectorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putVideoSelector",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) ResetAudioSelector() {
 	_jsii_.InvokeVoid(
 		m,
@@ -497,6 +812,78 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference)
 	_jsii_.InvokeVoid(
 		m,
 		"resetCaptionSelector",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) ResetDeblockFilter() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDeblockFilter",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) ResetDenoiseFilter() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDenoiseFilter",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) ResetFilterStrength() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetFilterStrength",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) ResetInputFilter() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetInputFilter",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) ResetNetworkInputSettings() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetNetworkInputSettings",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) ResetScte35Pid() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetScte35Pid",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) ResetSmpte2038DataPreference() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSmpte2038DataPreference",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) ResetSourceEndBehavior() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetSourceEndBehavior",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsOutputReference) ResetVideoSelector() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetVideoSelector",
 		nil, // no parameters
 	)
 }

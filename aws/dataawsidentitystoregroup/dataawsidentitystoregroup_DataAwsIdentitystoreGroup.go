@@ -12,6 +12,8 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/aws/d/identitystore_group aws_identitystore_group}.
 type DataAwsIdentitystoreGroup interface {
 	cdktf.TerraformDataSource
+	AlternateIdentifier() DataAwsIdentitystoreGroupAlternateIdentifierOutputReference
+	AlternateIdentifierInput() *DataAwsIdentitystoreGroupAlternateIdentifier
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -24,9 +26,11 @@ type DataAwsIdentitystoreGroup interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
 	DisplayName() *string
-	Filter() DataAwsIdentitystoreGroupFilterList
-	FilterInput() interface{}
+	ExternalIds() DataAwsIdentitystoreGroupExternalIdsList
+	Filter() DataAwsIdentitystoreGroupFilterOutputReference
+	FilterInput() *DataAwsIdentitystoreGroupFilter
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -87,7 +91,10 @@ type DataAwsIdentitystoreGroup interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutFilter(value interface{})
+	PutAlternateIdentifier(value *DataAwsIdentitystoreGroupAlternateIdentifier)
+	PutFilter(value *DataAwsIdentitystoreGroupFilter)
+	ResetAlternateIdentifier()
+	ResetFilter()
 	ResetGroupId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -106,6 +113,26 @@ type DataAwsIdentitystoreGroup interface {
 // The jsii proxy struct for DataAwsIdentitystoreGroup
 type jsiiProxy_DataAwsIdentitystoreGroup struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataAwsIdentitystoreGroup) AlternateIdentifier() DataAwsIdentitystoreGroupAlternateIdentifierOutputReference {
+	var returns DataAwsIdentitystoreGroupAlternateIdentifierOutputReference
+	_jsii_.Get(
+		j,
+		"alternateIdentifier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIdentitystoreGroup) AlternateIdentifierInput() *DataAwsIdentitystoreGroupAlternateIdentifier {
+	var returns *DataAwsIdentitystoreGroupAlternateIdentifier
+	_jsii_.Get(
+		j,
+		"alternateIdentifierInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAwsIdentitystoreGroup) CdktfStack() cdktf.TerraformStack {
@@ -148,6 +175,16 @@ func (j *jsiiProxy_DataAwsIdentitystoreGroup) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsIdentitystoreGroup) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsIdentitystoreGroup) DisplayName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -158,8 +195,18 @@ func (j *jsiiProxy_DataAwsIdentitystoreGroup) DisplayName() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreGroup) Filter() DataAwsIdentitystoreGroupFilterList {
-	var returns DataAwsIdentitystoreGroupFilterList
+func (j *jsiiProxy_DataAwsIdentitystoreGroup) ExternalIds() DataAwsIdentitystoreGroupExternalIdsList {
+	var returns DataAwsIdentitystoreGroupExternalIdsList
+	_jsii_.Get(
+		j,
+		"externalIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIdentitystoreGroup) Filter() DataAwsIdentitystoreGroupFilterOutputReference {
+	var returns DataAwsIdentitystoreGroupFilterOutputReference
 	_jsii_.Get(
 		j,
 		"filter",
@@ -168,8 +215,8 @@ func (j *jsiiProxy_DataAwsIdentitystoreGroup) Filter() DataAwsIdentitystoreGroup
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreGroup) FilterInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsIdentitystoreGroup) FilterInput() *DataAwsIdentitystoreGroupFilter {
+	var returns *DataAwsIdentitystoreGroupFilter
 	_jsii_.Get(
 		j,
 		"filterInput",
@@ -710,7 +757,18 @@ func (d *jsiiProxy_DataAwsIdentitystoreGroup) OverrideLogicalId(newLogicalId *st
 	)
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreGroup) PutFilter(value interface{}) {
+func (d *jsiiProxy_DataAwsIdentitystoreGroup) PutAlternateIdentifier(value *DataAwsIdentitystoreGroupAlternateIdentifier) {
+	if err := d.validatePutAlternateIdentifierParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAlternateIdentifier",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataAwsIdentitystoreGroup) PutFilter(value *DataAwsIdentitystoreGroupFilter) {
 	if err := d.validatePutFilterParameters(value); err != nil {
 		panic(err)
 	}
@@ -718,6 +776,22 @@ func (d *jsiiProxy_DataAwsIdentitystoreGroup) PutFilter(value interface{}) {
 		d,
 		"putFilter",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataAwsIdentitystoreGroup) ResetAlternateIdentifier() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAlternateIdentifier",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsIdentitystoreGroup) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
+		nil, // no parameters
 	)
 }
 
