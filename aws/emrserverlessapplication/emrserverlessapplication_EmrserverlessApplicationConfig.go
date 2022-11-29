@@ -25,6 +25,8 @@ type EmrserverlessApplicationConfig struct {
 	ReleaseLabel *string `field:"required" json:"releaseLabel" yaml:"releaseLabel"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emrserverless_application#type EmrserverlessApplication#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emrserverless_application#architecture EmrserverlessApplication#architecture}.
+	Architecture *string `field:"optional" json:"architecture" yaml:"architecture"`
 	// auto_start_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emrserverless_application#auto_start_configuration EmrserverlessApplication#auto_start_configuration}

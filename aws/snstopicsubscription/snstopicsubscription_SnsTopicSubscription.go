@@ -45,6 +45,9 @@ type SnsTopicSubscription interface {
 	FilterPolicy() *string
 	SetFilterPolicy(val *string)
 	FilterPolicyInput() *string
+	FilterPolicyScope() *string
+	SetFilterPolicyScope(val *string)
+	FilterPolicyScopeInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -124,6 +127,7 @@ type SnsTopicSubscription interface {
 	ResetDeliveryPolicy()
 	ResetEndpointAutoConfirms()
 	ResetFilterPolicy()
+	ResetFilterPolicyScope()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -311,6 +315,26 @@ func (j *jsiiProxy_SnsTopicSubscription) FilterPolicyInput() *string {
 	_jsii_.Get(
 		j,
 		"filterPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnsTopicSubscription) FilterPolicyScope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterPolicyScope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnsTopicSubscription) FilterPolicyScopeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filterPolicyScopeInput",
 		&returns,
 	)
 	return returns
@@ -674,6 +698,17 @@ func (j *jsiiProxy_SnsTopicSubscription)SetFilterPolicy(val *string) {
 	_jsii_.Set(
 		j,
 		"filterPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SnsTopicSubscription)SetFilterPolicyScope(val *string) {
+	if err := j.validateSetFilterPolicyScopeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filterPolicyScope",
 		val,
 	)
 }
@@ -1076,6 +1111,14 @@ func (s *jsiiProxy_SnsTopicSubscription) ResetFilterPolicy() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetFilterPolicy",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SnsTopicSubscription) ResetFilterPolicyScope() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetFilterPolicyScope",
 		nil, // no parameters
 	)
 }

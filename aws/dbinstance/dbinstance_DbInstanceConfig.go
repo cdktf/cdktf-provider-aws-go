@@ -35,6 +35,10 @@ type DbInstanceConfig struct {
 	BackupRetentionPeriod *float64 `field:"optional" json:"backupRetentionPeriod" yaml:"backupRetentionPeriod"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#backup_window DbInstance#backup_window}.
 	BackupWindow *string `field:"optional" json:"backupWindow" yaml:"backupWindow"`
+	// blue_green_update block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#blue_green_update DbInstance#blue_green_update}
+	BlueGreenUpdate *DbInstanceBlueGreenUpdate `field:"optional" json:"blueGreenUpdate" yaml:"blueGreenUpdate"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#ca_cert_identifier DbInstance#ca_cert_identifier}.
 	CaCertIdentifier *string `field:"optional" json:"caCertIdentifier" yaml:"caCertIdentifier"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#character_set_name DbInstance#character_set_name}.

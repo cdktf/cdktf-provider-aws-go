@@ -12,6 +12,8 @@ func init() {
 		reflect.TypeOf((*EmrserverlessApplication)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "architecture", GoGetter: "Architecture"},
+			_jsii_.MemberProperty{JsiiProperty: "architectureInput", GoGetter: "ArchitectureInput"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "autoStartConfiguration", GoGetter: "AutoStartConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "autoStartConfigurationInput", GoGetter: "AutoStartConfigurationInput"},
@@ -58,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseLabel", GoGetter: "ReleaseLabel"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseLabelInput", GoGetter: "ReleaseLabelInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetArchitecture", GoMethod: "ResetArchitecture"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoStartConfiguration", GoMethod: "ResetAutoStartConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoStopConfiguration", GoMethod: "ResetAutoStopConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},

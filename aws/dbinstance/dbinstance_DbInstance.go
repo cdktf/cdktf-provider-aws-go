@@ -35,6 +35,8 @@ type DbInstance interface {
 	BackupWindow() *string
 	SetBackupWindow(val *string)
 	BackupWindowInput() *string
+	BlueGreenUpdate() DbInstanceBlueGreenUpdateOutputReference
+	BlueGreenUpdateInput() *DbInstanceBlueGreenUpdate
 	CaCertIdentifier() *string
 	SetCaCertIdentifier(val *string)
 	CaCertIdentifierInput() *string
@@ -272,6 +274,7 @@ type DbInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBlueGreenUpdate(value *DbInstanceBlueGreenUpdate)
 	PutRestoreToPointInTime(value *DbInstanceRestoreToPointInTime)
 	PutS3Import(value *DbInstanceS3Import)
 	PutTimeouts(value *DbInstanceTimeouts)
@@ -282,6 +285,7 @@ type DbInstance interface {
 	ResetAvailabilityZone()
 	ResetBackupRetentionPeriod()
 	ResetBackupWindow()
+	ResetBlueGreenUpdate()
 	ResetCaCertIdentifier()
 	ResetCharacterSetName()
 	ResetCopyTagsToSnapshot()
@@ -508,6 +512,26 @@ func (j *jsiiProxy_DbInstance) BackupWindowInput() *string {
 	_jsii_.Get(
 		j,
 		"backupWindowInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) BlueGreenUpdate() DbInstanceBlueGreenUpdateOutputReference {
+	var returns DbInstanceBlueGreenUpdateOutputReference
+	_jsii_.Get(
+		j,
+		"blueGreenUpdate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) BlueGreenUpdateInput() *DbInstanceBlueGreenUpdate {
+	var returns *DbInstanceBlueGreenUpdate
+	_jsii_.Get(
+		j,
+		"blueGreenUpdateInput",
 		&returns,
 	)
 	return returns
@@ -2822,6 +2846,17 @@ func (d *jsiiProxy_DbInstance) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DbInstance) PutBlueGreenUpdate(value *DbInstanceBlueGreenUpdate) {
+	if err := d.validatePutBlueGreenUpdateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putBlueGreenUpdate",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DbInstance) PutRestoreToPointInTime(value *DbInstanceRestoreToPointInTime) {
 	if err := d.validatePutRestoreToPointInTimeParameters(value); err != nil {
 		panic(err)
@@ -2907,6 +2942,14 @@ func (d *jsiiProxy_DbInstance) ResetBackupWindow() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetBackupWindow",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbInstance) ResetBlueGreenUpdate() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBlueGreenUpdate",
 		nil, // no parameters
 	)
 }

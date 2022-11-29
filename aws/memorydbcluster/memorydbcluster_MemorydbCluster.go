@@ -32,6 +32,9 @@ type MemorydbCluster interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DataTiering() interface{}
+	SetDataTiering(val interface{})
+	DataTieringInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -166,6 +169,7 @@ type MemorydbCluster interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *MemorydbClusterTimeouts)
 	ResetAutoMinorVersionUpgrade()
+	ResetDataTiering()
 	ResetDescription()
 	ResetEngineVersion()
 	ResetFinalSnapshotName()
@@ -302,6 +306,26 @@ func (j *jsiiProxy_MemorydbCluster) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorydbCluster) DataTiering() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dataTiering",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MemorydbCluster) DataTieringInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dataTieringInput",
 		&returns,
 	)
 	return returns
@@ -998,6 +1022,17 @@ func (j *jsiiProxy_MemorydbCluster)SetCount(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_MemorydbCluster)SetDataTiering(val interface{}) {
+	if err := j.validateSetDataTieringParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataTiering",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MemorydbCluster)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -1578,6 +1613,14 @@ func (m *jsiiProxy_MemorydbCluster) ResetAutoMinorVersionUpgrade() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetAutoMinorVersionUpgrade",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MemorydbCluster) ResetDataTiering() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDataTiering",
 		nil, // no parameters
 	)
 }

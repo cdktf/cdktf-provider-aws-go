@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/aws/r/emrserverless_application aws_emrserverless_application}.
 type EmrserverlessApplication interface {
 	cdktf.TerraformResource
+	Architecture() *string
+	SetArchitecture(val *string)
+	ArchitectureInput() *string
 	Arn() *string
 	AutoStartConfiguration() EmrserverlessApplicationAutoStartConfigurationOutputReference
 	AutoStartConfigurationInput() *EmrserverlessApplicationAutoStartConfiguration
@@ -117,6 +120,7 @@ type EmrserverlessApplication interface {
 	PutInitialCapacity(value interface{})
 	PutMaximumCapacity(value *EmrserverlessApplicationMaximumCapacity)
 	PutNetworkConfiguration(value *EmrserverlessApplicationNetworkConfiguration)
+	ResetArchitecture()
 	ResetAutoStartConfiguration()
 	ResetAutoStopConfiguration()
 	ResetId()
@@ -141,6 +145,26 @@ type EmrserverlessApplication interface {
 // The jsii proxy struct for EmrserverlessApplication
 type jsiiProxy_EmrserverlessApplication struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_EmrserverlessApplication) Architecture() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architecture",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrserverlessApplication) ArchitectureInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"architectureInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_EmrserverlessApplication) Arn() *string {
@@ -560,6 +584,17 @@ func NewEmrserverlessApplication_Override(e EmrserverlessApplication, scope cons
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplication",
 		[]interface{}{scope, id, config},
 		e,
+	)
+}
+
+func (j *jsiiProxy_EmrserverlessApplication)SetArchitecture(val *string) {
+	if err := j.validateSetArchitectureParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"architecture",
+		val,
 	)
 }
 
@@ -1012,6 +1047,14 @@ func (e *jsiiProxy_EmrserverlessApplication) PutNetworkConfiguration(value *Emrs
 		e,
 		"putNetworkConfiguration",
 		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EmrserverlessApplication) ResetArchitecture() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetArchitecture",
+		nil, // no parameters
 	)
 }
 

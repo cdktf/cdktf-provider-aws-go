@@ -33,6 +33,8 @@ type SnsTopicSubscriptionConfig struct {
 	EndpointAutoConfirms interface{} `field:"optional" json:"endpointAutoConfirms" yaml:"endpointAutoConfirms"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic_subscription#filter_policy SnsTopicSubscription#filter_policy}.
 	FilterPolicy *string `field:"optional" json:"filterPolicy" yaml:"filterPolicy"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic_subscription#filter_policy_scope SnsTopicSubscription#filter_policy_scope}.
+	FilterPolicyScope *string `field:"optional" json:"filterPolicyScope" yaml:"filterPolicyScope"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic_subscription#id SnsTopicSubscription#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

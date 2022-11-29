@@ -52,6 +52,10 @@ func (d *jsiiProxy_DbInstance) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (d *jsiiProxy_DbInstance) validatePutBlueGreenUpdateParameters(value *DbInstanceBlueGreenUpdate) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbInstance) validatePutRestoreToPointInTimeParameters(value *DbInstanceRestoreToPointInTime) error {
 	return nil
 }

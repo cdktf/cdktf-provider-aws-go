@@ -88,6 +88,10 @@ func (j *jsiiProxy_SnsTopicSubscription) validateSetFilterPolicyParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_SnsTopicSubscription) validateSetFilterPolicyScopeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SnsTopicSubscription) validateSetIdParameters(val *string) error {
 	return nil
 }

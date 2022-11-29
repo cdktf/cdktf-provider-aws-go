@@ -24,6 +24,7 @@ type DataAwsMemorydbCluster interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DataTiering() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -191,6 +192,16 @@ func (j *jsiiProxy_DataAwsMemorydbCluster) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsMemorydbCluster) DataTiering() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"dataTiering",
 		&returns,
 	)
 	return returns
