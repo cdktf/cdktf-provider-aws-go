@@ -66,6 +66,8 @@ type EcsCluster interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ServiceConnectDefaults() EcsClusterServiceConnectDefaultsOutputReference
+	ServiceConnectDefaultsInput() *EcsClusterServiceConnectDefaults
 	Setting() EcsClusterSettingList
 	SettingInput() interface{}
 	Tags() *map[string]*string
@@ -107,6 +109,7 @@ type EcsCluster interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutConfiguration(value *EcsClusterConfiguration)
 	PutDefaultCapacityProviderStrategy(value interface{})
+	PutServiceConnectDefaults(value *EcsClusterServiceConnectDefaults)
 	PutSetting(value interface{})
 	ResetCapacityProviders()
 	ResetConfiguration()
@@ -115,6 +118,7 @@ type EcsCluster interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetServiceConnectDefaults()
 	ResetSetting()
 	ResetTags()
 	ResetTagsAll()
@@ -368,6 +372,26 @@ func (j *jsiiProxy_EcsCluster) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsCluster) ServiceConnectDefaults() EcsClusterServiceConnectDefaultsOutputReference {
+	var returns EcsClusterServiceConnectDefaultsOutputReference
+	_jsii_.Get(
+		j,
+		"serviceConnectDefaults",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsCluster) ServiceConnectDefaultsInput() *EcsClusterServiceConnectDefaults {
+	var returns *EcsClusterServiceConnectDefaults
+	_jsii_.Get(
+		j,
+		"serviceConnectDefaultsInput",
 		&returns,
 	)
 	return returns
@@ -901,6 +925,17 @@ func (e *jsiiProxy_EcsCluster) PutDefaultCapacityProviderStrategy(value interfac
 	)
 }
 
+func (e *jsiiProxy_EcsCluster) PutServiceConnectDefaults(value *EcsClusterServiceConnectDefaults) {
+	if err := e.validatePutServiceConnectDefaultsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putServiceConnectDefaults",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EcsCluster) PutSetting(value interface{}) {
 	if err := e.validatePutSettingParameters(value); err != nil {
 		panic(err)
@@ -948,6 +983,14 @@ func (e *jsiiProxy_EcsCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsCluster) ResetServiceConnectDefaults() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetServiceConnectDefaults",
 		nil, // no parameters
 	)
 }

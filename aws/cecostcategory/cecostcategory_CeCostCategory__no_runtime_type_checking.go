@@ -80,6 +80,10 @@ func (j *jsiiProxy_CeCostCategory) validateSetDefaultValueParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_CeCostCategory) validateSetEffectiveStartParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CeCostCategory) validateSetIdParameters(val *string) error {
 	return nil
 }

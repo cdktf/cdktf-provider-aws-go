@@ -29,6 +29,8 @@ type CeCostCategoryConfig struct {
 	RuleVersion *string `field:"required" json:"ruleVersion" yaml:"ruleVersion"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ce_cost_category#default_value CeCostCategory#default_value}.
 	DefaultValue *string `field:"optional" json:"defaultValue" yaml:"defaultValue"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ce_cost_category#effective_start CeCostCategory#effective_start}.
+	EffectiveStart *string `field:"optional" json:"effectiveStart" yaml:"effectiveStart"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ce_cost_category#id CeCostCategory#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

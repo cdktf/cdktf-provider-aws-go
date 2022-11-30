@@ -80,6 +80,10 @@ func (e *jsiiProxy_EcsService) validatePutPlacementConstraintsParameters(value i
 	return nil
 }
 
+func (e *jsiiProxy_EcsService) validatePutServiceConnectConfigurationParameters(value *EcsServiceServiceConnectConfiguration) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsService) validatePutServiceRegistriesParameters(value *EcsServiceServiceRegistries) error {
 	return nil
 }

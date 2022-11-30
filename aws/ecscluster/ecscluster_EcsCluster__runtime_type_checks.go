@@ -153,6 +153,17 @@ func (e *jsiiProxy_EcsCluster) validatePutDefaultCapacityProviderStrategyParamet
 	return nil
 }
 
+func (e *jsiiProxy_EcsCluster) validatePutServiceConnectDefaultsParameters(value *EcsClusterServiceConnectDefaults) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (e *jsiiProxy_EcsCluster) validatePutSettingParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

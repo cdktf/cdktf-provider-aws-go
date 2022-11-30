@@ -76,6 +76,9 @@ type NeptuneCluster interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GlobalClusterIdentifier() *string
+	SetGlobalClusterIdentifier(val *string)
+	GlobalClusterIdentifierInput() *string
 	HostedZoneId() *string
 	IamDatabaseAuthenticationEnabled() interface{}
 	SetIamDatabaseAuthenticationEnabled(val interface{})
@@ -191,6 +194,7 @@ type NeptuneCluster interface {
 	ResetEngine()
 	ResetEngineVersion()
 	ResetFinalSnapshotIdentifier()
+	ResetGlobalClusterIdentifier()
 	ResetIamDatabaseAuthenticationEnabled()
 	ResetIamRoles()
 	ResetId()
@@ -582,6 +586,26 @@ func (j *jsiiProxy_NeptuneCluster) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NeptuneCluster) GlobalClusterIdentifier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"globalClusterIdentifier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NeptuneCluster) GlobalClusterIdentifierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"globalClusterIdentifierInput",
 		&returns,
 	)
 	return returns
@@ -1244,6 +1268,17 @@ func (j *jsiiProxy_NeptuneCluster)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
+func (j *jsiiProxy_NeptuneCluster)SetGlobalClusterIdentifier(val *string) {
+	if err := j.validateSetGlobalClusterIdentifierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"globalClusterIdentifier",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NeptuneCluster)SetIamDatabaseAuthenticationEnabled(val interface{}) {
 	if err := j.validateSetIamDatabaseAuthenticationEnabledParameters(val); err != nil {
 		panic(err)
@@ -1830,6 +1865,14 @@ func (n *jsiiProxy_NeptuneCluster) ResetFinalSnapshotIdentifier() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetFinalSnapshotIdentifier",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NeptuneCluster) ResetGlobalClusterIdentifier() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetGlobalClusterIdentifier",
 		nil, // no parameters
 	)
 }

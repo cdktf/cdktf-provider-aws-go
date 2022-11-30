@@ -60,6 +60,10 @@ func (e *jsiiProxy_EcsCluster) validatePutDefaultCapacityProviderStrategyParamet
 	return nil
 }
 
+func (e *jsiiProxy_EcsCluster) validatePutServiceConnectDefaultsParameters(value *EcsClusterServiceConnectDefaults) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsCluster) validatePutSettingParameters(value interface{}) error {
 	return nil
 }

@@ -124,6 +124,10 @@ func (j *jsiiProxy_NeptuneCluster) validateSetFinalSnapshotIdentifierParameters(
 	return nil
 }
 
+func (j *jsiiProxy_NeptuneCluster) validateSetGlobalClusterIdentifierParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NeptuneCluster) validateSetIamDatabaseAuthenticationEnabledParameters(val interface{}) error {
 	return nil
 }

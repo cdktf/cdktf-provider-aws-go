@@ -31,6 +31,12 @@ type GlueClassifierCsvClassifierOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomDatatypeConfigured() interface{}
+	SetCustomDatatypeConfigured(val interface{})
+	CustomDatatypeConfiguredInput() interface{}
+	CustomDatatypes() *[]*string
+	SetCustomDatatypes(val *[]*string)
+	CustomDatatypesInput() *[]*string
 	Delimiter() *string
 	SetDelimiter(val *string)
 	DelimiterInput() *string
@@ -81,6 +87,8 @@ type GlueClassifierCsvClassifierOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAllowSingleColumn()
 	ResetContainsHeader()
+	ResetCustomDatatypeConfigured()
+	ResetCustomDatatypes()
 	ResetDelimiter()
 	ResetDisableValueTrimming()
 	ResetHeader()
@@ -165,6 +173,46 @@ func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) CreationStack() *
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) CustomDatatypeConfigured() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customDatatypeConfigured",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) CustomDatatypeConfiguredInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customDatatypeConfiguredInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) CustomDatatypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customDatatypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) CustomDatatypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customDatatypesInput",
 		&returns,
 	)
 	return returns
@@ -358,6 +406,28 @@ func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference)SetContainsHeader(
 	_jsii_.Set(
 		j,
 		"containsHeader",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference)SetCustomDatatypeConfigured(val interface{}) {
+	if err := j.validateSetCustomDatatypeConfiguredParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customDatatypeConfigured",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference)SetCustomDatatypes(val *[]*string) {
+	if err := j.validateSetCustomDatatypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customDatatypes",
 		val,
 	)
 }
@@ -637,6 +707,22 @@ func (g *jsiiProxy_GlueClassifierCsvClassifierOutputReference) ResetContainsHead
 	_jsii_.InvokeVoid(
 		g,
 		"resetContainsHeader",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueClassifierCsvClassifierOutputReference) ResetCustomDatatypeConfigured() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomDatatypeConfigured",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueClassifierCsvClassifierOutputReference) ResetCustomDatatypes() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomDatatypes",
 		nil, // no parameters
 	)
 }

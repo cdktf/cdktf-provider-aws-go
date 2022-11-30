@@ -80,6 +80,10 @@ type EcsServiceConfig struct {
 	PropagateTags *string `field:"optional" json:"propagateTags" yaml:"propagateTags"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#scheduling_strategy EcsService#scheduling_strategy}.
 	SchedulingStrategy *string `field:"optional" json:"schedulingStrategy" yaml:"schedulingStrategy"`
+	// service_connect_configuration block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#service_connect_configuration EcsService#service_connect_configuration}
+	ServiceConnectConfiguration *EcsServiceServiceConnectConfiguration `field:"optional" json:"serviceConnectConfiguration" yaml:"serviceConnectConfiguration"`
 	// service_registries block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#service_registries EcsService#service_registries}

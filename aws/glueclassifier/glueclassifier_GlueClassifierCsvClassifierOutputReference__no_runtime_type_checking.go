@@ -64,6 +64,14 @@ func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateSetContai
 	return nil
 }
 
+func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateSetCustomDatatypeConfiguredParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateSetCustomDatatypesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateSetDelimiterParameters(val *string) error {
 	return nil
 }

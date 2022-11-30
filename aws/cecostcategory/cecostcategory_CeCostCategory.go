@@ -34,6 +34,8 @@ type CeCostCategory interface {
 	SetDependsOn(val *[]*string)
 	EffectiveEnd() *string
 	EffectiveStart() *string
+	SetEffectiveStart(val *string)
+	EffectiveStartInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -111,6 +113,7 @@ type CeCostCategory interface {
 	PutRule(value interface{})
 	PutSplitChargeRule(value interface{})
 	ResetDefaultValue()
+	ResetEffectiveStart()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -228,6 +231,16 @@ func (j *jsiiProxy_CeCostCategory) EffectiveStart() *string {
 	_jsii_.Get(
 		j,
 		"effectiveStart",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CeCostCategory) EffectiveStartInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveStartInput",
 		&returns,
 	)
 	return returns
@@ -547,6 +560,17 @@ func (j *jsiiProxy_CeCostCategory)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CeCostCategory)SetEffectiveStart(val *string) {
+	if err := j.validateSetEffectiveStartParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"effectiveStart",
 		val,
 	)
 }
@@ -936,6 +960,14 @@ func (c *jsiiProxy_CeCostCategory) ResetDefaultValue() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDefaultValue",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CeCostCategory) ResetEffectiveStart() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEffectiveStart",
 		nil, // no parameters
 	)
 }

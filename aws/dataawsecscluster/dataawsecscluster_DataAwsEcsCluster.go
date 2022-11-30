@@ -54,6 +54,7 @@ type DataAwsEcsCluster interface {
 	RawOverrides() interface{}
 	RegisteredContainerInstancesCount() *float64
 	RunningTasksCount() *float64
+	ServiceConnectDefaults() DataAwsEcsClusterServiceConnectDefaultsList
 	Setting() DataAwsEcsClusterSettingList
 	Status() *string
 	// Experimental.
@@ -291,6 +292,16 @@ func (j *jsiiProxy_DataAwsEcsCluster) RunningTasksCount() *float64 {
 	_jsii_.Get(
 		j,
 		"runningTasksCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsCluster) ServiceConnectDefaults() DataAwsEcsClusterServiceConnectDefaultsList {
+	var returns DataAwsEcsClusterServiceConnectDefaultsList
+	_jsii_.Get(
+		j,
+		"serviceConnectDefaults",
 		&returns,
 	)
 	return returns

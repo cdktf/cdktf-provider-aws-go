@@ -268,6 +268,17 @@ func (e *jsiiProxy_EcsService) validatePutPlacementConstraintsParameters(value i
 	return nil
 }
 
+func (e *jsiiProxy_EcsService) validatePutServiceConnectConfigurationParameters(value *EcsServiceServiceConnectConfiguration) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (e *jsiiProxy_EcsService) validatePutServiceRegistriesParameters(value *EcsServiceServiceRegistries) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

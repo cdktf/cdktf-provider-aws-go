@@ -111,6 +111,8 @@ type EcsService interface {
 	SchedulingStrategy() *string
 	SetSchedulingStrategy(val *string)
 	SchedulingStrategyInput() *string
+	ServiceConnectConfiguration() EcsServiceServiceConnectConfigurationOutputReference
+	ServiceConnectConfigurationInput() *EcsServiceServiceConnectConfiguration
 	ServiceRegistries() EcsServiceServiceRegistriesOutputReference
 	ServiceRegistriesInput() *EcsServiceServiceRegistries
 	Tags() *map[string]*string
@@ -168,6 +170,7 @@ type EcsService interface {
 	PutNetworkConfiguration(value *EcsServiceNetworkConfiguration)
 	PutOrderedPlacementStrategy(value interface{})
 	PutPlacementConstraints(value interface{})
+	PutServiceConnectConfiguration(value *EcsServiceServiceConnectConfiguration)
 	PutServiceRegistries(value *EcsServiceServiceRegistries)
 	PutTimeouts(value *EcsServiceTimeouts)
 	ResetCapacityProviderStrategy()
@@ -194,6 +197,7 @@ type EcsService interface {
 	ResetPlatformVersion()
 	ResetPropagateTags()
 	ResetSchedulingStrategy()
+	ResetServiceConnectConfiguration()
 	ResetServiceRegistries()
 	ResetTags()
 	ResetTagsAll()
@@ -781,6 +785,26 @@ func (j *jsiiProxy_EcsService) SchedulingStrategyInput() *string {
 	_jsii_.Get(
 		j,
 		"schedulingStrategyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsService) ServiceConnectConfiguration() EcsServiceServiceConnectConfigurationOutputReference {
+	var returns EcsServiceServiceConnectConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"serviceConnectConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsService) ServiceConnectConfigurationInput() *EcsServiceServiceConnectConfiguration {
+	var returns *EcsServiceServiceConnectConfiguration
+	_jsii_.Get(
+		j,
+		"serviceConnectConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -1614,6 +1638,17 @@ func (e *jsiiProxy_EcsService) PutPlacementConstraints(value interface{}) {
 	)
 }
 
+func (e *jsiiProxy_EcsService) PutServiceConnectConfiguration(value *EcsServiceServiceConnectConfiguration) {
+	if err := e.validatePutServiceConnectConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putServiceConnectConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EcsService) PutServiceRegistries(value *EcsServiceServiceRegistries) {
 	if err := e.validatePutServiceRegistriesParameters(value); err != nil {
 		panic(err)
@@ -1808,6 +1843,14 @@ func (e *jsiiProxy_EcsService) ResetSchedulingStrategy() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetSchedulingStrategy",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsService) ResetServiceConnectConfiguration() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetServiceConnectConfiguration",
 		nil, // no parameters
 	)
 }
