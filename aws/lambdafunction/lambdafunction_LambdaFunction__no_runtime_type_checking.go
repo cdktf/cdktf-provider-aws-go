@@ -72,6 +72,10 @@ func (l *jsiiProxy_LambdaFunction) validatePutImageConfigParameters(value *Lambd
 	return nil
 }
 
+func (l *jsiiProxy_LambdaFunction) validatePutSnapStartParameters(value *LambdaFunctionSnapStart) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaFunction) validatePutTimeoutsParameters(value *LambdaFunctionTimeouts) error {
 	return nil
 }

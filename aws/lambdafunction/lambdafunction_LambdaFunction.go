@@ -126,6 +126,8 @@ type LambdaFunction interface {
 	S3ObjectVersionInput() *string
 	SigningJobArn() *string
 	SigningProfileVersionArn() *string
+	SnapStart() LambdaFunctionSnapStartOutputReference
+	SnapStartInput() *LambdaFunctionSnapStart
 	SourceCodeHash() *string
 	SetSourceCodeHash(val *string)
 	SourceCodeHashInput() *string
@@ -182,6 +184,7 @@ type LambdaFunction interface {
 	PutEphemeralStorage(value *LambdaFunctionEphemeralStorage)
 	PutFileSystemConfig(value *LambdaFunctionFileSystemConfig)
 	PutImageConfig(value *LambdaFunctionImageConfig)
+	PutSnapStart(value *LambdaFunctionSnapStart)
 	PutTimeouts(value *LambdaFunctionTimeouts)
 	PutTracingConfig(value *LambdaFunctionTracingConfig)
 	PutVpcConfig(value *LambdaFunctionVpcConfig)
@@ -210,6 +213,7 @@ type LambdaFunction interface {
 	ResetS3Bucket()
 	ResetS3Key()
 	ResetS3ObjectVersion()
+	ResetSnapStart()
 	ResetSourceCodeHash()
 	ResetTags()
 	ResetTagsAll()
@@ -907,6 +911,26 @@ func (j *jsiiProxy_LambdaFunction) SigningProfileVersionArn() *string {
 	_jsii_.Get(
 		j,
 		"signingProfileVersionArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunction) SnapStart() LambdaFunctionSnapStartOutputReference {
+	var returns LambdaFunctionSnapStartOutputReference
+	_jsii_.Get(
+		j,
+		"snapStart",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunction) SnapStartInput() *LambdaFunctionSnapStart {
+	var returns *LambdaFunctionSnapStart
+	_jsii_.Get(
+		j,
+		"snapStartInput",
 		&returns,
 	)
 	return returns
@@ -1771,6 +1795,17 @@ func (l *jsiiProxy_LambdaFunction) PutImageConfig(value *LambdaFunctionImageConf
 	)
 }
 
+func (l *jsiiProxy_LambdaFunction) PutSnapStart(value *LambdaFunctionSnapStart) {
+	if err := l.validatePutSnapStartParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putSnapStart",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LambdaFunction) PutTimeouts(value *LambdaFunctionTimeouts) {
 	if err := l.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1984,6 +2019,14 @@ func (l *jsiiProxy_LambdaFunction) ResetS3ObjectVersion() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetS3ObjectVersion",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaFunction) ResetSnapStart() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSnapStart",
 		nil, // no parameters
 	)
 }

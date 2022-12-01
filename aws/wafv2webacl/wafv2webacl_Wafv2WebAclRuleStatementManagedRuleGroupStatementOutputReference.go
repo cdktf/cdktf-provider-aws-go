@@ -34,6 +34,8 @@ type Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference interface 
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	RuleActionOverride() Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideList
+	RuleActionOverrideInput() interface{}
 	ScopeDownStatement() Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementOutputReference
 	ScopeDownStatementInput() *Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatement
 	// Experimental.
@@ -75,8 +77,10 @@ type Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference interface 
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutExcludedRule(value interface{})
+	PutRuleActionOverride(value interface{})
 	PutScopeDownStatement(value *Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatement)
 	ResetExcludedRule()
+	ResetRuleActionOverride()
 	ResetScopeDownStatement()
 	ResetVersion()
 	// Produce the Token's value at resolution time.
@@ -179,6 +183,26 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputRefere
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference) RuleActionOverride() Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideList {
+	var returns Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideList
+	_jsii_.Get(
+		j,
+		"ruleActionOverride",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference) RuleActionOverrideInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ruleActionOverrideInput",
 		&returns,
 	)
 	return returns
@@ -577,6 +601,17 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputRefere
 	)
 }
 
+func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference) PutRuleActionOverride(value interface{}) {
+	if err := w.validatePutRuleActionOverrideParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putRuleActionOverride",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference) PutScopeDownStatement(value *Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatement) {
 	if err := w.validatePutScopeDownStatementParameters(value); err != nil {
 		panic(err)
@@ -592,6 +627,14 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputRefere
 	_jsii_.InvokeVoid(
 		w,
 		"resetExcludedRule",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference) ResetRuleActionOverride() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRuleActionOverride",
 		nil, // no parameters
 	)
 }

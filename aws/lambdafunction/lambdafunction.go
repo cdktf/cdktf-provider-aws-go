@@ -79,6 +79,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putEphemeralStorage", GoMethod: "PutEphemeralStorage"},
 			_jsii_.MemberMethod{JsiiMethod: "putFileSystemConfig", GoMethod: "PutFileSystemConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putImageConfig", GoMethod: "PutImageConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putSnapStart", GoMethod: "PutSnapStart"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putTracingConfig", GoMethod: "PutTracingConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putVpcConfig", GoMethod: "PutVpcConfig"},
@@ -110,6 +111,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetS3Bucket", GoMethod: "ResetS3Bucket"},
 			_jsii_.MemberMethod{JsiiMethod: "resetS3Key", GoMethod: "ResetS3Key"},
 			_jsii_.MemberMethod{JsiiMethod: "resetS3ObjectVersion", GoMethod: "ResetS3ObjectVersion"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSnapStart", GoMethod: "ResetSnapStart"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSourceCodeHash", GoMethod: "ResetSourceCodeHash"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
@@ -129,6 +131,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "s3ObjectVersionInput", GoGetter: "S3ObjectVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "signingJobArn", GoGetter: "SigningJobArn"},
 			_jsii_.MemberProperty{JsiiProperty: "signingProfileVersionArn", GoGetter: "SigningProfileVersionArn"},
+			_jsii_.MemberProperty{JsiiProperty: "snapStart", GoGetter: "SnapStart"},
+			_jsii_.MemberProperty{JsiiProperty: "snapStartInput", GoGetter: "SnapStartInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceCodeHash", GoGetter: "SourceCodeHash"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceCodeHashInput", GoGetter: "SourceCodeHashInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceCodeSize", GoGetter: "SourceCodeSize"},
@@ -360,6 +364,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LambdaFunctionImageConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionSnapStart",
+		reflect.TypeOf((*LambdaFunctionSnapStart)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionSnapStartOutputReference",
+		reflect.TypeOf((*LambdaFunctionSnapStartOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "applyOn", GoGetter: "ApplyOn"},
+			_jsii_.MemberProperty{JsiiProperty: "applyOnInput", GoGetter: "ApplyOnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "optimizationStatus", GoGetter: "OptimizationStatus"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LambdaFunctionSnapStartOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
