@@ -85,6 +85,7 @@ type DataAwsDbInstance interface {
 	ReplicateSourceDb() *string
 	ResourceId() *string
 	StorageEncrypted() cdktf.IResolvable
+	StorageThroughput() *float64
 	StorageType() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -637,6 +638,16 @@ func (j *jsiiProxy_DataAwsDbInstance) StorageEncrypted() cdktf.IResolvable {
 	_jsii_.Get(
 		j,
 		"storageEncrypted",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDbInstance) StorageThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"storageThroughput",
 		&returns,
 	)
 	return returns

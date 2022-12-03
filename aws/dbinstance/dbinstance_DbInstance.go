@@ -223,6 +223,9 @@ type DbInstance interface {
 	StorageEncrypted() interface{}
 	SetStorageEncrypted(val interface{})
 	StorageEncryptedInput() interface{}
+	StorageThroughput() *float64
+	SetStorageThroughput(val *float64)
+	StorageThroughputInput() *float64
 	StorageType() *string
 	SetStorageType(val *string)
 	StorageTypeInput() *string
@@ -335,6 +338,7 @@ type DbInstance interface {
 	ResetSkipFinalSnapshot()
 	ResetSnapshotIdentifier()
 	ResetStorageEncrypted()
+	ResetStorageThroughput()
 	ResetStorageType()
 	ResetTags()
 	ResetTagsAll()
@@ -1677,6 +1681,26 @@ func (j *jsiiProxy_DbInstance) StorageEncryptedInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DbInstance) StorageThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"storageThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) StorageThroughputInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"storageThroughputInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DbInstance) StorageType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2514,6 +2538,17 @@ func (j *jsiiProxy_DbInstance)SetStorageEncrypted(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_DbInstance)SetStorageThroughput(val *float64) {
+	if err := j.validateSetStorageThroughputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageThroughput",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DbInstance)SetStorageType(val *string) {
 	if err := j.validateSetStorageTypeParameters(val); err != nil {
 		panic(err)
@@ -3326,6 +3361,14 @@ func (d *jsiiProxy_DbInstance) ResetStorageEncrypted() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetStorageEncrypted",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbInstance) ResetStorageThroughput() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStorageThroughput",
 		nil, // no parameters
 	)
 }

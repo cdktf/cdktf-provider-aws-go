@@ -16,6 +16,7 @@ type DataAwsEksCluster interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CertificateAuthority() DataAwsEksClusterCertificateAuthorityList
+	ClusterId() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -142,6 +143,16 @@ func (j *jsiiProxy_DataAwsEksCluster) CertificateAuthority() DataAwsEksClusterCe
 	_jsii_.Get(
 		j,
 		"certificateAuthority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEksCluster) ClusterId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterId",
 		&returns,
 	)
 	return returns

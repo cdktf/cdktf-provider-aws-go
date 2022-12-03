@@ -1172,6 +1172,10 @@ type AwsProviderEndpoints struct {
 	Resiliencehub *string `field:"optional" json:"resiliencehub" yaml:"resiliencehub"`
 	// Use this to override the default service endpoint URL.
 	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#resourceexplorer2 AwsProvider#resourceexplorer2}
+	Resourceexplorer2 *string `field:"optional" json:"resourceexplorer2" yaml:"resourceexplorer2"`
+	// Use this to override the default service endpoint URL.
+	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#resourcegroups AwsProvider#resourcegroups}
 	Resourcegroups *string `field:"optional" json:"resourcegroups" yaml:"resourcegroups"`
 	// Use this to override the default service endpoint URL.

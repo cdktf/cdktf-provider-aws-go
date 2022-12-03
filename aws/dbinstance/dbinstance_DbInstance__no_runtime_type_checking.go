@@ -300,6 +300,10 @@ func (j *jsiiProxy_DbInstance) validateSetStorageEncryptedParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_DbInstance) validateSetStorageThroughputParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbInstance) validateSetStorageTypeParameters(val *string) error {
 	return nil
 }

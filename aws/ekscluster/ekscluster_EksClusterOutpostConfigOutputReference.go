@@ -23,6 +23,8 @@ type EksClusterOutpostConfigOutputReference interface {
 	ControlPlaneInstanceType() *string
 	SetControlPlaneInstanceType(val *string)
 	ControlPlaneInstanceTypeInput() *string
+	ControlPlanePlacement() EksClusterOutpostConfigControlPlanePlacementOutputReference
+	ControlPlanePlacementInput() *EksClusterOutpostConfigControlPlanePlacement
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -67,6 +69,8 @@ type EksClusterOutpostConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutControlPlanePlacement(value *EksClusterOutpostConfigControlPlanePlacement)
+	ResetControlPlanePlacement()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -117,6 +121,26 @@ func (j *jsiiProxy_EksClusterOutpostConfigOutputReference) ControlPlaneInstanceT
 	_jsii_.Get(
 		j,
 		"controlPlaneInstanceTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksClusterOutpostConfigOutputReference) ControlPlanePlacement() EksClusterOutpostConfigControlPlanePlacementOutputReference {
+	var returns EksClusterOutpostConfigControlPlanePlacementOutputReference
+	_jsii_.Get(
+		j,
+		"controlPlanePlacement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksClusterOutpostConfigOutputReference) ControlPlanePlacementInput() *EksClusterOutpostConfigControlPlanePlacement {
+	var returns *EksClusterOutpostConfigControlPlanePlacement
+	_jsii_.Get(
+		j,
+		"controlPlanePlacementInput",
 		&returns,
 	)
 	return returns
@@ -481,6 +505,25 @@ func (e *jsiiProxy_EksClusterOutpostConfigOutputReference) InterpolationForAttri
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_EksClusterOutpostConfigOutputReference) PutControlPlanePlacement(value *EksClusterOutpostConfigControlPlanePlacement) {
+	if err := e.validatePutControlPlanePlacementParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putControlPlanePlacement",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EksClusterOutpostConfigOutputReference) ResetControlPlanePlacement() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetControlPlanePlacement",
+		nil, // no parameters
+	)
 }
 
 func (e *jsiiProxy_EksClusterOutpostConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

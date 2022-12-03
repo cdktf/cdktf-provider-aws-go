@@ -44,6 +44,10 @@ func (e *jsiiProxy_EksClusterOutpostConfigOutputReference) validateInterpolation
 	return nil
 }
 
+func (e *jsiiProxy_EksClusterOutpostConfigOutputReference) validatePutControlPlanePlacementParameters(value *EksClusterOutpostConfigControlPlanePlacement) error {
+	return nil
+}
+
 func (e *jsiiProxy_EksClusterOutpostConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

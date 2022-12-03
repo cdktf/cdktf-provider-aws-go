@@ -16,6 +16,7 @@ type EksCluster interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CertificateAuthority() EksClusterCertificateAuthorityList
+	ClusterId() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -178,6 +179,16 @@ func (j *jsiiProxy_EksCluster) CertificateAuthority() EksClusterCertificateAutho
 	_jsii_.Get(
 		j,
 		"certificateAuthority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksCluster) ClusterId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterId",
 		&returns,
 	)
 	return returns
