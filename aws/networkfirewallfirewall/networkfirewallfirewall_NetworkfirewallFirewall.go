@@ -35,6 +35,8 @@ type NetworkfirewallFirewall interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EncryptionConfiguration() NetworkfirewallFirewallEncryptionConfigurationOutputReference
+	EncryptionConfigurationInput() *NetworkfirewallFirewallEncryptionConfiguration
 	FirewallPolicyArn() *string
 	SetFirewallPolicyArn(val *string)
 	FirewallPolicyArnInput() *string
@@ -118,9 +120,11 @@ type NetworkfirewallFirewall interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryptionConfiguration(value *NetworkfirewallFirewallEncryptionConfiguration)
 	PutSubnetMapping(value interface{})
 	ResetDeleteProtection()
 	ResetDescription()
+	ResetEncryptionConfiguration()
 	ResetFirewallPolicyChangeProtection()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -239,6 +243,26 @@ func (j *jsiiProxy_NetworkfirewallFirewall) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewall) EncryptionConfiguration() NetworkfirewallFirewallEncryptionConfigurationOutputReference {
+	var returns NetworkfirewallFirewallEncryptionConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewall) EncryptionConfigurationInput() *NetworkfirewallFirewallEncryptionConfiguration {
+	var returns *NetworkfirewallFirewallEncryptionConfiguration
+	_jsii_.Get(
+		j,
+		"encryptionConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -1025,6 +1049,17 @@ func (n *jsiiProxy_NetworkfirewallFirewall) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (n *jsiiProxy_NetworkfirewallFirewall) PutEncryptionConfiguration(value *NetworkfirewallFirewallEncryptionConfiguration) {
+	if err := n.validatePutEncryptionConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putEncryptionConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkfirewallFirewall) PutSubnetMapping(value interface{}) {
 	if err := n.validatePutSubnetMappingParameters(value); err != nil {
 		panic(err)
@@ -1048,6 +1083,14 @@ func (n *jsiiProxy_NetworkfirewallFirewall) ResetDescription() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkfirewallFirewall) ResetEncryptionConfiguration() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetEncryptionConfiguration",
 		nil, // no parameters
 	)
 }

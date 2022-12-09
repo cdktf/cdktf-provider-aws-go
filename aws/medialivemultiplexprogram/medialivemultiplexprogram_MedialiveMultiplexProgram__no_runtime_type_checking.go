@@ -52,7 +52,7 @@ func (m *jsiiProxy_MedialiveMultiplexProgram) validateOverrideLogicalIdParameter
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveMultiplexProgram) validatePutMultiplexProgramSettingsParameters(value *MedialiveMultiplexProgramMultiplexProgramSettings) error {
+func (m *jsiiProxy_MedialiveMultiplexProgram) validatePutMultiplexProgramSettingsParameters(value interface{}) error {
 	return nil
 }
 

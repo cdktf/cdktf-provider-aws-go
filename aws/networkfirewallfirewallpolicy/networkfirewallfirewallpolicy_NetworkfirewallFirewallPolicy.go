@@ -32,6 +32,8 @@ type NetworkfirewallFirewallPolicy interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EncryptionConfiguration() NetworkfirewallFirewallPolicyEncryptionConfigurationOutputReference
+	EncryptionConfigurationInput() *NetworkfirewallFirewallPolicyEncryptionConfiguration
 	FirewallPolicy() NetworkfirewallFirewallPolicyFirewallPolicyOutputReference
 	FirewallPolicyInput() *NetworkfirewallFirewallPolicyFirewallPolicy
 	// Experimental.
@@ -102,8 +104,10 @@ type NetworkfirewallFirewallPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryptionConfiguration(value *NetworkfirewallFirewallPolicyEncryptionConfiguration)
 	PutFirewallPolicy(value *NetworkfirewallFirewallPolicyFirewallPolicy)
 	ResetDescription()
+	ResetEncryptionConfiguration()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -200,6 +204,26 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicy) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewallPolicy) EncryptionConfiguration() NetworkfirewallFirewallPolicyEncryptionConfigurationOutputReference {
+	var returns NetworkfirewallFirewallPolicyEncryptionConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewallPolicy) EncryptionConfigurationInput() *NetworkfirewallFirewallPolicyEncryptionConfiguration {
+	var returns *NetworkfirewallFirewallPolicyEncryptionConfiguration
+	_jsii_.Get(
+		j,
+		"encryptionConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -841,6 +865,17 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicy) OverrideLogicalId(newLogicalId
 	)
 }
 
+func (n *jsiiProxy_NetworkfirewallFirewallPolicy) PutEncryptionConfiguration(value *NetworkfirewallFirewallPolicyEncryptionConfiguration) {
+	if err := n.validatePutEncryptionConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putEncryptionConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkfirewallFirewallPolicy) PutFirewallPolicy(value *NetworkfirewallFirewallPolicyFirewallPolicy) {
 	if err := n.validatePutFirewallPolicyParameters(value); err != nil {
 		panic(err)
@@ -856,6 +891,14 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicy) ResetDescription() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkfirewallFirewallPolicy) ResetEncryptionConfiguration() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetEncryptionConfiguration",
 		nil, // no parameters
 	)
 }

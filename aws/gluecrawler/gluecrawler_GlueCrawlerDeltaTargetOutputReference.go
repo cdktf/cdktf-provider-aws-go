@@ -70,6 +70,7 @@ type GlueCrawlerDeltaTargetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetConnectionName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -515,6 +516,14 @@ func (g *jsiiProxy_GlueCrawlerDeltaTargetOutputReference) InterpolationForAttrib
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GlueCrawlerDeltaTargetOutputReference) ResetConnectionName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetConnectionName",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GlueCrawlerDeltaTargetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

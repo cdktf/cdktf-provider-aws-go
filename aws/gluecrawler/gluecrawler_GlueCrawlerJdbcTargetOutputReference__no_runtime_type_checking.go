@@ -60,6 +60,10 @@ func (j *jsiiProxy_GlueCrawlerJdbcTargetOutputReference) validateSetConnectionNa
 	return nil
 }
 
+func (j *jsiiProxy_GlueCrawlerJdbcTargetOutputReference) validateSetEnableAdditionalMetadataParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueCrawlerJdbcTargetOutputReference) validateSetExclusionsParameters(val *[]*string) error {
 	return nil
 }

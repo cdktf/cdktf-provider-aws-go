@@ -52,6 +52,10 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicy) validateOverrideLogicalIdParam
 	return nil
 }
 
+func (n *jsiiProxy_NetworkfirewallFirewallPolicy) validatePutEncryptionConfigurationParameters(value *NetworkfirewallFirewallPolicyEncryptionConfiguration) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkfirewallFirewallPolicy) validatePutFirewallPolicyParameters(value *NetworkfirewallFirewallPolicyFirewallPolicy) error {
 	return nil
 }

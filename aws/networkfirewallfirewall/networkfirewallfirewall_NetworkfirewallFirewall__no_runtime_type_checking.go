@@ -52,6 +52,10 @@ func (n *jsiiProxy_NetworkfirewallFirewall) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (n *jsiiProxy_NetworkfirewallFirewall) validatePutEncryptionConfigurationParameters(value *NetworkfirewallFirewallEncryptionConfiguration) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkfirewallFirewall) validatePutSubnetMappingParameters(value interface{}) error {
 	return nil
 }

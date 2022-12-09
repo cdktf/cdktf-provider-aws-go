@@ -6,6 +6,8 @@ type GlueCrawlerJdbcTarget struct {
 	ConnectionName *string `field:"required" json:"connectionName" yaml:"connectionName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#path GlueCrawler#path}.
 	Path *string `field:"required" json:"path" yaml:"path"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#enable_additional_metadata GlueCrawler#enable_additional_metadata}.
+	EnableAdditionalMetadata *[]*string `field:"optional" json:"enableAdditionalMetadata" yaml:"enableAdditionalMetadata"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#exclusions GlueCrawler#exclusions}.
 	Exclusions *[]*string `field:"optional" json:"exclusions" yaml:"exclusions"`
 }

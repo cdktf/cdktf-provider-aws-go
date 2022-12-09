@@ -27,8 +27,8 @@ type MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputRef
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor
-	SetInternalValue(val *MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	ProviderName() *string
 	SetProviderName(val *string)
 	ProviderNameInput() *string
@@ -122,8 +122,8 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescr
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference) InternalValue() *MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor {
-	var returns *MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -193,29 +193,29 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescr
 }
 
 
-func NewMedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference {
+func NewMedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewMedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewMedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewMedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference_Override(m MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference_Override(m MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
 }
@@ -242,7 +242,7 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescr
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference)SetInternalValue(val *MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor) {
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptorOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

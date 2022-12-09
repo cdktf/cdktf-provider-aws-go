@@ -44,8 +44,8 @@ type MedialiveMultiplexProgram interface {
 	MultiplexId() *string
 	SetMultiplexId(val *string)
 	MultiplexIdInput() *string
-	MultiplexProgramSettings() MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference
-	MultiplexProgramSettingsInput() *MedialiveMultiplexProgramMultiplexProgramSettings
+	MultiplexProgramSettings() MedialiveMultiplexProgramMultiplexProgramSettingsList
+	MultiplexProgramSettingsInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	ProgramName() *string
@@ -92,7 +92,8 @@ type MedialiveMultiplexProgram interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutMultiplexProgramSettings(value *MedialiveMultiplexProgramMultiplexProgramSettings)
+	PutMultiplexProgramSettings(value interface{})
+	ResetMultiplexProgramSettings()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -231,8 +232,8 @@ func (j *jsiiProxy_MedialiveMultiplexProgram) MultiplexIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgram) MultiplexProgramSettings() MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference {
-	var returns MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference
+func (j *jsiiProxy_MedialiveMultiplexProgram) MultiplexProgramSettings() MedialiveMultiplexProgramMultiplexProgramSettingsList {
+	var returns MedialiveMultiplexProgramMultiplexProgramSettingsList
 	_jsii_.Get(
 		j,
 		"multiplexProgramSettings",
@@ -241,8 +242,8 @@ func (j *jsiiProxy_MedialiveMultiplexProgram) MultiplexProgramSettings() Mediali
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgram) MultiplexProgramSettingsInput() *MedialiveMultiplexProgramMultiplexProgramSettings {
-	var returns *MedialiveMultiplexProgramMultiplexProgramSettings
+func (j *jsiiProxy_MedialiveMultiplexProgram) MultiplexProgramSettingsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"multiplexProgramSettingsInput",
@@ -724,7 +725,7 @@ func (m *jsiiProxy_MedialiveMultiplexProgram) OverrideLogicalId(newLogicalId *st
 	)
 }
 
-func (m *jsiiProxy_MedialiveMultiplexProgram) PutMultiplexProgramSettings(value *MedialiveMultiplexProgramMultiplexProgramSettings) {
+func (m *jsiiProxy_MedialiveMultiplexProgram) PutMultiplexProgramSettings(value interface{}) {
 	if err := m.validatePutMultiplexProgramSettingsParameters(value); err != nil {
 		panic(err)
 	}
@@ -732,6 +733,14 @@ func (m *jsiiProxy_MedialiveMultiplexProgram) PutMultiplexProgramSettings(value 
 		m,
 		"putMultiplexProgramSettings",
 		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MedialiveMultiplexProgram) ResetMultiplexProgramSettings() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMultiplexProgramSettings",
+		nil, // no parameters
 	)
 }
 

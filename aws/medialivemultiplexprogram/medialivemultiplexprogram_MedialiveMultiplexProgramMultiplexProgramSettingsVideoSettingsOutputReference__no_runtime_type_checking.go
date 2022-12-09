@@ -44,11 +44,11 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) validatePutStatemuxSettingsParameters(value *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings) error {
+func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) validatePutStatemuxSettingsParameters(value interface{}) error {
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) validatePutStatmuxSettingsParameters(value *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings) error {
+func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) validatePutStatmuxSettingsParameters(value interface{}) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) validateSetInternalValueParameters(val *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings) error {
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 	return nil
 }
 
-func validateNewMedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

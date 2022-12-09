@@ -9,10 +9,10 @@ type MedialiveMultiplexProgramMultiplexProgramSettings struct {
 	// service_descriptor block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_multiplex_program#service_descriptor MedialiveMultiplexProgram#service_descriptor}
-	ServiceDescriptor *MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor `field:"optional" json:"serviceDescriptor" yaml:"serviceDescriptor"`
+	ServiceDescriptor interface{} `field:"optional" json:"serviceDescriptor" yaml:"serviceDescriptor"`
 	// video_settings block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_multiplex_program#video_settings MedialiveMultiplexProgram#video_settings}
-	VideoSettings *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings `field:"optional" json:"videoSettings" yaml:"videoSettings"`
+	VideoSettings interface{} `field:"optional" json:"videoSettings" yaml:"videoSettings"`
 }
 

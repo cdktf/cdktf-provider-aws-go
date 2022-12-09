@@ -1092,6 +1092,10 @@ type AwsProviderEndpoints struct {
 	Pinpointsmsvoice *string `field:"optional" json:"pinpointsmsvoice" yaml:"pinpointsmsvoice"`
 	// Use this to override the default service endpoint URL.
 	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#pipes AwsProvider#pipes}
+	Pipes *string `field:"optional" json:"pipes" yaml:"pipes"`
+	// Use this to override the default service endpoint URL.
+	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#polly AwsProvider#polly}
 	Polly *string `field:"optional" json:"polly" yaml:"polly"`
 	// Use this to override the default service endpoint URL.

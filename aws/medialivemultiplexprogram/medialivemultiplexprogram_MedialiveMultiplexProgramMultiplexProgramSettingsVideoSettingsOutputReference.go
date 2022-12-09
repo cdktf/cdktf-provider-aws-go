@@ -30,12 +30,12 @@ type MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReferen
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings
-	SetInternalValue(val *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings)
-	StatemuxSettings() MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsOutputReference
-	StatemuxSettingsInput() *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings
-	StatmuxSettings() MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference
-	StatmuxSettingsInput() *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
+	StatemuxSettings() MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsList
+	StatemuxSettingsInput() interface{}
+	StatmuxSettings() MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsList
+	StatmuxSettingsInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,8 +68,8 @@ type MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReferen
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutStatemuxSettings(value *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings)
-	PutStatmuxSettings(value *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings)
+	PutStatemuxSettings(value interface{})
+	PutStatmuxSettings(value interface{})
 	ResetConstantBitrate()
 	ResetStatemuxSettings()
 	ResetStatmuxSettings()
@@ -148,8 +148,8 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) InternalValue() *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings {
-	var returns *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) StatemuxSettings() MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsOutputReference {
-	var returns MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsOutputReference
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) StatemuxSettings() MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsList {
+	var returns MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsList
 	_jsii_.Get(
 		j,
 		"statemuxSettings",
@@ -168,8 +168,8 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) StatemuxSettingsInput() *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings {
-	var returns *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) StatemuxSettingsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"statemuxSettingsInput",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) StatmuxSettings() MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference {
-	var returns MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsOutputReference
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) StatmuxSettings() MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsList {
+	var returns MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsList
 	_jsii_.Get(
 		j,
 		"statmuxSettings",
@@ -188,8 +188,8 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) StatmuxSettingsInput() *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings {
-	var returns *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) StatmuxSettingsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"statmuxSettingsInput",
@@ -219,29 +219,29 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 }
 
 
-func NewMedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference {
+func NewMedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewMedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewMedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewMedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference_Override(m MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference_Override(m MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.medialiveMultiplexProgram.MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
 }
@@ -279,7 +279,7 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference)SetInternalValue(val *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings) {
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -498,7 +498,7 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) PutStatemuxSettings(value *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings) {
+func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) PutStatemuxSettings(value interface{}) {
 	if err := m.validatePutStatemuxSettingsParameters(value); err != nil {
 		panic(err)
 	}
@@ -509,7 +509,7 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 	)
 }
 
-func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) PutStatmuxSettings(value *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettings) {
+func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) PutStatmuxSettings(value interface{}) {
 	if err := m.validatePutStatmuxSettingsParameters(value); err != nil {
 		panic(err)
 	}

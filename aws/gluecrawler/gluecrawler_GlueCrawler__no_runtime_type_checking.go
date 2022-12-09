@@ -68,6 +68,10 @@ func (g *jsiiProxy_GlueCrawler) validatePutJdbcTargetParameters(value interface{
 	return nil
 }
 
+func (g *jsiiProxy_GlueCrawler) validatePutLakeFormationConfigurationParameters(value *GlueCrawlerLakeFormationConfiguration) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueCrawler) validatePutLineageConfigurationParameters(value *GlueCrawlerLineageConfiguration) error {
 	return nil
 }

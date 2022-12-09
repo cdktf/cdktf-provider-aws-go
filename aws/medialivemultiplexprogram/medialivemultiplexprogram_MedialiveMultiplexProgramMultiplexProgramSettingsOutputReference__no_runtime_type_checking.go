@@ -44,11 +44,11 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) validatePutServiceDescriptorParameters(value *MedialiveMultiplexProgramMultiplexProgramSettingsServiceDescriptor) error {
+func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) validatePutServiceDescriptorParameters(value interface{}) error {
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) validatePutVideoSettingsParameters(value *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings) error {
+func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) validatePutVideoSettingsParameters(value interface{}) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) validateSetInternalValueParameters(val *MedialiveMultiplexProgramMultiplexProgramSettings) error {
+func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsOutputRefere
 	return nil
 }
 
-func validateNewMedialiveMultiplexProgramMultiplexProgramSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMedialiveMultiplexProgramMultiplexProgramSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

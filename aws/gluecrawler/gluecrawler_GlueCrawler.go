@@ -60,6 +60,8 @@ type GlueCrawler interface {
 	IdInput() *string
 	JdbcTarget() GlueCrawlerJdbcTargetList
 	JdbcTargetInput() interface{}
+	LakeFormationConfiguration() GlueCrawlerLakeFormationConfigurationOutputReference
+	LakeFormationConfigurationInput() *GlueCrawlerLakeFormationConfiguration
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -142,6 +144,7 @@ type GlueCrawler interface {
 	PutDeltaTarget(value interface{})
 	PutDynamodbTarget(value interface{})
 	PutJdbcTarget(value interface{})
+	PutLakeFormationConfiguration(value *GlueCrawlerLakeFormationConfiguration)
 	PutLineageConfiguration(value *GlueCrawlerLineageConfiguration)
 	PutMongodbTarget(value interface{})
 	PutRecrawlPolicy(value *GlueCrawlerRecrawlPolicy)
@@ -155,6 +158,7 @@ type GlueCrawler interface {
 	ResetDynamodbTarget()
 	ResetId()
 	ResetJdbcTarget()
+	ResetLakeFormationConfiguration()
 	ResetLineageConfiguration()
 	ResetMongodbTarget()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -448,6 +452,26 @@ func (j *jsiiProxy_GlueCrawler) JdbcTargetInput() interface{} {
 	_jsii_.Get(
 		j,
 		"jdbcTargetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCrawler) LakeFormationConfiguration() GlueCrawlerLakeFormationConfigurationOutputReference {
+	var returns GlueCrawlerLakeFormationConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"lakeFormationConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCrawler) LakeFormationConfigurationInput() *GlueCrawlerLakeFormationConfiguration {
+	var returns *GlueCrawlerLakeFormationConfiguration
+	_jsii_.Get(
+		j,
+		"lakeFormationConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -1310,6 +1334,17 @@ func (g *jsiiProxy_GlueCrawler) PutJdbcTarget(value interface{}) {
 	)
 }
 
+func (g *jsiiProxy_GlueCrawler) PutLakeFormationConfiguration(value *GlueCrawlerLakeFormationConfiguration) {
+	if err := g.validatePutLakeFormationConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putLakeFormationConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GlueCrawler) PutLineageConfiguration(value *GlueCrawlerLineageConfiguration) {
 	if err := g.validatePutLineageConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1425,6 +1460,14 @@ func (g *jsiiProxy_GlueCrawler) ResetJdbcTarget() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetJdbcTarget",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueCrawler) ResetLakeFormationConfiguration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLakeFormationConfiguration",
 		nil, // no parameters
 	)
 }

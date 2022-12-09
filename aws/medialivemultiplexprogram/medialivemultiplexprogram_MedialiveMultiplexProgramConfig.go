@@ -21,11 +21,11 @@ type MedialiveMultiplexProgramConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_multiplex_program#multiplex_id MedialiveMultiplexProgram#multiplex_id}.
 	MultiplexId *string `field:"required" json:"multiplexId" yaml:"multiplexId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_multiplex_program#program_name MedialiveMultiplexProgram#program_name}.
+	ProgramName *string `field:"required" json:"programName" yaml:"programName"`
 	// multiplex_program_settings block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_multiplex_program#multiplex_program_settings MedialiveMultiplexProgram#multiplex_program_settings}
-	MultiplexProgramSettings *MedialiveMultiplexProgramMultiplexProgramSettings `field:"required" json:"multiplexProgramSettings" yaml:"multiplexProgramSettings"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_multiplex_program#program_name MedialiveMultiplexProgram#program_name}.
-	ProgramName *string `field:"required" json:"programName" yaml:"programName"`
+	MultiplexProgramSettings interface{} `field:"optional" json:"multiplexProgramSettings" yaml:"multiplexProgramSettings"`
 }
 

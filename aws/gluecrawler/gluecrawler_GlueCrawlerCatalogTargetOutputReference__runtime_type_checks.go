@@ -163,7 +163,31 @@ func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) validateSetComplexOb
 	return nil
 }
 
+func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) validateSetConnectionNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) validateSetDatabaseNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) validateSetDlqEventQueueArnParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) validateSetEventQueueArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

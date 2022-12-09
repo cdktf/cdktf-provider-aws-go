@@ -171,6 +171,14 @@ func (j *jsiiProxy_GlueCrawlerJdbcTargetOutputReference) validateSetConnectionNa
 	return nil
 }
 
+func (j *jsiiProxy_GlueCrawlerJdbcTargetOutputReference) validateSetEnableAdditionalMetadataParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GlueCrawlerJdbcTargetOutputReference) validateSetExclusionsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

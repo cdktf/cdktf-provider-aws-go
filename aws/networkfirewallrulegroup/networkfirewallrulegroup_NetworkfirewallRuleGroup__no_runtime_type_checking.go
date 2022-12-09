@@ -52,6 +52,10 @@ func (n *jsiiProxy_NetworkfirewallRuleGroup) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (n *jsiiProxy_NetworkfirewallRuleGroup) validatePutEncryptionConfigurationParameters(value *NetworkfirewallRuleGroupEncryptionConfiguration) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkfirewallRuleGroup) validatePutRuleGroupParameters(value *NetworkfirewallRuleGroupRuleGroup) error {
 	return nil
 }

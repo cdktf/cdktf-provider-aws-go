@@ -28,6 +28,9 @@ type GlueCrawlerJdbcTargetOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableAdditionalMetadata() *[]*string
+	SetEnableAdditionalMetadata(val *[]*string)
+	EnableAdditionalMetadataInput() *[]*string
 	Exclusions() *[]*string
 	SetExclusions(val *[]*string)
 	ExclusionsInput() *[]*string
@@ -70,6 +73,7 @@ type GlueCrawlerJdbcTargetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEnableAdditionalMetadata()
 	ResetExclusions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -131,6 +135,26 @@ func (j *jsiiProxy_GlueCrawlerJdbcTargetOutputReference) CreationStack() *[]*str
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCrawlerJdbcTargetOutputReference) EnableAdditionalMetadata() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enableAdditionalMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCrawlerJdbcTargetOutputReference) EnableAdditionalMetadataInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"enableAdditionalMetadataInput",
 		&returns,
 	)
 	return returns
@@ -273,6 +297,17 @@ func (j *jsiiProxy_GlueCrawlerJdbcTargetOutputReference)SetConnectionName(val *s
 	_jsii_.Set(
 		j,
 		"connectionName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueCrawlerJdbcTargetOutputReference)SetEnableAdditionalMetadata(val *[]*string) {
+	if err := j.validateSetEnableAdditionalMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableAdditionalMetadata",
 		val,
 	)
 }
@@ -516,6 +551,14 @@ func (g *jsiiProxy_GlueCrawlerJdbcTargetOutputReference) InterpolationForAttribu
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GlueCrawlerJdbcTargetOutputReference) ResetEnableAdditionalMetadata() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableAdditionalMetadata",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GlueCrawlerJdbcTargetOutputReference) ResetExclusions() {

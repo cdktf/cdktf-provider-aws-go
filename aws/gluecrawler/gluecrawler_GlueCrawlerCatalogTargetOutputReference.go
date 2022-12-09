@@ -20,6 +20,9 @@ type GlueCrawlerCatalogTargetOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectionName() *string
+	SetConnectionName(val *string)
+	ConnectionNameInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -28,6 +31,12 @@ type GlueCrawlerCatalogTargetOutputReference interface {
 	DatabaseName() *string
 	SetDatabaseName(val *string)
 	DatabaseNameInput() *string
+	DlqEventQueueArn() *string
+	SetDlqEventQueueArn(val *string)
+	DlqEventQueueArnInput() *string
+	EventQueueArn() *string
+	SetEventQueueArn(val *string)
+	EventQueueArnInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -67,6 +76,9 @@ type GlueCrawlerCatalogTargetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetConnectionName()
+	ResetDlqEventQueueArn()
+	ResetEventQueueArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -102,6 +114,26 @@ func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) ComplexObjectIsFromS
 	return returns
 }
 
+func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) ConnectionName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) ConnectionNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -127,6 +159,46 @@ func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) DatabaseNameInput() 
 	_jsii_.Get(
 		j,
 		"databaseNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) DlqEventQueueArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dlqEventQueueArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) DlqEventQueueArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dlqEventQueueArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) EventQueueArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"eventQueueArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) EventQueueArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"eventQueueArnInput",
 		&returns,
 	)
 	return returns
@@ -242,6 +314,17 @@ func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference)SetComplexObjectIsFro
 	)
 }
 
+func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference)SetConnectionName(val *string) {
+	if err := j.validateSetConnectionNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connectionName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference)SetDatabaseName(val *string) {
 	if err := j.validateSetDatabaseNameParameters(val); err != nil {
 		panic(err)
@@ -249,6 +332,28 @@ func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference)SetDatabaseName(val *
 	_jsii_.Set(
 		j,
 		"databaseName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference)SetDlqEventQueueArn(val *string) {
+	if err := j.validateSetDlqEventQueueArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dlqEventQueueArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueCrawlerCatalogTargetOutputReference)SetEventQueueArn(val *string) {
+	if err := j.validateSetEventQueueArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"eventQueueArn",
 		val,
 	)
 }
@@ -481,6 +586,30 @@ func (g *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) InterpolationForAttr
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) ResetConnectionName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetConnectionName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) ResetDlqEventQueueArn() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDlqEventQueueArn",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) ResetEventQueueArn() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEventQueueArn",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GlueCrawlerCatalogTargetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

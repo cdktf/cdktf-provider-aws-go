@@ -52,6 +52,10 @@ type GlueCrawlerConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#jdbc_target GlueCrawler#jdbc_target}
 	JdbcTarget interface{} `field:"optional" json:"jdbcTarget" yaml:"jdbcTarget"`
+	// lake_formation_configuration block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#lake_formation_configuration GlueCrawler#lake_formation_configuration}
+	LakeFormationConfiguration *GlueCrawlerLakeFormationConfiguration `field:"optional" json:"lakeFormationConfiguration" yaml:"lakeFormationConfiguration"`
 	// lineage_configuration block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#lineage_configuration GlueCrawler#lineage_configuration}

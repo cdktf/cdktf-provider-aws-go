@@ -35,6 +35,8 @@ type NetworkfirewallRuleGroup interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EncryptionConfiguration() NetworkfirewallRuleGroupEncryptionConfigurationOutputReference
+	EncryptionConfigurationInput() *NetworkfirewallRuleGroupEncryptionConfiguration
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -111,8 +113,10 @@ type NetworkfirewallRuleGroup interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryptionConfiguration(value *NetworkfirewallRuleGroupEncryptionConfiguration)
 	PutRuleGroup(value *NetworkfirewallRuleGroupRuleGroup)
 	ResetDescription()
+	ResetEncryptionConfiguration()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -231,6 +235,26 @@ func (j *jsiiProxy_NetworkfirewallRuleGroup) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallRuleGroup) EncryptionConfiguration() NetworkfirewallRuleGroupEncryptionConfigurationOutputReference {
+	var returns NetworkfirewallRuleGroupEncryptionConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallRuleGroup) EncryptionConfigurationInput() *NetworkfirewallRuleGroupEncryptionConfiguration {
+	var returns *NetworkfirewallRuleGroupEncryptionConfiguration
+	_jsii_.Get(
+		j,
+		"encryptionConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -945,6 +969,17 @@ func (n *jsiiProxy_NetworkfirewallRuleGroup) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (n *jsiiProxy_NetworkfirewallRuleGroup) PutEncryptionConfiguration(value *NetworkfirewallRuleGroupEncryptionConfiguration) {
+	if err := n.validatePutEncryptionConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putEncryptionConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkfirewallRuleGroup) PutRuleGroup(value *NetworkfirewallRuleGroupRuleGroup) {
 	if err := n.validatePutRuleGroupParameters(value); err != nil {
 		panic(err)
@@ -960,6 +995,14 @@ func (n *jsiiProxy_NetworkfirewallRuleGroup) ResetDescription() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkfirewallRuleGroup) ResetEncryptionConfiguration() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetEncryptionConfiguration",
 		nil, // no parameters
 	)
 }
