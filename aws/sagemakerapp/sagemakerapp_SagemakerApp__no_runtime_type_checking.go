@@ -96,6 +96,10 @@ func (j *jsiiProxy_SagemakerApp) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerApp) validateSetSpaceNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerApp) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

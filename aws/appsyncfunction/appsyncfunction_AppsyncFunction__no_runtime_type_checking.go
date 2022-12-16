@@ -52,6 +52,10 @@ func (a *jsiiProxy_AppsyncFunction) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (a *jsiiProxy_AppsyncFunction) validatePutRuntimeParameters(value *AppsyncFunctionRuntime) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppsyncFunction) validatePutSyncConfigParameters(value *AppsyncFunctionSyncConfig) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func validateAppsyncFunction_IsTerraformResourceParameters(x interface{}) error 
 }
 
 func (j *jsiiProxy_AppsyncFunction) validateSetApiIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppsyncFunction) validateSetCodeParameters(val *string) error {
 	return nil
 }
 

@@ -106,6 +106,8 @@ type GrafanaWorkspace interface {
 	TerraformResourceType() *string
 	Timeouts() GrafanaWorkspaceTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	VpcConfiguration() GrafanaWorkspaceVpcConfigurationOutputReference
+	VpcConfigurationInput() *GrafanaWorkspaceVpcConfiguration
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -132,6 +134,7 @@ type GrafanaWorkspace interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GrafanaWorkspaceTimeouts)
+	PutVpcConfiguration(value *GrafanaWorkspaceVpcConfiguration)
 	ResetDataSources()
 	ResetDescription()
 	ResetId()
@@ -147,6 +150,7 @@ type GrafanaWorkspace interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
+	ResetVpcConfiguration()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -657,6 +661,26 @@ func (j *jsiiProxy_GrafanaWorkspace) TimeoutsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GrafanaWorkspace) VpcConfiguration() GrafanaWorkspaceVpcConfigurationOutputReference {
+	var returns GrafanaWorkspaceVpcConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"vpcConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GrafanaWorkspace) VpcConfigurationInput() *GrafanaWorkspaceVpcConfiguration {
+	var returns *GrafanaWorkspaceVpcConfiguration
+	_jsii_.Get(
+		j,
+		"vpcConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -1188,6 +1212,17 @@ func (g *jsiiProxy_GrafanaWorkspace) PutTimeouts(value *GrafanaWorkspaceTimeouts
 	)
 }
 
+func (g *jsiiProxy_GrafanaWorkspace) PutVpcConfiguration(value *GrafanaWorkspaceVpcConfiguration) {
+	if err := g.validatePutVpcConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putVpcConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GrafanaWorkspace) ResetDataSources() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1288,6 +1323,14 @@ func (g *jsiiProxy_GrafanaWorkspace) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GrafanaWorkspace) ResetVpcConfiguration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVpcConfiguration",
 		nil, // no parameters
 	)
 }

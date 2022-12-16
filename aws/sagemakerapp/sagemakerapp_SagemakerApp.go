@@ -67,6 +67,9 @@ type SagemakerApp interface {
 	RawOverrides() interface{}
 	ResourceSpec() SagemakerAppResourceSpecOutputReference
 	ResourceSpecInput() *SagemakerAppResourceSpec
+	SpaceName() *string
+	SetSpaceName(val *string)
+	SpaceNameInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -113,8 +116,10 @@ type SagemakerApp interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetResourceSpec()
+	ResetSpaceName()
 	ResetTags()
 	ResetTagsAll()
+	ResetUserProfileName()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -370,6 +375,26 @@ func (j *jsiiProxy_SagemakerApp) ResourceSpecInput() *SagemakerAppResourceSpec {
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerApp) SpaceName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"spaceName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerApp) SpaceNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"spaceNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerApp) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -595,6 +620,17 @@ func (j *jsiiProxy_SagemakerApp)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerApp)SetSpaceName(val *string) {
+	if err := j.validateSetSpaceNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"spaceName",
 		val,
 	)
 }
@@ -933,6 +969,14 @@ func (s *jsiiProxy_SagemakerApp) ResetResourceSpec() {
 	)
 }
 
+func (s *jsiiProxy_SagemakerApp) ResetSpaceName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSpaceName",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SagemakerApp) ResetTags() {
 	_jsii_.InvokeVoid(
 		s,
@@ -945,6 +989,14 @@ func (s *jsiiProxy_SagemakerApp) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerApp) ResetUserProfileName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetUserProfileName",
 		nil, // no parameters
 	)
 }

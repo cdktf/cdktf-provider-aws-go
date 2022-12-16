@@ -52,6 +52,10 @@ func (s *jsiiProxy_SagemakerDomain) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDomain) validatePutDefaultSpaceSettingsParameters(value *SagemakerDomainDefaultSpaceSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDomain) validatePutDefaultUserSettingsParameters(value *SagemakerDomainDefaultUserSettings) error {
 	return nil
 }

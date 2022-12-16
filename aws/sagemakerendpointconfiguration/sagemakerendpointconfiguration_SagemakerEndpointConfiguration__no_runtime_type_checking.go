@@ -64,6 +64,10 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) validatePutProductionVariants
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerEndpointConfiguration) validatePutShadowProductionVariantsParameters(value interface{}) error {
+	return nil
+}
+
 func validateSagemakerEndpointConfiguration_IsConstructParameters(x interface{}) error {
 	return nil
 }

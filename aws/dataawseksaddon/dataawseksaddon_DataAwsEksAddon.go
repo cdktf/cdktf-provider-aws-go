@@ -22,6 +22,7 @@ type DataAwsEksAddon interface {
 	ClusterName() *string
 	SetClusterName(val *string)
 	ClusterNameInput() *string
+	ConfigurationValues() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -177,6 +178,16 @@ func (j *jsiiProxy_DataAwsEksAddon) ClusterNameInput() *string {
 	_jsii_.Get(
 		j,
 		"clusterNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEksAddon) ConfigurationValues() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configurationValues",
 		&returns,
 	)
 	return returns

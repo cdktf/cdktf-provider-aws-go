@@ -54,5 +54,9 @@ type GrafanaWorkspaceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#timeouts GrafanaWorkspace#timeouts}
 	Timeouts *GrafanaWorkspaceTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+	// vpc_configuration block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#vpc_configuration GrafanaWorkspace#vpc_configuration}
+	VpcConfiguration *GrafanaWorkspaceVpcConfiguration `field:"optional" json:"vpcConfiguration" yaml:"vpcConfiguration"`
 }
 

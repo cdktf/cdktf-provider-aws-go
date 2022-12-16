@@ -56,6 +56,10 @@ func (g *jsiiProxy_GrafanaWorkspace) validatePutTimeoutsParameters(value *Grafan
 	return nil
 }
 
+func (g *jsiiProxy_GrafanaWorkspace) validatePutVpcConfigurationParameters(value *GrafanaWorkspaceVpcConfiguration) error {
+	return nil
+}
+
 func validateGrafanaWorkspace_IsConstructParameters(x interface{}) error {
 	return nil
 }

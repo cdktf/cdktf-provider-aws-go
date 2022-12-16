@@ -44,6 +44,10 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOut
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference) validatePutCodeRepositoryParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference) validatePutDefaultResourceSpecParameters(value *SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec) error {
 	return nil
 }

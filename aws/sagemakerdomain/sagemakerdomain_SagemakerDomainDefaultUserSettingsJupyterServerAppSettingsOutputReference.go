@@ -10,6 +10,8 @@ import (
 
 type SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference interface {
 	cdktf.ComplexObject
+	CodeRepository() SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsCodeRepositoryList
+	CodeRepositoryInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -66,7 +68,9 @@ type SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference i
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCodeRepository(value interface{})
 	PutDefaultResourceSpec(value *SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec)
+	ResetCodeRepository()
 	ResetDefaultResourceSpec()
 	ResetLifecycleConfigArns()
 	// Produce the Token's value at resolution time.
@@ -82,6 +86,26 @@ type SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference i
 // The jsii proxy struct for SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference
 type jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference) CodeRepository() SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsCodeRepositoryList {
+	var returns SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsCodeRepositoryList
+	_jsii_.Get(
+		j,
+		"codeRepository",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference) CodeRepositoryInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"codeRepositoryInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference) ComplexObjectIndex() interface{} {
@@ -474,6 +498,17 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOut
 	return returns
 }
 
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference) PutCodeRepository(value interface{}) {
+	if err := s.validatePutCodeRepositoryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCodeRepository",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference) PutDefaultResourceSpec(value *SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec) {
 	if err := s.validatePutDefaultResourceSpecParameters(value); err != nil {
 		panic(err)
@@ -482,6 +517,14 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOut
 		s,
 		"putDefaultResourceSpec",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsJupyterServerAppSettingsOutputReference) ResetCodeRepository() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCodeRepository",
+		nil, // no parameters
 	)
 }
 

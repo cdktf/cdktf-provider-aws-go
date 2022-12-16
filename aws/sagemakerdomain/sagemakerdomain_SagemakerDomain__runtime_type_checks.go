@@ -111,6 +111,17 @@ func (s *jsiiProxy_SagemakerDomain) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDomain) validatePutDefaultSpaceSettingsParameters(value *SagemakerDomainDefaultSpaceSettings) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDomain) validatePutDefaultUserSettingsParameters(value *SagemakerDomainDefaultUserSettings) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

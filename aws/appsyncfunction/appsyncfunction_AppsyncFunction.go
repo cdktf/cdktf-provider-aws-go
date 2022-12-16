@@ -18,6 +18,9 @@ type AppsyncFunction interface {
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Code() *string
+	SetCode(val *string)
+	CodeInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -81,6 +84,8 @@ type AppsyncFunction interface {
 	ResponseMappingTemplate() *string
 	SetResponseMappingTemplate(val *string)
 	ResponseMappingTemplateInput() *string
+	Runtime() AppsyncFunctionRuntimeOutputReference
+	RuntimeInput() *AppsyncFunctionRuntime
 	SyncConfig() AppsyncFunctionSyncConfigOutputReference
 	SyncConfigInput() *AppsyncFunctionSyncConfig
 	// Experimental.
@@ -114,7 +119,9 @@ type AppsyncFunction interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutRuntime(value *AppsyncFunctionRuntime)
 	PutSyncConfig(value *AppsyncFunctionSyncConfig)
+	ResetCode()
 	ResetDescription()
 	ResetFunctionVersion()
 	ResetId()
@@ -122,6 +129,9 @@ type AppsyncFunction interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRequestMappingTemplate()
+	ResetResponseMappingTemplate()
+	ResetRuntime()
 	ResetSyncConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -173,6 +183,26 @@ func (j *jsiiProxy_AppsyncFunction) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncFunction) Code() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"code",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncFunction) CodeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"codeInput",
 		&returns,
 	)
 	return returns
@@ -468,6 +498,26 @@ func (j *jsiiProxy_AppsyncFunction) ResponseMappingTemplateInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AppsyncFunction) Runtime() AppsyncFunctionRuntimeOutputReference {
+	var returns AppsyncFunctionRuntimeOutputReference
+	_jsii_.Get(
+		j,
+		"runtime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncFunction) RuntimeInput() *AppsyncFunctionRuntime {
+	var returns *AppsyncFunctionRuntime
+	_jsii_.Get(
+		j,
+		"runtimeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppsyncFunction) SyncConfig() AppsyncFunctionSyncConfigOutputReference {
 	var returns AppsyncFunctionSyncConfigOutputReference
 	_jsii_.Get(
@@ -555,6 +605,17 @@ func (j *jsiiProxy_AppsyncFunction)SetApiId(val *string) {
 	_jsii_.Set(
 		j,
 		"apiId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppsyncFunction)SetCode(val *string) {
+	if err := j.validateSetCodeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"code",
 		val,
 	)
 }
@@ -978,6 +1039,17 @@ func (a *jsiiProxy_AppsyncFunction) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (a *jsiiProxy_AppsyncFunction) PutRuntime(value *AppsyncFunctionRuntime) {
+	if err := a.validatePutRuntimeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putRuntime",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppsyncFunction) PutSyncConfig(value *AppsyncFunctionSyncConfig) {
 	if err := a.validatePutSyncConfigParameters(value); err != nil {
 		panic(err)
@@ -986,6 +1058,14 @@ func (a *jsiiProxy_AppsyncFunction) PutSyncConfig(value *AppsyncFunctionSyncConf
 		a,
 		"putSyncConfig",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppsyncFunction) ResetCode() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCode",
+		nil, // no parameters
 	)
 }
 
@@ -1025,6 +1105,30 @@ func (a *jsiiProxy_AppsyncFunction) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppsyncFunction) ResetRequestMappingTemplate() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRequestMappingTemplate",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppsyncFunction) ResetResponseMappingTemplate() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetResponseMappingTemplate",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppsyncFunction) ResetRuntime() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRuntime",
 		nil, // no parameters
 	)
 }

@@ -68,6 +68,8 @@ type SagemakerEndpointConfiguration interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ShadowProductionVariants() SagemakerEndpointConfigurationShadowProductionVariantsList
+	ShadowProductionVariantsInput() interface{}
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -108,6 +110,7 @@ type SagemakerEndpointConfiguration interface {
 	PutAsyncInferenceConfig(value *SagemakerEndpointConfigurationAsyncInferenceConfig)
 	PutDataCaptureConfig(value *SagemakerEndpointConfigurationDataCaptureConfig)
 	PutProductionVariants(value interface{})
+	PutShadowProductionVariants(value interface{})
 	ResetAsyncInferenceConfig()
 	ResetDataCaptureConfig()
 	ResetId()
@@ -116,6 +119,7 @@ type SagemakerEndpointConfiguration interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetShadowProductionVariants()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -388,6 +392,26 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfiguration) ShadowProductionVariants() SagemakerEndpointConfigurationShadowProductionVariantsList {
+	var returns SagemakerEndpointConfigurationShadowProductionVariantsList
+	_jsii_.Get(
+		j,
+		"shadowProductionVariants",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfiguration) ShadowProductionVariantsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"shadowProductionVariantsInput",
 		&returns,
 	)
 	return returns
@@ -912,6 +936,17 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) PutProductionVariants(value i
 	)
 }
 
+func (s *jsiiProxy_SagemakerEndpointConfiguration) PutShadowProductionVariants(value interface{}) {
+	if err := s.validatePutShadowProductionVariantsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putShadowProductionVariants",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerEndpointConfiguration) ResetAsyncInferenceConfig() {
 	_jsii_.InvokeVoid(
 		s,
@@ -956,6 +991,14 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerEndpointConfiguration) ResetShadowProductionVariants() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetShadowProductionVariants",
 		nil, // no parameters
 	)
 }

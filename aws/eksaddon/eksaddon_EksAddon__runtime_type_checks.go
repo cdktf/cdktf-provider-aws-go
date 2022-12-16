@@ -170,6 +170,14 @@ func (j *jsiiProxy_EksAddon) validateSetClusterNameParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_EksAddon) validateSetConfigurationValuesParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_EksAddon) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

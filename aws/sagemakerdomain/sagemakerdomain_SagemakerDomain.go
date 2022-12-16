@@ -34,6 +34,8 @@ type SagemakerDomain interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DefaultSpaceSettings() SagemakerDomainDefaultSpaceSettingsOutputReference
+	DefaultSpaceSettingsInput() *SagemakerDomainDefaultSpaceSettings
 	DefaultUserSettings() SagemakerDomainDefaultUserSettingsOutputReference
 	DefaultUserSettingsInput() *SagemakerDomainDefaultUserSettings
 	// Experimental.
@@ -124,11 +126,13 @@ type SagemakerDomain interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDefaultSpaceSettings(value *SagemakerDomainDefaultSpaceSettings)
 	PutDefaultUserSettings(value *SagemakerDomainDefaultUserSettings)
 	PutDomainSettings(value *SagemakerDomainDomainSettings)
 	PutRetentionPolicy(value *SagemakerDomainRetentionPolicy)
 	ResetAppNetworkAccessType()
 	ResetAppSecurityGroupManagement()
+	ResetDefaultSpaceSettings()
 	ResetDomainSettings()
 	ResetId()
 	ResetKmsKeyId()
@@ -258,6 +262,26 @@ func (j *jsiiProxy_SagemakerDomain) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomain) DefaultSpaceSettings() SagemakerDomainDefaultSpaceSettingsOutputReference {
+	var returns SagemakerDomainDefaultSpaceSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"defaultSpaceSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomain) DefaultSpaceSettingsInput() *SagemakerDomainDefaultSpaceSettings {
+	var returns *SagemakerDomainDefaultSpaceSettings
+	_jsii_.Get(
+		j,
+		"defaultSpaceSettingsInput",
 		&returns,
 	)
 	return returns
@@ -1094,6 +1118,17 @@ func (s *jsiiProxy_SagemakerDomain) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_SagemakerDomain) PutDefaultSpaceSettings(value *SagemakerDomainDefaultSpaceSettings) {
+	if err := s.validatePutDefaultSpaceSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putDefaultSpaceSettings",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerDomain) PutDefaultUserSettings(value *SagemakerDomainDefaultUserSettings) {
 	if err := s.validatePutDefaultUserSettingsParameters(value); err != nil {
 		panic(err)
@@ -1139,6 +1174,14 @@ func (s *jsiiProxy_SagemakerDomain) ResetAppSecurityGroupManagement() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAppSecurityGroupManagement",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerDomain) ResetDefaultSpaceSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDefaultSpaceSettings",
 		nil, // no parameters
 	)
 }

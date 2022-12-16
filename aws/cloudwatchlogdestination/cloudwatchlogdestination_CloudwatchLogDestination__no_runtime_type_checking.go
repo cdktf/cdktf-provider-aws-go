@@ -88,6 +88,14 @@ func (j *jsiiProxy_CloudwatchLogDestination) validateSetRoleArnParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchLogDestination) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudwatchLogDestination) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchLogDestination) validateSetTargetArnParameters(val *string) error {
 	return nil
 }

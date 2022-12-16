@@ -80,6 +80,10 @@ func (j *jsiiProxy_EksAddon) validateSetClusterNameParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_EksAddon) validateSetConfigurationValuesParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EksAddon) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

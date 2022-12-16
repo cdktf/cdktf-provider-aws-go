@@ -24,6 +24,9 @@ type EksAddon interface {
 	ClusterName() *string
 	SetClusterName(val *string)
 	ClusterNameInput() *string
+	ConfigurationValues() *string
+	SetConfigurationValues(val *string)
+	ConfigurationValuesInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -117,6 +120,7 @@ type EksAddon interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *EksAddonTimeouts)
 	ResetAddonVersion()
+	ResetConfigurationValues()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -217,6 +221,26 @@ func (j *jsiiProxy_EksAddon) ClusterNameInput() *string {
 	_jsii_.Get(
 		j,
 		"clusterNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksAddon) ConfigurationValues() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configurationValues",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksAddon) ConfigurationValuesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configurationValuesInput",
 		&returns,
 	)
 	return returns
@@ -591,6 +615,17 @@ func (j *jsiiProxy_EksAddon)SetClusterName(val *string) {
 	_jsii_.Set(
 		j,
 		"clusterName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EksAddon)SetConfigurationValues(val *string) {
+	if err := j.validateSetConfigurationValuesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"configurationValues",
 		val,
 	)
 }
@@ -1007,6 +1042,14 @@ func (e *jsiiProxy_EksAddon) ResetAddonVersion() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetAddonVersion",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksAddon) ResetConfigurationValues() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetConfigurationValues",
 		nil, // no parameters
 	)
 }

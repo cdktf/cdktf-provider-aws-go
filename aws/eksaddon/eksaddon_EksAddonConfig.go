@@ -25,6 +25,8 @@ type EksAddonConfig struct {
 	ClusterName *string `field:"required" json:"clusterName" yaml:"clusterName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_addon#addon_version EksAddon#addon_version}.
 	AddonVersion *string `field:"optional" json:"addonVersion" yaml:"addonVersion"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_addon#configuration_values EksAddon#configuration_values}.
+	ConfigurationValues *string `field:"optional" json:"configurationValues" yaml:"configurationValues"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/eks_addon#id EksAddon#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

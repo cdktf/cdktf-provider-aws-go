@@ -44,6 +44,10 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validatePutCoreDumpConfigParameters(value *SagemakerEndpointConfigurationProductionVariantsCoreDumpConfig) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validatePutServerlessConfigParameters(value *SagemakerEndpointConfigurationProductionVariantsServerlessConfig) error {
 	return nil
 }
@@ -64,6 +68,10 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validateSetContainerStartupHealthCheckTimeoutInSecondsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validateSetInitialInstanceCountParameters(val *float64) error {
 	return nil
 }
@@ -80,6 +88,10 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validateSetModelDataDownloadTimeoutInSecondsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validateSetModelNameParameters(val *string) error {
 	return nil
 }
@@ -93,6 +105,10 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 }
 
 func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validateSetVariantNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validateSetVolumeSizeInGbParameters(val *float64) error {
 	return nil
 }
 

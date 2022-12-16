@@ -23,6 +23,11 @@ type SagemakerEndpointConfigurationProductionVariantsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ContainerStartupHealthCheckTimeoutInSeconds() *float64
+	SetContainerStartupHealthCheckTimeoutInSeconds(val *float64)
+	ContainerStartupHealthCheckTimeoutInSecondsInput() *float64
+	CoreDumpConfig() SagemakerEndpointConfigurationProductionVariantsCoreDumpConfigOutputReference
+	CoreDumpConfigInput() *SagemakerEndpointConfigurationProductionVariantsCoreDumpConfig
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -41,6 +46,9 @@ type SagemakerEndpointConfigurationProductionVariantsOutputReference interface {
 	InstanceTypeInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	ModelDataDownloadTimeoutInSeconds() *float64
+	SetModelDataDownloadTimeoutInSeconds(val *float64)
+	ModelDataDownloadTimeoutInSecondsInput() *float64
 	ModelName() *string
 	SetModelName(val *string)
 	ModelNameInput() *string
@@ -57,6 +65,9 @@ type SagemakerEndpointConfigurationProductionVariantsOutputReference interface {
 	VariantName() *string
 	SetVariantName(val *string)
 	VariantNameInput() *string
+	VolumeSizeInGb() *float64
+	SetVolumeSizeInGb(val *float64)
+	VolumeSizeInGbInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -81,13 +92,18 @@ type SagemakerEndpointConfigurationProductionVariantsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCoreDumpConfig(value *SagemakerEndpointConfigurationProductionVariantsCoreDumpConfig)
 	PutServerlessConfig(value *SagemakerEndpointConfigurationProductionVariantsServerlessConfig)
 	ResetAcceleratorType()
+	ResetContainerStartupHealthCheckTimeoutInSeconds()
+	ResetCoreDumpConfig()
 	ResetInitialInstanceCount()
 	ResetInitialVariantWeight()
 	ResetInstanceType()
+	ResetModelDataDownloadTimeoutInSeconds()
 	ResetServerlessConfig()
 	ResetVariantName()
+	ResetVolumeSizeInGb()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -138,6 +154,46 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) ContainerStartupHealthCheckTimeoutInSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"containerStartupHealthCheckTimeoutInSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) ContainerStartupHealthCheckTimeoutInSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"containerStartupHealthCheckTimeoutInSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) CoreDumpConfig() SagemakerEndpointConfigurationProductionVariantsCoreDumpConfigOutputReference {
+	var returns SagemakerEndpointConfigurationProductionVariantsCoreDumpConfigOutputReference
+	_jsii_.Get(
+		j,
+		"coreDumpConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) CoreDumpConfigInput() *SagemakerEndpointConfigurationProductionVariantsCoreDumpConfig {
+	var returns *SagemakerEndpointConfigurationProductionVariantsCoreDumpConfig
+	_jsii_.Get(
+		j,
+		"coreDumpConfigInput",
 		&returns,
 	)
 	return returns
@@ -233,6 +289,26 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) ModelDataDownloadTimeoutInSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"modelDataDownloadTimeoutInSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) ModelDataDownloadTimeoutInSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"modelDataDownloadTimeoutInSecondsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) ModelName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -313,6 +389,26 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) VolumeSizeInGb() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"volumeSizeInGb",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) VolumeSizeInGbInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"volumeSizeInGbInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewSagemakerEndpointConfigurationProductionVariantsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SagemakerEndpointConfigurationProductionVariantsOutputReference {
 	_init_.Initialize()
@@ -374,6 +470,17 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	)
 }
 
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference)SetContainerStartupHealthCheckTimeoutInSeconds(val *float64) {
+	if err := j.validateSetContainerStartupHealthCheckTimeoutInSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"containerStartupHealthCheckTimeoutInSeconds",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference)SetInitialInstanceCount(val *float64) {
 	if err := j.validateSetInitialInstanceCountParameters(val); err != nil {
 		panic(err)
@@ -418,6 +525,17 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	)
 }
 
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference)SetModelDataDownloadTimeoutInSeconds(val *float64) {
+	if err := j.validateSetModelDataDownloadTimeoutInSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"modelDataDownloadTimeoutInSeconds",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference)SetModelName(val *string) {
 	if err := j.validateSetModelNameParameters(val); err != nil {
 		panic(err)
@@ -458,6 +576,17 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	_jsii_.Set(
 		j,
 		"variantName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference)SetVolumeSizeInGb(val *float64) {
+	if err := j.validateSetVolumeSizeInGbParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"volumeSizeInGb",
 		val,
 	)
 }
@@ -648,6 +777,17 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	return returns
 }
 
+func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) PutCoreDumpConfig(value *SagemakerEndpointConfigurationProductionVariantsCoreDumpConfig) {
+	if err := s.validatePutCoreDumpConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCoreDumpConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) PutServerlessConfig(value *SagemakerEndpointConfigurationProductionVariantsServerlessConfig) {
 	if err := s.validatePutServerlessConfigParameters(value); err != nil {
 		panic(err)
@@ -663,6 +803,22 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	_jsii_.InvokeVoid(
 		s,
 		"resetAcceleratorType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) ResetContainerStartupHealthCheckTimeoutInSeconds() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetContainerStartupHealthCheckTimeoutInSeconds",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) ResetCoreDumpConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCoreDumpConfig",
 		nil, // no parameters
 	)
 }
@@ -691,6 +847,14 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	)
 }
 
+func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) ResetModelDataDownloadTimeoutInSeconds() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetModelDataDownloadTimeoutInSeconds",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) ResetServerlessConfig() {
 	_jsii_.InvokeVoid(
 		s,
@@ -703,6 +867,14 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	_jsii_.InvokeVoid(
 		s,
 		"resetVariantName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) ResetVolumeSizeInGb() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetVolumeSizeInGb",
 		nil, // no parameters
 	)
 }

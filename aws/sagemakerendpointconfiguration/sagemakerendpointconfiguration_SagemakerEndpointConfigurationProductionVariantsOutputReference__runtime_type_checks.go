@@ -90,6 +90,17 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validatePutCoreDumpConfigParameters(value *SagemakerEndpointConfigurationProductionVariantsCoreDumpConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validatePutServerlessConfigParameters(value *SagemakerEndpointConfigurationProductionVariantsServerlessConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -182,6 +193,14 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validateSetContainerStartupHealthCheckTimeoutInSecondsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validateSetInitialInstanceCountParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -230,6 +249,14 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validateSetModelDataDownloadTimeoutInSecondsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validateSetModelNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -255,6 +282,14 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 }
 
 func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validateSetVariantNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validateSetVolumeSizeInGbParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
