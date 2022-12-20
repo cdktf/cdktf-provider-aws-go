@@ -1040,6 +1040,10 @@ type AwsProviderEndpoints struct {
 	Opensearch *string `field:"optional" json:"opensearch" yaml:"opensearch"`
 	// Use this to override the default service endpoint URL.
 	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#opensearchserverless AwsProvider#opensearchserverless}
+	Opensearchserverless *string `field:"optional" json:"opensearchserverless" yaml:"opensearchserverless"`
+	// Use this to override the default service endpoint URL.
+	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#opensearchservice AwsProvider#opensearchservice}
 	Opensearchservice *string `field:"optional" json:"opensearchservice" yaml:"opensearchservice"`
 	// Use this to override the default service endpoint URL.

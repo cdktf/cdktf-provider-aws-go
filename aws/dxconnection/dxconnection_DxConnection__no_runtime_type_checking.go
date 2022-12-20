@@ -72,6 +72,10 @@ func (j *jsiiProxy_DxConnection) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DxConnection) validateSetEncryptionModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DxConnection) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -93,6 +97,14 @@ func (j *jsiiProxy_DxConnection) validateSetProviderNameParameters(val *string) 
 }
 
 func (j *jsiiProxy_DxConnection) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DxConnection) validateSetRequestMacsecParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DxConnection) validateSetSkipDestroyParameters(val interface{}) error {
 	return nil
 }
 

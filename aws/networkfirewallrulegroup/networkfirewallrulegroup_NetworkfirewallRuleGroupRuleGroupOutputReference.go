@@ -29,6 +29,8 @@ type NetworkfirewallRuleGroupRuleGroupOutputReference interface {
 	Fqn() *string
 	InternalValue() *NetworkfirewallRuleGroupRuleGroup
 	SetInternalValue(val *NetworkfirewallRuleGroupRuleGroup)
+	ReferenceSets() NetworkfirewallRuleGroupRuleGroupReferenceSetsOutputReference
+	ReferenceSetsInput() *NetworkfirewallRuleGroupRuleGroupReferenceSets
 	RulesSource() NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference
 	RulesSourceInput() *NetworkfirewallRuleGroupRuleGroupRulesSource
 	RuleVariables() NetworkfirewallRuleGroupRuleGroupRuleVariablesOutputReference
@@ -67,9 +69,11 @@ type NetworkfirewallRuleGroupRuleGroupOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutReferenceSets(value *NetworkfirewallRuleGroupRuleGroupReferenceSets)
 	PutRulesSource(value *NetworkfirewallRuleGroupRuleGroupRulesSource)
 	PutRuleVariables(value *NetworkfirewallRuleGroupRuleGroupRuleVariables)
 	PutStatefulRuleOptions(value *NetworkfirewallRuleGroupRuleGroupStatefulRuleOptions)
+	ResetReferenceSets()
 	ResetRuleVariables()
 	ResetStatefulRuleOptions()
 	// Produce the Token's value at resolution time.
@@ -132,6 +136,26 @@ func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupOutputReference) InternalVal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupOutputReference) ReferenceSets() NetworkfirewallRuleGroupRuleGroupReferenceSetsOutputReference {
+	var returns NetworkfirewallRuleGroupRuleGroupReferenceSetsOutputReference
+	_jsii_.Get(
+		j,
+		"referenceSets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupOutputReference) ReferenceSetsInput() *NetworkfirewallRuleGroupRuleGroupReferenceSets {
+	var returns *NetworkfirewallRuleGroupRuleGroupReferenceSets
+	_jsii_.Get(
+		j,
+		"referenceSetsInput",
 		&returns,
 	)
 	return returns
@@ -486,6 +510,17 @@ func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupOutputReference) Interpolati
 	return returns
 }
 
+func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupOutputReference) PutReferenceSets(value *NetworkfirewallRuleGroupRuleGroupReferenceSets) {
+	if err := n.validatePutReferenceSetsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putReferenceSets",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupOutputReference) PutRulesSource(value *NetworkfirewallRuleGroupRuleGroupRulesSource) {
 	if err := n.validatePutRulesSourceParameters(value); err != nil {
 		panic(err)
@@ -516,6 +551,14 @@ func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupOutputReference) PutStateful
 		n,
 		"putStatefulRuleOptions",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupOutputReference) ResetReferenceSets() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetReferenceSets",
+		nil, // no parameters
 	)
 }
 

@@ -33,6 +33,9 @@ type DxConnection interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptionMode() *string
+	SetEncryptionMode(val *string)
+	EncryptionModeInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -53,12 +56,14 @@ type DxConnection interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	MacsecCapable() cdktf.IResolvable
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	OwnerAccountId() *string
+	PortEncryptionStatus() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -72,6 +77,12 @@ type DxConnection interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RequestMacsec() interface{}
+	SetRequestMacsec(val interface{})
+	RequestMacsecInput() interface{}
+	SkipDestroy() interface{}
+	SetSkipDestroy(val interface{})
+	SkipDestroyInput() interface{}
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -110,11 +121,14 @@ type DxConnection interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetEncryptionMode()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProviderName()
+	ResetRequestMacsec()
+	ResetSkipDestroy()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -222,6 +236,26 @@ func (j *jsiiProxy_DxConnection) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DxConnection) EncryptionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DxConnection) EncryptionModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DxConnection) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -322,6 +356,16 @@ func (j *jsiiProxy_DxConnection) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DxConnection) MacsecCapable() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"macsecCapable",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DxConnection) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -357,6 +401,16 @@ func (j *jsiiProxy_DxConnection) OwnerAccountId() *string {
 	_jsii_.Get(
 		j,
 		"ownerAccountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DxConnection) PortEncryptionStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"portEncryptionStatus",
 		&returns,
 	)
 	return returns
@@ -407,6 +461,46 @@ func (j *jsiiProxy_DxConnection) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DxConnection) RequestMacsec() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requestMacsec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DxConnection) RequestMacsecInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"requestMacsecInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DxConnection) SkipDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DxConnection) SkipDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDestroyInput",
 		&returns,
 	)
 	return returns
@@ -560,6 +654,17 @@ func (j *jsiiProxy_DxConnection)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_DxConnection)SetEncryptionMode(val *string) {
+	if err := j.validateSetEncryptionModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encryptionMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DxConnection)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -638,6 +743,28 @@ func (j *jsiiProxy_DxConnection)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DxConnection)SetRequestMacsec(val interface{}) {
+	if err := j.validateSetRequestMacsecParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"requestMacsec",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DxConnection)SetSkipDestroy(val interface{}) {
+	if err := j.validateSetSkipDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipDestroy",
 		val,
 	)
 }
@@ -930,6 +1057,14 @@ func (d *jsiiProxy_DxConnection) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DxConnection) ResetEncryptionMode() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEncryptionMode",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DxConnection) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -950,6 +1085,22 @@ func (d *jsiiProxy_DxConnection) ResetProviderName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetProviderName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DxConnection) ResetRequestMacsec() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRequestMacsec",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DxConnection) ResetSkipDestroy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSkipDestroy",
 		nil, // no parameters
 	)
 }

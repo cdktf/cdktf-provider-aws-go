@@ -10,6 +10,9 @@ import (
 
 type NetworkmanagerVpcAttachmentOptionsOutputReference interface {
 	cdktf.ComplexObject
+	ApplianceModeSupport() interface{}
+	SetApplianceModeSupport(val interface{})
+	ApplianceModeSupportInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -64,6 +67,8 @@ type NetworkmanagerVpcAttachmentOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetApplianceModeSupport()
+	ResetIpv6Support()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -77,6 +82,26 @@ type NetworkmanagerVpcAttachmentOptionsOutputReference interface {
 // The jsii proxy struct for NetworkmanagerVpcAttachmentOptionsOutputReference
 type jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ApplianceModeSupport() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"applianceModeSupport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ApplianceModeSupportInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"applianceModeSupportInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ComplexObjectIndex() interface{} {
@@ -194,6 +219,17 @@ func NewNetworkmanagerVpcAttachmentOptionsOutputReference_Override(n Networkmana
 		"@cdktf/provider-aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference)SetApplianceModeSupport(val interface{}) {
+	if err := j.validateSetApplianceModeSupportParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"applianceModeSupport",
+		val,
 	)
 }
 
@@ -447,6 +483,22 @@ func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) Interpolat
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ResetApplianceModeSupport() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetApplianceModeSupport",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) ResetIpv6Support() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetIpv6Support",
+		nil, // no parameters
+	)
 }
 
 func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

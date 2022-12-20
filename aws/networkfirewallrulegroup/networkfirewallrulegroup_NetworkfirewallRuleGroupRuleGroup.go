@@ -6,6 +6,10 @@ type NetworkfirewallRuleGroupRuleGroup struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#rules_source NetworkfirewallRuleGroup#rules_source}
 	RulesSource *NetworkfirewallRuleGroupRuleGroupRulesSource `field:"required" json:"rulesSource" yaml:"rulesSource"`
+	// reference_sets block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#reference_sets NetworkfirewallRuleGroup#reference_sets}
+	ReferenceSets *NetworkfirewallRuleGroupRuleGroupReferenceSets `field:"optional" json:"referenceSets" yaml:"referenceSets"`
 	// rule_variables block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkfirewall_rule_group#rule_variables NetworkfirewallRuleGroup#rule_variables}

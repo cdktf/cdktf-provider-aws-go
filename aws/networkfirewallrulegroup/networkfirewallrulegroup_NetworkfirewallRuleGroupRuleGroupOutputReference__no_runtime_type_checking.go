@@ -44,6 +44,10 @@ func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupOutputReference) validateInt
 	return nil
 }
 
+func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupOutputReference) validatePutReferenceSetsParameters(value *NetworkfirewallRuleGroupRuleGroupReferenceSets) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupOutputReference) validatePutRulesSourceParameters(value *NetworkfirewallRuleGroupRuleGroupRulesSource) error {
 	return nil
 }

@@ -48,6 +48,10 @@ func (n *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) validateRe
 	return nil
 }
 
+func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) validateSetApplianceModeSupportParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerVpcAttachmentOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

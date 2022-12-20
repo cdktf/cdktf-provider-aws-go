@@ -95,6 +95,8 @@ func init() {
 		"@cdktf/provider-aws.networkmanagerVpcAttachment.NetworkmanagerVpcAttachmentOptionsOutputReference",
 		reflect.TypeOf((*NetworkmanagerVpcAttachmentOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "applianceModeSupport", GoGetter: "ApplianceModeSupport"},
+			_jsii_.MemberProperty{JsiiProperty: "applianceModeSupportInput", GoGetter: "ApplianceModeSupportInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -114,6 +116,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ipv6Support", GoGetter: "Ipv6Support"},
 			_jsii_.MemberProperty{JsiiProperty: "ipv6SupportInput", GoGetter: "Ipv6SupportInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetApplianceModeSupport", GoMethod: "ResetApplianceModeSupport"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIpv6Support", GoMethod: "ResetIpv6Support"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
