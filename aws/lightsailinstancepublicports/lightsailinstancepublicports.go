@@ -92,6 +92,8 @@ func init() {
 		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoOutputReference",
 		reflect.TypeOf((*LightsailInstancePublicPortsPortInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "cidrListAliases", GoGetter: "CidrListAliases"},
+			_jsii_.MemberProperty{JsiiProperty: "cidrListAliasesInput", GoGetter: "CidrListAliasesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cidrs", GoGetter: "Cidrs"},
 			_jsii_.MemberProperty{JsiiProperty: "cidrsInput", GoGetter: "CidrsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -117,6 +119,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ipv6CidrsInput", GoGetter: "Ipv6CidrsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "protocol", GoGetter: "Protocol"},
 			_jsii_.MemberProperty{JsiiProperty: "protocolInput", GoGetter: "ProtocolInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCidrListAliases", GoMethod: "ResetCidrListAliases"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCidrs", GoMethod: "ResetCidrs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpv6Cidrs", GoMethod: "ResetIpv6Cidrs"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

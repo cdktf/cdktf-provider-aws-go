@@ -60,6 +60,10 @@ func (a *jsiiProxy_AppsyncResolver) validatePutPipelineConfigParameters(value *A
 	return nil
 }
 
+func (a *jsiiProxy_AppsyncResolver) validatePutRuntimeParameters(value *AppsyncResolverRuntime) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppsyncResolver) validatePutSyncConfigParameters(value *AppsyncResolverSyncConfig) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func validateAppsyncResolver_IsTerraformResourceParameters(x interface{}) error 
 }
 
 func (j *jsiiProxy_AppsyncResolver) validateSetApiIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppsyncResolver) validateSetCodeParameters(val *string) error {
 	return nil
 }
 

@@ -47,6 +47,9 @@ type AutoscalingGroup interface {
 	DesiredCapacity() *float64
 	SetDesiredCapacity(val *float64)
 	DesiredCapacityInput() *float64
+	DesiredCapacityType() *string
+	SetDesiredCapacityType(val *string)
+	DesiredCapacityTypeInput() *string
 	EnabledMetrics() *[]*string
 	SetEnabledMetrics(val *[]*string)
 	EnabledMetricsInput() *[]*string
@@ -204,6 +207,7 @@ type AutoscalingGroup interface {
 	ResetDefaultCooldown()
 	ResetDefaultInstanceWarmup()
 	ResetDesiredCapacity()
+	ResetDesiredCapacityType()
 	ResetEnabledMetrics()
 	ResetForceDelete()
 	ResetForceDeleteWarmPool()
@@ -427,6 +431,26 @@ func (j *jsiiProxy_AutoscalingGroup) DesiredCapacityInput() *float64 {
 	_jsii_.Get(
 		j,
 		"desiredCapacityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroup) DesiredCapacityType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"desiredCapacityType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroup) DesiredCapacityTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"desiredCapacityTypeInput",
 		&returns,
 	)
 	return returns
@@ -1305,6 +1329,17 @@ func (j *jsiiProxy_AutoscalingGroup)SetDesiredCapacity(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_AutoscalingGroup)SetDesiredCapacityType(val *string) {
+	if err := j.validateSetDesiredCapacityTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"desiredCapacityType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AutoscalingGroup)SetEnabledMetrics(val *[]*string) {
 	if err := j.validateSetEnabledMetricsParameters(val); err != nil {
 		panic(err)
@@ -2005,6 +2040,14 @@ func (a *jsiiProxy_AutoscalingGroup) ResetDesiredCapacity() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDesiredCapacity",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutoscalingGroup) ResetDesiredCapacityType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDesiredCapacityType",
 		nil, // no parameters
 	)
 }

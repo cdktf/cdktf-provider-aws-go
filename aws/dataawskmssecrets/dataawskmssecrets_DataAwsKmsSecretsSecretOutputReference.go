@@ -28,6 +28,9 @@ type DataAwsKmsSecretsSecretOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EncryptionAlgorithm() *string
+	SetEncryptionAlgorithm(val *string)
+	EncryptionAlgorithmInput() *string
 	// Experimental.
 	Fqn() *string
 	GrantTokens() *[]*string
@@ -35,6 +38,9 @@ type DataAwsKmsSecretsSecretOutputReference interface {
 	GrantTokensInput() *[]*string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	KeyId() *string
+	SetKeyId(val *string)
+	KeyIdInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -74,7 +80,9 @@ type DataAwsKmsSecretsSecretOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetContext()
+	ResetEncryptionAlgorithm()
 	ResetGrantTokens()
+	ResetKeyId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -140,6 +148,26 @@ func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) CreationStack() *[]*s
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) EncryptionAlgorithm() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionAlgorithm",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) EncryptionAlgorithmInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"encryptionAlgorithmInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -175,6 +203,26 @@ func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) InternalValue() inter
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) KeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) KeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyIdInput",
 		&returns,
 	)
 	return returns
@@ -301,6 +349,17 @@ func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference)SetContext(val *map[st
 	)
 }
 
+func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference)SetEncryptionAlgorithm(val *string) {
+	if err := j.validateSetEncryptionAlgorithmParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"encryptionAlgorithm",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference)SetGrantTokens(val *[]*string) {
 	if err := j.validateSetGrantTokensParameters(val); err != nil {
 		panic(err)
@@ -319,6 +378,17 @@ func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference)SetInternalValue(val i
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference)SetKeyId(val *string) {
+	if err := j.validateSetKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyId",
 		val,
 	)
 }
@@ -561,10 +631,26 @@ func (d *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) ResetContext() {
 	)
 }
 
+func (d *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) ResetEncryptionAlgorithm() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEncryptionAlgorithm",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) ResetGrantTokens() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetGrantTokens",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) ResetKeyId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKeyId",
 		nil, // no parameters
 	)
 }

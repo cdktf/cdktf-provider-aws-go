@@ -99,6 +99,9 @@ type DmsEndpointS3SettingsOutputReference interface {
 	ExternalTableDefinitionInput() *string
 	// Experimental.
 	Fqn() *string
+	IgnoreHeaderRows() *float64
+	SetIgnoreHeaderRows(val *float64)
+	IgnoreHeaderRowsInput() *float64
 	IgnoreHeadersRow() *float64
 	SetIgnoreHeadersRow(val *float64)
 	IgnoreHeadersRowInput() *float64
@@ -196,6 +199,7 @@ type DmsEndpointS3SettingsOutputReference interface {
 	ResetEncodingType()
 	ResetEncryptionMode()
 	ResetExternalTableDefinition()
+	ResetIgnoreHeaderRows()
 	ResetIgnoreHeadersRow()
 	ResetIncludeOpForFullLoad()
 	ResetMaxFileSize()
@@ -739,6 +743,26 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) IgnoreHeaderRows() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ignoreHeaderRows",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) IgnoreHeaderRowsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"ignoreHeaderRowsInput",
 		&returns,
 	)
 	return returns
@@ -1348,6 +1372,17 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetExternalTableDefiniti
 	)
 }
 
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetIgnoreHeaderRows(val *float64) {
+	if err := j.validateSetIgnoreHeaderRowsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ignoreHeaderRows",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetIgnoreHeadersRow(val *float64) {
 	if err := j.validateSetIgnoreHeadersRowParameters(val); err != nil {
 		panic(err)
@@ -1898,6 +1933,14 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) ResetExternalTableDefin
 	_jsii_.InvokeVoid(
 		d,
 		"resetExternalTableDefinition",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) ResetIgnoreHeaderRows() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIgnoreHeaderRows",
 		nil, // no parameters
 	)
 }

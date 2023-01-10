@@ -27,6 +27,10 @@ type LightsailInstanceConfig struct {
 	BundleId *string `field:"required" json:"bundleId" yaml:"bundleId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_instance#name LightsailInstance#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
+	// add_on block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_instance#add_on LightsailInstance#add_on}
+	AddOn *LightsailInstanceAddOn `field:"optional" json:"addOn" yaml:"addOn"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_instance#id LightsailInstance#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

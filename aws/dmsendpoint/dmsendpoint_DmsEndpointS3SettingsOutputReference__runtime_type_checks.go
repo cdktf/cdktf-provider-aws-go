@@ -415,6 +415,14 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetExternalTabl
 	return nil
 }
 
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetIgnoreHeaderRowsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetIgnoreHeadersRowParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -19,6 +19,9 @@ type S3AccessPoint interface {
 	Arn() *string
 	Bucket() *string
 	SetBucket(val *string)
+	BucketAccountId() *string
+	SetBucketAccountId(val *string)
+	BucketAccountIdInput() *string
 	BucketInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -111,6 +114,7 @@ type S3AccessPoint interface {
 	PutPublicAccessBlockConfiguration(value *S3AccessPointPublicAccessBlockConfiguration)
 	PutVpcConfiguration(value *S3AccessPointVpcConfiguration)
 	ResetAccountId()
+	ResetBucketAccountId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -178,6 +182,26 @@ func (j *jsiiProxy_S3AccessPoint) Bucket() *string {
 	_jsii_.Get(
 		j,
 		"bucket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3AccessPoint) BucketAccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketAccountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3AccessPoint) BucketAccountIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketAccountIdInput",
 		&returns,
 	)
 	return returns
@@ -541,6 +565,17 @@ func (j *jsiiProxy_S3AccessPoint)SetBucket(val *string) {
 	_jsii_.Set(
 		j,
 		"bucket",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3AccessPoint)SetBucketAccountId(val *string) {
+	if err := j.validateSetBucketAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bucketAccountId",
 		val,
 	)
 }
@@ -935,6 +970,14 @@ func (s *jsiiProxy_S3AccessPoint) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3AccessPoint) ResetBucketAccountId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBucketAccountId",
 		nil, // no parameters
 	)
 }

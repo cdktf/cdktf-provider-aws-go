@@ -14,6 +14,8 @@ type Wafv2RuleGroupRuleActionOutputReference interface {
 	AllowInput() *Wafv2RuleGroupRuleActionAllow
 	Block() Wafv2RuleGroupRuleActionBlockOutputReference
 	BlockInput() *Wafv2RuleGroupRuleActionBlock
+	Captcha() Wafv2RuleGroupRuleActionCaptchaOutputReference
+	CaptchaInput() *Wafv2RuleGroupRuleActionCaptcha
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -69,9 +71,11 @@ type Wafv2RuleGroupRuleActionOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAllow(value *Wafv2RuleGroupRuleActionAllow)
 	PutBlock(value *Wafv2RuleGroupRuleActionBlock)
+	PutCaptcha(value *Wafv2RuleGroupRuleActionCaptcha)
 	PutCount(value *Wafv2RuleGroupRuleActionCount)
 	ResetAllow()
 	ResetBlock()
+	ResetCaptcha()
 	ResetCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -123,6 +127,26 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleActionOutputReference) BlockInput() *Wafv2R
 	_jsii_.Get(
 		j,
 		"blockInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleActionOutputReference) Captcha() Wafv2RuleGroupRuleActionCaptchaOutputReference {
+	var returns Wafv2RuleGroupRuleActionCaptchaOutputReference
+	_jsii_.Get(
+		j,
+		"captcha",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleActionOutputReference) CaptchaInput() *Wafv2RuleGroupRuleActionCaptcha {
+	var returns *Wafv2RuleGroupRuleActionCaptcha
+	_jsii_.Get(
+		j,
+		"captchaInput",
 		&returns,
 	)
 	return returns
@@ -509,6 +533,17 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionOutputReference) PutBlock(value *Wafv
 	)
 }
 
+func (w *jsiiProxy_Wafv2RuleGroupRuleActionOutputReference) PutCaptcha(value *Wafv2RuleGroupRuleActionCaptcha) {
+	if err := w.validatePutCaptchaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putCaptcha",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2RuleGroupRuleActionOutputReference) PutCount(value *Wafv2RuleGroupRuleActionCount) {
 	if err := w.validatePutCountParameters(value); err != nil {
 		panic(err)
@@ -532,6 +567,14 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionOutputReference) ResetBlock() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetBlock",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2RuleGroupRuleActionOutputReference) ResetCaptcha() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetCaptcha",
 		nil, // no parameters
 	)
 }

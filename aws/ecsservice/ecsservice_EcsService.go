@@ -12,6 +12,8 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecs_service aws_ecs_service}.
 type EcsService interface {
 	cdktf.TerraformResource
+	Alarms() EcsServiceAlarmsOutputReference
+	AlarmsInput() *EcsServiceAlarms
 	CapacityProviderStrategy() EcsServiceCapacityProviderStrategyList
 	CapacityProviderStrategyInput() interface{}
 	// Experimental.
@@ -163,6 +165,7 @@ type EcsService interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAlarms(value *EcsServiceAlarms)
 	PutCapacityProviderStrategy(value interface{})
 	PutDeploymentCircuitBreaker(value *EcsServiceDeploymentCircuitBreaker)
 	PutDeploymentController(value *EcsServiceDeploymentController)
@@ -173,6 +176,7 @@ type EcsService interface {
 	PutServiceConnectConfiguration(value *EcsServiceServiceConnectConfiguration)
 	PutServiceRegistries(value *EcsServiceServiceRegistries)
 	PutTimeouts(value *EcsServiceTimeouts)
+	ResetAlarms()
 	ResetCapacityProviderStrategy()
 	ResetCluster()
 	ResetDeploymentCircuitBreaker()
@@ -218,6 +222,26 @@ type EcsService interface {
 // The jsii proxy struct for EcsService
 type jsiiProxy_EcsService struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_EcsService) Alarms() EcsServiceAlarmsOutputReference {
+	var returns EcsServiceAlarmsOutputReference
+	_jsii_.Get(
+		j,
+		"alarms",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsService) AlarmsInput() *EcsServiceAlarms {
+	var returns *EcsServiceAlarms
+	_jsii_.Get(
+		j,
+		"alarmsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_EcsService) CapacityProviderStrategy() EcsServiceCapacityProviderStrategyList {
@@ -1561,6 +1585,17 @@ func (e *jsiiProxy_EcsService) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (e *jsiiProxy_EcsService) PutAlarms(value *EcsServiceAlarms) {
+	if err := e.validatePutAlarmsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putAlarms",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EcsService) PutCapacityProviderStrategy(value interface{}) {
 	if err := e.validatePutCapacityProviderStrategyParameters(value); err != nil {
 		panic(err)
@@ -1668,6 +1703,14 @@ func (e *jsiiProxy_EcsService) PutTimeouts(value *EcsServiceTimeouts) {
 		e,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EcsService) ResetAlarms() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetAlarms",
+		nil, // no parameters
 	)
 }
 

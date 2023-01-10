@@ -52,6 +52,10 @@ func (l *jsiiProxy_LightsailInstance) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (l *jsiiProxy_LightsailInstance) validatePutAddOnParameters(value *LightsailInstanceAddOn) error {
+	return nil
+}
+
 func validateLightsailInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -24,15 +24,15 @@ func validateAwsProvider_IsTerraformProviderParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetAssumeRoleParameters(val *AwsProviderAssumeRole) error {
+func (j *jsiiProxy_AwsProvider) validateSetAssumeRoleParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetAssumeRoleWithWebIdentityParameters(val *AwsProviderAssumeRoleWithWebIdentity) error {
+func (j *jsiiProxy_AwsProvider) validateSetAssumeRoleWithWebIdentityParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetDefaultTagsParameters(val *AwsProviderDefaultTags) error {
+func (j *jsiiProxy_AwsProvider) validateSetDefaultTagsParameters(val interface{}) error {
 	return nil
 }
 
@@ -40,7 +40,7 @@ func (j *jsiiProxy_AwsProvider) validateSetEndpointsParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetIgnoreTagsParameters(val *AwsProviderIgnoreTags) error {
+func (j *jsiiProxy_AwsProvider) validateSetIgnoreTagsParameters(val interface{}) error {
 	return nil
 }
 

@@ -10,6 +10,10 @@ type Wafv2WebAclRuleStatementManagedRuleGroupStatement struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#excluded_rule Wafv2WebAcl#excluded_rule}
 	ExcludedRule interface{} `field:"optional" json:"excludedRule" yaml:"excludedRule"`
+	// managed_rule_group_configs block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#managed_rule_group_configs Wafv2WebAcl#managed_rule_group_configs}
+	ManagedRuleGroupConfigs interface{} `field:"optional" json:"managedRuleGroupConfigs" yaml:"managedRuleGroupConfigs"`
 	// rule_action_override block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#rule_action_override Wafv2WebAcl#rule_action_override}

@@ -31,6 +31,8 @@ type Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference interface 
 	Fqn() *string
 	InternalValue() *Wafv2WebAclRuleStatementManagedRuleGroupStatement
 	SetInternalValue(val *Wafv2WebAclRuleStatementManagedRuleGroupStatement)
+	ManagedRuleGroupConfigs() Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsList
+	ManagedRuleGroupConfigsInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -77,9 +79,11 @@ type Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference interface 
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutExcludedRule(value interface{})
+	PutManagedRuleGroupConfigs(value interface{})
 	PutRuleActionOverride(value interface{})
 	PutScopeDownStatement(value *Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatement)
 	ResetExcludedRule()
+	ResetManagedRuleGroupConfigs()
 	ResetRuleActionOverride()
 	ResetScopeDownStatement()
 	ResetVersion()
@@ -163,6 +167,26 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputRefere
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference) ManagedRuleGroupConfigs() Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsList {
+	var returns Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsList
+	_jsii_.Get(
+		j,
+		"managedRuleGroupConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference) ManagedRuleGroupConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"managedRuleGroupConfigsInput",
 		&returns,
 	)
 	return returns
@@ -601,6 +625,17 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputRefere
 	)
 }
 
+func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference) PutManagedRuleGroupConfigs(value interface{}) {
+	if err := w.validatePutManagedRuleGroupConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putManagedRuleGroupConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference) PutRuleActionOverride(value interface{}) {
 	if err := w.validatePutRuleActionOverrideParameters(value); err != nil {
 		panic(err)
@@ -627,6 +662,14 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputRefere
 	_jsii_.InvokeVoid(
 		w,
 		"resetExcludedRule",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference) ResetManagedRuleGroupConfigs() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetManagedRuleGroupConfigs",
 		nil, // no parameters
 	)
 }

@@ -147,6 +147,7 @@ type LightsailDatabase interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetApplyImmediately()
+	ResetAvailabilityZone()
 	ResetBackupRetentionEnabled()
 	ResetFinalSnapshotName()
 	ResetId()
@@ -1346,6 +1347,14 @@ func (l *jsiiProxy_LightsailDatabase) ResetApplyImmediately() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetApplyImmediately",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LightsailDatabase) ResetAvailabilityZone() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAvailabilityZone",
 		nil, // no parameters
 	)
 }

@@ -16,6 +16,8 @@ type Wafv2WebAclRuleActionOutputReference interface {
 	BlockInput() *Wafv2WebAclRuleActionBlock
 	Captcha() Wafv2WebAclRuleActionCaptchaOutputReference
 	CaptchaInput() *Wafv2WebAclRuleActionCaptcha
+	Challenge() Wafv2WebAclRuleActionChallengeOutputReference
+	ChallengeInput() *Wafv2WebAclRuleActionChallenge
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -72,10 +74,12 @@ type Wafv2WebAclRuleActionOutputReference interface {
 	PutAllow(value *Wafv2WebAclRuleActionAllow)
 	PutBlock(value *Wafv2WebAclRuleActionBlock)
 	PutCaptcha(value *Wafv2WebAclRuleActionCaptcha)
+	PutChallenge(value *Wafv2WebAclRuleActionChallenge)
 	PutCount(value *Wafv2WebAclRuleActionCount)
 	ResetAllow()
 	ResetBlock()
 	ResetCaptcha()
+	ResetChallenge()
 	ResetCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -147,6 +151,26 @@ func (j *jsiiProxy_Wafv2WebAclRuleActionOutputReference) CaptchaInput() *Wafv2We
 	_jsii_.Get(
 		j,
 		"captchaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleActionOutputReference) Challenge() Wafv2WebAclRuleActionChallengeOutputReference {
+	var returns Wafv2WebAclRuleActionChallengeOutputReference
+	_jsii_.Get(
+		j,
+		"challenge",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleActionOutputReference) ChallengeInput() *Wafv2WebAclRuleActionChallenge {
+	var returns *Wafv2WebAclRuleActionChallenge
+	_jsii_.Get(
+		j,
+		"challengeInput",
 		&returns,
 	)
 	return returns
@@ -544,6 +568,17 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) PutCaptcha(value *Wafv2
 	)
 }
 
+func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) PutChallenge(value *Wafv2WebAclRuleActionChallenge) {
+	if err := w.validatePutChallengeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putChallenge",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) PutCount(value *Wafv2WebAclRuleActionCount) {
 	if err := w.validatePutCountParameters(value); err != nil {
 		panic(err)
@@ -575,6 +610,14 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) ResetCaptcha() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetCaptcha",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleActionOutputReference) ResetChallenge() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetChallenge",
 		nil, // no parameters
 	)
 }

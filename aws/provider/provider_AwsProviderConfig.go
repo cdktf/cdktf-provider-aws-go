@@ -15,11 +15,11 @@ type AwsProviderConfig struct {
 	// assume_role block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#assume_role AwsProvider#assume_role}
-	AssumeRole *AwsProviderAssumeRole `field:"optional" json:"assumeRole" yaml:"assumeRole"`
+	AssumeRole interface{} `field:"optional" json:"assumeRole" yaml:"assumeRole"`
 	// assume_role_with_web_identity block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#assume_role_with_web_identity AwsProvider#assume_role_with_web_identity}
-	AssumeRoleWithWebIdentity *AwsProviderAssumeRoleWithWebIdentity `field:"optional" json:"assumeRoleWithWebIdentity" yaml:"assumeRoleWithWebIdentity"`
+	AssumeRoleWithWebIdentity interface{} `field:"optional" json:"assumeRoleWithWebIdentity" yaml:"assumeRoleWithWebIdentity"`
 	// File containing custom root and intermediate certificates.
 	//
 	// Can also be configured using the `AWS_CA_BUNDLE` environment variable. (Setting `ca_bundle` in the shared config file is not supported.)
@@ -29,7 +29,7 @@ type AwsProviderConfig struct {
 	// default_tags block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#default_tags AwsProvider#default_tags}
-	DefaultTags *AwsProviderDefaultTags `field:"optional" json:"defaultTags" yaml:"defaultTags"`
+	DefaultTags interface{} `field:"optional" json:"defaultTags" yaml:"defaultTags"`
 	// Address of the EC2 metadata service endpoint to use. Can also be configured using the `AWS_EC2_METADATA_SERVICE_ENDPOINT` environment variable.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#ec2_metadata_service_endpoint AwsProvider#ec2_metadata_service_endpoint}
@@ -53,7 +53,7 @@ type AwsProviderConfig struct {
 	// ignore_tags block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#ignore_tags AwsProvider#ignore_tags}
-	IgnoreTags *AwsProviderIgnoreTags `field:"optional" json:"ignoreTags" yaml:"ignoreTags"`
+	IgnoreTags interface{} `field:"optional" json:"ignoreTags" yaml:"ignoreTags"`
 	// Explicitly allow the provider to perform "insecure" SSL requests. If omitted, default value is `false`.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#insecure AwsProvider#insecure}

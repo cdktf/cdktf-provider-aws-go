@@ -29,6 +29,8 @@ type AppsyncResolverConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_resolver#caching_config AppsyncResolver#caching_config}
 	CachingConfig *AppsyncResolverCachingConfig `field:"optional" json:"cachingConfig" yaml:"cachingConfig"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_resolver#code AppsyncResolver#code}.
+	Code *string `field:"optional" json:"code" yaml:"code"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_resolver#data_source AppsyncResolver#data_source}.
 	DataSource *string `field:"optional" json:"dataSource" yaml:"dataSource"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_resolver#id AppsyncResolver#id}.
@@ -48,6 +50,10 @@ type AppsyncResolverConfig struct {
 	RequestTemplate *string `field:"optional" json:"requestTemplate" yaml:"requestTemplate"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_resolver#response_template AppsyncResolver#response_template}.
 	ResponseTemplate *string `field:"optional" json:"responseTemplate" yaml:"responseTemplate"`
+	// runtime block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_resolver#runtime AppsyncResolver#runtime}
+	Runtime *AppsyncResolverRuntime `field:"optional" json:"runtime" yaml:"runtime"`
 	// sync_config block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_resolver#sync_config AppsyncResolver#sync_config}

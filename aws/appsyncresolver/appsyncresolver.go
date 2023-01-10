@@ -18,6 +18,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "cachingConfig", GoGetter: "CachingConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "cachingConfigInput", GoGetter: "CachingConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
+			_jsii_.MemberProperty{JsiiProperty: "codeInput", GoGetter: "CodeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
@@ -54,11 +56,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putCachingConfig", GoMethod: "PutCachingConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putPipelineConfig", GoMethod: "PutPipelineConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putRuntime", GoMethod: "PutRuntime"},
 			_jsii_.MemberMethod{JsiiMethod: "putSyncConfig", GoMethod: "PutSyncConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "requestTemplate", GoGetter: "RequestTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "requestTemplateInput", GoGetter: "RequestTemplateInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCachingConfig", GoMethod: "ResetCachingConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCode", GoMethod: "ResetCode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataSource", GoMethod: "ResetDataSource"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKind", GoMethod: "ResetKind"},
@@ -67,9 +71,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPipelineConfig", GoMethod: "ResetPipelineConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestTemplate", GoMethod: "ResetRequestTemplate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetResponseTemplate", GoMethod: "ResetResponseTemplate"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRuntime", GoMethod: "ResetRuntime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSyncConfig", GoMethod: "ResetSyncConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "responseTemplate", GoGetter: "ResponseTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "responseTemplateInput", GoGetter: "ResponseTemplateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "runtime", GoGetter: "Runtime"},
+			_jsii_.MemberProperty{JsiiProperty: "runtimeInput", GoGetter: "RuntimeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "syncConfig", GoGetter: "SyncConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "syncConfigInput", GoGetter: "SyncConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -169,6 +176,46 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsyncResolverPipelineConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverRuntime",
+		reflect.TypeOf((*AppsyncResolverRuntime)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverRuntimeOutputReference",
+		reflect.TypeOf((*AppsyncResolverRuntimeOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
+			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "runtimeVersion", GoGetter: "RuntimeVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "runtimeVersionInput", GoGetter: "RuntimeVersionInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AppsyncResolverRuntimeOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -12,6 +12,10 @@ type S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutput
 	cdktf.ComplexObject
 	ActivityMetrics() S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelActivityMetricsOutputReference
 	ActivityMetricsInput() *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelActivityMetrics
+	AdvancedCostOptimizationMetrics() S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetricsOutputReference
+	AdvancedCostOptimizationMetricsInput() *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetrics
+	AdvancedDataProtectionMetrics() S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedDataProtectionMetricsOutputReference
+	AdvancedDataProtectionMetricsInput() *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedDataProtectionMetrics
 	BucketLevel() S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevelOutputReference
 	BucketLevelInput() *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevel
 	// the index of the complex object in a list.
@@ -29,6 +33,8 @@ type S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutput
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DetailedStatusCodeMetrics() S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatusCodeMetricsOutputReference
+	DetailedStatusCodeMetricsInput() *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatusCodeMetrics
 	// Experimental.
 	Fqn() *string
 	InternalValue() *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevel
@@ -66,8 +72,14 @@ type S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutput
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutActivityMetrics(value *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelActivityMetrics)
+	PutAdvancedCostOptimizationMetrics(value *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetrics)
+	PutAdvancedDataProtectionMetrics(value *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedDataProtectionMetrics)
 	PutBucketLevel(value *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevel)
+	PutDetailedStatusCodeMetrics(value *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatusCodeMetrics)
 	ResetActivityMetrics()
+	ResetAdvancedCostOptimizationMetrics()
+	ResetAdvancedDataProtectionMetrics()
+	ResetDetailedStatusCodeMetrics()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -98,6 +110,46 @@ func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationAcco
 	_jsii_.Get(
 		j,
 		"activityMetricsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference) AdvancedCostOptimizationMetrics() S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetricsOutputReference {
+	var returns S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetricsOutputReference
+	_jsii_.Get(
+		j,
+		"advancedCostOptimizationMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference) AdvancedCostOptimizationMetricsInput() *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetrics {
+	var returns *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetrics
+	_jsii_.Get(
+		j,
+		"advancedCostOptimizationMetricsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference) AdvancedDataProtectionMetrics() S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedDataProtectionMetricsOutputReference {
+	var returns S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedDataProtectionMetricsOutputReference
+	_jsii_.Get(
+		j,
+		"advancedDataProtectionMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference) AdvancedDataProtectionMetricsInput() *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedDataProtectionMetrics {
+	var returns *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedDataProtectionMetrics
+	_jsii_.Get(
+		j,
+		"advancedDataProtectionMetricsInput",
 		&returns,
 	)
 	return returns
@@ -148,6 +200,26 @@ func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationAcco
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference) DetailedStatusCodeMetrics() S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatusCodeMetricsOutputReference {
+	var returns S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatusCodeMetricsOutputReference
+	_jsii_.Get(
+		j,
+		"detailedStatusCodeMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference) DetailedStatusCodeMetricsInput() *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatusCodeMetrics {
+	var returns *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatusCodeMetrics
+	_jsii_.Get(
+		j,
+		"detailedStatusCodeMetricsInput",
 		&returns,
 	)
 	return returns
@@ -473,6 +545,28 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationAcco
 	)
 }
 
+func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference) PutAdvancedCostOptimizationMetrics(value *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedCostOptimizationMetrics) {
+	if err := s.validatePutAdvancedCostOptimizationMetricsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putAdvancedCostOptimizationMetrics",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference) PutAdvancedDataProtectionMetrics(value *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelAdvancedDataProtectionMetrics) {
+	if err := s.validatePutAdvancedDataProtectionMetricsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putAdvancedDataProtectionMetrics",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference) PutBucketLevel(value *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelBucketLevel) {
 	if err := s.validatePutBucketLevelParameters(value); err != nil {
 		panic(err)
@@ -484,10 +578,45 @@ func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationAcco
 	)
 }
 
+func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference) PutDetailedStatusCodeMetrics(value *S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelDetailedStatusCodeMetrics) {
+	if err := s.validatePutDetailedStatusCodeMetricsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putDetailedStatusCodeMetrics",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference) ResetActivityMetrics() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetActivityMetrics",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference) ResetAdvancedCostOptimizationMetrics() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAdvancedCostOptimizationMetrics",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference) ResetAdvancedDataProtectionMetrics() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAdvancedDataProtectionMetrics",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationAccountLevelOutputReference) ResetDetailedStatusCodeMetrics() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDetailedStatusCodeMetrics",
 		nil, // no parameters
 	)
 }

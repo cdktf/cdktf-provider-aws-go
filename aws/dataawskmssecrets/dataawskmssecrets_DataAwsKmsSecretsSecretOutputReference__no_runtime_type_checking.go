@@ -60,11 +60,19 @@ func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) validateSetContextPar
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) validateSetEncryptionAlgorithmParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) validateSetGrantTokensParameters(val *[]*string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsKmsSecretsSecretOutputReference) validateSetKeyIdParameters(val *string) error {
 	return nil
 }
 

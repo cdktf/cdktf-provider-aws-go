@@ -14,6 +14,10 @@ type Wafv2WebAclRuleAction struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#captcha Wafv2WebAcl#captcha}
 	Captcha *Wafv2WebAclRuleActionCaptcha `field:"optional" json:"captcha" yaml:"captcha"`
+	// challenge block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#challenge Wafv2WebAcl#challenge}
+	Challenge *Wafv2WebAclRuleActionChallenge `field:"optional" json:"challenge" yaml:"challenge"`
 	// count block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#count Wafv2WebAcl#count}

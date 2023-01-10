@@ -16,6 +16,9 @@ type AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesReds
 	BucketPrefix() *string
 	SetBucketPrefix(val *string)
 	BucketPrefixInput() *string
+	ClusterIdentifier() *string
+	SetClusterIdentifier(val *string)
+	ClusterIdentifierInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,6 +34,12 @@ type AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesReds
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DataApiRoleArn() *string
+	SetDataApiRoleArn(val *string)
+	DataApiRoleArnInput() *string
+	DatabaseName() *string
+	SetDatabaseName(val *string)
+	DatabaseNameInput() *string
 	DatabaseUrl() *string
 	SetDatabaseUrl(val *string)
 	DatabaseUrlInput() *string
@@ -74,6 +83,9 @@ type AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesReds
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetBucketPrefix()
+	ResetClusterIdentifier()
+	ResetDataApiRoleArn()
+	ResetDatabaseName()
 	ResetDatabaseUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -130,6 +142,26 @@ func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfile
 	return returns
 }
 
+func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference) ClusterIdentifier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterIdentifier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference) ClusterIdentifierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterIdentifierInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -155,6 +187,46 @@ func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfile
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference) DataApiRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataApiRoleArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference) DataApiRoleArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataApiRoleArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference) DatabaseName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference) DatabaseNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseNameInput",
 		&returns,
 	)
 	return returns
@@ -290,6 +362,17 @@ func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfile
 	)
 }
 
+func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference)SetClusterIdentifier(val *string) {
+	if err := j.validateSetClusterIdentifierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterIdentifier",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -308,6 +391,28 @@ func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfile
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference)SetDataApiRoleArn(val *string) {
+	if err := j.validateSetDataApiRoleArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataApiRoleArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference)SetDatabaseName(val *string) {
+	if err := j.validateSetDatabaseNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"databaseName",
 		val,
 	)
 }
@@ -557,6 +662,30 @@ func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfile
 	_jsii_.InvokeVoid(
 		a,
 		"resetBucketPrefix",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference) ResetClusterIdentifier() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetClusterIdentifier",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference) ResetDataApiRoleArn() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDataApiRoleArn",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesRedshiftOutputReference) ResetDatabaseName() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDatabaseName",
 		nil, // no parameters
 	)
 }

@@ -75,6 +75,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "relationalDatabaseName", GoGetter: "RelationalDatabaseName"},
 			_jsii_.MemberProperty{JsiiProperty: "relationalDatabaseNameInput", GoGetter: "RelationalDatabaseNameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApplyImmediately", GoMethod: "ResetApplyImmediately"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAvailabilityZone", GoMethod: "ResetAvailabilityZone"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackupRetentionEnabled", GoMethod: "ResetBackupRetentionEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFinalSnapshotName", GoMethod: "ResetFinalSnapshotName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},

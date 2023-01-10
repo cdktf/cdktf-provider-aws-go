@@ -120,6 +120,10 @@ func (j *jsiiProxy_AutoscalingGroup) validateSetDesiredCapacityParameters(val *f
 	return nil
 }
 
+func (j *jsiiProxy_AutoscalingGroup) validateSetDesiredCapacityTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingGroup) validateSetEnabledMetricsParameters(val *[]*string) error {
 	return nil
 }

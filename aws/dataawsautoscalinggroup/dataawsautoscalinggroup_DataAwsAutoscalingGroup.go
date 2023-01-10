@@ -28,6 +28,7 @@ type DataAwsAutoscalingGroup interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DesiredCapacity() *float64
+	DesiredCapacityType() *string
 	EnabledMetrics() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -194,6 +195,16 @@ func (j *jsiiProxy_DataAwsAutoscalingGroup) DesiredCapacity() *float64 {
 	_jsii_.Get(
 		j,
 		"desiredCapacity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAutoscalingGroup) DesiredCapacityType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"desiredCapacityType",
 		&returns,
 	)
 	return returns

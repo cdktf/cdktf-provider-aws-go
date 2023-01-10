@@ -133,6 +133,17 @@ func (a *jsiiProxy_AppsyncResolver) validatePutPipelineConfigParameters(value *A
 	return nil
 }
 
+func (a *jsiiProxy_AppsyncResolver) validatePutRuntimeParameters(value *AppsyncResolverRuntime) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AppsyncResolver) validatePutSyncConfigParameters(value *AppsyncResolverSyncConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -169,6 +180,14 @@ func validateAppsyncResolver_IsTerraformResourceParameters(x interface{}) error 
 }
 
 func (j *jsiiProxy_AppsyncResolver) validateSetApiIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AppsyncResolver) validateSetCodeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

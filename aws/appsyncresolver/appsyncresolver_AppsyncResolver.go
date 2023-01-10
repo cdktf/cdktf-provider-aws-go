@@ -20,6 +20,9 @@ type AppsyncResolver interface {
 	CachingConfigInput() *AppsyncResolverCachingConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Code() *string
+	SetCode(val *string)
+	CodeInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -81,6 +84,8 @@ type AppsyncResolver interface {
 	ResponseTemplate() *string
 	SetResponseTemplate(val *string)
 	ResponseTemplateInput() *string
+	Runtime() AppsyncResolverRuntimeOutputReference
+	RuntimeInput() *AppsyncResolverRuntime
 	SyncConfig() AppsyncResolverSyncConfigOutputReference
 	SyncConfigInput() *AppsyncResolverSyncConfig
 	// Experimental.
@@ -119,8 +124,10 @@ type AppsyncResolver interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCachingConfig(value *AppsyncResolverCachingConfig)
 	PutPipelineConfig(value *AppsyncResolverPipelineConfig)
+	PutRuntime(value *AppsyncResolverRuntime)
 	PutSyncConfig(value *AppsyncResolverSyncConfig)
 	ResetCachingConfig()
+	ResetCode()
 	ResetDataSource()
 	ResetId()
 	ResetKind()
@@ -131,6 +138,7 @@ type AppsyncResolver interface {
 	ResetPipelineConfig()
 	ResetRequestTemplate()
 	ResetResponseTemplate()
+	ResetRuntime()
 	ResetSyncConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -202,6 +210,26 @@ func (j *jsiiProxy_AppsyncResolver) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncResolver) Code() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"code",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncResolver) CodeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"codeInput",
 		&returns,
 	)
 	return returns
@@ -487,6 +515,26 @@ func (j *jsiiProxy_AppsyncResolver) ResponseTemplateInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AppsyncResolver) Runtime() AppsyncResolverRuntimeOutputReference {
+	var returns AppsyncResolverRuntimeOutputReference
+	_jsii_.Get(
+		j,
+		"runtime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncResolver) RuntimeInput() *AppsyncResolverRuntime {
+	var returns *AppsyncResolverRuntime
+	_jsii_.Get(
+		j,
+		"runtimeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppsyncResolver) SyncConfig() AppsyncResolverSyncConfigOutputReference {
 	var returns AppsyncResolverSyncConfigOutputReference
 	_jsii_.Get(
@@ -594,6 +642,17 @@ func (j *jsiiProxy_AppsyncResolver)SetApiId(val *string) {
 	_jsii_.Set(
 		j,
 		"apiId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppsyncResolver)SetCode(val *string) {
+	if err := j.validateSetCodeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"code",
 		val,
 	)
 }
@@ -1039,6 +1098,17 @@ func (a *jsiiProxy_AppsyncResolver) PutPipelineConfig(value *AppsyncResolverPipe
 	)
 }
 
+func (a *jsiiProxy_AppsyncResolver) PutRuntime(value *AppsyncResolverRuntime) {
+	if err := a.validatePutRuntimeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putRuntime",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppsyncResolver) PutSyncConfig(value *AppsyncResolverSyncConfig) {
 	if err := a.validatePutSyncConfigParameters(value); err != nil {
 		panic(err)
@@ -1054,6 +1124,14 @@ func (a *jsiiProxy_AppsyncResolver) ResetCachingConfig() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetCachingConfig",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppsyncResolver) ResetCode() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCode",
 		nil, // no parameters
 	)
 }
@@ -1118,6 +1196,14 @@ func (a *jsiiProxy_AppsyncResolver) ResetResponseTemplate() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetResponseTemplate",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppsyncResolver) ResetRuntime() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRuntime",
 		nil, // no parameters
 	)
 }

@@ -52,6 +52,10 @@ func (e *jsiiProxy_EcsService) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (e *jsiiProxy_EcsService) validatePutAlarmsParameters(value *EcsServiceAlarms) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsService) validatePutCapacityProviderStrategyParameters(value interface{}) error {
 	return nil
 }

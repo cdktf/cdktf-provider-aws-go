@@ -72,6 +72,10 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) validateSetEnfor
 	return nil
 }
 
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) validateSetExecutionRoleParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) validateSetInternalValueParameters(val *AthenaWorkgroupConfiguration) error {
 	return nil
 }

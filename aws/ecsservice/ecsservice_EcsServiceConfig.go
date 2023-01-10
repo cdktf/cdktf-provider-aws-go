@@ -21,6 +21,10 @@ type EcsServiceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#name EcsService#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
+	// alarms block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#alarms EcsService#alarms}
+	Alarms *EcsServiceAlarms `field:"optional" json:"alarms" yaml:"alarms"`
 	// capacity_provider_strategy block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ecs_service#capacity_provider_strategy EcsService#capacity_provider_strategy}

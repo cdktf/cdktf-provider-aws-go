@@ -12,6 +12,8 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/aws/r/lightsail_instance aws_lightsail_instance}.
 type LightsailInstance interface {
 	cdktf.TerraformResource
+	AddOn() LightsailInstanceAddOnOutputReference
+	AddOnInput() *LightsailInstanceAddOn
 	Arn() *string
 	AvailabilityZone() *string
 	SetAvailabilityZone(val *string)
@@ -123,6 +125,8 @@ type LightsailInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAddOn(value *LightsailInstanceAddOn)
+	ResetAddOn()
 	ResetId()
 	ResetIpAddressType()
 	ResetKeyPairName()
@@ -145,6 +149,26 @@ type LightsailInstance interface {
 // The jsii proxy struct for LightsailInstance
 type jsiiProxy_LightsailInstance struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_LightsailInstance) AddOn() LightsailInstanceAddOnOutputReference {
+	var returns LightsailInstanceAddOnOutputReference
+	_jsii_.Get(
+		j,
+		"addOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LightsailInstance) AddOnInput() *LightsailInstanceAddOn {
+	var returns *LightsailInstanceAddOn
+	_jsii_.Get(
+		j,
+		"addOnInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_LightsailInstance) Arn() *string {
@@ -1075,6 +1099,25 @@ func (l *jsiiProxy_LightsailInstance) OverrideLogicalId(newLogicalId *string) {
 		l,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (l *jsiiProxy_LightsailInstance) PutAddOn(value *LightsailInstanceAddOn) {
+	if err := l.validatePutAddOnParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putAddOn",
+		[]interface{}{value},
+	)
+}
+
+func (l *jsiiProxy_LightsailInstance) ResetAddOn() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAddOn",
+		nil, // no parameters
 	)
 }
 

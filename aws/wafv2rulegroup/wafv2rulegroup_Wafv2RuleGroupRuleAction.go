@@ -10,6 +10,10 @@ type Wafv2RuleGroupRuleAction struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#block Wafv2RuleGroup#block}
 	Block *Wafv2RuleGroupRuleActionBlock `field:"optional" json:"block" yaml:"block"`
+	// captcha block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#captcha Wafv2RuleGroup#captcha}
+	Captcha *Wafv2RuleGroupRuleActionCaptcha `field:"optional" json:"captcha" yaml:"captcha"`
 	// count block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_rule_group#count Wafv2RuleGroup#count}

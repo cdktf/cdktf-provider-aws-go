@@ -48,6 +48,10 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validateSetCidrListAliasesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validateSetCidrsParameters(val *[]*string) error {
 	return nil
 }

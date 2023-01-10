@@ -21,12 +21,12 @@ type AwsProvider interface {
 	AllowedAccountIds() *[]*string
 	SetAllowedAccountIds(val *[]*string)
 	AllowedAccountIdsInput() *[]*string
-	AssumeRole() *AwsProviderAssumeRole
-	SetAssumeRole(val *AwsProviderAssumeRole)
-	AssumeRoleInput() *AwsProviderAssumeRole
-	AssumeRoleWithWebIdentity() *AwsProviderAssumeRoleWithWebIdentity
-	SetAssumeRoleWithWebIdentity(val *AwsProviderAssumeRoleWithWebIdentity)
-	AssumeRoleWithWebIdentityInput() *AwsProviderAssumeRoleWithWebIdentity
+	AssumeRole() interface{}
+	SetAssumeRole(val interface{})
+	AssumeRoleInput() interface{}
+	AssumeRoleWithWebIdentity() interface{}
+	SetAssumeRoleWithWebIdentity(val interface{})
+	AssumeRoleWithWebIdentityInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -34,9 +34,9 @@ type AwsProvider interface {
 	CustomCaBundle() *string
 	SetCustomCaBundle(val *string)
 	CustomCaBundleInput() *string
-	DefaultTags() *AwsProviderDefaultTags
-	SetDefaultTags(val *AwsProviderDefaultTags)
-	DefaultTagsInput() *AwsProviderDefaultTags
+	DefaultTags() interface{}
+	SetDefaultTags(val interface{})
+	DefaultTagsInput() interface{}
 	Ec2MetadataServiceEndpoint() *string
 	SetEc2MetadataServiceEndpoint(val *string)
 	Ec2MetadataServiceEndpointInput() *string
@@ -56,9 +56,9 @@ type AwsProvider interface {
 	HttpProxy() *string
 	SetHttpProxy(val *string)
 	HttpProxyInput() *string
-	IgnoreTags() *AwsProviderIgnoreTags
-	SetIgnoreTags(val *AwsProviderIgnoreTags)
-	IgnoreTagsInput() *AwsProviderIgnoreTags
+	IgnoreTags() interface{}
+	SetIgnoreTags(val interface{})
+	IgnoreTagsInput() interface{}
 	Insecure() interface{}
 	SetInsecure(val interface{})
 	InsecureInput() interface{}
@@ -243,8 +243,8 @@ func (j *jsiiProxy_AwsProvider) AllowedAccountIdsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) AssumeRole() *AwsProviderAssumeRole {
-	var returns *AwsProviderAssumeRole
+func (j *jsiiProxy_AwsProvider) AssumeRole() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"assumeRole",
@@ -253,8 +253,8 @@ func (j *jsiiProxy_AwsProvider) AssumeRole() *AwsProviderAssumeRole {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) AssumeRoleInput() *AwsProviderAssumeRole {
-	var returns *AwsProviderAssumeRole
+func (j *jsiiProxy_AwsProvider) AssumeRoleInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"assumeRoleInput",
@@ -263,8 +263,8 @@ func (j *jsiiProxy_AwsProvider) AssumeRoleInput() *AwsProviderAssumeRole {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) AssumeRoleWithWebIdentity() *AwsProviderAssumeRoleWithWebIdentity {
-	var returns *AwsProviderAssumeRoleWithWebIdentity
+func (j *jsiiProxy_AwsProvider) AssumeRoleWithWebIdentity() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"assumeRoleWithWebIdentity",
@@ -273,8 +273,8 @@ func (j *jsiiProxy_AwsProvider) AssumeRoleWithWebIdentity() *AwsProviderAssumeRo
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) AssumeRoleWithWebIdentityInput() *AwsProviderAssumeRoleWithWebIdentity {
-	var returns *AwsProviderAssumeRoleWithWebIdentity
+func (j *jsiiProxy_AwsProvider) AssumeRoleWithWebIdentityInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"assumeRoleWithWebIdentityInput",
@@ -323,8 +323,8 @@ func (j *jsiiProxy_AwsProvider) CustomCaBundleInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) DefaultTags() *AwsProviderDefaultTags {
-	var returns *AwsProviderDefaultTags
+func (j *jsiiProxy_AwsProvider) DefaultTags() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"defaultTags",
@@ -333,8 +333,8 @@ func (j *jsiiProxy_AwsProvider) DefaultTags() *AwsProviderDefaultTags {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) DefaultTagsInput() *AwsProviderDefaultTags {
-	var returns *AwsProviderDefaultTags
+func (j *jsiiProxy_AwsProvider) DefaultTagsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"defaultTagsInput",
@@ -463,8 +463,8 @@ func (j *jsiiProxy_AwsProvider) HttpProxyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) IgnoreTags() *AwsProviderIgnoreTags {
-	var returns *AwsProviderIgnoreTags
+func (j *jsiiProxy_AwsProvider) IgnoreTags() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"ignoreTags",
@@ -473,8 +473,8 @@ func (j *jsiiProxy_AwsProvider) IgnoreTags() *AwsProviderIgnoreTags {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) IgnoreTagsInput() *AwsProviderIgnoreTags {
-	var returns *AwsProviderIgnoreTags
+func (j *jsiiProxy_AwsProvider) IgnoreTagsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"ignoreTagsInput",
@@ -977,7 +977,7 @@ func (j *jsiiProxy_AwsProvider)SetAllowedAccountIds(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetAssumeRole(val *AwsProviderAssumeRole) {
+func (j *jsiiProxy_AwsProvider)SetAssumeRole(val interface{}) {
 	if err := j.validateSetAssumeRoleParameters(val); err != nil {
 		panic(err)
 	}
@@ -988,7 +988,7 @@ func (j *jsiiProxy_AwsProvider)SetAssumeRole(val *AwsProviderAssumeRole) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetAssumeRoleWithWebIdentity(val *AwsProviderAssumeRoleWithWebIdentity) {
+func (j *jsiiProxy_AwsProvider)SetAssumeRoleWithWebIdentity(val interface{}) {
 	if err := j.validateSetAssumeRoleWithWebIdentityParameters(val); err != nil {
 		panic(err)
 	}
@@ -1007,7 +1007,7 @@ func (j *jsiiProxy_AwsProvider)SetCustomCaBundle(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetDefaultTags(val *AwsProviderDefaultTags) {
+func (j *jsiiProxy_AwsProvider)SetDefaultTags(val interface{}) {
 	if err := j.validateSetDefaultTagsParameters(val); err != nil {
 		panic(err)
 	}
@@ -1061,7 +1061,7 @@ func (j *jsiiProxy_AwsProvider)SetHttpProxy(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetIgnoreTags(val *AwsProviderIgnoreTags) {
+func (j *jsiiProxy_AwsProvider)SetIgnoreTags(val interface{}) {
 	if err := j.validateSetIgnoreTagsParameters(val); err != nil {
 		panic(err)
 	}

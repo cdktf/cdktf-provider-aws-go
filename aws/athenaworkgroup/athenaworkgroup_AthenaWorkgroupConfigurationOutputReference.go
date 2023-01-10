@@ -33,6 +33,9 @@ type AthenaWorkgroupConfigurationOutputReference interface {
 	EnforceWorkgroupConfigurationInput() interface{}
 	EngineVersion() AthenaWorkgroupConfigurationEngineVersionOutputReference
 	EngineVersionInput() *AthenaWorkgroupConfigurationEngineVersion
+	ExecutionRole() *string
+	SetExecutionRole(val *string)
+	ExecutionRoleInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *AthenaWorkgroupConfiguration
@@ -82,6 +85,7 @@ type AthenaWorkgroupConfigurationOutputReference interface {
 	ResetBytesScannedCutoffPerQuery()
 	ResetEnforceWorkgroupConfiguration()
 	ResetEngineVersion()
+	ResetExecutionRole()
 	ResetPublishCloudwatchMetricsEnabled()
 	ResetRequesterPaysEnabled()
 	ResetResultConfiguration()
@@ -185,6 +189,26 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) EngineVersionInp
 	_jsii_.Get(
 		j,
 		"engineVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) ExecutionRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionRole",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) ExecutionRoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionRoleInput",
 		&returns,
 	)
 	return returns
@@ -358,6 +382,17 @@ func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference)SetEnforceWorkgro
 	_jsii_.Set(
 		j,
 		"enforceWorkgroupConfiguration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AthenaWorkgroupConfigurationOutputReference)SetExecutionRole(val *string) {
+	if err := j.validateSetExecutionRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"executionRole",
 		val,
 	)
 }
@@ -645,6 +680,14 @@ func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) ResetEngineVersi
 	_jsii_.InvokeVoid(
 		a,
 		"resetEngineVersion",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AthenaWorkgroupConfigurationOutputReference) ResetExecutionRole() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetExecutionRole",
 		nil, // no parameters
 	)
 }

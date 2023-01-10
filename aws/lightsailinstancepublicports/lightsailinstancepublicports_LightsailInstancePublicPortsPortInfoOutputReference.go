@@ -10,6 +10,9 @@ import (
 
 type LightsailInstancePublicPortsPortInfoOutputReference interface {
 	cdktf.ComplexObject
+	CidrListAliases() *[]*string
+	SetCidrListAliases(val *[]*string)
+	CidrListAliasesInput() *[]*string
 	Cidrs() *[]*string
 	SetCidrs(val *[]*string)
 	CidrsInput() *[]*string
@@ -76,6 +79,7 @@ type LightsailInstancePublicPortsPortInfoOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCidrListAliases()
 	ResetCidrs()
 	ResetIpv6Cidrs()
 	// Produce the Token's value at resolution time.
@@ -91,6 +95,26 @@ type LightsailInstancePublicPortsPortInfoOutputReference interface {
 // The jsii proxy struct for LightsailInstancePublicPortsPortInfoOutputReference
 type jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) CidrListAliases() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"cidrListAliases",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) CidrListAliasesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"cidrListAliasesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) Cidrs() *[]*string {
@@ -288,6 +312,17 @@ func NewLightsailInstancePublicPortsPortInfoOutputReference_Override(l Lightsail
 		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
+	)
+}
+
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetCidrListAliases(val *[]*string) {
+	if err := j.validateSetCidrListAliasesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cidrListAliases",
+		val,
 	)
 }
 
@@ -585,6 +620,14 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) Interpol
 	)
 
 	return returns
+}
+
+func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) ResetCidrListAliases() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetCidrListAliases",
+		nil, // no parameters
+	)
 }
 
 func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) ResetCidrs() {

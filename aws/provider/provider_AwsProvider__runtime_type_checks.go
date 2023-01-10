@@ -55,25 +55,85 @@ func validateAwsProvider_IsTerraformProviderParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetAssumeRoleParameters(val *AwsProviderAssumeRole) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_AwsProvider) validateSetAssumeRoleParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*AwsProviderAssumeRole:
+		val := val.(*[]*AwsProviderAssumeRole)
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	case []*AwsProviderAssumeRole:
+		val_ := val.([]*AwsProviderAssumeRole)
+		val := &val_
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*AwsProviderAssumeRole; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetAssumeRoleWithWebIdentityParameters(val *AwsProviderAssumeRoleWithWebIdentity) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_AwsProvider) validateSetAssumeRoleWithWebIdentityParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*AwsProviderAssumeRoleWithWebIdentity:
+		val := val.(*[]*AwsProviderAssumeRoleWithWebIdentity)
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	case []*AwsProviderAssumeRoleWithWebIdentity:
+		val_ := val.([]*AwsProviderAssumeRoleWithWebIdentity)
+		val := &val_
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*AwsProviderAssumeRoleWithWebIdentity; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetDefaultTagsParameters(val *AwsProviderDefaultTags) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_AwsProvider) validateSetDefaultTagsParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*AwsProviderDefaultTags:
+		val := val.(*[]*AwsProviderDefaultTags)
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	case []*AwsProviderDefaultTags:
+		val_ := val.([]*AwsProviderDefaultTags)
+		val := &val_
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*AwsProviderDefaultTags; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
@@ -107,9 +167,29 @@ func (j *jsiiProxy_AwsProvider) validateSetEndpointsParameters(val interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetIgnoreTagsParameters(val *AwsProviderIgnoreTags) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_AwsProvider) validateSetIgnoreTagsParameters(val interface{}) error {
+	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*AwsProviderIgnoreTags:
+		val := val.(*[]*AwsProviderIgnoreTags)
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	case []*AwsProviderIgnoreTags:
+		val_ := val.([]*AwsProviderIgnoreTags)
+		val := &val_
+		for idx_97dfc6, v := range *val {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*AwsProviderIgnoreTags; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
