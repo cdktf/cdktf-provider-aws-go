@@ -26,13 +26,11 @@ type DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference int
 	// Experimental.
 	CreationStack() *[]*string
 	CrlConfiguration() DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationList
-	CrlConfigurationInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsAcmpcaCertificateAuthorityRevocationConfiguration
+	SetInternalValue(val *DataAwsAcmpcaCertificateAuthorityRevocationConfiguration)
 	OcspConfiguration() DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationList
-	OcspConfigurationInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -65,10 +63,6 @@ type DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference int
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCrlConfiguration(value interface{})
-	PutOcspConfiguration(value interface{})
-	ResetCrlConfiguration()
-	ResetOcspConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -124,16 +118,6 @@ func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference) CrlConfigurationInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"crlConfigurationInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -144,8 +128,8 @@ func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutpu
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference) InternalValue() *DataAwsAcmpcaCertificateAuthorityRevocationConfiguration {
+	var returns *DataAwsAcmpcaCertificateAuthorityRevocationConfiguration
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -159,16 +143,6 @@ func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutpu
 	_jsii_.Get(
 		j,
 		"ocspConfiguration",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference) OcspConfigurationInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"ocspConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -244,7 +218,7 @@ func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutpu
 	)
 }
 
-func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference)SetInternalValue(val *DataAwsAcmpcaCertificateAuthorityRevocationConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -461,44 +435,6 @@ func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutpu
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference) PutCrlConfiguration(value interface{}) {
-	if err := d.validatePutCrlConfigurationParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putCrlConfiguration",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference) PutOcspConfiguration(value interface{}) {
-	if err := d.validatePutOcspConfigurationParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putOcspConfiguration",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference) ResetCrlConfiguration() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetCrlConfiguration",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference) ResetOcspConfiguration() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetOcspConfiguration",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -12,10 +12,6 @@ func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList)
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

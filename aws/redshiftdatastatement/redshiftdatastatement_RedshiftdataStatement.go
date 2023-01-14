@@ -86,6 +86,9 @@ type RedshiftdataStatement interface {
 	WithEvent() interface{}
 	SetWithEvent(val interface{})
 	WithEventInput() interface{}
+	WorkgroupName() *string
+	SetWorkgroupName(val *string)
+	WorkgroupNameInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -113,6 +116,7 @@ type RedshiftdataStatement interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutParameters(value interface{})
 	PutTimeouts(value *RedshiftdataStatementTimeouts)
+	ResetClusterIdentifier()
 	ResetDbUser()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -123,6 +127,7 @@ type RedshiftdataStatement interface {
 	ResetStatementName()
 	ResetTimeouts()
 	ResetWithEvent()
+	ResetWorkgroupName()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -498,6 +503,26 @@ func (j *jsiiProxy_RedshiftdataStatement) WithEventInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RedshiftdataStatement) WorkgroupName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workgroupName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftdataStatement) WorkgroupNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workgroupNameInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/aws/r/redshiftdata_statement aws_redshiftdata_statement} Resource.
 func NewRedshiftdataStatement(scope constructs.Construct, id *string, config *RedshiftdataStatementConfig) RedshiftdataStatement {
@@ -677,6 +702,17 @@ func (j *jsiiProxy_RedshiftdataStatement)SetWithEvent(val interface{}) {
 	_jsii_.Set(
 		j,
 		"withEvent",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftdataStatement)SetWorkgroupName(val *string) {
+	if err := j.validateSetWorkgroupNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"workgroupName",
 		val,
 	)
 }
@@ -969,6 +1005,14 @@ func (r *jsiiProxy_RedshiftdataStatement) PutTimeouts(value *RedshiftdataStateme
 	)
 }
 
+func (r *jsiiProxy_RedshiftdataStatement) ResetClusterIdentifier() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetClusterIdentifier",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RedshiftdataStatement) ResetDbUser() {
 	_jsii_.InvokeVoid(
 		r,
@@ -1029,6 +1073,14 @@ func (r *jsiiProxy_RedshiftdataStatement) ResetWithEvent() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetWithEvent",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftdataStatement) ResetWorkgroupName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetWorkgroupName",
 		nil, // no parameters
 	)
 }

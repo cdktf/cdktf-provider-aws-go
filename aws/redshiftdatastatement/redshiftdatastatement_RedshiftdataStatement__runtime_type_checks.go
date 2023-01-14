@@ -340,6 +340,14 @@ func (j *jsiiProxy_RedshiftdataStatement) validateSetWithEventParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftdataStatement) validateSetWorkgroupNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewRedshiftdataStatementParameters(scope constructs.Construct, id *string, config *RedshiftdataStatementConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

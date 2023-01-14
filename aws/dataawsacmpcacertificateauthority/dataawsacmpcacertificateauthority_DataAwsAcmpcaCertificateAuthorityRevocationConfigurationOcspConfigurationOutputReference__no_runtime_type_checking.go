@@ -56,7 +56,7 @@ func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspC
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference) validateSetInternalValueParameters(val *DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration) error {
 	return nil
 }
 

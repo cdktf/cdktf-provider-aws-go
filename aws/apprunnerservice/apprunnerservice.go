@@ -387,6 +387,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "observabilityConfigurationArnInput", GoGetter: "ObservabilityConfigurationArnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "observabilityEnabled", GoGetter: "ObservabilityEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "observabilityEnabledInput", GoGetter: "ObservabilityEnabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetObservabilityConfigurationArn", GoMethod: "ResetObservabilityConfigurationArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

@@ -33,6 +33,7 @@ type DataAwsAlb interface {
 	DesyncMitigationMode() *string
 	DnsName() *string
 	DropInvalidHeaderFields() cdktf.IResolvable
+	EnableCrossZoneLoadBalancing() cdktf.IResolvable
 	EnableDeletionProtection() cdktf.IResolvable
 	EnableHttp2() cdktf.IResolvable
 	EnableWafFailOpen() cdktf.IResolvable
@@ -247,6 +248,16 @@ func (j *jsiiProxy_DataAwsAlb) DropInvalidHeaderFields() cdktf.IResolvable {
 	_jsii_.Get(
 		j,
 		"dropInvalidHeaderFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAlb) EnableCrossZoneLoadBalancing() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableCrossZoneLoadBalancing",
 		&returns,
 	)
 	return returns

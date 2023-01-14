@@ -86,6 +86,9 @@ type ServiceDiscoveryService interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -126,6 +129,7 @@ type ServiceDiscoveryService interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
+	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -511,6 +515,26 @@ func (j *jsiiProxy_ServiceDiscoveryService) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ServiceDiscoveryService) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServiceDiscoveryService) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/aws/r/service_discovery_service aws_service_discovery_service} Resource.
 func NewServiceDiscoveryService(scope constructs.Construct, id *string, config *ServiceDiscoveryServiceConfig) ServiceDiscoveryService {
@@ -679,6 +703,17 @@ func (j *jsiiProxy_ServiceDiscoveryService)SetTagsAll(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServiceDiscoveryService)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -1058,6 +1093,14 @@ func (s *jsiiProxy_ServiceDiscoveryService) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServiceDiscoveryService) ResetType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetType",
 		nil, // no parameters
 	)
 }

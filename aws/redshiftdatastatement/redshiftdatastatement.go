@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putParameters", GoMethod: "PutParameters"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClusterIdentifier", GoMethod: "ResetClusterIdentifier"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDbUser", GoMethod: "ResetDbUser"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -56,6 +57,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetStatementName", GoMethod: "ResetStatementName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWithEvent", GoMethod: "ResetWithEvent"},
+			_jsii_.MemberMethod{JsiiMethod: "resetWorkgroupName", GoMethod: "ResetWorkgroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "secretArn", GoGetter: "SecretArn"},
 			_jsii_.MemberProperty{JsiiProperty: "secretArnInput", GoGetter: "SecretArnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sql", GoGetter: "Sql"},
@@ -73,6 +75,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "withEvent", GoGetter: "WithEvent"},
 			_jsii_.MemberProperty{JsiiProperty: "withEventInput", GoGetter: "WithEventInput"},
+			_jsii_.MemberProperty{JsiiProperty: "workgroupName", GoGetter: "WorkgroupName"},
+			_jsii_.MemberProperty{JsiiProperty: "workgroupNameInput", GoGetter: "WorkgroupNameInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_RedshiftdataStatement{}

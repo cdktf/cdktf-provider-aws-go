@@ -90,68 +90,6 @@ func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference) validatePutCrlConfigurationParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration:
-		value := value.(*[]*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration:
-		value_ := value.([]*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference) validatePutOcspConfigurationParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration:
-		value := value.(*[]*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration:
-		value_ := value.([]*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
@@ -225,25 +163,9 @@ func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case *DataAwsAcmpcaCertificateAuthorityRevocationConfiguration:
-		val := val.(*DataAwsAcmpcaCertificateAuthorityRevocationConfiguration)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataAwsAcmpcaCertificateAuthorityRevocationConfiguration:
-		val_ := val.(DataAwsAcmpcaCertificateAuthorityRevocationConfiguration)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataAwsAcmpcaCertificateAuthorityRevocationConfiguration, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference) validateSetInternalValueParameters(val *DataAwsAcmpcaCertificateAuthorityRevocationConfiguration) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

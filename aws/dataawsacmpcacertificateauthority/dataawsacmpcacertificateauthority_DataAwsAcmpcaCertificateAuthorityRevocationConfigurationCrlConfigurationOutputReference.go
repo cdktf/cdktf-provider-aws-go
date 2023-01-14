@@ -30,8 +30,8 @@ type DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOut
 	ExpirationInDays() *float64
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration
+	SetInternalValue(val *DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration)
 	S3BucketName() *string
 	S3ObjectAcl() *string
 	// Experimental.
@@ -151,8 +151,8 @@ func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlCo
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference) InternalValue() *DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration {
+	var returns *DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -251,7 +251,7 @@ func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlCo
 	)
 }
 
-func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference)SetInternalValue(val *DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

@@ -24,6 +24,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "desyncMitigationMode", GoGetter: "DesyncMitigationMode"},
 			_jsii_.MemberProperty{JsiiProperty: "dnsName", GoGetter: "DnsName"},
 			_jsii_.MemberProperty{JsiiProperty: "dropInvalidHeaderFields", GoGetter: "DropInvalidHeaderFields"},
+			_jsii_.MemberProperty{JsiiProperty: "enableCrossZoneLoadBalancing", GoGetter: "EnableCrossZoneLoadBalancing"},
 			_jsii_.MemberProperty{JsiiProperty: "enableDeletionProtection", GoGetter: "EnableDeletionProtection"},
 			_jsii_.MemberProperty{JsiiProperty: "enableHttp2", GoGetter: "EnableHttp2"},
 			_jsii_.MemberProperty{JsiiProperty: "enableWafFailOpen", GoGetter: "EnableWafFailOpen"},

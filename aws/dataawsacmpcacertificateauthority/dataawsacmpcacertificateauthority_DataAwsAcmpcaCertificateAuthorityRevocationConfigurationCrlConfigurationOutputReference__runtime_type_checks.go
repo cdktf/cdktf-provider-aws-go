@@ -163,25 +163,9 @@ func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlCo
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case *DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration:
-		val := val.(*DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration:
-		val_ := val.(DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference) validateSetInternalValueParameters(val *DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

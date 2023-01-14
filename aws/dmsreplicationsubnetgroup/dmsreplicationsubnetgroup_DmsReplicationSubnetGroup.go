@@ -77,6 +77,8 @@ type DmsReplicationSubnetGroup interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() DmsReplicationSubnetGroupTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	VpcId() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -103,12 +105,14 @@ type DmsReplicationSubnetGroup interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *DmsReplicationSubnetGroupTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -409,6 +413,26 @@ func (j *jsiiProxy_DmsReplicationSubnetGroup) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationSubnetGroup) Timeouts() DmsReplicationSubnetGroupTimeoutsOutputReference {
+	var returns DmsReplicationSubnetGroupTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationSubnetGroup) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -851,6 +875,17 @@ func (d *jsiiProxy_DmsReplicationSubnetGroup) OverrideLogicalId(newLogicalId *st
 	)
 }
 
+func (d *jsiiProxy_DmsReplicationSubnetGroup) PutTimeouts(value *DmsReplicationSubnetGroupTimeouts) {
+	if err := d.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DmsReplicationSubnetGroup) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -879,6 +914,14 @@ func (d *jsiiProxy_DmsReplicationSubnetGroup) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsReplicationSubnetGroup) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

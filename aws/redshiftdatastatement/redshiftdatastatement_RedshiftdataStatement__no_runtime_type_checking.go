@@ -116,6 +116,10 @@ func (j *jsiiProxy_RedshiftdataStatement) validateSetWithEventParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftdataStatement) validateSetWorkgroupNameParameters(val *string) error {
+	return nil
+}
+
 func validateNewRedshiftdataStatementParameters(scope constructs.Construct, id *string, config *RedshiftdataStatementConfig) error {
 	return nil
 }

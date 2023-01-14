@@ -56,7 +56,6 @@ type DataAwsAcmpcaCertificateAuthority interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RevocationConfiguration() DataAwsAcmpcaCertificateAuthorityRevocationConfigurationList
-	RevocationConfigurationInput() interface{}
 	Serial() *string
 	Status() *string
 	Tags() *map[string]*string
@@ -95,12 +94,10 @@ type DataAwsAcmpcaCertificateAuthority interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutRevocationConfiguration(value interface{})
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetRevocationConfiguration()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -322,16 +319,6 @@ func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthority) RevocationConfiguration() 
 	_jsii_.Get(
 		j,
 		"revocationConfiguration",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthority) RevocationConfigurationInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"revocationConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -799,17 +786,6 @@ func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthority) OverrideLogicalId(newLogic
 	)
 }
 
-func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthority) PutRevocationConfiguration(value interface{}) {
-	if err := d.validatePutRevocationConfigurationParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putRevocationConfiguration",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthority) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -822,14 +798,6 @@ func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthority) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthority) ResetRevocationConfiguration() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRevocationConfiguration",
 		nil, // no parameters
 	)
 }

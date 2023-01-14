@@ -323,6 +323,14 @@ func (j *jsiiProxy_ServiceDiscoveryService) validateSetTagsAllParameters(val *ma
 	return nil
 }
 
+func (j *jsiiProxy_ServiceDiscoveryService) validateSetTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewServiceDiscoveryServiceParameters(scope constructs.Construct, id *string, config *ServiceDiscoveryServiceConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

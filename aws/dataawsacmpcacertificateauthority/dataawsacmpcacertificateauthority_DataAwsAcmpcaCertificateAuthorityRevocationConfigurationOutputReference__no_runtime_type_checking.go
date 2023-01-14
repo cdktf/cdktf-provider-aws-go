@@ -44,14 +44,6 @@ func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference) validatePutCrlConfigurationParameters(value interface{}) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference) validatePutOcspConfigurationParameters(value interface{}) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -64,7 +56,7 @@ func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOutputReference) validateSetInternalValueParameters(val *DataAwsAcmpcaCertificateAuthorityRevocationConfiguration) error {
 	return nil
 }
 

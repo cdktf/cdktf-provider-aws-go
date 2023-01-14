@@ -52,10 +52,6 @@ func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthority) validateOverrideLogicalIdP
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthority) validatePutRevocationConfigurationParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataAwsAcmpcaCertificateAuthority_IsConstructParameters(x interface{}) error {
 	return nil
 }

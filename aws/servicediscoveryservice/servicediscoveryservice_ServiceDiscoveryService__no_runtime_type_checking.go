@@ -116,6 +116,10 @@ func (j *jsiiProxy_ServiceDiscoveryService) validateSetTagsAllParameters(val *ma
 	return nil
 }
 
+func (j *jsiiProxy_ServiceDiscoveryService) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
 func validateNewServiceDiscoveryServiceParameters(scope constructs.Construct, id *string, config *ServiceDiscoveryServiceConfig) error {
 	return nil
 }

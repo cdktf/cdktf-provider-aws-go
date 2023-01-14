@@ -28,8 +28,8 @@ type DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOu
 	Enabled() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration
+	SetInternalValue(val *DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration)
 	OcspCustomCname() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspC
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference) InternalValue() *DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration {
+	var returns *DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspC
 	)
 }
 
-func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfigurationOutputReference)SetInternalValue(val *DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
