@@ -2,10 +2,10 @@ package kendrathesaurus
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v11/kendrathesaurus/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v12/kendrathesaurus/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
