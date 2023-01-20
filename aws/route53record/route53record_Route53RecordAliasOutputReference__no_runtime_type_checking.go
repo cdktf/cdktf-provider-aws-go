@@ -60,7 +60,7 @@ func (j *jsiiProxy_Route53RecordAliasOutputReference) validateSetEvaluateTargetH
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecordAliasOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Route53RecordAliasOutputReference) validateSetInternalValueParameters(val *Route53RecordAlias) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_Route53RecordAliasOutputReference) validateSetZoneIdParameter
 	return nil
 }
 
-func validateNewRoute53RecordAliasOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewRoute53RecordAliasOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

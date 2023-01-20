@@ -72,6 +72,10 @@ func (j *jsiiProxy_ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigur
 	return nil
 }
 
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesOutputReference) validateSetRuntimeEnvironmentSecretsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfigurationCodeConfigurationValuesOutputReference) validateSetRuntimeEnvironmentVariablesParameters(val *map[string]*string) error {
 	return nil
 }

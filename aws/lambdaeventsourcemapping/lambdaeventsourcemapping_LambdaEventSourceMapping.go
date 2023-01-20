@@ -97,6 +97,8 @@ type LambdaEventSourceMapping interface {
 	QueuesInput() *[]*string
 	// Experimental.
 	RawOverrides() interface{}
+	ScalingConfig() LambdaEventSourceMappingScalingConfigOutputReference
+	ScalingConfigInput() *LambdaEventSourceMappingScalingConfig
 	SelfManagedEventSource() LambdaEventSourceMappingSelfManagedEventSourceOutputReference
 	SelfManagedEventSourceInput() *LambdaEventSourceMappingSelfManagedEventSource
 	SelfManagedKafkaEventSourceConfig() LambdaEventSourceMappingSelfManagedKafkaEventSourceConfigOutputReference
@@ -152,6 +154,7 @@ type LambdaEventSourceMapping interface {
 	PutAmazonManagedKafkaEventSourceConfig(value *LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig)
 	PutDestinationConfig(value *LambdaEventSourceMappingDestinationConfig)
 	PutFilterCriteria(value *LambdaEventSourceMappingFilterCriteria)
+	PutScalingConfig(value *LambdaEventSourceMappingScalingConfig)
 	PutSelfManagedEventSource(value *LambdaEventSourceMappingSelfManagedEventSource)
 	PutSelfManagedKafkaEventSourceConfig(value *LambdaEventSourceMappingSelfManagedKafkaEventSourceConfig)
 	PutSourceAccessConfiguration(value interface{})
@@ -172,6 +175,7 @@ type LambdaEventSourceMapping interface {
 	ResetOverrideLogicalId()
 	ResetParallelizationFactor()
 	ResetQueues()
+	ResetScalingConfig()
 	ResetSelfManagedEventSource()
 	ResetSelfManagedKafkaEventSourceConfig()
 	ResetSourceAccessConfiguration()
@@ -649,6 +653,26 @@ func (j *jsiiProxy_LambdaEventSourceMapping) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) ScalingConfig() LambdaEventSourceMappingScalingConfigOutputReference {
+	var returns LambdaEventSourceMappingScalingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"scalingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) ScalingConfigInput() *LambdaEventSourceMappingScalingConfig {
+	var returns *LambdaEventSourceMappingScalingConfig
+	_jsii_.Get(
+		j,
+		"scalingConfigInput",
 		&returns,
 	)
 	return returns
@@ -1424,6 +1448,17 @@ func (l *jsiiProxy_LambdaEventSourceMapping) PutFilterCriteria(value *LambdaEven
 	)
 }
 
+func (l *jsiiProxy_LambdaEventSourceMapping) PutScalingConfig(value *LambdaEventSourceMappingScalingConfig) {
+	if err := l.validatePutScalingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putScalingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LambdaEventSourceMapping) PutSelfManagedEventSource(value *LambdaEventSourceMappingSelfManagedEventSource) {
 	if err := l.validatePutSelfManagedEventSourceParameters(value); err != nil {
 		panic(err)
@@ -1573,6 +1608,14 @@ func (l *jsiiProxy_LambdaEventSourceMapping) ResetQueues() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetQueues",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetScalingConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetScalingConfig",
 		nil, // no parameters
 	)
 }

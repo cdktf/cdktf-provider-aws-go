@@ -12,8 +12,8 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53_record aws_route53_record}.
 type Route53Record interface {
 	cdktf.TerraformResource
-	Alias() Route53RecordAliasList
-	AliasInput() interface{}
+	Alias() Route53RecordAliasOutputReference
+	AliasInput() *Route53RecordAlias
 	AllowOverwrite() interface{}
 	SetAllowOverwrite(val interface{})
 	AllowOverwriteInput() interface{}
@@ -33,8 +33,8 @@ type Route53Record interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	FailoverRoutingPolicy() Route53RecordFailoverRoutingPolicyList
-	FailoverRoutingPolicyInput() interface{}
+	FailoverRoutingPolicy() Route53RecordFailoverRoutingPolicyOutputReference
+	FailoverRoutingPolicyInput() *Route53RecordFailoverRoutingPolicy
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -44,16 +44,16 @@ type Route53Record interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	GeolocationRoutingPolicy() Route53RecordGeolocationRoutingPolicyList
-	GeolocationRoutingPolicyInput() interface{}
+	GeolocationRoutingPolicy() Route53RecordGeolocationRoutingPolicyOutputReference
+	GeolocationRoutingPolicyInput() *Route53RecordGeolocationRoutingPolicy
 	HealthCheckId() *string
 	SetHealthCheckId(val *string)
 	HealthCheckIdInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	LatencyRoutingPolicy() Route53RecordLatencyRoutingPolicyList
-	LatencyRoutingPolicyInput() interface{}
+	LatencyRoutingPolicy() Route53RecordLatencyRoutingPolicyOutputReference
+	LatencyRoutingPolicyInput() *Route53RecordLatencyRoutingPolicy
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -94,8 +94,8 @@ type Route53Record interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
-	WeightedRoutingPolicy() Route53RecordWeightedRoutingPolicyList
-	WeightedRoutingPolicyInput() interface{}
+	WeightedRoutingPolicy() Route53RecordWeightedRoutingPolicyOutputReference
+	WeightedRoutingPolicyInput() *Route53RecordWeightedRoutingPolicy
 	ZoneId() *string
 	SetZoneId(val *string)
 	ZoneIdInput() *string
@@ -124,11 +124,11 @@ type Route53Record interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAlias(value interface{})
-	PutFailoverRoutingPolicy(value interface{})
-	PutGeolocationRoutingPolicy(value interface{})
-	PutLatencyRoutingPolicy(value interface{})
-	PutWeightedRoutingPolicy(value interface{})
+	PutAlias(value *Route53RecordAlias)
+	PutFailoverRoutingPolicy(value *Route53RecordFailoverRoutingPolicy)
+	PutGeolocationRoutingPolicy(value *Route53RecordGeolocationRoutingPolicy)
+	PutLatencyRoutingPolicy(value *Route53RecordLatencyRoutingPolicy)
+	PutWeightedRoutingPolicy(value *Route53RecordWeightedRoutingPolicy)
 	ResetAlias()
 	ResetAllowOverwrite()
 	ResetFailoverRoutingPolicy()
@@ -159,8 +159,8 @@ type jsiiProxy_Route53Record struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_Route53Record) Alias() Route53RecordAliasList {
-	var returns Route53RecordAliasList
+func (j *jsiiProxy_Route53Record) Alias() Route53RecordAliasOutputReference {
+	var returns Route53RecordAliasOutputReference
 	_jsii_.Get(
 		j,
 		"alias",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_Route53Record) Alias() Route53RecordAliasList {
 	return returns
 }
 
-func (j *jsiiProxy_Route53Record) AliasInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53Record) AliasInput() *Route53RecordAlias {
+	var returns *Route53RecordAlias
 	_jsii_.Get(
 		j,
 		"aliasInput",
@@ -249,8 +249,8 @@ func (j *jsiiProxy_Route53Record) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_Route53Record) FailoverRoutingPolicy() Route53RecordFailoverRoutingPolicyList {
-	var returns Route53RecordFailoverRoutingPolicyList
+func (j *jsiiProxy_Route53Record) FailoverRoutingPolicy() Route53RecordFailoverRoutingPolicyOutputReference {
+	var returns Route53RecordFailoverRoutingPolicyOutputReference
 	_jsii_.Get(
 		j,
 		"failoverRoutingPolicy",
@@ -259,8 +259,8 @@ func (j *jsiiProxy_Route53Record) FailoverRoutingPolicy() Route53RecordFailoverR
 	return returns
 }
 
-func (j *jsiiProxy_Route53Record) FailoverRoutingPolicyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53Record) FailoverRoutingPolicyInput() *Route53RecordFailoverRoutingPolicy {
+	var returns *Route53RecordFailoverRoutingPolicy
 	_jsii_.Get(
 		j,
 		"failoverRoutingPolicyInput",
@@ -309,8 +309,8 @@ func (j *jsiiProxy_Route53Record) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Route53Record) GeolocationRoutingPolicy() Route53RecordGeolocationRoutingPolicyList {
-	var returns Route53RecordGeolocationRoutingPolicyList
+func (j *jsiiProxy_Route53Record) GeolocationRoutingPolicy() Route53RecordGeolocationRoutingPolicyOutputReference {
+	var returns Route53RecordGeolocationRoutingPolicyOutputReference
 	_jsii_.Get(
 		j,
 		"geolocationRoutingPolicy",
@@ -319,8 +319,8 @@ func (j *jsiiProxy_Route53Record) GeolocationRoutingPolicy() Route53RecordGeoloc
 	return returns
 }
 
-func (j *jsiiProxy_Route53Record) GeolocationRoutingPolicyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53Record) GeolocationRoutingPolicyInput() *Route53RecordGeolocationRoutingPolicy {
+	var returns *Route53RecordGeolocationRoutingPolicy
 	_jsii_.Get(
 		j,
 		"geolocationRoutingPolicyInput",
@@ -369,8 +369,8 @@ func (j *jsiiProxy_Route53Record) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Route53Record) LatencyRoutingPolicy() Route53RecordLatencyRoutingPolicyList {
-	var returns Route53RecordLatencyRoutingPolicyList
+func (j *jsiiProxy_Route53Record) LatencyRoutingPolicy() Route53RecordLatencyRoutingPolicyOutputReference {
+	var returns Route53RecordLatencyRoutingPolicyOutputReference
 	_jsii_.Get(
 		j,
 		"latencyRoutingPolicy",
@@ -379,8 +379,8 @@ func (j *jsiiProxy_Route53Record) LatencyRoutingPolicy() Route53RecordLatencyRou
 	return returns
 }
 
-func (j *jsiiProxy_Route53Record) LatencyRoutingPolicyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53Record) LatencyRoutingPolicyInput() *Route53RecordLatencyRoutingPolicy {
+	var returns *Route53RecordLatencyRoutingPolicy
 	_jsii_.Get(
 		j,
 		"latencyRoutingPolicyInput",
@@ -589,8 +589,8 @@ func (j *jsiiProxy_Route53Record) TypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Route53Record) WeightedRoutingPolicy() Route53RecordWeightedRoutingPolicyList {
-	var returns Route53RecordWeightedRoutingPolicyList
+func (j *jsiiProxy_Route53Record) WeightedRoutingPolicy() Route53RecordWeightedRoutingPolicyOutputReference {
+	var returns Route53RecordWeightedRoutingPolicyOutputReference
 	_jsii_.Get(
 		j,
 		"weightedRoutingPolicy",
@@ -599,8 +599,8 @@ func (j *jsiiProxy_Route53Record) WeightedRoutingPolicy() Route53RecordWeightedR
 	return returns
 }
 
-func (j *jsiiProxy_Route53Record) WeightedRoutingPolicyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53Record) WeightedRoutingPolicyInput() *Route53RecordWeightedRoutingPolicy {
+	var returns *Route53RecordWeightedRoutingPolicy
 	_jsii_.Get(
 		j,
 		"weightedRoutingPolicyInput",
@@ -1100,7 +1100,7 @@ func (r *jsiiProxy_Route53Record) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (r *jsiiProxy_Route53Record) PutAlias(value interface{}) {
+func (r *jsiiProxy_Route53Record) PutAlias(value *Route53RecordAlias) {
 	if err := r.validatePutAliasParameters(value); err != nil {
 		panic(err)
 	}
@@ -1111,7 +1111,7 @@ func (r *jsiiProxy_Route53Record) PutAlias(value interface{}) {
 	)
 }
 
-func (r *jsiiProxy_Route53Record) PutFailoverRoutingPolicy(value interface{}) {
+func (r *jsiiProxy_Route53Record) PutFailoverRoutingPolicy(value *Route53RecordFailoverRoutingPolicy) {
 	if err := r.validatePutFailoverRoutingPolicyParameters(value); err != nil {
 		panic(err)
 	}
@@ -1122,7 +1122,7 @@ func (r *jsiiProxy_Route53Record) PutFailoverRoutingPolicy(value interface{}) {
 	)
 }
 
-func (r *jsiiProxy_Route53Record) PutGeolocationRoutingPolicy(value interface{}) {
+func (r *jsiiProxy_Route53Record) PutGeolocationRoutingPolicy(value *Route53RecordGeolocationRoutingPolicy) {
 	if err := r.validatePutGeolocationRoutingPolicyParameters(value); err != nil {
 		panic(err)
 	}
@@ -1133,7 +1133,7 @@ func (r *jsiiProxy_Route53Record) PutGeolocationRoutingPolicy(value interface{})
 	)
 }
 
-func (r *jsiiProxy_Route53Record) PutLatencyRoutingPolicy(value interface{}) {
+func (r *jsiiProxy_Route53Record) PutLatencyRoutingPolicy(value *Route53RecordLatencyRoutingPolicy) {
 	if err := r.validatePutLatencyRoutingPolicyParameters(value); err != nil {
 		panic(err)
 	}
@@ -1144,7 +1144,7 @@ func (r *jsiiProxy_Route53Record) PutLatencyRoutingPolicy(value interface{}) {
 	)
 }
 
-func (r *jsiiProxy_Route53Record) PutWeightedRoutingPolicy(value interface{}) {
+func (r *jsiiProxy_Route53Record) PutWeightedRoutingPolicy(value *Route53RecordWeightedRoutingPolicy) {
 	if err := r.validatePutWeightedRoutingPolicyParameters(value); err != nil {
 		panic(err)
 	}

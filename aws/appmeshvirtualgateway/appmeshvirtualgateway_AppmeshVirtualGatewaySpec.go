@@ -5,7 +5,7 @@ type AppmeshVirtualGatewaySpec struct {
 	// listener block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway#listener AppmeshVirtualGateway#listener}
-	Listener *AppmeshVirtualGatewaySpecListener `field:"required" json:"listener" yaml:"listener"`
+	Listener interface{} `field:"required" json:"listener" yaml:"listener"`
 	// backend_defaults block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway#backend_defaults AppmeshVirtualGateway#backend_defaults}

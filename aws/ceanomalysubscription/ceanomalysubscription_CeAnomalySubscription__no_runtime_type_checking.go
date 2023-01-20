@@ -56,6 +56,10 @@ func (c *jsiiProxy_CeAnomalySubscription) validatePutSubscriberParameters(value 
 	return nil
 }
 
+func (c *jsiiProxy_CeAnomalySubscription) validatePutThresholdExpressionParameters(value *CeAnomalySubscriptionThresholdExpression) error {
+	return nil
+}
+
 func validateCeAnomalySubscription_IsConstructParameters(x interface{}) error {
 	return nil
 }

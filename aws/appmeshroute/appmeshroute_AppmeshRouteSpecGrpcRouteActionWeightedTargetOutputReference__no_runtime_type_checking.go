@@ -60,6 +60,10 @@ func (j *jsiiProxy_AppmeshRouteSpecGrpcRouteActionWeightedTargetOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_AppmeshRouteSpecGrpcRouteActionWeightedTargetOutputReference) validateSetPortParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppmeshRouteSpecGrpcRouteActionWeightedTargetOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -27,8 +27,8 @@ type Route53RecordWeightedRoutingPolicyOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *Route53RecordWeightedRoutingPolicy
+	SetInternalValue(val *Route53RecordWeightedRoutingPolicy)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -119,8 +119,8 @@ func (j *jsiiProxy_Route53RecordWeightedRoutingPolicyOutputReference) Fqn() *str
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecordWeightedRoutingPolicyOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53RecordWeightedRoutingPolicyOutputReference) InternalValue() *Route53RecordWeightedRoutingPolicy {
+	var returns *Route53RecordWeightedRoutingPolicy
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -170,29 +170,29 @@ func (j *jsiiProxy_Route53RecordWeightedRoutingPolicyOutputReference) WeightInpu
 }
 
 
-func NewRoute53RecordWeightedRoutingPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) Route53RecordWeightedRoutingPolicyOutputReference {
+func NewRoute53RecordWeightedRoutingPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Route53RecordWeightedRoutingPolicyOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRoute53RecordWeightedRoutingPolicyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewRoute53RecordWeightedRoutingPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_Route53RecordWeightedRoutingPolicyOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53Record.Route53RecordWeightedRoutingPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRoute53RecordWeightedRoutingPolicyOutputReference_Override(r Route53RecordWeightedRoutingPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewRoute53RecordWeightedRoutingPolicyOutputReference_Override(r Route53RecordWeightedRoutingPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53Record.Route53RecordWeightedRoutingPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
 }
@@ -219,7 +219,7 @@ func (j *jsiiProxy_Route53RecordWeightedRoutingPolicyOutputReference)SetComplexO
 	)
 }
 
-func (j *jsiiProxy_Route53RecordWeightedRoutingPolicyOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_Route53RecordWeightedRoutingPolicyOutputReference)SetInternalValue(val *Route53RecordWeightedRoutingPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

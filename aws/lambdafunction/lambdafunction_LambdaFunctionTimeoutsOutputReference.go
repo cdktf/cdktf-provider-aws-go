@@ -40,6 +40,9 @@ type LambdaFunctionTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Update() *string
+	SetUpdate(val *string)
+	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -65,6 +68,7 @@ type LambdaFunctionTimeoutsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
+	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -170,6 +174,26 @@ func (j *jsiiProxy_LambdaFunctionTimeoutsOutputReference) TerraformResource() cd
 	return returns
 }
 
+func (j *jsiiProxy_LambdaFunctionTimeoutsOutputReference) Update() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"update",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunctionTimeoutsOutputReference) UpdateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewLambdaFunctionTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LambdaFunctionTimeoutsOutputReference {
 	_init_.Initialize()
@@ -260,6 +284,17 @@ func (j *jsiiProxy_LambdaFunctionTimeoutsOutputReference)SetTerraformResource(va
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaFunctionTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"update",
 		val,
 	)
 }
@@ -454,6 +489,14 @@ func (l *jsiiProxy_LambdaFunctionTimeoutsOutputReference) ResetCreate() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetCreate",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaFunctionTimeoutsOutputReference) ResetUpdate() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetUpdate",
 		nil, // no parameters
 	)
 }

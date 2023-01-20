@@ -30,8 +30,8 @@ type Route53RecordAliasOutputReference interface {
 	EvaluateTargetHealthInput() interface{}
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *Route53RecordAlias
+	SetInternalValue(val *Route53RecordAlias)
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -145,8 +145,8 @@ func (j *jsiiProxy_Route53RecordAliasOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecordAliasOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53RecordAliasOutputReference) InternalValue() *Route53RecordAlias {
+	var returns *Route53RecordAlias
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -216,29 +216,29 @@ func (j *jsiiProxy_Route53RecordAliasOutputReference) ZoneIdInput() *string {
 }
 
 
-func NewRoute53RecordAliasOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) Route53RecordAliasOutputReference {
+func NewRoute53RecordAliasOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Route53RecordAliasOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRoute53RecordAliasOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewRoute53RecordAliasOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_Route53RecordAliasOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53Record.Route53RecordAliasOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRoute53RecordAliasOutputReference_Override(r Route53RecordAliasOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewRoute53RecordAliasOutputReference_Override(r Route53RecordAliasOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53Record.Route53RecordAliasOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
 }
@@ -276,7 +276,7 @@ func (j *jsiiProxy_Route53RecordAliasOutputReference)SetEvaluateTargetHealth(val
 	)
 }
 
-func (j *jsiiProxy_Route53RecordAliasOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_Route53RecordAliasOutputReference)SetInternalValue(val *Route53RecordAlias) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

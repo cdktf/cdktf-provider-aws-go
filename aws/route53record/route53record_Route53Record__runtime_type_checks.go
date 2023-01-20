@@ -111,156 +111,56 @@ func (r *jsiiProxy_Route53Record) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
-func (r *jsiiProxy_Route53Record) validatePutAliasParameters(value interface{}) error {
+func (r *jsiiProxy_Route53Record) validatePutAliasParameters(value *Route53RecordAlias) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*Route53RecordAlias:
-		value := value.(*[]*Route53RecordAlias)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*Route53RecordAlias:
-		value_ := value.([]*Route53RecordAlias)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*Route53RecordAlias; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (r *jsiiProxy_Route53Record) validatePutFailoverRoutingPolicyParameters(value interface{}) error {
+func (r *jsiiProxy_Route53Record) validatePutFailoverRoutingPolicyParameters(value *Route53RecordFailoverRoutingPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*Route53RecordFailoverRoutingPolicy:
-		value := value.(*[]*Route53RecordFailoverRoutingPolicy)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*Route53RecordFailoverRoutingPolicy:
-		value_ := value.([]*Route53RecordFailoverRoutingPolicy)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*Route53RecordFailoverRoutingPolicy; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (r *jsiiProxy_Route53Record) validatePutGeolocationRoutingPolicyParameters(value interface{}) error {
+func (r *jsiiProxy_Route53Record) validatePutGeolocationRoutingPolicyParameters(value *Route53RecordGeolocationRoutingPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*Route53RecordGeolocationRoutingPolicy:
-		value := value.(*[]*Route53RecordGeolocationRoutingPolicy)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*Route53RecordGeolocationRoutingPolicy:
-		value_ := value.([]*Route53RecordGeolocationRoutingPolicy)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*Route53RecordGeolocationRoutingPolicy; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (r *jsiiProxy_Route53Record) validatePutLatencyRoutingPolicyParameters(value interface{}) error {
+func (r *jsiiProxy_Route53Record) validatePutLatencyRoutingPolicyParameters(value *Route53RecordLatencyRoutingPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*Route53RecordLatencyRoutingPolicy:
-		value := value.(*[]*Route53RecordLatencyRoutingPolicy)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*Route53RecordLatencyRoutingPolicy:
-		value_ := value.([]*Route53RecordLatencyRoutingPolicy)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*Route53RecordLatencyRoutingPolicy; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
 }
 
-func (r *jsiiProxy_Route53Record) validatePutWeightedRoutingPolicyParameters(value interface{}) error {
+func (r *jsiiProxy_Route53Record) validatePutWeightedRoutingPolicyParameters(value *Route53RecordWeightedRoutingPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*Route53RecordWeightedRoutingPolicy:
-		value := value.(*[]*Route53RecordWeightedRoutingPolicy)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*Route53RecordWeightedRoutingPolicy:
-		value_ := value.([]*Route53RecordWeightedRoutingPolicy)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*Route53RecordWeightedRoutingPolicy; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

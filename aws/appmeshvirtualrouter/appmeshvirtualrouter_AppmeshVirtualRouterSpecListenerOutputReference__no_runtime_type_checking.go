@@ -60,7 +60,7 @@ func (j *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference) validateSetC
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference) validateSetInternalValueParameters(val *AppmeshVirtualRouterSpecListener) error {
+func (j *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference) validateSetT
 	return nil
 }
 
-func validateNewAppmeshVirtualRouterSpecListenerOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppmeshVirtualRouterSpecListenerOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

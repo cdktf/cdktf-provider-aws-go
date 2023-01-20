@@ -31,8 +31,8 @@ type AppmeshVirtualGatewaySpecListenerOutputReference interface {
 	Fqn() *string
 	HealthCheck() AppmeshVirtualGatewaySpecListenerHealthCheckOutputReference
 	HealthCheckInput() *AppmeshVirtualGatewaySpecListenerHealthCheck
-	InternalValue() *AppmeshVirtualGatewaySpecListener
-	SetInternalValue(val *AppmeshVirtualGatewaySpecListener)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	PortMapping() AppmeshVirtualGatewaySpecListenerPortMappingOutputReference
 	PortMappingInput() *AppmeshVirtualGatewaySpecListenerPortMapping
 	// Experimental.
@@ -171,8 +171,8 @@ func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) HealthCheck
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) InternalValue() *AppmeshVirtualGatewaySpecListener {
-	var returns *AppmeshVirtualGatewaySpecListener
+func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -242,29 +242,29 @@ func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference) TlsInput() 
 }
 
 
-func NewAppmeshVirtualGatewaySpecListenerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppmeshVirtualGatewaySpecListenerOutputReference {
+func NewAppmeshVirtualGatewaySpecListenerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AppmeshVirtualGatewaySpecListenerOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewAppmeshVirtualGatewaySpecListenerOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewAppmeshVirtualGatewaySpecListenerOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewAppmeshVirtualGatewaySpecListenerOutputReference_Override(a AppmeshVirtualGatewaySpecListenerOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAppmeshVirtualGatewaySpecListenerOutputReference_Override(a AppmeshVirtualGatewaySpecListenerOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshVirtualGateway.AppmeshVirtualGatewaySpecListenerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
@@ -291,7 +291,7 @@ func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference)SetInternalValue(val *AppmeshVirtualGatewaySpecListener) {
+func (j *jsiiProxy_AppmeshVirtualGatewaySpecListenerOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

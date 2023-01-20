@@ -58,6 +58,10 @@ type LambdaEventSourceMappingConfig struct {
 	ParallelizationFactor *float64 `field:"optional" json:"parallelizationFactor" yaml:"parallelizationFactor"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping#queues LambdaEventSourceMapping#queues}.
 	Queues *[]*string `field:"optional" json:"queues" yaml:"queues"`
+	// scaling_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping#scaling_config LambdaEventSourceMapping#scaling_config}
+	ScalingConfig *LambdaEventSourceMappingScalingConfig `field:"optional" json:"scalingConfig" yaml:"scalingConfig"`
 	// self_managed_event_source block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping#self_managed_event_source LambdaEventSourceMapping#self_managed_event_source}

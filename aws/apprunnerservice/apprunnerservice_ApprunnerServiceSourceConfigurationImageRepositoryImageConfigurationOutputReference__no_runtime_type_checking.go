@@ -64,6 +64,10 @@ func (j *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryImageConfig
 	return nil
 }
 
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference) validateSetRuntimeEnvironmentSecretsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference) validateSetRuntimeEnvironmentVariablesParameters(val *map[string]*string) error {
 	return nil
 }

@@ -64,7 +64,7 @@ func (j *jsiiProxy_Route53RecordGeolocationRoutingPolicyOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecordGeolocationRoutingPolicyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Route53RecordGeolocationRoutingPolicyOutputReference) validateSetInternalValueParameters(val *Route53RecordGeolocationRoutingPolicy) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_Route53RecordGeolocationRoutingPolicyOutputReference) validat
 	return nil
 }
 
-func validateNewRoute53RecordGeolocationRoutingPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewRoute53RecordGeolocationRoutingPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

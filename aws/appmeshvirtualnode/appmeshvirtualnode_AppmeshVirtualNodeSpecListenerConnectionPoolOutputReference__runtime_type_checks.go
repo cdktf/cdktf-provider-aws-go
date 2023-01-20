@@ -101,34 +101,94 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) 
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) validatePutHttpParameters(value *AppmeshVirtualNodeSpecListenerConnectionPoolHttp) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) validatePutHttpParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*AppmeshVirtualNodeSpecListenerConnectionPoolHttp:
+		value := value.(*[]*AppmeshVirtualNodeSpecListenerConnectionPoolHttp)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*AppmeshVirtualNodeSpecListenerConnectionPoolHttp:
+		value_ := value.([]*AppmeshVirtualNodeSpecListenerConnectionPoolHttp)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AppmeshVirtualNodeSpecListenerConnectionPoolHttp; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) validatePutHttp2Parameters(value *AppmeshVirtualNodeSpecListenerConnectionPoolHttp2) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) validatePutHttp2Parameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*AppmeshVirtualNodeSpecListenerConnectionPoolHttp2:
+		value := value.(*[]*AppmeshVirtualNodeSpecListenerConnectionPoolHttp2)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*AppmeshVirtualNodeSpecListenerConnectionPoolHttp2:
+		value_ := value.([]*AppmeshVirtualNodeSpecListenerConnectionPoolHttp2)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AppmeshVirtualNodeSpecListenerConnectionPoolHttp2; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) validatePutTcpParameters(value *AppmeshVirtualNodeSpecListenerConnectionPoolTcp) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) validatePutTcpParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*AppmeshVirtualNodeSpecListenerConnectionPoolTcp:
+		value := value.(*[]*AppmeshVirtualNodeSpecListenerConnectionPoolTcp)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*AppmeshVirtualNodeSpecListenerConnectionPoolTcp:
+		value_ := value.([]*AppmeshVirtualNodeSpecListenerConnectionPoolTcp)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AppmeshVirtualNodeSpecListenerConnectionPoolTcp; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil

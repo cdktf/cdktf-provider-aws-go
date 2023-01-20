@@ -84,6 +84,8 @@ type CeAnomalySubscription interface {
 	TerraformResourceType() *string
 	Threshold() *float64
 	SetThreshold(val *float64)
+	ThresholdExpression() CeAnomalySubscriptionThresholdExpressionOutputReference
+	ThresholdExpressionInput() *CeAnomalySubscriptionThresholdExpression
 	ThresholdInput() *float64
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -111,6 +113,7 @@ type CeAnomalySubscription interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutSubscriber(value interface{})
+	PutThresholdExpression(value *CeAnomalySubscriptionThresholdExpression)
 	ResetAccountId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -118,6 +121,8 @@ type CeAnomalySubscription interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
+	ResetThreshold()
+	ResetThresholdExpression()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -468,6 +473,26 @@ func (j *jsiiProxy_CeAnomalySubscription) Threshold() *float64 {
 	_jsii_.Get(
 		j,
 		"threshold",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CeAnomalySubscription) ThresholdExpression() CeAnomalySubscriptionThresholdExpressionOutputReference {
+	var returns CeAnomalySubscriptionThresholdExpressionOutputReference
+	_jsii_.Get(
+		j,
+		"thresholdExpression",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CeAnomalySubscription) ThresholdExpressionInput() *CeAnomalySubscriptionThresholdExpression {
+	var returns *CeAnomalySubscriptionThresholdExpression
+	_jsii_.Get(
+		j,
+		"thresholdExpressionInput",
 		&returns,
 	)
 	return returns
@@ -943,6 +968,17 @@ func (c *jsiiProxy_CeAnomalySubscription) PutSubscriber(value interface{}) {
 	)
 }
 
+func (c *jsiiProxy_CeAnomalySubscription) PutThresholdExpression(value *CeAnomalySubscriptionThresholdExpression) {
+	if err := c.validatePutThresholdExpressionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putThresholdExpression",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CeAnomalySubscription) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		c,
@@ -979,6 +1015,22 @@ func (c *jsiiProxy_CeAnomalySubscription) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CeAnomalySubscription) ResetThreshold() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetThreshold",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CeAnomalySubscription) ResetThresholdExpression() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetThresholdExpression",
 		nil, // no parameters
 	)
 }

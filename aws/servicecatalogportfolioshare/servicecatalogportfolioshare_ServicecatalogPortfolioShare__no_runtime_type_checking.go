@@ -96,6 +96,10 @@ func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetSharePrincipalsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetShareTagOptionsParameters(val interface{}) error {
 	return nil
 }

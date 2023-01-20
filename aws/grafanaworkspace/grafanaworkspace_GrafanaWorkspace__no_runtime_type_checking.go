@@ -80,6 +80,10 @@ func (j *jsiiProxy_GrafanaWorkspace) validateSetAuthenticationProvidersParameter
 	return nil
 }
 
+func (j *jsiiProxy_GrafanaWorkspace) validateSetConfigurationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GrafanaWorkspace) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

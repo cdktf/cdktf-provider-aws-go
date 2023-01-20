@@ -29,14 +29,14 @@ type AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference interface {
 	Fqn() *string
 	Grpc() AppmeshVirtualNodeSpecListenerConnectionPoolGrpcOutputReference
 	GrpcInput() *AppmeshVirtualNodeSpecListenerConnectionPoolGrpc
-	Http() AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference
-	Http2() AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference
-	Http2Input() *AppmeshVirtualNodeSpecListenerConnectionPoolHttp2
-	HttpInput() *AppmeshVirtualNodeSpecListenerConnectionPoolHttp
+	Http() AppmeshVirtualNodeSpecListenerConnectionPoolHttpList
+	Http2() AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List
+	Http2Input() interface{}
+	HttpInput() interface{}
 	InternalValue() *AppmeshVirtualNodeSpecListenerConnectionPool
 	SetInternalValue(val *AppmeshVirtualNodeSpecListenerConnectionPool)
-	Tcp() AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference
-	TcpInput() *AppmeshVirtualNodeSpecListenerConnectionPoolTcp
+	Tcp() AppmeshVirtualNodeSpecListenerConnectionPoolTcpList
+	TcpInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,9 +70,9 @@ type AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutGrpc(value *AppmeshVirtualNodeSpecListenerConnectionPoolGrpc)
-	PutHttp(value *AppmeshVirtualNodeSpecListenerConnectionPoolHttp)
-	PutHttp2(value *AppmeshVirtualNodeSpecListenerConnectionPoolHttp2)
-	PutTcp(value *AppmeshVirtualNodeSpecListenerConnectionPoolTcp)
+	PutHttp(value interface{})
+	PutHttp2(value interface{})
+	PutTcp(value interface{})
 	ResetGrpc()
 	ResetHttp()
 	ResetHttp2()
@@ -152,8 +152,8 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) Http() AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference {
-	var returns AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) Http() AppmeshVirtualNodeSpecListenerConnectionPoolHttpList {
+	var returns AppmeshVirtualNodeSpecListenerConnectionPoolHttpList
 	_jsii_.Get(
 		j,
 		"http",
@@ -162,8 +162,8 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) Http2() AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference {
-	var returns AppmeshVirtualNodeSpecListenerConnectionPoolHttp2OutputReference
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) Http2() AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List {
+	var returns AppmeshVirtualNodeSpecListenerConnectionPoolHttp2List
 	_jsii_.Get(
 		j,
 		"http2",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) Http2Input() *AppmeshVirtualNodeSpecListenerConnectionPoolHttp2 {
-	var returns *AppmeshVirtualNodeSpecListenerConnectionPoolHttp2
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) Http2Input() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"http2Input",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) HttpInput() *AppmeshVirtualNodeSpecListenerConnectionPoolHttp {
-	var returns *AppmeshVirtualNodeSpecListenerConnectionPoolHttp
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) HttpInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"httpInput",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) Tcp() AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference {
-	var returns AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) Tcp() AppmeshVirtualNodeSpecListenerConnectionPoolTcpList {
+	var returns AppmeshVirtualNodeSpecListenerConnectionPoolTcpList
 	_jsii_.Get(
 		j,
 		"tcp",
@@ -212,8 +212,8 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) TcpInput() *AppmeshVirtualNodeSpecListenerConnectionPoolTcp {
-	var returns *AppmeshVirtualNodeSpecListenerConnectionPoolTcp
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) TcpInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"tcpInput",
@@ -522,7 +522,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) 
 	)
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) PutHttp(value *AppmeshVirtualNodeSpecListenerConnectionPoolHttp) {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) PutHttp(value interface{}) {
 	if err := a.validatePutHttpParameters(value); err != nil {
 		panic(err)
 	}
@@ -533,7 +533,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) 
 	)
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) PutHttp2(value *AppmeshVirtualNodeSpecListenerConnectionPoolHttp2) {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) PutHttp2(value interface{}) {
 	if err := a.validatePutHttp2Parameters(value); err != nil {
 		panic(err)
 	}
@@ -544,7 +544,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) 
 	)
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) PutTcp(value *AppmeshVirtualNodeSpecListenerConnectionPoolTcp) {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) PutTcp(value interface{}) {
 	if err := a.validatePutTcpParameters(value); err != nil {
 		panic(err)
 	}

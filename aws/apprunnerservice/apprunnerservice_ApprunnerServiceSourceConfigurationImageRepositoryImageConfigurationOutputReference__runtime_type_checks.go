@@ -179,6 +179,14 @@ func (j *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryImageConfig
 	return nil
 }
 
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference) validateSetRuntimeEnvironmentSecretsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference) validateSetRuntimeEnvironmentVariablesParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

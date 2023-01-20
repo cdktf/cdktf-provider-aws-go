@@ -25,6 +25,8 @@ type GrafanaWorkspaceConfig struct {
 	AuthenticationProviders *[]*string `field:"required" json:"authenticationProviders" yaml:"authenticationProviders"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#permission_type GrafanaWorkspace#permission_type}.
 	PermissionType *string `field:"required" json:"permissionType" yaml:"permissionType"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#configuration GrafanaWorkspace#configuration}.
+	Configuration *string `field:"optional" json:"configuration" yaml:"configuration"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#data_sources GrafanaWorkspace#data_sources}.
 	DataSources *[]*string `field:"optional" json:"dataSources" yaml:"dataSources"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#description GrafanaWorkspace#description}.

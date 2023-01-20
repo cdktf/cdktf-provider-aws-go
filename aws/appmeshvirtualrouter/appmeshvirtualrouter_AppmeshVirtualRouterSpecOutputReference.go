@@ -29,8 +29,8 @@ type AppmeshVirtualRouterSpecOutputReference interface {
 	Fqn() *string
 	InternalValue() *AppmeshVirtualRouterSpec
 	SetInternalValue(val *AppmeshVirtualRouterSpec)
-	Listener() AppmeshVirtualRouterSpecListenerOutputReference
-	ListenerInput() *AppmeshVirtualRouterSpecListener
+	Listener() AppmeshVirtualRouterSpecListenerList
+	ListenerInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -63,7 +63,7 @@ type AppmeshVirtualRouterSpecOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutListener(value *AppmeshVirtualRouterSpecListener)
+	PutListener(value interface{})
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -129,8 +129,8 @@ func (j *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) InternalValue() *App
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) Listener() AppmeshVirtualRouterSpecListenerOutputReference {
-	var returns AppmeshVirtualRouterSpecListenerOutputReference
+func (j *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) Listener() AppmeshVirtualRouterSpecListenerList {
+	var returns AppmeshVirtualRouterSpecListenerList
 	_jsii_.Get(
 		j,
 		"listener",
@@ -139,8 +139,8 @@ func (j *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) Listener() AppmeshVi
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) ListenerInput() *AppmeshVirtualRouterSpecListener {
-	var returns *AppmeshVirtualRouterSpecListener
+func (j *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) ListenerInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"listenerInput",
@@ -438,7 +438,7 @@ func (a *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) InterpolationForAttr
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) PutListener(value *AppmeshVirtualRouterSpecListener) {
+func (a *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) PutListener(value interface{}) {
 	if err := a.validatePutListenerParameters(value); err != nil {
 		panic(err)
 	}

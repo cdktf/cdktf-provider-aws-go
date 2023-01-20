@@ -65,6 +65,9 @@ type ServicecatalogPortfolioShare interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SharePrincipals() interface{}
+	SetSharePrincipals(val interface{})
+	SharePrincipalsInput() interface{}
 	ShareTagOptions() interface{}
 	SetShareTagOptions(val interface{})
 	ShareTagOptionsInput() interface{}
@@ -113,6 +116,7 @@ type ServicecatalogPortfolioShare interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSharePrincipals()
 	ResetShareTagOptions()
 	ResetTimeouts()
 	ResetWaitForAcceptance()
@@ -346,6 +350,26 @@ func (j *jsiiProxy_ServicecatalogPortfolioShare) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicecatalogPortfolioShare) SharePrincipals() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sharePrincipals",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ServicecatalogPortfolioShare) SharePrincipalsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sharePrincipalsInput",
 		&returns,
 	)
 	return returns
@@ -596,6 +620,17 @@ func (j *jsiiProxy_ServicecatalogPortfolioShare)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ServicecatalogPortfolioShare)SetSharePrincipals(val interface{}) {
+	if err := j.validateSetSharePrincipalsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sharePrincipals",
 		val,
 	)
 }
@@ -930,6 +965,14 @@ func (s *jsiiProxy_ServicecatalogPortfolioShare) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_ServicecatalogPortfolioShare) ResetSharePrincipals() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSharePrincipals",
 		nil, // no parameters
 	)
 }

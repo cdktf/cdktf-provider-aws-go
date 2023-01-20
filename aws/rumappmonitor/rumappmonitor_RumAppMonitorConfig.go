@@ -27,6 +27,10 @@ type RumAppMonitorConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rum_app_monitor#app_monitor_configuration RumAppMonitor#app_monitor_configuration}
 	AppMonitorConfiguration *RumAppMonitorAppMonitorConfiguration `field:"optional" json:"appMonitorConfiguration" yaml:"appMonitorConfiguration"`
+	// custom_events block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rum_app_monitor#custom_events RumAppMonitor#custom_events}
+	CustomEvents *RumAppMonitorCustomEvents `field:"optional" json:"customEvents" yaml:"customEvents"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rum_app_monitor#cw_log_enabled RumAppMonitor#cw_log_enabled}.
 	CwLogEnabled interface{} `field:"optional" json:"cwLogEnabled" yaml:"cwLogEnabled"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/rum_app_monitor#id RumAppMonitor#id}.

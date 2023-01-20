@@ -48,6 +48,10 @@ func (a *jsiiProxy_AppmeshRouteSpecTcpRouteOutputReference) validatePutActionPar
 	return nil
 }
 
+func (a *jsiiProxy_AppmeshRouteSpecTcpRouteOutputReference) validatePutMatchParameters(value *AppmeshRouteSpecTcpRouteMatch) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppmeshRouteSpecTcpRouteOutputReference) validatePutTimeoutParameters(value *AppmeshRouteSpecTcpRouteTimeout) error {
 	return nil
 }

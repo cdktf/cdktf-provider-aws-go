@@ -163,25 +163,9 @@ func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case *Route53RecordLatencyRoutingPolicy:
-		val := val.(*Route53RecordLatencyRoutingPolicy)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case Route53RecordLatencyRoutingPolicy:
-		val_ := val.(Route53RecordLatencyRoutingPolicy)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *Route53RecordLatencyRoutingPolicy, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) validateSetInternalValueParameters(val *Route53RecordLatencyRoutingPolicy) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -211,21 +195,13 @@ func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) validateSet
 	return nil
 }
 
-func validateNewRoute53RecordLatencyRoutingPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewRoute53RecordLatencyRoutingPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
-	}
-
-	if complexObjectIndex == nil {
-		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
-	}
-
-	if complexObjectIsFromSet == nil {
-		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

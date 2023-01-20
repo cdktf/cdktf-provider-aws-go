@@ -52,7 +52,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validatePutBackendDefa
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validatePutListenerParameters(value *AppmeshVirtualNodeSpecListener) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validatePutListenerParameters(value interface{}) error {
 	return nil
 }
 

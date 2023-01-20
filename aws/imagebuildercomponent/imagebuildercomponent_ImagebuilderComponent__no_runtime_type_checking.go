@@ -104,6 +104,10 @@ func (j *jsiiProxy_ImagebuilderComponent) validateSetProvisionersParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ImagebuilderComponent) validateSetSkipDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImagebuilderComponent) validateSetSupportedOsVersionsParameters(val *[]*string) error {
 	return nil
 }

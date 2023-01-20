@@ -31,8 +31,8 @@ type AppmeshVirtualGatewaySpecOutputReference interface {
 	Fqn() *string
 	InternalValue() *AppmeshVirtualGatewaySpec
 	SetInternalValue(val *AppmeshVirtualGatewaySpec)
-	Listener() AppmeshVirtualGatewaySpecListenerOutputReference
-	ListenerInput() *AppmeshVirtualGatewaySpecListener
+	Listener() AppmeshVirtualGatewaySpecListenerList
+	ListenerInput() interface{}
 	Logging() AppmeshVirtualGatewaySpecLoggingOutputReference
 	LoggingInput() *AppmeshVirtualGatewaySpecLogging
 	// Experimental.
@@ -68,7 +68,7 @@ type AppmeshVirtualGatewaySpecOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutBackendDefaults(value *AppmeshVirtualGatewaySpecBackendDefaults)
-	PutListener(value *AppmeshVirtualGatewaySpecListener)
+	PutListener(value interface{})
 	PutLogging(value *AppmeshVirtualGatewaySpecLogging)
 	ResetBackendDefaults()
 	ResetLogging()
@@ -157,8 +157,8 @@ func (j *jsiiProxy_AppmeshVirtualGatewaySpecOutputReference) InternalValue() *Ap
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualGatewaySpecOutputReference) Listener() AppmeshVirtualGatewaySpecListenerOutputReference {
-	var returns AppmeshVirtualGatewaySpecListenerOutputReference
+func (j *jsiiProxy_AppmeshVirtualGatewaySpecOutputReference) Listener() AppmeshVirtualGatewaySpecListenerList {
+	var returns AppmeshVirtualGatewaySpecListenerList
 	_jsii_.Get(
 		j,
 		"listener",
@@ -167,8 +167,8 @@ func (j *jsiiProxy_AppmeshVirtualGatewaySpecOutputReference) Listener() AppmeshV
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualGatewaySpecOutputReference) ListenerInput() *AppmeshVirtualGatewaySpecListener {
-	var returns *AppmeshVirtualGatewaySpecListener
+func (j *jsiiProxy_AppmeshVirtualGatewaySpecOutputReference) ListenerInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"listenerInput",
@@ -497,7 +497,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecOutputReference) PutBackendDefaults(
 	)
 }
 
-func (a *jsiiProxy_AppmeshVirtualGatewaySpecOutputReference) PutListener(value *AppmeshVirtualGatewaySpecListener) {
+func (a *jsiiProxy_AppmeshVirtualGatewaySpecOutputReference) PutListener(value interface{}) {
 	if err := a.validatePutListenerParameters(value); err != nil {
 		panic(err)
 	}

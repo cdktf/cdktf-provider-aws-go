@@ -48,15 +48,15 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) 
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) validatePutHttpParameters(value *AppmeshVirtualNodeSpecListenerConnectionPoolHttp) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) validatePutHttpParameters(value interface{}) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) validatePutHttp2Parameters(value *AppmeshVirtualNodeSpecListenerConnectionPoolHttp2) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) validatePutHttp2Parameters(value interface{}) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) validatePutTcpParameters(value *AppmeshVirtualNodeSpecListenerConnectionPoolTcp) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolOutputReference) validatePutTcpParameters(value interface{}) error {
 	return nil
 }
 

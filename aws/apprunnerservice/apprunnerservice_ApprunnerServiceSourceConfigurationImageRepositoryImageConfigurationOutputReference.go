@@ -32,6 +32,9 @@ type ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputR
 	Port() *string
 	SetPort(val *string)
 	PortInput() *string
+	RuntimeEnvironmentSecrets() *map[string]*string
+	SetRuntimeEnvironmentSecrets(val *map[string]*string)
+	RuntimeEnvironmentSecretsInput() *map[string]*string
 	RuntimeEnvironmentVariables() *map[string]*string
 	SetRuntimeEnvironmentVariables(val *map[string]*string)
 	RuntimeEnvironmentVariablesInput() *map[string]*string
@@ -71,6 +74,7 @@ type ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputR
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetPort()
+	ResetRuntimeEnvironmentSecrets()
 	ResetRuntimeEnvironmentVariables()
 	ResetStartCommand()
 	// Produce the Token's value at resolution time.
@@ -153,6 +157,26 @@ func (j *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryImageConfig
 	_jsii_.Get(
 		j,
 		"portInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference) RuntimeEnvironmentSecrets() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"runtimeEnvironmentSecrets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference) RuntimeEnvironmentSecretsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"runtimeEnvironmentSecretsInput",
 		&returns,
 	)
 	return returns
@@ -286,6 +310,17 @@ func (j *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryImageConfig
 	_jsii_.Set(
 		j,
 		"port",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference)SetRuntimeEnvironmentSecrets(val *map[string]*string) {
+	if err := j.validateSetRuntimeEnvironmentSecretsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtimeEnvironmentSecrets",
 		val,
 	)
 }
@@ -524,6 +559,14 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryImageConfig
 	_jsii_.InvokeVoid(
 		a,
 		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApprunnerServiceSourceConfigurationImageRepositoryImageConfigurationOutputReference) ResetRuntimeEnvironmentSecrets() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetRuntimeEnvironmentSecrets",
 		nil, // no parameters
 	)
 }

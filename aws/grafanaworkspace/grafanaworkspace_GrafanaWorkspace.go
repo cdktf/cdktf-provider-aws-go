@@ -21,6 +21,9 @@ type GrafanaWorkspace interface {
 	AuthenticationProvidersInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Configuration() *string
+	SetConfiguration(val *string)
+	ConfigurationInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -135,6 +138,7 @@ type GrafanaWorkspace interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GrafanaWorkspaceTimeouts)
 	PutVpcConfiguration(value *GrafanaWorkspaceVpcConfiguration)
+	ResetConfiguration()
 	ResetDataSources()
 	ResetDescription()
 	ResetId()
@@ -221,6 +225,26 @@ func (j *jsiiProxy_GrafanaWorkspace) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GrafanaWorkspace) Configuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GrafanaWorkspace) ConfigurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"configurationInput",
 		&returns,
 	)
 	return returns
@@ -738,6 +762,17 @@ func (j *jsiiProxy_GrafanaWorkspace)SetAuthenticationProviders(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_GrafanaWorkspace)SetConfiguration(val *string) {
+	if err := j.validateSetConfigurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"configuration",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GrafanaWorkspace)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -1220,6 +1255,14 @@ func (g *jsiiProxy_GrafanaWorkspace) PutVpcConfiguration(value *GrafanaWorkspace
 		g,
 		"putVpcConfiguration",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GrafanaWorkspace) ResetConfiguration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetConfiguration",
+		nil, // no parameters
 	)
 }
 

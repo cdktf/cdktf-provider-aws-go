@@ -28,17 +28,17 @@ type Route53RecordConfig struct {
 	// alias block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#alias Route53Record#alias}
-	Alias interface{} `field:"optional" json:"alias" yaml:"alias"`
+	Alias *Route53RecordAlias `field:"optional" json:"alias" yaml:"alias"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#allow_overwrite Route53Record#allow_overwrite}.
 	AllowOverwrite interface{} `field:"optional" json:"allowOverwrite" yaml:"allowOverwrite"`
 	// failover_routing_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#failover_routing_policy Route53Record#failover_routing_policy}
-	FailoverRoutingPolicy interface{} `field:"optional" json:"failoverRoutingPolicy" yaml:"failoverRoutingPolicy"`
+	FailoverRoutingPolicy *Route53RecordFailoverRoutingPolicy `field:"optional" json:"failoverRoutingPolicy" yaml:"failoverRoutingPolicy"`
 	// geolocation_routing_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#geolocation_routing_policy Route53Record#geolocation_routing_policy}
-	GeolocationRoutingPolicy interface{} `field:"optional" json:"geolocationRoutingPolicy" yaml:"geolocationRoutingPolicy"`
+	GeolocationRoutingPolicy *Route53RecordGeolocationRoutingPolicy `field:"optional" json:"geolocationRoutingPolicy" yaml:"geolocationRoutingPolicy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#health_check_id Route53Record#health_check_id}.
 	HealthCheckId *string `field:"optional" json:"healthCheckId" yaml:"healthCheckId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#id Route53Record#id}.
@@ -49,7 +49,7 @@ type Route53RecordConfig struct {
 	// latency_routing_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#latency_routing_policy Route53Record#latency_routing_policy}
-	LatencyRoutingPolicy interface{} `field:"optional" json:"latencyRoutingPolicy" yaml:"latencyRoutingPolicy"`
+	LatencyRoutingPolicy *Route53RecordLatencyRoutingPolicy `field:"optional" json:"latencyRoutingPolicy" yaml:"latencyRoutingPolicy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#multivalue_answer_routing_policy Route53Record#multivalue_answer_routing_policy}.
 	MultivalueAnswerRoutingPolicy interface{} `field:"optional" json:"multivalueAnswerRoutingPolicy" yaml:"multivalueAnswerRoutingPolicy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#records Route53Record#records}.
@@ -61,6 +61,6 @@ type Route53RecordConfig struct {
 	// weighted_routing_policy block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/route53_record#weighted_routing_policy Route53Record#weighted_routing_policy}
-	WeightedRoutingPolicy interface{} `field:"optional" json:"weightedRoutingPolicy" yaml:"weightedRoutingPolicy"`
+	WeightedRoutingPolicy *Route53RecordWeightedRoutingPolicy `field:"optional" json:"weightedRoutingPolicy" yaml:"weightedRoutingPolicy"`
 }
 

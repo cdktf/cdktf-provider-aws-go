@@ -21,6 +21,7 @@ type DataAwsEksClusterOutpostConfigOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	ControlPlaneInstanceType() *string
+	ControlPlanePlacement() DataAwsEksClusterOutpostConfigControlPlanePlacementList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -103,6 +104,16 @@ func (j *jsiiProxy_DataAwsEksClusterOutpostConfigOutputReference) ControlPlaneIn
 	_jsii_.Get(
 		j,
 		"controlPlaneInstanceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEksClusterOutpostConfigOutputReference) ControlPlanePlacement() DataAwsEksClusterOutpostConfigControlPlanePlacementList {
+	var returns DataAwsEksClusterOutpostConfigControlPlanePlacementList
+	_jsii_.Get(
+		j,
+		"controlPlanePlacement",
 		&returns,
 	)
 	return returns

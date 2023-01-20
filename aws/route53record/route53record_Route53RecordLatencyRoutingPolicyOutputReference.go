@@ -27,8 +27,8 @@ type Route53RecordLatencyRoutingPolicyOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *Route53RecordLatencyRoutingPolicy
+	SetInternalValue(val *Route53RecordLatencyRoutingPolicy)
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -119,8 +119,8 @@ func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) InternalValue() *Route53RecordLatencyRoutingPolicy {
+	var returns *Route53RecordLatencyRoutingPolicy
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -170,29 +170,29 @@ func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) TerraformRe
 }
 
 
-func NewRoute53RecordLatencyRoutingPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) Route53RecordLatencyRoutingPolicyOutputReference {
+func NewRoute53RecordLatencyRoutingPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Route53RecordLatencyRoutingPolicyOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRoute53RecordLatencyRoutingPolicyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewRoute53RecordLatencyRoutingPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53Record.Route53RecordLatencyRoutingPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRoute53RecordLatencyRoutingPolicyOutputReference_Override(r Route53RecordLatencyRoutingPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewRoute53RecordLatencyRoutingPolicyOutputReference_Override(r Route53RecordLatencyRoutingPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53Record.Route53RecordLatencyRoutingPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
 }
@@ -219,7 +219,7 @@ func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference)SetInternalValue(val *Route53RecordLatencyRoutingPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

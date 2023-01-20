@@ -31,6 +31,9 @@ type AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference interface {
 	HostnameInput() *AppmeshGatewayRouteSpecHttp2RouteMatchHostname
 	InternalValue() *AppmeshGatewayRouteSpecHttp2RouteMatch
 	SetInternalValue(val *AppmeshGatewayRouteSpecHttp2RouteMatch)
+	Port() *float64
+	SetPort(val *float64)
+	PortInput() *float64
 	Prefix() *string
 	SetPrefix(val *string)
 	PrefixInput() *string
@@ -68,6 +71,7 @@ type AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutHostname(value *AppmeshGatewayRouteSpecHttp2RouteMatchHostname)
 	ResetHostname()
+	ResetPort()
 	ResetPrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference) Intern
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference) PortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"portInput",
 		&returns,
 	)
 	return returns
@@ -251,6 +275,17 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference)SetInte
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"port",
 		val,
 	)
 }
@@ -489,6 +524,14 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference) ResetH
 	_jsii_.InvokeVoid(
 		a,
 		"resetHostname",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference) ResetPort() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPort",
 		nil, // no parameters
 	)
 }

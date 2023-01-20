@@ -29,6 +29,9 @@ type AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Port() *float64
+	SetPort(val *float64)
+	PortInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -127,6 +131,26 @@ func (j *jsiiProxy_AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference) 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference) PortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"portInput",
 		&returns,
 	)
 	return returns
@@ -249,6 +273,17 @@ func (j *jsiiProxy_AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference)S
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"port",
 		val,
 	)
 }
@@ -481,6 +516,14 @@ func (a *jsiiProxy_AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference) 
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference) ResetPort() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPort",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AppmeshRouteSpecTcpRouteActionWeightedTargetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

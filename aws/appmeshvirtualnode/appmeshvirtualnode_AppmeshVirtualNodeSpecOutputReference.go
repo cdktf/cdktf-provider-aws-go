@@ -33,8 +33,8 @@ type AppmeshVirtualNodeSpecOutputReference interface {
 	Fqn() *string
 	InternalValue() *AppmeshVirtualNodeSpec
 	SetInternalValue(val *AppmeshVirtualNodeSpec)
-	Listener() AppmeshVirtualNodeSpecListenerOutputReference
-	ListenerInput() *AppmeshVirtualNodeSpecListener
+	Listener() AppmeshVirtualNodeSpecListenerList
+	ListenerInput() interface{}
 	Logging() AppmeshVirtualNodeSpecLoggingOutputReference
 	LoggingInput() *AppmeshVirtualNodeSpecLogging
 	ServiceDiscovery() AppmeshVirtualNodeSpecServiceDiscoveryOutputReference
@@ -73,7 +73,7 @@ type AppmeshVirtualNodeSpecOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutBackend(value interface{})
 	PutBackendDefaults(value *AppmeshVirtualNodeSpecBackendDefaults)
-	PutListener(value *AppmeshVirtualNodeSpecListener)
+	PutListener(value interface{})
 	PutLogging(value *AppmeshVirtualNodeSpecLogging)
 	PutServiceDiscovery(value *AppmeshVirtualNodeSpecServiceDiscovery)
 	ResetBackend()
@@ -186,8 +186,8 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) InternalValue() *Appme
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) Listener() AppmeshVirtualNodeSpecListenerOutputReference {
-	var returns AppmeshVirtualNodeSpecListenerOutputReference
+func (j *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) Listener() AppmeshVirtualNodeSpecListenerList {
+	var returns AppmeshVirtualNodeSpecListenerList
 	_jsii_.Get(
 		j,
 		"listener",
@@ -196,8 +196,8 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) Listener() AppmeshVirt
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) ListenerInput() *AppmeshVirtualNodeSpecListener {
-	var returns *AppmeshVirtualNodeSpecListener
+func (j *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) ListenerInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"listenerInput",
@@ -557,7 +557,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) PutBackendDefaults(val
 	)
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) PutListener(value *AppmeshVirtualNodeSpecListener) {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) PutListener(value interface{}) {
 	if err := a.validatePutListenerParameters(value); err != nil {
 		panic(err)
 	}

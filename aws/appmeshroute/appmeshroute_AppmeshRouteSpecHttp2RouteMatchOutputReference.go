@@ -34,6 +34,9 @@ type AppmeshRouteSpecHttp2RouteMatchOutputReference interface {
 	Method() *string
 	SetMethod(val *string)
 	MethodInput() *string
+	Port() *float64
+	SetPort(val *float64)
+	PortInput() *float64
 	Prefix() *string
 	SetPrefix(val *string)
 	PrefixInput() *string
@@ -75,6 +78,7 @@ type AppmeshRouteSpecHttp2RouteMatchOutputReference interface {
 	PutHeader(value interface{})
 	ResetHeader()
 	ResetMethod()
+	ResetPort()
 	ResetScheme()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -176,6 +180,26 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) MethodInput()
 	_jsii_.Get(
 		j,
 		"methodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) PortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"portInput",
 		&returns,
 	)
 	return returns
@@ -309,6 +333,17 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference)SetMethod(val 
 	_jsii_.Set(
 		j,
 		"method",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"port",
 		val,
 	)
 }
@@ -566,6 +601,14 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) ResetMethod()
 	_jsii_.InvokeVoid(
 		a,
 		"resetMethod",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) ResetPort() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPort",
 		nil, // no parameters
 	)
 }

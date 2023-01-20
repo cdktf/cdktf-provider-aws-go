@@ -56,7 +56,7 @@ func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) validateSetInternalValueParameters(val *Route53RecordLatencyRoutingPolicy) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) validateSet
 	return nil
 }
 
-func validateNewRoute53RecordLatencyRoutingPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewRoute53RecordLatencyRoutingPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

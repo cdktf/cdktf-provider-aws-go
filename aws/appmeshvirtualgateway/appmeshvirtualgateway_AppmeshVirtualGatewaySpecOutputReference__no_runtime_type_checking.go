@@ -48,7 +48,7 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecOutputReference) validatePutBackendD
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualGatewaySpecOutputReference) validatePutListenerParameters(value *AppmeshVirtualGatewaySpecListener) error {
+func (a *jsiiProxy_AppmeshVirtualGatewaySpecOutputReference) validatePutListenerParameters(value interface{}) error {
 	return nil
 }
 

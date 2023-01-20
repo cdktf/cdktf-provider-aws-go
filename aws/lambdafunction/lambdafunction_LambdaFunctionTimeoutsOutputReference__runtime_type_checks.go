@@ -211,6 +211,14 @@ func (j *jsiiProxy_LambdaFunctionTimeoutsOutputReference) validateSetTerraformRe
 	return nil
 }
 
+func (j *jsiiProxy_LambdaFunctionTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewLambdaFunctionTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")

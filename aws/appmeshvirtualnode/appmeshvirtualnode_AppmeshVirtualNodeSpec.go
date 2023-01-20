@@ -13,7 +13,7 @@ type AppmeshVirtualNodeSpec struct {
 	// listener block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#listener AppmeshVirtualNode#listener}
-	Listener *AppmeshVirtualNodeSpecListener `field:"optional" json:"listener" yaml:"listener"`
+	Listener interface{} `field:"optional" json:"listener" yaml:"listener"`
 	// logging block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#logging AppmeshVirtualNode#logging}

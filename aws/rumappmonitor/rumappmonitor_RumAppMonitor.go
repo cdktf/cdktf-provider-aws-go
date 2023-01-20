@@ -28,6 +28,8 @@ type RumAppMonitor interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	CustomEvents() RumAppMonitorCustomEventsOutputReference
+	CustomEventsInput() *RumAppMonitorCustomEvents
 	CwLogEnabled() interface{}
 	SetCwLogEnabled(val interface{})
 	CwLogEnabledInput() interface{}
@@ -107,7 +109,9 @@ type RumAppMonitor interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAppMonitorConfiguration(value *RumAppMonitorAppMonitorConfiguration)
+	PutCustomEvents(value *RumAppMonitorCustomEvents)
 	ResetAppMonitorConfiguration()
+	ResetCustomEvents()
 	ResetCwLogEnabled()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -205,6 +209,26 @@ func (j *jsiiProxy_RumAppMonitor) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RumAppMonitor) CustomEvents() RumAppMonitorCustomEventsOutputReference {
+	var returns RumAppMonitorCustomEventsOutputReference
+	_jsii_.Get(
+		j,
+		"customEvents",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RumAppMonitor) CustomEventsInput() *RumAppMonitorCustomEvents {
+	var returns *RumAppMonitorCustomEvents
+	_jsii_.Get(
+		j,
+		"customEventsInput",
 		&returns,
 	)
 	return returns
@@ -898,10 +922,29 @@ func (r *jsiiProxy_RumAppMonitor) PutAppMonitorConfiguration(value *RumAppMonito
 	)
 }
 
+func (r *jsiiProxy_RumAppMonitor) PutCustomEvents(value *RumAppMonitorCustomEvents) {
+	if err := r.validatePutCustomEventsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putCustomEvents",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RumAppMonitor) ResetAppMonitorConfiguration() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetAppMonitorConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RumAppMonitor) ResetCustomEvents() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetCustomEvents",
 		nil, // no parameters
 	)
 }

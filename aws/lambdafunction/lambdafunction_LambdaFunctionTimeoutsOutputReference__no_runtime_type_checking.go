@@ -72,6 +72,10 @@ func (j *jsiiProxy_LambdaFunctionTimeoutsOutputReference) validateSetTerraformRe
 	return nil
 }
 
+func (j *jsiiProxy_LambdaFunctionTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewLambdaFunctionTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

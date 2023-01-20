@@ -27,8 +27,8 @@ type AppmeshVirtualRouterSpecListenerOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *AppmeshVirtualRouterSpecListener
-	SetInternalValue(val *AppmeshVirtualRouterSpecListener)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	PortMapping() AppmeshVirtualRouterSpecListenerPortMappingOutputReference
 	PortMappingInput() *AppmeshVirtualRouterSpecListenerPortMapping
 	// Experimental.
@@ -119,8 +119,8 @@ func (j *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference) Fqn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference) InternalValue() *AppmeshVirtualRouterSpecListener {
-	var returns *AppmeshVirtualRouterSpecListener
+func (j *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -170,29 +170,29 @@ func (j *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference) TerraformRes
 }
 
 
-func NewAppmeshVirtualRouterSpecListenerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppmeshVirtualRouterSpecListenerOutputReference {
+func NewAppmeshVirtualRouterSpecListenerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AppmeshVirtualRouterSpecListenerOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewAppmeshVirtualRouterSpecListenerOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewAppmeshVirtualRouterSpecListenerOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewAppmeshVirtualRouterSpecListenerOutputReference_Override(a AppmeshVirtualRouterSpecListenerOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAppmeshVirtualRouterSpecListenerOutputReference_Override(a AppmeshVirtualRouterSpecListenerOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshVirtualRouter.AppmeshVirtualRouterSpecListenerOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
@@ -219,7 +219,7 @@ func (j *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference)SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference)SetInternalValue(val *AppmeshVirtualRouterSpecListener) {
+func (j *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

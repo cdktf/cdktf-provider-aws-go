@@ -60,6 +60,10 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference) validat
 	return nil
 }
 
+func (j *jsiiProxy_AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference) validateSetPortParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference) validateSetServiceNameParameters(val *string) error {
 	return nil
 }

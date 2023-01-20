@@ -56,6 +56,10 @@ func (r *jsiiProxy_RumAppMonitor) validatePutAppMonitorConfigurationParameters(v
 	return nil
 }
 
+func (r *jsiiProxy_RumAppMonitor) validatePutCustomEventsParameters(value *RumAppMonitorCustomEvents) error {
+	return nil
+}
+
 func validateRumAppMonitor_IsConstructParameters(x interface{}) error {
 	return nil
 }

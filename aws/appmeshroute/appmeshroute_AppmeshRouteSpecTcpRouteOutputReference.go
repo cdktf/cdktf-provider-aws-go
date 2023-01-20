@@ -31,6 +31,8 @@ type AppmeshRouteSpecTcpRouteOutputReference interface {
 	Fqn() *string
 	InternalValue() *AppmeshRouteSpecTcpRoute
 	SetInternalValue(val *AppmeshRouteSpecTcpRoute)
+	Match() AppmeshRouteSpecTcpRouteMatchOutputReference
+	MatchInput() *AppmeshRouteSpecTcpRouteMatch
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -66,7 +68,9 @@ type AppmeshRouteSpecTcpRouteOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAction(value *AppmeshRouteSpecTcpRouteAction)
+	PutMatch(value *AppmeshRouteSpecTcpRouteMatch)
 	PutTimeout(value *AppmeshRouteSpecTcpRouteTimeout)
+	ResetMatch()
 	ResetTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -148,6 +152,26 @@ func (j *jsiiProxy_AppmeshRouteSpecTcpRouteOutputReference) InternalValue() *App
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshRouteSpecTcpRouteOutputReference) Match() AppmeshRouteSpecTcpRouteMatchOutputReference {
+	var returns AppmeshRouteSpecTcpRouteMatchOutputReference
+	_jsii_.Get(
+		j,
+		"match",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshRouteSpecTcpRouteOutputReference) MatchInput() *AppmeshRouteSpecTcpRouteMatch {
+	var returns *AppmeshRouteSpecTcpRouteMatch
+	_jsii_.Get(
+		j,
+		"matchInput",
 		&returns,
 	)
 	return returns
@@ -473,6 +497,17 @@ func (a *jsiiProxy_AppmeshRouteSpecTcpRouteOutputReference) PutAction(value *App
 	)
 }
 
+func (a *jsiiProxy_AppmeshRouteSpecTcpRouteOutputReference) PutMatch(value *AppmeshRouteSpecTcpRouteMatch) {
+	if err := a.validatePutMatchParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putMatch",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppmeshRouteSpecTcpRouteOutputReference) PutTimeout(value *AppmeshRouteSpecTcpRouteTimeout) {
 	if err := a.validatePutTimeoutParameters(value); err != nil {
 		panic(err)
@@ -481,6 +516,14 @@ func (a *jsiiProxy_AppmeshRouteSpecTcpRouteOutputReference) PutTimeout(value *Ap
 		a,
 		"putTimeout",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppmeshRouteSpecTcpRouteOutputReference) ResetMatch() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMatch",
+		nil, // no parameters
 	)
 }
 

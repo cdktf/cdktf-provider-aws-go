@@ -44,7 +44,7 @@ func (a *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) validateInterpolatio
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) validatePutListenerParameters(value *AppmeshVirtualRouterSpecListener) error {
+func (a *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) validatePutListenerParameters(value interface{}) error {
 	return nil
 }
 

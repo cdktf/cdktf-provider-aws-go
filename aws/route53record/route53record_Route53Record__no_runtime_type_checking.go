@@ -52,23 +52,23 @@ func (r *jsiiProxy_Route53Record) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
-func (r *jsiiProxy_Route53Record) validatePutAliasParameters(value interface{}) error {
+func (r *jsiiProxy_Route53Record) validatePutAliasParameters(value *Route53RecordAlias) error {
 	return nil
 }
 
-func (r *jsiiProxy_Route53Record) validatePutFailoverRoutingPolicyParameters(value interface{}) error {
+func (r *jsiiProxy_Route53Record) validatePutFailoverRoutingPolicyParameters(value *Route53RecordFailoverRoutingPolicy) error {
 	return nil
 }
 
-func (r *jsiiProxy_Route53Record) validatePutGeolocationRoutingPolicyParameters(value interface{}) error {
+func (r *jsiiProxy_Route53Record) validatePutGeolocationRoutingPolicyParameters(value *Route53RecordGeolocationRoutingPolicy) error {
 	return nil
 }
 
-func (r *jsiiProxy_Route53Record) validatePutLatencyRoutingPolicyParameters(value interface{}) error {
+func (r *jsiiProxy_Route53Record) validatePutLatencyRoutingPolicyParameters(value *Route53RecordLatencyRoutingPolicy) error {
 	return nil
 }
 
-func (r *jsiiProxy_Route53Record) validatePutWeightedRoutingPolicyParameters(value interface{}) error {
+func (r *jsiiProxy_Route53Record) validatePutWeightedRoutingPolicyParameters(value *Route53RecordWeightedRoutingPolicy) error {
 	return nil
 }
 

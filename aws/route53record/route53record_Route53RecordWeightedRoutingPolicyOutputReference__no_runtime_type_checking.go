@@ -56,7 +56,7 @@ func (j *jsiiProxy_Route53RecordWeightedRoutingPolicyOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecordWeightedRoutingPolicyOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_Route53RecordWeightedRoutingPolicyOutputReference) validateSetInternalValueParameters(val *Route53RecordWeightedRoutingPolicy) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_Route53RecordWeightedRoutingPolicyOutputReference) validateSe
 	return nil
 }
 
-func validateNewRoute53RecordWeightedRoutingPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewRoute53RecordWeightedRoutingPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

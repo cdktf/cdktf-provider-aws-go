@@ -56,7 +56,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference) validateSetInternalValueParameters(val *AppmeshVirtualNodeSpecListenerConnectionPoolTcp) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReferenc
 	return nil
 }
 
-func validateNewAppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppmeshVirtualNodeSpecListenerConnectionPoolTcpOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

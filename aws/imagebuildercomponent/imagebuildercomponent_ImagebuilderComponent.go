@@ -77,6 +77,9 @@ type ImagebuilderComponent interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SkipDestroy() interface{}
+	SetSkipDestroy(val interface{})
+	SkipDestroyInput() interface{}
 	SupportedOsVersions() *[]*string
 	SetSupportedOsVersions(val *[]*string)
 	SupportedOsVersionsInput() *[]*string
@@ -132,6 +135,7 @@ type ImagebuilderComponent interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSkipDestroy()
 	ResetSupportedOsVersions()
 	ResetTags()
 	ResetTagsAll()
@@ -461,6 +465,26 @@ func (j *jsiiProxy_ImagebuilderComponent) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_ImagebuilderComponent) SkipDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImagebuilderComponent) SkipDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ImagebuilderComponent) SupportedOsVersions() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -769,6 +793,17 @@ func (j *jsiiProxy_ImagebuilderComponent)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ImagebuilderComponent)SetSkipDestroy(val interface{}) {
+	if err := j.validateSetSkipDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipDestroy",
 		val,
 	)
 }
@@ -1138,6 +1173,14 @@ func (i *jsiiProxy_ImagebuilderComponent) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_ImagebuilderComponent) ResetSkipDestroy() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetSkipDestroy",
 		nil, // no parameters
 	)
 }

@@ -64,6 +64,10 @@ func (l *jsiiProxy_LambdaEventSourceMapping) validatePutFilterCriteriaParameters
 	return nil
 }
 
+func (l *jsiiProxy_LambdaEventSourceMapping) validatePutScalingConfigParameters(value *LambdaEventSourceMappingScalingConfig) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaEventSourceMapping) validatePutSelfManagedEventSourceParameters(value *LambdaEventSourceMappingSelfManagedEventSource) error {
 	return nil
 }

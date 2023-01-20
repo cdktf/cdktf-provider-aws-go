@@ -33,8 +33,8 @@ type Route53RecordGeolocationRoutingPolicyOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *Route53RecordGeolocationRoutingPolicy
+	SetInternalValue(val *Route53RecordGeolocationRoutingPolicy)
 	Subdivision() *string
 	SetSubdivision(val *string)
 	SubdivisionInput() *string
@@ -168,8 +168,8 @@ func (j *jsiiProxy_Route53RecordGeolocationRoutingPolicyOutputReference) Fqn() *
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecordGeolocationRoutingPolicyOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_Route53RecordGeolocationRoutingPolicyOutputReference) InternalValue() *Route53RecordGeolocationRoutingPolicy {
+	var returns *Route53RecordGeolocationRoutingPolicy
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -219,29 +219,29 @@ func (j *jsiiProxy_Route53RecordGeolocationRoutingPolicyOutputReference) Terrafo
 }
 
 
-func NewRoute53RecordGeolocationRoutingPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) Route53RecordGeolocationRoutingPolicyOutputReference {
+func NewRoute53RecordGeolocationRoutingPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Route53RecordGeolocationRoutingPolicyOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewRoute53RecordGeolocationRoutingPolicyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewRoute53RecordGeolocationRoutingPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_Route53RecordGeolocationRoutingPolicyOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53Record.Route53RecordGeolocationRoutingPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewRoute53RecordGeolocationRoutingPolicyOutputReference_Override(r Route53RecordGeolocationRoutingPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewRoute53RecordGeolocationRoutingPolicyOutputReference_Override(r Route53RecordGeolocationRoutingPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.route53Record.Route53RecordGeolocationRoutingPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
 }
@@ -290,7 +290,7 @@ func (j *jsiiProxy_Route53RecordGeolocationRoutingPolicyOutputReference)SetCount
 	)
 }
 
-func (j *jsiiProxy_Route53RecordGeolocationRoutingPolicyOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_Route53RecordGeolocationRoutingPolicyOutputReference)SetInternalValue(val *Route53RecordGeolocationRoutingPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

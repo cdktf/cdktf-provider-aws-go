@@ -27,8 +27,8 @@ type AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *AppmeshVirtualNodeSpecListenerConnectionPoolHttp
-	SetInternalValue(val *AppmeshVirtualNodeSpecListenerConnectionPoolHttp)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	MaxConnections() *float64
 	SetMaxConnections(val *float64)
 	MaxConnectionsInput() *float64
@@ -123,8 +123,8 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference) InternalValue() *AppmeshVirtualNodeSpecListenerConnectionPoolHttp {
-	var returns *AppmeshVirtualNodeSpecListenerConnectionPoolHttp
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,29 +194,29 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReferen
 }
 
 
-func NewAppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference {
+func NewAppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewAppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewAppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewAppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference_Override(a AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference_Override(a AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
 }
@@ -243,7 +243,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReferen
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference)SetInternalValue(val *AppmeshVirtualNodeSpecListenerConnectionPoolHttp) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerConnectionPoolHttpOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

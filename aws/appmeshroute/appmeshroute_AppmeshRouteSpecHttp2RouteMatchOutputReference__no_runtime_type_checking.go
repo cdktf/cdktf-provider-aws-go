@@ -68,6 +68,10 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) validateSetMe
 	return nil
 }
 
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) validateSetPortParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) validateSetPrefixParameters(val *string) error {
 	return nil
 }
