@@ -29,6 +29,9 @@ type Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatem
 	Fqn() *string
 	InternalValue() *Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchBody
 	SetInternalValue(val *Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchBody)
+	OversizeHandling() *string
+	SetOversizeHandling(val *string)
+	OversizeHandlingInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -61,6 +64,7 @@ type Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatem
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetOversizeHandling()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -121,6 +125,26 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementS
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyOutputReference) OversizeHandling() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oversizeHandling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyOutputReference) OversizeHandlingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oversizeHandlingInput",
 		&returns,
 	)
 	return returns
@@ -203,6 +227,17 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementS
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyOutputReference)SetOversizeHandling(val *string) {
+	if err := j.validateSetOversizeHandlingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"oversizeHandling",
 		val,
 	)
 }
@@ -413,6 +448,14 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementS
 	)
 
 	return returns
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyOutputReference) ResetOversizeHandling() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetOversizeHandling",
+		nil, // no parameters
+	)
 }
 
 func (w *jsiiProxy_Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementSqliMatchStatementFieldToMatchBodyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

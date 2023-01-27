@@ -41,6 +41,9 @@ type MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOut
 	Profile() *string
 	SetProfile(val *string)
 	ProfileInput() *string
+	RateControlMode() *string
+	SetRateControlMode(val *string)
+	RateControlModeInput() *string
 	RawFormat() *string
 	SetRawFormat(val *string)
 	RawFormatInput() *string
@@ -89,6 +92,7 @@ type MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOut
 	ResetCodingMode()
 	ResetInputType()
 	ResetProfile()
+	ResetRateControlMode()
 	ResetRawFormat()
 	ResetSampleRate()
 	ResetSpec()
@@ -233,6 +237,26 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	_jsii_.Get(
 		j,
 		"profileInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) RateControlMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rateControlMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) RateControlModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rateControlModeInput",
 		&returns,
 	)
 	return returns
@@ -439,6 +463,17 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	_jsii_.Set(
 		j,
 		"profile",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference)SetRateControlMode(val *string) {
+	if err := j.validateSetRateControlModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rateControlMode",
 		val,
 	)
 }
@@ -723,6 +758,14 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettings
 	_jsii_.InvokeVoid(
 		m,
 		"resetProfile",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettingsOutputReference) ResetRateControlMode() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetRateControlMode",
 		nil, // no parameters
 	)
 }

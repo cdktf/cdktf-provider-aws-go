@@ -60,6 +60,10 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchBodyOutp
 	return nil
 }
 
+func (j *jsiiProxy_Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchBodyOutputReference) validateSetOversizeHandlingParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Wafv2WebAclRuleStatementXssMatchStatementFieldToMatchBodyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

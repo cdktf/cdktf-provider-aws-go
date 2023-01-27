@@ -10,6 +10,8 @@ type MedialiveChannelEncoderSettingsAudioDescriptionsCodecSettingsAacSettings st
 	InputType *string `field:"optional" json:"inputType" yaml:"inputType"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#profile MedialiveChannel#profile}.
 	Profile *string `field:"optional" json:"profile" yaml:"profile"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#rate_control_mode MedialiveChannel#rate_control_mode}.
+	RateControlMode *string `field:"optional" json:"rateControlMode" yaml:"rateControlMode"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#raw_format MedialiveChannel#raw_format}.
 	RawFormat *string `field:"optional" json:"rawFormat" yaml:"rawFormat"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#sample_rate MedialiveChannel#sample_rate}.

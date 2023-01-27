@@ -29,6 +29,9 @@ type Wafv2WebAclRuleStatementOrStatementStatementSqliMatchStatementFieldToMatchB
 	Fqn() *string
 	InternalValue() *Wafv2WebAclRuleStatementOrStatementStatementSqliMatchStatementFieldToMatchBody
 	SetInternalValue(val *Wafv2WebAclRuleStatementOrStatementStatementSqliMatchStatementFieldToMatchBody)
+	OversizeHandling() *string
+	SetOversizeHandling(val *string)
+	OversizeHandlingInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -61,6 +64,7 @@ type Wafv2WebAclRuleStatementOrStatementStatementSqliMatchStatementFieldToMatchB
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetOversizeHandling()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -121,6 +125,26 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSqliMatchStatemen
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSqliMatchStatementFieldToMatchBodyOutputReference) OversizeHandling() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oversizeHandling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSqliMatchStatementFieldToMatchBodyOutputReference) OversizeHandlingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oversizeHandlingInput",
 		&returns,
 	)
 	return returns
@@ -203,6 +227,17 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSqliMatchStatemen
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSqliMatchStatementFieldToMatchBodyOutputReference)SetOversizeHandling(val *string) {
+	if err := j.validateSetOversizeHandlingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"oversizeHandling",
 		val,
 	)
 }
@@ -413,6 +448,14 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSqliMatchStatemen
 	)
 
 	return returns
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSqliMatchStatementFieldToMatchBodyOutputReference) ResetOversizeHandling() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetOversizeHandling",
+		nil, // no parameters
+	)
 }
 
 func (w *jsiiProxy_Wafv2WebAclRuleStatementOrStatementStatementSqliMatchStatementFieldToMatchBodyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
