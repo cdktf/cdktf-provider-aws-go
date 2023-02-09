@@ -44,6 +44,7 @@ type VpcIpamPoolCidr interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpamPoolCidrId() *string
 	IpamPoolId() *string
 	SetIpamPoolId(val *string)
 	IpamPoolIdInput() *string
@@ -51,6 +52,9 @@ type VpcIpamPoolCidr interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	NetmaskLength() *float64
+	SetNetmaskLength(val *float64)
+	NetmaskLengthInput() *float64
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -101,6 +105,7 @@ type VpcIpamPoolCidr interface {
 	ResetCidr()
 	ResetCidrAuthorizationContext()
 	ResetId()
+	ResetNetmaskLength()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -260,6 +265,16 @@ func (j *jsiiProxy_VpcIpamPoolCidr) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VpcIpamPoolCidr) IpamPoolCidrId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipamPoolCidrId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcIpamPoolCidr) IpamPoolId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -285,6 +300,26 @@ func (j *jsiiProxy_VpcIpamPoolCidr) Lifecycle() *cdktf.TerraformResourceLifecycl
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcIpamPoolCidr) NetmaskLength() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"netmaskLength",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcIpamPoolCidr) NetmaskLengthInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"netmaskLengthInput",
 		&returns,
 	)
 	return returns
@@ -485,6 +520,17 @@ func (j *jsiiProxy_VpcIpamPoolCidr)SetLifecycle(val *cdktf.TerraformResourceLife
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcIpamPoolCidr)SetNetmaskLength(val *float64) {
+	if err := j.validateSetNetmaskLengthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"netmaskLength",
 		val,
 	)
 }
@@ -816,6 +862,14 @@ func (v *jsiiProxy_VpcIpamPoolCidr) ResetId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcIpamPoolCidr) ResetNetmaskLength() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetNetmaskLength",
 		nil, // no parameters
 	)
 }

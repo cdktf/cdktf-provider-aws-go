@@ -86,6 +86,9 @@ type VpcIpamPool interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PublicIpSource() *string
+	SetPublicIpSource(val *string)
+	PublicIpSourceInput() *string
 	PubliclyAdvertisable() interface{}
 	SetPubliclyAdvertisable(val interface{})
 	PubliclyAdvertisableInput() interface{}
@@ -147,6 +150,7 @@ type VpcIpamPool interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPublicIpSource()
 	ResetPubliclyAdvertisable()
 	ResetSourceIpamPoolId()
 	ResetTags()
@@ -537,6 +541,26 @@ func (j *jsiiProxy_VpcIpamPool) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VpcIpamPool) PublicIpSource() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicIpSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcIpamPool) PublicIpSourceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"publicIpSourceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcIpamPool) PubliclyAdvertisable() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -899,6 +923,17 @@ func (j *jsiiProxy_VpcIpamPool)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcIpamPool)SetPublicIpSource(val *string) {
+	if err := j.validateSetPublicIpSourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publicIpSource",
 		val,
 	)
 }
@@ -1300,6 +1335,14 @@ func (v *jsiiProxy_VpcIpamPool) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcIpamPool) ResetPublicIpSource() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPublicIpSource",
 		nil, // no parameters
 	)
 }

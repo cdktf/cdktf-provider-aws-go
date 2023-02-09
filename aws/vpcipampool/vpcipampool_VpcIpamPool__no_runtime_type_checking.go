@@ -124,6 +124,10 @@ func (j *jsiiProxy_VpcIpamPool) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_VpcIpamPool) validateSetPublicIpSourceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpamPool) validateSetPubliclyAdvertisableParameters(val interface{}) error {
 	return nil
 }
