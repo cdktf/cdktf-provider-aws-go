@@ -108,7 +108,6 @@ type OpsworksPermission interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetStackId()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -867,14 +866,6 @@ func (o *jsiiProxy_OpsworksPermission) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (o *jsiiProxy_OpsworksPermission) ResetStackId() {
-	_jsii_.InvokeVoid(
-		o,
-		"resetStackId",
 		nil, // no parameters
 	)
 }

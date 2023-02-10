@@ -403,6 +403,7 @@ func init() {
 		"@cdktf/provider-aws.dynamodbTable.DynamodbTableReplicaOutputReference",
 		reflect.TypeOf((*DynamodbTableReplicaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -432,6 +433,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPointInTimeRecovery", GoMethod: "ResetPointInTimeRecovery"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPropagateTags", GoMethod: "ResetPropagateTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "streamArn", GoGetter: "StreamArn"},
+			_jsii_.MemberProperty{JsiiProperty: "streamLabel", GoGetter: "StreamLabel"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},

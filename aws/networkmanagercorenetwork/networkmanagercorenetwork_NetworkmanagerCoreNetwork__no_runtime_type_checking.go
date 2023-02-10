@@ -68,7 +68,15 @@ func validateNetworkmanagerCoreNetwork_IsTerraformResourceParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) validateSetBasePolicyRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerCoreNetwork) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) validateSetCreateBasePolicyParameters(val interface{}) error {
 	return nil
 }
 

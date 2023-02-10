@@ -164,6 +164,14 @@ func (j *jsiiProxy_LambdaFunction) validateSetPublishParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_LambdaFunction) validateSetReplacementSecurityGroupIdsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LambdaFunction) validateSetReplaceSecurityGroupsOnDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaFunction) validateSetReservedConcurrentExecutionsParameters(val *float64) error {
 	return nil
 }

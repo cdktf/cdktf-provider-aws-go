@@ -13,6 +13,9 @@ import (
 type NetworkmanagerCoreNetwork interface {
 	cdktf.TerraformResource
 	Arn() *string
+	BasePolicyRegion() *string
+	SetBasePolicyRegion(val *string)
+	BasePolicyRegionInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -25,6 +28,9 @@ type NetworkmanagerCoreNetwork interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	CreateBasePolicy() interface{}
+	SetCreateBasePolicy(val interface{})
+	CreateBasePolicyInput() interface{}
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -109,6 +115,8 @@ type NetworkmanagerCoreNetwork interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *NetworkmanagerCoreNetworkTimeouts)
+	ResetBasePolicyRegion()
+	ResetCreateBasePolicy()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -138,6 +146,26 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) BasePolicyRegion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"basePolicyRegion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) BasePolicyRegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"basePolicyRegionInput",
 		&returns,
 	)
 	return returns
@@ -178,6 +206,26 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) CreateBasePolicy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createBasePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) CreateBasePolicyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createBasePolicyInput",
 		&returns,
 	)
 	return returns
@@ -513,6 +561,17 @@ func NewNetworkmanagerCoreNetwork_Override(n NetworkmanagerCoreNetwork, scope co
 	)
 }
 
+func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetBasePolicyRegion(val *string) {
+	if err := j.validateSetBasePolicyRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"basePolicyRegion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -528,6 +587,17 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetCreateBasePolicy(val interface{}) {
+	if err := j.validateSetCreateBasePolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createBasePolicy",
 		val,
 	)
 }
@@ -918,6 +988,22 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) PutTimeouts(value *NetworkmanagerC
 		n,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerCoreNetwork) ResetBasePolicyRegion() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetBasePolicyRegion",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerCoreNetwork) ResetCreateBasePolicy() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetCreateBasePolicy",
+		nil, // no parameters
 	)
 }
 

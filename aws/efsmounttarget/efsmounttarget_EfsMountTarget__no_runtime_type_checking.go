@@ -52,6 +52,10 @@ func (e *jsiiProxy_EfsMountTarget) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (e *jsiiProxy_EfsMountTarget) validatePutTimeoutsParameters(value *EfsMountTargetTimeouts) error {
+	return nil
+}
+
 func validateEfsMountTarget_IsConstructParameters(x interface{}) error {
 	return nil
 }

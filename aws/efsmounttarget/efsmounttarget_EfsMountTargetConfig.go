@@ -32,5 +32,9 @@ type EfsMountTargetConfig struct {
 	IpAddress *string `field:"optional" json:"ipAddress" yaml:"ipAddress"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_mount_target#security_groups EfsMountTarget#security_groups}.
 	SecurityGroups *[]*string `field:"optional" json:"securityGroups" yaml:"securityGroups"`
+	// timeouts block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/efs_mount_target#timeouts EfsMountTarget#timeouts}
+	Timeouts *EfsMountTargetTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -106,6 +106,12 @@ type LambdaFunction interface {
 	QualifiedInvokeArn() *string
 	// Experimental.
 	RawOverrides() interface{}
+	ReplacementSecurityGroupIds() *[]*string
+	SetReplacementSecurityGroupIds(val *[]*string)
+	ReplacementSecurityGroupIdsInput() *[]*string
+	ReplaceSecurityGroupsOnDestroy() interface{}
+	SetReplaceSecurityGroupsOnDestroy(val interface{})
+	ReplaceSecurityGroupsOnDestroyInput() interface{}
 	ReservedConcurrentExecutions() *float64
 	SetReservedConcurrentExecutions(val *float64)
 	ReservedConcurrentExecutionsInput() *float64
@@ -208,6 +214,8 @@ type LambdaFunction interface {
 	ResetOverrideLogicalId()
 	ResetPackageType()
 	ResetPublish()
+	ResetReplacementSecurityGroupIds()
+	ResetReplaceSecurityGroupsOnDestroy()
 	ResetReservedConcurrentExecutions()
 	ResetRuntime()
 	ResetS3Bucket()
@@ -771,6 +779,46 @@ func (j *jsiiProxy_LambdaFunction) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunction) ReplacementSecurityGroupIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"replacementSecurityGroupIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunction) ReplacementSecurityGroupIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"replacementSecurityGroupIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunction) ReplaceSecurityGroupsOnDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"replaceSecurityGroupsOnDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunction) ReplaceSecurityGroupsOnDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"replaceSecurityGroupsOnDestroyInput",
 		&returns,
 	)
 	return returns
@@ -1360,6 +1408,28 @@ func (j *jsiiProxy_LambdaFunction)SetPublish(val interface{}) {
 	_jsii_.Set(
 		j,
 		"publish",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaFunction)SetReplacementSecurityGroupIds(val *[]*string) {
+	if err := j.validateSetReplacementSecurityGroupIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replacementSecurityGroupIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaFunction)SetReplaceSecurityGroupsOnDestroy(val interface{}) {
+	if err := j.validateSetReplaceSecurityGroupsOnDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replaceSecurityGroupsOnDestroy",
 		val,
 	)
 }
@@ -1979,6 +2049,22 @@ func (l *jsiiProxy_LambdaFunction) ResetPublish() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPublish",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaFunction) ResetReplacementSecurityGroupIds() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetReplacementSecurityGroupIds",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaFunction) ResetReplaceSecurityGroupsOnDestroy() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetReplaceSecurityGroupsOnDestroy",
 		nil, // no parameters
 	)
 }

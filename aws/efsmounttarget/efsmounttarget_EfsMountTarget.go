@@ -80,6 +80,8 @@ type EfsMountTarget interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() EfsMountTargetTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -105,12 +107,14 @@ type EfsMountTarget interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *EfsMountTargetTimeouts)
 	ResetId()
 	ResetIpAddress()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSecurityGroups()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -451,6 +455,26 @@ func (j *jsiiProxy_EfsMountTarget) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EfsMountTarget) Timeouts() EfsMountTargetTimeoutsOutputReference {
+	var returns EfsMountTargetTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EfsMountTarget) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -872,6 +896,17 @@ func (e *jsiiProxy_EfsMountTarget) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (e *jsiiProxy_EfsMountTarget) PutTimeouts(value *EfsMountTargetTimeouts) {
+	if err := e.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EfsMountTarget) ResetId() {
 	_jsii_.InvokeVoid(
 		e,
@@ -900,6 +935,14 @@ func (e *jsiiProxy_EfsMountTarget) ResetSecurityGroups() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetSecurityGroups",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EfsMountTarget) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

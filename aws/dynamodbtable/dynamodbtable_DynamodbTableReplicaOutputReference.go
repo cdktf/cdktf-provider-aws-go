@@ -10,6 +10,7 @@ import (
 
 type DynamodbTableReplicaOutputReference interface {
 	cdktf.ComplexObject
+	Arn() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,6 +42,8 @@ type DynamodbTableReplicaOutputReference interface {
 	RegionName() *string
 	SetRegionName(val *string)
 	RegionNameInput() *string
+	StreamArn() *string
+	StreamLabel() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -89,6 +92,16 @@ type DynamodbTableReplicaOutputReference interface {
 // The jsii proxy struct for DynamodbTableReplicaOutputReference
 type jsiiProxy_DynamodbTableReplicaOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DynamodbTableReplicaOutputReference) ComplexObjectIndex() interface{} {
@@ -216,6 +229,26 @@ func (j *jsiiProxy_DynamodbTableReplicaOutputReference) RegionNameInput() *strin
 	_jsii_.Get(
 		j,
 		"regionNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) StreamArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"streamArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTableReplicaOutputReference) StreamLabel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"streamLabel",
 		&returns,
 	)
 	return returns

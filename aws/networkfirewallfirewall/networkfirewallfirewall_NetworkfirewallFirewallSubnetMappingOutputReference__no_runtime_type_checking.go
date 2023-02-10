@@ -60,6 +60,10 @@ func (j *jsiiProxy_NetworkfirewallFirewallSubnetMappingOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_NetworkfirewallFirewallSubnetMappingOutputReference) validateSetIpAddressTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkfirewallFirewallSubnetMappingOutputReference) validateSetSubnetIdParameters(val *string) error {
 	return nil
 }
