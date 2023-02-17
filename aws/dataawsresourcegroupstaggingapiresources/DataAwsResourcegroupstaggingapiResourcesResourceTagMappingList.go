@@ -1,0 +1,6 @@
+package dataawsresourcegroupstaggingapiresources
+
+
+type DataAwsResourcegroupstaggingapiResourcesResourceTagMappingList struct {
+}
+

@@ -1,6 +1,0 @@
-package dataawsacmpcacertificateauthority
-
-
-type DataAwsAcmpcaCertificateAuthorityRevocationConfigurationCrlConfiguration struct {
-}
-

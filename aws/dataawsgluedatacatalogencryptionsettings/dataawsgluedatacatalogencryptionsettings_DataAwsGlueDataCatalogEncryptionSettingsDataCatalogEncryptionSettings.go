@@ -1,6 +1,0 @@
-package dataawsgluedatacatalogencryptionsettings
-
-
-type DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettings struct {
-}
-

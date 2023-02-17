@@ -1,0 +1,6 @@
+package dataawsmqbrokerinstancetypeofferings
+
+
+type DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptions struct {
+}
+

@@ -1,6 +1,0 @@
-package dataawscloudfrontoriginrequestpolicy
-
-
-type DataAwsCloudfrontOriginRequestPolicyHeadersConfigHeaders struct {
-}
-

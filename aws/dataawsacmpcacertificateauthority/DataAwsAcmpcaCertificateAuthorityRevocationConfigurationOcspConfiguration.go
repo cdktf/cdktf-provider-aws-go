@@ -1,0 +1,6 @@
+package dataawsacmpcacertificateauthority
+
+
+type DataAwsAcmpcaCertificateAuthorityRevocationConfigurationOcspConfiguration struct {
+}
+

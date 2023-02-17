@@ -1,0 +1,6 @@
+package dataawsimagebuilderinfrastructureconfiguration
+
+
+type DataAwsImagebuilderInfrastructureConfigurationLoggingS3Logs struct {
+}
+

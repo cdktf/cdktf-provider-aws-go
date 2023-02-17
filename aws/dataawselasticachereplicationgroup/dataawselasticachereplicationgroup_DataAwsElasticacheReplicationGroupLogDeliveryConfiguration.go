@@ -1,6 +1,0 @@
-package dataawselasticachereplicationgroup
-
-
-type DataAwsElasticacheReplicationGroupLogDeliveryConfiguration struct {
-}
-

@@ -1,0 +1,6 @@
+package dataawsconnectuserhierarchystructure
+
+
+type DataAwsConnectUserHierarchyStructureHierarchyStructure struct {
+}
+

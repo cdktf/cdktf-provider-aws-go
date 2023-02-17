@@ -1,6 +1,0 @@
-package dataawscloudfrontrealtimelogconfig
-
-
-type DataAwsCloudfrontRealtimeLogConfigEndpointKinesisStreamConfig struct {
-}
-

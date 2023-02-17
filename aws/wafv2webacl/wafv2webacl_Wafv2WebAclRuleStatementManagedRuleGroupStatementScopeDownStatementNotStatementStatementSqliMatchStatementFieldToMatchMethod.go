@@ -1,6 +1,0 @@
-package wafv2webacl
-
-
-type Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatementNotStatementStatementSqliMatchStatementFieldToMatchMethod struct {
-}
-

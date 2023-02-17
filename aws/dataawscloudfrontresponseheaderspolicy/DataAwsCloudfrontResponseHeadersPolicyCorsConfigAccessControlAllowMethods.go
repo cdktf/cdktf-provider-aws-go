@@ -1,0 +1,6 @@
+package dataawscloudfrontresponseheaderspolicy
+
+
+type DataAwsCloudfrontResponseHeadersPolicyCorsConfigAccessControlAllowMethods struct {
+}
+

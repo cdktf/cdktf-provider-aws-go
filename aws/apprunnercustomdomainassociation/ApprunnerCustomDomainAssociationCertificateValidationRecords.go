@@ -1,0 +1,6 @@
+package apprunnercustomdomainassociation
+
+
+type ApprunnerCustomDomainAssociationCertificateValidationRecords struct {
+}
+

@@ -1,6 +1,0 @@
-package dataawscloudfrontresponseheaderspolicy
-
-
-type DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigContentSecurityPolicy struct {
-}
-

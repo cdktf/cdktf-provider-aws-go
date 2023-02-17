@@ -1,6 +1,0 @@
-package dataawsec2networkinsightsanalysis
-
-
-type DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsComponent struct {
-}
-

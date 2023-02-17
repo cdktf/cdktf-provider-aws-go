@@ -1,0 +1,6 @@
+package dataawsorganizationsorganizationalunitdescendantaccounts
+
+
+type DataAwsOrganizationsOrganizationalUnitDescendantAccountsAccounts struct {
+}
+

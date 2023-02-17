@@ -1,6 +1,0 @@
-package dataawsemrcontainersvirtualcluster
-
-
-type DataAwsEmrcontainersVirtualClusterContainerProviderInfoEksInfo struct {
-}
-

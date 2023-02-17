@@ -1,6 +1,0 @@
-package dataawsimagebuilderdistributionconfiguration
-
-
-type DataAwsImagebuilderDistributionConfigurationDistributionFastLaunchConfiguration struct {
-}
-

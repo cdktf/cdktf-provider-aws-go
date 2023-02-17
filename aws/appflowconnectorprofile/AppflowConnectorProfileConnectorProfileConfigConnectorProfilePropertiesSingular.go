@@ -1,0 +1,6 @@
+package appflowconnectorprofile
+
+
+type AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesSingular struct {
+}
+

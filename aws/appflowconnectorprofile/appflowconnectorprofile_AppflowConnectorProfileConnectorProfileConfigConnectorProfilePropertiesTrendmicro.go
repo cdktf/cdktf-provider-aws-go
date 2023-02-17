@@ -1,6 +1,0 @@
-package appflowconnectorprofile
-
-
-type AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesTrendmicro struct {
-}
-

@@ -1,0 +1,12 @@
+package ssoadmininstanceaccesscontrolattributes
+
+
+type SsoadminInstanceAccessControlAttributesAttribute struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssoadmin_instance_access_control_attributes#key SsoadminInstanceAccessControlAttributes#key}.
+	Key *string `field:"required" json:"key" yaml:"key"`
+	// value block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ssoadmin_instance_access_control_attributes#value SsoadminInstanceAccessControlAttributes#value}
+	Value interface{} `field:"required" json:"value" yaml:"value"`
+}
+

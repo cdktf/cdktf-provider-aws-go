@@ -1,6 +1,0 @@
-package dataawsmqbrokerinstancetypeofferings
-
-
-type DataAwsMqBrokerInstanceTypeOfferingsBrokerInstanceOptionsAvailabilityZones struct {
-}
-

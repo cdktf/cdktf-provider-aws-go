@@ -1,6 +1,0 @@
-package appflowconnectorprofile
-
-
-type AppflowConnectorProfileConnectorProfileConfigConnectorProfilePropertiesAmplitude struct {
-}
-

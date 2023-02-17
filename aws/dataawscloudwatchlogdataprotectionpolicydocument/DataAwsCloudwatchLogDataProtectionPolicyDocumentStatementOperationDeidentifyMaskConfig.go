@@ -1,0 +1,6 @@
+package dataawscloudwatchlogdataprotectionpolicydocument
+
+
+type DataAwsCloudwatchLogDataProtectionPolicyDocumentStatementOperationDeidentifyMaskConfig struct {
+}
+

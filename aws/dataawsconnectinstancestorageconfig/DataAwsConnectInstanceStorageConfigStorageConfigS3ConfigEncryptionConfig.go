@@ -1,0 +1,6 @@
+package dataawsconnectinstancestorageconfig
+
+
+type DataAwsConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig struct {
+}
+

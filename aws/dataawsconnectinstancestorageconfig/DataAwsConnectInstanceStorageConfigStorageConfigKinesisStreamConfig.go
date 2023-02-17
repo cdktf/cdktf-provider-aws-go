@@ -1,0 +1,6 @@
+package dataawsconnectinstancestorageconfig
+
+
+type DataAwsConnectInstanceStorageConfigStorageConfigKinesisStreamConfig struct {
+}
+

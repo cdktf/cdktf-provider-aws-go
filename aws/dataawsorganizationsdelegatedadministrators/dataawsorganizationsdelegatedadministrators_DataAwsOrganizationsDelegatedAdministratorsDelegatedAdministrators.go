@@ -1,6 +1,0 @@
-package dataawsorganizationsdelegatedadministrators
-
-
-type DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministrators struct {
-}
-

@@ -1,6 +1,0 @@
-package dataawslakeformationdatalakesettings
-
-
-type DataAwsLakeformationDataLakeSettingsCreateDatabaseDefaultPermissions struct {
-}
-

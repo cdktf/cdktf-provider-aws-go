@@ -1,6 +1,0 @@
-package dataawscloudfrontresponseheaderspolicy
-
-
-type DataAwsCloudfrontResponseHeadersPolicyCustomHeadersConfig struct {
-}
-

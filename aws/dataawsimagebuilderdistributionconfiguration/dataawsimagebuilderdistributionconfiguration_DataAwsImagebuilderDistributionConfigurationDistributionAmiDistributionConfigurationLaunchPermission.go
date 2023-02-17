@@ -1,6 +1,0 @@
-package dataawsimagebuilderdistributionconfiguration
-
-
-type DataAwsImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission struct {
-}
-

@@ -1,6 +1,0 @@
-package dataawscloudfrontresponseheaderspolicy
-
-
-type DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigReferrerPolicy struct {
-}
-

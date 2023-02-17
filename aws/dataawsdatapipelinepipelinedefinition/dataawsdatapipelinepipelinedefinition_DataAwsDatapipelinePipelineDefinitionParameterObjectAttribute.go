@@ -1,6 +1,0 @@
-package dataawsdatapipelinepipelinedefinition
-
-
-type DataAwsDatapipelinePipelineDefinitionParameterObjectAttribute struct {
-}
-

@@ -1,0 +1,6 @@
+package dataawscloudfrontoriginrequestpolicy
+
+
+type DataAwsCloudfrontOriginRequestPolicyQueryStringsConfigQueryStrings struct {
+}
+

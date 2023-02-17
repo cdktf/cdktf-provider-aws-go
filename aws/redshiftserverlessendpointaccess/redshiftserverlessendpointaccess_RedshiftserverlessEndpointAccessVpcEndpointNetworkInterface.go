@@ -1,6 +1,0 @@
-package redshiftserverlessendpointaccess
-
-
-type RedshiftserverlessEndpointAccessVpcEndpointNetworkInterface struct {
-}
-

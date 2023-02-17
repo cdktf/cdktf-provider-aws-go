@@ -1,6 +1,0 @@
-package dataawsconnectinstancestorageconfig
-
-
-type DataAwsConnectInstanceStorageConfigStorageConfigKinesisVideoStreamConfig struct {
-}
-

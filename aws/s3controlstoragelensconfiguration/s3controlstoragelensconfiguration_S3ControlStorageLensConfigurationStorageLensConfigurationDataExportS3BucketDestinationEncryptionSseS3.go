@@ -1,6 +1,0 @@
-package s3controlstoragelensconfiguration
-
-
-type S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3 struct {
-}
-
