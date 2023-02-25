@@ -252,6 +252,10 @@ type AwsProviderEndpoints struct {
 	Cloudwatchlogs *string `field:"optional" json:"cloudwatchlogs" yaml:"cloudwatchlogs"`
 	// Use this to override the default service endpoint URL.
 	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#cloudwatchobservabilityaccessmanager AwsProvider#cloudwatchobservabilityaccessmanager}
+	Cloudwatchobservabilityaccessmanager *string `field:"optional" json:"cloudwatchobservabilityaccessmanager" yaml:"cloudwatchobservabilityaccessmanager"`
+	// Use this to override the default service endpoint URL.
+	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#cloudwatchrum AwsProvider#cloudwatchrum}
 	Cloudwatchrum *string `field:"optional" json:"cloudwatchrum" yaml:"cloudwatchrum"`
 	// Use this to override the default service endpoint URL.
@@ -1034,6 +1038,10 @@ type AwsProviderEndpoints struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#nimblestudio AwsProvider#nimblestudio}
 	Nimblestudio *string `field:"optional" json:"nimblestudio" yaml:"nimblestudio"`
+	// Use this to override the default service endpoint URL.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#oam AwsProvider#oam}
+	Oam *string `field:"optional" json:"oam" yaml:"oam"`
 	// Use this to override the default service endpoint URL.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#opensearch AwsProvider#opensearch}

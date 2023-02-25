@@ -70,6 +70,9 @@ type LoadBalancerListenerPolicy interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Triggers() *map[string]*string
+	SetTriggers(val *map[string]*string)
+	TriggersInput() *map[string]*string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -100,6 +103,7 @@ type LoadBalancerListenerPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicyNames()
+	ResetTriggers()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -355,6 +359,26 @@ func (j *jsiiProxy_LoadBalancerListenerPolicy) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LoadBalancerListenerPolicy) Triggers() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"triggers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LoadBalancerListenerPolicy) TriggersInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"triggersInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/aws/r/load_balancer_listener_policy aws_load_balancer_listener_policy} Resource.
 func NewLoadBalancerListenerPolicy(scope constructs.Construct, id *string, config *LoadBalancerListenerPolicyConfig) LoadBalancerListenerPolicy {
@@ -490,6 +514,17 @@ func (j *jsiiProxy_LoadBalancerListenerPolicy)SetProvisioners(val *[]interface{}
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LoadBalancerListenerPolicy)SetTriggers(val *map[string]*string) {
+	if err := j.validateSetTriggersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"triggers",
 		val,
 	)
 }
@@ -780,6 +815,14 @@ func (l *jsiiProxy_LoadBalancerListenerPolicy) ResetPolicyNames() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPolicyNames",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LoadBalancerListenerPolicy) ResetTriggers() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTriggers",
 		nil, // no parameters
 	)
 }

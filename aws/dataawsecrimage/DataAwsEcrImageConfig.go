@@ -30,6 +30,8 @@ type DataAwsEcrImageConfig struct {
 	ImageDigest *string `field:"optional" json:"imageDigest" yaml:"imageDigest"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ecr_image#image_tag DataAwsEcrImage#image_tag}.
 	ImageTag *string `field:"optional" json:"imageTag" yaml:"imageTag"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ecr_image#most_recent DataAwsEcrImage#most_recent}.
+	MostRecent interface{} `field:"optional" json:"mostRecent" yaml:"mostRecent"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ecr_image#registry_id DataAwsEcrImage#registry_id}.
 	RegistryId *string `field:"optional" json:"registryId" yaml:"registryId"`
 }

@@ -30,5 +30,7 @@ type LoadBalancerListenerPolicyConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/load_balancer_listener_policy#policy_names LoadBalancerListenerPolicy#policy_names}.
 	PolicyNames *[]*string `field:"optional" json:"policyNames" yaml:"policyNames"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/load_balancer_listener_policy#triggers LoadBalancerListenerPolicy#triggers}.
+	Triggers *map[string]*string `field:"optional" json:"triggers" yaml:"triggers"`
 }
 

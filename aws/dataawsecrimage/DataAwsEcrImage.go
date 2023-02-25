@@ -48,6 +48,9 @@ type DataAwsEcrImage interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MostRecent() interface{}
+	SetMostRecent(val interface{})
+	MostRecentInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -96,6 +99,7 @@ type DataAwsEcrImage interface {
 	ResetId()
 	ResetImageDigest()
 	ResetImageTag()
+	ResetMostRecent()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -280,6 +284,26 @@ func (j *jsiiProxy_DataAwsEcrImage) Lifecycle() *cdktf.TerraformResourceLifecycl
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcrImage) MostRecent() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mostRecent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcrImage) MostRecentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"mostRecentInput",
 		&returns,
 	)
 	return returns
@@ -479,6 +503,17 @@ func (j *jsiiProxy_DataAwsEcrImage)SetLifecycle(val *cdktf.TerraformResourceLife
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsEcrImage)SetMostRecent(val interface{}) {
+	if err := j.validateSetMostRecentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mostRecent",
 		val,
 	)
 }
@@ -799,6 +834,14 @@ func (d *jsiiProxy_DataAwsEcrImage) ResetImageTag() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetImageTag",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsEcrImage) ResetMostRecent() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMostRecent",
 		nil, // no parameters
 	)
 }

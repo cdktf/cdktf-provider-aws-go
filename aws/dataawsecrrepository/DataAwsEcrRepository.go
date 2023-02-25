@@ -43,6 +43,7 @@ type DataAwsEcrRepository interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MostRecentImageTags() *[]*string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -248,6 +249,16 @@ func (j *jsiiProxy_DataAwsEcrRepository) Lifecycle() *cdktf.TerraformResourceLif
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcrRepository) MostRecentImageTags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"mostRecentImageTags",
 		&returns,
 	)
 	return returns

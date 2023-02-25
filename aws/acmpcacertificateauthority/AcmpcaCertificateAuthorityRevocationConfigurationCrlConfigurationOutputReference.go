@@ -78,6 +78,7 @@ type AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputRefe
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCustomCname()
 	ResetEnabled()
+	ResetExpirationInDays()
 	ResetS3BucketName()
 	ResetS3ObjectAcl()
 	// Produce the Token's value at resolution time.
@@ -601,6 +602,14 @@ func (a *jsiiProxy_AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigura
 	_jsii_.InvokeVoid(
 		a,
 		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AcmpcaCertificateAuthorityRevocationConfigurationCrlConfigurationOutputReference) ResetExpirationInDays() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetExpirationInDays",
 		nil, // no parameters
 	)
 }

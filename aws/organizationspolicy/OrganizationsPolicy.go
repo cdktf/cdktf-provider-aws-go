@@ -65,6 +65,9 @@ type OrganizationsPolicy interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SkipDestroy() interface{}
+	SetSkipDestroy(val interface{})
+	SkipDestroyInput() interface{}
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -110,6 +113,7 @@ type OrganizationsPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSkipDestroy()
 	ResetTags()
 	ResetTagsAll()
 	ResetType()
@@ -348,6 +352,26 @@ func (j *jsiiProxy_OrganizationsPolicy) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_OrganizationsPolicy) SkipDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OrganizationsPolicy) SkipDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OrganizationsPolicy) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -573,6 +597,17 @@ func (j *jsiiProxy_OrganizationsPolicy)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OrganizationsPolicy)SetSkipDestroy(val interface{}) {
+	if err := j.validateSetSkipDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipDestroy",
 		val,
 	)
 }
@@ -896,6 +931,14 @@ func (o *jsiiProxy_OrganizationsPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OrganizationsPolicy) ResetSkipDestroy() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSkipDestroy",
 		nil, // no parameters
 	)
 }

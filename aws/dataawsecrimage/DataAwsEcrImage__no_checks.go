@@ -80,6 +80,10 @@ func (j *jsiiProxy_DataAwsEcrImage) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEcrImage) validateSetMostRecentParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEcrImage) validateSetRegistryIdParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,8 @@ type SnsTopicConfig struct {
 	NamePrefix *string `field:"optional" json:"namePrefix" yaml:"namePrefix"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic#policy SnsTopic#policy}.
 	Policy *string `field:"optional" json:"policy" yaml:"policy"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic#signature_version SnsTopic#signature_version}.
+	SignatureVersion *float64 `field:"optional" json:"signatureVersion" yaml:"signatureVersion"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic#sqs_failure_feedback_role_arn SnsTopic#sqs_failure_feedback_role_arn}.
 	SqsFailureFeedbackRoleArn *string `field:"optional" json:"sqsFailureFeedbackRoleArn" yaml:"sqsFailureFeedbackRoleArn"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic#sqs_success_feedback_role_arn SnsTopic#sqs_success_feedback_role_arn}.
@@ -74,5 +76,7 @@ type SnsTopicConfig struct {
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic#tags_all SnsTopic#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sns_topic#tracing_config SnsTopic#tracing_config}.
+	TracingConfig *string `field:"optional" json:"tracingConfig" yaml:"tracingConfig"`
 }
 

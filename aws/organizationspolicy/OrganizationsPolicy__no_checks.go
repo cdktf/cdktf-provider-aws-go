@@ -92,6 +92,10 @@ func (j *jsiiProxy_OrganizationsPolicy) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_OrganizationsPolicy) validateSetSkipDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrganizationsPolicy) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

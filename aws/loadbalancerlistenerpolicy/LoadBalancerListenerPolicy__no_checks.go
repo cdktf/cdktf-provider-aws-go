@@ -92,6 +92,10 @@ func (j *jsiiProxy_LoadBalancerListenerPolicy) validateSetProvisionersParameters
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerListenerPolicy) validateSetTriggersParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewLoadBalancerListenerPolicyParameters(scope constructs.Construct, id *string, config *LoadBalancerListenerPolicyConfig) error {
 	return nil
 }

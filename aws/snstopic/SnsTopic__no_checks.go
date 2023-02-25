@@ -160,6 +160,10 @@ func (j *jsiiProxy_SnsTopic) validateSetProvisionersParameters(val *[]interface{
 	return nil
 }
 
+func (j *jsiiProxy_SnsTopic) validateSetSignatureVersionParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SnsTopic) validateSetSqsFailureFeedbackRoleArnParameters(val *string) error {
 	return nil
 }
@@ -177,6 +181,10 @@ func (j *jsiiProxy_SnsTopic) validateSetTagsParameters(val *map[string]*string) 
 }
 
 func (j *jsiiProxy_SnsTopic) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SnsTopic) validateSetTracingConfigParameters(val *string) error {
 	return nil
 }
 

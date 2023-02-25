@@ -84,6 +84,10 @@ func (j *jsiiProxy_OrganizationsPolicyAttachment) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_OrganizationsPolicyAttachment) validateSetSkipDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrganizationsPolicyAttachment) validateSetTargetIdParameters(val *string) error {
 	return nil
 }

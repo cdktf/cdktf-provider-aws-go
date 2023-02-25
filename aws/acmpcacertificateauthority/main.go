@@ -250,6 +250,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomCname", GoMethod: "ResetCustomCname"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExpirationInDays", GoMethod: "ResetExpirationInDays"},
 			_jsii_.MemberMethod{JsiiMethod: "resetS3BucketName", GoMethod: "ResetS3BucketName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetS3ObjectAcl", GoMethod: "ResetS3ObjectAcl"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

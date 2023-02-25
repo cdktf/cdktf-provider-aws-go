@@ -117,6 +117,9 @@ type SnsTopic interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SignatureVersion() *float64
+	SetSignatureVersion(val *float64)
+	SignatureVersionInput() *float64
 	SqsFailureFeedbackRoleArn() *string
 	SetSqsFailureFeedbackRoleArn(val *string)
 	SqsFailureFeedbackRoleArnInput() *string
@@ -138,6 +141,9 @@ type SnsTopic interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TracingConfig() *string
+	SetTracingConfig(val *string)
+	TracingConfigInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -187,11 +193,13 @@ type SnsTopic interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicy()
+	ResetSignatureVersion()
 	ResetSqsFailureFeedbackRoleArn()
 	ResetSqsSuccessFeedbackRoleArn()
 	ResetSqsSuccessFeedbackSampleRate()
 	ResetTags()
 	ResetTagsAll()
+	ResetTracingConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -777,6 +785,26 @@ func (j *jsiiProxy_SnsTopic) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SnsTopic) SignatureVersion() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"signatureVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnsTopic) SignatureVersionInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"signatureVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SnsTopic) SqsFailureFeedbackRoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -902,6 +930,26 @@ func (j *jsiiProxy_SnsTopic) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnsTopic) TracingConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tracingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnsTopic) TracingConfigInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tracingConfigInput",
 		&returns,
 	)
 	return returns
@@ -1233,6 +1281,17 @@ func (j *jsiiProxy_SnsTopic)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+func (j *jsiiProxy_SnsTopic)SetSignatureVersion(val *float64) {
+	if err := j.validateSetSignatureVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"signatureVersion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SnsTopic)SetSqsFailureFeedbackRoleArn(val *string) {
 	if err := j.validateSetSqsFailureFeedbackRoleArnParameters(val); err != nil {
 		panic(err)
@@ -1284,6 +1343,17 @@ func (j *jsiiProxy_SnsTopic)SetTagsAll(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SnsTopic)SetTracingConfig(val *string) {
+	if err := j.validateSetTracingConfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tracingConfig",
 		val,
 	)
 }
@@ -1730,6 +1800,14 @@ func (s *jsiiProxy_SnsTopic) ResetPolicy() {
 	)
 }
 
+func (s *jsiiProxy_SnsTopic) ResetSignatureVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSignatureVersion",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SnsTopic) ResetSqsFailureFeedbackRoleArn() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1766,6 +1844,14 @@ func (s *jsiiProxy_SnsTopic) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SnsTopic) ResetTracingConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTracingConfig",
 		nil, // no parameters
 	)
 }
