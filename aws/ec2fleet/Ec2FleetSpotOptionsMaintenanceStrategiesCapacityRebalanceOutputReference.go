@@ -32,6 +32,9 @@ type Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference in
 	ReplacementStrategy() *string
 	SetReplacementStrategy(val *string)
 	ReplacementStrategyInput() *string
+	TerminationDelay() *float64
+	SetTerminationDelay(val *float64)
+	TerminationDelayInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -65,6 +68,7 @@ type Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference in
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetReplacementStrategy()
+	ResetTerminationDelay()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -145,6 +149,26 @@ func (j *jsiiProxy_Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutp
 	_jsii_.Get(
 		j,
 		"replacementStrategyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference) TerminationDelay() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"terminationDelay",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference) TerminationDelayInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"terminationDelayInput",
 		&returns,
 	)
 	return returns
@@ -238,6 +262,17 @@ func (j *jsiiProxy_Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutp
 	_jsii_.Set(
 		j,
 		"replacementStrategy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference)SetTerminationDelay(val *float64) {
+	if err := j.validateSetTerminationDelayParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terminationDelay",
 		val,
 	)
 }
@@ -454,6 +489,14 @@ func (e *jsiiProxy_Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutp
 	_jsii_.InvokeVoid(
 		e,
 		"resetReplacementStrategy",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference) ResetTerminationDelay() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTerminationDelay",
 		nil, // no parameters
 	)
 }

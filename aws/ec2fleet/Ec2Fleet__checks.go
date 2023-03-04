@@ -111,12 +111,63 @@ func (e *jsiiProxy_Ec2Fleet) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
-func (e *jsiiProxy_Ec2Fleet) validatePutLaunchTemplateConfigParameters(value *Ec2FleetLaunchTemplateConfig) error {
+func (e *jsiiProxy_Ec2Fleet) validatePutFleetInstanceSetParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*Ec2FleetFleetInstanceSet:
+		value := value.(*[]*Ec2FleetFleetInstanceSet)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*Ec2FleetFleetInstanceSet:
+		value_ := value.([]*Ec2FleetFleetInstanceSet)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*Ec2FleetFleetInstanceSet; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (e *jsiiProxy_Ec2Fleet) validatePutLaunchTemplateConfigParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*Ec2FleetLaunchTemplateConfig:
+		value := value.(*[]*Ec2FleetLaunchTemplateConfig)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*Ec2FleetLaunchTemplateConfig:
+		value_ := value.([]*Ec2FleetLaunchTemplateConfig)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*Ec2FleetLaunchTemplateConfig; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
@@ -232,6 +283,30 @@ func (j *jsiiProxy_Ec2Fleet) validateSetContextParameters(val *string) error {
 }
 
 func (j *jsiiProxy_Ec2Fleet) validateSetExcessCapacityTerminationPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Ec2Fleet) validateSetFleetStateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Ec2Fleet) validateSetFulfilledCapacityParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Ec2Fleet) validateSetFulfilledOnDemandCapacityParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -378,6 +453,22 @@ func (j *jsiiProxy_Ec2Fleet) validateSetTerminateInstancesWithExpirationParamete
 }
 
 func (j *jsiiProxy_Ec2Fleet) validateSetTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Ec2Fleet) validateSetValidFromParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Ec2Fleet) validateSetValidUntilParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

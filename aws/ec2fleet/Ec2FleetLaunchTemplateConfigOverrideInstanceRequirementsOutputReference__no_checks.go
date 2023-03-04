@@ -64,6 +64,10 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	return nil
 }
 
+func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) validatePutNetworkBandwidthGbpsParameters(value *Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) validatePutNetworkInterfaceCountParameters(value *Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCount) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 }
 
 func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) validateSetAcceleratorTypesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) validateSetAllowedInstanceTypesParameters(val *[]*string) error {
 	return nil
 }
 

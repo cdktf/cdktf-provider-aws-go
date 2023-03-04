@@ -60,6 +60,10 @@ func (j *jsiiProxy_LambdaFunctionTimeoutsOutputReference) validateSetCreateParam
 	return nil
 }
 
+func (j *jsiiProxy_LambdaFunctionTimeoutsOutputReference) validateSetDeleteParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaFunctionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

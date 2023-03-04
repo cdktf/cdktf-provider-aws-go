@@ -42,6 +42,9 @@ type CloudtrailEventDataStore interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KmsKeyId() *string
+	SetKmsKeyId(val *string)
+	KmsKeyIdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -116,6 +119,7 @@ type CloudtrailEventDataStore interface {
 	PutTimeouts(value *CloudtrailEventDataStoreTimeouts)
 	ResetAdvancedEventSelector()
 	ResetId()
+	ResetKmsKeyId()
 	ResetMultiRegionEnabled()
 	ResetOrganizationEnabled()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -266,6 +270,26 @@ func (j *jsiiProxy_CloudtrailEventDataStore) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudtrailEventDataStore) KmsKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudtrailEventDataStore) KmsKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyIdInput",
 		&returns,
 	)
 	return returns
@@ -583,6 +607,17 @@ func (j *jsiiProxy_CloudtrailEventDataStore)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudtrailEventDataStore)SetKmsKeyId(val *string) {
+	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyId",
 		val,
 	)
 }
@@ -994,6 +1029,14 @@ func (c *jsiiProxy_CloudtrailEventDataStore) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudtrailEventDataStore) ResetKmsKeyId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetKmsKeyId",
 		nil, // no parameters
 	)
 }

@@ -23,6 +23,9 @@ type LaunchTemplateInstanceRequirementsOutputReference interface {
 	AcceleratorTypes() *[]*string
 	SetAcceleratorTypes(val *[]*string)
 	AcceleratorTypesInput() *[]*string
+	AllowedInstanceTypes() *[]*string
+	SetAllowedInstanceTypes(val *[]*string)
+	AllowedInstanceTypesInput() *[]*string
 	BareMetal() *string
 	SetBareMetal(val *string)
 	BareMetalInput() *string
@@ -69,6 +72,8 @@ type LaunchTemplateInstanceRequirementsOutputReference interface {
 	MemoryGibPerVcpuInput() *LaunchTemplateInstanceRequirementsMemoryGibPerVcpu
 	MemoryMib() LaunchTemplateInstanceRequirementsMemoryMibOutputReference
 	MemoryMibInput() *LaunchTemplateInstanceRequirementsMemoryMib
+	NetworkBandwidthGbps() LaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference
+	NetworkBandwidthGbpsInput() *LaunchTemplateInstanceRequirementsNetworkBandwidthGbps
 	NetworkInterfaceCount() LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference
 	NetworkInterfaceCountInput() *LaunchTemplateInstanceRequirementsNetworkInterfaceCount
 	OnDemandMaxPricePercentageOverLowestPrice() *float64
@@ -121,6 +126,7 @@ type LaunchTemplateInstanceRequirementsOutputReference interface {
 	PutBaselineEbsBandwidthMbps(value *LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps)
 	PutMemoryGibPerVcpu(value *LaunchTemplateInstanceRequirementsMemoryGibPerVcpu)
 	PutMemoryMib(value *LaunchTemplateInstanceRequirementsMemoryMib)
+	PutNetworkBandwidthGbps(value *LaunchTemplateInstanceRequirementsNetworkBandwidthGbps)
 	PutNetworkInterfaceCount(value *LaunchTemplateInstanceRequirementsNetworkInterfaceCount)
 	PutTotalLocalStorageGb(value *LaunchTemplateInstanceRequirementsTotalLocalStorageGb)
 	PutVcpuCount(value *LaunchTemplateInstanceRequirementsVcpuCount)
@@ -129,6 +135,7 @@ type LaunchTemplateInstanceRequirementsOutputReference interface {
 	ResetAcceleratorNames()
 	ResetAcceleratorTotalMemoryMib()
 	ResetAcceleratorTypes()
+	ResetAllowedInstanceTypes()
 	ResetBareMetal()
 	ResetBaselineEbsBandwidthMbps()
 	ResetBurstablePerformance()
@@ -138,6 +145,7 @@ type LaunchTemplateInstanceRequirementsOutputReference interface {
 	ResetLocalStorage()
 	ResetLocalStorageTypes()
 	ResetMemoryGibPerVcpu()
+	ResetNetworkBandwidthGbps()
 	ResetNetworkInterfaceCount()
 	ResetOnDemandMaxPricePercentageOverLowestPrice()
 	ResetRequireHibernateSupport()
@@ -253,6 +261,26 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) Accelerato
 	_jsii_.Get(
 		j,
 		"acceleratorTypesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) AllowedInstanceTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedInstanceTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) AllowedInstanceTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedInstanceTypesInput",
 		&returns,
 	)
 	return returns
@@ -508,6 +536,26 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) MemoryMibI
 	return returns
 }
 
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) NetworkBandwidthGbps() LaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference {
+	var returns LaunchTemplateInstanceRequirementsNetworkBandwidthGbpsOutputReference
+	_jsii_.Get(
+		j,
+		"networkBandwidthGbps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) NetworkBandwidthGbpsInput() *LaunchTemplateInstanceRequirementsNetworkBandwidthGbps {
+	var returns *LaunchTemplateInstanceRequirementsNetworkBandwidthGbps
+	_jsii_.Get(
+		j,
+		"networkBandwidthGbpsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) NetworkInterfaceCount() LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference {
 	var returns LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference
 	_jsii_.Get(
@@ -705,6 +753,17 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetAccelera
 	_jsii_.Set(
 		j,
 		"acceleratorTypes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetAllowedInstanceTypes(val *[]*string) {
+	if err := j.validateSetAllowedInstanceTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedInstanceTypes",
 		val,
 	)
 }
@@ -1115,6 +1174,17 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) PutMemoryM
 	)
 }
 
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) PutNetworkBandwidthGbps(value *LaunchTemplateInstanceRequirementsNetworkBandwidthGbps) {
+	if err := l.validatePutNetworkBandwidthGbpsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putNetworkBandwidthGbps",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) PutNetworkInterfaceCount(value *LaunchTemplateInstanceRequirementsNetworkInterfaceCount) {
 	if err := l.validatePutNetworkInterfaceCountParameters(value); err != nil {
 		panic(err)
@@ -1188,6 +1258,14 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) ResetAccel
 	)
 }
 
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) ResetAllowedInstanceTypes() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAllowedInstanceTypes",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) ResetBareMetal() {
 	_jsii_.InvokeVoid(
 		l,
@@ -1256,6 +1334,14 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) ResetMemor
 	_jsii_.InvokeVoid(
 		l,
 		"resetMemoryGibPerVcpu",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) ResetNetworkBandwidthGbps() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetNetworkBandwidthGbps",
 		nil, // no parameters
 	)
 }

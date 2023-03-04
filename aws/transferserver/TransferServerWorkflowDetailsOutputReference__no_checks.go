@@ -44,6 +44,10 @@ func (t *jsiiProxy_TransferServerWorkflowDetailsOutputReference) validateInterpo
 	return nil
 }
 
+func (t *jsiiProxy_TransferServerWorkflowDetailsOutputReference) validatePutOnPartialUploadParameters(value *TransferServerWorkflowDetailsOnPartialUpload) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransferServerWorkflowDetailsOutputReference) validatePutOnUploadParameters(value *TransferServerWorkflowDetailsOnUpload) error {
 	return nil
 }

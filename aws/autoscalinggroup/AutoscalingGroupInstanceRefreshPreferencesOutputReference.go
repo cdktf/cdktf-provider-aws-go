@@ -10,6 +10,9 @@ import (
 
 type AutoscalingGroupInstanceRefreshPreferencesOutputReference interface {
 	cdktf.ComplexObject
+	AutoRollback() interface{}
+	SetAutoRollback(val interface{})
+	AutoRollbackInput() interface{}
 	CheckpointDelay() *string
 	SetCheckpointDelay(val *string)
 	CheckpointDelayInput() *string
@@ -76,6 +79,7 @@ type AutoscalingGroupInstanceRefreshPreferencesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAutoRollback()
 	ResetCheckpointDelay()
 	ResetCheckpointPercentages()
 	ResetInstanceWarmup()
@@ -94,6 +98,26 @@ type AutoscalingGroupInstanceRefreshPreferencesOutputReference interface {
 // The jsii proxy struct for AutoscalingGroupInstanceRefreshPreferencesOutputReference
 type jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) AutoRollback() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoRollback",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) AutoRollbackInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoRollbackInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) CheckpointDelay() *string {
@@ -291,6 +315,17 @@ func NewAutoscalingGroupInstanceRefreshPreferencesOutputReference_Override(a Aut
 		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupInstanceRefreshPreferencesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)SetAutoRollback(val interface{}) {
+	if err := j.validateSetAutoRollbackParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoRollback",
+		val,
 	)
 }
 
@@ -588,6 +623,14 @@ func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) In
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) ResetAutoRollback() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAutoRollback",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) ResetCheckpointDelay() {

@@ -160,6 +160,10 @@ func (j *jsiiProxy_DmsS3Endpoint) validateSetDatePartitionTimezoneParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DmsS3Endpoint) validateSetDetachTargetOnLobLookupFailureParquetParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsS3Endpoint) validateSetDictPageSizeLimitParameters(val *float64) error {
 	return nil
 }

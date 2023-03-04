@@ -64,6 +64,10 @@ func (j *jsiiProxy_Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutp
 	return nil
 }
 
+func (j *jsiiProxy_Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference) validateSetTerminationDelayParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2FleetSpotOptionsMaintenanceStrategiesCapacityRebalanceOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

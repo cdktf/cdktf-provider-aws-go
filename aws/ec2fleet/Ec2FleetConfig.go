@@ -22,7 +22,7 @@ type Ec2FleetConfig struct {
 	// launch_template_config block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#launch_template_config Ec2Fleet#launch_template_config}
-	LaunchTemplateConfig *Ec2FleetLaunchTemplateConfig `field:"required" json:"launchTemplateConfig" yaml:"launchTemplateConfig"`
+	LaunchTemplateConfig interface{} `field:"required" json:"launchTemplateConfig" yaml:"launchTemplateConfig"`
 	// target_capacity_specification block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#target_capacity_specification Ec2Fleet#target_capacity_specification}
@@ -31,6 +31,16 @@ type Ec2FleetConfig struct {
 	Context *string `field:"optional" json:"context" yaml:"context"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#excess_capacity_termination_policy Ec2Fleet#excess_capacity_termination_policy}.
 	ExcessCapacityTerminationPolicy *string `field:"optional" json:"excessCapacityTerminationPolicy" yaml:"excessCapacityTerminationPolicy"`
+	// fleet_instance_set block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#fleet_instance_set Ec2Fleet#fleet_instance_set}
+	FleetInstanceSet interface{} `field:"optional" json:"fleetInstanceSet" yaml:"fleetInstanceSet"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#fleet_state Ec2Fleet#fleet_state}.
+	FleetState *string `field:"optional" json:"fleetState" yaml:"fleetState"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#fulfilled_capacity Ec2Fleet#fulfilled_capacity}.
+	FulfilledCapacity *float64 `field:"optional" json:"fulfilledCapacity" yaml:"fulfilledCapacity"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#fulfilled_on_demand_capacity Ec2Fleet#fulfilled_on_demand_capacity}.
+	FulfilledOnDemandCapacity *float64 `field:"optional" json:"fulfilledOnDemandCapacity" yaml:"fulfilledOnDemandCapacity"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#id Ec2Fleet#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -60,5 +70,9 @@ type Ec2FleetConfig struct {
 	Timeouts *Ec2FleetTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#type Ec2Fleet#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#valid_from Ec2Fleet#valid_from}.
+	ValidFrom *string `field:"optional" json:"validFrom" yaml:"validFrom"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet#valid_until Ec2Fleet#valid_until}.
+	ValidUntil *string `field:"optional" json:"validUntil" yaml:"validUntil"`
 }
 

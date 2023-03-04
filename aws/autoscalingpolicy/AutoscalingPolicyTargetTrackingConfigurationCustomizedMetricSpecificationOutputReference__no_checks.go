@@ -48,6 +48,10 @@ func (a *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricS
 	return nil
 }
 
+func (a *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationOutputReference) validatePutMetricsParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingPolicyTargetTrackingConfigurationCustomizedMetricSpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

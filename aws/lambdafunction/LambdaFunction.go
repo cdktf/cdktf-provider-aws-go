@@ -132,6 +132,9 @@ type LambdaFunction interface {
 	S3ObjectVersionInput() *string
 	SigningJobArn() *string
 	SigningProfileVersionArn() *string
+	SkipDestroy() interface{}
+	SetSkipDestroy(val interface{})
+	SkipDestroyInput() interface{}
 	SnapStart() LambdaFunctionSnapStartOutputReference
 	SnapStartInput() *LambdaFunctionSnapStart
 	SourceCodeHash() *string
@@ -221,6 +224,7 @@ type LambdaFunction interface {
 	ResetS3Bucket()
 	ResetS3Key()
 	ResetS3ObjectVersion()
+	ResetSkipDestroy()
 	ResetSnapStart()
 	ResetSourceCodeHash()
 	ResetTags()
@@ -964,6 +968,26 @@ func (j *jsiiProxy_LambdaFunction) SigningProfileVersionArn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LambdaFunction) SkipDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunction) SkipDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LambdaFunction) SnapStart() LambdaFunctionSnapStartOutputReference {
 	var returns LambdaFunctionSnapStartOutputReference
 	_jsii_.Get(
@@ -1496,6 +1520,17 @@ func (j *jsiiProxy_LambdaFunction)SetS3ObjectVersion(val *string) {
 	_jsii_.Set(
 		j,
 		"s3ObjectVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaFunction)SetSkipDestroy(val interface{}) {
+	if err := j.validateSetSkipDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipDestroy",
 		val,
 	)
 }
@@ -2105,6 +2140,14 @@ func (l *jsiiProxy_LambdaFunction) ResetS3ObjectVersion() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetS3ObjectVersion",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaFunction) ResetSkipDestroy() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSkipDestroy",
 		nil, // no parameters
 	)
 }

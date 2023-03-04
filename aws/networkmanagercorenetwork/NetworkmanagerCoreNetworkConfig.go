@@ -23,6 +23,8 @@ type NetworkmanagerCoreNetworkConfig struct {
 	GlobalNetworkId *string `field:"required" json:"globalNetworkId" yaml:"globalNetworkId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_core_network#base_policy_region NetworkmanagerCoreNetwork#base_policy_region}.
 	BasePolicyRegion *string `field:"optional" json:"basePolicyRegion" yaml:"basePolicyRegion"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_core_network#base_policy_regions NetworkmanagerCoreNetwork#base_policy_regions}.
+	BasePolicyRegions *[]*string `field:"optional" json:"basePolicyRegions" yaml:"basePolicyRegions"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_core_network#create_base_policy NetworkmanagerCoreNetwork#create_base_policy}.
 	CreateBasePolicy interface{} `field:"optional" json:"createBasePolicy" yaml:"createBasePolicy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_core_network#description NetworkmanagerCoreNetwork#description}.

@@ -23,6 +23,9 @@ type SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputRefe
 	AcceleratorTypes() *[]*string
 	SetAcceleratorTypes(val *[]*string)
 	AcceleratorTypesInput() *[]*string
+	AllowedInstanceTypes() *[]*string
+	SetAllowedInstanceTypes(val *[]*string)
+	AllowedInstanceTypesInput() *[]*string
 	BareMetal() *string
 	SetBareMetal(val *string)
 	BareMetalInput() *string
@@ -69,6 +72,8 @@ type SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputRefe
 	MemoryGibPerVcpuInput() *SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryGibPerVcpu
 	MemoryMib() SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryMibOutputReference
 	MemoryMibInput() *SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryMib
+	NetworkBandwidthGbps() SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbpsOutputReference
+	NetworkBandwidthGbpsInput() *SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps
 	NetworkInterfaceCount() SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCountOutputReference
 	NetworkInterfaceCountInput() *SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCount
 	OnDemandMaxPricePercentageOverLowestPrice() *float64
@@ -121,6 +126,7 @@ type SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputRefe
 	PutBaselineEbsBandwidthMbps(value *SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsBaselineEbsBandwidthMbps)
 	PutMemoryGibPerVcpu(value *SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryGibPerVcpu)
 	PutMemoryMib(value *SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsMemoryMib)
+	PutNetworkBandwidthGbps(value *SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps)
 	PutNetworkInterfaceCount(value *SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCount)
 	PutTotalLocalStorageGb(value *SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsTotalLocalStorageGb)
 	PutVcpuCount(value *SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsVcpuCount)
@@ -129,6 +135,7 @@ type SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputRefe
 	ResetAcceleratorNames()
 	ResetAcceleratorTotalMemoryMib()
 	ResetAcceleratorTypes()
+	ResetAllowedInstanceTypes()
 	ResetBareMetal()
 	ResetBaselineEbsBandwidthMbps()
 	ResetBurstablePerformance()
@@ -139,6 +146,7 @@ type SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputRefe
 	ResetLocalStorageTypes()
 	ResetMemoryGibPerVcpu()
 	ResetMemoryMib()
+	ResetNetworkBandwidthGbps()
 	ResetNetworkInterfaceCount()
 	ResetOnDemandMaxPricePercentageOverLowestPrice()
 	ResetRequireHibernateSupport()
@@ -255,6 +263,26 @@ func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirem
 	_jsii_.Get(
 		j,
 		"acceleratorTypesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputReference) AllowedInstanceTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedInstanceTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputReference) AllowedInstanceTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedInstanceTypesInput",
 		&returns,
 	)
 	return returns
@@ -510,6 +538,26 @@ func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirem
 	return returns
 }
 
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputReference) NetworkBandwidthGbps() SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbpsOutputReference {
+	var returns SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbpsOutputReference
+	_jsii_.Get(
+		j,
+		"networkBandwidthGbps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputReference) NetworkBandwidthGbpsInput() *SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps {
+	var returns *SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps
+	_jsii_.Get(
+		j,
+		"networkBandwidthGbpsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputReference) NetworkInterfaceCount() SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCountOutputReference {
 	var returns SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCountOutputReference
 	_jsii_.Get(
@@ -707,6 +755,17 @@ func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirem
 	_jsii_.Set(
 		j,
 		"acceleratorTypes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputReference)SetAllowedInstanceTypes(val *[]*string) {
+	if err := j.validateSetAllowedInstanceTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedInstanceTypes",
 		val,
 	)
 }
@@ -1117,6 +1176,17 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirem
 	)
 }
 
+func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputReference) PutNetworkBandwidthGbps(value *SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkBandwidthGbps) {
+	if err := s.validatePutNetworkBandwidthGbpsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putNetworkBandwidthGbps",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputReference) PutNetworkInterfaceCount(value *SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsNetworkInterfaceCount) {
 	if err := s.validatePutNetworkInterfaceCountParameters(value); err != nil {
 		panic(err)
@@ -1186,6 +1256,14 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirem
 	_jsii_.InvokeVoid(
 		s,
 		"resetAcceleratorTypes",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputReference) ResetAllowedInstanceTypes() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAllowedInstanceTypes",
 		nil, // no parameters
 	)
 }
@@ -1266,6 +1344,14 @@ func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirem
 	_jsii_.InvokeVoid(
 		s,
 		"resetMemoryMib",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpotFleetRequestLaunchTemplateConfigOverridesInstanceRequirementsOutputReference) ResetNetworkBandwidthGbps() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNetworkBandwidthGbps",
 		nil, // no parameters
 	)
 }

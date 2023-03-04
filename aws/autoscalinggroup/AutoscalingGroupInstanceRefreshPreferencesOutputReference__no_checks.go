@@ -48,6 +48,10 @@ func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) validateSetAutoRollbackParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) validateSetCheckpointDelayParameters(val *string) error {
 	return nil
 }

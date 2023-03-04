@@ -29,6 +29,8 @@ type TransferServerWorkflowDetailsOutputReference interface {
 	Fqn() *string
 	InternalValue() *TransferServerWorkflowDetails
 	SetInternalValue(val *TransferServerWorkflowDetails)
+	OnPartialUpload() TransferServerWorkflowDetailsOnPartialUploadOutputReference
+	OnPartialUploadInput() *TransferServerWorkflowDetailsOnPartialUpload
 	OnUpload() TransferServerWorkflowDetailsOnUploadOutputReference
 	OnUploadInput() *TransferServerWorkflowDetailsOnUpload
 	// Experimental.
@@ -63,7 +65,9 @@ type TransferServerWorkflowDetailsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutOnPartialUpload(value *TransferServerWorkflowDetailsOnPartialUpload)
 	PutOnUpload(value *TransferServerWorkflowDetailsOnUpload)
+	ResetOnPartialUpload()
 	ResetOnUpload()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -125,6 +129,26 @@ func (j *jsiiProxy_TransferServerWorkflowDetailsOutputReference) InternalValue()
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransferServerWorkflowDetailsOutputReference) OnPartialUpload() TransferServerWorkflowDetailsOnPartialUploadOutputReference {
+	var returns TransferServerWorkflowDetailsOnPartialUploadOutputReference
+	_jsii_.Get(
+		j,
+		"onPartialUpload",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransferServerWorkflowDetailsOutputReference) OnPartialUploadInput() *TransferServerWorkflowDetailsOnPartialUpload {
+	var returns *TransferServerWorkflowDetailsOnPartialUpload
+	_jsii_.Get(
+		j,
+		"onPartialUploadInput",
 		&returns,
 	)
 	return returns
@@ -439,6 +463,17 @@ func (t *jsiiProxy_TransferServerWorkflowDetailsOutputReference) InterpolationFo
 	return returns
 }
 
+func (t *jsiiProxy_TransferServerWorkflowDetailsOutputReference) PutOnPartialUpload(value *TransferServerWorkflowDetailsOnPartialUpload) {
+	if err := t.validatePutOnPartialUploadParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putOnPartialUpload",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TransferServerWorkflowDetailsOutputReference) PutOnUpload(value *TransferServerWorkflowDetailsOnUpload) {
 	if err := t.validatePutOnUploadParameters(value); err != nil {
 		panic(err)
@@ -447,6 +482,14 @@ func (t *jsiiProxy_TransferServerWorkflowDetailsOutputReference) PutOnUpload(val
 		t,
 		"putOnUpload",
 		[]interface{}{value},
+	)
+}
+
+func (t *jsiiProxy_TransferServerWorkflowDetailsOutputReference) ResetOnPartialUpload() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetOnPartialUpload",
+		nil, // no parameters
 	)
 }
 

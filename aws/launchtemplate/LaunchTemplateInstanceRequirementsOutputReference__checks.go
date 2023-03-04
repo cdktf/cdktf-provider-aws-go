@@ -145,6 +145,17 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validatePu
 	return nil
 }
 
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validatePutNetworkBandwidthGbpsParameters(value *LaunchTemplateInstanceRequirementsNetworkBandwidthGbps) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validatePutNetworkInterfaceCountParameters(value *LaunchTemplateInstanceRequirementsNetworkInterfaceCount) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -203,6 +214,14 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateSe
 }
 
 func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateSetAcceleratorTypesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateSetAllowedInstanceTypesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

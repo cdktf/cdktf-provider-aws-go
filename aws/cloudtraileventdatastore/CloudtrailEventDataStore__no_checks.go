@@ -80,6 +80,10 @@ func (j *jsiiProxy_CloudtrailEventDataStore) validateSetIdParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_CloudtrailEventDataStore) validateSetKmsKeyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudtrailEventDataStore) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -196,6 +196,10 @@ func (j *jsiiProxy_LambdaFunction) validateSetS3ObjectVersionParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_LambdaFunction) validateSetSkipDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaFunction) validateSetSourceCodeHashParameters(val *string) error {
 	return nil
 }

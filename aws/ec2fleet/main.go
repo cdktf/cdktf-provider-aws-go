@@ -22,9 +22,17 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "excessCapacityTerminationPolicy", GoGetter: "ExcessCapacityTerminationPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "excessCapacityTerminationPolicyInput", GoGetter: "ExcessCapacityTerminationPolicyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fleetInstanceSet", GoGetter: "FleetInstanceSet"},
+			_jsii_.MemberProperty{JsiiProperty: "fleetInstanceSetInput", GoGetter: "FleetInstanceSetInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fleetState", GoGetter: "FleetState"},
+			_jsii_.MemberProperty{JsiiProperty: "fleetStateInput", GoGetter: "FleetStateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
+			_jsii_.MemberProperty{JsiiProperty: "fulfilledCapacity", GoGetter: "FulfilledCapacity"},
+			_jsii_.MemberProperty{JsiiProperty: "fulfilledCapacityInput", GoGetter: "FulfilledCapacityInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fulfilledOnDemandCapacity", GoGetter: "FulfilledOnDemandCapacity"},
+			_jsii_.MemberProperty{JsiiProperty: "fulfilledOnDemandCapacityInput", GoGetter: "FulfilledOnDemandCapacityInput"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
@@ -46,6 +54,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putFleetInstanceSet", GoMethod: "PutFleetInstanceSet"},
 			_jsii_.MemberMethod{JsiiMethod: "putLaunchTemplateConfig", GoMethod: "PutLaunchTemplateConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putOnDemandOptions", GoMethod: "PutOnDemandOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putSpotOptions", GoMethod: "PutSpotOptions"},
@@ -56,6 +65,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "replaceUnhealthyInstancesInput", GoGetter: "ReplaceUnhealthyInstancesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContext", GoMethod: "ResetContext"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExcessCapacityTerminationPolicy", GoMethod: "ResetExcessCapacityTerminationPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFleetInstanceSet", GoMethod: "ResetFleetInstanceSet"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFleetState", GoMethod: "ResetFleetState"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFulfilledCapacity", GoMethod: "ResetFulfilledCapacity"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFulfilledOnDemandCapacity", GoMethod: "ResetFulfilledOnDemandCapacity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnDemandOptions", GoMethod: "ResetOnDemandOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -67,6 +80,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTerminateInstancesWithExpiration", GoMethod: "ResetTerminateInstancesWithExpiration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetType", GoMethod: "ResetType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetValidFrom", GoMethod: "ResetValidFrom"},
+			_jsii_.MemberMethod{JsiiMethod: "resetValidUntil", GoMethod: "ResetValidUntil"},
 			_jsii_.MemberProperty{JsiiProperty: "spotOptions", GoGetter: "SpotOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "spotOptionsInput", GoGetter: "SpotOptionsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -90,6 +105,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "validFrom", GoGetter: "ValidFrom"},
+			_jsii_.MemberProperty{JsiiProperty: "validFromInput", GoGetter: "ValidFromInput"},
+			_jsii_.MemberProperty{JsiiProperty: "validUntil", GoGetter: "ValidUntil"},
+			_jsii_.MemberProperty{JsiiProperty: "validUntilInput", GoGetter: "ValidUntilInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Ec2Fleet{}
@@ -100,6 +119,75 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2Fleet.Ec2FleetConfig",
 		reflect.TypeOf((*Ec2FleetConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSet",
+		reflect.TypeOf((*Ec2FleetFleetInstanceSet)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetList",
+		reflect.TypeOf((*Ec2FleetFleetInstanceSetList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_Ec2FleetFleetInstanceSetList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetFleetInstanceSetOutputReference",
+		reflect.TypeOf((*Ec2FleetFleetInstanceSetOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "instanceIds", GoGetter: "InstanceIds"},
+			_jsii_.MemberProperty{JsiiProperty: "instanceIdsInput", GoGetter: "InstanceIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "instanceType", GoGetter: "InstanceType"},
+			_jsii_.MemberProperty{JsiiProperty: "instanceTypeInput", GoGetter: "InstanceTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberProperty{JsiiProperty: "lifecycleInput", GoGetter: "LifecycleInput"},
+			_jsii_.MemberProperty{JsiiProperty: "platform", GoGetter: "Platform"},
+			_jsii_.MemberProperty{JsiiProperty: "platformInput", GoGetter: "PlatformInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInstanceIds", GoMethod: "ResetInstanceIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInstanceType", GoMethod: "ResetInstanceType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLifecycle", GoMethod: "ResetLifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPlatform", GoMethod: "ResetPlatform"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_Ec2FleetFleetInstanceSetOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfig",
@@ -150,6 +238,27 @@ func init() {
 		},
 	)
 	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigList",
+		reflect.TypeOf((*Ec2FleetLaunchTemplateConfigList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_Ec2FleetLaunchTemplateConfigList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference",
 		reflect.TypeOf((*Ec2FleetLaunchTemplateConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
@@ -176,6 +285,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "overrideInput", GoGetter: "OverrideInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putLaunchTemplateSpecification", GoMethod: "PutLaunchTemplateSpecification"},
 			_jsii_.MemberMethod{JsiiMethod: "putOverride", GoMethod: "PutOverride"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLaunchTemplateSpecification", GoMethod: "ResetLaunchTemplateSpecification"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverride", GoMethod: "ResetOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -406,6 +516,48 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps",
+		reflect.TypeOf((*Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference",
+		reflect.TypeOf((*Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "max", GoGetter: "Max"},
+			_jsii_.MemberProperty{JsiiProperty: "maxInput", GoGetter: "MaxInput"},
+			_jsii_.MemberProperty{JsiiProperty: "min", GoGetter: "Min"},
+			_jsii_.MemberProperty{JsiiProperty: "minInput", GoGetter: "MinInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMax", GoMethod: "ResetMax"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMin", GoMethod: "ResetMin"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCount",
 		reflect.TypeOf((*Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCount)(nil)).Elem(),
 	)
@@ -461,6 +613,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorTotalMemoryMibInput", GoGetter: "AcceleratorTotalMemoryMibInput"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorTypes", GoGetter: "AcceleratorTypes"},
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorTypesInput", GoGetter: "AcceleratorTypesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedInstanceTypes", GoGetter: "AllowedInstanceTypes"},
+			_jsii_.MemberProperty{JsiiProperty: "allowedInstanceTypesInput", GoGetter: "AllowedInstanceTypesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "bareMetal", GoGetter: "BareMetal"},
 			_jsii_.MemberProperty{JsiiProperty: "bareMetalInput", GoGetter: "BareMetalInput"},
 			_jsii_.MemberProperty{JsiiProperty: "baselineEbsBandwidthMbps", GoGetter: "BaselineEbsBandwidthMbps"},
@@ -498,6 +652,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "memoryGibPerVcpuInput", GoGetter: "MemoryGibPerVcpuInput"},
 			_jsii_.MemberProperty{JsiiProperty: "memoryMib", GoGetter: "MemoryMib"},
 			_jsii_.MemberProperty{JsiiProperty: "memoryMibInput", GoGetter: "MemoryMibInput"},
+			_jsii_.MemberProperty{JsiiProperty: "networkBandwidthGbps", GoGetter: "NetworkBandwidthGbps"},
+			_jsii_.MemberProperty{JsiiProperty: "networkBandwidthGbpsInput", GoGetter: "NetworkBandwidthGbpsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "networkInterfaceCount", GoGetter: "NetworkInterfaceCount"},
 			_jsii_.MemberProperty{JsiiProperty: "networkInterfaceCountInput", GoGetter: "NetworkInterfaceCountInput"},
 			_jsii_.MemberProperty{JsiiProperty: "onDemandMaxPricePercentageOverLowestPrice", GoGetter: "OnDemandMaxPricePercentageOverLowestPrice"},
@@ -507,6 +663,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putBaselineEbsBandwidthMbps", GoMethod: "PutBaselineEbsBandwidthMbps"},
 			_jsii_.MemberMethod{JsiiMethod: "putMemoryGibPerVcpu", GoMethod: "PutMemoryGibPerVcpu"},
 			_jsii_.MemberMethod{JsiiMethod: "putMemoryMib", GoMethod: "PutMemoryMib"},
+			_jsii_.MemberMethod{JsiiMethod: "putNetworkBandwidthGbps", GoMethod: "PutNetworkBandwidthGbps"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkInterfaceCount", GoMethod: "PutNetworkInterfaceCount"},
 			_jsii_.MemberMethod{JsiiMethod: "putTotalLocalStorageGb", GoMethod: "PutTotalLocalStorageGb"},
 			_jsii_.MemberMethod{JsiiMethod: "putVcpuCount", GoMethod: "PutVcpuCount"},
@@ -517,6 +674,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAcceleratorNames", GoMethod: "ResetAcceleratorNames"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAcceleratorTotalMemoryMib", GoMethod: "ResetAcceleratorTotalMemoryMib"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAcceleratorTypes", GoMethod: "ResetAcceleratorTypes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowedInstanceTypes", GoMethod: "ResetAllowedInstanceTypes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBareMetal", GoMethod: "ResetBareMetal"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBaselineEbsBandwidthMbps", GoMethod: "ResetBaselineEbsBandwidthMbps"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBurstablePerformance", GoMethod: "ResetBurstablePerformance"},
@@ -526,6 +684,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLocalStorage", GoMethod: "ResetLocalStorage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLocalStorageTypes", GoMethod: "ResetLocalStorageTypes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMemoryGibPerVcpu", GoMethod: "ResetMemoryGibPerVcpu"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNetworkBandwidthGbps", GoMethod: "ResetNetworkBandwidthGbps"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworkInterfaceCount", GoMethod: "ResetNetworkInterfaceCount"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOnDemandMaxPricePercentageOverLowestPrice", GoMethod: "ResetOnDemandMaxPricePercentageOverLowestPrice"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequireHibernateSupport", GoMethod: "ResetRequireHibernateSupport"},
@@ -733,8 +892,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxTotalPrice", GoGetter: "MaxTotalPrice"},
+			_jsii_.MemberProperty{JsiiProperty: "maxTotalPriceInput", GoGetter: "MaxTotalPriceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "minTargetCapacity", GoGetter: "MinTargetCapacity"},
+			_jsii_.MemberProperty{JsiiProperty: "minTargetCapacityInput", GoGetter: "MinTargetCapacityInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllocationStrategy", GoMethod: "ResetAllocationStrategy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxTotalPrice", GoMethod: "ResetMaxTotalPrice"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMinTargetCapacity", GoMethod: "ResetMinTargetCapacity"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSingleAvailabilityZone", GoMethod: "ResetSingleAvailabilityZone"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSingleInstanceType", GoMethod: "ResetSingleInstanceType"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "singleAvailabilityZone", GoGetter: "SingleAvailabilityZone"},
+			_jsii_.MemberProperty{JsiiProperty: "singleAvailabilityZoneInput", GoGetter: "SingleAvailabilityZoneInput"},
+			_jsii_.MemberProperty{JsiiProperty: "singleInstanceType", GoGetter: "SingleInstanceType"},
+			_jsii_.MemberProperty{JsiiProperty: "singleInstanceTypeInput", GoGetter: "SingleInstanceTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -781,7 +952,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "replacementStrategy", GoGetter: "ReplacementStrategy"},
 			_jsii_.MemberProperty{JsiiProperty: "replacementStrategyInput", GoGetter: "ReplacementStrategyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReplacementStrategy", GoMethod: "ResetReplacementStrategy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTerminationDelay", GoMethod: "ResetTerminationDelay"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terminationDelay", GoGetter: "TerminationDelay"},
+			_jsii_.MemberProperty{JsiiProperty: "terminationDelayInput", GoGetter: "TerminationDelayInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},

@@ -32,6 +32,18 @@ type Ec2FleetOnDemandOptionsOutputReference interface {
 	Fqn() *string
 	InternalValue() *Ec2FleetOnDemandOptions
 	SetInternalValue(val *Ec2FleetOnDemandOptions)
+	MaxTotalPrice() *string
+	SetMaxTotalPrice(val *string)
+	MaxTotalPriceInput() *string
+	MinTargetCapacity() *float64
+	SetMinTargetCapacity(val *float64)
+	MinTargetCapacityInput() *float64
+	SingleAvailabilityZone() interface{}
+	SetSingleAvailabilityZone(val interface{})
+	SingleAvailabilityZoneInput() interface{}
+	SingleInstanceType() interface{}
+	SetSingleInstanceType(val interface{})
+	SingleInstanceTypeInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -65,6 +77,10 @@ type Ec2FleetOnDemandOptionsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAllocationStrategy()
+	ResetMaxTotalPrice()
+	ResetMinTargetCapacity()
+	ResetSingleAvailabilityZone()
+	ResetSingleInstanceType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -145,6 +161,86 @@ func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) InternalValue() *Ec2F
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) MaxTotalPrice() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxTotalPrice",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) MaxTotalPriceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxTotalPriceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) MinTargetCapacity() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minTargetCapacity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) MinTargetCapacityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minTargetCapacityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) SingleAvailabilityZone() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"singleAvailabilityZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) SingleAvailabilityZoneInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"singleAvailabilityZoneInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) SingleInstanceType() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"singleInstanceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) SingleInstanceTypeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"singleInstanceTypeInput",
 		&returns,
 	)
 	return returns
@@ -238,6 +334,50 @@ func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference)SetInternalValue(val *
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference)SetMaxTotalPrice(val *string) {
+	if err := j.validateSetMaxTotalPriceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxTotalPrice",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference)SetMinTargetCapacity(val *float64) {
+	if err := j.validateSetMinTargetCapacityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minTargetCapacity",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference)SetSingleAvailabilityZone(val interface{}) {
+	if err := j.validateSetSingleAvailabilityZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"singleAvailabilityZone",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference)SetSingleInstanceType(val interface{}) {
+	if err := j.validateSetSingleInstanceTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"singleInstanceType",
 		val,
 	)
 }
@@ -454,6 +594,38 @@ func (e *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) ResetAllocationStrate
 	_jsii_.InvokeVoid(
 		e,
 		"resetAllocationStrategy",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) ResetMaxTotalPrice() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetMaxTotalPrice",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) ResetMinTargetCapacity() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetMinTargetCapacity",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) ResetSingleAvailabilityZone() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetSingleAvailabilityZone",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) ResetSingleInstanceType() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetSingleInstanceType",
 		nil, // no parameters
 	)
 }

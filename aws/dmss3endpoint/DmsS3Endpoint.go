@@ -94,6 +94,9 @@ type DmsS3Endpoint interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DetachTargetOnLobLookupFailureParquet() interface{}
+	SetDetachTargetOnLobLookupFailureParquet(val interface{})
+	DetachTargetOnLobLookupFailureParquetInput() interface{}
 	DictPageSizeLimit() *float64
 	SetDictPageSizeLimit(val *float64)
 	DictPageSizeLimitInput() *float64
@@ -255,6 +258,7 @@ type DmsS3Endpoint interface {
 	ResetDatePartitionEnabled()
 	ResetDatePartitionSequence()
 	ResetDatePartitionTimezone()
+	ResetDetachTargetOnLobLookupFailureParquet()
 	ResetDictPageSizeLimit()
 	ResetEnableStatistics()
 	ResetEncodingType()
@@ -782,6 +786,26 @@ func (j *jsiiProxy_DmsS3Endpoint) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) DetachTargetOnLobLookupFailureParquet() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"detachTargetOnLobLookupFailureParquet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) DetachTargetOnLobLookupFailureParquetInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"detachTargetOnLobLookupFailureParquetInput",
 		&returns,
 	)
 	return returns
@@ -1776,6 +1800,17 @@ func (j *jsiiProxy_DmsS3Endpoint)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_DmsS3Endpoint)SetDetachTargetOnLobLookupFailureParquet(val interface{}) {
+	if err := j.validateSetDetachTargetOnLobLookupFailureParquetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"detachTargetOnLobLookupFailureParquet",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DmsS3Endpoint)SetDictPageSizeLimit(val *float64) {
 	if err := j.validateSetDictPageSizeLimitParameters(val); err != nil {
 		panic(err)
@@ -2541,6 +2576,14 @@ func (d *jsiiProxy_DmsS3Endpoint) ResetDatePartitionTimezone() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDatePartitionTimezone",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetDetachTargetOnLobLookupFailureParquet() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDetachTargetOnLobLookupFailureParquet",
 		nil, // no parameters
 	)
 }

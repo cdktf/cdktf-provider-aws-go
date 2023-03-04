@@ -15,6 +15,7 @@ type DataAwsLaunchTemplateInstanceRequirementsOutputReference interface {
 	AcceleratorNames() *[]*string
 	AcceleratorTotalMemoryMib() DataAwsLaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibList
 	AcceleratorTypes() *[]*string
+	AllowedInstanceTypes() *[]*string
 	BareMetal() *string
 	BaselineEbsBandwidthMbps() DataAwsLaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsList
 	BurstablePerformance() *string
@@ -44,6 +45,7 @@ type DataAwsLaunchTemplateInstanceRequirementsOutputReference interface {
 	LocalStorageTypes() *[]*string
 	MemoryGibPerVcpu() DataAwsLaunchTemplateInstanceRequirementsMemoryGibPerVcpuList
 	MemoryMib() DataAwsLaunchTemplateInstanceRequirementsMemoryMibList
+	NetworkBandwidthGbps() DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsList
 	NetworkInterfaceCount() DataAwsLaunchTemplateInstanceRequirementsNetworkInterfaceCountList
 	OnDemandMaxPricePercentageOverLowestPrice() *float64
 	RequireHibernateSupport() cdktf.IResolvable
@@ -142,6 +144,16 @@ func (j *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsOutputReference) Acc
 	_jsii_.Get(
 		j,
 		"acceleratorTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsOutputReference) AllowedInstanceTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedInstanceTypes",
 		&returns,
 	)
 	return returns
@@ -292,6 +304,16 @@ func (j *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsOutputReference) Mem
 	_jsii_.Get(
 		j,
 		"memoryMib",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsOutputReference) NetworkBandwidthGbps() DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsList {
+	var returns DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsList
+	_jsii_.Get(
+		j,
+		"networkBandwidthGbps",
 		&returns,
 	)
 	return returns

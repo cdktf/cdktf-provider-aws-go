@@ -35,6 +35,11 @@ type Ec2Fleet interface {
 	ExcessCapacityTerminationPolicy() *string
 	SetExcessCapacityTerminationPolicy(val *string)
 	ExcessCapacityTerminationPolicyInput() *string
+	FleetInstanceSet() Ec2FleetFleetInstanceSetList
+	FleetInstanceSetInput() interface{}
+	FleetState() *string
+	SetFleetState(val *string)
+	FleetStateInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -43,11 +48,17 @@ type Ec2Fleet interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	FulfilledCapacity() *float64
+	SetFulfilledCapacity(val *float64)
+	FulfilledCapacityInput() *float64
+	FulfilledOnDemandCapacity() *float64
+	SetFulfilledOnDemandCapacity(val *float64)
+	FulfilledOnDemandCapacityInput() *float64
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	LaunchTemplateConfig() Ec2FleetLaunchTemplateConfigOutputReference
-	LaunchTemplateConfigInput() *Ec2FleetLaunchTemplateConfig
+	LaunchTemplateConfig() Ec2FleetLaunchTemplateConfigList
+	LaunchTemplateConfigInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -96,6 +107,12 @@ type Ec2Fleet interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	ValidFrom() *string
+	SetValidFrom(val *string)
+	ValidFromInput() *string
+	ValidUntil() *string
+	SetValidUntil(val *string)
+	ValidUntilInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -121,13 +138,18 @@ type Ec2Fleet interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutLaunchTemplateConfig(value *Ec2FleetLaunchTemplateConfig)
+	PutFleetInstanceSet(value interface{})
+	PutLaunchTemplateConfig(value interface{})
 	PutOnDemandOptions(value *Ec2FleetOnDemandOptions)
 	PutSpotOptions(value *Ec2FleetSpotOptions)
 	PutTargetCapacitySpecification(value *Ec2FleetTargetCapacitySpecification)
 	PutTimeouts(value *Ec2FleetTimeouts)
 	ResetContext()
 	ResetExcessCapacityTerminationPolicy()
+	ResetFleetInstanceSet()
+	ResetFleetState()
+	ResetFulfilledCapacity()
+	ResetFulfilledOnDemandCapacity()
 	ResetId()
 	ResetOnDemandOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -141,6 +163,8 @@ type Ec2Fleet interface {
 	ResetTerminateInstancesWithExpiration()
 	ResetTimeouts()
 	ResetType()
+	ResetValidFrom()
+	ResetValidUntil()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -256,6 +280,46 @@ func (j *jsiiProxy_Ec2Fleet) ExcessCapacityTerminationPolicyInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2Fleet) FleetInstanceSet() Ec2FleetFleetInstanceSetList {
+	var returns Ec2FleetFleetInstanceSetList
+	_jsii_.Get(
+		j,
+		"fleetInstanceSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2Fleet) FleetInstanceSetInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fleetInstanceSetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2Fleet) FleetState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fleetState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2Fleet) FleetStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fleetStateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2Fleet) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -286,6 +350,46 @@ func (j *jsiiProxy_Ec2Fleet) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2Fleet) FulfilledCapacity() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"fulfilledCapacity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2Fleet) FulfilledCapacityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"fulfilledCapacityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2Fleet) FulfilledOnDemandCapacity() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"fulfilledOnDemandCapacity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2Fleet) FulfilledOnDemandCapacityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"fulfilledOnDemandCapacityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2Fleet) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -306,8 +410,8 @@ func (j *jsiiProxy_Ec2Fleet) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2Fleet) LaunchTemplateConfig() Ec2FleetLaunchTemplateConfigOutputReference {
-	var returns Ec2FleetLaunchTemplateConfigOutputReference
+func (j *jsiiProxy_Ec2Fleet) LaunchTemplateConfig() Ec2FleetLaunchTemplateConfigList {
+	var returns Ec2FleetLaunchTemplateConfigList
 	_jsii_.Get(
 		j,
 		"launchTemplateConfig",
@@ -316,8 +420,8 @@ func (j *jsiiProxy_Ec2Fleet) LaunchTemplateConfig() Ec2FleetLaunchTemplateConfig
 	return returns
 }
 
-func (j *jsiiProxy_Ec2Fleet) LaunchTemplateConfigInput() *Ec2FleetLaunchTemplateConfig {
-	var returns *Ec2FleetLaunchTemplateConfig
+func (j *jsiiProxy_Ec2Fleet) LaunchTemplateConfigInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"launchTemplateConfigInput",
@@ -606,6 +710,46 @@ func (j *jsiiProxy_Ec2Fleet) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2Fleet) ValidFrom() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"validFrom",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2Fleet) ValidFromInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"validFromInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2Fleet) ValidUntil() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"validUntil",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2Fleet) ValidUntilInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"validUntilInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/aws/r/ec2_fleet aws_ec2_fleet} Resource.
 func NewEc2Fleet(scope constructs.Construct, id *string, config *Ec2FleetConfig) Ec2Fleet {
@@ -685,10 +829,43 @@ func (j *jsiiProxy_Ec2Fleet)SetExcessCapacityTerminationPolicy(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Ec2Fleet)SetFleetState(val *string) {
+	if err := j.validateSetFleetStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fleetState",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Ec2Fleet)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2Fleet)SetFulfilledCapacity(val *float64) {
+	if err := j.validateSetFulfilledCapacityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fulfilledCapacity",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2Fleet)SetFulfilledOnDemandCapacity(val *float64) {
+	if err := j.validateSetFulfilledOnDemandCapacityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fulfilledOnDemandCapacity",
 		val,
 	)
 }
@@ -796,6 +973,28 @@ func (j *jsiiProxy_Ec2Fleet)SetType(val *string) {
 	_jsii_.Set(
 		j,
 		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2Fleet)SetValidFrom(val *string) {
+	if err := j.validateSetValidFromParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"validFrom",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2Fleet)SetValidUntil(val *string) {
+	if err := j.validateSetValidUntilParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"validUntil",
 		val,
 	)
 }
@@ -1066,7 +1265,18 @@ func (e *jsiiProxy_Ec2Fleet) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (e *jsiiProxy_Ec2Fleet) PutLaunchTemplateConfig(value *Ec2FleetLaunchTemplateConfig) {
+func (e *jsiiProxy_Ec2Fleet) PutFleetInstanceSet(value interface{}) {
+	if err := e.validatePutFleetInstanceSetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putFleetInstanceSet",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_Ec2Fleet) PutLaunchTemplateConfig(value interface{}) {
 	if err := e.validatePutLaunchTemplateConfigParameters(value); err != nil {
 		panic(err)
 	}
@@ -1133,6 +1343,38 @@ func (e *jsiiProxy_Ec2Fleet) ResetExcessCapacityTerminationPolicy() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetExcessCapacityTerminationPolicy",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2Fleet) ResetFleetInstanceSet() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetFleetInstanceSet",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2Fleet) ResetFleetState() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetFleetState",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2Fleet) ResetFulfilledCapacity() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetFulfilledCapacity",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2Fleet) ResetFulfilledOnDemandCapacity() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetFulfilledOnDemandCapacity",
 		nil, // no parameters
 	)
 }
@@ -1221,6 +1463,22 @@ func (e *jsiiProxy_Ec2Fleet) ResetType() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetType",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2Fleet) ResetValidFrom() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetValidFrom",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2Fleet) ResetValidUntil() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetValidUntil",
 		nil, // no parameters
 	)
 }

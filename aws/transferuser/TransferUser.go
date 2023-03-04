@@ -87,6 +87,8 @@ type TransferUser interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() TransferUserTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	UserName() *string
 	SetUserName(val *string)
 	UserNameInput() *string
@@ -117,6 +119,7 @@ type TransferUser interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutHomeDirectoryMappings(value interface{})
 	PutPosixProfile(value *TransferUserPosixProfile)
+	PutTimeouts(value *TransferUserTimeouts)
 	ResetHomeDirectory()
 	ResetHomeDirectoryMappings()
 	ResetHomeDirectoryType()
@@ -128,6 +131,7 @@ type TransferUser interface {
 	ResetPosixProfile()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -508,6 +512,26 @@ func (j *jsiiProxy_TransferUser) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransferUser) Timeouts() TransferUserTimeoutsOutputReference {
+	var returns TransferUserTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransferUser) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -1015,6 +1039,17 @@ func (t *jsiiProxy_TransferUser) PutPosixProfile(value *TransferUserPosixProfile
 	)
 }
 
+func (t *jsiiProxy_TransferUser) PutTimeouts(value *TransferUserTimeouts) {
+	if err := t.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TransferUser) ResetHomeDirectory() {
 	_jsii_.InvokeVoid(
 		t,
@@ -1083,6 +1118,14 @@ func (t *jsiiProxy_TransferUser) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransferUser) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

@@ -64,6 +64,10 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validatePu
 	return nil
 }
 
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validatePutNetworkBandwidthGbpsParameters(value *LaunchTemplateInstanceRequirementsNetworkBandwidthGbps) error {
+	return nil
+}
+
 func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validatePutNetworkInterfaceCountParameters(value *LaunchTemplateInstanceRequirementsNetworkInterfaceCount) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateSe
 }
 
 func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateSetAcceleratorTypesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateSetAllowedInstanceTypesParameters(val *[]*string) error {
 	return nil
 }
 

@@ -23,6 +23,9 @@ type AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequireme
 	AcceleratorTypes() *[]*string
 	SetAcceleratorTypes(val *[]*string)
 	AcceleratorTypesInput() *[]*string
+	AllowedInstanceTypes() *[]*string
+	SetAllowedInstanceTypes(val *[]*string)
+	AllowedInstanceTypesInput() *[]*string
 	BareMetal() *string
 	SetBareMetal(val *string)
 	BareMetalInput() *string
@@ -69,6 +72,8 @@ type AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequireme
 	MemoryGibPerVcpuInput() *AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpu
 	MemoryMib() AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMibOutputReference
 	MemoryMibInput() *AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMib
+	NetworkBandwidthGbps() AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference
+	NetworkBandwidthGbpsInput() *AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbps
 	NetworkInterfaceCount() AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCountOutputReference
 	NetworkInterfaceCountInput() *AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCount
 	OnDemandMaxPricePercentageOverLowestPrice() *float64
@@ -121,6 +126,7 @@ type AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequireme
 	PutBaselineEbsBandwidthMbps(value *AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsBaselineEbsBandwidthMbps)
 	PutMemoryGibPerVcpu(value *AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpu)
 	PutMemoryMib(value *AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMib)
+	PutNetworkBandwidthGbps(value *AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbps)
 	PutNetworkInterfaceCount(value *AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCount)
 	PutTotalLocalStorageGb(value *AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsTotalLocalStorageGb)
 	PutVcpuCount(value *AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsVcpuCount)
@@ -129,6 +135,7 @@ type AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequireme
 	ResetAcceleratorNames()
 	ResetAcceleratorTotalMemoryMib()
 	ResetAcceleratorTypes()
+	ResetAllowedInstanceTypes()
 	ResetBareMetal()
 	ResetBaselineEbsBandwidthMbps()
 	ResetBurstablePerformance()
@@ -139,6 +146,7 @@ type AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequireme
 	ResetLocalStorageTypes()
 	ResetMemoryGibPerVcpu()
 	ResetMemoryMib()
+	ResetNetworkBandwidthGbps()
 	ResetNetworkInterfaceCount()
 	ResetOnDemandMaxPricePercentageOverLowestPrice()
 	ResetRequireHibernateSupport()
@@ -255,6 +263,26 @@ func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideIns
 	_jsii_.Get(
 		j,
 		"acceleratorTypesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference) AllowedInstanceTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedInstanceTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference) AllowedInstanceTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedInstanceTypesInput",
 		&returns,
 	)
 	return returns
@@ -510,6 +538,26 @@ func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideIns
 	return returns
 }
 
+func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference) NetworkBandwidthGbps() AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference {
+	var returns AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference
+	_jsii_.Get(
+		j,
+		"networkBandwidthGbps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference) NetworkBandwidthGbpsInput() *AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbps {
+	var returns *AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbps
+	_jsii_.Get(
+		j,
+		"networkBandwidthGbpsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference) NetworkInterfaceCount() AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCountOutputReference {
 	var returns AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCountOutputReference
 	_jsii_.Get(
@@ -707,6 +755,17 @@ func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideIns
 	_jsii_.Set(
 		j,
 		"acceleratorTypes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference)SetAllowedInstanceTypes(val *[]*string) {
+	if err := j.validateSetAllowedInstanceTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedInstanceTypes",
 		val,
 	)
 }
@@ -1117,6 +1176,17 @@ func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideIns
 	)
 }
 
+func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference) PutNetworkBandwidthGbps(value *AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbps) {
+	if err := a.validatePutNetworkBandwidthGbpsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putNetworkBandwidthGbps",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference) PutNetworkInterfaceCount(value *AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkInterfaceCount) {
 	if err := a.validatePutNetworkInterfaceCountParameters(value); err != nil {
 		panic(err)
@@ -1186,6 +1256,14 @@ func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideIns
 	_jsii_.InvokeVoid(
 		a,
 		"resetAcceleratorTypes",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference) ResetAllowedInstanceTypes() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAllowedInstanceTypes",
 		nil, // no parameters
 	)
 }
@@ -1266,6 +1344,14 @@ func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideIns
 	_jsii_.InvokeVoid(
 		a,
 		"resetMemoryMib",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference) ResetNetworkBandwidthGbps() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetNetworkBandwidthGbps",
 		nil, // no parameters
 	)
 }

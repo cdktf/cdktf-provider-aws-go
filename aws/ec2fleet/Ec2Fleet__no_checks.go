@@ -52,7 +52,11 @@ func (e *jsiiProxy_Ec2Fleet) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
-func (e *jsiiProxy_Ec2Fleet) validatePutLaunchTemplateConfigParameters(value *Ec2FleetLaunchTemplateConfig) error {
+func (e *jsiiProxy_Ec2Fleet) validatePutFleetInstanceSetParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2Fleet) validatePutLaunchTemplateConfigParameters(value interface{}) error {
 	return nil
 }
 
@@ -96,6 +100,18 @@ func (j *jsiiProxy_Ec2Fleet) validateSetExcessCapacityTerminationPolicyParameter
 	return nil
 }
 
+func (j *jsiiProxy_Ec2Fleet) validateSetFleetStateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Ec2Fleet) validateSetFulfilledCapacityParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_Ec2Fleet) validateSetFulfilledOnDemandCapacityParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2Fleet) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -129,6 +145,14 @@ func (j *jsiiProxy_Ec2Fleet) validateSetTerminateInstancesWithExpirationParamete
 }
 
 func (j *jsiiProxy_Ec2Fleet) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Ec2Fleet) validateSetValidFromParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Ec2Fleet) validateSetValidUntilParameters(val *string) error {
 	return nil
 }
 

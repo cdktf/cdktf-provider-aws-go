@@ -28,6 +28,9 @@ type LambdaFunctionTimeoutsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Delete() *string
+	SetDelete(val *string)
+	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -68,6 +71,7 @@ type LambdaFunctionTimeoutsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
+	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -129,6 +133,26 @@ func (j *jsiiProxy_LambdaFunctionTimeoutsOutputReference) CreationStack() *[]*st
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunctionTimeoutsOutputReference) Delete() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"delete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunctionTimeoutsOutputReference) DeleteInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteInput",
 		&returns,
 	)
 	return returns
@@ -251,6 +275,17 @@ func (j *jsiiProxy_LambdaFunctionTimeoutsOutputReference)SetCreate(val *string) 
 	_jsii_.Set(
 		j,
 		"create",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaFunctionTimeoutsOutputReference)SetDelete(val *string) {
+	if err := j.validateSetDeleteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"delete",
 		val,
 	)
 }
@@ -489,6 +524,14 @@ func (l *jsiiProxy_LambdaFunctionTimeoutsOutputReference) ResetCreate() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetCreate",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaFunctionTimeoutsOutputReference) ResetDelete() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDelete",
 		nil, // no parameters
 	)
 }

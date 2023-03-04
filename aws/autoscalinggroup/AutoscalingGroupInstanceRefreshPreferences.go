@@ -2,6 +2,8 @@ package autoscalinggroup
 
 
 type AutoscalingGroupInstanceRefreshPreferences struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#auto_rollback AutoscalingGroup#auto_rollback}.
+	AutoRollback interface{} `field:"optional" json:"autoRollback" yaml:"autoRollback"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#checkpoint_delay AutoscalingGroup#checkpoint_delay}.
 	CheckpointDelay *string `field:"optional" json:"checkpointDelay" yaml:"checkpointDelay"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group#checkpoint_percentages AutoscalingGroup#checkpoint_percentages}.

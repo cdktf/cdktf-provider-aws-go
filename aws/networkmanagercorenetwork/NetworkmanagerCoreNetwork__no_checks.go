@@ -72,6 +72,10 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) validateSetBasePolicyRegionParamet
 	return nil
 }
 
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) validateSetBasePolicyRegionsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerCoreNetwork) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

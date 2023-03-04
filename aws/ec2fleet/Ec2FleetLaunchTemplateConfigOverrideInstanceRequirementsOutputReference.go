@@ -23,6 +23,9 @@ type Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference int
 	AcceleratorTypes() *[]*string
 	SetAcceleratorTypes(val *[]*string)
 	AcceleratorTypesInput() *[]*string
+	AllowedInstanceTypes() *[]*string
+	SetAllowedInstanceTypes(val *[]*string)
+	AllowedInstanceTypesInput() *[]*string
 	BareMetal() *string
 	SetBareMetal(val *string)
 	BareMetalInput() *string
@@ -69,6 +72,8 @@ type Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference int
 	MemoryGibPerVcpuInput() *Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryGibPerVcpu
 	MemoryMib() Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMibOutputReference
 	MemoryMibInput() *Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMib
+	NetworkBandwidthGbps() Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference
+	NetworkBandwidthGbpsInput() *Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps
 	NetworkInterfaceCount() Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCountOutputReference
 	NetworkInterfaceCountInput() *Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCount
 	OnDemandMaxPricePercentageOverLowestPrice() *float64
@@ -121,6 +126,7 @@ type Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference int
 	PutBaselineEbsBandwidthMbps(value *Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsBaselineEbsBandwidthMbps)
 	PutMemoryGibPerVcpu(value *Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryGibPerVcpu)
 	PutMemoryMib(value *Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsMemoryMib)
+	PutNetworkBandwidthGbps(value *Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps)
 	PutNetworkInterfaceCount(value *Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCount)
 	PutTotalLocalStorageGb(value *Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsTotalLocalStorageGb)
 	PutVcpuCount(value *Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsVcpuCount)
@@ -129,6 +135,7 @@ type Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference int
 	ResetAcceleratorNames()
 	ResetAcceleratorTotalMemoryMib()
 	ResetAcceleratorTypes()
+	ResetAllowedInstanceTypes()
 	ResetBareMetal()
 	ResetBaselineEbsBandwidthMbps()
 	ResetBurstablePerformance()
@@ -138,6 +145,7 @@ type Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference int
 	ResetLocalStorage()
 	ResetLocalStorageTypes()
 	ResetMemoryGibPerVcpu()
+	ResetNetworkBandwidthGbps()
 	ResetNetworkInterfaceCount()
 	ResetOnDemandMaxPricePercentageOverLowestPrice()
 	ResetRequireHibernateSupport()
@@ -253,6 +261,26 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	_jsii_.Get(
 		j,
 		"acceleratorTypesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) AllowedInstanceTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedInstanceTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) AllowedInstanceTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"allowedInstanceTypesInput",
 		&returns,
 	)
 	return returns
@@ -508,6 +536,26 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	return returns
 }
 
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) NetworkBandwidthGbps() Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference {
+	var returns Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbpsOutputReference
+	_jsii_.Get(
+		j,
+		"networkBandwidthGbps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) NetworkBandwidthGbpsInput() *Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps {
+	var returns *Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps
+	_jsii_.Get(
+		j,
+		"networkBandwidthGbpsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) NetworkInterfaceCount() Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCountOutputReference {
 	var returns Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCountOutputReference
 	_jsii_.Get(
@@ -705,6 +753,17 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	_jsii_.Set(
 		j,
 		"acceleratorTypes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference)SetAllowedInstanceTypes(val *[]*string) {
+	if err := j.validateSetAllowedInstanceTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowedInstanceTypes",
 		val,
 	)
 }
@@ -1115,6 +1174,17 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	)
 }
 
+func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) PutNetworkBandwidthGbps(value *Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkBandwidthGbps) {
+	if err := e.validatePutNetworkBandwidthGbpsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putNetworkBandwidthGbps",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) PutNetworkInterfaceCount(value *Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsNetworkInterfaceCount) {
 	if err := e.validatePutNetworkInterfaceCountParameters(value); err != nil {
 		panic(err)
@@ -1188,6 +1258,14 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	)
 }
 
+func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) ResetAllowedInstanceTypes() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetAllowedInstanceTypes",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) ResetBareMetal() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1256,6 +1334,14 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	_jsii_.InvokeVoid(
 		e,
 		"resetMemoryGibPerVcpu",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) ResetNetworkBandwidthGbps() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetNetworkBandwidthGbps",
 		nil, // no parameters
 	)
 }

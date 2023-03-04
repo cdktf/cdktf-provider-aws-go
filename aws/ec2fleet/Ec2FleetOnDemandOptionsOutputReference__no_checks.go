@@ -64,6 +64,22 @@ func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) validateSetInternalVa
 	return nil
 }
 
+func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) validateSetMaxTotalPriceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) validateSetMinTargetCapacityParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) validateSetSingleAvailabilityZoneParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) validateSetSingleInstanceTypeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

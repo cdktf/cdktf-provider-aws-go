@@ -60,6 +60,10 @@ func (t *jsiiProxy_TransferUser) validatePutPosixProfileParameters(value *Transf
 	return nil
 }
 
+func (t *jsiiProxy_TransferUser) validatePutTimeoutsParameters(value *TransferUserTimeouts) error {
+	return nil
+}
+
 func validateTransferUser_IsConstructParameters(x interface{}) error {
 	return nil
 }

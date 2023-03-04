@@ -27,8 +27,8 @@ type Ec2FleetLaunchTemplateConfigOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *Ec2FleetLaunchTemplateConfig
-	SetInternalValue(val *Ec2FleetLaunchTemplateConfig)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	LaunchTemplateSpecification() Ec2FleetLaunchTemplateConfigLaunchTemplateSpecificationOutputReference
 	LaunchTemplateSpecificationInput() *Ec2FleetLaunchTemplateConfigLaunchTemplateSpecification
 	Override() Ec2FleetLaunchTemplateConfigOverrideList
@@ -67,6 +67,7 @@ type Ec2FleetLaunchTemplateConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutLaunchTemplateSpecification(value *Ec2FleetLaunchTemplateConfigLaunchTemplateSpecification)
 	PutOverride(value interface{})
+	ResetLaunchTemplateSpecification()
 	ResetOverride()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -123,8 +124,8 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference) InternalValue() *Ec2FleetLaunchTemplateConfig {
-	var returns *Ec2FleetLaunchTemplateConfig
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -194,29 +195,29 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference) TerraformResourc
 }
 
 
-func NewEc2FleetLaunchTemplateConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Ec2FleetLaunchTemplateConfigOutputReference {
+func NewEc2FleetLaunchTemplateConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) Ec2FleetLaunchTemplateConfigOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewEc2FleetLaunchTemplateConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewEc2FleetLaunchTemplateConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewEc2FleetLaunchTemplateConfigOutputReference_Override(e Ec2FleetLaunchTemplateConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEc2FleetLaunchTemplateConfigOutputReference_Override(e Ec2FleetLaunchTemplateConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.ec2Fleet.Ec2FleetLaunchTemplateConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
 }
@@ -243,7 +244,7 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference)SetComplexObjectI
 	)
 }
 
-func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference)SetInternalValue(val *Ec2FleetLaunchTemplateConfig) {
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,6 +482,14 @@ func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference) PutOverride(valu
 		e,
 		"putOverride",
 		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_Ec2FleetLaunchTemplateConfigOutputReference) ResetLaunchTemplateSpecification() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetLaunchTemplateSpecification",
+		nil, // no parameters
 	)
 }
 
