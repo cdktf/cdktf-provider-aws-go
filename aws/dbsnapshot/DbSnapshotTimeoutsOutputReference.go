@@ -20,6 +20,9 @@ type DbSnapshotTimeoutsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Create() *string
+	SetCreate(val *string)
+	CreateInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -29,9 +32,6 @@ type DbSnapshotTimeoutsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Read() *string
-	SetRead(val *string)
-	ReadInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,7 +64,7 @@ type DbSnapshotTimeoutsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetRead()
+	ResetCreate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -100,6 +100,26 @@ func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference) ComplexObjectIsFromSet() *
 	return returns
 }
 
+func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference) Create() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"create",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference) CreateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -125,26 +145,6 @@ func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference) InternalValue() interface{
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference) Read() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"read",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference) ReadInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"readInput",
 		&returns,
 	)
 	return returns
@@ -220,6 +220,17 @@ func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference)SetComplexObjectIsFromSet(v
 	)
 }
 
+func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference)SetCreate(val *string) {
+	if err := j.validateSetCreateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"create",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -227,17 +238,6 @@ func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference)SetInternalValue(val interf
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference)SetRead(val *string) {
-	if err := j.validateSetReadParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"read",
 		val,
 	)
 }
@@ -450,10 +450,10 @@ func (d *jsiiProxy_DbSnapshotTimeoutsOutputReference) InterpolationForAttribute(
 	return returns
 }
 
-func (d *jsiiProxy_DbSnapshotTimeoutsOutputReference) ResetRead() {
+func (d *jsiiProxy_DbSnapshotTimeoutsOutputReference) ResetCreate() {
 	_jsii_.InvokeVoid(
 		d,
-		"resetRead",
+		"resetCreate",
 		nil, // no parameters
 	)
 }

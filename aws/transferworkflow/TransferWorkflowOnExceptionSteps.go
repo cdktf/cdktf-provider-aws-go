@@ -12,6 +12,10 @@ type TransferWorkflowOnExceptionSteps struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#custom_step_details TransferWorkflow#custom_step_details}
 	CustomStepDetails *TransferWorkflowOnExceptionStepsCustomStepDetails `field:"optional" json:"customStepDetails" yaml:"customStepDetails"`
+	// decrypt_step_details block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#decrypt_step_details TransferWorkflow#decrypt_step_details}
+	DecryptStepDetails *TransferWorkflowOnExceptionStepsDecryptStepDetails `field:"optional" json:"decryptStepDetails" yaml:"decryptStepDetails"`
 	// delete_step_details block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow#delete_step_details TransferWorkflow#delete_step_details}

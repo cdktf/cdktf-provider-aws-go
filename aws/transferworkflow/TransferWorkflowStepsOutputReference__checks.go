@@ -112,6 +112,17 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) validatePutCustomStepDe
 	return nil
 }
 
+func (t *jsiiProxy_TransferWorkflowStepsOutputReference) validatePutDecryptStepDetailsParameters(value *TransferWorkflowStepsDecryptStepDetails) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (t *jsiiProxy_TransferWorkflowStepsOutputReference) validatePutDeleteStepDetailsParameters(value *TransferWorkflowStepsDeleteStepDetails) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

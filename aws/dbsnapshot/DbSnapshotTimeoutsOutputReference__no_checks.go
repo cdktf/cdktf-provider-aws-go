@@ -56,11 +56,11 @@ func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference) validateSetComplexObjectIs
 	return nil
 }
 
-func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference) validateSetCreateParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference) validateSetReadParameters(val *string) error {
+func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 

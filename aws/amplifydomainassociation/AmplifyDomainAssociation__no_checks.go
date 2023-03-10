@@ -80,6 +80,10 @@ func (j *jsiiProxy_AmplifyDomainAssociation) validateSetDomainNameParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_AmplifyDomainAssociation) validateSetEnableAutoSubDomainParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AmplifyDomainAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

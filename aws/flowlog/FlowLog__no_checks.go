@@ -72,6 +72,10 @@ func (j *jsiiProxy_FlowLog) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_FlowLog) validateSetDeliverCrossAccountRoleParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FlowLog) validateSetEniIdParameters(val *string) error {
 	return nil
 }

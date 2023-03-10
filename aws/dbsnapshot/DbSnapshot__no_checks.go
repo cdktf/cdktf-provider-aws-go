@@ -92,6 +92,10 @@ func (j *jsiiProxy_DbSnapshot) validateSetProvisionersParameters(val *[]interfac
 	return nil
 }
 
+func (j *jsiiProxy_DbSnapshot) validateSetSharedAccountsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbSnapshot) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

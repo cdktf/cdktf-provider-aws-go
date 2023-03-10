@@ -122,6 +122,17 @@ func (t *jsiiProxy_TransferServer) validatePutEndpointDetailsParameters(value *T
 	return nil
 }
 
+func (t *jsiiProxy_TransferServer) validatePutProtocolDetailsParameters(value *TransferServerProtocolDetails) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (t *jsiiProxy_TransferServer) validatePutWorkflowDetailsParameters(value *TransferServerWorkflowDetails) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

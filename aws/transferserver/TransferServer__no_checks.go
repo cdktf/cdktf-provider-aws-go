@@ -56,6 +56,10 @@ func (t *jsiiProxy_TransferServer) validatePutEndpointDetailsParameters(value *T
 	return nil
 }
 
+func (t *jsiiProxy_TransferServer) validatePutProtocolDetailsParameters(value *TransferServerProtocolDetails) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransferServer) validatePutWorkflowDetailsParameters(value *TransferServerWorkflowDetails) error {
 	return nil
 }

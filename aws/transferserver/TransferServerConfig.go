@@ -52,6 +52,10 @@ type TransferServerConfig struct {
 	PostAuthenticationLoginBanner *string `field:"optional" json:"postAuthenticationLoginBanner" yaml:"postAuthenticationLoginBanner"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#pre_authentication_login_banner TransferServer#pre_authentication_login_banner}.
 	PreAuthenticationLoginBanner *string `field:"optional" json:"preAuthenticationLoginBanner" yaml:"preAuthenticationLoginBanner"`
+	// protocol_details block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#protocol_details TransferServer#protocol_details}
+	ProtocolDetails *TransferServerProtocolDetails `field:"optional" json:"protocolDetails" yaml:"protocolDetails"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#protocols TransferServer#protocols}.
 	Protocols *[]*string `field:"optional" json:"protocols" yaml:"protocols"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/transfer_server#security_policy_name TransferServer#security_policy_name}.

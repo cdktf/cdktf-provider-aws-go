@@ -52,6 +52,10 @@ func (t *jsiiProxy_TransferWorkflowOnExceptionStepsOutputReference) validatePutC
 	return nil
 }
 
+func (t *jsiiProxy_TransferWorkflowOnExceptionStepsOutputReference) validatePutDecryptStepDetailsParameters(value *TransferWorkflowOnExceptionStepsDecryptStepDetails) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransferWorkflowOnExceptionStepsOutputReference) validatePutDeleteStepDetailsParameters(value *TransferWorkflowOnExceptionStepsDeleteStepDetails) error {
 	return nil
 }

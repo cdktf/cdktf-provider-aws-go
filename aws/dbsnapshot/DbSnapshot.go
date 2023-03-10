@@ -72,6 +72,9 @@ type DbSnapshot interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SharedAccounts() *[]*string
+	SetSharedAccounts(val *[]*string)
+	SharedAccountsInput() *[]*string
 	SnapshotType() *string
 	SourceDbSnapshotIdentifier() *string
 	SourceRegion() *string
@@ -122,6 +125,7 @@ type DbSnapshot interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSharedAccounts()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -440,6 +444,26 @@ func (j *jsiiProxy_DbSnapshot) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DbSnapshot) SharedAccounts() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sharedAccounts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbSnapshot) SharedAccountsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sharedAccountsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DbSnapshot) SnapshotType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -714,6 +738,17 @@ func (j *jsiiProxy_DbSnapshot)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DbSnapshot)SetSharedAccounts(val *[]*string) {
+	if err := j.validateSetSharedAccountsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sharedAccounts",
 		val,
 	)
 }
@@ -1029,6 +1064,14 @@ func (d *jsiiProxy_DbSnapshot) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbSnapshot) ResetSharedAccounts() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSharedAccounts",
 		nil, // no parameters
 	)
 }

@@ -36,6 +36,9 @@ type AmplifyDomainAssociation interface {
 	DomainName() *string
 	SetDomainName(val *string)
 	DomainNameInput() *string
+	EnableAutoSubDomain() interface{}
+	SetEnableAutoSubDomain(val interface{})
+	EnableAutoSubDomainInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -100,6 +103,7 @@ type AmplifyDomainAssociation interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutSubDomain(value interface{})
+	ResetEnableAutoSubDomain()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -225,6 +229,26 @@ func (j *jsiiProxy_AmplifyDomainAssociation) DomainNameInput() *string {
 	_jsii_.Get(
 		j,
 		"domainNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AmplifyDomainAssociation) EnableAutoSubDomain() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAutoSubDomain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AmplifyDomainAssociation) EnableAutoSubDomainInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAutoSubDomainInput",
 		&returns,
 	)
 	return returns
@@ -475,6 +499,17 @@ func (j *jsiiProxy_AmplifyDomainAssociation)SetDomainName(val *string) {
 	_jsii_.Set(
 		j,
 		"domainName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AmplifyDomainAssociation)SetEnableAutoSubDomain(val interface{}) {
+	if err := j.validateSetEnableAutoSubDomainParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableAutoSubDomain",
 		val,
 	)
 }
@@ -813,6 +848,14 @@ func (a *jsiiProxy_AmplifyDomainAssociation) PutSubDomain(value interface{}) {
 		a,
 		"putSubDomain",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AmplifyDomainAssociation) ResetEnableAutoSubDomain() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEnableAutoSubDomain",
+		nil, // no parameters
 	)
 }
 

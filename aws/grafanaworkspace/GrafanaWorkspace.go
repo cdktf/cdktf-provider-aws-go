@@ -64,6 +64,8 @@ type GrafanaWorkspace interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NetworkAccessControl() GrafanaWorkspaceNetworkAccessControlOutputReference
+	NetworkAccessControlInput() *GrafanaWorkspaceNetworkAccessControl
 	// The tree node.
 	Node() constructs.Node
 	NotificationDestinations() *[]*string
@@ -136,6 +138,7 @@ type GrafanaWorkspace interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutNetworkAccessControl(value *GrafanaWorkspaceNetworkAccessControl)
 	PutTimeouts(value *GrafanaWorkspaceTimeouts)
 	PutVpcConfiguration(value *GrafanaWorkspaceVpcConfiguration)
 	ResetConfiguration()
@@ -143,6 +146,7 @@ type GrafanaWorkspace interface {
 	ResetDescription()
 	ResetId()
 	ResetName()
+	ResetNetworkAccessControl()
 	ResetNotificationDestinations()
 	ResetOrganizationalUnits()
 	ResetOrganizationRoleName()
@@ -425,6 +429,26 @@ func (j *jsiiProxy_GrafanaWorkspace) NameInput() *string {
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GrafanaWorkspace) NetworkAccessControl() GrafanaWorkspaceNetworkAccessControlOutputReference {
+	var returns GrafanaWorkspaceNetworkAccessControlOutputReference
+	_jsii_.Get(
+		j,
+		"networkAccessControl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GrafanaWorkspace) NetworkAccessControlInput() *GrafanaWorkspaceNetworkAccessControl {
+	var returns *GrafanaWorkspaceNetworkAccessControl
+	_jsii_.Get(
+		j,
+		"networkAccessControlInput",
 		&returns,
 	)
 	return returns
@@ -1236,6 +1260,17 @@ func (g *jsiiProxy_GrafanaWorkspace) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (g *jsiiProxy_GrafanaWorkspace) PutNetworkAccessControl(value *GrafanaWorkspaceNetworkAccessControl) {
+	if err := g.validatePutNetworkAccessControlParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNetworkAccessControl",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GrafanaWorkspace) PutTimeouts(value *GrafanaWorkspaceTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1294,6 +1329,14 @@ func (g *jsiiProxy_GrafanaWorkspace) ResetName() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GrafanaWorkspace) ResetNetworkAccessControl() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkAccessControl",
 		nil, // no parameters
 	)
 }

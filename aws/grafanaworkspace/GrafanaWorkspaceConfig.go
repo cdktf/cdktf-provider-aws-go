@@ -38,6 +38,10 @@ type GrafanaWorkspaceConfig struct {
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#name GrafanaWorkspace#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
+	// network_access_control block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#network_access_control GrafanaWorkspace#network_access_control}
+	NetworkAccessControl *GrafanaWorkspaceNetworkAccessControl `field:"optional" json:"networkAccessControl" yaml:"networkAccessControl"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#notification_destinations GrafanaWorkspace#notification_destinations}.
 	NotificationDestinations *[]*string `field:"optional" json:"notificationDestinations" yaml:"notificationDestinations"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace#organizational_units GrafanaWorkspace#organizational_units}.

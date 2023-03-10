@@ -50,5 +50,9 @@ type Sesv2ConfigurationSetConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sesv2_configuration_set#tracking_options Sesv2ConfigurationSet#tracking_options}
 	TrackingOptions *Sesv2ConfigurationSetTrackingOptions `field:"optional" json:"trackingOptions" yaml:"trackingOptions"`
+	// vdm_options block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sesv2_configuration_set#vdm_options Sesv2ConfigurationSet#vdm_options}
+	VdmOptions *Sesv2ConfigurationSetVdmOptions `field:"optional" json:"vdmOptions" yaml:"vdmOptions"`
 }
 

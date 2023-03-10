@@ -72,6 +72,10 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) validatePutTrackingOptionsParameters(v
 	return nil
 }
 
+func (s *jsiiProxy_Sesv2ConfigurationSet) validatePutVdmOptionsParameters(value *Sesv2ConfigurationSetVdmOptions) error {
+	return nil
+}
+
 func validateSesv2ConfigurationSet_IsConstructParameters(x interface{}) error {
 	return nil
 }

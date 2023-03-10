@@ -81,6 +81,8 @@ type Sesv2ConfigurationSet interface {
 	TerraformResourceType() *string
 	TrackingOptions() Sesv2ConfigurationSetTrackingOptionsOutputReference
 	TrackingOptionsInput() *Sesv2ConfigurationSetTrackingOptions
+	VdmOptions() Sesv2ConfigurationSetVdmOptionsOutputReference
+	VdmOptionsInput() *Sesv2ConfigurationSetVdmOptions
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -111,6 +113,7 @@ type Sesv2ConfigurationSet interface {
 	PutSendingOptions(value *Sesv2ConfigurationSetSendingOptions)
 	PutSuppressionOptions(value *Sesv2ConfigurationSetSuppressionOptions)
 	PutTrackingOptions(value *Sesv2ConfigurationSetTrackingOptions)
+	PutVdmOptions(value *Sesv2ConfigurationSetVdmOptions)
 	ResetDeliveryOptions()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -122,6 +125,7 @@ type Sesv2ConfigurationSet interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTrackingOptions()
+	ResetVdmOptions()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -482,6 +486,26 @@ func (j *jsiiProxy_Sesv2ConfigurationSet) TrackingOptionsInput() *Sesv2Configura
 	_jsii_.Get(
 		j,
 		"trackingOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Sesv2ConfigurationSet) VdmOptions() Sesv2ConfigurationSetVdmOptionsOutputReference {
+	var returns Sesv2ConfigurationSetVdmOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"vdmOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Sesv2ConfigurationSet) VdmOptionsInput() *Sesv2ConfigurationSetVdmOptions {
+	var returns *Sesv2ConfigurationSetVdmOptions
+	_jsii_.Get(
+		j,
+		"vdmOptionsInput",
 		&returns,
 	)
 	return returns
@@ -947,6 +971,17 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) PutTrackingOptions(value *Sesv2Configu
 	)
 }
 
+func (s *jsiiProxy_Sesv2ConfigurationSet) PutVdmOptions(value *Sesv2ConfigurationSetVdmOptions) {
+	if err := s.validatePutVdmOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putVdmOptions",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_Sesv2ConfigurationSet) ResetDeliveryOptions() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1015,6 +1050,14 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) ResetTrackingOptions() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTrackingOptions",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Sesv2ConfigurationSet) ResetVdmOptions() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetVdmOptions",
 		nil, // no parameters
 	)
 }

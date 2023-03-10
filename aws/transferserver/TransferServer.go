@@ -86,6 +86,8 @@ type TransferServer interface {
 	PreAuthenticationLoginBanner() *string
 	SetPreAuthenticationLoginBanner(val *string)
 	PreAuthenticationLoginBannerInput() *string
+	ProtocolDetails() TransferServerProtocolDetailsOutputReference
+	ProtocolDetailsInput() *TransferServerProtocolDetails
 	Protocols() *[]*string
 	SetProtocols(val *[]*string)
 	ProtocolsInput() *[]*string
@@ -145,6 +147,7 @@ type TransferServer interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEndpointDetails(value *TransferServerEndpointDetails)
+	PutProtocolDetails(value *TransferServerProtocolDetails)
 	PutWorkflowDetails(value *TransferServerWorkflowDetails)
 	ResetCertificate()
 	ResetDirectoryId()
@@ -163,6 +166,7 @@ type TransferServer interface {
 	ResetOverrideLogicalId()
 	ResetPostAuthenticationLoginBanner()
 	ResetPreAuthenticationLoginBanner()
+	ResetProtocolDetails()
 	ResetProtocols()
 	ResetSecurityPolicyName()
 	ResetTags()
@@ -589,6 +593,26 @@ func (j *jsiiProxy_TransferServer) PreAuthenticationLoginBannerInput() *string {
 	_jsii_.Get(
 		j,
 		"preAuthenticationLoginBannerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransferServer) ProtocolDetails() TransferServerProtocolDetailsOutputReference {
+	var returns TransferServerProtocolDetailsOutputReference
+	_jsii_.Get(
+		j,
+		"protocolDetails",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransferServer) ProtocolDetailsInput() *TransferServerProtocolDetails {
+	var returns *TransferServerProtocolDetails
+	_jsii_.Get(
+		j,
+		"protocolDetailsInput",
 		&returns,
 	)
 	return returns
@@ -1344,6 +1368,17 @@ func (t *jsiiProxy_TransferServer) PutEndpointDetails(value *TransferServerEndpo
 	)
 }
 
+func (t *jsiiProxy_TransferServer) PutProtocolDetails(value *TransferServerProtocolDetails) {
+	if err := t.validatePutProtocolDetailsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putProtocolDetails",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TransferServer) PutWorkflowDetails(value *TransferServerWorkflowDetails) {
 	if err := t.validatePutWorkflowDetailsParameters(value); err != nil {
 		panic(err)
@@ -1471,6 +1506,14 @@ func (t *jsiiProxy_TransferServer) ResetPreAuthenticationLoginBanner() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetPreAuthenticationLoginBanner",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransferServer) ResetProtocolDetails() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetProtocolDetails",
 		nil, // no parameters
 	)
 }

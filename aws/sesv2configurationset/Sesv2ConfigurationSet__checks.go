@@ -166,6 +166,17 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) validatePutTrackingOptionsParameters(v
 	return nil
 }
 
+func (s *jsiiProxy_Sesv2ConfigurationSet) validatePutVdmOptionsParameters(value *Sesv2ConfigurationSetVdmOptions) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateSesv2ConfigurationSet_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")

@@ -52,6 +52,10 @@ func (t *jsiiProxy_TransferWorkflowStepsOutputReference) validatePutCustomStepDe
 	return nil
 }
 
+func (t *jsiiProxy_TransferWorkflowStepsOutputReference) validatePutDecryptStepDetailsParameters(value *TransferWorkflowStepsDecryptStepDetails) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransferWorkflowStepsOutputReference) validatePutDeleteStepDetailsParameters(value *TransferWorkflowStepsDeleteStepDetails) error {
 	return nil
 }

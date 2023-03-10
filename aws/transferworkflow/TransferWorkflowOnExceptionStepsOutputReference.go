@@ -29,6 +29,8 @@ type TransferWorkflowOnExceptionStepsOutputReference interface {
 	CreationStack() *[]*string
 	CustomStepDetails() TransferWorkflowOnExceptionStepsCustomStepDetailsOutputReference
 	CustomStepDetailsInput() *TransferWorkflowOnExceptionStepsCustomStepDetails
+	DecryptStepDetails() TransferWorkflowOnExceptionStepsDecryptStepDetailsOutputReference
+	DecryptStepDetailsInput() *TransferWorkflowOnExceptionStepsDecryptStepDetails
 	DeleteStepDetails() TransferWorkflowOnExceptionStepsDeleteStepDetailsOutputReference
 	DeleteStepDetailsInput() *TransferWorkflowOnExceptionStepsDeleteStepDetails
 	// Experimental.
@@ -74,10 +76,12 @@ type TransferWorkflowOnExceptionStepsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCopyStepDetails(value *TransferWorkflowOnExceptionStepsCopyStepDetails)
 	PutCustomStepDetails(value *TransferWorkflowOnExceptionStepsCustomStepDetails)
+	PutDecryptStepDetails(value *TransferWorkflowOnExceptionStepsDecryptStepDetails)
 	PutDeleteStepDetails(value *TransferWorkflowOnExceptionStepsDeleteStepDetails)
 	PutTagStepDetails(value *TransferWorkflowOnExceptionStepsTagStepDetails)
 	ResetCopyStepDetails()
 	ResetCustomStepDetails()
+	ResetDecryptStepDetails()
 	ResetDeleteStepDetails()
 	ResetTagStepDetails()
 	// Produce the Token's value at resolution time.
@@ -160,6 +164,26 @@ func (j *jsiiProxy_TransferWorkflowOnExceptionStepsOutputReference) CustomStepDe
 	_jsii_.Get(
 		j,
 		"customStepDetailsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransferWorkflowOnExceptionStepsOutputReference) DecryptStepDetails() TransferWorkflowOnExceptionStepsDecryptStepDetailsOutputReference {
+	var returns TransferWorkflowOnExceptionStepsDecryptStepDetailsOutputReference
+	_jsii_.Get(
+		j,
+		"decryptStepDetails",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransferWorkflowOnExceptionStepsOutputReference) DecryptStepDetailsInput() *TransferWorkflowOnExceptionStepsDecryptStepDetails {
+	var returns *TransferWorkflowOnExceptionStepsDecryptStepDetails
+	_jsii_.Get(
+		j,
+		"decryptStepDetailsInput",
 		&returns,
 	)
 	return returns
@@ -567,6 +591,17 @@ func (t *jsiiProxy_TransferWorkflowOnExceptionStepsOutputReference) PutCustomSte
 	)
 }
 
+func (t *jsiiProxy_TransferWorkflowOnExceptionStepsOutputReference) PutDecryptStepDetails(value *TransferWorkflowOnExceptionStepsDecryptStepDetails) {
+	if err := t.validatePutDecryptStepDetailsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putDecryptStepDetails",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TransferWorkflowOnExceptionStepsOutputReference) PutDeleteStepDetails(value *TransferWorkflowOnExceptionStepsDeleteStepDetails) {
 	if err := t.validatePutDeleteStepDetailsParameters(value); err != nil {
 		panic(err)
@@ -601,6 +636,14 @@ func (t *jsiiProxy_TransferWorkflowOnExceptionStepsOutputReference) ResetCustomS
 	_jsii_.InvokeVoid(
 		t,
 		"resetCustomStepDetails",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransferWorkflowOnExceptionStepsOutputReference) ResetDecryptStepDetails() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetDecryptStepDetails",
 		nil, // no parameters
 	)
 }

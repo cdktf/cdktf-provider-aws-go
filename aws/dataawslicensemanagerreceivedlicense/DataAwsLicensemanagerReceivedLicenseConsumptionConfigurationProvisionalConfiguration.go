@@ -1,0 +1,6 @@
+package dataawslicensemanagerreceivedlicense
+
+
+type DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationProvisionalConfiguration struct {
+}
+

@@ -138,6 +138,7 @@ type DbInstance interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ListenerEndpoint() DbInstanceListenerEndpointList
 	MaintenanceWindow() *string
 	SetMaintenanceWindow(val *string)
 	MaintenanceWindowInput() *string
@@ -1126,6 +1127,16 @@ func (j *jsiiProxy_DbInstance) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) ListenerEndpoint() DbInstanceListenerEndpointList {
+	var returns DbInstanceListenerEndpointList
+	_jsii_.Get(
+		j,
+		"listenerEndpoint",
 		&returns,
 	)
 	return returns

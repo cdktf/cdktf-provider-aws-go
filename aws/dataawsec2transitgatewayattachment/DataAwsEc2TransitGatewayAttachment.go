@@ -13,6 +13,8 @@ import (
 type DataAwsEc2TransitGatewayAttachment interface {
 	cdktf.TerraformDataSource
 	Arn() *string
+	AssociationState() *string
+	AssociationTransitGatewayRouteTableId() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -121,6 +123,26 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayAttachment) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2TransitGatewayAttachment) AssociationState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"associationState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEc2TransitGatewayAttachment) AssociationTransitGatewayRouteTableId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"associationTransitGatewayRouteTableId",
 		&returns,
 	)
 	return returns

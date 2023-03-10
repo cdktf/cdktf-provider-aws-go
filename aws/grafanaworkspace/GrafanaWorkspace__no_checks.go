@@ -52,6 +52,10 @@ func (g *jsiiProxy_GrafanaWorkspace) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (g *jsiiProxy_GrafanaWorkspace) validatePutNetworkAccessControlParameters(value *GrafanaWorkspaceNetworkAccessControl) error {
+	return nil
+}
+
 func (g *jsiiProxy_GrafanaWorkspace) validatePutTimeoutsParameters(value *GrafanaWorkspaceTimeouts) error {
 	return nil
 }

@@ -25,6 +25,9 @@ type FlowLog interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DeliverCrossAccountRole() *string
+	SetDeliverCrossAccountRole(val *string)
+	DeliverCrossAccountRoleInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -132,6 +135,7 @@ type FlowLog interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDestinationOptions(value *FlowLogDestinationOptions)
+	ResetDeliverCrossAccountRole()
 	ResetDestinationOptions()
 	ResetEniId()
 	ResetIamRoleArn()
@@ -211,6 +215,26 @@ func (j *jsiiProxy_FlowLog) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FlowLog) DeliverCrossAccountRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deliverCrossAccountRole",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FlowLog) DeliverCrossAccountRoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deliverCrossAccountRoleInput",
 		&returns,
 	)
 	return returns
@@ -705,6 +729,17 @@ func (j *jsiiProxy_FlowLog)SetCount(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_FlowLog)SetDeliverCrossAccountRole(val *string) {
+	if err := j.validateSetDeliverCrossAccountRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deliverCrossAccountRole",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FlowLog)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -1190,6 +1225,14 @@ func (f *jsiiProxy_FlowLog) PutDestinationOptions(value *FlowLogDestinationOptio
 		f,
 		"putDestinationOptions",
 		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FlowLog) ResetDeliverCrossAccountRole() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDeliverCrossAccountRole",
+		nil, // no parameters
 	)
 }
 

@@ -163,6 +163,14 @@ func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference) validateSetComplexObjectIs
 	return nil
 }
 
+func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference) validateSetCreateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case *DbSnapshotTimeouts:
@@ -182,14 +190,6 @@ func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference) validateSetInternalValuePa
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *DbSnapshotTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DbSnapshotTimeoutsOutputReference) validateSetReadParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

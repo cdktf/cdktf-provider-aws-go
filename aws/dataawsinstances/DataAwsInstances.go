@@ -44,6 +44,7 @@ type DataAwsInstances interface {
 	InstanceTags() *map[string]*string
 	SetInstanceTags(val *map[string]*string)
 	InstanceTagsInput() *map[string]*string
+	Ipv6Addresses() *[]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -271,6 +272,16 @@ func (j *jsiiProxy_DataAwsInstances) InstanceTagsInput() *map[string]*string {
 	_jsii_.Get(
 		j,
 		"instanceTagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsInstances) Ipv6Addresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"ipv6Addresses",
 		&returns,
 	)
 	return returns
