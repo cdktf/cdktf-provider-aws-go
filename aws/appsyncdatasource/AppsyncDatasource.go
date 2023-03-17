@@ -39,6 +39,8 @@ type AppsyncDatasource interface {
 	DynamodbConfigInput() *AppsyncDatasourceDynamodbConfig
 	ElasticsearchConfig() AppsyncDatasourceElasticsearchConfigOutputReference
 	ElasticsearchConfigInput() *AppsyncDatasourceElasticsearchConfig
+	EventBridgeConfig() AppsyncDatasourceEventBridgeConfigOutputReference
+	EventBridgeConfigInput() *AppsyncDatasourceEventBridgeConfig
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -114,12 +116,14 @@ type AppsyncDatasource interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutDynamodbConfig(value *AppsyncDatasourceDynamodbConfig)
 	PutElasticsearchConfig(value *AppsyncDatasourceElasticsearchConfig)
+	PutEventBridgeConfig(value *AppsyncDatasourceEventBridgeConfig)
 	PutHttpConfig(value *AppsyncDatasourceHttpConfig)
 	PutLambdaConfig(value *AppsyncDatasourceLambdaConfig)
 	PutRelationalDatabaseConfig(value *AppsyncDatasourceRelationalDatabaseConfig)
 	ResetDescription()
 	ResetDynamodbConfig()
 	ResetElasticsearchConfig()
+	ResetEventBridgeConfig()
 	ResetHttpConfig()
 	ResetId()
 	ResetLambdaConfig()
@@ -278,6 +282,26 @@ func (j *jsiiProxy_AppsyncDatasource) ElasticsearchConfigInput() *AppsyncDatasou
 	_jsii_.Get(
 		j,
 		"elasticsearchConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncDatasource) EventBridgeConfig() AppsyncDatasourceEventBridgeConfigOutputReference {
+	var returns AppsyncDatasourceEventBridgeConfigOutputReference
+	_jsii_.Get(
+		j,
+		"eventBridgeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncDatasource) EventBridgeConfigInput() *AppsyncDatasourceEventBridgeConfig {
+	var returns *AppsyncDatasourceEventBridgeConfig
+	_jsii_.Get(
+		j,
+		"eventBridgeConfigInput",
 		&returns,
 	)
 	return returns
@@ -982,6 +1006,17 @@ func (a *jsiiProxy_AppsyncDatasource) PutElasticsearchConfig(value *AppsyncDatas
 	)
 }
 
+func (a *jsiiProxy_AppsyncDatasource) PutEventBridgeConfig(value *AppsyncDatasourceEventBridgeConfig) {
+	if err := a.validatePutEventBridgeConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putEventBridgeConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppsyncDatasource) PutHttpConfig(value *AppsyncDatasourceHttpConfig) {
 	if err := a.validatePutHttpConfigParameters(value); err != nil {
 		panic(err)
@@ -1035,6 +1070,14 @@ func (a *jsiiProxy_AppsyncDatasource) ResetElasticsearchConfig() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetElasticsearchConfig",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppsyncDatasource) ResetEventBridgeConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEventBridgeConfig",
 		nil, // no parameters
 	)
 }

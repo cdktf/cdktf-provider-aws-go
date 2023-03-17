@@ -17,6 +17,8 @@ type CloudwatchMetricAlarmMetricQuery struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm#metric CloudwatchMetricAlarm#metric}
 	Metric *CloudwatchMetricAlarmMetricQueryMetric `field:"optional" json:"metric" yaml:"metric"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm#period CloudwatchMetricAlarm#period}.
+	Period *float64 `field:"optional" json:"period" yaml:"period"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm#return_data CloudwatchMetricAlarm#return_data}.
 	ReturnData interface{} `field:"optional" json:"returnData" yaml:"returnData"`
 }

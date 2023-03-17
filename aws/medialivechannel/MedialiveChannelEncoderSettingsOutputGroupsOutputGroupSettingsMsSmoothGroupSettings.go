@@ -8,14 +8,14 @@ type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroup
 	Destination *MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination `field:"required" json:"destination" yaml:"destination"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#acquisition_point_id MedialiveChannel#acquisition_point_id}.
 	AcquisitionPointId *string `field:"optional" json:"acquisitionPointId" yaml:"acquisitionPointId"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#audio_only_timecodec_control MedialiveChannel#audio_only_timecodec_control}.
-	AudioOnlyTimecodecControl *string `field:"optional" json:"audioOnlyTimecodecControl" yaml:"audioOnlyTimecodecControl"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#audio_only_timecode_control MedialiveChannel#audio_only_timecode_control}.
+	AudioOnlyTimecodeControl *string `field:"optional" json:"audioOnlyTimecodeControl" yaml:"audioOnlyTimecodeControl"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#certificate_mode MedialiveChannel#certificate_mode}.
 	CertificateMode *string `field:"optional" json:"certificateMode" yaml:"certificateMode"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#connection_retry_interval MedialiveChannel#connection_retry_interval}.
 	ConnectionRetryInterval *float64 `field:"optional" json:"connectionRetryInterval" yaml:"connectionRetryInterval"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#event_id MedialiveChannel#event_id}.
-	EventId *float64 `field:"optional" json:"eventId" yaml:"eventId"`
+	EventId *string `field:"optional" json:"eventId" yaml:"eventId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#event_id_mode MedialiveChannel#event_id_mode}.
 	EventIdMode *string `field:"optional" json:"eventIdMode" yaml:"eventIdMode"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#event_stop_behavior MedialiveChannel#event_stop_behavior}.

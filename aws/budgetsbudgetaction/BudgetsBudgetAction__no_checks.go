@@ -64,6 +64,10 @@ func (b *jsiiProxy_BudgetsBudgetAction) validatePutSubscriberParameters(value in
 	return nil
 }
 
+func (b *jsiiProxy_BudgetsBudgetAction) validatePutTimeoutsParameters(value *BudgetsBudgetActionTimeouts) error {
+	return nil
+}
+
 func validateBudgetsBudgetAction_IsConstructParameters(x interface{}) error {
 	return nil
 }

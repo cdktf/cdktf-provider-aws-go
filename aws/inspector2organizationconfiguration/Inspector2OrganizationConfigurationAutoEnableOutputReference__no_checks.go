@@ -68,6 +68,10 @@ func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) validateSetLambdaParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

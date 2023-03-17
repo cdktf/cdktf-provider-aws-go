@@ -68,6 +68,10 @@ func (j *jsiiProxy_SecurityhubOrganizationConfiguration) validateSetAutoEnablePa
 	return nil
 }
 
+func (j *jsiiProxy_SecurityhubOrganizationConfiguration) validateSetAutoEnableStandardsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityhubOrganizationConfiguration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

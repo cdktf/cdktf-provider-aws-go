@@ -15,6 +15,9 @@ type SecurityhubOrganizationConfiguration interface {
 	AutoEnable() interface{}
 	SetAutoEnable(val interface{})
 	AutoEnableInput() interface{}
+	AutoEnableStandards() *string
+	SetAutoEnableStandards(val *string)
+	AutoEnableStandardsInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -89,6 +92,7 @@ type SecurityhubOrganizationConfiguration interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAutoEnableStandards()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -123,6 +127,26 @@ func (j *jsiiProxy_SecurityhubOrganizationConfiguration) AutoEnableInput() inter
 	_jsii_.Get(
 		j,
 		"autoEnableInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityhubOrganizationConfiguration) AutoEnableStandards() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoEnableStandards",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityhubOrganizationConfiguration) AutoEnableStandardsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"autoEnableStandardsInput",
 		&returns,
 	)
 	return returns
@@ -345,6 +369,17 @@ func (j *jsiiProxy_SecurityhubOrganizationConfiguration)SetAutoEnable(val interf
 	_jsii_.Set(
 		j,
 		"autoEnable",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityhubOrganizationConfiguration)SetAutoEnableStandards(val *string) {
+	if err := j.validateSetAutoEnableStandardsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoEnableStandards",
 		val,
 	)
 }
@@ -688,6 +723,14 @@ func (s *jsiiProxy_SecurityhubOrganizationConfiguration) OverrideLogicalId(newLo
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_SecurityhubOrganizationConfiguration) ResetAutoEnableStandards() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAutoEnableStandards",
+		nil, // no parameters
 	)
 }
 

@@ -64,7 +64,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutput
 	return nil
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference) validateSetInternalValueParameters(val *BatchComputeEnvironmentComputeResourcesEc2Configuration) error {
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutput
 	return nil
 }
 
-func validateNewBatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

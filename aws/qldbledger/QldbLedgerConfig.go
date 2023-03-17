@@ -36,5 +36,9 @@ type QldbLedgerConfig struct {
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/qldb_ledger#tags_all QldbLedger#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
+	// timeouts block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/qldb_ledger#timeouts QldbLedger#timeouts}
+	Timeouts *QldbLedgerTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

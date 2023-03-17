@@ -23,6 +23,7 @@ type DataAwsCeCostCategory interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DefaultValue() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -155,6 +156,16 @@ func (j *jsiiProxy_DataAwsCeCostCategory) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsCeCostCategory) DefaultValue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultValue",
 		&returns,
 	)
 	return returns

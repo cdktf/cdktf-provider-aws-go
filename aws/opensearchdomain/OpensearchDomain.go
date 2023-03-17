@@ -39,6 +39,7 @@ type OpensearchDomain interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DashboardEndpoint() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -345,6 +346,16 @@ func (j *jsiiProxy_OpensearchDomain) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) DashboardEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dashboardEndpoint",
 		&returns,
 	)
 	return returns

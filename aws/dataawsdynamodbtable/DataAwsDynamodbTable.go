@@ -23,6 +23,7 @@ type DataAwsDynamodbTable interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DeletionProtectionEnabled() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -180,6 +181,16 @@ func (j *jsiiProxy_DataAwsDynamodbTable) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDynamodbTable) DeletionProtectionEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabled",
 		&returns,
 	)
 	return returns

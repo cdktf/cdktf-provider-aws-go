@@ -64,6 +64,7 @@ type CognitoUserPoolAccountRecoverySettingOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutRecoveryMechanism(value interface{})
+	ResetRecoveryMechanism()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -446,6 +447,14 @@ func (c *jsiiProxy_CognitoUserPoolAccountRecoverySettingOutputReference) PutReco
 		c,
 		"putRecoveryMechanism",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPoolAccountRecoverySettingOutputReference) ResetRecoveryMechanism() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRecoveryMechanism",
+		nil, // no parameters
 	)
 }
 

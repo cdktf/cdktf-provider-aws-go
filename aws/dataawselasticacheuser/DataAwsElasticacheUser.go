@@ -15,6 +15,8 @@ type DataAwsElasticacheUser interface {
 	AccessString() *string
 	SetAccessString(val *string)
 	AccessStringInput() *string
+	AuthenticationMode() DataAwsElasticacheUserAuthenticationModeList
+	AuthenticationModeInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -96,7 +98,9 @@ type DataAwsElasticacheUser interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAuthenticationMode(value interface{})
 	ResetAccessString()
+	ResetAuthenticationMode()
 	ResetEngine()
 	ResetId()
 	ResetNoPasswordRequired()
@@ -135,6 +139,26 @@ func (j *jsiiProxy_DataAwsElasticacheUser) AccessStringInput() *string {
 	_jsii_.Get(
 		j,
 		"accessStringInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsElasticacheUser) AuthenticationMode() DataAwsElasticacheUserAuthenticationModeList {
+	var returns DataAwsElasticacheUserAuthenticationModeList
+	_jsii_.Get(
+		j,
+		"authenticationMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsElasticacheUser) AuthenticationModeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"authenticationModeInput",
 		&returns,
 	)
 	return returns
@@ -816,10 +840,29 @@ func (d *jsiiProxy_DataAwsElasticacheUser) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (d *jsiiProxy_DataAwsElasticacheUser) PutAuthenticationMode(value interface{}) {
+	if err := d.validatePutAuthenticationModeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putAuthenticationMode",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataAwsElasticacheUser) ResetAccessString() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAccessString",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsElasticacheUser) ResetAuthenticationMode() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAuthenticationMode",
 		nil, // no parameters
 	)
 }

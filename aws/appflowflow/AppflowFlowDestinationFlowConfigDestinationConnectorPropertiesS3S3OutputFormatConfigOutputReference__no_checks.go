@@ -72,6 +72,10 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 	return nil
 }
 
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference) validateSetPreserveSourceDataTypingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

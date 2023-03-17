@@ -36,7 +36,9 @@ type DataAwsAlb interface {
 	EnableCrossZoneLoadBalancing() cdktf.IResolvable
 	EnableDeletionProtection() cdktf.IResolvable
 	EnableHttp2() cdktf.IResolvable
+	EnableTlsVersionAndCipherSuiteHeaders() cdktf.IResolvable
 	EnableWafFailOpen() cdktf.IResolvable
+	EnableXffClientPort() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -83,6 +85,7 @@ type DataAwsAlb interface {
 	Timeouts() DataAwsAlbTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	VpcId() *string
+	XffHeaderProcessingMode() *string
 	ZoneId() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -283,11 +286,31 @@ func (j *jsiiProxy_DataAwsAlb) EnableHttp2() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsAlb) EnableTlsVersionAndCipherSuiteHeaders() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableTlsVersionAndCipherSuiteHeaders",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsAlb) EnableWafFailOpen() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"enableWafFailOpen",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAlb) EnableXffClientPort() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"enableXffClientPort",
 		&returns,
 	)
 	return returns
@@ -558,6 +581,16 @@ func (j *jsiiProxy_DataAwsAlb) VpcId() *string {
 	_jsii_.Get(
 		j,
 		"vpcId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAlb) XffHeaderProcessingMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"xffHeaderProcessingMode",
 		&returns,
 	)
 	return returns

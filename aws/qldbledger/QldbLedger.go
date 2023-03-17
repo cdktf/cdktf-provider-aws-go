@@ -80,6 +80,8 @@ type QldbLedger interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() QldbLedgerTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -105,6 +107,7 @@ type QldbLedger interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *QldbLedgerTimeouts)
 	ResetDeletionProtection()
 	ResetId()
 	ResetKmsKey()
@@ -114,6 +117,7 @@ type QldbLedger interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -434,6 +438,26 @@ func (j *jsiiProxy_QldbLedger) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QldbLedger) Timeouts() QldbLedgerTimeoutsOutputReference {
+	var returns QldbLedgerTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QldbLedger) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -877,6 +901,17 @@ func (q *jsiiProxy_QldbLedger) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (q *jsiiProxy_QldbLedger) PutTimeouts(value *QldbLedgerTimeouts) {
+	if err := q.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (q *jsiiProxy_QldbLedger) ResetDeletionProtection() {
 	_jsii_.InvokeVoid(
 		q,
@@ -929,6 +964,14 @@ func (q *jsiiProxy_QldbLedger) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QldbLedger) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

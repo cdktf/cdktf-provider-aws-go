@@ -27,8 +27,10 @@ type ElasticacheUserConfig struct {
 	UserId *string `field:"required" json:"userId" yaml:"userId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user#user_name ElasticacheUser#user_name}.
 	UserName *string `field:"required" json:"userName" yaml:"userName"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user#arn ElasticacheUser#arn}.
-	Arn *string `field:"optional" json:"arn" yaml:"arn"`
+	// authentication_mode block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user#authentication_mode ElasticacheUser#authentication_mode}
+	AuthenticationMode *ElasticacheUserAuthenticationMode `field:"optional" json:"authenticationMode" yaml:"authenticationMode"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user#id ElasticacheUser#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

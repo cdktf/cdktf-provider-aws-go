@@ -52,6 +52,10 @@ func (q *jsiiProxy_QldbLedger) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (q *jsiiProxy_QldbLedger) validatePutTimeoutsParameters(value *QldbLedgerTimeouts) error {
+	return nil
+}
+
 func validateQldbLedger_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -104,7 +104,15 @@ func (j *jsiiProxy_Lb) validateSetEnableHttp2Parameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Lb) validateSetEnableTlsVersionAndCipherSuiteHeadersParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Lb) validateSetEnableWafFailOpenParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Lb) validateSetEnableXffClientPortParameters(val interface{}) error {
 	return nil
 }
 
@@ -161,6 +169,10 @@ func (j *jsiiProxy_Lb) validateSetTagsParameters(val *map[string]*string) error 
 }
 
 func (j *jsiiProxy_Lb) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Lb) validateSetXffHeaderProcessingModeParameters(val *string) error {
 	return nil
 }
 

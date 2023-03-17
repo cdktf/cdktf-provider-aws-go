@@ -35,6 +35,9 @@ type Inspector2OrganizationConfigurationAutoEnableOutputReference interface {
 	Fqn() *string
 	InternalValue() *Inspector2OrganizationConfigurationAutoEnable
 	SetInternalValue(val *Inspector2OrganizationConfigurationAutoEnable)
+	Lambda() interface{}
+	SetLambda(val interface{})
+	LambdaInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type Inspector2OrganizationConfigurationAutoEnableOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetLambda()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -172,6 +176,26 @@ func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) Lambda() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lambda",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) LambdaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lambdaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -271,6 +295,17 @@ func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference)
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference)SetLambda(val interface{}) {
+	if err := j.validateSetLambdaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lambda",
 		val,
 	)
 }
@@ -481,6 +516,14 @@ func (i *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference)
 	)
 
 	return returns
+}
+
+func (i *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) ResetLambda() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetLambda",
+		nil, // no parameters
+	)
 }
 
 func (i *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

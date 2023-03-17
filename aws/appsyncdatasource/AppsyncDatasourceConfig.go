@@ -35,6 +35,10 @@ type AppsyncDatasourceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource#elasticsearch_config AppsyncDatasource#elasticsearch_config}
 	ElasticsearchConfig *AppsyncDatasourceElasticsearchConfig `field:"optional" json:"elasticsearchConfig" yaml:"elasticsearchConfig"`
+	// event_bridge_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource#event_bridge_config AppsyncDatasource#event_bridge_config}
+	EventBridgeConfig *AppsyncDatasourceEventBridgeConfig `field:"optional" json:"eventBridgeConfig" yaml:"eventBridgeConfig"`
 	// http_config block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appsync_datasource#http_config AppsyncDatasource#http_config}

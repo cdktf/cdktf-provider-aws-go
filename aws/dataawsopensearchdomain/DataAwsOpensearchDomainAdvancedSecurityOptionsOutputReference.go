@@ -10,6 +10,7 @@ import (
 
 type DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference interface {
 	cdktf.ComplexObject
+	AnonymousAuthEnabled() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -76,6 +77,16 @@ type DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference interface {
 // The jsii proxy struct for DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference
 type jsiiProxy_DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference) AnonymousAuthEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"anonymousAuthEnabled",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference) ComplexObjectIndex() interface{} {

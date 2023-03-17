@@ -88,6 +88,8 @@ type BudgetsBudgetAction interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() BudgetsBudgetActionTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -116,11 +118,13 @@ type BudgetsBudgetAction interface {
 	PutActionThreshold(value *BudgetsBudgetActionActionThreshold)
 	PutDefinition(value *BudgetsBudgetActionDefinition)
 	PutSubscriber(value interface{})
+	PutTimeouts(value *BudgetsBudgetActionTimeouts)
 	ResetAccountId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -521,6 +525,26 @@ func (j *jsiiProxy_BudgetsBudgetAction) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudgetAction) Timeouts() BudgetsBudgetActionTimeoutsOutputReference {
+	var returns BudgetsBudgetActionTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudgetAction) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -997,6 +1021,17 @@ func (b *jsiiProxy_BudgetsBudgetAction) PutSubscriber(value interface{}) {
 	)
 }
 
+func (b *jsiiProxy_BudgetsBudgetAction) PutTimeouts(value *BudgetsBudgetActionTimeouts) {
+	if err := b.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BudgetsBudgetAction) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		b,
@@ -1017,6 +1052,14 @@ func (b *jsiiProxy_BudgetsBudgetAction) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudgetAction) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

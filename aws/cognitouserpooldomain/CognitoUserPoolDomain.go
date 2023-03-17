@@ -18,7 +18,9 @@ type CognitoUserPoolDomain interface {
 	CertificateArn() *string
 	SetCertificateArn(val *string)
 	CertificateArnInput() *string
+	CloudfrontDistribution() *string
 	CloudfrontDistributionArn() *string
+	CloudfrontDistributionZoneId() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -159,11 +161,31 @@ func (j *jsiiProxy_CognitoUserPoolDomain) CertificateArnInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CognitoUserPoolDomain) CloudfrontDistribution() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudfrontDistribution",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CognitoUserPoolDomain) CloudfrontDistributionArn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"cloudfrontDistributionArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPoolDomain) CloudfrontDistributionZoneId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudfrontDistributionZoneId",
 		&returns,
 	)
 	return returns

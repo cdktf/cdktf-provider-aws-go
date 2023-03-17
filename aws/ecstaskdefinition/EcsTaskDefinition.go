@@ -13,6 +13,7 @@ import (
 type EcsTaskDefinition interface {
 	cdktf.TerraformResource
 	Arn() *string
+	ArnWithoutRevision() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -186,6 +187,16 @@ func (j *jsiiProxy_EcsTaskDefinition) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) ArnWithoutRevision() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arnWithoutRevision",
 		&returns,
 	)
 	return returns

@@ -36,6 +36,9 @@ type AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFor
 	SetInternalValue(val *AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfig)
 	PrefixConfig() AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfigOutputReference
 	PrefixConfigInput() *AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfig
+	PreserveSourceDataTyping() interface{}
+	SetPreserveSourceDataTyping(val interface{})
+	PreserveSourceDataTypingInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,6 +76,7 @@ type AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFor
 	ResetAggregationConfig()
 	ResetFileType()
 	ResetPrefixConfig()
+	ResetPreserveSourceDataTyping()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -198,6 +202,26 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 	return returns
 }
 
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference) PreserveSourceDataTyping() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"preserveSourceDataTyping",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference) PreserveSourceDataTypingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"preserveSourceDataTypingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -286,6 +310,17 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference)SetPreserveSourceDataTyping(val interface{}) {
+	if err := j.validateSetPreserveSourceDataTypingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preserveSourceDataTyping",
 		val,
 	)
 }
@@ -540,6 +575,14 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 	_jsii_.InvokeVoid(
 		a,
 		"resetPrefixConfig",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigOutputReference) ResetPreserveSourceDataTyping() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPreserveSourceDataTyping",
 		nil, // no parameters
 	)
 }

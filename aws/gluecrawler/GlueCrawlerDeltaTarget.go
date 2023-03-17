@@ -8,5 +8,7 @@ type GlueCrawlerDeltaTarget struct {
 	WriteManifest interface{} `field:"required" json:"writeManifest" yaml:"writeManifest"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#connection_name GlueCrawler#connection_name}.
 	ConnectionName *string `field:"optional" json:"connectionName" yaml:"connectionName"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/glue_crawler#create_native_delta_table GlueCrawler#create_native_delta_table}.
+	CreateNativeDeltaTable interface{} `field:"optional" json:"createNativeDeltaTable" yaml:"createNativeDeltaTable"`
 }
 

@@ -34,8 +34,8 @@ type BatchComputeEnvironmentComputeResourcesOutputReference interface {
 	DesiredVcpus() *float64
 	SetDesiredVcpus(val *float64)
 	DesiredVcpusInput() *float64
-	Ec2Configuration() BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference
-	Ec2ConfigurationInput() *BatchComputeEnvironmentComputeResourcesEc2Configuration
+	Ec2Configuration() BatchComputeEnvironmentComputeResourcesEc2ConfigurationList
+	Ec2ConfigurationInput() interface{}
 	Ec2KeyPair() *string
 	SetEc2KeyPair(val *string)
 	Ec2KeyPairInput() *string
@@ -107,7 +107,7 @@ type BatchComputeEnvironmentComputeResourcesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutEc2Configuration(value *BatchComputeEnvironmentComputeResourcesEc2Configuration)
+	PutEc2Configuration(value interface{})
 	PutLaunchTemplate(value *BatchComputeEnvironmentComputeResourcesLaunchTemplate)
 	ResetAllocationStrategy()
 	ResetBidPercentage()
@@ -227,8 +227,8 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) Desir
 	return returns
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) Ec2Configuration() BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference {
-	var returns BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) Ec2Configuration() BatchComputeEnvironmentComputeResourcesEc2ConfigurationList {
+	var returns BatchComputeEnvironmentComputeResourcesEc2ConfigurationList
 	_jsii_.Get(
 		j,
 		"ec2Configuration",
@@ -237,8 +237,8 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) Ec2Co
 	return returns
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) Ec2ConfigurationInput() *BatchComputeEnvironmentComputeResourcesEc2Configuration {
-	var returns *BatchComputeEnvironmentComputeResourcesEc2Configuration
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) Ec2ConfigurationInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"ec2ConfigurationInput",
@@ -950,7 +950,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) Inter
 	return returns
 }
 
-func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) PutEc2Configuration(value *BatchComputeEnvironmentComputeResourcesEc2Configuration) {
+func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) PutEc2Configuration(value interface{}) {
 	if err := b.validatePutEc2ConfigurationParameters(value); err != nil {
 		panic(err)
 	}

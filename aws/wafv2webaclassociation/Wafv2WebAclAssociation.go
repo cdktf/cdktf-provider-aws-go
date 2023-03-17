@@ -64,6 +64,8 @@ type Wafv2WebAclAssociation interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() Wafv2WebAclAssociationTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	WebAclArn() *string
 	SetWebAclArn(val *string)
 	WebAclArnInput() *string
@@ -92,10 +94,12 @@ type Wafv2WebAclAssociation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *Wafv2WebAclAssociationTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -306,6 +310,26 @@ func (j *jsiiProxy_Wafv2WebAclAssociation) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclAssociation) Timeouts() Wafv2WebAclAssociationTimeoutsOutputReference {
+	var returns Wafv2WebAclAssociationTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclAssociation) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -725,6 +749,17 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (w *jsiiProxy_Wafv2WebAclAssociation) PutTimeouts(value *Wafv2WebAclAssociationTimeouts) {
+	if err := w.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2WebAclAssociation) ResetId() {
 	_jsii_.InvokeVoid(
 		w,
@@ -737,6 +772,14 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAclAssociation) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

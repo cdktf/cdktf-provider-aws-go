@@ -179,9 +179,25 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutput
 	return nil
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference) validateSetInternalValueParameters(val *BatchComputeEnvironmentComputeResourcesEc2Configuration) error {
-	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-		return err
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
+	switch val.(type) {
+	case *BatchComputeEnvironmentComputeResourcesEc2Configuration:
+		val := val.(*BatchComputeEnvironmentComputeResourcesEc2Configuration)
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case BatchComputeEnvironmentComputeResourcesEc2Configuration:
+		val_ := val.(BatchComputeEnvironmentComputeResourcesEc2Configuration)
+		val := &val_
+		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+			return err
+		}
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *BatchComputeEnvironmentComputeResourcesEc2Configuration, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
 	}
 
 	return nil
@@ -203,13 +219,21 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutput
 	return nil
 }
 
-func validateNewBatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}
 
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	if complexObjectIndex == nil {
+		return fmt.Errorf("parameter complexObjectIndex is required, but nil was provided")
+	}
+
+	if complexObjectIsFromSet == nil {
+		return fmt.Errorf("parameter complexObjectIsFromSet is required, but nil was provided")
 	}
 
 	return nil

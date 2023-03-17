@@ -17,6 +17,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "costCategoryArn", GoGetter: "CostCategoryArn"},
 			_jsii_.MemberProperty{JsiiProperty: "costCategoryArnInput", GoGetter: "CostCategoryArnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultValue", GoGetter: "DefaultValue"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveEnd", GoGetter: "EffectiveEnd"},
 			_jsii_.MemberProperty{JsiiProperty: "effectiveStart", GoGetter: "EffectiveStart"},

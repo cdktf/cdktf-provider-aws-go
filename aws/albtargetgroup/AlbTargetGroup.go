@@ -62,6 +62,9 @@ type AlbTargetGroup interface {
 	LoadBalancingAlgorithmType() *string
 	SetLoadBalancingAlgorithmType(val *string)
 	LoadBalancingAlgorithmTypeInput() *string
+	LoadBalancingCrossZoneEnabled() *string
+	SetLoadBalancingCrossZoneEnabled(val *string)
+	LoadBalancingCrossZoneEnabledInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -155,6 +158,7 @@ type AlbTargetGroup interface {
 	ResetIpAddressType()
 	ResetLambdaMultiValueHeadersEnabled()
 	ResetLoadBalancingAlgorithmType()
+	ResetLoadBalancingCrossZoneEnabled()
 	ResetName()
 	ResetNamePrefix()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -432,6 +436,26 @@ func (j *jsiiProxy_AlbTargetGroup) LoadBalancingAlgorithmTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"loadBalancingAlgorithmTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) LoadBalancingCrossZoneEnabled() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loadBalancingCrossZoneEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) LoadBalancingCrossZoneEnabledInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loadBalancingCrossZoneEnabledInput",
 		&returns,
 	)
 	return returns
@@ -925,6 +949,17 @@ func (j *jsiiProxy_AlbTargetGroup)SetLoadBalancingAlgorithmType(val *string) {
 	_jsii_.Set(
 		j,
 		"loadBalancingAlgorithmType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroup)SetLoadBalancingCrossZoneEnabled(val *string) {
+	if err := j.validateSetLoadBalancingCrossZoneEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"loadBalancingCrossZoneEnabled",
 		val,
 	)
 }
@@ -1431,6 +1466,14 @@ func (a *jsiiProxy_AlbTargetGroup) ResetLoadBalancingAlgorithmType() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetLoadBalancingAlgorithmType",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetLoadBalancingCrossZoneEnabled() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetLoadBalancingCrossZoneEnabled",
 		nil, // no parameters
 	)
 }

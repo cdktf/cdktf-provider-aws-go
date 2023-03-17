@@ -30,6 +30,9 @@ type DynamodbTable interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DeletionProtectionEnabled() interface{}
+	SetDeletionProtectionEnabled(val interface{})
+	DeletionProtectionEnabledInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -157,6 +160,7 @@ type DynamodbTable interface {
 	PutTtl(value *DynamodbTableTtl)
 	ResetAttribute()
 	ResetBillingMode()
+	ResetDeletionProtectionEnabled()
 	ResetGlobalSecondaryIndex()
 	ResetHashKey()
 	ResetId()
@@ -280,6 +284,26 @@ func (j *jsiiProxy_DynamodbTable) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTable) DeletionProtectionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTable) DeletionProtectionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabledInput",
 		&returns,
 	)
 	return returns
@@ -905,6 +929,17 @@ func (j *jsiiProxy_DynamodbTable)SetCount(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_DynamodbTable)SetDeletionProtectionEnabled(val interface{}) {
+	if err := j.validateSetDeletionProtectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtectionEnabled",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DynamodbTable)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -1471,6 +1506,14 @@ func (d *jsiiProxy_DynamodbTable) ResetBillingMode() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetBillingMode",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DynamodbTable) ResetDeletionProtectionEnabled() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDeletionProtectionEnabled",
 		nil, // no parameters
 	)
 }

@@ -33,8 +33,8 @@ type BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference inte
 	ImageType() *string
 	SetImageType(val *string)
 	ImageTypeInput() *string
-	InternalValue() *BatchComputeEnvironmentComputeResourcesEc2Configuration
-	SetInternalValue(val *BatchComputeEnvironmentComputeResourcesEc2Configuration)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -164,8 +164,8 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutput
 	return returns
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference) InternalValue() *BatchComputeEnvironmentComputeResourcesEc2Configuration {
-	var returns *BatchComputeEnvironmentComputeResourcesEc2Configuration
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -195,29 +195,29 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutput
 }
 
 
-func NewBatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference {
+func NewBatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewBatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewBatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewBatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference_Override(b BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewBatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference_Override(b BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)
 }
@@ -266,7 +266,7 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutput
 	)
 }
 
-func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference)SetInternalValue(val *BatchComputeEnvironmentComputeResourcesEc2Configuration) {
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesEc2ConfigurationOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

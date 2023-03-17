@@ -52,6 +52,10 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2WebAclAssociation) validatePutTimeoutsParameters(value *Wafv2WebAclAssociationTimeouts) error {
+	return nil
+}
+
 func validateWafv2WebAclAssociation_IsConstructParameters(x interface{}) error {
 	return nil
 }

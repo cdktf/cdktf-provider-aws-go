@@ -13,6 +13,7 @@ import (
 type DataAwsEcsTaskDefinition interface {
 	cdktf.TerraformDataSource
 	Arn() *string
+	ArnWithoutRevision() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -111,6 +112,16 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) ArnWithoutRevision() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arnWithoutRevision",
 		&returns,
 	)
 	return returns

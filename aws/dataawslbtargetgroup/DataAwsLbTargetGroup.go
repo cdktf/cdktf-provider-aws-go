@@ -48,6 +48,7 @@ type DataAwsLbTargetGroup interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LoadBalancingAlgorithmType() *string
+	LoadBalancingCrossZoneEnabled() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -303,6 +304,16 @@ func (j *jsiiProxy_DataAwsLbTargetGroup) LoadBalancingAlgorithmType() *string {
 	_jsii_.Get(
 		j,
 		"loadBalancingAlgorithmType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLbTargetGroup) LoadBalancingCrossZoneEnabled() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loadBalancingCrossZoneEnabled",
 		&returns,
 	)
 	return returns

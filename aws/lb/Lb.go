@@ -51,9 +51,15 @@ type Lb interface {
 	EnableHttp2() interface{}
 	SetEnableHttp2(val interface{})
 	EnableHttp2Input() interface{}
+	EnableTlsVersionAndCipherSuiteHeaders() interface{}
+	SetEnableTlsVersionAndCipherSuiteHeaders(val interface{})
+	EnableTlsVersionAndCipherSuiteHeadersInput() interface{}
 	EnableWafFailOpen() interface{}
 	SetEnableWafFailOpen(val interface{})
 	EnableWafFailOpenInput() interface{}
+	EnableXffClientPort() interface{}
+	SetEnableXffClientPort(val interface{})
+	EnableXffClientPortInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -125,6 +131,9 @@ type Lb interface {
 	Timeouts() LbTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	VpcId() *string
+	XffHeaderProcessingMode() *string
+	SetXffHeaderProcessingMode(val *string)
+	XffHeaderProcessingModeInput() *string
 	ZoneId() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -161,7 +170,9 @@ type Lb interface {
 	ResetEnableCrossZoneLoadBalancing()
 	ResetEnableDeletionProtection()
 	ResetEnableHttp2()
+	ResetEnableTlsVersionAndCipherSuiteHeaders()
 	ResetEnableWafFailOpen()
+	ResetEnableXffClientPort()
 	ResetId()
 	ResetIdleTimeout()
 	ResetInternal()
@@ -179,6 +190,7 @@ type Lb interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
+	ResetXffHeaderProcessingMode()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -414,6 +426,26 @@ func (j *jsiiProxy_Lb) EnableHttp2Input() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Lb) EnableTlsVersionAndCipherSuiteHeaders() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableTlsVersionAndCipherSuiteHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lb) EnableTlsVersionAndCipherSuiteHeadersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableTlsVersionAndCipherSuiteHeadersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Lb) EnableWafFailOpen() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -429,6 +461,26 @@ func (j *jsiiProxy_Lb) EnableWafFailOpenInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableWafFailOpenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lb) EnableXffClientPort() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableXffClientPort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lb) EnableXffClientPortInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableXffClientPortInput",
 		&returns,
 	)
 	return returns
@@ -834,6 +886,26 @@ func (j *jsiiProxy_Lb) VpcId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Lb) XffHeaderProcessingMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"xffHeaderProcessingMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lb) XffHeaderProcessingModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"xffHeaderProcessingModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Lb) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -967,6 +1039,17 @@ func (j *jsiiProxy_Lb)SetEnableHttp2(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_Lb)SetEnableTlsVersionAndCipherSuiteHeaders(val interface{}) {
+	if err := j.validateSetEnableTlsVersionAndCipherSuiteHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableTlsVersionAndCipherSuiteHeaders",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Lb)SetEnableWafFailOpen(val interface{}) {
 	if err := j.validateSetEnableWafFailOpenParameters(val); err != nil {
 		panic(err)
@@ -974,6 +1057,17 @@ func (j *jsiiProxy_Lb)SetEnableWafFailOpen(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableWafFailOpen",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Lb)SetEnableXffClientPort(val interface{}) {
+	if err := j.validateSetEnableXffClientPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableXffClientPort",
 		val,
 	)
 }
@@ -1144,6 +1238,17 @@ func (j *jsiiProxy_Lb)SetTagsAll(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Lb)SetXffHeaderProcessingMode(val *string) {
+	if err := j.validateSetXffHeaderProcessingModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"xffHeaderProcessingMode",
 		val,
 	)
 }
@@ -1503,10 +1608,26 @@ func (l *jsiiProxy_Lb) ResetEnableHttp2() {
 	)
 }
 
+func (l *jsiiProxy_Lb) ResetEnableTlsVersionAndCipherSuiteHeaders() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetEnableTlsVersionAndCipherSuiteHeaders",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_Lb) ResetEnableWafFailOpen() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetEnableWafFailOpen",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Lb) ResetEnableXffClientPort() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetEnableXffClientPort",
 		nil, // no parameters
 	)
 }
@@ -1627,6 +1748,14 @@ func (l *jsiiProxy_Lb) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Lb) ResetXffHeaderProcessingMode() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetXffHeaderProcessingMode",
 		nil, // no parameters
 	)
 }

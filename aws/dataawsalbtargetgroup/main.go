@@ -40,6 +40,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lambdaMultiValueHeadersEnabled", GoGetter: "LambdaMultiValueHeadersEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBalancingAlgorithmType", GoGetter: "LoadBalancingAlgorithmType"},
+			_jsii_.MemberProperty{JsiiProperty: "loadBalancingCrossZoneEnabled", GoGetter: "LoadBalancingCrossZoneEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

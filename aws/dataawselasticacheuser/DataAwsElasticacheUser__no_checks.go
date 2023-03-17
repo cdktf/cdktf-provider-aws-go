@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsElasticacheUser) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsElasticacheUser) validatePutAuthenticationModeParameters(value interface{}) error {
+	return nil
+}
+
 func validateDataAwsElasticacheUser_IsConstructParameters(x interface{}) error {
 	return nil
 }

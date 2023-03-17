@@ -80,6 +80,10 @@ func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateSetL
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateSetPeriodParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) validateSetReturnDataParameters(val interface{}) error {
 	return nil
 }

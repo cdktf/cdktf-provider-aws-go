@@ -52,6 +52,10 @@ func (e *jsiiProxy_ElasticacheUser) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (e *jsiiProxy_ElasticacheUser) validatePutAuthenticationModeParameters(value *ElasticacheUserAuthenticationMode) error {
+	return nil
+}
+
 func validateElasticacheUser_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -65,10 +69,6 @@ func validateElasticacheUser_IsTerraformResourceParameters(x interface{}) error 
 }
 
 func (j *jsiiProxy_ElasticacheUser) validateSetAccessStringParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ElasticacheUser) validateSetArnParameters(val *string) error {
 	return nil
 }
 

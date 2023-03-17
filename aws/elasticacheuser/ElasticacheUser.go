@@ -16,8 +16,8 @@ type ElasticacheUser interface {
 	SetAccessString(val *string)
 	AccessStringInput() *string
 	Arn() *string
-	SetArn(val *string)
-	ArnInput() *string
+	AuthenticationMode() ElasticacheUserAuthenticationModeOutputReference
+	AuthenticationModeInput() *ElasticacheUserAuthenticationMode
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -113,7 +113,8 @@ type ElasticacheUser interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetArn()
+	PutAuthenticationMode(value *ElasticacheUserAuthenticationMode)
+	ResetAuthenticationMode()
 	ResetId()
 	ResetNoPasswordRequired()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -167,11 +168,21 @@ func (j *jsiiProxy_ElasticacheUser) Arn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheUser) ArnInput() *string {
-	var returns *string
+func (j *jsiiProxy_ElasticacheUser) AuthenticationMode() ElasticacheUserAuthenticationModeOutputReference {
+	var returns ElasticacheUserAuthenticationModeOutputReference
 	_jsii_.Get(
 		j,
-		"arnInput",
+		"authenticationMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheUser) AuthenticationModeInput() *ElasticacheUserAuthenticationMode {
+	var returns *ElasticacheUserAuthenticationMode
+	_jsii_.Get(
+		j,
+		"authenticationModeInput",
 		&returns,
 	)
 	return returns
@@ -534,17 +545,6 @@ func (j *jsiiProxy_ElasticacheUser)SetAccessString(val *string) {
 	_jsii_.Set(
 		j,
 		"accessString",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ElasticacheUser)SetArn(val *string) {
-	if err := j.validateSetArnParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"arn",
 		val,
 	)
 }
@@ -968,10 +968,21 @@ func (e *jsiiProxy_ElasticacheUser) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (e *jsiiProxy_ElasticacheUser) ResetArn() {
+func (e *jsiiProxy_ElasticacheUser) PutAuthenticationMode(value *ElasticacheUserAuthenticationMode) {
+	if err := e.validatePutAuthenticationModeParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		e,
-		"resetArn",
+		"putAuthenticationMode",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_ElasticacheUser) ResetAuthenticationMode() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetAuthenticationMode",
 		nil, // no parameters
 	)
 }

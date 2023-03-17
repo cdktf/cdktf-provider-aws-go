@@ -43,6 +43,9 @@ type CloudwatchMetricAlarmMetricQueryOutputReference interface {
 	LabelInput() *string
 	Metric() CloudwatchMetricAlarmMetricQueryMetricOutputReference
 	MetricInput() *CloudwatchMetricAlarmMetricQueryMetric
+	Period() *float64
+	SetPeriod(val *float64)
+	PeriodInput() *float64
 	ReturnData() interface{}
 	SetReturnData(val interface{})
 	ReturnDataInput() interface{}
@@ -83,6 +86,7 @@ type CloudwatchMetricAlarmMetricQueryOutputReference interface {
 	ResetExpression()
 	ResetLabel()
 	ResetMetric()
+	ResetPeriod()
 	ResetReturnData()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -249,6 +253,26 @@ func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) MetricInput(
 	return returns
 }
 
+func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) Period() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"period",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) PeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"periodInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) ReturnData() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -390,6 +414,17 @@ func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference)SetLabel(val 
 	_jsii_.Set(
 		j,
 		"label",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference)SetPeriod(val *float64) {
+	if err := j.validateSetPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"period",
 		val,
 	)
 }
@@ -652,6 +687,14 @@ func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) ResetMetric(
 	_jsii_.InvokeVoid(
 		c,
 		"resetMetric",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryOutputReference) ResetPeriod() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPeriod",
 		nil, // no parameters
 	)
 }

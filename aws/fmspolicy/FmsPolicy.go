@@ -35,6 +35,9 @@ type FmsPolicy interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	ExcludeMap() FmsPolicyExcludeMapOutputReference
 	ExcludeMapInput() *FmsPolicyExcludeMap
 	ExcludeResourceTags() interface{}
@@ -129,6 +132,7 @@ type FmsPolicy interface {
 	PutSecurityServicePolicyData(value *FmsPolicySecurityServicePolicyData)
 	ResetDeleteAllPolicyResources()
 	ResetDeleteUnusedFmManagedResources()
+	ResetDescription()
 	ResetExcludeMap()
 	ResetId()
 	ResetIncludeMap()
@@ -251,6 +255,26 @@ func (j *jsiiProxy_FmsPolicy) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FmsPolicy) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FmsPolicy) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -691,6 +715,17 @@ func (j *jsiiProxy_FmsPolicy)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FmsPolicy)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -1143,6 +1178,14 @@ func (f *jsiiProxy_FmsPolicy) ResetDeleteUnusedFmManagedResources() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetDeleteUnusedFmManagedResources",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FmsPolicy) ResetDescription() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDescription",
 		nil, // no parameters
 	)
 }

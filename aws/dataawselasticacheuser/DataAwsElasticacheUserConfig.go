@@ -23,6 +23,10 @@ type DataAwsElasticacheUserConfig struct {
 	UserId *string `field:"required" json:"userId" yaml:"userId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elasticache_user#access_string DataAwsElasticacheUser#access_string}.
 	AccessString *string `field:"optional" json:"accessString" yaml:"accessString"`
+	// authentication_mode block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elasticache_user#authentication_mode DataAwsElasticacheUser#authentication_mode}
+	AuthenticationMode interface{} `field:"optional" json:"authenticationMode" yaml:"authenticationMode"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elasticache_user#engine DataAwsElasticacheUser#engine}.
 	Engine *string `field:"optional" json:"engine" yaml:"engine"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/elasticache_user#id DataAwsElasticacheUser#id}.

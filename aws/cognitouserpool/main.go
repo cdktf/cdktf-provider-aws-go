@@ -176,6 +176,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putRecoveryMechanism", GoMethod: "PutRecoveryMechanism"},
 			_jsii_.MemberProperty{JsiiProperty: "recoveryMechanism", GoGetter: "RecoveryMechanism"},
 			_jsii_.MemberProperty{JsiiProperty: "recoveryMechanismInput", GoGetter: "RecoveryMechanismInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRecoveryMechanism", GoMethod: "ResetRecoveryMechanism"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

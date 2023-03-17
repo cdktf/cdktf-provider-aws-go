@@ -60,6 +60,10 @@ func (a *jsiiProxy_AppsyncDatasource) validatePutElasticsearchConfigParameters(v
 	return nil
 }
 
+func (a *jsiiProxy_AppsyncDatasource) validatePutEventBridgeConfigParameters(value *AppsyncDatasourceEventBridgeConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppsyncDatasource) validatePutHttpConfigParameters(value *AppsyncDatasourceHttpConfig) error {
 	return nil
 }

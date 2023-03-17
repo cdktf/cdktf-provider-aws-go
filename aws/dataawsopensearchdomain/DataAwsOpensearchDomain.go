@@ -28,6 +28,7 @@ type DataAwsOpensearchDomain interface {
 	// Experimental.
 	SetCount(val *float64)
 	Created() cdktf.IResolvable
+	DashboardEndpoint() *string
 	Deleted() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
@@ -229,6 +230,16 @@ func (j *jsiiProxy_DataAwsOpensearchDomain) Created() cdktf.IResolvable {
 	_jsii_.Get(
 		j,
 		"created",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsOpensearchDomain) DashboardEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dashboardEndpoint",
 		&returns,
 	)
 	return returns

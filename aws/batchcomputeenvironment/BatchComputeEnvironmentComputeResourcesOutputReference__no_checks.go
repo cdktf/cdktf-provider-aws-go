@@ -44,7 +44,7 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) valid
 	return nil
 }
 
-func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) validatePutEc2ConfigurationParameters(value *BatchComputeEnvironmentComputeResourcesEc2Configuration) error {
+func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) validatePutEc2ConfigurationParameters(value interface{}) error {
 	return nil
 }
 

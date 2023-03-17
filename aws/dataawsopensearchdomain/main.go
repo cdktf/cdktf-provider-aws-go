@@ -23,6 +23,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "created", GoGetter: "Created"},
+			_jsii_.MemberProperty{JsiiProperty: "dashboardEndpoint", GoGetter: "DashboardEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "deleted", GoGetter: "Deleted"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "domainId", GoGetter: "DomainId"},
@@ -105,6 +106,7 @@ func init() {
 		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference",
 		reflect.TypeOf((*DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "anonymousAuthEnabled", GoGetter: "AnonymousAuthEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},

@@ -23,6 +23,9 @@ type GlueCrawlerDeltaTargetOutputReference interface {
 	ConnectionName() *string
 	SetConnectionName(val *string)
 	ConnectionNameInput() *string
+	CreateNativeDeltaTable() interface{}
+	SetCreateNativeDeltaTable(val interface{})
+	CreateNativeDeltaTableInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -71,6 +74,7 @@ type GlueCrawlerDeltaTargetOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetConnectionName()
+	ResetCreateNativeDeltaTable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -121,6 +125,26 @@ func (j *jsiiProxy_GlueCrawlerDeltaTargetOutputReference) ConnectionNameInput() 
 	_jsii_.Get(
 		j,
 		"connectionNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCrawlerDeltaTargetOutputReference) CreateNativeDeltaTable() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createNativeDeltaTable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCrawlerDeltaTargetOutputReference) CreateNativeDeltaTableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createNativeDeltaTableInput",
 		&returns,
 	)
 	return returns
@@ -273,6 +297,17 @@ func (j *jsiiProxy_GlueCrawlerDeltaTargetOutputReference)SetConnectionName(val *
 	_jsii_.Set(
 		j,
 		"connectionName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueCrawlerDeltaTargetOutputReference)SetCreateNativeDeltaTable(val interface{}) {
+	if err := j.validateSetCreateNativeDeltaTableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createNativeDeltaTable",
 		val,
 	)
 }
@@ -522,6 +557,14 @@ func (g *jsiiProxy_GlueCrawlerDeltaTargetOutputReference) ResetConnectionName() 
 	_jsii_.InvokeVoid(
 		g,
 		"resetConnectionName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueCrawlerDeltaTargetOutputReference) ResetCreateNativeDeltaTable() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCreateNativeDeltaTable",
 		nil, // no parameters
 	)
 }

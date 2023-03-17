@@ -27,7 +27,9 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "enableCrossZoneLoadBalancing", GoGetter: "EnableCrossZoneLoadBalancing"},
 			_jsii_.MemberProperty{JsiiProperty: "enableDeletionProtection", GoGetter: "EnableDeletionProtection"},
 			_jsii_.MemberProperty{JsiiProperty: "enableHttp2", GoGetter: "EnableHttp2"},
+			_jsii_.MemberProperty{JsiiProperty: "enableTlsVersionAndCipherSuiteHeaders", GoGetter: "EnableTlsVersionAndCipherSuiteHeaders"},
 			_jsii_.MemberProperty{JsiiProperty: "enableWafFailOpen", GoGetter: "EnableWafFailOpen"},
+			_jsii_.MemberProperty{JsiiProperty: "enableXffClientPort", GoGetter: "EnableXffClientPort"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -77,6 +79,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
+			_jsii_.MemberProperty{JsiiProperty: "xffHeaderProcessingMode", GoGetter: "XffHeaderProcessingMode"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 		},
 		func() interface{} {

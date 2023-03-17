@@ -27,6 +27,8 @@ type DynamodbTableConfig struct {
 	Attribute interface{} `field:"optional" json:"attribute" yaml:"attribute"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table#billing_mode DynamodbTable#billing_mode}.
 	BillingMode *string `field:"optional" json:"billingMode" yaml:"billingMode"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table#deletion_protection_enabled DynamodbTable#deletion_protection_enabled}.
+	DeletionProtectionEnabled interface{} `field:"optional" json:"deletionProtectionEnabled" yaml:"deletionProtectionEnabled"`
 	// global_secondary_index block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table#global_secondary_index DynamodbTable#global_secondary_index}

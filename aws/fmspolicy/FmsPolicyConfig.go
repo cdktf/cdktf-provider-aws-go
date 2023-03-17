@@ -31,6 +31,8 @@ type FmsPolicyConfig struct {
 	DeleteAllPolicyResources interface{} `field:"optional" json:"deleteAllPolicyResources" yaml:"deleteAllPolicyResources"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy#delete_unused_fm_managed_resources FmsPolicy#delete_unused_fm_managed_resources}.
 	DeleteUnusedFmManagedResources interface{} `field:"optional" json:"deleteUnusedFmManagedResources" yaml:"deleteUnusedFmManagedResources"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy#description FmsPolicy#description}.
+	Description *string `field:"optional" json:"description" yaml:"description"`
 	// exclude_map block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fms_policy#exclude_map FmsPolicy#exclude_map}

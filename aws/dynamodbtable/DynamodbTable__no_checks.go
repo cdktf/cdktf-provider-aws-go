@@ -104,6 +104,10 @@ func (j *jsiiProxy_DynamodbTable) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbTable) validateSetDeletionProtectionEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbTable) validateSetHashKeyParameters(val *string) error {
 	return nil
 }

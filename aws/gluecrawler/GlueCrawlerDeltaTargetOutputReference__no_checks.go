@@ -60,6 +60,10 @@ func (j *jsiiProxy_GlueCrawlerDeltaTargetOutputReference) validateSetConnectionN
 	return nil
 }
 
+func (j *jsiiProxy_GlueCrawlerDeltaTargetOutputReference) validateSetCreateNativeDeltaTableParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueCrawlerDeltaTargetOutputReference) validateSetDeltaTablesParameters(val *[]*string) error {
 	return nil
 }

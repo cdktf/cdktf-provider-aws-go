@@ -88,6 +88,10 @@ func (j *jsiiProxy_FmsPolicy) validateSetDeleteUnusedFmManagedResourcesParameter
 	return nil
 }
 
+func (j *jsiiProxy_FmsPolicy) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FmsPolicy) validateSetExcludeResourceTagsParameters(val interface{}) error {
 	return nil
 }

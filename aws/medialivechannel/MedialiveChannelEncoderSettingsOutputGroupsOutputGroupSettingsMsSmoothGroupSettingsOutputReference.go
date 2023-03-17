@@ -13,9 +13,9 @@ type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroup
 	AcquisitionPointId() *string
 	SetAcquisitionPointId(val *string)
 	AcquisitionPointIdInput() *string
-	AudioOnlyTimecodecControl() *string
-	SetAudioOnlyTimecodecControl(val *string)
-	AudioOnlyTimecodecControlInput() *string
+	AudioOnlyTimecodeControl() *string
+	SetAudioOnlyTimecodeControl(val *string)
+	AudioOnlyTimecodeControlInput() *string
 	CertificateMode() *string
 	SetCertificateMode(val *string)
 	CertificateModeInput() *string
@@ -39,9 +39,9 @@ type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroup
 	CreationStack() *[]*string
 	Destination() MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestinationOutputReference
 	DestinationInput() *MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination
-	EventId() *float64
-	SetEventId(val *float64)
-	EventIdInput() *float64
+	EventId() *string
+	SetEventId(val *string)
+	EventIdInput() *string
 	EventIdMode() *string
 	SetEventIdMode(val *string)
 	EventIdModeInput() *string
@@ -119,7 +119,7 @@ type MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroup
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDestination(value *MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsDestination)
 	ResetAcquisitionPointId()
-	ResetAudioOnlyTimecodecControl()
+	ResetAudioOnlyTimecodeControl()
 	ResetCertificateMode()
 	ResetConnectionRetryInterval()
 	ResetEventId()
@@ -171,21 +171,21 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference) AudioOnlyTimecodecControl() *string {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference) AudioOnlyTimecodeControl() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"audioOnlyTimecodecControl",
+		"audioOnlyTimecodeControl",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference) AudioOnlyTimecodecControlInput() *string {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference) AudioOnlyTimecodeControlInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"audioOnlyTimecodecControlInput",
+		"audioOnlyTimecodeControlInput",
 		&returns,
 	)
 	return returns
@@ -281,8 +281,8 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference) EventId() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference) EventId() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"eventId",
@@ -291,8 +291,8 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference) EventIdInput() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference) EventIdInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"eventIdInput",
@@ -640,13 +640,13 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference)SetAudioOnlyTimecodecControl(val *string) {
-	if err := j.validateSetAudioOnlyTimecodecControlParameters(val); err != nil {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference)SetAudioOnlyTimecodeControl(val *string) {
+	if err := j.validateSetAudioOnlyTimecodeControlParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"audioOnlyTimecodecControl",
+		"audioOnlyTimecodeControl",
 		val,
 	)
 }
@@ -695,7 +695,7 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference)SetEventId(val *float64) {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference)SetEventId(val *string) {
 	if err := j.validateSetEventIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -1087,10 +1087,10 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSetting
 	)
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference) ResetAudioOnlyTimecodecControl() {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputGroupSettingsMsSmoothGroupSettingsOutputReference) ResetAudioOnlyTimecodeControl() {
 	_jsii_.InvokeVoid(
 		m,
-		"resetAudioOnlyTimecodecControl",
+		"resetAudioOnlyTimecodeControl",
 		nil, // no parameters
 	)
 }
