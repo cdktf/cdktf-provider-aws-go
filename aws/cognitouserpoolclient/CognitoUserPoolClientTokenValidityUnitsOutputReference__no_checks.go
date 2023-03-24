@@ -64,7 +64,7 @@ func (j *jsiiProxy_CognitoUserPoolClientTokenValidityUnitsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolClientTokenValidityUnitsOutputReference) validateSetInternalValueParameters(val *CognitoUserPoolClientTokenValidityUnits) error {
+func (j *jsiiProxy_CognitoUserPoolClientTokenValidityUnitsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_CognitoUserPoolClientTokenValidityUnitsOutputReference) valid
 	return nil
 }
 
-func validateNewCognitoUserPoolClientTokenValidityUnitsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCognitoUserPoolClientTokenValidityUnitsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -25,6 +25,8 @@ type AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Format() AppmeshVirtualGatewaySpecLoggingAccessLogFileFormatOutputReference
+	FormatInput() *AppmeshVirtualGatewaySpecLoggingAccessLogFileFormat
 	// Experimental.
 	Fqn() *string
 	InternalValue() *AppmeshVirtualGatewaySpecLoggingAccessLogFile
@@ -64,6 +66,8 @@ type AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutFormat(value *AppmeshVirtualGatewaySpecLoggingAccessLogFileFormat)
+	ResetFormat()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -104,6 +108,26 @@ func (j *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference)
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference) Format() AppmeshVirtualGatewaySpecLoggingAccessLogFileFormatOutputReference {
+	var returns AppmeshVirtualGatewaySpecLoggingAccessLogFileFormatOutputReference
+	_jsii_.Get(
+		j,
+		"format",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference) FormatInput() *AppmeshVirtualGatewaySpecLoggingAccessLogFileFormat {
+	var returns *AppmeshVirtualGatewaySpecLoggingAccessLogFileFormat
+	_jsii_.Get(
+		j,
+		"formatInput",
 		&returns,
 	)
 	return returns
@@ -447,6 +471,25 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference)
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference) PutFormat(value *AppmeshVirtualGatewaySpecLoggingAccessLogFileFormat) {
+	if err := a.validatePutFormatParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putFormat",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference) ResetFormat() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFormat",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

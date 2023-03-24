@@ -52,11 +52,11 @@ func (c *jsiiProxy_CognitoUserPoolClient) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolClient) validatePutAnalyticsConfigurationParameters(value *CognitoUserPoolClientAnalyticsConfiguration) error {
+func (c *jsiiProxy_CognitoUserPoolClient) validatePutAnalyticsConfigurationParameters(value interface{}) error {
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolClient) validatePutTokenValidityUnitsParameters(value *CognitoUserPoolClientTokenValidityUnits) error {
+func (c *jsiiProxy_CognitoUserPoolClient) validatePutTokenValidityUnitsParameters(value interface{}) error {
 	return nil
 }
 
@@ -117,10 +117,6 @@ func (j *jsiiProxy_CognitoUserPoolClient) validateSetExplicitAuthFlowsParameters
 }
 
 func (j *jsiiProxy_CognitoUserPoolClient) validateSetGenerateSecretParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_CognitoUserPoolClient) validateSetIdParameters(val *string) error {
 	return nil
 }
 

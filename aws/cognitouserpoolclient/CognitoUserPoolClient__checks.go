@@ -111,23 +111,63 @@ func (c *jsiiProxy_CognitoUserPoolClient) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolClient) validatePutAnalyticsConfigurationParameters(value *CognitoUserPoolClientAnalyticsConfiguration) error {
+func (c *jsiiProxy_CognitoUserPoolClient) validatePutAnalyticsConfigurationParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*CognitoUserPoolClientAnalyticsConfiguration:
+		value := value.(*[]*CognitoUserPoolClientAnalyticsConfiguration)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*CognitoUserPoolClientAnalyticsConfiguration:
+		value_ := value.([]*CognitoUserPoolClientAnalyticsConfiguration)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CognitoUserPoolClientAnalyticsConfiguration; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
 }
 
-func (c *jsiiProxy_CognitoUserPoolClient) validatePutTokenValidityUnitsParameters(value *CognitoUserPoolClientTokenValidityUnits) error {
+func (c *jsiiProxy_CognitoUserPoolClient) validatePutTokenValidityUnitsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*CognitoUserPoolClientTokenValidityUnits:
+		value := value.(*[]*CognitoUserPoolClientTokenValidityUnits)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*CognitoUserPoolClientTokenValidityUnits:
+		value_ := value.([]*CognitoUserPoolClientTokenValidityUnits)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CognitoUserPoolClientTokenValidityUnits; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil
@@ -321,14 +361,6 @@ func (j *jsiiProxy_CognitoUserPoolClient) validateSetGenerateSecretParameters(va
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_CognitoUserPoolClient) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

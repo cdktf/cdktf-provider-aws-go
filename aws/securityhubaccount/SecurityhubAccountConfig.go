@@ -19,6 +19,8 @@ type SecurityhubAccountConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_account#enable_default_standards SecurityhubAccount#enable_default_standards}.
+	EnableDefaultStandards interface{} `field:"optional" json:"enableDefaultStandards" yaml:"enableDefaultStandards"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_account#id SecurityhubAccount#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

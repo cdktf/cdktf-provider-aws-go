@@ -44,6 +44,10 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference) va
 	return nil
 }
 
+func (a *jsiiProxy_AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference) validatePutFormatParameters(value *AppmeshVirtualNodeSpecLoggingAccessLogFileFormat) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppmeshVirtualNodeSpecLoggingAccessLogFileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

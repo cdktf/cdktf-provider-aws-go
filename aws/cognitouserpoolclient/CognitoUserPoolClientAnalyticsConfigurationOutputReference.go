@@ -36,8 +36,8 @@ type CognitoUserPoolClientAnalyticsConfigurationOutputReference interface {
 	ExternalIdInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *CognitoUserPoolClientAnalyticsConfiguration
-	SetInternalValue(val *CognitoUserPoolClientAnalyticsConfiguration)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -196,8 +196,8 @@ func (j *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) InternalValue() *CognitoUserPoolClientAnalyticsConfiguration {
-	var returns *CognitoUserPoolClientAnalyticsConfiguration
+func (j *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -267,29 +267,29 @@ func (j *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) U
 }
 
 
-func NewCognitoUserPoolClientAnalyticsConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CognitoUserPoolClientAnalyticsConfigurationOutputReference {
+func NewCognitoUserPoolClientAnalyticsConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CognitoUserPoolClientAnalyticsConfigurationOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewCognitoUserPoolClientAnalyticsConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewCognitoUserPoolClientAnalyticsConfigurationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientAnalyticsConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewCognitoUserPoolClientAnalyticsConfigurationOutputReference_Override(c CognitoUserPoolClientAnalyticsConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCognitoUserPoolClientAnalyticsConfigurationOutputReference_Override(c CognitoUserPoolClientAnalyticsConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientAnalyticsConfigurationOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
 }
@@ -349,7 +349,7 @@ func (j *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference)SetInternalValue(val *CognitoUserPoolClientAnalyticsConfiguration) {
+func (j *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

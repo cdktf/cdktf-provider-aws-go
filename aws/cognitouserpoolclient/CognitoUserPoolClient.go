@@ -24,8 +24,8 @@ type CognitoUserPoolClient interface {
 	AllowedOauthScopes() *[]*string
 	SetAllowedOauthScopes(val *[]*string)
 	AllowedOauthScopesInput() *[]*string
-	AnalyticsConfiguration() CognitoUserPoolClientAnalyticsConfigurationOutputReference
-	AnalyticsConfigurationInput() *CognitoUserPoolClientAnalyticsConfiguration
+	AnalyticsConfiguration() CognitoUserPoolClientAnalyticsConfigurationList
+	AnalyticsConfigurationInput() interface{}
 	AuthSessionValidity() *float64
 	SetAuthSessionValidity(val *float64)
 	AuthSessionValidityInput() *float64
@@ -73,8 +73,6 @@ type CognitoUserPoolClient interface {
 	SetGenerateSecret(val interface{})
 	GenerateSecretInput() interface{}
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	IdTokenValidity() *float64
 	SetIdTokenValidity(val *float64)
 	IdTokenValidityInput() *float64
@@ -118,8 +116,8 @@ type CognitoUserPoolClient interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	TokenValidityUnits() CognitoUserPoolClientTokenValidityUnitsOutputReference
-	TokenValidityUnitsInput() *CognitoUserPoolClientTokenValidityUnits
+	TokenValidityUnits() CognitoUserPoolClientTokenValidityUnitsList
+	TokenValidityUnitsInput() interface{}
 	UserPoolId() *string
 	SetUserPoolId(val *string)
 	UserPoolIdInput() *string
@@ -151,8 +149,8 @@ type CognitoUserPoolClient interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutAnalyticsConfiguration(value *CognitoUserPoolClientAnalyticsConfiguration)
-	PutTokenValidityUnits(value *CognitoUserPoolClientTokenValidityUnits)
+	PutAnalyticsConfiguration(value interface{})
+	PutTokenValidityUnits(value interface{})
 	ResetAccessTokenValidity()
 	ResetAllowedOauthFlows()
 	ResetAllowedOauthFlowsUserPoolClient()
@@ -165,7 +163,6 @@ type CognitoUserPoolClient interface {
 	ResetEnableTokenRevocation()
 	ResetExplicitAuthFlows()
 	ResetGenerateSecret()
-	ResetId()
 	ResetIdTokenValidity()
 	ResetLogoutUrls()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -272,8 +269,8 @@ func (j *jsiiProxy_CognitoUserPoolClient) AllowedOauthScopesInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUserPoolClient) AnalyticsConfiguration() CognitoUserPoolClientAnalyticsConfigurationOutputReference {
-	var returns CognitoUserPoolClientAnalyticsConfigurationOutputReference
+func (j *jsiiProxy_CognitoUserPoolClient) AnalyticsConfiguration() CognitoUserPoolClientAnalyticsConfigurationList {
+	var returns CognitoUserPoolClientAnalyticsConfigurationList
 	_jsii_.Get(
 		j,
 		"analyticsConfiguration",
@@ -282,8 +279,8 @@ func (j *jsiiProxy_CognitoUserPoolClient) AnalyticsConfiguration() CognitoUserPo
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUserPoolClient) AnalyticsConfigurationInput() *CognitoUserPoolClientAnalyticsConfiguration {
-	var returns *CognitoUserPoolClientAnalyticsConfiguration
+func (j *jsiiProxy_CognitoUserPoolClient) AnalyticsConfigurationInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"analyticsConfigurationInput",
@@ -532,16 +529,6 @@ func (j *jsiiProxy_CognitoUserPoolClient) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUserPoolClient) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_CognitoUserPoolClient) IdTokenValidity() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -762,8 +749,8 @@ func (j *jsiiProxy_CognitoUserPoolClient) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUserPoolClient) TokenValidityUnits() CognitoUserPoolClientTokenValidityUnitsOutputReference {
-	var returns CognitoUserPoolClientTokenValidityUnitsOutputReference
+func (j *jsiiProxy_CognitoUserPoolClient) TokenValidityUnits() CognitoUserPoolClientTokenValidityUnitsList {
+	var returns CognitoUserPoolClientTokenValidityUnitsList
 	_jsii_.Get(
 		j,
 		"tokenValidityUnits",
@@ -772,8 +759,8 @@ func (j *jsiiProxy_CognitoUserPoolClient) TokenValidityUnits() CognitoUserPoolCl
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUserPoolClient) TokenValidityUnitsInput() *CognitoUserPoolClientTokenValidityUnits {
-	var returns *CognitoUserPoolClientTokenValidityUnits
+func (j *jsiiProxy_CognitoUserPoolClient) TokenValidityUnitsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"tokenValidityUnitsInput",
@@ -1004,17 +991,6 @@ func (j *jsiiProxy_CognitoUserPoolClient)SetGenerateSecret(val interface{}) {
 	_jsii_.Set(
 		j,
 		"generateSecret",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CognitoUserPoolClient)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -1414,7 +1390,7 @@ func (c *jsiiProxy_CognitoUserPoolClient) OverrideLogicalId(newLogicalId *string
 	)
 }
 
-func (c *jsiiProxy_CognitoUserPoolClient) PutAnalyticsConfiguration(value *CognitoUserPoolClientAnalyticsConfiguration) {
+func (c *jsiiProxy_CognitoUserPoolClient) PutAnalyticsConfiguration(value interface{}) {
 	if err := c.validatePutAnalyticsConfigurationParameters(value); err != nil {
 		panic(err)
 	}
@@ -1425,7 +1401,7 @@ func (c *jsiiProxy_CognitoUserPoolClient) PutAnalyticsConfiguration(value *Cogni
 	)
 }
 
-func (c *jsiiProxy_CognitoUserPoolClient) PutTokenValidityUnits(value *CognitoUserPoolClientTokenValidityUnits) {
+func (c *jsiiProxy_CognitoUserPoolClient) PutTokenValidityUnits(value interface{}) {
 	if err := c.validatePutTokenValidityUnitsParameters(value); err != nil {
 		panic(err)
 	}
@@ -1528,14 +1504,6 @@ func (c *jsiiProxy_CognitoUserPoolClient) ResetGenerateSecret() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetGenerateSecret",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CognitoUserPoolClient) ResetId() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetId",
 		nil, // no parameters
 	)
 }

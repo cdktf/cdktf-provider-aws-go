@@ -68,7 +68,7 @@ func (j *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) validateSetInternalValueParameters(val *CognitoUserPoolClientAnalyticsConfiguration) error {
+func (j *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) v
 	return nil
 }
 
-func validateNewCognitoUserPoolClientAnalyticsConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCognitoUserPoolClientAnalyticsConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

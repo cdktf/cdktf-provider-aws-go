@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataAwsEcsCluster) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEcsCluster) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewDataAwsEcsClusterParameters(scope constructs.Construct, id *string, config *DataAwsEcsClusterConfig) error {
 	return nil
 }

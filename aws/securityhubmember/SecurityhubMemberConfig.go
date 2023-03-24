@@ -22,7 +22,7 @@ type SecurityhubMemberConfig struct {
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_member#account_id SecurityhubMember#account_id}.
 	AccountId *string `field:"required" json:"accountId" yaml:"accountId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_member#email SecurityhubMember#email}.
-	Email *string `field:"required" json:"email" yaml:"email"`
+	Email *string `field:"optional" json:"email" yaml:"email"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/securityhub_member#id SecurityhubMember#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

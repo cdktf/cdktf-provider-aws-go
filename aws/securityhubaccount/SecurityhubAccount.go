@@ -28,6 +28,9 @@ type SecurityhubAccount interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnableDefaultStandards() interface{}
+	SetEnableDefaultStandards(val interface{})
+	EnableDefaultStandardsInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -86,6 +89,7 @@ type SecurityhubAccount interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetEnableDefaultStandards()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -150,6 +154,26 @@ func (j *jsiiProxy_SecurityhubAccount) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityhubAccount) EnableDefaultStandards() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDefaultStandards",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityhubAccount) EnableDefaultStandardsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableDefaultStandardsInput",
 		&returns,
 	)
 	return returns
@@ -338,6 +362,17 @@ func (j *jsiiProxy_SecurityhubAccount)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityhubAccount)SetEnableDefaultStandards(val interface{}) {
+	if err := j.validateSetEnableDefaultStandardsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableDefaultStandards",
 		val,
 	)
 }
@@ -654,6 +689,14 @@ func (s *jsiiProxy_SecurityhubAccount) OverrideLogicalId(newLogicalId *string) {
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_SecurityhubAccount) ResetEnableDefaultStandards() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnableDefaultStandards",
+		nil, // no parameters
 	)
 }
 

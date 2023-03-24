@@ -1,0 +1,6 @@
+package dataawsappmeshvirtualgateway
+
+
+type DataAwsAppmeshVirtualGatewaySpecBackendDefaultsClientPolicyTls struct {
+}
+

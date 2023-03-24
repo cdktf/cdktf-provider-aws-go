@@ -97,6 +97,7 @@ type SecurityhubMember interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetEmail()
 	ResetId()
 	ResetInvite()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -779,6 +780,14 @@ func (s *jsiiProxy_SecurityhubMember) OverrideLogicalId(newLogicalId *string) {
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_SecurityhubMember) ResetEmail() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEmail",
+		nil, // no parameters
 	)
 }
 
