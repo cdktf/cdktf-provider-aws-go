@@ -182,6 +182,14 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference) validateSetPortParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

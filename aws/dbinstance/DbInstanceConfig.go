@@ -88,6 +88,10 @@ type DbInstanceConfig struct {
 	LicenseModel *string `field:"optional" json:"licenseModel" yaml:"licenseModel"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#maintenance_window DbInstance#maintenance_window}.
 	MaintenanceWindow *string `field:"optional" json:"maintenanceWindow" yaml:"maintenanceWindow"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#manage_master_user_password DbInstance#manage_master_user_password}.
+	ManageMasterUserPassword interface{} `field:"optional" json:"manageMasterUserPassword" yaml:"manageMasterUserPassword"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#master_user_secret_kms_key_id DbInstance#master_user_secret_kms_key_id}.
+	MasterUserSecretKmsKeyId *string `field:"optional" json:"masterUserSecretKmsKeyId" yaml:"masterUserSecretKmsKeyId"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#max_allocated_storage DbInstance#max_allocated_storage}.
 	MaxAllocatedStorage *float64 `field:"optional" json:"maxAllocatedStorage" yaml:"maxAllocatedStorage"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_instance#monitoring_interval DbInstance#monitoring_interval}.

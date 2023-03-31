@@ -90,12 +90,85 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference) valida
 	return nil
 }
 
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference) validatePutHeaderParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*AppmeshGatewayRouteSpecHttp2RouteMatchHeader:
+		value := value.(*[]*AppmeshGatewayRouteSpecHttp2RouteMatchHeader)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*AppmeshGatewayRouteSpecHttp2RouteMatchHeader:
+		value_ := value.([]*AppmeshGatewayRouteSpecHttp2RouteMatchHeader)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AppmeshGatewayRouteSpecHttp2RouteMatchHeader; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference) validatePutHostnameParameters(value *AppmeshGatewayRouteSpecHttp2RouteMatchHostname) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference) validatePutPathParameters(value *AppmeshGatewayRouteSpecHttp2RouteMatchPath) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference) validatePutQueryParameterParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameter:
+		value := value.(*[]*AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameter)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameter:
+		value_ := value.([]*AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameter)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AppmeshGatewayRouteSpecHttp2RouteMatchQueryParameter; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil

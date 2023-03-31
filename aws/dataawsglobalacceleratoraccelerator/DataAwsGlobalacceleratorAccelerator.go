@@ -29,6 +29,7 @@ type DataAwsGlobalacceleratorAccelerator interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DnsName() *string
+	DualStackDnsName() *string
 	Enabled() cdktf.IResolvable
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -187,6 +188,16 @@ func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) DnsName() *string {
 	_jsii_.Get(
 		j,
 		"dnsName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) DualStackDnsName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dualStackDnsName",
 		&returns,
 	)
 	return returns

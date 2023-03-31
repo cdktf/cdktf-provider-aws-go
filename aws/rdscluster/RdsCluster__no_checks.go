@@ -208,11 +208,19 @@ func (j *jsiiProxy_RdsCluster) validateSetLifecycleParameters(val *cdktf.Terrafo
 	return nil
 }
 
+func (j *jsiiProxy_RdsCluster) validateSetManageMasterUserPasswordParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsCluster) validateSetMasterPasswordParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_RdsCluster) validateSetMasterUsernameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RdsCluster) validateSetMasterUserSecretKmsKeyIdParameters(val *string) error {
 	return nil
 }
 

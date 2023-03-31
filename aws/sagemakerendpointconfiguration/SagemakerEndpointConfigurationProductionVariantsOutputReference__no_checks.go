@@ -72,6 +72,10 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validateSetEnableSsmAccessParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validateSetInitialInstanceCountParameters(val *float64) error {
 	return nil
 }

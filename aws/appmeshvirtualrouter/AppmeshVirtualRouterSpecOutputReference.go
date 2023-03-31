@@ -64,6 +64,7 @@ type AppmeshVirtualRouterSpecOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutListener(value interface{})
+	ResetListener()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -446,6 +447,14 @@ func (a *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) PutListener(value in
 		a,
 		"putListener",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppmeshVirtualRouterSpecOutputReference) ResetListener() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetListener",
+		nil, // no parameters
 	)
 }
 

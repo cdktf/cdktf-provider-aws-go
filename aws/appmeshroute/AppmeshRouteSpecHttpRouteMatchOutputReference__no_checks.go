@@ -48,6 +48,14 @@ func (a *jsiiProxy_AppmeshRouteSpecHttpRouteMatchOutputReference) validatePutHea
 	return nil
 }
 
+func (a *jsiiProxy_AppmeshRouteSpecHttpRouteMatchOutputReference) validatePutPathParameters(value *AppmeshRouteSpecHttpRouteMatchPath) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppmeshRouteSpecHttpRouteMatchOutputReference) validatePutQueryParameterParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppmeshRouteSpecHttpRouteMatchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -31,8 +31,10 @@ type DataAwsAppmeshRouteSpecHttpRouteMatchOutputReference interface {
 	InternalValue() *DataAwsAppmeshRouteSpecHttpRouteMatch
 	SetInternalValue(val *DataAwsAppmeshRouteSpecHttpRouteMatch)
 	Method() *string
+	Path() DataAwsAppmeshRouteSpecHttpRouteMatchPathList
 	Port() *float64
 	Prefix() *string
+	QueryParameter() DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterList
 	Scheme() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -151,6 +153,16 @@ func (j *jsiiProxy_DataAwsAppmeshRouteSpecHttpRouteMatchOutputReference) Method(
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsAppmeshRouteSpecHttpRouteMatchOutputReference) Path() DataAwsAppmeshRouteSpecHttpRouteMatchPathList {
+	var returns DataAwsAppmeshRouteSpecHttpRouteMatchPathList
+	_jsii_.Get(
+		j,
+		"path",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsAppmeshRouteSpecHttpRouteMatchOutputReference) Port() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -166,6 +178,16 @@ func (j *jsiiProxy_DataAwsAppmeshRouteSpecHttpRouteMatchOutputReference) Prefix(
 	_jsii_.Get(
 		j,
 		"prefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAppmeshRouteSpecHttpRouteMatchOutputReference) QueryParameter() DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterList {
+	var returns DataAwsAppmeshRouteSpecHttpRouteMatchQueryParameterList
+	_jsii_.Get(
+		j,
+		"queryParameter",
 		&returns,
 	)
 	return returns

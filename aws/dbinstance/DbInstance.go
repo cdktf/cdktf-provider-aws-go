@@ -142,6 +142,13 @@ type DbInstance interface {
 	MaintenanceWindow() *string
 	SetMaintenanceWindow(val *string)
 	MaintenanceWindowInput() *string
+	ManageMasterUserPassword() interface{}
+	SetManageMasterUserPassword(val interface{})
+	ManageMasterUserPasswordInput() interface{}
+	MasterUserSecret() DbInstanceMasterUserSecretList
+	MasterUserSecretKmsKeyId() *string
+	SetMasterUserSecretKmsKeyId(val *string)
+	MasterUserSecretKmsKeyIdInput() *string
 	MaxAllocatedStorage() *float64
 	SetMaxAllocatedStorage(val *float64)
 	MaxAllocatedStorageInput() *float64
@@ -313,6 +320,8 @@ type DbInstance interface {
 	ResetKmsKeyId()
 	ResetLicenseModel()
 	ResetMaintenanceWindow()
+	ResetManageMasterUserPassword()
+	ResetMasterUserSecretKmsKeyId()
 	ResetMaxAllocatedStorage()
 	ResetMonitoringInterval()
 	ResetMonitoringRoleArn()
@@ -1157,6 +1166,56 @@ func (j *jsiiProxy_DbInstance) MaintenanceWindowInput() *string {
 	_jsii_.Get(
 		j,
 		"maintenanceWindowInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) ManageMasterUserPassword() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageMasterUserPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) ManageMasterUserPasswordInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageMasterUserPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) MasterUserSecret() DbInstanceMasterUserSecretList {
+	var returns DbInstanceMasterUserSecretList
+	_jsii_.Get(
+		j,
+		"masterUserSecret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) MasterUserSecretKmsKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"masterUserSecretKmsKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) MasterUserSecretKmsKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"masterUserSecretKmsKeyIdInput",
 		&returns,
 	)
 	return returns
@@ -2299,6 +2358,28 @@ func (j *jsiiProxy_DbInstance)SetMaintenanceWindow(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DbInstance)SetManageMasterUserPassword(val interface{}) {
+	if err := j.validateSetManageMasterUserPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"manageMasterUserPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DbInstance)SetMasterUserSecretKmsKeyId(val *string) {
+	if err := j.validateSetMasterUserSecretKmsKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"masterUserSecretKmsKeyId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DbInstance)SetMaxAllocatedStorage(val *float64) {
 	if err := j.validateSetMaxAllocatedStorageParameters(val); err != nil {
 		panic(err)
@@ -3180,6 +3261,22 @@ func (d *jsiiProxy_DbInstance) ResetMaintenanceWindow() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetMaintenanceWindow",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbInstance) ResetManageMasterUserPassword() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetManageMasterUserPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbInstance) ResetMasterUserSecretKmsKeyId() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetMasterUserSecretKmsKeyId",
 		nil, // no parameters
 	)
 }

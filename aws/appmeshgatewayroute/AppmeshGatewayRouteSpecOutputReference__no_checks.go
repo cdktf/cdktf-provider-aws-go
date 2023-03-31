@@ -72,6 +72,10 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecOutputReference) validateSetInternalVa
 	return nil
 }
 
+func (j *jsiiProxy_AppmeshGatewayRouteSpecOutputReference) validateSetPriorityParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppmeshGatewayRouteSpecOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

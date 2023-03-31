@@ -31,6 +31,7 @@ type GlobalacceleratorAccelerator interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DnsName() *string
+	DualStackDnsName() *string
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
@@ -214,6 +215,16 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator) DnsName() *string {
 	_jsii_.Get(
 		j,
 		"dnsName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlobalacceleratorAccelerator) DualStackDnsName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dualStackDnsName",
 		&returns,
 	)
 	return returns

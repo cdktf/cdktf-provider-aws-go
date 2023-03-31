@@ -132,12 +132,19 @@ type RdsCluster interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ManageMasterUserPassword() interface{}
+	SetManageMasterUserPassword(val interface{})
+	ManageMasterUserPasswordInput() interface{}
 	MasterPassword() *string
 	SetMasterPassword(val *string)
 	MasterPasswordInput() *string
 	MasterUsername() *string
 	SetMasterUsername(val *string)
 	MasterUsernameInput() *string
+	MasterUserSecret() RdsClusterMasterUserSecretList
+	MasterUserSecretKmsKeyId() *string
+	SetMasterUserSecretKmsKeyId(val *string)
+	MasterUserSecretKmsKeyIdInput() *string
 	NetworkType() *string
 	SetNetworkType(val *string)
 	NetworkTypeInput() *string
@@ -265,8 +272,10 @@ type RdsCluster interface {
 	ResetId()
 	ResetIops()
 	ResetKmsKeyId()
+	ResetManageMasterUserPassword()
 	ResetMasterPassword()
 	ResetMasterUsername()
+	ResetMasterUserSecretKmsKeyId()
 	ResetNetworkType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -1023,6 +1032,26 @@ func (j *jsiiProxy_RdsCluster) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_RdsCluster) ManageMasterUserPassword() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageMasterUserPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) ManageMasterUserPasswordInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageMasterUserPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RdsCluster) MasterPassword() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1058,6 +1087,36 @@ func (j *jsiiProxy_RdsCluster) MasterUsernameInput() *string {
 	_jsii_.Get(
 		j,
 		"masterUsernameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) MasterUserSecret() RdsClusterMasterUserSecretList {
+	var returns RdsClusterMasterUserSecretList
+	_jsii_.Get(
+		j,
+		"masterUserSecret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) MasterUserSecretKmsKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"masterUserSecretKmsKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) MasterUserSecretKmsKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"masterUserSecretKmsKeyIdInput",
 		&returns,
 	)
 	return returns
@@ -1898,6 +1957,17 @@ func (j *jsiiProxy_RdsCluster)SetLifecycle(val *cdktf.TerraformResourceLifecycle
 	)
 }
 
+func (j *jsiiProxy_RdsCluster)SetManageMasterUserPassword(val interface{}) {
+	if err := j.validateSetManageMasterUserPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"manageMasterUserPassword",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RdsCluster)SetMasterPassword(val *string) {
 	if err := j.validateSetMasterPasswordParameters(val); err != nil {
 		panic(err)
@@ -1916,6 +1986,17 @@ func (j *jsiiProxy_RdsCluster)SetMasterUsername(val *string) {
 	_jsii_.Set(
 		j,
 		"masterUsername",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsCluster)SetMasterUserSecretKmsKeyId(val *string) {
+	if err := j.validateSetMasterUserSecretKmsKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"masterUserSecretKmsKeyId",
 		val,
 	)
 }
@@ -2635,6 +2716,14 @@ func (r *jsiiProxy_RdsCluster) ResetKmsKeyId() {
 	)
 }
 
+func (r *jsiiProxy_RdsCluster) ResetManageMasterUserPassword() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetManageMasterUserPassword",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RdsCluster) ResetMasterPassword() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2647,6 +2736,14 @@ func (r *jsiiProxy_RdsCluster) ResetMasterUsername() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetMasterUsername",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsCluster) ResetMasterUserSecretKmsKeyId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMasterUserSecretKmsKeyId",
 		nil, // no parameters
 	)
 }

@@ -27,16 +27,22 @@ type AppmeshGatewayRouteSpecHttpRouteMatchOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Header() AppmeshGatewayRouteSpecHttpRouteMatchHeaderList
+	HeaderInput() interface{}
 	Hostname() AppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference
 	HostnameInput() *AppmeshGatewayRouteSpecHttpRouteMatchHostname
 	InternalValue() *AppmeshGatewayRouteSpecHttpRouteMatch
 	SetInternalValue(val *AppmeshGatewayRouteSpecHttpRouteMatch)
+	Path() AppmeshGatewayRouteSpecHttpRouteMatchPathOutputReference
+	PathInput() *AppmeshGatewayRouteSpecHttpRouteMatchPath
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
 	Prefix() *string
 	SetPrefix(val *string)
 	PrefixInput() *string
+	QueryParameter() AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterList
+	QueryParameterInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,10 +75,16 @@ type AppmeshGatewayRouteSpecHttpRouteMatchOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutHeader(value interface{})
 	PutHostname(value *AppmeshGatewayRouteSpecHttpRouteMatchHostname)
+	PutPath(value *AppmeshGatewayRouteSpecHttpRouteMatchPath)
+	PutQueryParameter(value interface{})
+	ResetHeader()
 	ResetHostname()
+	ResetPath()
 	ResetPort()
 	ResetPrefix()
+	ResetQueryParameter()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -128,6 +140,26 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchOutputReference) Fqn() *
 	return returns
 }
 
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchOutputReference) Header() AppmeshGatewayRouteSpecHttpRouteMatchHeaderList {
+	var returns AppmeshGatewayRouteSpecHttpRouteMatchHeaderList
+	_jsii_.Get(
+		j,
+		"header",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchOutputReference) HeaderInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"headerInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchOutputReference) Hostname() AppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference {
 	var returns AppmeshGatewayRouteSpecHttpRouteMatchHostnameOutputReference
 	_jsii_.Get(
@@ -153,6 +185,26 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchOutputReference) Interna
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchOutputReference) Path() AppmeshGatewayRouteSpecHttpRouteMatchPathOutputReference {
+	var returns AppmeshGatewayRouteSpecHttpRouteMatchPathOutputReference
+	_jsii_.Get(
+		j,
+		"path",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchOutputReference) PathInput() *AppmeshGatewayRouteSpecHttpRouteMatchPath {
+	var returns *AppmeshGatewayRouteSpecHttpRouteMatchPath
+	_jsii_.Get(
+		j,
+		"pathInput",
 		&returns,
 	)
 	return returns
@@ -193,6 +245,26 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchOutputReference) PrefixI
 	_jsii_.Get(
 		j,
 		"prefixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchOutputReference) QueryParameter() AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterList {
+	var returns AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterList
+	_jsii_.Get(
+		j,
+		"queryParameter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchOutputReference) QueryParameterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"queryParameterInput",
 		&returns,
 	)
 	return returns
@@ -509,6 +581,17 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchOutputReference) Interpo
 	return returns
 }
 
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchOutputReference) PutHeader(value interface{}) {
+	if err := a.validatePutHeaderParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putHeader",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchOutputReference) PutHostname(value *AppmeshGatewayRouteSpecHttpRouteMatchHostname) {
 	if err := a.validatePutHostnameParameters(value); err != nil {
 		panic(err)
@@ -520,10 +603,48 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchOutputReference) PutHost
 	)
 }
 
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchOutputReference) PutPath(value *AppmeshGatewayRouteSpecHttpRouteMatchPath) {
+	if err := a.validatePutPathParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putPath",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchOutputReference) PutQueryParameter(value interface{}) {
+	if err := a.validatePutQueryParameterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putQueryParameter",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchOutputReference) ResetHeader() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetHeader",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchOutputReference) ResetHostname() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetHostname",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchOutputReference) ResetPath() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPath",
 		nil, // no parameters
 	)
 }
@@ -540,6 +661,14 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchOutputReference) ResetPr
 	_jsii_.InvokeVoid(
 		a,
 		"resetPrefix",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteMatchOutputReference) ResetQueryParameter() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetQueryParameter",
 		nil, // no parameters
 	)
 }

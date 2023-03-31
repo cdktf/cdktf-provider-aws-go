@@ -212,6 +212,14 @@ func (j *jsiiProxy_DbInstance) validateSetMaintenanceWindowParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DbInstance) validateSetManageMasterUserPasswordParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DbInstance) validateSetMasterUserSecretKmsKeyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbInstance) validateSetMaxAllocatedStorageParameters(val *float64) error {
 	return nil
 }

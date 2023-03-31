@@ -65,6 +65,7 @@ type DataAwsDbInstance interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MasterUsername() *string
+	MasterUserSecret() DataAwsDbInstanceMasterUserSecretList
 	MonitoringInterval() *float64
 	MonitoringRoleArn() *string
 	MultiAz() cdktf.IResolvable
@@ -488,6 +489,16 @@ func (j *jsiiProxy_DataAwsDbInstance) MasterUsername() *string {
 	_jsii_.Get(
 		j,
 		"masterUsername",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDbInstance) MasterUserSecret() DataAwsDbInstanceMasterUserSecretList {
+	var returns DataAwsDbInstanceMasterUserSecretList
+	_jsii_.Get(
+		j,
+		"masterUserSecret",
 		&returns,
 	)
 	return returns

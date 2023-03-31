@@ -35,6 +35,9 @@ type AppmeshGatewayRouteSpecOutputReference interface {
 	HttpRouteInput() *AppmeshGatewayRouteSpecHttpRoute
 	InternalValue() *AppmeshGatewayRouteSpec
 	SetInternalValue(val *AppmeshGatewayRouteSpec)
+	Priority() *float64
+	SetPriority(val *float64)
+	PriorityInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,6 +76,7 @@ type AppmeshGatewayRouteSpecOutputReference interface {
 	ResetGrpcRoute()
 	ResetHttp2Route()
 	ResetHttpRoute()
+	ResetPriority()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -198,6 +202,26 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecOutputReference) InternalValue() *Appm
 	return returns
 }
 
+func (j *jsiiProxy_AppmeshGatewayRouteSpecOutputReference) Priority() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"priority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshGatewayRouteSpecOutputReference) PriorityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"priorityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppmeshGatewayRouteSpecOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -275,6 +299,17 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecOutputReference)SetInternalValue(val *
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppmeshGatewayRouteSpecOutputReference)SetPriority(val *float64) {
+	if err := j.validateSetPriorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"priority",
 		val,
 	)
 }
@@ -540,6 +575,14 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecOutputReference) ResetHttpRoute() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetHttpRoute",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppmeshGatewayRouteSpecOutputReference) ResetPriority() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPriority",
 		nil, // no parameters
 	)
 }

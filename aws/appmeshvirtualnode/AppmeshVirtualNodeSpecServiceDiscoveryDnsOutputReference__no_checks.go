@@ -64,6 +64,14 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference) validateSetIpPreferenceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference) validateSetResponseTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -29,6 +29,9 @@ type AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference interface {
 	Fqn() *string
 	InternalValue() *AppmeshGatewayRouteSpecGrpcRouteActionTarget
 	SetInternalValue(val *AppmeshGatewayRouteSpecGrpcRouteActionTarget)
+	Port() *float64
+	SetPort(val *float64)
+	PortInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +67,7 @@ type AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutVirtualService(value *AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualService)
+	ResetPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -124,6 +128,26 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference) 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference) PortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"portInput",
 		&returns,
 	)
 	return returns
@@ -226,6 +250,17 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference)S
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"port",
 		val,
 	)
 }
@@ -446,6 +481,14 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference) 
 		a,
 		"putVirtualService",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppmeshGatewayRouteSpecGrpcRouteActionTargetOutputReference) ResetPort() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPort",
+		nil, // no parameters
 	)
 }
 

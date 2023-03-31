@@ -1,0 +1,6 @@
+package dataawsglobalacceleratorcustomroutingaccelerator
+
+
+type DataAwsGlobalacceleratorCustomRoutingAcceleratorIpSets struct {
+}
+

@@ -1,0 +1,6 @@
+package dataawsappmeshvirtualnode
+
+
+type DataAwsAppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation struct {
+}
+

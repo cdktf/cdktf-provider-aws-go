@@ -32,6 +32,12 @@ type AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference interface {
 	HostnameInput() *string
 	InternalValue() *AppmeshVirtualNodeSpecServiceDiscoveryDns
 	SetInternalValue(val *AppmeshVirtualNodeSpecServiceDiscoveryDns)
+	IpPreference() *string
+	SetIpPreference(val *string)
+	IpPreferenceInput() *string
+	ResponseType() *string
+	SetResponseType(val *string)
+	ResponseTypeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +70,8 @@ type AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIpPreference()
+	ResetResponseType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,6 +152,46 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference) Int
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference) IpPreference() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipPreference",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference) IpPreferenceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipPreferenceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference) ResponseType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"responseType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference) ResponseTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"responseTypeInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +285,28 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference)SetI
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference)SetIpPreference(val *string) {
+	if err := j.validateSetIpPreferenceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipPreference",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference)SetResponseType(val *string) {
+	if err := j.validateSetResponseTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"responseType",
 		val,
 	)
 }
@@ -447,6 +517,22 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference) Int
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference) ResetIpPreference() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIpPreference",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference) ResetResponseType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetResponseType",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryDnsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

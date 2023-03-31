@@ -102,6 +102,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "listenerEndpoint", GoGetter: "ListenerEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindow", GoGetter: "MaintenanceWindow"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindowInput", GoGetter: "MaintenanceWindowInput"},
+			_jsii_.MemberProperty{JsiiProperty: "manageMasterUserPassword", GoGetter: "ManageMasterUserPassword"},
+			_jsii_.MemberProperty{JsiiProperty: "manageMasterUserPasswordInput", GoGetter: "ManageMasterUserPasswordInput"},
+			_jsii_.MemberProperty{JsiiProperty: "masterUserSecret", GoGetter: "MasterUserSecret"},
+			_jsii_.MemberProperty{JsiiProperty: "masterUserSecretKmsKeyId", GoGetter: "MasterUserSecretKmsKeyId"},
+			_jsii_.MemberProperty{JsiiProperty: "masterUserSecretKmsKeyIdInput", GoGetter: "MasterUserSecretKmsKeyIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maxAllocatedStorage", GoGetter: "MaxAllocatedStorage"},
 			_jsii_.MemberProperty{JsiiProperty: "maxAllocatedStorageInput", GoGetter: "MaxAllocatedStorageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "monitoringInterval", GoGetter: "MonitoringInterval"},
@@ -177,6 +182,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeyId", GoMethod: "ResetKmsKeyId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLicenseModel", GoMethod: "ResetLicenseModel"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaintenanceWindow", GoMethod: "ResetMaintenanceWindow"},
+			_jsii_.MemberMethod{JsiiMethod: "resetManageMasterUserPassword", GoMethod: "ResetManageMasterUserPassword"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMasterUserSecretKmsKeyId", GoMethod: "ResetMasterUserSecretKmsKeyId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxAllocatedStorage", GoMethod: "ResetMaxAllocatedStorage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMonitoringInterval", GoMethod: "ResetMonitoringInterval"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMonitoringRoleArn", GoMethod: "ResetMonitoringRoleArn"},
@@ -351,6 +358,65 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DbInstanceListenerEndpointOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecret",
+		reflect.TypeOf((*DbInstanceMasterUserSecret)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretList",
+		reflect.TypeOf((*DbInstanceMasterUserSecretList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DbInstanceMasterUserSecretList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.dbInstance.DbInstanceMasterUserSecretOutputReference",
+		reflect.TypeOf((*DbInstanceMasterUserSecretOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "kmsKeyId", GoGetter: "KmsKeyId"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "secretArn", GoGetter: "SecretArn"},
+			_jsii_.MemberProperty{JsiiProperty: "secretStatus", GoGetter: "SecretStatus"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DbInstanceMasterUserSecretOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

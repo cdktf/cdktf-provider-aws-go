@@ -29,6 +29,9 @@ type AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference interface {
 	Fqn() *string
 	InternalValue() *AppmeshGatewayRouteSpecHttp2RouteActionTarget
 	SetInternalValue(val *AppmeshGatewayRouteSpecHttp2RouteActionTarget)
+	Port() *float64
+	SetPort(val *float64)
+	PortInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +67,7 @@ type AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutVirtualService(value *AppmeshGatewayRouteSpecHttp2RouteActionTargetVirtualService)
+	ResetPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -124,6 +128,26 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference)
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference) PortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"portInput",
 		&returns,
 	)
 	return returns
@@ -226,6 +250,17 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference)
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"port",
 		val,
 	)
 }
@@ -446,6 +481,14 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference)
 		a,
 		"putVirtualService",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionTargetOutputReference) ResetPort() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPort",
+		nil, // no parameters
 	)
 }
 

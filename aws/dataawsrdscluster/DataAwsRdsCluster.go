@@ -62,6 +62,7 @@ type DataAwsRdsCluster interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MasterUsername() *string
+	MasterUserSecret() DataAwsRdsClusterMasterUserSecretList
 	NetworkType() *string
 	// The tree node.
 	Node() constructs.Node
@@ -447,6 +448,16 @@ func (j *jsiiProxy_DataAwsRdsCluster) MasterUsername() *string {
 	_jsii_.Get(
 		j,
 		"masterUsername",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsCluster) MasterUserSecret() DataAwsRdsClusterMasterUserSecretList {
+	var returns DataAwsRdsClusterMasterUserSecretList
+	_jsii_.Get(
+		j,
+		"masterUserSecret",
 		&returns,
 	)
 	return returns

@@ -33,6 +33,9 @@ type SagemakerEndpointConfigurationShadowProductionVariantsOutputReference inter
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableSsmAccess() interface{}
+	SetEnableSsmAccess(val interface{})
+	EnableSsmAccessInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InitialInstanceCount() *float64
@@ -97,6 +100,7 @@ type SagemakerEndpointConfigurationShadowProductionVariantsOutputReference inter
 	ResetAcceleratorType()
 	ResetContainerStartupHealthCheckTimeoutInSeconds()
 	ResetCoreDumpConfig()
+	ResetEnableSsmAccess()
 	ResetInitialInstanceCount()
 	ResetInitialVariantWeight()
 	ResetInstanceType()
@@ -204,6 +208,26 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputR
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputReference) EnableSsmAccess() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableSsmAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputReference) EnableSsmAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableSsmAccessInput",
 		&returns,
 	)
 	return returns
@@ -477,6 +501,17 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputR
 	_jsii_.Set(
 		j,
 		"containerStartupHealthCheckTimeoutInSeconds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputReference)SetEnableSsmAccess(val interface{}) {
+	if err := j.validateSetEnableSsmAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableSsmAccess",
 		val,
 	)
 }
@@ -819,6 +854,14 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputR
 	_jsii_.InvokeVoid(
 		s,
 		"resetCoreDumpConfig",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputReference) ResetEnableSsmAccess() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnableSsmAccess",
 		nil, // no parameters
 	)
 }

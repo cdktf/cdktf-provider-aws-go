@@ -34,12 +34,16 @@ type AppmeshRouteSpecHttp2RouteMatchOutputReference interface {
 	Method() *string
 	SetMethod(val *string)
 	MethodInput() *string
+	Path() AppmeshRouteSpecHttp2RouteMatchPathOutputReference
+	PathInput() *AppmeshRouteSpecHttp2RouteMatchPath
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
 	Prefix() *string
 	SetPrefix(val *string)
 	PrefixInput() *string
+	QueryParameter() AppmeshRouteSpecHttp2RouteMatchQueryParameterList
+	QueryParameterInput() interface{}
 	Scheme() *string
 	SetScheme(val *string)
 	SchemeInput() *string
@@ -76,9 +80,14 @@ type AppmeshRouteSpecHttp2RouteMatchOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutHeader(value interface{})
+	PutPath(value *AppmeshRouteSpecHttp2RouteMatchPath)
+	PutQueryParameter(value interface{})
 	ResetHeader()
 	ResetMethod()
+	ResetPath()
 	ResetPort()
+	ResetPrefix()
+	ResetQueryParameter()
 	ResetScheme()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -185,6 +194,26 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) MethodInput()
 	return returns
 }
 
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) Path() AppmeshRouteSpecHttp2RouteMatchPathOutputReference {
+	var returns AppmeshRouteSpecHttp2RouteMatchPathOutputReference
+	_jsii_.Get(
+		j,
+		"path",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) PathInput() *AppmeshRouteSpecHttp2RouteMatchPath {
+	var returns *AppmeshRouteSpecHttp2RouteMatchPath
+	_jsii_.Get(
+		j,
+		"pathInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) Port() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -220,6 +249,26 @@ func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) PrefixInput()
 	_jsii_.Get(
 		j,
 		"prefixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) QueryParameter() AppmeshRouteSpecHttp2RouteMatchQueryParameterList {
+	var returns AppmeshRouteSpecHttp2RouteMatchQueryParameterList
+	_jsii_.Get(
+		j,
+		"queryParameter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) QueryParameterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"queryParameterInput",
 		&returns,
 	)
 	return returns
@@ -589,6 +638,28 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) PutHeader(val
 	)
 }
 
+func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) PutPath(value *AppmeshRouteSpecHttp2RouteMatchPath) {
+	if err := a.validatePutPathParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putPath",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) PutQueryParameter(value interface{}) {
+	if err := a.validatePutQueryParameterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putQueryParameter",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) ResetHeader() {
 	_jsii_.InvokeVoid(
 		a,
@@ -605,10 +676,34 @@ func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) ResetMethod()
 	)
 }
 
+func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) ResetPath() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPath",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) ResetPort() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) ResetPrefix() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPrefix",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteMatchOutputReference) ResetQueryParameter() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetQueryParameter",
 		nil, // no parameters
 	)
 }

@@ -44,7 +44,19 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference) valida
 	return nil
 }
 
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference) validatePutHeaderParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference) validatePutHostnameParameters(value *AppmeshGatewayRouteSpecHttp2RouteMatchHostname) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference) validatePutPathParameters(value *AppmeshGatewayRouteSpecHttp2RouteMatchPath) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteMatchOutputReference) validatePutQueryParameterParameters(value interface{}) error {
 	return nil
 }
 

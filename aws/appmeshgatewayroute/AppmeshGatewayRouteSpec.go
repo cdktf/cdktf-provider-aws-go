@@ -14,5 +14,7 @@ type AppmeshGatewayRouteSpec struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#http_route AppmeshGatewayRoute#http_route}
 	HttpRoute *AppmeshGatewayRouteSpecHttpRoute `field:"optional" json:"httpRoute" yaml:"httpRoute"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#priority AppmeshGatewayRoute#priority}.
+	Priority *float64 `field:"optional" json:"priority" yaml:"priority"`
 }
 

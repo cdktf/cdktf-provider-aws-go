@@ -206,6 +206,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "listener", GoGetter: "Listener"},
 			_jsii_.MemberProperty{JsiiProperty: "listenerInput", GoGetter: "ListenerInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putListener", GoMethod: "PutListener"},
+			_jsii_.MemberMethod{JsiiMethod: "resetListener", GoMethod: "ResetListener"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

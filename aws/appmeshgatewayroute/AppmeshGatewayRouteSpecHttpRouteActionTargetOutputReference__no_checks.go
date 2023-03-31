@@ -64,6 +64,10 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference) validateSetPortParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionTargetOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
