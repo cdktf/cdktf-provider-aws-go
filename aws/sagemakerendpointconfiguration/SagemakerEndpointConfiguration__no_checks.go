@@ -100,6 +100,10 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration) validateSetNameParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerEndpointConfiguration) validateSetNamePrefixParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerEndpointConfiguration) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

@@ -213,6 +213,14 @@ func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) validateSetTableFormatParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

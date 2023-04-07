@@ -72,6 +72,10 @@ func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) validateSetTableFormatParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

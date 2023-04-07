@@ -28,10 +28,16 @@ type SecretsmanagerSecretRotationRulesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Duration() *string
+	SetDuration(val *string)
+	DurationInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *SecretsmanagerSecretRotationRules
 	SetInternalValue(val *SecretsmanagerSecretRotationRules)
+	ScheduleExpression() *string
+	SetScheduleExpression(val *string)
+	ScheduleExpressionInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +70,9 @@ type SecretsmanagerSecretRotationRulesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAutomaticallyAfterDays()
+	ResetDuration()
+	ResetScheduleExpression()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -129,6 +138,26 @@ func (j *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference) CreationSta
 	return returns
 }
 
+func (j *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference) Duration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"duration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference) DurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"durationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -144,6 +173,26 @@ func (j *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference) InternalVal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference) ScheduleExpression() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scheduleExpression",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference) ScheduleExpressionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scheduleExpressionInput",
 		&returns,
 	)
 	return returns
@@ -230,6 +279,17 @@ func (j *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference)SetComplexOb
 	)
 }
 
+func (j *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference)SetDuration(val *string) {
+	if err := j.validateSetDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"duration",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference)SetInternalValue(val *SecretsmanagerSecretRotationRules) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -237,6 +297,17 @@ func (j *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference)SetInternalV
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference)SetScheduleExpression(val *string) {
+	if err := j.validateSetScheduleExpressionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scheduleExpression",
 		val,
 	)
 }
@@ -447,6 +518,30 @@ func (s *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference) Interpolati
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference) ResetAutomaticallyAfterDays() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAutomaticallyAfterDays",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference) ResetDuration() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDuration",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference) ResetScheduleExpression() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetScheduleExpression",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

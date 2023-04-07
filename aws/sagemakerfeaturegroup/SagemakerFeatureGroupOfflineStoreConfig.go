@@ -12,5 +12,7 @@ type SagemakerFeatureGroupOfflineStoreConfig struct {
 	DataCatalogConfig *SagemakerFeatureGroupOfflineStoreConfigDataCatalogConfig `field:"optional" json:"dataCatalogConfig" yaml:"dataCatalogConfig"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#disable_glue_table_creation SagemakerFeatureGroup#disable_glue_table_creation}.
 	DisableGlueTableCreation interface{} `field:"optional" json:"disableGlueTableCreation" yaml:"disableGlueTableCreation"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_feature_group#table_format SagemakerFeatureGroup#table_format}.
+	TableFormat *string `field:"optional" json:"tableFormat" yaml:"tableFormat"`
 }
 

@@ -10,9 +10,9 @@ import (
 
 type MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference interface {
 	cdktf.ComplexObject
-	CertficateMode() *string
-	SetCertficateMode(val *string)
-	CertficateModeInput() *string
+	CertificateMode() *string
+	SetCertificateMode(val *string)
+	CertificateModeInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -73,7 +73,7 @@ type MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputS
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDestination(value *MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsDestination)
-	ResetCertficateMode()
+	ResetCertificateMode()
 	ResetConnectionRetryInterval()
 	ResetNumRetries()
 	// Produce the Token's value at resolution time.
@@ -91,21 +91,21 @@ type jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsR
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference) CertficateMode() *string {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference) CertificateMode() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"certficateMode",
+		"certificateMode",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference) CertficateModeInput() *string {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference) CertificateModeInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"certficateModeInput",
+		"certificateModeInput",
 		&returns,
 	)
 	return returns
@@ -269,13 +269,13 @@ func NewMedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutp
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference)SetCertficateMode(val *string) {
-	if err := j.validateSetCertficateModeParameters(val); err != nil {
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference)SetCertificateMode(val *string) {
+	if err := j.validateSetCertificateModeParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"certficateMode",
+		"certificateMode",
 		val,
 	)
 }
@@ -554,10 +554,10 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSetti
 	)
 }
 
-func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference) ResetCertficateMode() {
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsRtmpOutputSettingsOutputReference) ResetCertificateMode() {
 	_jsii_.InvokeVoid(
 		m,
-		"resetCertficateMode",
+		"resetCertificateMode",
 		nil, // no parameters
 	)
 }

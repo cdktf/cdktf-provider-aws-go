@@ -54,6 +54,9 @@ type SagemakerEndpointConfiguration interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NamePrefix() *string
+	SetNamePrefix(val *string)
+	NamePrefixInput() *string
 	// The tree node.
 	Node() constructs.Node
 	ProductionVariants() SagemakerEndpointConfigurationProductionVariantsList
@@ -116,6 +119,7 @@ type SagemakerEndpointConfiguration interface {
 	ResetId()
 	ResetKmsKeyArn()
 	ResetName()
+	ResetNamePrefix()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -332,6 +336,26 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration) NameInput() *string {
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfiguration) NamePrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfiguration) NamePrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefixInput",
 		&returns,
 	)
 	return returns
@@ -592,6 +616,17 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfiguration)SetNamePrefix(val *string) {
+	if err := j.validateSetNamePrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namePrefix",
 		val,
 	)
 }
@@ -983,6 +1018,14 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) ResetName() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerEndpointConfiguration) ResetNamePrefix() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetNamePrefix",
 		nil, // no parameters
 	)
 }

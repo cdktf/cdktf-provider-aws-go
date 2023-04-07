@@ -60,7 +60,15 @@ func (j *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference) validateSetDurationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference) validateSetInternalValueParameters(val *SecretsmanagerSecretRotationRules) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference) validateSetScheduleExpressionParameters(val *string) error {
 	return nil
 }
 

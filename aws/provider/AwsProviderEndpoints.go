@@ -180,6 +180,10 @@ type AwsProviderEndpoints struct {
 	Chimesdkidentity *string `field:"optional" json:"chimesdkidentity" yaml:"chimesdkidentity"`
 	// Use this to override the default service endpoint URL.
 	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#chimesdkmediapipelines AwsProvider#chimesdkmediapipelines}
+	Chimesdkmediapipelines *string `field:"optional" json:"chimesdkmediapipelines" yaml:"chimesdkmediapipelines"`
+	// Use this to override the default service endpoint URL.
+	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#chimesdkmeetings AwsProvider#chimesdkmeetings}
 	Chimesdkmeetings *string `field:"optional" json:"chimesdkmeetings" yaml:"chimesdkmeetings"`
 	// Use this to override the default service endpoint URL.
@@ -1304,6 +1308,10 @@ type AwsProviderEndpoints struct {
 	Securityhub *string `field:"optional" json:"securityhub" yaml:"securityhub"`
 	// Use this to override the default service endpoint URL.
 	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#securitylake AwsProvider#securitylake}
+	Securitylake *string `field:"optional" json:"securitylake" yaml:"securitylake"`
+	// Use this to override the default service endpoint URL.
+	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#serverlessapplicationrepository AwsProvider#serverlessapplicationrepository}
 	Serverlessapplicationrepository *string `field:"optional" json:"serverlessapplicationrepository" yaml:"serverlessapplicationrepository"`
 	// Use this to override the default service endpoint URL.
@@ -1462,6 +1470,10 @@ type AwsProviderEndpoints struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#voiceid AwsProvider#voiceid}
 	Voiceid *string `field:"optional" json:"voiceid" yaml:"voiceid"`
+	// Use this to override the default service endpoint URL.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#vpclattice AwsProvider#vpclattice}
+	Vpclattice *string `field:"optional" json:"vpclattice" yaml:"vpclattice"`
 	// Use this to override the default service endpoint URL.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#waf AwsProvider#waf}

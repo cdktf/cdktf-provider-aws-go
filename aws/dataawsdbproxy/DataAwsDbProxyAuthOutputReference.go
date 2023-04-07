@@ -11,6 +11,7 @@ import (
 type DataAwsDbProxyAuthOutputReference interface {
 	cdktf.ComplexObject
 	AuthScheme() *string
+	ClientPasswordAuthType() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -86,6 +87,16 @@ func (j *jsiiProxy_DataAwsDbProxyAuthOutputReference) AuthScheme() *string {
 	_jsii_.Get(
 		j,
 		"authScheme",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDbProxyAuthOutputReference) ClientPasswordAuthType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientPasswordAuthType",
 		&returns,
 	)
 	return returns

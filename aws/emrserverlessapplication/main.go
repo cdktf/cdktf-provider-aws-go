@@ -38,6 +38,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "imageConfiguration", GoGetter: "ImageConfiguration"},
+			_jsii_.MemberProperty{JsiiProperty: "imageConfigurationInput", GoGetter: "ImageConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "initialCapacity", GoGetter: "InitialCapacity"},
 			_jsii_.MemberProperty{JsiiProperty: "initialCapacityInput", GoGetter: "InitialCapacityInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -54,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putAutoStartConfiguration", GoMethod: "PutAutoStartConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putAutoStopConfiguration", GoMethod: "PutAutoStopConfiguration"},
+			_jsii_.MemberMethod{JsiiMethod: "putImageConfiguration", GoMethod: "PutImageConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putInitialCapacity", GoMethod: "PutInitialCapacity"},
 			_jsii_.MemberMethod{JsiiMethod: "putMaximumCapacity", GoMethod: "PutMaximumCapacity"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkConfiguration", GoMethod: "PutNetworkConfiguration"},
@@ -64,6 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoStartConfiguration", GoMethod: "ResetAutoStartConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoStopConfiguration", GoMethod: "ResetAutoStopConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
+			_jsii_.MemberMethod{JsiiMethod: "resetImageConfiguration", GoMethod: "ResetImageConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInitialCapacity", GoMethod: "ResetInitialCapacity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaximumCapacity", GoMethod: "ResetMaximumCapacity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworkConfiguration", GoMethod: "ResetNetworkConfiguration"},
@@ -174,6 +178,44 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig",
 		reflect.TypeOf((*EmrserverlessApplicationConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationImageConfiguration",
+		reflect.TypeOf((*EmrserverlessApplicationImageConfiguration)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationImageConfigurationOutputReference",
+		reflect.TypeOf((*EmrserverlessApplicationImageConfigurationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "imageUri", GoGetter: "ImageUri"},
+			_jsii_.MemberProperty{JsiiProperty: "imageUriInput", GoGetter: "ImageUriInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_EmrserverlessApplicationImageConfigurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacity",

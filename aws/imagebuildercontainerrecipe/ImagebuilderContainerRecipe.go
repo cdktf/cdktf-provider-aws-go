@@ -75,6 +75,9 @@ type ImagebuilderContainerRecipe interface {
 	SetParentImage(val *string)
 	ParentImageInput() *string
 	Platform() *string
+	PlatformOverride() *string
+	SetPlatformOverride(val *string)
+	PlatformOverrideInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -142,6 +145,7 @@ type ImagebuilderContainerRecipe interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPlatformOverride()
 	ResetTags()
 	ResetTagsAll()
 	ResetWorkingDirectory()
@@ -510,6 +514,26 @@ func (j *jsiiProxy_ImagebuilderContainerRecipe) Platform() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ImagebuilderContainerRecipe) PlatformOverride() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"platformOverride",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImagebuilderContainerRecipe) PlatformOverrideInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"platformOverrideInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ImagebuilderContainerRecipe) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -830,6 +854,17 @@ func (j *jsiiProxy_ImagebuilderContainerRecipe)SetParentImage(val *string) {
 	_jsii_.Set(
 		j,
 		"parentImage",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ImagebuilderContainerRecipe)SetPlatformOverride(val *string) {
+	if err := j.validateSetPlatformOverrideParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"platformOverride",
 		val,
 	)
 }
@@ -1248,6 +1283,14 @@ func (i *jsiiProxy_ImagebuilderContainerRecipe) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_ImagebuilderContainerRecipe) ResetPlatformOverride() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetPlatformOverride",
 		nil, // no parameters
 	)
 }

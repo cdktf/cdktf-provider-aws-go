@@ -1,0 +1,12 @@
+package quicksightdataset
+
+
+type QuicksightDataSetLogicalTableMapDataTransformsCastColumnTypeOperation struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_set#column_name QuicksightDataSet#column_name}.
+	ColumnName *string `field:"required" json:"columnName" yaml:"columnName"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_set#new_column_type QuicksightDataSet#new_column_type}.
+	NewColumnType *string `field:"required" json:"newColumnType" yaml:"newColumnType"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/quicksight_data_set#format QuicksightDataSet#format}.
+	Format *string `field:"optional" json:"format" yaml:"format"`
+}
+

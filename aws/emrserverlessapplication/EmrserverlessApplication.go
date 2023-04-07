@@ -47,6 +47,8 @@ type EmrserverlessApplication interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	ImageConfiguration() EmrserverlessApplicationImageConfigurationOutputReference
+	ImageConfigurationInput() *EmrserverlessApplicationImageConfiguration
 	InitialCapacity() EmrserverlessApplicationInitialCapacityList
 	InitialCapacityInput() interface{}
 	// Experimental.
@@ -117,6 +119,7 @@ type EmrserverlessApplication interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoStartConfiguration(value *EmrserverlessApplicationAutoStartConfiguration)
 	PutAutoStopConfiguration(value *EmrserverlessApplicationAutoStopConfiguration)
+	PutImageConfiguration(value *EmrserverlessApplicationImageConfiguration)
 	PutInitialCapacity(value interface{})
 	PutMaximumCapacity(value *EmrserverlessApplicationMaximumCapacity)
 	PutNetworkConfiguration(value *EmrserverlessApplicationNetworkConfiguration)
@@ -124,6 +127,7 @@ type EmrserverlessApplication interface {
 	ResetAutoStartConfiguration()
 	ResetAutoStopConfiguration()
 	ResetId()
+	ResetImageConfiguration()
 	ResetInitialCapacity()
 	ResetMaximumCapacity()
 	ResetNetworkConfiguration()
@@ -312,6 +316,26 @@ func (j *jsiiProxy_EmrserverlessApplication) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrserverlessApplication) ImageConfiguration() EmrserverlessApplicationImageConfigurationOutputReference {
+	var returns EmrserverlessApplicationImageConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"imageConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrserverlessApplication) ImageConfigurationInput() *EmrserverlessApplicationImageConfiguration {
+	var returns *EmrserverlessApplicationImageConfiguration
+	_jsii_.Get(
+		j,
+		"imageConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -1017,6 +1041,17 @@ func (e *jsiiProxy_EmrserverlessApplication) PutAutoStopConfiguration(value *Emr
 	)
 }
 
+func (e *jsiiProxy_EmrserverlessApplication) PutImageConfiguration(value *EmrserverlessApplicationImageConfiguration) {
+	if err := e.validatePutImageConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putImageConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EmrserverlessApplication) PutInitialCapacity(value interface{}) {
 	if err := e.validatePutInitialCapacityParameters(value); err != nil {
 		panic(err)
@@ -1078,6 +1113,14 @@ func (e *jsiiProxy_EmrserverlessApplication) ResetId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrserverlessApplication) ResetImageConfiguration() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetImageConfiguration",
 		nil, // no parameters
 	)
 }

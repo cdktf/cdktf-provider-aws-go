@@ -116,6 +116,10 @@ func (j *jsiiProxy_ImagebuilderContainerRecipe) validateSetParentImageParameters
 	return nil
 }
 
+func (j *jsiiProxy_ImagebuilderContainerRecipe) validateSetPlatformOverrideParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImagebuilderContainerRecipe) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

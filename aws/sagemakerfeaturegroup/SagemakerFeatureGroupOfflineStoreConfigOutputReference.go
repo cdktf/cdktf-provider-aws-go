@@ -36,6 +36,9 @@ type SagemakerFeatureGroupOfflineStoreConfigOutputReference interface {
 	SetInternalValue(val *SagemakerFeatureGroupOfflineStoreConfig)
 	S3StorageConfig() SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference
 	S3StorageConfigInput() *SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig
+	TableFormat() *string
+	SetTableFormat(val *string)
+	TableFormatInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type SagemakerFeatureGroupOfflineStoreConfigOutputReference interface {
 	PutS3StorageConfig(value *SagemakerFeatureGroupOfflineStoreConfigS3StorageConfig)
 	ResetDataCatalogConfig()
 	ResetDisableGlueTableCreation()
+	ResetTableFormat()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -197,6 +201,26 @@ func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) S3Sto
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) TableFormat() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tableFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) TableFormatInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tableFormatInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -285,6 +309,17 @@ func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference)SetInt
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference)SetTableFormat(val *string) {
+	if err := j.validateSetTableFormatParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tableFormat",
 		val,
 	)
 }
@@ -531,6 +566,14 @@ func (s *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) Reset
 	_jsii_.InvokeVoid(
 		s,
 		"resetDisableGlueTableCreation",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigOutputReference) ResetTableFormat() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTableFormat",
 		nil, // no parameters
 	)
 }

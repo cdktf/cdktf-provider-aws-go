@@ -64,7 +64,6 @@ type SchedulerScheduleTargetDeadLetterConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -448,14 +447,6 @@ func (s *jsiiProxy_SchedulerScheduleTargetDeadLetterConfigOutputReference) Inter
 	)
 
 	return returns
-}
-
-func (s *jsiiProxy_SchedulerScheduleTargetDeadLetterConfigOutputReference) ResetArn() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetArn",
-		nil, // no parameters
-	)
 }
 
 func (s *jsiiProxy_SchedulerScheduleTargetDeadLetterConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

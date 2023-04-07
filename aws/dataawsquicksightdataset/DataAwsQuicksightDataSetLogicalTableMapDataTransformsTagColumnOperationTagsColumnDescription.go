@@ -1,0 +1,6 @@
+package dataawsquicksightdataset
+
+
+type DataAwsQuicksightDataSetLogicalTableMapDataTransformsTagColumnOperationTagsColumnDescription struct {
+}
+

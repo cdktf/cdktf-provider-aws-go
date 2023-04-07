@@ -60,6 +60,10 @@ func (e *jsiiProxy_EmrserverlessApplication) validatePutAutoStopConfigurationPar
 	return nil
 }
 
+func (e *jsiiProxy_EmrserverlessApplication) validatePutImageConfigurationParameters(value *EmrserverlessApplicationImageConfiguration) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrserverlessApplication) validatePutInitialCapacityParameters(value interface{}) error {
 	return nil
 }

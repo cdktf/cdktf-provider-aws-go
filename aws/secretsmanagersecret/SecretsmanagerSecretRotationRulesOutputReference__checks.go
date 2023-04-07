@@ -171,9 +171,25 @@ func (j *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference) validateSetDurationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference) validateSetInternalValueParameters(val *SecretsmanagerSecretRotationRules) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SecretsmanagerSecretRotationRulesOutputReference) validateSetScheduleExpressionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

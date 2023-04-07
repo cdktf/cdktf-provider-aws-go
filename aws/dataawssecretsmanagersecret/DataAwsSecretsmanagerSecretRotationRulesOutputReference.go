@@ -26,10 +26,12 @@ type DataAwsSecretsmanagerSecretRotationRulesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Duration() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataAwsSecretsmanagerSecretRotationRules
 	SetInternalValue(val *DataAwsSecretsmanagerSecretRotationRules)
+	ScheduleExpression() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -117,6 +119,16 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotationRulesOutputReference) Crea
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotationRulesOutputReference) Duration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"duration",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotationRulesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -132,6 +144,16 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotationRulesOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotationRulesOutputReference) ScheduleExpression() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scheduleExpression",
 		&returns,
 	)
 	return returns

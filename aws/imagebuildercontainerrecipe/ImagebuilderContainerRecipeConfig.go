@@ -52,6 +52,8 @@ type ImagebuilderContainerRecipeConfig struct {
 	InstanceConfiguration *ImagebuilderContainerRecipeInstanceConfiguration `field:"optional" json:"instanceConfiguration" yaml:"instanceConfiguration"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_container_recipe#kms_key_id ImagebuilderContainerRecipe#kms_key_id}.
 	KmsKeyId *string `field:"optional" json:"kmsKeyId" yaml:"kmsKeyId"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_container_recipe#platform_override ImagebuilderContainerRecipe#platform_override}.
+	PlatformOverride *string `field:"optional" json:"platformOverride" yaml:"platformOverride"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_container_recipe#tags ImagebuilderContainerRecipe#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_container_recipe#tags_all ImagebuilderContainerRecipe#tags_all}.
