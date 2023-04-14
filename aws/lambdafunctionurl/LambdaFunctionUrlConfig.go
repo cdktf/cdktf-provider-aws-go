@@ -32,6 +32,8 @@ type LambdaFunctionUrlConfig struct {
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_url#invoke_mode LambdaFunctionUrl#invoke_mode}.
+	InvokeMode *string `field:"optional" json:"invokeMode" yaml:"invokeMode"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_url#qualifier LambdaFunctionUrl#qualifier}.
 	Qualifier *string `field:"optional" json:"qualifier" yaml:"qualifier"`
 	// timeouts block.

@@ -68,6 +68,10 @@ func validateAcmpcaCertificate_IsTerraformResourceParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_AcmpcaCertificate) validateSetApiPassthroughParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AcmpcaCertificate) validateSetCertificateAuthorityArnParameters(val *string) error {
 	return nil
 }

@@ -192,6 +192,14 @@ type AwsProviderEndpoints struct {
 	Chimesdkmessaging *string `field:"optional" json:"chimesdkmessaging" yaml:"chimesdkmessaging"`
 	// Use this to override the default service endpoint URL.
 	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#chimesdkvoice AwsProvider#chimesdkvoice}
+	Chimesdkvoice *string `field:"optional" json:"chimesdkvoice" yaml:"chimesdkvoice"`
+	// Use this to override the default service endpoint URL.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#cleanrooms AwsProvider#cleanrooms}
+	Cleanrooms *string `field:"optional" json:"cleanrooms" yaml:"cleanrooms"`
+	// Use this to override the default service endpoint URL.
+	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#cloud9 AwsProvider#cloud9}
 	Cloud9 *string `field:"optional" json:"cloud9" yaml:"cloud9"`
 	// Use this to override the default service endpoint URL.
@@ -442,6 +450,10 @@ type AwsProviderEndpoints struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#docdb AwsProvider#docdb}
 	Docdb *string `field:"optional" json:"docdb" yaml:"docdb"`
+	// Use this to override the default service endpoint URL.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#docdbelastic AwsProvider#docdbelastic}
+	Docdbelastic *string `field:"optional" json:"docdbelastic" yaml:"docdbelastic"`
 	// Use this to override the default service endpoint URL.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws#drs AwsProvider#drs}

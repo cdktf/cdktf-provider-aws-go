@@ -88,6 +88,10 @@ func (j *jsiiProxy_LambdaFunctionUrl) validateSetIdParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_LambdaFunctionUrl) validateSetInvokeModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaFunctionUrl) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

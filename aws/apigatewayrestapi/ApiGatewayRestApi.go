@@ -2,10 +2,10 @@ package apigatewayrestapi
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v12/apigatewayrestapi/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/apigatewayrestapi/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -48,6 +48,9 @@ type ApiGatewayRestApi interface {
 	EndpointConfiguration() ApiGatewayRestApiEndpointConfigurationOutputReference
 	EndpointConfigurationInput() *ApiGatewayRestApiEndpointConfiguration
 	ExecutionArn() *string
+	FailOnWarnings() interface{}
+	SetFailOnWarnings(val interface{})
+	FailOnWarningsInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -135,6 +138,7 @@ type ApiGatewayRestApi interface {
 	ResetDescription()
 	ResetDisableExecuteApiEndpoint()
 	ResetEndpointConfiguration()
+	ResetFailOnWarnings()
 	ResetId()
 	ResetMinimumCompressionSize()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -355,6 +359,26 @@ func (j *jsiiProxy_ApiGatewayRestApi) ExecutionArn() *string {
 	_jsii_.Get(
 		j,
 		"executionArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayRestApi) FailOnWarnings() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"failOnWarnings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayRestApi) FailOnWarningsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"failOnWarningsInput",
 		&returns,
 	)
 	return returns
@@ -748,6 +772,17 @@ func (j *jsiiProxy_ApiGatewayRestApi)SetDisableExecuteApiEndpoint(val interface{
 	_jsii_.Set(
 		j,
 		"disableExecuteApiEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayRestApi)SetFailOnWarnings(val interface{}) {
+	if err := j.validateSetFailOnWarningsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"failOnWarnings",
 		val,
 	)
 }
@@ -1199,6 +1234,14 @@ func (a *jsiiProxy_ApiGatewayRestApi) ResetEndpointConfiguration() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEndpointConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayRestApi) ResetFailOnWarnings() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetFailOnWarnings",
 		nil, // no parameters
 	)
 }

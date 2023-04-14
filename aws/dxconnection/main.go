@@ -49,6 +49,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "ownerAccountId", GoGetter: "OwnerAccountId"},
+			_jsii_.MemberProperty{JsiiProperty: "partnerName", GoGetter: "PartnerName"},
 			_jsii_.MemberProperty{JsiiProperty: "portEncryptionStatus", GoGetter: "PortEncryptionStatus"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "providerName", GoGetter: "ProviderName"},

@@ -152,6 +152,14 @@ func (j *jsiiProxy_MwaaEnvironment) validateSetSourceBucketArnParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_MwaaEnvironment) validateSetStartupScriptS3ObjectVersionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MwaaEnvironment) validateSetStartupScriptS3PathParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwaaEnvironment) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

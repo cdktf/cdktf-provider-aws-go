@@ -2,10 +2,10 @@ package dataawsdxconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsdxconnection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsdxconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -49,6 +49,7 @@ type DataAwsDxConnection interface {
 	// The tree node.
 	Node() constructs.Node
 	OwnerAccountId() *string
+	PartnerName() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -286,6 +287,16 @@ func (j *jsiiProxy_DataAwsDxConnection) OwnerAccountId() *string {
 	_jsii_.Get(
 		j,
 		"ownerAccountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDxConnection) PartnerName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"partnerName",
 		&returns,
 	)
 	return returns

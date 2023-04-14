@@ -92,6 +92,10 @@ func (j *jsiiProxy_ApiGatewayRestApi) validateSetDisableExecuteApiEndpointParame
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayRestApi) validateSetFailOnWarningsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayRestApi) validateSetIdParameters(val *string) error {
 	return nil
 }

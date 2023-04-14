@@ -2,10 +2,10 @@ package lambdafunctionurl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v12/lambdafunctionurl/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/lambdafunctionurl/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -49,6 +49,9 @@ type LambdaFunctionUrl interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InvokeMode() *string
+	SetInvokeMode(val *string)
+	InvokeModeInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -106,6 +109,7 @@ type LambdaFunctionUrl interface {
 	PutTimeouts(value *LambdaFunctionUrlTimeouts)
 	ResetCors()
 	ResetId()
+	ResetInvokeMode()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -301,6 +305,26 @@ func (j *jsiiProxy_LambdaFunctionUrl) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunctionUrl) InvokeMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"invokeMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunctionUrl) InvokeModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"invokeModeInput",
 		&returns,
 	)
 	return returns
@@ -530,6 +554,17 @@ func (j *jsiiProxy_LambdaFunctionUrl)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaFunctionUrl)SetInvokeMode(val *string) {
+	if err := j.validateSetInvokeModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"invokeMode",
 		val,
 	)
 }
@@ -875,6 +910,14 @@ func (l *jsiiProxy_LambdaFunctionUrl) ResetId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaFunctionUrl) ResetInvokeMode() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetInvokeMode",
 		nil, // no parameters
 	)
 }

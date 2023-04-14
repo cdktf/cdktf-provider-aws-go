@@ -2,9 +2,9 @@ package fisexperimenttemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v12/fisexperimenttemplate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/fisexperimenttemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

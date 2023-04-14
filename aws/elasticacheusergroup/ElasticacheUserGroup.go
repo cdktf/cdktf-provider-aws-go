@@ -2,10 +2,10 @@ package elasticacheusergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v12/elasticacheusergroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/elasticacheusergroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -13,8 +13,6 @@ import (
 type ElasticacheUserGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
-	SetArn(val *string)
-	ArnInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -104,7 +102,6 @@ type ElasticacheUserGroup interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetArn()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -132,16 +129,6 @@ func (j *jsiiProxy_ElasticacheUserGroup) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ElasticacheUserGroup) ArnInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"arnInput",
 		&returns,
 	)
 	return returns
@@ -454,17 +441,6 @@ func NewElasticacheUserGroup_Override(e ElasticacheUserGroup, scope constructs.C
 		"@cdktf/provider-aws.elasticacheUserGroup.ElasticacheUserGroup",
 		[]interface{}{scope, id, config},
 		e,
-	)
-}
-
-func (j *jsiiProxy_ElasticacheUserGroup)SetArn(val *string) {
-	if err := j.validateSetArnParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"arn",
-		val,
 	)
 }
 
@@ -862,14 +838,6 @@ func (e *jsiiProxy_ElasticacheUserGroup) OverrideLogicalId(newLogicalId *string)
 		e,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (e *jsiiProxy_ElasticacheUserGroup) ResetArn() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetArn",
-		nil, // no parameters
 	)
 }
 

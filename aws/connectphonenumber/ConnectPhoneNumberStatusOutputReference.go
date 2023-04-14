@@ -2,9 +2,9 @@ package connectphonenumber
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v12/connectphonenumber/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/connectphonenumber/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

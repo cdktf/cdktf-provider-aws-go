@@ -29,6 +29,8 @@ type AcmpcaCertificateConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate#validity AcmpcaCertificate#validity}
 	Validity *AcmpcaCertificateValidity `field:"required" json:"validity" yaml:"validity"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate#api_passthrough AcmpcaCertificate#api_passthrough}.
+	ApiPassthrough *string `field:"optional" json:"apiPassthrough" yaml:"apiPassthrough"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate#id AcmpcaCertificate#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

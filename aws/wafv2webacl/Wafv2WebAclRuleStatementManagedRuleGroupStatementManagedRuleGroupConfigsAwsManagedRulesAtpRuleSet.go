@@ -1,0 +1,16 @@
+package wafv2webacl
+
+
+type Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSet struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#login_path Wafv2WebAcl#login_path}.
+	LoginPath *string `field:"required" json:"loginPath" yaml:"loginPath"`
+	// request_inspection block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#request_inspection Wafv2WebAcl#request_inspection}
+	RequestInspection *Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspection `field:"optional" json:"requestInspection" yaml:"requestInspection"`
+	// response_inspection block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#response_inspection Wafv2WebAcl#response_inspection}
+	ResponseInspection *Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspection `field:"optional" json:"responseInspection" yaml:"responseInspection"`
+}
+

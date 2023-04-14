@@ -1,0 +1,16 @@
+package wafv2webacl
+
+
+type Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspection struct {
+	// password_field block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#password_field Wafv2WebAcl#password_field}
+	PasswordField *Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionPasswordField `field:"required" json:"passwordField" yaml:"passwordField"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#payload_type Wafv2WebAcl#payload_type}.
+	PayloadType *string `field:"required" json:"payloadType" yaml:"payloadType"`
+	// username_field block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#username_field Wafv2WebAcl#username_field}
+	UsernameField *Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspectionUsernameField `field:"required" json:"usernameField" yaml:"usernameField"`
+}
+

@@ -23,8 +23,6 @@ type ElasticacheUserGroupConfig struct {
 	Engine *string `field:"required" json:"engine" yaml:"engine"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user_group#user_group_id ElasticacheUserGroup#user_group_id}.
 	UserGroupId *string `field:"required" json:"userGroupId" yaml:"userGroupId"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user_group#arn ElasticacheUserGroup#arn}.
-	Arn *string `field:"optional" json:"arn" yaml:"arn"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user_group#id ElasticacheUserGroup#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

@@ -2,10 +2,10 @@ package dataawslambdafunctionurl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawslambdafunctionurl/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslambdafunctionurl/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -43,6 +43,7 @@ type DataAwsLambdaFunctionUrl interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InvokeMode() *string
 	LastModifiedTime() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -266,6 +267,16 @@ func (j *jsiiProxy_DataAwsLambdaFunctionUrl) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLambdaFunctionUrl) InvokeMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"invokeMode",
 		&returns,
 	)
 	return returns

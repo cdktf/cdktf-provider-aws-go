@@ -2,10 +2,10 @@ package mwaaenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v12/mwaaenvironment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/mwaaenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -108,6 +108,12 @@ type MwaaEnvironment interface {
 	SourceBucketArn() *string
 	SetSourceBucketArn(val *string)
 	SourceBucketArnInput() *string
+	StartupScriptS3ObjectVersion() *string
+	SetStartupScriptS3ObjectVersion(val *string)
+	StartupScriptS3ObjectVersionInput() *string
+	StartupScriptS3Path() *string
+	SetStartupScriptS3Path(val *string)
+	StartupScriptS3PathInput() *string
 	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -174,6 +180,8 @@ type MwaaEnvironment interface {
 	ResetRequirementsS3ObjectVersion()
 	ResetRequirementsS3Path()
 	ResetSchedulers()
+	ResetStartupScriptS3ObjectVersion()
+	ResetStartupScriptS3Path()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -724,6 +732,46 @@ func (j *jsiiProxy_MwaaEnvironment) SourceBucketArnInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MwaaEnvironment) StartupScriptS3ObjectVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startupScriptS3ObjectVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwaaEnvironment) StartupScriptS3ObjectVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startupScriptS3ObjectVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwaaEnvironment) StartupScriptS3Path() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startupScriptS3Path",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwaaEnvironment) StartupScriptS3PathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startupScriptS3PathInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MwaaEnvironment) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1141,6 +1189,28 @@ func (j *jsiiProxy_MwaaEnvironment)SetSourceBucketArn(val *string) {
 	_jsii_.Set(
 		j,
 		"sourceBucketArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MwaaEnvironment)SetStartupScriptS3ObjectVersion(val *string) {
+	if err := j.validateSetStartupScriptS3ObjectVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"startupScriptS3ObjectVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MwaaEnvironment)SetStartupScriptS3Path(val *string) {
+	if err := j.validateSetStartupScriptS3PathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"startupScriptS3Path",
 		val,
 	)
 }
@@ -1596,6 +1666,22 @@ func (m *jsiiProxy_MwaaEnvironment) ResetSchedulers() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetSchedulers",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwaaEnvironment) ResetStartupScriptS3ObjectVersion() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetStartupScriptS3ObjectVersion",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwaaEnvironment) ResetStartupScriptS3Path() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetStartupScriptS3Path",
 		nil, // no parameters
 	)
 }

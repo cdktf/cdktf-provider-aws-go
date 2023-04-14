@@ -2,16 +2,19 @@ package acmpcacertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v12/acmpcacertificate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/acmpcacertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 // Represents a {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate aws_acmpca_certificate}.
 type AcmpcaCertificate interface {
 	cdktf.TerraformResource
+	ApiPassthrough() *string
+	SetApiPassthrough(val *string)
+	ApiPassthroughInput() *string
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -104,6 +107,7 @@ type AcmpcaCertificate interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutValidity(value *AcmpcaCertificateValidity)
+	ResetApiPassthrough()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -122,6 +126,26 @@ type AcmpcaCertificate interface {
 // The jsii proxy struct for AcmpcaCertificate
 type jsiiProxy_AcmpcaCertificate struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_AcmpcaCertificate) ApiPassthrough() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiPassthrough",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AcmpcaCertificate) ApiPassthroughInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiPassthroughInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AcmpcaCertificate) Arn() *string {
@@ -461,6 +485,17 @@ func NewAcmpcaCertificate_Override(a AcmpcaCertificate, scope constructs.Constru
 		"@cdktf/provider-aws.acmpcaCertificate.AcmpcaCertificate",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_AcmpcaCertificate)SetApiPassthrough(val *string) {
+	if err := j.validateSetApiPassthroughParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"apiPassthrough",
+		val,
 	)
 }
 
@@ -858,6 +893,14 @@ func (a *jsiiProxy_AcmpcaCertificate) PutValidity(value *AcmpcaCertificateValidi
 		a,
 		"putValidity",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AcmpcaCertificate) ResetApiPassthrough() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetApiPassthrough",
+		nil, // no parameters
 	)
 }
 

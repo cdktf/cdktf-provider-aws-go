@@ -2,10 +2,10 @@ package natgateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v12/natgateway/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/natgateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -15,6 +15,7 @@ type NatGateway interface {
 	AllocationId() *string
 	SetAllocationId(val *string)
 	AllocationIdInput() *string
+	AssociationId() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -145,6 +146,16 @@ func (j *jsiiProxy_NatGateway) AllocationIdInput() *string {
 	_jsii_.Get(
 		j,
 		"allocationIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NatGateway) AssociationId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"associationId",
 		&returns,
 	)
 	return returns

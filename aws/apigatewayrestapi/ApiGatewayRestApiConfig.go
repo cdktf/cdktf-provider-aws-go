@@ -35,6 +35,8 @@ type ApiGatewayRestApiConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_rest_api#endpoint_configuration ApiGatewayRestApi#endpoint_configuration}
 	EndpointConfiguration *ApiGatewayRestApiEndpointConfiguration `field:"optional" json:"endpointConfiguration" yaml:"endpointConfiguration"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_rest_api#fail_on_warnings ApiGatewayRestApi#fail_on_warnings}.
+	FailOnWarnings interface{} `field:"optional" json:"failOnWarnings" yaml:"failOnWarnings"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_rest_api#id ApiGatewayRestApi#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

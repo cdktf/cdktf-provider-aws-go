@@ -64,10 +64,6 @@ func validateElasticacheUserGroup_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheUserGroup) validateSetArnParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ElasticacheUserGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

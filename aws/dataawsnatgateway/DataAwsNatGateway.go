@@ -2,10 +2,10 @@ package dataawsnatgateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v12/dataawsnatgateway/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsnatgateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -13,6 +13,7 @@ import (
 type DataAwsNatGateway interface {
 	cdktf.TerraformDataSource
 	AllocationId() *string
+	AssociationId() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ConnectivityType() *string
@@ -131,6 +132,16 @@ func (j *jsiiProxy_DataAwsNatGateway) AllocationId() *string {
 	_jsii_.Get(
 		j,
 		"allocationId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNatGateway) AssociationId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"associationId",
 		&returns,
 	)
 	return returns

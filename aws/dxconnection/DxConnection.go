@@ -2,10 +2,10 @@ package dxconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v12/dxconnection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dxconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -63,6 +63,7 @@ type DxConnection interface {
 	// The tree node.
 	Node() constructs.Node
 	OwnerAccountId() *string
+	PartnerName() *string
 	PortEncryptionStatus() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -401,6 +402,16 @@ func (j *jsiiProxy_DxConnection) OwnerAccountId() *string {
 	_jsii_.Get(
 		j,
 		"ownerAccountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DxConnection) PartnerName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"partnerName",
 		&returns,
 	)
 	return returns

@@ -2,14 +2,16 @@ package wafv2webacl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v12/wafv2webacl/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/wafv2webacl/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsOutputReference interface {
 	cdktf.ComplexObject
+	AwsManagedRulesAtpRuleSet() Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetOutputReference
+	AwsManagedRulesAtpRuleSetInput() *Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSet
 	AwsManagedRulesBotControlRuleSet() Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSetOutputReference
 	AwsManagedRulesBotControlRuleSetInput() *Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSet
 	// the index of the complex object in a list.
@@ -73,9 +75,11 @@ type Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsOut
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAwsManagedRulesAtpRuleSet(value *Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSet)
 	PutAwsManagedRulesBotControlRuleSet(value *Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSet)
 	PutPasswordField(value *Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsPasswordField)
 	PutUsernameField(value *Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsUsernameField)
+	ResetAwsManagedRulesAtpRuleSet()
 	ResetAwsManagedRulesBotControlRuleSet()
 	ResetLoginPath()
 	ResetPasswordField()
@@ -94,6 +98,26 @@ type Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsOut
 // The jsii proxy struct for Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsOutputReference
 type jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsOutputReference) AwsManagedRulesAtpRuleSet() Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetOutputReference {
+	var returns Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetOutputReference
+	_jsii_.Get(
+		j,
+		"awsManagedRulesAtpRuleSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsOutputReference) AwsManagedRulesAtpRuleSetInput() *Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSet {
+	var returns *Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSet
+	_jsii_.Get(
+		j,
+		"awsManagedRulesAtpRuleSetInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsOutputReference) AwsManagedRulesBotControlRuleSet() Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSetOutputReference {
@@ -557,6 +581,17 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleG
 	return returns
 }
 
+func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsOutputReference) PutAwsManagedRulesAtpRuleSet(value *Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSet) {
+	if err := w.validatePutAwsManagedRulesAtpRuleSetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putAwsManagedRulesAtpRuleSet",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsOutputReference) PutAwsManagedRulesBotControlRuleSet(value *Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesBotControlRuleSet) {
 	if err := w.validatePutAwsManagedRulesBotControlRuleSetParameters(value); err != nil {
 		panic(err)
@@ -587,6 +622,14 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleG
 		w,
 		"putUsernameField",
 		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsOutputReference) ResetAwsManagedRulesAtpRuleSet() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetAwsManagedRulesAtpRuleSet",
+		nil, // no parameters
 	)
 }
 

@@ -2,6 +2,10 @@ package wafv2webacl
 
 
 type Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigs struct {
+	// aws_managed_rules_atp_rule_set block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#aws_managed_rules_atp_rule_set Wafv2WebAcl#aws_managed_rules_atp_rule_set}
+	AwsManagedRulesAtpRuleSet *Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSet `field:"optional" json:"awsManagedRulesAtpRuleSet" yaml:"awsManagedRulesAtpRuleSet"`
 	// aws_managed_rules_bot_control_rule_set block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl#aws_managed_rules_bot_control_rule_set Wafv2WebAcl#aws_managed_rules_bot_control_rule_set}
