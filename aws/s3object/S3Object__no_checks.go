@@ -108,6 +108,10 @@ func (j *jsiiProxy_S3Object) validateSetContentTypeParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_S3Object) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3Object) validateSetEtagParameters(val *string) error {
 	return nil
 }

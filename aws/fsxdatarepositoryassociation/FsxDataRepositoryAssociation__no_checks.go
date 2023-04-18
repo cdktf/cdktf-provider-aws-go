@@ -80,6 +80,10 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxDataRepositoryAssociation) validateSetDataRepositoryPathParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_CognitoIdentityPool) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_CognitoIdentityPool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoIdentityPool) validateSetDeveloperProviderNameParameters(val *string) error {
 	return nil
 }

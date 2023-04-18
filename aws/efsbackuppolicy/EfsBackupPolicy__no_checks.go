@@ -72,6 +72,10 @@ func (j *jsiiProxy_EfsBackupPolicy) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_EfsBackupPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EfsBackupPolicy) validateSetFileSystemIdParameters(val *string) error {
 	return nil
 }

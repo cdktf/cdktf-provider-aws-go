@@ -68,6 +68,10 @@ func (j *jsiiProxy_DatasyncLocationFsxLustreFileSystem) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncLocationFsxLustreFileSystem) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationFsxLustreFileSystem) validateSetFsxFilesystemArnParameters(val *string) error {
 	return nil
 }

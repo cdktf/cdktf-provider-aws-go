@@ -80,6 +80,10 @@ func (j *jsiiProxy_CodegurureviewerRepositoryAssociation) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_CodegurureviewerRepositoryAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodegurureviewerRepositoryAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

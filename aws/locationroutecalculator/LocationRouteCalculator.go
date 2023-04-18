@@ -2,14 +2,14 @@ package locationroutecalculator
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/locationroutecalculator/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/locationroutecalculator/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/location_route_calculator aws_location_route_calculator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_route_calculator aws_location_route_calculator}.
 type LocationRouteCalculator interface {
 	cdktf.TerraformResource
 	CalculatorArn() *string
@@ -25,9 +25,9 @@ type LocationRouteCalculator interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	DataSource() *string
 	SetDataSource(val *string)
@@ -190,8 +190,8 @@ func (j *jsiiProxy_LocationRouteCalculator) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_LocationRouteCalculator) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LocationRouteCalculator) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -461,7 +461,7 @@ func (j *jsiiProxy_LocationRouteCalculator) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/location_route_calculator aws_location_route_calculator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_route_calculator aws_location_route_calculator} Resource.
 func NewLocationRouteCalculator(scope constructs.Construct, id *string, config *LocationRouteCalculatorConfig) LocationRouteCalculator {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewLocationRouteCalculator(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/location_route_calculator aws_location_route_calculator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_route_calculator aws_location_route_calculator} Resource.
 func NewLocationRouteCalculator_Override(l LocationRouteCalculator, scope constructs.Construct, id *string, config *LocationRouteCalculatorConfig) {
 	_init_.Initialize()
 
@@ -512,7 +512,10 @@ func (j *jsiiProxy_LocationRouteCalculator)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LocationRouteCalculator)SetCount(val *float64) {
+func (j *jsiiProxy_LocationRouteCalculator)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

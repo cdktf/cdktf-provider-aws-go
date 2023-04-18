@@ -2,14 +2,14 @@ package dataawsapigatewayexport
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsapigatewayexport/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsapigatewayexport/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_export aws_api_gateway_export}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/api_gateway_export aws_api_gateway_export}.
 type DataAwsApiGatewayExport interface {
 	cdktf.TerraformDataSource
 	Accepts() *string
@@ -23,9 +23,9 @@ type DataAwsApiGatewayExport interface {
 	ContentDisposition() *string
 	ContentType() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -187,8 +187,8 @@ func (j *jsiiProxy_DataAwsApiGatewayExport) ContentType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsApiGatewayExport) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsApiGatewayExport) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -408,7 +408,7 @@ func (j *jsiiProxy_DataAwsApiGatewayExport) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_export aws_api_gateway_export} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/api_gateway_export aws_api_gateway_export} Data Source.
 func NewDataAwsApiGatewayExport(scope constructs.Construct, id *string, config *DataAwsApiGatewayExportConfig) DataAwsApiGatewayExport {
 	_init_.Initialize()
 
@@ -426,7 +426,7 @@ func NewDataAwsApiGatewayExport(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_export aws_api_gateway_export} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/api_gateway_export aws_api_gateway_export} Data Source.
 func NewDataAwsApiGatewayExport_Override(d DataAwsApiGatewayExport, scope constructs.Construct, id *string, config *DataAwsApiGatewayExportConfig) {
 	_init_.Initialize()
 
@@ -448,7 +448,10 @@ func (j *jsiiProxy_DataAwsApiGatewayExport)SetAccepts(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsApiGatewayExport)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsApiGatewayExport)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

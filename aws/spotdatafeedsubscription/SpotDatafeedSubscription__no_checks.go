@@ -72,6 +72,10 @@ func (j *jsiiProxy_SpotDatafeedSubscription) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_SpotDatafeedSubscription) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpotDatafeedSubscription) validateSetIdParameters(val *string) error {
 	return nil
 }

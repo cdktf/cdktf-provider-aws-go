@@ -64,6 +64,10 @@ func validateDataAwsCloudfrontOriginRequestPolicy_IsTerraformElementParameters(x
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudfrontOriginRequestPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudfrontOriginRequestPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

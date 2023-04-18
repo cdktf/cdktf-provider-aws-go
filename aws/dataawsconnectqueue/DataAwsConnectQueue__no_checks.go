@@ -64,6 +64,10 @@ func validateDataAwsConnectQueue_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectQueue) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectQueue) validateSetIdParameters(val *string) error {
 	return nil
 }

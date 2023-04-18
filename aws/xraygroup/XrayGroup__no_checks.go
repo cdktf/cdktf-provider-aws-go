@@ -72,6 +72,10 @@ func (j *jsiiProxy_XrayGroup) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_XrayGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_XrayGroup) validateSetFilterExpressionParameters(val *string) error {
 	return nil
 }

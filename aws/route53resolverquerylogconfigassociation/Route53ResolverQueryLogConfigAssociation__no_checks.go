@@ -68,6 +68,10 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) validateSetConnecti
 	return nil
 }
 
+func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

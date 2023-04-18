@@ -68,6 +68,10 @@ func (j *jsiiProxy_LoadBalancerBackendServerPolicy) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerBackendServerPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadBalancerBackendServerPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

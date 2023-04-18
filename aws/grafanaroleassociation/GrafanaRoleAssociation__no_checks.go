@@ -72,6 +72,10 @@ func (j *jsiiProxy_GrafanaRoleAssociation) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_GrafanaRoleAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GrafanaRoleAssociation) validateSetGroupIdsParameters(val *[]*string) error {
 	return nil
 }

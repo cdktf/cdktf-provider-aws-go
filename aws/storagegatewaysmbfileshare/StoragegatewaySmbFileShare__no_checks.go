@@ -100,6 +100,10 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewaySmbFileShare) validateSetDefaultStorageClassParameters(val *string) error {
 	return nil
 }

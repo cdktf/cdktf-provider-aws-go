@@ -2,14 +2,14 @@ package dataawsnetworkmanagersites
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsnetworkmanagersites/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsnetworkmanagersites/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/networkmanager_sites aws_networkmanager_sites}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/networkmanager_sites aws_networkmanager_sites}.
 type DataAwsNetworkmanagerSites interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAwsNetworkmanagerSites interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -125,8 +125,8 @@ func (j *jsiiProxy_DataAwsNetworkmanagerSites) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerSites) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsNetworkmanagerSites) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -316,7 +316,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerSites) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/networkmanager_sites aws_networkmanager_sites} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/networkmanager_sites aws_networkmanager_sites} Data Source.
 func NewDataAwsNetworkmanagerSites(scope constructs.Construct, id *string, config *DataAwsNetworkmanagerSitesConfig) DataAwsNetworkmanagerSites {
 	_init_.Initialize()
 
@@ -334,7 +334,7 @@ func NewDataAwsNetworkmanagerSites(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/networkmanager_sites aws_networkmanager_sites} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/networkmanager_sites aws_networkmanager_sites} Data Source.
 func NewDataAwsNetworkmanagerSites_Override(d DataAwsNetworkmanagerSites, scope constructs.Construct, id *string, config *DataAwsNetworkmanagerSitesConfig) {
 	_init_.Initialize()
 
@@ -345,7 +345,10 @@ func NewDataAwsNetworkmanagerSites_Override(d DataAwsNetworkmanagerSites, scope 
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerSites)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsNetworkmanagerSites)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

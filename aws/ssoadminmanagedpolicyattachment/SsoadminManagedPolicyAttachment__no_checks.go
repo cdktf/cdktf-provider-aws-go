@@ -68,6 +68,10 @@ func (j *jsiiProxy_SsoadminManagedPolicyAttachment) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_SsoadminManagedPolicyAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsoadminManagedPolicyAttachment) validateSetIdParameters(val *string) error {
 	return nil
 }

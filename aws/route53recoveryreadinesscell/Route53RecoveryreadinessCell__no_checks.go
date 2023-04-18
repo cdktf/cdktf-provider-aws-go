@@ -80,6 +80,10 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_Route53RecoveryreadinessCell) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53RecoveryreadinessCell) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_EgressOnlyInternetGateway) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_EgressOnlyInternetGateway) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EgressOnlyInternetGateway) validateSetIdParameters(val *string) error {
 	return nil
 }

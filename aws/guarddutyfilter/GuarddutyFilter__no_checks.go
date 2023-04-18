@@ -76,6 +76,10 @@ func (j *jsiiProxy_GuarddutyFilter) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_GuarddutyFilter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GuarddutyFilter) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

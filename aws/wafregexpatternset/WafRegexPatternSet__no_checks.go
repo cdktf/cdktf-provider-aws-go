@@ -68,6 +68,10 @@ func (j *jsiiProxy_WafRegexPatternSet) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_WafRegexPatternSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafRegexPatternSet) validateSetIdParameters(val *string) error {
 	return nil
 }

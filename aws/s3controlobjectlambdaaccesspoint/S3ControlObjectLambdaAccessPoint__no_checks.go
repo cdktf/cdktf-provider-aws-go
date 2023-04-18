@@ -76,6 +76,10 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataAwsSecretsmanagerSecretRotation_IsTerraformElementParameters(x 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSecretsmanagerSecretRotation) validateSetIdParameters(val *string) error {
 	return nil
 }

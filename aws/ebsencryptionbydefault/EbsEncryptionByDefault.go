@@ -2,14 +2,14 @@ package ebsencryptionbydefault
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/ebsencryptionbydefault/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ebsencryptionbydefault/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ebs_encryption_by_default aws_ebs_encryption_by_default}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ebs_encryption_by_default aws_ebs_encryption_by_default}.
 type EbsEncryptionByDefault interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type EbsEncryptionByDefault interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -139,8 +139,8 @@ func (j *jsiiProxy_EbsEncryptionByDefault) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_EbsEncryptionByDefault) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EbsEncryptionByDefault) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -310,7 +310,7 @@ func (j *jsiiProxy_EbsEncryptionByDefault) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ebs_encryption_by_default aws_ebs_encryption_by_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ebs_encryption_by_default aws_ebs_encryption_by_default} Resource.
 func NewEbsEncryptionByDefault(scope constructs.Construct, id *string, config *EbsEncryptionByDefaultConfig) EbsEncryptionByDefault {
 	_init_.Initialize()
 
@@ -328,7 +328,7 @@ func NewEbsEncryptionByDefault(scope constructs.Construct, id *string, config *E
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ebs_encryption_by_default aws_ebs_encryption_by_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ebs_encryption_by_default aws_ebs_encryption_by_default} Resource.
 func NewEbsEncryptionByDefault_Override(e EbsEncryptionByDefault, scope constructs.Construct, id *string, config *EbsEncryptionByDefaultConfig) {
 	_init_.Initialize()
 
@@ -350,7 +350,10 @@ func (j *jsiiProxy_EbsEncryptionByDefault)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EbsEncryptionByDefault)SetCount(val *float64) {
+func (j *jsiiProxy_EbsEncryptionByDefault)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

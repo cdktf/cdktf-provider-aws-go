@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsGlueCatalogTable) validateSetCatalogIdParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsGlueCatalogTable) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsGlueCatalogTable) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

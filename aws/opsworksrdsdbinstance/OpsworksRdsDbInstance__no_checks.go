@@ -68,6 +68,10 @@ func (j *jsiiProxy_OpsworksRdsDbInstance) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_OpsworksRdsDbInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpsworksRdsDbInstance) validateSetDbPasswordParameters(val *string) error {
 	return nil
 }

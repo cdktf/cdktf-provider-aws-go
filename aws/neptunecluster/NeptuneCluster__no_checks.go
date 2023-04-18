@@ -104,6 +104,10 @@ func (j *jsiiProxy_NeptuneCluster) validateSetCopyTagsToSnapshotParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_NeptuneCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NeptuneCluster) validateSetDeletionProtectionParameters(val interface{}) error {
 	return nil
 }

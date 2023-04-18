@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsRedshiftCluster) validateSetClusterIdentifierParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRedshiftCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRedshiftCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

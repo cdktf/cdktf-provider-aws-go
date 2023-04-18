@@ -72,6 +72,10 @@ func (j *jsiiProxy_IamServiceLinkedRole) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_IamServiceLinkedRole) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamServiceLinkedRole) validateSetCustomSuffixParameters(val *string) error {
 	return nil
 }

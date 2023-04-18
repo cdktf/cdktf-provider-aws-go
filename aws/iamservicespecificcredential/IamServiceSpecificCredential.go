@@ -2,14 +2,14 @@ package iamservicespecificcredential
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/iamservicespecificcredential/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/iamservicespecificcredential/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/iam_service_specific_credential aws_iam_service_specific_credential}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_service_specific_credential aws_iam_service_specific_credential}.
 type IamServiceSpecificCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type IamServiceSpecificCredential interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -148,8 +148,8 @@ func (j *jsiiProxy_IamServiceSpecificCredential) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_IamServiceSpecificCredential) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IamServiceSpecificCredential) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -389,7 +389,7 @@ func (j *jsiiProxy_IamServiceSpecificCredential) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/iam_service_specific_credential aws_iam_service_specific_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_service_specific_credential aws_iam_service_specific_credential} Resource.
 func NewIamServiceSpecificCredential(scope constructs.Construct, id *string, config *IamServiceSpecificCredentialConfig) IamServiceSpecificCredential {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewIamServiceSpecificCredential(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/iam_service_specific_credential aws_iam_service_specific_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_service_specific_credential aws_iam_service_specific_credential} Resource.
 func NewIamServiceSpecificCredential_Override(i IamServiceSpecificCredential, scope constructs.Construct, id *string, config *IamServiceSpecificCredentialConfig) {
 	_init_.Initialize()
 
@@ -429,7 +429,10 @@ func (j *jsiiProxy_IamServiceSpecificCredential)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamServiceSpecificCredential)SetCount(val *float64) {
+func (j *jsiiProxy_IamServiceSpecificCredential)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

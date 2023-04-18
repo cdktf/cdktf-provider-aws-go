@@ -72,6 +72,10 @@ func (j *jsiiProxy_CodebuildSourceCredential) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_CodebuildSourceCredential) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodebuildSourceCredential) validateSetIdParameters(val *string) error {
 	return nil
 }

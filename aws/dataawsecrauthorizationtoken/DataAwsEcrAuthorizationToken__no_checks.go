@@ -64,6 +64,10 @@ func validateDataAwsEcrAuthorizationToken_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEcrAuthorizationToken) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEcrAuthorizationToken) validateSetIdParameters(val *string) error {
 	return nil
 }

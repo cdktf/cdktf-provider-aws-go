@@ -2,14 +2,14 @@ package shieldprotection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/shieldprotection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/shieldprotection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/shield_protection aws_shield_protection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/shield_protection aws_shield_protection}.
 type ShieldProtection interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type ShieldProtection interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -160,8 +160,8 @@ func (j *jsiiProxy_ShieldProtection) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_ShieldProtection) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ShieldProtection) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_ShieldProtection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/shield_protection aws_shield_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/shield_protection aws_shield_protection} Resource.
 func NewShieldProtection(scope constructs.Construct, id *string, config *ShieldProtectionConfig) ShieldProtection {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewShieldProtection(scope constructs.Construct, id *string, config *ShieldP
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/shield_protection aws_shield_protection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/shield_protection aws_shield_protection} Resource.
 func NewShieldProtection_Override(s ShieldProtection, scope constructs.Construct, id *string, config *ShieldProtectionConfig) {
 	_init_.Initialize()
 
@@ -431,7 +431,10 @@ func (j *jsiiProxy_ShieldProtection)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ShieldProtection)SetCount(val *float64) {
+func (j *jsiiProxy_ShieldProtection)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func (j *jsiiProxy_ApprunnerCustomDomainAssociation) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_ApprunnerCustomDomainAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerCustomDomainAssociation) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

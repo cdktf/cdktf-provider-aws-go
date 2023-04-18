@@ -68,6 +68,10 @@ func (j *jsiiProxy_AppconfigDeploymentStrategy) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_AppconfigDeploymentStrategy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppconfigDeploymentStrategy) validateSetDeploymentDurationInMinutesParameters(val *float64) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_PinpointBaiduChannel) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_PinpointBaiduChannel) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointBaiduChannel) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

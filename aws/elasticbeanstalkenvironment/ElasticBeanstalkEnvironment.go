@@ -2,14 +2,14 @@ package elasticbeanstalkenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/elasticbeanstalkenvironment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/elasticbeanstalkenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_environment aws_elastic_beanstalk_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elastic_beanstalk_environment aws_elastic_beanstalk_environment}.
 type ElasticBeanstalkEnvironment interface {
 	cdktf.TerraformResource
 	AllSettings() ElasticBeanstalkEnvironmentAllSettingsList
@@ -31,9 +31,9 @@ type ElasticBeanstalkEnvironment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -279,8 +279,8 @@ func (j *jsiiProxy_ElasticBeanstalkEnvironment) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_ElasticBeanstalkEnvironment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ElasticBeanstalkEnvironment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -730,7 +730,7 @@ func (j *jsiiProxy_ElasticBeanstalkEnvironment) WaitForReadyTimeoutInput() *stri
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_environment aws_elastic_beanstalk_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elastic_beanstalk_environment aws_elastic_beanstalk_environment} Resource.
 func NewElasticBeanstalkEnvironment(scope constructs.Construct, id *string, config *ElasticBeanstalkEnvironmentConfig) ElasticBeanstalkEnvironment {
 	_init_.Initialize()
 
@@ -748,7 +748,7 @@ func NewElasticBeanstalkEnvironment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_environment aws_elastic_beanstalk_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elastic_beanstalk_environment aws_elastic_beanstalk_environment} Resource.
 func NewElasticBeanstalkEnvironment_Override(e ElasticBeanstalkEnvironment, scope constructs.Construct, id *string, config *ElasticBeanstalkEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -792,7 +792,10 @@ func (j *jsiiProxy_ElasticBeanstalkEnvironment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkEnvironment)SetCount(val *float64) {
+func (j *jsiiProxy_ElasticBeanstalkEnvironment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

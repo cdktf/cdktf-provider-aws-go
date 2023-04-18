@@ -72,6 +72,10 @@ func (j *jsiiProxy_AutoscalingSchedule) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_AutoscalingSchedule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingSchedule) validateSetDesiredCapacityParameters(val *float64) error {
 	return nil
 }

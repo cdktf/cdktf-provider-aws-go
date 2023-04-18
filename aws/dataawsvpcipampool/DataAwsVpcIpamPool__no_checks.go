@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataAwsVpcIpamPool) validateSetAllocationResourceTagsParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpcIpamPool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpcIpamPool) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_VpcEndpointConnectionNotification) validateSetConnectionNotif
 	return nil
 }
 
+func (j *jsiiProxy_VpcEndpointConnectionNotification) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointConnectionNotification) validateSetIdParameters(val *string) error {
 	return nil
 }

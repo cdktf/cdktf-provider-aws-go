@@ -72,6 +72,10 @@ func (j *jsiiProxy_Ec2CapacityReservation) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_Ec2CapacityReservation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2CapacityReservation) validateSetEbsOptimizedParameters(val interface{}) error {
 	return nil
 }

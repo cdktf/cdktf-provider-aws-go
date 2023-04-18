@@ -76,6 +76,10 @@ func (j *jsiiProxy_OpensearchDomainPolicy) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchDomainPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpensearchDomainPolicy) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

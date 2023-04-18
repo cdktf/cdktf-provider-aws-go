@@ -64,6 +64,10 @@ func validateDataAwsIamUserSshKey_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsIamUserSshKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsIamUserSshKey) validateSetEncodingParameters(val *string) error {
 	return nil
 }

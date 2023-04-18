@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsLexBotAlias) validateSetBotNameParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLexBotAlias) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLexBotAlias) validateSetIdParameters(val *string) error {
 	return nil
 }

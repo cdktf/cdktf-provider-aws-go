@@ -68,6 +68,10 @@ func (j *jsiiProxy_Macie2CustomDataIdentifier) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_Macie2CustomDataIdentifier) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Macie2CustomDataIdentifier) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

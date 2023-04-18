@@ -88,6 +88,10 @@ func (j *jsiiProxy_S3BucketWebsiteConfiguration) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketWebsiteConfiguration) validateSetExpectedBucketOwnerParameters(val *string) error {
 	return nil
 }

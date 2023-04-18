@@ -76,6 +76,10 @@ func (j *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateSetCoreNet
 	return nil
 }
 
+func (j *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateSetIdParameters(val *string) error {
 	return nil
 }

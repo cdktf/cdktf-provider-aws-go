@@ -2,14 +2,14 @@ package dataawskeypair
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawskeypair/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawskeypair/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/key_pair aws_key_pair}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/key_pair aws_key_pair}.
 type DataAwsKeyPair interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -18,9 +18,9 @@ type DataAwsKeyPair interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -156,8 +156,8 @@ func (j *jsiiProxy_DataAwsKeyPair) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsKeyPair) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsKeyPair) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -457,7 +457,7 @@ func (j *jsiiProxy_DataAwsKeyPair) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/key_pair aws_key_pair} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/key_pair aws_key_pair} Data Source.
 func NewDataAwsKeyPair(scope constructs.Construct, id *string, config *DataAwsKeyPairConfig) DataAwsKeyPair {
 	_init_.Initialize()
 
@@ -475,7 +475,7 @@ func NewDataAwsKeyPair(scope constructs.Construct, id *string, config *DataAwsKe
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/key_pair aws_key_pair} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/key_pair aws_key_pair} Data Source.
 func NewDataAwsKeyPair_Override(d DataAwsKeyPair, scope constructs.Construct, id *string, config *DataAwsKeyPairConfig) {
 	_init_.Initialize()
 
@@ -486,7 +486,10 @@ func NewDataAwsKeyPair_Override(d DataAwsKeyPair, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_DataAwsKeyPair)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsKeyPair)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

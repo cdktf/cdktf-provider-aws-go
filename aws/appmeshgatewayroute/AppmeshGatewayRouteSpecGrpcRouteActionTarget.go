@@ -4,9 +4,9 @@ package appmeshgatewayroute
 type AppmeshGatewayRouteSpecGrpcRouteActionTarget struct {
 	// virtual_service block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#virtual_service AppmeshGatewayRoute#virtual_service}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appmesh_gateway_route#virtual_service AppmeshGatewayRoute#virtual_service}
 	VirtualService *AppmeshGatewayRouteSpecGrpcRouteActionTargetVirtualService `field:"required" json:"virtualService" yaml:"virtualService"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_gateway_route#port AppmeshGatewayRoute#port}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appmesh_gateway_route#port AppmeshGatewayRoute#port}.
 	Port *float64 `field:"optional" json:"port" yaml:"port"`
 }
 

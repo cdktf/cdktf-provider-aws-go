@@ -104,6 +104,10 @@ func (j *jsiiProxy_LambdaEventSourceMapping) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_LambdaEventSourceMapping) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaEventSourceMapping) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

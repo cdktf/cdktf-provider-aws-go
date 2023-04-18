@@ -72,6 +72,10 @@ func (j *jsiiProxy_QldbStream) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_QldbStream) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_QldbStream) validateSetExclusiveEndTimeParameters(val *string) error {
 	return nil
 }

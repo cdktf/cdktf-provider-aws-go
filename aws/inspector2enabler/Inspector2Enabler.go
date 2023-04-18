@@ -2,14 +2,14 @@ package inspector2enabler
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/inspector2enabler/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/inspector2enabler/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/inspector2_enabler aws_inspector2_enabler}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/inspector2_enabler aws_inspector2_enabler}.
 type Inspector2Enabler interface {
 	cdktf.TerraformResource
 	AccountIds() *[]*string
@@ -24,9 +24,9 @@ type Inspector2Enabler interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_Inspector2Enabler) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_Inspector2Enabler) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Inspector2Enabler) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_Inspector2Enabler) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/inspector2_enabler aws_inspector2_enabler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/inspector2_enabler aws_inspector2_enabler} Resource.
 func NewInspector2Enabler(scope constructs.Construct, id *string, config *Inspector2EnablerConfig) Inspector2Enabler {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewInspector2Enabler(scope constructs.Construct, id *string, config *Inspec
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/inspector2_enabler aws_inspector2_enabler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/inspector2_enabler aws_inspector2_enabler} Resource.
 func NewInspector2Enabler_Override(i Inspector2Enabler, scope constructs.Construct, id *string, config *Inspector2EnablerConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_Inspector2Enabler)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Inspector2Enabler)SetCount(val *float64) {
+func (j *jsiiProxy_Inspector2Enabler)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

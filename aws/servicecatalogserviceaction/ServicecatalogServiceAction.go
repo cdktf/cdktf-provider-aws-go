@@ -2,14 +2,14 @@ package servicecatalogserviceaction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/servicecatalogserviceaction/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/servicecatalogserviceaction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_service_action aws_servicecatalog_service_action}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/servicecatalog_service_action aws_servicecatalog_service_action}.
 type ServicecatalogServiceAction interface {
 	cdktf.TerraformResource
 	AcceptLanguage() *string
@@ -24,9 +24,9 @@ type ServicecatalogServiceAction interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Definition() ServicecatalogServiceActionDefinitionOutputReference
 	DefinitionInput() *ServicecatalogServiceActionDefinition
 	// Experimental.
@@ -173,8 +173,8 @@ func (j *jsiiProxy_ServicecatalogServiceAction) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogServiceAction) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ServicecatalogServiceAction) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -404,7 +404,7 @@ func (j *jsiiProxy_ServicecatalogServiceAction) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_service_action aws_servicecatalog_service_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/servicecatalog_service_action aws_servicecatalog_service_action} Resource.
 func NewServicecatalogServiceAction(scope constructs.Construct, id *string, config *ServicecatalogServiceActionConfig) ServicecatalogServiceAction {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewServicecatalogServiceAction(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_service_action aws_servicecatalog_service_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/servicecatalog_service_action aws_servicecatalog_service_action} Resource.
 func NewServicecatalogServiceAction_Override(s ServicecatalogServiceAction, scope constructs.Construct, id *string, config *ServicecatalogServiceActionConfig) {
 	_init_.Initialize()
 
@@ -455,7 +455,10 @@ func (j *jsiiProxy_ServicecatalogServiceAction)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogServiceAction)SetCount(val *float64) {
+func (j *jsiiProxy_ServicecatalogServiceAction)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

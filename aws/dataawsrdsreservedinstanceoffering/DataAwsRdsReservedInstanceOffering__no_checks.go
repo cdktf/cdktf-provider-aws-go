@@ -64,6 +64,10 @@ func validateDataAwsRdsReservedInstanceOffering_IsTerraformElementParameters(x i
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRdsReservedInstanceOffering) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRdsReservedInstanceOffering) validateSetDbInstanceClassParameters(val *string) error {
 	return nil
 }

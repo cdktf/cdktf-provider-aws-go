@@ -2,14 +2,14 @@ package medialivechannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/medialivechannel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivechannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel aws_medialive_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel aws_medialive_channel}.
 type MedialiveChannel interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -28,9 +28,9 @@ type MedialiveChannel interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -251,8 +251,8 @@ func (j *jsiiProxy_MedialiveChannel) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannel) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MedialiveChannel) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -662,7 +662,7 @@ func (j *jsiiProxy_MedialiveChannel) VpcInput() *MedialiveChannelVpc {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel aws_medialive_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel aws_medialive_channel} Resource.
 func NewMedialiveChannel(scope constructs.Construct, id *string, config *MedialiveChannelConfig) MedialiveChannel {
 	_init_.Initialize()
 
@@ -680,7 +680,7 @@ func NewMedialiveChannel(scope constructs.Construct, id *string, config *Mediali
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel aws_medialive_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel aws_medialive_channel} Resource.
 func NewMedialiveChannel_Override(m MedialiveChannel, scope constructs.Construct, id *string, config *MedialiveChannelConfig) {
 	_init_.Initialize()
 
@@ -713,7 +713,10 @@ func (j *jsiiProxy_MedialiveChannel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveChannel)SetCount(val *float64) {
+func (j *jsiiProxy_MedialiveChannel)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

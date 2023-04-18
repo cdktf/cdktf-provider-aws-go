@@ -68,6 +68,10 @@ func validateDataAwsEc2NetworkInsightsPath_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2NetworkInsightsPath) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2NetworkInsightsPath) validateSetIdParameters(val *string) error {
 	return nil
 }

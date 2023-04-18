@@ -72,6 +72,10 @@ func (j *jsiiProxy_AppintegrationsEventIntegration) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_AppintegrationsEventIntegration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppintegrationsEventIntegration) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

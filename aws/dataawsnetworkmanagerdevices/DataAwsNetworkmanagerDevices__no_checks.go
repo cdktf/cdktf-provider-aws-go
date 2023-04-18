@@ -64,6 +64,10 @@ func validateDataAwsNetworkmanagerDevices_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsNetworkmanagerDevices) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNetworkmanagerDevices) validateSetGlobalNetworkIdParameters(val *string) error {
 	return nil
 }

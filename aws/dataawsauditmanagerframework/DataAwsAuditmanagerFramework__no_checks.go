@@ -68,6 +68,10 @@ func validateDataAwsAuditmanagerFramework_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAuditmanagerFramework) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAuditmanagerFramework) validateSetFrameworkTypeParameters(val *string) error {
 	return nil
 }

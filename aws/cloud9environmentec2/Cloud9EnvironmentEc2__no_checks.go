@@ -76,6 +76,10 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2) validateSetConnectionTypeParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_Cloud9EnvironmentEc2) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cloud9EnvironmentEc2) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -96,6 +96,10 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetCopyTagsToVolumesParameters(
 	return nil
 }
 
+func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetDailyAutomaticBackupStartTimeParameters(val *string) error {
 	return nil
 }

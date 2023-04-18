@@ -64,6 +64,10 @@ func validateDataAwsQldbLedger_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsQldbLedger) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsQldbLedger) validateSetIdParameters(val *string) error {
 	return nil
 }

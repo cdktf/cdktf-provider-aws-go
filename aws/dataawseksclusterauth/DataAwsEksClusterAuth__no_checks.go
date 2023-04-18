@@ -64,6 +64,10 @@ func validateDataAwsEksClusterAuth_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEksClusterAuth) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEksClusterAuth) validateSetIdParameters(val *string) error {
 	return nil
 }

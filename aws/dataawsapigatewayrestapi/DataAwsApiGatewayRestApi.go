@@ -2,14 +2,14 @@ package dataawsapigatewayrestapi
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsapigatewayrestapi/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsapigatewayrestapi/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_rest_api aws_api_gateway_rest_api}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/api_gateway_rest_api aws_api_gateway_rest_api}.
 type DataAwsApiGatewayRestApi interface {
 	cdktf.TerraformDataSource
 	ApiKeySource() *string
@@ -20,9 +20,9 @@ type DataAwsApiGatewayRestApi interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -163,8 +163,8 @@ func (j *jsiiProxy_DataAwsApiGatewayRestApi) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsApiGatewayRestApi) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsApiGatewayRestApi) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -404,7 +404,7 @@ func (j *jsiiProxy_DataAwsApiGatewayRestApi) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_rest_api aws_api_gateway_rest_api} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/api_gateway_rest_api aws_api_gateway_rest_api} Data Source.
 func NewDataAwsApiGatewayRestApi(scope constructs.Construct, id *string, config *DataAwsApiGatewayRestApiConfig) DataAwsApiGatewayRestApi {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewDataAwsApiGatewayRestApi(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/api_gateway_rest_api aws_api_gateway_rest_api} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/api_gateway_rest_api aws_api_gateway_rest_api} Data Source.
 func NewDataAwsApiGatewayRestApi_Override(d DataAwsApiGatewayRestApi, scope constructs.Construct, id *string, config *DataAwsApiGatewayRestApiConfig) {
 	_init_.Initialize()
 
@@ -433,7 +433,10 @@ func NewDataAwsApiGatewayRestApi_Override(d DataAwsApiGatewayRestApi, scope cons
 	)
 }
 
-func (j *jsiiProxy_DataAwsApiGatewayRestApi)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsApiGatewayRestApi)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -76,6 +76,10 @@ func (j *jsiiProxy_Ec2TrafficMirrorFilterRule) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_Ec2TrafficMirrorFilterRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TrafficMirrorFilterRule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

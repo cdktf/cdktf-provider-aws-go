@@ -2,14 +2,14 @@ package dataawsavailabilityzone
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsavailabilityzone/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsavailabilityzone/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/availability_zone aws_availability_zone}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/availability_zone aws_availability_zone}.
 type DataAwsAvailabilityZone interface {
 	cdktf.TerraformDataSource
 	AllAvailabilityZones() interface{}
@@ -20,9 +20,9 @@ type DataAwsAvailabilityZone interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_DataAwsAvailabilityZone) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZone) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsAvailabilityZone) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -490,7 +490,7 @@ func (j *jsiiProxy_DataAwsAvailabilityZone) ZoneType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/availability_zone aws_availability_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/availability_zone aws_availability_zone} Data Source.
 func NewDataAwsAvailabilityZone(scope constructs.Construct, id *string, config *DataAwsAvailabilityZoneConfig) DataAwsAvailabilityZone {
 	_init_.Initialize()
 
@@ -508,7 +508,7 @@ func NewDataAwsAvailabilityZone(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/availability_zone aws_availability_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/availability_zone aws_availability_zone} Data Source.
 func NewDataAwsAvailabilityZone_Override(d DataAwsAvailabilityZone, scope constructs.Construct, id *string, config *DataAwsAvailabilityZoneConfig) {
 	_init_.Initialize()
 
@@ -530,7 +530,10 @@ func (j *jsiiProxy_DataAwsAvailabilityZone)SetAllAvailabilityZones(val interface
 	)
 }
 
-func (j *jsiiProxy_DataAwsAvailabilityZone)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsAvailabilityZone)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

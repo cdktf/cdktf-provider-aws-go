@@ -72,6 +72,10 @@ func (j *jsiiProxy_VpclatticeServiceNetworkServiceAssociation) validateSetConnec
 	return nil
 }
 
+func (j *jsiiProxy_VpclatticeServiceNetworkServiceAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpclatticeServiceNetworkServiceAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

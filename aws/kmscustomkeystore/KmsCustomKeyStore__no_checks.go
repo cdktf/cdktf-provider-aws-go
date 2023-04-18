@@ -76,6 +76,10 @@ func (j *jsiiProxy_KmsCustomKeyStore) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_KmsCustomKeyStore) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsCustomKeyStore) validateSetCustomKeyStoreNameParameters(val *string) error {
 	return nil
 }

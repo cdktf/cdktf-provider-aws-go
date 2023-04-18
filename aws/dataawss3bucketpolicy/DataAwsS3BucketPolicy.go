@@ -2,14 +2,14 @@ package dataawss3bucketpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawss3bucketpolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawss3bucketpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/s3_bucket_policy aws_s3_bucket_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/s3_bucket_policy aws_s3_bucket_policy}.
 type DataAwsS3BucketPolicy interface {
 	cdktf.TerraformDataSource
 	Bucket() *string
@@ -20,9 +20,9 @@ type DataAwsS3BucketPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DataAwsS3BucketPolicy) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsS3BucketPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsS3BucketPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataAwsS3BucketPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/s3_bucket_policy aws_s3_bucket_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/s3_bucket_policy aws_s3_bucket_policy} Data Source.
 func NewDataAwsS3BucketPolicy(scope constructs.Construct, id *string, config *DataAwsS3BucketPolicyConfig) DataAwsS3BucketPolicy {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataAwsS3BucketPolicy(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/s3_bucket_policy aws_s3_bucket_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/s3_bucket_policy aws_s3_bucket_policy} Data Source.
 func NewDataAwsS3BucketPolicy_Override(d DataAwsS3BucketPolicy, scope constructs.Construct, id *string, config *DataAwsS3BucketPolicyConfig) {
 	_init_.Initialize()
 
@@ -332,7 +332,10 @@ func (j *jsiiProxy_DataAwsS3BucketPolicy)SetBucket(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsS3BucketPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsS3BucketPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

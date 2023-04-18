@@ -2,14 +2,14 @@ package ssoadminpermissionsboundaryattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/ssoadminpermissionsboundaryattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ssoadminpermissionsboundaryattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ssoadmin_permissions_boundary_attachment aws_ssoadmin_permissions_boundary_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssoadmin_permissions_boundary_attachment aws_ssoadmin_permissions_boundary_attachment}.
 type SsoadminPermissionsBoundaryAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SsoadminPermissionsBoundaryAttachment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -144,8 +144,8 @@ func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -355,7 +355,7 @@ func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) TerraformResourceType(
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ssoadmin_permissions_boundary_attachment aws_ssoadmin_permissions_boundary_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssoadmin_permissions_boundary_attachment aws_ssoadmin_permissions_boundary_attachment} Resource.
 func NewSsoadminPermissionsBoundaryAttachment(scope constructs.Construct, id *string, config *SsoadminPermissionsBoundaryAttachmentConfig) SsoadminPermissionsBoundaryAttachment {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewSsoadminPermissionsBoundaryAttachment(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ssoadmin_permissions_boundary_attachment aws_ssoadmin_permissions_boundary_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssoadmin_permissions_boundary_attachment aws_ssoadmin_permissions_boundary_attachment} Resource.
 func NewSsoadminPermissionsBoundaryAttachment_Override(s SsoadminPermissionsBoundaryAttachment, scope constructs.Construct, id *string, config *SsoadminPermissionsBoundaryAttachmentConfig) {
 	_init_.Initialize()
 
@@ -395,7 +395,10 @@ func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment)SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment)SetCount(val *float64) {
+func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -80,6 +80,10 @@ func (j *jsiiProxy_AccountAlternateContact) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_AccountAlternateContact) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccountAlternateContact) validateSetEmailAddressParameters(val *string) error {
 	return nil
 }

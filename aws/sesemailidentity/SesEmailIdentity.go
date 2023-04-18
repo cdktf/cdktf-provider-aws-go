@@ -2,14 +2,14 @@ package sesemailidentity
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/sesemailidentity/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/sesemailidentity/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ses_email_identity aws_ses_email_identity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_email_identity aws_ses_email_identity}.
 type SesEmailIdentity interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type SesEmailIdentity interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -149,8 +149,8 @@ func (j *jsiiProxy_SesEmailIdentity) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_SesEmailIdentity) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SesEmailIdentity) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -320,7 +320,7 @@ func (j *jsiiProxy_SesEmailIdentity) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ses_email_identity aws_ses_email_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_email_identity aws_ses_email_identity} Resource.
 func NewSesEmailIdentity(scope constructs.Construct, id *string, config *SesEmailIdentityConfig) SesEmailIdentity {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewSesEmailIdentity(scope constructs.Construct, id *string, config *SesEmai
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ses_email_identity aws_ses_email_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_email_identity aws_ses_email_identity} Resource.
 func NewSesEmailIdentity_Override(s SesEmailIdentity, scope constructs.Construct, id *string, config *SesEmailIdentityConfig) {
 	_init_.Initialize()
 
@@ -360,7 +360,10 @@ func (j *jsiiProxy_SesEmailIdentity)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SesEmailIdentity)SetCount(val *float64) {
+func (j *jsiiProxy_SesEmailIdentity)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

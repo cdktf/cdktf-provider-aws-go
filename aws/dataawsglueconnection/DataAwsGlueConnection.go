@@ -2,14 +2,14 @@ package dataawsglueconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsglueconnection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsglueconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/glue_connection aws_glue_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/glue_connection aws_glue_connection}.
 type DataAwsGlueConnection interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -21,9 +21,9 @@ type DataAwsGlueConnection interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -168,8 +168,8 @@ func (j *jsiiProxy_DataAwsGlueConnection) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsGlueConnection) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsGlueConnection) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -369,7 +369,7 @@ func (j *jsiiProxy_DataAwsGlueConnection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/glue_connection aws_glue_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/glue_connection aws_glue_connection} Data Source.
 func NewDataAwsGlueConnection(scope constructs.Construct, id *string, config *DataAwsGlueConnectionConfig) DataAwsGlueConnection {
 	_init_.Initialize()
 
@@ -387,7 +387,7 @@ func NewDataAwsGlueConnection(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/glue_connection aws_glue_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/glue_connection aws_glue_connection} Data Source.
 func NewDataAwsGlueConnection_Override(d DataAwsGlueConnection, scope constructs.Construct, id *string, config *DataAwsGlueConnectionConfig) {
 	_init_.Initialize()
 
@@ -398,7 +398,10 @@ func NewDataAwsGlueConnection_Override(d DataAwsGlueConnection, scope constructs
 	)
 }
 
-func (j *jsiiProxy_DataAwsGlueConnection)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsGlueConnection)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

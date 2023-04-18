@@ -72,6 +72,10 @@ func (j *jsiiProxy_AppsyncDomainNameApiAssociation) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_AppsyncDomainNameApiAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncDomainNameApiAssociation) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

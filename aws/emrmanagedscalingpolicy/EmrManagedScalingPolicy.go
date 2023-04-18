@@ -2,14 +2,14 @@ package emrmanagedscalingpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/emrmanagedscalingpolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/emrmanagedscalingpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/emr_managed_scaling_policy aws_emr_managed_scaling_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_managed_scaling_policy aws_emr_managed_scaling_policy}.
 type EmrManagedScalingPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -26,9 +26,9 @@ type EmrManagedScalingPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -181,8 +181,8 @@ func (j *jsiiProxy_EmrManagedScalingPolicy) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_EmrManagedScalingPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EmrManagedScalingPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_EmrManagedScalingPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/emr_managed_scaling_policy aws_emr_managed_scaling_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_managed_scaling_policy aws_emr_managed_scaling_policy} Resource.
 func NewEmrManagedScalingPolicy(scope constructs.Construct, id *string, config *EmrManagedScalingPolicyConfig) EmrManagedScalingPolicy {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewEmrManagedScalingPolicy(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/emr_managed_scaling_policy aws_emr_managed_scaling_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_managed_scaling_policy aws_emr_managed_scaling_policy} Resource.
 func NewEmrManagedScalingPolicy_Override(e EmrManagedScalingPolicy, scope constructs.Construct, id *string, config *EmrManagedScalingPolicyConfig) {
 	_init_.Initialize()
 
@@ -383,7 +383,10 @@ func (j *jsiiProxy_EmrManagedScalingPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmrManagedScalingPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_EmrManagedScalingPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

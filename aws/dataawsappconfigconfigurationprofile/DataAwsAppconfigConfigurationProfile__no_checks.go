@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAwsAppconfigConfigurationProfile) validateSetConfiguratio
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAppconfigConfigurationProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAppconfigConfigurationProfile) validateSetIdParameters(val *string) error {
 	return nil
 }

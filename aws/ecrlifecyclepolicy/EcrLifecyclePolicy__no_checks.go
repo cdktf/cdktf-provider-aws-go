@@ -68,6 +68,10 @@ func (j *jsiiProxy_EcrLifecyclePolicy) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_EcrLifecyclePolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcrLifecyclePolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_Inspector2OrganizationConfiguration) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_Inspector2OrganizationConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Inspector2OrganizationConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

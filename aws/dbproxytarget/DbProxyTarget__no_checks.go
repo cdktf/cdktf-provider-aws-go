@@ -68,6 +68,10 @@ func (j *jsiiProxy_DbProxyTarget) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_DbProxyTarget) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbProxyTarget) validateSetDbClusterIdentifierParameters(val *string) error {
 	return nil
 }

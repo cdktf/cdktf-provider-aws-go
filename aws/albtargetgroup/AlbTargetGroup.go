@@ -2,14 +2,14 @@ package albtargetgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/albtargetgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/albtargetgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group aws_alb_target_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/alb_target_group aws_alb_target_group}.
 type AlbTargetGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -26,9 +26,9 @@ type AlbTargetGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -261,8 +261,8 @@ func (j *jsiiProxy_AlbTargetGroup) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_AlbTargetGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AlbTargetGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -812,7 +812,7 @@ func (j *jsiiProxy_AlbTargetGroup) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group aws_alb_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/alb_target_group aws_alb_target_group} Resource.
 func NewAlbTargetGroup(scope constructs.Construct, id *string, config *AlbTargetGroupConfig) AlbTargetGroup {
 	_init_.Initialize()
 
@@ -830,7 +830,7 @@ func NewAlbTargetGroup(scope constructs.Construct, id *string, config *AlbTarget
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/alb_target_group aws_alb_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/alb_target_group aws_alb_target_group} Resource.
 func NewAlbTargetGroup_Override(a AlbTargetGroup, scope constructs.Construct, id *string, config *AlbTargetGroupConfig) {
 	_init_.Initialize()
 
@@ -863,7 +863,10 @@ func (j *jsiiProxy_AlbTargetGroup)SetConnectionTermination(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlbTargetGroup)SetCount(val *float64) {
+func (j *jsiiProxy_AlbTargetGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -76,6 +76,10 @@ func (j *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachment) validateSetCoreNetwork
 	return nil
 }
 
+func (j *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachment) validateSetIdParameters(val *string) error {
 	return nil
 }

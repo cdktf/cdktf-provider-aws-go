@@ -2,14 +2,14 @@ package storagegatewaysmbfileshare
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/storagegatewaysmbfileshare/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/storagegatewaysmbfileshare/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share aws_storagegateway_smb_file_share}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/storagegateway_smb_file_share aws_storagegateway_smb_file_share}.
 type StoragegatewaySmbFileShare interface {
 	cdktf.TerraformResource
 	AccessBasedEnumeration() interface{}
@@ -42,9 +42,9 @@ type StoragegatewaySmbFileShare interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultStorageClass() *string
 	SetDefaultStorageClass(val *string)
 	DefaultStorageClassInput() *string
@@ -393,8 +393,8 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_StoragegatewaySmbFileShare) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -964,7 +964,7 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare) VpcEndpointDnsNameInput() *string
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share aws_storagegateway_smb_file_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/storagegateway_smb_file_share aws_storagegateway_smb_file_share} Resource.
 func NewStoragegatewaySmbFileShare(scope constructs.Construct, id *string, config *StoragegatewaySmbFileShareConfig) StoragegatewaySmbFileShare {
 	_init_.Initialize()
 
@@ -982,7 +982,7 @@ func NewStoragegatewaySmbFileShare(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/storagegateway_smb_file_share aws_storagegateway_smb_file_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/storagegateway_smb_file_share aws_storagegateway_smb_file_share} Resource.
 func NewStoragegatewaySmbFileShare_Override(s StoragegatewaySmbFileShare, scope constructs.Construct, id *string, config *StoragegatewaySmbFileShareConfig) {
 	_init_.Initialize()
 
@@ -1070,7 +1070,10 @@ func (j *jsiiProxy_StoragegatewaySmbFileShare)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_StoragegatewaySmbFileShare)SetCount(val *float64) {
+func (j *jsiiProxy_StoragegatewaySmbFileShare)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

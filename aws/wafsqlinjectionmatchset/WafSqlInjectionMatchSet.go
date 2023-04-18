@@ -2,14 +2,14 @@ package wafsqlinjectionmatchset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/wafsqlinjectionmatchset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafsqlinjectionmatchset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/waf_sql_injection_match_set aws_waf_sql_injection_match_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/waf_sql_injection_match_set aws_waf_sql_injection_match_set}.
 type WafSqlInjectionMatchSet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type WafSqlInjectionMatchSet interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_WafSqlInjectionMatchSet) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_WafSqlInjectionMatchSet) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_WafSqlInjectionMatchSet) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -333,7 +333,7 @@ func (j *jsiiProxy_WafSqlInjectionMatchSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/waf_sql_injection_match_set aws_waf_sql_injection_match_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/waf_sql_injection_match_set aws_waf_sql_injection_match_set} Resource.
 func NewWafSqlInjectionMatchSet(scope constructs.Construct, id *string, config *WafSqlInjectionMatchSetConfig) WafSqlInjectionMatchSet {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewWafSqlInjectionMatchSet(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/waf_sql_injection_match_set aws_waf_sql_injection_match_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/waf_sql_injection_match_set aws_waf_sql_injection_match_set} Resource.
 func NewWafSqlInjectionMatchSet_Override(w WafSqlInjectionMatchSet, scope constructs.Construct, id *string, config *WafSqlInjectionMatchSetConfig) {
 	_init_.Initialize()
 
@@ -373,7 +373,10 @@ func (j *jsiiProxy_WafSqlInjectionMatchSet)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafSqlInjectionMatchSet)SetCount(val *float64) {
+func (j *jsiiProxy_WafSqlInjectionMatchSet)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

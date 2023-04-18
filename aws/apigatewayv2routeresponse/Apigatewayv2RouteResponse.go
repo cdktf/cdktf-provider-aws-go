@@ -2,14 +2,14 @@ package apigatewayv2routeresponse
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/apigatewayv2routeresponse/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/apigatewayv2routeresponse/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route_response aws_apigatewayv2_route_response}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/apigatewayv2_route_response aws_apigatewayv2_route_response}.
 type Apigatewayv2RouteResponse interface {
 	cdktf.TerraformResource
 	ApiId() *string
@@ -24,9 +24,9 @@ type Apigatewayv2RouteResponse interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -172,8 +172,8 @@ func (j *jsiiProxy_Apigatewayv2RouteResponse) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2RouteResponse) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Apigatewayv2RouteResponse) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -403,7 +403,7 @@ func (j *jsiiProxy_Apigatewayv2RouteResponse) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route_response aws_apigatewayv2_route_response} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/apigatewayv2_route_response aws_apigatewayv2_route_response} Resource.
 func NewApigatewayv2RouteResponse(scope constructs.Construct, id *string, config *Apigatewayv2RouteResponseConfig) Apigatewayv2RouteResponse {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewApigatewayv2RouteResponse(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_route_response aws_apigatewayv2_route_response} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/apigatewayv2_route_response aws_apigatewayv2_route_response} Resource.
 func NewApigatewayv2RouteResponse_Override(a Apigatewayv2RouteResponse, scope constructs.Construct, id *string, config *Apigatewayv2RouteResponseConfig) {
 	_init_.Initialize()
 
@@ -454,7 +454,10 @@ func (j *jsiiProxy_Apigatewayv2RouteResponse)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2RouteResponse)SetCount(val *float64) {
+func (j *jsiiProxy_Apigatewayv2RouteResponse)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

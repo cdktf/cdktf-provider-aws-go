@@ -2,14 +2,14 @@ package imagebuildercontainerrecipe
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/imagebuildercontainerrecipe/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/imagebuildercontainerrecipe/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_container_recipe aws_imagebuilder_container_recipe}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/imagebuilder_container_recipe aws_imagebuilder_container_recipe}.
 type ImagebuilderContainerRecipe interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -27,9 +27,9 @@ type ImagebuilderContainerRecipe interface {
 	SetContainerType(val *string)
 	ContainerTypeInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DateCreated() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -244,8 +244,8 @@ func (j *jsiiProxy_ImagebuilderContainerRecipe) ContainerTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderContainerRecipe) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ImagebuilderContainerRecipe) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -695,7 +695,7 @@ func (j *jsiiProxy_ImagebuilderContainerRecipe) WorkingDirectoryInput() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_container_recipe aws_imagebuilder_container_recipe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/imagebuilder_container_recipe aws_imagebuilder_container_recipe} Resource.
 func NewImagebuilderContainerRecipe(scope constructs.Construct, id *string, config *ImagebuilderContainerRecipeConfig) ImagebuilderContainerRecipe {
 	_init_.Initialize()
 
@@ -713,7 +713,7 @@ func NewImagebuilderContainerRecipe(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/imagebuilder_container_recipe aws_imagebuilder_container_recipe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/imagebuilder_container_recipe aws_imagebuilder_container_recipe} Resource.
 func NewImagebuilderContainerRecipe_Override(i ImagebuilderContainerRecipe, scope constructs.Construct, id *string, config *ImagebuilderContainerRecipeConfig) {
 	_init_.Initialize()
 
@@ -746,7 +746,10 @@ func (j *jsiiProxy_ImagebuilderContainerRecipe)SetContainerType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderContainerRecipe)SetCount(val *float64) {
+func (j *jsiiProxy_ImagebuilderContainerRecipe)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

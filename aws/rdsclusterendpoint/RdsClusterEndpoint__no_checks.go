@@ -76,6 +76,10 @@ func (j *jsiiProxy_RdsClusterEndpoint) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_RdsClusterEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsClusterEndpoint) validateSetCustomEndpointTypeParameters(val *string) error {
 	return nil
 }

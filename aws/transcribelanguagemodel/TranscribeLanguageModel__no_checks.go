@@ -80,6 +80,10 @@ func (j *jsiiProxy_TranscribeLanguageModel) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_TranscribeLanguageModel) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TranscribeLanguageModel) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_LocationTracker) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_LocationTracker) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LocationTracker) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ChimeVoiceConnectorLogging) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ChimeVoiceConnectorLogging) validateSetEnableMediaMetricLogsParameters(val interface{}) error {
 	return nil
 }

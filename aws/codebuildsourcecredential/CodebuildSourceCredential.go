@@ -2,14 +2,14 @@ package codebuildsourcecredential
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/codebuildsourcecredential/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/codebuildsourcecredential/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/codebuild_source_credential aws_codebuild_source_credential}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/codebuild_source_credential aws_codebuild_source_credential}.
 type CodebuildSourceCredential interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -25,9 +25,9 @@ type CodebuildSourceCredential interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -179,8 +179,8 @@ func (j *jsiiProxy_CodebuildSourceCredential) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildSourceCredential) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CodebuildSourceCredential) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_CodebuildSourceCredential) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/codebuild_source_credential aws_codebuild_source_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/codebuild_source_credential aws_codebuild_source_credential} Resource.
 func NewCodebuildSourceCredential(scope constructs.Construct, id *string, config *CodebuildSourceCredentialConfig) CodebuildSourceCredential {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewCodebuildSourceCredential(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/codebuild_source_credential aws_codebuild_source_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/codebuild_source_credential aws_codebuild_source_credential} Resource.
 func NewCodebuildSourceCredential_Override(c CodebuildSourceCredential, scope constructs.Construct, id *string, config *CodebuildSourceCredentialConfig) {
 	_init_.Initialize()
 
@@ -441,7 +441,10 @@ func (j *jsiiProxy_CodebuildSourceCredential)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CodebuildSourceCredential)SetCount(val *float64) {
+func (j *jsiiProxy_CodebuildSourceCredential)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

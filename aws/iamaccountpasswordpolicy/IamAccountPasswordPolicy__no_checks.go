@@ -72,6 +72,10 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamAccountPasswordPolicy) validateSetHardExpiryParameters(val interface{}) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataAwsLocationTracker_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLocationTracker) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLocationTracker) validateSetIdParameters(val *string) error {
 	return nil
 }

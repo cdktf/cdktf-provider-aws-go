@@ -72,6 +72,10 @@ func (j *jsiiProxy_AppsyncApiKey) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_AppsyncApiKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncApiKey) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

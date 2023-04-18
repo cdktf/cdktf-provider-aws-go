@@ -80,6 +80,10 @@ func (j *jsiiProxy_EksIdentityProviderConfig) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_EksIdentityProviderConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EksIdentityProviderConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

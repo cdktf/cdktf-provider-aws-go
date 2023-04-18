@@ -2,14 +2,14 @@ package dbeventsubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dbeventsubscription/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dbeventsubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/db_event_subscription aws_db_event_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/db_event_subscription aws_db_event_subscription}.
 type DbEventSubscription interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type DbEventSubscription interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomerAwsId() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -186,8 +186,8 @@ func (j *jsiiProxy_DbEventSubscription) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_DbEventSubscription) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DbEventSubscription) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -547,7 +547,7 @@ func (j *jsiiProxy_DbEventSubscription) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/db_event_subscription aws_db_event_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/db_event_subscription aws_db_event_subscription} Resource.
 func NewDbEventSubscription(scope constructs.Construct, id *string, config *DbEventSubscriptionConfig) DbEventSubscription {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewDbEventSubscription(scope constructs.Construct, id *string, config *DbEv
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/db_event_subscription aws_db_event_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/db_event_subscription aws_db_event_subscription} Resource.
 func NewDbEventSubscription_Override(d DbEventSubscription, scope constructs.Construct, id *string, config *DbEventSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -587,7 +587,10 @@ func (j *jsiiProxy_DbEventSubscription)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbEventSubscription)SetCount(val *float64) {
+func (j *jsiiProxy_DbEventSubscription)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

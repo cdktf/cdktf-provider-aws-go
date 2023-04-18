@@ -2,14 +2,14 @@ package vpcipampoolcidr
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/vpcipampoolcidr/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/vpcipampoolcidr/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr aws_vpc_ipam_pool_cidr}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpc_ipam_pool_cidr aws_vpc_ipam_pool_cidr}.
 type VpcIpamPoolCidr interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -26,9 +26,9 @@ type VpcIpamPoolCidr interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -195,8 +195,8 @@ func (j *jsiiProxy_VpcIpamPoolCidr) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidr) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VpcIpamPoolCidr) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -416,7 +416,7 @@ func (j *jsiiProxy_VpcIpamPoolCidr) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr aws_vpc_ipam_pool_cidr} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpc_ipam_pool_cidr aws_vpc_ipam_pool_cidr} Resource.
 func NewVpcIpamPoolCidr(scope constructs.Construct, id *string, config *VpcIpamPoolCidrConfig) VpcIpamPoolCidr {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewVpcIpamPoolCidr(scope constructs.Construct, id *string, config *VpcIpamP
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam_pool_cidr aws_vpc_ipam_pool_cidr} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpc_ipam_pool_cidr aws_vpc_ipam_pool_cidr} Resource.
 func NewVpcIpamPoolCidr_Override(v VpcIpamPoolCidr, scope constructs.Construct, id *string, config *VpcIpamPoolCidrConfig) {
 	_init_.Initialize()
 
@@ -467,7 +467,10 @@ func (j *jsiiProxy_VpcIpamPoolCidr)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpamPoolCidr)SetCount(val *float64) {
+func (j *jsiiProxy_VpcIpamPoolCidr)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

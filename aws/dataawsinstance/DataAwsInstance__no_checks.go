@@ -72,6 +72,10 @@ func validateDataAwsInstance_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsInstance) validateSetFetchPasswordDataParameters(val interface{}) error {
 	return nil
 }

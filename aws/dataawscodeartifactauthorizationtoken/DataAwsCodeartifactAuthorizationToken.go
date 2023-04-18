@@ -2,14 +2,14 @@ package dataawscodeartifactauthorizationtoken
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawscodeartifactauthorizationtoken/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawscodeartifactauthorizationtoken/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_authorization_token aws_codeartifact_authorization_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/codeartifact_authorization_token aws_codeartifact_authorization_token}.
 type DataAwsCodeartifactAuthorizationToken interface {
 	cdktf.TerraformDataSource
 	AuthorizationToken() *string
@@ -18,9 +18,9 @@ type DataAwsCodeartifactAuthorizationToken interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -351,7 +351,7 @@ func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) TerraformResourceType(
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_authorization_token aws_codeartifact_authorization_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/codeartifact_authorization_token aws_codeartifact_authorization_token} Data Source.
 func NewDataAwsCodeartifactAuthorizationToken(scope constructs.Construct, id *string, config *DataAwsCodeartifactAuthorizationTokenConfig) DataAwsCodeartifactAuthorizationToken {
 	_init_.Initialize()
 
@@ -369,7 +369,7 @@ func NewDataAwsCodeartifactAuthorizationToken(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_authorization_token aws_codeartifact_authorization_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/codeartifact_authorization_token aws_codeartifact_authorization_token} Data Source.
 func NewDataAwsCodeartifactAuthorizationToken_Override(d DataAwsCodeartifactAuthorizationToken, scope constructs.Construct, id *string, config *DataAwsCodeartifactAuthorizationTokenConfig) {
 	_init_.Initialize()
 
@@ -380,7 +380,10 @@ func NewDataAwsCodeartifactAuthorizationToken_Override(d DataAwsCodeartifactAuth
 	)
 }
 
-func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

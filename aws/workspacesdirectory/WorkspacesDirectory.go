@@ -2,14 +2,14 @@ package workspacesdirectory
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/workspacesdirectory/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/workspacesdirectory/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/workspaces_directory aws_workspaces_directory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/workspaces_directory aws_workspaces_directory}.
 type WorkspacesDirectory interface {
 	cdktf.TerraformResource
 	Alias() *string
@@ -22,9 +22,9 @@ type WorkspacesDirectory interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomerUserName() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -184,8 +184,8 @@ func (j *jsiiProxy_WorkspacesDirectory) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesDirectory) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_WorkspacesDirectory) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -565,7 +565,7 @@ func (j *jsiiProxy_WorkspacesDirectory) WorkspaceSecurityGroupId() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/workspaces_directory aws_workspaces_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
 func NewWorkspacesDirectory(scope constructs.Construct, id *string, config *WorkspacesDirectoryConfig) WorkspacesDirectory {
 	_init_.Initialize()
 
@@ -583,7 +583,7 @@ func NewWorkspacesDirectory(scope constructs.Construct, id *string, config *Work
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/workspaces_directory aws_workspaces_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
 func NewWorkspacesDirectory_Override(w WorkspacesDirectory, scope constructs.Construct, id *string, config *WorkspacesDirectoryConfig) {
 	_init_.Initialize()
 
@@ -605,7 +605,10 @@ func (j *jsiiProxy_WorkspacesDirectory)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkspacesDirectory)SetCount(val *float64) {
+func (j *jsiiProxy_WorkspacesDirectory)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,11 +2,11 @@ package alb
 
 
 type AlbAccessLogs struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#bucket Alb#bucket}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/alb#bucket Alb#bucket}.
 	Bucket *string `field:"required" json:"bucket" yaml:"bucket"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#enabled Alb#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/alb#enabled Alb#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/alb#prefix Alb#prefix}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/alb#prefix Alb#prefix}.
 	Prefix *string `field:"optional" json:"prefix" yaml:"prefix"`
 }
 

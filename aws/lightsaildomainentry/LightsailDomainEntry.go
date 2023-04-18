@@ -2,14 +2,14 @@ package lightsaildomainentry
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/lightsaildomainentry/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/lightsaildomainentry/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/lightsail_domain_entry aws_lightsail_domain_entry}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lightsail_domain_entry aws_lightsail_domain_entry}.
 type LightsailDomainEntry interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type LightsailDomainEntry interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -151,8 +151,8 @@ func (j *jsiiProxy_LightsailDomainEntry) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_LightsailDomainEntry) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LightsailDomainEntry) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -402,7 +402,7 @@ func (j *jsiiProxy_LightsailDomainEntry) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lightsail_domain_entry aws_lightsail_domain_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lightsail_domain_entry aws_lightsail_domain_entry} Resource.
 func NewLightsailDomainEntry(scope constructs.Construct, id *string, config *LightsailDomainEntryConfig) LightsailDomainEntry {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewLightsailDomainEntry(scope constructs.Construct, id *string, config *Lig
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lightsail_domain_entry aws_lightsail_domain_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lightsail_domain_entry aws_lightsail_domain_entry} Resource.
 func NewLightsailDomainEntry_Override(l LightsailDomainEntry, scope constructs.Construct, id *string, config *LightsailDomainEntryConfig) {
 	_init_.Initialize()
 
@@ -442,7 +442,10 @@ func (j *jsiiProxy_LightsailDomainEntry)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LightsailDomainEntry)SetCount(val *float64) {
+func (j *jsiiProxy_LightsailDomainEntry)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

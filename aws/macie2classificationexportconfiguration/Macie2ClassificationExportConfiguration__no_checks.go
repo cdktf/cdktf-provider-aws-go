@@ -72,6 +72,10 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Macie2ClassificationExportConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -128,6 +128,10 @@ func (j *jsiiProxy_Instance) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_Instance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Instance) validateSetCpuCoreCountParameters(val *float64) error {
 	return nil
 }

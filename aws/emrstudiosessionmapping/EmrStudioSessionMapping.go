@@ -2,14 +2,14 @@ package emrstudiosessionmapping
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/emrstudiosessionmapping/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/emrstudiosessionmapping/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/emr_studio_session_mapping aws_emr_studio_session_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_studio_session_mapping aws_emr_studio_session_mapping}.
 type EmrStudioSessionMapping interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type EmrStudioSessionMapping interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -152,8 +152,8 @@ func (j *jsiiProxy_EmrStudioSessionMapping) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_EmrStudioSessionMapping) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EmrStudioSessionMapping) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -403,7 +403,7 @@ func (j *jsiiProxy_EmrStudioSessionMapping) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/emr_studio_session_mapping aws_emr_studio_session_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_studio_session_mapping aws_emr_studio_session_mapping} Resource.
 func NewEmrStudioSessionMapping(scope constructs.Construct, id *string, config *EmrStudioSessionMappingConfig) EmrStudioSessionMapping {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewEmrStudioSessionMapping(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/emr_studio_session_mapping aws_emr_studio_session_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_studio_session_mapping aws_emr_studio_session_mapping} Resource.
 func NewEmrStudioSessionMapping_Override(e EmrStudioSessionMapping, scope constructs.Construct, id *string, config *EmrStudioSessionMappingConfig) {
 	_init_.Initialize()
 
@@ -443,7 +443,10 @@ func (j *jsiiProxy_EmrStudioSessionMapping)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmrStudioSessionMapping)SetCount(val *float64) {
+func (j *jsiiProxy_EmrStudioSessionMapping)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

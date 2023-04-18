@@ -2,14 +2,14 @@ package dataawsdbsubnetgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsdbsubnetgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsdbsubnetgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/db_subnet_group aws_db_subnet_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/db_subnet_group aws_db_subnet_group}.
 type DataAwsDbSubnetGroup interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -18,9 +18,9 @@ type DataAwsDbSubnetGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -136,8 +136,8 @@ func (j *jsiiProxy_DataAwsDbSubnetGroup) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDbSubnetGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsDbSubnetGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -347,7 +347,7 @@ func (j *jsiiProxy_DataAwsDbSubnetGroup) VpcId() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/db_subnet_group aws_db_subnet_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/db_subnet_group aws_db_subnet_group} Data Source.
 func NewDataAwsDbSubnetGroup(scope constructs.Construct, id *string, config *DataAwsDbSubnetGroupConfig) DataAwsDbSubnetGroup {
 	_init_.Initialize()
 
@@ -365,7 +365,7 @@ func NewDataAwsDbSubnetGroup(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/db_subnet_group aws_db_subnet_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/db_subnet_group aws_db_subnet_group} Data Source.
 func NewDataAwsDbSubnetGroup_Override(d DataAwsDbSubnetGroup, scope constructs.Construct, id *string, config *DataAwsDbSubnetGroupConfig) {
 	_init_.Initialize()
 
@@ -376,7 +376,10 @@ func NewDataAwsDbSubnetGroup_Override(d DataAwsDbSubnetGroup, scope constructs.C
 	)
 }
 
-func (j *jsiiProxy_DataAwsDbSubnetGroup)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsDbSubnetGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

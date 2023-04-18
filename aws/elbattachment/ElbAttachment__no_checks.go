@@ -68,6 +68,10 @@ func (j *jsiiProxy_ElbAttachment) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_ElbAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElbAttachment) validateSetElbParameters(val *string) error {
 	return nil
 }

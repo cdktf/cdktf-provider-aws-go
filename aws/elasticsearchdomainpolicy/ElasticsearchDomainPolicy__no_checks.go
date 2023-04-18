@@ -76,6 +76,10 @@ func (j *jsiiProxy_ElasticsearchDomainPolicy) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ElasticsearchDomainPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticsearchDomainPolicy) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

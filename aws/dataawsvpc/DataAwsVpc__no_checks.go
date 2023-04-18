@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataAwsVpc) validateSetCidrBlockParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpc) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpc) validateSetDefaultParameters(val interface{}) error {
 	return nil
 }

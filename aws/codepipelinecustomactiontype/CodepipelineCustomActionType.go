@@ -2,14 +2,14 @@ package codepipelinecustomactiontype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/codepipelinecustomactiontype/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/codepipelinecustomactiontype/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/codepipeline_custom_action_type aws_codepipeline_custom_action_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/codepipeline_custom_action_type aws_codepipeline_custom_action_type}.
 type CodepipelineCustomActionType interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -27,9 +27,9 @@ type CodepipelineCustomActionType interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -218,8 +218,8 @@ func (j *jsiiProxy_CodepipelineCustomActionType) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CodepipelineCustomActionType) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -519,7 +519,7 @@ func (j *jsiiProxy_CodepipelineCustomActionType) VersionInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/codepipeline_custom_action_type aws_codepipeline_custom_action_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/codepipeline_custom_action_type aws_codepipeline_custom_action_type} Resource.
 func NewCodepipelineCustomActionType(scope constructs.Construct, id *string, config *CodepipelineCustomActionTypeConfig) CodepipelineCustomActionType {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewCodepipelineCustomActionType(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/codepipeline_custom_action_type aws_codepipeline_custom_action_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/codepipeline_custom_action_type aws_codepipeline_custom_action_type} Resource.
 func NewCodepipelineCustomActionType_Override(c CodepipelineCustomActionType, scope constructs.Construct, id *string, config *CodepipelineCustomActionTypeConfig) {
 	_init_.Initialize()
 
@@ -570,7 +570,10 @@ func (j *jsiiProxy_CodepipelineCustomActionType)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionType)SetCount(val *float64) {
+func (j *jsiiProxy_CodepipelineCustomActionType)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

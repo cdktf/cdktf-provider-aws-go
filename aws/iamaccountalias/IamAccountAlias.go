@@ -2,14 +2,14 @@ package iamaccountalias
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/iamaccountalias/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/iamaccountalias/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/iam_account_alias aws_iam_account_alias}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_account_alias aws_iam_account_alias}.
 type IamAccountAlias interface {
 	cdktf.TerraformResource
 	AccountAlias() *string
@@ -24,9 +24,9 @@ type IamAccountAlias interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -158,8 +158,8 @@ func (j *jsiiProxy_IamAccountAlias) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountAlias) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IamAccountAlias) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -309,7 +309,7 @@ func (j *jsiiProxy_IamAccountAlias) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/iam_account_alias aws_iam_account_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_account_alias aws_iam_account_alias} Resource.
 func NewIamAccountAlias(scope constructs.Construct, id *string, config *IamAccountAliasConfig) IamAccountAlias {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewIamAccountAlias(scope constructs.Construct, id *string, config *IamAccou
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/iam_account_alias aws_iam_account_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_account_alias aws_iam_account_alias} Resource.
 func NewIamAccountAlias_Override(i IamAccountAlias, scope constructs.Construct, id *string, config *IamAccountAliasConfig) {
 	_init_.Initialize()
 
@@ -360,7 +360,10 @@ func (j *jsiiProxy_IamAccountAlias)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamAccountAlias)SetCount(val *float64) {
+func (j *jsiiProxy_IamAccountAlias)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

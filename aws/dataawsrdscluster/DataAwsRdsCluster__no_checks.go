@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsRdsCluster) validateSetClusterIdentifierParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRdsCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRdsCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

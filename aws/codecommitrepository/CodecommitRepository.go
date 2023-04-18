@@ -2,14 +2,14 @@ package codecommitrepository
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/codecommitrepository/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/codecommitrepository/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/codecommit_repository aws_codecommit_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/codecommit_repository aws_codecommit_repository}.
 type CodecommitRepository interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -24,9 +24,9 @@ type CodecommitRepository interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultBranch() *string
 	SetDefaultBranch(val *string)
 	DefaultBranchInput() *string
@@ -188,8 +188,8 @@ func (j *jsiiProxy_CodecommitRepository) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_CodecommitRepository) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CodecommitRepository) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -449,7 +449,7 @@ func (j *jsiiProxy_CodecommitRepository) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/codecommit_repository aws_codecommit_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/codecommit_repository aws_codecommit_repository} Resource.
 func NewCodecommitRepository(scope constructs.Construct, id *string, config *CodecommitRepositoryConfig) CodecommitRepository {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewCodecommitRepository(scope constructs.Construct, id *string, config *Cod
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/codecommit_repository aws_codecommit_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/codecommit_repository aws_codecommit_repository} Resource.
 func NewCodecommitRepository_Override(c CodecommitRepository, scope constructs.Construct, id *string, config *CodecommitRepositoryConfig) {
 	_init_.Initialize()
 
@@ -489,7 +489,10 @@ func (j *jsiiProxy_CodecommitRepository)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CodecommitRepository)SetCount(val *float64) {
+func (j *jsiiProxy_CodecommitRepository)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

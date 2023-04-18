@@ -76,6 +76,10 @@ func (j *jsiiProxy_EmrManagedScalingPolicy) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_EmrManagedScalingPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrManagedScalingPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

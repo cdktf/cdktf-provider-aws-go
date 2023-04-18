@@ -2,14 +2,14 @@ package wafregionalrulegroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/wafregionalrulegroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafregionalrulegroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/wafregional_rule_group aws_wafregional_rule_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafregional_rule_group aws_wafregional_rule_group}.
 type WafregionalRuleGroup interface {
 	cdktf.TerraformResource
 	ActivatedRule() WafregionalRuleGroupActivatedRuleList
@@ -24,9 +24,9 @@ type WafregionalRuleGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -184,8 +184,8 @@ func (j *jsiiProxy_WafregionalRuleGroup) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalRuleGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_WafregionalRuleGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -415,7 +415,7 @@ func (j *jsiiProxy_WafregionalRuleGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/wafregional_rule_group aws_wafregional_rule_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafregional_rule_group aws_wafregional_rule_group} Resource.
 func NewWafregionalRuleGroup(scope constructs.Construct, id *string, config *WafregionalRuleGroupConfig) WafregionalRuleGroup {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewWafregionalRuleGroup(scope constructs.Construct, id *string, config *Waf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/wafregional_rule_group aws_wafregional_rule_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafregional_rule_group aws_wafregional_rule_group} Resource.
 func NewWafregionalRuleGroup_Override(w WafregionalRuleGroup, scope constructs.Construct, id *string, config *WafregionalRuleGroupConfig) {
 	_init_.Initialize()
 
@@ -455,7 +455,10 @@ func (j *jsiiProxy_WafregionalRuleGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafregionalRuleGroup)SetCount(val *float64) {
+func (j *jsiiProxy_WafregionalRuleGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

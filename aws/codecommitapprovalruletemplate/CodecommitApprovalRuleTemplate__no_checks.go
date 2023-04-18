@@ -72,6 +72,10 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplate) validateSetContentParameters(
 	return nil
 }
 
+func (j *jsiiProxy_CodecommitApprovalRuleTemplate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodecommitApprovalRuleTemplate) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

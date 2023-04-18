@@ -72,6 +72,10 @@ func (j *jsiiProxy_ConfigOrganizationCustomRule) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_ConfigOrganizationCustomRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigOrganizationCustomRule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

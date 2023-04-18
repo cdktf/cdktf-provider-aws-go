@@ -2,14 +2,14 @@ package dmseventsubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dmseventsubscription/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dmseventsubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/dms_event_subscription aws_dms_event_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dms_event_subscription aws_dms_event_subscription}.
 type DmsEventSubscription interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type DmsEventSubscription interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -179,8 +179,8 @@ func (j *jsiiProxy_DmsEventSubscription) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_DmsEventSubscription) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DmsEventSubscription) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -510,7 +510,7 @@ func (j *jsiiProxy_DmsEventSubscription) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/dms_event_subscription aws_dms_event_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dms_event_subscription aws_dms_event_subscription} Resource.
 func NewDmsEventSubscription(scope constructs.Construct, id *string, config *DmsEventSubscriptionConfig) DmsEventSubscription {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewDmsEventSubscription(scope constructs.Construct, id *string, config *Dms
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/dms_event_subscription aws_dms_event_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dms_event_subscription aws_dms_event_subscription} Resource.
 func NewDmsEventSubscription_Override(d DmsEventSubscription, scope constructs.Construct, id *string, config *DmsEventSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -550,7 +550,10 @@ func (j *jsiiProxy_DmsEventSubscription)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DmsEventSubscription)SetCount(val *float64) {
+func (j *jsiiProxy_DmsEventSubscription)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func (j *jsiiProxy_EbsEncryptionByDefault) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_EbsEncryptionByDefault) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EbsEncryptionByDefault) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package lexbotalias
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/lexbotalias/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/lexbotalias/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/lex_bot_alias aws_lex_bot_alias}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lex_bot_alias aws_lex_bot_alias}.
 type LexBotAlias interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -31,9 +31,9 @@ type LexBotAlias interface {
 	ConversationLogs() LexBotAliasConversationLogsOutputReference
 	ConversationLogsInput() *LexBotAliasConversationLogs
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -240,8 +240,8 @@ func (j *jsiiProxy_LexBotAlias) ConversationLogsInput() *LexBotAliasConversation
 	return returns
 }
 
-func (j *jsiiProxy_LexBotAlias) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LexBotAlias) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -471,7 +471,7 @@ func (j *jsiiProxy_LexBotAlias) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lex_bot_alias aws_lex_bot_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lex_bot_alias aws_lex_bot_alias} Resource.
 func NewLexBotAlias(scope constructs.Construct, id *string, config *LexBotAliasConfig) LexBotAlias {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewLexBotAlias(scope constructs.Construct, id *string, config *LexBotAliasC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lex_bot_alias aws_lex_bot_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lex_bot_alias aws_lex_bot_alias} Resource.
 func NewLexBotAlias_Override(l LexBotAlias, scope constructs.Construct, id *string, config *LexBotAliasConfig) {
 	_init_.Initialize()
 
@@ -533,7 +533,10 @@ func (j *jsiiProxy_LexBotAlias)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LexBotAlias)SetCount(val *float64) {
+func (j *jsiiProxy_LexBotAlias)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

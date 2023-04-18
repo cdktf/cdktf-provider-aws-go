@@ -80,6 +80,10 @@ func (j *jsiiProxy_LightsailContainerServiceDeploymentVersion) validateSetConnec
 	return nil
 }
 
+func (j *jsiiProxy_LightsailContainerServiceDeploymentVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailContainerServiceDeploymentVersion) validateSetIdParameters(val *string) error {
 	return nil
 }

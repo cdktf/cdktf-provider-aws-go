@@ -68,6 +68,10 @@ func (j *jsiiProxy_CeCostAllocationTag) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_CeCostAllocationTag) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CeCostAllocationTag) validateSetIdParameters(val *string) error {
 	return nil
 }

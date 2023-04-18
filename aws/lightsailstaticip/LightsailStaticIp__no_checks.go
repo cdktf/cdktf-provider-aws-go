@@ -68,6 +68,10 @@ func (j *jsiiProxy_LightsailStaticIp) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_LightsailStaticIp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailStaticIp) validateSetIdParameters(val *string) error {
 	return nil
 }

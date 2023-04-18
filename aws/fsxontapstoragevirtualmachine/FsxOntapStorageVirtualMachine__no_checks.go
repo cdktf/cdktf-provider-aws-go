@@ -76,6 +76,10 @@ func (j *jsiiProxy_FsxOntapStorageVirtualMachine) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_FsxOntapStorageVirtualMachine) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOntapStorageVirtualMachine) validateSetFileSystemIdParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataAwsOamLink_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOamLink) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsOamLink) validateSetIdParameters(val *string) error {
 	return nil
 }

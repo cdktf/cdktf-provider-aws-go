@@ -2,14 +2,14 @@ package organizationsorganization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/organizationsorganization/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/organizationsorganization/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/organizations_organization aws_organizations_organization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/organizations_organization aws_organizations_organization}.
 type OrganizationsOrganization interface {
 	cdktf.TerraformResource
 	Accounts() OrganizationsOrganizationAccountsList
@@ -26,9 +26,9 @@ type OrganizationsOrganization interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -194,8 +194,8 @@ func (j *jsiiProxy_OrganizationsOrganization) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationsOrganization) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OrganizationsOrganization) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -435,7 +435,7 @@ func (j *jsiiProxy_OrganizationsOrganization) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/organizations_organization aws_organizations_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/organizations_organization aws_organizations_organization} Resource.
 func NewOrganizationsOrganization(scope constructs.Construct, id *string, config *OrganizationsOrganizationConfig) OrganizationsOrganization {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewOrganizationsOrganization(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/organizations_organization aws_organizations_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/organizations_organization aws_organizations_organization} Resource.
 func NewOrganizationsOrganization_Override(o OrganizationsOrganization, scope constructs.Construct, id *string, config *OrganizationsOrganizationConfig) {
 	_init_.Initialize()
 
@@ -486,7 +486,10 @@ func (j *jsiiProxy_OrganizationsOrganization)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OrganizationsOrganization)SetCount(val *float64) {
+func (j *jsiiProxy_OrganizationsOrganization)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

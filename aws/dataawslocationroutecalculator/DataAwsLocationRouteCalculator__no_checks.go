@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsLocationRouteCalculator) validateSetCalculatorNamePara
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLocationRouteCalculator) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLocationRouteCalculator) validateSetIdParameters(val *string) error {
 	return nil
 }

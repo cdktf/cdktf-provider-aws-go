@@ -72,6 +72,10 @@ func validateDataAwsEc2CoipPools_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2CoipPools) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2CoipPools) validateSetIdParameters(val *string) error {
 	return nil
 }

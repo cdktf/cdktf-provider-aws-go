@@ -68,6 +68,10 @@ func validateDataAwsVpcSecurityGroupRules_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpcSecurityGroupRules) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpcSecurityGroupRules) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

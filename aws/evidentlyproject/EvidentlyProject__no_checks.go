@@ -76,6 +76,10 @@ func (j *jsiiProxy_EvidentlyProject) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_EvidentlyProject) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EvidentlyProject) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

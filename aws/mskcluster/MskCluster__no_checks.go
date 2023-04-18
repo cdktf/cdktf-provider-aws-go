@@ -100,6 +100,10 @@ func (j *jsiiProxy_MskCluster) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_MskCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MskCluster) validateSetEnhancedMonitoringParameters(val *string) error {
 	return nil
 }

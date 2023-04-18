@@ -76,6 +76,10 @@ func (j *jsiiProxy_GlacierVault) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_GlacierVault) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlacierVault) validateSetIdParameters(val *string) error {
 	return nil
 }

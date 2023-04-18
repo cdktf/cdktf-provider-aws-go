@@ -76,6 +76,10 @@ func (j *jsiiProxy_EfsReplicationConfiguration) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_EfsReplicationConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EfsReplicationConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

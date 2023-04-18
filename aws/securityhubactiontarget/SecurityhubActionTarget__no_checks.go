@@ -68,6 +68,10 @@ func (j *jsiiProxy_SecurityhubActionTarget) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_SecurityhubActionTarget) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityhubActionTarget) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

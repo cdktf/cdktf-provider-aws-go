@@ -2,14 +2,14 @@ package cognitouser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/cognitouser/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/cognitouser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/cognito_user aws_cognito_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cognito_user aws_cognito_user}.
 type CognitoUser interface {
 	cdktf.TerraformResource
 	Attributes() *map[string]*string
@@ -27,9 +27,9 @@ type CognitoUser interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreationDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -223,8 +223,8 @@ func (j *jsiiProxy_CognitoUser) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUser) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CognitoUser) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -614,7 +614,7 @@ func (j *jsiiProxy_CognitoUser) ValidationDataInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cognito_user aws_cognito_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cognito_user aws_cognito_user} Resource.
 func NewCognitoUser(scope constructs.Construct, id *string, config *CognitoUserConfig) CognitoUser {
 	_init_.Initialize()
 
@@ -632,7 +632,7 @@ func NewCognitoUser(scope constructs.Construct, id *string, config *CognitoUserC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cognito_user aws_cognito_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cognito_user aws_cognito_user} Resource.
 func NewCognitoUser_Override(c CognitoUser, scope constructs.Construct, id *string, config *CognitoUserConfig) {
 	_init_.Initialize()
 
@@ -676,7 +676,10 @@ func (j *jsiiProxy_CognitoUser)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUser)SetCount(val *float64) {
+func (j *jsiiProxy_CognitoUser)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

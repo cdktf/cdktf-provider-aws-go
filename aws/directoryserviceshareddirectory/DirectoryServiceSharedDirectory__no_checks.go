@@ -76,6 +76,10 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectory) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_DirectoryServiceSharedDirectory) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DirectoryServiceSharedDirectory) validateSetDirectoryIdParameters(val *string) error {
 	return nil
 }

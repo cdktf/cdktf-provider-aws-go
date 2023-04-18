@@ -2,9 +2,9 @@ package dataawselasticbeanstalkapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawselasticbeanstalkapplication/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawselasticbeanstalkapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

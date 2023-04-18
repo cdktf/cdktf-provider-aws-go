@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsSsoadminPermissionSet) validateSetArnParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSsoadminPermissionSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSsoadminPermissionSet) validateSetIdParameters(val *string) error {
 	return nil
 }

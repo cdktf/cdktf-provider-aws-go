@@ -2,14 +2,14 @@ package sesv2contactlist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/sesv2contactlist/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/sesv2contactlist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/sesv2_contact_list aws_sesv2_contact_list}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sesv2_contact_list aws_sesv2_contact_list}.
 type Sesv2ContactList interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -25,9 +25,9 @@ type Sesv2ContactList interface {
 	SetContactListName(val *string)
 	ContactListNameInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -187,8 +187,8 @@ func (j *jsiiProxy_Sesv2ContactList) ContactListNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Sesv2ContactList) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Sesv2ContactList) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -438,7 +438,7 @@ func (j *jsiiProxy_Sesv2ContactList) TopicInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/sesv2_contact_list aws_sesv2_contact_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sesv2_contact_list aws_sesv2_contact_list} Resource.
 func NewSesv2ContactList(scope constructs.Construct, id *string, config *Sesv2ContactListConfig) Sesv2ContactList {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewSesv2ContactList(scope constructs.Construct, id *string, config *Sesv2Co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/sesv2_contact_list aws_sesv2_contact_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sesv2_contact_list aws_sesv2_contact_list} Resource.
 func NewSesv2ContactList_Override(s Sesv2ContactList, scope constructs.Construct, id *string, config *Sesv2ContactListConfig) {
 	_init_.Initialize()
 
@@ -489,7 +489,10 @@ func (j *jsiiProxy_Sesv2ContactList)SetContactListName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Sesv2ContactList)SetCount(val *float64) {
+func (j *jsiiProxy_Sesv2ContactList)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

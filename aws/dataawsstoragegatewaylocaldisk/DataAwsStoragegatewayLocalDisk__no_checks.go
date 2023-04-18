@@ -64,6 +64,10 @@ func validateDataAwsStoragegatewayLocalDisk_IsTerraformElementParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsStoragegatewayLocalDisk) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsStoragegatewayLocalDisk) validateSetDiskNodeParameters(val *string) error {
 	return nil
 }

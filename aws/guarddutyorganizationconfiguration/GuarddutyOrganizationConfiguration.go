@@ -2,14 +2,14 @@ package guarddutyorganizationconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/guarddutyorganizationconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/guarddutyorganizationconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/guardduty_organization_configuration aws_guardduty_organization_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/guardduty_organization_configuration aws_guardduty_organization_configuration}.
 type GuarddutyOrganizationConfiguration interface {
 	cdktf.TerraformResource
 	AutoEnable() interface{}
@@ -24,9 +24,9 @@ type GuarddutyOrganizationConfiguration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Datasources() GuarddutyOrganizationConfigurationDatasourcesOutputReference
 	DatasourcesInput() *GuarddutyOrganizationConfigurationDatasources
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_GuarddutyOrganizationConfiguration) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyOrganizationConfiguration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GuarddutyOrganizationConfiguration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_GuarddutyOrganizationConfiguration) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/guardduty_organization_configuration aws_guardduty_organization_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/guardduty_organization_configuration aws_guardduty_organization_configuration} Resource.
 func NewGuarddutyOrganizationConfiguration(scope constructs.Construct, id *string, config *GuarddutyOrganizationConfigurationConfig) GuarddutyOrganizationConfiguration {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewGuarddutyOrganizationConfiguration(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/guardduty_organization_configuration aws_guardduty_organization_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/guardduty_organization_configuration aws_guardduty_organization_configuration} Resource.
 func NewGuarddutyOrganizationConfiguration_Override(g GuarddutyOrganizationConfiguration, scope constructs.Construct, id *string, config *GuarddutyOrganizationConfigurationConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_GuarddutyOrganizationConfiguration)SetConnection(val interfac
 	)
 }
 
-func (j *jsiiProxy_GuarddutyOrganizationConfiguration)SetCount(val *float64) {
+func (j *jsiiProxy_GuarddutyOrganizationConfiguration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

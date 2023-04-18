@@ -2,14 +2,14 @@ package dbinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dbinstance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dbinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/db_instance aws_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/db_instance aws_db_instance}.
 type DbInstance interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -55,9 +55,9 @@ type DbInstance interface {
 	SetCopyTagsToSnapshot(val interface{})
 	CopyTagsToSnapshotInput() interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomerOwnedIpEnabled() interface{}
 	SetCustomerOwnedIpEnabled(val interface{})
 	CustomerOwnedIpEnabledInput() interface{}
@@ -641,8 +641,8 @@ func (j *jsiiProxy_DbInstance) CopyTagsToSnapshotInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DbInstance) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -1942,7 +1942,7 @@ func (j *jsiiProxy_DbInstance) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/db_instance aws_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/db_instance aws_db_instance} Resource.
 func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceConfig) DbInstance {
 	_init_.Initialize()
 
@@ -1960,7 +1960,7 @@ func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/db_instance aws_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/db_instance aws_db_instance} Resource.
 func NewDbInstance_Override(d DbInstance, scope constructs.Construct, id *string, config *DbInstanceConfig) {
 	_init_.Initialize()
 
@@ -2092,7 +2092,10 @@ func (j *jsiiProxy_DbInstance)SetCopyTagsToSnapshot(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetCount(val *float64) {
+func (j *jsiiProxy_DbInstance)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

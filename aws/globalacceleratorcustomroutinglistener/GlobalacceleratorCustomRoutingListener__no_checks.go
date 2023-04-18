@@ -80,6 +80,10 @@ func (j *jsiiProxy_GlobalacceleratorCustomRoutingListener) validateSetConnection
 	return nil
 }
 
+func (j *jsiiProxy_GlobalacceleratorCustomRoutingListener) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlobalacceleratorCustomRoutingListener) validateSetIdParameters(val *string) error {
 	return nil
 }

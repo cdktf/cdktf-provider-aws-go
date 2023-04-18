@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) validateSetCommentsP
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudfrontOriginAccessIdentities) validateSetIdParameters(val *string) error {
 	return nil
 }

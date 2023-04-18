@@ -2,14 +2,14 @@ package elasticacheparametergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/elasticacheparametergroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/elasticacheparametergroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/elasticache_parameter_group aws_elasticache_parameter_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_parameter_group aws_elasticache_parameter_group}.
 type ElasticacheParameterGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type ElasticacheParameterGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -168,8 +168,8 @@ func (j *jsiiProxy_ElasticacheParameterGroup) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ElasticacheParameterGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -439,7 +439,7 @@ func (j *jsiiProxy_ElasticacheParameterGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/elasticache_parameter_group aws_elasticache_parameter_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_parameter_group aws_elasticache_parameter_group} Resource.
 func NewElasticacheParameterGroup(scope constructs.Construct, id *string, config *ElasticacheParameterGroupConfig) ElasticacheParameterGroup {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewElasticacheParameterGroup(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/elasticache_parameter_group aws_elasticache_parameter_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_parameter_group aws_elasticache_parameter_group} Resource.
 func NewElasticacheParameterGroup_Override(e ElasticacheParameterGroup, scope constructs.Construct, id *string, config *ElasticacheParameterGroupConfig) {
 	_init_.Initialize()
 
@@ -479,7 +479,10 @@ func (j *jsiiProxy_ElasticacheParameterGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheParameterGroup)SetCount(val *float64) {
+func (j *jsiiProxy_ElasticacheParameterGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

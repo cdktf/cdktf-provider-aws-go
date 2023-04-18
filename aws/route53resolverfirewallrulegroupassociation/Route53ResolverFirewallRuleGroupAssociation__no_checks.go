@@ -68,6 +68,10 @@ func (j *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateSetConne
 	return nil
 }
 
+func (j *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53ResolverFirewallRuleGroupAssociation) validateSetFirewallRuleGroupIdParameters(val *string) error {
 	return nil
 }

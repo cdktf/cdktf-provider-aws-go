@@ -72,6 +72,10 @@ func (j *jsiiProxy_RolesanywhereTrustAnchor) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_RolesanywhereTrustAnchor) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RolesanywhereTrustAnchor) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

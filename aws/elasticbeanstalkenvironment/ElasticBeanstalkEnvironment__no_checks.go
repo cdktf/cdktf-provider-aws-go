@@ -80,6 +80,10 @@ func (j *jsiiProxy_ElasticBeanstalkEnvironment) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ElasticBeanstalkEnvironment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticBeanstalkEnvironment) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

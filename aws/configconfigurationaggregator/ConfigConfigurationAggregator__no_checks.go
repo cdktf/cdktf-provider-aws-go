@@ -76,6 +76,10 @@ func (j *jsiiProxy_ConfigConfigurationAggregator) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_ConfigConfigurationAggregator) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigConfigurationAggregator) validateSetIdParameters(val *string) error {
 	return nil
 }

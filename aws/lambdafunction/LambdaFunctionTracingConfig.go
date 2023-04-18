@@ -2,7 +2,7 @@ package lambdafunction
 
 
 type LambdaFunctionTracingConfig struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_function#mode LambdaFunction#mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lambda_function#mode LambdaFunction#mode}.
 	Mode *string `field:"required" json:"mode" yaml:"mode"`
 }
 

@@ -72,6 +72,10 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) validateSetConnecti
 	return nil
 }
 
+func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) validateSetCustomerGatewayArnParameters(val *string) error {
 	return nil
 }

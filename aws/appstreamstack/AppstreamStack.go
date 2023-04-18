@@ -2,14 +2,14 @@ package appstreamstack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/appstreamstack/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/appstreamstack/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/appstream_stack aws_appstream_stack}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appstream_stack aws_appstream_stack}.
 type AppstreamStack interface {
 	cdktf.TerraformResource
 	AccessEndpoints() AppstreamStackAccessEndpointsList
@@ -26,9 +26,9 @@ type AppstreamStack interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -234,8 +234,8 @@ func (j *jsiiProxy_AppstreamStack) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_AppstreamStack) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppstreamStack) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -595,7 +595,7 @@ func (j *jsiiProxy_AppstreamStack) UserSettingsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/appstream_stack aws_appstream_stack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appstream_stack aws_appstream_stack} Resource.
 func NewAppstreamStack(scope constructs.Construct, id *string, config *AppstreamStackConfig) AppstreamStack {
 	_init_.Initialize()
 
@@ -613,7 +613,7 @@ func NewAppstreamStack(scope constructs.Construct, id *string, config *Appstream
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/appstream_stack aws_appstream_stack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appstream_stack aws_appstream_stack} Resource.
 func NewAppstreamStack_Override(a AppstreamStack, scope constructs.Construct, id *string, config *AppstreamStackConfig) {
 	_init_.Initialize()
 
@@ -635,7 +635,10 @@ func (j *jsiiProxy_AppstreamStack)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppstreamStack)SetCount(val *float64) {
+func (j *jsiiProxy_AppstreamStack)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

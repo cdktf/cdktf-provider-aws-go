@@ -72,6 +72,10 @@ func (j *jsiiProxy_CloudfrontMonitoringSubscription) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_CloudfrontMonitoringSubscription) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontMonitoringSubscription) validateSetDistributionIdParameters(val *string) error {
 	return nil
 }

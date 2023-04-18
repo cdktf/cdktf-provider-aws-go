@@ -68,6 +68,10 @@ func (j *jsiiProxy_PrometheusRuleGroupNamespace) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_PrometheusRuleGroupNamespace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrometheusRuleGroupNamespace) validateSetDataParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package ami
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/ami/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ami/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ami aws_ami}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami aws_ami}.
 type Ami interface {
 	cdktf.TerraformResource
 	Architecture() *string
@@ -28,9 +28,9 @@ type Ami interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -271,8 +271,8 @@ func (j *jsiiProxy_Ami) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Ami) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Ami) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -862,7 +862,7 @@ func (j *jsiiProxy_Ami) VirtualizationTypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ami aws_ami} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami aws_ami} Resource.
 func NewAmi(scope constructs.Construct, id *string, config *AmiConfig) Ami {
 	_init_.Initialize()
 
@@ -880,7 +880,7 @@ func NewAmi(scope constructs.Construct, id *string, config *AmiConfig) Ami {
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ami aws_ami} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ami aws_ami} Resource.
 func NewAmi_Override(a Ami, scope constructs.Construct, id *string, config *AmiConfig) {
 	_init_.Initialize()
 
@@ -924,7 +924,10 @@ func (j *jsiiProxy_Ami)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Ami)SetCount(val *float64) {
+func (j *jsiiProxy_Ami)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

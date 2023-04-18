@@ -2,14 +2,14 @@ package directoryserviceconditionalforwarder
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/directoryserviceconditionalforwarder/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/directoryserviceconditionalforwarder/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/directory_service_conditional_forwarder aws_directory_service_conditional_forwarder}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/directory_service_conditional_forwarder aws_directory_service_conditional_forwarder}.
 type DirectoryServiceConditionalForwarder interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DirectoryServiceConditionalForwarder interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DirectoryServiceConditionalForwarder) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DirectoryServiceConditionalForwarder) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DirectoryServiceConditionalForwarder) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -355,7 +355,7 @@ func (j *jsiiProxy_DirectoryServiceConditionalForwarder) TerraformResourceType()
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/directory_service_conditional_forwarder aws_directory_service_conditional_forwarder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/directory_service_conditional_forwarder aws_directory_service_conditional_forwarder} Resource.
 func NewDirectoryServiceConditionalForwarder(scope constructs.Construct, id *string, config *DirectoryServiceConditionalForwarderConfig) DirectoryServiceConditionalForwarder {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewDirectoryServiceConditionalForwarder(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/directory_service_conditional_forwarder aws_directory_service_conditional_forwarder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/directory_service_conditional_forwarder aws_directory_service_conditional_forwarder} Resource.
 func NewDirectoryServiceConditionalForwarder_Override(d DirectoryServiceConditionalForwarder, scope constructs.Construct, id *string, config *DirectoryServiceConditionalForwarderConfig) {
 	_init_.Initialize()
 
@@ -395,7 +395,10 @@ func (j *jsiiProxy_DirectoryServiceConditionalForwarder)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceConditionalForwarder)SetCount(val *float64) {
+func (j *jsiiProxy_DirectoryServiceConditionalForwarder)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

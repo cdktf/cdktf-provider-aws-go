@@ -68,6 +68,10 @@ func (j *jsiiProxy_ShieldProtectionHealthCheckAssociation) validateSetConnection
 	return nil
 }
 
+func (j *jsiiProxy_ShieldProtectionHealthCheckAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ShieldProtectionHealthCheckAssociation) validateSetHealthCheckArnParameters(val *string) error {
 	return nil
 }

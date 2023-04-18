@@ -2,14 +2,14 @@ package emrcontainersvirtualcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/emrcontainersvirtualcluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/emrcontainersvirtualcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster}.
 type EmrcontainersVirtualCluster interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -24,9 +24,9 @@ type EmrcontainersVirtualCluster interface {
 	ContainerProvider() EmrcontainersVirtualClusterContainerProviderOutputReference
 	ContainerProviderInput() *EmrcontainersVirtualClusterContainerProvider
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -184,8 +184,8 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster) ContainerProviderInput() *Emrcon
 	return returns
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EmrcontainersVirtualCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -415,7 +415,7 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster} Resource.
 func NewEmrcontainersVirtualCluster(scope constructs.Construct, id *string, config *EmrcontainersVirtualClusterConfig) EmrcontainersVirtualCluster {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewEmrcontainersVirtualCluster(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster} Resource.
 func NewEmrcontainersVirtualCluster_Override(e EmrcontainersVirtualCluster, scope constructs.Construct, id *string, config *EmrcontainersVirtualClusterConfig) {
 	_init_.Initialize()
 
@@ -455,7 +455,10 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualCluster)SetCount(val *float64) {
+func (j *jsiiProxy_EmrcontainersVirtualCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

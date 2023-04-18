@@ -76,6 +76,10 @@ func (j *jsiiProxy_LocationGeofenceCollection) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_LocationGeofenceCollection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LocationGeofenceCollection) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

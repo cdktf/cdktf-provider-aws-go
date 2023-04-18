@@ -2,14 +2,14 @@ package dataawsec2managedprefixlists
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsec2managedprefixlists/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsec2managedprefixlists/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_managed_prefix_lists aws_ec2_managed_prefix_lists}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_managed_prefix_lists aws_ec2_managed_prefix_lists}.
 type DataAwsEc2ManagedPrefixLists interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAwsEc2ManagedPrefixLists interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -126,8 +126,8 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_managed_prefix_lists aws_ec2_managed_prefix_lists} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_managed_prefix_lists aws_ec2_managed_prefix_lists} Data Source.
 func NewDataAwsEc2ManagedPrefixLists(scope constructs.Construct, id *string, config *DataAwsEc2ManagedPrefixListsConfig) DataAwsEc2ManagedPrefixLists {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataAwsEc2ManagedPrefixLists(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_managed_prefix_lists aws_ec2_managed_prefix_lists} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_managed_prefix_lists aws_ec2_managed_prefix_lists} Data Source.
 func NewDataAwsEc2ManagedPrefixLists_Override(d DataAwsEc2ManagedPrefixLists, scope constructs.Construct, id *string, config *DataAwsEc2ManagedPrefixListsConfig) {
 	_init_.Initialize()
 
@@ -346,7 +346,10 @@ func NewDataAwsEc2ManagedPrefixLists_Override(d DataAwsEc2ManagedPrefixLists, sc
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixLists)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

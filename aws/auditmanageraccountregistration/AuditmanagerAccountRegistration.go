@@ -2,14 +2,14 @@ package auditmanageraccountregistration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/auditmanageraccountregistration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/auditmanageraccountregistration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/auditmanager_account_registration aws_auditmanager_account_registration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/auditmanager_account_registration aws_auditmanager_account_registration}.
 type AuditmanagerAccountRegistration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type AuditmanagerAccountRegistration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DelegatedAdminAccount() *string
 	SetDelegatedAdminAccount(val *string)
 	DelegatedAdminAccountInput() *string
@@ -145,8 +145,8 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerAccountRegistration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AuditmanagerAccountRegistration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/auditmanager_account_registration aws_auditmanager_account_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/auditmanager_account_registration aws_auditmanager_account_registration} Resource.
 func NewAuditmanagerAccountRegistration(scope constructs.Construct, id *string, config *AuditmanagerAccountRegistrationConfig) AuditmanagerAccountRegistration {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewAuditmanagerAccountRegistration(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/auditmanager_account_registration aws_auditmanager_account_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/auditmanager_account_registration aws_auditmanager_account_registration} Resource.
 func NewAuditmanagerAccountRegistration_Override(a AuditmanagerAccountRegistration, scope constructs.Construct, id *string, config *AuditmanagerAccountRegistrationConfig) {
 	_init_.Initialize()
 
@@ -396,7 +396,10 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerAccountRegistration)SetCount(val *float64) {
+func (j *jsiiProxy_AuditmanagerAccountRegistration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

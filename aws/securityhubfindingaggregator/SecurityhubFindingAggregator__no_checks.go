@@ -68,6 +68,10 @@ func (j *jsiiProxy_SecurityhubFindingAggregator) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_SecurityhubFindingAggregator) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityhubFindingAggregator) validateSetIdParameters(val *string) error {
 	return nil
 }

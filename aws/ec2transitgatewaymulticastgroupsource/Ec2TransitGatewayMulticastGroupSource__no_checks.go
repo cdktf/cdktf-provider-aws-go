@@ -68,6 +68,10 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupSource) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupSource) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayMulticastGroupSource) validateSetGroupIpAddressParameters(val *string) error {
 	return nil
 }

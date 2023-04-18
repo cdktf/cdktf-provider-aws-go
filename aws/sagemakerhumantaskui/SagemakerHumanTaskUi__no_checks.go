@@ -72,6 +72,10 @@ func (j *jsiiProxy_SagemakerHumanTaskUi) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerHumanTaskUi) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerHumanTaskUi) validateSetHumanTaskUiNameParameters(val *string) error {
 	return nil
 }

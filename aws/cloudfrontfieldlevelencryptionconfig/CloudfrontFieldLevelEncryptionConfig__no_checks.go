@@ -80,6 +80,10 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

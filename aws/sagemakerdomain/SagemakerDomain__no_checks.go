@@ -96,6 +96,10 @@ func (j *jsiiProxy_SagemakerDomain) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerDomain) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerDomain) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_SnsSmsPreferences) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_SnsSmsPreferences) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SnsSmsPreferences) validateSetDefaultSenderIdParameters(val *string) error {
 	return nil
 }

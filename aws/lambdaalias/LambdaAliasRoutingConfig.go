@@ -2,7 +2,7 @@ package lambdaalias
 
 
 type LambdaAliasRoutingConfig struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lambda_alias#additional_version_weights LambdaAlias#additional_version_weights}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lambda_alias#additional_version_weights LambdaAlias#additional_version_weights}.
 	AdditionalVersionWeights *map[string]*float64 `field:"optional" json:"additionalVersionWeights" yaml:"additionalVersionWeights"`
 }
 

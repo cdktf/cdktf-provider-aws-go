@@ -2,14 +2,14 @@ package ec2transitgatewayprefixlistreference
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/ec2transitgatewayprefixlistreference/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ec2transitgatewayprefixlistreference/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_prefix_list_reference aws_ec2_transit_gateway_prefix_list_reference}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ec2_transit_gateway_prefix_list_reference aws_ec2_transit_gateway_prefix_list_reference}.
 type Ec2TransitGatewayPrefixListReference interface {
 	cdktf.TerraformResource
 	Blackhole() interface{}
@@ -24,9 +24,9 @@ type Ec2TransitGatewayPrefixListReference interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -170,8 +170,8 @@ func (j *jsiiProxy_Ec2TransitGatewayPrefixListReference) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayPrefixListReference) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Ec2TransitGatewayPrefixListReference) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_Ec2TransitGatewayPrefixListReference) TransitGatewayRouteTabl
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_prefix_list_reference aws_ec2_transit_gateway_prefix_list_reference} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ec2_transit_gateway_prefix_list_reference aws_ec2_transit_gateway_prefix_list_reference} Resource.
 func NewEc2TransitGatewayPrefixListReference(scope constructs.Construct, id *string, config *Ec2TransitGatewayPrefixListReferenceConfig) Ec2TransitGatewayPrefixListReference {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewEc2TransitGatewayPrefixListReference(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ec2_transit_gateway_prefix_list_reference aws_ec2_transit_gateway_prefix_list_reference} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ec2_transit_gateway_prefix_list_reference aws_ec2_transit_gateway_prefix_list_reference} Resource.
 func NewEc2TransitGatewayPrefixListReference_Override(e Ec2TransitGatewayPrefixListReference, scope constructs.Construct, id *string, config *Ec2TransitGatewayPrefixListReferenceConfig) {
 	_init_.Initialize()
 
@@ -442,7 +442,10 @@ func (j *jsiiProxy_Ec2TransitGatewayPrefixListReference)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayPrefixListReference)SetCount(val *float64) {
+func (j *jsiiProxy_Ec2TransitGatewayPrefixListReference)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

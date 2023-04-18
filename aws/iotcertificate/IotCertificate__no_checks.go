@@ -80,6 +80,10 @@ func (j *jsiiProxy_IotCertificate) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_IotCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotCertificate) validateSetCsrParameters(val *string) error {
 	return nil
 }

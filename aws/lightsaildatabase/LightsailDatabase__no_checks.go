@@ -88,6 +88,10 @@ func (j *jsiiProxy_LightsailDatabase) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_LightsailDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailDatabase) validateSetFinalSnapshotNameParameters(val *string) error {
 	return nil
 }

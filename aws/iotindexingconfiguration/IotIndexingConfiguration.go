@@ -2,14 +2,14 @@ package iotindexingconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/iotindexingconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/iotindexingconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/iot_indexing_configuration aws_iot_indexing_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iot_indexing_configuration aws_iot_indexing_configuration}.
 type IotIndexingConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type IotIndexingConfiguration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -143,8 +143,8 @@ func (j *jsiiProxy_IotIndexingConfiguration) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_IotIndexingConfiguration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IotIndexingConfiguration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -334,7 +334,7 @@ func (j *jsiiProxy_IotIndexingConfiguration) ThingIndexingConfigurationInput() *
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/iot_indexing_configuration aws_iot_indexing_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iot_indexing_configuration aws_iot_indexing_configuration} Resource.
 func NewIotIndexingConfiguration(scope constructs.Construct, id *string, config *IotIndexingConfigurationConfig) IotIndexingConfiguration {
 	_init_.Initialize()
 
@@ -352,7 +352,7 @@ func NewIotIndexingConfiguration(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/iot_indexing_configuration aws_iot_indexing_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iot_indexing_configuration aws_iot_indexing_configuration} Resource.
 func NewIotIndexingConfiguration_Override(i IotIndexingConfiguration, scope constructs.Construct, id *string, config *IotIndexingConfigurationConfig) {
 	_init_.Initialize()
 
@@ -374,7 +374,10 @@ func (j *jsiiProxy_IotIndexingConfiguration)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IotIndexingConfiguration)SetCount(val *float64) {
+func (j *jsiiProxy_IotIndexingConfiguration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

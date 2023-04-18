@@ -2,14 +2,14 @@ package dataawsredshiftclustercredentials
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsredshiftclustercredentials/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsredshiftclustercredentials/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/redshift_cluster_credentials aws_redshift_cluster_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/redshift_cluster_credentials aws_redshift_cluster_credentials}.
 type DataAwsRedshiftClusterCredentials interface {
 	cdktf.TerraformDataSource
 	AutoCreate() interface{}
@@ -23,9 +23,9 @@ type DataAwsRedshiftClusterCredentials interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DbGroups() *[]*string
 	SetDbGroups(val *[]*string)
 	DbGroupsInput() *[]*string
@@ -181,8 +181,8 @@ func (j *jsiiProxy_DataAwsRedshiftClusterCredentials) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRedshiftClusterCredentials) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsRedshiftClusterCredentials) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -422,7 +422,7 @@ func (j *jsiiProxy_DataAwsRedshiftClusterCredentials) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/redshift_cluster_credentials aws_redshift_cluster_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/redshift_cluster_credentials aws_redshift_cluster_credentials} Data Source.
 func NewDataAwsRedshiftClusterCredentials(scope constructs.Construct, id *string, config *DataAwsRedshiftClusterCredentialsConfig) DataAwsRedshiftClusterCredentials {
 	_init_.Initialize()
 
@@ -440,7 +440,7 @@ func NewDataAwsRedshiftClusterCredentials(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/redshift_cluster_credentials aws_redshift_cluster_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/redshift_cluster_credentials aws_redshift_cluster_credentials} Data Source.
 func NewDataAwsRedshiftClusterCredentials_Override(d DataAwsRedshiftClusterCredentials, scope constructs.Construct, id *string, config *DataAwsRedshiftClusterCredentialsConfig) {
 	_init_.Initialize()
 
@@ -473,7 +473,10 @@ func (j *jsiiProxy_DataAwsRedshiftClusterCredentials)SetClusterIdentifier(val *s
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftClusterCredentials)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsRedshiftClusterCredentials)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func (j *jsiiProxy_Ec2LocalGatewayRoute) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_Ec2LocalGatewayRoute) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2LocalGatewayRoute) validateSetDestinationCidrBlockParameters(val *string) error {
 	return nil
 }

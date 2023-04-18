@@ -104,6 +104,10 @@ func (j *jsiiProxy_DmsEndpoint) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DmsEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsEndpoint) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

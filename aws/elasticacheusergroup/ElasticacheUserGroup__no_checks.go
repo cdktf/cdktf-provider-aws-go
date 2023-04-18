@@ -68,6 +68,10 @@ func (j *jsiiProxy_ElasticacheUserGroup) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheUserGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheUserGroup) validateSetEngineParameters(val *string) error {
 	return nil
 }

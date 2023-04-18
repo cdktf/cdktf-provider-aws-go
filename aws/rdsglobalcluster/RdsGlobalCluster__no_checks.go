@@ -72,6 +72,10 @@ func (j *jsiiProxy_RdsGlobalCluster) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_RdsGlobalCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsGlobalCluster) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

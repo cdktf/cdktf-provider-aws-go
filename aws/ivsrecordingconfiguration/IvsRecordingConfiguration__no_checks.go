@@ -80,6 +80,10 @@ func (j *jsiiProxy_IvsRecordingConfiguration) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_IvsRecordingConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IvsRecordingConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

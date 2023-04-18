@@ -72,6 +72,10 @@ func (j *jsiiProxy_CloudhsmV2Cluster) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_CloudhsmV2Cluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudhsmV2Cluster) validateSetHsmTypeParameters(val *string) error {
 	return nil
 }

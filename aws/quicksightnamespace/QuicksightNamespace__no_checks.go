@@ -76,6 +76,10 @@ func (j *jsiiProxy_QuicksightNamespace) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightNamespace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightNamespace) validateSetIdentityStoreParameters(val *string) error {
 	return nil
 }

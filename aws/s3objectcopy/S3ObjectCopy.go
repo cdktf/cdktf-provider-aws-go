@@ -2,14 +2,14 @@ package s3objectcopy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/s3objectcopy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/s3objectcopy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy aws_s3_object_copy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/s3_object_copy aws_s3_object_copy}.
 type S3ObjectCopy interface {
 	cdktf.TerraformResource
 	Acl() *string
@@ -57,9 +57,9 @@ type S3ObjectCopy interface {
 	SetCopyIfUnmodifiedSince(val *string)
 	CopyIfUnmodifiedSinceInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomerAlgorithm() *string
 	SetCustomerAlgorithm(val *string)
 	CustomerAlgorithmInput() *string
@@ -534,8 +534,8 @@ func (j *jsiiProxy_S3ObjectCopy) CopyIfUnmodifiedSinceInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_S3ObjectCopy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_S3ObjectCopy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -1285,7 +1285,7 @@ func (j *jsiiProxy_S3ObjectCopy) WebsiteRedirectInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy aws_s3_object_copy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/s3_object_copy aws_s3_object_copy} Resource.
 func NewS3ObjectCopy(scope constructs.Construct, id *string, config *S3ObjectCopyConfig) S3ObjectCopy {
 	_init_.Initialize()
 
@@ -1303,7 +1303,7 @@ func NewS3ObjectCopy(scope constructs.Construct, id *string, config *S3ObjectCop
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_object_copy aws_s3_object_copy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/s3_object_copy aws_s3_object_copy} Resource.
 func NewS3ObjectCopy_Override(s S3ObjectCopy, scope constructs.Construct, id *string, config *S3ObjectCopyConfig) {
 	_init_.Initialize()
 
@@ -1457,7 +1457,10 @@ func (j *jsiiProxy_S3ObjectCopy)SetCopyIfUnmodifiedSince(val *string) {
 	)
 }
 
-func (j *jsiiProxy_S3ObjectCopy)SetCount(val *float64) {
+func (j *jsiiProxy_S3ObjectCopy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

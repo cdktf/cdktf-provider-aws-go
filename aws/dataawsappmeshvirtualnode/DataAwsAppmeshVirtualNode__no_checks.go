@@ -64,6 +64,10 @@ func validateDataAwsAppmeshVirtualNode_IsTerraformElementParameters(x interface{
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAppmeshVirtualNode) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAppmeshVirtualNode) validateSetIdParameters(val *string) error {
 	return nil
 }

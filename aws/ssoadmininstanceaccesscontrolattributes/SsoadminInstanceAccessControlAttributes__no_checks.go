@@ -72,6 +72,10 @@ func (j *jsiiProxy_SsoadminInstanceAccessControlAttributes) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_SsoadminInstanceAccessControlAttributes) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsoadminInstanceAccessControlAttributes) validateSetIdParameters(val *string) error {
 	return nil
 }

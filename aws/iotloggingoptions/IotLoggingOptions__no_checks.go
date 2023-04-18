@@ -68,6 +68,10 @@ func (j *jsiiProxy_IotLoggingOptions) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_IotLoggingOptions) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotLoggingOptions) validateSetDefaultLogLevelParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package glueclassifier
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/glueclassifier/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/glueclassifier/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier aws_glue_classifier}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/glue_classifier aws_glue_classifier}.
 type GlueClassifier interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GlueClassifier interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CsvClassifier() GlueClassifierCsvClassifierOutputReference
 	CsvClassifierInput() *GlueClassifierCsvClassifier
 	// Experimental.
@@ -154,8 +154,8 @@ func (j *jsiiProxy_GlueClassifier) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_GlueClassifier) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GlueClassifier) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -405,7 +405,7 @@ func (j *jsiiProxy_GlueClassifier) XmlClassifierInput() *GlueClassifierXmlClassi
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier aws_glue_classifier} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/glue_classifier aws_glue_classifier} Resource.
 func NewGlueClassifier(scope constructs.Construct, id *string, config *GlueClassifierConfig) GlueClassifier {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewGlueClassifier(scope constructs.Construct, id *string, config *GlueClass
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/glue_classifier aws_glue_classifier} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/glue_classifier aws_glue_classifier} Resource.
 func NewGlueClassifier_Override(g GlueClassifier, scope constructs.Construct, id *string, config *GlueClassifierConfig) {
 	_init_.Initialize()
 
@@ -445,7 +445,10 @@ func (j *jsiiProxy_GlueClassifier)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlueClassifier)SetCount(val *float64) {
+func (j *jsiiProxy_GlueClassifier)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

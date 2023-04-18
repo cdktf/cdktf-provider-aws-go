@@ -76,6 +76,10 @@ func (j *jsiiProxy_Macie2ClassificationJob) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_Macie2ClassificationJob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Macie2ClassificationJob) validateSetCustomDataIdentifierIdsParameters(val *[]*string) error {
 	return nil
 }

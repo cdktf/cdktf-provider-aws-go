@@ -72,6 +72,10 @@ func (j *jsiiProxy_DbProxyEndpoint) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_DbProxyEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbProxyEndpoint) validateSetDbProxyEndpointNameParameters(val *string) error {
 	return nil
 }

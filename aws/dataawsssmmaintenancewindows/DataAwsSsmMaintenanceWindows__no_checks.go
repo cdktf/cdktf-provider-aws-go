@@ -68,6 +68,10 @@ func validateDataAwsSsmMaintenanceWindows_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSsmMaintenanceWindows) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSsmMaintenanceWindows) validateSetIdParameters(val *string) error {
 	return nil
 }

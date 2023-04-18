@@ -2,14 +2,14 @@ package iamrolepolicyattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/iamrolepolicyattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/iamrolepolicyattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/iam_role_policy_attachment aws_iam_role_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_role_policy_attachment aws_iam_role_policy_attachment}.
 type IamRolePolicyAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type IamRolePolicyAttachment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_IamRolePolicyAttachment) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_IamRolePolicyAttachment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IamRolePolicyAttachment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_IamRolePolicyAttachment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/iam_role_policy_attachment aws_iam_role_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_role_policy_attachment aws_iam_role_policy_attachment} Resource.
 func NewIamRolePolicyAttachment(scope constructs.Construct, id *string, config *IamRolePolicyAttachmentConfig) IamRolePolicyAttachment {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewIamRolePolicyAttachment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/iam_role_policy_attachment aws_iam_role_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_role_policy_attachment aws_iam_role_policy_attachment} Resource.
 func NewIamRolePolicyAttachment_Override(i IamRolePolicyAttachment, scope constructs.Construct, id *string, config *IamRolePolicyAttachmentConfig) {
 	_init_.Initialize()
 
@@ -372,7 +372,10 @@ func (j *jsiiProxy_IamRolePolicyAttachment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamRolePolicyAttachment)SetCount(val *float64) {
+func (j *jsiiProxy_IamRolePolicyAttachment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

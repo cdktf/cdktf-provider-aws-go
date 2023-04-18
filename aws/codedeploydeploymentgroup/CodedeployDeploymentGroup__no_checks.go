@@ -116,6 +116,10 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetDeploymentConfigNameParameters(val *string) error {
 	return nil
 }

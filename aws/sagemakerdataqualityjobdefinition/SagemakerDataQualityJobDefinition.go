@@ -2,14 +2,14 @@ package sagemakerdataqualityjobdefinition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/sagemakerdataqualityjobdefinition/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerdataqualityjobdefinition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_data_quality_job_definition aws_sagemaker_data_quality_job_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sagemaker_data_quality_job_definition aws_sagemaker_data_quality_job_definition}.
 type SagemakerDataQualityJobDefinition interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type SagemakerDataQualityJobDefinition interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataQualityAppSpecification() SagemakerDataQualityJobDefinitionDataQualityAppSpecificationOutputReference
 	DataQualityAppSpecificationInput() *SagemakerDataQualityJobDefinitionDataQualityAppSpecification
 	DataQualityBaselineConfig() SagemakerDataQualityJobDefinitionDataQualityBaselineConfigOutputReference
@@ -185,8 +185,8 @@ func (j *jsiiProxy_SagemakerDataQualityJobDefinition) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerDataQualityJobDefinition) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SagemakerDataQualityJobDefinition) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -556,7 +556,7 @@ func (j *jsiiProxy_SagemakerDataQualityJobDefinition) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_data_quality_job_definition aws_sagemaker_data_quality_job_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sagemaker_data_quality_job_definition aws_sagemaker_data_quality_job_definition} Resource.
 func NewSagemakerDataQualityJobDefinition(scope constructs.Construct, id *string, config *SagemakerDataQualityJobDefinitionConfig) SagemakerDataQualityJobDefinition {
 	_init_.Initialize()
 
@@ -574,7 +574,7 @@ func NewSagemakerDataQualityJobDefinition(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_data_quality_job_definition aws_sagemaker_data_quality_job_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sagemaker_data_quality_job_definition aws_sagemaker_data_quality_job_definition} Resource.
 func NewSagemakerDataQualityJobDefinition_Override(s SagemakerDataQualityJobDefinition, scope constructs.Construct, id *string, config *SagemakerDataQualityJobDefinitionConfig) {
 	_init_.Initialize()
 
@@ -596,7 +596,10 @@ func (j *jsiiProxy_SagemakerDataQualityJobDefinition)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_SagemakerDataQualityJobDefinition)SetCount(val *float64) {
+func (j *jsiiProxy_SagemakerDataQualityJobDefinition)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

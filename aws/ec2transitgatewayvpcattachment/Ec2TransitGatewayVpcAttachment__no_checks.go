@@ -72,6 +72,10 @@ func (j *jsiiProxy_Ec2TransitGatewayVpcAttachment) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_Ec2TransitGatewayVpcAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayVpcAttachment) validateSetDnsSupportParameters(val *string) error {
 	return nil
 }

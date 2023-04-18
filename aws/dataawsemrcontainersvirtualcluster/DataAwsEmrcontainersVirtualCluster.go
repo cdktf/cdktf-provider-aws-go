@@ -2,14 +2,14 @@ package dataawsemrcontainersvirtualcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsemrcontainersvirtualcluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsemrcontainersvirtualcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster}.
 type DataAwsEmrcontainersVirtualCluster interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -19,9 +19,9 @@ type DataAwsEmrcontainersVirtualCluster interface {
 	ConstructNodeMetadata() *map[string]interface{}
 	ContainerProvider() DataAwsEmrcontainersVirtualClusterContainerProviderList
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataAwsEmrcontainersVirtualCluster) ContainerProvider() DataA
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEmrcontainersVirtualCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsEmrcontainersVirtualCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -360,7 +360,7 @@ func (j *jsiiProxy_DataAwsEmrcontainersVirtualCluster) VirtualClusterIdInput() *
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster} Data Source.
 func NewDataAwsEmrcontainersVirtualCluster(scope constructs.Construct, id *string, config *DataAwsEmrcontainersVirtualClusterConfig) DataAwsEmrcontainersVirtualCluster {
 	_init_.Initialize()
 
@@ -378,7 +378,7 @@ func NewDataAwsEmrcontainersVirtualCluster(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster} Data Source.
 func NewDataAwsEmrcontainersVirtualCluster_Override(d DataAwsEmrcontainersVirtualCluster, scope constructs.Construct, id *string, config *DataAwsEmrcontainersVirtualClusterConfig) {
 	_init_.Initialize()
 
@@ -389,7 +389,10 @@ func NewDataAwsEmrcontainersVirtualCluster_Override(d DataAwsEmrcontainersVirtua
 	)
 }
 
-func (j *jsiiProxy_DataAwsEmrcontainersVirtualCluster)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsEmrcontainersVirtualCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

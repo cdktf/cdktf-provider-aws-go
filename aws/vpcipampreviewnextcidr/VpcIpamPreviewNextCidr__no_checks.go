@@ -68,6 +68,10 @@ func (j *jsiiProxy_VpcIpamPreviewNextCidr) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_VpcIpamPreviewNextCidr) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpamPreviewNextCidr) validateSetDisallowedCidrsParameters(val *[]*string) error {
 	return nil
 }

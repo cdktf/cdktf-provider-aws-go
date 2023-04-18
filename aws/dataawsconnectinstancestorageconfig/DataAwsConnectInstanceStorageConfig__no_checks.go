@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsConnectInstanceStorageConfig) validateSetAssociationId
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectInstanceStorageConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectInstanceStorageConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

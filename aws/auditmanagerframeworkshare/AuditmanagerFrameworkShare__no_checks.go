@@ -72,6 +72,10 @@ func (j *jsiiProxy_AuditmanagerFrameworkShare) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_AuditmanagerFrameworkShare) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuditmanagerFrameworkShare) validateSetDestinationAccountParameters(val *string) error {
 	return nil
 }

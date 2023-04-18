@@ -72,6 +72,10 @@ func (j *jsiiProxy_GrafanaLicenseAssociation) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GrafanaLicenseAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GrafanaLicenseAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -84,6 +84,10 @@ func (j *jsiiProxy_QuicksightIamPolicyAssignment) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightIamPolicyAssignment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightIamPolicyAssignment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

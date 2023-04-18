@@ -2,14 +2,14 @@ package dataawsopensearchdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsopensearchdomain/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsopensearchdomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/opensearch_domain aws_opensearch_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/opensearch_domain aws_opensearch_domain}.
 type DataAwsOpensearchDomain interface {
 	cdktf.TerraformDataSource
 	AccessPolicies() *string
@@ -24,9 +24,9 @@ type DataAwsOpensearchDomain interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Created() cdktf.IResolvable
 	DashboardEndpoint() *string
 	Deleted() cdktf.IResolvable
@@ -215,8 +215,8 @@ func (j *jsiiProxy_DataAwsOpensearchDomain) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsOpensearchDomain) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsOpensearchDomain) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -536,7 +536,7 @@ func (j *jsiiProxy_DataAwsOpensearchDomain) VpcOptions() DataAwsOpensearchDomain
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/opensearch_domain aws_opensearch_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source.
 func NewDataAwsOpensearchDomain(scope constructs.Construct, id *string, config *DataAwsOpensearchDomainConfig) DataAwsOpensearchDomain {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewDataAwsOpensearchDomain(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/opensearch_domain aws_opensearch_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source.
 func NewDataAwsOpensearchDomain_Override(d DataAwsOpensearchDomain, scope constructs.Construct, id *string, config *DataAwsOpensearchDomainConfig) {
 	_init_.Initialize()
 
@@ -565,7 +565,10 @@ func NewDataAwsOpensearchDomain_Override(d DataAwsOpensearchDomain, scope constr
 	)
 }
 
-func (j *jsiiProxy_DataAwsOpensearchDomain)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsOpensearchDomain)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

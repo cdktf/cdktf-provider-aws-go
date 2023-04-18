@@ -68,6 +68,10 @@ func (j *jsiiProxy_ChimeVoiceConnectorStreaming) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_ChimeVoiceConnectorStreaming) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ChimeVoiceConnectorStreaming) validateSetDataRetentionParameters(val *float64) error {
 	return nil
 }

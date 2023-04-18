@@ -64,6 +64,10 @@ func validateDataAwsControltowerControls_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsControltowerControls) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsControltowerControls) validateSetIdParameters(val *string) error {
 	return nil
 }

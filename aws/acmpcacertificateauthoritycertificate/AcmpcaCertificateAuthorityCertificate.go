@@ -2,14 +2,14 @@ package acmpcacertificateauthoritycertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/acmpcacertificateauthoritycertificate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/acmpcacertificateauthoritycertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority_certificate aws_acmpca_certificate_authority_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/acmpca_certificate_authority_certificate aws_acmpca_certificate_authority_certificate}.
 type AcmpcaCertificateAuthorityCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -30,9 +30,9 @@ type AcmpcaCertificateAuthorityCertificate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -205,8 +205,8 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificate) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificate) TerraformResourceType(
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority_certificate aws_acmpca_certificate_authority_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/acmpca_certificate_authority_certificate aws_acmpca_certificate_authority_certificate} Resource.
 func NewAcmpcaCertificateAuthorityCertificate(scope constructs.Construct, id *string, config *AcmpcaCertificateAuthorityCertificateConfig) AcmpcaCertificateAuthorityCertificate {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewAcmpcaCertificateAuthorityCertificate(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate_authority_certificate aws_acmpca_certificate_authority_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/acmpca_certificate_authority_certificate aws_acmpca_certificate_authority_certificate} Resource.
 func NewAcmpcaCertificateAuthorityCertificate_Override(a AcmpcaCertificateAuthorityCertificate, scope constructs.Construct, id *string, config *AcmpcaCertificateAuthorityCertificateConfig) {
 	_init_.Initialize()
 
@@ -429,7 +429,10 @@ func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificate)SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificate)SetCount(val *float64) {
+func (j *jsiiProxy_AcmpcaCertificateAuthorityCertificate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

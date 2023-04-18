@@ -72,6 +72,10 @@ func (j *jsiiProxy_SqsQueue) validateSetContentBasedDeduplicationParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_SqsQueue) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqsQueue) validateSetDeduplicationScopeParameters(val *string) error {
 	return nil
 }

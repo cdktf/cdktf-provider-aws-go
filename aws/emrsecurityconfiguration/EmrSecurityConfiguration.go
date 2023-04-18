@@ -2,14 +2,14 @@ package emrsecurityconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/emrsecurityconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/emrsecurityconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/emr_security_configuration aws_emr_security_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_security_configuration aws_emr_security_configuration}.
 type EmrSecurityConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type EmrSecurityConfiguration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreationDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -167,8 +167,8 @@ func (j *jsiiProxy_EmrSecurityConfiguration) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_EmrSecurityConfiguration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EmrSecurityConfiguration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -368,7 +368,7 @@ func (j *jsiiProxy_EmrSecurityConfiguration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/emr_security_configuration aws_emr_security_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_security_configuration aws_emr_security_configuration} Resource.
 func NewEmrSecurityConfiguration(scope constructs.Construct, id *string, config *EmrSecurityConfigurationConfig) EmrSecurityConfiguration {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewEmrSecurityConfiguration(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/emr_security_configuration aws_emr_security_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_security_configuration aws_emr_security_configuration} Resource.
 func NewEmrSecurityConfiguration_Override(e EmrSecurityConfiguration, scope constructs.Construct, id *string, config *EmrSecurityConfigurationConfig) {
 	_init_.Initialize()
 
@@ -419,7 +419,10 @@ func (j *jsiiProxy_EmrSecurityConfiguration)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmrSecurityConfiguration)SetCount(val *float64) {
+func (j *jsiiProxy_EmrSecurityConfiguration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

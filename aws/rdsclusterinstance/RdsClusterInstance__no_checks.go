@@ -96,6 +96,10 @@ func (j *jsiiProxy_RdsClusterInstance) validateSetCopyTagsToSnapshotParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_RdsClusterInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsClusterInstance) validateSetDbParameterGroupNameParameters(val *string) error {
 	return nil
 }

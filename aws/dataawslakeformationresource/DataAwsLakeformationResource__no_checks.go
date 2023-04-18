@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsLakeformationResource) validateSetArnParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLakeformationResource) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLakeformationResource) validateSetIdParameters(val *string) error {
 	return nil
 }

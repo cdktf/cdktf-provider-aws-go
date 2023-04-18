@@ -2,14 +2,14 @@ package dataawsoamsink
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsoamsink/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsoamsink/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/oam_sink aws_oam_sink}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/oam_sink aws_oam_sink}.
 type DataAwsOamSink interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -18,9 +18,9 @@ type DataAwsOamSink interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -137,8 +137,8 @@ func (j *jsiiProxy_DataAwsOamSink) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsOamSink) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsOamSink) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -338,7 +338,7 @@ func (j *jsiiProxy_DataAwsOamSink) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/oam_sink aws_oam_sink} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/oam_sink aws_oam_sink} Data Source.
 func NewDataAwsOamSink(scope constructs.Construct, id *string, config *DataAwsOamSinkConfig) DataAwsOamSink {
 	_init_.Initialize()
 
@@ -356,7 +356,7 @@ func NewDataAwsOamSink(scope constructs.Construct, id *string, config *DataAwsOa
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/oam_sink aws_oam_sink} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/oam_sink aws_oam_sink} Data Source.
 func NewDataAwsOamSink_Override(d DataAwsOamSink, scope constructs.Construct, id *string, config *DataAwsOamSinkConfig) {
 	_init_.Initialize()
 
@@ -367,7 +367,10 @@ func NewDataAwsOamSink_Override(d DataAwsOamSink, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_DataAwsOamSink)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsOamSink)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

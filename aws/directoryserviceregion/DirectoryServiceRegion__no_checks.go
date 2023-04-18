@@ -76,6 +76,10 @@ func (j *jsiiProxy_DirectoryServiceRegion) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_DirectoryServiceRegion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DirectoryServiceRegion) validateSetDesiredNumberOfDomainControllersParameters(val *float64) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) validateSetEditorRoleValuesParameters(val *[]*string) error {
 	return nil
 }

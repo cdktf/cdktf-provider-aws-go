@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) validateSetArnParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) validateSetIdParameters(val *string) error {
 	return nil
 }

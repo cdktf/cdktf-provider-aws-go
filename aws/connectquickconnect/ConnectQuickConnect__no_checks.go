@@ -72,6 +72,10 @@ func (j *jsiiProxy_ConnectQuickConnect) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_ConnectQuickConnect) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectQuickConnect) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

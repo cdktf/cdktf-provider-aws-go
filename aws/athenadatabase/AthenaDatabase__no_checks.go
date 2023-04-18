@@ -84,6 +84,10 @@ func (j *jsiiProxy_AthenaDatabase) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_AthenaDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AthenaDatabase) validateSetExpectedBucketOwnerParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_IotIndexingConfiguration) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_IotIndexingConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotIndexingConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

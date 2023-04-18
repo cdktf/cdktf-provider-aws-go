@@ -76,6 +76,10 @@ func (j *jsiiProxy_ServicecatalogConstraint) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogConstraint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogConstraint) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

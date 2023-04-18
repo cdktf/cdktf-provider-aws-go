@@ -96,6 +96,10 @@ func (j *jsiiProxy_LightsailDistribution) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_LightsailDistribution) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailDistribution) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_GlueDataCatalogEncryptionSettings) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_GlueDataCatalogEncryptionSettings) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueDataCatalogEncryptionSettings) validateSetIdParameters(val *string) error {
 	return nil
 }

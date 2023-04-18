@@ -64,6 +64,10 @@ func validateDataAwsElasticBeanstalkApplication_IsTerraformElementParameters(x i
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsElasticBeanstalkApplication) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsElasticBeanstalkApplication) validateSetIdParameters(val *string) error {
 	return nil
 }

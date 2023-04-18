@@ -2,14 +2,14 @@ package iotcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/iotcertificate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/iotcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/iot_certificate aws_iot_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iot_certificate aws_iot_certificate}.
 type IotCertificate interface {
 	cdktf.TerraformResource
 	Active() interface{}
@@ -31,9 +31,9 @@ type IotCertificate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Csr() *string
 	SetCsr(val *string)
 	CsrInput() *string
@@ -223,8 +223,8 @@ func (j *jsiiProxy_IotCertificate) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_IotCertificate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IotCertificate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -414,7 +414,7 @@ func (j *jsiiProxy_IotCertificate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/iot_certificate aws_iot_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iot_certificate aws_iot_certificate} Resource.
 func NewIotCertificate(scope constructs.Construct, id *string, config *IotCertificateConfig) IotCertificate {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewIotCertificate(scope constructs.Construct, id *string, config *IotCertif
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/iot_certificate aws_iot_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iot_certificate aws_iot_certificate} Resource.
 func NewIotCertificate_Override(i IotCertificate, scope constructs.Construct, id *string, config *IotCertificateConfig) {
 	_init_.Initialize()
 
@@ -487,7 +487,10 @@ func (j *jsiiProxy_IotCertificate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IotCertificate)SetCount(val *float64) {
+func (j *jsiiProxy_IotCertificate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

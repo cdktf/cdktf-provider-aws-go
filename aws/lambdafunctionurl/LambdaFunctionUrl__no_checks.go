@@ -80,6 +80,10 @@ func (j *jsiiProxy_LambdaFunctionUrl) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_LambdaFunctionUrl) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaFunctionUrl) validateSetFunctionNameParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package codecommitapprovalruletemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/codecommitapprovalruletemplate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/codecommitapprovalruletemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/codecommit_approval_rule_template aws_codecommit_approval_rule_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/codecommit_approval_rule_template aws_codecommit_approval_rule_template}.
 type CodecommitApprovalRuleTemplate interface {
 	cdktf.TerraformResource
 	ApprovalRuleTemplateId() *string
@@ -25,9 +25,9 @@ type CodecommitApprovalRuleTemplate interface {
 	SetContent(val *string)
 	ContentInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreationDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -180,8 +180,8 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplate) ContentInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CodecommitApprovalRuleTemplate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CodecommitApprovalRuleTemplate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -411,7 +411,7 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplate) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/codecommit_approval_rule_template aws_codecommit_approval_rule_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/codecommit_approval_rule_template aws_codecommit_approval_rule_template} Resource.
 func NewCodecommitApprovalRuleTemplate(scope constructs.Construct, id *string, config *CodecommitApprovalRuleTemplateConfig) CodecommitApprovalRuleTemplate {
 	_init_.Initialize()
 
@@ -429,7 +429,7 @@ func NewCodecommitApprovalRuleTemplate(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/codecommit_approval_rule_template aws_codecommit_approval_rule_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/codecommit_approval_rule_template aws_codecommit_approval_rule_template} Resource.
 func NewCodecommitApprovalRuleTemplate_Override(c CodecommitApprovalRuleTemplate, scope constructs.Construct, id *string, config *CodecommitApprovalRuleTemplateConfig) {
 	_init_.Initialize()
 
@@ -462,7 +462,10 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplate)SetContent(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CodecommitApprovalRuleTemplate)SetCount(val *float64) {
+func (j *jsiiProxy_CodecommitApprovalRuleTemplate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

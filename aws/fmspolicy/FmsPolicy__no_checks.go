@@ -80,6 +80,10 @@ func (j *jsiiProxy_FmsPolicy) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_FmsPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FmsPolicy) validateSetDeleteAllPolicyResourcesParameters(val interface{}) error {
 	return nil
 }

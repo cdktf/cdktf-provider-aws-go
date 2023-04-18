@@ -104,6 +104,10 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetDataTieringEnabledParameters(val interface{}) error {
 	return nil
 }

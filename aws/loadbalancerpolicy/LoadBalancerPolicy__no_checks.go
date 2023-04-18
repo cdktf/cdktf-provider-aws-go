@@ -72,6 +72,10 @@ func (j *jsiiProxy_LoadBalancerPolicy) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_LoadBalancerPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LoadBalancerPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

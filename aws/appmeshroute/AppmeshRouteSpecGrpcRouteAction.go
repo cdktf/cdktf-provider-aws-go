@@ -4,7 +4,7 @@ package appmeshroute
 type AppmeshRouteSpecGrpcRouteAction struct {
 	// weighted_target block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_route#weighted_target AppmeshRoute#weighted_target}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appmesh_route#weighted_target AppmeshRoute#weighted_target}
 	WeightedTarget interface{} `field:"required" json:"weightedTarget" yaml:"weightedTarget"`
 }
 

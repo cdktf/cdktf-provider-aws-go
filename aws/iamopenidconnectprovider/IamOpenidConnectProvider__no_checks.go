@@ -72,6 +72,10 @@ func (j *jsiiProxy_IamOpenidConnectProvider) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_IamOpenidConnectProvider) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamOpenidConnectProvider) validateSetIdParameters(val *string) error {
 	return nil
 }

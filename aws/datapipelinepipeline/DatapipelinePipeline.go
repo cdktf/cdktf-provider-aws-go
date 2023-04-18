@@ -2,14 +2,14 @@ package datapipelinepipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/datapipelinepipeline/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/datapipelinepipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/datapipeline_pipeline aws_datapipeline_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/datapipeline_pipeline aws_datapipeline_pipeline}.
 type DatapipelinePipeline interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DatapipelinePipeline interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -150,8 +150,8 @@ func (j *jsiiProxy_DatapipelinePipeline) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_DatapipelinePipeline) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DatapipelinePipeline) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -381,7 +381,7 @@ func (j *jsiiProxy_DatapipelinePipeline) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/datapipeline_pipeline aws_datapipeline_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/datapipeline_pipeline aws_datapipeline_pipeline} Resource.
 func NewDatapipelinePipeline(scope constructs.Construct, id *string, config *DatapipelinePipelineConfig) DatapipelinePipeline {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewDatapipelinePipeline(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/datapipeline_pipeline aws_datapipeline_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/datapipeline_pipeline aws_datapipeline_pipeline} Resource.
 func NewDatapipelinePipeline_Override(d DatapipelinePipeline, scope constructs.Construct, id *string, config *DatapipelinePipelineConfig) {
 	_init_.Initialize()
 
@@ -421,7 +421,10 @@ func (j *jsiiProxy_DatapipelinePipeline)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DatapipelinePipeline)SetCount(val *float64) {
+func (j *jsiiProxy_DatapipelinePipeline)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

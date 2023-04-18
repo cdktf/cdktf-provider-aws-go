@@ -2,14 +2,14 @@ package macie2classificationjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/macie2classificationjob/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/macie2classificationjob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job aws_macie2_classification_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie2_classification_job aws_macie2_classification_job}.
 type Macie2ClassificationJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type Macie2ClassificationJob interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	CustomDataIdentifierIds() *[]*string
 	SetCustomDataIdentifierIds(val *[]*string)
@@ -185,8 +185,8 @@ func (j *jsiiProxy_Macie2ClassificationJob) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_Macie2ClassificationJob) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Macie2ClassificationJob) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -616,7 +616,7 @@ func (j *jsiiProxy_Macie2ClassificationJob) UserPausedDetails() Macie2Classifica
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job aws_macie2_classification_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie2_classification_job aws_macie2_classification_job} Resource.
 func NewMacie2ClassificationJob(scope constructs.Construct, id *string, config *Macie2ClassificationJobConfig) Macie2ClassificationJob {
 	_init_.Initialize()
 
@@ -634,7 +634,7 @@ func NewMacie2ClassificationJob(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/macie2_classification_job aws_macie2_classification_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie2_classification_job aws_macie2_classification_job} Resource.
 func NewMacie2ClassificationJob_Override(m Macie2ClassificationJob, scope constructs.Construct, id *string, config *Macie2ClassificationJobConfig) {
 	_init_.Initialize()
 
@@ -656,7 +656,10 @@ func (j *jsiiProxy_Macie2ClassificationJob)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Macie2ClassificationJob)SetCount(val *float64) {
+func (j *jsiiProxy_Macie2ClassificationJob)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

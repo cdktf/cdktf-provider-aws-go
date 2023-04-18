@@ -92,6 +92,10 @@ func (j *jsiiProxy_DatasyncTask) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncTask) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncTask) validateSetDestinationLocationArnParameters(val *string) error {
 	return nil
 }

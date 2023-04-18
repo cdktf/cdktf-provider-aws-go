@@ -76,6 +76,10 @@ func (j *jsiiProxy_CodeartifactRepository) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_CodeartifactRepository) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodeartifactRepository) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

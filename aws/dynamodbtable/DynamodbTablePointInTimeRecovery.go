@@ -2,7 +2,7 @@ package dynamodbtable
 
 
 type DynamodbTablePointInTimeRecovery struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_table#enabled DynamodbTable#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dynamodb_table#enabled DynamodbTable#enabled}.
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 }
 

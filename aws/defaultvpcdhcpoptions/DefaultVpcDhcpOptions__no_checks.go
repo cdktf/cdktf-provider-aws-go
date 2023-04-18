@@ -68,6 +68,10 @@ func (j *jsiiProxy_DefaultVpcDhcpOptions) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_DefaultVpcDhcpOptions) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DefaultVpcDhcpOptions) validateSetIdParameters(val *string) error {
 	return nil
 }

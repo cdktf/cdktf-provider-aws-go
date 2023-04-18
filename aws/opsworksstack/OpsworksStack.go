@@ -2,14 +2,14 @@ package opsworksstack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/opsworksstack/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/opsworksstack/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack aws_opsworks_stack}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opsworks_stack aws_opsworks_stack}.
 type OpsworksStack interface {
 	cdktf.TerraformResource
 	AgentVersion() *string
@@ -37,9 +37,9 @@ type OpsworksStack interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomCookbooksSource() OpsworksStackCustomCookbooksSourceOutputReference
 	CustomCookbooksSourceInput() *OpsworksStackCustomCookbooksSource
 	CustomJson() *string
@@ -339,8 +339,8 @@ func (j *jsiiProxy_OpsworksStack) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksStack) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OpsworksStack) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -880,7 +880,7 @@ func (j *jsiiProxy_OpsworksStack) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack aws_opsworks_stack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opsworks_stack aws_opsworks_stack} Resource.
 func NewOpsworksStack(scope constructs.Construct, id *string, config *OpsworksStackConfig) OpsworksStack {
 	_init_.Initialize()
 
@@ -898,7 +898,7 @@ func NewOpsworksStack(scope constructs.Construct, id *string, config *OpsworksSt
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/opsworks_stack aws_opsworks_stack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opsworks_stack aws_opsworks_stack} Resource.
 func NewOpsworksStack_Override(o OpsworksStack, scope constructs.Construct, id *string, config *OpsworksStackConfig) {
 	_init_.Initialize()
 
@@ -975,7 +975,10 @@ func (j *jsiiProxy_OpsworksStack)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksStack)SetCount(val *float64) {
+func (j *jsiiProxy_OpsworksStack)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

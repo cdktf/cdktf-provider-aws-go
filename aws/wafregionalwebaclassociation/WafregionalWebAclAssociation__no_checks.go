@@ -68,6 +68,10 @@ func (j *jsiiProxy_WafregionalWebAclAssociation) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_WafregionalWebAclAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafregionalWebAclAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

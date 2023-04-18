@@ -2,14 +2,14 @@ package wafv2webacl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/wafv2webacl/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafv2webacl/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl aws_wafv2_web_acl}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl}.
 type Wafv2WebAcl interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -23,9 +23,9 @@ type Wafv2WebAcl interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomResponseBody() Wafv2WebAclCustomResponseBodyList
 	CustomResponseBodyInput() interface{}
 	DefaultAction() Wafv2WebAclDefaultActionOutputReference
@@ -190,8 +190,8 @@ func (j *jsiiProxy_Wafv2WebAcl) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAcl) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Wafv2WebAcl) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -531,7 +531,7 @@ func (j *jsiiProxy_Wafv2WebAcl) VisibilityConfigInput() *Wafv2WebAclVisibilityCo
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl aws_wafv2_web_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
 func NewWafv2WebAcl(scope constructs.Construct, id *string, config *Wafv2WebAclConfig) Wafv2WebAcl {
 	_init_.Initialize()
 
@@ -549,7 +549,7 @@ func NewWafv2WebAcl(scope constructs.Construct, id *string, config *Wafv2WebAclC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl aws_wafv2_web_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
 func NewWafv2WebAcl_Override(w Wafv2WebAcl, scope constructs.Construct, id *string, config *Wafv2WebAclConfig) {
 	_init_.Initialize()
 
@@ -571,7 +571,10 @@ func (j *jsiiProxy_Wafv2WebAcl)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Wafv2WebAcl)SetCount(val *float64) {
+func (j *jsiiProxy_Wafv2WebAcl)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

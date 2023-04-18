@@ -2,14 +2,14 @@ package ecsaccountsettingdefault
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/ecsaccountsettingdefault/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ecsaccountsettingdefault/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecs_account_setting_default aws_ecs_account_setting_default}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ecs_account_setting_default aws_ecs_account_setting_default}.
 type EcsAccountSettingDefault interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type EcsAccountSettingDefault interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_EcsAccountSettingDefault) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_EcsAccountSettingDefault) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EcsAccountSettingDefault) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -343,7 +343,7 @@ func (j *jsiiProxy_EcsAccountSettingDefault) ValueInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecs_account_setting_default aws_ecs_account_setting_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ecs_account_setting_default aws_ecs_account_setting_default} Resource.
 func NewEcsAccountSettingDefault(scope constructs.Construct, id *string, config *EcsAccountSettingDefaultConfig) EcsAccountSettingDefault {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewEcsAccountSettingDefault(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecs_account_setting_default aws_ecs_account_setting_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ecs_account_setting_default aws_ecs_account_setting_default} Resource.
 func NewEcsAccountSettingDefault_Override(e EcsAccountSettingDefault, scope constructs.Construct, id *string, config *EcsAccountSettingDefaultConfig) {
 	_init_.Initialize()
 
@@ -383,7 +383,10 @@ func (j *jsiiProxy_EcsAccountSettingDefault)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcsAccountSettingDefault)SetCount(val *float64) {
+func (j *jsiiProxy_EcsAccountSettingDefault)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

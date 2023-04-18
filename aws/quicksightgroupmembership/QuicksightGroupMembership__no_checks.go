@@ -72,6 +72,10 @@ func (j *jsiiProxy_QuicksightGroupMembership) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightGroupMembership) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightGroupMembership) validateSetGroupNameParameters(val *string) error {
 	return nil
 }

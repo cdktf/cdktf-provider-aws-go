@@ -96,6 +96,10 @@ func (j *jsiiProxy_DataAwsLakeformationPermissions) validateSetCatalogResourcePa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLakeformationPermissions) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLakeformationPermissions) validateSetIdParameters(val *string) error {
 	return nil
 }

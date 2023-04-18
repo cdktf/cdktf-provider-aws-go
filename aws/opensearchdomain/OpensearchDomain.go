@@ -2,14 +2,14 @@ package opensearchdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/opensearchdomain/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/opensearchdomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/opensearch_domain aws_opensearch_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opensearch_domain aws_opensearch_domain}.
 type OpensearchDomain interface {
 	cdktf.TerraformResource
 	AccessPolicies() *string
@@ -36,9 +36,9 @@ type OpensearchDomain interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DashboardEndpoint() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -341,8 +341,8 @@ func (j *jsiiProxy_OpensearchDomain) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomain) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OpensearchDomain) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -772,7 +772,7 @@ func (j *jsiiProxy_OpensearchDomain) VpcOptionsInput() *OpensearchDomainVpcOptio
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/opensearch_domain aws_opensearch_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opensearch_domain aws_opensearch_domain} Resource.
 func NewOpensearchDomain(scope constructs.Construct, id *string, config *OpensearchDomainConfig) OpensearchDomain {
 	_init_.Initialize()
 
@@ -790,7 +790,7 @@ func NewOpensearchDomain(scope constructs.Construct, id *string, config *Opensea
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/opensearch_domain aws_opensearch_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opensearch_domain aws_opensearch_domain} Resource.
 func NewOpensearchDomain_Override(o OpensearchDomain, scope constructs.Construct, id *string, config *OpensearchDomainConfig) {
 	_init_.Initialize()
 
@@ -834,7 +834,10 @@ func (j *jsiiProxy_OpensearchDomain)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomain)SetCount(val *float64) {
+func (j *jsiiProxy_OpensearchDomain)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

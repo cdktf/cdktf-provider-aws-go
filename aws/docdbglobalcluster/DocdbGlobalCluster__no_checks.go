@@ -72,6 +72,10 @@ func (j *jsiiProxy_DocdbGlobalCluster) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_DocdbGlobalCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DocdbGlobalCluster) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

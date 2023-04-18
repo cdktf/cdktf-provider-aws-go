@@ -2,14 +2,14 @@ package iotrolealias
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/iotrolealias/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/iotrolealias/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/iot_role_alias aws_iot_role_alias}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iot_role_alias aws_iot_role_alias}.
 type IotRoleAlias interface {
 	cdktf.TerraformResource
 	Alias() *string
@@ -25,9 +25,9 @@ type IotRoleAlias interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CredentialDuration() *float64
 	SetCredentialDuration(val *float64)
 	CredentialDurationInput() *float64
@@ -176,8 +176,8 @@ func (j *jsiiProxy_IotRoleAlias) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_IotRoleAlias) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IotRoleAlias) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -367,7 +367,7 @@ func (j *jsiiProxy_IotRoleAlias) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/iot_role_alias aws_iot_role_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iot_role_alias aws_iot_role_alias} Resource.
 func NewIotRoleAlias(scope constructs.Construct, id *string, config *IotRoleAliasConfig) IotRoleAlias {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewIotRoleAlias(scope constructs.Construct, id *string, config *IotRoleAlia
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/iot_role_alias aws_iot_role_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iot_role_alias aws_iot_role_alias} Resource.
 func NewIotRoleAlias_Override(i IotRoleAlias, scope constructs.Construct, id *string, config *IotRoleAliasConfig) {
 	_init_.Initialize()
 
@@ -418,7 +418,10 @@ func (j *jsiiProxy_IotRoleAlias)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IotRoleAlias)SetCount(val *float64) {
+func (j *jsiiProxy_IotRoleAlias)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

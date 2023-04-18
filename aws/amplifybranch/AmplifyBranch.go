@@ -2,14 +2,14 @@ package amplifybranch
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/amplifybranch/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/amplifybranch/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/amplify_branch aws_amplify_branch}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/amplify_branch aws_amplify_branch}.
 type AmplifyBranch interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -35,9 +35,9 @@ type AmplifyBranch interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomDomains() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
@@ -310,8 +310,8 @@ func (j *jsiiProxy_AmplifyBranch) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyBranch) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AmplifyBranch) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -771,7 +771,7 @@ func (j *jsiiProxy_AmplifyBranch) TtlInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/amplify_branch aws_amplify_branch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/amplify_branch aws_amplify_branch} Resource.
 func NewAmplifyBranch(scope constructs.Construct, id *string, config *AmplifyBranchConfig) AmplifyBranch {
 	_init_.Initialize()
 
@@ -789,7 +789,7 @@ func NewAmplifyBranch(scope constructs.Construct, id *string, config *AmplifyBra
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/amplify_branch aws_amplify_branch} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/amplify_branch aws_amplify_branch} Resource.
 func NewAmplifyBranch_Override(a AmplifyBranch, scope constructs.Construct, id *string, config *AmplifyBranchConfig) {
 	_init_.Initialize()
 
@@ -855,7 +855,10 @@ func (j *jsiiProxy_AmplifyBranch)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyBranch)SetCount(val *float64) {
+func (j *jsiiProxy_AmplifyBranch)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

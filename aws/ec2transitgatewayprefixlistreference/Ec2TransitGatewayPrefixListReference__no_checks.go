@@ -72,6 +72,10 @@ func (j *jsiiProxy_Ec2TransitGatewayPrefixListReference) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_Ec2TransitGatewayPrefixListReference) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayPrefixListReference) validateSetIdParameters(val *string) error {
 	return nil
 }

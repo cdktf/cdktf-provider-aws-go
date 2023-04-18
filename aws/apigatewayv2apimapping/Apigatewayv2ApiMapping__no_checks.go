@@ -76,6 +76,10 @@ func (j *jsiiProxy_Apigatewayv2ApiMapping) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_Apigatewayv2ApiMapping) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2ApiMapping) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

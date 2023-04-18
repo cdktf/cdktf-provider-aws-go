@@ -2,14 +2,14 @@ package dataawsvpngateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsvpngateway/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpngateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/vpn_gateway aws_vpn_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/vpn_gateway aws_vpn_gateway}.
 type DataAwsVpnGateway interface {
 	cdktf.TerraformDataSource
 	AmazonSideAsn() *string
@@ -27,9 +27,9 @@ type DataAwsVpnGateway interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -216,8 +216,8 @@ func (j *jsiiProxy_DataAwsVpnGateway) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsVpnGateway) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsVpnGateway) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -437,7 +437,7 @@ func (j *jsiiProxy_DataAwsVpnGateway) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/vpn_gateway aws_vpn_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/vpn_gateway aws_vpn_gateway} Data Source.
 func NewDataAwsVpnGateway(scope constructs.Construct, id *string, config *DataAwsVpnGatewayConfig) DataAwsVpnGateway {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewDataAwsVpnGateway(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/vpn_gateway aws_vpn_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/vpn_gateway aws_vpn_gateway} Data Source.
 func NewDataAwsVpnGateway_Override(d DataAwsVpnGateway, scope constructs.Construct, id *string, config *DataAwsVpnGatewayConfig) {
 	_init_.Initialize()
 
@@ -499,7 +499,10 @@ func (j *jsiiProxy_DataAwsVpnGateway)SetAvailabilityZone(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpnGateway)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsVpnGateway)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

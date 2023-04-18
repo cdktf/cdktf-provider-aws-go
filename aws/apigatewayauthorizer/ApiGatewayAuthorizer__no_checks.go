@@ -80,6 +80,10 @@ func (j *jsiiProxy_ApiGatewayAuthorizer) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayAuthorizer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayAuthorizer) validateSetIdParameters(val *string) error {
 	return nil
 }

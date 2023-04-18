@@ -2,14 +2,14 @@ package elasticsearchdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/elasticsearchdomain/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/elasticsearchdomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain aws_elasticsearch_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticsearch_domain aws_elasticsearch_domain}.
 type ElasticsearchDomain interface {
 	cdktf.TerraformResource
 	AccessPolicies() *string
@@ -36,9 +36,9 @@ type ElasticsearchDomain interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -340,8 +340,8 @@ func (j *jsiiProxy_ElasticsearchDomain) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_ElasticsearchDomain) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ElasticsearchDomain) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -761,7 +761,7 @@ func (j *jsiiProxy_ElasticsearchDomain) VpcOptionsInput() *ElasticsearchDomainVp
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain aws_elasticsearch_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticsearch_domain aws_elasticsearch_domain} Resource.
 func NewElasticsearchDomain(scope constructs.Construct, id *string, config *ElasticsearchDomainConfig) ElasticsearchDomain {
 	_init_.Initialize()
 
@@ -779,7 +779,7 @@ func NewElasticsearchDomain(scope constructs.Construct, id *string, config *Elas
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/elasticsearch_domain aws_elasticsearch_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticsearch_domain aws_elasticsearch_domain} Resource.
 func NewElasticsearchDomain_Override(e ElasticsearchDomain, scope constructs.Construct, id *string, config *ElasticsearchDomainConfig) {
 	_init_.Initialize()
 
@@ -823,7 +823,10 @@ func (j *jsiiProxy_ElasticsearchDomain)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomain)SetCount(val *float64) {
+func (j *jsiiProxy_ElasticsearchDomain)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -64,6 +64,10 @@ func validateDataAwsOamSink_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOamSink) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsOamSink) validateSetIdParameters(val *string) error {
 	return nil
 }

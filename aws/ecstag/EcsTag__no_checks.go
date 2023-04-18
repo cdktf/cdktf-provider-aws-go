@@ -68,6 +68,10 @@ func (j *jsiiProxy_EcsTag) validateSetConnectionParameters(val interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_EcsTag) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsTag) validateSetIdParameters(val *string) error {
 	return nil
 }

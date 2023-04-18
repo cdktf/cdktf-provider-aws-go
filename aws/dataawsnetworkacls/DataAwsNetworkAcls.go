@@ -2,14 +2,14 @@ package dataawsnetworkacls
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsnetworkacls/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsnetworkacls/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/network_acls aws_network_acls}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/network_acls aws_network_acls}.
 type DataAwsNetworkAcls interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAwsNetworkAcls interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataAwsNetworkAcls) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkAcls) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsNetworkAcls) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -365,7 +365,7 @@ func (j *jsiiProxy_DataAwsNetworkAcls) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/network_acls aws_network_acls} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/network_acls aws_network_acls} Data Source.
 func NewDataAwsNetworkAcls(scope constructs.Construct, id *string, config *DataAwsNetworkAclsConfig) DataAwsNetworkAcls {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewDataAwsNetworkAcls(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/network_acls aws_network_acls} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/network_acls aws_network_acls} Data Source.
 func NewDataAwsNetworkAcls_Override(d DataAwsNetworkAcls, scope constructs.Construct, id *string, config *DataAwsNetworkAclsConfig) {
 	_init_.Initialize()
 
@@ -394,7 +394,10 @@ func NewDataAwsNetworkAcls_Override(d DataAwsNetworkAcls, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkAcls)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsNetworkAcls)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

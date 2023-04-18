@@ -92,6 +92,10 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewayNfsFileShare) validateSetDefaultStorageClassParameters(val *string) error {
 	return nil
 }

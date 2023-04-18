@@ -72,6 +72,10 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

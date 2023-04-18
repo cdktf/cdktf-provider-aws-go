@@ -72,6 +72,10 @@ func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateSetConnecti
 	return nil
 }
 
+func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateSetIdParameters(val *string) error {
 	return nil
 }

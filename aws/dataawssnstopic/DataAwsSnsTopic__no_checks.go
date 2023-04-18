@@ -64,6 +64,10 @@ func validateDataAwsSnsTopic_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSnsTopic) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSnsTopic) validateSetIdParameters(val *string) error {
 	return nil
 }

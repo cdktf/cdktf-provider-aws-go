@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsCeCostCategory) validateSetCostCategoryArnParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCeCostCategory) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCeCostCategory) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataAwsCloudwatchLogGroup_IsTerraformElementParameters(x interface{
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudwatchLogGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudwatchLogGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

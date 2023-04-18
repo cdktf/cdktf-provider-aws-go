@@ -84,6 +84,10 @@ func (j *jsiiProxy_OpensearchOutboundConnection) validateSetConnectionAliasParam
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchOutboundConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpensearchOutboundConnection) validateSetIdParameters(val *string) error {
 	return nil
 }

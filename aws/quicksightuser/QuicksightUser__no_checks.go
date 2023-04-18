@@ -72,6 +72,10 @@ func (j *jsiiProxy_QuicksightUser) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightUser) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightUser) validateSetEmailParameters(val *string) error {
 	return nil
 }

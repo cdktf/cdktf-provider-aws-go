@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataAwsEc2SpotPrice) validateSetAvailabilityZoneParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2SpotPrice) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2SpotPrice) validateSetIdParameters(val *string) error {
 	return nil
 }

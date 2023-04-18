@@ -72,6 +72,10 @@ func (j *jsiiProxy_Apigatewayv2Deployment) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_Apigatewayv2Deployment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2Deployment) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

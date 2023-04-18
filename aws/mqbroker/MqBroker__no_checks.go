@@ -112,6 +112,10 @@ func (j *jsiiProxy_MqBroker) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_MqBroker) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MqBroker) validateSetDeploymentModeParameters(val *string) error {
 	return nil
 }

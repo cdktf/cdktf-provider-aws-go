@@ -2,14 +2,14 @@ package dataawsglobalacceleratorcustomroutingaccelerator
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsglobalacceleratorcustomroutingaccelerator/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsglobalacceleratorcustomroutingaccelerator/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/globalaccelerator_custom_routing_accelerator aws_globalaccelerator_custom_routing_accelerator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/globalaccelerator_custom_routing_accelerator aws_globalaccelerator_custom_routing_accelerator}.
 type DataAwsGlobalacceleratorCustomRoutingAccelerator interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -21,9 +21,9 @@ type DataAwsGlobalacceleratorCustomRoutingAccelerator interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_DataAwsGlobalacceleratorCustomRoutingAccelerator) ConstructNo
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsGlobalacceleratorCustomRoutingAccelerator) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsGlobalacceleratorCustomRoutingAccelerator) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -396,7 +396,7 @@ func (j *jsiiProxy_DataAwsGlobalacceleratorCustomRoutingAccelerator) TerraformRe
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/globalaccelerator_custom_routing_accelerator aws_globalaccelerator_custom_routing_accelerator} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/globalaccelerator_custom_routing_accelerator aws_globalaccelerator_custom_routing_accelerator} Data Source.
 func NewDataAwsGlobalacceleratorCustomRoutingAccelerator(scope constructs.Construct, id *string, config *DataAwsGlobalacceleratorCustomRoutingAcceleratorConfig) DataAwsGlobalacceleratorCustomRoutingAccelerator {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewDataAwsGlobalacceleratorCustomRoutingAccelerator(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/globalaccelerator_custom_routing_accelerator aws_globalaccelerator_custom_routing_accelerator} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/globalaccelerator_custom_routing_accelerator aws_globalaccelerator_custom_routing_accelerator} Data Source.
 func NewDataAwsGlobalacceleratorCustomRoutingAccelerator_Override(d DataAwsGlobalacceleratorCustomRoutingAccelerator, scope constructs.Construct, id *string, config *DataAwsGlobalacceleratorCustomRoutingAcceleratorConfig) {
 	_init_.Initialize()
 
@@ -436,7 +436,10 @@ func (j *jsiiProxy_DataAwsGlobalacceleratorCustomRoutingAccelerator)SetArn(val *
 	)
 }
 
-func (j *jsiiProxy_DataAwsGlobalacceleratorCustomRoutingAccelerator)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsGlobalacceleratorCustomRoutingAccelerator)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -76,6 +76,10 @@ func (j *jsiiProxy_AutoscalingGroupTagA) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_AutoscalingGroupTagA) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingGroupTagA) validateSetIdParameters(val *string) error {
 	return nil
 }

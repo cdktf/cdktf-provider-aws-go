@@ -68,6 +68,10 @@ func (j *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2LocalGatewayRouteTableVpcAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

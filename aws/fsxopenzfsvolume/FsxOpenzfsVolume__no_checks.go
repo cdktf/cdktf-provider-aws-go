@@ -88,6 +88,10 @@ func (j *jsiiProxy_FsxOpenzfsVolume) validateSetCopyTagsToSnapshotsParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_FsxOpenzfsVolume) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOpenzfsVolume) validateSetDataCompressionTypeParameters(val *string) error {
 	return nil
 }

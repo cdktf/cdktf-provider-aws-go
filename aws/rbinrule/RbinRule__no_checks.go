@@ -84,6 +84,10 @@ func (j *jsiiProxy_RbinRule) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_RbinRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RbinRule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

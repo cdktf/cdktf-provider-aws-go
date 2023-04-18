@@ -2,14 +2,14 @@ package s3bucketlogging
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/s3bucketlogging/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/s3bucketlogging/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_logging aws_s3_bucket_logging}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging}.
 type S3BucketLoggingA interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -24,9 +24,9 @@ type S3BucketLoggingA interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -172,8 +172,8 @@ func (j *jsiiProxy_S3BucketLoggingA) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketLoggingA) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_S3BucketLoggingA) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -403,7 +403,7 @@ func (j *jsiiProxy_S3BucketLoggingA) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_logging aws_s3_bucket_logging} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging} Resource.
 func NewS3BucketLoggingA(scope constructs.Construct, id *string, config *S3BucketLoggingAConfig) S3BucketLoggingA {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewS3BucketLoggingA(scope constructs.Construct, id *string, config *S3Bucke
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_logging aws_s3_bucket_logging} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging} Resource.
 func NewS3BucketLoggingA_Override(s S3BucketLoggingA, scope constructs.Construct, id *string, config *S3BucketLoggingAConfig) {
 	_init_.Initialize()
 
@@ -454,7 +454,10 @@ func (j *jsiiProxy_S3BucketLoggingA)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketLoggingA)SetCount(val *float64) {
+func (j *jsiiProxy_S3BucketLoggingA)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

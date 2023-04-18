@@ -72,6 +72,10 @@ func (j *jsiiProxy_DmsReplicationSubnetGroup) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DmsReplicationSubnetGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsReplicationSubnetGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

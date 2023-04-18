@@ -92,6 +92,10 @@ func (j *jsiiProxy_ApiGatewayIntegration) validateSetContentHandlingParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayIntegration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayIntegration) validateSetCredentialsParameters(val *string) error {
 	return nil
 }

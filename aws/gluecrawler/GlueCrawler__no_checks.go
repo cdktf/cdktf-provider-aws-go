@@ -116,6 +116,10 @@ func (j *jsiiProxy_GlueCrawler) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_GlueCrawler) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueCrawler) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

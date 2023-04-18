@@ -68,6 +68,10 @@ func validateDataAwsAuditmanagerControl_IsTerraformElementParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAuditmanagerControl) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAuditmanagerControl) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

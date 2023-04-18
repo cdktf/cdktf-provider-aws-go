@@ -2,14 +2,14 @@ package appflowconnectorprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/appflowconnectorprofile/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/appflowconnectorprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/appflow_connector_profile aws_appflow_connector_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appflow_connector_profile aws_appflow_connector_profile}.
 type AppflowConnectorProfile interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -33,9 +33,9 @@ type AppflowConnectorProfile interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CredentialsArn() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -247,8 +247,8 @@ func (j *jsiiProxy_AppflowConnectorProfile) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_AppflowConnectorProfile) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppflowConnectorProfile) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -448,7 +448,7 @@ func (j *jsiiProxy_AppflowConnectorProfile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/appflow_connector_profile aws_appflow_connector_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appflow_connector_profile aws_appflow_connector_profile} Resource.
 func NewAppflowConnectorProfile(scope constructs.Construct, id *string, config *AppflowConnectorProfileConfig) AppflowConnectorProfile {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewAppflowConnectorProfile(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/appflow_connector_profile aws_appflow_connector_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appflow_connector_profile aws_appflow_connector_profile} Resource.
 func NewAppflowConnectorProfile_Override(a AppflowConnectorProfile, scope constructs.Construct, id *string, config *AppflowConnectorProfileConfig) {
 	_init_.Initialize()
 
@@ -521,7 +521,10 @@ func (j *jsiiProxy_AppflowConnectorProfile)SetConnectorType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AppflowConnectorProfile)SetCount(val *float64) {
+func (j *jsiiProxy_AppflowConnectorProfile)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -64,6 +64,10 @@ func validateDataAwsVpclatticeService_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpclatticeService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpclatticeService) validateSetIdParameters(val *string) error {
 	return nil
 }

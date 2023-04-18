@@ -2,14 +2,14 @@ package efsfilesystempolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/efsfilesystempolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/efsfilesystempolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/efs_file_system_policy aws_efs_file_system_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/efs_file_system_policy aws_efs_file_system_policy}.
 type EfsFileSystemPolicy interface {
 	cdktf.TerraformResource
 	BypassPolicyLockoutSafetyCheck() interface{}
@@ -24,9 +24,9 @@ type EfsFileSystemPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_EfsFileSystemPolicy) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_EfsFileSystemPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EfsFileSystemPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_EfsFileSystemPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/efs_file_system_policy aws_efs_file_system_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/efs_file_system_policy aws_efs_file_system_policy} Resource.
 func NewEfsFileSystemPolicy(scope constructs.Construct, id *string, config *EfsFileSystemPolicyConfig) EfsFileSystemPolicy {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewEfsFileSystemPolicy(scope constructs.Construct, id *string, config *EfsF
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/efs_file_system_policy aws_efs_file_system_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/efs_file_system_policy aws_efs_file_system_policy} Resource.
 func NewEfsFileSystemPolicy_Override(e EfsFileSystemPolicy, scope constructs.Construct, id *string, config *EfsFileSystemPolicyConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_EfsFileSystemPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EfsFileSystemPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_EfsFileSystemPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

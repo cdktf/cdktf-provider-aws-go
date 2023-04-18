@@ -84,6 +84,10 @@ func (j *jsiiProxy_TransferServer) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_TransferServer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransferServer) validateSetDirectoryIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package cloudsearchdomainserviceaccesspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/cloudsearchdomainserviceaccesspolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudsearchdomainserviceaccesspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudsearch_domain_service_access_policy aws_cloudsearch_domain_service_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudsearch_domain_service_access_policy aws_cloudsearch_domain_service_access_policy}.
 type CloudsearchDomainServiceAccessPolicy interface {
 	cdktf.TerraformResource
 	AccessPolicy() *string
@@ -24,9 +24,9 @@ type CloudsearchDomainServiceAccessPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_CloudsearchDomainServiceAccessPolicy) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_CloudsearchDomainServiceAccessPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudsearchDomainServiceAccessPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_CloudsearchDomainServiceAccessPolicy) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudsearch_domain_service_access_policy aws_cloudsearch_domain_service_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudsearch_domain_service_access_policy aws_cloudsearch_domain_service_access_policy} Resource.
 func NewCloudsearchDomainServiceAccessPolicy(scope constructs.Construct, id *string, config *CloudsearchDomainServiceAccessPolicyConfig) CloudsearchDomainServiceAccessPolicy {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewCloudsearchDomainServiceAccessPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudsearch_domain_service_access_policy aws_cloudsearch_domain_service_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudsearch_domain_service_access_policy aws_cloudsearch_domain_service_access_policy} Resource.
 func NewCloudsearchDomainServiceAccessPolicy_Override(c CloudsearchDomainServiceAccessPolicy, scope constructs.Construct, id *string, config *CloudsearchDomainServiceAccessPolicyConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_CloudsearchDomainServiceAccessPolicy)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_CloudsearchDomainServiceAccessPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_CloudsearchDomainServiceAccessPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

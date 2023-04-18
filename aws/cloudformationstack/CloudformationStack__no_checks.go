@@ -76,6 +76,10 @@ func (j *jsiiProxy_CloudformationStack) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_CloudformationStack) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudformationStack) validateSetDisableRollbackParameters(val interface{}) error {
 	return nil
 }

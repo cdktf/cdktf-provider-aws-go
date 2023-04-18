@@ -72,6 +72,10 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateSetFunctionNameParameters(val *string) error {
 	return nil
 }

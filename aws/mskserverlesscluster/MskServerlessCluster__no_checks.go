@@ -84,6 +84,10 @@ func (j *jsiiProxy_MskServerlessCluster) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_MskServerlessCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MskServerlessCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

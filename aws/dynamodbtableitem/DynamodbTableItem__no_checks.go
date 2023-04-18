@@ -68,6 +68,10 @@ func (j *jsiiProxy_DynamodbTableItem) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbTableItem) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbTableItem) validateSetHashKeyParameters(val *string) error {
 	return nil
 }

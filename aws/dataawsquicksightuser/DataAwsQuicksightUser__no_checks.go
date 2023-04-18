@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsQuicksightUser) validateSetAwsAccountIdParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsQuicksightUser) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsQuicksightUser) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package sfnactivity
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/sfnactivity/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/sfnactivity/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/sfn_activity aws_sfn_activity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sfn_activity aws_sfn_activity}.
 type SfnActivity interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SfnActivity interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreationDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -147,8 +147,8 @@ func (j *jsiiProxy_SfnActivity) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_SfnActivity) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SfnActivity) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -368,7 +368,7 @@ func (j *jsiiProxy_SfnActivity) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/sfn_activity aws_sfn_activity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sfn_activity aws_sfn_activity} Resource.
 func NewSfnActivity(scope constructs.Construct, id *string, config *SfnActivityConfig) SfnActivity {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewSfnActivity(scope constructs.Construct, id *string, config *SfnActivityC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/sfn_activity aws_sfn_activity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sfn_activity aws_sfn_activity} Resource.
 func NewSfnActivity_Override(s SfnActivity, scope constructs.Construct, id *string, config *SfnActivityConfig) {
 	_init_.Initialize()
 
@@ -408,7 +408,10 @@ func (j *jsiiProxy_SfnActivity)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SfnActivity)SetCount(val *float64) {
+func (j *jsiiProxy_SfnActivity)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

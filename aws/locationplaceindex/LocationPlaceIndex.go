@@ -2,14 +2,14 @@ package locationplaceindex
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/locationplaceindex/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/locationplaceindex/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/location_place_index aws_location_place_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_place_index aws_location_place_index}.
 type LocationPlaceIndex interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type LocationPlaceIndex interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	DataSource() *string
 	SetDataSource(val *string)
@@ -160,8 +160,8 @@ func (j *jsiiProxy_LocationPlaceIndex) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_LocationPlaceIndex) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LocationPlaceIndex) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -461,7 +461,7 @@ func (j *jsiiProxy_LocationPlaceIndex) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/location_place_index aws_location_place_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_place_index aws_location_place_index} Resource.
 func NewLocationPlaceIndex(scope constructs.Construct, id *string, config *LocationPlaceIndexConfig) LocationPlaceIndex {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewLocationPlaceIndex(scope constructs.Construct, id *string, config *Locat
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/location_place_index aws_location_place_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_place_index aws_location_place_index} Resource.
 func NewLocationPlaceIndex_Override(l LocationPlaceIndex, scope constructs.Construct, id *string, config *LocationPlaceIndexConfig) {
 	_init_.Initialize()
 
@@ -501,7 +501,10 @@ func (j *jsiiProxy_LocationPlaceIndex)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LocationPlaceIndex)SetCount(val *float64) {
+func (j *jsiiProxy_LocationPlaceIndex)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsS3AccountPublicAccessBlock) validateSetAccountIdParame
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsS3AccountPublicAccessBlock) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsS3AccountPublicAccessBlock) validateSetIdParameters(val *string) error {
 	return nil
 }

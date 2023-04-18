@@ -72,6 +72,10 @@ func (j *jsiiProxy_InternetGatewayAttachment) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_InternetGatewayAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_InternetGatewayAttachment) validateSetIdParameters(val *string) error {
 	return nil
 }

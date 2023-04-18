@@ -2,14 +2,14 @@ package dataawslakeformationresource
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslakeformationresource/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslakeformationresource/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/lakeformation_resource aws_lakeformation_resource}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/lakeformation_resource aws_lakeformation_resource}.
 type DataAwsLakeformationResource interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -20,9 +20,9 @@ type DataAwsLakeformationResource interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataAwsLakeformationResource) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLakeformationResource) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsLakeformationResource) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -303,7 +303,7 @@ func (j *jsiiProxy_DataAwsLakeformationResource) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/lakeformation_resource aws_lakeformation_resource} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/lakeformation_resource aws_lakeformation_resource} Data Source.
 func NewDataAwsLakeformationResource(scope constructs.Construct, id *string, config *DataAwsLakeformationResourceConfig) DataAwsLakeformationResource {
 	_init_.Initialize()
 
@@ -321,7 +321,7 @@ func NewDataAwsLakeformationResource(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/lakeformation_resource aws_lakeformation_resource} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/lakeformation_resource aws_lakeformation_resource} Data Source.
 func NewDataAwsLakeformationResource_Override(d DataAwsLakeformationResource, scope constructs.Construct, id *string, config *DataAwsLakeformationResourceConfig) {
 	_init_.Initialize()
 
@@ -343,7 +343,10 @@ func (j *jsiiProxy_DataAwsLakeformationResource)SetArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLakeformationResource)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsLakeformationResource)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

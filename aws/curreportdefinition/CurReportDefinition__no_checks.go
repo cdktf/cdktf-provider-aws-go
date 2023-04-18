@@ -80,6 +80,10 @@ func (j *jsiiProxy_CurReportDefinition) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_CurReportDefinition) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CurReportDefinition) validateSetFormatParameters(val *string) error {
 	return nil
 }

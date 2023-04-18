@@ -2,14 +2,14 @@ package dataawselb
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawselb/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawselb/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/elb aws_elb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/elb aws_elb}.
 type DataAwsElb interface {
 	cdktf.TerraformDataSource
 	AccessLogs() DataAwsElbAccessLogsList
@@ -22,9 +22,9 @@ type DataAwsElb interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CrossZoneLoadBalancing() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
@@ -192,8 +192,8 @@ func (j *jsiiProxy_DataAwsElb) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElb) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsElb) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -503,7 +503,7 @@ func (j *jsiiProxy_DataAwsElb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/elb aws_elb} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/elb aws_elb} Data Source.
 func NewDataAwsElb(scope constructs.Construct, id *string, config *DataAwsElbConfig) DataAwsElb {
 	_init_.Initialize()
 
@@ -521,7 +521,7 @@ func NewDataAwsElb(scope constructs.Construct, id *string, config *DataAwsElbCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/elb aws_elb} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/elb aws_elb} Data Source.
 func NewDataAwsElb_Override(d DataAwsElb, scope constructs.Construct, id *string, config *DataAwsElbConfig) {
 	_init_.Initialize()
 
@@ -532,7 +532,10 @@ func NewDataAwsElb_Override(d DataAwsElb, scope constructs.Construct, id *string
 	)
 }
 
-func (j *jsiiProxy_DataAwsElb)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsElb)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

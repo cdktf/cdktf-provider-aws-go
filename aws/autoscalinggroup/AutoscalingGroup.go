@@ -2,14 +2,14 @@ package autoscalinggroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/autoscalinggroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/autoscalinggroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group aws_autoscaling_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/autoscaling_group aws_autoscaling_group}.
 type AutoscalingGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -31,9 +31,9 @@ type AutoscalingGroup interface {
 	SetContext(val *string)
 	ContextInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultCooldown() *float64
 	SetDefaultCooldown(val *float64)
 	DefaultCooldownInput() *float64
@@ -141,9 +141,9 @@ type AutoscalingGroup interface {
 	SuspendedProcessesInput() *[]*string
 	Tag() AutoscalingGroupTagList
 	TagInput() interface{}
-	Tags() *map[string]*string
-	SetTags(val *map[string]*string)
-	TagsInput() *map[string]*string
+	Tags() interface{}
+	SetTags(val interface{})
+	TagsInput() interface{}
 	TargetGroupArns() *[]*string
 	SetTargetGroupArns(val *[]*string)
 	TargetGroupArnsInput() *[]*string
@@ -356,8 +356,8 @@ func (j *jsiiProxy_AutoscalingGroup) ContextInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AutoscalingGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -1016,8 +1016,8 @@ func (j *jsiiProxy_AutoscalingGroup) TagInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingGroup) Tags() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_AutoscalingGroup) Tags() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"tags",
@@ -1026,8 +1026,8 @@ func (j *jsiiProxy_AutoscalingGroup) Tags() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingGroup) TagsInput() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_AutoscalingGroup) TagsInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"tagsInput",
@@ -1207,7 +1207,7 @@ func (j *jsiiProxy_AutoscalingGroup) WarmPoolInput() *AutoscalingGroupWarmPool {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group aws_autoscaling_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
 func NewAutoscalingGroup(scope constructs.Construct, id *string, config *AutoscalingGroupConfig) AutoscalingGroup {
 	_init_.Initialize()
 
@@ -1225,7 +1225,7 @@ func NewAutoscalingGroup(scope constructs.Construct, id *string, config *Autosca
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_group aws_autoscaling_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
 func NewAutoscalingGroup_Override(a AutoscalingGroup, scope constructs.Construct, id *string, config *AutoscalingGroupConfig) {
 	_init_.Initialize()
 
@@ -1280,7 +1280,10 @@ func (j *jsiiProxy_AutoscalingGroup)SetContext(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroup)SetCount(val *float64) {
+func (j *jsiiProxy_AutoscalingGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
@@ -1587,7 +1590,7 @@ func (j *jsiiProxy_AutoscalingGroup)SetSuspendedProcesses(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroup)SetTags(val *map[string]*string) {
+func (j *jsiiProxy_AutoscalingGroup)SetTags(val interface{}) {
 	if err := j.validateSetTagsParameters(val); err != nil {
 		panic(err)
 	}

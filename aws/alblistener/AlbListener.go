@@ -2,14 +2,14 @@ package alblistener
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/alblistener/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/alblistener/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/alb_listener aws_alb_listener}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/alb_listener aws_alb_listener}.
 type AlbListener interface {
 	cdktf.TerraformResource
 	AlpnPolicy() *string
@@ -28,9 +28,9 @@ type AlbListener interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultAction() AlbListenerDefaultActionList
 	DefaultActionInput() interface{}
 	// Experimental.
@@ -224,8 +224,8 @@ func (j *jsiiProxy_AlbListener) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_AlbListener) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AlbListener) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -535,7 +535,7 @@ func (j *jsiiProxy_AlbListener) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/alb_listener aws_alb_listener} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/alb_listener aws_alb_listener} Resource.
 func NewAlbListener(scope constructs.Construct, id *string, config *AlbListenerConfig) AlbListener {
 	_init_.Initialize()
 
@@ -553,7 +553,7 @@ func NewAlbListener(scope constructs.Construct, id *string, config *AlbListenerC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/alb_listener aws_alb_listener} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/alb_listener aws_alb_listener} Resource.
 func NewAlbListener_Override(a AlbListener, scope constructs.Construct, id *string, config *AlbListenerConfig) {
 	_init_.Initialize()
 
@@ -597,7 +597,10 @@ func (j *jsiiProxy_AlbListener)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AlbListener)SetCount(val *float64) {
+func (j *jsiiProxy_AlbListener)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

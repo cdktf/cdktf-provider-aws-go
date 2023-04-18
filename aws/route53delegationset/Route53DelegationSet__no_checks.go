@@ -68,6 +68,10 @@ func (j *jsiiProxy_Route53DelegationSet) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_Route53DelegationSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53DelegationSet) validateSetIdParameters(val *string) error {
 	return nil
 }

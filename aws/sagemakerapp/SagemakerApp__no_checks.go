@@ -80,6 +80,10 @@ func (j *jsiiProxy_SagemakerApp) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerApp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerApp) validateSetDomainIdParameters(val *string) error {
 	return nil
 }

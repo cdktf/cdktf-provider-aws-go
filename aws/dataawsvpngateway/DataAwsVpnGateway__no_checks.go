@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataAwsVpnGateway) validateSetAvailabilityZoneParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpnGateway) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpnGateway) validateSetIdParameters(val *string) error {
 	return nil
 }

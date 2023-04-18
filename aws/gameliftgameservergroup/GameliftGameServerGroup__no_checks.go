@@ -88,6 +88,10 @@ func (j *jsiiProxy_GameliftGameServerGroup) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GameliftGameServerGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GameliftGameServerGroup) validateSetGameServerGroupNameParameters(val *string) error {
 	return nil
 }

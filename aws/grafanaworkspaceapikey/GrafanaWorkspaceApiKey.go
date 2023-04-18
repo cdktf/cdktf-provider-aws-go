@@ -2,14 +2,14 @@ package grafanaworkspaceapikey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/grafanaworkspaceapikey/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/grafanaworkspaceapikey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace_api_key aws_grafana_workspace_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/grafana_workspace_api_key aws_grafana_workspace_api_key}.
 type GrafanaWorkspaceApiKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GrafanaWorkspaceApiKey interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -148,8 +148,8 @@ func (j *jsiiProxy_GrafanaWorkspaceApiKey) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceApiKey) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GrafanaWorkspaceApiKey) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -389,7 +389,7 @@ func (j *jsiiProxy_GrafanaWorkspaceApiKey) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace_api_key aws_grafana_workspace_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/grafana_workspace_api_key aws_grafana_workspace_api_key} Resource.
 func NewGrafanaWorkspaceApiKey(scope constructs.Construct, id *string, config *GrafanaWorkspaceApiKeyConfig) GrafanaWorkspaceApiKey {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewGrafanaWorkspaceApiKey(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/grafana_workspace_api_key aws_grafana_workspace_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/grafana_workspace_api_key aws_grafana_workspace_api_key} Resource.
 func NewGrafanaWorkspaceApiKey_Override(g GrafanaWorkspaceApiKey, scope constructs.Construct, id *string, config *GrafanaWorkspaceApiKeyConfig) {
 	_init_.Initialize()
 
@@ -429,7 +429,10 @@ func (j *jsiiProxy_GrafanaWorkspaceApiKey)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GrafanaWorkspaceApiKey)SetCount(val *float64) {
+func (j *jsiiProxy_GrafanaWorkspaceApiKey)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package cloudfrontdistribution
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/cloudfrontdistribution/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudfrontdistribution/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution aws_cloudfront_distribution}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution}.
 type CloudfrontDistribution interface {
 	cdktf.TerraformResource
 	Aliases() *[]*string
@@ -29,9 +29,9 @@ type CloudfrontDistribution interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomErrorResponse() CloudfrontDistributionCustomErrorResponseList
 	CustomErrorResponseInput() interface{}
 	DefaultCacheBehavior() CloudfrontDistributionDefaultCacheBehaviorOutputReference
@@ -280,8 +280,8 @@ func (j *jsiiProxy_CloudfrontDistribution) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudfrontDistribution) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -871,7 +871,7 @@ func (j *jsiiProxy_CloudfrontDistribution) WebAclIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution aws_cloudfront_distribution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution} Resource.
 func NewCloudfrontDistribution(scope constructs.Construct, id *string, config *CloudfrontDistributionConfig) CloudfrontDistribution {
 	_init_.Initialize()
 
@@ -889,7 +889,7 @@ func NewCloudfrontDistribution(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution aws_cloudfront_distribution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution} Resource.
 func NewCloudfrontDistribution_Override(c CloudfrontDistribution, scope constructs.Construct, id *string, config *CloudfrontDistributionConfig) {
 	_init_.Initialize()
 
@@ -933,7 +933,10 @@ func (j *jsiiProxy_CloudfrontDistribution)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistribution)SetCount(val *float64) {
+func (j *jsiiProxy_CloudfrontDistribution)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

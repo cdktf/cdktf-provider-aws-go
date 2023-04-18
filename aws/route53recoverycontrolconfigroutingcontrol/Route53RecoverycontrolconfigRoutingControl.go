@@ -2,14 +2,14 @@ package route53recoverycontrolconfigroutingcontrol
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/route53recoverycontrolconfigroutingcontrol/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/route53recoverycontrolconfigroutingcontrol/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53recoverycontrolconfig_routing_control aws_route53recoverycontrolconfig_routing_control}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/route53recoverycontrolconfig_routing_control aws_route53recoverycontrolconfig_routing_control}.
 type Route53RecoverycontrolconfigRoutingControl interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -28,9 +28,9 @@ type Route53RecoverycontrolconfigRoutingControl interface {
 	SetControlPanelArn(val *string)
 	ControlPanelArnInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -197,8 +197,8 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigRoutingControl) ControlPanelArnIn
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigRoutingControl) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Route53RecoverycontrolconfigRoutingControl) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -378,7 +378,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigRoutingControl) TerraformResource
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53recoverycontrolconfig_routing_control aws_route53recoverycontrolconfig_routing_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/route53recoverycontrolconfig_routing_control aws_route53recoverycontrolconfig_routing_control} Resource.
 func NewRoute53RecoverycontrolconfigRoutingControl(scope constructs.Construct, id *string, config *Route53RecoverycontrolconfigRoutingControlConfig) Route53RecoverycontrolconfigRoutingControl {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewRoute53RecoverycontrolconfigRoutingControl(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53recoverycontrolconfig_routing_control aws_route53recoverycontrolconfig_routing_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/route53recoverycontrolconfig_routing_control aws_route53recoverycontrolconfig_routing_control} Resource.
 func NewRoute53RecoverycontrolconfigRoutingControl_Override(r Route53RecoverycontrolconfigRoutingControl, scope constructs.Construct, id *string, config *Route53RecoverycontrolconfigRoutingControlConfig) {
 	_init_.Initialize()
 
@@ -440,7 +440,10 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigRoutingControl)SetControlPanelArn
 	)
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigRoutingControl)SetCount(val *float64) {
+func (j *jsiiProxy_Route53RecoverycontrolconfigRoutingControl)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

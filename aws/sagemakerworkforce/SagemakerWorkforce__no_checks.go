@@ -84,6 +84,10 @@ func (j *jsiiProxy_SagemakerWorkforce) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerWorkforce) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerWorkforce) validateSetIdParameters(val *string) error {
 	return nil
 }

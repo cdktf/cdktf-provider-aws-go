@@ -68,6 +68,10 @@ func (j *jsiiProxy_SesTemplate) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_SesTemplate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesTemplate) validateSetHtmlParameters(val *string) error {
 	return nil
 }

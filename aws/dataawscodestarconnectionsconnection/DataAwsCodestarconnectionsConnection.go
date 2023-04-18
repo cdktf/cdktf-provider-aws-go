@@ -2,14 +2,14 @@ package dataawscodestarconnectionsconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawscodestarconnectionsconnection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawscodestarconnectionsconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/codestarconnections_connection aws_codestarconnections_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/codestarconnections_connection aws_codestarconnections_connection}.
 type DataAwsCodestarconnectionsConnection interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -21,9 +21,9 @@ type DataAwsCodestarconnectionsConnection interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -363,7 +363,7 @@ func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) TerraformResourceType()
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/codestarconnections_connection aws_codestarconnections_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/codestarconnections_connection aws_codestarconnections_connection} Data Source.
 func NewDataAwsCodestarconnectionsConnection(scope constructs.Construct, id *string, config *DataAwsCodestarconnectionsConnectionConfig) DataAwsCodestarconnectionsConnection {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func NewDataAwsCodestarconnectionsConnection(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/codestarconnections_connection aws_codestarconnections_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/codestarconnections_connection aws_codestarconnections_connection} Data Source.
 func NewDataAwsCodestarconnectionsConnection_Override(d DataAwsCodestarconnectionsConnection, scope constructs.Construct, id *string, config *DataAwsCodestarconnectionsConnectionConfig) {
 	_init_.Initialize()
 
@@ -403,7 +403,10 @@ func (j *jsiiProxy_DataAwsCodestarconnectionsConnection)SetArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCodestarconnectionsConnection)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsCodestarconnectionsConnection)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

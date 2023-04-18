@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsNetworkmanagerConnection) validateSetConnectionIdParam
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsNetworkmanagerConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNetworkmanagerConnection) validateSetGlobalNetworkIdParameters(val *string) error {
 	return nil
 }

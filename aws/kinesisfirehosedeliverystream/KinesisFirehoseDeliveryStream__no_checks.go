@@ -108,6 +108,10 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KinesisFirehoseDeliveryStream) validateSetDestinationParameters(val *string) error {
 	return nil
 }

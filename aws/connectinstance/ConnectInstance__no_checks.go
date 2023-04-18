@@ -84,6 +84,10 @@ func (j *jsiiProxy_ConnectInstance) validateSetContactLensEnabledParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ConnectInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectInstance) validateSetDirectoryIdParameters(val *string) error {
 	return nil
 }

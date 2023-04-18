@@ -2,7 +2,7 @@ package vpclatticetargetgroup
 
 
 type VpclatticeTargetGroupConfigHealthCheckMatcher struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/vpclattice_target_group#value VpclatticeTargetGroup#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpclattice_target_group#value VpclatticeTargetGroup#value}.
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

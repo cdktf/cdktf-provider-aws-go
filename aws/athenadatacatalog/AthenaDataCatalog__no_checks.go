@@ -68,6 +68,10 @@ func (j *jsiiProxy_AthenaDataCatalog) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_AthenaDataCatalog) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AthenaDataCatalog) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

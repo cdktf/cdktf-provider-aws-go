@@ -68,6 +68,10 @@ func (j *jsiiProxy_ServiceDiscoveryHttpNamespace) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_ServiceDiscoveryHttpNamespace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceDiscoveryHttpNamespace) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

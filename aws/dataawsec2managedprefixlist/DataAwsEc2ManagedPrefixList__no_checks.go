@@ -72,6 +72,10 @@ func validateDataAwsEc2ManagedPrefixList_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2ManagedPrefixList) validateSetIdParameters(val *string) error {
 	return nil
 }

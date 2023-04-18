@@ -72,6 +72,10 @@ func validateDataAwsEc2TransitGatewayRouteTable_IsTerraformElementParameters(x i
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTable) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTable) validateSetIdParameters(val *string) error {
 	return nil
 }

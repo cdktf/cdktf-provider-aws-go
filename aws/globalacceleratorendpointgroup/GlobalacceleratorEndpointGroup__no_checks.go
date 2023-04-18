@@ -80,6 +80,10 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroup) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GlobalacceleratorEndpointGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlobalacceleratorEndpointGroup) validateSetEndpointGroupRegionParameters(val *string) error {
 	return nil
 }

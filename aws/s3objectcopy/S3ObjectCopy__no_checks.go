@@ -120,6 +120,10 @@ func (j *jsiiProxy_S3ObjectCopy) validateSetCopyIfUnmodifiedSinceParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_S3ObjectCopy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3ObjectCopy) validateSetCustomerAlgorithmParameters(val *string) error {
 	return nil
 }

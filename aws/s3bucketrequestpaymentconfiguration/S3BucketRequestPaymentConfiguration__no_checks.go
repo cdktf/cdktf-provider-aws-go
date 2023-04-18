@@ -72,6 +72,10 @@ func (j *jsiiProxy_S3BucketRequestPaymentConfiguration) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketRequestPaymentConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketRequestPaymentConfiguration) validateSetExpectedBucketOwnerParameters(val *string) error {
 	return nil
 }

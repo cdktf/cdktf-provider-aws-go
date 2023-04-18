@@ -68,6 +68,10 @@ func (j *jsiiProxy_VpnConnectionRoute) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_VpnConnectionRoute) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpnConnectionRoute) validateSetDestinationCidrBlockParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package opsworksinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/opsworksinstance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/opsworksinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance aws_opsworks_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opsworks_instance aws_opsworks_instance}.
 type OpsworksInstance interface {
 	cdktf.TerraformResource
 	AgentVersion() *string
@@ -36,9 +36,9 @@ type OpsworksInstance interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	SetCreatedAt(val *string)
 	CreatedAtInput() *string
@@ -372,8 +372,8 @@ func (j *jsiiProxy_OpsworksInstance) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksInstance) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OpsworksInstance) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -1193,7 +1193,7 @@ func (j *jsiiProxy_OpsworksInstance) VirtualizationTypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance aws_opsworks_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opsworks_instance aws_opsworks_instance} Resource.
 func NewOpsworksInstance(scope constructs.Construct, id *string, config *OpsworksInstanceConfig) OpsworksInstance {
 	_init_.Initialize()
 
@@ -1211,7 +1211,7 @@ func NewOpsworksInstance(scope constructs.Construct, id *string, config *Opswork
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/opsworks_instance aws_opsworks_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opsworks_instance aws_opsworks_instance} Resource.
 func NewOpsworksInstance_Override(o OpsworksInstance, scope constructs.Construct, id *string, config *OpsworksInstanceConfig) {
 	_init_.Initialize()
 
@@ -1288,7 +1288,10 @@ func (j *jsiiProxy_OpsworksInstance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksInstance)SetCount(val *float64) {
+func (j *jsiiProxy_OpsworksInstance)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

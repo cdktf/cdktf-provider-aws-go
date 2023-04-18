@@ -2,14 +2,14 @@ package gluetrigger
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/gluetrigger/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/gluetrigger/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_trigger aws_glue_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/glue_trigger aws_glue_trigger}.
 type GlueTrigger interface {
 	cdktf.TerraformResource
 	Actions() GlueTriggerActionsList
@@ -24,9 +24,9 @@ type GlueTrigger interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -216,8 +216,8 @@ func (j *jsiiProxy_GlueTrigger) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_GlueTrigger) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GlueTrigger) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -617,7 +617,7 @@ func (j *jsiiProxy_GlueTrigger) WorkflowNameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/glue_trigger aws_glue_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/glue_trigger aws_glue_trigger} Resource.
 func NewGlueTrigger(scope constructs.Construct, id *string, config *GlueTriggerConfig) GlueTrigger {
 	_init_.Initialize()
 
@@ -635,7 +635,7 @@ func NewGlueTrigger(scope constructs.Construct, id *string, config *GlueTriggerC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/glue_trigger aws_glue_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/glue_trigger aws_glue_trigger} Resource.
 func NewGlueTrigger_Override(g GlueTrigger, scope constructs.Construct, id *string, config *GlueTriggerConfig) {
 	_init_.Initialize()
 
@@ -657,7 +657,10 @@ func (j *jsiiProxy_GlueTrigger)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlueTrigger)SetCount(val *float64) {
+func (j *jsiiProxy_GlueTrigger)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

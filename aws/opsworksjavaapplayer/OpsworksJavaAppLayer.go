@@ -2,14 +2,14 @@ package opsworksjavaapplayer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/opsworksjavaapplayer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/opsworksjavaapplayer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/opsworks_java_app_layer aws_opsworks_java_app_layer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opsworks_java_app_layer aws_opsworks_java_app_layer}.
 type OpsworksJavaAppLayer interface {
 	cdktf.TerraformResource
 	AppServer() *string
@@ -39,9 +39,9 @@ type OpsworksJavaAppLayer interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomConfigureRecipes() *[]*string
 	SetCustomConfigureRecipes(val *[]*string)
 	CustomConfigureRecipesInput() *[]*string
@@ -381,8 +381,8 @@ func (j *jsiiProxy_OpsworksJavaAppLayer) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksJavaAppLayer) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OpsworksJavaAppLayer) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -992,7 +992,7 @@ func (j *jsiiProxy_OpsworksJavaAppLayer) UseEbsOptimizedInstancesInput() interfa
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/opsworks_java_app_layer aws_opsworks_java_app_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opsworks_java_app_layer aws_opsworks_java_app_layer} Resource.
 func NewOpsworksJavaAppLayer(scope constructs.Construct, id *string, config *OpsworksJavaAppLayerConfig) OpsworksJavaAppLayer {
 	_init_.Initialize()
 
@@ -1010,7 +1010,7 @@ func NewOpsworksJavaAppLayer(scope constructs.Construct, id *string, config *Ops
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/opsworks_java_app_layer aws_opsworks_java_app_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opsworks_java_app_layer aws_opsworks_java_app_layer} Resource.
 func NewOpsworksJavaAppLayer_Override(o OpsworksJavaAppLayer, scope constructs.Construct, id *string, config *OpsworksJavaAppLayerConfig) {
 	_init_.Initialize()
 
@@ -1087,7 +1087,10 @@ func (j *jsiiProxy_OpsworksJavaAppLayer)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksJavaAppLayer)SetCount(val *float64) {
+func (j *jsiiProxy_OpsworksJavaAppLayer)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

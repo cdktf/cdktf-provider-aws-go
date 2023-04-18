@@ -68,6 +68,10 @@ func validateDataAwsRoute53ResolverEndpoint_IsTerraformElementParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRoute53ResolverEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRoute53ResolverEndpoint) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package redshiftpartner
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/redshiftpartner/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/redshiftpartner/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/redshift_partner aws_redshift_partner}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/redshift_partner aws_redshift_partner}.
 type RedshiftPartner interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -27,9 +27,9 @@ type RedshiftPartner interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DatabaseName() *string
 	SetDatabaseName(val *string)
 	DatabaseNameInput() *string
@@ -189,8 +189,8 @@ func (j *jsiiProxy_RedshiftPartner) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftPartner) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_RedshiftPartner) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -400,7 +400,7 @@ func (j *jsiiProxy_RedshiftPartner) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/redshift_partner aws_redshift_partner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/redshift_partner aws_redshift_partner} Resource.
 func NewRedshiftPartner(scope constructs.Construct, id *string, config *RedshiftPartnerConfig) RedshiftPartner {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewRedshiftPartner(scope constructs.Construct, id *string, config *Redshift
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/redshift_partner aws_redshift_partner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/redshift_partner aws_redshift_partner} Resource.
 func NewRedshiftPartner_Override(r RedshiftPartner, scope constructs.Construct, id *string, config *RedshiftPartnerConfig) {
 	_init_.Initialize()
 
@@ -462,7 +462,10 @@ func (j *jsiiProxy_RedshiftPartner)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftPartner)SetCount(val *float64) {
+func (j *jsiiProxy_RedshiftPartner)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

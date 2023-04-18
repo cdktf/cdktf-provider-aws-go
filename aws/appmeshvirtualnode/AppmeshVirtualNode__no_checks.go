@@ -72,6 +72,10 @@ func (j *jsiiProxy_AppmeshVirtualNode) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_AppmeshVirtualNode) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppmeshVirtualNode) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package gluedevendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/gluedevendpoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/gluedevendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_dev_endpoint aws_glue_dev_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/glue_dev_endpoint aws_glue_dev_endpoint}.
 type GlueDevEndpoint interface {
 	cdktf.TerraformResource
 	Arguments() *map[string]*string
@@ -26,9 +26,9 @@ type GlueDevEndpoint interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -246,8 +246,8 @@ func (j *jsiiProxy_GlueDevEndpoint) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_GlueDevEndpoint) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GlueDevEndpoint) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -767,7 +767,7 @@ func (j *jsiiProxy_GlueDevEndpoint) ZeppelinRemoteSparkInterpreterPort() *float6
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/glue_dev_endpoint aws_glue_dev_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/glue_dev_endpoint aws_glue_dev_endpoint} Resource.
 func NewGlueDevEndpoint(scope constructs.Construct, id *string, config *GlueDevEndpointConfig) GlueDevEndpoint {
 	_init_.Initialize()
 
@@ -785,7 +785,7 @@ func NewGlueDevEndpoint(scope constructs.Construct, id *string, config *GlueDevE
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/glue_dev_endpoint aws_glue_dev_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/glue_dev_endpoint aws_glue_dev_endpoint} Resource.
 func NewGlueDevEndpoint_Override(g GlueDevEndpoint, scope constructs.Construct, id *string, config *GlueDevEndpointConfig) {
 	_init_.Initialize()
 
@@ -818,7 +818,10 @@ func (j *jsiiProxy_GlueDevEndpoint)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlueDevEndpoint)SetCount(val *float64) {
+func (j *jsiiProxy_GlueDevEndpoint)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

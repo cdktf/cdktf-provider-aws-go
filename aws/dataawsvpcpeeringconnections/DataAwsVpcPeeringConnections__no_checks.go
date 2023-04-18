@@ -72,6 +72,10 @@ func validateDataAwsVpcPeeringConnections_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpcPeeringConnections) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpcPeeringConnections) validateSetIdParameters(val *string) error {
 	return nil
 }

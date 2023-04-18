@@ -76,6 +76,10 @@ func (j *jsiiProxy_EcrpublicRepository) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_EcrpublicRepository) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcrpublicRepository) validateSetForceDestroyParameters(val interface{}) error {
 	return nil
 }

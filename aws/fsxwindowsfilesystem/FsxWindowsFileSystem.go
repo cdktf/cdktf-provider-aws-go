@@ -2,14 +2,14 @@ package fsxwindowsfilesystem
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/fsxwindowsfilesystem/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/fsxwindowsfilesystem/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/fsx_windows_file_system aws_fsx_windows_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system}.
 type FsxWindowsFileSystem interface {
 	cdktf.TerraformResource
 	ActiveDirectoryId() *string
@@ -39,9 +39,9 @@ type FsxWindowsFileSystem interface {
 	SetCopyTagsToBackups(val interface{})
 	CopyTagsToBackupsInput() interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DailyAutomaticBackupStartTime() *string
 	SetDailyAutomaticBackupStartTime(val *string)
 	DailyAutomaticBackupStartTimeInput() *string
@@ -354,8 +354,8 @@ func (j *jsiiProxy_FsxWindowsFileSystem) CopyTagsToBackupsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_FsxWindowsFileSystem) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -865,7 +865,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem) WeeklyMaintenanceStartTimeInput() *stri
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/fsx_windows_file_system aws_fsx_windows_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system} Resource.
 func NewFsxWindowsFileSystem(scope constructs.Construct, id *string, config *FsxWindowsFileSystemConfig) FsxWindowsFileSystem {
 	_init_.Initialize()
 
@@ -883,7 +883,7 @@ func NewFsxWindowsFileSystem(scope constructs.Construct, id *string, config *Fsx
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/fsx_windows_file_system aws_fsx_windows_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system} Resource.
 func NewFsxWindowsFileSystem_Override(f FsxWindowsFileSystem, scope constructs.Construct, id *string, config *FsxWindowsFileSystemConfig) {
 	_init_.Initialize()
 
@@ -960,7 +960,10 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetCopyTagsToBackups(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem)SetCount(val *float64) {
+func (j *jsiiProxy_FsxWindowsFileSystem)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

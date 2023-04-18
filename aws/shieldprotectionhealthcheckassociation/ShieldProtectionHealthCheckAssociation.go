@@ -2,14 +2,14 @@ package shieldprotectionhealthcheckassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/shieldprotectionhealthcheckassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/shieldprotectionhealthcheckassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/shield_protection_health_check_association aws_shield_protection_health_check_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/shield_protection_health_check_association aws_shield_protection_health_check_association}.
 type ShieldProtectionHealthCheckAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ShieldProtectionHealthCheckAssociation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_ShieldProtectionHealthCheckAssociation) ConstructNodeMetadata
 	return returns
 }
 
-func (j *jsiiProxy_ShieldProtectionHealthCheckAssociation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ShieldProtectionHealthCheckAssociation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_ShieldProtectionHealthCheckAssociation) TerraformResourceType
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/shield_protection_health_check_association aws_shield_protection_health_check_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/shield_protection_health_check_association aws_shield_protection_health_check_association} Resource.
 func NewShieldProtectionHealthCheckAssociation(scope constructs.Construct, id *string, config *ShieldProtectionHealthCheckAssociationConfig) ShieldProtectionHealthCheckAssociation {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewShieldProtectionHealthCheckAssociation(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/shield_protection_health_check_association aws_shield_protection_health_check_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/shield_protection_health_check_association aws_shield_protection_health_check_association} Resource.
 func NewShieldProtectionHealthCheckAssociation_Override(s ShieldProtectionHealthCheckAssociation, scope constructs.Construct, id *string, config *ShieldProtectionHealthCheckAssociationConfig) {
 	_init_.Initialize()
 
@@ -372,7 +372,10 @@ func (j *jsiiProxy_ShieldProtectionHealthCheckAssociation)SetConnection(val inte
 	)
 }
 
-func (j *jsiiProxy_ShieldProtectionHealthCheckAssociation)SetCount(val *float64) {
+func (j *jsiiProxy_ShieldProtectionHealthCheckAssociation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

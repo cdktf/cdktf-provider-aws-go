@@ -2,14 +2,14 @@ package route53keysigningkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/route53keysigningkey/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/route53keysigningkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53_key_signing_key aws_route53_key_signing_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/route53_key_signing_key aws_route53_key_signing_key}.
 type Route53KeySigningKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type Route53KeySigningKey interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -158,8 +158,8 @@ func (j *jsiiProxy_Route53KeySigningKey) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_Route53KeySigningKey) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Route53KeySigningKey) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -489,7 +489,7 @@ func (j *jsiiProxy_Route53KeySigningKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53_key_signing_key aws_route53_key_signing_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/route53_key_signing_key aws_route53_key_signing_key} Resource.
 func NewRoute53KeySigningKey(scope constructs.Construct, id *string, config *Route53KeySigningKeyConfig) Route53KeySigningKey {
 	_init_.Initialize()
 
@@ -507,7 +507,7 @@ func NewRoute53KeySigningKey(scope constructs.Construct, id *string, config *Rou
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53_key_signing_key aws_route53_key_signing_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/route53_key_signing_key aws_route53_key_signing_key} Resource.
 func NewRoute53KeySigningKey_Override(r Route53KeySigningKey, scope constructs.Construct, id *string, config *Route53KeySigningKeyConfig) {
 	_init_.Initialize()
 
@@ -529,7 +529,10 @@ func (j *jsiiProxy_Route53KeySigningKey)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Route53KeySigningKey)SetCount(val *float64) {
+func (j *jsiiProxy_Route53KeySigningKey)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

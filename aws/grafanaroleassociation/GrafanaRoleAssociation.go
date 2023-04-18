@@ -2,14 +2,14 @@ package grafanaroleassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/grafanaroleassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/grafanaroleassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/grafana_role_association aws_grafana_role_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/grafana_role_association aws_grafana_role_association}.
 type GrafanaRoleAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GrafanaRoleAssociation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -153,8 +153,8 @@ func (j *jsiiProxy_GrafanaRoleAssociation) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GrafanaRoleAssociation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -404,7 +404,7 @@ func (j *jsiiProxy_GrafanaRoleAssociation) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/grafana_role_association aws_grafana_role_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/grafana_role_association aws_grafana_role_association} Resource.
 func NewGrafanaRoleAssociation(scope constructs.Construct, id *string, config *GrafanaRoleAssociationConfig) GrafanaRoleAssociation {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewGrafanaRoleAssociation(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/grafana_role_association aws_grafana_role_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/grafana_role_association aws_grafana_role_association} Resource.
 func NewGrafanaRoleAssociation_Override(g GrafanaRoleAssociation, scope constructs.Construct, id *string, config *GrafanaRoleAssociationConfig) {
 	_init_.Initialize()
 
@@ -444,7 +444,10 @@ func (j *jsiiProxy_GrafanaRoleAssociation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GrafanaRoleAssociation)SetCount(val *float64) {
+func (j *jsiiProxy_GrafanaRoleAssociation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

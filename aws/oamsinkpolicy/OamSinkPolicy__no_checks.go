@@ -72,6 +72,10 @@ func (j *jsiiProxy_OamSinkPolicy) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_OamSinkPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OamSinkPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

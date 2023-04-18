@@ -68,6 +68,10 @@ func (j *jsiiProxy_SagemakerStudioLifecycleConfig) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerStudioLifecycleConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerStudioLifecycleConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

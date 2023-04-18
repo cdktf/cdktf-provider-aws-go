@@ -72,6 +72,10 @@ func (j *jsiiProxy_DmsEventSubscription) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_DmsEventSubscription) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsEventSubscription) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

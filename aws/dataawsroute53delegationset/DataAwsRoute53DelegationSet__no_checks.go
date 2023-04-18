@@ -64,6 +64,10 @@ func validateDataAwsRoute53DelegationSet_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRoute53DelegationSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRoute53DelegationSet) validateSetIdParameters(val *string) error {
 	return nil
 }

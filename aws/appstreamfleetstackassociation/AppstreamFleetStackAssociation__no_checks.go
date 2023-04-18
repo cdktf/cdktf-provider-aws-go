@@ -68,6 +68,10 @@ func (j *jsiiProxy_AppstreamFleetStackAssociation) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_AppstreamFleetStackAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppstreamFleetStackAssociation) validateSetFleetNameParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_DxConnectionConfirmation) validateSetConnectionIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DxConnectionConfirmation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DxConnectionConfirmation) validateSetIdParameters(val *string) error {
 	return nil
 }

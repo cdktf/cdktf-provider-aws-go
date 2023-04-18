@@ -76,6 +76,10 @@ func (j *jsiiProxy_DatasyncLocationEfs) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncLocationEfs) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationEfs) validateSetEfsFileSystemArnParameters(val *string) error {
 	return nil
 }

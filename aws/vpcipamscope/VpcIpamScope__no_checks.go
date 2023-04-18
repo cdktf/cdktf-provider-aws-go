@@ -72,6 +72,10 @@ func (j *jsiiProxy_VpcIpamScope) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_VpcIpamScope) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpamScope) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

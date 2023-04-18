@@ -2,14 +2,14 @@ package dataawsebsvolume
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsebsvolume/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsebsvolume/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/ebs_volume aws_ebs_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ebs_volume aws_ebs_volume}.
 type DataAwsEbsVolume interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -19,9 +19,9 @@ type DataAwsEbsVolume interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_DataAwsEbsVolume) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEbsVolume) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsEbsVolume) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -486,7 +486,7 @@ func (j *jsiiProxy_DataAwsEbsVolume) VolumeType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ebs_volume aws_ebs_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ebs_volume aws_ebs_volume} Data Source.
 func NewDataAwsEbsVolume(scope constructs.Construct, id *string, config *DataAwsEbsVolumeConfig) DataAwsEbsVolume {
 	_init_.Initialize()
 
@@ -504,7 +504,7 @@ func NewDataAwsEbsVolume(scope constructs.Construct, id *string, config *DataAws
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ebs_volume aws_ebs_volume} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ebs_volume aws_ebs_volume} Data Source.
 func NewDataAwsEbsVolume_Override(d DataAwsEbsVolume, scope constructs.Construct, id *string, config *DataAwsEbsVolumeConfig) {
 	_init_.Initialize()
 
@@ -515,7 +515,10 @@ func NewDataAwsEbsVolume_Override(d DataAwsEbsVolume, scope constructs.Construct
 	)
 }
 
-func (j *jsiiProxy_DataAwsEbsVolume)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsEbsVolume)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

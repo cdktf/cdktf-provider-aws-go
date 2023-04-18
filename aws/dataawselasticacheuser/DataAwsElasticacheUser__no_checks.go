@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAwsElasticacheUser) validateSetAccessStringParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsElasticacheUser) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsElasticacheUser) validateSetEngineParameters(val *string) error {
 	return nil
 }

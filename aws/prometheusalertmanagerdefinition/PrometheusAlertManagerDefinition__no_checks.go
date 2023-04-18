@@ -68,6 +68,10 @@ func (j *jsiiProxy_PrometheusAlertManagerDefinition) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_PrometheusAlertManagerDefinition) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrometheusAlertManagerDefinition) validateSetDefinitionParameters(val *string) error {
 	return nil
 }

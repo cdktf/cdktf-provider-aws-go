@@ -72,6 +72,10 @@ func validateDataAwsVpcDhcpOptions_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpcDhcpOptions) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpcDhcpOptions) validateSetDhcpOptionsIdParameters(val *string) error {
 	return nil
 }

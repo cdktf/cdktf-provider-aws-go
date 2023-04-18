@@ -68,6 +68,10 @@ func validateDataAwsResourcegroupstaggingapiResources_IsTerraformElementParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResources) validateSetExcludeCompliantResourcesParameters(val interface{}) error {
 	return nil
 }

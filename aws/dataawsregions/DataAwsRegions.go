@@ -2,14 +2,14 @@ package dataawsregions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsregions/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsregions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/regions aws_regions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/regions aws_regions}.
 type DataAwsRegions interface {
 	cdktf.TerraformDataSource
 	AllRegions() interface{}
@@ -20,9 +20,9 @@ type DataAwsRegions interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DataAwsRegions) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRegions) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsRegions) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataAwsRegions) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/regions aws_regions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/regions aws_regions} Data Source.
 func NewDataAwsRegions(scope constructs.Construct, id *string, config *DataAwsRegionsConfig) DataAwsRegions {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataAwsRegions(scope constructs.Construct, id *string, config *DataAwsRe
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/regions aws_regions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/regions aws_regions} Data Source.
 func NewDataAwsRegions_Override(d DataAwsRegions, scope constructs.Construct, id *string, config *DataAwsRegionsConfig) {
 	_init_.Initialize()
 
@@ -357,7 +357,10 @@ func (j *jsiiProxy_DataAwsRegions)SetAllRegions(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRegions)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsRegions)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

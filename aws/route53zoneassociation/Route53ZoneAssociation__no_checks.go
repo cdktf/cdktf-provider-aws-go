@@ -68,6 +68,10 @@ func (j *jsiiProxy_Route53ZoneAssociation) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_Route53ZoneAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53ZoneAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

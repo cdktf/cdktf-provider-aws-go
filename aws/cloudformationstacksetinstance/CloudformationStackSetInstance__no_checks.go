@@ -88,6 +88,10 @@ func (j *jsiiProxy_CloudformationStackSetInstance) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_CloudformationStackSetInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudformationStackSetInstance) validateSetIdParameters(val *string) error {
 	return nil
 }

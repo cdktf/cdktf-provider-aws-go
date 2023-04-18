@@ -72,6 +72,10 @@ func (j *jsiiProxy_SecurityhubOrganizationAdminAccount) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_SecurityhubOrganizationAdminAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityhubOrganizationAdminAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

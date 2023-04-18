@@ -92,6 +92,10 @@ func (j *jsiiProxy_DxHostedPublicVirtualInterface) validateSetConnectionIdParame
 	return nil
 }
 
+func (j *jsiiProxy_DxHostedPublicVirtualInterface) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DxHostedPublicVirtualInterface) validateSetCustomerAddressParameters(val *string) error {
 	return nil
 }

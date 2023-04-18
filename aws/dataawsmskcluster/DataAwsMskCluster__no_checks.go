@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsMskCluster) validateSetClusterNameParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsMskCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsMskCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package cloud9environmentec2
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/cloud9environmentec2/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloud9environmentec2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloud9_environment_ec2 aws_cloud9_environment_ec2}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloud9_environment_ec2 aws_cloud9_environment_ec2}.
 type Cloud9EnvironmentEc2 interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -28,9 +28,9 @@ type Cloud9EnvironmentEc2 interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -225,8 +225,8 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Cloud9EnvironmentEc2) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -546,7 +546,7 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2) Type() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloud9_environment_ec2 aws_cloud9_environment_ec2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloud9_environment_ec2 aws_cloud9_environment_ec2} Resource.
 func NewCloud9EnvironmentEc2(scope constructs.Construct, id *string, config *Cloud9EnvironmentEc2Config) Cloud9EnvironmentEc2 {
 	_init_.Initialize()
 
@@ -564,7 +564,7 @@ func NewCloud9EnvironmentEc2(scope constructs.Construct, id *string, config *Clo
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloud9_environment_ec2 aws_cloud9_environment_ec2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloud9_environment_ec2 aws_cloud9_environment_ec2} Resource.
 func NewCloud9EnvironmentEc2_Override(c Cloud9EnvironmentEc2, scope constructs.Construct, id *string, config *Cloud9EnvironmentEc2Config) {
 	_init_.Initialize()
 
@@ -608,7 +608,10 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2)SetConnectionType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentEc2)SetCount(val *float64) {
+func (j *jsiiProxy_Cloud9EnvironmentEc2)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

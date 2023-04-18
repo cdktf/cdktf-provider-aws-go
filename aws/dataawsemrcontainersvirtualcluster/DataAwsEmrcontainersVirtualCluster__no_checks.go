@@ -64,6 +64,10 @@ func validateDataAwsEmrcontainersVirtualCluster_IsTerraformElementParameters(x i
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEmrcontainersVirtualCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEmrcontainersVirtualCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

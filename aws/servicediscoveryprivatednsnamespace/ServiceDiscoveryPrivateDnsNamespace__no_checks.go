@@ -68,6 +68,10 @@ func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceDiscoveryPrivateDnsNamespace) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_LightsailLbCertificateAttachment) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_LightsailLbCertificateAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailLbCertificateAttachment) validateSetIdParameters(val *string) error {
 	return nil
 }

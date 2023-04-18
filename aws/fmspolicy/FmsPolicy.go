@@ -2,14 +2,14 @@ package fmspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/fmspolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/fmspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/fms_policy aws_fms_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/fms_policy aws_fms_policy}.
 type FmsPolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type FmsPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DeleteAllPolicyResources() interface{}
 	SetDeleteAllPolicyResources(val interface{})
 	DeleteAllPolicyResourcesInput() interface{}
@@ -200,8 +200,8 @@ func (j *jsiiProxy_FmsPolicy) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_FmsPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_FmsPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -641,7 +641,7 @@ func (j *jsiiProxy_FmsPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/fms_policy aws_fms_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/fms_policy aws_fms_policy} Resource.
 func NewFmsPolicy(scope constructs.Construct, id *string, config *FmsPolicyConfig) FmsPolicy {
 	_init_.Initialize()
 
@@ -659,7 +659,7 @@ func NewFmsPolicy(scope constructs.Construct, id *string, config *FmsPolicyConfi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/fms_policy aws_fms_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/fms_policy aws_fms_policy} Resource.
 func NewFmsPolicy_Override(f FmsPolicy, scope constructs.Construct, id *string, config *FmsPolicyConfig) {
 	_init_.Initialize()
 
@@ -681,7 +681,10 @@ func (j *jsiiProxy_FmsPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_FmsPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_FmsPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

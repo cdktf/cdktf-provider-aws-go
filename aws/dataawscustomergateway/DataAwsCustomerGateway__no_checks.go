@@ -72,6 +72,10 @@ func validateDataAwsCustomerGateway_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCustomerGateway) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCustomerGateway) validateSetIdParameters(val *string) error {
 	return nil
 }

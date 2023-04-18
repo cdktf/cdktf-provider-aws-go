@@ -2,14 +2,14 @@ package dataawsimagebuilderinfrastructureconfigurations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsimagebuilderinfrastructureconfigurations/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsimagebuilderinfrastructureconfigurations/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_infrastructure_configurations aws_imagebuilder_infrastructure_configurations}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/imagebuilder_infrastructure_configurations aws_imagebuilder_infrastructure_configurations}.
 type DataAwsImagebuilderInfrastructureConfigurations interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -18,9 +18,9 @@ type DataAwsImagebuilderInfrastructureConfigurations interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -133,8 +133,8 @@ func (j *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurations) ConstructNod
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurations) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurations) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -304,7 +304,7 @@ func (j *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurations) TerraformRes
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_infrastructure_configurations aws_imagebuilder_infrastructure_configurations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/imagebuilder_infrastructure_configurations aws_imagebuilder_infrastructure_configurations} Data Source.
 func NewDataAwsImagebuilderInfrastructureConfigurations(scope constructs.Construct, id *string, config *DataAwsImagebuilderInfrastructureConfigurationsConfig) DataAwsImagebuilderInfrastructureConfigurations {
 	_init_.Initialize()
 
@@ -322,7 +322,7 @@ func NewDataAwsImagebuilderInfrastructureConfigurations(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_infrastructure_configurations aws_imagebuilder_infrastructure_configurations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/imagebuilder_infrastructure_configurations aws_imagebuilder_infrastructure_configurations} Data Source.
 func NewDataAwsImagebuilderInfrastructureConfigurations_Override(d DataAwsImagebuilderInfrastructureConfigurations, scope constructs.Construct, id *string, config *DataAwsImagebuilderInfrastructureConfigurationsConfig) {
 	_init_.Initialize()
 
@@ -333,7 +333,10 @@ func NewDataAwsImagebuilderInfrastructureConfigurations_Override(d DataAwsImageb
 	)
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurations)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurations)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

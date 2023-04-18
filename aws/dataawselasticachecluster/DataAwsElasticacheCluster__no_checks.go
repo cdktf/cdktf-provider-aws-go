@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsElasticacheCluster) validateSetClusterIdParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsElasticacheCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsElasticacheCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

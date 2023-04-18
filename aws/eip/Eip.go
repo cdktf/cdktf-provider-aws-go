@@ -2,14 +2,14 @@ package eip
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/eip/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/eip/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/eip aws_eip}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/eip aws_eip}.
 type Eip interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -30,9 +30,9 @@ type Eip interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomerOwnedIp() *string
 	CustomerOwnedIpv4Pool() *string
 	SetCustomerOwnedIpv4Pool(val *string)
@@ -258,8 +258,8 @@ func (j *jsiiProxy_Eip) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Eip) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Eip) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -649,7 +649,7 @@ func (j *jsiiProxy_Eip) VpcInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/eip aws_eip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/eip aws_eip} Resource.
 func NewEip(scope constructs.Construct, id *string, config *EipConfig) Eip {
 	_init_.Initialize()
 
@@ -667,7 +667,7 @@ func NewEip(scope constructs.Construct, id *string, config *EipConfig) Eip {
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/eip aws_eip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/eip aws_eip} Resource.
 func NewEip_Override(e Eip, scope constructs.Construct, id *string, config *EipConfig) {
 	_init_.Initialize()
 
@@ -711,7 +711,10 @@ func (j *jsiiProxy_Eip)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Eip)SetCount(val *float64) {
+func (j *jsiiProxy_Eip)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

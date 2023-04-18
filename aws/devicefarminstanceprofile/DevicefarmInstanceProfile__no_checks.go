@@ -68,6 +68,10 @@ func (j *jsiiProxy_DevicefarmInstanceProfile) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DevicefarmInstanceProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicefarmInstanceProfile) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -2,7 +2,7 @@ package dbclustersnapshot
 
 
 type DbClusterSnapshotTimeouts struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/db_cluster_snapshot#create DbClusterSnapshot#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/db_cluster_snapshot#create DbClusterSnapshot#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

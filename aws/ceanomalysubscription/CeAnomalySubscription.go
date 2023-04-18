@@ -2,14 +2,14 @@ package ceanomalysubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/ceanomalysubscription/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ceanomalysubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ce_anomaly_subscription aws_ce_anomaly_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ce_anomaly_subscription aws_ce_anomaly_subscription}.
 type CeAnomalySubscription interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -25,9 +25,9 @@ type CeAnomalySubscription interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -198,8 +198,8 @@ func (j *jsiiProxy_CeAnomalySubscription) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_CeAnomalySubscription) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CeAnomalySubscription) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -509,7 +509,7 @@ func (j *jsiiProxy_CeAnomalySubscription) ThresholdInput() *float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ce_anomaly_subscription aws_ce_anomaly_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ce_anomaly_subscription aws_ce_anomaly_subscription} Resource.
 func NewCeAnomalySubscription(scope constructs.Construct, id *string, config *CeAnomalySubscriptionConfig) CeAnomalySubscription {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewCeAnomalySubscription(scope constructs.Construct, id *string, config *Ce
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ce_anomaly_subscription aws_ce_anomaly_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ce_anomaly_subscription aws_ce_anomaly_subscription} Resource.
 func NewCeAnomalySubscription_Override(c CeAnomalySubscription, scope constructs.Construct, id *string, config *CeAnomalySubscriptionConfig) {
 	_init_.Initialize()
 
@@ -560,7 +560,10 @@ func (j *jsiiProxy_CeAnomalySubscription)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CeAnomalySubscription)SetCount(val *float64) {
+func (j *jsiiProxy_CeAnomalySubscription)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

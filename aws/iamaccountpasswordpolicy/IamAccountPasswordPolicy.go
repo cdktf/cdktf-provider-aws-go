@@ -2,14 +2,14 @@ package iamaccountpasswordpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/iamaccountpasswordpolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/iamaccountpasswordpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/iam_account_password_policy aws_iam_account_password_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_account_password_policy aws_iam_account_password_policy}.
 type IamAccountPasswordPolicy interface {
 	cdktf.TerraformResource
 	AllowUsersToChangePassword() interface{}
@@ -24,9 +24,9 @@ type IamAccountPasswordPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -192,8 +192,8 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IamAccountPasswordPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -513,7 +513,7 @@ func (j *jsiiProxy_IamAccountPasswordPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/iam_account_password_policy aws_iam_account_password_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_account_password_policy aws_iam_account_password_policy} Resource.
 func NewIamAccountPasswordPolicy(scope constructs.Construct, id *string, config *IamAccountPasswordPolicyConfig) IamAccountPasswordPolicy {
 	_init_.Initialize()
 
@@ -531,7 +531,7 @@ func NewIamAccountPasswordPolicy(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/iam_account_password_policy aws_iam_account_password_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iam_account_password_policy aws_iam_account_password_policy} Resource.
 func NewIamAccountPasswordPolicy_Override(i IamAccountPasswordPolicy, scope constructs.Construct, id *string, config *IamAccountPasswordPolicyConfig) {
 	_init_.Initialize()
 
@@ -564,7 +564,10 @@ func (j *jsiiProxy_IamAccountPasswordPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IamAccountPasswordPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_IamAccountPasswordPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

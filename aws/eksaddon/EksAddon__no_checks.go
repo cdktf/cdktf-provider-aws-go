@@ -88,6 +88,10 @@ func (j *jsiiProxy_EksAddon) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_EksAddon) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EksAddon) validateSetIdParameters(val *string) error {
 	return nil
 }

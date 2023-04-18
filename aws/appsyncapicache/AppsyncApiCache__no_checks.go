@@ -80,6 +80,10 @@ func (j *jsiiProxy_AppsyncApiCache) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_AppsyncApiCache) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncApiCache) validateSetIdParameters(val *string) error {
 	return nil
 }

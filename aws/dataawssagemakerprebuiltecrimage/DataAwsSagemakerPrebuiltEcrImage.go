@@ -2,14 +2,14 @@ package dataawssagemakerprebuiltecrimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawssagemakerprebuiltecrimage/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssagemakerprebuiltecrimage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/sagemaker_prebuilt_ecr_image aws_sagemaker_prebuilt_ecr_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/sagemaker_prebuilt_ecr_image aws_sagemaker_prebuilt_ecr_image}.
 type DataAwsSagemakerPrebuiltEcrImage interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAwsSagemakerPrebuiltEcrImage interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -134,8 +134,8 @@ func (j *jsiiProxy_DataAwsSagemakerPrebuiltEcrImage) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSagemakerPrebuiltEcrImage) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsSagemakerPrebuiltEcrImage) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -375,7 +375,7 @@ func (j *jsiiProxy_DataAwsSagemakerPrebuiltEcrImage) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/sagemaker_prebuilt_ecr_image aws_sagemaker_prebuilt_ecr_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/sagemaker_prebuilt_ecr_image aws_sagemaker_prebuilt_ecr_image} Data Source.
 func NewDataAwsSagemakerPrebuiltEcrImage(scope constructs.Construct, id *string, config *DataAwsSagemakerPrebuiltEcrImageConfig) DataAwsSagemakerPrebuiltEcrImage {
 	_init_.Initialize()
 
@@ -393,7 +393,7 @@ func NewDataAwsSagemakerPrebuiltEcrImage(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/sagemaker_prebuilt_ecr_image aws_sagemaker_prebuilt_ecr_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/sagemaker_prebuilt_ecr_image aws_sagemaker_prebuilt_ecr_image} Data Source.
 func NewDataAwsSagemakerPrebuiltEcrImage_Override(d DataAwsSagemakerPrebuiltEcrImage, scope constructs.Construct, id *string, config *DataAwsSagemakerPrebuiltEcrImageConfig) {
 	_init_.Initialize()
 
@@ -404,7 +404,10 @@ func NewDataAwsSagemakerPrebuiltEcrImage_Override(d DataAwsSagemakerPrebuiltEcrI
 	)
 }
 
-func (j *jsiiProxy_DataAwsSagemakerPrebuiltEcrImage)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsSagemakerPrebuiltEcrImage)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

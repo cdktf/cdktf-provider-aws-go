@@ -2,14 +2,14 @@ package redshiftdatastatement
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/redshiftdatastatement/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/redshiftdatastatement/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/redshiftdata_statement aws_redshiftdata_statement}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/redshiftdata_statement aws_redshiftdata_statement}.
 type RedshiftdataStatement interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type RedshiftdataStatement interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Database() *string
 	SetDatabase(val *string)
 	DatabaseInput() *string
@@ -193,8 +193,8 @@ func (j *jsiiProxy_RedshiftdataStatement) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftdataStatement) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_RedshiftdataStatement) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -524,7 +524,7 @@ func (j *jsiiProxy_RedshiftdataStatement) WorkgroupNameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/redshiftdata_statement aws_redshiftdata_statement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/redshiftdata_statement aws_redshiftdata_statement} Resource.
 func NewRedshiftdataStatement(scope constructs.Construct, id *string, config *RedshiftdataStatementConfig) RedshiftdataStatement {
 	_init_.Initialize()
 
@@ -542,7 +542,7 @@ func NewRedshiftdataStatement(scope constructs.Construct, id *string, config *Re
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/redshiftdata_statement aws_redshiftdata_statement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/redshiftdata_statement aws_redshiftdata_statement} Resource.
 func NewRedshiftdataStatement_Override(r RedshiftdataStatement, scope constructs.Construct, id *string, config *RedshiftdataStatementConfig) {
 	_init_.Initialize()
 
@@ -575,7 +575,10 @@ func (j *jsiiProxy_RedshiftdataStatement)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftdataStatement)SetCount(val *float64) {
+func (j *jsiiProxy_RedshiftdataStatement)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

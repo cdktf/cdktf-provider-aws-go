@@ -72,6 +72,10 @@ func (j *jsiiProxy_DxHostedTransitVirtualInterfaceAccepter) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_DxHostedTransitVirtualInterfaceAccepter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DxHostedTransitVirtualInterfaceAccepter) validateSetDxGatewayIdParameters(val *string) error {
 	return nil
 }

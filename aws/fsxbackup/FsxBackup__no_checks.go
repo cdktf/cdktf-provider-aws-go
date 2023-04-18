@@ -72,6 +72,10 @@ func (j *jsiiProxy_FsxBackup) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_FsxBackup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxBackup) validateSetFileSystemIdParameters(val *string) error {
 	return nil
 }

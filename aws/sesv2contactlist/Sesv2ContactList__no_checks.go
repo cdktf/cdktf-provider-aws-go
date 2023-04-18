@@ -76,6 +76,10 @@ func (j *jsiiProxy_Sesv2ContactList) validateSetContactListNameParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_Sesv2ContactList) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Sesv2ContactList) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

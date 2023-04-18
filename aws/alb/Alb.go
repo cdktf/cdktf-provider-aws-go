@@ -2,14 +2,14 @@ package alb
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/alb/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/alb/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/alb aws_alb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/alb aws_alb}.
 type Alb interface {
 	cdktf.TerraformResource
 	AccessLogs() AlbAccessLogsOutputReference
@@ -25,9 +25,9 @@ type Alb interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomerOwnedIpv4Pool() *string
 	SetCustomerOwnedIpv4Pool(val *string)
 	CustomerOwnedIpv4PoolInput() *string
@@ -276,8 +276,8 @@ func (j *jsiiProxy_Alb) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Alb) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Alb) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -917,7 +917,7 @@ func (j *jsiiProxy_Alb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/alb aws_alb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/alb aws_alb} Resource.
 func NewAlb(scope constructs.Construct, id *string, config *AlbConfig) Alb {
 	_init_.Initialize()
 
@@ -935,7 +935,7 @@ func NewAlb(scope constructs.Construct, id *string, config *AlbConfig) Alb {
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/alb aws_alb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/alb aws_alb} Resource.
 func NewAlb_Override(a Alb, scope constructs.Construct, id *string, config *AlbConfig) {
 	_init_.Initialize()
 
@@ -957,7 +957,10 @@ func (j *jsiiProxy_Alb)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Alb)SetCount(val *float64) {
+func (j *jsiiProxy_Alb)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

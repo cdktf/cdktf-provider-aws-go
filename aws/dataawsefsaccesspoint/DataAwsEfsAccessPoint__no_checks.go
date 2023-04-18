@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsEfsAccessPoint) validateSetAccessPointIdParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEfsAccessPoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEfsAccessPoint) validateSetIdParameters(val *string) error {
 	return nil
 }

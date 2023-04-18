@@ -2,14 +2,14 @@ package lightsaildistribution
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/lightsaildistribution/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/lightsaildistribution/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/lightsail_distribution aws_lightsail_distribution}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lightsail_distribution aws_lightsail_distribution}.
 type LightsailDistribution interface {
 	cdktf.TerraformResource
 	AlternativeDomainNames() *[]*string
@@ -33,9 +33,9 @@ type LightsailDistribution interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	DefaultCacheBehavior() LightsailDistributionDefaultCacheBehaviorOutputReference
 	DefaultCacheBehaviorInput() *LightsailDistributionDefaultCacheBehavior
@@ -288,8 +288,8 @@ func (j *jsiiProxy_LightsailDistribution) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_LightsailDistribution) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LightsailDistribution) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -669,7 +669,7 @@ func (j *jsiiProxy_LightsailDistribution) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lightsail_distribution aws_lightsail_distribution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lightsail_distribution aws_lightsail_distribution} Resource.
 func NewLightsailDistribution(scope constructs.Construct, id *string, config *LightsailDistributionConfig) LightsailDistribution {
 	_init_.Initialize()
 
@@ -687,7 +687,7 @@ func NewLightsailDistribution(scope constructs.Construct, id *string, config *Li
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lightsail_distribution aws_lightsail_distribution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lightsail_distribution aws_lightsail_distribution} Resource.
 func NewLightsailDistribution_Override(l LightsailDistribution, scope constructs.Construct, id *string, config *LightsailDistributionConfig) {
 	_init_.Initialize()
 
@@ -731,7 +731,10 @@ func (j *jsiiProxy_LightsailDistribution)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LightsailDistribution)SetCount(val *float64) {
+func (j *jsiiProxy_LightsailDistribution)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

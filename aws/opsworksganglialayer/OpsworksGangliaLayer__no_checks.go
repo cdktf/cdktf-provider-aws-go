@@ -92,6 +92,10 @@ func (j *jsiiProxy_OpsworksGangliaLayer) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_OpsworksGangliaLayer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpsworksGangliaLayer) validateSetCustomConfigureRecipesParameters(val *[]*string) error {
 	return nil
 }

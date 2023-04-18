@@ -92,6 +92,10 @@ func (j *jsiiProxy_Apigatewayv2Integration) validateSetContentHandlingStrategyPa
 	return nil
 }
 
+func (j *jsiiProxy_Apigatewayv2Integration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2Integration) validateSetCredentialsArnParameters(val *string) error {
 	return nil
 }

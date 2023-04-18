@@ -100,6 +100,10 @@ func (j *jsiiProxy_QuicksightAccountSubscription) validateSetContactNumberParame
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightAccountSubscription) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightAccountSubscription) validateSetDirectoryIdParameters(val *string) error {
 	return nil
 }

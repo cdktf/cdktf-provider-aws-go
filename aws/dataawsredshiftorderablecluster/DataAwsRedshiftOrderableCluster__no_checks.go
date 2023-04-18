@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAwsRedshiftOrderableCluster) validateSetClusterVersionPar
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRedshiftOrderableCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRedshiftOrderableCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

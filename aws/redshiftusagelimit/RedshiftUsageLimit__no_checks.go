@@ -80,6 +80,10 @@ func (j *jsiiProxy_RedshiftUsageLimit) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftUsageLimit) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftUsageLimit) validateSetFeatureTypeParameters(val *string) error {
 	return nil
 }

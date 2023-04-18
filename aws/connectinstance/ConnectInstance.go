@@ -2,14 +2,14 @@ package connectinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/connectinstance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/connectinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/connect_instance aws_connect_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/connect_instance aws_connect_instance}.
 type ConnectInstance interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -31,9 +31,9 @@ type ConnectInstance interface {
 	SetContactLensEnabled(val interface{})
 	ContactLensEnabledInput() interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -250,8 +250,8 @@ func (j *jsiiProxy_ConnectInstance) ContactLensEnabledInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstance) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ConnectInstance) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -591,7 +591,7 @@ func (j *jsiiProxy_ConnectInstance) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/connect_instance aws_connect_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/connect_instance aws_connect_instance} Resource.
 func NewConnectInstance(scope constructs.Construct, id *string, config *ConnectInstanceConfig) ConnectInstance {
 	_init_.Initialize()
 
@@ -609,7 +609,7 @@ func NewConnectInstance(scope constructs.Construct, id *string, config *ConnectI
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/connect_instance aws_connect_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/connect_instance aws_connect_instance} Resource.
 func NewConnectInstance_Override(c ConnectInstance, scope constructs.Construct, id *string, config *ConnectInstanceConfig) {
 	_init_.Initialize()
 
@@ -664,7 +664,10 @@ func (j *jsiiProxy_ConnectInstance)SetContactLensEnabled(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConnectInstance)SetCount(val *float64) {
+func (j *jsiiProxy_ConnectInstance)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

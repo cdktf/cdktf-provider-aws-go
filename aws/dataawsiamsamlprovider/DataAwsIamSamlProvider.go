@@ -2,14 +2,14 @@ package dataawsiamsamlprovider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsiamsamlprovider/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsiamsamlprovider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/iam_saml_provider aws_iam_saml_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/iam_saml_provider aws_iam_saml_provider}.
 type DataAwsIamSamlProvider interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -20,9 +20,9 @@ type DataAwsIamSamlProvider interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -148,8 +148,8 @@ func (j *jsiiProxy_DataAwsIamSamlProvider) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIamSamlProvider) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsIamSamlProvider) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -349,7 +349,7 @@ func (j *jsiiProxy_DataAwsIamSamlProvider) ValidUntil() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/iam_saml_provider aws_iam_saml_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/iam_saml_provider aws_iam_saml_provider} Data Source.
 func NewDataAwsIamSamlProvider(scope constructs.Construct, id *string, config *DataAwsIamSamlProviderConfig) DataAwsIamSamlProvider {
 	_init_.Initialize()
 
@@ -367,7 +367,7 @@ func NewDataAwsIamSamlProvider(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/iam_saml_provider aws_iam_saml_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/iam_saml_provider aws_iam_saml_provider} Data Source.
 func NewDataAwsIamSamlProvider_Override(d DataAwsIamSamlProvider, scope constructs.Construct, id *string, config *DataAwsIamSamlProviderConfig) {
 	_init_.Initialize()
 
@@ -389,7 +389,10 @@ func (j *jsiiProxy_DataAwsIamSamlProvider)SetArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsIamSamlProvider)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsIamSamlProvider)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

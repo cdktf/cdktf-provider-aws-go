@@ -84,6 +84,10 @@ func (j *jsiiProxy_LexBotAlias) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_LexBotAlias) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LexBotAlias) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

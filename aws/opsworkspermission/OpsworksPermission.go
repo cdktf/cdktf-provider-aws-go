@@ -2,14 +2,14 @@ package opsworkspermission
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/opsworkspermission/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/opsworkspermission/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/opsworks_permission aws_opsworks_permission}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opsworks_permission aws_opsworks_permission}.
 type OpsworksPermission interface {
 	cdktf.TerraformResource
 	AllowSsh() interface{}
@@ -27,9 +27,9 @@ type OpsworksPermission interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -193,8 +193,8 @@ func (j *jsiiProxy_OpsworksPermission) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksPermission) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OpsworksPermission) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -404,7 +404,7 @@ func (j *jsiiProxy_OpsworksPermission) UserArnInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/opsworks_permission aws_opsworks_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opsworks_permission aws_opsworks_permission} Resource.
 func NewOpsworksPermission(scope constructs.Construct, id *string, config *OpsworksPermissionConfig) OpsworksPermission {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewOpsworksPermission(scope constructs.Construct, id *string, config *Opswo
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/opsworks_permission aws_opsworks_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opsworks_permission aws_opsworks_permission} Resource.
 func NewOpsworksPermission_Override(o OpsworksPermission, scope constructs.Construct, id *string, config *OpsworksPermissionConfig) {
 	_init_.Initialize()
 
@@ -466,7 +466,10 @@ func (j *jsiiProxy_OpsworksPermission)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksPermission)SetCount(val *float64) {
+func (j *jsiiProxy_OpsworksPermission)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

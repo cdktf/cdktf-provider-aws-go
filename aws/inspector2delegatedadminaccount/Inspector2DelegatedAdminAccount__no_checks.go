@@ -76,6 +76,10 @@ func (j *jsiiProxy_Inspector2DelegatedAdminAccount) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_Inspector2DelegatedAdminAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Inspector2DelegatedAdminAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_CodecommitTrigger) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_CodecommitTrigger) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodecommitTrigger) validateSetIdParameters(val *string) error {
 	return nil
 }

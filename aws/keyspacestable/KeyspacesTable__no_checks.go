@@ -96,6 +96,10 @@ func (j *jsiiProxy_KeyspacesTable) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_KeyspacesTable) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KeyspacesTable) validateSetDefaultTimeToLiveParameters(val *float64) error {
 	return nil
 }

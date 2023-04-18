@@ -64,6 +64,10 @@ func validateDataAwsGrafanaWorkspace_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsGrafanaWorkspace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsGrafanaWorkspace) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_Sesv2EmailIdentity) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_Sesv2EmailIdentity) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Sesv2EmailIdentity) validateSetEmailIdentityParameters(val *string) error {
 	return nil
 }

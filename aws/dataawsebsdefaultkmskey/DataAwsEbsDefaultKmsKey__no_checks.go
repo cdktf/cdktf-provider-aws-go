@@ -68,6 +68,10 @@ func validateDataAwsEbsDefaultKmsKey_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_Vpc) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Vpc) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Vpc) validateSetEnableClassiclinkParameters(val interface{}) error {
 	return nil
 }

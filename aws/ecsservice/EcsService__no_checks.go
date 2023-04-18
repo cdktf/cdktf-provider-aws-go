@@ -116,6 +116,10 @@ func (j *jsiiProxy_EcsService) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_EcsService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsService) validateSetDeploymentMaximumPercentParameters(val *float64) error {
 	return nil
 }

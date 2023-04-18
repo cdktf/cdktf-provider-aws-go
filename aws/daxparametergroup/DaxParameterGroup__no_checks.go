@@ -72,6 +72,10 @@ func (j *jsiiProxy_DaxParameterGroup) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_DaxParameterGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DaxParameterGroup) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

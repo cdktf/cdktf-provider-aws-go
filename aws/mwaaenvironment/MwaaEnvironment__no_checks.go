@@ -88,6 +88,10 @@ func (j *jsiiProxy_MwaaEnvironment) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_MwaaEnvironment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwaaEnvironment) validateSetDagS3PathParameters(val *string) error {
 	return nil
 }

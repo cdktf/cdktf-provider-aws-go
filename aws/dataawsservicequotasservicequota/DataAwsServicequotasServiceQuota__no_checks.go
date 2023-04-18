@@ -64,6 +64,10 @@ func validateDataAwsServicequotasServiceQuota_IsTerraformElementParameters(x int
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsServicequotasServiceQuota) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsServicequotasServiceQuota) validateSetIdParameters(val *string) error {
 	return nil
 }

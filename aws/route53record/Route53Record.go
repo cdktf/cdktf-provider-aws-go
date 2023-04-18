@@ -2,14 +2,14 @@ package route53record
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/route53record/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/route53record/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53_record aws_route53_record}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/route53_record aws_route53_record}.
 type Route53Record interface {
 	cdktf.TerraformResource
 	Alias() Route53RecordAliasOutputReference
@@ -28,9 +28,9 @@ type Route53Record interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -253,8 +253,8 @@ func (j *jsiiProxy_Route53Record) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_Route53Record) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Route53Record) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -654,7 +654,7 @@ func (j *jsiiProxy_Route53Record) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53_record aws_route53_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/route53_record aws_route53_record} Resource.
 func NewRoute53Record(scope constructs.Construct, id *string, config *Route53RecordConfig) Route53Record {
 	_init_.Initialize()
 
@@ -672,7 +672,7 @@ func NewRoute53Record(scope constructs.Construct, id *string, config *Route53Rec
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53_record aws_route53_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/route53_record aws_route53_record} Resource.
 func NewRoute53Record_Override(r Route53Record, scope constructs.Construct, id *string, config *Route53RecordConfig) {
 	_init_.Initialize()
 
@@ -705,7 +705,10 @@ func (j *jsiiProxy_Route53Record)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Route53Record)SetCount(val *float64) {
+func (j *jsiiProxy_Route53Record)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

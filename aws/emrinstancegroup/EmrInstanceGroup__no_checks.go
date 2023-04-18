@@ -88,6 +88,10 @@ func (j *jsiiProxy_EmrInstanceGroup) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_EmrInstanceGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrInstanceGroup) validateSetEbsOptimizedParameters(val interface{}) error {
 	return nil
 }

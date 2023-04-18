@@ -2,14 +2,14 @@ package backupglobalsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/backupglobalsettings/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/backupglobalsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/backup_global_settings aws_backup_global_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/backup_global_settings aws_backup_global_settings}.
 type BackupGlobalSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type BackupGlobalSettings interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -138,8 +138,8 @@ func (j *jsiiProxy_BackupGlobalSettings) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_BackupGlobalSettings) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_BackupGlobalSettings) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -309,7 +309,7 @@ func (j *jsiiProxy_BackupGlobalSettings) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/backup_global_settings aws_backup_global_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/backup_global_settings aws_backup_global_settings} Resource.
 func NewBackupGlobalSettings(scope constructs.Construct, id *string, config *BackupGlobalSettingsConfig) BackupGlobalSettings {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewBackupGlobalSettings(scope constructs.Construct, id *string, config *Bac
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/backup_global_settings aws_backup_global_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/backup_global_settings aws_backup_global_settings} Resource.
 func NewBackupGlobalSettings_Override(b BackupGlobalSettings, scope constructs.Construct, id *string, config *BackupGlobalSettingsConfig) {
 	_init_.Initialize()
 
@@ -349,7 +349,10 @@ func (j *jsiiProxy_BackupGlobalSettings)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BackupGlobalSettings)SetCount(val *float64) {
+func (j *jsiiProxy_BackupGlobalSettings)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

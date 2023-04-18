@@ -68,6 +68,10 @@ func (j *jsiiProxy_CodebuildResourcePolicy) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_CodebuildResourcePolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodebuildResourcePolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

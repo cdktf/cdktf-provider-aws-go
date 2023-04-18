@@ -2,14 +2,14 @@ package dataawsroute53resolverfirewalldomainlist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsroute53resolverfirewalldomainlist/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsroute53resolverfirewalldomainlist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list}.
 type DataAwsRoute53ResolverFirewallDomainList interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -18,9 +18,9 @@ type DataAwsRoute53ResolverFirewallDomainList interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreationTime() *string
 	CreatorRequestId() *string
 	// Experimental.
@@ -139,8 +139,8 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallDomainList) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRoute53ResolverFirewallDomainList) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallDomainList) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -380,7 +380,7 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallDomainList) TerraformResourceTy
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list} Data Source.
 func NewDataAwsRoute53ResolverFirewallDomainList(scope constructs.Construct, id *string, config *DataAwsRoute53ResolverFirewallDomainListConfig) DataAwsRoute53ResolverFirewallDomainList {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewDataAwsRoute53ResolverFirewallDomainList(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list} Data Source.
 func NewDataAwsRoute53ResolverFirewallDomainList_Override(d DataAwsRoute53ResolverFirewallDomainList, scope constructs.Construct, id *string, config *DataAwsRoute53ResolverFirewallDomainListConfig) {
 	_init_.Initialize()
 
@@ -409,7 +409,10 @@ func NewDataAwsRoute53ResolverFirewallDomainList_Override(d DataAwsRoute53Resolv
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute53ResolverFirewallDomainList)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallDomainList)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

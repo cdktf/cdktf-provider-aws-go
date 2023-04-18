@@ -92,6 +92,10 @@ func (j *jsiiProxy_AutoscalingPolicy) validateSetCooldownParameters(val *float64
 	return nil
 }
 
+func (j *jsiiProxy_AutoscalingPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingPolicy) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

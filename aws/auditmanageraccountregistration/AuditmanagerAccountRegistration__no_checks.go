@@ -68,6 +68,10 @@ func (j *jsiiProxy_AuditmanagerAccountRegistration) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_AuditmanagerAccountRegistration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuditmanagerAccountRegistration) validateSetDelegatedAdminAccountParameters(val *string) error {
 	return nil
 }

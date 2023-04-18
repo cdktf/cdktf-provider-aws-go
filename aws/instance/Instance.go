@@ -2,14 +2,14 @@ package instance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/instance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/instance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/instance aws_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/instance aws_instance}.
 type Instance interface {
 	cdktf.TerraformResource
 	Ami() *string
@@ -33,9 +33,9 @@ type Instance interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CpuCoreCount() *float64
 	SetCpuCoreCount(val *float64)
 	CpuCoreCountInput() *float64
@@ -417,8 +417,8 @@ func (j *jsiiProxy_Instance) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Instance) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Instance) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -1478,7 +1478,7 @@ func (j *jsiiProxy_Instance) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/instance aws_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/instance aws_instance} Resource.
 func NewInstance(scope constructs.Construct, id *string, config *InstanceConfig) Instance {
 	_init_.Initialize()
 
@@ -1496,7 +1496,7 @@ func NewInstance(scope constructs.Construct, id *string, config *InstanceConfig)
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/instance aws_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/instance aws_instance} Resource.
 func NewInstance_Override(i Instance, scope constructs.Construct, id *string, config *InstanceConfig) {
 	_init_.Initialize()
 
@@ -1551,7 +1551,10 @@ func (j *jsiiProxy_Instance)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Instance)SetCount(val *float64) {
+func (j *jsiiProxy_Instance)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

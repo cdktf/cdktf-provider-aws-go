@@ -2,14 +2,14 @@ package pinpointbaiduchannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/pinpointbaiduchannel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/pinpointbaiduchannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_baidu_channel aws_pinpoint_baidu_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/pinpoint_baidu_channel aws_pinpoint_baidu_channel}.
 type PinpointBaiduChannel interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -27,9 +27,9 @@ type PinpointBaiduChannel interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -188,8 +188,8 @@ func (j *jsiiProxy_PinpointBaiduChannel) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PinpointBaiduChannel) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -379,7 +379,7 @@ func (j *jsiiProxy_PinpointBaiduChannel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_baidu_channel aws_pinpoint_baidu_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/pinpoint_baidu_channel aws_pinpoint_baidu_channel} Resource.
 func NewPinpointBaiduChannel(scope constructs.Construct, id *string, config *PinpointBaiduChannelConfig) PinpointBaiduChannel {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewPinpointBaiduChannel(scope constructs.Construct, id *string, config *Pin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_baidu_channel aws_pinpoint_baidu_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/pinpoint_baidu_channel aws_pinpoint_baidu_channel} Resource.
 func NewPinpointBaiduChannel_Override(p PinpointBaiduChannel, scope constructs.Construct, id *string, config *PinpointBaiduChannelConfig) {
 	_init_.Initialize()
 
@@ -441,7 +441,10 @@ func (j *jsiiProxy_PinpointBaiduChannel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PinpointBaiduChannel)SetCount(val *float64) {
+func (j *jsiiProxy_PinpointBaiduChannel)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

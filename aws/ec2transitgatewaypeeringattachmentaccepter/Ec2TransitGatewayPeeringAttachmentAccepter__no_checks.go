@@ -68,6 +68,10 @@ func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachmentAccepter) validateSetConnec
 	return nil
 }
 
+func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachmentAccepter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachmentAccepter) validateSetIdParameters(val *string) error {
 	return nil
 }

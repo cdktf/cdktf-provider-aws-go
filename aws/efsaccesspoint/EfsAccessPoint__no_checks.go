@@ -76,6 +76,10 @@ func (j *jsiiProxy_EfsAccessPoint) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_EfsAccessPoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EfsAccessPoint) validateSetFileSystemIdParameters(val *string) error {
 	return nil
 }

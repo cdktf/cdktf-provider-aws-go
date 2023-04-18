@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsEfsMountTarget) validateSetAccessPointIdParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEfsMountTarget) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEfsMountTarget) validateSetFileSystemIdParameters(val *string) error {
 	return nil
 }

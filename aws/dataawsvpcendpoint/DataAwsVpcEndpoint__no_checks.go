@@ -72,6 +72,10 @@ func validateDataAwsVpcEndpoint_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpcEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpcEndpoint) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_RedshiftdataStatement) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftdataStatement) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftdataStatement) validateSetDatabaseParameters(val *string) error {
 	return nil
 }

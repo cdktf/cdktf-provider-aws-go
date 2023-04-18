@@ -68,6 +68,10 @@ func (j *jsiiProxy_Apigatewayv2VpcLink) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_Apigatewayv2VpcLink) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2VpcLink) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_Ec2AvailabilityZoneGroup) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_Ec2AvailabilityZoneGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2AvailabilityZoneGroup) validateSetGroupNameParameters(val *string) error {
 	return nil
 }

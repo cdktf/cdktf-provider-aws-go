@@ -68,6 +68,10 @@ func validateDataAwsEc2PublicIpv4Pools_IsTerraformElementParameters(x interface{
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2PublicIpv4Pools) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2PublicIpv4Pools) validateSetIdParameters(val *string) error {
 	return nil
 }

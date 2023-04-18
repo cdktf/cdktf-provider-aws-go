@@ -84,6 +84,10 @@ func (j *jsiiProxy_GlueConnection) validateSetConnectionTypeParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_GlueConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueConnection) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

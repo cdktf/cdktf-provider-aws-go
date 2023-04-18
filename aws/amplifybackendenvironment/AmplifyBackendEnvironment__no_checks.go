@@ -72,6 +72,10 @@ func (j *jsiiProxy_AmplifyBackendEnvironment) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_AmplifyBackendEnvironment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AmplifyBackendEnvironment) validateSetDeploymentArtifactsParameters(val *string) error {
 	return nil
 }

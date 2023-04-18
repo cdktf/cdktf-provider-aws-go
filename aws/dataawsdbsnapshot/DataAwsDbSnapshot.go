@@ -2,14 +2,14 @@ package dataawsdbsnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsdbsnapshot/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsdbsnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/db_snapshot aws_db_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/db_snapshot aws_db_snapshot}.
 type DataAwsDbSnapshot interface {
 	cdktf.TerraformDataSource
 	AllocatedStorage() *float64
@@ -19,9 +19,9 @@ type DataAwsDbSnapshot interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DbInstanceIdentifier() *string
 	SetDbInstanceIdentifier(val *string)
 	DbInstanceIdentifierInput() *string
@@ -178,8 +178,8 @@ func (j *jsiiProxy_DataAwsDbSnapshot) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDbSnapshot) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsDbSnapshot) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -589,7 +589,7 @@ func (j *jsiiProxy_DataAwsDbSnapshot) VpcId() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/db_snapshot aws_db_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/db_snapshot aws_db_snapshot} Data Source.
 func NewDataAwsDbSnapshot(scope constructs.Construct, id *string, config *DataAwsDbSnapshotConfig) DataAwsDbSnapshot {
 	_init_.Initialize()
 
@@ -607,7 +607,7 @@ func NewDataAwsDbSnapshot(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/db_snapshot aws_db_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/db_snapshot aws_db_snapshot} Data Source.
 func NewDataAwsDbSnapshot_Override(d DataAwsDbSnapshot, scope constructs.Construct, id *string, config *DataAwsDbSnapshotConfig) {
 	_init_.Initialize()
 
@@ -618,7 +618,10 @@ func NewDataAwsDbSnapshot_Override(d DataAwsDbSnapshot, scope constructs.Constru
 	)
 }
 
-func (j *jsiiProxy_DataAwsDbSnapshot)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsDbSnapshot)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

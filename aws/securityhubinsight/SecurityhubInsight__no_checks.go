@@ -72,6 +72,10 @@ func (j *jsiiProxy_SecurityhubInsight) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_SecurityhubInsight) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityhubInsight) validateSetGroupByAttributeParameters(val *string) error {
 	return nil
 }

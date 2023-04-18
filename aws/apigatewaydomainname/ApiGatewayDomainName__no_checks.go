@@ -96,6 +96,10 @@ func (j *jsiiProxy_ApiGatewayDomainName) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayDomainName) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayDomainName) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

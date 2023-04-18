@@ -64,6 +64,10 @@ func validateDataAwsGuarddutyDetector_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsGuarddutyDetector) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsGuarddutyDetector) validateSetIdParameters(val *string) error {
 	return nil
 }

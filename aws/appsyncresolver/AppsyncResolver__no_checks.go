@@ -92,6 +92,10 @@ func (j *jsiiProxy_AppsyncResolver) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_AppsyncResolver) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncResolver) validateSetDataSourceParameters(val *string) error {
 	return nil
 }

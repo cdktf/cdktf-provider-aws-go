@@ -2,14 +2,14 @@ package pipespipe
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/pipespipe/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/pipespipe/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/pipes_pipe aws_pipes_pipe}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/pipes_pipe aws_pipes_pipe}.
 type PipesPipe interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type PipesPipe interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -193,8 +193,8 @@ func (j *jsiiProxy_PipesPipe) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_PipesPipe) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PipesPipe) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -604,7 +604,7 @@ func (j *jsiiProxy_PipesPipe) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/pipes_pipe aws_pipes_pipe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/pipes_pipe aws_pipes_pipe} Resource.
 func NewPipesPipe(scope constructs.Construct, id *string, config *PipesPipeConfig) PipesPipe {
 	_init_.Initialize()
 
@@ -622,7 +622,7 @@ func NewPipesPipe(scope constructs.Construct, id *string, config *PipesPipeConfi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/pipes_pipe aws_pipes_pipe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/pipes_pipe aws_pipes_pipe} Resource.
 func NewPipesPipe_Override(p PipesPipe, scope constructs.Construct, id *string, config *PipesPipeConfig) {
 	_init_.Initialize()
 
@@ -644,7 +644,10 @@ func (j *jsiiProxy_PipesPipe)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PipesPipe)SetCount(val *float64) {
+func (j *jsiiProxy_PipesPipe)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

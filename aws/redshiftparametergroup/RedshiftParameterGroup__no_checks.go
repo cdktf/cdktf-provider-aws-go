@@ -72,6 +72,10 @@ func (j *jsiiProxy_RedshiftParameterGroup) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftParameterGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftParameterGroup) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

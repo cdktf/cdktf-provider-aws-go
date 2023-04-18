@@ -64,6 +64,10 @@ func validateDataAwsIamRoles_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsIamRoles) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsIamRoles) validateSetIdParameters(val *string) error {
 	return nil
 }

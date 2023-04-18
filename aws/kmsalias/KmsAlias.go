@@ -2,14 +2,14 @@ package kmsalias
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/kmsalias/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/kmsalias/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/kms_alias aws_kms_alias}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/kms_alias aws_kms_alias}.
 type KmsAlias interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type KmsAlias interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -158,8 +158,8 @@ func (j *jsiiProxy_KmsAlias) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KmsAlias) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_KmsAlias) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -379,7 +379,7 @@ func (j *jsiiProxy_KmsAlias) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/kms_alias aws_kms_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/kms_alias aws_kms_alias} Resource.
 func NewKmsAlias(scope constructs.Construct, id *string, config *KmsAliasConfig) KmsAlias {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewKmsAlias(scope constructs.Construct, id *string, config *KmsAliasConfig)
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/kms_alias aws_kms_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/kms_alias aws_kms_alias} Resource.
 func NewKmsAlias_Override(k KmsAlias, scope constructs.Construct, id *string, config *KmsAliasConfig) {
 	_init_.Initialize()
 
@@ -419,7 +419,10 @@ func (j *jsiiProxy_KmsAlias)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KmsAlias)SetCount(val *float64) {
+func (j *jsiiProxy_KmsAlias)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

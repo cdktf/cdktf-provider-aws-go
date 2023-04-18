@@ -2,14 +2,14 @@ package dataawsvpcpeeringconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsvpcpeeringconnection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcpeeringconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/vpc_peering_connection aws_vpc_peering_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection}.
 type DataAwsVpcPeeringConnection interface {
 	cdktf.TerraformDataSource
 	Accepter() cdktf.BooleanMap
@@ -22,9 +22,9 @@ type DataAwsVpcPeeringConnection interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -209,8 +209,8 @@ func (j *jsiiProxy_DataAwsVpcPeeringConnection) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsVpcPeeringConnection) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsVpcPeeringConnection) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -590,7 +590,7 @@ func (j *jsiiProxy_DataAwsVpcPeeringConnection) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/vpc_peering_connection aws_vpc_peering_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection} Data Source.
 func NewDataAwsVpcPeeringConnection(scope constructs.Construct, id *string, config *DataAwsVpcPeeringConnectionConfig) DataAwsVpcPeeringConnection {
 	_init_.Initialize()
 
@@ -608,7 +608,7 @@ func NewDataAwsVpcPeeringConnection(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/vpc_peering_connection aws_vpc_peering_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection} Data Source.
 func NewDataAwsVpcPeeringConnection_Override(d DataAwsVpcPeeringConnection, scope constructs.Construct, id *string, config *DataAwsVpcPeeringConnectionConfig) {
 	_init_.Initialize()
 
@@ -630,7 +630,10 @@ func (j *jsiiProxy_DataAwsVpcPeeringConnection)SetCidrBlock(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpcPeeringConnection)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsVpcPeeringConnection)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

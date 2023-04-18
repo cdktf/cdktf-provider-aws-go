@@ -2,14 +2,14 @@ package dataawsvpclatticeservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsvpclatticeservice/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpclatticeservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/vpclattice_service aws_vpclattice_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/vpclattice_service aws_vpclattice_service}.
 type DataAwsVpclatticeService interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -20,9 +20,9 @@ type DataAwsVpclatticeService interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomDomainName() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -161,8 +161,8 @@ func (j *jsiiProxy_DataAwsVpclatticeService) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsVpclatticeService) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsVpclatticeService) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -382,7 +382,7 @@ func (j *jsiiProxy_DataAwsVpclatticeService) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/vpclattice_service aws_vpclattice_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/vpclattice_service aws_vpclattice_service} Data Source.
 func NewDataAwsVpclatticeService(scope constructs.Construct, id *string, config *DataAwsVpclatticeServiceConfig) DataAwsVpclatticeService {
 	_init_.Initialize()
 
@@ -400,7 +400,7 @@ func NewDataAwsVpclatticeService(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/vpclattice_service aws_vpclattice_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/vpclattice_service aws_vpclattice_service} Data Source.
 func NewDataAwsVpclatticeService_Override(d DataAwsVpclatticeService, scope constructs.Construct, id *string, config *DataAwsVpclatticeServiceConfig) {
 	_init_.Initialize()
 
@@ -411,7 +411,10 @@ func NewDataAwsVpclatticeService_Override(d DataAwsVpclatticeService, scope cons
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpclatticeService)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsVpclatticeService)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

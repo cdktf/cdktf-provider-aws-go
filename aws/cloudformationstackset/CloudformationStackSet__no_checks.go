@@ -92,6 +92,10 @@ func (j *jsiiProxy_CloudformationStackSet) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_CloudformationStackSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudformationStackSet) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

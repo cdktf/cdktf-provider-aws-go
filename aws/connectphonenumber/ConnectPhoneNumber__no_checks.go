@@ -72,6 +72,10 @@ func (j *jsiiProxy_ConnectPhoneNumber) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_ConnectPhoneNumber) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectPhoneNumber) validateSetCountryCodeParameters(val *string) error {
 	return nil
 }

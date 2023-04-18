@@ -68,6 +68,10 @@ func (j *jsiiProxy_IamPolicyAttachment) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_IamPolicyAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamPolicyAttachment) validateSetGroupsParameters(val *[]*string) error {
 	return nil
 }

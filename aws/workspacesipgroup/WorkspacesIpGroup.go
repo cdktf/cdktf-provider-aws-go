@@ -2,14 +2,14 @@ package workspacesipgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/workspacesipgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/workspacesipgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/workspaces_ip_group aws_workspaces_ip_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/workspaces_ip_group aws_workspaces_ip_group}.
 type WorkspacesIpGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type WorkspacesIpGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -154,8 +154,8 @@ func (j *jsiiProxy_WorkspacesIpGroup) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesIpGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_WorkspacesIpGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -405,7 +405,7 @@ func (j *jsiiProxy_WorkspacesIpGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/workspaces_ip_group aws_workspaces_ip_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/workspaces_ip_group aws_workspaces_ip_group} Resource.
 func NewWorkspacesIpGroup(scope constructs.Construct, id *string, config *WorkspacesIpGroupConfig) WorkspacesIpGroup {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewWorkspacesIpGroup(scope constructs.Construct, id *string, config *Worksp
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/workspaces_ip_group aws_workspaces_ip_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/workspaces_ip_group aws_workspaces_ip_group} Resource.
 func NewWorkspacesIpGroup_Override(w WorkspacesIpGroup, scope constructs.Construct, id *string, config *WorkspacesIpGroupConfig) {
 	_init_.Initialize()
 
@@ -445,7 +445,10 @@ func (j *jsiiProxy_WorkspacesIpGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorkspacesIpGroup)SetCount(val *float64) {
+func (j *jsiiProxy_WorkspacesIpGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

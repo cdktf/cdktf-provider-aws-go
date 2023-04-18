@@ -72,6 +72,10 @@ func validateDataAwsEbsSnapshotIds_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEbsSnapshotIds) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEbsSnapshotIds) validateSetIdParameters(val *string) error {
 	return nil
 }

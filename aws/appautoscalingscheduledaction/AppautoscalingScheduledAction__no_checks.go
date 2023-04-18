@@ -72,6 +72,10 @@ func (j *jsiiProxy_AppautoscalingScheduledAction) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_AppautoscalingScheduledAction) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppautoscalingScheduledAction) validateSetEndTimeParameters(val *string) error {
 	return nil
 }

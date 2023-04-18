@@ -76,6 +76,10 @@ func (j *jsiiProxy_CloudfrontCachePolicy) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_CloudfrontCachePolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontCachePolicy) validateSetDefaultTtlParameters(val *float64) error {
 	return nil
 }

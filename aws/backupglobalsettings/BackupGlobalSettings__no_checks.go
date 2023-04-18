@@ -68,6 +68,10 @@ func (j *jsiiProxy_BackupGlobalSettings) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_BackupGlobalSettings) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupGlobalSettings) validateSetGlobalSettingsParameters(val *map[string]*string) error {
 	return nil
 }

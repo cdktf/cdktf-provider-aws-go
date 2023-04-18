@@ -72,6 +72,10 @@ func (j *jsiiProxy_S3BucketAccelerateConfiguration) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketAccelerateConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketAccelerateConfiguration) validateSetExpectedBucketOwnerParameters(val *string) error {
 	return nil
 }

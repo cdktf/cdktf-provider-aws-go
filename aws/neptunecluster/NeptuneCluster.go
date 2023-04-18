@@ -2,14 +2,14 @@ package neptunecluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/neptunecluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/neptunecluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluster aws_neptune_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/neptune_cluster aws_neptune_cluster}.
 type NeptuneCluster interface {
 	cdktf.TerraformResource
 	AllowMajorVersionUpgrade() interface{}
@@ -45,9 +45,9 @@ type NeptuneCluster interface {
 	SetCopyTagsToSnapshot(val interface{})
 	CopyTagsToSnapshotInput() interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DeletionProtection() interface{}
 	SetDeletionProtection(val interface{})
 	DeletionProtectionInput() interface{}
@@ -435,8 +435,8 @@ func (j *jsiiProxy_NeptuneCluster) CopyTagsToSnapshotInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_NeptuneCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -1096,7 +1096,7 @@ func (j *jsiiProxy_NeptuneCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluster aws_neptune_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/neptune_cluster aws_neptune_cluster} Resource.
 func NewNeptuneCluster(scope constructs.Construct, id *string, config *NeptuneClusterConfig) NeptuneCluster {
 	_init_.Initialize()
 
@@ -1114,7 +1114,7 @@ func NewNeptuneCluster(scope constructs.Construct, id *string, config *NeptuneCl
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/neptune_cluster aws_neptune_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/neptune_cluster aws_neptune_cluster} Resource.
 func NewNeptuneCluster_Override(n NeptuneCluster, scope constructs.Construct, id *string, config *NeptuneClusterConfig) {
 	_init_.Initialize()
 
@@ -1213,7 +1213,10 @@ func (j *jsiiProxy_NeptuneCluster)SetCopyTagsToSnapshot(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneCluster)SetCount(val *float64) {
+func (j *jsiiProxy_NeptuneCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -80,6 +80,10 @@ func (j *jsiiProxy_WorkspacesDirectory) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_WorkspacesDirectory) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorkspacesDirectory) validateSetDirectoryIdParameters(val *string) error {
 	return nil
 }

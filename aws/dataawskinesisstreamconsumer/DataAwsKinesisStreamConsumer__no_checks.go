@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsKinesisStreamConsumer) validateSetArnParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsKinesisStreamConsumer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsKinesisStreamConsumer) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package sqsqueuepolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/sqsqueuepolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/sqsqueuepolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue_policy aws_sqs_queue_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sqs_queue_policy aws_sqs_queue_policy}.
 type SqsQueuePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SqsQueuePolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_SqsQueuePolicy) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_SqsQueuePolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SqsQueuePolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_SqsQueuePolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue_policy aws_sqs_queue_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sqs_queue_policy aws_sqs_queue_policy} Resource.
 func NewSqsQueuePolicy(scope constructs.Construct, id *string, config *SqsQueuePolicyConfig) SqsQueuePolicy {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewSqsQueuePolicy(scope constructs.Construct, id *string, config *SqsQueueP
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue_policy aws_sqs_queue_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sqs_queue_policy aws_sqs_queue_policy} Resource.
 func NewSqsQueuePolicy_Override(s SqsQueuePolicy, scope constructs.Construct, id *string, config *SqsQueuePolicyConfig) {
 	_init_.Initialize()
 
@@ -372,7 +372,10 @@ func (j *jsiiProxy_SqsQueuePolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueuePolicy)SetCount(val *float64) {
+func (j *jsiiProxy_SqsQueuePolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

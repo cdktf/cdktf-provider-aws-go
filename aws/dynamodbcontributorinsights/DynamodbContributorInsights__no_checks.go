@@ -72,6 +72,10 @@ func (j *jsiiProxy_DynamodbContributorInsights) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbContributorInsights) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbContributorInsights) validateSetIdParameters(val *string) error {
 	return nil
 }

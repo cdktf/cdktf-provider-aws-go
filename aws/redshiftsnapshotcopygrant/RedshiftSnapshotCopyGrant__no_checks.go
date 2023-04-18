@@ -68,6 +68,10 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftSnapshotCopyGrant) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftSnapshotCopyGrant) validateSetIdParameters(val *string) error {
 	return nil
 }

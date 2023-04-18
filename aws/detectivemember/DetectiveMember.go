@@ -2,14 +2,14 @@ package detectivemember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/detectivemember/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/detectivemember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/detective_member aws_detective_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/detective_member aws_detective_member}.
 type DetectiveMember interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -25,9 +25,9 @@ type DetectiveMember interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -188,8 +188,8 @@ func (j *jsiiProxy_DetectiveMember) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_DetectiveMember) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DetectiveMember) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -469,7 +469,7 @@ func (j *jsiiProxy_DetectiveMember) VolumeUsageInBytes() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/detective_member aws_detective_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/detective_member aws_detective_member} Resource.
 func NewDetectiveMember(scope constructs.Construct, id *string, config *DetectiveMemberConfig) DetectiveMember {
 	_init_.Initialize()
 
@@ -487,7 +487,7 @@ func NewDetectiveMember(scope constructs.Construct, id *string, config *Detectiv
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/detective_member aws_detective_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/detective_member aws_detective_member} Resource.
 func NewDetectiveMember_Override(d DetectiveMember, scope constructs.Construct, id *string, config *DetectiveMemberConfig) {
 	_init_.Initialize()
 
@@ -520,7 +520,10 @@ func (j *jsiiProxy_DetectiveMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DetectiveMember)SetCount(val *float64) {
+func (j *jsiiProxy_DetectiveMember)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

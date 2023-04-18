@@ -72,6 +72,10 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateSetIdParameters(val *string) error {
 	return nil
 }

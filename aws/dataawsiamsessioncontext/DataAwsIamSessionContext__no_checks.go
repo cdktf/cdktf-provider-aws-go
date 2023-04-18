@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsIamSessionContext) validateSetArnParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsIamSessionContext) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsIamSessionContext) validateSetIdParameters(val *string) error {
 	return nil
 }

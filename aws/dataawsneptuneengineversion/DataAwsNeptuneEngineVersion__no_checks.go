@@ -64,6 +64,10 @@ func validateDataAwsNeptuneEngineVersion_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsNeptuneEngineVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNeptuneEngineVersion) validateSetEngineParameters(val *string) error {
 	return nil
 }

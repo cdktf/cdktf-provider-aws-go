@@ -2,14 +2,14 @@ package evidentlysegment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/evidentlysegment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/evidentlysegment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/evidently_segment aws_evidently_segment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_segment aws_evidently_segment}.
 type EvidentlySegment interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type EvidentlySegment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -168,8 +168,8 @@ func (j *jsiiProxy_EvidentlySegment) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_EvidentlySegment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EvidentlySegment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -459,7 +459,7 @@ func (j *jsiiProxy_EvidentlySegment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/evidently_segment aws_evidently_segment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_segment aws_evidently_segment} Resource.
 func NewEvidentlySegment(scope constructs.Construct, id *string, config *EvidentlySegmentConfig) EvidentlySegment {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewEvidentlySegment(scope constructs.Construct, id *string, config *Evident
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/evidently_segment aws_evidently_segment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/evidently_segment aws_evidently_segment} Resource.
 func NewEvidentlySegment_Override(e EvidentlySegment, scope constructs.Construct, id *string, config *EvidentlySegmentConfig) {
 	_init_.Initialize()
 
@@ -499,7 +499,10 @@ func (j *jsiiProxy_EvidentlySegment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EvidentlySegment)SetCount(val *float64) {
+func (j *jsiiProxy_EvidentlySegment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

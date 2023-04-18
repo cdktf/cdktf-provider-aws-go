@@ -2,14 +2,14 @@ package maciememberaccountassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/maciememberaccountassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/maciememberaccountassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/macie_member_account_association aws_macie_member_account_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_member_account_association aws_macie_member_account_association}.
 type MacieMemberAccountAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MacieMemberAccountAssociation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -138,8 +138,8 @@ func (j *jsiiProxy_MacieMemberAccountAssociation) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_MacieMemberAccountAssociation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MacieMemberAccountAssociation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -309,7 +309,7 @@ func (j *jsiiProxy_MacieMemberAccountAssociation) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/macie_member_account_association aws_macie_member_account_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_member_account_association aws_macie_member_account_association} Resource.
 func NewMacieMemberAccountAssociation(scope constructs.Construct, id *string, config *MacieMemberAccountAssociationConfig) MacieMemberAccountAssociation {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewMacieMemberAccountAssociation(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/macie_member_account_association aws_macie_member_account_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_member_account_association aws_macie_member_account_association} Resource.
 func NewMacieMemberAccountAssociation_Override(m MacieMemberAccountAssociation, scope constructs.Construct, id *string, config *MacieMemberAccountAssociationConfig) {
 	_init_.Initialize()
 
@@ -349,7 +349,10 @@ func (j *jsiiProxy_MacieMemberAccountAssociation)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_MacieMemberAccountAssociation)SetCount(val *float64) {
+func (j *jsiiProxy_MacieMemberAccountAssociation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -76,6 +76,10 @@ func (j *jsiiProxy_TransferWorkflow) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_TransferWorkflow) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransferWorkflow) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

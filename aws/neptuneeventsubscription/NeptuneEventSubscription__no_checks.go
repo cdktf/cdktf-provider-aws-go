@@ -72,6 +72,10 @@ func (j *jsiiProxy_NeptuneEventSubscription) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_NeptuneEventSubscription) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NeptuneEventSubscription) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

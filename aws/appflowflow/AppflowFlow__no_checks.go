@@ -84,6 +84,10 @@ func (j *jsiiProxy_AppflowFlow) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_AppflowFlow) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppflowFlow) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

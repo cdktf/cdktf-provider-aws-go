@@ -64,6 +64,10 @@ func validateDataAwsCloudfrontLogDeliveryCanonicalUserId_IsTerraformElementParam
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudfrontLogDeliveryCanonicalUserId) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudfrontLogDeliveryCanonicalUserId) validateSetIdParameters(val *string) error {
 	return nil
 }

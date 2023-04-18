@@ -2,14 +2,14 @@ package dataawssesv2dedicatedippool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawssesv2dedicatedippool/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssesv2dedicatedippool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool}.
 type DataAwsSesv2DedicatedIpPool interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -18,9 +18,9 @@ type DataAwsSesv2DedicatedIpPool interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DedicatedIps() DataAwsSesv2DedicatedIpPoolDedicatedIpsList
 	// Experimental.
 	DependsOn() *[]*string
@@ -137,8 +137,8 @@ func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -338,7 +338,7 @@ func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool} Data Source.
 func NewDataAwsSesv2DedicatedIpPool(scope constructs.Construct, id *string, config *DataAwsSesv2DedicatedIpPoolConfig) DataAwsSesv2DedicatedIpPool {
 	_init_.Initialize()
 
@@ -356,7 +356,7 @@ func NewDataAwsSesv2DedicatedIpPool(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool} Data Source.
 func NewDataAwsSesv2DedicatedIpPool_Override(d DataAwsSesv2DedicatedIpPool, scope constructs.Construct, id *string, config *DataAwsSesv2DedicatedIpPoolConfig) {
 	_init_.Initialize()
 
@@ -367,7 +367,10 @@ func NewDataAwsSesv2DedicatedIpPool_Override(d DataAwsSesv2DedicatedIpPool, scop
 	)
 }
 
-func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

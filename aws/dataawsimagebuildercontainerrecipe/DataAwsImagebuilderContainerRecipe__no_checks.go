@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsImagebuilderContainerRecipe) validateSetArnParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsImagebuilderContainerRecipe) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsImagebuilderContainerRecipe) validateSetIdParameters(val *string) error {
 	return nil
 }

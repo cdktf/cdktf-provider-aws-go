@@ -88,6 +88,10 @@ func (j *jsiiProxy_Route53ResolverFirewallRule) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_Route53ResolverFirewallRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53ResolverFirewallRule) validateSetFirewallDomainListIdParameters(val *string) error {
 	return nil
 }

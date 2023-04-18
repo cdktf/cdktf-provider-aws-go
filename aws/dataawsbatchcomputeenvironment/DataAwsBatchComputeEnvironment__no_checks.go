@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsBatchComputeEnvironment) validateSetComputeEnvironment
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsBatchComputeEnvironment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsBatchComputeEnvironment) validateSetIdParameters(val *string) error {
 	return nil
 }

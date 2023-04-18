@@ -72,6 +72,10 @@ func (j *jsiiProxy_ApprunnerObservabilityConfiguration) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_ApprunnerObservabilityConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerObservabilityConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

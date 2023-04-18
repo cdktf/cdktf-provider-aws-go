@@ -80,6 +80,10 @@ func (j *jsiiProxy_GlueUserDefinedFunction) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GlueUserDefinedFunction) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueUserDefinedFunction) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsMskBrokerNodes) validateSetClusterArnParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsMskBrokerNodes) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsMskBrokerNodes) validateSetIdParameters(val *string) error {
 	return nil
 }

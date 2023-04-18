@@ -2,14 +2,14 @@ package cloudhsmv2hsm
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/cloudhsmv2hsm/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudhsmv2hsm/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudhsm_v2_hsm aws_cloudhsm_v2_hsm}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudhsm_v2_hsm aws_cloudhsm_v2_hsm}.
 type CloudhsmV2Hsm interface {
 	cdktf.TerraformResource
 	AvailabilityZone() *string
@@ -27,9 +27,9 @@ type CloudhsmV2Hsm interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -197,8 +197,8 @@ func (j *jsiiProxy_CloudhsmV2Hsm) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudhsmV2Hsm) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -438,7 +438,7 @@ func (j *jsiiProxy_CloudhsmV2Hsm) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudhsm_v2_hsm aws_cloudhsm_v2_hsm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudhsm_v2_hsm aws_cloudhsm_v2_hsm} Resource.
 func NewCloudhsmV2Hsm(scope constructs.Construct, id *string, config *CloudhsmV2HsmConfig) CloudhsmV2Hsm {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewCloudhsmV2Hsm(scope constructs.Construct, id *string, config *CloudhsmV2
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudhsm_v2_hsm aws_cloudhsm_v2_hsm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudhsm_v2_hsm aws_cloudhsm_v2_hsm} Resource.
 func NewCloudhsmV2Hsm_Override(c CloudhsmV2Hsm, scope constructs.Construct, id *string, config *CloudhsmV2HsmConfig) {
 	_init_.Initialize()
 
@@ -500,7 +500,10 @@ func (j *jsiiProxy_CloudhsmV2Hsm)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm)SetCount(val *float64) {
+func (j *jsiiProxy_CloudhsmV2Hsm)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

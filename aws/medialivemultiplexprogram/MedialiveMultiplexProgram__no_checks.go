@@ -72,6 +72,10 @@ func (j *jsiiProxy_MedialiveMultiplexProgram) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_MedialiveMultiplexProgram) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MedialiveMultiplexProgram) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataawsec2coippool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsec2coippool/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsec2coippool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_coip_pool aws_ec2_coip_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_coip_pool aws_ec2_coip_pool}.
 type DataAwsEc2CoipPool interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -18,9 +18,9 @@ type DataAwsEc2CoipPool interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataAwsEc2CoipPool) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2CoipPool) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsEc2CoipPool) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -400,7 +400,7 @@ func (j *jsiiProxy_DataAwsEc2CoipPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_coip_pool aws_ec2_coip_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_coip_pool aws_ec2_coip_pool} Data Source.
 func NewDataAwsEc2CoipPool(scope constructs.Construct, id *string, config *DataAwsEc2CoipPoolConfig) DataAwsEc2CoipPool {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewDataAwsEc2CoipPool(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_coip_pool aws_ec2_coip_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_coip_pool aws_ec2_coip_pool} Data Source.
 func NewDataAwsEc2CoipPool_Override(d DataAwsEc2CoipPool, scope constructs.Construct, id *string, config *DataAwsEc2CoipPoolConfig) {
 	_init_.Initialize()
 
@@ -429,7 +429,10 @@ func NewDataAwsEc2CoipPool_Override(d DataAwsEc2CoipPool, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2CoipPool)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsEc2CoipPool)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

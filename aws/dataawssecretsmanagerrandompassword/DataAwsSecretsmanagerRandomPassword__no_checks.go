@@ -64,6 +64,10 @@ func validateDataAwsSecretsmanagerRandomPassword_IsTerraformElementParameters(x 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetExcludeCharactersParameters(val *string) error {
 	return nil
 }

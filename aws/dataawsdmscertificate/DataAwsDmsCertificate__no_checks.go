@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsDmsCertificate) validateSetCertificateIdParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDmsCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDmsCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

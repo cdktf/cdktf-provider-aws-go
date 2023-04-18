@@ -72,6 +72,10 @@ func (j *jsiiProxy_CloudwatchEventApiDestination) validateSetConnectionArnParame
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchEventApiDestination) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchEventApiDestination) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

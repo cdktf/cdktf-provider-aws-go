@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts) validateSetAccept
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts) validateSetIdParameters(val *string) error {
 	return nil
 }

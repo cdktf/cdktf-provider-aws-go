@@ -68,6 +68,10 @@ func (j *jsiiProxy_DevicefarmProject) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_DevicefarmProject) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicefarmProject) validateSetDefaultJobTimeoutMinutesParameters(val *float64) error {
 	return nil
 }

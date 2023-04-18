@@ -76,6 +76,10 @@ func (j *jsiiProxy_CognitoUser) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_CognitoUser) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoUser) validateSetDesiredDeliveryMediumsParameters(val *[]*string) error {
 	return nil
 }

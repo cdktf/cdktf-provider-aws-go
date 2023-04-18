@@ -2,14 +2,14 @@ package dataawsimagebuilderimagepipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsimagebuilderimagepipeline/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsimagebuilderimagepipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_pipeline aws_imagebuilder_image_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/imagebuilder_image_pipeline aws_imagebuilder_image_pipeline}.
 type DataAwsImagebuilderImagePipeline interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -21,9 +21,9 @@ type DataAwsImagebuilderImagePipeline interface {
 	ConstructNodeMetadata() *map[string]interface{}
 	ContainerRecipeArn() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DateCreated() *string
 	DateLastRun() *string
 	DateNextRun() *string
@@ -169,8 +169,8 @@ func (j *jsiiProxy_DataAwsImagebuilderImagePipeline) ContainerRecipeArn() *strin
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderImagePipeline) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsImagebuilderImagePipeline) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -470,7 +470,7 @@ func (j *jsiiProxy_DataAwsImagebuilderImagePipeline) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_pipeline aws_imagebuilder_image_pipeline} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/imagebuilder_image_pipeline aws_imagebuilder_image_pipeline} Data Source.
 func NewDataAwsImagebuilderImagePipeline(scope constructs.Construct, id *string, config *DataAwsImagebuilderImagePipelineConfig) DataAwsImagebuilderImagePipeline {
 	_init_.Initialize()
 
@@ -488,7 +488,7 @@ func NewDataAwsImagebuilderImagePipeline(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_image_pipeline aws_imagebuilder_image_pipeline} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/imagebuilder_image_pipeline aws_imagebuilder_image_pipeline} Data Source.
 func NewDataAwsImagebuilderImagePipeline_Override(d DataAwsImagebuilderImagePipeline, scope constructs.Construct, id *string, config *DataAwsImagebuilderImagePipelineConfig) {
 	_init_.Initialize()
 
@@ -510,7 +510,10 @@ func (j *jsiiProxy_DataAwsImagebuilderImagePipeline)SetArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderImagePipeline)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsImagebuilderImagePipeline)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

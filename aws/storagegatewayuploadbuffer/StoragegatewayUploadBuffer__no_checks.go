@@ -68,6 +68,10 @@ func (j *jsiiProxy_StoragegatewayUploadBuffer) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_StoragegatewayUploadBuffer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewayUploadBuffer) validateSetDiskIdParameters(val *string) error {
 	return nil
 }

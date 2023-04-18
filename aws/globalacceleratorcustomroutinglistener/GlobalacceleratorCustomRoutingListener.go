@@ -2,14 +2,14 @@ package globalacceleratorcustomroutinglistener
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/globalacceleratorcustomroutinglistener/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/globalacceleratorcustomroutinglistener/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_custom_routing_listener aws_globalaccelerator_custom_routing_listener}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/globalaccelerator_custom_routing_listener aws_globalaccelerator_custom_routing_listener}.
 type GlobalacceleratorCustomRoutingListener interface {
 	cdktf.TerraformResource
 	AcceleratorArn() *string
@@ -24,9 +24,9 @@ type GlobalacceleratorCustomRoutingListener interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_GlobalacceleratorCustomRoutingListener) ConstructNodeMetadata
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorCustomRoutingListener) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GlobalacceleratorCustomRoutingListener) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_GlobalacceleratorCustomRoutingListener) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_custom_routing_listener aws_globalaccelerator_custom_routing_listener} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/globalaccelerator_custom_routing_listener aws_globalaccelerator_custom_routing_listener} Resource.
 func NewGlobalacceleratorCustomRoutingListener(scope constructs.Construct, id *string, config *GlobalacceleratorCustomRoutingListenerConfig) GlobalacceleratorCustomRoutingListener {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewGlobalacceleratorCustomRoutingListener(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_custom_routing_listener aws_globalaccelerator_custom_routing_listener} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/globalaccelerator_custom_routing_listener aws_globalaccelerator_custom_routing_listener} Resource.
 func NewGlobalacceleratorCustomRoutingListener_Override(g GlobalacceleratorCustomRoutingListener, scope constructs.Construct, id *string, config *GlobalacceleratorCustomRoutingListenerConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_GlobalacceleratorCustomRoutingListener)SetConnection(val inte
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorCustomRoutingListener)SetCount(val *float64) {
+func (j *jsiiProxy_GlobalacceleratorCustomRoutingListener)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

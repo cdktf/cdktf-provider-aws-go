@@ -80,6 +80,10 @@ func (j *jsiiProxy_WafregionalWebAcl) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_WafregionalWebAcl) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafregionalWebAcl) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataAwsKmsKey_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsKmsKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsKmsKey) validateSetGrantTokensParameters(val *[]*string) error {
 	return nil
 }

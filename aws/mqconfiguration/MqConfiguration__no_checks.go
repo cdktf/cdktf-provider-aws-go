@@ -72,6 +72,10 @@ func (j *jsiiProxy_MqConfiguration) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_MqConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MqConfiguration) validateSetDataParameters(val *string) error {
 	return nil
 }

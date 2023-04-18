@@ -68,6 +68,10 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

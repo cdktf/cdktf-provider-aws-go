@@ -68,6 +68,10 @@ func (j *jsiiProxy_LicensemanagerAssociation) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_LicensemanagerAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LicensemanagerAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

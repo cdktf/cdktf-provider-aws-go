@@ -2,14 +2,14 @@ package kendrafaq
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/kendrafaq/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/kendrafaq/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/kendra_faq aws_kendra_faq}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/kendra_faq aws_kendra_faq}.
 type KendraFaq interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type KendraFaq interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -187,8 +187,8 @@ func (j *jsiiProxy_KendraFaq) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_KendraFaq) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_KendraFaq) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -588,7 +588,7 @@ func (j *jsiiProxy_KendraFaq) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/kendra_faq aws_kendra_faq} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/kendra_faq aws_kendra_faq} Resource.
 func NewKendraFaq(scope constructs.Construct, id *string, config *KendraFaqConfig) KendraFaq {
 	_init_.Initialize()
 
@@ -606,7 +606,7 @@ func NewKendraFaq(scope constructs.Construct, id *string, config *KendraFaqConfi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/kendra_faq aws_kendra_faq} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/kendra_faq aws_kendra_faq} Resource.
 func NewKendraFaq_Override(k KendraFaq, scope constructs.Construct, id *string, config *KendraFaqConfig) {
 	_init_.Initialize()
 
@@ -628,7 +628,10 @@ func (j *jsiiProxy_KendraFaq)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KendraFaq)SetCount(val *float64) {
+func (j *jsiiProxy_KendraFaq)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

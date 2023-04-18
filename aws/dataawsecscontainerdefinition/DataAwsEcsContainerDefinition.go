@@ -2,14 +2,14 @@ package dataawsecscontainerdefinition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsecscontainerdefinition/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsecscontainerdefinition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/ecs_container_definition aws_ecs_container_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ecs_container_definition aws_ecs_container_definition}.
 type DataAwsEcsContainerDefinition interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -20,9 +20,9 @@ type DataAwsEcsContainerDefinition interface {
 	SetContainerName(val *string)
 	ContainerNameInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Cpu() *float64
 	// Experimental.
 	DependsOn() *[]*string
@@ -151,8 +151,8 @@ func (j *jsiiProxy_DataAwsEcsContainerDefinition) ContainerNameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEcsContainerDefinition) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsEcsContainerDefinition) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -392,7 +392,7 @@ func (j *jsiiProxy_DataAwsEcsContainerDefinition) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ecs_container_definition aws_ecs_container_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ecs_container_definition aws_ecs_container_definition} Data Source.
 func NewDataAwsEcsContainerDefinition(scope constructs.Construct, id *string, config *DataAwsEcsContainerDefinitionConfig) DataAwsEcsContainerDefinition {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewDataAwsEcsContainerDefinition(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ecs_container_definition aws_ecs_container_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ecs_container_definition aws_ecs_container_definition} Data Source.
 func NewDataAwsEcsContainerDefinition_Override(d DataAwsEcsContainerDefinition, scope constructs.Construct, id *string, config *DataAwsEcsContainerDefinitionConfig) {
 	_init_.Initialize()
 
@@ -432,7 +432,10 @@ func (j *jsiiProxy_DataAwsEcsContainerDefinition)SetContainerName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEcsContainerDefinition)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsEcsContainerDefinition)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

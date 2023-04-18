@@ -72,6 +72,10 @@ func (j *jsiiProxy_SagemakerEndpoint) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerEndpoint) validateSetEndpointConfigNameParameters(val *string) error {
 	return nil
 }

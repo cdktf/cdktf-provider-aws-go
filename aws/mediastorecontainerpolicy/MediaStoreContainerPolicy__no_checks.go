@@ -72,6 +72,10 @@ func (j *jsiiProxy_MediaStoreContainerPolicy) validateSetContainerNameParameters
 	return nil
 }
 
+func (j *jsiiProxy_MediaStoreContainerPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaStoreContainerPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_GameliftBuild) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_GameliftBuild) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GameliftBuild) validateSetIdParameters(val *string) error {
 	return nil
 }

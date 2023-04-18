@@ -2,14 +2,14 @@ package dataawssubnets
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawssubnets/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssubnets/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/subnets aws_subnets}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnets aws_subnets}.
 type DataAwsSubnets interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAwsSubnets interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataAwsSubnets) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSubnets) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsSubnets) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DataAwsSubnets) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/subnets aws_subnets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnets aws_subnets} Data Source.
 func NewDataAwsSubnets(scope constructs.Construct, id *string, config *DataAwsSubnetsConfig) DataAwsSubnets {
 	_init_.Initialize()
 
@@ -359,7 +359,7 @@ func NewDataAwsSubnets(scope constructs.Construct, id *string, config *DataAwsSu
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/subnets aws_subnets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnets aws_subnets} Data Source.
 func NewDataAwsSubnets_Override(d DataAwsSubnets, scope constructs.Construct, id *string, config *DataAwsSubnetsConfig) {
 	_init_.Initialize()
 
@@ -370,7 +370,10 @@ func NewDataAwsSubnets_Override(d DataAwsSubnets, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_DataAwsSubnets)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsSubnets)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

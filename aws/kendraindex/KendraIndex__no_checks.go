@@ -92,6 +92,10 @@ func (j *jsiiProxy_KendraIndex) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_KendraIndex) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KendraIndex) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

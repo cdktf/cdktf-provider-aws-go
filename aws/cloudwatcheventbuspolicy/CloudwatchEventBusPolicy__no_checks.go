@@ -68,6 +68,10 @@ func (j *jsiiProxy_CloudwatchEventBusPolicy) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchEventBusPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchEventBusPolicy) validateSetEventBusNameParameters(val *string) error {
 	return nil
 }

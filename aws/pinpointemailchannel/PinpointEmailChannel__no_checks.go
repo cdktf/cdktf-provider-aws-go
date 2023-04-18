@@ -76,6 +76,10 @@ func (j *jsiiProxy_PinpointEmailChannel) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_PinpointEmailChannel) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointEmailChannel) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

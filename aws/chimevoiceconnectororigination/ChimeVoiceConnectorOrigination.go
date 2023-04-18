@@ -2,14 +2,14 @@ package chimevoiceconnectororigination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/chimevoiceconnectororigination/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/chimevoiceconnectororigination/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_origination aws_chime_voice_connector_origination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/chime_voice_connector_origination aws_chime_voice_connector_origination}.
 type ChimeVoiceConnectorOrigination interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ChimeVoiceConnectorOrigination interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -145,8 +145,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOrigination) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination) VoiceConnectorIdInput() *stri
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_origination aws_chime_voice_connector_origination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/chime_voice_connector_origination aws_chime_voice_connector_origination} Resource.
 func NewChimeVoiceConnectorOrigination(scope constructs.Construct, id *string, config *ChimeVoiceConnectorOriginationConfig) ChimeVoiceConnectorOrigination {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewChimeVoiceConnectorOrigination(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_origination aws_chime_voice_connector_origination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/chime_voice_connector_origination aws_chime_voice_connector_origination} Resource.
 func NewChimeVoiceConnectorOrigination_Override(c ChimeVoiceConnectorOrigination, scope constructs.Construct, id *string, config *ChimeVoiceConnectorOriginationConfig) {
 	_init_.Initialize()
 
@@ -396,7 +396,10 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetCount(val *float64) {
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

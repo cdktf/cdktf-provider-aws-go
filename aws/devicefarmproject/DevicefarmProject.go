@@ -2,14 +2,14 @@ package devicefarmproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/devicefarmproject/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/devicefarmproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_project aws_devicefarm_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/devicefarm_project aws_devicefarm_project}.
 type DevicefarmProject interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type DevicefarmProject interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultJobTimeoutMinutes() *float64
 	SetDefaultJobTimeoutMinutes(val *float64)
 	DefaultJobTimeoutMinutesInput() *float64
@@ -161,8 +161,8 @@ func (j *jsiiProxy_DevicefarmProject) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DevicefarmProject) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DevicefarmProject) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -392,7 +392,7 @@ func (j *jsiiProxy_DevicefarmProject) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_project aws_devicefarm_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/devicefarm_project aws_devicefarm_project} Resource.
 func NewDevicefarmProject(scope constructs.Construct, id *string, config *DevicefarmProjectConfig) DevicefarmProject {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewDevicefarmProject(scope constructs.Construct, id *string, config *Device
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/devicefarm_project aws_devicefarm_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/devicefarm_project aws_devicefarm_project} Resource.
 func NewDevicefarmProject_Override(d DevicefarmProject, scope constructs.Construct, id *string, config *DevicefarmProjectConfig) {
 	_init_.Initialize()
 
@@ -432,7 +432,10 @@ func (j *jsiiProxy_DevicefarmProject)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DevicefarmProject)SetCount(val *float64) {
+func (j *jsiiProxy_DevicefarmProject)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

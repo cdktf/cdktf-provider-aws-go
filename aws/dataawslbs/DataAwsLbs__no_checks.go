@@ -64,6 +64,10 @@ func validateDataAwsLbs_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLbs) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLbs) validateSetIdParameters(val *string) error {
 	return nil
 }

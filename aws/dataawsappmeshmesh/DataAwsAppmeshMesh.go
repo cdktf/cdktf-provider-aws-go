@@ -2,14 +2,14 @@ package dataawsappmeshmesh
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsappmeshmesh/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsappmeshmesh/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/appmesh_mesh aws_appmesh_mesh}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/appmesh_mesh aws_appmesh_mesh}.
 type DataAwsAppmeshMesh interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -18,9 +18,9 @@ type DataAwsAppmeshMesh interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataAwsAppmeshMesh) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAppmeshMesh) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsAppmeshMesh) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -384,7 +384,7 @@ func (j *jsiiProxy_DataAwsAppmeshMesh) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/appmesh_mesh aws_appmesh_mesh} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/appmesh_mesh aws_appmesh_mesh} Data Source.
 func NewDataAwsAppmeshMesh(scope constructs.Construct, id *string, config *DataAwsAppmeshMeshConfig) DataAwsAppmeshMesh {
 	_init_.Initialize()
 
@@ -402,7 +402,7 @@ func NewDataAwsAppmeshMesh(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/appmesh_mesh aws_appmesh_mesh} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/appmesh_mesh aws_appmesh_mesh} Data Source.
 func NewDataAwsAppmeshMesh_Override(d DataAwsAppmeshMesh, scope constructs.Construct, id *string, config *DataAwsAppmeshMeshConfig) {
 	_init_.Initialize()
 
@@ -413,7 +413,10 @@ func NewDataAwsAppmeshMesh_Override(d DataAwsAppmeshMesh, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_DataAwsAppmeshMesh)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsAppmeshMesh)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

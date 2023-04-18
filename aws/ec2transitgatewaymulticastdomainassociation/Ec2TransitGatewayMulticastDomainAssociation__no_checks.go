@@ -72,6 +72,10 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation) validateSetConne
 	return nil
 }
 
+func (j *jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

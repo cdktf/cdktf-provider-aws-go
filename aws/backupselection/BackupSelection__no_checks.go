@@ -76,6 +76,10 @@ func (j *jsiiProxy_BackupSelection) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_BackupSelection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupSelection) validateSetIamRoleArnParameters(val *string) error {
 	return nil
 }

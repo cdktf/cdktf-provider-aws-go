@@ -2,14 +2,14 @@ package vpcendpointconnectionaccepter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/vpcendpointconnectionaccepter/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/vpcendpointconnectionaccepter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_connection_accepter aws_vpc_endpoint_connection_accepter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpc_endpoint_connection_accepter aws_vpc_endpoint_connection_accepter}.
 type VpcEndpointConnectionAccepter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type VpcEndpointConnectionAccepter interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_VpcEndpointConnectionAccepter) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_VpcEndpointConnectionAccepter) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VpcEndpointConnectionAccepter) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -343,7 +343,7 @@ func (j *jsiiProxy_VpcEndpointConnectionAccepter) VpcEndpointState() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_connection_accepter aws_vpc_endpoint_connection_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpc_endpoint_connection_accepter aws_vpc_endpoint_connection_accepter} Resource.
 func NewVpcEndpointConnectionAccepter(scope constructs.Construct, id *string, config *VpcEndpointConnectionAccepterConfig) VpcEndpointConnectionAccepter {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewVpcEndpointConnectionAccepter(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_connection_accepter aws_vpc_endpoint_connection_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpc_endpoint_connection_accepter aws_vpc_endpoint_connection_accepter} Resource.
 func NewVpcEndpointConnectionAccepter_Override(v VpcEndpointConnectionAccepter, scope constructs.Construct, id *string, config *VpcEndpointConnectionAccepterConfig) {
 	_init_.Initialize()
 
@@ -383,7 +383,10 @@ func (j *jsiiProxy_VpcEndpointConnectionAccepter)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointConnectionAccepter)SetCount(val *float64) {
+func (j *jsiiProxy_VpcEndpointConnectionAccepter)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

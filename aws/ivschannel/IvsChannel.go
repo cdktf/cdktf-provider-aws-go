@@ -2,14 +2,14 @@ package ivschannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/ivschannel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ivschannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ivs_channel aws_ivs_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ivs_channel aws_ivs_channel}.
 type IvsChannel interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -25,9 +25,9 @@ type IvsChannel interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -200,8 +200,8 @@ func (j *jsiiProxy_IvsChannel) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IvsChannel) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IvsChannel) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -511,7 +511,7 @@ func (j *jsiiProxy_IvsChannel) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ivs_channel aws_ivs_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ivs_channel aws_ivs_channel} Resource.
 func NewIvsChannel(scope constructs.Construct, id *string, config *IvsChannelConfig) IvsChannel {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewIvsChannel(scope constructs.Construct, id *string, config *IvsChannelCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ivs_channel aws_ivs_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ivs_channel aws_ivs_channel} Resource.
 func NewIvsChannel_Override(i IvsChannel, scope constructs.Construct, id *string, config *IvsChannelConfig) {
 	_init_.Initialize()
 
@@ -562,7 +562,10 @@ func (j *jsiiProxy_IvsChannel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IvsChannel)SetCount(val *float64) {
+func (j *jsiiProxy_IvsChannel)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

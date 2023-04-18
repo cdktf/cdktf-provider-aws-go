@@ -64,6 +64,10 @@ func validateDataAwsCognitoUserPools_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCognitoUserPools) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCognitoUserPools) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAwsLbListener) validateSetArnParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLbListener) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLbListener) validateSetIdParameters(val *string) error {
 	return nil
 }

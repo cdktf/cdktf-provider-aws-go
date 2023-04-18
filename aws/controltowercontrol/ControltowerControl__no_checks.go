@@ -76,6 +76,10 @@ func (j *jsiiProxy_ControltowerControl) validateSetControlIdentifierParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ControltowerControl) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ControltowerControl) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_RedshiftserverlessResourcePolicy) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftserverlessResourcePolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftserverlessResourcePolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

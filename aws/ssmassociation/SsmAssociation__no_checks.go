@@ -92,6 +92,10 @@ func (j *jsiiProxy_SsmAssociation) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_SsmAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmAssociation) validateSetDocumentVersionParameters(val *string) error {
 	return nil
 }

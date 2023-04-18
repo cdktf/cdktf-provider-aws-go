@@ -64,6 +64,10 @@ func validateDataAwsOrganizationsOrganizationalUnitDescendantAccounts_IsTerrafor
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOrganizationsOrganizationalUnitDescendantAccounts) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsOrganizationsOrganizationalUnitDescendantAccounts) validateSetIdParameters(val *string) error {
 	return nil
 }

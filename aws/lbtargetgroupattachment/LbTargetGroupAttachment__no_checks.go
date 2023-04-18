@@ -72,6 +72,10 @@ func (j *jsiiProxy_LbTargetGroupAttachment) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_LbTargetGroupAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbTargetGroupAttachment) validateSetIdParameters(val *string) error {
 	return nil
 }

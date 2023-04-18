@@ -2,9 +2,9 @@ package dataawsavailabilityzones
 
 
 type DataAwsAvailabilityZonesFilter struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/availability_zones#name DataAwsAvailabilityZones#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/availability_zones#name DataAwsAvailabilityZones#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/availability_zones#values DataAwsAvailabilityZones#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/availability_zones#values DataAwsAvailabilityZones#values}.
 	Values *[]*string `field:"required" json:"values" yaml:"values"`
 }
 

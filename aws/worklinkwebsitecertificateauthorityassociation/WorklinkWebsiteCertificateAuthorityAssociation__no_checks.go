@@ -72,6 +72,10 @@ func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

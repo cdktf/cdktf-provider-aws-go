@@ -72,6 +72,10 @@ func (j *jsiiProxy_LightsailBucketResourceAccess) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_LightsailBucketResourceAccess) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailBucketResourceAccess) validateSetIdParameters(val *string) error {
 	return nil
 }

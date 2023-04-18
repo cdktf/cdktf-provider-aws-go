@@ -2,14 +2,14 @@ package comprehenddocumentclassifier
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/comprehenddocumentclassifier/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/comprehenddocumentclassifier/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/comprehend_document_classifier aws_comprehend_document_classifier}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/comprehend_document_classifier aws_comprehend_document_classifier}.
 type ComprehendDocumentClassifier interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type ComprehendDocumentClassifier interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataAccessRoleArn() *string
 	SetDataAccessRoleArn(val *string)
 	DataAccessRoleArnInput() *string
@@ -198,8 +198,8 @@ func (j *jsiiProxy_ComprehendDocumentClassifier) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_ComprehendDocumentClassifier) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ComprehendDocumentClassifier) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -629,7 +629,7 @@ func (j *jsiiProxy_ComprehendDocumentClassifier) VpcConfigInput() *ComprehendDoc
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/comprehend_document_classifier aws_comprehend_document_classifier} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/comprehend_document_classifier aws_comprehend_document_classifier} Resource.
 func NewComprehendDocumentClassifier(scope constructs.Construct, id *string, config *ComprehendDocumentClassifierConfig) ComprehendDocumentClassifier {
 	_init_.Initialize()
 
@@ -647,7 +647,7 @@ func NewComprehendDocumentClassifier(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/comprehend_document_classifier aws_comprehend_document_classifier} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/comprehend_document_classifier aws_comprehend_document_classifier} Resource.
 func NewComprehendDocumentClassifier_Override(c ComprehendDocumentClassifier, scope constructs.Construct, id *string, config *ComprehendDocumentClassifierConfig) {
 	_init_.Initialize()
 
@@ -669,7 +669,10 @@ func (j *jsiiProxy_ComprehendDocumentClassifier)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ComprehendDocumentClassifier)SetCount(val *float64) {
+func (j *jsiiProxy_ComprehendDocumentClassifier)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

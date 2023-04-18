@@ -2,14 +2,14 @@ package securityhuborganizationconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/securityhuborganizationconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/securityhuborganizationconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/securityhub_organization_configuration aws_securityhub_organization_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_organization_configuration aws_securityhub_organization_configuration}.
 type SecurityhubOrganizationConfiguration interface {
 	cdktf.TerraformResource
 	AutoEnable() interface{}
@@ -27,9 +27,9 @@ type SecurityhubOrganizationConfiguration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -182,8 +182,8 @@ func (j *jsiiProxy_SecurityhubOrganizationConfiguration) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubOrganizationConfiguration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SecurityhubOrganizationConfiguration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -333,7 +333,7 @@ func (j *jsiiProxy_SecurityhubOrganizationConfiguration) TerraformResourceType()
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/securityhub_organization_configuration aws_securityhub_organization_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_organization_configuration aws_securityhub_organization_configuration} Resource.
 func NewSecurityhubOrganizationConfiguration(scope constructs.Construct, id *string, config *SecurityhubOrganizationConfigurationConfig) SecurityhubOrganizationConfiguration {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewSecurityhubOrganizationConfiguration(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/securityhub_organization_configuration aws_securityhub_organization_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_organization_configuration aws_securityhub_organization_configuration} Resource.
 func NewSecurityhubOrganizationConfiguration_Override(s SecurityhubOrganizationConfiguration, scope constructs.Construct, id *string, config *SecurityhubOrganizationConfigurationConfig) {
 	_init_.Initialize()
 
@@ -395,7 +395,10 @@ func (j *jsiiProxy_SecurityhubOrganizationConfiguration)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_SecurityhubOrganizationConfiguration)SetCount(val *float64) {
+func (j *jsiiProxy_SecurityhubOrganizationConfiguration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

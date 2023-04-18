@@ -72,6 +72,10 @@ func (j *jsiiProxy_CodestarnotificationsNotificationRule) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_CodestarnotificationsNotificationRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodestarnotificationsNotificationRule) validateSetDetailTypeParameters(val *string) error {
 	return nil
 }

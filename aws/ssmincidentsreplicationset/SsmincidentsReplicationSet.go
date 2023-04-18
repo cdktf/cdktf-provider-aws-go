@@ -2,14 +2,14 @@ package ssmincidentsreplicationset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/ssmincidentsreplicationset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ssmincidentsreplicationset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ssmincidents_replication_set aws_ssmincidents_replication_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssmincidents_replication_set aws_ssmincidents_replication_set}.
 type SsmincidentsReplicationSet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type SsmincidentsReplicationSet interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedBy() *string
 	DeletionProtected() cdktf.IResolvable
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_SsmincidentsReplicationSet) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_SsmincidentsReplicationSet) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SsmincidentsReplicationSet) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -436,7 +436,7 @@ func (j *jsiiProxy_SsmincidentsReplicationSet) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ssmincidents_replication_set aws_ssmincidents_replication_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssmincidents_replication_set aws_ssmincidents_replication_set} Resource.
 func NewSsmincidentsReplicationSet(scope constructs.Construct, id *string, config *SsmincidentsReplicationSetConfig) SsmincidentsReplicationSet {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewSsmincidentsReplicationSet(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ssmincidents_replication_set aws_ssmincidents_replication_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssmincidents_replication_set aws_ssmincidents_replication_set} Resource.
 func NewSsmincidentsReplicationSet_Override(s SsmincidentsReplicationSet, scope constructs.Construct, id *string, config *SsmincidentsReplicationSetConfig) {
 	_init_.Initialize()
 
@@ -476,7 +476,10 @@ func (j *jsiiProxy_SsmincidentsReplicationSet)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsmincidentsReplicationSet)SetCount(val *float64) {
+func (j *jsiiProxy_SsmincidentsReplicationSet)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

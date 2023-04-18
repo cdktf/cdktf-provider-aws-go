@@ -2,14 +2,14 @@ package ssoadminaccountassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/ssoadminaccountassignment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ssoadminaccountassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ssoadmin_account_assignment aws_ssoadmin_account_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssoadmin_account_assignment aws_ssoadmin_account_assignment}.
 type SsoadminAccountAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SsoadminAccountAssignment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -154,8 +154,8 @@ func (j *jsiiProxy_SsoadminAccountAssignment) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SsoadminAccountAssignment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -425,7 +425,7 @@ func (j *jsiiProxy_SsoadminAccountAssignment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ssoadmin_account_assignment aws_ssoadmin_account_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssoadmin_account_assignment aws_ssoadmin_account_assignment} Resource.
 func NewSsoadminAccountAssignment(scope constructs.Construct, id *string, config *SsoadminAccountAssignmentConfig) SsoadminAccountAssignment {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewSsoadminAccountAssignment(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ssoadmin_account_assignment aws_ssoadmin_account_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssoadmin_account_assignment aws_ssoadmin_account_assignment} Resource.
 func NewSsoadminAccountAssignment_Override(s SsoadminAccountAssignment, scope constructs.Construct, id *string, config *SsoadminAccountAssignmentConfig) {
 	_init_.Initialize()
 
@@ -465,7 +465,10 @@ func (j *jsiiProxy_SsoadminAccountAssignment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsoadminAccountAssignment)SetCount(val *float64) {
+func (j *jsiiProxy_SsoadminAccountAssignment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

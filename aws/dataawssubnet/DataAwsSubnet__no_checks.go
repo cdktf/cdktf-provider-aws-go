@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataAwsSubnet) validateSetCidrBlockParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSubnet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSubnet) validateSetDefaultForAzParameters(val interface{}) error {
 	return nil
 }

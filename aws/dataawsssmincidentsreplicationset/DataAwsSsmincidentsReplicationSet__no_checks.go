@@ -64,6 +64,10 @@ func validateDataAwsSsmincidentsReplicationSet_IsTerraformElementParameters(x in
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSsmincidentsReplicationSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSsmincidentsReplicationSet) validateSetIdParameters(val *string) error {
 	return nil
 }

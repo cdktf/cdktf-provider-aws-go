@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsS3Bucket) validateSetBucketParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsS3Bucket) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsS3Bucket) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -96,6 +96,10 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpsworksMemcachedLayer) validateSetCustomConfigureRecipesParameters(val *[]*string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package vpcipam
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/vpcipam/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/vpcipam/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam aws_vpc_ipam}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpc_ipam aws_vpc_ipam}.
 type VpcIpam interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -25,9 +25,9 @@ type VpcIpam interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultResourceDiscoveryAssociationId() *string
 	DefaultResourceDiscoveryId() *string
 	// Experimental.
@@ -194,8 +194,8 @@ func (j *jsiiProxy_VpcIpam) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_VpcIpam) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VpcIpam) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -495,7 +495,7 @@ func (j *jsiiProxy_VpcIpam) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam aws_vpc_ipam} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpc_ipam aws_vpc_ipam} Resource.
 func NewVpcIpam(scope constructs.Construct, id *string, config *VpcIpamConfig) VpcIpam {
 	_init_.Initialize()
 
@@ -513,7 +513,7 @@ func NewVpcIpam(scope constructs.Construct, id *string, config *VpcIpamConfig) V
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_ipam aws_vpc_ipam} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpc_ipam aws_vpc_ipam} Resource.
 func NewVpcIpam_Override(v VpcIpam, scope constructs.Construct, id *string, config *VpcIpamConfig) {
 	_init_.Initialize()
 
@@ -546,7 +546,10 @@ func (j *jsiiProxy_VpcIpam)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpcIpam)SetCount(val *float64) {
+func (j *jsiiProxy_VpcIpam)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsGlobalacceleratorCustomRoutingAccelerator) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsGlobalacceleratorCustomRoutingAccelerator) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsGlobalacceleratorCustomRoutingAccelerator) validateSetIdParameters(val *string) error {
 	return nil
 }

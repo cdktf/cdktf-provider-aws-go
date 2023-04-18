@@ -76,6 +76,10 @@ func (j *jsiiProxy_NeptuneClusterEndpoint) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_NeptuneClusterEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NeptuneClusterEndpoint) validateSetEndpointTypeParameters(val *string) error {
 	return nil
 }

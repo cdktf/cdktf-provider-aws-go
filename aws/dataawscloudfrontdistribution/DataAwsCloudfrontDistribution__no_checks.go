@@ -64,6 +64,10 @@ func validateDataAwsCloudfrontDistribution_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudfrontDistribution) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudfrontDistribution) validateSetIdParameters(val *string) error {
 	return nil
 }

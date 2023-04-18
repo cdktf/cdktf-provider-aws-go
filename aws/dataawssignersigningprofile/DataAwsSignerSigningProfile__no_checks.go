@@ -64,6 +64,10 @@ func validateDataAwsSignerSigningProfile_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSignerSigningProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSignerSigningProfile) validateSetIdParameters(val *string) error {
 	return nil
 }

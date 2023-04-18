@@ -68,6 +68,10 @@ func (j *jsiiProxy_GlueResourcePolicy) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_GlueResourcePolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueResourcePolicy) validateSetEnableHybridParameters(val *string) error {
 	return nil
 }

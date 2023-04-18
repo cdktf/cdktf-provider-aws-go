@@ -68,6 +68,10 @@ func (j *jsiiProxy_GuarddutyPublishingDestination) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GuarddutyPublishingDestination) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GuarddutyPublishingDestination) validateSetDestinationArnParameters(val *string) error {
 	return nil
 }

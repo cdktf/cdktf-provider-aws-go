@@ -2,7 +2,7 @@ package networkmanagerconnectpeer
 
 
 type NetworkmanagerConnectPeerBgpOptions struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_connect_peer#peer_asn NetworkmanagerConnectPeer#peer_asn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/networkmanager_connect_peer#peer_asn NetworkmanagerConnectPeer#peer_asn}.
 	PeerAsn *float64 `field:"optional" json:"peerAsn" yaml:"peerAsn"`
 }
 

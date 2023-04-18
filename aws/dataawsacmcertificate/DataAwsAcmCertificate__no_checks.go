@@ -64,6 +64,10 @@ func validateDataAwsAcmCertificate_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAcmCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAcmCertificate) validateSetDomainParameters(val *string) error {
 	return nil
 }

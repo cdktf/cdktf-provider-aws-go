@@ -64,6 +64,10 @@ func validateDataAwsMemorydbParameterGroup_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsMemorydbParameterGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsMemorydbParameterGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAwsOutpostsAsset) validateSetAssetIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOutpostsAsset) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsOutpostsAsset) validateSetIdParameters(val *string) error {
 	return nil
 }

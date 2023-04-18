@@ -80,6 +80,10 @@ func (j *jsiiProxy_FsxOntapFileSystem) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_FsxOntapFileSystem) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOntapFileSystem) validateSetDailyAutomaticBackupStartTimeParameters(val *string) error {
 	return nil
 }

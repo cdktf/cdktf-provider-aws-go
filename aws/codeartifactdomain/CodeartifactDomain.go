@@ -2,14 +2,14 @@ package codeartifactdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/codeartifactdomain/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/codeartifactdomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/codeartifact_domain aws_codeartifact_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/codeartifact_domain aws_codeartifact_domain}.
 type CodeartifactDomain interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -23,9 +23,9 @@ type CodeartifactDomain interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -175,8 +175,8 @@ func (j *jsiiProxy_CodeartifactDomain) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_CodeartifactDomain) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CodeartifactDomain) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -436,7 +436,7 @@ func (j *jsiiProxy_CodeartifactDomain) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/codeartifact_domain aws_codeartifact_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/codeartifact_domain aws_codeartifact_domain} Resource.
 func NewCodeartifactDomain(scope constructs.Construct, id *string, config *CodeartifactDomainConfig) CodeartifactDomain {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewCodeartifactDomain(scope constructs.Construct, id *string, config *Codea
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/codeartifact_domain aws_codeartifact_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/codeartifact_domain aws_codeartifact_domain} Resource.
 func NewCodeartifactDomain_Override(c CodeartifactDomain, scope constructs.Construct, id *string, config *CodeartifactDomainConfig) {
 	_init_.Initialize()
 
@@ -476,7 +476,10 @@ func (j *jsiiProxy_CodeartifactDomain)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CodeartifactDomain)SetCount(val *float64) {
+func (j *jsiiProxy_CodeartifactDomain)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateSetFsxFilesystemArnParameters(val *string) error {
 	return nil
 }

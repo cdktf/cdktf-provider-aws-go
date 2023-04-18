@@ -4,7 +4,7 @@ package appmeshvirtualnode
 type AppmeshVirtualNodeSpecBackendDefaults struct {
 	// client_policy block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#client_policy AppmeshVirtualNode#client_policy}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appmesh_virtual_node#client_policy AppmeshVirtualNode#client_policy}
 	ClientPolicy *AppmeshVirtualNodeSpecBackendDefaultsClientPolicy `field:"optional" json:"clientPolicy" yaml:"clientPolicy"`
 }
 

@@ -68,6 +68,10 @@ func (j *jsiiProxy_S3OutpostsEndpoint) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_S3OutpostsEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3OutpostsEndpoint) validateSetIdParameters(val *string) error {
 	return nil
 }

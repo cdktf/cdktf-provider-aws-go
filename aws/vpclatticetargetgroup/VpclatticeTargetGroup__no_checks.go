@@ -76,6 +76,10 @@ func (j *jsiiProxy_VpclatticeTargetGroup) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_VpclatticeTargetGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpclatticeTargetGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

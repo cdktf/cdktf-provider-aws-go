@@ -68,6 +68,10 @@ func (j *jsiiProxy_CeAnomalyMonitor) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_CeAnomalyMonitor) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CeAnomalyMonitor) validateSetIdParameters(val *string) error {
 	return nil
 }

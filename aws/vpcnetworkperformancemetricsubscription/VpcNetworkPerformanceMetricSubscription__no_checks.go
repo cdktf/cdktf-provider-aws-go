@@ -68,6 +68,10 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) validateSetDestinationParameters(val *string) error {
 	return nil
 }

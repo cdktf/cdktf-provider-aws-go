@@ -72,6 +72,10 @@ func (j *jsiiProxy_Macie2OrganizationAdminAccount) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_Macie2OrganizationAdminAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Macie2OrganizationAdminAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

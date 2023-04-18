@@ -124,6 +124,10 @@ func (j *jsiiProxy_EmrCluster) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_EmrCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrCluster) validateSetCustomAmiIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataawsservicecataloglaunchpaths
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsservicecataloglaunchpaths/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsservicecataloglaunchpaths/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_launch_paths aws_servicecatalog_launch_paths}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/servicecatalog_launch_paths aws_servicecatalog_launch_paths}.
 type DataAwsServicecatalogLaunchPaths interface {
 	cdktf.TerraformDataSource
 	AcceptLanguage() *string
@@ -20,9 +20,9 @@ type DataAwsServicecatalogLaunchPaths interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataAwsServicecatalogLaunchPaths) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogLaunchPaths) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsServicecatalogLaunchPaths) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -340,7 +340,7 @@ func (j *jsiiProxy_DataAwsServicecatalogLaunchPaths) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_launch_paths aws_servicecatalog_launch_paths} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/servicecatalog_launch_paths aws_servicecatalog_launch_paths} Data Source.
 func NewDataAwsServicecatalogLaunchPaths(scope constructs.Construct, id *string, config *DataAwsServicecatalogLaunchPathsConfig) DataAwsServicecatalogLaunchPaths {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewDataAwsServicecatalogLaunchPaths(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_launch_paths aws_servicecatalog_launch_paths} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/servicecatalog_launch_paths aws_servicecatalog_launch_paths} Data Source.
 func NewDataAwsServicecatalogLaunchPaths_Override(d DataAwsServicecatalogLaunchPaths, scope constructs.Construct, id *string, config *DataAwsServicecatalogLaunchPathsConfig) {
 	_init_.Initialize()
 
@@ -380,7 +380,10 @@ func (j *jsiiProxy_DataAwsServicecatalogLaunchPaths)SetAcceptLanguage(val *strin
 	)
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogLaunchPaths)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsServicecatalogLaunchPaths)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

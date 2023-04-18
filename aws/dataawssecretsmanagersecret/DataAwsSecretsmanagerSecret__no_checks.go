@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecret) validateSetArnParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSecretsmanagerSecret) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSecretsmanagerSecret) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package backupvaultnotifications
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/backupvaultnotifications/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/backupvaultnotifications/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/backup_vault_notifications aws_backup_vault_notifications}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/backup_vault_notifications aws_backup_vault_notifications}.
 type BackupVaultNotifications interface {
 	cdktf.TerraformResource
 	BackupVaultArn() *string
@@ -28,9 +28,9 @@ type BackupVaultNotifications interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -195,8 +195,8 @@ func (j *jsiiProxy_BackupVaultNotifications) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_BackupVaultNotifications) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_BackupVaultNotifications) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -366,7 +366,7 @@ func (j *jsiiProxy_BackupVaultNotifications) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/backup_vault_notifications aws_backup_vault_notifications} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/backup_vault_notifications aws_backup_vault_notifications} Resource.
 func NewBackupVaultNotifications(scope constructs.Construct, id *string, config *BackupVaultNotificationsConfig) BackupVaultNotifications {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewBackupVaultNotifications(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/backup_vault_notifications aws_backup_vault_notifications} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/backup_vault_notifications aws_backup_vault_notifications} Resource.
 func NewBackupVaultNotifications_Override(b BackupVaultNotifications, scope constructs.Construct, id *string, config *BackupVaultNotificationsConfig) {
 	_init_.Initialize()
 
@@ -428,7 +428,10 @@ func (j *jsiiProxy_BackupVaultNotifications)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BackupVaultNotifications)SetCount(val *float64) {
+func (j *jsiiProxy_BackupVaultNotifications)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

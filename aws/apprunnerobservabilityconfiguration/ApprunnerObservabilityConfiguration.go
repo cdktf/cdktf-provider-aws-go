@@ -2,14 +2,14 @@ package apprunnerobservabilityconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/apprunnerobservabilityconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/apprunnerobservabilityconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/apprunner_observability_configuration aws_apprunner_observability_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/apprunner_observability_configuration aws_apprunner_observability_configuration}.
 type ApprunnerObservabilityConfiguration interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type ApprunnerObservabilityConfiguration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ApprunnerObservabilityConfiguration) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_ApprunnerObservabilityConfiguration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApprunnerObservabilityConfiguration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -425,7 +425,7 @@ func (j *jsiiProxy_ApprunnerObservabilityConfiguration) TraceConfigurationInput(
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/apprunner_observability_configuration aws_apprunner_observability_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/apprunner_observability_configuration aws_apprunner_observability_configuration} Resource.
 func NewApprunnerObservabilityConfiguration(scope constructs.Construct, id *string, config *ApprunnerObservabilityConfigurationConfig) ApprunnerObservabilityConfiguration {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewApprunnerObservabilityConfiguration(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/apprunner_observability_configuration aws_apprunner_observability_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/apprunner_observability_configuration aws_apprunner_observability_configuration} Resource.
 func NewApprunnerObservabilityConfiguration_Override(a ApprunnerObservabilityConfiguration, scope constructs.Construct, id *string, config *ApprunnerObservabilityConfigurationConfig) {
 	_init_.Initialize()
 
@@ -465,7 +465,10 @@ func (j *jsiiProxy_ApprunnerObservabilityConfiguration)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_ApprunnerObservabilityConfiguration)SetCount(val *float64) {
+func (j *jsiiProxy_ApprunnerObservabilityConfiguration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

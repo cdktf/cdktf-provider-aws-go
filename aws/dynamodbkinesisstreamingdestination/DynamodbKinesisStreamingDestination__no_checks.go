@@ -68,6 +68,10 @@ func (j *jsiiProxy_DynamodbKinesisStreamingDestination) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbKinesisStreamingDestination) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbKinesisStreamingDestination) validateSetIdParameters(val *string) error {
 	return nil
 }

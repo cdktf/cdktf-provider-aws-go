@@ -2,14 +2,14 @@ package appconfigextensionassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/appconfigextensionassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/appconfigextensionassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/appconfig_extension_association aws_appconfig_extension_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appconfig_extension_association aws_appconfig_extension_association}.
 type AppconfigExtensionAssociation interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type AppconfigExtensionAssociation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -157,8 +157,8 @@ func (j *jsiiProxy_AppconfigExtensionAssociation) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_AppconfigExtensionAssociation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppconfigExtensionAssociation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -378,7 +378,7 @@ func (j *jsiiProxy_AppconfigExtensionAssociation) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/appconfig_extension_association aws_appconfig_extension_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appconfig_extension_association aws_appconfig_extension_association} Resource.
 func NewAppconfigExtensionAssociation(scope constructs.Construct, id *string, config *AppconfigExtensionAssociationConfig) AppconfigExtensionAssociation {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewAppconfigExtensionAssociation(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/appconfig_extension_association aws_appconfig_extension_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appconfig_extension_association aws_appconfig_extension_association} Resource.
 func NewAppconfigExtensionAssociation_Override(a AppconfigExtensionAssociation, scope constructs.Construct, id *string, config *AppconfigExtensionAssociationConfig) {
 	_init_.Initialize()
 
@@ -418,7 +418,10 @@ func (j *jsiiProxy_AppconfigExtensionAssociation)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_AppconfigExtensionAssociation)SetCount(val *float64) {
+func (j *jsiiProxy_AppconfigExtensionAssociation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

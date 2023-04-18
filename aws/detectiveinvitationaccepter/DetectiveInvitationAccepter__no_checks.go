@@ -68,6 +68,10 @@ func (j *jsiiProxy_DetectiveInvitationAccepter) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DetectiveInvitationAccepter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DetectiveInvitationAccepter) validateSetGraphArnParameters(val *string) error {
 	return nil
 }

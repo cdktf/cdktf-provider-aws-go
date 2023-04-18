@@ -76,6 +76,10 @@ func (j *jsiiProxy_AutoscalingAttachment) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_AutoscalingAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingAttachment) validateSetElbParameters(val *string) error {
 	return nil
 }

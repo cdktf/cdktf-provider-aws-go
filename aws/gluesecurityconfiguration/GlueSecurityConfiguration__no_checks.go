@@ -72,6 +72,10 @@ func (j *jsiiProxy_GlueSecurityConfiguration) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GlueSecurityConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueSecurityConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

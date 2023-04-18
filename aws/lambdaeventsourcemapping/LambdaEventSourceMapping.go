@@ -2,14 +2,14 @@ package lambdaeventsourcemapping
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/lambdaeventsourcemapping/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/lambdaeventsourcemapping/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping aws_lambda_event_source_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping}.
 type LambdaEventSourceMapping interface {
 	cdktf.TerraformResource
 	AmazonManagedKafkaEventSourceConfig() LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference
@@ -29,9 +29,9 @@ type LambdaEventSourceMapping interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -288,8 +288,8 @@ func (j *jsiiProxy_LambdaEventSourceMapping) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_LambdaEventSourceMapping) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LambdaEventSourceMapping) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -879,7 +879,7 @@ func (j *jsiiProxy_LambdaEventSourceMapping) Uuid() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
 func NewLambdaEventSourceMapping(scope constructs.Construct, id *string, config *LambdaEventSourceMappingConfig) LambdaEventSourceMapping {
 	_init_.Initialize()
 
@@ -897,7 +897,7 @@ func NewLambdaEventSourceMapping(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
 func NewLambdaEventSourceMapping_Override(l LambdaEventSourceMapping, scope constructs.Construct, id *string, config *LambdaEventSourceMappingConfig) {
 	_init_.Initialize()
 
@@ -941,7 +941,10 @@ func (j *jsiiProxy_LambdaEventSourceMapping)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LambdaEventSourceMapping)SetCount(val *float64) {
+func (j *jsiiProxy_LambdaEventSourceMapping)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

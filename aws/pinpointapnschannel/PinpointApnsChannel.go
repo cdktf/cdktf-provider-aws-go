@@ -2,14 +2,14 @@ package pinpointapnschannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/pinpointapnschannel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/pinpointapnschannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_apns_channel aws_pinpoint_apns_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/pinpoint_apns_channel aws_pinpoint_apns_channel}.
 type PinpointApnsChannel interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -30,9 +30,9 @@ type PinpointApnsChannel interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultAuthenticationMethod() *string
 	SetDefaultAuthenticationMethod(val *string)
 	DefaultAuthenticationMethodInput() *string
@@ -230,8 +230,8 @@ func (j *jsiiProxy_PinpointApnsChannel) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_PinpointApnsChannel) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_PinpointApnsChannel) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -501,7 +501,7 @@ func (j *jsiiProxy_PinpointApnsChannel) TokenKeyInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_apns_channel aws_pinpoint_apns_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/pinpoint_apns_channel aws_pinpoint_apns_channel} Resource.
 func NewPinpointApnsChannel(scope constructs.Construct, id *string, config *PinpointApnsChannelConfig) PinpointApnsChannel {
 	_init_.Initialize()
 
@@ -519,7 +519,7 @@ func NewPinpointApnsChannel(scope constructs.Construct, id *string, config *Pinp
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/pinpoint_apns_channel aws_pinpoint_apns_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/pinpoint_apns_channel aws_pinpoint_apns_channel} Resource.
 func NewPinpointApnsChannel_Override(p PinpointApnsChannel, scope constructs.Construct, id *string, config *PinpointApnsChannelConfig) {
 	_init_.Initialize()
 
@@ -574,7 +574,10 @@ func (j *jsiiProxy_PinpointApnsChannel)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_PinpointApnsChannel)SetCount(val *float64) {
+func (j *jsiiProxy_PinpointApnsChannel)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

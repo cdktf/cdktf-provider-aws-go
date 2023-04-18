@@ -2,14 +2,14 @@ package dataawslambdaalias
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslambdaalias/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslambdaalias/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/lambda_alias aws_lambda_alias}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/lambda_alias aws_lambda_alias}.
 type DataAwsLambdaAlias interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -18,9 +18,9 @@ type DataAwsLambdaAlias interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -137,8 +137,8 @@ func (j *jsiiProxy_DataAwsLambdaAlias) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLambdaAlias) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsLambdaAlias) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -348,7 +348,7 @@ func (j *jsiiProxy_DataAwsLambdaAlias) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/lambda_alias aws_lambda_alias} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/lambda_alias aws_lambda_alias} Data Source.
 func NewDataAwsLambdaAlias(scope constructs.Construct, id *string, config *DataAwsLambdaAliasConfig) DataAwsLambdaAlias {
 	_init_.Initialize()
 
@@ -366,7 +366,7 @@ func NewDataAwsLambdaAlias(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/lambda_alias aws_lambda_alias} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/lambda_alias aws_lambda_alias} Data Source.
 func NewDataAwsLambdaAlias_Override(d DataAwsLambdaAlias, scope constructs.Construct, id *string, config *DataAwsLambdaAliasConfig) {
 	_init_.Initialize()
 
@@ -377,7 +377,10 @@ func NewDataAwsLambdaAlias_Override(d DataAwsLambdaAlias, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_DataAwsLambdaAlias)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsLambdaAlias)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

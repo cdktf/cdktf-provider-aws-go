@@ -84,6 +84,10 @@ func (j *jsiiProxy_S3BucketInventory) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketInventory) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketInventory) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

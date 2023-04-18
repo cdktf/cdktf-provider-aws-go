@@ -76,6 +76,10 @@ func (j *jsiiProxy_LocationTrackerAssociation) validateSetConsumerArnParameters(
 	return nil
 }
 
+func (j *jsiiProxy_LocationTrackerAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LocationTrackerAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

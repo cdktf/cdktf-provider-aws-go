@@ -64,6 +64,10 @@ func validateDataAwsAppmeshGatewayRoute_IsTerraformElementParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAppmeshGatewayRoute) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAppmeshGatewayRoute) validateSetIdParameters(val *string) error {
 	return nil
 }

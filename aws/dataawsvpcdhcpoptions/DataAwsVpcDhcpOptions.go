@@ -2,14 +2,14 @@ package dataawsvpcdhcpoptions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsvpcdhcpoptions/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcdhcpoptions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/vpc_dhcp_options aws_vpc_dhcp_options}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/vpc_dhcp_options aws_vpc_dhcp_options}.
 type DataAwsVpcDhcpOptions interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -18,9 +18,9 @@ type DataAwsVpcDhcpOptions interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -150,8 +150,8 @@ func (j *jsiiProxy_DataAwsVpcDhcpOptions) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsVpcDhcpOptions) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsVpcDhcpOptions) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -431,7 +431,7 @@ func (j *jsiiProxy_DataAwsVpcDhcpOptions) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/vpc_dhcp_options aws_vpc_dhcp_options} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/vpc_dhcp_options aws_vpc_dhcp_options} Data Source.
 func NewDataAwsVpcDhcpOptions(scope constructs.Construct, id *string, config *DataAwsVpcDhcpOptionsConfig) DataAwsVpcDhcpOptions {
 	_init_.Initialize()
 
@@ -449,7 +449,7 @@ func NewDataAwsVpcDhcpOptions(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/vpc_dhcp_options aws_vpc_dhcp_options} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/vpc_dhcp_options aws_vpc_dhcp_options} Data Source.
 func NewDataAwsVpcDhcpOptions_Override(d DataAwsVpcDhcpOptions, scope constructs.Construct, id *string, config *DataAwsVpcDhcpOptionsConfig) {
 	_init_.Initialize()
 
@@ -460,7 +460,10 @@ func NewDataAwsVpcDhcpOptions_Override(d DataAwsVpcDhcpOptions, scope constructs
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpcDhcpOptions)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsVpcDhcpOptions)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

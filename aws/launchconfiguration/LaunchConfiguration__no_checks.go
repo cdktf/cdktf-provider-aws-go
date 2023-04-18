@@ -88,6 +88,10 @@ func (j *jsiiProxy_LaunchConfiguration) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_LaunchConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LaunchConfiguration) validateSetEbsOptimizedParameters(val interface{}) error {
 	return nil
 }

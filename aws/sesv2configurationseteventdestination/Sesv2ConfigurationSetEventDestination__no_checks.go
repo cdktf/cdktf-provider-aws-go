@@ -76,6 +76,10 @@ func (j *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Sesv2ConfigurationSetEventDestination) validateSetEventDestinationNameParameters(val *string) error {
 	return nil
 }

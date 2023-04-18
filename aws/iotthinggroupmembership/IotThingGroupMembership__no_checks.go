@@ -68,6 +68,10 @@ func (j *jsiiProxy_IotThingGroupMembership) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_IotThingGroupMembership) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotThingGroupMembership) validateSetIdParameters(val *string) error {
 	return nil
 }

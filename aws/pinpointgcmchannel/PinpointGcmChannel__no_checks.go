@@ -76,6 +76,10 @@ func (j *jsiiProxy_PinpointGcmChannel) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_PinpointGcmChannel) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointGcmChannel) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

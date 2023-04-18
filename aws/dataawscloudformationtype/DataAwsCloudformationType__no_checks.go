@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsCloudformationType) validateSetArnParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudformationType) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudformationType) validateSetIdParameters(val *string) error {
 	return nil
 }

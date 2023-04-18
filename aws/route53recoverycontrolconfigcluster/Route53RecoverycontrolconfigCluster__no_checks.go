@@ -68,6 +68,10 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

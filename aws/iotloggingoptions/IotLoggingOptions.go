@@ -2,14 +2,14 @@ package iotloggingoptions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/iotloggingoptions/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/iotloggingoptions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/iot_logging_options aws_iot_logging_options}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iot_logging_options aws_iot_logging_options}.
 type IotLoggingOptions interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type IotLoggingOptions interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultLogLevel() *string
 	SetDefaultLogLevel(val *string)
 	DefaultLogLevelInput() *string
@@ -145,8 +145,8 @@ func (j *jsiiProxy_IotLoggingOptions) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_IotLoggingOptions) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IotLoggingOptions) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_IotLoggingOptions) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/iot_logging_options aws_iot_logging_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iot_logging_options aws_iot_logging_options} Resource.
 func NewIotLoggingOptions(scope constructs.Construct, id *string, config *IotLoggingOptionsConfig) IotLoggingOptions {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewIotLoggingOptions(scope constructs.Construct, id *string, config *IotLog
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/iot_logging_options aws_iot_logging_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/iot_logging_options aws_iot_logging_options} Resource.
 func NewIotLoggingOptions_Override(i IotLoggingOptions, scope constructs.Construct, id *string, config *IotLoggingOptionsConfig) {
 	_init_.Initialize()
 
@@ -396,7 +396,10 @@ func (j *jsiiProxy_IotLoggingOptions)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IotLoggingOptions)SetCount(val *float64) {
+func (j *jsiiProxy_IotLoggingOptions)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

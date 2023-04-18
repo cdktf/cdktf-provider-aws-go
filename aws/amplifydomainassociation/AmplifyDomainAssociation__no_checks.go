@@ -76,6 +76,10 @@ func (j *jsiiProxy_AmplifyDomainAssociation) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_AmplifyDomainAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AmplifyDomainAssociation) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

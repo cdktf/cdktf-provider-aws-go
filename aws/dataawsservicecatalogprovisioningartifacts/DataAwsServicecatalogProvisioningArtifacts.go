@@ -2,14 +2,14 @@ package dataawsservicecatalogprovisioningartifacts
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsservicecatalogprovisioningartifacts/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsservicecatalogprovisioningartifacts/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_provisioning_artifacts aws_servicecatalog_provisioning_artifacts}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/servicecatalog_provisioning_artifacts aws_servicecatalog_provisioning_artifacts}.
 type DataAwsServicecatalogProvisioningArtifacts interface {
 	cdktf.TerraformDataSource
 	AcceptLanguage() *string
@@ -20,9 +20,9 @@ type DataAwsServicecatalogProvisioningArtifacts interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts) ConstructNodeMeta
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -340,7 +340,7 @@ func (j *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts) TimeoutsInput() i
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_provisioning_artifacts aws_servicecatalog_provisioning_artifacts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/servicecatalog_provisioning_artifacts aws_servicecatalog_provisioning_artifacts} Data Source.
 func NewDataAwsServicecatalogProvisioningArtifacts(scope constructs.Construct, id *string, config *DataAwsServicecatalogProvisioningArtifactsConfig) DataAwsServicecatalogProvisioningArtifacts {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewDataAwsServicecatalogProvisioningArtifacts(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/servicecatalog_provisioning_artifacts aws_servicecatalog_provisioning_artifacts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/servicecatalog_provisioning_artifacts aws_servicecatalog_provisioning_artifacts} Data Source.
 func NewDataAwsServicecatalogProvisioningArtifacts_Override(d DataAwsServicecatalogProvisioningArtifacts, scope constructs.Construct, id *string, config *DataAwsServicecatalogProvisioningArtifactsConfig) {
 	_init_.Initialize()
 
@@ -380,7 +380,10 @@ func (j *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts)SetAcceptLanguage(
 	)
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

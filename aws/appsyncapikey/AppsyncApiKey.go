@@ -2,14 +2,14 @@ package appsyncapikey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/appsyncapikey/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/appsyncapikey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/appsync_api_key aws_appsync_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appsync_api_key aws_appsync_api_key}.
 type AppsyncApiKey interface {
 	cdktf.TerraformResource
 	ApiId() *string
@@ -24,9 +24,9 @@ type AppsyncApiKey interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -167,8 +167,8 @@ func (j *jsiiProxy_AppsyncApiKey) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncApiKey) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppsyncApiKey) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -368,7 +368,7 @@ func (j *jsiiProxy_AppsyncApiKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/appsync_api_key aws_appsync_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appsync_api_key aws_appsync_api_key} Resource.
 func NewAppsyncApiKey(scope constructs.Construct, id *string, config *AppsyncApiKeyConfig) AppsyncApiKey {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewAppsyncApiKey(scope constructs.Construct, id *string, config *AppsyncApi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/appsync_api_key aws_appsync_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appsync_api_key aws_appsync_api_key} Resource.
 func NewAppsyncApiKey_Override(a AppsyncApiKey, scope constructs.Construct, id *string, config *AppsyncApiKeyConfig) {
 	_init_.Initialize()
 
@@ -419,7 +419,10 @@ func (j *jsiiProxy_AppsyncApiKey)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncApiKey)SetCount(val *float64) {
+func (j *jsiiProxy_AppsyncApiKey)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAwsEksAddon) validateSetClusterNameParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEksAddon) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEksAddon) validateSetIdParameters(val *string) error {
 	return nil
 }

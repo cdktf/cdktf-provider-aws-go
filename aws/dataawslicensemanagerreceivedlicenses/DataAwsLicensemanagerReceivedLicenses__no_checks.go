@@ -68,6 +68,10 @@ func validateDataAwsLicensemanagerReceivedLicenses_IsTerraformElementParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLicensemanagerReceivedLicenses) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLicensemanagerReceivedLicenses) validateSetIdParameters(val *string) error {
 	return nil
 }

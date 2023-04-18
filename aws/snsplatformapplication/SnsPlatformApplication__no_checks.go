@@ -76,6 +76,10 @@ func (j *jsiiProxy_SnsPlatformApplication) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_SnsPlatformApplication) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SnsPlatformApplication) validateSetEventDeliveryFailureTopicArnParameters(val *string) error {
 	return nil
 }

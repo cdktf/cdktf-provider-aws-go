@@ -2,14 +2,14 @@ package lambdafunction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/lambdafunction/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/lambdafunction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/lambda_function aws_lambda_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lambda_function aws_lambda_function}.
 type LambdaFunction interface {
 	cdktf.TerraformResource
 	Architectures() *[]*string
@@ -28,9 +28,9 @@ type LambdaFunction interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DeadLetterConfig() LambdaFunctionDeadLetterConfigOutputReference
 	DeadLetterConfigInput() *LambdaFunctionDeadLetterConfig
 	// Experimental.
@@ -328,8 +328,8 @@ func (j *jsiiProxy_LambdaFunction) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_LambdaFunction) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LambdaFunction) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -1199,7 +1199,7 @@ func (j *jsiiProxy_LambdaFunction) VpcConfigInput() *LambdaFunctionVpcConfig {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lambda_function aws_lambda_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lambda_function aws_lambda_function} Resource.
 func NewLambdaFunction(scope constructs.Construct, id *string, config *LambdaFunctionConfig) LambdaFunction {
 	_init_.Initialize()
 
@@ -1217,7 +1217,7 @@ func NewLambdaFunction(scope constructs.Construct, id *string, config *LambdaFun
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lambda_function aws_lambda_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lambda_function aws_lambda_function} Resource.
 func NewLambdaFunction_Override(l LambdaFunction, scope constructs.Construct, id *string, config *LambdaFunctionConfig) {
 	_init_.Initialize()
 
@@ -1261,7 +1261,10 @@ func (j *jsiiProxy_LambdaFunction)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LambdaFunction)SetCount(val *float64) {
+func (j *jsiiProxy_LambdaFunction)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

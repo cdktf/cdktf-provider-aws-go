@@ -2,14 +2,14 @@ package elasticbeanstalkapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/elasticbeanstalkapplication/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/elasticbeanstalkapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_application aws_elastic_beanstalk_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elastic_beanstalk_application aws_elastic_beanstalk_application}.
 type ElasticBeanstalkApplication interface {
 	cdktf.TerraformResource
 	AppversionLifecycle() ElasticBeanstalkApplicationAppversionLifecycleOutputReference
@@ -24,9 +24,9 @@ type ElasticBeanstalkApplication interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -185,8 +185,8 @@ func (j *jsiiProxy_ElasticBeanstalkApplication) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplication) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ElasticBeanstalkApplication) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -416,7 +416,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplication) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_application aws_elastic_beanstalk_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elastic_beanstalk_application aws_elastic_beanstalk_application} Resource.
 func NewElasticBeanstalkApplication(scope constructs.Construct, id *string, config *ElasticBeanstalkApplicationConfig) ElasticBeanstalkApplication {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewElasticBeanstalkApplication(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/elastic_beanstalk_application aws_elastic_beanstalk_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elastic_beanstalk_application aws_elastic_beanstalk_application} Resource.
 func NewElasticBeanstalkApplication_Override(e ElasticBeanstalkApplication, scope constructs.Construct, id *string, config *ElasticBeanstalkApplicationConfig) {
 	_init_.Initialize()
 
@@ -456,7 +456,10 @@ func (j *jsiiProxy_ElasticBeanstalkApplication)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkApplication)SetCount(val *float64) {
+func (j *jsiiProxy_ElasticBeanstalkApplication)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

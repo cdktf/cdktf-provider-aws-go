@@ -68,6 +68,10 @@ func (j *jsiiProxy_SecurityhubInviteAccepter) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_SecurityhubInviteAccepter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityhubInviteAccepter) validateSetIdParameters(val *string) error {
 	return nil
 }

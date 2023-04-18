@@ -2,14 +2,14 @@ package networkmanagertransitgatewayregistration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/networkmanagertransitgatewayregistration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkmanagertransitgatewayregistration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_transit_gateway_registration aws_networkmanager_transit_gateway_registration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/networkmanager_transit_gateway_registration aws_networkmanager_transit_gateway_registration}.
 type NetworkmanagerTransitGatewayRegistration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type NetworkmanagerTransitGatewayRegistration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -145,8 +145,8 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration) TransitGatewayArnIn
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_transit_gateway_registration aws_networkmanager_transit_gateway_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/networkmanager_transit_gateway_registration aws_networkmanager_transit_gateway_registration} Resource.
 func NewNetworkmanagerTransitGatewayRegistration(scope constructs.Construct, id *string, config *NetworkmanagerTransitGatewayRegistrationConfig) NetworkmanagerTransitGatewayRegistration {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewNetworkmanagerTransitGatewayRegistration(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_transit_gateway_registration aws_networkmanager_transit_gateway_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/networkmanager_transit_gateway_registration aws_networkmanager_transit_gateway_registration} Resource.
 func NewNetworkmanagerTransitGatewayRegistration_Override(n NetworkmanagerTransitGatewayRegistration, scope constructs.Construct, id *string, config *NetworkmanagerTransitGatewayRegistrationConfig) {
 	_init_.Initialize()
 
@@ -396,7 +396,10 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration)SetConnection(val in
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration)SetCount(val *float64) {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

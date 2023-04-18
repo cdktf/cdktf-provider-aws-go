@@ -84,6 +84,10 @@ func (j *jsiiProxy_CloudfrontOriginRequestPolicy) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_CloudfrontOriginRequestPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontOriginRequestPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package spotdatafeedsubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/spotdatafeedsubscription/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/spotdatafeedsubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/spot_datafeed_subscription aws_spot_datafeed_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/spot_datafeed_subscription aws_spot_datafeed_subscription}.
 type SpotDatafeedSubscription interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -24,9 +24,9 @@ type SpotDatafeedSubscription interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -162,8 +162,8 @@ func (j *jsiiProxy_SpotDatafeedSubscription) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_SpotDatafeedSubscription) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SpotDatafeedSubscription) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -333,7 +333,7 @@ func (j *jsiiProxy_SpotDatafeedSubscription) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/spot_datafeed_subscription aws_spot_datafeed_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/spot_datafeed_subscription aws_spot_datafeed_subscription} Resource.
 func NewSpotDatafeedSubscription(scope constructs.Construct, id *string, config *SpotDatafeedSubscriptionConfig) SpotDatafeedSubscription {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewSpotDatafeedSubscription(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/spot_datafeed_subscription aws_spot_datafeed_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/spot_datafeed_subscription aws_spot_datafeed_subscription} Resource.
 func NewSpotDatafeedSubscription_Override(s SpotDatafeedSubscription, scope constructs.Construct, id *string, config *SpotDatafeedSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -384,7 +384,10 @@ func (j *jsiiProxy_SpotDatafeedSubscription)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SpotDatafeedSubscription)SetCount(val *float64) {
+func (j *jsiiProxy_SpotDatafeedSubscription)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

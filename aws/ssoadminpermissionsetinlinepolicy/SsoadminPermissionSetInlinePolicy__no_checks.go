@@ -68,6 +68,10 @@ func (j *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

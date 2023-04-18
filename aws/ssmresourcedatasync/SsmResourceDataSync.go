@@ -2,14 +2,14 @@ package ssmresourcedatasync
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/ssmresourcedatasync/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ssmresourcedatasync/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync aws_ssm_resource_data_sync}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssm_resource_data_sync aws_ssm_resource_data_sync}.
 type SsmResourceDataSync interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SsmResourceDataSync interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_SsmResourceDataSync) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_SsmResourceDataSync) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SsmResourceDataSync) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_SsmResourceDataSync) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync aws_ssm_resource_data_sync} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssm_resource_data_sync aws_ssm_resource_data_sync} Resource.
 func NewSsmResourceDataSync(scope constructs.Construct, id *string, config *SsmResourceDataSyncConfig) SsmResourceDataSync {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewSsmResourceDataSync(scope constructs.Construct, id *string, config *SsmR
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ssm_resource_data_sync aws_ssm_resource_data_sync} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssm_resource_data_sync aws_ssm_resource_data_sync} Resource.
 func NewSsmResourceDataSync_Override(s SsmResourceDataSync, scope constructs.Construct, id *string, config *SsmResourceDataSyncConfig) {
 	_init_.Initialize()
 
@@ -372,7 +372,10 @@ func (j *jsiiProxy_SsmResourceDataSync)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsmResourceDataSync)SetCount(val *float64) {
+func (j *jsiiProxy_SsmResourceDataSync)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

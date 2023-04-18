@@ -84,6 +84,10 @@ func (j *jsiiProxy_SesEventDestination) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_SesEventDestination) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesEventDestination) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

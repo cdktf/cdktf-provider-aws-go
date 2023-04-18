@@ -72,6 +72,10 @@ func validateDataAwsEc2InstanceTypeOffering_IsTerraformElementParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2InstanceTypeOffering) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2InstanceTypeOffering) validateSetIdParameters(val *string) error {
 	return nil
 }

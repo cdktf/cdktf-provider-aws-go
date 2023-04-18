@@ -72,6 +72,10 @@ func (j *jsiiProxy_SagemakerMonitoringSchedule) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerMonitoringSchedule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerMonitoringSchedule) validateSetIdParameters(val *string) error {
 	return nil
 }

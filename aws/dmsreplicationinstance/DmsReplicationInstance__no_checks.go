@@ -92,6 +92,10 @@ func (j *jsiiProxy_DmsReplicationInstance) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_DmsReplicationInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsReplicationInstance) validateSetEngineVersionParameters(val *string) error {
 	return nil
 }

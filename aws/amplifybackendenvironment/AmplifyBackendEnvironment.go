@@ -2,14 +2,14 @@ package amplifybackendenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/amplifybackendenvironment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/amplifybackendenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/amplify_backend_environment aws_amplify_backend_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/amplify_backend_environment aws_amplify_backend_environment}.
 type AmplifyBackendEnvironment interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -25,9 +25,9 @@ type AmplifyBackendEnvironment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -180,8 +180,8 @@ func (j *jsiiProxy_AmplifyBackendEnvironment) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyBackendEnvironment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AmplifyBackendEnvironment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_AmplifyBackendEnvironment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/amplify_backend_environment aws_amplify_backend_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/amplify_backend_environment aws_amplify_backend_environment} Resource.
 func NewAmplifyBackendEnvironment(scope constructs.Construct, id *string, config *AmplifyBackendEnvironmentConfig) AmplifyBackendEnvironment {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewAmplifyBackendEnvironment(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/amplify_backend_environment aws_amplify_backend_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/amplify_backend_environment aws_amplify_backend_environment} Resource.
 func NewAmplifyBackendEnvironment_Override(a AmplifyBackendEnvironment, scope constructs.Construct, id *string, config *AmplifyBackendEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -442,7 +442,10 @@ func (j *jsiiProxy_AmplifyBackendEnvironment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyBackendEnvironment)SetCount(val *float64) {
+func (j *jsiiProxy_AmplifyBackendEnvironment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

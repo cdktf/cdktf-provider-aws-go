@@ -2,14 +2,14 @@ package identitystoreuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/identitystoreuser/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/identitystoreuser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/identitystore_user aws_identitystore_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/identitystore_user aws_identitystore_user}.
 type IdentitystoreUser interface {
 	cdktf.TerraformResource
 	Addresses() IdentitystoreUserAddressesOutputReference
@@ -23,9 +23,9 @@ type IdentitystoreUser interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -209,8 +209,8 @@ func (j *jsiiProxy_IdentitystoreUser) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_IdentitystoreUser) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IdentitystoreUser) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -640,7 +640,7 @@ func (j *jsiiProxy_IdentitystoreUser) UserTypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/identitystore_user aws_identitystore_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/identitystore_user aws_identitystore_user} Resource.
 func NewIdentitystoreUser(scope constructs.Construct, id *string, config *IdentitystoreUserConfig) IdentitystoreUser {
 	_init_.Initialize()
 
@@ -658,7 +658,7 @@ func NewIdentitystoreUser(scope constructs.Construct, id *string, config *Identi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/identitystore_user aws_identitystore_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/identitystore_user aws_identitystore_user} Resource.
 func NewIdentitystoreUser_Override(i IdentitystoreUser, scope constructs.Construct, id *string, config *IdentitystoreUserConfig) {
 	_init_.Initialize()
 
@@ -680,7 +680,10 @@ func (j *jsiiProxy_IdentitystoreUser)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IdentitystoreUser)SetCount(val *float64) {
+func (j *jsiiProxy_IdentitystoreUser)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

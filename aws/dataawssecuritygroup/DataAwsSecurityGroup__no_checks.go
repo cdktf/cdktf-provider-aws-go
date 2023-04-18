@@ -72,6 +72,10 @@ func validateDataAwsSecurityGroup_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSecurityGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSecurityGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

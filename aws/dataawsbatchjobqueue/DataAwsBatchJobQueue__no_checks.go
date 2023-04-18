@@ -64,6 +64,10 @@ func validateDataAwsBatchJobQueue_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsBatchJobQueue) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsBatchJobQueue) validateSetIdParameters(val *string) error {
 	return nil
 }

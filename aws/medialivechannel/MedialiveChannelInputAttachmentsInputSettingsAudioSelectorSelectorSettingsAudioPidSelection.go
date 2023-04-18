@@ -2,7 +2,7 @@ package medialivechannel
 
 
 type MedialiveChannelInputAttachmentsInputSettingsAudioSelectorSelectorSettingsAudioPidSelection struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/medialive_channel#pid MedialiveChannel#pid}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#pid MedialiveChannel#pid}.
 	Pid *float64 `field:"required" json:"pid" yaml:"pid"`
 }
 

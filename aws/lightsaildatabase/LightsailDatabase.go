@@ -2,14 +2,14 @@ package lightsaildatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/lightsaildatabase/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/lightsaildatabase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/lightsail_database aws_lightsail_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lightsail_database aws_lightsail_database}.
 type LightsailDatabase interface {
 	cdktf.TerraformResource
 	ApplyImmediately() interface{}
@@ -38,9 +38,9 @@ type LightsailDatabase interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CpuCount() *float64
 	CreatedAt() *string
 	// Experimental.
@@ -325,8 +325,8 @@ func (j *jsiiProxy_LightsailDatabase) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_LightsailDatabase) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LightsailDatabase) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -796,7 +796,7 @@ func (j *jsiiProxy_LightsailDatabase) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lightsail_database aws_lightsail_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lightsail_database aws_lightsail_database} Resource.
 func NewLightsailDatabase(scope constructs.Construct, id *string, config *LightsailDatabaseConfig) LightsailDatabase {
 	_init_.Initialize()
 
@@ -814,7 +814,7 @@ func NewLightsailDatabase(scope constructs.Construct, id *string, config *Lights
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lightsail_database aws_lightsail_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lightsail_database aws_lightsail_database} Resource.
 func NewLightsailDatabase_Override(l LightsailDatabase, scope constructs.Construct, id *string, config *LightsailDatabaseConfig) {
 	_init_.Initialize()
 
@@ -891,7 +891,10 @@ func (j *jsiiProxy_LightsailDatabase)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LightsailDatabase)SetCount(val *float64) {
+func (j *jsiiProxy_LightsailDatabase)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

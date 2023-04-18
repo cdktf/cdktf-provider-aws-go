@@ -64,6 +64,10 @@ func validateDataAwsCodeartifactAuthorizationToken_IsTerraformElementParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) validateSetDomainParameters(val *string) error {
 	return nil
 }

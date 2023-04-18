@@ -2,14 +2,14 @@ package s3bucketversioning
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/s3bucketversioning/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/s3bucketversioning/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_versioning aws_s3_bucket_versioning}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/s3_bucket_versioning aws_s3_bucket_versioning}.
 type S3BucketVersioningA interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -24,9 +24,9 @@ type S3BucketVersioningA interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_S3BucketVersioningA) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketVersioningA) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_S3BucketVersioningA) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -380,7 +380,7 @@ func (j *jsiiProxy_S3BucketVersioningA) VersioningConfigurationInput() *S3Bucket
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_versioning aws_s3_bucket_versioning} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/s3_bucket_versioning aws_s3_bucket_versioning} Resource.
 func NewS3BucketVersioningA(scope constructs.Construct, id *string, config *S3BucketVersioningAConfig) S3BucketVersioningA {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewS3BucketVersioningA(scope constructs.Construct, id *string, config *S3Bu
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_versioning aws_s3_bucket_versioning} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/s3_bucket_versioning aws_s3_bucket_versioning} Resource.
 func NewS3BucketVersioningA_Override(s S3BucketVersioningA, scope constructs.Construct, id *string, config *S3BucketVersioningAConfig) {
 	_init_.Initialize()
 
@@ -431,7 +431,10 @@ func (j *jsiiProxy_S3BucketVersioningA)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketVersioningA)SetCount(val *float64) {
+func (j *jsiiProxy_S3BucketVersioningA)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

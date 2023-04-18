@@ -2,14 +2,14 @@ package dataawsvpcipampool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsvpcipampool/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcipampool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool aws_vpc_ipam_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/vpc_ipam_pool aws_vpc_ipam_pool}.
 type DataAwsVpcIpamPool interface {
 	cdktf.TerraformDataSource
 	AddressFamily() *string
@@ -27,9 +27,9 @@ type DataAwsVpcIpamPool interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -242,8 +242,8 @@ func (j *jsiiProxy_DataAwsVpcIpamPool) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPool) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsVpcIpamPool) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -543,7 +543,7 @@ func (j *jsiiProxy_DataAwsVpcIpamPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool aws_vpc_ipam_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/vpc_ipam_pool aws_vpc_ipam_pool} Data Source.
 func NewDataAwsVpcIpamPool(scope constructs.Construct, id *string, config *DataAwsVpcIpamPoolConfig) DataAwsVpcIpamPool {
 	_init_.Initialize()
 
@@ -561,7 +561,7 @@ func NewDataAwsVpcIpamPool(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/vpc_ipam_pool aws_vpc_ipam_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/vpc_ipam_pool aws_vpc_ipam_pool} Data Source.
 func NewDataAwsVpcIpamPool_Override(d DataAwsVpcIpamPool, scope constructs.Construct, id *string, config *DataAwsVpcIpamPoolConfig) {
 	_init_.Initialize()
 
@@ -583,7 +583,10 @@ func (j *jsiiProxy_DataAwsVpcIpamPool)SetAllocationResourceTags(val *map[string]
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpcIpamPool)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsVpcIpamPool)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

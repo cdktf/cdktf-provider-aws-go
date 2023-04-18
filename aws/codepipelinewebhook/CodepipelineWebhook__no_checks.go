@@ -80,6 +80,10 @@ func (j *jsiiProxy_CodepipelineWebhook) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_CodepipelineWebhook) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodepipelineWebhook) validateSetIdParameters(val *string) error {
 	return nil
 }

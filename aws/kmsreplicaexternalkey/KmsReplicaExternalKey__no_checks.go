@@ -72,6 +72,10 @@ func (j *jsiiProxy_KmsReplicaExternalKey) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_KmsReplicaExternalKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsReplicaExternalKey) validateSetDeletionWindowInDaysParameters(val *float64) error {
 	return nil
 }

@@ -96,6 +96,10 @@ func (j *jsiiProxy_StoragegatewayGateway) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_StoragegatewayGateway) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewayGateway) validateSetGatewayIpAddressParameters(val *string) error {
 	return nil
 }

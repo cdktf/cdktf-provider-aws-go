@@ -72,6 +72,10 @@ func (j *jsiiProxy_ConfigConformancePack) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_ConfigConformancePack) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigConformancePack) validateSetDeliveryS3BucketParameters(val *string) error {
 	return nil
 }

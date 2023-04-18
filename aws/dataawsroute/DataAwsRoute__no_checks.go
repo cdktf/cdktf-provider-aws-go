@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataAwsRoute) validateSetCoreNetworkArnParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRoute) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRoute) validateSetDestinationCidrBlockParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_DetectiveMember) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_DetectiveMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DetectiveMember) validateSetDisableEmailNotificationParameters(val interface{}) error {
 	return nil
 }

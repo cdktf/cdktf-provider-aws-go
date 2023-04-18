@@ -80,6 +80,10 @@ func (j *jsiiProxy_MedialiveMultiplex) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_MedialiveMultiplex) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MedialiveMultiplex) validateSetIdParameters(val *string) error {
 	return nil
 }

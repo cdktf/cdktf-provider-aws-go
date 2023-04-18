@@ -76,6 +76,10 @@ func (j *jsiiProxy_DbSnapshotCopy) validateSetCopyTagsParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DbSnapshotCopy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbSnapshotCopy) validateSetDestinationRegionParameters(val *string) error {
 	return nil
 }

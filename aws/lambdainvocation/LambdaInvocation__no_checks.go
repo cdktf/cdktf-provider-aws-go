@@ -68,6 +68,10 @@ func (j *jsiiProxy_LambdaInvocation) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_LambdaInvocation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaInvocation) validateSetFunctionNameParameters(val *string) error {
 	return nil
 }

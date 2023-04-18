@@ -76,6 +76,10 @@ func (j *jsiiProxy_Ec2Host) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_Ec2Host) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2Host) validateSetHostRecoveryParameters(val *string) error {
 	return nil
 }

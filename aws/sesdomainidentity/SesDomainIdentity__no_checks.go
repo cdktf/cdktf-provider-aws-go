@@ -68,6 +68,10 @@ func (j *jsiiProxy_SesDomainIdentity) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_SesDomainIdentity) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesDomainIdentity) validateSetDomainParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_GlueCatalogDatabase) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GlueCatalogDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueCatalogDatabase) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

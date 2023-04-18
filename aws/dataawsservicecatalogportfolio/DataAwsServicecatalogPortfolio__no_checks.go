@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAwsServicecatalogPortfolio) validateSetAcceptLanguagePara
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsServicecatalogPortfolio) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsServicecatalogPortfolio) validateSetIdParameters(val *string) error {
 	return nil
 }

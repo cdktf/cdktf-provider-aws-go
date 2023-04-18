@@ -2,14 +2,14 @@ package wafratebasedrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/wafratebasedrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafratebasedrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/waf_rate_based_rule aws_waf_rate_based_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/waf_rate_based_rule aws_waf_rate_based_rule}.
 type WafRateBasedRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type WafRateBasedRule interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -170,8 +170,8 @@ func (j *jsiiProxy_WafRateBasedRule) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_WafRateBasedRule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_WafRateBasedRule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -461,7 +461,7 @@ func (j *jsiiProxy_WafRateBasedRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/waf_rate_based_rule aws_waf_rate_based_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/waf_rate_based_rule aws_waf_rate_based_rule} Resource.
 func NewWafRateBasedRule(scope constructs.Construct, id *string, config *WafRateBasedRuleConfig) WafRateBasedRule {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewWafRateBasedRule(scope constructs.Construct, id *string, config *WafRate
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/waf_rate_based_rule aws_waf_rate_based_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/waf_rate_based_rule aws_waf_rate_based_rule} Resource.
 func NewWafRateBasedRule_Override(w WafRateBasedRule, scope constructs.Construct, id *string, config *WafRateBasedRuleConfig) {
 	_init_.Initialize()
 
@@ -501,7 +501,10 @@ func (j *jsiiProxy_WafRateBasedRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WafRateBasedRule)SetCount(val *float64) {
+func (j *jsiiProxy_WafRateBasedRule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

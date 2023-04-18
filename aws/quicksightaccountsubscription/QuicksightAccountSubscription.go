@@ -2,14 +2,14 @@ package quicksightaccountsubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/quicksightaccountsubscription/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/quicksightaccountsubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/quicksight_account_subscription aws_quicksight_account_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription}.
 type QuicksightAccountSubscription interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -43,9 +43,9 @@ type QuicksightAccountSubscription interface {
 	SetContactNumber(val *string)
 	ContactNumberInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -346,8 +346,8 @@ func (j *jsiiProxy_QuicksightAccountSubscription) ContactNumberInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_QuicksightAccountSubscription) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_QuicksightAccountSubscription) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -677,7 +677,7 @@ func (j *jsiiProxy_QuicksightAccountSubscription) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/quicksight_account_subscription aws_quicksight_account_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription} Resource.
 func NewQuicksightAccountSubscription(scope constructs.Construct, id *string, config *QuicksightAccountSubscriptionConfig) QuicksightAccountSubscription {
 	_init_.Initialize()
 
@@ -695,7 +695,7 @@ func NewQuicksightAccountSubscription(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/quicksight_account_subscription aws_quicksight_account_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription} Resource.
 func NewQuicksightAccountSubscription_Override(q QuicksightAccountSubscription, scope constructs.Construct, id *string, config *QuicksightAccountSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -794,7 +794,10 @@ func (j *jsiiProxy_QuicksightAccountSubscription)SetContactNumber(val *string) {
 	)
 }
 
-func (j *jsiiProxy_QuicksightAccountSubscription)SetCount(val *float64) {
+func (j *jsiiProxy_QuicksightAccountSubscription)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

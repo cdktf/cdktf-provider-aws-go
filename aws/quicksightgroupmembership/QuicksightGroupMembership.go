@@ -2,14 +2,14 @@ package quicksightgroupmembership
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/quicksightgroupmembership/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/quicksightgroupmembership/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/quicksight_group_membership aws_quicksight_group_membership}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/quicksight_group_membership aws_quicksight_group_membership}.
 type QuicksightGroupMembership interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -25,9 +25,9 @@ type QuicksightGroupMembership interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -180,8 +180,8 @@ func (j *jsiiProxy_QuicksightGroupMembership) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_QuicksightGroupMembership) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_QuicksightGroupMembership) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_QuicksightGroupMembership) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/quicksight_group_membership aws_quicksight_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/quicksight_group_membership aws_quicksight_group_membership} Resource.
 func NewQuicksightGroupMembership(scope constructs.Construct, id *string, config *QuicksightGroupMembershipConfig) QuicksightGroupMembership {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewQuicksightGroupMembership(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/quicksight_group_membership aws_quicksight_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/quicksight_group_membership aws_quicksight_group_membership} Resource.
 func NewQuicksightGroupMembership_Override(q QuicksightGroupMembership, scope constructs.Construct, id *string, config *QuicksightGroupMembershipConfig) {
 	_init_.Initialize()
 
@@ -442,7 +442,10 @@ func (j *jsiiProxy_QuicksightGroupMembership)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_QuicksightGroupMembership)SetCount(val *float64) {
+func (j *jsiiProxy_QuicksightGroupMembership)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

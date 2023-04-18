@@ -2,14 +2,14 @@ package ssmmaintenancewindow
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/ssmmaintenancewindow/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ssmmaintenancewindow/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window aws_ssm_maintenance_window}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssm_maintenance_window aws_ssm_maintenance_window}.
 type SsmMaintenanceWindow interface {
 	cdktf.TerraformResource
 	AllowUnassociatedTargets() interface{}
@@ -24,9 +24,9 @@ type SsmMaintenanceWindow interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Cutoff() *float64
 	SetCutoff(val *float64)
 	CutoffInput() *float64
@@ -203,8 +203,8 @@ func (j *jsiiProxy_SsmMaintenanceWindow) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SsmMaintenanceWindow) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -594,7 +594,7 @@ func (j *jsiiProxy_SsmMaintenanceWindow) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window aws_ssm_maintenance_window} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssm_maintenance_window aws_ssm_maintenance_window} Resource.
 func NewSsmMaintenanceWindow(scope constructs.Construct, id *string, config *SsmMaintenanceWindowConfig) SsmMaintenanceWindow {
 	_init_.Initialize()
 
@@ -612,7 +612,7 @@ func NewSsmMaintenanceWindow(scope constructs.Construct, id *string, config *Ssm
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ssm_maintenance_window aws_ssm_maintenance_window} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssm_maintenance_window aws_ssm_maintenance_window} Resource.
 func NewSsmMaintenanceWindow_Override(s SsmMaintenanceWindow, scope constructs.Construct, id *string, config *SsmMaintenanceWindowConfig) {
 	_init_.Initialize()
 
@@ -645,7 +645,10 @@ func (j *jsiiProxy_SsmMaintenanceWindow)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindow)SetCount(val *float64) {
+func (j *jsiiProxy_SsmMaintenanceWindow)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

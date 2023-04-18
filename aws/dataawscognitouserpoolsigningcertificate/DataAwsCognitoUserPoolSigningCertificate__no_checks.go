@@ -64,6 +64,10 @@ func validateDataAwsCognitoUserPoolSigningCertificate_IsTerraformElementParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

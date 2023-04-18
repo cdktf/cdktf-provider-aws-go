@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsIvsStreamKey) validateSetChannelArnParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsIvsStreamKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsIvsStreamKey) validateSetIdParameters(val *string) error {
 	return nil
 }

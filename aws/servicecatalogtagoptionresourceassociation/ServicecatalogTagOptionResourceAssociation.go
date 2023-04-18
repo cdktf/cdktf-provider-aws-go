@@ -2,14 +2,14 @@ package servicecatalogtagoptionresourceassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/servicecatalogtagoptionresourceassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/servicecatalogtagoptionresourceassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_tag_option_resource_association aws_servicecatalog_tag_option_resource_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/servicecatalog_tag_option_resource_association aws_servicecatalog_tag_option_resource_association}.
 type ServicecatalogTagOptionResourceAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ServicecatalogTagOptionResourceAssociation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -149,8 +149,8 @@ func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation) ConstructNodeMeta
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -400,7 +400,7 @@ func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation) TimeoutsInput() i
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_tag_option_resource_association aws_servicecatalog_tag_option_resource_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/servicecatalog_tag_option_resource_association aws_servicecatalog_tag_option_resource_association} Resource.
 func NewServicecatalogTagOptionResourceAssociation(scope constructs.Construct, id *string, config *ServicecatalogTagOptionResourceAssociationConfig) ServicecatalogTagOptionResourceAssociation {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewServicecatalogTagOptionResourceAssociation(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_tag_option_resource_association aws_servicecatalog_tag_option_resource_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/servicecatalog_tag_option_resource_association aws_servicecatalog_tag_option_resource_association} Resource.
 func NewServicecatalogTagOptionResourceAssociation_Override(s ServicecatalogTagOptionResourceAssociation, scope constructs.Construct, id *string, config *ServicecatalogTagOptionResourceAssociationConfig) {
 	_init_.Initialize()
 
@@ -440,7 +440,10 @@ func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation)SetConnection(val 
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation)SetCount(val *float64) {
+func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func (j *jsiiProxy_IamSamlProvider) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_IamSamlProvider) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamSamlProvider) validateSetIdParameters(val *string) error {
 	return nil
 }

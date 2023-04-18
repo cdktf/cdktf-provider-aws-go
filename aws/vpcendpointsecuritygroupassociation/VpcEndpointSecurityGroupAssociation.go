@@ -2,14 +2,14 @@ package vpcendpointsecuritygroupassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/vpcendpointsecuritygroupassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/vpcendpointsecuritygroupassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_security_group_association aws_vpc_endpoint_security_group_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpc_endpoint_security_group_association aws_vpc_endpoint_security_group_association}.
 type VpcEndpointSecurityGroupAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type VpcEndpointSecurityGroupAssociation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -145,8 +145,8 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation) VpcEndpointIdInput() *st
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_security_group_association aws_vpc_endpoint_security_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpc_endpoint_security_group_association aws_vpc_endpoint_security_group_association} Resource.
 func NewVpcEndpointSecurityGroupAssociation(scope constructs.Construct, id *string, config *VpcEndpointSecurityGroupAssociationConfig) VpcEndpointSecurityGroupAssociation {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewVpcEndpointSecurityGroupAssociation(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_endpoint_security_group_association aws_vpc_endpoint_security_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpc_endpoint_security_group_association aws_vpc_endpoint_security_group_association} Resource.
 func NewVpcEndpointSecurityGroupAssociation_Override(v VpcEndpointSecurityGroupAssociation, scope constructs.Construct, id *string, config *VpcEndpointSecurityGroupAssociationConfig) {
 	_init_.Initialize()
 
@@ -396,7 +396,10 @@ func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetCount(val *float64) {
+func (j *jsiiProxy_VpcEndpointSecurityGroupAssociation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

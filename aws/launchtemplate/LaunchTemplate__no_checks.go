@@ -144,6 +144,10 @@ func (j *jsiiProxy_LaunchTemplate) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_LaunchTemplate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LaunchTemplate) validateSetDefaultVersionParameters(val *float64) error {
 	return nil
 }

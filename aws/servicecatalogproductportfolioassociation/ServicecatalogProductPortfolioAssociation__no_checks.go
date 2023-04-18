@@ -76,6 +76,10 @@ func (j *jsiiProxy_ServicecatalogProductPortfolioAssociation) validateSetConnect
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogProductPortfolioAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogProductPortfolioAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

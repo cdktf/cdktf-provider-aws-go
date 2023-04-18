@@ -76,6 +76,10 @@ func (j *jsiiProxy_FsxOntapVolume) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_FsxOntapVolume) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOntapVolume) validateSetIdParameters(val *string) error {
 	return nil
 }

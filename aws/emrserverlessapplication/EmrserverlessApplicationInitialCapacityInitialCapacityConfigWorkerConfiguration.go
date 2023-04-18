@@ -2,11 +2,11 @@ package emrserverlessapplication
 
 
 type EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emrserverless_application#cpu EmrserverlessApplication#cpu}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emrserverless_application#cpu EmrserverlessApplication#cpu}.
 	Cpu *string `field:"required" json:"cpu" yaml:"cpu"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emrserverless_application#memory EmrserverlessApplication#memory}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emrserverless_application#memory EmrserverlessApplication#memory}.
 	Memory *string `field:"required" json:"memory" yaml:"memory"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/emrserverless_application#disk EmrserverlessApplication#disk}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emrserverless_application#disk EmrserverlessApplication#disk}.
 	Disk *string `field:"optional" json:"disk" yaml:"disk"`
 }
 

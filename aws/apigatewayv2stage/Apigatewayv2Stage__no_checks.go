@@ -92,6 +92,10 @@ func (j *jsiiProxy_Apigatewayv2Stage) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_Apigatewayv2Stage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2Stage) validateSetDeploymentIdParameters(val *string) error {
 	return nil
 }

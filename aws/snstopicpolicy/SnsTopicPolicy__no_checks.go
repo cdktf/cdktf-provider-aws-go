@@ -72,6 +72,10 @@ func (j *jsiiProxy_SnsTopicPolicy) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_SnsTopicPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SnsTopicPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

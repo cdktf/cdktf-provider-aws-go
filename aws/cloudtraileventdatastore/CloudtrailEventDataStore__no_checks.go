@@ -76,6 +76,10 @@ func (j *jsiiProxy_CloudtrailEventDataStore) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_CloudtrailEventDataStore) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudtrailEventDataStore) validateSetIdParameters(val *string) error {
 	return nil
 }

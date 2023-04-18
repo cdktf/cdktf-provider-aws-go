@@ -68,6 +68,10 @@ func (j *jsiiProxy_Ec2SerialConsoleAccess) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_Ec2SerialConsoleAccess) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2SerialConsoleAccess) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

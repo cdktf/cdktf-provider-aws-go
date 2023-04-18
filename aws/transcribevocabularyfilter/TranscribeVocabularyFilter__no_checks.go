@@ -68,6 +68,10 @@ func (j *jsiiProxy_TranscribeVocabularyFilter) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_TranscribeVocabularyFilter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TranscribeVocabularyFilter) validateSetIdParameters(val *string) error {
 	return nil
 }

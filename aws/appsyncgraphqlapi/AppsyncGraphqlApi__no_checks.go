@@ -92,6 +92,10 @@ func (j *jsiiProxy_AppsyncGraphqlApi) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_AppsyncGraphqlApi) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncGraphqlApi) validateSetIdParameters(val *string) error {
 	return nil
 }

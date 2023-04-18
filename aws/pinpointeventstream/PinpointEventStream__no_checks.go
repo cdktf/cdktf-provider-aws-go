@@ -72,6 +72,10 @@ func (j *jsiiProxy_PinpointEventStream) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_PinpointEventStream) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointEventStream) validateSetDestinationStreamArnParameters(val *string) error {
 	return nil
 }

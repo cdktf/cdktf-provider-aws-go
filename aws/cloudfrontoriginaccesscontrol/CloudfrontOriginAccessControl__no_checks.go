@@ -68,6 +68,10 @@ func (j *jsiiProxy_CloudfrontOriginAccessControl) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_CloudfrontOriginAccessControl) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontOriginAccessControl) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

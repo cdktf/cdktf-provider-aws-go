@@ -68,6 +68,10 @@ func validateDataAwsEmrReleaseLabels_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEmrReleaseLabels) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEmrReleaseLabels) validateSetIdParameters(val *string) error {
 	return nil
 }

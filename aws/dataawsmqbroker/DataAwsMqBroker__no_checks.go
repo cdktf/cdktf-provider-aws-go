@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAwsMqBroker) validateSetBrokerNameParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsMqBroker) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsMqBroker) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsLocationTrackerAssociation) validateSetConsumerArnPara
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLocationTrackerAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLocationTrackerAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

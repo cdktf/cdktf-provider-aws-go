@@ -2,14 +2,14 @@ package schedulerschedule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/schedulerschedule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/schedulerschedule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/scheduler_schedule aws_scheduler_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/scheduler_schedule aws_scheduler_schedule}.
 type SchedulerSchedule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type SchedulerSchedule interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -191,8 +191,8 @@ func (j *jsiiProxy_SchedulerSchedule) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_SchedulerSchedule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SchedulerSchedule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -582,7 +582,7 @@ func (j *jsiiProxy_SchedulerSchedule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/scheduler_schedule aws_scheduler_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/scheduler_schedule aws_scheduler_schedule} Resource.
 func NewSchedulerSchedule(scope constructs.Construct, id *string, config *SchedulerScheduleConfig) SchedulerSchedule {
 	_init_.Initialize()
 
@@ -600,7 +600,7 @@ func NewSchedulerSchedule(scope constructs.Construct, id *string, config *Schedu
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/scheduler_schedule aws_scheduler_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/scheduler_schedule aws_scheduler_schedule} Resource.
 func NewSchedulerSchedule_Override(s SchedulerSchedule, scope constructs.Construct, id *string, config *SchedulerScheduleConfig) {
 	_init_.Initialize()
 
@@ -622,7 +622,10 @@ func (j *jsiiProxy_SchedulerSchedule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SchedulerSchedule)SetCount(val *float64) {
+func (j *jsiiProxy_SchedulerSchedule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

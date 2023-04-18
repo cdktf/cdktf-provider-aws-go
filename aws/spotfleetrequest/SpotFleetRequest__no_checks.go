@@ -88,6 +88,10 @@ func (j *jsiiProxy_SpotFleetRequest) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_SpotFleetRequest) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpotFleetRequest) validateSetExcessCapacityTerminationPolicyParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsOrganizationsDelegatedServices) validateSetAccountIdPa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOrganizationsDelegatedServices) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsOrganizationsDelegatedServices) validateSetIdParameters(val *string) error {
 	return nil
 }

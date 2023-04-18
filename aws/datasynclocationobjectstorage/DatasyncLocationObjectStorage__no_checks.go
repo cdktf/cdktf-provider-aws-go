@@ -80,6 +80,10 @@ func (j *jsiiProxy_DatasyncLocationObjectStorage) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncLocationObjectStorage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationObjectStorage) validateSetIdParameters(val *string) error {
 	return nil
 }

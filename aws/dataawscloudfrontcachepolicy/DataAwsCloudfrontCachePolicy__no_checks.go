@@ -64,6 +64,10 @@ func validateDataAwsCloudfrontCachePolicy_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudfrontCachePolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudfrontCachePolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

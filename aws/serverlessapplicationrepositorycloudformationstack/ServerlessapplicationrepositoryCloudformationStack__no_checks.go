@@ -80,6 +80,10 @@ func (j *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateS
 	return nil
 }
 
+func (j *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateSetIdParameters(val *string) error {
 	return nil
 }

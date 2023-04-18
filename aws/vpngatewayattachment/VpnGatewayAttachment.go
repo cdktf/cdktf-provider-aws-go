@@ -2,14 +2,14 @@ package vpngatewayattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/vpngatewayattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/vpngatewayattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpn_gateway_attachment aws_vpn_gateway_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpn_gateway_attachment aws_vpn_gateway_attachment}.
 type VpnGatewayAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type VpnGatewayAttachment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_VpnGatewayAttachment) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_VpnGatewayAttachment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VpnGatewayAttachment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_VpnGatewayAttachment) VpnGatewayIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpn_gateway_attachment aws_vpn_gateway_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpn_gateway_attachment aws_vpn_gateway_attachment} Resource.
 func NewVpnGatewayAttachment(scope constructs.Construct, id *string, config *VpnGatewayAttachmentConfig) VpnGatewayAttachment {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewVpnGatewayAttachment(scope constructs.Construct, id *string, config *Vpn
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpn_gateway_attachment aws_vpn_gateway_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpn_gateway_attachment aws_vpn_gateway_attachment} Resource.
 func NewVpnGatewayAttachment_Override(v VpnGatewayAttachment, scope constructs.Construct, id *string, config *VpnGatewayAttachmentConfig) {
 	_init_.Initialize()
 
@@ -372,7 +372,10 @@ func (j *jsiiProxy_VpnGatewayAttachment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpnGatewayAttachment)SetCount(val *float64) {
+func (j *jsiiProxy_VpnGatewayAttachment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

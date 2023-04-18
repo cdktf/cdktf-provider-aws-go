@@ -68,6 +68,10 @@ func validateDataAwsEbsEncryptionByDefault_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEbsEncryptionByDefault) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEbsEncryptionByDefault) validateSetIdParameters(val *string) error {
 	return nil
 }

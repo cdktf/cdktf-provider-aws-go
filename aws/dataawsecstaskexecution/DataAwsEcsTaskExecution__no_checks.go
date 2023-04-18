@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataAwsEcsTaskExecution) validateSetClusterParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEcsTaskExecution) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEcsTaskExecution) validateSetDesiredCountParameters(val *float64) error {
 	return nil
 }

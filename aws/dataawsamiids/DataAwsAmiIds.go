@@ -2,14 +2,14 @@ package dataawsamiids
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsamiids/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsamiids/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/ami_ids aws_ami_ids}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ami_ids aws_ami_ids}.
 type DataAwsAmiIds interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAwsAmiIds interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DataAwsAmiIds) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAmiIds) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsAmiIds) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -412,7 +412,7 @@ func (j *jsiiProxy_DataAwsAmiIds) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ami_ids aws_ami_ids} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ami_ids aws_ami_ids} Data Source.
 func NewDataAwsAmiIds(scope constructs.Construct, id *string, config *DataAwsAmiIdsConfig) DataAwsAmiIds {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewDataAwsAmiIds(scope constructs.Construct, id *string, config *DataAwsAmi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ami_ids aws_ami_ids} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ami_ids aws_ami_ids} Data Source.
 func NewDataAwsAmiIds_Override(d DataAwsAmiIds, scope constructs.Construct, id *string, config *DataAwsAmiIdsConfig) {
 	_init_.Initialize()
 
@@ -441,7 +441,10 @@ func NewDataAwsAmiIds_Override(d DataAwsAmiIds, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_DataAwsAmiIds)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsAmiIds)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsServerlessapplicationrepositoryApplication) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsServerlessapplicationrepositoryApplication) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsServerlessapplicationrepositoryApplication) validateSetIdParameters(val *string) error {
 	return nil
 }

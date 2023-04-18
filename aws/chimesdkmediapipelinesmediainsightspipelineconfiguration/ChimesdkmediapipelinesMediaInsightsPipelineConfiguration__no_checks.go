@@ -80,6 +80,10 @@ func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) val
 	return nil
 }
 
+func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

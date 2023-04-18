@@ -136,6 +136,10 @@ func (j *jsiiProxy_RedshiftCluster) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftCluster) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

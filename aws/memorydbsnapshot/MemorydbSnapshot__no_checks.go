@@ -76,6 +76,10 @@ func (j *jsiiProxy_MemorydbSnapshot) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_MemorydbSnapshot) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemorydbSnapshot) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataawsec2instancetype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsec2instancetype/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsec2instancetype/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_instance_type aws_ec2_instance_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_instance_type aws_ec2_instance_type}.
 type DataAwsEc2InstanceType interface {
 	cdktf.TerraformDataSource
 	AutoRecoverySupported() cdktf.IResolvable
@@ -20,9 +20,9 @@ type DataAwsEc2InstanceType interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CurrentGeneration() cdktf.IResolvable
 	DedicatedHostsSupported() cdktf.IResolvable
 	DefaultCores() *float64
@@ -199,8 +199,8 @@ func (j *jsiiProxy_DataAwsEc2InstanceType) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2InstanceType) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsEc2InstanceType) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -800,7 +800,7 @@ func (j *jsiiProxy_DataAwsEc2InstanceType) ValidThreadsPerCore() *[]*float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_instance_type aws_ec2_instance_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_instance_type aws_ec2_instance_type} Data Source.
 func NewDataAwsEc2InstanceType(scope constructs.Construct, id *string, config *DataAwsEc2InstanceTypeConfig) DataAwsEc2InstanceType {
 	_init_.Initialize()
 
@@ -818,7 +818,7 @@ func NewDataAwsEc2InstanceType(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_instance_type aws_ec2_instance_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_instance_type aws_ec2_instance_type} Data Source.
 func NewDataAwsEc2InstanceType_Override(d DataAwsEc2InstanceType, scope constructs.Construct, id *string, config *DataAwsEc2InstanceTypeConfig) {
 	_init_.Initialize()
 
@@ -829,7 +829,10 @@ func NewDataAwsEc2InstanceType_Override(d DataAwsEc2InstanceType, scope construc
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2InstanceType)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsEc2InstanceType)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

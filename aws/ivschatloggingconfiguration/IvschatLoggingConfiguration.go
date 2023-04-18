@@ -2,14 +2,14 @@ package ivschatloggingconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/ivschatloggingconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ivschatloggingconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ivschat_logging_configuration aws_ivschat_logging_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ivschat_logging_configuration aws_ivschat_logging_configuration}.
 type IvschatLoggingConfiguration interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type IvschatLoggingConfiguration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -167,8 +167,8 @@ func (j *jsiiProxy_IvschatLoggingConfiguration) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_IvschatLoggingConfiguration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IvschatLoggingConfiguration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -428,7 +428,7 @@ func (j *jsiiProxy_IvschatLoggingConfiguration) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ivschat_logging_configuration aws_ivschat_logging_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ivschat_logging_configuration aws_ivschat_logging_configuration} Resource.
 func NewIvschatLoggingConfiguration(scope constructs.Construct, id *string, config *IvschatLoggingConfigurationConfig) IvschatLoggingConfiguration {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewIvschatLoggingConfiguration(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ivschat_logging_configuration aws_ivschat_logging_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ivschat_logging_configuration aws_ivschat_logging_configuration} Resource.
 func NewIvschatLoggingConfiguration_Override(i IvschatLoggingConfiguration, scope constructs.Construct, id *string, config *IvschatLoggingConfigurationConfig) {
 	_init_.Initialize()
 
@@ -468,7 +468,10 @@ func (j *jsiiProxy_IvschatLoggingConfiguration)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IvschatLoggingConfiguration)SetCount(val *float64) {
+func (j *jsiiProxy_IvschatLoggingConfiguration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

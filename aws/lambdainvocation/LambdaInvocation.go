@@ -2,14 +2,14 @@ package lambdainvocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/lambdainvocation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/lambdainvocation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/lambda_invocation aws_lambda_invocation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lambda_invocation aws_lambda_invocation}.
 type LambdaInvocation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type LambdaInvocation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -150,8 +150,8 @@ func (j *jsiiProxy_LambdaInvocation) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_LambdaInvocation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LambdaInvocation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_LambdaInvocation) TriggersInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lambda_invocation aws_lambda_invocation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lambda_invocation aws_lambda_invocation} Resource.
 func NewLambdaInvocation(scope constructs.Construct, id *string, config *LambdaInvocationConfig) LambdaInvocation {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewLambdaInvocation(scope constructs.Construct, id *string, config *LambdaI
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lambda_invocation aws_lambda_invocation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lambda_invocation aws_lambda_invocation} Resource.
 func NewLambdaInvocation_Override(l LambdaInvocation, scope constructs.Construct, id *string, config *LambdaInvocationConfig) {
 	_init_.Initialize()
 
@@ -431,7 +431,10 @@ func (j *jsiiProxy_LambdaInvocation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LambdaInvocation)SetCount(val *float64) {
+func (j *jsiiProxy_LambdaInvocation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

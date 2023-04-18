@@ -84,6 +84,10 @@ func (j *jsiiProxy_S3BucketNotification) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketNotification) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketNotification) validateSetEventbridgeParameters(val interface{}) error {
 	return nil
 }

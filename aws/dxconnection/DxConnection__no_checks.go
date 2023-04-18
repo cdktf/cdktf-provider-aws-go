@@ -72,6 +72,10 @@ func (j *jsiiProxy_DxConnection) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DxConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DxConnection) validateSetEncryptionModeParameters(val *string) error {
 	return nil
 }

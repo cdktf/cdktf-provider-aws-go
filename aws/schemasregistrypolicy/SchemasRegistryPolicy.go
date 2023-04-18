@@ -2,14 +2,14 @@ package schemasregistrypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/schemasregistrypolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/schemasregistrypolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/schemas_registry_policy aws_schemas_registry_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/schemas_registry_policy aws_schemas_registry_policy}.
 type SchemasRegistryPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SchemasRegistryPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_SchemasRegistryPolicy) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_SchemasRegistryPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SchemasRegistryPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_SchemasRegistryPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/schemas_registry_policy aws_schemas_registry_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/schemas_registry_policy aws_schemas_registry_policy} Resource.
 func NewSchemasRegistryPolicy(scope constructs.Construct, id *string, config *SchemasRegistryPolicyConfig) SchemasRegistryPolicy {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewSchemasRegistryPolicy(scope constructs.Construct, id *string, config *Sc
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/schemas_registry_policy aws_schemas_registry_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/schemas_registry_policy aws_schemas_registry_policy} Resource.
 func NewSchemasRegistryPolicy_Override(s SchemasRegistryPolicy, scope constructs.Construct, id *string, config *SchemasRegistryPolicyConfig) {
 	_init_.Initialize()
 
@@ -372,7 +372,10 @@ func (j *jsiiProxy_SchemasRegistryPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SchemasRegistryPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_SchemasRegistryPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func (j *jsiiProxy_ElasticacheSubnetGroup) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheSubnetGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheSubnetGroup) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataAwsOutpostsSite_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOutpostsSite) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsOutpostsSite) validateSetIdParameters(val *string) error {
 	return nil
 }

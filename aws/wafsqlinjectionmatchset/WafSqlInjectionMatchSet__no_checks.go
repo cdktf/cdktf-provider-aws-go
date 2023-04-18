@@ -72,6 +72,10 @@ func (j *jsiiProxy_WafSqlInjectionMatchSet) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_WafSqlInjectionMatchSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafSqlInjectionMatchSet) validateSetIdParameters(val *string) error {
 	return nil
 }

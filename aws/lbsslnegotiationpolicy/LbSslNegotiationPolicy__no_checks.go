@@ -72,6 +72,10 @@ func (j *jsiiProxy_LbSslNegotiationPolicy) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_LbSslNegotiationPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbSslNegotiationPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

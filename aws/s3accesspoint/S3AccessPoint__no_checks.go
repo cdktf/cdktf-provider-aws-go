@@ -88,6 +88,10 @@ func (j *jsiiProxy_S3AccessPoint) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_S3AccessPoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3AccessPoint) validateSetIdParameters(val *string) error {
 	return nil
 }

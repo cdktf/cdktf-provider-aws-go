@@ -76,6 +76,10 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_DirectoryServiceRadiusSettings) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DirectoryServiceRadiusSettings) validateSetDirectoryIdParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_EcsAccountSettingDefault) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_EcsAccountSettingDefault) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsAccountSettingDefault) validateSetIdParameters(val *string) error {
 	return nil
 }

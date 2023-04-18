@@ -68,6 +68,10 @@ func (j *jsiiProxy_SqsQueueRedriveAllowPolicy) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_SqsQueueRedriveAllowPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqsQueueRedriveAllowPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

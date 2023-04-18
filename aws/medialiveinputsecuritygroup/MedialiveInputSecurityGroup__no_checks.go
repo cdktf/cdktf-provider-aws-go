@@ -76,6 +76,10 @@ func (j *jsiiProxy_MedialiveInputSecurityGroup) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_MedialiveInputSecurityGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MedialiveInputSecurityGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

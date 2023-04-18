@@ -2,14 +2,14 @@ package snstopicpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/snstopicpolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/snstopicpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/sns_topic_policy aws_sns_topic_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sns_topic_policy aws_sns_topic_policy}.
 type SnsTopicPolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -24,9 +24,9 @@ type SnsTopicPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -162,8 +162,8 @@ func (j *jsiiProxy_SnsTopicPolicy) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopicPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SnsTopicPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -343,7 +343,7 @@ func (j *jsiiProxy_SnsTopicPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/sns_topic_policy aws_sns_topic_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sns_topic_policy aws_sns_topic_policy} Resource.
 func NewSnsTopicPolicy(scope constructs.Construct, id *string, config *SnsTopicPolicyConfig) SnsTopicPolicy {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewSnsTopicPolicy(scope constructs.Construct, id *string, config *SnsTopicP
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/sns_topic_policy aws_sns_topic_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sns_topic_policy aws_sns_topic_policy} Resource.
 func NewSnsTopicPolicy_Override(s SnsTopicPolicy, scope constructs.Construct, id *string, config *SnsTopicPolicyConfig) {
 	_init_.Initialize()
 
@@ -394,7 +394,10 @@ func (j *jsiiProxy_SnsTopicPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopicPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_SnsTopicPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

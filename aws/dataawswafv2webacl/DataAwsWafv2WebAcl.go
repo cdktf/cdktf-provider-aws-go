@@ -2,14 +2,14 @@ package dataawswafv2webacl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawswafv2webacl/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawswafv2webacl/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/wafv2_web_acl aws_wafv2_web_acl}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/wafv2_web_acl aws_wafv2_web_acl}.
 type DataAwsWafv2WebAcl interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -18,9 +18,9 @@ type DataAwsWafv2WebAcl interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -135,8 +135,8 @@ func (j *jsiiProxy_DataAwsWafv2WebAcl) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsWafv2WebAcl) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsWafv2WebAcl) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -326,7 +326,7 @@ func (j *jsiiProxy_DataAwsWafv2WebAcl) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/wafv2_web_acl aws_wafv2_web_acl} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/wafv2_web_acl aws_wafv2_web_acl} Data Source.
 func NewDataAwsWafv2WebAcl(scope constructs.Construct, id *string, config *DataAwsWafv2WebAclConfig) DataAwsWafv2WebAcl {
 	_init_.Initialize()
 
@@ -344,7 +344,7 @@ func NewDataAwsWafv2WebAcl(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/wafv2_web_acl aws_wafv2_web_acl} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/wafv2_web_acl aws_wafv2_web_acl} Data Source.
 func NewDataAwsWafv2WebAcl_Override(d DataAwsWafv2WebAcl, scope constructs.Construct, id *string, config *DataAwsWafv2WebAclConfig) {
 	_init_.Initialize()
 
@@ -355,7 +355,10 @@ func NewDataAwsWafv2WebAcl_Override(d DataAwsWafv2WebAcl, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_DataAwsWafv2WebAcl)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsWafv2WebAcl)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

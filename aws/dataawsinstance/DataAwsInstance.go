@@ -2,14 +2,14 @@ package dataawsinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsinstance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/instance aws_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/instance aws_instance}.
 type DataAwsInstance interface {
 	cdktf.TerraformDataSource
 	Ami() *string
@@ -21,9 +21,9 @@ type DataAwsInstance interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreditSpecification() DataAwsInstanceCreditSpecificationList
 	// Experimental.
 	DependsOn() *[]*string
@@ -225,8 +225,8 @@ func (j *jsiiProxy_DataAwsInstance) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsInstance) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsInstance) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -866,7 +866,7 @@ func (j *jsiiProxy_DataAwsInstance) VpcSecurityGroupIds() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/instance aws_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/instance aws_instance} Data Source.
 func NewDataAwsInstance(scope constructs.Construct, id *string, config *DataAwsInstanceConfig) DataAwsInstance {
 	_init_.Initialize()
 
@@ -884,7 +884,7 @@ func NewDataAwsInstance(scope constructs.Construct, id *string, config *DataAwsI
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/instance aws_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/instance aws_instance} Data Source.
 func NewDataAwsInstance_Override(d DataAwsInstance, scope constructs.Construct, id *string, config *DataAwsInstanceConfig) {
 	_init_.Initialize()
 
@@ -895,7 +895,10 @@ func NewDataAwsInstance_Override(d DataAwsInstance, scope constructs.Construct, 
 	)
 }
 
-func (j *jsiiProxy_DataAwsInstance)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsInstance)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

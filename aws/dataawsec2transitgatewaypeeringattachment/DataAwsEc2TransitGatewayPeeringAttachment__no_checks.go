@@ -72,6 +72,10 @@ func validateDataAwsEc2TransitGatewayPeeringAttachment_IsTerraformElementParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2TransitGatewayPeeringAttachment) validateSetIdParameters(val *string) error {
 	return nil
 }

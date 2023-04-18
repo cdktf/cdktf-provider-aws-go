@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) validateSetArnParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCodestarconnectionsConnection) validateSetIdParameters(val *string) error {
 	return nil
 }

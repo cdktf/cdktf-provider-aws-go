@@ -2,14 +2,14 @@ package dataawskendraindex
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawskendraindex/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawskendraindex/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/kendra_index aws_kendra_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/kendra_index aws_kendra_index}.
 type DataAwsKendraIndex interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -19,9 +19,9 @@ type DataAwsKendraIndex interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -156,8 +156,8 @@ func (j *jsiiProxy_DataAwsKendraIndex) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsKendraIndex) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsKendraIndex) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -457,7 +457,7 @@ func (j *jsiiProxy_DataAwsKendraIndex) UserTokenConfigurations() DataAwsKendraIn
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/kendra_index aws_kendra_index} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/kendra_index aws_kendra_index} Data Source.
 func NewDataAwsKendraIndex(scope constructs.Construct, id *string, config *DataAwsKendraIndexConfig) DataAwsKendraIndex {
 	_init_.Initialize()
 
@@ -475,7 +475,7 @@ func NewDataAwsKendraIndex(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/kendra_index aws_kendra_index} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/kendra_index aws_kendra_index} Data Source.
 func NewDataAwsKendraIndex_Override(d DataAwsKendraIndex, scope constructs.Construct, id *string, config *DataAwsKendraIndexConfig) {
 	_init_.Initialize()
 
@@ -486,7 +486,10 @@ func NewDataAwsKendraIndex_Override(d DataAwsKendraIndex, scope constructs.Const
 	)
 }
 
-func (j *jsiiProxy_DataAwsKendraIndex)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsKendraIndex)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

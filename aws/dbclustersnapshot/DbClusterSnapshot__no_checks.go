@@ -72,6 +72,10 @@ func (j *jsiiProxy_DbClusterSnapshot) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_DbClusterSnapshot) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbClusterSnapshot) validateSetDbClusterIdentifierParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataawsappconfigconfigurationprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsappconfigconfigurationprofile/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsappconfigconfigurationprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/appconfig_configuration_profile aws_appconfig_configuration_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/appconfig_configuration_profile aws_appconfig_configuration_profile}.
 type DataAwsAppconfigConfigurationProfile interface {
 	cdktf.TerraformDataSource
 	ApplicationId() *string
@@ -24,9 +24,9 @@ type DataAwsAppconfigConfigurationProfile interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -184,8 +184,8 @@ func (j *jsiiProxy_DataAwsAppconfigConfigurationProfile) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAppconfigConfigurationProfile) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsAppconfigConfigurationProfile) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -405,7 +405,7 @@ func (j *jsiiProxy_DataAwsAppconfigConfigurationProfile) Validator() DataAwsAppc
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/appconfig_configuration_profile aws_appconfig_configuration_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/appconfig_configuration_profile aws_appconfig_configuration_profile} Data Source.
 func NewDataAwsAppconfigConfigurationProfile(scope constructs.Construct, id *string, config *DataAwsAppconfigConfigurationProfileConfig) DataAwsAppconfigConfigurationProfile {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewDataAwsAppconfigConfigurationProfile(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/appconfig_configuration_profile aws_appconfig_configuration_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/appconfig_configuration_profile aws_appconfig_configuration_profile} Data Source.
 func NewDataAwsAppconfigConfigurationProfile_Override(d DataAwsAppconfigConfigurationProfile, scope constructs.Construct, id *string, config *DataAwsAppconfigConfigurationProfileConfig) {
 	_init_.Initialize()
 
@@ -456,7 +456,10 @@ func (j *jsiiProxy_DataAwsAppconfigConfigurationProfile)SetConfigurationProfileI
 	)
 }
 
-func (j *jsiiProxy_DataAwsAppconfigConfigurationProfile)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsAppconfigConfigurationProfile)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

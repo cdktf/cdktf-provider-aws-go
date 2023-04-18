@@ -64,6 +64,10 @@ func validateDataAwsConnectUserHierarchyStructure_IsTerraformElementParameters(x
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectUserHierarchyStructure) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectUserHierarchyStructure) validateSetIdParameters(val *string) error {
 	return nil
 }

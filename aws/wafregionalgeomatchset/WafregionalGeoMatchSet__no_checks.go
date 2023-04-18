@@ -72,6 +72,10 @@ func (j *jsiiProxy_WafregionalGeoMatchSet) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_WafregionalGeoMatchSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafregionalGeoMatchSet) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_EmrInstanceFleet) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_EmrInstanceFleet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrInstanceFleet) validateSetIdParameters(val *string) error {
 	return nil
 }

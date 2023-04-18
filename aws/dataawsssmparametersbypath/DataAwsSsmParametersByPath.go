@@ -2,14 +2,14 @@ package dataawsssmparametersbypath
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsssmparametersbypath/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsssmparametersbypath/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/ssm_parameters_by_path aws_ssm_parameters_by_path}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ssm_parameters_by_path aws_ssm_parameters_by_path}.
 type DataAwsSsmParametersByPath interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -18,9 +18,9 @@ type DataAwsSsmParametersByPath interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSsmParametersByPath) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsSsmParametersByPath) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -373,7 +373,7 @@ func (j *jsiiProxy_DataAwsSsmParametersByPath) WithDecryptionInput() interface{}
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ssm_parameters_by_path aws_ssm_parameters_by_path} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ssm_parameters_by_path aws_ssm_parameters_by_path} Data Source.
 func NewDataAwsSsmParametersByPath(scope constructs.Construct, id *string, config *DataAwsSsmParametersByPathConfig) DataAwsSsmParametersByPath {
 	_init_.Initialize()
 
@@ -391,7 +391,7 @@ func NewDataAwsSsmParametersByPath(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ssm_parameters_by_path aws_ssm_parameters_by_path} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ssm_parameters_by_path aws_ssm_parameters_by_path} Data Source.
 func NewDataAwsSsmParametersByPath_Override(d DataAwsSsmParametersByPath, scope constructs.Construct, id *string, config *DataAwsSsmParametersByPathConfig) {
 	_init_.Initialize()
 
@@ -402,7 +402,10 @@ func NewDataAwsSsmParametersByPath_Override(d DataAwsSsmParametersByPath, scope 
 	)
 }
 
-func (j *jsiiProxy_DataAwsSsmParametersByPath)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsSsmParametersByPath)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

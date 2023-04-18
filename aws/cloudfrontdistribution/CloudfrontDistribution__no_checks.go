@@ -108,6 +108,10 @@ func (j *jsiiProxy_CloudfrontDistribution) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_CloudfrontDistribution) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontDistribution) validateSetDefaultRootObjectParameters(val *string) error {
 	return nil
 }

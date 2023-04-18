@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAwsLbTargetGroup) validateSetArnParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLbTargetGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLbTargetGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -92,6 +92,10 @@ func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpsworksStaticWebLayer) validateSetCustomConfigureRecipesParameters(val *[]*string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_CloudfrontPublicKey) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_CloudfrontPublicKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontPublicKey) validateSetEncodedKeyParameters(val *string) error {
 	return nil
 }

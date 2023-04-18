@@ -72,6 +72,10 @@ func (j *jsiiProxy_Sesv2DedicatedIpPool) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_Sesv2DedicatedIpPool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Sesv2DedicatedIpPool) validateSetIdParameters(val *string) error {
 	return nil
 }

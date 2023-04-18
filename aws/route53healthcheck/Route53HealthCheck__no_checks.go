@@ -84,6 +84,10 @@ func (j *jsiiProxy_Route53HealthCheck) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_Route53HealthCheck) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53HealthCheck) validateSetDisabledParameters(val interface{}) error {
 	return nil
 }

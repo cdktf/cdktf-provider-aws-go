@@ -2,14 +2,14 @@ package opsworksuserprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/opsworksuserprofile/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/opsworksuserprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/opsworks_user_profile aws_opsworks_user_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opsworks_user_profile aws_opsworks_user_profile}.
 type OpsworksUserProfile interface {
 	cdktf.TerraformResource
 	AllowSelfManagement() interface{}
@@ -24,9 +24,9 @@ type OpsworksUserProfile interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_OpsworksUserProfile) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksUserProfile) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OpsworksUserProfile) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -380,7 +380,7 @@ func (j *jsiiProxy_OpsworksUserProfile) UserArnInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/opsworks_user_profile aws_opsworks_user_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opsworks_user_profile aws_opsworks_user_profile} Resource.
 func NewOpsworksUserProfile(scope constructs.Construct, id *string, config *OpsworksUserProfileConfig) OpsworksUserProfile {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewOpsworksUserProfile(scope constructs.Construct, id *string, config *Opsw
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/opsworks_user_profile aws_opsworks_user_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opsworks_user_profile aws_opsworks_user_profile} Resource.
 func NewOpsworksUserProfile_Override(o OpsworksUserProfile, scope constructs.Construct, id *string, config *OpsworksUserProfileConfig) {
 	_init_.Initialize()
 
@@ -431,7 +431,10 @@ func (j *jsiiProxy_OpsworksUserProfile)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksUserProfile)SetCount(val *float64) {
+func (j *jsiiProxy_OpsworksUserProfile)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

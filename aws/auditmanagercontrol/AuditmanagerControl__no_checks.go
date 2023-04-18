@@ -80,6 +80,10 @@ func (j *jsiiProxy_AuditmanagerControl) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_AuditmanagerControl) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuditmanagerControl) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

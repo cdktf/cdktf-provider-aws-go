@@ -76,6 +76,10 @@ func (j *jsiiProxy_Resourceexplorer2View) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_Resourceexplorer2View) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Resourceexplorer2View) validateSetDefaultViewParameters(val interface{}) error {
 	return nil
 }

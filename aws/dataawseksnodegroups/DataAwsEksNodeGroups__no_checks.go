@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsEksNodeGroups) validateSetClusterNameParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEksNodeGroups) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEksNodeGroups) validateSetIdParameters(val *string) error {
 	return nil
 }

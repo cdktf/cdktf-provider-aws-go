@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAwsRedshiftClusterCredentials) validateSetClusterIdentifi
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRedshiftClusterCredentials) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRedshiftClusterCredentials) validateSetDbGroupsParameters(val *[]*string) error {
 	return nil
 }

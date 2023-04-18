@@ -80,6 +80,10 @@ func (j *jsiiProxy_EcrRepository) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_EcrRepository) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcrRepository) validateSetForceDeleteParameters(val interface{}) error {
 	return nil
 }

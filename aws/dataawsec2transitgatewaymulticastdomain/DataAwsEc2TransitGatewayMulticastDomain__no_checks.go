@@ -72,6 +72,10 @@ func validateDataAwsEc2TransitGatewayMulticastDomain_IsTerraformElementParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2TransitGatewayMulticastDomain) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2TransitGatewayMulticastDomain) validateSetIdParameters(val *string) error {
 	return nil
 }

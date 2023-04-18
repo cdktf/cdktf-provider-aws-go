@@ -2,14 +2,14 @@ package securityhuborganizationadminaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/securityhuborganizationadminaccount/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/securityhuborganizationadminaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/securityhub_organization_admin_account aws_securityhub_organization_admin_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_organization_admin_account aws_securityhub_organization_admin_account}.
 type SecurityhubOrganizationAdminAccount interface {
 	cdktf.TerraformResource
 	AdminAccountId() *string
@@ -24,9 +24,9 @@ type SecurityhubOrganizationAdminAccount interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -158,8 +158,8 @@ func (j *jsiiProxy_SecurityhubOrganizationAdminAccount) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubOrganizationAdminAccount) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SecurityhubOrganizationAdminAccount) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -309,7 +309,7 @@ func (j *jsiiProxy_SecurityhubOrganizationAdminAccount) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/securityhub_organization_admin_account aws_securityhub_organization_admin_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_organization_admin_account aws_securityhub_organization_admin_account} Resource.
 func NewSecurityhubOrganizationAdminAccount(scope constructs.Construct, id *string, config *SecurityhubOrganizationAdminAccountConfig) SecurityhubOrganizationAdminAccount {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewSecurityhubOrganizationAdminAccount(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/securityhub_organization_admin_account aws_securityhub_organization_admin_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_organization_admin_account aws_securityhub_organization_admin_account} Resource.
 func NewSecurityhubOrganizationAdminAccount_Override(s SecurityhubOrganizationAdminAccount, scope constructs.Construct, id *string, config *SecurityhubOrganizationAdminAccountConfig) {
 	_init_.Initialize()
 
@@ -360,7 +360,10 @@ func (j *jsiiProxy_SecurityhubOrganizationAdminAccount)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_SecurityhubOrganizationAdminAccount)SetCount(val *float64) {
+func (j *jsiiProxy_SecurityhubOrganizationAdminAccount)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

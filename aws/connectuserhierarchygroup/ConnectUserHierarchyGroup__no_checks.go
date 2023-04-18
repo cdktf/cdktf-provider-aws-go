@@ -68,6 +68,10 @@ func (j *jsiiProxy_ConnectUserHierarchyGroup) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ConnectUserHierarchyGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectUserHierarchyGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

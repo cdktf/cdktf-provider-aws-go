@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsAppconfigEnvironment) validateSetApplicationIdParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAppconfigEnvironment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAppconfigEnvironment) validateSetEnvironmentIdParameters(val *string) error {
 	return nil
 }

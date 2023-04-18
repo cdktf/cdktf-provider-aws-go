@@ -72,6 +72,10 @@ func (j *jsiiProxy_EcsCapacityProvider) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_EcsCapacityProvider) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsCapacityProvider) validateSetIdParameters(val *string) error {
 	return nil
 }

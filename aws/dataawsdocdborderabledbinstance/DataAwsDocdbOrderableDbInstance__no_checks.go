@@ -64,6 +64,10 @@ func validateDataAwsDocdbOrderableDbInstance_IsTerraformElementParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDocdbOrderableDbInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDocdbOrderableDbInstance) validateSetEngineParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_CeCostCategory) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_CeCostCategory) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CeCostCategory) validateSetDefaultValueParameters(val *string) error {
 	return nil
 }

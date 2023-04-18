@@ -2,14 +2,14 @@ package dataawseksaddon
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawseksaddon/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksaddon/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/eks_addon aws_eks_addon}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/eks_addon aws_eks_addon}.
 type DataAwsEksAddon interface {
 	cdktf.TerraformDataSource
 	AddonName() *string
@@ -26,9 +26,9 @@ type DataAwsEksAddon interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -203,8 +203,8 @@ func (j *jsiiProxy_DataAwsEksAddon) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEksAddon) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsEksAddon) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DataAwsEksAddon) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/eks_addon aws_eks_addon} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/eks_addon aws_eks_addon} Data Source.
 func NewDataAwsEksAddon(scope constructs.Construct, id *string, config *DataAwsEksAddonConfig) DataAwsEksAddon {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewDataAwsEksAddon(scope constructs.Construct, id *string, config *DataAwsE
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/eks_addon aws_eks_addon} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/eks_addon aws_eks_addon} Data Source.
 func NewDataAwsEksAddon_Override(d DataAwsEksAddon, scope constructs.Construct, id *string, config *DataAwsEksAddonConfig) {
 	_init_.Initialize()
 
@@ -445,7 +445,10 @@ func (j *jsiiProxy_DataAwsEksAddon)SetClusterName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEksAddon)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsEksAddon)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

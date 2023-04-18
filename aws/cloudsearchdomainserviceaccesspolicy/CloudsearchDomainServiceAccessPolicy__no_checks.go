@@ -76,6 +76,10 @@ func (j *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package transferworkflow
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/transferworkflow/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/transferworkflow/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow aws_transfer_workflow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/transfer_workflow aws_transfer_workflow}.
 type TransferWorkflow interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type TransferWorkflow interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_TransferWorkflow) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_TransferWorkflow) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_TransferWorkflow) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -416,7 +416,7 @@ func (j *jsiiProxy_TransferWorkflow) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow aws_transfer_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/transfer_workflow aws_transfer_workflow} Resource.
 func NewTransferWorkflow(scope constructs.Construct, id *string, config *TransferWorkflowConfig) TransferWorkflow {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewTransferWorkflow(scope constructs.Construct, id *string, config *Transfe
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/transfer_workflow aws_transfer_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/transfer_workflow aws_transfer_workflow} Resource.
 func NewTransferWorkflow_Override(t TransferWorkflow, scope constructs.Construct, id *string, config *TransferWorkflowConfig) {
 	_init_.Initialize()
 
@@ -456,7 +456,10 @@ func (j *jsiiProxy_TransferWorkflow)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflow)SetCount(val *float64) {
+func (j *jsiiProxy_TransferWorkflow)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

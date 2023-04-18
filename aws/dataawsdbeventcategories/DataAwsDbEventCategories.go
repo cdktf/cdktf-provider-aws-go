@@ -2,14 +2,14 @@ package dataawsdbeventcategories
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsdbeventcategories/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsdbeventcategories/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/db_event_categories aws_db_event_categories}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/db_event_categories aws_db_event_categories}.
 type DataAwsDbEventCategories interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAwsDbEventCategories interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -122,8 +122,8 @@ func (j *jsiiProxy_DataAwsDbEventCategories) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDbEventCategories) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsDbEventCategories) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DataAwsDbEventCategories) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/db_event_categories aws_db_event_categories} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/db_event_categories aws_db_event_categories} Data Source.
 func NewDataAwsDbEventCategories(scope constructs.Construct, id *string, config *DataAwsDbEventCategoriesConfig) DataAwsDbEventCategories {
 	_init_.Initialize()
 
@@ -311,7 +311,7 @@ func NewDataAwsDbEventCategories(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/db_event_categories aws_db_event_categories} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/db_event_categories aws_db_event_categories} Data Source.
 func NewDataAwsDbEventCategories_Override(d DataAwsDbEventCategories, scope constructs.Construct, id *string, config *DataAwsDbEventCategoriesConfig) {
 	_init_.Initialize()
 
@@ -322,7 +322,10 @@ func NewDataAwsDbEventCategories_Override(d DataAwsDbEventCategories, scope cons
 	)
 }
 
-func (j *jsiiProxy_DataAwsDbEventCategories)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsDbEventCategories)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

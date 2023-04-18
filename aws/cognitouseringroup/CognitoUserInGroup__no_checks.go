@@ -68,6 +68,10 @@ func (j *jsiiProxy_CognitoUserInGroup) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_CognitoUserInGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoUserInGroup) validateSetGroupNameParameters(val *string) error {
 	return nil
 }

@@ -96,6 +96,10 @@ func (j *jsiiProxy_EmrserverlessApplication) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_EmrserverlessApplication) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrserverlessApplication) validateSetIdParameters(val *string) error {
 	return nil
 }

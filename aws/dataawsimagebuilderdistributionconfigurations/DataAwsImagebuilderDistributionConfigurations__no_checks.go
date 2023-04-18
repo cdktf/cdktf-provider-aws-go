@@ -68,6 +68,10 @@ func validateDataAwsImagebuilderDistributionConfigurations_IsTerraformElementPar
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsImagebuilderDistributionConfigurations) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsImagebuilderDistributionConfigurations) validateSetIdParameters(val *string) error {
 	return nil
 }

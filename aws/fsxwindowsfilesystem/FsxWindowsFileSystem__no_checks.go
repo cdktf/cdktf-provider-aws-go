@@ -100,6 +100,10 @@ func (j *jsiiProxy_FsxWindowsFileSystem) validateSetCopyTagsToBackupsParameters(
 	return nil
 }
 
+func (j *jsiiProxy_FsxWindowsFileSystem) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxWindowsFileSystem) validateSetDailyAutomaticBackupStartTimeParameters(val *string) error {
 	return nil
 }

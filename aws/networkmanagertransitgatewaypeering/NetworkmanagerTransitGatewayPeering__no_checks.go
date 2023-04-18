@@ -76,6 +76,10 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateSetCoreNetworkId
 	return nil
 }
 
+func (j *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerTransitGatewayPeering) validateSetIdParameters(val *string) error {
 	return nil
 }

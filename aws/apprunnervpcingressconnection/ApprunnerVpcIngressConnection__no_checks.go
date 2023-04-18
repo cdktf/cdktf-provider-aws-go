@@ -72,6 +72,10 @@ func (j *jsiiProxy_ApprunnerVpcIngressConnection) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_ApprunnerVpcIngressConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerVpcIngressConnection) validateSetIdParameters(val *string) error {
 	return nil
 }

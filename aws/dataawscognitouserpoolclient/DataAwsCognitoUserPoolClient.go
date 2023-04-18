@@ -2,14 +2,14 @@ package dataawscognitouserpoolclient
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawscognitouserpoolclient/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawscognitouserpoolclient/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/cognito_user_pool_client aws_cognito_user_pool_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/cognito_user_pool_client aws_cognito_user_pool_client}.
 type DataAwsCognitoUserPoolClient interface {
 	cdktf.TerraformDataSource
 	AccessTokenValidity() *float64
@@ -27,9 +27,9 @@ type DataAwsCognitoUserPoolClient interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultRedirectUri() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -234,8 +234,8 @@ func (j *jsiiProxy_DataAwsCognitoUserPoolClient) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCognitoUserPoolClient) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsCognitoUserPoolClient) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -535,7 +535,7 @@ func (j *jsiiProxy_DataAwsCognitoUserPoolClient) WriteAttributes() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/cognito_user_pool_client aws_cognito_user_pool_client} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/cognito_user_pool_client aws_cognito_user_pool_client} Data Source.
 func NewDataAwsCognitoUserPoolClient(scope constructs.Construct, id *string, config *DataAwsCognitoUserPoolClientConfig) DataAwsCognitoUserPoolClient {
 	_init_.Initialize()
 
@@ -553,7 +553,7 @@ func NewDataAwsCognitoUserPoolClient(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/cognito_user_pool_client aws_cognito_user_pool_client} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/cognito_user_pool_client aws_cognito_user_pool_client} Data Source.
 func NewDataAwsCognitoUserPoolClient_Override(d DataAwsCognitoUserPoolClient, scope constructs.Construct, id *string, config *DataAwsCognitoUserPoolClientConfig) {
 	_init_.Initialize()
 
@@ -575,7 +575,10 @@ func (j *jsiiProxy_DataAwsCognitoUserPoolClient)SetClientId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsCognitoUserPoolClient)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsCognitoUserPoolClient)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

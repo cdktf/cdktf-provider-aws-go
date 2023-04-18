@@ -72,6 +72,10 @@ func (j *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

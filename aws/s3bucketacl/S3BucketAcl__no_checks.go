@@ -80,6 +80,10 @@ func (j *jsiiProxy_S3BucketAcl) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketAcl) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketAcl) validateSetExpectedBucketOwnerParameters(val *string) error {
 	return nil
 }

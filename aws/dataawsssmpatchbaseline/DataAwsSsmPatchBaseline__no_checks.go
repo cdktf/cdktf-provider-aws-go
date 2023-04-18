@@ -64,6 +64,10 @@ func validateDataAwsSsmPatchBaseline_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSsmPatchBaseline) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSsmPatchBaseline) validateSetDefaultBaselineParameters(val interface{}) error {
 	return nil
 }

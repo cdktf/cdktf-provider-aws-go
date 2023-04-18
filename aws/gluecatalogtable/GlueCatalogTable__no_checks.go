@@ -88,6 +88,10 @@ func (j *jsiiProxy_GlueCatalogTable) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_GlueCatalogTable) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueCatalogTable) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

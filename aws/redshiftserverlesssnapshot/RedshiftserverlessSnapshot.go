@@ -2,14 +2,14 @@ package redshiftserverlesssnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/redshiftserverlesssnapshot/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/redshiftserverlesssnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/redshiftserverless_snapshot aws_redshiftserverless_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/redshiftserverless_snapshot aws_redshiftserverless_snapshot}.
 type RedshiftserverlessSnapshot interface {
 	cdktf.TerraformResource
 	AccountsWithProvisionedRestoreAccess() *[]*string
@@ -25,9 +25,9 @@ type RedshiftserverlessSnapshot interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -192,8 +192,8 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_RedshiftserverlessSnapshot) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -433,7 +433,7 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/redshiftserverless_snapshot aws_redshiftserverless_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/redshiftserverless_snapshot aws_redshiftserverless_snapshot} Resource.
 func NewRedshiftserverlessSnapshot(scope constructs.Construct, id *string, config *RedshiftserverlessSnapshotConfig) RedshiftserverlessSnapshot {
 	_init_.Initialize()
 
@@ -451,7 +451,7 @@ func NewRedshiftserverlessSnapshot(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/redshiftserverless_snapshot aws_redshiftserverless_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/redshiftserverless_snapshot aws_redshiftserverless_snapshot} Resource.
 func NewRedshiftserverlessSnapshot_Override(r RedshiftserverlessSnapshot, scope constructs.Construct, id *string, config *RedshiftserverlessSnapshotConfig) {
 	_init_.Initialize()
 
@@ -473,7 +473,10 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RedshiftserverlessSnapshot)SetCount(val *float64) {
+func (j *jsiiProxy_RedshiftserverlessSnapshot)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

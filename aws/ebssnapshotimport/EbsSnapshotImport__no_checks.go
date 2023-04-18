@@ -80,6 +80,10 @@ func (j *jsiiProxy_EbsSnapshotImport) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_EbsSnapshotImport) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EbsSnapshotImport) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

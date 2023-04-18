@@ -108,6 +108,10 @@ func (j *jsiiProxy_QuicksightDataSet) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightDataSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightDataSet) validateSetDataSetIdParameters(val *string) error {
 	return nil
 }

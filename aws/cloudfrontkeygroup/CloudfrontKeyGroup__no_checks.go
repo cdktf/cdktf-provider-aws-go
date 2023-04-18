@@ -72,6 +72,10 @@ func (j *jsiiProxy_CloudfrontKeyGroup) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_CloudfrontKeyGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontKeyGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -100,6 +100,10 @@ func (j *jsiiProxy_CognitoManagedUserPoolClient) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_CognitoManagedUserPoolClient) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoManagedUserPoolClient) validateSetDefaultRedirectUriParameters(val *string) error {
 	return nil
 }

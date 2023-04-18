@@ -84,6 +84,10 @@ func (j *jsiiProxy_ConfigRemediationConfiguration) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_ConfigRemediationConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigRemediationConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

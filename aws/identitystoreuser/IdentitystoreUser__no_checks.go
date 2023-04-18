@@ -84,6 +84,10 @@ func (j *jsiiProxy_IdentitystoreUser) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_IdentitystoreUser) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IdentitystoreUser) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

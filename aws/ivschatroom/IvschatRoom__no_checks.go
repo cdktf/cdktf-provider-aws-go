@@ -76,6 +76,10 @@ func (j *jsiiProxy_IvschatRoom) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_IvschatRoom) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IvschatRoom) validateSetIdParameters(val *string) error {
 	return nil
 }

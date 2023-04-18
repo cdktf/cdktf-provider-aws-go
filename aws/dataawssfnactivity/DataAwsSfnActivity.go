@@ -2,14 +2,14 @@ package dataawssfnactivity
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawssfnactivity/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssfnactivity/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/sfn_activity aws_sfn_activity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/sfn_activity aws_sfn_activity}.
 type DataAwsSfnActivity interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -20,9 +20,9 @@ type DataAwsSfnActivity interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreationDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DataAwsSfnActivity) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSfnActivity) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsSfnActivity) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataAwsSfnActivity) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/sfn_activity aws_sfn_activity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/sfn_activity aws_sfn_activity} Data Source.
 func NewDataAwsSfnActivity(scope constructs.Construct, id *string, config *DataAwsSfnActivityConfig) DataAwsSfnActivity {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataAwsSfnActivity(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/sfn_activity aws_sfn_activity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/sfn_activity aws_sfn_activity} Data Source.
 func NewDataAwsSfnActivity_Override(d DataAwsSfnActivity, scope constructs.Construct, id *string, config *DataAwsSfnActivityConfig) {
 	_init_.Initialize()
 
@@ -357,7 +357,10 @@ func (j *jsiiProxy_DataAwsSfnActivity)SetArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsSfnActivity)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsSfnActivity)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

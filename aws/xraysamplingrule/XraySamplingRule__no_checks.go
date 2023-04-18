@@ -72,6 +72,10 @@ func (j *jsiiProxy_XraySamplingRule) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_XraySamplingRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_XraySamplingRule) validateSetFixedRateParameters(val *float64) error {
 	return nil
 }

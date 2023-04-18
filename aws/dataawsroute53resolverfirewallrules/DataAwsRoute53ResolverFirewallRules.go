@@ -2,14 +2,14 @@ package dataawsroute53resolverfirewallrules
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsroute53resolverfirewallrules/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsroute53resolverfirewallrules/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/route53_resolver_firewall_rules aws_route53_resolver_firewall_rules}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route53_resolver_firewall_rules aws_route53_resolver_firewall_rules}.
 type DataAwsRoute53ResolverFirewallRules interface {
 	cdktf.TerraformDataSource
 	Action() *string
@@ -20,9 +20,9 @@ type DataAwsRoute53ResolverFirewallRules interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRules) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRules) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRules) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -340,7 +340,7 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRules) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/route53_resolver_firewall_rules aws_route53_resolver_firewall_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route53_resolver_firewall_rules aws_route53_resolver_firewall_rules} Data Source.
 func NewDataAwsRoute53ResolverFirewallRules(scope constructs.Construct, id *string, config *DataAwsRoute53ResolverFirewallRulesConfig) DataAwsRoute53ResolverFirewallRules {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewDataAwsRoute53ResolverFirewallRules(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/route53_resolver_firewall_rules aws_route53_resolver_firewall_rules} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route53_resolver_firewall_rules aws_route53_resolver_firewall_rules} Data Source.
 func NewDataAwsRoute53ResolverFirewallRules_Override(d DataAwsRoute53ResolverFirewallRules, scope constructs.Construct, id *string, config *DataAwsRoute53ResolverFirewallRulesConfig) {
 	_init_.Initialize()
 
@@ -380,7 +380,10 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRules)SetAction(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRules)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRules)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

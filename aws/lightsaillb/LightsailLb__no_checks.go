@@ -68,6 +68,10 @@ func (j *jsiiProxy_LightsailLb) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_LightsailLb) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailLb) validateSetHealthCheckPathParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataAwsKinesisFirehoseDeliveryStream_IsTerraformElementParameters(x
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsKinesisFirehoseDeliveryStream) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsKinesisFirehoseDeliveryStream) validateSetIdParameters(val *string) error {
 	return nil
 }

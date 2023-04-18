@@ -68,6 +68,10 @@ func validateDataAwsDynamodbTable_IsTerraformElementParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDynamodbTable) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDynamodbTable) validateSetIdParameters(val *string) error {
 	return nil
 }

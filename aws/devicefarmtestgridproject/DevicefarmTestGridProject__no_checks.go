@@ -72,6 +72,10 @@ func (j *jsiiProxy_DevicefarmTestGridProject) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DevicefarmTestGridProject) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicefarmTestGridProject) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

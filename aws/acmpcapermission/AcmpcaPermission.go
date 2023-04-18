@@ -2,14 +2,14 @@ package acmpcapermission
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/acmpcapermission/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/acmpcapermission/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/acmpca_permission aws_acmpca_permission}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/acmpca_permission aws_acmpca_permission}.
 type AcmpcaPermission interface {
 	cdktf.TerraformResource
 	Actions() *[]*string
@@ -27,9 +27,9 @@ type AcmpcaPermission interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -189,8 +189,8 @@ func (j *jsiiProxy_AcmpcaPermission) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_AcmpcaPermission) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AcmpcaPermission) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_AcmpcaPermission) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/acmpca_permission aws_acmpca_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/acmpca_permission aws_acmpca_permission} Resource.
 func NewAcmpcaPermission(scope constructs.Construct, id *string, config *AcmpcaPermissionConfig) AcmpcaPermission {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewAcmpcaPermission(scope constructs.Construct, id *string, config *AcmpcaP
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/acmpca_permission aws_acmpca_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/acmpca_permission aws_acmpca_permission} Resource.
 func NewAcmpcaPermission_Override(a AcmpcaPermission, scope constructs.Construct, id *string, config *AcmpcaPermissionConfig) {
 	_init_.Initialize()
 
@@ -452,7 +452,10 @@ func (j *jsiiProxy_AcmpcaPermission)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AcmpcaPermission)SetCount(val *float64) {
+func (j *jsiiProxy_AcmpcaPermission)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

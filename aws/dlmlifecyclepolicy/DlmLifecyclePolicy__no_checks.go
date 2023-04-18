@@ -72,6 +72,10 @@ func (j *jsiiProxy_DlmLifecyclePolicy) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_DlmLifecyclePolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DlmLifecyclePolicy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

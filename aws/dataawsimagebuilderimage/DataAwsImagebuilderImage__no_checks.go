@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsImagebuilderImage) validateSetArnParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsImagebuilderImage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsImagebuilderImage) validateSetIdParameters(val *string) error {
 	return nil
 }

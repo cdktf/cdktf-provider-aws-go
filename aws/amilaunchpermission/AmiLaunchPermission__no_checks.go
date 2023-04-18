@@ -72,6 +72,10 @@ func (j *jsiiProxy_AmiLaunchPermission) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_AmiLaunchPermission) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AmiLaunchPermission) validateSetGroupParameters(val *string) error {
 	return nil
 }

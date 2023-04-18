@@ -68,6 +68,10 @@ func (j *jsiiProxy_DatapipelinePipeline) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_DatapipelinePipeline) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatapipelinePipeline) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

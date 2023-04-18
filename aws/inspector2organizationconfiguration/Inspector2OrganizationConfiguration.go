@@ -2,14 +2,14 @@ package inspector2organizationconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/inspector2organizationconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/inspector2organizationconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/inspector2_organization_configuration aws_inspector2_organization_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/inspector2_organization_configuration aws_inspector2_organization_configuration}.
 type Inspector2OrganizationConfiguration interface {
 	cdktf.TerraformResource
 	AutoEnable() Inspector2OrganizationConfigurationAutoEnableOutputReference
@@ -23,9 +23,9 @@ type Inspector2OrganizationConfiguration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -163,8 +163,8 @@ func (j *jsiiProxy_Inspector2OrganizationConfiguration) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_Inspector2OrganizationConfiguration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Inspector2OrganizationConfiguration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -344,7 +344,7 @@ func (j *jsiiProxy_Inspector2OrganizationConfiguration) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/inspector2_organization_configuration aws_inspector2_organization_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/inspector2_organization_configuration aws_inspector2_organization_configuration} Resource.
 func NewInspector2OrganizationConfiguration(scope constructs.Construct, id *string, config *Inspector2OrganizationConfigurationConfig) Inspector2OrganizationConfiguration {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewInspector2OrganizationConfiguration(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/inspector2_organization_configuration aws_inspector2_organization_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/inspector2_organization_configuration aws_inspector2_organization_configuration} Resource.
 func NewInspector2OrganizationConfiguration_Override(i Inspector2OrganizationConfiguration, scope constructs.Construct, id *string, config *Inspector2OrganizationConfigurationConfig) {
 	_init_.Initialize()
 
@@ -384,7 +384,10 @@ func (j *jsiiProxy_Inspector2OrganizationConfiguration)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_Inspector2OrganizationConfiguration)SetCount(val *float64) {
+func (j *jsiiProxy_Inspector2OrganizationConfiguration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

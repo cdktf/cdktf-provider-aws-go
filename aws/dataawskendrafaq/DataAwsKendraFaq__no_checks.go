@@ -64,6 +64,10 @@ func validateDataAwsKendraFaq_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsKendraFaq) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsKendraFaq) validateSetFaqIdParameters(val *string) error {
 	return nil
 }

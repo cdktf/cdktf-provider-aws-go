@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsKmsCiphertext) validateSetContextParameters(val *map[s
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsKmsCiphertext) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsKmsCiphertext) validateSetIdParameters(val *string) error {
 	return nil
 }

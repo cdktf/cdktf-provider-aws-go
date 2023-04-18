@@ -88,6 +88,10 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicy) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontResponseHeadersPolicy) validateSetEtagParameters(val *string) error {
 	return nil
 }

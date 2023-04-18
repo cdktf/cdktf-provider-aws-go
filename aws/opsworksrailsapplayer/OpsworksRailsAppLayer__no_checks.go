@@ -100,6 +100,10 @@ func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpsworksRailsAppLayer) validateSetCustomConfigureRecipesParameters(val *[]*string) error {
 	return nil
 }

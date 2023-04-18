@@ -64,6 +64,10 @@ func validateDataAwsRedshiftServiceAccount_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRedshiftServiceAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRedshiftServiceAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

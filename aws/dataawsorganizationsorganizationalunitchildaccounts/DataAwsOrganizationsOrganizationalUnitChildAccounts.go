@@ -2,14 +2,14 @@ package dataawsorganizationsorganizationalunitchildaccounts
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsorganizationsorganizationalunitchildaccounts/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsorganizationsorganizationalunitchildaccounts/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/organizations_organizational_unit_child_accounts aws_organizations_organizational_unit_child_accounts}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/organizations_organizational_unit_child_accounts aws_organizations_organizational_unit_child_accounts}.
 type DataAwsOrganizationsOrganizationalUnitChildAccounts interface {
 	cdktf.TerraformDataSource
 	Accounts() DataAwsOrganizationsOrganizationalUnitChildAccountsAccountsList
@@ -18,9 +18,9 @@ type DataAwsOrganizationsOrganizationalUnitChildAccounts interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataAwsOrganizationsOrganizationalUnitChildAccounts) Construc
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsOrganizationsOrganizationalUnitChildAccounts) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsOrganizationsOrganizationalUnitChildAccounts) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataAwsOrganizationsOrganizationalUnitChildAccounts) Terrafor
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/organizations_organizational_unit_child_accounts aws_organizations_organizational_unit_child_accounts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/organizations_organizational_unit_child_accounts aws_organizations_organizational_unit_child_accounts} Data Source.
 func NewDataAwsOrganizationsOrganizationalUnitChildAccounts(scope constructs.Construct, id *string, config *DataAwsOrganizationsOrganizationalUnitChildAccountsConfig) DataAwsOrganizationsOrganizationalUnitChildAccounts {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataAwsOrganizationsOrganizationalUnitChildAccounts(scope constructs.Con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/organizations_organizational_unit_child_accounts aws_organizations_organizational_unit_child_accounts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/organizations_organizational_unit_child_accounts aws_organizations_organizational_unit_child_accounts} Data Source.
 func NewDataAwsOrganizationsOrganizationalUnitChildAccounts_Override(d DataAwsOrganizationsOrganizationalUnitChildAccounts, scope constructs.Construct, id *string, config *DataAwsOrganizationsOrganizationalUnitChildAccountsConfig) {
 	_init_.Initialize()
 
@@ -321,7 +321,10 @@ func NewDataAwsOrganizationsOrganizationalUnitChildAccounts_Override(d DataAwsOr
 	)
 }
 
-func (j *jsiiProxy_DataAwsOrganizationsOrganizationalUnitChildAccounts)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsOrganizationsOrganizationalUnitChildAccounts)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

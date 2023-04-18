@@ -80,6 +80,10 @@ func (j *jsiiProxy_CeAnomalySubscription) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_CeAnomalySubscription) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CeAnomalySubscription) validateSetFrequencyParameters(val *string) error {
 	return nil
 }

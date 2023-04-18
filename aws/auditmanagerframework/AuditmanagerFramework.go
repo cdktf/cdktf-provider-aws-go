@@ -2,14 +2,14 @@ package auditmanagerframework
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/auditmanagerframework/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/auditmanagerframework/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/auditmanager_framework aws_auditmanager_framework}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/auditmanager_framework aws_auditmanager_framework}.
 type AuditmanagerFramework interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -27,9 +27,9 @@ type AuditmanagerFramework interface {
 	ControlSets() AuditmanagerFrameworkControlSetsList
 	ControlSetsInput() interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -204,8 +204,8 @@ func (j *jsiiProxy_AuditmanagerFramework) ControlSetsInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AuditmanagerFramework) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AuditmanagerFramework) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -425,7 +425,7 @@ func (j *jsiiProxy_AuditmanagerFramework) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/auditmanager_framework aws_auditmanager_framework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/auditmanager_framework aws_auditmanager_framework} Resource.
 func NewAuditmanagerFramework(scope constructs.Construct, id *string, config *AuditmanagerFrameworkConfig) AuditmanagerFramework {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewAuditmanagerFramework(scope constructs.Construct, id *string, config *Au
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/auditmanager_framework aws_auditmanager_framework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/auditmanager_framework aws_auditmanager_framework} Resource.
 func NewAuditmanagerFramework_Override(a AuditmanagerFramework, scope constructs.Construct, id *string, config *AuditmanagerFrameworkConfig) {
 	_init_.Initialize()
 
@@ -476,7 +476,10 @@ func (j *jsiiProxy_AuditmanagerFramework)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AuditmanagerFramework)SetCount(val *float64) {
+func (j *jsiiProxy_AuditmanagerFramework)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

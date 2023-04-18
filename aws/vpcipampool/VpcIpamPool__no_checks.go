@@ -100,6 +100,10 @@ func (j *jsiiProxy_VpcIpamPool) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_VpcIpamPool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpamPool) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

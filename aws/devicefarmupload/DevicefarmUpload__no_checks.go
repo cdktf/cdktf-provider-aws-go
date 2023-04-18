@@ -72,6 +72,10 @@ func (j *jsiiProxy_DevicefarmUpload) validateSetContentTypeParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DevicefarmUpload) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DevicefarmUpload) validateSetIdParameters(val *string) error {
 	return nil
 }

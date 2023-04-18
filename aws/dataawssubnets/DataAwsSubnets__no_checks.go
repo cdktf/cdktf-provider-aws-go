@@ -72,6 +72,10 @@ func validateDataAwsSubnets_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSubnets) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSubnets) validateSetIdParameters(val *string) error {
 	return nil
 }

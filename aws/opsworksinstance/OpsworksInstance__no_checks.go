@@ -104,6 +104,10 @@ func (j *jsiiProxy_OpsworksInstance) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_OpsworksInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpsworksInstance) validateSetCreatedAtParameters(val *string) error {
 	return nil
 }

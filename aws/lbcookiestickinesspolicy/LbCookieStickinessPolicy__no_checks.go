@@ -72,6 +72,10 @@ func (j *jsiiProxy_LbCookieStickinessPolicy) validateSetCookieExpirationPeriodPa
 	return nil
 }
 
+func (j *jsiiProxy_LbCookieStickinessPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbCookieStickinessPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

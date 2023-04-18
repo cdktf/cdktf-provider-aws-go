@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAwsServicecatalogConstraint) validateSetAcceptLanguagePar
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsServicecatalogConstraint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsServicecatalogConstraint) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

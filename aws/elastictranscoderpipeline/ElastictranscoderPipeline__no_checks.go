@@ -92,6 +92,10 @@ func (j *jsiiProxy_ElastictranscoderPipeline) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ElastictranscoderPipeline) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastictranscoderPipeline) validateSetIdParameters(val *string) error {
 	return nil
 }

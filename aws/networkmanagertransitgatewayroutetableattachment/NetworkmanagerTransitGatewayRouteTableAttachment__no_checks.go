@@ -72,6 +72,10 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) validateSetIdParameters(val *string) error {
 	return nil
 }

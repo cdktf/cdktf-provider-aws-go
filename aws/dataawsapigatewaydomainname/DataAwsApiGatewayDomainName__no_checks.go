@@ -64,6 +64,10 @@ func validateDataAwsApiGatewayDomainName_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsApiGatewayDomainName) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsApiGatewayDomainName) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

@@ -96,6 +96,10 @@ func (j *jsiiProxy_Apigatewayv2Authorizer) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_Apigatewayv2Authorizer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2Authorizer) validateSetEnableSimpleResponsesParameters(val interface{}) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package s3accesspoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/s3accesspoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/s3accesspoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point aws_s3_access_point}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/s3_access_point aws_s3_access_point}.
 type S3AccessPoint interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -32,9 +32,9 @@ type S3AccessPoint interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -247,8 +247,8 @@ func (j *jsiiProxy_S3AccessPoint) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_S3AccessPoint) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_S3AccessPoint) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -518,7 +518,7 @@ func (j *jsiiProxy_S3AccessPoint) VpcConfigurationInput() *S3AccessPointVpcConfi
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point aws_s3_access_point} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/s3_access_point aws_s3_access_point} Resource.
 func NewS3AccessPoint(scope constructs.Construct, id *string, config *S3AccessPointConfig) S3AccessPoint {
 	_init_.Initialize()
 
@@ -536,7 +536,7 @@ func NewS3AccessPoint(scope constructs.Construct, id *string, config *S3AccessPo
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_access_point aws_s3_access_point} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/s3_access_point aws_s3_access_point} Resource.
 func NewS3AccessPoint_Override(s S3AccessPoint, scope constructs.Construct, id *string, config *S3AccessPointConfig) {
 	_init_.Initialize()
 
@@ -591,7 +591,10 @@ func (j *jsiiProxy_S3AccessPoint)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3AccessPoint)SetCount(val *float64) {
+func (j *jsiiProxy_S3AccessPoint)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

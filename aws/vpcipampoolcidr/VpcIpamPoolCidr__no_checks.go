@@ -80,6 +80,10 @@ func (j *jsiiProxy_VpcIpamPoolCidr) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_VpcIpamPoolCidr) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpamPoolCidr) validateSetIdParameters(val *string) error {
 	return nil
 }

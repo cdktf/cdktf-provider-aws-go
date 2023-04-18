@@ -96,6 +96,10 @@ func (j *jsiiProxy_SagemakerDataQualityJobDefinition) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerDataQualityJobDefinition) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerDataQualityJobDefinition) validateSetIdParameters(val *string) error {
 	return nil
 }

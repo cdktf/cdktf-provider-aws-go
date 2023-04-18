@@ -72,6 +72,10 @@ func (j *jsiiProxy_RdsReservedInstance) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_RdsReservedInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsReservedInstance) validateSetIdParameters(val *string) error {
 	return nil
 }

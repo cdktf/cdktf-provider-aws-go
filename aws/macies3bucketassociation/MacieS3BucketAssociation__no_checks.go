@@ -76,6 +76,10 @@ func (j *jsiiProxy_MacieS3BucketAssociation) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_MacieS3BucketAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MacieS3BucketAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

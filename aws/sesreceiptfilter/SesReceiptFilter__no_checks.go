@@ -72,6 +72,10 @@ func (j *jsiiProxy_SesReceiptFilter) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_SesReceiptFilter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesReceiptFilter) validateSetIdParameters(val *string) error {
 	return nil
 }

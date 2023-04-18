@@ -76,6 +76,10 @@ func (j *jsiiProxy_EbsVolume) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_EbsVolume) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EbsVolume) validateSetEncryptedParameters(val interface{}) error {
 	return nil
 }

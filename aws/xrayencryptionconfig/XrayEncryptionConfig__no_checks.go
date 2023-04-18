@@ -68,6 +68,10 @@ func (j *jsiiProxy_XrayEncryptionConfig) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_XrayEncryptionConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_XrayEncryptionConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

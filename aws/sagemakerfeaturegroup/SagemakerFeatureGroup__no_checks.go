@@ -80,6 +80,10 @@ func (j *jsiiProxy_SagemakerFeatureGroup) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerFeatureGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerFeatureGroup) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

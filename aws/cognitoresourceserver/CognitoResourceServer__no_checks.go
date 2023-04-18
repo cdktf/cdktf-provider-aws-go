@@ -72,6 +72,10 @@ func (j *jsiiProxy_CognitoResourceServer) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_CognitoResourceServer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoResourceServer) validateSetIdParameters(val *string) error {
 	return nil
 }

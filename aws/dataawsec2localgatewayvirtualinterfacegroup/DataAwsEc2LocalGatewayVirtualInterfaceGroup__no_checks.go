@@ -72,6 +72,10 @@ func validateDataAwsEc2LocalGatewayVirtualInterfaceGroup_IsTerraformElementParam
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

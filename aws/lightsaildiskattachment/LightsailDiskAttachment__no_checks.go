@@ -68,6 +68,10 @@ func (j *jsiiProxy_LightsailDiskAttachment) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_LightsailDiskAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailDiskAttachment) validateSetDiskNameParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package macie2account
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/macie2account/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/macie2account/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/macie2_account aws_macie2_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie2_account aws_macie2_account}.
 type Macie2Account interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type Macie2Account interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -146,8 +146,8 @@ func (j *jsiiProxy_Macie2Account) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_Macie2Account) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Macie2Account) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -367,7 +367,7 @@ func (j *jsiiProxy_Macie2Account) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/macie2_account aws_macie2_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie2_account aws_macie2_account} Resource.
 func NewMacie2Account(scope constructs.Construct, id *string, config *Macie2AccountConfig) Macie2Account {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewMacie2Account(scope constructs.Construct, id *string, config *Macie2Acco
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/macie2_account aws_macie2_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie2_account aws_macie2_account} Resource.
 func NewMacie2Account_Override(m Macie2Account, scope constructs.Construct, id *string, config *Macie2AccountConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_Macie2Account)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Macie2Account)SetCount(val *float64) {
+func (j *jsiiProxy_Macie2Account)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

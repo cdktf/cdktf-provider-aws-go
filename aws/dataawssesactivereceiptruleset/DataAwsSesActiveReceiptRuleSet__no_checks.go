@@ -64,6 +64,10 @@ func validateDataAwsSesActiveReceiptRuleSet_IsTerraformElementParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSesActiveReceiptRuleSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSesActiveReceiptRuleSet) validateSetIdParameters(val *string) error {
 	return nil
 }

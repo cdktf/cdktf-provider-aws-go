@@ -100,6 +100,10 @@ func (j *jsiiProxy_BudgetsBudget) validateSetCostFiltersParameters(val *map[stri
 	return nil
 }
 
+func (j *jsiiProxy_BudgetsBudget) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BudgetsBudget) validateSetIdParameters(val *string) error {
 	return nil
 }

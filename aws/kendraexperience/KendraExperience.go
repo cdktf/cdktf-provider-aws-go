@@ -2,14 +2,14 @@ package kendraexperience
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/kendraexperience/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/kendraexperience/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/kendra_experience aws_kendra_experience}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/kendra_experience aws_kendra_experience}.
 type KendraExperience interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -24,9 +24,9 @@ type KendraExperience interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -190,8 +190,8 @@ func (j *jsiiProxy_KendraExperience) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_KendraExperience) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_KendraExperience) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -471,7 +471,7 @@ func (j *jsiiProxy_KendraExperience) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/kendra_experience aws_kendra_experience} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/kendra_experience aws_kendra_experience} Resource.
 func NewKendraExperience(scope constructs.Construct, id *string, config *KendraExperienceConfig) KendraExperience {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewKendraExperience(scope constructs.Construct, id *string, config *KendraE
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/kendra_experience aws_kendra_experience} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/kendra_experience aws_kendra_experience} Resource.
 func NewKendraExperience_Override(k KendraExperience, scope constructs.Construct, id *string, config *KendraExperienceConfig) {
 	_init_.Initialize()
 
@@ -511,7 +511,10 @@ func (j *jsiiProxy_KendraExperience)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_KendraExperience)SetCount(val *float64) {
+func (j *jsiiProxy_KendraExperience)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

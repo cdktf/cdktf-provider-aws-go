@@ -68,6 +68,10 @@ func (j *jsiiProxy_ServicequotasServiceQuota) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ServicequotasServiceQuota) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicequotasServiceQuota) validateSetIdParameters(val *string) error {
 	return nil
 }

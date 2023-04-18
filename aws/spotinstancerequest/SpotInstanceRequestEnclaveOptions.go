@@ -2,7 +2,7 @@ package spotinstancerequest
 
 
 type SpotInstanceRequestEnclaveOptions struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/spot_instance_request#enabled SpotInstanceRequest#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/spot_instance_request#enabled SpotInstanceRequest#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

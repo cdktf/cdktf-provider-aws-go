@@ -64,6 +64,10 @@ func validateDataAwsConnectQuickConnect_IsTerraformElementParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectQuickConnect) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectQuickConnect) validateSetIdParameters(val *string) error {
 	return nil
 }

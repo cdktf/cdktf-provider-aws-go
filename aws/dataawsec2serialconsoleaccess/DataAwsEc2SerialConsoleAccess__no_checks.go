@@ -68,6 +68,10 @@ func validateDataAwsEc2SerialConsoleAccess_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) validateSetIdParameters(val *string) error {
 	return nil
 }

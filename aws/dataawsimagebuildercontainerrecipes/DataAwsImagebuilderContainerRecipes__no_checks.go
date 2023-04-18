@@ -68,6 +68,10 @@ func validateDataAwsImagebuilderContainerRecipes_IsTerraformElementParameters(x 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) validateSetIdParameters(val *string) error {
 	return nil
 }

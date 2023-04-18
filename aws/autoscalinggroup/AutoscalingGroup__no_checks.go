@@ -108,6 +108,10 @@ func (j *jsiiProxy_AutoscalingGroup) validateSetContextParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_AutoscalingGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingGroup) validateSetDefaultCooldownParameters(val *float64) error {
 	return nil
 }
@@ -208,7 +212,7 @@ func (j *jsiiProxy_AutoscalingGroup) validateSetSuspendedProcessesParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroup) validateSetTagsParameters(val *map[string]*string) error {
+func (j *jsiiProxy_AutoscalingGroup) validateSetTagsParameters(val interface{}) error {
 	return nil
 }
 

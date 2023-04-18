@@ -2,14 +2,14 @@ package glaciervault
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/glaciervault/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/glaciervault/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/glacier_vault aws_glacier_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/glacier_vault aws_glacier_vault}.
 type GlacierVault interface {
 	cdktf.TerraformResource
 	AccessPolicy() *string
@@ -25,9 +25,9 @@ type GlacierVault interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -186,8 +186,8 @@ func (j *jsiiProxy_GlacierVault) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_GlacierVault) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GlacierVault) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -427,7 +427,7 @@ func (j *jsiiProxy_GlacierVault) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/glacier_vault aws_glacier_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/glacier_vault aws_glacier_vault} Resource.
 func NewGlacierVault(scope constructs.Construct, id *string, config *GlacierVaultConfig) GlacierVault {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewGlacierVault(scope constructs.Construct, id *string, config *GlacierVaul
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/glacier_vault aws_glacier_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/glacier_vault aws_glacier_vault} Resource.
 func NewGlacierVault_Override(g GlacierVault, scope constructs.Construct, id *string, config *GlacierVaultConfig) {
 	_init_.Initialize()
 
@@ -478,7 +478,10 @@ func (j *jsiiProxy_GlacierVault)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlacierVault)SetCount(val *float64) {
+func (j *jsiiProxy_GlacierVault)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

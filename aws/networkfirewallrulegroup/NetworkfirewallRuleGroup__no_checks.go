@@ -80,6 +80,10 @@ func (j *jsiiProxy_NetworkfirewallRuleGroup) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_NetworkfirewallRuleGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkfirewallRuleGroup) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

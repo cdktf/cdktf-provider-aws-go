@@ -2,14 +2,14 @@ package autoscalingattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/autoscalingattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/autoscalingattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_attachment aws_autoscaling_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/autoscaling_attachment aws_autoscaling_attachment}.
 type AutoscalingAttachment interface {
 	cdktf.TerraformResource
 	AlbTargetGroupArn() *string
@@ -27,9 +27,9 @@ type AutoscalingAttachment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -190,8 +190,8 @@ func (j *jsiiProxy_AutoscalingAttachment) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingAttachment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AutoscalingAttachment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -381,7 +381,7 @@ func (j *jsiiProxy_AutoscalingAttachment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_attachment aws_autoscaling_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/autoscaling_attachment aws_autoscaling_attachment} Resource.
 func NewAutoscalingAttachment(scope constructs.Construct, id *string, config *AutoscalingAttachmentConfig) AutoscalingAttachment {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewAutoscalingAttachment(scope constructs.Construct, id *string, config *Au
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/autoscaling_attachment aws_autoscaling_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/autoscaling_attachment aws_autoscaling_attachment} Resource.
 func NewAutoscalingAttachment_Override(a AutoscalingAttachment, scope constructs.Construct, id *string, config *AutoscalingAttachmentConfig) {
 	_init_.Initialize()
 
@@ -443,7 +443,10 @@ func (j *jsiiProxy_AutoscalingAttachment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AutoscalingAttachment)SetCount(val *float64) {
+func (j *jsiiProxy_AutoscalingAttachment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package dataawsec2transitgatewayattachments
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsec2transitgatewayattachments/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsec2transitgatewayattachments/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_attachments aws_ec2_transit_gateway_attachments}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_transit_gateway_attachments aws_ec2_transit_gateway_attachments}.
 type DataAwsEc2TransitGatewayAttachments interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAwsEc2TransitGatewayAttachments interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayAttachments) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayAttachments) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsEc2TransitGatewayAttachments) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayAttachments) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_attachments aws_ec2_transit_gateway_attachments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_transit_gateway_attachments aws_ec2_transit_gateway_attachments} Data Source.
 func NewDataAwsEc2TransitGatewayAttachments(scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayAttachmentsConfig) DataAwsEc2TransitGatewayAttachments {
 	_init_.Initialize()
 
@@ -359,7 +359,7 @@ func NewDataAwsEc2TransitGatewayAttachments(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_attachments aws_ec2_transit_gateway_attachments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_transit_gateway_attachments aws_ec2_transit_gateway_attachments} Data Source.
 func NewDataAwsEc2TransitGatewayAttachments_Override(d DataAwsEc2TransitGatewayAttachments, scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayAttachmentsConfig) {
 	_init_.Initialize()
 
@@ -370,7 +370,10 @@ func NewDataAwsEc2TransitGatewayAttachments_Override(d DataAwsEc2TransitGatewayA
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayAttachments)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayAttachments)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

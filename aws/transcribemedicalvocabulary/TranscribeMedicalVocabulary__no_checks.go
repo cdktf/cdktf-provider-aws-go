@@ -72,6 +72,10 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_TranscribeMedicalVocabulary) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TranscribeMedicalVocabulary) validateSetIdParameters(val *string) error {
 	return nil
 }

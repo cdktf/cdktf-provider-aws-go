@@ -92,6 +92,10 @@ func (j *jsiiProxy_ElastictranscoderPreset) validateSetContainerParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_ElastictranscoderPreset) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElastictranscoderPreset) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

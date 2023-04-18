@@ -72,6 +72,10 @@ func (j *jsiiProxy_GlacierVaultLock) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_GlacierVaultLock) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlacierVaultLock) validateSetIdParameters(val *string) error {
 	return nil
 }

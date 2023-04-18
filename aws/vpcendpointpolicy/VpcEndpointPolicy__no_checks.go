@@ -72,6 +72,10 @@ func (j *jsiiProxy_VpcEndpointPolicy) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_VpcEndpointPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package detectiveinvitationaccepter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/detectiveinvitationaccepter/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/detectiveinvitationaccepter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/detective_invitation_accepter aws_detective_invitation_accepter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/detective_invitation_accepter aws_detective_invitation_accepter}.
 type DetectiveInvitationAccepter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DetectiveInvitationAccepter interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DetectiveInvitationAccepter) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DetectiveInvitationAccepter) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DetectiveInvitationAccepter) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DetectiveInvitationAccepter) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/detective_invitation_accepter aws_detective_invitation_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/detective_invitation_accepter aws_detective_invitation_accepter} Resource.
 func NewDetectiveInvitationAccepter(scope constructs.Construct, id *string, config *DetectiveInvitationAccepterConfig) DetectiveInvitationAccepter {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDetectiveInvitationAccepter(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/detective_invitation_accepter aws_detective_invitation_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/detective_invitation_accepter aws_detective_invitation_accepter} Resource.
 func NewDetectiveInvitationAccepter_Override(d DetectiveInvitationAccepter, scope constructs.Construct, id *string, config *DetectiveInvitationAccepterConfig) {
 	_init_.Initialize()
 
@@ -349,7 +349,10 @@ func (j *jsiiProxy_DetectiveInvitationAccepter)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DetectiveInvitationAccepter)SetCount(val *float64) {
+func (j *jsiiProxy_DetectiveInvitationAccepter)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

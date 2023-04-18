@@ -68,6 +68,10 @@ func (j *jsiiProxy_IamUser) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_IamUser) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamUser) validateSetForceDestroyParameters(val interface{}) error {
 	return nil
 }

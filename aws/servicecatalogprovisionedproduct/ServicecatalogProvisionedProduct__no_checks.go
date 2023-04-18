@@ -84,6 +84,10 @@ func (j *jsiiProxy_ServicecatalogProvisionedProduct) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogProvisionedProduct) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogProvisionedProduct) validateSetIdParameters(val *string) error {
 	return nil
 }

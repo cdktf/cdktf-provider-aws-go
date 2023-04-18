@@ -68,6 +68,10 @@ func (j *jsiiProxy_SesIdentityNotificationTopic) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_SesIdentityNotificationTopic) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesIdentityNotificationTopic) validateSetIdParameters(val *string) error {
 	return nil
 }

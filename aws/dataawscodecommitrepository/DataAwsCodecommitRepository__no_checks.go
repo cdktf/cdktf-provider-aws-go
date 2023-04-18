@@ -64,6 +64,10 @@ func validateDataAwsCodecommitRepository_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCodecommitRepository) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCodecommitRepository) validateSetIdParameters(val *string) error {
 	return nil
 }

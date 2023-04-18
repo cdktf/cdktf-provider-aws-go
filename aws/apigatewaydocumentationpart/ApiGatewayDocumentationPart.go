@@ -2,14 +2,14 @@ package apigatewaydocumentationpart
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/apigatewaydocumentationpart/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/apigatewaydocumentationpart/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_documentation_part aws_api_gateway_documentation_part}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/api_gateway_documentation_part aws_api_gateway_documentation_part}.
 type ApiGatewayDocumentationPart interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ApiGatewayDocumentationPart interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -144,8 +144,8 @@ func (j *jsiiProxy_ApiGatewayDocumentationPart) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayDocumentationPart) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApiGatewayDocumentationPart) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -355,7 +355,7 @@ func (j *jsiiProxy_ApiGatewayDocumentationPart) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_documentation_part aws_api_gateway_documentation_part} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/api_gateway_documentation_part aws_api_gateway_documentation_part} Resource.
 func NewApiGatewayDocumentationPart(scope constructs.Construct, id *string, config *ApiGatewayDocumentationPartConfig) ApiGatewayDocumentationPart {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewApiGatewayDocumentationPart(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_documentation_part aws_api_gateway_documentation_part} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/api_gateway_documentation_part aws_api_gateway_documentation_part} Resource.
 func NewApiGatewayDocumentationPart_Override(a ApiGatewayDocumentationPart, scope constructs.Construct, id *string, config *ApiGatewayDocumentationPartConfig) {
 	_init_.Initialize()
 
@@ -395,7 +395,10 @@ func (j *jsiiProxy_ApiGatewayDocumentationPart)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayDocumentationPart)SetCount(val *float64) {
+func (j *jsiiProxy_ApiGatewayDocumentationPart)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

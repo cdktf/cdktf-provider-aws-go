@@ -2,14 +2,14 @@ package networkmanagerconnectattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/networkmanagerconnectattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkmanagerconnectattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_connect_attachment aws_networkmanager_connect_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/networkmanager_connect_attachment aws_networkmanager_connect_attachment}.
 type NetworkmanagerConnectAttachment interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -29,9 +29,9 @@ type NetworkmanagerConnectAttachment interface {
 	SetCoreNetworkId(val *string)
 	CoreNetworkIdInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -238,8 +238,8 @@ func (j *jsiiProxy_NetworkmanagerConnectAttachment) CoreNetworkIdInput() *string
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerConnectAttachment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_NetworkmanagerConnectAttachment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -549,7 +549,7 @@ func (j *jsiiProxy_NetworkmanagerConnectAttachment) TransportAttachmentIdInput()
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_connect_attachment aws_networkmanager_connect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/networkmanager_connect_attachment aws_networkmanager_connect_attachment} Resource.
 func NewNetworkmanagerConnectAttachment(scope constructs.Construct, id *string, config *NetworkmanagerConnectAttachmentConfig) NetworkmanagerConnectAttachment {
 	_init_.Initialize()
 
@@ -567,7 +567,7 @@ func NewNetworkmanagerConnectAttachment(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/networkmanager_connect_attachment aws_networkmanager_connect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/networkmanager_connect_attachment aws_networkmanager_connect_attachment} Resource.
 func NewNetworkmanagerConnectAttachment_Override(n NetworkmanagerConnectAttachment, scope constructs.Construct, id *string, config *NetworkmanagerConnectAttachmentConfig) {
 	_init_.Initialize()
 
@@ -600,7 +600,10 @@ func (j *jsiiProxy_NetworkmanagerConnectAttachment)SetCoreNetworkId(val *string)
 	)
 }
 
-func (j *jsiiProxy_NetworkmanagerConnectAttachment)SetCount(val *float64) {
+func (j *jsiiProxy_NetworkmanagerConnectAttachment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

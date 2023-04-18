@@ -72,6 +72,10 @@ func (j *jsiiProxy_AppstreamDirectoryConfig) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_AppstreamDirectoryConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppstreamDirectoryConfig) validateSetDirectoryNameParameters(val *string) error {
 	return nil
 }

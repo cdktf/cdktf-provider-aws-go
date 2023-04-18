@@ -64,6 +64,10 @@ func validateDataAwsCloudformationStack_IsTerraformElementParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudformationStack) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudformationStack) validateSetIdParameters(val *string) error {
 	return nil
 }

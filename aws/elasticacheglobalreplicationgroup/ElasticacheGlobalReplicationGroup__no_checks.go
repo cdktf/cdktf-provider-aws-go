@@ -80,6 +80,10 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheGlobalReplicationGroup) validateSetEngineVersionParameters(val *string) error {
 	return nil
 }

@@ -84,6 +84,10 @@ func (j *jsiiProxy_GlobalacceleratorListener) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GlobalacceleratorListener) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlobalacceleratorListener) validateSetIdParameters(val *string) error {
 	return nil
 }

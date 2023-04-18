@@ -2,14 +2,14 @@ package dataawsqldbledger
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsqldbledger/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsqldbledger/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/qldb_ledger aws_qldb_ledger}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/qldb_ledger aws_qldb_ledger}.
 type DataAwsQldbLedger interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -18,9 +18,9 @@ type DataAwsQldbLedger interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DeletionProtection() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DataAwsQldbLedger) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsQldbLedger) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsQldbLedger) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -349,7 +349,7 @@ func (j *jsiiProxy_DataAwsQldbLedger) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/qldb_ledger aws_qldb_ledger} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/qldb_ledger aws_qldb_ledger} Data Source.
 func NewDataAwsQldbLedger(scope constructs.Construct, id *string, config *DataAwsQldbLedgerConfig) DataAwsQldbLedger {
 	_init_.Initialize()
 
@@ -367,7 +367,7 @@ func NewDataAwsQldbLedger(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/qldb_ledger aws_qldb_ledger} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/qldb_ledger aws_qldb_ledger} Data Source.
 func NewDataAwsQldbLedger_Override(d DataAwsQldbLedger, scope constructs.Construct, id *string, config *DataAwsQldbLedgerConfig) {
 	_init_.Initialize()
 
@@ -378,7 +378,10 @@ func NewDataAwsQldbLedger_Override(d DataAwsQldbLedger, scope constructs.Constru
 	)
 }
 
-func (j *jsiiProxy_DataAwsQldbLedger)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsQldbLedger)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

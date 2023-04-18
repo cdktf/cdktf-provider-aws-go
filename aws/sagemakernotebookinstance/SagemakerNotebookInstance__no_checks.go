@@ -80,6 +80,10 @@ func (j *jsiiProxy_SagemakerNotebookInstance) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerNotebookInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerNotebookInstance) validateSetDefaultCodeRepositoryParameters(val *string) error {
 	return nil
 }

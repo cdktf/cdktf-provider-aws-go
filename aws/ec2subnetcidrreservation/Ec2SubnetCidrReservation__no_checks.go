@@ -72,6 +72,10 @@ func (j *jsiiProxy_Ec2SubnetCidrReservation) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_Ec2SubnetCidrReservation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2SubnetCidrReservation) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

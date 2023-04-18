@@ -64,6 +64,10 @@ func validateDataAwsRoute53Zone_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRoute53Zone) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRoute53Zone) validateSetIdParameters(val *string) error {
 	return nil
 }

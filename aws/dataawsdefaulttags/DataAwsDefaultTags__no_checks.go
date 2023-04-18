@@ -64,6 +64,10 @@ func validateDataAwsDefaultTags_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDefaultTags) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDefaultTags) validateSetIdParameters(val *string) error {
 	return nil
 }

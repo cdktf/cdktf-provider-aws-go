@@ -64,6 +64,10 @@ func validateDataAwsDxConnection_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDxConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDxConnection) validateSetIdParameters(val *string) error {
 	return nil
 }

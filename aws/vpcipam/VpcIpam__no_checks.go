@@ -80,6 +80,10 @@ func (j *jsiiProxy_VpcIpam) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_VpcIpam) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpam) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

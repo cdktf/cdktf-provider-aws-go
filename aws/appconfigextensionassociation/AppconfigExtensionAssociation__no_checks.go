@@ -68,6 +68,10 @@ func (j *jsiiProxy_AppconfigExtensionAssociation) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_AppconfigExtensionAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppconfigExtensionAssociation) validateSetExtensionArnParameters(val *string) error {
 	return nil
 }

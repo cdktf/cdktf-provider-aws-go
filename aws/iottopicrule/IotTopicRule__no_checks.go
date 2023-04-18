@@ -148,6 +148,10 @@ func (j *jsiiProxy_IotTopicRule) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_IotTopicRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotTopicRule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

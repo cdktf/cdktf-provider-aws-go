@@ -2,14 +2,14 @@ package s3controlobjectlambdaaccesspoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/s3controlobjectlambdaaccesspoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/s3controlobjectlambdaaccesspoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point aws_s3control_object_lambda_access_point}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/s3control_object_lambda_access_point aws_s3control_object_lambda_access_point}.
 type S3ControlObjectLambdaAccessPoint interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -27,9 +27,9 @@ type S3ControlObjectLambdaAccessPoint interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -196,8 +196,8 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -367,7 +367,7 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point aws_s3control_object_lambda_access_point} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/s3control_object_lambda_access_point aws_s3control_object_lambda_access_point} Resource.
 func NewS3ControlObjectLambdaAccessPoint(scope constructs.Construct, id *string, config *S3ControlObjectLambdaAccessPointConfig) S3ControlObjectLambdaAccessPoint {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewS3ControlObjectLambdaAccessPoint(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3control_object_lambda_access_point aws_s3control_object_lambda_access_point} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/s3control_object_lambda_access_point aws_s3control_object_lambda_access_point} Resource.
 func NewS3ControlObjectLambdaAccessPoint_Override(s S3ControlObjectLambdaAccessPoint, scope constructs.Construct, id *string, config *S3ControlObjectLambdaAccessPointConfig) {
 	_init_.Initialize()
 
@@ -418,7 +418,10 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetCount(val *float64) {
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

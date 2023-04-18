@@ -2,14 +2,14 @@ package chimesdkmediapipelinesmediainsightspipelineconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/chimesdkmediapipelinesmediainsightspipelineconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/chimesdkmediapipelinesmediainsightspipelineconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/chimesdkmediapipelines_media_insights_pipeline_configuration aws_chimesdkmediapipelines_media_insights_pipeline_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration aws_chimesdkmediapipelines_media_insights_pipeline_configuration}.
 type ChimesdkmediapipelinesMediaInsightsPipelineConfiguration interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type ChimesdkmediapipelinesMediaInsightsPipelineConfiguration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -168,8 +168,8 @@ func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) Con
 	return returns
 }
 
-func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -449,7 +449,7 @@ func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) Tim
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/chimesdkmediapipelines_media_insights_pipeline_configuration aws_chimesdkmediapipelines_media_insights_pipeline_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration aws_chimesdkmediapipelines_media_insights_pipeline_configuration} Resource.
 func NewChimesdkmediapipelinesMediaInsightsPipelineConfiguration(scope constructs.Construct, id *string, config *ChimesdkmediapipelinesMediaInsightsPipelineConfigurationConfig) ChimesdkmediapipelinesMediaInsightsPipelineConfiguration {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewChimesdkmediapipelinesMediaInsightsPipelineConfiguration(scope construct
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/chimesdkmediapipelines_media_insights_pipeline_configuration aws_chimesdkmediapipelines_media_insights_pipeline_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/chimesdkmediapipelines_media_insights_pipeline_configuration aws_chimesdkmediapipelines_media_insights_pipeline_configuration} Resource.
 func NewChimesdkmediapipelinesMediaInsightsPipelineConfiguration_Override(c ChimesdkmediapipelinesMediaInsightsPipelineConfiguration, scope constructs.Construct, id *string, config *ChimesdkmediapipelinesMediaInsightsPipelineConfigurationConfig) {
 	_init_.Initialize()
 
@@ -489,7 +489,10 @@ func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration)SetC
 	)
 }
 
-func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration)SetCount(val *float64) {
+func (j *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

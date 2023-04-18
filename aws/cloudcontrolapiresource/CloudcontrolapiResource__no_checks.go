@@ -72,6 +72,10 @@ func (j *jsiiProxy_CloudcontrolapiResource) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_CloudcontrolapiResource) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudcontrolapiResource) validateSetDesiredStateParameters(val *string) error {
 	return nil
 }

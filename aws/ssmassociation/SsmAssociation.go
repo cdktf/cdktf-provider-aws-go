@@ -2,14 +2,14 @@ package ssmassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/ssmassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ssmassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ssm_association aws_ssm_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssm_association aws_ssm_association}.
 type SsmAssociation interface {
 	cdktf.TerraformResource
 	ApplyOnlyAtCronInterval() interface{}
@@ -35,9 +35,9 @@ type SsmAssociation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -292,8 +292,8 @@ func (j *jsiiProxy_SsmAssociation) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_SsmAssociation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SsmAssociation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -643,7 +643,7 @@ func (j *jsiiProxy_SsmAssociation) WaitForSuccessTimeoutSecondsInput() *float64 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ssm_association aws_ssm_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssm_association aws_ssm_association} Resource.
 func NewSsmAssociation(scope constructs.Construct, id *string, config *SsmAssociationConfig) SsmAssociation {
 	_init_.Initialize()
 
@@ -661,7 +661,7 @@ func NewSsmAssociation(scope constructs.Construct, id *string, config *SsmAssoci
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ssm_association aws_ssm_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssm_association aws_ssm_association} Resource.
 func NewSsmAssociation_Override(s SsmAssociation, scope constructs.Construct, id *string, config *SsmAssociationConfig) {
 	_init_.Initialize()
 
@@ -727,7 +727,10 @@ func (j *jsiiProxy_SsmAssociation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SsmAssociation)SetCount(val *float64) {
+func (j *jsiiProxy_SsmAssociation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

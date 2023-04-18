@@ -68,6 +68,10 @@ func (j *jsiiProxy_RdsClusterActivityStream) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_RdsClusterActivityStream) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsClusterActivityStream) validateSetEngineNativeAuditFieldsIncludedParameters(val interface{}) error {
 	return nil
 }

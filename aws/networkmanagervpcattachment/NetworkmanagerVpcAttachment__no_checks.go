@@ -80,6 +80,10 @@ func (j *jsiiProxy_NetworkmanagerVpcAttachment) validateSetCoreNetworkIdParamete
 	return nil
 }
 
+func (j *jsiiProxy_NetworkmanagerVpcAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerVpcAttachment) validateSetIdParameters(val *string) error {
 	return nil
 }

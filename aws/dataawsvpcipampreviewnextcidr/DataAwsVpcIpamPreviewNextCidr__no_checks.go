@@ -68,6 +68,10 @@ func validateDataAwsVpcIpamPreviewNextCidr_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpcIpamPreviewNextCidr) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpcIpamPreviewNextCidr) validateSetDisallowedCidrsParameters(val *[]*string) error {
 	return nil
 }

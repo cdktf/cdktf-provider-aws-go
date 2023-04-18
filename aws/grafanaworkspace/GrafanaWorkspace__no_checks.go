@@ -92,6 +92,10 @@ func (j *jsiiProxy_GrafanaWorkspace) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_GrafanaWorkspace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GrafanaWorkspace) validateSetDataSourcesParameters(val *[]*string) error {
 	return nil
 }

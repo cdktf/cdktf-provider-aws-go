@@ -2,14 +2,14 @@ package sesactivereceiptruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/sesactivereceiptruleset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/sesactivereceiptruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set}.
 type SesActiveReceiptRuleSet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type SesActiveReceiptRuleSet interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -149,8 +149,8 @@ func (j *jsiiProxy_SesActiveReceiptRuleSet) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_SesActiveReceiptRuleSet) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SesActiveReceiptRuleSet) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -320,7 +320,7 @@ func (j *jsiiProxy_SesActiveReceiptRuleSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set} Resource.
 func NewSesActiveReceiptRuleSet(scope constructs.Construct, id *string, config *SesActiveReceiptRuleSetConfig) SesActiveReceiptRuleSet {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewSesActiveReceiptRuleSet(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_active_receipt_rule_set aws_ses_active_receipt_rule_set} Resource.
 func NewSesActiveReceiptRuleSet_Override(s SesActiveReceiptRuleSet, scope constructs.Construct, id *string, config *SesActiveReceiptRuleSetConfig) {
 	_init_.Initialize()
 
@@ -360,7 +360,10 @@ func (j *jsiiProxy_SesActiveReceiptRuleSet)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SesActiveReceiptRuleSet)SetCount(val *float64) {
+func (j *jsiiProxy_SesActiveReceiptRuleSet)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

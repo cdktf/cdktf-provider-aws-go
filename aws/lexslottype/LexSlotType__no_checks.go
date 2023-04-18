@@ -76,6 +76,10 @@ func (j *jsiiProxy_LexSlotType) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_LexSlotType) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LexSlotType) validateSetCreateVersionParameters(val interface{}) error {
 	return nil
 }

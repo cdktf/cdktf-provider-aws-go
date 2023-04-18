@@ -92,6 +92,10 @@ func (j *jsiiProxy_ElasticacheCluster) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheCluster) validateSetEngineParameters(val *string) error {
 	return nil
 }

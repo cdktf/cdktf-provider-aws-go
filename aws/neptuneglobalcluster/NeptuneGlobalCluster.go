@@ -2,14 +2,14 @@ package neptuneglobalcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/neptuneglobalcluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/neptuneglobalcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/neptune_global_cluster aws_neptune_global_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/neptune_global_cluster aws_neptune_global_cluster}.
 type NeptuneGlobalCluster interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type NeptuneGlobalCluster interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DeletionProtection() interface{}
 	SetDeletionProtection(val interface{})
 	DeletionProtectionInput() interface{}
@@ -176,8 +176,8 @@ func (j *jsiiProxy_NeptuneGlobalCluster) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneGlobalCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_NeptuneGlobalCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -497,7 +497,7 @@ func (j *jsiiProxy_NeptuneGlobalCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/neptune_global_cluster aws_neptune_global_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/neptune_global_cluster aws_neptune_global_cluster} Resource.
 func NewNeptuneGlobalCluster(scope constructs.Construct, id *string, config *NeptuneGlobalClusterConfig) NeptuneGlobalCluster {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewNeptuneGlobalCluster(scope constructs.Construct, id *string, config *Nep
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/neptune_global_cluster aws_neptune_global_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/neptune_global_cluster aws_neptune_global_cluster} Resource.
 func NewNeptuneGlobalCluster_Override(n NeptuneGlobalCluster, scope constructs.Construct, id *string, config *NeptuneGlobalClusterConfig) {
 	_init_.Initialize()
 
@@ -537,7 +537,10 @@ func (j *jsiiProxy_NeptuneGlobalCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_NeptuneGlobalCluster)SetCount(val *float64) {
+func (j *jsiiProxy_NeptuneGlobalCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

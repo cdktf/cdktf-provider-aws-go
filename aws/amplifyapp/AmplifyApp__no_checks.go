@@ -92,6 +92,10 @@ func (j *jsiiProxy_AmplifyApp) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_AmplifyApp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AmplifyApp) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

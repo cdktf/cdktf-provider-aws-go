@@ -2,14 +2,14 @@ package dataawsefsmounttarget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsefsmounttarget/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsefsmounttarget/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/efs_mount_target aws_efs_mount_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/efs_mount_target aws_efs_mount_target}.
 type DataAwsEfsMountTarget interface {
 	cdktf.TerraformDataSource
 	AccessPointId() *string
@@ -22,9 +22,9 @@ type DataAwsEfsMountTarget interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -179,8 +179,8 @@ func (j *jsiiProxy_DataAwsEfsMountTarget) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEfsMountTarget) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsEfsMountTarget) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -440,7 +440,7 @@ func (j *jsiiProxy_DataAwsEfsMountTarget) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/efs_mount_target aws_efs_mount_target} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/efs_mount_target aws_efs_mount_target} Data Source.
 func NewDataAwsEfsMountTarget(scope constructs.Construct, id *string, config *DataAwsEfsMountTargetConfig) DataAwsEfsMountTarget {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewDataAwsEfsMountTarget(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/efs_mount_target aws_efs_mount_target} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/efs_mount_target aws_efs_mount_target} Data Source.
 func NewDataAwsEfsMountTarget_Override(d DataAwsEfsMountTarget, scope constructs.Construct, id *string, config *DataAwsEfsMountTargetConfig) {
 	_init_.Initialize()
 
@@ -480,7 +480,10 @@ func (j *jsiiProxy_DataAwsEfsMountTarget)SetAccessPointId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEfsMountTarget)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsEfsMountTarget)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -80,6 +80,10 @@ func (j *jsiiProxy_ImagebuilderImageRecipe) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ImagebuilderImageRecipe) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImagebuilderImageRecipe) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

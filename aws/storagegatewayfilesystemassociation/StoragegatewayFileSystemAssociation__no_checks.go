@@ -76,6 +76,10 @@ func (j *jsiiProxy_StoragegatewayFileSystemAssociation) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_StoragegatewayFileSystemAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewayFileSystemAssociation) validateSetGatewayArnParameters(val *string) error {
 	return nil
 }

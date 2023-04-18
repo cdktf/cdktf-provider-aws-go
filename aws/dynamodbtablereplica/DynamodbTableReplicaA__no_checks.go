@@ -72,6 +72,10 @@ func (j *jsiiProxy_DynamodbTableReplicaA) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbTableReplicaA) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbTableReplicaA) validateSetGlobalTableArnParameters(val *string) error {
 	return nil
 }

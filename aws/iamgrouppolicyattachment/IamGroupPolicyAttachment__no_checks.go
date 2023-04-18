@@ -68,6 +68,10 @@ func (j *jsiiProxy_IamGroupPolicyAttachment) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_IamGroupPolicyAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamGroupPolicyAttachment) validateSetGroupParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_LightsailLbStickinessPolicy) validateSetCookieDurationParamet
 	return nil
 }
 
+func (j *jsiiProxy_LightsailLbStickinessPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailLbStickinessPolicy) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

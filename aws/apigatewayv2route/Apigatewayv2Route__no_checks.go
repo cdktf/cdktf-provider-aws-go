@@ -92,6 +92,10 @@ func (j *jsiiProxy_Apigatewayv2Route) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_Apigatewayv2Route) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2Route) validateSetIdParameters(val *string) error {
 	return nil
 }

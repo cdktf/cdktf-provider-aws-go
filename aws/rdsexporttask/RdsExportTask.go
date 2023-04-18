@@ -2,14 +2,14 @@ package rdsexporttask
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/rdsexporttask/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/rdsexporttask/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/rds_export_task aws_rds_export_task}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rds_export_task aws_rds_export_task}.
 type RdsExportTask interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type RdsExportTask interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -167,8 +167,8 @@ func (j *jsiiProxy_RdsExportTask) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_RdsExportTask) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_RdsExportTask) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -548,7 +548,7 @@ func (j *jsiiProxy_RdsExportTask) WarningMessage() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/rds_export_task aws_rds_export_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rds_export_task aws_rds_export_task} Resource.
 func NewRdsExportTask(scope constructs.Construct, id *string, config *RdsExportTaskConfig) RdsExportTask {
 	_init_.Initialize()
 
@@ -566,7 +566,7 @@ func NewRdsExportTask(scope constructs.Construct, id *string, config *RdsExportT
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/rds_export_task aws_rds_export_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/rds_export_task aws_rds_export_task} Resource.
 func NewRdsExportTask_Override(r RdsExportTask, scope constructs.Construct, id *string, config *RdsExportTaskConfig) {
 	_init_.Initialize()
 
@@ -588,7 +588,10 @@ func (j *jsiiProxy_RdsExportTask)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_RdsExportTask)SetCount(val *float64) {
+func (j *jsiiProxy_RdsExportTask)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

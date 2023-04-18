@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) validateSetArnParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

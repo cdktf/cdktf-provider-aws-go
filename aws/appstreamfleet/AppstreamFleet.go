@@ -2,14 +2,14 @@ package appstreamfleet
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/appstreamfleet/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/appstreamfleet/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/appstream_fleet aws_appstream_fleet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appstream_fleet aws_appstream_fleet}.
 type AppstreamFleet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -24,9 +24,9 @@ type AppstreamFleet interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -237,8 +237,8 @@ func (j *jsiiProxy_AppstreamFleet) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_AppstreamFleet) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppstreamFleet) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -748,7 +748,7 @@ func (j *jsiiProxy_AppstreamFleet) VpcConfigInput() *AppstreamFleetVpcConfig {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/appstream_fleet aws_appstream_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appstream_fleet aws_appstream_fleet} Resource.
 func NewAppstreamFleet(scope constructs.Construct, id *string, config *AppstreamFleetConfig) AppstreamFleet {
 	_init_.Initialize()
 
@@ -766,7 +766,7 @@ func NewAppstreamFleet(scope constructs.Construct, id *string, config *Appstream
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/appstream_fleet aws_appstream_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appstream_fleet aws_appstream_fleet} Resource.
 func NewAppstreamFleet_Override(a AppstreamFleet, scope constructs.Construct, id *string, config *AppstreamFleetConfig) {
 	_init_.Initialize()
 
@@ -788,7 +788,10 @@ func (j *jsiiProxy_AppstreamFleet)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppstreamFleet)SetCount(val *float64) {
+func (j *jsiiProxy_AppstreamFleet)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

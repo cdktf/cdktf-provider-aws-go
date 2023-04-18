@@ -72,6 +72,10 @@ func (j *jsiiProxy_SecurityhubStandardsControl) validateSetControlStatusParamete
 	return nil
 }
 
+func (j *jsiiProxy_SecurityhubStandardsControl) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityhubStandardsControl) validateSetDisabledReasonParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataAwsAvailabilityZone) validateSetAllAvailabilityZonesParam
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAvailabilityZone) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAvailabilityZone) validateSetIdParameters(val *string) error {
 	return nil
 }

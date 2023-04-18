@@ -68,6 +68,10 @@ func (j *jsiiProxy_GlueRegistry) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_GlueRegistry) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueRegistry) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

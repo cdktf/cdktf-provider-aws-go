@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceType) validateSetArnParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceType) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceType) validateSetIdParameters(val *string) error {
 	return nil
 }

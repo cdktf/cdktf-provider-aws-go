@@ -84,6 +84,10 @@ func (j *jsiiProxy_GlueJob) validateSetConnectionsParameters(val *[]*string) err
 	return nil
 }
 
+func (j *jsiiProxy_GlueJob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueJob) validateSetDefaultArgumentsParameters(val *map[string]*string) error {
 	return nil
 }

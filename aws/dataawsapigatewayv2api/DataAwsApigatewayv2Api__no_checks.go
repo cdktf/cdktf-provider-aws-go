@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsApigatewayv2Api) validateSetApiIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsApigatewayv2Api) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsApigatewayv2Api) validateSetIdParameters(val *string) error {
 	return nil
 }

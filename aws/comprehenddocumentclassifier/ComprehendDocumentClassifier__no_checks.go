@@ -84,6 +84,10 @@ func (j *jsiiProxy_ComprehendDocumentClassifier) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_ComprehendDocumentClassifier) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComprehendDocumentClassifier) validateSetDataAccessRoleArnParameters(val *string) error {
 	return nil
 }

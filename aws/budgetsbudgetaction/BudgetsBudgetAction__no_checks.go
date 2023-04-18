@@ -100,6 +100,10 @@ func (j *jsiiProxy_BudgetsBudgetAction) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_BudgetsBudgetAction) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BudgetsBudgetAction) validateSetExecutionRoleArnParameters(val *string) error {
 	return nil
 }

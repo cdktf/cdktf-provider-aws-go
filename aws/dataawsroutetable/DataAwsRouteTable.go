@@ -2,14 +2,14 @@ package dataawsroutetable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsroutetable/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsroutetable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/route_table aws_route_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route_table aws_route_table}.
 type DataAwsRouteTable interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -19,9 +19,9 @@ type DataAwsRouteTable interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_DataAwsRouteTable) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRouteTable) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsRouteTable) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -470,7 +470,7 @@ func (j *jsiiProxy_DataAwsRouteTable) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/route_table aws_route_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route_table aws_route_table} Data Source.
 func NewDataAwsRouteTable(scope constructs.Construct, id *string, config *DataAwsRouteTableConfig) DataAwsRouteTable {
 	_init_.Initialize()
 
@@ -488,7 +488,7 @@ func NewDataAwsRouteTable(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/route_table aws_route_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route_table aws_route_table} Data Source.
 func NewDataAwsRouteTable_Override(d DataAwsRouteTable, scope constructs.Construct, id *string, config *DataAwsRouteTableConfig) {
 	_init_.Initialize()
 
@@ -499,7 +499,10 @@ func NewDataAwsRouteTable_Override(d DataAwsRouteTable, scope constructs.Constru
 	)
 }
 
-func (j *jsiiProxy_DataAwsRouteTable)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsRouteTable)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

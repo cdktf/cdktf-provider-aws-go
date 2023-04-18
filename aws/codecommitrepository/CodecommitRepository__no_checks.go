@@ -68,6 +68,10 @@ func (j *jsiiProxy_CodecommitRepository) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_CodecommitRepository) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodecommitRepository) validateSetDefaultBranchParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_ApplicationinsightsApplication) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_ApplicationinsightsApplication) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApplicationinsightsApplication) validateSetCweMonitorEnabledParameters(val interface{}) error {
 	return nil
 }

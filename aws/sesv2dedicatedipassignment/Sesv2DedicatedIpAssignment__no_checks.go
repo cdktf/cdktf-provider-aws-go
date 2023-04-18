@@ -72,6 +72,10 @@ func (j *jsiiProxy_Sesv2DedicatedIpAssignment) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_Sesv2DedicatedIpAssignment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Sesv2DedicatedIpAssignment) validateSetDestinationPoolNameParameters(val *string) error {
 	return nil
 }

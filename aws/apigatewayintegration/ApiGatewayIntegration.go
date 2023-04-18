@@ -2,14 +2,14 @@ package apigatewayintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/apigatewayintegration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/apigatewayintegration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_integration aws_api_gateway_integration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/api_gateway_integration aws_api_gateway_integration}.
 type ApiGatewayIntegration interface {
 	cdktf.TerraformResource
 	CacheKeyParameters() *[]*string
@@ -36,9 +36,9 @@ type ApiGatewayIntegration interface {
 	SetContentHandling(val *string)
 	ContentHandlingInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Credentials() *string
 	SetCredentials(val *string)
 	CredentialsInput() *string
@@ -299,8 +299,8 @@ func (j *jsiiProxy_ApiGatewayIntegration) ContentHandlingInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayIntegration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApiGatewayIntegration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -690,7 +690,7 @@ func (j *jsiiProxy_ApiGatewayIntegration) UriInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_integration aws_api_gateway_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/api_gateway_integration aws_api_gateway_integration} Resource.
 func NewApiGatewayIntegration(scope constructs.Construct, id *string, config *ApiGatewayIntegrationConfig) ApiGatewayIntegration {
 	_init_.Initialize()
 
@@ -708,7 +708,7 @@ func NewApiGatewayIntegration(scope constructs.Construct, id *string, config *Ap
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_integration aws_api_gateway_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/api_gateway_integration aws_api_gateway_integration} Resource.
 func NewApiGatewayIntegration_Override(a ApiGatewayIntegration, scope constructs.Construct, id *string, config *ApiGatewayIntegrationConfig) {
 	_init_.Initialize()
 
@@ -785,7 +785,10 @@ func (j *jsiiProxy_ApiGatewayIntegration)SetContentHandling(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayIntegration)SetCount(val *float64) {
+func (j *jsiiProxy_ApiGatewayIntegration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

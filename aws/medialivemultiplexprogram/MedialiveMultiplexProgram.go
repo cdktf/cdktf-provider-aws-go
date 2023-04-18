@@ -2,14 +2,14 @@ package medialivemultiplexprogram
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/medialivemultiplexprogram/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivemultiplexprogram/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/medialive_multiplex_program aws_medialive_multiplex_program}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program}.
 type MedialiveMultiplexProgram interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type MedialiveMultiplexProgram interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_MedialiveMultiplexProgram) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgram) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MedialiveMultiplexProgram) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -343,7 +343,7 @@ func (j *jsiiProxy_MedialiveMultiplexProgram) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/medialive_multiplex_program aws_medialive_multiplex_program} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program} Resource.
 func NewMedialiveMultiplexProgram(scope constructs.Construct, id *string, config *MedialiveMultiplexProgramConfig) MedialiveMultiplexProgram {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewMedialiveMultiplexProgram(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/medialive_multiplex_program aws_medialive_multiplex_program} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program} Resource.
 func NewMedialiveMultiplexProgram_Override(m MedialiveMultiplexProgram, scope constructs.Construct, id *string, config *MedialiveMultiplexProgramConfig) {
 	_init_.Initialize()
 
@@ -383,7 +383,10 @@ func (j *jsiiProxy_MedialiveMultiplexProgram)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_MedialiveMultiplexProgram)SetCount(val *float64) {
+func (j *jsiiProxy_MedialiveMultiplexProgram)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

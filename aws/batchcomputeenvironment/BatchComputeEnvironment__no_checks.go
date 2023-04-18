@@ -84,6 +84,10 @@ func (j *jsiiProxy_BatchComputeEnvironment) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_BatchComputeEnvironment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchComputeEnvironment) validateSetIdParameters(val *string) error {
 	return nil
 }

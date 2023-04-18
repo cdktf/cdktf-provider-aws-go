@@ -2,14 +2,14 @@ package batchschedulingpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/batchschedulingpolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/batchschedulingpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy aws_batch_scheduling_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/batch_scheduling_policy aws_batch_scheduling_policy}.
 type BatchSchedulingPolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type BatchSchedulingPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -161,8 +161,8 @@ func (j *jsiiProxy_BatchSchedulingPolicy) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_BatchSchedulingPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_BatchSchedulingPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -392,7 +392,7 @@ func (j *jsiiProxy_BatchSchedulingPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy aws_batch_scheduling_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/batch_scheduling_policy aws_batch_scheduling_policy} Resource.
 func NewBatchSchedulingPolicy(scope constructs.Construct, id *string, config *BatchSchedulingPolicyConfig) BatchSchedulingPolicy {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewBatchSchedulingPolicy(scope constructs.Construct, id *string, config *Ba
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/batch_scheduling_policy aws_batch_scheduling_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/batch_scheduling_policy aws_batch_scheduling_policy} Resource.
 func NewBatchSchedulingPolicy_Override(b BatchSchedulingPolicy, scope constructs.Construct, id *string, config *BatchSchedulingPolicyConfig) {
 	_init_.Initialize()
 
@@ -432,7 +432,10 @@ func (j *jsiiProxy_BatchSchedulingPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BatchSchedulingPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_BatchSchedulingPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

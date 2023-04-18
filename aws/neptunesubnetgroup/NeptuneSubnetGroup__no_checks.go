@@ -68,6 +68,10 @@ func (j *jsiiProxy_NeptuneSubnetGroup) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_NeptuneSubnetGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NeptuneSubnetGroup) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

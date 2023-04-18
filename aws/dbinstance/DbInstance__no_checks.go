@@ -124,6 +124,10 @@ func (j *jsiiProxy_DbInstance) validateSetCopyTagsToSnapshotParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_DbInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbInstance) validateSetCustomerOwnedIpEnabledParameters(val interface{}) error {
 	return nil
 }

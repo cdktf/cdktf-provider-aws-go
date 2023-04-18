@@ -2,14 +2,14 @@ package dxhostedtransitvirtualinterface
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dxhostedtransitvirtualinterface/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dxhostedtransitvirtualinterface/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/dx_hosted_transit_virtual_interface aws_dx_hosted_transit_virtual_interface}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dx_hosted_transit_virtual_interface aws_dx_hosted_transit_virtual_interface}.
 type DxHostedTransitVirtualInterface interface {
 	cdktf.TerraformResource
 	AddressFamily() *string
@@ -39,9 +39,9 @@ type DxHostedTransitVirtualInterface interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomerAddress() *string
 	SetCustomerAddress(val *string)
 	CustomerAddressInput() *string
@@ -307,8 +307,8 @@ func (j *jsiiProxy_DxHostedTransitVirtualInterface) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_DxHostedTransitVirtualInterface) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DxHostedTransitVirtualInterface) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -588,7 +588,7 @@ func (j *jsiiProxy_DxHostedTransitVirtualInterface) VlanInput() *float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/dx_hosted_transit_virtual_interface aws_dx_hosted_transit_virtual_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dx_hosted_transit_virtual_interface aws_dx_hosted_transit_virtual_interface} Resource.
 func NewDxHostedTransitVirtualInterface(scope constructs.Construct, id *string, config *DxHostedTransitVirtualInterfaceConfig) DxHostedTransitVirtualInterface {
 	_init_.Initialize()
 
@@ -606,7 +606,7 @@ func NewDxHostedTransitVirtualInterface(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/dx_hosted_transit_virtual_interface aws_dx_hosted_transit_virtual_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dx_hosted_transit_virtual_interface aws_dx_hosted_transit_virtual_interface} Resource.
 func NewDxHostedTransitVirtualInterface_Override(d DxHostedTransitVirtualInterface, scope constructs.Construct, id *string, config *DxHostedTransitVirtualInterfaceConfig) {
 	_init_.Initialize()
 
@@ -683,7 +683,10 @@ func (j *jsiiProxy_DxHostedTransitVirtualInterface)SetConnectionId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DxHostedTransitVirtualInterface)SetCount(val *float64) {
+func (j *jsiiProxy_DxHostedTransitVirtualInterface)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

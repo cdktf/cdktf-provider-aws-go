@@ -80,6 +80,10 @@ func (j *jsiiProxy_PipesPipe) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_PipesPipe) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PipesPipe) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

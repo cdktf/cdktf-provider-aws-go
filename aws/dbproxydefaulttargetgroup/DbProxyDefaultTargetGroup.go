@@ -2,14 +2,14 @@ package dbproxydefaulttargetgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dbproxydefaulttargetgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dbproxydefaulttargetgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group aws_db_proxy_default_target_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/db_proxy_default_target_group aws_db_proxy_default_target_group}.
 type DbProxyDefaultTargetGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -24,9 +24,9 @@ type DbProxyDefaultTargetGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DbProxyName() *string
 	SetDbProxyName(val *string)
 	DbProxyNameInput() *string
@@ -178,8 +178,8 @@ func (j *jsiiProxy_DbProxyDefaultTargetGroup) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_DbProxyDefaultTargetGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DbProxyDefaultTargetGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -379,7 +379,7 @@ func (j *jsiiProxy_DbProxyDefaultTargetGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group aws_db_proxy_default_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/db_proxy_default_target_group aws_db_proxy_default_target_group} Resource.
 func NewDbProxyDefaultTargetGroup(scope constructs.Construct, id *string, config *DbProxyDefaultTargetGroupConfig) DbProxyDefaultTargetGroup {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewDbProxyDefaultTargetGroup(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/db_proxy_default_target_group aws_db_proxy_default_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/db_proxy_default_target_group aws_db_proxy_default_target_group} Resource.
 func NewDbProxyDefaultTargetGroup_Override(d DbProxyDefaultTargetGroup, scope constructs.Construct, id *string, config *DbProxyDefaultTargetGroupConfig) {
 	_init_.Initialize()
 
@@ -419,7 +419,10 @@ func (j *jsiiProxy_DbProxyDefaultTargetGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbProxyDefaultTargetGroup)SetCount(val *float64) {
+func (j *jsiiProxy_DbProxyDefaultTargetGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func (j *jsiiProxy_DirectoryServiceConditionalForwarder) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_DirectoryServiceConditionalForwarder) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DirectoryServiceConditionalForwarder) validateSetDirectoryIdParameters(val *string) error {
 	return nil
 }

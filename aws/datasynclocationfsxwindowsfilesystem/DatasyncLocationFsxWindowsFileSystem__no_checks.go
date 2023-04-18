@@ -68,6 +68,10 @@ func (j *jsiiProxy_DatasyncLocationFsxWindowsFileSystem) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncLocationFsxWindowsFileSystem) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationFsxWindowsFileSystem) validateSetDomainParameters(val *string) error {
 	return nil
 }

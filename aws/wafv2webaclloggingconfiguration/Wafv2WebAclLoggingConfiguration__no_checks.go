@@ -76,6 +76,10 @@ func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

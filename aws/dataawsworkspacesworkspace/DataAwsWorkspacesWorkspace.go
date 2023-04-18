@@ -2,14 +2,14 @@ package dataawsworkspacesworkspace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsworkspacesworkspace/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsworkspacesworkspace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/workspaces_workspace aws_workspaces_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/workspaces_workspace aws_workspaces_workspace}.
 type DataAwsWorkspacesWorkspace interface {
 	cdktf.TerraformDataSource
 	BundleId() *string
@@ -19,9 +19,9 @@ type DataAwsWorkspacesWorkspace interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -161,8 +161,8 @@ func (j *jsiiProxy_DataAwsWorkspacesWorkspace) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsWorkspacesWorkspace) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsWorkspacesWorkspace) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -442,7 +442,7 @@ func (j *jsiiProxy_DataAwsWorkspacesWorkspace) WorkspaceProperties() DataAwsWork
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/workspaces_workspace aws_workspaces_workspace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/workspaces_workspace aws_workspaces_workspace} Data Source.
 func NewDataAwsWorkspacesWorkspace(scope constructs.Construct, id *string, config *DataAwsWorkspacesWorkspaceConfig) DataAwsWorkspacesWorkspace {
 	_init_.Initialize()
 
@@ -460,7 +460,7 @@ func NewDataAwsWorkspacesWorkspace(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/workspaces_workspace aws_workspaces_workspace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/workspaces_workspace aws_workspaces_workspace} Data Source.
 func NewDataAwsWorkspacesWorkspace_Override(d DataAwsWorkspacesWorkspace, scope constructs.Construct, id *string, config *DataAwsWorkspacesWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -471,7 +471,10 @@ func NewDataAwsWorkspacesWorkspace_Override(d DataAwsWorkspacesWorkspace, scope 
 	)
 }
 
-func (j *jsiiProxy_DataAwsWorkspacesWorkspace)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsWorkspacesWorkspace)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

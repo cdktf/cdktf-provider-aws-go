@@ -2,14 +2,14 @@ package vpclatticetargetgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/vpclatticetargetgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/vpclatticetargetgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpclattice_target_group aws_vpclattice_target_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpclattice_target_group aws_vpclattice_target_group}.
 type VpclatticeTargetGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -24,9 +24,9 @@ type VpclatticeTargetGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -189,8 +189,8 @@ func (j *jsiiProxy_VpclatticeTargetGroup) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_VpclatticeTargetGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VpclatticeTargetGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -450,7 +450,7 @@ func (j *jsiiProxy_VpclatticeTargetGroup) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpclattice_target_group aws_vpclattice_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpclattice_target_group aws_vpclattice_target_group} Resource.
 func NewVpclatticeTargetGroup(scope constructs.Construct, id *string, config *VpclatticeTargetGroupConfig) VpclatticeTargetGroup {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewVpclatticeTargetGroup(scope constructs.Construct, id *string, config *Vp
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpclattice_target_group aws_vpclattice_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpclattice_target_group aws_vpclattice_target_group} Resource.
 func NewVpclatticeTargetGroup_Override(v VpclatticeTargetGroup, scope constructs.Construct, id *string, config *VpclatticeTargetGroupConfig) {
 	_init_.Initialize()
 
@@ -490,7 +490,10 @@ func (j *jsiiProxy_VpclatticeTargetGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_VpclatticeTargetGroup)SetCount(val *float64) {
+func (j *jsiiProxy_VpclatticeTargetGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -80,6 +80,10 @@ func (j *jsiiProxy_S3ControlStorageLensConfiguration) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_S3ControlStorageLensConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3ControlStorageLensConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_RedshiftScheduledAction) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftScheduledAction) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftScheduledAction) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

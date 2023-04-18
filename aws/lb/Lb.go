@@ -2,14 +2,14 @@ package lb
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/lb/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/lb/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/lb aws_lb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lb aws_lb}.
 type Lb interface {
 	cdktf.TerraformResource
 	AccessLogs() LbAccessLogsOutputReference
@@ -25,9 +25,9 @@ type Lb interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomerOwnedIpv4Pool() *string
 	SetCustomerOwnedIpv4Pool(val *string)
 	CustomerOwnedIpv4PoolInput() *string
@@ -276,8 +276,8 @@ func (j *jsiiProxy_Lb) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Lb) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Lb) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -917,7 +917,7 @@ func (j *jsiiProxy_Lb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lb aws_lb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lb aws_lb} Resource.
 func NewLb(scope constructs.Construct, id *string, config *LbConfig) Lb {
 	_init_.Initialize()
 
@@ -935,7 +935,7 @@ func NewLb(scope constructs.Construct, id *string, config *LbConfig) Lb {
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lb aws_lb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lb aws_lb} Resource.
 func NewLb_Override(l Lb, scope constructs.Construct, id *string, config *LbConfig) {
 	_init_.Initialize()
 
@@ -957,7 +957,10 @@ func (j *jsiiProxy_Lb)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Lb)SetCount(val *float64) {
+func (j *jsiiProxy_Lb)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

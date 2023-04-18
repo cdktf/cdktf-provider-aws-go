@@ -2,14 +2,14 @@ package snstopic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/snstopic/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/snstopic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/sns_topic aws_sns_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sns_topic aws_sns_topic}.
 type SnsTopic interface {
 	cdktf.TerraformResource
 	ApplicationFailureFeedbackRoleArn() *string
@@ -34,9 +34,9 @@ type SnsTopic interface {
 	SetContentBasedDeduplication(val interface{})
 	ContentBasedDeduplicationInput() interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DeliveryPolicy() *string
 	SetDeliveryPolicy(val *string)
 	DeliveryPolicyInput() *string
@@ -335,8 +335,8 @@ func (j *jsiiProxy_SnsTopic) ContentBasedDeduplicationInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SnsTopic) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SnsTopic) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -956,7 +956,7 @@ func (j *jsiiProxy_SnsTopic) TracingConfigInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/sns_topic aws_sns_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sns_topic aws_sns_topic} Resource.
 func NewSnsTopic(scope constructs.Construct, id *string, config *SnsTopicConfig) SnsTopic {
 	_init_.Initialize()
 
@@ -974,7 +974,7 @@ func NewSnsTopic(scope constructs.Construct, id *string, config *SnsTopicConfig)
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/sns_topic aws_sns_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sns_topic aws_sns_topic} Resource.
 func NewSnsTopic_Override(s SnsTopic, scope constructs.Construct, id *string, config *SnsTopicConfig) {
 	_init_.Initialize()
 
@@ -1040,7 +1040,10 @@ func (j *jsiiProxy_SnsTopic)SetContentBasedDeduplication(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SnsTopic)SetCount(val *float64) {
+func (j *jsiiProxy_SnsTopic)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

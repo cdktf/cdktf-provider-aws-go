@@ -64,6 +64,10 @@ func validateDataAwsWafregionalIpset_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsWafregionalIpset) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsWafregionalIpset) validateSetIdParameters(val *string) error {
 	return nil
 }

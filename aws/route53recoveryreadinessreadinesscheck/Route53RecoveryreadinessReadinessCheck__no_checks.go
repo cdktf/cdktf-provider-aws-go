@@ -72,6 +72,10 @@ func (j *jsiiProxy_Route53RecoveryreadinessReadinessCheck) validateSetConnection
 	return nil
 }
 
+func (j *jsiiProxy_Route53RecoveryreadinessReadinessCheck) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53RecoveryreadinessReadinessCheck) validateSetIdParameters(val *string) error {
 	return nil
 }

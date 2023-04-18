@@ -72,6 +72,10 @@ func (j *jsiiProxy_LightsailDisk) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_LightsailDisk) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailDisk) validateSetIdParameters(val *string) error {
 	return nil
 }

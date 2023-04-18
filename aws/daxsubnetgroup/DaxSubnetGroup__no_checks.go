@@ -68,6 +68,10 @@ func (j *jsiiProxy_DaxSubnetGroup) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_DaxSubnetGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DaxSubnetGroup) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -92,6 +92,10 @@ func (j *jsiiProxy_QuicksightDataSource) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightDataSource) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightDataSource) validateSetDataSourceIdParameters(val *string) error {
 	return nil
 }

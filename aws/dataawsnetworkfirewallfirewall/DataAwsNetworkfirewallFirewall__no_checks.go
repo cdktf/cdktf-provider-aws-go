@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) validateSetArnParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNetworkfirewallFirewall) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package connectcontactflowmodule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/connectcontactflowmodule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/connectcontactflowmodule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/connect_contact_flow_module aws_connect_contact_flow_module}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/connect_contact_flow_module aws_connect_contact_flow_module}.
 type ConnectContactFlowModule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -29,9 +29,9 @@ type ConnectContactFlowModule interface {
 	ContentHashInput() *string
 	ContentInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -227,8 +227,8 @@ func (j *jsiiProxy_ConnectContactFlowModule) ContentInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectContactFlowModule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ConnectContactFlowModule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -498,7 +498,7 @@ func (j *jsiiProxy_ConnectContactFlowModule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/connect_contact_flow_module aws_connect_contact_flow_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/connect_contact_flow_module aws_connect_contact_flow_module} Resource.
 func NewConnectContactFlowModule(scope constructs.Construct, id *string, config *ConnectContactFlowModuleConfig) ConnectContactFlowModule {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewConnectContactFlowModule(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/connect_contact_flow_module aws_connect_contact_flow_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/connect_contact_flow_module aws_connect_contact_flow_module} Resource.
 func NewConnectContactFlowModule_Override(c ConnectContactFlowModule, scope constructs.Construct, id *string, config *ConnectContactFlowModuleConfig) {
 	_init_.Initialize()
 
@@ -560,7 +560,10 @@ func (j *jsiiProxy_ConnectContactFlowModule)SetContentHash(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ConnectContactFlowModule)SetCount(val *float64) {
+func (j *jsiiProxy_ConnectContactFlowModule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

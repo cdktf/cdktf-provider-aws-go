@@ -92,6 +92,10 @@ func (j *jsiiProxy_OpsworksMysqlLayer) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_OpsworksMysqlLayer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpsworksMysqlLayer) validateSetCustomConfigureRecipesParameters(val *[]*string) error {
 	return nil
 }

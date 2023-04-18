@@ -2,14 +2,14 @@ package connectphonenumber
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/connectphonenumber/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/connectphonenumber/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/connect_phone_number aws_connect_phone_number}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/connect_phone_number aws_connect_phone_number}.
 type ConnectPhoneNumber interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type ConnectPhoneNumber interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CountryCode() *string
 	SetCountryCode(val *string)
 	CountryCodeInput() *string
@@ -177,8 +177,8 @@ func (j *jsiiProxy_ConnectPhoneNumber) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_ConnectPhoneNumber) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ConnectPhoneNumber) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -508,7 +508,7 @@ func (j *jsiiProxy_ConnectPhoneNumber) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/connect_phone_number aws_connect_phone_number} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/connect_phone_number aws_connect_phone_number} Resource.
 func NewConnectPhoneNumber(scope constructs.Construct, id *string, config *ConnectPhoneNumberConfig) ConnectPhoneNumber {
 	_init_.Initialize()
 
@@ -526,7 +526,7 @@ func NewConnectPhoneNumber(scope constructs.Construct, id *string, config *Conne
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/connect_phone_number aws_connect_phone_number} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/connect_phone_number aws_connect_phone_number} Resource.
 func NewConnectPhoneNumber_Override(c ConnectPhoneNumber, scope constructs.Construct, id *string, config *ConnectPhoneNumberConfig) {
 	_init_.Initialize()
 
@@ -548,7 +548,10 @@ func (j *jsiiProxy_ConnectPhoneNumber)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConnectPhoneNumber)SetCount(val *float64) {
+func (j *jsiiProxy_ConnectPhoneNumber)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

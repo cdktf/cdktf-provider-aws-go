@@ -68,6 +68,10 @@ func (j *jsiiProxy_DirectoryServiceLogSubscription) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_DirectoryServiceLogSubscription) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DirectoryServiceLogSubscription) validateSetDirectoryIdParameters(val *string) error {
 	return nil
 }

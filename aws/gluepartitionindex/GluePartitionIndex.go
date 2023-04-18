@@ -2,14 +2,14 @@ package gluepartitionindex
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/gluepartitionindex/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/gluepartitionindex/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_partition_index aws_glue_partition_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/glue_partition_index aws_glue_partition_index}.
 type GluePartitionIndex interface {
 	cdktf.TerraformResource
 	CatalogId() *string
@@ -24,9 +24,9 @@ type GluePartitionIndex interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DatabaseName() *string
 	SetDatabaseName(val *string)
 	DatabaseNameInput() *string
@@ -172,8 +172,8 @@ func (j *jsiiProxy_GluePartitionIndex) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_GluePartitionIndex) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GluePartitionIndex) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -403,7 +403,7 @@ func (j *jsiiProxy_GluePartitionIndex) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/glue_partition_index aws_glue_partition_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/glue_partition_index aws_glue_partition_index} Resource.
 func NewGluePartitionIndex(scope constructs.Construct, id *string, config *GluePartitionIndexConfig) GluePartitionIndex {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewGluePartitionIndex(scope constructs.Construct, id *string, config *GlueP
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/glue_partition_index aws_glue_partition_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/glue_partition_index aws_glue_partition_index} Resource.
 func NewGluePartitionIndex_Override(g GluePartitionIndex, scope constructs.Construct, id *string, config *GluePartitionIndexConfig) {
 	_init_.Initialize()
 
@@ -454,7 +454,10 @@ func (j *jsiiProxy_GluePartitionIndex)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GluePartitionIndex)SetCount(val *float64) {
+func (j *jsiiProxy_GluePartitionIndex)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func (j *jsiiProxy_Route53ResolverDnssecConfig) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_Route53ResolverDnssecConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53ResolverDnssecConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetEnhancedVpcRoutingParameters(val interface{}) error {
 	return nil
 }

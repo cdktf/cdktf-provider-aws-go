@@ -2,14 +2,14 @@ package configconfigurationrecorder
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/configconfigurationrecorder/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/configconfigurationrecorder/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder aws_config_configuration_recorder}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/config_configuration_recorder aws_config_configuration_recorder}.
 type ConfigConfigurationRecorder interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ConfigConfigurationRecorder interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -146,8 +146,8 @@ func (j *jsiiProxy_ConfigConfigurationRecorder) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_ConfigConfigurationRecorder) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ConfigConfigurationRecorder) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -357,7 +357,7 @@ func (j *jsiiProxy_ConfigConfigurationRecorder) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder aws_config_configuration_recorder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/config_configuration_recorder aws_config_configuration_recorder} Resource.
 func NewConfigConfigurationRecorder(scope constructs.Construct, id *string, config *ConfigConfigurationRecorderConfig) ConfigConfigurationRecorder {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewConfigConfigurationRecorder(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/config_configuration_recorder aws_config_configuration_recorder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/config_configuration_recorder aws_config_configuration_recorder} Resource.
 func NewConfigConfigurationRecorder_Override(c ConfigConfigurationRecorder, scope constructs.Construct, id *string, config *ConfigConfigurationRecorderConfig) {
 	_init_.Initialize()
 
@@ -397,7 +397,10 @@ func (j *jsiiProxy_ConfigConfigurationRecorder)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigurationRecorder)SetCount(val *float64) {
+func (j *jsiiProxy_ConfigConfigurationRecorder)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

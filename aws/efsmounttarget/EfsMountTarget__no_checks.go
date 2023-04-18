@@ -72,6 +72,10 @@ func (j *jsiiProxy_EfsMountTarget) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_EfsMountTarget) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EfsMountTarget) validateSetFileSystemIdParameters(val *string) error {
 	return nil
 }

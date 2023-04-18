@@ -68,6 +68,10 @@ func (j *jsiiProxy_Ec2NetworkInsightsPath) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_Ec2NetworkInsightsPath) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2NetworkInsightsPath) validateSetDestinationParameters(val *string) error {
 	return nil
 }

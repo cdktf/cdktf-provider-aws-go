@@ -2,14 +2,14 @@ package emrcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/emrcluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/emrcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster aws_emr_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_cluster aws_emr_cluster}.
 type EmrCluster interface {
 	cdktf.TerraformResource
 	AdditionalInfo() *string
@@ -46,9 +46,9 @@ type EmrCluster interface {
 	CoreInstanceGroup() EmrClusterCoreInstanceGroupOutputReference
 	CoreInstanceGroupInput() *EmrClusterCoreInstanceGroup
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomAmiId() *string
 	SetCustomAmiId(val *string)
 	CustomAmiIdInput() *string
@@ -455,8 +455,8 @@ func (j *jsiiProxy_EmrCluster) CoreInstanceGroupInput() *EmrClusterCoreInstanceG
 	return returns
 }
 
-func (j *jsiiProxy_EmrCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EmrCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -1036,7 +1036,7 @@ func (j *jsiiProxy_EmrCluster) VisibleToAllUsersInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster aws_emr_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_cluster aws_emr_cluster} Resource.
 func NewEmrCluster(scope constructs.Construct, id *string, config *EmrClusterConfig) EmrCluster {
 	_init_.Initialize()
 
@@ -1054,7 +1054,7 @@ func NewEmrCluster(scope constructs.Construct, id *string, config *EmrClusterCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/emr_cluster aws_emr_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_cluster aws_emr_cluster} Resource.
 func NewEmrCluster_Override(e EmrCluster, scope constructs.Construct, id *string, config *EmrClusterConfig) {
 	_init_.Initialize()
 
@@ -1131,7 +1131,10 @@ func (j *jsiiProxy_EmrCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmrCluster)SetCount(val *float64) {
+func (j *jsiiProxy_EmrCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

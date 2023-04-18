@@ -80,6 +80,10 @@ func (j *jsiiProxy_KendraDataSource) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_KendraDataSource) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KendraDataSource) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

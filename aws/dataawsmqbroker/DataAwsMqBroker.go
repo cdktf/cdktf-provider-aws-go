@@ -2,14 +2,14 @@ package dataawsmqbroker
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsmqbroker/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsmqbroker/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/mq_broker aws_mq_broker}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/mq_broker aws_mq_broker}.
 type DataAwsMqBroker interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -27,9 +27,9 @@ type DataAwsMqBroker interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -227,8 +227,8 @@ func (j *jsiiProxy_DataAwsMqBroker) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsMqBroker) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsMqBroker) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -528,7 +528,7 @@ func (j *jsiiProxy_DataAwsMqBroker) User() DataAwsMqBrokerUserList {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/mq_broker aws_mq_broker} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/mq_broker aws_mq_broker} Data Source.
 func NewDataAwsMqBroker(scope constructs.Construct, id *string, config *DataAwsMqBrokerConfig) DataAwsMqBroker {
 	_init_.Initialize()
 
@@ -546,7 +546,7 @@ func NewDataAwsMqBroker(scope constructs.Construct, id *string, config *DataAwsM
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/mq_broker aws_mq_broker} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/mq_broker aws_mq_broker} Data Source.
 func NewDataAwsMqBroker_Override(d DataAwsMqBroker, scope constructs.Construct, id *string, config *DataAwsMqBrokerConfig) {
 	_init_.Initialize()
 
@@ -579,7 +579,10 @@ func (j *jsiiProxy_DataAwsMqBroker)SetBrokerName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsMqBroker)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsMqBroker)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

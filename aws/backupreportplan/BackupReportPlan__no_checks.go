@@ -76,6 +76,10 @@ func (j *jsiiProxy_BackupReportPlan) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_BackupReportPlan) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupReportPlan) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

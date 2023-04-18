@@ -2,14 +2,14 @@ package dataawsroute53trafficpolicydocument
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsroute53trafficpolicydocument/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsroute53trafficpolicydocument/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/route53_traffic_policy_document aws_route53_traffic_policy_document}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route53_traffic_policy_document aws_route53_traffic_policy_document}.
 type DataAwsRoute53TrafficPolicyDocument interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAwsRoute53TrafficPolicyDocument interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocument) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocument) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocument) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -413,7 +413,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocument) VersionInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/route53_traffic_policy_document aws_route53_traffic_policy_document} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route53_traffic_policy_document aws_route53_traffic_policy_document} Data Source.
 func NewDataAwsRoute53TrafficPolicyDocument(scope constructs.Construct, id *string, config *DataAwsRoute53TrafficPolicyDocumentConfig) DataAwsRoute53TrafficPolicyDocument {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewDataAwsRoute53TrafficPolicyDocument(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/route53_traffic_policy_document aws_route53_traffic_policy_document} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route53_traffic_policy_document aws_route53_traffic_policy_document} Data Source.
 func NewDataAwsRoute53TrafficPolicyDocument_Override(d DataAwsRoute53TrafficPolicyDocument, scope constructs.Construct, id *string, config *DataAwsRoute53TrafficPolicyDocumentConfig) {
 	_init_.Initialize()
 
@@ -442,7 +442,10 @@ func NewDataAwsRoute53TrafficPolicyDocument_Override(d DataAwsRoute53TrafficPoli
 	)
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocument)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocument)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

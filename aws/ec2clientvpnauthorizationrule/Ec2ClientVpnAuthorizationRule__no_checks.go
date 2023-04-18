@@ -84,6 +84,10 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

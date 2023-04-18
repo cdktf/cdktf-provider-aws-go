@@ -76,6 +76,10 @@ func (j *jsiiProxy_Route53ResolverEndpoint) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_Route53ResolverEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53ResolverEndpoint) validateSetDirectionParameters(val *string) error {
 	return nil
 }

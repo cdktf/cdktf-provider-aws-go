@@ -64,6 +64,10 @@ func validateDataAwsOrganizationsOrganization_IsTerraformElementParameters(x int
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOrganizationsOrganization) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsOrganizationsOrganization) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_RedshiftClusterSnapshot) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftClusterSnapshot) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftClusterSnapshot) validateSetIdParameters(val *string) error {
 	return nil
 }

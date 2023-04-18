@@ -72,6 +72,10 @@ func (j *jsiiProxy_SignerSigningProfilePermission) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_SignerSigningProfilePermission) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SignerSigningProfilePermission) validateSetIdParameters(val *string) error {
 	return nil
 }

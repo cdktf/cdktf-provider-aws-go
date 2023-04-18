@@ -96,6 +96,10 @@ func (j *jsiiProxy_OpsworksStack) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_OpsworksStack) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpsworksStack) validateSetCustomJsonParameters(val *string) error {
 	return nil
 }

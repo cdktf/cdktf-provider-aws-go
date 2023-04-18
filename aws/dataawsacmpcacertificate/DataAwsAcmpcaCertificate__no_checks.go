@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAwsAcmpcaCertificate) validateSetCertificateAuthorityArnP
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAcmpcaCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAcmpcaCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

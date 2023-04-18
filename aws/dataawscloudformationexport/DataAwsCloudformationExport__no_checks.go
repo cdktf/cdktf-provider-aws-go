@@ -64,6 +64,10 @@ func validateDataAwsCloudformationExport_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudformationExport) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudformationExport) validateSetIdParameters(val *string) error {
 	return nil
 }

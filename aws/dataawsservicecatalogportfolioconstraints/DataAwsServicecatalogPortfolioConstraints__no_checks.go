@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAwsServicecatalogPortfolioConstraints) validateSetAcceptL
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsServicecatalogPortfolioConstraints) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsServicecatalogPortfolioConstraints) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package opensearchdomainpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/opensearchdomainpolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/opensearchdomainpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/opensearch_domain_policy aws_opensearch_domain_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opensearch_domain_policy aws_opensearch_domain_policy}.
 type OpensearchDomainPolicy interface {
 	cdktf.TerraformResource
 	AccessPolicies() *string
@@ -24,9 +24,9 @@ type OpensearchDomainPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_OpensearchDomainPolicy) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OpensearchDomainPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_OpensearchDomainPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/opensearch_domain_policy aws_opensearch_domain_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opensearch_domain_policy aws_opensearch_domain_policy} Resource.
 func NewOpensearchDomainPolicy(scope constructs.Construct, id *string, config *OpensearchDomainPolicyConfig) OpensearchDomainPolicy {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewOpensearchDomainPolicy(scope constructs.Construct, id *string, config *O
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/opensearch_domain_policy aws_opensearch_domain_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opensearch_domain_policy aws_opensearch_domain_policy} Resource.
 func NewOpensearchDomainPolicy_Override(o OpensearchDomainPolicy, scope constructs.Construct, id *string, config *OpensearchDomainPolicyConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_OpensearchDomainPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_OpensearchDomainPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

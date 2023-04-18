@@ -2,14 +2,14 @@ package dataawssecuritygroups
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawssecuritygroups/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssecuritygroups/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/security_groups aws_security_groups}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/security_groups aws_security_groups}.
 type DataAwsSecurityGroups interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -18,9 +18,9 @@ type DataAwsSecurityGroups interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DataAwsSecurityGroups) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecurityGroups) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsSecurityGroups) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -363,7 +363,7 @@ func (j *jsiiProxy_DataAwsSecurityGroups) VpcIds() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/security_groups aws_security_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/security_groups aws_security_groups} Data Source.
 func NewDataAwsSecurityGroups(scope constructs.Construct, id *string, config *DataAwsSecurityGroupsConfig) DataAwsSecurityGroups {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func NewDataAwsSecurityGroups(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/security_groups aws_security_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/security_groups aws_security_groups} Data Source.
 func NewDataAwsSecurityGroups_Override(d DataAwsSecurityGroups, scope constructs.Construct, id *string, config *DataAwsSecurityGroupsConfig) {
 	_init_.Initialize()
 
@@ -392,7 +392,10 @@ func NewDataAwsSecurityGroups_Override(d DataAwsSecurityGroups, scope constructs
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecurityGroups)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsSecurityGroups)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

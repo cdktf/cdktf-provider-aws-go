@@ -72,6 +72,10 @@ func (j *jsiiProxy_RdsExportTask) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_RdsExportTask) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsExportTask) validateSetExportOnlyParameters(val *[]*string) error {
 	return nil
 }

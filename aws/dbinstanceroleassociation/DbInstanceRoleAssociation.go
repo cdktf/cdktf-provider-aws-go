@@ -2,14 +2,14 @@ package dbinstanceroleassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dbinstanceroleassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dbinstanceroleassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/db_instance_role_association aws_db_instance_role_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/db_instance_role_association aws_db_instance_role_association}.
 type DbInstanceRoleAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type DbInstanceRoleAssociation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DbInstanceIdentifier() *string
 	SetDbInstanceIdentifier(val *string)
 	DbInstanceIdentifierInput() *string
@@ -144,8 +144,8 @@ func (j *jsiiProxy_DbInstanceRoleAssociation) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_DbInstanceRoleAssociation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DbInstanceRoleAssociation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -355,7 +355,7 @@ func (j *jsiiProxy_DbInstanceRoleAssociation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/db_instance_role_association aws_db_instance_role_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/db_instance_role_association aws_db_instance_role_association} Resource.
 func NewDbInstanceRoleAssociation(scope constructs.Construct, id *string, config *DbInstanceRoleAssociationConfig) DbInstanceRoleAssociation {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewDbInstanceRoleAssociation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/db_instance_role_association aws_db_instance_role_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/db_instance_role_association aws_db_instance_role_association} Resource.
 func NewDbInstanceRoleAssociation_Override(d DbInstanceRoleAssociation, scope constructs.Construct, id *string, config *DbInstanceRoleAssociationConfig) {
 	_init_.Initialize()
 
@@ -395,7 +395,10 @@ func (j *jsiiProxy_DbInstanceRoleAssociation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbInstanceRoleAssociation)SetCount(val *float64) {
+func (j *jsiiProxy_DbInstanceRoleAssociation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

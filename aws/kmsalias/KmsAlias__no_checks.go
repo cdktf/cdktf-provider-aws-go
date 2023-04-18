@@ -68,6 +68,10 @@ func (j *jsiiProxy_KmsAlias) validateSetConnectionParameters(val interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_KmsAlias) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsAlias) validateSetIdParameters(val *string) error {
 	return nil
 }

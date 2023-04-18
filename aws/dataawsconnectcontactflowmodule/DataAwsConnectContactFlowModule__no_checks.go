@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsConnectContactFlowModule) validateSetContactFlowModule
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectContactFlowModule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectContactFlowModule) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_CloudformationType) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_CloudformationType) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudformationType) validateSetExecutionRoleArnParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_OamLink) validateSetConnectionParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_OamLink) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OamLink) validateSetIdParameters(val *string) error {
 	return nil
 }

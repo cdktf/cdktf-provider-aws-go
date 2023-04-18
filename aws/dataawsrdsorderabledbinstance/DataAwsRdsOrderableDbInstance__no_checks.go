@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetAvailabilityZoneGro
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetEngineParameters(val *string) error {
 	return nil
 }

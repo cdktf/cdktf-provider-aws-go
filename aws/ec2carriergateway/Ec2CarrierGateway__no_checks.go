@@ -68,6 +68,10 @@ func (j *jsiiProxy_Ec2CarrierGateway) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_Ec2CarrierGateway) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2CarrierGateway) validateSetIdParameters(val *string) error {
 	return nil
 }

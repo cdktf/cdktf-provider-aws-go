@@ -2,14 +2,14 @@ package s3bucketserversideencryptionconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/s3bucketserversideencryptionconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/s3bucketserversideencryptionconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_server_side_encryption_configuration aws_s3_bucket_server_side_encryption_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/s3_bucket_server_side_encryption_configuration aws_s3_bucket_server_side_encryption_configuration}.
 type S3BucketServerSideEncryptionConfigurationA interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -24,9 +24,9 @@ type S3BucketServerSideEncryptionConfigurationA interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) ConstructNodeMeta
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) TerraformResource
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_server_side_encryption_configuration aws_s3_bucket_server_side_encryption_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/s3_bucket_server_side_encryption_configuration aws_s3_bucket_server_side_encryption_configuration} Resource.
 func NewS3BucketServerSideEncryptionConfigurationA(scope constructs.Construct, id *string, config *S3BucketServerSideEncryptionConfigurationAConfig) S3BucketServerSideEncryptionConfigurationA {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewS3BucketServerSideEncryptionConfigurationA(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_server_side_encryption_configuration aws_s3_bucket_server_side_encryption_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/s3_bucket_server_side_encryption_configuration aws_s3_bucket_server_side_encryption_configuration} Resource.
 func NewS3BucketServerSideEncryptionConfigurationA_Override(s S3BucketServerSideEncryptionConfigurationA, scope constructs.Construct, id *string, config *S3BucketServerSideEncryptionConfigurationAConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA)SetConnection(val 
 	)
 }
 
-func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA)SetCount(val *float64) {
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

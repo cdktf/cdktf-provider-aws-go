@@ -2,14 +2,14 @@ package backupframework
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/backupframework/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/backupframework/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/backup_framework aws_backup_framework}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/backup_framework aws_backup_framework}.
 type BackupFramework interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -24,9 +24,9 @@ type BackupFramework interface {
 	Control() BackupFrameworkControlList
 	ControlInput() interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreationTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -191,8 +191,8 @@ func (j *jsiiProxy_BackupFramework) ControlInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_BackupFramework) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_BackupFramework) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -472,7 +472,7 @@ func (j *jsiiProxy_BackupFramework) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/backup_framework aws_backup_framework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/backup_framework aws_backup_framework} Resource.
 func NewBackupFramework(scope constructs.Construct, id *string, config *BackupFrameworkConfig) BackupFramework {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewBackupFramework(scope constructs.Construct, id *string, config *BackupFr
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/backup_framework aws_backup_framework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/backup_framework aws_backup_framework} Resource.
 func NewBackupFramework_Override(b BackupFramework, scope constructs.Construct, id *string, config *BackupFrameworkConfig) {
 	_init_.Initialize()
 
@@ -512,7 +512,10 @@ func (j *jsiiProxy_BackupFramework)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BackupFramework)SetCount(val *float64) {
+func (j *jsiiProxy_BackupFramework)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

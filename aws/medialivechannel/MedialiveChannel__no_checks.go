@@ -104,6 +104,10 @@ func (j *jsiiProxy_MedialiveChannel) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_MedialiveChannel) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MedialiveChannel) validateSetIdParameters(val *string) error {
 	return nil
 }

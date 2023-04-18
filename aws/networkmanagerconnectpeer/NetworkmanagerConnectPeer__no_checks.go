@@ -84,6 +84,10 @@ func (j *jsiiProxy_NetworkmanagerConnectPeer) validateSetCoreNetworkAddressParam
 	return nil
 }
 
+func (j *jsiiProxy_NetworkmanagerConnectPeer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerConnectPeer) validateSetIdParameters(val *string) error {
 	return nil
 }

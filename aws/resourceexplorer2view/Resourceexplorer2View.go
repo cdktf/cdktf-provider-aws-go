@@ -2,14 +2,14 @@ package resourceexplorer2view
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/resourceexplorer2view/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/resourceexplorer2view/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/resourceexplorer2_view aws_resourceexplorer2_view}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/resourceexplorer2_view aws_resourceexplorer2_view}.
 type Resourceexplorer2View interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type Resourceexplorer2View interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultView() interface{}
 	SetDefaultView(val interface{})
 	DefaultViewInput() interface{}
@@ -163,8 +163,8 @@ func (j *jsiiProxy_Resourceexplorer2View) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_Resourceexplorer2View) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Resourceexplorer2View) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -414,7 +414,7 @@ func (j *jsiiProxy_Resourceexplorer2View) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/resourceexplorer2_view aws_resourceexplorer2_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/resourceexplorer2_view aws_resourceexplorer2_view} Resource.
 func NewResourceexplorer2View(scope constructs.Construct, id *string, config *Resourceexplorer2ViewConfig) Resourceexplorer2View {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewResourceexplorer2View(scope constructs.Construct, id *string, config *Re
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/resourceexplorer2_view aws_resourceexplorer2_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/resourceexplorer2_view aws_resourceexplorer2_view} Resource.
 func NewResourceexplorer2View_Override(r Resourceexplorer2View, scope constructs.Construct, id *string, config *Resourceexplorer2ViewConfig) {
 	_init_.Initialize()
 
@@ -454,7 +454,10 @@ func (j *jsiiProxy_Resourceexplorer2View)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Resourceexplorer2View)SetCount(val *float64) {
+func (j *jsiiProxy_Resourceexplorer2View)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

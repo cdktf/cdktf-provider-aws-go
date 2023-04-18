@@ -80,6 +80,10 @@ func (j *jsiiProxy_ComprehendEntityRecognizer) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ComprehendEntityRecognizer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ComprehendEntityRecognizer) validateSetDataAccessRoleArnParameters(val *string) error {
 	return nil
 }

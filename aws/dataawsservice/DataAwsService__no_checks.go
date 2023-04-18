@@ -64,6 +64,10 @@ func validateDataAwsService_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsService) validateSetDnsNameParameters(val *string) error {
 	return nil
 }

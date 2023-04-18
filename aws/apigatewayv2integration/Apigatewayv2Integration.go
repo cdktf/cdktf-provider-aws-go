@@ -2,14 +2,14 @@ package apigatewayv2integration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/apigatewayv2integration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/apigatewayv2integration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration aws_apigatewayv2_integration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/apigatewayv2_integration aws_apigatewayv2_integration}.
 type Apigatewayv2Integration interface {
 	cdktf.TerraformResource
 	ApiId() *string
@@ -33,9 +33,9 @@ type Apigatewayv2Integration interface {
 	SetContentHandlingStrategy(val *string)
 	ContentHandlingStrategyInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CredentialsArn() *string
 	SetCredentialsArn(val *string)
 	CredentialsArnInput() *string
@@ -286,8 +286,8 @@ func (j *jsiiProxy_Apigatewayv2Integration) ContentHandlingStrategyInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Apigatewayv2Integration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -727,7 +727,7 @@ func (j *jsiiProxy_Apigatewayv2Integration) TlsConfigInput() *Apigatewayv2Integr
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration aws_apigatewayv2_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/apigatewayv2_integration aws_apigatewayv2_integration} Resource.
 func NewApigatewayv2Integration(scope constructs.Construct, id *string, config *Apigatewayv2IntegrationConfig) Apigatewayv2Integration {
 	_init_.Initialize()
 
@@ -745,7 +745,7 @@ func NewApigatewayv2Integration(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_integration aws_apigatewayv2_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/apigatewayv2_integration aws_apigatewayv2_integration} Resource.
 func NewApigatewayv2Integration_Override(a Apigatewayv2Integration, scope constructs.Construct, id *string, config *Apigatewayv2IntegrationConfig) {
 	_init_.Initialize()
 
@@ -811,7 +811,10 @@ func (j *jsiiProxy_Apigatewayv2Integration)SetContentHandlingStrategy(val *strin
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2Integration)SetCount(val *float64) {
+func (j *jsiiProxy_Apigatewayv2Integration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

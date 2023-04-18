@@ -2,14 +2,14 @@ package elasticacheusergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/elasticacheusergroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/elasticacheusergroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user_group aws_elasticache_user_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_user_group aws_elasticache_user_group}.
 type ElasticacheUserGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type ElasticacheUserGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ElasticacheUserGroup) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheUserGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ElasticacheUserGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -415,7 +415,7 @@ func (j *jsiiProxy_ElasticacheUserGroup) UserIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user_group aws_elasticache_user_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_user_group aws_elasticache_user_group} Resource.
 func NewElasticacheUserGroup(scope constructs.Construct, id *string, config *ElasticacheUserGroupConfig) ElasticacheUserGroup {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewElasticacheUserGroup(scope constructs.Construct, id *string, config *Ela
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user_group aws_elasticache_user_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_user_group aws_elasticache_user_group} Resource.
 func NewElasticacheUserGroup_Override(e ElasticacheUserGroup, scope constructs.Construct, id *string, config *ElasticacheUserGroupConfig) {
 	_init_.Initialize()
 
@@ -455,7 +455,10 @@ func (j *jsiiProxy_ElasticacheUserGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheUserGroup)SetCount(val *float64) {
+func (j *jsiiProxy_ElasticacheUserGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

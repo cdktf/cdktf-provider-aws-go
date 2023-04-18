@@ -64,6 +64,10 @@ func validateDataAwsSagemakerPrebuiltEcrImage_IsTerraformElementParameters(x int
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSagemakerPrebuiltEcrImage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSagemakerPrebuiltEcrImage) validateSetDnsSuffixParameters(val *string) error {
 	return nil
 }

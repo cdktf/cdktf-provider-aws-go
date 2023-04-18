@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) validateSetAccountIdP
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) validateSetIdParameters(val *string) error {
 	return nil
 }

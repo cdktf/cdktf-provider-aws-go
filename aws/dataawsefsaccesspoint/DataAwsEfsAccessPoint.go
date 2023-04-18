@@ -2,14 +2,14 @@ package dataawsefsaccesspoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsefsaccesspoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsefsaccesspoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/efs_access_point aws_efs_access_point}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/efs_access_point aws_efs_access_point}.
 type DataAwsEfsAccessPoint interface {
 	cdktf.TerraformDataSource
 	AccessPointId() *string
@@ -21,9 +21,9 @@ type DataAwsEfsAccessPoint interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -160,8 +160,8 @@ func (j *jsiiProxy_DataAwsEfsAccessPoint) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEfsAccessPoint) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsEfsAccessPoint) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -371,7 +371,7 @@ func (j *jsiiProxy_DataAwsEfsAccessPoint) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/efs_access_point aws_efs_access_point} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/efs_access_point aws_efs_access_point} Data Source.
 func NewDataAwsEfsAccessPoint(scope constructs.Construct, id *string, config *DataAwsEfsAccessPointConfig) DataAwsEfsAccessPoint {
 	_init_.Initialize()
 
@@ -389,7 +389,7 @@ func NewDataAwsEfsAccessPoint(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/efs_access_point aws_efs_access_point} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/efs_access_point aws_efs_access_point} Data Source.
 func NewDataAwsEfsAccessPoint_Override(d DataAwsEfsAccessPoint, scope constructs.Construct, id *string, config *DataAwsEfsAccessPointConfig) {
 	_init_.Initialize()
 
@@ -411,7 +411,10 @@ func (j *jsiiProxy_DataAwsEfsAccessPoint)SetAccessPointId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEfsAccessPoint)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsEfsAccessPoint)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

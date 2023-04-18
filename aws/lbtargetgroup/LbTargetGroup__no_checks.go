@@ -84,6 +84,10 @@ func (j *jsiiProxy_LbTargetGroup) validateSetConnectionTerminationParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_LbTargetGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbTargetGroup) validateSetDeregistrationDelayParameters(val *string) error {
 	return nil
 }

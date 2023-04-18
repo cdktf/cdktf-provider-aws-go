@@ -76,6 +76,10 @@ func (j *jsiiProxy_PrometheusWorkspace) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_PrometheusWorkspace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrometheusWorkspace) validateSetIdParameters(val *string) error {
 	return nil
 }

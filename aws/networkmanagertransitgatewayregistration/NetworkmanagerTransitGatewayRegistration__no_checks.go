@@ -72,6 +72,10 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateSetConnecti
 	return nil
 }
 
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateSetGlobalNetworkIdParameters(val *string) error {
 	return nil
 }

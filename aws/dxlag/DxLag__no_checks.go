@@ -76,6 +76,10 @@ func (j *jsiiProxy_DxLag) validateSetConnectionsBandwidthParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_DxLag) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DxLag) validateSetForceDestroyParameters(val interface{}) error {
 	return nil
 }

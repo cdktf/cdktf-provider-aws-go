@@ -76,6 +76,10 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_EmrcontainersVirtualCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrcontainersVirtualCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

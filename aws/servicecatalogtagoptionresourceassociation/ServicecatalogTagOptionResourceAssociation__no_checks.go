@@ -72,6 +72,10 @@ func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateSetConnec
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -4,15 +4,15 @@ package appmeshvirtualnode
 type AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTls struct {
 	// validation block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#validation AppmeshVirtualNode#validation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appmesh_virtual_node#validation AppmeshVirtualNode#validation}
 	Validation *AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsValidation `field:"required" json:"validation" yaml:"validation"`
 	// certificate block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#certificate AppmeshVirtualNode#certificate}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appmesh_virtual_node#certificate AppmeshVirtualNode#certificate}
 	Certificate *AppmeshVirtualNodeSpecBackendDefaultsClientPolicyTlsCertificate `field:"optional" json:"certificate" yaml:"certificate"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#enforce AppmeshVirtualNode#enforce}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appmesh_virtual_node#enforce AppmeshVirtualNode#enforce}.
 	Enforce interface{} `field:"optional" json:"enforce" yaml:"enforce"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_node#ports AppmeshVirtualNode#ports}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appmesh_virtual_node#ports AppmeshVirtualNode#ports}.
 	Ports *[]*float64 `field:"optional" json:"ports" yaml:"ports"`
 }
 

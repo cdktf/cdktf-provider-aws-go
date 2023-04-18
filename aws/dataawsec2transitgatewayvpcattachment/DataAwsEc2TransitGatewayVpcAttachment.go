@@ -2,14 +2,14 @@ package dataawsec2transitgatewayvpcattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsec2transitgatewayvpcattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsec2transitgatewayvpcattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpc_attachment aws_ec2_transit_gateway_vpc_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_transit_gateway_vpc_attachment aws_ec2_transit_gateway_vpc_attachment}.
 type DataAwsEc2TransitGatewayVpcAttachment interface {
 	cdktf.TerraformDataSource
 	ApplianceModeSupport() *string
@@ -18,9 +18,9 @@ type DataAwsEc2TransitGatewayVpcAttachment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -146,8 +146,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -407,7 +407,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment) VpcOwnerId() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpc_attachment aws_ec2_transit_gateway_vpc_attachment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_transit_gateway_vpc_attachment aws_ec2_transit_gateway_vpc_attachment} Data Source.
 func NewDataAwsEc2TransitGatewayVpcAttachment(scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayVpcAttachmentConfig) DataAwsEc2TransitGatewayVpcAttachment {
 	_init_.Initialize()
 
@@ -425,7 +425,7 @@ func NewDataAwsEc2TransitGatewayVpcAttachment(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_vpc_attachment aws_ec2_transit_gateway_vpc_attachment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_transit_gateway_vpc_attachment aws_ec2_transit_gateway_vpc_attachment} Data Source.
 func NewDataAwsEc2TransitGatewayVpcAttachment_Override(d DataAwsEc2TransitGatewayVpcAttachment, scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayVpcAttachmentConfig) {
 	_init_.Initialize()
 
@@ -436,7 +436,10 @@ func NewDataAwsEc2TransitGatewayVpcAttachment_Override(d DataAwsEc2TransitGatewa
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

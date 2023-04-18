@@ -2,14 +2,14 @@ package connecthoursofoperation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/connecthoursofoperation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/connecthoursofoperation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation aws_connect_hours_of_operation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/connect_hours_of_operation aws_connect_hours_of_operation}.
 type ConnectHoursOfOperation interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -24,9 +24,9 @@ type ConnectHoursOfOperation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -192,8 +192,8 @@ func (j *jsiiProxy_ConnectHoursOfOperation) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_ConnectHoursOfOperation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ConnectHoursOfOperation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -483,7 +483,7 @@ func (j *jsiiProxy_ConnectHoursOfOperation) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation aws_connect_hours_of_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/connect_hours_of_operation aws_connect_hours_of_operation} Resource.
 func NewConnectHoursOfOperation(scope constructs.Construct, id *string, config *ConnectHoursOfOperationConfig) ConnectHoursOfOperation {
 	_init_.Initialize()
 
@@ -501,7 +501,7 @@ func NewConnectHoursOfOperation(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/connect_hours_of_operation aws_connect_hours_of_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/connect_hours_of_operation aws_connect_hours_of_operation} Resource.
 func NewConnectHoursOfOperation_Override(c ConnectHoursOfOperation, scope constructs.Construct, id *string, config *ConnectHoursOfOperationConfig) {
 	_init_.Initialize()
 
@@ -523,7 +523,10 @@ func (j *jsiiProxy_ConnectHoursOfOperation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConnectHoursOfOperation)SetCount(val *float64) {
+func (j *jsiiProxy_ConnectHoursOfOperation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

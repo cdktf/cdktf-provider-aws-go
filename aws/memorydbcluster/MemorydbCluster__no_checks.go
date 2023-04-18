@@ -80,6 +80,10 @@ func (j *jsiiProxy_MemorydbCluster) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_MemorydbCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemorydbCluster) validateSetDataTieringParameters(val interface{}) error {
 	return nil
 }

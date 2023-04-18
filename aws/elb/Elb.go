@@ -2,14 +2,14 @@ package elb
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/elb/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/elb/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/elb aws_elb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elb aws_elb}.
 type Elb interface {
 	cdktf.TerraformResource
 	AccessLogs() ElbAccessLogsOutputReference
@@ -33,9 +33,9 @@ type Elb interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CrossZoneLoadBalancing() interface{}
 	SetCrossZoneLoadBalancing(val interface{})
 	CrossZoneLoadBalancingInput() interface{}
@@ -300,8 +300,8 @@ func (j *jsiiProxy_Elb) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Elb) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Elb) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -761,7 +761,7 @@ func (j *jsiiProxy_Elb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/elb aws_elb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elb aws_elb} Resource.
 func NewElb(scope constructs.Construct, id *string, config *ElbConfig) Elb {
 	_init_.Initialize()
 
@@ -779,7 +779,7 @@ func NewElb(scope constructs.Construct, id *string, config *ElbConfig) Elb {
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/elb aws_elb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elb aws_elb} Resource.
 func NewElb_Override(e Elb, scope constructs.Construct, id *string, config *ElbConfig) {
 	_init_.Initialize()
 
@@ -834,7 +834,10 @@ func (j *jsiiProxy_Elb)SetConnectionDrainingTimeout(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_Elb)SetCount(val *float64) {
+func (j *jsiiProxy_Elb)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -64,6 +64,10 @@ func validateDataAwsRedshiftserverlessCredentials_IsTerraformElementParameters(x
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) validateSetDbNameParameters(val *string) error {
 	return nil
 }

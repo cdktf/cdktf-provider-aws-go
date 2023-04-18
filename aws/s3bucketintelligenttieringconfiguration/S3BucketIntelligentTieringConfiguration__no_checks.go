@@ -80,6 +80,10 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

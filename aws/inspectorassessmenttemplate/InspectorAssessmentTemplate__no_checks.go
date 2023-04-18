@@ -72,6 +72,10 @@ func (j *jsiiProxy_InspectorAssessmentTemplate) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_InspectorAssessmentTemplate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_InspectorAssessmentTemplate) validateSetDurationParameters(val *float64) error {
 	return nil
 }

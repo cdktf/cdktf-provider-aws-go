@@ -72,6 +72,10 @@ func (j *jsiiProxy_WafregionalIpset) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_WafregionalIpset) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafregionalIpset) validateSetIdParameters(val *string) error {
 	return nil
 }

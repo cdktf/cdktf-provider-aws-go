@@ -2,14 +2,14 @@ package dataawsoamlinks
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsoamlinks/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsoamlinks/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/oam_links aws_oam_links}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/oam_links aws_oam_links}.
 type DataAwsOamLinks interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -18,9 +18,9 @@ type DataAwsOamLinks interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataAwsOamLinks) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsOamLinks) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsOamLinks) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataAwsOamLinks) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/oam_links aws_oam_links} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/oam_links aws_oam_links} Data Source.
 func NewDataAwsOamLinks(scope constructs.Construct, id *string, config *DataAwsOamLinksConfig) DataAwsOamLinks {
 	_init_.Initialize()
 
@@ -287,7 +287,7 @@ func NewDataAwsOamLinks(scope constructs.Construct, id *string, config *DataAwsO
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/oam_links aws_oam_links} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/oam_links aws_oam_links} Data Source.
 func NewDataAwsOamLinks_Override(d DataAwsOamLinks, scope constructs.Construct, id *string, config *DataAwsOamLinksConfig) {
 	_init_.Initialize()
 
@@ -298,7 +298,10 @@ func NewDataAwsOamLinks_Override(d DataAwsOamLinks, scope constructs.Construct, 
 	)
 }
 
-func (j *jsiiProxy_DataAwsOamLinks)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsOamLinks)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

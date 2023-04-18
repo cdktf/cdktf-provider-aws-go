@@ -2,14 +2,14 @@ package dataawsredshiftcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsredshiftcluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsredshiftcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/redshift_cluster aws_redshift_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/redshift_cluster aws_redshift_cluster}.
 type DataAwsRedshiftCluster interface {
 	cdktf.TerraformDataSource
 	AllowVersionUpgrade() cdktf.IResolvable
@@ -35,9 +35,9 @@ type DataAwsRedshiftCluster interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DatabaseName() *string
 	DefaultIamRoleArn() *string
 	// Experimental.
@@ -331,8 +331,8 @@ func (j *jsiiProxy_DataAwsRedshiftCluster) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRedshiftCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsRedshiftCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -712,7 +712,7 @@ func (j *jsiiProxy_DataAwsRedshiftCluster) VpcSecurityGroupIds() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/redshift_cluster aws_redshift_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/redshift_cluster aws_redshift_cluster} Data Source.
 func NewDataAwsRedshiftCluster(scope constructs.Construct, id *string, config *DataAwsRedshiftClusterConfig) DataAwsRedshiftCluster {
 	_init_.Initialize()
 
@@ -730,7 +730,7 @@ func NewDataAwsRedshiftCluster(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/redshift_cluster aws_redshift_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/redshift_cluster aws_redshift_cluster} Data Source.
 func NewDataAwsRedshiftCluster_Override(d DataAwsRedshiftCluster, scope constructs.Construct, id *string, config *DataAwsRedshiftClusterConfig) {
 	_init_.Initialize()
 
@@ -752,7 +752,10 @@ func (j *jsiiProxy_DataAwsRedshiftCluster)SetClusterIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsRedshiftCluster)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsRedshiftCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

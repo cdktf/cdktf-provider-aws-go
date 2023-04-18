@@ -2,14 +2,14 @@ package cognitouseringroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/cognitouseringroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/cognitouseringroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_in_group aws_cognito_user_in_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cognito_user_in_group aws_cognito_user_in_group}.
 type CognitoUserInGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CognitoUserInGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -144,8 +144,8 @@ func (j *jsiiProxy_CognitoUserInGroup) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUserInGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CognitoUserInGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -355,7 +355,7 @@ func (j *jsiiProxy_CognitoUserInGroup) UserPoolIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_in_group aws_cognito_user_in_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cognito_user_in_group aws_cognito_user_in_group} Resource.
 func NewCognitoUserInGroup(scope constructs.Construct, id *string, config *CognitoUserInGroupConfig) CognitoUserInGroup {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewCognitoUserInGroup(scope constructs.Construct, id *string, config *Cogni
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cognito_user_in_group aws_cognito_user_in_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cognito_user_in_group aws_cognito_user_in_group} Resource.
 func NewCognitoUserInGroup_Override(c CognitoUserInGroup, scope constructs.Construct, id *string, config *CognitoUserInGroupConfig) {
 	_init_.Initialize()
 
@@ -395,7 +395,10 @@ func (j *jsiiProxy_CognitoUserInGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CognitoUserInGroup)SetCount(val *float64) {
+func (j *jsiiProxy_CognitoUserInGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

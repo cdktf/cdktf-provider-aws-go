@@ -72,6 +72,10 @@ func (j *jsiiProxy_VpnGatewayRoutePropagation) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_VpnGatewayRoutePropagation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpnGatewayRoutePropagation) validateSetIdParameters(val *string) error {
 	return nil
 }

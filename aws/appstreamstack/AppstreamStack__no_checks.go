@@ -84,6 +84,10 @@ func (j *jsiiProxy_AppstreamStack) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_AppstreamStack) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppstreamStack) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

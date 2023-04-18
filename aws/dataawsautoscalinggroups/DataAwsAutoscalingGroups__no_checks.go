@@ -68,6 +68,10 @@ func validateDataAwsAutoscalingGroups_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAutoscalingGroups) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAutoscalingGroups) validateSetIdParameters(val *string) error {
 	return nil
 }

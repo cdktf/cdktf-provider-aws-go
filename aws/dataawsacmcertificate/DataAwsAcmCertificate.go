@@ -2,14 +2,14 @@ package dataawsacmcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsacmcertificate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsacmcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/acm_certificate aws_acm_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/acm_certificate aws_acm_certificate}.
 type DataAwsAcmCertificate interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -20,9 +20,9 @@ type DataAwsAcmCertificate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -174,8 +174,8 @@ func (j *jsiiProxy_DataAwsAcmCertificate) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAcmCertificate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsAcmCertificate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -445,7 +445,7 @@ func (j *jsiiProxy_DataAwsAcmCertificate) TypesInput() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/acm_certificate aws_acm_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/acm_certificate aws_acm_certificate} Data Source.
 func NewDataAwsAcmCertificate(scope constructs.Construct, id *string, config *DataAwsAcmCertificateConfig) DataAwsAcmCertificate {
 	_init_.Initialize()
 
@@ -463,7 +463,7 @@ func NewDataAwsAcmCertificate(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/acm_certificate aws_acm_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/acm_certificate aws_acm_certificate} Data Source.
 func NewDataAwsAcmCertificate_Override(d DataAwsAcmCertificate, scope constructs.Construct, id *string, config *DataAwsAcmCertificateConfig) {
 	_init_.Initialize()
 
@@ -474,7 +474,10 @@ func NewDataAwsAcmCertificate_Override(d DataAwsAcmCertificate, scope constructs
 	)
 }
 
-func (j *jsiiProxy_DataAwsAcmCertificate)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsAcmCertificate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

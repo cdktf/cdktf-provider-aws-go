@@ -72,6 +72,10 @@ func (j *jsiiProxy_ImagebuilderDistributionConfiguration) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_ImagebuilderDistributionConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImagebuilderDistributionConfiguration) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

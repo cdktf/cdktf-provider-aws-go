@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsLocationGeofenceCollection) validateSetCollectionNameP
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLocationGeofenceCollection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLocationGeofenceCollection) validateSetIdParameters(val *string) error {
 	return nil
 }

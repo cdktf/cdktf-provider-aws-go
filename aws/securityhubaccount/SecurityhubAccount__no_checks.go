@@ -68,6 +68,10 @@ func (j *jsiiProxy_SecurityhubAccount) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_SecurityhubAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityhubAccount) validateSetEnableDefaultStandardsParameters(val interface{}) error {
 	return nil
 }

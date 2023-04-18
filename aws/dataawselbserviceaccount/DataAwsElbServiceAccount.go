@@ -2,14 +2,14 @@ package dataawselbserviceaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawselbserviceaccount/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawselbserviceaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/elb_service_account aws_elb_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/elb_service_account aws_elb_service_account}.
 type DataAwsElbServiceAccount interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -18,9 +18,9 @@ type DataAwsElbServiceAccount interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -132,8 +132,8 @@ func (j *jsiiProxy_DataAwsElbServiceAccount) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElbServiceAccount) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsElbServiceAccount) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DataAwsElbServiceAccount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/elb_service_account aws_elb_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/elb_service_account aws_elb_service_account} Data Source.
 func NewDataAwsElbServiceAccount(scope constructs.Construct, id *string, config *DataAwsElbServiceAccountConfig) DataAwsElbServiceAccount {
 	_init_.Initialize()
 
@@ -311,7 +311,7 @@ func NewDataAwsElbServiceAccount(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/elb_service_account aws_elb_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/elb_service_account aws_elb_service_account} Data Source.
 func NewDataAwsElbServiceAccount_Override(d DataAwsElbServiceAccount, scope constructs.Construct, id *string, config *DataAwsElbServiceAccountConfig) {
 	_init_.Initialize()
 
@@ -322,7 +322,10 @@ func NewDataAwsElbServiceAccount_Override(d DataAwsElbServiceAccount, scope cons
 	)
 }
 
-func (j *jsiiProxy_DataAwsElbServiceAccount)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsElbServiceAccount)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

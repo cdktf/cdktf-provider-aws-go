@@ -2,14 +2,14 @@ package dataawsstoragegatewaylocaldisk
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsstoragegatewaylocaldisk/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsstoragegatewaylocaldisk/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/storagegateway_local_disk aws_storagegateway_local_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/storagegateway_local_disk aws_storagegateway_local_disk}.
 type DataAwsStoragegatewayLocalDisk interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAwsStoragegatewayLocalDisk interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -129,8 +129,8 @@ func (j *jsiiProxy_DataAwsStoragegatewayLocalDisk) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsStoragegatewayLocalDisk) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsStoragegatewayLocalDisk) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -340,7 +340,7 @@ func (j *jsiiProxy_DataAwsStoragegatewayLocalDisk) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/storagegateway_local_disk aws_storagegateway_local_disk} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/storagegateway_local_disk aws_storagegateway_local_disk} Data Source.
 func NewDataAwsStoragegatewayLocalDisk(scope constructs.Construct, id *string, config *DataAwsStoragegatewayLocalDiskConfig) DataAwsStoragegatewayLocalDisk {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewDataAwsStoragegatewayLocalDisk(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/storagegateway_local_disk aws_storagegateway_local_disk} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/storagegateway_local_disk aws_storagegateway_local_disk} Data Source.
 func NewDataAwsStoragegatewayLocalDisk_Override(d DataAwsStoragegatewayLocalDisk, scope constructs.Construct, id *string, config *DataAwsStoragegatewayLocalDiskConfig) {
 	_init_.Initialize()
 
@@ -369,7 +369,10 @@ func NewDataAwsStoragegatewayLocalDisk_Override(d DataAwsStoragegatewayLocalDisk
 	)
 }
 
-func (j *jsiiProxy_DataAwsStoragegatewayLocalDisk)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsStoragegatewayLocalDisk)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

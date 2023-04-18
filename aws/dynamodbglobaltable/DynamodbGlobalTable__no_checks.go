@@ -76,6 +76,10 @@ func (j *jsiiProxy_DynamodbGlobalTable) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbGlobalTable) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbGlobalTable) validateSetIdParameters(val *string) error {
 	return nil
 }

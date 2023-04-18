@@ -64,6 +64,10 @@ func validateDataAwsAppmeshVirtualGateway_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAppmeshVirtualGateway) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAppmeshVirtualGateway) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package route53domainsregistereddomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/route53domainsregistereddomain/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/route53domainsregistereddomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53domains_registered_domain aws_route53domains_registered_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/route53domains_registered_domain aws_route53domains_registered_domain}.
 type Route53DomainsRegisteredDomain interface {
 	cdktf.TerraformResource
 	AbuseContactEmail() *string
@@ -31,9 +31,9 @@ type Route53DomainsRegisteredDomain interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreationDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -276,8 +276,8 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -707,7 +707,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) WhoisServer() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53domains_registered_domain aws_route53domains_registered_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/route53domains_registered_domain aws_route53domains_registered_domain} Resource.
 func NewRoute53DomainsRegisteredDomain(scope constructs.Construct, id *string, config *Route53DomainsRegisteredDomainConfig) Route53DomainsRegisteredDomain {
 	_init_.Initialize()
 
@@ -725,7 +725,7 @@ func NewRoute53DomainsRegisteredDomain(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53domains_registered_domain aws_route53domains_registered_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/route53domains_registered_domain aws_route53domains_registered_domain} Resource.
 func NewRoute53DomainsRegisteredDomain_Override(r Route53DomainsRegisteredDomain, scope constructs.Construct, id *string, config *Route53DomainsRegisteredDomainConfig) {
 	_init_.Initialize()
 
@@ -769,7 +769,10 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetCount(val *float64) {
+func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

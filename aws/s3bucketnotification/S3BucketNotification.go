@@ -2,14 +2,14 @@ package s3bucketnotification
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/s3bucketnotification/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/s3bucketnotification/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_notification aws_s3_bucket_notification}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/s3_bucket_notification aws_s3_bucket_notification}.
 type S3BucketNotification interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -24,9 +24,9 @@ type S3BucketNotification interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -174,8 +174,8 @@ func (j *jsiiProxy_S3BucketNotification) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketNotification) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_S3BucketNotification) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -405,7 +405,7 @@ func (j *jsiiProxy_S3BucketNotification) TopicInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_notification aws_s3_bucket_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/s3_bucket_notification aws_s3_bucket_notification} Resource.
 func NewS3BucketNotification(scope constructs.Construct, id *string, config *S3BucketNotificationConfig) S3BucketNotification {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewS3BucketNotification(scope constructs.Construct, id *string, config *S3B
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/s3_bucket_notification aws_s3_bucket_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/s3_bucket_notification aws_s3_bucket_notification} Resource.
 func NewS3BucketNotification_Override(s S3BucketNotification, scope constructs.Construct, id *string, config *S3BucketNotificationConfig) {
 	_init_.Initialize()
 
@@ -456,7 +456,10 @@ func (j *jsiiProxy_S3BucketNotification)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotification)SetCount(val *float64) {
+func (j *jsiiProxy_S3BucketNotification)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func validateDataAwsVpcIpamPoolCidrs_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpcIpamPoolCidrs) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpcIpamPoolCidrs) validateSetIdParameters(val *string) error {
 	return nil
 }

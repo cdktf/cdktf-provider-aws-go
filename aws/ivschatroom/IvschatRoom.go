@@ -2,14 +2,14 @@ package ivschatroom
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/ivschatroom/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ivschatroom/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ivschat_room aws_ivschat_room}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ivschat_room aws_ivschat_room}.
 type IvschatRoom interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type IvschatRoom interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -178,8 +178,8 @@ func (j *jsiiProxy_IvschatRoom) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_IvschatRoom) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_IvschatRoom) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -489,7 +489,7 @@ func (j *jsiiProxy_IvschatRoom) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ivschat_room aws_ivschat_room} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ivschat_room aws_ivschat_room} Resource.
 func NewIvschatRoom(scope constructs.Construct, id *string, config *IvschatRoomConfig) IvschatRoom {
 	_init_.Initialize()
 
@@ -507,7 +507,7 @@ func NewIvschatRoom(scope constructs.Construct, id *string, config *IvschatRoomC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ivschat_room aws_ivschat_room} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ivschat_room aws_ivschat_room} Resource.
 func NewIvschatRoom_Override(i IvschatRoom, scope constructs.Construct, id *string, config *IvschatRoomConfig) {
 	_init_.Initialize()
 
@@ -529,7 +529,10 @@ func (j *jsiiProxy_IvschatRoom)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_IvschatRoom)SetCount(val *float64) {
+func (j *jsiiProxy_IvschatRoom)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

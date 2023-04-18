@@ -68,6 +68,10 @@ func (j *jsiiProxy_SchemasDiscoverer) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_SchemasDiscoverer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SchemasDiscoverer) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

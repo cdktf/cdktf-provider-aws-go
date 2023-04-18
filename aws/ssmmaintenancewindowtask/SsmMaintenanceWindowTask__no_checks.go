@@ -76,6 +76,10 @@ func (j *jsiiProxy_SsmMaintenanceWindowTask) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_SsmMaintenanceWindowTask) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmMaintenanceWindowTask) validateSetCutoffBehaviorParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataawsec2transitgatewayroutetablepropagations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsec2transitgatewayroutetablepropagations/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsec2transitgatewayroutetablepropagations/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_route_table_propagations aws_ec2_transit_gateway_route_table_propagations}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_transit_gateway_route_table_propagations aws_ec2_transit_gateway_route_table_propagations}.
 type DataAwsEc2TransitGatewayRouteTablePropagations interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAwsEc2TransitGatewayRouteTablePropagations interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -129,8 +129,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTablePropagations) ConstructNode
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTablePropagations) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTablePropagations) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -340,7 +340,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTablePropagations) TransitGatewa
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_route_table_propagations aws_ec2_transit_gateway_route_table_propagations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_transit_gateway_route_table_propagations aws_ec2_transit_gateway_route_table_propagations} Data Source.
 func NewDataAwsEc2TransitGatewayRouteTablePropagations(scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayRouteTablePropagationsConfig) DataAwsEc2TransitGatewayRouteTablePropagations {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewDataAwsEc2TransitGatewayRouteTablePropagations(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_transit_gateway_route_table_propagations aws_ec2_transit_gateway_route_table_propagations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_transit_gateway_route_table_propagations aws_ec2_transit_gateway_route_table_propagations} Data Source.
 func NewDataAwsEc2TransitGatewayRouteTablePropagations_Override(d DataAwsEc2TransitGatewayRouteTablePropagations, scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayRouteTablePropagationsConfig) {
 	_init_.Initialize()
 
@@ -369,7 +369,10 @@ func NewDataAwsEc2TransitGatewayRouteTablePropagations_Override(d DataAwsEc2Tran
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTablePropagations)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTablePropagations)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

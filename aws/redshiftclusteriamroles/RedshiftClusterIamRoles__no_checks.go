@@ -76,6 +76,10 @@ func (j *jsiiProxy_RedshiftClusterIamRoles) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftClusterIamRoles) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftClusterIamRoles) validateSetDefaultIamRoleArnParameters(val *string) error {
 	return nil
 }

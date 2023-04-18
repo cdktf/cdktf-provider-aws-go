@@ -96,6 +96,10 @@ func (j *jsiiProxy_EcsTaskDefinition) validateSetContainerDefinitionsParameters(
 	return nil
 }
 
+func (j *jsiiProxy_EcsTaskDefinition) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsTaskDefinition) validateSetCpuParameters(val *string) error {
 	return nil
 }

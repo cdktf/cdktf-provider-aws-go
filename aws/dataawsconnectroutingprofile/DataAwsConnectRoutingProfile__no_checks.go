@@ -64,6 +64,10 @@ func validateDataAwsConnectRoutingProfile_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectRoutingProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectRoutingProfile) validateSetIdParameters(val *string) error {
 	return nil
 }

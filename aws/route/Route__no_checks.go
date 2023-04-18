@@ -80,6 +80,10 @@ func (j *jsiiProxy_Route) validateSetCoreNetworkArnParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_Route) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route) validateSetDestinationCidrBlockParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataawssecretsmanagersecrets
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawssecretsmanagersecrets/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssecretsmanagersecrets/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/secretsmanager_secrets aws_secretsmanager_secrets}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/secretsmanager_secrets aws_secretsmanager_secrets}.
 type DataAwsSecretsmanagerSecrets interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -18,9 +18,9 @@ type DataAwsSecretsmanagerSecrets interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -133,8 +133,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecrets) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecrets) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsSecretsmanagerSecrets) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -304,7 +304,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecrets) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/secretsmanager_secrets aws_secretsmanager_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/secretsmanager_secrets aws_secretsmanager_secrets} Data Source.
 func NewDataAwsSecretsmanagerSecrets(scope constructs.Construct, id *string, config *DataAwsSecretsmanagerSecretsConfig) DataAwsSecretsmanagerSecrets {
 	_init_.Initialize()
 
@@ -322,7 +322,7 @@ func NewDataAwsSecretsmanagerSecrets(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/secretsmanager_secrets aws_secretsmanager_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/secretsmanager_secrets aws_secretsmanager_secrets} Data Source.
 func NewDataAwsSecretsmanagerSecrets_Override(d DataAwsSecretsmanagerSecrets, scope constructs.Construct, id *string, config *DataAwsSecretsmanagerSecretsConfig) {
 	_init_.Initialize()
 
@@ -333,7 +333,10 @@ func NewDataAwsSecretsmanagerSecrets_Override(d DataAwsSecretsmanagerSecrets, sc
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerSecrets)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsSecretsmanagerSecrets)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

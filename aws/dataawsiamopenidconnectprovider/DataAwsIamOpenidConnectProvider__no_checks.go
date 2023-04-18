@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsIamOpenidConnectProvider) validateSetArnParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsIamOpenidConnectProvider) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsIamOpenidConnectProvider) validateSetIdParameters(val *string) error {
 	return nil
 }

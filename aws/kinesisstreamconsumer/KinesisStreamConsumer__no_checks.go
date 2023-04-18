@@ -68,6 +68,10 @@ func (j *jsiiProxy_KinesisStreamConsumer) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_KinesisStreamConsumer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KinesisStreamConsumer) validateSetIdParameters(val *string) error {
 	return nil
 }

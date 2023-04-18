@@ -92,6 +92,10 @@ func (j *jsiiProxy_FsxLustreFileSystem) validateSetCopyTagsToBackupsParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_FsxLustreFileSystem) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxLustreFileSystem) validateSetDailyAutomaticBackupStartTimeParameters(val *string) error {
 	return nil
 }

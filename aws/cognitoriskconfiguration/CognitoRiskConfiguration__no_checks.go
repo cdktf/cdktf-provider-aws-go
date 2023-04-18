@@ -84,6 +84,10 @@ func (j *jsiiProxy_CognitoRiskConfiguration) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_CognitoRiskConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoRiskConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

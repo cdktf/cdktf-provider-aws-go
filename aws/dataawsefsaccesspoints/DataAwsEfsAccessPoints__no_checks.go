@@ -64,6 +64,10 @@ func validateDataAwsEfsAccessPoints_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEfsAccessPoints) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEfsAccessPoints) validateSetFileSystemIdParameters(val *string) error {
 	return nil
 }

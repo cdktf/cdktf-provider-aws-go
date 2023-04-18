@@ -2,14 +2,14 @@ package gameliftscript
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/gameliftscript/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/gameliftscript/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/gamelift_script aws_gamelift_script}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/gamelift_script aws_gamelift_script}.
 type GameliftScript interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type GameliftScript interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_GameliftScript) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_GameliftScript) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GameliftScript) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -440,7 +440,7 @@ func (j *jsiiProxy_GameliftScript) ZipFileInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/gamelift_script aws_gamelift_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/gamelift_script aws_gamelift_script} Resource.
 func NewGameliftScript(scope constructs.Construct, id *string, config *GameliftScriptConfig) GameliftScript {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewGameliftScript(scope constructs.Construct, id *string, config *GameliftS
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/gamelift_script aws_gamelift_script} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/gamelift_script aws_gamelift_script} Resource.
 func NewGameliftScript_Override(g GameliftScript, scope constructs.Construct, id *string, config *GameliftScriptConfig) {
 	_init_.Initialize()
 
@@ -480,7 +480,10 @@ func (j *jsiiProxy_GameliftScript)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GameliftScript)SetCount(val *float64) {
+func (j *jsiiProxy_GameliftScript)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

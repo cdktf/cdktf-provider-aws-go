@@ -76,6 +76,10 @@ func (j *jsiiProxy_DbOptionGroup) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_DbOptionGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbOptionGroup) validateSetEngineNameParameters(val *string) error {
 	return nil
 }

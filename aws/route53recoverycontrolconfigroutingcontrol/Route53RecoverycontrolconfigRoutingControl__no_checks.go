@@ -76,6 +76,10 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigRoutingControl) validateSetContro
 	return nil
 }
 
+func (j *jsiiProxy_Route53RecoverycontrolconfigRoutingControl) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53RecoverycontrolconfigRoutingControl) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_AppCookieStickinessPolicy) validateSetCookieNameParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_AppCookieStickinessPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppCookieStickinessPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

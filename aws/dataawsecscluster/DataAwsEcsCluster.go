@@ -2,14 +2,14 @@ package dataawsecscluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsecscluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsecscluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/ecs_cluster aws_ecs_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ecs_cluster aws_ecs_cluster}.
 type DataAwsEcsCluster interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -21,9 +21,9 @@ type DataAwsEcsCluster interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -161,8 +161,8 @@ func (j *jsiiProxy_DataAwsEcsCluster) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEcsCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsEcsCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -382,7 +382,7 @@ func (j *jsiiProxy_DataAwsEcsCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ecs_cluster aws_ecs_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ecs_cluster aws_ecs_cluster} Data Source.
 func NewDataAwsEcsCluster(scope constructs.Construct, id *string, config *DataAwsEcsClusterConfig) DataAwsEcsCluster {
 	_init_.Initialize()
 
@@ -400,7 +400,7 @@ func NewDataAwsEcsCluster(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ecs_cluster aws_ecs_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ecs_cluster aws_ecs_cluster} Data Source.
 func NewDataAwsEcsCluster_Override(d DataAwsEcsCluster, scope constructs.Construct, id *string, config *DataAwsEcsClusterConfig) {
 	_init_.Initialize()
 
@@ -422,7 +422,10 @@ func (j *jsiiProxy_DataAwsEcsCluster)SetClusterName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsEcsCluster)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsEcsCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -76,6 +76,10 @@ func (j *jsiiProxy_ConnectContactFlowModule) validateSetContentHashParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ConnectContactFlowModule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConnectContactFlowModule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

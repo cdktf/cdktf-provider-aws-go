@@ -2,14 +2,14 @@ package backupselection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/backupselection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/backupselection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/backup_selection aws_backup_selection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/backup_selection aws_backup_selection}.
 type BackupSelection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type BackupSelection interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -180,8 +180,8 @@ func (j *jsiiProxy_BackupSelection) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_BackupSelection) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_BackupSelection) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -451,7 +451,7 @@ func (j *jsiiProxy_BackupSelection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/backup_selection aws_backup_selection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/backup_selection aws_backup_selection} Resource.
 func NewBackupSelection(scope constructs.Construct, id *string, config *BackupSelectionConfig) BackupSelection {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewBackupSelection(scope constructs.Construct, id *string, config *BackupSe
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/backup_selection aws_backup_selection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/backup_selection aws_backup_selection} Resource.
 func NewBackupSelection_Override(b BackupSelection, scope constructs.Construct, id *string, config *BackupSelectionConfig) {
 	_init_.Initialize()
 
@@ -491,7 +491,10 @@ func (j *jsiiProxy_BackupSelection)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_BackupSelection)SetCount(val *float64) {
+func (j *jsiiProxy_BackupSelection)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

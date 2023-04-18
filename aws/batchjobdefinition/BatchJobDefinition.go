@@ -2,14 +2,14 @@ package batchjobdefinition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/batchjobdefinition/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/batchjobdefinition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/batch_job_definition aws_batch_job_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/batch_job_definition aws_batch_job_definition}.
 type BatchJobDefinition interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -25,9 +25,9 @@ type BatchJobDefinition interface {
 	SetContainerProperties(val *string)
 	ContainerPropertiesInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -205,8 +205,8 @@ func (j *jsiiProxy_BatchJobDefinition) ContainerPropertiesInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_BatchJobDefinition) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_BatchJobDefinition) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -546,7 +546,7 @@ func (j *jsiiProxy_BatchJobDefinition) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/batch_job_definition aws_batch_job_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
 func NewBatchJobDefinition(scope constructs.Construct, id *string, config *BatchJobDefinitionConfig) BatchJobDefinition {
 	_init_.Initialize()
 
@@ -564,7 +564,7 @@ func NewBatchJobDefinition(scope constructs.Construct, id *string, config *Batch
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/batch_job_definition aws_batch_job_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
 func NewBatchJobDefinition_Override(b BatchJobDefinition, scope constructs.Construct, id *string, config *BatchJobDefinitionConfig) {
 	_init_.Initialize()
 
@@ -597,7 +597,10 @@ func (j *jsiiProxy_BatchJobDefinition)SetContainerProperties(val *string) {
 	)
 }
 
-func (j *jsiiProxy_BatchJobDefinition)SetCount(val *float64) {
+func (j *jsiiProxy_BatchJobDefinition)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

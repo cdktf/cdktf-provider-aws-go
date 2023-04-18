@@ -2,14 +2,14 @@ package acmpcapolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/acmpcapolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/acmpcapolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/acmpca_policy aws_acmpca_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/acmpca_policy aws_acmpca_policy}.
 type AcmpcaPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type AcmpcaPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_AcmpcaPolicy) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_AcmpcaPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AcmpcaPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_AcmpcaPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/acmpca_policy aws_acmpca_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/acmpca_policy aws_acmpca_policy} Resource.
 func NewAcmpcaPolicy(scope constructs.Construct, id *string, config *AcmpcaPolicyConfig) AcmpcaPolicy {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewAcmpcaPolicy(scope constructs.Construct, id *string, config *AcmpcaPolic
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/acmpca_policy aws_acmpca_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/acmpca_policy aws_acmpca_policy} Resource.
 func NewAcmpcaPolicy_Override(a AcmpcaPolicy, scope constructs.Construct, id *string, config *AcmpcaPolicyConfig) {
 	_init_.Initialize()
 
@@ -372,7 +372,10 @@ func (j *jsiiProxy_AcmpcaPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AcmpcaPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_AcmpcaPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -76,6 +76,10 @@ func (j *jsiiProxy_SfnStateMachine) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_SfnStateMachine) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SfnStateMachine) validateSetDefinitionParameters(val *string) error {
 	return nil
 }

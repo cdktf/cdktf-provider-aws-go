@@ -68,6 +68,10 @@ func (j *jsiiProxy_SqsQueuePolicy) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_SqsQueuePolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SqsQueuePolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

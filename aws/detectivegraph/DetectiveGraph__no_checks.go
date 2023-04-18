@@ -68,6 +68,10 @@ func (j *jsiiProxy_DetectiveGraph) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_DetectiveGraph) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DetectiveGraph) validateSetIdParameters(val *string) error {
 	return nil
 }

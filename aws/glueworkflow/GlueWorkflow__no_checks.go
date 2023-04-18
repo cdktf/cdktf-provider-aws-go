@@ -68,6 +68,10 @@ func (j *jsiiProxy_GlueWorkflow) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_GlueWorkflow) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueWorkflow) validateSetDefaultRunPropertiesParameters(val *map[string]*string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataawsec2localgatewayvirtualinterfacegroups
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsec2localgatewayvirtualinterfacegroups/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsec2localgatewayvirtualinterfacegroups/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway_virtual_interface_groups aws_ec2_local_gateway_virtual_interface_groups}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_local_gateway_virtual_interface_groups aws_ec2_local_gateway_virtual_interface_groups}.
 type DataAwsEc2LocalGatewayVirtualInterfaceGroups interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAwsEc2LocalGatewayVirtualInterfaceGroups interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroups) ConstructNodeMe
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroups) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroups) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -352,7 +352,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroups) TimeoutsInput()
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway_virtual_interface_groups aws_ec2_local_gateway_virtual_interface_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_local_gateway_virtual_interface_groups aws_ec2_local_gateway_virtual_interface_groups} Data Source.
 func NewDataAwsEc2LocalGatewayVirtualInterfaceGroups(scope constructs.Construct, id *string, config *DataAwsEc2LocalGatewayVirtualInterfaceGroupsConfig) DataAwsEc2LocalGatewayVirtualInterfaceGroups {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewDataAwsEc2LocalGatewayVirtualInterfaceGroups(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway_virtual_interface_groups aws_ec2_local_gateway_virtual_interface_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_local_gateway_virtual_interface_groups aws_ec2_local_gateway_virtual_interface_groups} Data Source.
 func NewDataAwsEc2LocalGatewayVirtualInterfaceGroups_Override(d DataAwsEc2LocalGatewayVirtualInterfaceGroups, scope constructs.Construct, id *string, config *DataAwsEc2LocalGatewayVirtualInterfaceGroupsConfig) {
 	_init_.Initialize()
 
@@ -381,7 +381,10 @@ func NewDataAwsEc2LocalGatewayVirtualInterfaceGroups_Override(d DataAwsEc2LocalG
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroups)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroups)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -76,6 +76,10 @@ func (j *jsiiProxy_Ec2ManagedPrefixList) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_Ec2ManagedPrefixList) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2ManagedPrefixList) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataAwsSesEmailIdentity_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSesEmailIdentity) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSesEmailIdentity) validateSetEmailParameters(val *string) error {
 	return nil
 }

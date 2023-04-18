@@ -72,6 +72,10 @@ func (j *jsiiProxy_EmrSecurityConfiguration) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_EmrSecurityConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrSecurityConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

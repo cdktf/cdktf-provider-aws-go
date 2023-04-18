@@ -68,6 +68,10 @@ func (j *jsiiProxy_EvidentlySegment) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_EvidentlySegment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EvidentlySegment) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

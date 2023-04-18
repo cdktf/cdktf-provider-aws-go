@@ -2,14 +2,14 @@ package apprunnerconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/apprunnerconnection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/apprunnerconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/apprunner_connection aws_apprunner_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/apprunner_connection aws_apprunner_connection}.
 type ApprunnerConnection interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -25,9 +25,9 @@ type ApprunnerConnection interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -181,8 +181,8 @@ func (j *jsiiProxy_ApprunnerConnection) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_ApprunnerConnection) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApprunnerConnection) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -402,7 +402,7 @@ func (j *jsiiProxy_ApprunnerConnection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/apprunner_connection aws_apprunner_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/apprunner_connection aws_apprunner_connection} Resource.
 func NewApprunnerConnection(scope constructs.Construct, id *string, config *ApprunnerConnectionConfig) ApprunnerConnection {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewApprunnerConnection(scope constructs.Construct, id *string, config *Appr
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/apprunner_connection aws_apprunner_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/apprunner_connection aws_apprunner_connection} Resource.
 func NewApprunnerConnection_Override(a ApprunnerConnection, scope constructs.Construct, id *string, config *ApprunnerConnectionConfig) {
 	_init_.Initialize()
 
@@ -453,7 +453,10 @@ func (j *jsiiProxy_ApprunnerConnection)SetConnectionName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ApprunnerConnection)SetCount(val *float64) {
+func (j *jsiiProxy_ApprunnerConnection)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

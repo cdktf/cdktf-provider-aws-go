@@ -2,14 +2,14 @@ package connectsecurityprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/connectsecurityprofile/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/connectsecurityprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/connect_security_profile aws_connect_security_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/connect_security_profile aws_connect_security_profile}.
 type ConnectSecurityProfile interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type ConnectSecurityProfile interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -170,8 +170,8 @@ func (j *jsiiProxy_ConnectSecurityProfile) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_ConnectSecurityProfile) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ConnectSecurityProfile) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -461,7 +461,7 @@ func (j *jsiiProxy_ConnectSecurityProfile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/connect_security_profile aws_connect_security_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/connect_security_profile aws_connect_security_profile} Resource.
 func NewConnectSecurityProfile(scope constructs.Construct, id *string, config *ConnectSecurityProfileConfig) ConnectSecurityProfile {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewConnectSecurityProfile(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/connect_security_profile aws_connect_security_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/connect_security_profile aws_connect_security_profile} Resource.
 func NewConnectSecurityProfile_Override(c ConnectSecurityProfile, scope constructs.Construct, id *string, config *ConnectSecurityProfileConfig) {
 	_init_.Initialize()
 
@@ -501,7 +501,10 @@ func (j *jsiiProxy_ConnectSecurityProfile)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConnectSecurityProfile)SetCount(val *float64) {
+func (j *jsiiProxy_ConnectSecurityProfile)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -100,6 +100,10 @@ func (j *jsiiProxy_SesReceiptRule) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_SesReceiptRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesReceiptRule) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_DmsCertificate) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_DmsCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

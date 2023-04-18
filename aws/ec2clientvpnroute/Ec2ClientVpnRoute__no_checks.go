@@ -76,6 +76,10 @@ func (j *jsiiProxy_Ec2ClientVpnRoute) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_Ec2ClientVpnRoute) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2ClientVpnRoute) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataAwsBillingServiceAccount_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsBillingServiceAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsBillingServiceAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

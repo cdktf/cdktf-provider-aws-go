@@ -76,6 +76,10 @@ func (j *jsiiProxy_LambdaCodeSigningConfig) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_LambdaCodeSigningConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaCodeSigningConfig) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

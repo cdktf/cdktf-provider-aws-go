@@ -96,6 +96,10 @@ func (j *jsiiProxy_Ec2Fleet) validateSetContextParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_Ec2Fleet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2Fleet) validateSetExcessCapacityTerminationPolicyParameters(val *string) error {
 	return nil
 }

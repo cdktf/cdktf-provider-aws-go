@@ -76,6 +76,10 @@ func (j *jsiiProxy_Macie2Member) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_Macie2Member) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Macie2Member) validateSetEmailParameters(val *string) error {
 	return nil
 }

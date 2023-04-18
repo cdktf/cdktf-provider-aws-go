@@ -76,6 +76,10 @@ func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetDbNameParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataawscloudwatcheventsource
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawscloudwatcheventsource/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawscloudwatcheventsource/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/cloudwatch_event_source aws_cloudwatch_event_source}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/cloudwatch_event_source aws_cloudwatch_event_source}.
 type DataAwsCloudwatchEventSource interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -18,9 +18,9 @@ type DataAwsCloudwatchEventSource interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedBy() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -135,8 +135,8 @@ func (j *jsiiProxy_DataAwsCloudwatchEventSource) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudwatchEventSource) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsCloudwatchEventSource) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -326,7 +326,7 @@ func (j *jsiiProxy_DataAwsCloudwatchEventSource) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/cloudwatch_event_source aws_cloudwatch_event_source} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/cloudwatch_event_source aws_cloudwatch_event_source} Data Source.
 func NewDataAwsCloudwatchEventSource(scope constructs.Construct, id *string, config *DataAwsCloudwatchEventSourceConfig) DataAwsCloudwatchEventSource {
 	_init_.Initialize()
 
@@ -344,7 +344,7 @@ func NewDataAwsCloudwatchEventSource(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/cloudwatch_event_source aws_cloudwatch_event_source} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/cloudwatch_event_source aws_cloudwatch_event_source} Data Source.
 func NewDataAwsCloudwatchEventSource_Override(d DataAwsCloudwatchEventSource, scope constructs.Construct, id *string, config *DataAwsCloudwatchEventSourceConfig) {
 	_init_.Initialize()
 
@@ -355,7 +355,10 @@ func NewDataAwsCloudwatchEventSource_Override(d DataAwsCloudwatchEventSource, sc
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudwatchEventSource)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsCloudwatchEventSource)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

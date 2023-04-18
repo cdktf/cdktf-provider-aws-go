@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAwsRegions) validateSetAllRegionsParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRegions) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRegions) validateSetIdParameters(val *string) error {
 	return nil
 }

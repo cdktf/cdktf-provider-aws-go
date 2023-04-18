@@ -80,6 +80,10 @@ func (j *jsiiProxy_PinpointApp) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_PinpointApp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointApp) validateSetIdParameters(val *string) error {
 	return nil
 }

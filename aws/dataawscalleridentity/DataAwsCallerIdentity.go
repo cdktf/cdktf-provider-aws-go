@@ -2,14 +2,14 @@ package dataawscalleridentity
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawscalleridentity/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawscalleridentity/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/caller_identity aws_caller_identity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/caller_identity aws_caller_identity}.
 type DataAwsCallerIdentity interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -19,9 +19,9 @@ type DataAwsCallerIdentity interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataAwsCallerIdentity) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCallerIdentity) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsCallerIdentity) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -291,7 +291,7 @@ func (j *jsiiProxy_DataAwsCallerIdentity) UserId() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/caller_identity aws_caller_identity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/caller_identity aws_caller_identity} Data Source.
 func NewDataAwsCallerIdentity(scope constructs.Construct, id *string, config *DataAwsCallerIdentityConfig) DataAwsCallerIdentity {
 	_init_.Initialize()
 
@@ -309,7 +309,7 @@ func NewDataAwsCallerIdentity(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/caller_identity aws_caller_identity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/caller_identity aws_caller_identity} Data Source.
 func NewDataAwsCallerIdentity_Override(d DataAwsCallerIdentity, scope constructs.Construct, id *string, config *DataAwsCallerIdentityConfig) {
 	_init_.Initialize()
 
@@ -320,7 +320,10 @@ func NewDataAwsCallerIdentity_Override(d DataAwsCallerIdentity, scope constructs
 	)
 }
 
-func (j *jsiiProxy_DataAwsCallerIdentity)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsCallerIdentity)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

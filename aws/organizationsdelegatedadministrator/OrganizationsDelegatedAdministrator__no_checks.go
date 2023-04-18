@@ -72,6 +72,10 @@ func (j *jsiiProxy_OrganizationsDelegatedAdministrator) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_OrganizationsDelegatedAdministrator) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrganizationsDelegatedAdministrator) validateSetIdParameters(val *string) error {
 	return nil
 }

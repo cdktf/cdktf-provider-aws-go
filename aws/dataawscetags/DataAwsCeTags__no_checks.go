@@ -76,6 +76,10 @@ func validateDataAwsCeTags_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCeTags) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCeTags) validateSetIdParameters(val *string) error {
 	return nil
 }

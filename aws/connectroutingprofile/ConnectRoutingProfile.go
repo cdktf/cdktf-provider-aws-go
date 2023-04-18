@@ -2,14 +2,14 @@ package connectroutingprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/connectroutingprofile/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/connectroutingprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/connect_routing_profile aws_connect_routing_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/connect_routing_profile aws_connect_routing_profile}.
 type ConnectRoutingProfile interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type ConnectRoutingProfile interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultOutboundQueueId() *string
 	SetDefaultOutboundQueueId(val *string)
 	DefaultOutboundQueueIdInput() *string
@@ -175,8 +175,8 @@ func (j *jsiiProxy_ConnectRoutingProfile) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ConnectRoutingProfile) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -506,7 +506,7 @@ func (j *jsiiProxy_ConnectRoutingProfile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/connect_routing_profile aws_connect_routing_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/connect_routing_profile aws_connect_routing_profile} Resource.
 func NewConnectRoutingProfile(scope constructs.Construct, id *string, config *ConnectRoutingProfileConfig) ConnectRoutingProfile {
 	_init_.Initialize()
 
@@ -524,7 +524,7 @@ func NewConnectRoutingProfile(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/connect_routing_profile aws_connect_routing_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/connect_routing_profile aws_connect_routing_profile} Resource.
 func NewConnectRoutingProfile_Override(c ConnectRoutingProfile, scope constructs.Construct, id *string, config *ConnectRoutingProfileConfig) {
 	_init_.Initialize()
 
@@ -546,7 +546,10 @@ func (j *jsiiProxy_ConnectRoutingProfile)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile)SetCount(val *float64) {
+func (j *jsiiProxy_ConnectRoutingProfile)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsIamSamlProvider) validateSetArnParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsIamSamlProvider) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsIamSamlProvider) validateSetIdParameters(val *string) error {
 	return nil
 }

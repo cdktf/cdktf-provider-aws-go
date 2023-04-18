@@ -2,14 +2,14 @@ package route53resolverquerylogconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/route53resolverquerylogconfig/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/route53resolverquerylogconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_query_log_config aws_route53_resolver_query_log_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/route53_resolver_query_log_config aws_route53_resolver_query_log_config}.
 type Route53ResolverQueryLogConfig interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type Route53ResolverQueryLogConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -162,8 +162,8 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfig) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_Route53ResolverQueryLogConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Route53ResolverQueryLogConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -413,7 +413,7 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfig) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_query_log_config aws_route53_resolver_query_log_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/route53_resolver_query_log_config aws_route53_resolver_query_log_config} Resource.
 func NewRoute53ResolverQueryLogConfig(scope constructs.Construct, id *string, config *Route53ResolverQueryLogConfigConfig) Route53ResolverQueryLogConfig {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewRoute53ResolverQueryLogConfig(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/route53_resolver_query_log_config aws_route53_resolver_query_log_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/route53_resolver_query_log_config aws_route53_resolver_query_log_config} Resource.
 func NewRoute53ResolverQueryLogConfig_Override(r Route53ResolverQueryLogConfig, scope constructs.Construct, id *string, config *Route53ResolverQueryLogConfigConfig) {
 	_init_.Initialize()
 
@@ -453,7 +453,10 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfig)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_Route53ResolverQueryLogConfig)SetCount(val *float64) {
+func (j *jsiiProxy_Route53ResolverQueryLogConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -68,6 +68,10 @@ func (j *jsiiProxy_GrafanaWorkspaceApiKey) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_GrafanaWorkspaceApiKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GrafanaWorkspaceApiKey) validateSetIdParameters(val *string) error {
 	return nil
 }

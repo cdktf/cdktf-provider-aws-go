@@ -64,6 +64,10 @@ func validateDataAwsDynamodbTableItem_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDynamodbTableItem) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDynamodbTableItem) validateSetExpressionAttributeNamesParameters(val *map[string]*string) error {
 	return nil
 }

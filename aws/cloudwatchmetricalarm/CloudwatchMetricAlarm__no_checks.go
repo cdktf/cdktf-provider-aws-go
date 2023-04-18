@@ -92,6 +92,10 @@ func (j *jsiiProxy_CloudwatchMetricAlarm) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchMetricAlarm) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchMetricAlarm) validateSetDatapointsToAlarmParameters(val *float64) error {
 	return nil
 }

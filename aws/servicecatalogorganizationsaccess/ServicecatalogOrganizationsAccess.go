@@ -2,14 +2,14 @@ package servicecatalogorganizationsaccess
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/servicecatalogorganizationsaccess/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/servicecatalogorganizationsaccess/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_organizations_access aws_servicecatalog_organizations_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/servicecatalog_organizations_access aws_servicecatalog_organizations_access}.
 type ServicecatalogOrganizationsAccess interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ServicecatalogOrganizationsAccess interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogOrganizationsAccess) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -333,7 +333,7 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_organizations_access aws_servicecatalog_organizations_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/servicecatalog_organizations_access aws_servicecatalog_organizations_access} Resource.
 func NewServicecatalogOrganizationsAccess(scope constructs.Construct, id *string, config *ServicecatalogOrganizationsAccessConfig) ServicecatalogOrganizationsAccess {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewServicecatalogOrganizationsAccess(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_organizations_access aws_servicecatalog_organizations_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/servicecatalog_organizations_access aws_servicecatalog_organizations_access} Resource.
 func NewServicecatalogOrganizationsAccess_Override(s ServicecatalogOrganizationsAccess, scope constructs.Construct, id *string, config *ServicecatalogOrganizationsAccessConfig) {
 	_init_.Initialize()
 
@@ -373,7 +373,10 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogOrganizationsAccess)SetCount(val *float64) {
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

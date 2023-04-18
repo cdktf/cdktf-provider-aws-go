@@ -2,14 +2,14 @@ package ec2trafficmirrorsession
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/ec2trafficmirrorsession/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ec2trafficmirrorsession/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_session aws_ec2_traffic_mirror_session}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ec2_traffic_mirror_session aws_ec2_traffic_mirror_session}.
 type Ec2TrafficMirrorSession interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type Ec2TrafficMirrorSession interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -179,8 +179,8 @@ func (j *jsiiProxy_Ec2TrafficMirrorSession) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_Ec2TrafficMirrorSession) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Ec2TrafficMirrorSession) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -520,7 +520,7 @@ func (j *jsiiProxy_Ec2TrafficMirrorSession) VirtualNetworkIdInput() *float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_session aws_ec2_traffic_mirror_session} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ec2_traffic_mirror_session aws_ec2_traffic_mirror_session} Resource.
 func NewEc2TrafficMirrorSession(scope constructs.Construct, id *string, config *Ec2TrafficMirrorSessionConfig) Ec2TrafficMirrorSession {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewEc2TrafficMirrorSession(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ec2_traffic_mirror_session aws_ec2_traffic_mirror_session} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ec2_traffic_mirror_session aws_ec2_traffic_mirror_session} Resource.
 func NewEc2TrafficMirrorSession_Override(e Ec2TrafficMirrorSession, scope constructs.Construct, id *string, config *Ec2TrafficMirrorSessionConfig) {
 	_init_.Initialize()
 
@@ -560,7 +560,10 @@ func (j *jsiiProxy_Ec2TrafficMirrorSession)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Ec2TrafficMirrorSession)SetCount(val *float64) {
+func (j *jsiiProxy_Ec2TrafficMirrorSession)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

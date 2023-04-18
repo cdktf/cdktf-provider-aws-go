@@ -68,6 +68,10 @@ func (j *jsiiProxy_Route53KeySigningKey) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_Route53KeySigningKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53KeySigningKey) validateSetHostedZoneIdParameters(val *string) error {
 	return nil
 }

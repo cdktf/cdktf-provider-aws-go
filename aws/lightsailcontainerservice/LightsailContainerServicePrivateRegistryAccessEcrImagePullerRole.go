@@ -2,7 +2,7 @@ package lightsailcontainerservice
 
 
 type LightsailContainerServicePrivateRegistryAccessEcrImagePullerRole struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/lightsail_container_service#is_active LightsailContainerService#is_active}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lightsail_container_service#is_active LightsailContainerService#is_active}.
 	IsActive interface{} `field:"optional" json:"isActive" yaml:"isActive"`
 }
 

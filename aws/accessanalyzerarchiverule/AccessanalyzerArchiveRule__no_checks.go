@@ -76,6 +76,10 @@ func (j *jsiiProxy_AccessanalyzerArchiveRule) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_AccessanalyzerArchiveRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AccessanalyzerArchiveRule) validateSetIdParameters(val *string) error {
 	return nil
 }

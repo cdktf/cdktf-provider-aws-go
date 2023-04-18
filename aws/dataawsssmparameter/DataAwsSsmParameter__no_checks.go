@@ -64,6 +64,10 @@ func validateDataAwsSsmParameter_IsTerraformElementParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSsmParameter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSsmParameter) validateSetIdParameters(val *string) error {
 	return nil
 }

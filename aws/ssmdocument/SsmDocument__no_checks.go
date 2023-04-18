@@ -76,6 +76,10 @@ func (j *jsiiProxy_SsmDocument) validateSetContentParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_SsmDocument) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmDocument) validateSetDocumentFormatParameters(val *string) error {
 	return nil
 }

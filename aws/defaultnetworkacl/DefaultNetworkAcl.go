@@ -2,14 +2,14 @@ package defaultnetworkacl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/defaultnetworkacl/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/defaultnetworkacl/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl aws_default_network_acl}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/default_network_acl aws_default_network_acl}.
 type DefaultNetworkAcl interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type DefaultNetworkAcl interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultNetworkAclId() *string
 	SetDefaultNetworkAclId(val *string)
 	DefaultNetworkAclIdInput() *string
@@ -171,8 +171,8 @@ func (j *jsiiProxy_DefaultNetworkAcl) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DefaultNetworkAcl) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DefaultNetworkAcl) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -462,7 +462,7 @@ func (j *jsiiProxy_DefaultNetworkAcl) VpcId() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl aws_default_network_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/default_network_acl aws_default_network_acl} Resource.
 func NewDefaultNetworkAcl(scope constructs.Construct, id *string, config *DefaultNetworkAclConfig) DefaultNetworkAcl {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewDefaultNetworkAcl(scope constructs.Construct, id *string, config *Defaul
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/default_network_acl aws_default_network_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/default_network_acl aws_default_network_acl} Resource.
 func NewDefaultNetworkAcl_Override(d DefaultNetworkAcl, scope constructs.Construct, id *string, config *DefaultNetworkAclConfig) {
 	_init_.Initialize()
 
@@ -502,7 +502,10 @@ func (j *jsiiProxy_DefaultNetworkAcl)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DefaultNetworkAcl)SetCount(val *float64) {
+func (j *jsiiProxy_DefaultNetworkAcl)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

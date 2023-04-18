@@ -2,14 +2,14 @@ package locationgeofencecollection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/locationgeofencecollection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/locationgeofencecollection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/location_geofence_collection aws_location_geofence_collection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_geofence_collection aws_location_geofence_collection}.
 type LocationGeofenceCollection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -25,9 +25,9 @@ type LocationGeofenceCollection interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -191,8 +191,8 @@ func (j *jsiiProxy_LocationGeofenceCollection) ConstructNodeMetadata() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_LocationGeofenceCollection) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LocationGeofenceCollection) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -462,7 +462,7 @@ func (j *jsiiProxy_LocationGeofenceCollection) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/location_geofence_collection aws_location_geofence_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_geofence_collection aws_location_geofence_collection} Resource.
 func NewLocationGeofenceCollection(scope constructs.Construct, id *string, config *LocationGeofenceCollectionConfig) LocationGeofenceCollection {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewLocationGeofenceCollection(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/location_geofence_collection aws_location_geofence_collection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/location_geofence_collection aws_location_geofence_collection} Resource.
 func NewLocationGeofenceCollection_Override(l LocationGeofenceCollection, scope constructs.Construct, id *string, config *LocationGeofenceCollectionConfig) {
 	_init_.Initialize()
 
@@ -513,7 +513,10 @@ func (j *jsiiProxy_LocationGeofenceCollection)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LocationGeofenceCollection)SetCount(val *float64) {
+func (j *jsiiProxy_LocationGeofenceCollection)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

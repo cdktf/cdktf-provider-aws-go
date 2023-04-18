@@ -68,6 +68,10 @@ func (j *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateSetConnection
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateSetIdParameters(val *string) error {
 	return nil
 }

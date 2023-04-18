@@ -72,6 +72,10 @@ func validateDataAwsNatGateways_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsNatGateways) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNatGateways) validateSetIdParameters(val *string) error {
 	return nil
 }

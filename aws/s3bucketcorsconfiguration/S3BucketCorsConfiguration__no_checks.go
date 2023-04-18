@@ -76,6 +76,10 @@ func (j *jsiiProxy_S3BucketCorsConfiguration) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketCorsConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketCorsConfiguration) validateSetExpectedBucketOwnerParameters(val *string) error {
 	return nil
 }

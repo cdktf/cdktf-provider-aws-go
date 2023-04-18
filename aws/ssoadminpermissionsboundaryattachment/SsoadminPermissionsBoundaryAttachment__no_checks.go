@@ -72,6 +72,10 @@ func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateSetIdParameters(val *string) error {
 	return nil
 }

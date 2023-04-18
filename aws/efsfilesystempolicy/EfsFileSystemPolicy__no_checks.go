@@ -72,6 +72,10 @@ func (j *jsiiProxy_EfsFileSystemPolicy) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_EfsFileSystemPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EfsFileSystemPolicy) validateSetFileSystemIdParameters(val *string) error {
 	return nil
 }

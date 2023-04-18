@@ -80,6 +80,10 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) validateSetControlPan
 	return nil
 }
 
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) validateSetGatingControlsParameters(val *[]*string) error {
 	return nil
 }

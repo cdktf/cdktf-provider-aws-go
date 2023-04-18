@@ -2,14 +2,14 @@ package dataawscloudfrontlogdeliverycanonicaluserid
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawscloudfrontlogdeliverycanonicaluserid/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawscloudfrontlogdeliverycanonicaluserid/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/cloudfront_log_delivery_canonical_user_id aws_cloudfront_log_delivery_canonical_user_id}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/cloudfront_log_delivery_canonical_user_id aws_cloudfront_log_delivery_canonical_user_id}.
 type DataAwsCloudfrontLogDeliveryCanonicalUserId interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAwsCloudfrontLogDeliveryCanonicalUserId interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -121,8 +121,8 @@ func (j *jsiiProxy_DataAwsCloudfrontLogDeliveryCanonicalUserId) ConstructNodeMet
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontLogDeliveryCanonicalUserId) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsCloudfrontLogDeliveryCanonicalUserId) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -282,7 +282,7 @@ func (j *jsiiProxy_DataAwsCloudfrontLogDeliveryCanonicalUserId) TerraformResourc
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/cloudfront_log_delivery_canonical_user_id aws_cloudfront_log_delivery_canonical_user_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/cloudfront_log_delivery_canonical_user_id aws_cloudfront_log_delivery_canonical_user_id} Data Source.
 func NewDataAwsCloudfrontLogDeliveryCanonicalUserId(scope constructs.Construct, id *string, config *DataAwsCloudfrontLogDeliveryCanonicalUserIdConfig) DataAwsCloudfrontLogDeliveryCanonicalUserId {
 	_init_.Initialize()
 
@@ -300,7 +300,7 @@ func NewDataAwsCloudfrontLogDeliveryCanonicalUserId(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/cloudfront_log_delivery_canonical_user_id aws_cloudfront_log_delivery_canonical_user_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/cloudfront_log_delivery_canonical_user_id aws_cloudfront_log_delivery_canonical_user_id} Data Source.
 func NewDataAwsCloudfrontLogDeliveryCanonicalUserId_Override(d DataAwsCloudfrontLogDeliveryCanonicalUserId, scope constructs.Construct, id *string, config *DataAwsCloudfrontLogDeliveryCanonicalUserIdConfig) {
 	_init_.Initialize()
 
@@ -311,7 +311,10 @@ func NewDataAwsCloudfrontLogDeliveryCanonicalUserId_Override(d DataAwsCloudfront
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontLogDeliveryCanonicalUserId)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsCloudfrontLogDeliveryCanonicalUserId)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package transfersshkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/transfersshkey/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/transfersshkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/transfer_ssh_key aws_transfer_ssh_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/transfer_ssh_key aws_transfer_ssh_key}.
 type TransferSshKey interface {
 	cdktf.TerraformResource
 	Body() *string
@@ -24,9 +24,9 @@ type TransferSshKey interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -164,8 +164,8 @@ func (j *jsiiProxy_TransferSshKey) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_TransferSshKey) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_TransferSshKey) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -355,7 +355,7 @@ func (j *jsiiProxy_TransferSshKey) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/transfer_ssh_key aws_transfer_ssh_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/transfer_ssh_key aws_transfer_ssh_key} Resource.
 func NewTransferSshKey(scope constructs.Construct, id *string, config *TransferSshKeyConfig) TransferSshKey {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewTransferSshKey(scope constructs.Construct, id *string, config *TransferS
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/transfer_ssh_key aws_transfer_ssh_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/transfer_ssh_key aws_transfer_ssh_key} Resource.
 func NewTransferSshKey_Override(t TransferSshKey, scope constructs.Construct, id *string, config *TransferSshKeyConfig) {
 	_init_.Initialize()
 
@@ -406,7 +406,10 @@ func (j *jsiiProxy_TransferSshKey)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_TransferSshKey)SetCount(val *float64) {
+func (j *jsiiProxy_TransferSshKey)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -84,6 +84,10 @@ func (j *jsiiProxy_SagemakerModel) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerModel) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerModel) validateSetEnableNetworkIsolationParameters(val interface{}) error {
 	return nil
 }

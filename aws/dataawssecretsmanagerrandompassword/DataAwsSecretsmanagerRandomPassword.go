@@ -2,14 +2,14 @@ package dataawssecretsmanagerrandompassword
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawssecretsmanagerrandompassword/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssecretsmanagerrandompassword/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/secretsmanager_random_password aws_secretsmanager_random_password}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password}.
 type DataAwsSecretsmanagerRandomPassword interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAwsSecretsmanagerRandomPassword interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -474,7 +474,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/secretsmanager_random_password aws_secretsmanager_random_password} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password} Data Source.
 func NewDataAwsSecretsmanagerRandomPassword(scope constructs.Construct, id *string, config *DataAwsSecretsmanagerRandomPasswordConfig) DataAwsSecretsmanagerRandomPassword {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewDataAwsSecretsmanagerRandomPassword(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/secretsmanager_random_password aws_secretsmanager_random_password} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password} Data Source.
 func NewDataAwsSecretsmanagerRandomPassword_Override(d DataAwsSecretsmanagerRandomPassword, scope constructs.Construct, id *string, config *DataAwsSecretsmanagerRandomPasswordConfig) {
 	_init_.Initialize()
 
@@ -503,7 +503,10 @@ func NewDataAwsSecretsmanagerRandomPassword_Override(d DataAwsSecretsmanagerRand
 	)
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

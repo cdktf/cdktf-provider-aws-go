@@ -2,14 +2,14 @@ package lakeformationlftag
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/lakeformationlftag/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/lakeformationlftag/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/lakeformation_lf_tag aws_lakeformation_lf_tag}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lakeformation_lf_tag aws_lakeformation_lf_tag}.
 type LakeformationLfTag interface {
 	cdktf.TerraformResource
 	CatalogId() *string
@@ -24,9 +24,9 @@ type LakeformationLfTag interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_LakeformationLfTag) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_LakeformationLfTag) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LakeformationLfTag) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_LakeformationLfTag) ValuesInput() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lakeformation_lf_tag aws_lakeformation_lf_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lakeformation_lf_tag aws_lakeformation_lf_tag} Resource.
 func NewLakeformationLfTag(scope constructs.Construct, id *string, config *LakeformationLfTagConfig) LakeformationLfTag {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewLakeformationLfTag(scope constructs.Construct, id *string, config *Lakef
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lakeformation_lf_tag aws_lakeformation_lf_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lakeformation_lf_tag aws_lakeformation_lf_tag} Resource.
 func NewLakeformationLfTag_Override(l LakeformationLfTag, scope constructs.Construct, id *string, config *LakeformationLfTagConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_LakeformationLfTag)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LakeformationLfTag)SetCount(val *float64) {
+func (j *jsiiProxy_LakeformationLfTag)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

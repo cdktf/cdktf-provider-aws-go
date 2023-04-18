@@ -2,14 +2,14 @@ package cloudcontrolapiresource
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/cloudcontrolapiresource/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudcontrolapiresource/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudcontrolapi_resource aws_cloudcontrolapi_resource}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudcontrolapi_resource aws_cloudcontrolapi_resource}.
 type CloudcontrolapiResource interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CloudcontrolapiResource interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -158,8 +158,8 @@ func (j *jsiiProxy_CloudcontrolapiResource) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudcontrolapiResource) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -439,7 +439,7 @@ func (j *jsiiProxy_CloudcontrolapiResource) TypeVersionIdInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudcontrolapi_resource aws_cloudcontrolapi_resource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudcontrolapi_resource aws_cloudcontrolapi_resource} Resource.
 func NewCloudcontrolapiResource(scope constructs.Construct, id *string, config *CloudcontrolapiResourceConfig) CloudcontrolapiResource {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewCloudcontrolapiResource(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudcontrolapi_resource aws_cloudcontrolapi_resource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudcontrolapi_resource aws_cloudcontrolapi_resource} Resource.
 func NewCloudcontrolapiResource_Override(c CloudcontrolapiResource, scope constructs.Construct, id *string, config *CloudcontrolapiResourceConfig) {
 	_init_.Initialize()
 
@@ -479,7 +479,10 @@ func (j *jsiiProxy_CloudcontrolapiResource)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudcontrolapiResource)SetCount(val *float64) {
+func (j *jsiiProxy_CloudcontrolapiResource)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

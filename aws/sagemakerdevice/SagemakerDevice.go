@@ -2,14 +2,14 @@ package sagemakerdevice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/sagemakerdevice/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerdevice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_device aws_sagemaker_device}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sagemaker_device aws_sagemaker_device}.
 type SagemakerDevice interface {
 	cdktf.TerraformResource
 	AgentVersion() *string
@@ -23,9 +23,9 @@ type SagemakerDevice interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -163,8 +163,8 @@ func (j *jsiiProxy_SagemakerDevice) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerDevice) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SagemakerDevice) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -354,7 +354,7 @@ func (j *jsiiProxy_SagemakerDevice) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_device aws_sagemaker_device} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sagemaker_device aws_sagemaker_device} Resource.
 func NewSagemakerDevice(scope constructs.Construct, id *string, config *SagemakerDeviceConfig) SagemakerDevice {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewSagemakerDevice(scope constructs.Construct, id *string, config *Sagemake
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_device aws_sagemaker_device} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sagemaker_device aws_sagemaker_device} Resource.
 func NewSagemakerDevice_Override(s SagemakerDevice, scope constructs.Construct, id *string, config *SagemakerDeviceConfig) {
 	_init_.Initialize()
 
@@ -394,7 +394,10 @@ func (j *jsiiProxy_SagemakerDevice)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerDevice)SetCount(val *float64) {
+func (j *jsiiProxy_SagemakerDevice)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

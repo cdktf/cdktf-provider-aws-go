@@ -68,6 +68,10 @@ func (j *jsiiProxy_AcmpcaPolicy) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_AcmpcaPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AcmpcaPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

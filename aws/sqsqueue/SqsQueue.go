@@ -2,14 +2,14 @@ package sqsqueue
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/sqsqueue/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/sqsqueue/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue aws_sqs_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sqs_queue aws_sqs_queue}.
 type SqsQueue interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -25,9 +25,9 @@ type SqsQueue interface {
 	SetContentBasedDeduplication(val interface{})
 	ContentBasedDeduplicationInput() interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DeduplicationScope() *string
 	SetDeduplicationScope(val *string)
 	DeduplicationScopeInput() *string
@@ -243,8 +243,8 @@ func (j *jsiiProxy_SqsQueue) ContentBasedDeduplicationInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SqsQueue) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SqsQueue) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -764,7 +764,7 @@ func (j *jsiiProxy_SqsQueue) VisibilityTimeoutSecondsInput() *float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue aws_sqs_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sqs_queue aws_sqs_queue} Resource.
 func NewSqsQueue(scope constructs.Construct, id *string, config *SqsQueueConfig) SqsQueue {
 	_init_.Initialize()
 
@@ -782,7 +782,7 @@ func NewSqsQueue(scope constructs.Construct, id *string, config *SqsQueueConfig)
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue aws_sqs_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sqs_queue aws_sqs_queue} Resource.
 func NewSqsQueue_Override(s SqsQueue, scope constructs.Construct, id *string, config *SqsQueueConfig) {
 	_init_.Initialize()
 
@@ -815,7 +815,10 @@ func (j *jsiiProxy_SqsQueue)SetContentBasedDeduplication(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueue)SetCount(val *float64) {
+func (j *jsiiProxy_SqsQueue)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

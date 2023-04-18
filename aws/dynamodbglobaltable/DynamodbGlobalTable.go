@@ -2,14 +2,14 @@ package dynamodbglobaltable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dynamodbglobaltable/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dynamodbglobaltable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_global_table aws_dynamodb_global_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dynamodb_global_table aws_dynamodb_global_table}.
 type DynamodbGlobalTable interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type DynamodbGlobalTable interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -156,8 +156,8 @@ func (j *jsiiProxy_DynamodbGlobalTable) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_DynamodbGlobalTable) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DynamodbGlobalTable) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -367,7 +367,7 @@ func (j *jsiiProxy_DynamodbGlobalTable) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_global_table aws_dynamodb_global_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dynamodb_global_table aws_dynamodb_global_table} Resource.
 func NewDynamodbGlobalTable(scope constructs.Construct, id *string, config *DynamodbGlobalTableConfig) DynamodbGlobalTable {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewDynamodbGlobalTable(scope constructs.Construct, id *string, config *Dyna
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/dynamodb_global_table aws_dynamodb_global_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dynamodb_global_table aws_dynamodb_global_table} Resource.
 func NewDynamodbGlobalTable_Override(d DynamodbGlobalTable, scope constructs.Construct, id *string, config *DynamodbGlobalTableConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_DynamodbGlobalTable)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DynamodbGlobalTable)SetCount(val *float64) {
+func (j *jsiiProxy_DynamodbGlobalTable)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

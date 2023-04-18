@@ -72,6 +72,10 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccess) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogOrganizationsAccess) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogOrganizationsAccess) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

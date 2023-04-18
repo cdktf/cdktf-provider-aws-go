@@ -72,6 +72,10 @@ func (j *jsiiProxy_SagemakerDeviceFleet) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerDeviceFleet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerDeviceFleet) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

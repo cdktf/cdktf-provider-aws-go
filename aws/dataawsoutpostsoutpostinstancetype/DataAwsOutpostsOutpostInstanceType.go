@@ -2,14 +2,14 @@ package dataawsoutpostsoutpostinstancetype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsoutpostsoutpostinstancetype/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsoutpostsoutpostinstancetype/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpost_instance_type aws_outposts_outpost_instance_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/outposts_outpost_instance_type aws_outposts_outpost_instance_type}.
 type DataAwsOutpostsOutpostInstanceType interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -20,9 +20,9 @@ type DataAwsOutpostsOutpostInstanceType interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -148,8 +148,8 @@ func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceType) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceType) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceType) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -329,7 +329,7 @@ func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceType) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpost_instance_type aws_outposts_outpost_instance_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/outposts_outpost_instance_type aws_outposts_outpost_instance_type} Data Source.
 func NewDataAwsOutpostsOutpostInstanceType(scope constructs.Construct, id *string, config *DataAwsOutpostsOutpostInstanceTypeConfig) DataAwsOutpostsOutpostInstanceType {
 	_init_.Initialize()
 
@@ -347,7 +347,7 @@ func NewDataAwsOutpostsOutpostInstanceType(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/outposts_outpost_instance_type aws_outposts_outpost_instance_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/outposts_outpost_instance_type aws_outposts_outpost_instance_type} Data Source.
 func NewDataAwsOutpostsOutpostInstanceType_Override(d DataAwsOutpostsOutpostInstanceType, scope constructs.Construct, id *string, config *DataAwsOutpostsOutpostInstanceTypeConfig) {
 	_init_.Initialize()
 
@@ -369,7 +369,10 @@ func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceType)SetArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceType)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceType)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

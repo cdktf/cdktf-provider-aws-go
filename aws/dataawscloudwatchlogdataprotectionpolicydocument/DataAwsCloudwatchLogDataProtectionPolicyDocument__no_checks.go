@@ -68,6 +68,10 @@ func validateDataAwsCloudwatchLogDataProtectionPolicyDocument_IsTerraformElement
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudwatchLogDataProtectionPolicyDocument) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

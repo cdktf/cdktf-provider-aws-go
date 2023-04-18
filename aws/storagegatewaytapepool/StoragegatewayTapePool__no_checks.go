@@ -68,6 +68,10 @@ func (j *jsiiProxy_StoragegatewayTapePool) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_StoragegatewayTapePool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewayTapePool) validateSetIdParameters(val *string) error {
 	return nil
 }

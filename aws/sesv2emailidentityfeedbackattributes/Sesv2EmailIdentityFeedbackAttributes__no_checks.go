@@ -68,6 +68,10 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) validateSetEmailForwardingEnabledParameters(val interface{}) error {
 	return nil
 }

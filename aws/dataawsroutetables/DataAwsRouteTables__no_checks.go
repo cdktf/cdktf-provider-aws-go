@@ -72,6 +72,10 @@ func validateDataAwsRouteTables_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRouteTables) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRouteTables) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataawsrdsreservedinstanceoffering
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsrdsreservedinstanceoffering/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsrdsreservedinstanceoffering/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/rds_reserved_instance_offering aws_rds_reserved_instance_offering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/rds_reserved_instance_offering aws_rds_reserved_instance_offering}.
 type DataAwsRdsReservedInstanceOffering interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAwsRdsReservedInstanceOffering interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CurrencyCode() *string
 	DbInstanceClass() *string
 	SetDbInstanceClass(val *string)
@@ -135,8 +135,8 @@ func (j *jsiiProxy_DataAwsRdsReservedInstanceOffering) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRdsReservedInstanceOffering) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsRdsReservedInstanceOffering) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -406,7 +406,7 @@ func (j *jsiiProxy_DataAwsRdsReservedInstanceOffering) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/rds_reserved_instance_offering aws_rds_reserved_instance_offering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/rds_reserved_instance_offering aws_rds_reserved_instance_offering} Data Source.
 func NewDataAwsRdsReservedInstanceOffering(scope constructs.Construct, id *string, config *DataAwsRdsReservedInstanceOfferingConfig) DataAwsRdsReservedInstanceOffering {
 	_init_.Initialize()
 
@@ -424,7 +424,7 @@ func NewDataAwsRdsReservedInstanceOffering(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/rds_reserved_instance_offering aws_rds_reserved_instance_offering} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/rds_reserved_instance_offering aws_rds_reserved_instance_offering} Data Source.
 func NewDataAwsRdsReservedInstanceOffering_Override(d DataAwsRdsReservedInstanceOffering, scope constructs.Construct, id *string, config *DataAwsRdsReservedInstanceOfferingConfig) {
 	_init_.Initialize()
 
@@ -435,7 +435,10 @@ func NewDataAwsRdsReservedInstanceOffering_Override(d DataAwsRdsReservedInstance
 	)
 }
 
-func (j *jsiiProxy_DataAwsRdsReservedInstanceOffering)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsRdsReservedInstanceOffering)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

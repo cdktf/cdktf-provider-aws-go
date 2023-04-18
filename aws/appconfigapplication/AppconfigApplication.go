@@ -2,14 +2,14 @@ package appconfigapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/appconfigapplication/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/appconfigapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/appconfig_application aws_appconfig_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appconfig_application aws_appconfig_application}.
 type AppconfigApplication interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type AppconfigApplication interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -161,8 +161,8 @@ func (j *jsiiProxy_AppconfigApplication) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_AppconfigApplication) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppconfigApplication) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -392,7 +392,7 @@ func (j *jsiiProxy_AppconfigApplication) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/appconfig_application aws_appconfig_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appconfig_application aws_appconfig_application} Resource.
 func NewAppconfigApplication(scope constructs.Construct, id *string, config *AppconfigApplicationConfig) AppconfigApplication {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewAppconfigApplication(scope constructs.Construct, id *string, config *App
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/appconfig_application aws_appconfig_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appconfig_application aws_appconfig_application} Resource.
 func NewAppconfigApplication_Override(a AppconfigApplication, scope constructs.Construct, id *string, config *AppconfigApplicationConfig) {
 	_init_.Initialize()
 
@@ -432,7 +432,10 @@ func (j *jsiiProxy_AppconfigApplication)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppconfigApplication)SetCount(val *float64) {
+func (j *jsiiProxy_AppconfigApplication)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

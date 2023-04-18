@@ -72,6 +72,10 @@ func (j *jsiiProxy_SchedulerScheduleGroup) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_SchedulerScheduleGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SchedulerScheduleGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

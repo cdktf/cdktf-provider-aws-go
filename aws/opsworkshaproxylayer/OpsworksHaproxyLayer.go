@@ -2,14 +2,14 @@ package opsworkshaproxylayer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/opsworkshaproxylayer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/opsworkshaproxylayer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/opsworks_haproxy_layer aws_opsworks_haproxy_layer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opsworks_haproxy_layer aws_opsworks_haproxy_layer}.
 type OpsworksHaproxyLayer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -33,9 +33,9 @@ type OpsworksHaproxyLayer interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomConfigureRecipes() *[]*string
 	SetCustomConfigureRecipes(val *[]*string)
 	CustomConfigureRecipesInput() *[]*string
@@ -344,8 +344,8 @@ func (j *jsiiProxy_OpsworksHaproxyLayer) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksHaproxyLayer) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OpsworksHaproxyLayer) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -1015,7 +1015,7 @@ func (j *jsiiProxy_OpsworksHaproxyLayer) UseEbsOptimizedInstancesInput() interfa
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/opsworks_haproxy_layer aws_opsworks_haproxy_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opsworks_haproxy_layer aws_opsworks_haproxy_layer} Resource.
 func NewOpsworksHaproxyLayer(scope constructs.Construct, id *string, config *OpsworksHaproxyLayerConfig) OpsworksHaproxyLayer {
 	_init_.Initialize()
 
@@ -1033,7 +1033,7 @@ func NewOpsworksHaproxyLayer(scope constructs.Construct, id *string, config *Ops
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/opsworks_haproxy_layer aws_opsworks_haproxy_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opsworks_haproxy_layer aws_opsworks_haproxy_layer} Resource.
 func NewOpsworksHaproxyLayer_Override(o OpsworksHaproxyLayer, scope constructs.Construct, id *string, config *OpsworksHaproxyLayerConfig) {
 	_init_.Initialize()
 
@@ -1088,7 +1088,10 @@ func (j *jsiiProxy_OpsworksHaproxyLayer)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_OpsworksHaproxyLayer)SetCount(val *float64) {
+func (j *jsiiProxy_OpsworksHaproxyLayer)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

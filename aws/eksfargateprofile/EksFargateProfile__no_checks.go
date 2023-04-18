@@ -80,6 +80,10 @@ func (j *jsiiProxy_EksFargateProfile) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_EksFargateProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EksFargateProfile) validateSetFargateProfileNameParameters(val *string) error {
 	return nil
 }

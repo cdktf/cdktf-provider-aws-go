@@ -68,6 +68,10 @@ func (j *jsiiProxy_EbsDefaultKmsKey) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_EbsDefaultKmsKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EbsDefaultKmsKey) validateSetIdParameters(val *string) error {
 	return nil
 }

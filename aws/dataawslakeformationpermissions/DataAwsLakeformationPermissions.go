@@ -2,14 +2,14 @@ package dataawslakeformationpermissions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslakeformationpermissions/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslakeformationpermissions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/lakeformation_permissions aws_lakeformation_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/lakeformation_permissions aws_lakeformation_permissions}.
 type DataAwsLakeformationPermissions interface {
 	cdktf.TerraformDataSource
 	CatalogId() *string
@@ -23,9 +23,9 @@ type DataAwsLakeformationPermissions interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Database() DataAwsLakeformationPermissionsDatabaseOutputReference
 	DatabaseInput() *DataAwsLakeformationPermissionsDatabase
 	DataLocation() DataAwsLakeformationPermissionsDataLocationOutputReference
@@ -194,8 +194,8 @@ func (j *jsiiProxy_DataAwsLakeformationPermissions) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLakeformationPermissions) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsLakeformationPermissions) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -495,7 +495,7 @@ func (j *jsiiProxy_DataAwsLakeformationPermissions) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/lakeformation_permissions aws_lakeformation_permissions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/lakeformation_permissions aws_lakeformation_permissions} Data Source.
 func NewDataAwsLakeformationPermissions(scope constructs.Construct, id *string, config *DataAwsLakeformationPermissionsConfig) DataAwsLakeformationPermissions {
 	_init_.Initialize()
 
@@ -513,7 +513,7 @@ func NewDataAwsLakeformationPermissions(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/lakeformation_permissions aws_lakeformation_permissions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/lakeformation_permissions aws_lakeformation_permissions} Data Source.
 func NewDataAwsLakeformationPermissions_Override(d DataAwsLakeformationPermissions, scope constructs.Construct, id *string, config *DataAwsLakeformationPermissionsConfig) {
 	_init_.Initialize()
 
@@ -546,7 +546,10 @@ func (j *jsiiProxy_DataAwsLakeformationPermissions)SetCatalogResource(val interf
 	)
 }
 
-func (j *jsiiProxy_DataAwsLakeformationPermissions)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsLakeformationPermissions)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

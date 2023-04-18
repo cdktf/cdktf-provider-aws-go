@@ -2,14 +2,14 @@ package apigatewaydeployment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/apigatewaydeployment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/apigatewaydeployment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_deployment aws_api_gateway_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment}.
 type ApiGatewayDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ApiGatewayDeployment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -161,8 +161,8 @@ func (j *jsiiProxy_ApiGatewayDeployment) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_ApiGatewayDeployment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ApiGatewayDeployment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -462,7 +462,7 @@ func (j *jsiiProxy_ApiGatewayDeployment) VariablesInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_deployment aws_api_gateway_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment} Resource.
 func NewApiGatewayDeployment(scope constructs.Construct, id *string, config *ApiGatewayDeploymentConfig) ApiGatewayDeployment {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewApiGatewayDeployment(scope constructs.Construct, id *string, config *Api
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/api_gateway_deployment aws_api_gateway_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment} Resource.
 func NewApiGatewayDeployment_Override(a ApiGatewayDeployment, scope constructs.Construct, id *string, config *ApiGatewayDeploymentConfig) {
 	_init_.Initialize()
 
@@ -502,7 +502,10 @@ func (j *jsiiProxy_ApiGatewayDeployment)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ApiGatewayDeployment)SetCount(val *float64) {
+func (j *jsiiProxy_ApiGatewayDeployment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

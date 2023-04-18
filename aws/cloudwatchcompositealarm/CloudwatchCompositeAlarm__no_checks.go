@@ -88,6 +88,10 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchCompositeAlarm) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchCompositeAlarm) validateSetIdParameters(val *string) error {
 	return nil
 }

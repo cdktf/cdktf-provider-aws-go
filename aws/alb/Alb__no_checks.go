@@ -80,6 +80,10 @@ func (j *jsiiProxy_Alb) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Alb) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Alb) validateSetCustomerOwnedIpv4PoolParameters(val *string) error {
 	return nil
 }

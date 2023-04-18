@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsEcsService) validateSetClusterArnParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEcsService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEcsService) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func validateDataAwsNetworkmanagerCoreNetworkPolicyDocument_IsTerraformElementPa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) validateSetIdParameters(val *string) error {
 	return nil
 }

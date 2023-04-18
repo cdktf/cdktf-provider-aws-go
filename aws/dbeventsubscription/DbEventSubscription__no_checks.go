@@ -72,6 +72,10 @@ func (j *jsiiProxy_DbEventSubscription) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_DbEventSubscription) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbEventSubscription) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

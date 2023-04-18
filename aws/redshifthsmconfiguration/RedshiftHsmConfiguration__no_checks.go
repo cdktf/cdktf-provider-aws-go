@@ -68,6 +68,10 @@ func (j *jsiiProxy_RedshiftHsmConfiguration) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftHsmConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftHsmConfiguration) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

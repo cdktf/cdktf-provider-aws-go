@@ -64,6 +64,10 @@ func validateDataAwsElasticacheSubnetGroup_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsElasticacheSubnetGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsElasticacheSubnetGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

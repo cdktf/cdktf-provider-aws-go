@@ -96,6 +96,10 @@ func (j *jsiiProxy_Sesv2ConfigurationSet) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_Sesv2ConfigurationSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Sesv2ConfigurationSet) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataAwsMskKafkaVersion_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsMskKafkaVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsMskKafkaVersion) validateSetIdParameters(val *string) error {
 	return nil
 }

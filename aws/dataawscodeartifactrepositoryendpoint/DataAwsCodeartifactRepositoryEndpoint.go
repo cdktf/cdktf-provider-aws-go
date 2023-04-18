@@ -2,14 +2,14 @@ package dataawscodeartifactrepositoryendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawscodeartifactrepositoryendpoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawscodeartifactrepositoryendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint aws_codeartifact_repository_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/codeartifact_repository_endpoint aws_codeartifact_repository_endpoint}.
 type DataAwsCodeartifactRepositoryEndpoint interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAwsCodeartifactRepositoryEndpoint interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataAwsCodeartifactRepositoryEndpoint) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCodeartifactRepositoryEndpoint) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsCodeartifactRepositoryEndpoint) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -362,7 +362,7 @@ func (j *jsiiProxy_DataAwsCodeartifactRepositoryEndpoint) TerraformResourceType(
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint aws_codeartifact_repository_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/codeartifact_repository_endpoint aws_codeartifact_repository_endpoint} Data Source.
 func NewDataAwsCodeartifactRepositoryEndpoint(scope constructs.Construct, id *string, config *DataAwsCodeartifactRepositoryEndpointConfig) DataAwsCodeartifactRepositoryEndpoint {
 	_init_.Initialize()
 
@@ -380,7 +380,7 @@ func NewDataAwsCodeartifactRepositoryEndpoint(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/codeartifact_repository_endpoint aws_codeartifact_repository_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/codeartifact_repository_endpoint aws_codeartifact_repository_endpoint} Data Source.
 func NewDataAwsCodeartifactRepositoryEndpoint_Override(d DataAwsCodeartifactRepositoryEndpoint, scope constructs.Construct, id *string, config *DataAwsCodeartifactRepositoryEndpointConfig) {
 	_init_.Initialize()
 
@@ -391,7 +391,10 @@ func NewDataAwsCodeartifactRepositoryEndpoint_Override(d DataAwsCodeartifactRepo
 	)
 }
 
-func (j *jsiiProxy_DataAwsCodeartifactRepositoryEndpoint)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsCodeartifactRepositoryEndpoint)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

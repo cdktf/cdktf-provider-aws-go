@@ -76,6 +76,10 @@ func (j *jsiiProxy_GlobalacceleratorCustomRoutingAccelerator) validateSetConnect
 	return nil
 }
 
+func (j *jsiiProxy_GlobalacceleratorCustomRoutingAccelerator) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlobalacceleratorCustomRoutingAccelerator) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

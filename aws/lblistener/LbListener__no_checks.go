@@ -84,6 +84,10 @@ func (j *jsiiProxy_LbListener) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_LbListener) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbListener) validateSetIdParameters(val *string) error {
 	return nil
 }

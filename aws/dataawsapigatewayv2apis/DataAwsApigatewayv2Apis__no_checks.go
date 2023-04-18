@@ -64,6 +64,10 @@ func validateDataAwsApigatewayv2Apis_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsApigatewayv2Apis) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsApigatewayv2Apis) validateSetIdParameters(val *string) error {
 	return nil
 }

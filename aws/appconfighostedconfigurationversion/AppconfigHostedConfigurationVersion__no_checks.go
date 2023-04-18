@@ -84,6 +84,10 @@ func (j *jsiiProxy_AppconfigHostedConfigurationVersion) validateSetContentTypePa
 	return nil
 }
 
+func (j *jsiiProxy_AppconfigHostedConfigurationVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppconfigHostedConfigurationVersion) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

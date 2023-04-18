@@ -72,6 +72,10 @@ func (j *jsiiProxy_MediaConvertQueue) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_MediaConvertQueue) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaConvertQueue) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

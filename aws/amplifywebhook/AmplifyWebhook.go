@@ -2,14 +2,14 @@ package amplifywebhook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/amplifywebhook/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/amplifywebhook/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/amplify_webhook aws_amplify_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/amplify_webhook aws_amplify_webhook}.
 type AmplifyWebhook interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -28,9 +28,9 @@ type AmplifyWebhook interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -197,8 +197,8 @@ func (j *jsiiProxy_AmplifyWebhook) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_AmplifyWebhook) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AmplifyWebhook) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -378,7 +378,7 @@ func (j *jsiiProxy_AmplifyWebhook) Url() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/amplify_webhook aws_amplify_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/amplify_webhook aws_amplify_webhook} Resource.
 func NewAmplifyWebhook(scope constructs.Construct, id *string, config *AmplifyWebhookConfig) AmplifyWebhook {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewAmplifyWebhook(scope constructs.Construct, id *string, config *AmplifyWe
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/amplify_webhook aws_amplify_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/amplify_webhook aws_amplify_webhook} Resource.
 func NewAmplifyWebhook_Override(a AmplifyWebhook, scope constructs.Construct, id *string, config *AmplifyWebhookConfig) {
 	_init_.Initialize()
 
@@ -440,7 +440,10 @@ func (j *jsiiProxy_AmplifyWebhook)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AmplifyWebhook)SetCount(val *float64) {
+func (j *jsiiProxy_AmplifyWebhook)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

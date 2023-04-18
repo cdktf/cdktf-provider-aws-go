@@ -72,6 +72,10 @@ func (j *jsiiProxy_NeptuneClusterSnapshot) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_NeptuneClusterSnapshot) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NeptuneClusterSnapshot) validateSetDbClusterIdentifierParameters(val *string) error {
 	return nil
 }

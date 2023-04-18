@@ -2,14 +2,14 @@ package docdbcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/docdbcluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/docdbcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster aws_docdb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/docdb_cluster aws_docdb_cluster}.
 type DocdbCluster interface {
 	cdktf.TerraformResource
 	ApplyImmediately() interface{}
@@ -41,9 +41,9 @@ type DocdbCluster interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DbClusterParameterGroupName() *string
 	SetDbClusterParameterGroupName(val *string)
 	DbClusterParameterGroupNameInput() *string
@@ -388,8 +388,8 @@ func (j *jsiiProxy_DocdbCluster) ConstructNodeMetadata() *map[string]interface{}
 	return returns
 }
 
-func (j *jsiiProxy_DocdbCluster) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DocdbCluster) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -989,7 +989,7 @@ func (j *jsiiProxy_DocdbCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster aws_docdb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
 func NewDocdbCluster(scope constructs.Construct, id *string, config *DocdbClusterConfig) DocdbCluster {
 	_init_.Initialize()
 
@@ -1007,7 +1007,7 @@ func NewDocdbCluster(scope constructs.Construct, id *string, config *DocdbCluste
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/docdb_cluster aws_docdb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
 func NewDocdbCluster_Override(d DocdbCluster, scope constructs.Construct, id *string, config *DocdbClusterConfig) {
 	_init_.Initialize()
 
@@ -1095,7 +1095,10 @@ func (j *jsiiProxy_DocdbCluster)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DocdbCluster)SetCount(val *float64) {
+func (j *jsiiProxy_DocdbCluster)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

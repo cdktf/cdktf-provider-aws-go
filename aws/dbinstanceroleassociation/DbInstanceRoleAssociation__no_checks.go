@@ -68,6 +68,10 @@ func (j *jsiiProxy_DbInstanceRoleAssociation) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DbInstanceRoleAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbInstanceRoleAssociation) validateSetDbInstanceIdentifierParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataawsappmeshroute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsappmeshroute/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsappmeshroute/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/appmesh_route aws_appmesh_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/appmesh_route aws_appmesh_route}.
 type DataAwsAppmeshRoute interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -18,9 +18,9 @@ type DataAwsAppmeshRoute interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -149,8 +149,8 @@ func (j *jsiiProxy_DataAwsAppmeshRoute) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAppmeshRoute) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsAppmeshRoute) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -430,7 +430,7 @@ func (j *jsiiProxy_DataAwsAppmeshRoute) VirtualRouterNameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/appmesh_route aws_appmesh_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/appmesh_route aws_appmesh_route} Data Source.
 func NewDataAwsAppmeshRoute(scope constructs.Construct, id *string, config *DataAwsAppmeshRouteConfig) DataAwsAppmeshRoute {
 	_init_.Initialize()
 
@@ -448,7 +448,7 @@ func NewDataAwsAppmeshRoute(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/appmesh_route aws_appmesh_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/appmesh_route aws_appmesh_route} Data Source.
 func NewDataAwsAppmeshRoute_Override(d DataAwsAppmeshRoute, scope constructs.Construct, id *string, config *DataAwsAppmeshRouteConfig) {
 	_init_.Initialize()
 
@@ -459,7 +459,10 @@ func NewDataAwsAppmeshRoute_Override(d DataAwsAppmeshRoute, scope constructs.Con
 	)
 }
 
-func (j *jsiiProxy_DataAwsAppmeshRoute)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsAppmeshRoute)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

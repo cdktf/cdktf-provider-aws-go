@@ -2,14 +2,14 @@ package sesdomainmailfrom
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/sesdomainmailfrom/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/sesdomainmailfrom/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ses_domain_mail_from aws_ses_domain_mail_from}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_domain_mail_from aws_ses_domain_mail_from}.
 type SesDomainMailFrom interface {
 	cdktf.TerraformResource
 	BehaviorOnMxFailure() *string
@@ -24,9 +24,9 @@ type SesDomainMailFrom interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_SesDomainMailFrom) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_SesDomainMailFrom) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SesDomainMailFrom) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_SesDomainMailFrom) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ses_domain_mail_from aws_ses_domain_mail_from} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_domain_mail_from aws_ses_domain_mail_from} Resource.
 func NewSesDomainMailFrom(scope constructs.Construct, id *string, config *SesDomainMailFromConfig) SesDomainMailFrom {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewSesDomainMailFrom(scope constructs.Construct, id *string, config *SesDom
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ses_domain_mail_from aws_ses_domain_mail_from} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_domain_mail_from aws_ses_domain_mail_from} Resource.
 func NewSesDomainMailFrom_Override(s SesDomainMailFrom, scope constructs.Construct, id *string, config *SesDomainMailFromConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_SesDomainMailFrom)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SesDomainMailFrom)SetCount(val *float64) {
+func (j *jsiiProxy_SesDomainMailFrom)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

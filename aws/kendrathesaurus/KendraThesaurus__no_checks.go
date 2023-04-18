@@ -76,6 +76,10 @@ func (j *jsiiProxy_KendraThesaurus) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_KendraThesaurus) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KendraThesaurus) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

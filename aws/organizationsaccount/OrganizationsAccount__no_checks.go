@@ -72,6 +72,10 @@ func (j *jsiiProxy_OrganizationsAccount) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_OrganizationsAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OrganizationsAccount) validateSetCreateGovcloudParameters(val interface{}) error {
 	return nil
 }

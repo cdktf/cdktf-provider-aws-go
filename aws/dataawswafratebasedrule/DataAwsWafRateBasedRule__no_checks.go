@@ -64,6 +64,10 @@ func validateDataAwsWafRateBasedRule_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsWafRateBasedRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsWafRateBasedRule) validateSetIdParameters(val *string) error {
 	return nil
 }

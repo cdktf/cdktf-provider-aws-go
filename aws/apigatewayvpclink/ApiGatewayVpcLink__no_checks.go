@@ -68,6 +68,10 @@ func (j *jsiiProxy_ApiGatewayVpcLink) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_ApiGatewayVpcLink) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApiGatewayVpcLink) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

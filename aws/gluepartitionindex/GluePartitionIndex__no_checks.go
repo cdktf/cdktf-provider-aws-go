@@ -80,6 +80,10 @@ func (j *jsiiProxy_GluePartitionIndex) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_GluePartitionIndex) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GluePartitionIndex) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

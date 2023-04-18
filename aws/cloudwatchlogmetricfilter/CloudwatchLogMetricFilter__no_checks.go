@@ -72,6 +72,10 @@ func (j *jsiiProxy_CloudwatchLogMetricFilter) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchLogMetricFilter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchLogMetricFilter) validateSetIdParameters(val *string) error {
 	return nil
 }

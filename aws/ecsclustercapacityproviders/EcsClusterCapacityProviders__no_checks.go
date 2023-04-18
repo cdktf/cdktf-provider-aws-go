@@ -80,6 +80,10 @@ func (j *jsiiProxy_EcsClusterCapacityProviders) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_EcsClusterCapacityProviders) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsClusterCapacityProviders) validateSetIdParameters(val *string) error {
 	return nil
 }

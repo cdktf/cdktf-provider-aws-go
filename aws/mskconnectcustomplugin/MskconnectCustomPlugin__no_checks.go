@@ -80,6 +80,10 @@ func (j *jsiiProxy_MskconnectCustomPlugin) validateSetContentTypeParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_MskconnectCustomPlugin) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MskconnectCustomPlugin) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

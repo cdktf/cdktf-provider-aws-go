@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsArn) validateSetArnParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsArn) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsArn) validateSetIdParameters(val *string) error {
 	return nil
 }

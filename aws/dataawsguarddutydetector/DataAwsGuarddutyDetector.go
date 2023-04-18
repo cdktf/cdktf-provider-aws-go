@@ -2,14 +2,14 @@ package dataawsguarddutydetector
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsguarddutydetector/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsguarddutydetector/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/guardduty_detector aws_guardduty_detector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/guardduty_detector aws_guardduty_detector}.
 type DataAwsGuarddutyDetector interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAwsGuarddutyDetector interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -120,8 +120,8 @@ func (j *jsiiProxy_DataAwsGuarddutyDetector) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsGuarddutyDetector) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsGuarddutyDetector) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -291,7 +291,7 @@ func (j *jsiiProxy_DataAwsGuarddutyDetector) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/guardduty_detector aws_guardduty_detector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/guardduty_detector aws_guardduty_detector} Data Source.
 func NewDataAwsGuarddutyDetector(scope constructs.Construct, id *string, config *DataAwsGuarddutyDetectorConfig) DataAwsGuarddutyDetector {
 	_init_.Initialize()
 
@@ -309,7 +309,7 @@ func NewDataAwsGuarddutyDetector(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/guardduty_detector aws_guardduty_detector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/guardduty_detector aws_guardduty_detector} Data Source.
 func NewDataAwsGuarddutyDetector_Override(d DataAwsGuarddutyDetector, scope constructs.Construct, id *string, config *DataAwsGuarddutyDetectorConfig) {
 	_init_.Initialize()
 
@@ -320,7 +320,10 @@ func NewDataAwsGuarddutyDetector_Override(d DataAwsGuarddutyDetector, scope cons
 	)
 }
 
-func (j *jsiiProxy_DataAwsGuarddutyDetector)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsGuarddutyDetector)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

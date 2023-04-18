@@ -76,6 +76,10 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

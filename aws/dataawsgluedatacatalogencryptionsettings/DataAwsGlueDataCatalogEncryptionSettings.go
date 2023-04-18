@@ -2,14 +2,14 @@ package dataawsgluedatacatalogencryptionsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsgluedatacatalogencryptionsettings/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsgluedatacatalogencryptionsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/glue_data_catalog_encryption_settings aws_glue_data_catalog_encryption_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/glue_data_catalog_encryption_settings aws_glue_data_catalog_encryption_settings}.
 type DataAwsGlueDataCatalogEncryptionSettings interface {
 	cdktf.TerraformDataSource
 	CatalogId() *string
@@ -20,9 +20,9 @@ type DataAwsGlueDataCatalogEncryptionSettings interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataCatalogEncryptionSettings() DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsList
 	// Experimental.
 	DependsOn() *[]*string
@@ -141,8 +141,8 @@ func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) TerraformResourceTy
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/glue_data_catalog_encryption_settings aws_glue_data_catalog_encryption_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/glue_data_catalog_encryption_settings aws_glue_data_catalog_encryption_settings} Data Source.
 func NewDataAwsGlueDataCatalogEncryptionSettings(scope constructs.Construct, id *string, config *DataAwsGlueDataCatalogEncryptionSettingsConfig) DataAwsGlueDataCatalogEncryptionSettings {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataAwsGlueDataCatalogEncryptionSettings(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/glue_data_catalog_encryption_settings aws_glue_data_catalog_encryption_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/glue_data_catalog_encryption_settings aws_glue_data_catalog_encryption_settings} Data Source.
 func NewDataAwsGlueDataCatalogEncryptionSettings_Override(d DataAwsGlueDataCatalogEncryptionSettings, scope constructs.Construct, id *string, config *DataAwsGlueDataCatalogEncryptionSettingsConfig) {
 	_init_.Initialize()
 
@@ -332,7 +332,10 @@ func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings)SetCatalogId(val *st
 	)
 }
 
-func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

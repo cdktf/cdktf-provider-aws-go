@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataAwsEc2ClientVpnEndpoint) validateSetClientVpnEndpointIdPa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEc2ClientVpnEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEc2ClientVpnEndpoint) validateSetIdParameters(val *string) error {
 	return nil
 }

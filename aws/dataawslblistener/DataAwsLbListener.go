@@ -2,14 +2,14 @@ package dataawslblistener
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslblistener/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslblistener/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/lb_listener aws_lb_listener}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/lb_listener aws_lb_listener}.
 type DataAwsLbListener interface {
 	cdktf.TerraformDataSource
 	AlpnPolicy() *string
@@ -22,9 +22,9 @@ type DataAwsLbListener interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultAction() DataAwsLbListenerDefaultActionList
 	// Experimental.
 	DependsOn() *[]*string
@@ -182,8 +182,8 @@ func (j *jsiiProxy_DataAwsLbListener) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLbListener) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsLbListener) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -433,7 +433,7 @@ func (j *jsiiProxy_DataAwsLbListener) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/lb_listener aws_lb_listener} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/lb_listener aws_lb_listener} Data Source.
 func NewDataAwsLbListener(scope constructs.Construct, id *string, config *DataAwsLbListenerConfig) DataAwsLbListener {
 	_init_.Initialize()
 
@@ -451,7 +451,7 @@ func NewDataAwsLbListener(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/lb_listener aws_lb_listener} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/lb_listener aws_lb_listener} Data Source.
 func NewDataAwsLbListener_Override(d DataAwsLbListener, scope constructs.Construct, id *string, config *DataAwsLbListenerConfig) {
 	_init_.Initialize()
 
@@ -473,7 +473,10 @@ func (j *jsiiProxy_DataAwsLbListener)SetArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLbListener)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsLbListener)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

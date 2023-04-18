@@ -72,6 +72,10 @@ func (j *jsiiProxy_WafRuleGroup) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_WafRuleGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafRuleGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

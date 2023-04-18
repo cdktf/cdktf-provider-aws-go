@@ -68,6 +68,10 @@ func (j *jsiiProxy_ConfigConfigurationRecorderStatus) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_ConfigConfigurationRecorderStatus) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigConfigurationRecorderStatus) validateSetIdParameters(val *string) error {
 	return nil
 }

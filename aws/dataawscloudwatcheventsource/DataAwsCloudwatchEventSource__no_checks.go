@@ -64,6 +64,10 @@ func validateDataAwsCloudwatchEventSource_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudwatchEventSource) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudwatchEventSource) validateSetIdParameters(val *string) error {
 	return nil
 }

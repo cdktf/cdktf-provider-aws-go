@@ -80,6 +80,10 @@ func (j *jsiiProxy_CloudhsmV2Hsm) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_CloudhsmV2Hsm) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudhsmV2Hsm) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package chimevoiceconnectorterminationcredentials
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/chimevoiceconnectorterminationcredentials/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/chimevoiceconnectorterminationcredentials/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_termination_credentials aws_chime_voice_connector_termination_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/chime_voice_connector_termination_credentials aws_chime_voice_connector_termination_credentials}.
 type ChimeVoiceConnectorTerminationCredentials interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type ChimeVoiceConnectorTerminationCredentials interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Credentials() ChimeVoiceConnectorTerminationCredentialsCredentialsList
 	CredentialsInput() interface{}
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_ChimeVoiceConnectorTerminationCredentials) ConstructNodeMetad
 	return returns
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTerminationCredentials) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ChimeVoiceConnectorTerminationCredentials) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorTerminationCredentials) VoiceConnectorIdIn
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_termination_credentials aws_chime_voice_connector_termination_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/chime_voice_connector_termination_credentials aws_chime_voice_connector_termination_credentials} Resource.
 func NewChimeVoiceConnectorTerminationCredentials(scope constructs.Construct, id *string, config *ChimeVoiceConnectorTerminationCredentialsConfig) ChimeVoiceConnectorTerminationCredentials {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewChimeVoiceConnectorTerminationCredentials(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/chime_voice_connector_termination_credentials aws_chime_voice_connector_termination_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/chime_voice_connector_termination_credentials aws_chime_voice_connector_termination_credentials} Resource.
 func NewChimeVoiceConnectorTerminationCredentials_Override(c ChimeVoiceConnectorTerminationCredentials, scope constructs.Construct, id *string, config *ChimeVoiceConnectorTerminationCredentialsConfig) {
 	_init_.Initialize()
 
@@ -372,7 +372,10 @@ func (j *jsiiProxy_ChimeVoiceConnectorTerminationCredentials)SetConnection(val i
 	)
 }
 
-func (j *jsiiProxy_ChimeVoiceConnectorTerminationCredentials)SetCount(val *float64) {
+func (j *jsiiProxy_ChimeVoiceConnectorTerminationCredentials)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

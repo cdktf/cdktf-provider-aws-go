@@ -2,14 +2,14 @@ package appsyncdomainname
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/appsyncdomainname/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/appsyncdomainname/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/appsync_domain_name aws_appsync_domain_name}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appsync_domain_name aws_appsync_domain_name}.
 type AppsyncDomainName interface {
 	cdktf.TerraformResource
 	AppsyncDomainName() *string
@@ -25,9 +25,9 @@ type AppsyncDomainName interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -177,8 +177,8 @@ func (j *jsiiProxy_AppsyncDomainName) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncDomainName) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppsyncDomainName) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -378,7 +378,7 @@ func (j *jsiiProxy_AppsyncDomainName) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/appsync_domain_name aws_appsync_domain_name} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appsync_domain_name aws_appsync_domain_name} Resource.
 func NewAppsyncDomainName(scope constructs.Construct, id *string, config *AppsyncDomainNameConfig) AppsyncDomainName {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewAppsyncDomainName(scope constructs.Construct, id *string, config *Appsyn
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/appsync_domain_name aws_appsync_domain_name} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appsync_domain_name aws_appsync_domain_name} Resource.
 func NewAppsyncDomainName_Override(a AppsyncDomainName, scope constructs.Construct, id *string, config *AppsyncDomainNameConfig) {
 	_init_.Initialize()
 
@@ -429,7 +429,10 @@ func (j *jsiiProxy_AppsyncDomainName)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncDomainName)SetCount(val *float64) {
+func (j *jsiiProxy_AppsyncDomainName)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

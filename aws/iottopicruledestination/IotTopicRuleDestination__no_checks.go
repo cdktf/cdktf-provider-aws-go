@@ -76,6 +76,10 @@ func (j *jsiiProxy_IotTopicRuleDestination) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_IotTopicRuleDestination) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotTopicRuleDestination) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

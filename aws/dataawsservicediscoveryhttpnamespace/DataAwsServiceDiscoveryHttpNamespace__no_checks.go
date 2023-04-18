@@ -64,6 +64,10 @@ func validateDataAwsServiceDiscoveryHttpNamespace_IsTerraformElementParameters(x
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsServiceDiscoveryHttpNamespace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsServiceDiscoveryHttpNamespace) validateSetIdParameters(val *string) error {
 	return nil
 }

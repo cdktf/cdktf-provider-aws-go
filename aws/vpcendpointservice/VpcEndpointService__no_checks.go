@@ -80,6 +80,10 @@ func (j *jsiiProxy_VpcEndpointService) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_VpcEndpointService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointService) validateSetGatewayLoadBalancerArnsParameters(val *[]*string) error {
 	return nil
 }

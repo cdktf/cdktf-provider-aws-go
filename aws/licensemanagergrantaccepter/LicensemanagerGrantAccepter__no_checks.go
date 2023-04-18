@@ -68,6 +68,10 @@ func (j *jsiiProxy_LicensemanagerGrantAccepter) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_LicensemanagerGrantAccepter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LicensemanagerGrantAccepter) validateSetGrantArnParameters(val *string) error {
 	return nil
 }

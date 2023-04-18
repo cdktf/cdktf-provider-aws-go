@@ -2,14 +2,14 @@ package acmpcacertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/acmpcacertificate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/acmpcacertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate aws_acmpca_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/acmpca_certificate aws_acmpca_certificate}.
 type AcmpcaCertificate interface {
 	cdktf.TerraformResource
 	ApiPassthrough() *string
@@ -33,9 +33,9 @@ type AcmpcaCertificate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -248,8 +248,8 @@ func (j *jsiiProxy_AcmpcaCertificate) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_AcmpcaCertificate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AcmpcaCertificate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -459,7 +459,7 @@ func (j *jsiiProxy_AcmpcaCertificate) ValidityInput() *AcmpcaCertificateValidity
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate aws_acmpca_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/acmpca_certificate aws_acmpca_certificate} Resource.
 func NewAcmpcaCertificate(scope constructs.Construct, id *string, config *AcmpcaCertificateConfig) AcmpcaCertificate {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewAcmpcaCertificate(scope constructs.Construct, id *string, config *Acmpca
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/acmpca_certificate aws_acmpca_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/acmpca_certificate aws_acmpca_certificate} Resource.
 func NewAcmpcaCertificate_Override(a AcmpcaCertificate, scope constructs.Construct, id *string, config *AcmpcaCertificateConfig) {
 	_init_.Initialize()
 
@@ -532,7 +532,10 @@ func (j *jsiiProxy_AcmpcaCertificate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AcmpcaCertificate)SetCount(val *float64) {
+func (j *jsiiProxy_AcmpcaCertificate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

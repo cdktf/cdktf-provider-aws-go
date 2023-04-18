@@ -64,6 +64,10 @@ func validateDataAwsSfnStateMachine_IsTerraformElementParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSfnStateMachine) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSfnStateMachine) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_S3ControlBucketLifecycleConfiguration) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_S3ControlBucketLifecycleConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3ControlBucketLifecycleConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package dataawsnetworkmanagerconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsnetworkmanagerconnection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsnetworkmanagerconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/networkmanager_connection aws_networkmanager_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/networkmanager_connection aws_networkmanager_connection}.
 type DataAwsNetworkmanagerConnection interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -23,9 +23,9 @@ type DataAwsNetworkmanagerConnection interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -183,8 +183,8 @@ func (j *jsiiProxy_DataAwsNetworkmanagerConnection) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerConnection) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsNetworkmanagerConnection) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -394,7 +394,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerConnection) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/networkmanager_connection aws_networkmanager_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/networkmanager_connection aws_networkmanager_connection} Data Source.
 func NewDataAwsNetworkmanagerConnection(scope constructs.Construct, id *string, config *DataAwsNetworkmanagerConnectionConfig) DataAwsNetworkmanagerConnection {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewDataAwsNetworkmanagerConnection(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/networkmanager_connection aws_networkmanager_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/networkmanager_connection aws_networkmanager_connection} Data Source.
 func NewDataAwsNetworkmanagerConnection_Override(d DataAwsNetworkmanagerConnection, scope constructs.Construct, id *string, config *DataAwsNetworkmanagerConnectionConfig) {
 	_init_.Initialize()
 
@@ -434,7 +434,10 @@ func (j *jsiiProxy_DataAwsNetworkmanagerConnection)SetConnectionId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerConnection)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsNetworkmanagerConnection)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

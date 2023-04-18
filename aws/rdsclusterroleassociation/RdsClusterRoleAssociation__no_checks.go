@@ -68,6 +68,10 @@ func (j *jsiiProxy_RdsClusterRoleAssociation) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_RdsClusterRoleAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsClusterRoleAssociation) validateSetDbClusterIdentifierParameters(val *string) error {
 	return nil
 }

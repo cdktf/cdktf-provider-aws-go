@@ -68,6 +68,10 @@ func (j *jsiiProxy_MemorydbSubnetGroup) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_MemorydbSubnetGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemorydbSubnetGroup) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

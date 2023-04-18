@@ -80,6 +80,10 @@ func (j *jsiiProxy_DxMacsecKeyAssociation) validateSetConnectionIdParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DxMacsecKeyAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DxMacsecKeyAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

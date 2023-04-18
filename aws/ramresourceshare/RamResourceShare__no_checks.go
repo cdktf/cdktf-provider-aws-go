@@ -76,6 +76,10 @@ func (j *jsiiProxy_RamResourceShare) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_RamResourceShare) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RamResourceShare) validateSetIdParameters(val *string) error {
 	return nil
 }

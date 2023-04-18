@@ -124,6 +124,10 @@ func (j *jsiiProxy_ElasticsearchDomain) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_ElasticsearchDomain) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticsearchDomain) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

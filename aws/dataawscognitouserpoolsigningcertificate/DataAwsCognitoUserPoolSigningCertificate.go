@@ -2,14 +2,14 @@ package dataawscognitouserpoolsigningcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawscognitouserpoolsigningcertificate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawscognitouserpoolsigningcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/cognito_user_pool_signing_certificate aws_cognito_user_pool_signing_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/cognito_user_pool_signing_certificate aws_cognito_user_pool_signing_certificate}.
 type DataAwsCognitoUserPoolSigningCertificate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -18,9 +18,9 @@ type DataAwsCognitoUserPoolSigningCertificate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) UserPoolIdInput() *
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/cognito_user_pool_signing_certificate aws_cognito_user_pool_signing_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/cognito_user_pool_signing_certificate aws_cognito_user_pool_signing_certificate} Data Source.
 func NewDataAwsCognitoUserPoolSigningCertificate(scope constructs.Construct, id *string, config *DataAwsCognitoUserPoolSigningCertificateConfig) DataAwsCognitoUserPoolSigningCertificate {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataAwsCognitoUserPoolSigningCertificate(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/cognito_user_pool_signing_certificate aws_cognito_user_pool_signing_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/cognito_user_pool_signing_certificate aws_cognito_user_pool_signing_certificate} Data Source.
 func NewDataAwsCognitoUserPoolSigningCertificate_Override(d DataAwsCognitoUserPoolSigningCertificate, scope constructs.Construct, id *string, config *DataAwsCognitoUserPoolSigningCertificateConfig) {
 	_init_.Initialize()
 
@@ -321,7 +321,10 @@ func NewDataAwsCognitoUserPoolSigningCertificate_Override(d DataAwsCognitoUserPo
 	)
 }
 
-func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -64,6 +64,10 @@ func validateDataAwsAppmeshMesh_IsTerraformElementParameters(x interface{}) erro
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAppmeshMesh) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAppmeshMesh) validateSetIdParameters(val *string) error {
 	return nil
 }

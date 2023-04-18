@@ -2,14 +2,14 @@ package dataawsapigatewayv2apis
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsapigatewayv2apis/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsapigatewayv2apis/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/apigatewayv2_apis aws_apigatewayv2_apis}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/apigatewayv2_apis aws_apigatewayv2_apis}.
 type DataAwsApigatewayv2Apis interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAwsApigatewayv2Apis interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataAwsApigatewayv2Apis) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Apis) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsApigatewayv2Apis) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2Apis) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/apigatewayv2_apis aws_apigatewayv2_apis} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/apigatewayv2_apis aws_apigatewayv2_apis} Data Source.
 func NewDataAwsApigatewayv2Apis(scope constructs.Construct, id *string, config *DataAwsApigatewayv2ApisConfig) DataAwsApigatewayv2Apis {
 	_init_.Initialize()
 
@@ -359,7 +359,7 @@ func NewDataAwsApigatewayv2Apis(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/apigatewayv2_apis aws_apigatewayv2_apis} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/apigatewayv2_apis aws_apigatewayv2_apis} Data Source.
 func NewDataAwsApigatewayv2Apis_Override(d DataAwsApigatewayv2Apis, scope constructs.Construct, id *string, config *DataAwsApigatewayv2ApisConfig) {
 	_init_.Initialize()
 
@@ -370,7 +370,10 @@ func NewDataAwsApigatewayv2Apis_Override(d DataAwsApigatewayv2Apis, scope constr
 	)
 }
 
-func (j *jsiiProxy_DataAwsApigatewayv2Apis)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsApigatewayv2Apis)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

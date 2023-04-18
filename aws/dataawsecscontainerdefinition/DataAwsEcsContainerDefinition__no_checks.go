@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsEcsContainerDefinition) validateSetContainerNameParame
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEcsContainerDefinition) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEcsContainerDefinition) validateSetIdParameters(val *string) error {
 	return nil
 }

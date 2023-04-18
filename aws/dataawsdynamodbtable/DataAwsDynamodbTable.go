@@ -2,14 +2,14 @@ package dataawsdynamodbtable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsdynamodbtable/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsdynamodbtable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/dynamodb_table aws_dynamodb_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/dynamodb_table aws_dynamodb_table}.
 type DataAwsDynamodbTable interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -20,9 +20,9 @@ type DataAwsDynamodbTable interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DeletionProtectionEnabled() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
@@ -176,8 +176,8 @@ func (j *jsiiProxy_DataAwsDynamodbTable) ConstructNodeMetadata() *map[string]int
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDynamodbTable) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsDynamodbTable) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -527,7 +527,7 @@ func (j *jsiiProxy_DataAwsDynamodbTable) WriteCapacity() *float64 {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/dynamodb_table aws_dynamodb_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/dynamodb_table aws_dynamodb_table} Data Source.
 func NewDataAwsDynamodbTable(scope constructs.Construct, id *string, config *DataAwsDynamodbTableConfig) DataAwsDynamodbTable {
 	_init_.Initialize()
 
@@ -545,7 +545,7 @@ func NewDataAwsDynamodbTable(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/dynamodb_table aws_dynamodb_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/dynamodb_table aws_dynamodb_table} Data Source.
 func NewDataAwsDynamodbTable_Override(d DataAwsDynamodbTable, scope constructs.Construct, id *string, config *DataAwsDynamodbTableConfig) {
 	_init_.Initialize()
 
@@ -556,7 +556,10 @@ func NewDataAwsDynamodbTable_Override(d DataAwsDynamodbTable, scope constructs.C
 	)
 }
 
-func (j *jsiiProxy_DataAwsDynamodbTable)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsDynamodbTable)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

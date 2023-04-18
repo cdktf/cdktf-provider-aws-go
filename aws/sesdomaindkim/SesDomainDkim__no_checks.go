@@ -68,6 +68,10 @@ func (j *jsiiProxy_SesDomainDkim) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_SesDomainDkim) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SesDomainDkim) validateSetDomainParameters(val *string) error {
 	return nil
 }

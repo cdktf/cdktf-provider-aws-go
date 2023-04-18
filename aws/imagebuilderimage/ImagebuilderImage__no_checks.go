@@ -80,6 +80,10 @@ func (j *jsiiProxy_ImagebuilderImage) validateSetContainerRecipeArnParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_ImagebuilderImage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImagebuilderImage) validateSetDistributionConfigurationArnParameters(val *string) error {
 	return nil
 }

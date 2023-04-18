@@ -2,14 +2,14 @@ package dataawsauditmanagercontrol
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsauditmanagercontrol/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsauditmanagercontrol/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/auditmanager_control aws_auditmanager_control}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/auditmanager_control aws_auditmanager_control}.
 type DataAwsAuditmanagerControl interface {
 	cdktf.TerraformDataSource
 	ActionPlanInstructions() *string
@@ -22,9 +22,9 @@ type DataAwsAuditmanagerControl interface {
 	ControlMappingSources() DataAwsAuditmanagerControlControlMappingSourcesList
 	ControlMappingSourcesInput() interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -180,8 +180,8 @@ func (j *jsiiProxy_DataAwsAuditmanagerControl) ControlMappingSourcesInput() inte
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControl) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsAuditmanagerControl) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -381,7 +381,7 @@ func (j *jsiiProxy_DataAwsAuditmanagerControl) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/auditmanager_control aws_auditmanager_control} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/auditmanager_control aws_auditmanager_control} Data Source.
 func NewDataAwsAuditmanagerControl(scope constructs.Construct, id *string, config *DataAwsAuditmanagerControlConfig) DataAwsAuditmanagerControl {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewDataAwsAuditmanagerControl(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/auditmanager_control aws_auditmanager_control} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/auditmanager_control aws_auditmanager_control} Data Source.
 func NewDataAwsAuditmanagerControl_Override(d DataAwsAuditmanagerControl, scope constructs.Construct, id *string, config *DataAwsAuditmanagerControlConfig) {
 	_init_.Initialize()
 
@@ -410,7 +410,10 @@ func NewDataAwsAuditmanagerControl_Override(d DataAwsAuditmanagerControl, scope 
 	)
 }
 
-func (j *jsiiProxy_DataAwsAuditmanagerControl)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsAuditmanagerControl)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

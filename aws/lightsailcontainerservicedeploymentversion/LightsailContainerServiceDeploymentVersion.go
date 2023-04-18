@@ -2,14 +2,14 @@ package lightsailcontainerservicedeploymentversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/lightsailcontainerservicedeploymentversion/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/lightsailcontainerservicedeploymentversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/lightsail_container_service_deployment_version aws_lightsail_container_service_deployment_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lightsail_container_service_deployment_version aws_lightsail_container_service_deployment_version}.
 type LightsailContainerServiceDeploymentVersion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type LightsailContainerServiceDeploymentVersion interface {
 	Container() LightsailContainerServiceDeploymentVersionContainerList
 	ContainerInput() interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedAt() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -172,8 +172,8 @@ func (j *jsiiProxy_LightsailContainerServiceDeploymentVersion) ContainerInput() 
 	return returns
 }
 
-func (j *jsiiProxy_LightsailContainerServiceDeploymentVersion) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LightsailContainerServiceDeploymentVersion) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -413,7 +413,7 @@ func (j *jsiiProxy_LightsailContainerServiceDeploymentVersion) Version() *float6
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lightsail_container_service_deployment_version aws_lightsail_container_service_deployment_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lightsail_container_service_deployment_version aws_lightsail_container_service_deployment_version} Resource.
 func NewLightsailContainerServiceDeploymentVersion(scope constructs.Construct, id *string, config *LightsailContainerServiceDeploymentVersionConfig) LightsailContainerServiceDeploymentVersion {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewLightsailContainerServiceDeploymentVersion(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lightsail_container_service_deployment_version aws_lightsail_container_service_deployment_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lightsail_container_service_deployment_version aws_lightsail_container_service_deployment_version} Resource.
 func NewLightsailContainerServiceDeploymentVersion_Override(l LightsailContainerServiceDeploymentVersion, scope constructs.Construct, id *string, config *LightsailContainerServiceDeploymentVersionConfig) {
 	_init_.Initialize()
 
@@ -453,7 +453,10 @@ func (j *jsiiProxy_LightsailContainerServiceDeploymentVersion)SetConnection(val 
 	)
 }
 
-func (j *jsiiProxy_LightsailContainerServiceDeploymentVersion)SetCount(val *float64) {
+func (j *jsiiProxy_LightsailContainerServiceDeploymentVersion)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

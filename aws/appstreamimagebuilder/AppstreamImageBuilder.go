@@ -2,14 +2,14 @@ package appstreamimagebuilder
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/appstreamimagebuilder/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/appstreamimagebuilder/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/appstream_image_builder aws_appstream_image_builder}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appstream_image_builder aws_appstream_image_builder}.
 type AppstreamImageBuilder interface {
 	cdktf.TerraformResource
 	AccessEndpoint() AppstreamImageBuilderAccessEndpointList
@@ -27,9 +27,9 @@ type AppstreamImageBuilder interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -242,8 +242,8 @@ func (j *jsiiProxy_AppstreamImageBuilder) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppstreamImageBuilder) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -653,7 +653,7 @@ func (j *jsiiProxy_AppstreamImageBuilder) VpcConfigInput() *AppstreamImageBuilde
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/appstream_image_builder aws_appstream_image_builder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appstream_image_builder aws_appstream_image_builder} Resource.
 func NewAppstreamImageBuilder(scope constructs.Construct, id *string, config *AppstreamImageBuilderConfig) AppstreamImageBuilder {
 	_init_.Initialize()
 
@@ -671,7 +671,7 @@ func NewAppstreamImageBuilder(scope constructs.Construct, id *string, config *Ap
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/appstream_image_builder aws_appstream_image_builder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appstream_image_builder aws_appstream_image_builder} Resource.
 func NewAppstreamImageBuilder_Override(a AppstreamImageBuilder, scope constructs.Construct, id *string, config *AppstreamImageBuilderConfig) {
 	_init_.Initialize()
 
@@ -704,7 +704,10 @@ func (j *jsiiProxy_AppstreamImageBuilder)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppstreamImageBuilder)SetCount(val *float64) {
+func (j *jsiiProxy_AppstreamImageBuilder)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

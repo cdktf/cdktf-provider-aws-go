@@ -2,14 +2,14 @@ package cloudfrontcachepolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/cloudfrontcachepolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudfrontcachepolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy aws_cloudfront_cache_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudfront_cache_policy aws_cloudfront_cache_policy}.
 type CloudfrontCachePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type CloudfrontCachePolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultTtl() *float64
 	SetDefaultTtl(val *float64)
 	DefaultTtlInput() *float64
@@ -178,8 +178,8 @@ func (j *jsiiProxy_CloudfrontCachePolicy) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontCachePolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudfrontCachePolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -439,7 +439,7 @@ func (j *jsiiProxy_CloudfrontCachePolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy aws_cloudfront_cache_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudfront_cache_policy aws_cloudfront_cache_policy} Resource.
 func NewCloudfrontCachePolicy(scope constructs.Construct, id *string, config *CloudfrontCachePolicyConfig) CloudfrontCachePolicy {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewCloudfrontCachePolicy(scope constructs.Construct, id *string, config *Cl
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_cache_policy aws_cloudfront_cache_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudfront_cache_policy aws_cloudfront_cache_policy} Resource.
 func NewCloudfrontCachePolicy_Override(c CloudfrontCachePolicy, scope constructs.Construct, id *string, config *CloudfrontCachePolicyConfig) {
 	_init_.Initialize()
 
@@ -490,7 +490,10 @@ func (j *jsiiProxy_CloudfrontCachePolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontCachePolicy)SetCount(val *float64) {
+func (j *jsiiProxy_CloudfrontCachePolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

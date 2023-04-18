@@ -2,7 +2,7 @@ package keyspacestable
 
 
 type KeyspacesTableSchemaDefinitionStaticColumn struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/keyspaces_table#name KeyspacesTable#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/keyspaces_table#name KeyspacesTable#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

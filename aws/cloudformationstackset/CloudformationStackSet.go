@@ -2,14 +2,14 @@ package cloudformationstackset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/cloudformationstackset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudformationstackset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack_set aws_cloudformation_stack_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set}.
 type CloudformationStackSet interface {
 	cdktf.TerraformResource
 	AdministrationRoleArn() *string
@@ -33,9 +33,9 @@ type CloudformationStackSet interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -286,8 +286,8 @@ func (j *jsiiProxy_CloudformationStackSet) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_CloudformationStackSet) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudformationStackSet) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -667,7 +667,7 @@ func (j *jsiiProxy_CloudformationStackSet) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack_set aws_cloudformation_stack_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set} Resource.
 func NewCloudformationStackSet(scope constructs.Construct, id *string, config *CloudformationStackSetConfig) CloudformationStackSet {
 	_init_.Initialize()
 
@@ -685,7 +685,7 @@ func NewCloudformationStackSet(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudformation_stack_set aws_cloudformation_stack_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set} Resource.
 func NewCloudformationStackSet_Override(c CloudformationStackSet, scope constructs.Construct, id *string, config *CloudformationStackSetConfig) {
 	_init_.Initialize()
 
@@ -740,7 +740,10 @@ func (j *jsiiProxy_CloudformationStackSet)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudformationStackSet)SetCount(val *float64) {
+func (j *jsiiProxy_CloudformationStackSet)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

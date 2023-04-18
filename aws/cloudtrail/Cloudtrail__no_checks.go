@@ -88,6 +88,10 @@ func (j *jsiiProxy_Cloudtrail) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_Cloudtrail) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cloudtrail) validateSetEnableLogFileValidationParameters(val interface{}) error {
 	return nil
 }

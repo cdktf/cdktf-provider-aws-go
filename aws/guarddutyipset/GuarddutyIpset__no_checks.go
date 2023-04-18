@@ -72,6 +72,10 @@ func (j *jsiiProxy_GuarddutyIpset) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_GuarddutyIpset) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GuarddutyIpset) validateSetDetectorIdParameters(val *string) error {
 	return nil
 }

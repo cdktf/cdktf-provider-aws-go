@@ -2,14 +2,14 @@ package dataawslaunchtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslaunchtemplate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslaunchtemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/launch_template aws_launch_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/launch_template aws_launch_template}.
 type DataAwsLaunchTemplate interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -20,9 +20,9 @@ type DataAwsLaunchTemplate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CpuOptions() DataAwsLaunchTemplateCpuOptionsList
 	CreditSpecification() DataAwsLaunchTemplateCreditSpecificationList
 	DefaultVersion() *float64
@@ -198,8 +198,8 @@ func (j *jsiiProxy_DataAwsLaunchTemplate) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsLaunchTemplate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -739,7 +739,7 @@ func (j *jsiiProxy_DataAwsLaunchTemplate) VpcSecurityGroupIds() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/launch_template aws_launch_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/launch_template aws_launch_template} Data Source.
 func NewDataAwsLaunchTemplate(scope constructs.Construct, id *string, config *DataAwsLaunchTemplateConfig) DataAwsLaunchTemplate {
 	_init_.Initialize()
 
@@ -757,7 +757,7 @@ func NewDataAwsLaunchTemplate(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/launch_template aws_launch_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/launch_template aws_launch_template} Data Source.
 func NewDataAwsLaunchTemplate_Override(d DataAwsLaunchTemplate, scope constructs.Construct, id *string, config *DataAwsLaunchTemplateConfig) {
 	_init_.Initialize()
 
@@ -768,7 +768,10 @@ func NewDataAwsLaunchTemplate_Override(d DataAwsLaunchTemplate, scope constructs
 	)
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplate)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsLaunchTemplate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

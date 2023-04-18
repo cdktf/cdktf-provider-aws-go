@@ -2,14 +2,14 @@ package acmcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/acmcertificate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/acmcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/acm_certificate aws_acm_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/acm_certificate aws_acm_certificate}.
 type AcmCertificate interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -31,9 +31,9 @@ type AcmCertificate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -267,8 +267,8 @@ func (j *jsiiProxy_AcmCertificate) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_AcmCertificate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AcmCertificate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -708,7 +708,7 @@ func (j *jsiiProxy_AcmCertificate) ValidationOptionInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/acm_certificate aws_acm_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/acm_certificate aws_acm_certificate} Resource.
 func NewAcmCertificate(scope constructs.Construct, id *string, config *AcmCertificateConfig) AcmCertificate {
 	_init_.Initialize()
 
@@ -726,7 +726,7 @@ func NewAcmCertificate(scope constructs.Construct, id *string, config *AcmCertif
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/acm_certificate aws_acm_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/acm_certificate aws_acm_certificate} Resource.
 func NewAcmCertificate_Override(a AcmCertificate, scope constructs.Construct, id *string, config *AcmCertificateConfig) {
 	_init_.Initialize()
 
@@ -781,7 +781,10 @@ func (j *jsiiProxy_AcmCertificate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AcmCertificate)SetCount(val *float64) {
+func (j *jsiiProxy_AcmCertificate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

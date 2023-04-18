@@ -104,6 +104,10 @@ func (j *jsiiProxy_MskconnectConnector) validateSetConnectorConfigurationParamet
 	return nil
 }
 
+func (j *jsiiProxy_MskconnectConnector) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MskconnectConnector) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_IotThingType) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_IotThingType) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotThingType) validateSetDeprecatedParameters(val interface{}) error {
 	return nil
 }

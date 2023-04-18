@@ -64,6 +64,10 @@ func validateDataAwsBackupReportPlan_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsBackupReportPlan) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsBackupReportPlan) validateSetIdParameters(val *string) error {
 	return nil
 }

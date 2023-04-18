@@ -80,6 +80,10 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPointPolicy) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_S3ControlMultiRegionAccessPointPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3ControlMultiRegionAccessPointPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

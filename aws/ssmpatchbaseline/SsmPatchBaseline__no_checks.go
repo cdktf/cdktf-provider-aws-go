@@ -92,6 +92,10 @@ func (j *jsiiProxy_SsmPatchBaseline) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_SsmPatchBaseline) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmPatchBaseline) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

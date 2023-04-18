@@ -64,6 +64,10 @@ func validateDataAwsDocdbEngineVersion_IsTerraformElementParameters(x interface{
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDocdbEngineVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDocdbEngineVersion) validateSetEngineParameters(val *string) error {
 	return nil
 }

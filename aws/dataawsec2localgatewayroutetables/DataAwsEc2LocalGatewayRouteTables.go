@@ -2,14 +2,14 @@ package dataawsec2localgatewayroutetables
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsec2localgatewayroutetables/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsec2localgatewayroutetables/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway_route_tables aws_ec2_local_gateway_route_tables}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_local_gateway_route_tables aws_ec2_local_gateway_route_tables}.
 type DataAwsEc2LocalGatewayRouteTables interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAwsEc2LocalGatewayRouteTables interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTables) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTables) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTables) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTables) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway_route_tables aws_ec2_local_gateway_route_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_local_gateway_route_tables aws_ec2_local_gateway_route_tables} Data Source.
 func NewDataAwsEc2LocalGatewayRouteTables(scope constructs.Construct, id *string, config *DataAwsEc2LocalGatewayRouteTablesConfig) DataAwsEc2LocalGatewayRouteTables {
 	_init_.Initialize()
 
@@ -359,7 +359,7 @@ func NewDataAwsEc2LocalGatewayRouteTables(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/ec2_local_gateway_route_tables aws_ec2_local_gateway_route_tables} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_local_gateway_route_tables aws_ec2_local_gateway_route_tables} Data Source.
 func NewDataAwsEc2LocalGatewayRouteTables_Override(d DataAwsEc2LocalGatewayRouteTables, scope constructs.Construct, id *string, config *DataAwsEc2LocalGatewayRouteTablesConfig) {
 	_init_.Initialize()
 
@@ -370,7 +370,10 @@ func NewDataAwsEc2LocalGatewayRouteTables_Override(d DataAwsEc2LocalGatewayRoute
 	)
 }
 
-func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTables)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsEc2LocalGatewayRouteTables)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

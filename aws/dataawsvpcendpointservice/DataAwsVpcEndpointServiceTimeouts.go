@@ -2,7 +2,7 @@ package dataawsvpcendpointservice
 
 
 type DataAwsVpcEndpointServiceTimeouts struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/vpc_endpoint_service#read DataAwsVpcEndpointService#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/vpc_endpoint_service#read DataAwsVpcEndpointService#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

@@ -2,14 +2,14 @@ package dmscertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dmscertificate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dmscertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/dms_certificate aws_dms_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dms_certificate aws_dms_certificate}.
 type DmsCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,9 +31,9 @@ type DmsCertificate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -225,8 +225,8 @@ func (j *jsiiProxy_DmsCertificate) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_DmsCertificate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DmsCertificate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -416,7 +416,7 @@ func (j *jsiiProxy_DmsCertificate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/dms_certificate aws_dms_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dms_certificate aws_dms_certificate} Resource.
 func NewDmsCertificate(scope constructs.Construct, id *string, config *DmsCertificateConfig) DmsCertificate {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewDmsCertificate(scope constructs.Construct, id *string, config *DmsCertif
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/dms_certificate aws_dms_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/dms_certificate aws_dms_certificate} Resource.
 func NewDmsCertificate_Override(d DmsCertificate, scope constructs.Construct, id *string, config *DmsCertificateConfig) {
 	_init_.Initialize()
 
@@ -489,7 +489,10 @@ func (j *jsiiProxy_DmsCertificate)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DmsCertificate)SetCount(val *float64) {
+func (j *jsiiProxy_DmsCertificate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

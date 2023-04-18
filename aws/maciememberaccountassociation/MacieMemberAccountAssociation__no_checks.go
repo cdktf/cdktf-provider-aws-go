@@ -68,6 +68,10 @@ func (j *jsiiProxy_MacieMemberAccountAssociation) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_MacieMemberAccountAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MacieMemberAccountAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

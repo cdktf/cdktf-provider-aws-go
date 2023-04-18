@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) validateSetCatalogI
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) validateSetIdParameters(val *string) error {
 	return nil
 }

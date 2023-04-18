@@ -68,6 +68,10 @@ func (j *jsiiProxy_StoragegatewayCachedIscsiVolume) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_StoragegatewayCachedIscsiVolume) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewayCachedIscsiVolume) validateSetGatewayArnParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_ServiceDiscoveryInstance) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_ServiceDiscoveryInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServiceDiscoveryInstance) validateSetIdParameters(val *string) error {
 	return nil
 }

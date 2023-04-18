@@ -2,14 +2,14 @@ package dataawslambdacodesigningconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawslambdacodesigningconfig/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslambdacodesigningconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/lambda_code_signing_config aws_lambda_code_signing_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/lambda_code_signing_config aws_lambda_code_signing_config}.
 type DataAwsLambdaCodeSigningConfig interface {
 	cdktf.TerraformDataSource
 	AllowedPublishers() DataAwsLambdaCodeSigningConfigAllowedPublishersList
@@ -22,9 +22,9 @@ type DataAwsLambdaCodeSigningConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_DataAwsLambdaCodeSigningConfig) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLambdaCodeSigningConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsLambdaCodeSigningConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -336,7 +336,7 @@ func (j *jsiiProxy_DataAwsLambdaCodeSigningConfig) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/lambda_code_signing_config aws_lambda_code_signing_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/lambda_code_signing_config aws_lambda_code_signing_config} Data Source.
 func NewDataAwsLambdaCodeSigningConfig(scope constructs.Construct, id *string, config *DataAwsLambdaCodeSigningConfigConfig) DataAwsLambdaCodeSigningConfig {
 	_init_.Initialize()
 
@@ -354,7 +354,7 @@ func NewDataAwsLambdaCodeSigningConfig(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/lambda_code_signing_config aws_lambda_code_signing_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/lambda_code_signing_config aws_lambda_code_signing_config} Data Source.
 func NewDataAwsLambdaCodeSigningConfig_Override(d DataAwsLambdaCodeSigningConfig, scope constructs.Construct, id *string, config *DataAwsLambdaCodeSigningConfigConfig) {
 	_init_.Initialize()
 
@@ -376,7 +376,10 @@ func (j *jsiiProxy_DataAwsLambdaCodeSigningConfig)SetArn(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsLambdaCodeSigningConfig)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsLambdaCodeSigningConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

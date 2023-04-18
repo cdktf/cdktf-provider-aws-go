@@ -64,6 +64,10 @@ func validateDataAwsLaunchConfiguration_IsTerraformElementParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLaunchConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLaunchConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package cloudwatchcompositealarm
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/cloudwatchcompositealarm/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchcompositealarm/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_composite_alarm aws_cloudwatch_composite_alarm}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_composite_alarm aws_cloudwatch_composite_alarm}.
 type CloudwatchCompositeAlarm interface {
 	cdktf.TerraformResource
 	ActionsEnabled() interface{}
@@ -37,9 +37,9 @@ type CloudwatchCompositeAlarm interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -280,8 +280,8 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudwatchCompositeAlarm) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -511,7 +511,7 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_composite_alarm aws_cloudwatch_composite_alarm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_composite_alarm aws_cloudwatch_composite_alarm} Resource.
 func NewCloudwatchCompositeAlarm(scope constructs.Construct, id *string, config *CloudwatchCompositeAlarmConfig) CloudwatchCompositeAlarm {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewCloudwatchCompositeAlarm(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_composite_alarm aws_cloudwatch_composite_alarm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_composite_alarm aws_cloudwatch_composite_alarm} Resource.
 func NewCloudwatchCompositeAlarm_Override(c CloudwatchCompositeAlarm, scope constructs.Construct, id *string, config *CloudwatchCompositeAlarmConfig) {
 	_init_.Initialize()
 
@@ -606,7 +606,10 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchCompositeAlarm)SetCount(val *float64) {
+func (j *jsiiProxy_CloudwatchCompositeAlarm)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

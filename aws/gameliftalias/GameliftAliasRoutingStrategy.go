@@ -2,11 +2,11 @@ package gameliftalias
 
 
 type GameliftAliasRoutingStrategy struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/gamelift_alias#type GameliftAlias#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/gamelift_alias#type GameliftAlias#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/gamelift_alias#fleet_id GameliftAlias#fleet_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/gamelift_alias#fleet_id GameliftAlias#fleet_id}.
 	FleetId *string `field:"optional" json:"fleetId" yaml:"fleetId"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/gamelift_alias#message GameliftAlias#message}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/gamelift_alias#message GameliftAlias#message}.
 	Message *string `field:"optional" json:"message" yaml:"message"`
 }
 

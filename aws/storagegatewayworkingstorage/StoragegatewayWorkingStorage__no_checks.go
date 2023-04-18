@@ -68,6 +68,10 @@ func (j *jsiiProxy_StoragegatewayWorkingStorage) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_StoragegatewayWorkingStorage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewayWorkingStorage) validateSetDiskIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_BackupVaultNotifications) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_BackupVaultNotifications) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupVaultNotifications) validateSetIdParameters(val *string) error {
 	return nil
 }

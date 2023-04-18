@@ -72,6 +72,10 @@ func (j *jsiiProxy_BatchJobQueue) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_BatchJobQueue) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchJobQueue) validateSetIdParameters(val *string) error {
 	return nil
 }

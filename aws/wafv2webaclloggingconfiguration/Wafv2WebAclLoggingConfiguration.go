@@ -2,14 +2,14 @@ package wafv2webaclloggingconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/wafv2webaclloggingconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafv2webaclloggingconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl_logging_configuration aws_wafv2_web_acl_logging_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_web_acl_logging_configuration aws_wafv2_web_acl_logging_configuration}.
 type Wafv2WebAclLoggingConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type Wafv2WebAclLoggingConfiguration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -149,8 +149,8 @@ func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -380,7 +380,7 @@ func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl_logging_configuration aws_wafv2_web_acl_logging_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_web_acl_logging_configuration aws_wafv2_web_acl_logging_configuration} Resource.
 func NewWafv2WebAclLoggingConfiguration(scope constructs.Construct, id *string, config *Wafv2WebAclLoggingConfigurationConfig) Wafv2WebAclLoggingConfiguration {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewWafv2WebAclLoggingConfiguration(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/wafv2_web_acl_logging_configuration aws_wafv2_web_acl_logging_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_web_acl_logging_configuration aws_wafv2_web_acl_logging_configuration} Resource.
 func NewWafv2WebAclLoggingConfiguration_Override(w Wafv2WebAclLoggingConfiguration, scope constructs.Construct, id *string, config *Wafv2WebAclLoggingConfigurationConfig) {
 	_init_.Initialize()
 
@@ -420,7 +420,10 @@ func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration)SetCount(val *float64) {
+func (j *jsiiProxy_Wafv2WebAclLoggingConfiguration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_WafSizeConstraintSet) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_WafSizeConstraintSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_WafSizeConstraintSet) validateSetIdParameters(val *string) error {
 	return nil
 }

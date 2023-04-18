@@ -2,14 +2,14 @@ package sagemakerproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/sagemakerproject/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_project aws_sagemaker_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sagemaker_project aws_sagemaker_project}.
 type SagemakerProject interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type SagemakerProject interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_SagemakerProject) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerProject) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SagemakerProject) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -426,7 +426,7 @@ func (j *jsiiProxy_SagemakerProject) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_project aws_sagemaker_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sagemaker_project aws_sagemaker_project} Resource.
 func NewSagemakerProject(scope constructs.Construct, id *string, config *SagemakerProjectConfig) SagemakerProject {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewSagemakerProject(scope constructs.Construct, id *string, config *Sagemak
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/sagemaker_project aws_sagemaker_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sagemaker_project aws_sagemaker_project} Resource.
 func NewSagemakerProject_Override(s SagemakerProject, scope constructs.Construct, id *string, config *SagemakerProjectConfig) {
 	_init_.Initialize()
 
@@ -466,7 +466,10 @@ func (j *jsiiProxy_SagemakerProject)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SagemakerProject)SetCount(val *float64) {
+func (j *jsiiProxy_SagemakerProject)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

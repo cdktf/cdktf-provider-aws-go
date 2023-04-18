@@ -2,14 +2,14 @@ package dataawsservicediscoverydnsnamespace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsservicediscoverydnsnamespace/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsservicediscoverydnsnamespace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/service_discovery_dns_namespace aws_service_discovery_dns_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/service_discovery_dns_namespace aws_service_discovery_dns_namespace}.
 type DataAwsServiceDiscoveryDnsNamespace interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -18,9 +18,9 @@ type DataAwsServiceDiscoveryDnsNamespace interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataAwsServiceDiscoveryDnsNamespace) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsServiceDiscoveryDnsNamespace) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsServiceDiscoveryDnsNamespace) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -361,7 +361,7 @@ func (j *jsiiProxy_DataAwsServiceDiscoveryDnsNamespace) TypeInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/service_discovery_dns_namespace aws_service_discovery_dns_namespace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/service_discovery_dns_namespace aws_service_discovery_dns_namespace} Data Source.
 func NewDataAwsServiceDiscoveryDnsNamespace(scope constructs.Construct, id *string, config *DataAwsServiceDiscoveryDnsNamespaceConfig) DataAwsServiceDiscoveryDnsNamespace {
 	_init_.Initialize()
 
@@ -379,7 +379,7 @@ func NewDataAwsServiceDiscoveryDnsNamespace(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/service_discovery_dns_namespace aws_service_discovery_dns_namespace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/service_discovery_dns_namespace aws_service_discovery_dns_namespace} Data Source.
 func NewDataAwsServiceDiscoveryDnsNamespace_Override(d DataAwsServiceDiscoveryDnsNamespace, scope constructs.Construct, id *string, config *DataAwsServiceDiscoveryDnsNamespaceConfig) {
 	_init_.Initialize()
 
@@ -390,7 +390,10 @@ func NewDataAwsServiceDiscoveryDnsNamespace_Override(d DataAwsServiceDiscoveryDn
 	)
 }
 
-func (j *jsiiProxy_DataAwsServiceDiscoveryDnsNamespace)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsServiceDiscoveryDnsNamespace)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

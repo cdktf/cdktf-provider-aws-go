@@ -64,6 +64,10 @@ func validateDataAwsElasticsearchDomain_IsTerraformElementParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsElasticsearchDomain) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsElasticsearchDomain) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

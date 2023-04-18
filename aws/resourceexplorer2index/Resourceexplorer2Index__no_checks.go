@@ -72,6 +72,10 @@ func (j *jsiiProxy_Resourceexplorer2Index) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_Resourceexplorer2Index) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Resourceexplorer2Index) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func validateDataAwsConnectBotAssociation_IsTerraformElementParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectBotAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectBotAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

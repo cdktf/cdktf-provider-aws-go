@@ -72,6 +72,10 @@ func (j *jsiiProxy_SagemakerImageVersion) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerImageVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerImageVersion) validateSetIdParameters(val *string) error {
 	return nil
 }

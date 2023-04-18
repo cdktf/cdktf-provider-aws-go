@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsLambdaCodeSigningConfig) validateSetArnParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLambdaCodeSigningConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLambdaCodeSigningConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

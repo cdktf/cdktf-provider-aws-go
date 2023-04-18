@@ -80,6 +80,10 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerCoreNetwork) validateSetCreateBasePolicyParameters(val interface{}) error {
 	return nil
 }

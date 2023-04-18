@@ -88,6 +88,10 @@ func (j *jsiiProxy_SyntheticsCanary) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_SyntheticsCanary) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SyntheticsCanary) validateSetDeleteLambdaParameters(val interface{}) error {
 	return nil
 }

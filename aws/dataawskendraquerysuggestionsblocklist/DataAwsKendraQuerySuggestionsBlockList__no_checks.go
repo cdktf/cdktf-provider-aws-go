@@ -64,6 +64,10 @@ func validateDataAwsKendraQuerySuggestionsBlockList_IsTerraformElementParameters
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsKendraQuerySuggestionsBlockList) validateSetIdParameters(val *string) error {
 	return nil
 }

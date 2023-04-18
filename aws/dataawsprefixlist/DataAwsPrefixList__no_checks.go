@@ -72,6 +72,10 @@ func validateDataAwsPrefixList_IsTerraformElementParameters(x interface{}) error
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsPrefixList) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsPrefixList) validateSetIdParameters(val *string) error {
 	return nil
 }

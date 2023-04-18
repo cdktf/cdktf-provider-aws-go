@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAwsLambdaLayerVersion) validateSetCompatibleRuntimeParame
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLambdaLayerVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLambdaLayerVersion) validateSetIdParameters(val *string) error {
 	return nil
 }

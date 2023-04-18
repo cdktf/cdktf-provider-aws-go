@@ -76,6 +76,10 @@ func (j *jsiiProxy_RedshiftAuthenticationProfile) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftAuthenticationProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftAuthenticationProfile) validateSetIdParameters(val *string) error {
 	return nil
 }

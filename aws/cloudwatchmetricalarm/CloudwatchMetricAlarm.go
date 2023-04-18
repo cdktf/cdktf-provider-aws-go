@@ -2,14 +2,14 @@ package cloudwatchmetricalarm
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/cloudwatchmetricalarm/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricalarm/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm aws_cloudwatch_metric_alarm}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_alarm aws_cloudwatch_metric_alarm}.
 type CloudwatchMetricAlarm interface {
 	cdktf.TerraformResource
 	ActionsEnabled() interface{}
@@ -37,9 +37,9 @@ type CloudwatchMetricAlarm interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DatapointsToAlarm() *float64
 	SetDatapointsToAlarm(val *float64)
 	DatapointsToAlarmInput() *float64
@@ -335,8 +335,8 @@ func (j *jsiiProxy_CloudwatchMetricAlarm) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchMetricAlarm) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudwatchMetricAlarm) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -846,7 +846,7 @@ func (j *jsiiProxy_CloudwatchMetricAlarm) UnitInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm aws_cloudwatch_metric_alarm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_alarm aws_cloudwatch_metric_alarm} Resource.
 func NewCloudwatchMetricAlarm(scope constructs.Construct, id *string, config *CloudwatchMetricAlarmConfig) CloudwatchMetricAlarm {
 	_init_.Initialize()
 
@@ -864,7 +864,7 @@ func NewCloudwatchMetricAlarm(scope constructs.Construct, id *string, config *Cl
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm aws_cloudwatch_metric_alarm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_alarm aws_cloudwatch_metric_alarm} Resource.
 func NewCloudwatchMetricAlarm_Override(c CloudwatchMetricAlarm, scope constructs.Construct, id *string, config *CloudwatchMetricAlarmConfig) {
 	_init_.Initialize()
 
@@ -941,7 +941,10 @@ func (j *jsiiProxy_CloudwatchMetricAlarm)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudwatchMetricAlarm)SetCount(val *float64) {
+func (j *jsiiProxy_CloudwatchMetricAlarm)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

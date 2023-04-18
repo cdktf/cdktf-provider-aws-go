@@ -64,6 +64,10 @@ func validateDataAwsDirectoryServiceDirectory_IsTerraformElementParameters(x int
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDirectoryServiceDirectory) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsDirectoryServiceDirectory) validateSetDirectoryIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func validateDataAwsEips_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEips) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEips) validateSetIdParameters(val *string) error {
 	return nil
 }

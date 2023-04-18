@@ -84,6 +84,10 @@ func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_ConfigConfigurationRecorder) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_ConfigConfigurationRecorder) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ConfigConfigurationRecorder) validateSetIdParameters(val *string) error {
 	return nil
 }

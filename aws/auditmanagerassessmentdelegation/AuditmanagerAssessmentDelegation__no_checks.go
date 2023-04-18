@@ -80,6 +80,10 @@ func (j *jsiiProxy_AuditmanagerAssessmentDelegation) validateSetControlSetIdPara
 	return nil
 }
 
+func (j *jsiiProxy_AuditmanagerAssessmentDelegation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AuditmanagerAssessmentDelegation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

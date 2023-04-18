@@ -68,6 +68,10 @@ func validateDataAwsRdsEngineVersion_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRdsEngineVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRdsEngineVersion) validateSetDefaultOnlyParameters(val interface{}) error {
 	return nil
 }

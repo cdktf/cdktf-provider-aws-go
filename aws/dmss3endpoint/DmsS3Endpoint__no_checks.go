@@ -120,6 +120,10 @@ func (j *jsiiProxy_DmsS3Endpoint) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_DmsS3Endpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsS3Endpoint) validateSetCsvDelimiterParameters(val *string) error {
 	return nil
 }

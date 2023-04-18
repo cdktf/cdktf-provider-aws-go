@@ -68,6 +68,10 @@ func (j *jsiiProxy_EmrStudioSessionMapping) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_EmrStudioSessionMapping) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrStudioSessionMapping) validateSetIdParameters(val *string) error {
 	return nil
 }

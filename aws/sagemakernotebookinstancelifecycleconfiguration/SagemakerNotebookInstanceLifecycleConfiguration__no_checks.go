@@ -68,6 +68,10 @@ func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

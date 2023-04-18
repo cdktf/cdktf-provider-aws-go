@@ -2,14 +2,14 @@ package dbclustersnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dbclustersnapshot/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dbclustersnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/db_cluster_snapshot aws_db_cluster_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/db_cluster_snapshot aws_db_cluster_snapshot}.
 type DbClusterSnapshot interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -23,9 +23,9 @@ type DbClusterSnapshot interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DbClusterIdentifier() *string
 	SetDbClusterIdentifier(val *string)
 	DbClusterIdentifierInput() *string
@@ -186,8 +186,8 @@ func (j *jsiiProxy_DbClusterSnapshot) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DbClusterSnapshot) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DbClusterSnapshot) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -547,7 +547,7 @@ func (j *jsiiProxy_DbClusterSnapshot) VpcId() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/db_cluster_snapshot aws_db_cluster_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/db_cluster_snapshot aws_db_cluster_snapshot} Resource.
 func NewDbClusterSnapshot(scope constructs.Construct, id *string, config *DbClusterSnapshotConfig) DbClusterSnapshot {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewDbClusterSnapshot(scope constructs.Construct, id *string, config *DbClus
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/db_cluster_snapshot aws_db_cluster_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/db_cluster_snapshot aws_db_cluster_snapshot} Resource.
 func NewDbClusterSnapshot_Override(d DbClusterSnapshot, scope constructs.Construct, id *string, config *DbClusterSnapshotConfig) {
 	_init_.Initialize()
 
@@ -587,7 +587,10 @@ func (j *jsiiProxy_DbClusterSnapshot)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbClusterSnapshot)SetCount(val *float64) {
+func (j *jsiiProxy_DbClusterSnapshot)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

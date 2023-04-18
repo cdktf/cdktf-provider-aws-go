@@ -96,6 +96,10 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53DomainsRegisteredDomain) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

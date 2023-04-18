@@ -68,6 +68,10 @@ func validateDataAwsIamPolicyDocument_IsTerraformElementParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsIamPolicyDocument) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsIamPolicyDocument) validateSetIdParameters(val *string) error {
 	return nil
 }

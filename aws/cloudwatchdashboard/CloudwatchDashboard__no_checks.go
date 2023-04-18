@@ -68,6 +68,10 @@ func (j *jsiiProxy_CloudwatchDashboard) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchDashboard) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchDashboard) validateSetDashboardBodyParameters(val *string) error {
 	return nil
 }

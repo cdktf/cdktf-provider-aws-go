@@ -72,6 +72,10 @@ func (j *jsiiProxy_IotAuthorizer) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_IotAuthorizer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotAuthorizer) validateSetEnableCachingForHttpParameters(val interface{}) error {
 	return nil
 }

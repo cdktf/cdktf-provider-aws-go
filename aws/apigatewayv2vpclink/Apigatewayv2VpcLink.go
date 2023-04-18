@@ -2,14 +2,14 @@ package apigatewayv2vpclink
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/apigatewayv2vpclink/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/apigatewayv2vpclink/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_vpc_link aws_apigatewayv2_vpc_link}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/apigatewayv2_vpc_link aws_apigatewayv2_vpc_link}.
 type Apigatewayv2VpcLink interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type Apigatewayv2VpcLink interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -163,8 +163,8 @@ func (j *jsiiProxy_Apigatewayv2VpcLink) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_Apigatewayv2VpcLink) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Apigatewayv2VpcLink) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -414,7 +414,7 @@ func (j *jsiiProxy_Apigatewayv2VpcLink) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_vpc_link aws_apigatewayv2_vpc_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/apigatewayv2_vpc_link aws_apigatewayv2_vpc_link} Resource.
 func NewApigatewayv2VpcLink(scope constructs.Construct, id *string, config *Apigatewayv2VpcLinkConfig) Apigatewayv2VpcLink {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewApigatewayv2VpcLink(scope constructs.Construct, id *string, config *Apig
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/apigatewayv2_vpc_link aws_apigatewayv2_vpc_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/apigatewayv2_vpc_link aws_apigatewayv2_vpc_link} Resource.
 func NewApigatewayv2VpcLink_Override(a Apigatewayv2VpcLink, scope constructs.Construct, id *string, config *Apigatewayv2VpcLinkConfig) {
 	_init_.Initialize()
 
@@ -454,7 +454,10 @@ func (j *jsiiProxy_Apigatewayv2VpcLink)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Apigatewayv2VpcLink)SetCount(val *float64) {
+func (j *jsiiProxy_Apigatewayv2VpcLink)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

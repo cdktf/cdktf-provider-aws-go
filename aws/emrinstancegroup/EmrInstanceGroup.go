@@ -2,14 +2,14 @@ package emrinstancegroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/emrinstancegroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/emrinstancegroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_group aws_emr_instance_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group aws_emr_instance_group}.
 type EmrInstanceGroup interface {
 	cdktf.TerraformResource
 	AutoscalingPolicy() *string
@@ -33,9 +33,9 @@ type EmrInstanceGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -251,8 +251,8 @@ func (j *jsiiProxy_EmrInstanceGroup) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_EmrInstanceGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EmrInstanceGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -522,7 +522,7 @@ func (j *jsiiProxy_EmrInstanceGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_group aws_emr_instance_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group aws_emr_instance_group} Resource.
 func NewEmrInstanceGroup(scope constructs.Construct, id *string, config *EmrInstanceGroupConfig) EmrInstanceGroup {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewEmrInstanceGroup(scope constructs.Construct, id *string, config *EmrInst
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/emr_instance_group aws_emr_instance_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group aws_emr_instance_group} Resource.
 func NewEmrInstanceGroup_Override(e EmrInstanceGroup, scope constructs.Construct, id *string, config *EmrInstanceGroupConfig) {
 	_init_.Initialize()
 
@@ -606,7 +606,10 @@ func (j *jsiiProxy_EmrInstanceGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EmrInstanceGroup)SetCount(val *float64) {
+func (j *jsiiProxy_EmrInstanceGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -64,6 +64,10 @@ func validateDataAwsWorkspacesWorkspace_IsTerraformElementParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsWorkspacesWorkspace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsWorkspacesWorkspace) validateSetDirectoryIdParameters(val *string) error {
 	return nil
 }

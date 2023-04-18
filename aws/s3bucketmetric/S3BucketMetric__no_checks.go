@@ -76,6 +76,10 @@ func (j *jsiiProxy_S3BucketMetric) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketMetric) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketMetric) validateSetIdParameters(val *string) error {
 	return nil
 }

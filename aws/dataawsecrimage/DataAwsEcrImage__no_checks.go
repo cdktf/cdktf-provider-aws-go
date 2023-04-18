@@ -64,6 +64,10 @@ func validateDataAwsEcrImage_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEcrImage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEcrImage) validateSetIdParameters(val *string) error {
 	return nil
 }

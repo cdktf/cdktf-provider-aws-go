@@ -76,6 +76,10 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_SnapshotCreateVolumePermission) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SnapshotCreateVolumePermission) validateSetIdParameters(val *string) error {
 	return nil
 }

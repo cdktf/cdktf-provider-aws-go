@@ -76,6 +76,10 @@ func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataAwsSesv2DedicatedIpPool_IsTerraformElementParameters(x interfac
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) validateSetIdParameters(val *string) error {
 	return nil
 }

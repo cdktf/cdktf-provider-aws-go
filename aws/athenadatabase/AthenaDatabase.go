@@ -2,14 +2,14 @@ package athenadatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/athenadatabase/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/athenadatabase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/athena_database aws_athena_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/athena_database aws_athena_database}.
 type AthenaDatabase interface {
 	cdktf.TerraformResource
 	AclConfiguration() AthenaDatabaseAclConfigurationOutputReference
@@ -29,9 +29,9 @@ type AthenaDatabase interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -226,8 +226,8 @@ func (j *jsiiProxy_AthenaDatabase) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_AthenaDatabase) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AthenaDatabase) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -477,7 +477,7 @@ func (j *jsiiProxy_AthenaDatabase) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/athena_database aws_athena_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/athena_database aws_athena_database} Resource.
 func NewAthenaDatabase(scope constructs.Construct, id *string, config *AthenaDatabaseConfig) AthenaDatabase {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewAthenaDatabase(scope constructs.Construct, id *string, config *AthenaDat
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/athena_database aws_athena_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/athena_database aws_athena_database} Resource.
 func NewAthenaDatabase_Override(a AthenaDatabase, scope constructs.Construct, id *string, config *AthenaDatabaseConfig) {
 	_init_.Initialize()
 
@@ -539,7 +539,10 @@ func (j *jsiiProxy_AthenaDatabase)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AthenaDatabase)SetCount(val *float64) {
+func (j *jsiiProxy_AthenaDatabase)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

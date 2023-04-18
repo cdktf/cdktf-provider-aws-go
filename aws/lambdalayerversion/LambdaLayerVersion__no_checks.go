@@ -76,6 +76,10 @@ func (j *jsiiProxy_LambdaLayerVersion) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_LambdaLayerVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaLayerVersion) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

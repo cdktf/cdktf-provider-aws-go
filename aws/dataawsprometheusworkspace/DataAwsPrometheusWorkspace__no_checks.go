@@ -64,6 +64,10 @@ func validateDataAwsPrometheusWorkspace_IsTerraformElementParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsPrometheusWorkspace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsPrometheusWorkspace) validateSetIdParameters(val *string) error {
 	return nil
 }

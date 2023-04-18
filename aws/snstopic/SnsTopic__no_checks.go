@@ -84,6 +84,10 @@ func (j *jsiiProxy_SnsTopic) validateSetContentBasedDeduplicationParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_SnsTopic) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SnsTopic) validateSetDeliveryPolicyParameters(val *string) error {
 	return nil
 }

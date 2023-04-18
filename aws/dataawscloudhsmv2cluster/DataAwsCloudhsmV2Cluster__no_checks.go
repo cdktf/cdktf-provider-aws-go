@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataAwsCloudhsmV2Cluster) validateSetClusterStateParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudhsmV2Cluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudhsmV2Cluster) validateSetIdParameters(val *string) error {
 	return nil
 }

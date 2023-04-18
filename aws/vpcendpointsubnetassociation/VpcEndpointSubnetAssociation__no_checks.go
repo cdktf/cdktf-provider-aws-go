@@ -72,6 +72,10 @@ func (j *jsiiProxy_VpcEndpointSubnetAssociation) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_VpcEndpointSubnetAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointSubnetAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

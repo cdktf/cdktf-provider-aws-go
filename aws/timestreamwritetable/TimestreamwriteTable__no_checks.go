@@ -76,6 +76,10 @@ func (j *jsiiProxy_TimestreamwriteTable) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_TimestreamwriteTable) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TimestreamwriteTable) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

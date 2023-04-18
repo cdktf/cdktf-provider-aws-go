@@ -2,14 +2,14 @@ package dataawsdbproxy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsdbproxy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsdbproxy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/db_proxy aws_db_proxy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/db_proxy aws_db_proxy}.
 type DataAwsDbProxy interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -19,9 +19,9 @@ type DataAwsDbProxy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DebugLogging() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
@@ -151,8 +151,8 @@ func (j *jsiiProxy_DataAwsDbProxy) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDbProxy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsDbProxy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -402,7 +402,7 @@ func (j *jsiiProxy_DataAwsDbProxy) VpcSubnetIds() *[]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/db_proxy aws_db_proxy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/db_proxy aws_db_proxy} Data Source.
 func NewDataAwsDbProxy(scope constructs.Construct, id *string, config *DataAwsDbProxyConfig) DataAwsDbProxy {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewDataAwsDbProxy(scope constructs.Construct, id *string, config *DataAwsDb
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/db_proxy aws_db_proxy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/db_proxy aws_db_proxy} Data Source.
 func NewDataAwsDbProxy_Override(d DataAwsDbProxy, scope constructs.Construct, id *string, config *DataAwsDbProxyConfig) {
 	_init_.Initialize()
 
@@ -431,7 +431,10 @@ func NewDataAwsDbProxy_Override(d DataAwsDbProxy, scope constructs.Construct, id
 	)
 }
 
-func (j *jsiiProxy_DataAwsDbProxy)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsDbProxy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

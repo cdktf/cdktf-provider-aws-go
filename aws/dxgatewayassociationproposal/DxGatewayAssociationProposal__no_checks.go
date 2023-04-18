@@ -76,6 +76,10 @@ func (j *jsiiProxy_DxGatewayAssociationProposal) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_DxGatewayAssociationProposal) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DxGatewayAssociationProposal) validateSetDxGatewayIdParameters(val *string) error {
 	return nil
 }

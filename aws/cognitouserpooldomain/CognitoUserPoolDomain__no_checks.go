@@ -72,6 +72,10 @@ func (j *jsiiProxy_CognitoUserPoolDomain) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_CognitoUserPoolDomain) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoUserPoolDomain) validateSetDomainParameters(val *string) error {
 	return nil
 }

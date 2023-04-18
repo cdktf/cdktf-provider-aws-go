@@ -84,6 +84,10 @@ func (j *jsiiProxy_AlbTargetGroup) validateSetConnectionTerminationParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_AlbTargetGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlbTargetGroup) validateSetDeregistrationDelayParameters(val *string) error {
 	return nil
 }

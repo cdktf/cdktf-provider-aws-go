@@ -80,6 +80,10 @@ func (j *jsiiProxy_BatchJobDefinition) validateSetContainerPropertiesParameters(
 	return nil
 }
 
+func (j *jsiiProxy_BatchJobDefinition) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchJobDefinition) validateSetIdParameters(val *string) error {
 	return nil
 }

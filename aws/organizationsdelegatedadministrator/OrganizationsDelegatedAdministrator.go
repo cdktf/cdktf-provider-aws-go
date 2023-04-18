@@ -2,14 +2,14 @@ package organizationsdelegatedadministrator
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/organizationsdelegatedadministrator/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/organizationsdelegatedadministrator/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/organizations_delegated_administrator aws_organizations_delegated_administrator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/organizations_delegated_administrator aws_organizations_delegated_administrator}.
 type OrganizationsDelegatedAdministrator interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -25,9 +25,9 @@ type OrganizationsDelegatedAdministrator interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DelegationEnabledDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -178,8 +178,8 @@ func (j *jsiiProxy_OrganizationsDelegatedAdministrator) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_OrganizationsDelegatedAdministrator) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_OrganizationsDelegatedAdministrator) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -409,7 +409,7 @@ func (j *jsiiProxy_OrganizationsDelegatedAdministrator) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/organizations_delegated_administrator aws_organizations_delegated_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/organizations_delegated_administrator aws_organizations_delegated_administrator} Resource.
 func NewOrganizationsDelegatedAdministrator(scope constructs.Construct, id *string, config *OrganizationsDelegatedAdministratorConfig) OrganizationsDelegatedAdministrator {
 	_init_.Initialize()
 
@@ -427,7 +427,7 @@ func NewOrganizationsDelegatedAdministrator(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/organizations_delegated_administrator aws_organizations_delegated_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/organizations_delegated_administrator aws_organizations_delegated_administrator} Resource.
 func NewOrganizationsDelegatedAdministrator_Override(o OrganizationsDelegatedAdministrator, scope constructs.Construct, id *string, config *OrganizationsDelegatedAdministratorConfig) {
 	_init_.Initialize()
 
@@ -460,7 +460,10 @@ func (j *jsiiProxy_OrganizationsDelegatedAdministrator)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_OrganizationsDelegatedAdministrator)SetCount(val *float64) {
+func (j *jsiiProxy_OrganizationsDelegatedAdministrator)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

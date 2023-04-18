@@ -76,6 +76,10 @@ func (j *jsiiProxy_LbListenerRule) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_LbListenerRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LbListenerRule) validateSetIdParameters(val *string) error {
 	return nil
 }

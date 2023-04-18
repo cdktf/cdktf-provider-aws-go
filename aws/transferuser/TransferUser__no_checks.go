@@ -80,6 +80,10 @@ func (j *jsiiProxy_TransferUser) validateSetConnectionParameters(val interface{}
 	return nil
 }
 
+func (j *jsiiProxy_TransferUser) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransferUser) validateSetHomeDirectoryParameters(val *string) error {
 	return nil
 }

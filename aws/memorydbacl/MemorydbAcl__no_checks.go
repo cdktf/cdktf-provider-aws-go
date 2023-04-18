@@ -68,6 +68,10 @@ func (j *jsiiProxy_MemorydbAcl) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_MemorydbAcl) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MemorydbAcl) validateSetIdParameters(val *string) error {
 	return nil
 }

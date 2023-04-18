@@ -2,14 +2,14 @@ package lambdafunctioneventinvokeconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/lambdafunctioneventinvokeconfig/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/lambdafunctioneventinvokeconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config aws_lambda_function_event_invoke_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lambda_function_event_invoke_config aws_lambda_function_event_invoke_config}.
 type LambdaFunctionEventInvokeConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type LambdaFunctionEventInvokeConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -154,8 +154,8 @@ func (j *jsiiProxy_LambdaFunctionEventInvokeConfig) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_LambdaFunctionEventInvokeConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LambdaFunctionEventInvokeConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -405,7 +405,7 @@ func (j *jsiiProxy_LambdaFunctionEventInvokeConfig) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config aws_lambda_function_event_invoke_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lambda_function_event_invoke_config aws_lambda_function_event_invoke_config} Resource.
 func NewLambdaFunctionEventInvokeConfig(scope constructs.Construct, id *string, config *LambdaFunctionEventInvokeConfigConfig) LambdaFunctionEventInvokeConfig {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewLambdaFunctionEventInvokeConfig(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lambda_function_event_invoke_config aws_lambda_function_event_invoke_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lambda_function_event_invoke_config aws_lambda_function_event_invoke_config} Resource.
 func NewLambdaFunctionEventInvokeConfig_Override(l LambdaFunctionEventInvokeConfig, scope constructs.Construct, id *string, config *LambdaFunctionEventInvokeConfigConfig) {
 	_init_.Initialize()
 
@@ -445,7 +445,10 @@ func (j *jsiiProxy_LambdaFunctionEventInvokeConfig)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionEventInvokeConfig)SetCount(val *float64) {
+func (j *jsiiProxy_LambdaFunctionEventInvokeConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

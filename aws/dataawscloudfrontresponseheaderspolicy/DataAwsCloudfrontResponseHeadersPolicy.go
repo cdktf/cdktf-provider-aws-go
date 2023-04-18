@@ -2,14 +2,14 @@ package dataawscloudfrontresponseheaderspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawscloudfrontresponseheaderspolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawscloudfrontresponseheaderspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy}.
 type DataAwsCloudfrontResponseHeadersPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -19,9 +19,9 @@ type DataAwsCloudfrontResponseHeadersPolicy interface {
 	ConstructNodeMetadata() *map[string]interface{}
 	CorsConfig() DataAwsCloudfrontResponseHeadersPolicyCorsConfigList
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomHeadersConfig() DataAwsCloudfrontResponseHeadersPolicyCustomHeadersConfigList
 	// Experimental.
 	DependsOn() *[]*string
@@ -147,8 +147,8 @@ func (j *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicy) CorsConfig() DataAwsC
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -348,7 +348,7 @@ func (j *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicy) TerraformResourceType
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy} Data Source.
 func NewDataAwsCloudfrontResponseHeadersPolicy(scope constructs.Construct, id *string, config *DataAwsCloudfrontResponseHeadersPolicyConfig) DataAwsCloudfrontResponseHeadersPolicy {
 	_init_.Initialize()
 
@@ -366,7 +366,7 @@ func NewDataAwsCloudfrontResponseHeadersPolicy(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy} Data Source.
 func NewDataAwsCloudfrontResponseHeadersPolicy_Override(d DataAwsCloudfrontResponseHeadersPolicy, scope constructs.Construct, id *string, config *DataAwsCloudfrontResponseHeadersPolicyConfig) {
 	_init_.Initialize()
 
@@ -377,7 +377,10 @@ func NewDataAwsCloudfrontResponseHeadersPolicy_Override(d DataAwsCloudfrontRespo
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

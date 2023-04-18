@@ -72,6 +72,10 @@ func (j *jsiiProxy_DocdbEventSubscription) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_DocdbEventSubscription) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DocdbEventSubscription) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

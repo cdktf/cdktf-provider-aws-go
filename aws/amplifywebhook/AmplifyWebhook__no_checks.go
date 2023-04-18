@@ -76,6 +76,10 @@ func (j *jsiiProxy_AmplifyWebhook) validateSetConnectionParameters(val interface
 	return nil
 }
 
+func (j *jsiiProxy_AmplifyWebhook) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AmplifyWebhook) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

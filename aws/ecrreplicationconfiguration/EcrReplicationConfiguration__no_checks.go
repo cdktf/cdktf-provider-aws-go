@@ -72,6 +72,10 @@ func (j *jsiiProxy_EcrReplicationConfiguration) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_EcrReplicationConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcrReplicationConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

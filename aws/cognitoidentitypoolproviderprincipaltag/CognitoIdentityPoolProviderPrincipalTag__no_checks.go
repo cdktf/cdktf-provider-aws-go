@@ -68,6 +68,10 @@ func (j *jsiiProxy_CognitoIdentityPoolProviderPrincipalTag) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_CognitoIdentityPoolProviderPrincipalTag) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoIdentityPoolProviderPrincipalTag) validateSetIdParameters(val *string) error {
 	return nil
 }

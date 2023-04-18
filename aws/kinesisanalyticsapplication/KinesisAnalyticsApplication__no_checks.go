@@ -88,6 +88,10 @@ func (j *jsiiProxy_KinesisAnalyticsApplication) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_KinesisAnalyticsApplication) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KinesisAnalyticsApplication) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

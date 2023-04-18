@@ -68,6 +68,10 @@ func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_StoragegatewayStoredIscsiVolume) validateSetDiskIdParameters(val *string) error {
 	return nil
 }

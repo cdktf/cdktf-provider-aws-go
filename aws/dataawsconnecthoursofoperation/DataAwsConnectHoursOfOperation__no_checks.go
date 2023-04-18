@@ -64,6 +64,10 @@ func validateDataAwsConnectHoursOfOperation_IsTerraformElementParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectHoursOfOperation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectHoursOfOperation) validateSetHoursOfOperationIdParameters(val *string) error {
 	return nil
 }

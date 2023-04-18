@@ -68,6 +68,10 @@ func (j *jsiiProxy_VpcEndpointConnectionAccepter) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_VpcEndpointConnectionAccepter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointConnectionAccepter) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_RumAppMonitor) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_RumAppMonitor) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RumAppMonitor) validateSetCwLogEnabledParameters(val interface{}) error {
 	return nil
 }

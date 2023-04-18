@@ -2,7 +2,7 @@ package fsxfilecache
 
 
 type FsxFileCacheLustreConfigurationMetadataConfiguration struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/fsx_file_cache#storage_capacity FsxFileCache#storage_capacity}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/fsx_file_cache#storage_capacity FsxFileCache#storage_capacity}.
 	StorageCapacity *float64 `field:"required" json:"storageCapacity" yaml:"storageCapacity"`
 }
 

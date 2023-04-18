@@ -72,6 +72,10 @@ func (j *jsiiProxy_ApprunnerConnection) validateSetConnectionNameParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_ApprunnerConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerConnection) validateSetIdParameters(val *string) error {
 	return nil
 }

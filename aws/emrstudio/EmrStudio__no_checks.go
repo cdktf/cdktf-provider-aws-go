@@ -72,6 +72,10 @@ func (j *jsiiProxy_EmrStudio) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_EmrStudio) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrStudio) validateSetDefaultS3LocationParameters(val *string) error {
 	return nil
 }

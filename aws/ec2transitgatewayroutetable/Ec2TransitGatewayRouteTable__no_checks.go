@@ -68,6 +68,10 @@ func (j *jsiiProxy_Ec2TransitGatewayRouteTable) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_Ec2TransitGatewayRouteTable) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2TransitGatewayRouteTable) validateSetIdParameters(val *string) error {
 	return nil
 }

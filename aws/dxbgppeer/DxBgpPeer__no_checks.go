@@ -88,6 +88,10 @@ func (j *jsiiProxy_DxBgpPeer) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DxBgpPeer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DxBgpPeer) validateSetCustomerAddressParameters(val *string) error {
 	return nil
 }

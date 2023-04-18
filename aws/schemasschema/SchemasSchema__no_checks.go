@@ -72,6 +72,10 @@ func (j *jsiiProxy_SchemasSchema) validateSetContentParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_SchemasSchema) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SchemasSchema) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

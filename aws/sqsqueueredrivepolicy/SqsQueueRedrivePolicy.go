@@ -2,14 +2,14 @@ package sqsqueueredrivepolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/sqsqueueredrivepolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/sqsqueueredrivepolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue_redrive_policy aws_sqs_queue_redrive_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sqs_queue_redrive_policy aws_sqs_queue_redrive_policy}.
 type SqsQueueRedrivePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type SqsQueueRedrivePolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -141,8 +141,8 @@ func (j *jsiiProxy_SqsQueueRedrivePolicy) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_SqsQueueRedrivePolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SqsQueueRedrivePolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -332,7 +332,7 @@ func (j *jsiiProxy_SqsQueueRedrivePolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue_redrive_policy aws_sqs_queue_redrive_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sqs_queue_redrive_policy aws_sqs_queue_redrive_policy} Resource.
 func NewSqsQueueRedrivePolicy(scope constructs.Construct, id *string, config *SqsQueueRedrivePolicyConfig) SqsQueueRedrivePolicy {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewSqsQueueRedrivePolicy(scope constructs.Construct, id *string, config *Sq
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/sqs_queue_redrive_policy aws_sqs_queue_redrive_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sqs_queue_redrive_policy aws_sqs_queue_redrive_policy} Resource.
 func NewSqsQueueRedrivePolicy_Override(s SqsQueueRedrivePolicy, scope constructs.Construct, id *string, config *SqsQueueRedrivePolicyConfig) {
 	_init_.Initialize()
 
@@ -372,7 +372,10 @@ func (j *jsiiProxy_SqsQueueRedrivePolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_SqsQueueRedrivePolicy)SetCount(val *float64) {
+func (j *jsiiProxy_SqsQueueRedrivePolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

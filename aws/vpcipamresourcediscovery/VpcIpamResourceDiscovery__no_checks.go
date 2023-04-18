@@ -76,6 +76,10 @@ func (j *jsiiProxy_VpcIpamResourceDiscovery) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_VpcIpamResourceDiscovery) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpamResourceDiscovery) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

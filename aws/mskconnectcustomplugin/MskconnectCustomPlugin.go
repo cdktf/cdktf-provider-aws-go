@@ -2,14 +2,14 @@ package mskconnectcustomplugin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/mskconnectcustomplugin/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/mskconnectcustomplugin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin aws_mskconnect_custom_plugin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/mskconnect_custom_plugin aws_mskconnect_custom_plugin}.
 type MskconnectCustomPlugin interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -25,9 +25,9 @@ type MskconnectCustomPlugin interface {
 	SetContentType(val *string)
 	ContentTypeInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -185,8 +185,8 @@ func (j *jsiiProxy_MskconnectCustomPlugin) ContentTypeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MskconnectCustomPlugin) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MskconnectCustomPlugin) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -436,7 +436,7 @@ func (j *jsiiProxy_MskconnectCustomPlugin) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin aws_mskconnect_custom_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/mskconnect_custom_plugin aws_mskconnect_custom_plugin} Resource.
 func NewMskconnectCustomPlugin(scope constructs.Construct, id *string, config *MskconnectCustomPluginConfig) MskconnectCustomPlugin {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewMskconnectCustomPlugin(scope constructs.Construct, id *string, config *M
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_custom_plugin aws_mskconnect_custom_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/mskconnect_custom_plugin aws_mskconnect_custom_plugin} Resource.
 func NewMskconnectCustomPlugin_Override(m MskconnectCustomPlugin, scope constructs.Construct, id *string, config *MskconnectCustomPluginConfig) {
 	_init_.Initialize()
 
@@ -487,7 +487,10 @@ func (j *jsiiProxy_MskconnectCustomPlugin)SetContentType(val *string) {
 	)
 }
 
-func (j *jsiiProxy_MskconnectCustomPlugin)SetCount(val *float64) {
+func (j *jsiiProxy_MskconnectCustomPlugin)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -76,6 +76,10 @@ func (j *jsiiProxy_VpcSecurityGroupIngressRule) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_VpcSecurityGroupIngressRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcSecurityGroupIngressRule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

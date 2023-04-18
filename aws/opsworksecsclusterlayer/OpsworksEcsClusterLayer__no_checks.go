@@ -92,6 +92,10 @@ func (j *jsiiProxy_OpsworksEcsClusterLayer) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_OpsworksEcsClusterLayer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpsworksEcsClusterLayer) validateSetCustomConfigureRecipesParameters(val *[]*string) error {
 	return nil
 }

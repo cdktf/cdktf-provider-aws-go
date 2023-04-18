@@ -88,6 +88,10 @@ func (j *jsiiProxy_DaxCluster) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_DaxCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DaxCluster) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

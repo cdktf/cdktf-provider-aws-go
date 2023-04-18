@@ -76,6 +76,10 @@ func (j *jsiiProxy_S3BucketLoggingA) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketLoggingA) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketLoggingA) validateSetExpectedBucketOwnerParameters(val *string) error {
 	return nil
 }

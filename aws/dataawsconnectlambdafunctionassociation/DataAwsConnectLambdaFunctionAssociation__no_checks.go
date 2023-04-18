@@ -64,6 +64,10 @@ func validateDataAwsConnectLambdaFunctionAssociation_IsTerraformElementParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) validateSetFunctionArnParameters(val *string) error {
 	return nil
 }

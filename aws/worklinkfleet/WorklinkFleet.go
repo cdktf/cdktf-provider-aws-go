@@ -2,14 +2,14 @@ package worklinkfleet
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/worklinkfleet/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/worklinkfleet/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/worklink_fleet aws_worklink_fleet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/worklink_fleet aws_worklink_fleet}.
 type WorklinkFleet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -26,9 +26,9 @@ type WorklinkFleet interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreatedTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -206,8 +206,8 @@ func (j *jsiiProxy_WorklinkFleet) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_WorklinkFleet) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_WorklinkFleet) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -497,7 +497,7 @@ func (j *jsiiProxy_WorklinkFleet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/worklink_fleet aws_worklink_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/worklink_fleet aws_worklink_fleet} Resource.
 func NewWorklinkFleet(scope constructs.Construct, id *string, config *WorklinkFleetConfig) WorklinkFleet {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewWorklinkFleet(scope constructs.Construct, id *string, config *WorklinkFl
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/worklink_fleet aws_worklink_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/worklink_fleet aws_worklink_fleet} Resource.
 func NewWorklinkFleet_Override(w WorklinkFleet, scope constructs.Construct, id *string, config *WorklinkFleetConfig) {
 	_init_.Initialize()
 
@@ -548,7 +548,10 @@ func (j *jsiiProxy_WorklinkFleet)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_WorklinkFleet)SetCount(val *float64) {
+func (j *jsiiProxy_WorklinkFleet)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

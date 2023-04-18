@@ -72,6 +72,10 @@ func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetDefaultResultParameters(val *string) error {
 	return nil
 }

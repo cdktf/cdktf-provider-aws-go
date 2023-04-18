@@ -2,14 +2,14 @@ package sesdomainidentityverification
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/sesdomainidentityverification/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/sesdomainidentityverification/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ses_domain_identity_verification aws_ses_domain_identity_verification}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_domain_identity_verification aws_ses_domain_identity_verification}.
 type SesDomainIdentityVerification interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type SesDomainIdentityVerification interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -153,8 +153,8 @@ func (j *jsiiProxy_SesDomainIdentityVerification) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_SesDomainIdentityVerification) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_SesDomainIdentityVerification) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -344,7 +344,7 @@ func (j *jsiiProxy_SesDomainIdentityVerification) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ses_domain_identity_verification aws_ses_domain_identity_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_domain_identity_verification aws_ses_domain_identity_verification} Resource.
 func NewSesDomainIdentityVerification(scope constructs.Construct, id *string, config *SesDomainIdentityVerificationConfig) SesDomainIdentityVerification {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewSesDomainIdentityVerification(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ses_domain_identity_verification aws_ses_domain_identity_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ses_domain_identity_verification aws_ses_domain_identity_verification} Resource.
 func NewSesDomainIdentityVerification_Override(s SesDomainIdentityVerification, scope constructs.Construct, id *string, config *SesDomainIdentityVerificationConfig) {
 	_init_.Initialize()
 
@@ -384,7 +384,10 @@ func (j *jsiiProxy_SesDomainIdentityVerification)SetConnection(val interface{}) 
 	)
 }
 
-func (j *jsiiProxy_SesDomainIdentityVerification)SetCount(val *float64) {
+func (j *jsiiProxy_SesDomainIdentityVerification)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_KeyspacesKeyspace) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_KeyspacesKeyspace) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KeyspacesKeyspace) validateSetIdParameters(val *string) error {
 	return nil
 }

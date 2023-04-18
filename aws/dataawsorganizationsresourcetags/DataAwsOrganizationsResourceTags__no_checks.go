@@ -64,6 +64,10 @@ func validateDataAwsOrganizationsResourceTags_IsTerraformElementParameters(x int
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOrganizationsResourceTags) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsOrganizationsResourceTags) validateSetIdParameters(val *string) error {
 	return nil
 }

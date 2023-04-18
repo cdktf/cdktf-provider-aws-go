@@ -128,6 +128,10 @@ func (j *jsiiProxy_RdsCluster) validateSetCopyTagsToSnapshotParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_RdsCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsCluster) validateSetDatabaseNameParameters(val *string) error {
 	return nil
 }

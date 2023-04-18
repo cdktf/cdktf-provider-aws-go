@@ -72,6 +72,10 @@ func (j *jsiiProxy_ImagebuilderComponent) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_ImagebuilderComponent) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImagebuilderComponent) validateSetDataParameters(val *string) error {
 	return nil
 }

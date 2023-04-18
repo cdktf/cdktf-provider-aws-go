@@ -2,14 +2,14 @@ package appintegrationseventintegration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/appintegrationseventintegration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/appintegrationseventintegration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/appintegrations_event_integration aws_appintegrations_event_integration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appintegrations_event_integration aws_appintegrations_event_integration}.
 type AppintegrationsEventIntegration interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type AppintegrationsEventIntegration interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -167,8 +167,8 @@ func (j *jsiiProxy_AppintegrationsEventIntegration) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_AppintegrationsEventIntegration) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppintegrationsEventIntegration) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -438,7 +438,7 @@ func (j *jsiiProxy_AppintegrationsEventIntegration) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/appintegrations_event_integration aws_appintegrations_event_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appintegrations_event_integration aws_appintegrations_event_integration} Resource.
 func NewAppintegrationsEventIntegration(scope constructs.Construct, id *string, config *AppintegrationsEventIntegrationConfig) AppintegrationsEventIntegration {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewAppintegrationsEventIntegration(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/appintegrations_event_integration aws_appintegrations_event_integration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appintegrations_event_integration aws_appintegrations_event_integration} Resource.
 func NewAppintegrationsEventIntegration_Override(a AppintegrationsEventIntegration, scope constructs.Construct, id *string, config *AppintegrationsEventIntegrationConfig) {
 	_init_.Initialize()
 
@@ -478,7 +478,10 @@ func (j *jsiiProxy_AppintegrationsEventIntegration)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_AppintegrationsEventIntegration)SetCount(val *float64) {
+func (j *jsiiProxy_AppintegrationsEventIntegration)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

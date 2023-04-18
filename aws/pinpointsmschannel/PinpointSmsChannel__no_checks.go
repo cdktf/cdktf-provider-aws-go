@@ -72,6 +72,10 @@ func (j *jsiiProxy_PinpointSmsChannel) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_PinpointSmsChannel) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointSmsChannel) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

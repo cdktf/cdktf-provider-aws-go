@@ -72,6 +72,10 @@ func (j *jsiiProxy_LocationPlaceIndex) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_LocationPlaceIndex) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LocationPlaceIndex) validateSetDataSourceParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package controltowercontrol
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/controltowercontrol/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/controltowercontrol/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/controltower_control aws_controltower_control}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/controltower_control aws_controltower_control}.
 type ControltowerControl interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type ControltowerControl interface {
 	SetControlIdentifier(val *string)
 	ControlIdentifierInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_ControltowerControl) ControlIdentifierInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ControltowerControl) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ControltowerControl) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_ControltowerControl) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/controltower_control aws_controltower_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/controltower_control aws_controltower_control} Resource.
 func NewControltowerControl(scope constructs.Construct, id *string, config *ControltowerControlConfig) ControltowerControl {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewControltowerControl(scope constructs.Construct, id *string, config *Cont
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/controltower_control aws_controltower_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/controltower_control aws_controltower_control} Resource.
 func NewControltowerControl_Override(c ControltowerControl, scope constructs.Construct, id *string, config *ControltowerControlConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_ControltowerControl)SetControlIdentifier(val *string) {
 	)
 }
 
-func (j *jsiiProxy_ControltowerControl)SetCount(val *float64) {
+func (j *jsiiProxy_ControltowerControl)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

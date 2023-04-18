@@ -64,6 +64,10 @@ func validateDataAwsLambdaFunction_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLambdaFunction) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLambdaFunction) validateSetFunctionNameParameters(val *string) error {
 	return nil
 }

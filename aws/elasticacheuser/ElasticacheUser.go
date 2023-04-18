@@ -2,14 +2,14 @@ package elasticacheuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/elasticacheuser/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/elasticacheuser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user aws_elasticache_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_user aws_elasticache_user}.
 type ElasticacheUser interface {
 	cdktf.TerraformResource
 	AccessString() *string
@@ -27,9 +27,9 @@ type ElasticacheUser interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -218,8 +218,8 @@ func (j *jsiiProxy_ElasticacheUser) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheUser) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ElasticacheUser) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -509,7 +509,7 @@ func (j *jsiiProxy_ElasticacheUser) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user aws_elasticache_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_user aws_elasticache_user} Resource.
 func NewElasticacheUser(scope constructs.Construct, id *string, config *ElasticacheUserConfig) ElasticacheUser {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewElasticacheUser(scope constructs.Construct, id *string, config *Elastica
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/elasticache_user aws_elasticache_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_user aws_elasticache_user} Resource.
 func NewElasticacheUser_Override(e ElasticacheUser, scope constructs.Construct, id *string, config *ElasticacheUserConfig) {
 	_init_.Initialize()
 
@@ -560,7 +560,10 @@ func (j *jsiiProxy_ElasticacheUser)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheUser)SetCount(val *float64) {
+func (j *jsiiProxy_ElasticacheUser)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -92,6 +92,10 @@ func (j *jsiiProxy_EcsTaskSet) validateSetConnectionParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_EcsTaskSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsTaskSet) validateSetExternalIdParameters(val *string) error {
 	return nil
 }

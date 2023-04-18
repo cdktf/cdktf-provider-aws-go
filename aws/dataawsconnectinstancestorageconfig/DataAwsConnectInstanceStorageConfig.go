@@ -2,14 +2,14 @@ package dataawsconnectinstancestorageconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsconnectinstancestorageconfig/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsconnectinstancestorageconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/connect_instance_storage_config aws_connect_instance_storage_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/connect_instance_storage_config aws_connect_instance_storage_config}.
 type DataAwsConnectInstanceStorageConfig interface {
 	cdktf.TerraformDataSource
 	AssociationId() *string
@@ -20,9 +20,9 @@ type DataAwsConnectInstanceStorageConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -147,8 +147,8 @@ func (j *jsiiProxy_DataAwsConnectInstanceStorageConfig) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsConnectInstanceStorageConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsConnectInstanceStorageConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -338,7 +338,7 @@ func (j *jsiiProxy_DataAwsConnectInstanceStorageConfig) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/connect_instance_storage_config aws_connect_instance_storage_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/connect_instance_storage_config aws_connect_instance_storage_config} Data Source.
 func NewDataAwsConnectInstanceStorageConfig(scope constructs.Construct, id *string, config *DataAwsConnectInstanceStorageConfigConfig) DataAwsConnectInstanceStorageConfig {
 	_init_.Initialize()
 
@@ -356,7 +356,7 @@ func NewDataAwsConnectInstanceStorageConfig(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/connect_instance_storage_config aws_connect_instance_storage_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/connect_instance_storage_config aws_connect_instance_storage_config} Data Source.
 func NewDataAwsConnectInstanceStorageConfig_Override(d DataAwsConnectInstanceStorageConfig, scope constructs.Construct, id *string, config *DataAwsConnectInstanceStorageConfigConfig) {
 	_init_.Initialize()
 
@@ -378,7 +378,10 @@ func (j *jsiiProxy_DataAwsConnectInstanceStorageConfig)SetAssociationId(val *str
 	)
 }
 
-func (j *jsiiProxy_DataAwsConnectInstanceStorageConfig)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsConnectInstanceStorageConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

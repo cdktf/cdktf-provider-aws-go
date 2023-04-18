@@ -2,14 +2,14 @@ package cecostallocationtag
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/cecostallocationtag/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/cecostallocationtag/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ce_cost_allocation_tag aws_ce_cost_allocation_tag}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ce_cost_allocation_tag aws_ce_cost_allocation_tag}.
 type CeCostAllocationTag interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type CeCostAllocationTag interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_CeCostAllocationTag) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_CeCostAllocationTag) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CeCostAllocationTag) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -343,7 +343,7 @@ func (j *jsiiProxy_CeCostAllocationTag) Type() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ce_cost_allocation_tag aws_ce_cost_allocation_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ce_cost_allocation_tag aws_ce_cost_allocation_tag} Resource.
 func NewCeCostAllocationTag(scope constructs.Construct, id *string, config *CeCostAllocationTagConfig) CeCostAllocationTag {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewCeCostAllocationTag(scope constructs.Construct, id *string, config *CeCo
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ce_cost_allocation_tag aws_ce_cost_allocation_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ce_cost_allocation_tag aws_ce_cost_allocation_tag} Resource.
 func NewCeCostAllocationTag_Override(c CeCostAllocationTag, scope constructs.Construct, id *string, config *CeCostAllocationTagConfig) {
 	_init_.Initialize()
 
@@ -383,7 +383,10 @@ func (j *jsiiProxy_CeCostAllocationTag)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CeCostAllocationTag)SetCount(val *float64) {
+func (j *jsiiProxy_CeCostAllocationTag)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

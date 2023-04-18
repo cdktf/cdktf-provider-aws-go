@@ -84,6 +84,10 @@ func (j *jsiiProxy_FsxFileCache) validateSetCopyTagsToDataRepositoryAssociations
 	return nil
 }
 
+func (j *jsiiProxy_FsxFileCache) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxFileCache) validateSetFileCacheTypeParameters(val *string) error {
 	return nil
 }

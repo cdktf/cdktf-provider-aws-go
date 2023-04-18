@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsEksAddonVersion) validateSetAddonNameParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEksAddonVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEksAddonVersion) validateSetIdParameters(val *string) error {
 	return nil
 }

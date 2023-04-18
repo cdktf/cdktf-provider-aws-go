@@ -2,7 +2,7 @@ package gameliftgameservergroup
 
 
 type GameliftGameServerGroupAutoScalingPolicyTargetTrackingConfiguration struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/r/gamelift_game_server_group#target_value GameliftGameServerGroup#target_value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/gamelift_game_server_group#target_value GameliftGameServerGroup#target_value}.
 	TargetValue *float64 `field:"required" json:"targetValue" yaml:"targetValue"`
 }
 

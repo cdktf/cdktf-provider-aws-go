@@ -2,14 +2,14 @@ package vpcnetworkperformancemetricsubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/vpcnetworkperformancemetricsubscription/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/vpcnetworkperformancemetricsubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/vpc_network_performance_metric_subscription aws_vpc_network_performance_metric_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpc_network_performance_metric_subscription aws_vpc_network_performance_metric_subscription}.
 type VpcNetworkPerformanceMetricSubscription interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type VpcNetworkPerformanceMetricSubscription interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -150,8 +150,8 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_network_performance_metric_subscription aws_vpc_network_performance_metric_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpc_network_performance_metric_subscription aws_vpc_network_performance_metric_subscription} Resource.
 func NewVpcNetworkPerformanceMetricSubscription(scope constructs.Construct, id *string, config *VpcNetworkPerformanceMetricSubscriptionConfig) VpcNetworkPerformanceMetricSubscription {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewVpcNetworkPerformanceMetricSubscription(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/vpc_network_performance_metric_subscription aws_vpc_network_performance_metric_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/vpc_network_performance_metric_subscription aws_vpc_network_performance_metric_subscription} Resource.
 func NewVpcNetworkPerformanceMetricSubscription_Override(v VpcNetworkPerformanceMetricSubscription, scope constructs.Construct, id *string, config *VpcNetworkPerformanceMetricSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -431,7 +431,10 @@ func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetConnection(val int
 	)
 }
 
-func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetCount(val *float64) {
+func (j *jsiiProxy_VpcNetworkPerformanceMetricSubscription)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

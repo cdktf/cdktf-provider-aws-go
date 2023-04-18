@@ -2,14 +2,14 @@ package dataawsvpcs
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsvpcs/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpcs/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/vpcs aws_vpcs}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/vpcs aws_vpcs}.
 type DataAwsVpcs interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAwsVpcs interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -130,8 +130,8 @@ func (j *jsiiProxy_DataAwsVpcs) ConstructNodeMetadata() *map[string]interface{} 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsVpcs) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsVpcs) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DataAwsVpcs) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/vpcs aws_vpcs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/vpcs aws_vpcs} Data Source.
 func NewDataAwsVpcs(scope constructs.Construct, id *string, config *DataAwsVpcsConfig) DataAwsVpcs {
 	_init_.Initialize()
 
@@ -359,7 +359,7 @@ func NewDataAwsVpcs(scope constructs.Construct, id *string, config *DataAwsVpcsC
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/vpcs aws_vpcs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/vpcs aws_vpcs} Data Source.
 func NewDataAwsVpcs_Override(d DataAwsVpcs, scope constructs.Construct, id *string, config *DataAwsVpcsConfig) {
 	_init_.Initialize()
 
@@ -370,7 +370,10 @@ func NewDataAwsVpcs_Override(d DataAwsVpcs, scope constructs.Construct, id *stri
 	)
 }
 
-func (j *jsiiProxy_DataAwsVpcs)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsVpcs)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

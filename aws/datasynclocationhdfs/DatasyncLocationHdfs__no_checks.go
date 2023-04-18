@@ -88,6 +88,10 @@ func (j *jsiiProxy_DatasyncLocationHdfs) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncLocationHdfs) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationHdfs) validateSetIdParameters(val *string) error {
 	return nil
 }

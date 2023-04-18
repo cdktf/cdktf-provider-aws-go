@@ -2,9 +2,9 @@ package dataawsami
 
 
 type DataAwsAmiFilter struct {
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami#name DataAwsAmi#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ami#name DataAwsAmi#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/aws/d/ami#values DataAwsAmi#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ami#values DataAwsAmi#values}.
 	Values *[]*string `field:"required" json:"values" yaml:"values"`
 }
 

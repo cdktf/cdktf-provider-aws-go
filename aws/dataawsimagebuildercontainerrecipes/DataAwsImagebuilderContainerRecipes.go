@@ -2,14 +2,14 @@ package dataawsimagebuildercontainerrecipes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsimagebuildercontainerrecipes/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsimagebuildercontainerrecipes/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_container_recipes aws_imagebuilder_container_recipes}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/imagebuilder_container_recipes aws_imagebuilder_container_recipes}.
 type DataAwsImagebuilderContainerRecipes interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -18,9 +18,9 @@ type DataAwsImagebuilderContainerRecipes interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -137,8 +137,8 @@ func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_container_recipes aws_imagebuilder_container_recipes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/imagebuilder_container_recipes aws_imagebuilder_container_recipes} Data Source.
 func NewDataAwsImagebuilderContainerRecipes(scope constructs.Construct, id *string, config *DataAwsImagebuilderContainerRecipesConfig) DataAwsImagebuilderContainerRecipes {
 	_init_.Initialize()
 
@@ -346,7 +346,7 @@ func NewDataAwsImagebuilderContainerRecipes(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/imagebuilder_container_recipes aws_imagebuilder_container_recipes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/imagebuilder_container_recipes aws_imagebuilder_container_recipes} Data Source.
 func NewDataAwsImagebuilderContainerRecipes_Override(d DataAwsImagebuilderContainerRecipes, scope constructs.Construct, id *string, config *DataAwsImagebuilderContainerRecipesConfig) {
 	_init_.Initialize()
 
@@ -357,7 +357,10 @@ func NewDataAwsImagebuilderContainerRecipes_Override(d DataAwsImagebuilderContai
 	)
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

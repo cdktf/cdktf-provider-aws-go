@@ -72,6 +72,10 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayConnectPeerAssociation) validateS
 	return nil
 }
 
+func (j *jsiiProxy_NetworkmanagerTransitGatewayConnectPeerAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerTransitGatewayConnectPeerAssociation) validateSetDeviceIdParameters(val *string) error {
 	return nil
 }

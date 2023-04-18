@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsCognitoUserPoolClient) validateSetClientIdParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCognitoUserPoolClient) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCognitoUserPoolClient) validateSetIdParameters(val *string) error {
 	return nil
 }

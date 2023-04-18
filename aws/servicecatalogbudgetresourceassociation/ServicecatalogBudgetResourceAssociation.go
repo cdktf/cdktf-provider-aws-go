@@ -2,14 +2,14 @@ package servicecatalogbudgetresourceassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/servicecatalogbudgetresourceassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/servicecatalogbudgetresourceassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_budget_resource_association aws_servicecatalog_budget_resource_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/servicecatalog_budget_resource_association aws_servicecatalog_budget_resource_association}.
 type ServicecatalogBudgetResourceAssociation interface {
 	cdktf.TerraformResource
 	BudgetName() *string
@@ -24,9 +24,9 @@ type ServicecatalogBudgetResourceAssociation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_budget_resource_association aws_servicecatalog_budget_resource_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/servicecatalog_budget_resource_association aws_servicecatalog_budget_resource_association} Resource.
 func NewServicecatalogBudgetResourceAssociation(scope constructs.Construct, id *string, config *ServicecatalogBudgetResourceAssociationConfig) ServicecatalogBudgetResourceAssociation {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewServicecatalogBudgetResourceAssociation(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/servicecatalog_budget_resource_association aws_servicecatalog_budget_resource_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/servicecatalog_budget_resource_association aws_servicecatalog_budget_resource_association} Resource.
 func NewServicecatalogBudgetResourceAssociation_Override(s ServicecatalogBudgetResourceAssociation, scope constructs.Construct, id *string, config *ServicecatalogBudgetResourceAssociationConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation)SetConnection(val int
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation)SetCount(val *float64) {
+func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_Ec2InstanceState) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_Ec2InstanceState) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Ec2InstanceState) validateSetForceParameters(val interface{}) error {
 	return nil
 }

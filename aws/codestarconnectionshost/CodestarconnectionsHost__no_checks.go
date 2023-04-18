@@ -76,6 +76,10 @@ func (j *jsiiProxy_CodestarconnectionsHost) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_CodestarconnectionsHost) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodestarconnectionsHost) validateSetIdParameters(val *string) error {
 	return nil
 }

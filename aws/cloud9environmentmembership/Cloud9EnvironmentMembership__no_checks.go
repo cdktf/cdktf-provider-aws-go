@@ -68,6 +68,10 @@ func (j *jsiiProxy_Cloud9EnvironmentMembership) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_Cloud9EnvironmentMembership) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Cloud9EnvironmentMembership) validateSetEnvironmentIdParameters(val *string) error {
 	return nil
 }

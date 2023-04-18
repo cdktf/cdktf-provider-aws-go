@@ -68,6 +68,10 @@ func (j *jsiiProxy_VpcIpamOrganizationAdminAccount) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_VpcIpamOrganizationAdminAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpamOrganizationAdminAccount) validateSetDelegatedAdminAccountIdParameters(val *string) error {
 	return nil
 }

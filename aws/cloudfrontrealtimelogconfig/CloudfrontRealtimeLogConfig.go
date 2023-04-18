@@ -2,14 +2,14 @@ package cloudfrontrealtimelogconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/cloudfrontrealtimelogconfig/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudfrontrealtimelogconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config aws_cloudfront_realtime_log_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudfront_realtime_log_config aws_cloudfront_realtime_log_config}.
 type CloudfrontRealtimeLogConfig interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type CloudfrontRealtimeLogConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -158,8 +158,8 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontRealtimeLogConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_CloudfrontRealtimeLogConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -389,7 +389,7 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config aws_cloudfront_realtime_log_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudfront_realtime_log_config aws_cloudfront_realtime_log_config} Resource.
 func NewCloudfrontRealtimeLogConfig(scope constructs.Construct, id *string, config *CloudfrontRealtimeLogConfigConfig) CloudfrontRealtimeLogConfig {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewCloudfrontRealtimeLogConfig(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/cloudfront_realtime_log_config aws_cloudfront_realtime_log_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudfront_realtime_log_config aws_cloudfront_realtime_log_config} Resource.
 func NewCloudfrontRealtimeLogConfig_Override(c CloudfrontRealtimeLogConfig, scope constructs.Construct, id *string, config *CloudfrontRealtimeLogConfigConfig) {
 	_init_.Initialize()
 
@@ -429,7 +429,10 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetCount(val *float64) {
+func (j *jsiiProxy_CloudfrontRealtimeLogConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

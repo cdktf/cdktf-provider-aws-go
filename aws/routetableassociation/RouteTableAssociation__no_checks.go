@@ -68,6 +68,10 @@ func (j *jsiiProxy_RouteTableAssociation) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_RouteTableAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RouteTableAssociation) validateSetGatewayIdParameters(val *string) error {
 	return nil
 }

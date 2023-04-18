@@ -80,6 +80,10 @@ func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointApnsVoipSandboxChannel) validateSetDefaultAuthenticationMethodParameters(val *string) error {
 	return nil
 }

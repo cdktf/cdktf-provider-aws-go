@@ -76,6 +76,10 @@ func (j *jsiiProxy_DmsReplicationTask) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_DmsReplicationTask) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsReplicationTask) validateSetIdParameters(val *string) error {
 	return nil
 }

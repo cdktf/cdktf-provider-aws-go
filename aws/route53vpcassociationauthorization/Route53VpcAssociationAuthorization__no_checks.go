@@ -68,6 +68,10 @@ func (j *jsiiProxy_Route53VpcAssociationAuthorization) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_Route53VpcAssociationAuthorization) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53VpcAssociationAuthorization) validateSetIdParameters(val *string) error {
 	return nil
 }

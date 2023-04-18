@@ -2,14 +2,14 @@ package directoryservicedirectory
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/directoryservicedirectory/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/directoryservicedirectory/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/directory_service_directory aws_directory_service_directory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/directory_service_directory aws_directory_service_directory}.
 type DirectoryServiceDirectory interface {
 	cdktf.TerraformResource
 	AccessUrl() *string
@@ -27,9 +27,9 @@ type DirectoryServiceDirectory interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -246,8 +246,8 @@ func (j *jsiiProxy_DirectoryServiceDirectory) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_DirectoryServiceDirectory) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DirectoryServiceDirectory) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -677,7 +677,7 @@ func (j *jsiiProxy_DirectoryServiceDirectory) VpcSettingsInput() *DirectoryServi
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/directory_service_directory aws_directory_service_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/directory_service_directory aws_directory_service_directory} Resource.
 func NewDirectoryServiceDirectory(scope constructs.Construct, id *string, config *DirectoryServiceDirectoryConfig) DirectoryServiceDirectory {
 	_init_.Initialize()
 
@@ -695,7 +695,7 @@ func NewDirectoryServiceDirectory(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/directory_service_directory aws_directory_service_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/directory_service_directory aws_directory_service_directory} Resource.
 func NewDirectoryServiceDirectory_Override(d DirectoryServiceDirectory, scope constructs.Construct, id *string, config *DirectoryServiceDirectoryConfig) {
 	_init_.Initialize()
 
@@ -728,7 +728,10 @@ func (j *jsiiProxy_DirectoryServiceDirectory)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceDirectory)SetCount(val *float64) {
+func (j *jsiiProxy_DirectoryServiceDirectory)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

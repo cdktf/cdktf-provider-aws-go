@@ -80,6 +80,10 @@ func (j *jsiiProxy_KinesisStream) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_KinesisStream) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KinesisStream) validateSetEncryptionTypeParameters(val *string) error {
 	return nil
 }

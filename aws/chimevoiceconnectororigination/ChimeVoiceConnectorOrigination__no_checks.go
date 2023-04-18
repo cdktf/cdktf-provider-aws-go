@@ -72,6 +72,10 @@ func (j *jsiiProxy_ChimeVoiceConnectorOrigination) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_ChimeVoiceConnectorOrigination) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ChimeVoiceConnectorOrigination) validateSetDisabledParameters(val interface{}) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package wafv2ipset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/wafv2ipset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafv2ipset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/wafv2_ip_set aws_wafv2_ip_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_ip_set aws_wafv2_ip_set}.
 type Wafv2IpSet interface {
 	cdktf.TerraformResource
 	Addresses() *[]*string
@@ -25,9 +25,9 @@ type Wafv2IpSet interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -192,8 +192,8 @@ func (j *jsiiProxy_Wafv2IpSet) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2IpSet) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Wafv2IpSet) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -473,7 +473,7 @@ func (j *jsiiProxy_Wafv2IpSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/wafv2_ip_set aws_wafv2_ip_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_ip_set aws_wafv2_ip_set} Resource.
 func NewWafv2IpSet(scope constructs.Construct, id *string, config *Wafv2IpSetConfig) Wafv2IpSet {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewWafv2IpSet(scope constructs.Construct, id *string, config *Wafv2IpSetCon
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/wafv2_ip_set aws_wafv2_ip_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_ip_set aws_wafv2_ip_set} Resource.
 func NewWafv2IpSet_Override(w Wafv2IpSet, scope constructs.Construct, id *string, config *Wafv2IpSetConfig) {
 	_init_.Initialize()
 
@@ -524,7 +524,10 @@ func (j *jsiiProxy_Wafv2IpSet)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_Wafv2IpSet)SetCount(val *float64) {
+func (j *jsiiProxy_Wafv2IpSet)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

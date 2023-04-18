@@ -68,6 +68,10 @@ func (j *jsiiProxy_LightsailDomain) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_LightsailDomain) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailDomain) validateSetDomainNameParameters(val *string) error {
 	return nil
 }

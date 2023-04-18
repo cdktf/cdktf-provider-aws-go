@@ -2,14 +2,14 @@ package lblistenerrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/lblistenerrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/lblistenerrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/lb_listener_rule aws_lb_listener_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lb_listener_rule aws_lb_listener_rule}.
 type LbListenerRule interface {
 	cdktf.TerraformResource
 	Action() LbListenerRuleActionList
@@ -26,9 +26,9 @@ type LbListenerRule interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -207,8 +207,8 @@ func (j *jsiiProxy_LbListenerRule) ConstructNodeMetadata() *map[string]interface
 	return returns
 }
 
-func (j *jsiiProxy_LbListenerRule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_LbListenerRule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -438,7 +438,7 @@ func (j *jsiiProxy_LbListenerRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lb_listener_rule aws_lb_listener_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lb_listener_rule aws_lb_listener_rule} Resource.
 func NewLbListenerRule(scope constructs.Construct, id *string, config *LbListenerRuleConfig) LbListenerRule {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewLbListenerRule(scope constructs.Construct, id *string, config *LbListene
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/lb_listener_rule aws_lb_listener_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lb_listener_rule aws_lb_listener_rule} Resource.
 func NewLbListenerRule_Override(l LbListenerRule, scope constructs.Construct, id *string, config *LbListenerRuleConfig) {
 	_init_.Initialize()
 
@@ -478,7 +478,10 @@ func (j *jsiiProxy_LbListenerRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_LbListenerRule)SetCount(val *float64) {
+func (j *jsiiProxy_LbListenerRule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

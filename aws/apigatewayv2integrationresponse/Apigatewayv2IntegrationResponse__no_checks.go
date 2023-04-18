@@ -76,6 +76,10 @@ func (j *jsiiProxy_Apigatewayv2IntegrationResponse) validateSetContentHandlingSt
 	return nil
 }
 
+func (j *jsiiProxy_Apigatewayv2IntegrationResponse) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Apigatewayv2IntegrationResponse) validateSetIdParameters(val *string) error {
 	return nil
 }

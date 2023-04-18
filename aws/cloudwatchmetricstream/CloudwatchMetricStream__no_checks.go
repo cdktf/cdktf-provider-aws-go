@@ -84,6 +84,10 @@ func (j *jsiiProxy_CloudwatchMetricStream) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchMetricStream) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchMetricStream) validateSetFirehoseArnParameters(val *string) error {
 	return nil
 }

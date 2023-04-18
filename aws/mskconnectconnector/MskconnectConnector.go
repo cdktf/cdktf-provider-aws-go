@@ -2,14 +2,14 @@ package mskconnectconnector
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/mskconnectconnector/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/mskconnectconnector/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_connector aws_mskconnect_connector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/mskconnect_connector aws_mskconnect_connector}.
 type MskconnectConnector interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -27,9 +27,9 @@ type MskconnectConnector interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -230,8 +230,8 @@ func (j *jsiiProxy_MskconnectConnector) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_MskconnectConnector) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_MskconnectConnector) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -611,7 +611,7 @@ func (j *jsiiProxy_MskconnectConnector) WorkerConfigurationInput() *MskconnectCo
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_connector aws_mskconnect_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/mskconnect_connector aws_mskconnect_connector} Resource.
 func NewMskconnectConnector(scope constructs.Construct, id *string, config *MskconnectConnectorConfig) MskconnectConnector {
 	_init_.Initialize()
 
@@ -629,7 +629,7 @@ func NewMskconnectConnector(scope constructs.Construct, id *string, config *Mskc
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/mskconnect_connector aws_mskconnect_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/mskconnect_connector aws_mskconnect_connector} Resource.
 func NewMskconnectConnector_Override(m MskconnectConnector, scope constructs.Construct, id *string, config *MskconnectConnectorConfig) {
 	_init_.Initialize()
 
@@ -662,7 +662,10 @@ func (j *jsiiProxy_MskconnectConnector)SetConnectorConfiguration(val *map[string
 	)
 }
 
-func (j *jsiiProxy_MskconnectConnector)SetCount(val *float64) {
+func (j *jsiiProxy_MskconnectConnector)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

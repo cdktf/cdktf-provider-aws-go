@@ -80,6 +80,10 @@ func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3AccountPublicAccessBlock) validateSetIdParameters(val *string) error {
 	return nil
 }

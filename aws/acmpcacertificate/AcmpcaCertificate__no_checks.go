@@ -84,6 +84,10 @@ func (j *jsiiProxy_AcmpcaCertificate) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_AcmpcaCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AcmpcaCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }

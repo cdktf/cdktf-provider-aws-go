@@ -68,6 +68,10 @@ func (j *jsiiProxy_MediaStoreContainer) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_MediaStoreContainer) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MediaStoreContainer) validateSetIdParameters(val *string) error {
 	return nil
 }

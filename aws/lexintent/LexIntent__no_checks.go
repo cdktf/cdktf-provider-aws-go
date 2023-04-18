@@ -100,6 +100,10 @@ func (j *jsiiProxy_LexIntent) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_LexIntent) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LexIntent) validateSetCreateVersionParameters(val interface{}) error {
 	return nil
 }

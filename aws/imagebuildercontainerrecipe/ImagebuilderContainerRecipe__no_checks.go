@@ -84,6 +84,10 @@ func (j *jsiiProxy_ImagebuilderContainerRecipe) validateSetContainerTypeParamete
 	return nil
 }
 
+func (j *jsiiProxy_ImagebuilderContainerRecipe) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ImagebuilderContainerRecipe) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

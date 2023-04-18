@@ -72,6 +72,10 @@ func (j *jsiiProxy_EcrRegistryScanningConfiguration) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_EcrRegistryScanningConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcrRegistryScanningConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

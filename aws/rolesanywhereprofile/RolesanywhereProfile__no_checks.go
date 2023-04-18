@@ -68,6 +68,10 @@ func (j *jsiiProxy_RolesanywhereProfile) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_RolesanywhereProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RolesanywhereProfile) validateSetDurationSecondsParameters(val *float64) error {
 	return nil
 }

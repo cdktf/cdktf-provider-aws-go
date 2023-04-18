@@ -76,6 +76,10 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_KendraQuerySuggestionsBlockList) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

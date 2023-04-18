@@ -68,6 +68,10 @@ func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetEcrRepositoryPrefixParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataAwsIamInstanceProfile_IsTerraformElementParameters(x interface{
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsIamInstanceProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsIamInstanceProfile) validateSetIdParameters(val *string) error {
 	return nil
 }

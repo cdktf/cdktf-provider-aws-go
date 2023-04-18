@@ -2,14 +2,14 @@ package globalacceleratorcustomroutingendpointgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/globalacceleratorcustomroutingendpointgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/globalacceleratorcustomroutingendpointgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_custom_routing_endpoint_group aws_globalaccelerator_custom_routing_endpoint_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/globalaccelerator_custom_routing_endpoint_group aws_globalaccelerator_custom_routing_endpoint_group}.
 type GlobalacceleratorCustomRoutingEndpointGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type GlobalacceleratorCustomRoutingEndpointGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -164,8 +164,8 @@ func (j *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroup) ConstructNodeMet
 	return returns
 }
 
-func (j *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroup) TimeoutsInput() 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_custom_routing_endpoint_group aws_globalaccelerator_custom_routing_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/globalaccelerator_custom_routing_endpoint_group aws_globalaccelerator_custom_routing_endpoint_group} Resource.
 func NewGlobalacceleratorCustomRoutingEndpointGroup(scope constructs.Construct, id *string, config *GlobalacceleratorCustomRoutingEndpointGroupConfig) GlobalacceleratorCustomRoutingEndpointGroup {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewGlobalacceleratorCustomRoutingEndpointGroup(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/globalaccelerator_custom_routing_endpoint_group aws_globalaccelerator_custom_routing_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/globalaccelerator_custom_routing_endpoint_group aws_globalaccelerator_custom_routing_endpoint_group} Resource.
 func NewGlobalacceleratorCustomRoutingEndpointGroup_Override(g GlobalacceleratorCustomRoutingEndpointGroup, scope constructs.Construct, id *string, config *GlobalacceleratorCustomRoutingEndpointGroupConfig) {
 	_init_.Initialize()
 
@@ -455,7 +455,10 @@ func (j *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroup)SetConnection(val
 	)
 }
 
-func (j *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroup)SetCount(val *float64) {
+func (j *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

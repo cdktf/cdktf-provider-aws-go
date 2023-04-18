@@ -2,14 +2,14 @@ package defaultvpcdhcpoptions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/defaultvpcdhcpoptions/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/defaultvpcdhcpoptions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/default_vpc_dhcp_options aws_default_vpc_dhcp_options}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/default_vpc_dhcp_options aws_default_vpc_dhcp_options}.
 type DefaultVpcDhcpOptions interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type DefaultVpcDhcpOptions interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -163,8 +163,8 @@ func (j *jsiiProxy_DefaultVpcDhcpOptions) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_DefaultVpcDhcpOptions) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DefaultVpcDhcpOptions) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -424,7 +424,7 @@ func (j *jsiiProxy_DefaultVpcDhcpOptions) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/default_vpc_dhcp_options aws_default_vpc_dhcp_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/default_vpc_dhcp_options aws_default_vpc_dhcp_options} Resource.
 func NewDefaultVpcDhcpOptions(scope constructs.Construct, id *string, config *DefaultVpcDhcpOptionsConfig) DefaultVpcDhcpOptions {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewDefaultVpcDhcpOptions(scope constructs.Construct, id *string, config *De
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/default_vpc_dhcp_options aws_default_vpc_dhcp_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/default_vpc_dhcp_options aws_default_vpc_dhcp_options} Resource.
 func NewDefaultVpcDhcpOptions_Override(d DefaultVpcDhcpOptions, scope constructs.Construct, id *string, config *DefaultVpcDhcpOptionsConfig) {
 	_init_.Initialize()
 
@@ -464,7 +464,10 @@ func (j *jsiiProxy_DefaultVpcDhcpOptions)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DefaultVpcDhcpOptions)SetCount(val *float64) {
+func (j *jsiiProxy_DefaultVpcDhcpOptions)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

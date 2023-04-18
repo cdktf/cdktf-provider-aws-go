@@ -72,6 +72,10 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_CloudfrontRealtimeLogConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontRealtimeLogConfig) validateSetFieldsParameters(val *[]*string) error {
 	return nil
 }

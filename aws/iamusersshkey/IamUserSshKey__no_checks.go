@@ -68,6 +68,10 @@ func (j *jsiiProxy_IamUserSshKey) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_IamUserSshKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IamUserSshKey) validateSetEncodingParameters(val *string) error {
 	return nil
 }

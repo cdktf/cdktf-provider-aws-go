@@ -80,6 +80,10 @@ func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerAttachmentAccepter) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_AppmeshGatewayRoute) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_AppmeshGatewayRoute) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppmeshGatewayRoute) validateSetIdParameters(val *string) error {
 	return nil
 }

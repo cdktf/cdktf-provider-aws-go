@@ -2,14 +2,14 @@ package dataawsdocdbengineversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsdocdbengineversion/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsdocdbengineversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/docdb_engine_version aws_docdb_engine_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/docdb_engine_version aws_docdb_engine_version}.
 type DataAwsDocdbEngineVersion interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataAwsDocdbEngineVersion interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DataAwsDocdbEngineVersion) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDocdbEngineVersion) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsDocdbEngineVersion) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -409,7 +409,7 @@ func (j *jsiiProxy_DataAwsDocdbEngineVersion) VersionInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/docdb_engine_version aws_docdb_engine_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/docdb_engine_version aws_docdb_engine_version} Data Source.
 func NewDataAwsDocdbEngineVersion(scope constructs.Construct, id *string, config *DataAwsDocdbEngineVersionConfig) DataAwsDocdbEngineVersion {
 	_init_.Initialize()
 
@@ -427,7 +427,7 @@ func NewDataAwsDocdbEngineVersion(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/docdb_engine_version aws_docdb_engine_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/docdb_engine_version aws_docdb_engine_version} Data Source.
 func NewDataAwsDocdbEngineVersion_Override(d DataAwsDocdbEngineVersion, scope constructs.Construct, id *string, config *DataAwsDocdbEngineVersionConfig) {
 	_init_.Initialize()
 
@@ -438,7 +438,10 @@ func NewDataAwsDocdbEngineVersion_Override(d DataAwsDocdbEngineVersion, scope co
 	)
 }
 
-func (j *jsiiProxy_DataAwsDocdbEngineVersion)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsDocdbEngineVersion)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

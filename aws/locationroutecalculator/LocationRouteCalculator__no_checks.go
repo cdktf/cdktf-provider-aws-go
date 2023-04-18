@@ -76,6 +76,10 @@ func (j *jsiiProxy_LocationRouteCalculator) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_LocationRouteCalculator) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LocationRouteCalculator) validateSetDataSourceParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ func (j *jsiiProxy_DynamodbTag) validateSetConnectionParameters(val interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbTag) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbTag) validateSetIdParameters(val *string) error {
 	return nil
 }

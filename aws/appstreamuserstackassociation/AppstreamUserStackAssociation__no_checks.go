@@ -72,6 +72,10 @@ func (j *jsiiProxy_AppstreamUserStackAssociation) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_AppstreamUserStackAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppstreamUserStackAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

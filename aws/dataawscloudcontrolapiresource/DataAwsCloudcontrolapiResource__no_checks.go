@@ -64,6 +64,10 @@ func validateDataAwsCloudcontrolapiResource_IsTerraformElementParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudcontrolapiResource) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudcontrolapiResource) validateSetIdParameters(val *string) error {
 	return nil
 }

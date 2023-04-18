@@ -2,14 +2,14 @@ package glueresourcepolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/glueresourcepolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/glueresourcepolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/glue_resource_policy aws_glue_resource_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/glue_resource_policy aws_glue_resource_policy}.
 type GlueResourcePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GlueResourcePolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_GlueResourcePolicy) ConstructNodeMetadata() *map[string]inter
 	return returns
 }
 
-func (j *jsiiProxy_GlueResourcePolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GlueResourcePolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -333,7 +333,7 @@ func (j *jsiiProxy_GlueResourcePolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/glue_resource_policy aws_glue_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/glue_resource_policy aws_glue_resource_policy} Resource.
 func NewGlueResourcePolicy(scope constructs.Construct, id *string, config *GlueResourcePolicyConfig) GlueResourcePolicy {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewGlueResourcePolicy(scope constructs.Construct, id *string, config *GlueR
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/glue_resource_policy aws_glue_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/glue_resource_policy aws_glue_resource_policy} Resource.
 func NewGlueResourcePolicy_Override(g GlueResourcePolicy, scope constructs.Construct, id *string, config *GlueResourcePolicyConfig) {
 	_init_.Initialize()
 
@@ -373,7 +373,10 @@ func (j *jsiiProxy_GlueResourcePolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GlueResourcePolicy)SetCount(val *float64) {
+func (j *jsiiProxy_GlueResourcePolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

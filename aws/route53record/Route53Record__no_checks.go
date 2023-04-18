@@ -96,6 +96,10 @@ func (j *jsiiProxy_Route53Record) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_Route53Record) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53Record) validateSetHealthCheckIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_GlueDevEndpoint) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_GlueDevEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueDevEndpoint) validateSetExtraJarsS3PathParameters(val *string) error {
 	return nil
 }

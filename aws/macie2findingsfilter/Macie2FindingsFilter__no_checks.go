@@ -76,6 +76,10 @@ func (j *jsiiProxy_Macie2FindingsFilter) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_Macie2FindingsFilter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Macie2FindingsFilter) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func validateDataAwsCloudtrailServiceAccount_IsTerraformElementParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsCloudtrailServiceAccount) validateSetIdParameters(val *string) error {
 	return nil
 }

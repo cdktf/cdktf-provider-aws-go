@@ -68,6 +68,10 @@ func (j *jsiiProxy_SwfDomain) validateSetConnectionParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_SwfDomain) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SwfDomain) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

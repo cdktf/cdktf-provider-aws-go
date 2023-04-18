@@ -64,6 +64,10 @@ func validateDataAwsRoute53ResolverFirewallRuleGroupAssociation_IsTerraformEleme
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) validateSetFirewallRuleGroupAssociationIdParameters(val *string) error {
 	return nil
 }

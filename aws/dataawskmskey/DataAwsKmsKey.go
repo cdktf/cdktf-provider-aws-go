@@ -2,14 +2,14 @@ package dataawskmskey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawskmskey/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawskmskey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/kms_key aws_kms_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/kms_key aws_kms_key}.
 type DataAwsKmsKey interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -19,9 +19,9 @@ type DataAwsKmsKey interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreationDate() *string
 	CustomerMasterKeySpec() *string
 	DeletionDate() *string
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DataAwsKmsKey) ConstructNodeMetadata() *map[string]interface{
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsKmsKey) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsKmsKey) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -470,7 +470,7 @@ func (j *jsiiProxy_DataAwsKmsKey) ValidTo() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/kms_key aws_kms_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/kms_key aws_kms_key} Data Source.
 func NewDataAwsKmsKey(scope constructs.Construct, id *string, config *DataAwsKmsKeyConfig) DataAwsKmsKey {
 	_init_.Initialize()
 
@@ -488,7 +488,7 @@ func NewDataAwsKmsKey(scope constructs.Construct, id *string, config *DataAwsKms
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/kms_key aws_kms_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/kms_key aws_kms_key} Data Source.
 func NewDataAwsKmsKey_Override(d DataAwsKmsKey, scope constructs.Construct, id *string, config *DataAwsKmsKeyConfig) {
 	_init_.Initialize()
 
@@ -499,7 +499,10 @@ func NewDataAwsKmsKey_Override(d DataAwsKmsKey, scope constructs.Construct, id *
 	)
 }
 
-func (j *jsiiProxy_DataAwsKmsKey)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsKmsKey)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

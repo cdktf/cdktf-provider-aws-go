@@ -76,6 +76,10 @@ func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateSetConnec
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateSetExpectedBucketOwnerParameters(val *string) error {
 	return nil
 }

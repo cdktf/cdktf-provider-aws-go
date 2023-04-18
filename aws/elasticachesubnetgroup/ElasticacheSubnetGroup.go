@@ -2,14 +2,14 @@ package elasticachesubnetgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/elasticachesubnetgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/elasticachesubnetgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/elasticache_subnet_group aws_elasticache_subnet_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_subnet_group aws_elasticache_subnet_group}.
 type ElasticacheSubnetGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -22,9 +22,9 @@ type ElasticacheSubnetGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ElasticacheSubnetGroup) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheSubnetGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_ElasticacheSubnetGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -415,7 +415,7 @@ func (j *jsiiProxy_ElasticacheSubnetGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/elasticache_subnet_group aws_elasticache_subnet_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_subnet_group aws_elasticache_subnet_group} Resource.
 func NewElasticacheSubnetGroup(scope constructs.Construct, id *string, config *ElasticacheSubnetGroupConfig) ElasticacheSubnetGroup {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewElasticacheSubnetGroup(scope constructs.Construct, id *string, config *E
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/elasticache_subnet_group aws_elasticache_subnet_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/elasticache_subnet_group aws_elasticache_subnet_group} Resource.
 func NewElasticacheSubnetGroup_Override(e ElasticacheSubnetGroup, scope constructs.Construct, id *string, config *ElasticacheSubnetGroupConfig) {
 	_init_.Initialize()
 
@@ -455,7 +455,10 @@ func (j *jsiiProxy_ElasticacheSubnetGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_ElasticacheSubnetGroup)SetCount(val *float64) {
+func (j *jsiiProxy_ElasticacheSubnetGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

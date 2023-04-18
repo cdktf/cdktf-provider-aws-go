@@ -72,6 +72,10 @@ func validateDataAwsAmi_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAmi) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAmi) validateSetExecutableUsersParameters(val *[]*string) error {
 	return nil
 }

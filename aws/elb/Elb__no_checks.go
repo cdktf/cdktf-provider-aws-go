@@ -92,6 +92,10 @@ func (j *jsiiProxy_Elb) validateSetConnectionDrainingTimeoutParameters(val *floa
 	return nil
 }
 
+func (j *jsiiProxy_Elb) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Elb) validateSetCrossZoneLoadBalancingParameters(val interface{}) error {
 	return nil
 }

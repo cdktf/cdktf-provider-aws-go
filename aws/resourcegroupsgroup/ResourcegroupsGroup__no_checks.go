@@ -80,6 +80,10 @@ func (j *jsiiProxy_ResourcegroupsGroup) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_ResourcegroupsGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ResourcegroupsGroup) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

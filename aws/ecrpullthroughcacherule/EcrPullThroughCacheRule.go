@@ -2,14 +2,14 @@ package ecrpullthroughcacherule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/ecrpullthroughcacherule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ecrpullthroughcacherule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule}.
 type EcrPullThroughCacheRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type EcrPullThroughCacheRule interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -142,8 +142,8 @@ func (j *jsiiProxy_EcrPullThroughCacheRule) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_EcrPullThroughCacheRule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_EcrPullThroughCacheRule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -343,7 +343,7 @@ func (j *jsiiProxy_EcrPullThroughCacheRule) UpstreamRegistryUrlInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule} Resource.
 func NewEcrPullThroughCacheRule(scope constructs.Construct, id *string, config *EcrPullThroughCacheRuleConfig) EcrPullThroughCacheRule {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewEcrPullThroughCacheRule(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule} Resource.
 func NewEcrPullThroughCacheRule_Override(e EcrPullThroughCacheRule, scope constructs.Construct, id *string, config *EcrPullThroughCacheRuleConfig) {
 	_init_.Initialize()
 
@@ -383,7 +383,10 @@ func (j *jsiiProxy_EcrPullThroughCacheRule)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_EcrPullThroughCacheRule)SetCount(val *float64) {
+func (j *jsiiProxy_EcrPullThroughCacheRule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -72,6 +72,10 @@ func (j *jsiiProxy_S3ControlAccessPointPolicy) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_S3ControlAccessPointPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3ControlAccessPointPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

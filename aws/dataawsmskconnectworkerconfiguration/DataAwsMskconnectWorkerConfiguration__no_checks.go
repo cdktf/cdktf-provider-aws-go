@@ -64,6 +64,10 @@ func validateDataAwsMskconnectWorkerConfiguration_IsTerraformElementParameters(x
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) validateSetIdParameters(val *string) error {
 	return nil
 }

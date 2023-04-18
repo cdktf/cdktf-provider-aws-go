@@ -68,6 +68,10 @@ func (j *jsiiProxy_CloudwatchLogGroup) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchLogGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchLogGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

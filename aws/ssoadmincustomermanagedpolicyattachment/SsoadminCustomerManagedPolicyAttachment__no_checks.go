@@ -72,6 +72,10 @@ func (j *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateSetIdParameters(val *string) error {
 	return nil
 }

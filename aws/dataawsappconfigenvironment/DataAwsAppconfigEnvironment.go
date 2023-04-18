@@ -2,14 +2,14 @@ package dataawsappconfigenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/dataawsappconfigenvironment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsappconfigenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/d/appconfig_environment aws_appconfig_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/appconfig_environment aws_appconfig_environment}.
 type DataAwsAppconfigEnvironment interface {
 	cdktf.TerraformDataSource
 	ApplicationId() *string
@@ -21,9 +21,9 @@ type DataAwsAppconfigEnvironment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DataAwsAppconfigEnvironment) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAppconfigEnvironment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsAppconfigEnvironment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DataAwsAppconfigEnvironment) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/appconfig_environment aws_appconfig_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/appconfig_environment aws_appconfig_environment} Data Source.
 func NewDataAwsAppconfigEnvironment(scope constructs.Construct, id *string, config *DataAwsAppconfigEnvironmentConfig) DataAwsAppconfigEnvironment {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewDataAwsAppconfigEnvironment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/d/appconfig_environment aws_appconfig_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/appconfig_environment aws_appconfig_environment} Data Source.
 func NewDataAwsAppconfigEnvironment_Override(d DataAwsAppconfigEnvironment, scope constructs.Construct, id *string, config *DataAwsAppconfigEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -423,7 +423,10 @@ func (j *jsiiProxy_DataAwsAppconfigEnvironment)SetApplicationId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataAwsAppconfigEnvironment)SetCount(val *float64) {
+func (j *jsiiProxy_DataAwsAppconfigEnvironment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

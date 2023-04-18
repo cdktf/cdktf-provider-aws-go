@@ -2,14 +2,14 @@ package appsyncgraphqlapi
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v13/appsyncgraphqlapi/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/appsyncgraphqlapi/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/aws/r/appsync_graphql_api aws_appsync_graphql_api}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api}.
 type AppsyncGraphqlApi interface {
 	cdktf.TerraformResource
 	AdditionalAuthenticationProvider() AppsyncGraphqlApiAdditionalAuthenticationProviderList
@@ -27,9 +27,9 @@ type AppsyncGraphqlApi interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -229,8 +229,8 @@ func (j *jsiiProxy_AppsyncGraphqlApi) ConstructNodeMetadata() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_AppsyncGraphqlApi) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_AppsyncGraphqlApi) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -570,7 +570,7 @@ func (j *jsiiProxy_AppsyncGraphqlApi) XrayEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/appsync_graphql_api aws_appsync_graphql_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
 func NewAppsyncGraphqlApi(scope constructs.Construct, id *string, config *AppsyncGraphqlApiConfig) AppsyncGraphqlApi {
 	_init_.Initialize()
 
@@ -588,7 +588,7 @@ func NewAppsyncGraphqlApi(scope constructs.Construct, id *string, config *Appsyn
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/aws/r/appsync_graphql_api aws_appsync_graphql_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
 func NewAppsyncGraphqlApi_Override(a AppsyncGraphqlApi, scope constructs.Construct, id *string, config *AppsyncGraphqlApiConfig) {
 	_init_.Initialize()
 
@@ -621,7 +621,10 @@ func (j *jsiiProxy_AppsyncGraphqlApi)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_AppsyncGraphqlApi)SetCount(val *float64) {
+func (j *jsiiProxy_AppsyncGraphqlApi)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

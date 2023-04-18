@@ -68,6 +68,10 @@ func (j *jsiiProxy_AutoscalingNotification) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_AutoscalingNotification) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingNotification) validateSetGroupNamesParameters(val *[]*string) error {
 	return nil
 }

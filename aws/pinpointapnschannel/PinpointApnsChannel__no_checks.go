@@ -80,6 +80,10 @@ func (j *jsiiProxy_PinpointApnsChannel) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_PinpointApnsChannel) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointApnsChannel) validateSetDefaultAuthenticationMethodParameters(val *string) error {
 	return nil
 }

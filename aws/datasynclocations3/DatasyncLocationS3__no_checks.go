@@ -76,6 +76,10 @@ func (j *jsiiProxy_DatasyncLocationS3) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncLocationS3) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationS3) validateSetIdParameters(val *string) error {
 	return nil
 }
