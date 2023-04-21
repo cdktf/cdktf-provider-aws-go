@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_organization_admin_account aws_securityhub_organization_admin_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_organization_admin_account aws_securityhub_organization_admin_account}.
 type SecurityhubOrganizationAdminAccount interface {
 	cdktf.TerraformResource
 	AdminAccountId() *string
@@ -309,7 +309,7 @@ func (j *jsiiProxy_SecurityhubOrganizationAdminAccount) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_organization_admin_account aws_securityhub_organization_admin_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_organization_admin_account aws_securityhub_organization_admin_account} Resource.
 func NewSecurityhubOrganizationAdminAccount(scope constructs.Construct, id *string, config *SecurityhubOrganizationAdminAccountConfig) SecurityhubOrganizationAdminAccount {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewSecurityhubOrganizationAdminAccount(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_organization_admin_account aws_securityhub_organization_admin_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_organization_admin_account aws_securityhub_organization_admin_account} Resource.
 func NewSecurityhubOrganizationAdminAccount_Override(s SecurityhubOrganizationAdminAccount, scope constructs.Construct, id *string, config *SecurityhubOrganizationAdminAccountConfig) {
 	_init_.Initialize()
 

@@ -2,7 +2,7 @@ package appmeshgatewayroute
 
 
 type AppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatch struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appmesh_gateway_route#exact AppmeshGatewayRoute#exact}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appmesh_gateway_route#exact AppmeshGatewayRoute#exact}.
 	Exact *string `field:"optional" json:"exact" yaml:"exact"`
 }
 

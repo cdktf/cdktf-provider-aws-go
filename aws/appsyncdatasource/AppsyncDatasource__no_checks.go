@@ -72,6 +72,10 @@ func (a *jsiiProxy_AppsyncDatasource) validatePutLambdaConfigParameters(value *A
 	return nil
 }
 
+func (a *jsiiProxy_AppsyncDatasource) validatePutOpensearchserviceConfigParameters(value *AppsyncDatasourceOpensearchserviceConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppsyncDatasource) validatePutRelationalDatabaseConfigParameters(value *AppsyncDatasourceRelationalDatabaseConfig) error {
 	return nil
 }

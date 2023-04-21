@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_cluster aws_emr_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_cluster aws_emr_cluster}.
 type EmrCluster interface {
 	cdktf.TerraformResource
 	AdditionalInfo() *string
@@ -100,6 +100,8 @@ type EmrCluster interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PlacementGroupConfig() EmrClusterPlacementGroupConfigList
+	PlacementGroupConfigInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -178,6 +180,7 @@ type EmrCluster interface {
 	PutKerberosAttributes(value *EmrClusterKerberosAttributes)
 	PutMasterInstanceFleet(value *EmrClusterMasterInstanceFleet)
 	PutMasterInstanceGroup(value *EmrClusterMasterInstanceGroup)
+	PutPlacementGroupConfig(value interface{})
 	PutStep(value interface{})
 	ResetAdditionalInfo()
 	ResetApplications()
@@ -202,6 +205,7 @@ type EmrCluster interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPlacementGroupConfig()
 	ResetScaleDownBehavior()
 	ResetSecurityConfiguration()
 	ResetStep()
@@ -775,6 +779,26 @@ func (j *jsiiProxy_EmrCluster) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_EmrCluster) PlacementGroupConfig() EmrClusterPlacementGroupConfigList {
+	var returns EmrClusterPlacementGroupConfigList
+	_jsii_.Get(
+		j,
+		"placementGroupConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) PlacementGroupConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"placementGroupConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EmrCluster) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -1036,7 +1060,7 @@ func (j *jsiiProxy_EmrCluster) VisibleToAllUsersInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_cluster aws_emr_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_cluster aws_emr_cluster} Resource.
 func NewEmrCluster(scope constructs.Construct, id *string, config *EmrClusterConfig) EmrCluster {
 	_init_.Initialize()
 
@@ -1054,7 +1078,7 @@ func NewEmrCluster(scope constructs.Construct, id *string, config *EmrClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_cluster aws_emr_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_cluster aws_emr_cluster} Resource.
 func NewEmrCluster_Override(e EmrCluster, scope constructs.Construct, id *string, config *EmrClusterConfig) {
 	_init_.Initialize()
 
@@ -1729,6 +1753,17 @@ func (e *jsiiProxy_EmrCluster) PutMasterInstanceGroup(value *EmrClusterMasterIns
 	)
 }
 
+func (e *jsiiProxy_EmrCluster) PutPlacementGroupConfig(value interface{}) {
+	if err := e.validatePutPlacementGroupConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putPlacementGroupConfig",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EmrCluster) PutStep(value interface{}) {
 	if err := e.validatePutStepParameters(value); err != nil {
 		panic(err)
@@ -1904,6 +1939,14 @@ func (e *jsiiProxy_EmrCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetPlacementGroupConfig() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetPlacementGroupConfig",
 		nil, // no parameters
 	)
 }

@@ -56,6 +56,10 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionOutputReference) validatePutCaptchaPa
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2RuleGroupRuleActionOutputReference) validatePutChallengeParameters(value *Wafv2RuleGroupRuleActionChallenge) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2RuleGroupRuleActionOutputReference) validatePutCountParameters(value *Wafv2RuleGroupRuleActionCount) error {
 	return nil
 }

@@ -9,10 +9,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings}.
 type DataAwsLakeformationDataLakeSettings interface {
 	cdktf.TerraformDataSource
 	Admins() *[]*string
+	AllowExternalDataFiltering() cdktf.IResolvable
+	AuthorizedSessionTagValueList() *[]*string
 	CatalogId() *string
 	SetCatalogId(val *string)
 	CatalogIdInput() *string
@@ -30,6 +32,7 @@ type DataAwsLakeformationDataLakeSettings interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExternalDataFilteringAllowList() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -115,6 +118,26 @@ func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) Admins() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) AllowExternalDataFiltering() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"allowExternalDataFiltering",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) AuthorizedSessionTagValueList() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"authorizedSessionTagValueList",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) CatalogId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -190,6 +213,16 @@ func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) DependsOn() *[]*string 
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) ExternalDataFilteringAllowList() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"externalDataFilteringAllowList",
 		&returns,
 	)
 	return returns
@@ -326,7 +359,7 @@ func (j *jsiiProxy_DataAwsLakeformationDataLakeSettings) TrustedResourceOwners()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Data Source.
 func NewDataAwsLakeformationDataLakeSettings(scope constructs.Construct, id *string, config *DataAwsLakeformationDataLakeSettingsConfig) DataAwsLakeformationDataLakeSettings {
 	_init_.Initialize()
 
@@ -344,7 +377,7 @@ func NewDataAwsLakeformationDataLakeSettings(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Data Source.
 func NewDataAwsLakeformationDataLakeSettings_Override(d DataAwsLakeformationDataLakeSettings, scope constructs.Construct, id *string, config *DataAwsLakeformationDataLakeSettingsConfig) {
 	_init_.Initialize()
 

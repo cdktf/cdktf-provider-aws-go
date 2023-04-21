@@ -2,7 +2,7 @@ package instance
 
 
 type InstanceMaintenanceOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/instance#auto_recovery Instance#auto_recovery}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/instance#auto_recovery Instance#auto_recovery}.
 	AutoRecovery *string `field:"optional" json:"autoRecovery" yaml:"autoRecovery"`
 }
 

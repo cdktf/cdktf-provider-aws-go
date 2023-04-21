@@ -64,7 +64,15 @@ func validateSecurityhubAccount_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_SecurityhubAccount) validateSetAutoEnableControlsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecurityhubAccount) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_SecurityhubAccount) validateSetControlFindingGeneratorParameters(val *string) error {
 	return nil
 }
 

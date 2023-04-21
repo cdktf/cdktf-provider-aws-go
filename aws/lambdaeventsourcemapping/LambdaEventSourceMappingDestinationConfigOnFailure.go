@@ -2,7 +2,7 @@ package lambdaeventsourcemapping
 
 
 type LambdaEventSourceMappingDestinationConfigOnFailure struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lambda_event_source_mapping#destination_arn LambdaEventSourceMapping#destination_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/lambda_event_source_mapping#destination_arn LambdaEventSourceMapping#destination_arn}.
 	DestinationArn *string `field:"required" json:"destinationArn" yaml:"destinationArn"`
 }
 

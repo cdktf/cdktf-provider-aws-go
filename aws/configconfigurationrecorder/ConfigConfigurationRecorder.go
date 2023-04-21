@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/config_configuration_recorder aws_config_configuration_recorder}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/config_configuration_recorder aws_config_configuration_recorder}.
 type ConfigConfigurationRecorder interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_ConfigConfigurationRecorder) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/config_configuration_recorder aws_config_configuration_recorder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/config_configuration_recorder aws_config_configuration_recorder} Resource.
 func NewConfigConfigurationRecorder(scope constructs.Construct, id *string, config *ConfigConfigurationRecorderConfig) ConfigConfigurationRecorder {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewConfigConfigurationRecorder(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/config_configuration_recorder aws_config_configuration_recorder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/config_configuration_recorder aws_config_configuration_recorder} Resource.
 func NewConfigConfigurationRecorder_Override(c ConfigConfigurationRecorder, scope constructs.Construct, id *string, config *ConfigConfigurationRecorderConfig) {
 	_init_.Initialize()
 

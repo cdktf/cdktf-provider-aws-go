@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition}.
 type DataAwsEcsTaskDefinition interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -26,6 +26,7 @@ type DataAwsEcsTaskDefinition interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExecutionRoleArn() *string
 	Family() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -162,6 +163,16 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsTaskDefinition) ExecutionRoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionRoleArn",
 		&returns,
 	)
 	return returns
@@ -358,7 +369,7 @@ func (j *jsiiProxy_DataAwsEcsTaskDefinition) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition} Data Source.
 func NewDataAwsEcsTaskDefinition(scope constructs.Construct, id *string, config *DataAwsEcsTaskDefinitionConfig) DataAwsEcsTaskDefinition {
 	_init_.Initialize()
 
@@ -376,7 +387,7 @@ func NewDataAwsEcsTaskDefinition(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/ecs_task_definition aws_ecs_task_definition} Data Source.
 func NewDataAwsEcsTaskDefinition_Override(d DataAwsEcsTaskDefinition, scope constructs.Construct, id *string, config *DataAwsEcsTaskDefinitionConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnet aws_subnet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/subnet aws_subnet}.
 type DataAwsSubnet interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -41,6 +41,7 @@ type DataAwsSubnet interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EnableDns64() cdktf.IResolvable
+	EnableLniAtDeviceIndex() *float64
 	EnableResourceNameDnsAaaaRecordOnLaunch() cdktf.IResolvable
 	EnableResourceNameDnsARecordOnLaunch() cdktf.IResolvable
 	Filter() DataAwsSubnetFilterList
@@ -316,6 +317,16 @@ func (j *jsiiProxy_DataAwsSubnet) EnableDns64() cdktf.IResolvable {
 	_jsii_.Get(
 		j,
 		"enableDns64",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsSubnet) EnableLniAtDeviceIndex() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"enableLniAtDeviceIndex",
 		&returns,
 	)
 	return returns
@@ -652,7 +663,7 @@ func (j *jsiiProxy_DataAwsSubnet) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnet aws_subnet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/subnet aws_subnet} Data Source.
 func NewDataAwsSubnet(scope constructs.Construct, id *string, config *DataAwsSubnetConfig) DataAwsSubnet {
 	_init_.Initialize()
 
@@ -670,7 +681,7 @@ func NewDataAwsSubnet(scope constructs.Construct, id *string, config *DataAwsSub
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/subnet aws_subnet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/subnet aws_subnet} Data Source.
 func NewDataAwsSubnet_Override(d DataAwsSubnet, scope constructs.Construct, id *string, config *DataAwsSubnetConfig) {
 	_init_.Initialize()
 

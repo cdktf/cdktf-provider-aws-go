@@ -232,6 +232,14 @@ func (j *jsiiProxy_DataAwsOutpostsOutpost) validateSetOwnerIdParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOutpostsOutpost) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsOutpostsOutpostParameters(scope constructs.Construct, id *string, config *DataAwsOutpostsOutpostConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

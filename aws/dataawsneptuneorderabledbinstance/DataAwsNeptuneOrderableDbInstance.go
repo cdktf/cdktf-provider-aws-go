@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/neptune_orderable_db_instance aws_neptune_orderable_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/neptune_orderable_db_instance aws_neptune_orderable_db_instance}.
 type DataAwsNeptuneOrderableDbInstance interface {
 	cdktf.TerraformDataSource
 	AvailabilityZones() *[]*string
@@ -567,7 +567,7 @@ func (j *jsiiProxy_DataAwsNeptuneOrderableDbInstance) VpcInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/neptune_orderable_db_instance aws_neptune_orderable_db_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/neptune_orderable_db_instance aws_neptune_orderable_db_instance} Data Source.
 func NewDataAwsNeptuneOrderableDbInstance(scope constructs.Construct, id *string, config *DataAwsNeptuneOrderableDbInstanceConfig) DataAwsNeptuneOrderableDbInstance {
 	_init_.Initialize()
 
@@ -585,7 +585,7 @@ func NewDataAwsNeptuneOrderableDbInstance(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/neptune_orderable_db_instance aws_neptune_orderable_db_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/neptune_orderable_db_instance aws_neptune_orderable_db_instance} Data Source.
 func NewDataAwsNeptuneOrderableDbInstance_Override(d DataAwsNeptuneOrderableDbInstance, scope constructs.Construct, id *string, config *DataAwsNeptuneOrderableDbInstanceConfig) {
 	_init_.Initialize()
 

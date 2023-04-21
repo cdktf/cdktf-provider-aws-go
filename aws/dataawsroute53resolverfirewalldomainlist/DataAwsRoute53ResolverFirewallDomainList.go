@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list}.
 type DataAwsRoute53ResolverFirewallDomainList interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -380,7 +380,7 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallDomainList) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list} Data Source.
 func NewDataAwsRoute53ResolverFirewallDomainList(scope constructs.Construct, id *string, config *DataAwsRoute53ResolverFirewallDomainListConfig) DataAwsRoute53ResolverFirewallDomainList {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewDataAwsRoute53ResolverFirewallDomainList(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/route53_resolver_firewall_domain_list aws_route53_resolver_firewall_domain_list} Data Source.
 func NewDataAwsRoute53ResolverFirewallDomainList_Override(d DataAwsRoute53ResolverFirewallDomainList, scope constructs.Construct, id *string, config *DataAwsRoute53ResolverFirewallDomainListConfig) {
 	_init_.Initialize()
 

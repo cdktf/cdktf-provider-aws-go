@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ec2_transit_gateway_route_table_propagation aws_ec2_transit_gateway_route_table_propagation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ec2_transit_gateway_route_table_propagation aws_ec2_transit_gateway_route_table_propagation}.
 type Ec2TransitGatewayRouteTablePropagation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_Ec2TransitGatewayRouteTablePropagation) TransitGatewayRouteTa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ec2_transit_gateway_route_table_propagation aws_ec2_transit_gateway_route_table_propagation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ec2_transit_gateway_route_table_propagation aws_ec2_transit_gateway_route_table_propagation} Resource.
 func NewEc2TransitGatewayRouteTablePropagation(scope constructs.Construct, id *string, config *Ec2TransitGatewayRouteTablePropagationConfig) Ec2TransitGatewayRouteTablePropagation {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewEc2TransitGatewayRouteTablePropagation(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ec2_transit_gateway_route_table_propagation aws_ec2_transit_gateway_route_table_propagation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ec2_transit_gateway_route_table_propagation aws_ec2_transit_gateway_route_table_propagation} Resource.
 func NewEc2TransitGatewayRouteTablePropagation_Override(e Ec2TransitGatewayRouteTablePropagation, scope constructs.Construct, id *string, config *Ec2TransitGatewayRouteTablePropagationConfig) {
 	_init_.Initialize()
 

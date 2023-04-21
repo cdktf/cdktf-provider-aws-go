@@ -15,10 +15,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "awsAccountId", GoGetter: "AwsAccountId"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "cloudHsmClusterId", GoGetter: "CloudHsmClusterId"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "creationDate", GoGetter: "CreationDate"},
 			_jsii_.MemberProperty{JsiiProperty: "customerMasterKeySpec", GoGetter: "CustomerMasterKeySpec"},
+			_jsii_.MemberProperty{JsiiProperty: "customKeyStoreId", GoGetter: "CustomKeyStoreId"},
 			_jsii_.MemberProperty{JsiiProperty: "deletionDate", GoGetter: "DeletionDate"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "description", GoGetter: "Description"},
@@ -44,6 +46,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "keyId", GoGetter: "KeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "keyIdInput", GoGetter: "KeyIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "keyManager", GoGetter: "KeyManager"},
+			_jsii_.MemberProperty{JsiiProperty: "keySpec", GoGetter: "KeySpec"},
 			_jsii_.MemberProperty{JsiiProperty: "keyState", GoGetter: "KeyState"},
 			_jsii_.MemberProperty{JsiiProperty: "keyUsage", GoGetter: "KeyUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
@@ -52,6 +55,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "origin", GoGetter: "Origin"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
+			_jsii_.MemberProperty{JsiiProperty: "pendingDeletionWindowInDays", GoGetter: "PendingDeletionWindowInDays"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGrantTokens", GoMethod: "ResetGrantTokens"},
@@ -65,6 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "validTo", GoGetter: "ValidTo"},
+			_jsii_.MemberProperty{JsiiProperty: "xksKeyConfiguration", GoGetter: "XksKeyConfiguration"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsKmsKey{}
@@ -247,6 +252,63 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsKmsKeyMultiRegionConfigurationReplicaKeysOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKeyXksKeyConfiguration",
+		reflect.TypeOf((*DataAwsKmsKeyXksKeyConfiguration)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKeyXksKeyConfigurationList",
+		reflect.TypeOf((*DataAwsKmsKeyXksKeyConfigurationList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataAwsKmsKeyXksKeyConfigurationList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.dataAwsKmsKey.DataAwsKmsKeyXksKeyConfigurationOutputReference",
+		reflect.TypeOf((*DataAwsKmsKeyXksKeyConfigurationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DataAwsKmsKeyXksKeyConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

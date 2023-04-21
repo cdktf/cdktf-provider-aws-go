@@ -88,6 +88,10 @@ func (j *jsiiProxy_DataAwsOutpostsOutpost) validateSetOwnerIdParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsOutpostsOutpost) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewDataAwsOutpostsOutpostParameters(scope constructs.Construct, id *string, config *DataAwsOutpostsOutpostConfig) error {
 	return nil
 }

@@ -2,9 +2,9 @@ package alblistenerrule
 
 
 type AlbListenerRuleConditionHttpHeader struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/alb_listener_rule#http_header_name AlbListenerRule#http_header_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/alb_listener_rule#http_header_name AlbListenerRule#http_header_name}.
 	HttpHeaderName *string `field:"required" json:"httpHeaderName" yaml:"httpHeaderName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/alb_listener_rule#values AlbListenerRule#values}.
 	Values *[]*string `field:"required" json:"values" yaml:"values"`
 }
 

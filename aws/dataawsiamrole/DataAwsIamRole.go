@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/iam_role aws_iam_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/iam_role aws_iam_role}.
 type DataAwsIamRole interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -57,6 +57,7 @@ type DataAwsIamRole interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	RoleLastUsed() DataAwsIamRoleRoleLastUsedList
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -332,6 +333,16 @@ func (j *jsiiProxy_DataAwsIamRole) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsIamRole) RoleLastUsed() DataAwsIamRoleRoleLastUsedList {
+	var returns DataAwsIamRoleRoleLastUsedList
+	_jsii_.Get(
+		j,
+		"roleLastUsed",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsIamRole) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -393,7 +404,7 @@ func (j *jsiiProxy_DataAwsIamRole) UniqueId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/iam_role aws_iam_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/iam_role aws_iam_role} Data Source.
 func NewDataAwsIamRole(scope constructs.Construct, id *string, config *DataAwsIamRoleConfig) DataAwsIamRole {
 	_init_.Initialize()
 
@@ -411,7 +422,7 @@ func NewDataAwsIamRole(scope constructs.Construct, id *string, config *DataAwsIa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/iam_role aws_iam_role} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/iam_role aws_iam_role} Data Source.
 func NewDataAwsIamRole_Override(d DataAwsIamRole, scope constructs.Construct, id *string, config *DataAwsIamRoleConfig) {
 	_init_.Initialize()
 

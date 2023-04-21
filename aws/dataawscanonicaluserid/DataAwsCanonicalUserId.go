@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/canonical_user_id aws_canonical_user_id}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/canonical_user_id aws_canonical_user_id}.
 type DataAwsCanonicalUserId interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataAwsCanonicalUserId) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/canonical_user_id aws_canonical_user_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/canonical_user_id aws_canonical_user_id} Data Source.
 func NewDataAwsCanonicalUserId(scope constructs.Construct, id *string, config *DataAwsCanonicalUserIdConfig) DataAwsCanonicalUserId {
 	_init_.Initialize()
 
@@ -287,7 +287,7 @@ func NewDataAwsCanonicalUserId(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/canonical_user_id aws_canonical_user_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/canonical_user_id aws_canonical_user_id} Data Source.
 func NewDataAwsCanonicalUserId_Override(d DataAwsCanonicalUserId, scope constructs.Construct, id *string, config *DataAwsCanonicalUserIdConfig) {
 	_init_.Initialize()
 

@@ -48,6 +48,10 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validatePutActionParameter
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validatePutCaptchaConfigParameters(value *Wafv2RuleGroupRuleCaptchaConfig) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validatePutRuleLabelParameters(value interface{}) error {
 	return nil
 }

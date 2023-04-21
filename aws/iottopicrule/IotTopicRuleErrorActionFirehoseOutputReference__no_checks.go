@@ -48,6 +48,10 @@ func (i *jsiiProxy_IotTopicRuleErrorActionFirehoseOutputReference) validateResol
 	return nil
 }
 
+func (j *jsiiProxy_IotTopicRuleErrorActionFirehoseOutputReference) validateSetBatchModeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotTopicRuleErrorActionFirehoseOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

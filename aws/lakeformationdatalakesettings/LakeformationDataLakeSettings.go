@@ -9,12 +9,18 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings}.
 type LakeformationDataLakeSettings interface {
 	cdktf.TerraformResource
 	Admins() *[]*string
 	SetAdmins(val *[]*string)
 	AdminsInput() *[]*string
+	AllowExternalDataFiltering() interface{}
+	SetAllowExternalDataFiltering(val interface{})
+	AllowExternalDataFilteringInput() interface{}
+	AuthorizedSessionTagValueList() *[]*string
+	SetAuthorizedSessionTagValueList(val *[]*string)
+	AuthorizedSessionTagValueListInput() *[]*string
 	CatalogId() *string
 	SetCatalogId(val *string)
 	CatalogIdInput() *string
@@ -38,6 +44,9 @@ type LakeformationDataLakeSettings interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExternalDataFilteringAllowList() *[]*string
+	SetExternalDataFilteringAllowList(val *[]*string)
+	ExternalDataFilteringAllowListInput() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -102,9 +111,12 @@ type LakeformationDataLakeSettings interface {
 	PutCreateDatabaseDefaultPermissions(value interface{})
 	PutCreateTableDefaultPermissions(value interface{})
 	ResetAdmins()
+	ResetAllowExternalDataFiltering()
+	ResetAuthorizedSessionTagValueList()
 	ResetCatalogId()
 	ResetCreateDatabaseDefaultPermissions()
 	ResetCreateTableDefaultPermissions()
+	ResetExternalDataFilteringAllowList()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -140,6 +152,46 @@ func (j *jsiiProxy_LakeformationDataLakeSettings) AdminsInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"adminsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LakeformationDataLakeSettings) AllowExternalDataFiltering() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowExternalDataFiltering",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LakeformationDataLakeSettings) AllowExternalDataFilteringInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowExternalDataFilteringInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LakeformationDataLakeSettings) AuthorizedSessionTagValueList() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"authorizedSessionTagValueList",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LakeformationDataLakeSettings) AuthorizedSessionTagValueListInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"authorizedSessionTagValueListInput",
 		&returns,
 	)
 	return returns
@@ -250,6 +302,26 @@ func (j *jsiiProxy_LakeformationDataLakeSettings) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LakeformationDataLakeSettings) ExternalDataFilteringAllowList() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"externalDataFilteringAllowList",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LakeformationDataLakeSettings) ExternalDataFilteringAllowListInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"externalDataFilteringAllowListInput",
 		&returns,
 	)
 	return returns
@@ -406,7 +478,7 @@ func (j *jsiiProxy_LakeformationDataLakeSettings) TrustedResourceOwnersInput() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Resource.
 func NewLakeformationDataLakeSettings(scope constructs.Construct, id *string, config *LakeformationDataLakeSettingsConfig) LakeformationDataLakeSettings {
 	_init_.Initialize()
 
@@ -424,7 +496,7 @@ func NewLakeformationDataLakeSettings(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Resource.
 func NewLakeformationDataLakeSettings_Override(l LakeformationDataLakeSettings, scope constructs.Construct, id *string, config *LakeformationDataLakeSettingsConfig) {
 	_init_.Initialize()
 
@@ -442,6 +514,28 @@ func (j *jsiiProxy_LakeformationDataLakeSettings)SetAdmins(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"admins",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LakeformationDataLakeSettings)SetAllowExternalDataFiltering(val interface{}) {
+	if err := j.validateSetAllowExternalDataFilteringParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowExternalDataFiltering",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LakeformationDataLakeSettings)SetAuthorizedSessionTagValueList(val *[]*string) {
+	if err := j.validateSetAuthorizedSessionTagValueListParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authorizedSessionTagValueList",
 		val,
 	)
 }
@@ -483,6 +577,17 @@ func (j *jsiiProxy_LakeformationDataLakeSettings)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LakeformationDataLakeSettings)SetExternalDataFilteringAllowList(val *[]*string) {
+	if err := j.validateSetExternalDataFilteringAllowListParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalDataFilteringAllowList",
 		val,
 	)
 }
@@ -843,6 +948,22 @@ func (l *jsiiProxy_LakeformationDataLakeSettings) ResetAdmins() {
 	)
 }
 
+func (l *jsiiProxy_LakeformationDataLakeSettings) ResetAllowExternalDataFiltering() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAllowExternalDataFiltering",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LakeformationDataLakeSettings) ResetAuthorizedSessionTagValueList() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAuthorizedSessionTagValueList",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LakeformationDataLakeSettings) ResetCatalogId() {
 	_jsii_.InvokeVoid(
 		l,
@@ -863,6 +984,14 @@ func (l *jsiiProxy_LakeformationDataLakeSettings) ResetCreateTableDefaultPermiss
 	_jsii_.InvokeVoid(
 		l,
 		"resetCreateTableDefaultPermissions",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LakeformationDataLakeSettings) ResetExternalDataFilteringAllowList() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetExternalDataFilteringAllowList",
 		nil, // no parameters
 	)
 }

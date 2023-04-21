@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream aws_cloudwatch_metric_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream aws_cloudwatch_metric_stream}.
 type CloudwatchMetricStream interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -48,6 +48,9 @@ type CloudwatchMetricStream interface {
 	IdInput() *string
 	IncludeFilter() CloudwatchMetricStreamIncludeFilterList
 	IncludeFilterInput() interface{}
+	IncludeLinkedAccountsMetrics() interface{}
+	SetIncludeLinkedAccountsMetrics(val interface{})
+	IncludeLinkedAccountsMetricsInput() interface{}
 	LastUpdateDate() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -126,6 +129,7 @@ type CloudwatchMetricStream interface {
 	ResetExcludeFilter()
 	ResetId()
 	ResetIncludeFilter()
+	ResetIncludeLinkedAccountsMetrics()
 	ResetName()
 	ResetNamePrefix()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -325,6 +329,26 @@ func (j *jsiiProxy_CloudwatchMetricStream) IncludeFilterInput() interface{} {
 	_jsii_.Get(
 		j,
 		"includeFilterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricStream) IncludeLinkedAccountsMetrics() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeLinkedAccountsMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricStream) IncludeLinkedAccountsMetricsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeLinkedAccountsMetricsInput",
 		&returns,
 	)
 	return returns
@@ -591,7 +615,7 @@ func (j *jsiiProxy_CloudwatchMetricStream) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream aws_cloudwatch_metric_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream aws_cloudwatch_metric_stream} Resource.
 func NewCloudwatchMetricStream(scope constructs.Construct, id *string, config *CloudwatchMetricStreamConfig) CloudwatchMetricStream {
 	_init_.Initialize()
 
@@ -609,7 +633,7 @@ func NewCloudwatchMetricStream(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudwatch_metric_stream aws_cloudwatch_metric_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_stream aws_cloudwatch_metric_stream} Resource.
 func NewCloudwatchMetricStream_Override(c CloudwatchMetricStream, scope constructs.Construct, id *string, config *CloudwatchMetricStreamConfig) {
 	_init_.Initialize()
 
@@ -676,6 +700,17 @@ func (j *jsiiProxy_CloudwatchMetricStream)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricStream)SetIncludeLinkedAccountsMetrics(val interface{}) {
+	if err := j.validateSetIncludeLinkedAccountsMetricsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeLinkedAccountsMetrics",
 		val,
 	)
 }
@@ -1106,6 +1141,14 @@ func (c *jsiiProxy_CloudwatchMetricStream) ResetIncludeFilter() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetIncludeFilter",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchMetricStream) ResetIncludeLinkedAccountsMetrics() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetIncludeLinkedAccountsMetrics",
 		nil, // no parameters
 	)
 }

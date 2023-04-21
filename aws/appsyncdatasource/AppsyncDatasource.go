@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appsync_datasource aws_appsync_datasource}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appsync_datasource aws_appsync_datasource}.
 type AppsyncDatasource interface {
 	cdktf.TerraformResource
 	ApiId() *string
@@ -65,6 +65,8 @@ type AppsyncDatasource interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OpensearchserviceConfig() AppsyncDatasourceOpensearchserviceConfigOutputReference
+	OpensearchserviceConfigInput() *AppsyncDatasourceOpensearchserviceConfig
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -119,6 +121,7 @@ type AppsyncDatasource interface {
 	PutEventBridgeConfig(value *AppsyncDatasourceEventBridgeConfig)
 	PutHttpConfig(value *AppsyncDatasourceHttpConfig)
 	PutLambdaConfig(value *AppsyncDatasourceLambdaConfig)
+	PutOpensearchserviceConfig(value *AppsyncDatasourceOpensearchserviceConfig)
 	PutRelationalDatabaseConfig(value *AppsyncDatasourceRelationalDatabaseConfig)
 	ResetDescription()
 	ResetDynamodbConfig()
@@ -127,6 +130,7 @@ type AppsyncDatasource interface {
 	ResetHttpConfig()
 	ResetId()
 	ResetLambdaConfig()
+	ResetOpensearchserviceConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -437,6 +441,26 @@ func (j *jsiiProxy_AppsyncDatasource) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_AppsyncDatasource) OpensearchserviceConfig() AppsyncDatasourceOpensearchserviceConfigOutputReference {
+	var returns AppsyncDatasourceOpensearchserviceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"opensearchserviceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncDatasource) OpensearchserviceConfigInput() *AppsyncDatasourceOpensearchserviceConfig {
+	var returns *AppsyncDatasourceOpensearchserviceConfig
+	_jsii_.Get(
+		j,
+		"opensearchserviceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppsyncDatasource) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -558,7 +582,7 @@ func (j *jsiiProxy_AppsyncDatasource) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appsync_datasource aws_appsync_datasource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appsync_datasource aws_appsync_datasource} Resource.
 func NewAppsyncDatasource(scope constructs.Construct, id *string, config *AppsyncDatasourceConfig) AppsyncDatasource {
 	_init_.Initialize()
 
@@ -576,7 +600,7 @@ func NewAppsyncDatasource(scope constructs.Construct, id *string, config *Appsyn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/appsync_datasource aws_appsync_datasource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appsync_datasource aws_appsync_datasource} Resource.
 func NewAppsyncDatasource_Override(a AppsyncDatasource, scope constructs.Construct, id *string, config *AppsyncDatasourceConfig) {
 	_init_.Initialize()
 
@@ -1042,6 +1066,17 @@ func (a *jsiiProxy_AppsyncDatasource) PutLambdaConfig(value *AppsyncDatasourceLa
 	)
 }
 
+func (a *jsiiProxy_AppsyncDatasource) PutOpensearchserviceConfig(value *AppsyncDatasourceOpensearchserviceConfig) {
+	if err := a.validatePutOpensearchserviceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putOpensearchserviceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppsyncDatasource) PutRelationalDatabaseConfig(value *AppsyncDatasourceRelationalDatabaseConfig) {
 	if err := a.validatePutRelationalDatabaseConfigParameters(value); err != nil {
 		panic(err)
@@ -1105,6 +1140,14 @@ func (a *jsiiProxy_AppsyncDatasource) ResetLambdaConfig() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetLambdaConfig",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppsyncDatasource) ResetOpensearchserviceConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOpensearchserviceConfig",
 		nil, // no parameters
 	)
 }

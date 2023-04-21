@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opensearch_domain_policy aws_opensearch_domain_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/opensearch_domain_policy aws_opensearch_domain_policy}.
 type OpensearchDomainPolicy interface {
 	cdktf.TerraformResource
 	AccessPolicies() *string
@@ -356,7 +356,7 @@ func (j *jsiiProxy_OpensearchDomainPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opensearch_domain_policy aws_opensearch_domain_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/opensearch_domain_policy aws_opensearch_domain_policy} Resource.
 func NewOpensearchDomainPolicy(scope constructs.Construct, id *string, config *OpensearchDomainPolicyConfig) OpensearchDomainPolicy {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewOpensearchDomainPolicy(scope constructs.Construct, id *string, config *O
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/opensearch_domain_policy aws_opensearch_domain_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/opensearch_domain_policy aws_opensearch_domain_policy} Resource.
 func NewOpensearchDomainPolicy_Override(o OpensearchDomainPolicy, scope constructs.Construct, id *string, config *OpensearchDomainPolicyConfig) {
 	_init_.Initialize()
 

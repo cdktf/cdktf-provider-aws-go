@@ -48,6 +48,10 @@ func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) validatePutActionParameters(v
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) validatePutCaptchaConfigParameters(value *Wafv2WebAclRuleCaptchaConfig) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) validatePutOverrideActionParameters(value *Wafv2WebAclRuleOverrideAction) error {
 	return nil
 }

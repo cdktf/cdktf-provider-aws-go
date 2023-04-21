@@ -45,6 +45,8 @@ type CloudwatchEventTargetEcsTargetOutputReference interface {
 	LaunchTypeInput() *string
 	NetworkConfiguration() CloudwatchEventTargetEcsTargetNetworkConfigurationOutputReference
 	NetworkConfigurationInput() *CloudwatchEventTargetEcsTargetNetworkConfiguration
+	OrderedPlacementStrategy() CloudwatchEventTargetEcsTargetOrderedPlacementStrategyList
+	OrderedPlacementStrategyInput() interface{}
 	PlacementConstraint() CloudwatchEventTargetEcsTargetPlacementConstraintList
 	PlacementConstraintInput() interface{}
 	PlatformVersion() *string
@@ -96,6 +98,7 @@ type CloudwatchEventTargetEcsTargetOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCapacityProviderStrategy(value interface{})
 	PutNetworkConfiguration(value *CloudwatchEventTargetEcsTargetNetworkConfiguration)
+	PutOrderedPlacementStrategy(value interface{})
 	PutPlacementConstraint(value interface{})
 	ResetCapacityProviderStrategy()
 	ResetEnableEcsManagedTags()
@@ -103,6 +106,7 @@ type CloudwatchEventTargetEcsTargetOutputReference interface {
 	ResetGroup()
 	ResetLaunchType()
 	ResetNetworkConfiguration()
+	ResetOrderedPlacementStrategy()
 	ResetPlacementConstraint()
 	ResetPlatformVersion()
 	ResetPropagateTags()
@@ -288,6 +292,26 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) NetworkConfigu
 	_jsii_.Get(
 		j,
 		"networkConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) OrderedPlacementStrategy() CloudwatchEventTargetEcsTargetOrderedPlacementStrategyList {
+	var returns CloudwatchEventTargetEcsTargetOrderedPlacementStrategyList
+	_jsii_.Get(
+		j,
+		"orderedPlacementStrategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) OrderedPlacementStrategyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"orderedPlacementStrategyInput",
 		&returns,
 	)
 	return returns
@@ -823,6 +847,17 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) PutNetworkConf
 	)
 }
 
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) PutOrderedPlacementStrategy(value interface{}) {
+	if err := c.validatePutOrderedPlacementStrategyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putOrderedPlacementStrategy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) PutPlacementConstraint(value interface{}) {
 	if err := c.validatePutPlacementConstraintParameters(value); err != nil {
 		panic(err)
@@ -878,6 +913,14 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) ResetNetworkCo
 	_jsii_.InvokeVoid(
 		c,
 		"resetNetworkConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) ResetOrderedPlacementStrategy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOrderedPlacementStrategy",
 		nil, // no parameters
 	)
 }

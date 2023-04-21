@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/kms_alias aws_kms_alias}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/kms_alias aws_kms_alias}.
 type KmsAlias interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -379,7 +379,7 @@ func (j *jsiiProxy_KmsAlias) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/kms_alias aws_kms_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/kms_alias aws_kms_alias} Resource.
 func NewKmsAlias(scope constructs.Construct, id *string, config *KmsAliasConfig) KmsAlias {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewKmsAlias(scope constructs.Construct, id *string, config *KmsAliasConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/kms_alias aws_kms_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/kms_alias aws_kms_alias} Resource.
 func NewKmsAlias_Override(k KmsAlias, scope constructs.Construct, id *string, config *KmsAliasConfig) {
 	_init_.Initialize()
 

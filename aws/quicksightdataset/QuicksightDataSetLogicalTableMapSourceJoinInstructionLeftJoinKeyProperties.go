@@ -2,7 +2,7 @@ package quicksightdataset
 
 
 type QuicksightDataSetLogicalTableMapSourceJoinInstructionLeftJoinKeyProperties struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/quicksight_data_set#unique_key QuicksightDataSet#unique_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/quicksight_data_set#unique_key QuicksightDataSet#unique_key}.
 	UniqueKey interface{} `field:"optional" json:"uniqueKey" yaml:"uniqueKey"`
 }
 

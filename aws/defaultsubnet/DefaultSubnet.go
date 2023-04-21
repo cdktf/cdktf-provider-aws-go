@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/default_subnet aws_default_subnet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/default_subnet aws_default_subnet}.
 type DefaultSubnet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -43,6 +43,7 @@ type DefaultSubnet interface {
 	EnableDns64() interface{}
 	SetEnableDns64(val interface{})
 	EnableDns64Input() interface{}
+	EnableLniAtDeviceIndex() *float64
 	EnableResourceNameDnsAaaaRecordOnLaunch() interface{}
 	SetEnableResourceNameDnsAaaaRecordOnLaunch(val interface{})
 	EnableResourceNameDnsAaaaRecordOnLaunchInput() interface{}
@@ -327,6 +328,16 @@ func (j *jsiiProxy_DefaultSubnet) EnableDns64Input() interface{} {
 	_jsii_.Get(
 		j,
 		"enableDns64Input",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DefaultSubnet) EnableLniAtDeviceIndex() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"enableLniAtDeviceIndex",
 		&returns,
 	)
 	return returns
@@ -733,7 +744,7 @@ func (j *jsiiProxy_DefaultSubnet) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/default_subnet aws_default_subnet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/default_subnet aws_default_subnet} Resource.
 func NewDefaultSubnet(scope constructs.Construct, id *string, config *DefaultSubnetConfig) DefaultSubnet {
 	_init_.Initialize()
 
@@ -751,7 +762,7 @@ func NewDefaultSubnet(scope constructs.Construct, id *string, config *DefaultSub
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/default_subnet aws_default_subnet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/default_subnet aws_default_subnet} Resource.
 func NewDefaultSubnet_Override(d DefaultSubnet, scope constructs.Construct, id *string, config *DefaultSubnetConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafregional_web_acl aws_wafregional_web_acl}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafregional_web_acl aws_wafregional_web_acl}.
 type WafregionalWebAcl interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -462,7 +462,7 @@ func (j *jsiiProxy_WafregionalWebAcl) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafregional_web_acl aws_wafregional_web_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafregional_web_acl aws_wafregional_web_acl} Resource.
 func NewWafregionalWebAcl(scope constructs.Construct, id *string, config *WafregionalWebAclConfig) WafregionalWebAcl {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewWafregionalWebAcl(scope constructs.Construct, id *string, config *Wafreg
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafregional_web_acl aws_wafregional_web_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafregional_web_acl aws_wafregional_web_acl} Resource.
 func NewWafregionalWebAcl_Override(w WafregionalWebAcl, scope constructs.Construct, id *string, config *WafregionalWebAclConfig) {
 	_init_.Initialize()
 

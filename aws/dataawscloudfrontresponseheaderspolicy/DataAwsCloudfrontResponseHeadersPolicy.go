@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy}.
 type DataAwsCloudfrontResponseHeadersPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -54,6 +54,7 @@ type DataAwsCloudfrontResponseHeadersPolicy interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	RemoveHeadersConfig() DataAwsCloudfrontResponseHeadersPolicyRemoveHeadersConfigList
 	SecurityHeadersConfig() DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigList
 	ServerTimingHeadersConfig() DataAwsCloudfrontResponseHeadersPolicyServerTimingHeadersConfigList
 	// Experimental.
@@ -297,6 +298,16 @@ func (j *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicy) RawOverrides() interf
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicy) RemoveHeadersConfig() DataAwsCloudfrontResponseHeadersPolicyRemoveHeadersConfigList {
+	var returns DataAwsCloudfrontResponseHeadersPolicyRemoveHeadersConfigList
+	_jsii_.Get(
+		j,
+		"removeHeadersConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicy) SecurityHeadersConfig() DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigList {
 	var returns DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigList
 	_jsii_.Get(
@@ -348,7 +359,7 @@ func (j *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicy) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy} Data Source.
 func NewDataAwsCloudfrontResponseHeadersPolicy(scope constructs.Construct, id *string, config *DataAwsCloudfrontResponseHeadersPolicyConfig) DataAwsCloudfrontResponseHeadersPolicy {
 	_init_.Initialize()
 
@@ -366,7 +377,7 @@ func NewDataAwsCloudfrontResponseHeadersPolicy(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy} Data Source.
 func NewDataAwsCloudfrontResponseHeadersPolicy_Override(d DataAwsCloudfrontResponseHeadersPolicy, scope constructs.Construct, id *string, config *DataAwsCloudfrontResponseHeadersPolicyConfig) {
 	_init_.Initialize()
 

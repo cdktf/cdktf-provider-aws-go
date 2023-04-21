@@ -9,9 +9,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_account aws_securityhub_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_account aws_securityhub_account}.
 type SecurityhubAccount interface {
 	cdktf.TerraformResource
+	Arn() *string
+	AutoEnableControls() interface{}
+	SetAutoEnableControls(val interface{})
+	AutoEnableControlsInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -20,6 +24,9 @@ type SecurityhubAccount interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ControlFindingGenerator() *string
+	SetControlFindingGenerator(val *string)
+	ControlFindingGeneratorInput() *string
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -89,6 +96,8 @@ type SecurityhubAccount interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAutoEnableControls()
+	ResetControlFindingGenerator()
 	ResetEnableDefaultStandards()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -107,6 +116,36 @@ type SecurityhubAccount interface {
 // The jsii proxy struct for SecurityhubAccount
 type jsiiProxy_SecurityhubAccount struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_SecurityhubAccount) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityhubAccount) AutoEnableControls() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoEnableControls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityhubAccount) AutoEnableControlsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"autoEnableControlsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SecurityhubAccount) CdktfStack() cdktf.TerraformStack {
@@ -134,6 +173,26 @@ func (j *jsiiProxy_SecurityhubAccount) ConstructNodeMetadata() *map[string]inter
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityhubAccount) ControlFindingGenerator() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"controlFindingGenerator",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityhubAccount) ControlFindingGeneratorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"controlFindingGeneratorInput",
 		&returns,
 	)
 	return returns
@@ -310,7 +369,7 @@ func (j *jsiiProxy_SecurityhubAccount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_account aws_securityhub_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_account aws_securityhub_account} Resource.
 func NewSecurityhubAccount(scope constructs.Construct, id *string, config *SecurityhubAccountConfig) SecurityhubAccount {
 	_init_.Initialize()
 
@@ -328,7 +387,7 @@ func NewSecurityhubAccount(scope constructs.Construct, id *string, config *Secur
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/securityhub_account aws_securityhub_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/securityhub_account aws_securityhub_account} Resource.
 func NewSecurityhubAccount_Override(s SecurityhubAccount, scope constructs.Construct, id *string, config *SecurityhubAccountConfig) {
 	_init_.Initialize()
 
@@ -339,6 +398,17 @@ func NewSecurityhubAccount_Override(s SecurityhubAccount, scope constructs.Const
 	)
 }
 
+func (j *jsiiProxy_SecurityhubAccount)SetAutoEnableControls(val interface{}) {
+	if err := j.validateSetAutoEnableControlsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"autoEnableControls",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SecurityhubAccount)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -346,6 +416,17 @@ func (j *jsiiProxy_SecurityhubAccount)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecurityhubAccount)SetControlFindingGenerator(val *string) {
+	if err := j.validateSetControlFindingGeneratorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"controlFindingGenerator",
 		val,
 	)
 }
@@ -692,6 +773,22 @@ func (s *jsiiProxy_SecurityhubAccount) OverrideLogicalId(newLogicalId *string) {
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_SecurityhubAccount) ResetAutoEnableControls() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAutoEnableControls",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityhubAccount) ResetControlFindingGenerator() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetControlFindingGenerator",
+		nil, // no parameters
 	)
 }
 

@@ -52,6 +52,10 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) validatePutNet
 	return nil
 }
 
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) validatePutOrderedPlacementStrategyParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchEventTargetEcsTargetOutputReference) validatePutPlacementConstraintParameters(value interface{}) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping}.
 type LambdaEventSourceMapping interface {
 	cdktf.TerraformResource
 	AmazonManagedKafkaEventSourceConfig() LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference
@@ -38,6 +38,8 @@ type LambdaEventSourceMapping interface {
 	SetDependsOn(val *[]*string)
 	DestinationConfig() LambdaEventSourceMappingDestinationConfigOutputReference
 	DestinationConfigInput() *LambdaEventSourceMappingDestinationConfig
+	DocumentDbEventSourceConfig() LambdaEventSourceMappingDocumentDbEventSourceConfigOutputReference
+	DocumentDbEventSourceConfigInput() *LambdaEventSourceMappingDocumentDbEventSourceConfig
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
@@ -153,6 +155,7 @@ type LambdaEventSourceMapping interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAmazonManagedKafkaEventSourceConfig(value *LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfig)
 	PutDestinationConfig(value *LambdaEventSourceMappingDestinationConfig)
+	PutDocumentDbEventSourceConfig(value *LambdaEventSourceMappingDocumentDbEventSourceConfig)
 	PutFilterCriteria(value *LambdaEventSourceMappingFilterCriteria)
 	PutScalingConfig(value *LambdaEventSourceMappingScalingConfig)
 	PutSelfManagedEventSource(value *LambdaEventSourceMappingSelfManagedEventSource)
@@ -162,6 +165,7 @@ type LambdaEventSourceMapping interface {
 	ResetBatchSize()
 	ResetBisectBatchOnFunctionError()
 	ResetDestinationConfig()
+	ResetDocumentDbEventSourceConfig()
 	ResetEnabled()
 	ResetEventSourceArn()
 	ResetFilterCriteria()
@@ -323,6 +327,26 @@ func (j *jsiiProxy_LambdaEventSourceMapping) DestinationConfigInput() *LambdaEve
 	_jsii_.Get(
 		j,
 		"destinationConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) DocumentDbEventSourceConfig() LambdaEventSourceMappingDocumentDbEventSourceConfigOutputReference {
+	var returns LambdaEventSourceMappingDocumentDbEventSourceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"documentDbEventSourceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaEventSourceMapping) DocumentDbEventSourceConfigInput() *LambdaEventSourceMappingDocumentDbEventSourceConfig {
+	var returns *LambdaEventSourceMappingDocumentDbEventSourceConfig
+	_jsii_.Get(
+		j,
+		"documentDbEventSourceConfigInput",
 		&returns,
 	)
 	return returns
@@ -879,7 +903,7 @@ func (j *jsiiProxy_LambdaEventSourceMapping) Uuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
 func NewLambdaEventSourceMapping(scope constructs.Construct, id *string, config *LambdaEventSourceMappingConfig) LambdaEventSourceMapping {
 	_init_.Initialize()
 
@@ -897,7 +921,7 @@ func NewLambdaEventSourceMapping(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
 func NewLambdaEventSourceMapping_Override(l LambdaEventSourceMapping, scope constructs.Construct, id *string, config *LambdaEventSourceMappingConfig) {
 	_init_.Initialize()
 
@@ -1440,6 +1464,17 @@ func (l *jsiiProxy_LambdaEventSourceMapping) PutDestinationConfig(value *LambdaE
 	)
 }
 
+func (l *jsiiProxy_LambdaEventSourceMapping) PutDocumentDbEventSourceConfig(value *LambdaEventSourceMappingDocumentDbEventSourceConfig) {
+	if err := l.validatePutDocumentDbEventSourceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putDocumentDbEventSourceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LambdaEventSourceMapping) PutFilterCriteria(value *LambdaEventSourceMappingFilterCriteria) {
 	if err := l.validatePutFilterCriteriaParameters(value); err != nil {
 		panic(err)
@@ -1523,6 +1558,14 @@ func (l *jsiiProxy_LambdaEventSourceMapping) ResetDestinationConfig() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetDestinationConfig",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) ResetDocumentDbEventSourceConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDocumentDbEventSourceConfig",
 		nil, // no parameters
 	)
 }

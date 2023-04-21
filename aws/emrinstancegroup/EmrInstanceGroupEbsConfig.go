@@ -2,13 +2,13 @@ package emrinstancegroup
 
 
 type EmrInstanceGroupEbsConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group#size EmrInstanceGroup#size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_instance_group#size EmrInstanceGroup#size}.
 	Size *float64 `field:"required" json:"size" yaml:"size"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group#type EmrInstanceGroup#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_instance_group#type EmrInstanceGroup#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group#iops EmrInstanceGroup#iops}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_instance_group#iops EmrInstanceGroup#iops}.
 	Iops *float64 `field:"optional" json:"iops" yaml:"iops"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/emr_instance_group#volumes_per_instance EmrInstanceGroup#volumes_per_instance}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/emr_instance_group#volumes_per_instance EmrInstanceGroup#volumes_per_instance}.
 	VolumesPerInstance *float64 `field:"optional" json:"volumesPerInstance" yaml:"volumesPerInstance"`
 }
 

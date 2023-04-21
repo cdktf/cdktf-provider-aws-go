@@ -60,6 +60,10 @@ func (l *jsiiProxy_LambdaEventSourceMapping) validatePutDestinationConfigParamet
 	return nil
 }
 
+func (l *jsiiProxy_LambdaEventSourceMapping) validatePutDocumentDbEventSourceConfigParameters(value *LambdaEventSourceMappingDocumentDbEventSourceConfig) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaEventSourceMapping) validatePutFilterCriteriaParameters(value *LambdaEventSourceMappingFilterCriteria) error {
 	return nil
 }

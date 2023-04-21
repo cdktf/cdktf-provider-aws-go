@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet aws_subnet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet aws_subnet}.
 type Subnet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -47,6 +47,9 @@ type Subnet interface {
 	EnableDns64() interface{}
 	SetEnableDns64(val interface{})
 	EnableDns64Input() interface{}
+	EnableLniAtDeviceIndex() *float64
+	SetEnableLniAtDeviceIndex(val *float64)
+	EnableLniAtDeviceIndexInput() *float64
 	EnableResourceNameDnsAaaaRecordOnLaunch() interface{}
 	SetEnableResourceNameDnsAaaaRecordOnLaunch(val interface{})
 	EnableResourceNameDnsAaaaRecordOnLaunchInput() interface{}
@@ -149,6 +152,7 @@ type Subnet interface {
 	ResetCidrBlock()
 	ResetCustomerOwnedIpv4Pool()
 	ResetEnableDns64()
+	ResetEnableLniAtDeviceIndex()
 	ResetEnableResourceNameDnsAaaaRecordOnLaunch()
 	ResetEnableResourceNameDnsARecordOnLaunch()
 	ResetId()
@@ -354,6 +358,26 @@ func (j *jsiiProxy_Subnet) EnableDns64Input() interface{} {
 	_jsii_.Get(
 		j,
 		"enableDns64Input",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Subnet) EnableLniAtDeviceIndex() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"enableLniAtDeviceIndex",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Subnet) EnableLniAtDeviceIndexInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"enableLniAtDeviceIndexInput",
 		&returns,
 	)
 	return returns
@@ -750,7 +774,7 @@ func (j *jsiiProxy_Subnet) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet aws_subnet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet aws_subnet} Resource.
 func NewSubnet(scope constructs.Construct, id *string, config *SubnetConfig) Subnet {
 	_init_.Initialize()
 
@@ -768,7 +792,7 @@ func NewSubnet(scope constructs.Construct, id *string, config *SubnetConfig) Sub
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/subnet aws_subnet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/subnet aws_subnet} Resource.
 func NewSubnet_Override(s Subnet, scope constructs.Construct, id *string, config *SubnetConfig) {
 	_init_.Initialize()
 
@@ -871,6 +895,17 @@ func (j *jsiiProxy_Subnet)SetEnableDns64(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableDns64",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Subnet)SetEnableLniAtDeviceIndex(val *float64) {
+	if err := j.validateSetEnableLniAtDeviceIndexParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableLniAtDeviceIndex",
 		val,
 	)
 }
@@ -1366,6 +1401,14 @@ func (s *jsiiProxy_Subnet) ResetEnableDns64() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetEnableDns64",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_Subnet) ResetEnableLniAtDeviceIndex() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnableLniAtDeviceIndex",
 		nil, // no parameters
 	)
 }

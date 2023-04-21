@@ -84,6 +84,10 @@ func (e *jsiiProxy_EmrCluster) validatePutMasterInstanceGroupParameters(value *E
 	return nil
 }
 
+func (e *jsiiProxy_EmrCluster) validatePutPlacementGroupConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrCluster) validatePutStepParameters(value interface{}) error {
 	return nil
 }

@@ -96,6 +96,10 @@ func (j *jsiiProxy_CloudwatchMetricStream) validateSetIdParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchMetricStream) validateSetIncludeLinkedAccountsMetricsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchMetricStream) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

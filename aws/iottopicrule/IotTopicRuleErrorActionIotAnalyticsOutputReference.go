@@ -10,6 +10,9 @@ import (
 
 type IotTopicRuleErrorActionIotAnalyticsOutputReference interface {
 	cdktf.ComplexObject
+	BatchMode() interface{}
+	SetBatchMode(val interface{})
+	BatchModeInput() interface{}
 	ChannelName() *string
 	SetChannelName(val *string)
 	ChannelNameInput() *string
@@ -67,6 +70,7 @@ type IotTopicRuleErrorActionIotAnalyticsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBatchMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -80,6 +84,26 @@ type IotTopicRuleErrorActionIotAnalyticsOutputReference interface {
 // The jsii proxy struct for IotTopicRuleErrorActionIotAnalyticsOutputReference
 type jsiiProxy_IotTopicRuleErrorActionIotAnalyticsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_IotTopicRuleErrorActionIotAnalyticsOutputReference) BatchMode() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"batchMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotTopicRuleErrorActionIotAnalyticsOutputReference) BatchModeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"batchModeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_IotTopicRuleErrorActionIotAnalyticsOutputReference) ChannelName() *string {
@@ -217,6 +241,17 @@ func NewIotTopicRuleErrorActionIotAnalyticsOutputReference_Override(i IotTopicRu
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionIotAnalyticsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
+	)
+}
+
+func (j *jsiiProxy_IotTopicRuleErrorActionIotAnalyticsOutputReference)SetBatchMode(val interface{}) {
+	if err := j.validateSetBatchModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"batchMode",
+		val,
 	)
 }
 
@@ -481,6 +516,14 @@ func (i *jsiiProxy_IotTopicRuleErrorActionIotAnalyticsOutputReference) Interpola
 	)
 
 	return returns
+}
+
+func (i *jsiiProxy_IotTopicRuleErrorActionIotAnalyticsOutputReference) ResetBatchMode() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetBatchMode",
+		nil, // no parameters
+	)
 }
 
 func (i *jsiiProxy_IotTopicRuleErrorActionIotAnalyticsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

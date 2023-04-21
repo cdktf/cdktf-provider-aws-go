@@ -29,6 +29,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "defaultForAzInput", GoGetter: "DefaultForAzInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "enableDns64", GoGetter: "EnableDns64"},
+			_jsii_.MemberProperty{JsiiProperty: "enableLniAtDeviceIndex", GoGetter: "EnableLniAtDeviceIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "enableResourceNameDnsAaaaRecordOnLaunch", GoGetter: "EnableResourceNameDnsAaaaRecordOnLaunch"},
 			_jsii_.MemberProperty{JsiiProperty: "enableResourceNameDnsARecordOnLaunch", GoGetter: "EnableResourceNameDnsARecordOnLaunch"},
 			_jsii_.MemberProperty{JsiiProperty: "filter", GoGetter: "Filter"},

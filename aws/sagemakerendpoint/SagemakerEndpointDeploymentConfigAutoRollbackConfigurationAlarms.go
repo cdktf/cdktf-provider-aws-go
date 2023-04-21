@@ -2,7 +2,7 @@ package sagemakerendpoint
 
 
 type SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarms struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/sagemaker_endpoint#alarm_name SagemakerEndpoint#alarm_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/sagemaker_endpoint#alarm_name SagemakerEndpoint#alarm_name}.
 	AlarmName *string `field:"required" json:"alarmName" yaml:"alarmName"`
 }
 

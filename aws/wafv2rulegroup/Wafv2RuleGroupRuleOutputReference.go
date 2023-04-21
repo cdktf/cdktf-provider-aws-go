@@ -12,6 +12,8 @@ type Wafv2RuleGroupRuleOutputReference interface {
 	cdktf.ComplexObject
 	Action() Wafv2RuleGroupRuleActionOutputReference
 	ActionInput() *Wafv2RuleGroupRuleAction
+	CaptchaConfig() Wafv2RuleGroupRuleCaptchaConfigOutputReference
+	CaptchaConfigInput() *Wafv2RuleGroupRuleCaptchaConfig
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -76,9 +78,11 @@ type Wafv2RuleGroupRuleOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAction(value *Wafv2RuleGroupRuleAction)
+	PutCaptchaConfig(value *Wafv2RuleGroupRuleCaptchaConfig)
 	PutRuleLabel(value interface{})
 	PutStatement(value *Wafv2RuleGroupRuleStatement)
 	PutVisibilityConfig(value *Wafv2RuleGroupRuleVisibilityConfig)
+	ResetCaptchaConfig()
 	ResetRuleLabel()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -110,6 +114,26 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) ActionInput() *Wafv2RuleGr
 	_jsii_.Get(
 		j,
 		"actionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) CaptchaConfig() Wafv2RuleGroupRuleCaptchaConfigOutputReference {
+	var returns Wafv2RuleGroupRuleCaptchaConfigOutputReference
+	_jsii_.Get(
+		j,
+		"captchaConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) CaptchaConfigInput() *Wafv2RuleGroupRuleCaptchaConfig {
+	var returns *Wafv2RuleGroupRuleCaptchaConfig
+	_jsii_.Get(
+		j,
+		"captchaConfigInput",
 		&returns,
 	)
 	return returns
@@ -587,6 +611,17 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) PutAction(value *Wafv2Rule
 	)
 }
 
+func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) PutCaptchaConfig(value *Wafv2RuleGroupRuleCaptchaConfig) {
+	if err := w.validatePutCaptchaConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putCaptchaConfig",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) PutRuleLabel(value interface{}) {
 	if err := w.validatePutRuleLabelParameters(value); err != nil {
 		panic(err)
@@ -617,6 +652,14 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) PutVisibilityConfig(value 
 		w,
 		"putVisibilityConfig",
 		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) ResetCaptchaConfig() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetCaptchaConfig",
+		nil, // no parameters
 	)
 }
 

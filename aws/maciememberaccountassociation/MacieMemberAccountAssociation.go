@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_member_account_association aws_macie_member_account_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/macie_member_account_association aws_macie_member_account_association}.
 type MacieMemberAccountAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -309,7 +309,7 @@ func (j *jsiiProxy_MacieMemberAccountAssociation) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_member_account_association aws_macie_member_account_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/macie_member_account_association aws_macie_member_account_association} Resource.
 func NewMacieMemberAccountAssociation(scope constructs.Construct, id *string, config *MacieMemberAccountAssociationConfig) MacieMemberAccountAssociation {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewMacieMemberAccountAssociation(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/macie_member_account_association aws_macie_member_account_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/macie_member_account_association aws_macie_member_account_association} Resource.
 func NewMacieMemberAccountAssociation_Override(m MacieMemberAccountAssociation, scope constructs.Construct, id *string, config *MacieMemberAccountAssociationConfig) {
 	_init_.Initialize()
 

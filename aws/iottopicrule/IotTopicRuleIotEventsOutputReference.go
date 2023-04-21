@@ -10,6 +10,9 @@ import (
 
 type IotTopicRuleIotEventsOutputReference interface {
 	cdktf.ComplexObject
+	BatchMode() interface{}
+	SetBatchMode(val interface{})
+	BatchModeInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +73,7 @@ type IotTopicRuleIotEventsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBatchMode()
 	ResetMessageId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -84,6 +88,26 @@ type IotTopicRuleIotEventsOutputReference interface {
 // The jsii proxy struct for IotTopicRuleIotEventsOutputReference
 type jsiiProxy_IotTopicRuleIotEventsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_IotTopicRuleIotEventsOutputReference) BatchMode() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"batchMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotTopicRuleIotEventsOutputReference) BatchModeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"batchModeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_IotTopicRuleIotEventsOutputReference) ComplexObjectIndex() interface{} {
@@ -241,6 +265,17 @@ func NewIotTopicRuleIotEventsOutputReference_Override(i IotTopicRuleIotEventsOut
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
+	)
+}
+
+func (j *jsiiProxy_IotTopicRuleIotEventsOutputReference)SetBatchMode(val interface{}) {
+	if err := j.validateSetBatchModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"batchMode",
+		val,
 	)
 }
 
@@ -516,6 +551,14 @@ func (i *jsiiProxy_IotTopicRuleIotEventsOutputReference) InterpolationForAttribu
 	)
 
 	return returns
+}
+
+func (i *jsiiProxy_IotTopicRuleIotEventsOutputReference) ResetBatchMode() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetBatchMode",
+		nil, // no parameters
+	)
 }
 
 func (i *jsiiProxy_IotTopicRuleIotEventsOutputReference) ResetMessageId() {

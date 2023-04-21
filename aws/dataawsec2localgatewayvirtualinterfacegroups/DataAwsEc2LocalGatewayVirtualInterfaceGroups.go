@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_local_gateway_virtual_interface_groups aws_ec2_local_gateway_virtual_interface_groups}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/ec2_local_gateway_virtual_interface_groups aws_ec2_local_gateway_virtual_interface_groups}.
 type DataAwsEc2LocalGatewayVirtualInterfaceGroups interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -352,7 +352,7 @@ func (j *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroups) TimeoutsInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_local_gateway_virtual_interface_groups aws_ec2_local_gateway_virtual_interface_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/ec2_local_gateway_virtual_interface_groups aws_ec2_local_gateway_virtual_interface_groups} Data Source.
 func NewDataAwsEc2LocalGatewayVirtualInterfaceGroups(scope constructs.Construct, id *string, config *DataAwsEc2LocalGatewayVirtualInterfaceGroupsConfig) DataAwsEc2LocalGatewayVirtualInterfaceGroups {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewDataAwsEc2LocalGatewayVirtualInterfaceGroups(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ec2_local_gateway_virtual_interface_groups aws_ec2_local_gateway_virtual_interface_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/ec2_local_gateway_virtual_interface_groups aws_ec2_local_gateway_virtual_interface_groups} Data Source.
 func NewDataAwsEc2LocalGatewayVirtualInterfaceGroups_Override(d DataAwsEc2LocalGatewayVirtualInterfaceGroups, scope constructs.Construct, id *string, config *DataAwsEc2LocalGatewayVirtualInterfaceGroupsConfig) {
 	_init_.Initialize()
 

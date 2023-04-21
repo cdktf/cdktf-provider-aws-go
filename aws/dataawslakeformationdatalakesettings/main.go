@@ -13,6 +13,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "admins", GoGetter: "Admins"},
+			_jsii_.MemberProperty{JsiiProperty: "allowExternalDataFiltering", GoGetter: "AllowExternalDataFiltering"},
+			_jsii_.MemberProperty{JsiiProperty: "authorizedSessionTagValueList", GoGetter: "AuthorizedSessionTagValueList"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogId", GoGetter: "CatalogId"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogIdInput", GoGetter: "CatalogIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -21,6 +23,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "createDatabaseDefaultPermissions", GoGetter: "CreateDatabaseDefaultPermissions"},
 			_jsii_.MemberProperty{JsiiProperty: "createTableDefaultPermissions", GoGetter: "CreateTableDefaultPermissions"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "externalDataFilteringAllowList", GoGetter: "ExternalDataFilteringAllowList"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},

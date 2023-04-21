@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/outposts_outpost aws_outposts_outpost}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/outposts_outpost aws_outposts_outpost}.
 type DataAwsOutpostsOutpost interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -45,6 +45,7 @@ type DataAwsOutpostsOutpost interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LifecycleStatus() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -59,7 +60,12 @@ type DataAwsOutpostsOutpost interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	SiteArn() *string
 	SiteId() *string
+	SupportedHardwareType() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -98,6 +104,7 @@ type DataAwsOutpostsOutpost interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOwnerId()
+	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -263,6 +270,16 @@ func (j *jsiiProxy_DataAwsOutpostsOutpost) Lifecycle() *cdktf.TerraformResourceL
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsOutpostsOutpost) LifecycleStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lifecycleStatus",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsOutpostsOutpost) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -333,11 +350,51 @@ func (j *jsiiProxy_DataAwsOutpostsOutpost) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsOutpostsOutpost) SiteArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"siteArn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsOutpostsOutpost) SiteId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"siteId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsOutpostsOutpost) SupportedHardwareType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"supportedHardwareType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsOutpostsOutpost) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsOutpostsOutpost) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
 		&returns,
 	)
 	return returns
@@ -374,7 +431,7 @@ func (j *jsiiProxy_DataAwsOutpostsOutpost) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/outposts_outpost aws_outposts_outpost} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/outposts_outpost aws_outposts_outpost} Data Source.
 func NewDataAwsOutpostsOutpost(scope constructs.Construct, id *string, config *DataAwsOutpostsOutpostConfig) DataAwsOutpostsOutpost {
 	_init_.Initialize()
 
@@ -392,7 +449,7 @@ func NewDataAwsOutpostsOutpost(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/outposts_outpost aws_outposts_outpost} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/outposts_outpost aws_outposts_outpost} Data Source.
 func NewDataAwsOutpostsOutpost_Override(d DataAwsOutpostsOutpost, scope constructs.Construct, id *string, config *DataAwsOutpostsOutpostConfig) {
 	_init_.Initialize()
 
@@ -489,6 +546,17 @@ func (j *jsiiProxy_DataAwsOutpostsOutpost)SetProvider(val cdktf.TerraformProvide
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsOutpostsOutpost)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -795,6 +863,14 @@ func (d *jsiiProxy_DataAwsOutpostsOutpost) ResetOwnerId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOwnerId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsOutpostsOutpost) ResetTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTags",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/eks_node_group aws_eks_node_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/eks_node_group aws_eks_node_group}.
 type DataAwsEksNodeGroup interface {
 	cdktf.TerraformDataSource
 	AmiType() *string
@@ -44,6 +44,7 @@ type DataAwsEksNodeGroup interface {
 	IdInput() *string
 	InstanceTypes() *[]*string
 	Labels() cdktf.StringMap
+	LaunchTemplate() DataAwsEksNodeGroupLaunchTemplateList
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -292,6 +293,16 @@ func (j *jsiiProxy_DataAwsEksNodeGroup) Labels() cdktf.StringMap {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEksNodeGroup) LaunchTemplate() DataAwsEksNodeGroupLaunchTemplateList {
+	var returns DataAwsEksNodeGroupLaunchTemplateList
+	_jsii_.Get(
+		j,
+		"launchTemplate",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEksNodeGroup) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -493,7 +504,7 @@ func (j *jsiiProxy_DataAwsEksNodeGroup) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/eks_node_group aws_eks_node_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/eks_node_group aws_eks_node_group} Data Source.
 func NewDataAwsEksNodeGroup(scope constructs.Construct, id *string, config *DataAwsEksNodeGroupConfig) DataAwsEksNodeGroup {
 	_init_.Initialize()
 
@@ -511,7 +522,7 @@ func NewDataAwsEksNodeGroup(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/eks_node_group aws_eks_node_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/eks_node_group aws_eks_node_group} Data Source.
 func NewDataAwsEksNodeGroup_Override(d DataAwsEksNodeGroup, scope constructs.Construct, id *string, config *DataAwsEksNodeGroupConfig) {
 	_init_.Initialize()
 

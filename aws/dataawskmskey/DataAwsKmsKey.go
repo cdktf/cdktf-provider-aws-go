@@ -9,13 +9,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/kms_key aws_kms_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/kms_key aws_kms_key}.
 type DataAwsKmsKey interface {
 	cdktf.TerraformDataSource
 	Arn() *string
 	AwsAccountId() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CloudHsmClusterId() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -24,6 +25,7 @@ type DataAwsKmsKey interface {
 	SetCount(val interface{})
 	CreationDate() *string
 	CustomerMasterKeySpec() *string
+	CustomKeyStoreId() *string
 	DeletionDate() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -50,6 +52,7 @@ type DataAwsKmsKey interface {
 	SetKeyId(val *string)
 	KeyIdInput() *string
 	KeyManager() *string
+	KeySpec() *string
 	KeyState() *string
 	KeyUsage() *string
 	// Experimental.
@@ -61,6 +64,7 @@ type DataAwsKmsKey interface {
 	// The tree node.
 	Node() constructs.Node
 	Origin() *string
+	PendingDeletionWindowInDays() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -74,6 +78,7 @@ type DataAwsKmsKey interface {
 	// Experimental.
 	TerraformResourceType() *string
 	ValidTo() *string
+	XksKeyConfiguration() DataAwsKmsKeyXksKeyConfigurationList
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -149,6 +154,16 @@ func (j *jsiiProxy_DataAwsKmsKey) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsKmsKey) CloudHsmClusterId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudHsmClusterId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsKmsKey) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -184,6 +199,16 @@ func (j *jsiiProxy_DataAwsKmsKey) CustomerMasterKeySpec() *string {
 	_jsii_.Get(
 		j,
 		"customerMasterKeySpec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsKmsKey) CustomKeyStoreId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customKeyStoreId",
 		&returns,
 	)
 	return returns
@@ -339,6 +364,16 @@ func (j *jsiiProxy_DataAwsKmsKey) KeyManager() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsKmsKey) KeySpec() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keySpec",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsKmsKey) KeyState() *string {
 	var returns *string
 	_jsii_.Get(
@@ -409,6 +444,16 @@ func (j *jsiiProxy_DataAwsKmsKey) Origin() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsKmsKey) PendingDeletionWindowInDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"pendingDeletionWindowInDays",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsKmsKey) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -469,8 +514,18 @@ func (j *jsiiProxy_DataAwsKmsKey) ValidTo() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsKmsKey) XksKeyConfiguration() DataAwsKmsKeyXksKeyConfigurationList {
+	var returns DataAwsKmsKeyXksKeyConfigurationList
+	_jsii_.Get(
+		j,
+		"xksKeyConfiguration",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/kms_key aws_kms_key} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/kms_key aws_kms_key} Data Source.
 func NewDataAwsKmsKey(scope constructs.Construct, id *string, config *DataAwsKmsKeyConfig) DataAwsKmsKey {
 	_init_.Initialize()
 
@@ -488,7 +543,7 @@ func NewDataAwsKmsKey(scope constructs.Construct, id *string, config *DataAwsKms
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/kms_key aws_kms_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/kms_key aws_kms_key} Data Source.
 func NewDataAwsKmsKey_Override(d DataAwsKmsKey, scope constructs.Construct, id *string, config *DataAwsKmsKeyConfig) {
 	_init_.Initialize()
 

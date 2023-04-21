@@ -133,6 +133,17 @@ func (l *jsiiProxy_LambdaEventSourceMapping) validatePutDestinationConfigParamet
 	return nil
 }
 
+func (l *jsiiProxy_LambdaEventSourceMapping) validatePutDocumentDbEventSourceConfigParameters(value *LambdaEventSourceMappingDocumentDbEventSourceConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (l *jsiiProxy_LambdaEventSourceMapping) validatePutFilterCriteriaParameters(value *LambdaEventSourceMappingFilterCriteria) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

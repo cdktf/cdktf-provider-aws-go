@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/main_route_table_association aws_main_route_table_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/main_route_table_association aws_main_route_table_association}.
 type MainRouteTableAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -65,6 +65,8 @@ type MainRouteTableAssociation interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() MainRouteTableAssociationTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	VpcId() *string
 	SetVpcId(val *string)
 	VpcIdInput() *string
@@ -93,10 +95,12 @@ type MainRouteTableAssociation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *MainRouteTableAssociationTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -322,6 +326,26 @@ func (j *jsiiProxy_MainRouteTableAssociation) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MainRouteTableAssociation) Timeouts() MainRouteTableAssociationTimeoutsOutputReference {
+	var returns MainRouteTableAssociationTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MainRouteTableAssociation) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MainRouteTableAssociation) VpcId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -343,7 +367,7 @@ func (j *jsiiProxy_MainRouteTableAssociation) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/main_route_table_association aws_main_route_table_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/main_route_table_association aws_main_route_table_association} Resource.
 func NewMainRouteTableAssociation(scope constructs.Construct, id *string, config *MainRouteTableAssociationConfig) MainRouteTableAssociation {
 	_init_.Initialize()
 
@@ -361,7 +385,7 @@ func NewMainRouteTableAssociation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/main_route_table_association aws_main_route_table_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/main_route_table_association aws_main_route_table_association} Resource.
 func NewMainRouteTableAssociation_Override(m MainRouteTableAssociation, scope constructs.Construct, id *string, config *MainRouteTableAssociationConfig) {
 	_init_.Initialize()
 
@@ -739,6 +763,17 @@ func (m *jsiiProxy_MainRouteTableAssociation) OverrideLogicalId(newLogicalId *st
 	)
 }
 
+func (m *jsiiProxy_MainRouteTableAssociation) PutTimeouts(value *MainRouteTableAssociationTimeouts) {
+	if err := m.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MainRouteTableAssociation) ResetId() {
 	_jsii_.InvokeVoid(
 		m,
@@ -751,6 +786,14 @@ func (m *jsiiProxy_MainRouteTableAssociation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MainRouteTableAssociation) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

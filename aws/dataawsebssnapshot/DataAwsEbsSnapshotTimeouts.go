@@ -2,7 +2,7 @@ package dataawsebssnapshot
 
 
 type DataAwsEbsSnapshotTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/ebs_snapshot#read DataAwsEbsSnapshot#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/ebs_snapshot#read DataAwsEbsSnapshot#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

@@ -52,6 +52,10 @@ func (w *jsiiProxy_Wafv2WebAcl) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2WebAcl) validatePutCaptchaConfigParameters(value *Wafv2WebAclCaptchaConfig) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2WebAcl) validatePutCustomResponseBodyParameters(value interface{}) error {
 	return nil
 }

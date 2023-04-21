@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/licensemanager_license_configuration aws_licensemanager_license_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/licensemanager_license_configuration aws_licensemanager_license_configuration}.
 type LicensemanagerLicenseConfiguration interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -498,7 +498,7 @@ func (j *jsiiProxy_LicensemanagerLicenseConfiguration) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/licensemanager_license_configuration aws_licensemanager_license_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/licensemanager_license_configuration aws_licensemanager_license_configuration} Resource.
 func NewLicensemanagerLicenseConfiguration(scope constructs.Construct, id *string, config *LicensemanagerLicenseConfigurationConfig) LicensemanagerLicenseConfiguration {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewLicensemanagerLicenseConfiguration(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/licensemanager_license_configuration aws_licensemanager_license_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/licensemanager_license_configuration aws_licensemanager_license_configuration} Resource.
 func NewLicensemanagerLicenseConfiguration_Override(l LicensemanagerLicenseConfiguration, scope constructs.Construct, id *string, config *LicensemanagerLicenseConfigurationConfig) {
 	_init_.Initialize()
 

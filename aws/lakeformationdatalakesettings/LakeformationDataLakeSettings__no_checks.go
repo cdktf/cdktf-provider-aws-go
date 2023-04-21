@@ -76,6 +76,14 @@ func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetAdminsParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetAllowExternalDataFilteringParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetAuthorizedSessionTagValueListParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetCatalogIdParameters(val *string) error {
 	return nil
 }
@@ -85,6 +93,10 @@ func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetConnectionParameter
 }
 
 func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetExternalDataFilteringAllowListParameters(val *[]*string) error {
 	return nil
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy}.
 type CloudfrontResponseHeadersPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -68,6 +68,8 @@ type CloudfrontResponseHeadersPolicy interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RemoveHeadersConfig() CloudfrontResponseHeadersPolicyRemoveHeadersConfigOutputReference
+	RemoveHeadersConfigInput() *CloudfrontResponseHeadersPolicyRemoveHeadersConfig
 	SecurityHeadersConfig() CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference
 	SecurityHeadersConfigInput() *CloudfrontResponseHeadersPolicySecurityHeadersConfig
 	ServerTimingHeadersConfig() CloudfrontResponseHeadersPolicyServerTimingHeadersConfigOutputReference
@@ -105,6 +107,7 @@ type CloudfrontResponseHeadersPolicy interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutCorsConfig(value *CloudfrontResponseHeadersPolicyCorsConfig)
 	PutCustomHeadersConfig(value *CloudfrontResponseHeadersPolicyCustomHeadersConfig)
+	PutRemoveHeadersConfig(value *CloudfrontResponseHeadersPolicyRemoveHeadersConfig)
 	PutSecurityHeadersConfig(value *CloudfrontResponseHeadersPolicySecurityHeadersConfig)
 	PutServerTimingHeadersConfig(value *CloudfrontResponseHeadersPolicyServerTimingHeadersConfig)
 	ResetComment()
@@ -115,6 +118,7 @@ type CloudfrontResponseHeadersPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRemoveHeadersConfig()
 	ResetSecurityHeadersConfig()
 	ResetServerTimingHeadersConfig()
 	SynthesizeAttributes() *map[string]interface{}
@@ -382,6 +386,26 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicy) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicy) RemoveHeadersConfig() CloudfrontResponseHeadersPolicyRemoveHeadersConfigOutputReference {
+	var returns CloudfrontResponseHeadersPolicyRemoveHeadersConfigOutputReference
+	_jsii_.Get(
+		j,
+		"removeHeadersConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicy) RemoveHeadersConfigInput() *CloudfrontResponseHeadersPolicyRemoveHeadersConfig {
+	var returns *CloudfrontResponseHeadersPolicyRemoveHeadersConfig
+	_jsii_.Get(
+		j,
+		"removeHeadersConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudfrontResponseHeadersPolicy) SecurityHeadersConfig() CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference {
 	var returns CloudfrontResponseHeadersPolicySecurityHeadersConfigOutputReference
 	_jsii_.Get(
@@ -453,7 +477,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicy) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy} Resource.
 func NewCloudfrontResponseHeadersPolicy(scope constructs.Construct, id *string, config *CloudfrontResponseHeadersPolicyConfig) CloudfrontResponseHeadersPolicy {
 	_init_.Initialize()
 
@@ -471,7 +495,7 @@ func NewCloudfrontResponseHeadersPolicy(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudfront_response_headers_policy aws_cloudfront_response_headers_policy} Resource.
 func NewCloudfrontResponseHeadersPolicy_Override(c CloudfrontResponseHeadersPolicy, scope constructs.Construct, id *string, config *CloudfrontResponseHeadersPolicyConfig) {
 	_init_.Initialize()
 
@@ -882,6 +906,17 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) PutCustomHeadersConfig(value
 	)
 }
 
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) PutRemoveHeadersConfig(value *CloudfrontResponseHeadersPolicyRemoveHeadersConfig) {
+	if err := c.validatePutRemoveHeadersConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putRemoveHeadersConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) PutSecurityHeadersConfig(value *CloudfrontResponseHeadersPolicySecurityHeadersConfig) {
 	if err := c.validatePutSecurityHeadersConfigParameters(value); err != nil {
 		panic(err)
@@ -948,6 +983,14 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) ResetRemoveHeadersConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRemoveHeadersConfig",
 		nil, // no parameters
 	)
 }

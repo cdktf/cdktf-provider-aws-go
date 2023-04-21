@@ -9,11 +9,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl}.
 type Wafv2WebAcl interface {
 	cdktf.TerraformResource
 	Arn() *string
 	Capacity() *float64
+	CaptchaConfig() Wafv2WebAclCaptchaConfigOutputReference
+	CaptchaConfigInput() *Wafv2WebAclCaptchaConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -112,10 +114,12 @@ type Wafv2WebAcl interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCaptchaConfig(value *Wafv2WebAclCaptchaConfig)
 	PutCustomResponseBody(value interface{})
 	PutDefaultAction(value *Wafv2WebAclDefaultAction)
 	PutRule(value interface{})
 	PutVisibilityConfig(value *Wafv2WebAclVisibilityConfig)
+	ResetCaptchaConfig()
 	ResetCustomResponseBody()
 	ResetDescription()
 	ResetId()
@@ -155,6 +159,26 @@ func (j *jsiiProxy_Wafv2WebAcl) Capacity() *float64 {
 	_jsii_.Get(
 		j,
 		"capacity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAcl) CaptchaConfig() Wafv2WebAclCaptchaConfigOutputReference {
+	var returns Wafv2WebAclCaptchaConfigOutputReference
+	_jsii_.Get(
+		j,
+		"captchaConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAcl) CaptchaConfigInput() *Wafv2WebAclCaptchaConfig {
+	var returns *Wafv2WebAclCaptchaConfig
+	_jsii_.Get(
+		j,
+		"captchaConfigInput",
 		&returns,
 	)
 	return returns
@@ -531,7 +555,7 @@ func (j *jsiiProxy_Wafv2WebAcl) VisibilityConfigInput() *Wafv2WebAclVisibilityCo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
 func NewWafv2WebAcl(scope constructs.Construct, id *string, config *Wafv2WebAclConfig) Wafv2WebAcl {
 	_init_.Initialize()
 
@@ -549,7 +573,7 @@ func NewWafv2WebAcl(scope constructs.Construct, id *string, config *Wafv2WebAclC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
 func NewWafv2WebAcl_Override(w Wafv2WebAcl, scope constructs.Construct, id *string, config *Wafv2WebAclConfig) {
 	_init_.Initialize()
 
@@ -960,6 +984,17 @@ func (w *jsiiProxy_Wafv2WebAcl) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (w *jsiiProxy_Wafv2WebAcl) PutCaptchaConfig(value *Wafv2WebAclCaptchaConfig) {
+	if err := w.validatePutCaptchaConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putCaptchaConfig",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2WebAcl) PutCustomResponseBody(value interface{}) {
 	if err := w.validatePutCustomResponseBodyParameters(value); err != nil {
 		panic(err)
@@ -1001,6 +1036,14 @@ func (w *jsiiProxy_Wafv2WebAcl) PutVisibilityConfig(value *Wafv2WebAclVisibility
 		w,
 		"putVisibilityConfig",
 		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAcl) ResetCaptchaConfig() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetCaptchaConfig",
+		nil, // no parameters
 	)
 }
 

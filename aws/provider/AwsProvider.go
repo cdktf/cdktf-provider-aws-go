@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs aws}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs aws}.
 type AwsProvider interface {
 	cdktf.TerraformProvider
 	AccessKey() *string
@@ -924,7 +924,7 @@ func (j *jsiiProxy_AwsProvider) UseFipsEndpointInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs aws} Resource.
 func NewAwsProvider(scope constructs.Construct, id *string, config *AwsProviderConfig) AwsProvider {
 	_init_.Initialize()
 
@@ -942,7 +942,7 @@ func NewAwsProvider(scope constructs.Construct, id *string, config *AwsProviderC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs aws} Resource.
 func NewAwsProvider_Override(a AwsProvider, scope constructs.Construct, id *string, config *AwsProviderConfig) {
 	_init_.Initialize()
 

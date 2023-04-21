@@ -48,6 +48,10 @@ func (i *jsiiProxy_IotTopicRuleIotAnalyticsOutputReference) validateResolveParam
 	return nil
 }
 
+func (j *jsiiProxy_IotTopicRuleIotAnalyticsOutputReference) validateSetBatchModeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotTopicRuleIotAnalyticsOutputReference) validateSetChannelNameParameters(val *string) error {
 	return nil
 }

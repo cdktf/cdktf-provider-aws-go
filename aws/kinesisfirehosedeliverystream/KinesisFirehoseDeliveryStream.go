@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream}.
 type KinesisFirehoseDeliveryStream interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -65,6 +65,8 @@ type KinesisFirehoseDeliveryStream interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OpensearchConfiguration() KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference
+	OpensearchConfigurationInput() *KinesisFirehoseDeliveryStreamOpensearchConfiguration
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -129,6 +131,7 @@ type KinesisFirehoseDeliveryStream interface {
 	PutExtendedS3Configuration(value *KinesisFirehoseDeliveryStreamExtendedS3Configuration)
 	PutHttpEndpointConfiguration(value *KinesisFirehoseDeliveryStreamHttpEndpointConfiguration)
 	PutKinesisSourceConfiguration(value *KinesisFirehoseDeliveryStreamKinesisSourceConfiguration)
+	PutOpensearchConfiguration(value *KinesisFirehoseDeliveryStreamOpensearchConfiguration)
 	PutRedshiftConfiguration(value *KinesisFirehoseDeliveryStreamRedshiftConfiguration)
 	PutS3Configuration(value *KinesisFirehoseDeliveryStreamS3Configuration)
 	PutServerSideEncryption(value *KinesisFirehoseDeliveryStreamServerSideEncryption)
@@ -141,6 +144,7 @@ type KinesisFirehoseDeliveryStream interface {
 	ResetHttpEndpointConfiguration()
 	ResetId()
 	ResetKinesisSourceConfiguration()
+	ResetOpensearchConfiguration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -447,6 +451,26 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) OpensearchConfiguration() KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference {
+	var returns KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"opensearchConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) OpensearchConfigurationInput() *KinesisFirehoseDeliveryStreamOpensearchConfiguration {
+	var returns *KinesisFirehoseDeliveryStreamOpensearchConfiguration
+	_jsii_.Get(
+		j,
+		"opensearchConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KinesisFirehoseDeliveryStream) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -668,7 +692,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) VersionIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
 func NewKinesisFirehoseDeliveryStream(scope constructs.Construct, id *string, config *KinesisFirehoseDeliveryStreamConfig) KinesisFirehoseDeliveryStream {
 	_init_.Initialize()
 
@@ -686,7 +710,7 @@ func NewKinesisFirehoseDeliveryStream(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
 func NewKinesisFirehoseDeliveryStream_Override(k KinesisFirehoseDeliveryStream, scope constructs.Construct, id *string, config *KinesisFirehoseDeliveryStreamConfig) {
 	_init_.Initialize()
 
@@ -1163,6 +1187,17 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutKinesisSourceConfiguration(
 	)
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutOpensearchConfiguration(value *KinesisFirehoseDeliveryStreamOpensearchConfiguration) {
+	if err := k.validatePutOpensearchConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putOpensearchConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutRedshiftConfiguration(value *KinesisFirehoseDeliveryStreamRedshiftConfiguration) {
 	if err := k.validatePutRedshiftConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1270,6 +1305,14 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ResetKinesisSourceConfiguratio
 	_jsii_.InvokeVoid(
 		k,
 		"resetKinesisSourceConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ResetOpensearchConfiguration() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetOpensearchConfiguration",
 		nil, // no parameters
 	)
 }

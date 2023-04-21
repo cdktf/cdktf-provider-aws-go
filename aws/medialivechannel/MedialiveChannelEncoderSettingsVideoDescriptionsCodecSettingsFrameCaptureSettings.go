@@ -2,9 +2,9 @@ package medialivechannel
 
 
 type MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#capture_interval MedialiveChannel#capture_interval}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#capture_interval MedialiveChannel#capture_interval}.
 	CaptureInterval *float64 `field:"optional" json:"captureInterval" yaml:"captureInterval"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/medialive_channel#capture_interval_units MedialiveChannel#capture_interval_units}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/medialive_channel#capture_interval_units MedialiveChannel#capture_interval_units}.
 	CaptureIntervalUnits *string `field:"optional" json:"captureIntervalUnits" yaml:"captureIntervalUnits"`
 }
 

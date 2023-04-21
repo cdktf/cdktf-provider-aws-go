@@ -10,6 +10,9 @@ import (
 
 type IotTopicRuleFirehoseOutputReference interface {
 	cdktf.ComplexObject
+	BatchMode() interface{}
+	SetBatchMode(val interface{})
+	BatchModeInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +73,7 @@ type IotTopicRuleFirehoseOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBatchMode()
 	ResetSeparator()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -84,6 +88,26 @@ type IotTopicRuleFirehoseOutputReference interface {
 // The jsii proxy struct for IotTopicRuleFirehoseOutputReference
 type jsiiProxy_IotTopicRuleFirehoseOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_IotTopicRuleFirehoseOutputReference) BatchMode() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"batchMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotTopicRuleFirehoseOutputReference) BatchModeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"batchModeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_IotTopicRuleFirehoseOutputReference) ComplexObjectIndex() interface{} {
@@ -241,6 +265,17 @@ func NewIotTopicRuleFirehoseOutputReference_Override(i IotTopicRuleFirehoseOutpu
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleFirehoseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
+	)
+}
+
+func (j *jsiiProxy_IotTopicRuleFirehoseOutputReference)SetBatchMode(val interface{}) {
+	if err := j.validateSetBatchModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"batchMode",
+		val,
 	)
 }
 
@@ -516,6 +551,14 @@ func (i *jsiiProxy_IotTopicRuleFirehoseOutputReference) InterpolationForAttribut
 	)
 
 	return returns
+}
+
+func (i *jsiiProxy_IotTopicRuleFirehoseOutputReference) ResetBatchMode() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetBatchMode",
+		nil, // no parameters
+	)
 }
 
 func (i *jsiiProxy_IotTopicRuleFirehoseOutputReference) ResetSeparator() {

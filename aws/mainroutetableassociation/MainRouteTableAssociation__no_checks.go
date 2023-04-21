@@ -52,6 +52,10 @@ func (m *jsiiProxy_MainRouteTableAssociation) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (m *jsiiProxy_MainRouteTableAssociation) validatePutTimeoutsParameters(value *MainRouteTableAssociationTimeouts) error {
+	return nil
+}
+
 func validateMainRouteTableAssociation_IsConstructParameters(x interface{}) error {
 	return nil
 }

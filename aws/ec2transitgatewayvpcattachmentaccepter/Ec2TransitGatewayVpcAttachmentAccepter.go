@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ec2_transit_gateway_vpc_attachment_accepter aws_ec2_transit_gateway_vpc_attachment_accepter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ec2_transit_gateway_vpc_attachment_accepter aws_ec2_transit_gateway_vpc_attachment_accepter}.
 type Ec2TransitGatewayVpcAttachmentAccepter interface {
 	cdktf.TerraformResource
 	ApplianceModeSupport() *string
@@ -482,7 +482,7 @@ func (j *jsiiProxy_Ec2TransitGatewayVpcAttachmentAccepter) VpcOwnerId() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ec2_transit_gateway_vpc_attachment_accepter aws_ec2_transit_gateway_vpc_attachment_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ec2_transit_gateway_vpc_attachment_accepter aws_ec2_transit_gateway_vpc_attachment_accepter} Resource.
 func NewEc2TransitGatewayVpcAttachmentAccepter(scope constructs.Construct, id *string, config *Ec2TransitGatewayVpcAttachmentAccepterConfig) Ec2TransitGatewayVpcAttachmentAccepter {
 	_init_.Initialize()
 
@@ -500,7 +500,7 @@ func NewEc2TransitGatewayVpcAttachmentAccepter(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ec2_transit_gateway_vpc_attachment_accepter aws_ec2_transit_gateway_vpc_attachment_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ec2_transit_gateway_vpc_attachment_accepter aws_ec2_transit_gateway_vpc_attachment_accepter} Resource.
 func NewEc2TransitGatewayVpcAttachmentAccepter_Override(e Ec2TransitGatewayVpcAttachmentAccepter, scope constructs.Construct, id *string, config *Ec2TransitGatewayVpcAttachmentAccepterConfig) {
 	_init_.Initialize()
 

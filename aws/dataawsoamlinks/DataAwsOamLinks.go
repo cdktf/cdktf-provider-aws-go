@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/oam_links aws_oam_links}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/oam_links aws_oam_links}.
 type DataAwsOamLinks interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -269,7 +269,7 @@ func (j *jsiiProxy_DataAwsOamLinks) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/oam_links aws_oam_links} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/oam_links aws_oam_links} Data Source.
 func NewDataAwsOamLinks(scope constructs.Construct, id *string, config *DataAwsOamLinksConfig) DataAwsOamLinks {
 	_init_.Initialize()
 
@@ -287,7 +287,7 @@ func NewDataAwsOamLinks(scope constructs.Construct, id *string, config *DataAwsO
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/oam_links aws_oam_links} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/oam_links aws_oam_links} Data Source.
 func NewDataAwsOamLinks_Override(d DataAwsOamLinks, scope constructs.Construct, id *string, config *DataAwsOamLinksConfig) {
 	_init_.Initialize()
 

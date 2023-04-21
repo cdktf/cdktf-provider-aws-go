@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssoadmin_account_assignment aws_ssoadmin_account_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ssoadmin_account_assignment aws_ssoadmin_account_assignment}.
 type SsoadminAccountAssignment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_SsoadminAccountAssignment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssoadmin_account_assignment aws_ssoadmin_account_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ssoadmin_account_assignment aws_ssoadmin_account_assignment} Resource.
 func NewSsoadminAccountAssignment(scope constructs.Construct, id *string, config *SsoadminAccountAssignmentConfig) SsoadminAccountAssignment {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewSsoadminAccountAssignment(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/resources/ssoadmin_account_assignment aws_ssoadmin_account_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ssoadmin_account_assignment aws_ssoadmin_account_assignment} Resource.
 func NewSsoadminAccountAssignment_Override(s SsoadminAccountAssignment, scope constructs.Construct, id *string, config *SsoadminAccountAssignmentConfig) {
 	_init_.Initialize()
 

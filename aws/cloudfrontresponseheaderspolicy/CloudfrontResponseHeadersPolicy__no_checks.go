@@ -60,6 +60,10 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validatePutCustomHeadersConf
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validatePutRemoveHeadersConfigParameters(value *CloudfrontResponseHeadersPolicyRemoveHeadersConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validatePutSecurityHeadersConfigParameters(value *CloudfrontResponseHeadersPolicySecurityHeadersConfig) error {
 	return nil
 }

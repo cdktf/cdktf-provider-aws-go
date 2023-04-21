@@ -68,6 +68,10 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutKinesisSourceConfig
 	return nil
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutOpensearchConfigurationParameters(value *KinesisFirehoseDeliveryStreamOpensearchConfiguration) error {
+	return nil
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutRedshiftConfigurationParameters(value *KinesisFirehoseDeliveryStreamRedshiftConfiguration) error {
 	return nil
 }

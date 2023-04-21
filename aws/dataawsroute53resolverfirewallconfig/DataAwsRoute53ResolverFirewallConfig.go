@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route53_resolver_firewall_config aws_route53_resolver_firewall_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/route53_resolver_firewall_config aws_route53_resolver_firewall_config}.
 type DataAwsRoute53ResolverFirewallConfig interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -303,7 +303,7 @@ func (j *jsiiProxy_DataAwsRoute53ResolverFirewallConfig) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route53_resolver_firewall_config aws_route53_resolver_firewall_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/route53_resolver_firewall_config aws_route53_resolver_firewall_config} Data Source.
 func NewDataAwsRoute53ResolverFirewallConfig(scope constructs.Construct, id *string, config *DataAwsRoute53ResolverFirewallConfigConfig) DataAwsRoute53ResolverFirewallConfig {
 	_init_.Initialize()
 
@@ -321,7 +321,7 @@ func NewDataAwsRoute53ResolverFirewallConfig(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.63.0/docs/data-sources/route53_resolver_firewall_config aws_route53_resolver_firewall_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/route53_resolver_firewall_config aws_route53_resolver_firewall_config} Data Source.
 func NewDataAwsRoute53ResolverFirewallConfig_Override(d DataAwsRoute53ResolverFirewallConfig, scope constructs.Construct, id *string, config *DataAwsRoute53ResolverFirewallConfigConfig) {
 	_init_.Initialize()
 
