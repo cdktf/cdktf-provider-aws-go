@@ -52,6 +52,10 @@ func (c *jsiiProxy_ChimeVoiceConnectorStreaming) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (c *jsiiProxy_ChimeVoiceConnectorStreaming) validatePutMediaInsightsConfigurationParameters(value *ChimeVoiceConnectorStreamingMediaInsightsConfiguration) error {
+	return nil
+}
+
 func validateChimeVoiceConnectorStreaming_IsConstructParameters(x interface{}) error {
 	return nil
 }

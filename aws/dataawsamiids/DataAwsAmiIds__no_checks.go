@@ -84,6 +84,10 @@ func (j *jsiiProxy_DataAwsAmiIds) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAmiIds) validateSetIncludeDeprecatedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAmiIds) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

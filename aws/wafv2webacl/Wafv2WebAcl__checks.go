@@ -422,6 +422,14 @@ func (j *jsiiProxy_Wafv2WebAcl) validateSetTagsAllParameters(val *map[string]*st
 	return nil
 }
 
+func (j *jsiiProxy_Wafv2WebAcl) validateSetTokenDomainsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewWafv2WebAclParameters(scope constructs.Construct, id *string, config *Wafv2WebAclConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

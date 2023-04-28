@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/ami_ids aws_ami_ids}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/ami_ids aws_ami_ids}.
 type DataAwsAmiIds interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -41,6 +41,9 @@ type DataAwsAmiIds interface {
 	SetId(val *string)
 	IdInput() *string
 	Ids() *[]*string
+	IncludeDeprecated() interface{}
+	SetIncludeDeprecated(val interface{})
+	IncludeDeprecatedInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -100,6 +103,7 @@ type DataAwsAmiIds interface {
 	ResetExecutableUsers()
 	ResetFilter()
 	ResetId()
+	ResetIncludeDeprecated()
 	ResetNameRegex()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -261,6 +265,26 @@ func (j *jsiiProxy_DataAwsAmiIds) Ids() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsAmiIds) IncludeDeprecated() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeDeprecated",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAmiIds) IncludeDeprecatedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"includeDeprecatedInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsAmiIds) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -412,7 +436,7 @@ func (j *jsiiProxy_DataAwsAmiIds) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/ami_ids aws_ami_ids} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/ami_ids aws_ami_ids} Data Source.
 func NewDataAwsAmiIds(scope constructs.Construct, id *string, config *DataAwsAmiIdsConfig) DataAwsAmiIds {
 	_init_.Initialize()
 
@@ -430,7 +454,7 @@ func NewDataAwsAmiIds(scope constructs.Construct, id *string, config *DataAwsAmi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/ami_ids aws_ami_ids} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/ami_ids aws_ami_ids} Data Source.
 func NewDataAwsAmiIds_Override(d DataAwsAmiIds, scope constructs.Construct, id *string, config *DataAwsAmiIdsConfig) {
 	_init_.Initialize()
 
@@ -486,6 +510,17 @@ func (j *jsiiProxy_DataAwsAmiIds)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsAmiIds)SetIncludeDeprecated(val interface{}) {
+	if err := j.validateSetIncludeDeprecatedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeDeprecated",
 		val,
 	)
 }
@@ -850,6 +885,14 @@ func (d *jsiiProxy_DataAwsAmiIds) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsAmiIds) ResetIncludeDeprecated() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetIncludeDeprecated",
 		nil, // no parameters
 	)
 }

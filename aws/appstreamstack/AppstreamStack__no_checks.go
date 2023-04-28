@@ -64,6 +64,10 @@ func (a *jsiiProxy_AppstreamStack) validatePutStorageConnectorsParameters(value 
 	return nil
 }
 
+func (a *jsiiProxy_AppstreamStack) validatePutStreamingExperienceSettingsParameters(value *AppstreamStackStreamingExperienceSettings) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppstreamStack) validatePutUserSettingsParameters(value interface{}) error {
 	return nil
 }

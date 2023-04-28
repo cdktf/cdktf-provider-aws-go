@@ -10,6 +10,7 @@ import (
 
 type DataAwsBackupReportPlanReportSettingOutputReference interface {
 	cdktf.ComplexObject
+	Accounts() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,6 +32,8 @@ type DataAwsBackupReportPlanReportSettingOutputReference interface {
 	InternalValue() *DataAwsBackupReportPlanReportSetting
 	SetInternalValue(val *DataAwsBackupReportPlanReportSetting)
 	NumberOfFrameworks() *float64
+	OrganizationUnits() *[]*string
+	Regions() *[]*string
 	ReportTemplate() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -77,6 +80,16 @@ type DataAwsBackupReportPlanReportSettingOutputReference interface {
 // The jsii proxy struct for DataAwsBackupReportPlanReportSettingOutputReference
 type jsiiProxy_DataAwsBackupReportPlanReportSettingOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataAwsBackupReportPlanReportSettingOutputReference) Accounts() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"accounts",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAwsBackupReportPlanReportSettingOutputReference) ComplexObjectIndex() interface{} {
@@ -144,6 +157,26 @@ func (j *jsiiProxy_DataAwsBackupReportPlanReportSettingOutputReference) NumberOf
 	_jsii_.Get(
 		j,
 		"numberOfFrameworks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsBackupReportPlanReportSettingOutputReference) OrganizationUnits() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"organizationUnits",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsBackupReportPlanReportSettingOutputReference) Regions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"regions",
 		&returns,
 	)
 	return returns

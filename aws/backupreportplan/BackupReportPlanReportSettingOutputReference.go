@@ -10,6 +10,9 @@ import (
 
 type BackupReportPlanReportSettingOutputReference interface {
 	cdktf.ComplexObject
+	Accounts() *[]*string
+	SetAccounts(val *[]*string)
+	AccountsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,6 +38,12 @@ type BackupReportPlanReportSettingOutputReference interface {
 	NumberOfFrameworks() *float64
 	SetNumberOfFrameworks(val *float64)
 	NumberOfFrameworksInput() *float64
+	OrganizationUnits() *[]*string
+	SetOrganizationUnits(val *[]*string)
+	OrganizationUnitsInput() *[]*string
+	Regions() *[]*string
+	SetRegions(val *[]*string)
+	RegionsInput() *[]*string
 	ReportTemplate() *string
 	SetReportTemplate(val *string)
 	ReportTemplateInput() *string
@@ -70,8 +79,11 @@ type BackupReportPlanReportSettingOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAccounts()
 	ResetFrameworkArns()
 	ResetNumberOfFrameworks()
+	ResetOrganizationUnits()
+	ResetRegions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -85,6 +97,26 @@ type BackupReportPlanReportSettingOutputReference interface {
 // The jsii proxy struct for BackupReportPlanReportSettingOutputReference
 type jsiiProxy_BackupReportPlanReportSettingOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) Accounts() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"accounts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) AccountsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"accountsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) ComplexObjectIndex() interface{} {
@@ -177,6 +209,46 @@ func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) NumberOfFramewo
 	return returns
 }
 
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) OrganizationUnits() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"organizationUnits",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) OrganizationUnitsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"organizationUnitsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) Regions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"regions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) RegionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"regionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) ReportTemplate() *string {
 	var returns *string
 	_jsii_.Get(
@@ -245,6 +317,17 @@ func NewBackupReportPlanReportSettingOutputReference_Override(b BackupReportPlan
 	)
 }
 
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetAccounts(val *[]*string) {
+	if err := j.validateSetAccountsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accounts",
+		val,
+	)
+}
+
 func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -296,6 +379,28 @@ func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetNumberOfFrame
 	_jsii_.Set(
 		j,
 		"numberOfFrameworks",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetOrganizationUnits(val *[]*string) {
+	if err := j.validateSetOrganizationUnitsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"organizationUnits",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetRegions(val *[]*string) {
+	if err := j.validateSetRegionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"regions",
 		val,
 	)
 }
@@ -519,6 +624,14 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) InterpolationFo
 	return returns
 }
 
+func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) ResetAccounts() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetAccounts",
+		nil, // no parameters
+	)
+}
+
 func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) ResetFrameworkArns() {
 	_jsii_.InvokeVoid(
 		b,
@@ -531,6 +644,22 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) ResetNumberOfFr
 	_jsii_.InvokeVoid(
 		b,
 		"resetNumberOfFrameworks",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) ResetOrganizationUnits() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetOrganizationUnits",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) ResetRegions() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetRegions",
 		nil, // no parameters
 	)
 }

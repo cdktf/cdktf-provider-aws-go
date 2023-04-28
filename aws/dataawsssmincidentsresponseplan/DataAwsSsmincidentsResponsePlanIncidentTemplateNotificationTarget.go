@@ -1,0 +1,6 @@
+package dataawsssmincidentsresponseplan
+
+
+type DataAwsSsmincidentsResponsePlanIncidentTemplateNotificationTarget struct {
+}
+

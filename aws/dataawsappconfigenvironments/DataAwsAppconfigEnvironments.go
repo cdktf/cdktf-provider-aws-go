@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/appconfig_environments aws_appconfig_environments}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/appconfig_environments aws_appconfig_environments}.
 type DataAwsAppconfigEnvironments interface {
 	cdktf.TerraformDataSource
 	ApplicationId() *string
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataAwsAppconfigEnvironments) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/appconfig_environments aws_appconfig_environments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/appconfig_environments aws_appconfig_environments} Data Source.
 func NewDataAwsAppconfigEnvironments(scope constructs.Construct, id *string, config *DataAwsAppconfigEnvironmentsConfig) DataAwsAppconfigEnvironments {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataAwsAppconfigEnvironments(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/appconfig_environments aws_appconfig_environments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/appconfig_environments aws_appconfig_environments} Data Source.
 func NewDataAwsAppconfigEnvironments_Override(d DataAwsAppconfigEnvironments, scope constructs.Construct, id *string, config *DataAwsAppconfigEnvironmentsConfig) {
 	_init_.Initialize()
 

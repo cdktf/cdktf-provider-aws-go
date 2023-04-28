@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ecr_registry_scanning_configuration aws_ecr_registry_scanning_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/ecr_registry_scanning_configuration aws_ecr_registry_scanning_configuration}.
 type EcrRegistryScanningConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -344,7 +344,7 @@ func (j *jsiiProxy_EcrRegistryScanningConfiguration) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ecr_registry_scanning_configuration aws_ecr_registry_scanning_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/ecr_registry_scanning_configuration aws_ecr_registry_scanning_configuration} Resource.
 func NewEcrRegistryScanningConfiguration(scope constructs.Construct, id *string, config *EcrRegistryScanningConfigurationConfig) EcrRegistryScanningConfiguration {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewEcrRegistryScanningConfiguration(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ecr_registry_scanning_configuration aws_ecr_registry_scanning_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/ecr_registry_scanning_configuration aws_ecr_registry_scanning_configuration} Resource.
 func NewEcrRegistryScanningConfiguration_Override(e EcrRegistryScanningConfiguration, scope constructs.Construct, id *string, config *EcrRegistryScanningConfigurationConfig) {
 	_init_.Initialize()
 

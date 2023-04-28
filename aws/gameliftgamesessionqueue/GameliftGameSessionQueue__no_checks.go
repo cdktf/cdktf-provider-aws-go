@@ -76,6 +76,10 @@ func (j *jsiiProxy_GameliftGameSessionQueue) validateSetCountParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GameliftGameSessionQueue) validateSetCustomEventDataParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GameliftGameSessionQueue) validateSetDestinationsParameters(val *[]*string) error {
 	return nil
 }

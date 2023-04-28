@@ -124,6 +124,10 @@ func (j *jsiiProxy_Wafv2WebAcl) validateSetTagsAllParameters(val *map[string]*st
 	return nil
 }
 
+func (j *jsiiProxy_Wafv2WebAcl) validateSetTokenDomainsParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewWafv2WebAclParameters(scope constructs.Construct, id *string, config *Wafv2WebAclConfig) error {
 	return nil
 }

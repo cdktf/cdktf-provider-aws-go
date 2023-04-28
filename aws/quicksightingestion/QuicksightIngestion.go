@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/quicksight_ingestion aws_quicksight_ingestion}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/quicksight_ingestion aws_quicksight_ingestion}.
 type QuicksightIngestion interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -388,7 +388,7 @@ func (j *jsiiProxy_QuicksightIngestion) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/quicksight_ingestion aws_quicksight_ingestion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/quicksight_ingestion aws_quicksight_ingestion} Resource.
 func NewQuicksightIngestion(scope constructs.Construct, id *string, config *QuicksightIngestionConfig) QuicksightIngestion {
 	_init_.Initialize()
 
@@ -406,7 +406,7 @@ func NewQuicksightIngestion(scope constructs.Construct, id *string, config *Quic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/quicksight_ingestion aws_quicksight_ingestion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/quicksight_ingestion aws_quicksight_ingestion} Resource.
 func NewQuicksightIngestion_Override(q QuicksightIngestion, scope constructs.Construct, id *string, config *QuicksightIngestionConfig) {
 	_init_.Initialize()
 

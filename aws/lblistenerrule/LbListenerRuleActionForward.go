@@ -4,11 +4,11 @@ package lblistenerrule
 type LbListenerRuleActionForward struct {
 	// target_group block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/lb_listener_rule#target_group LbListenerRule#target_group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/lb_listener_rule#target_group LbListenerRule#target_group}
 	TargetGroup interface{} `field:"required" json:"targetGroup" yaml:"targetGroup"`
 	// stickiness block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/lb_listener_rule#stickiness LbListenerRule#stickiness}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/lb_listener_rule#stickiness LbListenerRule#stickiness}
 	Stickiness *LbListenerRuleActionForwardStickiness `field:"optional" json:"stickiness" yaml:"stickiness"`
 }
 

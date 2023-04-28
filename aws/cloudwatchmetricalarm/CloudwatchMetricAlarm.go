@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_alarm aws_cloudwatch_metric_alarm}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/cloudwatch_metric_alarm aws_cloudwatch_metric_alarm}.
 type CloudwatchMetricAlarm interface {
 	cdktf.TerraformResource
 	ActionsEnabled() interface{}
@@ -846,7 +846,7 @@ func (j *jsiiProxy_CloudwatchMetricAlarm) UnitInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_alarm aws_cloudwatch_metric_alarm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/cloudwatch_metric_alarm aws_cloudwatch_metric_alarm} Resource.
 func NewCloudwatchMetricAlarm(scope constructs.Construct, id *string, config *CloudwatchMetricAlarmConfig) CloudwatchMetricAlarm {
 	_init_.Initialize()
 
@@ -864,7 +864,7 @@ func NewCloudwatchMetricAlarm(scope constructs.Construct, id *string, config *Cl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/cloudwatch_metric_alarm aws_cloudwatch_metric_alarm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/cloudwatch_metric_alarm aws_cloudwatch_metric_alarm} Resource.
 func NewCloudwatchMetricAlarm_Override(c CloudwatchMetricAlarm, scope constructs.Construct, id *string, config *CloudwatchMetricAlarmConfig) {
 	_init_.Initialize()
 

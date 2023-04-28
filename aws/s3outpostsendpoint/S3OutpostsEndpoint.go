@@ -9,9 +9,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/s3outposts_endpoint aws_s3outposts_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/s3outposts_endpoint aws_s3outposts_endpoint}.
 type S3OutpostsEndpoint interface {
 	cdktf.TerraformResource
+	AccessType() *string
+	SetAccessType(val *string)
+	AccessTypeInput() *string
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -27,6 +30,9 @@ type S3OutpostsEndpoint interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreationTime() *string
+	CustomerOwnedIpv4Pool() *string
+	SetCustomerOwnedIpv4Pool(val *string)
+	CustomerOwnedIpv4PoolInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -99,6 +105,8 @@ type S3OutpostsEndpoint interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAccessType()
+	ResetCustomerOwnedIpv4Pool()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -116,6 +124,26 @@ type S3OutpostsEndpoint interface {
 // The jsii proxy struct for S3OutpostsEndpoint
 type jsiiProxy_S3OutpostsEndpoint struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_S3OutpostsEndpoint) AccessType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3OutpostsEndpoint) AccessTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessTypeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_S3OutpostsEndpoint) Arn() *string {
@@ -183,6 +211,26 @@ func (j *jsiiProxy_S3OutpostsEndpoint) CreationTime() *string {
 	_jsii_.Get(
 		j,
 		"creationTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3OutpostsEndpoint) CustomerOwnedIpv4Pool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerOwnedIpv4Pool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3OutpostsEndpoint) CustomerOwnedIpv4PoolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerOwnedIpv4PoolInput",
 		&returns,
 	)
 	return returns
@@ -399,7 +447,7 @@ func (j *jsiiProxy_S3OutpostsEndpoint) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/s3outposts_endpoint aws_s3outposts_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/s3outposts_endpoint aws_s3outposts_endpoint} Resource.
 func NewS3OutpostsEndpoint(scope constructs.Construct, id *string, config *S3OutpostsEndpointConfig) S3OutpostsEndpoint {
 	_init_.Initialize()
 
@@ -417,7 +465,7 @@ func NewS3OutpostsEndpoint(scope constructs.Construct, id *string, config *S3Out
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/s3outposts_endpoint aws_s3outposts_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/s3outposts_endpoint aws_s3outposts_endpoint} Resource.
 func NewS3OutpostsEndpoint_Override(s S3OutpostsEndpoint, scope constructs.Construct, id *string, config *S3OutpostsEndpointConfig) {
 	_init_.Initialize()
 
@@ -425,6 +473,17 @@ func NewS3OutpostsEndpoint_Override(s S3OutpostsEndpoint, scope constructs.Const
 		"@cdktf/provider-aws.s3OutpostsEndpoint.S3OutpostsEndpoint",
 		[]interface{}{scope, id, config},
 		s,
+	)
+}
+
+func (j *jsiiProxy_S3OutpostsEndpoint)SetAccessType(val *string) {
+	if err := j.validateSetAccessTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessType",
+		val,
 	)
 }
 
@@ -446,6 +505,17 @@ func (j *jsiiProxy_S3OutpostsEndpoint)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3OutpostsEndpoint)SetCustomerOwnedIpv4Pool(val *string) {
+	if err := j.validateSetCustomerOwnedIpv4PoolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customerOwnedIpv4Pool",
 		val,
 	)
 }
@@ -803,6 +873,22 @@ func (s *jsiiProxy_S3OutpostsEndpoint) OverrideLogicalId(newLogicalId *string) {
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_S3OutpostsEndpoint) ResetAccessType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAccessType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3OutpostsEndpoint) ResetCustomerOwnedIpv4Pool() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomerOwnedIpv4Pool",
+		nil, // no parameters
 	)
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/sfn_activity aws_sfn_activity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/sfn_activity aws_sfn_activity}.
 type SfnActivity interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_SfnActivity) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/sfn_activity aws_sfn_activity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/sfn_activity aws_sfn_activity} Resource.
 func NewSfnActivity(scope constructs.Construct, id *string, config *SfnActivityConfig) SfnActivity {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewSfnActivity(scope constructs.Construct, id *string, config *SfnActivityC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/sfn_activity aws_sfn_activity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/sfn_activity aws_sfn_activity} Resource.
 func NewSfnActivity_Override(s SfnActivity, scope constructs.Construct, id *string, config *SfnActivityConfig) {
 	_init_.Initialize()
 

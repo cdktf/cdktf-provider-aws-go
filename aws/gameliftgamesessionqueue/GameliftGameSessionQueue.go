@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/gamelift_game_session_queue aws_gamelift_game_session_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/gamelift_game_session_queue aws_gamelift_game_session_queue}.
 type GameliftGameSessionQueue interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -25,6 +25,9 @@ type GameliftGameSessionQueue interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomEventData() *string
+	SetCustomEventData(val *string)
+	CustomEventDataInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -108,6 +111,7 @@ type GameliftGameSessionQueue interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutPlayerLatencyPolicy(value interface{})
+	ResetCustomEventData()
 	ResetDestinations()
 	ResetId()
 	ResetNotificationTarget()
@@ -178,6 +182,26 @@ func (j *jsiiProxy_GameliftGameSessionQueue) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GameliftGameSessionQueue) CustomEventData() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customEventData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GameliftGameSessionQueue) CustomEventDataInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customEventDataInput",
 		&returns,
 	)
 	return returns
@@ -464,7 +488,7 @@ func (j *jsiiProxy_GameliftGameSessionQueue) TimeoutInSecondsInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/gamelift_game_session_queue aws_gamelift_game_session_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/gamelift_game_session_queue aws_gamelift_game_session_queue} Resource.
 func NewGameliftGameSessionQueue(scope constructs.Construct, id *string, config *GameliftGameSessionQueueConfig) GameliftGameSessionQueue {
 	_init_.Initialize()
 
@@ -482,7 +506,7 @@ func NewGameliftGameSessionQueue(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/gamelift_game_session_queue aws_gamelift_game_session_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/gamelift_game_session_queue aws_gamelift_game_session_queue} Resource.
 func NewGameliftGameSessionQueue_Override(g GameliftGameSessionQueue, scope constructs.Construct, id *string, config *GameliftGameSessionQueueConfig) {
 	_init_.Initialize()
 
@@ -511,6 +535,17 @@ func (j *jsiiProxy_GameliftGameSessionQueue)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GameliftGameSessionQueue)SetCustomEventData(val *string) {
+	if err := j.validateSetCustomEventDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customEventData",
 		val,
 	)
 }
@@ -912,6 +947,14 @@ func (g *jsiiProxy_GameliftGameSessionQueue) PutPlayerLatencyPolicy(value interf
 		g,
 		"putPlayerLatencyPolicy",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GameliftGameSessionQueue) ResetCustomEventData() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomEventData",
+		nil, // no parameters
 	)
 }
 

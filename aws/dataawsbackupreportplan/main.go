@@ -154,6 +154,7 @@ func init() {
 		"@cdktf/provider-aws.dataAwsBackupReportPlan.DataAwsBackupReportPlanReportSettingOutputReference",
 		reflect.TypeOf((*DataAwsBackupReportPlanReportSettingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "accounts", GoGetter: "Accounts"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -173,6 +174,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "numberOfFrameworks", GoGetter: "NumberOfFrameworks"},
+			_jsii_.MemberProperty{JsiiProperty: "organizationUnits", GoGetter: "OrganizationUnits"},
+			_jsii_.MemberProperty{JsiiProperty: "regions", GoGetter: "Regions"},
 			_jsii_.MemberProperty{JsiiProperty: "reportTemplate", GoGetter: "ReportTemplate"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/route53_resolver_query_log_config_association aws_route53_resolver_query_log_config_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/route53_resolver_query_log_config_association aws_route53_resolver_query_log_config_association}.
 type Route53ResolverQueryLogConfigAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_Route53ResolverQueryLogConfigAssociation) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/route53_resolver_query_log_config_association aws_route53_resolver_query_log_config_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/route53_resolver_query_log_config_association aws_route53_resolver_query_log_config_association} Resource.
 func NewRoute53ResolverQueryLogConfigAssociation(scope constructs.Construct, id *string, config *Route53ResolverQueryLogConfigAssociationConfig) Route53ResolverQueryLogConfigAssociation {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewRoute53ResolverQueryLogConfigAssociation(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/route53_resolver_query_log_config_association aws_route53_resolver_query_log_config_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/route53_resolver_query_log_config_association aws_route53_resolver_query_log_config_association} Resource.
 func NewRoute53ResolverQueryLogConfigAssociation_Override(r Route53ResolverQueryLogConfigAssociation, scope constructs.Construct, id *string, config *Route53ResolverQueryLogConfigAssociationConfig) {
 	_init_.Initialize()
 

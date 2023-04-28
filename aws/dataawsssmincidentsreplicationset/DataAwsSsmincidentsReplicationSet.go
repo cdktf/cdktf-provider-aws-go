@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/ssmincidents_replication_set aws_ssmincidents_replication_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/ssmincidents_replication_set aws_ssmincidents_replication_set}.
 type DataAwsSsmincidentsReplicationSet interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -348,7 +348,7 @@ func (j *jsiiProxy_DataAwsSsmincidentsReplicationSet) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/ssmincidents_replication_set aws_ssmincidents_replication_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/ssmincidents_replication_set aws_ssmincidents_replication_set} Data Source.
 func NewDataAwsSsmincidentsReplicationSet(scope constructs.Construct, id *string, config *DataAwsSsmincidentsReplicationSetConfig) DataAwsSsmincidentsReplicationSet {
 	_init_.Initialize()
 
@@ -366,7 +366,7 @@ func NewDataAwsSsmincidentsReplicationSet(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/ssmincidents_replication_set aws_ssmincidents_replication_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/ssmincidents_replication_set aws_ssmincidents_replication_set} Data Source.
 func NewDataAwsSsmincidentsReplicationSet_Override(d DataAwsSsmincidentsReplicationSet, scope constructs.Construct, id *string, config *DataAwsSsmincidentsReplicationSetConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl}.
 type Wafv2WebAcl interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -87,6 +87,9 @@ type Wafv2WebAcl interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TokenDomains() *[]*string
+	SetTokenDomains(val *[]*string)
+	TokenDomainsInput() *[]*string
 	VisibilityConfig() Wafv2WebAclVisibilityConfigOutputReference
 	VisibilityConfigInput() *Wafv2WebAclVisibilityConfig
 	// Experimental.
@@ -129,6 +132,7 @@ type Wafv2WebAcl interface {
 	ResetRule()
 	ResetTags()
 	ResetTagsAll()
+	ResetTokenDomains()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -534,6 +538,26 @@ func (j *jsiiProxy_Wafv2WebAcl) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Wafv2WebAcl) TokenDomains() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tokenDomains",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAcl) TokenDomainsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tokenDomainsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Wafv2WebAcl) VisibilityConfig() Wafv2WebAclVisibilityConfigOutputReference {
 	var returns Wafv2WebAclVisibilityConfigOutputReference
 	_jsii_.Get(
@@ -555,7 +579,7 @@ func (j *jsiiProxy_Wafv2WebAcl) VisibilityConfigInput() *Wafv2WebAclVisibilityCo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
 func NewWafv2WebAcl(scope constructs.Construct, id *string, config *Wafv2WebAclConfig) Wafv2WebAcl {
 	_init_.Initialize()
 
@@ -573,7 +597,7 @@ func NewWafv2WebAcl(scope constructs.Construct, id *string, config *Wafv2WebAclC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
 func NewWafv2WebAcl_Override(w Wafv2WebAcl, scope constructs.Construct, id *string, config *Wafv2WebAclConfig) {
 	_init_.Initialize()
 
@@ -714,6 +738,17 @@ func (j *jsiiProxy_Wafv2WebAcl)SetTagsAll(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Wafv2WebAcl)SetTokenDomains(val *[]*string) {
+	if err := j.validateSetTokenDomainsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tokenDomains",
 		val,
 	)
 }
@@ -1099,6 +1134,14 @@ func (w *jsiiProxy_Wafv2WebAcl) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAcl) ResetTokenDomains() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTokenDomains",
 		nil, // no parameters
 	)
 }

@@ -48,6 +48,10 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) validateResolve
 	return nil
 }
 
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) validateSetAccountsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -65,6 +69,14 @@ func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) validateSetInte
 }
 
 func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) validateSetNumberOfFrameworksParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) validateSetOrganizationUnitsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) validateSetRegionsParameters(val *[]*string) error {
 	return nil
 }
 

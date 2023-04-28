@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/vpclattice_target_group aws_vpclattice_target_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/vpclattice_target_group aws_vpclattice_target_group}.
 type VpclatticeTargetGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -450,7 +450,7 @@ func (j *jsiiProxy_VpclatticeTargetGroup) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/vpclattice_target_group aws_vpclattice_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/vpclattice_target_group aws_vpclattice_target_group} Resource.
 func NewVpclatticeTargetGroup(scope constructs.Construct, id *string, config *VpclatticeTargetGroupConfig) VpclatticeTargetGroup {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewVpclatticeTargetGroup(scope constructs.Construct, id *string, config *Vp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/vpclattice_target_group aws_vpclattice_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/vpclattice_target_group aws_vpclattice_target_group} Resource.
 func NewVpclatticeTargetGroup_Override(v VpclatticeTargetGroup, scope constructs.Construct, id *string, config *VpclatticeTargetGroupConfig) {
 	_init_.Initialize()
 

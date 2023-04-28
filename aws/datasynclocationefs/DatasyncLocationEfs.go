@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/datasync_location_efs aws_datasync_location_efs}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/datasync_location_efs aws_datasync_location_efs}.
 type DatasyncLocationEfs interface {
 	cdktf.TerraformResource
 	AccessPointArn() *string
@@ -498,7 +498,7 @@ func (j *jsiiProxy_DatasyncLocationEfs) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/datasync_location_efs aws_datasync_location_efs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/datasync_location_efs aws_datasync_location_efs} Resource.
 func NewDatasyncLocationEfs(scope constructs.Construct, id *string, config *DatasyncLocationEfsConfig) DatasyncLocationEfs {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewDatasyncLocationEfs(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/datasync_location_efs aws_datasync_location_efs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/datasync_location_efs aws_datasync_location_efs} Resource.
 func NewDatasyncLocationEfs_Override(d DatasyncLocationEfs, scope constructs.Construct, id *string, config *DatasyncLocationEfsConfig) {
 	_init_.Initialize()
 

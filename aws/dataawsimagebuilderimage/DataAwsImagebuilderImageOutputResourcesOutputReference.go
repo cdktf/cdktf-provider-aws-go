@@ -21,6 +21,7 @@ type DataAwsImagebuilderImageOutputResourcesOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Containers() DataAwsImagebuilderImageOutputResourcesContainersList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -102,6 +103,16 @@ func (j *jsiiProxy_DataAwsImagebuilderImageOutputResourcesOutputReference) Compl
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsImagebuilderImageOutputResourcesOutputReference) Containers() DataAwsImagebuilderImageOutputResourcesContainersList {
+	var returns DataAwsImagebuilderImageOutputResourcesContainersList
+	_jsii_.Get(
+		j,
+		"containers",
 		&returns,
 	)
 	return returns

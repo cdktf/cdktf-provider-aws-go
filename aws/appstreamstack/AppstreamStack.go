@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack aws_appstream_stack}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack aws_appstream_stack}.
 type AppstreamStack interface {
 	cdktf.TerraformResource
 	AccessEndpoints() AppstreamStackAccessEndpointsList
@@ -81,6 +81,8 @@ type AppstreamStack interface {
 	RedirectUrlInput() *string
 	StorageConnectors() AppstreamStackStorageConnectorsList
 	StorageConnectorsInput() interface{}
+	StreamingExperienceSettings() AppstreamStackStreamingExperienceSettingsOutputReference
+	StreamingExperienceSettingsInput() *AppstreamStackStreamingExperienceSettings
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -123,6 +125,7 @@ type AppstreamStack interface {
 	PutAccessEndpoints(value interface{})
 	PutApplicationSettings(value *AppstreamStackApplicationSettings)
 	PutStorageConnectors(value interface{})
+	PutStreamingExperienceSettings(value *AppstreamStackStreamingExperienceSettings)
 	PutUserSettings(value interface{})
 	ResetAccessEndpoints()
 	ResetApplicationSettings()
@@ -136,6 +139,7 @@ type AppstreamStack interface {
 	ResetOverrideLogicalId()
 	ResetRedirectUrl()
 	ResetStorageConnectors()
+	ResetStreamingExperienceSettings()
 	ResetTags()
 	ResetTagsAll()
 	ResetUserSettings()
@@ -504,6 +508,26 @@ func (j *jsiiProxy_AppstreamStack) StorageConnectorsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AppstreamStack) StreamingExperienceSettings() AppstreamStackStreamingExperienceSettingsOutputReference {
+	var returns AppstreamStackStreamingExperienceSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"streamingExperienceSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamStack) StreamingExperienceSettingsInput() *AppstreamStackStreamingExperienceSettings {
+	var returns *AppstreamStackStreamingExperienceSettings
+	_jsii_.Get(
+		j,
+		"streamingExperienceSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppstreamStack) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -595,7 +619,7 @@ func (j *jsiiProxy_AppstreamStack) UserSettingsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack aws_appstream_stack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack aws_appstream_stack} Resource.
 func NewAppstreamStack(scope constructs.Construct, id *string, config *AppstreamStackConfig) AppstreamStack {
 	_init_.Initialize()
 
@@ -613,7 +637,7 @@ func NewAppstreamStack(scope constructs.Construct, id *string, config *Appstream
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/appstream_stack aws_appstream_stack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appstream_stack aws_appstream_stack} Resource.
 func NewAppstreamStack_Override(a AppstreamStack, scope constructs.Construct, id *string, config *AppstreamStackConfig) {
 	_init_.Initialize()
 
@@ -1090,6 +1114,17 @@ func (a *jsiiProxy_AppstreamStack) PutStorageConnectors(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AppstreamStack) PutStreamingExperienceSettings(value *AppstreamStackStreamingExperienceSettings) {
+	if err := a.validatePutStreamingExperienceSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putStreamingExperienceSettings",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppstreamStack) PutUserSettings(value interface{}) {
 	if err := a.validatePutUserSettingsParameters(value); err != nil {
 		panic(err)
@@ -1177,6 +1212,14 @@ func (a *jsiiProxy_AppstreamStack) ResetStorageConnectors() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetStorageConnectors",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppstreamStack) ResetStreamingExperienceSettings() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetStreamingExperienceSettings",
 		nil, // no parameters
 	)
 }

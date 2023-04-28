@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/sns_topic_data_protection_policy aws_sns_topic_data_protection_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/sns_topic_data_protection_policy aws_sns_topic_data_protection_policy}.
 type SnsTopicDataProtectionPolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -332,7 +332,7 @@ func (j *jsiiProxy_SnsTopicDataProtectionPolicy) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/sns_topic_data_protection_policy aws_sns_topic_data_protection_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/sns_topic_data_protection_policy aws_sns_topic_data_protection_policy} Resource.
 func NewSnsTopicDataProtectionPolicy(scope constructs.Construct, id *string, config *SnsTopicDataProtectionPolicyConfig) SnsTopicDataProtectionPolicy {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewSnsTopicDataProtectionPolicy(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/sns_topic_data_protection_policy aws_sns_topic_data_protection_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/sns_topic_data_protection_policy aws_sns_topic_data_protection_policy} Resource.
 func NewSnsTopicDataProtectionPolicy_Override(s SnsTopicDataProtectionPolicy, scope constructs.Construct, id *string, config *SnsTopicDataProtectionPolicyConfig) {
 	_init_.Initialize()
 

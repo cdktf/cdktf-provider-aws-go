@@ -64,11 +64,19 @@ func validateS3OutpostsEndpoint_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_S3OutpostsEndpoint) validateSetAccessTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3OutpostsEndpoint) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_S3OutpostsEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_S3OutpostsEndpoint) validateSetCustomerOwnedIpv4PoolParameters(val *string) error {
 	return nil
 }
 

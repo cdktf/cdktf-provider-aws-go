@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/chime_voice_connector_streaming aws_chime_voice_connector_streaming}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/chime_voice_connector_streaming aws_chime_voice_connector_streaming}.
 type ChimeVoiceConnectorStreaming interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -49,6 +49,8 @@ type ChimeVoiceConnectorStreaming interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MediaInsightsConfiguration() ChimeVoiceConnectorStreamingMediaInsightsConfigurationOutputReference
+	MediaInsightsConfigurationInput() *ChimeVoiceConnectorStreamingMediaInsightsConfiguration
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -98,8 +100,10 @@ type ChimeVoiceConnectorStreaming interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutMediaInsightsConfiguration(value *ChimeVoiceConnectorStreamingMediaInsightsConfiguration)
 	ResetDisabled()
 	ResetId()
+	ResetMediaInsightsConfiguration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -269,6 +273,26 @@ func (j *jsiiProxy_ChimeVoiceConnectorStreaming) Lifecycle() *cdktf.TerraformRes
 	return returns
 }
 
+func (j *jsiiProxy_ChimeVoiceConnectorStreaming) MediaInsightsConfiguration() ChimeVoiceConnectorStreamingMediaInsightsConfigurationOutputReference {
+	var returns ChimeVoiceConnectorStreamingMediaInsightsConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"mediaInsightsConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ChimeVoiceConnectorStreaming) MediaInsightsConfigurationInput() *ChimeVoiceConnectorStreamingMediaInsightsConfiguration {
+	var returns *ChimeVoiceConnectorStreamingMediaInsightsConfiguration
+	_jsii_.Get(
+		j,
+		"mediaInsightsConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ChimeVoiceConnectorStreaming) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -380,7 +404,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorStreaming) VoiceConnectorIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/chime_voice_connector_streaming aws_chime_voice_connector_streaming} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/chime_voice_connector_streaming aws_chime_voice_connector_streaming} Resource.
 func NewChimeVoiceConnectorStreaming(scope constructs.Construct, id *string, config *ChimeVoiceConnectorStreamingConfig) ChimeVoiceConnectorStreaming {
 	_init_.Initialize()
 
@@ -398,7 +422,7 @@ func NewChimeVoiceConnectorStreaming(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/chime_voice_connector_streaming aws_chime_voice_connector_streaming} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/chime_voice_connector_streaming aws_chime_voice_connector_streaming} Resource.
 func NewChimeVoiceConnectorStreaming_Override(c ChimeVoiceConnectorStreaming, scope constructs.Construct, id *string, config *ChimeVoiceConnectorStreamingConfig) {
 	_init_.Initialize()
 
@@ -798,6 +822,17 @@ func (c *jsiiProxy_ChimeVoiceConnectorStreaming) OverrideLogicalId(newLogicalId 
 	)
 }
 
+func (c *jsiiProxy_ChimeVoiceConnectorStreaming) PutMediaInsightsConfiguration(value *ChimeVoiceConnectorStreamingMediaInsightsConfiguration) {
+	if err := c.validatePutMediaInsightsConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putMediaInsightsConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ChimeVoiceConnectorStreaming) ResetDisabled() {
 	_jsii_.InvokeVoid(
 		c,
@@ -810,6 +845,14 @@ func (c *jsiiProxy_ChimeVoiceConnectorStreaming) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ChimeVoiceConnectorStreaming) ResetMediaInsightsConfiguration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMediaInsightsConfiguration",
 		nil, // no parameters
 	)
 }

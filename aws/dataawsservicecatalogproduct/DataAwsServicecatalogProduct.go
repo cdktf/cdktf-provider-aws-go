@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/servicecatalog_product aws_servicecatalog_product}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/servicecatalog_product aws_servicecatalog_product}.
 type DataAwsServicecatalogProduct interface {
 	cdktf.TerraformDataSource
 	AcceptLanguage() *string
@@ -461,7 +461,7 @@ func (j *jsiiProxy_DataAwsServicecatalogProduct) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/servicecatalog_product aws_servicecatalog_product} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/servicecatalog_product aws_servicecatalog_product} Data Source.
 func NewDataAwsServicecatalogProduct(scope constructs.Construct, id *string, config *DataAwsServicecatalogProductConfig) DataAwsServicecatalogProduct {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewDataAwsServicecatalogProduct(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/data-sources/servicecatalog_product aws_servicecatalog_product} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/servicecatalog_product aws_servicecatalog_product} Data Source.
 func NewDataAwsServicecatalogProduct_Override(d DataAwsServicecatalogProduct, scope constructs.Construct, id *string, config *DataAwsServicecatalogProductConfig) {
 	_init_.Initialize()
 

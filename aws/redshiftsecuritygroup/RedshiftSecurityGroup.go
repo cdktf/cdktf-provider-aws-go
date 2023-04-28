@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/redshift_security_group aws_redshift_security_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/redshift_security_group aws_redshift_security_group}.
 type RedshiftSecurityGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_RedshiftSecurityGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/redshift_security_group aws_redshift_security_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/redshift_security_group aws_redshift_security_group} Resource.
 func NewRedshiftSecurityGroup(scope constructs.Construct, id *string, config *RedshiftSecurityGroupConfig) RedshiftSecurityGroup {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewRedshiftSecurityGroup(scope constructs.Construct, id *string, config *Re
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/redshift_security_group aws_redshift_security_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/redshift_security_group aws_redshift_security_group} Resource.
 func NewRedshiftSecurityGroup_Override(r RedshiftSecurityGroup, scope constructs.Construct, id *string, config *RedshiftSecurityGroupConfig) {
 	_init_.Initialize()
 

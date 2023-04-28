@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ssm_maintenance_window_target aws_ssm_maintenance_window_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/ssm_maintenance_window_target aws_ssm_maintenance_window_target}.
 type SsmMaintenanceWindowTarget interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_SsmMaintenanceWindowTarget) WindowIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ssm_maintenance_window_target aws_ssm_maintenance_window_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/ssm_maintenance_window_target aws_ssm_maintenance_window_target} Resource.
 func NewSsmMaintenanceWindowTarget(scope constructs.Construct, id *string, config *SsmMaintenanceWindowTargetConfig) SsmMaintenanceWindowTarget {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewSsmMaintenanceWindowTarget(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/ssm_maintenance_window_target aws_ssm_maintenance_window_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/ssm_maintenance_window_target aws_ssm_maintenance_window_target} Resource.
 func NewSsmMaintenanceWindowTarget_Override(s SsmMaintenanceWindowTarget, scope constructs.Construct, id *string, config *SsmMaintenanceWindowTargetConfig) {
 	_init_.Initialize()
 

@@ -4,7 +4,7 @@ package vpclatticelistenerrule
 type VpclatticeListenerRuleActionForward struct {
 	// target_groups block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/vpclattice_listener_rule#target_groups VpclatticeListenerRule#target_groups}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/vpclattice_listener_rule#target_groups VpclatticeListenerRule#target_groups}
 	TargetGroups interface{} `field:"required" json:"targetGroups" yaml:"targetGroups"`
 }
 

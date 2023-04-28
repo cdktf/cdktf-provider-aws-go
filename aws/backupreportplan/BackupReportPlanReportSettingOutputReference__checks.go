@@ -98,6 +98,14 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) validateResolve
 	return nil
 }
 
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) validateSetAccountsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:
@@ -180,6 +188,22 @@ func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) validateSetInte
 }
 
 func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) validateSetNumberOfFrameworksParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) validateSetOrganizationUnitsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) validateSetRegionsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

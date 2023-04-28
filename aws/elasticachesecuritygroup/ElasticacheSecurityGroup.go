@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/elasticache_security_group aws_elasticache_security_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/elasticache_security_group aws_elasticache_security_group}.
 type ElasticacheSecurityGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_ElasticacheSecurityGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/elasticache_security_group aws_elasticache_security_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/elasticache_security_group aws_elasticache_security_group} Resource.
 func NewElasticacheSecurityGroup(scope constructs.Construct, id *string, config *ElasticacheSecurityGroupConfig) ElasticacheSecurityGroup {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewElasticacheSecurityGroup(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.64.0/docs/resources/elasticache_security_group aws_elasticache_security_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/elasticache_security_group aws_elasticache_security_group} Resource.
 func NewElasticacheSecurityGroup_Override(e ElasticacheSecurityGroup, scope constructs.Construct, id *string, config *ElasticacheSecurityGroupConfig) {
 	_init_.Initialize()
 

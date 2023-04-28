@@ -1,0 +1,6 @@
+package dataawsssmincidentsresponseplan
+
+
+type DataAwsSsmincidentsResponsePlanActionSsmAutomationParameter struct {
+}
+
