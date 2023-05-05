@@ -148,6 +148,10 @@ func (j *jsiiProxy_VpnConnection) validateSetTunnel1DpdTimeoutSecondsParameters(
 	return nil
 }
 
+func (j *jsiiProxy_VpnConnection) validateSetTunnel1EnableTunnelLifecycleControlParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpnConnection) validateSetTunnel1IkeVersionsParameters(val *[]*string) error {
 	return nil
 }
@@ -217,6 +221,10 @@ func (j *jsiiProxy_VpnConnection) validateSetTunnel2DpdTimeoutActionParameters(v
 }
 
 func (j *jsiiProxy_VpnConnection) validateSetTunnel2DpdTimeoutSecondsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_VpnConnection) validateSetTunnel2EnableTunnelLifecycleControlParameters(val interface{}) error {
 	return nil
 }
 

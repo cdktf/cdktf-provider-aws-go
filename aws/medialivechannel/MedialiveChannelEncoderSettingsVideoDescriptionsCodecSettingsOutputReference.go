@@ -31,6 +31,8 @@ type MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsOutputReferenc
 	FrameCaptureSettingsInput() *MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings
 	H264Settings() MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264SettingsOutputReference
 	H264SettingsInput() *MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings
+	H265Settings() MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference
+	H265SettingsInput() *MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265Settings
 	InternalValue() *MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	SetInternalValue(val *MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings)
 	// Experimental.
@@ -67,8 +69,10 @@ type MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsOutputReferenc
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutFrameCaptureSettings(value *MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsFrameCaptureSettings)
 	PutH264Settings(value *MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH264Settings)
+	PutH265Settings(value *MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265Settings)
 	ResetFrameCaptureSettings()
 	ResetH264Settings()
+	ResetH265Settings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -159,6 +163,26 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	_jsii_.Get(
 		j,
 		"h264SettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsOutputReference) H265Settings() MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference {
+	var returns MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsOutputReference
+	_jsii_.Get(
+		j,
+		"h265Settings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsOutputReference) H265SettingsInput() *MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265Settings {
+	var returns *MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265Settings
+	_jsii_.Get(
+		j,
+		"h265SettingsInput",
 		&returns,
 	)
 	return returns
@@ -485,6 +509,17 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	)
 }
 
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsOutputReference) PutH265Settings(value *MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265Settings) {
+	if err := m.validatePutH265SettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putH265Settings",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsOutputReference) ResetFrameCaptureSettings() {
 	_jsii_.InvokeVoid(
 		m,
@@ -497,6 +532,14 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	_jsii_.InvokeVoid(
 		m,
 		"resetH264Settings",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsOutputReference) ResetH265Settings() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetH265Settings",
 		nil, // no parameters
 	)
 }

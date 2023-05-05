@@ -98,6 +98,14 @@ func (l *jsiiProxy_LaunchTemplateCpuOptionsOutputReference) validateResolveParam
 	return nil
 }
 
+func (j *jsiiProxy_LaunchTemplateCpuOptionsOutputReference) validateSetAmdSevSnpParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LaunchTemplateCpuOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:

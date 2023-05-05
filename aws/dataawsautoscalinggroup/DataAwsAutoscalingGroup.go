@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/autoscaling_group aws_autoscaling_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/autoscaling_group aws_autoscaling_group}.
 type DataAwsAutoscalingGroup interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -50,8 +50,10 @@ type DataAwsAutoscalingGroup interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LoadBalancers() *[]*string
+	MaxInstanceLifetime() *float64
 	MaxSize() *float64
 	MinSize() *float64
+	MixedInstancesPolicy() DataAwsAutoscalingGroupMixedInstancesPolicyList
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -59,6 +61,7 @@ type DataAwsAutoscalingGroup interface {
 	// The tree node.
 	Node() constructs.Node
 	PlacementGroup() *string
+	PredictedCapacity() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -67,6 +70,8 @@ type DataAwsAutoscalingGroup interface {
 	RawOverrides() interface{}
 	ServiceLinkedRoleArn() *string
 	Status() *string
+	SuspendedProcesses() *[]*string
+	Tag() DataAwsAutoscalingGroupTagList
 	TargetGroupArns() *[]*string
 	TerminationPolicies() *[]*string
 	// Experimental.
@@ -76,6 +81,8 @@ type DataAwsAutoscalingGroup interface {
 	// Experimental.
 	TerraformResourceType() *string
 	VpcZoneIdentifier() *string
+	WarmPool() DataAwsAutoscalingGroupWarmPoolList
+	WarmPoolSize() *float64
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -330,6 +337,16 @@ func (j *jsiiProxy_DataAwsAutoscalingGroup) LoadBalancers() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsAutoscalingGroup) MaxInstanceLifetime() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxInstanceLifetime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsAutoscalingGroup) MaxSize() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -345,6 +362,16 @@ func (j *jsiiProxy_DataAwsAutoscalingGroup) MinSize() *float64 {
 	_jsii_.Get(
 		j,
 		"minSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAutoscalingGroup) MixedInstancesPolicy() DataAwsAutoscalingGroupMixedInstancesPolicyList {
+	var returns DataAwsAutoscalingGroupMixedInstancesPolicyList
+	_jsii_.Get(
+		j,
+		"mixedInstancesPolicy",
 		&returns,
 	)
 	return returns
@@ -400,6 +427,16 @@ func (j *jsiiProxy_DataAwsAutoscalingGroup) PlacementGroup() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsAutoscalingGroup) PredictedCapacity() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"predictedCapacity",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsAutoscalingGroup) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -435,6 +472,26 @@ func (j *jsiiProxy_DataAwsAutoscalingGroup) Status() *string {
 	_jsii_.Get(
 		j,
 		"status",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAutoscalingGroup) SuspendedProcesses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"suspendedProcesses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAutoscalingGroup) Tag() DataAwsAutoscalingGroupTagList {
+	var returns DataAwsAutoscalingGroupTagList
+	_jsii_.Get(
+		j,
+		"tag",
 		&returns,
 	)
 	return returns
@@ -500,8 +557,28 @@ func (j *jsiiProxy_DataAwsAutoscalingGroup) VpcZoneIdentifier() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsAutoscalingGroup) WarmPool() DataAwsAutoscalingGroupWarmPoolList {
+	var returns DataAwsAutoscalingGroupWarmPoolList
+	_jsii_.Get(
+		j,
+		"warmPool",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/autoscaling_group aws_autoscaling_group} Data Source.
+func (j *jsiiProxy_DataAwsAutoscalingGroup) WarmPoolSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"warmPoolSize",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/autoscaling_group aws_autoscaling_group} Data Source.
 func NewDataAwsAutoscalingGroup(scope constructs.Construct, id *string, config *DataAwsAutoscalingGroupConfig) DataAwsAutoscalingGroup {
 	_init_.Initialize()
 
@@ -519,7 +596,7 @@ func NewDataAwsAutoscalingGroup(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/autoscaling_group aws_autoscaling_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/autoscaling_group aws_autoscaling_group} Data Source.
 func NewDataAwsAutoscalingGroup_Override(d DataAwsAutoscalingGroup, scope constructs.Construct, id *string, config *DataAwsAutoscalingGroupConfig) {
 	_init_.Initialize()
 

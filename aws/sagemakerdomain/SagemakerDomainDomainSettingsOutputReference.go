@@ -32,6 +32,8 @@ type SagemakerDomainDomainSettingsOutputReference interface {
 	Fqn() *string
 	InternalValue() *SagemakerDomainDomainSettings
 	SetInternalValue(val *SagemakerDomainDomainSettings)
+	RStudioServerProDomainSettings() SagemakerDomainDomainSettingsRStudioServerProDomainSettingsOutputReference
+	RStudioServerProDomainSettingsInput() *SagemakerDomainDomainSettingsRStudioServerProDomainSettings
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
@@ -67,7 +69,9 @@ type SagemakerDomainDomainSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutRStudioServerProDomainSettings(value *SagemakerDomainDomainSettingsRStudioServerProDomainSettings)
 	ResetExecutionRoleIdentityConfig()
+	ResetRStudioServerProDomainSettings()
 	ResetSecurityGroupIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) InternalValue()
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) RStudioServerProDomainSettings() SagemakerDomainDomainSettingsRStudioServerProDomainSettingsOutputReference {
+	var returns SagemakerDomainDomainSettingsRStudioServerProDomainSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"rStudioServerProDomainSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) RStudioServerProDomainSettingsInput() *SagemakerDomainDomainSettingsRStudioServerProDomainSettings {
+	var returns *SagemakerDomainDomainSettingsRStudioServerProDomainSettings
+	_jsii_.Get(
+		j,
+		"rStudioServerProDomainSettingsInput",
 		&returns,
 	)
 	return returns
@@ -485,10 +509,29 @@ func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) InterpolationFo
 	return returns
 }
 
+func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) PutRStudioServerProDomainSettings(value *SagemakerDomainDomainSettingsRStudioServerProDomainSettings) {
+	if err := s.validatePutRStudioServerProDomainSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putRStudioServerProDomainSettings",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) ResetExecutionRoleIdentityConfig() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetExecutionRoleIdentityConfig",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) ResetRStudioServerProDomainSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRStudioServerProDomainSettings",
 		nil, // no parameters
 	)
 }

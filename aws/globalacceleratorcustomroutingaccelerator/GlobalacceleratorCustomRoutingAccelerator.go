@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/globalaccelerator_custom_routing_accelerator aws_globalaccelerator_custom_routing_accelerator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/globalaccelerator_custom_routing_accelerator aws_globalaccelerator_custom_routing_accelerator}.
 type GlobalacceleratorCustomRoutingAccelerator interface {
 	cdktf.TerraformResource
 	Attributes() GlobalacceleratorCustomRoutingAcceleratorAttributesOutputReference
@@ -510,7 +510,7 @@ func (j *jsiiProxy_GlobalacceleratorCustomRoutingAccelerator) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/globalaccelerator_custom_routing_accelerator aws_globalaccelerator_custom_routing_accelerator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/globalaccelerator_custom_routing_accelerator aws_globalaccelerator_custom_routing_accelerator} Resource.
 func NewGlobalacceleratorCustomRoutingAccelerator(scope constructs.Construct, id *string, config *GlobalacceleratorCustomRoutingAcceleratorConfig) GlobalacceleratorCustomRoutingAccelerator {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewGlobalacceleratorCustomRoutingAccelerator(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/globalaccelerator_custom_routing_accelerator aws_globalaccelerator_custom_routing_accelerator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/globalaccelerator_custom_routing_accelerator aws_globalaccelerator_custom_routing_accelerator} Resource.
 func NewGlobalacceleratorCustomRoutingAccelerator_Override(g GlobalacceleratorCustomRoutingAccelerator, scope constructs.Construct, id *string, config *GlobalacceleratorCustomRoutingAcceleratorConfig) {
 	_init_.Initialize()
 

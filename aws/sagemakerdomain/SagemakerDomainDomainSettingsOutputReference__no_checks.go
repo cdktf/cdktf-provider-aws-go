@@ -44,6 +44,10 @@ func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) validateInterpo
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) validatePutRStudioServerProDomainSettingsParameters(value *SagemakerDomainDomainSettingsRStudioServerProDomainSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDomainDomainSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

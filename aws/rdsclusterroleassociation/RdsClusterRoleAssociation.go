@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association}.
 type RdsClusterRoleAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -70,6 +70,8 @@ type RdsClusterRoleAssociation interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() RdsClusterRoleAssociationTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -95,10 +97,12 @@ type RdsClusterRoleAssociation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *RdsClusterRoleAssociationTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -354,8 +358,28 @@ func (j *jsiiProxy_RdsClusterRoleAssociation) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RdsClusterRoleAssociation) Timeouts() RdsClusterRoleAssociationTimeoutsOutputReference {
+	var returns RdsClusterRoleAssociationTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association} Resource.
+func (j *jsiiProxy_RdsClusterRoleAssociation) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association} Resource.
 func NewRdsClusterRoleAssociation(scope constructs.Construct, id *string, config *RdsClusterRoleAssociationConfig) RdsClusterRoleAssociation {
 	_init_.Initialize()
 
@@ -373,7 +397,7 @@ func NewRdsClusterRoleAssociation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association} Resource.
 func NewRdsClusterRoleAssociation_Override(r RdsClusterRoleAssociation, scope constructs.Construct, id *string, config *RdsClusterRoleAssociationConfig) {
 	_init_.Initialize()
 
@@ -762,6 +786,17 @@ func (r *jsiiProxy_RdsClusterRoleAssociation) OverrideLogicalId(newLogicalId *st
 	)
 }
 
+func (r *jsiiProxy_RdsClusterRoleAssociation) PutTimeouts(value *RdsClusterRoleAssociationTimeouts) {
+	if err := r.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RdsClusterRoleAssociation) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
@@ -774,6 +809,14 @@ func (r *jsiiProxy_RdsClusterRoleAssociation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsClusterRoleAssociation) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

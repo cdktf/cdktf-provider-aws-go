@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/spot_fleet_request aws_spot_fleet_request}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/spot_fleet_request aws_spot_fleet_request}.
 type SpotFleetRequest interface {
 	cdktf.TerraformResource
 	AllocationStrategy() *string
@@ -24,6 +24,9 @@ type SpotFleetRequest interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	Context() *string
+	SetContext(val *string)
+	ContextInput() *string
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -167,6 +170,7 @@ type SpotFleetRequest interface {
 	PutSpotMaintenanceStrategies(value *SpotFleetRequestSpotMaintenanceStrategies)
 	PutTimeouts(value *SpotFleetRequestTimeouts)
 	ResetAllocationStrategy()
+	ResetContext()
 	ResetExcessCapacityTerminationPolicy()
 	ResetFleetType()
 	ResetId()
@@ -264,6 +268,26 @@ func (j *jsiiProxy_SpotFleetRequest) ConstructNodeMetadata() *map[string]interfa
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpotFleetRequest) Context() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"context",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpotFleetRequest) ContextInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contextInput",
 		&returns,
 	)
 	return returns
@@ -930,7 +954,7 @@ func (j *jsiiProxy_SpotFleetRequest) WaitForFulfillmentInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/spot_fleet_request aws_spot_fleet_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/spot_fleet_request aws_spot_fleet_request} Resource.
 func NewSpotFleetRequest(scope constructs.Construct, id *string, config *SpotFleetRequestConfig) SpotFleetRequest {
 	_init_.Initialize()
 
@@ -948,7 +972,7 @@ func NewSpotFleetRequest(scope constructs.Construct, id *string, config *SpotFle
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/spot_fleet_request aws_spot_fleet_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/spot_fleet_request aws_spot_fleet_request} Resource.
 func NewSpotFleetRequest_Override(s SpotFleetRequest, scope constructs.Construct, id *string, config *SpotFleetRequestConfig) {
 	_init_.Initialize()
 
@@ -977,6 +1001,17 @@ func (j *jsiiProxy_SpotFleetRequest)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpotFleetRequest)SetContext(val *string) {
+	if err := j.validateSetContextParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"context",
 		val,
 	)
 }
@@ -1594,6 +1629,14 @@ func (s *jsiiProxy_SpotFleetRequest) ResetAllocationStrategy() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAllocationStrategy",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpotFleetRequest) ResetContext() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetContext",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/partition aws_partition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/partition aws_partition}.
 type DataAwsPartition interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -291,7 +291,7 @@ func (j *jsiiProxy_DataAwsPartition) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/partition aws_partition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/partition aws_partition} Data Source.
 func NewDataAwsPartition(scope constructs.Construct, id *string, config *DataAwsPartitionConfig) DataAwsPartition {
 	_init_.Initialize()
 
@@ -309,7 +309,7 @@ func NewDataAwsPartition(scope constructs.Construct, id *string, config *DataAws
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/data-sources/partition aws_partition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/partition aws_partition} Data Source.
 func NewDataAwsPartition_Override(d DataAwsPartition, scope constructs.Construct, id *string, config *DataAwsPartitionConfig) {
 	_init_.Initialize()
 

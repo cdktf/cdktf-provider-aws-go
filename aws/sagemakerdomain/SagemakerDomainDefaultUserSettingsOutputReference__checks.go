@@ -134,6 +134,17 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePu
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutRStudioServerProAppSettingsParameters(value *SagemakerDomainDefaultUserSettingsRStudioServerProAppSettings) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutSharingSettingsParameters(value *SagemakerDomainDefaultUserSettingsSharingSettings) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

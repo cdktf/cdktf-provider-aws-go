@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/vpn_connection aws_vpn_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/vpn_connection aws_vpn_connection}.
 type VpnConnection interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -113,6 +113,9 @@ type VpnConnection interface {
 	Tunnel1DpdTimeoutSeconds() *float64
 	SetTunnel1DpdTimeoutSeconds(val *float64)
 	Tunnel1DpdTimeoutSecondsInput() *float64
+	Tunnel1EnableTunnelLifecycleControl() interface{}
+	SetTunnel1EnableTunnelLifecycleControl(val interface{})
+	Tunnel1EnableTunnelLifecycleControlInput() interface{}
 	Tunnel1IkeVersions() *[]*string
 	SetTunnel1IkeVersions(val *[]*string)
 	Tunnel1IkeVersionsInput() *[]*string
@@ -174,6 +177,9 @@ type VpnConnection interface {
 	Tunnel2DpdTimeoutSeconds() *float64
 	SetTunnel2DpdTimeoutSeconds(val *float64)
 	Tunnel2DpdTimeoutSecondsInput() *float64
+	Tunnel2EnableTunnelLifecycleControl() interface{}
+	SetTunnel2EnableTunnelLifecycleControl(val interface{})
+	Tunnel2EnableTunnelLifecycleControlInput() interface{}
 	Tunnel2IkeVersions() *[]*string
 	SetTunnel2IkeVersions(val *[]*string)
 	Tunnel2IkeVersionsInput() *[]*string
@@ -279,6 +285,7 @@ type VpnConnection interface {
 	ResetTransportTransitGatewayAttachmentId()
 	ResetTunnel1DpdTimeoutAction()
 	ResetTunnel1DpdTimeoutSeconds()
+	ResetTunnel1EnableTunnelLifecycleControl()
 	ResetTunnel1IkeVersions()
 	ResetTunnel1InsideCidr()
 	ResetTunnel1InsideIpv6Cidr()
@@ -298,6 +305,7 @@ type VpnConnection interface {
 	ResetTunnel1StartupAction()
 	ResetTunnel2DpdTimeoutAction()
 	ResetTunnel2DpdTimeoutSeconds()
+	ResetTunnel2EnableTunnelLifecycleControl()
 	ResetTunnel2IkeVersions()
 	ResetTunnel2InsideCidr()
 	ResetTunnel2InsideIpv6Cidr()
@@ -892,6 +900,26 @@ func (j *jsiiProxy_VpnConnection) Tunnel1DpdTimeoutSecondsInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_VpnConnection) Tunnel1EnableTunnelLifecycleControl() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tunnel1EnableTunnelLifecycleControl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnConnection) Tunnel1EnableTunnelLifecycleControlInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tunnel1EnableTunnelLifecycleControlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpnConnection) Tunnel1IkeVersions() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1322,6 +1350,26 @@ func (j *jsiiProxy_VpnConnection) Tunnel2DpdTimeoutSecondsInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_VpnConnection) Tunnel2EnableTunnelLifecycleControl() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tunnel2EnableTunnelLifecycleControl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpnConnection) Tunnel2EnableTunnelLifecycleControlInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tunnel2EnableTunnelLifecycleControlInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpnConnection) Tunnel2IkeVersions() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1743,7 +1791,7 @@ func (j *jsiiProxy_VpnConnection) VpnGatewayIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/vpn_connection aws_vpn_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/vpn_connection aws_vpn_connection} Resource.
 func NewVpnConnection(scope constructs.Construct, id *string, config *VpnConnectionConfig) VpnConnection {
 	_init_.Initialize()
 
@@ -1761,7 +1809,7 @@ func NewVpnConnection(scope constructs.Construct, id *string, config *VpnConnect
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/vpn_connection aws_vpn_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/vpn_connection aws_vpn_connection} Resource.
 func NewVpnConnection_Override(v VpnConnection, scope constructs.Construct, id *string, config *VpnConnectionConfig) {
 	_init_.Initialize()
 
@@ -2005,6 +2053,17 @@ func (j *jsiiProxy_VpnConnection)SetTunnel1DpdTimeoutSeconds(val *float64) {
 	)
 }
 
+func (j *jsiiProxy_VpnConnection)SetTunnel1EnableTunnelLifecycleControl(val interface{}) {
+	if err := j.validateSetTunnel1EnableTunnelLifecycleControlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tunnel1EnableTunnelLifecycleControl",
+		val,
+	)
+}
+
 func (j *jsiiProxy_VpnConnection)SetTunnel1IkeVersions(val *[]*string) {
 	if err := j.validateSetTunnel1IkeVersionsParameters(val); err != nil {
 		panic(err)
@@ -2199,6 +2258,17 @@ func (j *jsiiProxy_VpnConnection)SetTunnel2DpdTimeoutSeconds(val *float64) {
 	_jsii_.Set(
 		j,
 		"tunnel2DpdTimeoutSeconds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpnConnection)SetTunnel2EnableTunnelLifecycleControl(val interface{}) {
+	if err := j.validateSetTunnel2EnableTunnelLifecycleControlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tunnel2EnableTunnelLifecycleControl",
 		val,
 	)
 }
@@ -2820,6 +2890,14 @@ func (v *jsiiProxy_VpnConnection) ResetTunnel1DpdTimeoutSeconds() {
 	)
 }
 
+func (v *jsiiProxy_VpnConnection) ResetTunnel1EnableTunnelLifecycleControl() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetTunnel1EnableTunnelLifecycleControl",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VpnConnection) ResetTunnel1IkeVersions() {
 	_jsii_.InvokeVoid(
 		v,
@@ -2968,6 +3046,14 @@ func (v *jsiiProxy_VpnConnection) ResetTunnel2DpdTimeoutSeconds() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetTunnel2DpdTimeoutSeconds",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpnConnection) ResetTunnel2EnableTunnelLifecycleControl() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetTunnel2EnableTunnelLifecycleControl",
 		nil, // no parameters
 	)
 }

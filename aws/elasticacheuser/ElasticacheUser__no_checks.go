@@ -56,6 +56,10 @@ func (e *jsiiProxy_ElasticacheUser) validatePutAuthenticationModeParameters(valu
 	return nil
 }
 
+func (e *jsiiProxy_ElasticacheUser) validatePutTimeoutsParameters(value *ElasticacheUserTimeouts) error {
+	return nil
+}
+
 func validateElasticacheUser_IsConstructParameters(x interface{}) error {
 	return nil
 }

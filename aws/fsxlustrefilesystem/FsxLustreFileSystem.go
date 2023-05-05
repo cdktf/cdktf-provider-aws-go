@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system}.
 type FsxLustreFileSystem interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -104,6 +104,8 @@ type FsxLustreFileSystem interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RootSquashConfiguration() FsxLustreFileSystemRootSquashConfigurationOutputReference
+	RootSquashConfigurationInput() *FsxLustreFileSystemRootSquashConfiguration
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
@@ -160,6 +162,7 @@ type FsxLustreFileSystem interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLogConfiguration(value *FsxLustreFileSystemLogConfiguration)
+	PutRootSquashConfiguration(value *FsxLustreFileSystemRootSquashConfiguration)
 	PutTimeouts(value *FsxLustreFileSystemTimeouts)
 	ResetAutoImportPolicy()
 	ResetAutomaticBackupRetentionDays()
@@ -180,6 +183,7 @@ type FsxLustreFileSystem interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPerUnitStorageThroughput()
+	ResetRootSquashConfiguration()
 	ResetSecurityGroupIds()
 	ResetStorageCapacity()
 	ResetStorageType()
@@ -702,6 +706,26 @@ func (j *jsiiProxy_FsxLustreFileSystem) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FsxLustreFileSystem) RootSquashConfiguration() FsxLustreFileSystemRootSquashConfigurationOutputReference {
+	var returns FsxLustreFileSystemRootSquashConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"rootSquashConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxLustreFileSystem) RootSquashConfigurationInput() *FsxLustreFileSystemRootSquashConfiguration {
+	var returns *FsxLustreFileSystemRootSquashConfiguration
+	_jsii_.Get(
+		j,
+		"rootSquashConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxLustreFileSystem) SecurityGroupIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -903,7 +927,7 @@ func (j *jsiiProxy_FsxLustreFileSystem) WeeklyMaintenanceStartTimeInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
 func NewFsxLustreFileSystem(scope constructs.Construct, id *string, config *FsxLustreFileSystemConfig) FsxLustreFileSystem {
 	_init_.Initialize()
 
@@ -921,7 +945,7 @@ func NewFsxLustreFileSystem(scope constructs.Construct, id *string, config *FsxL
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
 func NewFsxLustreFileSystem_Override(f FsxLustreFileSystem, scope constructs.Construct, id *string, config *FsxLustreFileSystemConfig) {
 	_init_.Initialize()
 
@@ -1519,6 +1543,17 @@ func (f *jsiiProxy_FsxLustreFileSystem) PutLogConfiguration(value *FsxLustreFile
 	)
 }
 
+func (f *jsiiProxy_FsxLustreFileSystem) PutRootSquashConfiguration(value *FsxLustreFileSystemRootSquashConfiguration) {
+	if err := f.validatePutRootSquashConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putRootSquashConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FsxLustreFileSystem) PutTimeouts(value *FsxLustreFileSystemTimeouts) {
 	if err := f.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1662,6 +1697,14 @@ func (f *jsiiProxy_FsxLustreFileSystem) ResetPerUnitStorageThroughput() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetPerUnitStorageThroughput",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxLustreFileSystem) ResetRootSquashConfiguration() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRootSquashConfiguration",
 		nil, // no parameters
 	)
 }

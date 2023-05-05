@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/ec2_transit_gateway_peering_attachment_accepter aws_ec2_transit_gateway_peering_attachment_accepter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/ec2_transit_gateway_peering_attachment_accepter aws_ec2_transit_gateway_peering_attachment_accepter}.
 type Ec2TransitGatewayPeeringAttachmentAccepter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachmentAccepter) TransitGatewayId(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/ec2_transit_gateway_peering_attachment_accepter aws_ec2_transit_gateway_peering_attachment_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/ec2_transit_gateway_peering_attachment_accepter aws_ec2_transit_gateway_peering_attachment_accepter} Resource.
 func NewEc2TransitGatewayPeeringAttachmentAccepter(scope constructs.Construct, id *string, config *Ec2TransitGatewayPeeringAttachmentAccepterConfig) Ec2TransitGatewayPeeringAttachmentAccepter {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewEc2TransitGatewayPeeringAttachmentAccepter(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/ec2_transit_gateway_peering_attachment_accepter aws_ec2_transit_gateway_peering_attachment_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/ec2_transit_gateway_peering_attachment_accepter aws_ec2_transit_gateway_peering_attachment_accepter} Resource.
 func NewEc2TransitGatewayPeeringAttachmentAccepter_Override(e Ec2TransitGatewayPeeringAttachmentAccepter, scope constructs.Construct, id *string, config *Ec2TransitGatewayPeeringAttachmentAccepterConfig) {
 	_init_.Initialize()
 

@@ -29,6 +29,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "cpuCoreCount", GoGetter: "CpuCoreCount"},
 			_jsii_.MemberProperty{JsiiProperty: "cpuCoreCountInput", GoGetter: "CpuCoreCountInput"},
+			_jsii_.MemberProperty{JsiiProperty: "cpuOptions", GoGetter: "CpuOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "cpuOptionsInput", GoGetter: "CpuOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cpuThreadsPerCore", GoGetter: "CpuThreadsPerCore"},
 			_jsii_.MemberProperty{JsiiProperty: "cpuThreadsPerCoreInput", GoGetter: "CpuThreadsPerCoreInput"},
 			_jsii_.MemberProperty{JsiiProperty: "creditSpecification", GoGetter: "CreditSpecification"},
@@ -116,6 +118,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "publicDns", GoGetter: "PublicDns"},
 			_jsii_.MemberProperty{JsiiProperty: "publicIp", GoGetter: "PublicIp"},
 			_jsii_.MemberMethod{JsiiMethod: "putCapacityReservationSpecification", GoMethod: "PutCapacityReservationSpecification"},
+			_jsii_.MemberMethod{JsiiMethod: "putCpuOptions", GoMethod: "PutCpuOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putCreditSpecification", GoMethod: "PutCreditSpecification"},
 			_jsii_.MemberMethod{JsiiMethod: "putEbsBlockDevice", GoMethod: "PutEbsBlockDevice"},
 			_jsii_.MemberMethod{JsiiMethod: "putEnclaveOptions", GoMethod: "PutEnclaveOptions"},
@@ -134,6 +137,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetBlockDurationMinutes", GoMethod: "ResetBlockDurationMinutes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCapacityReservationSpecification", GoMethod: "ResetCapacityReservationSpecification"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCpuCoreCount", GoMethod: "ResetCpuCoreCount"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCpuOptions", GoMethod: "ResetCpuOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCpuThreadsPerCore", GoMethod: "ResetCpuThreadsPerCore"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCreditSpecification", GoMethod: "ResetCreditSpecification"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisableApiStop", GoMethod: "ResetDisableApiStop"},
@@ -327,6 +331,51 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestConfig",
 		reflect.TypeOf((*SpotInstanceRequestConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestCpuOptions",
+		reflect.TypeOf((*SpotInstanceRequestCpuOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestCpuOptionsOutputReference",
+		reflect.TypeOf((*SpotInstanceRequestCpuOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "amdSevSnp", GoGetter: "AmdSevSnp"},
+			_jsii_.MemberProperty{JsiiProperty: "amdSevSnpInput", GoGetter: "AmdSevSnpInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "coreCount", GoGetter: "CoreCount"},
+			_jsii_.MemberProperty{JsiiProperty: "coreCountInput", GoGetter: "CoreCountInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAmdSevSnp", GoMethod: "ResetAmdSevSnp"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCoreCount", GoMethod: "ResetCoreCount"},
+			_jsii_.MemberMethod{JsiiMethod: "resetThreadsPerCore", GoMethod: "ResetThreadsPerCore"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "threadsPerCore", GoGetter: "ThreadsPerCore"},
+			_jsii_.MemberProperty{JsiiProperty: "threadsPerCoreInput", GoGetter: "ThreadsPerCoreInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_SpotInstanceRequestCpuOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequestCreditSpecification",

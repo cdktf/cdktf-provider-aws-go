@@ -122,6 +122,17 @@ func (s *jsiiProxy_SfnStateMachine) validatePutLoggingConfigurationParameters(va
 	return nil
 }
 
+func (s *jsiiProxy_SfnStateMachine) validatePutTimeoutsParameters(value *SfnStateMachineTimeouts) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SfnStateMachine) validatePutTracingConfigurationParameters(value *SfnStateMachineTracingConfiguration) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

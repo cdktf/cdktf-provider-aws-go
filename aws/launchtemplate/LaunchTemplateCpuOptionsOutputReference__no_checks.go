@@ -48,6 +48,10 @@ func (l *jsiiProxy_LaunchTemplateCpuOptionsOutputReference) validateResolveParam
 	return nil
 }
 
+func (j *jsiiProxy_LaunchTemplateCpuOptionsOutputReference) validateSetAmdSevSnpParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LaunchTemplateCpuOptionsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

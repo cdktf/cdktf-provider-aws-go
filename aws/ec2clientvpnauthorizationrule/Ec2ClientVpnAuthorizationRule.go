@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/ec2_client_vpn_authorization_rule aws_ec2_client_vpn_authorization_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/ec2_client_vpn_authorization_rule aws_ec2_client_vpn_authorization_rule}.
 type Ec2ClientVpnAuthorizationRule interface {
 	cdktf.TerraformResource
 	AccessGroupId() *string
@@ -428,7 +428,7 @@ func (j *jsiiProxy_Ec2ClientVpnAuthorizationRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/ec2_client_vpn_authorization_rule aws_ec2_client_vpn_authorization_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/ec2_client_vpn_authorization_rule aws_ec2_client_vpn_authorization_rule} Resource.
 func NewEc2ClientVpnAuthorizationRule(scope constructs.Construct, id *string, config *Ec2ClientVpnAuthorizationRuleConfig) Ec2ClientVpnAuthorizationRule {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewEc2ClientVpnAuthorizationRule(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/ec2_client_vpn_authorization_rule aws_ec2_client_vpn_authorization_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/ec2_client_vpn_authorization_rule aws_ec2_client_vpn_authorization_rule} Resource.
 func NewEc2ClientVpnAuthorizationRule_Override(e Ec2ClientVpnAuthorizationRule, scope constructs.Construct, id *string, config *Ec2ClientVpnAuthorizationRuleConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/spot_instance_request aws_spot_instance_request}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/spot_instance_request aws_spot_instance_request}.
 type SpotInstanceRequest interface {
 	cdktf.TerraformResource
 	Ami() *string
@@ -42,6 +42,8 @@ type SpotInstanceRequest interface {
 	CpuCoreCount() *float64
 	SetCpuCoreCount(val *float64)
 	CpuCoreCountInput() *float64
+	CpuOptions() SpotInstanceRequestCpuOptionsOutputReference
+	CpuOptionsInput() *SpotInstanceRequestCpuOptions
 	CpuThreadsPerCore() *float64
 	SetCpuThreadsPerCore(val *float64)
 	CpuThreadsPerCoreInput() *float64
@@ -248,6 +250,7 @@ type SpotInstanceRequest interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCapacityReservationSpecification(value *SpotInstanceRequestCapacityReservationSpecification)
+	PutCpuOptions(value *SpotInstanceRequestCpuOptions)
 	PutCreditSpecification(value *SpotInstanceRequestCreditSpecification)
 	PutEbsBlockDevice(value interface{})
 	PutEnclaveOptions(value *SpotInstanceRequestEnclaveOptions)
@@ -265,6 +268,7 @@ type SpotInstanceRequest interface {
 	ResetBlockDurationMinutes()
 	ResetCapacityReservationSpecification()
 	ResetCpuCoreCount()
+	ResetCpuOptions()
 	ResetCpuThreadsPerCore()
 	ResetCreditSpecification()
 	ResetDisableApiStop()
@@ -497,6 +501,26 @@ func (j *jsiiProxy_SpotInstanceRequest) CpuCoreCountInput() *float64 {
 	_jsii_.Get(
 		j,
 		"cpuCoreCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpotInstanceRequest) CpuOptions() SpotInstanceRequestCpuOptionsOutputReference {
+	var returns SpotInstanceRequestCpuOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"cpuOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpotInstanceRequest) CpuOptionsInput() *SpotInstanceRequestCpuOptions {
+	var returns *SpotInstanceRequestCpuOptions
+	_jsii_.Get(
+		j,
+		"cpuOptionsInput",
 		&returns,
 	)
 	return returns
@@ -1703,7 +1727,7 @@ func (j *jsiiProxy_SpotInstanceRequest) WaitForFulfillmentInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/spot_instance_request aws_spot_instance_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/spot_instance_request aws_spot_instance_request} Resource.
 func NewSpotInstanceRequest(scope constructs.Construct, id *string, config *SpotInstanceRequestConfig) SpotInstanceRequest {
 	_init_.Initialize()
 
@@ -1721,7 +1745,7 @@ func NewSpotInstanceRequest(scope constructs.Construct, id *string, config *Spot
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/spot_instance_request aws_spot_instance_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/spot_instance_request aws_spot_instance_request} Resource.
 func NewSpotInstanceRequest_Override(s SpotInstanceRequest, scope constructs.Construct, id *string, config *SpotInstanceRequestConfig) {
 	_init_.Initialize()
 
@@ -2550,6 +2574,17 @@ func (s *jsiiProxy_SpotInstanceRequest) PutCapacityReservationSpecification(valu
 	)
 }
 
+func (s *jsiiProxy_SpotInstanceRequest) PutCpuOptions(value *SpotInstanceRequestCpuOptions) {
+	if err := s.validatePutCpuOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCpuOptions",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SpotInstanceRequest) PutCreditSpecification(value *SpotInstanceRequestCreditSpecification) {
 	if err := s.validatePutCreditSpecificationParameters(value); err != nil {
 		panic(err)
@@ -2715,6 +2750,14 @@ func (s *jsiiProxy_SpotInstanceRequest) ResetCpuCoreCount() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCpuCoreCount",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpotInstanceRequest) ResetCpuOptions() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCpuOptions",
 		nil, // no parameters
 	)
 }

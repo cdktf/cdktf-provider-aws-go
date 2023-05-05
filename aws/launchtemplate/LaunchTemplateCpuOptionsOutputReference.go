@@ -10,6 +10,9 @@ import (
 
 type LaunchTemplateCpuOptionsOutputReference interface {
 	cdktf.ComplexObject
+	AmdSevSnp() *string
+	SetAmdSevSnp(val *string)
+	AmdSevSnpInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,6 +70,7 @@ type LaunchTemplateCpuOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAmdSevSnp()
 	ResetCoreCount()
 	ResetThreadsPerCore()
 	// Produce the Token's value at resolution time.
@@ -82,6 +86,26 @@ type LaunchTemplateCpuOptionsOutputReference interface {
 // The jsii proxy struct for LaunchTemplateCpuOptionsOutputReference
 type jsiiProxy_LaunchTemplateCpuOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_LaunchTemplateCpuOptionsOutputReference) AmdSevSnp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"amdSevSnp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LaunchTemplateCpuOptionsOutputReference) AmdSevSnpInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"amdSevSnpInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_LaunchTemplateCpuOptionsOutputReference) ComplexObjectIndex() interface{} {
@@ -219,6 +243,17 @@ func NewLaunchTemplateCpuOptionsOutputReference_Override(l LaunchTemplateCpuOpti
 		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCpuOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
+	)
+}
+
+func (j *jsiiProxy_LaunchTemplateCpuOptionsOutputReference)SetAmdSevSnp(val *string) {
+	if err := j.validateSetAmdSevSnpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"amdSevSnp",
+		val,
 	)
 }
 
@@ -483,6 +518,14 @@ func (l *jsiiProxy_LaunchTemplateCpuOptionsOutputReference) InterpolationForAttr
 	)
 
 	return returns
+}
+
+func (l *jsiiProxy_LaunchTemplateCpuOptionsOutputReference) ResetAmdSevSnp() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetAmdSevSnp",
+		nil, // no parameters
+	)
 }
 
 func (l *jsiiProxy_LaunchTemplateCpuOptionsOutputReference) ResetCoreCount() {

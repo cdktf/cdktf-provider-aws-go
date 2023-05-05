@@ -1,0 +1,6 @@
+package medialivechannel
+
+
+type MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265SettingsColorSpaceSettingsDolbyVision81Settings struct {
+}
+

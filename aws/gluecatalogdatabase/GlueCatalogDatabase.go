@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/glue_catalog_database aws_glue_catalog_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/glue_catalog_database aws_glue_catalog_database}.
 type GlueCatalogDatabase interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -73,6 +73,12 @@ type GlueCatalogDatabase interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
 	TargetDatabase() GlueCatalogDatabaseTargetDatabaseOutputReference
 	TargetDatabaseInput() *GlueCatalogDatabaseTargetDatabase
 	// Experimental.
@@ -117,6 +123,8 @@ type GlueCatalogDatabase interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameters()
+	ResetTags()
+	ResetTagsAll()
 	ResetTargetDatabase()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -413,6 +421,46 @@ func (j *jsiiProxy_GlueCatalogDatabase) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GlueCatalogDatabase) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCatalogDatabase) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCatalogDatabase) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCatalogDatabase) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GlueCatalogDatabase) TargetDatabase() GlueCatalogDatabaseTargetDatabaseOutputReference {
 	var returns GlueCatalogDatabaseTargetDatabaseOutputReference
 	_jsii_.Get(
@@ -464,7 +512,7 @@ func (j *jsiiProxy_GlueCatalogDatabase) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/glue_catalog_database aws_glue_catalog_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/glue_catalog_database aws_glue_catalog_database} Resource.
 func NewGlueCatalogDatabase(scope constructs.Construct, id *string, config *GlueCatalogDatabaseConfig) GlueCatalogDatabase {
 	_init_.Initialize()
 
@@ -482,7 +530,7 @@ func NewGlueCatalogDatabase(scope constructs.Construct, id *string, config *Glue
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/glue_catalog_database aws_glue_catalog_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/glue_catalog_database aws_glue_catalog_database} Resource.
 func NewGlueCatalogDatabase_Override(g GlueCatalogDatabase, scope constructs.Construct, id *string, config *GlueCatalogDatabaseConfig) {
 	_init_.Initialize()
 
@@ -623,6 +671,28 @@ func (j *jsiiProxy_GlueCatalogDatabase)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueCatalogDatabase)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueCatalogDatabase)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -967,6 +1037,22 @@ func (g *jsiiProxy_GlueCatalogDatabase) ResetParameters() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetParameters",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueCatalogDatabase) ResetTags() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueCatalogDatabase) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }

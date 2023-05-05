@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/instance aws_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/instance aws_instance}.
 type Instance interface {
 	cdktf.TerraformResource
 	Ami() *string
@@ -39,6 +39,8 @@ type Instance interface {
 	CpuCoreCount() *float64
 	SetCpuCoreCount(val *float64)
 	CpuCoreCountInput() *float64
+	CpuOptions() InstanceCpuOptionsOutputReference
+	CpuOptionsInput() *InstanceCpuOptions
 	CpuThreadsPerCore() *float64
 	SetCpuThreadsPerCore(val *float64)
 	CpuThreadsPerCoreInput() *float64
@@ -221,6 +223,7 @@ type Instance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCapacityReservationSpecification(value *InstanceCapacityReservationSpecification)
+	PutCpuOptions(value *InstanceCpuOptions)
 	PutCreditSpecification(value *InstanceCreditSpecification)
 	PutEbsBlockDevice(value interface{})
 	PutEnclaveOptions(value *InstanceEnclaveOptions)
@@ -237,6 +240,7 @@ type Instance interface {
 	ResetAvailabilityZone()
 	ResetCapacityReservationSpecification()
 	ResetCpuCoreCount()
+	ResetCpuOptions()
 	ResetCpuThreadsPerCore()
 	ResetCreditSpecification()
 	ResetDisableApiStop()
@@ -442,6 +446,26 @@ func (j *jsiiProxy_Instance) CpuCoreCountInput() *float64 {
 	_jsii_.Get(
 		j,
 		"cpuCoreCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Instance) CpuOptions() InstanceCpuOptionsOutputReference {
+	var returns InstanceCpuOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"cpuOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Instance) CpuOptionsInput() *InstanceCpuOptions {
+	var returns *InstanceCpuOptions
+	_jsii_.Get(
+		j,
+		"cpuOptionsInput",
 		&returns,
 	)
 	return returns
@@ -1478,7 +1502,7 @@ func (j *jsiiProxy_Instance) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/instance aws_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/instance aws_instance} Resource.
 func NewInstance(scope constructs.Construct, id *string, config *InstanceConfig) Instance {
 	_init_.Initialize()
 
@@ -1496,7 +1520,7 @@ func NewInstance(scope constructs.Construct, id *string, config *InstanceConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/instance aws_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/instance aws_instance} Resource.
 func NewInstance_Override(i Instance, scope constructs.Construct, id *string, config *InstanceConfig) {
 	_init_.Initialize()
 
@@ -2237,6 +2261,17 @@ func (i *jsiiProxy_Instance) PutCapacityReservationSpecification(value *Instance
 	)
 }
 
+func (i *jsiiProxy_Instance) PutCpuOptions(value *InstanceCpuOptions) {
+	if err := i.validatePutCpuOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putCpuOptions",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_Instance) PutCreditSpecification(value *InstanceCreditSpecification) {
 	if err := i.validatePutCreditSpecificationParameters(value); err != nil {
 		panic(err)
@@ -2394,6 +2429,14 @@ func (i *jsiiProxy_Instance) ResetCpuCoreCount() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetCpuCoreCount",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_Instance) ResetCpuOptions() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetCpuOptions",
 		nil, // no parameters
 	)
 }

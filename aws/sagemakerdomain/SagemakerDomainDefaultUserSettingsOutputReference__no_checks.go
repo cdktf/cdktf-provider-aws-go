@@ -60,6 +60,10 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePu
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutRStudioServerProAppSettingsParameters(value *SagemakerDomainDefaultUserSettingsRStudioServerProAppSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutSharingSettingsParameters(value *SagemakerDomainDefaultUserSettingsSharingSettings) error {
 	return nil
 }

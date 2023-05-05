@@ -40,6 +40,8 @@ type SagemakerDomainDefaultUserSettingsOutputReference interface {
 	KernelGatewayAppSettingsInput() *SagemakerDomainDefaultUserSettingsKernelGatewayAppSettings
 	RSessionAppSettings() SagemakerDomainDefaultUserSettingsRSessionAppSettingsOutputReference
 	RSessionAppSettingsInput() *SagemakerDomainDefaultUserSettingsRSessionAppSettings
+	RStudioServerProAppSettings() SagemakerDomainDefaultUserSettingsRStudioServerProAppSettingsOutputReference
+	RStudioServerProAppSettingsInput() *SagemakerDomainDefaultUserSettingsRStudioServerProAppSettings
 	SecurityGroups() *[]*string
 	SetSecurityGroups(val *[]*string)
 	SecurityGroupsInput() *[]*string
@@ -83,12 +85,14 @@ type SagemakerDomainDefaultUserSettingsOutputReference interface {
 	PutJupyterServerAppSettings(value *SagemakerDomainDefaultUserSettingsJupyterServerAppSettings)
 	PutKernelGatewayAppSettings(value *SagemakerDomainDefaultUserSettingsKernelGatewayAppSettings)
 	PutRSessionAppSettings(value *SagemakerDomainDefaultUserSettingsRSessionAppSettings)
+	PutRStudioServerProAppSettings(value *SagemakerDomainDefaultUserSettingsRStudioServerProAppSettings)
 	PutSharingSettings(value *SagemakerDomainDefaultUserSettingsSharingSettings)
 	PutTensorBoardAppSettings(value *SagemakerDomainDefaultUserSettingsTensorBoardAppSettings)
 	ResetCanvasAppSettings()
 	ResetJupyterServerAppSettings()
 	ResetKernelGatewayAppSettings()
 	ResetRSessionAppSettings()
+	ResetRStudioServerProAppSettings()
 	ResetSecurityGroups()
 	ResetSharingSettings()
 	ResetTensorBoardAppSettings()
@@ -252,6 +256,26 @@ func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) RSessionAp
 	_jsii_.Get(
 		j,
 		"rSessionAppSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) RStudioServerProAppSettings() SagemakerDomainDefaultUserSettingsRStudioServerProAppSettingsOutputReference {
+	var returns SagemakerDomainDefaultUserSettingsRStudioServerProAppSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"rStudioServerProAppSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) RStudioServerProAppSettingsInput() *SagemakerDomainDefaultUserSettingsRStudioServerProAppSettings {
+	var returns *SagemakerDomainDefaultUserSettingsRStudioServerProAppSettings
+	_jsii_.Get(
+		j,
+		"rStudioServerProAppSettingsInput",
 		&returns,
 	)
 	return returns
@@ -672,6 +696,17 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) PutRSessio
 	)
 }
 
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) PutRStudioServerProAppSettings(value *SagemakerDomainDefaultUserSettingsRStudioServerProAppSettings) {
+	if err := s.validatePutRStudioServerProAppSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putRStudioServerProAppSettings",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) PutSharingSettings(value *SagemakerDomainDefaultUserSettingsSharingSettings) {
 	if err := s.validatePutSharingSettingsParameters(value); err != nil {
 		panic(err)
@@ -722,6 +757,14 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) ResetRSess
 	_jsii_.InvokeVoid(
 		s,
 		"resetRSessionAppSettings",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) ResetRStudioServerProAppSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRStudioServerProAppSettings",
 		nil, // no parameters
 	)
 }

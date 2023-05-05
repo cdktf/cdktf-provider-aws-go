@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/elasticache_user aws_elasticache_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/elasticache_user aws_elasticache_user}.
 type ElasticacheUser interface {
 	cdktf.TerraformResource
 	AccessString() *string
@@ -82,6 +82,8 @@ type ElasticacheUser interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() ElasticacheUserTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	UserId() *string
 	SetUserId(val *string)
 	UserIdInput() *string
@@ -114,6 +116,7 @@ type ElasticacheUser interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthenticationMode(value *ElasticacheUserAuthenticationMode)
+	PutTimeouts(value *ElasticacheUserTimeouts)
 	ResetAuthenticationMode()
 	ResetId()
 	ResetNoPasswordRequired()
@@ -123,6 +126,7 @@ type ElasticacheUser interface {
 	ResetPasswords()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -468,6 +472,26 @@ func (j *jsiiProxy_ElasticacheUser) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ElasticacheUser) Timeouts() ElasticacheUserTimeoutsOutputReference {
+	var returns ElasticacheUserTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheUser) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElasticacheUser) UserId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -509,7 +533,7 @@ func (j *jsiiProxy_ElasticacheUser) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/elasticache_user aws_elasticache_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/elasticache_user aws_elasticache_user} Resource.
 func NewElasticacheUser(scope constructs.Construct, id *string, config *ElasticacheUserConfig) ElasticacheUser {
 	_init_.Initialize()
 
@@ -527,7 +551,7 @@ func NewElasticacheUser(scope constructs.Construct, id *string, config *Elastica
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/elasticache_user aws_elasticache_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/elasticache_user aws_elasticache_user} Resource.
 func NewElasticacheUser_Override(e ElasticacheUser, scope constructs.Construct, id *string, config *ElasticacheUserConfig) {
 	_init_.Initialize()
 
@@ -982,6 +1006,17 @@ func (e *jsiiProxy_ElasticacheUser) PutAuthenticationMode(value *ElasticacheUser
 	)
 }
 
+func (e *jsiiProxy_ElasticacheUser) PutTimeouts(value *ElasticacheUserTimeouts) {
+	if err := e.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ElasticacheUser) ResetAuthenticationMode() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1034,6 +1069,14 @@ func (e *jsiiProxy_ElasticacheUser) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElasticacheUser) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

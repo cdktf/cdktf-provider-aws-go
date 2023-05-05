@@ -56,6 +56,10 @@ func (s *jsiiProxy_SfnStateMachine) validatePutLoggingConfigurationParameters(va
 	return nil
 }
 
+func (s *jsiiProxy_SfnStateMachine) validatePutTimeoutsParameters(value *SfnStateMachineTimeouts) error {
+	return nil
+}
+
 func (s *jsiiProxy_SfnStateMachine) validatePutTracingConfigurationParameters(value *SfnStateMachineTracingConfiguration) error {
 	return nil
 }

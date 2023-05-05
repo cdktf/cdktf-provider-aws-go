@@ -104,6 +104,10 @@ func (j *jsiiProxy_GrafanaWorkspace) validateSetDescriptionParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_GrafanaWorkspace) validateSetGrafanaVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GrafanaWorkspace) validateSetIdParameters(val *string) error {
 	return nil
 }

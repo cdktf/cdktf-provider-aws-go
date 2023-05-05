@@ -68,6 +68,10 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfi
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutputReference) validateSetS3FailurePathParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutputReference) validateSetS3OutputPathParameters(val *string) error {
 	return nil
 }

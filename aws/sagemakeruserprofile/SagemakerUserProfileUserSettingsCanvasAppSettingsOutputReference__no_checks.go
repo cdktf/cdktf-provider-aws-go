@@ -44,6 +44,10 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputRefere
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) validatePutModelRegisterSettingsParameters(value *SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) validatePutTimeSeriesForecastingSettingsParameters(value *SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings) error {
 	return nil
 }

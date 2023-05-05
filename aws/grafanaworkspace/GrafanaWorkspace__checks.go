@@ -298,6 +298,14 @@ func (j *jsiiProxy_GrafanaWorkspace) validateSetDescriptionParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_GrafanaWorkspace) validateSetGrafanaVersionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GrafanaWorkspace) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/dx_connection_confirmation aws_dx_connection_confirmation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/dx_connection_confirmation aws_dx_connection_confirmation}.
 type DxConnectionConfirmation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -309,7 +309,7 @@ func (j *jsiiProxy_DxConnectionConfirmation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/dx_connection_confirmation aws_dx_connection_confirmation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/dx_connection_confirmation aws_dx_connection_confirmation} Resource.
 func NewDxConnectionConfirmation(scope constructs.Construct, id *string, config *DxConnectionConfirmationConfig) DxConnectionConfirmation {
 	_init_.Initialize()
 
@@ -327,7 +327,7 @@ func NewDxConnectionConfirmation(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/dx_connection_confirmation aws_dx_connection_confirmation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/dx_connection_confirmation aws_dx_connection_confirmation} Resource.
 func NewDxConnectionConfirmation_Override(d DxConnectionConfirmation, scope constructs.Construct, id *string, config *DxConnectionConfirmationConfig) {
 	_init_.Initialize()
 

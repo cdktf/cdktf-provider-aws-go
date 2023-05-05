@@ -30,6 +30,9 @@ type SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationC
 	ErrorTopicInput() *string
 	// Experimental.
 	Fqn() *string
+	IncludeInferenceResponseIn() *[]*string
+	SetIncludeInferenceResponseIn(val *[]*string)
+	IncludeInferenceResponseInInput() *[]*string
 	InternalValue() *SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfig
 	SetInternalValue(val *SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfig)
 	SuccessTopic() *string
@@ -68,6 +71,7 @@ type SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationC
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetErrorTopic()
+	ResetIncludeInferenceResponseIn()
 	ResetSuccessTopic()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -139,6 +143,26 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfi
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfigOutputReference) IncludeInferenceResponseIn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeInferenceResponseIn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfigOutputReference) IncludeInferenceResponseInInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeInferenceResponseInInput",
 		&returns,
 	)
 	return returns
@@ -251,6 +275,17 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfi
 	_jsii_.Set(
 		j,
 		"errorTopic",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfigOutputReference)SetIncludeInferenceResponseIn(val *[]*string) {
+	if err := j.validateSetIncludeInferenceResponseInParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeInferenceResponseIn",
 		val,
 	)
 }
@@ -489,6 +524,14 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfi
 	_jsii_.InvokeVoid(
 		s,
 		"resetErrorTopic",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfigOutputReference) ResetIncludeInferenceResponseIn() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIncludeInferenceResponseIn",
 		nil, // no parameters
 	)
 }

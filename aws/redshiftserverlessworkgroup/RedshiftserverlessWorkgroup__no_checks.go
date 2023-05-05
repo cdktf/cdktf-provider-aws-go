@@ -56,6 +56,10 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroup) validatePutConfigParameterParame
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftserverlessWorkgroup) validatePutTimeoutsParameters(value *RedshiftserverlessWorkgroupTimeouts) error {
+	return nil
+}
+
 func validateRedshiftserverlessWorkgroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -34,6 +34,9 @@ type SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutputReferen
 	KmsKeyIdInput() *string
 	NotificationConfig() SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfigOutputReference
 	NotificationConfigInput() *SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfig
+	S3FailurePath() *string
+	SetS3FailurePath(val *string)
+	S3FailurePathInput() *string
 	S3OutputPath() *string
 	SetS3OutputPath(val *string)
 	S3OutputPathInput() *string
@@ -72,6 +75,7 @@ type SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutputReferen
 	PutNotificationConfig(value *SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigNotificationConfig)
 	ResetKmsKeyId()
 	ResetNotificationConfig()
+	ResetS3FailurePath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -172,6 +176,26 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfi
 	_jsii_.Get(
 		j,
 		"notificationConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutputReference) S3FailurePath() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"s3FailurePath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutputReference) S3FailurePathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"s3FailurePathInput",
 		&returns,
 	)
 	return returns
@@ -285,6 +309,17 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfi
 	_jsii_.Set(
 		j,
 		"kmsKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutputReference)SetS3FailurePath(val *string) {
+	if err := j.validateSetS3FailurePathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"s3FailurePath",
 		val,
 	)
 }
@@ -531,6 +566,14 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfi
 	_jsii_.InvokeVoid(
 		s,
 		"resetNotificationConfig",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerEndpointConfigurationAsyncInferenceConfigOutputConfigOutputReference) ResetS3FailurePath() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetS3FailurePath",
 		nil, // no parameters
 	)
 }

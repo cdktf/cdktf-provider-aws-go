@@ -29,6 +29,8 @@ type SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference interface 
 	Fqn() *string
 	InternalValue() *SagemakerUserProfileUserSettingsCanvasAppSettings
 	SetInternalValue(val *SagemakerUserProfileUserSettingsCanvasAppSettings)
+	ModelRegisterSettings() SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettingsOutputReference
+	ModelRegisterSettingsInput() *SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -63,7 +65,9 @@ type SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutModelRegisterSettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings)
 	PutTimeSeriesForecastingSettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings)
+	ResetModelRegisterSettings()
 	ResetTimeSeriesForecastingSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -125,6 +129,26 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputRefere
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) ModelRegisterSettings() SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettingsOutputReference {
+	var returns SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"modelRegisterSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) ModelRegisterSettingsInput() *SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings {
+	var returns *SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings
+	_jsii_.Get(
+		j,
+		"modelRegisterSettingsInput",
 		&returns,
 	)
 	return returns
@@ -439,6 +463,17 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputRefere
 	return returns
 }
 
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) PutModelRegisterSettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings) {
+	if err := s.validatePutModelRegisterSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putModelRegisterSettings",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) PutTimeSeriesForecastingSettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings) {
 	if err := s.validatePutTimeSeriesForecastingSettingsParameters(value); err != nil {
 		panic(err)
@@ -447,6 +482,14 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputRefere
 		s,
 		"putTimeSeriesForecastingSettings",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) ResetModelRegisterSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetModelRegisterSettings",
+		nil, // no parameters
 	)
 }
 

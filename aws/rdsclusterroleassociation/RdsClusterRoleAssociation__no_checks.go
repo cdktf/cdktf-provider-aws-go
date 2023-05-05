@@ -52,6 +52,10 @@ func (r *jsiiProxy_RdsClusterRoleAssociation) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (r *jsiiProxy_RdsClusterRoleAssociation) validatePutTimeoutsParameters(value *RdsClusterRoleAssociationTimeouts) error {
+	return nil
+}
+
 func validateRdsClusterRoleAssociation_IsConstructParameters(x interface{}) error {
 	return nil
 }

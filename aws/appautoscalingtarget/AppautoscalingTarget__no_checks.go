@@ -108,6 +108,14 @@ func (j *jsiiProxy_AppautoscalingTarget) validateSetServiceNamespaceParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_AppautoscalingTarget) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppautoscalingTarget) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewAppautoscalingTargetParameters(scope constructs.Construct, id *string, config *AppautoscalingTargetConfig) error {
 	return nil
 }

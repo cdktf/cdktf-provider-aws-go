@@ -122,6 +122,17 @@ func (i *jsiiProxy_Instance) validatePutCapacityReservationSpecificationParamete
 	return nil
 }
 
+func (i *jsiiProxy_Instance) validatePutCpuOptionsParameters(value *InstanceCpuOptions) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (i *jsiiProxy_Instance) validatePutCreditSpecificationParameters(value *InstanceCreditSpecification) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

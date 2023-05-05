@@ -335,6 +335,22 @@ func (j *jsiiProxy_AppautoscalingTarget) validateSetServiceNamespaceParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_AppautoscalingTarget) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AppautoscalingTarget) validateSetTagsAllParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewAppautoscalingTargetParameters(scope constructs.Construct, id *string, config *AppautoscalingTargetConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -10,6 +10,7 @@ import (
 
 type DataAwsLaunchTemplateCpuOptionsOutputReference interface {
 	cdktf.ComplexObject
+	AmdSevSnp() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -76,6 +77,16 @@ type DataAwsLaunchTemplateCpuOptionsOutputReference interface {
 // The jsii proxy struct for DataAwsLaunchTemplateCpuOptionsOutputReference
 type jsiiProxy_DataAwsLaunchTemplateCpuOptionsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataAwsLaunchTemplateCpuOptionsOutputReference) AmdSevSnp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"amdSevSnp",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAwsLaunchTemplateCpuOptionsOutputReference) ComplexObjectIndex() interface{} {

@@ -9,9 +9,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appautoscaling_target aws_appautoscaling_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/appautoscaling_target aws_appautoscaling_target}.
 type AppautoscalingTarget interface {
 	cdktf.TerraformResource
+	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -73,6 +74,12 @@ type AppautoscalingTarget interface {
 	ServiceNamespace() *string
 	SetServiceNamespace(val *string)
 	ServiceNamespaceInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -109,6 +116,8 @@ type AppautoscalingTarget interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRoleArn()
+	ResetTags()
+	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -122,6 +131,16 @@ type AppautoscalingTarget interface {
 // The jsii proxy struct for AppautoscalingTarget
 type jsiiProxy_AppautoscalingTarget struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_AppautoscalingTarget) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AppautoscalingTarget) CdktfStack() cdktf.TerraformStack {
@@ -394,6 +413,46 @@ func (j *jsiiProxy_AppautoscalingTarget) ServiceNamespaceInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AppautoscalingTarget) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppautoscalingTarget) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppautoscalingTarget) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppautoscalingTarget) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppautoscalingTarget) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -425,7 +484,7 @@ func (j *jsiiProxy_AppautoscalingTarget) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appautoscaling_target aws_appautoscaling_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/appautoscaling_target aws_appautoscaling_target} Resource.
 func NewAppautoscalingTarget(scope constructs.Construct, id *string, config *AppautoscalingTargetConfig) AppautoscalingTarget {
 	_init_.Initialize()
 
@@ -443,7 +502,7 @@ func NewAppautoscalingTarget(scope constructs.Construct, id *string, config *App
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/appautoscaling_target aws_appautoscaling_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/appautoscaling_target aws_appautoscaling_target} Resource.
 func NewAppautoscalingTarget_Override(a AppautoscalingTarget, scope constructs.Construct, id *string, config *AppautoscalingTargetConfig) {
 	_init_.Initialize()
 
@@ -595,6 +654,28 @@ func (j *jsiiProxy_AppautoscalingTarget)SetServiceNamespace(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceNamespace",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppautoscalingTarget)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppautoscalingTarget)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -885,6 +966,22 @@ func (a *jsiiProxy_AppautoscalingTarget) ResetRoleArn() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRoleArn",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppautoscalingTarget) ResetTags() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppautoscalingTarget) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }

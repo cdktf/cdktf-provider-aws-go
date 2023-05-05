@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup}.
 type RedshiftserverlessWorkgroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -89,6 +89,8 @@ type RedshiftserverlessWorkgroup interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() RedshiftserverlessWorkgroupTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	WorkgroupId() *string
 	WorkgroupName() *string
 	SetWorkgroupName(val *string)
@@ -119,6 +121,7 @@ type RedshiftserverlessWorkgroup interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutConfigParameter(value interface{})
+	PutTimeouts(value *RedshiftserverlessWorkgroupTimeouts)
 	ResetBaseCapacity()
 	ResetConfigParameter()
 	ResetEnhancedVpcRouting()
@@ -131,6 +134,7 @@ type RedshiftserverlessWorkgroup interface {
 	ResetSubnetIds()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -526,6 +530,26 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup) TerraformResourceType() *string 
 	return returns
 }
 
+func (j *jsiiProxy_RedshiftserverlessWorkgroup) Timeouts() RedshiftserverlessWorkgroupTimeoutsOutputReference {
+	var returns RedshiftserverlessWorkgroupTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftserverlessWorkgroup) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedshiftserverlessWorkgroup) WorkgroupId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -557,7 +581,7 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup) WorkgroupNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource.
 func NewRedshiftserverlessWorkgroup(scope constructs.Construct, id *string, config *RedshiftserverlessWorkgroupConfig) RedshiftserverlessWorkgroup {
 	_init_.Initialize()
 
@@ -575,7 +599,7 @@ func NewRedshiftserverlessWorkgroup(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource.
 func NewRedshiftserverlessWorkgroup_Override(r RedshiftserverlessWorkgroup, scope constructs.Construct, id *string, config *RedshiftserverlessWorkgroupConfig) {
 	_init_.Initialize()
 
@@ -1041,6 +1065,17 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroup) PutConfigParameter(value interfa
 	)
 }
 
+func (r *jsiiProxy_RedshiftserverlessWorkgroup) PutTimeouts(value *RedshiftserverlessWorkgroupTimeouts) {
+	if err := r.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_RedshiftserverlessWorkgroup) ResetBaseCapacity() {
 	_jsii_.InvokeVoid(
 		r,
@@ -1117,6 +1152,14 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroup) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftserverlessWorkgroup) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

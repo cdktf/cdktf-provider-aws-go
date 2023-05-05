@@ -112,6 +112,14 @@ func (j *jsiiProxy_GlueCatalogDatabase) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_GlueCatalogDatabase) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GlueCatalogDatabase) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewGlueCatalogDatabaseParameters(scope constructs.Construct, id *string, config *GlueCatalogDatabaseConfig) error {
 	return nil
 }

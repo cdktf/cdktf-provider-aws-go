@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/grafana_workspace aws_grafana_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/grafana_workspace aws_grafana_workspace}.
 type GrafanaWorkspace interface {
 	cdktf.TerraformResource
 	AccountAccessType() *string
@@ -54,6 +54,8 @@ type GrafanaWorkspace interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	GrafanaVersion() *string
+	SetGrafanaVersion(val *string)
+	GrafanaVersionInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -144,6 +146,7 @@ type GrafanaWorkspace interface {
 	ResetConfiguration()
 	ResetDataSources()
 	ResetDescription()
+	ResetGrafanaVersion()
 	ResetId()
 	ResetName()
 	ResetNetworkAccessControl()
@@ -379,6 +382,16 @@ func (j *jsiiProxy_GrafanaWorkspace) GrafanaVersion() *string {
 	_jsii_.Get(
 		j,
 		"grafanaVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GrafanaWorkspace) GrafanaVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"grafanaVersionInput",
 		&returns,
 	)
 	return returns
@@ -735,7 +748,7 @@ func (j *jsiiProxy_GrafanaWorkspace) VpcConfigurationInput() *GrafanaWorkspaceVp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/grafana_workspace aws_grafana_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/grafana_workspace aws_grafana_workspace} Resource.
 func NewGrafanaWorkspace(scope constructs.Construct, id *string, config *GrafanaWorkspaceConfig) GrafanaWorkspace {
 	_init_.Initialize()
 
@@ -753,7 +766,7 @@ func NewGrafanaWorkspace(scope constructs.Construct, id *string, config *Grafana
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/grafana_workspace aws_grafana_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/grafana_workspace aws_grafana_workspace} Resource.
 func NewGrafanaWorkspace_Override(g GrafanaWorkspace, scope constructs.Construct, id *string, config *GrafanaWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -853,6 +866,17 @@ func (j *jsiiProxy_GrafanaWorkspace)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GrafanaWorkspace)SetGrafanaVersion(val *string) {
+	if err := j.validateSetGrafanaVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"grafanaVersion",
 		val,
 	)
 }
@@ -1316,6 +1340,14 @@ func (g *jsiiProxy_GrafanaWorkspace) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GrafanaWorkspace) ResetGrafanaVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGrafanaVersion",
 		nil, // no parameters
 	)
 }

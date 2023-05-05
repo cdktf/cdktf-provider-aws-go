@@ -1,0 +1,6 @@
+package dataawsautoscalinggroup
+
+
+type DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification struct {
+}
+

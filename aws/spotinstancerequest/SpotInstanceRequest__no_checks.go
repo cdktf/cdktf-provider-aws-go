@@ -56,6 +56,10 @@ func (s *jsiiProxy_SpotInstanceRequest) validatePutCapacityReservationSpecificat
 	return nil
 }
 
+func (s *jsiiProxy_SpotInstanceRequest) validatePutCpuOptionsParameters(value *SpotInstanceRequestCpuOptions) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpotInstanceRequest) validatePutCreditSpecificationParameters(value *SpotInstanceRequestCreditSpecification) error {
 	return nil
 }

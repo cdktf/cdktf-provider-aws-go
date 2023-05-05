@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/sfn_state_machine aws_sfn_state_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/sfn_state_machine aws_sfn_state_machine}.
 type SfnStateMachine interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -84,6 +84,8 @@ type SfnStateMachine interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() SfnStateMachineTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	TracingConfiguration() SfnStateMachineTracingConfigurationOutputReference
 	TracingConfigurationInput() *SfnStateMachineTracingConfiguration
 	Type() *string
@@ -115,6 +117,7 @@ type SfnStateMachine interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLoggingConfiguration(value *SfnStateMachineLoggingConfiguration)
+	PutTimeouts(value *SfnStateMachineTimeouts)
 	PutTracingConfiguration(value *SfnStateMachineTracingConfiguration)
 	ResetId()
 	ResetLoggingConfiguration()
@@ -125,6 +128,7 @@ type SfnStateMachine interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	ResetTracingConfiguration()
 	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
@@ -492,6 +496,26 @@ func (j *jsiiProxy_SfnStateMachine) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SfnStateMachine) Timeouts() SfnStateMachineTimeoutsOutputReference {
+	var returns SfnStateMachineTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfnStateMachine) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SfnStateMachine) TracingConfiguration() SfnStateMachineTracingConfigurationOutputReference {
 	var returns SfnStateMachineTracingConfigurationOutputReference
 	_jsii_.Get(
@@ -533,7 +557,7 @@ func (j *jsiiProxy_SfnStateMachine) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/sfn_state_machine aws_sfn_state_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/sfn_state_machine aws_sfn_state_machine} Resource.
 func NewSfnStateMachine(scope constructs.Construct, id *string, config *SfnStateMachineConfig) SfnStateMachine {
 	_init_.Initialize()
 
@@ -551,7 +575,7 @@ func NewSfnStateMachine(scope constructs.Construct, id *string, config *SfnState
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/sfn_state_machine aws_sfn_state_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/sfn_state_machine aws_sfn_state_machine} Resource.
 func NewSfnStateMachine_Override(s SfnStateMachine, scope constructs.Construct, id *string, config *SfnStateMachineConfig) {
 	_init_.Initialize()
 
@@ -995,6 +1019,17 @@ func (s *jsiiProxy_SfnStateMachine) PutLoggingConfiguration(value *SfnStateMachi
 	)
 }
 
+func (s *jsiiProxy_SfnStateMachine) PutTimeouts(value *SfnStateMachineTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SfnStateMachine) PutTracingConfiguration(value *SfnStateMachineTracingConfiguration) {
 	if err := s.validatePutTracingConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1058,6 +1093,14 @@ func (s *jsiiProxy_SfnStateMachine) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SfnStateMachine) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

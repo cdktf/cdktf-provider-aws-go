@@ -88,6 +88,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "placementGroup", GoGetter: "PlacementGroup"},
 			_jsii_.MemberProperty{JsiiProperty: "placementGroupInput", GoGetter: "PlacementGroupInput"},
+			_jsii_.MemberProperty{JsiiProperty: "predictedCapacity", GoGetter: "PredictedCapacity"},
 			_jsii_.MemberProperty{JsiiProperty: "protectFromScaleIn", GoGetter: "ProtectFromScaleIn"},
 			_jsii_.MemberProperty{JsiiProperty: "protectFromScaleInInput", GoGetter: "ProtectFromScaleInInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
@@ -167,6 +168,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "waitForElbCapacityInput", GoGetter: "WaitForElbCapacityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "warmPool", GoGetter: "WarmPool"},
 			_jsii_.MemberProperty{JsiiProperty: "warmPoolInput", GoGetter: "WarmPoolInput"},
+			_jsii_.MemberProperty{JsiiProperty: "warmPoolSize", GoGetter: "WarmPoolSize"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AutoscalingGroup{}

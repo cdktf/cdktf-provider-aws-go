@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/inspector2_member_association aws_inspector2_member_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/inspector2_member_association aws_inspector2_member_association}.
 type Inspector2MemberAssociation interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -27,6 +27,7 @@ type Inspector2MemberAssociation interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DelegatedAdminAccountId() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -58,6 +59,7 @@ type Inspector2MemberAssociation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RelationshipStatus() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -66,6 +68,7 @@ type Inspector2MemberAssociation interface {
 	TerraformResourceType() *string
 	Timeouts() Inspector2MemberAssociationTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	UpdatedAt() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -167,6 +170,16 @@ func (j *jsiiProxy_Inspector2MemberAssociation) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Inspector2MemberAssociation) DelegatedAdminAccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"delegatedAdminAccountId",
 		&returns,
 	)
 	return returns
@@ -282,6 +295,16 @@ func (j *jsiiProxy_Inspector2MemberAssociation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Inspector2MemberAssociation) RelationshipStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"relationshipStatus",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Inspector2MemberAssociation) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -332,8 +355,18 @@ func (j *jsiiProxy_Inspector2MemberAssociation) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Inspector2MemberAssociation) UpdatedAt() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updatedAt",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/inspector2_member_association aws_inspector2_member_association} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/inspector2_member_association aws_inspector2_member_association} Resource.
 func NewInspector2MemberAssociation(scope constructs.Construct, id *string, config *Inspector2MemberAssociationConfig) Inspector2MemberAssociation {
 	_init_.Initialize()
 
@@ -351,7 +384,7 @@ func NewInspector2MemberAssociation(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/inspector2_member_association aws_inspector2_member_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/inspector2_member_association aws_inspector2_member_association} Resource.
 func NewInspector2MemberAssociation_Override(i Inspector2MemberAssociation, scope constructs.Construct, id *string, config *Inspector2MemberAssociationConfig) {
 	_init_.Initialize()
 

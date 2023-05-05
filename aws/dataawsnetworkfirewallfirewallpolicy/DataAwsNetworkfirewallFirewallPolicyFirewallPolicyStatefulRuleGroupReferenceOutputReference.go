@@ -29,6 +29,7 @@ type DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenc
 	Fqn() *string
 	InternalValue() *DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReference
 	SetInternalValue(val *DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReference)
+	Override() DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverrideList
 	Priority() *float64
 	ResourceArn() *string
 	// Experimental.
@@ -123,6 +124,16 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulRul
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOutputReference) Override() DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverrideList {
+	var returns DataAwsNetworkfirewallFirewallPolicyFirewallPolicyStatefulRuleGroupReferenceOverrideList
+	_jsii_.Get(
+		j,
+		"override",
 		&returns,
 	)
 	return returns

@@ -369,6 +369,22 @@ func (j *jsiiProxy_GlueCatalogDatabase) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_GlueCatalogDatabase) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GlueCatalogDatabase) validateSetTagsAllParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewGlueCatalogDatabaseParameters(scope constructs.Construct, id *string, config *GlueCatalogDatabaseConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

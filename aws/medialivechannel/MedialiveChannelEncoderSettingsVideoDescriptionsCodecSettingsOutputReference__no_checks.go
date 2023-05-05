@@ -52,6 +52,10 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettings
 	return nil
 }
 
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsOutputReference) validatePutH265SettingsParameters(value *MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsH265Settings) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveChannelEncoderSettingsVideoDescriptionsCodecSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

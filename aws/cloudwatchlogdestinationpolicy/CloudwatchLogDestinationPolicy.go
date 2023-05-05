@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/cloudwatch_log_destination_policy aws_cloudwatch_log_destination_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/cloudwatch_log_destination_policy aws_cloudwatch_log_destination_policy}.
 type CloudwatchLogDestinationPolicy interface {
 	cdktf.TerraformResource
 	AccessPolicy() *string
@@ -356,7 +356,7 @@ func (j *jsiiProxy_CloudwatchLogDestinationPolicy) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/cloudwatch_log_destination_policy aws_cloudwatch_log_destination_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/cloudwatch_log_destination_policy aws_cloudwatch_log_destination_policy} Resource.
 func NewCloudwatchLogDestinationPolicy(scope constructs.Construct, id *string, config *CloudwatchLogDestinationPolicyConfig) CloudwatchLogDestinationPolicy {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewCloudwatchLogDestinationPolicy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.65.0/docs/resources/cloudwatch_log_destination_policy aws_cloudwatch_log_destination_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/cloudwatch_log_destination_policy aws_cloudwatch_log_destination_policy} Resource.
 func NewCloudwatchLogDestinationPolicy_Override(c CloudwatchLogDestinationPolicy, scope constructs.Construct, id *string, config *CloudwatchLogDestinationPolicyConfig) {
 	_init_.Initialize()
 
