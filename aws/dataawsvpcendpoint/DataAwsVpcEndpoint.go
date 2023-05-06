@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/vpc_endpoint aws_vpc_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/vpc_endpoint aws_vpc_endpoint}.
 type DataAwsVpcEndpoint interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -567,7 +567,7 @@ func (j *jsiiProxy_DataAwsVpcEndpoint) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/vpc_endpoint aws_vpc_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/vpc_endpoint aws_vpc_endpoint} Data Source.
 func NewDataAwsVpcEndpoint(scope constructs.Construct, id *string, config *DataAwsVpcEndpointConfig) DataAwsVpcEndpoint {
 	_init_.Initialize()
 
@@ -585,7 +585,7 @@ func NewDataAwsVpcEndpoint(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/vpc_endpoint aws_vpc_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/vpc_endpoint aws_vpc_endpoint} Data Source.
 func NewDataAwsVpcEndpoint_Override(d DataAwsVpcEndpoint, scope constructs.Construct, id *string, config *DataAwsVpcEndpointConfig) {
 	_init_.Initialize()
 

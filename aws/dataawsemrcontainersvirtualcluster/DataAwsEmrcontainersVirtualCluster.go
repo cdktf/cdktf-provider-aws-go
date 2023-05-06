@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster}.
 type DataAwsEmrcontainersVirtualCluster interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -360,7 +360,7 @@ func (j *jsiiProxy_DataAwsEmrcontainersVirtualCluster) VirtualClusterIdInput() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster} Data Source.
 func NewDataAwsEmrcontainersVirtualCluster(scope constructs.Construct, id *string, config *DataAwsEmrcontainersVirtualClusterConfig) DataAwsEmrcontainersVirtualCluster {
 	_init_.Initialize()
 
@@ -378,7 +378,7 @@ func NewDataAwsEmrcontainersVirtualCluster(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/emrcontainers_virtual_cluster aws_emrcontainers_virtual_cluster} Data Source.
 func NewDataAwsEmrcontainersVirtualCluster_Override(d DataAwsEmrcontainersVirtualCluster, scope constructs.Construct, id *string, config *DataAwsEmrcontainersVirtualClusterConfig) {
 	_init_.Initialize()
 

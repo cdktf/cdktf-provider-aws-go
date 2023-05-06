@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/ec2_network_insights_path aws_ec2_network_insights_path}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_network_insights_path aws_ec2_network_insights_path}.
 type DataAwsEc2NetworkInsightsPath interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -407,7 +407,7 @@ func (j *jsiiProxy_DataAwsEc2NetworkInsightsPath) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/ec2_network_insights_path aws_ec2_network_insights_path} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_network_insights_path aws_ec2_network_insights_path} Data Source.
 func NewDataAwsEc2NetworkInsightsPath(scope constructs.Construct, id *string, config *DataAwsEc2NetworkInsightsPathConfig) DataAwsEc2NetworkInsightsPath {
 	_init_.Initialize()
 
@@ -425,7 +425,7 @@ func NewDataAwsEc2NetworkInsightsPath(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/ec2_network_insights_path aws_ec2_network_insights_path} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_network_insights_path aws_ec2_network_insights_path} Data Source.
 func NewDataAwsEc2NetworkInsightsPath_Override(d DataAwsEc2NetworkInsightsPath, scope constructs.Construct, id *string, config *DataAwsEc2NetworkInsightsPathConfig) {
 	_init_.Initialize()
 

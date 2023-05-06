@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/ebs_encryption_by_default aws_ebs_encryption_by_default}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ebs_encryption_by_default aws_ebs_encryption_by_default}.
 type DataAwsEbsEncryptionByDefault interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DataAwsEbsEncryptionByDefault) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/ebs_encryption_by_default aws_ebs_encryption_by_default} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ebs_encryption_by_default aws_ebs_encryption_by_default} Data Source.
 func NewDataAwsEbsEncryptionByDefault(scope constructs.Construct, id *string, config *DataAwsEbsEncryptionByDefaultConfig) DataAwsEbsEncryptionByDefault {
 	_init_.Initialize()
 
@@ -311,7 +311,7 @@ func NewDataAwsEbsEncryptionByDefault(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/ebs_encryption_by_default aws_ebs_encryption_by_default} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ebs_encryption_by_default aws_ebs_encryption_by_default} Data Source.
 func NewDataAwsEbsEncryptionByDefault_Override(d DataAwsEbsEncryptionByDefault, scope constructs.Construct, id *string, config *DataAwsEbsEncryptionByDefaultConfig) {
 	_init_.Initialize()
 

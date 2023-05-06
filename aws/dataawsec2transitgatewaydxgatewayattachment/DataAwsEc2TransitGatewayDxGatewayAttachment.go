@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/ec2_transit_gateway_dx_gateway_attachment aws_ec2_transit_gateway_dx_gateway_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_transit_gateway_dx_gateway_attachment aws_ec2_transit_gateway_dx_gateway_attachment}.
 type DataAwsEc2TransitGatewayDxGatewayAttachment interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -378,7 +378,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachment) TransitGatewayId
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/ec2_transit_gateway_dx_gateway_attachment aws_ec2_transit_gateway_dx_gateway_attachment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_transit_gateway_dx_gateway_attachment aws_ec2_transit_gateway_dx_gateway_attachment} Data Source.
 func NewDataAwsEc2TransitGatewayDxGatewayAttachment(scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayDxGatewayAttachmentConfig) DataAwsEc2TransitGatewayDxGatewayAttachment {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewDataAwsEc2TransitGatewayDxGatewayAttachment(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/ec2_transit_gateway_dx_gateway_attachment aws_ec2_transit_gateway_dx_gateway_attachment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_transit_gateway_dx_gateway_attachment aws_ec2_transit_gateway_dx_gateway_attachment} Data Source.
 func NewDataAwsEc2TransitGatewayDxGatewayAttachment_Override(d DataAwsEc2TransitGatewayDxGatewayAttachment, scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayDxGatewayAttachmentConfig) {
 	_init_.Initialize()
 

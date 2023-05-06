@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/iam_role aws_iam_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/iam_role aws_iam_role}.
 type IamRole interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -617,7 +617,7 @@ func (j *jsiiProxy_IamRole) UniqueId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/iam_role aws_iam_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/iam_role aws_iam_role} Resource.
 func NewIamRole(scope constructs.Construct, id *string, config *IamRoleConfig) IamRole {
 	_init_.Initialize()
 
@@ -635,7 +635,7 @@ func NewIamRole(scope constructs.Construct, id *string, config *IamRoleConfig) I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/iam_role aws_iam_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/iam_role aws_iam_role} Resource.
 func NewIamRole_Override(i IamRole, scope constructs.Construct, id *string, config *IamRoleConfig) {
 	_init_.Initialize()
 

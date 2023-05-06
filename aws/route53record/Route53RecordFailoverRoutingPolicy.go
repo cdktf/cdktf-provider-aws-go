@@ -2,7 +2,7 @@ package route53record
 
 
 type Route53RecordFailoverRoutingPolicy struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/route53_record#type Route53Record#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/route53_record#type Route53Record#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

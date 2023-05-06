@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/ssm_maintenance_window_task aws_ssm_maintenance_window_task}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ssm_maintenance_window_task aws_ssm_maintenance_window_task}.
 type SsmMaintenanceWindowTask interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -593,7 +593,7 @@ func (j *jsiiProxy_SsmMaintenanceWindowTask) WindowTaskId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/ssm_maintenance_window_task aws_ssm_maintenance_window_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ssm_maintenance_window_task aws_ssm_maintenance_window_task} Resource.
 func NewSsmMaintenanceWindowTask(scope constructs.Construct, id *string, config *SsmMaintenanceWindowTaskConfig) SsmMaintenanceWindowTask {
 	_init_.Initialize()
 
@@ -611,7 +611,7 @@ func NewSsmMaintenanceWindowTask(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/ssm_maintenance_window_task aws_ssm_maintenance_window_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ssm_maintenance_window_task aws_ssm_maintenance_window_task} Resource.
 func NewSsmMaintenanceWindowTask_Override(s SsmMaintenanceWindowTask, scope constructs.Construct, id *string, config *SsmMaintenanceWindowTaskConfig) {
 	_init_.Initialize()
 

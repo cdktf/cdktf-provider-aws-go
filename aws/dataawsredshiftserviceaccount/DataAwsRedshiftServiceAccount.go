@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/redshift_service_account aws_redshift_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/redshift_service_account aws_redshift_service_account}.
 type DataAwsRedshiftServiceAccount interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DataAwsRedshiftServiceAccount) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/redshift_service_account aws_redshift_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/redshift_service_account aws_redshift_service_account} Data Source.
 func NewDataAwsRedshiftServiceAccount(scope constructs.Construct, id *string, config *DataAwsRedshiftServiceAccountConfig) DataAwsRedshiftServiceAccount {
 	_init_.Initialize()
 
@@ -311,7 +311,7 @@ func NewDataAwsRedshiftServiceAccount(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/data-sources/redshift_service_account aws_redshift_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/redshift_service_account aws_redshift_service_account} Data Source.
 func NewDataAwsRedshiftServiceAccount_Override(d DataAwsRedshiftServiceAccount, scope constructs.Construct, id *string, config *DataAwsRedshiftServiceAccountConfig) {
 	_init_.Initialize()
 

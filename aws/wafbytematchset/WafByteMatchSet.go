@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/waf_byte_match_set aws_waf_byte_match_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_byte_match_set aws_waf_byte_match_set}.
 type WafByteMatchSet interface {
 	cdktf.TerraformResource
 	ByteMatchTuples() WafByteMatchSetByteMatchTuplesList
@@ -333,7 +333,7 @@ func (j *jsiiProxy_WafByteMatchSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/waf_byte_match_set aws_waf_byte_match_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_byte_match_set aws_waf_byte_match_set} Resource.
 func NewWafByteMatchSet(scope constructs.Construct, id *string, config *WafByteMatchSetConfig) WafByteMatchSet {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewWafByteMatchSet(scope constructs.Construct, id *string, config *WafByteM
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/waf_byte_match_set aws_waf_byte_match_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_byte_match_set aws_waf_byte_match_set} Resource.
 func NewWafByteMatchSet_Override(w WafByteMatchSet, scope constructs.Construct, id *string, config *WafByteMatchSetConfig) {
 	_init_.Initialize()
 

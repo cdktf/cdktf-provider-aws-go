@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/glue_schema aws_glue_schema}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/glue_schema aws_glue_schema}.
 type GlueSchema interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -529,7 +529,7 @@ func (j *jsiiProxy_GlueSchema) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/glue_schema aws_glue_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/glue_schema aws_glue_schema} Resource.
 func NewGlueSchema(scope constructs.Construct, id *string, config *GlueSchemaConfig) GlueSchema {
 	_init_.Initialize()
 
@@ -547,7 +547,7 @@ func NewGlueSchema(scope constructs.Construct, id *string, config *GlueSchemaCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/glue_schema aws_glue_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/glue_schema aws_glue_schema} Resource.
 func NewGlueSchema_Override(g GlueSchema, scope constructs.Construct, id *string, config *GlueSchemaConfig) {
 	_init_.Initialize()
 

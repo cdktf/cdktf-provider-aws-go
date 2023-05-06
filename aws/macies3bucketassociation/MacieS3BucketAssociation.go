@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/macie_s3_bucket_association aws_macie_s3_bucket_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/macie_s3_bucket_association aws_macie_s3_bucket_association}.
 type MacieS3BucketAssociation interface {
 	cdktf.TerraformResource
 	BucketName() *string
@@ -381,7 +381,7 @@ func (j *jsiiProxy_MacieS3BucketAssociation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/macie_s3_bucket_association aws_macie_s3_bucket_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/macie_s3_bucket_association aws_macie_s3_bucket_association} Resource.
 func NewMacieS3BucketAssociation(scope constructs.Construct, id *string, config *MacieS3BucketAssociationConfig) MacieS3BucketAssociation {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewMacieS3BucketAssociation(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/macie_s3_bucket_association aws_macie_s3_bucket_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/macie_s3_bucket_association aws_macie_s3_bucket_association} Resource.
 func NewMacieS3BucketAssociation_Override(m MacieS3BucketAssociation, scope constructs.Construct, id *string, config *MacieS3BucketAssociationConfig) {
 	_init_.Initialize()
 

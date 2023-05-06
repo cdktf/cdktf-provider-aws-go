@@ -2,9 +2,9 @@ package apigatewaystage
 
 
 type ApiGatewayStageAccessLogSettings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/api_gateway_stage#destination_arn ApiGatewayStage#destination_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/api_gateway_stage#destination_arn ApiGatewayStage#destination_arn}.
 	DestinationArn *string `field:"required" json:"destinationArn" yaml:"destinationArn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/api_gateway_stage#format ApiGatewayStage#format}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/api_gateway_stage#format ApiGatewayStage#format}.
 	Format *string `field:"required" json:"format" yaml:"format"`
 }
 

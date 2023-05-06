@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/cloud9_environment_membership aws_cloud9_environment_membership}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloud9_environment_membership aws_cloud9_environment_membership}.
 type Cloud9EnvironmentMembership interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -366,7 +366,7 @@ func (j *jsiiProxy_Cloud9EnvironmentMembership) UserId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/cloud9_environment_membership aws_cloud9_environment_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloud9_environment_membership aws_cloud9_environment_membership} Resource.
 func NewCloud9EnvironmentMembership(scope constructs.Construct, id *string, config *Cloud9EnvironmentMembershipConfig) Cloud9EnvironmentMembership {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewCloud9EnvironmentMembership(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/cloud9_environment_membership aws_cloud9_environment_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloud9_environment_membership aws_cloud9_environment_membership} Resource.
 func NewCloud9EnvironmentMembership_Override(c Cloud9EnvironmentMembership, scope constructs.Construct, id *string, config *Cloud9EnvironmentMembershipConfig) {
 	_init_.Initialize()
 

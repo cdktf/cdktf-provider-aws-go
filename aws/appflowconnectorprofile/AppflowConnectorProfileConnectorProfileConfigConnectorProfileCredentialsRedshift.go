@@ -2,9 +2,9 @@ package appflowconnectorprofile
 
 
 type AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsRedshift struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appflow_connector_profile#password AppflowConnectorProfile#password}.
 	Password *string `field:"required" json:"password" yaml:"password"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.0/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appflow_connector_profile#username AppflowConnectorProfile#username}.
 	Username *string `field:"required" json:"username" yaml:"username"`
 }
 
