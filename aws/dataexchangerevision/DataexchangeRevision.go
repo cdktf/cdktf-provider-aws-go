@@ -2,14 +2,14 @@ package dataexchangerevision
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataexchangerevision/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataexchangerevision/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dataexchange_revision aws_dataexchange_revision}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dataexchange_revision aws_dataexchange_revision}.
 type DataexchangeRevision interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_DataexchangeRevision) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dataexchange_revision aws_dataexchange_revision} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dataexchange_revision aws_dataexchange_revision} Resource.
 func NewDataexchangeRevision(scope constructs.Construct, id *string, config *DataexchangeRevisionConfig) DataexchangeRevision {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewDataexchangeRevision(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dataexchange_revision aws_dataexchange_revision} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dataexchange_revision aws_dataexchange_revision} Resource.
 func NewDataexchangeRevision_Override(d DataexchangeRevision, scope constructs.Construct, id *string, config *DataexchangeRevisionConfig) {
 	_init_.Initialize()
 

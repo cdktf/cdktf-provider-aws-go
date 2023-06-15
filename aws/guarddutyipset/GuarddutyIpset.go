@@ -2,14 +2,14 @@ package guarddutyipset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/guarddutyipset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/guarddutyipset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/guardduty_ipset aws_guardduty_ipset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/guardduty_ipset aws_guardduty_ipset}.
 type GuarddutyIpset interface {
 	cdktf.TerraformResource
 	Activate() interface{}
@@ -460,7 +460,7 @@ func (j *jsiiProxy_GuarddutyIpset) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/guardduty_ipset aws_guardduty_ipset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/guardduty_ipset aws_guardduty_ipset} Resource.
 func NewGuarddutyIpset(scope constructs.Construct, id *string, config *GuarddutyIpsetConfig) GuarddutyIpset {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewGuarddutyIpset(scope constructs.Construct, id *string, config *Guardduty
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/guardduty_ipset aws_guardduty_ipset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/guardduty_ipset aws_guardduty_ipset} Resource.
 func NewGuarddutyIpset_Override(g GuarddutyIpset, scope constructs.Construct, id *string, config *GuarddutyIpsetConfig) {
 	_init_.Initialize()
 

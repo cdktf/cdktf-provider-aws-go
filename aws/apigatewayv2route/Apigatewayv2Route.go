@@ -2,14 +2,14 @@ package apigatewayv2route
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/apigatewayv2route/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/apigatewayv2route/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/apigatewayv2_route aws_apigatewayv2_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/apigatewayv2_route aws_apigatewayv2_route}.
 type Apigatewayv2Route interface {
 	cdktf.TerraformResource
 	ApiId() *string
@@ -572,7 +572,7 @@ func (j *jsiiProxy_Apigatewayv2Route) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/apigatewayv2_route aws_apigatewayv2_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/apigatewayv2_route aws_apigatewayv2_route} Resource.
 func NewApigatewayv2Route(scope constructs.Construct, id *string, config *Apigatewayv2RouteConfig) Apigatewayv2Route {
 	_init_.Initialize()
 
@@ -590,7 +590,7 @@ func NewApigatewayv2Route(scope constructs.Construct, id *string, config *Apigat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/apigatewayv2_route aws_apigatewayv2_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/apigatewayv2_route aws_apigatewayv2_route} Resource.
 func NewApigatewayv2Route_Override(a Apigatewayv2Route, scope constructs.Construct, id *string, config *Apigatewayv2RouteConfig) {
 	_init_.Initialize()
 

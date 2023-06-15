@@ -2,14 +2,14 @@ package dataawslocationroutecalculator
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslocationroutecalculator/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawslocationroutecalculator/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/location_route_calculator aws_location_route_calculator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/location_route_calculator aws_location_route_calculator}.
 type DataAwsLocationRouteCalculator interface {
 	cdktf.TerraformDataSource
 	CalculatorArn() *string
@@ -360,7 +360,7 @@ func (j *jsiiProxy_DataAwsLocationRouteCalculator) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/location_route_calculator aws_location_route_calculator} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/location_route_calculator aws_location_route_calculator} Data Source.
 func NewDataAwsLocationRouteCalculator(scope constructs.Construct, id *string, config *DataAwsLocationRouteCalculatorConfig) DataAwsLocationRouteCalculator {
 	_init_.Initialize()
 
@@ -378,7 +378,7 @@ func NewDataAwsLocationRouteCalculator(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/location_route_calculator aws_location_route_calculator} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/location_route_calculator aws_location_route_calculator} Data Source.
 func NewDataAwsLocationRouteCalculator_Override(d DataAwsLocationRouteCalculator, scope constructs.Construct, id *string, config *DataAwsLocationRouteCalculatorConfig) {
 	_init_.Initialize()
 

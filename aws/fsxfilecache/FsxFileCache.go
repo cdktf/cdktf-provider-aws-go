@@ -2,14 +2,14 @@ package fsxfilecache
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/fsxfilecache/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/fsxfilecache/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/fsx_file_cache aws_fsx_file_cache}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_file_cache aws_fsx_file_cache}.
 type FsxFileCache interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -647,7 +647,7 @@ func (j *jsiiProxy_FsxFileCache) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/fsx_file_cache aws_fsx_file_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_file_cache aws_fsx_file_cache} Resource.
 func NewFsxFileCache(scope constructs.Construct, id *string, config *FsxFileCacheConfig) FsxFileCache {
 	_init_.Initialize()
 
@@ -665,7 +665,7 @@ func NewFsxFileCache(scope constructs.Construct, id *string, config *FsxFileCach
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/fsx_file_cache aws_fsx_file_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_file_cache aws_fsx_file_cache} Resource.
 func NewFsxFileCache_Override(f FsxFileCache, scope constructs.Construct, id *string, config *FsxFileCacheConfig) {
 	_init_.Initialize()
 

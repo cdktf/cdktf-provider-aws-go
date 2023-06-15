@@ -2,14 +2,14 @@ package cloudwatchlogdestination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchlogdestination/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/cloudwatchlogdestination/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudwatch_log_destination aws_cloudwatch_log_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudwatch_log_destination aws_cloudwatch_log_destination}.
 type CloudwatchLogDestination interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_CloudwatchLogDestination) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudwatch_log_destination aws_cloudwatch_log_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudwatch_log_destination aws_cloudwatch_log_destination} Resource.
 func NewCloudwatchLogDestination(scope constructs.Construct, id *string, config *CloudwatchLogDestinationConfig) CloudwatchLogDestination {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewCloudwatchLogDestination(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudwatch_log_destination aws_cloudwatch_log_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudwatch_log_destination aws_cloudwatch_log_destination} Resource.
 func NewCloudwatchLogDestination_Override(c CloudwatchLogDestination, scope constructs.Construct, id *string, config *CloudwatchLogDestinationConfig) {
 	_init_.Initialize()
 

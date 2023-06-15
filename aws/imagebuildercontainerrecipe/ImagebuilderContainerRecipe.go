@@ -2,14 +2,14 @@ package imagebuildercontainerrecipe
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/imagebuildercontainerrecipe/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/imagebuildercontainerrecipe/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/imagebuilder_container_recipe aws_imagebuilder_container_recipe}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/imagebuilder_container_recipe aws_imagebuilder_container_recipe}.
 type ImagebuilderContainerRecipe interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -695,7 +695,7 @@ func (j *jsiiProxy_ImagebuilderContainerRecipe) WorkingDirectoryInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/imagebuilder_container_recipe aws_imagebuilder_container_recipe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/imagebuilder_container_recipe aws_imagebuilder_container_recipe} Resource.
 func NewImagebuilderContainerRecipe(scope constructs.Construct, id *string, config *ImagebuilderContainerRecipeConfig) ImagebuilderContainerRecipe {
 	_init_.Initialize()
 
@@ -713,7 +713,7 @@ func NewImagebuilderContainerRecipe(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/imagebuilder_container_recipe aws_imagebuilder_container_recipe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/imagebuilder_container_recipe aws_imagebuilder_container_recipe} Resource.
 func NewImagebuilderContainerRecipe_Override(i ImagebuilderContainerRecipe, scope constructs.Construct, id *string, config *ImagebuilderContainerRecipeConfig) {
 	_init_.Initialize()
 

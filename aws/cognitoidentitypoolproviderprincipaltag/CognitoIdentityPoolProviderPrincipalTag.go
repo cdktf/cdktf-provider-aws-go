@@ -2,14 +2,14 @@ package cognitoidentitypoolproviderprincipaltag
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/cognitoidentitypoolproviderprincipaltag/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/cognitoidentitypoolproviderprincipaltag/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cognito_identity_pool_provider_principal_tag aws_cognito_identity_pool_provider_principal_tag}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cognito_identity_pool_provider_principal_tag aws_cognito_identity_pool_provider_principal_tag}.
 type CognitoIdentityPoolProviderPrincipalTag interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_CognitoIdentityPoolProviderPrincipalTag) UseDefaultsInput() i
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cognito_identity_pool_provider_principal_tag aws_cognito_identity_pool_provider_principal_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cognito_identity_pool_provider_principal_tag aws_cognito_identity_pool_provider_principal_tag} Resource.
 func NewCognitoIdentityPoolProviderPrincipalTag(scope constructs.Construct, id *string, config *CognitoIdentityPoolProviderPrincipalTagConfig) CognitoIdentityPoolProviderPrincipalTag {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewCognitoIdentityPoolProviderPrincipalTag(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cognito_identity_pool_provider_principal_tag aws_cognito_identity_pool_provider_principal_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cognito_identity_pool_provider_principal_tag aws_cognito_identity_pool_provider_principal_tag} Resource.
 func NewCognitoIdentityPoolProviderPrincipalTag_Override(c CognitoIdentityPoolProviderPrincipalTag, scope constructs.Construct, id *string, config *CognitoIdentityPoolProviderPrincipalTagConfig) {
 	_init_.Initialize()
 

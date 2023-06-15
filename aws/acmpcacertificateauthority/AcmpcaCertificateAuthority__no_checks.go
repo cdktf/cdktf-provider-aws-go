@@ -92,6 +92,10 @@ func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetIdParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetKeyStorageSecurityStandardParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AcmpcaCertificateAuthority) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -4,7 +4,7 @@ package appmeshvirtualrouter
 type AppmeshVirtualRouterSpecListener struct {
 	// port_mapping block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appmesh_virtual_router#port_mapping AppmeshVirtualRouter#port_mapping}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appmesh_virtual_router#port_mapping AppmeshVirtualRouter#port_mapping}
 	PortMapping *AppmeshVirtualRouterSpecListenerPortMapping `field:"required" json:"portMapping" yaml:"portMapping"`
 }
 

@@ -2,14 +2,14 @@ package syntheticsgroupassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/syntheticsgroupassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/syntheticsgroupassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/synthetics_group_association aws_synthetics_group_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/synthetics_group_association aws_synthetics_group_association}.
 type SyntheticsGroupAssociation interface {
 	cdktf.TerraformResource
 	CanaryArn() *string
@@ -354,7 +354,7 @@ func (j *jsiiProxy_SyntheticsGroupAssociation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/synthetics_group_association aws_synthetics_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/synthetics_group_association aws_synthetics_group_association} Resource.
 func NewSyntheticsGroupAssociation(scope constructs.Construct, id *string, config *SyntheticsGroupAssociationConfig) SyntheticsGroupAssociation {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewSyntheticsGroupAssociation(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/synthetics_group_association aws_synthetics_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/synthetics_group_association aws_synthetics_group_association} Resource.
 func NewSyntheticsGroupAssociation_Override(s SyntheticsGroupAssociation, scope constructs.Construct, id *string, config *SyntheticsGroupAssociationConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package dataawsneptuneengineversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsneptuneengineversion/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsneptuneengineversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/neptune_engine_version aws_neptune_engine_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/neptune_engine_version aws_neptune_engine_version}.
 type DataAwsNeptuneEngineVersion interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -431,7 +431,7 @@ func (j *jsiiProxy_DataAwsNeptuneEngineVersion) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/neptune_engine_version aws_neptune_engine_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/neptune_engine_version aws_neptune_engine_version} Data Source.
 func NewDataAwsNeptuneEngineVersion(scope constructs.Construct, id *string, config *DataAwsNeptuneEngineVersionConfig) DataAwsNeptuneEngineVersion {
 	_init_.Initialize()
 
@@ -449,7 +449,7 @@ func NewDataAwsNeptuneEngineVersion(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/neptune_engine_version aws_neptune_engine_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/neptune_engine_version aws_neptune_engine_version} Data Source.
 func NewDataAwsNeptuneEngineVersion_Override(d DataAwsNeptuneEngineVersion, scope constructs.Construct, id *string, config *DataAwsNeptuneEngineVersionConfig) {
 	_init_.Initialize()
 

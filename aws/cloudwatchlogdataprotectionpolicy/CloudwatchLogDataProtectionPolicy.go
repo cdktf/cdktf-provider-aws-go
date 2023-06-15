@@ -2,14 +2,14 @@ package cloudwatchlogdataprotectionpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchlogdataprotectionpolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/cloudwatchlogdataprotectionpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudwatch_log_data_protection_policy aws_cloudwatch_log_data_protection_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudwatch_log_data_protection_policy aws_cloudwatch_log_data_protection_policy}.
 type CloudwatchLogDataProtectionPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_CloudwatchLogDataProtectionPolicy) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudwatch_log_data_protection_policy aws_cloudwatch_log_data_protection_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudwatch_log_data_protection_policy aws_cloudwatch_log_data_protection_policy} Resource.
 func NewCloudwatchLogDataProtectionPolicy(scope constructs.Construct, id *string, config *CloudwatchLogDataProtectionPolicyConfig) CloudwatchLogDataProtectionPolicy {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewCloudwatchLogDataProtectionPolicy(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudwatch_log_data_protection_policy aws_cloudwatch_log_data_protection_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudwatch_log_data_protection_policy aws_cloudwatch_log_data_protection_policy} Resource.
 func NewCloudwatchLogDataProtectionPolicy_Override(c CloudwatchLogDataProtectionPolicy, scope constructs.Construct, id *string, config *CloudwatchLogDataProtectionPolicyConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package sagemakerspace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerspace/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/sagemakerspace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sagemaker_space aws_sagemaker_space}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sagemaker_space aws_sagemaker_space}.
 type SagemakerSpace interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -426,7 +426,7 @@ func (j *jsiiProxy_SagemakerSpace) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sagemaker_space aws_sagemaker_space} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sagemaker_space aws_sagemaker_space} Resource.
 func NewSagemakerSpace(scope constructs.Construct, id *string, config *SagemakerSpaceConfig) SagemakerSpace {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewSagemakerSpace(scope constructs.Construct, id *string, config *Sagemaker
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sagemaker_space aws_sagemaker_space} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sagemaker_space aws_sagemaker_space} Resource.
 func NewSagemakerSpace_Override(s SagemakerSpace, scope constructs.Construct, id *string, config *SagemakerSpaceConfig) {
 	_init_.Initialize()
 

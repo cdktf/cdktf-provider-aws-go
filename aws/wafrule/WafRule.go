@@ -2,14 +2,14 @@ package wafrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/wafrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_rule aws_waf_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/waf_rule aws_waf_rule}.
 type WafRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -415,7 +415,7 @@ func (j *jsiiProxy_WafRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_rule aws_waf_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/waf_rule aws_waf_rule} Resource.
 func NewWafRule(scope constructs.Construct, id *string, config *WafRuleConfig) WafRule {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewWafRule(scope constructs.Construct, id *string, config *WafRuleConfig) W
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_rule aws_waf_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/waf_rule aws_waf_rule} Resource.
 func NewWafRule_Override(w WafRule, scope constructs.Construct, id *string, config *WafRuleConfig) {
 	_init_.Initialize()
 

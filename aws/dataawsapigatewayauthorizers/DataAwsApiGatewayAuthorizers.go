@@ -2,14 +2,14 @@ package dataawsapigatewayauthorizers
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsapigatewayauthorizers/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsapigatewayauthorizers/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/api_gateway_authorizers aws_api_gateway_authorizers}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/api_gateway_authorizers aws_api_gateway_authorizers}.
 type DataAwsApiGatewayAuthorizers interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataAwsApiGatewayAuthorizers) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/api_gateway_authorizers aws_api_gateway_authorizers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/api_gateway_authorizers aws_api_gateway_authorizers} Data Source.
 func NewDataAwsApiGatewayAuthorizers(scope constructs.Construct, id *string, config *DataAwsApiGatewayAuthorizersConfig) DataAwsApiGatewayAuthorizers {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataAwsApiGatewayAuthorizers(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/api_gateway_authorizers aws_api_gateway_authorizers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/api_gateway_authorizers aws_api_gateway_authorizers} Data Source.
 func NewDataAwsApiGatewayAuthorizers_Override(d DataAwsApiGatewayAuthorizers, scope constructs.Construct, id *string, config *DataAwsApiGatewayAuthorizersConfig) {
 	_init_.Initialize()
 

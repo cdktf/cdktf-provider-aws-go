@@ -2,14 +2,14 @@ package ceanomalysubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ceanomalysubscription/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/ceanomalysubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ce_anomaly_subscription aws_ce_anomaly_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ce_anomaly_subscription aws_ce_anomaly_subscription}.
 type CeAnomalySubscription interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -509,7 +509,7 @@ func (j *jsiiProxy_CeAnomalySubscription) ThresholdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ce_anomaly_subscription aws_ce_anomaly_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ce_anomaly_subscription aws_ce_anomaly_subscription} Resource.
 func NewCeAnomalySubscription(scope constructs.Construct, id *string, config *CeAnomalySubscriptionConfig) CeAnomalySubscription {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewCeAnomalySubscription(scope constructs.Construct, id *string, config *Ce
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ce_anomaly_subscription aws_ce_anomaly_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ce_anomaly_subscription aws_ce_anomaly_subscription} Resource.
 func NewCeAnomalySubscription_Override(c CeAnomalySubscription, scope constructs.Construct, id *string, config *CeAnomalySubscriptionConfig) {
 	_init_.Initialize()
 

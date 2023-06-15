@@ -2,14 +2,14 @@ package dataawsguarddutydetector
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsguarddutydetector/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsguarddutydetector/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/guardduty_detector aws_guardduty_detector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/guardduty_detector aws_guardduty_detector}.
 type DataAwsGuarddutyDetector interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -291,7 +291,7 @@ func (j *jsiiProxy_DataAwsGuarddutyDetector) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/guardduty_detector aws_guardduty_detector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/guardduty_detector aws_guardduty_detector} Data Source.
 func NewDataAwsGuarddutyDetector(scope constructs.Construct, id *string, config *DataAwsGuarddutyDetectorConfig) DataAwsGuarddutyDetector {
 	_init_.Initialize()
 
@@ -309,7 +309,7 @@ func NewDataAwsGuarddutyDetector(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/guardduty_detector aws_guardduty_detector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/guardduty_detector aws_guardduty_detector} Data Source.
 func NewDataAwsGuarddutyDetector_Override(d DataAwsGuarddutyDetector, scope constructs.Construct, id *string, config *DataAwsGuarddutyDetectorConfig) {
 	_init_.Initialize()
 

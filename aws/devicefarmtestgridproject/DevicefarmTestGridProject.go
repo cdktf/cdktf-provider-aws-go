@@ -2,14 +2,14 @@ package devicefarmtestgridproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/devicefarmtestgridproject/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/devicefarmtestgridproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/devicefarm_test_grid_project aws_devicefarm_test_grid_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/devicefarm_test_grid_project aws_devicefarm_test_grid_project}.
 type DevicefarmTestGridProject interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -416,7 +416,7 @@ func (j *jsiiProxy_DevicefarmTestGridProject) VpcConfigInput() *DevicefarmTestGr
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/devicefarm_test_grid_project aws_devicefarm_test_grid_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/devicefarm_test_grid_project aws_devicefarm_test_grid_project} Resource.
 func NewDevicefarmTestGridProject(scope constructs.Construct, id *string, config *DevicefarmTestGridProjectConfig) DevicefarmTestGridProject {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewDevicefarmTestGridProject(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/devicefarm_test_grid_project aws_devicefarm_test_grid_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/devicefarm_test_grid_project aws_devicefarm_test_grid_project} Resource.
 func NewDevicefarmTestGridProject_Override(d DevicefarmTestGridProject, scope constructs.Construct, id *string, config *DevicefarmTestGridProjectConfig) {
 	_init_.Initialize()
 

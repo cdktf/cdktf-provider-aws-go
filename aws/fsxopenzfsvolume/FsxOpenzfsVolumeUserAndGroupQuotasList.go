@@ -2,9 +2,9 @@ package fsxopenzfsvolume
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/fsxopenzfsvolume/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/fsxopenzfsvolume/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

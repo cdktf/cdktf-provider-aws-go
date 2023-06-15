@@ -2,14 +2,14 @@ package vpcipampreviewnextcidr
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/vpcipampreviewnextcidr/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/vpcipampreviewnextcidr/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/vpc_ipam_preview_next_cidr aws_vpc_ipam_preview_next_cidr}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_ipam_preview_next_cidr aws_vpc_ipam_preview_next_cidr}.
 type VpcIpamPreviewNextCidr interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_VpcIpamPreviewNextCidr) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/vpc_ipam_preview_next_cidr aws_vpc_ipam_preview_next_cidr} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_ipam_preview_next_cidr aws_vpc_ipam_preview_next_cidr} Resource.
 func NewVpcIpamPreviewNextCidr(scope constructs.Construct, id *string, config *VpcIpamPreviewNextCidrConfig) VpcIpamPreviewNextCidr {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewVpcIpamPreviewNextCidr(scope constructs.Construct, id *string, config *V
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/vpc_ipam_preview_next_cidr aws_vpc_ipam_preview_next_cidr} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_ipam_preview_next_cidr aws_vpc_ipam_preview_next_cidr} Resource.
 func NewVpcIpamPreviewNextCidr_Override(v VpcIpamPreviewNextCidr, scope constructs.Construct, id *string, config *VpcIpamPreviewNextCidrConfig) {
 	_init_.Initialize()
 

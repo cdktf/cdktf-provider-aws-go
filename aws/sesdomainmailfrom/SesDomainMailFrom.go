@@ -2,14 +2,14 @@ package sesdomainmailfrom
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/sesdomainmailfrom/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesdomainmailfrom/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ses_domain_mail_from aws_ses_domain_mail_from}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ses_domain_mail_from aws_ses_domain_mail_from}.
 type SesDomainMailFrom interface {
 	cdktf.TerraformResource
 	BehaviorOnMxFailure() *string
@@ -356,7 +356,7 @@ func (j *jsiiProxy_SesDomainMailFrom) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ses_domain_mail_from aws_ses_domain_mail_from} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ses_domain_mail_from aws_ses_domain_mail_from} Resource.
 func NewSesDomainMailFrom(scope constructs.Construct, id *string, config *SesDomainMailFromConfig) SesDomainMailFrom {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewSesDomainMailFrom(scope constructs.Construct, id *string, config *SesDom
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ses_domain_mail_from aws_ses_domain_mail_from} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ses_domain_mail_from aws_ses_domain_mail_from} Resource.
 func NewSesDomainMailFrom_Override(s SesDomainMailFrom, scope constructs.Construct, id *string, config *SesDomainMailFromConfig) {
 	_init_.Initialize()
 

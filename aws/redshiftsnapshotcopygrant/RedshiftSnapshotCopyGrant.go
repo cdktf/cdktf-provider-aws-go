@@ -2,14 +2,14 @@ package redshiftsnapshotcopygrant
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/redshiftsnapshotcopygrant/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/redshiftsnapshotcopygrant/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/redshift_snapshot_copy_grant aws_redshift_snapshot_copy_grant}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/redshift_snapshot_copy_grant aws_redshift_snapshot_copy_grant}.
 type RedshiftSnapshotCopyGrant interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -392,7 +392,7 @@ func (j *jsiiProxy_RedshiftSnapshotCopyGrant) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/redshift_snapshot_copy_grant aws_redshift_snapshot_copy_grant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/redshift_snapshot_copy_grant aws_redshift_snapshot_copy_grant} Resource.
 func NewRedshiftSnapshotCopyGrant(scope constructs.Construct, id *string, config *RedshiftSnapshotCopyGrantConfig) RedshiftSnapshotCopyGrant {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewRedshiftSnapshotCopyGrant(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/redshift_snapshot_copy_grant aws_redshift_snapshot_copy_grant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/redshift_snapshot_copy_grant aws_redshift_snapshot_copy_grant} Resource.
 func NewRedshiftSnapshotCopyGrant_Override(r RedshiftSnapshotCopyGrant, scope constructs.Construct, id *string, config *RedshiftSnapshotCopyGrantConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package acmcertificatevalidation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/acmcertificatevalidation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/acmcertificatevalidation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/acm_certificate_validation aws_acm_certificate_validation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/acm_certificate_validation aws_acm_certificate_validation}.
 type AcmCertificateValidation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_AcmCertificateValidation) ValidationRecordFqdnsInput() *[]*st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/acm_certificate_validation aws_acm_certificate_validation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/acm_certificate_validation aws_acm_certificate_validation} Resource.
 func NewAcmCertificateValidation(scope constructs.Construct, id *string, config *AcmCertificateValidationConfig) AcmCertificateValidation {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewAcmCertificateValidation(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/acm_certificate_validation aws_acm_certificate_validation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/acm_certificate_validation aws_acm_certificate_validation} Resource.
 func NewAcmCertificateValidation_Override(a AcmCertificateValidation, scope constructs.Construct, id *string, config *AcmCertificateValidationConfig) {
 	_init_.Initialize()
 

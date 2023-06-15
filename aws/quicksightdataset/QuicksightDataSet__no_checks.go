@@ -80,6 +80,10 @@ func (q *jsiiProxy_QuicksightDataSet) validatePutPhysicalTableMapParameters(valu
 	return nil
 }
 
+func (q *jsiiProxy_QuicksightDataSet) validatePutRefreshPropertiesParameters(value *QuicksightDataSetRefreshProperties) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightDataSet) validatePutRowLevelPermissionDataSetParameters(value *QuicksightDataSetRowLevelPermissionDataSet) error {
 	return nil
 }

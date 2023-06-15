@@ -2,14 +2,14 @@ package medialivechannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/medialivechannel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/medialivechannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/medialive_channel aws_medialive_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/medialive_channel aws_medialive_channel}.
 type MedialiveChannel interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -662,7 +662,7 @@ func (j *jsiiProxy_MedialiveChannel) VpcInput() *MedialiveChannelVpc {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/medialive_channel aws_medialive_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/medialive_channel aws_medialive_channel} Resource.
 func NewMedialiveChannel(scope constructs.Construct, id *string, config *MedialiveChannelConfig) MedialiveChannel {
 	_init_.Initialize()
 
@@ -680,7 +680,7 @@ func NewMedialiveChannel(scope constructs.Construct, id *string, config *Mediali
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/medialive_channel aws_medialive_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/medialive_channel aws_medialive_channel} Resource.
 func NewMedialiveChannel_Override(m MedialiveChannel, scope constructs.Construct, id *string, config *MedialiveChannelConfig) {
 	_init_.Initialize()
 

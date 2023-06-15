@@ -2,14 +2,14 @@ package dataawsec2coippools
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsec2coippools/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsec2coippools/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_coip_pools aws_ec2_coip_pools}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_coip_pools aws_ec2_coip_pools}.
 type DataAwsEc2CoipPools interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DataAwsEc2CoipPools) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_coip_pools aws_ec2_coip_pools} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_coip_pools aws_ec2_coip_pools} Data Source.
 func NewDataAwsEc2CoipPools(scope constructs.Construct, id *string, config *DataAwsEc2CoipPoolsConfig) DataAwsEc2CoipPools {
 	_init_.Initialize()
 
@@ -359,7 +359,7 @@ func NewDataAwsEc2CoipPools(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_coip_pools aws_ec2_coip_pools} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_coip_pools aws_ec2_coip_pools} Data Source.
 func NewDataAwsEc2CoipPools_Override(d DataAwsEc2CoipPools, scope constructs.Construct, id *string, config *DataAwsEc2CoipPoolsConfig) {
 	_init_.Initialize()
 

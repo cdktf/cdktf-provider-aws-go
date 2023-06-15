@@ -2,14 +2,14 @@ package cognitouserpooluicustomization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/cognitouserpooluicustomization/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/cognitouserpooluicustomization/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cognito_user_pool_ui_customization aws_cognito_user_pool_ui_customization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cognito_user_pool_ui_customization aws_cognito_user_pool_ui_customization}.
 type CognitoUserPoolUiCustomization interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_CognitoUserPoolUiCustomization) UserPoolIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cognito_user_pool_ui_customization aws_cognito_user_pool_ui_customization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cognito_user_pool_ui_customization aws_cognito_user_pool_ui_customization} Resource.
 func NewCognitoUserPoolUiCustomization(scope constructs.Construct, id *string, config *CognitoUserPoolUiCustomizationConfig) CognitoUserPoolUiCustomization {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewCognitoUserPoolUiCustomization(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cognito_user_pool_ui_customization aws_cognito_user_pool_ui_customization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cognito_user_pool_ui_customization aws_cognito_user_pool_ui_customization} Resource.
 func NewCognitoUserPoolUiCustomization_Override(c CognitoUserPoolUiCustomization, scope constructs.Construct, id *string, config *CognitoUserPoolUiCustomizationConfig) {
 	_init_.Initialize()
 

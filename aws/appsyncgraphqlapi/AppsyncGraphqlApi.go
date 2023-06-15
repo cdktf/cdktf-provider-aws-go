@@ -2,14 +2,14 @@ package appsyncgraphqlapi
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/appsyncgraphqlapi/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/appsyncgraphqlapi/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_graphql_api aws_appsync_graphql_api}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api}.
 type AppsyncGraphqlApi interface {
 	cdktf.TerraformResource
 	AdditionalAuthenticationProvider() AppsyncGraphqlApiAdditionalAuthenticationProviderList
@@ -570,7 +570,7 @@ func (j *jsiiProxy_AppsyncGraphqlApi) XrayEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
 func NewAppsyncGraphqlApi(scope constructs.Construct, id *string, config *AppsyncGraphqlApiConfig) AppsyncGraphqlApi {
 	_init_.Initialize()
 
@@ -588,7 +588,7 @@ func NewAppsyncGraphqlApi(scope constructs.Construct, id *string, config *Appsyn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
 func NewAppsyncGraphqlApi_Override(a AppsyncGraphqlApi, scope constructs.Construct, id *string, config *AppsyncGraphqlApiConfig) {
 	_init_.Initialize()
 

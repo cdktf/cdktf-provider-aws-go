@@ -2,14 +2,14 @@ package sqsqueueredrivepolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/sqsqueueredrivepolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/sqsqueueredrivepolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sqs_queue_redrive_policy aws_sqs_queue_redrive_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sqs_queue_redrive_policy aws_sqs_queue_redrive_policy}.
 type SqsQueueRedrivePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_SqsQueueRedrivePolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sqs_queue_redrive_policy aws_sqs_queue_redrive_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sqs_queue_redrive_policy aws_sqs_queue_redrive_policy} Resource.
 func NewSqsQueueRedrivePolicy(scope constructs.Construct, id *string, config *SqsQueueRedrivePolicyConfig) SqsQueueRedrivePolicy {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewSqsQueueRedrivePolicy(scope constructs.Construct, id *string, config *Sq
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sqs_queue_redrive_policy aws_sqs_queue_redrive_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sqs_queue_redrive_policy aws_sqs_queue_redrive_policy} Resource.
 func NewSqsQueueRedrivePolicy_Override(s SqsQueueRedrivePolicy, scope constructs.Construct, id *string, config *SqsQueueRedrivePolicyConfig) {
 	_init_.Initialize()
 

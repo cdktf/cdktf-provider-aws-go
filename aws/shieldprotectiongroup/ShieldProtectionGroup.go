@@ -2,14 +2,14 @@ package shieldprotectiongroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/shieldprotectiongroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/shieldprotectiongroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/shield_protection_group aws_shield_protection_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group aws_shield_protection_group}.
 type ShieldProtectionGroup interface {
 	cdktf.TerraformResource
 	Aggregation() *string
@@ -462,7 +462,7 @@ func (j *jsiiProxy_ShieldProtectionGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/shield_protection_group aws_shield_protection_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group aws_shield_protection_group} Resource.
 func NewShieldProtectionGroup(scope constructs.Construct, id *string, config *ShieldProtectionGroupConfig) ShieldProtectionGroup {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewShieldProtectionGroup(scope constructs.Construct, id *string, config *Sh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/shield_protection_group aws_shield_protection_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/shield_protection_group aws_shield_protection_group} Resource.
 func NewShieldProtectionGroup_Override(s ShieldProtectionGroup, scope constructs.Construct, id *string, config *ShieldProtectionGroupConfig) {
 	_init_.Initialize()
 

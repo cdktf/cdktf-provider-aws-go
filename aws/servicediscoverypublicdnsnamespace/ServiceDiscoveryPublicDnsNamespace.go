@@ -2,14 +2,14 @@ package servicediscoverypublicdnsnamespace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/servicediscoverypublicdnsnamespace/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/servicediscoverypublicdnsnamespace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/service_discovery_public_dns_namespace aws_service_discovery_public_dns_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/service_discovery_public_dns_namespace aws_service_discovery_public_dns_namespace}.
 type ServiceDiscoveryPublicDnsNamespace interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_ServiceDiscoveryPublicDnsNamespace) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/service_discovery_public_dns_namespace aws_service_discovery_public_dns_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/service_discovery_public_dns_namespace aws_service_discovery_public_dns_namespace} Resource.
 func NewServiceDiscoveryPublicDnsNamespace(scope constructs.Construct, id *string, config *ServiceDiscoveryPublicDnsNamespaceConfig) ServiceDiscoveryPublicDnsNamespace {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewServiceDiscoveryPublicDnsNamespace(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/service_discovery_public_dns_namespace aws_service_discovery_public_dns_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/service_discovery_public_dns_namespace aws_service_discovery_public_dns_namespace} Resource.
 func NewServiceDiscoveryPublicDnsNamespace_Override(s ServiceDiscoveryPublicDnsNamespace, scope constructs.Construct, id *string, config *ServiceDiscoveryPublicDnsNamespaceConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package gluecatalogtable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/gluecatalogtable/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/gluecatalogtable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/glue_catalog_table aws_glue_catalog_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/glue_catalog_table aws_glue_catalog_table}.
 type GlueCatalogTable interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -631,7 +631,7 @@ func (j *jsiiProxy_GlueCatalogTable) ViewOriginalTextInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/glue_catalog_table aws_glue_catalog_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/glue_catalog_table aws_glue_catalog_table} Resource.
 func NewGlueCatalogTable(scope constructs.Construct, id *string, config *GlueCatalogTableConfig) GlueCatalogTable {
 	_init_.Initialize()
 
@@ -649,7 +649,7 @@ func NewGlueCatalogTable(scope constructs.Construct, id *string, config *GlueCat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/glue_catalog_table aws_glue_catalog_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/glue_catalog_table aws_glue_catalog_table} Resource.
 func NewGlueCatalogTable_Override(g GlueCatalogTable, scope constructs.Construct, id *string, config *GlueCatalogTableConfig) {
 	_init_.Initialize()
 

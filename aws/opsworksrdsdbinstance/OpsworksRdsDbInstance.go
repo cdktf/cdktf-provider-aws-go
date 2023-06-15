@@ -2,14 +2,14 @@ package opsworksrdsdbinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/opsworksrdsdbinstance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworksrdsdbinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_rds_db_instance aws_opsworks_rds_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_rds_db_instance aws_opsworks_rds_db_instance}.
 type OpsworksRdsDbInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -378,7 +378,7 @@ func (j *jsiiProxy_OpsworksRdsDbInstance) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_rds_db_instance aws_opsworks_rds_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_rds_db_instance aws_opsworks_rds_db_instance} Resource.
 func NewOpsworksRdsDbInstance(scope constructs.Construct, id *string, config *OpsworksRdsDbInstanceConfig) OpsworksRdsDbInstance {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewOpsworksRdsDbInstance(scope constructs.Construct, id *string, config *Op
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_rds_db_instance aws_opsworks_rds_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_rds_db_instance aws_opsworks_rds_db_instance} Resource.
 func NewOpsworksRdsDbInstance_Override(o OpsworksRdsDbInstance, scope constructs.Construct, id *string, config *OpsworksRdsDbInstanceConfig) {
 	_init_.Initialize()
 

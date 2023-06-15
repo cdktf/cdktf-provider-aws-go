@@ -2,7 +2,7 @@ package medialivechannel
 
 
 type MedialiveChannelEncoderSettingsOutputGroupsOutputsOutputSettingsUdpOutputSettingsContainerSettingsM2TsSettingsDvbTdtSettings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/medialive_channel#rep_interval MedialiveChannel#rep_interval}.
 	RepInterval *float64 `field:"optional" json:"repInterval" yaml:"repInterval"`
 }
 

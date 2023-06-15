@@ -2,14 +2,14 @@ package dataawsredshiftcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsredshiftcluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsredshiftcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/redshift_cluster aws_redshift_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/redshift_cluster aws_redshift_cluster}.
 type DataAwsRedshiftCluster interface {
 	cdktf.TerraformDataSource
 	AllowVersionUpgrade() cdktf.IResolvable
@@ -712,7 +712,7 @@ func (j *jsiiProxy_DataAwsRedshiftCluster) VpcSecurityGroupIds() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/redshift_cluster aws_redshift_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/redshift_cluster aws_redshift_cluster} Data Source.
 func NewDataAwsRedshiftCluster(scope constructs.Construct, id *string, config *DataAwsRedshiftClusterConfig) DataAwsRedshiftCluster {
 	_init_.Initialize()
 
@@ -730,7 +730,7 @@ func NewDataAwsRedshiftCluster(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/redshift_cluster aws_redshift_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/redshift_cluster aws_redshift_cluster} Data Source.
 func NewDataAwsRedshiftCluster_Override(d DataAwsRedshiftCluster, scope constructs.Construct, id *string, config *DataAwsRedshiftClusterConfig) {
 	_init_.Initialize()
 

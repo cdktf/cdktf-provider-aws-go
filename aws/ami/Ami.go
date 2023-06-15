@@ -2,14 +2,14 @@ package ami
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ami/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/ami/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami aws_ami}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami aws_ami}.
 type Ami interface {
 	cdktf.TerraformResource
 	Architecture() *string
@@ -862,7 +862,7 @@ func (j *jsiiProxy_Ami) VirtualizationTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami aws_ami} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami aws_ami} Resource.
 func NewAmi(scope constructs.Construct, id *string, config *AmiConfig) Ami {
 	_init_.Initialize()
 
@@ -880,7 +880,7 @@ func NewAmi(scope constructs.Construct, id *string, config *AmiConfig) Ami {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami aws_ami} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami aws_ami} Resource.
 func NewAmi_Override(a Ami, scope constructs.Construct, id *string, config *AmiConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package neptuneclusterendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/neptuneclusterendpoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/neptuneclusterendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/neptune_cluster_endpoint aws_neptune_cluster_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/neptune_cluster_endpoint aws_neptune_cluster_endpoint}.
 type NeptuneClusterEndpoint interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -473,7 +473,7 @@ func (j *jsiiProxy_NeptuneClusterEndpoint) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/neptune_cluster_endpoint aws_neptune_cluster_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/neptune_cluster_endpoint aws_neptune_cluster_endpoint} Resource.
 func NewNeptuneClusterEndpoint(scope constructs.Construct, id *string, config *NeptuneClusterEndpointConfig) NeptuneClusterEndpoint {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewNeptuneClusterEndpoint(scope constructs.Construct, id *string, config *N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/neptune_cluster_endpoint aws_neptune_cluster_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/neptune_cluster_endpoint aws_neptune_cluster_endpoint} Resource.
 func NewNeptuneClusterEndpoint_Override(n NeptuneClusterEndpoint, scope constructs.Construct, id *string, config *NeptuneClusterEndpointConfig) {
 	_init_.Initialize()
 

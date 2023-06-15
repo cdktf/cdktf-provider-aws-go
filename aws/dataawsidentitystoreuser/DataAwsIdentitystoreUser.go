@@ -2,14 +2,14 @@ package dataawsidentitystoreuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsidentitystoreuser/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsidentitystoreuser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/identitystore_user aws_identitystore_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/identitystore_user aws_identitystore_user}.
 type DataAwsIdentitystoreUser interface {
 	cdktf.TerraformDataSource
 	Addresses() DataAwsIdentitystoreUserAddressesList
@@ -507,7 +507,7 @@ func (j *jsiiProxy_DataAwsIdentitystoreUser) UserType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/identitystore_user aws_identitystore_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/identitystore_user aws_identitystore_user} Data Source.
 func NewDataAwsIdentitystoreUser(scope constructs.Construct, id *string, config *DataAwsIdentitystoreUserConfig) DataAwsIdentitystoreUser {
 	_init_.Initialize()
 
@@ -525,7 +525,7 @@ func NewDataAwsIdentitystoreUser(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/identitystore_user aws_identitystore_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/identitystore_user aws_identitystore_user} Data Source.
 func NewDataAwsIdentitystoreUser_Override(d DataAwsIdentitystoreUser, scope constructs.Construct, id *string, config *DataAwsIdentitystoreUserConfig) {
 	_init_.Initialize()
 

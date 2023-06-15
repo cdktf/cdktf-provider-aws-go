@@ -2,14 +2,14 @@ package elasticsearchdomainsamloptions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/elasticsearchdomainsamloptions/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/elasticsearchdomainsamloptions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/elasticsearch_domain_saml_options aws_elasticsearch_domain_saml_options}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elasticsearch_domain_saml_options aws_elasticsearch_domain_saml_options}.
 type ElasticsearchDomainSamlOptions interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/elasticsearch_domain_saml_options aws_elasticsearch_domain_saml_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elasticsearch_domain_saml_options aws_elasticsearch_domain_saml_options} Resource.
 func NewElasticsearchDomainSamlOptions(scope constructs.Construct, id *string, config *ElasticsearchDomainSamlOptionsConfig) ElasticsearchDomainSamlOptions {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewElasticsearchDomainSamlOptions(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/elasticsearch_domain_saml_options aws_elasticsearch_domain_saml_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elasticsearch_domain_saml_options aws_elasticsearch_domain_saml_options} Resource.
 func NewElasticsearchDomainSamlOptions_Override(e ElasticsearchDomainSamlOptions, scope constructs.Construct, id *string, config *ElasticsearchDomainSamlOptionsConfig) {
 	_init_.Initialize()
 

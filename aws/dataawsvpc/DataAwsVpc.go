@@ -2,14 +2,14 @@ package dataawsvpc
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsvpc/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsvpc/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/vpc aws_vpc}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/vpc aws_vpc}.
 type DataAwsVpc interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -536,7 +536,7 @@ func (j *jsiiProxy_DataAwsVpc) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/vpc aws_vpc} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/vpc aws_vpc} Data Source.
 func NewDataAwsVpc(scope constructs.Construct, id *string, config *DataAwsVpcConfig) DataAwsVpc {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewDataAwsVpc(scope constructs.Construct, id *string, config *DataAwsVpcCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/vpc aws_vpc} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/vpc aws_vpc} Data Source.
 func NewDataAwsVpc_Override(d DataAwsVpc, scope constructs.Construct, id *string, config *DataAwsVpcConfig) {
 	_init_.Initialize()
 

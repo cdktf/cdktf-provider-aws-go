@@ -2,9 +2,9 @@ package cloudwatchmetricstream
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatchmetricstream/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/cloudwatchmetricstream/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -29,6 +29,9 @@ type CloudwatchMetricStreamExcludeFilterOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	MetricNames() *[]*string
+	SetMetricNames(val *[]*string)
+	MetricNamesInput() *[]*string
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -64,6 +67,7 @@ type CloudwatchMetricStreamExcludeFilterOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMetricNames()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -124,6 +128,26 @@ func (j *jsiiProxy_CloudwatchMetricStreamExcludeFilterOutputReference) InternalV
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricStreamExcludeFilterOutputReference) MetricNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"metricNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchMetricStreamExcludeFilterOutputReference) MetricNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"metricNamesInput",
 		&returns,
 	)
 	return returns
@@ -226,6 +250,17 @@ func (j *jsiiProxy_CloudwatchMetricStreamExcludeFilterOutputReference)SetInterna
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchMetricStreamExcludeFilterOutputReference)SetMetricNames(val *[]*string) {
+	if err := j.validateSetMetricNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metricNames",
 		val,
 	)
 }
@@ -447,6 +482,14 @@ func (c *jsiiProxy_CloudwatchMetricStreamExcludeFilterOutputReference) Interpola
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CloudwatchMetricStreamExcludeFilterOutputReference) ResetMetricNames() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetMetricNames",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CloudwatchMetricStreamExcludeFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

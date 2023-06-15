@@ -2,14 +2,14 @@ package apigatewayusageplan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/apigatewayusageplan/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/apigatewayusageplan/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/api_gateway_usage_plan aws_api_gateway_usage_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/api_gateway_usage_plan aws_api_gateway_usage_plan}.
 type ApiGatewayUsagePlan interface {
 	cdktf.TerraformResource
 	ApiStages() ApiGatewayUsagePlanApiStagesList
@@ -488,7 +488,7 @@ func (j *jsiiProxy_ApiGatewayUsagePlan) ThrottleSettingsInput() *ApiGatewayUsage
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/api_gateway_usage_plan aws_api_gateway_usage_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/api_gateway_usage_plan aws_api_gateway_usage_plan} Resource.
 func NewApiGatewayUsagePlan(scope constructs.Construct, id *string, config *ApiGatewayUsagePlanConfig) ApiGatewayUsagePlan {
 	_init_.Initialize()
 
@@ -506,7 +506,7 @@ func NewApiGatewayUsagePlan(scope constructs.Construct, id *string, config *ApiG
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/api_gateway_usage_plan aws_api_gateway_usage_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/api_gateway_usage_plan aws_api_gateway_usage_plan} Resource.
 func NewApiGatewayUsagePlan_Override(a ApiGatewayUsagePlan, scope constructs.Construct, id *string, config *ApiGatewayUsagePlanConfig) {
 	_init_.Initialize()
 

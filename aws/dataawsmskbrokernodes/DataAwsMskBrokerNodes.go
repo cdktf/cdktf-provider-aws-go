@@ -2,14 +2,14 @@ package dataawsmskbrokernodes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsmskbrokernodes/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsmskbrokernodes/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/msk_broker_nodes aws_msk_broker_nodes}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/msk_broker_nodes aws_msk_broker_nodes}.
 type DataAwsMskBrokerNodes interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -44,7 +44,7 @@ type DataAwsMskBrokerNodes interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	NodeInfoList() DataAwsMskBrokerNodesNodeInfoListList
+	NodeInfoList() DataAwsMskBrokerNodesNodeInfoListStructList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -231,8 +231,8 @@ func (j *jsiiProxy_DataAwsMskBrokerNodes) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsMskBrokerNodes) NodeInfoList() DataAwsMskBrokerNodesNodeInfoListList {
-	var returns DataAwsMskBrokerNodesNodeInfoListList
+func (j *jsiiProxy_DataAwsMskBrokerNodes) NodeInfoList() DataAwsMskBrokerNodesNodeInfoListStructList {
+	var returns DataAwsMskBrokerNodesNodeInfoListStructList
 	_jsii_.Get(
 		j,
 		"nodeInfoList",
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataAwsMskBrokerNodes) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/msk_broker_nodes aws_msk_broker_nodes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/msk_broker_nodes aws_msk_broker_nodes} Data Source.
 func NewDataAwsMskBrokerNodes(scope constructs.Construct, id *string, config *DataAwsMskBrokerNodesConfig) DataAwsMskBrokerNodes {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataAwsMskBrokerNodes(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/msk_broker_nodes aws_msk_broker_nodes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/msk_broker_nodes aws_msk_broker_nodes} Data Source.
 func NewDataAwsMskBrokerNodes_Override(d DataAwsMskBrokerNodes, scope constructs.Construct, id *string, config *DataAwsMskBrokerNodesConfig) {
 	_init_.Initialize()
 

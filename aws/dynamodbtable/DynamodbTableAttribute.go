@@ -2,9 +2,9 @@ package dynamodbtable
 
 
 type DynamodbTableAttribute struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dynamodb_table#name DynamodbTable#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dynamodb_table#name DynamodbTable#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dynamodb_table#type DynamodbTable#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dynamodb_table#type DynamodbTable#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

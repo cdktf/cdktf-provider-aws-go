@@ -90,7 +90,7 @@ func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference) 
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference) validatePutRulesSourceListParameters(value *NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceList) error {
+func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference) validatePutRulesSourceListParameters(value *NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStruct) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

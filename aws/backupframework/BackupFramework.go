@@ -2,14 +2,14 @@ package backupframework
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/backupframework/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/backupframework/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/backup_framework aws_backup_framework}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/backup_framework aws_backup_framework}.
 type BackupFramework interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -472,7 +472,7 @@ func (j *jsiiProxy_BackupFramework) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/backup_framework aws_backup_framework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/backup_framework aws_backup_framework} Resource.
 func NewBackupFramework(scope constructs.Construct, id *string, config *BackupFrameworkConfig) BackupFramework {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewBackupFramework(scope constructs.Construct, id *string, config *BackupFr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/backup_framework aws_backup_framework} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/backup_framework aws_backup_framework} Resource.
 func NewBackupFramework_Override(b BackupFramework, scope constructs.Construct, id *string, config *BackupFrameworkConfig) {
 	_init_.Initialize()
 

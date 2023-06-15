@@ -2,14 +2,14 @@ package amplifydomainassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/amplifydomainassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/amplifydomainassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/amplify_domain_association aws_amplify_domain_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/amplify_domain_association aws_amplify_domain_association}.
 type AmplifyDomainAssociation interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -425,7 +425,7 @@ func (j *jsiiProxy_AmplifyDomainAssociation) WaitForVerificationInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/amplify_domain_association aws_amplify_domain_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/amplify_domain_association aws_amplify_domain_association} Resource.
 func NewAmplifyDomainAssociation(scope constructs.Construct, id *string, config *AmplifyDomainAssociationConfig) AmplifyDomainAssociation {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewAmplifyDomainAssociation(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/amplify_domain_association aws_amplify_domain_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/amplify_domain_association aws_amplify_domain_association} Resource.
 func NewAmplifyDomainAssociation_Override(a AmplifyDomainAssociation, scope constructs.Construct, id *string, config *AmplifyDomainAssociationConfig) {
 	_init_.Initialize()
 

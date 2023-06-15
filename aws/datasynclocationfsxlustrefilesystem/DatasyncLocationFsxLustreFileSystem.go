@@ -2,14 +2,14 @@ package datasynclocationfsxlustrefilesystem
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/datasynclocationfsxlustrefilesystem/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/datasynclocationfsxlustrefilesystem/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/datasync_location_fsx_lustre_file_system aws_datasync_location_fsx_lustre_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/datasync_location_fsx_lustre_file_system aws_datasync_location_fsx_lustre_file_system}.
 type DatasyncLocationFsxLustreFileSystem interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -437,7 +437,7 @@ func (j *jsiiProxy_DatasyncLocationFsxLustreFileSystem) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/datasync_location_fsx_lustre_file_system aws_datasync_location_fsx_lustre_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/datasync_location_fsx_lustre_file_system aws_datasync_location_fsx_lustre_file_system} Resource.
 func NewDatasyncLocationFsxLustreFileSystem(scope constructs.Construct, id *string, config *DatasyncLocationFsxLustreFileSystemConfig) DatasyncLocationFsxLustreFileSystem {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewDatasyncLocationFsxLustreFileSystem(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/datasync_location_fsx_lustre_file_system aws_datasync_location_fsx_lustre_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/datasync_location_fsx_lustre_file_system aws_datasync_location_fsx_lustre_file_system} Resource.
 func NewDatasyncLocationFsxLustreFileSystem_Override(d DatasyncLocationFsxLustreFileSystem, scope constructs.Construct, id *string, config *DatasyncLocationFsxLustreFileSystemConfig) {
 	_init_.Initialize()
 

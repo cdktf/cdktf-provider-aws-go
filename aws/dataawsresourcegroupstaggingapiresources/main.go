@@ -74,10 +74,6 @@ func init() {
 		reflect.TypeOf((*DataAwsResourcegroupstaggingapiResourcesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResourcesResourceTagMappingList",
-		reflect.TypeOf((*DataAwsResourcegroupstaggingapiResourcesResourceTagMappingList)(nil)).Elem(),
-	)
-	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListComplianceDetails",
 		reflect.TypeOf((*DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListComplianceDetails)(nil)).Elem(),
 	)
@@ -136,9 +132,13 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStruct",
+		reflect.TypeOf((*DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStruct)(nil)).Elem(),
+	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListList",
-		reflect.TypeOf((*DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListList)(nil)).Elem(),
+		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructList",
+		reflect.TypeOf((*DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -151,14 +151,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListList{}
+			j := jsiiProxy_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListOutputReference",
-		reflect.TypeOf((*DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListOutputReference)(nil)).Elem(),
+		"@cdktf/provider-aws.dataAwsResourcegroupstaggingapiResources.DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructOutputReference",
+		reflect.TypeOf((*DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -186,7 +186,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListOutputReference{}
+			j := jsiiProxy_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

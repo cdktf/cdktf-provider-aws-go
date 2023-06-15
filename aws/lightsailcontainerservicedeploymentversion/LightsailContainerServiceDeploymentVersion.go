@@ -2,14 +2,14 @@ package lightsailcontainerservicedeploymentversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/lightsailcontainerservicedeploymentversion/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/lightsailcontainerservicedeploymentversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/lightsail_container_service_deployment_version aws_lightsail_container_service_deployment_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lightsail_container_service_deployment_version aws_lightsail_container_service_deployment_version}.
 type LightsailContainerServiceDeploymentVersion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_LightsailContainerServiceDeploymentVersion) Version() *float6
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/lightsail_container_service_deployment_version aws_lightsail_container_service_deployment_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lightsail_container_service_deployment_version aws_lightsail_container_service_deployment_version} Resource.
 func NewLightsailContainerServiceDeploymentVersion(scope constructs.Construct, id *string, config *LightsailContainerServiceDeploymentVersionConfig) LightsailContainerServiceDeploymentVersion {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewLightsailContainerServiceDeploymentVersion(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/lightsail_container_service_deployment_version aws_lightsail_container_service_deployment_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lightsail_container_service_deployment_version aws_lightsail_container_service_deployment_version} Resource.
 func NewLightsailContainerServiceDeploymentVersion_Override(l LightsailContainerServiceDeploymentVersion, scope constructs.Construct, id *string, config *LightsailContainerServiceDeploymentVersionConfig) {
 	_init_.Initialize()
 

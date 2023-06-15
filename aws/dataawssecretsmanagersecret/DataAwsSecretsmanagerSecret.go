@@ -2,14 +2,14 @@ package dataawssecretsmanagersecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssecretsmanagersecret/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawssecretsmanagersecret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/secretsmanager_secret aws_secretsmanager_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/secretsmanager_secret aws_secretsmanager_secret}.
 type DataAwsSecretsmanagerSecret interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecret) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/secretsmanager_secret aws_secretsmanager_secret} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/secretsmanager_secret aws_secretsmanager_secret} Data Source.
 func NewDataAwsSecretsmanagerSecret(scope constructs.Construct, id *string, config *DataAwsSecretsmanagerSecretConfig) DataAwsSecretsmanagerSecret {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewDataAwsSecretsmanagerSecret(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/secretsmanager_secret aws_secretsmanager_secret} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/secretsmanager_secret aws_secretsmanager_secret} Data Source.
 func NewDataAwsSecretsmanagerSecret_Override(d DataAwsSecretsmanagerSecret, scope constructs.Construct, id *string, config *DataAwsSecretsmanagerSecretConfig) {
 	_init_.Initialize()
 

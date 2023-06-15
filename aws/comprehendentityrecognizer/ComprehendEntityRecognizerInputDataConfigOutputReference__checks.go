@@ -143,7 +143,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) validatePutEntityListParameters(value *ComprehendEntityRecognizerInputDataConfigEntityList) error {
+func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) validatePutEntityListParameters(value *ComprehendEntityRecognizerInputDataConfigEntityListStruct) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

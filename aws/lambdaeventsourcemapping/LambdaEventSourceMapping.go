@@ -2,14 +2,14 @@ package lambdaeventsourcemapping
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/lambdaeventsourcemapping/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/lambdaeventsourcemapping/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping}.
 type LambdaEventSourceMapping interface {
 	cdktf.TerraformResource
 	AmazonManagedKafkaEventSourceConfig() LambdaEventSourceMappingAmazonManagedKafkaEventSourceConfigOutputReference
@@ -903,7 +903,7 @@ func (j *jsiiProxy_LambdaEventSourceMapping) Uuid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
 func NewLambdaEventSourceMapping(scope constructs.Construct, id *string, config *LambdaEventSourceMappingConfig) LambdaEventSourceMapping {
 	_init_.Initialize()
 
@@ -921,7 +921,7 @@ func NewLambdaEventSourceMapping(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lambda_event_source_mapping aws_lambda_event_source_mapping} Resource.
 func NewLambdaEventSourceMapping_Override(l LambdaEventSourceMapping, scope constructs.Construct, id *string, config *LambdaEventSourceMappingConfig) {
 	_init_.Initialize()
 

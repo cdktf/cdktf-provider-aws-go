@@ -2,14 +2,14 @@ package mskconnectcustomplugin
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/mskconnectcustomplugin/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/mskconnectcustomplugin/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/mskconnect_custom_plugin aws_mskconnect_custom_plugin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/mskconnect_custom_plugin aws_mskconnect_custom_plugin}.
 type MskconnectCustomPlugin interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -436,7 +436,7 @@ func (j *jsiiProxy_MskconnectCustomPlugin) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/mskconnect_custom_plugin aws_mskconnect_custom_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/mskconnect_custom_plugin aws_mskconnect_custom_plugin} Resource.
 func NewMskconnectCustomPlugin(scope constructs.Construct, id *string, config *MskconnectCustomPluginConfig) MskconnectCustomPlugin {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewMskconnectCustomPlugin(scope constructs.Construct, id *string, config *M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/mskconnect_custom_plugin aws_mskconnect_custom_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/mskconnect_custom_plugin aws_mskconnect_custom_plugin} Resource.
 func NewMskconnectCustomPlugin_Override(m MskconnectCustomPlugin, scope constructs.Construct, id *string, config *MskconnectCustomPluginConfig) {
 	_init_.Initialize()
 

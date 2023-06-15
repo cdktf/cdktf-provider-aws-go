@@ -2,14 +2,14 @@ package redshiftserverlessworkgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/redshiftserverlessworkgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/redshiftserverlessworkgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup}.
 type RedshiftserverlessWorkgroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -581,7 +581,7 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup) WorkgroupNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource.
 func NewRedshiftserverlessWorkgroup(scope constructs.Construct, id *string, config *RedshiftserverlessWorkgroupConfig) RedshiftserverlessWorkgroup {
 	_init_.Initialize()
 
@@ -599,7 +599,7 @@ func NewRedshiftserverlessWorkgroup(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource.
 func NewRedshiftserverlessWorkgroup_Override(r RedshiftserverlessWorkgroup, scope constructs.Construct, id *string, config *RedshiftserverlessWorkgroupConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package opsworksphpapplayer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/opsworksphpapplayer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworksphpapplayer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_php_app_layer aws_opsworks_php_app_layer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_php_app_layer aws_opsworks_php_app_layer}.
 type OpsworksPhpAppLayer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -872,7 +872,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) UseEbsOptimizedInstancesInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_php_app_layer aws_opsworks_php_app_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_php_app_layer aws_opsworks_php_app_layer} Resource.
 func NewOpsworksPhpAppLayer(scope constructs.Construct, id *string, config *OpsworksPhpAppLayerConfig) OpsworksPhpAppLayer {
 	_init_.Initialize()
 
@@ -890,7 +890,7 @@ func NewOpsworksPhpAppLayer(scope constructs.Construct, id *string, config *Opsw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_php_app_layer aws_opsworks_php_app_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_php_app_layer aws_opsworks_php_app_layer} Resource.
 func NewOpsworksPhpAppLayer_Override(o OpsworksPhpAppLayer, scope constructs.Construct, id *string, config *OpsworksPhpAppLayerConfig) {
 	_init_.Initialize()
 

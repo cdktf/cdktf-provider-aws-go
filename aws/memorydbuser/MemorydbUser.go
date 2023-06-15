@@ -2,14 +2,14 @@ package memorydbuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/memorydbuser/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/memorydbuser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/memorydb_user aws_memorydb_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/memorydb_user aws_memorydb_user}.
 type MemorydbUser interface {
 	cdktf.TerraformResource
 	AccessString() *string
@@ -425,7 +425,7 @@ func (j *jsiiProxy_MemorydbUser) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/memorydb_user aws_memorydb_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/memorydb_user aws_memorydb_user} Resource.
 func NewMemorydbUser(scope constructs.Construct, id *string, config *MemorydbUserConfig) MemorydbUser {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewMemorydbUser(scope constructs.Construct, id *string, config *MemorydbUse
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/memorydb_user aws_memorydb_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/memorydb_user aws_memorydb_user} Resource.
 func NewMemorydbUser_Override(m MemorydbUser, scope constructs.Construct, id *string, config *MemorydbUserConfig) {
 	_init_.Initialize()
 

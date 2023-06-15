@@ -1248,12 +1248,12 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPrefixList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsPrefixList)(nil)).Elem(),
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPrefixListStruct",
+		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsPrefixListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPrefixListList",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsPrefixListList)(nil)).Elem(),
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPrefixListStructList",
+		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsPrefixListStructList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -1266,14 +1266,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsPrefixListList{}
+			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsPrefixListStructList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPrefixListOutputReference",
-		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsPrefixListOutputReference)(nil)).Elem(),
+		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsPrefixListStructOutputReference",
+		reflect.TypeOf((*Ec2NetworkInsightsAnalysisExplanationsPrefixListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1301,7 +1301,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsPrefixListOutputReference{}
+			j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsPrefixListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

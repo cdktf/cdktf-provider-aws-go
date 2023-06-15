@@ -2,9 +2,9 @@ package networkfirewallrulegroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallrulegroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/networkfirewallrulegroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -29,8 +29,8 @@ type NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference interface {
 	Fqn() *string
 	InternalValue() *NetworkfirewallRuleGroupRuleGroupRulesSource
 	SetInternalValue(val *NetworkfirewallRuleGroupRuleGroupRulesSource)
-	RulesSourceList() NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListOutputReference
-	RulesSourceListInput() *NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceList
+	RulesSourceList() NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStructOutputReference
+	RulesSourceListInput() *NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStruct
 	RulesString() *string
 	SetRulesString(val *string)
 	RulesStringInput() *string
@@ -70,7 +70,7 @@ type NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutRulesSourceList(value *NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceList)
+	PutRulesSourceList(value *NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStruct)
 	PutStatefulRule(value interface{})
 	PutStatelessRulesAndCustomActions(value *NetworkfirewallRuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActions)
 	ResetRulesSourceList()
@@ -142,8 +142,8 @@ func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference) RulesSourceList() NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListOutputReference {
-	var returns NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListOutputReference
+func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference) RulesSourceList() NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStructOutputReference {
+	var returns NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStructOutputReference
 	_jsii_.Get(
 		j,
 		"rulesSourceList",
@@ -152,8 +152,8 @@ func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference) RulesSourceListInput() *NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceList {
-	var returns *NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceList
+func (j *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference) RulesSourceListInput() *NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStruct {
+	var returns *NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStruct
 	_jsii_.Get(
 		j,
 		"rulesSourceListInput",
@@ -522,7 +522,7 @@ func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference) 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference) PutRulesSourceList(value *NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceList) {
+func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference) PutRulesSourceList(value *NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStruct) {
 	if err := n.validatePutRulesSourceListParameters(value); err != nil {
 		panic(err)
 	}

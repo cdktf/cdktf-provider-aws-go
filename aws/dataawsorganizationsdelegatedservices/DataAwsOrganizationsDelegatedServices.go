@@ -2,14 +2,14 @@ package dataawsorganizationsdelegatedservices
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsorganizationsdelegatedservices/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsorganizationsdelegatedservices/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/organizations_delegated_services aws_organizations_delegated_services}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/organizations_delegated_services aws_organizations_delegated_services}.
 type DataAwsOrganizationsDelegatedServices interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataAwsOrganizationsDelegatedServices) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/organizations_delegated_services aws_organizations_delegated_services} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/organizations_delegated_services aws_organizations_delegated_services} Data Source.
 func NewDataAwsOrganizationsDelegatedServices(scope constructs.Construct, id *string, config *DataAwsOrganizationsDelegatedServicesConfig) DataAwsOrganizationsDelegatedServices {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataAwsOrganizationsDelegatedServices(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/organizations_delegated_services aws_organizations_delegated_services} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/organizations_delegated_services aws_organizations_delegated_services} Data Source.
 func NewDataAwsOrganizationsDelegatedServices_Override(d DataAwsOrganizationsDelegatedServices, scope constructs.Construct, id *string, config *DataAwsOrganizationsDelegatedServicesConfig) {
 	_init_.Initialize()
 

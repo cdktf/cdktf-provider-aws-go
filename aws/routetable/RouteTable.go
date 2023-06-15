@@ -2,14 +2,14 @@ package routetable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/routetable/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/routetable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/route_table aws_route_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route_table aws_route_table}.
 type RouteTable interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -451,7 +451,7 @@ func (j *jsiiProxy_RouteTable) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/route_table aws_route_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route_table aws_route_table} Resource.
 func NewRouteTable(scope constructs.Construct, id *string, config *RouteTableConfig) RouteTable {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewRouteTable(scope constructs.Construct, id *string, config *RouteTableCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/route_table aws_route_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route_table aws_route_table} Resource.
 func NewRouteTable_Override(r RouteTable, scope constructs.Construct, id *string, config *RouteTableConfig) {
 	_init_.Initialize()
 

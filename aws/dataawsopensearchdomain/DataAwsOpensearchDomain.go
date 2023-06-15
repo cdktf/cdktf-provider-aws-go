@@ -2,14 +2,14 @@ package dataawsopensearchdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsopensearchdomain/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsopensearchdomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/opensearch_domain aws_opensearch_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/opensearch_domain aws_opensearch_domain}.
 type DataAwsOpensearchDomain interface {
 	cdktf.TerraformDataSource
 	AccessPolicies() *string
@@ -536,7 +536,7 @@ func (j *jsiiProxy_DataAwsOpensearchDomain) VpcOptions() DataAwsOpensearchDomain
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source.
 func NewDataAwsOpensearchDomain(scope constructs.Construct, id *string, config *DataAwsOpensearchDomainConfig) DataAwsOpensearchDomain {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewDataAwsOpensearchDomain(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source.
 func NewDataAwsOpensearchDomain_Override(d DataAwsOpensearchDomain, scope constructs.Construct, id *string, config *DataAwsOpensearchDomainConfig) {
 	_init_.Initialize()
 

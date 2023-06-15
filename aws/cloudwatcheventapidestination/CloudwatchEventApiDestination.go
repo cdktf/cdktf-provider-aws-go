@@ -2,14 +2,14 @@ package cloudwatcheventapidestination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudwatcheventapidestination/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/cloudwatcheventapidestination/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudwatch_event_api_destination aws_cloudwatch_event_api_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudwatch_event_api_destination aws_cloudwatch_event_api_destination}.
 type CloudwatchEventApiDestination interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -437,7 +437,7 @@ func (j *jsiiProxy_CloudwatchEventApiDestination) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudwatch_event_api_destination aws_cloudwatch_event_api_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudwatch_event_api_destination aws_cloudwatch_event_api_destination} Resource.
 func NewCloudwatchEventApiDestination(scope constructs.Construct, id *string, config *CloudwatchEventApiDestinationConfig) CloudwatchEventApiDestination {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewCloudwatchEventApiDestination(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudwatch_event_api_destination aws_cloudwatch_event_api_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudwatch_event_api_destination aws_cloudwatch_event_api_destination} Resource.
 func NewCloudwatchEventApiDestination_Override(c CloudwatchEventApiDestination, scope constructs.Construct, id *string, config *CloudwatchEventApiDestinationConfig) {
 	_init_.Initialize()
 

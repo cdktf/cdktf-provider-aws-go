@@ -2,14 +2,14 @@ package dataawssesdomainidentity
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssesdomainidentity/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawssesdomainidentity/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ses_domain_identity aws_ses_domain_identity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ses_domain_identity aws_ses_domain_identity}.
 type DataAwsSesDomainIdentity interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -303,7 +303,7 @@ func (j *jsiiProxy_DataAwsSesDomainIdentity) VerificationToken() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ses_domain_identity aws_ses_domain_identity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ses_domain_identity aws_ses_domain_identity} Data Source.
 func NewDataAwsSesDomainIdentity(scope constructs.Construct, id *string, config *DataAwsSesDomainIdentityConfig) DataAwsSesDomainIdentity {
 	_init_.Initialize()
 
@@ -321,7 +321,7 @@ func NewDataAwsSesDomainIdentity(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ses_domain_identity aws_ses_domain_identity} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ses_domain_identity aws_ses_domain_identity} Data Source.
 func NewDataAwsSesDomainIdentity_Override(d DataAwsSesDomainIdentity, scope constructs.Construct, id *string, config *DataAwsSesDomainIdentityConfig) {
 	_init_.Initialize()
 

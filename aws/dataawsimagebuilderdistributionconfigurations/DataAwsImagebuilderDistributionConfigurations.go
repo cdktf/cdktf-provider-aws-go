@@ -2,14 +2,14 @@ package dataawsimagebuilderdistributionconfigurations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsimagebuilderdistributionconfigurations/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsimagebuilderdistributionconfigurations/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/imagebuilder_distribution_configurations aws_imagebuilder_distribution_configurations}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/imagebuilder_distribution_configurations aws_imagebuilder_distribution_configurations}.
 type DataAwsImagebuilderDistributionConfigurations interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -304,7 +304,7 @@ func (j *jsiiProxy_DataAwsImagebuilderDistributionConfigurations) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/imagebuilder_distribution_configurations aws_imagebuilder_distribution_configurations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/imagebuilder_distribution_configurations aws_imagebuilder_distribution_configurations} Data Source.
 func NewDataAwsImagebuilderDistributionConfigurations(scope constructs.Construct, id *string, config *DataAwsImagebuilderDistributionConfigurationsConfig) DataAwsImagebuilderDistributionConfigurations {
 	_init_.Initialize()
 
@@ -322,7 +322,7 @@ func NewDataAwsImagebuilderDistributionConfigurations(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/imagebuilder_distribution_configurations aws_imagebuilder_distribution_configurations} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/imagebuilder_distribution_configurations aws_imagebuilder_distribution_configurations} Data Source.
 func NewDataAwsImagebuilderDistributionConfigurations_Override(d DataAwsImagebuilderDistributionConfigurations, scope constructs.Construct, id *string, config *DataAwsImagebuilderDistributionConfigurationsConfig) {
 	_init_.Initialize()
 

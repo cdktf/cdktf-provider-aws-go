@@ -2,14 +2,14 @@ package volumeattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/volumeattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/volumeattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/volume_attachment aws_volume_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/volume_attachment aws_volume_attachment}.
 type VolumeAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -451,7 +451,7 @@ func (j *jsiiProxy_VolumeAttachment) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/volume_attachment aws_volume_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/volume_attachment aws_volume_attachment} Resource.
 func NewVolumeAttachment(scope constructs.Construct, id *string, config *VolumeAttachmentConfig) VolumeAttachment {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewVolumeAttachment(scope constructs.Construct, id *string, config *VolumeA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/volume_attachment aws_volume_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/volume_attachment aws_volume_attachment} Resource.
 func NewVolumeAttachment_Override(v VolumeAttachment, scope constructs.Construct, id *string, config *VolumeAttachmentConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package dataawseksaddonversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawseksaddonversion/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawseksaddonversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/eks_addon_version aws_eks_addon_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/eks_addon_version aws_eks_addon_version}.
 type DataAwsEksAddonVersion interface {
 	cdktf.TerraformDataSource
 	AddonName() *string
@@ -339,7 +339,7 @@ func (j *jsiiProxy_DataAwsEksAddonVersion) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/eks_addon_version aws_eks_addon_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/eks_addon_version aws_eks_addon_version} Data Source.
 func NewDataAwsEksAddonVersion(scope constructs.Construct, id *string, config *DataAwsEksAddonVersionConfig) DataAwsEksAddonVersion {
 	_init_.Initialize()
 
@@ -357,7 +357,7 @@ func NewDataAwsEksAddonVersion(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/eks_addon_version aws_eks_addon_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/eks_addon_version aws_eks_addon_version} Data Source.
 func NewDataAwsEksAddonVersion_Override(d DataAwsEksAddonVersion, scope constructs.Construct, id *string, config *DataAwsEksAddonVersionConfig) {
 	_init_.Initialize()
 

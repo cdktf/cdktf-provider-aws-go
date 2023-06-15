@@ -2,14 +2,14 @@ package dataawsgluedatacatalogencryptionsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsgluedatacatalogencryptionsettings/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsgluedatacatalogencryptionsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/glue_data_catalog_encryption_settings aws_glue_data_catalog_encryption_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/glue_data_catalog_encryption_settings aws_glue_data_catalog_encryption_settings}.
 type DataAwsGlueDataCatalogEncryptionSettings interface {
 	cdktf.TerraformDataSource
 	CatalogId() *string
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettings) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/glue_data_catalog_encryption_settings aws_glue_data_catalog_encryption_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/glue_data_catalog_encryption_settings aws_glue_data_catalog_encryption_settings} Data Source.
 func NewDataAwsGlueDataCatalogEncryptionSettings(scope constructs.Construct, id *string, config *DataAwsGlueDataCatalogEncryptionSettingsConfig) DataAwsGlueDataCatalogEncryptionSettings {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataAwsGlueDataCatalogEncryptionSettings(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/glue_data_catalog_encryption_settings aws_glue_data_catalog_encryption_settings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/glue_data_catalog_encryption_settings aws_glue_data_catalog_encryption_settings} Data Source.
 func NewDataAwsGlueDataCatalogEncryptionSettings_Override(d DataAwsGlueDataCatalogEncryptionSettings, scope constructs.Construct, id *string, config *DataAwsGlueDataCatalogEncryptionSettingsConfig) {
 	_init_.Initialize()
 

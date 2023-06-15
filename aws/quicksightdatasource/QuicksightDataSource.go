@@ -2,14 +2,14 @@ package quicksightdatasource
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/quicksightdatasource/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/quicksightdatasource/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/quicksight_data_source aws_quicksight_data_source}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/quicksight_data_source aws_quicksight_data_source}.
 type QuicksightDataSource interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -557,7 +557,7 @@ func (j *jsiiProxy_QuicksightDataSource) VpcConnectionPropertiesInput() *Quicksi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/quicksight_data_source aws_quicksight_data_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/quicksight_data_source aws_quicksight_data_source} Resource.
 func NewQuicksightDataSource(scope constructs.Construct, id *string, config *QuicksightDataSourceConfig) QuicksightDataSource {
 	_init_.Initialize()
 
@@ -575,7 +575,7 @@ func NewQuicksightDataSource(scope constructs.Construct, id *string, config *Qui
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/quicksight_data_source aws_quicksight_data_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/quicksight_data_source aws_quicksight_data_source} Resource.
 func NewQuicksightDataSource_Override(q QuicksightDataSource, scope constructs.Construct, id *string, config *QuicksightDataSourceConfig) {
 	_init_.Initialize()
 

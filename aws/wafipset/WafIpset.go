@@ -2,14 +2,14 @@ package wafipset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafipset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/wafipset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_ipset aws_waf_ipset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/waf_ipset aws_waf_ipset}.
 type WafIpset interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -344,7 +344,7 @@ func (j *jsiiProxy_WafIpset) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_ipset aws_waf_ipset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/waf_ipset aws_waf_ipset} Resource.
 func NewWafIpset(scope constructs.Construct, id *string, config *WafIpsetConfig) WafIpset {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewWafIpset(scope constructs.Construct, id *string, config *WafIpsetConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/waf_ipset aws_waf_ipset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/waf_ipset aws_waf_ipset} Resource.
 func NewWafIpset_Override(w WafIpset, scope constructs.Construct, id *string, config *WafIpsetConfig) {
 	_init_.Initialize()
 

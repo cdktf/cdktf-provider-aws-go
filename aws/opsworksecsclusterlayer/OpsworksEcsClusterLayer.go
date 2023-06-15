@@ -2,14 +2,14 @@ package opsworksecsclusterlayer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/opsworksecsclusterlayer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworksecsclusterlayer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_ecs_cluster_layer aws_opsworks_ecs_cluster_layer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_ecs_cluster_layer aws_opsworks_ecs_cluster_layer}.
 type OpsworksEcsClusterLayer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -895,7 +895,7 @@ func (j *jsiiProxy_OpsworksEcsClusterLayer) UseEbsOptimizedInstancesInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_ecs_cluster_layer aws_opsworks_ecs_cluster_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_ecs_cluster_layer aws_opsworks_ecs_cluster_layer} Resource.
 func NewOpsworksEcsClusterLayer(scope constructs.Construct, id *string, config *OpsworksEcsClusterLayerConfig) OpsworksEcsClusterLayer {
 	_init_.Initialize()
 
@@ -913,7 +913,7 @@ func NewOpsworksEcsClusterLayer(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_ecs_cluster_layer aws_opsworks_ecs_cluster_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_ecs_cluster_layer aws_opsworks_ecs_cluster_layer} Resource.
 func NewOpsworksEcsClusterLayer_Override(o OpsworksEcsClusterLayer, scope constructs.Construct, id *string, config *OpsworksEcsClusterLayerConfig) {
 	_init_.Initialize()
 

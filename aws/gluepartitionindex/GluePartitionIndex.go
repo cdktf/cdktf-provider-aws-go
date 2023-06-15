@@ -2,14 +2,14 @@ package gluepartitionindex
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/gluepartitionindex/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/gluepartitionindex/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/glue_partition_index aws_glue_partition_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/glue_partition_index aws_glue_partition_index}.
 type GluePartitionIndex interface {
 	cdktf.TerraformResource
 	CatalogId() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_GluePartitionIndex) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/glue_partition_index aws_glue_partition_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/glue_partition_index aws_glue_partition_index} Resource.
 func NewGluePartitionIndex(scope constructs.Construct, id *string, config *GluePartitionIndexConfig) GluePartitionIndex {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewGluePartitionIndex(scope constructs.Construct, id *string, config *GlueP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/glue_partition_index aws_glue_partition_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/glue_partition_index aws_glue_partition_index} Resource.
 func NewGluePartitionIndex_Override(g GluePartitionIndex, scope constructs.Construct, id *string, config *GluePartitionIndexConfig) {
 	_init_.Initialize()
 

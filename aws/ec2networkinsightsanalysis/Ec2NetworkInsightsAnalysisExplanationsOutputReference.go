@@ -2,9 +2,9 @@ package ec2networkinsightsanalysis
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ec2networkinsightsanalysis/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/ec2networkinsightsanalysis/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -57,7 +57,7 @@ type Ec2NetworkInsightsAnalysisExplanationsOutputReference interface {
 	PacketField() *string
 	Port() *float64
 	PortRanges() Ec2NetworkInsightsAnalysisExplanationsPortRangesList
-	PrefixList() Ec2NetworkInsightsAnalysisExplanationsPrefixListList
+	PrefixList() Ec2NetworkInsightsAnalysisExplanationsPrefixListStructList
 	Protocols() *[]*string
 	RouteTable() Ec2NetworkInsightsAnalysisExplanationsRouteTableList
 	RouteTableRoute() Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList
@@ -454,8 +454,8 @@ func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsOutputReference) PortRa
 	return returns
 }
 
-func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsOutputReference) PrefixList() Ec2NetworkInsightsAnalysisExplanationsPrefixListList {
-	var returns Ec2NetworkInsightsAnalysisExplanationsPrefixListList
+func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsOutputReference) PrefixList() Ec2NetworkInsightsAnalysisExplanationsPrefixListStructList {
+	var returns Ec2NetworkInsightsAnalysisExplanationsPrefixListStructList
 	_jsii_.Get(
 		j,
 		"prefixList",

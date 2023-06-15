@@ -2,14 +2,14 @@ package s3bucketreplicationconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/s3bucketreplicationconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/s3bucketreplicationconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/s3_bucket_replication_configuration aws_s3_bucket_replication_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_replication_configuration aws_s3_bucket_replication_configuration}.
 type S3BucketReplicationConfigurationA interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -379,7 +379,7 @@ func (j *jsiiProxy_S3BucketReplicationConfigurationA) TokenInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/s3_bucket_replication_configuration aws_s3_bucket_replication_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_replication_configuration aws_s3_bucket_replication_configuration} Resource.
 func NewS3BucketReplicationConfigurationA(scope constructs.Construct, id *string, config *S3BucketReplicationConfigurationAConfig) S3BucketReplicationConfigurationA {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewS3BucketReplicationConfigurationA(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/s3_bucket_replication_configuration aws_s3_bucket_replication_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_replication_configuration aws_s3_bucket_replication_configuration} Resource.
 func NewS3BucketReplicationConfigurationA_Override(s S3BucketReplicationConfigurationA, scope constructs.Construct, id *string, config *S3BucketReplicationConfigurationAConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package storagegatewaycachediscsivolume
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/storagegatewaycachediscsivolume/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/storagegatewaycachediscsivolume/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/storagegateway_cached_iscsi_volume aws_storagegateway_cached_iscsi_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/storagegateway_cached_iscsi_volume aws_storagegateway_cached_iscsi_volume}.
 type StoragegatewayCachedIscsiVolume interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -599,7 +599,7 @@ func (j *jsiiProxy_StoragegatewayCachedIscsiVolume) VolumeSizeInBytesInput() *fl
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/storagegateway_cached_iscsi_volume aws_storagegateway_cached_iscsi_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/storagegateway_cached_iscsi_volume aws_storagegateway_cached_iscsi_volume} Resource.
 func NewStoragegatewayCachedIscsiVolume(scope constructs.Construct, id *string, config *StoragegatewayCachedIscsiVolumeConfig) StoragegatewayCachedIscsiVolume {
 	_init_.Initialize()
 
@@ -617,7 +617,7 @@ func NewStoragegatewayCachedIscsiVolume(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/storagegateway_cached_iscsi_volume aws_storagegateway_cached_iscsi_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/storagegateway_cached_iscsi_volume aws_storagegateway_cached_iscsi_volume} Resource.
 func NewStoragegatewayCachedIscsiVolume_Override(s StoragegatewayCachedIscsiVolume, scope constructs.Construct, id *string, config *StoragegatewayCachedIscsiVolumeConfig) {
 	_init_.Initialize()
 

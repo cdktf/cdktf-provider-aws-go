@@ -2,14 +2,14 @@ package dataawssubnet
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssubnet/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawssubnet/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/subnet aws_subnet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/subnet aws_subnet}.
 type DataAwsSubnet interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -663,7 +663,7 @@ func (j *jsiiProxy_DataAwsSubnet) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/subnet aws_subnet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/subnet aws_subnet} Data Source.
 func NewDataAwsSubnet(scope constructs.Construct, id *string, config *DataAwsSubnetConfig) DataAwsSubnet {
 	_init_.Initialize()
 
@@ -681,7 +681,7 @@ func NewDataAwsSubnet(scope constructs.Construct, id *string, config *DataAwsSub
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/subnet aws_subnet} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/subnet aws_subnet} Data Source.
 func NewDataAwsSubnet_Override(d DataAwsSubnet, scope constructs.Construct, id *string, config *DataAwsSubnetConfig) {
 	_init_.Initialize()
 

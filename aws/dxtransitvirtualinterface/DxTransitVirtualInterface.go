@@ -2,14 +2,14 @@ package dxtransitvirtualinterface
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dxtransitvirtualinterface/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dxtransitvirtualinterface/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dx_transit_virtual_interface aws_dx_transit_virtual_interface}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dx_transit_virtual_interface aws_dx_transit_virtual_interface}.
 type DxTransitVirtualInterface interface {
 	cdktf.TerraformResource
 	AddressFamily() *string
@@ -660,7 +660,7 @@ func (j *jsiiProxy_DxTransitVirtualInterface) VlanInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dx_transit_virtual_interface aws_dx_transit_virtual_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dx_transit_virtual_interface aws_dx_transit_virtual_interface} Resource.
 func NewDxTransitVirtualInterface(scope constructs.Construct, id *string, config *DxTransitVirtualInterfaceConfig) DxTransitVirtualInterface {
 	_init_.Initialize()
 
@@ -678,7 +678,7 @@ func NewDxTransitVirtualInterface(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dx_transit_virtual_interface aws_dx_transit_virtual_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dx_transit_virtual_interface aws_dx_transit_virtual_interface} Resource.
 func NewDxTransitVirtualInterface_Override(d DxTransitVirtualInterface, scope constructs.Construct, id *string, config *DxTransitVirtualInterfaceConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package cloudfrontdistribution
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/cloudfrontdistribution/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/cloudfrontdistribution/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution aws_cloudfront_distribution}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution}.
 type CloudfrontDistribution interface {
 	cdktf.TerraformResource
 	Aliases() *[]*string
@@ -871,7 +871,7 @@ func (j *jsiiProxy_CloudfrontDistribution) WebAclIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution aws_cloudfront_distribution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution} Resource.
 func NewCloudfrontDistribution(scope constructs.Construct, id *string, config *CloudfrontDistributionConfig) CloudfrontDistribution {
 	_init_.Initialize()
 
@@ -889,7 +889,7 @@ func NewCloudfrontDistribution(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cloudfront_distribution aws_cloudfront_distribution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution} Resource.
 func NewCloudfrontDistribution_Override(c CloudfrontDistribution, scope constructs.Construct, id *string, config *CloudfrontDistributionConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package instance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/instance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/instance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/instance aws_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/instance aws_instance}.
 type Instance interface {
 	cdktf.TerraformResource
 	Ami() *string
@@ -1502,7 +1502,7 @@ func (j *jsiiProxy_Instance) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/instance aws_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/instance aws_instance} Resource.
 func NewInstance(scope constructs.Construct, id *string, config *InstanceConfig) Instance {
 	_init_.Initialize()
 
@@ -1520,7 +1520,7 @@ func NewInstance(scope constructs.Construct, id *string, config *InstanceConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/instance aws_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/instance aws_instance} Resource.
 func NewInstance_Override(i Instance, scope constructs.Construct, id *string, config *InstanceConfig) {
 	_init_.Initialize()
 

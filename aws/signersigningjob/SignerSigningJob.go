@@ -2,14 +2,14 @@ package signersigningjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/signersigningjob/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/signersigningjob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/signer_signing_job aws_signer_signing_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/signer_signing_job aws_signer_signing_job}.
 type SignerSigningJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -533,7 +533,7 @@ func (j *jsiiProxy_SignerSigningJob) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/signer_signing_job aws_signer_signing_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/signer_signing_job aws_signer_signing_job} Resource.
 func NewSignerSigningJob(scope constructs.Construct, id *string, config *SignerSigningJobConfig) SignerSigningJob {
 	_init_.Initialize()
 
@@ -551,7 +551,7 @@ func NewSignerSigningJob(scope constructs.Construct, id *string, config *SignerS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/signer_signing_job aws_signer_signing_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/signer_signing_job aws_signer_signing_job} Resource.
 func NewSignerSigningJob_Override(s SignerSigningJob, scope constructs.Construct, id *string, config *SignerSigningJobConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package apigatewayvpclink
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/apigatewayvpclink/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/apigatewayvpclink/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/api_gateway_vpc_link aws_api_gateway_vpc_link}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/api_gateway_vpc_link aws_api_gateway_vpc_link}.
 type ApiGatewayVpcLink interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -415,7 +415,7 @@ func (j *jsiiProxy_ApiGatewayVpcLink) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/api_gateway_vpc_link aws_api_gateway_vpc_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/api_gateway_vpc_link aws_api_gateway_vpc_link} Resource.
 func NewApiGatewayVpcLink(scope constructs.Construct, id *string, config *ApiGatewayVpcLinkConfig) ApiGatewayVpcLink {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewApiGatewayVpcLink(scope constructs.Construct, id *string, config *ApiGat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/api_gateway_vpc_link aws_api_gateway_vpc_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/api_gateway_vpc_link aws_api_gateway_vpc_link} Resource.
 func NewApiGatewayVpcLink_Override(a ApiGatewayVpcLink, scope constructs.Construct, id *string, config *ApiGatewayVpcLinkConfig) {
 	_init_.Initialize()
 

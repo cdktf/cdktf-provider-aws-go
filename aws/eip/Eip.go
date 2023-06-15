@@ -2,14 +2,14 @@ package eip
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/eip/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/eip/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/eip aws_eip}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip aws_eip}.
 type Eip interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -649,7 +649,7 @@ func (j *jsiiProxy_Eip) VpcInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/eip aws_eip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip aws_eip} Resource.
 func NewEip(scope constructs.Construct, id *string, config *EipConfig) Eip {
 	_init_.Initialize()
 
@@ -667,7 +667,7 @@ func NewEip(scope constructs.Construct, id *string, config *EipConfig) Eip {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/eip aws_eip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip aws_eip} Resource.
 func NewEip_Override(e Eip, scope constructs.Construct, id *string, config *EipConfig) {
 	_init_.Initialize()
 

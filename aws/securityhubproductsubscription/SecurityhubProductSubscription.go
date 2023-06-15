@@ -2,14 +2,14 @@ package securityhubproductsubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/securityhubproductsubscription/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/securityhubproductsubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/securityhub_product_subscription aws_securityhub_product_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/securityhub_product_subscription aws_securityhub_product_subscription}.
 type SecurityhubProductSubscription interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -320,7 +320,7 @@ func (j *jsiiProxy_SecurityhubProductSubscription) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/securityhub_product_subscription aws_securityhub_product_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/securityhub_product_subscription aws_securityhub_product_subscription} Resource.
 func NewSecurityhubProductSubscription(scope constructs.Construct, id *string, config *SecurityhubProductSubscriptionConfig) SecurityhubProductSubscription {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewSecurityhubProductSubscription(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/securityhub_product_subscription aws_securityhub_product_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/securityhub_product_subscription aws_securityhub_product_subscription} Resource.
 func NewSecurityhubProductSubscription_Override(s SecurityhubProductSubscription, scope constructs.Construct, id *string, config *SecurityhubProductSubscriptionConfig) {
 	_init_.Initialize()
 

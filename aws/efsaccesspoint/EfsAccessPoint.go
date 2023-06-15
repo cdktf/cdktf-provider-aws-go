@@ -2,14 +2,14 @@ package efsaccesspoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/efsaccesspoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/efsaccesspoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/efs_access_point aws_efs_access_point}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/efs_access_point aws_efs_access_point}.
 type EfsAccessPoint interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -438,7 +438,7 @@ func (j *jsiiProxy_EfsAccessPoint) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/efs_access_point aws_efs_access_point} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/efs_access_point aws_efs_access_point} Resource.
 func NewEfsAccessPoint(scope constructs.Construct, id *string, config *EfsAccessPointConfig) EfsAccessPoint {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewEfsAccessPoint(scope constructs.Construct, id *string, config *EfsAccess
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/efs_access_point aws_efs_access_point} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/efs_access_point aws_efs_access_point} Resource.
 func NewEfsAccessPoint_Override(e EfsAccessPoint, scope constructs.Construct, id *string, config *EfsAccessPointConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package applicationinsightsapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/applicationinsightsapplication/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/applicationinsightsapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/applicationinsights_application aws_applicationinsights_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/applicationinsights_application aws_applicationinsights_application}.
 type ApplicationinsightsApplication interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -512,7 +512,7 @@ func (j *jsiiProxy_ApplicationinsightsApplication) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/applicationinsights_application aws_applicationinsights_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/applicationinsights_application aws_applicationinsights_application} Resource.
 func NewApplicationinsightsApplication(scope constructs.Construct, id *string, config *ApplicationinsightsApplicationConfig) ApplicationinsightsApplication {
 	_init_.Initialize()
 
@@ -530,7 +530,7 @@ func NewApplicationinsightsApplication(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/applicationinsights_application aws_applicationinsights_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/applicationinsights_application aws_applicationinsights_application} Resource.
 func NewApplicationinsightsApplication_Override(a ApplicationinsightsApplication, scope constructs.Construct, id *string, config *ApplicationinsightsApplicationConfig) {
 	_init_.Initialize()
 

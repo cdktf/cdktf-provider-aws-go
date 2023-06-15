@@ -2,14 +2,14 @@ package identitystoregroupmembership
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/identitystoregroupmembership/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/identitystoregroupmembership/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/identitystore_group_membership aws_identitystore_group_membership}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/identitystore_group_membership aws_identitystore_group_membership}.
 type IdentitystoreGroupMembership interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -366,7 +366,7 @@ func (j *jsiiProxy_IdentitystoreGroupMembership) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/identitystore_group_membership aws_identitystore_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/identitystore_group_membership aws_identitystore_group_membership} Resource.
 func NewIdentitystoreGroupMembership(scope constructs.Construct, id *string, config *IdentitystoreGroupMembershipConfig) IdentitystoreGroupMembership {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewIdentitystoreGroupMembership(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/identitystore_group_membership aws_identitystore_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/identitystore_group_membership aws_identitystore_group_membership} Resource.
 func NewIdentitystoreGroupMembership_Override(i IdentitystoreGroupMembership, scope constructs.Construct, id *string, config *IdentitystoreGroupMembershipConfig) {
 	_init_.Initialize()
 

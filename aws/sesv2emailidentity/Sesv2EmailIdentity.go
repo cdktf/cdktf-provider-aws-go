@@ -2,14 +2,14 @@ package sesv2emailidentity
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/sesv2emailidentity/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesv2emailidentity/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sesv2_email_identity aws_sesv2_email_identity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sesv2_email_identity aws_sesv2_email_identity}.
 type Sesv2EmailIdentity interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -438,7 +438,7 @@ func (j *jsiiProxy_Sesv2EmailIdentity) VerifiedForSendingStatus() cdktf.IResolva
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sesv2_email_identity aws_sesv2_email_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sesv2_email_identity aws_sesv2_email_identity} Resource.
 func NewSesv2EmailIdentity(scope constructs.Construct, id *string, config *Sesv2EmailIdentityConfig) Sesv2EmailIdentity {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewSesv2EmailIdentity(scope constructs.Construct, id *string, config *Sesv2
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sesv2_email_identity aws_sesv2_email_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sesv2_email_identity aws_sesv2_email_identity} Resource.
 func NewSesv2EmailIdentity_Override(s Sesv2EmailIdentity, scope constructs.Construct, id *string, config *Sesv2EmailIdentityConfig) {
 	_init_.Initialize()
 

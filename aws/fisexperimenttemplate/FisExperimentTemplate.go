@@ -2,14 +2,14 @@ package fisexperimenttemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/fisexperimenttemplate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/fisexperimenttemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/fis_experiment_template aws_fis_experiment_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fis_experiment_template aws_fis_experiment_template}.
 type FisExperimentTemplate interface {
 	cdktf.TerraformResource
 	Action() FisExperimentTemplateActionList
@@ -474,7 +474,7 @@ func (j *jsiiProxy_FisExperimentTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/fis_experiment_template aws_fis_experiment_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fis_experiment_template aws_fis_experiment_template} Resource.
 func NewFisExperimentTemplate(scope constructs.Construct, id *string, config *FisExperimentTemplateConfig) FisExperimentTemplate {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewFisExperimentTemplate(scope constructs.Construct, id *string, config *Fi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/fis_experiment_template aws_fis_experiment_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fis_experiment_template aws_fis_experiment_template} Resource.
 func NewFisExperimentTemplate_Override(f FisExperimentTemplate, scope constructs.Construct, id *string, config *FisExperimentTemplateConfig) {
 	_init_.Initialize()
 

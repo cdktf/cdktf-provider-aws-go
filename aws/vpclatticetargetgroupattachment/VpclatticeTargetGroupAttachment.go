@@ -2,14 +2,14 @@ package vpclatticetargetgroupattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/vpclatticetargetgroupattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/vpclatticetargetgroupattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/vpclattice_target_group_attachment aws_vpclattice_target_group_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpclattice_target_group_attachment aws_vpclattice_target_group_attachment}.
 type VpclatticeTargetGroupAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_VpclatticeTargetGroupAttachment) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/vpclattice_target_group_attachment aws_vpclattice_target_group_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpclattice_target_group_attachment aws_vpclattice_target_group_attachment} Resource.
 func NewVpclatticeTargetGroupAttachment(scope constructs.Construct, id *string, config *VpclatticeTargetGroupAttachmentConfig) VpclatticeTargetGroupAttachment {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewVpclatticeTargetGroupAttachment(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/vpclattice_target_group_attachment aws_vpclattice_target_group_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpclattice_target_group_attachment aws_vpclattice_target_group_attachment} Resource.
 func NewVpclatticeTargetGroupAttachment_Override(v VpclatticeTargetGroupAttachment, scope constructs.Construct, id *string, config *VpclatticeTargetGroupAttachmentConfig) {
 	_init_.Initialize()
 

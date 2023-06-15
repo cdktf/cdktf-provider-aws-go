@@ -2,14 +2,14 @@ package sagemakerworkforce
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerworkforce/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/sagemakerworkforce/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sagemaker_workforce aws_sagemaker_workforce}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sagemaker_workforce aws_sagemaker_workforce}.
 type SagemakerWorkforce interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_SagemakerWorkforce) WorkforceVpcConfigInput() *SagemakerWorkf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sagemaker_workforce aws_sagemaker_workforce} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sagemaker_workforce aws_sagemaker_workforce} Resource.
 func NewSagemakerWorkforce(scope constructs.Construct, id *string, config *SagemakerWorkforceConfig) SagemakerWorkforce {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewSagemakerWorkforce(scope constructs.Construct, id *string, config *Sagem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sagemaker_workforce aws_sagemaker_workforce} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sagemaker_workforce aws_sagemaker_workforce} Resource.
 func NewSagemakerWorkforce_Override(s SagemakerWorkforce, scope constructs.Construct, id *string, config *SagemakerWorkforceConfig) {
 	_init_.Initialize()
 

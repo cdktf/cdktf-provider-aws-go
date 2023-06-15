@@ -2,14 +2,14 @@ package apigatewaymodel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/apigatewaymodel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/apigatewaymodel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/api_gateway_model aws_api_gateway_model}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/api_gateway_model aws_api_gateway_model}.
 type ApiGatewayModel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_ApiGatewayModel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/api_gateway_model aws_api_gateway_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/api_gateway_model aws_api_gateway_model} Resource.
 func NewApiGatewayModel(scope constructs.Construct, id *string, config *ApiGatewayModelConfig) ApiGatewayModel {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewApiGatewayModel(scope constructs.Construct, id *string, config *ApiGatew
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/api_gateway_model aws_api_gateway_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/api_gateway_model aws_api_gateway_model} Resource.
 func NewApiGatewayModel_Override(a ApiGatewayModel, scope constructs.Construct, id *string, config *ApiGatewayModelConfig) {
 	_init_.Initialize()
 

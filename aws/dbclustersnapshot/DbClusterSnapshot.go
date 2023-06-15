@@ -2,14 +2,14 @@ package dbclustersnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dbclustersnapshot/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dbclustersnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/db_cluster_snapshot aws_db_cluster_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/db_cluster_snapshot aws_db_cluster_snapshot}.
 type DbClusterSnapshot interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -547,7 +547,7 @@ func (j *jsiiProxy_DbClusterSnapshot) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/db_cluster_snapshot aws_db_cluster_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/db_cluster_snapshot aws_db_cluster_snapshot} Resource.
 func NewDbClusterSnapshot(scope constructs.Construct, id *string, config *DbClusterSnapshotConfig) DbClusterSnapshot {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewDbClusterSnapshot(scope constructs.Construct, id *string, config *DbClus
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/db_cluster_snapshot aws_db_cluster_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/db_cluster_snapshot aws_db_cluster_snapshot} Resource.
 func NewDbClusterSnapshot_Override(d DbClusterSnapshot, scope constructs.Construct, id *string, config *DbClusterSnapshotConfig) {
 	_init_.Initialize()
 

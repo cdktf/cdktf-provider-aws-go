@@ -60,6 +60,10 @@ func (j *jsiiProxy_CloudwatchMetricStreamIncludeFilterOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchMetricStreamIncludeFilterOutputReference) validateSetMetricNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchMetricStreamIncludeFilterOutputReference) validateSetNamespaceParameters(val *string) error {
 	return nil
 }

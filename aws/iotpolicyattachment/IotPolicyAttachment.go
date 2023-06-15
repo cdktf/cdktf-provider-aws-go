@@ -2,14 +2,14 @@ package iotpolicyattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/iotpolicyattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/iotpolicyattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/iot_policy_attachment aws_iot_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iot_policy_attachment aws_iot_policy_attachment}.
 type IotPolicyAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_IotPolicyAttachment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/iot_policy_attachment aws_iot_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iot_policy_attachment aws_iot_policy_attachment} Resource.
 func NewIotPolicyAttachment(scope constructs.Construct, id *string, config *IotPolicyAttachmentConfig) IotPolicyAttachment {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewIotPolicyAttachment(scope constructs.Construct, id *string, config *IotP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/iot_policy_attachment aws_iot_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iot_policy_attachment aws_iot_policy_attachment} Resource.
 func NewIotPolicyAttachment_Override(i IotPolicyAttachment, scope constructs.Construct, id *string, config *IotPolicyAttachmentConfig) {
 	_init_.Initialize()
 

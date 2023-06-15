@@ -2,14 +2,14 @@ package autoscalingattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/autoscalingattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/autoscalingattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/autoscaling_attachment aws_autoscaling_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_attachment aws_autoscaling_attachment}.
 type AutoscalingAttachment interface {
 	cdktf.TerraformResource
 	AlbTargetGroupArn() *string
@@ -381,7 +381,7 @@ func (j *jsiiProxy_AutoscalingAttachment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/autoscaling_attachment aws_autoscaling_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_attachment aws_autoscaling_attachment} Resource.
 func NewAutoscalingAttachment(scope constructs.Construct, id *string, config *AutoscalingAttachmentConfig) AutoscalingAttachment {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewAutoscalingAttachment(scope constructs.Construct, id *string, config *Au
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/autoscaling_attachment aws_autoscaling_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_attachment aws_autoscaling_attachment} Resource.
 func NewAutoscalingAttachment_Override(a AutoscalingAttachment, scope constructs.Construct, id *string, config *AutoscalingAttachmentConfig) {
 	_init_.Initialize()
 

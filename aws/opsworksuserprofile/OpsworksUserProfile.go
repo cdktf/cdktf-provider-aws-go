@@ -2,14 +2,14 @@ package opsworksuserprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/opsworksuserprofile/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworksuserprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_user_profile aws_opsworks_user_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_user_profile aws_opsworks_user_profile}.
 type OpsworksUserProfile interface {
 	cdktf.TerraformResource
 	AllowSelfManagement() interface{}
@@ -380,7 +380,7 @@ func (j *jsiiProxy_OpsworksUserProfile) UserArnInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_user_profile aws_opsworks_user_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_user_profile aws_opsworks_user_profile} Resource.
 func NewOpsworksUserProfile(scope constructs.Construct, id *string, config *OpsworksUserProfileConfig) OpsworksUserProfile {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewOpsworksUserProfile(scope constructs.Construct, id *string, config *Opsw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_user_profile aws_opsworks_user_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_user_profile aws_opsworks_user_profile} Resource.
 func NewOpsworksUserProfile_Override(o OpsworksUserProfile, scope constructs.Construct, id *string, config *OpsworksUserProfileConfig) {
 	_init_.Initialize()
 

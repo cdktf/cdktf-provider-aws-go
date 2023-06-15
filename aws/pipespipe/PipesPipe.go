@@ -2,14 +2,14 @@ package pipespipe
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/pipespipe/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/pipespipe/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/pipes_pipe aws_pipes_pipe}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/pipes_pipe aws_pipes_pipe}.
 type PipesPipe interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -604,7 +604,7 @@ func (j *jsiiProxy_PipesPipe) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/pipes_pipe aws_pipes_pipe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/pipes_pipe aws_pipes_pipe} Resource.
 func NewPipesPipe(scope constructs.Construct, id *string, config *PipesPipeConfig) PipesPipe {
 	_init_.Initialize()
 
@@ -622,7 +622,7 @@ func NewPipesPipe(scope constructs.Construct, id *string, config *PipesPipeConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/pipes_pipe aws_pipes_pipe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/pipes_pipe aws_pipes_pipe} Resource.
 func NewPipesPipe_Override(p PipesPipe, scope constructs.Construct, id *string, config *PipesPipeConfig) {
 	_init_.Initialize()
 

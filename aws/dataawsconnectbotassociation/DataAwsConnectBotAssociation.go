@@ -2,14 +2,14 @@ package dataawsconnectbotassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsconnectbotassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsconnectbotassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/connect_bot_association aws_connect_bot_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/connect_bot_association aws_connect_bot_association}.
 type DataAwsConnectBotAssociation interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -304,7 +304,7 @@ func (j *jsiiProxy_DataAwsConnectBotAssociation) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/connect_bot_association aws_connect_bot_association} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/connect_bot_association aws_connect_bot_association} Data Source.
 func NewDataAwsConnectBotAssociation(scope constructs.Construct, id *string, config *DataAwsConnectBotAssociationConfig) DataAwsConnectBotAssociation {
 	_init_.Initialize()
 
@@ -322,7 +322,7 @@ func NewDataAwsConnectBotAssociation(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/connect_bot_association aws_connect_bot_association} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/connect_bot_association aws_connect_bot_association} Data Source.
 func NewDataAwsConnectBotAssociation_Override(d DataAwsConnectBotAssociation, scope constructs.Construct, id *string, config *DataAwsConnectBotAssociationConfig) {
 	_init_.Initialize()
 

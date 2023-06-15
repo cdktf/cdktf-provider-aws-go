@@ -187,6 +187,14 @@ func (j *jsiiProxy_CloudwatchMetricStreamExcludeFilterOutputReference) validateS
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchMetricStreamExcludeFilterOutputReference) validateSetMetricNamesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchMetricStreamExcludeFilterOutputReference) validateSetNamespaceParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

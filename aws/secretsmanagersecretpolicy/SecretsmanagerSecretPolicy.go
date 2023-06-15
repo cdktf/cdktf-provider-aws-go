@@ -2,14 +2,14 @@ package secretsmanagersecretpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/secretsmanagersecretpolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/secretsmanagersecretpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/secretsmanager_secret_policy aws_secretsmanager_secret_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/secretsmanager_secret_policy aws_secretsmanager_secret_policy}.
 type SecretsmanagerSecretPolicy interface {
 	cdktf.TerraformResource
 	BlockPublicPolicy() interface{}
@@ -356,7 +356,7 @@ func (j *jsiiProxy_SecretsmanagerSecretPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/secretsmanager_secret_policy aws_secretsmanager_secret_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/secretsmanager_secret_policy aws_secretsmanager_secret_policy} Resource.
 func NewSecretsmanagerSecretPolicy(scope constructs.Construct, id *string, config *SecretsmanagerSecretPolicyConfig) SecretsmanagerSecretPolicy {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewSecretsmanagerSecretPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/secretsmanager_secret_policy aws_secretsmanager_secret_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/secretsmanager_secret_policy aws_secretsmanager_secret_policy} Resource.
 func NewSecretsmanagerSecretPolicy_Override(s SecretsmanagerSecretPolicy, scope constructs.Construct, id *string, config *SecretsmanagerSecretPolicyConfig) {
 	_init_.Initialize()
 

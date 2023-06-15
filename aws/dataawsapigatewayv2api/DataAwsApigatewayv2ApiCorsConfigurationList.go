@@ -2,9 +2,9 @@ package dataawsapigatewayv2api
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsapigatewayv2api/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsapigatewayv2api/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

@@ -2,14 +2,14 @@ package glueconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/glueconnection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/glueconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/glue_connection aws_glue_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/glue_connection aws_glue_connection}.
 type GlueConnection interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -512,7 +512,7 @@ func (j *jsiiProxy_GlueConnection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/glue_connection aws_glue_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/glue_connection aws_glue_connection} Resource.
 func NewGlueConnection(scope constructs.Construct, id *string, config *GlueConnectionConfig) GlueConnection {
 	_init_.Initialize()
 
@@ -530,7 +530,7 @@ func NewGlueConnection(scope constructs.Construct, id *string, config *GlueConne
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/glue_connection aws_glue_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/glue_connection aws_glue_connection} Resource.
 func NewGlueConnection_Override(g GlueConnection, scope constructs.Construct, id *string, config *GlueConnectionConfig) {
 	_init_.Initialize()
 

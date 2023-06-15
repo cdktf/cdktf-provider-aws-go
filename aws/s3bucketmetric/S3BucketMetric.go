@@ -2,14 +2,14 @@ package s3bucketmetric
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/s3bucketmetric/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/s3bucketmetric/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/s3_bucket_metric aws_s3_bucket_metric}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_metric aws_s3_bucket_metric}.
 type S3BucketMetric interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -356,7 +356,7 @@ func (j *jsiiProxy_S3BucketMetric) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/s3_bucket_metric aws_s3_bucket_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_metric aws_s3_bucket_metric} Resource.
 func NewS3BucketMetric(scope constructs.Construct, id *string, config *S3BucketMetricConfig) S3BucketMetric {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewS3BucketMetric(scope constructs.Construct, id *string, config *S3BucketM
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/s3_bucket_metric aws_s3_bucket_metric} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_metric aws_s3_bucket_metric} Resource.
 func NewS3BucketMetric_Override(s S3BucketMetric, scope constructs.Construct, id *string, config *S3BucketMetricConfig) {
 	_init_.Initialize()
 

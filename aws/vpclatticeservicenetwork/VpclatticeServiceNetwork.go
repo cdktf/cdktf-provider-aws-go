@@ -2,14 +2,14 @@ package vpclatticeservicenetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/vpclatticeservicenetwork/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/vpclatticeservicenetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/vpclattice_service_network aws_vpclattice_service_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpclattice_service_network aws_vpclattice_service_network}.
 type VpclatticeServiceNetwork interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -392,7 +392,7 @@ func (j *jsiiProxy_VpclatticeServiceNetwork) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/vpclattice_service_network aws_vpclattice_service_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpclattice_service_network aws_vpclattice_service_network} Resource.
 func NewVpclatticeServiceNetwork(scope constructs.Construct, id *string, config *VpclatticeServiceNetworkConfig) VpclatticeServiceNetwork {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewVpclatticeServiceNetwork(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/vpclattice_service_network aws_vpclattice_service_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpclattice_service_network aws_vpclattice_service_network} Resource.
 func NewVpclatticeServiceNetwork_Override(v VpclatticeServiceNetwork, scope constructs.Construct, id *string, config *VpclatticeServiceNetworkConfig) {
 	_init_.Initialize()
 

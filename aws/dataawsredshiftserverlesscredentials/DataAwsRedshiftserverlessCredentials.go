@@ -2,14 +2,14 @@ package dataawsredshiftserverlesscredentials
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsredshiftserverlesscredentials/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsredshiftserverlesscredentials/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/redshiftserverless_credentials aws_redshiftserverless_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/redshiftserverless_credentials aws_redshiftserverless_credentials}.
 type DataAwsRedshiftserverlessCredentials interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -362,7 +362,7 @@ func (j *jsiiProxy_DataAwsRedshiftserverlessCredentials) WorkgroupNameInput() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/redshiftserverless_credentials aws_redshiftserverless_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/redshiftserverless_credentials aws_redshiftserverless_credentials} Data Source.
 func NewDataAwsRedshiftserverlessCredentials(scope constructs.Construct, id *string, config *DataAwsRedshiftserverlessCredentialsConfig) DataAwsRedshiftserverlessCredentials {
 	_init_.Initialize()
 
@@ -380,7 +380,7 @@ func NewDataAwsRedshiftserverlessCredentials(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/redshiftserverless_credentials aws_redshiftserverless_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/redshiftserverless_credentials aws_redshiftserverless_credentials} Data Source.
 func NewDataAwsRedshiftserverlessCredentials_Override(d DataAwsRedshiftserverlessCredentials, scope constructs.Construct, id *string, config *DataAwsRedshiftserverlessCredentialsConfig) {
 	_init_.Initialize()
 

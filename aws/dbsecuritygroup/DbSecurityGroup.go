@@ -2,14 +2,14 @@ package dbsecuritygroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dbsecuritygroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dbsecuritygroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/db_security_group aws_db_security_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/db_security_group aws_db_security_group}.
 type DbSecurityGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -415,7 +415,7 @@ func (j *jsiiProxy_DbSecurityGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/db_security_group aws_db_security_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/db_security_group aws_db_security_group} Resource.
 func NewDbSecurityGroup(scope constructs.Construct, id *string, config *DbSecurityGroupConfig) DbSecurityGroup {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewDbSecurityGroup(scope constructs.Construct, id *string, config *DbSecuri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/db_security_group aws_db_security_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/db_security_group aws_db_security_group} Resource.
 func NewDbSecurityGroup_Override(d DbSecurityGroup, scope constructs.Construct, id *string, config *DbSecurityGroupConfig) {
 	_init_.Initialize()
 

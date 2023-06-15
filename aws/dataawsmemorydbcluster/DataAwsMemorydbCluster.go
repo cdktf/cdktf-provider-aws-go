@@ -2,14 +2,14 @@ package dataawsmemorydbcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsmemorydbcluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsmemorydbcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/memorydb_cluster aws_memorydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_cluster aws_memorydb_cluster}.
 type DataAwsMemorydbCluster interface {
 	cdktf.TerraformDataSource
 	AclName() *string
@@ -558,7 +558,7 @@ func (j *jsiiProxy_DataAwsMemorydbCluster) TlsEnabled() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/memorydb_cluster aws_memorydb_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_cluster aws_memorydb_cluster} Data Source.
 func NewDataAwsMemorydbCluster(scope constructs.Construct, id *string, config *DataAwsMemorydbClusterConfig) DataAwsMemorydbCluster {
 	_init_.Initialize()
 
@@ -576,7 +576,7 @@ func NewDataAwsMemorydbCluster(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/memorydb_cluster aws_memorydb_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_cluster aws_memorydb_cluster} Data Source.
 func NewDataAwsMemorydbCluster_Override(d DataAwsMemorydbCluster, scope constructs.Construct, id *string, config *DataAwsMemorydbClusterConfig) {
 	_init_.Initialize()
 

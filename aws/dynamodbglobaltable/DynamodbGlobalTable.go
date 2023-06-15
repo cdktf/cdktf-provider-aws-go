@@ -2,14 +2,14 @@ package dynamodbglobaltable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dynamodbglobaltable/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dynamodbglobaltable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dynamodb_global_table aws_dynamodb_global_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dynamodb_global_table aws_dynamodb_global_table}.
 type DynamodbGlobalTable interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -367,7 +367,7 @@ func (j *jsiiProxy_DynamodbGlobalTable) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dynamodb_global_table aws_dynamodb_global_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dynamodb_global_table aws_dynamodb_global_table} Resource.
 func NewDynamodbGlobalTable(scope constructs.Construct, id *string, config *DynamodbGlobalTableConfig) DynamodbGlobalTable {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewDynamodbGlobalTable(scope constructs.Construct, id *string, config *Dyna
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dynamodb_global_table aws_dynamodb_global_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dynamodb_global_table aws_dynamodb_global_table} Resource.
 func NewDynamodbGlobalTable_Override(d DynamodbGlobalTable, scope constructs.Construct, id *string, config *DynamodbGlobalTableConfig) {
 	_init_.Initialize()
 

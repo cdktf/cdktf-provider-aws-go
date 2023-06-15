@@ -2,14 +2,14 @@ package ssmpatchbaseline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ssmpatchbaseline/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/ssmpatchbaseline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ssm_patch_baseline aws_ssm_patch_baseline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ssm_patch_baseline aws_ssm_patch_baseline}.
 type SsmPatchBaseline interface {
 	cdktf.TerraformResource
 	ApprovalRule() SsmPatchBaselineApprovalRuleList
@@ -608,7 +608,7 @@ func (j *jsiiProxy_SsmPatchBaseline) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ssm_patch_baseline aws_ssm_patch_baseline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ssm_patch_baseline aws_ssm_patch_baseline} Resource.
 func NewSsmPatchBaseline(scope constructs.Construct, id *string, config *SsmPatchBaselineConfig) SsmPatchBaseline {
 	_init_.Initialize()
 
@@ -626,7 +626,7 @@ func NewSsmPatchBaseline(scope constructs.Construct, id *string, config *SsmPatc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ssm_patch_baseline aws_ssm_patch_baseline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ssm_patch_baseline aws_ssm_patch_baseline} Resource.
 func NewSsmPatchBaseline_Override(s SsmPatchBaseline, scope constructs.Construct, id *string, config *SsmPatchBaselineConfig) {
 	_init_.Initialize()
 

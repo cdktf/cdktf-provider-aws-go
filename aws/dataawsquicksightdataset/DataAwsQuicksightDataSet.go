@@ -2,14 +2,14 @@ package dataawsquicksightdataset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsquicksightdataset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsquicksightdataset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/quicksight_data_set aws_quicksight_data_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/quicksight_data_set aws_quicksight_data_set}.
 type DataAwsQuicksightDataSet interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -498,7 +498,7 @@ func (j *jsiiProxy_DataAwsQuicksightDataSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/quicksight_data_set aws_quicksight_data_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/quicksight_data_set aws_quicksight_data_set} Data Source.
 func NewDataAwsQuicksightDataSet(scope constructs.Construct, id *string, config *DataAwsQuicksightDataSetConfig) DataAwsQuicksightDataSet {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewDataAwsQuicksightDataSet(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/quicksight_data_set aws_quicksight_data_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/quicksight_data_set aws_quicksight_data_set} Data Source.
 func NewDataAwsQuicksightDataSet_Override(d DataAwsQuicksightDataSet, scope constructs.Construct, id *string, config *DataAwsQuicksightDataSetConfig) {
 	_init_.Initialize()
 

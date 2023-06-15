@@ -2,14 +2,14 @@ package lblistenerrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/lblistenerrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/lblistenerrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/lb_listener_rule aws_lb_listener_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lb_listener_rule aws_lb_listener_rule}.
 type LbListenerRule interface {
 	cdktf.TerraformResource
 	Action() LbListenerRuleActionList
@@ -438,7 +438,7 @@ func (j *jsiiProxy_LbListenerRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/lb_listener_rule aws_lb_listener_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lb_listener_rule aws_lb_listener_rule} Resource.
 func NewLbListenerRule(scope constructs.Construct, id *string, config *LbListenerRuleConfig) LbListenerRule {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewLbListenerRule(scope constructs.Construct, id *string, config *LbListene
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/lb_listener_rule aws_lb_listener_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lb_listener_rule aws_lb_listener_rule} Resource.
 func NewLbListenerRule_Override(l LbListenerRule, scope constructs.Construct, id *string, config *LbListenerRuleConfig) {
 	_init_.Initialize()
 

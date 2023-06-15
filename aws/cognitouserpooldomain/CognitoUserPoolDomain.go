@@ -2,14 +2,14 @@ package cognitouserpooldomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/cognitouserpooldomain/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/cognitouserpooldomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cognito_user_pool_domain aws_cognito_user_pool_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cognito_user_pool_domain aws_cognito_user_pool_domain}.
 type CognitoUserPoolDomain interface {
 	cdktf.TerraformResource
 	AwsAccountId() *string
@@ -422,7 +422,7 @@ func (j *jsiiProxy_CognitoUserPoolDomain) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cognito_user_pool_domain aws_cognito_user_pool_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cognito_user_pool_domain aws_cognito_user_pool_domain} Resource.
 func NewCognitoUserPoolDomain(scope constructs.Construct, id *string, config *CognitoUserPoolDomainConfig) CognitoUserPoolDomain {
 	_init_.Initialize()
 
@@ -440,7 +440,7 @@ func NewCognitoUserPoolDomain(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cognito_user_pool_domain aws_cognito_user_pool_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cognito_user_pool_domain aws_cognito_user_pool_domain} Resource.
 func NewCognitoUserPoolDomain_Override(c CognitoUserPoolDomain, scope constructs.Construct, id *string, config *CognitoUserPoolDomainConfig) {
 	_init_.Initialize()
 

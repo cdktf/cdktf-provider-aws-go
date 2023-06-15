@@ -2,14 +2,14 @@ package mediapackagechannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/mediapackagechannel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/mediapackagechannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/media_package_channel aws_media_package_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/media_package_channel aws_media_package_channel}.
 type MediaPackageChannel interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_MediaPackageChannel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/media_package_channel aws_media_package_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/media_package_channel aws_media_package_channel} Resource.
 func NewMediaPackageChannel(scope constructs.Construct, id *string, config *MediaPackageChannelConfig) MediaPackageChannel {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewMediaPackageChannel(scope constructs.Construct, id *string, config *Medi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/media_package_channel aws_media_package_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/media_package_channel aws_media_package_channel} Resource.
 func NewMediaPackageChannel_Override(m MediaPackageChannel, scope constructs.Construct, id *string, config *MediaPackageChannelConfig) {
 	_init_.Initialize()
 

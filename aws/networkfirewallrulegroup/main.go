@@ -635,12 +635,12 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceList",
-		reflect.TypeOf((*NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceList)(nil)).Elem(),
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStruct",
+		reflect.TypeOf((*NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListOutputReference",
-		reflect.TypeOf((*NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListOutputReference)(nil)).Elem(),
+		"@cdktf/provider-aws.networkfirewallRuleGroup.NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStructOutputReference",
+		reflect.TypeOf((*NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -671,7 +671,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListOutputReference{}
+			j := jsiiProxy_NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

@@ -2,14 +2,14 @@ package ec2serialconsoleaccess
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ec2serialconsoleaccess/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/ec2serialconsoleaccess/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ec2_serial_console_access aws_ec2_serial_console_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ec2_serial_console_access aws_ec2_serial_console_access}.
 type Ec2SerialConsoleAccess interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -310,7 +310,7 @@ func (j *jsiiProxy_Ec2SerialConsoleAccess) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ec2_serial_console_access aws_ec2_serial_console_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ec2_serial_console_access aws_ec2_serial_console_access} Resource.
 func NewEc2SerialConsoleAccess(scope constructs.Construct, id *string, config *Ec2SerialConsoleAccessConfig) Ec2SerialConsoleAccess {
 	_init_.Initialize()
 
@@ -328,7 +328,7 @@ func NewEc2SerialConsoleAccess(scope constructs.Construct, id *string, config *E
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ec2_serial_console_access aws_ec2_serial_console_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ec2_serial_console_access aws_ec2_serial_console_access} Resource.
 func NewEc2SerialConsoleAccess_Override(e Ec2SerialConsoleAccess, scope constructs.Construct, id *string, config *Ec2SerialConsoleAccessConfig) {
 	_init_.Initialize()
 

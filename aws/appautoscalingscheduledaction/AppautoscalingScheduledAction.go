@@ -2,14 +2,14 @@ package appautoscalingscheduledaction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/appautoscalingscheduledaction/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/appautoscalingscheduledaction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appautoscaling_scheduled_action aws_appautoscaling_scheduled_action}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appautoscaling_scheduled_action aws_appautoscaling_scheduled_action}.
 type AppautoscalingScheduledAction interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -507,7 +507,7 @@ func (j *jsiiProxy_AppautoscalingScheduledAction) TimezoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appautoscaling_scheduled_action aws_appautoscaling_scheduled_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appautoscaling_scheduled_action aws_appautoscaling_scheduled_action} Resource.
 func NewAppautoscalingScheduledAction(scope constructs.Construct, id *string, config *AppautoscalingScheduledActionConfig) AppautoscalingScheduledAction {
 	_init_.Initialize()
 
@@ -525,7 +525,7 @@ func NewAppautoscalingScheduledAction(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appautoscaling_scheduled_action aws_appautoscaling_scheduled_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appautoscaling_scheduled_action aws_appautoscaling_scheduled_action} Resource.
 func NewAppautoscalingScheduledAction_Override(a AppautoscalingScheduledAction, scope constructs.Construct, id *string, config *AppautoscalingScheduledActionConfig) {
 	_init_.Initialize()
 

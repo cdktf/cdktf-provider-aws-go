@@ -2,14 +2,14 @@ package iamsamlprovider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/iamsamlprovider/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/iamsamlprovider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/iam_saml_provider aws_iam_saml_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_saml_provider aws_iam_saml_provider}.
 type IamSamlProvider interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -402,7 +402,7 @@ func (j *jsiiProxy_IamSamlProvider) ValidUntil() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/iam_saml_provider aws_iam_saml_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_saml_provider aws_iam_saml_provider} Resource.
 func NewIamSamlProvider(scope constructs.Construct, id *string, config *IamSamlProviderConfig) IamSamlProvider {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewIamSamlProvider(scope constructs.Construct, id *string, config *IamSamlP
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/iam_saml_provider aws_iam_saml_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_saml_provider aws_iam_saml_provider} Resource.
 func NewIamSamlProvider_Override(i IamSamlProvider, scope constructs.Construct, id *string, config *IamSamlProviderConfig) {
 	_init_.Initialize()
 

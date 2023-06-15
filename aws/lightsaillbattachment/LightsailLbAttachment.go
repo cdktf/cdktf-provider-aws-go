@@ -2,14 +2,14 @@ package lightsaillbattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/lightsaillbattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/lightsaillbattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/lightsail_lb_attachment aws_lightsail_lb_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lightsail_lb_attachment aws_lightsail_lb_attachment}.
 type LightsailLbAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_LightsailLbAttachment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/lightsail_lb_attachment aws_lightsail_lb_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lightsail_lb_attachment aws_lightsail_lb_attachment} Resource.
 func NewLightsailLbAttachment(scope constructs.Construct, id *string, config *LightsailLbAttachmentConfig) LightsailLbAttachment {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewLightsailLbAttachment(scope constructs.Construct, id *string, config *Li
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/lightsail_lb_attachment aws_lightsail_lb_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lightsail_lb_attachment aws_lightsail_lb_attachment} Resource.
 func NewLightsailLbAttachment_Override(l LightsailLbAttachment, scope constructs.Construct, id *string, config *LightsailLbAttachmentConfig) {
 	_init_.Initialize()
 

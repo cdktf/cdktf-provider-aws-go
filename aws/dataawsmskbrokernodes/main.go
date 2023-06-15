@@ -60,12 +60,12 @@ func init() {
 		reflect.TypeOf((*DataAwsMskBrokerNodesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoList",
-		reflect.TypeOf((*DataAwsMskBrokerNodesNodeInfoList)(nil)).Elem(),
+		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStruct",
+		reflect.TypeOf((*DataAwsMskBrokerNodesNodeInfoListStruct)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListList",
-		reflect.TypeOf((*DataAwsMskBrokerNodesNodeInfoListList)(nil)).Elem(),
+		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStructList",
+		reflect.TypeOf((*DataAwsMskBrokerNodesNodeInfoListStructList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
@@ -78,14 +78,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataAwsMskBrokerNodesNodeInfoListList{}
+			j := jsiiProxy_DataAwsMskBrokerNodesNodeInfoListStructList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListOutputReference",
-		reflect.TypeOf((*DataAwsMskBrokerNodesNodeInfoListOutputReference)(nil)).Elem(),
+		"@cdktf/provider-aws.dataAwsMskBrokerNodes.DataAwsMskBrokerNodesNodeInfoListStructOutputReference",
+		reflect.TypeOf((*DataAwsMskBrokerNodesNodeInfoListStructOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attachedEniId", GoGetter: "AttachedEniId"},
 			_jsii_.MemberProperty{JsiiProperty: "brokerId", GoGetter: "BrokerId"},
@@ -116,7 +116,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {
-			j := jsiiProxy_DataAwsMskBrokerNodesNodeInfoListOutputReference{}
+			j := jsiiProxy_DataAwsMskBrokerNodesNodeInfoListStructOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

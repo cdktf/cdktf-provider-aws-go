@@ -2,14 +2,14 @@ package apprunnervpcingressconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/apprunnervpcingressconnection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/apprunnervpcingressconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/apprunner_vpc_ingress_connection aws_apprunner_vpc_ingress_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/apprunner_vpc_ingress_connection aws_apprunner_vpc_ingress_connection}.
 type ApprunnerVpcIngressConnection interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -436,7 +436,7 @@ func (j *jsiiProxy_ApprunnerVpcIngressConnection) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/apprunner_vpc_ingress_connection aws_apprunner_vpc_ingress_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/apprunner_vpc_ingress_connection aws_apprunner_vpc_ingress_connection} Resource.
 func NewApprunnerVpcIngressConnection(scope constructs.Construct, id *string, config *ApprunnerVpcIngressConnectionConfig) ApprunnerVpcIngressConnection {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewApprunnerVpcIngressConnection(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/apprunner_vpc_ingress_connection aws_apprunner_vpc_ingress_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/apprunner_vpc_ingress_connection aws_apprunner_vpc_ingress_connection} Resource.
 func NewApprunnerVpcIngressConnection_Override(a ApprunnerVpcIngressConnection, scope constructs.Construct, id *string, config *ApprunnerVpcIngressConnectionConfig) {
 	_init_.Initialize()
 

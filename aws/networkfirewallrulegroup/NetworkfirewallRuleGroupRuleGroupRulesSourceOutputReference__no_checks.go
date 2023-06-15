@@ -44,7 +44,7 @@ func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference) 
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference) validatePutRulesSourceListParameters(value *NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceList) error {
+func (n *jsiiProxy_NetworkfirewallRuleGroupRuleGroupRulesSourceOutputReference) validatePutRulesSourceListParameters(value *NetworkfirewallRuleGroupRuleGroupRulesSourceRulesSourceListStruct) error {
 	return nil
 }
 

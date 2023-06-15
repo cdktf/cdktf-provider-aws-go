@@ -2,14 +2,14 @@ package batchjobdefinition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/batchjobdefinition/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/batchjobdefinition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/batch_job_definition aws_batch_job_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/batch_job_definition aws_batch_job_definition}.
 type BatchJobDefinition interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -546,7 +546,7 @@ func (j *jsiiProxy_BatchJobDefinition) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
 func NewBatchJobDefinition(scope constructs.Construct, id *string, config *BatchJobDefinitionConfig) BatchJobDefinition {
 	_init_.Initialize()
 
@@ -564,7 +564,7 @@ func NewBatchJobDefinition(scope constructs.Construct, id *string, config *Batch
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
 func NewBatchJobDefinition_Override(b BatchJobDefinition, scope constructs.Construct, id *string, config *BatchJobDefinitionConfig) {
 	_init_.Initialize()
 

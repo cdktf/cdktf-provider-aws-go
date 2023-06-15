@@ -2,14 +2,14 @@ package wafregionalsqlinjectionmatchset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafregionalsqlinjectionmatchset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/wafregionalsqlinjectionmatchset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/wafregional_sql_injection_match_set aws_wafregional_sql_injection_match_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafregional_sql_injection_match_set aws_wafregional_sql_injection_match_set}.
 type WafregionalSqlInjectionMatchSet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_WafregionalSqlInjectionMatchSet) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/wafregional_sql_injection_match_set aws_wafregional_sql_injection_match_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafregional_sql_injection_match_set aws_wafregional_sql_injection_match_set} Resource.
 func NewWafregionalSqlInjectionMatchSet(scope constructs.Construct, id *string, config *WafregionalSqlInjectionMatchSetConfig) WafregionalSqlInjectionMatchSet {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewWafregionalSqlInjectionMatchSet(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/wafregional_sql_injection_match_set aws_wafregional_sql_injection_match_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafregional_sql_injection_match_set aws_wafregional_sql_injection_match_set} Resource.
 func NewWafregionalSqlInjectionMatchSet_Override(w WafregionalSqlInjectionMatchSet, scope constructs.Construct, id *string, config *WafregionalSqlInjectionMatchSetConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package dataawsconnectquickconnect
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsconnectquickconnect/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsconnectquickconnect/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/connect_quick_connect aws_connect_quick_connect}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/connect_quick_connect aws_connect_quick_connect}.
 type DataAwsConnectQuickConnect interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -386,7 +386,7 @@ func (j *jsiiProxy_DataAwsConnectQuickConnect) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/connect_quick_connect aws_connect_quick_connect} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/connect_quick_connect aws_connect_quick_connect} Data Source.
 func NewDataAwsConnectQuickConnect(scope constructs.Construct, id *string, config *DataAwsConnectQuickConnectConfig) DataAwsConnectQuickConnect {
 	_init_.Initialize()
 
@@ -404,7 +404,7 @@ func NewDataAwsConnectQuickConnect(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/connect_quick_connect aws_connect_quick_connect} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/connect_quick_connect aws_connect_quick_connect} Data Source.
 func NewDataAwsConnectQuickConnect_Override(d DataAwsConnectQuickConnect, scope constructs.Construct, id *string, config *DataAwsConnectQuickConnectConfig) {
 	_init_.Initialize()
 

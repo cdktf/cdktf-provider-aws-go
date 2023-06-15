@@ -2,14 +2,14 @@ package vpcpeeringconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/vpcpeeringconnection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/vpcpeeringconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/vpc_peering_connection aws_vpc_peering_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection aws_vpc_peering_connection}.
 type VpcPeeringConnection interface {
 	cdktf.TerraformResource
 	Accepter() VpcPeeringConnectionAccepterOutputReference
@@ -535,7 +535,7 @@ func (j *jsiiProxy_VpcPeeringConnection) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/vpc_peering_connection aws_vpc_peering_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection aws_vpc_peering_connection} Resource.
 func NewVpcPeeringConnection(scope constructs.Construct, id *string, config *VpcPeeringConnectionConfig) VpcPeeringConnection {
 	_init_.Initialize()
 
@@ -553,7 +553,7 @@ func NewVpcPeeringConnection(scope constructs.Construct, id *string, config *Vpc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/vpc_peering_connection aws_vpc_peering_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_peering_connection aws_vpc_peering_connection} Resource.
 func NewVpcPeeringConnection_Override(v VpcPeeringConnection, scope constructs.Construct, id *string, config *VpcPeeringConnectionConfig) {
 	_init_.Initialize()
 

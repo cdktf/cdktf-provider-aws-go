@@ -2,14 +2,14 @@ package opsworkshaproxylayer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/opsworkshaproxylayer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworkshaproxylayer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_haproxy_layer aws_opsworks_haproxy_layer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_haproxy_layer aws_opsworks_haproxy_layer}.
 type OpsworksHaproxyLayer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -1015,7 +1015,7 @@ func (j *jsiiProxy_OpsworksHaproxyLayer) UseEbsOptimizedInstancesInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_haproxy_layer aws_opsworks_haproxy_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_haproxy_layer aws_opsworks_haproxy_layer} Resource.
 func NewOpsworksHaproxyLayer(scope constructs.Construct, id *string, config *OpsworksHaproxyLayerConfig) OpsworksHaproxyLayer {
 	_init_.Initialize()
 
@@ -1033,7 +1033,7 @@ func NewOpsworksHaproxyLayer(scope constructs.Construct, id *string, config *Ops
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_haproxy_layer aws_opsworks_haproxy_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_haproxy_layer aws_opsworks_haproxy_layer} Resource.
 func NewOpsworksHaproxyLayer_Override(o OpsworksHaproxyLayer, scope constructs.Construct, id *string, config *OpsworksHaproxyLayerConfig) {
 	_init_.Initialize()
 

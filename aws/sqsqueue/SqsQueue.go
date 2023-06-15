@@ -2,14 +2,14 @@ package sqsqueue
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/sqsqueue/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/sqsqueue/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sqs_queue aws_sqs_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sqs_queue aws_sqs_queue}.
 type SqsQueue interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -764,7 +764,7 @@ func (j *jsiiProxy_SqsQueue) VisibilityTimeoutSecondsInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sqs_queue aws_sqs_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sqs_queue aws_sqs_queue} Resource.
 func NewSqsQueue(scope constructs.Construct, id *string, config *SqsQueueConfig) SqsQueue {
 	_init_.Initialize()
 
@@ -782,7 +782,7 @@ func NewSqsQueue(scope constructs.Construct, id *string, config *SqsQueueConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sqs_queue aws_sqs_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sqs_queue aws_sqs_queue} Resource.
 func NewSqsQueue_Override(s SqsQueue, scope constructs.Construct, id *string, config *SqsQueueConfig) {
 	_init_.Initialize()
 

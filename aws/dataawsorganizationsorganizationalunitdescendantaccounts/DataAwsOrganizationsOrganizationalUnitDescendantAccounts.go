@@ -2,14 +2,14 @@ package dataawsorganizationsorganizationalunitdescendantaccounts
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsorganizationsorganizationalunitdescendantaccounts/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsorganizationsorganizationalunitdescendantaccounts/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/organizations_organizational_unit_descendant_accounts aws_organizations_organizational_unit_descendant_accounts}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/organizations_organizational_unit_descendant_accounts aws_organizations_organizational_unit_descendant_accounts}.
 type DataAwsOrganizationsOrganizationalUnitDescendantAccounts interface {
 	cdktf.TerraformDataSource
 	Accounts() DataAwsOrganizationsOrganizationalUnitDescendantAccountsAccountsList
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataAwsOrganizationsOrganizationalUnitDescendantAccounts) Ter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/organizations_organizational_unit_descendant_accounts aws_organizations_organizational_unit_descendant_accounts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/organizations_organizational_unit_descendant_accounts aws_organizations_organizational_unit_descendant_accounts} Data Source.
 func NewDataAwsOrganizationsOrganizationalUnitDescendantAccounts(scope constructs.Construct, id *string, config *DataAwsOrganizationsOrganizationalUnitDescendantAccountsConfig) DataAwsOrganizationsOrganizationalUnitDescendantAccounts {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataAwsOrganizationsOrganizationalUnitDescendantAccounts(scope construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/organizations_organizational_unit_descendant_accounts aws_organizations_organizational_unit_descendant_accounts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/organizations_organizational_unit_descendant_accounts aws_organizations_organizational_unit_descendant_accounts} Data Source.
 func NewDataAwsOrganizationsOrganizationalUnitDescendantAccounts_Override(d DataAwsOrganizationsOrganizationalUnitDescendantAccounts, scope constructs.Construct, id *string, config *DataAwsOrganizationsOrganizationalUnitDescendantAccountsConfig) {
 	_init_.Initialize()
 

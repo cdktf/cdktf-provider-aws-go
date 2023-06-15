@@ -2,14 +2,14 @@ package directoryservicetrust
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/directoryservicetrust/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/directoryservicetrust/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/directory_service_trust aws_directory_service_trust}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/directory_service_trust aws_directory_service_trust}.
 type DirectoryServiceTrust interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -516,7 +516,7 @@ func (j *jsiiProxy_DirectoryServiceTrust) TrustTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/directory_service_trust aws_directory_service_trust} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/directory_service_trust aws_directory_service_trust} Resource.
 func NewDirectoryServiceTrust(scope constructs.Construct, id *string, config *DirectoryServiceTrustConfig) DirectoryServiceTrust {
 	_init_.Initialize()
 
@@ -534,7 +534,7 @@ func NewDirectoryServiceTrust(scope constructs.Construct, id *string, config *Di
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/directory_service_trust aws_directory_service_trust} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/directory_service_trust aws_directory_service_trust} Resource.
 func NewDirectoryServiceTrust_Override(d DirectoryServiceTrust, scope constructs.Construct, id *string, config *DirectoryServiceTrustConfig) {
 	_init_.Initialize()
 

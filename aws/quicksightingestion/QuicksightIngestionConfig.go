@@ -19,13 +19,13 @@ type QuicksightIngestionConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/quicksight_ingestion#data_set_id QuicksightIngestion#data_set_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/quicksight_ingestion#data_set_id QuicksightIngestion#data_set_id}.
 	DataSetId *string `field:"required" json:"dataSetId" yaml:"dataSetId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/quicksight_ingestion#ingestion_id QuicksightIngestion#ingestion_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/quicksight_ingestion#ingestion_id QuicksightIngestion#ingestion_id}.
 	IngestionId *string `field:"required" json:"ingestionId" yaml:"ingestionId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/quicksight_ingestion#ingestion_type QuicksightIngestion#ingestion_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/quicksight_ingestion#ingestion_type QuicksightIngestion#ingestion_type}.
 	IngestionType *string `field:"required" json:"ingestionType" yaml:"ingestionType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/quicksight_ingestion#aws_account_id QuicksightIngestion#aws_account_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/quicksight_ingestion#aws_account_id QuicksightIngestion#aws_account_id}.
 	AwsAccountId *string `field:"optional" json:"awsAccountId" yaml:"awsAccountId"`
 }
 

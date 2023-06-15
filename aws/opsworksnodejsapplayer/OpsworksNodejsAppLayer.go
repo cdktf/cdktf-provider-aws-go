@@ -2,14 +2,14 @@ package opsworksnodejsapplayer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/opsworksnodejsapplayer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworksnodejsapplayer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_nodejs_app_layer aws_opsworks_nodejs_app_layer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_nodejs_app_layer aws_opsworks_nodejs_app_layer}.
 type OpsworksNodejsAppLayer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -896,7 +896,7 @@ func (j *jsiiProxy_OpsworksNodejsAppLayer) UseEbsOptimizedInstancesInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_nodejs_app_layer aws_opsworks_nodejs_app_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_nodejs_app_layer aws_opsworks_nodejs_app_layer} Resource.
 func NewOpsworksNodejsAppLayer(scope constructs.Construct, id *string, config *OpsworksNodejsAppLayerConfig) OpsworksNodejsAppLayer {
 	_init_.Initialize()
 
@@ -914,7 +914,7 @@ func NewOpsworksNodejsAppLayer(scope constructs.Construct, id *string, config *O
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_nodejs_app_layer aws_opsworks_nodejs_app_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_nodejs_app_layer aws_opsworks_nodejs_app_layer} Resource.
 func NewOpsworksNodejsAppLayer_Override(o OpsworksNodejsAppLayer, scope constructs.Construct, id *string, config *OpsworksNodejsAppLayerConfig) {
 	_init_.Initialize()
 

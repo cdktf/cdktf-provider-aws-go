@@ -2,14 +2,14 @@ package servicecatalogprovisioningartifact
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/servicecatalogprovisioningartifact/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/servicecatalogprovisioningartifact/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/servicecatalog_provisioning_artifact aws_servicecatalog_provisioning_artifact}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/servicecatalog_provisioning_artifact aws_servicecatalog_provisioning_artifact}.
 type ServicecatalogProvisioningArtifact interface {
 	cdktf.TerraformResource
 	AcceptLanguage() *string
@@ -571,7 +571,7 @@ func (j *jsiiProxy_ServicecatalogProvisioningArtifact) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/servicecatalog_provisioning_artifact aws_servicecatalog_provisioning_artifact} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/servicecatalog_provisioning_artifact aws_servicecatalog_provisioning_artifact} Resource.
 func NewServicecatalogProvisioningArtifact(scope constructs.Construct, id *string, config *ServicecatalogProvisioningArtifactConfig) ServicecatalogProvisioningArtifact {
 	_init_.Initialize()
 
@@ -589,7 +589,7 @@ func NewServicecatalogProvisioningArtifact(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/servicecatalog_provisioning_artifact aws_servicecatalog_provisioning_artifact} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/servicecatalog_provisioning_artifact aws_servicecatalog_provisioning_artifact} Resource.
 func NewServicecatalogProvisioningArtifact_Override(s ServicecatalogProvisioningArtifact, scope constructs.Construct, id *string, config *ServicecatalogProvisioningArtifactConfig) {
 	_init_.Initialize()
 

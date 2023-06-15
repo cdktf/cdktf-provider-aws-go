@@ -2,14 +2,14 @@ package backupplan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/backupplan/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/backupplan/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/backup_plan aws_backup_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/backup_plan aws_backup_plan}.
 type BackupPlan interface {
 	cdktf.TerraformResource
 	AdvancedBackupSetting() BackupPlanAdvancedBackupSettingList
@@ -426,7 +426,7 @@ func (j *jsiiProxy_BackupPlan) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/backup_plan aws_backup_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/backup_plan aws_backup_plan} Resource.
 func NewBackupPlan(scope constructs.Construct, id *string, config *BackupPlanConfig) BackupPlan {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewBackupPlan(scope constructs.Construct, id *string, config *BackupPlanCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/backup_plan aws_backup_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/backup_plan aws_backup_plan} Resource.
 func NewBackupPlan_Override(b BackupPlan, scope constructs.Construct, id *string, config *BackupPlanConfig) {
 	_init_.Initialize()
 

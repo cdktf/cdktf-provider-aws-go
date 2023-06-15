@@ -2,14 +2,14 @@ package chimevoiceconnector
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/chimevoiceconnector/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/chimevoiceconnector/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/chime_voice_connector aws_chime_voice_connector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/chime_voice_connector aws_chime_voice_connector}.
 type ChimeVoiceConnector interface {
 	cdktf.TerraformResource
 	AwsRegion() *string
@@ -367,7 +367,7 @@ func (j *jsiiProxy_ChimeVoiceConnector) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/chime_voice_connector aws_chime_voice_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/chime_voice_connector aws_chime_voice_connector} Resource.
 func NewChimeVoiceConnector(scope constructs.Construct, id *string, config *ChimeVoiceConnectorConfig) ChimeVoiceConnector {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewChimeVoiceConnector(scope constructs.Construct, id *string, config *Chim
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/chime_voice_connector aws_chime_voice_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/chime_voice_connector aws_chime_voice_connector} Resource.
 func NewChimeVoiceConnector_Override(c ChimeVoiceConnector, scope constructs.Construct, id *string, config *ChimeVoiceConnectorConfig) {
 	_init_.Initialize()
 

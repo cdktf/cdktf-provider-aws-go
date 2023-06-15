@@ -2,14 +2,14 @@ package codepipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/codepipeline/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/codepipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/codepipeline aws_codepipeline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/codepipeline aws_codepipeline}.
 type Codepipeline interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -437,7 +437,7 @@ func (j *jsiiProxy_Codepipeline) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/codepipeline aws_codepipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/codepipeline aws_codepipeline} Resource.
 func NewCodepipeline(scope constructs.Construct, id *string, config *CodepipelineConfig) Codepipeline {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewCodepipeline(scope constructs.Construct, id *string, config *Codepipelin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/codepipeline aws_codepipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/codepipeline aws_codepipeline} Resource.
 func NewCodepipeline_Override(c Codepipeline, scope constructs.Construct, id *string, config *CodepipelineConfig) {
 	_init_.Initialize()
 

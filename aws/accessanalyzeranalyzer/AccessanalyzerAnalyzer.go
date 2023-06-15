@@ -2,14 +2,14 @@ package accessanalyzeranalyzer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/accessanalyzeranalyzer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/accessanalyzeranalyzer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer}.
 type AccessanalyzerAnalyzer interface {
 	cdktf.TerraformResource
 	AnalyzerName() *string
@@ -392,7 +392,7 @@ func (j *jsiiProxy_AccessanalyzerAnalyzer) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer} Resource.
 func NewAccessanalyzerAnalyzer(scope constructs.Construct, id *string, config *AccessanalyzerAnalyzerConfig) AccessanalyzerAnalyzer {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewAccessanalyzerAnalyzer(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer} Resource.
 func NewAccessanalyzerAnalyzer_Override(a AccessanalyzerAnalyzer, scope constructs.Construct, id *string, config *AccessanalyzerAnalyzerConfig) {
 	_init_.Initialize()
 

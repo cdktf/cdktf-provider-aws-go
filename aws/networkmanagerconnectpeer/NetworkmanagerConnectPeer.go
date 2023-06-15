@@ -2,14 +2,14 @@ package networkmanagerconnectpeer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkmanagerconnectpeer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/networkmanagerconnectpeer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/networkmanager_connect_peer aws_networkmanager_connect_peer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/networkmanager_connect_peer aws_networkmanager_connect_peer}.
 type NetworkmanagerConnectPeer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -552,7 +552,7 @@ func (j *jsiiProxy_NetworkmanagerConnectPeer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/networkmanager_connect_peer aws_networkmanager_connect_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/networkmanager_connect_peer aws_networkmanager_connect_peer} Resource.
 func NewNetworkmanagerConnectPeer(scope constructs.Construct, id *string, config *NetworkmanagerConnectPeerConfig) NetworkmanagerConnectPeer {
 	_init_.Initialize()
 
@@ -570,7 +570,7 @@ func NewNetworkmanagerConnectPeer(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/networkmanager_connect_peer aws_networkmanager_connect_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/networkmanager_connect_peer aws_networkmanager_connect_peer} Resource.
 func NewNetworkmanagerConnectPeer_Override(n NetworkmanagerConnectPeer, scope constructs.Construct, id *string, config *NetworkmanagerConnectPeerConfig) {
 	_init_.Initialize()
 

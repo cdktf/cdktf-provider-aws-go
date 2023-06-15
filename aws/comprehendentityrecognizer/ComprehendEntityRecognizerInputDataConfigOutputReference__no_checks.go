@@ -56,7 +56,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) validatePutEntityListParameters(value *ComprehendEntityRecognizerInputDataConfigEntityList) error {
+func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) validatePutEntityListParameters(value *ComprehendEntityRecognizerInputDataConfigEntityListStruct) error {
 	return nil
 }
 

@@ -2,14 +2,14 @@ package opsworksstaticweblayer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/opsworksstaticweblayer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworksstaticweblayer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_static_web_layer aws_opsworks_static_web_layer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_static_web_layer aws_opsworks_static_web_layer}.
 type OpsworksStaticWebLayer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -872,7 +872,7 @@ func (j *jsiiProxy_OpsworksStaticWebLayer) UseEbsOptimizedInstancesInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_static_web_layer aws_opsworks_static_web_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_static_web_layer aws_opsworks_static_web_layer} Resource.
 func NewOpsworksStaticWebLayer(scope constructs.Construct, id *string, config *OpsworksStaticWebLayerConfig) OpsworksStaticWebLayer {
 	_init_.Initialize()
 
@@ -890,7 +890,7 @@ func NewOpsworksStaticWebLayer(scope constructs.Construct, id *string, config *O
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_static_web_layer aws_opsworks_static_web_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_static_web_layer aws_opsworks_static_web_layer} Resource.
 func NewOpsworksStaticWebLayer_Override(o OpsworksStaticWebLayer, scope constructs.Construct, id *string, config *OpsworksStaticWebLayerConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package dynamodbtablereplica
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dynamodbtablereplica/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dynamodbtablereplica/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica}.
 type DynamodbTableReplicaA interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -464,7 +464,7 @@ func (j *jsiiProxy_DynamodbTableReplicaA) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica} Resource.
 func NewDynamodbTableReplicaA(scope constructs.Construct, id *string, config *DynamodbTableReplicaAConfig) DynamodbTableReplicaA {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewDynamodbTableReplicaA(scope constructs.Construct, id *string, config *Dy
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica} Resource.
 func NewDynamodbTableReplicaA_Override(d DynamodbTableReplicaA, scope constructs.Construct, id *string, config *DynamodbTableReplicaAConfig) {
 	_init_.Initialize()
 

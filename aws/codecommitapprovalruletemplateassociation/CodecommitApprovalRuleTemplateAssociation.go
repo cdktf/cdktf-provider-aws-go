@@ -2,14 +2,14 @@ package codecommitapprovalruletemplateassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/codecommitapprovalruletemplateassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/codecommitapprovalruletemplateassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/codecommit_approval_rule_template_association aws_codecommit_approval_rule_template_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/codecommit_approval_rule_template_association aws_codecommit_approval_rule_template_association}.
 type CodecommitApprovalRuleTemplateAssociation interface {
 	cdktf.TerraformResource
 	ApprovalRuleTemplateName() *string
@@ -332,7 +332,7 @@ func (j *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/codecommit_approval_rule_template_association aws_codecommit_approval_rule_template_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/codecommit_approval_rule_template_association aws_codecommit_approval_rule_template_association} Resource.
 func NewCodecommitApprovalRuleTemplateAssociation(scope constructs.Construct, id *string, config *CodecommitApprovalRuleTemplateAssociationConfig) CodecommitApprovalRuleTemplateAssociation {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewCodecommitApprovalRuleTemplateAssociation(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/codecommit_approval_rule_template_association aws_codecommit_approval_rule_template_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/codecommit_approval_rule_template_association aws_codecommit_approval_rule_template_association} Resource.
 func NewCodecommitApprovalRuleTemplateAssociation_Override(c CodecommitApprovalRuleTemplateAssociation, scope constructs.Construct, id *string, config *CodecommitApprovalRuleTemplateAssociationConfig) {
 	_init_.Initialize()
 

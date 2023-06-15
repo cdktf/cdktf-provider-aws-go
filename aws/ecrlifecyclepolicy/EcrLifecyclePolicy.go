@@ -2,14 +2,14 @@ package ecrlifecyclepolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ecrlifecyclepolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/ecrlifecyclepolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ecr_lifecycle_policy aws_ecr_lifecycle_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ecr_lifecycle_policy aws_ecr_lifecycle_policy}.
 type EcrLifecyclePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_EcrLifecyclePolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ecr_lifecycle_policy aws_ecr_lifecycle_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ecr_lifecycle_policy aws_ecr_lifecycle_policy} Resource.
 func NewEcrLifecyclePolicy(scope constructs.Construct, id *string, config *EcrLifecyclePolicyConfig) EcrLifecyclePolicy {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewEcrLifecyclePolicy(scope constructs.Construct, id *string, config *EcrLi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ecr_lifecycle_policy aws_ecr_lifecycle_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ecr_lifecycle_policy aws_ecr_lifecycle_policy} Resource.
 func NewEcrLifecyclePolicy_Override(e EcrLifecyclePolicy, scope constructs.Construct, id *string, config *EcrLifecyclePolicyConfig) {
 	_init_.Initialize()
 

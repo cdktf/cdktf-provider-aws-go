@@ -2,7 +2,7 @@ package cognitouserpool
 
 
 type CognitoUserPoolSoftwareTokenMfaConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/cognito_user_pool#enabled CognitoUserPool#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cognito_user_pool#enabled CognitoUserPool#enabled}.
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 }
 

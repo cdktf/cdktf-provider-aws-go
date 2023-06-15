@@ -2,14 +2,14 @@ package ebsencryptionbydefault
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ebsencryptionbydefault/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/ebsencryptionbydefault/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ebs_encryption_by_default aws_ebs_encryption_by_default}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ebs_encryption_by_default aws_ebs_encryption_by_default}.
 type EbsEncryptionByDefault interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -310,7 +310,7 @@ func (j *jsiiProxy_EbsEncryptionByDefault) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ebs_encryption_by_default aws_ebs_encryption_by_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ebs_encryption_by_default aws_ebs_encryption_by_default} Resource.
 func NewEbsEncryptionByDefault(scope constructs.Construct, id *string, config *EbsEncryptionByDefaultConfig) EbsEncryptionByDefault {
 	_init_.Initialize()
 
@@ -328,7 +328,7 @@ func NewEbsEncryptionByDefault(scope constructs.Construct, id *string, config *E
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ebs_encryption_by_default aws_ebs_encryption_by_default} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ebs_encryption_by_default aws_ebs_encryption_by_default} Resource.
 func NewEbsEncryptionByDefault_Override(e EbsEncryptionByDefault, scope constructs.Construct, id *string, config *EbsEncryptionByDefaultConfig) {
 	_init_.Initialize()
 

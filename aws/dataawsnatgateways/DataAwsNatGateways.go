@@ -2,14 +2,14 @@ package dataawsnatgateways
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsnatgateways/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsnatgateways/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/nat_gateways aws_nat_gateways}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/nat_gateways aws_nat_gateways}.
 type DataAwsNatGateways interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -365,7 +365,7 @@ func (j *jsiiProxy_DataAwsNatGateways) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/nat_gateways aws_nat_gateways} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/nat_gateways aws_nat_gateways} Data Source.
 func NewDataAwsNatGateways(scope constructs.Construct, id *string, config *DataAwsNatGatewaysConfig) DataAwsNatGateways {
 	_init_.Initialize()
 
@@ -383,7 +383,7 @@ func NewDataAwsNatGateways(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/nat_gateways aws_nat_gateways} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/nat_gateways aws_nat_gateways} Data Source.
 func NewDataAwsNatGateways_Override(d DataAwsNatGateways, scope constructs.Construct, id *string, config *DataAwsNatGatewaysConfig) {
 	_init_.Initialize()
 

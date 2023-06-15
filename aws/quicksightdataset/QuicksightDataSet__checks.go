@@ -308,6 +308,17 @@ func (q *jsiiProxy_QuicksightDataSet) validatePutPhysicalTableMapParameters(valu
 	return nil
 }
 
+func (q *jsiiProxy_QuicksightDataSet) validatePutRefreshPropertiesParameters(value *QuicksightDataSetRefreshProperties) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightDataSet) validatePutRowLevelPermissionDataSetParameters(value *QuicksightDataSetRowLevelPermissionDataSet) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

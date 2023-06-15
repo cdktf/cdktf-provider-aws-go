@@ -2,14 +2,14 @@ package dataawsredshiftclustercredentials
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsredshiftclustercredentials/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsredshiftclustercredentials/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/redshift_cluster_credentials aws_redshift_cluster_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/redshift_cluster_credentials aws_redshift_cluster_credentials}.
 type DataAwsRedshiftClusterCredentials interface {
 	cdktf.TerraformDataSource
 	AutoCreate() interface{}
@@ -422,7 +422,7 @@ func (j *jsiiProxy_DataAwsRedshiftClusterCredentials) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/redshift_cluster_credentials aws_redshift_cluster_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/redshift_cluster_credentials aws_redshift_cluster_credentials} Data Source.
 func NewDataAwsRedshiftClusterCredentials(scope constructs.Construct, id *string, config *DataAwsRedshiftClusterCredentialsConfig) DataAwsRedshiftClusterCredentials {
 	_init_.Initialize()
 
@@ -440,7 +440,7 @@ func NewDataAwsRedshiftClusterCredentials(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/redshift_cluster_credentials aws_redshift_cluster_credentials} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/redshift_cluster_credentials aws_redshift_cluster_credentials} Data Source.
 func NewDataAwsRedshiftClusterCredentials_Override(d DataAwsRedshiftClusterCredentials, scope constructs.Construct, id *string, config *DataAwsRedshiftClusterCredentialsConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package ec2clientvpnnetworkassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ec2clientvpnnetworkassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/ec2clientvpnnetworkassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ec2_client_vpn_network_association aws_ec2_client_vpn_network_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ec2_client_vpn_network_association aws_ec2_client_vpn_network_association}.
 type Ec2ClientVpnNetworkAssociation interface {
 	cdktf.TerraformResource
 	AssociationId() *string
@@ -413,7 +413,7 @@ func (j *jsiiProxy_Ec2ClientVpnNetworkAssociation) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ec2_client_vpn_network_association aws_ec2_client_vpn_network_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ec2_client_vpn_network_association aws_ec2_client_vpn_network_association} Resource.
 func NewEc2ClientVpnNetworkAssociation(scope constructs.Construct, id *string, config *Ec2ClientVpnNetworkAssociationConfig) Ec2ClientVpnNetworkAssociation {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewEc2ClientVpnNetworkAssociation(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ec2_client_vpn_network_association aws_ec2_client_vpn_network_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ec2_client_vpn_network_association aws_ec2_client_vpn_network_association} Resource.
 func NewEc2ClientVpnNetworkAssociation_Override(e Ec2ClientVpnNetworkAssociation, scope constructs.Construct, id *string, config *Ec2ClientVpnNetworkAssociationConfig) {
 	_init_.Initialize()
 

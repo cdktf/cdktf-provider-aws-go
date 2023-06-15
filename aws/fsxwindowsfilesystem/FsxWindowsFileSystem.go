@@ -2,14 +2,14 @@ package fsxwindowsfilesystem
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/fsxwindowsfilesystem/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/fsxwindowsfilesystem/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system}.
 type FsxWindowsFileSystem interface {
 	cdktf.TerraformResource
 	ActiveDirectoryId() *string
@@ -865,7 +865,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem) WeeklyMaintenanceStartTimeInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system} Resource.
 func NewFsxWindowsFileSystem(scope constructs.Construct, id *string, config *FsxWindowsFileSystemConfig) FsxWindowsFileSystem {
 	_init_.Initialize()
 
@@ -883,7 +883,7 @@ func NewFsxWindowsFileSystem(scope constructs.Construct, id *string, config *Fsx
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system} Resource.
 func NewFsxWindowsFileSystem_Override(f FsxWindowsFileSystem, scope constructs.Construct, id *string, config *FsxWindowsFileSystemConfig) {
 	_init_.Initialize()
 

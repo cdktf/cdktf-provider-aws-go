@@ -2,14 +2,14 @@ package seseventdestination
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/seseventdestination/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/seseventdestination/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ses_event_destination aws_ses_event_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ses_event_destination aws_ses_event_destination}.
 type SesEventDestination interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -462,7 +462,7 @@ func (j *jsiiProxy_SesEventDestination) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ses_event_destination aws_ses_event_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ses_event_destination aws_ses_event_destination} Resource.
 func NewSesEventDestination(scope constructs.Construct, id *string, config *SesEventDestinationConfig) SesEventDestination {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewSesEventDestination(scope constructs.Construct, id *string, config *SesE
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ses_event_destination aws_ses_event_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ses_event_destination aws_ses_event_destination} Resource.
 func NewSesEventDestination_Override(s SesEventDestination, scope constructs.Construct, id *string, config *SesEventDestinationConfig) {
 	_init_.Initialize()
 

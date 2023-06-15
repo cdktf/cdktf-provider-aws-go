@@ -2,14 +2,14 @@ package connectlambdafunctionassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/connectlambdafunctionassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/connectlambdafunctionassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/connect_lambda_function_association aws_connect_lambda_function_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_lambda_function_association aws_connect_lambda_function_association}.
 type ConnectLambdaFunctionAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_ConnectLambdaFunctionAssociation) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/connect_lambda_function_association aws_connect_lambda_function_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_lambda_function_association aws_connect_lambda_function_association} Resource.
 func NewConnectLambdaFunctionAssociation(scope constructs.Construct, id *string, config *ConnectLambdaFunctionAssociationConfig) ConnectLambdaFunctionAssociation {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewConnectLambdaFunctionAssociation(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/connect_lambda_function_association aws_connect_lambda_function_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_lambda_function_association aws_connect_lambda_function_association} Resource.
 func NewConnectLambdaFunctionAssociation_Override(c ConnectLambdaFunctionAssociation, scope constructs.Construct, id *string, config *ConnectLambdaFunctionAssociationConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package quicksightdataset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/quicksightdataset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/quicksightdataset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/quicksight_data_set aws_quicksight_data_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/quicksight_data_set aws_quicksight_data_set}.
 type QuicksightDataSet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -68,6 +68,7 @@ type QuicksightDataSet interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OutputColumns() QuicksightDataSetOutputColumnsList
 	Permissions() QuicksightDataSetPermissionsList
 	PermissionsInput() interface{}
 	PhysicalTableMap() QuicksightDataSetPhysicalTableMapList
@@ -82,6 +83,8 @@ type QuicksightDataSet interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RefreshProperties() QuicksightDataSetRefreshPropertiesOutputReference
+	RefreshPropertiesInput() *QuicksightDataSetRefreshProperties
 	RowLevelPermissionDataSet() QuicksightDataSetRowLevelPermissionDataSetOutputReference
 	RowLevelPermissionDataSetInput() *QuicksightDataSetRowLevelPermissionDataSet
 	RowLevelPermissionTagConfiguration() QuicksightDataSetRowLevelPermissionTagConfigurationOutputReference
@@ -130,6 +133,7 @@ type QuicksightDataSet interface {
 	PutLogicalTableMap(value interface{})
 	PutPermissions(value interface{})
 	PutPhysicalTableMap(value interface{})
+	PutRefreshProperties(value *QuicksightDataSetRefreshProperties)
 	PutRowLevelPermissionDataSet(value *QuicksightDataSetRowLevelPermissionDataSet)
 	PutRowLevelPermissionTagConfiguration(value *QuicksightDataSetRowLevelPermissionTagConfiguration)
 	ResetAwsAccountId()
@@ -143,6 +147,7 @@ type QuicksightDataSet interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPermissions()
+	ResetRefreshProperties()
 	ResetRowLevelPermissionDataSet()
 	ResetRowLevelPermissionTagConfiguration()
 	ResetTags()
@@ -472,6 +477,16 @@ func (j *jsiiProxy_QuicksightDataSet) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_QuicksightDataSet) OutputColumns() QuicksightDataSetOutputColumnsList {
+	var returns QuicksightDataSetOutputColumnsList
+	_jsii_.Get(
+		j,
+		"outputColumns",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuicksightDataSet) Permissions() QuicksightDataSetPermissionsList {
 	var returns QuicksightDataSetPermissionsList
 	_jsii_.Get(
@@ -537,6 +552,26 @@ func (j *jsiiProxy_QuicksightDataSet) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightDataSet) RefreshProperties() QuicksightDataSetRefreshPropertiesOutputReference {
+	var returns QuicksightDataSetRefreshPropertiesOutputReference
+	_jsii_.Get(
+		j,
+		"refreshProperties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightDataSet) RefreshPropertiesInput() *QuicksightDataSetRefreshProperties {
+	var returns *QuicksightDataSetRefreshProperties
+	_jsii_.Get(
+		j,
+		"refreshPropertiesInput",
 		&returns,
 	)
 	return returns
@@ -653,7 +688,7 @@ func (j *jsiiProxy_QuicksightDataSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/quicksight_data_set aws_quicksight_data_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/quicksight_data_set aws_quicksight_data_set} Resource.
 func NewQuicksightDataSet(scope constructs.Construct, id *string, config *QuicksightDataSetConfig) QuicksightDataSet {
 	_init_.Initialize()
 
@@ -671,7 +706,7 @@ func NewQuicksightDataSet(scope constructs.Construct, id *string, config *Quicks
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/quicksight_data_set aws_quicksight_data_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/quicksight_data_set aws_quicksight_data_set} Resource.
 func NewQuicksightDataSet_Override(q QuicksightDataSet, scope constructs.Construct, id *string, config *QuicksightDataSetConfig) {
 	_init_.Initialize()
 
@@ -1170,6 +1205,17 @@ func (q *jsiiProxy_QuicksightDataSet) PutPhysicalTableMap(value interface{}) {
 	)
 }
 
+func (q *jsiiProxy_QuicksightDataSet) PutRefreshProperties(value *QuicksightDataSetRefreshProperties) {
+	if err := q.validatePutRefreshPropertiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"putRefreshProperties",
+		[]interface{}{value},
+	)
+}
+
 func (q *jsiiProxy_QuicksightDataSet) PutRowLevelPermissionDataSet(value *QuicksightDataSetRowLevelPermissionDataSet) {
 	if err := q.validatePutRowLevelPermissionDataSetParameters(value); err != nil {
 		panic(err)
@@ -1260,6 +1306,14 @@ func (q *jsiiProxy_QuicksightDataSet) ResetPermissions() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetPermissions",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuicksightDataSet) ResetRefreshProperties() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetRefreshProperties",
 		nil, // no parameters
 	)
 }

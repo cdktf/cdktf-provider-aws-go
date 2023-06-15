@@ -2,14 +2,14 @@ package eksaddon
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/eksaddon/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/eksaddon/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/eks_addon aws_eks_addon}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eks_addon aws_eks_addon}.
 type EksAddon interface {
 	cdktf.TerraformResource
 	AddonName() *string
@@ -557,7 +557,7 @@ func (j *jsiiProxy_EksAddon) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/eks_addon aws_eks_addon} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eks_addon aws_eks_addon} Resource.
 func NewEksAddon(scope constructs.Construct, id *string, config *EksAddonConfig) EksAddon {
 	_init_.Initialize()
 
@@ -575,7 +575,7 @@ func NewEksAddon(scope constructs.Construct, id *string, config *EksAddonConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/eks_addon aws_eks_addon} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eks_addon aws_eks_addon} Resource.
 func NewEksAddon_Override(e EksAddon, scope constructs.Construct, id *string, config *EksAddonConfig) {
 	_init_.Initialize()
 

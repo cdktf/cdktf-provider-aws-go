@@ -2,14 +2,14 @@ package dataawsservicecatalogportfolio
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsservicecatalogportfolio/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsservicecatalogportfolio/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/servicecatalog_portfolio aws_servicecatalog_portfolio}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/servicecatalog_portfolio aws_servicecatalog_portfolio}.
 type DataAwsServicecatalogPortfolio interface {
 	cdktf.TerraformDataSource
 	AcceptLanguage() *string
@@ -384,7 +384,7 @@ func (j *jsiiProxy_DataAwsServicecatalogPortfolio) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/servicecatalog_portfolio aws_servicecatalog_portfolio} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/servicecatalog_portfolio aws_servicecatalog_portfolio} Data Source.
 func NewDataAwsServicecatalogPortfolio(scope constructs.Construct, id *string, config *DataAwsServicecatalogPortfolioConfig) DataAwsServicecatalogPortfolio {
 	_init_.Initialize()
 
@@ -402,7 +402,7 @@ func NewDataAwsServicecatalogPortfolio(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/servicecatalog_portfolio aws_servicecatalog_portfolio} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/servicecatalog_portfolio aws_servicecatalog_portfolio} Data Source.
 func NewDataAwsServicecatalogPortfolio_Override(d DataAwsServicecatalogPortfolio, scope constructs.Construct, id *string, config *DataAwsServicecatalogPortfolioConfig) {
 	_init_.Initialize()
 

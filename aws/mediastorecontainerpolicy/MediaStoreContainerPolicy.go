@@ -2,14 +2,14 @@ package mediastorecontainerpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/mediastorecontainerpolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/mediastorecontainerpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/media_store_container_policy aws_media_store_container_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/media_store_container_policy aws_media_store_container_policy}.
 type MediaStoreContainerPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_MediaStoreContainerPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/media_store_container_policy aws_media_store_container_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/media_store_container_policy aws_media_store_container_policy} Resource.
 func NewMediaStoreContainerPolicy(scope constructs.Construct, id *string, config *MediaStoreContainerPolicyConfig) MediaStoreContainerPolicy {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewMediaStoreContainerPolicy(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/media_store_container_policy aws_media_store_container_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/media_store_container_policy aws_media_store_container_policy} Resource.
 func NewMediaStoreContainerPolicy_Override(m MediaStoreContainerPolicy, scope constructs.Construct, id *string, config *MediaStoreContainerPolicyConfig) {
 	_init_.Initialize()
 

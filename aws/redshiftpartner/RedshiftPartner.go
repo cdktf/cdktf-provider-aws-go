@@ -2,14 +2,14 @@ package redshiftpartner
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/redshiftpartner/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/redshiftpartner/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/redshift_partner aws_redshift_partner}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/redshift_partner aws_redshift_partner}.
 type RedshiftPartner interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -400,7 +400,7 @@ func (j *jsiiProxy_RedshiftPartner) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/redshift_partner aws_redshift_partner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/redshift_partner aws_redshift_partner} Resource.
 func NewRedshiftPartner(scope constructs.Construct, id *string, config *RedshiftPartnerConfig) RedshiftPartner {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewRedshiftPartner(scope constructs.Construct, id *string, config *Redshift
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/redshift_partner aws_redshift_partner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/redshift_partner aws_redshift_partner} Resource.
 func NewRedshiftPartner_Override(r RedshiftPartner, scope constructs.Construct, id *string, config *RedshiftPartnerConfig) {
 	_init_.Initialize()
 

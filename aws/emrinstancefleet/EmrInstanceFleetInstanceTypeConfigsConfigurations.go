@@ -2,9 +2,9 @@ package emrinstancefleet
 
 
 type EmrInstanceFleetInstanceTypeConfigsConfigurations struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/emr_instance_fleet#classification EmrInstanceFleet#classification}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/emr_instance_fleet#classification EmrInstanceFleet#classification}.
 	Classification *string `field:"optional" json:"classification" yaml:"classification"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/emr_instance_fleet#properties EmrInstanceFleet#properties}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/emr_instance_fleet#properties EmrInstanceFleet#properties}.
 	Properties *map[string]*string `field:"optional" json:"properties" yaml:"properties"`
 }
 

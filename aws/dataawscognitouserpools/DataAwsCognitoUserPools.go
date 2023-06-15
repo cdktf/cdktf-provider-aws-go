@@ -2,14 +2,14 @@ package dataawscognitouserpools
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawscognitouserpools/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawscognitouserpools/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/cognito_user_pools aws_cognito_user_pools}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/cognito_user_pools aws_cognito_user_pools}.
 type DataAwsCognitoUserPools interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -303,7 +303,7 @@ func (j *jsiiProxy_DataAwsCognitoUserPools) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/cognito_user_pools aws_cognito_user_pools} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/cognito_user_pools aws_cognito_user_pools} Data Source.
 func NewDataAwsCognitoUserPools(scope constructs.Construct, id *string, config *DataAwsCognitoUserPoolsConfig) DataAwsCognitoUserPools {
 	_init_.Initialize()
 
@@ -321,7 +321,7 @@ func NewDataAwsCognitoUserPools(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/cognito_user_pools aws_cognito_user_pools} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/cognito_user_pools aws_cognito_user_pools} Data Source.
 func NewDataAwsCognitoUserPools_Override(d DataAwsCognitoUserPools, scope constructs.Construct, id *string, config *DataAwsCognitoUserPoolsConfig) {
 	_init_.Initialize()
 

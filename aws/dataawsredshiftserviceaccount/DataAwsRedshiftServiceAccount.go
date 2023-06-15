@@ -2,14 +2,14 @@ package dataawsredshiftserviceaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsredshiftserviceaccount/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsredshiftserviceaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/redshift_service_account aws_redshift_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/redshift_service_account aws_redshift_service_account}.
 type DataAwsRedshiftServiceAccount interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DataAwsRedshiftServiceAccount) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/redshift_service_account aws_redshift_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/redshift_service_account aws_redshift_service_account} Data Source.
 func NewDataAwsRedshiftServiceAccount(scope constructs.Construct, id *string, config *DataAwsRedshiftServiceAccountConfig) DataAwsRedshiftServiceAccount {
 	_init_.Initialize()
 
@@ -311,7 +311,7 @@ func NewDataAwsRedshiftServiceAccount(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/redshift_service_account aws_redshift_service_account} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/redshift_service_account aws_redshift_service_account} Data Source.
 func NewDataAwsRedshiftServiceAccount_Override(d DataAwsRedshiftServiceAccount, scope constructs.Construct, id *string, config *DataAwsRedshiftServiceAccountConfig) {
 	_init_.Initialize()
 

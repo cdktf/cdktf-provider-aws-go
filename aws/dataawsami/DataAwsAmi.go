@@ -2,14 +2,14 @@ package dataawsami
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsami/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsami/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ami aws_ami}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ami aws_ami}.
 type DataAwsAmi interface {
 	cdktf.TerraformDataSource
 	Architecture() *string
@@ -791,7 +791,7 @@ func (j *jsiiProxy_DataAwsAmi) VirtualizationType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ami aws_ami} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ami aws_ami} Data Source.
 func NewDataAwsAmi(scope constructs.Construct, id *string, config *DataAwsAmiConfig) DataAwsAmi {
 	_init_.Initialize()
 
@@ -809,7 +809,7 @@ func NewDataAwsAmi(scope constructs.Construct, id *string, config *DataAwsAmiCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ami aws_ami} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ami aws_ami} Data Source.
 func NewDataAwsAmi_Override(d DataAwsAmi, scope constructs.Construct, id *string, config *DataAwsAmiConfig) {
 	_init_.Initialize()
 

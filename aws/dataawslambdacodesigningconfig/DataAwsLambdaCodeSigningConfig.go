@@ -2,14 +2,14 @@ package dataawslambdacodesigningconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawslambdacodesigningconfig/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawslambdacodesigningconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/lambda_code_signing_config aws_lambda_code_signing_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/lambda_code_signing_config aws_lambda_code_signing_config}.
 type DataAwsLambdaCodeSigningConfig interface {
 	cdktf.TerraformDataSource
 	AllowedPublishers() DataAwsLambdaCodeSigningConfigAllowedPublishersList
@@ -336,7 +336,7 @@ func (j *jsiiProxy_DataAwsLambdaCodeSigningConfig) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/lambda_code_signing_config aws_lambda_code_signing_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/lambda_code_signing_config aws_lambda_code_signing_config} Data Source.
 func NewDataAwsLambdaCodeSigningConfig(scope constructs.Construct, id *string, config *DataAwsLambdaCodeSigningConfigConfig) DataAwsLambdaCodeSigningConfig {
 	_init_.Initialize()
 
@@ -354,7 +354,7 @@ func NewDataAwsLambdaCodeSigningConfig(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/lambda_code_signing_config aws_lambda_code_signing_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/lambda_code_signing_config aws_lambda_code_signing_config} Data Source.
 func NewDataAwsLambdaCodeSigningConfig_Override(d DataAwsLambdaCodeSigningConfig, scope constructs.Construct, id *string, config *DataAwsLambdaCodeSigningConfigConfig) {
 	_init_.Initialize()
 

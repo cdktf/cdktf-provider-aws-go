@@ -2,14 +2,14 @@ package worklinkwebsitecertificateauthorityassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/worklinkwebsitecertificateauthorityassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/worklinkwebsitecertificateauthorityassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/worklink_website_certificate_authority_association aws_worklink_website_certificate_authority_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/worklink_website_certificate_authority_association aws_worklink_website_certificate_authority_association}.
 type WorklinkWebsiteCertificateAuthorityAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) WebsiteCaId()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/worklink_website_certificate_authority_association aws_worklink_website_certificate_authority_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/worklink_website_certificate_authority_association aws_worklink_website_certificate_authority_association} Resource.
 func NewWorklinkWebsiteCertificateAuthorityAssociation(scope constructs.Construct, id *string, config *WorklinkWebsiteCertificateAuthorityAssociationConfig) WorklinkWebsiteCertificateAuthorityAssociation {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewWorklinkWebsiteCertificateAuthorityAssociation(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/worklink_website_certificate_authority_association aws_worklink_website_certificate_authority_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/worklink_website_certificate_authority_association aws_worklink_website_certificate_authority_association} Resource.
 func NewWorklinkWebsiteCertificateAuthorityAssociation_Override(w WorklinkWebsiteCertificateAuthorityAssociation, scope constructs.Construct, id *string, config *WorklinkWebsiteCertificateAuthorityAssociationConfig) {
 	_init_.Initialize()
 

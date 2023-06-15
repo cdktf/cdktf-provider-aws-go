@@ -2,14 +2,14 @@ package dataawsec2transitgatewayattachments
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsec2transitgatewayattachments/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsec2transitgatewayattachments/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_transit_gateway_attachments aws_ec2_transit_gateway_attachments}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_transit_gateway_attachments aws_ec2_transit_gateway_attachments}.
 type DataAwsEc2TransitGatewayAttachments interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -341,7 +341,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayAttachments) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_transit_gateway_attachments aws_ec2_transit_gateway_attachments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_transit_gateway_attachments aws_ec2_transit_gateway_attachments} Data Source.
 func NewDataAwsEc2TransitGatewayAttachments(scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayAttachmentsConfig) DataAwsEc2TransitGatewayAttachments {
 	_init_.Initialize()
 
@@ -359,7 +359,7 @@ func NewDataAwsEc2TransitGatewayAttachments(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ec2_transit_gateway_attachments aws_ec2_transit_gateway_attachments} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ec2_transit_gateway_attachments aws_ec2_transit_gateway_attachments} Data Source.
 func NewDataAwsEc2TransitGatewayAttachments_Override(d DataAwsEc2TransitGatewayAttachments, scope constructs.Construct, id *string, config *DataAwsEc2TransitGatewayAttachmentsConfig) {
 	_init_.Initialize()
 

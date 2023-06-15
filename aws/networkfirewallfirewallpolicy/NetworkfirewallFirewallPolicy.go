@@ -2,14 +2,14 @@ package networkfirewallfirewallpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/networkfirewallfirewallpolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/networkfirewallfirewallpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/networkfirewall_firewall_policy aws_networkfirewall_firewall_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/networkfirewall_firewall_policy aws_networkfirewall_firewall_policy}.
 type NetworkfirewallFirewallPolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -450,7 +450,7 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicy) UpdateToken() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/networkfirewall_firewall_policy aws_networkfirewall_firewall_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/networkfirewall_firewall_policy aws_networkfirewall_firewall_policy} Resource.
 func NewNetworkfirewallFirewallPolicy(scope constructs.Construct, id *string, config *NetworkfirewallFirewallPolicyConfig) NetworkfirewallFirewallPolicy {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewNetworkfirewallFirewallPolicy(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/networkfirewall_firewall_policy aws_networkfirewall_firewall_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/networkfirewall_firewall_policy aws_networkfirewall_firewall_policy} Resource.
 func NewNetworkfirewallFirewallPolicy_Override(n NetworkfirewallFirewallPolicy, scope constructs.Construct, id *string, config *NetworkfirewallFirewallPolicyConfig) {
 	_init_.Initialize()
 

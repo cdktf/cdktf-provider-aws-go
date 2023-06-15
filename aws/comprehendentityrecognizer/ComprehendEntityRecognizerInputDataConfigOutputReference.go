@@ -2,9 +2,9 @@ package comprehendentityrecognizer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/comprehendentityrecognizer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/comprehendentityrecognizer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -34,8 +34,8 @@ type ComprehendEntityRecognizerInputDataConfigOutputReference interface {
 	DataFormatInput() *string
 	Documents() ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference
 	DocumentsInput() *ComprehendEntityRecognizerInputDataConfigDocuments
-	EntityList() ComprehendEntityRecognizerInputDataConfigEntityListOutputReference
-	EntityListInput() *ComprehendEntityRecognizerInputDataConfigEntityList
+	EntityList() ComprehendEntityRecognizerInputDataConfigEntityListStructOutputReference
+	EntityListInput() *ComprehendEntityRecognizerInputDataConfigEntityListStruct
 	EntityTypes() ComprehendEntityRecognizerInputDataConfigEntityTypesList
 	EntityTypesInput() interface{}
 	// Experimental.
@@ -77,7 +77,7 @@ type ComprehendEntityRecognizerInputDataConfigOutputReference interface {
 	PutAnnotations(value *ComprehendEntityRecognizerInputDataConfigAnnotations)
 	PutAugmentedManifests(value interface{})
 	PutDocuments(value *ComprehendEntityRecognizerInputDataConfigDocuments)
-	PutEntityList(value *ComprehendEntityRecognizerInputDataConfigEntityList)
+	PutEntityList(value *ComprehendEntityRecognizerInputDataConfigEntityListStruct)
 	PutEntityTypes(value interface{})
 	ResetAnnotations()
 	ResetAugmentedManifests()
@@ -209,8 +209,8 @@ func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Doc
 	return returns
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) EntityList() ComprehendEntityRecognizerInputDataConfigEntityListOutputReference {
-	var returns ComprehendEntityRecognizerInputDataConfigEntityListOutputReference
+func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) EntityList() ComprehendEntityRecognizerInputDataConfigEntityListStructOutputReference {
+	var returns ComprehendEntityRecognizerInputDataConfigEntityListStructOutputReference
 	_jsii_.Get(
 		j,
 		"entityList",
@@ -219,8 +219,8 @@ func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Ent
 	return returns
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) EntityListInput() *ComprehendEntityRecognizerInputDataConfigEntityList {
-	var returns *ComprehendEntityRecognizerInputDataConfigEntityList
+func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) EntityListInput() *ComprehendEntityRecognizerInputDataConfigEntityListStruct {
+	var returns *ComprehendEntityRecognizerInputDataConfigEntityListStruct
 	_jsii_.Get(
 		j,
 		"entityListInput",
@@ -602,7 +602,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) Put
 	)
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) PutEntityList(value *ComprehendEntityRecognizerInputDataConfigEntityList) {
+func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigOutputReference) PutEntityList(value *ComprehendEntityRecognizerInputDataConfigEntityListStruct) {
 	if err := c.validatePutEntityListParameters(value); err != nil {
 		panic(err)
 	}

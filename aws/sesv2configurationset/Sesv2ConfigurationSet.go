@@ -2,14 +2,14 @@ package sesv2configurationset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/sesv2configurationset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesv2configurationset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sesv2_configuration_set aws_sesv2_configuration_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sesv2_configuration_set aws_sesv2_configuration_set}.
 type Sesv2ConfigurationSet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -512,7 +512,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSet) VdmOptionsInput() *Sesv2ConfigurationS
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sesv2_configuration_set aws_sesv2_configuration_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sesv2_configuration_set aws_sesv2_configuration_set} Resource.
 func NewSesv2ConfigurationSet(scope constructs.Construct, id *string, config *Sesv2ConfigurationSetConfig) Sesv2ConfigurationSet {
 	_init_.Initialize()
 
@@ -530,7 +530,7 @@ func NewSesv2ConfigurationSet(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sesv2_configuration_set aws_sesv2_configuration_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sesv2_configuration_set aws_sesv2_configuration_set} Resource.
 func NewSesv2ConfigurationSet_Override(s Sesv2ConfigurationSet, scope constructs.Construct, id *string, config *Sesv2ConfigurationSetConfig) {
 	_init_.Initialize()
 

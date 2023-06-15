@@ -2,14 +2,14 @@ package sagemakerimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakerimage/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/sagemakerimage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sagemaker_image aws_sagemaker_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sagemaker_image aws_sagemaker_image}.
 type SagemakerImage interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -439,7 +439,7 @@ func (j *jsiiProxy_SagemakerImage) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sagemaker_image aws_sagemaker_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sagemaker_image aws_sagemaker_image} Resource.
 func NewSagemakerImage(scope constructs.Construct, id *string, config *SagemakerImageConfig) SagemakerImage {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewSagemakerImage(scope constructs.Construct, id *string, config *Sagemaker
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sagemaker_image aws_sagemaker_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sagemaker_image aws_sagemaker_image} Resource.
 func NewSagemakerImage_Override(s SagemakerImage, scope constructs.Construct, id *string, config *SagemakerImageConfig) {
 	_init_.Initialize()
 

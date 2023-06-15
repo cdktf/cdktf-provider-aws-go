@@ -2,14 +2,14 @@ package syntheticsgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/syntheticsgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/syntheticsgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/synthetics_group aws_synthetics_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/synthetics_group aws_synthetics_group}.
 type SyntheticsGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -379,7 +379,7 @@ func (j *jsiiProxy_SyntheticsGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/synthetics_group aws_synthetics_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/synthetics_group aws_synthetics_group} Resource.
 func NewSyntheticsGroup(scope constructs.Construct, id *string, config *SyntheticsGroupConfig) SyntheticsGroup {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewSyntheticsGroup(scope constructs.Construct, id *string, config *Syntheti
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/synthetics_group aws_synthetics_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/synthetics_group aws_synthetics_group} Resource.
 func NewSyntheticsGroup_Override(s SyntheticsGroup, scope constructs.Construct, id *string, config *SyntheticsGroupConfig) {
 	_init_.Initialize()
 

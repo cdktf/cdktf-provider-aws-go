@@ -2,14 +2,14 @@ package dataawsservicecatalogportfolioconstraints
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsservicecatalogportfolioconstraints/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsservicecatalogportfolioconstraints/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/servicecatalog_portfolio_constraints aws_servicecatalog_portfolio_constraints}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/servicecatalog_portfolio_constraints aws_servicecatalog_portfolio_constraints}.
 type DataAwsServicecatalogPortfolioConstraints interface {
 	cdktf.TerraformDataSource
 	AcceptLanguage() *string
@@ -364,7 +364,7 @@ func (j *jsiiProxy_DataAwsServicecatalogPortfolioConstraints) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/servicecatalog_portfolio_constraints aws_servicecatalog_portfolio_constraints} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/servicecatalog_portfolio_constraints aws_servicecatalog_portfolio_constraints} Data Source.
 func NewDataAwsServicecatalogPortfolioConstraints(scope constructs.Construct, id *string, config *DataAwsServicecatalogPortfolioConstraintsConfig) DataAwsServicecatalogPortfolioConstraints {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewDataAwsServicecatalogPortfolioConstraints(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/servicecatalog_portfolio_constraints aws_servicecatalog_portfolio_constraints} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/servicecatalog_portfolio_constraints aws_servicecatalog_portfolio_constraints} Data Source.
 func NewDataAwsServicecatalogPortfolioConstraints_Override(d DataAwsServicecatalogPortfolioConstraints, scope constructs.Construct, id *string, config *DataAwsServicecatalogPortfolioConstraintsConfig) {
 	_init_.Initialize()
 

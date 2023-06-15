@@ -2,14 +2,14 @@ package dataawsappconfigenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsappconfigenvironment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsappconfigenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/appconfig_environment aws_appconfig_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/appconfig_environment aws_appconfig_environment}.
 type DataAwsAppconfigEnvironment interface {
 	cdktf.TerraformDataSource
 	ApplicationId() *string
@@ -383,7 +383,7 @@ func (j *jsiiProxy_DataAwsAppconfigEnvironment) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/appconfig_environment aws_appconfig_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/appconfig_environment aws_appconfig_environment} Data Source.
 func NewDataAwsAppconfigEnvironment(scope constructs.Construct, id *string, config *DataAwsAppconfigEnvironmentConfig) DataAwsAppconfigEnvironment {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewDataAwsAppconfigEnvironment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/appconfig_environment aws_appconfig_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/appconfig_environment aws_appconfig_environment} Data Source.
 func NewDataAwsAppconfigEnvironment_Override(d DataAwsAppconfigEnvironment, scope constructs.Construct, id *string, config *DataAwsAppconfigEnvironmentConfig) {
 	_init_.Initialize()
 

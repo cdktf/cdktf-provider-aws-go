@@ -2,14 +2,14 @@ package dataawssnstopic
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawssnstopic/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawssnstopic/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/sns_topic aws_sns_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/sns_topic aws_sns_topic}.
 type DataAwsSnsTopic interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataAwsSnsTopic) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/sns_topic aws_sns_topic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/sns_topic aws_sns_topic} Data Source.
 func NewDataAwsSnsTopic(scope constructs.Construct, id *string, config *DataAwsSnsTopicConfig) DataAwsSnsTopic {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataAwsSnsTopic(scope constructs.Construct, id *string, config *DataAwsS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/sns_topic aws_sns_topic} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/sns_topic aws_sns_topic} Data Source.
 func NewDataAwsSnsTopic_Override(d DataAwsSnsTopic, scope constructs.Construct, id *string, config *DataAwsSnsTopicConfig) {
 	_init_.Initialize()
 

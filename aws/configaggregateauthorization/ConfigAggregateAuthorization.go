@@ -2,14 +2,14 @@ package configaggregateauthorization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/configaggregateauthorization/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/configaggregateauthorization/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/config_aggregate_authorization aws_config_aggregate_authorization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/config_aggregate_authorization aws_config_aggregate_authorization}.
 type ConfigAggregateAuthorization interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -391,7 +391,7 @@ func (j *jsiiProxy_ConfigAggregateAuthorization) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/config_aggregate_authorization aws_config_aggregate_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/config_aggregate_authorization aws_config_aggregate_authorization} Resource.
 func NewConfigAggregateAuthorization(scope constructs.Construct, id *string, config *ConfigAggregateAuthorizationConfig) ConfigAggregateAuthorization {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewConfigAggregateAuthorization(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/config_aggregate_authorization aws_config_aggregate_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/config_aggregate_authorization aws_config_aggregate_authorization} Resource.
 func NewConfigAggregateAuthorization_Override(c ConfigAggregateAuthorization, scope constructs.Construct, id *string, config *ConfigAggregateAuthorizationConfig) {
 	_init_.Initialize()
 

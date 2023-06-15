@@ -2,14 +2,14 @@ package chimevoiceconnectorterminationcredentials
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/chimevoiceconnectorterminationcredentials/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/chimevoiceconnectorterminationcredentials/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/chime_voice_connector_termination_credentials aws_chime_voice_connector_termination_credentials}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/chime_voice_connector_termination_credentials aws_chime_voice_connector_termination_credentials}.
 type ChimeVoiceConnectorTerminationCredentials interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorTerminationCredentials) VoiceConnectorIdIn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/chime_voice_connector_termination_credentials aws_chime_voice_connector_termination_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/chime_voice_connector_termination_credentials aws_chime_voice_connector_termination_credentials} Resource.
 func NewChimeVoiceConnectorTerminationCredentials(scope constructs.Construct, id *string, config *ChimeVoiceConnectorTerminationCredentialsConfig) ChimeVoiceConnectorTerminationCredentials {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewChimeVoiceConnectorTerminationCredentials(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/chime_voice_connector_termination_credentials aws_chime_voice_connector_termination_credentials} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/chime_voice_connector_termination_credentials aws_chime_voice_connector_termination_credentials} Resource.
 func NewChimeVoiceConnectorTerminationCredentials_Override(c ChimeVoiceConnectorTerminationCredentials, scope constructs.Construct, id *string, config *ChimeVoiceConnectorTerminationCredentialsConfig) {
 	_init_.Initialize()
 

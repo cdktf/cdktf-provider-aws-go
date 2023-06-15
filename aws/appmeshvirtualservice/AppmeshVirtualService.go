@@ -2,14 +2,14 @@ package appmeshvirtualservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/appmeshvirtualservice/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/appmeshvirtualservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appmesh_virtual_service aws_appmesh_virtual_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appmesh_virtual_service aws_appmesh_virtual_service}.
 type AppmeshVirtualService interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -471,7 +471,7 @@ func (j *jsiiProxy_AppmeshVirtualService) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appmesh_virtual_service aws_appmesh_virtual_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appmesh_virtual_service aws_appmesh_virtual_service} Resource.
 func NewAppmeshVirtualService(scope constructs.Construct, id *string, config *AppmeshVirtualServiceConfig) AppmeshVirtualService {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewAppmeshVirtualService(scope constructs.Construct, id *string, config *Ap
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appmesh_virtual_service aws_appmesh_virtual_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appmesh_virtual_service aws_appmesh_virtual_service} Resource.
 func NewAppmeshVirtualService_Override(a AppmeshVirtualService, scope constructs.Construct, id *string, config *AppmeshVirtualServiceConfig) {
 	_init_.Initialize()
 

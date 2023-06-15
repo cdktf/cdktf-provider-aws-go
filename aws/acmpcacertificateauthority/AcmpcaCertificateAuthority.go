@@ -2,14 +2,14 @@ package acmpcacertificateauthority
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/acmpcacertificateauthority/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/acmpcacertificateauthority/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/acmpca_certificate_authority aws_acmpca_certificate_authority}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/acmpca_certificate_authority aws_acmpca_certificate_authority}.
 type AcmpcaCertificateAuthority interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -48,6 +48,9 @@ type AcmpcaCertificateAuthority interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KeyStorageSecurityStandard() *string
+	SetKeyStorageSecurityStandard(val *string)
+	KeyStorageSecurityStandardInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -123,6 +126,7 @@ type AcmpcaCertificateAuthority interface {
 	PutTimeouts(value *AcmpcaCertificateAuthorityTimeouts)
 	ResetEnabled()
 	ResetId()
+	ResetKeyStorageSecurityStandard()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -323,6 +327,26 @@ func (j *jsiiProxy_AcmpcaCertificateAuthority) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AcmpcaCertificateAuthority) KeyStorageSecurityStandard() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyStorageSecurityStandard",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AcmpcaCertificateAuthority) KeyStorageSecurityStandardInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyStorageSecurityStandardInput",
 		&returns,
 	)
 	return returns
@@ -589,7 +613,7 @@ func (j *jsiiProxy_AcmpcaCertificateAuthority) UsageModeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/acmpca_certificate_authority aws_acmpca_certificate_authority} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/acmpca_certificate_authority aws_acmpca_certificate_authority} Resource.
 func NewAcmpcaCertificateAuthority(scope constructs.Construct, id *string, config *AcmpcaCertificateAuthorityConfig) AcmpcaCertificateAuthority {
 	_init_.Initialize()
 
@@ -607,7 +631,7 @@ func NewAcmpcaCertificateAuthority(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/acmpca_certificate_authority aws_acmpca_certificate_authority} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/acmpca_certificate_authority aws_acmpca_certificate_authority} Resource.
 func NewAcmpcaCertificateAuthority_Override(a AcmpcaCertificateAuthority, scope constructs.Construct, id *string, config *AcmpcaCertificateAuthorityConfig) {
 	_init_.Initialize()
 
@@ -674,6 +698,17 @@ func (j *jsiiProxy_AcmpcaCertificateAuthority)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AcmpcaCertificateAuthority)SetKeyStorageSecurityStandard(val *string) {
+	if err := j.validateSetKeyStorageSecurityStandardParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyStorageSecurityStandard",
 		val,
 	)
 }
@@ -1074,6 +1109,14 @@ func (a *jsiiProxy_AcmpcaCertificateAuthority) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AcmpcaCertificateAuthority) ResetKeyStorageSecurityStandard() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetKeyStorageSecurityStandard",
 		nil, // no parameters
 	)
 }

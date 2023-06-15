@@ -2,7 +2,7 @@ package appmeshvirtualgateway
 
 
 type AppmeshVirtualGatewaySpecListenerTlsValidationTrustFile struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/appmesh_virtual_gateway#certificate_chain AppmeshVirtualGateway#certificate_chain}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appmesh_virtual_gateway#certificate_chain AppmeshVirtualGateway#certificate_chain}.
 	CertificateChain *string `field:"required" json:"certificateChain" yaml:"certificateChain"`
 }
 

@@ -2,14 +2,14 @@ package kendrafaq
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/kendrafaq/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/kendrafaq/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/kendra_faq aws_kendra_faq}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/kendra_faq aws_kendra_faq}.
 type KendraFaq interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -588,7 +588,7 @@ func (j *jsiiProxy_KendraFaq) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/kendra_faq aws_kendra_faq} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/kendra_faq aws_kendra_faq} Resource.
 func NewKendraFaq(scope constructs.Construct, id *string, config *KendraFaqConfig) KendraFaq {
 	_init_.Initialize()
 
@@ -606,7 +606,7 @@ func NewKendraFaq(scope constructs.Construct, id *string, config *KendraFaqConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/kendra_faq aws_kendra_faq} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/kendra_faq aws_kendra_faq} Resource.
 func NewKendraFaq_Override(k KendraFaq, scope constructs.Construct, id *string, config *KendraFaqConfig) {
 	_init_.Initialize()
 

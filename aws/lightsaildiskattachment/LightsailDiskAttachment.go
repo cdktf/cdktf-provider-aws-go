@@ -2,14 +2,14 @@ package lightsaildiskattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/lightsaildiskattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/lightsaildiskattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/lightsail_disk_attachment aws_lightsail_disk_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lightsail_disk_attachment aws_lightsail_disk_attachment}.
 type LightsailDiskAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -355,7 +355,7 @@ func (j *jsiiProxy_LightsailDiskAttachment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/lightsail_disk_attachment aws_lightsail_disk_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lightsail_disk_attachment aws_lightsail_disk_attachment} Resource.
 func NewLightsailDiskAttachment(scope constructs.Construct, id *string, config *LightsailDiskAttachmentConfig) LightsailDiskAttachment {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewLightsailDiskAttachment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/lightsail_disk_attachment aws_lightsail_disk_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lightsail_disk_attachment aws_lightsail_disk_attachment} Resource.
 func NewLightsailDiskAttachment_Override(l LightsailDiskAttachment, scope constructs.Construct, id *string, config *LightsailDiskAttachmentConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package amicopy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/amicopy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/amicopy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_copy aws_ami_copy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_copy aws_ami_copy}.
 type AmiCopy interface {
 	cdktf.TerraformResource
 	Architecture() *string
@@ -837,7 +837,7 @@ func (j *jsiiProxy_AmiCopy) VirtualizationType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_copy aws_ami_copy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_copy aws_ami_copy} Resource.
 func NewAmiCopy(scope constructs.Construct, id *string, config *AmiCopyConfig) AmiCopy {
 	_init_.Initialize()
 
@@ -855,7 +855,7 @@ func NewAmiCopy(scope constructs.Construct, id *string, config *AmiCopyConfig) A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ami_copy aws_ami_copy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ami_copy aws_ami_copy} Resource.
 func NewAmiCopy_Override(a AmiCopy, scope constructs.Construct, id *string, config *AmiCopyConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package wafregionalrulegroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/wafregionalrulegroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/wafregionalrulegroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/wafregional_rule_group aws_wafregional_rule_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafregional_rule_group aws_wafregional_rule_group}.
 type WafregionalRuleGroup interface {
 	cdktf.TerraformResource
 	ActivatedRule() WafregionalRuleGroupActivatedRuleList
@@ -415,7 +415,7 @@ func (j *jsiiProxy_WafregionalRuleGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/wafregional_rule_group aws_wafregional_rule_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafregional_rule_group aws_wafregional_rule_group} Resource.
 func NewWafregionalRuleGroup(scope constructs.Construct, id *string, config *WafregionalRuleGroupConfig) WafregionalRuleGroup {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewWafregionalRuleGroup(scope constructs.Construct, id *string, config *Waf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/wafregional_rule_group aws_wafregional_rule_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafregional_rule_group aws_wafregional_rule_group} Resource.
 func NewWafregionalRuleGroup_Override(w WafregionalRuleGroup, scope constructs.Construct, id *string, config *WafregionalRuleGroupConfig) {
 	_init_.Initialize()
 

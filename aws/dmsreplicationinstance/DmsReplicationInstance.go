@@ -2,14 +2,14 @@ package dmsreplicationinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dmsreplicationinstance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dmsreplicationinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dms_replication_instance aws_dms_replication_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dms_replication_instance aws_dms_replication_instance}.
 type DmsReplicationInstance interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -725,7 +725,7 @@ func (j *jsiiProxy_DmsReplicationInstance) VpcSecurityGroupIdsInput() *[]*string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dms_replication_instance aws_dms_replication_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dms_replication_instance aws_dms_replication_instance} Resource.
 func NewDmsReplicationInstance(scope constructs.Construct, id *string, config *DmsReplicationInstanceConfig) DmsReplicationInstance {
 	_init_.Initialize()
 
@@ -743,7 +743,7 @@ func NewDmsReplicationInstance(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/dms_replication_instance aws_dms_replication_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dms_replication_instance aws_dms_replication_instance} Resource.
 func NewDmsReplicationInstance_Override(d DmsReplicationInstance, scope constructs.Construct, id *string, config *DmsReplicationInstanceConfig) {
 	_init_.Initialize()
 

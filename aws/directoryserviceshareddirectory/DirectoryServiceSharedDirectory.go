@@ -2,14 +2,14 @@ package directoryserviceshareddirectory
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/directoryserviceshareddirectory/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/directoryserviceshareddirectory/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/directory_service_shared_directory aws_directory_service_shared_directory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/directory_service_shared_directory aws_directory_service_shared_directory}.
 type DirectoryServiceSharedDirectory interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectory) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/directory_service_shared_directory aws_directory_service_shared_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/directory_service_shared_directory aws_directory_service_shared_directory} Resource.
 func NewDirectoryServiceSharedDirectory(scope constructs.Construct, id *string, config *DirectoryServiceSharedDirectoryConfig) DirectoryServiceSharedDirectory {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewDirectoryServiceSharedDirectory(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/directory_service_shared_directory aws_directory_service_shared_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/directory_service_shared_directory aws_directory_service_shared_directory} Resource.
 func NewDirectoryServiceSharedDirectory_Override(d DirectoryServiceSharedDirectory, scope constructs.Construct, id *string, config *DirectoryServiceSharedDirectoryConfig) {
 	_init_.Initialize()
 

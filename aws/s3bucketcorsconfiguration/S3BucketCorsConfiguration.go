@@ -2,14 +2,14 @@ package s3bucketcorsconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/s3bucketcorsconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/s3bucketcorsconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/s3_bucket_cors_configuration aws_s3_bucket_cors_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_cors_configuration aws_s3_bucket_cors_configuration}.
 type S3BucketCorsConfiguration interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -356,7 +356,7 @@ func (j *jsiiProxy_S3BucketCorsConfiguration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/s3_bucket_cors_configuration aws_s3_bucket_cors_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_cors_configuration aws_s3_bucket_cors_configuration} Resource.
 func NewS3BucketCorsConfiguration(scope constructs.Construct, id *string, config *S3BucketCorsConfigurationConfig) S3BucketCorsConfiguration {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewS3BucketCorsConfiguration(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/s3_bucket_cors_configuration aws_s3_bucket_cors_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_cors_configuration aws_s3_bucket_cors_configuration} Resource.
 func NewS3BucketCorsConfiguration_Override(s S3BucketCorsConfiguration, scope constructs.Construct, id *string, config *S3BucketCorsConfigurationConfig) {
 	_init_.Initialize()
 

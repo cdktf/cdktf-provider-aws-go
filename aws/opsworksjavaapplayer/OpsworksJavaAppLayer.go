@@ -2,14 +2,14 @@ package opsworksjavaapplayer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/opsworksjavaapplayer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworksjavaapplayer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_java_app_layer aws_opsworks_java_app_layer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_java_app_layer aws_opsworks_java_app_layer}.
 type OpsworksJavaAppLayer interface {
 	cdktf.TerraformResource
 	AppServer() *string
@@ -992,7 +992,7 @@ func (j *jsiiProxy_OpsworksJavaAppLayer) UseEbsOptimizedInstancesInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_java_app_layer aws_opsworks_java_app_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_java_app_layer aws_opsworks_java_app_layer} Resource.
 func NewOpsworksJavaAppLayer(scope constructs.Construct, id *string, config *OpsworksJavaAppLayerConfig) OpsworksJavaAppLayer {
 	_init_.Initialize()
 
@@ -1010,7 +1010,7 @@ func NewOpsworksJavaAppLayer(scope constructs.Construct, id *string, config *Ops
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/opsworks_java_app_layer aws_opsworks_java_app_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_java_app_layer aws_opsworks_java_app_layer} Resource.
 func NewOpsworksJavaAppLayer_Override(o OpsworksJavaAppLayer, scope constructs.Construct, id *string, config *OpsworksJavaAppLayerConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package ebssnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/ebssnapshot/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/ebssnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ebs_snapshot aws_ebs_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ebs_snapshot aws_ebs_snapshot}.
 type EbsSnapshot interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -578,7 +578,7 @@ func (j *jsiiProxy_EbsSnapshot) VolumeSize() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ebs_snapshot aws_ebs_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ebs_snapshot aws_ebs_snapshot} Resource.
 func NewEbsSnapshot(scope constructs.Construct, id *string, config *EbsSnapshotConfig) EbsSnapshot {
 	_init_.Initialize()
 
@@ -596,7 +596,7 @@ func NewEbsSnapshot(scope constructs.Construct, id *string, config *EbsSnapshotC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/ebs_snapshot aws_ebs_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ebs_snapshot aws_ebs_snapshot} Resource.
 func NewEbsSnapshot_Override(e EbsSnapshot, scope constructs.Construct, id *string, config *EbsSnapshotConfig) {
 	_init_.Initialize()
 

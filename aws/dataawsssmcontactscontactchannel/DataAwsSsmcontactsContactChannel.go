@@ -2,14 +2,14 @@ package dataawsssmcontactscontactchannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsssmcontactscontactchannel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsssmcontactscontactchannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ssmcontacts_contact_channel aws_ssmcontacts_contact_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ssmcontacts_contact_channel aws_ssmcontacts_contact_channel}.
 type DataAwsSsmcontactsContactChannel interface {
 	cdktf.TerraformDataSource
 	ActivationStatus() *string
@@ -336,7 +336,7 @@ func (j *jsiiProxy_DataAwsSsmcontactsContactChannel) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ssmcontacts_contact_channel aws_ssmcontacts_contact_channel} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ssmcontacts_contact_channel aws_ssmcontacts_contact_channel} Data Source.
 func NewDataAwsSsmcontactsContactChannel(scope constructs.Construct, id *string, config *DataAwsSsmcontactsContactChannelConfig) DataAwsSsmcontactsContactChannel {
 	_init_.Initialize()
 
@@ -354,7 +354,7 @@ func NewDataAwsSsmcontactsContactChannel(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/ssmcontacts_contact_channel aws_ssmcontacts_contact_channel} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/ssmcontacts_contact_channel aws_ssmcontacts_contact_channel} Data Source.
 func NewDataAwsSsmcontactsContactChannel_Override(d DataAwsSsmcontactsContactChannel, scope constructs.Construct, id *string, config *DataAwsSsmcontactsContactChannelConfig) {
 	_init_.Initialize()
 

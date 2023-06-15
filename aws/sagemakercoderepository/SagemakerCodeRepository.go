@@ -2,14 +2,14 @@ package sagemakercoderepository
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/sagemakercoderepository/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/sagemakercoderepository/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sagemaker_code_repository aws_sagemaker_code_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sagemaker_code_repository aws_sagemaker_code_repository}.
 type SagemakerCodeRepository interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -391,7 +391,7 @@ func (j *jsiiProxy_SagemakerCodeRepository) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sagemaker_code_repository aws_sagemaker_code_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sagemaker_code_repository aws_sagemaker_code_repository} Resource.
 func NewSagemakerCodeRepository(scope constructs.Construct, id *string, config *SagemakerCodeRepositoryConfig) SagemakerCodeRepository {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewSagemakerCodeRepository(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/resources/sagemaker_code_repository aws_sagemaker_code_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sagemaker_code_repository aws_sagemaker_code_repository} Resource.
 func NewSagemakerCodeRepository_Override(s SagemakerCodeRepository, scope constructs.Construct, id *string, config *SagemakerCodeRepositoryConfig) {
 	_init_.Initialize()
 

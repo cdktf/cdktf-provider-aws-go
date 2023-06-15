@@ -2,14 +2,14 @@ package dataawsdbinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v14/dataawsdbinstance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsdbinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/db_instance aws_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/db_instance aws_db_instance}.
 type DataAwsDbInstance interface {
 	cdktf.TerraformDataSource
 	Address() *string
@@ -745,7 +745,7 @@ func (j *jsiiProxy_DataAwsDbInstance) VpcSecurityGroups() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/db_instance aws_db_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/db_instance aws_db_instance} Data Source.
 func NewDataAwsDbInstance(scope constructs.Construct, id *string, config *DataAwsDbInstanceConfig) DataAwsDbInstance {
 	_init_.Initialize()
 
@@ -763,7 +763,7 @@ func NewDataAwsDbInstance(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.66.1/docs/data-sources/db_instance aws_db_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/db_instance aws_db_instance} Data Source.
 func NewDataAwsDbInstance_Override(d DataAwsDbInstance, scope constructs.Construct, id *string, config *DataAwsDbInstanceConfig) {
 	_init_.Initialize()
 
