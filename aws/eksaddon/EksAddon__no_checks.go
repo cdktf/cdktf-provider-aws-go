@@ -112,6 +112,14 @@ func (j *jsiiProxy_EksAddon) validateSetResolveConflictsParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_EksAddon) validateSetResolveConflictsOnCreateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_EksAddon) validateSetResolveConflictsOnUpdateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EksAddon) validateSetServiceAccountRoleArnParameters(val *string) error {
 	return nil
 }

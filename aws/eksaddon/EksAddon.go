@@ -2,14 +2,14 @@ package eksaddon
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/eksaddon/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/eksaddon/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eks_addon aws_eks_addon}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/eks_addon aws_eks_addon}.
 type EksAddon interface {
 	cdktf.TerraformResource
 	AddonName() *string
@@ -76,6 +76,12 @@ type EksAddon interface {
 	ResolveConflicts() *string
 	SetResolveConflicts(val *string)
 	ResolveConflictsInput() *string
+	ResolveConflictsOnCreate() *string
+	SetResolveConflictsOnCreate(val *string)
+	ResolveConflictsOnCreateInput() *string
+	ResolveConflictsOnUpdate() *string
+	SetResolveConflictsOnUpdate(val *string)
+	ResolveConflictsOnUpdateInput() *string
 	ServiceAccountRoleArn() *string
 	SetServiceAccountRoleArn(val *string)
 	ServiceAccountRoleArnInput() *string
@@ -127,6 +133,8 @@ type EksAddon interface {
 	ResetOverrideLogicalId()
 	ResetPreserve()
 	ResetResolveConflicts()
+	ResetResolveConflictsOnCreate()
+	ResetResolveConflictsOnUpdate()
 	ResetServiceAccountRoleArn()
 	ResetTags()
 	ResetTagsAll()
@@ -446,6 +454,46 @@ func (j *jsiiProxy_EksAddon) ResolveConflictsInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_EksAddon) ResolveConflictsOnCreate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resolveConflictsOnCreate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksAddon) ResolveConflictsOnCreateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resolveConflictsOnCreateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksAddon) ResolveConflictsOnUpdate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resolveConflictsOnUpdate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksAddon) ResolveConflictsOnUpdateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resolveConflictsOnUpdateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EksAddon) ServiceAccountRoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -557,7 +605,7 @@ func (j *jsiiProxy_EksAddon) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eks_addon aws_eks_addon} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/eks_addon aws_eks_addon} Resource.
 func NewEksAddon(scope constructs.Construct, id *string, config *EksAddonConfig) EksAddon {
 	_init_.Initialize()
 
@@ -575,7 +623,7 @@ func NewEksAddon(scope constructs.Construct, id *string, config *EksAddonConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eks_addon aws_eks_addon} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/eks_addon aws_eks_addon} Resource.
 func NewEksAddon_Override(e EksAddon, scope constructs.Construct, id *string, config *EksAddonConfig) {
 	_init_.Initialize()
 
@@ -727,6 +775,28 @@ func (j *jsiiProxy_EksAddon)SetResolveConflicts(val *string) {
 	_jsii_.Set(
 		j,
 		"resolveConflicts",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EksAddon)SetResolveConflictsOnCreate(val *string) {
+	if err := j.validateSetResolveConflictsOnCreateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resolveConflictsOnCreate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EksAddon)SetResolveConflictsOnUpdate(val *string) {
+	if err := j.validateSetResolveConflictsOnUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resolveConflictsOnUpdate",
 		val,
 	)
 }
@@ -1085,6 +1155,22 @@ func (e *jsiiProxy_EksAddon) ResetResolveConflicts() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetResolveConflicts",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksAddon) ResetResolveConflictsOnCreate() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetResolveConflictsOnCreate",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksAddon) ResetResolveConflictsOnUpdate() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetResolveConflictsOnUpdate",
 		nil, // no parameters
 	)
 }

@@ -165,6 +165,8 @@ func (j *jsiiProxy_DataAwsEbsSnapshotFilterOutputReference) validateSetComplexOb
 
 func (j *jsiiProxy_DataAwsEbsSnapshotFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataAwsEbsSnapshotFilter:
 		val := val.(*DataAwsEbsSnapshotFilter)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_DataAwsEbsSnapshotFilterOutputReference) validateSetInternalV
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataAwsEbsSnapshotFilter, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAwsEbsSnapshotFilter; received %#v (a %T)", val, val)
 		}
 	}
 

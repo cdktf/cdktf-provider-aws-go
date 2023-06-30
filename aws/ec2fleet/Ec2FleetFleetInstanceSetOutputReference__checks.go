@@ -181,6 +181,8 @@ func (j *jsiiProxy_Ec2FleetFleetInstanceSetOutputReference) validateSetInstanceT
 
 func (j *jsiiProxy_Ec2FleetFleetInstanceSetOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *Ec2FleetFleetInstanceSet:
 		val := val.(*Ec2FleetFleetInstanceSet)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_Ec2FleetFleetInstanceSetOutputReference) validateSetInternalV
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *Ec2FleetFleetInstanceSet, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *Ec2FleetFleetInstanceSet; received %#v (a %T)", val, val)
 		}
 	}
 

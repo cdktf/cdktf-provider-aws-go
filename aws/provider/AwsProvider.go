@@ -2,14 +2,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/provider/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs aws}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs aws}.
 type AwsProvider interface {
 	cdktf.TerraformProvider
 	AccessKey() *string
@@ -77,9 +77,9 @@ type AwsProvider interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
-	S3ForcePathStyle() interface{}
-	SetS3ForcePathStyle(val interface{})
-	S3ForcePathStyleInput() interface{}
+	RetryMode() *string
+	SetRetryMode(val *string)
+	RetryModeInput() *string
 	S3UsePathStyle() interface{}
 	SetS3UsePathStyle(val interface{})
 	S3UsePathStyleInput() interface{}
@@ -89,18 +89,12 @@ type AwsProvider interface {
 	SharedConfigFiles() *[]*string
 	SetSharedConfigFiles(val *[]*string)
 	SharedConfigFilesInput() *[]*string
-	SharedCredentialsFile() *string
-	SetSharedCredentialsFile(val *string)
-	SharedCredentialsFileInput() *string
 	SharedCredentialsFiles() *[]*string
 	SetSharedCredentialsFiles(val *[]*string)
 	SharedCredentialsFilesInput() *[]*string
 	SkipCredentialsValidation() interface{}
 	SetSkipCredentialsValidation(val interface{})
 	SkipCredentialsValidationInput() interface{}
-	SkipGetEc2Platforms() interface{}
-	SetSkipGetEc2Platforms(val interface{})
-	SkipGetEc2PlatformsInput() interface{}
 	SkipMetadataApiCheck() *string
 	SetSkipMetadataApiCheck(val *string)
 	SkipMetadataApiCheckInput() *string
@@ -153,14 +147,12 @@ type AwsProvider interface {
 	ResetOverrideLogicalId()
 	ResetProfile()
 	ResetRegion()
-	ResetS3ForcePathStyle()
+	ResetRetryMode()
 	ResetS3UsePathStyle()
 	ResetSecretKey()
 	ResetSharedConfigFiles()
-	ResetSharedCredentialsFile()
 	ResetSharedCredentialsFiles()
 	ResetSkipCredentialsValidation()
-	ResetSkipGetEc2Platforms()
 	ResetSkipMetadataApiCheck()
 	ResetSkipRegionValidation()
 	ResetSkipRequestingAccountId()
@@ -593,21 +585,21 @@ func (j *jsiiProxy_AwsProvider) RegionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) S3ForcePathStyle() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) RetryMode() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"s3ForcePathStyle",
+		"retryMode",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) S3ForcePathStyleInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_AwsProvider) RetryModeInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
-		"s3ForcePathStyleInput",
+		"retryModeInput",
 		&returns,
 	)
 	return returns
@@ -673,26 +665,6 @@ func (j *jsiiProxy_AwsProvider) SharedConfigFilesInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) SharedCredentialsFile() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"sharedCredentialsFile",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AwsProvider) SharedCredentialsFileInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"sharedCredentialsFileInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AwsProvider) SharedCredentialsFiles() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -728,26 +700,6 @@ func (j *jsiiProxy_AwsProvider) SkipCredentialsValidationInput() interface{} {
 	_jsii_.Get(
 		j,
 		"skipCredentialsValidationInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AwsProvider) SkipGetEc2Platforms() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGetEc2Platforms",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AwsProvider) SkipGetEc2PlatformsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipGetEc2PlatformsInput",
 		&returns,
 	)
 	return returns
@@ -924,7 +876,7 @@ func (j *jsiiProxy_AwsProvider) UseFipsEndpointInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs aws} Resource.
 func NewAwsProvider(scope constructs.Construct, id *string, config *AwsProviderConfig) AwsProvider {
 	_init_.Initialize()
 
@@ -942,7 +894,7 @@ func NewAwsProvider(scope constructs.Construct, id *string, config *AwsProviderC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs aws} Resource.
 func NewAwsProvider_Override(a AwsProvider, scope constructs.Construct, id *string, config *AwsProviderConfig) {
 	_init_.Initialize()
 
@@ -1107,13 +1059,10 @@ func (j *jsiiProxy_AwsProvider)SetRegion(val *string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetS3ForcePathStyle(val interface{}) {
-	if err := j.validateSetS3ForcePathStyleParameters(val); err != nil {
-		panic(err)
-	}
+func (j *jsiiProxy_AwsProvider)SetRetryMode(val *string) {
 	_jsii_.Set(
 		j,
-		"s3ForcePathStyle",
+		"retryMode",
 		val,
 	)
 }
@@ -1145,14 +1094,6 @@ func (j *jsiiProxy_AwsProvider)SetSharedConfigFiles(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_AwsProvider)SetSharedCredentialsFile(val *string) {
-	_jsii_.Set(
-		j,
-		"sharedCredentialsFile",
-		val,
-	)
-}
-
 func (j *jsiiProxy_AwsProvider)SetSharedCredentialsFiles(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -1168,17 +1109,6 @@ func (j *jsiiProxy_AwsProvider)SetSkipCredentialsValidation(val interface{}) {
 	_jsii_.Set(
 		j,
 		"skipCredentialsValidation",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AwsProvider)SetSkipGetEc2Platforms(val interface{}) {
-	if err := j.validateSetSkipGetEc2PlatformsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipGetEc2Platforms",
 		val,
 	)
 }
@@ -1501,10 +1431,10 @@ func (a *jsiiProxy_AwsProvider) ResetRegion() {
 	)
 }
 
-func (a *jsiiProxy_AwsProvider) ResetS3ForcePathStyle() {
+func (a *jsiiProxy_AwsProvider) ResetRetryMode() {
 	_jsii_.InvokeVoid(
 		a,
-		"resetS3ForcePathStyle",
+		"resetRetryMode",
 		nil, // no parameters
 	)
 }
@@ -1533,14 +1463,6 @@ func (a *jsiiProxy_AwsProvider) ResetSharedConfigFiles() {
 	)
 }
 
-func (a *jsiiProxy_AwsProvider) ResetSharedCredentialsFile() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSharedCredentialsFile",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AwsProvider) ResetSharedCredentialsFiles() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1553,14 +1475,6 @@ func (a *jsiiProxy_AwsProvider) ResetSkipCredentialsValidation() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSkipCredentialsValidation",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AwsProvider) ResetSkipGetEc2Platforms() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetSkipGetEc2Platforms",
 		nil, // no parameters
 	)
 }

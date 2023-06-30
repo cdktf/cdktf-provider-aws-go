@@ -2,9 +2,9 @@ package sagemakermodel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/sagemakermodel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/sagemakermodel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -46,6 +46,9 @@ type SagemakerModelContainerOutputReference interface {
 	ModelDataUrl() *string
 	SetModelDataUrl(val *string)
 	ModelDataUrlInput() *string
+	ModelPackageName() *string
+	SetModelPackageName(val *string)
+	ModelPackageNameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -81,9 +84,11 @@ type SagemakerModelContainerOutputReference interface {
 	PutImageConfig(value *SagemakerModelContainerImageConfig)
 	ResetContainerHostname()
 	ResetEnvironment()
+	ResetImage()
 	ResetImageConfig()
 	ResetMode()
 	ResetModelDataUrl()
+	ResetModelPackageName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -269,6 +274,26 @@ func (j *jsiiProxy_SagemakerModelContainerOutputReference) ModelDataUrlInput() *
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerModelContainerOutputReference) ModelPackageName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelPackageName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerModelContainerOutputReference) ModelPackageNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modelPackageNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerModelContainerOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -401,6 +426,17 @@ func (j *jsiiProxy_SagemakerModelContainerOutputReference)SetModelDataUrl(val *s
 	_jsii_.Set(
 		j,
 		"modelDataUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerModelContainerOutputReference)SetModelPackageName(val *string) {
+	if err := j.validateSetModelPackageNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"modelPackageName",
 		val,
 	)
 }
@@ -640,6 +676,14 @@ func (s *jsiiProxy_SagemakerModelContainerOutputReference) ResetEnvironment() {
 	)
 }
 
+func (s *jsiiProxy_SagemakerModelContainerOutputReference) ResetImage() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetImage",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SagemakerModelContainerOutputReference) ResetImageConfig() {
 	_jsii_.InvokeVoid(
 		s,
@@ -660,6 +704,14 @@ func (s *jsiiProxy_SagemakerModelContainerOutputReference) ResetModelDataUrl() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetModelDataUrl",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerModelContainerOutputReference) ResetModelPackageName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetModelPackageName",
 		nil, // no parameters
 	)
 }

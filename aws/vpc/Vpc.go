@@ -2,14 +2,14 @@ package vpc
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/vpc/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/vpc/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc aws_vpc}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/vpc aws_vpc}.
 type Vpc interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -39,12 +39,6 @@ type Vpc interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DhcpOptionsId() *string
-	EnableClassiclink() interface{}
-	SetEnableClassiclink(val interface{})
-	EnableClassiclinkDnsSupport() interface{}
-	SetEnableClassiclinkDnsSupport(val interface{})
-	EnableClassiclinkDnsSupportInput() interface{}
-	EnableClassiclinkInput() interface{}
 	EnableDnsHostnames() interface{}
 	SetEnableDnsHostnames(val interface{})
 	EnableDnsHostnamesInput() interface{}
@@ -144,8 +138,6 @@ type Vpc interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetAssignGeneratedIpv6CidrBlock()
 	ResetCidrBlock()
-	ResetEnableClassiclink()
-	ResetEnableClassiclinkDnsSupport()
 	ResetEnableDnsHostnames()
 	ResetEnableDnsSupport()
 	ResetEnableNetworkAddressUsageMetrics()
@@ -312,46 +304,6 @@ func (j *jsiiProxy_Vpc) DhcpOptionsId() *string {
 	_jsii_.Get(
 		j,
 		"dhcpOptionsId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Vpc) EnableClassiclink() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableClassiclink",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Vpc) EnableClassiclinkDnsSupport() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableClassiclinkDnsSupport",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Vpc) EnableClassiclinkDnsSupportInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableClassiclinkDnsSupportInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Vpc) EnableClassiclinkInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"enableClassiclinkInput",
 		&returns,
 	)
 	return returns
@@ -758,7 +710,7 @@ func (j *jsiiProxy_Vpc) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc aws_vpc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/vpc aws_vpc} Resource.
 func NewVpc(scope constructs.Construct, id *string, config *VpcConfig) Vpc {
 	_init_.Initialize()
 
@@ -776,7 +728,7 @@ func NewVpc(scope constructs.Construct, id *string, config *VpcConfig) Vpc {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc aws_vpc} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/vpc aws_vpc} Resource.
 func NewVpc_Override(v Vpc, scope constructs.Construct, id *string, config *VpcConfig) {
 	_init_.Initialize()
 
@@ -835,28 +787,6 @@ func (j *jsiiProxy_Vpc)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Vpc)SetEnableClassiclink(val interface{}) {
-	if err := j.validateSetEnableClassiclinkParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enableClassiclink",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Vpc)SetEnableClassiclinkDnsSupport(val interface{}) {
-	if err := j.validateSetEnableClassiclinkDnsSupportParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"enableClassiclinkDnsSupport",
 		val,
 	)
 }
@@ -1320,22 +1250,6 @@ func (v *jsiiProxy_Vpc) ResetCidrBlock() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetCidrBlock",
-		nil, // no parameters
-	)
-}
-
-func (v *jsiiProxy_Vpc) ResetEnableClassiclink() {
-	_jsii_.InvokeVoid(
-		v,
-		"resetEnableClassiclink",
-		nil, // no parameters
-	)
-}
-
-func (v *jsiiProxy_Vpc) ResetEnableClassiclinkDnsSupport() {
-	_jsii_.InvokeVoid(
-		v,
-		"resetEnableClassiclinkDnsSupport",
 		nil, // no parameters
 	)
 }

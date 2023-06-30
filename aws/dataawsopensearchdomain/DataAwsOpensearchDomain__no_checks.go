@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsOpensearchDomain) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsOpensearchDomain) validatePutOffPeakWindowOptionsParameters(value *DataAwsOpensearchDomainOffPeakWindowOptions) error {
+	return nil
+}
+
 func validateDataAwsOpensearchDomain_IsConstructParameters(x interface{}) error {
 	return nil
 }

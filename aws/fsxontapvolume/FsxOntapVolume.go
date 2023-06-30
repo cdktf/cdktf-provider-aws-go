@@ -2,14 +2,14 @@ package fsxontapvolume
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/fsxontapvolume/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/fsxontapvolume/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume}.
 type FsxOntapVolume interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -55,6 +55,8 @@ type FsxOntapVolume interface {
 	// The tree node.
 	Node() constructs.Node
 	OntapVolumeType() *string
+	SetOntapVolumeType(val *string)
+	OntapVolumeTypeInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -71,6 +73,9 @@ type FsxOntapVolume interface {
 	SizeInMegabytes() *float64
 	SetSizeInMegabytes(val *float64)
 	SizeInMegabytesInput() *float64
+	SkipFinalBackup() interface{}
+	SetSkipFinalBackup(val interface{})
+	SkipFinalBackupInput() interface{}
 	StorageEfficiencyEnabled() interface{}
 	SetStorageEfficiencyEnabled(val interface{})
 	StorageEfficiencyEnabledInput() interface{}
@@ -125,10 +130,14 @@ type FsxOntapVolume interface {
 	PutTieringPolicy(value *FsxOntapVolumeTieringPolicy)
 	PutTimeouts(value *FsxOntapVolumeTimeouts)
 	ResetId()
+	ResetJunctionPath()
+	ResetOntapVolumeType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSecurityStyle()
+	ResetSkipFinalBackup()
+	ResetStorageEfficiencyEnabled()
 	ResetTags()
 	ResetTagsAll()
 	ResetTieringPolicy()
@@ -349,6 +358,16 @@ func (j *jsiiProxy_FsxOntapVolume) OntapVolumeType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FsxOntapVolume) OntapVolumeTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ontapVolumeTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxOntapVolume) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -414,6 +433,26 @@ func (j *jsiiProxy_FsxOntapVolume) SizeInMegabytesInput() *float64 {
 	_jsii_.Get(
 		j,
 		"sizeInMegabytesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOntapVolume) SkipFinalBackup() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipFinalBackup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOntapVolume) SkipFinalBackupInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipFinalBackupInput",
 		&returns,
 	)
 	return returns
@@ -600,7 +639,7 @@ func (j *jsiiProxy_FsxOntapVolume) VolumeTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource.
 func NewFsxOntapVolume(scope constructs.Construct, id *string, config *FsxOntapVolumeConfig) FsxOntapVolume {
 	_init_.Initialize()
 
@@ -618,7 +657,7 @@ func NewFsxOntapVolume(scope constructs.Construct, id *string, config *FsxOntapV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource.
 func NewFsxOntapVolume_Override(f FsxOntapVolume, scope constructs.Construct, id *string, config *FsxOntapVolumeConfig) {
 	_init_.Initialize()
 
@@ -711,6 +750,17 @@ func (j *jsiiProxy_FsxOntapVolume)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_FsxOntapVolume)SetOntapVolumeType(val *string) {
+	if err := j.validateSetOntapVolumeTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ontapVolumeType",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FsxOntapVolume)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -748,6 +798,17 @@ func (j *jsiiProxy_FsxOntapVolume)SetSizeInMegabytes(val *float64) {
 	_jsii_.Set(
 		j,
 		"sizeInMegabytes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxOntapVolume)SetSkipFinalBackup(val interface{}) {
+	if err := j.validateSetSkipFinalBackupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipFinalBackup",
 		val,
 	)
 }
@@ -1103,6 +1164,22 @@ func (f *jsiiProxy_FsxOntapVolume) ResetId() {
 	)
 }
 
+func (f *jsiiProxy_FsxOntapVolume) ResetJunctionPath() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetJunctionPath",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOntapVolume) ResetOntapVolumeType() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetOntapVolumeType",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FsxOntapVolume) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
@@ -1115,6 +1192,22 @@ func (f *jsiiProxy_FsxOntapVolume) ResetSecurityStyle() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetSecurityStyle",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOntapVolume) ResetSkipFinalBackup() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetSkipFinalBackup",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOntapVolume) ResetStorageEfficiencyEnabled() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetStorageEfficiencyEnabled",
 		nil, // no parameters
 	)
 }

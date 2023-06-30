@@ -165,6 +165,8 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementAndStatementStatementSizeConstraintSt
 
 func (j *jsiiProxy_Wafv2WebAclRuleStatementAndStatementStatementSizeConstraintStatementTextTransformationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *Wafv2WebAclRuleStatementAndStatementStatementSizeConstraintStatementTextTransformation:
 		val := val.(*Wafv2WebAclRuleStatementAndStatementStatementSizeConstraintStatementTextTransformation)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementAndStatementStatementSizeConstraintSt
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *Wafv2WebAclRuleStatementAndStatementStatementSizeConstraintStatementTextTransformation, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *Wafv2WebAclRuleStatementAndStatementStatementSizeConstraintStatementTextTransformation; received %#v (a %T)", val, val)
 		}
 	}
 

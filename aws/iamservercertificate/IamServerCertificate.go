@@ -2,14 +2,14 @@ package iamservercertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/iamservercertificate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/iamservercertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_server_certificate aws_iam_server_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/iam_server_certificate aws_iam_server_certificate}.
 type IamServerCertificate interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -509,7 +509,7 @@ func (j *jsiiProxy_IamServerCertificate) UploadDate() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_server_certificate aws_iam_server_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/iam_server_certificate aws_iam_server_certificate} Resource.
 func NewIamServerCertificate(scope constructs.Construct, id *string, config *IamServerCertificateConfig) IamServerCertificate {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewIamServerCertificate(scope constructs.Construct, id *string, config *Iam
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_server_certificate aws_iam_server_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/iam_server_certificate aws_iam_server_certificate} Resource.
 func NewIamServerCertificate_Override(i IamServerCertificate, scope constructs.Construct, id *string, config *IamServerCertificateConfig) {
 	_init_.Initialize()
 

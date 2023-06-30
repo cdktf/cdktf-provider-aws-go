@@ -59,7 +59,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrefixListId", GoMethod: "ResetPrefixListId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetReferencedSecurityGroupId", GoMethod: "ResetReferencedSecurityGroupId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSecurityGroupId", GoMethod: "ResetSecurityGroupId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetToPort", GoMethod: "ResetToPort"},
 			_jsii_.MemberProperty{JsiiProperty: "securityGroupId", GoGetter: "SecurityGroupId"},

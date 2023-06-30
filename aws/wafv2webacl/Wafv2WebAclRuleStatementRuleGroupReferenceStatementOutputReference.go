@@ -2,9 +2,9 @@ package wafv2webacl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/wafv2webacl/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/wafv2webacl/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -28,12 +28,12 @@ type Wafv2WebAclRuleStatementRuleGroupReferenceStatementOutputReference interfac
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	ExcludedRule() Wafv2WebAclRuleStatementRuleGroupReferenceStatementExcludedRuleList
-	ExcludedRuleInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *Wafv2WebAclRuleStatementRuleGroupReferenceStatement
 	SetInternalValue(val *Wafv2WebAclRuleStatementRuleGroupReferenceStatement)
+	RuleActionOverride() Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideList
+	RuleActionOverrideInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -66,8 +66,8 @@ type Wafv2WebAclRuleStatementRuleGroupReferenceStatementOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutExcludedRule(value interface{})
-	ResetExcludedRule()
+	PutRuleActionOverride(value interface{})
+	ResetRuleActionOverride()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -133,26 +133,6 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementRuleGroupReferenceStatementOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclRuleStatementRuleGroupReferenceStatementOutputReference) ExcludedRule() Wafv2WebAclRuleStatementRuleGroupReferenceStatementExcludedRuleList {
-	var returns Wafv2WebAclRuleStatementRuleGroupReferenceStatementExcludedRuleList
-	_jsii_.Get(
-		j,
-		"excludedRule",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Wafv2WebAclRuleStatementRuleGroupReferenceStatementOutputReference) ExcludedRuleInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"excludedRuleInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_Wafv2WebAclRuleStatementRuleGroupReferenceStatementOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -168,6 +148,26 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementRuleGroupReferenceStatementOutputRefe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementRuleGroupReferenceStatementOutputReference) RuleActionOverride() Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideList {
+	var returns Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideList
+	_jsii_.Get(
+		j,
+		"ruleActionOverride",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementRuleGroupReferenceStatementOutputReference) RuleActionOverrideInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ruleActionOverrideInput",
 		&returns,
 	)
 	return returns
@@ -473,21 +473,21 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementRuleGroupReferenceStatementOutputRefe
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleStatementRuleGroupReferenceStatementOutputReference) PutExcludedRule(value interface{}) {
-	if err := w.validatePutExcludedRuleParameters(value); err != nil {
+func (w *jsiiProxy_Wafv2WebAclRuleStatementRuleGroupReferenceStatementOutputReference) PutRuleActionOverride(value interface{}) {
+	if err := w.validatePutRuleActionOverrideParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		w,
-		"putExcludedRule",
+		"putRuleActionOverride",
 		[]interface{}{value},
 	)
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleStatementRuleGroupReferenceStatementOutputReference) ResetExcludedRule() {
+func (w *jsiiProxy_Wafv2WebAclRuleStatementRuleGroupReferenceStatementOutputReference) ResetRuleActionOverride() {
 	_jsii_.InvokeVoid(
 		w,
-		"resetExcludedRule",
+		"resetRuleActionOverride",
 		nil, // no parameters
 	)
 }

@@ -2,14 +2,14 @@ package opsworksganglialayer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworksganglialayer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworksganglialayer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_ganglia_layer aws_opsworks_ganglia_layer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/opsworks_ganglia_layer aws_opsworks_ganglia_layer}.
 type OpsworksGangliaLayer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -943,7 +943,7 @@ func (j *jsiiProxy_OpsworksGangliaLayer) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_ganglia_layer aws_opsworks_ganglia_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/opsworks_ganglia_layer aws_opsworks_ganglia_layer} Resource.
 func NewOpsworksGangliaLayer(scope constructs.Construct, id *string, config *OpsworksGangliaLayerConfig) OpsworksGangliaLayer {
 	_init_.Initialize()
 
@@ -961,7 +961,7 @@ func NewOpsworksGangliaLayer(scope constructs.Construct, id *string, config *Ops
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_ganglia_layer aws_opsworks_ganglia_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/opsworks_ganglia_layer aws_opsworks_ganglia_layer} Resource.
 func NewOpsworksGangliaLayer_Override(o OpsworksGangliaLayer, scope constructs.Construct, id *string, config *OpsworksGangliaLayerConfig) {
 	_init_.Initialize()
 

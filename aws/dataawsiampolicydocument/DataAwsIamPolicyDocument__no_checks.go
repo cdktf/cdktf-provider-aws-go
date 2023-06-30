@@ -80,19 +80,11 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument) validateSetLifecycleParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocument) validateSetOverrideJsonParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsIamPolicyDocument) validateSetOverridePolicyDocumentsParameters(val *[]*string) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataAwsIamPolicyDocument) validateSetPolicyIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAwsIamPolicyDocument) validateSetSourceJsonParameters(val *string) error {
 	return nil
 }
 

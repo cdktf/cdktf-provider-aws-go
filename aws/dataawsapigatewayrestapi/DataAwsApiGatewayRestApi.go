@@ -2,14 +2,14 @@ package dataawsapigatewayrestapi
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsapigatewayrestapi/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsapigatewayrestapi/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/api_gateway_rest_api aws_api_gateway_rest_api}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/api_gateway_rest_api aws_api_gateway_rest_api}.
 type DataAwsApiGatewayRestApi interface {
 	cdktf.TerraformDataSource
 	ApiKeySource() *string
@@ -45,7 +45,7 @@ type DataAwsApiGatewayRestApi interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
-	MinimumCompressionSize() *float64
+	MinimumCompressionSize() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -273,8 +273,8 @@ func (j *jsiiProxy_DataAwsApiGatewayRestApi) Lifecycle() *cdktf.TerraformResourc
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsApiGatewayRestApi) MinimumCompressionSize() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsApiGatewayRestApi) MinimumCompressionSize() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"minimumCompressionSize",
@@ -404,7 +404,7 @@ func (j *jsiiProxy_DataAwsApiGatewayRestApi) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/api_gateway_rest_api aws_api_gateway_rest_api} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/api_gateway_rest_api aws_api_gateway_rest_api} Data Source.
 func NewDataAwsApiGatewayRestApi(scope constructs.Construct, id *string, config *DataAwsApiGatewayRestApiConfig) DataAwsApiGatewayRestApi {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewDataAwsApiGatewayRestApi(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/api_gateway_rest_api aws_api_gateway_rest_api} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/api_gateway_rest_api aws_api_gateway_rest_api} Data Source.
 func NewDataAwsApiGatewayRestApi_Override(d DataAwsApiGatewayRestApi, scope constructs.Construct, id *string, config *DataAwsApiGatewayRestApiConfig) {
 	_init_.Initialize()
 

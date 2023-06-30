@@ -184,6 +184,8 @@ func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMa
 
 func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMapping:
 		val := val.(*ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMapping)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -195,11 +197,9 @@ func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMa
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMapping, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMapping; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -2,14 +2,14 @@ package elasticachecluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/elasticachecluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticachecluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elasticache_cluster aws_elasticache_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/elasticache_cluster aws_elasticache_cluster}.
 type ElasticacheCluster interface {
 	cdktf.TerraformResource
 	ApplyImmediately() interface{}
@@ -125,9 +125,6 @@ type ElasticacheCluster interface {
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
-	SecurityGroupNames() *[]*string
-	SetSecurityGroupNames(val *[]*string)
-	SecurityGroupNamesInput() *[]*string
 	SnapshotArns() *[]*string
 	SetSnapshotArns(val *[]*string)
 	SnapshotArnsInput() *[]*string
@@ -206,7 +203,6 @@ type ElasticacheCluster interface {
 	ResetPreferredOutpostArn()
 	ResetReplicationGroupId()
 	ResetSecurityGroupIds()
-	ResetSecurityGroupNames()
 	ResetSnapshotArns()
 	ResetSnapshotName()
 	ResetSnapshotRetentionLimit()
@@ -869,26 +865,6 @@ func (j *jsiiProxy_ElasticacheCluster) SecurityGroupIdsInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheCluster) SecurityGroupNames() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"securityGroupNames",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ElasticacheCluster) SecurityGroupNamesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"securityGroupNamesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ElasticacheCluster) SnapshotArns() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1060,7 +1036,7 @@ func (j *jsiiProxy_ElasticacheCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elasticache_cluster aws_elasticache_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/elasticache_cluster aws_elasticache_cluster} Resource.
 func NewElasticacheCluster(scope constructs.Construct, id *string, config *ElasticacheClusterConfig) ElasticacheCluster {
 	_init_.Initialize()
 
@@ -1078,7 +1054,7 @@ func NewElasticacheCluster(scope constructs.Construct, id *string, config *Elast
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elasticache_cluster aws_elasticache_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/elasticache_cluster aws_elasticache_cluster} Resource.
 func NewElasticacheCluster_Override(e ElasticacheCluster, scope constructs.Construct, id *string, config *ElasticacheClusterConfig) {
 	_init_.Initialize()
 
@@ -1395,17 +1371,6 @@ func (j *jsiiProxy_ElasticacheCluster)SetSecurityGroupIds(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"securityGroupIds",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ElasticacheCluster)SetSecurityGroupNames(val *[]*string) {
-	if err := j.validateSetSecurityGroupNamesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"securityGroupNames",
 		val,
 	)
 }
@@ -1944,14 +1909,6 @@ func (e *jsiiProxy_ElasticacheCluster) ResetSecurityGroupIds() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetSecurityGroupIds",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_ElasticacheCluster) ResetSecurityGroupNames() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetSecurityGroupNames",
 		nil, // no parameters
 	)
 }

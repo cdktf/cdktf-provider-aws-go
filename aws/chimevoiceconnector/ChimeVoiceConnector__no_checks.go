@@ -96,6 +96,14 @@ func (j *jsiiProxy_ChimeVoiceConnector) validateSetRequireEncryptionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ChimeVoiceConnector) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_ChimeVoiceConnector) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewChimeVoiceConnectorParameters(scope constructs.Construct, id *string, config *ChimeVoiceConnectorConfig) error {
 	return nil
 }

@@ -2,9 +2,9 @@ package servicecatalogportfolio
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/servicecatalogportfolio/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/servicecatalogportfolio/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

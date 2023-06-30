@@ -2,14 +2,14 @@ package apigatewayv2routeresponse
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/apigatewayv2routeresponse/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayv2routeresponse/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/apigatewayv2_route_response aws_apigatewayv2_route_response}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/apigatewayv2_route_response aws_apigatewayv2_route_response}.
 type Apigatewayv2RouteResponse interface {
 	cdktf.TerraformResource
 	ApiId() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_Apigatewayv2RouteResponse) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/apigatewayv2_route_response aws_apigatewayv2_route_response} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/apigatewayv2_route_response aws_apigatewayv2_route_response} Resource.
 func NewApigatewayv2RouteResponse(scope constructs.Construct, id *string, config *Apigatewayv2RouteResponseConfig) Apigatewayv2RouteResponse {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewApigatewayv2RouteResponse(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/apigatewayv2_route_response aws_apigatewayv2_route_response} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/apigatewayv2_route_response aws_apigatewayv2_route_response} Resource.
 func NewApigatewayv2RouteResponse_Override(a Apigatewayv2RouteResponse, scope constructs.Construct, id *string, config *Apigatewayv2RouteResponseConfig) {
 	_init_.Initialize()
 

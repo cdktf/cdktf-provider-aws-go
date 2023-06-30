@@ -2,23 +2,17 @@ package vpcpeeringconnectionoptions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/vpcpeeringconnectionoptions/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/vpcpeeringconnectionoptions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type VpcPeeringConnectionOptionsAccepterOutputReference interface {
 	cdktf.ComplexObject
-	AllowClassicLinkToRemoteVpc() interface{}
-	SetAllowClassicLinkToRemoteVpc(val interface{})
-	AllowClassicLinkToRemoteVpcInput() interface{}
 	AllowRemoteVpcDnsResolution() interface{}
 	SetAllowRemoteVpcDnsResolution(val interface{})
 	AllowRemoteVpcDnsResolutionInput() interface{}
-	AllowVpcToRemoteClassicLink() interface{}
-	SetAllowVpcToRemoteClassicLink(val interface{})
-	AllowVpcToRemoteClassicLinkInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,9 +64,7 @@ type VpcPeeringConnectionOptionsAccepterOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetAllowClassicLinkToRemoteVpc()
 	ResetAllowRemoteVpcDnsResolution()
-	ResetAllowVpcToRemoteClassicLink()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -86,26 +78,6 @@ type VpcPeeringConnectionOptionsAccepterOutputReference interface {
 // The jsii proxy struct for VpcPeeringConnectionOptionsAccepterOutputReference
 type jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) AllowClassicLinkToRemoteVpc() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"allowClassicLinkToRemoteVpc",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) AllowClassicLinkToRemoteVpcInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"allowClassicLinkToRemoteVpcInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) AllowRemoteVpcDnsResolution() interface{} {
@@ -123,26 +95,6 @@ func (j *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) AllowRemo
 	_jsii_.Get(
 		j,
 		"allowRemoteVpcDnsResolutionInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) AllowVpcToRemoteClassicLink() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"allowVpcToRemoteClassicLink",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) AllowVpcToRemoteClassicLinkInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"allowVpcToRemoteClassicLinkInput",
 		&returns,
 	)
 	return returns
@@ -246,17 +198,6 @@ func NewVpcPeeringConnectionOptionsAccepterOutputReference_Override(v VpcPeering
 	)
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference)SetAllowClassicLinkToRemoteVpc(val interface{}) {
-	if err := j.validateSetAllowClassicLinkToRemoteVpcParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"allowClassicLinkToRemoteVpc",
-		val,
-	)
-}
-
 func (j *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference)SetAllowRemoteVpcDnsResolution(val interface{}) {
 	if err := j.validateSetAllowRemoteVpcDnsResolutionParameters(val); err != nil {
 		panic(err)
@@ -264,17 +205,6 @@ func (j *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference)SetAllowRe
 	_jsii_.Set(
 		j,
 		"allowRemoteVpcDnsResolution",
-		val,
-	)
-}
-
-func (j *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference)SetAllowVpcToRemoteClassicLink(val interface{}) {
-	if err := j.validateSetAllowVpcToRemoteClassicLinkParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"allowVpcToRemoteClassicLink",
 		val,
 	)
 }
@@ -520,26 +450,10 @@ func (v *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) Interpola
 	return returns
 }
 
-func (v *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) ResetAllowClassicLinkToRemoteVpc() {
-	_jsii_.InvokeVoid(
-		v,
-		"resetAllowClassicLinkToRemoteVpc",
-		nil, // no parameters
-	)
-}
-
 func (v *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) ResetAllowRemoteVpcDnsResolution() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetAllowRemoteVpcDnsResolution",
-		nil, // no parameters
-	)
-}
-
-func (v *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) ResetAllowVpcToRemoteClassicLink() {
-	_jsii_.InvokeVoid(
-		v,
-		"resetAllowVpcToRemoteClassicLink",
 		nil, // no parameters
 	)
 }

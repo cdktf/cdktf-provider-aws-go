@@ -165,6 +165,8 @@ func (j *jsiiProxy_SesReceiptRuleBounceActionOutputReference) validateSetComplex
 
 func (j *jsiiProxy_SesReceiptRuleBounceActionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *SesReceiptRuleBounceAction:
 		val := val.(*SesReceiptRuleBounceAction)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_SesReceiptRuleBounceActionOutputReference) validateSetInterna
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *SesReceiptRuleBounceAction, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SesReceiptRuleBounceAction; received %#v (a %T)", val, val)
 		}
 	}
 

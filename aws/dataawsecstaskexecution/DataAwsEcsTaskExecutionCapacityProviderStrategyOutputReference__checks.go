@@ -181,6 +181,8 @@ func (j *jsiiProxy_DataAwsEcsTaskExecutionCapacityProviderStrategyOutputReferenc
 
 func (j *jsiiProxy_DataAwsEcsTaskExecutionCapacityProviderStrategyOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataAwsEcsTaskExecutionCapacityProviderStrategy:
 		val := val.(*DataAwsEcsTaskExecutionCapacityProviderStrategy)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_DataAwsEcsTaskExecutionCapacityProviderStrategyOutputReferenc
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataAwsEcsTaskExecutionCapacityProviderStrategy, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAwsEcsTaskExecutionCapacityProviderStrategy; received %#v (a %T)", val, val)
 		}
 	}
 

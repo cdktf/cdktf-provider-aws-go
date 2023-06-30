@@ -60,7 +60,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberProperty{JsiiProperty: "securityGroupIds", GoGetter: "SecurityGroupIds"},
-			_jsii_.MemberProperty{JsiiProperty: "securityGroupNames", GoGetter: "SecurityGroupNames"},
 			_jsii_.MemberProperty{JsiiProperty: "snapshotRetentionLimit", GoGetter: "SnapshotRetentionLimit"},
 			_jsii_.MemberProperty{JsiiProperty: "snapshotWindow", GoGetter: "SnapshotWindow"},
 			_jsii_.MemberProperty{JsiiProperty: "subnetGroupName", GoGetter: "SubnetGroupName"},

@@ -165,6 +165,8 @@ func (j *jsiiProxy_DataAwsEcsTaskExecutionOverridesContainerOverridesResourceReq
 
 func (j *jsiiProxy_DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirementsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements:
 		val := val.(*DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_DataAwsEcsTaskExecutionOverridesContainerOverridesResourceReq
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAwsEcsTaskExecutionOverridesContainerOverridesResourceRequirements; received %#v (a %T)", val, val)
 		}
 	}
 

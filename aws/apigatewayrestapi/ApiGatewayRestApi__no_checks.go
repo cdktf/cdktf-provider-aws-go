@@ -108,7 +108,7 @@ func (j *jsiiProxy_ApiGatewayRestApi) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi) validateSetMinimumCompressionSizeParameters(val *float64) error {
+func (j *jsiiProxy_ApiGatewayRestApi) validateSetMinimumCompressionSizeParameters(val *string) error {
 	return nil
 }
 

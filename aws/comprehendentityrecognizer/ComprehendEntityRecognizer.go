@@ -2,14 +2,14 @@ package comprehendentityrecognizer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/comprehendentityrecognizer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/comprehendentityrecognizer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer}.
 type ComprehendEntityRecognizer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -581,7 +581,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizer) VpcConfigInput() *ComprehendEntit
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer} Resource.
 func NewComprehendEntityRecognizer(scope constructs.Construct, id *string, config *ComprehendEntityRecognizerConfig) ComprehendEntityRecognizer {
 	_init_.Initialize()
 
@@ -599,7 +599,7 @@ func NewComprehendEntityRecognizer(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer} Resource.
 func NewComprehendEntityRecognizer_Override(c ComprehendEntityRecognizer, scope constructs.Construct, id *string, config *ComprehendEntityRecognizerConfig) {
 	_init_.Initialize()
 

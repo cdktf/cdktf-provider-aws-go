@@ -176,6 +176,8 @@ func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsOutputReference) validateSetComp
 
 func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *EvidentlyLaunchMetricMonitors:
 		val := val.(*EvidentlyLaunchMetricMonitors)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -187,11 +189,9 @@ func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsOutputReference) validateSetInte
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *EvidentlyLaunchMetricMonitors, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *EvidentlyLaunchMetricMonitors; received %#v (a %T)", val, val)
 		}
 	}
 

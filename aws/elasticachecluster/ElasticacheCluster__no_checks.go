@@ -172,10 +172,6 @@ func (j *jsiiProxy_ElasticacheCluster) validateSetSecurityGroupIdsParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheCluster) validateSetSecurityGroupNamesParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ElasticacheCluster) validateSetSnapshotArnsParameters(val *[]*string) error {
 	return nil
 }

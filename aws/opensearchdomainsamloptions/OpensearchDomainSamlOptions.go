@@ -2,14 +2,14 @@ package opensearchdomainsamloptions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/opensearchdomainsamloptions/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/opensearchdomainsamloptions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opensearch_domain_saml_options aws_opensearch_domain_saml_options}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/opensearch_domain_saml_options aws_opensearch_domain_saml_options}.
 type OpensearchDomainSamlOptions interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_OpensearchDomainSamlOptions) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opensearch_domain_saml_options aws_opensearch_domain_saml_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/opensearch_domain_saml_options aws_opensearch_domain_saml_options} Resource.
 func NewOpensearchDomainSamlOptions(scope constructs.Construct, id *string, config *OpensearchDomainSamlOptionsConfig) OpensearchDomainSamlOptions {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewOpensearchDomainSamlOptions(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opensearch_domain_saml_options aws_opensearch_domain_saml_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/opensearch_domain_saml_options aws_opensearch_domain_saml_options} Resource.
 func NewOpensearchDomainSamlOptions_Override(o OpensearchDomainSamlOptions, scope constructs.Construct, id *string, config *OpensearchDomainSamlOptionsConfig) {
 	_init_.Initialize()
 

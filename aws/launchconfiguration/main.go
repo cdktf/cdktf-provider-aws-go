@@ -87,8 +87,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSpotPrice", GoMethod: "ResetSpotPrice"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUserData", GoMethod: "ResetUserData"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUserDataBase64", GoMethod: "ResetUserDataBase64"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVpcClassicLinkId", GoMethod: "ResetVpcClassicLinkId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetVpcClassicLinkSecurityGroups", GoMethod: "ResetVpcClassicLinkSecurityGroups"},
 			_jsii_.MemberProperty{JsiiProperty: "rootBlockDevice", GoGetter: "RootBlockDevice"},
 			_jsii_.MemberProperty{JsiiProperty: "rootBlockDeviceInput", GoGetter: "RootBlockDeviceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "securityGroups", GoGetter: "SecurityGroups"},
@@ -106,10 +104,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userDataBase64", GoGetter: "UserDataBase64"},
 			_jsii_.MemberProperty{JsiiProperty: "userDataBase64Input", GoGetter: "UserDataBase64Input"},
 			_jsii_.MemberProperty{JsiiProperty: "userDataInput", GoGetter: "UserDataInput"},
-			_jsii_.MemberProperty{JsiiProperty: "vpcClassicLinkId", GoGetter: "VpcClassicLinkId"},
-			_jsii_.MemberProperty{JsiiProperty: "vpcClassicLinkIdInput", GoGetter: "VpcClassicLinkIdInput"},
-			_jsii_.MemberProperty{JsiiProperty: "vpcClassicLinkSecurityGroups", GoGetter: "VpcClassicLinkSecurityGroups"},
-			_jsii_.MemberProperty{JsiiProperty: "vpcClassicLinkSecurityGroupsInput", GoGetter: "VpcClassicLinkSecurityGroupsInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchConfiguration{}

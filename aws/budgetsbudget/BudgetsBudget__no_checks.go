@@ -96,10 +96,6 @@ func (j *jsiiProxy_BudgetsBudget) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudget) validateSetCostFiltersParameters(val *map[string]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_BudgetsBudget) validateSetCountParameters(val interface{}) error {
 	return nil
 }

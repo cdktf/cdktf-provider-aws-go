@@ -2,14 +2,14 @@ package elastictranscoderpipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/elastictranscoderpipeline/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/elastictranscoderpipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elastictranscoder_pipeline aws_elastictranscoder_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/elastictranscoder_pipeline aws_elastictranscoder_pipeline}.
 type ElastictranscoderPipeline interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -535,7 +535,7 @@ func (j *jsiiProxy_ElastictranscoderPipeline) ThumbnailConfigPermissionsInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elastictranscoder_pipeline aws_elastictranscoder_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/elastictranscoder_pipeline aws_elastictranscoder_pipeline} Resource.
 func NewElastictranscoderPipeline(scope constructs.Construct, id *string, config *ElastictranscoderPipelineConfig) ElastictranscoderPipeline {
 	_init_.Initialize()
 
@@ -553,7 +553,7 @@ func NewElastictranscoderPipeline(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elastictranscoder_pipeline aws_elastictranscoder_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/elastictranscoder_pipeline aws_elastictranscoder_pipeline} Resource.
 func NewElastictranscoderPipeline_Override(e ElastictranscoderPipeline, scope constructs.Construct, id *string, config *ElastictranscoderPipelineConfig) {
 	_init_.Initialize()
 

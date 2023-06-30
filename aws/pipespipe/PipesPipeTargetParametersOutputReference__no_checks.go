@@ -44,6 +44,50 @@ func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validateInterpolati
 	return nil
 }
 
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutBatchJobParametersParameters(value *PipesPipeTargetParametersBatchJobParameters) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutCloudwatchLogsParametersParameters(value *PipesPipeTargetParametersCloudwatchLogsParameters) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutEcsTaskParametersParameters(value *PipesPipeTargetParametersEcsTaskParameters) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutEventbridgeEventBusParametersParameters(value *PipesPipeTargetParametersEventbridgeEventBusParameters) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutHttpParametersParameters(value *PipesPipeTargetParametersHttpParameters) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutKinesisStreamParametersParameters(value *PipesPipeTargetParametersKinesisStreamParameters) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutLambdaFunctionParametersParameters(value *PipesPipeTargetParametersLambdaFunctionParameters) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutRedshiftDataParametersParameters(value *PipesPipeTargetParametersRedshiftDataParameters) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutSagemakerPipelineParametersParameters(value *PipesPipeTargetParametersSagemakerPipelineParameters) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutSqsQueueParametersParameters(value *PipesPipeTargetParametersSqsQueueParameters) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutStepFunctionStateMachineParametersParameters(value *PipesPipeTargetParametersStepFunctionStateMachineParameters) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

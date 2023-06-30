@@ -184,6 +184,8 @@ func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleOutputRe
 
 func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule:
 		val := val.(*ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -195,11 +197,9 @@ func (j *jsiiProxy_ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleOutputRe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule; received %#v (a %T)", val, val)
 		}
 	}
 

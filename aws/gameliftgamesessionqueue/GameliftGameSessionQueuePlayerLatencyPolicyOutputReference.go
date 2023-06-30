@@ -2,9 +2,9 @@ package gameliftgamesessionqueue
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/gameliftgamesessionqueue/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/gameliftgamesessionqueue/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

@@ -2,14 +2,14 @@ package vpcsecuritygroupegressrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/vpcsecuritygroupegressrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/vpcsecuritygroupegressrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_security_group_egress_rule aws_vpc_security_group_egress_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/vpc_security_group_egress_rule aws_vpc_security_group_egress_rule}.
 type VpcSecurityGroupEgressRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -126,7 +126,6 @@ type VpcSecurityGroupEgressRule interface {
 	ResetOverrideLogicalId()
 	ResetPrefixListId()
 	ResetReferencedSecurityGroupId()
-	ResetSecurityGroupId()
 	ResetTags()
 	ResetToPort()
 	SynthesizeAttributes() *map[string]interface{}
@@ -545,7 +544,7 @@ func (j *jsiiProxy_VpcSecurityGroupEgressRule) ToPortInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_security_group_egress_rule aws_vpc_security_group_egress_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/vpc_security_group_egress_rule aws_vpc_security_group_egress_rule} Resource.
 func NewVpcSecurityGroupEgressRule(scope constructs.Construct, id *string, config *VpcSecurityGroupEgressRuleConfig) VpcSecurityGroupEgressRule {
 	_init_.Initialize()
 
@@ -563,7 +562,7 @@ func NewVpcSecurityGroupEgressRule(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_security_group_egress_rule aws_vpc_security_group_egress_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/vpc_security_group_egress_rule aws_vpc_security_group_egress_rule} Resource.
 func NewVpcSecurityGroupEgressRule_Override(v VpcSecurityGroupEgressRule, scope constructs.Construct, id *string, config *VpcSecurityGroupEgressRuleConfig) {
 	_init_.Initialize()
 
@@ -1070,14 +1069,6 @@ func (v *jsiiProxy_VpcSecurityGroupEgressRule) ResetReferencedSecurityGroupId() 
 	_jsii_.InvokeVoid(
 		v,
 		"resetReferencedSecurityGroupId",
-		nil, // no parameters
-	)
-}
-
-func (v *jsiiProxy_VpcSecurityGroupEgressRule) ResetSecurityGroupId() {
-	_jsii_.InvokeVoid(
-		v,
-		"resetSecurityGroupId",
 		nil, // no parameters
 	)
 }

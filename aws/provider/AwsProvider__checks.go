@@ -212,23 +212,6 @@ func (j *jsiiProxy_AwsProvider) validateSetInsecureParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetS3ForcePathStyleParameters(val interface{}) error {
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_AwsProvider) validateSetS3UsePathStyleParameters(val interface{}) error {
 	switch val.(type) {
 	case *bool:
@@ -247,23 +230,6 @@ func (j *jsiiProxy_AwsProvider) validateSetS3UsePathStyleParameters(val interfac
 }
 
 func (j *jsiiProxy_AwsProvider) validateSetSkipCredentialsValidationParameters(val interface{}) error {
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_AwsProvider) validateSetSkipGetEc2PlatformsParameters(val interface{}) error {
 	switch val.(type) {
 	case *bool:
 		// ok

@@ -181,6 +181,8 @@ func (j *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) validateSetDeleteP
 
 func (j *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *KinesisVideoStreamTimeouts:
 		val := val.(*KinesisVideoStreamTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) validateSetInterna
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *KinesisVideoStreamTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *KinesisVideoStreamTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

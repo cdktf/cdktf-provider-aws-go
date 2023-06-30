@@ -44,10 +44,6 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputRefere
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference) validatePutExcludedRuleParameters(value interface{}) error {
-	return nil
-}
-
 func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference) validatePutManagedRuleGroupConfigsParameters(value interface{}) error {
 	return nil
 }

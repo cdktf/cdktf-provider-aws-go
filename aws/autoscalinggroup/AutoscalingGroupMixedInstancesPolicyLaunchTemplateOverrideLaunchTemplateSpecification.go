@@ -2,11 +2,11 @@ package autoscalinggroup
 
 
 type AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#launch_template_id AutoscalingGroup#launch_template_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/autoscaling_group#launch_template_id AutoscalingGroup#launch_template_id}.
 	LaunchTemplateId *string `field:"optional" json:"launchTemplateId" yaml:"launchTemplateId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#launch_template_name AutoscalingGroup#launch_template_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/autoscaling_group#launch_template_name AutoscalingGroup#launch_template_name}.
 	LaunchTemplateName *string `field:"optional" json:"launchTemplateName" yaml:"launchTemplateName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group#version AutoscalingGroup#version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/autoscaling_group#version AutoscalingGroup#version}.
 	Version *string `field:"optional" json:"version" yaml:"version"`
 }
 

@@ -44,14 +44,6 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference)
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) validatePutAllQueryArgumentsParameters(value *Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArguments) error {
-	return nil
-}
-
-func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) validatePutBodyParameters(value *Wafv2WebAclLoggingConfigurationRedactedFieldsBody) error {
-	return nil
-}
-
 func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) validatePutMethodParameters(value *Wafv2WebAclLoggingConfigurationRedactedFieldsMethod) error {
 	return nil
 }
@@ -61,10 +53,6 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference)
 }
 
 func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) validatePutSingleHeaderParameters(value *Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader) error {
-	return nil
-}
-
-func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) validatePutSingleQueryArgumentParameters(value *Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgument) error {
 	return nil
 }
 

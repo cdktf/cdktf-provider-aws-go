@@ -181,6 +181,8 @@ func (j *jsiiProxy_BackupFrameworkTimeoutsOutputReference) validateSetDeletePara
 
 func (j *jsiiProxy_BackupFrameworkTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *BackupFrameworkTimeouts:
 		val := val.(*BackupFrameworkTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_BackupFrameworkTimeoutsOutputReference) validateSetInternalVa
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *BackupFrameworkTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *BackupFrameworkTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

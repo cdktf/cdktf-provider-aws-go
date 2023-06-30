@@ -44,10 +44,6 @@ func (c *jsiiProxy_CodebuildProjectSourceOutputReference) validateInterpolationF
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectSourceOutputReference) validatePutAuthParameters(value *CodebuildProjectSourceAuth) error {
-	return nil
-}
-
 func (c *jsiiProxy_CodebuildProjectSourceOutputReference) validatePutBuildStatusConfigParameters(value *CodebuildProjectSourceBuildStatusConfig) error {
 	return nil
 }

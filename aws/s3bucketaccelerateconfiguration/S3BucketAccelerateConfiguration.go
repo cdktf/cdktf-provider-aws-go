@@ -2,14 +2,14 @@ package s3bucketaccelerateconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/s3bucketaccelerateconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/s3bucketaccelerateconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_accelerate_configuration aws_s3_bucket_accelerate_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/s3_bucket_accelerate_configuration aws_s3_bucket_accelerate_configuration}.
 type S3BucketAccelerateConfiguration interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -356,7 +356,7 @@ func (j *jsiiProxy_S3BucketAccelerateConfiguration) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_accelerate_configuration aws_s3_bucket_accelerate_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/s3_bucket_accelerate_configuration aws_s3_bucket_accelerate_configuration} Resource.
 func NewS3BucketAccelerateConfiguration(scope constructs.Construct, id *string, config *S3BucketAccelerateConfigurationConfig) S3BucketAccelerateConfiguration {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewS3BucketAccelerateConfiguration(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/s3_bucket_accelerate_configuration aws_s3_bucket_accelerate_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/s3_bucket_accelerate_configuration aws_s3_bucket_accelerate_configuration} Resource.
 func NewS3BucketAccelerateConfiguration_Override(s S3BucketAccelerateConfiguration, scope constructs.Construct, id *string, config *S3BucketAccelerateConfigurationConfig) {
 	_init_.Initialize()
 

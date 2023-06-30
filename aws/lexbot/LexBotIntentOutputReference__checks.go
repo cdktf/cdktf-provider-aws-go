@@ -181,6 +181,8 @@ func (j *jsiiProxy_LexBotIntentOutputReference) validateSetIntentVersionParamete
 
 func (j *jsiiProxy_LexBotIntentOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *LexBotIntent:
 		val := val.(*LexBotIntent)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_LexBotIntentOutputReference) validateSetInternalValueParamete
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *LexBotIntent, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *LexBotIntent; received %#v (a %T)", val, val)
 		}
 	}
 

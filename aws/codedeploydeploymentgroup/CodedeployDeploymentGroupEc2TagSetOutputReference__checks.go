@@ -196,6 +196,8 @@ func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) validateSe
 
 func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CodedeployDeploymentGroupEc2TagSet:
 		val := val.(*CodedeployDeploymentGroupEc2TagSet)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -207,11 +209,9 @@ func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagSetOutputReference) validateSe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CodedeployDeploymentGroupEc2TagSet, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CodedeployDeploymentGroupEc2TagSet; received %#v (a %T)", val, val)
 		}
 	}
 

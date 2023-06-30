@@ -2,9 +2,9 @@ package kinesisfirehosedeliverystream
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/kinesisfirehosedeliverystream/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/kinesisfirehosedeliverystream/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -60,6 +60,8 @@ type KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputReference inte
 	S3BackupMode() *string
 	SetS3BackupMode(val *string)
 	S3BackupModeInput() *string
+	S3Configuration() KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationOutputReference
+	S3ConfigurationInput() *KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Configuration
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -99,6 +101,7 @@ type KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputReference inte
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCloudwatchLoggingOptions(value *KinesisFirehoseDeliveryStreamElasticsearchConfigurationCloudwatchLoggingOptions)
 	PutProcessingConfiguration(value *KinesisFirehoseDeliveryStreamElasticsearchConfigurationProcessingConfiguration)
+	PutS3Configuration(value *KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Configuration)
 	PutVpcConfig(value *KinesisFirehoseDeliveryStreamElasticsearchConfigurationVpcConfig)
 	ResetBufferingInterval()
 	ResetBufferingSize()
@@ -391,6 +394,26 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutput
 	_jsii_.Get(
 		j,
 		"s3BackupModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputReference) S3Configuration() KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationOutputReference {
+	var returns KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3ConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"s3Configuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputReference) S3ConfigurationInput() *KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Configuration {
+	var returns *KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Configuration
+	_jsii_.Get(
+		j,
+		"s3ConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -853,6 +876,17 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutput
 	_jsii_.InvokeVoid(
 		k,
 		"putProcessingConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamElasticsearchConfigurationOutputReference) PutS3Configuration(value *KinesisFirehoseDeliveryStreamElasticsearchConfigurationS3Configuration) {
+	if err := k.validatePutS3ConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putS3Configuration",
 		[]interface{}{value},
 	)
 }

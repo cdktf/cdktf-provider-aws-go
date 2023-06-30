@@ -72,6 +72,10 @@ func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) validateSetNamePa
 	return nil
 }
 
+func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) validateSetParametersParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) validateSetResourceArnsParameters(val *[]*string) error {
 	return nil
 }

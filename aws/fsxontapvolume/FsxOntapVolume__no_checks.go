@@ -96,6 +96,10 @@ func (j *jsiiProxy_FsxOntapVolume) validateSetNameParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_FsxOntapVolume) validateSetOntapVolumeTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOntapVolume) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
@@ -105,6 +109,10 @@ func (j *jsiiProxy_FsxOntapVolume) validateSetSecurityStyleParameters(val *strin
 }
 
 func (j *jsiiProxy_FsxOntapVolume) validateSetSizeInMegabytesParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_FsxOntapVolume) validateSetSkipFinalBackupParameters(val interface{}) error {
 	return nil
 }
 

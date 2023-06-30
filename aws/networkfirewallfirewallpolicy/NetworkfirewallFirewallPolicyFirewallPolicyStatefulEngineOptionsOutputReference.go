@@ -2,9 +2,9 @@ package networkfirewallfirewallpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/networkfirewallfirewallpolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/networkfirewallfirewallpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -32,6 +32,9 @@ type NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputRefer
 	RuleOrder() *string
 	SetRuleOrder(val *string)
 	RuleOrderInput() *string
+	StreamExceptionPolicy() *string
+	SetStreamExceptionPolicy(val *string)
+	StreamExceptionPolicyInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +67,8 @@ type NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputRefer
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetRuleOrder()
+	ResetStreamExceptionPolicy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,6 +149,26 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOpti
 	_jsii_.Get(
 		j,
 		"ruleOrderInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference) StreamExceptionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"streamExceptionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference) StreamExceptionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"streamExceptionPolicyInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +262,17 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOpti
 	_jsii_.Set(
 		j,
 		"ruleOrder",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference)SetStreamExceptionPolicy(val *string) {
+	if err := j.validateSetStreamExceptionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"streamExceptionPolicy",
 		val,
 	)
 }
@@ -447,6 +483,22 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOpti
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference) ResetRuleOrder() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetRuleOrder",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference) ResetStreamExceptionPolicy() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetStreamExceptionPolicy",
+		nil, // no parameters
+	)
 }
 
 func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

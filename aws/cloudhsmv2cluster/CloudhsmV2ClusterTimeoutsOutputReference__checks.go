@@ -181,6 +181,8 @@ func (j *jsiiProxy_CloudhsmV2ClusterTimeoutsOutputReference) validateSetDeletePa
 
 func (j *jsiiProxy_CloudhsmV2ClusterTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CloudhsmV2ClusterTimeouts:
 		val := val.(*CloudhsmV2ClusterTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_CloudhsmV2ClusterTimeoutsOutputReference) validateSetInternal
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CloudhsmV2ClusterTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CloudhsmV2ClusterTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

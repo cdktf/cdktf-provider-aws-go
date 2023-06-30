@@ -2,20 +2,17 @@ package ecscluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/ecscluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/ecscluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ecs_cluster aws_ecs_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ecs_cluster aws_ecs_cluster}.
 type EcsCluster interface {
 	cdktf.TerraformResource
 	Arn() *string
-	CapacityProviders() *[]*string
-	SetCapacityProviders(val *[]*string)
-	CapacityProvidersInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Configuration() EcsClusterConfigurationOutputReference
@@ -30,8 +27,6 @@ type EcsCluster interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
-	DefaultCapacityProviderStrategy() EcsClusterDefaultCapacityProviderStrategyList
-	DefaultCapacityProviderStrategyInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -108,12 +103,9 @@ type EcsCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutConfiguration(value *EcsClusterConfiguration)
-	PutDefaultCapacityProviderStrategy(value interface{})
 	PutServiceConnectDefaults(value *EcsClusterServiceConnectDefaults)
 	PutSetting(value interface{})
-	ResetCapacityProviders()
 	ResetConfiguration()
-	ResetDefaultCapacityProviderStrategy()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -142,26 +134,6 @@ func (j *jsiiProxy_EcsCluster) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EcsCluster) CapacityProviders() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"capacityProviders",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EcsCluster) CapacityProvidersInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"capacityProvidersInput",
 		&returns,
 	)
 	return returns
@@ -222,26 +194,6 @@ func (j *jsiiProxy_EcsCluster) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EcsCluster) DefaultCapacityProviderStrategy() EcsClusterDefaultCapacityProviderStrategyList {
-	var returns EcsClusterDefaultCapacityProviderStrategyList
-	_jsii_.Get(
-		j,
-		"defaultCapacityProviderStrategy",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_EcsCluster) DefaultCapacityProviderStrategyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"defaultCapacityProviderStrategyInput",
 		&returns,
 	)
 	return returns
@@ -488,7 +440,7 @@ func (j *jsiiProxy_EcsCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ecs_cluster aws_ecs_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ecs_cluster aws_ecs_cluster} Resource.
 func NewEcsCluster(scope constructs.Construct, id *string, config *EcsClusterConfig) EcsCluster {
 	_init_.Initialize()
 
@@ -506,7 +458,7 @@ func NewEcsCluster(scope constructs.Construct, id *string, config *EcsClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ecs_cluster aws_ecs_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ecs_cluster aws_ecs_cluster} Resource.
 func NewEcsCluster_Override(e EcsCluster, scope constructs.Construct, id *string, config *EcsClusterConfig) {
 	_init_.Initialize()
 
@@ -514,17 +466,6 @@ func NewEcsCluster_Override(e EcsCluster, scope constructs.Construct, id *string
 		"@cdktf/provider-aws.ecsCluster.EcsCluster",
 		[]interface{}{scope, id, config},
 		e,
-	)
-}
-
-func (j *jsiiProxy_EcsCluster)SetCapacityProviders(val *[]*string) {
-	if err := j.validateSetCapacityProvidersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"capacityProviders",
-		val,
 	)
 }
 
@@ -917,17 +858,6 @@ func (e *jsiiProxy_EcsCluster) PutConfiguration(value *EcsClusterConfiguration) 
 	)
 }
 
-func (e *jsiiProxy_EcsCluster) PutDefaultCapacityProviderStrategy(value interface{}) {
-	if err := e.validatePutDefaultCapacityProviderStrategyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		e,
-		"putDefaultCapacityProviderStrategy",
-		[]interface{}{value},
-	)
-}
-
 func (e *jsiiProxy_EcsCluster) PutServiceConnectDefaults(value *EcsClusterServiceConnectDefaults) {
 	if err := e.validatePutServiceConnectDefaultsParameters(value); err != nil {
 		panic(err)
@@ -950,26 +880,10 @@ func (e *jsiiProxy_EcsCluster) PutSetting(value interface{}) {
 	)
 }
 
-func (e *jsiiProxy_EcsCluster) ResetCapacityProviders() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetCapacityProviders",
-		nil, // no parameters
-	)
-}
-
 func (e *jsiiProxy_EcsCluster) ResetConfiguration() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetConfiguration",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_EcsCluster) ResetDefaultCapacityProviderStrategy() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetDefaultCapacityProviderStrategy",
 		nil, // no parameters
 	)
 }

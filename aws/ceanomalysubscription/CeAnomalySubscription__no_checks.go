@@ -116,10 +116,6 @@ func (j *jsiiProxy_CeAnomalySubscription) validateSetTagsAllParameters(val *map[
 	return nil
 }
 
-func (j *jsiiProxy_CeAnomalySubscription) validateSetThresholdParameters(val *float64) error {
-	return nil
-}
-
 func validateNewCeAnomalySubscriptionParameters(scope constructs.Construct, id *string, config *CeAnomalySubscriptionConfig) error {
 	return nil
 }

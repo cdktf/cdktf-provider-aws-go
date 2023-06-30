@@ -52,6 +52,10 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputRef
 	return nil
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference) validatePutS3ConfigurationParameters(value *KinesisFirehoseDeliveryStreamOpensearchConfigurationS3Configuration) error {
+	return nil
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference) validatePutVpcConfigParameters(value *KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfig) error {
 	return nil
 }

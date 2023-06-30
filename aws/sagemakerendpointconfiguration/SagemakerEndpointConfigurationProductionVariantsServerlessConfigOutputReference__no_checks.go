@@ -68,6 +68,10 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsServerlessCon
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference) validateSetProvisionedConcurrencyParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

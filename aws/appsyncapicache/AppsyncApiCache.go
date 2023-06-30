@@ -2,14 +2,14 @@ package appsyncapicache
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/appsyncapicache/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/appsyncapicache/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_api_cache aws_appsync_api_cache}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/appsync_api_cache aws_appsync_api_cache}.
 type AppsyncApiCache interface {
 	cdktf.TerraformResource
 	ApiCachingBehavior() *string
@@ -426,7 +426,7 @@ func (j *jsiiProxy_AppsyncApiCache) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_api_cache aws_appsync_api_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/appsync_api_cache aws_appsync_api_cache} Resource.
 func NewAppsyncApiCache(scope constructs.Construct, id *string, config *AppsyncApiCacheConfig) AppsyncApiCache {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewAppsyncApiCache(scope constructs.Construct, id *string, config *AppsyncA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_api_cache aws_appsync_api_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/appsync_api_cache aws_appsync_api_cache} Resource.
 func NewAppsyncApiCache_Override(a AppsyncApiCache, scope constructs.Construct, id *string, config *AppsyncApiCacheConfig) {
 	_init_.Initialize()
 

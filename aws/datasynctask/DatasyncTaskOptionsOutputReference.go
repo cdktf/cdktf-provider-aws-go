@@ -2,9 +2,9 @@ package datasynctask
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/datasynctask/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/datasynctask/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -44,6 +44,9 @@ type DatasyncTaskOptionsOutputReference interface {
 	Mtime() *string
 	SetMtime(val *string)
 	MtimeInput() *string
+	ObjectTags() *string
+	SetObjectTags(val *string)
+	ObjectTagsInput() *string
 	OverwriteMode() *string
 	SetOverwriteMode(val *string)
 	OverwriteModeInput() *string
@@ -108,6 +111,7 @@ type DatasyncTaskOptionsOutputReference interface {
 	ResetGid()
 	ResetLogLevel()
 	ResetMtime()
+	ResetObjectTags()
 	ResetOverwriteMode()
 	ResetPosixPermissions()
 	ResetPreserveDeletedFiles()
@@ -277,6 +281,26 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) MtimeInput() *string {
 	_jsii_.Get(
 		j,
 		"mtimeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) ObjectTags() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"objectTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) ObjectTagsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"objectTagsInput",
 		&returns,
 	)
 	return returns
@@ -594,6 +618,17 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetMtime(val *string) {
 	_jsii_.Set(
 		j,
 		"mtime",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference)SetObjectTags(val *string) {
+	if err := j.validateSetObjectTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"objectTags",
 		val,
 	)
 }
@@ -941,6 +976,14 @@ func (d *jsiiProxy_DatasyncTaskOptionsOutputReference) ResetMtime() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetMtime",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatasyncTaskOptionsOutputReference) ResetObjectTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetObjectTags",
 		nil, // no parameters
 	)
 }

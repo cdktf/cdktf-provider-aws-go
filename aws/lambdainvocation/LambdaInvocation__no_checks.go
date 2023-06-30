@@ -88,11 +88,19 @@ func (j *jsiiProxy_LambdaInvocation) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
+func (j *jsiiProxy_LambdaInvocation) validateSetLifecycleScopeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaInvocation) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_LambdaInvocation) validateSetQualifierParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LambdaInvocation) validateSetTerraformKeyParameters(val *string) error {
 	return nil
 }
 

@@ -48,19 +48,11 @@ func (j *jsiiProxy_AwsProvider) validateSetInsecureParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_AwsProvider) validateSetS3ForcePathStyleParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_AwsProvider) validateSetS3UsePathStyleParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_AwsProvider) validateSetSkipCredentialsValidationParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_AwsProvider) validateSetSkipGetEc2PlatformsParameters(val interface{}) error {
 	return nil
 }
 

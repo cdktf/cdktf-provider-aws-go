@@ -181,6 +181,8 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociationTimeoutsOutputReference) validateS
 
 func (j *jsiiProxy_VpcIpv6CidrBlockAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *VpcIpv6CidrBlockAssociationTimeouts:
 		val := val.(*VpcIpv6CidrBlockAssociationTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociationTimeoutsOutputReference) validateS
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *VpcIpv6CidrBlockAssociationTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *VpcIpv6CidrBlockAssociationTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

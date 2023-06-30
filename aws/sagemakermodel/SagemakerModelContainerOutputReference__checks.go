@@ -200,6 +200,8 @@ func (j *jsiiProxy_SagemakerModelContainerOutputReference) validateSetImageParam
 
 func (j *jsiiProxy_SagemakerModelContainerOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *SagemakerModelContainer:
 		val := val.(*SagemakerModelContainer)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -211,11 +213,9 @@ func (j *jsiiProxy_SagemakerModelContainerOutputReference) validateSetInternalVa
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *SagemakerModelContainer, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SagemakerModelContainer; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -231,6 +231,14 @@ func (j *jsiiProxy_SagemakerModelContainerOutputReference) validateSetModeParame
 }
 
 func (j *jsiiProxy_SagemakerModelContainerOutputReference) validateSetModelDataUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerModelContainerOutputReference) validateSetModelPackageNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

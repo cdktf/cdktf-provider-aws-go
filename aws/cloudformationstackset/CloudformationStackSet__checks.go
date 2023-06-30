@@ -122,6 +122,17 @@ func (c *jsiiProxy_CloudformationStackSet) validatePutAutoDeploymentParameters(v
 	return nil
 }
 
+func (c *jsiiProxy_CloudformationStackSet) validatePutManagedExecutionParameters(value *CloudformationStackSetManagedExecution) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_CloudformationStackSet) validatePutOperationPreferencesParameters(value *CloudformationStackSetOperationPreferences) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

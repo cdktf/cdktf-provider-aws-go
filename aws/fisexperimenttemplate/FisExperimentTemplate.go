@@ -2,14 +2,14 @@ package fisexperimenttemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/fisexperimenttemplate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/fisexperimenttemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fis_experiment_template aws_fis_experiment_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/fis_experiment_template aws_fis_experiment_template}.
 type FisExperimentTemplate interface {
 	cdktf.TerraformResource
 	Action() FisExperimentTemplateActionList
@@ -48,6 +48,8 @@ type FisExperimentTemplate interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LogConfiguration() FisExperimentTemplateLogConfigurationOutputReference
+	LogConfigurationInput() *FisExperimentTemplateLogConfiguration
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -107,10 +109,12 @@ type FisExperimentTemplate interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAction(value interface{})
+	PutLogConfiguration(value *FisExperimentTemplateLogConfiguration)
 	PutStopCondition(value interface{})
 	PutTarget(value interface{})
 	PutTimeouts(value *FisExperimentTemplateTimeouts)
 	ResetId()
+	ResetLogConfiguration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -278,6 +282,26 @@ func (j *jsiiProxy_FisExperimentTemplate) Lifecycle() *cdktf.TerraformResourceLi
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FisExperimentTemplate) LogConfiguration() FisExperimentTemplateLogConfigurationOutputReference {
+	var returns FisExperimentTemplateLogConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"logConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FisExperimentTemplate) LogConfigurationInput() *FisExperimentTemplateLogConfiguration {
+	var returns *FisExperimentTemplateLogConfiguration
+	_jsii_.Get(
+		j,
+		"logConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -474,7 +498,7 @@ func (j *jsiiProxy_FisExperimentTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fis_experiment_template aws_fis_experiment_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/fis_experiment_template aws_fis_experiment_template} Resource.
 func NewFisExperimentTemplate(scope constructs.Construct, id *string, config *FisExperimentTemplateConfig) FisExperimentTemplate {
 	_init_.Initialize()
 
@@ -492,7 +516,7 @@ func NewFisExperimentTemplate(scope constructs.Construct, id *string, config *Fi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/fis_experiment_template aws_fis_experiment_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/fis_experiment_template aws_fis_experiment_template} Resource.
 func NewFisExperimentTemplate_Override(f FisExperimentTemplate, scope constructs.Construct, id *string, config *FisExperimentTemplateConfig) {
 	_init_.Initialize()
 
@@ -903,6 +927,17 @@ func (f *jsiiProxy_FisExperimentTemplate) PutAction(value interface{}) {
 	)
 }
 
+func (f *jsiiProxy_FisExperimentTemplate) PutLogConfiguration(value *FisExperimentTemplateLogConfiguration) {
+	if err := f.validatePutLogConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putLogConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FisExperimentTemplate) PutStopCondition(value interface{}) {
 	if err := f.validatePutStopConditionParameters(value); err != nil {
 		panic(err)
@@ -940,6 +975,14 @@ func (f *jsiiProxy_FisExperimentTemplate) ResetId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FisExperimentTemplate) ResetLogConfiguration() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetLogConfiguration",
 		nil, // no parameters
 	)
 }

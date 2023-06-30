@@ -215,6 +215,8 @@ func (j *jsiiProxy_QuicksightDataSetLogicalTableMapOutputReference) validateSetC
 
 func (j *jsiiProxy_QuicksightDataSetLogicalTableMapOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *QuicksightDataSetLogicalTableMap:
 		val := val.(*QuicksightDataSetLogicalTableMap)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -226,11 +228,9 @@ func (j *jsiiProxy_QuicksightDataSetLogicalTableMapOutputReference) validateSetI
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *QuicksightDataSetLogicalTableMap, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *QuicksightDataSetLogicalTableMap; received %#v (a %T)", val, val)
 		}
 	}
 

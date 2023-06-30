@@ -165,6 +165,8 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccessTimeoutsOutputReference) val
 
 func (j *jsiiProxy_ServicecatalogOrganizationsAccessTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ServicecatalogOrganizationsAccessTimeouts:
 		val := val.(*ServicecatalogOrganizationsAccessTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_ServicecatalogOrganizationsAccessTimeoutsOutputReference) val
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ServicecatalogOrganizationsAccessTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ServicecatalogOrganizationsAccessTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

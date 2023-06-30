@@ -173,6 +173,8 @@ func (j *jsiiProxy_WafRulePredicatesOutputReference) validateSetDataIdParameters
 
 func (j *jsiiProxy_WafRulePredicatesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *WafRulePredicates:
 		val := val.(*WafRulePredicates)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_WafRulePredicatesOutputReference) validateSetInternalValuePar
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *WafRulePredicates, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *WafRulePredicates; received %#v (a %T)", val, val)
 		}
 	}
 

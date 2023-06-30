@@ -196,6 +196,8 @@ func (j *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeOutputReferen
 
 func (j *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *SsoadminInstanceAccessControlAttributesAttribute:
 		val := val.(*SsoadminInstanceAccessControlAttributesAttribute)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -207,11 +209,9 @@ func (j *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeOutputReferen
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *SsoadminInstanceAccessControlAttributesAttribute, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SsoadminInstanceAccessControlAttributesAttribute; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -2,14 +2,14 @@ package dboptiongroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dboptiongroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dboptiongroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/db_option_group aws_db_option_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/db_option_group aws_db_option_group}.
 type DbOptionGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -511,7 +511,7 @@ func (j *jsiiProxy_DbOptionGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/db_option_group aws_db_option_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/db_option_group aws_db_option_group} Resource.
 func NewDbOptionGroup(scope constructs.Construct, id *string, config *DbOptionGroupConfig) DbOptionGroup {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewDbOptionGroup(scope constructs.Construct, id *string, config *DbOptionGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/db_option_group aws_db_option_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/db_option_group aws_db_option_group} Resource.
 func NewDbOptionGroup_Override(d DbOptionGroup, scope constructs.Construct, id *string, config *DbOptionGroupConfig) {
 	_init_.Initialize()
 

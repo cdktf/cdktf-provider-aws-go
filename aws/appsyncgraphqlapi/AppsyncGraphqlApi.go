@@ -2,14 +2,14 @@ package appsyncgraphqlapi
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/appsyncgraphqlapi/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/appsyncgraphqlapi/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/appsync_graphql_api aws_appsync_graphql_api}.
 type AppsyncGraphqlApi interface {
 	cdktf.TerraformResource
 	AdditionalAuthenticationProvider() AppsyncGraphqlApiAdditionalAuthenticationProviderList
@@ -88,6 +88,9 @@ type AppsyncGraphqlApi interface {
 	Uris() cdktf.StringMap
 	UserPoolConfig() AppsyncGraphqlApiUserPoolConfigOutputReference
 	UserPoolConfigInput() *AppsyncGraphqlApiUserPoolConfig
+	Visibility() *string
+	SetVisibility(val *string)
+	VisibilityInput() *string
 	XrayEnabled() interface{}
 	SetXrayEnabled(val interface{})
 	XrayEnabledInput() interface{}
@@ -133,6 +136,7 @@ type AppsyncGraphqlApi interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetUserPoolConfig()
+	ResetVisibility()
 	ResetXrayEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -549,6 +553,26 @@ func (j *jsiiProxy_AppsyncGraphqlApi) UserPoolConfigInput() *AppsyncGraphqlApiUs
 	return returns
 }
 
+func (j *jsiiProxy_AppsyncGraphqlApi) Visibility() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"visibility",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi) VisibilityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"visibilityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppsyncGraphqlApi) XrayEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -570,7 +594,7 @@ func (j *jsiiProxy_AppsyncGraphqlApi) XrayEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
 func NewAppsyncGraphqlApi(scope constructs.Construct, id *string, config *AppsyncGraphqlApiConfig) AppsyncGraphqlApi {
 	_init_.Initialize()
 
@@ -588,7 +612,7 @@ func NewAppsyncGraphqlApi(scope constructs.Construct, id *string, config *Appsyn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
 func NewAppsyncGraphqlApi_Override(a AppsyncGraphqlApi, scope constructs.Construct, id *string, config *AppsyncGraphqlApiConfig) {
 	_init_.Initialize()
 
@@ -729,6 +753,17 @@ func (j *jsiiProxy_AppsyncGraphqlApi)SetTagsAll(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi)SetVisibility(val *string) {
+	if err := j.validateSetVisibilityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"visibility",
 		val,
 	)
 }
@@ -1141,6 +1176,14 @@ func (a *jsiiProxy_AppsyncGraphqlApi) ResetUserPoolConfig() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetUserPoolConfig",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppsyncGraphqlApi) ResetVisibility() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetVisibility",
 		nil, // no parameters
 	)
 }

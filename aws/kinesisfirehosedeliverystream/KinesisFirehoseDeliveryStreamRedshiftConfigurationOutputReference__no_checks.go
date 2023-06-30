@@ -56,6 +56,10 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputRefer
 	return nil
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference) validatePutS3ConfigurationParameters(value *KinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configuration) error {
+	return nil
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

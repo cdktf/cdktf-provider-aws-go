@@ -227,6 +227,8 @@ func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) validateSetComple
 
 func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AuditmanagerAssessmentScope:
 		val := val.(*AuditmanagerAssessmentScope)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -238,11 +240,9 @@ func (j *jsiiProxy_AuditmanagerAssessmentScopeOutputReference) validateSetIntern
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AuditmanagerAssessmentScope, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AuditmanagerAssessmentScope; received %#v (a %T)", val, val)
 		}
 	}
 

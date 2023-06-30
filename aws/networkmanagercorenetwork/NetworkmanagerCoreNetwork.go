@@ -2,14 +2,14 @@ package networkmanagercorenetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/networkmanagercorenetwork/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/networkmanagercorenetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/networkmanager_core_network aws_networkmanager_core_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_core_network aws_networkmanager_core_network}.
 type NetworkmanagerCoreNetwork interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -63,9 +63,6 @@ type NetworkmanagerCoreNetwork interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
-	PolicyDocument() *string
-	SetPolicyDocument(val *string)
-	PolicyDocumentInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -126,7 +123,6 @@ type NetworkmanagerCoreNetwork interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetPolicyDocument()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -395,26 +391,6 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork) PolicyDocument() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"policyDocument",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_NetworkmanagerCoreNetwork) PolicyDocumentInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"policyDocumentInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_NetworkmanagerCoreNetwork) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -556,7 +532,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/networkmanager_core_network aws_networkmanager_core_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_core_network aws_networkmanager_core_network} Resource.
 func NewNetworkmanagerCoreNetwork(scope constructs.Construct, id *string, config *NetworkmanagerCoreNetworkConfig) NetworkmanagerCoreNetwork {
 	_init_.Initialize()
 
@@ -574,7 +550,7 @@ func NewNetworkmanagerCoreNetwork(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/networkmanager_core_network aws_networkmanager_core_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_core_network aws_networkmanager_core_network} Resource.
 func NewNetworkmanagerCoreNetwork_Override(n NetworkmanagerCoreNetwork, scope constructs.Construct, id *string, config *NetworkmanagerCoreNetworkConfig) {
 	_init_.Initialize()
 
@@ -696,17 +672,6 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetLifecycle(val *cdktf.TerraformRe
 	_jsii_.Set(
 		j,
 		"lifecycle",
-		val,
-	)
-}
-
-func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetPolicyDocument(val *string) {
-	if err := j.validateSetPolicyDocumentParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"policyDocument",
 		val,
 	)
 }
@@ -1073,14 +1038,6 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (n *jsiiProxy_NetworkmanagerCoreNetwork) ResetPolicyDocument() {
-	_jsii_.InvokeVoid(
-		n,
-		"resetPolicyDocument",
 		nil, // no parameters
 	)
 }

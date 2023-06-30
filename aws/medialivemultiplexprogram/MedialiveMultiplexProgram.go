@@ -2,14 +2,14 @@ package medialivemultiplexprogram
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/medialivemultiplexprogram/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/medialivemultiplexprogram/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program}.
 type MedialiveMultiplexProgram interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_MedialiveMultiplexProgram) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program} Resource.
 func NewMedialiveMultiplexProgram(scope constructs.Construct, id *string, config *MedialiveMultiplexProgramConfig) MedialiveMultiplexProgram {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewMedialiveMultiplexProgram(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/medialive_multiplex_program aws_medialive_multiplex_program} Resource.
 func NewMedialiveMultiplexProgram_Override(m MedialiveMultiplexProgram, scope constructs.Construct, id *string, config *MedialiveMultiplexProgramConfig) {
 	_init_.Initialize()
 

@@ -2,18 +2,14 @@ package wafv2webaclloggingconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/wafv2webaclloggingconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/wafv2webaclloggingconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference interface {
 	cdktf.ComplexObject
-	AllQueryArguments() Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArgumentsOutputReference
-	AllQueryArgumentsInput() *Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArguments
-	Body() Wafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference
-	BodyInput() *Wafv2WebAclLoggingConfigurationRedactedFieldsBody
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,8 +35,6 @@ type Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference interface {
 	QueryStringInput() *Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString
 	SingleHeader() Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeaderOutputReference
 	SingleHeaderInput() *Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader
-	SingleQueryArgument() Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOutputReference
-	SingleQueryArgumentInput() *Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgument
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -75,19 +69,13 @@ type Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutAllQueryArguments(value *Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArguments)
-	PutBody(value *Wafv2WebAclLoggingConfigurationRedactedFieldsBody)
 	PutMethod(value *Wafv2WebAclLoggingConfigurationRedactedFieldsMethod)
 	PutQueryString(value *Wafv2WebAclLoggingConfigurationRedactedFieldsQueryString)
 	PutSingleHeader(value *Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader)
-	PutSingleQueryArgument(value *Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgument)
 	PutUriPath(value *Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath)
-	ResetAllQueryArguments()
-	ResetBody()
 	ResetMethod()
 	ResetQueryString()
 	ResetSingleHeader()
-	ResetSingleQueryArgument()
 	ResetUriPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -102,46 +90,6 @@ type Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference interface {
 // The jsii proxy struct for Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference
 type jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference struct {
 	internal.Type__cdktfComplexObject
-}
-
-func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) AllQueryArguments() Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArgumentsOutputReference {
-	var returns Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArgumentsOutputReference
-	_jsii_.Get(
-		j,
-		"allQueryArguments",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) AllQueryArgumentsInput() *Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArguments {
-	var returns *Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArguments
-	_jsii_.Get(
-		j,
-		"allQueryArgumentsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) Body() Wafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference {
-	var returns Wafv2WebAclLoggingConfigurationRedactedFieldsBodyOutputReference
-	_jsii_.Get(
-		j,
-		"body",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) BodyInput() *Wafv2WebAclLoggingConfigurationRedactedFieldsBody {
-	var returns *Wafv2WebAclLoggingConfigurationRedactedFieldsBody
-	_jsii_.Get(
-		j,
-		"bodyInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) ComplexObjectIndex() interface{} {
@@ -249,26 +197,6 @@ func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference)
 	_jsii_.Get(
 		j,
 		"singleHeaderInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) SingleQueryArgument() Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOutputReference {
-	var returns Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOutputReference
-	_jsii_.Get(
-		j,
-		"singleQueryArgument",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) SingleQueryArgumentInput() *Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgument {
-	var returns *Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgument
-	_jsii_.Get(
-		j,
-		"singleQueryArgumentInput",
 		&returns,
 	)
 	return returns
@@ -583,28 +511,6 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference)
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) PutAllQueryArguments(value *Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArguments) {
-	if err := w.validatePutAllQueryArgumentsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		w,
-		"putAllQueryArguments",
-		[]interface{}{value},
-	)
-}
-
-func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) PutBody(value *Wafv2WebAclLoggingConfigurationRedactedFieldsBody) {
-	if err := w.validatePutBodyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		w,
-		"putBody",
-		[]interface{}{value},
-	)
-}
-
 func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) PutMethod(value *Wafv2WebAclLoggingConfigurationRedactedFieldsMethod) {
 	if err := w.validatePutMethodParameters(value); err != nil {
 		panic(err)
@@ -638,17 +544,6 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference)
 	)
 }
 
-func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) PutSingleQueryArgument(value *Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgument) {
-	if err := w.validatePutSingleQueryArgumentParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		w,
-		"putSingleQueryArgument",
-		[]interface{}{value},
-	)
-}
-
 func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) PutUriPath(value *Wafv2WebAclLoggingConfigurationRedactedFieldsUriPath) {
 	if err := w.validatePutUriPathParameters(value); err != nil {
 		panic(err)
@@ -657,22 +552,6 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference)
 		w,
 		"putUriPath",
 		[]interface{}{value},
-	)
-}
-
-func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) ResetAllQueryArguments() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetAllQueryArguments",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) ResetBody() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetBody",
-		nil, // no parameters
 	)
 }
 
@@ -696,14 +575,6 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference)
 	_jsii_.InvokeVoid(
 		w,
 		"resetSingleHeader",
-		nil, // no parameters
-	)
-}
-
-func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) ResetSingleQueryArgument() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetSingleQueryArgument",
 		nil, // no parameters
 	)
 }

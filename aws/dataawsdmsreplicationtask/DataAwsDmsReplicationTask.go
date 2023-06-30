@@ -2,14 +2,14 @@ package dataawsdmsreplicationtask
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsdmsreplicationtask/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdmsreplicationtask/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/dms_replication_task aws_dms_replication_task}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/dms_replication_task aws_dms_replication_task}.
 type DataAwsDmsReplicationTask interface {
 	cdktf.TerraformDataSource
 	CdcStartPosition() *string
@@ -426,7 +426,7 @@ func (j *jsiiProxy_DataAwsDmsReplicationTask) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/dms_replication_task aws_dms_replication_task} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/dms_replication_task aws_dms_replication_task} Data Source.
 func NewDataAwsDmsReplicationTask(scope constructs.Construct, id *string, config *DataAwsDmsReplicationTaskConfig) DataAwsDmsReplicationTask {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewDataAwsDmsReplicationTask(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/dms_replication_task aws_dms_replication_task} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/dms_replication_task aws_dms_replication_task} Data Source.
 func NewDataAwsDmsReplicationTask_Override(d DataAwsDmsReplicationTask, scope constructs.Construct, id *string, config *DataAwsDmsReplicationTaskConfig) {
 	_init_.Initialize()
 

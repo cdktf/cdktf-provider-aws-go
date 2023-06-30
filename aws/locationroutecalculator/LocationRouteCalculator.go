@@ -2,14 +2,14 @@ package locationroutecalculator
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/locationroutecalculator/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/locationroutecalculator/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/location_route_calculator aws_location_route_calculator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/location_route_calculator aws_location_route_calculator}.
 type LocationRouteCalculator interface {
 	cdktf.TerraformResource
 	CalculatorArn() *string
@@ -461,7 +461,7 @@ func (j *jsiiProxy_LocationRouteCalculator) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/location_route_calculator aws_location_route_calculator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/location_route_calculator aws_location_route_calculator} Resource.
 func NewLocationRouteCalculator(scope constructs.Construct, id *string, config *LocationRouteCalculatorConfig) LocationRouteCalculator {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewLocationRouteCalculator(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/location_route_calculator aws_location_route_calculator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/location_route_calculator aws_location_route_calculator} Resource.
 func NewLocationRouteCalculator_Override(l LocationRouteCalculator, scope constructs.Construct, id *string, config *LocationRouteCalculatorConfig) {
 	_init_.Initialize()
 

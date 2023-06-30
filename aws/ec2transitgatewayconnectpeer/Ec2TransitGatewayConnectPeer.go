@@ -2,20 +2,22 @@ package ec2transitgatewayconnectpeer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/ec2transitgatewayconnectpeer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/ec2transitgatewayconnectpeer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ec2_transit_gateway_connect_peer aws_ec2_transit_gateway_connect_peer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ec2_transit_gateway_connect_peer aws_ec2_transit_gateway_connect_peer}.
 type Ec2TransitGatewayConnectPeer interface {
 	cdktf.TerraformResource
 	Arn() *string
 	BgpAsn() *string
 	SetBgpAsn(val *string)
 	BgpAsnInput() *string
+	BgpPeerAddress() *string
+	BgpTransitGatewayAddresses() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -160,6 +162,26 @@ func (j *jsiiProxy_Ec2TransitGatewayConnectPeer) BgpAsnInput() *string {
 	_jsii_.Get(
 		j,
 		"bgpAsnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2TransitGatewayConnectPeer) BgpPeerAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bgpPeerAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2TransitGatewayConnectPeer) BgpTransitGatewayAddresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"bgpTransitGatewayAddresses",
 		&returns,
 	)
 	return returns
@@ -486,7 +508,7 @@ func (j *jsiiProxy_Ec2TransitGatewayConnectPeer) TransitGatewayAttachmentIdInput
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ec2_transit_gateway_connect_peer aws_ec2_transit_gateway_connect_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ec2_transit_gateway_connect_peer aws_ec2_transit_gateway_connect_peer} Resource.
 func NewEc2TransitGatewayConnectPeer(scope constructs.Construct, id *string, config *Ec2TransitGatewayConnectPeerConfig) Ec2TransitGatewayConnectPeer {
 	_init_.Initialize()
 
@@ -504,7 +526,7 @@ func NewEc2TransitGatewayConnectPeer(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ec2_transit_gateway_connect_peer aws_ec2_transit_gateway_connect_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ec2_transit_gateway_connect_peer aws_ec2_transit_gateway_connect_peer} Resource.
 func NewEc2TransitGatewayConnectPeer_Override(e Ec2TransitGatewayConnectPeer, scope constructs.Construct, id *string, config *Ec2TransitGatewayConnectPeerConfig) {
 	_init_.Initialize()
 

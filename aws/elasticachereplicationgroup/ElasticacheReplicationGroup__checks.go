@@ -111,17 +111,6 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) validateOverrideLogicalIdParamet
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroup) validatePutClusterModeParameters(value *ElasticacheReplicationGroupClusterMode) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (e *jsiiProxy_ElasticacheReplicationGroup) validatePutLogDeliveryConfigurationParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -257,14 +246,6 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetAutomaticFailoverEnab
 }
 
 func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetAutoMinorVersionUpgradeParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetAvailabilityZonesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -490,14 +471,6 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetNotificationTopicArnP
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetNumberCacheClustersParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetNumCacheClustersParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -585,14 +558,6 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetProvisionersParameter
 }
 
 func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetReplicasPerNodeGroupParameters(val *float64) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetReplicationGroupDescriptionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

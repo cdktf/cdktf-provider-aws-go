@@ -2,33 +2,33 @@ package wafv2webacl
 
 
 type Wafv2WebAclRule struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/wafv2_web_acl#priority Wafv2WebAcl#priority}.
 	Priority *float64 `field:"required" json:"priority" yaml:"priority"`
 	// statement block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafv2_web_acl#statement Wafv2WebAcl#statement}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/wafv2_web_acl#statement Wafv2WebAcl#statement}
 	Statement *Wafv2WebAclRuleStatement `field:"required" json:"statement" yaml:"statement"`
 	// visibility_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafv2_web_acl#visibility_config Wafv2WebAcl#visibility_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/wafv2_web_acl#visibility_config Wafv2WebAcl#visibility_config}
 	VisibilityConfig *Wafv2WebAclRuleVisibilityConfig `field:"required" json:"visibilityConfig" yaml:"visibilityConfig"`
 	// action block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafv2_web_acl#action Wafv2WebAcl#action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/wafv2_web_acl#action Wafv2WebAcl#action}
 	Action *Wafv2WebAclRuleAction `field:"optional" json:"action" yaml:"action"`
 	// captcha_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafv2_web_acl#captcha_config Wafv2WebAcl#captcha_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/wafv2_web_acl#captcha_config Wafv2WebAcl#captcha_config}
 	CaptchaConfig *Wafv2WebAclRuleCaptchaConfig `field:"optional" json:"captchaConfig" yaml:"captchaConfig"`
 	// override_action block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafv2_web_acl#override_action Wafv2WebAcl#override_action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/wafv2_web_acl#override_action Wafv2WebAcl#override_action}
 	OverrideAction *Wafv2WebAclRuleOverrideAction `field:"optional" json:"overrideAction" yaml:"overrideAction"`
 	// rule_label block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/wafv2_web_acl#rule_label Wafv2WebAcl#rule_label}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/wafv2_web_acl#rule_label Wafv2WebAcl#rule_label}
 	RuleLabel interface{} `field:"optional" json:"ruleLabel" yaml:"ruleLabel"`
 }
 

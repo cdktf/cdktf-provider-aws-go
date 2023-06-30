@@ -2,14 +2,14 @@ package autoscalinggroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/autoscalinggroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/autoscalinggroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group aws_autoscaling_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/autoscaling_group aws_autoscaling_group}.
 type AutoscalingGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -142,9 +142,6 @@ type AutoscalingGroup interface {
 	SuspendedProcessesInput() *[]*string
 	Tag() AutoscalingGroupTagList
 	TagInput() interface{}
-	Tags() interface{}
-	SetTags(val interface{})
-	TagsInput() interface{}
 	TargetGroupArns() *[]*string
 	SetTargetGroupArns(val *[]*string)
 	TargetGroupArnsInput() *[]*string
@@ -159,6 +156,8 @@ type AutoscalingGroup interface {
 	TerraformResourceType() *string
 	Timeouts() AutoscalingGroupTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TrafficSource() AutoscalingGroupTrafficSourceList
+	TrafficSourceInput() interface{}
 	VpcZoneIdentifier() *[]*string
 	SetVpcZoneIdentifier(val *[]*string)
 	VpcZoneIdentifierInput() *[]*string
@@ -202,6 +201,7 @@ type AutoscalingGroup interface {
 	PutMixedInstancesPolicy(value *AutoscalingGroupMixedInstancesPolicy)
 	PutTag(value interface{})
 	PutTimeouts(value *AutoscalingGroupTimeouts)
+	PutTrafficSource(value interface{})
 	PutWarmPool(value *AutoscalingGroupWarmPool)
 	ResetAvailabilityZones()
 	ResetCapacityRebalance()
@@ -235,10 +235,10 @@ type AutoscalingGroup interface {
 	ResetServiceLinkedRoleArn()
 	ResetSuspendedProcesses()
 	ResetTag()
-	ResetTags()
 	ResetTargetGroupArns()
 	ResetTerminationPolicies()
 	ResetTimeouts()
+	ResetTrafficSource()
 	ResetVpcZoneIdentifier()
 	ResetWaitForCapacityTimeout()
 	ResetWaitForElbCapacity()
@@ -1028,26 +1028,6 @@ func (j *jsiiProxy_AutoscalingGroup) TagInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingGroup) Tags() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"tags",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AutoscalingGroup) TagsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"tagsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AutoscalingGroup) TargetGroupArns() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1133,6 +1113,26 @@ func (j *jsiiProxy_AutoscalingGroup) TimeoutsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroup) TrafficSource() AutoscalingGroupTrafficSourceList {
+	var returns AutoscalingGroupTrafficSourceList
+	_jsii_.Get(
+		j,
+		"trafficSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroup) TrafficSourceInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"trafficSourceInput",
 		&returns,
 	)
 	return returns
@@ -1229,7 +1229,7 @@ func (j *jsiiProxy_AutoscalingGroup) WarmPoolSize() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
 func NewAutoscalingGroup(scope constructs.Construct, id *string, config *AutoscalingGroupConfig) AutoscalingGroup {
 	_init_.Initialize()
 
@@ -1247,7 +1247,7 @@ func NewAutoscalingGroup(scope constructs.Construct, id *string, config *Autosca
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
 func NewAutoscalingGroup_Override(a AutoscalingGroup, scope constructs.Construct, id *string, config *AutoscalingGroupConfig) {
 	_init_.Initialize()
 
@@ -1608,17 +1608,6 @@ func (j *jsiiProxy_AutoscalingGroup)SetSuspendedProcesses(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"suspendedProcesses",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AutoscalingGroup)SetTags(val interface{}) {
-	if err := j.validateSetTagsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tags",
 		val,
 	)
 }
@@ -2010,6 +1999,17 @@ func (a *jsiiProxy_AutoscalingGroup) PutTimeouts(value *AutoscalingGroupTimeouts
 	)
 }
 
+func (a *jsiiProxy_AutoscalingGroup) PutTrafficSource(value interface{}) {
+	if err := a.validatePutTrafficSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putTrafficSource",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AutoscalingGroup) PutWarmPool(value *AutoscalingGroupWarmPool) {
 	if err := a.validatePutWarmPoolParameters(value); err != nil {
 		panic(err)
@@ -2261,14 +2261,6 @@ func (a *jsiiProxy_AutoscalingGroup) ResetTag() {
 	)
 }
 
-func (a *jsiiProxy_AutoscalingGroup) ResetTags() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetTags",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AutoscalingGroup) ResetTargetGroupArns() {
 	_jsii_.InvokeVoid(
 		a,
@@ -2289,6 +2281,14 @@ func (a *jsiiProxy_AutoscalingGroup) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutoscalingGroup) ResetTrafficSource() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTrafficSource",
 		nil, // no parameters
 	)
 }

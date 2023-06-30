@@ -2,14 +2,14 @@ package securityhubstandardscontrol
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/securityhubstandardscontrol/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/securityhubstandardscontrol/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/securityhub_standards_control aws_securityhub_standards_control}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/securityhub_standards_control aws_securityhub_standards_control}.
 type SecurityhubStandardsControl interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -433,7 +433,7 @@ func (j *jsiiProxy_SecurityhubStandardsControl) Title() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/securityhub_standards_control aws_securityhub_standards_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/securityhub_standards_control aws_securityhub_standards_control} Resource.
 func NewSecurityhubStandardsControl(scope constructs.Construct, id *string, config *SecurityhubStandardsControlConfig) SecurityhubStandardsControl {
 	_init_.Initialize()
 
@@ -451,7 +451,7 @@ func NewSecurityhubStandardsControl(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/securityhub_standards_control aws_securityhub_standards_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/securityhub_standards_control aws_securityhub_standards_control} Resource.
 func NewSecurityhubStandardsControl_Override(s SecurityhubStandardsControl, scope constructs.Construct, id *string, config *SecurityhubStandardsControlConfig) {
 	_init_.Initialize()
 

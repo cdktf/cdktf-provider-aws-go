@@ -173,6 +173,8 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputRe
 
 func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *SecurityhubInsightFiltersResourceAwsS3BucketOwnerName:
 		val := val.(*SecurityhubInsightFiltersResourceAwsS3BucketOwnerName)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputRe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *SecurityhubInsightFiltersResourceAwsS3BucketOwnerName, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SecurityhubInsightFiltersResourceAwsS3BucketOwnerName; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -76,6 +76,10 @@ func (a *jsiiProxy_AutoscalingGroup) validatePutTimeoutsParameters(value *Autosc
 	return nil
 }
 
+func (a *jsiiProxy_AutoscalingGroup) validatePutTrafficSourceParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingGroup) validatePutWarmPoolParameters(value *AutoscalingGroupWarmPool) error {
 	return nil
 }
@@ -209,10 +213,6 @@ func (j *jsiiProxy_AutoscalingGroup) validateSetServiceLinkedRoleArnParameters(v
 }
 
 func (j *jsiiProxy_AutoscalingGroup) validateSetSuspendedProcessesParameters(val *[]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_AutoscalingGroup) validateSetTagsParameters(val interface{}) error {
 	return nil
 }
 

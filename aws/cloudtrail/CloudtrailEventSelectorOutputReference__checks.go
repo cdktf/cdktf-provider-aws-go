@@ -224,6 +224,8 @@ func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) validateSetIncludeMan
 
 func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CloudtrailEventSelector:
 		val := val.(*CloudtrailEventSelector)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -235,11 +237,9 @@ func (j *jsiiProxy_CloudtrailEventSelectorOutputReference) validateSetInternalVa
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CloudtrailEventSelector, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CloudtrailEventSelector; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -2,14 +2,14 @@ package dataawsdxconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsdxconnection/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdxconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/dx_connection aws_dx_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/dx_connection aws_dx_connection}.
 type DataAwsDxConnection interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -66,7 +66,7 @@ type DataAwsDxConnection interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	VlanId() *string
+	VlanId() *float64
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -382,8 +382,8 @@ func (j *jsiiProxy_DataAwsDxConnection) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDxConnection) VlanId() *string {
-	var returns *string
+func (j *jsiiProxy_DataAwsDxConnection) VlanId() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"vlanId",
@@ -393,7 +393,7 @@ func (j *jsiiProxy_DataAwsDxConnection) VlanId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/dx_connection aws_dx_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/dx_connection aws_dx_connection} Data Source.
 func NewDataAwsDxConnection(scope constructs.Construct, id *string, config *DataAwsDxConnectionConfig) DataAwsDxConnection {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewDataAwsDxConnection(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/dx_connection aws_dx_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/dx_connection aws_dx_connection} Data Source.
 func NewDataAwsDxConnection_Override(d DataAwsDxConnection, scope constructs.Construct, id *string, config *DataAwsDxConnectionConfig) {
 	_init_.Initialize()
 

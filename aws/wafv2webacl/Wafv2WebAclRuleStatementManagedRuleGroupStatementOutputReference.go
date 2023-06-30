@@ -2,9 +2,9 @@ package wafv2webacl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/wafv2webacl/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/wafv2webacl/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -25,8 +25,6 @@ type Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference interface 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	ExcludedRule() Wafv2WebAclRuleStatementManagedRuleGroupStatementExcludedRuleList
-	ExcludedRuleInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *Wafv2WebAclRuleStatementManagedRuleGroupStatement
@@ -78,11 +76,9 @@ type Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutExcludedRule(value interface{})
 	PutManagedRuleGroupConfigs(value interface{})
 	PutRuleActionOverride(value interface{})
 	PutScopeDownStatement(value *Wafv2WebAclRuleStatementManagedRuleGroupStatementScopeDownStatement)
-	ResetExcludedRule()
 	ResetManagedRuleGroupConfigs()
 	ResetRuleActionOverride()
 	ResetScopeDownStatement()
@@ -127,26 +123,6 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputRefere
 	_jsii_.Get(
 		j,
 		"creationStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference) ExcludedRule() Wafv2WebAclRuleStatementManagedRuleGroupStatementExcludedRuleList {
-	var returns Wafv2WebAclRuleStatementManagedRuleGroupStatementExcludedRuleList
-	_jsii_.Get(
-		j,
-		"excludedRule",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference) ExcludedRuleInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"excludedRuleInput",
 		&returns,
 	)
 	return returns
@@ -614,17 +590,6 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputRefere
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference) PutExcludedRule(value interface{}) {
-	if err := w.validatePutExcludedRuleParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		w,
-		"putExcludedRule",
-		[]interface{}{value},
-	)
-}
-
 func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference) PutManagedRuleGroupConfigs(value interface{}) {
 	if err := w.validatePutManagedRuleGroupConfigsParameters(value); err != nil {
 		panic(err)
@@ -655,14 +620,6 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputRefere
 		w,
 		"putScopeDownStatement",
 		[]interface{}{value},
-	)
-}
-
-func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementOutputReference) ResetExcludedRule() {
-	_jsii_.InvokeVoid(
-		w,
-		"resetExcludedRule",
-		nil, // no parameters
 	)
 }
 

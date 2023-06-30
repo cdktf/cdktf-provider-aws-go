@@ -2,14 +2,14 @@ package iamrole
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/iamrole/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/iamrole/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role aws_iam_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/iam_role aws_iam_role}.
 type IamRole interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -86,7 +86,6 @@ type IamRole interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	RoleLastUsed() IamRoleRoleLastUsedList
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -526,16 +525,6 @@ func (j *jsiiProxy_IamRole) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IamRole) RoleLastUsed() IamRoleRoleLastUsedList {
-	var returns IamRoleRoleLastUsedList
-	_jsii_.Get(
-		j,
-		"roleLastUsed",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_IamRole) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -617,7 +606,7 @@ func (j *jsiiProxy_IamRole) UniqueId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role aws_iam_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/iam_role aws_iam_role} Resource.
 func NewIamRole(scope constructs.Construct, id *string, config *IamRoleConfig) IamRole {
 	_init_.Initialize()
 
@@ -635,7 +624,7 @@ func NewIamRole(scope constructs.Construct, id *string, config *IamRoleConfig) I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iam_role aws_iam_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/iam_role aws_iam_role} Resource.
 func NewIamRole_Override(i IamRole, scope constructs.Construct, id *string, config *IamRoleConfig) {
 	_init_.Initialize()
 

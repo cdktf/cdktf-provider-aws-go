@@ -2,14 +2,14 @@ package lambdainvocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/lambdainvocation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/lambdainvocation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lambda_invocation aws_lambda_invocation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/lambda_invocation aws_lambda_invocation}.
 type LambdaInvocation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -49,6 +49,9 @@ type LambdaInvocation interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LifecycleScope() *string
+	SetLifecycleScope(val *string)
+	LifecycleScopeInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -67,6 +70,9 @@ type LambdaInvocation interface {
 	Result() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformKey() *string
+	SetTerraformKey(val *string)
+	TerraformKeyInput() *string
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -100,10 +106,12 @@ type LambdaInvocation interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetLifecycleScope()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetQualifier()
+	ResetTerraformKey()
 	ResetTriggers()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -270,6 +278,26 @@ func (j *jsiiProxy_LambdaInvocation) Lifecycle() *cdktf.TerraformResourceLifecyc
 	return returns
 }
 
+func (j *jsiiProxy_LambdaInvocation) LifecycleScope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lifecycleScope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaInvocation) LifecycleScopeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lifecycleScopeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LambdaInvocation) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -350,6 +378,26 @@ func (j *jsiiProxy_LambdaInvocation) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
+func (j *jsiiProxy_LambdaInvocation) TerraformKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaInvocation) TerraformKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LambdaInvocation) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -391,7 +439,7 @@ func (j *jsiiProxy_LambdaInvocation) TriggersInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lambda_invocation aws_lambda_invocation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/lambda_invocation aws_lambda_invocation} Resource.
 func NewLambdaInvocation(scope constructs.Construct, id *string, config *LambdaInvocationConfig) LambdaInvocation {
 	_init_.Initialize()
 
@@ -409,7 +457,7 @@ func NewLambdaInvocation(scope constructs.Construct, id *string, config *LambdaI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/lambda_invocation aws_lambda_invocation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/lambda_invocation aws_lambda_invocation} Resource.
 func NewLambdaInvocation_Override(l LambdaInvocation, scope constructs.Construct, id *string, config *LambdaInvocationConfig) {
 	_init_.Initialize()
 
@@ -502,6 +550,17 @@ func (j *jsiiProxy_LambdaInvocation)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
+func (j *jsiiProxy_LambdaInvocation)SetLifecycleScope(val *string) {
+	if err := j.validateSetLifecycleScopeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lifecycleScope",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LambdaInvocation)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -528,6 +587,17 @@ func (j *jsiiProxy_LambdaInvocation)SetQualifier(val *string) {
 	_jsii_.Set(
 		j,
 		"qualifier",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaInvocation)SetTerraformKey(val *string) {
+	if err := j.validateSetTerraformKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformKey",
 		val,
 	)
 }
@@ -817,6 +887,14 @@ func (l *jsiiProxy_LambdaInvocation) ResetId() {
 	)
 }
 
+func (l *jsiiProxy_LambdaInvocation) ResetLifecycleScope() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetLifecycleScope",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LambdaInvocation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
@@ -829,6 +907,14 @@ func (l *jsiiProxy_LambdaInvocation) ResetQualifier() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetQualifier",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaInvocation) ResetTerraformKey() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTerraformKey",
 		nil, // no parameters
 	)
 }

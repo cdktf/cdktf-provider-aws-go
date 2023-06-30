@@ -2,14 +2,14 @@ package vpngatewayattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/vpngatewayattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/vpngatewayattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpn_gateway_attachment aws_vpn_gateway_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/vpn_gateway_attachment aws_vpn_gateway_attachment}.
 type VpnGatewayAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_VpnGatewayAttachment) VpnGatewayIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpn_gateway_attachment aws_vpn_gateway_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/vpn_gateway_attachment aws_vpn_gateway_attachment} Resource.
 func NewVpnGatewayAttachment(scope constructs.Construct, id *string, config *VpnGatewayAttachmentConfig) VpnGatewayAttachment {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewVpnGatewayAttachment(scope constructs.Construct, id *string, config *Vpn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpn_gateway_attachment aws_vpn_gateway_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/vpn_gateway_attachment aws_vpn_gateway_attachment} Resource.
 func NewVpnGatewayAttachment_Override(v VpnGatewayAttachment, scope constructs.Construct, id *string, config *VpnGatewayAttachmentConfig) {
 	_init_.Initialize()
 

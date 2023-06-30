@@ -173,6 +173,8 @@ func (j *jsiiProxy_SecurityhubInsightFiltersProcessPathOutputReference) validate
 
 func (j *jsiiProxy_SecurityhubInsightFiltersProcessPathOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *SecurityhubInsightFiltersProcessPath:
 		val := val.(*SecurityhubInsightFiltersProcessPath)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_SecurityhubInsightFiltersProcessPathOutputReference) validate
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *SecurityhubInsightFiltersProcessPath, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SecurityhubInsightFiltersProcessPath; received %#v (a %T)", val, val)
 		}
 	}
 

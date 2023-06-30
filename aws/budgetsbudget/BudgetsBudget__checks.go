@@ -299,14 +299,6 @@ func (j *jsiiProxy_BudgetsBudget) validateSetConnectionParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudget) validateSetCostFiltersParameters(val *map[string]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_BudgetsBudget) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
 	case *float64:

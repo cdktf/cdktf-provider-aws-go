@@ -2,14 +2,14 @@ package dataawss3accountpublicaccessblock
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawss3accountpublicaccessblock/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawss3accountpublicaccessblock/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/s3_account_public_access_block aws_s3_account_public_access_block}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/s3_account_public_access_block aws_s3_account_public_access_block}.
 type DataAwsS3AccountPublicAccessBlock interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -326,7 +326,7 @@ func (j *jsiiProxy_DataAwsS3AccountPublicAccessBlock) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/s3_account_public_access_block aws_s3_account_public_access_block} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/s3_account_public_access_block aws_s3_account_public_access_block} Data Source.
 func NewDataAwsS3AccountPublicAccessBlock(scope constructs.Construct, id *string, config *DataAwsS3AccountPublicAccessBlockConfig) DataAwsS3AccountPublicAccessBlock {
 	_init_.Initialize()
 
@@ -344,7 +344,7 @@ func NewDataAwsS3AccountPublicAccessBlock(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/s3_account_public_access_block aws_s3_account_public_access_block} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/s3_account_public_access_block aws_s3_account_public_access_block} Data Source.
 func NewDataAwsS3AccountPublicAccessBlock_Override(d DataAwsS3AccountPublicAccessBlock, scope constructs.Construct, id *string, config *DataAwsS3AccountPublicAccessBlockConfig) {
 	_init_.Initialize()
 

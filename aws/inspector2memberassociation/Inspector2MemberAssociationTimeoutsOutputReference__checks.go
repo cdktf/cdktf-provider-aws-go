@@ -181,6 +181,8 @@ func (j *jsiiProxy_Inspector2MemberAssociationTimeoutsOutputReference) validateS
 
 func (j *jsiiProxy_Inspector2MemberAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *Inspector2MemberAssociationTimeouts:
 		val := val.(*Inspector2MemberAssociationTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_Inspector2MemberAssociationTimeoutsOutputReference) validateS
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *Inspector2MemberAssociationTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *Inspector2MemberAssociationTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

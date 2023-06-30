@@ -48,15 +48,7 @@ func (v *jsiiProxy_VpcPeeringConnectionRequesterOutputReference) validateResolve
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionRequesterOutputReference) validateSetAllowClassicLinkToRemoteVpcParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_VpcPeeringConnectionRequesterOutputReference) validateSetAllowRemoteVpcDnsResolutionParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_VpcPeeringConnectionRequesterOutputReference) validateSetAllowVpcToRemoteClassicLinkParameters(val interface{}) error {
 	return nil
 }
 

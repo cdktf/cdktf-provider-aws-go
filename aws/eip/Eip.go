@@ -2,14 +2,14 @@ package eip
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/eip/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/eip/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip aws_eip}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/eip aws_eip}.
 type Eip interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -42,6 +42,8 @@ type Eip interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Domain() *string
+	SetDomain(val *string)
+	DomainInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -131,6 +133,7 @@ type Eip interface {
 	ResetAddress()
 	ResetAssociateWithPrivateIp()
 	ResetCustomerOwnedIpv4Pool()
+	ResetDomain()
 	ResetId()
 	ResetInstance()
 	ResetNetworkBorderGroup()
@@ -313,6 +316,16 @@ func (j *jsiiProxy_Eip) Domain() *string {
 	_jsii_.Get(
 		j,
 		"domain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Eip) DomainInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainInput",
 		&returns,
 	)
 	return returns
@@ -649,7 +662,7 @@ func (j *jsiiProxy_Eip) VpcInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip aws_eip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/eip aws_eip} Resource.
 func NewEip(scope constructs.Construct, id *string, config *EipConfig) Eip {
 	_init_.Initialize()
 
@@ -667,7 +680,7 @@ func NewEip(scope constructs.Construct, id *string, config *EipConfig) Eip {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/eip aws_eip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/eip aws_eip} Resource.
 func NewEip_Override(e Eip, scope constructs.Construct, id *string, config *EipConfig) {
 	_init_.Initialize()
 
@@ -737,6 +750,17 @@ func (j *jsiiProxy_Eip)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Eip)SetDomain(val *string) {
+	if err := j.validateSetDomainParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domain",
 		val,
 	)
 }
@@ -1164,6 +1188,14 @@ func (e *jsiiProxy_Eip) ResetCustomerOwnedIpv4Pool() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetCustomerOwnedIpv4Pool",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Eip) ResetDomain() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetDomain",
 		nil, // no parameters
 	)
 }

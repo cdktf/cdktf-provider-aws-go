@@ -177,17 +177,6 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutRedshiftConfigurati
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutS3ConfigurationParameters(value *KinesisFirehoseDeliveryStreamS3Configuration) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutServerSideEncryptionParameters(value *KinesisFirehoseDeliveryStreamServerSideEncryption) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

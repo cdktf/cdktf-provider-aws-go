@@ -53,7 +53,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putOutboundCallerConfig", GoMethod: "PutOutboundCallerConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "queueId", GoGetter: "QueueId"},
 			_jsii_.MemberProperty{JsiiProperty: "quickConnectIds", GoGetter: "QuickConnectIds"},
-			_jsii_.MemberProperty{JsiiProperty: "quickConnectIdsAssociated", GoGetter: "QuickConnectIdsAssociated"},
 			_jsii_.MemberProperty{JsiiProperty: "quickConnectIdsInput", GoGetter: "QuickConnectIdsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},

@@ -44,10 +44,6 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) validatePutStatemuxSettingsParameters(value interface{}) error {
-	return nil
-}
-
 func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) validatePutStatmuxSettingsParameters(value interface{}) error {
 	return nil
 }

@@ -72,10 +72,6 @@ func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) validateSetComp
 	return nil
 }
 
-func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) validateSetEbsVolumeSizeParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) validateSetInstanceTypeParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudformationStackSet) validatePutAutoDeploymentParameters(v
 	return nil
 }
 
+func (c *jsiiProxy_CloudformationStackSet) validatePutManagedExecutionParameters(value *CloudformationStackSetManagedExecution) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudformationStackSet) validatePutOperationPreferencesParameters(value *CloudformationStackSetOperationPreferences) error {
 	return nil
 }

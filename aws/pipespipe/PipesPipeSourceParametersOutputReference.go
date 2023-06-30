@@ -2,14 +2,16 @@ package pipespipe
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/pipespipe/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/pipespipe/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type PipesPipeSourceParametersOutputReference interface {
 	cdktf.ComplexObject
+	ActivemqBrokerParameters() PipesPipeSourceParametersActivemqBrokerParametersOutputReference
+	ActivemqBrokerParametersInput() *PipesPipeSourceParametersActivemqBrokerParameters
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -25,12 +27,24 @@ type PipesPipeSourceParametersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DynamodbStreamParameters() PipesPipeSourceParametersDynamodbStreamParametersOutputReference
+	DynamodbStreamParametersInput() *PipesPipeSourceParametersDynamodbStreamParameters
 	FilterCriteria() PipesPipeSourceParametersFilterCriteriaOutputReference
 	FilterCriteriaInput() *PipesPipeSourceParametersFilterCriteria
 	// Experimental.
 	Fqn() *string
 	InternalValue() *PipesPipeSourceParameters
 	SetInternalValue(val *PipesPipeSourceParameters)
+	KinesisStreamParameters() PipesPipeSourceParametersKinesisStreamParametersOutputReference
+	KinesisStreamParametersInput() *PipesPipeSourceParametersKinesisStreamParameters
+	ManagedStreamingKafkaParameters() PipesPipeSourceParametersManagedStreamingKafkaParametersOutputReference
+	ManagedStreamingKafkaParametersInput() *PipesPipeSourceParametersManagedStreamingKafkaParameters
+	RabbitmqBrokerParameters() PipesPipeSourceParametersRabbitmqBrokerParametersOutputReference
+	RabbitmqBrokerParametersInput() *PipesPipeSourceParametersRabbitmqBrokerParameters
+	SelfManagedKafkaParameters() PipesPipeSourceParametersSelfManagedKafkaParametersOutputReference
+	SelfManagedKafkaParametersInput() *PipesPipeSourceParametersSelfManagedKafkaParameters
+	SqsQueueParameters() PipesPipeSourceParametersSqsQueueParametersOutputReference
+	SqsQueueParametersInput() *PipesPipeSourceParametersSqsQueueParameters
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -63,8 +77,22 @@ type PipesPipeSourceParametersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutActivemqBrokerParameters(value *PipesPipeSourceParametersActivemqBrokerParameters)
+	PutDynamodbStreamParameters(value *PipesPipeSourceParametersDynamodbStreamParameters)
 	PutFilterCriteria(value *PipesPipeSourceParametersFilterCriteria)
+	PutKinesisStreamParameters(value *PipesPipeSourceParametersKinesisStreamParameters)
+	PutManagedStreamingKafkaParameters(value *PipesPipeSourceParametersManagedStreamingKafkaParameters)
+	PutRabbitmqBrokerParameters(value *PipesPipeSourceParametersRabbitmqBrokerParameters)
+	PutSelfManagedKafkaParameters(value *PipesPipeSourceParametersSelfManagedKafkaParameters)
+	PutSqsQueueParameters(value *PipesPipeSourceParametersSqsQueueParameters)
+	ResetActivemqBrokerParameters()
+	ResetDynamodbStreamParameters()
 	ResetFilterCriteria()
+	ResetKinesisStreamParameters()
+	ResetManagedStreamingKafkaParameters()
+	ResetRabbitmqBrokerParameters()
+	ResetSelfManagedKafkaParameters()
+	ResetSqsQueueParameters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -78,6 +106,26 @@ type PipesPipeSourceParametersOutputReference interface {
 // The jsii proxy struct for PipesPipeSourceParametersOutputReference
 type jsiiProxy_PipesPipeSourceParametersOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_PipesPipeSourceParametersOutputReference) ActivemqBrokerParameters() PipesPipeSourceParametersActivemqBrokerParametersOutputReference {
+	var returns PipesPipeSourceParametersActivemqBrokerParametersOutputReference
+	_jsii_.Get(
+		j,
+		"activemqBrokerParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeSourceParametersOutputReference) ActivemqBrokerParametersInput() *PipesPipeSourceParametersActivemqBrokerParameters {
+	var returns *PipesPipeSourceParametersActivemqBrokerParameters
+	_jsii_.Get(
+		j,
+		"activemqBrokerParametersInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PipesPipeSourceParametersOutputReference) ComplexObjectIndex() interface{} {
@@ -105,6 +153,26 @@ func (j *jsiiProxy_PipesPipeSourceParametersOutputReference) CreationStack() *[]
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeSourceParametersOutputReference) DynamodbStreamParameters() PipesPipeSourceParametersDynamodbStreamParametersOutputReference {
+	var returns PipesPipeSourceParametersDynamodbStreamParametersOutputReference
+	_jsii_.Get(
+		j,
+		"dynamodbStreamParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeSourceParametersOutputReference) DynamodbStreamParametersInput() *PipesPipeSourceParametersDynamodbStreamParameters {
+	var returns *PipesPipeSourceParametersDynamodbStreamParameters
+	_jsii_.Get(
+		j,
+		"dynamodbStreamParametersInput",
 		&returns,
 	)
 	return returns
@@ -145,6 +213,106 @@ func (j *jsiiProxy_PipesPipeSourceParametersOutputReference) InternalValue() *Pi
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeSourceParametersOutputReference) KinesisStreamParameters() PipesPipeSourceParametersKinesisStreamParametersOutputReference {
+	var returns PipesPipeSourceParametersKinesisStreamParametersOutputReference
+	_jsii_.Get(
+		j,
+		"kinesisStreamParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeSourceParametersOutputReference) KinesisStreamParametersInput() *PipesPipeSourceParametersKinesisStreamParameters {
+	var returns *PipesPipeSourceParametersKinesisStreamParameters
+	_jsii_.Get(
+		j,
+		"kinesisStreamParametersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeSourceParametersOutputReference) ManagedStreamingKafkaParameters() PipesPipeSourceParametersManagedStreamingKafkaParametersOutputReference {
+	var returns PipesPipeSourceParametersManagedStreamingKafkaParametersOutputReference
+	_jsii_.Get(
+		j,
+		"managedStreamingKafkaParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeSourceParametersOutputReference) ManagedStreamingKafkaParametersInput() *PipesPipeSourceParametersManagedStreamingKafkaParameters {
+	var returns *PipesPipeSourceParametersManagedStreamingKafkaParameters
+	_jsii_.Get(
+		j,
+		"managedStreamingKafkaParametersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeSourceParametersOutputReference) RabbitmqBrokerParameters() PipesPipeSourceParametersRabbitmqBrokerParametersOutputReference {
+	var returns PipesPipeSourceParametersRabbitmqBrokerParametersOutputReference
+	_jsii_.Get(
+		j,
+		"rabbitmqBrokerParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeSourceParametersOutputReference) RabbitmqBrokerParametersInput() *PipesPipeSourceParametersRabbitmqBrokerParameters {
+	var returns *PipesPipeSourceParametersRabbitmqBrokerParameters
+	_jsii_.Get(
+		j,
+		"rabbitmqBrokerParametersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeSourceParametersOutputReference) SelfManagedKafkaParameters() PipesPipeSourceParametersSelfManagedKafkaParametersOutputReference {
+	var returns PipesPipeSourceParametersSelfManagedKafkaParametersOutputReference
+	_jsii_.Get(
+		j,
+		"selfManagedKafkaParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeSourceParametersOutputReference) SelfManagedKafkaParametersInput() *PipesPipeSourceParametersSelfManagedKafkaParameters {
+	var returns *PipesPipeSourceParametersSelfManagedKafkaParameters
+	_jsii_.Get(
+		j,
+		"selfManagedKafkaParametersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeSourceParametersOutputReference) SqsQueueParameters() PipesPipeSourceParametersSqsQueueParametersOutputReference {
+	var returns PipesPipeSourceParametersSqsQueueParametersOutputReference
+	_jsii_.Get(
+		j,
+		"sqsQueueParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeSourceParametersOutputReference) SqsQueueParametersInput() *PipesPipeSourceParametersSqsQueueParameters {
+	var returns *PipesPipeSourceParametersSqsQueueParameters
+	_jsii_.Get(
+		j,
+		"sqsQueueParametersInput",
 		&returns,
 	)
 	return returns
@@ -439,6 +607,28 @@ func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) InterpolationForAtt
 	return returns
 }
 
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) PutActivemqBrokerParameters(value *PipesPipeSourceParametersActivemqBrokerParameters) {
+	if err := p.validatePutActivemqBrokerParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putActivemqBrokerParameters",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) PutDynamodbStreamParameters(value *PipesPipeSourceParametersDynamodbStreamParameters) {
+	if err := p.validatePutDynamodbStreamParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putDynamodbStreamParameters",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) PutFilterCriteria(value *PipesPipeSourceParametersFilterCriteria) {
 	if err := p.validatePutFilterCriteriaParameters(value); err != nil {
 		panic(err)
@@ -450,10 +640,121 @@ func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) PutFilterCriteria(v
 	)
 }
 
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) PutKinesisStreamParameters(value *PipesPipeSourceParametersKinesisStreamParameters) {
+	if err := p.validatePutKinesisStreamParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putKinesisStreamParameters",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) PutManagedStreamingKafkaParameters(value *PipesPipeSourceParametersManagedStreamingKafkaParameters) {
+	if err := p.validatePutManagedStreamingKafkaParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putManagedStreamingKafkaParameters",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) PutRabbitmqBrokerParameters(value *PipesPipeSourceParametersRabbitmqBrokerParameters) {
+	if err := p.validatePutRabbitmqBrokerParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putRabbitmqBrokerParameters",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) PutSelfManagedKafkaParameters(value *PipesPipeSourceParametersSelfManagedKafkaParameters) {
+	if err := p.validatePutSelfManagedKafkaParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putSelfManagedKafkaParameters",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) PutSqsQueueParameters(value *PipesPipeSourceParametersSqsQueueParameters) {
+	if err := p.validatePutSqsQueueParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putSqsQueueParameters",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) ResetActivemqBrokerParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetActivemqBrokerParameters",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) ResetDynamodbStreamParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDynamodbStreamParameters",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) ResetFilterCriteria() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetFilterCriteria",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) ResetKinesisStreamParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetKinesisStreamParameters",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) ResetManagedStreamingKafkaParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetManagedStreamingKafkaParameters",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) ResetRabbitmqBrokerParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRabbitmqBrokerParameters",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) ResetSelfManagedKafkaParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSelfManagedKafkaParameters",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) ResetSqsQueueParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSqsQueueParameters",
 		nil, // no parameters
 	)
 }

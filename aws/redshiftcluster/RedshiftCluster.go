@@ -2,14 +2,14 @@ package redshiftcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/redshiftcluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/redshiftcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/redshift_cluster aws_redshift_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/redshift_cluster aws_redshift_cluster}.
 type RedshiftCluster interface {
 	cdktf.TerraformResource
 	AllowVersionUpgrade() interface{}
@@ -36,6 +36,7 @@ type RedshiftCluster interface {
 	ClusterIdentifier() *string
 	SetClusterIdentifier(val *string)
 	ClusterIdentifierInput() *string
+	ClusterNamespaceArn() *string
 	ClusterNodes() RedshiftClusterClusterNodesList
 	ClusterParameterGroupName() *string
 	SetClusterParameterGroupName(val *string)
@@ -46,9 +47,6 @@ type RedshiftCluster interface {
 	ClusterRevisionNumber() *string
 	SetClusterRevisionNumber(val *string)
 	ClusterRevisionNumberInput() *string
-	ClusterSecurityGroups() *[]*string
-	SetClusterSecurityGroups(val *[]*string)
-	ClusterSecurityGroupsInput() *[]*string
 	ClusterSubnetGroupName() *string
 	SetClusterSubnetGroupName(val *string)
 	ClusterSubnetGroupNameInput() *string
@@ -224,7 +222,6 @@ type RedshiftCluster interface {
 	ResetClusterParameterGroupName()
 	ResetClusterPublicKey()
 	ResetClusterRevisionNumber()
-	ResetClusterSecurityGroups()
 	ResetClusterSubnetGroupName()
 	ResetClusterType()
 	ResetClusterVersion()
@@ -434,6 +431,16 @@ func (j *jsiiProxy_RedshiftCluster) ClusterIdentifierInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RedshiftCluster) ClusterNamespaceArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterNamespaceArn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedshiftCluster) ClusterNodes() RedshiftClusterClusterNodesList {
 	var returns RedshiftClusterClusterNodesList
 	_jsii_.Get(
@@ -499,26 +506,6 @@ func (j *jsiiProxy_RedshiftCluster) ClusterRevisionNumberInput() *string {
 	_jsii_.Get(
 		j,
 		"clusterRevisionNumberInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RedshiftCluster) ClusterSecurityGroups() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"clusterSecurityGroups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RedshiftCluster) ClusterSecurityGroupsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"clusterSecurityGroupsInput",
 		&returns,
 	)
 	return returns
@@ -1325,7 +1312,7 @@ func (j *jsiiProxy_RedshiftCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
 func NewRedshiftCluster(scope constructs.Construct, id *string, config *RedshiftClusterConfig) RedshiftCluster {
 	_init_.Initialize()
 
@@ -1343,7 +1330,7 @@ func NewRedshiftCluster(scope constructs.Construct, id *string, config *Redshift
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
 func NewRedshiftCluster_Override(r RedshiftCluster, scope constructs.Construct, id *string, config *RedshiftClusterConfig) {
 	_init_.Initialize()
 
@@ -1460,17 +1447,6 @@ func (j *jsiiProxy_RedshiftCluster)SetClusterRevisionNumber(val *string) {
 	_jsii_.Set(
 		j,
 		"clusterRevisionNumber",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RedshiftCluster)SetClusterSecurityGroups(val *[]*string) {
-	if err := j.validateSetClusterSecurityGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"clusterSecurityGroups",
 		val,
 	)
 }
@@ -2229,14 +2205,6 @@ func (r *jsiiProxy_RedshiftCluster) ResetClusterRevisionNumber() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetClusterRevisionNumber",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RedshiftCluster) ResetClusterSecurityGroups() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetClusterSecurityGroups",
 		nil, // no parameters
 	)
 }

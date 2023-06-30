@@ -187,6 +187,8 @@ func (j *jsiiProxy_WafWebAclRulesOutputReference) validateSetComplexObjectIsFrom
 
 func (j *jsiiProxy_WafWebAclRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *WafWebAclRules:
 		val := val.(*WafWebAclRules)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -198,11 +200,9 @@ func (j *jsiiProxy_WafWebAclRulesOutputReference) validateSetInternalValueParame
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *WafWebAclRules, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *WafWebAclRules; received %#v (a %T)", val, val)
 		}
 	}
 

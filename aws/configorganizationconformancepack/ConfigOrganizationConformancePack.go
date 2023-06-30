@@ -2,14 +2,14 @@ package configorganizationconformancepack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/configorganizationconformancepack/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/configorganizationconformancepack/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/config_organization_conformance_pack aws_config_organization_conformance_pack}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/config_organization_conformance_pack aws_config_organization_conformance_pack}.
 type ConfigOrganizationConformancePack interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -488,7 +488,7 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/config_organization_conformance_pack aws_config_organization_conformance_pack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/config_organization_conformance_pack aws_config_organization_conformance_pack} Resource.
 func NewConfigOrganizationConformancePack(scope constructs.Construct, id *string, config *ConfigOrganizationConformancePackConfig) ConfigOrganizationConformancePack {
 	_init_.Initialize()
 
@@ -506,7 +506,7 @@ func NewConfigOrganizationConformancePack(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/config_organization_conformance_pack aws_config_organization_conformance_pack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/config_organization_conformance_pack aws_config_organization_conformance_pack} Resource.
 func NewConfigOrganizationConformancePack_Override(c ConfigOrganizationConformancePack, scope constructs.Construct, id *string, config *ConfigOrganizationConformancePackConfig) {
 	_init_.Initialize()
 

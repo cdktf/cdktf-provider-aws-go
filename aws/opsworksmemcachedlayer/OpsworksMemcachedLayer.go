@@ -2,14 +2,14 @@ package opsworksmemcachedlayer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/opsworksmemcachedlayer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/opsworksmemcachedlayer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_memcached_layer aws_opsworks_memcached_layer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/opsworks_memcached_layer aws_opsworks_memcached_layer}.
 type OpsworksMemcachedLayer interface {
 	cdktf.TerraformResource
 	AllocatedMemory() *float64
@@ -896,7 +896,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayer) UseEbsOptimizedInstancesInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_memcached_layer aws_opsworks_memcached_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/opsworks_memcached_layer aws_opsworks_memcached_layer} Resource.
 func NewOpsworksMemcachedLayer(scope constructs.Construct, id *string, config *OpsworksMemcachedLayerConfig) OpsworksMemcachedLayer {
 	_init_.Initialize()
 
@@ -914,7 +914,7 @@ func NewOpsworksMemcachedLayer(scope constructs.Construct, id *string, config *O
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opsworks_memcached_layer aws_opsworks_memcached_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/opsworks_memcached_layer aws_opsworks_memcached_layer} Resource.
 func NewOpsworksMemcachedLayer_Override(o OpsworksMemcachedLayer, scope constructs.Construct, id *string, config *OpsworksMemcachedLayerConfig) {
 	_init_.Initialize()
 

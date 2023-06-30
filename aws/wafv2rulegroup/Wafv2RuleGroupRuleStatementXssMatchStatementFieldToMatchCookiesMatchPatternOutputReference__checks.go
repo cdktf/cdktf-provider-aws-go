@@ -192,6 +192,8 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleStatementXssMatchStatementFieldToMatchCooki
 
 func (j *jsiiProxy_Wafv2RuleGroupRuleStatementXssMatchStatementFieldToMatchCookiesMatchPatternOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *Wafv2RuleGroupRuleStatementXssMatchStatementFieldToMatchCookiesMatchPattern:
 		val := val.(*Wafv2RuleGroupRuleStatementXssMatchStatementFieldToMatchCookiesMatchPattern)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -203,11 +205,9 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleStatementXssMatchStatementFieldToMatchCooki
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *Wafv2RuleGroupRuleStatementXssMatchStatementFieldToMatchCookiesMatchPattern, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *Wafv2RuleGroupRuleStatementXssMatchStatementFieldToMatchCookiesMatchPattern; received %#v (a %T)", val, val)
 		}
 	}
 

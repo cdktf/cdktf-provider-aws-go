@@ -173,6 +173,8 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutput
 
 func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId:
 		val := val.(*SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetIdOutput
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SecurityhubInsightFiltersResourceAwsEc2InstanceSubnetId; received %#v (a %T)", val, val)
 		}
 	}
 

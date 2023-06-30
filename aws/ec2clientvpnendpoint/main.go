@@ -83,7 +83,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "sessionTimeoutHoursInput", GoGetter: "SessionTimeoutHoursInput"},
 			_jsii_.MemberProperty{JsiiProperty: "splitTunnel", GoGetter: "SplitTunnel"},
 			_jsii_.MemberProperty{JsiiProperty: "splitTunnelInput", GoGetter: "SplitTunnelInput"},
-			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
 			_jsii_.MemberProperty{JsiiProperty: "tagsAll", GoGetter: "TagsAll"},

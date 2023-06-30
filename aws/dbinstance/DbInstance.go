@@ -2,14 +2,14 @@ package dbinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dbinstance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dbinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/db_instance aws_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/db_instance aws_db_instance}.
 type DbInstance interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -161,9 +161,6 @@ type DbInstance interface {
 	MultiAz() interface{}
 	SetMultiAz(val interface{})
 	MultiAzInput() interface{}
-	Name() *string
-	SetName(val *string)
-	NameInput() *string
 	NcharCharacterSetName() *string
 	SetNcharCharacterSetName(val *string)
 	NcharCharacterSetNameInput() *string
@@ -218,9 +215,6 @@ type DbInstance interface {
 	RestoreToPointInTimeInput() *DbInstanceRestoreToPointInTime
 	S3Import() DbInstanceS3ImportOutputReference
 	S3ImportInput() *DbInstanceS3Import
-	SecurityGroupNames() *[]*string
-	SetSecurityGroupNames(val *[]*string)
-	SecurityGroupNamesInput() *[]*string
 	SkipFinalSnapshot() interface{}
 	SetSkipFinalSnapshot(val interface{})
 	SkipFinalSnapshotInput() interface{}
@@ -326,7 +320,6 @@ type DbInstance interface {
 	ResetMonitoringInterval()
 	ResetMonitoringRoleArn()
 	ResetMultiAz()
-	ResetName()
 	ResetNcharCharacterSetName()
 	ResetNetworkType()
 	ResetOptionGroupName()
@@ -344,7 +337,6 @@ type DbInstance interface {
 	ResetReplicateSourceDb()
 	ResetRestoreToPointInTime()
 	ResetS3Import()
-	ResetSecurityGroupNames()
 	ResetSkipFinalSnapshot()
 	ResetSnapshotIdentifier()
 	ResetStorageEncrypted()
@@ -1301,26 +1293,6 @@ func (j *jsiiProxy_DbInstance) MultiAzInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) Name() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"name",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DbInstance) NameInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"nameInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DbInstance) NcharCharacterSetName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1661,26 +1633,6 @@ func (j *jsiiProxy_DbInstance) S3ImportInput() *DbInstanceS3Import {
 	return returns
 }
 
-func (j *jsiiProxy_DbInstance) SecurityGroupNames() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"securityGroupNames",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DbInstance) SecurityGroupNamesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"securityGroupNamesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DbInstance) SkipFinalSnapshot() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1942,7 +1894,7 @@ func (j *jsiiProxy_DbInstance) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/db_instance aws_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/db_instance aws_db_instance} Resource.
 func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceConfig) DbInstance {
 	_init_.Initialize()
 
@@ -1960,7 +1912,7 @@ func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/db_instance aws_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/db_instance aws_db_instance} Resource.
 func NewDbInstance_Override(d DbInstance, scope constructs.Construct, id *string, config *DbInstanceConfig) {
 	_init_.Initialize()
 
@@ -2427,17 +2379,6 @@ func (j *jsiiProxy_DbInstance)SetMultiAz(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DbInstance)SetName(val *string) {
-	if err := j.validateSetNameParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"name",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DbInstance)SetNcharCharacterSetName(val *string) {
 	if err := j.validateSetNcharCharacterSetNameParameters(val); err != nil {
 		panic(err)
@@ -2585,17 +2526,6 @@ func (j *jsiiProxy_DbInstance)SetReplicateSourceDb(val *string) {
 	_jsii_.Set(
 		j,
 		"replicateSourceDb",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DbInstance)SetSecurityGroupNames(val *[]*string) {
-	if err := j.validateSetSecurityGroupNamesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"securityGroupNames",
 		val,
 	)
 }
@@ -3316,14 +3246,6 @@ func (d *jsiiProxy_DbInstance) ResetMultiAz() {
 	)
 }
 
-func (d *jsiiProxy_DbInstance) ResetName() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetName",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DbInstance) ResetNcharCharacterSetName() {
 	_jsii_.InvokeVoid(
 		d,
@@ -3440,14 +3362,6 @@ func (d *jsiiProxy_DbInstance) ResetS3Import() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetS3Import",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DbInstance) ResetSecurityGroupNames() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetSecurityGroupNames",
 		nil, // no parameters
 	)
 }

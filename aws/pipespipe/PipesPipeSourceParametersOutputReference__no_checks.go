@@ -44,7 +44,35 @@ func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) validateInterpolati
 	return nil
 }
 
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) validatePutActivemqBrokerParametersParameters(value *PipesPipeSourceParametersActivemqBrokerParameters) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) validatePutDynamodbStreamParametersParameters(value *PipesPipeSourceParametersDynamodbStreamParameters) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) validatePutFilterCriteriaParameters(value *PipesPipeSourceParametersFilterCriteria) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) validatePutKinesisStreamParametersParameters(value *PipesPipeSourceParametersKinesisStreamParameters) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) validatePutManagedStreamingKafkaParametersParameters(value *PipesPipeSourceParametersManagedStreamingKafkaParameters) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) validatePutRabbitmqBrokerParametersParameters(value *PipesPipeSourceParametersRabbitmqBrokerParameters) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) validatePutSelfManagedKafkaParametersParameters(value *PipesPipeSourceParametersSelfManagedKafkaParameters) error {
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) validatePutSqsQueueParametersParameters(value *PipesPipeSourceParametersSqsQueueParameters) error {
 	return nil
 }
 

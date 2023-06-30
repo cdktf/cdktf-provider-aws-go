@@ -12,8 +12,6 @@ func init() {
 		reflect.TypeOf((*AutoscalingAttachment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
-			_jsii_.MemberProperty{JsiiProperty: "albTargetGroupArn", GoGetter: "AlbTargetGroupArn"},
-			_jsii_.MemberProperty{JsiiProperty: "albTargetGroupArnInput", GoGetter: "AlbTargetGroupArnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingGroupName", GoGetter: "AutoscalingGroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingGroupNameInput", GoGetter: "AutoscalingGroupNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
@@ -46,7 +44,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
-			_jsii_.MemberMethod{JsiiMethod: "resetAlbTargetGroupArn", GoMethod: "ResetAlbTargetGroupArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetElb", GoMethod: "ResetElb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLbTargetGroupArn", GoMethod: "ResetLbTargetGroupArn"},

@@ -28,6 +28,8 @@ func (a *jsiiProxy_AccessanalyzerArchiveRuleFilterList) validateResolveParameter
 
 func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *[]*AccessanalyzerArchiveRuleFilter:
 		val := val.(*[]*AccessanalyzerArchiveRuleFilter)
 		for idx_97dfc6, v := range *val {
@@ -43,11 +45,9 @@ func (j *jsiiProxy_AccessanalyzerArchiveRuleFilterList) validateSetInternalValue
 				return err
 			}
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *[]*AccessanalyzerArchiveRuleFilter, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*AccessanalyzerArchiveRuleFilter; received %#v (a %T)", val, val)
 		}
 	}
 

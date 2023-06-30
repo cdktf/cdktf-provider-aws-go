@@ -181,6 +181,8 @@ func (j *jsiiProxy_Route53ResolverEndpointTimeoutsOutputReference) validateSetDe
 
 func (j *jsiiProxy_Route53ResolverEndpointTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *Route53ResolverEndpointTimeouts:
 		val := val.(*Route53ResolverEndpointTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_Route53ResolverEndpointTimeoutsOutputReference) validateSetIn
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *Route53ResolverEndpointTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *Route53ResolverEndpointTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

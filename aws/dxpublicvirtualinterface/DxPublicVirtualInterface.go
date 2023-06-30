@@ -2,14 +2,14 @@ package dxpublicvirtualinterface
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dxpublicvirtualinterface/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dxpublicvirtualinterface/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dx_public_virtual_interface aws_dx_public_virtual_interface}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/dx_public_virtual_interface aws_dx_public_virtual_interface}.
 type DxPublicVirtualInterface interface {
 	cdktf.TerraformResource
 	AddressFamily() *string
@@ -601,7 +601,7 @@ func (j *jsiiProxy_DxPublicVirtualInterface) VlanInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dx_public_virtual_interface aws_dx_public_virtual_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/dx_public_virtual_interface aws_dx_public_virtual_interface} Resource.
 func NewDxPublicVirtualInterface(scope constructs.Construct, id *string, config *DxPublicVirtualInterfaceConfig) DxPublicVirtualInterface {
 	_init_.Initialize()
 
@@ -619,7 +619,7 @@ func NewDxPublicVirtualInterface(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/dx_public_virtual_interface aws_dx_public_virtual_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/dx_public_virtual_interface aws_dx_public_virtual_interface} Resource.
 func NewDxPublicVirtualInterface_Override(d DxPublicVirtualInterface, scope constructs.Construct, id *string, config *DxPublicVirtualInterfaceConfig) {
 	_init_.Initialize()
 

@@ -143,7 +143,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabledCloudwatchLogsExports", GoMethod: "ResetEnabledCloudwatchLogsExports"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableGlobalWriteForwarding", GoMethod: "ResetEnableGlobalWriteForwarding"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableHttpEndpoint", GoMethod: "ResetEnableHttpEndpoint"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEngine", GoMethod: "ResetEngine"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEngineMode", GoMethod: "ResetEngineMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEngineVersion", GoMethod: "ResetEngineVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFinalSnapshotIdentifier", GoMethod: "ResetFinalSnapshotIdentifier"},

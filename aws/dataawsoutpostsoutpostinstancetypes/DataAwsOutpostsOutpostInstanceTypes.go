@@ -2,14 +2,14 @@ package dataawsoutpostsoutpostinstancetypes
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsoutpostsoutpostinstancetypes/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsoutpostsoutpostinstancetypes/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/outposts_outpost_instance_types aws_outposts_outpost_instance_types}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/outposts_outpost_instance_types aws_outposts_outpost_instance_types}.
 type DataAwsOutpostsOutpostInstanceTypes interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataAwsOutpostsOutpostInstanceTypes) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/outposts_outpost_instance_types aws_outposts_outpost_instance_types} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/outposts_outpost_instance_types aws_outposts_outpost_instance_types} Data Source.
 func NewDataAwsOutpostsOutpostInstanceTypes(scope constructs.Construct, id *string, config *DataAwsOutpostsOutpostInstanceTypesConfig) DataAwsOutpostsOutpostInstanceTypes {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataAwsOutpostsOutpostInstanceTypes(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/outposts_outpost_instance_types aws_outposts_outpost_instance_types} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/outposts_outpost_instance_types aws_outposts_outpost_instance_types} Data Source.
 func NewDataAwsOutpostsOutpostInstanceTypes_Override(d DataAwsOutpostsOutpostInstanceTypes, scope constructs.Construct, id *string, config *DataAwsOutpostsOutpostInstanceTypesConfig) {
 	_init_.Initialize()
 

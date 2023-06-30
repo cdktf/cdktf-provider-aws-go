@@ -211,16 +211,10 @@ func (j *jsiiProxy_RouteTableRouteOutputReference) validateSetGatewayIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_RouteTableRouteOutputReference) validateSetInstanceIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_RouteTableRouteOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *RouteTableRoute:
 		val := val.(*RouteTableRoute)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -232,11 +226,9 @@ func (j *jsiiProxy_RouteTableRouteOutputReference) validateSetInternalValueParam
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *RouteTableRoute, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *RouteTableRoute; received %#v (a %T)", val, val)
 		}
 	}
 

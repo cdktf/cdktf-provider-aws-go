@@ -80,6 +80,10 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) validateSetMtimeParameter
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) validateSetObjectTagsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) validateSetOverwriteModeParameters(val *string) error {
 	return nil
 }

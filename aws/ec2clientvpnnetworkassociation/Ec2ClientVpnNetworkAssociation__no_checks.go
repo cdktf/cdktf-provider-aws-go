@@ -92,10 +92,6 @@ func (j *jsiiProxy_Ec2ClientVpnNetworkAssociation) validateSetProvisionersParame
 	return nil
 }
 
-func (j *jsiiProxy_Ec2ClientVpnNetworkAssociation) validateSetSecurityGroupsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_Ec2ClientVpnNetworkAssociation) validateSetSubnetIdParameters(val *string) error {
 	return nil
 }

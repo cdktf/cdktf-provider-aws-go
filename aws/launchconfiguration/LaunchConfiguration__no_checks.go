@@ -156,14 +156,6 @@ func (j *jsiiProxy_LaunchConfiguration) validateSetUserDataBase64Parameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_LaunchConfiguration) validateSetVpcClassicLinkIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_LaunchConfiguration) validateSetVpcClassicLinkSecurityGroupsParameters(val *[]*string) error {
-	return nil
-}
-
 func validateNewLaunchConfigurationParameters(scope constructs.Construct, id *string, config *LaunchConfigurationConfig) error {
 	return nil
 }

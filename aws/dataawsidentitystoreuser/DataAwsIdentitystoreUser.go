@@ -2,14 +2,14 @@ package dataawsidentitystoreuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsidentitystoreuser/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsidentitystoreuser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/identitystore_user aws_identitystore_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/identitystore_user aws_identitystore_user}.
 type DataAwsIdentitystoreUser interface {
 	cdktf.TerraformDataSource
 	Addresses() DataAwsIdentitystoreUserAddressesList
@@ -30,8 +30,6 @@ type DataAwsIdentitystoreUser interface {
 	DisplayName() *string
 	Emails() DataAwsIdentitystoreUserEmailsList
 	ExternalIds() DataAwsIdentitystoreUserExternalIdsList
-	Filter() DataAwsIdentitystoreUserFilterOutputReference
-	FilterInput() *DataAwsIdentitystoreUserFilter
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -103,9 +101,7 @@ type DataAwsIdentitystoreUser interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAlternateIdentifier(value *DataAwsIdentitystoreUserAlternateIdentifier)
-	PutFilter(value *DataAwsIdentitystoreUserFilter)
 	ResetAlternateIdentifier()
-	ResetFilter()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -221,26 +217,6 @@ func (j *jsiiProxy_DataAwsIdentitystoreUser) ExternalIds() DataAwsIdentitystoreU
 	_jsii_.Get(
 		j,
 		"externalIds",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsIdentitystoreUser) Filter() DataAwsIdentitystoreUserFilterOutputReference {
-	var returns DataAwsIdentitystoreUserFilterOutputReference
-	_jsii_.Get(
-		j,
-		"filter",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsIdentitystoreUser) FilterInput() *DataAwsIdentitystoreUserFilter {
-	var returns *DataAwsIdentitystoreUserFilter
-	_jsii_.Get(
-		j,
-		"filterInput",
 		&returns,
 	)
 	return returns
@@ -507,7 +483,7 @@ func (j *jsiiProxy_DataAwsIdentitystoreUser) UserType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/identitystore_user aws_identitystore_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/identitystore_user aws_identitystore_user} Data Source.
 func NewDataAwsIdentitystoreUser(scope constructs.Construct, id *string, config *DataAwsIdentitystoreUserConfig) DataAwsIdentitystoreUser {
 	_init_.Initialize()
 
@@ -525,7 +501,7 @@ func NewDataAwsIdentitystoreUser(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/identitystore_user aws_identitystore_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/identitystore_user aws_identitystore_user} Data Source.
 func NewDataAwsIdentitystoreUser_Override(d DataAwsIdentitystoreUser, scope constructs.Construct, id *string, config *DataAwsIdentitystoreUserConfig) {
 	_init_.Initialize()
 
@@ -892,29 +868,10 @@ func (d *jsiiProxy_DataAwsIdentitystoreUser) PutAlternateIdentifier(value *DataA
 	)
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreUser) PutFilter(value *DataAwsIdentitystoreUserFilter) {
-	if err := d.validatePutFilterParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putFilter",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataAwsIdentitystoreUser) ResetAlternateIdentifier() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAlternateIdentifier",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAwsIdentitystoreUser) ResetFilter() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetFilter",
 		nil, // no parameters
 	)
 }

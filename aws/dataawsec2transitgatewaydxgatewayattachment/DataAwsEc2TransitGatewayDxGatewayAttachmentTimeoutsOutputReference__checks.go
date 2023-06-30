@@ -165,6 +165,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachmentTimeoutsOutputRefe
 
 func (j *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataAwsEc2TransitGatewayDxGatewayAttachmentTimeouts:
 		val := val.(*DataAwsEc2TransitGatewayDxGatewayAttachmentTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachmentTimeoutsOutputRefe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataAwsEc2TransitGatewayDxGatewayAttachmentTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAwsEc2TransitGatewayDxGatewayAttachmentTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

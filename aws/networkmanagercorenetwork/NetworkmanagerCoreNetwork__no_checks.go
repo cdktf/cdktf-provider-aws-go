@@ -104,10 +104,6 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) validateSetLifecycleParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerCoreNetwork) validateSetPolicyDocumentParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_NetworkmanagerCoreNetwork) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

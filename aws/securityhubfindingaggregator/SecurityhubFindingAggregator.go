@@ -2,14 +2,14 @@ package securityhubfindingaggregator
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/securityhubfindingaggregator/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/securityhubfindingaggregator/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/securityhub_finding_aggregator aws_securityhub_finding_aggregator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/securityhub_finding_aggregator aws_securityhub_finding_aggregator}.
 type SecurityhubFindingAggregator interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_SecurityhubFindingAggregator) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/securityhub_finding_aggregator aws_securityhub_finding_aggregator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/securityhub_finding_aggregator aws_securityhub_finding_aggregator} Resource.
 func NewSecurityhubFindingAggregator(scope constructs.Construct, id *string, config *SecurityhubFindingAggregatorConfig) SecurityhubFindingAggregator {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewSecurityhubFindingAggregator(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/securityhub_finding_aggregator aws_securityhub_finding_aggregator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/securityhub_finding_aggregator aws_securityhub_finding_aggregator} Resource.
 func NewSecurityhubFindingAggregator_Override(s SecurityhubFindingAggregator, scope constructs.Construct, id *string, config *SecurityhubFindingAggregatorConfig) {
 	_init_.Initialize()
 

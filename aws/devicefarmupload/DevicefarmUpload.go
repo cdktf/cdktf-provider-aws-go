@@ -2,14 +2,14 @@ package devicefarmupload
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/devicefarmupload/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/devicefarmupload/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/devicefarm_upload aws_devicefarm_upload}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/devicefarm_upload aws_devicefarm_upload}.
 type DevicefarmUpload interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -423,7 +423,7 @@ func (j *jsiiProxy_DevicefarmUpload) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/devicefarm_upload aws_devicefarm_upload} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/devicefarm_upload aws_devicefarm_upload} Resource.
 func NewDevicefarmUpload(scope constructs.Construct, id *string, config *DevicefarmUploadConfig) DevicefarmUpload {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewDevicefarmUpload(scope constructs.Construct, id *string, config *Devicef
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/devicefarm_upload aws_devicefarm_upload} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/devicefarm_upload aws_devicefarm_upload} Resource.
 func NewDevicefarmUpload_Override(d DevicefarmUpload, scope constructs.Construct, id *string, config *DevicefarmUploadConfig) {
 	_init_.Initialize()
 

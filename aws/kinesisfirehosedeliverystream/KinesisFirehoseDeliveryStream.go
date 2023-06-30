@@ -2,14 +2,14 @@ package kinesisfirehosedeliverystream
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/kinesisfirehosedeliverystream/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/kinesisfirehosedeliverystream/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream}.
 type KinesisFirehoseDeliveryStream interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -79,8 +79,6 @@ type KinesisFirehoseDeliveryStream interface {
 	RawOverrides() interface{}
 	RedshiftConfiguration() KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference
 	RedshiftConfigurationInput() *KinesisFirehoseDeliveryStreamRedshiftConfiguration
-	S3Configuration() KinesisFirehoseDeliveryStreamS3ConfigurationOutputReference
-	S3ConfigurationInput() *KinesisFirehoseDeliveryStreamS3Configuration
 	ServerSideEncryption() KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference
 	ServerSideEncryptionInput() *KinesisFirehoseDeliveryStreamServerSideEncryption
 	SplunkConfiguration() KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference
@@ -133,7 +131,6 @@ type KinesisFirehoseDeliveryStream interface {
 	PutKinesisSourceConfiguration(value *KinesisFirehoseDeliveryStreamKinesisSourceConfiguration)
 	PutOpensearchConfiguration(value *KinesisFirehoseDeliveryStreamOpensearchConfiguration)
 	PutRedshiftConfiguration(value *KinesisFirehoseDeliveryStreamRedshiftConfiguration)
-	PutS3Configuration(value *KinesisFirehoseDeliveryStreamS3Configuration)
 	PutServerSideEncryption(value *KinesisFirehoseDeliveryStreamServerSideEncryption)
 	PutSplunkConfiguration(value *KinesisFirehoseDeliveryStreamSplunkConfiguration)
 	PutTimeouts(value *KinesisFirehoseDeliveryStreamTimeouts)
@@ -149,7 +146,6 @@ type KinesisFirehoseDeliveryStream interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRedshiftConfiguration()
-	ResetS3Configuration()
 	ResetServerSideEncryption()
 	ResetSplunkConfiguration()
 	ResetTags()
@@ -521,26 +517,6 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) RedshiftConfigurationInput() *
 	return returns
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream) S3Configuration() KinesisFirehoseDeliveryStreamS3ConfigurationOutputReference {
-	var returns KinesisFirehoseDeliveryStreamS3ConfigurationOutputReference
-	_jsii_.Get(
-		j,
-		"s3Configuration",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream) S3ConfigurationInput() *KinesisFirehoseDeliveryStreamS3Configuration {
-	var returns *KinesisFirehoseDeliveryStreamS3Configuration
-	_jsii_.Get(
-		j,
-		"s3ConfigurationInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_KinesisFirehoseDeliveryStream) ServerSideEncryption() KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference {
 	var returns KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference
 	_jsii_.Get(
@@ -692,7 +668,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) VersionIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
 func NewKinesisFirehoseDeliveryStream(scope constructs.Construct, id *string, config *KinesisFirehoseDeliveryStreamConfig) KinesisFirehoseDeliveryStream {
 	_init_.Initialize()
 
@@ -710,7 +686,7 @@ func NewKinesisFirehoseDeliveryStream(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
 func NewKinesisFirehoseDeliveryStream_Override(k KinesisFirehoseDeliveryStream, scope constructs.Construct, id *string, config *KinesisFirehoseDeliveryStreamConfig) {
 	_init_.Initialize()
 
@@ -1209,17 +1185,6 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutRedshiftConfiguration(value
 	)
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutS3Configuration(value *KinesisFirehoseDeliveryStreamS3Configuration) {
-	if err := k.validatePutS3ConfigurationParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		k,
-		"putS3Configuration",
-		[]interface{}{value},
-	)
-}
-
 func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutServerSideEncryption(value *KinesisFirehoseDeliveryStreamServerSideEncryption) {
 	if err := k.validatePutServerSideEncryptionParameters(value); err != nil {
 		panic(err)
@@ -1329,14 +1294,6 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ResetRedshiftConfiguration() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetRedshiftConfiguration",
-		nil, // no parameters
-	)
-}
-
-func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ResetS3Configuration() {
-	_jsii_.InvokeVoid(
-		k,
-		"resetS3Configuration",
 		nil, // no parameters
 	)
 }

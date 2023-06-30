@@ -257,6 +257,14 @@ func (j *jsiiProxy_LambdaInvocation) validateSetLifecycleParameters(val *cdktf.T
 	return nil
 }
 
+func (j *jsiiProxy_LambdaInvocation) validateSetLifecycleScopeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_LambdaInvocation) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
@@ -304,6 +312,14 @@ func (j *jsiiProxy_LambdaInvocation) validateSetProvisionersParameters(val *[]in
 }
 
 func (j *jsiiProxy_LambdaInvocation) validateSetQualifierParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_LambdaInvocation) validateSetTerraformKeyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

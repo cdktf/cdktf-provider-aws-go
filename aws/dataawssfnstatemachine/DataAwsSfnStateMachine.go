@@ -2,14 +2,14 @@ package dataawssfnstatemachine
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawssfnstatemachine/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawssfnstatemachine/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/sfn_state_machine aws_sfn_state_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/sfn_state_machine aws_sfn_state_machine}.
 type DataAwsSfnStateMachine interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -27,6 +27,7 @@ type DataAwsSfnStateMachine interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -53,6 +54,7 @@ type DataAwsSfnStateMachine interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	RevisionId() *string
 	RoleArn() *string
 	Status() *string
 	// Experimental.
@@ -175,6 +177,16 @@ func (j *jsiiProxy_DataAwsSfnStateMachine) DependsOn() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsSfnStateMachine) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsSfnStateMachine) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -285,6 +297,16 @@ func (j *jsiiProxy_DataAwsSfnStateMachine) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsSfnStateMachine) RevisionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"revisionId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsSfnStateMachine) RoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -336,7 +358,7 @@ func (j *jsiiProxy_DataAwsSfnStateMachine) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/sfn_state_machine aws_sfn_state_machine} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/sfn_state_machine aws_sfn_state_machine} Data Source.
 func NewDataAwsSfnStateMachine(scope constructs.Construct, id *string, config *DataAwsSfnStateMachineConfig) DataAwsSfnStateMachine {
 	_init_.Initialize()
 
@@ -354,7 +376,7 @@ func NewDataAwsSfnStateMachine(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/sfn_state_machine aws_sfn_state_machine} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/sfn_state_machine aws_sfn_state_machine} Data Source.
 func NewDataAwsSfnStateMachine_Override(d DataAwsSfnStateMachine, scope constructs.Construct, id *string, config *DataAwsSfnStateMachineConfig) {
 	_init_.Initialize()
 

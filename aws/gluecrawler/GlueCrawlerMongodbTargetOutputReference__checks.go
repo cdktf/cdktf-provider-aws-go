@@ -173,6 +173,8 @@ func (j *jsiiProxy_GlueCrawlerMongodbTargetOutputReference) validateSetConnectio
 
 func (j *jsiiProxy_GlueCrawlerMongodbTargetOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GlueCrawlerMongodbTarget:
 		val := val.(*GlueCrawlerMongodbTarget)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_GlueCrawlerMongodbTargetOutputReference) validateSetInternalV
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GlueCrawlerMongodbTarget, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GlueCrawlerMongodbTarget; received %#v (a %T)", val, val)
 		}
 	}
 

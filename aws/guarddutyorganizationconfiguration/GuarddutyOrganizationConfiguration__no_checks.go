@@ -72,6 +72,10 @@ func (j *jsiiProxy_GuarddutyOrganizationConfiguration) validateSetAutoEnablePara
 	return nil
 }
 
+func (j *jsiiProxy_GuarddutyOrganizationConfiguration) validateSetAutoEnableOrganizationMembersParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GuarddutyOrganizationConfiguration) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

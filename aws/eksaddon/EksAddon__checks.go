@@ -358,6 +358,22 @@ func (j *jsiiProxy_EksAddon) validateSetResolveConflictsParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_EksAddon) validateSetResolveConflictsOnCreateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_EksAddon) validateSetResolveConflictsOnUpdateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_EksAddon) validateSetServiceAccountRoleArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

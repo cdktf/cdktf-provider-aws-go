@@ -197,6 +197,8 @@ func (j *jsiiProxy_S3BucketCorsRuleOutputReference) validateSetExposeHeadersPara
 
 func (j *jsiiProxy_S3BucketCorsRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *S3BucketCorsRule:
 		val := val.(*S3BucketCorsRule)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -208,11 +210,9 @@ func (j *jsiiProxy_S3BucketCorsRuleOutputReference) validateSetInternalValuePara
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *S3BucketCorsRule, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *S3BucketCorsRule; received %#v (a %T)", val, val)
 		}
 	}
 

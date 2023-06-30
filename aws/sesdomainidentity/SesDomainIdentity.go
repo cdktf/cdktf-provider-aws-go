@@ -2,14 +2,14 @@ package sesdomainidentity
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/sesdomainidentity/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/sesdomainidentity/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ses_domain_identity aws_ses_domain_identity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ses_domain_identity aws_ses_domain_identity}.
 type SesDomainIdentity interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -331,7 +331,7 @@ func (j *jsiiProxy_SesDomainIdentity) VerificationToken() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ses_domain_identity aws_ses_domain_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ses_domain_identity aws_ses_domain_identity} Resource.
 func NewSesDomainIdentity(scope constructs.Construct, id *string, config *SesDomainIdentityConfig) SesDomainIdentity {
 	_init_.Initialize()
 
@@ -349,7 +349,7 @@ func NewSesDomainIdentity(scope constructs.Construct, id *string, config *SesDom
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ses_domain_identity aws_ses_domain_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ses_domain_identity aws_ses_domain_identity} Resource.
 func NewSesDomainIdentity_Override(s SesDomainIdentity, scope constructs.Construct, id *string, config *SesDomainIdentityConfig) {
 	_init_.Initialize()
 

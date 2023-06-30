@@ -2,14 +2,14 @@ package route
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/route/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/route/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route aws_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/route aws_route}.
 type Route interface {
 	cdktf.TerraformResource
 	CarrierGatewayId() *string
@@ -61,8 +61,6 @@ type Route interface {
 	SetId(val *string)
 	IdInput() *string
 	InstanceId() *string
-	SetInstanceId(val *string)
-	InstanceIdInput() *string
 	InstanceOwnerId() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -145,7 +143,6 @@ type Route interface {
 	ResetEgressOnlyGatewayId()
 	ResetGatewayId()
 	ResetId()
-	ResetInstanceId()
 	ResetLocalGatewayId()
 	ResetNatGatewayId()
 	ResetNetworkInterfaceId()
@@ -416,16 +413,6 @@ func (j *jsiiProxy_Route) InstanceId() *string {
 	_jsii_.Get(
 		j,
 		"instanceId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_Route) InstanceIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"instanceIdInput",
 		&returns,
 	)
 	return returns
@@ -702,7 +689,7 @@ func (j *jsiiProxy_Route) VpcPeeringConnectionIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route aws_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/route aws_route} Resource.
 func NewRoute(scope constructs.Construct, id *string, config *RouteConfig) Route {
 	_init_.Initialize()
 
@@ -720,7 +707,7 @@ func NewRoute(scope constructs.Construct, id *string, config *RouteConfig) Route
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route aws_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/route aws_route} Resource.
 func NewRoute_Override(r Route, scope constructs.Construct, id *string, config *RouteConfig) {
 	_init_.Initialize()
 
@@ -853,17 +840,6 @@ func (j *jsiiProxy_Route)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
-		val,
-	)
-}
-
-func (j *jsiiProxy_Route)SetInstanceId(val *string) {
-	if err := j.validateSetInstanceIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"instanceId",
 		val,
 	)
 }
@@ -1312,14 +1288,6 @@ func (r *jsiiProxy_Route) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_Route) ResetInstanceId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetInstanceId",
 		nil, // no parameters
 	)
 }

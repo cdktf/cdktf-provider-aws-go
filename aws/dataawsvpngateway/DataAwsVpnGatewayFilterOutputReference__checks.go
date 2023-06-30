@@ -165,6 +165,8 @@ func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) validateSetComplexObj
 
 func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataAwsVpnGatewayFilter:
 		val := val.(*DataAwsVpnGatewayFilter)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_DataAwsVpnGatewayFilterOutputReference) validateSetInternalVa
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataAwsVpnGatewayFilter, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAwsVpnGatewayFilter; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -227,6 +227,8 @@ func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) validateSetComple
 
 func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *FisExperimentTemplateTarget:
 		val := val.(*FisExperimentTemplateTarget)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -238,11 +240,9 @@ func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) validateSetIntern
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *FisExperimentTemplateTarget, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *FisExperimentTemplateTarget; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -250,6 +250,14 @@ func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) validateSetIntern
 }
 
 func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) validateSetParametersParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

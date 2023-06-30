@@ -1,0 +1,6 @@
+package dataawsiamprincipalpolicysimulation
+
+
+type DataAwsIamPrincipalPolicySimulationResultsMatchedStatements struct {
+}
+

@@ -2,14 +2,14 @@ package elb
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/elb/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/elb/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb aws_elb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/elb aws_elb}.
 type Elb interface {
 	cdktf.TerraformResource
 	AccessLogs() ElbAccessLogsOutputReference
@@ -115,6 +115,8 @@ type Elb interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() ElbTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	ZoneId() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
@@ -144,6 +146,7 @@ type Elb interface {
 	PutAccessLogs(value *ElbAccessLogs)
 	PutHealthCheck(value *ElbHealthCheck)
 	PutListener(value interface{})
+	PutTimeouts(value *ElbTimeouts)
 	ResetAccessLogs()
 	ResetAvailabilityZones()
 	ResetConnectionDraining()
@@ -165,6 +168,7 @@ type Elb interface {
 	ResetSubnets()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -750,6 +754,26 @@ func (j *jsiiProxy_Elb) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Elb) Timeouts() ElbTimeoutsOutputReference {
+	var returns ElbTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Elb) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Elb) ZoneId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -761,7 +785,7 @@ func (j *jsiiProxy_Elb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb aws_elb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/elb aws_elb} Resource.
 func NewElb(scope constructs.Construct, id *string, config *ElbConfig) Elb {
 	_init_.Initialize()
 
@@ -779,7 +803,7 @@ func NewElb(scope constructs.Construct, id *string, config *ElbConfig) Elb {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elb aws_elb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/elb aws_elb} Resource.
 func NewElb_Override(e Elb, scope constructs.Construct, id *string, config *ElbConfig) {
 	_init_.Initialize()
 
@@ -1333,6 +1357,17 @@ func (e *jsiiProxy_Elb) PutListener(value interface{}) {
 	)
 }
 
+func (e *jsiiProxy_Elb) PutTimeouts(value *ElbTimeouts) {
+	if err := e.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_Elb) ResetAccessLogs() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1481,6 +1516,14 @@ func (e *jsiiProxy_Elb) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Elb) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

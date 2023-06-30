@@ -173,6 +173,8 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference
 
 func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataAwsIamPolicyDocumentStatementNotPrincipals:
 		val := val.(*DataAwsIamPolicyDocumentStatementNotPrincipals)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataAwsIamPolicyDocumentStatementNotPrincipals, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAwsIamPolicyDocumentStatementNotPrincipals; received %#v (a %T)", val, val)
 		}
 	}
 

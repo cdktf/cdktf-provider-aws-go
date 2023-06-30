@@ -2,9 +2,9 @@ package mskcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/mskcluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/mskcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,9 +33,6 @@ type MskClusterBrokerNodeGroupInfoOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EbsVolumeSize() *float64
-	SetEbsVolumeSize(val *float64)
-	EbsVolumeSizeInput() *float64
 	// Experimental.
 	Fqn() *string
 	InstanceType() *string
@@ -84,7 +81,6 @@ type MskClusterBrokerNodeGroupInfoOutputReference interface {
 	PutStorageInfo(value *MskClusterBrokerNodeGroupInfoStorageInfo)
 	ResetAzDistribution()
 	ResetConnectivityInfo()
-	ResetEbsVolumeSize()
 	ResetStorageInfo()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -186,26 +182,6 @@ func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) CreationStack()
 	_jsii_.Get(
 		j,
 		"creationStack",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) EbsVolumeSize() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"ebsVolumeSize",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) EbsVolumeSizeInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"ebsVolumeSizeInput",
 		&returns,
 	)
 	return returns
@@ -379,17 +355,6 @@ func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference)SetComplexObject
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference)SetEbsVolumeSize(val *float64) {
-	if err := j.validateSetEbsVolumeSizeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ebsVolumeSize",
 		val,
 	)
 }
@@ -669,14 +634,6 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) ResetConnectivi
 	_jsii_.InvokeVoid(
 		m,
 		"resetConnectivityInfo",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoOutputReference) ResetEbsVolumeSize() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetEbsVolumeSize",
 		nil, // no parameters
 	)
 }

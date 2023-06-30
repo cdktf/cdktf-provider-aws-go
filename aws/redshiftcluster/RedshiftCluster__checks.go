@@ -284,14 +284,6 @@ func (j *jsiiProxy_RedshiftCluster) validateSetClusterRevisionNumberParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftCluster) validateSetClusterSecurityGroupsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_RedshiftCluster) validateSetClusterSubnetGroupNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -2,14 +2,14 @@ package dataawsroute53resolverendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsroute53resolverendpoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsroute53resolverendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/route53_resolver_endpoint aws_route53_resolver_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/route53_resolver_endpoint aws_route53_resolver_endpoint}.
 type DataAwsRoute53ResolverEndpoint interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -372,7 +372,7 @@ func (j *jsiiProxy_DataAwsRoute53ResolverEndpoint) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/route53_resolver_endpoint aws_route53_resolver_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/route53_resolver_endpoint aws_route53_resolver_endpoint} Data Source.
 func NewDataAwsRoute53ResolverEndpoint(scope constructs.Construct, id *string, config *DataAwsRoute53ResolverEndpointConfig) DataAwsRoute53ResolverEndpoint {
 	_init_.Initialize()
 
@@ -390,7 +390,7 @@ func NewDataAwsRoute53ResolverEndpoint(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/route53_resolver_endpoint aws_route53_resolver_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/route53_resolver_endpoint aws_route53_resolver_endpoint} Data Source.
 func NewDataAwsRoute53ResolverEndpoint_Override(d DataAwsRoute53ResolverEndpoint, scope constructs.Construct, id *string, config *DataAwsRoute53ResolverEndpointConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package grafanaroleassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/grafanaroleassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/grafanaroleassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/grafana_role_association aws_grafana_role_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/grafana_role_association aws_grafana_role_association}.
 type GrafanaRoleAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_GrafanaRoleAssociation) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/grafana_role_association aws_grafana_role_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/grafana_role_association aws_grafana_role_association} Resource.
 func NewGrafanaRoleAssociation(scope constructs.Construct, id *string, config *GrafanaRoleAssociationConfig) GrafanaRoleAssociation {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewGrafanaRoleAssociation(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/grafana_role_association aws_grafana_role_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/grafana_role_association aws_grafana_role_association} Resource.
 func NewGrafanaRoleAssociation_Override(g GrafanaRoleAssociation, scope constructs.Construct, id *string, config *GrafanaRoleAssociationConfig) {
 	_init_.Initialize()
 

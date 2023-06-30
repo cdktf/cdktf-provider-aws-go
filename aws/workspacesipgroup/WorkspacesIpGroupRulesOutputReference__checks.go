@@ -173,6 +173,8 @@ func (j *jsiiProxy_WorkspacesIpGroupRulesOutputReference) validateSetDescription
 
 func (j *jsiiProxy_WorkspacesIpGroupRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *WorkspacesIpGroupRules:
 		val := val.(*WorkspacesIpGroupRules)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_WorkspacesIpGroupRulesOutputReference) validateSetInternalVal
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *WorkspacesIpGroupRules, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *WorkspacesIpGroupRules; received %#v (a %T)", val, val)
 		}
 	}
 

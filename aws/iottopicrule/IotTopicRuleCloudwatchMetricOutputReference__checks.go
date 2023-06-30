@@ -165,6 +165,8 @@ func (j *jsiiProxy_IotTopicRuleCloudwatchMetricOutputReference) validateSetCompl
 
 func (j *jsiiProxy_IotTopicRuleCloudwatchMetricOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *IotTopicRuleCloudwatchMetric:
 		val := val.(*IotTopicRuleCloudwatchMetric)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_IotTopicRuleCloudwatchMetricOutputReference) validateSetInter
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *IotTopicRuleCloudwatchMetric, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *IotTopicRuleCloudwatchMetric; received %#v (a %T)", val, val)
 		}
 	}
 

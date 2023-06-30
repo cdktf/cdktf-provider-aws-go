@@ -2,14 +2,14 @@ package dataawsroute53zone
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsroute53zone/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsroute53zone/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/route53_zone aws_route53_zone}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/route53_zone aws_route53_zone}.
 type DataAwsRoute53Zone interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -479,7 +479,7 @@ func (j *jsiiProxy_DataAwsRoute53Zone) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/route53_zone aws_route53_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/route53_zone aws_route53_zone} Data Source.
 func NewDataAwsRoute53Zone(scope constructs.Construct, id *string, config *DataAwsRoute53ZoneConfig) DataAwsRoute53Zone {
 	_init_.Initialize()
 
@@ -497,7 +497,7 @@ func NewDataAwsRoute53Zone(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/route53_zone aws_route53_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/route53_zone aws_route53_zone} Data Source.
 func NewDataAwsRoute53Zone_Override(d DataAwsRoute53Zone, scope constructs.Construct, id *string, config *DataAwsRoute53ZoneConfig) {
 	_init_.Initialize()
 

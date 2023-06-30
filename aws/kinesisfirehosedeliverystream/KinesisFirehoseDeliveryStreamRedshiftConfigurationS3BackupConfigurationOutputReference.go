@@ -2,9 +2,9 @@ package kinesisfirehosedeliverystream
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/kinesisfirehosedeliverystream/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/kinesisfirehosedeliverystream/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -13,12 +13,12 @@ type KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutp
 	BucketArn() *string
 	SetBucketArn(val *string)
 	BucketArnInput() *string
-	BufferInterval() *float64
-	SetBufferInterval(val *float64)
-	BufferIntervalInput() *float64
-	BufferSize() *float64
-	SetBufferSize(val *float64)
-	BufferSizeInput() *float64
+	BufferingInterval() *float64
+	SetBufferingInterval(val *float64)
+	BufferingIntervalInput() *float64
+	BufferingSize() *float64
+	SetBufferingSize(val *float64)
+	BufferingSizeInput() *float64
 	CloudwatchLoggingOptions() KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptionsOutputReference
 	CloudwatchLoggingOptionsInput() *KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions
 	// the index of the complex object in a list.
@@ -88,8 +88,8 @@ type KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutp
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCloudwatchLoggingOptions(value *KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationCloudwatchLoggingOptions)
-	ResetBufferInterval()
-	ResetBufferSize()
+	ResetBufferingInterval()
+	ResetBufferingSize()
 	ResetCloudwatchLoggingOptions()
 	ResetCompressionFormat()
 	ResetErrorOutputPrefix()
@@ -130,41 +130,41 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupCon
 	return returns
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference) BufferInterval() *float64 {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference) BufferingInterval() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"bufferInterval",
+		"bufferingInterval",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference) BufferIntervalInput() *float64 {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference) BufferingIntervalInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"bufferIntervalInput",
+		"bufferingIntervalInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference) BufferSize() *float64 {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference) BufferingSize() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"bufferSize",
+		"bufferingSize",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference) BufferSizeInput() *float64 {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference) BufferingSizeInput() *float64 {
 	var returns *float64
 	_jsii_.Get(
 		j,
-		"bufferSizeInput",
+		"bufferingSizeInput",
 		&returns,
 	)
 	return returns
@@ -399,24 +399,24 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupCon
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference)SetBufferInterval(val *float64) {
-	if err := j.validateSetBufferIntervalParameters(val); err != nil {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference)SetBufferingInterval(val *float64) {
+	if err := j.validateSetBufferingIntervalParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"bufferInterval",
+		"bufferingInterval",
 		val,
 	)
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference)SetBufferSize(val *float64) {
-	if err := j.validateSetBufferSizeParameters(val); err != nil {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference)SetBufferingSize(val *float64) {
+	if err := j.validateSetBufferingSizeParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"bufferSize",
+		"bufferingSize",
 		val,
 	)
 }
@@ -728,18 +728,18 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupCon
 	)
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference) ResetBufferInterval() {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference) ResetBufferingInterval() {
 	_jsii_.InvokeVoid(
 		k,
-		"resetBufferInterval",
+		"resetBufferingInterval",
 		nil, // no parameters
 	)
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference) ResetBufferSize() {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfigurationOutputReference) ResetBufferingSize() {
 	_jsii_.InvokeVoid(
 		k,
-		"resetBufferSize",
+		"resetBufferingSize",
 		nil, // no parameters
 	)
 }

@@ -2,14 +2,14 @@ package dataawskmsalias
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawskmsalias/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawskmsalias/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/kms_alias aws_kms_alias}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/kms_alias aws_kms_alias}.
 type DataAwsKmsAlias interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -314,7 +314,7 @@ func (j *jsiiProxy_DataAwsKmsAlias) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/kms_alias aws_kms_alias} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/kms_alias aws_kms_alias} Data Source.
 func NewDataAwsKmsAlias(scope constructs.Construct, id *string, config *DataAwsKmsAliasConfig) DataAwsKmsAlias {
 	_init_.Initialize()
 
@@ -332,7 +332,7 @@ func NewDataAwsKmsAlias(scope constructs.Construct, id *string, config *DataAwsK
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/kms_alias aws_kms_alias} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/kms_alias aws_kms_alias} Data Source.
 func NewDataAwsKmsAlias_Override(d DataAwsKmsAlias, scope constructs.Construct, id *string, config *DataAwsKmsAliasConfig) {
 	_init_.Initialize()
 

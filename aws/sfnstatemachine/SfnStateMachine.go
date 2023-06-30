@@ -2,14 +2,14 @@ package sfnstatemachine
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/sfnstatemachine/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/sfnstatemachine/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sfn_state_machine aws_sfn_state_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/sfn_state_machine aws_sfn_state_machine}.
 type SfnStateMachine interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -33,6 +33,7 @@ type SfnStateMachine interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -66,11 +67,16 @@ type SfnStateMachine interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	Publish() interface{}
+	SetPublish(val interface{})
+	PublishInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	RevisionId() *string
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
+	StateMachineVersionArn() *string
 	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -91,6 +97,7 @@ type SfnStateMachine interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	VersionDescription() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -126,6 +133,7 @@ type SfnStateMachine interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPublish()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -231,6 +239,16 @@ func (j *jsiiProxy_SfnStateMachine) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfnStateMachine) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
 		&returns,
 	)
 	return returns
@@ -386,11 +404,41 @@ func (j *jsiiProxy_SfnStateMachine) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SfnStateMachine) Publish() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publish",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfnStateMachine) PublishInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"publishInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SfnStateMachine) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfnStateMachine) RevisionId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"revisionId",
 		&returns,
 	)
 	return returns
@@ -411,6 +459,16 @@ func (j *jsiiProxy_SfnStateMachine) RoleArnInput() *string {
 	_jsii_.Get(
 		j,
 		"roleArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfnStateMachine) StateMachineVersionArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stateMachineVersionArn",
 		&returns,
 	)
 	return returns
@@ -556,8 +614,18 @@ func (j *jsiiProxy_SfnStateMachine) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SfnStateMachine) VersionDescription() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionDescription",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sfn_state_machine aws_sfn_state_machine} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/sfn_state_machine aws_sfn_state_machine} Resource.
 func NewSfnStateMachine(scope constructs.Construct, id *string, config *SfnStateMachineConfig) SfnStateMachine {
 	_init_.Initialize()
 
@@ -575,7 +643,7 @@ func NewSfnStateMachine(scope constructs.Construct, id *string, config *SfnState
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/sfn_state_machine aws_sfn_state_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/sfn_state_machine aws_sfn_state_machine} Resource.
 func NewSfnStateMachine_Override(s SfnStateMachine, scope constructs.Construct, id *string, config *SfnStateMachineConfig) {
 	_init_.Initialize()
 
@@ -694,6 +762,17 @@ func (j *jsiiProxy_SfnStateMachine)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SfnStateMachine)SetPublish(val interface{}) {
+	if err := j.validateSetPublishParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"publish",
 		val,
 	)
 }
@@ -1077,6 +1156,14 @@ func (s *jsiiProxy_SfnStateMachine) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SfnStateMachine) ResetPublish() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetPublish",
 		nil, // no parameters
 	)
 }

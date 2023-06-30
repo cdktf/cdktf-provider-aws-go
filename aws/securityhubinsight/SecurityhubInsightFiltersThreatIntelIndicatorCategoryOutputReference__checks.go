@@ -173,6 +173,8 @@ func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputRe
 
 func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *SecurityhubInsightFiltersThreatIntelIndicatorCategory:
 		val := val.(*SecurityhubInsightFiltersThreatIntelIndicatorCategory)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorCategoryOutputRe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *SecurityhubInsightFiltersThreatIntelIndicatorCategory, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SecurityhubInsightFiltersThreatIntelIndicatorCategory; received %#v (a %T)", val, val)
 		}
 	}
 

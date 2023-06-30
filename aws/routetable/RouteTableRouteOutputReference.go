@@ -2,9 +2,9 @@ package routetable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/routetable/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/routetable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -45,9 +45,6 @@ type RouteTableRouteOutputReference interface {
 	GatewayId() *string
 	SetGatewayId(val *string)
 	GatewayIdInput() *string
-	InstanceId() *string
-	SetInstanceId(val *string)
-	InstanceIdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Ipv6CidrBlock() *string
@@ -109,7 +106,6 @@ type RouteTableRouteOutputReference interface {
 	ResetDestinationPrefixListId()
 	ResetEgressOnlyGatewayId()
 	ResetGatewayId()
-	ResetInstanceId()
 	ResetIpv6CidrBlock()
 	ResetLocalGatewayId()
 	ResetNatGatewayId()
@@ -287,26 +283,6 @@ func (j *jsiiProxy_RouteTableRouteOutputReference) GatewayIdInput() *string {
 	_jsii_.Get(
 		j,
 		"gatewayIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RouteTableRouteOutputReference) InstanceId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"instanceId",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_RouteTableRouteOutputReference) InstanceIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"instanceIdInput",
 		&returns,
 	)
 	return returns
@@ -594,17 +570,6 @@ func (j *jsiiProxy_RouteTableRouteOutputReference)SetGatewayId(val *string) {
 	_jsii_.Set(
 		j,
 		"gatewayId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_RouteTableRouteOutputReference)SetInstanceId(val *string) {
-	if err := j.validateSetInstanceIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"instanceId",
 		val,
 	)
 }
@@ -949,14 +914,6 @@ func (r *jsiiProxy_RouteTableRouteOutputReference) ResetGatewayId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetGatewayId",
-		nil, // no parameters
-	)
-}
-
-func (r *jsiiProxy_RouteTableRouteOutputReference) ResetInstanceId() {
-	_jsii_.InvokeVoid(
-		r,
-		"resetInstanceId",
 		nil, // no parameters
 	)
 }

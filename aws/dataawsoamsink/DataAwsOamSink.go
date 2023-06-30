@@ -2,14 +2,14 @@ package dataawsoamsink
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsoamsink/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsoamsink/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/oam_sink aws_oam_sink}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/oam_sink aws_oam_sink}.
 type DataAwsOamSink interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -338,7 +338,7 @@ func (j *jsiiProxy_DataAwsOamSink) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/oam_sink aws_oam_sink} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/oam_sink aws_oam_sink} Data Source.
 func NewDataAwsOamSink(scope constructs.Construct, id *string, config *DataAwsOamSinkConfig) DataAwsOamSink {
 	_init_.Initialize()
 
@@ -356,7 +356,7 @@ func NewDataAwsOamSink(scope constructs.Construct, id *string, config *DataAwsOa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/oam_sink aws_oam_sink} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/oam_sink aws_oam_sink} Data Source.
 func NewDataAwsOamSink_Override(d DataAwsOamSink, scope constructs.Construct, id *string, config *DataAwsOamSinkConfig) {
 	_init_.Initialize()
 

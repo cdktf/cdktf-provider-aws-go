@@ -84,6 +84,10 @@ func (j *jsiiProxy_SagemakerModelPrimaryContainerOutputReference) validateSetMod
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerModelPrimaryContainerOutputReference) validateSetModelPackageNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerModelPrimaryContainerOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

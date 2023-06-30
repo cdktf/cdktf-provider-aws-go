@@ -2,14 +2,14 @@ package apigatewayv2deployment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/apigatewayv2deployment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/apigatewayv2deployment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/apigatewayv2_deployment aws_apigatewayv2_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/apigatewayv2_deployment aws_apigatewayv2_deployment}.
 type Apigatewayv2Deployment interface {
 	cdktf.TerraformResource
 	ApiId() *string
@@ -368,7 +368,7 @@ func (j *jsiiProxy_Apigatewayv2Deployment) TriggersInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/apigatewayv2_deployment aws_apigatewayv2_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/apigatewayv2_deployment aws_apigatewayv2_deployment} Resource.
 func NewApigatewayv2Deployment(scope constructs.Construct, id *string, config *Apigatewayv2DeploymentConfig) Apigatewayv2Deployment {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewApigatewayv2Deployment(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/apigatewayv2_deployment aws_apigatewayv2_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/apigatewayv2_deployment aws_apigatewayv2_deployment} Resource.
 func NewApigatewayv2Deployment_Override(a Apigatewayv2Deployment, scope constructs.Construct, id *string, config *Apigatewayv2DeploymentConfig) {
 	_init_.Initialize()
 

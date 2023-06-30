@@ -230,6 +230,17 @@ func (o *jsiiProxy_OpensearchDomain) validatePutNodeToNodeEncryptionParameters(v
 	return nil
 }
 
+func (o *jsiiProxy_OpensearchDomain) validatePutOffPeakWindowOptionsParameters(value *OpensearchDomainOffPeakWindowOptions) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchDomain) validatePutSnapshotOptionsParameters(value *OpensearchDomainSnapshotOptions) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

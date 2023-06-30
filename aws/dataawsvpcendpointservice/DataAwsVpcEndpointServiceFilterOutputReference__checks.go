@@ -165,6 +165,8 @@ func (j *jsiiProxy_DataAwsVpcEndpointServiceFilterOutputReference) validateSetCo
 
 func (j *jsiiProxy_DataAwsVpcEndpointServiceFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataAwsVpcEndpointServiceFilter:
 		val := val.(*DataAwsVpcEndpointServiceFilter)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_DataAwsVpcEndpointServiceFilterOutputReference) validateSetIn
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataAwsVpcEndpointServiceFilter, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAwsVpcEndpointServiceFilter; received %#v (a %T)", val, val)
 		}
 	}
 

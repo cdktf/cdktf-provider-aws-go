@@ -2,14 +2,14 @@ package connecthoursofoperation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/connecthoursofoperation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/connecthoursofoperation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_hours_of_operation aws_connect_hours_of_operation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_hours_of_operation aws_connect_hours_of_operation}.
 type ConnectHoursOfOperation interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -42,7 +42,6 @@ type ConnectHoursOfOperation interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
-	HoursOfOperationArn() *string
 	HoursOfOperationId() *string
 	Id() *string
 	SetId(val *string)
@@ -262,16 +261,6 @@ func (j *jsiiProxy_ConnectHoursOfOperation) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ConnectHoursOfOperation) HoursOfOperationArn() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"hoursOfOperationArn",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ConnectHoursOfOperation) HoursOfOperationId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -483,7 +472,7 @@ func (j *jsiiProxy_ConnectHoursOfOperation) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_hours_of_operation aws_connect_hours_of_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_hours_of_operation aws_connect_hours_of_operation} Resource.
 func NewConnectHoursOfOperation(scope constructs.Construct, id *string, config *ConnectHoursOfOperationConfig) ConnectHoursOfOperation {
 	_init_.Initialize()
 
@@ -501,7 +490,7 @@ func NewConnectHoursOfOperation(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_hours_of_operation aws_connect_hours_of_operation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_hours_of_operation aws_connect_hours_of_operation} Resource.
 func NewConnectHoursOfOperation_Override(c ConnectHoursOfOperation, scope constructs.Construct, id *string, config *ConnectHoursOfOperationConfig) {
 	_init_.Initialize()
 

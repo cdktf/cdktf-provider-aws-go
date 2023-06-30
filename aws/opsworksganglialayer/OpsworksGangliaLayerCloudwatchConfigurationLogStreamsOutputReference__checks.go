@@ -229,6 +229,8 @@ func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputRe
 
 func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *OpsworksGangliaLayerCloudwatchConfigurationLogStreams:
 		val := val.(*OpsworksGangliaLayerCloudwatchConfigurationLogStreams)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -240,11 +242,9 @@ func (j *jsiiProxy_OpsworksGangliaLayerCloudwatchConfigurationLogStreamsOutputRe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *OpsworksGangliaLayerCloudwatchConfigurationLogStreams, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *OpsworksGangliaLayerCloudwatchConfigurationLogStreams; received %#v (a %T)", val, val)
 		}
 	}
 

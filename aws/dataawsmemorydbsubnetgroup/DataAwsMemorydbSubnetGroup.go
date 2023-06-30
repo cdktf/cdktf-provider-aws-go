@@ -2,14 +2,14 @@ package dataawsmemorydbsubnetgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsmemorydbsubnetgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsmemorydbsubnetgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_subnet_group aws_memorydb_subnet_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/memorydb_subnet_group aws_memorydb_subnet_group}.
 type DataAwsMemorydbSubnetGroup interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -349,7 +349,7 @@ func (j *jsiiProxy_DataAwsMemorydbSubnetGroup) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_subnet_group aws_memorydb_subnet_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/memorydb_subnet_group aws_memorydb_subnet_group} Data Source.
 func NewDataAwsMemorydbSubnetGroup(scope constructs.Construct, id *string, config *DataAwsMemorydbSubnetGroupConfig) DataAwsMemorydbSubnetGroup {
 	_init_.Initialize()
 
@@ -367,7 +367,7 @@ func NewDataAwsMemorydbSubnetGroup(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/memorydb_subnet_group aws_memorydb_subnet_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/memorydb_subnet_group aws_memorydb_subnet_group} Data Source.
 func NewDataAwsMemorydbSubnetGroup_Override(d DataAwsMemorydbSubnetGroup, scope constructs.Construct, id *string, config *DataAwsMemorydbSubnetGroupConfig) {
 	_init_.Initialize()
 

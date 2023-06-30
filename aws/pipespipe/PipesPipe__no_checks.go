@@ -52,6 +52,10 @@ func (p *jsiiProxy_PipesPipe) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
+func (p *jsiiProxy_PipesPipe) validatePutEnrichmentParametersParameters(value *PipesPipeEnrichmentParameters) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipesPipe) validatePutSourceParametersParameters(value *PipesPipeSourceParameters) error {
 	return nil
 }

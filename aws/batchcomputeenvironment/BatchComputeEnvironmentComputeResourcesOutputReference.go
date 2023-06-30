@@ -2,9 +2,9 @@ package batchcomputeenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/batchcomputeenvironment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/batchcomputeenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -60,6 +60,9 @@ type BatchComputeEnvironmentComputeResourcesOutputReference interface {
 	MinVcpus() *float64
 	SetMinVcpus(val *float64)
 	MinVcpusInput() *float64
+	PlacementGroup() *string
+	SetPlacementGroup(val *string)
+	PlacementGroupInput() *string
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
@@ -119,6 +122,7 @@ type BatchComputeEnvironmentComputeResourcesOutputReference interface {
 	ResetInstanceType()
 	ResetLaunchTemplate()
 	ResetMinVcpus()
+	ResetPlacementGroup()
 	ResetSecurityGroupIds()
 	ResetSpotIamFleetRole()
 	ResetTags()
@@ -407,6 +411,26 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) MinVc
 	return returns
 }
 
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) PlacementGroup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"placementGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) PlacementGroupInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"placementGroupInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) SecurityGroupIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -683,6 +707,17 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetMin
 	_jsii_.Set(
 		j,
 		"minVcpus",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference)SetPlacementGroup(val *string) {
+	if err := j.validateSetPlacementGroupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"placementGroup",
 		val,
 	)
 }
@@ -1048,6 +1083,14 @@ func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) Reset
 	_jsii_.InvokeVoid(
 		b,
 		"resetMinVcpus",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) ResetPlacementGroup() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetPlacementGroup",
 		nil, // no parameters
 	)
 }

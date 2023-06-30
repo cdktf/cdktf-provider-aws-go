@@ -2,14 +2,14 @@ package instance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/instance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/instance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/instance aws_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/instance aws_instance}.
 type Instance interface {
 	cdktf.TerraformResource
 	Ami() *string
@@ -94,6 +94,9 @@ type Instance interface {
 	InstanceInitiatedShutdownBehavior() *string
 	SetInstanceInitiatedShutdownBehavior(val *string)
 	InstanceInitiatedShutdownBehaviorInput() *string
+	InstanceLifecycle() *string
+	InstanceMarketOptions() InstanceInstanceMarketOptionsOutputReference
+	InstanceMarketOptionsInput() *InstanceInstanceMarketOptions
 	InstanceState() *string
 	InstanceType() *string
 	SetInstanceType(val *string)
@@ -162,6 +165,7 @@ type Instance interface {
 	SourceDestCheck() interface{}
 	SetSourceDestCheck(val interface{})
 	SourceDestCheckInput() interface{}
+	SpotInstanceRequestId() *string
 	SubnetId() *string
 	SetSubnetId(val *string)
 	SubnetIdInput() *string
@@ -228,6 +232,7 @@ type Instance interface {
 	PutEbsBlockDevice(value interface{})
 	PutEnclaveOptions(value *InstanceEnclaveOptions)
 	PutEphemeralBlockDevice(value interface{})
+	PutInstanceMarketOptions(value *InstanceInstanceMarketOptions)
 	PutLaunchTemplate(value *InstanceLaunchTemplate)
 	PutMaintenanceOptions(value *InstanceMaintenanceOptions)
 	PutMetadataOptions(value *InstanceMetadataOptions)
@@ -256,6 +261,7 @@ type Instance interface {
 	ResetIamInstanceProfile()
 	ResetId()
 	ResetInstanceInitiatedShutdownBehavior()
+	ResetInstanceMarketOptions()
 	ResetInstanceType()
 	ResetIpv6AddressCount()
 	ResetIpv6Addresses()
@@ -811,6 +817,36 @@ func (j *jsiiProxy_Instance) InstanceInitiatedShutdownBehaviorInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Instance) InstanceLifecycle() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceLifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Instance) InstanceMarketOptions() InstanceInstanceMarketOptionsOutputReference {
+	var returns InstanceInstanceMarketOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"instanceMarketOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Instance) InstanceMarketOptionsInput() *InstanceInstanceMarketOptions {
+	var returns *InstanceInstanceMarketOptions
+	_jsii_.Get(
+		j,
+		"instanceMarketOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Instance) InstanceState() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1271,6 +1307,16 @@ func (j *jsiiProxy_Instance) SourceDestCheckInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Instance) SpotInstanceRequestId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"spotInstanceRequestId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Instance) SubnetId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1502,7 +1548,7 @@ func (j *jsiiProxy_Instance) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/instance aws_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/instance aws_instance} Resource.
 func NewInstance(scope constructs.Construct, id *string, config *InstanceConfig) Instance {
 	_init_.Initialize()
 
@@ -1520,7 +1566,7 @@ func NewInstance(scope constructs.Construct, id *string, config *InstanceConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/instance aws_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/instance aws_instance} Resource.
 func NewInstance_Override(i Instance, scope constructs.Construct, id *string, config *InstanceConfig) {
 	_init_.Initialize()
 
@@ -2316,6 +2362,17 @@ func (i *jsiiProxy_Instance) PutEphemeralBlockDevice(value interface{}) {
 	)
 }
 
+func (i *jsiiProxy_Instance) PutInstanceMarketOptions(value *InstanceInstanceMarketOptions) {
+	if err := i.validatePutInstanceMarketOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putInstanceMarketOptions",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_Instance) PutLaunchTemplate(value *InstanceLaunchTemplate) {
 	if err := i.validatePutLaunchTemplateParameters(value); err != nil {
 		panic(err)
@@ -2557,6 +2614,14 @@ func (i *jsiiProxy_Instance) ResetInstanceInitiatedShutdownBehavior() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetInstanceInitiatedShutdownBehavior",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_Instance) ResetInstanceMarketOptions() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetInstanceMarketOptions",
 		nil, // no parameters
 	)
 }

@@ -4,9 +4,9 @@ package cloudtrail
 type CloudtrailAdvancedEventSelector struct {
 	// field_selector block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudtrail#field_selector Cloudtrail#field_selector}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/cloudtrail#field_selector Cloudtrail#field_selector}
 	FieldSelector interface{} `field:"required" json:"fieldSelector" yaml:"fieldSelector"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudtrail#name Cloudtrail#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/cloudtrail#name Cloudtrail#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

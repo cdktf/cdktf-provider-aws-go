@@ -181,6 +181,8 @@ func (j *jsiiProxy_Ec2FleetTimeoutsOutputReference) validateSetDeleteParameters(
 
 func (j *jsiiProxy_Ec2FleetTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *Ec2FleetTimeouts:
 		val := val.(*Ec2FleetTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_Ec2FleetTimeoutsOutputReference) validateSetInternalValuePara
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *Ec2FleetTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *Ec2FleetTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

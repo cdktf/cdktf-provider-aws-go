@@ -1,0 +1,6 @@
+package dataawsopensearchdomain
+
+
+type DataAwsOpensearchDomainOffPeakWindowOptionsOffPeakWindowWindowStartTime struct {
+}
+

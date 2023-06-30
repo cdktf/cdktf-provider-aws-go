@@ -2,14 +2,14 @@ package grafanalicenseassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/grafanalicenseassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/grafanalicenseassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/grafana_license_association aws_grafana_license_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/grafana_license_association aws_grafana_license_association}.
 type GrafanaLicenseAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -378,7 +378,7 @@ func (j *jsiiProxy_GrafanaLicenseAssociation) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/grafana_license_association aws_grafana_license_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/grafana_license_association aws_grafana_license_association} Resource.
 func NewGrafanaLicenseAssociation(scope constructs.Construct, id *string, config *GrafanaLicenseAssociationConfig) GrafanaLicenseAssociation {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewGrafanaLicenseAssociation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/grafana_license_association aws_grafana_license_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/grafana_license_association aws_grafana_license_association} Resource.
 func NewGrafanaLicenseAssociation_Override(g GrafanaLicenseAssociation, scope constructs.Construct, id *string, config *GrafanaLicenseAssociationConfig) {
 	_init_.Initialize()
 

@@ -217,6 +217,37 @@ func (a *jsiiProxy_AutoscalingGroup) validatePutTimeoutsParameters(value *Autosc
 	return nil
 }
 
+func (a *jsiiProxy_AutoscalingGroup) validatePutTrafficSourceParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*AutoscalingGroupTrafficSource:
+		value := value.(*[]*AutoscalingGroupTrafficSource)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*AutoscalingGroupTrafficSource:
+		value_ := value.([]*AutoscalingGroupTrafficSource)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AutoscalingGroupTrafficSource; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingGroup) validatePutWarmPoolParameters(value *AutoscalingGroupWarmPool) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -647,26 +678,6 @@ func (j *jsiiProxy_AutoscalingGroup) validateSetServiceLinkedRoleArnParameters(v
 func (j *jsiiProxy_AutoscalingGroup) validateSetSuspendedProcessesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_AutoscalingGroup) validateSetTagsParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*map[string]*string:
-		// ok
-	case []*map[string]*string:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*map[string]*string; received %#v (a %T)", val, val)
-		}
 	}
 
 	return nil

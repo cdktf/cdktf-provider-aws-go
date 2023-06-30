@@ -116,10 +116,6 @@ func (j *jsiiProxy_RedshiftCluster) validateSetClusterRevisionNumberParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftCluster) validateSetClusterSecurityGroupsParameters(val *[]*string) error {
-	return nil
-}
-
 func (j *jsiiProxy_RedshiftCluster) validateSetClusterSubnetGroupNameParameters(val *string) error {
 	return nil
 }

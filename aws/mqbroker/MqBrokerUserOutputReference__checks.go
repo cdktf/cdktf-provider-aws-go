@@ -193,6 +193,8 @@ func (j *jsiiProxy_MqBrokerUserOutputReference) validateSetGroupsParameters(val 
 
 func (j *jsiiProxy_MqBrokerUserOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *MqBrokerUser:
 		val := val.(*MqBrokerUser)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -204,11 +206,9 @@ func (j *jsiiProxy_MqBrokerUserOutputReference) validateSetInternalValueParamete
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *MqBrokerUser, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *MqBrokerUser; received %#v (a %T)", val, val)
 		}
 	}
 

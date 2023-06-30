@@ -2,14 +2,14 @@ package ceanomalysubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/ceanomalysubscription/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/ceanomalysubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ce_anomaly_subscription aws_ce_anomaly_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ce_anomaly_subscription aws_ce_anomaly_subscription}.
 type CeAnomalySubscription interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -82,11 +82,8 @@ type CeAnomalySubscription interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
-	Threshold() *float64
-	SetThreshold(val *float64)
 	ThresholdExpression() CeAnomalySubscriptionThresholdExpressionOutputReference
 	ThresholdExpressionInput() *CeAnomalySubscriptionThresholdExpression
-	ThresholdInput() *float64
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -121,7 +118,6 @@ type CeAnomalySubscription interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
-	ResetThreshold()
 	ResetThresholdExpression()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -468,16 +464,6 @@ func (j *jsiiProxy_CeAnomalySubscription) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_CeAnomalySubscription) Threshold() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"threshold",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_CeAnomalySubscription) ThresholdExpression() CeAnomalySubscriptionThresholdExpressionOutputReference {
 	var returns CeAnomalySubscriptionThresholdExpressionOutputReference
 	_jsii_.Get(
@@ -498,18 +484,8 @@ func (j *jsiiProxy_CeAnomalySubscription) ThresholdExpressionInput() *CeAnomalyS
 	return returns
 }
 
-func (j *jsiiProxy_CeAnomalySubscription) ThresholdInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"thresholdInput",
-		&returns,
-	)
-	return returns
-}
 
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ce_anomaly_subscription aws_ce_anomaly_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ce_anomaly_subscription aws_ce_anomaly_subscription} Resource.
 func NewCeAnomalySubscription(scope constructs.Construct, id *string, config *CeAnomalySubscriptionConfig) CeAnomalySubscription {
 	_init_.Initialize()
 
@@ -527,7 +503,7 @@ func NewCeAnomalySubscription(scope constructs.Construct, id *string, config *Ce
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/ce_anomaly_subscription aws_ce_anomaly_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ce_anomaly_subscription aws_ce_anomaly_subscription} Resource.
 func NewCeAnomalySubscription_Override(c CeAnomalySubscription, scope constructs.Construct, id *string, config *CeAnomalySubscriptionConfig) {
 	_init_.Initialize()
 
@@ -679,17 +655,6 @@ func (j *jsiiProxy_CeAnomalySubscription)SetTagsAll(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tagsAll",
-		val,
-	)
-}
-
-func (j *jsiiProxy_CeAnomalySubscription)SetThreshold(val *float64) {
-	if err := j.validateSetThresholdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"threshold",
 		val,
 	)
 }
@@ -1018,14 +983,6 @@ func (c *jsiiProxy_CeAnomalySubscription) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTagsAll",
-		nil, // no parameters
-	)
-}
-
-func (c *jsiiProxy_CeAnomalySubscription) ResetThreshold() {
-	_jsii_.InvokeVoid(
-		c,
-		"resetThreshold",
 		nil, // no parameters
 	)
 }

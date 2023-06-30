@@ -181,6 +181,8 @@ func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) validateSetDelet
 
 func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *Sesv2DedicatedIpPoolTimeouts:
 		val := val.(*Sesv2DedicatedIpPoolTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_Sesv2DedicatedIpPoolTimeoutsOutputReference) validateSetInter
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *Sesv2DedicatedIpPoolTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *Sesv2DedicatedIpPoolTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

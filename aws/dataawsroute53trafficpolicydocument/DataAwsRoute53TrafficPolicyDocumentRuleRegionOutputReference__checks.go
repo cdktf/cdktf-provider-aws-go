@@ -201,6 +201,8 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 
 func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataAwsRoute53TrafficPolicyDocumentRuleRegion:
 		val := val.(*DataAwsRoute53TrafficPolicyDocumentRuleRegion)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -212,11 +214,9 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleRegionOutputReference)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataAwsRoute53TrafficPolicyDocumentRuleRegion, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAwsRoute53TrafficPolicyDocumentRuleRegion; received %#v (a %T)", val, val)
 		}
 	}
 

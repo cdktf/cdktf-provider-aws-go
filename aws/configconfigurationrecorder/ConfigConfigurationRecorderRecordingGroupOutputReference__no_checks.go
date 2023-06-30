@@ -44,6 +44,14 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) val
 	return nil
 }
 
+func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) validatePutExclusionByResourceTypesParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) validatePutRecordingStrategyParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

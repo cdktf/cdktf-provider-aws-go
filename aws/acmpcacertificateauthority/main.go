@@ -69,7 +69,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "revocationConfiguration", GoGetter: "RevocationConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "revocationConfigurationInput", GoGetter: "RevocationConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serial", GoGetter: "Serial"},
-			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
 			_jsii_.MemberProperty{JsiiProperty: "tagsAll", GoGetter: "TagsAll"},

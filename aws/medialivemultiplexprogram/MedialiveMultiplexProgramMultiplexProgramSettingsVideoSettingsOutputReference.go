@@ -2,9 +2,9 @@ package medialivemultiplexprogram
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/medialivemultiplexprogram/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/medialivemultiplexprogram/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -32,8 +32,6 @@ type MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReferen
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	StatemuxSettings() MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsList
-	StatemuxSettingsInput() interface{}
 	StatmuxSettings() MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatmuxSettingsList
 	StatmuxSettingsInput() interface{}
 	// Experimental.
@@ -68,10 +66,8 @@ type MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReferen
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutStatemuxSettings(value interface{})
 	PutStatmuxSettings(value interface{})
 	ResetConstantBitrate()
-	ResetStatemuxSettings()
 	ResetStatmuxSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -153,26 +149,6 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) StatemuxSettings() MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsList {
-	var returns MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettingsList
-	_jsii_.Get(
-		j,
-		"statemuxSettings",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) StatemuxSettingsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"statemuxSettingsInput",
 		&returns,
 	)
 	return returns
@@ -498,17 +474,6 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 	return returns
 }
 
-func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) PutStatemuxSettings(value interface{}) {
-	if err := m.validatePutStatemuxSettingsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		m,
-		"putStatemuxSettings",
-		[]interface{}{value},
-	)
-}
-
 func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) PutStatmuxSettings(value interface{}) {
 	if err := m.validatePutStatmuxSettingsParameters(value); err != nil {
 		panic(err)
@@ -524,14 +489,6 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 	_jsii_.InvokeVoid(
 		m,
 		"resetConstantBitrate",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) ResetStatemuxSettings() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetStatemuxSettings",
 		nil, // no parameters
 	)
 }

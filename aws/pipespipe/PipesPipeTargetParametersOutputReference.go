@@ -2,14 +2,18 @@ package pipespipe
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/pipespipe/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/pipespipe/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type PipesPipeTargetParametersOutputReference interface {
 	cdktf.ComplexObject
+	BatchJobParameters() PipesPipeTargetParametersBatchJobParametersOutputReference
+	BatchJobParametersInput() *PipesPipeTargetParametersBatchJobParameters
+	CloudwatchLogsParameters() PipesPipeTargetParametersCloudwatchLogsParametersOutputReference
+	CloudwatchLogsParametersInput() *PipesPipeTargetParametersCloudwatchLogsParameters
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -25,13 +29,31 @@ type PipesPipeTargetParametersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EcsTaskParameters() PipesPipeTargetParametersEcsTaskParametersOutputReference
+	EcsTaskParametersInput() *PipesPipeTargetParametersEcsTaskParameters
+	EventbridgeEventBusParameters() PipesPipeTargetParametersEventbridgeEventBusParametersOutputReference
+	EventbridgeEventBusParametersInput() *PipesPipeTargetParametersEventbridgeEventBusParameters
 	// Experimental.
 	Fqn() *string
+	HttpParameters() PipesPipeTargetParametersHttpParametersOutputReference
+	HttpParametersInput() *PipesPipeTargetParametersHttpParameters
 	InputTemplate() *string
 	SetInputTemplate(val *string)
 	InputTemplateInput() *string
 	InternalValue() *PipesPipeTargetParameters
 	SetInternalValue(val *PipesPipeTargetParameters)
+	KinesisStreamParameters() PipesPipeTargetParametersKinesisStreamParametersOutputReference
+	KinesisStreamParametersInput() *PipesPipeTargetParametersKinesisStreamParameters
+	LambdaFunctionParameters() PipesPipeTargetParametersLambdaFunctionParametersOutputReference
+	LambdaFunctionParametersInput() *PipesPipeTargetParametersLambdaFunctionParameters
+	RedshiftDataParameters() PipesPipeTargetParametersRedshiftDataParametersOutputReference
+	RedshiftDataParametersInput() *PipesPipeTargetParametersRedshiftDataParameters
+	SagemakerPipelineParameters() PipesPipeTargetParametersSagemakerPipelineParametersOutputReference
+	SagemakerPipelineParametersInput() *PipesPipeTargetParametersSagemakerPipelineParameters
+	SqsQueueParameters() PipesPipeTargetParametersSqsQueueParametersOutputReference
+	SqsQueueParametersInput() *PipesPipeTargetParametersSqsQueueParameters
+	StepFunctionStateMachineParameters() PipesPipeTargetParametersStepFunctionStateMachineParametersOutputReference
+	StepFunctionStateMachineParametersInput() *PipesPipeTargetParametersStepFunctionStateMachineParameters
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,7 +86,29 @@ type PipesPipeTargetParametersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutBatchJobParameters(value *PipesPipeTargetParametersBatchJobParameters)
+	PutCloudwatchLogsParameters(value *PipesPipeTargetParametersCloudwatchLogsParameters)
+	PutEcsTaskParameters(value *PipesPipeTargetParametersEcsTaskParameters)
+	PutEventbridgeEventBusParameters(value *PipesPipeTargetParametersEventbridgeEventBusParameters)
+	PutHttpParameters(value *PipesPipeTargetParametersHttpParameters)
+	PutKinesisStreamParameters(value *PipesPipeTargetParametersKinesisStreamParameters)
+	PutLambdaFunctionParameters(value *PipesPipeTargetParametersLambdaFunctionParameters)
+	PutRedshiftDataParameters(value *PipesPipeTargetParametersRedshiftDataParameters)
+	PutSagemakerPipelineParameters(value *PipesPipeTargetParametersSagemakerPipelineParameters)
+	PutSqsQueueParameters(value *PipesPipeTargetParametersSqsQueueParameters)
+	PutStepFunctionStateMachineParameters(value *PipesPipeTargetParametersStepFunctionStateMachineParameters)
+	ResetBatchJobParameters()
+	ResetCloudwatchLogsParameters()
+	ResetEcsTaskParameters()
+	ResetEventbridgeEventBusParameters()
+	ResetHttpParameters()
 	ResetInputTemplate()
+	ResetKinesisStreamParameters()
+	ResetLambdaFunctionParameters()
+	ResetRedshiftDataParameters()
+	ResetSagemakerPipelineParameters()
+	ResetSqsQueueParameters()
+	ResetStepFunctionStateMachineParameters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -78,6 +122,46 @@ type PipesPipeTargetParametersOutputReference interface {
 // The jsii proxy struct for PipesPipeTargetParametersOutputReference
 type jsiiProxy_PipesPipeTargetParametersOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) BatchJobParameters() PipesPipeTargetParametersBatchJobParametersOutputReference {
+	var returns PipesPipeTargetParametersBatchJobParametersOutputReference
+	_jsii_.Get(
+		j,
+		"batchJobParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) BatchJobParametersInput() *PipesPipeTargetParametersBatchJobParameters {
+	var returns *PipesPipeTargetParametersBatchJobParameters
+	_jsii_.Get(
+		j,
+		"batchJobParametersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) CloudwatchLogsParameters() PipesPipeTargetParametersCloudwatchLogsParametersOutputReference {
+	var returns PipesPipeTargetParametersCloudwatchLogsParametersOutputReference
+	_jsii_.Get(
+		j,
+		"cloudwatchLogsParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) CloudwatchLogsParametersInput() *PipesPipeTargetParametersCloudwatchLogsParameters {
+	var returns *PipesPipeTargetParametersCloudwatchLogsParameters
+	_jsii_.Get(
+		j,
+		"cloudwatchLogsParametersInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) ComplexObjectIndex() interface{} {
@@ -110,11 +194,71 @@ func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) CreationStack() *[]
 	return returns
 }
 
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) EcsTaskParameters() PipesPipeTargetParametersEcsTaskParametersOutputReference {
+	var returns PipesPipeTargetParametersEcsTaskParametersOutputReference
+	_jsii_.Get(
+		j,
+		"ecsTaskParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) EcsTaskParametersInput() *PipesPipeTargetParametersEcsTaskParameters {
+	var returns *PipesPipeTargetParametersEcsTaskParameters
+	_jsii_.Get(
+		j,
+		"ecsTaskParametersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) EventbridgeEventBusParameters() PipesPipeTargetParametersEventbridgeEventBusParametersOutputReference {
+	var returns PipesPipeTargetParametersEventbridgeEventBusParametersOutputReference
+	_jsii_.Get(
+		j,
+		"eventbridgeEventBusParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) EventbridgeEventBusParametersInput() *PipesPipeTargetParametersEventbridgeEventBusParameters {
+	var returns *PipesPipeTargetParametersEventbridgeEventBusParameters
+	_jsii_.Get(
+		j,
+		"eventbridgeEventBusParametersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) HttpParameters() PipesPipeTargetParametersHttpParametersOutputReference {
+	var returns PipesPipeTargetParametersHttpParametersOutputReference
+	_jsii_.Get(
+		j,
+		"httpParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) HttpParametersInput() *PipesPipeTargetParametersHttpParameters {
+	var returns *PipesPipeTargetParametersHttpParameters
+	_jsii_.Get(
+		j,
+		"httpParametersInput",
 		&returns,
 	)
 	return returns
@@ -145,6 +289,126 @@ func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) InternalValue() *Pi
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) KinesisStreamParameters() PipesPipeTargetParametersKinesisStreamParametersOutputReference {
+	var returns PipesPipeTargetParametersKinesisStreamParametersOutputReference
+	_jsii_.Get(
+		j,
+		"kinesisStreamParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) KinesisStreamParametersInput() *PipesPipeTargetParametersKinesisStreamParameters {
+	var returns *PipesPipeTargetParametersKinesisStreamParameters
+	_jsii_.Get(
+		j,
+		"kinesisStreamParametersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) LambdaFunctionParameters() PipesPipeTargetParametersLambdaFunctionParametersOutputReference {
+	var returns PipesPipeTargetParametersLambdaFunctionParametersOutputReference
+	_jsii_.Get(
+		j,
+		"lambdaFunctionParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) LambdaFunctionParametersInput() *PipesPipeTargetParametersLambdaFunctionParameters {
+	var returns *PipesPipeTargetParametersLambdaFunctionParameters
+	_jsii_.Get(
+		j,
+		"lambdaFunctionParametersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) RedshiftDataParameters() PipesPipeTargetParametersRedshiftDataParametersOutputReference {
+	var returns PipesPipeTargetParametersRedshiftDataParametersOutputReference
+	_jsii_.Get(
+		j,
+		"redshiftDataParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) RedshiftDataParametersInput() *PipesPipeTargetParametersRedshiftDataParameters {
+	var returns *PipesPipeTargetParametersRedshiftDataParameters
+	_jsii_.Get(
+		j,
+		"redshiftDataParametersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) SagemakerPipelineParameters() PipesPipeTargetParametersSagemakerPipelineParametersOutputReference {
+	var returns PipesPipeTargetParametersSagemakerPipelineParametersOutputReference
+	_jsii_.Get(
+		j,
+		"sagemakerPipelineParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) SagemakerPipelineParametersInput() *PipesPipeTargetParametersSagemakerPipelineParameters {
+	var returns *PipesPipeTargetParametersSagemakerPipelineParameters
+	_jsii_.Get(
+		j,
+		"sagemakerPipelineParametersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) SqsQueueParameters() PipesPipeTargetParametersSqsQueueParametersOutputReference {
+	var returns PipesPipeTargetParametersSqsQueueParametersOutputReference
+	_jsii_.Get(
+		j,
+		"sqsQueueParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) SqsQueueParametersInput() *PipesPipeTargetParametersSqsQueueParameters {
+	var returns *PipesPipeTargetParametersSqsQueueParameters
+	_jsii_.Get(
+		j,
+		"sqsQueueParametersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) StepFunctionStateMachineParameters() PipesPipeTargetParametersStepFunctionStateMachineParametersOutputReference {
+	var returns PipesPipeTargetParametersStepFunctionStateMachineParametersOutputReference
+	_jsii_.Get(
+		j,
+		"stepFunctionStateMachineParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeTargetParametersOutputReference) StepFunctionStateMachineParametersInput() *PipesPipeTargetParametersStepFunctionStateMachineParameters {
+	var returns *PipesPipeTargetParametersStepFunctionStateMachineParameters
+	_jsii_.Get(
+		j,
+		"stepFunctionStateMachineParametersInput",
 		&returns,
 	)
 	return returns
@@ -450,10 +714,219 @@ func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) InterpolationForAtt
 	return returns
 }
 
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) PutBatchJobParameters(value *PipesPipeTargetParametersBatchJobParameters) {
+	if err := p.validatePutBatchJobParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putBatchJobParameters",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) PutCloudwatchLogsParameters(value *PipesPipeTargetParametersCloudwatchLogsParameters) {
+	if err := p.validatePutCloudwatchLogsParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putCloudwatchLogsParameters",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) PutEcsTaskParameters(value *PipesPipeTargetParametersEcsTaskParameters) {
+	if err := p.validatePutEcsTaskParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putEcsTaskParameters",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) PutEventbridgeEventBusParameters(value *PipesPipeTargetParametersEventbridgeEventBusParameters) {
+	if err := p.validatePutEventbridgeEventBusParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putEventbridgeEventBusParameters",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) PutHttpParameters(value *PipesPipeTargetParametersHttpParameters) {
+	if err := p.validatePutHttpParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putHttpParameters",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) PutKinesisStreamParameters(value *PipesPipeTargetParametersKinesisStreamParameters) {
+	if err := p.validatePutKinesisStreamParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putKinesisStreamParameters",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) PutLambdaFunctionParameters(value *PipesPipeTargetParametersLambdaFunctionParameters) {
+	if err := p.validatePutLambdaFunctionParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putLambdaFunctionParameters",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) PutRedshiftDataParameters(value *PipesPipeTargetParametersRedshiftDataParameters) {
+	if err := p.validatePutRedshiftDataParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putRedshiftDataParameters",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) PutSagemakerPipelineParameters(value *PipesPipeTargetParametersSagemakerPipelineParameters) {
+	if err := p.validatePutSagemakerPipelineParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putSagemakerPipelineParameters",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) PutSqsQueueParameters(value *PipesPipeTargetParametersSqsQueueParameters) {
+	if err := p.validatePutSqsQueueParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putSqsQueueParameters",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) PutStepFunctionStateMachineParameters(value *PipesPipeTargetParametersStepFunctionStateMachineParameters) {
+	if err := p.validatePutStepFunctionStateMachineParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putStepFunctionStateMachineParameters",
+		[]interface{}{value},
+	)
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) ResetBatchJobParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetBatchJobParameters",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) ResetCloudwatchLogsParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetCloudwatchLogsParameters",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) ResetEcsTaskParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEcsTaskParameters",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) ResetEventbridgeEventBusParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEventbridgeEventBusParameters",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) ResetHttpParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetHttpParameters",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) ResetInputTemplate() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetInputTemplate",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) ResetKinesisStreamParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetKinesisStreamParameters",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) ResetLambdaFunctionParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetLambdaFunctionParameters",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) ResetRedshiftDataParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetRedshiftDataParameters",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) ResetSagemakerPipelineParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSagemakerPipelineParameters",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) ResetSqsQueueParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSqsQueueParameters",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) ResetStepFunctionStateMachineParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetStepFunctionStateMachineParameters",
 		nil, // no parameters
 	)
 }

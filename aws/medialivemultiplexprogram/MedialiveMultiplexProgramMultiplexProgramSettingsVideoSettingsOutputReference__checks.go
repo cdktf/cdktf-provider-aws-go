@@ -90,37 +90,6 @@ func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) validatePutStatemuxSettingsParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings:
-		value := value.(*[]*MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings:
-		value_ := value.([]*MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsStatemuxSettings; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func (m *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) validatePutStatmuxSettingsParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -235,6 +204,8 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 
 func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings:
 		val := val.(*MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -246,11 +217,9 @@ func (j *jsiiProxy_MedialiveMultiplexProgramMultiplexProgramSettingsVideoSetting
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *MedialiveMultiplexProgramMultiplexProgramSettingsVideoSettings; received %#v (a %T)", val, val)
 		}
 	}
 

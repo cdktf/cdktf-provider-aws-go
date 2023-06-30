@@ -181,6 +181,8 @@ func (j *jsiiProxy_OpensearchDomainTimeoutsOutputReference) validateSetDeletePar
 
 func (j *jsiiProxy_OpensearchDomainTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *OpensearchDomainTimeouts:
 		val := val.(*OpensearchDomainTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_OpensearchDomainTimeoutsOutputReference) validateSetInternalV
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *OpensearchDomainTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *OpensearchDomainTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

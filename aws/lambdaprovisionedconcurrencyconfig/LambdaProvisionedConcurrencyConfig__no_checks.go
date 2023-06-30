@@ -100,6 +100,10 @@ func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateSetQualifierParam
 	return nil
 }
 
+func (j *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateSetSkipDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewLambdaProvisionedConcurrencyConfigParameters(scope constructs.Construct, id *string, config *LambdaProvisionedConcurrencyConfigConfig) error {
 	return nil
 }

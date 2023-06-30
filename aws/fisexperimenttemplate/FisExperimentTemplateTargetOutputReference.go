@@ -2,9 +2,9 @@ package fisexperimenttemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/fisexperimenttemplate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/fisexperimenttemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -34,6 +34,9 @@ type FisExperimentTemplateTargetOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Parameters() *map[string]*string
+	SetParameters(val *map[string]*string)
+	ParametersInput() *map[string]*string
 	ResourceArns() *[]*string
 	SetResourceArns(val *[]*string)
 	ResourceArnsInput() *[]*string
@@ -80,6 +83,7 @@ type FisExperimentTemplateTargetOutputReference interface {
 	PutFilter(value interface{})
 	PutResourceTag(value interface{})
 	ResetFilter()
+	ResetParameters()
 	ResetResourceArns()
 	ResetResourceTag()
 	// Produce the Token's value at resolution time.
@@ -182,6 +186,26 @@ func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) NameInput() *stri
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) Parameters() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"parameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference) ParametersInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"parametersInput",
 		&returns,
 	)
 	return returns
@@ -355,6 +379,17 @@ func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference)SetName(val *strin
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FisExperimentTemplateTargetOutputReference)SetParameters(val *map[string]*string) {
+	if err := j.validateSetParametersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"parameters",
 		val,
 	)
 }
@@ -626,6 +661,14 @@ func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) ResetFilter() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetFilter",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FisExperimentTemplateTargetOutputReference) ResetParameters() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetParameters",
 		nil, // no parameters
 	)
 }

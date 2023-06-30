@@ -88,6 +88,10 @@ func (j *jsiiProxy_Eip) validateSetCustomerOwnedIpv4PoolParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_Eip) validateSetDomainParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Eip) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -181,6 +181,8 @@ func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) validateSetIdParameters(val
 
 func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *S3ObjectCopyGrant:
 		val := val.(*S3ObjectCopyGrant)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) validateSetInternalValuePar
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *S3ObjectCopyGrant, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *S3ObjectCopyGrant; received %#v (a %T)", val, val)
 		}
 	}
 

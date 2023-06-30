@@ -31,7 +31,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "hoursOfOperationArn", GoGetter: "HoursOfOperationArn"},
 			_jsii_.MemberProperty{JsiiProperty: "hoursOfOperationId", GoGetter: "HoursOfOperationId"},
 			_jsii_.MemberProperty{JsiiProperty: "hoursOfOperationIdInput", GoGetter: "HoursOfOperationIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},

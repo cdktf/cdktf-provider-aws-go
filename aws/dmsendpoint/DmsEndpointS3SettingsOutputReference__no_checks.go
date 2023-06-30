@@ -156,10 +156,6 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetIgnoreHeader
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetIgnoreHeadersRowParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetIncludeOpForFullLoadParameters(val interface{}) error {
 	return nil
 }

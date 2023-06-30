@@ -2,14 +2,14 @@ package connectroutingprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/connectroutingprofile/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/connectroutingprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_routing_profile aws_connect_routing_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_routing_profile aws_connect_routing_profile}.
 type ConnectRoutingProfile interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -69,7 +69,6 @@ type ConnectRoutingProfile interface {
 	// Experimental.
 	SetProvisioners(val *[]interface{})
 	QueueConfigs() ConnectRoutingProfileQueueConfigsList
-	QueueConfigsAssociated() ConnectRoutingProfileQueueConfigsAssociatedList
 	QueueConfigsInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
@@ -395,16 +394,6 @@ func (j *jsiiProxy_ConnectRoutingProfile) QueueConfigs() ConnectRoutingProfileQu
 	return returns
 }
 
-func (j *jsiiProxy_ConnectRoutingProfile) QueueConfigsAssociated() ConnectRoutingProfileQueueConfigsAssociatedList {
-	var returns ConnectRoutingProfileQueueConfigsAssociatedList
-	_jsii_.Get(
-		j,
-		"queueConfigsAssociated",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ConnectRoutingProfile) QueueConfigsInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -506,7 +495,7 @@ func (j *jsiiProxy_ConnectRoutingProfile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_routing_profile aws_connect_routing_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_routing_profile aws_connect_routing_profile} Resource.
 func NewConnectRoutingProfile(scope constructs.Construct, id *string, config *ConnectRoutingProfileConfig) ConnectRoutingProfile {
 	_init_.Initialize()
 
@@ -524,7 +513,7 @@ func NewConnectRoutingProfile(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_routing_profile aws_connect_routing_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_routing_profile aws_connect_routing_profile} Resource.
 func NewConnectRoutingProfile_Override(c ConnectRoutingProfile, scope constructs.Construct, id *string, config *ConnectRoutingProfileConfig) {
 	_init_.Initialize()
 

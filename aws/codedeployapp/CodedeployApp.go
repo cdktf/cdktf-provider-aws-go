@@ -2,14 +2,14 @@ package codedeployapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/codedeployapp/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/codedeployapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/codedeploy_app aws_codedeploy_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/codedeploy_app aws_codedeploy_app}.
 type CodedeployApp interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -425,7 +425,7 @@ func (j *jsiiProxy_CodedeployApp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/codedeploy_app aws_codedeploy_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/codedeploy_app aws_codedeploy_app} Resource.
 func NewCodedeployApp(scope constructs.Construct, id *string, config *CodedeployAppConfig) CodedeployApp {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewCodedeployApp(scope constructs.Construct, id *string, config *Codedeploy
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/codedeploy_app aws_codedeploy_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/codedeploy_app aws_codedeploy_app} Resource.
 func NewCodedeployApp_Override(c CodedeployApp, scope constructs.Construct, id *string, config *CodedeployAppConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package budgetsbudget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/budgetsbudget/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/budgetsbudget/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/budgets_budget aws_budgets_budget}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/budgets_budget aws_budgets_budget}.
 type BudgetsBudget interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -31,9 +31,6 @@ type BudgetsBudget interface {
 	ConstructNodeMetadata() *map[string]interface{}
 	CostFilter() BudgetsBudgetCostFilterList
 	CostFilterInput() interface{}
-	CostFilters() *map[string]*string
-	SetCostFilters(val *map[string]*string)
-	CostFiltersInput() *map[string]*string
 	CostTypes() BudgetsBudgetCostTypesOutputReference
 	CostTypesInput() *BudgetsBudgetCostTypes
 	// Experimental.
@@ -135,7 +132,6 @@ type BudgetsBudget interface {
 	ResetAccountId()
 	ResetAutoAdjustData()
 	ResetCostFilter()
-	ResetCostFilters()
 	ResetCostTypes()
 	ResetId()
 	ResetLimitAmount()
@@ -279,26 +275,6 @@ func (j *jsiiProxy_BudgetsBudget) CostFilterInput() interface{} {
 	_jsii_.Get(
 		j,
 		"costFilterInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_BudgetsBudget) CostFilters() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"costFilters",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_BudgetsBudget) CostFiltersInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"costFiltersInput",
 		&returns,
 	)
 	return returns
@@ -655,7 +631,7 @@ func (j *jsiiProxy_BudgetsBudget) TimeUnitInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/budgets_budget aws_budgets_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/budgets_budget aws_budgets_budget} Resource.
 func NewBudgetsBudget(scope constructs.Construct, id *string, config *BudgetsBudgetConfig) BudgetsBudget {
 	_init_.Initialize()
 
@@ -673,7 +649,7 @@ func NewBudgetsBudget(scope constructs.Construct, id *string, config *BudgetsBud
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/budgets_budget aws_budgets_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/budgets_budget aws_budgets_budget} Resource.
 func NewBudgetsBudget_Override(b BudgetsBudget, scope constructs.Construct, id *string, config *BudgetsBudgetConfig) {
 	_init_.Initialize()
 
@@ -713,17 +689,6 @@ func (j *jsiiProxy_BudgetsBudget)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
-		val,
-	)
-}
-
-func (j *jsiiProxy_BudgetsBudget)SetCostFilters(val *map[string]*string) {
-	if err := j.validateSetCostFiltersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"costFilters",
 		val,
 	)
 }
@@ -1214,14 +1179,6 @@ func (b *jsiiProxy_BudgetsBudget) ResetCostFilter() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetCostFilter",
-		nil, // no parameters
-	)
-}
-
-func (b *jsiiProxy_BudgetsBudget) ResetCostFilters() {
-	_jsii_.InvokeVoid(
-		b,
-		"resetCostFilters",
 		nil, // no parameters
 	)
 }

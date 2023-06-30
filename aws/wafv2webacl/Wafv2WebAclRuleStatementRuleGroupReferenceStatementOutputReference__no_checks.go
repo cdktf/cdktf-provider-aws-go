@@ -44,7 +44,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementRuleGroupReferenceStatementOutputRefe
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleStatementRuleGroupReferenceStatementOutputReference) validatePutExcludedRuleParameters(value interface{}) error {
+func (w *jsiiProxy_Wafv2WebAclRuleStatementRuleGroupReferenceStatementOutputReference) validatePutRuleActionOverrideParameters(value interface{}) error {
 	return nil
 }
 

@@ -189,6 +189,8 @@ func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomIm
 
 func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomImageOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *SagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomImage:
 		val := val.(*SagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomImage)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -200,11 +202,9 @@ func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomIm
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *SagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomImage, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SagemakerDomainDefaultUserSettingsRSessionAppSettingsCustomImage; received %#v (a %T)", val, val)
 		}
 	}
 

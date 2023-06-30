@@ -2,14 +2,14 @@ package secretsmanagersecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/secretsmanagersecret/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/secretsmanagersecret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/secretsmanager_secret aws_secretsmanager_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/secretsmanager_secret aws_secretsmanager_secret}.
 type SecretsmanagerSecret interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -79,12 +79,6 @@ type SecretsmanagerSecret interface {
 	RecoveryWindowInDaysInput() *float64
 	Replica() SecretsmanagerSecretReplicaList
 	ReplicaInput() interface{}
-	RotationEnabled() cdktf.IResolvable
-	RotationLambdaArn() *string
-	SetRotationLambdaArn(val *string)
-	RotationLambdaArnInput() *string
-	RotationRules() SecretsmanagerSecretRotationRulesOutputReference
-	RotationRulesInput() *SecretsmanagerSecretRotationRules
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -123,7 +117,6 @@ type SecretsmanagerSecret interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutReplica(value interface{})
-	PutRotationRules(value *SecretsmanagerSecretRotationRules)
 	ResetDescription()
 	ResetForceOverwriteReplicaSecret()
 	ResetId()
@@ -136,8 +129,6 @@ type SecretsmanagerSecret interface {
 	ResetPolicy()
 	ResetRecoveryWindowInDays()
 	ResetReplica()
-	ResetRotationLambdaArn()
-	ResetRotationRules()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -475,56 +466,6 @@ func (j *jsiiProxy_SecretsmanagerSecret) ReplicaInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SecretsmanagerSecret) RotationEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
-	_jsii_.Get(
-		j,
-		"rotationEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SecretsmanagerSecret) RotationLambdaArn() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"rotationLambdaArn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SecretsmanagerSecret) RotationLambdaArnInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"rotationLambdaArnInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SecretsmanagerSecret) RotationRules() SecretsmanagerSecretRotationRulesOutputReference {
-	var returns SecretsmanagerSecretRotationRulesOutputReference
-	_jsii_.Get(
-		j,
-		"rotationRules",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_SecretsmanagerSecret) RotationRulesInput() *SecretsmanagerSecretRotationRules {
-	var returns *SecretsmanagerSecretRotationRules
-	_jsii_.Get(
-		j,
-		"rotationRulesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_SecretsmanagerSecret) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -596,7 +537,7 @@ func (j *jsiiProxy_SecretsmanagerSecret) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/secretsmanager_secret aws_secretsmanager_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/secretsmanager_secret aws_secretsmanager_secret} Resource.
 func NewSecretsmanagerSecret(scope constructs.Construct, id *string, config *SecretsmanagerSecretConfig) SecretsmanagerSecret {
 	_init_.Initialize()
 
@@ -614,7 +555,7 @@ func NewSecretsmanagerSecret(scope constructs.Construct, id *string, config *Sec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/secretsmanager_secret aws_secretsmanager_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/secretsmanager_secret aws_secretsmanager_secret} Resource.
 func NewSecretsmanagerSecret_Override(s SecretsmanagerSecret, scope constructs.Construct, id *string, config *SecretsmanagerSecretConfig) {
 	_init_.Initialize()
 
@@ -777,17 +718,6 @@ func (j *jsiiProxy_SecretsmanagerSecret)SetRecoveryWindowInDays(val *float64) {
 	_jsii_.Set(
 		j,
 		"recoveryWindowInDays",
-		val,
-	)
-}
-
-func (j *jsiiProxy_SecretsmanagerSecret)SetRotationLambdaArn(val *string) {
-	if err := j.validateSetRotationLambdaArnParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"rotationLambdaArn",
 		val,
 	)
 }
@@ -1091,17 +1021,6 @@ func (s *jsiiProxy_SecretsmanagerSecret) PutReplica(value interface{}) {
 	)
 }
 
-func (s *jsiiProxy_SecretsmanagerSecret) PutRotationRules(value *SecretsmanagerSecretRotationRules) {
-	if err := s.validatePutRotationRulesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		s,
-		"putRotationRules",
-		[]interface{}{value},
-	)
-}
-
 func (s *jsiiProxy_SecretsmanagerSecret) ResetDescription() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1178,22 +1097,6 @@ func (s *jsiiProxy_SecretsmanagerSecret) ResetReplica() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetReplica",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SecretsmanagerSecret) ResetRotationLambdaArn() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetRotationLambdaArn",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SecretsmanagerSecret) ResetRotationRules() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetRotationRules",
 		nil, // no parameters
 	)
 }

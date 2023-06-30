@@ -165,6 +165,8 @@ func (j *jsiiProxy_DataAwsRoute53ResolverQueryLogConfigFilterOutputReference) va
 
 func (j *jsiiProxy_DataAwsRoute53ResolverQueryLogConfigFilterOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataAwsRoute53ResolverQueryLogConfigFilter:
 		val := val.(*DataAwsRoute53ResolverQueryLogConfigFilter)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_DataAwsRoute53ResolverQueryLogConfigFilterOutputReference) va
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataAwsRoute53ResolverQueryLogConfigFilter, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAwsRoute53ResolverQueryLogConfigFilter; received %#v (a %T)", val, val)
 		}
 	}
 

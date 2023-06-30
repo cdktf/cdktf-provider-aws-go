@@ -2,14 +2,14 @@ package route53resolverdnssecconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/route53resolverdnssecconfig/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/route53resolverdnssecconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route53_resolver_dnssec_config aws_route53_resolver_dnssec_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/route53_resolver_dnssec_config aws_route53_resolver_dnssec_config}.
 type Route53ResolverDnssecConfig interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -342,7 +342,7 @@ func (j *jsiiProxy_Route53ResolverDnssecConfig) ValidationStatus() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route53_resolver_dnssec_config aws_route53_resolver_dnssec_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/route53_resolver_dnssec_config aws_route53_resolver_dnssec_config} Resource.
 func NewRoute53ResolverDnssecConfig(scope constructs.Construct, id *string, config *Route53ResolverDnssecConfigConfig) Route53ResolverDnssecConfig {
 	_init_.Initialize()
 
@@ -360,7 +360,7 @@ func NewRoute53ResolverDnssecConfig(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/route53_resolver_dnssec_config aws_route53_resolver_dnssec_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/route53_resolver_dnssec_config aws_route53_resolver_dnssec_config} Resource.
 func NewRoute53ResolverDnssecConfig_Override(r Route53ResolverDnssecConfig, scope constructs.Construct, id *string, config *Route53ResolverDnssecConfigConfig) {
 	_init_.Initialize()
 

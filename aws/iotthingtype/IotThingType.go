@@ -2,14 +2,14 @@ package iotthingtype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/iotthingtype/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/iotthingtype/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iot_thing_type aws_iot_thing_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/iot_thing_type aws_iot_thing_type}.
 type IotThingType interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -416,7 +416,7 @@ func (j *jsiiProxy_IotThingType) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iot_thing_type aws_iot_thing_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/iot_thing_type aws_iot_thing_type} Resource.
 func NewIotThingType(scope constructs.Construct, id *string, config *IotThingTypeConfig) IotThingType {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewIotThingType(scope constructs.Construct, id *string, config *IotThingTyp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iot_thing_type aws_iot_thing_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/iot_thing_type aws_iot_thing_type} Resource.
 func NewIotThingType_Override(i IotThingType, scope constructs.Construct, id *string, config *IotThingTypeConfig) {
 	_init_.Initialize()
 

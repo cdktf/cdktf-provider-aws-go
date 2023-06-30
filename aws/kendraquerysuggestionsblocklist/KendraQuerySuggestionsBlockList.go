@@ -2,14 +2,14 @@ package kendraquerysuggestionsblocklist
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/kendraquerysuggestionsblocklist/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/kendraquerysuggestionsblocklist/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/kendra_query_suggestions_block_list aws_kendra_query_suggestions_block_list}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/kendra_query_suggestions_block_list aws_kendra_query_suggestions_block_list}.
 type KendraQuerySuggestionsBlockList interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -507,7 +507,7 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/kendra_query_suggestions_block_list aws_kendra_query_suggestions_block_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/kendra_query_suggestions_block_list aws_kendra_query_suggestions_block_list} Resource.
 func NewKendraQuerySuggestionsBlockList(scope constructs.Construct, id *string, config *KendraQuerySuggestionsBlockListConfig) KendraQuerySuggestionsBlockList {
 	_init_.Initialize()
 
@@ -525,7 +525,7 @@ func NewKendraQuerySuggestionsBlockList(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/kendra_query_suggestions_block_list aws_kendra_query_suggestions_block_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/kendra_query_suggestions_block_list aws_kendra_query_suggestions_block_list} Resource.
 func NewKendraQuerySuggestionsBlockList_Override(k KendraQuerySuggestionsBlockList, scope constructs.Construct, id *string, config *KendraQuerySuggestionsBlockListConfig) {
 	_init_.Initialize()
 

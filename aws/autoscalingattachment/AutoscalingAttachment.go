@@ -2,19 +2,16 @@ package autoscalingattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/autoscalingattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/autoscalingattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_attachment aws_autoscaling_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/autoscaling_attachment aws_autoscaling_attachment}.
 type AutoscalingAttachment interface {
 	cdktf.TerraformResource
-	AlbTargetGroupArn() *string
-	SetAlbTargetGroupArn(val *string)
-	AlbTargetGroupArnInput() *string
 	AutoscalingGroupName() *string
 	SetAutoscalingGroupName(val *string)
 	AutoscalingGroupNameInput() *string
@@ -98,7 +95,6 @@ type AutoscalingAttachment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetAlbTargetGroupArn()
 	ResetElb()
 	ResetId()
 	ResetLbTargetGroupArn()
@@ -118,26 +114,6 @@ type AutoscalingAttachment interface {
 // The jsii proxy struct for AutoscalingAttachment
 type jsiiProxy_AutoscalingAttachment struct {
 	internal.Type__cdktfTerraformResource
-}
-
-func (j *jsiiProxy_AutoscalingAttachment) AlbTargetGroupArn() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"albTargetGroupArn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AutoscalingAttachment) AlbTargetGroupArnInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"albTargetGroupArnInput",
-		&returns,
-	)
-	return returns
 }
 
 func (j *jsiiProxy_AutoscalingAttachment) AutoscalingGroupName() *string {
@@ -381,7 +357,7 @@ func (j *jsiiProxy_AutoscalingAttachment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_attachment aws_autoscaling_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/autoscaling_attachment aws_autoscaling_attachment} Resource.
 func NewAutoscalingAttachment(scope constructs.Construct, id *string, config *AutoscalingAttachmentConfig) AutoscalingAttachment {
 	_init_.Initialize()
 
@@ -399,7 +375,7 @@ func NewAutoscalingAttachment(scope constructs.Construct, id *string, config *Au
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/autoscaling_attachment aws_autoscaling_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/autoscaling_attachment aws_autoscaling_attachment} Resource.
 func NewAutoscalingAttachment_Override(a AutoscalingAttachment, scope constructs.Construct, id *string, config *AutoscalingAttachmentConfig) {
 	_init_.Initialize()
 
@@ -407,17 +383,6 @@ func NewAutoscalingAttachment_Override(a AutoscalingAttachment, scope constructs
 		"@cdktf/provider-aws.autoscalingAttachment.AutoscalingAttachment",
 		[]interface{}{scope, id, config},
 		a,
-	)
-}
-
-func (j *jsiiProxy_AutoscalingAttachment)SetAlbTargetGroupArn(val *string) {
-	if err := j.validateSetAlbTargetGroupArnParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"albTargetGroupArn",
-		val,
 	)
 }
 
@@ -796,14 +761,6 @@ func (a *jsiiProxy_AutoscalingAttachment) OverrideLogicalId(newLogicalId *string
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (a *jsiiProxy_AutoscalingAttachment) ResetAlbTargetGroupArn() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetAlbTargetGroupArn",
-		nil, // no parameters
 	)
 }
 

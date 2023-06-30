@@ -197,6 +197,8 @@ func (j *jsiiProxy_S3BucketNotificationTopicOutputReference) validateSetIdParame
 
 func (j *jsiiProxy_S3BucketNotificationTopicOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *S3BucketNotificationTopic:
 		val := val.(*S3BucketNotificationTopic)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -208,11 +210,9 @@ func (j *jsiiProxy_S3BucketNotificationTopicOutputReference) validateSetInternal
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *S3BucketNotificationTopic, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *S3BucketNotificationTopic; received %#v (a %T)", val, val)
 		}
 	}
 

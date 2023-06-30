@@ -2,14 +2,14 @@ package appsyncdomainname
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/appsyncdomainname/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/appsyncdomainname/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_domain_name aws_appsync_domain_name}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/appsync_domain_name aws_appsync_domain_name}.
 type AppsyncDomainName interface {
 	cdktf.TerraformResource
 	AppsyncDomainName() *string
@@ -378,7 +378,7 @@ func (j *jsiiProxy_AppsyncDomainName) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_domain_name aws_appsync_domain_name} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/appsync_domain_name aws_appsync_domain_name} Resource.
 func NewAppsyncDomainName(scope constructs.Construct, id *string, config *AppsyncDomainNameConfig) AppsyncDomainName {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewAppsyncDomainName(scope constructs.Construct, id *string, config *Appsyn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appsync_domain_name aws_appsync_domain_name} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/appsync_domain_name aws_appsync_domain_name} Resource.
 func NewAppsyncDomainName_Override(a AppsyncDomainName, scope constructs.Construct, id *string, config *AppsyncDomainNameConfig) {
 	_init_.Initialize()
 

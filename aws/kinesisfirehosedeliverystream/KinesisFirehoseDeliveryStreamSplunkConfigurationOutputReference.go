@@ -2,9 +2,9 @@ package kinesisfirehosedeliverystream
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/kinesisfirehosedeliverystream/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/kinesisfirehosedeliverystream/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -51,6 +51,8 @@ type KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference interface {
 	S3BackupMode() *string
 	SetS3BackupMode(val *string)
 	S3BackupModeInput() *string
+	S3Configuration() KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationOutputReference
+	S3ConfigurationInput() *KinesisFirehoseDeliveryStreamSplunkConfigurationS3Configuration
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -85,6 +87,7 @@ type KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCloudwatchLoggingOptions(value *KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions)
 	PutProcessingConfiguration(value *KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration)
+	PutS3Configuration(value *KinesisFirehoseDeliveryStreamSplunkConfigurationS3Configuration)
 	ResetCloudwatchLoggingOptions()
 	ResetHecAcknowledgmentTimeout()
 	ResetHecEndpointType()
@@ -311,6 +314,26 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReferen
 	_jsii_.Get(
 		j,
 		"s3BackupModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) S3Configuration() KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationOutputReference {
+	var returns KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"s3Configuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) S3ConfigurationInput() *KinesisFirehoseDeliveryStreamSplunkConfigurationS3Configuration {
+	var returns *KinesisFirehoseDeliveryStreamSplunkConfigurationS3Configuration
+	_jsii_.Get(
+		j,
+		"s3ConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -689,6 +712,17 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReferen
 	_jsii_.InvokeVoid(
 		k,
 		"putProcessingConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) PutS3Configuration(value *KinesisFirehoseDeliveryStreamSplunkConfigurationS3Configuration) {
+	if err := k.validatePutS3ConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putS3Configuration",
 		[]interface{}{value},
 	)
 }

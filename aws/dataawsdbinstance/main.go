@@ -29,7 +29,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dbInstancePort", GoGetter: "DbInstancePort"},
 			_jsii_.MemberProperty{JsiiProperty: "dbName", GoGetter: "DbName"},
 			_jsii_.MemberProperty{JsiiProperty: "dbParameterGroups", GoGetter: "DbParameterGroups"},
-			_jsii_.MemberProperty{JsiiProperty: "dbSecurityGroups", GoGetter: "DbSecurityGroups"},
 			_jsii_.MemberProperty{JsiiProperty: "dbSubnetGroup", GoGetter: "DbSubnetGroup"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "enabledCloudwatchLogsExports", GoGetter: "EnabledCloudwatchLogsExports"},

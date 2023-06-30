@@ -2,14 +2,14 @@ package neptuneclusterparametergroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/neptuneclusterparametergroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/neptuneclusterparametergroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/neptune_cluster_parameter_group aws_neptune_cluster_parameter_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/neptune_cluster_parameter_group aws_neptune_cluster_parameter_group}.
 type NeptuneClusterParameterGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -464,7 +464,7 @@ func (j *jsiiProxy_NeptuneClusterParameterGroup) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/neptune_cluster_parameter_group aws_neptune_cluster_parameter_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/neptune_cluster_parameter_group aws_neptune_cluster_parameter_group} Resource.
 func NewNeptuneClusterParameterGroup(scope constructs.Construct, id *string, config *NeptuneClusterParameterGroupConfig) NeptuneClusterParameterGroup {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewNeptuneClusterParameterGroup(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/neptune_cluster_parameter_group aws_neptune_cluster_parameter_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/neptune_cluster_parameter_group aws_neptune_cluster_parameter_group} Resource.
 func NewNeptuneClusterParameterGroup_Override(n NeptuneClusterParameterGroup, scope constructs.Construct, id *string, config *NeptuneClusterParameterGroupConfig) {
 	_init_.Initialize()
 

@@ -2,9 +2,9 @@ package mskconnectconnector
 
 
 type MskconnectConnectorLogDeliveryWorkerLogDeliveryFirehose struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/mskconnect_connector#enabled MskconnectConnector#enabled}.
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/mskconnect_connector#delivery_stream MskconnectConnector#delivery_stream}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/mskconnect_connector#delivery_stream MskconnectConnector#delivery_stream}.
 	DeliveryStream *string `field:"optional" json:"deliveryStream" yaml:"deliveryStream"`
 }
 

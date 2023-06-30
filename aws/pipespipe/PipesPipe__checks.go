@@ -111,6 +111,17 @@ func (p *jsiiProxy_PipesPipe) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
+func (p *jsiiProxy_PipesPipe) validatePutEnrichmentParametersParameters(value *PipesPipeEnrichmentParameters) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PipesPipe) validatePutSourceParametersParameters(value *PipesPipeSourceParameters) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

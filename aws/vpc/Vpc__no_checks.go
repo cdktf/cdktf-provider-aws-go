@@ -80,14 +80,6 @@ func (j *jsiiProxy_Vpc) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Vpc) validateSetEnableClassiclinkParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_Vpc) validateSetEnableClassiclinkDnsSupportParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_Vpc) validateSetEnableDnsHostnamesParameters(val interface{}) error {
 	return nil
 }

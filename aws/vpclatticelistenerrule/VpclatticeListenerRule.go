@@ -2,14 +2,14 @@ package vpclatticelistenerrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/vpclatticelistenerrule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/vpclatticelistenerrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpclattice_listener_rule aws_vpclattice_listener_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/vpclattice_listener_rule aws_vpclattice_listener_rule}.
 type VpclatticeListenerRule interface {
 	cdktf.TerraformResource
 	Action() VpclatticeListenerRuleActionOutputReference
@@ -518,7 +518,7 @@ func (j *jsiiProxy_VpclatticeListenerRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpclattice_listener_rule aws_vpclattice_listener_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/vpclattice_listener_rule aws_vpclattice_listener_rule} Resource.
 func NewVpclatticeListenerRule(scope constructs.Construct, id *string, config *VpclatticeListenerRuleConfig) VpclatticeListenerRule {
 	_init_.Initialize()
 
@@ -536,7 +536,7 @@ func NewVpclatticeListenerRule(scope constructs.Construct, id *string, config *V
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpclattice_listener_rule aws_vpclattice_listener_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/vpclattice_listener_rule aws_vpclattice_listener_rule} Resource.
 func NewVpclatticeListenerRule_Override(v VpclatticeListenerRule, scope constructs.Construct, id *string, config *VpclatticeListenerRuleConfig) {
 	_init_.Initialize()
 

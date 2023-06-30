@@ -204,6 +204,8 @@ func (j *jsiiProxy_EmrClusterStepOutputReference) validateSetComplexObjectIsFrom
 
 func (j *jsiiProxy_EmrClusterStepOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *EmrClusterStep:
 		val := val.(*EmrClusterStep)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -215,11 +217,9 @@ func (j *jsiiProxy_EmrClusterStepOutputReference) validateSetInternalValueParame
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *EmrClusterStep, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *EmrClusterStep; received %#v (a %T)", val, val)
 		}
 	}
 

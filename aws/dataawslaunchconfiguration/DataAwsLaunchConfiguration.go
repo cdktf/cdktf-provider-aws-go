@@ -2,14 +2,14 @@ package dataawslaunchconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawslaunchconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawslaunchconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/launch_configuration aws_launch_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/launch_configuration aws_launch_configuration}.
 type DataAwsLaunchConfiguration interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -72,8 +72,6 @@ type DataAwsLaunchConfiguration interface {
 	// Experimental.
 	TerraformResourceType() *string
 	UserData() *string
-	VpcClassicLinkId() *string
-	VpcClassicLinkSecurityGroups() *[]*string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -458,28 +456,8 @@ func (j *jsiiProxy_DataAwsLaunchConfiguration) UserData() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLaunchConfiguration) VpcClassicLinkId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"vpcClassicLinkId",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_DataAwsLaunchConfiguration) VpcClassicLinkSecurityGroups() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"vpcClassicLinkSecurityGroups",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/launch_configuration aws_launch_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/launch_configuration aws_launch_configuration} Data Source.
 func NewDataAwsLaunchConfiguration(scope constructs.Construct, id *string, config *DataAwsLaunchConfigurationConfig) DataAwsLaunchConfiguration {
 	_init_.Initialize()
 
@@ -497,7 +475,7 @@ func NewDataAwsLaunchConfiguration(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/launch_configuration aws_launch_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/launch_configuration aws_launch_configuration} Data Source.
 func NewDataAwsLaunchConfiguration_Override(d DataAwsLaunchConfiguration, scope constructs.Construct, id *string, config *DataAwsLaunchConfigurationConfig) {
 	_init_.Initialize()
 

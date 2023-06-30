@@ -2,14 +2,14 @@ package connectbotassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/connectbotassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/connectbotassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_bot_association aws_connect_bot_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_bot_association aws_connect_bot_association}.
 type ConnectBotAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_ConnectBotAssociation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_bot_association aws_connect_bot_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_bot_association aws_connect_bot_association} Resource.
 func NewConnectBotAssociation(scope constructs.Construct, id *string, config *ConnectBotAssociationConfig) ConnectBotAssociation {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewConnectBotAssociation(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/connect_bot_association aws_connect_bot_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/connect_bot_association aws_connect_bot_association} Resource.
 func NewConnectBotAssociation_Override(c ConnectBotAssociation, scope constructs.Construct, id *string, config *ConnectBotAssociationConfig) {
 	_init_.Initialize()
 

@@ -2,14 +2,14 @@ package launchconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/launchconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/launchconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_configuration aws_launch_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/launch_configuration aws_launch_configuration}.
 type LaunchConfiguration interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -112,12 +112,6 @@ type LaunchConfiguration interface {
 	SetUserDataBase64(val *string)
 	UserDataBase64Input() *string
 	UserDataInput() *string
-	VpcClassicLinkId() *string
-	SetVpcClassicLinkId(val *string)
-	VpcClassicLinkIdInput() *string
-	VpcClassicLinkSecurityGroups() *[]*string
-	SetVpcClassicLinkSecurityGroups(val *[]*string)
-	VpcClassicLinkSecurityGroupsInput() *[]*string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -167,8 +161,6 @@ type LaunchConfiguration interface {
 	ResetSpotPrice()
 	ResetUserData()
 	ResetUserDataBase64()
-	ResetVpcClassicLinkId()
-	ResetVpcClassicLinkSecurityGroups()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -734,48 +726,8 @@ func (j *jsiiProxy_LaunchConfiguration) UserDataInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LaunchConfiguration) VpcClassicLinkId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"vpcClassicLinkId",
-		&returns,
-	)
-	return returns
-}
 
-func (j *jsiiProxy_LaunchConfiguration) VpcClassicLinkIdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"vpcClassicLinkIdInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LaunchConfiguration) VpcClassicLinkSecurityGroups() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"vpcClassicLinkSecurityGroups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LaunchConfiguration) VpcClassicLinkSecurityGroupsInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"vpcClassicLinkSecurityGroupsInput",
-		&returns,
-	)
-	return returns
-}
-
-
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_configuration aws_launch_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/launch_configuration aws_launch_configuration} Resource.
 func NewLaunchConfiguration(scope constructs.Construct, id *string, config *LaunchConfigurationConfig) LaunchConfiguration {
 	_init_.Initialize()
 
@@ -793,7 +745,7 @@ func NewLaunchConfiguration(scope constructs.Construct, id *string, config *Laun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/launch_configuration aws_launch_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/launch_configuration aws_launch_configuration} Resource.
 func NewLaunchConfiguration_Override(l LaunchConfiguration, scope constructs.Construct, id *string, config *LaunchConfigurationConfig) {
 	_init_.Initialize()
 
@@ -1033,28 +985,6 @@ func (j *jsiiProxy_LaunchConfiguration)SetUserDataBase64(val *string) {
 	_jsii_.Set(
 		j,
 		"userDataBase64",
-		val,
-	)
-}
-
-func (j *jsiiProxy_LaunchConfiguration)SetVpcClassicLinkId(val *string) {
-	if err := j.validateSetVpcClassicLinkIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"vpcClassicLinkId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_LaunchConfiguration)SetVpcClassicLinkSecurityGroups(val *[]*string) {
-	if err := j.validateSetVpcClassicLinkSecurityGroupsParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"vpcClassicLinkSecurityGroups",
 		val,
 	)
 }
@@ -1509,22 +1439,6 @@ func (l *jsiiProxy_LaunchConfiguration) ResetUserDataBase64() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetUserDataBase64",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LaunchConfiguration) ResetVpcClassicLinkId() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetVpcClassicLinkId",
-		nil, // no parameters
-	)
-}
-
-func (l *jsiiProxy_LaunchConfiguration) ResetVpcClassicLinkSecurityGroups() {
-	_jsii_.InvokeVoid(
-		l,
-		"resetVpcClassicLinkSecurityGroups",
 		nil, // no parameters
 	)
 }

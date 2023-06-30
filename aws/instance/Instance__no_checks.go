@@ -76,6 +76,10 @@ func (i *jsiiProxy_Instance) validatePutEphemeralBlockDeviceParameters(value int
 	return nil
 }
 
+func (i *jsiiProxy_Instance) validatePutInstanceMarketOptionsParameters(value *InstanceInstanceMarketOptions) error {
+	return nil
+}
+
 func (i *jsiiProxy_Instance) validatePutLaunchTemplateParameters(value *InstanceLaunchTemplate) error {
 	return nil
 }

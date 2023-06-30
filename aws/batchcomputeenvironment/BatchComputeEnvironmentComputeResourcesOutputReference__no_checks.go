@@ -104,6 +104,10 @@ func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) validateSetPlacementGroupParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchComputeEnvironmentComputeResourcesOutputReference) validateSetSecurityGroupIdsParameters(val *[]*string) error {
 	return nil
 }

@@ -2,9 +2,9 @@ package dmsendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dmsendpoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dmsendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -102,9 +102,6 @@ type DmsEndpointS3SettingsOutputReference interface {
 	IgnoreHeaderRows() *float64
 	SetIgnoreHeaderRows(val *float64)
 	IgnoreHeaderRowsInput() *float64
-	IgnoreHeadersRow() *float64
-	SetIgnoreHeadersRow(val *float64)
-	IgnoreHeadersRowInput() *float64
 	IncludeOpForFullLoad() interface{}
 	SetIncludeOpForFullLoad(val interface{})
 	IncludeOpForFullLoadInput() interface{}
@@ -200,7 +197,6 @@ type DmsEndpointS3SettingsOutputReference interface {
 	ResetEncryptionMode()
 	ResetExternalTableDefinition()
 	ResetIgnoreHeaderRows()
-	ResetIgnoreHeadersRow()
 	ResetIncludeOpForFullLoad()
 	ResetMaxFileSize()
 	ResetParquetTimestampInMillisecond()
@@ -763,26 +759,6 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) IgnoreHeaderRowsInput()
 	_jsii_.Get(
 		j,
 		"ignoreHeaderRowsInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) IgnoreHeadersRow() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"ignoreHeadersRow",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) IgnoreHeadersRowInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"ignoreHeadersRowInput",
 		&returns,
 	)
 	return returns
@@ -1383,17 +1359,6 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetIgnoreHeaderRows(val 
 	)
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetIgnoreHeadersRow(val *float64) {
-	if err := j.validateSetIgnoreHeadersRowParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"ignoreHeadersRow",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetIncludeOpForFullLoad(val interface{}) {
 	if err := j.validateSetIncludeOpForFullLoadParameters(val); err != nil {
 		panic(err)
@@ -1941,14 +1906,6 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) ResetIgnoreHeaderRows()
 	_jsii_.InvokeVoid(
 		d,
 		"resetIgnoreHeaderRows",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) ResetIgnoreHeadersRow() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetIgnoreHeadersRow",
 		nil, // no parameters
 	)
 }

@@ -519,22 +519,6 @@ func (j *jsiiProxy_LaunchConfiguration) validateSetUserDataBase64Parameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_LaunchConfiguration) validateSetVpcClassicLinkIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_LaunchConfiguration) validateSetVpcClassicLinkSecurityGroupsParameters(val *[]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func validateNewLaunchConfigurationParameters(scope constructs.Construct, id *string, config *LaunchConfigurationConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

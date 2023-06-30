@@ -2,14 +2,14 @@ package dataawsapigatewayv2api
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsapigatewayv2api/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsapigatewayv2api/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/apigatewayv2_api aws_apigatewayv2_api}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/apigatewayv2_api aws_apigatewayv2_api}.
 type DataAwsApigatewayv2Api interface {
 	cdktf.TerraformDataSource
 	ApiEndpoint() *string
@@ -426,7 +426,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2Api) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/apigatewayv2_api aws_apigatewayv2_api} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/apigatewayv2_api aws_apigatewayv2_api} Data Source.
 func NewDataAwsApigatewayv2Api(scope constructs.Construct, id *string, config *DataAwsApigatewayv2ApiConfig) DataAwsApigatewayv2Api {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewDataAwsApigatewayv2Api(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/apigatewayv2_api aws_apigatewayv2_api} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/apigatewayv2_api aws_apigatewayv2_api} Data Source.
 func NewDataAwsApigatewayv2Api_Override(d DataAwsApigatewayv2Api, scope constructs.Construct, id *string, config *DataAwsApigatewayv2ApiConfig) {
 	_init_.Initialize()
 

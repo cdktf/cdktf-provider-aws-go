@@ -2,14 +2,14 @@ package iotloggingoptions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/iotloggingoptions/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/iotloggingoptions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iot_logging_options aws_iot_logging_options}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/iot_logging_options aws_iot_logging_options}.
 type IotLoggingOptions interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_IotLoggingOptions) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iot_logging_options aws_iot_logging_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/iot_logging_options aws_iot_logging_options} Resource.
 func NewIotLoggingOptions(scope constructs.Construct, id *string, config *IotLoggingOptionsConfig) IotLoggingOptions {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewIotLoggingOptions(scope constructs.Construct, id *string, config *IotLog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/iot_logging_options aws_iot_logging_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/iot_logging_options aws_iot_logging_options} Resource.
 func NewIotLoggingOptions_Override(i IotLoggingOptions, scope constructs.Construct, id *string, config *IotLoggingOptionsConfig) {
 	_init_.Initialize()
 

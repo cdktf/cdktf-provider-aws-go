@@ -2,9 +2,9 @@ package sagemakerendpointconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/sagemakerendpointconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/sagemakerendpointconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -35,6 +35,9 @@ type SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputRefer
 	MemorySizeInMb() *float64
 	SetMemorySizeInMb(val *float64)
 	MemorySizeInMbInput() *float64
+	ProvisionedConcurrency() *float64
+	SetProvisionedConcurrency(val *float64)
+	ProvisionedConcurrencyInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputRefer
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetProvisionedConcurrency()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -172,6 +176,26 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsServerlessCon
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference) ProvisionedConcurrency() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedConcurrency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference) ProvisionedConcurrencyInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedConcurrencyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -271,6 +295,17 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsServerlessCon
 	_jsii_.Set(
 		j,
 		"memorySizeInMb",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference)SetProvisionedConcurrency(val *float64) {
+	if err := j.validateSetProvisionedConcurrencyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionedConcurrency",
 		val,
 	)
 }
@@ -481,6 +516,14 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsServerlessCon
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference) ResetProvisionedConcurrency() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetProvisionedConcurrency",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

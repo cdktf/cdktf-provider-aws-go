@@ -181,6 +181,8 @@ func (j *jsiiProxy_VpcEndpointSubnetAssociationTimeoutsOutputReference) validate
 
 func (j *jsiiProxy_VpcEndpointSubnetAssociationTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *VpcEndpointSubnetAssociationTimeouts:
 		val := val.(*VpcEndpointSubnetAssociationTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_VpcEndpointSubnetAssociationTimeoutsOutputReference) validate
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *VpcEndpointSubnetAssociationTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *VpcEndpointSubnetAssociationTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

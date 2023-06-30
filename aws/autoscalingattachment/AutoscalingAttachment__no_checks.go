@@ -64,10 +64,6 @@ func validateAutoscalingAttachment_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingAttachment) validateSetAlbTargetGroupArnParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_AutoscalingAttachment) validateSetAutoscalingGroupNameParameters(val *string) error {
 	return nil
 }

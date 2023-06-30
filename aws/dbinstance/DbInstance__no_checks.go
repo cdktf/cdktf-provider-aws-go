@@ -240,10 +240,6 @@ func (j *jsiiProxy_DbInstance) validateSetMultiAzParameters(val interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_DbInstance) validateSetNameParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DbInstance) validateSetNcharCharacterSetNameParameters(val *string) error {
 	return nil
 }
@@ -293,10 +289,6 @@ func (j *jsiiProxy_DbInstance) validateSetReplicaModeParameters(val *string) err
 }
 
 func (j *jsiiProxy_DbInstance) validateSetReplicateSourceDbParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DbInstance) validateSetSecurityGroupNamesParameters(val *[]*string) error {
 	return nil
 }
 

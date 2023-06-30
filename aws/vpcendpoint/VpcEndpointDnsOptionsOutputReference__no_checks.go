@@ -64,6 +64,10 @@ func (j *jsiiProxy_VpcEndpointDnsOptionsOutputReference) validateSetInternalValu
 	return nil
 }
 
+func (j *jsiiProxy_VpcEndpointDnsOptionsOutputReference) validateSetPrivateDnsOnlyForInboundResolverEndpointParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcEndpointDnsOptionsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

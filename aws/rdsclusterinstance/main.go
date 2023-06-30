@@ -97,7 +97,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCopyTagsToSnapshot", GoMethod: "ResetCopyTagsToSnapshot"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDbParameterGroupName", GoMethod: "ResetDbParameterGroupName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDbSubnetGroupName", GoMethod: "ResetDbSubnetGroupName"},
-			_jsii_.MemberMethod{JsiiMethod: "resetEngine", GoMethod: "ResetEngine"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEngineVersion", GoMethod: "ResetEngineVersion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIdentifier", GoMethod: "ResetIdentifier"},

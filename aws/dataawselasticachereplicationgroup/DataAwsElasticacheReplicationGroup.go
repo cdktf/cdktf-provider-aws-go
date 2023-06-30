@@ -2,14 +2,14 @@ package dataawselasticachereplicationgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawselasticachereplicationgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawselasticachereplicationgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group}.
 type DataAwsElasticacheReplicationGroup interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -50,7 +50,6 @@ type DataAwsElasticacheReplicationGroup interface {
 	// The tree node.
 	Node() constructs.Node
 	NodeType() *string
-	NumberCacheClusters() *float64
 	NumCacheClusters() *float64
 	NumNodeGroups() *float64
 	Port() *float64
@@ -63,7 +62,6 @@ type DataAwsElasticacheReplicationGroup interface {
 	RawOverrides() interface{}
 	ReaderEndpointAddress() *string
 	ReplicasPerNodeGroup() *float64
-	ReplicationGroupDescription() *string
 	ReplicationGroupId() *string
 	SetReplicationGroupId(val *string)
 	ReplicationGroupIdInput() *string
@@ -319,16 +317,6 @@ func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) NodeType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) NumberCacheClusters() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"numberCacheClusters",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) NumCacheClusters() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -409,16 +397,6 @@ func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) ReplicasPerNodeGroup() *f
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) ReplicationGroupDescription() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"replicationGroupDescription",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) ReplicationGroupId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -490,7 +468,7 @@ func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group} Data Source.
 func NewDataAwsElasticacheReplicationGroup(scope constructs.Construct, id *string, config *DataAwsElasticacheReplicationGroupConfig) DataAwsElasticacheReplicationGroup {
 	_init_.Initialize()
 
@@ -508,7 +486,7 @@ func NewDataAwsElasticacheReplicationGroup(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group} Data Source.
 func NewDataAwsElasticacheReplicationGroup_Override(d DataAwsElasticacheReplicationGroup, scope constructs.Construct, id *string, config *DataAwsElasticacheReplicationGroupConfig) {
 	_init_.Initialize()
 

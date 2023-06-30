@@ -2,14 +2,14 @@ package dataawsdmsreplicationinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsdmsreplicationinstance/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsdmsreplicationinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/dms_replication_instance aws_dms_replication_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/dms_replication_instance aws_dms_replication_instance}.
 type DataAwsDmsReplicationInstance interface {
 	cdktf.TerraformDataSource
 	AllocatedStorage() *float64
@@ -481,7 +481,7 @@ func (j *jsiiProxy_DataAwsDmsReplicationInstance) VpcSecurityGroupIds() *[]*stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/dms_replication_instance aws_dms_replication_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/dms_replication_instance aws_dms_replication_instance} Data Source.
 func NewDataAwsDmsReplicationInstance(scope constructs.Construct, id *string, config *DataAwsDmsReplicationInstanceConfig) DataAwsDmsReplicationInstance {
 	_init_.Initialize()
 
@@ -499,7 +499,7 @@ func NewDataAwsDmsReplicationInstance(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/dms_replication_instance aws_dms_replication_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/dms_replication_instance aws_dms_replication_instance} Data Source.
 func NewDataAwsDmsReplicationInstance_Override(d DataAwsDmsReplicationInstance, scope constructs.Construct, id *string, config *DataAwsDmsReplicationInstanceConfig) {
 	_init_.Initialize()
 

@@ -44,10 +44,6 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) validateInte
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) validatePutAuthParameters(value *CodebuildProjectSecondarySourcesAuth) error {
-	return nil
-}
-
 func (c *jsiiProxy_CodebuildProjectSecondarySourcesOutputReference) validatePutBuildStatusConfigParameters(value *CodebuildProjectSecondarySourcesBuildStatusConfig) error {
 	return nil
 }

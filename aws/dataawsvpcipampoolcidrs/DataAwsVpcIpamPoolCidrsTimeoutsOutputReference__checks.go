@@ -165,6 +165,8 @@ func (j *jsiiProxy_DataAwsVpcIpamPoolCidrsTimeoutsOutputReference) validateSetCo
 
 func (j *jsiiProxy_DataAwsVpcIpamPoolCidrsTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataAwsVpcIpamPoolCidrsTimeouts:
 		val := val.(*DataAwsVpcIpamPoolCidrsTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_DataAwsVpcIpamPoolCidrsTimeoutsOutputReference) validateSetIn
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataAwsVpcIpamPoolCidrsTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAwsVpcIpamPoolCidrsTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

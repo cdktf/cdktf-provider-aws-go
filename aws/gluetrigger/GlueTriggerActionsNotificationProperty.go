@@ -2,7 +2,7 @@ package gluetrigger
 
 
 type GlueTriggerActionsNotificationProperty struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/glue_trigger#notify_delay_after GlueTrigger#notify_delay_after}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/glue_trigger#notify_delay_after GlueTrigger#notify_delay_after}.
 	NotifyDelayAfter *float64 `field:"optional" json:"notifyDelayAfter" yaml:"notifyDelayAfter"`
 }
 

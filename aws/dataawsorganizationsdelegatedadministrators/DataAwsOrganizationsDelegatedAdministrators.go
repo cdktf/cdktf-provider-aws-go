@@ -2,14 +2,14 @@ package dataawsorganizationsdelegatedadministrators
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawsorganizationsdelegatedadministrators/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawsorganizationsdelegatedadministrators/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/organizations_delegated_administrators aws_organizations_delegated_administrators}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/organizations_delegated_administrators aws_organizations_delegated_administrators}.
 type DataAwsOrganizationsDelegatedAdministrators interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DataAwsOrganizationsDelegatedAdministrators) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/organizations_delegated_administrators aws_organizations_delegated_administrators} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/organizations_delegated_administrators aws_organizations_delegated_administrators} Data Source.
 func NewDataAwsOrganizationsDelegatedAdministrators(scope constructs.Construct, id *string, config *DataAwsOrganizationsDelegatedAdministratorsConfig) DataAwsOrganizationsDelegatedAdministrators {
 	_init_.Initialize()
 
@@ -311,7 +311,7 @@ func NewDataAwsOrganizationsDelegatedAdministrators(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/organizations_delegated_administrators aws_organizations_delegated_administrators} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/organizations_delegated_administrators aws_organizations_delegated_administrators} Data Source.
 func NewDataAwsOrganizationsDelegatedAdministrators_Override(d DataAwsOrganizationsDelegatedAdministrators, scope constructs.Construct, id *string, config *DataAwsOrganizationsDelegatedAdministratorsConfig) {
 	_init_.Initialize()
 

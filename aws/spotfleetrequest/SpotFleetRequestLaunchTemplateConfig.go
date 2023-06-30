@@ -4,11 +4,11 @@ package spotfleetrequest
 type SpotFleetRequestLaunchTemplateConfig struct {
 	// launch_template_specification block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/spot_fleet_request#launch_template_specification SpotFleetRequest#launch_template_specification}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/spot_fleet_request#launch_template_specification SpotFleetRequest#launch_template_specification}
 	LaunchTemplateSpecification *SpotFleetRequestLaunchTemplateConfigLaunchTemplateSpecification `field:"required" json:"launchTemplateSpecification" yaml:"launchTemplateSpecification"`
 	// overrides block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/spot_fleet_request#overrides SpotFleetRequest#overrides}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/spot_fleet_request#overrides SpotFleetRequest#overrides}
 	Overrides interface{} `field:"optional" json:"overrides" yaml:"overrides"`
 }
 

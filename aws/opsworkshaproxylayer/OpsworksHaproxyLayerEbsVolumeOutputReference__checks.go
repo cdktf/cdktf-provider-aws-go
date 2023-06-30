@@ -185,6 +185,8 @@ func (j *jsiiProxy_OpsworksHaproxyLayerEbsVolumeOutputReference) validateSetEncr
 
 func (j *jsiiProxy_OpsworksHaproxyLayerEbsVolumeOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *OpsworksHaproxyLayerEbsVolume:
 		val := val.(*OpsworksHaproxyLayerEbsVolume)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -196,11 +198,9 @@ func (j *jsiiProxy_OpsworksHaproxyLayerEbsVolumeOutputReference) validateSetInte
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *OpsworksHaproxyLayerEbsVolume, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *OpsworksHaproxyLayerEbsVolume; received %#v (a %T)", val, val)
 		}
 	}
 

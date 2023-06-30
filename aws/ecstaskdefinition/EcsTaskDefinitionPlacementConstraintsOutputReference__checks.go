@@ -173,6 +173,8 @@ func (j *jsiiProxy_EcsTaskDefinitionPlacementConstraintsOutputReference) validat
 
 func (j *jsiiProxy_EcsTaskDefinitionPlacementConstraintsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *EcsTaskDefinitionPlacementConstraints:
 		val := val.(*EcsTaskDefinitionPlacementConstraints)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_EcsTaskDefinitionPlacementConstraintsOutputReference) validat
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *EcsTaskDefinitionPlacementConstraints, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *EcsTaskDefinitionPlacementConstraints; received %#v (a %T)", val, val)
 		}
 	}
 

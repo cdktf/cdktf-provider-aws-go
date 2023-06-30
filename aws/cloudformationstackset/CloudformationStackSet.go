@@ -2,14 +2,14 @@ package cloudformationstackset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/cloudformationstackset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/cloudformationstackset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set}.
 type CloudformationStackSet interface {
 	cdktf.TerraformResource
 	AdministrationRoleArn() *string
@@ -61,6 +61,8 @@ type CloudformationStackSet interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ManagedExecution() CloudformationStackSetManagedExecutionOutputReference
+	ManagedExecutionInput() *CloudformationStackSetManagedExecution
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -131,6 +133,7 @@ type CloudformationStackSet interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutoDeployment(value *CloudformationStackSetAutoDeployment)
+	PutManagedExecution(value *CloudformationStackSetManagedExecution)
 	PutOperationPreferences(value *CloudformationStackSetOperationPreferences)
 	PutTimeouts(value *CloudformationStackSetTimeouts)
 	ResetAdministrationRoleArn()
@@ -140,6 +143,7 @@ type CloudformationStackSet interface {
 	ResetDescription()
 	ResetExecutionRoleName()
 	ResetId()
+	ResetManagedExecution()
 	ResetOperationPreferences()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -406,6 +410,26 @@ func (j *jsiiProxy_CloudformationStackSet) Lifecycle() *cdktf.TerraformResourceL
 	return returns
 }
 
+func (j *jsiiProxy_CloudformationStackSet) ManagedExecution() CloudformationStackSetManagedExecutionOutputReference {
+	var returns CloudformationStackSetManagedExecutionOutputReference
+	_jsii_.Get(
+		j,
+		"managedExecution",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudformationStackSet) ManagedExecutionInput() *CloudformationStackSetManagedExecution {
+	var returns *CloudformationStackSetManagedExecution
+	_jsii_.Get(
+		j,
+		"managedExecutionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudformationStackSet) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -667,7 +691,7 @@ func (j *jsiiProxy_CloudformationStackSet) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set} Resource.
 func NewCloudformationStackSet(scope constructs.Construct, id *string, config *CloudformationStackSetConfig) CloudformationStackSet {
 	_init_.Initialize()
 
@@ -685,7 +709,7 @@ func NewCloudformationStackSet(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/cloudformation_stack_set aws_cloudformation_stack_set} Resource.
 func NewCloudformationStackSet_Override(c CloudformationStackSet, scope constructs.Construct, id *string, config *CloudformationStackSetConfig) {
 	_init_.Initialize()
 
@@ -1184,6 +1208,17 @@ func (c *jsiiProxy_CloudformationStackSet) PutAutoDeployment(value *Cloudformati
 	)
 }
 
+func (c *jsiiProxy_CloudformationStackSet) PutManagedExecution(value *CloudformationStackSetManagedExecution) {
+	if err := c.validatePutManagedExecutionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putManagedExecution",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudformationStackSet) PutOperationPreferences(value *CloudformationStackSetOperationPreferences) {
 	if err := c.validatePutOperationPreferencesParameters(value); err != nil {
 		panic(err)
@@ -1258,6 +1293,14 @@ func (c *jsiiProxy_CloudformationStackSet) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudformationStackSet) ResetManagedExecution() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetManagedExecution",
 		nil, // no parameters
 	)
 }

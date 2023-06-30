@@ -239,14 +239,6 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument) validateSetLifecycleParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocument) validateSetOverrideJsonParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsIamPolicyDocument) validateSetOverridePolicyDocumentsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -256,14 +248,6 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument) validateSetOverridePolicyDocumentsP
 }
 
 func (j *jsiiProxy_DataAwsIamPolicyDocument) validateSetPolicyIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataAwsIamPolicyDocument) validateSetSourceJsonParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -90,7 +90,84 @@ func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) validateInterpolati
 	return nil
 }
 
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) validatePutActivemqBrokerParametersParameters(value *PipesPipeSourceParametersActivemqBrokerParameters) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) validatePutDynamodbStreamParametersParameters(value *PipesPipeSourceParametersDynamodbStreamParameters) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) validatePutFilterCriteriaParameters(value *PipesPipeSourceParametersFilterCriteria) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) validatePutKinesisStreamParametersParameters(value *PipesPipeSourceParametersKinesisStreamParameters) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) validatePutManagedStreamingKafkaParametersParameters(value *PipesPipeSourceParametersManagedStreamingKafkaParameters) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) validatePutRabbitmqBrokerParametersParameters(value *PipesPipeSourceParametersRabbitmqBrokerParameters) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) validatePutSelfManagedKafkaParametersParameters(value *PipesPipeSourceParametersSelfManagedKafkaParameters) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersOutputReference) validatePutSqsQueueParametersParameters(value *PipesPipeSourceParametersSqsQueueParameters) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

@@ -2,14 +2,14 @@ package appconfigenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/appconfigenvironment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/appconfigenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appconfig_environment aws_appconfig_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/appconfig_environment aws_appconfig_environment}.
 type AppconfigEnvironment interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -45,8 +45,6 @@ type AppconfigEnvironment interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -71,9 +69,7 @@ type AppconfigEnvironment interface {
 	State() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
-	TagsAll() *map[string]*string
-	SetTagsAll(val *map[string]*string)
-	TagsAllInput() *map[string]*string
+	TagsAll() cdktf.StringMap
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -108,13 +104,11 @@ type AppconfigEnvironment interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMonitor(value interface{})
 	ResetDescription()
-	ResetId()
 	ResetMonitor()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTags()
-	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -280,16 +274,6 @@ func (j *jsiiProxy_AppconfigEnvironment) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AppconfigEnvironment) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_AppconfigEnvironment) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -400,21 +384,11 @@ func (j *jsiiProxy_AppconfigEnvironment) Tags() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_AppconfigEnvironment) TagsAll() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_AppconfigEnvironment) TagsAll() cdktf.StringMap {
+	var returns cdktf.StringMap
 	_jsii_.Get(
 		j,
 		"tagsAll",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_AppconfigEnvironment) TagsAllInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"tagsAllInput",
 		&returns,
 	)
 	return returns
@@ -461,7 +435,7 @@ func (j *jsiiProxy_AppconfigEnvironment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appconfig_environment aws_appconfig_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/appconfig_environment aws_appconfig_environment} Resource.
 func NewAppconfigEnvironment(scope constructs.Construct, id *string, config *AppconfigEnvironmentConfig) AppconfigEnvironment {
 	_init_.Initialize()
 
@@ -479,7 +453,7 @@ func NewAppconfigEnvironment(scope constructs.Construct, id *string, config *App
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appconfig_environment aws_appconfig_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/appconfig_environment aws_appconfig_environment} Resource.
 func NewAppconfigEnvironment_Override(a AppconfigEnvironment, scope constructs.Construct, id *string, config *AppconfigEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -550,17 +524,6 @@ func (j *jsiiProxy_AppconfigEnvironment)SetForEach(val cdktf.ITerraformIterator)
 	)
 }
 
-func (j *jsiiProxy_AppconfigEnvironment)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
-		val,
-	)
-}
-
 func (j *jsiiProxy_AppconfigEnvironment)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -609,17 +572,6 @@ func (j *jsiiProxy_AppconfigEnvironment)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
-		val,
-	)
-}
-
-func (j *jsiiProxy_AppconfigEnvironment)SetTagsAll(val *map[string]*string) {
-	if err := j.validateSetTagsAllParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tagsAll",
 		val,
 	)
 }
@@ -909,14 +861,6 @@ func (a *jsiiProxy_AppconfigEnvironment) ResetDescription() {
 	)
 }
 
-func (a *jsiiProxy_AppconfigEnvironment) ResetId() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetId",
-		nil, // no parameters
-	)
-}
-
 func (a *jsiiProxy_AppconfigEnvironment) ResetMonitor() {
 	_jsii_.InvokeVoid(
 		a,
@@ -937,14 +881,6 @@ func (a *jsiiProxy_AppconfigEnvironment) ResetTags() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetTags",
-		nil, // no parameters
-	)
-}
-
-func (a *jsiiProxy_AppconfigEnvironment) ResetTagsAll() {
-	_jsii_.InvokeVoid(
-		a,
-		"resetTagsAll",
 		nil, // no parameters
 	)
 }

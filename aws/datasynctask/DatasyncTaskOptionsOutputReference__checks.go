@@ -211,6 +211,14 @@ func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) validateSetMtimeParameter
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) validateSetObjectTagsParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncTaskOptionsOutputReference) validateSetOverwriteModeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

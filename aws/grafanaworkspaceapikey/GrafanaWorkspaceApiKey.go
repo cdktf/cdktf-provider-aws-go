@@ -2,14 +2,14 @@ package grafanaworkspaceapikey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/grafanaworkspaceapikey/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/grafanaworkspaceapikey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/grafana_workspace_api_key aws_grafana_workspace_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/grafana_workspace_api_key aws_grafana_workspace_api_key}.
 type GrafanaWorkspaceApiKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -389,7 +389,7 @@ func (j *jsiiProxy_GrafanaWorkspaceApiKey) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/grafana_workspace_api_key aws_grafana_workspace_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/grafana_workspace_api_key aws_grafana_workspace_api_key} Resource.
 func NewGrafanaWorkspaceApiKey(scope constructs.Construct, id *string, config *GrafanaWorkspaceApiKeyConfig) GrafanaWorkspaceApiKey {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewGrafanaWorkspaceApiKey(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/grafana_workspace_api_key aws_grafana_workspace_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/grafana_workspace_api_key aws_grafana_workspace_api_key} Resource.
 func NewGrafanaWorkspaceApiKey_Override(g GrafanaWorkspaceApiKey, scope constructs.Construct, id *string, config *GrafanaWorkspaceApiKeyConfig) {
 	_init_.Initialize()
 

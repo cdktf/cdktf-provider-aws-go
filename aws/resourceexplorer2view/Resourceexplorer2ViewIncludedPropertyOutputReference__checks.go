@@ -165,6 +165,8 @@ func (j *jsiiProxy_Resourceexplorer2ViewIncludedPropertyOutputReference) validat
 
 func (j *jsiiProxy_Resourceexplorer2ViewIncludedPropertyOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *Resourceexplorer2ViewIncludedProperty:
 		val := val.(*Resourceexplorer2ViewIncludedProperty)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_Resourceexplorer2ViewIncludedPropertyOutputReference) validat
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *Resourceexplorer2ViewIncludedProperty, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *Resourceexplorer2ViewIncludedProperty; received %#v (a %T)", val, val)
 		}
 	}
 

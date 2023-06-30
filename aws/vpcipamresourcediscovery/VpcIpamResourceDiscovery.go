@@ -2,14 +2,14 @@ package vpcipamresourcediscovery
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/vpcipamresourcediscovery/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/vpcipamresourcediscovery/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery}.
 type VpcIpamResourceDiscovery interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -449,7 +449,7 @@ func (j *jsiiProxy_VpcIpamResourceDiscovery) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery} Resource.
 func NewVpcIpamResourceDiscovery(scope constructs.Construct, id *string, config *VpcIpamResourceDiscoveryConfig) VpcIpamResourceDiscovery {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewVpcIpamResourceDiscovery(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/vpc_ipam_resource_discovery aws_vpc_ipam_resource_discovery} Resource.
 func NewVpcIpamResourceDiscovery_Override(v VpcIpamResourceDiscovery, scope constructs.Construct, id *string, config *VpcIpamResourceDiscoveryConfig) {
 	_init_.Initialize()
 

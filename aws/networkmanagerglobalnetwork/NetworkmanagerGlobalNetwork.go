@@ -2,14 +2,14 @@ package networkmanagerglobalnetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/networkmanagerglobalnetwork/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/networkmanagerglobalnetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/networkmanager_global_network aws_networkmanager_global_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_global_network aws_networkmanager_global_network}.
 type NetworkmanagerGlobalNetwork interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -393,7 +393,7 @@ func (j *jsiiProxy_NetworkmanagerGlobalNetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/networkmanager_global_network aws_networkmanager_global_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_global_network aws_networkmanager_global_network} Resource.
 func NewNetworkmanagerGlobalNetwork(scope constructs.Construct, id *string, config *NetworkmanagerGlobalNetworkConfig) NetworkmanagerGlobalNetwork {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewNetworkmanagerGlobalNetwork(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/networkmanager_global_network aws_networkmanager_global_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/networkmanager_global_network aws_networkmanager_global_network} Resource.
 func NewNetworkmanagerGlobalNetwork_Override(n NetworkmanagerGlobalNetwork, scope constructs.Construct, id *string, config *NetworkmanagerGlobalNetworkConfig) {
 	_init_.Initialize()
 

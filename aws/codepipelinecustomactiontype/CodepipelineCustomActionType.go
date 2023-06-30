@@ -2,14 +2,14 @@ package codepipelinecustomactiontype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/codepipelinecustomactiontype/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/codepipelinecustomactiontype/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/codepipeline_custom_action_type aws_codepipeline_custom_action_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/codepipeline_custom_action_type aws_codepipeline_custom_action_type}.
 type CodepipelineCustomActionType interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -519,7 +519,7 @@ func (j *jsiiProxy_CodepipelineCustomActionType) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/codepipeline_custom_action_type aws_codepipeline_custom_action_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/codepipeline_custom_action_type aws_codepipeline_custom_action_type} Resource.
 func NewCodepipelineCustomActionType(scope constructs.Construct, id *string, config *CodepipelineCustomActionTypeConfig) CodepipelineCustomActionType {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewCodepipelineCustomActionType(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/codepipeline_custom_action_type aws_codepipeline_custom_action_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/codepipeline_custom_action_type aws_codepipeline_custom_action_type} Resource.
 func NewCodepipelineCustomActionType_Override(c CodepipelineCustomActionType, scope constructs.Construct, id *string, config *CodepipelineCustomActionTypeConfig) {
 	_init_.Initialize()
 

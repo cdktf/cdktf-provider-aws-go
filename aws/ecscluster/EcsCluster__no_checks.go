@@ -56,10 +56,6 @@ func (e *jsiiProxy_EcsCluster) validatePutConfigurationParameters(value *EcsClus
 	return nil
 }
 
-func (e *jsiiProxy_EcsCluster) validatePutDefaultCapacityProviderStrategyParameters(value interface{}) error {
-	return nil
-}
-
 func (e *jsiiProxy_EcsCluster) validatePutServiceConnectDefaultsParameters(value *EcsClusterServiceConnectDefaults) error {
 	return nil
 }
@@ -77,10 +73,6 @@ func validateEcsCluster_IsTerraformElementParameters(x interface{}) error {
 }
 
 func validateEcsCluster_IsTerraformResourceParameters(x interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_EcsCluster) validateSetCapacityProvidersParameters(val *[]*string) error {
 	return nil
 }
 

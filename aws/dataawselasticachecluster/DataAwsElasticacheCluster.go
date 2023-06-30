@@ -2,14 +2,14 @@ package dataawselasticachecluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/dataawselasticachecluster/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/dataawselasticachecluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/elasticache_cluster aws_elasticache_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/elasticache_cluster aws_elasticache_cluster}.
 type DataAwsElasticacheCluster interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -69,7 +69,6 @@ type DataAwsElasticacheCluster interface {
 	RawOverrides() interface{}
 	ReplicationGroupId() *string
 	SecurityGroupIds() *[]*string
-	SecurityGroupNames() *[]*string
 	SnapshotRetentionLimit() *float64
 	SnapshotWindow() *string
 	SubnetGroupName() *string
@@ -467,16 +466,6 @@ func (j *jsiiProxy_DataAwsElasticacheCluster) SecurityGroupIds() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticacheCluster) SecurityGroupNames() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"securityGroupNames",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAwsElasticacheCluster) SnapshotRetentionLimit() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -558,7 +547,7 @@ func (j *jsiiProxy_DataAwsElasticacheCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/elasticache_cluster aws_elasticache_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/elasticache_cluster aws_elasticache_cluster} Data Source.
 func NewDataAwsElasticacheCluster(scope constructs.Construct, id *string, config *DataAwsElasticacheClusterConfig) DataAwsElasticacheCluster {
 	_init_.Initialize()
 
@@ -576,7 +565,7 @@ func NewDataAwsElasticacheCluster(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/data-sources/elasticache_cluster aws_elasticache_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/elasticache_cluster aws_elasticache_cluster} Data Source.
 func NewDataAwsElasticacheCluster_Override(d DataAwsElasticacheCluster, scope constructs.Construct, id *string, config *DataAwsElasticacheClusterConfig) {
 	_init_.Initialize()
 

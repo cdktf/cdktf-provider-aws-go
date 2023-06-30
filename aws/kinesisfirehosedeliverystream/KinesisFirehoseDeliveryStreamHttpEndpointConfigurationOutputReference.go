@@ -2,9 +2,9 @@ package kinesisfirehosedeliverystream
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/kinesisfirehosedeliverystream/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/kinesisfirehosedeliverystream/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -56,6 +56,8 @@ type KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReference inter
 	S3BackupMode() *string
 	SetS3BackupMode(val *string)
 	S3BackupModeInput() *string
+	S3Configuration() KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationOutputReference
+	S3ConfigurationInput() *KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Configuration
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -94,6 +96,7 @@ type KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReference inter
 	PutCloudwatchLoggingOptions(value *KinesisFirehoseDeliveryStreamHttpEndpointConfigurationCloudwatchLoggingOptions)
 	PutProcessingConfiguration(value *KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfiguration)
 	PutRequestConfiguration(value *KinesisFirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration)
+	PutS3Configuration(value *KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Configuration)
 	ResetAccessKey()
 	ResetBufferingInterval()
 	ResetBufferingSize()
@@ -364,6 +367,26 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputR
 	_jsii_.Get(
 		j,
 		"s3BackupModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReference) S3Configuration() KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationOutputReference {
+	var returns KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3ConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"s3Configuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReference) S3ConfigurationInput() *KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Configuration {
+	var returns *KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Configuration
+	_jsii_.Get(
+		j,
+		"s3ConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -795,6 +818,17 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputR
 	_jsii_.InvokeVoid(
 		k,
 		"putRequestConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamHttpEndpointConfigurationOutputReference) PutS3Configuration(value *KinesisFirehoseDeliveryStreamHttpEndpointConfigurationS3Configuration) {
+	if err := k.validatePutS3ConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putS3Configuration",
 		[]interface{}{value},
 	)
 }

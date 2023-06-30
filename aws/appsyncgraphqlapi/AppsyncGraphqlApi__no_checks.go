@@ -124,6 +124,10 @@ func (j *jsiiProxy_AppsyncGraphqlApi) validateSetTagsAllParameters(val *map[stri
 	return nil
 }
 
+func (j *jsiiProxy_AppsyncGraphqlApi) validateSetVisibilityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncGraphqlApi) validateSetXrayEnabledParameters(val interface{}) error {
 	return nil
 }

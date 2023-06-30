@@ -2,9 +2,9 @@ package kinesisfirehosedeliverystream
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/kinesisfirehosedeliverystream/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/kinesisfirehosedeliverystream/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -59,6 +59,8 @@ type KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference interface
 	S3BackupMode() *string
 	SetS3BackupMode(val *string)
 	S3BackupModeInput() *string
+	S3Configuration() KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationOutputReference
+	S3ConfigurationInput() *KinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configuration
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -97,6 +99,7 @@ type KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference interface
 	PutCloudwatchLoggingOptions(value *KinesisFirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions)
 	PutProcessingConfiguration(value *KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration)
 	PutS3BackupConfiguration(value *KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration)
+	PutS3Configuration(value *KinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configuration)
 	ResetCloudwatchLoggingOptions()
 	ResetCopyOptions()
 	ResetDataTableColumns()
@@ -384,6 +387,26 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputRefer
 	_jsii_.Get(
 		j,
 		"s3BackupModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference) S3Configuration() KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationOutputReference {
+	var returns KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"s3Configuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference) S3ConfigurationInput() *KinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configuration {
+	var returns *KinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configuration
+	_jsii_.Get(
+		j,
+		"s3ConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -826,6 +849,17 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputRefer
 	_jsii_.InvokeVoid(
 		k,
 		"putS3BackupConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference) PutS3Configuration(value *KinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configuration) {
+	if err := k.validatePutS3ConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putS3Configuration",
 		[]interface{}{value},
 	)
 }

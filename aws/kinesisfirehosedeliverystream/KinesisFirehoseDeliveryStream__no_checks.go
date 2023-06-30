@@ -76,10 +76,6 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutRedshiftConfigurati
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutS3ConfigurationParameters(value *KinesisFirehoseDeliveryStreamS3Configuration) error {
-	return nil
-}
-
 func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutServerSideEncryptionParameters(value *KinesisFirehoseDeliveryStreamServerSideEncryption) error {
 	return nil
 }

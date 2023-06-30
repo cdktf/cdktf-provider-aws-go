@@ -2,14 +2,14 @@ package pipespipe
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/pipespipe/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/pipespipe/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/pipes_pipe aws_pipes_pipe}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/pipes_pipe aws_pipes_pipe}.
 type PipesPipe interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -38,6 +38,8 @@ type PipesPipe interface {
 	Enrichment() *string
 	SetEnrichment(val *string)
 	EnrichmentInput() *string
+	EnrichmentParameters() PipesPipeEnrichmentParametersOutputReference
+	EnrichmentParametersInput() *PipesPipeEnrichmentParameters
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -123,20 +125,24 @@ type PipesPipe interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEnrichmentParameters(value *PipesPipeEnrichmentParameters)
 	PutSourceParameters(value *PipesPipeSourceParameters)
 	PutTargetParameters(value *PipesPipeTargetParameters)
 	PutTimeouts(value *PipesPipeTimeouts)
 	ResetDescription()
 	ResetDesiredState()
 	ResetEnrichment()
+	ResetEnrichmentParameters()
 	ResetId()
 	ResetName()
 	ResetNamePrefix()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSourceParameters()
 	ResetTags()
 	ResetTagsAll()
+	ResetTargetParameters()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -268,6 +274,26 @@ func (j *jsiiProxy_PipesPipe) EnrichmentInput() *string {
 	_jsii_.Get(
 		j,
 		"enrichmentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipe) EnrichmentParameters() PipesPipeEnrichmentParametersOutputReference {
+	var returns PipesPipeEnrichmentParametersOutputReference
+	_jsii_.Get(
+		j,
+		"enrichmentParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipe) EnrichmentParametersInput() *PipesPipeEnrichmentParameters {
+	var returns *PipesPipeEnrichmentParameters
+	_jsii_.Get(
+		j,
+		"enrichmentParametersInput",
 		&returns,
 	)
 	return returns
@@ -604,7 +630,7 @@ func (j *jsiiProxy_PipesPipe) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/pipes_pipe aws_pipes_pipe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/pipes_pipe aws_pipes_pipe} Resource.
 func NewPipesPipe(scope constructs.Construct, id *string, config *PipesPipeConfig) PipesPipe {
 	_init_.Initialize()
 
@@ -622,7 +648,7 @@ func NewPipesPipe(scope constructs.Construct, id *string, config *PipesPipeConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/pipes_pipe aws_pipes_pipe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/pipes_pipe aws_pipes_pipe} Resource.
 func NewPipesPipe_Override(p PipesPipe, scope constructs.Construct, id *string, config *PipesPipeConfig) {
 	_init_.Initialize()
 
@@ -1088,6 +1114,17 @@ func (p *jsiiProxy_PipesPipe) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (p *jsiiProxy_PipesPipe) PutEnrichmentParameters(value *PipesPipeEnrichmentParameters) {
+	if err := p.validatePutEnrichmentParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putEnrichmentParameters",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipesPipe) PutSourceParameters(value *PipesPipeSourceParameters) {
 	if err := p.validatePutSourceParametersParameters(value); err != nil {
 		panic(err)
@@ -1145,6 +1182,14 @@ func (p *jsiiProxy_PipesPipe) ResetEnrichment() {
 	)
 }
 
+func (p *jsiiProxy_PipesPipe) ResetEnrichmentParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetEnrichmentParameters",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PipesPipe) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1177,6 +1222,14 @@ func (p *jsiiProxy_PipesPipe) ResetOverrideLogicalId() {
 	)
 }
 
+func (p *jsiiProxy_PipesPipe) ResetSourceParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetSourceParameters",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PipesPipe) ResetTags() {
 	_jsii_.InvokeVoid(
 		p,
@@ -1189,6 +1242,14 @@ func (p *jsiiProxy_PipesPipe) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipesPipe) ResetTargetParameters() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetTargetParameters",
 		nil, // no parameters
 	)
 }

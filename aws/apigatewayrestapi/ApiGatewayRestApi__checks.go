@@ -324,7 +324,7 @@ func (j *jsiiProxy_ApiGatewayRestApi) validateSetLifecycleParameters(val *cdktf.
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayRestApi) validateSetMinimumCompressionSizeParameters(val *float64) error {
+func (j *jsiiProxy_ApiGatewayRestApi) validateSetMinimumCompressionSizeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

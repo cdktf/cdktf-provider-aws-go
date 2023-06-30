@@ -176,6 +176,8 @@ func (j *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference) validateSetC
 
 func (j *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *AppmeshVirtualRouterSpecListener:
 		val := val.(*AppmeshVirtualRouterSpecListener)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -187,11 +189,9 @@ func (j *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference) validateSetI
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *AppmeshVirtualRouterSpecListener, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AppmeshVirtualRouterSpecListener; received %#v (a %T)", val, val)
 		}
 	}
 

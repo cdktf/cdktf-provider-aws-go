@@ -173,6 +173,8 @@ func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) validateSet
 
 func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *WafregionalRateBasedRulePredicate:
 		val := val.(*WafregionalRateBasedRulePredicate)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_WafregionalRateBasedRulePredicateOutputReference) validateSet
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *WafregionalRateBasedRulePredicate, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *WafregionalRateBasedRulePredicate; received %#v (a %T)", val, val)
 		}
 	}
 

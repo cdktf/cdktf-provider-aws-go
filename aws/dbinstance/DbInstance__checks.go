@@ -693,14 +693,6 @@ func (j *jsiiProxy_DbInstance) validateSetMultiAzParameters(val interface{}) err
 	return nil
 }
 
-func (j *jsiiProxy_DbInstance) validateSetNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DbInstance) validateSetNcharCharacterSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -860,14 +852,6 @@ func (j *jsiiProxy_DbInstance) validateSetReplicaModeParameters(val *string) err
 }
 
 func (j *jsiiProxy_DbInstance) validateSetReplicateSourceDbParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DbInstance) validateSetSecurityGroupNamesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -221,6 +221,8 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetHighli
 
 func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CloudsearchDomainIndexField:
 		val := val.(*CloudsearchDomainIndexField)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -232,11 +234,9 @@ func (j *jsiiProxy_CloudsearchDomainIndexFieldOutputReference) validateSetIntern
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CloudsearchDomainIndexField, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CloudsearchDomainIndexField; received %#v (a %T)", val, val)
 		}
 	}
 

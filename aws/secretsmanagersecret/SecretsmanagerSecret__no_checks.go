@@ -56,10 +56,6 @@ func (s *jsiiProxy_SecretsmanagerSecret) validatePutReplicaParameters(value inte
 	return nil
 }
 
-func (s *jsiiProxy_SecretsmanagerSecret) validatePutRotationRulesParameters(value *SecretsmanagerSecretRotationRules) error {
-	return nil
-}
-
 func validateSecretsmanagerSecret_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -117,10 +113,6 @@ func (j *jsiiProxy_SecretsmanagerSecret) validateSetProvisionersParameters(val *
 }
 
 func (j *jsiiProxy_SecretsmanagerSecret) validateSetRecoveryWindowInDaysParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_SecretsmanagerSecret) validateSetRotationLambdaArnParameters(val *string) error {
 	return nil
 }
 

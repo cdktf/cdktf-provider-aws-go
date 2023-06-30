@@ -90,28 +90,6 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference)
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) validatePutAllQueryArgumentsParameters(value *Wafv2WebAclLoggingConfigurationRedactedFieldsAllQueryArguments) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) validatePutBodyParameters(value *Wafv2WebAclLoggingConfigurationRedactedFieldsBody) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) validatePutMethodParameters(value *Wafv2WebAclLoggingConfigurationRedactedFieldsMethod) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -135,17 +113,6 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference)
 }
 
 func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) validatePutSingleHeaderParameters(value *Wafv2WebAclLoggingConfigurationRedactedFieldsSingleHeader) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) validatePutSingleQueryArgumentParameters(value *Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgument) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -242,6 +209,8 @@ func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference)
 
 func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *Wafv2WebAclLoggingConfigurationRedactedFields:
 		val := val.(*Wafv2WebAclLoggingConfigurationRedactedFields)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -253,11 +222,9 @@ func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsOutputReference)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *Wafv2WebAclLoggingConfigurationRedactedFields, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *Wafv2WebAclLoggingConfigurationRedactedFields; received %#v (a %T)", val, val)
 		}
 	}
 

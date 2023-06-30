@@ -176,6 +176,8 @@ func (j *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateSetComplexO
 
 func (j *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CodepipelineArtifactStore:
 		val := val.(*CodepipelineArtifactStore)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -187,11 +189,9 @@ func (j *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateSetInternal
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CodepipelineArtifactStore, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CodepipelineArtifactStore; received %#v (a %T)", val, val)
 		}
 	}
 

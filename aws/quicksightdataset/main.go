@@ -83,6 +83,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLogicalTableMap", GoMethod: "ResetLogicalTableMap"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPermissions", GoMethod: "ResetPermissions"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPhysicalTableMap", GoMethod: "ResetPhysicalTableMap"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRefreshProperties", GoMethod: "ResetRefreshProperties"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRowLevelPermissionDataSet", GoMethod: "ResetRowLevelPermissionDataSet"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRowLevelPermissionTagConfiguration", GoMethod: "ResetRowLevelPermissionTagConfiguration"},

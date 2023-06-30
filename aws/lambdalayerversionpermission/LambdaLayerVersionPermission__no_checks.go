@@ -100,6 +100,10 @@ func (j *jsiiProxy_LambdaLayerVersionPermission) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_LambdaLayerVersionPermission) validateSetSkipDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaLayerVersionPermission) validateSetStatementIdParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,10 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOpti
 	return nil
 }
 
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference) validateSetStreamExceptionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptionsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

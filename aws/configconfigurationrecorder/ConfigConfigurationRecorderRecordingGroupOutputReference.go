@@ -2,9 +2,9 @@ package configconfigurationrecorder
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/configconfigurationrecorder/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/configconfigurationrecorder/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -28,6 +28,8 @@ type ConfigConfigurationRecorderRecordingGroupOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExclusionByResourceTypes() ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesList
+	ExclusionByResourceTypesInput() interface{}
 	// Experimental.
 	Fqn() *string
 	IncludeGlobalResourceTypes() interface{}
@@ -35,6 +37,8 @@ type ConfigConfigurationRecorderRecordingGroupOutputReference interface {
 	IncludeGlobalResourceTypesInput() interface{}
 	InternalValue() *ConfigConfigurationRecorderRecordingGroup
 	SetInternalValue(val *ConfigConfigurationRecorderRecordingGroup)
+	RecordingStrategy() ConfigConfigurationRecorderRecordingGroupRecordingStrategyList
+	RecordingStrategyInput() interface{}
 	ResourceTypes() *[]*string
 	SetResourceTypes(val *[]*string)
 	ResourceTypesInput() *[]*string
@@ -70,8 +74,12 @@ type ConfigConfigurationRecorderRecordingGroupOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutExclusionByResourceTypes(value interface{})
+	PutRecordingStrategy(value interface{})
 	ResetAllSupported()
+	ResetExclusionByResourceTypes()
 	ResetIncludeGlobalResourceTypes()
+	ResetRecordingStrategy()
 	ResetResourceTypes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -138,6 +146,26 @@ func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) Cre
 	return returns
 }
 
+func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) ExclusionByResourceTypes() ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesList {
+	var returns ConfigConfigurationRecorderRecordingGroupExclusionByResourceTypesList
+	_jsii_.Get(
+		j,
+		"exclusionByResourceTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) ExclusionByResourceTypesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"exclusionByResourceTypesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -173,6 +201,26 @@ func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) Int
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) RecordingStrategy() ConfigConfigurationRecorderRecordingGroupRecordingStrategyList {
+	var returns ConfigConfigurationRecorderRecordingGroupRecordingStrategyList
+	_jsii_.Get(
+		j,
+		"recordingStrategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) RecordingStrategyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"recordingStrategyInput",
 		&returns,
 	)
 	return returns
@@ -520,6 +568,28 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) Int
 	return returns
 }
 
+func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) PutExclusionByResourceTypes(value interface{}) {
+	if err := c.validatePutExclusionByResourceTypesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putExclusionByResourceTypes",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) PutRecordingStrategy(value interface{}) {
+	if err := c.validatePutRecordingStrategyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putRecordingStrategy",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) ResetAllSupported() {
 	_jsii_.InvokeVoid(
 		c,
@@ -528,10 +598,26 @@ func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) Res
 	)
 }
 
+func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) ResetExclusionByResourceTypes() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExclusionByResourceTypes",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) ResetIncludeGlobalResourceTypes() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetIncludeGlobalResourceTypes",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConfigConfigurationRecorderRecordingGroupOutputReference) ResetRecordingStrategy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRecordingStrategy",
 		nil, // no parameters
 	)
 }

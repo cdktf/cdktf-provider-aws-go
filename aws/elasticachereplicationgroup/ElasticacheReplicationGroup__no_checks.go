@@ -52,10 +52,6 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) validateOverrideLogicalIdParamet
 	return nil
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroup) validatePutClusterModeParameters(value *ElasticacheReplicationGroupClusterMode) error {
-	return nil
-}
-
 func (e *jsiiProxy_ElasticacheReplicationGroup) validatePutLogDeliveryConfigurationParameters(value interface{}) error {
 	return nil
 }
@@ -93,10 +89,6 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetAutomaticFailoverEnab
 }
 
 func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetAutoMinorVersionUpgradeParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetAvailabilityZonesParameters(val *[]*string) error {
 	return nil
 }
 
@@ -160,10 +152,6 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetNotificationTopicArnP
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetNumberCacheClustersParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetNumCacheClustersParameters(val *float64) error {
 	return nil
 }
@@ -189,10 +177,6 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetProvisionersParameter
 }
 
 func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetReplicasPerNodeGroupParameters(val *float64) error {
-	return nil
-}
-
-func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetReplicationGroupDescriptionParameters(val *string) error {
 	return nil
 }
 

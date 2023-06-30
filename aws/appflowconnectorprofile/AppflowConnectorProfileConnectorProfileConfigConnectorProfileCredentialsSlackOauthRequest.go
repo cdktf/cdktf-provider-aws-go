@@ -2,9 +2,9 @@ package appflowconnectorprofile
 
 
 type AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSlackOauthRequest struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/appflow_connector_profile#auth_code AppflowConnectorProfile#auth_code}.
 	AuthCode *string `field:"optional" json:"authCode" yaml:"authCode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/appflow_connector_profile#redirect_uri AppflowConnectorProfile#redirect_uri}.
 	RedirectUri *string `field:"optional" json:"redirectUri" yaml:"redirectUri"`
 }
 

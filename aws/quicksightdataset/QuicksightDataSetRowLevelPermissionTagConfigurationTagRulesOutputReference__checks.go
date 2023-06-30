@@ -173,6 +173,8 @@ func (j *jsiiProxy_QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesOu
 
 func (j *jsiiProxy_QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *QuicksightDataSetRowLevelPermissionTagConfigurationTagRules:
 		val := val.(*QuicksightDataSetRowLevelPermissionTagConfigurationTagRules)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_QuicksightDataSetRowLevelPermissionTagConfigurationTagRulesOu
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *QuicksightDataSetRowLevelPermissionTagConfigurationTagRules, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *QuicksightDataSetRowLevelPermissionTagConfigurationTagRules; received %#v (a %T)", val, val)
 		}
 	}
 

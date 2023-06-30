@@ -15,6 +15,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "bgpAsn", GoGetter: "BgpAsn"},
 			_jsii_.MemberProperty{JsiiProperty: "bgpAsnInput", GoGetter: "BgpAsnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bgpPeerAddress", GoGetter: "BgpPeerAddress"},
+			_jsii_.MemberProperty{JsiiProperty: "bgpTransitGatewayAddresses", GoGetter: "BgpTransitGatewayAddresses"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},

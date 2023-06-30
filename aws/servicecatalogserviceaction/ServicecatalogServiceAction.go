@@ -2,14 +2,14 @@ package servicecatalogserviceaction
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/servicecatalogserviceaction/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/servicecatalogserviceaction/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/servicecatalog_service_action aws_servicecatalog_service_action}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/servicecatalog_service_action aws_servicecatalog_service_action}.
 type ServicecatalogServiceAction interface {
 	cdktf.TerraformResource
 	AcceptLanguage() *string
@@ -404,7 +404,7 @@ func (j *jsiiProxy_ServicecatalogServiceAction) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/servicecatalog_service_action aws_servicecatalog_service_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/servicecatalog_service_action aws_servicecatalog_service_action} Resource.
 func NewServicecatalogServiceAction(scope constructs.Construct, id *string, config *ServicecatalogServiceActionConfig) ServicecatalogServiceAction {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewServicecatalogServiceAction(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/servicecatalog_service_action aws_servicecatalog_service_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/servicecatalog_service_action aws_servicecatalog_service_action} Resource.
 func NewServicecatalogServiceAction_Override(s ServicecatalogServiceAction, scope constructs.Construct, id *string, config *ServicecatalogServiceActionConfig) {
 	_init_.Initialize()
 

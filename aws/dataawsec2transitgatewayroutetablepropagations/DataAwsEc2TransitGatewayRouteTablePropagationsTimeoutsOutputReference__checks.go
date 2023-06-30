@@ -165,6 +165,8 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTablePropagationsTimeoutsOutputR
 
 func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTablePropagationsTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DataAwsEc2TransitGatewayRouteTablePropagationsTimeouts:
 		val := val.(*DataAwsEc2TransitGatewayRouteTablePropagationsTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayRouteTablePropagationsTimeoutsOutputR
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DataAwsEc2TransitGatewayRouteTablePropagationsTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAwsEc2TransitGatewayRouteTablePropagationsTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -2,14 +2,14 @@ package inspector2enabler
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/inspector2enabler/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/inspector2enabler/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/inspector2_enabler aws_inspector2_enabler}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/inspector2_enabler aws_inspector2_enabler}.
 type Inspector2Enabler interface {
 	cdktf.TerraformResource
 	AccountIds() *[]*string
@@ -356,7 +356,7 @@ func (j *jsiiProxy_Inspector2Enabler) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/inspector2_enabler aws_inspector2_enabler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/inspector2_enabler aws_inspector2_enabler} Resource.
 func NewInspector2Enabler(scope constructs.Construct, id *string, config *Inspector2EnablerConfig) Inspector2Enabler {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewInspector2Enabler(scope constructs.Construct, id *string, config *Inspec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/inspector2_enabler aws_inspector2_enabler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/inspector2_enabler aws_inspector2_enabler} Resource.
 func NewInspector2Enabler_Override(i Inspector2Enabler, scope constructs.Construct, id *string, config *Inspector2EnablerConfig) {
 	_init_.Initialize()
 

@@ -64,6 +64,10 @@ func (e *jsiiProxy_Elb) validatePutListenerParameters(value interface{}) error {
 	return nil
 }
 
+func (e *jsiiProxy_Elb) validatePutTimeoutsParameters(value *ElbTimeouts) error {
+	return nil
+}
+
 func validateElb_IsConstructParameters(x interface{}) error {
 	return nil
 }

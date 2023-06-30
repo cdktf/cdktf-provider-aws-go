@@ -2,14 +2,14 @@ package opensearchdomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/opensearchdomain/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/opensearchdomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opensearch_domain aws_opensearch_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/opensearch_domain aws_opensearch_domain}.
 type OpensearchDomain interface {
 	cdktf.TerraformResource
 	AccessPolicies() *string
@@ -80,6 +80,8 @@ type OpensearchDomain interface {
 	Node() constructs.Node
 	NodeToNodeEncryption() OpensearchDomainNodeToNodeEncryptionOutputReference
 	NodeToNodeEncryptionInput() *OpensearchDomainNodeToNodeEncryption
+	OffPeakWindowOptions() OpensearchDomainOffPeakWindowOptionsOutputReference
+	OffPeakWindowOptionsInput() *OpensearchDomainOffPeakWindowOptions
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -142,6 +144,7 @@ type OpensearchDomain interface {
 	PutEncryptAtRest(value *OpensearchDomainEncryptAtRest)
 	PutLogPublishingOptions(value interface{})
 	PutNodeToNodeEncryption(value *OpensearchDomainNodeToNodeEncryption)
+	PutOffPeakWindowOptions(value *OpensearchDomainOffPeakWindowOptions)
 	PutSnapshotOptions(value *OpensearchDomainSnapshotOptions)
 	PutTimeouts(value *OpensearchDomainTimeouts)
 	PutVpcOptions(value *OpensearchDomainVpcOptions)
@@ -158,6 +161,7 @@ type OpensearchDomain interface {
 	ResetId()
 	ResetLogPublishingOptions()
 	ResetNodeToNodeEncryption()
+	ResetOffPeakWindowOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -611,6 +615,26 @@ func (j *jsiiProxy_OpensearchDomain) NodeToNodeEncryptionInput() *OpensearchDoma
 	return returns
 }
 
+func (j *jsiiProxy_OpensearchDomain) OffPeakWindowOptions() OpensearchDomainOffPeakWindowOptionsOutputReference {
+	var returns OpensearchDomainOffPeakWindowOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"offPeakWindowOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) OffPeakWindowOptionsInput() *OpensearchDomainOffPeakWindowOptions {
+	var returns *OpensearchDomainOffPeakWindowOptions
+	_jsii_.Get(
+		j,
+		"offPeakWindowOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OpensearchDomain) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -772,7 +796,7 @@ func (j *jsiiProxy_OpensearchDomain) VpcOptionsInput() *OpensearchDomainVpcOptio
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opensearch_domain aws_opensearch_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/opensearch_domain aws_opensearch_domain} Resource.
 func NewOpensearchDomain(scope constructs.Construct, id *string, config *OpensearchDomainConfig) OpensearchDomain {
 	_init_.Initialize()
 
@@ -790,7 +814,7 @@ func NewOpensearchDomain(scope constructs.Construct, id *string, config *Opensea
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/opensearch_domain aws_opensearch_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/opensearch_domain aws_opensearch_domain} Resource.
 func NewOpensearchDomain_Override(o OpensearchDomain, scope constructs.Construct, id *string, config *OpensearchDomainConfig) {
 	_init_.Initialize()
 
@@ -1311,6 +1335,17 @@ func (o *jsiiProxy_OpensearchDomain) PutNodeToNodeEncryption(value *OpensearchDo
 	)
 }
 
+func (o *jsiiProxy_OpensearchDomain) PutOffPeakWindowOptions(value *OpensearchDomainOffPeakWindowOptions) {
+	if err := o.validatePutOffPeakWindowOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putOffPeakWindowOptions",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OpensearchDomain) PutSnapshotOptions(value *OpensearchDomainSnapshotOptions) {
 	if err := o.validatePutSnapshotOptionsParameters(value); err != nil {
 		panic(err)
@@ -1444,6 +1479,14 @@ func (o *jsiiProxy_OpensearchDomain) ResetNodeToNodeEncryption() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetNodeToNodeEncryption",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetOffPeakWindowOptions() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetOffPeakWindowOptions",
 		nil, // no parameters
 	)
 }

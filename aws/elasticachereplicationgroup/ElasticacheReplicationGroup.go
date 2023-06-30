@@ -2,14 +2,14 @@ package elasticachereplicationgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/elasticachereplicationgroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/elasticachereplicationgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/elasticache_replication_group aws_elasticache_replication_group}.
 type ElasticacheReplicationGroup interface {
 	cdktf.TerraformResource
 	ApplyImmediately() interface{}
@@ -28,14 +28,9 @@ type ElasticacheReplicationGroup interface {
 	AutoMinorVersionUpgrade() *string
 	SetAutoMinorVersionUpgrade(val *string)
 	AutoMinorVersionUpgradeInput() *string
-	AvailabilityZones() *[]*string
-	SetAvailabilityZones(val *[]*string)
-	AvailabilityZonesInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterEnabled() cdktf.IResolvable
-	ClusterMode() ElasticacheReplicationGroupClusterModeOutputReference
-	ClusterModeInput() *ElasticacheReplicationGroupClusterMode
 	ConfigurationEndpointAddress() *string
 	// Experimental.
 	Connection() interface{}
@@ -105,9 +100,6 @@ type ElasticacheReplicationGroup interface {
 	NotificationTopicArn() *string
 	SetNotificationTopicArn(val *string)
 	NotificationTopicArnInput() *string
-	NumberCacheClusters() *float64
-	SetNumberCacheClusters(val *float64)
-	NumberCacheClustersInput() *float64
 	NumCacheClusters() *float64
 	SetNumCacheClusters(val *float64)
 	NumCacheClustersInput() *float64
@@ -138,9 +130,6 @@ type ElasticacheReplicationGroup interface {
 	ReplicasPerNodeGroup() *float64
 	SetReplicasPerNodeGroup(val *float64)
 	ReplicasPerNodeGroupInput() *float64
-	ReplicationGroupDescription() *string
-	SetReplicationGroupDescription(val *string)
-	ReplicationGroupDescriptionInput() *string
 	ReplicationGroupId() *string
 	SetReplicationGroupId(val *string)
 	ReplicationGroupIdInput() *string
@@ -210,7 +199,6 @@ type ElasticacheReplicationGroup interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutClusterMode(value *ElasticacheReplicationGroupClusterMode)
 	PutLogDeliveryConfiguration(value interface{})
 	PutTimeouts(value *ElasticacheReplicationGroupTimeouts)
 	ResetApplyImmediately()
@@ -218,8 +206,6 @@ type ElasticacheReplicationGroup interface {
 	ResetAuthToken()
 	ResetAutomaticFailoverEnabled()
 	ResetAutoMinorVersionUpgrade()
-	ResetAvailabilityZones()
-	ResetClusterMode()
 	ResetDataTieringEnabled()
 	ResetDescription()
 	ResetEngine()
@@ -233,7 +219,6 @@ type ElasticacheReplicationGroup interface {
 	ResetMultiAzEnabled()
 	ResetNodeType()
 	ResetNotificationTopicArn()
-	ResetNumberCacheClusters()
 	ResetNumCacheClusters()
 	ResetNumNodeGroups()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -243,7 +228,6 @@ type ElasticacheReplicationGroup interface {
 	ResetPort()
 	ResetPreferredCacheClusterAzs()
 	ResetReplicasPerNodeGroup()
-	ResetReplicationGroupDescription()
 	ResetSecurityGroupIds()
 	ResetSecurityGroupNames()
 	ResetSnapshotArns()
@@ -381,26 +365,6 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) AutoMinorVersionUpgradeInput() *
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) AvailabilityZones() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"availabilityZones",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ElasticacheReplicationGroup) AvailabilityZonesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"availabilityZonesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ElasticacheReplicationGroup) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -416,26 +380,6 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) ClusterEnabled() cdktf.IResolvab
 	_jsii_.Get(
 		j,
 		"clusterEnabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ElasticacheReplicationGroup) ClusterMode() ElasticacheReplicationGroupClusterModeOutputReference {
-	var returns ElasticacheReplicationGroupClusterModeOutputReference
-	_jsii_.Get(
-		j,
-		"clusterMode",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ElasticacheReplicationGroup) ClusterModeInput() *ElasticacheReplicationGroupClusterMode {
-	var returns *ElasticacheReplicationGroupClusterMode
-	_jsii_.Get(
-		j,
-		"clusterModeInput",
 		&returns,
 	)
 	return returns
@@ -821,26 +765,6 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) NotificationTopicArnInput() *str
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup) NumberCacheClusters() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"numberCacheClusters",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ElasticacheReplicationGroup) NumberCacheClustersInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"numberCacheClustersInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ElasticacheReplicationGroup) NumCacheClusters() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1006,26 +930,6 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) ReplicasPerNodeGroupInput() *flo
 	_jsii_.Get(
 		j,
 		"replicasPerNodeGroupInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ElasticacheReplicationGroup) ReplicationGroupDescription() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"replicationGroupDescription",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ElasticacheReplicationGroup) ReplicationGroupDescriptionInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"replicationGroupDescriptionInput",
 		&returns,
 	)
 	return returns
@@ -1322,7 +1226,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) UserGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
 func NewElasticacheReplicationGroup(scope constructs.Construct, id *string, config *ElasticacheReplicationGroupConfig) ElasticacheReplicationGroup {
 	_init_.Initialize()
 
@@ -1340,7 +1244,7 @@ func NewElasticacheReplicationGroup(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
 func NewElasticacheReplicationGroup_Override(e ElasticacheReplicationGroup, scope constructs.Construct, id *string, config *ElasticacheReplicationGroupConfig) {
 	_init_.Initialize()
 
@@ -1402,17 +1306,6 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetAutoMinorVersionUpgrade(val *s
 	_jsii_.Set(
 		j,
 		"autoMinorVersionUpgrade",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetAvailabilityZones(val *[]*string) {
-	if err := j.validateSetAvailabilityZonesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"availabilityZones",
 		val,
 	)
 }
@@ -1598,17 +1491,6 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetNotificationTopicArn(val *stri
 	)
 }
 
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetNumberCacheClusters(val *float64) {
-	if err := j.validateSetNumberCacheClustersParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"numberCacheClusters",
-		val,
-	)
-}
-
 func (j *jsiiProxy_ElasticacheReplicationGroup)SetNumCacheClusters(val *float64) {
 	if err := j.validateSetNumCacheClustersParameters(val); err != nil {
 		panic(err)
@@ -1690,17 +1572,6 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetReplicasPerNodeGroup(val *floa
 	_jsii_.Set(
 		j,
 		"replicasPerNodeGroup",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ElasticacheReplicationGroup)SetReplicationGroupDescription(val *string) {
-	if err := j.validateSetReplicationGroupDescriptionParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"replicationGroupDescription",
 		val,
 	)
 }
@@ -2103,17 +1974,6 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) OverrideLogicalId(newLogicalId *
 	)
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroup) PutClusterMode(value *ElasticacheReplicationGroupClusterMode) {
-	if err := e.validatePutClusterModeParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		e,
-		"putClusterMode",
-		[]interface{}{value},
-	)
-}
-
 func (e *jsiiProxy_ElasticacheReplicationGroup) PutLogDeliveryConfiguration(value interface{}) {
 	if err := e.validatePutLogDeliveryConfigurationParameters(value); err != nil {
 		panic(err)
@@ -2172,22 +2032,6 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) ResetAutoMinorVersionUpgrade() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetAutoMinorVersionUpgrade",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_ElasticacheReplicationGroup) ResetAvailabilityZones() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetAvailabilityZones",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_ElasticacheReplicationGroup) ResetClusterMode() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetClusterMode",
 		nil, // no parameters
 	)
 }
@@ -2296,14 +2140,6 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) ResetNotificationTopicArn() {
 	)
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroup) ResetNumberCacheClusters() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetNumberCacheClusters",
-		nil, // no parameters
-	)
-}
-
 func (e *jsiiProxy_ElasticacheReplicationGroup) ResetNumCacheClusters() {
 	_jsii_.InvokeVoid(
 		e,
@@ -2356,14 +2192,6 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) ResetReplicasPerNodeGroup() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetReplicasPerNodeGroup",
-		nil, // no parameters
-	)
-}
-
-func (e *jsiiProxy_ElasticacheReplicationGroup) ResetReplicationGroupDescription() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetReplicationGroupDescription",
 		nil, // no parameters
 	)
 }

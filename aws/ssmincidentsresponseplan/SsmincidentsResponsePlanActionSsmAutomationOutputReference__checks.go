@@ -220,6 +220,8 @@ func (j *jsiiProxy_SsmincidentsResponsePlanActionSsmAutomationOutputReference) v
 
 func (j *jsiiProxy_SsmincidentsResponsePlanActionSsmAutomationOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *SsmincidentsResponsePlanActionSsmAutomation:
 		val := val.(*SsmincidentsResponsePlanActionSsmAutomation)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -231,11 +233,9 @@ func (j *jsiiProxy_SsmincidentsResponsePlanActionSsmAutomationOutputReference) v
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *SsmincidentsResponsePlanActionSsmAutomation, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SsmincidentsResponsePlanActionSsmAutomation; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -173,6 +173,8 @@ func (j *jsiiProxy_DatasyncAgentTimeoutsOutputReference) validateSetCreateParame
 
 func (j *jsiiProxy_DatasyncAgentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DatasyncAgentTimeouts:
 		val := val.(*DatasyncAgentTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_DatasyncAgentTimeoutsOutputReference) validateSetInternalValu
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DatasyncAgentTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DatasyncAgentTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

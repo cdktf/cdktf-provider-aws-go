@@ -2,14 +2,14 @@ package detectivegraph
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v15/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v15/detectivegraph/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/detectivegraph/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/detective_graph aws_detective_graph}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/detective_graph aws_detective_graph}.
 type DetectiveGraph interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_DetectiveGraph) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/detective_graph aws_detective_graph} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/detective_graph aws_detective_graph} Resource.
 func NewDetectiveGraph(scope constructs.Construct, id *string, config *DetectiveGraphConfig) DetectiveGraph {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewDetectiveGraph(scope constructs.Construct, id *string, config *Detective
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/4.67.0/docs/resources/detective_graph aws_detective_graph} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/detective_graph aws_detective_graph} Resource.
 func NewDetectiveGraph_Override(d DetectiveGraph, scope constructs.Construct, id *string, config *DetectiveGraphConfig) {
 	_init_.Initialize()
 

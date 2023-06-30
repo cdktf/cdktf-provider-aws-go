@@ -88,6 +88,10 @@ func (o *jsiiProxy_OpensearchDomain) validatePutNodeToNodeEncryptionParameters(v
 	return nil
 }
 
+func (o *jsiiProxy_OpensearchDomain) validatePutOffPeakWindowOptionsParameters(value *OpensearchDomainOffPeakWindowOptions) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchDomain) validatePutSnapshotOptionsParameters(value *OpensearchDomainSnapshotOptions) error {
 	return nil
 }

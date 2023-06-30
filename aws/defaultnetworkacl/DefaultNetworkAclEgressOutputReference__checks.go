@@ -205,6 +205,8 @@ func (j *jsiiProxy_DefaultNetworkAclEgressOutputReference) validateSetIcmpTypePa
 
 func (j *jsiiProxy_DefaultNetworkAclEgressOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *DefaultNetworkAclEgress:
 		val := val.(*DefaultNetworkAclEgress)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -216,11 +218,9 @@ func (j *jsiiProxy_DefaultNetworkAclEgressOutputReference) validateSetInternalVa
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *DefaultNetworkAclEgress, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DefaultNetworkAclEgress; received %#v (a %T)", val, val)
 		}
 	}
 

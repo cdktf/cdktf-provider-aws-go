@@ -90,6 +90,127 @@ func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validateInterpolati
 	return nil
 }
 
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutBatchJobParametersParameters(value *PipesPipeTargetParametersBatchJobParameters) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutCloudwatchLogsParametersParameters(value *PipesPipeTargetParametersCloudwatchLogsParameters) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutEcsTaskParametersParameters(value *PipesPipeTargetParametersEcsTaskParameters) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutEventbridgeEventBusParametersParameters(value *PipesPipeTargetParametersEventbridgeEventBusParameters) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutHttpParametersParameters(value *PipesPipeTargetParametersHttpParameters) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutKinesisStreamParametersParameters(value *PipesPipeTargetParametersKinesisStreamParameters) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutLambdaFunctionParametersParameters(value *PipesPipeTargetParametersLambdaFunctionParameters) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutRedshiftDataParametersParameters(value *PipesPipeTargetParametersRedshiftDataParameters) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutSagemakerPipelineParametersParameters(value *PipesPipeTargetParametersSagemakerPipelineParameters) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutSqsQueueParametersParameters(value *PipesPipeTargetParametersSqsQueueParameters) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validatePutStepFunctionStateMachineParametersParameters(value *PipesPipeTargetParametersStepFunctionStateMachineParameters) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (p *jsiiProxy_PipesPipeTargetParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")

@@ -80,10 +80,6 @@ func (j *jsiiProxy_RouteTableRouteOutputReference) validateSetGatewayIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_RouteTableRouteOutputReference) validateSetInstanceIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_RouteTableRouteOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

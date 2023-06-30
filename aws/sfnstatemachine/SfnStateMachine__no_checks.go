@@ -108,6 +108,10 @@ func (j *jsiiProxy_SfnStateMachine) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
+func (j *jsiiProxy_SfnStateMachine) validateSetPublishParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SfnStateMachine) validateSetRoleArnParameters(val *string) error {
 	return nil
 }
