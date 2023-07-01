@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/iam_openid_connect_provider aws_iam_openid_connect_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/iam_openid_connect_provider aws_iam_openid_connect_provider}.
 type DataAwsIamOpenidConnectProvider interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -352,7 +352,7 @@ func (j *jsiiProxy_DataAwsIamOpenidConnectProvider) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/iam_openid_connect_provider aws_iam_openid_connect_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/iam_openid_connect_provider aws_iam_openid_connect_provider} Data Source.
 func NewDataAwsIamOpenidConnectProvider(scope constructs.Construct, id *string, config *DataAwsIamOpenidConnectProviderConfig) DataAwsIamOpenidConnectProvider {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewDataAwsIamOpenidConnectProvider(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/iam_openid_connect_provider aws_iam_openid_connect_provider} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/iam_openid_connect_provider aws_iam_openid_connect_provider} Data Source.
 func NewDataAwsIamOpenidConnectProvider_Override(d DataAwsIamOpenidConnectProvider, scope constructs.Construct, id *string, config *DataAwsIamOpenidConnectProviderConfig) {
 	_init_.Initialize()
 

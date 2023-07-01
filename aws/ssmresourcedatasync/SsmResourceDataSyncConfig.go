@@ -19,13 +19,13 @@ type SsmResourceDataSyncConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ssm_resource_data_sync#name SsmResourceDataSync#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_resource_data_sync#name SsmResourceDataSync#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// s3_destination block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ssm_resource_data_sync#s3_destination SsmResourceDataSync#s3_destination}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_resource_data_sync#s3_destination SsmResourceDataSync#s3_destination}
 	S3Destination *SsmResourceDataSyncS3Destination `field:"required" json:"s3Destination" yaml:"s3Destination"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/ssm_resource_data_sync#id SsmResourceDataSync#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/ssm_resource_data_sync#id SsmResourceDataSync#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

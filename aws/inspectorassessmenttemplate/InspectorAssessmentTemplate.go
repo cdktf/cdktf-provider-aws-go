@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/inspector_assessment_template aws_inspector_assessment_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/inspector_assessment_template aws_inspector_assessment_template}.
 type InspectorAssessmentTemplate interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -461,7 +461,7 @@ func (j *jsiiProxy_InspectorAssessmentTemplate) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/inspector_assessment_template aws_inspector_assessment_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/inspector_assessment_template aws_inspector_assessment_template} Resource.
 func NewInspectorAssessmentTemplate(scope constructs.Construct, id *string, config *InspectorAssessmentTemplateConfig) InspectorAssessmentTemplate {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewInspectorAssessmentTemplate(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/inspector_assessment_template aws_inspector_assessment_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/inspector_assessment_template aws_inspector_assessment_template} Resource.
 func NewInspectorAssessmentTemplate_Override(i InspectorAssessmentTemplate, scope constructs.Construct, id *string, config *InspectorAssessmentTemplateConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/opsworks_java_app_layer aws_opsworks_java_app_layer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/opsworks_java_app_layer aws_opsworks_java_app_layer}.
 type OpsworksJavaAppLayer interface {
 	cdktf.TerraformResource
 	AppServer() *string
@@ -992,7 +992,7 @@ func (j *jsiiProxy_OpsworksJavaAppLayer) UseEbsOptimizedInstancesInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/opsworks_java_app_layer aws_opsworks_java_app_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/opsworks_java_app_layer aws_opsworks_java_app_layer} Resource.
 func NewOpsworksJavaAppLayer(scope constructs.Construct, id *string, config *OpsworksJavaAppLayerConfig) OpsworksJavaAppLayer {
 	_init_.Initialize()
 
@@ -1010,7 +1010,7 @@ func NewOpsworksJavaAppLayer(scope constructs.Construct, id *string, config *Ops
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/opsworks_java_app_layer aws_opsworks_java_app_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/opsworks_java_app_layer aws_opsworks_java_app_layer} Resource.
 func NewOpsworksJavaAppLayer_Override(o OpsworksJavaAppLayer, scope constructs.Construct, id *string, config *OpsworksJavaAppLayerConfig) {
 	_init_.Initialize()
 

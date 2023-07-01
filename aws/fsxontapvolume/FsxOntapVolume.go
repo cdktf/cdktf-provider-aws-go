@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume}.
 type FsxOntapVolume interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -639,7 +639,7 @@ func (j *jsiiProxy_FsxOntapVolume) VolumeTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource.
 func NewFsxOntapVolume(scope constructs.Construct, id *string, config *FsxOntapVolumeConfig) FsxOntapVolume {
 	_init_.Initialize()
 
@@ -657,7 +657,7 @@ func NewFsxOntapVolume(scope constructs.Construct, id *string, config *FsxOntapV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource.
 func NewFsxOntapVolume_Override(f FsxOntapVolume, scope constructs.Construct, id *string, config *FsxOntapVolumeConfig) {
 	_init_.Initialize()
 

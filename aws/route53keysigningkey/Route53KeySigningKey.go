@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/route53_key_signing_key aws_route53_key_signing_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/route53_key_signing_key aws_route53_key_signing_key}.
 type Route53KeySigningKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -489,7 +489,7 @@ func (j *jsiiProxy_Route53KeySigningKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/route53_key_signing_key aws_route53_key_signing_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/route53_key_signing_key aws_route53_key_signing_key} Resource.
 func NewRoute53KeySigningKey(scope constructs.Construct, id *string, config *Route53KeySigningKeyConfig) Route53KeySigningKey {
 	_init_.Initialize()
 
@@ -507,7 +507,7 @@ func NewRoute53KeySigningKey(scope constructs.Construct, id *string, config *Rou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/route53_key_signing_key aws_route53_key_signing_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/route53_key_signing_key aws_route53_key_signing_key} Resource.
 func NewRoute53KeySigningKey_Override(r Route53KeySigningKey, scope constructs.Construct, id *string, config *Route53KeySigningKeyConfig) {
 	_init_.Initialize()
 

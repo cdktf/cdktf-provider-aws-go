@@ -19,7 +19,7 @@ type SimpledbDomainConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/simpledb_domain#name SimpledbDomain#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/simpledb_domain#name SimpledbDomain#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

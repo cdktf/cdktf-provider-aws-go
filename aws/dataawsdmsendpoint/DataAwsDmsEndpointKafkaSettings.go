@@ -2,7 +2,7 @@ package dataawsdmsendpoint
 
 
 type DataAwsDmsEndpointKafkaSettings struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/dms_endpoint#broker DataAwsDmsEndpoint#broker}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/dms_endpoint#broker DataAwsDmsEndpoint#broker}.
 	Broker *string `field:"required" json:"broker" yaml:"broker"`
 }
 

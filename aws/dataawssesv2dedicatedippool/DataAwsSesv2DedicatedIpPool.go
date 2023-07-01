@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool}.
 type DataAwsSesv2DedicatedIpPool interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -338,7 +338,7 @@ func (j *jsiiProxy_DataAwsSesv2DedicatedIpPool) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool} Data Source.
 func NewDataAwsSesv2DedicatedIpPool(scope constructs.Construct, id *string, config *DataAwsSesv2DedicatedIpPoolConfig) DataAwsSesv2DedicatedIpPool {
 	_init_.Initialize()
 
@@ -356,7 +356,7 @@ func NewDataAwsSesv2DedicatedIpPool(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/sesv2_dedicated_ip_pool aws_sesv2_dedicated_ip_pool} Data Source.
 func NewDataAwsSesv2DedicatedIpPool_Override(d DataAwsSesv2DedicatedIpPool, scope constructs.Construct, id *string, config *DataAwsSesv2DedicatedIpPoolConfig) {
 	_init_.Initialize()
 

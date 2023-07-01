@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/codestarconnections_host aws_codestarconnections_host}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codestarconnections_host aws_codestarconnections_host}.
 type CodestarconnectionsHost interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -425,7 +425,7 @@ func (j *jsiiProxy_CodestarconnectionsHost) VpcConfigurationInput() *Codestarcon
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/codestarconnections_host aws_codestarconnections_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codestarconnections_host aws_codestarconnections_host} Resource.
 func NewCodestarconnectionsHost(scope constructs.Construct, id *string, config *CodestarconnectionsHostConfig) CodestarconnectionsHost {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewCodestarconnectionsHost(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/codestarconnections_host aws_codestarconnections_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/codestarconnections_host aws_codestarconnections_host} Resource.
 func NewCodestarconnectionsHost_Override(c CodestarconnectionsHost, scope constructs.Construct, id *string, config *CodestarconnectionsHostConfig) {
 	_init_.Initialize()
 

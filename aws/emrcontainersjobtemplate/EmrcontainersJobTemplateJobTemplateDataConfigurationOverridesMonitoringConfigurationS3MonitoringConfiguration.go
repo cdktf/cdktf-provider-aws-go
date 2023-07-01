@@ -2,7 +2,7 @@ package emrcontainersjobtemplate
 
 
 type EmrcontainersJobTemplateJobTemplateDataConfigurationOverridesMonitoringConfigurationS3MonitoringConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/emrcontainers_job_template#log_uri EmrcontainersJobTemplate#log_uri}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/emrcontainers_job_template#log_uri EmrcontainersJobTemplate#log_uri}.
 	LogUri *string `field:"required" json:"logUri" yaml:"logUri"`
 }
 

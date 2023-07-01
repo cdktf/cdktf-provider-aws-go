@@ -2,7 +2,7 @@ package servicecatalogorganizationsaccess
 
 
 type ServicecatalogOrganizationsAccessTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/servicecatalog_organizations_access#read ServicecatalogOrganizationsAccess#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/servicecatalog_organizations_access#read ServicecatalogOrganizationsAccess#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

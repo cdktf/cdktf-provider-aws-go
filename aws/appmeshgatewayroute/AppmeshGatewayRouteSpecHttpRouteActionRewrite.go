@@ -4,11 +4,11 @@ package appmeshgatewayroute
 type AppmeshGatewayRouteSpecHttpRouteActionRewrite struct {
 	// hostname block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/appmesh_gateway_route#hostname AppmeshGatewayRoute#hostname}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/appmesh_gateway_route#hostname AppmeshGatewayRoute#hostname}
 	Hostname *AppmeshGatewayRouteSpecHttpRouteActionRewriteHostname `field:"optional" json:"hostname" yaml:"hostname"`
 	// prefix block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/appmesh_gateway_route#prefix AppmeshGatewayRoute#prefix}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/appmesh_gateway_route#prefix AppmeshGatewayRoute#prefix}
 	Prefix *AppmeshGatewayRouteSpecHttpRouteActionRewritePrefix `field:"optional" json:"prefix" yaml:"prefix"`
 }
 

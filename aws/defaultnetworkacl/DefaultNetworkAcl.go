@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/default_network_acl aws_default_network_acl}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/default_network_acl aws_default_network_acl}.
 type DefaultNetworkAcl interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -462,7 +462,7 @@ func (j *jsiiProxy_DefaultNetworkAcl) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/default_network_acl aws_default_network_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/default_network_acl aws_default_network_acl} Resource.
 func NewDefaultNetworkAcl(scope constructs.Construct, id *string, config *DefaultNetworkAclConfig) DefaultNetworkAcl {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewDefaultNetworkAcl(scope constructs.Construct, id *string, config *Defaul
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/default_network_acl aws_default_network_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/default_network_acl aws_default_network_acl} Resource.
 func NewDefaultNetworkAcl_Override(d DefaultNetworkAcl, scope constructs.Construct, id *string, config *DefaultNetworkAclConfig) {
 	_init_.Initialize()
 

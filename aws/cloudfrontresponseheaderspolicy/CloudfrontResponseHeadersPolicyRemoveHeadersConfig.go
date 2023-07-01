@@ -4,7 +4,7 @@ package cloudfrontresponseheaderspolicy
 type CloudfrontResponseHeadersPolicyRemoveHeadersConfig struct {
 	// items block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/cloudfront_response_headers_policy#items CloudfrontResponseHeadersPolicy#items}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/cloudfront_response_headers_policy#items CloudfrontResponseHeadersPolicy#items}
 	Items interface{} `field:"optional" json:"items" yaml:"items"`
 }
 

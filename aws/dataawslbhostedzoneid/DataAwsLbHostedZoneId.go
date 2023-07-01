@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/lb_hosted_zone_id aws_lb_hosted_zone_id}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lb_hosted_zone_id aws_lb_hosted_zone_id}.
 type DataAwsLbHostedZoneId interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -306,7 +306,7 @@ func (j *jsiiProxy_DataAwsLbHostedZoneId) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/lb_hosted_zone_id aws_lb_hosted_zone_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lb_hosted_zone_id aws_lb_hosted_zone_id} Data Source.
 func NewDataAwsLbHostedZoneId(scope constructs.Construct, id *string, config *DataAwsLbHostedZoneIdConfig) DataAwsLbHostedZoneId {
 	_init_.Initialize()
 
@@ -324,7 +324,7 @@ func NewDataAwsLbHostedZoneId(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/data-sources/lb_hosted_zone_id aws_lb_hosted_zone_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/lb_hosted_zone_id aws_lb_hosted_zone_id} Data Source.
 func NewDataAwsLbHostedZoneId_Override(d DataAwsLbHostedZoneId, scope constructs.Construct, id *string, config *DataAwsLbHostedZoneIdConfig) {
 	_init_.Initialize()
 

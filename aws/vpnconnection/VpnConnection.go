@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/vpn_connection aws_vpn_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/vpn_connection aws_vpn_connection}.
 type VpnConnection interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -1791,7 +1791,7 @@ func (j *jsiiProxy_VpnConnection) VpnGatewayIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/vpn_connection aws_vpn_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/vpn_connection aws_vpn_connection} Resource.
 func NewVpnConnection(scope constructs.Construct, id *string, config *VpnConnectionConfig) VpnConnection {
 	_init_.Initialize()
 
@@ -1809,7 +1809,7 @@ func NewVpnConnection(scope constructs.Construct, id *string, config *VpnConnect
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.1/docs/resources/vpn_connection aws_vpn_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/vpn_connection aws_vpn_connection} Resource.
 func NewVpnConnection_Override(v VpnConnection, scope constructs.Construct, id *string, config *VpnConnectionConfig) {
 	_init_.Initialize()
 
