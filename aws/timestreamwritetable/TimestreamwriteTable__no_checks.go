@@ -60,6 +60,10 @@ func (t *jsiiProxy_TimestreamwriteTable) validatePutRetentionPropertiesParameter
 	return nil
 }
 
+func (t *jsiiProxy_TimestreamwriteTable) validatePutSchemaParameters(value *TimestreamwriteTableSchema) error {
+	return nil
+}
+
 func validateTimestreamwriteTable_IsConstructParameters(x interface{}) error {
 	return nil
 }

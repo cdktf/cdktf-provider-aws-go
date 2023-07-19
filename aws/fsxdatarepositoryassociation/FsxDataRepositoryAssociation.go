@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fsx_data_repository_association aws_fsx_data_repository_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fsx_data_repository_association aws_fsx_data_repository_association}.
 type FsxDataRepositoryAssociation interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -545,7 +545,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fsx_data_repository_association aws_fsx_data_repository_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fsx_data_repository_association aws_fsx_data_repository_association} Resource.
 func NewFsxDataRepositoryAssociation(scope constructs.Construct, id *string, config *FsxDataRepositoryAssociationConfig) FsxDataRepositoryAssociation {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewFsxDataRepositoryAssociation(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/fsx_data_repository_association aws_fsx_data_repository_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/fsx_data_repository_association aws_fsx_data_repository_association} Resource.
 func NewFsxDataRepositoryAssociation_Override(f FsxDataRepositoryAssociation, scope constructs.Construct, id *string, config *FsxDataRepositoryAssociationConfig) {
 	_init_.Initialize()
 

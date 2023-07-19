@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table aws_timestreamwrite_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/timestreamwrite_table aws_timestreamwrite_table}.
 type TimestreamwriteTable interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -63,6 +63,8 @@ type TimestreamwriteTable interface {
 	RawOverrides() interface{}
 	RetentionProperties() TimestreamwriteTableRetentionPropertiesOutputReference
 	RetentionPropertiesInput() *TimestreamwriteTableRetentionProperties
+	Schema() TimestreamwriteTableSchemaOutputReference
+	SchemaInput() *TimestreamwriteTableSchema
 	TableName() *string
 	SetTableName(val *string)
 	TableNameInput() *string
@@ -105,12 +107,14 @@ type TimestreamwriteTable interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMagneticStoreWriteProperties(value *TimestreamwriteTableMagneticStoreWriteProperties)
 	PutRetentionProperties(value *TimestreamwriteTableRetentionProperties)
+	PutSchema(value *TimestreamwriteTableSchema)
 	ResetId()
 	ResetMagneticStoreWriteProperties()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRetentionProperties()
+	ResetSchema()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -348,6 +352,26 @@ func (j *jsiiProxy_TimestreamwriteTable) RetentionPropertiesInput() *Timestreamw
 	return returns
 }
 
+func (j *jsiiProxy_TimestreamwriteTable) Schema() TimestreamwriteTableSchemaOutputReference {
+	var returns TimestreamwriteTableSchemaOutputReference
+	_jsii_.Get(
+		j,
+		"schema",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TimestreamwriteTable) SchemaInput() *TimestreamwriteTableSchema {
+	var returns *TimestreamwriteTableSchema
+	_jsii_.Get(
+		j,
+		"schemaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TimestreamwriteTable) TableName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -439,7 +463,7 @@ func (j *jsiiProxy_TimestreamwriteTable) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table aws_timestreamwrite_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/timestreamwrite_table aws_timestreamwrite_table} Resource.
 func NewTimestreamwriteTable(scope constructs.Construct, id *string, config *TimestreamwriteTableConfig) TimestreamwriteTable {
 	_init_.Initialize()
 
@@ -457,7 +481,7 @@ func NewTimestreamwriteTable(scope constructs.Construct, id *string, config *Tim
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/timestreamwrite_table aws_timestreamwrite_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/timestreamwrite_table aws_timestreamwrite_table} Resource.
 func NewTimestreamwriteTable_Override(t TimestreamwriteTable, scope constructs.Construct, id *string, config *TimestreamwriteTableConfig) {
 	_init_.Initialize()
 
@@ -879,6 +903,17 @@ func (t *jsiiProxy_TimestreamwriteTable) PutRetentionProperties(value *Timestrea
 	)
 }
 
+func (t *jsiiProxy_TimestreamwriteTable) PutSchema(value *TimestreamwriteTableSchema) {
+	if err := t.validatePutSchemaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putSchema",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TimestreamwriteTable) ResetId() {
 	_jsii_.InvokeVoid(
 		t,
@@ -907,6 +942,14 @@ func (t *jsiiProxy_TimestreamwriteTable) ResetRetentionProperties() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetRetentionProperties",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TimestreamwriteTable) ResetSchema() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetSchema",
 		nil, // no parameters
 	)
 }

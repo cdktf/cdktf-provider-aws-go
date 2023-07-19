@@ -4,11 +4,11 @@ package finspacekxcluster
 type FinspaceKxClusterDatabase struct {
 	// cache_configurations block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/finspace_kx_cluster#cache_configurations FinspaceKxCluster#cache_configurations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/finspace_kx_cluster#cache_configurations FinspaceKxCluster#cache_configurations}
 	CacheConfigurations interface{} `field:"required" json:"cacheConfigurations" yaml:"cacheConfigurations"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/finspace_kx_cluster#database_name FinspaceKxCluster#database_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/finspace_kx_cluster#database_name FinspaceKxCluster#database_name}.
 	DatabaseName *string `field:"required" json:"databaseName" yaml:"databaseName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/finspace_kx_cluster#changeset_id FinspaceKxCluster#changeset_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/finspace_kx_cluster#changeset_id FinspaceKxCluster#changeset_id}.
 	ChangesetId *string `field:"optional" json:"changesetId" yaml:"changesetId"`
 }
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iam_virtual_mfa_device aws_iam_virtual_mfa_device}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iam_virtual_mfa_device aws_iam_virtual_mfa_device}.
 type IamVirtualMfaDevice interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -30,6 +30,7 @@ type IamVirtualMfaDevice interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnableDate() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -73,6 +74,7 @@ type IamVirtualMfaDevice interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UserName() *string
 	VirtualMfaDeviceName() *string
 	SetVirtualMfaDeviceName(val *string)
 	VirtualMfaDeviceNameInput() *string
@@ -188,6 +190,16 @@ func (j *jsiiProxy_IamVirtualMfaDevice) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IamVirtualMfaDevice) EnableDate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enableDate",
 		&returns,
 	)
 	return returns
@@ -393,6 +405,16 @@ func (j *jsiiProxy_IamVirtualMfaDevice) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_IamVirtualMfaDevice) UserName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IamVirtualMfaDevice) VirtualMfaDeviceName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -414,7 +436,7 @@ func (j *jsiiProxy_IamVirtualMfaDevice) VirtualMfaDeviceNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iam_virtual_mfa_device aws_iam_virtual_mfa_device} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iam_virtual_mfa_device aws_iam_virtual_mfa_device} Resource.
 func NewIamVirtualMfaDevice(scope constructs.Construct, id *string, config *IamVirtualMfaDeviceConfig) IamVirtualMfaDevice {
 	_init_.Initialize()
 
@@ -432,7 +454,7 @@ func NewIamVirtualMfaDevice(scope constructs.Construct, id *string, config *IamV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/iam_virtual_mfa_device aws_iam_virtual_mfa_device} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/iam_virtual_mfa_device aws_iam_virtual_mfa_device} Resource.
 func NewIamVirtualMfaDevice_Override(i IamVirtualMfaDevice, scope constructs.Construct, id *string, config *IamVirtualMfaDeviceConfig) {
 	_init_.Initialize()
 

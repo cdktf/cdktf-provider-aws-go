@@ -56,6 +56,10 @@ func (k *jsiiProxy_KeyspacesTable) validatePutCapacitySpecificationParameters(va
 	return nil
 }
 
+func (k *jsiiProxy_KeyspacesTable) validatePutClientSideTimestampsParameters(value *KeyspacesTableClientSideTimestamps) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyspacesTable) validatePutCommentParameters(value *KeyspacesTableComment) error {
 	return nil
 }

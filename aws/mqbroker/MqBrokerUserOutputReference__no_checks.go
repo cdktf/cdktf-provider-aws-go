@@ -72,6 +72,10 @@ func (j *jsiiProxy_MqBrokerUserOutputReference) validateSetPasswordParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_MqBrokerUserOutputReference) validateSetReplicationUserParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_MqBrokerUserOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/workspaces_workspace aws_workspaces_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/workspaces_workspace aws_workspaces_workspace}.
 type DataAwsWorkspacesWorkspace interface {
 	cdktf.TerraformDataSource
 	BundleId() *string
@@ -442,7 +442,7 @@ func (j *jsiiProxy_DataAwsWorkspacesWorkspace) WorkspaceProperties() DataAwsWork
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/workspaces_workspace aws_workspaces_workspace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/workspaces_workspace aws_workspaces_workspace} Data Source.
 func NewDataAwsWorkspacesWorkspace(scope constructs.Construct, id *string, config *DataAwsWorkspacesWorkspaceConfig) DataAwsWorkspacesWorkspace {
 	_init_.Initialize()
 
@@ -460,7 +460,7 @@ func NewDataAwsWorkspacesWorkspace(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/workspaces_workspace aws_workspaces_workspace} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/workspaces_workspace aws_workspaces_workspace} Data Source.
 func NewDataAwsWorkspacesWorkspace_Override(d DataAwsWorkspacesWorkspace, scope constructs.Construct, id *string, config *DataAwsWorkspacesWorkspaceConfig) {
 	_init_.Initialize()
 

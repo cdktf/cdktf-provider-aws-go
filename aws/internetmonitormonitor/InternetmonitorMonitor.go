@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/internetmonitor_monitor aws_internetmonitor_monitor}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/internetmonitor_monitor aws_internetmonitor_monitor}.
 type InternetmonitorMonitor interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -37,6 +37,8 @@ type InternetmonitorMonitor interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HealthEventsConfig() InternetmonitorMonitorHealthEventsConfigOutputReference
+	HealthEventsConfigInput() *InternetmonitorMonitorHealthEventsConfig
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -110,7 +112,9 @@ type InternetmonitorMonitor interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutHealthEventsConfig(value *InternetmonitorMonitorHealthEventsConfig)
 	PutInternetMeasurementsLogDelivery(value *InternetmonitorMonitorInternetMeasurementsLogDelivery)
+	ResetHealthEventsConfig()
 	ResetId()
 	ResetInternetMeasurementsLogDelivery()
 	ResetMaxCityNetworksToMonitor()
@@ -222,6 +226,26 @@ func (j *jsiiProxy_InternetmonitorMonitor) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InternetmonitorMonitor) HealthEventsConfig() InternetmonitorMonitorHealthEventsConfigOutputReference {
+	var returns InternetmonitorMonitorHealthEventsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"healthEventsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InternetmonitorMonitor) HealthEventsConfigInput() *InternetmonitorMonitorHealthEventsConfig {
+	var returns *InternetmonitorMonitorHealthEventsConfig
+	_jsii_.Get(
+		j,
+		"healthEventsConfigInput",
 		&returns,
 	)
 	return returns
@@ -488,7 +512,7 @@ func (j *jsiiProxy_InternetmonitorMonitor) TrafficPercentageToMonitorInput() *fl
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/internetmonitor_monitor aws_internetmonitor_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/internetmonitor_monitor aws_internetmonitor_monitor} Resource.
 func NewInternetmonitorMonitor(scope constructs.Construct, id *string, config *InternetmonitorMonitorConfig) InternetmonitorMonitor {
 	_init_.Initialize()
 
@@ -506,7 +530,7 @@ func NewInternetmonitorMonitor(scope constructs.Construct, id *string, config *I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/internetmonitor_monitor aws_internetmonitor_monitor} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/internetmonitor_monitor aws_internetmonitor_monitor} Resource.
 func NewInternetmonitorMonitor_Override(i InternetmonitorMonitor, scope constructs.Construct, id *string, config *InternetmonitorMonitorConfig) {
 	_init_.Initialize()
 
@@ -939,6 +963,17 @@ func (i *jsiiProxy_InternetmonitorMonitor) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (i *jsiiProxy_InternetmonitorMonitor) PutHealthEventsConfig(value *InternetmonitorMonitorHealthEventsConfig) {
+	if err := i.validatePutHealthEventsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putHealthEventsConfig",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_InternetmonitorMonitor) PutInternetMeasurementsLogDelivery(value *InternetmonitorMonitorInternetMeasurementsLogDelivery) {
 	if err := i.validatePutInternetMeasurementsLogDeliveryParameters(value); err != nil {
 		panic(err)
@@ -947,6 +982,14 @@ func (i *jsiiProxy_InternetmonitorMonitor) PutInternetMeasurementsLogDelivery(va
 		i,
 		"putInternetMeasurementsLogDelivery",
 		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_InternetmonitorMonitor) ResetHealthEventsConfig() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetHealthEventsConfig",
+		nil, // no parameters
 	)
 }
 

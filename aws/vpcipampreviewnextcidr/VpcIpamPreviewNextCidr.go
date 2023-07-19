@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/vpc_ipam_preview_next_cidr aws_vpc_ipam_preview_next_cidr}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/vpc_ipam_preview_next_cidr aws_vpc_ipam_preview_next_cidr}.
 type VpcIpamPreviewNextCidr interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_VpcIpamPreviewNextCidr) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/vpc_ipam_preview_next_cidr aws_vpc_ipam_preview_next_cidr} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/vpc_ipam_preview_next_cidr aws_vpc_ipam_preview_next_cidr} Resource.
 func NewVpcIpamPreviewNextCidr(scope constructs.Construct, id *string, config *VpcIpamPreviewNextCidrConfig) VpcIpamPreviewNextCidr {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewVpcIpamPreviewNextCidr(scope constructs.Construct, id *string, config *V
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/vpc_ipam_preview_next_cidr aws_vpc_ipam_preview_next_cidr} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/vpc_ipam_preview_next_cidr aws_vpc_ipam_preview_next_cidr} Resource.
 func NewVpcIpamPreviewNextCidr_Override(v VpcIpamPreviewNextCidr, scope constructs.Construct, id *string, config *VpcIpamPreviewNextCidrConfig) {
 	_init_.Initialize()
 

@@ -44,6 +44,10 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) validateIn
 	return nil
 }
 
+func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) validatePutPolicyOptionParameters(value *FmsPolicySecurityServicePolicyDataPolicyOption) error {
+	return nil
+}
+
 func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -32,6 +32,8 @@ type FmsPolicySecurityServicePolicyDataOutputReference interface {
 	ManagedServiceData() *string
 	SetManagedServiceData(val *string)
 	ManagedServiceDataInput() *string
+	PolicyOption() FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference
+	PolicyOptionInput() *FmsPolicySecurityServicePolicyDataPolicyOption
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type FmsPolicySecurityServicePolicyDataOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPolicyOption(value *FmsPolicySecurityServicePolicyDataPolicyOption)
 	ResetManagedServiceData()
+	ResetPolicyOption()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) ManagedSer
 	_jsii_.Get(
 		j,
 		"managedServiceDataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) PolicyOption() FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference {
+	var returns FmsPolicySecurityServicePolicyDataPolicyOptionOutputReference
+	_jsii_.Get(
+		j,
+		"policyOption",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) PolicyOptionInput() *FmsPolicySecurityServicePolicyDataPolicyOption {
+	var returns *FmsPolicySecurityServicePolicyDataPolicyOption
+	_jsii_.Get(
+		j,
+		"policyOptionInput",
 		&returns,
 	)
 	return returns
@@ -484,10 +508,29 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) Interpolat
 	return returns
 }
 
+func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) PutPolicyOption(value *FmsPolicySecurityServicePolicyDataPolicyOption) {
+	if err := f.validatePutPolicyOptionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putPolicyOption",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) ResetManagedServiceData() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetManagedServiceData",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) ResetPolicyOption() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetPolicyOption",
 		nil, // no parameters
 	)
 }

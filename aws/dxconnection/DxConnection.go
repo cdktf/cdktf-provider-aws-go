@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/dx_connection aws_dx_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/dx_connection aws_dx_connection}.
 type DxConnection interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -598,7 +598,7 @@ func (j *jsiiProxy_DxConnection) VlanId() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/dx_connection aws_dx_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/dx_connection aws_dx_connection} Resource.
 func NewDxConnection(scope constructs.Construct, id *string, config *DxConnectionConfig) DxConnection {
 	_init_.Initialize()
 
@@ -616,7 +616,7 @@ func NewDxConnection(scope constructs.Construct, id *string, config *DxConnectio
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/dx_connection aws_dx_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/dx_connection aws_dx_connection} Resource.
 func NewDxConnection_Override(d DxConnection, scope constructs.Construct, id *string, config *DxConnectionConfig) {
 	_init_.Initialize()
 

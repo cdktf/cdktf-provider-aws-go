@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/appflow_connector_profile aws_appflow_connector_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/appflow_connector_profile aws_appflow_connector_profile}.
 type AppflowConnectorProfile interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -448,7 +448,7 @@ func (j *jsiiProxy_AppflowConnectorProfile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/appflow_connector_profile aws_appflow_connector_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/appflow_connector_profile aws_appflow_connector_profile} Resource.
 func NewAppflowConnectorProfile(scope constructs.Construct, id *string, config *AppflowConnectorProfileConfig) AppflowConnectorProfile {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewAppflowConnectorProfile(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/appflow_connector_profile aws_appflow_connector_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/appflow_connector_profile aws_appflow_connector_profile} Resource.
 func NewAppflowConnectorProfile_Override(a AppflowConnectorProfile, scope constructs.Construct, id *string, config *AppflowConnectorProfileConfig) {
 	_init_.Initialize()
 

@@ -56,6 +56,10 @@ func (q *jsiiProxy_QldbStream) validatePutKinesisConfigurationParameters(value *
 	return nil
 }
 
+func (q *jsiiProxy_QldbStream) validatePutTimeoutsParameters(value *QldbStreamTimeouts) error {
+	return nil
+}
+
 func validateQldbStream_IsConstructParameters(x interface{}) error {
 	return nil
 }

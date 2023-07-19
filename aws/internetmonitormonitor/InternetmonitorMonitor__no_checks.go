@@ -52,6 +52,10 @@ func (i *jsiiProxy_InternetmonitorMonitor) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (i *jsiiProxy_InternetmonitorMonitor) validatePutHealthEventsConfigParameters(value *InternetmonitorMonitorHealthEventsConfig) error {
+	return nil
+}
+
 func (i *jsiiProxy_InternetmonitorMonitor) validatePutInternetMeasurementsLogDeliveryParameters(value *InternetmonitorMonitorInternetMeasurementsLogDelivery) error {
 	return nil
 }

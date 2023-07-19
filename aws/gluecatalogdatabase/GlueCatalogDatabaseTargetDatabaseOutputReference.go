@@ -35,6 +35,9 @@ type GlueCatalogDatabaseTargetDatabaseOutputReference interface {
 	Fqn() *string
 	InternalValue() *GlueCatalogDatabaseTargetDatabase
 	SetInternalValue(val *GlueCatalogDatabaseTargetDatabase)
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type GlueCatalogDatabaseTargetDatabaseOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetRegion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -172,6 +176,26 @@ func (j *jsiiProxy_GlueCatalogDatabaseTargetDatabaseOutputReference) InternalVal
 	return returns
 }
 
+func (j *jsiiProxy_GlueCatalogDatabaseTargetDatabaseOutputReference) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCatalogDatabaseTargetDatabaseOutputReference) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GlueCatalogDatabaseTargetDatabaseOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -271,6 +295,17 @@ func (j *jsiiProxy_GlueCatalogDatabaseTargetDatabaseOutputReference)SetInternalV
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueCatalogDatabaseTargetDatabaseOutputReference)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -481,6 +516,14 @@ func (g *jsiiProxy_GlueCatalogDatabaseTargetDatabaseOutputReference) Interpolati
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GlueCatalogDatabaseTargetDatabaseOutputReference) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GlueCatalogDatabaseTargetDatabaseOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

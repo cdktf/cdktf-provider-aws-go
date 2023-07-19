@@ -38,6 +38,9 @@ type MqBrokerUserOutputReference interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	ReplicationUser() interface{}
+	SetReplicationUser(val interface{})
+	ReplicationUserInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -75,6 +78,7 @@ type MqBrokerUserOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetConsoleAccess()
 	ResetGroups()
+	ResetReplicationUser()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -195,6 +199,26 @@ func (j *jsiiProxy_MqBrokerUserOutputReference) PasswordInput() *string {
 	_jsii_.Get(
 		j,
 		"passwordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MqBrokerUserOutputReference) ReplicationUser() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"replicationUser",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MqBrokerUserOutputReference) ReplicationUserInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"replicationUserInput",
 		&returns,
 	)
 	return returns
@@ -330,6 +354,17 @@ func (j *jsiiProxy_MqBrokerUserOutputReference)SetPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MqBrokerUserOutputReference)SetReplicationUser(val interface{}) {
+	if err := j.validateSetReplicationUserParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replicationUser",
 		val,
 	)
 }
@@ -565,6 +600,14 @@ func (m *jsiiProxy_MqBrokerUserOutputReference) ResetGroups() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetGroups",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MqBrokerUserOutputReference) ResetReplicationUser() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetReplicationUser",
 		nil, // no parameters
 	)
 }

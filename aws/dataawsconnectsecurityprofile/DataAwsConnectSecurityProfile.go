@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/connect_security_profile aws_connect_security_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/connect_security_profile aws_connect_security_profile}.
 type DataAwsConnectSecurityProfile interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -397,7 +397,7 @@ func (j *jsiiProxy_DataAwsConnectSecurityProfile) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/connect_security_profile aws_connect_security_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/connect_security_profile aws_connect_security_profile} Data Source.
 func NewDataAwsConnectSecurityProfile(scope constructs.Construct, id *string, config *DataAwsConnectSecurityProfileConfig) DataAwsConnectSecurityProfile {
 	_init_.Initialize()
 
@@ -415,7 +415,7 @@ func NewDataAwsConnectSecurityProfile(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/connect_security_profile aws_connect_security_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/connect_security_profile aws_connect_security_profile} Data Source.
 func NewDataAwsConnectSecurityProfile_Override(d DataAwsConnectSecurityProfile, scope constructs.Construct, id *string, config *DataAwsConnectSecurityProfileConfig) {
 	_init_.Initialize()
 

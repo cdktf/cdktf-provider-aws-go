@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/qldb_stream aws_qldb_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/qldb_stream aws_qldb_stream}.
 type QldbStream interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -85,6 +85,8 @@ type QldbStream interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() QldbStreamTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -111,6 +113,7 @@ type QldbStream interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutKinesisConfiguration(value *QldbStreamKinesisConfiguration)
+	PutTimeouts(value *QldbStreamTimeouts)
 	ResetExclusiveEndTime()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -118,6 +121,7 @@ type QldbStream interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -483,8 +487,28 @@ func (j *jsiiProxy_QldbStream) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_QldbStream) Timeouts() QldbStreamTimeoutsOutputReference {
+	var returns QldbStreamTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/qldb_stream aws_qldb_stream} Resource.
+func (j *jsiiProxy_QldbStream) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/qldb_stream aws_qldb_stream} Resource.
 func NewQldbStream(scope constructs.Construct, id *string, config *QldbStreamConfig) QldbStream {
 	_init_.Initialize()
 
@@ -502,7 +526,7 @@ func NewQldbStream(scope constructs.Construct, id *string, config *QldbStreamCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/qldb_stream aws_qldb_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/qldb_stream aws_qldb_stream} Resource.
 func NewQldbStream_Override(q QldbStream, scope constructs.Construct, id *string, config *QldbStreamConfig) {
 	_init_.Initialize()
 
@@ -946,6 +970,17 @@ func (q *jsiiProxy_QldbStream) PutKinesisConfiguration(value *QldbStreamKinesisC
 	)
 }
 
+func (q *jsiiProxy_QldbStream) PutTimeouts(value *QldbStreamTimeouts) {
+	if err := q.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (q *jsiiProxy_QldbStream) ResetExclusiveEndTime() {
 	_jsii_.InvokeVoid(
 		q,
@@ -982,6 +1017,14 @@ func (q *jsiiProxy_QldbStream) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QldbStream) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

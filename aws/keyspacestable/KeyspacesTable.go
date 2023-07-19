@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/keyspaces_table aws_keyspaces_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/keyspaces_table aws_keyspaces_table}.
 type KeyspacesTable interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -17,6 +17,8 @@ type KeyspacesTable interface {
 	CapacitySpecificationInput() *KeyspacesTableCapacitySpecification
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClientSideTimestamps() KeyspacesTableClientSideTimestampsOutputReference
+	ClientSideTimestampsInput() *KeyspacesTableClientSideTimestamps
 	Comment() KeyspacesTableCommentOutputReference
 	CommentInput() *KeyspacesTableComment
 	// Experimental.
@@ -117,6 +119,7 @@ type KeyspacesTable interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCapacitySpecification(value *KeyspacesTableCapacitySpecification)
+	PutClientSideTimestamps(value *KeyspacesTableClientSideTimestamps)
 	PutComment(value *KeyspacesTableComment)
 	PutEncryptionSpecification(value *KeyspacesTableEncryptionSpecification)
 	PutPointInTimeRecovery(value *KeyspacesTablePointInTimeRecovery)
@@ -124,6 +127,7 @@ type KeyspacesTable interface {
 	PutTimeouts(value *KeyspacesTableTimeouts)
 	PutTtl(value *KeyspacesTableTtl)
 	ResetCapacitySpecification()
+	ResetClientSideTimestamps()
 	ResetComment()
 	ResetDefaultTimeToLive()
 	ResetEncryptionSpecification()
@@ -186,6 +190,26 @@ func (j *jsiiProxy_KeyspacesTable) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyspacesTable) ClientSideTimestamps() KeyspacesTableClientSideTimestampsOutputReference {
+	var returns KeyspacesTableClientSideTimestampsOutputReference
+	_jsii_.Get(
+		j,
+		"clientSideTimestamps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KeyspacesTable) ClientSideTimestampsInput() *KeyspacesTableClientSideTimestamps {
+	var returns *KeyspacesTableClientSideTimestamps
+	_jsii_.Get(
+		j,
+		"clientSideTimestampsInput",
 		&returns,
 	)
 	return returns
@@ -582,7 +606,7 @@ func (j *jsiiProxy_KeyspacesTable) TtlInput() *KeyspacesTableTtl {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/keyspaces_table aws_keyspaces_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/keyspaces_table aws_keyspaces_table} Resource.
 func NewKeyspacesTable(scope constructs.Construct, id *string, config *KeyspacesTableConfig) KeyspacesTable {
 	_init_.Initialize()
 
@@ -600,7 +624,7 @@ func NewKeyspacesTable(scope constructs.Construct, id *string, config *Keyspaces
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/keyspaces_table aws_keyspaces_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/keyspaces_table aws_keyspaces_table} Resource.
 func NewKeyspacesTable_Override(k KeyspacesTable, scope constructs.Construct, id *string, config *KeyspacesTableConfig) {
 	_init_.Initialize()
 
@@ -1022,6 +1046,17 @@ func (k *jsiiProxy_KeyspacesTable) PutCapacitySpecification(value *KeyspacesTabl
 	)
 }
 
+func (k *jsiiProxy_KeyspacesTable) PutClientSideTimestamps(value *KeyspacesTableClientSideTimestamps) {
+	if err := k.validatePutClientSideTimestampsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putClientSideTimestamps",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KeyspacesTable) PutComment(value *KeyspacesTableComment) {
 	if err := k.validatePutCommentParameters(value); err != nil {
 		panic(err)
@@ -1092,6 +1127,14 @@ func (k *jsiiProxy_KeyspacesTable) ResetCapacitySpecification() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetCapacitySpecification",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KeyspacesTable) ResetClientSideTimestamps() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetClientSideTimestamps",
 		nil, // no parameters
 	)
 }

@@ -122,6 +122,17 @@ func (q *jsiiProxy_QldbStream) validatePutKinesisConfigurationParameters(value *
 	return nil
 }
 
+func (q *jsiiProxy_QldbStream) validatePutTimeoutsParameters(value *QldbStreamTimeouts) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateQldbStream_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")

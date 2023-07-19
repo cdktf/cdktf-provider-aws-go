@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/waf_rate_based_rule aws_waf_rate_based_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/waf_rate_based_rule aws_waf_rate_based_rule}.
 type DataAwsWafRateBasedRule interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -281,7 +281,7 @@ func (j *jsiiProxy_DataAwsWafRateBasedRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/waf_rate_based_rule aws_waf_rate_based_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/waf_rate_based_rule aws_waf_rate_based_rule} Data Source.
 func NewDataAwsWafRateBasedRule(scope constructs.Construct, id *string, config *DataAwsWafRateBasedRuleConfig) DataAwsWafRateBasedRule {
 	_init_.Initialize()
 
@@ -299,7 +299,7 @@ func NewDataAwsWafRateBasedRule(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/data-sources/waf_rate_based_rule aws_waf_rate_based_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/waf_rate_based_rule aws_waf_rate_based_rule} Data Source.
 func NewDataAwsWafRateBasedRule_Override(d DataAwsWafRateBasedRule, scope constructs.Construct, id *string, config *DataAwsWafRateBasedRuleConfig) {
 	_init_.Initialize()
 

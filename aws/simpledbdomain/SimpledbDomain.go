@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/simpledb_domain aws_simpledb_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/simpledb_domain aws_simpledb_domain}.
 type SimpledbDomain interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -296,7 +296,7 @@ func (j *jsiiProxy_SimpledbDomain) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/simpledb_domain aws_simpledb_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/simpledb_domain aws_simpledb_domain} Resource.
 func NewSimpledbDomain(scope constructs.Construct, id *string, config *SimpledbDomainConfig) SimpledbDomain {
 	_init_.Initialize()
 
@@ -314,7 +314,7 @@ func NewSimpledbDomain(scope constructs.Construct, id *string, config *SimpledbD
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/simpledb_domain aws_simpledb_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/simpledb_domain aws_simpledb_domain} Resource.
 func NewSimpledbDomain_Override(s SimpledbDomain, scope constructs.Construct, id *string, config *SimpledbDomainConfig) {
 	_init_.Initialize()
 

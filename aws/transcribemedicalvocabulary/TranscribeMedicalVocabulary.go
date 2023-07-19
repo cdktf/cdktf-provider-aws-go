@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transcribe_medical_vocabulary aws_transcribe_medical_vocabulary}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/transcribe_medical_vocabulary aws_transcribe_medical_vocabulary}.
 type TranscribeMedicalVocabulary interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -449,7 +449,7 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary) VocabularyNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transcribe_medical_vocabulary aws_transcribe_medical_vocabulary} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/transcribe_medical_vocabulary aws_transcribe_medical_vocabulary} Resource.
 func NewTranscribeMedicalVocabulary(scope constructs.Construct, id *string, config *TranscribeMedicalVocabularyConfig) TranscribeMedicalVocabulary {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewTranscribeMedicalVocabulary(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.6.2/docs/resources/transcribe_medical_vocabulary aws_transcribe_medical_vocabulary} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/transcribe_medical_vocabulary aws_transcribe_medical_vocabulary} Resource.
 func NewTranscribeMedicalVocabulary_Override(t TranscribeMedicalVocabulary, scope constructs.Construct, id *string, config *TranscribeMedicalVocabularyConfig) {
 	_init_.Initialize()
 

@@ -16,6 +16,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "capacitySpecification", GoGetter: "CapacitySpecification"},
 			_jsii_.MemberProperty{JsiiProperty: "capacitySpecificationInput", GoGetter: "CapacitySpecificationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "clientSideTimestamps", GoGetter: "ClientSideTimestamps"},
+			_jsii_.MemberProperty{JsiiProperty: "clientSideTimestampsInput", GoGetter: "ClientSideTimestampsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "comment", GoGetter: "Comment"},
 			_jsii_.MemberProperty{JsiiProperty: "commentInput", GoGetter: "CommentInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
@@ -51,6 +53,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putCapacitySpecification", GoMethod: "PutCapacitySpecification"},
+			_jsii_.MemberMethod{JsiiMethod: "putClientSideTimestamps", GoMethod: "PutClientSideTimestamps"},
 			_jsii_.MemberMethod{JsiiMethod: "putComment", GoMethod: "PutComment"},
 			_jsii_.MemberMethod{JsiiMethod: "putEncryptionSpecification", GoMethod: "PutEncryptionSpecification"},
 			_jsii_.MemberMethod{JsiiMethod: "putPointInTimeRecovery", GoMethod: "PutPointInTimeRecovery"},
@@ -59,6 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTtl", GoMethod: "PutTtl"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCapacitySpecification", GoMethod: "ResetCapacitySpecification"},
+			_jsii_.MemberMethod{JsiiMethod: "resetClientSideTimestamps", GoMethod: "ResetClientSideTimestamps"},
 			_jsii_.MemberMethod{JsiiMethod: "resetComment", GoMethod: "ResetComment"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultTimeToLive", GoMethod: "ResetDefaultTimeToLive"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEncryptionSpecification", GoMethod: "ResetEncryptionSpecification"},
@@ -136,6 +140,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableClientSideTimestamps",
+		reflect.TypeOf((*KeyspacesTableClientSideTimestamps)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.keyspacesTable.KeyspacesTableClientSideTimestampsOutputReference",
+		reflect.TypeOf((*KeyspacesTableClientSideTimestampsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "status", GoGetter: "Status"},
+			_jsii_.MemberProperty{JsiiProperty: "statusInput", GoGetter: "StatusInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_KeyspacesTableClientSideTimestampsOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

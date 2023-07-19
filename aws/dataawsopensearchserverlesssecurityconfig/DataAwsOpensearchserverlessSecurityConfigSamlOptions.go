@@ -1,0 +1,6 @@
+package dataawsopensearchserverlesssecurityconfig
+
+
+type DataAwsOpensearchserverlessSecurityConfigSamlOptions struct {
+}
+
