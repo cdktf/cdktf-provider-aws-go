@@ -13,6 +13,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
+			_jsii_.MemberProperty{JsiiProperty: "assetId", GoGetter: "AssetId"},
+			_jsii_.MemberProperty{JsiiProperty: "assetIdInput", GoGetter: "AssetIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "autoPlacement", GoGetter: "AutoPlacement"},
 			_jsii_.MemberProperty{JsiiProperty: "autoPlacementInput", GoGetter: "AutoPlacementInput"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZone", GoGetter: "AvailabilityZone"},
@@ -52,6 +54,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAssetId", GoMethod: "ResetAssetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoPlacement", GoMethod: "ResetAutoPlacement"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHostRecovery", GoMethod: "ResetHostRecovery"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},

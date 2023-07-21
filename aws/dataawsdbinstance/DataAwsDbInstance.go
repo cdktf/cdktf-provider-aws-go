@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/db_instance aws_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/db_instance aws_db_instance}.
 type DataAwsDbInstance interface {
 	cdktf.TerraformDataSource
 	Address() *string
@@ -65,6 +65,7 @@ type DataAwsDbInstance interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MasterUsername() *string
 	MasterUserSecret() DataAwsDbInstanceMasterUserSecretList
+	MaxAllocatedStorage() *float64
 	MonitoringInterval() *float64
 	MonitoringRoleArn() *string
 	MultiAz() cdktf.IResolvable
@@ -493,6 +494,16 @@ func (j *jsiiProxy_DataAwsDbInstance) MasterUserSecret() DataAwsDbInstanceMaster
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsDbInstance) MaxAllocatedStorage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxAllocatedStorage",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsDbInstance) MonitoringInterval() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -734,7 +745,7 @@ func (j *jsiiProxy_DataAwsDbInstance) VpcSecurityGroups() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/db_instance aws_db_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/db_instance aws_db_instance} Data Source.
 func NewDataAwsDbInstance(scope constructs.Construct, id *string, config *DataAwsDbInstanceConfig) DataAwsDbInstance {
 	_init_.Initialize()
 
@@ -752,7 +763,7 @@ func NewDataAwsDbInstance(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/db_instance aws_db_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/db_instance aws_db_instance} Data Source.
 func NewDataAwsDbInstance_Override(d DataAwsDbInstance, scope constructs.Construct, id *string, config *DataAwsDbInstanceConfig) {
 	_init_.Initialize()
 

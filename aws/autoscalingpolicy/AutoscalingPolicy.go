@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/autoscaling_policy aws_autoscaling_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_policy aws_autoscaling_policy}.
 type AutoscalingPolicy interface {
 	cdktf.TerraformResource
 	AdjustmentType() *string
@@ -607,7 +607,7 @@ func (j *jsiiProxy_AutoscalingPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/autoscaling_policy aws_autoscaling_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_policy aws_autoscaling_policy} Resource.
 func NewAutoscalingPolicy(scope constructs.Construct, id *string, config *AutoscalingPolicyConfig) AutoscalingPolicy {
 	_init_.Initialize()
 
@@ -625,7 +625,7 @@ func NewAutoscalingPolicy(scope constructs.Construct, id *string, config *Autosc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/autoscaling_policy aws_autoscaling_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_policy aws_autoscaling_policy} Resource.
 func NewAutoscalingPolicy_Override(a AutoscalingPolicy, scope constructs.Construct, id *string, config *AutoscalingPolicyConfig) {
 	_init_.Initialize()
 

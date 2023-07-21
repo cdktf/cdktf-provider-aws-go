@@ -31,6 +31,7 @@ type DataAwsMqBrokerUserOutputReference interface {
 	Groups() *[]*string
 	InternalValue() *DataAwsMqBrokerUser
 	SetInternalValue(val *DataAwsMqBrokerUser)
+	ReplicationUser() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -144,6 +145,16 @@ func (j *jsiiProxy_DataAwsMqBrokerUserOutputReference) InternalValue() *DataAwsM
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsMqBrokerUserOutputReference) ReplicationUser() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"replicationUser",
 		&returns,
 	)
 	return returns

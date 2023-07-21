@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/nat_gateway aws_nat_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/nat_gateway aws_nat_gateway}.
 type DataAwsNatGateway interface {
 	cdktf.TerraformDataSource
 	AllocationId() *string
@@ -468,7 +468,7 @@ func (j *jsiiProxy_DataAwsNatGateway) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/nat_gateway aws_nat_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/nat_gateway aws_nat_gateway} Data Source.
 func NewDataAwsNatGateway(scope constructs.Construct, id *string, config *DataAwsNatGatewayConfig) DataAwsNatGateway {
 	_init_.Initialize()
 
@@ -486,7 +486,7 @@ func NewDataAwsNatGateway(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/data-sources/nat_gateway aws_nat_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/nat_gateway aws_nat_gateway} Data Source.
 func NewDataAwsNatGateway_Override(d DataAwsNatGateway, scope constructs.Construct, id *string, config *DataAwsNatGatewayConfig) {
 	_init_.Initialize()
 

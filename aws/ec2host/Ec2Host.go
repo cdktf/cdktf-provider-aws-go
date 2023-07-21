@@ -9,10 +9,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host aws_ec2_host}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host aws_ec2_host}.
 type Ec2Host interface {
 	cdktf.TerraformResource
 	Arn() *string
+	AssetId() *string
+	SetAssetId(val *string)
+	AssetIdInput() *string
 	AutoPlacement() *string
 	SetAutoPlacement(val *string)
 	AutoPlacementInput() *string
@@ -112,6 +115,7 @@ type Ec2Host interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAssetId()
 	ResetAutoPlacement()
 	ResetHostRecovery()
 	ResetId()
@@ -143,6 +147,26 @@ func (j *jsiiProxy_Ec2Host) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2Host) AssetId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"assetId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2Host) AssetIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"assetIdInput",
 		&returns,
 	)
 	return returns
@@ -499,7 +523,7 @@ func (j *jsiiProxy_Ec2Host) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host aws_ec2_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host aws_ec2_host} Resource.
 func NewEc2Host(scope constructs.Construct, id *string, config *Ec2HostConfig) Ec2Host {
 	_init_.Initialize()
 
@@ -517,7 +541,7 @@ func NewEc2Host(scope constructs.Construct, id *string, config *Ec2HostConfig) E
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_host aws_ec2_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host aws_ec2_host} Resource.
 func NewEc2Host_Override(e Ec2Host, scope constructs.Construct, id *string, config *Ec2HostConfig) {
 	_init_.Initialize()
 
@@ -525,6 +549,17 @@ func NewEc2Host_Override(e Ec2Host, scope constructs.Construct, id *string, conf
 		"@cdktf/provider-aws.ec2Host.Ec2Host",
 		[]interface{}{scope, id, config},
 		e,
+	)
+}
+
+func (j *jsiiProxy_Ec2Host)SetAssetId(val *string) {
+	if err := j.validateSetAssetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"assetId",
+		val,
 	)
 }
 
@@ -958,6 +993,14 @@ func (e *jsiiProxy_Ec2Host) OverrideLogicalId(newLogicalId *string) {
 		e,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (e *jsiiProxy_Ec2Host) ResetAssetId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetAssetId",
+		nil, // no parameters
 	)
 }
 

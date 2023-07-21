@@ -314,7 +314,7 @@ func (j *jsiiProxy_Wafv2WebAclAssociation) validateSetWebAclArnParameters(val *s
 	return nil
 }
 
-func validateNewWafv2WebAclAssociationParameters(scope constructs.Construct, id *string, config *Wafv2WebAclAssociationConfig) error {
+func validateNewWafv2WebAclAssociationParameters(scope constructs.Construct, id *string, config *Wafv2WebAclAssociationConfigA) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
 	}

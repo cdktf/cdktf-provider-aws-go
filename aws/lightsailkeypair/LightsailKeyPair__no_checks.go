@@ -100,6 +100,14 @@ func (j *jsiiProxy_LightsailKeyPair) validateSetPublicKeyParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_LightsailKeyPair) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_LightsailKeyPair) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewLightsailKeyPairParameters(scope constructs.Construct, id *string, config *LightsailKeyPairConfig) error {
 	return nil
 }

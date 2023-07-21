@@ -111,6 +111,17 @@ func (w *jsiiProxy_Wafv2WebAcl) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2WebAcl) validatePutAssociationConfigParameters(value *Wafv2WebAclAssociationConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2WebAcl) validatePutCaptchaConfigParameters(value *Wafv2WebAclCaptchaConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

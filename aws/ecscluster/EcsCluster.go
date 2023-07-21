@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ecs_cluster aws_ecs_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_cluster aws_ecs_cluster}.
 type EcsCluster interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -440,7 +440,7 @@ func (j *jsiiProxy_EcsCluster) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ecs_cluster aws_ecs_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_cluster aws_ecs_cluster} Resource.
 func NewEcsCluster(scope constructs.Construct, id *string, config *EcsClusterConfig) EcsCluster {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewEcsCluster(scope constructs.Construct, id *string, config *EcsClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ecs_cluster aws_ecs_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ecs_cluster aws_ecs_cluster} Resource.
 func NewEcsCluster_Override(e EcsCluster, scope constructs.Construct, id *string, config *EcsClusterConfig) {
 	_init_.Initialize()
 

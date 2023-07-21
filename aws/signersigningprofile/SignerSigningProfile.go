@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile aws_signer_signing_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile aws_signer_signing_profile}.
 type SignerSigningProfile interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -69,6 +69,8 @@ type SignerSigningProfile interface {
 	RevocationRecord() SignerSigningProfileRevocationRecordList
 	SignatureValidityPeriod() SignerSigningProfileSignatureValidityPeriodOutputReference
 	SignatureValidityPeriodInput() *SignerSigningProfileSignatureValidityPeriod
+	SigningMaterial() SignerSigningProfileSigningMaterialOutputReference
+	SigningMaterialInput() *SignerSigningProfileSigningMaterial
 	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -110,6 +112,7 @@ type SignerSigningProfile interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutSignatureValidityPeriod(value *SignerSigningProfileSignatureValidityPeriod)
+	PutSigningMaterial(value *SignerSigningProfileSigningMaterial)
 	ResetId()
 	ResetName()
 	ResetNamePrefix()
@@ -117,6 +120,7 @@ type SignerSigningProfile interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSignatureValidityPeriod()
+	ResetSigningMaterial()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -394,6 +398,26 @@ func (j *jsiiProxy_SignerSigningProfile) SignatureValidityPeriodInput() *SignerS
 	return returns
 }
 
+func (j *jsiiProxy_SignerSigningProfile) SigningMaterial() SignerSigningProfileSigningMaterialOutputReference {
+	var returns SignerSigningProfileSigningMaterialOutputReference
+	_jsii_.Get(
+		j,
+		"signingMaterial",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SignerSigningProfile) SigningMaterialInput() *SignerSigningProfileSigningMaterial {
+	var returns *SignerSigningProfileSigningMaterial
+	_jsii_.Get(
+		j,
+		"signingMaterialInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SignerSigningProfile) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -495,7 +519,7 @@ func (j *jsiiProxy_SignerSigningProfile) VersionArn() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile aws_signer_signing_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile aws_signer_signing_profile} Resource.
 func NewSignerSigningProfile(scope constructs.Construct, id *string, config *SignerSigningProfileConfig) SignerSigningProfile {
 	_init_.Initialize()
 
@@ -513,7 +537,7 @@ func NewSignerSigningProfile(scope constructs.Construct, id *string, config *Sig
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/signer_signing_profile aws_signer_signing_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/signer_signing_profile aws_signer_signing_profile} Resource.
 func NewSignerSigningProfile_Override(s SignerSigningProfile, scope constructs.Construct, id *string, config *SignerSigningProfileConfig) {
 	_init_.Initialize()
 
@@ -935,6 +959,17 @@ func (s *jsiiProxy_SignerSigningProfile) PutSignatureValidityPeriod(value *Signe
 	)
 }
 
+func (s *jsiiProxy_SignerSigningProfile) PutSigningMaterial(value *SignerSigningProfileSigningMaterial) {
+	if err := s.validatePutSigningMaterialParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putSigningMaterial",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SignerSigningProfile) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -971,6 +1006,14 @@ func (s *jsiiProxy_SignerSigningProfile) ResetSignatureValidityPeriod() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSignatureValidityPeriod",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SignerSigningProfile) ResetSigningMaterial() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSigningMaterial",
 		nil, // no parameters
 	)
 }

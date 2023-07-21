@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment}.
 type NetworkInterfaceSgAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_NetworkInterfaceSgAttachment) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment} Resource.
 func NewNetworkInterfaceSgAttachment(scope constructs.Construct, id *string, config *NetworkInterfaceSgAttachmentConfig) NetworkInterfaceSgAttachment {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewNetworkInterfaceSgAttachment(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment} Resource.
 func NewNetworkInterfaceSgAttachment_Override(n NetworkInterfaceSgAttachment, scope constructs.Construct, id *string, config *NetworkInterfaceSgAttachmentConfig) {
 	_init_.Initialize()
 

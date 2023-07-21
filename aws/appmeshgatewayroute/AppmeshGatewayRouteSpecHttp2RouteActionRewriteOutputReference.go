@@ -31,6 +31,8 @@ type AppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference interface {
 	HostnameInput() *AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostname
 	InternalValue() *AppmeshGatewayRouteSpecHttp2RouteActionRewrite
 	SetInternalValue(val *AppmeshGatewayRouteSpecHttp2RouteActionRewrite)
+	Path() AppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference
+	PathInput() *AppmeshGatewayRouteSpecHttp2RouteActionRewritePath
 	Prefix() AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixOutputReference
 	PrefixInput() *AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix
 	// Experimental.
@@ -66,8 +68,10 @@ type AppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutHostname(value *AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostname)
+	PutPath(value *AppmeshGatewayRouteSpecHttp2RouteActionRewritePath)
 	PutPrefix(value *AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix)
 	ResetHostname()
+	ResetPath()
 	ResetPrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference) Path() AppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference {
+	var returns AppmeshGatewayRouteSpecHttp2RouteActionRewritePathOutputReference
+	_jsii_.Get(
+		j,
+		"path",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference) PathInput() *AppmeshGatewayRouteSpecHttp2RouteActionRewritePath {
+	var returns *AppmeshGatewayRouteSpecHttp2RouteActionRewritePath
+	_jsii_.Get(
+		j,
+		"pathInput",
 		&returns,
 	)
 	return returns
@@ -474,6 +498,17 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference
 	)
 }
 
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference) PutPath(value *AppmeshGatewayRouteSpecHttp2RouteActionRewritePath) {
+	if err := a.validatePutPathParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putPath",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference) PutPrefix(value *AppmeshGatewayRouteSpecHttp2RouteActionRewritePrefix) {
 	if err := a.validatePutPrefixParameters(value); err != nil {
 		panic(err)
@@ -489,6 +524,14 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference
 	_jsii_.InvokeVoid(
 		a,
 		"resetHostname",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference) ResetPath() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPath",
 		nil, // no parameters
 	)
 }

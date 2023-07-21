@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_key_pair aws_lightsail_key_pair}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_key_pair aws_lightsail_key_pair}.
 type LightsailKeyPair interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -72,6 +72,12 @@ type LightsailKeyPair interface {
 	PublicKeyInput() *string
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -111,6 +117,8 @@ type LightsailKeyPair interface {
 	ResetOverrideLogicalId()
 	ResetPgpKey()
 	ResetPublicKey()
+	ResetTags()
+	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -406,6 +414,46 @@ func (j *jsiiProxy_LightsailKeyPair) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LightsailKeyPair) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LightsailKeyPair) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LightsailKeyPair) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LightsailKeyPair) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LightsailKeyPair) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -437,7 +485,7 @@ func (j *jsiiProxy_LightsailKeyPair) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_key_pair aws_lightsail_key_pair} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_key_pair aws_lightsail_key_pair} Resource.
 func NewLightsailKeyPair(scope constructs.Construct, id *string, config *LightsailKeyPairConfig) LightsailKeyPair {
 	_init_.Initialize()
 
@@ -455,7 +503,7 @@ func NewLightsailKeyPair(scope constructs.Construct, id *string, config *Lightsa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lightsail_key_pair aws_lightsail_key_pair} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_key_pair aws_lightsail_key_pair} Resource.
 func NewLightsailKeyPair_Override(l LightsailKeyPair, scope constructs.Construct, id *string, config *LightsailKeyPairConfig) {
 	_init_.Initialize()
 
@@ -585,6 +633,28 @@ func (j *jsiiProxy_LightsailKeyPair)SetPublicKey(val *string) {
 	_jsii_.Set(
 		j,
 		"publicKey",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LightsailKeyPair)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LightsailKeyPair)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -899,6 +969,22 @@ func (l *jsiiProxy_LightsailKeyPair) ResetPublicKey() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetPublicKey",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LightsailKeyPair) ResetTags() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LightsailKeyPair) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }

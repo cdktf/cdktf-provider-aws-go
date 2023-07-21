@@ -48,6 +48,10 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference)
 	return nil
 }
 
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference) validatePutPathParameters(value *AppmeshGatewayRouteSpecHttpRouteActionRewritePath) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteActionRewriteOutputReference) validatePutPrefixParameters(value *AppmeshGatewayRouteSpecHttpRouteActionRewritePrefix) error {
 	return nil
 }

@@ -2,7 +2,7 @@ package medialiveinput
 
 
 type MedialiveInputDestinations struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/medialive_input#stream_name MedialiveInput#stream_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/medialive_input#stream_name MedialiveInput#stream_name}.
 	StreamName *string `field:"required" json:"streamName" yaml:"streamName"`
 }
 

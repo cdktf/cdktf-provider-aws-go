@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/elb aws_elb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elb aws_elb}.
 type Elb interface {
 	cdktf.TerraformResource
 	AccessLogs() ElbAccessLogsOutputReference
@@ -785,7 +785,7 @@ func (j *jsiiProxy_Elb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/elb aws_elb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elb aws_elb} Resource.
 func NewElb(scope constructs.Construct, id *string, config *ElbConfig) Elb {
 	_init_.Initialize()
 
@@ -803,7 +803,7 @@ func NewElb(scope constructs.Construct, id *string, config *ElbConfig) Elb {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/elb aws_elb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/elb aws_elb} Resource.
 func NewElb_Override(e Elb, scope constructs.Construct, id *string, config *ElbConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/codestarnotifications_notification_rule aws_codestarnotifications_notification_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codestarnotifications_notification_rule aws_codestarnotifications_notification_rule}.
 type CodestarnotificationsNotificationRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -485,7 +485,7 @@ func (j *jsiiProxy_CodestarnotificationsNotificationRule) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/codestarnotifications_notification_rule aws_codestarnotifications_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codestarnotifications_notification_rule aws_codestarnotifications_notification_rule} Resource.
 func NewCodestarnotificationsNotificationRule(scope constructs.Construct, id *string, config *CodestarnotificationsNotificationRuleConfig) CodestarnotificationsNotificationRule {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewCodestarnotificationsNotificationRule(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/codestarnotifications_notification_rule aws_codestarnotifications_notification_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/codestarnotifications_notification_rule aws_codestarnotifications_notification_rule} Resource.
 func NewCodestarnotificationsNotificationRule_Override(c CodestarnotificationsNotificationRule, scope constructs.Construct, id *string, config *CodestarnotificationsNotificationRuleConfig) {
 	_init_.Initialize()
 

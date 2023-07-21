@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/wafv2_web_acl_association aws_wafv2_web_acl_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_association aws_wafv2_web_acl_association}.
 type Wafv2WebAclAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,8 +356,8 @@ func (j *jsiiProxy_Wafv2WebAclAssociation) WebAclArnInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/wafv2_web_acl_association aws_wafv2_web_acl_association} Resource.
-func NewWafv2WebAclAssociation(scope constructs.Construct, id *string, config *Wafv2WebAclAssociationConfig) Wafv2WebAclAssociation {
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_association aws_wafv2_web_acl_association} Resource.
+func NewWafv2WebAclAssociation(scope constructs.Construct, id *string, config *Wafv2WebAclAssociationConfigA) Wafv2WebAclAssociation {
 	_init_.Initialize()
 
 	if err := validateNewWafv2WebAclAssociationParameters(scope, id, config); err != nil {
@@ -374,8 +374,8 @@ func NewWafv2WebAclAssociation(scope constructs.Construct, id *string, config *W
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/wafv2_web_acl_association aws_wafv2_web_acl_association} Resource.
-func NewWafv2WebAclAssociation_Override(w Wafv2WebAclAssociation, scope constructs.Construct, id *string, config *Wafv2WebAclAssociationConfig) {
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/wafv2_web_acl_association aws_wafv2_web_acl_association} Resource.
+func NewWafv2WebAclAssociation_Override(w Wafv2WebAclAssociation, scope constructs.Construct, id *string, config *Wafv2WebAclAssociationConfigA) {
 	_init_.Initialize()
 
 	_jsii_.Create(

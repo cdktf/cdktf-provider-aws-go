@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_transit_gateway_multicast_domain_association aws_ec2_transit_gateway_multicast_domain_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_transit_gateway_multicast_domain_association aws_ec2_transit_gateway_multicast_domain_association}.
 type Ec2TransitGatewayMulticastDomainAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation) TransitGatewayMu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_transit_gateway_multicast_domain_association aws_ec2_transit_gateway_multicast_domain_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_transit_gateway_multicast_domain_association aws_ec2_transit_gateway_multicast_domain_association} Resource.
 func NewEc2TransitGatewayMulticastDomainAssociation(scope constructs.Construct, id *string, config *Ec2TransitGatewayMulticastDomainAssociationConfig) Ec2TransitGatewayMulticastDomainAssociation {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewEc2TransitGatewayMulticastDomainAssociation(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/ec2_transit_gateway_multicast_domain_association aws_ec2_transit_gateway_multicast_domain_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_transit_gateway_multicast_domain_association aws_ec2_transit_gateway_multicast_domain_association} Resource.
 func NewEc2TransitGatewayMulticastDomainAssociation_Override(e Ec2TransitGatewayMulticastDomainAssociation, scope constructs.Construct, id *string, config *Ec2TransitGatewayMulticastDomainAssociationConfig) {
 	_init_.Initialize()
 

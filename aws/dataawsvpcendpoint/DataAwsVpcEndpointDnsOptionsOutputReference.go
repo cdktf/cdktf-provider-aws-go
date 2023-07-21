@@ -30,6 +30,7 @@ type DataAwsVpcEndpointDnsOptionsOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataAwsVpcEndpointDnsOptions
 	SetInternalValue(val *DataAwsVpcEndpointDnsOptions)
+	PrivateDnsOnlyForInboundResolverEndpoint() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -132,6 +133,16 @@ func (j *jsiiProxy_DataAwsVpcEndpointDnsOptionsOutputReference) InternalValue() 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsVpcEndpointDnsOptionsOutputReference) PrivateDnsOnlyForInboundResolverEndpoint() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"privateDnsOnlyForInboundResolverEndpoint",
 		&returns,
 	)
 	return returns

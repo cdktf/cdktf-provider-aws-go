@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/db_instance aws_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/db_instance aws_db_instance}.
 type DbInstance interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -32,6 +32,9 @@ type DbInstance interface {
 	BackupRetentionPeriod() *float64
 	SetBackupRetentionPeriod(val *float64)
 	BackupRetentionPeriodInput() *float64
+	BackupTarget() *string
+	SetBackupTarget(val *string)
+	BackupTargetInput() *string
 	BackupWindow() *string
 	SetBackupWindow(val *string)
 	BackupWindowInput() *string
@@ -289,6 +292,7 @@ type DbInstance interface {
 	ResetAutoMinorVersionUpgrade()
 	ResetAvailabilityZone()
 	ResetBackupRetentionPeriod()
+	ResetBackupTarget()
 	ResetBackupWindow()
 	ResetBlueGreenUpdate()
 	ResetCaCertIdentifier()
@@ -498,6 +502,26 @@ func (j *jsiiProxy_DbInstance) BackupRetentionPeriodInput() *float64 {
 	_jsii_.Get(
 		j,
 		"backupRetentionPeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) BackupTarget() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) BackupTargetInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupTargetInput",
 		&returns,
 	)
 	return returns
@@ -1894,7 +1918,7 @@ func (j *jsiiProxy_DbInstance) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/db_instance aws_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/db_instance aws_db_instance} Resource.
 func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceConfig) DbInstance {
 	_init_.Initialize()
 
@@ -1912,7 +1936,7 @@ func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/db_instance aws_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/db_instance aws_db_instance} Resource.
 func NewDbInstance_Override(d DbInstance, scope constructs.Construct, id *string, config *DbInstanceConfig) {
 	_init_.Initialize()
 
@@ -1985,6 +2009,17 @@ func (j *jsiiProxy_DbInstance)SetBackupRetentionPeriod(val *float64) {
 	_jsii_.Set(
 		j,
 		"backupRetentionPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DbInstance)SetBackupTarget(val *string) {
+	if err := j.validateSetBackupTargetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"backupTarget",
 		val,
 	)
 }
@@ -2994,6 +3029,14 @@ func (d *jsiiProxy_DbInstance) ResetBackupRetentionPeriod() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetBackupRetentionPeriod",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbInstance) ResetBackupTarget() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetBackupTarget",
 		nil, // no parameters
 	)
 }

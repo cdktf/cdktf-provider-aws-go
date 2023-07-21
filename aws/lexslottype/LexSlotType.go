@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lex_slot_type aws_lex_slot_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_slot_type aws_lex_slot_type}.
 type LexSlotType interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -472,7 +472,7 @@ func (j *jsiiProxy_LexSlotType) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lex_slot_type aws_lex_slot_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_slot_type aws_lex_slot_type} Resource.
 func NewLexSlotType(scope constructs.Construct, id *string, config *LexSlotTypeConfig) LexSlotType {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewLexSlotType(scope constructs.Construct, id *string, config *LexSlotTypeC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/lex_slot_type aws_lex_slot_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lex_slot_type aws_lex_slot_type} Resource.
 func NewLexSlotType_Override(l LexSlotType, scope constructs.Construct, id *string, config *LexSlotTypeConfig) {
 	_init_.Initialize()
 

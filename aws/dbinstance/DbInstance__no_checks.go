@@ -104,6 +104,10 @@ func (j *jsiiProxy_DbInstance) validateSetBackupRetentionPeriodParameters(val *f
 	return nil
 }
 
+func (j *jsiiProxy_DbInstance) validateSetBackupTargetParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbInstance) validateSetBackupWindowParameters(val *string) error {
 	return nil
 }

@@ -57,6 +57,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "masterUsername", GoGetter: "MasterUsername"},
 			_jsii_.MemberProperty{JsiiProperty: "masterUserSecret", GoGetter: "MasterUserSecret"},
+			_jsii_.MemberProperty{JsiiProperty: "maxAllocatedStorage", GoGetter: "MaxAllocatedStorage"},
 			_jsii_.MemberProperty{JsiiProperty: "monitoringInterval", GoGetter: "MonitoringInterval"},
 			_jsii_.MemberProperty{JsiiProperty: "monitoringRoleArn", GoGetter: "MonitoringRoleArn"},
 			_jsii_.MemberProperty{JsiiProperty: "multiAz", GoGetter: "MultiAz"},

@@ -63,8 +63,8 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociationConfig",
-		reflect.TypeOf((*Wafv2WebAclAssociationConfig)(nil)).Elem(),
+		"@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociationConfigA",
+		reflect.TypeOf((*Wafv2WebAclAssociationConfigA)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.wafv2WebAclAssociation.Wafv2WebAclAssociationTimeouts",

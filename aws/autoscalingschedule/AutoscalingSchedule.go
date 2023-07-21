@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/autoscaling_schedule aws_autoscaling_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_schedule aws_autoscaling_schedule}.
 type AutoscalingSchedule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -511,7 +511,7 @@ func (j *jsiiProxy_AutoscalingSchedule) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/autoscaling_schedule aws_autoscaling_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_schedule aws_autoscaling_schedule} Resource.
 func NewAutoscalingSchedule(scope constructs.Construct, id *string, config *AutoscalingScheduleConfig) AutoscalingSchedule {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewAutoscalingSchedule(scope constructs.Construct, id *string, config *Auto
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.8.0/docs/resources/autoscaling_schedule aws_autoscaling_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/autoscaling_schedule aws_autoscaling_schedule} Resource.
 func NewAutoscalingSchedule_Override(a AutoscalingSchedule, scope constructs.Construct, id *string, config *AutoscalingScheduleConfig) {
 	_init_.Initialize()
 

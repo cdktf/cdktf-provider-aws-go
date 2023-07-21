@@ -30,6 +30,7 @@ type DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference interf
 	Hostname() DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameList
 	InternalValue() *DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewrite
 	SetInternalValue(val *DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewrite)
+	Path() DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList
 	Prefix() DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePrefixList
 	// Experimental.
 	TerraformAttribute() *string
@@ -133,6 +134,16 @@ func (j *jsiiProxy_DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputRe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewriteOutputReference) Path() DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList {
+	var returns DataAwsAppmeshGatewayRouteSpecHttp2RouteActionRewritePathList
+	_jsii_.Get(
+		j,
+		"path",
 		&returns,
 	)
 	return returns

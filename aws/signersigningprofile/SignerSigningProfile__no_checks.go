@@ -56,6 +56,10 @@ func (s *jsiiProxy_SignerSigningProfile) validatePutSignatureValidityPeriodParam
 	return nil
 }
 
+func (s *jsiiProxy_SignerSigningProfile) validatePutSigningMaterialParameters(value *SignerSigningProfileSigningMaterial) error {
+	return nil
+}
+
 func validateSignerSigningProfile_IsConstructParameters(x interface{}) error {
 	return nil
 }
