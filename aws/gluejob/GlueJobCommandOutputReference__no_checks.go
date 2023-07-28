@@ -68,6 +68,10 @@ func (j *jsiiProxy_GlueJobCommandOutputReference) validateSetPythonVersionParame
 	return nil
 }
 
+func (j *jsiiProxy_GlueJobCommandOutputReference) validateSetRuntimeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueJobCommandOutputReference) validateSetScriptLocationParameters(val *string) error {
 	return nil
 }

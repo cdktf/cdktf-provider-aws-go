@@ -52,6 +52,22 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) validatePutAv
 	return nil
 }
 
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) validatePutCaptionDescriptionsParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) validatePutGlobalConfigurationParameters(value *MedialiveChannelEncoderSettingsGlobalConfiguration) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) validatePutMotionGraphicsConfigurationParameters(value *MedialiveChannelEncoderSettingsMotionGraphicsConfiguration) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) validatePutNielsenConfigurationParameters(value *MedialiveChannelEncoderSettingsNielsenConfiguration) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) validatePutOutputGroupsParameters(value interface{}) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/nat_gateway aws_nat_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/nat_gateway aws_nat_gateway}.
 type NatGateway interface {
 	cdktf.TerraformResource
 	AllocationId() *string
@@ -67,6 +67,15 @@ type NatGateway interface {
 	PublicIp() *string
 	// Experimental.
 	RawOverrides() interface{}
+	SecondaryAllocationIds() *[]*string
+	SetSecondaryAllocationIds(val *[]*string)
+	SecondaryAllocationIdsInput() *[]*string
+	SecondaryPrivateIpAddressCount() *float64
+	SetSecondaryPrivateIpAddressCount(val *float64)
+	SecondaryPrivateIpAddressCountInput() *float64
+	SecondaryPrivateIpAddresses() *[]*string
+	SetSecondaryPrivateIpAddresses(val *[]*string)
+	SecondaryPrivateIpAddressesInput() *[]*string
 	SubnetId() *string
 	SetSubnetId(val *string)
 	SubnetIdInput() *string
@@ -82,6 +91,8 @@ type NatGateway interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() NatGatewayTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -107,6 +118,7 @@ type NatGateway interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *NatGatewayTimeouts)
 	ResetAllocationId()
 	ResetConnectivityType()
 	ResetId()
@@ -114,8 +126,12 @@ type NatGateway interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrivateIp()
+	ResetSecondaryAllocationIds()
+	ResetSecondaryPrivateIpAddressCount()
+	ResetSecondaryPrivateIpAddresses()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -371,6 +387,66 @@ func (j *jsiiProxy_NatGateway) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NatGateway) SecondaryAllocationIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"secondaryAllocationIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NatGateway) SecondaryAllocationIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"secondaryAllocationIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NatGateway) SecondaryPrivateIpAddressCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"secondaryPrivateIpAddressCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NatGateway) SecondaryPrivateIpAddressCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"secondaryPrivateIpAddressCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NatGateway) SecondaryPrivateIpAddresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"secondaryPrivateIpAddresses",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NatGateway) SecondaryPrivateIpAddressesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"secondaryPrivateIpAddressesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NatGateway) SubnetId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -461,8 +537,28 @@ func (j *jsiiProxy_NatGateway) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NatGateway) Timeouts() NatGatewayTimeoutsOutputReference {
+	var returns NatGatewayTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/nat_gateway aws_nat_gateway} Resource.
+func (j *jsiiProxy_NatGateway) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/nat_gateway aws_nat_gateway} Resource.
 func NewNatGateway(scope constructs.Construct, id *string, config *NatGatewayConfig) NatGateway {
 	_init_.Initialize()
 
@@ -480,7 +576,7 @@ func NewNatGateway(scope constructs.Construct, id *string, config *NatGatewayCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/nat_gateway aws_nat_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/nat_gateway aws_nat_gateway} Resource.
 func NewNatGateway_Override(n NatGateway, scope constructs.Construct, id *string, config *NatGatewayConfig) {
 	_init_.Initialize()
 
@@ -599,6 +695,39 @@ func (j *jsiiProxy_NatGateway)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NatGateway)SetSecondaryAllocationIds(val *[]*string) {
+	if err := j.validateSetSecondaryAllocationIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secondaryAllocationIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NatGateway)SetSecondaryPrivateIpAddressCount(val *float64) {
+	if err := j.validateSetSecondaryPrivateIpAddressCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secondaryPrivateIpAddressCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NatGateway)SetSecondaryPrivateIpAddresses(val *[]*string) {
+	if err := j.validateSetSecondaryPrivateIpAddressesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secondaryPrivateIpAddresses",
 		val,
 	)
 }
@@ -902,6 +1031,17 @@ func (n *jsiiProxy_NatGateway) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (n *jsiiProxy_NatGateway) PutTimeouts(value *NatGatewayTimeouts) {
+	if err := n.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NatGateway) ResetAllocationId() {
 	_jsii_.InvokeVoid(
 		n,
@@ -942,6 +1082,30 @@ func (n *jsiiProxy_NatGateway) ResetPrivateIp() {
 	)
 }
 
+func (n *jsiiProxy_NatGateway) ResetSecondaryAllocationIds() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSecondaryAllocationIds",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NatGateway) ResetSecondaryPrivateIpAddressCount() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSecondaryPrivateIpAddressCount",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NatGateway) ResetSecondaryPrivateIpAddresses() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSecondaryPrivateIpAddresses",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NatGateway) ResetTags() {
 	_jsii_.InvokeVoid(
 		n,
@@ -954,6 +1118,14 @@ func (n *jsiiProxy_NatGateway) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NatGateway) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

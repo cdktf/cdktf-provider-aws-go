@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/servicecatalog_portfolio_constraints aws_servicecatalog_portfolio_constraints}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/servicecatalog_portfolio_constraints aws_servicecatalog_portfolio_constraints}.
 type DataAwsServicecatalogPortfolioConstraints interface {
 	cdktf.TerraformDataSource
 	AcceptLanguage() *string
@@ -364,7 +364,7 @@ func (j *jsiiProxy_DataAwsServicecatalogPortfolioConstraints) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/servicecatalog_portfolio_constraints aws_servicecatalog_portfolio_constraints} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/servicecatalog_portfolio_constraints aws_servicecatalog_portfolio_constraints} Data Source.
 func NewDataAwsServicecatalogPortfolioConstraints(scope constructs.Construct, id *string, config *DataAwsServicecatalogPortfolioConstraintsConfig) DataAwsServicecatalogPortfolioConstraints {
 	_init_.Initialize()
 
@@ -382,7 +382,7 @@ func NewDataAwsServicecatalogPortfolioConstraints(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/servicecatalog_portfolio_constraints aws_servicecatalog_portfolio_constraints} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/servicecatalog_portfolio_constraints aws_servicecatalog_portfolio_constraints} Data Source.
 func NewDataAwsServicecatalogPortfolioConstraints_Override(d DataAwsServicecatalogPortfolioConstraints, scope constructs.Construct, id *string, config *DataAwsServicecatalogPortfolioConstraintsConfig) {
 	_init_.Initialize()
 

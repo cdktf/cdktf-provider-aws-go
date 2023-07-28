@@ -14,6 +14,8 @@ type MedialiveChannelEncoderSettingsOutputReference interface {
 	AudioDescriptionsInput() interface{}
 	AvailBlanking() MedialiveChannelEncoderSettingsAvailBlankingOutputReference
 	AvailBlankingInput() *MedialiveChannelEncoderSettingsAvailBlanking
+	CaptionDescriptions() MedialiveChannelEncoderSettingsCaptionDescriptionsList
+	CaptionDescriptionsInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,8 +33,14 @@ type MedialiveChannelEncoderSettingsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GlobalConfiguration() MedialiveChannelEncoderSettingsGlobalConfigurationOutputReference
+	GlobalConfigurationInput() *MedialiveChannelEncoderSettingsGlobalConfiguration
 	InternalValue() *MedialiveChannelEncoderSettings
 	SetInternalValue(val *MedialiveChannelEncoderSettings)
+	MotionGraphicsConfiguration() MedialiveChannelEncoderSettingsMotionGraphicsConfigurationOutputReference
+	MotionGraphicsConfigurationInput() *MedialiveChannelEncoderSettingsMotionGraphicsConfiguration
+	NielsenConfiguration() MedialiveChannelEncoderSettingsNielsenConfigurationOutputReference
+	NielsenConfigurationInput() *MedialiveChannelEncoderSettingsNielsenConfiguration
 	OutputGroups() MedialiveChannelEncoderSettingsOutputGroupsList
 	OutputGroupsInput() interface{}
 	// Experimental.
@@ -73,11 +81,19 @@ type MedialiveChannelEncoderSettingsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAudioDescriptions(value interface{})
 	PutAvailBlanking(value *MedialiveChannelEncoderSettingsAvailBlanking)
+	PutCaptionDescriptions(value interface{})
+	PutGlobalConfiguration(value *MedialiveChannelEncoderSettingsGlobalConfiguration)
+	PutMotionGraphicsConfiguration(value *MedialiveChannelEncoderSettingsMotionGraphicsConfiguration)
+	PutNielsenConfiguration(value *MedialiveChannelEncoderSettingsNielsenConfiguration)
 	PutOutputGroups(value interface{})
 	PutTimecodeConfig(value *MedialiveChannelEncoderSettingsTimecodeConfig)
 	PutVideoDescriptions(value interface{})
 	ResetAudioDescriptions()
 	ResetAvailBlanking()
+	ResetCaptionDescriptions()
+	ResetGlobalConfiguration()
+	ResetMotionGraphicsConfiguration()
+	ResetNielsenConfiguration()
 	ResetVideoDescriptions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -134,6 +150,26 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) AvailBlanking
 	return returns
 }
 
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) CaptionDescriptions() MedialiveChannelEncoderSettingsCaptionDescriptionsList {
+	var returns MedialiveChannelEncoderSettingsCaptionDescriptionsList
+	_jsii_.Get(
+		j,
+		"captionDescriptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) CaptionDescriptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"captionDescriptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -174,11 +210,71 @@ func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) Fqn() *string
 	return returns
 }
 
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) GlobalConfiguration() MedialiveChannelEncoderSettingsGlobalConfigurationOutputReference {
+	var returns MedialiveChannelEncoderSettingsGlobalConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"globalConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) GlobalConfigurationInput() *MedialiveChannelEncoderSettingsGlobalConfiguration {
+	var returns *MedialiveChannelEncoderSettingsGlobalConfiguration
+	_jsii_.Get(
+		j,
+		"globalConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) InternalValue() *MedialiveChannelEncoderSettings {
 	var returns *MedialiveChannelEncoderSettings
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) MotionGraphicsConfiguration() MedialiveChannelEncoderSettingsMotionGraphicsConfigurationOutputReference {
+	var returns MedialiveChannelEncoderSettingsMotionGraphicsConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"motionGraphicsConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) MotionGraphicsConfigurationInput() *MedialiveChannelEncoderSettingsMotionGraphicsConfiguration {
+	var returns *MedialiveChannelEncoderSettingsMotionGraphicsConfiguration
+	_jsii_.Get(
+		j,
+		"motionGraphicsConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) NielsenConfiguration() MedialiveChannelEncoderSettingsNielsenConfigurationOutputReference {
+	var returns MedialiveChannelEncoderSettingsNielsenConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"nielsenConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) NielsenConfigurationInput() *MedialiveChannelEncoderSettingsNielsenConfiguration {
+	var returns *MedialiveChannelEncoderSettingsNielsenConfiguration
+	_jsii_.Get(
+		j,
+		"nielsenConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -555,6 +651,50 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) PutAvailBlank
 	)
 }
 
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) PutCaptionDescriptions(value interface{}) {
+	if err := m.validatePutCaptionDescriptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putCaptionDescriptions",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) PutGlobalConfiguration(value *MedialiveChannelEncoderSettingsGlobalConfiguration) {
+	if err := m.validatePutGlobalConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putGlobalConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) PutMotionGraphicsConfiguration(value *MedialiveChannelEncoderSettingsMotionGraphicsConfiguration) {
+	if err := m.validatePutMotionGraphicsConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putMotionGraphicsConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) PutNielsenConfiguration(value *MedialiveChannelEncoderSettingsNielsenConfiguration) {
+	if err := m.validatePutNielsenConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putNielsenConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) PutOutputGroups(value interface{}) {
 	if err := m.validatePutOutputGroupsParameters(value); err != nil {
 		panic(err)
@@ -600,6 +740,38 @@ func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) ResetAvailBla
 	_jsii_.InvokeVoid(
 		m,
 		"resetAvailBlanking",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) ResetCaptionDescriptions() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetCaptionDescriptions",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) ResetGlobalConfiguration() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetGlobalConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) ResetMotionGraphicsConfiguration() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMotionGraphicsConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsOutputReference) ResetNielsenConfiguration() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetNielsenConfiguration",
 		nil, // no parameters
 	)
 }

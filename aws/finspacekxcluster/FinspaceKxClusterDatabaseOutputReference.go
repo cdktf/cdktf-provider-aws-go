@@ -70,6 +70,7 @@ type FinspaceKxClusterDatabaseOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCacheConfigurations(value interface{})
+	ResetCacheConfigurations()
 	ResetChangesetId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -515,6 +516,14 @@ func (f *jsiiProxy_FinspaceKxClusterDatabaseOutputReference) PutCacheConfigurati
 		f,
 		"putCacheConfigurations",
 		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FinspaceKxClusterDatabaseOutputReference) ResetCacheConfigurations() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetCacheConfigurations",
+		nil, // no parameters
 	)
 }
 

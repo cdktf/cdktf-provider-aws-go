@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/mskconnect_custom_plugin aws_mskconnect_custom_plugin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/mskconnect_custom_plugin aws_mskconnect_custom_plugin}.
 type DataAwsMskconnectCustomPlugin interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -325,7 +325,7 @@ func (j *jsiiProxy_DataAwsMskconnectCustomPlugin) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/mskconnect_custom_plugin aws_mskconnect_custom_plugin} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/mskconnect_custom_plugin aws_mskconnect_custom_plugin} Data Source.
 func NewDataAwsMskconnectCustomPlugin(scope constructs.Construct, id *string, config *DataAwsMskconnectCustomPluginConfig) DataAwsMskconnectCustomPlugin {
 	_init_.Initialize()
 
@@ -343,7 +343,7 @@ func NewDataAwsMskconnectCustomPlugin(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/mskconnect_custom_plugin aws_mskconnect_custom_plugin} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/mskconnect_custom_plugin aws_mskconnect_custom_plugin} Data Source.
 func NewDataAwsMskconnectCustomPlugin_Override(d DataAwsMskconnectCustomPlugin, scope constructs.Construct, id *string, config *DataAwsMskconnectCustomPluginConfig) {
 	_init_.Initialize()
 

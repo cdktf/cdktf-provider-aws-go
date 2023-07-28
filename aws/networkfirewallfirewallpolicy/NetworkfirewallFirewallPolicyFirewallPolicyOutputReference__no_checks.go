@@ -44,6 +44,10 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) v
 	return nil
 }
 
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) validatePutPolicyVariablesParameters(value *NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariables) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) validatePutStatefulEngineOptionsParameters(value *NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptions) error {
 	return nil
 }

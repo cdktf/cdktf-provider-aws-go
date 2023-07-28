@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/resourceexplorer2_view aws_resourceexplorer2_view}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/resourceexplorer2_view aws_resourceexplorer2_view}.
 type Resourceexplorer2View interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_Resourceexplorer2View) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/resourceexplorer2_view aws_resourceexplorer2_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/resourceexplorer2_view aws_resourceexplorer2_view} Resource.
 func NewResourceexplorer2View(scope constructs.Construct, id *string, config *Resourceexplorer2ViewConfig) Resourceexplorer2View {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewResourceexplorer2View(scope constructs.Construct, id *string, config *Re
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/resourceexplorer2_view aws_resourceexplorer2_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/resourceexplorer2_view aws_resourceexplorer2_view} Resource.
 func NewResourceexplorer2View_Override(r Resourceexplorer2View, scope constructs.Construct, id *string, config *Resourceexplorer2ViewConfig) {
 	_init_.Initialize()
 

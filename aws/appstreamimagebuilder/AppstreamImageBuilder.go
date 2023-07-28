@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appstream_image_builder aws_appstream_image_builder}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/appstream_image_builder aws_appstream_image_builder}.
 type AppstreamImageBuilder interface {
 	cdktf.TerraformResource
 	AccessEndpoint() AppstreamImageBuilderAccessEndpointList
@@ -653,7 +653,7 @@ func (j *jsiiProxy_AppstreamImageBuilder) VpcConfigInput() *AppstreamImageBuilde
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appstream_image_builder aws_appstream_image_builder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/appstream_image_builder aws_appstream_image_builder} Resource.
 func NewAppstreamImageBuilder(scope constructs.Construct, id *string, config *AppstreamImageBuilderConfig) AppstreamImageBuilder {
 	_init_.Initialize()
 
@@ -671,7 +671,7 @@ func NewAppstreamImageBuilder(scope constructs.Construct, id *string, config *Ap
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/appstream_image_builder aws_appstream_image_builder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/appstream_image_builder aws_appstream_image_builder} Resource.
 func NewAppstreamImageBuilder_Override(a AppstreamImageBuilder, scope constructs.Construct, id *string, config *AppstreamImageBuilderConfig) {
 	_init_.Initialize()
 

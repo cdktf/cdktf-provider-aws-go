@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host aws_ec2_host}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ec2_host aws_ec2_host}.
 type Ec2Host interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -523,7 +523,7 @@ func (j *jsiiProxy_Ec2Host) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host aws_ec2_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ec2_host aws_ec2_host} Resource.
 func NewEc2Host(scope constructs.Construct, id *string, config *Ec2HostConfig) Ec2Host {
 	_init_.Initialize()
 
@@ -541,7 +541,7 @@ func NewEc2Host(scope constructs.Construct, id *string, config *Ec2HostConfig) E
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_host aws_ec2_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ec2_host aws_ec2_host} Resource.
 func NewEc2Host_Override(e Ec2Host, scope constructs.Construct, id *string, config *Ec2HostConfig) {
 	_init_.Initialize()
 

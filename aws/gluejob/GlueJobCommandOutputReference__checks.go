@@ -187,6 +187,14 @@ func (j *jsiiProxy_GlueJobCommandOutputReference) validateSetPythonVersionParame
 	return nil
 }
 
+func (j *jsiiProxy_GlueJobCommandOutputReference) validateSetRuntimeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GlueJobCommandOutputReference) validateSetScriptLocationParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

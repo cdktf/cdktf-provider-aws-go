@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/rds_cluster_activity_stream aws_rds_cluster_activity_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/rds_cluster_activity_stream aws_rds_cluster_activity_stream}.
 type RdsClusterActivityStream interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_RdsClusterActivityStream) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/rds_cluster_activity_stream aws_rds_cluster_activity_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/rds_cluster_activity_stream aws_rds_cluster_activity_stream} Resource.
 func NewRdsClusterActivityStream(scope constructs.Construct, id *string, config *RdsClusterActivityStreamConfig) RdsClusterActivityStream {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewRdsClusterActivityStream(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/rds_cluster_activity_stream aws_rds_cluster_activity_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/rds_cluster_activity_stream aws_rds_cluster_activity_stream} Resource.
 func NewRdsClusterActivityStream_Override(r RdsClusterActivityStream, scope constructs.Construct, id *string, config *RdsClusterActivityStreamConfig) {
 	_init_.Initialize()
 

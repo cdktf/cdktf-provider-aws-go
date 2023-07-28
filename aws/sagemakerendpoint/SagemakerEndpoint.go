@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_endpoint aws_sagemaker_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint aws_sagemaker_endpoint}.
 type SagemakerEndpoint interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -416,7 +416,7 @@ func (j *jsiiProxy_SagemakerEndpoint) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_endpoint aws_sagemaker_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint aws_sagemaker_endpoint} Resource.
 func NewSagemakerEndpoint(scope constructs.Construct, id *string, config *SagemakerEndpointConfig) SagemakerEndpoint {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewSagemakerEndpoint(scope constructs.Construct, id *string, config *Sagema
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/sagemaker_endpoint aws_sagemaker_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/sagemaker_endpoint aws_sagemaker_endpoint} Resource.
 func NewSagemakerEndpoint_Override(s SagemakerEndpoint, scope constructs.Construct, id *string, config *SagemakerEndpointConfig) {
 	_init_.Initialize()
 

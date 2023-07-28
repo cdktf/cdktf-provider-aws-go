@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/nat_gateway aws_nat_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/nat_gateway aws_nat_gateway}.
 type DataAwsNatGateway interface {
 	cdktf.TerraformDataSource
 	AllocationId() *string
@@ -55,6 +55,9 @@ type DataAwsNatGateway interface {
 	PublicIp() *string
 	// Experimental.
 	RawOverrides() interface{}
+	SecondaryAllocationIds() *[]*string
+	SecondaryPrivateIpAddressCount() *float64
+	SecondaryPrivateIpAddresses() *[]*string
 	State() *string
 	SetState(val *string)
 	StateInput() *string
@@ -337,6 +340,36 @@ func (j *jsiiProxy_DataAwsNatGateway) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsNatGateway) SecondaryAllocationIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"secondaryAllocationIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNatGateway) SecondaryPrivateIpAddressCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"secondaryPrivateIpAddressCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNatGateway) SecondaryPrivateIpAddresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"secondaryPrivateIpAddresses",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsNatGateway) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -468,7 +501,7 @@ func (j *jsiiProxy_DataAwsNatGateway) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/nat_gateway aws_nat_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/nat_gateway aws_nat_gateway} Data Source.
 func NewDataAwsNatGateway(scope constructs.Construct, id *string, config *DataAwsNatGatewayConfig) DataAwsNatGateway {
 	_init_.Initialize()
 
@@ -486,7 +519,7 @@ func NewDataAwsNatGateway(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/nat_gateway aws_nat_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/nat_gateway aws_nat_gateway} Data Source.
 func NewDataAwsNatGateway_Override(d DataAwsNatGateway, scope constructs.Construct, id *string, config *DataAwsNatGatewayConfig) {
 	_init_.Initialize()
 

@@ -50,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "securityPolicyName", GoGetter: "SecurityPolicyName"},
 			_jsii_.MemberProperty{JsiiProperty: "serverId", GoGetter: "ServerId"},
 			_jsii_.MemberProperty{JsiiProperty: "serverIdInput", GoGetter: "ServerIdInput"},
+			_jsii_.MemberProperty{JsiiProperty: "structuredLogDestinations", GoGetter: "StructuredLogDestinations"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformGeneratorMetadata", GoGetter: "TerraformGeneratorMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformMetaArguments", GoGetter: "TerraformMetaArguments"},

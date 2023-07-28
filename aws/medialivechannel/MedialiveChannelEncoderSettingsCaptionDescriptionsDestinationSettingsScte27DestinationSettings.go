@@ -1,0 +1,6 @@
+package medialivechannel
+
+
+type MedialiveChannelEncoderSettingsCaptionDescriptionsDestinationSettingsScte27DestinationSettings struct {
+}
+

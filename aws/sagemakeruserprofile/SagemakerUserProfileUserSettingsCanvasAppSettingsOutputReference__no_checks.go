@@ -52,6 +52,10 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputRefere
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) validatePutWorkspaceSettingsParameters(value *SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

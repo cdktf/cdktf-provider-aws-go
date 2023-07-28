@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget_action aws_budgets_budget_action}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget_action aws_budgets_budget_action}.
 type BudgetsBudgetAction interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -551,7 +551,7 @@ func (j *jsiiProxy_BudgetsBudgetAction) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget_action aws_budgets_budget_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget_action aws_budgets_budget_action} Resource.
 func NewBudgetsBudgetAction(scope constructs.Construct, id *string, config *BudgetsBudgetActionConfig) BudgetsBudgetAction {
 	_init_.Initialize()
 
@@ -569,7 +569,7 @@ func NewBudgetsBudgetAction(scope constructs.Construct, id *string, config *Budg
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/budgets_budget_action aws_budgets_budget_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/budgets_budget_action aws_budgets_budget_action} Resource.
 func NewBudgetsBudgetAction_Override(b BudgetsBudgetAction, scope constructs.Construct, id *string, config *BudgetsBudgetActionConfig) {
 	_init_.Initialize()
 

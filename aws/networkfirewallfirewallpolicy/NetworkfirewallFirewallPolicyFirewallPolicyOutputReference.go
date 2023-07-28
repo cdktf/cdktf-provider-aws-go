@@ -29,6 +29,8 @@ type NetworkfirewallFirewallPolicyFirewallPolicyOutputReference interface {
 	Fqn() *string
 	InternalValue() *NetworkfirewallFirewallPolicyFirewallPolicy
 	SetInternalValue(val *NetworkfirewallFirewallPolicyFirewallPolicy)
+	PolicyVariables() NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesOutputReference
+	PolicyVariablesInput() *NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariables
 	StatefulDefaultActions() *[]*string
 	SetStatefulDefaultActions(val *[]*string)
 	StatefulDefaultActionsInput() *[]*string
@@ -78,10 +80,12 @@ type NetworkfirewallFirewallPolicyFirewallPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPolicyVariables(value *NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariables)
 	PutStatefulEngineOptions(value *NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptions)
 	PutStatefulRuleGroupReference(value interface{})
 	PutStatelessCustomAction(value interface{})
 	PutStatelessRuleGroupReference(value interface{})
+	ResetPolicyVariables()
 	ResetStatefulDefaultActions()
 	ResetStatefulEngineOptions()
 	ResetStatefulRuleGroupReference()
@@ -147,6 +151,26 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) I
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) PolicyVariables() NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesOutputReference {
+	var returns NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariablesOutputReference
+	_jsii_.Get(
+		j,
+		"policyVariables",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) PolicyVariablesInput() *NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariables {
+	var returns *NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariables
+	_jsii_.Get(
+		j,
+		"policyVariablesInput",
 		&returns,
 	)
 	return returns
@@ -614,6 +638,17 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) I
 	return returns
 }
 
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) PutPolicyVariables(value *NetworkfirewallFirewallPolicyFirewallPolicyPolicyVariables) {
+	if err := n.validatePutPolicyVariablesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putPolicyVariables",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) PutStatefulEngineOptions(value *NetworkfirewallFirewallPolicyFirewallPolicyStatefulEngineOptions) {
 	if err := n.validatePutStatefulEngineOptionsParameters(value); err != nil {
 		panic(err)
@@ -655,6 +690,14 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) P
 		n,
 		"putStatelessRuleGroupReference",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) ResetPolicyVariables() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetPolicyVariables",
+		nil, // no parameters
 	)
 }
 

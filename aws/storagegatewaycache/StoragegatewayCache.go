@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/storagegateway_cache aws_storagegateway_cache}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/storagegateway_cache aws_storagegateway_cache}.
 type StoragegatewayCache interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_StoragegatewayCache) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/storagegateway_cache aws_storagegateway_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/storagegateway_cache aws_storagegateway_cache} Resource.
 func NewStoragegatewayCache(scope constructs.Construct, id *string, config *StoragegatewayCacheConfig) StoragegatewayCache {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewStoragegatewayCache(scope constructs.Construct, id *string, config *Stor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/storagegateway_cache aws_storagegateway_cache} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/storagegateway_cache aws_storagegateway_cache} Resource.
 func NewStoragegatewayCache_Override(s StoragegatewayCache, scope constructs.Construct, id *string, config *StoragegatewayCacheConfig) {
 	_init_.Initialize()
 

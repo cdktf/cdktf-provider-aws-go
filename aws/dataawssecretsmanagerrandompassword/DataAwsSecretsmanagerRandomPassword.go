@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password}.
 type DataAwsSecretsmanagerRandomPassword interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -474,7 +474,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password} Data Source.
 func NewDataAwsSecretsmanagerRandomPassword(scope constructs.Construct, id *string, config *DataAwsSecretsmanagerRandomPasswordConfig) DataAwsSecretsmanagerRandomPassword {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewDataAwsSecretsmanagerRandomPassword(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password} Data Source.
 func NewDataAwsSecretsmanagerRandomPassword_Override(d DataAwsSecretsmanagerRandomPassword, scope constructs.Construct, id *string, config *DataAwsSecretsmanagerRandomPasswordConfig) {
 	_init_.Initialize()
 

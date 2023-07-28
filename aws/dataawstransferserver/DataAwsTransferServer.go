@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/transfer_server aws_transfer_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/transfer_server aws_transfer_server}.
 type DataAwsTransferServer interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -60,6 +60,7 @@ type DataAwsTransferServer interface {
 	ServerId() *string
 	SetServerId(val *string)
 	ServerIdInput() *string
+	StructuredLogDestinations() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -361,6 +362,16 @@ func (j *jsiiProxy_DataAwsTransferServer) ServerIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsTransferServer) StructuredLogDestinations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"structuredLogDestinations",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsTransferServer) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -402,7 +413,7 @@ func (j *jsiiProxy_DataAwsTransferServer) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/transfer_server aws_transfer_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/transfer_server aws_transfer_server} Data Source.
 func NewDataAwsTransferServer(scope constructs.Construct, id *string, config *DataAwsTransferServerConfig) DataAwsTransferServer {
 	_init_.Initialize()
 
@@ -420,7 +431,7 @@ func NewDataAwsTransferServer(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/transfer_server aws_transfer_server} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/transfer_server aws_transfer_server} Data Source.
 func NewDataAwsTransferServer_Override(d DataAwsTransferServer, scope constructs.Construct, id *string, config *DataAwsTransferServerConfig) {
 	_init_.Initialize()
 

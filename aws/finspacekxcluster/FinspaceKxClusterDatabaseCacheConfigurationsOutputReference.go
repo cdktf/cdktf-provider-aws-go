@@ -67,6 +67,7 @@ type FinspaceKxClusterDatabaseCacheConfigurationsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDbPaths()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -481,6 +482,14 @@ func (f *jsiiProxy_FinspaceKxClusterDatabaseCacheConfigurationsOutputReference) 
 	)
 
 	return returns
+}
+
+func (f *jsiiProxy_FinspaceKxClusterDatabaseCacheConfigurationsOutputReference) ResetDbPaths() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDbPaths",
+		nil, // no parameters
+	)
 }
 
 func (f *jsiiProxy_FinspaceKxClusterDatabaseCacheConfigurationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

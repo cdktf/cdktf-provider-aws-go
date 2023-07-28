@@ -52,6 +52,10 @@ func (n *jsiiProxy_NatGateway) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (n *jsiiProxy_NatGateway) validatePutTimeoutsParameters(value *NatGatewayTimeouts) error {
+	return nil
+}
+
 func validateNatGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -93,6 +97,18 @@ func (j *jsiiProxy_NatGateway) validateSetPrivateIpParameters(val *string) error
 }
 
 func (j *jsiiProxy_NatGateway) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_NatGateway) validateSetSecondaryAllocationIdsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_NatGateway) validateSetSecondaryPrivateIpAddressCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_NatGateway) validateSetSecondaryPrivateIpAddressesParameters(val *[]*string) error {
 	return nil
 }
 

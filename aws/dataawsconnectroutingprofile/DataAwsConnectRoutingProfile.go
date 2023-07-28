@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/connect_routing_profile aws_connect_routing_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/connect_routing_profile aws_connect_routing_profile}.
 type DataAwsConnectRoutingProfile interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -408,7 +408,7 @@ func (j *jsiiProxy_DataAwsConnectRoutingProfile) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/connect_routing_profile aws_connect_routing_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/connect_routing_profile aws_connect_routing_profile} Data Source.
 func NewDataAwsConnectRoutingProfile(scope constructs.Construct, id *string, config *DataAwsConnectRoutingProfileConfig) DataAwsConnectRoutingProfile {
 	_init_.Initialize()
 
@@ -426,7 +426,7 @@ func NewDataAwsConnectRoutingProfile(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/connect_routing_profile aws_connect_routing_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/connect_routing_profile aws_connect_routing_profile} Data Source.
 func NewDataAwsConnectRoutingProfile_Override(d DataAwsConnectRoutingProfile, scope constructs.Construct, id *string, config *DataAwsConnectRoutingProfileConfig) {
 	_init_.Initialize()
 

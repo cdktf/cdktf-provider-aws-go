@@ -152,6 +152,10 @@ func (j *jsiiProxy_TransferServer) validateSetSecurityPolicyNameParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_TransferServer) validateSetStructuredLogDestinationsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_TransferServer) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

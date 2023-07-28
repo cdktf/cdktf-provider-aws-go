@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_bucket_access_key aws_lightsail_bucket_access_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/lightsail_bucket_access_key aws_lightsail_bucket_access_key}.
 type LightsailBucketAccessKey interface {
 	cdktf.TerraformResource
 	AccessKeyId() *string
@@ -353,7 +353,7 @@ func (j *jsiiProxy_LightsailBucketAccessKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_bucket_access_key aws_lightsail_bucket_access_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/lightsail_bucket_access_key aws_lightsail_bucket_access_key} Resource.
 func NewLightsailBucketAccessKey(scope constructs.Construct, id *string, config *LightsailBucketAccessKeyConfig) LightsailBucketAccessKey {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewLightsailBucketAccessKey(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/lightsail_bucket_access_key aws_lightsail_bucket_access_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/lightsail_bucket_access_key aws_lightsail_bucket_access_key} Resource.
 func NewLightsailBucketAccessKey_Override(l LightsailBucketAccessKey, scope constructs.Construct, id *string, config *LightsailBucketAccessKeyConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iam_access_key aws_iam_access_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/iam_access_key aws_iam_access_key}.
 type IamAccessKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -423,7 +423,7 @@ func (j *jsiiProxy_IamAccessKey) UserInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iam_access_key aws_iam_access_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/iam_access_key aws_iam_access_key} Resource.
 func NewIamAccessKey(scope constructs.Construct, id *string, config *IamAccessKeyConfig) IamAccessKey {
 	_init_.Initialize()
 
@@ -441,7 +441,7 @@ func NewIamAccessKey(scope constructs.Construct, id *string, config *IamAccessKe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/iam_access_key aws_iam_access_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/iam_access_key aws_iam_access_key} Resource.
 func NewIamAccessKey_Override(i IamAccessKey, scope constructs.Construct, id *string, config *IamAccessKeyConfig) {
 	_init_.Initialize()
 

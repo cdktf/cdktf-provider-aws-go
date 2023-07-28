@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_transit_gateway_policy_table_association aws_ec2_transit_gateway_policy_table_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ec2_transit_gateway_policy_table_association aws_ec2_transit_gateway_policy_table_association}.
 type Ec2TransitGatewayPolicyTableAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_Ec2TransitGatewayPolicyTableAssociation) TransitGatewayPolicy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_transit_gateway_policy_table_association aws_ec2_transit_gateway_policy_table_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ec2_transit_gateway_policy_table_association aws_ec2_transit_gateway_policy_table_association} Resource.
 func NewEc2TransitGatewayPolicyTableAssociation(scope constructs.Construct, id *string, config *Ec2TransitGatewayPolicyTableAssociationConfig) Ec2TransitGatewayPolicyTableAssociation {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewEc2TransitGatewayPolicyTableAssociation(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/resources/ec2_transit_gateway_policy_table_association aws_ec2_transit_gateway_policy_table_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/ec2_transit_gateway_policy_table_association aws_ec2_transit_gateway_policy_table_association} Resource.
 func NewEc2TransitGatewayPolicyTableAssociation_Override(e Ec2TransitGatewayPolicyTableAssociation, scope constructs.Construct, id *string, config *Ec2TransitGatewayPolicyTableAssociationConfig) {
 	_init_.Initialize()
 

@@ -35,6 +35,9 @@ type GlueJobCommandOutputReference interface {
 	PythonVersion() *string
 	SetPythonVersion(val *string)
 	PythonVersionInput() *string
+	Runtime() *string
+	SetRuntime(val *string)
+	RuntimeInput() *string
 	ScriptLocation() *string
 	SetScriptLocation(val *string)
 	ScriptLocationInput() *string
@@ -72,6 +75,7 @@ type GlueJobCommandOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetName()
 	ResetPythonVersion()
+	ResetRuntime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -172,6 +176,26 @@ func (j *jsiiProxy_GlueJobCommandOutputReference) PythonVersionInput() *string {
 	_jsii_.Get(
 		j,
 		"pythonVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJobCommandOutputReference) Runtime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJobCommandOutputReference) RuntimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runtimeInput",
 		&returns,
 	)
 	return returns
@@ -296,6 +320,17 @@ func (j *jsiiProxy_GlueJobCommandOutputReference)SetPythonVersion(val *string) {
 	_jsii_.Set(
 		j,
 		"pythonVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJobCommandOutputReference)SetRuntime(val *string) {
+	if err := j.validateSetRuntimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"runtime",
 		val,
 	)
 }
@@ -531,6 +566,14 @@ func (g *jsiiProxy_GlueJobCommandOutputReference) ResetPythonVersion() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPythonVersion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJobCommandOutputReference) ResetRuntime() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRuntime",
 		nil, // no parameters
 	)
 }

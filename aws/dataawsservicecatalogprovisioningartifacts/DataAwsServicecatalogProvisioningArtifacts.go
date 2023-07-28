@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/servicecatalog_provisioning_artifacts aws_servicecatalog_provisioning_artifacts}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/servicecatalog_provisioning_artifacts aws_servicecatalog_provisioning_artifacts}.
 type DataAwsServicecatalogProvisioningArtifacts interface {
 	cdktf.TerraformDataSource
 	AcceptLanguage() *string
@@ -340,7 +340,7 @@ func (j *jsiiProxy_DataAwsServicecatalogProvisioningArtifacts) TimeoutsInput() i
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/servicecatalog_provisioning_artifacts aws_servicecatalog_provisioning_artifacts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/servicecatalog_provisioning_artifacts aws_servicecatalog_provisioning_artifacts} Data Source.
 func NewDataAwsServicecatalogProvisioningArtifacts(scope constructs.Construct, id *string, config *DataAwsServicecatalogProvisioningArtifactsConfig) DataAwsServicecatalogProvisioningArtifacts {
 	_init_.Initialize()
 
@@ -358,7 +358,7 @@ func NewDataAwsServicecatalogProvisioningArtifacts(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.9.0/docs/data-sources/servicecatalog_provisioning_artifacts aws_servicecatalog_provisioning_artifacts} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/servicecatalog_provisioning_artifacts aws_servicecatalog_provisioning_artifacts} Data Source.
 func NewDataAwsServicecatalogProvisioningArtifacts_Override(d DataAwsServicecatalogProvisioningArtifacts, scope constructs.Construct, id *string, config *DataAwsServicecatalogProvisioningArtifactsConfig) {
 	_init_.Initialize()
 

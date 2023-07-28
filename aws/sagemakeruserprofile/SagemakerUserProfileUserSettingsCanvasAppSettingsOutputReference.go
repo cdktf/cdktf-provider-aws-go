@@ -41,6 +41,8 @@ type SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference interface 
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	TimeSeriesForecastingSettings() SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettingsOutputReference
 	TimeSeriesForecastingSettingsInput() *SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings
+	WorkspaceSettings() SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettingsOutputReference
+	WorkspaceSettingsInput() *SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettings
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -67,8 +69,10 @@ type SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference interface 
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutModelRegisterSettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings)
 	PutTimeSeriesForecastingSettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings)
+	PutWorkspaceSettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettings)
 	ResetModelRegisterSettings()
 	ResetTimeSeriesForecastingSettings()
+	ResetWorkspaceSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -189,6 +193,26 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputRefere
 	_jsii_.Get(
 		j,
 		"timeSeriesForecastingSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) WorkspaceSettings() SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettingsOutputReference {
+	var returns SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"workspaceSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) WorkspaceSettingsInput() *SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettings {
+	var returns *SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettings
+	_jsii_.Get(
+		j,
+		"workspaceSettingsInput",
 		&returns,
 	)
 	return returns
@@ -485,6 +509,17 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputRefere
 	)
 }
 
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) PutWorkspaceSettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettings) {
+	if err := s.validatePutWorkspaceSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putWorkspaceSettings",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) ResetModelRegisterSettings() {
 	_jsii_.InvokeVoid(
 		s,
@@ -497,6 +532,14 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputRefere
 	_jsii_.InvokeVoid(
 		s,
 		"resetTimeSeriesForecastingSettings",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) ResetWorkspaceSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetWorkspaceSettings",
 		nil, // no parameters
 	)
 }
