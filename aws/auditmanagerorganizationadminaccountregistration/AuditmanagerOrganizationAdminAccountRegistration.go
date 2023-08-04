@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/auditmanager_organization_admin_account_registration aws_auditmanager_organization_admin_account_registration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/auditmanager_organization_admin_account_registration aws_auditmanager_organization_admin_account_registration}.
 type AuditmanagerOrganizationAdminAccountRegistration interface {
 	cdktf.TerraformResource
 	AdminAccountId() *string
@@ -307,7 +307,7 @@ func (j *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) TerraformRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/auditmanager_organization_admin_account_registration aws_auditmanager_organization_admin_account_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/auditmanager_organization_admin_account_registration aws_auditmanager_organization_admin_account_registration} Resource.
 func NewAuditmanagerOrganizationAdminAccountRegistration(scope constructs.Construct, id *string, config *AuditmanagerOrganizationAdminAccountRegistrationConfig) AuditmanagerOrganizationAdminAccountRegistration {
 	_init_.Initialize()
 
@@ -325,7 +325,7 @@ func NewAuditmanagerOrganizationAdminAccountRegistration(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/auditmanager_organization_admin_account_registration aws_auditmanager_organization_admin_account_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/auditmanager_organization_admin_account_registration aws_auditmanager_organization_admin_account_registration} Resource.
 func NewAuditmanagerOrganizationAdminAccountRegistration_Override(a AuditmanagerOrganizationAdminAccountRegistration, scope constructs.Construct, id *string, config *AuditmanagerOrganizationAdminAccountRegistrationConfig) {
 	_init_.Initialize()
 

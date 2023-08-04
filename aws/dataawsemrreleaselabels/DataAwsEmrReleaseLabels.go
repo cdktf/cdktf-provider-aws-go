@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/emr_release_labels aws_emr_release_labels}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/emr_release_labels aws_emr_release_labels}.
 type DataAwsEmrReleaseLabels interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -293,7 +293,7 @@ func (j *jsiiProxy_DataAwsEmrReleaseLabels) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/emr_release_labels aws_emr_release_labels} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/emr_release_labels aws_emr_release_labels} Data Source.
 func NewDataAwsEmrReleaseLabels(scope constructs.Construct, id *string, config *DataAwsEmrReleaseLabelsConfig) DataAwsEmrReleaseLabels {
 	_init_.Initialize()
 
@@ -311,7 +311,7 @@ func NewDataAwsEmrReleaseLabels(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/emr_release_labels aws_emr_release_labels} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/emr_release_labels aws_emr_release_labels} Data Source.
 func NewDataAwsEmrReleaseLabels_Override(d DataAwsEmrReleaseLabels, scope constructs.Construct, id *string, config *DataAwsEmrReleaseLabelsConfig) {
 	_init_.Initialize()
 

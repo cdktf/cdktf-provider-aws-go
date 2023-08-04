@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/globalaccelerator_accelerator aws_globalaccelerator_accelerator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/globalaccelerator_accelerator aws_globalaccelerator_accelerator}.
 type GlobalacceleratorAccelerator interface {
 	cdktf.TerraformResource
 	Attributes() GlobalacceleratorAcceleratorAttributesOutputReference
@@ -521,7 +521,7 @@ func (j *jsiiProxy_GlobalacceleratorAccelerator) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/globalaccelerator_accelerator aws_globalaccelerator_accelerator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/globalaccelerator_accelerator aws_globalaccelerator_accelerator} Resource.
 func NewGlobalacceleratorAccelerator(scope constructs.Construct, id *string, config *GlobalacceleratorAcceleratorConfig) GlobalacceleratorAccelerator {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewGlobalacceleratorAccelerator(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/globalaccelerator_accelerator aws_globalaccelerator_accelerator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/globalaccelerator_accelerator aws_globalaccelerator_accelerator} Resource.
 func NewGlobalacceleratorAccelerator_Override(g GlobalacceleratorAccelerator, scope constructs.Construct, id *string, config *GlobalacceleratorAcceleratorConfig) {
 	_init_.Initialize()
 

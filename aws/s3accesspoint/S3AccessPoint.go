@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/s3_access_point aws_s3_access_point}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/s3_access_point aws_s3_access_point}.
 type S3AccessPoint interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -518,7 +518,7 @@ func (j *jsiiProxy_S3AccessPoint) VpcConfigurationInput() *S3AccessPointVpcConfi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/s3_access_point aws_s3_access_point} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/s3_access_point aws_s3_access_point} Resource.
 func NewS3AccessPoint(scope constructs.Construct, id *string, config *S3AccessPointConfig) S3AccessPoint {
 	_init_.Initialize()
 
@@ -536,7 +536,7 @@ func NewS3AccessPoint(scope constructs.Construct, id *string, config *S3AccessPo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/s3_access_point aws_s3_access_point} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/s3_access_point aws_s3_access_point} Resource.
 func NewS3AccessPoint_Override(s S3AccessPoint, scope constructs.Construct, id *string, config *S3AccessPointConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/iot_thing aws_iot_thing}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/iot_thing aws_iot_thing}.
 type IotThing interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -390,7 +390,7 @@ func (j *jsiiProxy_IotThing) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/iot_thing aws_iot_thing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/iot_thing aws_iot_thing} Resource.
 func NewIotThing(scope constructs.Construct, id *string, config *IotThingConfig) IotThing {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewIotThing(scope constructs.Construct, id *string, config *IotThingConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/iot_thing aws_iot_thing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/iot_thing aws_iot_thing} Resource.
 func NewIotThing_Override(i IotThing, scope constructs.Construct, id *string, config *IotThingConfig) {
 	_init_.Initialize()
 

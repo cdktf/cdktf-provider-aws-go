@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/inspector2_member_association aws_inspector2_member_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/inspector2_member_association aws_inspector2_member_association}.
 type Inspector2MemberAssociation interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -366,7 +366,7 @@ func (j *jsiiProxy_Inspector2MemberAssociation) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/inspector2_member_association aws_inspector2_member_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/inspector2_member_association aws_inspector2_member_association} Resource.
 func NewInspector2MemberAssociation(scope constructs.Construct, id *string, config *Inspector2MemberAssociationConfig) Inspector2MemberAssociation {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewInspector2MemberAssociation(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/inspector2_member_association aws_inspector2_member_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/inspector2_member_association aws_inspector2_member_association} Resource.
 func NewInspector2MemberAssociation_Override(i Inspector2MemberAssociation, scope constructs.Construct, id *string, config *Inspector2MemberAssociationConfig) {
 	_init_.Initialize()
 

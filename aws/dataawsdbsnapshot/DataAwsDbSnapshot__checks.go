@@ -292,6 +292,14 @@ func (j *jsiiProxy_DataAwsDbSnapshot) validateSetSnapshotTypeParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDbSnapshot) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataAwsDbSnapshotParameters(scope constructs.Construct, id *string, config *DataAwsDbSnapshotConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

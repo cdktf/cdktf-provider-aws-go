@@ -80,6 +80,10 @@ func (j *jsiiProxy_DataAwsDbInstances) validateSetLifecycleParameters(val *cdktf
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDbInstances) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewDataAwsDbInstancesParameters(scope constructs.Construct, id *string, config *DataAwsDbInstancesConfig) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/eip_association aws_eip_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/eip_association aws_eip_association}.
 type EipAssociation interface {
 	cdktf.TerraformResource
 	AllocationId() *string
@@ -430,7 +430,7 @@ func (j *jsiiProxy_EipAssociation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/eip_association aws_eip_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/eip_association aws_eip_association} Resource.
 func NewEipAssociation(scope constructs.Construct, id *string, config *EipAssociationConfig) EipAssociation {
 	_init_.Initialize()
 
@@ -448,7 +448,7 @@ func NewEipAssociation(scope constructs.Construct, id *string, config *EipAssoci
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/eip_association aws_eip_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/eip_association aws_eip_association} Resource.
 func NewEipAssociation_Override(e EipAssociation, scope constructs.Construct, id *string, config *EipAssociationConfig) {
 	_init_.Initialize()
 

@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataAwsVpclatticeServiceNetwork) validateSetCountParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsVpclatticeServiceNetwork) validateSetIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsVpclatticeServiceNetwork) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

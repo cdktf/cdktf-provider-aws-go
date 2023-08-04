@@ -52,6 +52,10 @@ func (s *jsiiProxy_SagemakerEndpointDeploymentConfigOutputReference) validatePut
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerEndpointDeploymentConfigOutputReference) validatePutRollingUpdatePolicyParameters(value *SagemakerEndpointDeploymentConfigRollingUpdatePolicy) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerEndpointDeploymentConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

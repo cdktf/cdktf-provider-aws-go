@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/vpclattice_service aws_vpclattice_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service aws_vpclattice_service}.
 type DataAwsVpclatticeService interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -45,6 +45,8 @@ type DataAwsVpclatticeService interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -92,9 +94,11 @@ type DataAwsVpclatticeService interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetServiceIdentifier()
 	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -271,6 +275,16 @@ func (j *jsiiProxy_DataAwsVpclatticeService) Name() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsVpclatticeService) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsVpclatticeService) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -382,7 +396,7 @@ func (j *jsiiProxy_DataAwsVpclatticeService) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/vpclattice_service aws_vpclattice_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service aws_vpclattice_service} Data Source.
 func NewDataAwsVpclatticeService(scope constructs.Construct, id *string, config *DataAwsVpclatticeServiceConfig) DataAwsVpclatticeService {
 	_init_.Initialize()
 
@@ -400,7 +414,7 @@ func NewDataAwsVpclatticeService(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/vpclattice_service aws_vpclattice_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/vpclattice_service aws_vpclattice_service} Data Source.
 func NewDataAwsVpclatticeService_Override(d DataAwsVpclatticeService, scope constructs.Construct, id *string, config *DataAwsVpclatticeServiceConfig) {
 	_init_.Initialize()
 
@@ -456,6 +470,17 @@ func (j *jsiiProxy_DataAwsVpclatticeService)SetLifecycle(val *cdktf.TerraformRes
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsVpclatticeService)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
 		val,
 	)
 }
@@ -764,10 +789,26 @@ func (d *jsiiProxy_DataAwsVpclatticeService) ResetId() {
 	)
 }
 
+func (d *jsiiProxy_DataAwsVpclatticeService) ResetName() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataAwsVpclatticeService) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsVpclatticeService) ResetServiceIdentifier() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetServiceIdentifier",
 		nil, // no parameters
 	)
 }

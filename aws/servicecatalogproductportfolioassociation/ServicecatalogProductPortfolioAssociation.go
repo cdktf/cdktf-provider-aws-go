@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/servicecatalog_product_portfolio_association aws_servicecatalog_product_portfolio_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/servicecatalog_product_portfolio_association aws_servicecatalog_product_portfolio_association}.
 type ServicecatalogProductPortfolioAssociation interface {
 	cdktf.TerraformResource
 	AcceptLanguage() *string
@@ -404,7 +404,7 @@ func (j *jsiiProxy_ServicecatalogProductPortfolioAssociation) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/servicecatalog_product_portfolio_association aws_servicecatalog_product_portfolio_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/servicecatalog_product_portfolio_association aws_servicecatalog_product_portfolio_association} Resource.
 func NewServicecatalogProductPortfolioAssociation(scope constructs.Construct, id *string, config *ServicecatalogProductPortfolioAssociationConfig) ServicecatalogProductPortfolioAssociation {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewServicecatalogProductPortfolioAssociation(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/servicecatalog_product_portfolio_association aws_servicecatalog_product_portfolio_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/servicecatalog_product_portfolio_association aws_servicecatalog_product_portfolio_association} Resource.
 func NewServicecatalogProductPortfolioAssociation_Override(s ServicecatalogProductPortfolioAssociation, scope constructs.Construct, id *string, config *ServicecatalogProductPortfolioAssociationConfig) {
 	_init_.Initialize()
 

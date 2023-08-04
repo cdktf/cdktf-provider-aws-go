@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_snapshot aws_db_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_snapshot aws_db_snapshot}.
 type DataAwsDbSnapshot interface {
 	cdktf.TerraformDataSource
 	AllocatedStorage() *float64
@@ -81,6 +81,9 @@ type DataAwsDbSnapshot interface {
 	SourceRegion() *string
 	Status() *string
 	StorageType() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -123,6 +126,7 @@ type DataAwsDbSnapshot interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSnapshotType()
+	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -548,6 +552,26 @@ func (j *jsiiProxy_DataAwsDbSnapshot) StorageType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsDbSnapshot) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDbSnapshot) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsDbSnapshot) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -589,7 +613,7 @@ func (j *jsiiProxy_DataAwsDbSnapshot) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_snapshot aws_db_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_snapshot aws_db_snapshot} Data Source.
 func NewDataAwsDbSnapshot(scope constructs.Construct, id *string, config *DataAwsDbSnapshotConfig) DataAwsDbSnapshot {
 	_init_.Initialize()
 
@@ -607,7 +631,7 @@ func NewDataAwsDbSnapshot(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_snapshot aws_db_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_snapshot aws_db_snapshot} Data Source.
 func NewDataAwsDbSnapshot_Override(d DataAwsDbSnapshot, scope constructs.Construct, id *string, config *DataAwsDbSnapshotConfig) {
 	_init_.Initialize()
 
@@ -737,6 +761,17 @@ func (j *jsiiProxy_DataAwsDbSnapshot)SetSnapshotType(val *string) {
 	_jsii_.Set(
 		j,
 		"snapshotType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsDbSnapshot)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1067,6 +1102,14 @@ func (d *jsiiProxy_DataAwsDbSnapshot) ResetSnapshotType() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetSnapshotType",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsDbSnapshot) ResetTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTags",
 		nil, // no parameters
 	)
 }

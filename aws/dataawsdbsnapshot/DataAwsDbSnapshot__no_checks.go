@@ -100,6 +100,10 @@ func (j *jsiiProxy_DataAwsDbSnapshot) validateSetSnapshotTypeParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsDbSnapshot) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewDataAwsDbSnapshotParameters(scope constructs.Construct, id *string, config *DataAwsDbSnapshotConfig) error {
 	return nil
 }

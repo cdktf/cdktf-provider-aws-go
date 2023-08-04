@@ -33,6 +33,8 @@ type SagemakerEndpointDeploymentConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *SagemakerEndpointDeploymentConfig
 	SetInternalValue(val *SagemakerEndpointDeploymentConfig)
+	RollingUpdatePolicy() SagemakerEndpointDeploymentConfigRollingUpdatePolicyOutputReference
+	RollingUpdatePolicyInput() *SagemakerEndpointDeploymentConfigRollingUpdatePolicy
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,10 @@ type SagemakerEndpointDeploymentConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAutoRollbackConfiguration(value *SagemakerEndpointDeploymentConfigAutoRollbackConfiguration)
 	PutBlueGreenUpdatePolicy(value *SagemakerEndpointDeploymentConfigBlueGreenUpdatePolicy)
+	PutRollingUpdatePolicy(value *SagemakerEndpointDeploymentConfigRollingUpdatePolicy)
 	ResetAutoRollbackConfiguration()
+	ResetBlueGreenUpdatePolicy()
+	ResetRollingUpdatePolicy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -168,6 +173,26 @@ func (j *jsiiProxy_SagemakerEndpointDeploymentConfigOutputReference) InternalVal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointDeploymentConfigOutputReference) RollingUpdatePolicy() SagemakerEndpointDeploymentConfigRollingUpdatePolicyOutputReference {
+	var returns SagemakerEndpointDeploymentConfigRollingUpdatePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"rollingUpdatePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointDeploymentConfigOutputReference) RollingUpdatePolicyInput() *SagemakerEndpointDeploymentConfigRollingUpdatePolicy {
+	var returns *SagemakerEndpointDeploymentConfigRollingUpdatePolicy
+	_jsii_.Get(
+		j,
+		"rollingUpdatePolicyInput",
 		&returns,
 	)
 	return returns
@@ -484,10 +509,37 @@ func (s *jsiiProxy_SagemakerEndpointDeploymentConfigOutputReference) PutBlueGree
 	)
 }
 
+func (s *jsiiProxy_SagemakerEndpointDeploymentConfigOutputReference) PutRollingUpdatePolicy(value *SagemakerEndpointDeploymentConfigRollingUpdatePolicy) {
+	if err := s.validatePutRollingUpdatePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putRollingUpdatePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerEndpointDeploymentConfigOutputReference) ResetAutoRollbackConfiguration() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAutoRollbackConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerEndpointDeploymentConfigOutputReference) ResetBlueGreenUpdatePolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBlueGreenUpdatePolicy",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerEndpointDeploymentConfigOutputReference) ResetRollingUpdatePolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRollingUpdatePolicy",
 		nil, // no parameters
 	)
 }

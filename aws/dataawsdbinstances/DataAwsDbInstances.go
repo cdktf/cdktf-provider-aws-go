@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instances aws_db_instances}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances aws_db_instances}.
 type DataAwsDbInstances interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -51,6 +51,9 @@ type DataAwsDbInstances interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -88,6 +91,7 @@ type DataAwsDbInstances interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -273,6 +277,26 @@ func (j *jsiiProxy_DataAwsDbInstances) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsDbInstances) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDbInstances) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsDbInstances) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -304,7 +328,7 @@ func (j *jsiiProxy_DataAwsDbInstances) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instances aws_db_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances aws_db_instances} Data Source.
 func NewDataAwsDbInstances(scope constructs.Construct, id *string, config *DataAwsDbInstancesConfig) DataAwsDbInstances {
 	_init_.Initialize()
 
@@ -322,7 +346,7 @@ func NewDataAwsDbInstances(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instances aws_db_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instances aws_db_instances} Data Source.
 func NewDataAwsDbInstances_Override(d DataAwsDbInstances, scope constructs.Construct, id *string, config *DataAwsDbInstancesConfig) {
 	_init_.Initialize()
 
@@ -386,6 +410,17 @@ func (j *jsiiProxy_DataAwsDbInstances)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsDbInstances)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -687,6 +722,14 @@ func (d *jsiiProxy_DataAwsDbInstances) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsDbInstances) ResetTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTags",
 		nil, // no parameters
 	)
 }

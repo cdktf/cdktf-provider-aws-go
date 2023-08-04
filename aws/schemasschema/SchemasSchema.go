@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/schemas_schema aws_schemas_schema}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/schemas_schema aws_schemas_schema}.
 type SchemasSchema interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -494,7 +494,7 @@ func (j *jsiiProxy_SchemasSchema) VersionCreatedDate() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/schemas_schema aws_schemas_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/schemas_schema aws_schemas_schema} Resource.
 func NewSchemasSchema(scope constructs.Construct, id *string, config *SchemasSchemaConfig) SchemasSchema {
 	_init_.Initialize()
 
@@ -512,7 +512,7 @@ func NewSchemasSchema(scope constructs.Construct, id *string, config *SchemasSch
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/schemas_schema aws_schemas_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/schemas_schema aws_schemas_schema} Resource.
 func NewSchemasSchema_Override(s SchemasSchema, scope constructs.Construct, id *string, config *SchemasSchemaConfig) {
 	_init_.Initialize()
 

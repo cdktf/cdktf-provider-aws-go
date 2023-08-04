@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/s3_bucket aws_s3_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/s3_bucket aws_s3_bucket}.
 type DataAwsS3Bucket interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -358,7 +358,7 @@ func (j *jsiiProxy_DataAwsS3Bucket) WebsiteEndpoint() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/s3_bucket aws_s3_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/s3_bucket aws_s3_bucket} Data Source.
 func NewDataAwsS3Bucket(scope constructs.Construct, id *string, config *DataAwsS3BucketConfig) DataAwsS3Bucket {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewDataAwsS3Bucket(scope constructs.Construct, id *string, config *DataAwsS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/s3_bucket aws_s3_bucket} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/s3_bucket aws_s3_bucket} Data Source.
 func NewDataAwsS3Bucket_Override(d DataAwsS3Bucket, scope constructs.Construct, id *string, config *DataAwsS3BucketConfig) {
 	_init_.Initialize()
 

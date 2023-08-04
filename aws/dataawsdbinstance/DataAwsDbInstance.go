@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instance aws_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instance aws_db_instance}.
 type DataAwsDbInstance interface {
 	cdktf.TerraformDataSource
 	Address() *string
@@ -124,6 +124,7 @@ type DataAwsDbInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDbInstanceIdentifier()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -745,7 +746,7 @@ func (j *jsiiProxy_DataAwsDbInstance) VpcSecurityGroups() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instance aws_db_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instance aws_db_instance} Data Source.
 func NewDataAwsDbInstance(scope constructs.Construct, id *string, config *DataAwsDbInstanceConfig) DataAwsDbInstance {
 	_init_.Initialize()
 
@@ -763,7 +764,7 @@ func NewDataAwsDbInstance(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/data-sources/db_instance aws_db_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/db_instance aws_db_instance} Data Source.
 func NewDataAwsDbInstance_Override(d DataAwsDbInstance, scope constructs.Construct, id *string, config *DataAwsDbInstanceConfig) {
 	_init_.Initialize()
 
@@ -1116,6 +1117,14 @@ func (d *jsiiProxy_DataAwsDbInstance) OverrideLogicalId(newLogicalId *string) {
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataAwsDbInstance) ResetDbInstanceIdentifier() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDbInstanceIdentifier",
+		nil, // no parameters
 	)
 }
 

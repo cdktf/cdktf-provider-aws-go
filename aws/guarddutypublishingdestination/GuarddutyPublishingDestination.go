@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/guardduty_publishing_destination aws_guardduty_publishing_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/guardduty_publishing_destination aws_guardduty_publishing_destination}.
 type GuarddutyPublishingDestination interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -379,7 +379,7 @@ func (j *jsiiProxy_GuarddutyPublishingDestination) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/guardduty_publishing_destination aws_guardduty_publishing_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/guardduty_publishing_destination aws_guardduty_publishing_destination} Resource.
 func NewGuarddutyPublishingDestination(scope constructs.Construct, id *string, config *GuarddutyPublishingDestinationConfig) GuarddutyPublishingDestination {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewGuarddutyPublishingDestination(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.10.0/docs/resources/guardduty_publishing_destination aws_guardduty_publishing_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/guardduty_publishing_destination aws_guardduty_publishing_destination} Resource.
 func NewGuarddutyPublishingDestination_Override(g GuarddutyPublishingDestination, scope constructs.Construct, id *string, config *GuarddutyPublishingDestinationConfig) {
 	_init_.Initialize()
 

@@ -112,6 +112,17 @@ func (s *jsiiProxy_SagemakerEndpointDeploymentConfigOutputReference) validatePut
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerEndpointDeploymentConfigOutputReference) validatePutRollingUpdatePolicyParameters(value *SagemakerEndpointDeploymentConfigRollingUpdatePolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerEndpointDeploymentConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
