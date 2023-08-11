@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/config_organization_custom_policy_rule aws_config_organization_custom_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/config_organization_custom_policy_rule aws_config_organization_custom_policy_rule}.
 type ConfigOrganizationCustomPolicyRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -629,7 +629,7 @@ func (j *jsiiProxy_ConfigOrganizationCustomPolicyRule) TriggerTypesInput() *[]*s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/config_organization_custom_policy_rule aws_config_organization_custom_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/config_organization_custom_policy_rule aws_config_organization_custom_policy_rule} Resource.
 func NewConfigOrganizationCustomPolicyRule(scope constructs.Construct, id *string, config *ConfigOrganizationCustomPolicyRuleConfig) ConfigOrganizationCustomPolicyRule {
 	_init_.Initialize()
 
@@ -647,7 +647,7 @@ func NewConfigOrganizationCustomPolicyRule(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/config_organization_custom_policy_rule aws_config_organization_custom_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/config_organization_custom_policy_rule aws_config_organization_custom_policy_rule} Resource.
 func NewConfigOrganizationCustomPolicyRule_Override(c ConfigOrganizationCustomPolicyRule, scope constructs.Construct, id *string, config *ConfigOrganizationCustomPolicyRuleConfig) {
 	_init_.Initialize()
 

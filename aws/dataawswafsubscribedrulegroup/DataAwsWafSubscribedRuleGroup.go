@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/waf_subscribed_rule_group aws_waf_subscribed_rule_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/waf_subscribed_rule_group aws_waf_subscribed_rule_group}.
 type DataAwsWafSubscribedRuleGroup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -306,7 +306,7 @@ func (j *jsiiProxy_DataAwsWafSubscribedRuleGroup) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/waf_subscribed_rule_group aws_waf_subscribed_rule_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/waf_subscribed_rule_group aws_waf_subscribed_rule_group} Data Source.
 func NewDataAwsWafSubscribedRuleGroup(scope constructs.Construct, id *string, config *DataAwsWafSubscribedRuleGroupConfig) DataAwsWafSubscribedRuleGroup {
 	_init_.Initialize()
 
@@ -324,7 +324,7 @@ func NewDataAwsWafSubscribedRuleGroup(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/waf_subscribed_rule_group aws_waf_subscribed_rule_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/waf_subscribed_rule_group aws_waf_subscribed_rule_group} Data Source.
 func NewDataAwsWafSubscribedRuleGroup_Override(d DataAwsWafSubscribedRuleGroup, scope constructs.Construct, id *string, config *DataAwsWafSubscribedRuleGroupConfig) {
 	_init_.Initialize()
 

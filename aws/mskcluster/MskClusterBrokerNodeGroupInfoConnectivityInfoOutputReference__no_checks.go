@@ -48,6 +48,10 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoConnectivityInfoOutputReference)
 	return nil
 }
 
+func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoConnectivityInfoOutputReference) validatePutVpcConnectivityParameters(value *MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivity) error {
+	return nil
+}
+
 func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoConnectivityInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/rds_cluster aws_rds_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/rds_cluster aws_rds_cluster}.
 type RdsCluster interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -71,6 +71,9 @@ type RdsCluster interface {
 	DbSubnetGroupName() *string
 	SetDbSubnetGroupName(val *string)
 	DbSubnetGroupNameInput() *string
+	DbSystemId() *string
+	SetDbSystemId(val *string)
+	DbSystemIdInput() *string
 	DeletionProtection() interface{}
 	SetDeletionProtection(val interface{})
 	DeletionProtectionInput() interface{}
@@ -258,6 +261,7 @@ type RdsCluster interface {
 	ResetDbClusterParameterGroupName()
 	ResetDbInstanceParameterGroupName()
 	ResetDbSubnetGroupName()
+	ResetDbSystemId()
 	ResetDeletionProtection()
 	ResetEnabledCloudwatchLogsExports()
 	ResetEnableGlobalWriteForwarding()
@@ -666,6 +670,26 @@ func (j *jsiiProxy_RdsCluster) DbSubnetGroupNameInput() *string {
 	_jsii_.Get(
 		j,
 		"dbSubnetGroupNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) DbSystemId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dbSystemId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) DbSystemIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dbSystemIdInput",
 		&returns,
 	)
 	return returns
@@ -1562,7 +1586,7 @@ func (j *jsiiProxy_RdsCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
 func NewRdsCluster(scope constructs.Construct, id *string, config *RdsClusterConfig) RdsCluster {
 	_init_.Initialize()
 
@@ -1580,7 +1604,7 @@ func NewRdsCluster(scope constructs.Construct, id *string, config *RdsClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
 func NewRdsCluster_Override(r RdsCluster, scope constructs.Construct, id *string, config *RdsClusterConfig) {
 	_init_.Initialize()
 
@@ -1774,6 +1798,17 @@ func (j *jsiiProxy_RdsCluster)SetDbSubnetGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"dbSubnetGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsCluster)SetDbSystemId(val *string) {
+	if err := j.validateSetDbSystemIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dbSystemId",
 		val,
 	)
 }
@@ -2602,6 +2637,14 @@ func (r *jsiiProxy_RdsCluster) ResetDbSubnetGroupName() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetDbSubnetGroupName",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsCluster) ResetDbSystemId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDbSystemId",
 		nil, // no parameters
 	)
 }

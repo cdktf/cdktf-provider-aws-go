@@ -12,6 +12,7 @@ func init() {
 		reflect.TypeOf((*TransferProfile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "as2Id", GoGetter: "As2Id"},
 			_jsii_.MemberProperty{JsiiProperty: "as2IdInput", GoGetter: "As2IdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},

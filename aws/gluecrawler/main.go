@@ -44,6 +44,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "hudiTarget", GoGetter: "HudiTarget"},
+			_jsii_.MemberProperty{JsiiProperty: "hudiTargetInput", GoGetter: "HudiTargetInput"},
 			_jsii_.MemberProperty{JsiiProperty: "icebergTarget", GoGetter: "IcebergTarget"},
 			_jsii_.MemberProperty{JsiiProperty: "icebergTargetInput", GoGetter: "IcebergTargetInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
@@ -67,6 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCatalogTarget", GoMethod: "PutCatalogTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "putDeltaTarget", GoMethod: "PutDeltaTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "putDynamodbTarget", GoMethod: "PutDynamodbTarget"},
+			_jsii_.MemberMethod{JsiiMethod: "putHudiTarget", GoMethod: "PutHudiTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "putIcebergTarget", GoMethod: "PutIcebergTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "putJdbcTarget", GoMethod: "PutJdbcTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "putLakeFormationConfiguration", GoMethod: "PutLakeFormationConfiguration"},
@@ -84,6 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDeltaTarget", GoMethod: "ResetDeltaTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDynamodbTarget", GoMethod: "ResetDynamodbTarget"},
+			_jsii_.MemberMethod{JsiiMethod: "resetHudiTarget", GoMethod: "ResetHudiTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIcebergTarget", GoMethod: "ResetIcebergTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetJdbcTarget", GoMethod: "ResetJdbcTarget"},
@@ -331,6 +335,73 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GlueCrawlerDynamodbTargetOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.glueCrawler.GlueCrawlerHudiTarget",
+		reflect.TypeOf((*GlueCrawlerHudiTarget)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.glueCrawler.GlueCrawlerHudiTargetList",
+		reflect.TypeOf((*GlueCrawlerHudiTargetList)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "get", GoMethod: "Get"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GlueCrawlerHudiTargetList{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.glueCrawler.GlueCrawlerHudiTargetOutputReference",
+		reflect.TypeOf((*GlueCrawlerHudiTargetOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionName", GoGetter: "ConnectionName"},
+			_jsii_.MemberProperty{JsiiProperty: "connectionNameInput", GoGetter: "ConnectionNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "exclusions", GoGetter: "Exclusions"},
+			_jsii_.MemberProperty{JsiiProperty: "exclusionsInput", GoGetter: "ExclusionsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maximumTraversalDepth", GoGetter: "MaximumTraversalDepth"},
+			_jsii_.MemberProperty{JsiiProperty: "maximumTraversalDepthInput", GoGetter: "MaximumTraversalDepthInput"},
+			_jsii_.MemberProperty{JsiiProperty: "paths", GoGetter: "Paths"},
+			_jsii_.MemberProperty{JsiiProperty: "pathsInput", GoGetter: "PathsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConnectionName", GoMethod: "ResetConnectionName"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExclusions", GoMethod: "ResetExclusions"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GlueCrawlerHudiTargetOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

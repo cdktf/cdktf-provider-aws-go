@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api}.
 type AppsyncGraphqlApi interface {
 	cdktf.TerraformResource
 	AdditionalAuthenticationProvider() AppsyncGraphqlApiAdditionalAuthenticationProviderList
@@ -594,7 +594,7 @@ func (j *jsiiProxy_AppsyncGraphqlApi) XrayEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
 func NewAppsyncGraphqlApi(scope constructs.Construct, id *string, config *AppsyncGraphqlApiConfig) AppsyncGraphqlApi {
 	_init_.Initialize()
 
@@ -612,7 +612,7 @@ func NewAppsyncGraphqlApi(scope constructs.Construct, id *string, config *Appsyn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
 func NewAppsyncGraphqlApi_Override(a AppsyncGraphqlApi, scope constructs.Construct, id *string, config *AppsyncGraphqlApiConfig) {
 	_init_.Initialize()
 

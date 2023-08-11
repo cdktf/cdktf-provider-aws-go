@@ -52,6 +52,10 @@ func (f *jsiiProxy_FmsAdminAccount) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (f *jsiiProxy_FmsAdminAccount) validatePutTimeoutsParameters(value *FmsAdminAccountTimeouts) error {
+	return nil
+}
+
 func validateFmsAdminAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }

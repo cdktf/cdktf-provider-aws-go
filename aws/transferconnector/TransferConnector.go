@@ -9,12 +9,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/transfer_connector aws_transfer_connector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/transfer_connector aws_transfer_connector}.
 type TransferConnector interface {
 	cdktf.TerraformResource
 	AccessRole() *string
 	SetAccessRole(val *string)
 	AccessRoleInput() *string
+	Arn() *string
 	As2Config() TransferConnectorAs2ConfigOutputReference
 	As2ConfigInput() *TransferConnectorAs2Config
 	// Experimental.
@@ -142,6 +143,16 @@ func (j *jsiiProxy_TransferConnector) AccessRoleInput() *string {
 	_jsii_.Get(
 		j,
 		"accessRoleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransferConnector) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
 		&returns,
 	)
 	return returns
@@ -438,7 +449,7 @@ func (j *jsiiProxy_TransferConnector) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/transfer_connector aws_transfer_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/transfer_connector aws_transfer_connector} Resource.
 func NewTransferConnector(scope constructs.Construct, id *string, config *TransferConnectorConfig) TransferConnector {
 	_init_.Initialize()
 
@@ -456,7 +467,7 @@ func NewTransferConnector(scope constructs.Construct, id *string, config *Transf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/transfer_connector aws_transfer_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/transfer_connector aws_transfer_connector} Resource.
 func NewTransferConnector_Override(t TransferConnector, scope constructs.Construct, id *string, config *TransferConnectorConfig) {
 	_init_.Initialize()
 

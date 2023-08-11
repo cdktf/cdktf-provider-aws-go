@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/glue_crawler aws_glue_crawler}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/glue_crawler aws_glue_crawler}.
 type GlueCrawler interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -55,6 +55,8 @@ type GlueCrawler interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HudiTarget() GlueCrawlerHudiTargetList
+	HudiTargetInput() interface{}
 	IcebergTarget() GlueCrawlerIcebergTargetList
 	IcebergTargetInput() interface{}
 	Id() *string
@@ -145,6 +147,7 @@ type GlueCrawler interface {
 	PutCatalogTarget(value interface{})
 	PutDeltaTarget(value interface{})
 	PutDynamodbTarget(value interface{})
+	PutHudiTarget(value interface{})
 	PutIcebergTarget(value interface{})
 	PutJdbcTarget(value interface{})
 	PutLakeFormationConfiguration(value *GlueCrawlerLakeFormationConfiguration)
@@ -159,6 +162,7 @@ type GlueCrawler interface {
 	ResetDeltaTarget()
 	ResetDescription()
 	ResetDynamodbTarget()
+	ResetHudiTarget()
 	ResetIcebergTarget()
 	ResetId()
 	ResetJdbcTarget()
@@ -416,6 +420,26 @@ func (j *jsiiProxy_GlueCrawler) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCrawler) HudiTarget() GlueCrawlerHudiTargetList {
+	var returns GlueCrawlerHudiTargetList
+	_jsii_.Get(
+		j,
+		"hudiTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCrawler) HudiTargetInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hudiTargetInput",
 		&returns,
 	)
 	return returns
@@ -822,7 +846,7 @@ func (j *jsiiProxy_GlueCrawler) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/glue_crawler aws_glue_crawler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/glue_crawler aws_glue_crawler} Resource.
 func NewGlueCrawler(scope constructs.Construct, id *string, config *GlueCrawlerConfig) GlueCrawler {
 	_init_.Initialize()
 
@@ -840,7 +864,7 @@ func NewGlueCrawler(scope constructs.Construct, id *string, config *GlueCrawlerC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/glue_crawler aws_glue_crawler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/glue_crawler aws_glue_crawler} Resource.
 func NewGlueCrawler_Override(g GlueCrawler, scope constructs.Construct, id *string, config *GlueCrawlerConfig) {
 	_init_.Initialize()
 
@@ -1350,6 +1374,17 @@ func (g *jsiiProxy_GlueCrawler) PutDynamodbTarget(value interface{}) {
 	)
 }
 
+func (g *jsiiProxy_GlueCrawler) PutHudiTarget(value interface{}) {
+	if err := g.validatePutHudiTargetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHudiTarget",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GlueCrawler) PutIcebergTarget(value interface{}) {
 	if err := g.validatePutIcebergTargetParameters(value); err != nil {
 		panic(err)
@@ -1482,6 +1517,14 @@ func (g *jsiiProxy_GlueCrawler) ResetDynamodbTarget() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDynamodbTarget",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueCrawler) ResetHudiTarget() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHudiTarget",
 		nil, // no parameters
 	)
 }

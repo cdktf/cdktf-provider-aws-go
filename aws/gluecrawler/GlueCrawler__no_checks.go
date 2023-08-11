@@ -64,6 +64,10 @@ func (g *jsiiProxy_GlueCrawler) validatePutDynamodbTargetParameters(value interf
 	return nil
 }
 
+func (g *jsiiProxy_GlueCrawler) validatePutHudiTargetParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueCrawler) validatePutIcebergTargetParameters(value interface{}) error {
 	return nil
 }

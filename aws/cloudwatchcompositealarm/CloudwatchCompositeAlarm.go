@@ -9,12 +9,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_composite_alarm aws_cloudwatch_composite_alarm}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_composite_alarm aws_cloudwatch_composite_alarm}.
 type CloudwatchCompositeAlarm interface {
 	cdktf.TerraformResource
 	ActionsEnabled() interface{}
 	SetActionsEnabled(val interface{})
 	ActionsEnabledInput() interface{}
+	ActionsSuppressor() CloudwatchCompositeAlarmActionsSuppressorOutputReference
+	ActionsSuppressorInput() *CloudwatchCompositeAlarmActionsSuppressor
 	AlarmActions() *[]*string
 	SetAlarmActions(val *[]*string)
 	AlarmActionsInput() *[]*string
@@ -114,7 +116,9 @@ type CloudwatchCompositeAlarm interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutActionsSuppressor(value *CloudwatchCompositeAlarmActionsSuppressor)
 	ResetActionsEnabled()
+	ResetActionsSuppressor()
 	ResetAlarmActions()
 	ResetAlarmDescription()
 	ResetId()
@@ -155,6 +159,26 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm) ActionsEnabledInput() interface{} {
 	_jsii_.Get(
 		j,
 		"actionsEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchCompositeAlarm) ActionsSuppressor() CloudwatchCompositeAlarmActionsSuppressorOutputReference {
+	var returns CloudwatchCompositeAlarmActionsSuppressorOutputReference
+	_jsii_.Get(
+		j,
+		"actionsSuppressor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchCompositeAlarm) ActionsSuppressorInput() *CloudwatchCompositeAlarmActionsSuppressor {
+	var returns *CloudwatchCompositeAlarmActionsSuppressor
+	_jsii_.Get(
+		j,
+		"actionsSuppressorInput",
 		&returns,
 	)
 	return returns
@@ -511,7 +535,7 @@ func (j *jsiiProxy_CloudwatchCompositeAlarm) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_composite_alarm aws_cloudwatch_composite_alarm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_composite_alarm aws_cloudwatch_composite_alarm} Resource.
 func NewCloudwatchCompositeAlarm(scope constructs.Construct, id *string, config *CloudwatchCompositeAlarmConfig) CloudwatchCompositeAlarm {
 	_init_.Initialize()
 
@@ -529,7 +553,7 @@ func NewCloudwatchCompositeAlarm(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_composite_alarm aws_cloudwatch_composite_alarm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_composite_alarm aws_cloudwatch_composite_alarm} Resource.
 func NewCloudwatchCompositeAlarm_Override(c CloudwatchCompositeAlarm, scope constructs.Construct, id *string, config *CloudwatchCompositeAlarmConfig) {
 	_init_.Initialize()
 
@@ -984,10 +1008,29 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (c *jsiiProxy_CloudwatchCompositeAlarm) PutActionsSuppressor(value *CloudwatchCompositeAlarmActionsSuppressor) {
+	if err := c.validatePutActionsSuppressorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putActionsSuppressor",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudwatchCompositeAlarm) ResetActionsEnabled() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetActionsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchCompositeAlarm) ResetActionsSuppressor() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetActionsSuppressor",
 		nil, // no parameters
 	)
 }

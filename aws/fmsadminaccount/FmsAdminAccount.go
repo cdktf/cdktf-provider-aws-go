@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/fms_admin_account aws_fms_admin_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/fms_admin_account aws_fms_admin_account}.
 type FmsAdminAccount interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -64,6 +64,8 @@ type FmsAdminAccount interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() FmsAdminAccountTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -89,11 +91,13 @@ type FmsAdminAccount interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *FmsAdminAccountTimeouts)
 	ResetAccountId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -309,8 +313,28 @@ func (j *jsiiProxy_FmsAdminAccount) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FmsAdminAccount) Timeouts() FmsAdminAccountTimeoutsOutputReference {
+	var returns FmsAdminAccountTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/fms_admin_account aws_fms_admin_account} Resource.
+func (j *jsiiProxy_FmsAdminAccount) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/fms_admin_account aws_fms_admin_account} Resource.
 func NewFmsAdminAccount(scope constructs.Construct, id *string, config *FmsAdminAccountConfig) FmsAdminAccount {
 	_init_.Initialize()
 
@@ -328,7 +352,7 @@ func NewFmsAdminAccount(scope constructs.Construct, id *string, config *FmsAdmin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/fms_admin_account aws_fms_admin_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/fms_admin_account aws_fms_admin_account} Resource.
 func NewFmsAdminAccount_Override(f FmsAdminAccount, scope constructs.Construct, id *string, config *FmsAdminAccountConfig) {
 	_init_.Initialize()
 
@@ -695,6 +719,17 @@ func (f *jsiiProxy_FmsAdminAccount) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (f *jsiiProxy_FmsAdminAccount) PutTimeouts(value *FmsAdminAccountTimeouts) {
+	if err := f.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FmsAdminAccount) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		f,
@@ -715,6 +750,14 @@ func (f *jsiiProxy_FmsAdminAccount) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FmsAdminAccount) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

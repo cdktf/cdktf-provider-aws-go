@@ -26,6 +26,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "databaseName", GoGetter: "DatabaseName"},
 			_jsii_.MemberProperty{JsiiProperty: "dbClusterParameterGroupName", GoGetter: "DbClusterParameterGroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "dbSubnetGroupName", GoGetter: "DbSubnetGroupName"},
+			_jsii_.MemberProperty{JsiiProperty: "dbSystemId", GoGetter: "DbSystemId"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "enabledCloudwatchLogsExports", GoGetter: "EnabledCloudwatchLogsExports"},
 			_jsii_.MemberProperty{JsiiProperty: "endpoint", GoGetter: "Endpoint"},

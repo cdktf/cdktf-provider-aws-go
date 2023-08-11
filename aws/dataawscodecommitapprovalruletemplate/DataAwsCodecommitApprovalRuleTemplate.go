@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/codecommit_approval_rule_template aws_codecommit_approval_rule_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/codecommit_approval_rule_template aws_codecommit_approval_rule_template}.
 type DataAwsCodecommitApprovalRuleTemplate interface {
 	cdktf.TerraformDataSource
 	ApprovalRuleTemplateId() *string
@@ -358,7 +358,7 @@ func (j *jsiiProxy_DataAwsCodecommitApprovalRuleTemplate) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/codecommit_approval_rule_template aws_codecommit_approval_rule_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/codecommit_approval_rule_template aws_codecommit_approval_rule_template} Data Source.
 func NewDataAwsCodecommitApprovalRuleTemplate(scope constructs.Construct, id *string, config *DataAwsCodecommitApprovalRuleTemplateConfig) DataAwsCodecommitApprovalRuleTemplate {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewDataAwsCodecommitApprovalRuleTemplate(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/codecommit_approval_rule_template aws_codecommit_approval_rule_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/codecommit_approval_rule_template aws_codecommit_approval_rule_template} Data Source.
 func NewDataAwsCodecommitApprovalRuleTemplate_Override(d DataAwsCodecommitApprovalRuleTemplate, scope constructs.Construct, id *string, config *DataAwsCodecommitApprovalRuleTemplateConfig) {
 	_init_.Initialize()
 

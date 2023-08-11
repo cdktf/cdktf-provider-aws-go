@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/autoscaling_group aws_autoscaling_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/autoscaling_group aws_autoscaling_group}.
 type AutoscalingGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -76,6 +76,9 @@ type AutoscalingGroup interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IgnoreFailedScalingActivities() interface{}
+	SetIgnoreFailedScalingActivities(val interface{})
+	IgnoreFailedScalingActivitiesInput() interface{}
 	InitialLifecycleHook() AutoscalingGroupInitialLifecycleHookList
 	InitialLifecycleHookInput() interface{}
 	InstanceRefresh() AutoscalingGroupInstanceRefreshOutputReference
@@ -216,6 +219,7 @@ type AutoscalingGroup interface {
 	ResetHealthCheckGracePeriod()
 	ResetHealthCheckType()
 	ResetId()
+	ResetIgnoreFailedScalingActivities()
 	ResetInitialLifecycleHook()
 	ResetInstanceRefresh()
 	ResetLaunchConfiguration()
@@ -603,6 +607,26 @@ func (j *jsiiProxy_AutoscalingGroup) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroup) IgnoreFailedScalingActivities() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreFailedScalingActivities",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroup) IgnoreFailedScalingActivitiesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreFailedScalingActivitiesInput",
 		&returns,
 	)
 	return returns
@@ -1229,7 +1253,7 @@ func (j *jsiiProxy_AutoscalingGroup) WarmPoolSize() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
 func NewAutoscalingGroup(scope constructs.Construct, id *string, config *AutoscalingGroupConfig) AutoscalingGroup {
 	_init_.Initialize()
 
@@ -1247,7 +1271,7 @@ func NewAutoscalingGroup(scope constructs.Construct, id *string, config *Autosca
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
 func NewAutoscalingGroup_Override(a AutoscalingGroup, scope constructs.Construct, id *string, config *AutoscalingGroupConfig) {
 	_init_.Initialize()
 
@@ -1435,6 +1459,17 @@ func (j *jsiiProxy_AutoscalingGroup)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AutoscalingGroup)SetIgnoreFailedScalingActivities(val interface{}) {
+	if err := j.validateSetIgnoreFailedScalingActivitiesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ignoreFailedScalingActivities",
 		val,
 	)
 }
@@ -2121,6 +2156,14 @@ func (a *jsiiProxy_AutoscalingGroup) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutoscalingGroup) ResetIgnoreFailedScalingActivities() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIgnoreFailedScalingActivities",
 		nil, // no parameters
 	)
 }

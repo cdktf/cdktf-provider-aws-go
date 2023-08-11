@@ -100,6 +100,10 @@ func (j *jsiiProxy_RdsClusterInstance) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_RdsClusterInstance) validateSetCustomIamInstanceProfileParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsClusterInstance) validateSetDbParameterGroupNameParameters(val *string) error {
 	return nil
 }

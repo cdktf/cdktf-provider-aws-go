@@ -15,6 +15,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "accessRoleInput", GoGetter: "AccessRoleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "agreementId", GoGetter: "AgreementId"},
+			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "baseDirectory", GoGetter: "BaseDirectory"},
 			_jsii_.MemberProperty{JsiiProperty: "baseDirectoryInput", GoGetter: "BaseDirectoryInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},

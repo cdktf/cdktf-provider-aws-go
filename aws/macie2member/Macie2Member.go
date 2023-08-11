@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/macie2_member aws_macie2_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/macie2_member aws_macie2_member}.
 type Macie2Member interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -566,7 +566,7 @@ func (j *jsiiProxy_Macie2Member) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/macie2_member aws_macie2_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/macie2_member aws_macie2_member} Resource.
 func NewMacie2Member(scope constructs.Construct, id *string, config *Macie2MemberConfig) Macie2Member {
 	_init_.Initialize()
 
@@ -584,7 +584,7 @@ func NewMacie2Member(scope constructs.Construct, id *string, config *Macie2Membe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/macie2_member aws_macie2_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/macie2_member aws_macie2_member} Resource.
 func NewMacie2Member_Override(m Macie2Member, scope constructs.Construct, id *string, config *Macie2MemberConfig) {
 	_init_.Initialize()
 

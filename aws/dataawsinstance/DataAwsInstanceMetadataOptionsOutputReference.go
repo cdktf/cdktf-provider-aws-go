@@ -28,6 +28,7 @@ type DataAwsInstanceMetadataOptionsOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	HttpEndpoint() *string
+	HttpProtocolIpv6() *string
 	HttpPutResponseHopLimit() *float64
 	HttpTokens() *string
 	InstanceMetadataTags() *string
@@ -125,6 +126,16 @@ func (j *jsiiProxy_DataAwsInstanceMetadataOptionsOutputReference) HttpEndpoint()
 	_jsii_.Get(
 		j,
 		"httpEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsInstanceMetadataOptionsOutputReference) HttpProtocolIpv6() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpProtocolIpv6",
 		&returns,
 	)
 	return returns

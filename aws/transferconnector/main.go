@@ -14,6 +14,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "accessRole", GoGetter: "AccessRole"},
 			_jsii_.MemberProperty{JsiiProperty: "accessRoleInput", GoGetter: "AccessRoleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "as2Config", GoGetter: "As2Config"},
 			_jsii_.MemberProperty{JsiiProperty: "as2ConfigInput", GoGetter: "As2ConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},

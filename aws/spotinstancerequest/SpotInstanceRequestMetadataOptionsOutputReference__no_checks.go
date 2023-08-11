@@ -60,6 +60,10 @@ func (j *jsiiProxy_SpotInstanceRequestMetadataOptionsOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_SpotInstanceRequestMetadataOptionsOutputReference) validateSetHttpProtocolIpv6Parameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpotInstanceRequestMetadataOptionsOutputReference) validateSetHttpPutResponseHopLimitParameters(val *float64) error {
 	return nil
 }

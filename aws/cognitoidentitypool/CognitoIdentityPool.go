@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cognito_identity_pool aws_cognito_identity_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cognito_identity_pool aws_cognito_identity_pool}.
 type CognitoIdentityPool interface {
 	cdktf.TerraformResource
 	AllowClassicFlow() interface{}
@@ -536,7 +536,7 @@ func (j *jsiiProxy_CognitoIdentityPool) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cognito_identity_pool aws_cognito_identity_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cognito_identity_pool aws_cognito_identity_pool} Resource.
 func NewCognitoIdentityPool(scope constructs.Construct, id *string, config *CognitoIdentityPoolConfig) CognitoIdentityPool {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewCognitoIdentityPool(scope constructs.Construct, id *string, config *Cogn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cognito_identity_pool aws_cognito_identity_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cognito_identity_pool aws_cognito_identity_pool} Resource.
 func NewCognitoIdentityPool_Override(c CognitoIdentityPool, scope constructs.Construct, id *string, config *CognitoIdentityPoolConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target}.
 type CloudwatchEventTarget interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -91,6 +91,8 @@ type CloudwatchEventTarget interface {
 	RuleInput() *string
 	RunCommandTargets() CloudwatchEventTargetRunCommandTargetsList
 	RunCommandTargetsInput() interface{}
+	SagemakerPipelineTarget() CloudwatchEventTargetSagemakerPipelineTargetOutputReference
+	SagemakerPipelineTargetInput() *CloudwatchEventTargetSagemakerPipelineTarget
 	SqsTarget() CloudwatchEventTargetSqsTargetOutputReference
 	SqsTargetInput() *CloudwatchEventTargetSqsTarget
 	TargetId() *string
@@ -136,6 +138,7 @@ type CloudwatchEventTarget interface {
 	PutRedshiftTarget(value *CloudwatchEventTargetRedshiftTarget)
 	PutRetryPolicy(value *CloudwatchEventTargetRetryPolicy)
 	PutRunCommandTargets(value interface{})
+	PutSagemakerPipelineTarget(value *CloudwatchEventTargetSagemakerPipelineTarget)
 	PutSqsTarget(value *CloudwatchEventTargetSqsTarget)
 	ResetBatchTarget()
 	ResetDeadLetterConfig()
@@ -154,6 +157,7 @@ type CloudwatchEventTarget interface {
 	ResetRetryPolicy()
 	ResetRoleArn()
 	ResetRunCommandTargets()
+	ResetSagemakerPipelineTarget()
 	ResetSqsTarget()
 	ResetTargetId()
 	SynthesizeAttributes() *map[string]interface{}
@@ -621,6 +625,26 @@ func (j *jsiiProxy_CloudwatchEventTarget) RunCommandTargetsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CloudwatchEventTarget) SagemakerPipelineTarget() CloudwatchEventTargetSagemakerPipelineTargetOutputReference {
+	var returns CloudwatchEventTargetSagemakerPipelineTargetOutputReference
+	_jsii_.Get(
+		j,
+		"sagemakerPipelineTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) SagemakerPipelineTargetInput() *CloudwatchEventTargetSagemakerPipelineTarget {
+	var returns *CloudwatchEventTargetSagemakerPipelineTarget
+	_jsii_.Get(
+		j,
+		"sagemakerPipelineTargetInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudwatchEventTarget) SqsTarget() CloudwatchEventTargetSqsTargetOutputReference {
 	var returns CloudwatchEventTargetSqsTargetOutputReference
 	_jsii_.Get(
@@ -692,7 +716,7 @@ func (j *jsiiProxy_CloudwatchEventTarget) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target} Resource.
 func NewCloudwatchEventTarget(scope constructs.Construct, id *string, config *CloudwatchEventTargetConfig) CloudwatchEventTarget {
 	_init_.Initialize()
 
@@ -710,7 +734,7 @@ func NewCloudwatchEventTarget(scope constructs.Construct, id *string, config *Cl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target} Resource.
 func NewCloudwatchEventTarget_Override(c CloudwatchEventTarget, scope constructs.Construct, id *string, config *CloudwatchEventTargetConfig) {
 	_init_.Initialize()
 
@@ -1242,6 +1266,17 @@ func (c *jsiiProxy_CloudwatchEventTarget) PutRunCommandTargets(value interface{}
 	)
 }
 
+func (c *jsiiProxy_CloudwatchEventTarget) PutSagemakerPipelineTarget(value *CloudwatchEventTargetSagemakerPipelineTarget) {
+	if err := c.validatePutSagemakerPipelineTargetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putSagemakerPipelineTarget",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CloudwatchEventTarget) PutSqsTarget(value *CloudwatchEventTargetSqsTarget) {
 	if err := c.validatePutSqsTargetParameters(value); err != nil {
 		panic(err)
@@ -1369,6 +1404,14 @@ func (c *jsiiProxy_CloudwatchEventTarget) ResetRunCommandTargets() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRunCommandTargets",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ResetSagemakerPipelineTarget() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetSagemakerPipelineTarget",
 		nil, // no parameters
 	)
 }

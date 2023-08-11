@@ -156,6 +156,10 @@ func (j *jsiiProxy_AutoscalingGroup) validateSetIdParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_AutoscalingGroup) validateSetIgnoreFailedScalingActivitiesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingGroup) validateSetLaunchConfigurationParameters(val *string) error {
 	return nil
 }

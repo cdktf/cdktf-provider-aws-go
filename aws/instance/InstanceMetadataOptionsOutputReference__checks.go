@@ -171,6 +171,14 @@ func (j *jsiiProxy_InstanceMetadataOptionsOutputReference) validateSetHttpEndpoi
 	return nil
 }
 
+func (j *jsiiProxy_InstanceMetadataOptionsOutputReference) validateSetHttpProtocolIpv6Parameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_InstanceMetadataOptionsOutputReference) validateSetHttpPutResponseHopLimitParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

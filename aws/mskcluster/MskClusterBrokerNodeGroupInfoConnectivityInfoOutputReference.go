@@ -39,6 +39,8 @@ type MskClusterBrokerNodeGroupInfoConnectivityInfoOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VpcConnectivity() MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityOutputReference
+	VpcConnectivityInput() *MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivity
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -64,7 +66,9 @@ type MskClusterBrokerNodeGroupInfoConnectivityInfoOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPublicAccess(value *MskClusterBrokerNodeGroupInfoConnectivityInfoPublicAccess)
+	PutVpcConnectivity(value *MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivity)
 	ResetPublicAccess()
+	ResetVpcConnectivity()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -165,6 +169,26 @@ func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoConnectivityInfoOutputReference)
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoConnectivityInfoOutputReference) VpcConnectivity() MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityOutputReference {
+	var returns MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivityOutputReference
+	_jsii_.Get(
+		j,
+		"vpcConnectivity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskClusterBrokerNodeGroupInfoConnectivityInfoOutputReference) VpcConnectivityInput() *MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivity {
+	var returns *MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivity
+	_jsii_.Get(
+		j,
+		"vpcConnectivityInput",
 		&returns,
 	)
 	return returns
@@ -450,10 +474,29 @@ func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoConnectivityInfoOutputReference)
 	)
 }
 
+func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoConnectivityInfoOutputReference) PutVpcConnectivity(value *MskClusterBrokerNodeGroupInfoConnectivityInfoVpcConnectivity) {
+	if err := m.validatePutVpcConnectivityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putVpcConnectivity",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoConnectivityInfoOutputReference) ResetPublicAccess() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetPublicAccess",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskClusterBrokerNodeGroupInfoConnectivityInfoOutputReference) ResetVpcConnectivity() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetVpcConnectivity",
 		nil, // no parameters
 	)
 }

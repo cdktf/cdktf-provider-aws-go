@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/codeartifact_authorization_token aws_codeartifact_authorization_token}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/codeartifact_authorization_token aws_codeartifact_authorization_token}.
 type DataAwsCodeartifactAuthorizationToken interface {
 	cdktf.TerraformDataSource
 	AuthorizationToken() *string
@@ -351,7 +351,7 @@ func (j *jsiiProxy_DataAwsCodeartifactAuthorizationToken) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/codeartifact_authorization_token aws_codeartifact_authorization_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/codeartifact_authorization_token aws_codeartifact_authorization_token} Data Source.
 func NewDataAwsCodeartifactAuthorizationToken(scope constructs.Construct, id *string, config *DataAwsCodeartifactAuthorizationTokenConfig) DataAwsCodeartifactAuthorizationToken {
 	_init_.Initialize()
 
@@ -369,7 +369,7 @@ func NewDataAwsCodeartifactAuthorizationToken(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/data-sources/codeartifact_authorization_token aws_codeartifact_authorization_token} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/codeartifact_authorization_token aws_codeartifact_authorization_token} Data Source.
 func NewDataAwsCodeartifactAuthorizationToken_Override(d DataAwsCodeartifactAuthorizationToken, scope constructs.Construct, id *string, config *DataAwsCodeartifactAuthorizationTokenConfig) {
 	_init_.Initialize()
 

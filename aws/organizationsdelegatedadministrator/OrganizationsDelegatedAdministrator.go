@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/organizations_delegated_administrator aws_organizations_delegated_administrator}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/organizations_delegated_administrator aws_organizations_delegated_administrator}.
 type OrganizationsDelegatedAdministrator interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -409,7 +409,7 @@ func (j *jsiiProxy_OrganizationsDelegatedAdministrator) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/organizations_delegated_administrator aws_organizations_delegated_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/organizations_delegated_administrator aws_organizations_delegated_administrator} Resource.
 func NewOrganizationsDelegatedAdministrator(scope constructs.Construct, id *string, config *OrganizationsDelegatedAdministratorConfig) OrganizationsDelegatedAdministrator {
 	_init_.Initialize()
 
@@ -427,7 +427,7 @@ func NewOrganizationsDelegatedAdministrator(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/organizations_delegated_administrator aws_organizations_delegated_administrator} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/organizations_delegated_administrator aws_organizations_delegated_administrator} Resource.
 func NewOrganizationsDelegatedAdministrator_Override(o OrganizationsDelegatedAdministrator, scope constructs.Construct, id *string, config *OrganizationsDelegatedAdministratorConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/dx_lag aws_dx_lag}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/dx_lag aws_dx_lag}.
 type DxLag interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -519,7 +519,7 @@ func (j *jsiiProxy_DxLag) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/dx_lag aws_dx_lag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/dx_lag aws_dx_lag} Resource.
 func NewDxLag(scope constructs.Construct, id *string, config *DxLagConfig) DxLag {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewDxLag(scope constructs.Construct, id *string, config *DxLagConfig) DxLag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/dx_lag aws_dx_lag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/dx_lag aws_dx_lag} Resource.
 func NewDxLag_Override(d DxLag, scope constructs.Construct, id *string, config *DxLagConfig) {
 	_init_.Initialize()
 

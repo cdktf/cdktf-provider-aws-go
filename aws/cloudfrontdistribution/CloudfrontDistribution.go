@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution}.
 type CloudfrontDistribution interface {
 	cdktf.TerraformResource
 	Aliases() *[]*string
@@ -28,6 +28,9 @@ type CloudfrontDistribution interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ContinuousDeploymentPolicyId() *string
+	SetContinuousDeploymentPolicyId(val *string)
+	ContinuousDeploymentPolicyIdInput() *string
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -100,6 +103,9 @@ type CloudfrontDistribution interface {
 	RetainOnDelete() interface{}
 	SetRetainOnDelete(val interface{})
 	RetainOnDeleteInput() interface{}
+	Staging() interface{}
+	SetStaging(val interface{})
+	StagingInput() interface{}
 	Status() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
@@ -158,6 +164,7 @@ type CloudfrontDistribution interface {
 	PutViewerCertificate(value *CloudfrontDistributionViewerCertificate)
 	ResetAliases()
 	ResetComment()
+	ResetContinuousDeploymentPolicyId()
 	ResetCustomErrorResponse()
 	ResetDefaultRootObject()
 	ResetHttpVersion()
@@ -171,6 +178,7 @@ type CloudfrontDistribution interface {
 	ResetOverrideLogicalId()
 	ResetPriceClass()
 	ResetRetainOnDelete()
+	ResetStaging()
 	ResetTags()
 	ResetTagsAll()
 	ResetWaitForDeployment()
@@ -275,6 +283,26 @@ func (j *jsiiProxy_CloudfrontDistribution) ConstructNodeMetadata() *map[string]i
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudfrontDistribution) ContinuousDeploymentPolicyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"continuousDeploymentPolicyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudfrontDistribution) ContinuousDeploymentPolicyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"continuousDeploymentPolicyIdInput",
 		&returns,
 	)
 	return returns
@@ -710,6 +738,26 @@ func (j *jsiiProxy_CloudfrontDistribution) RetainOnDeleteInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CloudfrontDistribution) Staging() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"staging",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudfrontDistribution) StagingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"stagingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudfrontDistribution) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -871,7 +919,7 @@ func (j *jsiiProxy_CloudfrontDistribution) WebAclIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution} Resource.
 func NewCloudfrontDistribution(scope constructs.Construct, id *string, config *CloudfrontDistributionConfig) CloudfrontDistribution {
 	_init_.Initialize()
 
@@ -889,7 +937,7 @@ func NewCloudfrontDistribution(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.11.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudfront_distribution aws_cloudfront_distribution} Resource.
 func NewCloudfrontDistribution_Override(c CloudfrontDistribution, scope constructs.Construct, id *string, config *CloudfrontDistributionConfig) {
 	_init_.Initialize()
 
@@ -929,6 +977,17 @@ func (j *jsiiProxy_CloudfrontDistribution)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudfrontDistribution)SetContinuousDeploymentPolicyId(val *string) {
+	if err := j.validateSetContinuousDeploymentPolicyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"continuousDeploymentPolicyId",
 		val,
 	)
 }
@@ -1063,6 +1122,17 @@ func (j *jsiiProxy_CloudfrontDistribution)SetRetainOnDelete(val interface{}) {
 	_jsii_.Set(
 		j,
 		"retainOnDelete",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudfrontDistribution)SetStaging(val interface{}) {
+	if err := j.validateSetStagingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"staging",
 		val,
 	)
 }
@@ -1481,6 +1551,14 @@ func (c *jsiiProxy_CloudfrontDistribution) ResetComment() {
 	)
 }
 
+func (c *jsiiProxy_CloudfrontDistribution) ResetContinuousDeploymentPolicyId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetContinuousDeploymentPolicyId",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_CloudfrontDistribution) ResetCustomErrorResponse() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1565,6 +1643,14 @@ func (c *jsiiProxy_CloudfrontDistribution) ResetRetainOnDelete() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRetainOnDelete",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudfrontDistribution) ResetStaging() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetStaging",
 		nil, // no parameters
 	)
 }

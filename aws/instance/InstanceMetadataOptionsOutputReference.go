@@ -30,6 +30,9 @@ type InstanceMetadataOptionsOutputReference interface {
 	HttpEndpoint() *string
 	SetHttpEndpoint(val *string)
 	HttpEndpointInput() *string
+	HttpProtocolIpv6() *string
+	SetHttpProtocolIpv6(val *string)
+	HttpProtocolIpv6Input() *string
 	HttpPutResponseHopLimit() *float64
 	SetHttpPutResponseHopLimit(val *float64)
 	HttpPutResponseHopLimitInput() *float64
@@ -74,6 +77,7 @@ type InstanceMetadataOptionsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetHttpEndpoint()
+	ResetHttpProtocolIpv6()
 	ResetHttpPutResponseHopLimit()
 	ResetHttpTokens()
 	ResetInstanceMetadataTags()
@@ -147,6 +151,26 @@ func (j *jsiiProxy_InstanceMetadataOptionsOutputReference) HttpEndpointInput() *
 	_jsii_.Get(
 		j,
 		"httpEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstanceMetadataOptionsOutputReference) HttpProtocolIpv6() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpProtocolIpv6",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstanceMetadataOptionsOutputReference) HttpProtocolIpv6Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpProtocolIpv6Input",
 		&returns,
 	)
 	return returns
@@ -299,6 +323,17 @@ func (j *jsiiProxy_InstanceMetadataOptionsOutputReference)SetHttpEndpoint(val *s
 	_jsii_.Set(
 		j,
 		"httpEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_InstanceMetadataOptionsOutputReference)SetHttpProtocolIpv6(val *string) {
+	if err := j.validateSetHttpProtocolIpv6Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpProtocolIpv6",
 		val,
 	)
 }
@@ -559,6 +594,14 @@ func (i *jsiiProxy_InstanceMetadataOptionsOutputReference) ResetHttpEndpoint() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetHttpEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_InstanceMetadataOptionsOutputReference) ResetHttpProtocolIpv6() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetHttpProtocolIpv6",
 		nil, // no parameters
 	)
 }

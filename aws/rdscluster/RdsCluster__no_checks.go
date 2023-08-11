@@ -152,6 +152,10 @@ func (j *jsiiProxy_RdsCluster) validateSetDbSubnetGroupNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_RdsCluster) validateSetDbSystemIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsCluster) validateSetDeletionProtectionParameters(val interface{}) error {
 	return nil
 }

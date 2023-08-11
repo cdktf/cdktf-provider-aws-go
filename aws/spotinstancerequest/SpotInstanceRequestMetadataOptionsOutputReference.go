@@ -30,6 +30,9 @@ type SpotInstanceRequestMetadataOptionsOutputReference interface {
 	HttpEndpoint() *string
 	SetHttpEndpoint(val *string)
 	HttpEndpointInput() *string
+	HttpProtocolIpv6() *string
+	SetHttpProtocolIpv6(val *string)
+	HttpProtocolIpv6Input() *string
 	HttpPutResponseHopLimit() *float64
 	SetHttpPutResponseHopLimit(val *float64)
 	HttpPutResponseHopLimitInput() *float64
@@ -74,6 +77,7 @@ type SpotInstanceRequestMetadataOptionsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetHttpEndpoint()
+	ResetHttpProtocolIpv6()
 	ResetHttpPutResponseHopLimit()
 	ResetHttpTokens()
 	ResetInstanceMetadataTags()
@@ -147,6 +151,26 @@ func (j *jsiiProxy_SpotInstanceRequestMetadataOptionsOutputReference) HttpEndpoi
 	_jsii_.Get(
 		j,
 		"httpEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpotInstanceRequestMetadataOptionsOutputReference) HttpProtocolIpv6() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpProtocolIpv6",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpotInstanceRequestMetadataOptionsOutputReference) HttpProtocolIpv6Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpProtocolIpv6Input",
 		&returns,
 	)
 	return returns
@@ -299,6 +323,17 @@ func (j *jsiiProxy_SpotInstanceRequestMetadataOptionsOutputReference)SetHttpEndp
 	_jsii_.Set(
 		j,
 		"httpEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpotInstanceRequestMetadataOptionsOutputReference)SetHttpProtocolIpv6(val *string) {
+	if err := j.validateSetHttpProtocolIpv6Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"httpProtocolIpv6",
 		val,
 	)
 }
@@ -559,6 +594,14 @@ func (s *jsiiProxy_SpotInstanceRequestMetadataOptionsOutputReference) ResetHttpE
 	_jsii_.InvokeVoid(
 		s,
 		"resetHttpEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpotInstanceRequestMetadataOptionsOutputReference) ResetHttpProtocolIpv6() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetHttpProtocolIpv6",
 		nil, // no parameters
 	)
 }

@@ -108,6 +108,10 @@ func (j *jsiiProxy_CloudfrontDistribution) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_CloudfrontDistribution) validateSetContinuousDeploymentPolicyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontDistribution) validateSetCountParameters(val interface{}) error {
 	return nil
 }
@@ -145,6 +149,10 @@ func (j *jsiiProxy_CloudfrontDistribution) validateSetProvisionersParameters(val
 }
 
 func (j *jsiiProxy_CloudfrontDistribution) validateSetRetainOnDeleteParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudfrontDistribution) validateSetStagingParameters(val interface{}) error {
 	return nil
 }
 

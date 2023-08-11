@@ -52,6 +52,10 @@ func (c *jsiiProxy_CloudwatchCompositeAlarm) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (c *jsiiProxy_CloudwatchCompositeAlarm) validatePutActionsSuppressorParameters(value *CloudwatchCompositeAlarmActionsSuppressor) error {
+	return nil
+}
+
 func validateCloudwatchCompositeAlarm_IsConstructParameters(x interface{}) error {
 	return nil
 }
