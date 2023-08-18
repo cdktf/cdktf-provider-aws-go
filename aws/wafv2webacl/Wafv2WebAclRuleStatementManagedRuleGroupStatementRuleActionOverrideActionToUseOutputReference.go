@@ -16,6 +16,8 @@ type Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionTo
 	BlockInput() *Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlock
 	Captcha() Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptchaOutputReference
 	CaptchaInput() *Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptcha
+	Challenge() Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeOutputReference
+	ChallengeInput() *Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallenge
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -72,10 +74,12 @@ type Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionTo
 	PutAllow(value *Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllow)
 	PutBlock(value *Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseBlock)
 	PutCaptcha(value *Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCaptcha)
+	PutChallenge(value *Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallenge)
 	PutCount(value *Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCount)
 	ResetAllow()
 	ResetBlock()
 	ResetCaptcha()
+	ResetChallenge()
 	ResetCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -147,6 +151,26 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOv
 	_jsii_.Get(
 		j,
 		"captchaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseOutputReference) Challenge() Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeOutputReference {
+	var returns Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallengeOutputReference
+	_jsii_.Get(
+		j,
+		"challenge",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseOutputReference) ChallengeInput() *Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallenge {
+	var returns *Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallenge
+	_jsii_.Get(
+		j,
+		"challengeInput",
 		&returns,
 	)
 	return returns
@@ -544,6 +568,17 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOv
 	)
 }
 
+func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseOutputReference) PutChallenge(value *Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallenge) {
+	if err := w.validatePutChallengeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putChallenge",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseOutputReference) PutCount(value *Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCount) {
 	if err := w.validatePutCountParameters(value); err != nil {
 		panic(err)
@@ -575,6 +610,14 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOv
 	_jsii_.InvokeVoid(
 		w,
 		"resetCaptcha",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseOutputReference) ResetChallenge() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetChallenge",
 		nil, // no parameters
 	)
 }

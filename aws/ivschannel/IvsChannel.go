@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/ivs_channel aws_ivs_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/ivs_channel aws_ivs_channel}.
 type IvsChannel interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -511,7 +511,7 @@ func (j *jsiiProxy_IvsChannel) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/ivs_channel aws_ivs_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/ivs_channel aws_ivs_channel} Resource.
 func NewIvsChannel(scope constructs.Construct, id *string, config *IvsChannelConfig) IvsChannel {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewIvsChannel(scope constructs.Construct, id *string, config *IvsChannelCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/ivs_channel aws_ivs_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/ivs_channel aws_ivs_channel} Resource.
 func NewIvsChannel_Override(i IvsChannel, scope constructs.Construct, id *string, config *IvsChannelConfig) {
 	_init_.Initialize()
 

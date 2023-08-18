@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/imagebuilder_image_pipeline aws_imagebuilder_image_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/imagebuilder_image_pipeline aws_imagebuilder_image_pipeline}.
 type ImagebuilderImagePipeline interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -59,6 +59,8 @@ type ImagebuilderImagePipeline interface {
 	ImageRecipeArn() *string
 	SetImageRecipeArn(val *string)
 	ImageRecipeArnInput() *string
+	ImageScanningConfiguration() ImagebuilderImagePipelineImageScanningConfigurationOutputReference
+	ImageScanningConfigurationInput() *ImagebuilderImagePipelineImageScanningConfiguration
 	ImageTestsConfiguration() ImagebuilderImagePipelineImageTestsConfigurationOutputReference
 	ImageTestsConfigurationInput() *ImagebuilderImagePipelineImageTestsConfiguration
 	InfrastructureConfigurationArn() *string
@@ -126,6 +128,7 @@ type ImagebuilderImagePipeline interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutImageScanningConfiguration(value *ImagebuilderImagePipelineImageScanningConfiguration)
 	PutImageTestsConfiguration(value *ImagebuilderImagePipelineImageTestsConfiguration)
 	PutSchedule(value *ImagebuilderImagePipelineSchedule)
 	ResetContainerRecipeArn()
@@ -134,6 +137,7 @@ type ImagebuilderImagePipeline interface {
 	ResetEnhancedImageMetadataEnabled()
 	ResetId()
 	ResetImageRecipeArn()
+	ResetImageScanningConfiguration()
 	ResetImageTestsConfiguration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -407,6 +411,26 @@ func (j *jsiiProxy_ImagebuilderImagePipeline) ImageRecipeArnInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ImagebuilderImagePipeline) ImageScanningConfiguration() ImagebuilderImagePipelineImageScanningConfigurationOutputReference {
+	var returns ImagebuilderImagePipelineImageScanningConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"imageScanningConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImagebuilderImagePipeline) ImageScanningConfigurationInput() *ImagebuilderImagePipelineImageScanningConfiguration {
+	var returns *ImagebuilderImagePipelineImageScanningConfiguration
+	_jsii_.Get(
+		j,
+		"imageScanningConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ImagebuilderImagePipeline) ImageTestsConfiguration() ImagebuilderImagePipelineImageTestsConfigurationOutputReference {
 	var returns ImagebuilderImagePipelineImageTestsConfigurationOutputReference
 	_jsii_.Get(
@@ -638,7 +662,7 @@ func (j *jsiiProxy_ImagebuilderImagePipeline) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/imagebuilder_image_pipeline aws_imagebuilder_image_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/imagebuilder_image_pipeline aws_imagebuilder_image_pipeline} Resource.
 func NewImagebuilderImagePipeline(scope constructs.Construct, id *string, config *ImagebuilderImagePipelineConfig) ImagebuilderImagePipeline {
 	_init_.Initialize()
 
@@ -656,7 +680,7 @@ func NewImagebuilderImagePipeline(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/imagebuilder_image_pipeline aws_imagebuilder_image_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/imagebuilder_image_pipeline aws_imagebuilder_image_pipeline} Resource.
 func NewImagebuilderImagePipeline_Override(i ImagebuilderImagePipeline, scope constructs.Construct, id *string, config *ImagebuilderImagePipelineConfig) {
 	_init_.Initialize()
 
@@ -1122,6 +1146,17 @@ func (i *jsiiProxy_ImagebuilderImagePipeline) OverrideLogicalId(newLogicalId *st
 	)
 }
 
+func (i *jsiiProxy_ImagebuilderImagePipeline) PutImageScanningConfiguration(value *ImagebuilderImagePipelineImageScanningConfiguration) {
+	if err := i.validatePutImageScanningConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putImageScanningConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_ImagebuilderImagePipeline) PutImageTestsConfiguration(value *ImagebuilderImagePipelineImageTestsConfiguration) {
 	if err := i.validatePutImageTestsConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1188,6 +1223,14 @@ func (i *jsiiProxy_ImagebuilderImagePipeline) ResetImageRecipeArn() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetImageRecipeArn",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_ImagebuilderImagePipeline) ResetImageScanningConfiguration() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetImageScanningConfiguration",
 		nil, // no parameters
 	)
 }

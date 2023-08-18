@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetResourceShareStatus", GoMethod: "ResetResourceShareStatus"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
+			_jsii_.MemberProperty{JsiiProperty: "resourceArns", GoGetter: "ResourceArns"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceOwner", GoGetter: "ResourceOwner"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceOwnerInput", GoGetter: "ResourceOwnerInput"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceShareStatus", GoGetter: "ResourceShareStatus"},

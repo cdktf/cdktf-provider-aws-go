@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/imagebuilder_image_pipelines aws_imagebuilder_image_pipelines}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/imagebuilder_image_pipelines aws_imagebuilder_image_pipelines}.
 type DataAwsImagebuilderImagePipelines interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -304,7 +304,7 @@ func (j *jsiiProxy_DataAwsImagebuilderImagePipelines) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/imagebuilder_image_pipelines aws_imagebuilder_image_pipelines} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/imagebuilder_image_pipelines aws_imagebuilder_image_pipelines} Data Source.
 func NewDataAwsImagebuilderImagePipelines(scope constructs.Construct, id *string, config *DataAwsImagebuilderImagePipelinesConfig) DataAwsImagebuilderImagePipelines {
 	_init_.Initialize()
 
@@ -322,7 +322,7 @@ func NewDataAwsImagebuilderImagePipelines(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/imagebuilder_image_pipelines aws_imagebuilder_image_pipelines} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/imagebuilder_image_pipelines aws_imagebuilder_image_pipelines} Data Source.
 func NewDataAwsImagebuilderImagePipelines_Override(d DataAwsImagebuilderImagePipelines, scope constructs.Construct, id *string, config *DataAwsImagebuilderImagePipelinesConfig) {
 	_init_.Initialize()
 

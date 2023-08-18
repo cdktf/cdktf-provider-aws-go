@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/athena_data_catalog aws_athena_data_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/athena_data_catalog aws_athena_data_catalog}.
 type AthenaDataCatalog interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -437,7 +437,7 @@ func (j *jsiiProxy_AthenaDataCatalog) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/athena_data_catalog aws_athena_data_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/athena_data_catalog aws_athena_data_catalog} Resource.
 func NewAthenaDataCatalog(scope constructs.Construct, id *string, config *AthenaDataCatalogConfig) AthenaDataCatalog {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewAthenaDataCatalog(scope constructs.Construct, id *string, config *Athena
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/athena_data_catalog aws_athena_data_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/athena_data_catalog aws_athena_data_catalog} Resource.
 func NewAthenaDataCatalog_Override(a AthenaDataCatalog, scope constructs.Construct, id *string, config *AthenaDataCatalogConfig) {
 	_init_.Initialize()
 

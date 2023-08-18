@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/datasync_agent aws_datasync_agent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/datasync_agent aws_datasync_agent}.
 type DatasyncAgent interface {
 	cdktf.TerraformResource
 	ActivationKey() *string
@@ -537,7 +537,7 @@ func (j *jsiiProxy_DatasyncAgent) VpcEndpointIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/datasync_agent aws_datasync_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/datasync_agent aws_datasync_agent} Resource.
 func NewDatasyncAgent(scope constructs.Construct, id *string, config *DatasyncAgentConfig) DatasyncAgent {
 	_init_.Initialize()
 
@@ -555,7 +555,7 @@ func NewDatasyncAgent(scope constructs.Construct, id *string, config *DatasyncAg
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/datasync_agent aws_datasync_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/datasync_agent aws_datasync_agent} Resource.
 func NewDatasyncAgent_Override(d DatasyncAgent, scope constructs.Construct, id *string, config *DatasyncAgentConfig) {
 	_init_.Initialize()
 

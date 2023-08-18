@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/vpclattice_service_network_vpc_association aws_vpclattice_service_network_vpc_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/vpclattice_service_network_vpc_association aws_vpclattice_service_network_vpc_association}.
 type VpclatticeServiceNetworkVpcAssociation interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -461,7 +461,7 @@ func (j *jsiiProxy_VpclatticeServiceNetworkVpcAssociation) VpcIdentifierInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/vpclattice_service_network_vpc_association aws_vpclattice_service_network_vpc_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/vpclattice_service_network_vpc_association aws_vpclattice_service_network_vpc_association} Resource.
 func NewVpclatticeServiceNetworkVpcAssociation(scope constructs.Construct, id *string, config *VpclatticeServiceNetworkVpcAssociationConfig) VpclatticeServiceNetworkVpcAssociation {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewVpclatticeServiceNetworkVpcAssociation(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/vpclattice_service_network_vpc_association aws_vpclattice_service_network_vpc_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/vpclattice_service_network_vpc_association aws_vpclattice_service_network_vpc_association} Resource.
 func NewVpclatticeServiceNetworkVpcAssociation_Override(v VpclatticeServiceNetworkVpcAssociation, scope constructs.Construct, id *string, config *VpclatticeServiceNetworkVpcAssociationConfig) {
 	_init_.Initialize()
 

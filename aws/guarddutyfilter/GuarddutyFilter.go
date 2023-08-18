@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/guardduty_filter aws_guardduty_filter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/guardduty_filter aws_guardduty_filter}.
 type GuarddutyFilter interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -484,7 +484,7 @@ func (j *jsiiProxy_GuarddutyFilter) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/guardduty_filter aws_guardduty_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/guardduty_filter aws_guardduty_filter} Resource.
 func NewGuarddutyFilter(scope constructs.Construct, id *string, config *GuarddutyFilterConfig) GuarddutyFilter {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewGuarddutyFilter(scope constructs.Construct, id *string, config *Guarddut
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/guardduty_filter aws_guardduty_filter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/guardduty_filter aws_guardduty_filter} Resource.
 func NewGuarddutyFilter_Override(g GuarddutyFilter, scope constructs.Construct, id *string, config *GuarddutyFilterConfig) {
 	_init_.Initialize()
 

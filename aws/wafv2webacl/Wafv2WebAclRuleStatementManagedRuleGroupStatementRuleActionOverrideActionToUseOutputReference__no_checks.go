@@ -56,6 +56,10 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOv
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseOutputReference) validatePutChallengeParameters(value *Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseChallenge) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseOutputReference) validatePutCountParameters(value *Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseCount) error {
 	return nil
 }

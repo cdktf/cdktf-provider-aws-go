@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs aws}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs aws}.
 type AwsProvider interface {
 	cdktf.TerraformProvider
 	AccessKey() *string
@@ -80,6 +80,9 @@ type AwsProvider interface {
 	RetryMode() *string
 	SetRetryMode(val *string)
 	RetryModeInput() *string
+	S3UsEast1RegionalEndpoint() *string
+	SetS3UsEast1RegionalEndpoint(val *string)
+	S3UsEast1RegionalEndpointInput() *string
 	S3UsePathStyle() interface{}
 	SetS3UsePathStyle(val interface{})
 	S3UsePathStyleInput() interface{}
@@ -148,6 +151,7 @@ type AwsProvider interface {
 	ResetProfile()
 	ResetRegion()
 	ResetRetryMode()
+	ResetS3UsEast1RegionalEndpoint()
 	ResetS3UsePathStyle()
 	ResetSecretKey()
 	ResetSharedConfigFiles()
@@ -605,6 +609,26 @@ func (j *jsiiProxy_AwsProvider) RetryModeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AwsProvider) S3UsEast1RegionalEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"s3UsEast1RegionalEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsProvider) S3UsEast1RegionalEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"s3UsEast1RegionalEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AwsProvider) S3UsePathStyle() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -876,7 +900,7 @@ func (j *jsiiProxy_AwsProvider) UseFipsEndpointInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs aws} Resource.
 func NewAwsProvider(scope constructs.Construct, id *string, config *AwsProviderConfig) AwsProvider {
 	_init_.Initialize()
 
@@ -894,7 +918,7 @@ func NewAwsProvider(scope constructs.Construct, id *string, config *AwsProviderC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs aws} Resource.
 func NewAwsProvider_Override(a AwsProvider, scope constructs.Construct, id *string, config *AwsProviderConfig) {
 	_init_.Initialize()
 
@@ -1063,6 +1087,14 @@ func (j *jsiiProxy_AwsProvider)SetRetryMode(val *string) {
 	_jsii_.Set(
 		j,
 		"retryMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsProvider)SetS3UsEast1RegionalEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"s3UsEast1RegionalEndpoint",
 		val,
 	)
 }
@@ -1435,6 +1467,14 @@ func (a *jsiiProxy_AwsProvider) ResetRetryMode() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRetryMode",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsProvider) ResetS3UsEast1RegionalEndpoint() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetS3UsEast1RegionalEndpoint",
 		nil, // no parameters
 	)
 }

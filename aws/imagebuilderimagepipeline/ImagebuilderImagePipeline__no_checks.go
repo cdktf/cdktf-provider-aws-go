@@ -52,6 +52,10 @@ func (i *jsiiProxy_ImagebuilderImagePipeline) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (i *jsiiProxy_ImagebuilderImagePipeline) validatePutImageScanningConfigurationParameters(value *ImagebuilderImagePipelineImageScanningConfiguration) error {
+	return nil
+}
+
 func (i *jsiiProxy_ImagebuilderImagePipeline) validatePutImageTestsConfigurationParameters(value *ImagebuilderImagePipelineImageTestsConfiguration) error {
 	return nil
 }

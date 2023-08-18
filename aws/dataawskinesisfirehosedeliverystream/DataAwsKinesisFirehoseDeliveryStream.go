@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream}.
 type DataAwsKinesisFirehoseDeliveryStream interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -292,7 +292,7 @@ func (j *jsiiProxy_DataAwsKinesisFirehoseDeliveryStream) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Data Source.
 func NewDataAwsKinesisFirehoseDeliveryStream(scope constructs.Construct, id *string, config *DataAwsKinesisFirehoseDeliveryStreamConfig) DataAwsKinesisFirehoseDeliveryStream {
 	_init_.Initialize()
 
@@ -310,7 +310,7 @@ func NewDataAwsKinesisFirehoseDeliveryStream(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/data-sources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Data Source.
 func NewDataAwsKinesisFirehoseDeliveryStream_Override(d DataAwsKinesisFirehoseDeliveryStream, scope constructs.Construct, id *string, config *DataAwsKinesisFirehoseDeliveryStreamConfig) {
 	_init_.Initialize()
 

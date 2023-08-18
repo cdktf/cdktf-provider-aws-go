@@ -60,6 +60,10 @@ func (j *jsiiProxy_BudgetsBudgetActionTimeoutsOutputReference) validateSetCreate
 	return nil
 }
 
+func (j *jsiiProxy_BudgetsBudgetActionTimeoutsOutputReference) validateSetDeleteParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BudgetsBudgetActionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

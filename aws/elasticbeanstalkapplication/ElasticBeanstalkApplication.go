@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/elastic_beanstalk_application aws_elastic_beanstalk_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/elastic_beanstalk_application aws_elastic_beanstalk_application}.
 type ElasticBeanstalkApplication interface {
 	cdktf.TerraformResource
 	AppversionLifecycle() ElasticBeanstalkApplicationAppversionLifecycleOutputReference
@@ -416,7 +416,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplication) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/elastic_beanstalk_application aws_elastic_beanstalk_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/elastic_beanstalk_application aws_elastic_beanstalk_application} Resource.
 func NewElasticBeanstalkApplication(scope constructs.Construct, id *string, config *ElasticBeanstalkApplicationConfig) ElasticBeanstalkApplication {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewElasticBeanstalkApplication(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/elastic_beanstalk_application aws_elastic_beanstalk_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/elastic_beanstalk_application aws_elastic_beanstalk_application} Resource.
 func NewElasticBeanstalkApplication_Override(e ElasticBeanstalkApplication, scope constructs.Construct, id *string, config *ElasticBeanstalkApplicationConfig) {
 	_init_.Initialize()
 

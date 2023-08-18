@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudfront_realtime_log_config aws_cloudfront_realtime_log_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/cloudfront_realtime_log_config aws_cloudfront_realtime_log_config}.
 type CloudfrontRealtimeLogConfig interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -389,7 +389,7 @@ func (j *jsiiProxy_CloudfrontRealtimeLogConfig) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudfront_realtime_log_config aws_cloudfront_realtime_log_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/cloudfront_realtime_log_config aws_cloudfront_realtime_log_config} Resource.
 func NewCloudfrontRealtimeLogConfig(scope constructs.Construct, id *string, config *CloudfrontRealtimeLogConfigConfig) CloudfrontRealtimeLogConfig {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewCloudfrontRealtimeLogConfig(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/cloudfront_realtime_log_config aws_cloudfront_realtime_log_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/cloudfront_realtime_log_config aws_cloudfront_realtime_log_config} Resource.
 func NewCloudfrontRealtimeLogConfig_Override(c CloudfrontRealtimeLogConfig, scope constructs.Construct, id *string, config *CloudfrontRealtimeLogConfigConfig) {
 	_init_.Initialize()
 

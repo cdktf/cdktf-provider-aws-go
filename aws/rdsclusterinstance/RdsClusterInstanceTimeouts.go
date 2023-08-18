@@ -2,11 +2,11 @@ package rdsclusterinstance
 
 
 type RdsClusterInstanceTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/rds_cluster_instance#create RdsClusterInstance#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/rds_cluster_instance#create RdsClusterInstance#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/rds_cluster_instance#delete RdsClusterInstance#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/rds_cluster_instance#delete RdsClusterInstance#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/rds_cluster_instance#update RdsClusterInstance#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/rds_cluster_instance#update RdsClusterInstance#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

@@ -28,6 +28,9 @@ type BudgetsBudgetActionTimeoutsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Delete() *string
+	SetDelete(val *string)
+	DeleteInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -68,6 +71,7 @@ type BudgetsBudgetActionTimeoutsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
+	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -129,6 +133,26 @@ func (j *jsiiProxy_BudgetsBudgetActionTimeoutsOutputReference) CreationStack() *
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudgetActionTimeoutsOutputReference) Delete() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"delete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudgetActionTimeoutsOutputReference) DeleteInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deleteInput",
 		&returns,
 	)
 	return returns
@@ -251,6 +275,17 @@ func (j *jsiiProxy_BudgetsBudgetActionTimeoutsOutputReference)SetCreate(val *str
 	_jsii_.Set(
 		j,
 		"create",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudgetActionTimeoutsOutputReference)SetDelete(val *string) {
+	if err := j.validateSetDeleteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"delete",
 		val,
 	)
 }
@@ -489,6 +524,14 @@ func (b *jsiiProxy_BudgetsBudgetActionTimeoutsOutputReference) ResetCreate() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetCreate",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudgetActionTimeoutsOutputReference) ResetDelete() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetDelete",
 		nil, // no parameters
 	)
 }

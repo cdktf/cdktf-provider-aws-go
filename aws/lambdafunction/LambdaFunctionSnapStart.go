@@ -2,7 +2,7 @@ package lambdafunction
 
 
 type LambdaFunctionSnapStart struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/lambda_function#apply_on LambdaFunction#apply_on}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/lambda_function#apply_on LambdaFunction#apply_on}.
 	ApplyOn *string `field:"required" json:"applyOn" yaml:"applyOn"`
 }
 

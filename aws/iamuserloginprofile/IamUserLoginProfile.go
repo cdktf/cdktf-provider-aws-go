@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/iam_user_login_profile aws_iam_user_login_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/iam_user_login_profile aws_iam_user_login_profile}.
 type IamUserLoginProfile interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_IamUserLoginProfile) UserInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/iam_user_login_profile aws_iam_user_login_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/iam_user_login_profile aws_iam_user_login_profile} Resource.
 func NewIamUserLoginProfile(scope constructs.Construct, id *string, config *IamUserLoginProfileConfig) IamUserLoginProfile {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewIamUserLoginProfile(scope constructs.Construct, id *string, config *IamU
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/iam_user_login_profile aws_iam_user_login_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/iam_user_login_profile aws_iam_user_login_profile} Resource.
 func NewIamUserLoginProfile_Override(i IamUserLoginProfile, scope constructs.Construct, id *string, config *IamUserLoginProfileConfig) {
 	_init_.Initialize()
 

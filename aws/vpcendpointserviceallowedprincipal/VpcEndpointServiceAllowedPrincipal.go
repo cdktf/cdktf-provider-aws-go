@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/vpc_endpoint_service_allowed_principal aws_vpc_endpoint_service_allowed_principal}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/vpc_endpoint_service_allowed_principal aws_vpc_endpoint_service_allowed_principal}.
 type VpcEndpointServiceAllowedPrincipal interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -332,7 +332,7 @@ func (j *jsiiProxy_VpcEndpointServiceAllowedPrincipal) VpcEndpointServiceIdInput
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/vpc_endpoint_service_allowed_principal aws_vpc_endpoint_service_allowed_principal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/vpc_endpoint_service_allowed_principal aws_vpc_endpoint_service_allowed_principal} Resource.
 func NewVpcEndpointServiceAllowedPrincipal(scope constructs.Construct, id *string, config *VpcEndpointServiceAllowedPrincipalConfig) VpcEndpointServiceAllowedPrincipal {
 	_init_.Initialize()
 
@@ -350,7 +350,7 @@ func NewVpcEndpointServiceAllowedPrincipal(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/vpc_endpoint_service_allowed_principal aws_vpc_endpoint_service_allowed_principal} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/vpc_endpoint_service_allowed_principal aws_vpc_endpoint_service_allowed_principal} Resource.
 func NewVpcEndpointServiceAllowedPrincipal_Override(v VpcEndpointServiceAllowedPrincipal, scope constructs.Construct, id *string, config *VpcEndpointServiceAllowedPrincipalConfig) {
 	_init_.Initialize()
 

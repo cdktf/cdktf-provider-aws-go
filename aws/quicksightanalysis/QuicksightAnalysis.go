@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/quicksight_analysis aws_quicksight_analysis}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/quicksight_analysis aws_quicksight_analysis}.
 type QuicksightAnalysis interface {
 	cdktf.TerraformResource
 	AnalysisId() *string
@@ -627,7 +627,7 @@ func (j *jsiiProxy_QuicksightAnalysis) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/quicksight_analysis aws_quicksight_analysis} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/quicksight_analysis aws_quicksight_analysis} Resource.
 func NewQuicksightAnalysis(scope constructs.Construct, id *string, config *QuicksightAnalysisConfig) QuicksightAnalysis {
 	_init_.Initialize()
 
@@ -645,7 +645,7 @@ func NewQuicksightAnalysis(scope constructs.Construct, id *string, config *Quick
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.12.0/docs/resources/quicksight_analysis aws_quicksight_analysis} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/quicksight_analysis aws_quicksight_analysis} Resource.
 func NewQuicksightAnalysis_Override(q QuicksightAnalysis, scope constructs.Construct, id *string, config *QuicksightAnalysisConfig) {
 	_init_.Initialize()
 
