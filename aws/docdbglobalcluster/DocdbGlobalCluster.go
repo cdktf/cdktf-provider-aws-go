@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/docdb_global_cluster aws_docdb_global_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/docdb_global_cluster aws_docdb_global_cluster}.
 type DocdbGlobalCluster interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -521,7 +521,7 @@ func (j *jsiiProxy_DocdbGlobalCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/docdb_global_cluster aws_docdb_global_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/docdb_global_cluster aws_docdb_global_cluster} Resource.
 func NewDocdbGlobalCluster(scope constructs.Construct, id *string, config *DocdbGlobalClusterConfig) DocdbGlobalCluster {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewDocdbGlobalCluster(scope constructs.Construct, id *string, config *Docdb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/docdb_global_cluster aws_docdb_global_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/docdb_global_cluster aws_docdb_global_cluster} Resource.
 func NewDocdbGlobalCluster_Override(d DocdbGlobalCluster, scope constructs.Construct, id *string, config *DocdbGlobalClusterConfig) {
 	_init_.Initialize()
 

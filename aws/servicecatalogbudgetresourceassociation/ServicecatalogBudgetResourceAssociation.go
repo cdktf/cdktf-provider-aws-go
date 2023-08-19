@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/servicecatalog_budget_resource_association aws_servicecatalog_budget_resource_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/servicecatalog_budget_resource_association aws_servicecatalog_budget_resource_association}.
 type ServicecatalogBudgetResourceAssociation interface {
 	cdktf.TerraformResource
 	BudgetName() *string
@@ -356,7 +356,7 @@ func (j *jsiiProxy_ServicecatalogBudgetResourceAssociation) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/servicecatalog_budget_resource_association aws_servicecatalog_budget_resource_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/servicecatalog_budget_resource_association aws_servicecatalog_budget_resource_association} Resource.
 func NewServicecatalogBudgetResourceAssociation(scope constructs.Construct, id *string, config *ServicecatalogBudgetResourceAssociationConfig) ServicecatalogBudgetResourceAssociation {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewServicecatalogBudgetResourceAssociation(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/servicecatalog_budget_resource_association aws_servicecatalog_budget_resource_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/servicecatalog_budget_resource_association aws_servicecatalog_budget_resource_association} Resource.
 func NewServicecatalogBudgetResourceAssociation_Override(s ServicecatalogBudgetResourceAssociation, scope constructs.Construct, id *string, config *ServicecatalogBudgetResourceAssociationConfig) {
 	_init_.Initialize()
 

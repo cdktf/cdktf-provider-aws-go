@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/iam_user_ssh_key aws_iam_user_ssh_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/iam_user_ssh_key aws_iam_user_ssh_key}.
 type DataAwsIamUserSshKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -360,7 +360,7 @@ func (j *jsiiProxy_DataAwsIamUserSshKey) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/iam_user_ssh_key aws_iam_user_ssh_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/iam_user_ssh_key aws_iam_user_ssh_key} Data Source.
 func NewDataAwsIamUserSshKey(scope constructs.Construct, id *string, config *DataAwsIamUserSshKeyConfig) DataAwsIamUserSshKey {
 	_init_.Initialize()
 
@@ -378,7 +378,7 @@ func NewDataAwsIamUserSshKey(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/iam_user_ssh_key aws_iam_user_ssh_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/iam_user_ssh_key aws_iam_user_ssh_key} Data Source.
 func NewDataAwsIamUserSshKey_Override(d DataAwsIamUserSshKey, scope constructs.Construct, id *string, config *DataAwsIamUserSshKeyConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/db_cluster_snapshot aws_db_cluster_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/db_cluster_snapshot aws_db_cluster_snapshot}.
 type DataAwsDbClusterSnapshot interface {
 	cdktf.TerraformDataSource
 	AllocatedStorage() *float64
@@ -569,7 +569,7 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/db_cluster_snapshot aws_db_cluster_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/db_cluster_snapshot aws_db_cluster_snapshot} Data Source.
 func NewDataAwsDbClusterSnapshot(scope constructs.Construct, id *string, config *DataAwsDbClusterSnapshotConfig) DataAwsDbClusterSnapshot {
 	_init_.Initialize()
 
@@ -587,7 +587,7 @@ func NewDataAwsDbClusterSnapshot(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/db_cluster_snapshot aws_db_cluster_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/db_cluster_snapshot aws_db_cluster_snapshot} Data Source.
 func NewDataAwsDbClusterSnapshot_Override(d DataAwsDbClusterSnapshot, scope constructs.Construct, id *string, config *DataAwsDbClusterSnapshotConfig) {
 	_init_.Initialize()
 

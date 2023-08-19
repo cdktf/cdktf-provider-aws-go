@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/dx_macsec_key_association aws_dx_macsec_key_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/dx_macsec_key_association aws_dx_macsec_key_association}.
 type DxMacsecKeyAssociation interface {
 	cdktf.TerraformResource
 	Cak() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_DxMacsecKeyAssociation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/dx_macsec_key_association aws_dx_macsec_key_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/dx_macsec_key_association aws_dx_macsec_key_association} Resource.
 func NewDxMacsecKeyAssociation(scope constructs.Construct, id *string, config *DxMacsecKeyAssociationConfig) DxMacsecKeyAssociation {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewDxMacsecKeyAssociation(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/dx_macsec_key_association aws_dx_macsec_key_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/dx_macsec_key_association aws_dx_macsec_key_association} Resource.
 func NewDxMacsecKeyAssociation_Override(d DxMacsecKeyAssociation, scope constructs.Construct, id *string, config *DxMacsecKeyAssociationConfig) {
 	_init_.Initialize()
 

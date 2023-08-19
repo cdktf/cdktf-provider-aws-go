@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/ram_resource_share aws_ram_resource_share}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/ram_resource_share aws_ram_resource_share}.
 type RamResourceShare interface {
 	cdktf.TerraformResource
 	AllowExternalPrincipals() interface{}
@@ -440,7 +440,7 @@ func (j *jsiiProxy_RamResourceShare) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/ram_resource_share aws_ram_resource_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/ram_resource_share aws_ram_resource_share} Resource.
 func NewRamResourceShare(scope constructs.Construct, id *string, config *RamResourceShareConfig) RamResourceShare {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewRamResourceShare(scope constructs.Construct, id *string, config *RamReso
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/ram_resource_share aws_ram_resource_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/ram_resource_share aws_ram_resource_share} Resource.
 func NewRamResourceShare_Override(r RamResourceShare, scope constructs.Construct, id *string, config *RamResourceShareConfig) {
 	_init_.Initialize()
 

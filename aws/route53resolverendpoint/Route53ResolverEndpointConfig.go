@@ -19,28 +19,28 @@ type Route53ResolverEndpointConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/route53_resolver_endpoint#direction Route53ResolverEndpoint#direction}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/route53_resolver_endpoint#direction Route53ResolverEndpoint#direction}.
 	Direction *string `field:"required" json:"direction" yaml:"direction"`
 	// ip_address block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/route53_resolver_endpoint#ip_address Route53ResolverEndpoint#ip_address}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/route53_resolver_endpoint#ip_address Route53ResolverEndpoint#ip_address}
 	IpAddress interface{} `field:"required" json:"ipAddress" yaml:"ipAddress"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/route53_resolver_endpoint#security_group_ids Route53ResolverEndpoint#security_group_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/route53_resolver_endpoint#security_group_ids Route53ResolverEndpoint#security_group_ids}.
 	SecurityGroupIds *[]*string `field:"required" json:"securityGroupIds" yaml:"securityGroupIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/route53_resolver_endpoint#id Route53ResolverEndpoint#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/route53_resolver_endpoint#id Route53ResolverEndpoint#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/route53_resolver_endpoint#name Route53ResolverEndpoint#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/route53_resolver_endpoint#name Route53ResolverEndpoint#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/route53_resolver_endpoint#tags Route53ResolverEndpoint#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/route53_resolver_endpoint#tags Route53ResolverEndpoint#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/route53_resolver_endpoint#tags_all Route53ResolverEndpoint#tags_all}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/route53_resolver_endpoint#tags_all Route53ResolverEndpoint#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/route53_resolver_endpoint#timeouts Route53ResolverEndpoint#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/route53_resolver_endpoint#timeouts Route53ResolverEndpoint#timeouts}
 	Timeouts *Route53ResolverEndpointTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

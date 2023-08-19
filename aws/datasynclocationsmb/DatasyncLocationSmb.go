@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/datasync_location_smb aws_datasync_location_smb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datasync_location_smb aws_datasync_location_smb}.
 type DatasyncLocationSmb interface {
 	cdktf.TerraformResource
 	AgentArns() *[]*string
@@ -519,7 +519,7 @@ func (j *jsiiProxy_DatasyncLocationSmb) UserInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/datasync_location_smb aws_datasync_location_smb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datasync_location_smb aws_datasync_location_smb} Resource.
 func NewDatasyncLocationSmb(scope constructs.Construct, id *string, config *DatasyncLocationSmbConfig) DatasyncLocationSmb {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewDatasyncLocationSmb(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/datasync_location_smb aws_datasync_location_smb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/datasync_location_smb aws_datasync_location_smb} Resource.
 func NewDatasyncLocationSmb_Override(d DatasyncLocationSmb, scope constructs.Construct, id *string, config *DatasyncLocationSmbConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/grafana_workspace_saml_configuration aws_grafana_workspace_saml_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/grafana_workspace_saml_configuration aws_grafana_workspace_saml_configuration}.
 type GrafanaWorkspaceSamlConfiguration interface {
 	cdktf.TerraformResource
 	AdminRoleValues() *[]*string
@@ -631,7 +631,7 @@ func (j *jsiiProxy_GrafanaWorkspaceSamlConfiguration) WorkspaceIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/grafana_workspace_saml_configuration aws_grafana_workspace_saml_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/grafana_workspace_saml_configuration aws_grafana_workspace_saml_configuration} Resource.
 func NewGrafanaWorkspaceSamlConfiguration(scope constructs.Construct, id *string, config *GrafanaWorkspaceSamlConfigurationConfig) GrafanaWorkspaceSamlConfiguration {
 	_init_.Initialize()
 
@@ -649,7 +649,7 @@ func NewGrafanaWorkspaceSamlConfiguration(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/grafana_workspace_saml_configuration aws_grafana_workspace_saml_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/grafana_workspace_saml_configuration aws_grafana_workspace_saml_configuration} Resource.
 func NewGrafanaWorkspaceSamlConfiguration_Override(g GrafanaWorkspaceSamlConfiguration, scope constructs.Construct, id *string, config *GrafanaWorkspaceSamlConfigurationConfig) {
 	_init_.Initialize()
 

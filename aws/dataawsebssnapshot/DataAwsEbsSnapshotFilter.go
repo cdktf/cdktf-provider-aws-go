@@ -2,9 +2,9 @@ package dataawsebssnapshot
 
 
 type DataAwsEbsSnapshotFilter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ebs_snapshot#name DataAwsEbsSnapshot#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/ebs_snapshot#name DataAwsEbsSnapshot#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/ebs_snapshot#values DataAwsEbsSnapshot#values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/ebs_snapshot#values DataAwsEbsSnapshot#values}.
 	Values *[]*string `field:"required" json:"values" yaml:"values"`
 }
 

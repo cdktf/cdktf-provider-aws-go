@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/appconfig_application aws_appconfig_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/appconfig_application aws_appconfig_application}.
 type AppconfigApplication interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -392,7 +392,7 @@ func (j *jsiiProxy_AppconfigApplication) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/appconfig_application aws_appconfig_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/appconfig_application aws_appconfig_application} Resource.
 func NewAppconfigApplication(scope constructs.Construct, id *string, config *AppconfigApplicationConfig) AppconfigApplication {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewAppconfigApplication(scope constructs.Construct, id *string, config *App
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/appconfig_application aws_appconfig_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/appconfig_application aws_appconfig_application} Resource.
 func NewAppconfigApplication_Override(a AppconfigApplication, scope constructs.Construct, id *string, config *AppconfigApplicationConfig) {
 	_init_.Initialize()
 

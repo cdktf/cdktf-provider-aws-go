@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/organizations_policies_for_target aws_organizations_policies_for_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/organizations_policies_for_target aws_organizations_policies_for_target}.
 type DataAwsOrganizationsPoliciesForTarget interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -315,7 +315,7 @@ func (j *jsiiProxy_DataAwsOrganizationsPoliciesForTarget) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/organizations_policies_for_target aws_organizations_policies_for_target} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/organizations_policies_for_target aws_organizations_policies_for_target} Data Source.
 func NewDataAwsOrganizationsPoliciesForTarget(scope constructs.Construct, id *string, config *DataAwsOrganizationsPoliciesForTargetConfig) DataAwsOrganizationsPoliciesForTarget {
 	_init_.Initialize()
 
@@ -333,7 +333,7 @@ func NewDataAwsOrganizationsPoliciesForTarget(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/organizations_policies_for_target aws_organizations_policies_for_target} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/organizations_policies_for_target aws_organizations_policies_for_target} Data Source.
 func NewDataAwsOrganizationsPoliciesForTarget_Override(d DataAwsOrganizationsPoliciesForTarget, scope constructs.Construct, id *string, config *DataAwsOrganizationsPoliciesForTargetConfig) {
 	_init_.Initialize()
 

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/lambda_code_signing_config aws_lambda_code_signing_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/lambda_code_signing_config aws_lambda_code_signing_config}.
 type DataAwsLambdaCodeSigningConfig interface {
 	cdktf.TerraformDataSource
 	AllowedPublishers() DataAwsLambdaCodeSigningConfigAllowedPublishersList
@@ -336,7 +336,7 @@ func (j *jsiiProxy_DataAwsLambdaCodeSigningConfig) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/lambda_code_signing_config aws_lambda_code_signing_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/lambda_code_signing_config aws_lambda_code_signing_config} Data Source.
 func NewDataAwsLambdaCodeSigningConfig(scope constructs.Construct, id *string, config *DataAwsLambdaCodeSigningConfigConfig) DataAwsLambdaCodeSigningConfig {
 	_init_.Initialize()
 
@@ -354,7 +354,7 @@ func NewDataAwsLambdaCodeSigningConfig(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/lambda_code_signing_config aws_lambda_code_signing_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/lambda_code_signing_config aws_lambda_code_signing_config} Data Source.
 func NewDataAwsLambdaCodeSigningConfig_Override(d DataAwsLambdaCodeSigningConfig, scope constructs.Construct, id *string, config *DataAwsLambdaCodeSigningConfigConfig) {
 	_init_.Initialize()
 

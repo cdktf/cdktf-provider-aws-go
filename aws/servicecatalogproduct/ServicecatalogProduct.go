@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/servicecatalog_product aws_servicecatalog_product}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/servicecatalog_product aws_servicecatalog_product}.
 type ServicecatalogProduct interface {
 	cdktf.TerraformResource
 	AcceptLanguage() *string
@@ -638,7 +638,7 @@ func (j *jsiiProxy_ServicecatalogProduct) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/servicecatalog_product aws_servicecatalog_product} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/servicecatalog_product aws_servicecatalog_product} Resource.
 func NewServicecatalogProduct(scope constructs.Construct, id *string, config *ServicecatalogProductConfig) ServicecatalogProduct {
 	_init_.Initialize()
 
@@ -656,7 +656,7 @@ func NewServicecatalogProduct(scope constructs.Construct, id *string, config *Se
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/servicecatalog_product aws_servicecatalog_product} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/servicecatalog_product aws_servicecatalog_product} Resource.
 func NewServicecatalogProduct_Override(s ServicecatalogProduct, scope constructs.Construct, id *string, config *ServicecatalogProductConfig) {
 	_init_.Initialize()
 

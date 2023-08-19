@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/identitystore_group_membership aws_identitystore_group_membership}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/identitystore_group_membership aws_identitystore_group_membership}.
 type IdentitystoreGroupMembership interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -366,7 +366,7 @@ func (j *jsiiProxy_IdentitystoreGroupMembership) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/identitystore_group_membership aws_identitystore_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/identitystore_group_membership aws_identitystore_group_membership} Resource.
 func NewIdentitystoreGroupMembership(scope constructs.Construct, id *string, config *IdentitystoreGroupMembershipConfig) IdentitystoreGroupMembership {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewIdentitystoreGroupMembership(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/identitystore_group_membership aws_identitystore_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/identitystore_group_membership aws_identitystore_group_membership} Resource.
 func NewIdentitystoreGroupMembership_Override(i IdentitystoreGroupMembership, scope constructs.Construct, id *string, config *IdentitystoreGroupMembershipConfig) {
 	_init_.Initialize()
 

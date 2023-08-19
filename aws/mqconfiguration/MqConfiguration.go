@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/mq_configuration aws_mq_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/mq_configuration aws_mq_configuration}.
 type MqConfiguration interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -496,7 +496,7 @@ func (j *jsiiProxy_MqConfiguration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/mq_configuration aws_mq_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/mq_configuration aws_mq_configuration} Resource.
 func NewMqConfiguration(scope constructs.Construct, id *string, config *MqConfigurationConfig) MqConfiguration {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewMqConfiguration(scope constructs.Construct, id *string, config *MqConfig
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/resources/mq_configuration aws_mq_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/mq_configuration aws_mq_configuration} Resource.
 func NewMqConfiguration_Override(m MqConfiguration, scope constructs.Construct, id *string, config *MqConfigurationConfig) {
 	_init_.Initialize()
 

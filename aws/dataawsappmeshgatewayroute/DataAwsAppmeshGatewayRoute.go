@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/appmesh_gateway_route aws_appmesh_gateway_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/appmesh_gateway_route aws_appmesh_gateway_route}.
 type DataAwsAppmeshGatewayRoute interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -430,7 +430,7 @@ func (j *jsiiProxy_DataAwsAppmeshGatewayRoute) VirtualGatewayNameInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/appmesh_gateway_route aws_appmesh_gateway_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/appmesh_gateway_route aws_appmesh_gateway_route} Data Source.
 func NewDataAwsAppmeshGatewayRoute(scope constructs.Construct, id *string, config *DataAwsAppmeshGatewayRouteConfig) DataAwsAppmeshGatewayRoute {
 	_init_.Initialize()
 
@@ -448,7 +448,7 @@ func NewDataAwsAppmeshGatewayRoute(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.0/docs/data-sources/appmesh_gateway_route aws_appmesh_gateway_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/appmesh_gateway_route aws_appmesh_gateway_route} Data Source.
 func NewDataAwsAppmeshGatewayRoute_Override(d DataAwsAppmeshGatewayRoute, scope constructs.Construct, id *string, config *DataAwsAppmeshGatewayRouteConfig) {
 	_init_.Initialize()
 
