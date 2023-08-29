@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package servicecatalogportfolio
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/servicecatalogportfolio/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicecatalogportfolio/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

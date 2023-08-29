@@ -2,9 +2,9 @@ package medialivechannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v16/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v16/medialivechannel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/medialivechannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
