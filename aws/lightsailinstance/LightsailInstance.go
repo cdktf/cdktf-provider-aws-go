@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/lightsail_instance aws_lightsail_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/lightsail_instance aws_lightsail_instance}.
 type LightsailInstance interface {
 	cdktf.TerraformResource
 	AddOn() LightsailInstanceAddOnOutputReference
@@ -624,7 +624,7 @@ func (j *jsiiProxy_LightsailInstance) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/lightsail_instance aws_lightsail_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/lightsail_instance aws_lightsail_instance} Resource.
 func NewLightsailInstance(scope constructs.Construct, id *string, config *LightsailInstanceConfig) LightsailInstance {
 	_init_.Initialize()
 
@@ -642,7 +642,7 @@ func NewLightsailInstance(scope constructs.Construct, id *string, config *Lights
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/lightsail_instance aws_lightsail_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/lightsail_instance aws_lightsail_instance} Resource.
 func NewLightsailInstance_Override(l LightsailInstance, scope constructs.Construct, id *string, config *LightsailInstanceConfig) {
 	_init_.Initialize()
 

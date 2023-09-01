@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/servicecatalog_constraint aws_servicecatalog_constraint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_constraint aws_servicecatalog_constraint}.
 type ServicecatalogConstraint interface {
 	cdktf.TerraformResource
 	AcceptLanguage() *string
@@ -475,7 +475,7 @@ func (j *jsiiProxy_ServicecatalogConstraint) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/servicecatalog_constraint aws_servicecatalog_constraint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_constraint aws_servicecatalog_constraint} Resource.
 func NewServicecatalogConstraint(scope constructs.Construct, id *string, config *ServicecatalogConstraintConfig) ServicecatalogConstraint {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewServicecatalogConstraint(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/servicecatalog_constraint aws_servicecatalog_constraint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/servicecatalog_constraint aws_servicecatalog_constraint} Resource.
 func NewServicecatalogConstraint_Override(s ServicecatalogConstraint, scope constructs.Construct, id *string, config *ServicecatalogConstraintConfig) {
 	_init_.Initialize()
 

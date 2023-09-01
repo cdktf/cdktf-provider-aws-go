@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/ssoadmin_customer_managed_policy_attachment aws_ssoadmin_customer_managed_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ssoadmin_customer_managed_policy_attachment aws_ssoadmin_customer_managed_policy_attachment}.
 type SsoadminCustomerManagedPolicyAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -72,6 +72,8 @@ type SsoadminCustomerManagedPolicyAttachment interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() SsoadminCustomerManagedPolicyAttachmentTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -98,10 +100,12 @@ type SsoadminCustomerManagedPolicyAttachment interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCustomerManagedPolicyReference(value *SsoadminCustomerManagedPolicyAttachmentCustomerManagedPolicyReference)
+	PutTimeouts(value *SsoadminCustomerManagedPolicyAttachmentTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -357,8 +361,28 @@ func (j *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) TerraformResourceTyp
 	return returns
 }
 
+func (j *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) Timeouts() SsoadminCustomerManagedPolicyAttachmentTimeoutsOutputReference {
+	var returns SsoadminCustomerManagedPolicyAttachmentTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/ssoadmin_customer_managed_policy_attachment aws_ssoadmin_customer_managed_policy_attachment} Resource.
+func (j *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ssoadmin_customer_managed_policy_attachment aws_ssoadmin_customer_managed_policy_attachment} Resource.
 func NewSsoadminCustomerManagedPolicyAttachment(scope constructs.Construct, id *string, config *SsoadminCustomerManagedPolicyAttachmentConfig) SsoadminCustomerManagedPolicyAttachment {
 	_init_.Initialize()
 
@@ -376,7 +400,7 @@ func NewSsoadminCustomerManagedPolicyAttachment(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/ssoadmin_customer_managed_policy_attachment aws_ssoadmin_customer_managed_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ssoadmin_customer_managed_policy_attachment aws_ssoadmin_customer_managed_policy_attachment} Resource.
 func NewSsoadminCustomerManagedPolicyAttachment_Override(s SsoadminCustomerManagedPolicyAttachment, scope constructs.Construct, id *string, config *SsoadminCustomerManagedPolicyAttachmentConfig) {
 	_init_.Initialize()
 
@@ -765,6 +789,17 @@ func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) PutCustomerManagedPo
 	)
 }
 
+func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) PutTimeouts(value *SsoadminCustomerManagedPolicyAttachmentTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -777,6 +812,14 @@ func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) ResetOverrideLogical
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

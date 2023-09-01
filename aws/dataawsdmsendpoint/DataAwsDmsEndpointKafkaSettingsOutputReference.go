@@ -14,8 +14,6 @@ import (
 type DataAwsDmsEndpointKafkaSettingsOutputReference interface {
 	cdktf.ComplexObject
 	Broker() *string
-	SetBroker(val *string)
-	BrokerInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,8 +36,8 @@ type DataAwsDmsEndpointKafkaSettingsOutputReference interface {
 	IncludePartitionValue() cdktf.IResolvable
 	IncludeTableAlterOperations() cdktf.IResolvable
 	IncludeTransactionDetails() cdktf.IResolvable
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsDmsEndpointKafkaSettings
+	SetInternalValue(val *DataAwsDmsEndpointKafkaSettings)
 	MessageFormat() *string
 	MessageMaxBytes() *float64
 	NoHexPrefix() cdktf.IResolvable
@@ -104,16 +102,6 @@ func (j *jsiiProxy_DataAwsDmsEndpointKafkaSettingsOutputReference) Broker() *str
 	_jsii_.Get(
 		j,
 		"broker",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsDmsEndpointKafkaSettingsOutputReference) BrokerInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"brokerInput",
 		&returns,
 	)
 	return returns
@@ -209,8 +197,8 @@ func (j *jsiiProxy_DataAwsDmsEndpointKafkaSettingsOutputReference) IncludeTransa
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDmsEndpointKafkaSettingsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsDmsEndpointKafkaSettingsOutputReference) InternalValue() *DataAwsDmsEndpointKafkaSettings {
+	var returns *DataAwsDmsEndpointKafkaSettings
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -387,17 +375,6 @@ func NewDataAwsDmsEndpointKafkaSettingsOutputReference_Override(d DataAwsDmsEndp
 	)
 }
 
-func (j *jsiiProxy_DataAwsDmsEndpointKafkaSettingsOutputReference)SetBroker(val *string) {
-	if err := j.validateSetBrokerParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"broker",
-		val,
-	)
-}
-
 func (j *jsiiProxy_DataAwsDmsEndpointKafkaSettingsOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -420,7 +397,7 @@ func (j *jsiiProxy_DataAwsDmsEndpointKafkaSettingsOutputReference)SetComplexObje
 	)
 }
 
-func (j *jsiiProxy_DataAwsDmsEndpointKafkaSettingsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsDmsEndpointKafkaSettingsOutputReference)SetInternalValue(val *DataAwsDmsEndpointKafkaSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

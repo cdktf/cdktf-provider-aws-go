@@ -49,6 +49,9 @@ type OpensearchDomainClusterConfigOutputReference interface {
 	InstanceTypeInput() *string
 	InternalValue() *OpensearchDomainClusterConfig
 	SetInternalValue(val *OpensearchDomainClusterConfig)
+	MultiAzWithStandbyEnabled() interface{}
+	SetMultiAzWithStandbyEnabled(val interface{})
+	MultiAzWithStandbyEnabledInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -103,6 +106,7 @@ type OpensearchDomainClusterConfigOutputReference interface {
 	ResetDedicatedMasterType()
 	ResetInstanceCount()
 	ResetInstanceType()
+	ResetMultiAzWithStandbyEnabled()
 	ResetWarmCount()
 	ResetWarmEnabled()
 	ResetWarmType()
@@ -288,6 +292,26 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) InternalValue()
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) MultiAzWithStandbyEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"multiAzWithStandbyEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) MultiAzWithStandbyEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"multiAzWithStandbyEnabledInput",
 		&returns,
 	)
 	return returns
@@ -525,6 +549,17 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetInternalValue
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference)SetMultiAzWithStandbyEnabled(val interface{}) {
+	if err := j.validateSetMultiAzWithStandbyEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"multiAzWithStandbyEnabled",
 		val,
 	)
 }
@@ -847,6 +882,14 @@ func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) ResetInstanceTy
 	_jsii_.InvokeVoid(
 		o,
 		"resetInstanceType",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomainClusterConfigOutputReference) ResetMultiAzWithStandbyEnabled() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetMultiAzWithStandbyEnabled",
 		nil, // no parameters
 	)
 }

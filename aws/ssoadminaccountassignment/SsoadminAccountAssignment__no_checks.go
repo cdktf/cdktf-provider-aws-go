@@ -55,6 +55,10 @@ func (s *jsiiProxy_SsoadminAccountAssignment) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (s *jsiiProxy_SsoadminAccountAssignment) validatePutTimeoutsParameters(value *SsoadminAccountAssignmentTimeouts) error {
+	return nil
+}
+
 func validateSsoadminAccountAssignment_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -51,10 +51,6 @@ func (d *jsiiProxy_DataAwsDmsEndpointKafkaSettingsOutputReference) validateResol
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDmsEndpointKafkaSettingsOutputReference) validateSetBrokerParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsDmsEndpointKafkaSettingsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
@@ -63,7 +59,7 @@ func (j *jsiiProxy_DataAwsDmsEndpointKafkaSettingsOutputReference) validateSetCo
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDmsEndpointKafkaSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsDmsEndpointKafkaSettingsOutputReference) validateSetInternalValueParameters(val *DataAwsDmsEndpointKafkaSettings) error {
 	return nil
 }
 

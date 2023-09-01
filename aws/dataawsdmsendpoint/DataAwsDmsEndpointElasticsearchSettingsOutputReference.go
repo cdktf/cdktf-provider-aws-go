@@ -29,17 +29,13 @@ type DataAwsDmsEndpointElasticsearchSettingsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	EndpointUri() *string
-	SetEndpointUri(val *string)
-	EndpointUriInput() *string
 	ErrorRetryDuration() *float64
 	// Experimental.
 	Fqn() *string
 	FullLoadErrorPercentage() *float64
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsDmsEndpointElasticsearchSettings
+	SetInternalValue(val *DataAwsDmsEndpointElasticsearchSettings)
 	ServiceAccessRoleArn() *string
-	SetServiceAccessRoleArn(val *string)
-	ServiceAccessRoleArnInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -127,16 +123,6 @@ func (j *jsiiProxy_DataAwsDmsEndpointElasticsearchSettingsOutputReference) Endpo
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDmsEndpointElasticsearchSettingsOutputReference) EndpointUriInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"endpointUriInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAwsDmsEndpointElasticsearchSettingsOutputReference) ErrorRetryDuration() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -167,8 +153,8 @@ func (j *jsiiProxy_DataAwsDmsEndpointElasticsearchSettingsOutputReference) FullL
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDmsEndpointElasticsearchSettingsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsDmsEndpointElasticsearchSettingsOutputReference) InternalValue() *DataAwsDmsEndpointElasticsearchSettings {
+	var returns *DataAwsDmsEndpointElasticsearchSettings
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -182,16 +168,6 @@ func (j *jsiiProxy_DataAwsDmsEndpointElasticsearchSettingsOutputReference) Servi
 	_jsii_.Get(
 		j,
 		"serviceAccessRoleArn",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsDmsEndpointElasticsearchSettingsOutputReference) ServiceAccessRoleArnInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"serviceAccessRoleArnInput",
 		&returns,
 	)
 	return returns
@@ -267,35 +243,13 @@ func (j *jsiiProxy_DataAwsDmsEndpointElasticsearchSettingsOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_DataAwsDmsEndpointElasticsearchSettingsOutputReference)SetEndpointUri(val *string) {
-	if err := j.validateSetEndpointUriParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"endpointUri",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAwsDmsEndpointElasticsearchSettingsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsDmsEndpointElasticsearchSettingsOutputReference)SetInternalValue(val *DataAwsDmsEndpointElasticsearchSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAwsDmsEndpointElasticsearchSettingsOutputReference)SetServiceAccessRoleArn(val *string) {
-	if err := j.validateSetServiceAccessRoleArnParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"serviceAccessRoleArn",
 		val,
 	)
 }

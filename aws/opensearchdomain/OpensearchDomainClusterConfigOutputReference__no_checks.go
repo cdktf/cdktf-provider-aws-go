@@ -91,6 +91,10 @@ func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validateSetInte
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validateSetMultiAzWithStandbyEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpensearchDomainClusterConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

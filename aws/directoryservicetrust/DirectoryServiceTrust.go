@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/directory_service_trust aws_directory_service_trust}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/directory_service_trust aws_directory_service_trust}.
 type DirectoryServiceTrust interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -519,7 +519,7 @@ func (j *jsiiProxy_DirectoryServiceTrust) TrustTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/directory_service_trust aws_directory_service_trust} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/directory_service_trust aws_directory_service_trust} Resource.
 func NewDirectoryServiceTrust(scope constructs.Construct, id *string, config *DirectoryServiceTrustConfig) DirectoryServiceTrust {
 	_init_.Initialize()
 
@@ -537,7 +537,7 @@ func NewDirectoryServiceTrust(scope constructs.Construct, id *string, config *Di
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/directory_service_trust aws_directory_service_trust} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/directory_service_trust aws_directory_service_trust} Resource.
 func NewDirectoryServiceTrust_Override(d DirectoryServiceTrust, scope constructs.Construct, id *string, config *DirectoryServiceTrustConfig) {
 	_init_.Initialize()
 

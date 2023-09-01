@@ -59,6 +59,10 @@ func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validatePutCustomerM
 	return nil
 }
 
+func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validatePutTimeoutsParameters(value *SsoadminCustomerManagedPolicyAttachmentTimeouts) error {
+	return nil
+}
+
 func validateSsoadminCustomerManagedPolicyAttachment_IsConstructParameters(x interface{}) error {
 	return nil
 }

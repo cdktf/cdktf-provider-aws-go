@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/ssoadmin_permissions_boundary_attachment aws_ssoadmin_permissions_boundary_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ssoadmin_permissions_boundary_attachment aws_ssoadmin_permissions_boundary_attachment}.
 type SsoadminPermissionsBoundaryAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -72,6 +72,8 @@ type SsoadminPermissionsBoundaryAttachment interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() SsoadminPermissionsBoundaryAttachmentTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -98,10 +100,12 @@ type SsoadminPermissionsBoundaryAttachment interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutPermissionsBoundary(value *SsoadminPermissionsBoundaryAttachmentPermissionsBoundary)
+	PutTimeouts(value *SsoadminPermissionsBoundaryAttachmentTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -357,8 +361,28 @@ func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) TerraformResourceType(
 	return returns
 }
 
+func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) Timeouts() SsoadminPermissionsBoundaryAttachmentTimeoutsOutputReference {
+	var returns SsoadminPermissionsBoundaryAttachmentTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/ssoadmin_permissions_boundary_attachment aws_ssoadmin_permissions_boundary_attachment} Resource.
+func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ssoadmin_permissions_boundary_attachment aws_ssoadmin_permissions_boundary_attachment} Resource.
 func NewSsoadminPermissionsBoundaryAttachment(scope constructs.Construct, id *string, config *SsoadminPermissionsBoundaryAttachmentConfig) SsoadminPermissionsBoundaryAttachment {
 	_init_.Initialize()
 
@@ -376,7 +400,7 @@ func NewSsoadminPermissionsBoundaryAttachment(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/ssoadmin_permissions_boundary_attachment aws_ssoadmin_permissions_boundary_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ssoadmin_permissions_boundary_attachment aws_ssoadmin_permissions_boundary_attachment} Resource.
 func NewSsoadminPermissionsBoundaryAttachment_Override(s SsoadminPermissionsBoundaryAttachment, scope constructs.Construct, id *string, config *SsoadminPermissionsBoundaryAttachmentConfig) {
 	_init_.Initialize()
 
@@ -765,6 +789,17 @@ func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) PutPermissionsBoundary
 	)
 }
 
+func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) PutTimeouts(value *SsoadminPermissionsBoundaryAttachmentTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -777,6 +812,14 @@ func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) ResetOverrideLogicalId
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

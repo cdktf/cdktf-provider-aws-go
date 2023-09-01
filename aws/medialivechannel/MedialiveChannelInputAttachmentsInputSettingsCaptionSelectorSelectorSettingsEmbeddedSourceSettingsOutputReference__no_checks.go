@@ -75,10 +75,6 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorS
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsOutputReference) validateSetSource608TrackNumberParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

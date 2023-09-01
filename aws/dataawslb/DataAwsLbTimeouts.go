@@ -5,7 +5,7 @@ package dataawslb
 
 
 type DataAwsLbTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/lb#read DataAwsLb#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/lb#read DataAwsLb#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

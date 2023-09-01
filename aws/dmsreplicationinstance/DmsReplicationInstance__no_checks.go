@@ -119,6 +119,10 @@ func (j *jsiiProxy_DmsReplicationInstance) validateSetMultiAzParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_DmsReplicationInstance) validateSetNetworkTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsReplicationInstance) validateSetPreferredMaintenanceWindowParameters(val *string) error {
 	return nil
 }

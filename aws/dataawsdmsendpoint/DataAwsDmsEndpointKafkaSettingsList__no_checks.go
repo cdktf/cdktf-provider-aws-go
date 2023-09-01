@@ -15,10 +15,6 @@ func (d *jsiiProxy_DataAwsDmsEndpointKafkaSettingsList) validateResolveParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDmsEndpointKafkaSettingsList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsDmsEndpointKafkaSettingsList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

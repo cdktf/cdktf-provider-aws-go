@@ -47,6 +47,10 @@ func (f *jsiiProxy_FinspaceKxEnvironmentTransitGatewayConfigurationOutputReferen
 	return nil
 }
 
+func (f *jsiiProxy_FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference) validatePutAttachmentNetworkAclConfigurationParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

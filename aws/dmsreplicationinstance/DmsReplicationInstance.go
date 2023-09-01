@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/dms_replication_instance aws_dms_replication_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/dms_replication_instance aws_dms_replication_instance}.
 type DmsReplicationInstance interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -70,6 +70,9 @@ type DmsReplicationInstance interface {
 	MultiAz() interface{}
 	SetMultiAz(val interface{})
 	MultiAzInput() interface{}
+	NetworkType() *string
+	SetNetworkType(val *string)
+	NetworkTypeInput() *string
 	// The tree node.
 	Node() constructs.Node
 	PreferredMaintenanceWindow() *string
@@ -152,6 +155,7 @@ type DmsReplicationInstance interface {
 	ResetId()
 	ResetKmsKeyArn()
 	ResetMultiAz()
+	ResetNetworkType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -447,6 +451,26 @@ func (j *jsiiProxy_DmsReplicationInstance) MultiAzInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DmsReplicationInstance) NetworkType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationInstance) NetworkTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DmsReplicationInstance) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -728,7 +752,7 @@ func (j *jsiiProxy_DmsReplicationInstance) VpcSecurityGroupIdsInput() *[]*string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/dms_replication_instance aws_dms_replication_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/dms_replication_instance aws_dms_replication_instance} Resource.
 func NewDmsReplicationInstance(scope constructs.Construct, id *string, config *DmsReplicationInstanceConfig) DmsReplicationInstance {
 	_init_.Initialize()
 
@@ -746,7 +770,7 @@ func NewDmsReplicationInstance(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/dms_replication_instance aws_dms_replication_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/dms_replication_instance aws_dms_replication_instance} Resource.
 func NewDmsReplicationInstance_Override(d DmsReplicationInstance, scope constructs.Construct, id *string, config *DmsReplicationInstanceConfig) {
 	_init_.Initialize()
 
@@ -901,6 +925,17 @@ func (j *jsiiProxy_DmsReplicationInstance)SetMultiAz(val interface{}) {
 	_jsii_.Set(
 		j,
 		"multiAz",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationInstance)SetNetworkType(val *string) {
+	if err := j.validateSetNetworkTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkType",
 		val,
 	)
 }
@@ -1357,6 +1392,14 @@ func (d *jsiiProxy_DmsReplicationInstance) ResetMultiAz() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetMultiAz",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsReplicationInstance) ResetNetworkType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNetworkType",
 		nil, // no parameters
 	)
 }

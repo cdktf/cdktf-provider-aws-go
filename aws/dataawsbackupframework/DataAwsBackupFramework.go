@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/backup_framework aws_backup_framework}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/backup_framework aws_backup_framework}.
 type DataAwsBackupFramework interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -374,7 +374,7 @@ func (j *jsiiProxy_DataAwsBackupFramework) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/backup_framework aws_backup_framework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/backup_framework aws_backup_framework} Data Source.
 func NewDataAwsBackupFramework(scope constructs.Construct, id *string, config *DataAwsBackupFrameworkConfig) DataAwsBackupFramework {
 	_init_.Initialize()
 
@@ -392,7 +392,7 @@ func NewDataAwsBackupFramework(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/backup_framework aws_backup_framework} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/backup_framework aws_backup_framework} Data Source.
 func NewDataAwsBackupFramework_Override(d DataAwsBackupFramework, scope constructs.Construct, id *string, config *DataAwsBackupFrameworkConfig) {
 	_init_.Initialize()
 

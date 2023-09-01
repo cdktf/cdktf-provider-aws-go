@@ -59,15 +59,7 @@ func (j *jsiiProxy_DataAwsDmsEndpointElasticsearchSettingsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDmsEndpointElasticsearchSettingsOutputReference) validateSetEndpointUriParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAwsDmsEndpointElasticsearchSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAwsDmsEndpointElasticsearchSettingsOutputReference) validateSetServiceAccessRoleArnParameters(val *string) error {
+func (j *jsiiProxy_DataAwsDmsEndpointElasticsearchSettingsOutputReference) validateSetInternalValueParameters(val *DataAwsDmsEndpointElasticsearchSettings) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (s *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateOverrideLogicalIdP
 	return nil
 }
 
+func (s *jsiiProxy_SsoadminPermissionSetInlinePolicy) validatePutTimeoutsParameters(value *SsoadminPermissionSetInlinePolicyTimeouts) error {
+	return nil
+}
+
 func validateSsoadminPermissionSetInlinePolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

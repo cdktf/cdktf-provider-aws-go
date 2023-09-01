@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system}.
 type FsxOpenzfsFileSystem interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -53,6 +53,9 @@ type FsxOpenzfsFileSystem interface {
 	DiskIopsConfiguration() FsxOpenzfsFileSystemDiskIopsConfigurationOutputReference
 	DiskIopsConfigurationInput() *FsxOpenzfsFileSystemDiskIopsConfiguration
 	DnsName() *string
+	EndpointIpAddressRange() *string
+	SetEndpointIpAddressRange(val *string)
+	EndpointIpAddressRangeInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -75,6 +78,9 @@ type FsxOpenzfsFileSystem interface {
 	// The tree node.
 	Node() constructs.Node
 	OwnerId() *string
+	PreferredSubnetId() *string
+	SetPreferredSubnetId(val *string)
+	PreferredSubnetIdInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -88,6 +94,9 @@ type FsxOpenzfsFileSystem interface {
 	RootVolumeConfiguration() FsxOpenzfsFileSystemRootVolumeConfigurationOutputReference
 	RootVolumeConfigurationInput() *FsxOpenzfsFileSystemRootVolumeConfiguration
 	RootVolumeId() *string
+	RouteTableIds() *[]*string
+	SetRouteTableIds(val *[]*string)
+	RouteTableIdsInput() *[]*string
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
@@ -155,12 +164,15 @@ type FsxOpenzfsFileSystem interface {
 	ResetCopyTagsToVolumes()
 	ResetDailyAutomaticBackupStartTime()
 	ResetDiskIopsConfiguration()
+	ResetEndpointIpAddressRange()
 	ResetId()
 	ResetKmsKeyId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPreferredSubnetId()
 	ResetRootVolumeConfiguration()
+	ResetRouteTableIds()
 	ResetSecurityGroupIds()
 	ResetStorageCapacity()
 	ResetStorageType()
@@ -393,6 +405,26 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) DnsName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FsxOpenzfsFileSystem) EndpointIpAddressRange() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointIpAddressRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOpenzfsFileSystem) EndpointIpAddressRangeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointIpAddressRangeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxOpenzfsFileSystem) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -503,6 +535,26 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) OwnerId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FsxOpenzfsFileSystem) PreferredSubnetId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preferredSubnetId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOpenzfsFileSystem) PreferredSubnetIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preferredSubnetIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxOpenzfsFileSystem) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -558,6 +610,26 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) RootVolumeId() *string {
 	_jsii_.Get(
 		j,
 		"rootVolumeId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOpenzfsFileSystem) RouteTableIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"routeTableIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOpenzfsFileSystem) RouteTableIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"routeTableIdsInput",
 		&returns,
 	)
 	return returns
@@ -784,7 +856,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) WeeklyMaintenanceStartTimeInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system} Resource.
 func NewFsxOpenzfsFileSystem(scope constructs.Construct, id *string, config *FsxOpenzfsFileSystemConfig) FsxOpenzfsFileSystem {
 	_init_.Initialize()
 
@@ -802,7 +874,7 @@ func NewFsxOpenzfsFileSystem(scope constructs.Construct, id *string, config *Fsx
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system} Resource.
 func NewFsxOpenzfsFileSystem_Override(f FsxOpenzfsFileSystem, scope constructs.Construct, id *string, config *FsxOpenzfsFileSystemConfig) {
 	_init_.Initialize()
 
@@ -909,6 +981,17 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetDeploymentType(val *string) {
 	)
 }
 
+func (j *jsiiProxy_FsxOpenzfsFileSystem)SetEndpointIpAddressRange(val *string) {
+	if err := j.validateSetEndpointIpAddressRangeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"endpointIpAddressRange",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FsxOpenzfsFileSystem)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -950,6 +1033,17 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetLifecycle(val *cdktf.TerraformResourc
 	)
 }
 
+func (j *jsiiProxy_FsxOpenzfsFileSystem)SetPreferredSubnetId(val *string) {
+	if err := j.validateSetPreferredSubnetIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preferredSubnetId",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FsxOpenzfsFileSystem)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -965,6 +1059,17 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxOpenzfsFileSystem)SetRouteTableIds(val *[]*string) {
+	if err := j.validateSetRouteTableIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routeTableIds",
 		val,
 	)
 }
@@ -1404,6 +1509,14 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) ResetDiskIopsConfiguration() {
 	)
 }
 
+func (f *jsiiProxy_FsxOpenzfsFileSystem) ResetEndpointIpAddressRange() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetEndpointIpAddressRange",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FsxOpenzfsFileSystem) ResetId() {
 	_jsii_.InvokeVoid(
 		f,
@@ -1428,10 +1541,26 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) ResetOverrideLogicalId() {
 	)
 }
 
+func (f *jsiiProxy_FsxOpenzfsFileSystem) ResetPreferredSubnetId() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetPreferredSubnetId",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FsxOpenzfsFileSystem) ResetRootVolumeConfiguration() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetRootVolumeConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOpenzfsFileSystem) ResetRouteTableIds() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetRouteTableIds",
 		nil, // no parameters
 	)
 }

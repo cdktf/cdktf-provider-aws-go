@@ -114,6 +114,17 @@ func (b *jsiiProxy_BatchJobQueue) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (b *jsiiProxy_BatchJobQueue) validatePutTimeoutsParameters(value *BatchJobQueueTimeouts) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateBatchJobQueue_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
@@ -236,14 +247,6 @@ func (j *jsiiProxy_BatchJobQueue) validateSetCountParameters(val interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_BatchJobQueue) validateSetIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_BatchJobQueue) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -331,14 +334,6 @@ func (j *jsiiProxy_BatchJobQueue) validateSetStateParameters(val *string) error 
 }
 
 func (j *jsiiProxy_BatchJobQueue) validateSetTagsParameters(val *map[string]*string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_BatchJobQueue) validateSetTagsAllParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

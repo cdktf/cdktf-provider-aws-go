@@ -7,7 +7,7 @@ package kinesisanalyticsapplication
 type KinesisAnalyticsApplicationInputsProcessingConfiguration struct {
 	// lambda block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/kinesis_analytics_application#lambda KinesisAnalyticsApplication#lambda}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/kinesis_analytics_application#lambda KinesisAnalyticsApplication#lambda}
 	Lambda *KinesisAnalyticsApplicationInputsProcessingConfigurationLambda `field:"required" json:"lambda" yaml:"lambda"`
 }
 

@@ -55,6 +55,10 @@ func (s *jsiiProxy_SsoadminManagedPolicyAttachment) validateOverrideLogicalIdPar
 	return nil
 }
 
+func (s *jsiiProxy_SsoadminManagedPolicyAttachment) validatePutTimeoutsParameters(value *SsoadminManagedPolicyAttachmentTimeouts) error {
+	return nil
+}
+
 func validateSsoadminManagedPolicyAttachment_IsConstructParameters(x interface{}) error {
 	return nil
 }

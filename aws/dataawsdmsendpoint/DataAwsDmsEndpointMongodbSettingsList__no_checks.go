@@ -15,10 +15,6 @@ func (d *jsiiProxy_DataAwsDmsEndpointMongodbSettingsList) validateResolveParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDmsEndpointMongodbSettingsList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsDmsEndpointMongodbSettingsList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

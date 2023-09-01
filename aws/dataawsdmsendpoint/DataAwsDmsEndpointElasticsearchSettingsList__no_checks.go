@@ -15,10 +15,6 @@ func (d *jsiiProxy_DataAwsDmsEndpointElasticsearchSettingsList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDmsEndpointElasticsearchSettingsList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsDmsEndpointElasticsearchSettingsList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

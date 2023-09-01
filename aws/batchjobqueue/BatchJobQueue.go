@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/batch_job_queue aws_batch_job_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/batch_job_queue aws_batch_job_queue}.
 type BatchJobQueue interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -44,8 +44,6 @@ type BatchJobQueue interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -76,9 +74,7 @@ type BatchJobQueue interface {
 	StateInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
-	TagsAll() *map[string]*string
-	SetTagsAll(val *map[string]*string)
-	TagsAllInput() *map[string]*string
+	TagsAll() cdktf.StringMap
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -86,6 +82,8 @@ type BatchJobQueue interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() BatchJobQueueTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -111,13 +109,13 @@ type BatchJobQueue interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
+	PutTimeouts(value *BatchJobQueueTimeouts)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSchedulingPolicyArn()
 	ResetTags()
-	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -248,16 +246,6 @@ func (j *jsiiProxy_BatchJobQueue) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_BatchJobQueue) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -403,21 +391,11 @@ func (j *jsiiProxy_BatchJobQueue) Tags() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_BatchJobQueue) TagsAll() *map[string]*string {
-	var returns *map[string]*string
+func (j *jsiiProxy_BatchJobQueue) TagsAll() cdktf.StringMap {
+	var returns cdktf.StringMap
 	_jsii_.Get(
 		j,
 		"tagsAll",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_BatchJobQueue) TagsAllInput() *map[string]*string {
-	var returns *map[string]*string
-	_jsii_.Get(
-		j,
-		"tagsAllInput",
 		&returns,
 	)
 	return returns
@@ -463,8 +441,28 @@ func (j *jsiiProxy_BatchJobQueue) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BatchJobQueue) Timeouts() BatchJobQueueTimeoutsOutputReference {
+	var returns BatchJobQueueTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/batch_job_queue aws_batch_job_queue} Resource.
+func (j *jsiiProxy_BatchJobQueue) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/batch_job_queue aws_batch_job_queue} Resource.
 func NewBatchJobQueue(scope constructs.Construct, id *string, config *BatchJobQueueConfig) BatchJobQueue {
 	_init_.Initialize()
 
@@ -482,7 +480,7 @@ func NewBatchJobQueue(scope constructs.Construct, id *string, config *BatchJobQu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/batch_job_queue aws_batch_job_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/batch_job_queue aws_batch_job_queue} Resource.
 func NewBatchJobQueue_Override(b BatchJobQueue, scope constructs.Construct, id *string, config *BatchJobQueueConfig) {
 	_init_.Initialize()
 
@@ -538,17 +536,6 @@ func (j *jsiiProxy_BatchJobQueue)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_BatchJobQueue)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -634,17 +621,6 @@ func (j *jsiiProxy_BatchJobQueue)SetTags(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tags",
-		val,
-	)
-}
-
-func (j *jsiiProxy_BatchJobQueue)SetTagsAll(val *map[string]*string) {
-	if err := j.validateSetTagsAllParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"tagsAll",
 		val,
 	)
 }
@@ -915,11 +891,14 @@ func (b *jsiiProxy_BatchJobQueue) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (b *jsiiProxy_BatchJobQueue) ResetId() {
+func (b *jsiiProxy_BatchJobQueue) PutTimeouts(value *BatchJobQueueTimeouts) {
+	if err := b.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		b,
-		"resetId",
-		nil, // no parameters
+		"putTimeouts",
+		[]interface{}{value},
 	)
 }
 
@@ -947,10 +926,10 @@ func (b *jsiiProxy_BatchJobQueue) ResetTags() {
 	)
 }
 
-func (b *jsiiProxy_BatchJobQueue) ResetTagsAll() {
+func (b *jsiiProxy_BatchJobQueue) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		b,
-		"resetTagsAll",
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/route53recoverycontrolconfig_cluster aws_route53recoverycontrolconfig_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/route53recoverycontrolconfig_cluster aws_route53recoverycontrolconfig_cluster}.
 type Route53RecoverycontrolconfigCluster interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -345,7 +345,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigCluster) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/route53recoverycontrolconfig_cluster aws_route53recoverycontrolconfig_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/route53recoverycontrolconfig_cluster aws_route53recoverycontrolconfig_cluster} Resource.
 func NewRoute53RecoverycontrolconfigCluster(scope constructs.Construct, id *string, config *Route53RecoverycontrolconfigClusterConfig) Route53RecoverycontrolconfigCluster {
 	_init_.Initialize()
 
@@ -363,7 +363,7 @@ func NewRoute53RecoverycontrolconfigCluster(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/route53recoverycontrolconfig_cluster aws_route53recoverycontrolconfig_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/route53recoverycontrolconfig_cluster aws_route53recoverycontrolconfig_cluster} Resource.
 func NewRoute53RecoverycontrolconfigCluster_Override(r Route53RecoverycontrolconfigCluster, scope constructs.Construct, id *string, config *Route53RecoverycontrolconfigClusterConfig) {
 	_init_.Initialize()
 

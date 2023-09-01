@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/wafv2_rule_group aws_wafv2_rule_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/wafv2_rule_group aws_wafv2_rule_group}.
 type Wafv2RuleGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -59,6 +59,9 @@ type Wafv2RuleGroup interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NamePrefix() *string
+	SetNamePrefix(val *string)
+	NamePrefixInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -121,6 +124,8 @@ type Wafv2RuleGroup interface {
 	ResetCustomResponseBody()
 	ResetDescription()
 	ResetId()
+	ResetName()
+	ResetNamePrefix()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -352,6 +357,26 @@ func (j *jsiiProxy_Wafv2RuleGroup) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Wafv2RuleGroup) NamePrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroup) NamePrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefixInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Wafv2RuleGroup) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -523,7 +548,7 @@ func (j *jsiiProxy_Wafv2RuleGroup) VisibilityConfigInput() *Wafv2RuleGroupVisibi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/wafv2_rule_group aws_wafv2_rule_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/wafv2_rule_group aws_wafv2_rule_group} Resource.
 func NewWafv2RuleGroup(scope constructs.Construct, id *string, config *Wafv2RuleGroupConfig) Wafv2RuleGroup {
 	_init_.Initialize()
 
@@ -541,7 +566,7 @@ func NewWafv2RuleGroup(scope constructs.Construct, id *string, config *Wafv2Rule
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/wafv2_rule_group aws_wafv2_rule_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/wafv2_rule_group aws_wafv2_rule_group} Resource.
 func NewWafv2RuleGroup_Override(w Wafv2RuleGroup, scope constructs.Construct, id *string, config *Wafv2RuleGroupConfig) {
 	_init_.Initialize()
 
@@ -641,6 +666,17 @@ func (j *jsiiProxy_Wafv2RuleGroup)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Wafv2RuleGroup)SetNamePrefix(val *string) {
+	if err := j.validateSetNamePrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namePrefix",
 		val,
 	)
 }
@@ -1016,6 +1052,22 @@ func (w *jsiiProxy_Wafv2RuleGroup) ResetId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2RuleGroup) ResetName() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2RuleGroup) ResetNamePrefix() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetNamePrefix",
 		nil, // no parameters
 	)
 }

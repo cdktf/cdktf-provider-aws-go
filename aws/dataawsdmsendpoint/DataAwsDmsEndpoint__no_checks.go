@@ -55,18 +55,6 @@ func (d *jsiiProxy_DataAwsDmsEndpoint) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDmsEndpoint) validatePutElasticsearchSettingsParameters(value interface{}) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataAwsDmsEndpoint) validatePutKafkaSettingsParameters(value interface{}) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataAwsDmsEndpoint) validatePutMongodbSettingsParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataAwsDmsEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -84,10 +72,6 @@ func (j *jsiiProxy_DataAwsDmsEndpoint) validateSetCountParameters(val interface{
 }
 
 func (j *jsiiProxy_DataAwsDmsEndpoint) validateSetEndpointIdParameters(val *string) error {
-	return nil
-}
-
-func (j *jsiiProxy_DataAwsDmsEndpoint) validateSetExtraConnectionAttributesParameters(val *string) error {
 	return nil
 }
 

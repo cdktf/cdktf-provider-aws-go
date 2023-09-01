@@ -35,8 +35,8 @@ type DataAwsDmsEndpointMongodbSettingsOutputReference interface {
 	ExtractDocId() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsDmsEndpointMongodbSettings
+	SetInternalValue(val *DataAwsDmsEndpointMongodbSettings)
 	NestingLevel() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -175,8 +175,8 @@ func (j *jsiiProxy_DataAwsDmsEndpointMongodbSettingsOutputReference) Fqn() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDmsEndpointMongodbSettingsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsDmsEndpointMongodbSettingsOutputReference) InternalValue() *DataAwsDmsEndpointMongodbSettings {
+	var returns *DataAwsDmsEndpointMongodbSettings
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -265,7 +265,7 @@ func (j *jsiiProxy_DataAwsDmsEndpointMongodbSettingsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_DataAwsDmsEndpointMongodbSettingsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsDmsEndpointMongodbSettingsOutputReference)SetInternalValue(val *DataAwsDmsEndpointMongodbSettings) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

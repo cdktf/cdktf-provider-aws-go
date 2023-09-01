@@ -5,17 +5,17 @@ package ecstaskdefinition
 
 
 type EcsTaskDefinitionVolumeEfsVolumeConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/ecs_task_definition#file_system_id EcsTaskDefinition#file_system_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ecs_task_definition#file_system_id EcsTaskDefinition#file_system_id}.
 	FileSystemId *string `field:"required" json:"fileSystemId" yaml:"fileSystemId"`
 	// authorization_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/ecs_task_definition#authorization_config EcsTaskDefinition#authorization_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ecs_task_definition#authorization_config EcsTaskDefinition#authorization_config}
 	AuthorizationConfig *EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig `field:"optional" json:"authorizationConfig" yaml:"authorizationConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/ecs_task_definition#root_directory EcsTaskDefinition#root_directory}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ecs_task_definition#root_directory EcsTaskDefinition#root_directory}.
 	RootDirectory *string `field:"optional" json:"rootDirectory" yaml:"rootDirectory"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/ecs_task_definition#transit_encryption EcsTaskDefinition#transit_encryption}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ecs_task_definition#transit_encryption EcsTaskDefinition#transit_encryption}.
 	TransitEncryption *string `field:"optional" json:"transitEncryption" yaml:"transitEncryption"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/ecs_task_definition#transit_encryption_port EcsTaskDefinition#transit_encryption_port}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ecs_task_definition#transit_encryption_port EcsTaskDefinition#transit_encryption_port}.
 	TransitEncryptionPort *float64 `field:"optional" json:"transitEncryptionPort" yaml:"transitEncryptionPort"`
 }
 

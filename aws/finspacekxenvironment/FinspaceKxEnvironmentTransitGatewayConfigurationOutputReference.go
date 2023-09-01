@@ -13,6 +13,8 @@ import (
 
 type FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference interface {
 	cdktf.ComplexObject
+	AttachmentNetworkAclConfiguration() FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationList
+	AttachmentNetworkAclConfigurationInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +72,8 @@ type FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAttachmentNetworkAclConfiguration(value interface{})
+	ResetAttachmentNetworkAclConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -83,6 +87,26 @@ type FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference interface {
 // The jsii proxy struct for FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference
 type jsiiProxy_FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference) AttachmentNetworkAclConfiguration() FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationList {
+	var returns FinspaceKxEnvironmentTransitGatewayConfigurationAttachmentNetworkAclConfigurationList
+	_jsii_.Get(
+		j,
+		"attachmentNetworkAclConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference) AttachmentNetworkAclConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"attachmentNetworkAclConfigurationInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference) ComplexObjectIndex() interface{} {
@@ -484,6 +508,25 @@ func (f *jsiiProxy_FinspaceKxEnvironmentTransitGatewayConfigurationOutputReferen
 	)
 
 	return returns
+}
+
+func (f *jsiiProxy_FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference) PutAttachmentNetworkAclConfiguration(value interface{}) {
+	if err := f.validatePutAttachmentNetworkAclConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putAttachmentNetworkAclConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference) ResetAttachmentNetworkAclConfiguration() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetAttachmentNetworkAclConfiguration",
+		nil, // no parameters
+	)
 }
 
 func (f *jsiiProxy_FinspaceKxEnvironmentTransitGatewayConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

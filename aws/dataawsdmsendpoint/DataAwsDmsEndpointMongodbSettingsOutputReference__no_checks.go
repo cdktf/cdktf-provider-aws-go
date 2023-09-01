@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataAwsDmsEndpointMongodbSettingsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDmsEndpointMongodbSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsDmsEndpointMongodbSettingsOutputReference) validateSetInternalValueParameters(val *DataAwsDmsEndpointMongodbSettings) error {
 	return nil
 }
 

@@ -28,6 +28,9 @@ type Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAws
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableRegexInPath() interface{}
+	SetEnableRegexInPath(val interface{})
+	EnableRegexInPathInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSet
@@ -73,6 +76,7 @@ type Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAws
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutRequestInspection(value *Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetRequestInspection)
 	PutResponseInspection(value *Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspection)
+	ResetEnableRegexInPath()
 	ResetRequestInspection()
 	ResetResponseInspection()
 	// Produce the Token's value at resolution time.
@@ -115,6 +119,26 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleG
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetOutputReference) EnableRegexInPath() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableRegexInPath",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetOutputReference) EnableRegexInPathInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableRegexInPathInput",
 		&returns,
 	)
 	return returns
@@ -266,6 +290,17 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleG
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetOutputReference)SetEnableRegexInPath(val interface{}) {
+	if err := j.validateSetEnableRegexInPathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableRegexInPath",
 		val,
 	)
 }
@@ -519,6 +554,14 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleG
 		w,
 		"putResponseInspection",
 		[]interface{}{value},
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetOutputReference) ResetEnableRegexInPath() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetEnableRegexInPath",
+		nil, // no parameters
 	)
 }
 

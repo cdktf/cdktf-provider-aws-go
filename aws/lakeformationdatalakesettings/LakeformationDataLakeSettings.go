@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings}.
 type LakeformationDataLakeSettings interface {
 	cdktf.TerraformResource
 	Admins() *[]*string
@@ -77,6 +77,9 @@ type LakeformationDataLakeSettings interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReadOnlyAdmins() *[]*string
+	SetReadOnlyAdmins(val *[]*string)
+	ReadOnlyAdminsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -124,6 +127,7 @@ type LakeformationDataLakeSettings interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetReadOnlyAdmins()
 	ResetTrustedResourceOwners()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -430,6 +434,26 @@ func (j *jsiiProxy_LakeformationDataLakeSettings) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LakeformationDataLakeSettings) ReadOnlyAdmins() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"readOnlyAdmins",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LakeformationDataLakeSettings) ReadOnlyAdminsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"readOnlyAdminsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LakeformationDataLakeSettings) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -481,7 +505,7 @@ func (j *jsiiProxy_LakeformationDataLakeSettings) TrustedResourceOwnersInput() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Resource.
 func NewLakeformationDataLakeSettings(scope constructs.Construct, id *string, config *LakeformationDataLakeSettingsConfig) LakeformationDataLakeSettings {
 	_init_.Initialize()
 
@@ -499,7 +523,7 @@ func NewLakeformationDataLakeSettings(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/lakeformation_data_lake_settings aws_lakeformation_data_lake_settings} Resource.
 func NewLakeformationDataLakeSettings_Override(l LakeformationDataLakeSettings, scope constructs.Construct, id *string, config *LakeformationDataLakeSettingsConfig) {
 	_init_.Initialize()
 
@@ -640,6 +664,17 @@ func (j *jsiiProxy_LakeformationDataLakeSettings)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LakeformationDataLakeSettings)SetReadOnlyAdmins(val *[]*string) {
+	if err := j.validateSetReadOnlyAdminsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readOnlyAdmins",
 		val,
 	)
 }
@@ -1011,6 +1046,14 @@ func (l *jsiiProxy_LakeformationDataLakeSettings) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LakeformationDataLakeSettings) ResetReadOnlyAdmins() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetReadOnlyAdmins",
 		nil, // no parameters
 	)
 }

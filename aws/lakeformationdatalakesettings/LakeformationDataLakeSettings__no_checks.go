@@ -115,6 +115,10 @@ func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetReadOnlyAdminsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetTrustedResourceOwnersParameters(val *[]*string) error {
 	return nil
 }

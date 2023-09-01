@@ -41,9 +41,6 @@ type MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSetting
 	Source608ChannelNumber() *float64
 	SetSource608ChannelNumber(val *float64)
 	Source608ChannelNumberInput() *float64
-	Source608TrackNumber() *float64
-	SetSource608TrackNumber(val *float64)
-	Source608TrackNumberInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,7 +76,6 @@ type MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSetting
 	ResetConvert608To708()
 	ResetScte20Detection()
 	ResetSource608ChannelNumber()
-	ResetSource608TrackNumber()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -205,26 +201,6 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorS
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsOutputReference) Source608TrackNumber() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"source608TrackNumber",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsOutputReference) Source608TrackNumberInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"source608TrackNumberInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -335,17 +311,6 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorS
 	_jsii_.Set(
 		j,
 		"source608ChannelNumber",
-		val,
-	)
-}
-
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsOutputReference)SetSource608TrackNumber(val *float64) {
-	if err := j.validateSetSource608TrackNumberParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"source608TrackNumber",
 		val,
 	)
 }
@@ -578,14 +543,6 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorS
 	_jsii_.InvokeVoid(
 		m,
 		"resetSource608ChannelNumber",
-		nil, // no parameters
-	)
-}
-
-func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsOutputReference) ResetSource608TrackNumber() {
-	_jsii_.InvokeVoid(
-		m,
-		"resetSource608TrackNumber",
 		nil, // no parameters
 	)
 }

@@ -59,6 +59,10 @@ func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validatePutPermissions
 	return nil
 }
 
+func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validatePutTimeoutsParameters(value *SsoadminPermissionsBoundaryAttachmentTimeouts) error {
+	return nil
+}
+
 func validateSsoadminPermissionsBoundaryAttachment_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint aws_dms_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/dms_endpoint aws_dms_endpoint}.
 type DataAwsDmsEndpoint interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -30,7 +30,6 @@ type DataAwsDmsEndpoint interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	ElasticsearchSettings() DataAwsDmsEndpointElasticsearchSettingsList
-	ElasticsearchSettingsInput() interface{}
 	EndpointArn() *string
 	EndpointId() *string
 	SetEndpointId(val *string)
@@ -38,8 +37,6 @@ type DataAwsDmsEndpoint interface {
 	EndpointType() *string
 	EngineName() *string
 	ExtraConnectionAttributes() *string
-	SetExtraConnectionAttributes(val *string)
-	ExtraConnectionAttributesInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -52,7 +49,6 @@ type DataAwsDmsEndpoint interface {
 	SetId(val *string)
 	IdInput() *string
 	KafkaSettings() DataAwsDmsEndpointKafkaSettingsList
-	KafkaSettingsInput() interface{}
 	KinesisSettings() DataAwsDmsEndpointKinesisSettingsList
 	KmsKeyArn() *string
 	// Experimental.
@@ -60,7 +56,6 @@ type DataAwsDmsEndpoint interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	MongodbSettings() DataAwsDmsEndpointMongodbSettingsList
-	MongodbSettingsInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	Password() *string
@@ -114,14 +109,7 @@ type DataAwsDmsEndpoint interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutElasticsearchSettings(value interface{})
-	PutKafkaSettings(value interface{})
-	PutMongodbSettings(value interface{})
-	ResetElasticsearchSettings()
-	ResetExtraConnectionAttributes()
 	ResetId()
-	ResetKafkaSettings()
-	ResetMongodbSettings()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -211,16 +199,6 @@ func (j *jsiiProxy_DataAwsDmsEndpoint) ElasticsearchSettings() DataAwsDmsEndpoin
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDmsEndpoint) ElasticsearchSettingsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"elasticsearchSettingsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAwsDmsEndpoint) EndpointArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -276,16 +254,6 @@ func (j *jsiiProxy_DataAwsDmsEndpoint) ExtraConnectionAttributes() *string {
 	_jsii_.Get(
 		j,
 		"extraConnectionAttributes",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsDmsEndpoint) ExtraConnectionAttributesInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"extraConnectionAttributesInput",
 		&returns,
 	)
 	return returns
@@ -351,16 +319,6 @@ func (j *jsiiProxy_DataAwsDmsEndpoint) KafkaSettings() DataAwsDmsEndpointKafkaSe
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDmsEndpoint) KafkaSettingsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"kafkaSettingsInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAwsDmsEndpoint) KinesisSettings() DataAwsDmsEndpointKinesisSettingsList {
 	var returns DataAwsDmsEndpointKinesisSettingsList
 	_jsii_.Get(
@@ -396,16 +354,6 @@ func (j *jsiiProxy_DataAwsDmsEndpoint) MongodbSettings() DataAwsDmsEndpointMongo
 	_jsii_.Get(
 		j,
 		"mongodbSettings",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsDmsEndpoint) MongodbSettingsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"mongodbSettingsInput",
 		&returns,
 	)
 	return returns
@@ -602,7 +550,7 @@ func (j *jsiiProxy_DataAwsDmsEndpoint) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint aws_dms_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/dms_endpoint aws_dms_endpoint} Data Source.
 func NewDataAwsDmsEndpoint(scope constructs.Construct, id *string, config *DataAwsDmsEndpointConfig) DataAwsDmsEndpoint {
 	_init_.Initialize()
 
@@ -620,7 +568,7 @@ func NewDataAwsDmsEndpoint(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/dms_endpoint aws_dms_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/dms_endpoint aws_dms_endpoint} Data Source.
 func NewDataAwsDmsEndpoint_Override(d DataAwsDmsEndpoint, scope constructs.Construct, id *string, config *DataAwsDmsEndpointConfig) {
 	_init_.Initialize()
 
@@ -657,17 +605,6 @@ func (j *jsiiProxy_DataAwsDmsEndpoint)SetEndpointId(val *string) {
 	_jsii_.Set(
 		j,
 		"endpointId",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAwsDmsEndpoint)SetExtraConnectionAttributes(val *string) {
-	if err := j.validateSetExtraConnectionAttributesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"extraConnectionAttributes",
 		val,
 	)
 }
@@ -987,75 +924,10 @@ func (d *jsiiProxy_DataAwsDmsEndpoint) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
-func (d *jsiiProxy_DataAwsDmsEndpoint) PutElasticsearchSettings(value interface{}) {
-	if err := d.validatePutElasticsearchSettingsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putElasticsearchSettings",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAwsDmsEndpoint) PutKafkaSettings(value interface{}) {
-	if err := d.validatePutKafkaSettingsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putKafkaSettings",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAwsDmsEndpoint) PutMongodbSettings(value interface{}) {
-	if err := d.validatePutMongodbSettingsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putMongodbSettings",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAwsDmsEndpoint) ResetElasticsearchSettings() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetElasticsearchSettings",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAwsDmsEndpoint) ResetExtraConnectionAttributes() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetExtraConnectionAttributes",
-		nil, // no parameters
-	)
-}
-
 func (d *jsiiProxy_DataAwsDmsEndpoint) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAwsDmsEndpoint) ResetKafkaSettings() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetKafkaSettings",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAwsDmsEndpoint) ResetMongodbSettings() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetMongodbSettings",
 		nil, // no parameters
 	)
 }

@@ -15,6 +15,8 @@ type MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSetting
 	cdktf.ComplexObject
 	AncillarySourceSettings() MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettingsOutputReference
 	AncillarySourceSettingsInput() *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings
+	AribSourceSettings() MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettingsOutputReference
+	AribSourceSettingsInput() *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettings
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,8 +32,8 @@ type MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSetting
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DvbTdtSettings() MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettingsOutputReference
-	DvbTdtSettingsInput() *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings
+	DvbSubSourceSettings() MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettingsOutputReference
+	DvbSubSourceSettingsInput() *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettings
 	EmbeddedSourceSettings() MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettingsOutputReference
 	EmbeddedSourceSettingsInput() *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings
 	// Experimental.
@@ -77,13 +79,15 @@ type MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSetting
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAncillarySourceSettings(value *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAncillarySourceSettings)
-	PutDvbTdtSettings(value *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings)
+	PutAribSourceSettings(value *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettings)
+	PutDvbSubSourceSettings(value *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettings)
 	PutEmbeddedSourceSettings(value *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsEmbeddedSourceSettings)
 	PutScte20SourceSettings(value *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte20SourceSettings)
 	PutScte27SourceSettings(value *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsScte27SourceSettings)
 	PutTeletextSourceSettings(value *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsTeletextSourceSettings)
 	ResetAncillarySourceSettings()
-	ResetDvbTdtSettings()
+	ResetAribSourceSettings()
+	ResetDvbSubSourceSettings()
 	ResetEmbeddedSourceSettings()
 	ResetScte20SourceSettings()
 	ResetScte27SourceSettings()
@@ -123,6 +127,26 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorS
 	return returns
 }
 
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference) AribSourceSettings() MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettingsOutputReference {
+	var returns MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"aribSourceSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference) AribSourceSettingsInput() *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettings {
+	var returns *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettings
+	_jsii_.Get(
+		j,
+		"aribSourceSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -153,21 +177,21 @@ func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorS
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference) DvbTdtSettings() MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettingsOutputReference {
-	var returns MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettingsOutputReference
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference) DvbSubSourceSettings() MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettingsOutputReference {
+	var returns MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettingsOutputReference
 	_jsii_.Get(
 		j,
-		"dvbTdtSettings",
+		"dvbSubSourceSettings",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference) DvbTdtSettingsInput() *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings {
-	var returns *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings
+func (j *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference) DvbSubSourceSettingsInput() *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettings {
+	var returns *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettings
 	_jsii_.Get(
 		j,
-		"dvbTdtSettingsInput",
+		"dvbSubSourceSettingsInput",
 		&returns,
 	)
 	return returns
@@ -573,13 +597,24 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorS
 	)
 }
 
-func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference) PutDvbTdtSettings(value *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbTdtSettings) {
-	if err := m.validatePutDvbTdtSettingsParameters(value); err != nil {
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference) PutAribSourceSettings(value *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsAribSourceSettings) {
+	if err := m.validatePutAribSourceSettingsParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		m,
-		"putDvbTdtSettings",
+		"putAribSourceSettings",
+		[]interface{}{value},
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference) PutDvbSubSourceSettings(value *MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsDvbSubSourceSettings) {
+	if err := m.validatePutDvbSubSourceSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putDvbSubSourceSettings",
 		[]interface{}{value},
 	)
 }
@@ -636,10 +671,18 @@ func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorS
 	)
 }
 
-func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference) ResetDvbTdtSettings() {
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference) ResetAribSourceSettings() {
 	_jsii_.InvokeVoid(
 		m,
-		"resetDvbTdtSettings",
+		"resetAribSourceSettings",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsInputSettingsCaptionSelectorSelectorSettingsOutputReference) ResetDvbSubSourceSettings() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDvbSubSourceSettings",
 		nil, // no parameters
 	)
 }

@@ -114,17 +114,6 @@ func (d *jsiiProxy_DmsReplicationSubnetGroup) validateOverrideLogicalIdParameter
 	return nil
 }
 
-func (d *jsiiProxy_DmsReplicationSubnetGroup) validatePutTimeoutsParameters(value *DmsReplicationSubnetGroupTimeouts) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
-		return err
-	}
-
-	return nil
-}
-
 func validateDmsReplicationSubnetGroup_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")

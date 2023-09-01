@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_versioning aws_s3_bucket_versioning}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/s3_bucket_versioning aws_s3_bucket_versioning}.
 type S3BucketVersioningA interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -383,7 +383,7 @@ func (j *jsiiProxy_S3BucketVersioningA) VersioningConfigurationInput() *S3Bucket
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_versioning aws_s3_bucket_versioning} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/s3_bucket_versioning aws_s3_bucket_versioning} Resource.
 func NewS3BucketVersioningA(scope constructs.Construct, id *string, config *S3BucketVersioningAConfig) S3BucketVersioningA {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewS3BucketVersioningA(scope constructs.Construct, id *string, config *S3Bu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/s3_bucket_versioning aws_s3_bucket_versioning} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/s3_bucket_versioning aws_s3_bucket_versioning} Resource.
 func NewS3BucketVersioningA_Override(s S3BucketVersioningA, scope constructs.Construct, id *string, config *S3BucketVersioningAConfig) {
 	_init_.Initialize()
 

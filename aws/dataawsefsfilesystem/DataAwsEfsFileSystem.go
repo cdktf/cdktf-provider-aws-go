@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/efs_file_system aws_efs_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/efs_file_system aws_efs_file_system}.
 type DataAwsEfsFileSystem interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -55,6 +55,7 @@ type DataAwsEfsFileSystem interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LifecyclePolicy() DataAwsEfsFileSystemLifecyclePolicyList
+	Name() *string
 	// The tree node.
 	Node() constructs.Node
 	PerformanceMode() *string
@@ -333,6 +334,16 @@ func (j *jsiiProxy_DataAwsEfsFileSystem) LifecyclePolicy() DataAwsEfsFileSystemL
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsEfsFileSystem) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsEfsFileSystem) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -454,7 +465,7 @@ func (j *jsiiProxy_DataAwsEfsFileSystem) ThroughputMode() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/efs_file_system aws_efs_file_system} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/efs_file_system aws_efs_file_system} Data Source.
 func NewDataAwsEfsFileSystem(scope constructs.Construct, id *string, config *DataAwsEfsFileSystemConfig) DataAwsEfsFileSystem {
 	_init_.Initialize()
 
@@ -472,7 +483,7 @@ func NewDataAwsEfsFileSystem(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/data-sources/efs_file_system aws_efs_file_system} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/efs_file_system aws_efs_file_system} Data Source.
 func NewDataAwsEfsFileSystem_Override(d DataAwsEfsFileSystem, scope constructs.Construct, id *string, config *DataAwsEfsFileSystemConfig) {
 	_init_.Initialize()
 

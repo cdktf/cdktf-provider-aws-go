@@ -166,25 +166,9 @@ func (j *jsiiProxy_DataAwsDmsEndpointMongodbSettingsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDmsEndpointMongodbSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataAwsDmsEndpointMongodbSettings:
-		val := val.(*DataAwsDmsEndpointMongodbSettings)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataAwsDmsEndpointMongodbSettings:
-		val_ := val.(DataAwsDmsEndpointMongodbSettings)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAwsDmsEndpointMongodbSettings; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataAwsDmsEndpointMongodbSettingsOutputReference) validateSetInternalValueParameters(val *DataAwsDmsEndpointMongodbSettings) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

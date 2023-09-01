@@ -107,6 +107,10 @@ func (j *jsiiProxy_Wafv2RuleGroup) validateSetNameParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_Wafv2RuleGroup) validateSetNamePrefixParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Wafv2RuleGroup) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

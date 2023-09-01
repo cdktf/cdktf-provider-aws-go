@@ -55,6 +55,10 @@ func (b *jsiiProxy_BatchJobQueue) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (b *jsiiProxy_BatchJobQueue) validatePutTimeoutsParameters(value *BatchJobQueueTimeouts) error {
+	return nil
+}
+
 func validateBatchJobQueue_IsConstructParameters(x interface{}) error {
 	return nil
 }
@@ -76,10 +80,6 @@ func (j *jsiiProxy_BatchJobQueue) validateSetConnectionParameters(val interface{
 }
 
 func (j *jsiiProxy_BatchJobQueue) validateSetCountParameters(val interface{}) error {
-	return nil
-}
-
-func (j *jsiiProxy_BatchJobQueue) validateSetIdParameters(val *string) error {
 	return nil
 }
 
@@ -108,10 +108,6 @@ func (j *jsiiProxy_BatchJobQueue) validateSetStateParameters(val *string) error 
 }
 
 func (j *jsiiProxy_BatchJobQueue) validateSetTagsParameters(val *map[string]*string) error {
-	return nil
-}
-
-func (j *jsiiProxy_BatchJobQueue) validateSetTagsAllParameters(val *map[string]*string) error {
 	return nil
 }
 

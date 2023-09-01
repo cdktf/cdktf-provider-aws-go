@@ -55,10 +55,6 @@ func (d *jsiiProxy_DmsReplicationSubnetGroup) validateOverrideLogicalIdParameter
 	return nil
 }
 
-func (d *jsiiProxy_DmsReplicationSubnetGroup) validatePutTimeoutsParameters(value *DmsReplicationSubnetGroupTimeouts) error {
-	return nil
-}
-
 func validateDmsReplicationSubnetGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

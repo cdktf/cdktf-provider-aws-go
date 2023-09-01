@@ -111,6 +111,10 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetDeploymentTypeParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetEndpointIpAddressRangeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -123,7 +127,15 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetLifecycleParameters(val *cdk
 	return nil
 }
 
+func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetPreferredSubnetIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetRouteTableIdsParameters(val *[]*string) error {
 	return nil
 }
 

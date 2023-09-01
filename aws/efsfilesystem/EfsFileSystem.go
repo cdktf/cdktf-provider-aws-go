@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/efs_file_system aws_efs_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/efs_file_system aws_efs_file_system}.
 type EfsFileSystem interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -63,6 +63,7 @@ type EfsFileSystem interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LifecyclePolicy() EfsFileSystemLifecyclePolicyList
 	LifecyclePolicyInput() interface{}
+	Name() *string
 	// The tree node.
 	Node() constructs.Node
 	NumberOfMountTargets() *float64
@@ -394,6 +395,16 @@ func (j *jsiiProxy_EfsFileSystem) LifecyclePolicyInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_EfsFileSystem) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EfsFileSystem) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -595,7 +606,7 @@ func (j *jsiiProxy_EfsFileSystem) ThroughputModeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/efs_file_system aws_efs_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/efs_file_system aws_efs_file_system} Resource.
 func NewEfsFileSystem(scope constructs.Construct, id *string, config *EfsFileSystemConfig) EfsFileSystem {
 	_init_.Initialize()
 
@@ -613,7 +624,7 @@ func NewEfsFileSystem(scope constructs.Construct, id *string, config *EfsFileSys
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/efs_file_system aws_efs_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/efs_file_system aws_efs_file_system} Resource.
 func NewEfsFileSystem_Override(e EfsFileSystem, scope constructs.Construct, id *string, config *EfsFileSystemConfig) {
 	_init_.Initialize()
 

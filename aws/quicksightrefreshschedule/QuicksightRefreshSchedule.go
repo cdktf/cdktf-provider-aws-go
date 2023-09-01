@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/quicksight_refresh_schedule aws_quicksight_refresh_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/quicksight_refresh_schedule aws_quicksight_refresh_schedule}.
 type QuicksightRefreshSchedule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -381,7 +381,7 @@ func (j *jsiiProxy_QuicksightRefreshSchedule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/quicksight_refresh_schedule aws_quicksight_refresh_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/quicksight_refresh_schedule aws_quicksight_refresh_schedule} Resource.
 func NewQuicksightRefreshSchedule(scope constructs.Construct, id *string, config *QuicksightRefreshScheduleConfig) QuicksightRefreshSchedule {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewQuicksightRefreshSchedule(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/quicksight_refresh_schedule aws_quicksight_refresh_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/quicksight_refresh_schedule aws_quicksight_refresh_schedule} Resource.
 func NewQuicksightRefreshSchedule_Override(q QuicksightRefreshSchedule, scope constructs.Construct, id *string, config *QuicksightRefreshScheduleConfig) {
 	_init_.Initialize()
 

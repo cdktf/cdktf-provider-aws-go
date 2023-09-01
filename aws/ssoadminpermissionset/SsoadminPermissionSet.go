@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/ssoadmin_permission_set aws_ssoadmin_permission_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ssoadmin_permission_set aws_ssoadmin_permission_set}.
 type SsoadminPermissionSet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -87,6 +87,8 @@ type SsoadminPermissionSet interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() SsoadminPermissionSetTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -112,6 +114,7 @@ type SsoadminPermissionSet interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *SsoadminPermissionSetTimeouts)
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -121,6 +124,7 @@ type SsoadminPermissionSet interface {
 	ResetSessionDuration()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -476,8 +480,28 @@ func (j *jsiiProxy_SsoadminPermissionSet) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SsoadminPermissionSet) Timeouts() SsoadminPermissionSetTimeoutsOutputReference {
+	var returns SsoadminPermissionSetTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/ssoadmin_permission_set aws_ssoadmin_permission_set} Resource.
+func (j *jsiiProxy_SsoadminPermissionSet) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ssoadmin_permission_set aws_ssoadmin_permission_set} Resource.
 func NewSsoadminPermissionSet(scope constructs.Construct, id *string, config *SsoadminPermissionSetConfig) SsoadminPermissionSet {
 	_init_.Initialize()
 
@@ -495,7 +519,7 @@ func NewSsoadminPermissionSet(scope constructs.Construct, id *string, config *Ss
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.13.1/docs/resources/ssoadmin_permission_set aws_ssoadmin_permission_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ssoadmin_permission_set aws_ssoadmin_permission_set} Resource.
 func NewSsoadminPermissionSet_Override(s SsoadminPermissionSet, scope constructs.Construct, id *string, config *SsoadminPermissionSetConfig) {
 	_init_.Initialize()
 
@@ -928,6 +952,17 @@ func (s *jsiiProxy_SsoadminPermissionSet) OverrideLogicalId(newLogicalId *string
 	)
 }
 
+func (s *jsiiProxy_SsoadminPermissionSet) PutTimeouts(value *SsoadminPermissionSetTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SsoadminPermissionSet) ResetDescription() {
 	_jsii_.InvokeVoid(
 		s,
@@ -980,6 +1015,14 @@ func (s *jsiiProxy_SsoadminPermissionSet) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SsoadminPermissionSet) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }
