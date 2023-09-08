@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/datasync_task aws_datasync_task}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/datasync_task aws_datasync_task}.
 type DatasyncTask interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -562,7 +562,7 @@ func (j *jsiiProxy_DatasyncTask) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/datasync_task aws_datasync_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/datasync_task aws_datasync_task} Resource.
 func NewDatasyncTask(scope constructs.Construct, id *string, config *DatasyncTaskConfig) DatasyncTask {
 	_init_.Initialize()
 
@@ -580,7 +580,7 @@ func NewDatasyncTask(scope constructs.Construct, id *string, config *DatasyncTas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/datasync_task aws_datasync_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/datasync_task aws_datasync_task} Resource.
 func NewDatasyncTask_Override(d DatasyncTask, scope constructs.Construct, id *string, config *DatasyncTaskConfig) {
 	_init_.Initialize()
 

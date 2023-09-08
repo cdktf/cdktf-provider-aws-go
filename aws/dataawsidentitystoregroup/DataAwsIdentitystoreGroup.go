@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/identitystore_group aws_identitystore_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/identitystore_group aws_identitystore_group}.
 type DataAwsIdentitystoreGroup interface {
 	cdktf.TerraformDataSource
 	AlternateIdentifier() DataAwsIdentitystoreGroupAlternateIdentifierOutputReference
@@ -32,6 +32,8 @@ type DataAwsIdentitystoreGroup interface {
 	Description() *string
 	DisplayName() *string
 	ExternalIds() DataAwsIdentitystoreGroupExternalIdsList
+	Filter() DataAwsIdentitystoreGroupFilterOutputReference
+	FilterInput() *DataAwsIdentitystoreGroupFilter
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -93,7 +95,9 @@ type DataAwsIdentitystoreGroup interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAlternateIdentifier(value *DataAwsIdentitystoreGroupAlternateIdentifier)
+	PutFilter(value *DataAwsIdentitystoreGroupFilter)
 	ResetAlternateIdentifier()
+	ResetFilter()
 	ResetGroupId()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -199,6 +203,26 @@ func (j *jsiiProxy_DataAwsIdentitystoreGroup) ExternalIds() DataAwsIdentitystore
 	_jsii_.Get(
 		j,
 		"externalIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIdentitystoreGroup) Filter() DataAwsIdentitystoreGroupFilterOutputReference {
+	var returns DataAwsIdentitystoreGroupFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIdentitystoreGroup) FilterInput() *DataAwsIdentitystoreGroupFilter {
+	var returns *DataAwsIdentitystoreGroupFilter
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -365,7 +389,7 @@ func (j *jsiiProxy_DataAwsIdentitystoreGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/identitystore_group aws_identitystore_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/identitystore_group aws_identitystore_group} Data Source.
 func NewDataAwsIdentitystoreGroup(scope constructs.Construct, id *string, config *DataAwsIdentitystoreGroupConfig) DataAwsIdentitystoreGroup {
 	_init_.Initialize()
 
@@ -383,7 +407,7 @@ func NewDataAwsIdentitystoreGroup(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/identitystore_group aws_identitystore_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/identitystore_group aws_identitystore_group} Data Source.
 func NewDataAwsIdentitystoreGroup_Override(d DataAwsIdentitystoreGroup, scope constructs.Construct, id *string, config *DataAwsIdentitystoreGroupConfig) {
 	_init_.Initialize()
 
@@ -750,10 +774,29 @@ func (d *jsiiProxy_DataAwsIdentitystoreGroup) PutAlternateIdentifier(value *Data
 	)
 }
 
+func (d *jsiiProxy_DataAwsIdentitystoreGroup) PutFilter(value *DataAwsIdentitystoreGroupFilter) {
+	if err := d.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataAwsIdentitystoreGroup) ResetAlternateIdentifier() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetAlternateIdentifier",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsIdentitystoreGroup) ResetFilter() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetFilter",
 		nil, // no parameters
 	)
 }

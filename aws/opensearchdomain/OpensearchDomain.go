@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/opensearch_domain aws_opensearch_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/opensearch_domain aws_opensearch_domain}.
 type OpensearchDomain interface {
 	cdktf.TerraformResource
 	AccessPolicies() *string
@@ -97,6 +97,8 @@ type OpensearchDomain interface {
 	RawOverrides() interface{}
 	SnapshotOptions() OpensearchDomainSnapshotOptionsOutputReference
 	SnapshotOptionsInput() *OpensearchDomainSnapshotOptions
+	SoftwareUpdateOptions() OpensearchDomainSoftwareUpdateOptionsOutputReference
+	SoftwareUpdateOptionsInput() *OpensearchDomainSoftwareUpdateOptions
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -149,6 +151,7 @@ type OpensearchDomain interface {
 	PutNodeToNodeEncryption(value *OpensearchDomainNodeToNodeEncryption)
 	PutOffPeakWindowOptions(value *OpensearchDomainOffPeakWindowOptions)
 	PutSnapshotOptions(value *OpensearchDomainSnapshotOptions)
+	PutSoftwareUpdateOptions(value *OpensearchDomainSoftwareUpdateOptions)
 	PutTimeouts(value *OpensearchDomainTimeouts)
 	PutVpcOptions(value *OpensearchDomainVpcOptions)
 	ResetAccessPolicies()
@@ -169,6 +172,7 @@ type OpensearchDomain interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSnapshotOptions()
+	ResetSoftwareUpdateOptions()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -688,6 +692,26 @@ func (j *jsiiProxy_OpensearchDomain) SnapshotOptionsInput() *OpensearchDomainSna
 	return returns
 }
 
+func (j *jsiiProxy_OpensearchDomain) SoftwareUpdateOptions() OpensearchDomainSoftwareUpdateOptionsOutputReference {
+	var returns OpensearchDomainSoftwareUpdateOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"softwareUpdateOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomain) SoftwareUpdateOptionsInput() *OpensearchDomainSoftwareUpdateOptions {
+	var returns *OpensearchDomainSoftwareUpdateOptions
+	_jsii_.Get(
+		j,
+		"softwareUpdateOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OpensearchDomain) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -799,7 +823,7 @@ func (j *jsiiProxy_OpensearchDomain) VpcOptionsInput() *OpensearchDomainVpcOptio
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/opensearch_domain aws_opensearch_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/opensearch_domain aws_opensearch_domain} Resource.
 func NewOpensearchDomain(scope constructs.Construct, id *string, config *OpensearchDomainConfig) OpensearchDomain {
 	_init_.Initialize()
 
@@ -817,7 +841,7 @@ func NewOpensearchDomain(scope constructs.Construct, id *string, config *Opensea
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/opensearch_domain aws_opensearch_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/opensearch_domain aws_opensearch_domain} Resource.
 func NewOpensearchDomain_Override(o OpensearchDomain, scope constructs.Construct, id *string, config *OpensearchDomainConfig) {
 	_init_.Initialize()
 
@@ -1360,6 +1384,17 @@ func (o *jsiiProxy_OpensearchDomain) PutSnapshotOptions(value *OpensearchDomainS
 	)
 }
 
+func (o *jsiiProxy_OpensearchDomain) PutSoftwareUpdateOptions(value *OpensearchDomainSoftwareUpdateOptions) {
+	if err := o.validatePutSoftwareUpdateOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putSoftwareUpdateOptions",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OpensearchDomain) PutTimeouts(value *OpensearchDomainTimeouts) {
 	if err := o.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1506,6 +1541,14 @@ func (o *jsiiProxy_OpensearchDomain) ResetSnapshotOptions() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetSnapshotOptions",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomain) ResetSoftwareUpdateOptions() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSoftwareUpdateOptions",
 		nil, // no parameters
 	)
 }

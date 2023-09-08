@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/elastic_beanstalk_environment aws_elastic_beanstalk_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/elastic_beanstalk_environment aws_elastic_beanstalk_environment}.
 type ElasticBeanstalkEnvironment interface {
 	cdktf.TerraformResource
 	AllSettings() ElasticBeanstalkEnvironmentAllSettingsList
@@ -733,7 +733,7 @@ func (j *jsiiProxy_ElasticBeanstalkEnvironment) WaitForReadyTimeoutInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/elastic_beanstalk_environment aws_elastic_beanstalk_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/elastic_beanstalk_environment aws_elastic_beanstalk_environment} Resource.
 func NewElasticBeanstalkEnvironment(scope constructs.Construct, id *string, config *ElasticBeanstalkEnvironmentConfig) ElasticBeanstalkEnvironment {
 	_init_.Initialize()
 
@@ -751,7 +751,7 @@ func NewElasticBeanstalkEnvironment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/elastic_beanstalk_environment aws_elastic_beanstalk_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/elastic_beanstalk_environment aws_elastic_beanstalk_environment} Resource.
 func NewElasticBeanstalkEnvironment_Override(e ElasticBeanstalkEnvironment, scope constructs.Construct, id *string, config *ElasticBeanstalkEnvironmentConfig) {
 	_init_.Initialize()
 

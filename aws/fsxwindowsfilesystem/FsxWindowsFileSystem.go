@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system}.
 type FsxWindowsFileSystem interface {
 	cdktf.TerraformResource
 	ActiveDirectoryId() *string
@@ -55,6 +55,8 @@ type FsxWindowsFileSystem interface {
 	DeploymentType() *string
 	SetDeploymentType(val *string)
 	DeploymentTypeInput() *string
+	DiskIopsConfiguration() FsxWindowsFileSystemDiskIopsConfigurationOutputReference
+	DiskIopsConfigurationInput() *FsxWindowsFileSystemDiskIopsConfiguration
 	DnsName() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -157,6 +159,7 @@ type FsxWindowsFileSystem interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuditLogConfiguration(value *FsxWindowsFileSystemAuditLogConfiguration)
+	PutDiskIopsConfiguration(value *FsxWindowsFileSystemDiskIopsConfiguration)
 	PutSelfManagedActiveDirectory(value *FsxWindowsFileSystemSelfManagedActiveDirectory)
 	PutTimeouts(value *FsxWindowsFileSystemTimeouts)
 	ResetActiveDirectoryId()
@@ -167,6 +170,7 @@ type FsxWindowsFileSystem interface {
 	ResetCopyTagsToBackups()
 	ResetDailyAutomaticBackupStartTime()
 	ResetDeploymentType()
+	ResetDiskIopsConfiguration()
 	ResetId()
 	ResetKmsKeyId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -412,6 +416,26 @@ func (j *jsiiProxy_FsxWindowsFileSystem) DeploymentTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"deploymentTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxWindowsFileSystem) DiskIopsConfiguration() FsxWindowsFileSystemDiskIopsConfigurationOutputReference {
+	var returns FsxWindowsFileSystemDiskIopsConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"diskIopsConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxWindowsFileSystem) DiskIopsConfigurationInput() *FsxWindowsFileSystemDiskIopsConfiguration {
+	var returns *FsxWindowsFileSystemDiskIopsConfiguration
+	_jsii_.Get(
+		j,
+		"diskIopsConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -868,7 +892,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem) WeeklyMaintenanceStartTimeInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system} Resource.
 func NewFsxWindowsFileSystem(scope constructs.Construct, id *string, config *FsxWindowsFileSystemConfig) FsxWindowsFileSystem {
 	_init_.Initialize()
 
@@ -886,7 +910,7 @@ func NewFsxWindowsFileSystem(scope constructs.Construct, id *string, config *Fsx
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system} Resource.
 func NewFsxWindowsFileSystem_Override(f FsxWindowsFileSystem, scope constructs.Construct, id *string, config *FsxWindowsFileSystemConfig) {
 	_init_.Initialize()
 
@@ -1451,6 +1475,17 @@ func (f *jsiiProxy_FsxWindowsFileSystem) PutAuditLogConfiguration(value *FsxWind
 	)
 }
 
+func (f *jsiiProxy_FsxWindowsFileSystem) PutDiskIopsConfiguration(value *FsxWindowsFileSystemDiskIopsConfiguration) {
+	if err := f.validatePutDiskIopsConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putDiskIopsConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FsxWindowsFileSystem) PutSelfManagedActiveDirectory(value *FsxWindowsFileSystemSelfManagedActiveDirectory) {
 	if err := f.validatePutSelfManagedActiveDirectoryParameters(value); err != nil {
 		panic(err)
@@ -1533,6 +1568,14 @@ func (f *jsiiProxy_FsxWindowsFileSystem) ResetDeploymentType() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetDeploymentType",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxWindowsFileSystem) ResetDiskIopsConfiguration() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDiskIopsConfiguration",
 		nil, // no parameters
 	)
 }

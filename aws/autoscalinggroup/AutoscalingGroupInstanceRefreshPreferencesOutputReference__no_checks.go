@@ -83,7 +83,15 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) validateSetScaleInProtectedInstancesParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) validateSetSkipMatchingParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) validateSetStandbyInstancesParameters(val *string) error {
 	return nil
 }
 

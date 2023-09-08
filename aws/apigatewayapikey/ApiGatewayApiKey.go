@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key aws_api_gateway_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key aws_api_gateway_api_key}.
 type ApiGatewayApiKey interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -29,6 +29,9 @@ type ApiGatewayApiKey interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreatedDate() *string
+	CustomerId() *string
+	SetCustomerId(val *string)
+	CustomerIdInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -110,6 +113,7 @@ type ApiGatewayApiKey interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetCustomerId()
 	ResetDescription()
 	ResetEnabled()
 	ResetId()
@@ -189,6 +193,26 @@ func (j *jsiiProxy_ApiGatewayApiKey) CreatedDate() *string {
 	_jsii_.Get(
 		j,
 		"createdDate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayApiKey) CustomerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayApiKey) CustomerIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerIdInput",
 		&returns,
 	)
 	return returns
@@ -465,7 +489,7 @@ func (j *jsiiProxy_ApiGatewayApiKey) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key aws_api_gateway_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key aws_api_gateway_api_key} Resource.
 func NewApiGatewayApiKey(scope constructs.Construct, id *string, config *ApiGatewayApiKeyConfig) ApiGatewayApiKey {
 	_init_.Initialize()
 
@@ -483,7 +507,7 @@ func NewApiGatewayApiKey(scope constructs.Construct, id *string, config *ApiGate
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_api_key aws_api_gateway_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_api_key aws_api_gateway_api_key} Resource.
 func NewApiGatewayApiKey_Override(a ApiGatewayApiKey, scope constructs.Construct, id *string, config *ApiGatewayApiKeyConfig) {
 	_init_.Initialize()
 
@@ -512,6 +536,17 @@ func (j *jsiiProxy_ApiGatewayApiKey)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApiGatewayApiKey)SetCustomerId(val *string) {
+	if err := j.validateSetCustomerIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customerId",
 		val,
 	)
 }
@@ -902,6 +937,14 @@ func (a *jsiiProxy_ApiGatewayApiKey) OverrideLogicalId(newLogicalId *string) {
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayApiKey) ResetCustomerId() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCustomerId",
+		nil, // no parameters
 	)
 }
 

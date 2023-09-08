@@ -119,6 +119,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSubnetGroupName", GoMethod: "ResetSubnetGroupName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTransitEncryptionEnabled", GoMethod: "ResetTransitEncryptionEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "securityGroupIds", GoGetter: "SecurityGroupIds"},
 			_jsii_.MemberProperty{JsiiProperty: "securityGroupIdsInput", GoGetter: "SecurityGroupIdsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "snapshotArns", GoGetter: "SnapshotArns"},
@@ -142,6 +143,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "transitEncryptionEnabled", GoGetter: "TransitEncryptionEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "transitEncryptionEnabledInput", GoGetter: "TransitEncryptionEnabledInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticacheCluster{}

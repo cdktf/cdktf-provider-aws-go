@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/opsworks_ecs_cluster_layer aws_opsworks_ecs_cluster_layer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/opsworks_ecs_cluster_layer aws_opsworks_ecs_cluster_layer}.
 type OpsworksEcsClusterLayer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -898,7 +898,7 @@ func (j *jsiiProxy_OpsworksEcsClusterLayer) UseEbsOptimizedInstancesInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/opsworks_ecs_cluster_layer aws_opsworks_ecs_cluster_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/opsworks_ecs_cluster_layer aws_opsworks_ecs_cluster_layer} Resource.
 func NewOpsworksEcsClusterLayer(scope constructs.Construct, id *string, config *OpsworksEcsClusterLayerConfig) OpsworksEcsClusterLayer {
 	_init_.Initialize()
 
@@ -916,7 +916,7 @@ func NewOpsworksEcsClusterLayer(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/opsworks_ecs_cluster_layer aws_opsworks_ecs_cluster_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/opsworks_ecs_cluster_layer aws_opsworks_ecs_cluster_layer} Resource.
 func NewOpsworksEcsClusterLayer_Override(o OpsworksEcsClusterLayer, scope constructs.Construct, id *string, config *OpsworksEcsClusterLayerConfig) {
 	_init_.Initialize()
 

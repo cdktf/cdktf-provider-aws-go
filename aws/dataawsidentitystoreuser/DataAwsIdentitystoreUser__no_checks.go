@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsIdentitystoreUser) validatePutAlternateIdentifierParam
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsIdentitystoreUser) validatePutFilterParameters(value *DataAwsIdentitystoreUserFilter) error {
+	return nil
+}
+
 func validateDataAwsIdentitystoreUser_IsConstructParameters(x interface{}) error {
 	return nil
 }

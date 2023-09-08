@@ -59,6 +59,10 @@ func (f *jsiiProxy_FsxWindowsFileSystem) validatePutAuditLogConfigurationParamet
 	return nil
 }
 
+func (f *jsiiProxy_FsxWindowsFileSystem) validatePutDiskIopsConfigurationParameters(value *FsxWindowsFileSystemDiskIopsConfiguration) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxWindowsFileSystem) validatePutSelfManagedActiveDirectoryParameters(value *FsxWindowsFileSystemSelfManagedActiveDirectory) error {
 	return nil
 }

@@ -103,6 +103,10 @@ func (j *jsiiProxy_DataAwsS3Objects) validateSetPrefixParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsS3Objects) validateSetRequestPayerParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsS3Objects) validateSetStartAfterParameters(val *string) error {
 	return nil
 }

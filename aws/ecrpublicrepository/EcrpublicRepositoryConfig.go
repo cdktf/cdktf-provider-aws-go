@@ -22,26 +22,26 @@ type EcrpublicRepositoryConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ecrpublic_repository#repository_name EcrpublicRepository#repository_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ecrpublic_repository#repository_name EcrpublicRepository#repository_name}.
 	RepositoryName *string `field:"required" json:"repositoryName" yaml:"repositoryName"`
 	// catalog_data block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ecrpublic_repository#catalog_data EcrpublicRepository#catalog_data}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ecrpublic_repository#catalog_data EcrpublicRepository#catalog_data}
 	CatalogData *EcrpublicRepositoryCatalogData `field:"optional" json:"catalogData" yaml:"catalogData"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ecrpublic_repository#force_destroy EcrpublicRepository#force_destroy}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ecrpublic_repository#force_destroy EcrpublicRepository#force_destroy}.
 	ForceDestroy interface{} `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ecrpublic_repository#id EcrpublicRepository#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ecrpublic_repository#id EcrpublicRepository#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ecrpublic_repository#tags EcrpublicRepository#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ecrpublic_repository#tags EcrpublicRepository#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ecrpublic_repository#tags_all EcrpublicRepository#tags_all}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ecrpublic_repository#tags_all EcrpublicRepository#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ecrpublic_repository#timeouts EcrpublicRepository#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ecrpublic_repository#timeouts EcrpublicRepository#timeouts}
 	Timeouts *EcrpublicRepositoryTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

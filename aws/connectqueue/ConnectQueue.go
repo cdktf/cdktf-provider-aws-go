@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/connect_queue aws_connect_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/connect_queue aws_connect_queue}.
 type ConnectQueue interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -548,7 +548,7 @@ func (j *jsiiProxy_ConnectQueue) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/connect_queue aws_connect_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/connect_queue aws_connect_queue} Resource.
 func NewConnectQueue(scope constructs.Construct, id *string, config *ConnectQueueConfig) ConnectQueue {
 	_init_.Initialize()
 
@@ -566,7 +566,7 @@ func NewConnectQueue(scope constructs.Construct, id *string, config *ConnectQueu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/connect_queue aws_connect_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/connect_queue aws_connect_queue} Resource.
 func NewConnectQueue_Override(c ConnectQueue, scope constructs.Construct, id *string, config *ConnectQueueConfig) {
 	_init_.Initialize()
 

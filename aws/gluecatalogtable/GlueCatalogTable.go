@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/glue_catalog_table aws_glue_catalog_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/glue_catalog_table aws_glue_catalog_table}.
 type GlueCatalogTable interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -61,6 +61,8 @@ type GlueCatalogTable interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OpenTableFormatInput() GlueCatalogTableOpenTableFormatInputOutputReference
+	OpenTableFormatInputInput() *GlueCatalogTableOpenTableFormatInput
 	Owner() *string
 	SetOwner(val *string)
 	OwnerInput() *string
@@ -128,6 +130,7 @@ type GlueCatalogTable interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutOpenTableFormatInput(value *GlueCatalogTableOpenTableFormatInput)
 	PutPartitionIndex(value interface{})
 	PutPartitionKeys(value interface{})
 	PutStorageDescriptor(value *GlueCatalogTableStorageDescriptor)
@@ -135,6 +138,7 @@ type GlueCatalogTable interface {
 	ResetCatalogId()
 	ResetDescription()
 	ResetId()
+	ResetOpenTableFormatInput()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -368,6 +372,26 @@ func (j *jsiiProxy_GlueCatalogTable) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCatalogTable) OpenTableFormatInput() GlueCatalogTableOpenTableFormatInputOutputReference {
+	var returns GlueCatalogTableOpenTableFormatInputOutputReference
+	_jsii_.Get(
+		j,
+		"openTableFormatInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCatalogTable) OpenTableFormatInputInput() *GlueCatalogTableOpenTableFormatInput {
+	var returns *GlueCatalogTableOpenTableFormatInput
+	_jsii_.Get(
+		j,
+		"openTableFormatInputInput",
 		&returns,
 	)
 	return returns
@@ -634,7 +658,7 @@ func (j *jsiiProxy_GlueCatalogTable) ViewOriginalTextInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/glue_catalog_table aws_glue_catalog_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/glue_catalog_table aws_glue_catalog_table} Resource.
 func NewGlueCatalogTable(scope constructs.Construct, id *string, config *GlueCatalogTableConfig) GlueCatalogTable {
 	_init_.Initialize()
 
@@ -652,7 +676,7 @@ func NewGlueCatalogTable(scope constructs.Construct, id *string, config *GlueCat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/glue_catalog_table aws_glue_catalog_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/glue_catalog_table aws_glue_catalog_table} Resource.
 func NewGlueCatalogTable_Override(g GlueCatalogTable, scope constructs.Construct, id *string, config *GlueCatalogTableConfig) {
 	_init_.Initialize()
 
@@ -1118,6 +1142,17 @@ func (g *jsiiProxy_GlueCatalogTable) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (g *jsiiProxy_GlueCatalogTable) PutOpenTableFormatInput(value *GlueCatalogTableOpenTableFormatInput) {
+	if err := g.validatePutOpenTableFormatInputParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putOpenTableFormatInput",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GlueCatalogTable) PutPartitionIndex(value interface{}) {
 	if err := g.validatePutPartitionIndexParameters(value); err != nil {
 		panic(err)
@@ -1182,6 +1217,14 @@ func (g *jsiiProxy_GlueCatalogTable) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueCatalogTable) ResetOpenTableFormatInput() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOpenTableFormatInput",
 		nil, // no parameters
 	)
 }

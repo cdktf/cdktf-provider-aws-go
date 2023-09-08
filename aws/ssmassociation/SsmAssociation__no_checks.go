@@ -139,6 +139,10 @@ func (j *jsiiProxy_SsmAssociation) validateSetScheduleExpressionParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_SsmAssociation) validateSetSyncComplianceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmAssociation) validateSetWaitForSuccessTimeoutSecondsParameters(val *float64) error {
 	return nil
 }

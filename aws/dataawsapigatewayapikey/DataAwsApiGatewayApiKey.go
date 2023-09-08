@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/api_gateway_api_key aws_api_gateway_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/api_gateway_api_key aws_api_gateway_api_key}.
 type DataAwsApiGatewayApiKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -24,6 +24,7 @@ type DataAwsApiGatewayApiKey interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreatedDate() *string
+	CustomerId() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -144,6 +145,16 @@ func (j *jsiiProxy_DataAwsApiGatewayApiKey) CreatedDate() *string {
 	_jsii_.Get(
 		j,
 		"createdDate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsApiGatewayApiKey) CustomerId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerId",
 		&returns,
 	)
 	return returns
@@ -350,7 +361,7 @@ func (j *jsiiProxy_DataAwsApiGatewayApiKey) Value() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/api_gateway_api_key aws_api_gateway_api_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/api_gateway_api_key aws_api_gateway_api_key} Data Source.
 func NewDataAwsApiGatewayApiKey(scope constructs.Construct, id *string, config *DataAwsApiGatewayApiKeyConfig) DataAwsApiGatewayApiKey {
 	_init_.Initialize()
 
@@ -368,7 +379,7 @@ func NewDataAwsApiGatewayApiKey(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/api_gateway_api_key aws_api_gateway_api_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/api_gateway_api_key aws_api_gateway_api_key} Data Source.
 func NewDataAwsApiGatewayApiKey_Override(d DataAwsApiGatewayApiKey, scope constructs.Construct, id *string, config *DataAwsApiGatewayApiKeyConfig) {
 	_init_.Initialize()
 

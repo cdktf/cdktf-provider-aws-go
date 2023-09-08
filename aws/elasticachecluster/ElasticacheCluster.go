@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/elasticache_cluster aws_elasticache_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/elasticache_cluster aws_elasticache_cluster}.
 type ElasticacheCluster interface {
 	cdktf.TerraformResource
 	ApplyImmediately() interface{}
@@ -155,6 +155,9 @@ type ElasticacheCluster interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TransitEncryptionEnabled() interface{}
+	SetTransitEncryptionEnabled(val interface{})
+	TransitEncryptionEnabledInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -213,6 +216,7 @@ type ElasticacheCluster interface {
 	ResetSubnetGroupName()
 	ResetTags()
 	ResetTagsAll()
+	ResetTransitEncryptionEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -1038,8 +1042,28 @@ func (j *jsiiProxy_ElasticacheCluster) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ElasticacheCluster) TransitEncryptionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"transitEncryptionEnabled",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/elasticache_cluster aws_elasticache_cluster} Resource.
+func (j *jsiiProxy_ElasticacheCluster) TransitEncryptionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"transitEncryptionEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/elasticache_cluster aws_elasticache_cluster} Resource.
 func NewElasticacheCluster(scope constructs.Construct, id *string, config *ElasticacheClusterConfig) ElasticacheCluster {
 	_init_.Initialize()
 
@@ -1057,7 +1081,7 @@ func NewElasticacheCluster(scope constructs.Construct, id *string, config *Elast
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/elasticache_cluster aws_elasticache_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/elasticache_cluster aws_elasticache_cluster} Resource.
 func NewElasticacheCluster_Override(e ElasticacheCluster, scope constructs.Construct, id *string, config *ElasticacheClusterConfig) {
 	_init_.Initialize()
 
@@ -1451,6 +1475,17 @@ func (j *jsiiProxy_ElasticacheCluster)SetTagsAll(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElasticacheCluster)SetTransitEncryptionEnabled(val interface{}) {
+	if err := j.validateSetTransitEncryptionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transitEncryptionEnabled",
 		val,
 	)
 }
@@ -1968,6 +2003,14 @@ func (e *jsiiProxy_ElasticacheCluster) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElasticacheCluster) ResetTransitEncryptionEnabled() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTransitEncryptionEnabled",
 		nil, // no parameters
 	)
 }

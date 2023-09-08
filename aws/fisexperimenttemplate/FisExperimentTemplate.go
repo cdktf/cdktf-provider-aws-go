@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/fis_experiment_template aws_fis_experiment_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/fis_experiment_template aws_fis_experiment_template}.
 type FisExperimentTemplate interface {
 	cdktf.TerraformResource
 	Action() FisExperimentTemplateActionList
@@ -501,7 +501,7 @@ func (j *jsiiProxy_FisExperimentTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/fis_experiment_template aws_fis_experiment_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/fis_experiment_template aws_fis_experiment_template} Resource.
 func NewFisExperimentTemplate(scope constructs.Construct, id *string, config *FisExperimentTemplateConfig) FisExperimentTemplate {
 	_init_.Initialize()
 
@@ -519,7 +519,7 @@ func NewFisExperimentTemplate(scope constructs.Construct, id *string, config *Fi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/fis_experiment_template aws_fis_experiment_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/fis_experiment_template aws_fis_experiment_template} Resource.
 func NewFisExperimentTemplate_Override(f FisExperimentTemplate, scope constructs.Construct, id *string, config *FisExperimentTemplateConfig) {
 	_init_.Initialize()
 

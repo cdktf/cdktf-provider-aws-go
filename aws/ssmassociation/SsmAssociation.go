@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ssm_association aws_ssm_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ssm_association aws_ssm_association}.
 type SsmAssociation interface {
 	cdktf.TerraformResource
 	ApplyOnlyAtCronInterval() interface{}
@@ -95,6 +95,9 @@ type SsmAssociation interface {
 	ScheduleExpression() *string
 	SetScheduleExpression(val *string)
 	ScheduleExpressionInput() *string
+	SyncCompliance() *string
+	SetSyncCompliance(val *string)
+	SyncComplianceInput() *string
 	Targets() SsmAssociationTargetsList
 	TargetsInput() interface{}
 	// Experimental.
@@ -148,6 +151,7 @@ type SsmAssociation interface {
 	ResetOverrideLogicalId()
 	ResetParameters()
 	ResetScheduleExpression()
+	ResetSyncCompliance()
 	ResetTargets()
 	ResetWaitForSuccessTimeoutSeconds()
 	SynthesizeAttributes() *map[string]interface{}
@@ -575,6 +579,26 @@ func (j *jsiiProxy_SsmAssociation) ScheduleExpressionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SsmAssociation) SyncCompliance() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"syncCompliance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsmAssociation) SyncComplianceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"syncComplianceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SsmAssociation) Targets() SsmAssociationTargetsList {
 	var returns SsmAssociationTargetsList
 	_jsii_.Get(
@@ -646,7 +670,7 @@ func (j *jsiiProxy_SsmAssociation) WaitForSuccessTimeoutSecondsInput() *float64 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ssm_association aws_ssm_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ssm_association aws_ssm_association} Resource.
 func NewSsmAssociation(scope constructs.Construct, id *string, config *SsmAssociationConfig) SsmAssociation {
 	_init_.Initialize()
 
@@ -664,7 +688,7 @@ func NewSsmAssociation(scope constructs.Construct, id *string, config *SsmAssoci
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ssm_association aws_ssm_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ssm_association aws_ssm_association} Resource.
 func NewSsmAssociation_Override(s SsmAssociation, scope constructs.Construct, id *string, config *SsmAssociationConfig) {
 	_init_.Initialize()
 
@@ -871,6 +895,17 @@ func (j *jsiiProxy_SsmAssociation)SetScheduleExpression(val *string) {
 	_jsii_.Set(
 		j,
 		"scheduleExpression",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SsmAssociation)SetSyncCompliance(val *string) {
+	if err := j.validateSetSyncComplianceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"syncCompliance",
 		val,
 	)
 }
@@ -1274,6 +1309,14 @@ func (s *jsiiProxy_SsmAssociation) ResetScheduleExpression() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetScheduleExpression",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SsmAssociation) ResetSyncCompliance() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSyncCompliance",
 		nil, // no parameters
 	)
 }

@@ -55,6 +55,10 @@ func (g *jsiiProxy_GlueCatalogTable) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (g *jsiiProxy_GlueCatalogTable) validatePutOpenTableFormatInputParameters(value *GlueCatalogTableOpenTableFormatInput) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueCatalogTable) validatePutPartitionIndexParameters(value interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/alb_target_group aws_alb_target_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/alb_target_group aws_alb_target_group}.
 type DataAwsAlbTargetGroup interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -533,7 +533,7 @@ func (j *jsiiProxy_DataAwsAlbTargetGroup) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/alb_target_group aws_alb_target_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/alb_target_group aws_alb_target_group} Data Source.
 func NewDataAwsAlbTargetGroup(scope constructs.Construct, id *string, config *DataAwsAlbTargetGroupConfig) DataAwsAlbTargetGroup {
 	_init_.Initialize()
 
@@ -551,7 +551,7 @@ func NewDataAwsAlbTargetGroup(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/alb_target_group aws_alb_target_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/alb_target_group aws_alb_target_group} Data Source.
 func NewDataAwsAlbTargetGroup_Override(d DataAwsAlbTargetGroup, scope constructs.Construct, id *string, config *DataAwsAlbTargetGroupConfig) {
 	_init_.Initialize()
 

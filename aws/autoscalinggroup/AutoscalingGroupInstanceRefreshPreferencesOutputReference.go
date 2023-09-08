@@ -47,9 +47,15 @@ type AutoscalingGroupInstanceRefreshPreferencesOutputReference interface {
 	MinHealthyPercentage() *float64
 	SetMinHealthyPercentage(val *float64)
 	MinHealthyPercentageInput() *float64
+	ScaleInProtectedInstances() *string
+	SetScaleInProtectedInstances(val *string)
+	ScaleInProtectedInstancesInput() *string
 	SkipMatching() interface{}
 	SetSkipMatching(val interface{})
 	SkipMatchingInput() interface{}
+	StandbyInstances() *string
+	SetStandbyInstances(val *string)
+	StandbyInstancesInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -87,7 +93,9 @@ type AutoscalingGroupInstanceRefreshPreferencesOutputReference interface {
 	ResetCheckpointPercentages()
 	ResetInstanceWarmup()
 	ResetMinHealthyPercentage()
+	ResetScaleInProtectedInstances()
 	ResetSkipMatching()
+	ResetStandbyInstances()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -253,6 +261,26 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) Mi
 	return returns
 }
 
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) ScaleInProtectedInstances() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scaleInProtectedInstances",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) ScaleInProtectedInstancesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scaleInProtectedInstancesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) SkipMatching() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -268,6 +296,26 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) Sk
 	_jsii_.Get(
 		j,
 		"skipMatchingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) StandbyInstances() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"standbyInstances",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) StandbyInstancesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"standbyInstancesInput",
 		&returns,
 	)
 	return returns
@@ -409,6 +457,17 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)Set
 	)
 }
 
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)SetScaleInProtectedInstances(val *string) {
+	if err := j.validateSetScaleInProtectedInstancesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scaleInProtectedInstances",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)SetSkipMatching(val interface{}) {
 	if err := j.validateSetSkipMatchingParameters(val); err != nil {
 		panic(err)
@@ -416,6 +475,17 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)Set
 	_jsii_.Set(
 		j,
 		"skipMatching",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)SetStandbyInstances(val *string) {
+	if err := j.validateSetStandbyInstancesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"standbyInstances",
 		val,
 	)
 }
@@ -668,10 +738,26 @@ func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) Re
 	)
 }
 
+func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) ResetScaleInProtectedInstances() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetScaleInProtectedInstances",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) ResetSkipMatching() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetSkipMatching",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) ResetStandbyInstances() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetStandbyInstances",
 		nil, // no parameters
 	)
 }

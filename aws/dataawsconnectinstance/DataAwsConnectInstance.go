@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/connect_instance aws_connect_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/connect_instance aws_connect_instance}.
 type DataAwsConnectInstance interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -441,7 +441,7 @@ func (j *jsiiProxy_DataAwsConnectInstance) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/connect_instance aws_connect_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/connect_instance aws_connect_instance} Data Source.
 func NewDataAwsConnectInstance(scope constructs.Construct, id *string, config *DataAwsConnectInstanceConfig) DataAwsConnectInstance {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewDataAwsConnectInstance(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/connect_instance aws_connect_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/connect_instance aws_connect_instance} Data Source.
 func NewDataAwsConnectInstance_Override(d DataAwsConnectInstance, scope constructs.Construct, id *string, config *DataAwsConnectInstanceConfig) {
 	_init_.Initialize()
 

@@ -432,6 +432,14 @@ func (j *jsiiProxy_SsmAssociation) validateSetScheduleExpressionParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_SsmAssociation) validateSetSyncComplianceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SsmAssociation) validateSetWaitForSuccessTimeoutSecondsParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

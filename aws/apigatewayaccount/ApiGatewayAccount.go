@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_account aws_api_gateway_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_account aws_api_gateway_account}.
 type ApiGatewayAccount interface {
 	cdktf.TerraformResource
+	ApiKeyVersion() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CloudwatchRoleArn() *string
@@ -34,6 +35,7 @@ type ApiGatewayAccount interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Features() *[]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -113,6 +115,16 @@ type jsiiProxy_ApiGatewayAccount struct {
 	internal.Type__cdktfTerraformResource
 }
 
+func (j *jsiiProxy_ApiGatewayAccount) ApiKeyVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiKeyVersion",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApiGatewayAccount) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -178,6 +190,16 @@ func (j *jsiiProxy_ApiGatewayAccount) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayAccount) Features() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"features",
 		&returns,
 	)
 	return returns
@@ -324,7 +346,7 @@ func (j *jsiiProxy_ApiGatewayAccount) ThrottleSettings() ApiGatewayAccountThrott
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_account aws_api_gateway_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_account aws_api_gateway_account} Resource.
 func NewApiGatewayAccount(scope constructs.Construct, id *string, config *ApiGatewayAccountConfig) ApiGatewayAccount {
 	_init_.Initialize()
 
@@ -342,7 +364,7 @@ func NewApiGatewayAccount(scope constructs.Construct, id *string, config *ApiGat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/api_gateway_account aws_api_gateway_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/api_gateway_account aws_api_gateway_account} Resource.
 func NewApiGatewayAccount_Override(a ApiGatewayAccount, scope constructs.Construct, id *string, config *ApiGatewayAccountConfig) {
 	_init_.Initialize()
 

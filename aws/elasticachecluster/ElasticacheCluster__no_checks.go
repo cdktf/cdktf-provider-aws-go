@@ -203,6 +203,10 @@ func (j *jsiiProxy_ElasticacheCluster) validateSetTagsAllParameters(val *map[str
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheCluster) validateSetTransitEncryptionEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewElasticacheClusterParameters(scope constructs.Construct, id *string, config *ElasticacheClusterConfig) error {
 	return nil
 }

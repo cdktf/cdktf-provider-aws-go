@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/opensearch_domain aws_opensearch_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/opensearch_domain aws_opensearch_domain}.
 type DataAwsOpensearchDomain interface {
 	cdktf.TerraformDataSource
 	AccessPolicies() *string
@@ -75,6 +75,7 @@ type DataAwsOpensearchDomain interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SnapshotOptions() DataAwsOpensearchDomainSnapshotOptionsList
+	SoftwareUpdateOptions() DataAwsOpensearchDomainSoftwareUpdateOptionsList
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -502,6 +503,16 @@ func (j *jsiiProxy_DataAwsOpensearchDomain) SnapshotOptions() DataAwsOpensearchD
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsOpensearchDomain) SoftwareUpdateOptions() DataAwsOpensearchDomainSoftwareUpdateOptionsList {
+	var returns DataAwsOpensearchDomainSoftwareUpdateOptionsList
+	_jsii_.Get(
+		j,
+		"softwareUpdateOptions",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsOpensearchDomain) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -563,7 +574,7 @@ func (j *jsiiProxy_DataAwsOpensearchDomain) VpcOptions() DataAwsOpensearchDomain
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source.
 func NewDataAwsOpensearchDomain(scope constructs.Construct, id *string, config *DataAwsOpensearchDomainConfig) DataAwsOpensearchDomain {
 	_init_.Initialize()
 
@@ -581,7 +592,7 @@ func NewDataAwsOpensearchDomain(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source.
 func NewDataAwsOpensearchDomain_Override(d DataAwsOpensearchDomain, scope constructs.Construct, id *string, config *DataAwsOpensearchDomainConfig) {
 	_init_.Initialize()
 

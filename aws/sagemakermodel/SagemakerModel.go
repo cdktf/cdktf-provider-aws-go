@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_model aws_sagemaker_model}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_model aws_sagemaker_model}.
 type SagemakerModel interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -515,7 +515,7 @@ func (j *jsiiProxy_SagemakerModel) VpcConfigInput() *SagemakerModelVpcConfig {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_model aws_sagemaker_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_model aws_sagemaker_model} Resource.
 func NewSagemakerModel(scope constructs.Construct, id *string, config *SagemakerModelConfig) SagemakerModel {
 	_init_.Initialize()
 
@@ -533,7 +533,7 @@ func NewSagemakerModel(scope constructs.Construct, id *string, config *Sagemaker
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/sagemaker_model aws_sagemaker_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/sagemaker_model aws_sagemaker_model} Resource.
 func NewSagemakerModel_Override(s SagemakerModel, scope constructs.Construct, id *string, config *SagemakerModelConfig) {
 	_init_.Initialize()
 

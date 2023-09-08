@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/directory_service_directory aws_directory_service_directory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/directory_service_directory aws_directory_service_directory}.
 type DirectoryServiceDirectory interface {
 	cdktf.TerraformResource
 	AccessUrl() *string
@@ -680,7 +680,7 @@ func (j *jsiiProxy_DirectoryServiceDirectory) VpcSettingsInput() *DirectoryServi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/directory_service_directory aws_directory_service_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/directory_service_directory aws_directory_service_directory} Resource.
 func NewDirectoryServiceDirectory(scope constructs.Construct, id *string, config *DirectoryServiceDirectoryConfig) DirectoryServiceDirectory {
 	_init_.Initialize()
 
@@ -698,7 +698,7 @@ func NewDirectoryServiceDirectory(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/directory_service_directory aws_directory_service_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/directory_service_directory aws_directory_service_directory} Resource.
 func NewDirectoryServiceDirectory_Override(d DirectoryServiceDirectory, scope constructs.Construct, id *string, config *DirectoryServiceDirectoryConfig) {
 	_init_.Initialize()
 

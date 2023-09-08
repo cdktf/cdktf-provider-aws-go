@@ -99,6 +99,10 @@ func (o *jsiiProxy_OpensearchDomain) validatePutSnapshotOptionsParameters(value 
 	return nil
 }
 
+func (o *jsiiProxy_OpensearchDomain) validatePutSoftwareUpdateOptionsParameters(value *OpensearchDomainSoftwareUpdateOptions) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchDomain) validatePutTimeoutsParameters(value *OpensearchDomainTimeouts) error {
 	return nil
 }

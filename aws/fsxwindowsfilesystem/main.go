@@ -37,6 +37,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
 			_jsii_.MemberProperty{JsiiProperty: "deploymentType", GoGetter: "DeploymentType"},
 			_jsii_.MemberProperty{JsiiProperty: "deploymentTypeInput", GoGetter: "DeploymentTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "diskIopsConfiguration", GoGetter: "DiskIopsConfiguration"},
+			_jsii_.MemberProperty{JsiiProperty: "diskIopsConfigurationInput", GoGetter: "DiskIopsConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dnsName", GoGetter: "DnsName"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -66,6 +68,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putAuditLogConfiguration", GoMethod: "PutAuditLogConfiguration"},
+			_jsii_.MemberMethod{JsiiMethod: "putDiskIopsConfiguration", GoMethod: "PutDiskIopsConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putSelfManagedActiveDirectory", GoMethod: "PutSelfManagedActiveDirectory"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -78,6 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetCopyTagsToBackups", GoMethod: "ResetCopyTagsToBackups"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDailyAutomaticBackupStartTime", GoMethod: "ResetDailyAutomaticBackupStartTime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeploymentType", GoMethod: "ResetDeploymentType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDiskIopsConfiguration", GoMethod: "ResetDiskIopsConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeyId", GoMethod: "ResetKmsKeyId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -176,6 +180,48 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemConfig",
 		reflect.TypeOf((*FsxWindowsFileSystemConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemDiskIopsConfiguration",
+		reflect.TypeOf((*FsxWindowsFileSystemDiskIopsConfiguration)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemDiskIopsConfigurationOutputReference",
+		reflect.TypeOf((*FsxWindowsFileSystemDiskIopsConfigurationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "iops", GoGetter: "Iops"},
+			_jsii_.MemberProperty{JsiiProperty: "iopsInput", GoGetter: "IopsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
+			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetIops", GoMethod: "ResetIops"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMode", GoMethod: "ResetMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_FsxWindowsFileSystemDiskIopsConfigurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.fsxWindowsFileSystem.FsxWindowsFileSystemSelfManagedActiveDirectory",

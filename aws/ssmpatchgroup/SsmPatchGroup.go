@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ssm_patch_group aws_ssm_patch_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ssm_patch_group aws_ssm_patch_group}.
 type SsmPatchGroup interface {
 	cdktf.TerraformResource
 	BaselineId() *string
@@ -335,7 +335,7 @@ func (j *jsiiProxy_SsmPatchGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ssm_patch_group aws_ssm_patch_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ssm_patch_group aws_ssm_patch_group} Resource.
 func NewSsmPatchGroup(scope constructs.Construct, id *string, config *SsmPatchGroupConfig) SsmPatchGroup {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewSsmPatchGroup(scope constructs.Construct, id *string, config *SsmPatchGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.15.0/docs/resources/ssm_patch_group aws_ssm_patch_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ssm_patch_group aws_ssm_patch_group} Resource.
 func NewSsmPatchGroup_Override(s SsmPatchGroup, scope constructs.Construct, id *string, config *SsmPatchGroupConfig) {
 	_init_.Initialize()
 
