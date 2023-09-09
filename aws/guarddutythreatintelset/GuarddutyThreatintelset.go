@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/guardduty_threatintelset aws_guardduty_threatintelset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/guardduty_threatintelset aws_guardduty_threatintelset}.
 type GuarddutyThreatintelset interface {
 	cdktf.TerraformResource
 	Activate() interface{}
@@ -463,7 +463,7 @@ func (j *jsiiProxy_GuarddutyThreatintelset) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/guardduty_threatintelset aws_guardduty_threatintelset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/guardduty_threatintelset aws_guardduty_threatintelset} Resource.
 func NewGuarddutyThreatintelset(scope constructs.Construct, id *string, config *GuarddutyThreatintelsetConfig) GuarddutyThreatintelset {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewGuarddutyThreatintelset(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/guardduty_threatintelset aws_guardduty_threatintelset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/guardduty_threatintelset aws_guardduty_threatintelset} Resource.
 func NewGuarddutyThreatintelset_Override(g GuarddutyThreatintelset, scope constructs.Construct, id *string, config *GuarddutyThreatintelsetConfig) {
 	_init_.Initialize()
 

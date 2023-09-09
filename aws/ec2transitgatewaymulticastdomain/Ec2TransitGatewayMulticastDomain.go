@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ec2_transit_gateway_multicast_domain aws_ec2_transit_gateway_multicast_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ec2_transit_gateway_multicast_domain aws_ec2_transit_gateway_multicast_domain}.
 type Ec2TransitGatewayMulticastDomain interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -478,7 +478,7 @@ func (j *jsiiProxy_Ec2TransitGatewayMulticastDomain) TransitGatewayIdInput() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ec2_transit_gateway_multicast_domain aws_ec2_transit_gateway_multicast_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ec2_transit_gateway_multicast_domain aws_ec2_transit_gateway_multicast_domain} Resource.
 func NewEc2TransitGatewayMulticastDomain(scope constructs.Construct, id *string, config *Ec2TransitGatewayMulticastDomainConfig) Ec2TransitGatewayMulticastDomain {
 	_init_.Initialize()
 
@@ -496,7 +496,7 @@ func NewEc2TransitGatewayMulticastDomain(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/ec2_transit_gateway_multicast_domain aws_ec2_transit_gateway_multicast_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ec2_transit_gateway_multicast_domain aws_ec2_transit_gateway_multicast_domain} Resource.
 func NewEc2TransitGatewayMulticastDomain_Override(e Ec2TransitGatewayMulticastDomain, scope constructs.Construct, id *string, config *Ec2TransitGatewayMulticastDomainConfig) {
 	_init_.Initialize()
 

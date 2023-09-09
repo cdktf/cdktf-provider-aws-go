@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lambda_functions aws_lambda_functions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/lambda_functions aws_lambda_functions}.
 type DataAwsLambdaFunctions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -283,7 +283,7 @@ func (j *jsiiProxy_DataAwsLambdaFunctions) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lambda_functions aws_lambda_functions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/lambda_functions aws_lambda_functions} Data Source.
 func NewDataAwsLambdaFunctions(scope constructs.Construct, id *string, config *DataAwsLambdaFunctionsConfig) DataAwsLambdaFunctions {
 	_init_.Initialize()
 
@@ -301,7 +301,7 @@ func NewDataAwsLambdaFunctions(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/lambda_functions aws_lambda_functions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/lambda_functions aws_lambda_functions} Data Source.
 func NewDataAwsLambdaFunctions_Override(d DataAwsLambdaFunctions, scope constructs.Construct, id *string, config *DataAwsLambdaFunctionsConfig) {
 	_init_.Initialize()
 

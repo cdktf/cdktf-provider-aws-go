@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/fsx_openzfs_snapshot aws_fsx_openzfs_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/fsx_openzfs_snapshot aws_fsx_openzfs_snapshot}.
 type FsxOpenzfsSnapshot interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -429,7 +429,7 @@ func (j *jsiiProxy_FsxOpenzfsSnapshot) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/fsx_openzfs_snapshot aws_fsx_openzfs_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/fsx_openzfs_snapshot aws_fsx_openzfs_snapshot} Resource.
 func NewFsxOpenzfsSnapshot(scope constructs.Construct, id *string, config *FsxOpenzfsSnapshotConfig) FsxOpenzfsSnapshot {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewFsxOpenzfsSnapshot(scope constructs.Construct, id *string, config *FsxOp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/fsx_openzfs_snapshot aws_fsx_openzfs_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/fsx_openzfs_snapshot aws_fsx_openzfs_snapshot} Resource.
 func NewFsxOpenzfsSnapshot_Override(f FsxOpenzfsSnapshot, scope constructs.Construct, id *string, config *FsxOpenzfsSnapshotConfig) {
 	_init_.Initialize()
 

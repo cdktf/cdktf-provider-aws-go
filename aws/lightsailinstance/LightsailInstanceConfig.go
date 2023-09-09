@@ -22,32 +22,32 @@ type LightsailInstanceConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lightsail_instance#availability_zone LightsailInstance#availability_zone}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lightsail_instance#availability_zone LightsailInstance#availability_zone}.
 	AvailabilityZone *string `field:"required" json:"availabilityZone" yaml:"availabilityZone"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lightsail_instance#blueprint_id LightsailInstance#blueprint_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lightsail_instance#blueprint_id LightsailInstance#blueprint_id}.
 	BlueprintId *string `field:"required" json:"blueprintId" yaml:"blueprintId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lightsail_instance#bundle_id LightsailInstance#bundle_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lightsail_instance#bundle_id LightsailInstance#bundle_id}.
 	BundleId *string `field:"required" json:"bundleId" yaml:"bundleId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lightsail_instance#name LightsailInstance#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lightsail_instance#name LightsailInstance#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// add_on block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lightsail_instance#add_on LightsailInstance#add_on}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lightsail_instance#add_on LightsailInstance#add_on}
 	AddOn *LightsailInstanceAddOn `field:"optional" json:"addOn" yaml:"addOn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lightsail_instance#id LightsailInstance#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lightsail_instance#id LightsailInstance#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lightsail_instance#ip_address_type LightsailInstance#ip_address_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lightsail_instance#ip_address_type LightsailInstance#ip_address_type}.
 	IpAddressType *string `field:"optional" json:"ipAddressType" yaml:"ipAddressType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lightsail_instance#key_pair_name LightsailInstance#key_pair_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lightsail_instance#key_pair_name LightsailInstance#key_pair_name}.
 	KeyPairName *string `field:"optional" json:"keyPairName" yaml:"keyPairName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lightsail_instance#tags LightsailInstance#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lightsail_instance#tags LightsailInstance#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lightsail_instance#tags_all LightsailInstance#tags_all}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lightsail_instance#tags_all LightsailInstance#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lightsail_instance#user_data LightsailInstance#user_data}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lightsail_instance#user_data LightsailInstance#user_data}.
 	UserData *string `field:"optional" json:"userData" yaml:"userData"`
 }
 

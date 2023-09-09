@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_user_policy aws_iam_user_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iam_user_policy aws_iam_user_policy}.
 type IamUserPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -383,7 +383,7 @@ func (j *jsiiProxy_IamUserPolicy) UserInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_user_policy aws_iam_user_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iam_user_policy aws_iam_user_policy} Resource.
 func NewIamUserPolicy(scope constructs.Construct, id *string, config *IamUserPolicyConfig) IamUserPolicy {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewIamUserPolicy(scope constructs.Construct, id *string, config *IamUserPol
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/iam_user_policy aws_iam_user_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/iam_user_policy aws_iam_user_policy} Resource.
 func NewIamUserPolicy_Override(i IamUserPolicy, scope constructs.Construct, id *string, config *IamUserPolicyConfig) {
 	_init_.Initialize()
 

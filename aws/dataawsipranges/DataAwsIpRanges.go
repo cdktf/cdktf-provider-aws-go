@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ip_ranges aws_ip_ranges}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/ip_ranges aws_ip_ranges}.
 type DataAwsIpRanges interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -376,7 +376,7 @@ func (j *jsiiProxy_DataAwsIpRanges) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ip_ranges aws_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/ip_ranges aws_ip_ranges} Data Source.
 func NewDataAwsIpRanges(scope constructs.Construct, id *string, config *DataAwsIpRangesConfig) DataAwsIpRanges {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewDataAwsIpRanges(scope constructs.Construct, id *string, config *DataAwsI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/data-sources/ip_ranges aws_ip_ranges} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/ip_ranges aws_ip_ranges} Data Source.
 func NewDataAwsIpRanges_Override(d DataAwsIpRanges, scope constructs.Construct, id *string, config *DataAwsIpRangesConfig) {
 	_init_.Initialize()
 

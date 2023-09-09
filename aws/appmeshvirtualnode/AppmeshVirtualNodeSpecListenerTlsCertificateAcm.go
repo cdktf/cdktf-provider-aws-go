@@ -5,7 +5,7 @@ package appmeshvirtualnode
 
 
 type AppmeshVirtualNodeSpecListenerTlsCertificateAcm struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/appmesh_virtual_node#certificate_arn AppmeshVirtualNode#certificate_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/appmesh_virtual_node#certificate_arn AppmeshVirtualNode#certificate_arn}.
 	CertificateArn *string `field:"required" json:"certificateArn" yaml:"certificateArn"`
 }
 

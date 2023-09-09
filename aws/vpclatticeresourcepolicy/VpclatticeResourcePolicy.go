@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/vpclattice_resource_policy aws_vpclattice_resource_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/vpclattice_resource_policy aws_vpclattice_resource_policy}.
 type VpclatticeResourcePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -335,7 +335,7 @@ func (j *jsiiProxy_VpclatticeResourcePolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/vpclattice_resource_policy aws_vpclattice_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/vpclattice_resource_policy aws_vpclattice_resource_policy} Resource.
 func NewVpclatticeResourcePolicy(scope constructs.Construct, id *string, config *VpclatticeResourcePolicyConfig) VpclatticeResourcePolicy {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewVpclatticeResourcePolicy(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/vpclattice_resource_policy aws_vpclattice_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/vpclattice_resource_policy aws_vpclattice_resource_policy} Resource.
 func NewVpclatticeResourcePolicy_Override(v VpclatticeResourcePolicy, scope constructs.Construct, id *string, config *VpclatticeResourcePolicyConfig) {
 	_init_.Initialize()
 

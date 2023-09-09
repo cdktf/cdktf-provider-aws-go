@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lightsail_instance_public_ports aws_lightsail_instance_public_ports}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lightsail_instance_public_ports aws_lightsail_instance_public_ports}.
 type LightsailInstancePublicPorts interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -335,7 +335,7 @@ func (j *jsiiProxy_LightsailInstancePublicPorts) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lightsail_instance_public_ports aws_lightsail_instance_public_ports} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lightsail_instance_public_ports aws_lightsail_instance_public_ports} Resource.
 func NewLightsailInstancePublicPorts(scope constructs.Construct, id *string, config *LightsailInstancePublicPortsConfig) LightsailInstancePublicPorts {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewLightsailInstancePublicPorts(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/lightsail_instance_public_ports aws_lightsail_instance_public_ports} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lightsail_instance_public_ports aws_lightsail_instance_public_ports} Resource.
 func NewLightsailInstancePublicPorts_Override(l LightsailInstancePublicPorts, scope constructs.Construct, id *string, config *LightsailInstancePublicPortsConfig) {
 	_init_.Initialize()
 

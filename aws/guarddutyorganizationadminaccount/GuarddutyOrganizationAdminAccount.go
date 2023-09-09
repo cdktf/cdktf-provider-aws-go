@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/guardduty_organization_admin_account aws_guardduty_organization_admin_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/guardduty_organization_admin_account aws_guardduty_organization_admin_account}.
 type GuarddutyOrganizationAdminAccount interface {
 	cdktf.TerraformResource
 	AdminAccountId() *string
@@ -312,7 +312,7 @@ func (j *jsiiProxy_GuarddutyOrganizationAdminAccount) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/guardduty_organization_admin_account aws_guardduty_organization_admin_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/guardduty_organization_admin_account aws_guardduty_organization_admin_account} Resource.
 func NewGuarddutyOrganizationAdminAccount(scope constructs.Construct, id *string, config *GuarddutyOrganizationAdminAccountConfig) GuarddutyOrganizationAdminAccount {
 	_init_.Initialize()
 
@@ -330,7 +330,7 @@ func NewGuarddutyOrganizationAdminAccount(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/guardduty_organization_admin_account aws_guardduty_organization_admin_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/guardduty_organization_admin_account aws_guardduty_organization_admin_account} Resource.
 func NewGuarddutyOrganizationAdminAccount_Override(g GuarddutyOrganizationAdminAccount, scope constructs.Construct, id *string, config *GuarddutyOrganizationAdminAccountConfig) {
 	_init_.Initialize()
 

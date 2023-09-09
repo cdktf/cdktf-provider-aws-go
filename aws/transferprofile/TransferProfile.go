@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transfer_profile aws_transfer_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/transfer_profile aws_transfer_profile}.
 type TransferProfile interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -429,7 +429,7 @@ func (j *jsiiProxy_TransferProfile) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transfer_profile aws_transfer_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/transfer_profile aws_transfer_profile} Resource.
 func NewTransferProfile(scope constructs.Construct, id *string, config *TransferProfileConfig) TransferProfile {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewTransferProfile(scope constructs.Construct, id *string, config *Transfer
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/transfer_profile aws_transfer_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/transfer_profile aws_transfer_profile} Resource.
 func NewTransferProfile_Override(t TransferProfile, scope constructs.Construct, id *string, config *TransferProfileConfig) {
 	_init_.Initialize()
 

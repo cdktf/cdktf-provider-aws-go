@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/dataexchange_revision aws_dataexchange_revision}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/dataexchange_revision aws_dataexchange_revision}.
 type DataexchangeRevision interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -406,7 +406,7 @@ func (j *jsiiProxy_DataexchangeRevision) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/dataexchange_revision aws_dataexchange_revision} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/dataexchange_revision aws_dataexchange_revision} Resource.
 func NewDataexchangeRevision(scope constructs.Construct, id *string, config *DataexchangeRevisionConfig) DataexchangeRevision {
 	_init_.Initialize()
 
@@ -424,7 +424,7 @@ func NewDataexchangeRevision(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/dataexchange_revision aws_dataexchange_revision} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/dataexchange_revision aws_dataexchange_revision} Resource.
 func NewDataexchangeRevision_Override(d DataexchangeRevision, scope constructs.Construct, id *string, config *DataexchangeRevisionConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/shield_drt_access_log_bucket_association aws_shield_drt_access_log_bucket_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/shield_drt_access_log_bucket_association aws_shield_drt_access_log_bucket_association}.
 type ShieldDrtAccessLogBucketAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_ShieldDrtAccessLogBucketAssociation) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/shield_drt_access_log_bucket_association aws_shield_drt_access_log_bucket_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/shield_drt_access_log_bucket_association aws_shield_drt_access_log_bucket_association} Resource.
 func NewShieldDrtAccessLogBucketAssociation(scope constructs.Construct, id *string, config *ShieldDrtAccessLogBucketAssociationConfig) ShieldDrtAccessLogBucketAssociation {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewShieldDrtAccessLogBucketAssociation(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.0/docs/resources/shield_drt_access_log_bucket_association aws_shield_drt_access_log_bucket_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/shield_drt_access_log_bucket_association aws_shield_drt_access_log_bucket_association} Resource.
 func NewShieldDrtAccessLogBucketAssociation_Override(s ShieldDrtAccessLogBucketAssociation, scope constructs.Construct, id *string, config *ShieldDrtAccessLogBucketAssociationConfig) {
 	_init_.Initialize()
 
