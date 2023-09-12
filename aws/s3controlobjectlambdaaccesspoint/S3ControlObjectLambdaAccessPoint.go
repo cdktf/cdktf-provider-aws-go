@@ -12,12 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/s3control_object_lambda_access_point aws_s3control_object_lambda_access_point}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3control_object_lambda_access_point aws_s3control_object_lambda_access_point}.
 type S3ControlObjectLambdaAccessPoint interface {
 	cdktf.TerraformResource
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
+	Alias() *string
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -134,6 +135,16 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) AccountIdInput() *string {
 	_jsii_.Get(
 		j,
 		"accountIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) Alias() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alias",
 		&returns,
 	)
 	return returns
@@ -370,7 +381,7 @@ func (j *jsiiProxy_S3ControlObjectLambdaAccessPoint) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/s3control_object_lambda_access_point aws_s3control_object_lambda_access_point} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3control_object_lambda_access_point aws_s3control_object_lambda_access_point} Resource.
 func NewS3ControlObjectLambdaAccessPoint(scope constructs.Construct, id *string, config *S3ControlObjectLambdaAccessPointConfig) S3ControlObjectLambdaAccessPoint {
 	_init_.Initialize()
 
@@ -388,7 +399,7 @@ func NewS3ControlObjectLambdaAccessPoint(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/s3control_object_lambda_access_point aws_s3control_object_lambda_access_point} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3control_object_lambda_access_point aws_s3control_object_lambda_access_point} Resource.
 func NewS3ControlObjectLambdaAccessPoint_Override(s S3ControlObjectLambdaAccessPoint, scope constructs.Construct, id *string, config *S3ControlObjectLambdaAccessPointConfig) {
 	_init_.Initialize()
 

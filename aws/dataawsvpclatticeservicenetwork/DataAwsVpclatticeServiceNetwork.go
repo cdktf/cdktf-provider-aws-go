@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/vpclattice_service_network aws_vpclattice_service_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/vpclattice_service_network aws_vpclattice_service_network}.
 type DataAwsVpclatticeServiceNetwork interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataAwsVpclatticeServiceNetwork) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/vpclattice_service_network aws_vpclattice_service_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/vpclattice_service_network aws_vpclattice_service_network} Data Source.
 func NewDataAwsVpclatticeServiceNetwork(scope constructs.Construct, id *string, config *DataAwsVpclatticeServiceNetworkConfig) DataAwsVpclatticeServiceNetwork {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func NewDataAwsVpclatticeServiceNetwork(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/vpclattice_service_network aws_vpclattice_service_network} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/vpclattice_service_network aws_vpclattice_service_network} Data Source.
 func NewDataAwsVpclatticeServiceNetwork_Override(d DataAwsVpclatticeServiceNetwork, scope constructs.Construct, id *string, config *DataAwsVpclatticeServiceNetworkConfig) {
 	_init_.Initialize()
 

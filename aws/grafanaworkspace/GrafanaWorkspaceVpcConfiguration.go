@@ -5,9 +5,9 @@ package grafanaworkspace
 
 
 type GrafanaWorkspaceVpcConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/grafana_workspace#security_group_ids GrafanaWorkspace#security_group_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/grafana_workspace#security_group_ids GrafanaWorkspace#security_group_ids}.
 	SecurityGroupIds *[]*string `field:"required" json:"securityGroupIds" yaml:"securityGroupIds"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/grafana_workspace#subnet_ids GrafanaWorkspace#subnet_ids}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/grafana_workspace#subnet_ids GrafanaWorkspace#subnet_ids}.
 	SubnetIds *[]*string `field:"required" json:"subnetIds" yaml:"subnetIds"`
 }
 

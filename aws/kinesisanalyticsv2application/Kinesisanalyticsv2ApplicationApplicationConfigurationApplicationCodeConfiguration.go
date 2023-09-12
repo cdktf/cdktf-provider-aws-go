@@ -5,11 +5,11 @@ package kinesisanalyticsv2application
 
 
 type Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/kinesisanalyticsv2_application#code_content_type Kinesisanalyticsv2Application#code_content_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/kinesisanalyticsv2_application#code_content_type Kinesisanalyticsv2Application#code_content_type}.
 	CodeContentType *string `field:"required" json:"codeContentType" yaml:"codeContentType"`
 	// code_content block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/kinesisanalyticsv2_application#code_content Kinesisanalyticsv2Application#code_content}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/kinesisanalyticsv2_application#code_content Kinesisanalyticsv2Application#code_content}
 	CodeContent *Kinesisanalyticsv2ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent `field:"optional" json:"codeContent" yaml:"codeContent"`
 }
 

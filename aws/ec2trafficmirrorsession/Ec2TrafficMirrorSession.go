@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ec2_traffic_mirror_session aws_ec2_traffic_mirror_session}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/ec2_traffic_mirror_session aws_ec2_traffic_mirror_session}.
 type Ec2TrafficMirrorSession interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -523,7 +523,7 @@ func (j *jsiiProxy_Ec2TrafficMirrorSession) VirtualNetworkIdInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ec2_traffic_mirror_session aws_ec2_traffic_mirror_session} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/ec2_traffic_mirror_session aws_ec2_traffic_mirror_session} Resource.
 func NewEc2TrafficMirrorSession(scope constructs.Construct, id *string, config *Ec2TrafficMirrorSessionConfig) Ec2TrafficMirrorSession {
 	_init_.Initialize()
 
@@ -541,7 +541,7 @@ func NewEc2TrafficMirrorSession(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/ec2_traffic_mirror_session aws_ec2_traffic_mirror_session} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/ec2_traffic_mirror_session aws_ec2_traffic_mirror_session} Resource.
 func NewEc2TrafficMirrorSession_Override(e Ec2TrafficMirrorSession, scope constructs.Construct, id *string, config *Ec2TrafficMirrorSessionConfig) {
 	_init_.Initialize()
 

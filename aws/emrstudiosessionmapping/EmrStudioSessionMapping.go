@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/emr_studio_session_mapping aws_emr_studio_session_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/emr_studio_session_mapping aws_emr_studio_session_mapping}.
 type EmrStudioSessionMapping interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -406,7 +406,7 @@ func (j *jsiiProxy_EmrStudioSessionMapping) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/emr_studio_session_mapping aws_emr_studio_session_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/emr_studio_session_mapping aws_emr_studio_session_mapping} Resource.
 func NewEmrStudioSessionMapping(scope constructs.Construct, id *string, config *EmrStudioSessionMappingConfig) EmrStudioSessionMapping {
 	_init_.Initialize()
 
@@ -424,7 +424,7 @@ func NewEmrStudioSessionMapping(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/emr_studio_session_mapping aws_emr_studio_session_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/emr_studio_session_mapping aws_emr_studio_session_mapping} Resource.
 func NewEmrStudioSessionMapping_Override(e EmrStudioSessionMapping, scope constructs.Construct, id *string, config *EmrStudioSessionMappingConfig) {
 	_init_.Initialize()
 

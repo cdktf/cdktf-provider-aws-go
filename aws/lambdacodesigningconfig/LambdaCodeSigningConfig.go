@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lambda_code_signing_config aws_lambda_code_signing_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/lambda_code_signing_config aws_lambda_code_signing_config}.
 type LambdaCodeSigningConfig interface {
 	cdktf.TerraformResource
 	AllowedPublishers() LambdaCodeSigningConfigAllowedPublishersOutputReference
@@ -393,7 +393,7 @@ func (j *jsiiProxy_LambdaCodeSigningConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lambda_code_signing_config aws_lambda_code_signing_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/lambda_code_signing_config aws_lambda_code_signing_config} Resource.
 func NewLambdaCodeSigningConfig(scope constructs.Construct, id *string, config *LambdaCodeSigningConfigConfig) LambdaCodeSigningConfig {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewLambdaCodeSigningConfig(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lambda_code_signing_config aws_lambda_code_signing_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/lambda_code_signing_config aws_lambda_code_signing_config} Resource.
 func NewLambdaCodeSigningConfig_Override(l LambdaCodeSigningConfig, scope constructs.Construct, id *string, config *LambdaCodeSigningConfigConfig) {
 	_init_.Initialize()
 

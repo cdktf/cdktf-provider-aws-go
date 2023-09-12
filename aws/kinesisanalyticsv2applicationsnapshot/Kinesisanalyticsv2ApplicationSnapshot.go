@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/kinesisanalyticsv2_application_snapshot aws_kinesisanalyticsv2_application_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/kinesisanalyticsv2_application_snapshot aws_kinesisanalyticsv2_application_snapshot}.
 type Kinesisanalyticsv2ApplicationSnapshot interface {
 	cdktf.TerraformResource
 	ApplicationName() *string
@@ -381,7 +381,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/kinesisanalyticsv2_application_snapshot aws_kinesisanalyticsv2_application_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/kinesisanalyticsv2_application_snapshot aws_kinesisanalyticsv2_application_snapshot} Resource.
 func NewKinesisanalyticsv2ApplicationSnapshot(scope constructs.Construct, id *string, config *Kinesisanalyticsv2ApplicationSnapshotConfig) Kinesisanalyticsv2ApplicationSnapshot {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewKinesisanalyticsv2ApplicationSnapshot(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/kinesisanalyticsv2_application_snapshot aws_kinesisanalyticsv2_application_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/kinesisanalyticsv2_application_snapshot aws_kinesisanalyticsv2_application_snapshot} Resource.
 func NewKinesisanalyticsv2ApplicationSnapshot_Override(k Kinesisanalyticsv2ApplicationSnapshot, scope constructs.Construct, id *string, config *Kinesisanalyticsv2ApplicationSnapshotConfig) {
 	_init_.Initialize()
 

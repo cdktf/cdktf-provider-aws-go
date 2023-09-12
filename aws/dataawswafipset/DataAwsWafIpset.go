@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/waf_ipset aws_waf_ipset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/waf_ipset aws_waf_ipset}.
 type DataAwsWafIpset interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -284,7 +284,7 @@ func (j *jsiiProxy_DataAwsWafIpset) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/waf_ipset aws_waf_ipset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/waf_ipset aws_waf_ipset} Data Source.
 func NewDataAwsWafIpset(scope constructs.Construct, id *string, config *DataAwsWafIpsetConfig) DataAwsWafIpset {
 	_init_.Initialize()
 
@@ -302,7 +302,7 @@ func NewDataAwsWafIpset(scope constructs.Construct, id *string, config *DataAwsW
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/waf_ipset aws_waf_ipset} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/waf_ipset aws_waf_ipset} Data Source.
 func NewDataAwsWafIpset_Override(d DataAwsWafIpset, scope constructs.Construct, id *string, config *DataAwsWafIpsetConfig) {
 	_init_.Initialize()
 

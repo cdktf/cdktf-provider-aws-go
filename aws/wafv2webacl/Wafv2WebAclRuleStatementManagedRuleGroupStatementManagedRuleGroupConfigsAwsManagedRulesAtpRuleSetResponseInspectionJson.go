@@ -5,11 +5,11 @@ package wafv2webacl
 
 
 type Wafv2WebAclRuleStatementManagedRuleGroupStatementManagedRuleGroupConfigsAwsManagedRulesAtpRuleSetResponseInspectionJson struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/wafv2_web_acl#failure_values Wafv2WebAcl#failure_values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/wafv2_web_acl#failure_values Wafv2WebAcl#failure_values}.
 	FailureValues *[]*string `field:"required" json:"failureValues" yaml:"failureValues"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/wafv2_web_acl#identifier Wafv2WebAcl#identifier}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/wafv2_web_acl#identifier Wafv2WebAcl#identifier}.
 	Identifier *string `field:"required" json:"identifier" yaml:"identifier"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/wafv2_web_acl#success_values Wafv2WebAcl#success_values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/wafv2_web_acl#success_values Wafv2WebAcl#success_values}.
 	SuccessValues *[]*string `field:"required" json:"successValues" yaml:"successValues"`
 }
 

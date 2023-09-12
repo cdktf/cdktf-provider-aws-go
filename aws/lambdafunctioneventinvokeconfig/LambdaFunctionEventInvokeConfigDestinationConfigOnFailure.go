@@ -5,7 +5,7 @@ package lambdafunctioneventinvokeconfig
 
 
 type LambdaFunctionEventInvokeConfigDestinationConfigOnFailure struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/lambda_function_event_invoke_config#destination LambdaFunctionEventInvokeConfig#destination}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/lambda_function_event_invoke_config#destination LambdaFunctionEventInvokeConfig#destination}.
 	Destination *string `field:"required" json:"destination" yaml:"destination"`
 }
 

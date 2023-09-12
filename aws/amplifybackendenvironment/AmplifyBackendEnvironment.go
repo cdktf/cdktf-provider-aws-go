@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/amplify_backend_environment aws_amplify_backend_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/amplify_backend_environment aws_amplify_backend_environment}.
 type AmplifyBackendEnvironment interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -394,7 +394,7 @@ func (j *jsiiProxy_AmplifyBackendEnvironment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/amplify_backend_environment aws_amplify_backend_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/amplify_backend_environment aws_amplify_backend_environment} Resource.
 func NewAmplifyBackendEnvironment(scope constructs.Construct, id *string, config *AmplifyBackendEnvironmentConfig) AmplifyBackendEnvironment {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewAmplifyBackendEnvironment(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/amplify_backend_environment aws_amplify_backend_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/amplify_backend_environment aws_amplify_backend_environment} Resource.
 func NewAmplifyBackendEnvironment_Override(a AmplifyBackendEnvironment, scope constructs.Construct, id *string, config *AmplifyBackendEnvironmentConfig) {
 	_init_.Initialize()
 

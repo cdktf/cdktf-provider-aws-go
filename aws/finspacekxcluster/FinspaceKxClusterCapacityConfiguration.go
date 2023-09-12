@@ -5,9 +5,9 @@ package finspacekxcluster
 
 
 type FinspaceKxClusterCapacityConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/finspace_kx_cluster#node_count FinspaceKxCluster#node_count}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/finspace_kx_cluster#node_count FinspaceKxCluster#node_count}.
 	NodeCount *float64 `field:"required" json:"nodeCount" yaml:"nodeCount"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/finspace_kx_cluster#node_type FinspaceKxCluster#node_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/finspace_kx_cluster#node_type FinspaceKxCluster#node_type}.
 	NodeType *string `field:"required" json:"nodeType" yaml:"nodeType"`
 }
 

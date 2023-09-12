@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/workspaces_connection_alias aws_workspaces_connection_alias}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/workspaces_connection_alias aws_workspaces_connection_alias}.
 type WorkspacesConnectionAlias interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_WorkspacesConnectionAlias) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/workspaces_connection_alias aws_workspaces_connection_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/workspaces_connection_alias aws_workspaces_connection_alias} Resource.
 func NewWorkspacesConnectionAlias(scope constructs.Construct, id *string, config *WorkspacesConnectionAliasConfig) WorkspacesConnectionAlias {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewWorkspacesConnectionAlias(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/workspaces_connection_alias aws_workspaces_connection_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/workspaces_connection_alias aws_workspaces_connection_alias} Resource.
 func NewWorkspacesConnectionAlias_Override(w WorkspacesConnectionAlias, scope constructs.Construct, id *string, config *WorkspacesConnectionAliasConfig) {
 	_init_.Initialize()
 

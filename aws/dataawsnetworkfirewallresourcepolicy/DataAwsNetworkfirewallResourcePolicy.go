@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/networkfirewall_resource_policy aws_networkfirewall_resource_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/networkfirewall_resource_policy aws_networkfirewall_resource_policy}.
 type DataAwsNetworkfirewallResourcePolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataAwsNetworkfirewallResourcePolicy) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/networkfirewall_resource_policy aws_networkfirewall_resource_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/networkfirewall_resource_policy aws_networkfirewall_resource_policy} Data Source.
 func NewDataAwsNetworkfirewallResourcePolicy(scope constructs.Construct, id *string, config *DataAwsNetworkfirewallResourcePolicyConfig) DataAwsNetworkfirewallResourcePolicy {
 	_init_.Initialize()
 
@@ -313,7 +313,7 @@ func NewDataAwsNetworkfirewallResourcePolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/networkfirewall_resource_policy aws_networkfirewall_resource_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/networkfirewall_resource_policy aws_networkfirewall_resource_policy} Data Source.
 func NewDataAwsNetworkfirewallResourcePolicy_Override(d DataAwsNetworkfirewallResourcePolicy, scope constructs.Construct, id *string, config *DataAwsNetworkfirewallResourcePolicyConfig) {
 	_init_.Initialize()
 

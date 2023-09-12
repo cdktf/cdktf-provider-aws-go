@@ -5,7 +5,7 @@ package s3bucketreplicationconfiguration
 
 
 type S3BucketReplicationConfigurationRuleDestinationAccessControlTranslation struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/s3_bucket_replication_configuration#owner S3BucketReplicationConfigurationA#owner}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3_bucket_replication_configuration#owner S3BucketReplicationConfigurationA#owner}.
 	Owner *string `field:"required" json:"owner" yaml:"owner"`
 }
 

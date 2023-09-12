@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/medialive_input_security_group aws_medialive_input_security_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/medialive_input_security_group aws_medialive_input_security_group}.
 type MedialiveInputSecurityGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -406,7 +406,7 @@ func (j *jsiiProxy_MedialiveInputSecurityGroup) WhitelistRulesInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/medialive_input_security_group aws_medialive_input_security_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/medialive_input_security_group aws_medialive_input_security_group} Resource.
 func NewMedialiveInputSecurityGroup(scope constructs.Construct, id *string, config *MedialiveInputSecurityGroupConfig) MedialiveInputSecurityGroup {
 	_init_.Initialize()
 
@@ -424,7 +424,7 @@ func NewMedialiveInputSecurityGroup(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/resources/medialive_input_security_group aws_medialive_input_security_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/medialive_input_security_group aws_medialive_input_security_group} Resource.
 func NewMedialiveInputSecurityGroup_Override(m MedialiveInputSecurityGroup, scope constructs.Construct, id *string, config *MedialiveInputSecurityGroupConfig) {
 	_init_.Initialize()
 

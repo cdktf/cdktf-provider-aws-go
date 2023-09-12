@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/sqs_queues aws_sqs_queues}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/sqs_queues aws_sqs_queues}.
 type DataAwsSqsQueues interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataAwsSqsQueues) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/sqs_queues aws_sqs_queues} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/sqs_queues aws_sqs_queues} Data Source.
 func NewDataAwsSqsQueues(scope constructs.Construct, id *string, config *DataAwsSqsQueuesConfig) DataAwsSqsQueues {
 	_init_.Initialize()
 
@@ -314,7 +314,7 @@ func NewDataAwsSqsQueues(scope constructs.Construct, id *string, config *DataAws
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.1/docs/data-sources/sqs_queues aws_sqs_queues} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/sqs_queues aws_sqs_queues} Data Source.
 func NewDataAwsSqsQueues_Override(d DataAwsSqsQueues, scope constructs.Construct, id *string, config *DataAwsSqsQueuesConfig) {
 	_init_.Initialize()
 
