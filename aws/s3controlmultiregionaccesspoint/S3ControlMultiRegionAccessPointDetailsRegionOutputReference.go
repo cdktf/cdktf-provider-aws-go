@@ -15,6 +15,9 @@ type S3ControlMultiRegionAccessPointDetailsRegionOutputReference interface {
 	cdktf.ComplexObject
 	Bucket() *string
 	SetBucket(val *string)
+	BucketAccountId() *string
+	SetBucketAccountId(val *string)
+	BucketAccountIdInput() *string
 	BucketInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -35,6 +38,7 @@ type S3ControlMultiRegionAccessPointDetailsRegionOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Region() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +71,7 @@ type S3ControlMultiRegionAccessPointDetailsRegionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBucketAccountId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -87,6 +92,26 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference) 
 	_jsii_.Get(
 		j,
 		"bucket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference) BucketAccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketAccountId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference) BucketAccountIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketAccountIdInput",
 		&returns,
 	)
 	return returns
@@ -152,6 +177,16 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -207,6 +242,17 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference)S
 	_jsii_.Set(
 		j,
 		"bucket",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference)SetBucketAccountId(val *string) {
+	if err := j.validateSetBucketAccountIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bucketAccountId",
 		val,
 	)
 }
@@ -450,6 +496,14 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference) 
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference) ResetBucketAccountId() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetBucketAccountId",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/waf_xss_match_set aws_waf_xss_match_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/waf_xss_match_set aws_waf_xss_match_set}.
 type WafXssMatchSet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -347,7 +347,7 @@ func (j *jsiiProxy_WafXssMatchSet) XssMatchTuplesInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/waf_xss_match_set aws_waf_xss_match_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/waf_xss_match_set aws_waf_xss_match_set} Resource.
 func NewWafXssMatchSet(scope constructs.Construct, id *string, config *WafXssMatchSetConfig) WafXssMatchSet {
 	_init_.Initialize()
 
@@ -365,7 +365,7 @@ func NewWafXssMatchSet(scope constructs.Construct, id *string, config *WafXssMat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/waf_xss_match_set aws_waf_xss_match_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/waf_xss_match_set aws_waf_xss_match_set} Resource.
 func NewWafXssMatchSet_Override(w WafXssMatchSet, scope constructs.Construct, id *string, config *WafXssMatchSetConfig) {
 	_init_.Initialize()
 

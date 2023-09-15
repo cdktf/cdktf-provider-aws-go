@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/transfer_connector aws_transfer_connector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector aws_transfer_connector}.
 type TransferConnector interface {
 	cdktf.TerraformResource
 	AccessRole() *string
@@ -68,6 +68,8 @@ type TransferConnector interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SftpConfig() TransferConnectorSftpConfigOutputReference
+	SftpConfigInput() *TransferConnectorSftpConfig
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -109,11 +111,14 @@ type TransferConnector interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAs2Config(value *TransferConnectorAs2Config)
+	PutSftpConfig(value *TransferConnectorSftpConfig)
+	ResetAs2Config()
 	ResetId()
 	ResetLoggingRole()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSftpConfig()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -361,6 +366,26 @@ func (j *jsiiProxy_TransferConnector) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_TransferConnector) SftpConfig() TransferConnectorSftpConfigOutputReference {
+	var returns TransferConnectorSftpConfigOutputReference
+	_jsii_.Get(
+		j,
+		"sftpConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransferConnector) SftpConfigInput() *TransferConnectorSftpConfig {
+	var returns *TransferConnectorSftpConfig
+	_jsii_.Get(
+		j,
+		"sftpConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TransferConnector) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -452,7 +477,7 @@ func (j *jsiiProxy_TransferConnector) UrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/transfer_connector aws_transfer_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector aws_transfer_connector} Resource.
 func NewTransferConnector(scope constructs.Construct, id *string, config *TransferConnectorConfig) TransferConnector {
 	_init_.Initialize()
 
@@ -470,7 +495,7 @@ func NewTransferConnector(scope constructs.Construct, id *string, config *Transf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/transfer_connector aws_transfer_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/transfer_connector aws_transfer_connector} Resource.
 func NewTransferConnector_Override(t TransferConnector, scope constructs.Construct, id *string, config *TransferConnectorConfig) {
 	_init_.Initialize()
 
@@ -892,6 +917,25 @@ func (t *jsiiProxy_TransferConnector) PutAs2Config(value *TransferConnectorAs2Co
 	)
 }
 
+func (t *jsiiProxy_TransferConnector) PutSftpConfig(value *TransferConnectorSftpConfig) {
+	if err := t.validatePutSftpConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putSftpConfig",
+		[]interface{}{value},
+	)
+}
+
+func (t *jsiiProxy_TransferConnector) ResetAs2Config() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetAs2Config",
+		nil, // no parameters
+	)
+}
+
 func (t *jsiiProxy_TransferConnector) ResetId() {
 	_jsii_.InvokeVoid(
 		t,
@@ -912,6 +956,14 @@ func (t *jsiiProxy_TransferConnector) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransferConnector) ResetSftpConfig() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetSftpConfig",
 		nil, // no parameters
 	)
 }

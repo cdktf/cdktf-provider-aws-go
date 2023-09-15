@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/apigatewayv2_api_mapping aws_apigatewayv2_api_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/apigatewayv2_api_mapping aws_apigatewayv2_api_mapping}.
 type Apigatewayv2ApiMapping interface {
 	cdktf.TerraformResource
 	ApiId() *string
@@ -382,7 +382,7 @@ func (j *jsiiProxy_Apigatewayv2ApiMapping) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/apigatewayv2_api_mapping aws_apigatewayv2_api_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/apigatewayv2_api_mapping aws_apigatewayv2_api_mapping} Resource.
 func NewApigatewayv2ApiMapping(scope constructs.Construct, id *string, config *Apigatewayv2ApiMappingConfig) Apigatewayv2ApiMapping {
 	_init_.Initialize()
 
@@ -400,7 +400,7 @@ func NewApigatewayv2ApiMapping(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/apigatewayv2_api_mapping aws_apigatewayv2_api_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/apigatewayv2_api_mapping aws_apigatewayv2_api_mapping} Resource.
 func NewApigatewayv2ApiMapping_Override(a Apigatewayv2ApiMapping, scope constructs.Construct, id *string, config *Apigatewayv2ApiMappingConfig) {
 	_init_.Initialize()
 

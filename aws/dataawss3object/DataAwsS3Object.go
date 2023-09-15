@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/s3_object aws_s3_object}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/s3_object aws_s3_object}.
 type DataAwsS3Object interface {
 	cdktf.TerraformDataSource
 	Body() *string
@@ -23,6 +23,13 @@ type DataAwsS3Object interface {
 	CacheControl() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ChecksumCrc32() *string
+	ChecksumCrc32C() *string
+	ChecksumMode() *string
+	SetChecksumMode(val *string)
+	ChecksumModeInput() *string
+	ChecksumSha1() *string
+	ChecksumSha256() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	ContentDisposition() *string
@@ -116,6 +123,7 @@ type DataAwsS3Object interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetChecksumMode()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -193,6 +201,66 @@ func (j *jsiiProxy_DataAwsS3Object) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsS3Object) ChecksumCrc32() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"checksumCrc32",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsS3Object) ChecksumCrc32C() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"checksumCrc32C",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsS3Object) ChecksumMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"checksumMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsS3Object) ChecksumModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"checksumModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsS3Object) ChecksumSha1() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"checksumSha1",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsS3Object) ChecksumSha256() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"checksumSha256",
 		&returns,
 	)
 	return returns
@@ -599,7 +667,7 @@ func (j *jsiiProxy_DataAwsS3Object) WebsiteRedirectLocation() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/s3_object aws_s3_object} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/s3_object aws_s3_object} Data Source.
 func NewDataAwsS3Object(scope constructs.Construct, id *string, config *DataAwsS3ObjectConfig) DataAwsS3Object {
 	_init_.Initialize()
 
@@ -617,7 +685,7 @@ func NewDataAwsS3Object(scope constructs.Construct, id *string, config *DataAwsS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/s3_object aws_s3_object} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/s3_object aws_s3_object} Data Source.
 func NewDataAwsS3Object_Override(d DataAwsS3Object, scope constructs.Construct, id *string, config *DataAwsS3ObjectConfig) {
 	_init_.Initialize()
 
@@ -635,6 +703,17 @@ func (j *jsiiProxy_DataAwsS3Object)SetBucket(val *string) {
 	_jsii_.Set(
 		j,
 		"bucket",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsS3Object)SetChecksumMode(val *string) {
+	if err := j.validateSetChecksumModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"checksumMode",
 		val,
 	)
 }
@@ -1003,6 +1082,14 @@ func (d *jsiiProxy_DataAwsS3Object) OverrideLogicalId(newLogicalId *string) {
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataAwsS3Object) ResetChecksumMode() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetChecksumMode",
+		nil, // no parameters
 	)
 }
 

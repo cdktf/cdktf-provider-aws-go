@@ -55,6 +55,10 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference) validateSetBucketAccountIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

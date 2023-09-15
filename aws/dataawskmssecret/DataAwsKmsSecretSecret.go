@@ -5,13 +5,13 @@ package dataawskmssecret
 
 
 type DataAwsKmsSecretSecret struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/kms_secret#name DataAwsKmsSecret#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/kms_secret#name DataAwsKmsSecret#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/kms_secret#payload DataAwsKmsSecret#payload}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/kms_secret#payload DataAwsKmsSecret#payload}.
 	Payload *string `field:"required" json:"payload" yaml:"payload"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/kms_secret#context DataAwsKmsSecret#context}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/kms_secret#context DataAwsKmsSecret#context}.
 	Context *map[string]*string `field:"optional" json:"context" yaml:"context"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/kms_secret#grant_tokens DataAwsKmsSecret#grant_tokens}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/kms_secret#grant_tokens DataAwsKmsSecret#grant_tokens}.
 	GrantTokens *[]*string `field:"optional" json:"grantTokens" yaml:"grantTokens"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iam_user_group_membership aws_iam_user_group_membership}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/iam_user_group_membership aws_iam_user_group_membership}.
 type IamUserGroupMembership interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -335,7 +335,7 @@ func (j *jsiiProxy_IamUserGroupMembership) UserInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iam_user_group_membership aws_iam_user_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/iam_user_group_membership aws_iam_user_group_membership} Resource.
 func NewIamUserGroupMembership(scope constructs.Construct, id *string, config *IamUserGroupMembershipConfig) IamUserGroupMembership {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewIamUserGroupMembership(scope constructs.Construct, id *string, config *I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/iam_user_group_membership aws_iam_user_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/iam_user_group_membership aws_iam_user_group_membership} Resource.
 func NewIamUserGroupMembership_Override(i IamUserGroupMembership, scope constructs.Construct, id *string, config *IamUserGroupMembershipConfig) {
 	_init_.Initialize()
 

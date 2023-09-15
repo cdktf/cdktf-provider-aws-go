@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/ses_configuration_set aws_ses_configuration_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/ses_configuration_set aws_ses_configuration_set}.
 type SesConfigurationSet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -430,7 +430,7 @@ func (j *jsiiProxy_SesConfigurationSet) TrackingOptionsInput() *SesConfiguration
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/ses_configuration_set aws_ses_configuration_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/ses_configuration_set aws_ses_configuration_set} Resource.
 func NewSesConfigurationSet(scope constructs.Construct, id *string, config *SesConfigurationSetConfig) SesConfigurationSet {
 	_init_.Initialize()
 
@@ -448,7 +448,7 @@ func NewSesConfigurationSet(scope constructs.Construct, id *string, config *SesC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/ses_configuration_set aws_ses_configuration_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/ses_configuration_set aws_ses_configuration_set} Resource.
 func NewSesConfigurationSet_Override(s SesConfigurationSet, scope constructs.Construct, id *string, config *SesConfigurationSetConfig) {
 	_init_.Initialize()
 

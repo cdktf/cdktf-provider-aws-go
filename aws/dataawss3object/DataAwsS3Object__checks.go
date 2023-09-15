@@ -146,6 +146,14 @@ func (j *jsiiProxy_DataAwsS3Object) validateSetBucketParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsS3Object) validateSetChecksumModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsS3Object) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
 	case *float64:

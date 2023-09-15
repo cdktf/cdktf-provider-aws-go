@@ -59,6 +59,10 @@ func (t *jsiiProxy_TransferConnector) validatePutAs2ConfigParameters(value *Tran
 	return nil
 }
 
+func (t *jsiiProxy_TransferConnector) validatePutSftpConfigParameters(value *TransferConnectorSftpConfig) error {
+	return nil
+}
+
 func validateTransferConnector_IsConstructParameters(x interface{}) error {
 	return nil
 }

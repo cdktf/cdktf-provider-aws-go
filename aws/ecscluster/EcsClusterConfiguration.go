@@ -7,7 +7,7 @@ package ecscluster
 type EcsClusterConfiguration struct {
 	// execute_command_configuration block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/ecs_cluster#execute_command_configuration EcsCluster#execute_command_configuration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/ecs_cluster#execute_command_configuration EcsCluster#execute_command_configuration}
 	ExecuteCommandConfiguration *EcsClusterConfigurationExecuteCommandConfiguration `field:"optional" json:"executeCommandConfiguration" yaml:"executeCommandConfiguration"`
 }
 

@@ -14,6 +14,7 @@ import (
 type DataAwsS3ControlMultiRegionAccessPointRegionsOutputReference interface {
 	cdktf.ComplexObject
 	Bucket() *string
+	BucketAccountId() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -86,6 +87,16 @@ func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPointRegionsOutputReference)
 	_jsii_.Get(
 		j,
 		"bucket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPointRegionsOutputReference) BucketAccountId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketAccountId",
 		&returns,
 	)
 	return returns

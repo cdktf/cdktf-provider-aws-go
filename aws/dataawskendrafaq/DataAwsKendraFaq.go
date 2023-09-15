@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/kendra_faq aws_kendra_faq}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/kendra_faq aws_kendra_faq}.
 type DataAwsKendraFaq interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -452,7 +452,7 @@ func (j *jsiiProxy_DataAwsKendraFaq) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/kendra_faq aws_kendra_faq} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/kendra_faq aws_kendra_faq} Data Source.
 func NewDataAwsKendraFaq(scope constructs.Construct, id *string, config *DataAwsKendraFaqConfig) DataAwsKendraFaq {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewDataAwsKendraFaq(scope constructs.Construct, id *string, config *DataAws
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/data-sources/kendra_faq aws_kendra_faq} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/kendra_faq aws_kendra_faq} Data Source.
 func NewDataAwsKendraFaq_Override(d DataAwsKendraFaq, scope constructs.Construct, id *string, config *DataAwsKendraFaqConfig) {
 	_init_.Initialize()
 

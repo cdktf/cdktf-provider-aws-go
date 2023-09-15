@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3_object_copy aws_s3_object_copy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3_object_copy aws_s3_object_copy}.
 type S3ObjectCopy interface {
 	cdktf.TerraformResource
 	Acl() *string
@@ -29,6 +29,13 @@ type S3ObjectCopy interface {
 	CacheControlInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ChecksumAlgorithm() *string
+	SetChecksumAlgorithm(val *string)
+	ChecksumAlgorithmInput() *string
+	ChecksumCrc32() *string
+	ChecksumCrc32C() *string
+	ChecksumSha1() *string
+	ChecksumSha256() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -215,6 +222,7 @@ type S3ObjectCopy interface {
 	ResetAcl()
 	ResetBucketKeyEnabled()
 	ResetCacheControl()
+	ResetChecksumAlgorithm()
 	ResetContentDisposition()
 	ResetContentEncoding()
 	ResetContentLanguage()
@@ -352,6 +360,66 @@ func (j *jsiiProxy_S3ObjectCopy) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ObjectCopy) ChecksumAlgorithm() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"checksumAlgorithm",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ObjectCopy) ChecksumAlgorithmInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"checksumAlgorithmInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ObjectCopy) ChecksumCrc32() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"checksumCrc32",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ObjectCopy) ChecksumCrc32C() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"checksumCrc32C",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ObjectCopy) ChecksumSha1() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"checksumSha1",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ObjectCopy) ChecksumSha256() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"checksumSha256",
 		&returns,
 	)
 	return returns
@@ -1288,7 +1356,7 @@ func (j *jsiiProxy_S3ObjectCopy) WebsiteRedirectInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3_object_copy aws_s3_object_copy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3_object_copy aws_s3_object_copy} Resource.
 func NewS3ObjectCopy(scope constructs.Construct, id *string, config *S3ObjectCopyConfig) S3ObjectCopy {
 	_init_.Initialize()
 
@@ -1306,7 +1374,7 @@ func NewS3ObjectCopy(scope constructs.Construct, id *string, config *S3ObjectCop
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/s3_object_copy aws_s3_object_copy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3_object_copy aws_s3_object_copy} Resource.
 func NewS3ObjectCopy_Override(s S3ObjectCopy, scope constructs.Construct, id *string, config *S3ObjectCopyConfig) {
 	_init_.Initialize()
 
@@ -1357,6 +1425,17 @@ func (j *jsiiProxy_S3ObjectCopy)SetCacheControl(val *string) {
 	_jsii_.Set(
 		j,
 		"cacheControl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3ObjectCopy)SetChecksumAlgorithm(val *string) {
+	if err := j.validateSetChecksumAlgorithmParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"checksumAlgorithm",
 		val,
 	)
 }
@@ -2111,6 +2190,14 @@ func (s *jsiiProxy_S3ObjectCopy) ResetCacheControl() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetCacheControl",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3ObjectCopy) ResetChecksumAlgorithm() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetChecksumAlgorithm",
 		nil, // no parameters
 	)
 }

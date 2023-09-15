@@ -5,7 +5,7 @@ package codedeploydeploymentgroup
 
 
 type CodedeployDeploymentGroupLoadBalancerInfoTargetGroupInfo struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/codedeploy_deployment_group#name CodedeployDeploymentGroup#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/codedeploy_deployment_group#name CodedeployDeploymentGroup#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

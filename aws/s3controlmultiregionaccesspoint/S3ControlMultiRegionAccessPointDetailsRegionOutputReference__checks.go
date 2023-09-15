@@ -109,6 +109,14 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference) validateSetBucketAccountIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_S3ControlMultiRegionAccessPointDetailsRegionOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/api_gateway_deployment aws_api_gateway_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment}.
 type ApiGatewayDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -465,7 +465,7 @@ func (j *jsiiProxy_ApiGatewayDeployment) VariablesInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/api_gateway_deployment aws_api_gateway_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment} Resource.
 func NewApiGatewayDeployment(scope constructs.Construct, id *string, config *ApiGatewayDeploymentConfig) ApiGatewayDeployment {
 	_init_.Initialize()
 
@@ -483,7 +483,7 @@ func NewApiGatewayDeployment(scope constructs.Construct, id *string, config *Api
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/api_gateway_deployment aws_api_gateway_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment} Resource.
 func NewApiGatewayDeployment_Override(a ApiGatewayDeployment, scope constructs.Construct, id *string, config *ApiGatewayDeploymentConfig) {
 	_init_.Initialize()
 

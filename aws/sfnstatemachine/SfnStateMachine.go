@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/sfn_state_machine aws_sfn_state_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/sfn_state_machine aws_sfn_state_machine}.
 type SfnStateMachine interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -628,7 +628,7 @@ func (j *jsiiProxy_SfnStateMachine) VersionDescription() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/sfn_state_machine aws_sfn_state_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/sfn_state_machine aws_sfn_state_machine} Resource.
 func NewSfnStateMachine(scope constructs.Construct, id *string, config *SfnStateMachineConfig) SfnStateMachine {
 	_init_.Initialize()
 
@@ -646,7 +646,7 @@ func NewSfnStateMachine(scope constructs.Construct, id *string, config *SfnState
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.16.2/docs/resources/sfn_state_machine aws_sfn_state_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/sfn_state_machine aws_sfn_state_machine} Resource.
 func NewSfnStateMachine_Override(s SfnStateMachine, scope constructs.Construct, id *string, config *SfnStateMachineConfig) {
 	_init_.Initialize()
 

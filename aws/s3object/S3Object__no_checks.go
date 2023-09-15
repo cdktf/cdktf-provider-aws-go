@@ -83,6 +83,10 @@ func (j *jsiiProxy_S3Object) validateSetCacheControlParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_S3Object) validateSetChecksumAlgorithmParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3Object) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
