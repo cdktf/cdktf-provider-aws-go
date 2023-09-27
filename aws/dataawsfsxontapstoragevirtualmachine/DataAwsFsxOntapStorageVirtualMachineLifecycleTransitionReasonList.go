@@ -1,0 +1,218 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+package dataawsfsxontapstoragevirtualmachine
+
+import (
+	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsfsxontapstoragevirtualmachine/internal"
+	"github.com/hashicorp/terraform-cdk-go/cdktf"
+)
+
+type DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList interface {
+	cdktf.ComplexList
+	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
+	//
+	// If this returns an empty array the stack will not be attached.
+	// Experimental.
+	CreationStack() *[]*string
+	// Experimental.
+	Fqn() *string
+	// The attribute on the parent resource this class is referencing.
+	TerraformAttribute() *string
+	SetTerraformAttribute(val *string)
+	// The parent resource.
+	TerraformResource() cdktf.IInterpolatingParent
+	SetTerraformResource(val cdktf.IInterpolatingParent)
+	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	WrapsSet() *bool
+	SetWrapsSet(val *bool)
+	// Experimental.
+	ComputeFqn() *string
+	Get(index *float64) DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonOutputReference
+	// Produce the Token's value at resolution time.
+	// Experimental.
+	Resolve(_context cdktf.IResolveContext) interface{}
+	// Return a string representation of this resolvable object.
+	//
+	// Returns a reversible string representation.
+	// Experimental.
+	ToString() *string
+}
+
+// The jsii proxy struct for DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList
+type jsiiProxy_DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList struct {
+	internal.Type__cdktfComplexList
+}
+
+func (j *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList) CreationStack() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList) Fqn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList) TerraformAttribute() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList) TerraformResource() cdktf.IInterpolatingParent {
+	var returns cdktf.IInterpolatingParent
+	_jsii_.Get(
+		j,
+		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList) WrapsSet() *bool {
+	var returns *bool
+	_jsii_.Get(
+		j,
+		"wrapsSet",
+		&returns,
+	)
+	return returns
+}
+
+
+func NewDataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList {
+	_init_.Initialize()
+
+	if err := validateNewDataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+		panic(err)
+	}
+	j := jsiiProxy_DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList{}
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.dataAwsFsxOntapStorageVirtualMachine.DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		&j,
+	)
+
+	return &j
+}
+
+func NewDataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList_Override(d DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+	_init_.Initialize()
+
+	_jsii_.Create(
+		"@cdktf/provider-aws.dataAwsFsxOntapStorageVirtualMachine.DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList",
+		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
+		d,
+	)
+}
+
+func (j *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformAttribute",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList)SetWrapsSet(val *bool) {
+	if err := j.validateSetWrapsSetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"wrapsSet",
+		val,
+	)
+}
+
+func (d *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList) ComputeFqn() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"computeFqn",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList) Get(index *float64) DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonOutputReference {
+	if err := d.validateGetParameters(index); err != nil {
+		panic(err)
+	}
+	var returns DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonOutputReference
+
+	_jsii_.Invoke(
+		d,
+		"get",
+		[]interface{}{index},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"resolve",
+		[]interface{}{_context},
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataAwsFsxOntapStorageVirtualMachineLifecycleTransitionReasonList) ToString() *string {
+	var returns *string
+
+	_jsii_.Invoke(
+		d,
+		"toString",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+

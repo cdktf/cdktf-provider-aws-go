@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/finspace_kx_environment aws_finspace_kx_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/finspace_kx_environment aws_finspace_kx_environment}.
 type FinspaceKxEnvironment interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -532,7 +532,7 @@ func (j *jsiiProxy_FinspaceKxEnvironment) TransitGatewayConfigurationInput() *Fi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/finspace_kx_environment aws_finspace_kx_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/finspace_kx_environment aws_finspace_kx_environment} Resource.
 func NewFinspaceKxEnvironment(scope constructs.Construct, id *string, config *FinspaceKxEnvironmentConfig) FinspaceKxEnvironment {
 	_init_.Initialize()
 
@@ -550,7 +550,7 @@ func NewFinspaceKxEnvironment(scope constructs.Construct, id *string, config *Fi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/finspace_kx_environment aws_finspace_kx_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/finspace_kx_environment aws_finspace_kx_environment} Resource.
 func NewFinspaceKxEnvironment_Override(f FinspaceKxEnvironment, scope constructs.Construct, id *string, config *FinspaceKxEnvironmentConfig) {
 	_init_.Initialize()
 

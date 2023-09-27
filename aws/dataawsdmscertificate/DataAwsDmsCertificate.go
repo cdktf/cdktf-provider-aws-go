@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/dms_certificate aws_dms_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/dms_certificate aws_dms_certificate}.
 type DataAwsDmsCertificate interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -407,7 +407,7 @@ func (j *jsiiProxy_DataAwsDmsCertificate) ValidToDate() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/dms_certificate aws_dms_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/dms_certificate aws_dms_certificate} Data Source.
 func NewDataAwsDmsCertificate(scope constructs.Construct, id *string, config *DataAwsDmsCertificateConfig) DataAwsDmsCertificate {
 	_init_.Initialize()
 
@@ -425,7 +425,7 @@ func NewDataAwsDmsCertificate(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/data-sources/dms_certificate aws_dms_certificate} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/dms_certificate aws_dms_certificate} Data Source.
 func NewDataAwsDmsCertificate_Override(d DataAwsDmsCertificate, scope constructs.Construct, id *string, config *DataAwsDmsCertificateConfig) {
 	_init_.Initialize()
 

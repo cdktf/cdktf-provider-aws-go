@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3_bucket_ownership_controls aws_s3_bucket_ownership_controls}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/s3_bucket_ownership_controls aws_s3_bucket_ownership_controls}.
 type S3BucketOwnershipControls interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -335,7 +335,7 @@ func (j *jsiiProxy_S3BucketOwnershipControls) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3_bucket_ownership_controls aws_s3_bucket_ownership_controls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/s3_bucket_ownership_controls aws_s3_bucket_ownership_controls} Resource.
 func NewS3BucketOwnershipControls(scope constructs.Construct, id *string, config *S3BucketOwnershipControlsConfig) S3BucketOwnershipControls {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewS3BucketOwnershipControls(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/s3_bucket_ownership_controls aws_s3_bucket_ownership_controls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/s3_bucket_ownership_controls aws_s3_bucket_ownership_controls} Resource.
 func NewS3BucketOwnershipControls_Override(s S3BucketOwnershipControls, scope constructs.Construct, id *string, config *S3BucketOwnershipControlsConfig) {
 	_init_.Initialize()
 

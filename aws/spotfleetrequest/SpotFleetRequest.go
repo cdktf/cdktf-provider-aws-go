@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/spot_fleet_request aws_spot_fleet_request}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/spot_fleet_request aws_spot_fleet_request}.
 type SpotFleetRequest interface {
 	cdktf.TerraformResource
 	AllocationStrategy() *string
@@ -957,7 +957,7 @@ func (j *jsiiProxy_SpotFleetRequest) WaitForFulfillmentInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/spot_fleet_request aws_spot_fleet_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/spot_fleet_request aws_spot_fleet_request} Resource.
 func NewSpotFleetRequest(scope constructs.Construct, id *string, config *SpotFleetRequestConfig) SpotFleetRequest {
 	_init_.Initialize()
 
@@ -975,7 +975,7 @@ func NewSpotFleetRequest(scope constructs.Construct, id *string, config *SpotFle
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/spot_fleet_request aws_spot_fleet_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/spot_fleet_request aws_spot_fleet_request} Resource.
 func NewSpotFleetRequest_Override(s SpotFleetRequest, scope constructs.Construct, id *string, config *SpotFleetRequestConfig) {
 	_init_.Initialize()
 

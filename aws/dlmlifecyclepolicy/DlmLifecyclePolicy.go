@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/dlm_lifecycle_policy aws_dlm_lifecycle_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/dlm_lifecycle_policy aws_dlm_lifecycle_policy}.
 type DlmLifecyclePolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -441,7 +441,7 @@ func (j *jsiiProxy_DlmLifecyclePolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/dlm_lifecycle_policy aws_dlm_lifecycle_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/dlm_lifecycle_policy aws_dlm_lifecycle_policy} Resource.
 func NewDlmLifecyclePolicy(scope constructs.Construct, id *string, config *DlmLifecyclePolicyConfig) DlmLifecyclePolicy {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewDlmLifecyclePolicy(scope constructs.Construct, id *string, config *DlmLi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/dlm_lifecycle_policy aws_dlm_lifecycle_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/dlm_lifecycle_policy aws_dlm_lifecycle_policy} Resource.
 func NewDlmLifecyclePolicy_Override(d DlmLifecyclePolicy, scope constructs.Construct, id *string, config *DlmLifecyclePolicyConfig) {
 	_init_.Initialize()
 

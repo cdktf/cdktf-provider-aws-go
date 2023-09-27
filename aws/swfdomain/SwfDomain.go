@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/swf_domain aws_swf_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/swf_domain aws_swf_domain}.
 type SwfDomain interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -443,7 +443,7 @@ func (j *jsiiProxy_SwfDomain) WorkflowExecutionRetentionPeriodInDaysInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/swf_domain aws_swf_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/swf_domain aws_swf_domain} Resource.
 func NewSwfDomain(scope constructs.Construct, id *string, config *SwfDomainConfig) SwfDomain {
 	_init_.Initialize()
 
@@ -461,7 +461,7 @@ func NewSwfDomain(scope constructs.Construct, id *string, config *SwfDomainConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/swf_domain aws_swf_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/swf_domain aws_swf_domain} Resource.
 func NewSwfDomain_Override(s SwfDomain, scope constructs.Construct, id *string, config *SwfDomainConfig) {
 	_init_.Initialize()
 

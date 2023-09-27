@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/redshift_event_subscription aws_redshift_event_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/redshift_event_subscription aws_redshift_event_subscription}.
 type RedshiftEventSubscription interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -560,7 +560,7 @@ func (j *jsiiProxy_RedshiftEventSubscription) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/redshift_event_subscription aws_redshift_event_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/redshift_event_subscription aws_redshift_event_subscription} Resource.
 func NewRedshiftEventSubscription(scope constructs.Construct, id *string, config *RedshiftEventSubscriptionConfig) RedshiftEventSubscription {
 	_init_.Initialize()
 
@@ -578,7 +578,7 @@ func NewRedshiftEventSubscription(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.17.0/docs/resources/redshift_event_subscription aws_redshift_event_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/redshift_event_subscription aws_redshift_event_subscription} Resource.
 func NewRedshiftEventSubscription_Override(r RedshiftEventSubscription, scope constructs.Construct, id *string, config *RedshiftEventSubscriptionConfig) {
 	_init_.Initialize()
 
