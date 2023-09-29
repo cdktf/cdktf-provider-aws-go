@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/opensearch_outbound_connection aws_opensearch_outbound_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/opensearch_outbound_connection aws_opensearch_outbound_connection}.
 type OpensearchOutboundConnection interface {
 	cdktf.TerraformResource
+	AcceptConnection() interface{}
+	SetAcceptConnection(val interface{})
+	AcceptConnectionInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -24,6 +27,11 @@ type OpensearchOutboundConnection interface {
 	ConnectionAlias() *string
 	SetConnectionAlias(val *string)
 	ConnectionAliasInput() *string
+	ConnectionMode() *string
+	SetConnectionMode(val *string)
+	ConnectionModeInput() *string
+	ConnectionProperties() OpensearchOutboundConnectionConnectionPropertiesOutputReference
+	ConnectionPropertiesInput() *OpensearchOutboundConnectionConnectionProperties
 	ConnectionStatus() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
@@ -99,9 +107,13 @@ type OpensearchOutboundConnection interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutConnectionProperties(value *OpensearchOutboundConnectionConnectionProperties)
 	PutLocalDomainInfo(value *OpensearchOutboundConnectionLocalDomainInfo)
 	PutRemoteDomainInfo(value *OpensearchOutboundConnectionRemoteDomainInfo)
 	PutTimeouts(value *OpensearchOutboundConnectionTimeouts)
+	ResetAcceptConnection()
+	ResetConnectionMode()
+	ResetConnectionProperties()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -120,6 +132,26 @@ type OpensearchOutboundConnection interface {
 // The jsii proxy struct for OpensearchOutboundConnection
 type jsiiProxy_OpensearchOutboundConnection struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_OpensearchOutboundConnection) AcceptConnection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"acceptConnection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchOutboundConnection) AcceptConnectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"acceptConnectionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_OpensearchOutboundConnection) CdktfStack() cdktf.TerraformStack {
@@ -157,6 +189,46 @@ func (j *jsiiProxy_OpensearchOutboundConnection) ConnectionAliasInput() *string 
 	_jsii_.Get(
 		j,
 		"connectionAliasInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchOutboundConnection) ConnectionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchOutboundConnection) ConnectionModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchOutboundConnection) ConnectionProperties() OpensearchOutboundConnectionConnectionPropertiesOutputReference {
+	var returns OpensearchOutboundConnectionConnectionPropertiesOutputReference
+	_jsii_.Get(
+		j,
+		"connectionProperties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchOutboundConnection) ConnectionPropertiesInput() *OpensearchOutboundConnectionConnectionProperties {
+	var returns *OpensearchOutboundConnectionConnectionProperties
+	_jsii_.Get(
+		j,
+		"connectionPropertiesInput",
 		&returns,
 	)
 	return returns
@@ -393,7 +465,7 @@ func (j *jsiiProxy_OpensearchOutboundConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/opensearch_outbound_connection aws_opensearch_outbound_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/opensearch_outbound_connection aws_opensearch_outbound_connection} Resource.
 func NewOpensearchOutboundConnection(scope constructs.Construct, id *string, config *OpensearchOutboundConnectionConfig) OpensearchOutboundConnection {
 	_init_.Initialize()
 
@@ -411,7 +483,7 @@ func NewOpensearchOutboundConnection(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/opensearch_outbound_connection aws_opensearch_outbound_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/opensearch_outbound_connection aws_opensearch_outbound_connection} Resource.
 func NewOpensearchOutboundConnection_Override(o OpensearchOutboundConnection, scope constructs.Construct, id *string, config *OpensearchOutboundConnectionConfig) {
 	_init_.Initialize()
 
@@ -419,6 +491,17 @@ func NewOpensearchOutboundConnection_Override(o OpensearchOutboundConnection, sc
 		"@cdktf/provider-aws.opensearchOutboundConnection.OpensearchOutboundConnection",
 		[]interface{}{scope, id, config},
 		o,
+	)
+}
+
+func (j *jsiiProxy_OpensearchOutboundConnection)SetAcceptConnection(val interface{}) {
+	if err := j.validateSetAcceptConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"acceptConnection",
+		val,
 	)
 }
 
@@ -440,6 +523,17 @@ func (j *jsiiProxy_OpensearchOutboundConnection)SetConnectionAlias(val *string) 
 	_jsii_.Set(
 		j,
 		"connectionAlias",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchOutboundConnection)SetConnectionMode(val *string) {
+	if err := j.validateSetConnectionModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connectionMode",
 		val,
 	)
 }
@@ -778,6 +872,17 @@ func (o *jsiiProxy_OpensearchOutboundConnection) OverrideLogicalId(newLogicalId 
 	)
 }
 
+func (o *jsiiProxy_OpensearchOutboundConnection) PutConnectionProperties(value *OpensearchOutboundConnectionConnectionProperties) {
+	if err := o.validatePutConnectionPropertiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putConnectionProperties",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OpensearchOutboundConnection) PutLocalDomainInfo(value *OpensearchOutboundConnectionLocalDomainInfo) {
 	if err := o.validatePutLocalDomainInfoParameters(value); err != nil {
 		panic(err)
@@ -808,6 +913,30 @@ func (o *jsiiProxy_OpensearchOutboundConnection) PutTimeouts(value *OpensearchOu
 		o,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (o *jsiiProxy_OpensearchOutboundConnection) ResetAcceptConnection() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetAcceptConnection",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchOutboundConnection) ResetConnectionMode() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetConnectionMode",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchOutboundConnection) ResetConnectionProperties() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetConnectionProperties",
+		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/vpclattice_service_network_service_association aws_vpclattice_service_network_service_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/vpclattice_service_network_service_association aws_vpclattice_service_network_service_association}.
 type VpclatticeServiceNetworkServiceAssociation interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -462,7 +462,7 @@ func (j *jsiiProxy_VpclatticeServiceNetworkServiceAssociation) TimeoutsInput() i
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/vpclattice_service_network_service_association aws_vpclattice_service_network_service_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/vpclattice_service_network_service_association aws_vpclattice_service_network_service_association} Resource.
 func NewVpclatticeServiceNetworkServiceAssociation(scope constructs.Construct, id *string, config *VpclatticeServiceNetworkServiceAssociationConfig) VpclatticeServiceNetworkServiceAssociation {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewVpclatticeServiceNetworkServiceAssociation(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/vpclattice_service_network_service_association aws_vpclattice_service_network_service_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/vpclattice_service_network_service_association aws_vpclattice_service_network_service_association} Resource.
 func NewVpclatticeServiceNetworkServiceAssociation_Override(v VpclatticeServiceNetworkServiceAssociation, scope constructs.Construct, id *string, config *VpclatticeServiceNetworkServiceAssociationConfig) {
 	_init_.Initialize()
 

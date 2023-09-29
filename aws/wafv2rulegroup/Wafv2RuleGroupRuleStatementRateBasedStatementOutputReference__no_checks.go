@@ -47,6 +47,10 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementOutputReference)
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementOutputReference) validatePutCustomKeyParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementOutputReference) validatePutForwardedIpConfigParameters(value *Wafv2RuleGroupRuleStatementRateBasedStatementForwardedIpConfig) error {
 	return nil
 }

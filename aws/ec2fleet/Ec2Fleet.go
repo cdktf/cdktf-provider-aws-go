@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/ec2_fleet aws_ec2_fleet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ec2_fleet aws_ec2_fleet}.
 type Ec2Fleet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -754,7 +754,7 @@ func (j *jsiiProxy_Ec2Fleet) ValidUntilInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/ec2_fleet aws_ec2_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ec2_fleet aws_ec2_fleet} Resource.
 func NewEc2Fleet(scope constructs.Construct, id *string, config *Ec2FleetConfig) Ec2Fleet {
 	_init_.Initialize()
 
@@ -772,7 +772,7 @@ func NewEc2Fleet(scope constructs.Construct, id *string, config *Ec2FleetConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/ec2_fleet aws_ec2_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ec2_fleet aws_ec2_fleet} Resource.
 func NewEc2Fleet_Override(e Ec2Fleet, scope constructs.Construct, id *string, config *Ec2FleetConfig) {
 	_init_.Initialize()
 

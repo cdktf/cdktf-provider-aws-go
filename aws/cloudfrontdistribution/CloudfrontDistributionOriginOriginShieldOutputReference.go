@@ -70,6 +70,7 @@ type CloudfrontDistributionOriginOriginShieldOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetOriginShieldRegion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -484,6 +485,14 @@ func (c *jsiiProxy_CloudfrontDistributionOriginOriginShieldOutputReference) Inte
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CloudfrontDistributionOriginOriginShieldOutputReference) ResetOriginShieldRegion() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOriginShieldRegion",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CloudfrontDistributionOriginOriginShieldOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

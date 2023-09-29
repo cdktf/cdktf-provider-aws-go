@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/fsx_openzfs_volume aws_fsx_openzfs_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/fsx_openzfs_volume aws_fsx_openzfs_volume}.
 type FsxOpenzfsVolume interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -34,6 +34,9 @@ type FsxOpenzfsVolume interface {
 	DataCompressionType() *string
 	SetDataCompressionType(val *string)
 	DataCompressionTypeInput() *string
+	DeleteVolumeOptions() *[]*string
+	SetDeleteVolumeOptions(val *[]*string)
+	DeleteVolumeOptionsInput() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -137,6 +140,7 @@ type FsxOpenzfsVolume interface {
 	PutUserAndGroupQuotas(value interface{})
 	ResetCopyTagsToSnapshots()
 	ResetDataCompressionType()
+	ResetDeleteVolumeOptions()
 	ResetId()
 	ResetNfsExports()
 	ResetOriginSnapshot()
@@ -252,6 +256,26 @@ func (j *jsiiProxy_FsxOpenzfsVolume) DataCompressionTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"dataCompressionTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOpenzfsVolume) DeleteVolumeOptions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"deleteVolumeOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOpenzfsVolume) DeleteVolumeOptionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"deleteVolumeOptionsInput",
 		&returns,
 	)
 	return returns
@@ -658,7 +682,7 @@ func (j *jsiiProxy_FsxOpenzfsVolume) VolumeTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/fsx_openzfs_volume aws_fsx_openzfs_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/fsx_openzfs_volume aws_fsx_openzfs_volume} Resource.
 func NewFsxOpenzfsVolume(scope constructs.Construct, id *string, config *FsxOpenzfsVolumeConfig) FsxOpenzfsVolume {
 	_init_.Initialize()
 
@@ -676,7 +700,7 @@ func NewFsxOpenzfsVolume(scope constructs.Construct, id *string, config *FsxOpen
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/fsx_openzfs_volume aws_fsx_openzfs_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/fsx_openzfs_volume aws_fsx_openzfs_volume} Resource.
 func NewFsxOpenzfsVolume_Override(f FsxOpenzfsVolume, scope constructs.Construct, id *string, config *FsxOpenzfsVolumeConfig) {
 	_init_.Initialize()
 
@@ -727,6 +751,17 @@ func (j *jsiiProxy_FsxOpenzfsVolume)SetDataCompressionType(val *string) {
 	_jsii_.Set(
 		j,
 		"dataCompressionType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxOpenzfsVolume)SetDeleteVolumeOptions(val *[]*string) {
+	if err := j.validateSetDeleteVolumeOptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteVolumeOptions",
 		val,
 	)
 }
@@ -1209,6 +1244,14 @@ func (f *jsiiProxy_FsxOpenzfsVolume) ResetDataCompressionType() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetDataCompressionType",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOpenzfsVolume) ResetDeleteVolumeOptions() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDeleteVolumeOptions",
 		nil, // no parameters
 	)
 }

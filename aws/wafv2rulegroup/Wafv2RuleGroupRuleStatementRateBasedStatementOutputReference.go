@@ -31,6 +31,8 @@ type Wafv2RuleGroupRuleStatementRateBasedStatementOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomKey() Wafv2RuleGroupRuleStatementRateBasedStatementCustomKeyList
+	CustomKeyInput() interface{}
 	ForwardedIpConfig() Wafv2RuleGroupRuleStatementRateBasedStatementForwardedIpConfigOutputReference
 	ForwardedIpConfigInput() *Wafv2RuleGroupRuleStatementRateBasedStatementForwardedIpConfig
 	// Experimental.
@@ -74,9 +76,11 @@ type Wafv2RuleGroupRuleStatementRateBasedStatementOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCustomKey(value interface{})
 	PutForwardedIpConfig(value *Wafv2RuleGroupRuleStatementRateBasedStatementForwardedIpConfig)
 	PutScopeDownStatement(value *Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatement)
 	ResetAggregateKeyType()
+	ResetCustomKey()
 	ResetForwardedIpConfig()
 	ResetScopeDownStatement()
 	// Produce the Token's value at resolution time.
@@ -139,6 +143,26 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementOutputReference)
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementOutputReference) CustomKey() Wafv2RuleGroupRuleStatementRateBasedStatementCustomKeyList {
+	var returns Wafv2RuleGroupRuleStatementRateBasedStatementCustomKeyList
+	_jsii_.Get(
+		j,
+		"customKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementOutputReference) CustomKeyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customKeyInput",
 		&returns,
 	)
 	return returns
@@ -535,6 +559,17 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementOutputReference)
 	return returns
 }
 
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementOutputReference) PutCustomKey(value interface{}) {
+	if err := w.validatePutCustomKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putCustomKey",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementOutputReference) PutForwardedIpConfig(value *Wafv2RuleGroupRuleStatementRateBasedStatementForwardedIpConfig) {
 	if err := w.validatePutForwardedIpConfigParameters(value); err != nil {
 		panic(err)
@@ -561,6 +596,14 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementOutputReference)
 	_jsii_.InvokeVoid(
 		w,
 		"resetAggregateKeyType",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementOutputReference) ResetCustomKey() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetCustomKey",
 		nil, // no parameters
 	)
 }

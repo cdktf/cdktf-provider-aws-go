@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/redshift_usage_limit aws_redshift_usage_limit}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/redshift_usage_limit aws_redshift_usage_limit}.
 type RedshiftUsageLimit interface {
 	cdktf.TerraformResource
 	Amount() *float64
@@ -488,7 +488,7 @@ func (j *jsiiProxy_RedshiftUsageLimit) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/redshift_usage_limit aws_redshift_usage_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/redshift_usage_limit aws_redshift_usage_limit} Resource.
 func NewRedshiftUsageLimit(scope constructs.Construct, id *string, config *RedshiftUsageLimitConfig) RedshiftUsageLimit {
 	_init_.Initialize()
 
@@ -506,7 +506,7 @@ func NewRedshiftUsageLimit(scope constructs.Construct, id *string, config *Redsh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/redshift_usage_limit aws_redshift_usage_limit} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/redshift_usage_limit aws_redshift_usage_limit} Resource.
 func NewRedshiftUsageLimit_Override(r RedshiftUsageLimit, scope constructs.Construct, id *string, config *RedshiftUsageLimitConfig) {
 	_init_.Initialize()
 

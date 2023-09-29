@@ -5,9 +5,9 @@ package ecsservice
 
 
 type EcsServicePlacementConstraints struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/ecs_service#type EcsService#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ecs_service#type EcsService#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/ecs_service#expression EcsService#expression}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/ecs_service#expression EcsService#expression}.
 	Expression *string `field:"optional" json:"expression" yaml:"expression"`
 }
 

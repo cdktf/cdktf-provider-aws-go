@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule}.
 type DataAwsEcrPullThroughCacheRule interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -306,7 +306,7 @@ func (j *jsiiProxy_DataAwsEcrPullThroughCacheRule) UpstreamRegistryUrl() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule} Data Source.
 func NewDataAwsEcrPullThroughCacheRule(scope constructs.Construct, id *string, config *DataAwsEcrPullThroughCacheRuleConfig) DataAwsEcrPullThroughCacheRule {
 	_init_.Initialize()
 
@@ -324,7 +324,7 @@ func NewDataAwsEcrPullThroughCacheRule(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule} Data Source.
 func NewDataAwsEcrPullThroughCacheRule_Override(d DataAwsEcrPullThroughCacheRule, scope constructs.Construct, id *string, config *DataAwsEcrPullThroughCacheRuleConfig) {
 	_init_.Initialize()
 

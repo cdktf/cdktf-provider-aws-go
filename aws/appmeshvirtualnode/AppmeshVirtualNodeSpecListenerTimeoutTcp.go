@@ -7,7 +7,7 @@ package appmeshvirtualnode
 type AppmeshVirtualNodeSpecListenerTimeoutTcp struct {
 	// idle block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/appmesh_virtual_node#idle AppmeshVirtualNode#idle}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/appmesh_virtual_node#idle AppmeshVirtualNode#idle}
 	Idle *AppmeshVirtualNodeSpecListenerTimeoutTcpIdle `field:"optional" json:"idle" yaml:"idle"`
 }
 

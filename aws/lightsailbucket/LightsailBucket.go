@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_bucket aws_lightsail_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/lightsail_bucket aws_lightsail_bucket}.
 type LightsailBucket interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -37,6 +37,9 @@ type LightsailBucket interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ForceDelete() interface{}
+	SetForceDelete(val interface{})
+	ForceDeleteInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -107,6 +110,7 @@ type LightsailBucket interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetForceDelete()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -223,6 +227,26 @@ func (j *jsiiProxy_LightsailBucket) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LightsailBucket) ForceDelete() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDelete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LightsailBucket) ForceDeleteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDeleteInput",
 		&returns,
 	)
 	return returns
@@ -449,7 +473,7 @@ func (j *jsiiProxy_LightsailBucket) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_bucket aws_lightsail_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/lightsail_bucket aws_lightsail_bucket} Resource.
 func NewLightsailBucket(scope constructs.Construct, id *string, config *LightsailBucketConfig) LightsailBucket {
 	_init_.Initialize()
 
@@ -467,7 +491,7 @@ func NewLightsailBucket(scope constructs.Construct, id *string, config *Lightsai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/lightsail_bucket aws_lightsail_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/lightsail_bucket aws_lightsail_bucket} Resource.
 func NewLightsailBucket_Override(l LightsailBucket, scope constructs.Construct, id *string, config *LightsailBucketConfig) {
 	_init_.Initialize()
 
@@ -515,6 +539,17 @@ func (j *jsiiProxy_LightsailBucket)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LightsailBucket)SetForceDelete(val interface{}) {
+	if err := j.validateSetForceDeleteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceDelete",
 		val,
 	)
 }
@@ -864,6 +899,14 @@ func (l *jsiiProxy_LightsailBucket) OverrideLogicalId(newLogicalId *string) {
 		l,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (l *jsiiProxy_LightsailBucket) ResetForceDelete() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetForceDelete",
+		nil, // no parameters
 	)
 }
 

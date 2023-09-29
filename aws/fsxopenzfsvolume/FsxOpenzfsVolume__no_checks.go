@@ -99,6 +99,10 @@ func (j *jsiiProxy_FsxOpenzfsVolume) validateSetDataCompressionTypeParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_FsxOpenzfsVolume) validateSetDeleteVolumeOptionsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOpenzfsVolume) validateSetIdParameters(val *string) error {
 	return nil
 }

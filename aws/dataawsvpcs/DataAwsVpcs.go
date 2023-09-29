@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/vpcs aws_vpcs}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/vpcs aws_vpcs}.
 type DataAwsVpcs interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -344,7 +344,7 @@ func (j *jsiiProxy_DataAwsVpcs) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/vpcs aws_vpcs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/vpcs aws_vpcs} Data Source.
 func NewDataAwsVpcs(scope constructs.Construct, id *string, config *DataAwsVpcsConfig) DataAwsVpcs {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewDataAwsVpcs(scope constructs.Construct, id *string, config *DataAwsVpcsC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/vpcs aws_vpcs} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/vpcs aws_vpcs} Data Source.
 func NewDataAwsVpcs_Override(d DataAwsVpcs, scope constructs.Construct, id *string, config *DataAwsVpcsConfig) {
 	_init_.Initialize()
 

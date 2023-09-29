@@ -55,6 +55,10 @@ func (f *jsiiProxy_FsxOntapVolume) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (f *jsiiProxy_FsxOntapVolume) validatePutSnaplockConfigurationParameters(value *FsxOntapVolumeSnaplockConfiguration) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxOntapVolume) validatePutTieringPolicyParameters(value *FsxOntapVolumeTieringPolicy) error {
 	return nil
 }
@@ -75,7 +79,15 @@ func validateFsxOntapVolume_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_FsxOntapVolume) validateSetBypassSnaplockEnterpriseRetentionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOntapVolume) validateSetConnectionParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_FsxOntapVolume) validateSetCopyTagsToBackupsParameters(val interface{}) error {
 	return nil
 }
 
@@ -116,6 +128,10 @@ func (j *jsiiProxy_FsxOntapVolume) validateSetSizeInMegabytesParameters(val *flo
 }
 
 func (j *jsiiProxy_FsxOntapVolume) validateSetSkipFinalBackupParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_FsxOntapVolume) validateSetSnapshotPolicyParameters(val *string) error {
 	return nil
 }
 

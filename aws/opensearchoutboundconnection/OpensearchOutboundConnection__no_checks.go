@@ -55,6 +55,10 @@ func (o *jsiiProxy_OpensearchOutboundConnection) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (o *jsiiProxy_OpensearchOutboundConnection) validatePutConnectionPropertiesParameters(value *OpensearchOutboundConnectionConnectionProperties) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchOutboundConnection) validatePutLocalDomainInfoParameters(value *OpensearchOutboundConnectionLocalDomainInfo) error {
 	return nil
 }
@@ -79,11 +83,19 @@ func validateOpensearchOutboundConnection_IsTerraformResourceParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchOutboundConnection) validateSetAcceptConnectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpensearchOutboundConnection) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
 func (j *jsiiProxy_OpensearchOutboundConnection) validateSetConnectionAliasParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_OpensearchOutboundConnection) validateSetConnectionModeParameters(val *string) error {
 	return nil
 }
 

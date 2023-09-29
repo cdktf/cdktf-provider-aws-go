@@ -79,6 +79,10 @@ func (j *jsiiProxy_LightsailBucket) validateSetCountParameters(val interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_LightsailBucket) validateSetForceDeleteParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LightsailBucket) validateSetIdParameters(val *string) error {
 	return nil
 }

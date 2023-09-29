@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/acmpca_policy aws_acmpca_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/acmpca_policy aws_acmpca_policy}.
 type AcmpcaPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -335,7 +335,7 @@ func (j *jsiiProxy_AcmpcaPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/acmpca_policy aws_acmpca_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/acmpca_policy aws_acmpca_policy} Resource.
 func NewAcmpcaPolicy(scope constructs.Construct, id *string, config *AcmpcaPolicyConfig) AcmpcaPolicy {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewAcmpcaPolicy(scope constructs.Construct, id *string, config *AcmpcaPolic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/acmpca_policy aws_acmpca_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/acmpca_policy aws_acmpca_policy} Resource.
 func NewAcmpcaPolicy_Override(a AcmpcaPolicy, scope constructs.Construct, id *string, config *AcmpcaPolicyConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer}.
 type AccessanalyzerAnalyzer interface {
 	cdktf.TerraformResource
 	AnalyzerName() *string
@@ -395,7 +395,7 @@ func (j *jsiiProxy_AccessanalyzerAnalyzer) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer} Resource.
 func NewAccessanalyzerAnalyzer(scope constructs.Construct, id *string, config *AccessanalyzerAnalyzerConfig) AccessanalyzerAnalyzer {
 	_init_.Initialize()
 
@@ -413,7 +413,7 @@ func NewAccessanalyzerAnalyzer(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer} Resource.
 func NewAccessanalyzerAnalyzer_Override(a AccessanalyzerAnalyzer, scope constructs.Construct, id *string, config *AccessanalyzerAnalyzerConfig) {
 	_init_.Initialize()
 

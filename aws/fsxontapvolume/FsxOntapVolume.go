@@ -12,10 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume}.
 type FsxOntapVolume interface {
 	cdktf.TerraformResource
 	Arn() *string
+	BypassSnaplockEnterpriseRetention() interface{}
+	SetBypassSnaplockEnterpriseRetention(val interface{})
+	BypassSnaplockEnterpriseRetentionInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -24,6 +27,9 @@ type FsxOntapVolume interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	CopyTagsToBackups() interface{}
+	SetCopyTagsToBackups(val interface{})
+	CopyTagsToBackupsInput() interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -79,6 +85,11 @@ type FsxOntapVolume interface {
 	SkipFinalBackup() interface{}
 	SetSkipFinalBackup(val interface{})
 	SkipFinalBackupInput() interface{}
+	SnaplockConfiguration() FsxOntapVolumeSnaplockConfigurationOutputReference
+	SnaplockConfigurationInput() *FsxOntapVolumeSnaplockConfiguration
+	SnapshotPolicy() *string
+	SetSnapshotPolicy(val *string)
+	SnapshotPolicyInput() *string
 	StorageEfficiencyEnabled() interface{}
 	SetStorageEfficiencyEnabled(val interface{})
 	StorageEfficiencyEnabledInput() interface{}
@@ -130,8 +141,11 @@ type FsxOntapVolume interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutSnaplockConfiguration(value *FsxOntapVolumeSnaplockConfiguration)
 	PutTieringPolicy(value *FsxOntapVolumeTieringPolicy)
 	PutTimeouts(value *FsxOntapVolumeTimeouts)
+	ResetBypassSnaplockEnterpriseRetention()
+	ResetCopyTagsToBackups()
 	ResetId()
 	ResetJunctionPath()
 	ResetOntapVolumeType()
@@ -140,6 +154,8 @@ type FsxOntapVolume interface {
 	ResetOverrideLogicalId()
 	ResetSecurityStyle()
 	ResetSkipFinalBackup()
+	ResetSnaplockConfiguration()
+	ResetSnapshotPolicy()
 	ResetStorageEfficiencyEnabled()
 	ResetTags()
 	ResetTagsAll()
@@ -171,6 +187,26 @@ func (j *jsiiProxy_FsxOntapVolume) Arn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FsxOntapVolume) BypassSnaplockEnterpriseRetention() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bypassSnaplockEnterpriseRetention",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOntapVolume) BypassSnaplockEnterpriseRetentionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bypassSnaplockEnterpriseRetentionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxOntapVolume) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -196,6 +232,26 @@ func (j *jsiiProxy_FsxOntapVolume) ConstructNodeMetadata() *map[string]interface
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOntapVolume) CopyTagsToBackups() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"copyTagsToBackups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOntapVolume) CopyTagsToBackupsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"copyTagsToBackupsInput",
 		&returns,
 	)
 	return returns
@@ -461,6 +517,46 @@ func (j *jsiiProxy_FsxOntapVolume) SkipFinalBackupInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FsxOntapVolume) SnaplockConfiguration() FsxOntapVolumeSnaplockConfigurationOutputReference {
+	var returns FsxOntapVolumeSnaplockConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"snaplockConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOntapVolume) SnaplockConfigurationInput() *FsxOntapVolumeSnaplockConfiguration {
+	var returns *FsxOntapVolumeSnaplockConfiguration
+	_jsii_.Get(
+		j,
+		"snaplockConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOntapVolume) SnapshotPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOntapVolume) SnapshotPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxOntapVolume) StorageEfficiencyEnabled() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -642,7 +738,7 @@ func (j *jsiiProxy_FsxOntapVolume) VolumeTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource.
 func NewFsxOntapVolume(scope constructs.Construct, id *string, config *FsxOntapVolumeConfig) FsxOntapVolume {
 	_init_.Initialize()
 
@@ -660,7 +756,7 @@ func NewFsxOntapVolume(scope constructs.Construct, id *string, config *FsxOntapV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource.
 func NewFsxOntapVolume_Override(f FsxOntapVolume, scope constructs.Construct, id *string, config *FsxOntapVolumeConfig) {
 	_init_.Initialize()
 
@@ -671,6 +767,17 @@ func NewFsxOntapVolume_Override(f FsxOntapVolume, scope constructs.Construct, id
 	)
 }
 
+func (j *jsiiProxy_FsxOntapVolume)SetBypassSnaplockEnterpriseRetention(val interface{}) {
+	if err := j.validateSetBypassSnaplockEnterpriseRetentionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bypassSnaplockEnterpriseRetention",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FsxOntapVolume)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -678,6 +785,17 @@ func (j *jsiiProxy_FsxOntapVolume)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxOntapVolume)SetCopyTagsToBackups(val interface{}) {
+	if err := j.validateSetCopyTagsToBackupsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"copyTagsToBackups",
 		val,
 	)
 }
@@ -812,6 +930,17 @@ func (j *jsiiProxy_FsxOntapVolume)SetSkipFinalBackup(val interface{}) {
 	_jsii_.Set(
 		j,
 		"skipFinalBackup",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxOntapVolume)SetSnapshotPolicy(val *string) {
+	if err := j.validateSetSnapshotPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"snapshotPolicy",
 		val,
 	)
 }
@@ -1137,6 +1266,17 @@ func (f *jsiiProxy_FsxOntapVolume) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (f *jsiiProxy_FsxOntapVolume) PutSnaplockConfiguration(value *FsxOntapVolumeSnaplockConfiguration) {
+	if err := f.validatePutSnaplockConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putSnaplockConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FsxOntapVolume) PutTieringPolicy(value *FsxOntapVolumeTieringPolicy) {
 	if err := f.validatePutTieringPolicyParameters(value); err != nil {
 		panic(err)
@@ -1156,6 +1296,22 @@ func (f *jsiiProxy_FsxOntapVolume) PutTimeouts(value *FsxOntapVolumeTimeouts) {
 		f,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FsxOntapVolume) ResetBypassSnaplockEnterpriseRetention() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetBypassSnaplockEnterpriseRetention",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOntapVolume) ResetCopyTagsToBackups() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetCopyTagsToBackups",
+		nil, // no parameters
 	)
 }
 
@@ -1203,6 +1359,22 @@ func (f *jsiiProxy_FsxOntapVolume) ResetSkipFinalBackup() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetSkipFinalBackup",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOntapVolume) ResetSnaplockConfiguration() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetSnaplockConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOntapVolume) ResetSnapshotPolicy() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetSnapshotPolicy",
 		nil, // no parameters
 	)
 }

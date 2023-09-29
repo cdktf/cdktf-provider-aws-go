@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/redshift_orderable_cluster aws_redshift_orderable_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/redshift_orderable_cluster aws_redshift_orderable_cluster}.
 type DataAwsRedshiftOrderableCluster interface {
 	cdktf.TerraformDataSource
 	AvailabilityZones() *[]*string
@@ -368,7 +368,7 @@ func (j *jsiiProxy_DataAwsRedshiftOrderableCluster) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/redshift_orderable_cluster aws_redshift_orderable_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/redshift_orderable_cluster aws_redshift_orderable_cluster} Data Source.
 func NewDataAwsRedshiftOrderableCluster(scope constructs.Construct, id *string, config *DataAwsRedshiftOrderableClusterConfig) DataAwsRedshiftOrderableCluster {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewDataAwsRedshiftOrderableCluster(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/data-sources/redshift_orderable_cluster aws_redshift_orderable_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/redshift_orderable_cluster aws_redshift_orderable_cluster} Data Source.
 func NewDataAwsRedshiftOrderableCluster_Override(d DataAwsRedshiftOrderableCluster, scope constructs.Construct, id *string, config *DataAwsRedshiftOrderableClusterConfig) {
 	_init_.Initialize()
 

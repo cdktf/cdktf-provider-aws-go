@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/connect_contact_flow_module aws_connect_contact_flow_module}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/connect_contact_flow_module aws_connect_contact_flow_module}.
 type ConnectContactFlowModule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -501,7 +501,7 @@ func (j *jsiiProxy_ConnectContactFlowModule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/connect_contact_flow_module aws_connect_contact_flow_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/connect_contact_flow_module aws_connect_contact_flow_module} Resource.
 func NewConnectContactFlowModule(scope constructs.Construct, id *string, config *ConnectContactFlowModuleConfig) ConnectContactFlowModule {
 	_init_.Initialize()
 
@@ -519,7 +519,7 @@ func NewConnectContactFlowModule(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/connect_contact_flow_module aws_connect_contact_flow_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/connect_contact_flow_module aws_connect_contact_flow_module} Resource.
 func NewConnectContactFlowModule_Override(c ConnectContactFlowModule, scope constructs.Construct, id *string, config *ConnectContactFlowModuleConfig) {
 	_init_.Initialize()
 

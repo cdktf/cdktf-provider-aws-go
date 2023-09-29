@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/chime_voice_connector_logging aws_chime_voice_connector_logging}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/chime_voice_connector_logging aws_chime_voice_connector_logging}.
 type ChimeVoiceConnectorLogging interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -360,7 +360,7 @@ func (j *jsiiProxy_ChimeVoiceConnectorLogging) VoiceConnectorIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/chime_voice_connector_logging aws_chime_voice_connector_logging} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/chime_voice_connector_logging aws_chime_voice_connector_logging} Resource.
 func NewChimeVoiceConnectorLogging(scope constructs.Construct, id *string, config *ChimeVoiceConnectorLoggingConfig) ChimeVoiceConnectorLogging {
 	_init_.Initialize()
 
@@ -378,7 +378,7 @@ func NewChimeVoiceConnectorLogging(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.18.1/docs/resources/chime_voice_connector_logging aws_chime_voice_connector_logging} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/chime_voice_connector_logging aws_chime_voice_connector_logging} Resource.
 func NewChimeVoiceConnectorLogging_Override(c ChimeVoiceConnectorLogging, scope constructs.Construct, id *string, config *ChimeVoiceConnectorLoggingConfig) {
 	_init_.Initialize()
 
