@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/dx_location aws_dx_location}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/dx_location aws_dx_location}.
 type DataAwsDxLocation interface {
 	cdktf.TerraformDataSource
 	AvailableMacsecPortSpeeds() *[]*string
@@ -328,7 +328,7 @@ func (j *jsiiProxy_DataAwsDxLocation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/dx_location aws_dx_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/dx_location aws_dx_location} Data Source.
 func NewDataAwsDxLocation(scope constructs.Construct, id *string, config *DataAwsDxLocationConfig) DataAwsDxLocation {
 	_init_.Initialize()
 
@@ -346,7 +346,7 @@ func NewDataAwsDxLocation(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/data-sources/dx_location aws_dx_location} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/dx_location aws_dx_location} Data Source.
 func NewDataAwsDxLocation_Override(d DataAwsDxLocation, scope constructs.Construct, id *string, config *DataAwsDxLocationConfig) {
 	_init_.Initialize()
 

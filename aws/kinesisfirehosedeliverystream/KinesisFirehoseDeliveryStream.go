@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream}.
 type KinesisFirehoseDeliveryStream interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -63,6 +63,8 @@ type KinesisFirehoseDeliveryStream interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MskSourceConfiguration() KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputReference
+	MskSourceConfigurationInput() *KinesisFirehoseDeliveryStreamMskSourceConfiguration
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -70,6 +72,8 @@ type KinesisFirehoseDeliveryStream interface {
 	Node() constructs.Node
 	OpensearchConfiguration() KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference
 	OpensearchConfigurationInput() *KinesisFirehoseDeliveryStreamOpensearchConfiguration
+	OpensearchserverlessConfiguration() KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationOutputReference
+	OpensearchserverlessConfigurationInput() *KinesisFirehoseDeliveryStreamOpensearchserverlessConfiguration
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -132,7 +136,9 @@ type KinesisFirehoseDeliveryStream interface {
 	PutExtendedS3Configuration(value *KinesisFirehoseDeliveryStreamExtendedS3Configuration)
 	PutHttpEndpointConfiguration(value *KinesisFirehoseDeliveryStreamHttpEndpointConfiguration)
 	PutKinesisSourceConfiguration(value *KinesisFirehoseDeliveryStreamKinesisSourceConfiguration)
+	PutMskSourceConfiguration(value *KinesisFirehoseDeliveryStreamMskSourceConfiguration)
 	PutOpensearchConfiguration(value *KinesisFirehoseDeliveryStreamOpensearchConfiguration)
+	PutOpensearchserverlessConfiguration(value *KinesisFirehoseDeliveryStreamOpensearchserverlessConfiguration)
 	PutRedshiftConfiguration(value *KinesisFirehoseDeliveryStreamRedshiftConfiguration)
 	PutServerSideEncryption(value *KinesisFirehoseDeliveryStreamServerSideEncryption)
 	PutSplunkConfiguration(value *KinesisFirehoseDeliveryStreamSplunkConfiguration)
@@ -144,7 +150,9 @@ type KinesisFirehoseDeliveryStream interface {
 	ResetHttpEndpointConfiguration()
 	ResetId()
 	ResetKinesisSourceConfiguration()
+	ResetMskSourceConfiguration()
 	ResetOpensearchConfiguration()
+	ResetOpensearchserverlessConfiguration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -420,6 +428,26 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) Lifecycle() *cdktf.TerraformRe
 	return returns
 }
 
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) MskSourceConfiguration() KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputReference {
+	var returns KinesisFirehoseDeliveryStreamMskSourceConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"mskSourceConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) MskSourceConfigurationInput() *KinesisFirehoseDeliveryStreamMskSourceConfiguration {
+	var returns *KinesisFirehoseDeliveryStreamMskSourceConfiguration
+	_jsii_.Get(
+		j,
+		"mskSourceConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KinesisFirehoseDeliveryStream) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -465,6 +493,26 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) OpensearchConfigurationInput()
 	_jsii_.Get(
 		j,
 		"opensearchConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) OpensearchserverlessConfiguration() KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationOutputReference {
+	var returns KinesisFirehoseDeliveryStreamOpensearchserverlessConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"opensearchserverlessConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) OpensearchserverlessConfigurationInput() *KinesisFirehoseDeliveryStreamOpensearchserverlessConfiguration {
+	var returns *KinesisFirehoseDeliveryStreamOpensearchserverlessConfiguration
+	_jsii_.Get(
+		j,
+		"opensearchserverlessConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -671,7 +719,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) VersionIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
 func NewKinesisFirehoseDeliveryStream(scope constructs.Construct, id *string, config *KinesisFirehoseDeliveryStreamConfig) KinesisFirehoseDeliveryStream {
 	_init_.Initialize()
 
@@ -689,7 +737,7 @@ func NewKinesisFirehoseDeliveryStream(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
 func NewKinesisFirehoseDeliveryStream_Override(k KinesisFirehoseDeliveryStream, scope constructs.Construct, id *string, config *KinesisFirehoseDeliveryStreamConfig) {
 	_init_.Initialize()
 
@@ -1166,6 +1214,17 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutKinesisSourceConfiguration(
 	)
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutMskSourceConfiguration(value *KinesisFirehoseDeliveryStreamMskSourceConfiguration) {
+	if err := k.validatePutMskSourceConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putMskSourceConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutOpensearchConfiguration(value *KinesisFirehoseDeliveryStreamOpensearchConfiguration) {
 	if err := k.validatePutOpensearchConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1173,6 +1232,17 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutOpensearchConfiguration(val
 	_jsii_.InvokeVoid(
 		k,
 		"putOpensearchConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutOpensearchserverlessConfiguration(value *KinesisFirehoseDeliveryStreamOpensearchserverlessConfiguration) {
+	if err := k.validatePutOpensearchserverlessConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putOpensearchserverlessConfiguration",
 		[]interface{}{value},
 	)
 }
@@ -1277,10 +1347,26 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ResetKinesisSourceConfiguratio
 	)
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ResetMskSourceConfiguration() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetMskSourceConfiguration",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ResetOpensearchConfiguration() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetOpensearchConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ResetOpensearchserverlessConfiguration() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetOpensearchserverlessConfiguration",
 		nil, // no parameters
 	)
 }

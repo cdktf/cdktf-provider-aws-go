@@ -5,15 +5,15 @@ package apigatewaydocumentationpart
 
 
 type ApiGatewayDocumentationPartLocation struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/api_gateway_documentation_part#type ApiGatewayDocumentationPart#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/api_gateway_documentation_part#type ApiGatewayDocumentationPart#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/api_gateway_documentation_part#method ApiGatewayDocumentationPart#method}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/api_gateway_documentation_part#method ApiGatewayDocumentationPart#method}.
 	Method *string `field:"optional" json:"method" yaml:"method"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/api_gateway_documentation_part#name ApiGatewayDocumentationPart#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/api_gateway_documentation_part#name ApiGatewayDocumentationPart#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/api_gateway_documentation_part#path ApiGatewayDocumentationPart#path}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/api_gateway_documentation_part#path ApiGatewayDocumentationPart#path}.
 	Path *string `field:"optional" json:"path" yaml:"path"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/api_gateway_documentation_part#status_code ApiGatewayDocumentationPart#status_code}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/api_gateway_documentation_part#status_code ApiGatewayDocumentationPart#status_code}.
 	StatusCode *string `field:"optional" json:"statusCode" yaml:"statusCode"`
 }
 

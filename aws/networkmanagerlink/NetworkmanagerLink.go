@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/networkmanager_link aws_networkmanager_link}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/networkmanager_link aws_networkmanager_link}.
 type NetworkmanagerLink interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -513,7 +513,7 @@ func (j *jsiiProxy_NetworkmanagerLink) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/networkmanager_link aws_networkmanager_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/networkmanager_link aws_networkmanager_link} Resource.
 func NewNetworkmanagerLink(scope constructs.Construct, id *string, config *NetworkmanagerLinkConfig) NetworkmanagerLink {
 	_init_.Initialize()
 
@@ -531,7 +531,7 @@ func NewNetworkmanagerLink(scope constructs.Construct, id *string, config *Netwo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/networkmanager_link aws_networkmanager_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/networkmanager_link aws_networkmanager_link} Resource.
 func NewNetworkmanagerLink_Override(n NetworkmanagerLink, scope constructs.Construct, id *string, config *NetworkmanagerLinkConfig) {
 	_init_.Initialize()
 

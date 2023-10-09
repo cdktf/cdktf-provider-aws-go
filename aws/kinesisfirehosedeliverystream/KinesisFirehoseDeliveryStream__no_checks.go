@@ -71,7 +71,15 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutKinesisSourceConfig
 	return nil
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutMskSourceConfigurationParameters(value *KinesisFirehoseDeliveryStreamMskSourceConfiguration) error {
+	return nil
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutOpensearchConfigurationParameters(value *KinesisFirehoseDeliveryStreamOpensearchConfiguration) error {
+	return nil
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutOpensearchserverlessConfigurationParameters(value *KinesisFirehoseDeliveryStreamOpensearchserverlessConfiguration) error {
 	return nil
 }
 

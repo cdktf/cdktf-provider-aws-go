@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/s3_bucket_website_configuration aws_s3_bucket_website_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/s3_bucket_website_configuration aws_s3_bucket_website_configuration}.
 type S3BucketWebsiteConfiguration interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -478,7 +478,7 @@ func (j *jsiiProxy_S3BucketWebsiteConfiguration) WebsiteEndpoint() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/s3_bucket_website_configuration aws_s3_bucket_website_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/s3_bucket_website_configuration aws_s3_bucket_website_configuration} Resource.
 func NewS3BucketWebsiteConfiguration(scope constructs.Construct, id *string, config *S3BucketWebsiteConfigurationConfig) S3BucketWebsiteConfiguration {
 	_init_.Initialize()
 
@@ -496,7 +496,7 @@ func NewS3BucketWebsiteConfiguration(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/s3_bucket_website_configuration aws_s3_bucket_website_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/s3_bucket_website_configuration aws_s3_bucket_website_configuration} Resource.
 func NewS3BucketWebsiteConfiguration_Override(s S3BucketWebsiteConfiguration, scope constructs.Construct, id *string, config *S3BucketWebsiteConfigurationConfig) {
 	_init_.Initialize()
 

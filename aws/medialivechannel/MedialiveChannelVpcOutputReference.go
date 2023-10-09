@@ -33,6 +33,7 @@ type MedialiveChannelVpcOutputReference interface {
 	Fqn() *string
 	InternalValue() *MedialiveChannelVpc
 	SetInternalValue(val *MedialiveChannelVpc)
+	NetworkInterfaceIds() *[]*string
 	PublicAddressAllocationIds() *[]*string
 	SetPublicAddressAllocationIds(val *[]*string)
 	PublicAddressAllocationIdsInput() *[]*string
@@ -145,6 +146,16 @@ func (j *jsiiProxy_MedialiveChannelVpcOutputReference) InternalValue() *Medialiv
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MedialiveChannelVpcOutputReference) NetworkInterfaceIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"networkInterfaceIds",
 		&returns,
 	)
 	return returns

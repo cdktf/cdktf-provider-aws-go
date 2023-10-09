@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/route53recoveryreadiness_resource_set aws_route53recoveryreadiness_resource_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/route53recoveryreadiness_resource_set aws_route53recoveryreadiness_resource_set}.
 type Route53RecoveryreadinessResourceSet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -441,7 +441,7 @@ func (j *jsiiProxy_Route53RecoveryreadinessResourceSet) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/route53recoveryreadiness_resource_set aws_route53recoveryreadiness_resource_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/route53recoveryreadiness_resource_set aws_route53recoveryreadiness_resource_set} Resource.
 func NewRoute53RecoveryreadinessResourceSet(scope constructs.Construct, id *string, config *Route53RecoveryreadinessResourceSetConfig) Route53RecoveryreadinessResourceSet {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewRoute53RecoveryreadinessResourceSet(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/route53recoveryreadiness_resource_set aws_route53recoveryreadiness_resource_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/route53recoveryreadiness_resource_set aws_route53recoveryreadiness_resource_set} Resource.
 func NewRoute53RecoveryreadinessResourceSet_Override(r Route53RecoveryreadinessResourceSet, scope constructs.Construct, id *string, config *Route53RecoveryreadinessResourceSetConfig) {
 	_init_.Initialize()
 

@@ -8440,6 +8440,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "networkInterfaceIds", GoGetter: "NetworkInterfaceIds"},
 			_jsii_.MemberProperty{JsiiProperty: "publicAddressAllocationIds", GoGetter: "PublicAddressAllocationIds"},
 			_jsii_.MemberProperty{JsiiProperty: "publicAddressAllocationIdsInput", GoGetter: "PublicAddressAllocationIdsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecurityGroupIds", GoMethod: "ResetSecurityGroupIds"},

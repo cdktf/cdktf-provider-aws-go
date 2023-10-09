@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/grafana_role_association aws_grafana_role_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/grafana_role_association aws_grafana_role_association}.
 type GrafanaRoleAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -407,7 +407,7 @@ func (j *jsiiProxy_GrafanaRoleAssociation) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/grafana_role_association aws_grafana_role_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/grafana_role_association aws_grafana_role_association} Resource.
 func NewGrafanaRoleAssociation(scope constructs.Construct, id *string, config *GrafanaRoleAssociationConfig) GrafanaRoleAssociation {
 	_init_.Initialize()
 
@@ -425,7 +425,7 @@ func NewGrafanaRoleAssociation(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.19.0/docs/resources/grafana_role_association aws_grafana_role_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/grafana_role_association aws_grafana_role_association} Resource.
 func NewGrafanaRoleAssociation_Override(g GrafanaRoleAssociation, scope constructs.Construct, id *string, config *GrafanaRoleAssociationConfig) {
 	_init_.Initialize()
 
