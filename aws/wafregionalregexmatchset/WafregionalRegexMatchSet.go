@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/wafregional_regex_match_set aws_wafregional_regex_match_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/wafregional_regex_match_set aws_wafregional_regex_match_set}.
 type WafregionalRegexMatchSet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -336,7 +336,7 @@ func (j *jsiiProxy_WafregionalRegexMatchSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/wafregional_regex_match_set aws_wafregional_regex_match_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/wafregional_regex_match_set aws_wafregional_regex_match_set} Resource.
 func NewWafregionalRegexMatchSet(scope constructs.Construct, id *string, config *WafregionalRegexMatchSetConfig) WafregionalRegexMatchSet {
 	_init_.Initialize()
 
@@ -354,7 +354,7 @@ func NewWafregionalRegexMatchSet(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/wafregional_regex_match_set aws_wafregional_regex_match_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/wafregional_regex_match_set aws_wafregional_regex_match_set} Resource.
 func NewWafregionalRegexMatchSet_Override(w WafregionalRegexMatchSet, scope constructs.Construct, id *string, config *WafregionalRegexMatchSetConfig) {
 	_init_.Initialize()
 

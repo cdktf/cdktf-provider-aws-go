@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/rds_global_cluster aws_rds_global_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/rds_global_cluster aws_rds_global_cluster}.
 type RdsGlobalCluster interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -548,7 +548,7 @@ func (j *jsiiProxy_RdsGlobalCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/rds_global_cluster aws_rds_global_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/rds_global_cluster aws_rds_global_cluster} Resource.
 func NewRdsGlobalCluster(scope constructs.Construct, id *string, config *RdsGlobalClusterConfig) RdsGlobalCluster {
 	_init_.Initialize()
 
@@ -566,7 +566,7 @@ func NewRdsGlobalCluster(scope constructs.Construct, id *string, config *RdsGlob
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/rds_global_cluster aws_rds_global_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/rds_global_cluster aws_rds_global_cluster} Resource.
 func NewRdsGlobalCluster_Override(r RdsGlobalCluster, scope constructs.Construct, id *string, config *RdsGlobalClusterConfig) {
 	_init_.Initialize()
 

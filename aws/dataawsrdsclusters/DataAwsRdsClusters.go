@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/rds_clusters aws_rds_clusters}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/rds_clusters aws_rds_clusters}.
 type DataAwsRdsClusters interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -307,7 +307,7 @@ func (j *jsiiProxy_DataAwsRdsClusters) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/rds_clusters aws_rds_clusters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/rds_clusters aws_rds_clusters} Data Source.
 func NewDataAwsRdsClusters(scope constructs.Construct, id *string, config *DataAwsRdsClustersConfig) DataAwsRdsClusters {
 	_init_.Initialize()
 
@@ -325,7 +325,7 @@ func NewDataAwsRdsClusters(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/data-sources/rds_clusters aws_rds_clusters} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/rds_clusters aws_rds_clusters} Data Source.
 func NewDataAwsRdsClusters_Override(d DataAwsRdsClusters, scope constructs.Construct, id *string, config *DataAwsRdsClustersConfig) {
 	_init_.Initialize()
 

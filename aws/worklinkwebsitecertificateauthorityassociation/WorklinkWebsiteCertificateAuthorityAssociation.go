@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/worklink_website_certificate_authority_association aws_worklink_website_certificate_authority_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/worklink_website_certificate_authority_association aws_worklink_website_certificate_authority_association}.
 type WorklinkWebsiteCertificateAuthorityAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) WebsiteCaId()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/worklink_website_certificate_authority_association aws_worklink_website_certificate_authority_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/worklink_website_certificate_authority_association aws_worklink_website_certificate_authority_association} Resource.
 func NewWorklinkWebsiteCertificateAuthorityAssociation(scope constructs.Construct, id *string, config *WorklinkWebsiteCertificateAuthorityAssociationConfig) WorklinkWebsiteCertificateAuthorityAssociation {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewWorklinkWebsiteCertificateAuthorityAssociation(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.0/docs/resources/worklink_website_certificate_authority_association aws_worklink_website_certificate_authority_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/worklink_website_certificate_authority_association aws_worklink_website_certificate_authority_association} Resource.
 func NewWorklinkWebsiteCertificateAuthorityAssociation_Override(w WorklinkWebsiteCertificateAuthorityAssociation, scope constructs.Construct, id *string, config *WorklinkWebsiteCertificateAuthorityAssociationConfig) {
 	_init_.Initialize()
 
