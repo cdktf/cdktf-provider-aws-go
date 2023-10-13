@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection}.
 type DataAwsVpcPeeringConnection interface {
 	cdktf.TerraformDataSource
 	Accepter() cdktf.BooleanMap
@@ -593,7 +593,7 @@ func (j *jsiiProxy_DataAwsVpcPeeringConnection) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection} Data Source.
 func NewDataAwsVpcPeeringConnection(scope constructs.Construct, id *string, config *DataAwsVpcPeeringConnectionConfig) DataAwsVpcPeeringConnection {
 	_init_.Initialize()
 
@@ -611,7 +611,7 @@ func NewDataAwsVpcPeeringConnection(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection} Data Source.
 func NewDataAwsVpcPeeringConnection_Override(d DataAwsVpcPeeringConnection, scope constructs.Construct, id *string, config *DataAwsVpcPeeringConnectionConfig) {
 	_init_.Initialize()
 

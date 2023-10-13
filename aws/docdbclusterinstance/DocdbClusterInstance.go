@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance aws_docdb_cluster_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance aws_docdb_cluster_instance}.
 type DocdbClusterInstance interface {
 	cdktf.TerraformResource
 	ApplyImmediately() interface{}
@@ -39,6 +39,9 @@ type DocdbClusterInstance interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	CopyTagsToSnapshot() interface{}
+	SetCopyTagsToSnapshot(val interface{})
+	CopyTagsToSnapshotInput() interface{}
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -152,6 +155,7 @@ type DocdbClusterInstance interface {
 	ResetAutoMinorVersionUpgrade()
 	ResetAvailabilityZone()
 	ResetCaCertIdentifier()
+	ResetCopyTagsToSnapshot()
 	ResetEnablePerformanceInsights()
 	ResetEngine()
 	ResetId()
@@ -316,6 +320,26 @@ func (j *jsiiProxy_DocdbClusterInstance) ConstructNodeMetadata() *map[string]int
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbClusterInstance) CopyTagsToSnapshot() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"copyTagsToSnapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbClusterInstance) CopyTagsToSnapshotInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"copyTagsToSnapshotInput",
 		&returns,
 	)
 	return returns
@@ -792,7 +816,7 @@ func (j *jsiiProxy_DocdbClusterInstance) Writer() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance aws_docdb_cluster_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance aws_docdb_cluster_instance} Resource.
 func NewDocdbClusterInstance(scope constructs.Construct, id *string, config *DocdbClusterInstanceConfig) DocdbClusterInstance {
 	_init_.Initialize()
 
@@ -810,7 +834,7 @@ func NewDocdbClusterInstance(scope constructs.Construct, id *string, config *Doc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster_instance aws_docdb_cluster_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster_instance aws_docdb_cluster_instance} Resource.
 func NewDocdbClusterInstance_Override(d DocdbClusterInstance, scope constructs.Construct, id *string, config *DocdbClusterInstanceConfig) {
 	_init_.Initialize()
 
@@ -883,6 +907,17 @@ func (j *jsiiProxy_DocdbClusterInstance)SetConnection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DocdbClusterInstance)SetCopyTagsToSnapshot(val interface{}) {
+	if err := j.validateSetCopyTagsToSnapshotParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"copyTagsToSnapshot",
 		val,
 	)
 }
@@ -1370,6 +1405,14 @@ func (d *jsiiProxy_DocdbClusterInstance) ResetCaCertIdentifier() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetCaCertIdentifier",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DocdbClusterInstance) ResetCopyTagsToSnapshot() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetCopyTagsToSnapshot",
 		nil, // no parameters
 	)
 }

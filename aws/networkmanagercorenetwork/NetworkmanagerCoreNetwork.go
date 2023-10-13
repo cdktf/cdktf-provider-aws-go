@@ -12,10 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/networkmanager_core_network aws_networkmanager_core_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/networkmanager_core_network aws_networkmanager_core_network}.
 type NetworkmanagerCoreNetwork interface {
 	cdktf.TerraformResource
 	Arn() *string
+	BasePolicyDocument() *string
+	SetBasePolicyDocument(val *string)
+	BasePolicyDocumentInput() *string
 	BasePolicyRegion() *string
 	SetBasePolicyRegion(val *string)
 	BasePolicyRegionInput() *string
@@ -118,6 +121,7 @@ type NetworkmanagerCoreNetwork interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *NetworkmanagerCoreNetworkTimeouts)
+	ResetBasePolicyDocument()
 	ResetBasePolicyRegion()
 	ResetBasePolicyRegions()
 	ResetCreateBasePolicy()
@@ -149,6 +153,26 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) BasePolicyDocument() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"basePolicyDocument",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerCoreNetwork) BasePolicyDocumentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"basePolicyDocumentInput",
 		&returns,
 	)
 	return returns
@@ -535,7 +559,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/networkmanager_core_network aws_networkmanager_core_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/networkmanager_core_network aws_networkmanager_core_network} Resource.
 func NewNetworkmanagerCoreNetwork(scope constructs.Construct, id *string, config *NetworkmanagerCoreNetworkConfig) NetworkmanagerCoreNetwork {
 	_init_.Initialize()
 
@@ -553,7 +577,7 @@ func NewNetworkmanagerCoreNetwork(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/networkmanager_core_network aws_networkmanager_core_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/networkmanager_core_network aws_networkmanager_core_network} Resource.
 func NewNetworkmanagerCoreNetwork_Override(n NetworkmanagerCoreNetwork, scope constructs.Construct, id *string, config *NetworkmanagerCoreNetworkConfig) {
 	_init_.Initialize()
 
@@ -561,6 +585,17 @@ func NewNetworkmanagerCoreNetwork_Override(n NetworkmanagerCoreNetwork, scope co
 		"@cdktf/provider-aws.networkmanagerCoreNetwork.NetworkmanagerCoreNetwork",
 		[]interface{}{scope, id, config},
 		n,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerCoreNetwork)SetBasePolicyDocument(val *string) {
+	if err := j.validateSetBasePolicyDocumentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"basePolicyDocument",
+		val,
 	)
 }
 
@@ -994,6 +1029,14 @@ func (n *jsiiProxy_NetworkmanagerCoreNetwork) PutTimeouts(value *NetworkmanagerC
 		n,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerCoreNetwork) ResetBasePolicyDocument() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetBasePolicyDocument",
+		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/dynamodb_table aws_dynamodb_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/dynamodb_table aws_dynamodb_table}.
 type DynamodbTable interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -56,6 +56,8 @@ type DynamodbTable interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	ImportTable() DynamodbTableImportTableOutputReference
+	ImportTableInput() *DynamodbTableImportTable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -155,6 +157,7 @@ type DynamodbTable interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAttribute(value interface{})
 	PutGlobalSecondaryIndex(value interface{})
+	PutImportTable(value *DynamodbTableImportTable)
 	PutLocalSecondaryIndex(value interface{})
 	PutPointInTimeRecovery(value *DynamodbTablePointInTimeRecovery)
 	PutReplica(value interface{})
@@ -167,6 +170,7 @@ type DynamodbTable interface {
 	ResetGlobalSecondaryIndex()
 	ResetHashKey()
 	ResetId()
+	ResetImportTable()
 	ResetLocalSecondaryIndex()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -407,6 +411,26 @@ func (j *jsiiProxy_DynamodbTable) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTable) ImportTable() DynamodbTableImportTableOutputReference {
+	var returns DynamodbTableImportTableOutputReference
+	_jsii_.Get(
+		j,
+		"importTable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTable) ImportTableInput() *DynamodbTableImportTable {
+	var returns *DynamodbTableImportTable
+	_jsii_.Get(
+		j,
+		"importTableInput",
 		&returns,
 	)
 	return returns
@@ -873,7 +897,7 @@ func (j *jsiiProxy_DynamodbTable) WriteCapacityInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
 func NewDynamodbTable(scope constructs.Construct, id *string, config *DynamodbTableConfig) DynamodbTable {
 	_init_.Initialize()
 
@@ -891,7 +915,7 @@ func NewDynamodbTable(scope constructs.Construct, id *string, config *DynamodbTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
 func NewDynamodbTable_Override(d DynamodbTable, scope constructs.Construct, id *string, config *DynamodbTableConfig) {
 	_init_.Initialize()
 
@@ -1434,6 +1458,17 @@ func (d *jsiiProxy_DynamodbTable) PutGlobalSecondaryIndex(value interface{}) {
 	)
 }
 
+func (d *jsiiProxy_DynamodbTable) PutImportTable(value *DynamodbTableImportTable) {
+	if err := d.validatePutImportTableParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putImportTable",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DynamodbTable) PutLocalSecondaryIndex(value interface{}) {
 	if err := d.validatePutLocalSecondaryIndexParameters(value); err != nil {
 		panic(err)
@@ -1544,6 +1579,14 @@ func (d *jsiiProxy_DynamodbTable) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DynamodbTable) ResetImportTable() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetImportTable",
 		nil, // no parameters
 	)
 }

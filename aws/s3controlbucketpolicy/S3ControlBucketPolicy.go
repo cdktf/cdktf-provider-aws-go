@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/s3control_bucket_policy aws_s3control_bucket_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/s3control_bucket_policy aws_s3control_bucket_policy}.
 type S3ControlBucketPolicy interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -335,7 +335,7 @@ func (j *jsiiProxy_S3ControlBucketPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/s3control_bucket_policy aws_s3control_bucket_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/s3control_bucket_policy aws_s3control_bucket_policy} Resource.
 func NewS3ControlBucketPolicy(scope constructs.Construct, id *string, config *S3ControlBucketPolicyConfig) S3ControlBucketPolicy {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewS3ControlBucketPolicy(scope constructs.Construct, id *string, config *S3
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/s3control_bucket_policy aws_s3control_bucket_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/s3control_bucket_policy aws_s3control_bucket_policy} Resource.
 func NewS3ControlBucketPolicy_Override(s S3ControlBucketPolicy, scope constructs.Construct, id *string, config *S3ControlBucketPolicyConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/msk_cluster aws_msk_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/msk_cluster aws_msk_cluster}.
 type DataAwsMskCluster interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -28,6 +28,7 @@ type DataAwsMskCluster interface {
 	ClusterName() *string
 	SetClusterName(val *string)
 	ClusterNameInput() *string
+	ClusterUuid() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -224,6 +225,16 @@ func (j *jsiiProxy_DataAwsMskCluster) ClusterNameInput() *string {
 	_jsii_.Get(
 		j,
 		"clusterNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsMskCluster) ClusterUuid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterUuid",
 		&returns,
 	)
 	return returns
@@ -440,7 +451,7 @@ func (j *jsiiProxy_DataAwsMskCluster) ZookeeperConnectStringTls() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/msk_cluster aws_msk_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/msk_cluster aws_msk_cluster} Data Source.
 func NewDataAwsMskCluster(scope constructs.Construct, id *string, config *DataAwsMskClusterConfig) DataAwsMskCluster {
 	_init_.Initialize()
 
@@ -458,7 +469,7 @@ func NewDataAwsMskCluster(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/msk_cluster aws_msk_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/msk_cluster aws_msk_cluster} Data Source.
 func NewDataAwsMskCluster_Override(d DataAwsMskCluster, scope constructs.Construct, id *string, config *DataAwsMskClusterConfig) {
 	_init_.Initialize()
 

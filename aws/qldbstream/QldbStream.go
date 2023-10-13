@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/qldb_stream aws_qldb_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/qldb_stream aws_qldb_stream}.
 type QldbStream interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -511,7 +511,7 @@ func (j *jsiiProxy_QldbStream) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/qldb_stream aws_qldb_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/qldb_stream aws_qldb_stream} Resource.
 func NewQldbStream(scope constructs.Construct, id *string, config *QldbStreamConfig) QldbStream {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewQldbStream(scope constructs.Construct, id *string, config *QldbStreamCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/qldb_stream aws_qldb_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/qldb_stream aws_qldb_stream} Resource.
 func NewQldbStream_Override(q QldbStream, scope constructs.Construct, id *string, config *QldbStreamConfig) {
 	_init_.Initialize()
 

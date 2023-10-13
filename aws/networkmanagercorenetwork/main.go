@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
+			_jsii_.MemberProperty{JsiiProperty: "basePolicyDocument", GoGetter: "BasePolicyDocument"},
+			_jsii_.MemberProperty{JsiiProperty: "basePolicyDocumentInput", GoGetter: "BasePolicyDocumentInput"},
 			_jsii_.MemberProperty{JsiiProperty: "basePolicyRegion", GoGetter: "BasePolicyRegion"},
 			_jsii_.MemberProperty{JsiiProperty: "basePolicyRegionInput", GoGetter: "BasePolicyRegionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "basePolicyRegions", GoGetter: "BasePolicyRegions"},
@@ -55,6 +57,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBasePolicyDocument", GoMethod: "ResetBasePolicyDocument"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBasePolicyRegion", GoMethod: "ResetBasePolicyRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBasePolicyRegions", GoMethod: "ResetBasePolicyRegions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCreateBasePolicy", GoMethod: "ResetCreateBasePolicy"},

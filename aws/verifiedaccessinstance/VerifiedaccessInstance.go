@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/verifiedaccess_instance aws_verifiedaccess_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/verifiedaccess_instance aws_verifiedaccess_instance}.
 type VerifiedaccessInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -35,6 +35,9 @@ type VerifiedaccessInstance interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	FipsEnabled() interface{}
+	SetFipsEnabled(val interface{})
+	FipsEnabledInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -102,6 +105,7 @@ type VerifiedaccessInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetDescription()
+	ResetFipsEnabled()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -198,6 +202,26 @@ func (j *jsiiProxy_VerifiedaccessInstance) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedaccessInstance) FipsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fipsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedaccessInstance) FipsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fipsEnabledInput",
 		&returns,
 	)
 	return returns
@@ -394,7 +418,7 @@ func (j *jsiiProxy_VerifiedaccessInstance) VerifiedAccessTrustProviders() Verifi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/verifiedaccess_instance aws_verifiedaccess_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/verifiedaccess_instance aws_verifiedaccess_instance} Resource.
 func NewVerifiedaccessInstance(scope constructs.Construct, id *string, config *VerifiedaccessInstanceConfig) VerifiedaccessInstance {
 	_init_.Initialize()
 
@@ -412,7 +436,7 @@ func NewVerifiedaccessInstance(scope constructs.Construct, id *string, config *V
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/verifiedaccess_instance aws_verifiedaccess_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/verifiedaccess_instance aws_verifiedaccess_instance} Resource.
 func NewVerifiedaccessInstance_Override(v VerifiedaccessInstance, scope constructs.Construct, id *string, config *VerifiedaccessInstanceConfig) {
 	_init_.Initialize()
 
@@ -460,6 +484,17 @@ func (j *jsiiProxy_VerifiedaccessInstance)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VerifiedaccessInstance)SetFipsEnabled(val interface{}) {
+	if err := j.validateSetFipsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fipsEnabled",
 		val,
 	)
 }
@@ -805,6 +840,14 @@ func (v *jsiiProxy_VerifiedaccessInstance) ResetDescription() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VerifiedaccessInstance) ResetFipsEnabled() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetFipsEnabled",
 		nil, // no parameters
 	)
 }

@@ -63,6 +63,10 @@ func (d *jsiiProxy_DynamodbTable) validatePutGlobalSecondaryIndexParameters(valu
 	return nil
 }
 
+func (d *jsiiProxy_DynamodbTable) validatePutImportTableParameters(value *DynamodbTableImportTable) error {
+	return nil
+}
+
 func (d *jsiiProxy_DynamodbTable) validatePutLocalSecondaryIndexParameters(value interface{}) error {
 	return nil
 }

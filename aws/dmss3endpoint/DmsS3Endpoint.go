@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/dms_s3_endpoint aws_dms_s3_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/dms_s3_endpoint aws_dms_s3_endpoint}.
 type DmsS3Endpoint interface {
 	cdktf.TerraformResource
 	AddColumnName() interface{}
@@ -135,6 +135,9 @@ type DmsS3Endpoint interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GlueCatalogGeneration() interface{}
+	SetGlueCatalogGeneration(val interface{})
+	GlueCatalogGenerationInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -268,6 +271,7 @@ type DmsS3Endpoint interface {
 	ResetEncryptionMode()
 	ResetExpectedBucketOwner()
 	ResetExternalTableDefinition()
+	ResetGlueCatalogGeneration()
 	ResetId()
 	ResetIgnoreHeaderRows()
 	ResetIncludeOpForFullLoad()
@@ -1034,6 +1038,26 @@ func (j *jsiiProxy_DmsS3Endpoint) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DmsS3Endpoint) GlueCatalogGeneration() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"glueCatalogGeneration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsS3Endpoint) GlueCatalogGenerationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"glueCatalogGenerationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DmsS3Endpoint) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1505,7 +1529,7 @@ func (j *jsiiProxy_DmsS3Endpoint) UseTaskStartTimeForFullLoadTimestampInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/dms_s3_endpoint aws_dms_s3_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/dms_s3_endpoint aws_dms_s3_endpoint} Resource.
 func NewDmsS3Endpoint(scope constructs.Construct, id *string, config *DmsS3EndpointConfig) DmsS3Endpoint {
 	_init_.Initialize()
 
@@ -1523,7 +1547,7 @@ func NewDmsS3Endpoint(scope constructs.Construct, id *string, config *DmsS3Endpo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/dms_s3_endpoint aws_dms_s3_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/dms_s3_endpoint aws_dms_s3_endpoint} Resource.
 func NewDmsS3Endpoint_Override(d DmsS3Endpoint, scope constructs.Construct, id *string, config *DmsS3EndpointConfig) {
 	_init_.Initialize()
 
@@ -1909,6 +1933,17 @@ func (j *jsiiProxy_DmsS3Endpoint)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsS3Endpoint)SetGlueCatalogGeneration(val interface{}) {
+	if err := j.validateSetGlueCatalogGenerationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"glueCatalogGeneration",
 		val,
 	)
 }
@@ -2638,6 +2673,14 @@ func (d *jsiiProxy_DmsS3Endpoint) ResetExternalTableDefinition() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetExternalTableDefinition",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) ResetGlueCatalogGeneration() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGlueCatalogGeneration",
 		nil, // no parameters
 	)
 }

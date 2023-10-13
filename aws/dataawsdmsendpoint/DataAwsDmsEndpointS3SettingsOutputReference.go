@@ -54,6 +54,7 @@ type DataAwsDmsEndpointS3SettingsOutputReference interface {
 	ExternalTableDefinition() *string
 	// Experimental.
 	Fqn() *string
+	GlueCatalogGeneration() cdktf.IResolvable
 	IgnoreHeaderRows() *float64
 	IgnoreHeadersRow() *float64
 	IncludeOpForFullLoad() cdktf.IResolvable
@@ -392,6 +393,16 @@ func (j *jsiiProxy_DataAwsDmsEndpointS3SettingsOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsDmsEndpointS3SettingsOutputReference) GlueCatalogGeneration() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"glueCatalogGeneration",
 		&returns,
 	)
 	return returns

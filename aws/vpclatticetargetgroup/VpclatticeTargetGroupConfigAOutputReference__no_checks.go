@@ -71,6 +71,10 @@ func (j *jsiiProxy_VpclatticeTargetGroupConfigAOutputReference) validateSetIpAdd
 	return nil
 }
 
+func (j *jsiiProxy_VpclatticeTargetGroupConfigAOutputReference) validateSetLambdaEventStructureVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpclatticeTargetGroupConfigAOutputReference) validateSetPortParameters(val *float64) error {
 	return nil
 }

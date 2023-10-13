@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster aws_docdb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster aws_docdb_cluster}.
 type DocdbCluster interface {
 	cdktf.TerraformResource
+	AllowMajorVersionUpgrade() interface{}
+	SetAllowMajorVersionUpgrade(val interface{})
+	AllowMajorVersionUpgradeInput() interface{}
 	ApplyImmediately() interface{}
 	SetApplyImmediately(val interface{})
 	ApplyImmediatelyInput() interface{}
@@ -175,6 +178,7 @@ type DocdbCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *DocdbClusterTimeouts)
+	ResetAllowMajorVersionUpgrade()
 	ResetApplyImmediately()
 	ResetAvailabilityZones()
 	ResetBackupRetentionPeriod()
@@ -219,6 +223,26 @@ type DocdbCluster interface {
 // The jsii proxy struct for DocdbCluster
 type jsiiProxy_DocdbCluster struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_DocdbCluster) AllowMajorVersionUpgrade() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowMajorVersionUpgrade",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbCluster) AllowMajorVersionUpgradeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowMajorVersionUpgradeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DocdbCluster) ApplyImmediately() interface{} {
@@ -992,7 +1016,7 @@ func (j *jsiiProxy_DocdbCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
 func NewDocdbCluster(scope constructs.Construct, id *string, config *DocdbClusterConfig) DocdbCluster {
 	_init_.Initialize()
 
@@ -1010,7 +1034,7 @@ func NewDocdbCluster(scope constructs.Construct, id *string, config *DocdbCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
 func NewDocdbCluster_Override(d DocdbCluster, scope constructs.Construct, id *string, config *DocdbClusterConfig) {
 	_init_.Initialize()
 
@@ -1018,6 +1042,17 @@ func NewDocdbCluster_Override(d DocdbCluster, scope constructs.Construct, id *st
 		"@cdktf/provider-aws.docdbCluster.DocdbCluster",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DocdbCluster)SetAllowMajorVersionUpgrade(val interface{}) {
+	if err := j.validateSetAllowMajorVersionUpgradeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowMajorVersionUpgrade",
+		val,
 	)
 }
 
@@ -1660,6 +1695,14 @@ func (d *jsiiProxy_DocdbCluster) PutTimeouts(value *DocdbClusterTimeouts) {
 		d,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DocdbCluster) ResetAllowMajorVersionUpgrade() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAllowMajorVersionUpgrade",
+		nil, // no parameters
 	)
 }
 

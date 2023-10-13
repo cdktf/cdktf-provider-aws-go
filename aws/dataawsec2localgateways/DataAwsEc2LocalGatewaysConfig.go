@@ -24,18 +24,18 @@ type DataAwsEc2LocalGatewaysConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// filter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/ec2_local_gateways#filter DataAwsEc2LocalGateways#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/ec2_local_gateways#filter DataAwsEc2LocalGateways#filter}
 	Filter interface{} `field:"optional" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/ec2_local_gateways#id DataAwsEc2LocalGateways#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/ec2_local_gateways#id DataAwsEc2LocalGateways#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/ec2_local_gateways#tags DataAwsEc2LocalGateways#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/ec2_local_gateways#tags DataAwsEc2LocalGateways#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/ec2_local_gateways#timeouts DataAwsEc2LocalGateways#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/ec2_local_gateways#timeouts DataAwsEc2LocalGateways#timeouts}
 	Timeouts *DataAwsEc2LocalGatewaysTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/autoscaling_attachment aws_autoscaling_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/autoscaling_attachment aws_autoscaling_attachment}.
 type AutoscalingAttachment interface {
 	cdktf.TerraformResource
 	AutoscalingGroupName() *string
@@ -360,7 +360,7 @@ func (j *jsiiProxy_AutoscalingAttachment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/autoscaling_attachment aws_autoscaling_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/autoscaling_attachment aws_autoscaling_attachment} Resource.
 func NewAutoscalingAttachment(scope constructs.Construct, id *string, config *AutoscalingAttachmentConfig) AutoscalingAttachment {
 	_init_.Initialize()
 
@@ -378,7 +378,7 @@ func NewAutoscalingAttachment(scope constructs.Construct, id *string, config *Au
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/autoscaling_attachment aws_autoscaling_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/autoscaling_attachment aws_autoscaling_attachment} Resource.
 func NewAutoscalingAttachment_Override(a AutoscalingAttachment, scope constructs.Construct, id *string, config *AutoscalingAttachmentConfig) {
 	_init_.Initialize()
 

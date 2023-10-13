@@ -37,6 +37,9 @@ type VpclatticeTargetGroupConfigAOutputReference interface {
 	IpAddressType() *string
 	SetIpAddressType(val *string)
 	IpAddressTypeInput() *string
+	LambdaEventStructureVersion() *string
+	SetLambdaEventStructureVersion(val *string)
+	LambdaEventStructureVersionInput() *string
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
@@ -84,7 +87,11 @@ type VpclatticeTargetGroupConfigAOutputReference interface {
 	PutHealthCheck(value *VpclatticeTargetGroupConfigHealthCheck)
 	ResetHealthCheck()
 	ResetIpAddressType()
+	ResetLambdaEventStructureVersion()
+	ResetPort()
+	ResetProtocol()
 	ResetProtocolVersion()
+	ResetVpcIdentifier()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -185,6 +192,26 @@ func (j *jsiiProxy_VpclatticeTargetGroupConfigAOutputReference) IpAddressTypeInp
 	_jsii_.Get(
 		j,
 		"ipAddressTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpclatticeTargetGroupConfigAOutputReference) LambdaEventStructureVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lambdaEventStructureVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpclatticeTargetGroupConfigAOutputReference) LambdaEventStructureVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lambdaEventStructureVersionInput",
 		&returns,
 	)
 	return returns
@@ -358,6 +385,17 @@ func (j *jsiiProxy_VpclatticeTargetGroupConfigAOutputReference)SetIpAddressType(
 	_jsii_.Set(
 		j,
 		"ipAddressType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpclatticeTargetGroupConfigAOutputReference)SetLambdaEventStructureVersion(val *string) {
+	if err := j.validateSetLambdaEventStructureVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lambdaEventStructureVersion",
 		val,
 	)
 }
@@ -641,10 +679,42 @@ func (v *jsiiProxy_VpclatticeTargetGroupConfigAOutputReference) ResetIpAddressTy
 	)
 }
 
+func (v *jsiiProxy_VpclatticeTargetGroupConfigAOutputReference) ResetLambdaEventStructureVersion() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetLambdaEventStructureVersion",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpclatticeTargetGroupConfigAOutputReference) ResetPort() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpclatticeTargetGroupConfigAOutputReference) ResetProtocol() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetProtocol",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VpclatticeTargetGroupConfigAOutputReference) ResetProtocolVersion() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetProtocolVersion",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpclatticeTargetGroupConfigAOutputReference) ResetVpcIdentifier() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetVpcIdentifier",
 		nil, // no parameters
 	)
 }

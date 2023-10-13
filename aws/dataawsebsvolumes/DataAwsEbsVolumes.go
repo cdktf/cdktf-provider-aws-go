@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/ebs_volumes aws_ebs_volumes}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/ebs_volumes aws_ebs_volumes}.
 type DataAwsEbsVolumes interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -344,7 +344,7 @@ func (j *jsiiProxy_DataAwsEbsVolumes) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/ebs_volumes aws_ebs_volumes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/ebs_volumes aws_ebs_volumes} Data Source.
 func NewDataAwsEbsVolumes(scope constructs.Construct, id *string, config *DataAwsEbsVolumesConfig) DataAwsEbsVolumes {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewDataAwsEbsVolumes(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/ebs_volumes aws_ebs_volumes} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/ebs_volumes aws_ebs_volumes} Data Source.
 func NewDataAwsEbsVolumes_Override(d DataAwsEbsVolumes, scope constructs.Construct, id *string, config *DataAwsEbsVolumesConfig) {
 	_init_.Initialize()
 

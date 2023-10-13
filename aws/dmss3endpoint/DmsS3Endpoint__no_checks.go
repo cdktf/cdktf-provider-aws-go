@@ -203,6 +203,10 @@ func (j *jsiiProxy_DmsS3Endpoint) validateSetExternalTableDefinitionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DmsS3Endpoint) validateSetGlueCatalogGenerationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsS3Endpoint) validateSetIdParameters(val *string) error {
 	return nil
 }

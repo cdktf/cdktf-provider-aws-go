@@ -71,6 +71,10 @@ func validateDocdbCluster_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_DocdbCluster) validateSetAllowMajorVersionUpgradeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DocdbCluster) validateSetApplyImmediatelyParameters(val interface{}) error {
 	return nil
 }

@@ -139,6 +139,10 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetLifecycleParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetOutdatedInstancesStrategyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodedeployDeploymentGroup) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

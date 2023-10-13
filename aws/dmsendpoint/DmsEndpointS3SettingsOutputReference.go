@@ -102,6 +102,9 @@ type DmsEndpointS3SettingsOutputReference interface {
 	ExternalTableDefinitionInput() *string
 	// Experimental.
 	Fqn() *string
+	GlueCatalogGeneration() interface{}
+	SetGlueCatalogGeneration(val interface{})
+	GlueCatalogGenerationInput() interface{}
 	IgnoreHeaderRows() *float64
 	SetIgnoreHeaderRows(val *float64)
 	IgnoreHeaderRowsInput() *float64
@@ -199,6 +202,7 @@ type DmsEndpointS3SettingsOutputReference interface {
 	ResetEncodingType()
 	ResetEncryptionMode()
 	ResetExternalTableDefinition()
+	ResetGlueCatalogGeneration()
 	ResetIgnoreHeaderRows()
 	ResetIncludeOpForFullLoad()
 	ResetMaxFileSize()
@@ -742,6 +746,26 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) GlueCatalogGeneration() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"glueCatalogGeneration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) GlueCatalogGenerationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"glueCatalogGenerationInput",
 		&returns,
 	)
 	return returns
@@ -1351,6 +1375,17 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetExternalTableDefiniti
 	)
 }
 
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetGlueCatalogGeneration(val interface{}) {
+	if err := j.validateSetGlueCatalogGenerationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"glueCatalogGeneration",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference)SetIgnoreHeaderRows(val *float64) {
 	if err := j.validateSetIgnoreHeaderRowsParameters(val); err != nil {
 		panic(err)
@@ -1901,6 +1936,14 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) ResetExternalTableDefin
 	_jsii_.InvokeVoid(
 		d,
 		"resetExternalTableDefinition",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) ResetGlueCatalogGeneration() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetGlueCatalogGeneration",
 		nil, // no parameters
 	)
 }

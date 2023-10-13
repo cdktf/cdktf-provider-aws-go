@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/elb_hosted_zone_id aws_elb_hosted_zone_id}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/elb_hosted_zone_id aws_elb_hosted_zone_id}.
 type DataAwsElbHostedZoneId interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -285,7 +285,7 @@ func (j *jsiiProxy_DataAwsElbHostedZoneId) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/elb_hosted_zone_id aws_elb_hosted_zone_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/elb_hosted_zone_id aws_elb_hosted_zone_id} Data Source.
 func NewDataAwsElbHostedZoneId(scope constructs.Construct, id *string, config *DataAwsElbHostedZoneIdConfig) DataAwsElbHostedZoneId {
 	_init_.Initialize()
 
@@ -303,7 +303,7 @@ func NewDataAwsElbHostedZoneId(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/data-sources/elb_hosted_zone_id aws_elb_hosted_zone_id} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/elb_hosted_zone_id aws_elb_hosted_zone_id} Data Source.
 func NewDataAwsElbHostedZoneId_Override(d DataAwsElbHostedZoneId, scope constructs.Construct, id *string, config *DataAwsElbHostedZoneIdConfig) {
 	_init_.Initialize()
 

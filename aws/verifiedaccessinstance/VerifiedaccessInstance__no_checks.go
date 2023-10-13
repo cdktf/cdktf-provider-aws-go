@@ -79,6 +79,10 @@ func (j *jsiiProxy_VerifiedaccessInstance) validateSetDescriptionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_VerifiedaccessInstance) validateSetFipsEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VerifiedaccessInstance) validateSetIdParameters(val *string) error {
 	return nil
 }

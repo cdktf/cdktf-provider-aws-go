@@ -537,6 +537,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "glueCatalogGeneration", GoGetter: "GlueCatalogGeneration"},
 			_jsii_.MemberProperty{JsiiProperty: "ignoreHeaderRows", GoGetter: "IgnoreHeaderRows"},
 			_jsii_.MemberProperty{JsiiProperty: "ignoreHeadersRow", GoGetter: "IgnoreHeadersRow"},
 			_jsii_.MemberProperty{JsiiProperty: "includeOpForFullLoad", GoGetter: "IncludeOpForFullLoad"},

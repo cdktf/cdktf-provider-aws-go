@@ -5,9 +5,9 @@ package ecstaskdefinition
 
 
 type EcsTaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ecs_task_definition#access_point_id EcsTaskDefinition#access_point_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/ecs_task_definition#access_point_id EcsTaskDefinition#access_point_id}.
 	AccessPointId *string `field:"optional" json:"accessPointId" yaml:"accessPointId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/ecs_task_definition#iam EcsTaskDefinition#iam}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/ecs_task_definition#iam EcsTaskDefinition#iam}.
 	Iam *string `field:"optional" json:"iam" yaml:"iam"`
 }
 

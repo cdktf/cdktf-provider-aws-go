@@ -7,7 +7,7 @@ package wafv2rulegroup
 type Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementNotStatement struct {
 	// statement block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/wafv2_rule_group#statement Wafv2RuleGroup#statement}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/wafv2_rule_group#statement Wafv2RuleGroup#statement}
 	Statement interface{} `field:"required" json:"statement" yaml:"statement"`
 }
 

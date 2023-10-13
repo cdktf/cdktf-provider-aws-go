@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/codedeploy_deployment_group aws_codedeploy_deployment_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/codedeploy_deployment_group aws_codedeploy_deployment_group}.
 type CodedeployDeploymentGroup interface {
 	cdktf.TerraformResource
 	AlarmConfiguration() CodedeployDeploymentGroupAlarmConfigurationOutputReference
@@ -81,6 +81,9 @@ type CodedeployDeploymentGroup interface {
 	Node() constructs.Node
 	OnPremisesInstanceTagFilter() CodedeployDeploymentGroupOnPremisesInstanceTagFilterList
 	OnPremisesInstanceTagFilterInput() interface{}
+	OutdatedInstancesStrategy() *string
+	SetOutdatedInstancesStrategy(val *string)
+	OutdatedInstancesStrategyInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -155,6 +158,7 @@ type CodedeployDeploymentGroup interface {
 	ResetId()
 	ResetLoadBalancerInfo()
 	ResetOnPremisesInstanceTagFilter()
+	ResetOutdatedInstancesStrategy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -586,6 +590,26 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) OnPremisesInstanceTagFilterInput()
 	return returns
 }
 
+func (j *jsiiProxy_CodedeployDeploymentGroup) OutdatedInstancesStrategy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outdatedInstancesStrategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodedeployDeploymentGroup) OutdatedInstancesStrategyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"outdatedInstancesStrategyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CodedeployDeploymentGroup) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -727,7 +751,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroup) TriggerConfigurationInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/codedeploy_deployment_group aws_codedeploy_deployment_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/codedeploy_deployment_group aws_codedeploy_deployment_group} Resource.
 func NewCodedeployDeploymentGroup(scope constructs.Construct, id *string, config *CodedeployDeploymentGroupConfig) CodedeployDeploymentGroup {
 	_init_.Initialize()
 
@@ -745,7 +769,7 @@ func NewCodedeployDeploymentGroup(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/codedeploy_deployment_group aws_codedeploy_deployment_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/codedeploy_deployment_group aws_codedeploy_deployment_group} Resource.
 func NewCodedeployDeploymentGroup_Override(c CodedeployDeploymentGroup, scope constructs.Construct, id *string, config *CodedeployDeploymentGroupConfig) {
 	_init_.Initialize()
 
@@ -856,6 +880,17 @@ func (j *jsiiProxy_CodedeployDeploymentGroup)SetLifecycle(val *cdktf.TerraformRe
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CodedeployDeploymentGroup)SetOutdatedInstancesStrategy(val *string) {
+	if err := j.validateSetOutdatedInstancesStrategyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"outdatedInstancesStrategy",
 		val,
 	)
 }
@@ -1380,6 +1415,14 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) ResetOnPremisesInstanceTagFilter()
 	_jsii_.InvokeVoid(
 		c,
 		"resetOnPremisesInstanceTagFilter",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CodedeployDeploymentGroup) ResetOutdatedInstancesStrategy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOutdatedInstancesStrategy",
 		nil, // no parameters
 	)
 }

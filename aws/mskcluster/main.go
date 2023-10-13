@@ -33,6 +33,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "clientAuthenticationInput", GoGetter: "ClientAuthenticationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterName", GoGetter: "ClusterName"},
 			_jsii_.MemberProperty{JsiiProperty: "clusterNameInput", GoGetter: "ClusterNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "clusterUuid", GoGetter: "ClusterUuid"},
 			_jsii_.MemberProperty{JsiiProperty: "configurationInfo", GoGetter: "ConfigurationInfo"},
 			_jsii_.MemberProperty{JsiiProperty: "configurationInfoInput", GoGetter: "ConfigurationInfoInput"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},

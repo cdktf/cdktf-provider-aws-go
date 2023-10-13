@@ -15,6 +15,8 @@ func init() {
 		reflect.TypeOf((*DocdbCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "allowMajorVersionUpgrade", GoGetter: "AllowMajorVersionUpgrade"},
+			_jsii_.MemberProperty{JsiiProperty: "allowMajorVersionUpgradeInput", GoGetter: "AllowMajorVersionUpgradeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "applyImmediately", GoGetter: "ApplyImmediately"},
 			_jsii_.MemberProperty{JsiiProperty: "applyImmediatelyInput", GoGetter: "ApplyImmediatelyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -87,6 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "readerEndpoint", GoGetter: "ReaderEndpoint"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllowMajorVersionUpgrade", GoMethod: "ResetAllowMajorVersionUpgrade"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApplyImmediately", GoMethod: "ResetApplyImmediately"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAvailabilityZones", GoMethod: "ResetAvailabilityZones"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackupRetentionPeriod", GoMethod: "ResetBackupRetentionPeriod"},

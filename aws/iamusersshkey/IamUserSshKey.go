@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/iam_user_ssh_key aws_iam_user_ssh_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/iam_user_ssh_key aws_iam_user_ssh_key}.
 type IamUserSshKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_IamUserSshKey) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/iam_user_ssh_key aws_iam_user_ssh_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/iam_user_ssh_key aws_iam_user_ssh_key} Resource.
 func NewIamUserSshKey(scope constructs.Construct, id *string, config *IamUserSshKeyConfig) IamUserSshKey {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewIamUserSshKey(scope constructs.Construct, id *string, config *IamUserSsh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.20.1/docs/resources/iam_user_ssh_key aws_iam_user_ssh_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/iam_user_ssh_key aws_iam_user_ssh_key} Resource.
 func NewIamUserSshKey_Override(i IamUserSshKey, scope constructs.Construct, id *string, config *IamUserSshKeyConfig) {
 	_init_.Initialize()
 
