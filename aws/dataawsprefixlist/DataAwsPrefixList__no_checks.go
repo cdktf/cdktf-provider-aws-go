@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAwsPrefixList) validatePutTimeoutsParameters(value *DataA
 	return nil
 }
 
+func validateDataAwsPrefixList_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsPrefixList_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package ami
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_Ami) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_Ami) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_Ami) validateGetStringMapAttributeParameters(terraformAttribu
 	return nil
 }
 
+func (a *jsiiProxy_Ami) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_Ami) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_Ami) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (a *jsiiProxy_Ami) validatePutEphemeralBlockDeviceParameters(value interfac
 }
 
 func (a *jsiiProxy_Ami) validatePutTimeoutsParameters(value *AmiTimeouts) error {
+	return nil
+}
+
+func validateAmi_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

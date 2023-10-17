@@ -7,6 +7,10 @@ package dxhostedprivatevirtualinterface
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DxHostedPrivateVirtualInterface) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxHostedPrivateVirtualInterface) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DxHostedPrivateVirtualInterface) validateGetStringMapAttribut
 	return nil
 }
 
+func (d *jsiiProxy_DxHostedPrivateVirtualInterface) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxHostedPrivateVirtualInterface) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxHostedPrivateVirtualInterface) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DxHostedPrivateVirtualInterface) validateOverrideLogicalIdPar
 }
 
 func (d *jsiiProxy_DxHostedPrivateVirtualInterface) validatePutTimeoutsParameters(value *DxHostedPrivateVirtualInterfaceTimeouts) error {
+	return nil
+}
+
+func validateDxHostedPrivateVirtualInterface_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

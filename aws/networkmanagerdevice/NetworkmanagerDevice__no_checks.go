@@ -7,6 +7,10 @@ package networkmanagerdevice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkmanagerDevice) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerDevice) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkmanagerDevice) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (n *jsiiProxy_NetworkmanagerDevice) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerDevice) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerDevice) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (n *jsiiProxy_NetworkmanagerDevice) validatePutLocationParameters(value *Ne
 }
 
 func (n *jsiiProxy_NetworkmanagerDevice) validatePutTimeoutsParameters(value *NetworkmanagerDeviceTimeouts) error {
+	return nil
+}
+
+func validateNetworkmanagerDevice_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

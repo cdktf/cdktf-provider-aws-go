@@ -7,6 +7,10 @@ package cecostallocationtag
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CeCostAllocationTag) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CeCostAllocationTag) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_CeCostAllocationTag) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (c *jsiiProxy_CeCostAllocationTag) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CeCostAllocationTag) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_CeCostAllocationTag) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CeCostAllocationTag) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCeCostAllocationTag_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

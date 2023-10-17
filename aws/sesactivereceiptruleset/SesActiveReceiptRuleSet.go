@@ -5,10 +5,10 @@ package sesactivereceiptruleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/sesactivereceiptruleset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/sesactivereceiptruleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -68,6 +68,9 @@ type SesActiveReceiptRuleSet interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -89,7 +92,12 @@ type SesActiveReceiptRuleSet interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -442,6 +450,25 @@ func (j *jsiiProxy_SesActiveReceiptRuleSet)SetRuleSetName(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a SesActiveReceiptRuleSet resource upon running "cdktf plan <stack-name>".
+func SesActiveReceiptRuleSet_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateSesActiveReceiptRuleSet_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.sesActiveReceiptRuleSet.SesActiveReceiptRuleSet",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -524,6 +551,17 @@ func SesActiveReceiptRuleSet_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (s *jsiiProxy_SesActiveReceiptRuleSet) AddMoveTarget(moveTarget *string) {
+	if err := s.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (s *jsiiProxy_SesActiveReceiptRuleSet) AddOverride(path *string, value interface{}) {
@@ -681,6 +719,17 @@ func (s *jsiiProxy_SesActiveReceiptRuleSet) GetStringMapAttribute(terraformAttri
 	return returns
 }
 
+func (s *jsiiProxy_SesActiveReceiptRuleSet) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := s.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (s *jsiiProxy_SesActiveReceiptRuleSet) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -695,6 +744,17 @@ func (s *jsiiProxy_SesActiveReceiptRuleSet) InterpolationForAttribute(terraformA
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SesActiveReceiptRuleSet) MoveTo(moveTarget *string, index interface{}) {
+	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (s *jsiiProxy_SesActiveReceiptRuleSet) OverrideLogicalId(newLogicalId *string) {

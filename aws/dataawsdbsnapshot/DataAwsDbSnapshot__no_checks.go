@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsDbSnapshot) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func validateDataAwsDbSnapshot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsDbSnapshot_IsConstructParameters(x interface{}) error {
 	return nil
 }

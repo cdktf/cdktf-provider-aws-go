@@ -7,6 +7,10 @@ package lakeformationpermissions
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LakeformationPermissions) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LakeformationPermissions) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LakeformationPermissions) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (l *jsiiProxy_LakeformationPermissions) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LakeformationPermissions) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LakeformationPermissions) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (l *jsiiProxy_LakeformationPermissions) validatePutTableParameters(value *L
 }
 
 func (l *jsiiProxy_LakeformationPermissions) validatePutTableWithColumnsParameters(value *LakeformationPermissionsTableWithColumns) error {
+	return nil
+}
+
+func validateLakeformationPermissions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

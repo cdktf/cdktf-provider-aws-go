@@ -7,6 +7,10 @@ package lakeformationresource
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LakeformationResource) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LakeformationResource) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (l *jsiiProxy_LakeformationResource) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (l *jsiiProxy_LakeformationResource) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LakeformationResource) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LakeformationResource) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LakeformationResource) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLakeformationResource_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

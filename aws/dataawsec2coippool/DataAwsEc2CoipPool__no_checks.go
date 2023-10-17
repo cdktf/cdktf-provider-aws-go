@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAwsEc2CoipPool) validatePutTimeoutsParameters(value *Data
 	return nil
 }
 
+func validateDataAwsEc2CoipPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEc2CoipPool_IsConstructParameters(x interface{}) error {
 	return nil
 }

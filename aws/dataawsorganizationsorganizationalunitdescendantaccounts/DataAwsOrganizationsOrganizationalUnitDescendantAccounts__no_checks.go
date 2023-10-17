@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganizationalUnitDescendantAccounts) val
 	return nil
 }
 
+func validateDataAwsOrganizationsOrganizationalUnitDescendantAccounts_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsOrganizationsOrganizationalUnitDescendantAccounts_IsConstructParameters(x interface{}) error {
 	return nil
 }

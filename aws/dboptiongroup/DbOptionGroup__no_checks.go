@@ -7,6 +7,10 @@ package dboptiongroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DbOptionGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbOptionGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DbOptionGroup) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (d *jsiiProxy_DbOptionGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbOptionGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbOptionGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DbOptionGroup) validatePutOptionParameters(value interface{})
 }
 
 func (d *jsiiProxy_DbOptionGroup) validatePutTimeoutsParameters(value *DbOptionGroupTimeouts) error {
+	return nil
+}
+
+func validateDbOptionGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

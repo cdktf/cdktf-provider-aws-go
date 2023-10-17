@@ -7,6 +7,10 @@ package lightsailkeypair
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LightsailKeyPair) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailKeyPair) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (l *jsiiProxy_LightsailKeyPair) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (l *jsiiProxy_LightsailKeyPair) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailKeyPair) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LightsailKeyPair) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailKeyPair) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLightsailKeyPair_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

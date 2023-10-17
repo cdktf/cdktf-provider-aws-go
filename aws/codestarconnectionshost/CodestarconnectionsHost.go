@@ -5,10 +5,10 @@ package codestarconnectionshost
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/codestarconnectionshost/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/codestarconnectionshost/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -79,6 +79,9 @@ type CodestarconnectionsHost interface {
 	TimeoutsInput() interface{}
 	VpcConfiguration() CodestarconnectionsHostVpcConfigurationOutputReference
 	VpcConfigurationInput() *CodestarconnectionsHostVpcConfiguration
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -100,7 +103,12 @@ type CodestarconnectionsHost interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -569,6 +577,25 @@ func (j *jsiiProxy_CodestarconnectionsHost)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a CodestarconnectionsHost resource upon running "cdktf plan <stack-name>".
+func CodestarconnectionsHost_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateCodestarconnectionsHost_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.codestarconnectionsHost.CodestarconnectionsHost",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -651,6 +678,17 @@ func CodestarconnectionsHost_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (c *jsiiProxy_CodestarconnectionsHost) AddMoveTarget(moveTarget *string) {
+	if err := c.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (c *jsiiProxy_CodestarconnectionsHost) AddOverride(path *string, value interface{}) {
@@ -808,6 +846,17 @@ func (c *jsiiProxy_CodestarconnectionsHost) GetStringMapAttribute(terraformAttri
 	return returns
 }
 
+func (c *jsiiProxy_CodestarconnectionsHost) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := c.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (c *jsiiProxy_CodestarconnectionsHost) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -822,6 +871,17 @@ func (c *jsiiProxy_CodestarconnectionsHost) InterpolationForAttribute(terraformA
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CodestarconnectionsHost) MoveTo(moveTarget *string, index interface{}) {
+	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (c *jsiiProxy_CodestarconnectionsHost) OverrideLogicalId(newLogicalId *string) {

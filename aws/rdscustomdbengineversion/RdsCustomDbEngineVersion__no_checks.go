@@ -7,6 +7,10 @@ package rdscustomdbengineversion
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RdsCustomDbEngineVersion) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsCustomDbEngineVersion) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RdsCustomDbEngineVersion) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (r *jsiiProxy_RdsCustomDbEngineVersion) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsCustomDbEngineVersion) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RdsCustomDbEngineVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (r *jsiiProxy_RdsCustomDbEngineVersion) validateOverrideLogicalIdParameters
 }
 
 func (r *jsiiProxy_RdsCustomDbEngineVersion) validatePutTimeoutsParameters(value *RdsCustomDbEngineVersionTimeouts) error {
+	return nil
+}
+
+func validateRdsCustomDbEngineVersion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

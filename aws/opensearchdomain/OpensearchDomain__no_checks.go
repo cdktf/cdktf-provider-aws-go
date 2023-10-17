@@ -7,6 +7,10 @@ package opensearchdomain
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OpensearchDomain) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchDomain) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OpensearchDomain) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (o *jsiiProxy_OpensearchDomain) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchDomain) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpensearchDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -108,6 +120,10 @@ func (o *jsiiProxy_OpensearchDomain) validatePutTimeoutsParameters(value *Opense
 }
 
 func (o *jsiiProxy_OpensearchDomain) validatePutVpcOptionsParameters(value *OpensearchDomainVpcOptions) error {
+	return nil
+}
+
+func validateOpensearchDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

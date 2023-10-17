@@ -7,6 +7,10 @@ package ssoadmincustomermanagedpolicyattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateGetStringMap
 	return nil
 }
 
+func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validatePutCustomerM
 }
 
 func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validatePutTimeoutsParameters(value *SsoadminCustomerManagedPolicyAttachmentTimeouts) error {
+	return nil
+}
+
+func validateSsoadminCustomerManagedPolicyAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

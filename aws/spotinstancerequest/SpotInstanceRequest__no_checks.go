@@ -7,6 +7,10 @@ package spotinstancerequest
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpotInstanceRequest) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpotInstanceRequest) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SpotInstanceRequest) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (s *jsiiProxy_SpotInstanceRequest) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpotInstanceRequest) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpotInstanceRequest) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -104,6 +116,10 @@ func (s *jsiiProxy_SpotInstanceRequest) validatePutRootBlockDeviceParameters(val
 }
 
 func (s *jsiiProxy_SpotInstanceRequest) validatePutTimeoutsParameters(value *SpotInstanceRequestTimeouts) error {
+	return nil
+}
+
+func validateSpotInstanceRequest_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

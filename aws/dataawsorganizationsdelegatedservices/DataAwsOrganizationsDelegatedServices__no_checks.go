@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsOrganizationsDelegatedServices) validateOverrideLogica
 	return nil
 }
 
+func validateDataAwsOrganizationsDelegatedServices_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsOrganizationsDelegatedServices_IsConstructParameters(x interface{}) error {
 	return nil
 }

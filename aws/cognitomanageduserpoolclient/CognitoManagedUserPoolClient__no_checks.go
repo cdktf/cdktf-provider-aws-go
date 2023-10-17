@@ -7,6 +7,10 @@ package cognitomanageduserpoolclient
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CognitoManagedUserPoolClient) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoManagedUserPoolClient) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CognitoManagedUserPoolClient) validateGetStringMapAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_CognitoManagedUserPoolClient) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoManagedUserPoolClient) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoManagedUserPoolClient) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_CognitoManagedUserPoolClient) validatePutAnalyticsConfigurati
 }
 
 func (c *jsiiProxy_CognitoManagedUserPoolClient) validatePutTokenValidityUnitsParameters(value interface{}) error {
+	return nil
+}
+
+func validateCognitoManagedUserPoolClient_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

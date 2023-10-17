@@ -7,6 +7,10 @@ package route53zoneassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_Route53ZoneAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53ZoneAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (r *jsiiProxy_Route53ZoneAssociation) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (r *jsiiProxy_Route53ZoneAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53ZoneAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_Route53ZoneAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53ZoneAssociation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRoute53ZoneAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

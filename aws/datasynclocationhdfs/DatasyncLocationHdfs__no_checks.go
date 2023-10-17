@@ -7,6 +7,10 @@ package datasynclocationhdfs
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatasyncLocationHdfs) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncLocationHdfs) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DatasyncLocationHdfs) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (d *jsiiProxy_DatasyncLocationHdfs) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncLocationHdfs) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatasyncLocationHdfs) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DatasyncLocationHdfs) validatePutNameNodeParameters(value int
 }
 
 func (d *jsiiProxy_DatasyncLocationHdfs) validatePutQopConfigurationParameters(value *DatasyncLocationHdfsQopConfiguration) error {
+	return nil
+}
+
+func validateDatasyncLocationHdfs_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

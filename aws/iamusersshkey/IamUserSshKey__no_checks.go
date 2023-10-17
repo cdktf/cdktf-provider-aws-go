@@ -7,6 +7,10 @@ package iamusersshkey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IamUserSshKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamUserSshKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IamUserSshKey) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (i *jsiiProxy_IamUserSshKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamUserSshKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IamUserSshKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamUserSshKey) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIamUserSshKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

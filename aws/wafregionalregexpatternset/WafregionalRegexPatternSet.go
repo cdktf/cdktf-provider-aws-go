@@ -5,10 +5,10 @@ package wafregionalregexpatternset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/wafregionalregexpatternset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafregionalregexpatternset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -70,6 +70,9 @@ type WafregionalRegexPatternSet interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -91,7 +94,12 @@ type WafregionalRegexPatternSet interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -466,6 +474,25 @@ func (j *jsiiProxy_WafregionalRegexPatternSet)SetRegexPatternStrings(val *[]*str
 	)
 }
 
+// Generates CDKTF code for importing a WafregionalRegexPatternSet resource upon running "cdktf plan <stack-name>".
+func WafregionalRegexPatternSet_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateWafregionalRegexPatternSet_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.wafregionalRegexPatternSet.WafregionalRegexPatternSet",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -548,6 +575,17 @@ func WafregionalRegexPatternSet_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (w *jsiiProxy_WafregionalRegexPatternSet) AddMoveTarget(moveTarget *string) {
+	if err := w.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (w *jsiiProxy_WafregionalRegexPatternSet) AddOverride(path *string, value interface{}) {
@@ -705,6 +743,17 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) GetStringMapAttribute(terraformAt
 	return returns
 }
 
+func (w *jsiiProxy_WafregionalRegexPatternSet) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := w.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (w *jsiiProxy_WafregionalRegexPatternSet) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -719,6 +768,17 @@ func (w *jsiiProxy_WafregionalRegexPatternSet) InterpolationForAttribute(terrafo
 	)
 
 	return returns
+}
+
+func (w *jsiiProxy_WafregionalRegexPatternSet) MoveTo(moveTarget *string, index interface{}) {
+	if err := w.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (w *jsiiProxy_WafregionalRegexPatternSet) OverrideLogicalId(newLogicalId *string) {

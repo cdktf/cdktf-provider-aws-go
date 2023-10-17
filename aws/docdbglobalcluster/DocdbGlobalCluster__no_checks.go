@@ -7,6 +7,10 @@ package docdbglobalcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DocdbGlobalCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DocdbGlobalCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DocdbGlobalCluster) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (d *jsiiProxy_DocdbGlobalCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DocdbGlobalCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DocdbGlobalCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DocdbGlobalCluster) validateOverrideLogicalIdParameters(newLo
 }
 
 func (d *jsiiProxy_DocdbGlobalCluster) validatePutTimeoutsParameters(value *DocdbGlobalClusterTimeouts) error {
+	return nil
+}
+
+func validateDocdbGlobalCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

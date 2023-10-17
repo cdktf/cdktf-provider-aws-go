@@ -7,6 +7,10 @@ package sesv2dedicatedippool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_Sesv2DedicatedIpPool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Sesv2DedicatedIpPool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_Sesv2DedicatedIpPool) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_Sesv2DedicatedIpPool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Sesv2DedicatedIpPool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_Sesv2DedicatedIpPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_Sesv2DedicatedIpPool) validateOverrideLogicalIdParameters(new
 }
 
 func (s *jsiiProxy_Sesv2DedicatedIpPool) validatePutTimeoutsParameters(value *Sesv2DedicatedIpPoolTimeouts) error {
+	return nil
+}
+
+func validateSesv2DedicatedIpPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

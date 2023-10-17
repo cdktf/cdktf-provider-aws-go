@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsS3AccountPublicAccessBlock) validateOverrideLogicalIdP
 	return nil
 }
 
+func validateDataAwsS3AccountPublicAccessBlock_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsS3AccountPublicAccessBlock_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package efsfilesystempolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EfsFileSystemPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EfsFileSystemPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (e *jsiiProxy_EfsFileSystemPolicy) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (e *jsiiProxy_EfsFileSystemPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EfsFileSystemPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_EfsFileSystemPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EfsFileSystemPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEfsFileSystemPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package cloudtraileventdatastore
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudtrailEventDataStore) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudtrailEventDataStore) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CloudtrailEventDataStore) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (c *jsiiProxy_CloudtrailEventDataStore) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudtrailEventDataStore) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudtrailEventDataStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_CloudtrailEventDataStore) validatePutAdvancedEventSelectorPar
 }
 
 func (c *jsiiProxy_CloudtrailEventDataStore) validatePutTimeoutsParameters(value *CloudtrailEventDataStoreTimeouts) error {
+	return nil
+}
+
+func validateCloudtrailEventDataStore_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

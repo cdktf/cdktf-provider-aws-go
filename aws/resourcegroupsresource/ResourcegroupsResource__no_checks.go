@@ -7,6 +7,10 @@ package resourcegroupsresource
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_ResourcegroupsResource) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourcegroupsResource) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_ResourcegroupsResource) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (r *jsiiProxy_ResourcegroupsResource) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourcegroupsResource) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_ResourcegroupsResource) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (r *jsiiProxy_ResourcegroupsResource) validateOverrideLogicalIdParameters(n
 }
 
 func (r *jsiiProxy_ResourcegroupsResource) validatePutTimeoutsParameters(value *ResourcegroupsResourceTimeouts) error {
+	return nil
+}
+
+func validateResourcegroupsResource_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package prometheusalertmanagerdefinition
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PrometheusAlertManagerDefinition) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrometheusAlertManagerDefinition) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (p *jsiiProxy_PrometheusAlertManagerDefinition) validateGetStringMapAttribu
 	return nil
 }
 
+func (p *jsiiProxy_PrometheusAlertManagerDefinition) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrometheusAlertManagerDefinition) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (p *jsiiProxy_PrometheusAlertManagerDefinition) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrometheusAlertManagerDefinition) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validatePrometheusAlertManagerDefinition_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

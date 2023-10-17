@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkSolutionStack) validateOverrideLogical
 	return nil
 }
 
+func validateDataAwsElasticBeanstalkSolutionStack_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsElasticBeanstalkSolutionStack_IsConstructParameters(x interface{}) error {
 	return nil
 }

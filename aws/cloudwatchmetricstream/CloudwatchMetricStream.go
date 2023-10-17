@@ -5,10 +5,10 @@ package cloudwatchmetricstream
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/cloudwatchmetricstream/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloudwatchmetricstream/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -100,6 +100,9 @@ type CloudwatchMetricStream interface {
 	TerraformResourceType() *string
 	Timeouts() CloudwatchMetricStreamTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -121,7 +124,12 @@ type CloudwatchMetricStream interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -814,6 +822,25 @@ func (j *jsiiProxy_CloudwatchMetricStream)SetTagsAll(val *map[string]*string) {
 	)
 }
 
+// Generates CDKTF code for importing a CloudwatchMetricStream resource upon running "cdktf plan <stack-name>".
+func CloudwatchMetricStream_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateCloudwatchMetricStream_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.cloudwatchMetricStream.CloudwatchMetricStream",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -896,6 +923,17 @@ func CloudwatchMetricStream_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (c *jsiiProxy_CloudwatchMetricStream) AddMoveTarget(moveTarget *string) {
+	if err := c.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (c *jsiiProxy_CloudwatchMetricStream) AddOverride(path *string, value interface{}) {
@@ -1053,6 +1091,17 @@ func (c *jsiiProxy_CloudwatchMetricStream) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
+func (c *jsiiProxy_CloudwatchMetricStream) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := c.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (c *jsiiProxy_CloudwatchMetricStream) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1067,6 +1116,17 @@ func (c *jsiiProxy_CloudwatchMetricStream) InterpolationForAttribute(terraformAt
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CloudwatchMetricStream) MoveTo(moveTarget *string, index interface{}) {
+	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (c *jsiiProxy_CloudwatchMetricStream) OverrideLogicalId(newLogicalId *string) {

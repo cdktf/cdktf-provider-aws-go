@@ -7,6 +7,10 @@ package lightsailcontainerservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LightsailContainerService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailContainerService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LightsailContainerService) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (l *jsiiProxy_LightsailContainerService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailContainerService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LightsailContainerService) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (l *jsiiProxy_LightsailContainerService) validatePutPublicDomainNamesParame
 }
 
 func (l *jsiiProxy_LightsailContainerService) validatePutTimeoutsParameters(value *LightsailContainerServiceTimeouts) error {
+	return nil
+}
+
+func validateLightsailContainerService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

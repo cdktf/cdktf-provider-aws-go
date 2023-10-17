@@ -7,6 +7,10 @@ package rdsexporttask
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RdsExportTask) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsExportTask) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RdsExportTask) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (r *jsiiProxy_RdsExportTask) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsExportTask) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RdsExportTask) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (r *jsiiProxy_RdsExportTask) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (r *jsiiProxy_RdsExportTask) validatePutTimeoutsParameters(value *RdsExportTaskTimeouts) error {
+	return nil
+}
+
+func validateRdsExportTask_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

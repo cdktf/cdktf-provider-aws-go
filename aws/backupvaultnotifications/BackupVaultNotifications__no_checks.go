@@ -7,6 +7,10 @@ package backupvaultnotifications
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BackupVaultNotifications) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupVaultNotifications) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (b *jsiiProxy_BackupVaultNotifications) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (b *jsiiProxy_BackupVaultNotifications) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupVaultNotifications) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (b *jsiiProxy_BackupVaultNotifications) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupVaultNotifications) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateBackupVaultNotifications_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

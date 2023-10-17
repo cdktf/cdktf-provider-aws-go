@@ -7,6 +7,10 @@ package wafv2rulegroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_Wafv2RuleGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2RuleGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_Wafv2RuleGroup) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2RuleGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2RuleGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2RuleGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (w *jsiiProxy_Wafv2RuleGroup) validatePutRuleParameters(value interface{}) 
 }
 
 func (w *jsiiProxy_Wafv2RuleGroup) validatePutVisibilityConfigParameters(value *Wafv2RuleGroupVisibilityConfig) error {
+	return nil
+}
+
+func validateWafv2RuleGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

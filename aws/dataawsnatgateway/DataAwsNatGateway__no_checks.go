@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAwsNatGateway) validatePutTimeoutsParameters(value *DataA
 	return nil
 }
 
+func validateDataAwsNatGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsNatGateway_IsConstructParameters(x interface{}) error {
 	return nil
 }

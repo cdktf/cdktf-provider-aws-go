@@ -114,7 +114,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "platform", GoGetter: "Platform"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "routerTypeIdentifier", GoGetter: "RouterTypeIdentifier"},
-			_jsii_.MemberProperty{JsiiProperty: "software", GoGetter: "Software"},
+			_jsii_.MemberProperty{JsiiProperty: "softwareAttribute", GoGetter: "SoftwareAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsVpclatticeListener) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func validateDataAwsVpclatticeListener_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsVpclatticeListener_IsConstructParameters(x interface{}) error {
 	return nil
 }

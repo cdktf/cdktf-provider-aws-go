@@ -7,6 +7,10 @@ package fmsadminaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FmsAdminAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FmsAdminAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_FmsAdminAccount) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (f *jsiiProxy_FmsAdminAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FmsAdminAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FmsAdminAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (f *jsiiProxy_FmsAdminAccount) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (f *jsiiProxy_FmsAdminAccount) validatePutTimeoutsParameters(value *FmsAdminAccountTimeouts) error {
+	return nil
+}
+
+func validateFmsAdminAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

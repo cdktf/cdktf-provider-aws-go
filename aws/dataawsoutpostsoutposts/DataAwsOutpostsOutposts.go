@@ -5,10 +5,10 @@ package dataawsoutpostsoutposts
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsoutpostsoutposts/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsoutpostsoutposts/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -507,6 +507,25 @@ func (j *jsiiProxy_DataAwsOutpostsOutposts)SetSiteId(val *string) {
 		"siteId",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataAwsOutpostsOutposts resource upon running "cdktf plan <stack-name>".
+func DataAwsOutpostsOutposts_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsOutpostsOutposts_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsOutpostsOutposts.DataAwsOutpostsOutposts",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

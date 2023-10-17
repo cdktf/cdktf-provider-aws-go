@@ -7,6 +7,10 @@ package codecatalystsourcerepository
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CodecatalystSourceRepository) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodecatalystSourceRepository) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CodecatalystSourceRepository) validateGetStringMapAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_CodecatalystSourceRepository) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodecatalystSourceRepository) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodecatalystSourceRepository) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CodecatalystSourceRepository) validateOverrideLogicalIdParame
 }
 
 func (c *jsiiProxy_CodecatalystSourceRepository) validatePutTimeoutsParameters(value *CodecatalystSourceRepositoryTimeouts) error {
+	return nil
+}
+
+func validateCodecatalystSourceRepository_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

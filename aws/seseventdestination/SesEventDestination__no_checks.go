@@ -7,6 +7,10 @@ package seseventdestination
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SesEventDestination) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SesEventDestination) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SesEventDestination) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (s *jsiiProxy_SesEventDestination) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SesEventDestination) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SesEventDestination) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (s *jsiiProxy_SesEventDestination) validatePutKinesisDestinationParameters(
 }
 
 func (s *jsiiProxy_SesEventDestination) validatePutSnsDestinationParameters(value *SesEventDestinationSnsDestination) error {
+	return nil
+}
+
+func validateSesEventDestination_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

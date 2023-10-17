@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsOrganizationsDelegatedAdministrators) validateOverride
 	return nil
 }
 
+func validateDataAwsOrganizationsDelegatedAdministrators_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsOrganizationsDelegatedAdministrators_IsConstructParameters(x interface{}) error {
 	return nil
 }

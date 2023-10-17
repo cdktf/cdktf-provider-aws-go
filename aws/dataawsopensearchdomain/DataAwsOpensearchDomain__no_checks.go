@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsOpensearchDomain) validatePutOffPeakWindowOptionsParam
 	return nil
 }
 
+func validateDataAwsOpensearchDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsOpensearchDomain_IsConstructParameters(x interface{}) error {
 	return nil
 }

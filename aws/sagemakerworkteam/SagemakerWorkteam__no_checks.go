@@ -7,6 +7,10 @@ package sagemakerworkteam
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SagemakerWorkteam) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerWorkteam) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SagemakerWorkteam) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerWorkteam) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerWorkteam) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerWorkteam) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SagemakerWorkteam) validatePutMemberDefinitionParameters(valu
 }
 
 func (s *jsiiProxy_SagemakerWorkteam) validatePutNotificationConfigurationParameters(value *SagemakerWorkteamNotificationConfiguration) error {
+	return nil
+}
+
+func validateSagemakerWorkteam_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

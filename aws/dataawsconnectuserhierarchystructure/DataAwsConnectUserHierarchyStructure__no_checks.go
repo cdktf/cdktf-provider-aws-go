@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsConnectUserHierarchyStructure) validateOverrideLogical
 	return nil
 }
 
+func validateDataAwsConnectUserHierarchyStructure_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsConnectUserHierarchyStructure_IsConstructParameters(x interface{}) error {
 	return nil
 }

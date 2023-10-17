@@ -7,6 +7,10 @@ package ec2transitgatewayconnect
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Ec2TransitGatewayConnect) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2TransitGatewayConnect) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_Ec2TransitGatewayConnect) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (e *jsiiProxy_Ec2TransitGatewayConnect) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2TransitGatewayConnect) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2TransitGatewayConnect) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_Ec2TransitGatewayConnect) validateOverrideLogicalIdParameters
 }
 
 func (e *jsiiProxy_Ec2TransitGatewayConnect) validatePutTimeoutsParameters(value *Ec2TransitGatewayConnectTimeouts) error {
+	return nil
+}
+
+func validateEc2TransitGatewayConnect_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

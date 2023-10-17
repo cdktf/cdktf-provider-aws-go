@@ -7,6 +7,10 @@ package transferserver
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TransferServer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransferServer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (t *jsiiProxy_TransferServer) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (t *jsiiProxy_TransferServer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransferServer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TransferServer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (t *jsiiProxy_TransferServer) validatePutProtocolDetailsParameters(value *T
 }
 
 func (t *jsiiProxy_TransferServer) validatePutWorkflowDetailsParameters(value *TransferServerWorkflowDetails) error {
+	return nil
+}
+
+func validateTransferServer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

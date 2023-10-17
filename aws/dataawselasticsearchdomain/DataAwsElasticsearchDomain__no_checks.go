@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsElasticsearchDomain) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func validateDataAwsElasticsearchDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsElasticsearchDomain_IsConstructParameters(x interface{}) error {
 	return nil
 }

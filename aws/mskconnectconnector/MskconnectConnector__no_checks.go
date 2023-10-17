@@ -7,6 +7,10 @@ package mskconnectconnector
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MskconnectConnector) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MskconnectConnector) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MskconnectConnector) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (m *jsiiProxy_MskconnectConnector) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MskconnectConnector) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MskconnectConnector) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -84,6 +96,10 @@ func (m *jsiiProxy_MskconnectConnector) validatePutTimeoutsParameters(value *Msk
 }
 
 func (m *jsiiProxy_MskconnectConnector) validatePutWorkerConfigurationParameters(value *MskconnectConnectorWorkerConfiguration) error {
+	return nil
+}
+
+func validateMskconnectConnector_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

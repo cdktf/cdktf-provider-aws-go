@@ -7,6 +7,10 @@ package servicecatalogproduct
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServicecatalogProduct) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicecatalogProduct) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_ServicecatalogProduct) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (s *jsiiProxy_ServicecatalogProduct) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicecatalogProduct) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicecatalogProduct) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_ServicecatalogProduct) validatePutProvisioningArtifactParamet
 }
 
 func (s *jsiiProxy_ServicecatalogProduct) validatePutTimeoutsParameters(value *ServicecatalogProductTimeouts) error {
+	return nil
+}
+
+func validateServicecatalogProduct_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

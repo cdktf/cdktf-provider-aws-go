@@ -7,6 +7,10 @@ package mskcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MskCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MskCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MskCluster) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (m *jsiiProxy_MskCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MskCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MskCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -80,6 +92,10 @@ func (m *jsiiProxy_MskCluster) validatePutOpenMonitoringParameters(value *MskClu
 }
 
 func (m *jsiiProxy_MskCluster) validatePutTimeoutsParameters(value *MskClusterTimeouts) error {
+	return nil
+}
+
+func validateMskCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

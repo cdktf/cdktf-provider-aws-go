@@ -7,6 +7,10 @@ package cloudwatcheventendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudwatchEventEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchEventEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CloudwatchEventEndpoint) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_CloudwatchEventEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchEventEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchEventEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_CloudwatchEventEndpoint) validatePutReplicationConfigParamete
 }
 
 func (c *jsiiProxy_CloudwatchEventEndpoint) validatePutRoutingConfigParameters(value *CloudwatchEventEndpointRoutingConfig) error {
+	return nil
+}
+
+func validateCloudwatchEventEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

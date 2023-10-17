@@ -7,6 +7,10 @@ package detectiveinvitationaccepter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DetectiveInvitationAccepter) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DetectiveInvitationAccepter) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (d *jsiiProxy_DetectiveInvitationAccepter) validateGetStringMapAttributePar
 	return nil
 }
 
+func (d *jsiiProxy_DetectiveInvitationAccepter) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DetectiveInvitationAccepter) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (d *jsiiProxy_DetectiveInvitationAccepter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DetectiveInvitationAccepter) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDetectiveInvitationAccepter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

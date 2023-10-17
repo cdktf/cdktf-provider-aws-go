@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.rdsClusterInstance.RdsClusterInstance",
 		reflect.TypeOf((*RdsClusterInstance)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "applyImmediately", GoGetter: "ApplyImmediately"},
 			_jsii_.MemberProperty{JsiiProperty: "applyImmediatelyInput", GoGetter: "ApplyImmediatelyInput"},
@@ -64,6 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "identifierPrefix", GoGetter: "IdentifierPrefix"},
 			_jsii_.MemberProperty{JsiiProperty: "identifierPrefixInput", GoGetter: "IdentifierPrefixInput"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceClass", GoGetter: "InstanceClass"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceClassInput", GoGetter: "InstanceClassInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -73,6 +75,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "monitoringIntervalInput", GoGetter: "MonitoringIntervalInput"},
 			_jsii_.MemberProperty{JsiiProperty: "monitoringRoleArn", GoGetter: "MonitoringRoleArn"},
 			_jsii_.MemberProperty{JsiiProperty: "monitoringRoleArnInput", GoGetter: "MonitoringRoleArnInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "networkType", GoGetter: "NetworkType"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},

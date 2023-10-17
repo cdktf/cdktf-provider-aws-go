@@ -7,6 +7,10 @@ package wafregionalipset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WafregionalIpset) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalIpset) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WafregionalIpset) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (w *jsiiProxy_WafregionalIpset) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalIpset) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalIpset) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (w *jsiiProxy_WafregionalIpset) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (w *jsiiProxy_WafregionalIpset) validatePutIpSetDescriptorParameters(value interface{}) error {
+	return nil
+}
+
+func validateWafregionalIpset_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

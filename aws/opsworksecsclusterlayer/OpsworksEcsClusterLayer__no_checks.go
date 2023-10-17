@@ -7,6 +7,10 @@ package opsworksecsclusterlayer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OpsworksEcsClusterLayer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksEcsClusterLayer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OpsworksEcsClusterLayer) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksEcsClusterLayer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksEcsClusterLayer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksEcsClusterLayer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (o *jsiiProxy_OpsworksEcsClusterLayer) validatePutEbsVolumeParameters(value
 }
 
 func (o *jsiiProxy_OpsworksEcsClusterLayer) validatePutLoadBasedAutoScalingParameters(value *OpsworksEcsClusterLayerLoadBasedAutoScaling) error {
+	return nil
+}
+
+func validateOpsworksEcsClusterLayer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

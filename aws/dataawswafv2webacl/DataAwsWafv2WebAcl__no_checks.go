@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsWafv2WebAcl) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func validateDataAwsWafv2WebAcl_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsWafv2WebAcl_IsConstructParameters(x interface{}) error {
 	return nil
 }

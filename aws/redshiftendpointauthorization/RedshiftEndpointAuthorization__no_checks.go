@@ -7,6 +7,10 @@ package redshiftendpointauthorization
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RedshiftEndpointAuthorization) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftEndpointAuthorization) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (r *jsiiProxy_RedshiftEndpointAuthorization) validateGetStringMapAttributeP
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftEndpointAuthorization) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftEndpointAuthorization) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftEndpointAuthorization) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftEndpointAuthorization) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRedshiftEndpointAuthorization_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

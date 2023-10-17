@@ -7,6 +7,10 @@ package autoscalinggroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AutoscalingGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AutoscalingGroup) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (a *jsiiProxy_AutoscalingGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutoscalingGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -84,6 +96,10 @@ func (a *jsiiProxy_AutoscalingGroup) validatePutTrafficSourceParameters(value in
 }
 
 func (a *jsiiProxy_AutoscalingGroup) validatePutWarmPoolParameters(value *AutoscalingGroupWarmPool) error {
+	return nil
+}
+
+func validateAutoscalingGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

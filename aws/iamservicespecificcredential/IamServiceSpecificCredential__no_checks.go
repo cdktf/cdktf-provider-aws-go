@@ -7,6 +7,10 @@ package iamservicespecificcredential
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IamServiceSpecificCredential) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamServiceSpecificCredential) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IamServiceSpecificCredential) validateGetStringMapAttributePa
 	return nil
 }
 
+func (i *jsiiProxy_IamServiceSpecificCredential) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamServiceSpecificCredential) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IamServiceSpecificCredential) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamServiceSpecificCredential) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIamServiceSpecificCredential_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

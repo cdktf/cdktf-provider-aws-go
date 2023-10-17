@@ -7,6 +7,10 @@ package apigatewaydeployment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApiGatewayDeployment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiGatewayDeployment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_ApiGatewayDeployment) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (a *jsiiProxy_ApiGatewayDeployment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiGatewayDeployment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_ApiGatewayDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiGatewayDeployment) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateApiGatewayDeployment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsLicensemanagerReceivedLicense) validateOverrideLogical
 	return nil
 }
 
+func validateDataAwsLicensemanagerReceivedLicense_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsLicensemanagerReceivedLicense_IsConstructParameters(x interface{}) error {
 	return nil
 }

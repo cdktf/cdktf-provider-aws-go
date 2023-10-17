@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsEksNodeGroups) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func validateDataAwsEksNodeGroups_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEksNodeGroups_IsConstructParameters(x interface{}) error {
 	return nil
 }

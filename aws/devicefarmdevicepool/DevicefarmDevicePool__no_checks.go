@@ -7,6 +7,10 @@ package devicefarmdevicepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DevicefarmDevicePool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevicefarmDevicePool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DevicefarmDevicePool) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (d *jsiiProxy_DevicefarmDevicePool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevicefarmDevicePool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DevicefarmDevicePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DevicefarmDevicePool) validateOverrideLogicalIdParameters(new
 }
 
 func (d *jsiiProxy_DevicefarmDevicePool) validatePutRuleParameters(value interface{}) error {
+	return nil
+}
+
+func validateDevicefarmDevicePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package ivschannel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IvsChannel) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IvsChannel) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IvsChannel) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (i *jsiiProxy_IvsChannel) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IvsChannel) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IvsChannel) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IvsChannel) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func (i *jsiiProxy_IvsChannel) validatePutTimeoutsParameters(value *IvsChannelTimeouts) error {
+	return nil
+}
+
+func validateIvsChannel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

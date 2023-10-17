@@ -5,10 +5,10 @@ package elasticbeanstalkconfigurationtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/elasticbeanstalkconfigurationtemplate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticbeanstalkconfigurationtemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -81,6 +81,9 @@ type ElasticBeanstalkConfigurationTemplate interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -102,7 +105,12 @@ type ElasticBeanstalkConfigurationTemplate interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -594,6 +602,25 @@ func (j *jsiiProxy_ElasticBeanstalkConfigurationTemplate)SetSolutionStackName(va
 	)
 }
 
+// Generates CDKTF code for importing a ElasticBeanstalkConfigurationTemplate resource upon running "cdktf plan <stack-name>".
+func ElasticBeanstalkConfigurationTemplate_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateElasticBeanstalkConfigurationTemplate_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.elasticBeanstalkConfigurationTemplate.ElasticBeanstalkConfigurationTemplate",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -676,6 +703,17 @@ func ElasticBeanstalkConfigurationTemplate_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) AddMoveTarget(moveTarget *string) {
+	if err := e.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) AddOverride(path *string, value interface{}) {
@@ -833,6 +871,17 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) GetStringMapAttribute(
 	return returns
 }
 
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := e.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -847,6 +896,17 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) InterpolationForAttrib
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) MoveTo(moveTarget *string, index interface{}) {
+	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) OverrideLogicalId(newLogicalId *string) {

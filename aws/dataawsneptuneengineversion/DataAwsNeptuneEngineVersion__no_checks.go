@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsNeptuneEngineVersion) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func validateDataAwsNeptuneEngineVersion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsNeptuneEngineVersion_IsConstructParameters(x interface{}) error {
 	return nil
 }

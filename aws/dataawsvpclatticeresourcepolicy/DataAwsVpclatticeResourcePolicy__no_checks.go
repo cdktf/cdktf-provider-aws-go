@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsVpclatticeResourcePolicy) validateOverrideLogicalIdPar
 	return nil
 }
 
+func validateDataAwsVpclatticeResourcePolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsVpclatticeResourcePolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsQuicksightDataSet) validatePutColumnLevelPermissionRul
 	return nil
 }
 
+func validateDataAwsQuicksightDataSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsQuicksightDataSet_IsConstructParameters(x interface{}) error {
 	return nil
 }

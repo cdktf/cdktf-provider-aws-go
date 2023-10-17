@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsConnectBotAssociation) validatePutLexBotParameters(val
 	return nil
 }
 
+func validateDataAwsConnectBotAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsConnectBotAssociation_IsConstructParameters(x interface{}) error {
 	return nil
 }

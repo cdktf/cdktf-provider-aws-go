@@ -7,6 +7,10 @@ package datasynclocationfsxopenzfsfilesystem
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateGetStringMapAtt
 	return nil
 }
 
+func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateOverrideLogical
 }
 
 func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validatePutProtocolParameters(value *DatasyncLocationFsxOpenzfsFileSystemProtocol) error {
+	return nil
+}
+
+func validateDatasyncLocationFsxOpenzfsFileSystem_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

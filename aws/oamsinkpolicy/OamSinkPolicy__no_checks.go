@@ -7,6 +7,10 @@ package oamsinkpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OamSinkPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OamSinkPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OamSinkPolicy) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (o *jsiiProxy_OamSinkPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OamSinkPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OamSinkPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (o *jsiiProxy_OamSinkPolicy) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (o *jsiiProxy_OamSinkPolicy) validatePutTimeoutsParameters(value *OamSinkPolicyTimeouts) error {
+	return nil
+}
+
+func validateOamSinkPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

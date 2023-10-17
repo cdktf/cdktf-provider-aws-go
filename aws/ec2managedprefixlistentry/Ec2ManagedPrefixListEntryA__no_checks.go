@@ -7,6 +7,10 @@ package ec2managedprefixlistentry
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Ec2ManagedPrefixListEntryA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2ManagedPrefixListEntryA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (e *jsiiProxy_Ec2ManagedPrefixListEntryA) validateGetStringMapAttributePara
 	return nil
 }
 
+func (e *jsiiProxy_Ec2ManagedPrefixListEntryA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2ManagedPrefixListEntryA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_Ec2ManagedPrefixListEntryA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2ManagedPrefixListEntryA) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEc2ManagedPrefixListEntryA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

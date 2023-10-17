@@ -7,6 +7,10 @@ package codepipelinewebhook
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CodepipelineWebhook) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodepipelineWebhook) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CodepipelineWebhook) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (c *jsiiProxy_CodepipelineWebhook) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodepipelineWebhook) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodepipelineWebhook) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_CodepipelineWebhook) validatePutAuthenticationConfigurationPa
 }
 
 func (c *jsiiProxy_CodepipelineWebhook) validatePutFilterParameters(value interface{}) error {
+	return nil
+}
+
+func validateCodepipelineWebhook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

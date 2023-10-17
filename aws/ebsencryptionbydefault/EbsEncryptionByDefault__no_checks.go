@@ -7,6 +7,10 @@ package ebsencryptionbydefault
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EbsEncryptionByDefault) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EbsEncryptionByDefault) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (e *jsiiProxy_EbsEncryptionByDefault) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (e *jsiiProxy_EbsEncryptionByDefault) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EbsEncryptionByDefault) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_EbsEncryptionByDefault) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EbsEncryptionByDefault) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEbsEncryptionByDefault_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package cloudsearchdomainserviceaccesspolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateGetStringMapAtt
 	return nil
 }
 
+func (c *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validateOverrideLogical
 }
 
 func (c *jsiiProxy_CloudsearchDomainServiceAccessPolicy) validatePutTimeoutsParameters(value *CloudsearchDomainServiceAccessPolicyTimeouts) error {
+	return nil
+}
+
+func validateCloudsearchDomainServiceAccessPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

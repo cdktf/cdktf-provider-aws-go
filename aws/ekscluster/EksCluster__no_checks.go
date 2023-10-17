@@ -7,6 +7,10 @@ package ekscluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EksCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EksCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EksCluster) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (e *jsiiProxy_EksCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EksCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EksCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (e *jsiiProxy_EksCluster) validatePutTimeoutsParameters(value *EksClusterTi
 }
 
 func (e *jsiiProxy_EksCluster) validatePutVpcConfigParameters(value *EksClusterVpcConfig) error {
+	return nil
+}
+
+func validateEksCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

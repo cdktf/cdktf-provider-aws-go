@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsAcmpcaCertificateAuthority) validateOverrideLogicalIdP
 	return nil
 }
 
+func validateDataAwsAcmpcaCertificateAuthority_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsAcmpcaCertificateAuthority_IsConstructParameters(x interface{}) error {
 	return nil
 }

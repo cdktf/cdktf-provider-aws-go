@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsServiceDiscoveryDnsNamespace) validateOverrideLogicalI
 	return nil
 }
 
+func validateDataAwsServiceDiscoveryDnsNamespace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsServiceDiscoveryDnsNamespace_IsConstructParameters(x interface{}) error {
 	return nil
 }

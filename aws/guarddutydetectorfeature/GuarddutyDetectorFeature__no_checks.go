@@ -7,6 +7,10 @@ package guarddutydetectorfeature
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GuarddutyDetectorFeature) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GuarddutyDetectorFeature) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GuarddutyDetectorFeature) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GuarddutyDetectorFeature) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GuarddutyDetectorFeature) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GuarddutyDetectorFeature) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GuarddutyDetectorFeature) validateOverrideLogicalIdParameters
 }
 
 func (g *jsiiProxy_GuarddutyDetectorFeature) validatePutAdditionalConfigurationParameters(value interface{}) error {
+	return nil
+}
+
+func validateGuarddutyDetectorFeature_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

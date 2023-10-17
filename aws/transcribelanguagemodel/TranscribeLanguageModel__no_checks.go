@@ -7,6 +7,10 @@ package transcribelanguagemodel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TranscribeLanguageModel) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TranscribeLanguageModel) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (t *jsiiProxy_TranscribeLanguageModel) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (t *jsiiProxy_TranscribeLanguageModel) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TranscribeLanguageModel) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TranscribeLanguageModel) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (t *jsiiProxy_TranscribeLanguageModel) validatePutInputDataConfigParameters
 }
 
 func (t *jsiiProxy_TranscribeLanguageModel) validatePutTimeoutsParameters(value *TranscribeLanguageModelTimeouts) error {
+	return nil
+}
+
+func validateTranscribeLanguageModel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

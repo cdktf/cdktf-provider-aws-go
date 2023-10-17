@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.rdsCluster.RdsCluster",
 		reflect.TypeOf((*RdsCluster)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allocatedStorage", GoGetter: "AllocatedStorage"},
 			_jsii_.MemberProperty{JsiiProperty: "allocatedStorageInput", GoGetter: "AllocatedStorageInput"},
@@ -93,6 +94,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "iamRolesInput", GoGetter: "IamRolesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "iops", GoGetter: "Iops"},
 			_jsii_.MemberProperty{JsiiProperty: "iopsInput", GoGetter: "IopsInput"},
@@ -108,6 +110,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "masterUserSecret", GoGetter: "MasterUserSecret"},
 			_jsii_.MemberProperty{JsiiProperty: "masterUserSecretKmsKeyId", GoGetter: "MasterUserSecretKmsKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "masterUserSecretKmsKeyIdInput", GoGetter: "MasterUserSecretKmsKeyIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "networkType", GoGetter: "NetworkType"},
 			_jsii_.MemberProperty{JsiiProperty: "networkTypeInput", GoGetter: "NetworkTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

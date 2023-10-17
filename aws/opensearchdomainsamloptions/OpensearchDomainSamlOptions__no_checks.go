@@ -7,6 +7,10 @@ package opensearchdomainsamloptions
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OpensearchDomainSamlOptions) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchDomainSamlOptions) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OpensearchDomainSamlOptions) validateGetStringMapAttributePar
 	return nil
 }
 
+func (o *jsiiProxy_OpensearchDomainSamlOptions) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchDomainSamlOptions) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpensearchDomainSamlOptions) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (o *jsiiProxy_OpensearchDomainSamlOptions) validatePutSamlOptionsParameters
 }
 
 func (o *jsiiProxy_OpensearchDomainSamlOptions) validatePutTimeoutsParameters(value *OpensearchDomainSamlOptionsTimeouts) error {
+	return nil
+}
+
+func validateOpensearchDomainSamlOptions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

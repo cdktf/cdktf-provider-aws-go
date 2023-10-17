@@ -7,6 +7,10 @@ package ecrpullthroughcacherule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EcrPullThroughCacheRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcrPullThroughCacheRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (e *jsiiProxy_EcrPullThroughCacheRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcrPullThroughCacheRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_EcrPullThroughCacheRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcrPullThroughCacheRule) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEcrPullThroughCacheRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

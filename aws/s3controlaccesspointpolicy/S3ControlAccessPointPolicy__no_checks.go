@@ -7,6 +7,10 @@ package s3controlaccesspointpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3ControlAccessPointPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ControlAccessPointPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (s *jsiiProxy_S3ControlAccessPointPolicy) validateGetStringMapAttributePara
 	return nil
 }
 
+func (s *jsiiProxy_S3ControlAccessPointPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ControlAccessPointPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_S3ControlAccessPointPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ControlAccessPointPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateS3ControlAccessPointPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

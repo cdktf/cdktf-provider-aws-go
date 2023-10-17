@@ -7,6 +7,10 @@ package cloudwatchmetricalarm
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudwatchMetricAlarm) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchMetricAlarm) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CloudwatchMetricAlarm) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_CloudwatchMetricAlarm) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchMetricAlarm) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchMetricAlarm) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CloudwatchMetricAlarm) validateOverrideLogicalIdParameters(ne
 }
 
 func (c *jsiiProxy_CloudwatchMetricAlarm) validatePutMetricQueryParameters(value interface{}) error {
+	return nil
+}
+
+func validateCloudwatchMetricAlarm_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

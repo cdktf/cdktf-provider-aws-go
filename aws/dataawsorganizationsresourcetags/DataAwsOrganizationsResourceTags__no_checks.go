@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsOrganizationsResourceTags) validateOverrideLogicalIdPa
 	return nil
 }
 
+func validateDataAwsOrganizationsResourceTags_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsOrganizationsResourceTags_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package dxconnectionconfirmation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DxConnectionConfirmation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxConnectionConfirmation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (d *jsiiProxy_DxConnectionConfirmation) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (d *jsiiProxy_DxConnectionConfirmation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxConnectionConfirmation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (d *jsiiProxy_DxConnectionConfirmation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxConnectionConfirmation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDxConnectionConfirmation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

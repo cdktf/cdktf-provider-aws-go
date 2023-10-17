@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsGlueCatalogTable) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func validateDataAwsGlueCatalogTable_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsGlueCatalogTable_IsConstructParameters(x interface{}) error {
 	return nil
 }

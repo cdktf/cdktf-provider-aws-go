@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsDocdbEngineVersion) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func validateDataAwsDocdbEngineVersion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsDocdbEngineVersion_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package networkmanagersite
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkmanagerSite) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerSite) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkmanagerSite) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (n *jsiiProxy_NetworkmanagerSite) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerSite) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerSite) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (n *jsiiProxy_NetworkmanagerSite) validatePutLocationParameters(value *Netw
 }
 
 func (n *jsiiProxy_NetworkmanagerSite) validatePutTimeoutsParameters(value *NetworkmanagerSiteTimeouts) error {
+	return nil
+}
+
+func validateNetworkmanagerSite_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

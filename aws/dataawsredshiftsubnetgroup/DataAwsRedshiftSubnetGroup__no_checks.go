@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsRedshiftSubnetGroup) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func validateDataAwsRedshiftSubnetGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsRedshiftSubnetGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

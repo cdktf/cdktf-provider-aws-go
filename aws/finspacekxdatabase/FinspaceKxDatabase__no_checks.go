@@ -7,6 +7,10 @@ package finspacekxdatabase
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FinspaceKxDatabase) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FinspaceKxDatabase) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_FinspaceKxDatabase) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (f *jsiiProxy_FinspaceKxDatabase) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FinspaceKxDatabase) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FinspaceKxDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (f *jsiiProxy_FinspaceKxDatabase) validateOverrideLogicalIdParameters(newLo
 }
 
 func (f *jsiiProxy_FinspaceKxDatabase) validatePutTimeoutsParameters(value *FinspaceKxDatabaseTimeouts) error {
+	return nil
+}
+
+func validateFinspaceKxDatabase_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

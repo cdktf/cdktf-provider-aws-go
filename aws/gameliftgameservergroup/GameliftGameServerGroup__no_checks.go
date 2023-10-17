@@ -7,6 +7,10 @@ package gameliftgameservergroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GameliftGameServerGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GameliftGameServerGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GameliftGameServerGroup) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (g *jsiiProxy_GameliftGameServerGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GameliftGameServerGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GameliftGameServerGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (g *jsiiProxy_GameliftGameServerGroup) validatePutLaunchTemplateParameters(
 }
 
 func (g *jsiiProxy_GameliftGameServerGroup) validatePutTimeoutsParameters(value *GameliftGameServerGroupTimeouts) error {
+	return nil
+}
+
+func validateGameliftGameServerGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

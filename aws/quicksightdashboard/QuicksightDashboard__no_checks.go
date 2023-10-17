@@ -7,6 +7,10 @@ package quicksightdashboard
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (q *jsiiProxy_QuicksightDashboard) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightDashboard) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (q *jsiiProxy_QuicksightDashboard) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (q *jsiiProxy_QuicksightDashboard) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightDashboard) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (q *jsiiProxy_QuicksightDashboard) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (q *jsiiProxy_QuicksightDashboard) validatePutSourceEntityParameters(value 
 }
 
 func (q *jsiiProxy_QuicksightDashboard) validatePutTimeoutsParameters(value *QuicksightDashboardTimeouts) error {
+	return nil
+}
+
+func validateQuicksightDashboard_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

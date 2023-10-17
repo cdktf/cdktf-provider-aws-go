@@ -7,6 +7,10 @@ package ramresourceshare
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RamResourceShare) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RamResourceShare) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RamResourceShare) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (r *jsiiProxy_RamResourceShare) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RamResourceShare) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RamResourceShare) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (r *jsiiProxy_RamResourceShare) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (r *jsiiProxy_RamResourceShare) validatePutTimeoutsParameters(value *RamResourceShareTimeouts) error {
+	return nil
+}
+
+func validateRamResourceShare_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.lambdaEventSourceMapping.LambdaEventSourceMapping",
 		reflect.TypeOf((*LambdaEventSourceMapping)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "amazonManagedKafkaEventSourceConfig", GoGetter: "AmazonManagedKafkaEventSourceConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "amazonManagedKafkaEventSourceConfigInput", GoGetter: "AmazonManagedKafkaEventSourceConfigInput"},
@@ -55,6 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lastModified", GoGetter: "LastModified"},
 			_jsii_.MemberProperty{JsiiProperty: "lastProcessingResult", GoGetter: "LastProcessingResult"},
@@ -65,6 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maximumRecordAgeInSecondsInput", GoGetter: "MaximumRecordAgeInSecondsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumRetryAttempts", GoGetter: "MaximumRetryAttempts"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumRetryAttemptsInput", GoGetter: "MaximumRetryAttemptsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "parallelizationFactor", GoGetter: "ParallelizationFactor"},

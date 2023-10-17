@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotation) validateOverrideLogicalI
 	return nil
 }
 
+func validateDataAwsSecretsmanagerSecretRotation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsSecretsmanagerSecretRotation_IsConstructParameters(x interface{}) error {
 	return nil
 }

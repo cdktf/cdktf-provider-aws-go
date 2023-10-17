@@ -7,6 +7,10 @@ package redshiftsnapshotscheduleassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (r *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateGetStringMapAttr
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftSnapshotScheduleAssociation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRedshiftSnapshotScheduleAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

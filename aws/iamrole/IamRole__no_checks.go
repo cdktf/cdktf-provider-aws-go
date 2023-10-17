@@ -7,6 +7,10 @@ package iamrole
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IamRole) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamRole) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IamRole) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (i *jsiiProxy_IamRole) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamRole) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamRole) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IamRole) validateOverrideLogicalIdParameters(newLogicalId *st
 }
 
 func (i *jsiiProxy_IamRole) validatePutInlinePolicyParameters(value interface{}) error {
+	return nil
+}
+
+func validateIamRole_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

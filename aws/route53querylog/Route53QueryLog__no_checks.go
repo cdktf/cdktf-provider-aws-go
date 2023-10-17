@@ -7,6 +7,10 @@ package route53querylog
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_Route53QueryLog) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53QueryLog) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (r *jsiiProxy_Route53QueryLog) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (r *jsiiProxy_Route53QueryLog) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53QueryLog) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_Route53QueryLog) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53QueryLog) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRoute53QueryLog_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

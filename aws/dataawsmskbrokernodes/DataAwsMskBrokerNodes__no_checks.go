@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsMskBrokerNodes) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func validateDataAwsMskBrokerNodes_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsMskBrokerNodes_IsConstructParameters(x interface{}) error {
 	return nil
 }

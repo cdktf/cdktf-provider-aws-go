@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsDbEventCategories) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func validateDataAwsDbEventCategories_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsDbEventCategories_IsConstructParameters(x interface{}) error {
 	return nil
 }

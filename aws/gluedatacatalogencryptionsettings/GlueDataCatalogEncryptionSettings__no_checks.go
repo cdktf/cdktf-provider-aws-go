@@ -7,6 +7,10 @@ package gluedatacatalogencryptionsettings
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GlueDataCatalogEncryptionSettings) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueDataCatalogEncryptionSettings) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GlueDataCatalogEncryptionSettings) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GlueDataCatalogEncryptionSettings) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueDataCatalogEncryptionSettings) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlueDataCatalogEncryptionSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GlueDataCatalogEncryptionSettings) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GlueDataCatalogEncryptionSettings) validatePutDataCatalogEncryptionSettingsParameters(value *GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettings) error {
+	return nil
+}
+
+func validateGlueDataCatalogEncryptionSettings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

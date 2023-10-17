@@ -7,6 +7,10 @@ package internetgateway
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_InternetGateway) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_InternetGateway) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_InternetGateway) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (i *jsiiProxy_InternetGateway) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_InternetGateway) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_InternetGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_InternetGateway) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (i *jsiiProxy_InternetGateway) validatePutTimeoutsParameters(value *InternetGatewayTimeouts) error {
+	return nil
+}
+
+func validateInternetGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

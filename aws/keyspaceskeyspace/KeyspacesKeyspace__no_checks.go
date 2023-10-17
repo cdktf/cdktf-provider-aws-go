@@ -7,6 +7,10 @@ package keyspaceskeyspace
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KeyspacesKeyspace) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyspacesKeyspace) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KeyspacesKeyspace) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (k *jsiiProxy_KeyspacesKeyspace) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyspacesKeyspace) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KeyspacesKeyspace) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (k *jsiiProxy_KeyspacesKeyspace) validateOverrideLogicalIdParameters(newLog
 }
 
 func (k *jsiiProxy_KeyspacesKeyspace) validatePutTimeoutsParameters(value *KeyspacesKeyspaceTimeouts) error {
+	return nil
+}
+
+func validateKeyspacesKeyspace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

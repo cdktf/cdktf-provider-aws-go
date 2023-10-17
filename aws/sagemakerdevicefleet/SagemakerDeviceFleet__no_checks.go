@@ -7,6 +7,10 @@ package sagemakerdevicefleet
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SagemakerDeviceFleet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDeviceFleet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SagemakerDeviceFleet) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDeviceFleet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDeviceFleet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerDeviceFleet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SagemakerDeviceFleet) validateOverrideLogicalIdParameters(new
 }
 
 func (s *jsiiProxy_SagemakerDeviceFleet) validatePutOutputConfigParameters(value *SagemakerDeviceFleetOutputConfig) error {
+	return nil
+}
+
+func validateSagemakerDeviceFleet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

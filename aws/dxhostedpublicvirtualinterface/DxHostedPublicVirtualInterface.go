@@ -5,10 +5,10 @@ package dxhostedpublicvirtualinterface
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/dxhostedpublicvirtualinterface/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/dxhostedpublicvirtualinterface/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -99,6 +99,9 @@ type DxHostedPublicVirtualInterface interface {
 	Vlan() *float64
 	SetVlan(val *float64)
 	VlanInput() *float64
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -120,7 +123,12 @@ type DxHostedPublicVirtualInterface interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -797,6 +805,25 @@ func (j *jsiiProxy_DxHostedPublicVirtualInterface)SetVlan(val *float64) {
 	)
 }
 
+// Generates CDKTF code for importing a DxHostedPublicVirtualInterface resource upon running "cdktf plan <stack-name>".
+func DxHostedPublicVirtualInterface_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDxHostedPublicVirtualInterface_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dxHostedPublicVirtualInterface.DxHostedPublicVirtualInterface",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -879,6 +906,17 @@ func DxHostedPublicVirtualInterface_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (d *jsiiProxy_DxHostedPublicVirtualInterface) AddMoveTarget(moveTarget *string) {
+	if err := d.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (d *jsiiProxy_DxHostedPublicVirtualInterface) AddOverride(path *string, value interface{}) {
@@ -1036,6 +1074,17 @@ func (d *jsiiProxy_DxHostedPublicVirtualInterface) GetStringMapAttribute(terrafo
 	return returns
 }
 
+func (d *jsiiProxy_DxHostedPublicVirtualInterface) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := d.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (d *jsiiProxy_DxHostedPublicVirtualInterface) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1050,6 +1099,17 @@ func (d *jsiiProxy_DxHostedPublicVirtualInterface) InterpolationForAttribute(ter
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DxHostedPublicVirtualInterface) MoveTo(moveTarget *string, index interface{}) {
+	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (d *jsiiProxy_DxHostedPublicVirtualInterface) OverrideLogicalId(newLogicalId *string) {

@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayMulticastDomain) validatePutTimeoutsP
 	return nil
 }
 
+func validateDataAwsEc2TransitGatewayMulticastDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEc2TransitGatewayMulticastDomain_IsConstructParameters(x interface{}) error {
 	return nil
 }

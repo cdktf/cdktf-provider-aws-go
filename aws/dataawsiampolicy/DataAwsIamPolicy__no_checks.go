@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsIamPolicy) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func validateDataAwsIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsIamPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

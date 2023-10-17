@@ -5,10 +5,10 @@ package dataawsroute53delegationset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsroute53delegationset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsroute53delegationset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -377,6 +377,25 @@ func (j *jsiiProxy_DataAwsRoute53DelegationSet)SetProvider(val cdktf.TerraformPr
 		"provider",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataAwsRoute53DelegationSet resource upon running "cdktf plan <stack-name>".
+func DataAwsRoute53DelegationSet_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsRoute53DelegationSet_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsRoute53DelegationSet.DataAwsRoute53DelegationSet",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

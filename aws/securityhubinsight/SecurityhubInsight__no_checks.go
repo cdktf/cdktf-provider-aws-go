@@ -7,6 +7,10 @@ package securityhubinsight
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SecurityhubInsight) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityhubInsight) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SecurityhubInsight) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_SecurityhubInsight) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityhubInsight) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityhubInsight) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SecurityhubInsight) validateOverrideLogicalIdParameters(newLo
 }
 
 func (s *jsiiProxy_SecurityhubInsight) validatePutFiltersParameters(value *SecurityhubInsightFilters) error {
+	return nil
+}
+
+func validateSecurityhubInsight_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsGlueConnection) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func validateDataAwsGlueConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsGlueConnection_IsConstructParameters(x interface{}) error {
 	return nil
 }

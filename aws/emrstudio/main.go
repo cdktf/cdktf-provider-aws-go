@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.emrStudio.EmrStudio",
 		reflect.TypeOf((*EmrStudio)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "authMode", GoGetter: "AuthMode"},
@@ -47,8 +48,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idpAuthUrlInput", GoGetter: "IdpAuthUrlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "idpRelayStateParameterName", GoGetter: "IdpRelayStateParameterName"},
 			_jsii_.MemberProperty{JsiiProperty: "idpRelayStateParameterNameInput", GoGetter: "IdpRelayStateParameterNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

@@ -7,6 +7,10 @@ package syntheticsgroupassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SyntheticsGroupAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsGroupAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (s *jsiiProxy_SyntheticsGroupAssociation) validateGetStringMapAttributePara
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsGroupAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsGroupAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsGroupAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsGroupAssociation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateSyntheticsGroupAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

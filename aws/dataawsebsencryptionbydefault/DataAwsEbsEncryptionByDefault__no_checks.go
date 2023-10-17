@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsEbsEncryptionByDefault) validatePutTimeoutsParameters(
 	return nil
 }
 
+func validateDataAwsEbsEncryptionByDefault_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEbsEncryptionByDefault_IsConstructParameters(x interface{}) error {
 	return nil
 }

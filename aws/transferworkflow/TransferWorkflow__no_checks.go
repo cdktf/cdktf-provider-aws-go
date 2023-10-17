@@ -7,6 +7,10 @@ package transferworkflow
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TransferWorkflow) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransferWorkflow) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (t *jsiiProxy_TransferWorkflow) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (t *jsiiProxy_TransferWorkflow) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransferWorkflow) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TransferWorkflow) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (t *jsiiProxy_TransferWorkflow) validatePutOnExceptionStepsParameters(value
 }
 
 func (t *jsiiProxy_TransferWorkflow) validatePutStepsParameters(value interface{}) error {
+	return nil
+}
+
+func validateTransferWorkflow_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package securityhuborganizationadminaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SecurityhubOrganizationAdminAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityhubOrganizationAdminAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (s *jsiiProxy_SecurityhubOrganizationAdminAccount) validateGetStringMapAttr
 	return nil
 }
 
+func (s *jsiiProxy_SecurityhubOrganizationAdminAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityhubOrganizationAdminAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_SecurityhubOrganizationAdminAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityhubOrganizationAdminAccount) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateSecurityhubOrganizationAdminAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

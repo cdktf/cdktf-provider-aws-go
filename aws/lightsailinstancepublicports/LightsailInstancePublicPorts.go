@@ -5,10 +5,10 @@ package lightsailinstancepublicports
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/lightsailinstancepublicports/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsailinstancepublicports/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -69,6 +69,9 @@ type LightsailInstancePublicPorts interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -90,7 +93,12 @@ type LightsailInstancePublicPorts interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -454,6 +462,25 @@ func (j *jsiiProxy_LightsailInstancePublicPorts)SetProvisioners(val *[]interface
 	)
 }
 
+// Generates CDKTF code for importing a LightsailInstancePublicPorts resource upon running "cdktf plan <stack-name>".
+func LightsailInstancePublicPorts_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateLightsailInstancePublicPorts_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPorts",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -536,6 +563,17 @@ func LightsailInstancePublicPorts_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (l *jsiiProxy_LightsailInstancePublicPorts) AddMoveTarget(moveTarget *string) {
+	if err := l.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (l *jsiiProxy_LightsailInstancePublicPorts) AddOverride(path *string, value interface{}) {
@@ -693,6 +731,17 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) GetStringMapAttribute(terraform
 	return returns
 }
 
+func (l *jsiiProxy_LightsailInstancePublicPorts) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := l.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (l *jsiiProxy_LightsailInstancePublicPorts) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -707,6 +756,17 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) InterpolationForAttribute(terra
 	)
 
 	return returns
+}
+
+func (l *jsiiProxy_LightsailInstancePublicPorts) MoveTo(moveTarget *string, index interface{}) {
+	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (l *jsiiProxy_LightsailInstancePublicPorts) OverrideLogicalId(newLogicalId *string) {

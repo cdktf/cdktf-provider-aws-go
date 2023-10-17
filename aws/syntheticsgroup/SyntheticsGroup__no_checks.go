@@ -7,6 +7,10 @@ package syntheticsgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SyntheticsGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (s *jsiiProxy_SyntheticsGroup) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsGroup) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateSyntheticsGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

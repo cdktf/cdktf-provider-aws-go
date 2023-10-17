@@ -5,10 +5,10 @@ package ec2instanceconnectendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/ec2instanceconnectendpoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/ec2instanceconnectendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -84,6 +84,9 @@ type Ec2InstanceConnectEndpoint interface {
 	Timeouts() Ec2InstanceConnectEndpointTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	VpcId() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -105,7 +108,12 @@ type Ec2InstanceConnectEndpoint interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -624,6 +632,25 @@ func (j *jsiiProxy_Ec2InstanceConnectEndpoint)SetTags(val *map[string]*string) {
 	)
 }
 
+// Generates CDKTF code for importing a Ec2InstanceConnectEndpoint resource upon running "cdktf plan <stack-name>".
+func Ec2InstanceConnectEndpoint_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateEc2InstanceConnectEndpoint_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ec2InstanceConnectEndpoint.Ec2InstanceConnectEndpoint",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -706,6 +733,17 @@ func Ec2InstanceConnectEndpoint_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (e *jsiiProxy_Ec2InstanceConnectEndpoint) AddMoveTarget(moveTarget *string) {
+	if err := e.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (e *jsiiProxy_Ec2InstanceConnectEndpoint) AddOverride(path *string, value interface{}) {
@@ -863,6 +901,17 @@ func (e *jsiiProxy_Ec2InstanceConnectEndpoint) GetStringMapAttribute(terraformAt
 	return returns
 }
 
+func (e *jsiiProxy_Ec2InstanceConnectEndpoint) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := e.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (e *jsiiProxy_Ec2InstanceConnectEndpoint) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -877,6 +926,17 @@ func (e *jsiiProxy_Ec2InstanceConnectEndpoint) InterpolationForAttribute(terrafo
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_Ec2InstanceConnectEndpoint) MoveTo(moveTarget *string, index interface{}) {
+	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (e *jsiiProxy_Ec2InstanceConnectEndpoint) OverrideLogicalId(newLogicalId *string) {

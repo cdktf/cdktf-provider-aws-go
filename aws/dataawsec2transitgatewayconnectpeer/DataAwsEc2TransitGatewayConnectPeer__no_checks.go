@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayConnectPeer) validatePutTimeoutsParam
 	return nil
 }
 
+func validateDataAwsEc2TransitGatewayConnectPeer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEc2TransitGatewayConnectPeer_IsConstructParameters(x interface{}) error {
 	return nil
 }

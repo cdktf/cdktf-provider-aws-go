@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsEcrPullThroughCacheRule) validateOverrideLogicalIdPara
 	return nil
 }
 
+func validateDataAwsEcrPullThroughCacheRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEcrPullThroughCacheRule_IsConstructParameters(x interface{}) error {
 	return nil
 }

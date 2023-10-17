@@ -7,6 +7,10 @@ package fisexperimenttemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FisExperimentTemplate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FisExperimentTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_FisExperimentTemplate) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (f *jsiiProxy_FisExperimentTemplate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FisExperimentTemplate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FisExperimentTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (f *jsiiProxy_FisExperimentTemplate) validatePutTargetParameters(value inte
 }
 
 func (f *jsiiProxy_FisExperimentTemplate) validatePutTimeoutsParameters(value *FisExperimentTemplateTimeouts) error {
+	return nil
+}
+
+func validateFisExperimentTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package vpclatticeservicenetworkvpcassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpclatticeServiceNetworkVpcAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpclatticeServiceNetworkVpcAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VpclatticeServiceNetworkVpcAssociation) validateGetStringMapA
 	return nil
 }
 
+func (v *jsiiProxy_VpclatticeServiceNetworkVpcAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpclatticeServiceNetworkVpcAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpclatticeServiceNetworkVpcAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (v *jsiiProxy_VpclatticeServiceNetworkVpcAssociation) validateOverrideLogic
 }
 
 func (v *jsiiProxy_VpclatticeServiceNetworkVpcAssociation) validatePutTimeoutsParameters(value *VpclatticeServiceNetworkVpcAssociationTimeouts) error {
+	return nil
+}
+
+func validateVpclatticeServiceNetworkVpcAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

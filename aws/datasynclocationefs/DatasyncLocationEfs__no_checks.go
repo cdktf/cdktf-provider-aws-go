@@ -7,6 +7,10 @@ package datasynclocationefs
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatasyncLocationEfs) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncLocationEfs) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DatasyncLocationEfs) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DatasyncLocationEfs) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncLocationEfs) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatasyncLocationEfs) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DatasyncLocationEfs) validateOverrideLogicalIdParameters(newL
 }
 
 func (d *jsiiProxy_DatasyncLocationEfs) validatePutEc2ConfigParameters(value *DatasyncLocationEfsEc2Config) error {
+	return nil
+}
+
+func validateDatasyncLocationEfs_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

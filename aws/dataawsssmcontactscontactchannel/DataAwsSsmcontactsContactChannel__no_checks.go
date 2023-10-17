@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsSsmcontactsContactChannel) validateOverrideLogicalIdPa
 	return nil
 }
 
+func validateDataAwsSsmcontactsContactChannel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsSsmcontactsContactChannel_IsConstructParameters(x interface{}) error {
 	return nil
 }

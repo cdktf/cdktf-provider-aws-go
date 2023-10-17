@@ -7,6 +7,10 @@ package medialivechannel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MedialiveChannel) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveChannel) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MedialiveChannel) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (m *jsiiProxy_MedialiveChannel) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveChannel) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveChannel) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -84,6 +96,10 @@ func (m *jsiiProxy_MedialiveChannel) validatePutTimeoutsParameters(value *Medial
 }
 
 func (m *jsiiProxy_MedialiveChannel) validatePutVpcParameters(value *MedialiveChannelVpc) error {
+	return nil
+}
+
+func validateMedialiveChannel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

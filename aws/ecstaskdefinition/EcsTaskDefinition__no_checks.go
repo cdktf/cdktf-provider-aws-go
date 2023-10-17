@@ -7,6 +7,10 @@ package ecstaskdefinition
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EcsTaskDefinition) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsTaskDefinition) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EcsTaskDefinition) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (e *jsiiProxy_EcsTaskDefinition) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsTaskDefinition) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (e *jsiiProxy_EcsTaskDefinition) validatePutRuntimePlatformParameters(value
 }
 
 func (e *jsiiProxy_EcsTaskDefinition) validatePutVolumeParameters(value interface{}) error {
+	return nil
+}
+
+func validateEcsTaskDefinition_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

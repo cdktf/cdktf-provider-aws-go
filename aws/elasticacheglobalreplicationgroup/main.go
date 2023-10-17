@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroup",
 		reflect.TypeOf((*ElasticacheGlobalReplicationGroup)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "atRestEncryptionEnabled", GoGetter: "AtRestEncryptionEnabled"},
@@ -52,8 +53,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "globalReplicationGroupIdSuffixInput", GoGetter: "GlobalReplicationGroupIdSuffixInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "numNodeGroups", GoGetter: "NumNodeGroups"},
 			_jsii_.MemberProperty{JsiiProperty: "numNodeGroupsInput", GoGetter: "NumNodeGroupsInput"},

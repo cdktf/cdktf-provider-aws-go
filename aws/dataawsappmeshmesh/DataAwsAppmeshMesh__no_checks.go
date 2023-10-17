@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsAppmeshMesh) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func validateDataAwsAppmeshMesh_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsAppmeshMesh_IsConstructParameters(x interface{}) error {
 	return nil
 }

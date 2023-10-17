@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsConnectHoursOfOperation) validateOverrideLogicalIdPara
 	return nil
 }
 
+func validateDataAwsConnectHoursOfOperation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsConnectHoursOfOperation_IsConstructParameters(x interface{}) error {
 	return nil
 }

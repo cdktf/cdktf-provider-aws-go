@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.fsxLustreFileSystem.FsxLustreFileSystem",
 		reflect.TypeOf((*FsxLustreFileSystem)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "autoImportPolicy", GoGetter: "AutoImportPolicy"},
@@ -58,6 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "importedFileChunkSize", GoGetter: "ImportedFileChunkSize"},
 			_jsii_.MemberProperty{JsiiProperty: "importedFileChunkSizeInput", GoGetter: "ImportedFileChunkSizeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "importPath", GoGetter: "ImportPath"},
 			_jsii_.MemberProperty{JsiiProperty: "importPathInput", GoGetter: "ImportPathInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -67,6 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "logConfiguration", GoGetter: "LogConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "logConfigurationInput", GoGetter: "LogConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mountName", GoGetter: "MountName"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "networkInterfaceIds", GoGetter: "NetworkInterfaceIds"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},

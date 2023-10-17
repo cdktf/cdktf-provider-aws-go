@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsDmsCertificate) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func validateDataAwsDmsCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsDmsCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }

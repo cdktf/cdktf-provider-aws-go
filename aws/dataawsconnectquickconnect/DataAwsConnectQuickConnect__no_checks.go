@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsConnectQuickConnect) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func validateDataAwsConnectQuickConnect_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsConnectQuickConnect_IsConstructParameters(x interface{}) error {
 	return nil
 }

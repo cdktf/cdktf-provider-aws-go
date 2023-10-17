@@ -7,6 +7,10 @@ package networkmanagersitetositevpnattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachment) validateGetStringMapAt
 	return nil
 }
 
+func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachment) validateOverrideLogica
 }
 
 func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachment) validatePutTimeoutsParameters(value *NetworkmanagerSiteToSiteVpnAttachmentTimeouts) error {
+	return nil
+}
+
+func validateNetworkmanagerSiteToSiteVpnAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

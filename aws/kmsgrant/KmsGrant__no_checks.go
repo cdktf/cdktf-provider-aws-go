@@ -7,6 +7,10 @@ package kmsgrant
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KmsGrant) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsGrant) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KmsGrant) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (k *jsiiProxy_KmsGrant) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsGrant) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsGrant) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (k *jsiiProxy_KmsGrant) validateOverrideLogicalIdParameters(newLogicalId *s
 }
 
 func (k *jsiiProxy_KmsGrant) validatePutConstraintsParameters(value interface{}) error {
+	return nil
+}
+
+func validateKmsGrant_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

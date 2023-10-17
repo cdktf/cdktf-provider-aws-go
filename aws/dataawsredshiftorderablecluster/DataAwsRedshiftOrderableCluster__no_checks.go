@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsRedshiftOrderableCluster) validateOverrideLogicalIdPar
 	return nil
 }
 
+func validateDataAwsRedshiftOrderableCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsRedshiftOrderableCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsNetworkmanagerLink) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func validateDataAwsNetworkmanagerLink_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsNetworkmanagerLink_IsConstructParameters(x interface{}) error {
 	return nil
 }

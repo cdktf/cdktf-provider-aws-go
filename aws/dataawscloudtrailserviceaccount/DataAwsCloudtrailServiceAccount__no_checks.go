@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsCloudtrailServiceAccount) validateOverrideLogicalIdPar
 	return nil
 }
 
+func validateDataAwsCloudtrailServiceAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsCloudtrailServiceAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }

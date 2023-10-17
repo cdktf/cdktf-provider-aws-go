@@ -7,6 +7,10 @@ package opsworkscustomlayer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OpsworksCustomLayer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksCustomLayer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OpsworksCustomLayer) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksCustomLayer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksCustomLayer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksCustomLayer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (o *jsiiProxy_OpsworksCustomLayer) validatePutEbsVolumeParameters(value int
 }
 
 func (o *jsiiProxy_OpsworksCustomLayer) validatePutLoadBasedAutoScalingParameters(value *OpsworksCustomLayerLoadBasedAutoScaling) error {
+	return nil
+}
+
+func validateOpsworksCustomLayer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

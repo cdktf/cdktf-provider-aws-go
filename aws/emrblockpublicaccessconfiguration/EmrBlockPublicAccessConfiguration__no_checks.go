@@ -7,6 +7,10 @@ package emrblockpublicaccessconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EmrBlockPublicAccessConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrBlockPublicAccessConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EmrBlockPublicAccessConfiguration) validateGetStringMapAttrib
 	return nil
 }
 
+func (e *jsiiProxy_EmrBlockPublicAccessConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrBlockPublicAccessConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmrBlockPublicAccessConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_EmrBlockPublicAccessConfiguration) validateOverrideLogicalIdP
 }
 
 func (e *jsiiProxy_EmrBlockPublicAccessConfiguration) validatePutPermittedPublicSecurityGroupRuleRangeParameters(value interface{}) error {
+	return nil
+}
+
+func validateEmrBlockPublicAccessConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

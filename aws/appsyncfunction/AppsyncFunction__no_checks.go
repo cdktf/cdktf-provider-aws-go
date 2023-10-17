@@ -7,6 +7,10 @@ package appsyncfunction
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppsyncFunction) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppsyncFunction) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AppsyncFunction) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (a *jsiiProxy_AppsyncFunction) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppsyncFunction) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppsyncFunction) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_AppsyncFunction) validatePutRuntimeParameters(value *AppsyncF
 }
 
 func (a *jsiiProxy_AppsyncFunction) validatePutSyncConfigParameters(value *AppsyncFunctionSyncConfig) error {
+	return nil
+}
+
+func validateAppsyncFunction_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

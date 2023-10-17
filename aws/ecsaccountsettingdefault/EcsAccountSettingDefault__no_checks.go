@@ -7,6 +7,10 @@ package ecsaccountsettingdefault
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EcsAccountSettingDefault) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsAccountSettingDefault) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (e *jsiiProxy_EcsAccountSettingDefault) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (e *jsiiProxy_EcsAccountSettingDefault) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsAccountSettingDefault) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_EcsAccountSettingDefault) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsAccountSettingDefault) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEcsAccountSettingDefault_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

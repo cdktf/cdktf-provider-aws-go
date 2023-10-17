@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAwsVpcDhcpOptions) validatePutTimeoutsParameters(value *D
 	return nil
 }
 
+func validateDataAwsVpcDhcpOptions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsVpcDhcpOptions_IsConstructParameters(x interface{}) error {
 	return nil
 }

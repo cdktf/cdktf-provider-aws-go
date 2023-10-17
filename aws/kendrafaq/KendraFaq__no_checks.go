@@ -7,6 +7,10 @@ package kendrafaq
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KendraFaq) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KendraFaq) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KendraFaq) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (k *jsiiProxy_KendraFaq) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KendraFaq) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KendraFaq) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (k *jsiiProxy_KendraFaq) validatePutS3PathParameters(value *KendraFaqS3Path
 }
 
 func (k *jsiiProxy_KendraFaq) validatePutTimeoutsParameters(value *KendraFaqTimeouts) error {
+	return nil
+}
+
+func validateKendraFaq_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

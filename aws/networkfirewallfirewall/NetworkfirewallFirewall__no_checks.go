@@ -7,6 +7,10 @@ package networkfirewallfirewall
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkfirewallFirewall) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkfirewallFirewall) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkfirewallFirewall) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (n *jsiiProxy_NetworkfirewallFirewall) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkfirewallFirewall) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkfirewallFirewall) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (n *jsiiProxy_NetworkfirewallFirewall) validatePutEncryptionConfigurationPa
 }
 
 func (n *jsiiProxy_NetworkfirewallFirewall) validatePutSubnetMappingParameters(value interface{}) error {
+	return nil
+}
+
+func validateNetworkfirewallFirewall_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package servicediscoveryservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServiceDiscoveryService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceDiscoveryService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_ServiceDiscoveryService) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_ServiceDiscoveryService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceDiscoveryService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServiceDiscoveryService) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (s *jsiiProxy_ServiceDiscoveryService) validatePutHealthCheckConfigParamete
 }
 
 func (s *jsiiProxy_ServiceDiscoveryService) validatePutHealthCheckCustomConfigParameters(value *ServiceDiscoveryServiceHealthCheckCustomConfig) error {
+	return nil
+}
+
+func validateServiceDiscoveryService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsVpcIpamPreviewNextCidr) validatePutTimeoutsParameters(
 	return nil
 }
 
+func validateDataAwsVpcIpamPreviewNextCidr_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsVpcIpamPreviewNextCidr_IsConstructParameters(x interface{}) error {
 	return nil
 }

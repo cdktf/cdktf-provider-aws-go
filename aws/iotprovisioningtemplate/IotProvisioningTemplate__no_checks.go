@@ -7,6 +7,10 @@ package iotprovisioningtemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IotProvisioningTemplate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotProvisioningTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IotProvisioningTemplate) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (i *jsiiProxy_IotProvisioningTemplate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotProvisioningTemplate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotProvisioningTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IotProvisioningTemplate) validateOverrideLogicalIdParameters(
 }
 
 func (i *jsiiProxy_IotProvisioningTemplate) validatePutPreProvisioningHookParameters(value *IotProvisioningTemplatePreProvisioningHook) error {
+	return nil
+}
+
+func validateIotProvisioningTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

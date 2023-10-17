@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsServicecatalogProduct) validatePutTimeoutsParameters(v
 	return nil
 }
 
+func validateDataAwsServicecatalogProduct_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsServicecatalogProduct_IsConstructParameters(x interface{}) error {
 	return nil
 }

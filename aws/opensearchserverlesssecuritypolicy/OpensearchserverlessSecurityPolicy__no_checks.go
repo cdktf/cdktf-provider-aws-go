@@ -7,6 +7,10 @@ package opensearchserverlesssecuritypolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OpensearchserverlessSecurityPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchserverlessSecurityPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (o *jsiiProxy_OpensearchserverlessSecurityPolicy) validateGetStringMapAttri
 	return nil
 }
 
+func (o *jsiiProxy_OpensearchserverlessSecurityPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchserverlessSecurityPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (o *jsiiProxy_OpensearchserverlessSecurityPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchserverlessSecurityPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateOpensearchserverlessSecurityPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

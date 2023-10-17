@@ -7,6 +7,10 @@ package quicksighttemplatealias
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (q *jsiiProxy_QuicksightTemplateAlias) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightTemplateAlias) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (q *jsiiProxy_QuicksightTemplateAlias) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (q *jsiiProxy_QuicksightTemplateAlias) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightTemplateAlias) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (q *jsiiProxy_QuicksightTemplateAlias) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightTemplateAlias) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateQuicksightTemplateAlias_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

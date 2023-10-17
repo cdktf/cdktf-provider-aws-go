@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsConnectRoutingProfile) validateOverrideLogicalIdParame
 	return nil
 }
 
+func validateDataAwsConnectRoutingProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsConnectRoutingProfile_IsConstructParameters(x interface{}) error {
 	return nil
 }

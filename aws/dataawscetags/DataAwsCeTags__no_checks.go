@@ -67,6 +67,10 @@ func (d *jsiiProxy_DataAwsCeTags) validatePutTimePeriodParameters(value *DataAws
 	return nil
 }
 
+func validateDataAwsCeTags_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsCeTags_IsConstructParameters(x interface{}) error {
 	return nil
 }

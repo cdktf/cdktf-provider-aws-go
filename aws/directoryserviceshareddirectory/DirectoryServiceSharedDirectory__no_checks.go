@@ -7,6 +7,10 @@ package directoryserviceshareddirectory
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DirectoryServiceSharedDirectory) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectoryServiceSharedDirectory) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectory) validateGetStringMapAttribut
 	return nil
 }
 
+func (d *jsiiProxy_DirectoryServiceSharedDirectory) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectoryServiceSharedDirectory) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectoryServiceSharedDirectory) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectory) validatePutTargetParameters(
 }
 
 func (d *jsiiProxy_DirectoryServiceSharedDirectory) validatePutTimeoutsParameters(value *DirectoryServiceSharedDirectoryTimeouts) error {
+	return nil
+}
+
+func validateDirectoryServiceSharedDirectory_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

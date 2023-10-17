@@ -7,6 +7,10 @@ package appmeshvirtualrouter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppmeshVirtualRouter) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppmeshVirtualRouter) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AppmeshVirtualRouter) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (a *jsiiProxy_AppmeshVirtualRouter) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppmeshVirtualRouter) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppmeshVirtualRouter) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AppmeshVirtualRouter) validateOverrideLogicalIdParameters(new
 }
 
 func (a *jsiiProxy_AppmeshVirtualRouter) validatePutSpecParameters(value *AppmeshVirtualRouterSpec) error {
+	return nil
+}
+
+func validateAppmeshVirtualRouter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

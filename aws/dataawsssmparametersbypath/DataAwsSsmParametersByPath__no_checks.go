@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsSsmParametersByPath) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func validateDataAwsSsmParametersByPath_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsSsmParametersByPath_IsConstructParameters(x interface{}) error {
 	return nil
 }

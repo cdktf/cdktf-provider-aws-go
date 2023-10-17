@@ -7,6 +7,10 @@ package elasticbeanstalkconfigurationtemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateGetStringMapAt
 	return nil
 }
 
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validateOverrideLogica
 }
 
 func (e *jsiiProxy_ElasticBeanstalkConfigurationTemplate) validatePutSettingParameters(value interface{}) error {
+	return nil
+}
+
+func validateElasticBeanstalkConfigurationTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

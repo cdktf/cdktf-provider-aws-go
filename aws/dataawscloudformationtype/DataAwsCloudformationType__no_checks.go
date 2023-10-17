@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsCloudformationType) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func validateDataAwsCloudformationType_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsCloudformationType_IsConstructParameters(x interface{}) error {
 	return nil
 }

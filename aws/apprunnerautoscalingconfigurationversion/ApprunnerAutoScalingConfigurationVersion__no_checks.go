@@ -7,6 +7,10 @@ package apprunnerautoscalingconfigurationversion
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateGetStringMa
 	return nil
 }
 
+func (a *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateApprunnerAutoScalingConfigurationVersion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

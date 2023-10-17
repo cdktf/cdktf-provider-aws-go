@@ -7,6 +7,10 @@ package quicksightdataset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (q *jsiiProxy_QuicksightDataSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightDataSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (q *jsiiProxy_QuicksightDataSet) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (q *jsiiProxy_QuicksightDataSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightDataSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (q *jsiiProxy_QuicksightDataSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -92,6 +104,10 @@ func (q *jsiiProxy_QuicksightDataSet) validatePutRowLevelPermissionDataSetParame
 }
 
 func (q *jsiiProxy_QuicksightDataSet) validatePutRowLevelPermissionTagConfigurationParameters(value *QuicksightDataSetRowLevelPermissionTagConfiguration) error {
+	return nil
+}
+
+func validateQuicksightDataSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

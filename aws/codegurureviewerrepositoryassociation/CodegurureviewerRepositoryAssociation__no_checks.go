@@ -7,6 +7,10 @@ package codegurureviewerrepositoryassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CodegurureviewerRepositoryAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodegurureviewerRepositoryAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CodegurureviewerRepositoryAssociation) validateGetStringMapAt
 	return nil
 }
 
+func (c *jsiiProxy_CodegurureviewerRepositoryAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodegurureviewerRepositoryAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodegurureviewerRepositoryAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_CodegurureviewerRepositoryAssociation) validatePutRepositoryP
 }
 
 func (c *jsiiProxy_CodegurureviewerRepositoryAssociation) validatePutTimeoutsParameters(value *CodegurureviewerRepositoryAssociationTimeouts) error {
+	return nil
+}
+
+func validateCodegurureviewerRepositoryAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

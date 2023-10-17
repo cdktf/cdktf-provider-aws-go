@@ -7,6 +7,10 @@ package curreportdefinition
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CurReportDefinition) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CurReportDefinition) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_CurReportDefinition) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (c *jsiiProxy_CurReportDefinition) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CurReportDefinition) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_CurReportDefinition) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CurReportDefinition) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCurReportDefinition_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

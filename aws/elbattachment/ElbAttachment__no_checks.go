@@ -7,6 +7,10 @@ package elbattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ElbAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElbAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (e *jsiiProxy_ElbAttachment) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (e *jsiiProxy_ElbAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElbAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_ElbAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElbAttachment) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateElbAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

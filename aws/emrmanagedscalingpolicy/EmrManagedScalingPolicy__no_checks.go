@@ -7,6 +7,10 @@ package emrmanagedscalingpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EmrManagedScalingPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrManagedScalingPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EmrManagedScalingPolicy) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (e *jsiiProxy_EmrManagedScalingPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrManagedScalingPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmrManagedScalingPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_EmrManagedScalingPolicy) validateOverrideLogicalIdParameters(
 }
 
 func (e *jsiiProxy_EmrManagedScalingPolicy) validatePutComputeLimitsParameters(value interface{}) error {
+	return nil
+}
+
+func validateEmrManagedScalingPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

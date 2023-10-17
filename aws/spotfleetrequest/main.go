@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequest",
 		reflect.TypeOf((*SpotFleetRequest)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allocationStrategy", GoGetter: "AllocationStrategy"},
 			_jsii_.MemberProperty{JsiiProperty: "allocationStrategyInput", GoGetter: "AllocationStrategyInput"},
@@ -45,6 +46,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "iamFleetRoleInput", GoGetter: "IamFleetRoleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceInterruptionBehaviour", GoGetter: "InstanceInterruptionBehaviour"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceInterruptionBehaviourInput", GoGetter: "InstanceInterruptionBehaviourInput"},
 			_jsii_.MemberProperty{JsiiProperty: "instancePoolsToUseCount", GoGetter: "InstancePoolsToUseCount"},
@@ -57,6 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBalancers", GoGetter: "LoadBalancers"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBalancersInput", GoGetter: "LoadBalancersInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "onDemandAllocationStrategy", GoGetter: "OnDemandAllocationStrategy"},
 			_jsii_.MemberProperty{JsiiProperty: "onDemandAllocationStrategyInput", GoGetter: "OnDemandAllocationStrategyInput"},

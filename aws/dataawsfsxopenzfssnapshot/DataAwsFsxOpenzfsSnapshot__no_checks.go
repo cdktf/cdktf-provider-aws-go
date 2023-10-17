@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsFsxOpenzfsSnapshot) validatePutFilterParameters(value 
 	return nil
 }
 
+func validateDataAwsFsxOpenzfsSnapshot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsFsxOpenzfsSnapshot_IsConstructParameters(x interface{}) error {
 	return nil
 }

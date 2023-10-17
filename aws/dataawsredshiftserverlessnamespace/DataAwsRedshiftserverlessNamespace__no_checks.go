@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsRedshiftserverlessNamespace) validateOverrideLogicalId
 	return nil
 }
 
+func validateDataAwsRedshiftserverlessNamespace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsRedshiftserverlessNamespace_IsConstructParameters(x interface{}) error {
 	return nil
 }

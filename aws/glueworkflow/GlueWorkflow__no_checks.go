@@ -7,6 +7,10 @@ package glueworkflow
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GlueWorkflow) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueWorkflow) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (g *jsiiProxy_GlueWorkflow) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (g *jsiiProxy_GlueWorkflow) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueWorkflow) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (g *jsiiProxy_GlueWorkflow) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueWorkflow) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateGlueWorkflow_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

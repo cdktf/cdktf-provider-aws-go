@@ -7,6 +7,10 @@ package cleanroomscollaboration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CleanroomsCollaboration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CleanroomsCollaboration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CleanroomsCollaboration) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_CleanroomsCollaboration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CleanroomsCollaboration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CleanroomsCollaboration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_CleanroomsCollaboration) validatePutMemberParameters(value in
 }
 
 func (c *jsiiProxy_CleanroomsCollaboration) validatePutTimeoutsParameters(value *CleanroomsCollaborationTimeouts) error {
+	return nil
+}
+
+func validateCleanroomsCollaboration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

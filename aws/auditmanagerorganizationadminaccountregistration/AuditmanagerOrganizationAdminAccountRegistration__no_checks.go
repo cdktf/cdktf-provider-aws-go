@@ -7,6 +7,10 @@ package auditmanagerorganizationadminaccountregistration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateGet
 	return nil
 }
 
+func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAuditmanagerOrganizationAdminAccountRegistration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

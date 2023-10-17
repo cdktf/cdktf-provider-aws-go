@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) validatePutFilterParamet
 	return nil
 }
 
+func validateDataAwsImagebuilderContainerRecipes_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsImagebuilderContainerRecipes_IsConstructParameters(x interface{}) error {
 	return nil
 }

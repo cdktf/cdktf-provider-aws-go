@@ -7,6 +7,10 @@ package gameliftalias
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GameliftAlias) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GameliftAlias) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GameliftAlias) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (g *jsiiProxy_GameliftAlias) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GameliftAlias) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GameliftAlias) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GameliftAlias) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (g *jsiiProxy_GameliftAlias) validatePutRoutingStrategyParameters(value *GameliftAliasRoutingStrategy) error {
+	return nil
+}
+
+func validateGameliftAlias_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

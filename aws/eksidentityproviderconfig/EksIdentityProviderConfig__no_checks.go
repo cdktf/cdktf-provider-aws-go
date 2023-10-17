@@ -7,6 +7,10 @@ package eksidentityproviderconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EksIdentityProviderConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EksIdentityProviderConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EksIdentityProviderConfig) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (e *jsiiProxy_EksIdentityProviderConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EksIdentityProviderConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EksIdentityProviderConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (e *jsiiProxy_EksIdentityProviderConfig) validatePutOidcParameters(value *E
 }
 
 func (e *jsiiProxy_EksIdentityProviderConfig) validatePutTimeoutsParameters(value *EksIdentityProviderConfigTimeouts) error {
+	return nil
+}
+
+func validateEksIdentityProviderConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

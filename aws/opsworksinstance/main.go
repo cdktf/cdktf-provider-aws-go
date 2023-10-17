@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.opsworksInstance.OpsworksInstance",
 		reflect.TypeOf((*OpsworksInstance)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "agentVersion", GoGetter: "AgentVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "agentVersionInput", GoGetter: "AgentVersionInput"},
@@ -63,6 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "hostnameInput", GoGetter: "HostnameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "infrastructureClass", GoGetter: "InfrastructureClass"},
 			_jsii_.MemberProperty{JsiiProperty: "infrastructureClassInput", GoGetter: "InfrastructureClassInput"},
 			_jsii_.MemberProperty{JsiiProperty: "installUpdatesOnBoot", GoGetter: "InstallUpdatesOnBoot"},
@@ -76,6 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "layerIds", GoGetter: "LayerIds"},
 			_jsii_.MemberProperty{JsiiProperty: "layerIdsInput", GoGetter: "LayerIdsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "os", GoGetter: "Os"},
 			_jsii_.MemberProperty{JsiiProperty: "osInput", GoGetter: "OsInput"},

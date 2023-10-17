@@ -7,6 +7,10 @@ package rbinrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RbinRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RbinRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RbinRule) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (r *jsiiProxy_RbinRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RbinRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RbinRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (r *jsiiProxy_RbinRule) validatePutRetentionPeriodParameters(value *RbinRul
 }
 
 func (r *jsiiProxy_RbinRule) validatePutTimeoutsParameters(value *RbinRuleTimeouts) error {
+	return nil
+}
+
+func validateRbinRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

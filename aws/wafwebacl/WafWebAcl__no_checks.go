@@ -7,6 +7,10 @@ package wafwebacl
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WafWebAcl) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafWebAcl) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WafWebAcl) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (w *jsiiProxy_WafWebAcl) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafWebAcl) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafWebAcl) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (w *jsiiProxy_WafWebAcl) validatePutLoggingConfigurationParameters(value *W
 }
 
 func (w *jsiiProxy_WafWebAcl) validatePutRulesParameters(value interface{}) error {
+	return nil
+}
+
+func validateWafWebAcl_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

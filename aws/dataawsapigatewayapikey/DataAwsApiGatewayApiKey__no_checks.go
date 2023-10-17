@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsApiGatewayApiKey) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func validateDataAwsApiGatewayApiKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsApiGatewayApiKey_IsConstructParameters(x interface{}) error {
 	return nil
 }

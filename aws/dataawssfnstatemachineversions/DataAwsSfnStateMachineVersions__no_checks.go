@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsSfnStateMachineVersions) validateOverrideLogicalIdPara
 	return nil
 }
 
+func validateDataAwsSfnStateMachineVersions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsSfnStateMachineVersions_IsConstructParameters(x interface{}) error {
 	return nil
 }

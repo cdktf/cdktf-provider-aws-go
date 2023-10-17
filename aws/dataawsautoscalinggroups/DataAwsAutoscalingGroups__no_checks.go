@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsAutoscalingGroups) validatePutFilterParameters(value i
 	return nil
 }
 
+func validateDataAwsAutoscalingGroups_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsAutoscalingGroups_IsConstructParameters(x interface{}) error {
 	return nil
 }

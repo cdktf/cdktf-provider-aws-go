@@ -7,6 +7,10 @@ package kinesisanalyticsv2application
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_Kinesisanalyticsv2Application) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_Kinesisanalyticsv2Application) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_Kinesisanalyticsv2Application) validateGetStringMapAttributeP
 	return nil
 }
 
+func (k *jsiiProxy_Kinesisanalyticsv2Application) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_Kinesisanalyticsv2Application) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_Kinesisanalyticsv2Application) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (k *jsiiProxy_Kinesisanalyticsv2Application) validatePutCloudwatchLoggingOp
 }
 
 func (k *jsiiProxy_Kinesisanalyticsv2Application) validatePutTimeoutsParameters(value *Kinesisanalyticsv2ApplicationTimeouts) error {
+	return nil
+}
+
+func validateKinesisanalyticsv2Application_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

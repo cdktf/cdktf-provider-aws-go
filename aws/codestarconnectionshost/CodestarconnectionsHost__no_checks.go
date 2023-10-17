@@ -7,6 +7,10 @@ package codestarconnectionshost
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CodestarconnectionsHost) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodestarconnectionsHost) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CodestarconnectionsHost) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_CodestarconnectionsHost) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodestarconnectionsHost) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodestarconnectionsHost) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_CodestarconnectionsHost) validatePutTimeoutsParameters(value 
 }
 
 func (c *jsiiProxy_CodestarconnectionsHost) validatePutVpcConfigurationParameters(value *CodestarconnectionsHostVpcConfiguration) error {
+	return nil
+}
+
+func validateCodestarconnectionsHost_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

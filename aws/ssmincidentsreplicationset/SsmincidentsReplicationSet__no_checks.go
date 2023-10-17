@@ -7,6 +7,10 @@ package ssmincidentsreplicationset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SsmincidentsReplicationSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsmincidentsReplicationSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SsmincidentsReplicationSet) validateGetStringMapAttributePara
 	return nil
 }
 
+func (s *jsiiProxy_SsmincidentsReplicationSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsmincidentsReplicationSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsmincidentsReplicationSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SsmincidentsReplicationSet) validatePutRegionParameters(value
 }
 
 func (s *jsiiProxy_SsmincidentsReplicationSet) validatePutTimeoutsParameters(value *SsmincidentsReplicationSetTimeouts) error {
+	return nil
+}
+
+func validateSsmincidentsReplicationSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

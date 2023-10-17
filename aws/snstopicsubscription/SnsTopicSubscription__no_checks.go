@@ -7,6 +7,10 @@ package snstopicsubscription
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SnsTopicSubscription) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SnsTopicSubscription) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (s *jsiiProxy_SnsTopicSubscription) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_SnsTopicSubscription) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SnsTopicSubscription) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_SnsTopicSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SnsTopicSubscription) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateSnsTopicSubscription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

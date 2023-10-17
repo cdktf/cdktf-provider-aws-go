@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsLbListener) validatePutTimeoutsParameters(value *DataA
 	return nil
 }
 
+func validateDataAwsLbListener_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsLbListener_IsConstructParameters(x interface{}) error {
 	return nil
 }

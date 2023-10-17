@@ -7,6 +7,10 @@ package instance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_Instance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Instance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_Instance) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (i *jsiiProxy_Instance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Instance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_Instance) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -108,6 +120,10 @@ func (i *jsiiProxy_Instance) validatePutRootBlockDeviceParameters(value *Instanc
 }
 
 func (i *jsiiProxy_Instance) validatePutTimeoutsParameters(value *InstanceTimeouts) error {
+	return nil
+}
+
+func validateInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

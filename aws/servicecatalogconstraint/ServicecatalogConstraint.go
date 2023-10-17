@@ -5,10 +5,10 @@ package servicecatalogconstraint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/servicecatalogconstraint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/servicecatalogconstraint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -86,6 +86,9 @@ type ServicecatalogConstraint interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -107,7 +110,12 @@ type ServicecatalogConstraint interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -649,6 +657,25 @@ func (j *jsiiProxy_ServicecatalogConstraint)SetType(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a ServicecatalogConstraint resource upon running "cdktf plan <stack-name>".
+func ServicecatalogConstraint_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateServicecatalogConstraint_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.servicecatalogConstraint.ServicecatalogConstraint",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -731,6 +758,17 @@ func ServicecatalogConstraint_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (s *jsiiProxy_ServicecatalogConstraint) AddMoveTarget(moveTarget *string) {
+	if err := s.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (s *jsiiProxy_ServicecatalogConstraint) AddOverride(path *string, value interface{}) {
@@ -888,6 +926,17 @@ func (s *jsiiProxy_ServicecatalogConstraint) GetStringMapAttribute(terraformAttr
 	return returns
 }
 
+func (s *jsiiProxy_ServicecatalogConstraint) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := s.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (s *jsiiProxy_ServicecatalogConstraint) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -902,6 +951,17 @@ func (s *jsiiProxy_ServicecatalogConstraint) InterpolationForAttribute(terraform
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_ServicecatalogConstraint) MoveTo(moveTarget *string, index interface{}) {
+	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (s *jsiiProxy_ServicecatalogConstraint) OverrideLogicalId(newLogicalId *string) {

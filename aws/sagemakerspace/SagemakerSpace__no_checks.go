@@ -7,6 +7,10 @@ package sagemakerspace
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SagemakerSpace) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerSpace) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SagemakerSpace) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerSpace) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerSpace) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerSpace) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SagemakerSpace) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (s *jsiiProxy_SagemakerSpace) validatePutSpaceSettingsParameters(value *SagemakerSpaceSpaceSettings) error {
+	return nil
+}
+
+func validateSagemakerSpace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

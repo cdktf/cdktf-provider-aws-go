@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.lambdaFunction.LambdaFunction",
 		reflect.TypeOf((*LambdaFunction)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "architectures", GoGetter: "Architectures"},
 			_jsii_.MemberProperty{JsiiProperty: "architecturesInput", GoGetter: "ArchitecturesInput"},
@@ -59,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "imageConfigInput", GoGetter: "ImageConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "imageUri", GoGetter: "ImageUri"},
 			_jsii_.MemberProperty{JsiiProperty: "imageUriInput", GoGetter: "ImageUriInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "invokeArn", GoGetter: "InvokeArn"},
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyArn", GoGetter: "KmsKeyArn"},
@@ -69,6 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "memorySize", GoGetter: "MemorySize"},
 			_jsii_.MemberProperty{JsiiProperty: "memorySizeInput", GoGetter: "MemorySizeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "packageType", GoGetter: "PackageType"},

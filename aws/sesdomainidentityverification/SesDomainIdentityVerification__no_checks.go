@@ -7,6 +7,10 @@ package sesdomainidentityverification
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SesDomainIdentityVerification) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SesDomainIdentityVerification) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SesDomainIdentityVerification) validateGetStringMapAttributeP
 	return nil
 }
 
+func (s *jsiiProxy_SesDomainIdentityVerification) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SesDomainIdentityVerification) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SesDomainIdentityVerification) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SesDomainIdentityVerification) validateOverrideLogicalIdParam
 }
 
 func (s *jsiiProxy_SesDomainIdentityVerification) validatePutTimeoutsParameters(value *SesDomainIdentityVerificationTimeouts) error {
+	return nil
+}
+
+func validateSesDomainIdentityVerification_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package resourceexplorer2index
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_Resourceexplorer2Index) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Resourceexplorer2Index) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_Resourceexplorer2Index) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (r *jsiiProxy_Resourceexplorer2Index) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Resourceexplorer2Index) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_Resourceexplorer2Index) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (r *jsiiProxy_Resourceexplorer2Index) validateOverrideLogicalIdParameters(n
 }
 
 func (r *jsiiProxy_Resourceexplorer2Index) validatePutTimeoutsParameters(value *Resourceexplorer2IndexTimeouts) error {
+	return nil
+}
+
+func validateResourceexplorer2Index_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsAppintegrationsEventIntegration) validateOverrideLogic
 	return nil
 }
 
+func validateDataAwsAppintegrationsEventIntegration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsAppintegrationsEventIntegration_IsConstructParameters(x interface{}) error {
 	return nil
 }

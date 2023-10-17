@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsGlobalacceleratorAccelerator) validateOverrideLogicalI
 	return nil
 }
 
+func validateDataAwsGlobalacceleratorAccelerator_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsGlobalacceleratorAccelerator_IsConstructParameters(x interface{}) error {
 	return nil
 }

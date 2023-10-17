@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsSignerSigningProfile) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func validateDataAwsSignerSigningProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsSignerSigningProfile_IsConstructParameters(x interface{}) error {
 	return nil
 }

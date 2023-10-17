@@ -7,6 +7,10 @@ package evidentlyfeature
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EvidentlyFeature) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EvidentlyFeature) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EvidentlyFeature) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (e *jsiiProxy_EvidentlyFeature) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EvidentlyFeature) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EvidentlyFeature) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (e *jsiiProxy_EvidentlyFeature) validatePutTimeoutsParameters(value *Eviden
 }
 
 func (e *jsiiProxy_EvidentlyFeature) validatePutVariationsParameters(value interface{}) error {
+	return nil
+}
+
+func validateEvidentlyFeature_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

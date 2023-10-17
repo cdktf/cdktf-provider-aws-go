@@ -5,10 +5,10 @@ package transferuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/transferuser/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/transferuser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -95,6 +95,9 @@ type TransferUser interface {
 	UserName() *string
 	SetUserName(val *string)
 	UserNameInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -116,7 +119,12 @@ type TransferUser interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -757,6 +765,25 @@ func (j *jsiiProxy_TransferUser)SetUserName(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a TransferUser resource upon running "cdktf plan <stack-name>".
+func TransferUser_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateTransferUser_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.transferUser.TransferUser",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -839,6 +866,17 @@ func TransferUser_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (t *jsiiProxy_TransferUser) AddMoveTarget(moveTarget *string) {
+	if err := t.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (t *jsiiProxy_TransferUser) AddOverride(path *string, value interface{}) {
@@ -996,6 +1034,17 @@ func (t *jsiiProxy_TransferUser) GetStringMapAttribute(terraformAttribute *strin
 	return returns
 }
 
+func (t *jsiiProxy_TransferUser) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := t.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (t *jsiiProxy_TransferUser) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1010,6 +1059,17 @@ func (t *jsiiProxy_TransferUser) InterpolationForAttribute(terraformAttribute *s
 	)
 
 	return returns
+}
+
+func (t *jsiiProxy_TransferUser) MoveTo(moveTarget *string, index interface{}) {
+	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (t *jsiiProxy_TransferUser) OverrideLogicalId(newLogicalId *string) {

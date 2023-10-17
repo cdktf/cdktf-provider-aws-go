@@ -7,6 +7,10 @@ package ramprincipalassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RamPrincipalAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RamPrincipalAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (r *jsiiProxy_RamPrincipalAssociation) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (r *jsiiProxy_RamPrincipalAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RamPrincipalAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_RamPrincipalAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RamPrincipalAssociation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRamPrincipalAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

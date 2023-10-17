@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) validatePutTimeoutsParameters(value 
 	return nil
 }
 
+func validateDataAwsEbsDefaultKmsKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEbsDefaultKmsKey_IsConstructParameters(x interface{}) error {
 	return nil
 }

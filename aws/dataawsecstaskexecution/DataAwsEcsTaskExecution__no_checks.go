@@ -75,6 +75,10 @@ func (d *jsiiProxy_DataAwsEcsTaskExecution) validatePutPlacementStrategyParamete
 	return nil
 }
 
+func validateDataAwsEcsTaskExecution_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEcsTaskExecution_IsConstructParameters(x interface{}) error {
 	return nil
 }

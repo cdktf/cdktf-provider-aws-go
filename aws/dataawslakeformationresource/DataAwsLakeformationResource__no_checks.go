@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsLakeformationResource) validateOverrideLogicalIdParame
 	return nil
 }
 
+func validateDataAwsLakeformationResource_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsLakeformationResource_IsConstructParameters(x interface{}) error {
 	return nil
 }

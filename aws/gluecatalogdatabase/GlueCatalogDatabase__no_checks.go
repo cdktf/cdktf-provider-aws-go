@@ -7,6 +7,10 @@ package gluecatalogdatabase
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GlueCatalogDatabase) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueCatalogDatabase) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GlueCatalogDatabase) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GlueCatalogDatabase) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueCatalogDatabase) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlueCatalogDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GlueCatalogDatabase) validatePutCreateTableDefaultPermissionP
 }
 
 func (g *jsiiProxy_GlueCatalogDatabase) validatePutTargetDatabaseParameters(value *GlueCatalogDatabaseTargetDatabase) error {
+	return nil
+}
+
+func validateGlueCatalogDatabase_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

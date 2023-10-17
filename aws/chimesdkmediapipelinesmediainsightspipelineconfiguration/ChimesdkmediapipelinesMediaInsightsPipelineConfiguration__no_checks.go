@@ -7,6 +7,10 @@ package chimesdkmediapipelinesmediainsightspipelineconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) val
 	return nil
 }
 
+func (c *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) val
 }
 
 func (c *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) validatePutTimeoutsParameters(value *ChimesdkmediapipelinesMediaInsightsPipelineConfigurationTimeouts) error {
+	return nil
+}
+
+func validateChimesdkmediapipelinesMediaInsightsPipelineConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsRdsReservedInstanceOffering) validateOverrideLogicalId
 	return nil
 }
 
+func validateDataAwsRdsReservedInstanceOffering_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsRdsReservedInstanceOffering_IsConstructParameters(x interface{}) error {
 	return nil
 }

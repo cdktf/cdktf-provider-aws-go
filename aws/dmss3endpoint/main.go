@@ -16,6 +16,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addColumnName", GoGetter: "AddColumnName"},
 			_jsii_.MemberProperty{JsiiProperty: "addColumnNameInput", GoGetter: "AddColumnNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "addTrailingPaddingCharacter", GoGetter: "AddTrailingPaddingCharacter"},
 			_jsii_.MemberProperty{JsiiProperty: "addTrailingPaddingCharacterInput", GoGetter: "AddTrailingPaddingCharacterInput"},
@@ -103,6 +104,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ignoreHeaderRows", GoGetter: "IgnoreHeaderRows"},
 			_jsii_.MemberProperty{JsiiProperty: "ignoreHeaderRowsInput", GoGetter: "IgnoreHeaderRowsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "includeOpForFullLoad", GoGetter: "IncludeOpForFullLoad"},
 			_jsii_.MemberProperty{JsiiProperty: "includeOpForFullLoadInput", GoGetter: "IncludeOpForFullLoadInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -111,6 +113,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "maxFileSize", GoGetter: "MaxFileSize"},
 			_jsii_.MemberProperty{JsiiProperty: "maxFileSizeInput", GoGetter: "MaxFileSizeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "parquetTimestampInMillisecond", GoGetter: "ParquetTimestampInMillisecond"},

@@ -7,6 +7,10 @@ package ssoadminpermissionsetinlinepolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateGetStringMapAttrib
 	return nil
 }
 
+func (s *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateOverrideLogicalIdP
 }
 
 func (s *jsiiProxy_SsoadminPermissionSetInlinePolicy) validatePutTimeoutsParameters(value *SsoadminPermissionSetInlinePolicyTimeouts) error {
+	return nil
+}
+
+func validateSsoadminPermissionSetInlinePolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

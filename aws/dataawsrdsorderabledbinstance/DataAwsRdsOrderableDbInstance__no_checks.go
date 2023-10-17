@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsRdsOrderableDbInstance) validateOverrideLogicalIdParam
 	return nil
 }
 
+func validateDataAwsRdsOrderableDbInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsRdsOrderableDbInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }

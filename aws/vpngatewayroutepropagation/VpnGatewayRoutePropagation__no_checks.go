@@ -7,6 +7,10 @@ package vpngatewayroutepropagation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpnGatewayRoutePropagation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpnGatewayRoutePropagation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VpnGatewayRoutePropagation) validateGetStringMapAttributePara
 	return nil
 }
 
+func (v *jsiiProxy_VpnGatewayRoutePropagation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpnGatewayRoutePropagation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpnGatewayRoutePropagation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (v *jsiiProxy_VpnGatewayRoutePropagation) validateOverrideLogicalIdParamete
 }
 
 func (v *jsiiProxy_VpnGatewayRoutePropagation) validatePutTimeoutsParameters(value *VpnGatewayRoutePropagationTimeouts) error {
+	return nil
+}
+
+func validateVpnGatewayRoutePropagation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

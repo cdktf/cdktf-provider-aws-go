@@ -7,6 +7,10 @@ package s3bucketintelligenttieringconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateGetStringMap
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) validatePutFilterPar
 }
 
 func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) validatePutTieringParameters(value interface{}) error {
+	return nil
+}
+
+func validateS3BucketIntelligentTieringConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsRdsClusters) validatePutFilterParameters(value interfa
 	return nil
 }
 
+func validateDataAwsRdsClusters_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsRdsClusters_IsConstructParameters(x interface{}) error {
 	return nil
 }

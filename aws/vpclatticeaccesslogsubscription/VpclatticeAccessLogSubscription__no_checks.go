@@ -7,6 +7,10 @@ package vpclatticeaccesslogsubscription
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpclatticeAccessLogSubscription) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpclatticeAccessLogSubscription) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (v *jsiiProxy_VpclatticeAccessLogSubscription) validateGetStringMapAttribut
 	return nil
 }
 
+func (v *jsiiProxy_VpclatticeAccessLogSubscription) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpclatticeAccessLogSubscription) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (v *jsiiProxy_VpclatticeAccessLogSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpclatticeAccessLogSubscription) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateVpclatticeAccessLogSubscription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

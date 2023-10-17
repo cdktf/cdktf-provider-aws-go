@@ -7,6 +7,10 @@ package iaminstanceprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IamInstanceProfile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamInstanceProfile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IamInstanceProfile) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (i *jsiiProxy_IamInstanceProfile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamInstanceProfile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IamInstanceProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamInstanceProfile) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIamInstanceProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

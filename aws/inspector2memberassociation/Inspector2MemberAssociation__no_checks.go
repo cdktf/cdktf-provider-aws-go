@@ -7,6 +7,10 @@ package inspector2memberassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_Inspector2MemberAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Inspector2MemberAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_Inspector2MemberAssociation) validateGetStringMapAttributePar
 	return nil
 }
 
+func (i *jsiiProxy_Inspector2MemberAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Inspector2MemberAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_Inspector2MemberAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_Inspector2MemberAssociation) validateOverrideLogicalIdParamet
 }
 
 func (i *jsiiProxy_Inspector2MemberAssociation) validatePutTimeoutsParameters(value *Inspector2MemberAssociationTimeouts) error {
+	return nil
+}
+
+func validateInspector2MemberAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

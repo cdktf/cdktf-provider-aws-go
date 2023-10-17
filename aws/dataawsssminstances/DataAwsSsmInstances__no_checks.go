@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsSsmInstances) validatePutFilterParameters(value interf
 	return nil
 }
 
+func validateDataAwsSsmInstances_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsSsmInstances_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package route53recoverycontrolconfigcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_Route53RecoverycontrolconfigCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53RecoverycontrolconfigCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigCluster) validateGetStringMapAttr
 	return nil
 }
 
+func (r *jsiiProxy_Route53RecoverycontrolconfigCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53RecoverycontrolconfigCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (r *jsiiProxy_Route53RecoverycontrolconfigCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53RecoverycontrolconfigCluster) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateRoute53RecoverycontrolconfigCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

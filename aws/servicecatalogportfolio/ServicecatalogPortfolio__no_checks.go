@@ -7,6 +7,10 @@ package servicecatalogportfolio
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServicecatalogPortfolio) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicecatalogPortfolio) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_ServicecatalogPortfolio) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_ServicecatalogPortfolio) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicecatalogPortfolio) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicecatalogPortfolio) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_ServicecatalogPortfolio) validateOverrideLogicalIdParameters(
 }
 
 func (s *jsiiProxy_ServicecatalogPortfolio) validatePutTimeoutsParameters(value *ServicecatalogPortfolioTimeouts) error {
+	return nil
+}
+
+func validateServicecatalogPortfolio_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsEmrReleaseLabels) validatePutFiltersParameters(value *
 	return nil
 }
 
+func validateDataAwsEmrReleaseLabels_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEmrReleaseLabels_IsConstructParameters(x interface{}) error {
 	return nil
 }

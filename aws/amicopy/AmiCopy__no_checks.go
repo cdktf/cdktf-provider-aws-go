@@ -7,6 +7,10 @@ package amicopy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AmiCopy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AmiCopy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AmiCopy) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (a *jsiiProxy_AmiCopy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AmiCopy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AmiCopy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (a *jsiiProxy_AmiCopy) validatePutEphemeralBlockDeviceParameters(value inte
 }
 
 func (a *jsiiProxy_AmiCopy) validatePutTimeoutsParameters(value *AmiCopyTimeouts) error {
+	return nil
+}
+
+func validateAmiCopy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

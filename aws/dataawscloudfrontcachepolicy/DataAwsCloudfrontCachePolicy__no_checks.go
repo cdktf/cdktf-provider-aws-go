@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsCloudfrontCachePolicy) validateOverrideLogicalIdParame
 	return nil
 }
 
+func validateDataAwsCloudfrontCachePolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsCloudfrontCachePolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

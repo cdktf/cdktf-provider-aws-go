@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroup",
 		reflect.TypeOf((*AutoscalingGroup)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZones", GoGetter: "AvailabilityZones"},
@@ -61,6 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ignoreFailedScalingActivities", GoGetter: "IgnoreFailedScalingActivities"},
 			_jsii_.MemberProperty{JsiiProperty: "ignoreFailedScalingActivitiesInput", GoGetter: "IgnoreFailedScalingActivitiesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "initialLifecycleHook", GoGetter: "InitialLifecycleHook"},
 			_jsii_.MemberProperty{JsiiProperty: "initialLifecycleHookInput", GoGetter: "InitialLifecycleHookInput"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceRefresh", GoGetter: "InstanceRefresh"},
@@ -85,6 +87,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "minSizeInput", GoGetter: "MinSizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mixedInstancesPolicy", GoGetter: "MixedInstancesPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "mixedInstancesPolicyInput", GoGetter: "MixedInstancesPolicyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "namePrefix", GoGetter: "NamePrefix"},

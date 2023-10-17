@@ -7,6 +7,10 @@ package internetmonitormonitor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_InternetmonitorMonitor) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_InternetmonitorMonitor) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_InternetmonitorMonitor) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (i *jsiiProxy_InternetmonitorMonitor) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_InternetmonitorMonitor) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_InternetmonitorMonitor) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (i *jsiiProxy_InternetmonitorMonitor) validatePutHealthEventsConfigParamete
 }
 
 func (i *jsiiProxy_InternetmonitorMonitor) validatePutInternetMeasurementsLogDeliveryParameters(value *InternetmonitorMonitorInternetMeasurementsLogDelivery) error {
+	return nil
+}
+
+func validateInternetmonitorMonitor_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

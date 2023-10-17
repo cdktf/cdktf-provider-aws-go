@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.eksNodeGroup.EksNodeGroup",
 		reflect.TypeOf((*EksNodeGroup)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "amiType", GoGetter: "AmiType"},
 			_jsii_.MemberProperty{JsiiProperty: "amiTypeInput", GoGetter: "AmiTypeInput"},
@@ -45,6 +46,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceTypes", GoGetter: "InstanceTypes"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceTypesInput", GoGetter: "InstanceTypesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -53,6 +55,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "launchTemplate", GoGetter: "LaunchTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "launchTemplateInput", GoGetter: "LaunchTemplateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeGroupName", GoGetter: "NodeGroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeGroupNameInput", GoGetter: "NodeGroupNameInput"},

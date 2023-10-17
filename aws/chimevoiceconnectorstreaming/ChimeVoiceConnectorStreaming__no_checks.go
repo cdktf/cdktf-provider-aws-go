@@ -7,6 +7,10 @@ package chimevoiceconnectorstreaming
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ChimeVoiceConnectorStreaming) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChimeVoiceConnectorStreaming) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ChimeVoiceConnectorStreaming) validateGetStringMapAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_ChimeVoiceConnectorStreaming) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChimeVoiceConnectorStreaming) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ChimeVoiceConnectorStreaming) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ChimeVoiceConnectorStreaming) validateOverrideLogicalIdParame
 }
 
 func (c *jsiiProxy_ChimeVoiceConnectorStreaming) validatePutMediaInsightsConfigurationParameters(value *ChimeVoiceConnectorStreamingMediaInsightsConfiguration) error {
+	return nil
+}
+
+func validateChimeVoiceConnectorStreaming_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

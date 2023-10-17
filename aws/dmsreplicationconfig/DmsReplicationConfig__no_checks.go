@@ -7,6 +7,10 @@ package dmsreplicationconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DmsReplicationConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DmsReplicationConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DmsReplicationConfig) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (d *jsiiProxy_DmsReplicationConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DmsReplicationConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DmsReplicationConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DmsReplicationConfig) validatePutComputeConfigParameters(valu
 }
 
 func (d *jsiiProxy_DmsReplicationConfig) validatePutTimeoutsParameters(value *DmsReplicationConfigTimeouts) error {
+	return nil
+}
+
+func validateDmsReplicationConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

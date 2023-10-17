@@ -5,10 +5,10 @@ package configorganizationconformancepack
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/configorganizationconformancepack/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/configorganizationconformancepack/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -87,6 +87,9 @@ type ConfigOrganizationConformancePack interface {
 	TerraformResourceType() *string
 	Timeouts() ConfigOrganizationConformancePackTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -108,7 +111,12 @@ type ConfigOrganizationConformancePack interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -665,6 +673,25 @@ func (j *jsiiProxy_ConfigOrganizationConformancePack)SetTemplateS3Uri(val *strin
 	)
 }
 
+// Generates CDKTF code for importing a ConfigOrganizationConformancePack resource upon running "cdktf plan <stack-name>".
+func ConfigOrganizationConformancePack_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateConfigOrganizationConformancePack_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.configOrganizationConformancePack.ConfigOrganizationConformancePack",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -747,6 +774,17 @@ func ConfigOrganizationConformancePack_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (c *jsiiProxy_ConfigOrganizationConformancePack) AddMoveTarget(moveTarget *string) {
+	if err := c.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (c *jsiiProxy_ConfigOrganizationConformancePack) AddOverride(path *string, value interface{}) {
@@ -904,6 +942,17 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) GetStringMapAttribute(terr
 	return returns
 }
 
+func (c *jsiiProxy_ConfigOrganizationConformancePack) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := c.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (c *jsiiProxy_ConfigOrganizationConformancePack) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -918,6 +967,17 @@ func (c *jsiiProxy_ConfigOrganizationConformancePack) InterpolationForAttribute(
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_ConfigOrganizationConformancePack) MoveTo(moveTarget *string, index interface{}) {
+	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (c *jsiiProxy_ConfigOrganizationConformancePack) OverrideLogicalId(newLogicalId *string) {

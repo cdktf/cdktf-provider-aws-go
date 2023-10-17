@@ -7,6 +7,10 @@ package rumappmonitor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RumAppMonitor) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RumAppMonitor) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RumAppMonitor) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (r *jsiiProxy_RumAppMonitor) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RumAppMonitor) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RumAppMonitor) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (r *jsiiProxy_RumAppMonitor) validatePutAppMonitorConfigurationParameters(v
 }
 
 func (r *jsiiProxy_RumAppMonitor) validatePutCustomEventsParameters(value *RumAppMonitorCustomEvents) error {
+	return nil
+}
+
+func validateRumAppMonitor_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

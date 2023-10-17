@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.elasticacheCluster.ElasticacheCluster",
 		reflect.TypeOf((*ElasticacheCluster)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "applyImmediately", GoGetter: "ApplyImmediately"},
 			_jsii_.MemberProperty{JsiiProperty: "applyImmediatelyInput", GoGetter: "ApplyImmediatelyInput"},
@@ -55,6 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ipDiscovery", GoGetter: "IpDiscovery"},
 			_jsii_.MemberProperty{JsiiProperty: "ipDiscoveryInput", GoGetter: "IpDiscoveryInput"},
@@ -63,6 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "logDeliveryConfigurationInput", GoGetter: "LogDeliveryConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindow", GoGetter: "MaintenanceWindow"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindowInput", GoGetter: "MaintenanceWindowInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "networkType", GoGetter: "NetworkType"},
 			_jsii_.MemberProperty{JsiiProperty: "networkTypeInput", GoGetter: "NetworkTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

@@ -7,6 +7,10 @@ package route53resolverendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_Route53ResolverEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53ResolverEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_Route53ResolverEndpoint) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (r *jsiiProxy_Route53ResolverEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53ResolverEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53ResolverEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (r *jsiiProxy_Route53ResolverEndpoint) validatePutIpAddressParameters(value
 }
 
 func (r *jsiiProxy_Route53ResolverEndpoint) validatePutTimeoutsParameters(value *Route53ResolverEndpointTimeouts) error {
+	return nil
+}
+
+func validateRoute53ResolverEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

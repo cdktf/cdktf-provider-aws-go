@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsVpcIpamPools) validatePutFilterParameters(value interf
 	return nil
 }
 
+func validateDataAwsVpcIpamPools_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsVpcIpamPools_IsConstructParameters(x interface{}) error {
 	return nil
 }

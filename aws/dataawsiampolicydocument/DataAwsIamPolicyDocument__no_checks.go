@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsIamPolicyDocument) validatePutStatementParameters(valu
 	return nil
 }
 
+func validateDataAwsIamPolicyDocument_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsIamPolicyDocument_IsConstructParameters(x interface{}) error {
 	return nil
 }

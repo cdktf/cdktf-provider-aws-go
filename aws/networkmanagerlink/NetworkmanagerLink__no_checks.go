@@ -7,6 +7,10 @@ package networkmanagerlink
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkmanagerLink) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerLink) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkmanagerLink) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (n *jsiiProxy_NetworkmanagerLink) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerLink) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerLink) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (n *jsiiProxy_NetworkmanagerLink) validatePutBandwidthParameters(value *Net
 }
 
 func (n *jsiiProxy_NetworkmanagerLink) validatePutTimeoutsParameters(value *NetworkmanagerLinkTimeouts) error {
+	return nil
+}
+
+func validateNetworkmanagerLink_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

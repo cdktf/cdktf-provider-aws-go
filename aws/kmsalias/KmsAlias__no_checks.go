@@ -7,6 +7,10 @@ package kmsalias
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KmsAlias) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsAlias) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (k *jsiiProxy_KmsAlias) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (k *jsiiProxy_KmsAlias) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsAlias) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (k *jsiiProxy_KmsAlias) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsAlias) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateKmsAlias_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

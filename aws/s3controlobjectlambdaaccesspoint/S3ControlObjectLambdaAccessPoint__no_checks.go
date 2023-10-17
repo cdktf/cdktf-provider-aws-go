@@ -7,6 +7,10 @@ package s3controlobjectlambdaaccesspoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) validateGetStringMapAttribu
 	return nil
 }
 
+func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) validateOverrideLogicalIdPa
 }
 
 func (s *jsiiProxy_S3ControlObjectLambdaAccessPoint) validatePutConfigurationParameters(value *S3ControlObjectLambdaAccessPointConfiguration) error {
+	return nil
+}
+
+func validateS3ControlObjectLambdaAccessPoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

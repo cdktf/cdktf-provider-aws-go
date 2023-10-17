@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsSesActiveReceiptRuleSet) validateOverrideLogicalIdPara
 	return nil
 }
 
+func validateDataAwsSesActiveReceiptRuleSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsSesActiveReceiptRuleSet_IsConstructParameters(x interface{}) error {
 	return nil
 }

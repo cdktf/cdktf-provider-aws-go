@@ -7,6 +7,10 @@ package opsworksjavaapplayer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OpsworksJavaAppLayer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksJavaAppLayer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OpsworksJavaAppLayer) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksJavaAppLayer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksJavaAppLayer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksJavaAppLayer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (o *jsiiProxy_OpsworksJavaAppLayer) validatePutEbsVolumeParameters(value in
 }
 
 func (o *jsiiProxy_OpsworksJavaAppLayer) validatePutLoadBasedAutoScalingParameters(value *OpsworksJavaAppLayerLoadBasedAutoScaling) error {
+	return nil
+}
+
+func validateOpsworksJavaAppLayer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package kinesisvideostream
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KinesisVideoStream) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KinesisVideoStream) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KinesisVideoStream) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (k *jsiiProxy_KinesisVideoStream) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KinesisVideoStream) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KinesisVideoStream) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (k *jsiiProxy_KinesisVideoStream) validateOverrideLogicalIdParameters(newLo
 }
 
 func (k *jsiiProxy_KinesisVideoStream) validatePutTimeoutsParameters(value *KinesisVideoStreamTimeouts) error {
+	return nil
+}
+
+func validateKinesisVideoStream_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

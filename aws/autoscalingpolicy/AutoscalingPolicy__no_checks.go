@@ -7,6 +7,10 @@ package autoscalingpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AutoscalingPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AutoscalingPolicy) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (a *jsiiProxy_AutoscalingPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutoscalingPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (a *jsiiProxy_AutoscalingPolicy) validatePutStepAdjustmentParameters(value 
 }
 
 func (a *jsiiProxy_AutoscalingPolicy) validatePutTargetTrackingConfigurationParameters(value *AutoscalingPolicyTargetTrackingConfiguration) error {
+	return nil
+}
+
+func validateAutoscalingPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

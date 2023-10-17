@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsImagebuilderInfrastructureConfiguration) validateOverr
 	return nil
 }
 
+func validateDataAwsImagebuilderInfrastructureConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsImagebuilderInfrastructureConfiguration_IsConstructParameters(x interface{}) error {
 	return nil
 }

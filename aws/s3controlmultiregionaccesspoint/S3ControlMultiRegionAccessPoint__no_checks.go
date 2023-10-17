@@ -7,6 +7,10 @@ package s3controlmultiregionaccesspoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) validateGetStringMapAttribut
 	return nil
 }
 
+func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) validatePutDetailsParameters
 }
 
 func (s *jsiiProxy_S3ControlMultiRegionAccessPoint) validatePutTimeoutsParameters(value *S3ControlMultiRegionAccessPointTimeouts) error {
+	return nil
+}
+
+func validateS3ControlMultiRegionAccessPoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

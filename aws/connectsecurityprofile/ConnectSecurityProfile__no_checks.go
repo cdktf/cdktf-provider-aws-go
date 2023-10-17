@@ -7,6 +7,10 @@ package connectsecurityprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConnectSecurityProfile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectSecurityProfile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_ConnectSecurityProfile) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (c *jsiiProxy_ConnectSecurityProfile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectSecurityProfile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_ConnectSecurityProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectSecurityProfile) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateConnectSecurityProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

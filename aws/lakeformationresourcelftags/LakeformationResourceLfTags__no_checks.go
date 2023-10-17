@@ -7,6 +7,10 @@ package lakeformationresourcelftags
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LakeformationResourceLfTags) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LakeformationResourceLfTags) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LakeformationResourceLfTags) validateGetStringMapAttributePar
 	return nil
 }
 
+func (l *jsiiProxy_LakeformationResourceLfTags) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LakeformationResourceLfTags) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LakeformationResourceLfTags) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (l *jsiiProxy_LakeformationResourceLfTags) validatePutTableWithColumnsParam
 }
 
 func (l *jsiiProxy_LakeformationResourceLfTags) validatePutTimeoutsParameters(value *LakeformationResourceLfTagsTimeouts) error {
+	return nil
+}
+
+func validateLakeformationResourceLfTags_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

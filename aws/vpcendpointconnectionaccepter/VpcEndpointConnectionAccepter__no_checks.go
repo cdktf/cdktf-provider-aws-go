@@ -7,6 +7,10 @@ package vpcendpointconnectionaccepter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpcEndpointConnectionAccepter) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpointConnectionAccepter) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (v *jsiiProxy_VpcEndpointConnectionAccepter) validateGetStringMapAttributeP
 	return nil
 }
 
+func (v *jsiiProxy_VpcEndpointConnectionAccepter) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpointConnectionAccepter) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (v *jsiiProxy_VpcEndpointConnectionAccepter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpointConnectionAccepter) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateVpcEndpointConnectionAccepter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package ecrrepositorypolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EcrRepositoryPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcrRepositoryPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (e *jsiiProxy_EcrRepositoryPolicy) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (e *jsiiProxy_EcrRepositoryPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcrRepositoryPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_EcrRepositoryPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcrRepositoryPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEcrRepositoryPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

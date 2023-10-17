@@ -7,6 +7,10 @@ package ebssnapshot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EbsSnapshot) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EbsSnapshot) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EbsSnapshot) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (e *jsiiProxy_EbsSnapshot) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EbsSnapshot) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EbsSnapshot) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_EbsSnapshot) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (e *jsiiProxy_EbsSnapshot) validatePutTimeoutsParameters(value *EbsSnapshotTimeouts) error {
+	return nil
+}
+
+func validateEbsSnapshot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

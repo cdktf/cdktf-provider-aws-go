@@ -7,6 +7,10 @@ package transfersshkey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TransferSshKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransferSshKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (t *jsiiProxy_TransferSshKey) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (t *jsiiProxy_TransferSshKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransferSshKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_TransferSshKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransferSshKey) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateTransferSshKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

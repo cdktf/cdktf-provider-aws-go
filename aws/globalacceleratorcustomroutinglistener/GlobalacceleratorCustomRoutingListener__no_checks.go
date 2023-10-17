@@ -7,6 +7,10 @@ package globalacceleratorcustomroutinglistener
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GlobalacceleratorCustomRoutingListener) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlobalacceleratorCustomRoutingListener) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GlobalacceleratorCustomRoutingListener) validateGetStringMapA
 	return nil
 }
 
+func (g *jsiiProxy_GlobalacceleratorCustomRoutingListener) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlobalacceleratorCustomRoutingListener) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlobalacceleratorCustomRoutingListener) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GlobalacceleratorCustomRoutingListener) validatePutPortRangeP
 }
 
 func (g *jsiiProxy_GlobalacceleratorCustomRoutingListener) validatePutTimeoutsParameters(value *GlobalacceleratorCustomRoutingListenerTimeouts) error {
+	return nil
+}
+
+func validateGlobalacceleratorCustomRoutingListener_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

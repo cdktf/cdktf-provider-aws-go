@@ -7,6 +7,10 @@ package sagemakerworkforce
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SagemakerWorkforce) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerWorkforce) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SagemakerWorkforce) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerWorkforce) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerWorkforce) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerWorkforce) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (s *jsiiProxy_SagemakerWorkforce) validatePutSourceIpConfigParameters(value
 }
 
 func (s *jsiiProxy_SagemakerWorkforce) validatePutWorkforceVpcConfigParameters(value *SagemakerWorkforceWorkforceVpcConfig) error {
+	return nil
+}
+
+func validateSagemakerWorkforce_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package lightsaillbcertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LightsailLbCertificate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailLbCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (l *jsiiProxy_LightsailLbCertificate) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (l *jsiiProxy_LightsailLbCertificate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailLbCertificate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LightsailLbCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailLbCertificate) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLightsailLbCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

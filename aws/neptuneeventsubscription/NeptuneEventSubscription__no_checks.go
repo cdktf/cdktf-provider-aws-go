@@ -7,6 +7,10 @@ package neptuneeventsubscription
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NeptuneEventSubscription) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NeptuneEventSubscription) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NeptuneEventSubscription) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (n *jsiiProxy_NeptuneEventSubscription) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NeptuneEventSubscription) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NeptuneEventSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NeptuneEventSubscription) validateOverrideLogicalIdParameters
 }
 
 func (n *jsiiProxy_NeptuneEventSubscription) validatePutTimeoutsParameters(value *NeptuneEventSubscriptionTimeouts) error {
+	return nil
+}
+
+func validateNeptuneEventSubscription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package iotauthorizer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IotAuthorizer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotAuthorizer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IotAuthorizer) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (i *jsiiProxy_IotAuthorizer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotAuthorizer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IotAuthorizer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotAuthorizer) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIotAuthorizer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

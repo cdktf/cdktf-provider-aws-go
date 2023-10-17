@@ -7,6 +7,10 @@ package keyspacestable
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KeyspacesTable) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyspacesTable) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KeyspacesTable) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (k *jsiiProxy_KeyspacesTable) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyspacesTable) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KeyspacesTable) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -84,6 +96,10 @@ func (k *jsiiProxy_KeyspacesTable) validatePutTimeoutsParameters(value *Keyspace
 }
 
 func (k *jsiiProxy_KeyspacesTable) validatePutTtlParameters(value *KeyspacesTableTtl) error {
+	return nil
+}
+
+func validateKeyspacesTable_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

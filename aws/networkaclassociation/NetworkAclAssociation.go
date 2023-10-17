@@ -5,10 +5,10 @@ package networkaclassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/networkaclassociation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkaclassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -70,6 +70,9 @@ type NetworkAclAssociation interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -91,7 +94,12 @@ type NetworkAclAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -465,6 +473,25 @@ func (j *jsiiProxy_NetworkAclAssociation)SetSubnetId(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a NetworkAclAssociation resource upon running "cdktf plan <stack-name>".
+func NetworkAclAssociation_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateNetworkAclAssociation_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.networkAclAssociation.NetworkAclAssociation",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -547,6 +574,17 @@ func NetworkAclAssociation_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (n *jsiiProxy_NetworkAclAssociation) AddMoveTarget(moveTarget *string) {
+	if err := n.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (n *jsiiProxy_NetworkAclAssociation) AddOverride(path *string, value interface{}) {
@@ -704,6 +742,17 @@ func (n *jsiiProxy_NetworkAclAssociation) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
+func (n *jsiiProxy_NetworkAclAssociation) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := n.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (n *jsiiProxy_NetworkAclAssociation) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -718,6 +767,17 @@ func (n *jsiiProxy_NetworkAclAssociation) InterpolationForAttribute(terraformAtt
 	)
 
 	return returns
+}
+
+func (n *jsiiProxy_NetworkAclAssociation) MoveTo(moveTarget *string, index interface{}) {
+	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (n *jsiiProxy_NetworkAclAssociation) OverrideLogicalId(newLogicalId *string) {

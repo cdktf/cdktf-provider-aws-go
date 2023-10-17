@@ -7,6 +7,10 @@ package sesreceiptfilter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SesReceiptFilter) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SesReceiptFilter) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (s *jsiiProxy_SesReceiptFilter) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (s *jsiiProxy_SesReceiptFilter) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SesReceiptFilter) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_SesReceiptFilter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SesReceiptFilter) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateSesReceiptFilter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

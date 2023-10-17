@@ -7,6 +7,10 @@ package codebuildwebhook
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CodebuildWebhook) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodebuildWebhook) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CodebuildWebhook) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (c *jsiiProxy_CodebuildWebhook) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodebuildWebhook) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodebuildWebhook) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CodebuildWebhook) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (c *jsiiProxy_CodebuildWebhook) validatePutFilterGroupParameters(value interface{}) error {
+	return nil
+}
+
+func validateCodebuildWebhook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

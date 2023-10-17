@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsSsmincidentsResponsePlan) validateOverrideLogicalIdPar
 	return nil
 }
 
+func validateDataAwsSsmincidentsResponsePlan_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsSsmincidentsResponsePlan_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAwsEbsSnapshotIds) validatePutTimeoutsParameters(value *D
 	return nil
 }
 
+func validateDataAwsEbsSnapshotIds_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEbsSnapshotIds_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package codepipeline
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_Codepipeline) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Codepipeline) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_Codepipeline) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (c *jsiiProxy_Codepipeline) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Codepipeline) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_Codepipeline) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_Codepipeline) validatePutArtifactStoreParameters(value interf
 }
 
 func (c *jsiiProxy_Codepipeline) validatePutStageParameters(value interface{}) error {
+	return nil
+}
+
+func validateCodepipeline_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

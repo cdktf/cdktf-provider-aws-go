@@ -7,6 +7,10 @@ package servicecatalogorganizationsaccess
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServicecatalogOrganizationsAccess) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicecatalogOrganizationsAccess) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) validateGetStringMapAttrib
 	return nil
 }
 
+func (s *jsiiProxy_ServicecatalogOrganizationsAccess) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicecatalogOrganizationsAccess) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicecatalogOrganizationsAccess) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_ServicecatalogOrganizationsAccess) validateOverrideLogicalIdP
 }
 
 func (s *jsiiProxy_ServicecatalogOrganizationsAccess) validatePutTimeoutsParameters(value *ServicecatalogOrganizationsAccessTimeouts) error {
+	return nil
+}
+
+func validateServicecatalogOrganizationsAccess_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

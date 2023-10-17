@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsKmsSecrets) validatePutSecretParameters(value interfac
 	return nil
 }
 
+func validateDataAwsKmsSecrets_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsKmsSecrets_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsEksClusterAuth) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func validateDataAwsEksClusterAuth_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEksClusterAuth_IsConstructParameters(x interface{}) error {
 	return nil
 }

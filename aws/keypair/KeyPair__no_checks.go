@@ -7,6 +7,10 @@ package keypair
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KeyPair) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyPair) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (k *jsiiProxy_KeyPair) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (k *jsiiProxy_KeyPair) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyPair) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (k *jsiiProxy_KeyPair) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyPair) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateKeyPair_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

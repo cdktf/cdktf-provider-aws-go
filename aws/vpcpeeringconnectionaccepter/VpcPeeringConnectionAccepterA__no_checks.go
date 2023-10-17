@@ -7,6 +7,10 @@ package vpcpeeringconnectionaccepter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpcPeeringConnectionAccepterA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcPeeringConnectionAccepterA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) validateGetStringMapAttributeP
 	return nil
 }
 
+func (v *jsiiProxy_VpcPeeringConnectionAccepterA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcPeeringConnectionAccepterA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcPeeringConnectionAccepterA) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) validatePutRequesterParameters
 }
 
 func (v *jsiiProxy_VpcPeeringConnectionAccepterA) validatePutTimeoutsParameters(value *VpcPeeringConnectionAccepterTimeouts) error {
+	return nil
+}
+
+func validateVpcPeeringConnectionAccepterA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

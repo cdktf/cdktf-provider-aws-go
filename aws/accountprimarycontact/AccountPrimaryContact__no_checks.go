@@ -7,6 +7,10 @@ package accountprimarycontact
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AccountPrimaryContact) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccountPrimaryContact) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_AccountPrimaryContact) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (a *jsiiProxy_AccountPrimaryContact) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccountPrimaryContact) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AccountPrimaryContact) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccountPrimaryContact) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAccountPrimaryContact_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsStoragegatewayLocalDisk) validateOverrideLogicalIdPara
 	return nil
 }
 
+func validateDataAwsStoragegatewayLocalDisk_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsStoragegatewayLocalDisk_IsConstructParameters(x interface{}) error {
 	return nil
 }

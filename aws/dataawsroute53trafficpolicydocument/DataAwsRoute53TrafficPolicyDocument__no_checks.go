@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocument) validatePutRuleParameter
 	return nil
 }
 
+func validateDataAwsRoute53TrafficPolicyDocument_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsRoute53TrafficPolicyDocument_IsConstructParameters(x interface{}) error {
 	return nil
 }

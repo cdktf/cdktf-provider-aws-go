@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsRegions) validatePutFilterParameters(value interface{}
 	return nil
 }
 
+func validateDataAwsRegions_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsRegions_IsConstructParameters(x interface{}) error {
 	return nil
 }

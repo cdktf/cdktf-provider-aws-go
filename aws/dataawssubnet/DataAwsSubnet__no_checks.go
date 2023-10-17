@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAwsSubnet) validatePutTimeoutsParameters(value *DataAwsSu
 	return nil
 }
 
+func validateDataAwsSubnet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsSubnet_IsConstructParameters(x interface{}) error {
 	return nil
 }

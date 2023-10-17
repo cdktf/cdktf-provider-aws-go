@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsQuicksightUser) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func validateDataAwsQuicksightUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsQuicksightUser_IsConstructParameters(x interface{}) error {
 	return nil
 }

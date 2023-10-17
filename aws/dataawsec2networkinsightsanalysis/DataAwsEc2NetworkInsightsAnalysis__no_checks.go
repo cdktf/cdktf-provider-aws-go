@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsEc2NetworkInsightsAnalysis) validatePutFilterParameter
 	return nil
 }
 
+func validateDataAwsEc2NetworkInsightsAnalysis_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEc2NetworkInsightsAnalysis_IsConstructParameters(x interface{}) error {
 	return nil
 }

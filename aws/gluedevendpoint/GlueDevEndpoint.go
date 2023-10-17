@@ -5,10 +5,10 @@ package gluedevendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/gluedevendpoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/gluedevendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -121,6 +121,9 @@ type GlueDevEndpoint interface {
 	WorkerTypeInput() *string
 	YarnEndpointAddress() *string
 	ZeppelinRemoteSparkInterpreterPort() *float64
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -142,7 +145,12 @@ type GlueDevEndpoint interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -1054,6 +1062,25 @@ func (j *jsiiProxy_GlueDevEndpoint)SetWorkerType(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a GlueDevEndpoint resource upon running "cdktf plan <stack-name>".
+func GlueDevEndpoint_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateGlueDevEndpoint_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.glueDevEndpoint.GlueDevEndpoint",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -1136,6 +1163,17 @@ func GlueDevEndpoint_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (g *jsiiProxy_GlueDevEndpoint) AddMoveTarget(moveTarget *string) {
+	if err := g.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (g *jsiiProxy_GlueDevEndpoint) AddOverride(path *string, value interface{}) {
@@ -1293,6 +1331,17 @@ func (g *jsiiProxy_GlueDevEndpoint) GetStringMapAttribute(terraformAttribute *st
 	return returns
 }
 
+func (g *jsiiProxy_GlueDevEndpoint) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := g.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (g *jsiiProxy_GlueDevEndpoint) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1307,6 +1356,17 @@ func (g *jsiiProxy_GlueDevEndpoint) InterpolationForAttribute(terraformAttribute
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GlueDevEndpoint) MoveTo(moveTarget *string, index interface{}) {
+	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (g *jsiiProxy_GlueDevEndpoint) OverrideLogicalId(newLogicalId *string) {

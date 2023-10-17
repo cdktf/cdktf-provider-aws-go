@@ -7,6 +7,10 @@ package iamaccesskey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IamAccessKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamAccessKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IamAccessKey) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (i *jsiiProxy_IamAccessKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamAccessKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IamAccessKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamAccessKey) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIamAccessKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

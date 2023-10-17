@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsWafv2RuleGroup) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func validateDataAwsWafv2RuleGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsWafv2RuleGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

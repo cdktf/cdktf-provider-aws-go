@@ -7,6 +7,10 @@ package quicksightrefreshschedule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (q *jsiiProxy_QuicksightRefreshSchedule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightRefreshSchedule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (q *jsiiProxy_QuicksightRefreshSchedule) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (q *jsiiProxy_QuicksightRefreshSchedule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightRefreshSchedule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (q *jsiiProxy_QuicksightRefreshSchedule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (q *jsiiProxy_QuicksightRefreshSchedule) validateOverrideLogicalIdParameter
 }
 
 func (q *jsiiProxy_QuicksightRefreshSchedule) validatePutScheduleParameters(value interface{}) error {
+	return nil
+}
+
+func validateQuicksightRefreshSchedule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

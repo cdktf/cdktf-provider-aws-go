@@ -7,6 +7,10 @@ package ecstaskset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EcsTaskSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsTaskSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EcsTaskSet) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (e *jsiiProxy_EcsTaskSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsTaskSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcsTaskSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (e *jsiiProxy_EcsTaskSet) validatePutScaleParameters(value *EcsTaskSetScale
 }
 
 func (e *jsiiProxy_EcsTaskSet) validatePutServiceRegistriesParameters(value *EcsTaskSetServiceRegistries) error {
+	return nil
+}
+
+func validateEcsTaskSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

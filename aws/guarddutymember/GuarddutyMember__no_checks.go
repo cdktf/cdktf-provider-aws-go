@@ -7,6 +7,10 @@ package guarddutymember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GuarddutyMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GuarddutyMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GuarddutyMember) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (g *jsiiProxy_GuarddutyMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GuarddutyMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GuarddutyMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GuarddutyMember) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (g *jsiiProxy_GuarddutyMember) validatePutTimeoutsParameters(value *GuarddutyMemberTimeouts) error {
+	return nil
+}
+
+func validateGuarddutyMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

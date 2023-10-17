@@ -7,6 +7,10 @@ package fsxopenzfsfilesystem
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FsxOpenzfsFileSystem) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxOpenzfsFileSystem) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (f *jsiiProxy_FsxOpenzfsFileSystem) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxOpenzfsFileSystem) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxOpenzfsFileSystem) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) validatePutRootVolumeConfigurationParam
 }
 
 func (f *jsiiProxy_FsxOpenzfsFileSystem) validatePutTimeoutsParameters(value *FsxOpenzfsFileSystemTimeouts) error {
+	return nil
+}
+
+func validateFsxOpenzfsFileSystem_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

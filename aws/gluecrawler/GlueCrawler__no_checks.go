@@ -7,6 +7,10 @@ package gluecrawler
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GlueCrawler) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueCrawler) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GlueCrawler) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (g *jsiiProxy_GlueCrawler) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueCrawler) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlueCrawler) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -100,6 +112,10 @@ func (g *jsiiProxy_GlueCrawler) validatePutS3TargetParameters(value interface{})
 }
 
 func (g *jsiiProxy_GlueCrawler) validatePutSchemaChangePolicyParameters(value *GlueCrawlerSchemaChangePolicy) error {
+	return nil
+}
+
+func validateGlueCrawler_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolClients) validateOverrideLogicalIdParam
 	return nil
 }
 
+func validateDataAwsCognitoUserPoolClients_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsCognitoUserPoolClients_IsConstructParameters(x interface{}) error {
 	return nil
 }

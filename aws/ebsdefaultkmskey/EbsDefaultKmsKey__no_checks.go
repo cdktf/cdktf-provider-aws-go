@@ -7,6 +7,10 @@ package ebsdefaultkmskey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EbsDefaultKmsKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EbsDefaultKmsKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (e *jsiiProxy_EbsDefaultKmsKey) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (e *jsiiProxy_EbsDefaultKmsKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EbsDefaultKmsKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_EbsDefaultKmsKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EbsDefaultKmsKey) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEbsDefaultKmsKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package apigatewaydomainname
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApiGatewayDomainName) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiGatewayDomainName) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApiGatewayDomainName) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (a *jsiiProxy_ApiGatewayDomainName) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiGatewayDomainName) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiGatewayDomainName) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_ApiGatewayDomainName) validatePutEndpointConfigurationParamet
 }
 
 func (a *jsiiProxy_ApiGatewayDomainName) validatePutMutualTlsAuthenticationParameters(value *ApiGatewayDomainNameMutualTlsAuthentication) error {
+	return nil
+}
+
+func validateApiGatewayDomainName_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsPrometheusWorkspace) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func validateDataAwsPrometheusWorkspace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsPrometheusWorkspace_IsConstructParameters(x interface{}) error {
 	return nil
 }

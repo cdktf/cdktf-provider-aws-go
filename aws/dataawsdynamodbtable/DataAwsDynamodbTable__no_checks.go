@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsDynamodbTable) validatePutServerSideEncryptionParamete
 	return nil
 }
 
+func validateDataAwsDynamodbTable_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsDynamodbTable_IsConstructParameters(x interface{}) error {
 	return nil
 }

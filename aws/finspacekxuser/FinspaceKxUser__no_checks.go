@@ -7,6 +7,10 @@ package finspacekxuser
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FinspaceKxUser) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FinspaceKxUser) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_FinspaceKxUser) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (f *jsiiProxy_FinspaceKxUser) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FinspaceKxUser) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FinspaceKxUser) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (f *jsiiProxy_FinspaceKxUser) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (f *jsiiProxy_FinspaceKxUser) validatePutTimeoutsParameters(value *FinspaceKxUserTimeouts) error {
+	return nil
+}
+
+func validateFinspaceKxUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

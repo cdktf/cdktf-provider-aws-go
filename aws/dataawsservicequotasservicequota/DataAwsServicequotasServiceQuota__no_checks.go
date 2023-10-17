@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsServicequotasServiceQuota) validateOverrideLogicalIdPa
 	return nil
 }
 
+func validateDataAwsServicequotasServiceQuota_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsServicequotasServiceQuota_IsConstructParameters(x interface{}) error {
 	return nil
 }

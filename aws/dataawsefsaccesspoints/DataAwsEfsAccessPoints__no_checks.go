@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsEfsAccessPoints) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func validateDataAwsEfsAccessPoints_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEfsAccessPoints_IsConstructParameters(x interface{}) error {
 	return nil
 }

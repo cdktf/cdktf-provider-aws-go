@@ -7,6 +7,10 @@ package transferagreement
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TransferAgreement) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransferAgreement) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (t *jsiiProxy_TransferAgreement) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (t *jsiiProxy_TransferAgreement) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransferAgreement) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_TransferAgreement) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransferAgreement) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateTransferAgreement_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

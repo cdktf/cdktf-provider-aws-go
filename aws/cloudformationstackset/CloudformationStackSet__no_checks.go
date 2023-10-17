@@ -7,6 +7,10 @@ package cloudformationstackset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudformationStackSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudformationStackSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CloudformationStackSet) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (c *jsiiProxy_CloudformationStackSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudformationStackSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudformationStackSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (c *jsiiProxy_CloudformationStackSet) validatePutOperationPreferencesParame
 }
 
 func (c *jsiiProxy_CloudformationStackSet) validatePutTimeoutsParameters(value *CloudformationStackSetTimeouts) error {
+	return nil
+}
+
+func validateCloudformationStackSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsWorkspacesBundle) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func validateDataAwsWorkspacesBundle_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsWorkspacesBundle_IsConstructParameters(x interface{}) error {
 	return nil
 }

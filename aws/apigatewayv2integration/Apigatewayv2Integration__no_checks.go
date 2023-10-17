@@ -7,6 +7,10 @@ package apigatewayv2integration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_Apigatewayv2Integration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_Apigatewayv2Integration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_Apigatewayv2Integration) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (a *jsiiProxy_Apigatewayv2Integration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_Apigatewayv2Integration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_Apigatewayv2Integration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_Apigatewayv2Integration) validatePutResponseParametersParamet
 }
 
 func (a *jsiiProxy_Apigatewayv2Integration) validatePutTlsConfigParameters(value *Apigatewayv2IntegrationTlsConfig) error {
+	return nil
+}
+
+func validateApigatewayv2Integration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

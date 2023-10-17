@@ -5,10 +5,10 @@ package memorydbuser
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/memorydbuser/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/memorydbuser/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -80,6 +80,9 @@ type MemorydbUser interface {
 	UserName() *string
 	SetUserName(val *string)
 	UserNameInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -101,7 +104,12 @@ type MemorydbUser interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -580,6 +588,25 @@ func (j *jsiiProxy_MemorydbUser)SetUserName(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a MemorydbUser resource upon running "cdktf plan <stack-name>".
+func MemorydbUser_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateMemorydbUser_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.memorydbUser.MemorydbUser",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -662,6 +689,17 @@ func MemorydbUser_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (m *jsiiProxy_MemorydbUser) AddMoveTarget(moveTarget *string) {
+	if err := m.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (m *jsiiProxy_MemorydbUser) AddOverride(path *string, value interface{}) {
@@ -819,6 +857,17 @@ func (m *jsiiProxy_MemorydbUser) GetStringMapAttribute(terraformAttribute *strin
 	return returns
 }
 
+func (m *jsiiProxy_MemorydbUser) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := m.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (m *jsiiProxy_MemorydbUser) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -833,6 +882,17 @@ func (m *jsiiProxy_MemorydbUser) InterpolationForAttribute(terraformAttribute *s
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MemorydbUser) MoveTo(moveTarget *string, index interface{}) {
+	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (m *jsiiProxy_MemorydbUser) OverrideLogicalId(newLogicalId *string) {

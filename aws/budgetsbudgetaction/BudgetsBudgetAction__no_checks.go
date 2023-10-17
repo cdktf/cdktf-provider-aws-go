@@ -7,6 +7,10 @@ package budgetsbudgetaction
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BudgetsBudgetAction) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BudgetsBudgetAction) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BudgetsBudgetAction) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (b *jsiiProxy_BudgetsBudgetAction) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BudgetsBudgetAction) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BudgetsBudgetAction) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (b *jsiiProxy_BudgetsBudgetAction) validatePutSubscriberParameters(value in
 }
 
 func (b *jsiiProxy_BudgetsBudgetAction) validatePutTimeoutsParameters(value *BudgetsBudgetActionTimeouts) error {
+	return nil
+}
+
+func validateBudgetsBudgetAction_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

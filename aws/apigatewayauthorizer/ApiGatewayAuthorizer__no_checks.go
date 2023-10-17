@@ -7,6 +7,10 @@ package apigatewayauthorizer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApiGatewayAuthorizer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiGatewayAuthorizer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_ApiGatewayAuthorizer) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (a *jsiiProxy_ApiGatewayAuthorizer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiGatewayAuthorizer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_ApiGatewayAuthorizer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiGatewayAuthorizer) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateApiGatewayAuthorizer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

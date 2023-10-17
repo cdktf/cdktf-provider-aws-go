@@ -156,6 +156,22 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayMulticastDomain) validatePutTimeoutsP
 	return nil
 }
 
+func validateDataAwsEc2TransitGatewayMulticastDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	if scope == nil {
+		return fmt.Errorf("parameter scope is required, but nil was provided")
+	}
+
+	if importToId == nil {
+		return fmt.Errorf("parameter importToId is required, but nil was provided")
+	}
+
+	if importFromId == nil {
+		return fmt.Errorf("parameter importFromId is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateDataAwsEc2TransitGatewayMulticastDomain_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")

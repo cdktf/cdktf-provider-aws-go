@@ -7,6 +7,10 @@ package iotthingtype
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IotThingType) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotThingType) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IotThingType) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (i *jsiiProxy_IotThingType) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotThingType) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotThingType) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IotThingType) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (i *jsiiProxy_IotThingType) validatePutPropertiesParameters(value *IotThingTypeProperties) error {
+	return nil
+}
+
+func validateIotThingType_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

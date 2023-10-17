@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAwsEc2SpotPrice) validatePutTimeoutsParameters(value *Dat
 	return nil
 }
 
+func validateDataAwsEc2SpotPrice_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEc2SpotPrice_IsConstructParameters(x interface{}) error {
 	return nil
 }

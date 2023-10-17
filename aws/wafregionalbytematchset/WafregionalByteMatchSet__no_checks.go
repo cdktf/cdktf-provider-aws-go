@@ -7,6 +7,10 @@ package wafregionalbytematchset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WafregionalByteMatchSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalByteMatchSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WafregionalByteMatchSet) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (w *jsiiProxy_WafregionalByteMatchSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalByteMatchSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalByteMatchSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (w *jsiiProxy_WafregionalByteMatchSet) validateOverrideLogicalIdParameters(
 }
 
 func (w *jsiiProxy_WafregionalByteMatchSet) validatePutByteMatchTuplesParameters(value interface{}) error {
+	return nil
+}
+
+func validateWafregionalByteMatchSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

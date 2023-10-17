@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsSfnActivity) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func validateDataAwsSfnActivity_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsSfnActivity_IsConstructParameters(x interface{}) error {
 	return nil
 }

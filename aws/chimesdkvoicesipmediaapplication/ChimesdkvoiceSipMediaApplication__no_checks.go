@@ -7,6 +7,10 @@ package chimesdkvoicesipmediaapplication
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ChimesdkvoiceSipMediaApplication) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChimesdkvoiceSipMediaApplication) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ChimesdkvoiceSipMediaApplication) validateGetStringMapAttribu
 	return nil
 }
 
+func (c *jsiiProxy_ChimesdkvoiceSipMediaApplication) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChimesdkvoiceSipMediaApplication) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ChimesdkvoiceSipMediaApplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ChimesdkvoiceSipMediaApplication) validateOverrideLogicalIdPa
 }
 
 func (c *jsiiProxy_ChimesdkvoiceSipMediaApplication) validatePutEndpointsParameters(value *ChimesdkvoiceSipMediaApplicationEndpoints) error {
+	return nil
+}
+
+func validateChimesdkvoiceSipMediaApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -5,10 +5,10 @@ package route53recoveryreadinesscell
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/route53recoveryreadinesscell/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/route53recoveryreadinesscell/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -80,6 +80,9 @@ type Route53RecoveryreadinessCell interface {
 	TerraformResourceType() *string
 	Timeouts() Route53RecoveryreadinessCellTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -101,7 +104,12 @@ type Route53RecoveryreadinessCell interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -582,6 +590,25 @@ func (j *jsiiProxy_Route53RecoveryreadinessCell)SetTagsAll(val *map[string]*stri
 	)
 }
 
+// Generates CDKTF code for importing a Route53RecoveryreadinessCell resource upon running "cdktf plan <stack-name>".
+func Route53RecoveryreadinessCell_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateRoute53RecoveryreadinessCell_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.route53RecoveryreadinessCell.Route53RecoveryreadinessCell",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -664,6 +691,17 @@ func Route53RecoveryreadinessCell_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (r *jsiiProxy_Route53RecoveryreadinessCell) AddMoveTarget(moveTarget *string) {
+	if err := r.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (r *jsiiProxy_Route53RecoveryreadinessCell) AddOverride(path *string, value interface{}) {
@@ -821,6 +859,17 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) GetStringMapAttribute(terraform
 	return returns
 }
 
+func (r *jsiiProxy_Route53RecoveryreadinessCell) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := r.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (r *jsiiProxy_Route53RecoveryreadinessCell) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -835,6 +884,17 @@ func (r *jsiiProxy_Route53RecoveryreadinessCell) InterpolationForAttribute(terra
 	)
 
 	return returns
+}
+
+func (r *jsiiProxy_Route53RecoveryreadinessCell) MoveTo(moveTarget *string, index interface{}) {
+	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (r *jsiiProxy_Route53RecoveryreadinessCell) OverrideLogicalId(newLogicalId *string) {

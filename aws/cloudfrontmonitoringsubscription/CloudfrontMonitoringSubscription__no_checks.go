@@ -7,6 +7,10 @@ package cloudfrontmonitoringsubscription
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudfrontMonitoringSubscription) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontMonitoringSubscription) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) validateGetStringMapAttribu
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontMonitoringSubscription) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontMonitoringSubscription) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontMonitoringSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscription) validateOverrideLogicalIdPa
 }
 
 func (c *jsiiProxy_CloudfrontMonitoringSubscription) validatePutMonitoringSubscriptionParameters(value *CloudfrontMonitoringSubscriptionMonitoringSubscription) error {
+	return nil
+}
+
+func validateCloudfrontMonitoringSubscription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

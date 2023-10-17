@@ -7,6 +7,10 @@ package networkmanagerattachmentaccepter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) validateGetStringMapAttribu
 	return nil
 }
 
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) validateOverrideLogicalIdPa
 }
 
 func (n *jsiiProxy_NetworkmanagerAttachmentAccepter) validatePutTimeoutsParameters(value *NetworkmanagerAttachmentAccepterTimeouts) error {
+	return nil
+}
+
+func validateNetworkmanagerAttachmentAccepter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

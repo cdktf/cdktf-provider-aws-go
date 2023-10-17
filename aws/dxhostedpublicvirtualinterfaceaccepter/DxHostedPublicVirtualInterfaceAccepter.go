@@ -5,10 +5,10 @@ package dxhostedpublicvirtualinterfaceaccepter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/dxhostedpublicvirtualinterfaceaccepter/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/dxhostedpublicvirtualinterfaceaccepter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -76,6 +76,9 @@ type DxHostedPublicVirtualInterfaceAccepter interface {
 	VirtualInterfaceId() *string
 	SetVirtualInterfaceId(val *string)
 	VirtualInterfaceIdInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -97,7 +100,12 @@ type DxHostedPublicVirtualInterfaceAccepter interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -536,6 +544,25 @@ func (j *jsiiProxy_DxHostedPublicVirtualInterfaceAccepter)SetVirtualInterfaceId(
 	)
 }
 
+// Generates CDKTF code for importing a DxHostedPublicVirtualInterfaceAccepter resource upon running "cdktf plan <stack-name>".
+func DxHostedPublicVirtualInterfaceAccepter_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDxHostedPublicVirtualInterfaceAccepter_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dxHostedPublicVirtualInterfaceAccepter.DxHostedPublicVirtualInterfaceAccepter",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -618,6 +645,17 @@ func DxHostedPublicVirtualInterfaceAccepter_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (d *jsiiProxy_DxHostedPublicVirtualInterfaceAccepter) AddMoveTarget(moveTarget *string) {
+	if err := d.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (d *jsiiProxy_DxHostedPublicVirtualInterfaceAccepter) AddOverride(path *string, value interface{}) {
@@ -775,6 +813,17 @@ func (d *jsiiProxy_DxHostedPublicVirtualInterfaceAccepter) GetStringMapAttribute
 	return returns
 }
 
+func (d *jsiiProxy_DxHostedPublicVirtualInterfaceAccepter) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := d.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (d *jsiiProxy_DxHostedPublicVirtualInterfaceAccepter) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -789,6 +838,17 @@ func (d *jsiiProxy_DxHostedPublicVirtualInterfaceAccepter) InterpolationForAttri
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DxHostedPublicVirtualInterfaceAccepter) MoveTo(moveTarget *string, index interface{}) {
+	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (d *jsiiProxy_DxHostedPublicVirtualInterfaceAccepter) OverrideLogicalId(newLogicalId *string) {

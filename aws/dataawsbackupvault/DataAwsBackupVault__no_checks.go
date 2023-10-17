@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsBackupVault) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func validateDataAwsBackupVault_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsBackupVault_IsConstructParameters(x interface{}) error {
 	return nil
 }

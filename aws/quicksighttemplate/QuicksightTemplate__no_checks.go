@@ -7,6 +7,10 @@ package quicksighttemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (q *jsiiProxy_QuicksightTemplate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (q *jsiiProxy_QuicksightTemplate) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (q *jsiiProxy_QuicksightTemplate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightTemplate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (q *jsiiProxy_QuicksightTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (q *jsiiProxy_QuicksightTemplate) validatePutSourceEntityParameters(value *
 }
 
 func (q *jsiiProxy_QuicksightTemplate) validatePutTimeoutsParameters(value *QuicksightTemplateTimeouts) error {
+	return nil
+}
+
+func validateQuicksightTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

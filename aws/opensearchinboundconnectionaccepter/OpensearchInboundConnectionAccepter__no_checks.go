@@ -7,6 +7,10 @@ package opensearchinboundconnectionaccepter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OpensearchInboundConnectionAccepter) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchInboundConnectionAccepter) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) validateGetStringMapAttr
 	return nil
 }
 
+func (o *jsiiProxy_OpensearchInboundConnectionAccepter) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchInboundConnectionAccepter) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpensearchInboundConnectionAccepter) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (o *jsiiProxy_OpensearchInboundConnectionAccepter) validateOverrideLogicalI
 }
 
 func (o *jsiiProxy_OpensearchInboundConnectionAccepter) validatePutTimeoutsParameters(value *OpensearchInboundConnectionAccepterTimeouts) error {
+	return nil
+}
+
+func validateOpensearchInboundConnectionAccepter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

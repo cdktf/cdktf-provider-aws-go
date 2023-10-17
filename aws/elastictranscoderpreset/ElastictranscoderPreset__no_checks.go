@@ -7,6 +7,10 @@ package elastictranscoderpreset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ElastictranscoderPreset) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastictranscoderPreset) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_ElastictranscoderPreset) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (e *jsiiProxy_ElastictranscoderPreset) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastictranscoderPreset) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastictranscoderPreset) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (e *jsiiProxy_ElastictranscoderPreset) validatePutVideoParameters(value *El
 }
 
 func (e *jsiiProxy_ElastictranscoderPreset) validatePutVideoWatermarksParameters(value interface{}) error {
+	return nil
+}
+
+func validateElastictranscoderPreset_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

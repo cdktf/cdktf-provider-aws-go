@@ -7,6 +7,10 @@ package servicecatalogprincipalportfolioassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateGetStrin
 	return nil
 }
 
+func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validateOverride
 }
 
 func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociation) validatePutTimeoutsParameters(value *ServicecatalogPrincipalPortfolioAssociationTimeouts) error {
+	return nil
+}
+
+func validateServicecatalogPrincipalPortfolioAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

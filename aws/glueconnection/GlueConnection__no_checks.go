@@ -7,6 +7,10 @@ package glueconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GlueConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GlueConnection) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (g *jsiiProxy_GlueConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlueConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GlueConnection) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (g *jsiiProxy_GlueConnection) validatePutPhysicalConnectionRequirementsParameters(value *GlueConnectionPhysicalConnectionRequirements) error {
+	return nil
+}
+
+func validateGlueConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

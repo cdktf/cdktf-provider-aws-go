@@ -16,6 +16,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "abuseContactEmail", GoGetter: "AbuseContactEmail"},
 			_jsii_.MemberProperty{JsiiProperty: "abuseContactPhone", GoGetter: "AbuseContactPhone"},
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "adminContact", GoGetter: "AdminContact"},
 			_jsii_.MemberProperty{JsiiProperty: "adminContactInput", GoGetter: "AdminContactInput"},
@@ -46,8 +47,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "nameServer", GoGetter: "NameServer"},
 			_jsii_.MemberProperty{JsiiProperty: "nameServerInput", GoGetter: "NameServerInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

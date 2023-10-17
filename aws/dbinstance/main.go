@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.dbInstance.DbInstance",
 		reflect.TypeOf((*DbInstance)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "allocatedStorage", GoGetter: "AllocatedStorage"},
@@ -93,6 +94,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "identifierPrefix", GoGetter: "IdentifierPrefix"},
 			_jsii_.MemberProperty{JsiiProperty: "identifierPrefixInput", GoGetter: "IdentifierPrefixInput"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceClass", GoGetter: "InstanceClass"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceClassInput", GoGetter: "InstanceClassInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -118,6 +120,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "monitoringIntervalInput", GoGetter: "MonitoringIntervalInput"},
 			_jsii_.MemberProperty{JsiiProperty: "monitoringRoleArn", GoGetter: "MonitoringRoleArn"},
 			_jsii_.MemberProperty{JsiiProperty: "monitoringRoleArnInput", GoGetter: "MonitoringRoleArnInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "multiAz", GoGetter: "MultiAz"},
 			_jsii_.MemberProperty{JsiiProperty: "multiAzInput", GoGetter: "MultiAzInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ncharCharacterSetName", GoGetter: "NcharCharacterSetName"},

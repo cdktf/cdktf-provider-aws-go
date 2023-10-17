@@ -7,6 +7,10 @@ package wafregionalsqlinjectionmatchset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateGetStringMapAttribut
 	return nil
 }
 
+func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateOverrideLogicalIdPar
 }
 
 func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validatePutSqlInjectionMatchTupleParameters(value interface{}) error {
+	return nil
+}
+
+func validateWafregionalSqlInjectionMatchSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

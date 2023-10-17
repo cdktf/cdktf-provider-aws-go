@@ -7,6 +7,10 @@ package codedeploydeploymentgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CodedeployDeploymentGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodedeployDeploymentGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_CodedeployDeploymentGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodedeployDeploymentGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodedeployDeploymentGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -92,6 +104,10 @@ func (c *jsiiProxy_CodedeployDeploymentGroup) validatePutOnPremisesInstanceTagFi
 }
 
 func (c *jsiiProxy_CodedeployDeploymentGroup) validatePutTriggerConfigurationParameters(value interface{}) error {
+	return nil
+}
+
+func validateCodedeployDeploymentGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

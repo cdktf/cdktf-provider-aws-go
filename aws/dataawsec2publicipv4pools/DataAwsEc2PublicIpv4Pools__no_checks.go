@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsEc2PublicIpv4Pools) validatePutFilterParameters(value 
 	return nil
 }
 
+func validateDataAwsEc2PublicIpv4Pools_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEc2PublicIpv4Pools_IsConstructParameters(x interface{}) error {
 	return nil
 }

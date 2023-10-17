@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAwsIdentitystoreUser) validatePutFilterParameters(value *
 	return nil
 }
 
+func validateDataAwsIdentitystoreUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsIdentitystoreUser_IsConstructParameters(x interface{}) error {
 	return nil
 }

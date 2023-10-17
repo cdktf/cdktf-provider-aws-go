@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsAppmeshGatewayRoute) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func validateDataAwsAppmeshGatewayRoute_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsAppmeshGatewayRoute_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package lambdaalias
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LambdaAlias) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaAlias) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LambdaAlias) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (l *jsiiProxy_LambdaAlias) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaAlias) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaAlias) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (l *jsiiProxy_LambdaAlias) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (l *jsiiProxy_LambdaAlias) validatePutRoutingConfigParameters(value *LambdaAliasRoutingConfig) error {
+	return nil
+}
+
+func validateLambdaAlias_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

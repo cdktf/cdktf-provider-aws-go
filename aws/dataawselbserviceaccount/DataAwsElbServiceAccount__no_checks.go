@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsElbServiceAccount) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func validateDataAwsElbServiceAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsElbServiceAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }

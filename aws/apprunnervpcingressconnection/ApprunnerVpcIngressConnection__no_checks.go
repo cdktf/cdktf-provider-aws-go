@@ -7,6 +7,10 @@ package apprunnervpcingressconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApprunnerVpcIngressConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApprunnerVpcIngressConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApprunnerVpcIngressConnection) validateGetStringMapAttributeP
 	return nil
 }
 
+func (a *jsiiProxy_ApprunnerVpcIngressConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApprunnerVpcIngressConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApprunnerVpcIngressConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ApprunnerVpcIngressConnection) validateOverrideLogicalIdParam
 }
 
 func (a *jsiiProxy_ApprunnerVpcIngressConnection) validatePutIngressVpcConfigurationParameters(value *ApprunnerVpcIngressConnectionIngressVpcConfiguration) error {
+	return nil
+}
+
+func validateApprunnerVpcIngressConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package cognitoriskconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CognitoRiskConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoRiskConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CognitoRiskConfiguration) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (c *jsiiProxy_CognitoRiskConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoRiskConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoRiskConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_CognitoRiskConfiguration) validatePutCompromisedCredentialsRi
 }
 
 func (c *jsiiProxy_CognitoRiskConfiguration) validatePutRiskExceptionConfigurationParameters(value *CognitoRiskConfigurationRiskExceptionConfiguration) error {
+	return nil
+}
+
+func validateCognitoRiskConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

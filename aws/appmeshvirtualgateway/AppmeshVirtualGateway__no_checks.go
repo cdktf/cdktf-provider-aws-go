@@ -7,6 +7,10 @@ package appmeshvirtualgateway
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppmeshVirtualGateway) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppmeshVirtualGateway) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AppmeshVirtualGateway) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (a *jsiiProxy_AppmeshVirtualGateway) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppmeshVirtualGateway) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppmeshVirtualGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AppmeshVirtualGateway) validateOverrideLogicalIdParameters(ne
 }
 
 func (a *jsiiProxy_AppmeshVirtualGateway) validatePutSpecParameters(value *AppmeshVirtualGatewaySpec) error {
+	return nil
+}
+
+func validateAppmeshVirtualGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

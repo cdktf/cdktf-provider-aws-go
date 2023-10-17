@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsRdsCluster) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func validateDataAwsRdsCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsRdsCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }

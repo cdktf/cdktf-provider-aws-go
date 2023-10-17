@@ -7,6 +7,10 @@ package sagemakernotebookinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SagemakerNotebookInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerNotebookInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SagemakerNotebookInstance) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerNotebookInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerNotebookInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerNotebookInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SagemakerNotebookInstance) validateOverrideLogicalIdParameter
 }
 
 func (s *jsiiProxy_SagemakerNotebookInstance) validatePutInstanceMetadataServiceConfigurationParameters(value *SagemakerNotebookInstanceInstanceMetadataServiceConfiguration) error {
+	return nil
+}
+
+func validateSagemakerNotebookInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

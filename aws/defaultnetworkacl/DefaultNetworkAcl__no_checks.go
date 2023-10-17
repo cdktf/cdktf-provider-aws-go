@@ -7,6 +7,10 @@ package defaultnetworkacl
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DefaultNetworkAcl) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DefaultNetworkAcl) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DefaultNetworkAcl) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (d *jsiiProxy_DefaultNetworkAcl) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DefaultNetworkAcl) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DefaultNetworkAcl) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DefaultNetworkAcl) validatePutEgressParameters(value interfac
 }
 
 func (d *jsiiProxy_DefaultNetworkAcl) validatePutIngressParameters(value interface{}) error {
+	return nil
+}
+
+func validateDefaultNetworkAcl_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

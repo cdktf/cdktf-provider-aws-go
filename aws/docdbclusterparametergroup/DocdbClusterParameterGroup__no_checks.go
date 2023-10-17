@@ -7,6 +7,10 @@ package docdbclusterparametergroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DocdbClusterParameterGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DocdbClusterParameterGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DocdbClusterParameterGroup) validateGetStringMapAttributePara
 	return nil
 }
 
+func (d *jsiiProxy_DocdbClusterParameterGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DocdbClusterParameterGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DocdbClusterParameterGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DocdbClusterParameterGroup) validateOverrideLogicalIdParamete
 }
 
 func (d *jsiiProxy_DocdbClusterParameterGroup) validatePutParameterParameters(value interface{}) error {
+	return nil
+}
+
+func validateDocdbClusterParameterGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

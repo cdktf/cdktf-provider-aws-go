@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAwsVpcPeeringConnection) validatePutTimeoutsParameters(va
 	return nil
 }
 
+func validateDataAwsVpcPeeringConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsVpcPeeringConnection_IsConstructParameters(x interface{}) error {
 	return nil
 }

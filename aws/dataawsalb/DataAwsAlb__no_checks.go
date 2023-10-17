@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsAlb) validatePutTimeoutsParameters(value *DataAwsAlbTi
 	return nil
 }
 
+func validateDataAwsAlb_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsAlb_IsConstructParameters(x interface{}) error {
 	return nil
 }

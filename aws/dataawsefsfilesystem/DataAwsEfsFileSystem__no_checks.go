@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsEfsFileSystem) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func validateDataAwsEfsFileSystem_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEfsFileSystem_IsConstructParameters(x interface{}) error {
 	return nil
 }

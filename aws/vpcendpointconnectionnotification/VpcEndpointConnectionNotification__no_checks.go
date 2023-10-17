@@ -7,6 +7,10 @@ package vpcendpointconnectionnotification
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpcEndpointConnectionNotification) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpointConnectionNotification) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (v *jsiiProxy_VpcEndpointConnectionNotification) validateGetStringMapAttrib
 	return nil
 }
 
+func (v *jsiiProxy_VpcEndpointConnectionNotification) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpointConnectionNotification) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (v *jsiiProxy_VpcEndpointConnectionNotification) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpointConnectionNotification) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateVpcEndpointConnectionNotification_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

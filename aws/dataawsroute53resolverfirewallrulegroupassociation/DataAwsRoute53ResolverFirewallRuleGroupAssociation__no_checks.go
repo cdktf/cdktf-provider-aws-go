@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroupAssociation) validateO
 	return nil
 }
 
+func validateDataAwsRoute53ResolverFirewallRuleGroupAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsRoute53ResolverFirewallRuleGroupAssociation_IsConstructParameters(x interface{}) error {
 	return nil
 }

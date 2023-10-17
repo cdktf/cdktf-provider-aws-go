@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsConnectInstanceStorageConfig) validateOverrideLogicalI
 	return nil
 }
 
+func validateDataAwsConnectInstanceStorageConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsConnectInstanceStorageConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }

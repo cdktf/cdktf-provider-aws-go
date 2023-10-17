@@ -7,6 +7,10 @@ package iamsamlprovider
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IamSamlProvider) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamSamlProvider) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IamSamlProvider) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (i *jsiiProxy_IamSamlProvider) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamSamlProvider) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IamSamlProvider) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamSamlProvider) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIamSamlProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

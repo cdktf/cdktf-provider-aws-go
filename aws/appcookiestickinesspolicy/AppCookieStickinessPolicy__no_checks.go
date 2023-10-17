@@ -7,6 +7,10 @@ package appcookiestickinesspolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppCookieStickinessPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppCookieStickinessPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_AppCookieStickinessPolicy) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (a *jsiiProxy_AppCookieStickinessPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppCookieStickinessPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AppCookieStickinessPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppCookieStickinessPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAppCookieStickinessPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

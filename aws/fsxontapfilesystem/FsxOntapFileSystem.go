@@ -5,10 +5,10 @@ package fsxontapfilesystem
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/fsxontapfilesystem/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/fsxontapfilesystem/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -122,6 +122,9 @@ type FsxOntapFileSystem interface {
 	WeeklyMaintenanceStartTime() *string
 	SetWeeklyMaintenanceStartTime(val *string)
 	WeeklyMaintenanceStartTimeInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -143,7 +146,12 @@ type FsxOntapFileSystem interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -1067,6 +1075,25 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetWeeklyMaintenanceStartTime(val *string)
 	)
 }
 
+// Generates CDKTF code for importing a FsxOntapFileSystem resource upon running "cdktf plan <stack-name>".
+func FsxOntapFileSystem_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateFsxOntapFileSystem_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -1149,6 +1176,17 @@ func FsxOntapFileSystem_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (f *jsiiProxy_FsxOntapFileSystem) AddMoveTarget(moveTarget *string) {
+	if err := f.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (f *jsiiProxy_FsxOntapFileSystem) AddOverride(path *string, value interface{}) {
@@ -1306,6 +1344,17 @@ func (f *jsiiProxy_FsxOntapFileSystem) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (f *jsiiProxy_FsxOntapFileSystem) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := f.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (f *jsiiProxy_FsxOntapFileSystem) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1320,6 +1369,17 @@ func (f *jsiiProxy_FsxOntapFileSystem) InterpolationForAttribute(terraformAttrib
 	)
 
 	return returns
+}
+
+func (f *jsiiProxy_FsxOntapFileSystem) MoveTo(moveTarget *string, index interface{}) {
+	if err := f.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (f *jsiiProxy_FsxOntapFileSystem) OverrideLogicalId(newLogicalId *string) {

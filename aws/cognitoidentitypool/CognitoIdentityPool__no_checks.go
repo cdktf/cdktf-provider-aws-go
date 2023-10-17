@@ -7,6 +7,10 @@ package cognitoidentitypool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CognitoIdentityPool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoIdentityPool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CognitoIdentityPool) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (c *jsiiProxy_CognitoIdentityPool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoIdentityPool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoIdentityPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CognitoIdentityPool) validateOverrideLogicalIdParameters(newL
 }
 
 func (c *jsiiProxy_CognitoIdentityPool) validatePutCognitoIdentityProvidersParameters(value interface{}) error {
+	return nil
+}
+
+func validateCognitoIdentityPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

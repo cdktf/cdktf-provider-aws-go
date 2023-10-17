@@ -7,6 +7,10 @@ package evidentlylaunch
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EvidentlyLaunch) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EvidentlyLaunch) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EvidentlyLaunch) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (e *jsiiProxy_EvidentlyLaunch) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EvidentlyLaunch) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EvidentlyLaunch) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (e *jsiiProxy_EvidentlyLaunch) validatePutScheduledSplitsConfigParameters(v
 }
 
 func (e *jsiiProxy_EvidentlyLaunch) validatePutTimeoutsParameters(value *EvidentlyLaunchTimeouts) error {
+	return nil
+}
+
+func validateEvidentlyLaunch_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

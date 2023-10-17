@@ -7,6 +7,10 @@ package lexslottype
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LexSlotType) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LexSlotType) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LexSlotType) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (l *jsiiProxy_LexSlotType) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LexSlotType) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LexSlotType) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (l *jsiiProxy_LexSlotType) validatePutEnumerationValueParameters(value inte
 }
 
 func (l *jsiiProxy_LexSlotType) validatePutTimeoutsParameters(value *LexSlotTypeTimeouts) error {
+	return nil
+}
+
+func validateLexSlotType_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

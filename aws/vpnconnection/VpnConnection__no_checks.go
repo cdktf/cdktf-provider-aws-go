@@ -7,6 +7,10 @@ package vpnconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpnConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpnConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VpnConnection) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (v *jsiiProxy_VpnConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpnConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpnConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (v *jsiiProxy_VpnConnection) validatePutTunnel1LogOptionsParameters(value *
 }
 
 func (v *jsiiProxy_VpnConnection) validatePutTunnel2LogOptionsParameters(value *VpnConnectionTunnel2LogOptions) error {
+	return nil
+}
+
+func validateVpnConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

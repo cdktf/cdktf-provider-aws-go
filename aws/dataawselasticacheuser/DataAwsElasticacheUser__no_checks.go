@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsElasticacheUser) validatePutAuthenticationModeParamete
 	return nil
 }
 
+func validateDataAwsElasticacheUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsElasticacheUser_IsConstructParameters(x interface{}) error {
 	return nil
 }

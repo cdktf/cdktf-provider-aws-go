@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsLbHostedZoneId) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func validateDataAwsLbHostedZoneId_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsLbHostedZoneId_IsConstructParameters(x interface{}) error {
 	return nil
 }

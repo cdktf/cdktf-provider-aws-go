@@ -7,6 +7,10 @@ package serverlessapplicationrepositorycloudformationstack
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateG
 	return nil
 }
 
+func (s *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validateO
 }
 
 func (s *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) validatePutTimeoutsParameters(value *ServerlessapplicationrepositoryCloudformationStackTimeouts) error {
+	return nil
+}
+
+func validateServerlessapplicationrepositoryCloudformationStack_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

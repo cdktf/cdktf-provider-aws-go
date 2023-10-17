@@ -7,6 +7,10 @@ package qldbledger
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (q *jsiiProxy_QldbLedger) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QldbLedger) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (q *jsiiProxy_QldbLedger) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (q *jsiiProxy_QldbLedger) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QldbLedger) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (q *jsiiProxy_QldbLedger) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (q *jsiiProxy_QldbLedger) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func (q *jsiiProxy_QldbLedger) validatePutTimeoutsParameters(value *QldbLedgerTimeouts) error {
+	return nil
+}
+
+func validateQldbLedger_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

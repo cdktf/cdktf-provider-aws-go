@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsGuarddutyDetector) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func validateDataAwsGuarddutyDetector_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsGuarddutyDetector_IsConstructParameters(x interface{}) error {
 	return nil
 }

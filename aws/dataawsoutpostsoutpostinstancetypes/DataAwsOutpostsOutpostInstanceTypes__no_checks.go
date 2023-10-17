@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsOutpostsOutpostInstanceTypes) validateOverrideLogicalI
 	return nil
 }
 
+func validateDataAwsOutpostsOutpostInstanceTypes_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsOutpostsOutpostInstanceTypes_IsConstructParameters(x interface{}) error {
 	return nil
 }

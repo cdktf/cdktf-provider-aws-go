@@ -7,6 +7,10 @@ package networkinterface
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkInterface) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkInterface) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkInterface) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (n *jsiiProxy_NetworkInterface) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkInterface) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkInterface) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NetworkInterface) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (n *jsiiProxy_NetworkInterface) validatePutAttachmentParameters(value interface{}) error {
+	return nil
+}
+
+func validateNetworkInterface_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsSesv2EmailIdentityMailFromAttributes) validateOverride
 	return nil
 }
 
+func validateDataAwsSesv2EmailIdentityMailFromAttributes_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsSesv2EmailIdentityMailFromAttributes_IsConstructParameters(x interface{}) error {
 	return nil
 }

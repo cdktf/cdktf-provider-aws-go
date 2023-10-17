@@ -7,6 +7,10 @@ package oamlink
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OamLink) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OamLink) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OamLink) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (o *jsiiProxy_OamLink) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OamLink) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OamLink) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (o *jsiiProxy_OamLink) validateOverrideLogicalIdParameters(newLogicalId *st
 }
 
 func (o *jsiiProxy_OamLink) validatePutTimeoutsParameters(value *OamLinkTimeouts) error {
+	return nil
+}
+
+func validateOamLink_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

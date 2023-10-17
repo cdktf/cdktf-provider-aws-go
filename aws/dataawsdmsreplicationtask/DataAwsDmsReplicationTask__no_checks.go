@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsDmsReplicationTask) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func validateDataAwsDmsReplicationTask_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsDmsReplicationTask_IsConstructParameters(x interface{}) error {
 	return nil
 }

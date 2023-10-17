@@ -7,6 +7,10 @@ package sesconfigurationset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SesConfigurationSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SesConfigurationSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SesConfigurationSet) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (s *jsiiProxy_SesConfigurationSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SesConfigurationSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SesConfigurationSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SesConfigurationSet) validatePutDeliveryOptionsParameters(val
 }
 
 func (s *jsiiProxy_SesConfigurationSet) validatePutTrackingOptionsParameters(value *SesConfigurationSetTrackingOptions) error {
+	return nil
+}
+
+func validateSesConfigurationSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

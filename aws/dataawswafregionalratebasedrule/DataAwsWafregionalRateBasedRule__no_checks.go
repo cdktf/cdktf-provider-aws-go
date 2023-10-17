@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsWafregionalRateBasedRule) validateOverrideLogicalIdPar
 	return nil
 }
 
+func validateDataAwsWafregionalRateBasedRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsWafregionalRateBasedRule_IsConstructParameters(x interface{}) error {
 	return nil
 }

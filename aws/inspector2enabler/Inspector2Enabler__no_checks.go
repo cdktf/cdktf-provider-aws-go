@@ -7,6 +7,10 @@ package inspector2enabler
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_Inspector2Enabler) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Inspector2Enabler) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_Inspector2Enabler) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (i *jsiiProxy_Inspector2Enabler) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Inspector2Enabler) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_Inspector2Enabler) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_Inspector2Enabler) validateOverrideLogicalIdParameters(newLog
 }
 
 func (i *jsiiProxy_Inspector2Enabler) validatePutTimeoutsParameters(value *Inspector2EnablerTimeouts) error {
+	return nil
+}
+
+func validateInspector2Enabler_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

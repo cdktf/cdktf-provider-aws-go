@@ -7,6 +7,10 @@ package autoscalingplansscalingplan
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AutoscalingplansScalingPlan) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingplansScalingPlan) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AutoscalingplansScalingPlan) validateGetStringMapAttributePar
 	return nil
 }
 
+func (a *jsiiProxy_AutoscalingplansScalingPlan) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingplansScalingPlan) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutoscalingplansScalingPlan) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_AutoscalingplansScalingPlan) validatePutApplicationSourcePara
 }
 
 func (a *jsiiProxy_AutoscalingplansScalingPlan) validatePutScalingInstructionParameters(value interface{}) error {
+	return nil
+}
+
+func validateAutoscalingplansScalingPlan_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

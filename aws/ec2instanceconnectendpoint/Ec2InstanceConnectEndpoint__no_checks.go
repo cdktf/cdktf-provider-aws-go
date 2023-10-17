@@ -7,6 +7,10 @@ package ec2instanceconnectendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Ec2InstanceConnectEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2InstanceConnectEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_Ec2InstanceConnectEndpoint) validateGetStringMapAttributePara
 	return nil
 }
 
+func (e *jsiiProxy_Ec2InstanceConnectEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2InstanceConnectEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2InstanceConnectEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_Ec2InstanceConnectEndpoint) validateOverrideLogicalIdParamete
 }
 
 func (e *jsiiProxy_Ec2InstanceConnectEndpoint) validatePutTimeoutsParameters(value *Ec2InstanceConnectEndpointTimeouts) error {
+	return nil
+}
+
+func validateEc2InstanceConnectEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

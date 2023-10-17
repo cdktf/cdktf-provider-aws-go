@@ -7,6 +7,10 @@ package transcribemedicalvocabulary
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TranscribeMedicalVocabulary) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TranscribeMedicalVocabulary) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) validateGetStringMapAttributePar
 	return nil
 }
 
+func (t *jsiiProxy_TranscribeMedicalVocabulary) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TranscribeMedicalVocabulary) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (t *jsiiProxy_TranscribeMedicalVocabulary) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) validateOverrideLogicalIdParamet
 }
 
 func (t *jsiiProxy_TranscribeMedicalVocabulary) validatePutTimeoutsParameters(value *TranscribeMedicalVocabularyTimeouts) error {
+	return nil
+}
+
+func validateTranscribeMedicalVocabulary_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

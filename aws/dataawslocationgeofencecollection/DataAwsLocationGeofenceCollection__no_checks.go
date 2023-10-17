@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsLocationGeofenceCollection) validateOverrideLogicalIdP
 	return nil
 }
 
+func validateDataAwsLocationGeofenceCollection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsLocationGeofenceCollection_IsConstructParameters(x interface{}) error {
 	return nil
 }

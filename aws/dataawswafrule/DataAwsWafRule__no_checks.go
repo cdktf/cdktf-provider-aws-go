@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsWafRule) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func validateDataAwsWafRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsWafRule_IsConstructParameters(x interface{}) error {
 	return nil
 }

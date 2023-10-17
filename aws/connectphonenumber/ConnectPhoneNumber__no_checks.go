@@ -7,6 +7,10 @@ package connectphonenumber
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConnectPhoneNumber) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectPhoneNumber) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ConnectPhoneNumber) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (c *jsiiProxy_ConnectPhoneNumber) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectPhoneNumber) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectPhoneNumber) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ConnectPhoneNumber) validateOverrideLogicalIdParameters(newLo
 }
 
 func (c *jsiiProxy_ConnectPhoneNumber) validatePutTimeoutsParameters(value *ConnectPhoneNumberTimeouts) error {
+	return nil
+}
+
+func validateConnectPhoneNumber_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

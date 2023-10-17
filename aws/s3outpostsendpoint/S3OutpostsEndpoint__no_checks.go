@@ -7,6 +7,10 @@ package s3outpostsendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3OutpostsEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3OutpostsEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (s *jsiiProxy_S3OutpostsEndpoint) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_S3OutpostsEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3OutpostsEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_S3OutpostsEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3OutpostsEndpoint) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateS3OutpostsEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

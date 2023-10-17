@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateOverrideLogicalI
 	return nil
 }
 
+func validateDataAwsSecretsmanagerRandomPassword_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsSecretsmanagerRandomPassword_IsConstructParameters(x interface{}) error {
 	return nil
 }

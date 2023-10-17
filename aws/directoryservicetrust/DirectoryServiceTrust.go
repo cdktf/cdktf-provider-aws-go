@@ -5,10 +5,10 @@ package directoryservicetrust
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/directoryservicetrust/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/directoryservicetrust/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -91,6 +91,9 @@ type DirectoryServiceTrust interface {
 	TrustType() *string
 	SetTrustType(val *string)
 	TrustTypeInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -112,7 +115,12 @@ type DirectoryServiceTrust interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -704,6 +712,25 @@ func (j *jsiiProxy_DirectoryServiceTrust)SetTrustType(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a DirectoryServiceTrust resource upon running "cdktf plan <stack-name>".
+func DirectoryServiceTrust_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDirectoryServiceTrust_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.directoryServiceTrust.DirectoryServiceTrust",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -786,6 +813,17 @@ func DirectoryServiceTrust_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (d *jsiiProxy_DirectoryServiceTrust) AddMoveTarget(moveTarget *string) {
+	if err := d.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (d *jsiiProxy_DirectoryServiceTrust) AddOverride(path *string, value interface{}) {
@@ -943,6 +981,17 @@ func (d *jsiiProxy_DirectoryServiceTrust) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
+func (d *jsiiProxy_DirectoryServiceTrust) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := d.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (d *jsiiProxy_DirectoryServiceTrust) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -957,6 +1006,17 @@ func (d *jsiiProxy_DirectoryServiceTrust) InterpolationForAttribute(terraformAtt
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DirectoryServiceTrust) MoveTo(moveTarget *string, index interface{}) {
+	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (d *jsiiProxy_DirectoryServiceTrust) OverrideLogicalId(newLogicalId *string) {

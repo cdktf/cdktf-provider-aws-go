@@ -7,6 +7,10 @@ package comprehendentityrecognizer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComprehendEntityRecognizer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComprehendEntityRecognizer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) validateGetStringMapAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_ComprehendEntityRecognizer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComprehendEntityRecognizer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComprehendEntityRecognizer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) validatePutTimeoutsParameters(val
 }
 
 func (c *jsiiProxy_ComprehendEntityRecognizer) validatePutVpcConfigParameters(value *ComprehendEntityRecognizerVpcConfig) error {
+	return nil
+}
+
+func validateComprehendEntityRecognizer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

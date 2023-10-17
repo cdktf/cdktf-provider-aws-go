@@ -7,6 +7,10 @@ package backupframework
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BackupFramework) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupFramework) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BackupFramework) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (b *jsiiProxy_BackupFramework) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupFramework) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BackupFramework) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (b *jsiiProxy_BackupFramework) validatePutControlParameters(value interface
 }
 
 func (b *jsiiProxy_BackupFramework) validatePutTimeoutsParameters(value *BackupFrameworkTimeouts) error {
+	return nil
+}
+
+func validateBackupFramework_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

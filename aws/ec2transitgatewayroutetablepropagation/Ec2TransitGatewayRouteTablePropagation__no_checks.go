@@ -7,6 +7,10 @@ package ec2transitgatewayroutetablepropagation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Ec2TransitGatewayRouteTablePropagation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2TransitGatewayRouteTablePropagation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (e *jsiiProxy_Ec2TransitGatewayRouteTablePropagation) validateGetStringMapA
 	return nil
 }
 
+func (e *jsiiProxy_Ec2TransitGatewayRouteTablePropagation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2TransitGatewayRouteTablePropagation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_Ec2TransitGatewayRouteTablePropagation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2TransitGatewayRouteTablePropagation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEc2TransitGatewayRouteTablePropagation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

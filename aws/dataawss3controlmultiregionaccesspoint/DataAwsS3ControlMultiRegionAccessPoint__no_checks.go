@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) validateOverrideLogic
 	return nil
 }
 
+func validateDataAwsS3ControlMultiRegionAccessPoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsS3ControlMultiRegionAccessPoint_IsConstructParameters(x interface{}) error {
 	return nil
 }

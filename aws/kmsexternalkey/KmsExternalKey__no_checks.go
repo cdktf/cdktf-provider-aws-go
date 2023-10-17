@@ -7,6 +7,10 @@ package kmsexternalkey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KmsExternalKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsExternalKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (k *jsiiProxy_KmsExternalKey) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (k *jsiiProxy_KmsExternalKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsExternalKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (k *jsiiProxy_KmsExternalKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsExternalKey) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateKmsExternalKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

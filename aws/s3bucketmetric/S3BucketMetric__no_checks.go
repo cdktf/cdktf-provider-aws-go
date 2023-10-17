@@ -7,6 +7,10 @@ package s3bucketmetric
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3BucketMetric) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketMetric) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_S3BucketMetric) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketMetric) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketMetric) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketMetric) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_S3BucketMetric) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (s *jsiiProxy_S3BucketMetric) validatePutFilterParameters(value *S3BucketMetricFilter) error {
+	return nil
+}
+
+func validateS3BucketMetric_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package s3controlbucketlifecycleconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3ControlBucketLifecycleConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ControlBucketLifecycleConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_S3ControlBucketLifecycleConfiguration) validateGetStringMapAt
 	return nil
 }
 
+func (s *jsiiProxy_S3ControlBucketLifecycleConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ControlBucketLifecycleConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3ControlBucketLifecycleConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_S3ControlBucketLifecycleConfiguration) validateOverrideLogica
 }
 
 func (s *jsiiProxy_S3ControlBucketLifecycleConfiguration) validatePutRuleParameters(value interface{}) error {
+	return nil
+}
+
+func validateS3ControlBucketLifecycleConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

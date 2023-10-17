@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsBillingServiceAccount) validateOverrideLogicalIdParame
 	return nil
 }
 
+func validateDataAwsBillingServiceAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsBillingServiceAccount_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package ecrregistryscanningconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EcrRegistryScanningConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcrRegistryScanningConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EcrRegistryScanningConfiguration) validateGetStringMapAttribu
 	return nil
 }
 
+func (e *jsiiProxy_EcrRegistryScanningConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcrRegistryScanningConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcrRegistryScanningConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_EcrRegistryScanningConfiguration) validateOverrideLogicalIdPa
 }
 
 func (e *jsiiProxy_EcrRegistryScanningConfiguration) validatePutRuleParameters(value interface{}) error {
+	return nil
+}
+
+func validateEcrRegistryScanningConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

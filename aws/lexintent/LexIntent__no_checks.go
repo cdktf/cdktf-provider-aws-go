@@ -7,6 +7,10 @@ package lexintent
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LexIntent) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LexIntent) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LexIntent) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (l *jsiiProxy_LexIntent) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LexIntent) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LexIntent) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -84,6 +96,10 @@ func (l *jsiiProxy_LexIntent) validatePutSlotParameters(value interface{}) error
 }
 
 func (l *jsiiProxy_LexIntent) validatePutTimeoutsParameters(value *LexIntentTimeouts) error {
+	return nil
+}
+
+func validateLexIntent_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

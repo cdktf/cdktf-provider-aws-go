@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAwsEc2InstanceTypes) validatePutTimeoutsParameters(value 
 	return nil
 }
 
+func validateDataAwsEc2InstanceTypes_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEc2InstanceTypes_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package timestreamwritedatabase
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (t *jsiiProxy_TimestreamwriteDatabase) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TimestreamwriteDatabase) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (t *jsiiProxy_TimestreamwriteDatabase) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (t *jsiiProxy_TimestreamwriteDatabase) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TimestreamwriteDatabase) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (t *jsiiProxy_TimestreamwriteDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TimestreamwriteDatabase) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateTimestreamwriteDatabase_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package vpcendpointsubnetassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpcEndpointSubnetAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpointSubnetAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VpcEndpointSubnetAssociation) validateGetStringMapAttributePa
 	return nil
 }
 
+func (v *jsiiProxy_VpcEndpointSubnetAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpointSubnetAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcEndpointSubnetAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (v *jsiiProxy_VpcEndpointSubnetAssociation) validateOverrideLogicalIdParame
 }
 
 func (v *jsiiProxy_VpcEndpointSubnetAssociation) validatePutTimeoutsParameters(value *VpcEndpointSubnetAssociationTimeouts) error {
+	return nil
+}
+
+func validateVpcEndpointSubnetAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

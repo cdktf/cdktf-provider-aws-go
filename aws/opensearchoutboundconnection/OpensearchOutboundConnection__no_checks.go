@@ -7,6 +7,10 @@ package opensearchoutboundconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OpensearchOutboundConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchOutboundConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OpensearchOutboundConnection) validateGetStringMapAttributePa
 	return nil
 }
 
+func (o *jsiiProxy_OpensearchOutboundConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchOutboundConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpensearchOutboundConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (o *jsiiProxy_OpensearchOutboundConnection) validatePutRemoteDomainInfoPara
 }
 
 func (o *jsiiProxy_OpensearchOutboundConnection) validatePutTimeoutsParameters(value *OpensearchOutboundConnectionTimeouts) error {
+	return nil
+}
+
+func validateOpensearchOutboundConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

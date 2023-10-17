@@ -7,6 +7,10 @@ package lexv2modelsbot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_Lexv2ModelsBot) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_Lexv2ModelsBot) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_Lexv2ModelsBot) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (l *jsiiProxy_Lexv2ModelsBot) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_Lexv2ModelsBot) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_Lexv2ModelsBot) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (l *jsiiProxy_Lexv2ModelsBot) validatePutMembersParameters(value interface{
 }
 
 func (l *jsiiProxy_Lexv2ModelsBot) validatePutTimeoutsParameters(value *Lexv2ModelsBotTimeouts) error {
+	return nil
+}
+
+func validateLexv2ModelsBot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

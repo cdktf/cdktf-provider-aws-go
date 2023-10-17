@@ -7,6 +7,10 @@ package internetgatewayattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_InternetGatewayAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_InternetGatewayAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_InternetGatewayAttachment) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (i *jsiiProxy_InternetGatewayAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_InternetGatewayAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_InternetGatewayAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_InternetGatewayAttachment) validateOverrideLogicalIdParameter
 }
 
 func (i *jsiiProxy_InternetGatewayAttachment) validatePutTimeoutsParameters(value *InternetGatewayAttachmentTimeouts) error {
+	return nil
+}
+
+func validateInternetGatewayAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

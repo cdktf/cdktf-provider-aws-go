@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsEmrcontainersVirtualCluster) validateOverrideLogicalId
 	return nil
 }
 
+func validateDataAwsEmrcontainersVirtualCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEmrcontainersVirtualCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }

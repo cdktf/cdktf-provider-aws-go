@@ -7,6 +7,10 @@ package ec2clientvpnroute
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Ec2ClientVpnRoute) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2ClientVpnRoute) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_Ec2ClientVpnRoute) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (e *jsiiProxy_Ec2ClientVpnRoute) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2ClientVpnRoute) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2ClientVpnRoute) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_Ec2ClientVpnRoute) validateOverrideLogicalIdParameters(newLog
 }
 
 func (e *jsiiProxy_Ec2ClientVpnRoute) validatePutTimeoutsParameters(value *Ec2ClientVpnRouteTimeouts) error {
+	return nil
+}
+
+func validateEc2ClientVpnRoute_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

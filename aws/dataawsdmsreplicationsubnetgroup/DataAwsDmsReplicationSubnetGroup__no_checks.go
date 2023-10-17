@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsDmsReplicationSubnetGroup) validateOverrideLogicalIdPa
 	return nil
 }
 
+func validateDataAwsDmsReplicationSubnetGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsDmsReplicationSubnetGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

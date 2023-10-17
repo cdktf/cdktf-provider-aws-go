@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsIvsStreamKey) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func validateDataAwsIvsStreamKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsIvsStreamKey_IsConstructParameters(x interface{}) error {
 	return nil
 }

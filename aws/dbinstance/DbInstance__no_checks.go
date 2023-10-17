@@ -7,6 +7,10 @@ package dbinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DbInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DbInstance) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (d *jsiiProxy_DbInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (d *jsiiProxy_DbInstance) validatePutS3ImportParameters(value *DbInstanceS3
 }
 
 func (d *jsiiProxy_DbInstance) validatePutTimeoutsParameters(value *DbInstanceTimeouts) error {
+	return nil
+}
+
+func validateDbInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

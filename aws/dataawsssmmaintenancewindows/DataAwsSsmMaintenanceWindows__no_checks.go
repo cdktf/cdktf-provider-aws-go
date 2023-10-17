@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsSsmMaintenanceWindows) validatePutFilterParameters(val
 	return nil
 }
 
+func validateDataAwsSsmMaintenanceWindows_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsSsmMaintenanceWindows_IsConstructParameters(x interface{}) error {
 	return nil
 }

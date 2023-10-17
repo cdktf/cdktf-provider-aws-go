@@ -7,6 +7,10 @@ package dbclustersnapshot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DbClusterSnapshot) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbClusterSnapshot) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DbClusterSnapshot) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (d *jsiiProxy_DbClusterSnapshot) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbClusterSnapshot) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbClusterSnapshot) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DbClusterSnapshot) validateOverrideLogicalIdParameters(newLog
 }
 
 func (d *jsiiProxy_DbClusterSnapshot) validatePutTimeoutsParameters(value *DbClusterSnapshotTimeouts) error {
+	return nil
+}
+
+func validateDbClusterSnapshot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

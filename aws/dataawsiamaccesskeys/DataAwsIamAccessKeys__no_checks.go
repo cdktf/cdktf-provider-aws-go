@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsIamAccessKeys) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func validateDataAwsIamAccessKeys_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsIamAccessKeys_IsConstructParameters(x interface{}) error {
 	return nil
 }

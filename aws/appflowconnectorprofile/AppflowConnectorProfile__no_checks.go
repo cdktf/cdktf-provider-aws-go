@@ -7,6 +7,10 @@ package appflowconnectorprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppflowConnectorProfile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppflowConnectorProfile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AppflowConnectorProfile) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (a *jsiiProxy_AppflowConnectorProfile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppflowConnectorProfile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppflowConnectorProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AppflowConnectorProfile) validateOverrideLogicalIdParameters(
 }
 
 func (a *jsiiProxy_AppflowConnectorProfile) validatePutConnectorProfileConfigParameters(value *AppflowConnectorProfileConnectorProfileConfig) error {
+	return nil
+}
+
+func validateAppflowConnectorProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

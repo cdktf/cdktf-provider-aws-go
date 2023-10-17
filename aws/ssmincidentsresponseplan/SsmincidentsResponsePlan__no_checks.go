@@ -7,6 +7,10 @@ package ssmincidentsresponseplan
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SsmincidentsResponsePlan) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsmincidentsResponsePlan) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SsmincidentsResponsePlan) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (s *jsiiProxy_SsmincidentsResponsePlan) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsmincidentsResponsePlan) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsmincidentsResponsePlan) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (s *jsiiProxy_SsmincidentsResponsePlan) validatePutIncidentTemplateParamete
 }
 
 func (s *jsiiProxy_SsmincidentsResponsePlan) validatePutIntegrationParameters(value *SsmincidentsResponsePlanIntegration) error {
+	return nil
+}
+
+func validateSsmincidentsResponsePlan_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

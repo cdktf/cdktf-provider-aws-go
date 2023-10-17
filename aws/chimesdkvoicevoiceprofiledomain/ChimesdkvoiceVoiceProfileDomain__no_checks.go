@@ -7,6 +7,10 @@ package chimesdkvoicevoiceprofiledomain
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ChimesdkvoiceVoiceProfileDomain) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChimesdkvoiceVoiceProfileDomain) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ChimesdkvoiceVoiceProfileDomain) validateGetStringMapAttribut
 	return nil
 }
 
+func (c *jsiiProxy_ChimesdkvoiceVoiceProfileDomain) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChimesdkvoiceVoiceProfileDomain) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ChimesdkvoiceVoiceProfileDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_ChimesdkvoiceVoiceProfileDomain) validatePutServerSideEncrypt
 }
 
 func (c *jsiiProxy_ChimesdkvoiceVoiceProfileDomain) validatePutTimeoutsParameters(value *ChimesdkvoiceVoiceProfileDomainTimeouts) error {
+	return nil
+}
+
+func validateChimesdkvoiceVoiceProfileDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

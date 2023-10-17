@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) validatePutFilterParameters(value in
 	return nil
 }
 
+func validateDataAwsRdsEngineVersion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsRdsEngineVersion_IsConstructParameters(x interface{}) error {
 	return nil
 }

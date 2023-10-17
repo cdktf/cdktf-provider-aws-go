@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsRoute) validatePutTimeoutsParameters(value *DataAwsRou
 	return nil
 }
 
+func validateDataAwsRoute_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsRoute_IsConstructParameters(x interface{}) error {
 	return nil
 }

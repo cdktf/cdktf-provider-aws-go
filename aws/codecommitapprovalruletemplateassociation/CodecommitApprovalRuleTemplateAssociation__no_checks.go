@@ -7,6 +7,10 @@ package codecommitapprovalruletemplateassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) validateGetStringM
 	return nil
 }
 
+func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodecommitApprovalRuleTemplateAssociation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCodecommitApprovalRuleTemplateAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

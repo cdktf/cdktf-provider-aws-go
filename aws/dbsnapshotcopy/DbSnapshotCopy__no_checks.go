@@ -7,6 +7,10 @@ package dbsnapshotcopy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DbSnapshotCopy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbSnapshotCopy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DbSnapshotCopy) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (d *jsiiProxy_DbSnapshotCopy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbSnapshotCopy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbSnapshotCopy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DbSnapshotCopy) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (d *jsiiProxy_DbSnapshotCopy) validatePutTimeoutsParameters(value *DbSnapshotCopyTimeouts) error {
+	return nil
+}
+
+func validateDbSnapshotCopy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsOamLinks) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func validateDataAwsOamLinks_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsOamLinks_IsConstructParameters(x interface{}) error {
 	return nil
 }

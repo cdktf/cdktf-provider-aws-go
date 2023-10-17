@@ -7,6 +7,10 @@ package wafregionalgeomatchset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WafregionalGeoMatchSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalGeoMatchSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (w *jsiiProxy_WafregionalGeoMatchSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalGeoMatchSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalGeoMatchSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) validateOverrideLogicalIdParameters(n
 }
 
 func (w *jsiiProxy_WafregionalGeoMatchSet) validatePutGeoMatchConstraintParameters(value interface{}) error {
+	return nil
+}
+
+func validateWafregionalGeoMatchSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

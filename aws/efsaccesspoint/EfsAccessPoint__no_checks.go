@@ -7,6 +7,10 @@ package efsaccesspoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EfsAccessPoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EfsAccessPoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EfsAccessPoint) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (e *jsiiProxy_EfsAccessPoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EfsAccessPoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EfsAccessPoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (e *jsiiProxy_EfsAccessPoint) validatePutPosixUserParameters(value *EfsAcce
 }
 
 func (e *jsiiProxy_EfsAccessPoint) validatePutRootDirectoryParameters(value *EfsAccessPointRootDirectory) error {
+	return nil
+}
+
+func validateEfsAccessPoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package emrserverlessapplication
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EmrserverlessApplication) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrserverlessApplication) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EmrserverlessApplication) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (e *jsiiProxy_EmrserverlessApplication) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrserverlessApplication) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmrserverlessApplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (e *jsiiProxy_EmrserverlessApplication) validatePutMaximumCapacityParameter
 }
 
 func (e *jsiiProxy_EmrserverlessApplication) validatePutNetworkConfigurationParameters(value *EmrserverlessApplicationNetworkConfiguration) error {
+	return nil
+}
+
+func validateEmrserverlessApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

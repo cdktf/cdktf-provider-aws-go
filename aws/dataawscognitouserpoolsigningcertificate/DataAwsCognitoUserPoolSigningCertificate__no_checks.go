@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsCognitoUserPoolSigningCertificate) validateOverrideLog
 	return nil
 }
 
+func validateDataAwsCognitoUserPoolSigningCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsCognitoUserPoolSigningCertificate_IsConstructParameters(x interface{}) error {
 	return nil
 }

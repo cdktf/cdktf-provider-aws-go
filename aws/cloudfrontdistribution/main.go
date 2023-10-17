@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistribution",
 		reflect.TypeOf((*CloudfrontDistribution)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "aliases", GoGetter: "Aliases"},
 			_jsii_.MemberProperty{JsiiProperty: "aliasesInput", GoGetter: "AliasesInput"},
@@ -55,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "httpVersionInput", GoGetter: "HttpVersionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "inProgressValidationBatches", GoGetter: "InProgressValidationBatches"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "isIpv6Enabled", GoGetter: "IsIpv6Enabled"},
@@ -63,6 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "loggingConfig", GoGetter: "LoggingConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "loggingConfigInput", GoGetter: "LoggingConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "orderedCacheBehavior", GoGetter: "OrderedCacheBehavior"},
 			_jsii_.MemberProperty{JsiiProperty: "orderedCacheBehaviorInput", GoGetter: "OrderedCacheBehaviorInput"},

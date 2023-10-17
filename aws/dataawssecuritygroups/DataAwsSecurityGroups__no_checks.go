@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAwsSecurityGroups) validatePutTimeoutsParameters(value *D
 	return nil
 }
 
+func validateDataAwsSecurityGroups_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsSecurityGroups_IsConstructParameters(x interface{}) error {
 	return nil
 }

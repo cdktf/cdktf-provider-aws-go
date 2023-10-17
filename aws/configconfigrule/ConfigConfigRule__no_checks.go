@@ -7,6 +7,10 @@ package configconfigrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConfigConfigRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigConfigRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ConfigConfigRule) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (c *jsiiProxy_ConfigConfigRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigConfigRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigConfigRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_ConfigConfigRule) validatePutScopeParameters(value *ConfigCon
 }
 
 func (c *jsiiProxy_ConfigConfigRule) validatePutSourceParameters(value *ConfigConfigRuleSource) error {
+	return nil
+}
+
+func validateConfigConfigRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

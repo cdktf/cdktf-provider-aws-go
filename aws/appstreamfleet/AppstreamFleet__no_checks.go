@@ -7,6 +7,10 @@ package appstreamfleet
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppstreamFleet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppstreamFleet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AppstreamFleet) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (a *jsiiProxy_AppstreamFleet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppstreamFleet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppstreamFleet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (a *jsiiProxy_AppstreamFleet) validatePutDomainJoinInfoParameters(value *Ap
 }
 
 func (a *jsiiProxy_AppstreamFleet) validatePutVpcConfigParameters(value *AppstreamFleetVpcConfig) error {
+	return nil
+}
+
+func validateAppstreamFleet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

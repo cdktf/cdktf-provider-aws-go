@@ -7,6 +7,10 @@ package ssmassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SsmAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsmAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SsmAssociation) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (s *jsiiProxy_SsmAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsmAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsmAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SsmAssociation) validatePutOutputLocationParameters(value *Ss
 }
 
 func (s *jsiiProxy_SsmAssociation) validatePutTargetsParameters(value interface{}) error {
+	return nil
+}
+
+func validateSsmAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

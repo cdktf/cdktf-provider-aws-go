@@ -7,6 +7,10 @@ package ssmcontactsplan
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SsmcontactsPlan) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsmcontactsPlan) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SsmcontactsPlan) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (s *jsiiProxy_SsmcontactsPlan) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsmcontactsPlan) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsmcontactsPlan) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SsmcontactsPlan) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (s *jsiiProxy_SsmcontactsPlan) validatePutStageParameters(value interface{}) error {
+	return nil
+}
+
+func validateSsmcontactsPlan_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

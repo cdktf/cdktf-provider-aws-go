@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsDatapipelinePipelineDefinition) validatePutParameterVa
 	return nil
 }
 
+func validateDataAwsDatapipelinePipelineDefinition_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsDatapipelinePipelineDefinition_IsConstructParameters(x interface{}) error {
 	return nil
 }

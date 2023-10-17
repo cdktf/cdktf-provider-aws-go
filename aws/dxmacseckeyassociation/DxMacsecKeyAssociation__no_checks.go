@@ -7,6 +7,10 @@ package dxmacseckeyassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DxMacsecKeyAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxMacsecKeyAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (d *jsiiProxy_DxMacsecKeyAssociation) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (d *jsiiProxy_DxMacsecKeyAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxMacsecKeyAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (d *jsiiProxy_DxMacsecKeyAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxMacsecKeyAssociation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateDxMacsecKeyAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

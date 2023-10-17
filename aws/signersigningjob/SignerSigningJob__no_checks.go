@@ -7,6 +7,10 @@ package signersigningjob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SignerSigningJob) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SignerSigningJob) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SignerSigningJob) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (s *jsiiProxy_SignerSigningJob) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SignerSigningJob) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SignerSigningJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SignerSigningJob) validatePutDestinationParameters(value *Sig
 }
 
 func (s *jsiiProxy_SignerSigningJob) validatePutSourceParameters(value *SignerSigningJobSource) error {
+	return nil
+}
+
+func validateSignerSigningJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package apigatewayv2integrationresponse
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_Apigatewayv2IntegrationResponse) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_Apigatewayv2IntegrationResponse) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_Apigatewayv2IntegrationResponse) validateGetStringMapAttribut
 	return nil
 }
 
+func (a *jsiiProxy_Apigatewayv2IntegrationResponse) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_Apigatewayv2IntegrationResponse) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_Apigatewayv2IntegrationResponse) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_Apigatewayv2IntegrationResponse) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateApigatewayv2IntegrationResponse_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

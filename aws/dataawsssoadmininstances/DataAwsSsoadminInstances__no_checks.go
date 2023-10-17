@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsSsoadminInstances) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func validateDataAwsSsoadminInstances_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsSsoadminInstances_IsConstructParameters(x interface{}) error {
 	return nil
 }

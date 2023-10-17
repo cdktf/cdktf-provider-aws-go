@@ -7,6 +7,10 @@ package configconformancepack
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConfigConformancePack) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigConformancePack) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ConfigConformancePack) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_ConfigConformancePack) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigConformancePack) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigConformancePack) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ConfigConformancePack) validateOverrideLogicalIdParameters(ne
 }
 
 func (c *jsiiProxy_ConfigConformancePack) validatePutInputParameterParameters(value interface{}) error {
+	return nil
+}
+
+func validateConfigConformancePack_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

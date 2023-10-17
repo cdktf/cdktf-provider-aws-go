@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsRoute53DelegationSet) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func validateDataAwsRoute53DelegationSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsRoute53DelegationSet_IsConstructParameters(x interface{}) error {
 	return nil
 }

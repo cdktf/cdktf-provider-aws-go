@@ -7,6 +7,10 @@ package servicecatalogtagoptionresourceassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateGetString
 	return nil
 }
 
+func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateOverrideL
 }
 
 func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validatePutTimeoutsParameters(value *ServicecatalogTagOptionResourceAssociationTimeouts) error {
+	return nil
+}
+
+func validateServicecatalogTagOptionResourceAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

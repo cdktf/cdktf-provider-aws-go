@@ -7,6 +7,10 @@ package sesv2emailidentitymailfromattributes
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_Sesv2EmailIdentityMailFromAttributes) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Sesv2EmailIdentityMailFromAttributes) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (s *jsiiProxy_Sesv2EmailIdentityMailFromAttributes) validateGetStringMapAtt
 	return nil
 }
 
+func (s *jsiiProxy_Sesv2EmailIdentityMailFromAttributes) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Sesv2EmailIdentityMailFromAttributes) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_Sesv2EmailIdentityMailFromAttributes) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_Sesv2EmailIdentityMailFromAttributes) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateSesv2EmailIdentityMailFromAttributes_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

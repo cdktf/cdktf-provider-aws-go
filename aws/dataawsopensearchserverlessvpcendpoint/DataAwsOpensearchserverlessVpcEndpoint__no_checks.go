@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsOpensearchserverlessVpcEndpoint) validateOverrideLogic
 	return nil
 }
 
+func validateDataAwsOpensearchserverlessVpcEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsOpensearchserverlessVpcEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }

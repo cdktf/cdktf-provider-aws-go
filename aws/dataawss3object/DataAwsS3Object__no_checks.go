@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsS3Object) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func validateDataAwsS3Object_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsS3Object_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package mediapackagechannel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MediaPackageChannel) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaPackageChannel) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (m *jsiiProxy_MediaPackageChannel) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (m *jsiiProxy_MediaPackageChannel) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaPackageChannel) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (m *jsiiProxy_MediaPackageChannel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaPackageChannel) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateMediaPackageChannel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

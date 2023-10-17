@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsDxLocation) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func validateDataAwsDxLocation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsDxLocation_IsConstructParameters(x interface{}) error {
 	return nil
 }

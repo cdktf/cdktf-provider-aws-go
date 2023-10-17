@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsDbSubnetGroup) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func validateDataAwsDbSubnetGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsDbSubnetGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

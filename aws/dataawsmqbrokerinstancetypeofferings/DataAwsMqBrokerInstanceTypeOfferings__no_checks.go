@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsMqBrokerInstanceTypeOfferings) validateOverrideLogical
 	return nil
 }
 
+func validateDataAwsMqBrokerInstanceTypeOfferings_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsMqBrokerInstanceTypeOfferings_IsConstructParameters(x interface{}) error {
 	return nil
 }

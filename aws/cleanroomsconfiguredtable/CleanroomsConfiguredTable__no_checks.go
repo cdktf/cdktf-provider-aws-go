@@ -7,6 +7,10 @@ package cleanroomsconfiguredtable
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CleanroomsConfiguredTable) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CleanroomsConfiguredTable) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CleanroomsConfiguredTable) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_CleanroomsConfiguredTable) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CleanroomsConfiguredTable) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CleanroomsConfiguredTable) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_CleanroomsConfiguredTable) validatePutTableReferenceParameter
 }
 
 func (c *jsiiProxy_CleanroomsConfiguredTable) validatePutTimeoutsParameters(value *CleanroomsConfiguredTableTimeouts) error {
+	return nil
+}
+
+func validateCleanroomsConfiguredTable_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

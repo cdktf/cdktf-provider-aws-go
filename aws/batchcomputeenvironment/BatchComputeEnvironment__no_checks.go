@@ -7,6 +7,10 @@ package batchcomputeenvironment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BatchComputeEnvironment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BatchComputeEnvironment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BatchComputeEnvironment) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (b *jsiiProxy_BatchComputeEnvironment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BatchComputeEnvironment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BatchComputeEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (b *jsiiProxy_BatchComputeEnvironment) validatePutComputeResourcesParameter
 }
 
 func (b *jsiiProxy_BatchComputeEnvironment) validatePutEksConfigurationParameters(value *BatchComputeEnvironmentEksConfiguration) error {
+	return nil
+}
+
+func validateBatchComputeEnvironment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

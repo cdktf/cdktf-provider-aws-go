@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsIamSamlProvider) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func validateDataAwsIamSamlProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsIamSamlProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

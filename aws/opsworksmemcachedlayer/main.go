@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.opsworksMemcachedLayer.OpsworksMemcachedLayer",
 		reflect.TypeOf((*OpsworksMemcachedLayer)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allocatedMemory", GoGetter: "AllocatedMemory"},
 			_jsii_.MemberProperty{JsiiProperty: "allocatedMemoryInput", GoGetter: "AllocatedMemoryInput"},
@@ -67,6 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "installUpdatesOnBoot", GoGetter: "InstallUpdatesOnBoot"},
 			_jsii_.MemberProperty{JsiiProperty: "installUpdatesOnBootInput", GoGetter: "InstallUpdatesOnBootInput"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceShutdownTimeout", GoGetter: "InstanceShutdownTimeout"},
@@ -75,6 +77,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBasedAutoScaling", GoGetter: "LoadBasedAutoScaling"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBasedAutoScalingInput", GoGetter: "LoadBasedAutoScalingInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

@@ -7,6 +7,10 @@ package wafv2regexpatternset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_Wafv2RegexPatternSet) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2RegexPatternSet) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_Wafv2RegexPatternSet) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2RegexPatternSet) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2RegexPatternSet) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2RegexPatternSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (w *jsiiProxy_Wafv2RegexPatternSet) validateOverrideLogicalIdParameters(new
 }
 
 func (w *jsiiProxy_Wafv2RegexPatternSet) validatePutRegularExpressionParameters(value interface{}) error {
+	return nil
+}
+
+func validateWafv2RegexPatternSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

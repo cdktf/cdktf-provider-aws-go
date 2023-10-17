@@ -7,6 +7,10 @@ package route53recoverycontrolconfigsafetyrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) validateGetStringMapA
 	return nil
 }
 
+func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) validateOverrideLogic
 }
 
 func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRule) validatePutRuleConfigParameters(value *Route53RecoverycontrolconfigSafetyRuleRuleConfig) error {
+	return nil
+}
+
+func validateRoute53RecoverycontrolconfigSafetyRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

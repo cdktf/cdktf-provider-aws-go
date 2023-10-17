@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsCodeartifactRepositoryEndpoint) validateOverrideLogica
 	return nil
 }
 
+func validateDataAwsCodeartifactRepositoryEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsCodeartifactRepositoryEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package configdeliverychannel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConfigDeliveryChannel) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigDeliveryChannel) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ConfigDeliveryChannel) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_ConfigDeliveryChannel) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigDeliveryChannel) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigDeliveryChannel) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ConfigDeliveryChannel) validateOverrideLogicalIdParameters(ne
 }
 
 func (c *jsiiProxy_ConfigDeliveryChannel) validatePutSnapshotDeliveryPropertiesParameters(value *ConfigDeliveryChannelSnapshotDeliveryProperties) error {
+	return nil
+}
+
+func validateConfigDeliveryChannel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsEcsService) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func validateDataAwsEcsService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEcsService_IsConstructParameters(x interface{}) error {
 	return nil
 }

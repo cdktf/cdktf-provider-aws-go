@@ -16,6 +16,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionsEnabled", GoGetter: "ActionsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "actionsEnabledInput", GoGetter: "ActionsEnabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "alarmActions", GoGetter: "AlarmActions"},
 			_jsii_.MemberProperty{JsiiProperty: "alarmActionsInput", GoGetter: "AlarmActionsInput"},
@@ -55,6 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "insufficientDataActions", GoGetter: "InsufficientDataActions"},
 			_jsii_.MemberProperty{JsiiProperty: "insufficientDataActionsInput", GoGetter: "InsufficientDataActionsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -63,6 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "metricNameInput", GoGetter: "MetricNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "metricQuery", GoGetter: "MetricQuery"},
 			_jsii_.MemberProperty{JsiiProperty: "metricQueryInput", GoGetter: "MetricQueryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "namespace", GoGetter: "Namespace"},
 			_jsii_.MemberProperty{JsiiProperty: "namespaceInput", GoGetter: "NamespaceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

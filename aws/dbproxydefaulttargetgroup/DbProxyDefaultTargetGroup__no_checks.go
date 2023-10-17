@@ -7,6 +7,10 @@ package dbproxydefaulttargetgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DbProxyDefaultTargetGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbProxyDefaultTargetGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DbProxyDefaultTargetGroup) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (d *jsiiProxy_DbProxyDefaultTargetGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbProxyDefaultTargetGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbProxyDefaultTargetGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (d *jsiiProxy_DbProxyDefaultTargetGroup) validatePutConnectionPoolConfigPar
 }
 
 func (d *jsiiProxy_DbProxyDefaultTargetGroup) validatePutTimeoutsParameters(value *DbProxyDefaultTargetGroupTimeouts) error {
+	return nil
+}
+
+func validateDbProxyDefaultTargetGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package launchtemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LaunchTemplate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LaunchTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LaunchTemplate) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (l *jsiiProxy_LaunchTemplate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LaunchTemplate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LaunchTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -128,6 +140,10 @@ func (l *jsiiProxy_LaunchTemplate) validatePutPrivateDnsNameOptionsParameters(va
 }
 
 func (l *jsiiProxy_LaunchTemplate) validatePutTagSpecificationsParameters(value interface{}) error {
+	return nil
+}
+
+func validateLaunchTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

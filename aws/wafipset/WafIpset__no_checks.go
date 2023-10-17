@@ -7,6 +7,10 @@ package wafipset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WafIpset) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafIpset) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WafIpset) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (w *jsiiProxy_WafIpset) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafIpset) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafIpset) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (w *jsiiProxy_WafIpset) validateOverrideLogicalIdParameters(newLogicalId *s
 }
 
 func (w *jsiiProxy_WafIpset) validatePutIpSetDescriptorsParameters(value interface{}) error {
+	return nil
+}
+
+func validateWafIpset_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

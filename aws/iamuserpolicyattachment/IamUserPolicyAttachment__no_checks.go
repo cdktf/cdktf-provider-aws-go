@@ -7,6 +7,10 @@ package iamuserpolicyattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IamUserPolicyAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamUserPolicyAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IamUserPolicyAttachment) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (i *jsiiProxy_IamUserPolicyAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamUserPolicyAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IamUserPolicyAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamUserPolicyAttachment) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIamUserPolicyAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

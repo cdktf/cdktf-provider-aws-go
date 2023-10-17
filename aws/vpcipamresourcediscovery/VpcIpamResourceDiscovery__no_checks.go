@@ -7,6 +7,10 @@ package vpcipamresourcediscovery
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpcIpamResourceDiscovery) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcIpamResourceDiscovery) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VpcIpamResourceDiscovery) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (v *jsiiProxy_VpcIpamResourceDiscovery) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcIpamResourceDiscovery) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcIpamResourceDiscovery) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (v *jsiiProxy_VpcIpamResourceDiscovery) validatePutOperatingRegionsParamete
 }
 
 func (v *jsiiProxy_VpcIpamResourceDiscovery) validatePutTimeoutsParameters(value *VpcIpamResourceDiscoveryTimeouts) error {
+	return nil
+}
+
+func validateVpcIpamResourceDiscovery_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

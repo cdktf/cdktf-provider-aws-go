@@ -7,6 +7,10 @@ package vpc
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_Vpc) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_Vpc) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (v *jsiiProxy_Vpc) validateGetStringMapAttributeParameters(terraformAttribu
 	return nil
 }
 
+func (v *jsiiProxy_Vpc) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_Vpc) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (v *jsiiProxy_Vpc) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_Vpc) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateVpc_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

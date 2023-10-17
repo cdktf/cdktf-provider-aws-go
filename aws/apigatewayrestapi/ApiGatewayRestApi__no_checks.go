@@ -7,6 +7,10 @@ package apigatewayrestapi
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApiGatewayRestApi) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiGatewayRestApi) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_ApiGatewayRestApi) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (a *jsiiProxy_ApiGatewayRestApi) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApiGatewayRestApi) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApiGatewayRestApi) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_ApiGatewayRestApi) validateOverrideLogicalIdParameters(newLog
 }
 
 func (a *jsiiProxy_ApiGatewayRestApi) validatePutEndpointConfigurationParameters(value *ApiGatewayRestApiEndpointConfiguration) error {
+	return nil
+}
+
+func validateApiGatewayRestApi_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

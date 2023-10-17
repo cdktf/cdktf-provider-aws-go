@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganizationalUnit) validateOverrideLogic
 	return nil
 }
 
+func validateDataAwsOrganizationsOrganizationalUnit_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsOrganizationsOrganizationalUnit_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package spotdatafeedsubscription
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpotDatafeedSubscription) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpotDatafeedSubscription) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (s *jsiiProxy_SpotDatafeedSubscription) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (s *jsiiProxy_SpotDatafeedSubscription) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpotDatafeedSubscription) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_SpotDatafeedSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpotDatafeedSubscription) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateSpotDatafeedSubscription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

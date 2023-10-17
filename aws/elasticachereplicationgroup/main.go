@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.elasticacheReplicationGroup.ElasticacheReplicationGroup",
 		reflect.TypeOf((*ElasticacheReplicationGroup)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "applyImmediately", GoGetter: "ApplyImmediately"},
 			_jsii_.MemberProperty{JsiiProperty: "applyImmediatelyInput", GoGetter: "ApplyImmediatelyInput"},
@@ -60,6 +61,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "globalReplicationGroupIdInput", GoGetter: "GlobalReplicationGroupIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyId", GoGetter: "KmsKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyIdInput", GoGetter: "KmsKeyIdInput"},
@@ -69,6 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindow", GoGetter: "MaintenanceWindow"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindowInput", GoGetter: "MaintenanceWindowInput"},
 			_jsii_.MemberProperty{JsiiProperty: "memberClusters", GoGetter: "MemberClusters"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "multiAzEnabled", GoGetter: "MultiAzEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "multiAzEnabledInput", GoGetter: "MultiAzEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

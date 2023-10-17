@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsSesv2DedicatedIpPool) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func validateDataAwsSesv2DedicatedIpPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsSesv2DedicatedIpPool_IsConstructParameters(x interface{}) error {
 	return nil
 }

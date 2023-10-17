@@ -5,9 +5,9 @@ package lambdaprovisionedconcurrencyconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/lambdaprovisionedconcurrencyconfig/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/lambdaprovisionedconcurrencyconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

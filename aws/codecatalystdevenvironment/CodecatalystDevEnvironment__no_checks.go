@@ -7,6 +7,10 @@ package codecatalystdevenvironment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CodecatalystDevEnvironment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodecatalystDevEnvironment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CodecatalystDevEnvironment) validateGetStringMapAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_CodecatalystDevEnvironment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodecatalystDevEnvironment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodecatalystDevEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (c *jsiiProxy_CodecatalystDevEnvironment) validatePutRepositoriesParameters
 }
 
 func (c *jsiiProxy_CodecatalystDevEnvironment) validatePutTimeoutsParameters(value *CodecatalystDevEnvironmentTimeouts) error {
+	return nil
+}
+
+func validateCodecatalystDevEnvironment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

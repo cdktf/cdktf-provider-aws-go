@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkHostedZone) validateOverrideLogicalIdP
 	return nil
 }
 
+func validateDataAwsElasticBeanstalkHostedZone_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsElasticBeanstalkHostedZone_IsConstructParameters(x interface{}) error {
 	return nil
 }

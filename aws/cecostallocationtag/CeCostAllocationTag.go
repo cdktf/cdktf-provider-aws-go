@@ -5,10 +5,10 @@ package cecostallocationtag
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/cecostallocationtag/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/cecostallocationtag/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -71,6 +71,9 @@ type CeCostAllocationTag interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -92,7 +95,12 @@ type CeCostAllocationTag interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -476,6 +484,25 @@ func (j *jsiiProxy_CeCostAllocationTag)SetTagKey(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a CeCostAllocationTag resource upon running "cdktf plan <stack-name>".
+func CeCostAllocationTag_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateCeCostAllocationTag_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.ceCostAllocationTag.CeCostAllocationTag",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -558,6 +585,17 @@ func CeCostAllocationTag_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (c *jsiiProxy_CeCostAllocationTag) AddMoveTarget(moveTarget *string) {
+	if err := c.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (c *jsiiProxy_CeCostAllocationTag) AddOverride(path *string, value interface{}) {
@@ -715,6 +753,17 @@ func (c *jsiiProxy_CeCostAllocationTag) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (c *jsiiProxy_CeCostAllocationTag) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := c.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (c *jsiiProxy_CeCostAllocationTag) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -729,6 +778,17 @@ func (c *jsiiProxy_CeCostAllocationTag) InterpolationForAttribute(terraformAttri
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CeCostAllocationTag) MoveTo(moveTarget *string, index interface{}) {
+	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (c *jsiiProxy_CeCostAllocationTag) OverrideLogicalId(newLogicalId *string) {

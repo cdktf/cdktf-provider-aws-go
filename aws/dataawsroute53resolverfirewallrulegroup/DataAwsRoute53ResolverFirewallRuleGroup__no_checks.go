@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRuleGroup) validateOverrideLogi
 	return nil
 }
 
+func validateDataAwsRoute53ResolverFirewallRuleGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsRoute53ResolverFirewallRuleGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

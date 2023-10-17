@@ -7,6 +7,10 @@ package lightsailinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LightsailInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LightsailInstance) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (l *jsiiProxy_LightsailInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LightsailInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (l *jsiiProxy_LightsailInstance) validateOverrideLogicalIdParameters(newLog
 }
 
 func (l *jsiiProxy_LightsailInstance) validatePutAddOnParameters(value *LightsailInstanceAddOn) error {
+	return nil
+}
+
+func validateLightsailInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

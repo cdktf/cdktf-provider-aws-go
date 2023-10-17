@@ -7,6 +7,10 @@ package eipassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EipAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EipAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (e *jsiiProxy_EipAssociation) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (e *jsiiProxy_EipAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EipAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_EipAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EipAssociation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEipAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

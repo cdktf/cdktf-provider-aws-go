@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsFsxOntapFileSystem) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func validateDataAwsFsxOntapFileSystem_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsFsxOntapFileSystem_IsConstructParameters(x interface{}) error {
 	return nil
 }

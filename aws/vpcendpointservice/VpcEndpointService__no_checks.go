@@ -7,6 +7,10 @@ package vpcendpointservice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpcEndpointService) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpointService) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VpcEndpointService) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (v *jsiiProxy_VpcEndpointService) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpointService) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcEndpointService) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (v *jsiiProxy_VpcEndpointService) validateOverrideLogicalIdParameters(newLo
 }
 
 func (v *jsiiProxy_VpcEndpointService) validatePutTimeoutsParameters(value *VpcEndpointServiceTimeouts) error {
+	return nil
+}
+
+func validateVpcEndpointService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

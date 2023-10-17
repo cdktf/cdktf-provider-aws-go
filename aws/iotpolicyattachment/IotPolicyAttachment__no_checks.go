@@ -7,6 +7,10 @@ package iotpolicyattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IotPolicyAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotPolicyAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IotPolicyAttachment) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (i *jsiiProxy_IotPolicyAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotPolicyAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IotPolicyAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotPolicyAttachment) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIotPolicyAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

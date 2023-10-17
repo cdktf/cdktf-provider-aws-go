@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsRoute53ResolverRule) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func validateDataAwsRoute53ResolverRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsRoute53ResolverRule_IsConstructParameters(x interface{}) error {
 	return nil
 }

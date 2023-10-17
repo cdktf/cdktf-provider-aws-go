@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.cognitoIdentityProvider.CognitoIdentityProvider",
 		reflect.TypeOf((*CognitoIdentityProvider)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeMapping", GoGetter: "AttributeMapping"},
 			_jsii_.MemberProperty{JsiiProperty: "attributeMappingInput", GoGetter: "AttributeMappingInput"},
@@ -38,8 +39,10 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "idpIdentifiers", GoGetter: "IdpIdentifiers"},
 			_jsii_.MemberProperty{JsiiProperty: "idpIdentifiersInput", GoGetter: "IdpIdentifiersInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsVpcSecurityGroupRules) validatePutFilterParameters(val
 	return nil
 }
 
+func validateDataAwsVpcSecurityGroupRules_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsVpcSecurityGroupRules_IsConstructParameters(x interface{}) error {
 	return nil
 }

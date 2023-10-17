@@ -7,6 +7,10 @@ package guarddutyorganizationconfigurationfeature
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GuarddutyOrganizationConfigurationFeature) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GuarddutyOrganizationConfigurationFeature) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GuarddutyOrganizationConfigurationFeature) validateGetStringM
 	return nil
 }
 
+func (g *jsiiProxy_GuarddutyOrganizationConfigurationFeature) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GuarddutyOrganizationConfigurationFeature) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GuarddutyOrganizationConfigurationFeature) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GuarddutyOrganizationConfigurationFeature) validateOverrideLo
 }
 
 func (g *jsiiProxy_GuarddutyOrganizationConfigurationFeature) validatePutAdditionalConfigurationParameters(value interface{}) error {
+	return nil
+}
+
+func validateGuarddutyOrganizationConfigurationFeature_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

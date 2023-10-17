@@ -5,9 +5,9 @@ package dataawsdxrouterconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsdxrouterconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsdxrouterconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -34,7 +34,7 @@ type DataAwsDxRouterConfigurationRouterOutputReference interface {
 	SetInternalValue(val *DataAwsDxRouterConfigurationRouter)
 	Platform() *string
 	RouterTypeIdentifier() *string
-	Software() *string
+	SoftwareAttribute() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -155,11 +155,11 @@ func (j *jsiiProxy_DataAwsDxRouterConfigurationRouterOutputReference) RouterType
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsDxRouterConfigurationRouterOutputReference) Software() *string {
+func (j *jsiiProxy_DataAwsDxRouterConfigurationRouterOutputReference) SoftwareAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"software",
+		"softwareAttribute",
 		&returns,
 	)
 	return returns

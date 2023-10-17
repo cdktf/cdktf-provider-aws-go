@@ -7,6 +7,10 @@ package vpclatticeauthpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpclatticeAuthPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpclatticeAuthPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VpclatticeAuthPolicy) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (v *jsiiProxy_VpclatticeAuthPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpclatticeAuthPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpclatticeAuthPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (v *jsiiProxy_VpclatticeAuthPolicy) validateOverrideLogicalIdParameters(new
 }
 
 func (v *jsiiProxy_VpclatticeAuthPolicy) validatePutTimeoutsParameters(value *VpclatticeAuthPolicyTimeouts) error {
+	return nil
+}
+
+func validateVpclatticeAuthPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

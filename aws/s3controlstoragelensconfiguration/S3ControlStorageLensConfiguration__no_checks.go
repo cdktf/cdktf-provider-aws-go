@@ -7,6 +7,10 @@ package s3controlstoragelensconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3ControlStorageLensConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ControlStorageLensConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_S3ControlStorageLensConfiguration) validateGetStringMapAttrib
 	return nil
 }
 
+func (s *jsiiProxy_S3ControlStorageLensConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ControlStorageLensConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3ControlStorageLensConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_S3ControlStorageLensConfiguration) validateOverrideLogicalIdP
 }
 
 func (s *jsiiProxy_S3ControlStorageLensConfiguration) validatePutStorageLensConfigurationParameters(value *S3ControlStorageLensConfigurationStorageLensConfiguration) error {
+	return nil
+}
+
+func validateS3ControlStorageLensConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

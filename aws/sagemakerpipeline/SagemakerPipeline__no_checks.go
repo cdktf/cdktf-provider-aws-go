@@ -7,6 +7,10 @@ package sagemakerpipeline
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SagemakerPipeline) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerPipeline) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SagemakerPipeline) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerPipeline) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerPipeline) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerPipeline) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SagemakerPipeline) validatePutParallelismConfigurationParamet
 }
 
 func (s *jsiiProxy_SagemakerPipeline) validatePutPipelineDefinitionS3LocationParameters(value *SagemakerPipelinePipelineDefinitionS3Location) error {
+	return nil
+}
+
+func validateSagemakerPipeline_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

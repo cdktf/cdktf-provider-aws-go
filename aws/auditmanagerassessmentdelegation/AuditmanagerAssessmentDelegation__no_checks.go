@@ -7,6 +7,10 @@ package auditmanagerassessmentdelegation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AuditmanagerAssessmentDelegation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuditmanagerAssessmentDelegation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_AuditmanagerAssessmentDelegation) validateGetStringMapAttribu
 	return nil
 }
 
+func (a *jsiiProxy_AuditmanagerAssessmentDelegation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuditmanagerAssessmentDelegation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AuditmanagerAssessmentDelegation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuditmanagerAssessmentDelegation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAuditmanagerAssessmentDelegation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

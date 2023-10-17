@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsCodecommitRepository) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func validateDataAwsCodecommitRepository_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsCodecommitRepository_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsWafRateBasedRule) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func validateDataAwsWafRateBasedRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsWafRateBasedRule_IsConstructParameters(x interface{}) error {
 	return nil
 }

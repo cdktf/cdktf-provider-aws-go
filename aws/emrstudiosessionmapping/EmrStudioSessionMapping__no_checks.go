@@ -7,6 +7,10 @@ package emrstudiosessionmapping
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EmrStudioSessionMapping) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrStudioSessionMapping) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (e *jsiiProxy_EmrStudioSessionMapping) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (e *jsiiProxy_EmrStudioSessionMapping) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrStudioSessionMapping) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_EmrStudioSessionMapping) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrStudioSessionMapping) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEmrStudioSessionMapping_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

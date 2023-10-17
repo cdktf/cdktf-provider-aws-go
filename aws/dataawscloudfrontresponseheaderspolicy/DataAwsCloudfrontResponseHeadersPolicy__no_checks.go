@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicy) validateOverrideLogic
 	return nil
 }
 
+func validateDataAwsCloudfrontResponseHeadersPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsCloudfrontResponseHeadersPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

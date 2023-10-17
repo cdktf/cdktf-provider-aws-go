@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsCloudwatchLogGroup) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func validateDataAwsCloudwatchLogGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsCloudwatchLogGroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

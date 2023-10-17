@@ -7,6 +7,10 @@ package spotfleetrequest
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpotFleetRequest) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpotFleetRequest) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SpotFleetRequest) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (s *jsiiProxy_SpotFleetRequest) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpotFleetRequest) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpotFleetRequest) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (s *jsiiProxy_SpotFleetRequest) validatePutSpotMaintenanceStrategiesParamet
 }
 
 func (s *jsiiProxy_SpotFleetRequest) validatePutTimeoutsParameters(value *SpotFleetRequestTimeouts) error {
+	return nil
+}
+
+func validateSpotFleetRequest_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

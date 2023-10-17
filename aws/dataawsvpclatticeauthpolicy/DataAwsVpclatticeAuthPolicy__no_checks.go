@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsVpclatticeAuthPolicy) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func validateDataAwsVpclatticeAuthPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsVpclatticeAuthPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

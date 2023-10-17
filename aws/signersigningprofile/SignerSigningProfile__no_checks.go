@@ -7,6 +7,10 @@ package signersigningprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SignerSigningProfile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SignerSigningProfile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SignerSigningProfile) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_SignerSigningProfile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SignerSigningProfile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SignerSigningProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SignerSigningProfile) validatePutSignatureValidityPeriodParam
 }
 
 func (s *jsiiProxy_SignerSigningProfile) validatePutSigningMaterialParameters(value *SignerSigningProfileSigningMaterial) error {
+	return nil
+}
+
+func validateSignerSigningProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

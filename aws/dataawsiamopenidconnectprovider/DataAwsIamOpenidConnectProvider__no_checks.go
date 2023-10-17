@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsIamOpenidConnectProvider) validateOverrideLogicalIdPar
 	return nil
 }
 
+func validateDataAwsIamOpenidConnectProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsIamOpenidConnectProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

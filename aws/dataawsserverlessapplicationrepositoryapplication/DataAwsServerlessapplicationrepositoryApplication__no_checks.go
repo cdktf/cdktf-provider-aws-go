@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsServerlessapplicationrepositoryApplication) validateOv
 	return nil
 }
 
+func validateDataAwsServerlessapplicationrepositoryApplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsServerlessapplicationrepositoryApplication_IsConstructParameters(x interface{}) error {
 	return nil
 }

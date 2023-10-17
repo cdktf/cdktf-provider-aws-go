@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.spotInstanceRequest.SpotInstanceRequest",
 		reflect.TypeOf((*SpotInstanceRequest)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "ami", GoGetter: "Ami"},
 			_jsii_.MemberProperty{JsiiProperty: "amiInput", GoGetter: "AmiInput"},
@@ -75,6 +76,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "iamInstanceProfileInput", GoGetter: "IamInstanceProfileInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceInitiatedShutdownBehavior", GoGetter: "InstanceInitiatedShutdownBehavior"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceInitiatedShutdownBehaviorInput", GoGetter: "InstanceInitiatedShutdownBehaviorInput"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceInterruptionBehavior", GoGetter: "InstanceInterruptionBehavior"},
@@ -100,6 +102,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "metadataOptionsInput", GoGetter: "MetadataOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "monitoring", GoGetter: "Monitoring"},
 			_jsii_.MemberProperty{JsiiProperty: "monitoringInput", GoGetter: "MonitoringInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "networkInterface", GoGetter: "NetworkInterface"},
 			_jsii_.MemberProperty{JsiiProperty: "networkInterfaceInput", GoGetter: "NetworkInterfaceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

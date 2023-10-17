@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsGrafanaWorkspace) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func validateDataAwsGrafanaWorkspace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsGrafanaWorkspace_IsConstructParameters(x interface{}) error {
 	return nil
 }

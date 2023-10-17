@@ -5,10 +5,10 @@ package quicksightrefreshschedule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/quicksightrefreshschedule/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/quicksightrefreshschedule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -74,6 +74,9 @@ type QuicksightRefreshSchedule interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -95,7 +98,12 @@ type QuicksightRefreshSchedule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -511,6 +519,25 @@ func (j *jsiiProxy_QuicksightRefreshSchedule)SetScheduleId(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a QuicksightRefreshSchedule resource upon running "cdktf plan <stack-name>".
+func QuicksightRefreshSchedule_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateQuicksightRefreshSchedule_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.quicksightRefreshSchedule.QuicksightRefreshSchedule",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -593,6 +620,17 @@ func QuicksightRefreshSchedule_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (q *jsiiProxy_QuicksightRefreshSchedule) AddMoveTarget(moveTarget *string) {
+	if err := q.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (q *jsiiProxy_QuicksightRefreshSchedule) AddOverride(path *string, value interface{}) {
@@ -750,6 +788,17 @@ func (q *jsiiProxy_QuicksightRefreshSchedule) GetStringMapAttribute(terraformAtt
 	return returns
 }
 
+func (q *jsiiProxy_QuicksightRefreshSchedule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := q.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (q *jsiiProxy_QuicksightRefreshSchedule) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := q.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -764,6 +813,17 @@ func (q *jsiiProxy_QuicksightRefreshSchedule) InterpolationForAttribute(terrafor
 	)
 
 	return returns
+}
+
+func (q *jsiiProxy_QuicksightRefreshSchedule) MoveTo(moveTarget *string, index interface{}) {
+	if err := q.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (q *jsiiProxy_QuicksightRefreshSchedule) OverrideLogicalId(newLogicalId *string) {

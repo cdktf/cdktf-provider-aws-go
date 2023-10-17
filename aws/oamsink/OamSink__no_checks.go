@@ -7,6 +7,10 @@ package oamsink
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OamSink) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OamSink) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OamSink) validateGetStringMapAttributeParameters(terraformAtt
 	return nil
 }
 
+func (o *jsiiProxy_OamSink) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OamSink) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OamSink) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (o *jsiiProxy_OamSink) validateOverrideLogicalIdParameters(newLogicalId *st
 }
 
 func (o *jsiiProxy_OamSink) validatePutTimeoutsParameters(value *OamSinkTimeouts) error {
+	return nil
+}
+
+func validateOamSink_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

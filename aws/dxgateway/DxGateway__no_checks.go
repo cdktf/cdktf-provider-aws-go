@@ -7,6 +7,10 @@ package dxgateway
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DxGateway) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxGateway) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DxGateway) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (d *jsiiProxy_DxGateway) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxGateway) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DxGateway) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (d *jsiiProxy_DxGateway) validatePutTimeoutsParameters(value *DxGatewayTimeouts) error {
+	return nil
+}
+
+func validateDxGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

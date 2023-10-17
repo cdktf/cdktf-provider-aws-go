@@ -7,6 +7,10 @@ package guarddutyipset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GuarddutyIpset) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GuarddutyIpset) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (g *jsiiProxy_GuarddutyIpset) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (g *jsiiProxy_GuarddutyIpset) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GuarddutyIpset) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (g *jsiiProxy_GuarddutyIpset) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GuarddutyIpset) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateGuarddutyIpset_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

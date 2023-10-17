@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsIotEndpoint) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func validateDataAwsIotEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsIotEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }

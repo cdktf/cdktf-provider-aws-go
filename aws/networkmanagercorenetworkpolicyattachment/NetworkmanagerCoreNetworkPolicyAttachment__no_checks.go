@@ -7,6 +7,10 @@ package networkmanagercorenetworkpolicyattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateGetStringM
 	return nil
 }
 
+func (n *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validateOverrideLo
 }
 
 func (n *jsiiProxy_NetworkmanagerCoreNetworkPolicyAttachment) validatePutTimeoutsParameters(value *NetworkmanagerCoreNetworkPolicyAttachmentTimeouts) error {
+	return nil
+}
+
+func validateNetworkmanagerCoreNetworkPolicyAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

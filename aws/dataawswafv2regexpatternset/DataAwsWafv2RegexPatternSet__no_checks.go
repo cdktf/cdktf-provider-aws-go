@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsWafv2RegexPatternSet) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func validateDataAwsWafv2RegexPatternSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsWafv2RegexPatternSet_IsConstructParameters(x interface{}) error {
 	return nil
 }

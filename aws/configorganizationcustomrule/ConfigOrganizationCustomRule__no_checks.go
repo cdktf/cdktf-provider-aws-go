@@ -7,6 +7,10 @@ package configorganizationcustomrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConfigOrganizationCustomRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigOrganizationCustomRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ConfigOrganizationCustomRule) validateGetStringMapAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_ConfigOrganizationCustomRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigOrganizationCustomRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigOrganizationCustomRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ConfigOrganizationCustomRule) validateOverrideLogicalIdParame
 }
 
 func (c *jsiiProxy_ConfigOrganizationCustomRule) validatePutTimeoutsParameters(value *ConfigOrganizationCustomRuleTimeouts) error {
+	return nil
+}
+
+func validateConfigOrganizationCustomRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

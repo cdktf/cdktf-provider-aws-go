@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsCloudfrontOriginAccessIdentity) validateOverrideLogica
 	return nil
 }
 
+func validateDataAwsCloudfrontOriginAccessIdentity_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsCloudfrontOriginAccessIdentity_IsConstructParameters(x interface{}) error {
 	return nil
 }

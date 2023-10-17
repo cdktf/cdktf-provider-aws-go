@@ -7,6 +7,10 @@ package routetable
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RouteTable) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RouteTable) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RouteTable) validateGetStringMapAttributeParameters(terraform
 	return nil
 }
 
+func (r *jsiiProxy_RouteTable) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RouteTable) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RouteTable) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (r *jsiiProxy_RouteTable) validatePutRouteParameters(value interface{}) err
 }
 
 func (r *jsiiProxy_RouteTable) validatePutTimeoutsParameters(value *RouteTableTimeouts) error {
+	return nil
+}
+
+func validateRouteTable_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

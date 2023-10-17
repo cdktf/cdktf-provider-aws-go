@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsKmsKey) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func validateDataAwsKmsKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsKmsKey_IsConstructParameters(x interface{}) error {
 	return nil
 }

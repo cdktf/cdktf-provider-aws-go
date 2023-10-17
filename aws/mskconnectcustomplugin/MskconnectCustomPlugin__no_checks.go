@@ -7,6 +7,10 @@ package mskconnectcustomplugin
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MskconnectCustomPlugin) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MskconnectCustomPlugin) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_MskconnectCustomPlugin) validateGetStringMapAttributeParamete
 	return nil
 }
 
+func (m *jsiiProxy_MskconnectCustomPlugin) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MskconnectCustomPlugin) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MskconnectCustomPlugin) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (m *jsiiProxy_MskconnectCustomPlugin) validatePutLocationParameters(value *
 }
 
 func (m *jsiiProxy_MskconnectCustomPlugin) validatePutTimeoutsParameters(value *MskconnectCustomPluginTimeouts) error {
+	return nil
+}
+
+func validateMskconnectCustomPlugin_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package shielddrtaccessrolearnassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ShieldDrtAccessRoleArnAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ShieldDrtAccessRoleArnAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_ShieldDrtAccessRoleArnAssociation) validateGetStringMapAttrib
 	return nil
 }
 
+func (s *jsiiProxy_ShieldDrtAccessRoleArnAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ShieldDrtAccessRoleArnAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ShieldDrtAccessRoleArnAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_ShieldDrtAccessRoleArnAssociation) validateOverrideLogicalIdP
 }
 
 func (s *jsiiProxy_ShieldDrtAccessRoleArnAssociation) validatePutTimeoutsParameters(value *ShieldDrtAccessRoleArnAssociationTimeouts) error {
+	return nil
+}
+
+func validateShieldDrtAccessRoleArnAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.defaultSubnet.DefaultSubnet",
 		reflect.TypeOf((*DefaultSubnet)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "assignIpv6AddressOnCreation", GoGetter: "AssignIpv6AddressOnCreation"},
@@ -53,6 +54,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ipv6CidrBlock", GoGetter: "Ipv6CidrBlock"},
 			_jsii_.MemberProperty{JsiiProperty: "ipv6CidrBlockAssociationId", GoGetter: "Ipv6CidrBlockAssociationId"},
@@ -64,6 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "mapCustomerOwnedIpOnLaunchInput", GoGetter: "MapCustomerOwnedIpOnLaunchInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mapPublicIpOnLaunch", GoGetter: "MapPublicIpOnLaunch"},
 			_jsii_.MemberProperty{JsiiProperty: "mapPublicIpOnLaunchInput", GoGetter: "MapPublicIpOnLaunchInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "outpostArn", GoGetter: "OutpostArn"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},

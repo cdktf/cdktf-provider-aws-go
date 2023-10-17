@@ -7,6 +7,10 @@ package inspector2delegatedadminaccount
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_Inspector2DelegatedAdminAccount) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Inspector2DelegatedAdminAccount) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_Inspector2DelegatedAdminAccount) validateGetStringMapAttribut
 	return nil
 }
 
+func (i *jsiiProxy_Inspector2DelegatedAdminAccount) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Inspector2DelegatedAdminAccount) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_Inspector2DelegatedAdminAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_Inspector2DelegatedAdminAccount) validateOverrideLogicalIdPar
 }
 
 func (i *jsiiProxy_Inspector2DelegatedAdminAccount) validatePutTimeoutsParameters(value *Inspector2DelegatedAdminAccountTimeouts) error {
+	return nil
+}
+
+func validateInspector2DelegatedAdminAccount_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

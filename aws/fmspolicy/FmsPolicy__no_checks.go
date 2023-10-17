@@ -7,6 +7,10 @@ package fmspolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FmsPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FmsPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_FmsPolicy) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (f *jsiiProxy_FmsPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FmsPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FmsPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (f *jsiiProxy_FmsPolicy) validatePutIncludeMapParameters(value *FmsPolicyIn
 }
 
 func (f *jsiiProxy_FmsPolicy) validatePutSecurityServicePolicyDataParameters(value *FmsPolicySecurityServicePolicyData) error {
+	return nil
+}
+
+func validateFmsPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

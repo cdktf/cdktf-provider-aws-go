@@ -7,6 +7,10 @@ package lightsaildistribution
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LightsailDistribution) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailDistribution) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LightsailDistribution) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (l *jsiiProxy_LightsailDistribution) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailDistribution) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LightsailDistribution) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (l *jsiiProxy_LightsailDistribution) validatePutOriginParameters(value *Lig
 }
 
 func (l *jsiiProxy_LightsailDistribution) validatePutTimeoutsParameters(value *LightsailDistributionTimeouts) error {
+	return nil
+}
+
+func validateLightsailDistribution_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

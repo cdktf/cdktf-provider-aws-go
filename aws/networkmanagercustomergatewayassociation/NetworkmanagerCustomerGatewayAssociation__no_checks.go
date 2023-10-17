@@ -7,6 +7,10 @@ package networkmanagercustomergatewayassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) validateGetStringMa
 	return nil
 }
 
+func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) validateOverrideLog
 }
 
 func (n *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) validatePutTimeoutsParameters(value *NetworkmanagerCustomerGatewayAssociationTimeouts) error {
+	return nil
+}
+
+func validateNetworkmanagerCustomerGatewayAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

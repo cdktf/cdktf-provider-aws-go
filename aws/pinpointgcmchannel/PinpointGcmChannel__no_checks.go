@@ -7,6 +7,10 @@ package pinpointgcmchannel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PinpointGcmChannel) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PinpointGcmChannel) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (p *jsiiProxy_PinpointGcmChannel) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (p *jsiiProxy_PinpointGcmChannel) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PinpointGcmChannel) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (p *jsiiProxy_PinpointGcmChannel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PinpointGcmChannel) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validatePinpointGcmChannel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

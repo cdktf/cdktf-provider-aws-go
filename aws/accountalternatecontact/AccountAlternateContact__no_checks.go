@@ -7,6 +7,10 @@ package accountalternatecontact
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AccountAlternateContact) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccountAlternateContact) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AccountAlternateContact) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (a *jsiiProxy_AccountAlternateContact) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccountAlternateContact) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccountAlternateContact) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AccountAlternateContact) validateOverrideLogicalIdParameters(
 }
 
 func (a *jsiiProxy_AccountAlternateContact) validatePutTimeoutsParameters(value *AccountAlternateContactTimeouts) error {
+	return nil
+}
+
+func validateAccountAlternateContact_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

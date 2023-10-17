@@ -7,6 +7,10 @@ package autoscalinggrouptag
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AutoscalingGroupTagA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingGroupTagA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AutoscalingGroupTagA) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (a *jsiiProxy_AutoscalingGroupTagA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingGroupTagA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutoscalingGroupTagA) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AutoscalingGroupTagA) validateOverrideLogicalIdParameters(new
 }
 
 func (a *jsiiProxy_AutoscalingGroupTagA) validatePutTagParameters(value *AutoscalingGroupTagTag) error {
+	return nil
+}
+
+func validateAutoscalingGroupTagA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

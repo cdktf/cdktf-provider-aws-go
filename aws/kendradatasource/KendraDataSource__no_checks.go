@@ -7,6 +7,10 @@ package kendradatasource
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KendraDataSource) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KendraDataSource) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KendraDataSource) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (k *jsiiProxy_KendraDataSource) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KendraDataSource) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KendraDataSource) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (k *jsiiProxy_KendraDataSource) validatePutCustomDocumentEnrichmentConfigur
 }
 
 func (k *jsiiProxy_KendraDataSource) validatePutTimeoutsParameters(value *KendraDataSourceTimeouts) error {
+	return nil
+}
+
+func validateKendraDataSource_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

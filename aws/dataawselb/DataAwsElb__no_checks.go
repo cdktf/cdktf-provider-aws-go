@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsElb) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func validateDataAwsElb_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsElb_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package grafanaworkspace
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GrafanaWorkspace) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GrafanaWorkspace) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GrafanaWorkspace) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (g *jsiiProxy_GrafanaWorkspace) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GrafanaWorkspace) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GrafanaWorkspace) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (g *jsiiProxy_GrafanaWorkspace) validatePutTimeoutsParameters(value *Grafan
 }
 
 func (g *jsiiProxy_GrafanaWorkspace) validatePutVpcConfigurationParameters(value *GrafanaWorkspaceVpcConfiguration) error {
+	return nil
+}
+
+func validateGrafanaWorkspace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

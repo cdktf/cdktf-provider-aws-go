@@ -7,6 +7,10 @@ package apprunnercustomdomainassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_ApprunnerCustomDomainAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApprunnerCustomDomainAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) validateGetStringMapAttribu
 	return nil
 }
 
+func (a *jsiiProxy_ApprunnerCustomDomainAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApprunnerCustomDomainAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_ApprunnerCustomDomainAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApprunnerCustomDomainAssociation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateApprunnerCustomDomainAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

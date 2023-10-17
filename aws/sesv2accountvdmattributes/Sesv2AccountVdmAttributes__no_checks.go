@@ -7,6 +7,10 @@ package sesv2accountvdmattributes
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_Sesv2AccountVdmAttributes) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Sesv2AccountVdmAttributes) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_Sesv2AccountVdmAttributes) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_Sesv2AccountVdmAttributes) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Sesv2AccountVdmAttributes) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_Sesv2AccountVdmAttributes) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_Sesv2AccountVdmAttributes) validatePutDashboardAttributesPara
 }
 
 func (s *jsiiProxy_Sesv2AccountVdmAttributes) validatePutGuardianAttributesParameters(value *Sesv2AccountVdmAttributesGuardianAttributes) error {
+	return nil
+}
+
+func validateSesv2AccountVdmAttributes_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

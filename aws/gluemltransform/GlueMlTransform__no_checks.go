@@ -7,6 +7,10 @@ package gluemltransform
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GlueMlTransform) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueMlTransform) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GlueMlTransform) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (g *jsiiProxy_GlueMlTransform) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueMlTransform) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlueMlTransform) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GlueMlTransform) validatePutInputRecordTablesParameters(value
 }
 
 func (g *jsiiProxy_GlueMlTransform) validatePutParametersParameters(value *GlueMlTransformParameters) error {
+	return nil
+}
+
+func validateGlueMlTransform_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

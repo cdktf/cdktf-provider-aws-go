@@ -7,6 +7,10 @@ package dxhostedtransitvirtualinterface
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DxHostedTransitVirtualInterface) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxHostedTransitVirtualInterface) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DxHostedTransitVirtualInterface) validateGetStringMapAttribut
 	return nil
 }
 
+func (d *jsiiProxy_DxHostedTransitVirtualInterface) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxHostedTransitVirtualInterface) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxHostedTransitVirtualInterface) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DxHostedTransitVirtualInterface) validateOverrideLogicalIdPar
 }
 
 func (d *jsiiProxy_DxHostedTransitVirtualInterface) validatePutTimeoutsParameters(value *DxHostedTransitVirtualInterfaceTimeouts) error {
+	return nil
+}
+
+func validateDxHostedTransitVirtualInterface_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

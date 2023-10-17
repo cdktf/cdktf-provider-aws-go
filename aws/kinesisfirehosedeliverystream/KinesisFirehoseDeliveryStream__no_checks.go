@@ -7,6 +7,10 @@ package kinesisfirehosedeliverystream
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validateGetStringMapAttributeP
 	return nil
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -96,6 +108,10 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutSplunkConfiguration
 }
 
 func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutTimeoutsParameters(value *KinesisFirehoseDeliveryStreamTimeouts) error {
+	return nil
+}
+
+func validateKinesisFirehoseDeliveryStream_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

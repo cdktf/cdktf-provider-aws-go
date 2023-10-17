@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsSqsQueues) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func validateDataAwsSqsQueues_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsSqsQueues_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package connectuserhierarchystructure
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConnectUserHierarchyStructure) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectUserHierarchyStructure) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ConnectUserHierarchyStructure) validateGetStringMapAttributeP
 	return nil
 }
 
+func (c *jsiiProxy_ConnectUserHierarchyStructure) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectUserHierarchyStructure) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectUserHierarchyStructure) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_ConnectUserHierarchyStructure) validateOverrideLogicalIdParam
 }
 
 func (c *jsiiProxy_ConnectUserHierarchyStructure) validatePutHierarchyStructureParameters(value *ConnectUserHierarchyStructureHierarchyStructure) error {
+	return nil
+}
+
+func validateConnectUserHierarchyStructure_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

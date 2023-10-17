@@ -7,6 +7,10 @@ package macie2invitationaccepter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_Macie2InvitationAccepter) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2InvitationAccepter) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_Macie2InvitationAccepter) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (m *jsiiProxy_Macie2InvitationAccepter) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2InvitationAccepter) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_Macie2InvitationAccepter) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_Macie2InvitationAccepter) validateOverrideLogicalIdParameters
 }
 
 func (m *jsiiProxy_Macie2InvitationAccepter) validatePutTimeoutsParameters(value *Macie2InvitationAccepterTimeouts) error {
+	return nil
+}
+
+func validateMacie2InvitationAccepter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

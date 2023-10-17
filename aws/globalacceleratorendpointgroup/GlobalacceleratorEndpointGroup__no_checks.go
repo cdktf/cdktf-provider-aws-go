@@ -7,6 +7,10 @@ package globalacceleratorendpointgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validatePutPortOverrideParame
 }
 
 func (g *jsiiProxy_GlobalacceleratorEndpointGroup) validatePutTimeoutsParameters(value *GlobalacceleratorEndpointGroupTimeouts) error {
+	return nil
+}
+
+func validateGlobalacceleratorEndpointGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

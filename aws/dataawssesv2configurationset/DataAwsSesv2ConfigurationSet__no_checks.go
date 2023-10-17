@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsSesv2ConfigurationSet) validateOverrideLogicalIdParame
 	return nil
 }
 
+func validateDataAwsSesv2ConfigurationSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsSesv2ConfigurationSet_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -5,10 +5,10 @@ package keyspaceskeyspace
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/keyspaceskeyspace/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/keyspaceskeyspace/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -76,6 +76,9 @@ type KeyspacesKeyspace interface {
 	TerraformResourceType() *string
 	Timeouts() KeyspacesKeyspaceTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -97,7 +100,12 @@ type KeyspacesKeyspace interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -536,6 +544,25 @@ func (j *jsiiProxy_KeyspacesKeyspace)SetTagsAll(val *map[string]*string) {
 	)
 }
 
+// Generates CDKTF code for importing a KeyspacesKeyspace resource upon running "cdktf plan <stack-name>".
+func KeyspacesKeyspace_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateKeyspacesKeyspace_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.keyspacesKeyspace.KeyspacesKeyspace",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -618,6 +645,17 @@ func KeyspacesKeyspace_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (k *jsiiProxy_KeyspacesKeyspace) AddMoveTarget(moveTarget *string) {
+	if err := k.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (k *jsiiProxy_KeyspacesKeyspace) AddOverride(path *string, value interface{}) {
@@ -775,6 +813,17 @@ func (k *jsiiProxy_KeyspacesKeyspace) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
+func (k *jsiiProxy_KeyspacesKeyspace) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := k.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (k *jsiiProxy_KeyspacesKeyspace) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -789,6 +838,17 @@ func (k *jsiiProxy_KeyspacesKeyspace) InterpolationForAttribute(terraformAttribu
 	)
 
 	return returns
+}
+
+func (k *jsiiProxy_KeyspacesKeyspace) MoveTo(moveTarget *string, index interface{}) {
+	if err := k.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (k *jsiiProxy_KeyspacesKeyspace) OverrideLogicalId(newLogicalId *string) {

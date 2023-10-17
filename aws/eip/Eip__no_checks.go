@@ -7,6 +7,10 @@ package eip
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Eip) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Eip) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_Eip) validateGetStringMapAttributeParameters(terraformAttribu
 	return nil
 }
 
+func (e *jsiiProxy_Eip) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Eip) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Eip) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_Eip) validateOverrideLogicalIdParameters(newLogicalId *string
 }
 
 func (e *jsiiProxy_Eip) validatePutTimeoutsParameters(value *EipTimeouts) error {
+	return nil
+}
+
+func validateEip_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

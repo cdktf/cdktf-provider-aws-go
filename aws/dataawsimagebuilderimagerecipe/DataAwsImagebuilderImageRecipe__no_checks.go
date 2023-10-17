@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsImagebuilderImageRecipe) validateOverrideLogicalIdPara
 	return nil
 }
 
+func validateDataAwsImagebuilderImageRecipe_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsImagebuilderImageRecipe_IsConstructParameters(x interface{}) error {
 	return nil
 }

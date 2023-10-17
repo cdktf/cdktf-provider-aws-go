@@ -7,6 +7,10 @@ package workspacesipgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_WorkspacesIpGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkspacesIpGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (w *jsiiProxy_WorkspacesIpGroup) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (w *jsiiProxy_WorkspacesIpGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkspacesIpGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkspacesIpGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (w *jsiiProxy_WorkspacesIpGroup) validateOverrideLogicalIdParameters(newLog
 }
 
 func (w *jsiiProxy_WorkspacesIpGroup) validatePutRulesParameters(value interface{}) error {
+	return nil
+}
+
+func validateWorkspacesIpGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

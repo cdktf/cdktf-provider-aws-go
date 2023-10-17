@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsMskconnectCustomPlugin) validateOverrideLogicalIdParam
 	return nil
 }
 
+func validateDataAwsMskconnectCustomPlugin_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsMskconnectCustomPlugin_IsConstructParameters(x interface{}) error {
 	return nil
 }

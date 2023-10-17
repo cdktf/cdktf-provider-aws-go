@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsControltowerControls) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func validateDataAwsControltowerControls_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsControltowerControls_IsConstructParameters(x interface{}) error {
 	return nil
 }

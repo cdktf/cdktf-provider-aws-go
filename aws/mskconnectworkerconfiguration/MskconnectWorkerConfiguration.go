@@ -5,10 +5,10 @@ package mskconnectworkerconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/mskconnectworkerconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconnectworkerconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -75,6 +75,9 @@ type MskconnectWorkerConfiguration interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -96,7 +99,12 @@ type MskconnectWorkerConfiguration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -522,6 +530,25 @@ func (j *jsiiProxy_MskconnectWorkerConfiguration)SetProvisioners(val *[]interfac
 	)
 }
 
+// Generates CDKTF code for importing a MskconnectWorkerConfiguration resource upon running "cdktf plan <stack-name>".
+func MskconnectWorkerConfiguration_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateMskconnectWorkerConfiguration_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.mskconnectWorkerConfiguration.MskconnectWorkerConfiguration",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -604,6 +631,17 @@ func MskconnectWorkerConfiguration_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (m *jsiiProxy_MskconnectWorkerConfiguration) AddMoveTarget(moveTarget *string) {
+	if err := m.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (m *jsiiProxy_MskconnectWorkerConfiguration) AddOverride(path *string, value interface{}) {
@@ -761,6 +799,17 @@ func (m *jsiiProxy_MskconnectWorkerConfiguration) GetStringMapAttribute(terrafor
 	return returns
 }
 
+func (m *jsiiProxy_MskconnectWorkerConfiguration) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := m.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (m *jsiiProxy_MskconnectWorkerConfiguration) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -775,6 +824,17 @@ func (m *jsiiProxy_MskconnectWorkerConfiguration) InterpolationForAttribute(terr
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MskconnectWorkerConfiguration) MoveTo(moveTarget *string, index interface{}) {
+	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (m *jsiiProxy_MskconnectWorkerConfiguration) OverrideLogicalId(newLogicalId *string) {

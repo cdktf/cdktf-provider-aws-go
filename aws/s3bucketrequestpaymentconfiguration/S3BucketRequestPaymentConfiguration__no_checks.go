@@ -7,6 +7,10 @@ package s3bucketrequestpaymentconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3BucketRequestPaymentConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketRequestPaymentConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (s *jsiiProxy_S3BucketRequestPaymentConfiguration) validateGetStringMapAttr
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketRequestPaymentConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketRequestPaymentConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketRequestPaymentConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketRequestPaymentConfiguration) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateS3BucketRequestPaymentConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

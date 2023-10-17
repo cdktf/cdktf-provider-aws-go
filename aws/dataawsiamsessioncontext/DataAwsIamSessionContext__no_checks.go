@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsIamSessionContext) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func validateDataAwsIamSessionContext_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsIamSessionContext_IsConstructParameters(x interface{}) error {
 	return nil
 }

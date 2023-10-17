@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsBudgetsBudget) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func validateDataAwsBudgetsBudget_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsBudgetsBudget_IsConstructParameters(x interface{}) error {
 	return nil
 }

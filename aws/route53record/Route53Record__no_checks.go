@@ -7,6 +7,10 @@ package route53record
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_Route53Record) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53Record) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_Route53Record) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (r *jsiiProxy_Route53Record) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53Record) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53Record) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (r *jsiiProxy_Route53Record) validatePutLatencyRoutingPolicyParameters(valu
 }
 
 func (r *jsiiProxy_Route53Record) validatePutWeightedRoutingPolicyParameters(value *Route53RecordWeightedRoutingPolicy) error {
+	return nil
+}
+
+func validateRoute53Record_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

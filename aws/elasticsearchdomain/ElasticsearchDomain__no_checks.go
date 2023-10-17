@@ -7,6 +7,10 @@ package elasticsearchdomain
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ElasticsearchDomain) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticsearchDomain) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_ElasticsearchDomain) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (e *jsiiProxy_ElasticsearchDomain) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticsearchDomain) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticsearchDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -100,6 +112,10 @@ func (e *jsiiProxy_ElasticsearchDomain) validatePutTimeoutsParameters(value *Ela
 }
 
 func (e *jsiiProxy_ElasticsearchDomain) validatePutVpcOptionsParameters(value *ElasticsearchDomainVpcOptions) error {
+	return nil
+}
+
+func validateElasticsearchDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

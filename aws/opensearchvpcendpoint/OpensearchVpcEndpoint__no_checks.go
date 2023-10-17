@@ -7,6 +7,10 @@ package opensearchvpcendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OpensearchVpcEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchVpcEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OpensearchVpcEndpoint) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (o *jsiiProxy_OpensearchVpcEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchVpcEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpensearchVpcEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (o *jsiiProxy_OpensearchVpcEndpoint) validatePutTimeoutsParameters(value *O
 }
 
 func (o *jsiiProxy_OpensearchVpcEndpoint) validatePutVpcOptionsParameters(value *OpensearchVpcEndpointVpcOptions) error {
+	return nil
+}
+
+func validateOpensearchVpcEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

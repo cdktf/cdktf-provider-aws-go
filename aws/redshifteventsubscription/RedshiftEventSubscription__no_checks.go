@@ -7,6 +7,10 @@ package redshifteventsubscription
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RedshiftEventSubscription) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftEventSubscription) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RedshiftEventSubscription) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftEventSubscription) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftEventSubscription) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedshiftEventSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (r *jsiiProxy_RedshiftEventSubscription) validateOverrideLogicalIdParameter
 }
 
 func (r *jsiiProxy_RedshiftEventSubscription) validatePutTimeoutsParameters(value *RedshiftEventSubscriptionTimeouts) error {
+	return nil
+}
+
+func validateRedshiftEventSubscription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

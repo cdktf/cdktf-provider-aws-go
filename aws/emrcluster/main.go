@@ -16,6 +16,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalInfo", GoGetter: "AdditionalInfo"},
 			_jsii_.MemberProperty{JsiiProperty: "additionalInfoInput", GoGetter: "AdditionalInfoInput"},
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "applications", GoGetter: "Applications"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationsInput", GoGetter: "ApplicationsInput"},
@@ -60,6 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "keepJobFlowAliveWhenNoSteps", GoGetter: "KeepJobFlowAliveWhenNoSteps"},
 			_jsii_.MemberProperty{JsiiProperty: "keepJobFlowAliveWhenNoStepsInput", GoGetter: "KeepJobFlowAliveWhenNoStepsInput"},
@@ -77,6 +79,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "masterInstanceGroup", GoGetter: "MasterInstanceGroup"},
 			_jsii_.MemberProperty{JsiiProperty: "masterInstanceGroupInput", GoGetter: "MasterInstanceGroupInput"},
 			_jsii_.MemberProperty{JsiiProperty: "masterPublicDns", GoGetter: "MasterPublicDns"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

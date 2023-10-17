@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTarget",
 		reflect.TypeOf((*CloudwatchEventTarget)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "arnInput", GoGetter: "ArnInput"},
@@ -46,6 +47,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "httpTargetInput", GoGetter: "HttpTargetInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "input", GoGetter: "Input"},
 			_jsii_.MemberProperty{JsiiProperty: "inputInput", GoGetter: "InputInput"},
 			_jsii_.MemberProperty{JsiiProperty: "inputPath", GoGetter: "InputPath"},
@@ -56,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "kinesisTarget", GoGetter: "KinesisTarget"},
 			_jsii_.MemberProperty{JsiiProperty: "kinesisTargetInput", GoGetter: "KinesisTargetInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},

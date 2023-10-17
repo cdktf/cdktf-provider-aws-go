@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAwsVpcIpamPoolCidrs) validatePutTimeoutsParameters(value 
 	return nil
 }
 
+func validateDataAwsVpcIpamPoolCidrs_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsVpcIpamPoolCidrs_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsSecretsmanagerSecret) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func validateDataAwsSecretsmanagerSecret_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsSecretsmanagerSecret_IsConstructParameters(x interface{}) error {
 	return nil
 }

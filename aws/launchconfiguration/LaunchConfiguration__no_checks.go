@@ -7,6 +7,10 @@ package launchconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LaunchConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LaunchConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (l *jsiiProxy_LaunchConfiguration) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (l *jsiiProxy_LaunchConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LaunchConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LaunchConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (l *jsiiProxy_LaunchConfiguration) validatePutMetadataOptionsParameters(val
 }
 
 func (l *jsiiProxy_LaunchConfiguration) validatePutRootBlockDeviceParameters(value *LaunchConfigurationRootBlockDevice) error {
+	return nil
+}
+
+func validateLaunchConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

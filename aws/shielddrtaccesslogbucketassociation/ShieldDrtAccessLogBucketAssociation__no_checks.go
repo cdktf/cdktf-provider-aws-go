@@ -7,6 +7,10 @@ package shielddrtaccesslogbucketassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ShieldDrtAccessLogBucketAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ShieldDrtAccessLogBucketAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_ShieldDrtAccessLogBucketAssociation) validateGetStringMapAttr
 	return nil
 }
 
+func (s *jsiiProxy_ShieldDrtAccessLogBucketAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ShieldDrtAccessLogBucketAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_ShieldDrtAccessLogBucketAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_ShieldDrtAccessLogBucketAssociation) validateOverrideLogicalI
 }
 
 func (s *jsiiProxy_ShieldDrtAccessLogBucketAssociation) validatePutTimeoutsParameters(value *ShieldDrtAccessLogBucketAssociationTimeouts) error {
+	return nil
+}
+
+func validateShieldDrtAccessLogBucketAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

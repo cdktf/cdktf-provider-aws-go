@@ -7,6 +7,10 @@ package sagemakerendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SagemakerEndpoint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerEndpoint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SagemakerEndpoint) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerEndpoint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerEndpoint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_SagemakerEndpoint) validateOverrideLogicalIdParameters(newLog
 }
 
 func (s *jsiiProxy_SagemakerEndpoint) validatePutDeploymentConfigParameters(value *SagemakerEndpointDeploymentConfig) error {
+	return nil
+}
+
+func validateSagemakerEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

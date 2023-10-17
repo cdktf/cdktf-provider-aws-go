@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayRouteTablePropagations) validatePutTi
 	return nil
 }
 
+func validateDataAwsEc2TransitGatewayRouteTablePropagations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEc2TransitGatewayRouteTablePropagations_IsConstructParameters(x interface{}) error {
 	return nil
 }

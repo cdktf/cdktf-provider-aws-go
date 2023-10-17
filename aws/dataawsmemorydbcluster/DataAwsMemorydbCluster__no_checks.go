@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsMemorydbCluster) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func validateDataAwsMemorydbCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsMemorydbCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }

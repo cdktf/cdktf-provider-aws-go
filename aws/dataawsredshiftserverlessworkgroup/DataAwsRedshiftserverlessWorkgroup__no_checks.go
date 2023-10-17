@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsRedshiftserverlessWorkgroup) validateOverrideLogicalId
 	return nil
 }
 
+func validateDataAwsRedshiftserverlessWorkgroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsRedshiftserverlessWorkgroup_IsConstructParameters(x interface{}) error {
 	return nil
 }

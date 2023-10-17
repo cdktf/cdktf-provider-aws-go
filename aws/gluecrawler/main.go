@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.glueCrawler.GlueCrawler",
 		reflect.TypeOf((*GlueCrawler)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogTarget", GoGetter: "CatalogTarget"},
@@ -53,6 +54,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "icebergTargetInput", GoGetter: "IcebergTargetInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "jdbcTarget", GoGetter: "JdbcTarget"},
 			_jsii_.MemberProperty{JsiiProperty: "jdbcTargetInput", GoGetter: "JdbcTargetInput"},
@@ -63,6 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lineageConfigurationInput", GoGetter: "LineageConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mongodbTarget", GoGetter: "MongodbTarget"},
 			_jsii_.MemberProperty{JsiiProperty: "mongodbTargetInput", GoGetter: "MongodbTargetInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

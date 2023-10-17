@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsRoute53ResolverEndpoint) validatePutFilterParameters(v
 	return nil
 }
 
+func validateDataAwsRoute53ResolverEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsRoute53ResolverEndpoint_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package acmpcacertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AcmpcaCertificate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AcmpcaCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AcmpcaCertificate) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (a *jsiiProxy_AcmpcaCertificate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AcmpcaCertificate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AcmpcaCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AcmpcaCertificate) validateOverrideLogicalIdParameters(newLog
 }
 
 func (a *jsiiProxy_AcmpcaCertificate) validatePutValidityParameters(value *AcmpcaCertificateValidity) error {
+	return nil
+}
+
+func validateAcmpcaCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

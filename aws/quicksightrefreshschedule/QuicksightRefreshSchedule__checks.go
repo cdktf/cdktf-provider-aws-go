@@ -14,6 +14,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
+func (q *jsiiProxy_QuicksightRefreshSchedule) validateAddMoveTargetParameters(moveTarget *string) error {
+	if moveTarget == nil {
+		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightRefreshSchedule) validateAddOverrideParameters(path *string, value interface{}) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
@@ -98,9 +106,78 @@ func (q *jsiiProxy_QuicksightRefreshSchedule) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (q *jsiiProxy_QuicksightRefreshSchedule) validateImportFromParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightRefreshSchedule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (q *jsiiProxy_QuicksightRefreshSchedule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	if moveTarget == nil {
+		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
+	}
+
+	switch index.(type) {
+	case *string:
+		// ok
+	case string:
+		// ok
+	case *float64:
+		// ok
+	case float64:
+		// ok
+	case *int:
+		// ok
+	case int:
+		// ok
+	case *uint:
+		// ok
+	case uint:
+		// ok
+	case *int8:
+		// ok
+	case int8:
+		// ok
+	case *int16:
+		// ok
+	case int16:
+		// ok
+	case *int32:
+		// ok
+	case int32:
+		// ok
+	case *int64:
+		// ok
+	case int64:
+		// ok
+	case *uint8:
+		// ok
+	case uint8:
+		// ok
+	case *uint16:
+		// ok
+	case uint16:
+		// ok
+	case *uint32:
+		// ok
+	case uint32:
+		// ok
+	case *uint64:
+		// ok
+	case uint64:
+		// ok
+	default:
+		return fmt.Errorf("parameter index must be one of the allowed types: *string, *float64; received %#v (a %T)", index, index)
 	}
 
 	return nil
@@ -140,6 +217,22 @@ func (q *jsiiProxy_QuicksightRefreshSchedule) validatePutScheduleParameters(valu
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*QuicksightRefreshScheduleSchedule; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func validateQuicksightRefreshSchedule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	if scope == nil {
+		return fmt.Errorf("parameter scope is required, but nil was provided")
+	}
+
+	if importToId == nil {
+		return fmt.Errorf("parameter importToId is required, but nil was provided")
+	}
+
+	if importFromId == nil {
+		return fmt.Errorf("parameter importFromId is required, but nil was provided")
 	}
 
 	return nil

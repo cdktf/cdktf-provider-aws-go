@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsNetworkfirewallResourcePolicy) validateOverrideLogical
 	return nil
 }
 
+func validateDataAwsNetworkfirewallResourcePolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsNetworkfirewallResourcePolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }

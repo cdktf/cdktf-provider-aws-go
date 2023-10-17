@@ -7,6 +7,10 @@ package opsworksmysqllayer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OpsworksMysqlLayer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksMysqlLayer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (o *jsiiProxy_OpsworksMysqlLayer) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksMysqlLayer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksMysqlLayer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksMysqlLayer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (o *jsiiProxy_OpsworksMysqlLayer) validatePutEbsVolumeParameters(value inte
 }
 
 func (o *jsiiProxy_OpsworksMysqlLayer) validatePutLoadBasedAutoScalingParameters(value *OpsworksMysqlLayerLoadBasedAutoScaling) error {
+	return nil
+}
+
+func validateOpsworksMysqlLayer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

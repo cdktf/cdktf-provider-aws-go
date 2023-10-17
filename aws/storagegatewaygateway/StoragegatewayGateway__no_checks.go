@@ -7,6 +7,10 @@ package storagegatewaygateway
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_StoragegatewayGateway) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StoragegatewayGateway) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_StoragegatewayGateway) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (s *jsiiProxy_StoragegatewayGateway) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StoragegatewayGateway) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StoragegatewayGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (s *jsiiProxy_StoragegatewayGateway) validatePutSmbActiveDirectorySettingsP
 }
 
 func (s *jsiiProxy_StoragegatewayGateway) validatePutTimeoutsParameters(value *StoragegatewayGatewayTimeouts) error {
+	return nil
+}
+
+func validateStoragegatewayGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

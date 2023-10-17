@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsLambdaCodeSigningConfig) validateOverrideLogicalIdPara
 	return nil
 }
 
+func validateDataAwsLambdaCodeSigningConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsLambdaCodeSigningConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }

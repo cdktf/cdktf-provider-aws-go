@@ -7,6 +7,10 @@ package comprehenddocumentclassifier
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ComprehendDocumentClassifier) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComprehendDocumentClassifier) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_ComprehendDocumentClassifier) validateGetStringMapAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_ComprehendDocumentClassifier) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComprehendDocumentClassifier) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComprehendDocumentClassifier) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (c *jsiiProxy_ComprehendDocumentClassifier) validatePutTimeoutsParameters(v
 }
 
 func (c *jsiiProxy_ComprehendDocumentClassifier) validatePutVpcConfigParameters(value *ComprehendDocumentClassifierVpcConfig) error {
+	return nil
+}
+
+func validateComprehendDocumentClassifier_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

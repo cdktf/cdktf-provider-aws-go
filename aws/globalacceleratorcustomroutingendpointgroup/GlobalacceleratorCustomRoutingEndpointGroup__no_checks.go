@@ -7,6 +7,10 @@ package globalacceleratorcustomroutingendpointgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroup) validateGetStrin
 	return nil
 }
 
+func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroup) validatePutEndpo
 }
 
 func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroup) validatePutTimeoutsParameters(value *GlobalacceleratorCustomRoutingEndpointGroupTimeouts) error {
+	return nil
+}
+
+func validateGlobalacceleratorCustomRoutingEndpointGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

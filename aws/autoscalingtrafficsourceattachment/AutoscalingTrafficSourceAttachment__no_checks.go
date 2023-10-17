@@ -7,6 +7,10 @@ package autoscalingtrafficsourceattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AutoscalingTrafficSourceAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingTrafficSourceAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AutoscalingTrafficSourceAttachment) validateGetStringMapAttri
 	return nil
 }
 
+func (a *jsiiProxy_AutoscalingTrafficSourceAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingTrafficSourceAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutoscalingTrafficSourceAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (a *jsiiProxy_AutoscalingTrafficSourceAttachment) validatePutTimeoutsParame
 }
 
 func (a *jsiiProxy_AutoscalingTrafficSourceAttachment) validatePutTrafficSourceParameters(value *AutoscalingTrafficSourceAttachmentTrafficSource) error {
+	return nil
+}
+
+func validateAutoscalingTrafficSourceAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

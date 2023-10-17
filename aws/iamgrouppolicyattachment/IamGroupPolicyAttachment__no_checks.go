@@ -7,6 +7,10 @@ package iamgrouppolicyattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IamGroupPolicyAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamGroupPolicyAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IamGroupPolicyAttachment) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (i *jsiiProxy_IamGroupPolicyAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamGroupPolicyAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IamGroupPolicyAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamGroupPolicyAttachment) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIamGroupPolicyAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

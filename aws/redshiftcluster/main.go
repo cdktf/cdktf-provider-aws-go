@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.redshiftCluster.RedshiftCluster",
 		reflect.TypeOf((*RedshiftCluster)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allowVersionUpgrade", GoGetter: "AllowVersionUpgrade"},
 			_jsii_.MemberProperty{JsiiProperty: "allowVersionUpgradeInput", GoGetter: "AllowVersionUpgradeInput"},
@@ -80,6 +81,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "iamRolesInput", GoGetter: "IamRolesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyId", GoGetter: "KmsKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyIdInput", GoGetter: "KmsKeyIdInput"},
@@ -94,6 +96,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "masterPasswordInput", GoGetter: "MasterPasswordInput"},
 			_jsii_.MemberProperty{JsiiProperty: "masterUsername", GoGetter: "MasterUsername"},
 			_jsii_.MemberProperty{JsiiProperty: "masterUsernameInput", GoGetter: "MasterUsernameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeType", GoGetter: "NodeType"},
 			_jsii_.MemberProperty{JsiiProperty: "nodeTypeInput", GoGetter: "NodeTypeInput"},

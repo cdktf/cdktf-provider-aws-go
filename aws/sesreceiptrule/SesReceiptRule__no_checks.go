@@ -7,6 +7,10 @@ package sesreceiptrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SesReceiptRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SesReceiptRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SesReceiptRule) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (s *jsiiProxy_SesReceiptRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SesReceiptRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SesReceiptRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -80,6 +92,10 @@ func (s *jsiiProxy_SesReceiptRule) validatePutStopActionParameters(value interfa
 }
 
 func (s *jsiiProxy_SesReceiptRule) validatePutWorkmailActionParameters(value interface{}) error {
+	return nil
+}
+
+func validateSesReceiptRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

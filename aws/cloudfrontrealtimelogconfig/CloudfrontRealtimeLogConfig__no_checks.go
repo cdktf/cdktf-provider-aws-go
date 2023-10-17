@@ -7,6 +7,10 @@ package cloudfrontrealtimelogconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudfrontRealtimeLogConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontRealtimeLogConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) validateGetStringMapAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontRealtimeLogConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontRealtimeLogConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontRealtimeLogConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CloudfrontRealtimeLogConfig) validateOverrideLogicalIdParamet
 }
 
 func (c *jsiiProxy_CloudfrontRealtimeLogConfig) validatePutEndpointParameters(value *CloudfrontRealtimeLogConfigEndpoint) error {
+	return nil
+}
+
+func validateCloudfrontRealtimeLogConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

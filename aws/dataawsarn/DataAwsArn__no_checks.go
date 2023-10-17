@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsArn) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func validateDataAwsArn_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsArn_IsConstructParameters(x interface{}) error {
 	return nil
 }

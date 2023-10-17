@@ -7,6 +7,10 @@ package lambdalayerversionpermission
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LambdaLayerVersionPermission) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaLayerVersionPermission) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (l *jsiiProxy_LambdaLayerVersionPermission) validateGetStringMapAttributePa
 	return nil
 }
 
+func (l *jsiiProxy_LambdaLayerVersionPermission) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaLayerVersionPermission) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LambdaLayerVersionPermission) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaLayerVersionPermission) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLambdaLayerVersionPermission_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

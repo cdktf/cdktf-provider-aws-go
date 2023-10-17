@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.snsTopic.SnsTopic",
 		reflect.TypeOf((*SnsTopic)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationFailureFeedbackRoleArn", GoGetter: "ApplicationFailureFeedbackRoleArn"},
 			_jsii_.MemberProperty{JsiiProperty: "applicationFailureFeedbackRoleArnInput", GoGetter: "ApplicationFailureFeedbackRoleArnInput"},
@@ -61,6 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "httpSuccessFeedbackSampleRateInput", GoGetter: "HttpSuccessFeedbackSampleRateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "kmsMasterKeyId", GoGetter: "KmsMasterKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "kmsMasterKeyIdInput", GoGetter: "KmsMasterKeyIdInput"},
@@ -71,6 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lambdaSuccessFeedbackSampleRate", GoGetter: "LambdaSuccessFeedbackSampleRate"},
 			_jsii_.MemberProperty{JsiiProperty: "lambdaSuccessFeedbackSampleRateInput", GoGetter: "LambdaSuccessFeedbackSampleRateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "namePrefix", GoGetter: "NamePrefix"},

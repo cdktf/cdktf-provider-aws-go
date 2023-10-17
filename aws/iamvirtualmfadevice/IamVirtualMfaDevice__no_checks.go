@@ -7,6 +7,10 @@ package iamvirtualmfadevice
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IamVirtualMfaDevice) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamVirtualMfaDevice) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (i *jsiiProxy_IamVirtualMfaDevice) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (i *jsiiProxy_IamVirtualMfaDevice) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamVirtualMfaDevice) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (i *jsiiProxy_IamVirtualMfaDevice) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamVirtualMfaDevice) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateIamVirtualMfaDevice_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

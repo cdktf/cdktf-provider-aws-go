@@ -7,6 +7,10 @@ package sfnalias
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SfnAlias) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SfnAlias) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SfnAlias) validateGetStringMapAttributeParameters(terraformAt
 	return nil
 }
 
+func (s *jsiiProxy_SfnAlias) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SfnAlias) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SfnAlias) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (s *jsiiProxy_SfnAlias) validatePutRoutingConfigurationParameters(value int
 }
 
 func (s *jsiiProxy_SfnAlias) validatePutTimeoutsParameters(value *SfnAliasTimeouts) error {
+	return nil
+}
+
+func validateSfnAlias_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

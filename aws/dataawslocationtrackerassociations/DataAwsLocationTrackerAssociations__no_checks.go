@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsLocationTrackerAssociations) validateOverrideLogicalId
 	return nil
 }
 
+func validateDataAwsLocationTrackerAssociations_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsLocationTrackerAssociations_IsConstructParameters(x interface{}) error {
 	return nil
 }

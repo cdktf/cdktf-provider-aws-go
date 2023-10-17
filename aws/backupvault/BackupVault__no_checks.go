@@ -7,6 +7,10 @@ package backupvault
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BackupVault) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupVault) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (b *jsiiProxy_BackupVault) validateGetStringMapAttributeParameters(terrafor
 	return nil
 }
 
+func (b *jsiiProxy_BackupVault) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupVault) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BackupVault) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (b *jsiiProxy_BackupVault) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (b *jsiiProxy_BackupVault) validatePutTimeoutsParameters(value *BackupVaultTimeouts) error {
+	return nil
+}
+
+func validateBackupVault_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package neptunecluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NeptuneCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NeptuneCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (n *jsiiProxy_NeptuneCluster) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (n *jsiiProxy_NeptuneCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NeptuneCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NeptuneCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (n *jsiiProxy_NeptuneCluster) validatePutServerlessV2ScalingConfigurationPa
 }
 
 func (n *jsiiProxy_NeptuneCluster) validatePutTimeoutsParameters(value *NeptuneClusterTimeouts) error {
+	return nil
+}
+
+func validateNeptuneCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

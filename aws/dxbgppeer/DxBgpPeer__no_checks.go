@@ -7,6 +7,10 @@ package dxbgppeer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DxBgpPeer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxBgpPeer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DxBgpPeer) validateGetStringMapAttributeParameters(terraformA
 	return nil
 }
 
+func (d *jsiiProxy_DxBgpPeer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxBgpPeer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxBgpPeer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DxBgpPeer) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (d *jsiiProxy_DxBgpPeer) validatePutTimeoutsParameters(value *DxBgpPeerTimeouts) error {
+	return nil
+}
+
+func validateDxBgpPeer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

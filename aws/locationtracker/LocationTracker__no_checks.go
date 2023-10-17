@@ -7,6 +7,10 @@ package locationtracker
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LocationTracker) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LocationTracker) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (l *jsiiProxy_LocationTracker) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
+func (l *jsiiProxy_LocationTracker) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LocationTracker) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LocationTracker) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LocationTracker) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLocationTracker_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

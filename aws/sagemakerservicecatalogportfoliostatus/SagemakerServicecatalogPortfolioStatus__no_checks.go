@@ -7,6 +7,10 @@ package sagemakerservicecatalogportfoliostatus
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateGetStringMapA
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateSagemakerServicecatalogPortfolioStatus_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package elasticacheparametergroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_ElasticacheParameterGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticacheParameterGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_ElasticacheParameterGroup) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (e *jsiiProxy_ElasticacheParameterGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticacheParameterGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticacheParameterGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_ElasticacheParameterGroup) validateOverrideLogicalIdParameter
 }
 
 func (e *jsiiProxy_ElasticacheParameterGroup) validatePutParameterParameters(value interface{}) error {
+	return nil
+}
+
+func validateElasticacheParameterGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

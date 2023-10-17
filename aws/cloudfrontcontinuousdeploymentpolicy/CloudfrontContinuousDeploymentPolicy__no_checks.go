@@ -7,6 +7,10 @@ package cloudfrontcontinuousdeploymentpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicy) validateGetStringMapAtt
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicy) validatePutStagingDistr
 }
 
 func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicy) validatePutTrafficConfigParameters(value interface{}) error {
+	return nil
+}
+
+func validateCloudfrontContinuousDeploymentPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

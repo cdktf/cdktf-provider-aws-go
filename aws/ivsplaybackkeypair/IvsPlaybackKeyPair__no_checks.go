@@ -7,6 +7,10 @@ package ivsplaybackkeypair
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IvsPlaybackKeyPair) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IvsPlaybackKeyPair) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (i *jsiiProxy_IvsPlaybackKeyPair) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IvsPlaybackKeyPair) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IvsPlaybackKeyPair) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) validateOverrideLogicalIdParameters(newLo
 }
 
 func (i *jsiiProxy_IvsPlaybackKeyPair) validatePutTimeoutsParameters(value *IvsPlaybackKeyPairTimeouts) error {
+	return nil
+}
+
+func validateIvsPlaybackKeyPair_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

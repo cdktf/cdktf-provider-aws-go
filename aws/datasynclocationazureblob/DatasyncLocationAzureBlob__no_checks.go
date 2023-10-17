@@ -7,6 +7,10 @@ package datasynclocationazureblob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DatasyncLocationAzureBlob) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncLocationAzureBlob) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DatasyncLocationAzureBlob) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (d *jsiiProxy_DatasyncLocationAzureBlob) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncLocationAzureBlob) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatasyncLocationAzureBlob) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DatasyncLocationAzureBlob) validateOverrideLogicalIdParameter
 }
 
 func (d *jsiiProxy_DatasyncLocationAzureBlob) validatePutSasConfigurationParameters(value *DatasyncLocationAzureBlobSasConfiguration) error {
+	return nil
+}
+
+func validateDatasyncLocationAzureBlob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

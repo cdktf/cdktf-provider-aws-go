@@ -7,6 +7,10 @@ package macie2member
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_Macie2Member) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2Member) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (m *jsiiProxy_Macie2Member) validateGetStringMapAttributeParameters(terrafo
 	return nil
 }
 
+func (m *jsiiProxy_Macie2Member) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2Member) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_Macie2Member) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (m *jsiiProxy_Macie2Member) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (m *jsiiProxy_Macie2Member) validatePutTimeoutsParameters(value *Macie2MemberTimeouts) error {
+	return nil
+}
+
+func validateMacie2Member_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

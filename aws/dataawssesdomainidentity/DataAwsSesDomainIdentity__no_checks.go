@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsSesDomainIdentity) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func validateDataAwsSesDomainIdentity_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsSesDomainIdentity_IsConstructParameters(x interface{}) error {
 	return nil
 }

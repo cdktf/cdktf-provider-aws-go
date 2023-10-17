@@ -7,6 +7,10 @@ package licensemanagergrantaccepter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LicensemanagerGrantAccepter) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LicensemanagerGrantAccepter) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (l *jsiiProxy_LicensemanagerGrantAccepter) validateGetStringMapAttributePar
 	return nil
 }
 
+func (l *jsiiProxy_LicensemanagerGrantAccepter) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LicensemanagerGrantAccepter) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (l *jsiiProxy_LicensemanagerGrantAccepter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LicensemanagerGrantAccepter) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateLicensemanagerGrantAccepter_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

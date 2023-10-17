@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAwsEc2LocalGatewayRouteTable) validatePutTimeoutsParamete
 	return nil
 }
 
+func validateDataAwsEc2LocalGatewayRouteTable_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEc2LocalGatewayRouteTable_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-aws.ssmAssociation.SsmAssociation",
 		reflect.TypeOf((*SsmAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "applyOnlyAtCronInterval", GoGetter: "ApplyOnlyAtCronInterval"},
 			_jsii_.MemberProperty{JsiiProperty: "applyOnlyAtCronIntervalInput", GoGetter: "ApplyOnlyAtCronIntervalInput"},
@@ -46,6 +47,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceId", GoGetter: "InstanceId"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceIdInput", GoGetter: "InstanceIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -54,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxConcurrencyInput", GoGetter: "MaxConcurrencyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maxErrors", GoGetter: "MaxErrors"},
 			_jsii_.MemberProperty{JsiiProperty: "maxErrorsInput", GoGetter: "MaxErrorsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

@@ -5,10 +5,10 @@ package dataawsimagebuilderinfrastructureconfigurations
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/dataawsimagebuilderinfrastructureconfigurations/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/dataawsimagebuilderinfrastructureconfigurations/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -391,6 +391,25 @@ func (j *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurations)SetProvider(v
 		"provider",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataAwsImagebuilderInfrastructureConfigurations resource upon running "cdktf plan <stack-name>".
+func DataAwsImagebuilderInfrastructureConfigurations_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAwsImagebuilderInfrastructureConfigurations_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.dataAwsImagebuilderInfrastructureConfigurations.DataAwsImagebuilderInfrastructureConfigurations",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.

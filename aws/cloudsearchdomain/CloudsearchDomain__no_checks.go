@@ -7,6 +7,10 @@ package cloudsearchdomain
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudsearchDomain) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudsearchDomain) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CloudsearchDomain) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (c *jsiiProxy_CloudsearchDomain) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudsearchDomain) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudsearchDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (c *jsiiProxy_CloudsearchDomain) validatePutScalingParametersParameters(val
 }
 
 func (c *jsiiProxy_CloudsearchDomain) validatePutTimeoutsParameters(value *CloudsearchDomainTimeouts) error {
+	return nil
+}
+
+func validateCloudsearchDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsCodecatalystDevEnvironment) validatePutRepositoriesPar
 	return nil
 }
 
+func validateDataAwsCodecatalystDevEnvironment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsCodecatalystDevEnvironment_IsConstructParameters(x interface{}) error {
 	return nil
 }

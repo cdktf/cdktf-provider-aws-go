@@ -7,6 +7,10 @@ package quicksightaccountsubscription
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (q *jsiiProxy_QuicksightAccountSubscription) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightAccountSubscription) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (q *jsiiProxy_QuicksightAccountSubscription) validateGetStringMapAttributeP
 	return nil
 }
 
+func (q *jsiiProxy_QuicksightAccountSubscription) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightAccountSubscription) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (q *jsiiProxy_QuicksightAccountSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (q *jsiiProxy_QuicksightAccountSubscription) validateOverrideLogicalIdParam
 }
 
 func (q *jsiiProxy_QuicksightAccountSubscription) validatePutTimeoutsParameters(value *QuicksightAccountSubscriptionTimeouts) error {
+	return nil
+}
+
+func validateQuicksightAccountSubscription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

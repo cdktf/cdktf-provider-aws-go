@@ -7,6 +7,10 @@ package dlmlifecyclepolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DlmLifecyclePolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DlmLifecyclePolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DlmLifecyclePolicy) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (d *jsiiProxy_DlmLifecyclePolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DlmLifecyclePolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DlmLifecyclePolicy) validateOverrideLogicalIdParameters(newLo
 }
 
 func (d *jsiiProxy_DlmLifecyclePolicy) validatePutPolicyDetailsParameters(value *DlmLifecyclePolicyPolicyDetails) error {
+	return nil
+}
+
+func validateDlmLifecyclePolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

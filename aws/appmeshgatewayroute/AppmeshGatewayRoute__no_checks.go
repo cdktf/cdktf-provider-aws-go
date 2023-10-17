@@ -7,6 +7,10 @@ package appmeshgatewayroute
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppmeshGatewayRoute) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppmeshGatewayRoute) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (a *jsiiProxy_AppmeshGatewayRoute) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (a *jsiiProxy_AppmeshGatewayRoute) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppmeshGatewayRoute) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppmeshGatewayRoute) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (a *jsiiProxy_AppmeshGatewayRoute) validateOverrideLogicalIdParameters(newL
 }
 
 func (a *jsiiProxy_AppmeshGatewayRoute) validatePutSpecParameters(value *AppmeshGatewayRouteSpec) error {
+	return nil
+}
+
+func validateAppmeshGatewayRoute_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

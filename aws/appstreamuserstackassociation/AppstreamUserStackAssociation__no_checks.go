@@ -7,6 +7,10 @@ package appstreamuserstackassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppstreamUserStackAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppstreamUserStackAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (a *jsiiProxy_AppstreamUserStackAssociation) validateGetStringMapAttributeP
 	return nil
 }
 
+func (a *jsiiProxy_AppstreamUserStackAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppstreamUserStackAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (a *jsiiProxy_AppstreamUserStackAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppstreamUserStackAssociation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateAppstreamUserStackAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

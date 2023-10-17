@@ -7,6 +7,10 @@ package redshiftdatastatement
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RedshiftdataStatement) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftdataStatement) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (r *jsiiProxy_RedshiftdataStatement) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftdataStatement) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftdataStatement) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedshiftdataStatement) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (r *jsiiProxy_RedshiftdataStatement) validatePutParametersParameters(value 
 }
 
 func (r *jsiiProxy_RedshiftdataStatement) validatePutTimeoutsParameters(value *RedshiftdataStatementTimeouts) error {
+	return nil
+}
+
+func validateRedshiftdataStatement_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

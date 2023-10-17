@@ -5,10 +5,10 @@ package elasticbeanstalkenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/elasticbeanstalkenvironment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/elasticbeanstalkenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -115,6 +115,9 @@ type ElasticBeanstalkEnvironment interface {
 	WaitForReadyTimeout() *string
 	SetWaitForReadyTimeout(val *string)
 	WaitForReadyTimeoutInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -136,7 +139,12 @@ type ElasticBeanstalkEnvironment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -984,6 +992,25 @@ func (j *jsiiProxy_ElasticBeanstalkEnvironment)SetWaitForReadyTimeout(val *strin
 	)
 }
 
+// Generates CDKTF code for importing a ElasticBeanstalkEnvironment resource upon running "cdktf plan <stack-name>".
+func ElasticBeanstalkEnvironment_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateElasticBeanstalkEnvironment_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironment",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -1066,6 +1093,17 @@ func ElasticBeanstalkEnvironment_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (e *jsiiProxy_ElasticBeanstalkEnvironment) AddMoveTarget(moveTarget *string) {
+	if err := e.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (e *jsiiProxy_ElasticBeanstalkEnvironment) AddOverride(path *string, value interface{}) {
@@ -1223,6 +1261,17 @@ func (e *jsiiProxy_ElasticBeanstalkEnvironment) GetStringMapAttribute(terraformA
 	return returns
 }
 
+func (e *jsiiProxy_ElasticBeanstalkEnvironment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := e.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (e *jsiiProxy_ElasticBeanstalkEnvironment) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1237,6 +1286,17 @@ func (e *jsiiProxy_ElasticBeanstalkEnvironment) InterpolationForAttribute(terraf
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_ElasticBeanstalkEnvironment) MoveTo(moveTarget *string, index interface{}) {
+	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (e *jsiiProxy_ElasticBeanstalkEnvironment) OverrideLogicalId(newLogicalId *string) {

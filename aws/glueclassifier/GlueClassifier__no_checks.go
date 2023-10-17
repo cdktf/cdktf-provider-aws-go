@@ -7,6 +7,10 @@ package glueclassifier
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GlueClassifier) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueClassifier) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GlueClassifier) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (g *jsiiProxy_GlueClassifier) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueClassifier) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlueClassifier) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (g *jsiiProxy_GlueClassifier) validatePutJsonClassifierParameters(value *Gl
 }
 
 func (g *jsiiProxy_GlueClassifier) validatePutXmlClassifierParameters(value *GlueClassifierXmlClassifier) error {
+	return nil
+}
+
+func validateGlueClassifier_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

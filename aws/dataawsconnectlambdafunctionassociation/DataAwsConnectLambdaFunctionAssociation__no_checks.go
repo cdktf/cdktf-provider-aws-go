@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsConnectLambdaFunctionAssociation) validateOverrideLogi
 	return nil
 }
 
+func validateDataAwsConnectLambdaFunctionAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsConnectLambdaFunctionAssociation_IsConstructParameters(x interface{}) error {
 	return nil
 }

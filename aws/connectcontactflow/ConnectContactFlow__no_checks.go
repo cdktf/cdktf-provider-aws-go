@@ -7,6 +7,10 @@ package connectcontactflow
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ConnectContactFlow) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectContactFlow) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_ConnectContactFlow) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (c *jsiiProxy_ConnectContactFlow) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectContactFlow) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_ConnectContactFlow) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectContactFlow) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateConnectContactFlow_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package finspacekxenvironment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FinspaceKxEnvironment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FinspaceKxEnvironment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_FinspaceKxEnvironment) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (f *jsiiProxy_FinspaceKxEnvironment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FinspaceKxEnvironment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FinspaceKxEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (f *jsiiProxy_FinspaceKxEnvironment) validatePutTimeoutsParameters(value *F
 }
 
 func (f *jsiiProxy_FinspaceKxEnvironment) validatePutTransitGatewayConfigurationParameters(value *FinspaceKxEnvironmentTransitGatewayConfiguration) error {
+	return nil
+}
+
+func validateFinspaceKxEnvironment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

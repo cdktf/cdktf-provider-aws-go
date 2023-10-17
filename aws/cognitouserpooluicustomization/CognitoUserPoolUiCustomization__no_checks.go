@@ -7,6 +7,10 @@ package cognitouserpooluicustomization
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CognitoUserPoolUiCustomization) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoUserPoolUiCustomization) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (c *jsiiProxy_CognitoUserPoolUiCustomization) validateGetStringMapAttribute
 	return nil
 }
 
+func (c *jsiiProxy_CognitoUserPoolUiCustomization) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoUserPoolUiCustomization) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (c *jsiiProxy_CognitoUserPoolUiCustomization) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoUserPoolUiCustomization) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateCognitoUserPoolUiCustomization_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

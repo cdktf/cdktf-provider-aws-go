@@ -7,6 +7,10 @@ package s3bucketnotification
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3BucketNotification) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketNotification) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_S3BucketNotification) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketNotification) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketNotification) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketNotification) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (s *jsiiProxy_S3BucketNotification) validatePutQueueParameters(value interf
 }
 
 func (s *jsiiProxy_S3BucketNotification) validatePutTopicParameters(value interface{}) error {
+	return nil
+}
+
+func validateS3BucketNotification_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

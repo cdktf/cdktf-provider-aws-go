@@ -7,6 +7,10 @@ package codecommittrigger
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CodecommitTrigger) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodecommitTrigger) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (c *jsiiProxy_CodecommitTrigger) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (c *jsiiProxy_CodecommitTrigger) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodecommitTrigger) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodecommitTrigger) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (c *jsiiProxy_CodecommitTrigger) validateOverrideLogicalIdParameters(newLog
 }
 
 func (c *jsiiProxy_CodecommitTrigger) validatePutTriggerParameters(value interface{}) error {
+	return nil
+}
+
+func validateCodecommitTrigger_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package syntheticscanary
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SyntheticsCanary) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsCanary) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_SyntheticsCanary) validateGetStringMapAttributeParameters(ter
 	return nil
 }
 
+func (s *jsiiProxy_SyntheticsCanary) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SyntheticsCanary) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SyntheticsCanary) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (s *jsiiProxy_SyntheticsCanary) validatePutScheduleParameters(value *Synthe
 }
 
 func (s *jsiiProxy_SyntheticsCanary) validatePutVpcConfigParameters(value *SyntheticsCanaryVpcConfig) error {
+	return nil
+}
+
+func validateSyntheticsCanary_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

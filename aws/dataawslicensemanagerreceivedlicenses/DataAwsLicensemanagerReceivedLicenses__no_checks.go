@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAwsLicensemanagerReceivedLicenses) validatePutFilterParam
 	return nil
 }
 
+func validateDataAwsLicensemanagerReceivedLicenses_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsLicensemanagerReceivedLicenses_IsConstructParameters(x interface{}) error {
 	return nil
 }

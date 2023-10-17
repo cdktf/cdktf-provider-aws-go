@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsBatchComputeEnvironment) validateOverrideLogicalIdPara
 	return nil
 }
 
+func validateDataAwsBatchComputeEnvironment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsBatchComputeEnvironment_IsConstructParameters(x interface{}) error {
 	return nil
 }

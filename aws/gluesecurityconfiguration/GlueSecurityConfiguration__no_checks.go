@@ -7,6 +7,10 @@ package gluesecurityconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GlueSecurityConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueSecurityConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GlueSecurityConfiguration) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GlueSecurityConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueSecurityConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlueSecurityConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GlueSecurityConfiguration) validateOverrideLogicalIdParameter
 }
 
 func (g *jsiiProxy_GlueSecurityConfiguration) validatePutEncryptionConfigurationParameters(value *GlueSecurityConfigurationEncryptionConfiguration) error {
+	return nil
+}
+
+func validateGlueSecurityConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

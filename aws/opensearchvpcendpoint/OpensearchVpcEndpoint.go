@@ -5,10 +5,10 @@ package opensearchvpcendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/opensearchvpcendpoint/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/opensearchvpcendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -72,6 +72,9 @@ type OpensearchVpcEndpoint interface {
 	TimeoutsInput() interface{}
 	VpcOptions() OpensearchVpcEndpointVpcOptionsOutputReference
 	VpcOptionsInput() *OpensearchVpcEndpointVpcOptions
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -93,7 +96,12 @@ type OpensearchVpcEndpoint interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -489,6 +497,25 @@ func (j *jsiiProxy_OpensearchVpcEndpoint)SetProvisioners(val *[]interface{}) {
 	)
 }
 
+// Generates CDKTF code for importing a OpensearchVpcEndpoint resource upon running "cdktf plan <stack-name>".
+func OpensearchVpcEndpoint_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateOpensearchVpcEndpoint_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.opensearchVpcEndpoint.OpensearchVpcEndpoint",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -571,6 +598,17 @@ func OpensearchVpcEndpoint_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (o *jsiiProxy_OpensearchVpcEndpoint) AddMoveTarget(moveTarget *string) {
+	if err := o.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (o *jsiiProxy_OpensearchVpcEndpoint) AddOverride(path *string, value interface{}) {
@@ -728,6 +766,17 @@ func (o *jsiiProxy_OpensearchVpcEndpoint) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
+func (o *jsiiProxy_OpensearchVpcEndpoint) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := o.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (o *jsiiProxy_OpensearchVpcEndpoint) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -742,6 +791,17 @@ func (o *jsiiProxy_OpensearchVpcEndpoint) InterpolationForAttribute(terraformAtt
 	)
 
 	return returns
+}
+
+func (o *jsiiProxy_OpensearchVpcEndpoint) MoveTo(moveTarget *string, index interface{}) {
+	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (o *jsiiProxy_OpensearchVpcEndpoint) OverrideLogicalId(newLogicalId *string) {

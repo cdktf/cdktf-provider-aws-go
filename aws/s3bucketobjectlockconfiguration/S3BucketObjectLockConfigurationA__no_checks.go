@@ -7,6 +7,10 @@ package s3bucketobjectlockconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3BucketObjectLockConfigurationA) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketObjectLockConfigurationA) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) validateGetStringMapAttribu
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketObjectLockConfigurationA) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketObjectLockConfigurationA) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketObjectLockConfigurationA) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) validateOverrideLogicalIdPa
 }
 
 func (s *jsiiProxy_S3BucketObjectLockConfigurationA) validatePutRuleParameters(value *S3BucketObjectLockConfigurationRuleA) error {
+	return nil
+}
+
+func validateS3BucketObjectLockConfigurationA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

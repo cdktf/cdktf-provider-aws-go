@@ -7,6 +7,10 @@ package vpclatticetargetgroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpclatticeTargetGroup) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpclatticeTargetGroup) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VpclatticeTargetGroup) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (v *jsiiProxy_VpclatticeTargetGroup) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpclatticeTargetGroup) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpclatticeTargetGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (v *jsiiProxy_VpclatticeTargetGroup) validatePutConfigParameters(value *Vpc
 }
 
 func (v *jsiiProxy_VpclatticeTargetGroup) validatePutTimeoutsParameters(value *VpclatticeTargetGroupTimeouts) error {
+	return nil
+}
+
+func validateVpclatticeTargetGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

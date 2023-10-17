@@ -7,6 +7,10 @@ package dbeventsubscription
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DbEventSubscription) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbEventSubscription) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (d *jsiiProxy_DbEventSubscription) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DbEventSubscription) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbEventSubscription) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbEventSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (d *jsiiProxy_DbEventSubscription) validateOverrideLogicalIdParameters(newL
 }
 
 func (d *jsiiProxy_DbEventSubscription) validatePutTimeoutsParameters(value *DbEventSubscriptionTimeouts) error {
+	return nil
+}
+
+func validateDbEventSubscription_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

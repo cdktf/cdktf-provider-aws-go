@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsSnsTopic) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func validateDataAwsSnsTopic_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsSnsTopic_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -5,10 +5,10 @@ package devicefarmnetworkprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v17/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v17/devicefarmnetworkprofile/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/devicefarmnetworkprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -107,6 +107,9 @@ type DevicefarmNetworkProfile interface {
 	UplinkLossPercent() *float64
 	SetUplinkLossPercent(val *float64)
 	UplinkLossPercentInput() *float64
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -128,7 +131,12 @@ type DevicefarmNetworkProfile interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -896,6 +904,25 @@ func (j *jsiiProxy_DevicefarmNetworkProfile)SetUplinkLossPercent(val *float64) {
 	)
 }
 
+// Generates CDKTF code for importing a DevicefarmNetworkProfile resource upon running "cdktf plan <stack-name>".
+func DevicefarmNetworkProfile_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDevicefarmNetworkProfile_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -978,6 +1005,17 @@ func DevicefarmNetworkProfile_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (d *jsiiProxy_DevicefarmNetworkProfile) AddMoveTarget(moveTarget *string) {
+	if err := d.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (d *jsiiProxy_DevicefarmNetworkProfile) AddOverride(path *string, value interface{}) {
@@ -1135,6 +1173,17 @@ func (d *jsiiProxy_DevicefarmNetworkProfile) GetStringMapAttribute(terraformAttr
 	return returns
 }
 
+func (d *jsiiProxy_DevicefarmNetworkProfile) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := d.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (d *jsiiProxy_DevicefarmNetworkProfile) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1149,6 +1198,17 @@ func (d *jsiiProxy_DevicefarmNetworkProfile) InterpolationForAttribute(terraform
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DevicefarmNetworkProfile) MoveTo(moveTarget *string, index interface{}) {
+	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (d *jsiiProxy_DevicefarmNetworkProfile) OverrideLogicalId(newLogicalId *string) {

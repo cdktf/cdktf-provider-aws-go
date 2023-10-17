@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsEc2PublicIpv4Pool) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func validateDataAwsEc2PublicIpv4Pool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsEc2PublicIpv4Pool_IsConstructParameters(x interface{}) error {
 	return nil
 }

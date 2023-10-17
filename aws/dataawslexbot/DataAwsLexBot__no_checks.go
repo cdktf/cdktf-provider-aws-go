@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataAwsLexBot) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func validateDataAwsLexBot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAwsLexBot_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package finspacekxcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FinspaceKxCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FinspaceKxCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (f *jsiiProxy_FinspaceKxCluster) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (f *jsiiProxy_FinspaceKxCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FinspaceKxCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FinspaceKxCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -84,6 +96,10 @@ func (f *jsiiProxy_FinspaceKxCluster) validatePutTimeoutsParameters(value *Finsp
 }
 
 func (f *jsiiProxy_FinspaceKxCluster) validatePutVpcConfigurationParameters(value *FinspaceKxClusterVpcConfiguration) error {
+	return nil
+}
+
+func validateFinspaceKxCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

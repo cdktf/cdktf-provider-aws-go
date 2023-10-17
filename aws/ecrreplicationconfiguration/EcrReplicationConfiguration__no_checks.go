@@ -7,6 +7,10 @@ package ecrreplicationconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EcrReplicationConfiguration) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcrReplicationConfiguration) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (e *jsiiProxy_EcrReplicationConfiguration) validateGetStringMapAttributePar
 	return nil
 }
 
+func (e *jsiiProxy_EcrReplicationConfiguration) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcrReplicationConfiguration) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcrReplicationConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (e *jsiiProxy_EcrReplicationConfiguration) validateOverrideLogicalIdParamet
 }
 
 func (e *jsiiProxy_EcrReplicationConfiguration) validatePutReplicationConfigurationParameters(value *EcrReplicationConfigurationReplicationConfiguration) error {
+	return nil
+}
+
+func validateEcrReplicationConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

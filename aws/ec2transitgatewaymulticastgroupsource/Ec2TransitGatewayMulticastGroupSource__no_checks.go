@@ -7,6 +7,10 @@ package ec2transitgatewaymulticastgroupsource
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupSource) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupSource) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,11 +51,23 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupSource) validateGetStringMapAt
 	return nil
 }
 
+func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupSource) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupSource) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
+func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupSource) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2TransitGatewayMulticastGroupSource) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func validateEc2TransitGatewayMulticastGroupSource_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 
