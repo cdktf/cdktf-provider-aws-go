@@ -40,6 +40,8 @@ type Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStat
 	HeadersInput() interface{}
 	InternalValue() *Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatch
 	SetInternalValue(val *Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatch)
+	Ja3Fingerprint() Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchJa3FingerprintOutputReference
+	Ja3FingerprintInput() *Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchJa3Fingerprint
 	JsonBody() Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchJsonBodyOutputReference
 	JsonBodyInput() *Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchJsonBody
 	Method() Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchMethodOutputReference
@@ -88,6 +90,7 @@ type Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStat
 	PutBody(value *Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchBody)
 	PutCookies(value *Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchCookies)
 	PutHeaders(value interface{})
+	PutJa3Fingerprint(value *Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchJa3Fingerprint)
 	PutJsonBody(value *Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchJsonBody)
 	PutMethod(value *Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchMethod)
 	PutQueryString(value *Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchQueryString)
@@ -98,6 +101,7 @@ type Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStat
 	ResetBody()
 	ResetCookies()
 	ResetHeaders()
+	ResetJa3Fingerprint()
 	ResetJsonBody()
 	ResetMethod()
 	ResetQueryString()
@@ -244,6 +248,26 @@ func (j *jsiiProxy_Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementO
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchOutputReference) Ja3Fingerprint() Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchJa3FingerprintOutputReference {
+	var returns Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchJa3FingerprintOutputReference
+	_jsii_.Get(
+		j,
+		"ja3Fingerprint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchOutputReference) Ja3FingerprintInput() *Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchJa3Fingerprint {
+	var returns *Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchJa3Fingerprint
+	_jsii_.Get(
+		j,
+		"ja3FingerprintInput",
 		&returns,
 	)
 	return returns
@@ -702,6 +726,17 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementO
 	)
 }
 
+func (w *jsiiProxy_Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchOutputReference) PutJa3Fingerprint(value *Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchJa3Fingerprint) {
+	if err := w.validatePutJa3FingerprintParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putJa3Fingerprint",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchOutputReference) PutJsonBody(value *Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchJsonBody) {
 	if err := w.validatePutJsonBodyParameters(value); err != nil {
 		panic(err)
@@ -796,6 +831,14 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementO
 	_jsii_.InvokeVoid(
 		w,
 		"resetHeaders",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAclRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementNotStatementStatementByteMatchStatementFieldToMatchOutputReference) ResetJa3Fingerprint() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetJa3Fingerprint",
 		nil, // no parameters
 	)
 }

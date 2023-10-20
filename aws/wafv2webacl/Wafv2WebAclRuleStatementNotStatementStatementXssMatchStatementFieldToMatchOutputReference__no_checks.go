@@ -63,6 +63,10 @@ func (w *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementXssMatchStatemen
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementXssMatchStatementFieldToMatchOutputReference) validatePutJa3FingerprintParameters(value *Wafv2WebAclRuleStatementNotStatementStatementXssMatchStatementFieldToMatchJa3Fingerprint) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2WebAclRuleStatementNotStatementStatementXssMatchStatementFieldToMatchOutputReference) validatePutJsonBodyParameters(value *Wafv2WebAclRuleStatementNotStatementStatementXssMatchStatementFieldToMatchJsonBody) error {
 	return nil
 }

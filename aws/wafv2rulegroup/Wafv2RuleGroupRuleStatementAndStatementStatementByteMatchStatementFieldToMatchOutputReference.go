@@ -40,6 +40,8 @@ type Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMa
 	HeadersInput() interface{}
 	InternalValue() *Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatch
 	SetInternalValue(val *Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatch)
+	Ja3Fingerprint() Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJa3FingerprintOutputReference
+	Ja3FingerprintInput() *Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJa3Fingerprint
 	JsonBody() Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBodyOutputReference
 	JsonBodyInput() *Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBody
 	Method() Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchMethodOutputReference
@@ -88,6 +90,7 @@ type Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMa
 	PutBody(value *Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchBody)
 	PutCookies(value *Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchCookies)
 	PutHeaders(value interface{})
+	PutJa3Fingerprint(value *Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJa3Fingerprint)
 	PutJsonBody(value *Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBody)
 	PutMethod(value *Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchMethod)
 	PutQueryString(value *Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchQueryString)
@@ -98,6 +101,7 @@ type Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMa
 	ResetBody()
 	ResetCookies()
 	ResetHeaders()
+	ResetJa3Fingerprint()
 	ResetJsonBody()
 	ResetMethod()
 	ResetQueryString()
@@ -244,6 +248,26 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStat
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchOutputReference) Ja3Fingerprint() Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJa3FingerprintOutputReference {
+	var returns Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJa3FingerprintOutputReference
+	_jsii_.Get(
+		j,
+		"ja3Fingerprint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchOutputReference) Ja3FingerprintInput() *Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJa3Fingerprint {
+	var returns *Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJa3Fingerprint
+	_jsii_.Get(
+		j,
+		"ja3FingerprintInput",
 		&returns,
 	)
 	return returns
@@ -702,6 +726,17 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStat
 	)
 }
 
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchOutputReference) PutJa3Fingerprint(value *Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJa3Fingerprint) {
+	if err := w.validatePutJa3FingerprintParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putJa3Fingerprint",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchOutputReference) PutJsonBody(value *Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchJsonBody) {
 	if err := w.validatePutJsonBodyParameters(value); err != nil {
 		panic(err)
@@ -796,6 +831,14 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStat
 	_jsii_.InvokeVoid(
 		w,
 		"resetHeaders",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementByteMatchStatementFieldToMatchOutputReference) ResetJa3Fingerprint() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetJa3Fingerprint",
 		nil, // no parameters
 	)
 }

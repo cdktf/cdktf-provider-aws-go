@@ -157,6 +157,17 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementOrStatementStatementSqliMatchState
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementOrStatementStatementSqliMatchStatementFieldToMatchOutputReference) validatePutJa3FingerprintParameters(value *Wafv2RuleGroupRuleStatementOrStatementStatementSqliMatchStatementFieldToMatchJa3Fingerprint) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2RuleGroupRuleStatementOrStatementStatementSqliMatchStatementFieldToMatchOutputReference) validatePutJsonBodyParameters(value *Wafv2RuleGroupRuleStatementOrStatementStatementSqliMatchStatementFieldToMatchJsonBody) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

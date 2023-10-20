@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/vpclattice_service aws_vpclattice_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/vpclattice_service aws_vpclattice_service}.
 type VpclatticeService interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -497,7 +497,7 @@ func (j *jsiiProxy_VpclatticeService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/vpclattice_service aws_vpclattice_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/vpclattice_service aws_vpclattice_service} Resource.
 func NewVpclatticeService(scope constructs.Construct, id *string, config *VpclatticeServiceConfig) VpclatticeService {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewVpclatticeService(scope constructs.Construct, id *string, config *Vpclat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/vpclattice_service aws_vpclattice_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/vpclattice_service aws_vpclattice_service} Resource.
 func NewVpclatticeService_Override(v VpclatticeService, scope constructs.Construct, id *string, config *VpclatticeServiceConfig) {
 	_init_.Initialize()
 

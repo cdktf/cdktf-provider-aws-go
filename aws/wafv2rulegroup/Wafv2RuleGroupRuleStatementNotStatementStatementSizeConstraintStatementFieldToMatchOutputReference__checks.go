@@ -157,6 +157,17 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementStatementSizeConstrain
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validatePutJa3FingerprintParameters(value *Wafv2RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchJa3Fingerprint) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchOutputReference) validatePutJsonBodyParameters(value *Wafv2RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchJsonBody) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

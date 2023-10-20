@@ -63,6 +63,10 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchSta
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchOutputReference) validatePutJa3FingerprintParameters(value *Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJa3Fingerprint) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchOutputReference) validatePutJsonBodyParameters(value *Wafv2RuleGroupRuleStatementAndStatementStatementRegexMatchStatementFieldToMatchJsonBody) error {
 	return nil
 }

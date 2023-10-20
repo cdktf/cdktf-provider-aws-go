@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/iot_provisioning_template aws_iot_provisioning_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template aws_iot_provisioning_template}.
 type IotProvisioningTemplate interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -89,6 +89,9 @@ type IotProvisioningTemplate interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -132,6 +135,7 @@ type IotProvisioningTemplate interface {
 	ResetPreProvisioningHook()
 	ResetTags()
 	ResetTagsAll()
+	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -507,8 +511,28 @@ func (j *jsiiProxy_IotProvisioningTemplate) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_IotProvisioningTemplate) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/iot_provisioning_template aws_iot_provisioning_template} Resource.
+func (j *jsiiProxy_IotProvisioningTemplate) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template aws_iot_provisioning_template} Resource.
 func NewIotProvisioningTemplate(scope constructs.Construct, id *string, config *IotProvisioningTemplateConfig) IotProvisioningTemplate {
 	_init_.Initialize()
 
@@ -526,7 +550,7 @@ func NewIotProvisioningTemplate(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/iot_provisioning_template aws_iot_provisioning_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/iot_provisioning_template aws_iot_provisioning_template} Resource.
 func NewIotProvisioningTemplate_Override(i IotProvisioningTemplate, scope constructs.Construct, id *string, config *IotProvisioningTemplateConfig) {
 	_init_.Initialize()
 
@@ -689,6 +713,17 @@ func (j *jsiiProxy_IotProvisioningTemplate)SetTemplateBody(val *string) {
 	_jsii_.Set(
 		j,
 		"templateBody",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IotProvisioningTemplate)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -1074,6 +1109,14 @@ func (i *jsiiProxy_IotProvisioningTemplate) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IotProvisioningTemplate) ResetType() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetType",
 		nil, // no parameters
 	)
 }

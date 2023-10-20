@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/medialive_input aws_medialive_input}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/medialive_input aws_medialive_input}.
 type MedialiveInput interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -638,7 +638,7 @@ func (j *jsiiProxy_MedialiveInput) VpcInput() *MedialiveInputVpc {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/medialive_input aws_medialive_input} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/medialive_input aws_medialive_input} Resource.
 func NewMedialiveInput(scope constructs.Construct, id *string, config *MedialiveInputConfig) MedialiveInput {
 	_init_.Initialize()
 
@@ -656,7 +656,7 @@ func NewMedialiveInput(scope constructs.Construct, id *string, config *Medialive
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/medialive_input aws_medialive_input} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/medialive_input aws_medialive_input} Resource.
 func NewMedialiveInput_Override(m MedialiveInput, scope constructs.Construct, id *string, config *MedialiveInputConfig) {
 	_init_.Initialize()
 

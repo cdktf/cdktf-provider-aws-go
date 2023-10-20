@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/glue_data_quality_ruleset aws_glue_data_quality_ruleset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/glue_data_quality_ruleset aws_glue_data_quality_ruleset}.
 type GlueDataQualityRuleset interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -483,7 +483,7 @@ func (j *jsiiProxy_GlueDataQualityRuleset) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/glue_data_quality_ruleset aws_glue_data_quality_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/glue_data_quality_ruleset aws_glue_data_quality_ruleset} Resource.
 func NewGlueDataQualityRuleset(scope constructs.Construct, id *string, config *GlueDataQualityRulesetConfig) GlueDataQualityRuleset {
 	_init_.Initialize()
 
@@ -501,7 +501,7 @@ func NewGlueDataQualityRuleset(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/glue_data_quality_ruleset aws_glue_data_quality_ruleset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/glue_data_quality_ruleset aws_glue_data_quality_ruleset} Resource.
 func NewGlueDataQualityRuleset_Override(g GlueDataQualityRuleset, scope constructs.Construct, id *string, config *GlueDataQualityRulesetConfig) {
 	_init_.Initialize()
 

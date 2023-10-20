@@ -135,6 +135,10 @@ func (j *jsiiProxy_IotProvisioningTemplate) validateSetTemplateBodyParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_IotProvisioningTemplate) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
 func validateNewIotProvisioningTemplateParameters(scope constructs.Construct, id *string, config *IotProvisioningTemplateConfig) error {
 	return nil
 }

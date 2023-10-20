@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/api_gateway_rest_api_policy aws_api_gateway_rest_api_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/api_gateway_rest_api_policy aws_api_gateway_rest_api_policy}.
 type ApiGatewayRestApiPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_ApiGatewayRestApiPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/api_gateway_rest_api_policy aws_api_gateway_rest_api_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/api_gateway_rest_api_policy aws_api_gateway_rest_api_policy} Resource.
 func NewApiGatewayRestApiPolicy(scope constructs.Construct, id *string, config *ApiGatewayRestApiPolicyConfig) ApiGatewayRestApiPolicy {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewApiGatewayRestApiPolicy(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/api_gateway_rest_api_policy aws_api_gateway_rest_api_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/api_gateway_rest_api_policy aws_api_gateway_rest_api_policy} Resource.
 func NewApiGatewayRestApiPolicy_Override(a ApiGatewayRestApiPolicy, scope constructs.Construct, id *string, config *ApiGatewayRestApiPolicyConfig) {
 	_init_.Initialize()
 

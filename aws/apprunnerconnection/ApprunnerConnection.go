@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/apprunner_connection aws_apprunner_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/apprunner_connection aws_apprunner_connection}.
 type ApprunnerConnection interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -413,7 +413,7 @@ func (j *jsiiProxy_ApprunnerConnection) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/apprunner_connection aws_apprunner_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/apprunner_connection aws_apprunner_connection} Resource.
 func NewApprunnerConnection(scope constructs.Construct, id *string, config *ApprunnerConnectionConfig) ApprunnerConnection {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewApprunnerConnection(scope constructs.Construct, id *string, config *Appr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/apprunner_connection aws_apprunner_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/apprunner_connection aws_apprunner_connection} Resource.
 func NewApprunnerConnection_Override(a ApprunnerConnection, scope constructs.Construct, id *string, config *ApprunnerConnectionConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint}.
 type Ec2ClientVpnEndpoint interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -83,6 +83,7 @@ type Ec2ClientVpnEndpoint interface {
 	SelfServicePortal() *string
 	SetSelfServicePortal(val *string)
 	SelfServicePortalInput() *string
+	SelfServicePortalUrl() *string
 	ServerCertificateArn() *string
 	SetServerCertificateArn(val *string)
 	ServerCertificateArnInput() *string
@@ -532,6 +533,16 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) SelfServicePortalInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) SelfServicePortalUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"selfServicePortalUrl",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Ec2ClientVpnEndpoint) ServerCertificateArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -723,7 +734,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) VpnPortInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Resource.
 func NewEc2ClientVpnEndpoint(scope constructs.Construct, id *string, config *Ec2ClientVpnEndpointConfig) Ec2ClientVpnEndpoint {
 	_init_.Initialize()
 
@@ -741,7 +752,7 @@ func NewEc2ClientVpnEndpoint(scope constructs.Construct, id *string, config *Ec2
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/ec2_client_vpn_endpoint aws_ec2_client_vpn_endpoint} Resource.
 func NewEc2ClientVpnEndpoint_Override(e Ec2ClientVpnEndpoint, scope constructs.Construct, id *string, config *Ec2ClientVpnEndpointConfig) {
 	_init_.Initialize()
 

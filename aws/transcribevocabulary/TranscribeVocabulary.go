@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/transcribe_vocabulary aws_transcribe_vocabulary}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/transcribe_vocabulary aws_transcribe_vocabulary}.
 type TranscribeVocabulary interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -485,7 +485,7 @@ func (j *jsiiProxy_TranscribeVocabulary) VocabularyNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/transcribe_vocabulary aws_transcribe_vocabulary} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/transcribe_vocabulary aws_transcribe_vocabulary} Resource.
 func NewTranscribeVocabulary(scope constructs.Construct, id *string, config *TranscribeVocabularyConfig) TranscribeVocabulary {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewTranscribeVocabulary(scope constructs.Construct, id *string, config *Tra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/transcribe_vocabulary aws_transcribe_vocabulary} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/transcribe_vocabulary aws_transcribe_vocabulary} Resource.
 func NewTranscribeVocabulary_Override(t TranscribeVocabulary, scope constructs.Construct, id *string, config *TranscribeVocabularyConfig) {
 	_init_.Initialize()
 

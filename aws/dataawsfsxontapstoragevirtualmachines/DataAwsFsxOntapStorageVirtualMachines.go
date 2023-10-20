@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/fsx_ontap_storage_virtual_machines aws_fsx_ontap_storage_virtual_machines}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/fsx_ontap_storage_virtual_machines aws_fsx_ontap_storage_virtual_machines}.
 type DataAwsFsxOntapStorageVirtualMachines interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataAwsFsxOntapStorageVirtualMachines) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/fsx_ontap_storage_virtual_machines aws_fsx_ontap_storage_virtual_machines} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/fsx_ontap_storage_virtual_machines aws_fsx_ontap_storage_virtual_machines} Data Source.
 func NewDataAwsFsxOntapStorageVirtualMachines(scope constructs.Construct, id *string, config *DataAwsFsxOntapStorageVirtualMachinesConfig) DataAwsFsxOntapStorageVirtualMachines {
 	_init_.Initialize()
 
@@ -314,7 +314,7 @@ func NewDataAwsFsxOntapStorageVirtualMachines(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/fsx_ontap_storage_virtual_machines aws_fsx_ontap_storage_virtual_machines} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/fsx_ontap_storage_virtual_machines aws_fsx_ontap_storage_virtual_machines} Data Source.
 func NewDataAwsFsxOntapStorageVirtualMachines_Override(d DataAwsFsxOntapStorageVirtualMachines, scope constructs.Construct, id *string, config *DataAwsFsxOntapStorageVirtualMachinesConfig) {
 	_init_.Initialize()
 

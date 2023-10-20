@@ -5,11 +5,11 @@ package appflowflow
 
 
 type AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesMarketoErrorHandlingConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/appflow_flow#bucket_name AppflowFlow#bucket_name}.
 	BucketName *string `field:"optional" json:"bucketName" yaml:"bucketName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/appflow_flow#bucket_prefix AppflowFlow#bucket_prefix}.
 	BucketPrefix *string `field:"optional" json:"bucketPrefix" yaml:"bucketPrefix"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/appflow_flow#fail_on_first_destination_error AppflowFlow#fail_on_first_destination_error}.
 	FailOnFirstDestinationError interface{} `field:"optional" json:"failOnFirstDestinationError" yaml:"failOnFirstDestinationError"`
 }
 

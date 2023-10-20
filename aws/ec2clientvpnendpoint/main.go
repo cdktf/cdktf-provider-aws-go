@@ -83,6 +83,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "securityGroupIdsInput", GoGetter: "SecurityGroupIdsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "selfServicePortal", GoGetter: "SelfServicePortal"},
 			_jsii_.MemberProperty{JsiiProperty: "selfServicePortalInput", GoGetter: "SelfServicePortalInput"},
+			_jsii_.MemberProperty{JsiiProperty: "selfServicePortalUrl", GoGetter: "SelfServicePortalUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "serverCertificateArn", GoGetter: "ServerCertificateArn"},
 			_jsii_.MemberProperty{JsiiProperty: "serverCertificateArnInput", GoGetter: "ServerCertificateArnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sessionTimeoutHours", GoGetter: "SessionTimeoutHours"},

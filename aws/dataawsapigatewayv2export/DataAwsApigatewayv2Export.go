@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/apigatewayv2_export aws_apigatewayv2_export}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/apigatewayv2_export aws_apigatewayv2_export}.
 type DataAwsApigatewayv2Export interface {
 	cdktf.TerraformDataSource
 	ApiId() *string
@@ -413,7 +413,7 @@ func (j *jsiiProxy_DataAwsApigatewayv2Export) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/apigatewayv2_export aws_apigatewayv2_export} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/apigatewayv2_export aws_apigatewayv2_export} Data Source.
 func NewDataAwsApigatewayv2Export(scope constructs.Construct, id *string, config *DataAwsApigatewayv2ExportConfig) DataAwsApigatewayv2Export {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewDataAwsApigatewayv2Export(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/data-sources/apigatewayv2_export aws_apigatewayv2_export} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/apigatewayv2_export aws_apigatewayv2_export} Data Source.
 func NewDataAwsApigatewayv2Export_Override(d DataAwsApigatewayv2Export, scope constructs.Construct, id *string, config *DataAwsApigatewayv2ExportConfig) {
 	_init_.Initialize()
 

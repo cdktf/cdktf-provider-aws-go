@@ -7,11 +7,11 @@ package securityhubinsight
 type SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAt struct {
 	// date_range block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/securityhub_insight#date_range SecurityhubInsight#date_range}
 	DateRange *SecurityhubInsightFiltersResourceAwsEc2InstanceLaunchedAtDateRange `field:"optional" json:"dateRange" yaml:"dateRange"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/securityhub_insight#end SecurityhubInsight#end}.
 	End *string `field:"optional" json:"end" yaml:"end"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.21.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/securityhub_insight#start SecurityhubInsight#start}.
 	Start *string `field:"optional" json:"start" yaml:"start"`
 }
 
