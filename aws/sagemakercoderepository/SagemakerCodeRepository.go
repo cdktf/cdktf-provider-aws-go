@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/sagemaker_code_repository aws_sagemaker_code_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/sagemaker_code_repository aws_sagemaker_code_repository}.
 type SagemakerCodeRepository interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -402,7 +402,7 @@ func (j *jsiiProxy_SagemakerCodeRepository) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/sagemaker_code_repository aws_sagemaker_code_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/sagemaker_code_repository aws_sagemaker_code_repository} Resource.
 func NewSagemakerCodeRepository(scope constructs.Construct, id *string, config *SagemakerCodeRepositoryConfig) SagemakerCodeRepository {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewSagemakerCodeRepository(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/sagemaker_code_repository aws_sagemaker_code_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/sagemaker_code_repository aws_sagemaker_code_repository} Resource.
 func NewSagemakerCodeRepository_Override(s SagemakerCodeRepository, scope constructs.Construct, id *string, config *SagemakerCodeRepositoryConfig) {
 	_init_.Initialize()
 

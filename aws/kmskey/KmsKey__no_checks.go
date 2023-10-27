@@ -67,6 +67,10 @@ func (k *jsiiProxy_KmsKey) validateOverrideLogicalIdParameters(newLogicalId *str
 	return nil
 }
 
+func (k *jsiiProxy_KmsKey) validatePutTimeoutsParameters(value *KmsKeyTimeouts) error {
+	return nil
+}
+
 func validateKmsKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

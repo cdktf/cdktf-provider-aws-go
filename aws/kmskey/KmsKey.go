@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/kms_key aws_kms_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/kms_key aws_kms_key}.
 type KmsKey interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -102,6 +102,8 @@ type KmsKey interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() KmsKeyTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -135,6 +137,7 @@ type KmsKey interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *KmsKeyTimeouts)
 	ResetBypassPolicyLockoutSafetyCheck()
 	ResetCustomerMasterKeySpec()
 	ResetCustomKeyStoreId()
@@ -151,6 +154,7 @@ type KmsKey interface {
 	ResetPolicy()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -606,8 +610,28 @@ func (j *jsiiProxy_KmsKey) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_KmsKey) Timeouts() KmsKeyTimeoutsOutputReference {
+	var returns KmsKeyTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/kms_key aws_kms_key} Resource.
+func (j *jsiiProxy_KmsKey) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/kms_key aws_kms_key} Resource.
 func NewKmsKey(scope constructs.Construct, id *string, config *KmsKeyConfig) KmsKey {
 	_init_.Initialize()
 
@@ -625,7 +649,7 @@ func NewKmsKey(scope constructs.Construct, id *string, config *KmsKeyConfig) Kms
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/kms_key aws_kms_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/kms_key aws_kms_key} Resource.
 func NewKmsKey_Override(k KmsKey, scope constructs.Construct, id *string, config *KmsKeyConfig) {
 	_init_.Initialize()
 
@@ -1165,6 +1189,17 @@ func (k *jsiiProxy_KmsKey) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (k *jsiiProxy_KmsKey) PutTimeouts(value *KmsKeyTimeouts) {
+	if err := k.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KmsKey) ResetBypassPolicyLockoutSafetyCheck() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1273,6 +1308,14 @@ func (k *jsiiProxy_KmsKey) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmsKey) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

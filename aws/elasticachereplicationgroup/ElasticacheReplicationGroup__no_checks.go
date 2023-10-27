@@ -147,6 +147,10 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetIdParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetIpDiscoveryParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetKmsKeyIdParameters(val *string) error {
 	return nil
 }
@@ -160,6 +164,10 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetMaintenanceWindowPara
 }
 
 func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetMultiAzEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetNetworkTypeParameters(val *string) error {
 	return nil
 }
 

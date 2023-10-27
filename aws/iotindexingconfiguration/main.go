@@ -312,6 +312,45 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationFilter",
+		reflect.TypeOf((*IotIndexingConfigurationThingIndexingConfigurationFilter)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationFilterOutputReference",
+		reflect.TypeOf((*IotIndexingConfigurationThingIndexingConfigurationFilterOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "namedShadowNames", GoGetter: "NamedShadowNames"},
+			_jsii_.MemberProperty{JsiiProperty: "namedShadowNamesInput", GoGetter: "NamedShadowNamesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNamedShadowNames", GoMethod: "ResetNamedShadowNames"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationFilterOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.iotIndexingConfiguration.IotIndexingConfigurationThingIndexingConfigurationManagedField",
 		reflect.TypeOf((*IotIndexingConfigurationThingIndexingConfigurationManagedField)(nil)).Elem(),
 	)
@@ -386,6 +425,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "customFieldInput", GoGetter: "CustomFieldInput"},
 			_jsii_.MemberProperty{JsiiProperty: "deviceDefenderIndexingMode", GoGetter: "DeviceDefenderIndexingMode"},
 			_jsii_.MemberProperty{JsiiProperty: "deviceDefenderIndexingModeInput", GoGetter: "DeviceDefenderIndexingModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "filter", GoGetter: "Filter"},
+			_jsii_.MemberProperty{JsiiProperty: "filterInput", GoGetter: "FilterInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -404,9 +445,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "namedShadowIndexingMode", GoGetter: "NamedShadowIndexingMode"},
 			_jsii_.MemberProperty{JsiiProperty: "namedShadowIndexingModeInput", GoGetter: "NamedShadowIndexingModeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomField", GoMethod: "PutCustomField"},
+			_jsii_.MemberMethod{JsiiMethod: "putFilter", GoMethod: "PutFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "putManagedField", GoMethod: "PutManagedField"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomField", GoMethod: "ResetCustomField"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeviceDefenderIndexingMode", GoMethod: "ResetDeviceDefenderIndexingMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFilter", GoMethod: "ResetFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetManagedField", GoMethod: "ResetManagedField"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNamedShadowIndexingMode", GoMethod: "ResetNamedShadowIndexingMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetThingConnectivityIndexingMode", GoMethod: "ResetThingConnectivityIndexingMode"},

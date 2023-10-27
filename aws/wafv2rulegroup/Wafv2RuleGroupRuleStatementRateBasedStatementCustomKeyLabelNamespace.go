@@ -5,7 +5,7 @@ package wafv2rulegroup
 
 
 type Wafv2RuleGroupRuleStatementRateBasedStatementCustomKeyLabelNamespace struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/wafv2_rule_group#namespace Wafv2RuleGroup#namespace}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/wafv2_rule_group#namespace Wafv2RuleGroup#namespace}.
 	Namespace *string `field:"required" json:"namespace" yaml:"namespace"`
 }
 

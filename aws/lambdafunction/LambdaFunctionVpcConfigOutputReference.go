@@ -32,6 +32,9 @@ type LambdaFunctionVpcConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *LambdaFunctionVpcConfig
 	SetInternalValue(val *LambdaFunctionVpcConfig)
+	Ipv6AllowedForDualStack() interface{}
+	SetIpv6AllowedForDualStack(val interface{})
+	Ipv6AllowedForDualStackInput() interface{}
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
@@ -71,6 +74,7 @@ type LambdaFunctionVpcConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetIpv6AllowedForDualStack()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -131,6 +135,26 @@ func (j *jsiiProxy_LambdaFunctionVpcConfigOutputReference) InternalValue() *Lamb
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunctionVpcConfigOutputReference) Ipv6AllowedForDualStack() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipv6AllowedForDualStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunctionVpcConfigOutputReference) Ipv6AllowedForDualStackInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ipv6AllowedForDualStackInput",
 		&returns,
 	)
 	return returns
@@ -263,6 +287,17 @@ func (j *jsiiProxy_LambdaFunctionVpcConfigOutputReference)SetInternalValue(val *
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LambdaFunctionVpcConfigOutputReference)SetIpv6AllowedForDualStack(val interface{}) {
+	if err := j.validateSetIpv6AllowedForDualStackParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6AllowedForDualStack",
 		val,
 	)
 }
@@ -495,6 +530,14 @@ func (l *jsiiProxy_LambdaFunctionVpcConfigOutputReference) InterpolationForAttri
 	)
 
 	return returns
+}
+
+func (l *jsiiProxy_LambdaFunctionVpcConfigOutputReference) ResetIpv6AllowedForDualStack() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetIpv6AllowedForDualStack",
+		nil, // no parameters
+	)
 }
 
 func (l *jsiiProxy_LambdaFunctionVpcConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

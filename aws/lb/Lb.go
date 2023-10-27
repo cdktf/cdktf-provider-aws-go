@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/lb aws_lb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/lb aws_lb}.
 type Lb interface {
 	cdktf.TerraformResource
 	AccessLogs() LbAccessLogsOutputReference
@@ -42,6 +42,9 @@ type Lb interface {
 	SetDesyncMitigationMode(val *string)
 	DesyncMitigationModeInput() *string
 	DnsName() *string
+	DnsRecordClientRoutingPolicy() *string
+	SetDnsRecordClientRoutingPolicy(val *string)
+	DnsRecordClientRoutingPolicyInput() *string
 	DropInvalidHeaderFields() interface{}
 	SetDropInvalidHeaderFields(val interface{})
 	DropInvalidHeaderFieldsInput() interface{}
@@ -177,6 +180,7 @@ type Lb interface {
 	ResetAccessLogs()
 	ResetCustomerOwnedIpv4Pool()
 	ResetDesyncMitigationMode()
+	ResetDnsRecordClientRoutingPolicy()
 	ResetDropInvalidHeaderFields()
 	ResetEnableCrossZoneLoadBalancing()
 	ResetEnableDeletionProtection()
@@ -352,6 +356,26 @@ func (j *jsiiProxy_Lb) DnsName() *string {
 	_jsii_.Get(
 		j,
 		"dnsName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lb) DnsRecordClientRoutingPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsRecordClientRoutingPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lb) DnsRecordClientRoutingPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsRecordClientRoutingPolicyInput",
 		&returns,
 	)
 	return returns
@@ -928,7 +952,7 @@ func (j *jsiiProxy_Lb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/lb aws_lb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/lb aws_lb} Resource.
 func NewLb(scope constructs.Construct, id *string, config *LbConfig) Lb {
 	_init_.Initialize()
 
@@ -946,7 +970,7 @@ func NewLb(scope constructs.Construct, id *string, config *LbConfig) Lb {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/lb aws_lb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/lb aws_lb} Resource.
 func NewLb_Override(l Lb, scope constructs.Construct, id *string, config *LbConfig) {
 	_init_.Initialize()
 
@@ -1005,6 +1029,17 @@ func (j *jsiiProxy_Lb)SetDesyncMitigationMode(val *string) {
 	_jsii_.Set(
 		j,
 		"desyncMitigationMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Lb)SetDnsRecordClientRoutingPolicy(val *string) {
+	if err := j.validateSetDnsRecordClientRoutingPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dnsRecordClientRoutingPolicy",
 		val,
 	)
 }
@@ -1638,6 +1673,14 @@ func (l *jsiiProxy_Lb) ResetDesyncMitigationMode() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetDesyncMitigationMode",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Lb) ResetDnsRecordClientRoutingPolicy() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDnsRecordClientRoutingPolicy",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule aws_config_config_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule aws_config_config_rule}.
 type ConfigConfigRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -35,6 +35,8 @@ type ConfigConfigRule interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EvaluationMode() ConfigConfigRuleEvaluationModeList
+	EvaluationModeInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -121,9 +123,11 @@ type ConfigConfigRule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEvaluationMode(value interface{})
 	PutScope(value *ConfigConfigRuleScope)
 	PutSource(value *ConfigConfigRuleSource)
 	ResetDescription()
+	ResetEvaluationMode()
 	ResetId()
 	ResetInputParameters()
 	ResetMaximumExecutionFrequency()
@@ -223,6 +227,26 @@ func (j *jsiiProxy_ConfigConfigRule) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConfigConfigRule) EvaluationMode() ConfigConfigRuleEvaluationModeList {
+	var returns ConfigConfigRuleEvaluationModeList
+	_jsii_.Get(
+		j,
+		"evaluationMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConfigConfigRule) EvaluationModeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"evaluationModeInput",
 		&returns,
 	)
 	return returns
@@ -509,7 +533,7 @@ func (j *jsiiProxy_ConfigConfigRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule aws_config_config_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule aws_config_config_rule} Resource.
 func NewConfigConfigRule(scope constructs.Construct, id *string, config *ConfigConfigRuleConfig) ConfigConfigRule {
 	_init_.Initialize()
 
@@ -527,7 +551,7 @@ func NewConfigConfigRule(scope constructs.Construct, id *string, config *ConfigC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/config_config_rule aws_config_config_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/config_config_rule aws_config_config_rule} Resource.
 func NewConfigConfigRule_Override(c ConfigConfigRule, scope constructs.Construct, id *string, config *ConfigConfigRuleConfig) {
 	_init_.Initialize()
 
@@ -1001,6 +1025,17 @@ func (c *jsiiProxy_ConfigConfigRule) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (c *jsiiProxy_ConfigConfigRule) PutEvaluationMode(value interface{}) {
+	if err := c.validatePutEvaluationModeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putEvaluationMode",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ConfigConfigRule) PutScope(value *ConfigConfigRuleScope) {
 	if err := c.validatePutScopeParameters(value); err != nil {
 		panic(err)
@@ -1027,6 +1062,14 @@ func (c *jsiiProxy_ConfigConfigRule) ResetDescription() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConfigConfigRule) ResetEvaluationMode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetEvaluationMode",
 		nil, // no parameters
 	)
 }

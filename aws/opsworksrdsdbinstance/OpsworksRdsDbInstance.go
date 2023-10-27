@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_rds_db_instance aws_opsworks_rds_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_rds_db_instance aws_opsworks_rds_db_instance}.
 type OpsworksRdsDbInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -389,7 +389,7 @@ func (j *jsiiProxy_OpsworksRdsDbInstance) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_rds_db_instance aws_opsworks_rds_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_rds_db_instance aws_opsworks_rds_db_instance} Resource.
 func NewOpsworksRdsDbInstance(scope constructs.Construct, id *string, config *OpsworksRdsDbInstanceConfig) OpsworksRdsDbInstance {
 	_init_.Initialize()
 
@@ -407,7 +407,7 @@ func NewOpsworksRdsDbInstance(scope constructs.Construct, id *string, config *Op
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/opsworks_rds_db_instance aws_opsworks_rds_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/opsworks_rds_db_instance aws_opsworks_rds_db_instance} Resource.
 func NewOpsworksRdsDbInstance_Override(o OpsworksRdsDbInstance, scope constructs.Construct, id *string, config *OpsworksRdsDbInstanceConfig) {
 	_init_.Initialize()
 

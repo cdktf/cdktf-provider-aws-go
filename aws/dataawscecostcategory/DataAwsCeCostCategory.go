@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/ce_cost_category aws_ce_cost_category}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/ce_cost_category aws_ce_cost_category}.
 type DataAwsCeCostCategory interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -385,7 +385,7 @@ func (j *jsiiProxy_DataAwsCeCostCategory) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/ce_cost_category aws_ce_cost_category} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/ce_cost_category aws_ce_cost_category} Data Source.
 func NewDataAwsCeCostCategory(scope constructs.Construct, id *string, config *DataAwsCeCostCategoryConfig) DataAwsCeCostCategory {
 	_init_.Initialize()
 
@@ -403,7 +403,7 @@ func NewDataAwsCeCostCategory(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/ce_cost_category aws_ce_cost_category} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/ce_cost_category aws_ce_cost_category} Data Source.
 func NewDataAwsCeCostCategory_Override(d DataAwsCeCostCategory, scope constructs.Construct, id *string, config *DataAwsCeCostCategoryConfig) {
 	_init_.Initialize()
 

@@ -191,6 +191,37 @@ func (c *jsiiProxy_ConfigConfigRule) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (c *jsiiProxy_ConfigConfigRule) validatePutEvaluationModeParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ConfigConfigRuleEvaluationMode:
+		value := value.(*[]*ConfigConfigRuleEvaluationMode)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ConfigConfigRuleEvaluationMode:
+		value_ := value.([]*ConfigConfigRuleEvaluationMode)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ConfigConfigRuleEvaluationMode; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_ConfigConfigRule) validatePutScopeParameters(value *ConfigConfigRuleScope) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

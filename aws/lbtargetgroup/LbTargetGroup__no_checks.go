@@ -79,6 +79,10 @@ func (l *jsiiProxy_LbTargetGroup) validatePutTargetFailoverParameters(value inte
 	return nil
 }
 
+func (l *jsiiProxy_LbTargetGroup) validatePutTargetHealthStateParameters(value interface{}) error {
+	return nil
+}
+
 func validateLbTargetGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

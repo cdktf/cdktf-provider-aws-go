@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group}.
 type ElasticacheReplicationGroup interface {
 	cdktf.TerraformResource
 	ApplyImmediately() interface{}
@@ -79,6 +79,9 @@ type ElasticacheReplicationGroup interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpDiscovery() *string
+	SetIpDiscovery(val *string)
+	IpDiscoveryInput() *string
 	KmsKeyId() *string
 	SetKmsKeyId(val *string)
 	KmsKeyIdInput() *string
@@ -95,6 +98,9 @@ type ElasticacheReplicationGroup interface {
 	MultiAzEnabled() interface{}
 	SetMultiAzEnabled(val interface{})
 	MultiAzEnabledInput() interface{}
+	NetworkType() *string
+	SetNetworkType(val *string)
+	NetworkTypeInput() *string
 	// The tree node.
 	Node() constructs.Node
 	NodeType() *string
@@ -224,10 +230,12 @@ type ElasticacheReplicationGroup interface {
 	ResetFinalSnapshotIdentifier()
 	ResetGlobalReplicationGroupId()
 	ResetId()
+	ResetIpDiscovery()
 	ResetKmsKeyId()
 	ResetLogDeliveryConfiguration()
 	ResetMaintenanceWindow()
 	ResetMultiAzEnabled()
+	ResetNetworkType()
 	ResetNodeType()
 	ResetNotificationTopicArn()
 	ResetNumCacheClusters()
@@ -626,6 +634,26 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ElasticacheReplicationGroup) IpDiscovery() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipDiscovery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheReplicationGroup) IpDiscoveryInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipDiscoveryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElasticacheReplicationGroup) KmsKeyId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -721,6 +749,26 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) MultiAzEnabledInput() interface{
 	_jsii_.Get(
 		j,
 		"multiAzEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheReplicationGroup) NetworkType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheReplicationGroup) NetworkTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkTypeInput",
 		&returns,
 	)
 	return returns
@@ -1237,7 +1285,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) UserGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
 func NewElasticacheReplicationGroup(scope constructs.Construct, id *string, config *ElasticacheReplicationGroupConfig) ElasticacheReplicationGroup {
 	_init_.Initialize()
 
@@ -1255,7 +1303,7 @@ func NewElasticacheReplicationGroup(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
 func NewElasticacheReplicationGroup_Override(e ElasticacheReplicationGroup, scope constructs.Construct, id *string, config *ElasticacheReplicationGroupConfig) {
 	_init_.Initialize()
 
@@ -1436,6 +1484,17 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_ElasticacheReplicationGroup)SetIpDiscovery(val *string) {
+	if err := j.validateSetIpDiscoveryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipDiscovery",
+		val,
+	)
+}
+
 func (j *jsiiProxy_ElasticacheReplicationGroup)SetKmsKeyId(val *string) {
 	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
 		panic(err)
@@ -1476,6 +1535,17 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetMultiAzEnabled(val interface{}
 	_jsii_.Set(
 		j,
 		"multiAzEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElasticacheReplicationGroup)SetNetworkType(val *string) {
+	if err := j.validateSetNetworkTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkType",
 		val,
 	)
 }
@@ -2155,6 +2225,14 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) ResetId() {
 	)
 }
 
+func (e *jsiiProxy_ElasticacheReplicationGroup) ResetIpDiscovery() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetIpDiscovery",
+		nil, // no parameters
+	)
+}
+
 func (e *jsiiProxy_ElasticacheReplicationGroup) ResetKmsKeyId() {
 	_jsii_.InvokeVoid(
 		e,
@@ -2183,6 +2261,14 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) ResetMultiAzEnabled() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetMultiAzEnabled",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElasticacheReplicationGroup) ResetNetworkType() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetNetworkType",
 		nil, // no parameters
 	)
 }

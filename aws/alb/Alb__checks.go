@@ -390,6 +390,14 @@ func (j *jsiiProxy_Alb) validateSetDesyncMitigationModeParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_Alb) validateSetDnsRecordClientRoutingPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Alb) validateSetDropInvalidHeaderFieldsParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

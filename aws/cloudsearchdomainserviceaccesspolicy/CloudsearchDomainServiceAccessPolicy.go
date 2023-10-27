@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/cloudsearch_domain_service_access_policy aws_cloudsearch_domain_service_access_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/cloudsearch_domain_service_access_policy aws_cloudsearch_domain_service_access_policy}.
 type CloudsearchDomainServiceAccessPolicy interface {
 	cdktf.TerraformResource
 	AccessPolicy() *string
@@ -367,7 +367,7 @@ func (j *jsiiProxy_CloudsearchDomainServiceAccessPolicy) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/cloudsearch_domain_service_access_policy aws_cloudsearch_domain_service_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/cloudsearch_domain_service_access_policy aws_cloudsearch_domain_service_access_policy} Resource.
 func NewCloudsearchDomainServiceAccessPolicy(scope constructs.Construct, id *string, config *CloudsearchDomainServiceAccessPolicyConfig) CloudsearchDomainServiceAccessPolicy {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewCloudsearchDomainServiceAccessPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/cloudsearch_domain_service_access_policy aws_cloudsearch_domain_service_access_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/cloudsearch_domain_service_access_policy aws_cloudsearch_domain_service_access_policy} Resource.
 func NewCloudsearchDomainServiceAccessPolicy_Override(c CloudsearchDomainServiceAccessPolicy, scope constructs.Construct, id *string, config *CloudsearchDomainServiceAccessPolicyConfig) {
 	_init_.Initialize()
 

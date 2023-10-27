@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/imagebuilder_image aws_imagebuilder_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image aws_imagebuilder_image}.
 type ImagebuilderImage interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -56,6 +56,8 @@ type ImagebuilderImage interface {
 	ImageRecipeArn() *string
 	SetImageRecipeArn(val *string)
 	ImageRecipeArnInput() *string
+	ImageScanningConfiguration() ImagebuilderImageImageScanningConfigurationOutputReference
+	ImageScanningConfigurationInput() *ImagebuilderImageImageScanningConfiguration
 	ImageTestsConfiguration() ImagebuilderImageImageTestsConfigurationOutputReference
 	ImageTestsConfigurationInput() *ImagebuilderImageImageTestsConfiguration
 	InfrastructureConfigurationArn() *string
@@ -129,6 +131,7 @@ type ImagebuilderImage interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutImageScanningConfiguration(value *ImagebuilderImageImageScanningConfiguration)
 	PutImageTestsConfiguration(value *ImagebuilderImageImageTestsConfiguration)
 	PutTimeouts(value *ImagebuilderImageTimeouts)
 	ResetContainerRecipeArn()
@@ -136,6 +139,7 @@ type ImagebuilderImage interface {
 	ResetEnhancedImageMetadataEnabled()
 	ResetId()
 	ResetImageRecipeArn()
+	ResetImageScanningConfiguration()
 	ResetImageTestsConfiguration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -353,6 +357,26 @@ func (j *jsiiProxy_ImagebuilderImage) ImageRecipeArnInput() *string {
 	_jsii_.Get(
 		j,
 		"imageRecipeArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImagebuilderImage) ImageScanningConfiguration() ImagebuilderImageImageScanningConfigurationOutputReference {
+	var returns ImagebuilderImageImageScanningConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"imageScanningConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImagebuilderImage) ImageScanningConfigurationInput() *ImagebuilderImageImageScanningConfiguration {
+	var returns *ImagebuilderImageImageScanningConfiguration
+	_jsii_.Get(
+		j,
+		"imageScanningConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -589,7 +613,7 @@ func (j *jsiiProxy_ImagebuilderImage) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/imagebuilder_image aws_imagebuilder_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image aws_imagebuilder_image} Resource.
 func NewImagebuilderImage(scope constructs.Construct, id *string, config *ImagebuilderImageConfig) ImagebuilderImage {
 	_init_.Initialize()
 
@@ -607,7 +631,7 @@ func NewImagebuilderImage(scope constructs.Construct, id *string, config *Imageb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/imagebuilder_image aws_imagebuilder_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/imagebuilder_image aws_imagebuilder_image} Resource.
 func NewImagebuilderImage_Override(i ImagebuilderImage, scope constructs.Construct, id *string, config *ImagebuilderImageConfig) {
 	_init_.Initialize()
 
@@ -1092,6 +1116,17 @@ func (i *jsiiProxy_ImagebuilderImage) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (i *jsiiProxy_ImagebuilderImage) PutImageScanningConfiguration(value *ImagebuilderImageImageScanningConfiguration) {
+	if err := i.validatePutImageScanningConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putImageScanningConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_ImagebuilderImage) PutImageTestsConfiguration(value *ImagebuilderImageImageTestsConfiguration) {
 	if err := i.validatePutImageTestsConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1150,6 +1185,14 @@ func (i *jsiiProxy_ImagebuilderImage) ResetImageRecipeArn() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetImageRecipeArn",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_ImagebuilderImage) ResetImageScanningConfiguration() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetImageScanningConfiguration",
 		nil, // no parameters
 	)
 }

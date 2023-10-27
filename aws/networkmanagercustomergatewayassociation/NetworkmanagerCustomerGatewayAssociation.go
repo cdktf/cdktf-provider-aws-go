@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/networkmanager_customer_gateway_association aws_networkmanager_customer_gateway_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/networkmanager_customer_gateway_association aws_networkmanager_customer_gateway_association}.
 type NetworkmanagerCustomerGatewayAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_NetworkmanagerCustomerGatewayAssociation) TimeoutsInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/networkmanager_customer_gateway_association aws_networkmanager_customer_gateway_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/networkmanager_customer_gateway_association aws_networkmanager_customer_gateway_association} Resource.
 func NewNetworkmanagerCustomerGatewayAssociation(scope constructs.Construct, id *string, config *NetworkmanagerCustomerGatewayAssociationConfig) NetworkmanagerCustomerGatewayAssociation {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewNetworkmanagerCustomerGatewayAssociation(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/networkmanager_customer_gateway_association aws_networkmanager_customer_gateway_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/networkmanager_customer_gateway_association aws_networkmanager_customer_gateway_association} Resource.
 func NewNetworkmanagerCustomerGatewayAssociation_Override(n NetworkmanagerCustomerGatewayAssociation, scope constructs.Construct, id *string, config *NetworkmanagerCustomerGatewayAssociationConfig) {
 	_init_.Initialize()
 

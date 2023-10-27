@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/dynamodb_table aws_dynamodb_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/dynamodb_table aws_dynamodb_table}.
 type DynamodbTable interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -905,7 +905,7 @@ func (j *jsiiProxy_DynamodbTable) WriteCapacityInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
 func NewDynamodbTable(scope constructs.Construct, id *string, config *DynamodbTableConfig) DynamodbTable {
 	_init_.Initialize()
 
@@ -923,7 +923,7 @@ func NewDynamodbTable(scope constructs.Construct, id *string, config *DynamodbTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
 func NewDynamodbTable_Override(d DynamodbTable, scope constructs.Construct, id *string, config *DynamodbTableConfig) {
 	_init_.Initialize()
 

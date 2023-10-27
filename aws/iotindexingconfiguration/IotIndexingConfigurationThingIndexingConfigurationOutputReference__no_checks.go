@@ -51,6 +51,10 @@ func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	return nil
 }
 
+func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) validatePutFilterParameters(value *IotIndexingConfigurationThingIndexingConfigurationFilter) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) validatePutManagedFieldParameters(value interface{}) error {
 	return nil
 }

@@ -63,6 +63,10 @@ func (j *jsiiProxy_LambdaFunctionVpcConfigOutputReference) validateSetInternalVa
 	return nil
 }
 
+func (j *jsiiProxy_LambdaFunctionVpcConfigOutputReference) validateSetIpv6AllowedForDualStackParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaFunctionVpcConfigOutputReference) validateSetSecurityGroupIdsParameters(val *[]*string) error {
 	return nil
 }

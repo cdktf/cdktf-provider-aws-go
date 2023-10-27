@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/imagebuilder_image aws_imagebuilder_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/imagebuilder_image aws_imagebuilder_image}.
 type DataAwsImagebuilderImage interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -47,6 +47,7 @@ type DataAwsImagebuilderImage interface {
 	SetId(val *string)
 	IdInput() *string
 	ImageRecipeArn() *string
+	ImageScanningConfiguration() DataAwsImagebuilderImageImageScanningConfigurationList
 	ImageTestsConfiguration() DataAwsImagebuilderImageImageTestsConfigurationList
 	InfrastructureConfigurationArn() *string
 	// Experimental.
@@ -290,6 +291,16 @@ func (j *jsiiProxy_DataAwsImagebuilderImage) ImageRecipeArn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsImagebuilderImage) ImageScanningConfiguration() DataAwsImagebuilderImageImageScanningConfigurationList {
+	var returns DataAwsImagebuilderImageImageScanningConfigurationList
+	_jsii_.Get(
+		j,
+		"imageScanningConfiguration",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsImagebuilderImage) ImageTestsConfiguration() DataAwsImagebuilderImageImageTestsConfigurationList {
 	var returns DataAwsImagebuilderImageImageTestsConfigurationList
 	_jsii_.Get(
@@ -451,7 +462,7 @@ func (j *jsiiProxy_DataAwsImagebuilderImage) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/imagebuilder_image aws_imagebuilder_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/imagebuilder_image aws_imagebuilder_image} Data Source.
 func NewDataAwsImagebuilderImage(scope constructs.Construct, id *string, config *DataAwsImagebuilderImageConfig) DataAwsImagebuilderImage {
 	_init_.Initialize()
 
@@ -469,7 +480,7 @@ func NewDataAwsImagebuilderImage(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/data-sources/imagebuilder_image aws_imagebuilder_image} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/data-sources/imagebuilder_image aws_imagebuilder_image} Data Source.
 func NewDataAwsImagebuilderImage_Override(d DataAwsImagebuilderImage, scope constructs.Construct, id *string, config *DataAwsImagebuilderImageConfig) {
 	_init_.Initialize()
 

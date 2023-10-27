@@ -33,6 +33,8 @@ type IotIndexingConfigurationThingIndexingConfigurationOutputReference interface
 	DeviceDefenderIndexingMode() *string
 	SetDeviceDefenderIndexingMode(val *string)
 	DeviceDefenderIndexingModeInput() *string
+	Filter() IotIndexingConfigurationThingIndexingConfigurationFilterOutputReference
+	FilterInput() *IotIndexingConfigurationThingIndexingConfigurationFilter
 	// Experimental.
 	Fqn() *string
 	InternalValue() *IotIndexingConfigurationThingIndexingConfiguration
@@ -81,9 +83,11 @@ type IotIndexingConfigurationThingIndexingConfigurationOutputReference interface
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCustomField(value interface{})
+	PutFilter(value *IotIndexingConfigurationThingIndexingConfigurationFilter)
 	PutManagedField(value interface{})
 	ResetCustomField()
 	ResetDeviceDefenderIndexingMode()
+	ResetFilter()
 	ResetManagedField()
 	ResetNamedShadowIndexingMode()
 	ResetThingConnectivityIndexingMode()
@@ -167,6 +171,26 @@ func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	_jsii_.Get(
 		j,
 		"deviceDefenderIndexingModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) Filter() IotIndexingConfigurationThingIndexingConfigurationFilterOutputReference {
+	var returns IotIndexingConfigurationThingIndexingConfigurationFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) FilterInput() *IotIndexingConfigurationThingIndexingConfigurationFilter {
+	var returns *IotIndexingConfigurationThingIndexingConfigurationFilter
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -616,6 +640,17 @@ func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	)
 }
 
+func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) PutFilter(value *IotIndexingConfigurationThingIndexingConfigurationFilter) {
+	if err := i.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) PutManagedField(value interface{}) {
 	if err := i.validatePutManagedFieldParameters(value); err != nil {
 		panic(err)
@@ -639,6 +674,14 @@ func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputRefer
 	_jsii_.InvokeVoid(
 		i,
 		"resetDeviceDefenderIndexingMode",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationOutputReference) ResetFilter() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetFilter",
 		nil, // no parameters
 	)
 }

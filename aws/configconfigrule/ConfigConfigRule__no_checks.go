@@ -67,6 +67,10 @@ func (c *jsiiProxy_ConfigConfigRule) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (c *jsiiProxy_ConfigConfigRule) validatePutEvaluationModeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigConfigRule) validatePutScopeParameters(value *ConfigConfigRuleScope) error {
 	return nil
 }

@@ -111,6 +111,10 @@ func (j *jsiiProxy_Alb) validateSetDesyncMitigationModeParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_Alb) validateSetDnsRecordClientRoutingPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Alb) validateSetDropInvalidHeaderFieldsParameters(val interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/dynamodb_contributor_insights aws_dynamodb_contributor_insights}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/dynamodb_contributor_insights aws_dynamodb_contributor_insights}.
 type DynamodbContributorInsights interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_DynamodbContributorInsights) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/dynamodb_contributor_insights aws_dynamodb_contributor_insights} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/dynamodb_contributor_insights aws_dynamodb_contributor_insights} Resource.
 func NewDynamodbContributorInsights(scope constructs.Construct, id *string, config *DynamodbContributorInsightsConfig) DynamodbContributorInsights {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewDynamodbContributorInsights(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/dynamodb_contributor_insights aws_dynamodb_contributor_insights} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/dynamodb_contributor_insights aws_dynamodb_contributor_insights} Resource.
 func NewDynamodbContributorInsights_Override(d DynamodbContributorInsights, scope constructs.Construct, id *string, config *DynamodbContributorInsightsConfig) {
 	_init_.Initialize()
 

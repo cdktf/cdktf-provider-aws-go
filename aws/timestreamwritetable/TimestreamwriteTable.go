@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/timestreamwrite_table aws_timestreamwrite_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/timestreamwrite_table aws_timestreamwrite_table}.
 type TimestreamwriteTable interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -474,7 +474,7 @@ func (j *jsiiProxy_TimestreamwriteTable) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/timestreamwrite_table aws_timestreamwrite_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/timestreamwrite_table aws_timestreamwrite_table} Resource.
 func NewTimestreamwriteTable(scope constructs.Construct, id *string, config *TimestreamwriteTableConfig) TimestreamwriteTable {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewTimestreamwriteTable(scope constructs.Construct, id *string, config *Tim
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.22.0/docs/resources/timestreamwrite_table aws_timestreamwrite_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/timestreamwrite_table aws_timestreamwrite_table} Resource.
 func NewTimestreamwriteTable_Override(t TimestreamwriteTable, scope constructs.Construct, id *string, config *TimestreamwriteTableConfig) {
 	_init_.Initialize()
 
