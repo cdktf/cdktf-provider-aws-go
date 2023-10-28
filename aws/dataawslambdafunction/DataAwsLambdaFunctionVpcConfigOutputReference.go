@@ -32,6 +32,7 @@ type DataAwsLambdaFunctionVpcConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataAwsLambdaFunctionVpcConfig
 	SetInternalValue(val *DataAwsLambdaFunctionVpcConfig)
+	Ipv6AllowedForDualStack() cdktf.IResolvable
 	SecurityGroupIds() *[]*string
 	SubnetIds() *[]*string
 	// Experimental.
@@ -127,6 +128,16 @@ func (j *jsiiProxy_DataAwsLambdaFunctionVpcConfigOutputReference) InternalValue(
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLambdaFunctionVpcConfigOutputReference) Ipv6AllowedForDualStack() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"ipv6AllowedForDualStack",
 		&returns,
 	)
 	return returns

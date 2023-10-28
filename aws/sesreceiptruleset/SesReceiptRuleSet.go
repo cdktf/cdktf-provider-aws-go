@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ses_receipt_rule_set aws_ses_receipt_rule_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/ses_receipt_rule_set aws_ses_receipt_rule_set}.
 type SesReceiptRuleSet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -331,7 +331,7 @@ func (j *jsiiProxy_SesReceiptRuleSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ses_receipt_rule_set aws_ses_receipt_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/ses_receipt_rule_set aws_ses_receipt_rule_set} Resource.
 func NewSesReceiptRuleSet(scope constructs.Construct, id *string, config *SesReceiptRuleSetConfig) SesReceiptRuleSet {
 	_init_.Initialize()
 
@@ -349,7 +349,7 @@ func NewSesReceiptRuleSet(scope constructs.Construct, id *string, config *SesRec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/ses_receipt_rule_set aws_ses_receipt_rule_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/ses_receipt_rule_set aws_ses_receipt_rule_set} Resource.
 func NewSesReceiptRuleSet_Override(s SesReceiptRuleSet, scope constructs.Construct, id *string, config *SesReceiptRuleSetConfig) {
 	_init_.Initialize()
 

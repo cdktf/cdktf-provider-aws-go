@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/lightsail_container_service aws_lightsail_container_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/lightsail_container_service aws_lightsail_container_service}.
 type LightsailContainerService interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -609,7 +609,7 @@ func (j *jsiiProxy_LightsailContainerService) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/lightsail_container_service aws_lightsail_container_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/lightsail_container_service aws_lightsail_container_service} Resource.
 func NewLightsailContainerService(scope constructs.Construct, id *string, config *LightsailContainerServiceConfig) LightsailContainerService {
 	_init_.Initialize()
 
@@ -627,7 +627,7 @@ func NewLightsailContainerService(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/lightsail_container_service aws_lightsail_container_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/lightsail_container_service aws_lightsail_container_service} Resource.
 func NewLightsailContainerService_Override(l LightsailContainerService, scope constructs.Construct, id *string, config *LightsailContainerServiceConfig) {
 	_init_.Initialize()
 

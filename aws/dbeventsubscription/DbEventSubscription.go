@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/db_event_subscription aws_db_event_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/db_event_subscription aws_db_event_subscription}.
 type DbEventSubscription interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -558,7 +558,7 @@ func (j *jsiiProxy_DbEventSubscription) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/db_event_subscription aws_db_event_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/db_event_subscription aws_db_event_subscription} Resource.
 func NewDbEventSubscription(scope constructs.Construct, id *string, config *DbEventSubscriptionConfig) DbEventSubscription {
 	_init_.Initialize()
 
@@ -576,7 +576,7 @@ func NewDbEventSubscription(scope constructs.Construct, id *string, config *DbEv
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.0/docs/resources/db_event_subscription aws_db_event_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/db_event_subscription aws_db_event_subscription} Resource.
 func NewDbEventSubscription_Override(d DbEventSubscription, scope constructs.Construct, id *string, config *DbEventSubscriptionConfig) {
 	_init_.Initialize()
 
