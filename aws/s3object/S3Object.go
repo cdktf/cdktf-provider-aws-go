@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/s3_object aws_s3_object}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/s3_object aws_s3_object}.
 type S3Object interface {
 	cdktf.TerraformResource
 	Acl() *string
@@ -109,6 +109,8 @@ type S3Object interface {
 	ObjectLockRetainUntilDate() *string
 	SetObjectLockRetainUntilDate(val *string)
 	ObjectLockRetainUntilDateInput() *string
+	OverrideProvider() S3ObjectOverrideProviderOutputReference
+	OverrideProviderInput() *S3ObjectOverrideProvider
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -180,6 +182,7 @@ type S3Object interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutOverrideProvider(value *S3ObjectOverrideProvider)
 	ResetAcl()
 	ResetBucketKeyEnabled()
 	ResetCacheControl()
@@ -201,6 +204,7 @@ type S3Object interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetOverrideProvider()
 	ResetServerSideEncryption()
 	ResetSource()
 	ResetSourceHash()
@@ -763,6 +767,26 @@ func (j *jsiiProxy_S3Object) ObjectLockRetainUntilDateInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_S3Object) OverrideProvider() S3ObjectOverrideProviderOutputReference {
+	var returns S3ObjectOverrideProviderOutputReference
+	_jsii_.Get(
+		j,
+		"overrideProvider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3Object) OverrideProviderInput() *S3ObjectOverrideProvider {
+	var returns *S3ObjectOverrideProvider
+	_jsii_.Get(
+		j,
+		"overrideProviderInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3Object) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -974,7 +998,7 @@ func (j *jsiiProxy_S3Object) WebsiteRedirectInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/s3_object aws_s3_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/s3_object aws_s3_object} Resource.
 func NewS3Object(scope constructs.Construct, id *string, config *S3ObjectConfig) S3Object {
 	_init_.Initialize()
 
@@ -992,7 +1016,7 @@ func NewS3Object(scope constructs.Construct, id *string, config *S3ObjectConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/s3_object aws_s3_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/s3_object aws_s3_object} Resource.
 func NewS3Object_Override(s S3Object, scope constructs.Construct, id *string, config *S3ObjectConfig) {
 	_init_.Initialize()
 
@@ -1686,6 +1710,17 @@ func (s *jsiiProxy_S3Object) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_S3Object) PutOverrideProvider(value *S3ObjectOverrideProvider) {
+	if err := s.validatePutOverrideProviderParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putOverrideProvider",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_S3Object) ResetAcl() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1834,6 +1869,14 @@ func (s *jsiiProxy_S3Object) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3Object) ResetOverrideProvider() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOverrideProvider",
 		nil, // no parameters
 	)
 }

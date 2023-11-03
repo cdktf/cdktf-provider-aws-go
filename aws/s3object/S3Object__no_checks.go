@@ -67,6 +67,10 @@ func (s *jsiiProxy_S3Object) validateOverrideLogicalIdParameters(newLogicalId *s
 	return nil
 }
 
+func (s *jsiiProxy_S3Object) validatePutOverrideProviderParameters(value *S3ObjectOverrideProvider) error {
+	return nil
+}
+
 func validateS3Object_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

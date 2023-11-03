@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/batch_job_definition aws_batch_job_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/batch_job_definition aws_batch_job_definition}.
 type BatchJobDefinition interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -55,6 +55,9 @@ type BatchJobDefinition interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NodeProperties() *string
+	SetNodeProperties(val *string)
+	NodePropertiesInput() *string
 	Parameters() *map[string]*string
 	SetParameters(val *map[string]*string)
 	ParametersInput() *map[string]*string
@@ -131,6 +134,7 @@ type BatchJobDefinition interface {
 	PutTimeout(value *BatchJobDefinitionTimeout)
 	ResetContainerProperties()
 	ResetId()
+	ResetNodeProperties()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -321,6 +325,26 @@ func (j *jsiiProxy_BatchJobDefinition) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchJobDefinition) NodeProperties() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodeProperties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchJobDefinition) NodePropertiesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nodePropertiesInput",
 		&returns,
 	)
 	return returns
@@ -557,7 +581,7 @@ func (j *jsiiProxy_BatchJobDefinition) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
 func NewBatchJobDefinition(scope constructs.Construct, id *string, config *BatchJobDefinitionConfig) BatchJobDefinition {
 	_init_.Initialize()
 
@@ -575,7 +599,7 @@ func NewBatchJobDefinition(scope constructs.Construct, id *string, config *Batch
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
 func NewBatchJobDefinition_Override(b BatchJobDefinition, scope constructs.Construct, id *string, config *BatchJobDefinitionConfig) {
 	_init_.Initialize()
 
@@ -664,6 +688,17 @@ func (j *jsiiProxy_BatchJobDefinition)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BatchJobDefinition)SetNodeProperties(val *string) {
+	if err := j.validateSetNodePropertiesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"nodeProperties",
 		val,
 	)
 }
@@ -1105,6 +1140,14 @@ func (b *jsiiProxy_BatchJobDefinition) ResetId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BatchJobDefinition) ResetNodeProperties() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetNodeProperties",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/rds_cluster_endpoint aws_rds_cluster_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/rds_cluster_endpoint aws_rds_cluster_endpoint}.
 type RdsClusterEndpoint interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -484,7 +484,7 @@ func (j *jsiiProxy_RdsClusterEndpoint) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/rds_cluster_endpoint aws_rds_cluster_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/rds_cluster_endpoint aws_rds_cluster_endpoint} Resource.
 func NewRdsClusterEndpoint(scope constructs.Construct, id *string, config *RdsClusterEndpointConfig) RdsClusterEndpoint {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewRdsClusterEndpoint(scope constructs.Construct, id *string, config *RdsCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/rds_cluster_endpoint aws_rds_cluster_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/rds_cluster_endpoint aws_rds_cluster_endpoint} Resource.
 func NewRdsClusterEndpoint_Override(r RdsClusterEndpoint, scope constructs.Construct, id *string, config *RdsClusterEndpointConfig) {
 	_init_.Initialize()
 

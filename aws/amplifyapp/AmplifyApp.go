@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/amplify_app aws_amplify_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/amplify_app aws_amplify_app}.
 type AmplifyApp interface {
 	cdktf.TerraformResource
 	AccessToken() *string
@@ -42,6 +42,9 @@ type AmplifyApp interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomHeaders() *string
+	SetCustomHeaders(val *string)
+	CustomHeadersInput() *string
 	CustomRule() AmplifyAppCustomRuleList
 	CustomRuleInput() interface{}
 	DefaultDomain() *string
@@ -162,6 +165,7 @@ type AmplifyApp interface {
 	ResetAutoBranchCreationPatterns()
 	ResetBasicAuthCredentials()
 	ResetBuildSpec()
+	ResetCustomHeaders()
 	ResetCustomRule()
 	ResetDescription()
 	ResetEnableAutoBranchCreation()
@@ -339,6 +343,26 @@ func (j *jsiiProxy_AmplifyApp) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AmplifyApp) CustomHeaders() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AmplifyApp) CustomHeadersInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customHeadersInput",
 		&returns,
 	)
 	return returns
@@ -785,7 +809,7 @@ func (j *jsiiProxy_AmplifyApp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/amplify_app aws_amplify_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/amplify_app aws_amplify_app} Resource.
 func NewAmplifyApp(scope constructs.Construct, id *string, config *AmplifyAppConfig) AmplifyApp {
 	_init_.Initialize()
 
@@ -803,7 +827,7 @@ func NewAmplifyApp(scope constructs.Construct, id *string, config *AmplifyAppCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/amplify_app aws_amplify_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/amplify_app aws_amplify_app} Resource.
 func NewAmplifyApp_Override(a AmplifyApp, scope constructs.Construct, id *string, config *AmplifyAppConfig) {
 	_init_.Initialize()
 
@@ -876,6 +900,17 @@ func (j *jsiiProxy_AmplifyApp)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AmplifyApp)SetCustomHeaders(val *string) {
+	if err := j.validateSetCustomHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customHeaders",
 		val,
 	)
 }
@@ -1456,6 +1491,14 @@ func (a *jsiiProxy_AmplifyApp) ResetBuildSpec() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetBuildSpec",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AmplifyApp) ResetCustomHeaders() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCustomHeaders",
 		nil, // no parameters
 	)
 }

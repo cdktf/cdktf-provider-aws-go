@@ -36,6 +36,8 @@ type IotTopicRuleKafkaOutputReference interface {
 	DestinationArnInput() *string
 	// Experimental.
 	Fqn() *string
+	Header() IotTopicRuleKafkaHeaderList
+	HeaderInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Key() *string
@@ -79,6 +81,8 @@ type IotTopicRuleKafkaOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutHeader(value interface{})
+	ResetHeader()
 	ResetKey()
 	ResetPartition()
 	// Produce the Token's value at resolution time.
@@ -171,6 +175,26 @@ func (j *jsiiProxy_IotTopicRuleKafkaOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotTopicRuleKafkaOutputReference) Header() IotTopicRuleKafkaHeaderList {
+	var returns IotTopicRuleKafkaHeaderList
+	_jsii_.Get(
+		j,
+		"header",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotTopicRuleKafkaOutputReference) HeaderInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"headerInput",
 		&returns,
 	)
 	return returns
@@ -588,6 +612,25 @@ func (i *jsiiProxy_IotTopicRuleKafkaOutputReference) InterpolationForAttribute(p
 	)
 
 	return returns
+}
+
+func (i *jsiiProxy_IotTopicRuleKafkaOutputReference) PutHeader(value interface{}) {
+	if err := i.validatePutHeaderParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putHeader",
+		[]interface{}{value},
+	)
+}
+
+func (i *jsiiProxy_IotTopicRuleKafkaOutputReference) ResetHeader() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetHeader",
+		nil, // no parameters
+	)
 }
 
 func (i *jsiiProxy_IotTopicRuleKafkaOutputReference) ResetKey() {

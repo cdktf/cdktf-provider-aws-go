@@ -47,6 +47,10 @@ func (i *jsiiProxy_IotTopicRuleKafkaOutputReference) validateInterpolationForAtt
 	return nil
 }
 
+func (i *jsiiProxy_IotTopicRuleKafkaOutputReference) validatePutHeaderParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotTopicRuleKafkaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

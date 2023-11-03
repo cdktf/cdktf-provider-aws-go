@@ -180,7 +180,6 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberProperty{JsiiProperty: "ipamPoolId", GoGetter: "IpamPoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "ipamScopeId", GoGetter: "IpamScopeId"},
 			_jsii_.MemberProperty{JsiiProperty: "ipamScopeType", GoGetter: "IpamScopeType"},
 			_jsii_.MemberProperty{JsiiProperty: "locale", GoGetter: "Locale"},

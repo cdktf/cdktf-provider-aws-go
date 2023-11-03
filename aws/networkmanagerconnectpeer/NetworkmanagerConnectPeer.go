@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/networkmanager_connect_peer aws_networkmanager_connect_peer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/networkmanager_connect_peer aws_networkmanager_connect_peer}.
 type NetworkmanagerConnectPeer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -79,6 +79,9 @@ type NetworkmanagerConnectPeer interface {
 	// Experimental.
 	RawOverrides() interface{}
 	State() *string
+	SubnetArn() *string
+	SetSubnetArn(val *string)
+	SubnetArnInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -131,9 +134,11 @@ type NetworkmanagerConnectPeer interface {
 	ResetBgpOptions()
 	ResetCoreNetworkAddress()
 	ResetId()
+	ResetInsideCidrBlocks()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSubnetArn()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -472,6 +477,26 @@ func (j *jsiiProxy_NetworkmanagerConnectPeer) State() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NetworkmanagerConnectPeer) SubnetArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkmanagerConnectPeer) SubnetArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkmanagerConnectPeer) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -563,7 +588,7 @@ func (j *jsiiProxy_NetworkmanagerConnectPeer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/networkmanager_connect_peer aws_networkmanager_connect_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/networkmanager_connect_peer aws_networkmanager_connect_peer} Resource.
 func NewNetworkmanagerConnectPeer(scope constructs.Construct, id *string, config *NetworkmanagerConnectPeerConfig) NetworkmanagerConnectPeer {
 	_init_.Initialize()
 
@@ -581,7 +606,7 @@ func NewNetworkmanagerConnectPeer(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/networkmanager_connect_peer aws_networkmanager_connect_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/networkmanager_connect_peer aws_networkmanager_connect_peer} Resource.
 func NewNetworkmanagerConnectPeer_Override(n NetworkmanagerConnectPeer, scope constructs.Construct, id *string, config *NetworkmanagerConnectPeerConfig) {
 	_init_.Initialize()
 
@@ -711,6 +736,17 @@ func (j *jsiiProxy_NetworkmanagerConnectPeer)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkmanagerConnectPeer)SetSubnetArn(val *string) {
+	if err := j.validateSetSubnetArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subnetArn",
 		val,
 	)
 }
@@ -1101,10 +1137,26 @@ func (n *jsiiProxy_NetworkmanagerConnectPeer) ResetId() {
 	)
 }
 
+func (n *jsiiProxy_NetworkmanagerConnectPeer) ResetInsideCidrBlocks() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetInsideCidrBlocks",
+		nil, // no parameters
+	)
+}
+
 func (n *jsiiProxy_NetworkmanagerConnectPeer) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerConnectPeer) ResetSubnetArn() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSubnetArn",
 		nil, // no parameters
 	)
 }

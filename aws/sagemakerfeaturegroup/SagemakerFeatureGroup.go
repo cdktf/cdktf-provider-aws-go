@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/sagemaker_feature_group aws_sagemaker_feature_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sagemaker_feature_group aws_sagemaker_feature_group}.
 type SagemakerFeatureGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -543,7 +543,7 @@ func (j *jsiiProxy_SagemakerFeatureGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/sagemaker_feature_group aws_sagemaker_feature_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sagemaker_feature_group aws_sagemaker_feature_group} Resource.
 func NewSagemakerFeatureGroup(scope constructs.Construct, id *string, config *SagemakerFeatureGroupConfig) SagemakerFeatureGroup {
 	_init_.Initialize()
 
@@ -561,7 +561,7 @@ func NewSagemakerFeatureGroup(scope constructs.Construct, id *string, config *Sa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/sagemaker_feature_group aws_sagemaker_feature_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sagemaker_feature_group aws_sagemaker_feature_group} Resource.
 func NewSagemakerFeatureGroup_Override(s SagemakerFeatureGroup, scope constructs.Construct, id *string, config *SagemakerFeatureGroupConfig) {
 	_init_.Initialize()
 

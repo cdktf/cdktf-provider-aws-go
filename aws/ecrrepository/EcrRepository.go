@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/ecr_repository aws_ecr_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ecr_repository aws_ecr_repository}.
 type EcrRepository interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -521,7 +521,7 @@ func (j *jsiiProxy_EcrRepository) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/ecr_repository aws_ecr_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ecr_repository aws_ecr_repository} Resource.
 func NewEcrRepository(scope constructs.Construct, id *string, config *EcrRepositoryConfig) EcrRepository {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewEcrRepository(scope constructs.Construct, id *string, config *EcrReposit
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/ecr_repository aws_ecr_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ecr_repository aws_ecr_repository} Resource.
 func NewEcrRepository_Override(e EcrRepository, scope constructs.Construct, id *string, config *EcrRepositoryConfig) {
 	_init_.Initialize()
 

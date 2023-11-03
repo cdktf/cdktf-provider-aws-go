@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/cloudformation_export aws_cloudformation_export}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/cloudformation_export aws_cloudformation_export}.
 type DataAwsCloudformationExport interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -306,7 +306,7 @@ func (j *jsiiProxy_DataAwsCloudformationExport) Value() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/cloudformation_export aws_cloudformation_export} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/cloudformation_export aws_cloudformation_export} Data Source.
 func NewDataAwsCloudformationExport(scope constructs.Construct, id *string, config *DataAwsCloudformationExportConfig) DataAwsCloudformationExport {
 	_init_.Initialize()
 
@@ -324,7 +324,7 @@ func NewDataAwsCloudformationExport(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/data-sources/cloudformation_export aws_cloudformation_export} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/data-sources/cloudformation_export aws_cloudformation_export} Data Source.
 func NewDataAwsCloudformationExport_Override(d DataAwsCloudformationExport, scope constructs.Construct, id *string, config *DataAwsCloudformationExportConfig) {
 	_init_.Initialize()
 

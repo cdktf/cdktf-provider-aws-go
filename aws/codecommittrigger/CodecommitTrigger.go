@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/codecommit_trigger aws_codecommit_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/codecommit_trigger aws_codecommit_trigger}.
 type CodecommitTrigger interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_CodecommitTrigger) TriggerInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/codecommit_trigger aws_codecommit_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/codecommit_trigger aws_codecommit_trigger} Resource.
 func NewCodecommitTrigger(scope constructs.Construct, id *string, config *CodecommitTriggerConfig) CodecommitTrigger {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewCodecommitTrigger(scope constructs.Construct, id *string, config *Codeco
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/codecommit_trigger aws_codecommit_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/codecommit_trigger aws_codecommit_trigger} Resource.
 func NewCodecommitTrigger_Override(c CodecommitTrigger, scope constructs.Construct, id *string, config *CodecommitTriggerConfig) {
 	_init_.Initialize()
 

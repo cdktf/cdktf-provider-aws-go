@@ -22,11 +22,11 @@ type CeCostAllocationTagConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/ce_cost_allocation_tag#status CeCostAllocationTag#status}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ce_cost_allocation_tag#status CeCostAllocationTag#status}.
 	Status *string `field:"required" json:"status" yaml:"status"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/ce_cost_allocation_tag#tag_key CeCostAllocationTag#tag_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ce_cost_allocation_tag#tag_key CeCostAllocationTag#tag_key}.
 	TagKey *string `field:"required" json:"tagKey" yaml:"tagKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/ce_cost_allocation_tag#id CeCostAllocationTag#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/ce_cost_allocation_tag#id CeCostAllocationTag#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

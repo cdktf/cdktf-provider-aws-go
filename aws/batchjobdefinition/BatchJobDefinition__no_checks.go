@@ -115,6 +115,10 @@ func (j *jsiiProxy_BatchJobDefinition) validateSetNameParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_BatchJobDefinition) validateSetNodePropertiesParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchJobDefinition) validateSetParametersParameters(val *map[string]*string) error {
 	return nil
 }

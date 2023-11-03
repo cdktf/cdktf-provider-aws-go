@@ -42,7 +42,6 @@ type DataAwsVpcIpamPoolsIpamPoolsOutputReference interface {
 	Id() *string
 	InternalValue() *DataAwsVpcIpamPoolsIpamPools
 	SetInternalValue(val *DataAwsVpcIpamPoolsIpamPools)
-	IpamPoolId() *string
 	IpamScopeId() *string
 	IpamScopeType() *string
 	Locale() *string
@@ -243,16 +242,6 @@ func (j *jsiiProxy_DataAwsVpcIpamPoolsIpamPoolsOutputReference) InternalValue() 
 	_jsii_.Get(
 		j,
 		"internalValue",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsVpcIpamPoolsIpamPoolsOutputReference) IpamPoolId() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"ipamPoolId",
 		&returns,
 	)
 	return returns

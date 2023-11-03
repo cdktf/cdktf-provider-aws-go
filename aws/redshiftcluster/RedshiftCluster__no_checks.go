@@ -203,11 +203,19 @@ func (j *jsiiProxy_RedshiftCluster) validateSetMaintenanceTrackNameParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftCluster) validateSetManageMasterPasswordParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftCluster) validateSetManualSnapshotRetentionPeriodParameters(val *float64) error {
 	return nil
 }
 
 func (j *jsiiProxy_RedshiftCluster) validateSetMasterPasswordParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedshiftCluster) validateSetMasterPasswordSecretKmsKeyIdParameters(val *string) error {
 	return nil
 }
 
@@ -244,6 +252,10 @@ func (j *jsiiProxy_RedshiftCluster) validateSetPubliclyAccessibleParameters(val 
 }
 
 func (j *jsiiProxy_RedshiftCluster) validateSetSkipFinalSnapshotParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedshiftCluster) validateSetSnapshotArnParameters(val *string) error {
 	return nil
 }
 

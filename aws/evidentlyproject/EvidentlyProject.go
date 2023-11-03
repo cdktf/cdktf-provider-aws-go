@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/evidently_project aws_evidently_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/evidently_project aws_evidently_project}.
 type EvidentlyProject interface {
 	cdktf.TerraformResource
 	ActiveExperimentCount() *float64
@@ -539,7 +539,7 @@ func (j *jsiiProxy_EvidentlyProject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/evidently_project aws_evidently_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/evidently_project aws_evidently_project} Resource.
 func NewEvidentlyProject(scope constructs.Construct, id *string, config *EvidentlyProjectConfig) EvidentlyProject {
 	_init_.Initialize()
 
@@ -557,7 +557,7 @@ func NewEvidentlyProject(scope constructs.Construct, id *string, config *Evident
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/evidently_project aws_evidently_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/evidently_project aws_evidently_project} Resource.
 func NewEvidentlyProject_Override(e EvidentlyProject, scope constructs.Construct, id *string, config *EvidentlyProjectConfig) {
 	_init_.Initialize()
 

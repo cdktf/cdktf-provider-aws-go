@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation}.
 type SecretsmanagerSecretRotation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -111,6 +111,7 @@ type SecretsmanagerSecretRotation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRotationLambdaArn()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -377,7 +378,7 @@ func (j *jsiiProxy_SecretsmanagerSecretRotation) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation} Resource.
 func NewSecretsmanagerSecretRotation(scope constructs.Construct, id *string, config *SecretsmanagerSecretRotationConfig) SecretsmanagerSecretRotation {
 	_init_.Initialize()
 
@@ -395,7 +396,7 @@ func NewSecretsmanagerSecretRotation(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation} Resource.
 func NewSecretsmanagerSecretRotation_Override(s SecretsmanagerSecretRotation, scope constructs.Construct, id *string, config *SecretsmanagerSecretRotationConfig) {
 	_init_.Initialize()
 
@@ -848,6 +849,14 @@ func (s *jsiiProxy_SecretsmanagerSecretRotation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsmanagerSecretRotation) ResetRotationLambdaArn() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRotationLambdaArn",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/mwaa_environment aws_mwaa_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/mwaa_environment aws_mwaa_environment}.
 type MwaaEnvironment interface {
 	cdktf.TerraformResource
 	AirflowConfigurationOptions() *map[string]*string
@@ -934,7 +934,7 @@ func (j *jsiiProxy_MwaaEnvironment) WeeklyMaintenanceWindowStartInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/mwaa_environment aws_mwaa_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/mwaa_environment aws_mwaa_environment} Resource.
 func NewMwaaEnvironment(scope constructs.Construct, id *string, config *MwaaEnvironmentConfig) MwaaEnvironment {
 	_init_.Initialize()
 
@@ -952,7 +952,7 @@ func NewMwaaEnvironment(scope constructs.Construct, id *string, config *MwaaEnvi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/mwaa_environment aws_mwaa_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/mwaa_environment aws_mwaa_environment} Resource.
 func NewMwaaEnvironment_Override(m MwaaEnvironment, scope constructs.Construct, id *string, config *MwaaEnvironmentConfig) {
 	_init_.Initialize()
 

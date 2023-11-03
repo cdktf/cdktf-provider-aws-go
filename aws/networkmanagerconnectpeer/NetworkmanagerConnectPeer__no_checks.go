@@ -127,6 +127,10 @@ func (j *jsiiProxy_NetworkmanagerConnectPeer) validateSetProvisionersParameters(
 	return nil
 }
 
+func (j *jsiiProxy_NetworkmanagerConnectPeer) validateSetSubnetArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NetworkmanagerConnectPeer) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

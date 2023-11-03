@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/redshift_cluster aws_redshift_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/redshift_cluster aws_redshift_cluster}.
 type RedshiftCluster interface {
 	cdktf.TerraformResource
 	AllowVersionUpgrade() interface{}
@@ -121,12 +121,19 @@ type RedshiftCluster interface {
 	MaintenanceTrackName() *string
 	SetMaintenanceTrackName(val *string)
 	MaintenanceTrackNameInput() *string
+	ManageMasterPassword() interface{}
+	SetManageMasterPassword(val interface{})
+	ManageMasterPasswordInput() interface{}
 	ManualSnapshotRetentionPeriod() *float64
 	SetManualSnapshotRetentionPeriod(val *float64)
 	ManualSnapshotRetentionPeriodInput() *float64
 	MasterPassword() *string
 	SetMasterPassword(val *string)
 	MasterPasswordInput() *string
+	MasterPasswordSecretArn() *string
+	MasterPasswordSecretKmsKeyId() *string
+	SetMasterPasswordSecretKmsKeyId(val *string)
+	MasterPasswordSecretKmsKeyIdInput() *string
 	MasterUsername() *string
 	SetMasterUsername(val *string)
 	MasterUsernameInput() *string
@@ -163,6 +170,9 @@ type RedshiftCluster interface {
 	SkipFinalSnapshot() interface{}
 	SetSkipFinalSnapshot(val interface{})
 	SkipFinalSnapshotInput() interface{}
+	SnapshotArn() *string
+	SetSnapshotArn(val *string)
+	SnapshotArnInput() *string
 	SnapshotClusterIdentifier() *string
 	SetSnapshotClusterIdentifier(val *string)
 	SnapshotClusterIdentifierInput() *string
@@ -248,8 +258,10 @@ type RedshiftCluster interface {
 	ResetKmsKeyId()
 	ResetLogging()
 	ResetMaintenanceTrackName()
+	ResetManageMasterPassword()
 	ResetManualSnapshotRetentionPeriod()
 	ResetMasterPassword()
+	ResetMasterPasswordSecretKmsKeyId()
 	ResetMasterUsername()
 	ResetNumberOfNodes()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -260,6 +272,7 @@ type RedshiftCluster interface {
 	ResetPreferredMaintenanceWindow()
 	ResetPubliclyAccessible()
 	ResetSkipFinalSnapshot()
+	ResetSnapshotArn()
 	ResetSnapshotClusterIdentifier()
 	ResetSnapshotCopy()
 	ResetSnapshotIdentifier()
@@ -912,6 +925,26 @@ func (j *jsiiProxy_RedshiftCluster) MaintenanceTrackNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RedshiftCluster) ManageMasterPassword() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageMasterPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) ManageMasterPasswordInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageMasterPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedshiftCluster) ManualSnapshotRetentionPeriod() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -947,6 +980,36 @@ func (j *jsiiProxy_RedshiftCluster) MasterPasswordInput() *string {
 	_jsii_.Get(
 		j,
 		"masterPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) MasterPasswordSecretArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"masterPasswordSecretArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) MasterPasswordSecretKmsKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"masterPasswordSecretKmsKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) MasterPasswordSecretKmsKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"masterPasswordSecretKmsKeyIdInput",
 		&returns,
 	)
 	return returns
@@ -1152,6 +1215,26 @@ func (j *jsiiProxy_RedshiftCluster) SkipFinalSnapshotInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_RedshiftCluster) SnapshotArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) SnapshotArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshotArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedshiftCluster) SnapshotClusterIdentifier() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1323,7 +1406,7 @@ func (j *jsiiProxy_RedshiftCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
 func NewRedshiftCluster(scope constructs.Construct, id *string, config *RedshiftClusterConfig) RedshiftCluster {
 	_init_.Initialize()
 
@@ -1341,7 +1424,7 @@ func NewRedshiftCluster(scope constructs.Construct, id *string, config *Redshift
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.23.1/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
 func NewRedshiftCluster_Override(r RedshiftCluster, scope constructs.Construct, id *string, config *RedshiftClusterConfig) {
 	_init_.Initialize()
 
@@ -1665,6 +1748,17 @@ func (j *jsiiProxy_RedshiftCluster)SetMaintenanceTrackName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_RedshiftCluster)SetManageMasterPassword(val interface{}) {
+	if err := j.validateSetManageMasterPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"manageMasterPassword",
+		val,
+	)
+}
+
 func (j *jsiiProxy_RedshiftCluster)SetManualSnapshotRetentionPeriod(val *float64) {
 	if err := j.validateSetManualSnapshotRetentionPeriodParameters(val); err != nil {
 		panic(err)
@@ -1683,6 +1777,17 @@ func (j *jsiiProxy_RedshiftCluster)SetMasterPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"masterPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetMasterPasswordSecretKmsKeyId(val *string) {
+	if err := j.validateSetMasterPasswordSecretKmsKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"masterPasswordSecretKmsKeyId",
 		val,
 	)
 }
@@ -1790,6 +1895,17 @@ func (j *jsiiProxy_RedshiftCluster)SetSkipFinalSnapshot(val interface{}) {
 	_jsii_.Set(
 		j,
 		"skipFinalSnapshot",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetSnapshotArn(val *string) {
+	if err := j.validateSetSnapshotArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"snapshotArn",
 		val,
 	)
 }
@@ -2392,6 +2508,14 @@ func (r *jsiiProxy_RedshiftCluster) ResetMaintenanceTrackName() {
 	)
 }
 
+func (r *jsiiProxy_RedshiftCluster) ResetManageMasterPassword() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetManageMasterPassword",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RedshiftCluster) ResetManualSnapshotRetentionPeriod() {
 	_jsii_.InvokeVoid(
 		r,
@@ -2404,6 +2528,14 @@ func (r *jsiiProxy_RedshiftCluster) ResetMasterPassword() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetMasterPassword",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetMasterPasswordSecretKmsKeyId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMasterPasswordSecretKmsKeyId",
 		nil, // no parameters
 	)
 }
@@ -2468,6 +2600,14 @@ func (r *jsiiProxy_RedshiftCluster) ResetSkipFinalSnapshot() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetSkipFinalSnapshot",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetSnapshotArn() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSnapshotArn",
 		nil, // no parameters
 	)
 }
