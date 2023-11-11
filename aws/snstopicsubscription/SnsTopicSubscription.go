@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sns_topic_subscription aws_sns_topic_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sns_topic_subscription aws_sns_topic_subscription}.
 type SnsTopicSubscription interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -89,6 +89,9 @@ type SnsTopicSubscription interface {
 	RedrivePolicy() *string
 	SetRedrivePolicy(val *string)
 	RedrivePolicyInput() *string
+	ReplayPolicy() *string
+	SetReplayPolicy(val *string)
+	ReplayPolicyInput() *string
 	SubscriptionRoleArn() *string
 	SetSubscriptionRoleArn(val *string)
 	SubscriptionRoleArnInput() *string
@@ -145,6 +148,7 @@ type SnsTopicSubscription interface {
 	ResetOverrideLogicalId()
 	ResetRawMessageDelivery()
 	ResetRedrivePolicy()
+	ResetReplayPolicy()
 	ResetSubscriptionRoleArn()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -531,6 +535,26 @@ func (j *jsiiProxy_SnsTopicSubscription) RedrivePolicyInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SnsTopicSubscription) ReplayPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replayPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnsTopicSubscription) ReplayPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"replayPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SnsTopicSubscription) SubscriptionRoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -602,7 +626,7 @@ func (j *jsiiProxy_SnsTopicSubscription) TopicArnInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sns_topic_subscription aws_sns_topic_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sns_topic_subscription aws_sns_topic_subscription} Resource.
 func NewSnsTopicSubscription(scope constructs.Construct, id *string, config *SnsTopicSubscriptionConfig) SnsTopicSubscription {
 	_init_.Initialize()
 
@@ -620,7 +644,7 @@ func NewSnsTopicSubscription(scope constructs.Construct, id *string, config *Sns
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sns_topic_subscription aws_sns_topic_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sns_topic_subscription aws_sns_topic_subscription} Resource.
 func NewSnsTopicSubscription_Override(s SnsTopicSubscription, scope constructs.Construct, id *string, config *SnsTopicSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -805,6 +829,17 @@ func (j *jsiiProxy_SnsTopicSubscription)SetRedrivePolicy(val *string) {
 	_jsii_.Set(
 		j,
 		"redrivePolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SnsTopicSubscription)SetReplayPolicy(val *string) {
+	if err := j.validateSetReplayPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replayPolicy",
 		val,
 	)
 }
@@ -1217,6 +1252,14 @@ func (s *jsiiProxy_SnsTopicSubscription) ResetRedrivePolicy() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetRedrivePolicy",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SnsTopicSubscription) ResetReplayPolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetReplayPolicy",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/placement_group aws_placement_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/placement_group aws_placement_group}.
 type PlacementGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -461,7 +461,7 @@ func (j *jsiiProxy_PlacementGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/placement_group aws_placement_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/placement_group aws_placement_group} Resource.
 func NewPlacementGroup(scope constructs.Construct, id *string, config *PlacementGroupConfig) PlacementGroup {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewPlacementGroup(scope constructs.Construct, id *string, config *Placement
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/placement_group aws_placement_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/placement_group aws_placement_group} Resource.
 func NewPlacementGroup_Override(p PlacementGroup, scope constructs.Construct, id *string, config *PlacementGroupConfig) {
 	_init_.Initialize()
 

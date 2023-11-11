@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dms_endpoint aws_dms_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dms_endpoint aws_dms_endpoint}.
 type DmsEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -81,6 +81,9 @@ type DmsEndpoint interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	PauseReplicationTasks() interface{}
+	SetPauseReplicationTasks(val interface{})
+	PauseReplicationTasksInput() interface{}
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
@@ -186,6 +189,7 @@ type DmsEndpoint interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPassword()
+	ResetPauseReplicationTasks()
 	ResetPort()
 	ResetRedisSettings()
 	ResetRedshiftSettings()
@@ -584,6 +588,26 @@ func (j *jsiiProxy_DmsEndpoint) PasswordInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DmsEndpoint) PauseReplicationTasks() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pauseReplicationTasks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) PauseReplicationTasksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pauseReplicationTasksInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DmsEndpoint) Port() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -905,7 +929,7 @@ func (j *jsiiProxy_DmsEndpoint) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
 func NewDmsEndpoint(scope constructs.Construct, id *string, config *DmsEndpointConfig) DmsEndpoint {
 	_init_.Initialize()
 
@@ -923,7 +947,7 @@ func NewDmsEndpoint(scope constructs.Construct, id *string, config *DmsEndpointC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
 func NewDmsEndpoint_Override(d DmsEndpoint, scope constructs.Construct, id *string, config *DmsEndpointConfig) {
 	_init_.Initialize()
 
@@ -1078,6 +1102,17 @@ func (j *jsiiProxy_DmsEndpoint)SetPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"password",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpoint)SetPauseReplicationTasks(val interface{}) {
+	if err := j.validateSetPauseReplicationTasksParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pauseReplicationTasks",
 		val,
 	)
 }
@@ -1690,6 +1725,14 @@ func (d *jsiiProxy_DmsEndpoint) ResetPassword() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetPauseReplicationTasks() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPauseReplicationTasks",
 		nil, // no parameters
 	)
 }

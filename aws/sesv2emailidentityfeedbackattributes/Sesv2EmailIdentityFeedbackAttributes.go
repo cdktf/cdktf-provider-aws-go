@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sesv2_email_identity_feedback_attributes aws_sesv2_email_identity_feedback_attributes}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sesv2_email_identity_feedback_attributes aws_sesv2_email_identity_feedback_attributes}.
 type Sesv2EmailIdentityFeedbackAttributes interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -344,7 +344,7 @@ func (j *jsiiProxy_Sesv2EmailIdentityFeedbackAttributes) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sesv2_email_identity_feedback_attributes aws_sesv2_email_identity_feedback_attributes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sesv2_email_identity_feedback_attributes aws_sesv2_email_identity_feedback_attributes} Resource.
 func NewSesv2EmailIdentityFeedbackAttributes(scope constructs.Construct, id *string, config *Sesv2EmailIdentityFeedbackAttributesConfig) Sesv2EmailIdentityFeedbackAttributes {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewSesv2EmailIdentityFeedbackAttributes(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sesv2_email_identity_feedback_attributes aws_sesv2_email_identity_feedback_attributes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sesv2_email_identity_feedback_attributes aws_sesv2_email_identity_feedback_attributes} Resource.
 func NewSesv2EmailIdentityFeedbackAttributes_Override(s Sesv2EmailIdentityFeedbackAttributes, scope constructs.Construct, id *string, config *Sesv2EmailIdentityFeedbackAttributesConfig) {
 	_init_.Initialize()
 

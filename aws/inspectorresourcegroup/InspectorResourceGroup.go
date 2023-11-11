@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/inspector_resource_group aws_inspector_resource_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/inspector_resource_group aws_inspector_resource_group}.
 type InspectorResourceGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -331,7 +331,7 @@ func (j *jsiiProxy_InspectorResourceGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/inspector_resource_group aws_inspector_resource_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/inspector_resource_group aws_inspector_resource_group} Resource.
 func NewInspectorResourceGroup(scope constructs.Construct, id *string, config *InspectorResourceGroupConfig) InspectorResourceGroup {
 	_init_.Initialize()
 
@@ -349,7 +349,7 @@ func NewInspectorResourceGroup(scope constructs.Construct, id *string, config *I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/inspector_resource_group aws_inspector_resource_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/inspector_resource_group aws_inspector_resource_group} Resource.
 func NewInspectorResourceGroup_Override(i InspectorResourceGroup, scope constructs.Construct, id *string, config *InspectorResourceGroupConfig) {
 	_init_.Initialize()
 

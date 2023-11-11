@@ -28,10 +28,16 @@ type SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference interface 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DirectDeploySettings() SagemakerUserProfileUserSettingsCanvasAppSettingsDirectDeploySettingsOutputReference
+	DirectDeploySettingsInput() *SagemakerUserProfileUserSettingsCanvasAppSettingsDirectDeploySettings
 	// Experimental.
 	Fqn() *string
+	IdentityProviderOauthSettings() SagemakerUserProfileUserSettingsCanvasAppSettingsIdentityProviderOauthSettingsList
+	IdentityProviderOauthSettingsInput() interface{}
 	InternalValue() *SagemakerUserProfileUserSettingsCanvasAppSettings
 	SetInternalValue(val *SagemakerUserProfileUserSettingsCanvasAppSettings)
+	KendraSettings() SagemakerUserProfileUserSettingsCanvasAppSettingsKendraSettingsOutputReference
+	KendraSettingsInput() *SagemakerUserProfileUserSettingsCanvasAppSettingsKendraSettings
 	ModelRegisterSettings() SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettingsOutputReference
 	ModelRegisterSettingsInput() *SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings
 	// Experimental.
@@ -70,9 +76,15 @@ type SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDirectDeploySettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsDirectDeploySettings)
+	PutIdentityProviderOauthSettings(value interface{})
+	PutKendraSettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsKendraSettings)
 	PutModelRegisterSettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings)
 	PutTimeSeriesForecastingSettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings)
 	PutWorkspaceSettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettings)
+	ResetDirectDeploySettings()
+	ResetIdentityProviderOauthSettings()
+	ResetKendraSettings()
 	ResetModelRegisterSettings()
 	ResetTimeSeriesForecastingSettings()
 	ResetWorkspaceSettings()
@@ -121,6 +133,26 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) DirectDeploySettings() SagemakerUserProfileUserSettingsCanvasAppSettingsDirectDeploySettingsOutputReference {
+	var returns SagemakerUserProfileUserSettingsCanvasAppSettingsDirectDeploySettingsOutputReference
+	_jsii_.Get(
+		j,
+		"directDeploySettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) DirectDeploySettingsInput() *SagemakerUserProfileUserSettingsCanvasAppSettingsDirectDeploySettings {
+	var returns *SagemakerUserProfileUserSettingsCanvasAppSettingsDirectDeploySettings
+	_jsii_.Get(
+		j,
+		"directDeploySettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -131,11 +163,51 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) IdentityProviderOauthSettings() SagemakerUserProfileUserSettingsCanvasAppSettingsIdentityProviderOauthSettingsList {
+	var returns SagemakerUserProfileUserSettingsCanvasAppSettingsIdentityProviderOauthSettingsList
+	_jsii_.Get(
+		j,
+		"identityProviderOauthSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) IdentityProviderOauthSettingsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"identityProviderOauthSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) InternalValue() *SagemakerUserProfileUserSettingsCanvasAppSettings {
 	var returns *SagemakerUserProfileUserSettingsCanvasAppSettings
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) KendraSettings() SagemakerUserProfileUserSettingsCanvasAppSettingsKendraSettingsOutputReference {
+	var returns SagemakerUserProfileUserSettingsCanvasAppSettingsKendraSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"kendraSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) KendraSettingsInput() *SagemakerUserProfileUserSettingsCanvasAppSettingsKendraSettings {
+	var returns *SagemakerUserProfileUserSettingsCanvasAppSettingsKendraSettings
+	_jsii_.Get(
+		j,
+		"kendraSettingsInput",
 		&returns,
 	)
 	return returns
@@ -490,6 +562,39 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputRefere
 	return returns
 }
 
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) PutDirectDeploySettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsDirectDeploySettings) {
+	if err := s.validatePutDirectDeploySettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putDirectDeploySettings",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) PutIdentityProviderOauthSettings(value interface{}) {
+	if err := s.validatePutIdentityProviderOauthSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putIdentityProviderOauthSettings",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) PutKendraSettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsKendraSettings) {
+	if err := s.validatePutKendraSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putKendraSettings",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) PutModelRegisterSettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings) {
 	if err := s.validatePutModelRegisterSettingsParameters(value); err != nil {
 		panic(err)
@@ -520,6 +625,30 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputRefere
 		s,
 		"putWorkspaceSettings",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) ResetDirectDeploySettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDirectDeploySettings",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) ResetIdentityProviderOauthSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIdentityProviderOauthSettings",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) ResetKendraSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetKendraSettings",
+		nil, // no parameters
 	)
 }
 

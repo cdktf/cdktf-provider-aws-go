@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dynamodb_tag aws_dynamodb_tag}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dynamodb_tag aws_dynamodb_tag}.
 type DynamodbTag interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -366,7 +366,7 @@ func (j *jsiiProxy_DynamodbTag) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dynamodb_tag aws_dynamodb_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dynamodb_tag aws_dynamodb_tag} Resource.
 func NewDynamodbTag(scope constructs.Construct, id *string, config *DynamodbTagConfig) DynamodbTag {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewDynamodbTag(scope constructs.Construct, id *string, config *DynamodbTagC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/dynamodb_tag aws_dynamodb_tag} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/dynamodb_tag aws_dynamodb_tag} Resource.
 func NewDynamodbTag_Override(d DynamodbTag, scope constructs.Construct, id *string, config *DynamodbTagConfig) {
 	_init_.Initialize()
 

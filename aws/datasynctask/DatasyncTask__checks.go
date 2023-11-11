@@ -235,6 +235,17 @@ func (d *jsiiProxy_DatasyncTask) validatePutScheduleParameters(value *DatasyncTa
 	return nil
 }
 
+func (d *jsiiProxy_DatasyncTask) validatePutTaskReportConfigParameters(value *DatasyncTaskTaskReportConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncTask) validatePutTimeoutsParameters(value *DatasyncTaskTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

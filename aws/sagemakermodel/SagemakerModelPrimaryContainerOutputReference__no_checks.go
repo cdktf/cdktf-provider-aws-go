@@ -51,6 +51,10 @@ func (s *jsiiProxy_SagemakerModelPrimaryContainerOutputReference) validatePutIma
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerModelPrimaryContainerOutputReference) validatePutModelDataSourceParameters(value *SagemakerModelPrimaryContainerModelDataSource) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerModelPrimaryContainerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/networkmanager_site_to_site_vpn_attachment aws_networkmanager_site_to_site_vpn_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkmanager_site_to_site_vpn_attachment aws_networkmanager_site_to_site_vpn_attachment}.
 type NetworkmanagerSiteToSiteVpnAttachment interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -514,7 +514,7 @@ func (j *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachment) VpnConnectionArnInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/networkmanager_site_to_site_vpn_attachment aws_networkmanager_site_to_site_vpn_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkmanager_site_to_site_vpn_attachment aws_networkmanager_site_to_site_vpn_attachment} Resource.
 func NewNetworkmanagerSiteToSiteVpnAttachment(scope constructs.Construct, id *string, config *NetworkmanagerSiteToSiteVpnAttachmentConfig) NetworkmanagerSiteToSiteVpnAttachment {
 	_init_.Initialize()
 
@@ -532,7 +532,7 @@ func NewNetworkmanagerSiteToSiteVpnAttachment(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/networkmanager_site_to_site_vpn_attachment aws_networkmanager_site_to_site_vpn_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkmanager_site_to_site_vpn_attachment aws_networkmanager_site_to_site_vpn_attachment} Resource.
 func NewNetworkmanagerSiteToSiteVpnAttachment_Override(n NetworkmanagerSiteToSiteVpnAttachment, scope constructs.Construct, id *string, config *NetworkmanagerSiteToSiteVpnAttachmentConfig) {
 	_init_.Initialize()
 

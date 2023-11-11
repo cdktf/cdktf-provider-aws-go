@@ -51,6 +51,10 @@ func (s *jsiiProxy_SagemakerFeatureGroupOnlineStoreConfigOutputReference) valida
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerFeatureGroupOnlineStoreConfigOutputReference) validatePutTtlDurationParameters(value *SagemakerFeatureGroupOnlineStoreConfigTtlDuration) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerFeatureGroupOnlineStoreConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -68,6 +72,10 @@ func (j *jsiiProxy_SagemakerFeatureGroupOnlineStoreConfigOutputReference) valida
 }
 
 func (j *jsiiProxy_SagemakerFeatureGroupOnlineStoreConfigOutputReference) validateSetInternalValueParameters(val *SagemakerFeatureGroupOnlineStoreConfig) error {
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerFeatureGroupOnlineStoreConfigOutputReference) validateSetStorageTypeParameters(val *string) error {
 	return nil
 }
 

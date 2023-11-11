@@ -38,6 +38,12 @@ type AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSal
 	Fqn() *string
 	InternalValue() *AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce
 	SetInternalValue(val *AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforce)
+	JwtToken() *string
+	SetJwtToken(val *string)
+	JwtTokenInput() *string
+	Oauth2GrantType() *string
+	SetOauth2GrantType(val *string)
+	Oauth2GrantTypeInput() *string
 	OauthRequest() AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequestOutputReference
 	OauthRequestInput() *AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest
 	RefreshToken() *string
@@ -78,6 +84,8 @@ type AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSal
 	PutOauthRequest(value *AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOauthRequest)
 	ResetAccessToken()
 	ResetClientCredentialsArn()
+	ResetJwtToken()
+	ResetOauth2GrantType()
 	ResetOauthRequest()
 	ResetRefreshToken()
 	// Produce the Token's value at resolution time.
@@ -180,6 +188,46 @@ func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfile
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference) JwtToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jwtToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference) JwtTokenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jwtTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference) Oauth2GrantType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oauth2GrantType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference) Oauth2GrantTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"oauth2GrantTypeInput",
 		&returns,
 	)
 	return returns
@@ -324,6 +372,28 @@ func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfile
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference)SetJwtToken(val *string) {
+	if err := j.validateSetJwtTokenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jwtToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference)SetOauth2GrantType(val *string) {
+	if err := j.validateSetOauth2GrantTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"oauth2GrantType",
 		val,
 	)
 }
@@ -570,6 +640,22 @@ func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfile
 	_jsii_.InvokeVoid(
 		a,
 		"resetClientCredentialsArn",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference) ResetJwtToken() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetJwtToken",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppflowConnectorProfileConnectorProfileConfigConnectorProfileCredentialsSalesforceOutputReference) ResetOauth2GrantType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetOauth2GrantType",
 		nil, // no parameters
 	)
 }

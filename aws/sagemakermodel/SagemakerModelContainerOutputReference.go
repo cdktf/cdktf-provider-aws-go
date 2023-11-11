@@ -46,6 +46,8 @@ type SagemakerModelContainerOutputReference interface {
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
+	ModelDataSource() SagemakerModelContainerModelDataSourceOutputReference
+	ModelDataSourceInput() *SagemakerModelContainerModelDataSource
 	ModelDataUrl() *string
 	SetModelDataUrl(val *string)
 	ModelDataUrlInput() *string
@@ -85,11 +87,13 @@ type SagemakerModelContainerOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutImageConfig(value *SagemakerModelContainerImageConfig)
+	PutModelDataSource(value *SagemakerModelContainerModelDataSource)
 	ResetContainerHostname()
 	ResetEnvironment()
 	ResetImage()
 	ResetImageConfig()
 	ResetMode()
+	ResetModelDataSource()
 	ResetModelDataUrl()
 	ResetModelPackageName()
 	// Produce the Token's value at resolution time.
@@ -252,6 +256,26 @@ func (j *jsiiProxy_SagemakerModelContainerOutputReference) ModeInput() *string {
 	_jsii_.Get(
 		j,
 		"modeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerModelContainerOutputReference) ModelDataSource() SagemakerModelContainerModelDataSourceOutputReference {
+	var returns SagemakerModelContainerModelDataSourceOutputReference
+	_jsii_.Get(
+		j,
+		"modelDataSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerModelContainerOutputReference) ModelDataSourceInput() *SagemakerModelContainerModelDataSource {
+	var returns *SagemakerModelContainerModelDataSource
+	_jsii_.Get(
+		j,
+		"modelDataSourceInput",
 		&returns,
 	)
 	return returns
@@ -663,6 +687,17 @@ func (s *jsiiProxy_SagemakerModelContainerOutputReference) PutImageConfig(value 
 	)
 }
 
+func (s *jsiiProxy_SagemakerModelContainerOutputReference) PutModelDataSource(value *SagemakerModelContainerModelDataSource) {
+	if err := s.validatePutModelDataSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putModelDataSource",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerModelContainerOutputReference) ResetContainerHostname() {
 	_jsii_.InvokeVoid(
 		s,
@@ -699,6 +734,14 @@ func (s *jsiiProxy_SagemakerModelContainerOutputReference) ResetMode() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetMode",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerModelContainerOutputReference) ResetModelDataSource() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetModelDataSource",
 		nil, // no parameters
 	)
 }

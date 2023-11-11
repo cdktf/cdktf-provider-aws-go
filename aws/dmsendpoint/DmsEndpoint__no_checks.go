@@ -163,6 +163,10 @@ func (j *jsiiProxy_DmsEndpoint) validateSetPasswordParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_DmsEndpoint) validateSetPauseReplicationTasksParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsEndpoint) validateSetPortParameters(val *float64) error {
 	return nil
 }

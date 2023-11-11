@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/inspector2_organization_configuration aws_inspector2_organization_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/inspector2_organization_configuration aws_inspector2_organization_configuration}.
 type Inspector2OrganizationConfiguration interface {
 	cdktf.TerraformResource
 	AutoEnable() Inspector2OrganizationConfigurationAutoEnableOutputReference
@@ -355,7 +355,7 @@ func (j *jsiiProxy_Inspector2OrganizationConfiguration) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/inspector2_organization_configuration aws_inspector2_organization_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/inspector2_organization_configuration aws_inspector2_organization_configuration} Resource.
 func NewInspector2OrganizationConfiguration(scope constructs.Construct, id *string, config *Inspector2OrganizationConfigurationConfig) Inspector2OrganizationConfiguration {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewInspector2OrganizationConfiguration(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/inspector2_organization_configuration aws_inspector2_organization_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/inspector2_organization_configuration aws_inspector2_organization_configuration} Resource.
 func NewInspector2OrganizationConfiguration_Override(i Inspector2OrganizationConfiguration, scope constructs.Construct, id *string, config *Inspector2OrganizationConfigurationConfig) {
 	_init_.Initialize()
 

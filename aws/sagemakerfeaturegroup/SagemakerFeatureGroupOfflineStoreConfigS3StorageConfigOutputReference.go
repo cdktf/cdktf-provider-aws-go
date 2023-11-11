@@ -35,6 +35,9 @@ type SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference inter
 	KmsKeyId() *string
 	SetKmsKeyId(val *string)
 	KmsKeyIdInput() *string
+	ResolvedOutputS3Uri() *string
+	SetResolvedOutputS3Uri(val *string)
+	ResolvedOutputS3UriInput() *string
 	S3Uri() *string
 	SetS3Uri(val *string)
 	S3UriInput() *string
@@ -71,6 +74,7 @@ type SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference inter
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetKmsKeyId()
+	ResetResolvedOutputS3Uri()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -151,6 +155,26 @@ func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputR
 	_jsii_.Get(
 		j,
 		"kmsKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference) ResolvedOutputS3Uri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resolvedOutputS3Uri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference) ResolvedOutputS3UriInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resolvedOutputS3UriInput",
 		&returns,
 	)
 	return returns
@@ -264,6 +288,17 @@ func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputR
 	_jsii_.Set(
 		j,
 		"kmsKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference)SetResolvedOutputS3Uri(val *string) {
+	if err := j.validateSetResolvedOutputS3UriParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resolvedOutputS3Uri",
 		val,
 	)
 }
@@ -491,6 +526,14 @@ func (s *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputR
 	_jsii_.InvokeVoid(
 		s,
 		"resetKmsKeyId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerFeatureGroupOfflineStoreConfigS3StorageConfigOutputReference) ResetResolvedOutputS3Uri() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetResolvedOutputS3Uri",
 		nil, // no parameters
 	)
 }

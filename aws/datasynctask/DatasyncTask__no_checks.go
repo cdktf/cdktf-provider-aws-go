@@ -83,6 +83,10 @@ func (d *jsiiProxy_DatasyncTask) validatePutScheduleParameters(value *DatasyncTa
 	return nil
 }
 
+func (d *jsiiProxy_DatasyncTask) validatePutTaskReportConfigParameters(value *DatasyncTaskTaskReportConfig) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncTask) validatePutTimeoutsParameters(value *DatasyncTaskTimeouts) error {
 	return nil
 }

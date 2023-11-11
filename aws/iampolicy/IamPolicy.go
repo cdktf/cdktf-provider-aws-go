@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/iam_policy aws_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_policy aws_iam_policy}.
 type IamPolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -486,7 +486,7 @@ func (j *jsiiProxy_IamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/iam_policy aws_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_policy aws_iam_policy} Resource.
 func NewIamPolicy(scope constructs.Construct, id *string, config *IamPolicyConfig) IamPolicy {
 	_init_.Initialize()
 
@@ -504,7 +504,7 @@ func NewIamPolicy(scope constructs.Construct, id *string, config *IamPolicyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/iam_policy aws_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iam_policy aws_iam_policy} Resource.
 func NewIamPolicy_Override(i IamPolicy, scope constructs.Construct, id *string, config *IamPolicyConfig) {
 	_init_.Initialize()
 

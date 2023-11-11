@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/datasync_task aws_datasync_task}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/datasync_task aws_datasync_task}.
 type DatasyncTask interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -85,6 +85,8 @@ type DatasyncTask interface {
 	SetTagsAll(val *map[string]*string)
 	TagsAllInput() *map[string]*string
 	TagsInput() *map[string]*string
+	TaskReportConfig() DatasyncTaskTaskReportConfigOutputReference
+	TaskReportConfigInput() *DatasyncTaskTaskReportConfig
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -130,6 +132,7 @@ type DatasyncTask interface {
 	PutIncludes(value *DatasyncTaskIncludes)
 	PutOptions(value *DatasyncTaskOptions)
 	PutSchedule(value *DatasyncTaskSchedule)
+	PutTaskReportConfig(value *DatasyncTaskTaskReportConfig)
 	PutTimeouts(value *DatasyncTaskTimeouts)
 	ResetCloudwatchLogGroupArn()
 	ResetExcludes()
@@ -143,6 +146,7 @@ type DatasyncTask interface {
 	ResetSchedule()
 	ResetTags()
 	ResetTagsAll()
+	ResetTaskReportConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -519,6 +523,26 @@ func (j *jsiiProxy_DatasyncTask) TagsInput() *map[string]*string {
 	return returns
 }
 
+func (j *jsiiProxy_DatasyncTask) TaskReportConfig() DatasyncTaskTaskReportConfigOutputReference {
+	var returns DatasyncTaskTaskReportConfigOutputReference
+	_jsii_.Get(
+		j,
+		"taskReportConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatasyncTask) TaskReportConfigInput() *DatasyncTaskTaskReportConfig {
+	var returns *DatasyncTaskTaskReportConfig
+	_jsii_.Get(
+		j,
+		"taskReportConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatasyncTask) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -570,7 +594,7 @@ func (j *jsiiProxy_DatasyncTask) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/datasync_task aws_datasync_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/datasync_task aws_datasync_task} Resource.
 func NewDatasyncTask(scope constructs.Construct, id *string, config *DatasyncTaskConfig) DatasyncTask {
 	_init_.Initialize()
 
@@ -588,7 +612,7 @@ func NewDatasyncTask(scope constructs.Construct, id *string, config *DatasyncTas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/datasync_task aws_datasync_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/datasync_task aws_datasync_task} Resource.
 func NewDatasyncTask_Override(d DatasyncTask, scope constructs.Construct, id *string, config *DatasyncTaskConfig) {
 	_init_.Initialize()
 
@@ -1106,6 +1130,17 @@ func (d *jsiiProxy_DatasyncTask) PutSchedule(value *DatasyncTaskSchedule) {
 	)
 }
 
+func (d *jsiiProxy_DatasyncTask) PutTaskReportConfig(value *DatasyncTaskTaskReportConfig) {
+	if err := d.validatePutTaskReportConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putTaskReportConfig",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DatasyncTask) PutTimeouts(value *DatasyncTaskTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1193,6 +1228,14 @@ func (d *jsiiProxy_DatasyncTask) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatasyncTask) ResetTaskReportConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTaskReportConfig",
 		nil, // no parameters
 	)
 }

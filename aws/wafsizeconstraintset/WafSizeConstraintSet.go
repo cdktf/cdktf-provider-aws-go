@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/waf_size_constraint_set aws_waf_size_constraint_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/waf_size_constraint_set aws_waf_size_constraint_set}.
 type WafSizeConstraintSet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -355,7 +355,7 @@ func (j *jsiiProxy_WafSizeConstraintSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/waf_size_constraint_set aws_waf_size_constraint_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/waf_size_constraint_set aws_waf_size_constraint_set} Resource.
 func NewWafSizeConstraintSet(scope constructs.Construct, id *string, config *WafSizeConstraintSetConfig) WafSizeConstraintSet {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewWafSizeConstraintSet(scope constructs.Construct, id *string, config *Waf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/waf_size_constraint_set aws_waf_size_constraint_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/waf_size_constraint_set aws_waf_size_constraint_set} Resource.
 func NewWafSizeConstraintSet_Override(w WafSizeConstraintSet, scope constructs.Construct, id *string, config *WafSizeConstraintSetConfig) {
 	_init_.Initialize()
 

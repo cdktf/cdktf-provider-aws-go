@@ -47,6 +47,18 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputRefe
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference) validatePutDirectDeploySettingsParameters(value *SagemakerDomainDefaultUserSettingsCanvasAppSettingsDirectDeploySettings) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference) validatePutIdentityProviderOauthSettingsParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference) validatePutKendraSettingsParameters(value *SagemakerDomainDefaultUserSettingsCanvasAppSettingsKendraSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsCanvasAppSettingsOutputReference) validatePutModelRegisterSettingsParameters(value *SagemakerDomainDefaultUserSettingsCanvasAppSettingsModelRegisterSettings) error {
 	return nil
 }

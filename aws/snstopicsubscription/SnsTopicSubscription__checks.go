@@ -479,6 +479,14 @@ func (j *jsiiProxy_SnsTopicSubscription) validateSetRedrivePolicyParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_SnsTopicSubscription) validateSetReplayPolicyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SnsTopicSubscription) validateSetSubscriptionRoleArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

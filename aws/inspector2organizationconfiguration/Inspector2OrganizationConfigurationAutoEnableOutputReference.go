@@ -40,6 +40,9 @@ type Inspector2OrganizationConfigurationAutoEnableOutputReference interface {
 	SetInternalValue(val *Inspector2OrganizationConfigurationAutoEnable)
 	Lambda() interface{}
 	SetLambda(val interface{})
+	LambdaCode() interface{}
+	SetLambdaCode(val interface{})
+	LambdaCodeInput() interface{}
 	LambdaInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
@@ -74,6 +77,7 @@ type Inspector2OrganizationConfigurationAutoEnableOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetLambda()
+	ResetLambdaCode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -184,6 +188,26 @@ func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference)
 	_jsii_.Get(
 		j,
 		"lambda",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) LambdaCode() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lambdaCode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) LambdaCodeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"lambdaCodeInput",
 		&returns,
 	)
 	return returns
@@ -309,6 +333,17 @@ func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference)
 	_jsii_.Set(
 		j,
 		"lambda",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference)SetLambdaCode(val interface{}) {
+	if err := j.validateSetLambdaCodeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lambdaCode",
 		val,
 	)
 }
@@ -525,6 +560,14 @@ func (i *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference)
 	_jsii_.InvokeVoid(
 		i,
 		"resetLambda",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_Inspector2OrganizationConfigurationAutoEnableOutputReference) ResetLambdaCode() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetLambdaCode",
 		nil, // no parameters
 	)
 }

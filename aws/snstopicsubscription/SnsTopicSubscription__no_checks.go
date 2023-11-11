@@ -139,6 +139,10 @@ func (j *jsiiProxy_SnsTopicSubscription) validateSetRedrivePolicyParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_SnsTopicSubscription) validateSetReplayPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SnsTopicSubscription) validateSetSubscriptionRoleArnParameters(val *string) error {
 	return nil
 }

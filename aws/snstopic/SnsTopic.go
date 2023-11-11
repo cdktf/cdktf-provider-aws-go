@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sns_topic aws_sns_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sns_topic aws_sns_topic}.
 type SnsTopic interface {
 	cdktf.TerraformResource
 	ApplicationFailureFeedbackRoleArn() *string
@@ -24,7 +24,11 @@ type SnsTopic interface {
 	ApplicationSuccessFeedbackSampleRate() *float64
 	SetApplicationSuccessFeedbackSampleRate(val *float64)
 	ApplicationSuccessFeedbackSampleRateInput() *float64
+	ArchivePolicy() *string
+	SetArchivePolicy(val *string)
+	ArchivePolicyInput() *string
 	Arn() *string
+	BeginningArchiveTime() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -183,6 +187,7 @@ type SnsTopic interface {
 	ResetApplicationFailureFeedbackRoleArn()
 	ResetApplicationSuccessFeedbackRoleArn()
 	ResetApplicationSuccessFeedbackSampleRate()
+	ResetArchivePolicy()
 	ResetContentBasedDeduplication()
 	ResetDeliveryPolicy()
 	ResetDisplayName()
@@ -286,11 +291,41 @@ func (j *jsiiProxy_SnsTopic) ApplicationSuccessFeedbackSampleRateInput() *float6
 	return returns
 }
 
+func (j *jsiiProxy_SnsTopic) ArchivePolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"archivePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnsTopic) ArchivePolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"archivePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SnsTopic) Arn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SnsTopic) BeginningArchiveTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"beginningArchiveTime",
 		&returns,
 	)
 	return returns
@@ -967,7 +1002,7 @@ func (j *jsiiProxy_SnsTopic) TracingConfigInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sns_topic aws_sns_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sns_topic aws_sns_topic} Resource.
 func NewSnsTopic(scope constructs.Construct, id *string, config *SnsTopicConfig) SnsTopic {
 	_init_.Initialize()
 
@@ -985,7 +1020,7 @@ func NewSnsTopic(scope constructs.Construct, id *string, config *SnsTopicConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/sns_topic aws_sns_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sns_topic aws_sns_topic} Resource.
 func NewSnsTopic_Override(s SnsTopic, scope constructs.Construct, id *string, config *SnsTopicConfig) {
 	_init_.Initialize()
 
@@ -1025,6 +1060,17 @@ func (j *jsiiProxy_SnsTopic)SetApplicationSuccessFeedbackSampleRate(val *float64
 	_jsii_.Set(
 		j,
 		"applicationSuccessFeedbackSampleRate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SnsTopic)SetArchivePolicy(val *string) {
+	if err := j.validateSetArchivePolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"archivePolicy",
 		val,
 	)
 }
@@ -1710,6 +1756,14 @@ func (s *jsiiProxy_SnsTopic) ResetApplicationSuccessFeedbackSampleRate() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetApplicationSuccessFeedbackSampleRate",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SnsTopic) ResetArchivePolicy() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetArchivePolicy",
 		nil, // no parameters
 	)
 }
