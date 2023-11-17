@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/service_discovery_service aws_service_discovery_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/service_discovery_service aws_service_discovery_service}.
 type DataAwsServiceDiscoveryService interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -410,7 +410,7 @@ func (j *jsiiProxy_DataAwsServiceDiscoveryService) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/service_discovery_service aws_service_discovery_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/service_discovery_service aws_service_discovery_service} Data Source.
 func NewDataAwsServiceDiscoveryService(scope constructs.Construct, id *string, config *DataAwsServiceDiscoveryServiceConfig) DataAwsServiceDiscoveryService {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewDataAwsServiceDiscoveryService(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/service_discovery_service aws_service_discovery_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/service_discovery_service aws_service_discovery_service} Data Source.
 func NewDataAwsServiceDiscoveryService_Override(d DataAwsServiceDiscoveryService, scope constructs.Construct, id *string, config *DataAwsServiceDiscoveryServiceConfig) {
 	_init_.Initialize()
 

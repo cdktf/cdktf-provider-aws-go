@@ -5,9 +5,9 @@ package batchcomputeenvironment
 
 
 type BatchComputeEnvironmentComputeResourcesEc2Configuration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/batch_compute_environment#image_id_override BatchComputeEnvironment#image_id_override}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/batch_compute_environment#image_id_override BatchComputeEnvironment#image_id_override}.
 	ImageIdOverride *string `field:"optional" json:"imageIdOverride" yaml:"imageIdOverride"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/batch_compute_environment#image_type BatchComputeEnvironment#image_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/batch_compute_environment#image_type BatchComputeEnvironment#image_type}.
 	ImageType *string `field:"optional" json:"imageType" yaml:"imageType"`
 }
 

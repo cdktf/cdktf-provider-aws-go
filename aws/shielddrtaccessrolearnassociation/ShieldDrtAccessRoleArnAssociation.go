@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/shield_drt_access_role_arn_association aws_shield_drt_access_role_arn_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/shield_drt_access_role_arn_association aws_shield_drt_access_role_arn_association}.
 type ShieldDrtAccessRoleArnAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -331,7 +331,7 @@ func (j *jsiiProxy_ShieldDrtAccessRoleArnAssociation) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/shield_drt_access_role_arn_association aws_shield_drt_access_role_arn_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/shield_drt_access_role_arn_association aws_shield_drt_access_role_arn_association} Resource.
 func NewShieldDrtAccessRoleArnAssociation(scope constructs.Construct, id *string, config *ShieldDrtAccessRoleArnAssociationConfig) ShieldDrtAccessRoleArnAssociation {
 	_init_.Initialize()
 
@@ -349,7 +349,7 @@ func NewShieldDrtAccessRoleArnAssociation(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/shield_drt_access_role_arn_association aws_shield_drt_access_role_arn_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/shield_drt_access_role_arn_association aws_shield_drt_access_role_arn_association} Resource.
 func NewShieldDrtAccessRoleArnAssociation_Override(s ShieldDrtAccessRoleArnAssociation, scope constructs.Construct, id *string, config *ShieldDrtAccessRoleArnAssociationConfig) {
 	_init_.Initialize()
 

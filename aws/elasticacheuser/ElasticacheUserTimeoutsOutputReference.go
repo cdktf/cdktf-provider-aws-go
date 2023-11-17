@@ -38,6 +38,9 @@ type ElasticacheUserTimeoutsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Read() *string
+	SetRead(val *string)
+	ReadInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -75,6 +78,7 @@ type ElasticacheUserTimeoutsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
+	ResetRead()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -176,6 +180,26 @@ func (j *jsiiProxy_ElasticacheUserTimeoutsOutputReference) InternalValue() inter
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheUserTimeoutsOutputReference) Read() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"read",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheUserTimeoutsOutputReference) ReadInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"readInput",
 		&returns,
 	)
 	return returns
@@ -300,6 +324,17 @@ func (j *jsiiProxy_ElasticacheUserTimeoutsOutputReference)SetInternalValue(val i
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElasticacheUserTimeoutsOutputReference)SetRead(val *string) {
+	if err := j.validateSetReadParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"read",
 		val,
 	)
 }
@@ -535,6 +570,14 @@ func (e *jsiiProxy_ElasticacheUserTimeoutsOutputReference) ResetDelete() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetDelete",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElasticacheUserTimeoutsOutputReference) ResetRead() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetRead",
 		nil, // no parameters
 	)
 }

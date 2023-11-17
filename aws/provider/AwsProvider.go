@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs aws}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs aws}.
 type AwsProvider interface {
 	cdktf.TerraformProvider
 	AccessKey() *string
@@ -59,6 +59,9 @@ type AwsProvider interface {
 	HttpProxy() *string
 	SetHttpProxy(val *string)
 	HttpProxyInput() *string
+	HttpsProxy() *string
+	SetHttpsProxy(val *string)
+	HttpsProxyInput() *string
 	IgnoreTags() interface{}
 	SetIgnoreTags(val interface{})
 	IgnoreTagsInput() interface{}
@@ -72,6 +75,9 @@ type AwsProvider interface {
 	MetaAttributes() *map[string]interface{}
 	// The tree node.
 	Node() constructs.Node
+	NoProxy() *string
+	SetNoProxy(val *string)
+	NoProxyInput() *string
 	Profile() *string
 	SetProfile(val *string)
 	ProfileInput() *string
@@ -145,9 +151,11 @@ type AwsProvider interface {
 	ResetEndpoints()
 	ResetForbiddenAccountIds()
 	ResetHttpProxy()
+	ResetHttpsProxy()
 	ResetIgnoreTags()
 	ResetInsecure()
 	ResetMaxRetries()
+	ResetNoProxy()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -462,6 +470,26 @@ func (j *jsiiProxy_AwsProvider) HttpProxyInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AwsProvider) HttpsProxy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpsProxy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsProvider) HttpsProxyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"httpsProxyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AwsProvider) IgnoreTags() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -537,6 +565,26 @@ func (j *jsiiProxy_AwsProvider) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsProvider) NoProxy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"noProxy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsProvider) NoProxyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"noProxyInput",
 		&returns,
 	)
 	return returns
@@ -903,7 +951,7 @@ func (j *jsiiProxy_AwsProvider) UseFipsEndpointInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs aws} Resource.
 func NewAwsProvider(scope constructs.Construct, id *string, config *AwsProviderConfig) AwsProvider {
 	_init_.Initialize()
 
@@ -921,7 +969,7 @@ func NewAwsProvider(scope constructs.Construct, id *string, config *AwsProviderC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs aws} Resource.
 func NewAwsProvider_Override(a AwsProvider, scope constructs.Construct, id *string, config *AwsProviderConfig) {
 	_init_.Initialize()
 
@@ -1040,6 +1088,14 @@ func (j *jsiiProxy_AwsProvider)SetHttpProxy(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AwsProvider)SetHttpsProxy(val *string) {
+	_jsii_.Set(
+		j,
+		"httpsProxy",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AwsProvider)SetIgnoreTags(val interface{}) {
 	if err := j.validateSetIgnoreTagsParameters(val); err != nil {
 		panic(err)
@@ -1066,6 +1122,14 @@ func (j *jsiiProxy_AwsProvider)SetMaxRetries(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxRetries",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsProvider)SetNoProxy(val *string) {
+	_jsii_.Set(
+		j,
+		"noProxy",
 		val,
 	)
 }
@@ -1437,6 +1501,14 @@ func (a *jsiiProxy_AwsProvider) ResetHttpProxy() {
 	)
 }
 
+func (a *jsiiProxy_AwsProvider) ResetHttpsProxy() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetHttpsProxy",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AwsProvider) ResetIgnoreTags() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1457,6 +1529,14 @@ func (a *jsiiProxy_AwsProvider) ResetMaxRetries() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetMaxRetries",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsProvider) ResetNoProxy() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetNoProxy",
 		nil, // no parameters
 	)
 }

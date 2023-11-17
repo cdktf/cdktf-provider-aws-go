@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkmanager_transit_gateway_route_table_attachment aws_networkmanager_transit_gateway_route_table_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkmanager_transit_gateway_route_table_attachment aws_networkmanager_transit_gateway_route_table_attachment}.
 type NetworkmanagerTransitGatewayRouteTableAttachment interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -525,7 +525,7 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachment) TransitGate
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkmanager_transit_gateway_route_table_attachment aws_networkmanager_transit_gateway_route_table_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkmanager_transit_gateway_route_table_attachment aws_networkmanager_transit_gateway_route_table_attachment} Resource.
 func NewNetworkmanagerTransitGatewayRouteTableAttachment(scope constructs.Construct, id *string, config *NetworkmanagerTransitGatewayRouteTableAttachmentConfig) NetworkmanagerTransitGatewayRouteTableAttachment {
 	_init_.Initialize()
 
@@ -543,7 +543,7 @@ func NewNetworkmanagerTransitGatewayRouteTableAttachment(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/networkmanager_transit_gateway_route_table_attachment aws_networkmanager_transit_gateway_route_table_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/networkmanager_transit_gateway_route_table_attachment aws_networkmanager_transit_gateway_route_table_attachment} Resource.
 func NewNetworkmanagerTransitGatewayRouteTableAttachment_Override(n NetworkmanagerTransitGatewayRouteTableAttachment, scope constructs.Construct, id *string, config *NetworkmanagerTransitGatewayRouteTableAttachmentConfig) {
 	_init_.Initialize()
 

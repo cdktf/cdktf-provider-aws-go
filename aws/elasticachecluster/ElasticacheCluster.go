@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_cluster aws_elasticache_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_cluster aws_elasticache_cluster}.
 type ElasticacheCluster interface {
 	cdktf.TerraformResource
 	ApplyImmediately() interface{}
@@ -1071,7 +1071,7 @@ func (j *jsiiProxy_ElasticacheCluster) TransitEncryptionEnabledInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_cluster aws_elasticache_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_cluster aws_elasticache_cluster} Resource.
 func NewElasticacheCluster(scope constructs.Construct, id *string, config *ElasticacheClusterConfig) ElasticacheCluster {
 	_init_.Initialize()
 
@@ -1089,7 +1089,7 @@ func NewElasticacheCluster(scope constructs.Construct, id *string, config *Elast
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/elasticache_cluster aws_elasticache_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_cluster aws_elasticache_cluster} Resource.
 func NewElasticacheCluster_Override(e ElasticacheCluster, scope constructs.Construct, id *string, config *ElasticacheClusterConfig) {
 	_init_.Initialize()
 

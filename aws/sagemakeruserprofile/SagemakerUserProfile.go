@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sagemaker_user_profile aws_sagemaker_user_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sagemaker_user_profile aws_sagemaker_user_profile}.
 type SagemakerUserProfile interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -485,7 +485,7 @@ func (j *jsiiProxy_SagemakerUserProfile) UserSettingsInput() *SagemakerUserProfi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sagemaker_user_profile aws_sagemaker_user_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sagemaker_user_profile aws_sagemaker_user_profile} Resource.
 func NewSagemakerUserProfile(scope constructs.Construct, id *string, config *SagemakerUserProfileConfig) SagemakerUserProfile {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewSagemakerUserProfile(scope constructs.Construct, id *string, config *Sag
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/sagemaker_user_profile aws_sagemaker_user_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/sagemaker_user_profile aws_sagemaker_user_profile} Resource.
 func NewSagemakerUserProfile_Override(s SagemakerUserProfile, scope constructs.Construct, id *string, config *SagemakerUserProfileConfig) {
 	_init_.Initialize()
 

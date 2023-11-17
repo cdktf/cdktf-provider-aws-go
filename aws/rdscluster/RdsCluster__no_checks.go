@@ -175,6 +175,10 @@ func (j *jsiiProxy_RdsCluster) validateSetDbSystemIdParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_RdsCluster) validateSetDeleteAutomatedBackupsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsCluster) validateSetDeletionProtectionParameters(val interface{}) error {
 	return nil
 }

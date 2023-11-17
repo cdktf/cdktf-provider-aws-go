@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/athena_named_query aws_athena_named_query}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/athena_named_query aws_athena_named_query}.
 type AthenaNamedQuery interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_AthenaNamedQuery) WorkgroupInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/athena_named_query aws_athena_named_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/athena_named_query aws_athena_named_query} Resource.
 func NewAthenaNamedQuery(scope constructs.Construct, id *string, config *AthenaNamedQueryConfig) AthenaNamedQuery {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewAthenaNamedQuery(scope constructs.Construct, id *string, config *AthenaN
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/athena_named_query aws_athena_named_query} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/athena_named_query aws_athena_named_query} Resource.
 func NewAthenaNamedQuery_Override(a AthenaNamedQuery, scope constructs.Construct, id *string, config *AthenaNamedQueryConfig) {
 	_init_.Initialize()
 

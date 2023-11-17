@@ -19,6 +19,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
+			_jsii_.MemberProperty{JsiiProperty: "caCertificateId", GoGetter: "CaCertificateId"},
 			_jsii_.MemberProperty{JsiiProperty: "caPem", GoGetter: "CaPem"},
 			_jsii_.MemberProperty{JsiiProperty: "caPemInput", GoGetter: "CaPemInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},

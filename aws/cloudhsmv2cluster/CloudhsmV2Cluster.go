@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/cloudhsm_v2_cluster aws_cloudhsm_v2_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/cloudhsm_v2_cluster aws_cloudhsm_v2_cluster}.
 type CloudhsmV2Cluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -494,7 +494,7 @@ func (j *jsiiProxy_CloudhsmV2Cluster) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/cloudhsm_v2_cluster aws_cloudhsm_v2_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/cloudhsm_v2_cluster aws_cloudhsm_v2_cluster} Resource.
 func NewCloudhsmV2Cluster(scope constructs.Construct, id *string, config *CloudhsmV2ClusterConfig) CloudhsmV2Cluster {
 	_init_.Initialize()
 
@@ -512,7 +512,7 @@ func NewCloudhsmV2Cluster(scope constructs.Construct, id *string, config *Cloudh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/cloudhsm_v2_cluster aws_cloudhsm_v2_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/cloudhsm_v2_cluster aws_cloudhsm_v2_cluster} Resource.
 func NewCloudhsmV2Cluster_Override(c CloudhsmV2Cluster, scope constructs.Construct, id *string, config *CloudhsmV2ClusterConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/autoscaling_group aws_autoscaling_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/autoscaling_group aws_autoscaling_group}.
 type AutoscalingGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -84,6 +84,8 @@ type AutoscalingGroup interface {
 	IgnoreFailedScalingActivitiesInput() interface{}
 	InitialLifecycleHook() AutoscalingGroupInitialLifecycleHookList
 	InitialLifecycleHookInput() interface{}
+	InstanceMaintenancePolicy() AutoscalingGroupInstanceMaintenancePolicyOutputReference
+	InstanceMaintenancePolicyInput() *AutoscalingGroupInstanceMaintenancePolicy
 	InstanceRefresh() AutoscalingGroupInstanceRefreshOutputReference
 	InstanceRefreshInput() *AutoscalingGroupInstanceRefresh
 	LaunchConfiguration() *string
@@ -210,6 +212,7 @@ type AutoscalingGroup interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutInitialLifecycleHook(value interface{})
+	PutInstanceMaintenancePolicy(value *AutoscalingGroupInstanceMaintenancePolicy)
 	PutInstanceRefresh(value *AutoscalingGroupInstanceRefresh)
 	PutLaunchTemplate(value *AutoscalingGroupLaunchTemplate)
 	PutMixedInstancesPolicy(value *AutoscalingGroupMixedInstancesPolicy)
@@ -232,6 +235,7 @@ type AutoscalingGroup interface {
 	ResetId()
 	ResetIgnoreFailedScalingActivities()
 	ResetInitialLifecycleHook()
+	ResetInstanceMaintenancePolicy()
 	ResetInstanceRefresh()
 	ResetLaunchConfiguration()
 	ResetLaunchTemplate()
@@ -658,6 +662,26 @@ func (j *jsiiProxy_AutoscalingGroup) InitialLifecycleHookInput() interface{} {
 	_jsii_.Get(
 		j,
 		"initialLifecycleHookInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroup) InstanceMaintenancePolicy() AutoscalingGroupInstanceMaintenancePolicyOutputReference {
+	var returns AutoscalingGroupInstanceMaintenancePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"instanceMaintenancePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroup) InstanceMaintenancePolicyInput() *AutoscalingGroupInstanceMaintenancePolicy {
+	var returns *AutoscalingGroupInstanceMaintenancePolicy
+	_jsii_.Get(
+		j,
+		"instanceMaintenancePolicyInput",
 		&returns,
 	)
 	return returns
@@ -1264,7 +1288,7 @@ func (j *jsiiProxy_AutoscalingGroup) WarmPoolSize() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
 func NewAutoscalingGroup(scope constructs.Construct, id *string, config *AutoscalingGroupConfig) AutoscalingGroup {
 	_init_.Initialize()
 
@@ -1282,7 +1306,7 @@ func NewAutoscalingGroup(scope constructs.Construct, id *string, config *Autosca
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/autoscaling_group aws_autoscaling_group} Resource.
 func NewAutoscalingGroup_Override(a AutoscalingGroup, scope constructs.Construct, id *string, config *AutoscalingGroupConfig) {
 	_init_.Initialize()
 
@@ -2042,6 +2066,17 @@ func (a *jsiiProxy_AutoscalingGroup) PutInitialLifecycleHook(value interface{}) 
 	)
 }
 
+func (a *jsiiProxy_AutoscalingGroup) PutInstanceMaintenancePolicy(value *AutoscalingGroupInstanceMaintenancePolicy) {
+	if err := a.validatePutInstanceMaintenancePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putInstanceMaintenancePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AutoscalingGroup) PutInstanceRefresh(value *AutoscalingGroupInstanceRefresh) {
 	if err := a.validatePutInstanceRefreshParameters(value); err != nil {
 		panic(err)
@@ -2235,6 +2270,14 @@ func (a *jsiiProxy_AutoscalingGroup) ResetInitialLifecycleHook() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetInitialLifecycleHook",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutoscalingGroup) ResetInstanceMaintenancePolicy() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetInstanceMaintenancePolicy",
 		nil, // no parameters
 	)
 }

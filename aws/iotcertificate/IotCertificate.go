@@ -12,13 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_certificate aws_iot_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iot_certificate aws_iot_certificate}.
 type IotCertificate interface {
 	cdktf.TerraformResource
 	Active() interface{}
 	SetActive(val interface{})
 	ActiveInput() interface{}
 	Arn() *string
+	CaCertificateId() *string
 	CaPem() *string
 	SetCaPem(val *string)
 	CaPemInput() *string
@@ -159,6 +160,16 @@ func (j *jsiiProxy_IotCertificate) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotCertificate) CaCertificateId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"caCertificateId",
 		&returns,
 	)
 	return returns
@@ -425,7 +436,7 @@ func (j *jsiiProxy_IotCertificate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_certificate aws_iot_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iot_certificate aws_iot_certificate} Resource.
 func NewIotCertificate(scope constructs.Construct, id *string, config *IotCertificateConfig) IotCertificate {
 	_init_.Initialize()
 
@@ -443,7 +454,7 @@ func NewIotCertificate(scope constructs.Construct, id *string, config *IotCertif
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_certificate aws_iot_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iot_certificate aws_iot_certificate} Resource.
 func NewIotCertificate_Override(i IotCertificate, scope constructs.Construct, id *string, config *IotCertificateConfig) {
 	_init_.Initialize()
 

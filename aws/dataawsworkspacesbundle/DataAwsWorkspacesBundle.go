@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/workspaces_bundle aws_workspaces_bundle}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/workspaces_bundle aws_workspaces_bundle}.
 type DataAwsWorkspacesBundle interface {
 	cdktf.TerraformDataSource
 	BundleId() *string
@@ -377,7 +377,7 @@ func (j *jsiiProxy_DataAwsWorkspacesBundle) UserStorage() DataAwsWorkspacesBundl
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/workspaces_bundle aws_workspaces_bundle} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/workspaces_bundle aws_workspaces_bundle} Data Source.
 func NewDataAwsWorkspacesBundle(scope constructs.Construct, id *string, config *DataAwsWorkspacesBundleConfig) DataAwsWorkspacesBundle {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewDataAwsWorkspacesBundle(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/workspaces_bundle aws_workspaces_bundle} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/workspaces_bundle aws_workspaces_bundle} Data Source.
 func NewDataAwsWorkspacesBundle_Override(d DataAwsWorkspacesBundle, scope constructs.Construct, id *string, config *DataAwsWorkspacesBundleConfig) {
 	_init_.Initialize()
 

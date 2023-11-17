@@ -71,6 +71,10 @@ func (j *jsiiProxy_ElasticacheUserTimeoutsOutputReference) validateSetInternalVa
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheUserTimeoutsOutputReference) validateSetReadParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheUserTimeoutsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

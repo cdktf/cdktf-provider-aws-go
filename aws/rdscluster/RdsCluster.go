@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/rds_cluster aws_rds_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/rds_cluster aws_rds_cluster}.
 type RdsCluster interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -77,6 +77,9 @@ type RdsCluster interface {
 	DbSystemId() *string
 	SetDbSystemId(val *string)
 	DbSystemIdInput() *string
+	DeleteAutomatedBackups() interface{}
+	SetDeleteAutomatedBackups(val interface{})
+	DeleteAutomatedBackupsInput() interface{}
 	DeletionProtection() interface{}
 	SetDeletionProtection(val interface{})
 	DeletionProtectionInput() interface{}
@@ -273,6 +276,7 @@ type RdsCluster interface {
 	ResetDbInstanceParameterGroupName()
 	ResetDbSubnetGroupName()
 	ResetDbSystemId()
+	ResetDeleteAutomatedBackups()
 	ResetDeletionProtection()
 	ResetEnabledCloudwatchLogsExports()
 	ResetEnableGlobalWriteForwarding()
@@ -701,6 +705,26 @@ func (j *jsiiProxy_RdsCluster) DbSystemIdInput() *string {
 	_jsii_.Get(
 		j,
 		"dbSystemIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) DeleteAutomatedBackups() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteAutomatedBackups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) DeleteAutomatedBackupsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteAutomatedBackupsInput",
 		&returns,
 	)
 	return returns
@@ -1597,7 +1621,7 @@ func (j *jsiiProxy_RdsCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
 func NewRdsCluster(scope constructs.Construct, id *string, config *RdsClusterConfig) RdsCluster {
 	_init_.Initialize()
 
@@ -1615,7 +1639,7 @@ func NewRdsCluster(scope constructs.Construct, id *string, config *RdsClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
 func NewRdsCluster_Override(r RdsCluster, scope constructs.Construct, id *string, config *RdsClusterConfig) {
 	_init_.Initialize()
 
@@ -1820,6 +1844,17 @@ func (j *jsiiProxy_RdsCluster)SetDbSystemId(val *string) {
 	_jsii_.Set(
 		j,
 		"dbSystemId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsCluster)SetDeleteAutomatedBackups(val interface{}) {
+	if err := j.validateSetDeleteAutomatedBackupsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteAutomatedBackups",
 		val,
 	)
 }
@@ -2708,6 +2743,14 @@ func (r *jsiiProxy_RdsCluster) ResetDbSystemId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetDbSystemId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsCluster) ResetDeleteAutomatedBackups() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDeleteAutomatedBackups",
 		nil, // no parameters
 	)
 }

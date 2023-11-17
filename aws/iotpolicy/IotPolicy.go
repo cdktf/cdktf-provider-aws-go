@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_policy aws_iot_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iot_policy aws_iot_policy}.
 type IotPolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -72,6 +72,8 @@ type IotPolicy interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() IotPolicyTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -105,10 +107,12 @@ type IotPolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *IotPolicyTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -364,8 +368,28 @@ func (j *jsiiProxy_IotPolicy) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_IotPolicy) Timeouts() IotPolicyTimeoutsOutputReference {
+	var returns IotPolicyTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_policy aws_iot_policy} Resource.
+func (j *jsiiProxy_IotPolicy) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iot_policy aws_iot_policy} Resource.
 func NewIotPolicy(scope constructs.Construct, id *string, config *IotPolicyConfig) IotPolicy {
 	_init_.Initialize()
 
@@ -383,7 +407,7 @@ func NewIotPolicy(scope constructs.Construct, id *string, config *IotPolicyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/iot_policy aws_iot_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/iot_policy aws_iot_policy} Resource.
 func NewIotPolicy_Override(i IotPolicy, scope constructs.Construct, id *string, config *IotPolicyConfig) {
 	_init_.Initialize()
 
@@ -813,6 +837,17 @@ func (i *jsiiProxy_IotPolicy) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (i *jsiiProxy_IotPolicy) PutTimeouts(value *IotPolicyTimeouts) {
+	if err := i.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IotPolicy) ResetId() {
 	_jsii_.InvokeVoid(
 		i,
@@ -825,6 +860,14 @@ func (i *jsiiProxy_IotPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IotPolicy) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/ebs_default_kms_key aws_ebs_default_kms_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/ebs_default_kms_key aws_ebs_default_kms_key}.
 type DataAwsEbsDefaultKmsKey interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -296,7 +296,7 @@ func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/ebs_default_kms_key aws_ebs_default_kms_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/ebs_default_kms_key aws_ebs_default_kms_key} Data Source.
 func NewDataAwsEbsDefaultKmsKey(scope constructs.Construct, id *string, config *DataAwsEbsDefaultKmsKeyConfig) DataAwsEbsDefaultKmsKey {
 	_init_.Initialize()
 
@@ -314,7 +314,7 @@ func NewDataAwsEbsDefaultKmsKey(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/ebs_default_kms_key aws_ebs_default_kms_key} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/ebs_default_kms_key aws_ebs_default_kms_key} Data Source.
 func NewDataAwsEbsDefaultKmsKey_Override(d DataAwsEbsDefaultKmsKey, scope constructs.Construct, id *string, config *DataAwsEbsDefaultKmsKeyConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/subnets aws_subnets}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/subnets aws_subnets}.
 type DataAwsSubnets interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -344,7 +344,7 @@ func (j *jsiiProxy_DataAwsSubnets) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/subnets aws_subnets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/subnets aws_subnets} Data Source.
 func NewDataAwsSubnets(scope constructs.Construct, id *string, config *DataAwsSubnetsConfig) DataAwsSubnets {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewDataAwsSubnets(scope constructs.Construct, id *string, config *DataAwsSu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/data-sources/subnets aws_subnets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/data-sources/subnets aws_subnets} Data Source.
 func NewDataAwsSubnets_Override(d DataAwsSubnets, scope constructs.Construct, id *string, config *DataAwsSubnetsConfig) {
 	_init_.Initialize()
 

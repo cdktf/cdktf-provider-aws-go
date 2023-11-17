@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc_ipam aws_vpc_ipam}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc_ipam aws_vpc_ipam}.
 type VpcIpam interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -506,7 +506,7 @@ func (j *jsiiProxy_VpcIpam) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc_ipam aws_vpc_ipam} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc_ipam aws_vpc_ipam} Resource.
 func NewVpcIpam(scope constructs.Construct, id *string, config *VpcIpamConfig) VpcIpam {
 	_init_.Initialize()
 
@@ -524,7 +524,7 @@ func NewVpcIpam(scope constructs.Construct, id *string, config *VpcIpamConfig) V
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/vpc_ipam aws_vpc_ipam} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/vpc_ipam aws_vpc_ipam} Resource.
 func NewVpcIpam_Override(v VpcIpam, scope constructs.Construct, id *string, config *VpcIpamConfig) {
 	_init_.Initialize()
 

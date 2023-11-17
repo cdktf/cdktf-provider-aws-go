@@ -67,6 +67,10 @@ func (i *jsiiProxy_IotPolicy) validateOverrideLogicalIdParameters(newLogicalId *
 	return nil
 }
 
+func (i *jsiiProxy_IotPolicy) validatePutTimeoutsParameters(value *IotPolicyTimeouts) error {
+	return nil
+}
+
 func validateIotPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

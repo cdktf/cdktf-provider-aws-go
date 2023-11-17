@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/s3_object aws_s3_object}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_object aws_s3_object}.
 type S3Object interface {
 	cdktf.TerraformResource
 	Acl() *string
@@ -998,7 +998,7 @@ func (j *jsiiProxy_S3Object) WebsiteRedirectInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/s3_object aws_s3_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_object aws_s3_object} Resource.
 func NewS3Object(scope constructs.Construct, id *string, config *S3ObjectConfig) S3Object {
 	_init_.Initialize()
 
@@ -1016,7 +1016,7 @@ func NewS3Object(scope constructs.Construct, id *string, config *S3ObjectConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/s3_object aws_s3_object} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_object aws_s3_object} Resource.
 func NewS3Object_Override(s S3Object, scope constructs.Construct, id *string, config *S3ObjectConfig) {
 	_init_.Initialize()
 

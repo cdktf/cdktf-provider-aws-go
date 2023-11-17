@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/devicefarm_test_grid_project aws_devicefarm_test_grid_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/devicefarm_test_grid_project aws_devicefarm_test_grid_project}.
 type DevicefarmTestGridProject interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_DevicefarmTestGridProject) VpcConfigInput() *DevicefarmTestGr
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/devicefarm_test_grid_project aws_devicefarm_test_grid_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/devicefarm_test_grid_project aws_devicefarm_test_grid_project} Resource.
 func NewDevicefarmTestGridProject(scope constructs.Construct, id *string, config *DevicefarmTestGridProjectConfig) DevicefarmTestGridProject {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewDevicefarmTestGridProject(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.25.0/docs/resources/devicefarm_test_grid_project aws_devicefarm_test_grid_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/devicefarm_test_grid_project aws_devicefarm_test_grid_project} Resource.
 func NewDevicefarmTestGridProject_Override(d DevicefarmTestGridProject, scope constructs.Construct, id *string, config *DevicefarmTestGridProjectConfig) {
 	_init_.Initialize()
 
