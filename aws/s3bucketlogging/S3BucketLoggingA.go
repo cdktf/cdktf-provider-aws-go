@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging}.
 type S3BucketLoggingA interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -69,6 +69,8 @@ type S3BucketLoggingA interface {
 	TargetBucketInput() *string
 	TargetGrant() S3BucketLoggingTargetGrantList
 	TargetGrantInput() interface{}
+	TargetObjectKeyFormat() S3BucketLoggingTargetObjectKeyFormatOutputReference
+	TargetObjectKeyFormatInput() *S3BucketLoggingTargetObjectKeyFormat
 	TargetPrefix() *string
 	SetTargetPrefix(val *string)
 	TargetPrefixInput() *string
@@ -112,12 +114,14 @@ type S3BucketLoggingA interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTargetGrant(value interface{})
+	PutTargetObjectKeyFormat(value *S3BucketLoggingTargetObjectKeyFormat)
 	ResetExpectedBucketOwner()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetTargetGrant()
+	ResetTargetObjectKeyFormat()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -363,6 +367,26 @@ func (j *jsiiProxy_S3BucketLoggingA) TargetGrantInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_S3BucketLoggingA) TargetObjectKeyFormat() S3BucketLoggingTargetObjectKeyFormatOutputReference {
+	var returns S3BucketLoggingTargetObjectKeyFormatOutputReference
+	_jsii_.Get(
+		j,
+		"targetObjectKeyFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketLoggingA) TargetObjectKeyFormatInput() *S3BucketLoggingTargetObjectKeyFormat {
+	var returns *S3BucketLoggingTargetObjectKeyFormat
+	_jsii_.Get(
+		j,
+		"targetObjectKeyFormatInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3BucketLoggingA) TargetPrefix() *string {
 	var returns *string
 	_jsii_.Get(
@@ -414,7 +438,7 @@ func (j *jsiiProxy_S3BucketLoggingA) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging} Resource.
 func NewS3BucketLoggingA(scope constructs.Construct, id *string, config *S3BucketLoggingAConfig) S3BucketLoggingA {
 	_init_.Initialize()
 
@@ -432,7 +456,7 @@ func NewS3BucketLoggingA(scope constructs.Construct, id *string, config *S3Bucke
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_logging aws_s3_bucket_logging} Resource.
 func NewS3BucketLoggingA_Override(s S3BucketLoggingA, scope constructs.Construct, id *string, config *S3BucketLoggingAConfig) {
 	_init_.Initialize()
 
@@ -895,6 +919,17 @@ func (s *jsiiProxy_S3BucketLoggingA) PutTargetGrant(value interface{}) {
 	)
 }
 
+func (s *jsiiProxy_S3BucketLoggingA) PutTargetObjectKeyFormat(value *S3BucketLoggingTargetObjectKeyFormat) {
+	if err := s.validatePutTargetObjectKeyFormatParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTargetObjectKeyFormat",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_S3BucketLoggingA) ResetExpectedBucketOwner() {
 	_jsii_.InvokeVoid(
 		s,
@@ -923,6 +958,14 @@ func (s *jsiiProxy_S3BucketLoggingA) ResetTargetGrant() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTargetGrant",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketLoggingA) ResetTargetObjectKeyFormat() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTargetObjectKeyFormat",
 		nil, // no parameters
 	)
 }

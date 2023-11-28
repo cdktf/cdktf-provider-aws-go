@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/auditmanager_framework_share aws_auditmanager_framework_share}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/auditmanager_framework_share aws_auditmanager_framework_share}.
 type AuditmanagerFrameworkShare interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -388,7 +388,7 @@ func (j *jsiiProxy_AuditmanagerFrameworkShare) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/auditmanager_framework_share aws_auditmanager_framework_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/auditmanager_framework_share aws_auditmanager_framework_share} Resource.
 func NewAuditmanagerFrameworkShare(scope constructs.Construct, id *string, config *AuditmanagerFrameworkShareConfig) AuditmanagerFrameworkShare {
 	_init_.Initialize()
 
@@ -406,7 +406,7 @@ func NewAuditmanagerFrameworkShare(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/auditmanager_framework_share aws_auditmanager_framework_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/auditmanager_framework_share aws_auditmanager_framework_share} Resource.
 func NewAuditmanagerFrameworkShare_Override(a AuditmanagerFrameworkShare, scope constructs.Construct, id *string, config *AuditmanagerFrameworkShareConfig) {
 	_init_.Initialize()
 

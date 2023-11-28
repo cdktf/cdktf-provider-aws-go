@@ -71,6 +71,10 @@ func (j *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) validateSetIpAddressTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

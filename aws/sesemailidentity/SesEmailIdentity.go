@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_email_identity aws_ses_email_identity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ses_email_identity aws_ses_email_identity}.
 type SesEmailIdentity interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -331,7 +331,7 @@ func (j *jsiiProxy_SesEmailIdentity) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_email_identity aws_ses_email_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ses_email_identity aws_ses_email_identity} Resource.
 func NewSesEmailIdentity(scope constructs.Construct, id *string, config *SesEmailIdentityConfig) SesEmailIdentity {
 	_init_.Initialize()
 
@@ -349,7 +349,7 @@ func NewSesEmailIdentity(scope constructs.Construct, id *string, config *SesEmai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_email_identity aws_ses_email_identity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ses_email_identity aws_ses_email_identity} Resource.
 func NewSesEmailIdentity_Override(s SesEmailIdentity, scope constructs.Construct, id *string, config *SesEmailIdentityConfig) {
 	_init_.Initialize()
 

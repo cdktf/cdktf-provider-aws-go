@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/emr_studio aws_emr_studio}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/emr_studio aws_emr_studio}.
 type EmrStudio interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -647,7 +647,7 @@ func (j *jsiiProxy_EmrStudio) WorkspaceSecurityGroupIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/emr_studio aws_emr_studio} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/emr_studio aws_emr_studio} Resource.
 func NewEmrStudio(scope constructs.Construct, id *string, config *EmrStudioConfig) EmrStudio {
 	_init_.Initialize()
 
@@ -665,7 +665,7 @@ func NewEmrStudio(scope constructs.Construct, id *string, config *EmrStudioConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/emr_studio aws_emr_studio} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/emr_studio aws_emr_studio} Resource.
 func NewEmrStudio_Override(e EmrStudio, scope constructs.Construct, id *string, config *EmrStudioConfig) {
 	_init_.Initialize()
 

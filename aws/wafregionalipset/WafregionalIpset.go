@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_ipset aws_wafregional_ipset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/wafregional_ipset aws_wafregional_ipset}.
 type WafregionalIpset interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -355,7 +355,7 @@ func (j *jsiiProxy_WafregionalIpset) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_ipset aws_wafregional_ipset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/wafregional_ipset aws_wafregional_ipset} Resource.
 func NewWafregionalIpset(scope constructs.Construct, id *string, config *WafregionalIpsetConfig) WafregionalIpset {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewWafregionalIpset(scope constructs.Construct, id *string, config *Wafregi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/wafregional_ipset aws_wafregional_ipset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/wafregional_ipset aws_wafregional_ipset} Resource.
 func NewWafregionalIpset_Override(w WafregionalIpset, scope constructs.Construct, id *string, config *WafregionalIpsetConfig) {
 	_init_.Initialize()
 

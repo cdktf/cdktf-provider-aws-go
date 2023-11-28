@@ -135,6 +135,10 @@ func (j *jsiiProxy_CloudwatchEventRule) validateSetScheduleExpressionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchEventRule) validateSetStateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchEventRule) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

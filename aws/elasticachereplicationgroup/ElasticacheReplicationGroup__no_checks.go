@@ -103,6 +103,10 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetAuthTokenParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetAuthTokenUpdateStrategyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetAutomaticFailoverEnabledParameters(val interface{}) error {
 	return nil
 }

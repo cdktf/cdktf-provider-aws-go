@@ -39,6 +39,9 @@ type ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference interface 
 	RepositoryUrlInput() *string
 	SourceCodeVersion() ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersionOutputReference
 	SourceCodeVersionInput() *ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersion
+	SourceDirectory() *string
+	SetSourceDirectory(val *string)
+	SourceDirectoryInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -74,6 +77,7 @@ type ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference interface 
 	PutCodeConfiguration(value *ApprunnerServiceSourceConfigurationCodeRepositoryCodeConfiguration)
 	PutSourceCodeVersion(value *ApprunnerServiceSourceConfigurationCodeRepositorySourceCodeVersion)
 	ResetCodeConfiguration()
+	ResetSourceDirectory()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -199,6 +203,26 @@ func (j *jsiiProxy_ApprunnerServiceSourceConfigurationCodeRepositoryOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference) SourceDirectory() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceDirectory",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference) SourceDirectoryInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceDirectoryInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -287,6 +311,17 @@ func (j *jsiiProxy_ApprunnerServiceSourceConfigurationCodeRepositoryOutputRefere
 	_jsii_.Set(
 		j,
 		"repositoryUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference)SetSourceDirectory(val *string) {
+	if err := j.validateSetSourceDirectoryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceDirectory",
 		val,
 	)
 }
@@ -525,6 +560,14 @@ func (a *jsiiProxy_ApprunnerServiceSourceConfigurationCodeRepositoryOutputRefere
 	_jsii_.InvokeVoid(
 		a,
 		"resetCodeConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference) ResetSourceDirectory() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSourceDirectory",
 		nil, // no parameters
 	)
 }

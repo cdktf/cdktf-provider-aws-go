@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/default_route_table aws_default_route_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/default_route_table aws_default_route_table}.
 type DefaultRouteTable interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -473,7 +473,7 @@ func (j *jsiiProxy_DefaultRouteTable) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/default_route_table aws_default_route_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/default_route_table aws_default_route_table} Resource.
 func NewDefaultRouteTable(scope constructs.Construct, id *string, config *DefaultRouteTableConfig) DefaultRouteTable {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewDefaultRouteTable(scope constructs.Construct, id *string, config *Defaul
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/default_route_table aws_default_route_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/default_route_table aws_default_route_table} Resource.
 func NewDefaultRouteTable_Override(d DefaultRouteTable, scope constructs.Construct, id *string, config *DefaultRouteTableConfig) {
 	_init_.Initialize()
 

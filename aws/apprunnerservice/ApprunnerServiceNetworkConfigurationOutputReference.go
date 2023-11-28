@@ -36,6 +36,9 @@ type ApprunnerServiceNetworkConfigurationOutputReference interface {
 	IngressConfigurationInput() *ApprunnerServiceNetworkConfigurationIngressConfiguration
 	InternalValue() *ApprunnerServiceNetworkConfiguration
 	SetInternalValue(val *ApprunnerServiceNetworkConfiguration)
+	IpAddressType() *string
+	SetIpAddressType(val *string)
+	IpAddressTypeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type ApprunnerServiceNetworkConfigurationOutputReference interface {
 	PutIngressConfiguration(value *ApprunnerServiceNetworkConfigurationIngressConfiguration)
 	ResetEgressConfiguration()
 	ResetIngressConfiguration()
+	ResetIpAddressType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -177,6 +181,26 @@ func (j *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) Internal
 	return returns
 }
 
+func (j *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) IpAddressType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) IpAddressTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -254,6 +278,17 @@ func (j *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference)SetIntern
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference)SetIpAddressType(val *string) {
+	if err := j.validateSetIpAddressTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipAddressType",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (a *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) ResetIng
 	_jsii_.InvokeVoid(
 		a,
 		"resetIngressConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_ApprunnerServiceNetworkConfigurationOutputReference) ResetIpAddressType() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIpAddressType",
 		nil, // no parameters
 	)
 }

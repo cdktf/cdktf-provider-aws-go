@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/cloudwatch_event_rule aws_cloudwatch_event_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_event_rule aws_cloudwatch_event_rule}.
 type CloudwatchEventRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -83,6 +83,9 @@ type CloudwatchEventRule interface {
 	ScheduleExpression() *string
 	SetScheduleExpression(val *string)
 	ScheduleExpressionInput() *string
+	State() *string
+	SetState(val *string)
+	StateInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -140,6 +143,7 @@ type CloudwatchEventRule interface {
 	ResetOverrideLogicalId()
 	ResetRoleArn()
 	ResetScheduleExpression()
+	ResetState()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -477,6 +481,26 @@ func (j *jsiiProxy_CloudwatchEventRule) ScheduleExpressionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CloudwatchEventRule) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventRule) StateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudwatchEventRule) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -548,7 +572,7 @@ func (j *jsiiProxy_CloudwatchEventRule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/cloudwatch_event_rule aws_cloudwatch_event_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_event_rule aws_cloudwatch_event_rule} Resource.
 func NewCloudwatchEventRule(scope constructs.Construct, id *string, config *CloudwatchEventRuleConfig) CloudwatchEventRule {
 	_init_.Initialize()
 
@@ -566,7 +590,7 @@ func NewCloudwatchEventRule(scope constructs.Construct, id *string, config *Clou
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/cloudwatch_event_rule aws_cloudwatch_event_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/cloudwatch_event_rule aws_cloudwatch_event_rule} Resource.
 func NewCloudwatchEventRule_Override(c CloudwatchEventRule, scope constructs.Construct, id *string, config *CloudwatchEventRuleConfig) {
 	_init_.Initialize()
 
@@ -740,6 +764,17 @@ func (j *jsiiProxy_CloudwatchEventRule)SetScheduleExpression(val *string) {
 	_jsii_.Set(
 		j,
 		"scheduleExpression",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchEventRule)SetState(val *string) {
+	if err := j.validateSetStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"state",
 		val,
 	)
 }
@@ -1160,6 +1195,14 @@ func (c *jsiiProxy_CloudwatchEventRule) ResetScheduleExpression() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetScheduleExpression",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventRule) ResetState() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetState",
 		nil, // no parameters
 	)
 }

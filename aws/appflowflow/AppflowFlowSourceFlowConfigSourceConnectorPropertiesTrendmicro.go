@@ -5,7 +5,7 @@ package appflowflow
 
 
 type AppflowFlowSourceFlowConfigSourceConnectorPropertiesTrendmicro struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/appflow_flow#object AppflowFlow#object}.
 	Object *string `field:"required" json:"object" yaml:"object"`
 }
 

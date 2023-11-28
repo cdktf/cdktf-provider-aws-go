@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/apprunner_auto_scaling_configuration_version aws_apprunner_auto_scaling_configuration_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/apprunner_auto_scaling_configuration_version aws_apprunner_auto_scaling_configuration_version}.
 type ApprunnerAutoScalingConfigurationVersion interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -44,9 +44,11 @@ type ApprunnerAutoScalingConfigurationVersion interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HasAssociatedService() cdktf.IResolvable
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IsDefault() cdktf.IResolvable
 	Latest() cdktf.IResolvable
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -263,6 +265,16 @@ func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) FriendlyUniqueId() 
 	return returns
 }
 
+func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) HasAssociatedService() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"hasAssociatedService",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -278,6 +290,16 @@ func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) IsDefault() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"isDefault",
 		&returns,
 	)
 	return returns
@@ -484,7 +506,7 @@ func (j *jsiiProxy_ApprunnerAutoScalingConfigurationVersion) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/apprunner_auto_scaling_configuration_version aws_apprunner_auto_scaling_configuration_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/apprunner_auto_scaling_configuration_version aws_apprunner_auto_scaling_configuration_version} Resource.
 func NewApprunnerAutoScalingConfigurationVersion(scope constructs.Construct, id *string, config *ApprunnerAutoScalingConfigurationVersionConfig) ApprunnerAutoScalingConfigurationVersion {
 	_init_.Initialize()
 
@@ -502,7 +524,7 @@ func NewApprunnerAutoScalingConfigurationVersion(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/apprunner_auto_scaling_configuration_version aws_apprunner_auto_scaling_configuration_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/apprunner_auto_scaling_configuration_version aws_apprunner_auto_scaling_configuration_version} Resource.
 func NewApprunnerAutoScalingConfigurationVersion_Override(a ApprunnerAutoScalingConfigurationVersion, scope constructs.Construct, id *string, config *ApprunnerAutoScalingConfigurationVersionConfig) {
 	_init_.Initialize()
 

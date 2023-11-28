@@ -71,6 +71,10 @@ func (s *jsiiProxy_S3BucketLifecycleConfiguration) validatePutRuleParameters(val
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketLifecycleConfiguration) validatePutTimeoutsParameters(value *S3BucketLifecycleConfigurationTimeouts) error {
+	return nil
+}
+
 func validateS3BucketLifecycleConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

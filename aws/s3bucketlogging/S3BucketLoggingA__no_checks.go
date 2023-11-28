@@ -71,6 +71,10 @@ func (s *jsiiProxy_S3BucketLoggingA) validatePutTargetGrantParameters(value inte
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketLoggingA) validatePutTargetObjectKeyFormatParameters(value *S3BucketLoggingTargetObjectKeyFormat) error {
+	return nil
+}
+
 func validateS3BucketLoggingA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

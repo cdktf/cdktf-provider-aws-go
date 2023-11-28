@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_template aws_ses_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ses_template aws_ses_template}.
 type SesTemplate interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -403,7 +403,7 @@ func (j *jsiiProxy_SesTemplate) TextInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_template aws_ses_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ses_template aws_ses_template} Resource.
 func NewSesTemplate(scope constructs.Construct, id *string, config *SesTemplateConfig) SesTemplate {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewSesTemplate(scope constructs.Construct, id *string, config *SesTemplateC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ses_template aws_ses_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ses_template aws_ses_template} Resource.
 func NewSesTemplate_Override(s SesTemplate, scope constructs.Construct, id *string, config *SesTemplateConfig) {
 	_init_.Initialize()
 

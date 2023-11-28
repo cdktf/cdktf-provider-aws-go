@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/docdb_subnet_group aws_docdb_subnet_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_subnet_group aws_docdb_subnet_group}.
 type DocdbSubnetGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -451,7 +451,7 @@ func (j *jsiiProxy_DocdbSubnetGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/docdb_subnet_group aws_docdb_subnet_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_subnet_group aws_docdb_subnet_group} Resource.
 func NewDocdbSubnetGroup(scope constructs.Construct, id *string, config *DocdbSubnetGroupConfig) DocdbSubnetGroup {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewDocdbSubnetGroup(scope constructs.Construct, id *string, config *DocdbSu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/docdb_subnet_group aws_docdb_subnet_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/docdb_subnet_group aws_docdb_subnet_group} Resource.
 func NewDocdbSubnetGroup_Override(d DocdbSubnetGroup, scope constructs.Construct, id *string, config *DocdbSubnetGroupConfig) {
 	_init_.Initialize()
 

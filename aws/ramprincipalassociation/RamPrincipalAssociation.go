@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ram_principal_association aws_ram_principal_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ram_principal_association aws_ram_principal_association}.
 type RamPrincipalAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_RamPrincipalAssociation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ram_principal_association aws_ram_principal_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ram_principal_association aws_ram_principal_association} Resource.
 func NewRamPrincipalAssociation(scope constructs.Construct, id *string, config *RamPrincipalAssociationConfig) RamPrincipalAssociation {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewRamPrincipalAssociation(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/ram_principal_association aws_ram_principal_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ram_principal_association aws_ram_principal_association} Resource.
 func NewRamPrincipalAssociation_Override(r RamPrincipalAssociation, scope constructs.Construct, id *string, config *RamPrincipalAssociationConfig) {
 	_init_.Initialize()
 

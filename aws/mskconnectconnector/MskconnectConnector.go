@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/mskconnect_connector aws_mskconnect_connector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/mskconnect_connector aws_mskconnect_connector}.
 type MskconnectConnector interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -622,7 +622,7 @@ func (j *jsiiProxy_MskconnectConnector) WorkerConfigurationInput() *MskconnectCo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/mskconnect_connector aws_mskconnect_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/mskconnect_connector aws_mskconnect_connector} Resource.
 func NewMskconnectConnector(scope constructs.Construct, id *string, config *MskconnectConnectorConfig) MskconnectConnector {
 	_init_.Initialize()
 
@@ -640,7 +640,7 @@ func NewMskconnectConnector(scope constructs.Construct, id *string, config *Mskc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/mskconnect_connector aws_mskconnect_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/mskconnect_connector aws_mskconnect_connector} Resource.
 func NewMskconnectConnector_Override(m MskconnectConnector, scope constructs.Construct, id *string, config *MskconnectConnectorConfig) {
 	_init_.Initialize()
 

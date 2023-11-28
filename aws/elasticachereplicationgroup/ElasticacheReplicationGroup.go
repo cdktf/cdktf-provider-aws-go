@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group}.
 type ElasticacheReplicationGroup interface {
 	cdktf.TerraformResource
 	ApplyImmediately() interface{}
@@ -25,6 +25,9 @@ type ElasticacheReplicationGroup interface {
 	AuthToken() *string
 	SetAuthToken(val *string)
 	AuthTokenInput() *string
+	AuthTokenUpdateStrategy() *string
+	SetAuthTokenUpdateStrategy(val *string)
+	AuthTokenUpdateStrategyInput() *string
 	AutomaticFailoverEnabled() interface{}
 	SetAutomaticFailoverEnabled(val interface{})
 	AutomaticFailoverEnabledInput() interface{}
@@ -221,6 +224,7 @@ type ElasticacheReplicationGroup interface {
 	ResetApplyImmediately()
 	ResetAtRestEncryptionEnabled()
 	ResetAuthToken()
+	ResetAuthTokenUpdateStrategy()
 	ResetAutomaticFailoverEnabled()
 	ResetAutoMinorVersionUpgrade()
 	ResetDataTieringEnabled()
@@ -339,6 +343,26 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) AuthTokenInput() *string {
 	_jsii_.Get(
 		j,
 		"authTokenInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheReplicationGroup) AuthTokenUpdateStrategy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authTokenUpdateStrategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheReplicationGroup) AuthTokenUpdateStrategyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"authTokenUpdateStrategyInput",
 		&returns,
 	)
 	return returns
@@ -1285,7 +1309,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) UserGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
 func NewElasticacheReplicationGroup(scope constructs.Construct, id *string, config *ElasticacheReplicationGroupConfig) ElasticacheReplicationGroup {
 	_init_.Initialize()
 
@@ -1303,7 +1327,7 @@ func NewElasticacheReplicationGroup(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
 func NewElasticacheReplicationGroup_Override(e ElasticacheReplicationGroup, scope constructs.Construct, id *string, config *ElasticacheReplicationGroupConfig) {
 	_init_.Initialize()
 
@@ -1343,6 +1367,17 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetAuthToken(val *string) {
 	_jsii_.Set(
 		j,
 		"authToken",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElasticacheReplicationGroup)SetAuthTokenUpdateStrategy(val *string) {
+	if err := j.validateSetAuthTokenUpdateStrategyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authTokenUpdateStrategy",
 		val,
 	)
 }
@@ -2149,6 +2184,14 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) ResetAuthToken() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetAuthToken",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElasticacheReplicationGroup) ResetAuthTokenUpdateStrategy() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetAuthTokenUpdateStrategy",
 		nil, // no parameters
 	)
 }

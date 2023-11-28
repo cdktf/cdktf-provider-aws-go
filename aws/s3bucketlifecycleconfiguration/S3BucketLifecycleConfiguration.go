@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration}.
 type S3BucketLifecycleConfiguration interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -72,6 +72,8 @@ type S3BucketLifecycleConfiguration interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() S3BucketLifecycleConfigurationTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -106,11 +108,13 @@ type S3BucketLifecycleConfiguration interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutRule(value interface{})
+	PutTimeouts(value *S3BucketLifecycleConfigurationTimeouts)
 	ResetExpectedBucketOwner()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -366,8 +370,28 @@ func (j *jsiiProxy_S3BucketLifecycleConfiguration) TerraformResourceType() *stri
 	return returns
 }
 
+func (j *jsiiProxy_S3BucketLifecycleConfiguration) Timeouts() S3BucketLifecycleConfigurationTimeoutsOutputReference {
+	var returns S3BucketLifecycleConfigurationTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration} Resource.
+func (j *jsiiProxy_S3BucketLifecycleConfiguration) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration} Resource.
 func NewS3BucketLifecycleConfiguration(scope constructs.Construct, id *string, config *S3BucketLifecycleConfigurationConfig) S3BucketLifecycleConfiguration {
 	_init_.Initialize()
 
@@ -385,7 +409,7 @@ func NewS3BucketLifecycleConfiguration(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.26.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3_bucket_lifecycle_configuration aws_s3_bucket_lifecycle_configuration} Resource.
 func NewS3BucketLifecycleConfiguration_Override(s S3BucketLifecycleConfiguration, scope constructs.Construct, id *string, config *S3BucketLifecycleConfigurationConfig) {
 	_init_.Initialize()
 
@@ -826,6 +850,17 @@ func (s *jsiiProxy_S3BucketLifecycleConfiguration) PutRule(value interface{}) {
 	)
 }
 
+func (s *jsiiProxy_S3BucketLifecycleConfiguration) PutTimeouts(value *S3BucketLifecycleConfigurationTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_S3BucketLifecycleConfiguration) ResetExpectedBucketOwner() {
 	_jsii_.InvokeVoid(
 		s,
@@ -846,6 +881,14 @@ func (s *jsiiProxy_S3BucketLifecycleConfiguration) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3BucketLifecycleConfiguration) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

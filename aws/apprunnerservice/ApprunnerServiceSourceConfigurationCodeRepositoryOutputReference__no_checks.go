@@ -75,6 +75,10 @@ func (j *jsiiProxy_ApprunnerServiceSourceConfigurationCodeRepositoryOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference) validateSetSourceDirectoryParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ApprunnerServiceSourceConfigurationCodeRepositoryOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
