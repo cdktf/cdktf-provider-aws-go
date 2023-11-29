@@ -7,7 +7,7 @@ package wafv2webacl
 type Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllow struct {
 	// custom_request_handling block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/wafv2_web_acl#custom_request_handling Wafv2WebAcl#custom_request_handling}
 	CustomRequestHandling *Wafv2WebAclRuleStatementManagedRuleGroupStatementRuleActionOverrideActionToUseAllowCustomRequestHandling `field:"optional" json:"customRequestHandling" yaml:"customRequestHandling"`
 }
 

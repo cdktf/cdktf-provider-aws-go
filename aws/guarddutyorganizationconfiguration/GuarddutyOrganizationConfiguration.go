@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/guardduty_organization_configuration aws_guardduty_organization_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/guardduty_organization_configuration aws_guardduty_organization_configuration}.
 type GuarddutyOrganizationConfiguration interface {
 	cdktf.TerraformResource
 	AutoEnable() interface{}
@@ -392,7 +392,7 @@ func (j *jsiiProxy_GuarddutyOrganizationConfiguration) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/guardduty_organization_configuration aws_guardduty_organization_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/guardduty_organization_configuration aws_guardduty_organization_configuration} Resource.
 func NewGuarddutyOrganizationConfiguration(scope constructs.Construct, id *string, config *GuarddutyOrganizationConfigurationConfig) GuarddutyOrganizationConfiguration {
 	_init_.Initialize()
 
@@ -410,7 +410,7 @@ func NewGuarddutyOrganizationConfiguration(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/guardduty_organization_configuration aws_guardduty_organization_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/guardduty_organization_configuration aws_guardduty_organization_configuration} Resource.
 func NewGuarddutyOrganizationConfiguration_Override(g GuarddutyOrganizationConfiguration, scope constructs.Construct, id *string, config *GuarddutyOrganizationConfigurationConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ssoadmin_permission_set_inline_policy aws_ssoadmin_permission_set_inline_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/ssoadmin_permission_set_inline_policy aws_ssoadmin_permission_set_inline_policy}.
 type SsoadminPermissionSetInlinePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_SsoadminPermissionSetInlinePolicy) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ssoadmin_permission_set_inline_policy aws_ssoadmin_permission_set_inline_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/ssoadmin_permission_set_inline_policy aws_ssoadmin_permission_set_inline_policy} Resource.
 func NewSsoadminPermissionSetInlinePolicy(scope constructs.Construct, id *string, config *SsoadminPermissionSetInlinePolicyConfig) SsoadminPermissionSetInlinePolicy {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewSsoadminPermissionSetInlinePolicy(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/ssoadmin_permission_set_inline_policy aws_ssoadmin_permission_set_inline_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/ssoadmin_permission_set_inline_policy aws_ssoadmin_permission_set_inline_policy} Resource.
 func NewSsoadminPermissionSetInlinePolicy_Override(s SsoadminPermissionSetInlinePolicy, scope constructs.Construct, id *string, config *SsoadminPermissionSetInlinePolicyConfig) {
 	_init_.Initialize()
 

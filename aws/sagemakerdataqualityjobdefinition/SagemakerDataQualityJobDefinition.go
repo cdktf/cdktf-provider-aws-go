@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/sagemaker_data_quality_job_definition aws_sagemaker_data_quality_job_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/sagemaker_data_quality_job_definition aws_sagemaker_data_quality_job_definition}.
 type SagemakerDataQualityJobDefinition interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -567,7 +567,7 @@ func (j *jsiiProxy_SagemakerDataQualityJobDefinition) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/sagemaker_data_quality_job_definition aws_sagemaker_data_quality_job_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/sagemaker_data_quality_job_definition aws_sagemaker_data_quality_job_definition} Resource.
 func NewSagemakerDataQualityJobDefinition(scope constructs.Construct, id *string, config *SagemakerDataQualityJobDefinitionConfig) SagemakerDataQualityJobDefinition {
 	_init_.Initialize()
 
@@ -585,7 +585,7 @@ func NewSagemakerDataQualityJobDefinition(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/sagemaker_data_quality_job_definition aws_sagemaker_data_quality_job_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/sagemaker_data_quality_job_definition aws_sagemaker_data_quality_job_definition} Resource.
 func NewSagemakerDataQualityJobDefinition_Override(s SagemakerDataQualityJobDefinition, scope constructs.Construct, id *string, config *SagemakerDataQualityJobDefinitionConfig) {
 	_init_.Initialize()
 

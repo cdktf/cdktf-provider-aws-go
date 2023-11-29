@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/wafv2_ip_set aws_wafv2_ip_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/wafv2_ip_set aws_wafv2_ip_set}.
 type DataAwsWafv2IpSet interface {
 	cdktf.TerraformDataSource
 	Addresses() *[]*string
@@ -351,7 +351,7 @@ func (j *jsiiProxy_DataAwsWafv2IpSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/wafv2_ip_set aws_wafv2_ip_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/wafv2_ip_set aws_wafv2_ip_set} Data Source.
 func NewDataAwsWafv2IpSet(scope constructs.Construct, id *string, config *DataAwsWafv2IpSetConfig) DataAwsWafv2IpSet {
 	_init_.Initialize()
 
@@ -369,7 +369,7 @@ func NewDataAwsWafv2IpSet(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/wafv2_ip_set aws_wafv2_ip_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/wafv2_ip_set aws_wafv2_ip_set} Data Source.
 func NewDataAwsWafv2IpSet_Override(d DataAwsWafv2IpSet, scope constructs.Construct, id *string, config *DataAwsWafv2IpSetConfig) {
 	_init_.Initialize()
 

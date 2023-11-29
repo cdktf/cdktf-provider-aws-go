@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/iam_user aws_iam_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/iam_user aws_iam_user}.
 type DataAwsIamUser interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -352,7 +352,7 @@ func (j *jsiiProxy_DataAwsIamUser) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/iam_user aws_iam_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/iam_user aws_iam_user} Data Source.
 func NewDataAwsIamUser(scope constructs.Construct, id *string, config *DataAwsIamUserConfig) DataAwsIamUser {
 	_init_.Initialize()
 
@@ -370,7 +370,7 @@ func NewDataAwsIamUser(scope constructs.Construct, id *string, config *DataAwsIa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/iam_user aws_iam_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/iam_user aws_iam_user} Data Source.
 func NewDataAwsIamUser_Override(d DataAwsIamUser, scope constructs.Construct, id *string, config *DataAwsIamUserConfig) {
 	_init_.Initialize()
 

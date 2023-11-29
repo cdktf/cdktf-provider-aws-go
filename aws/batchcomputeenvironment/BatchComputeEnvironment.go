@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/batch_compute_environment aws_batch_compute_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/batch_compute_environment aws_batch_compute_environment}.
 type BatchComputeEnvironment interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -556,7 +556,7 @@ func (j *jsiiProxy_BatchComputeEnvironment) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/batch_compute_environment aws_batch_compute_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/batch_compute_environment aws_batch_compute_environment} Resource.
 func NewBatchComputeEnvironment(scope constructs.Construct, id *string, config *BatchComputeEnvironmentConfig) BatchComputeEnvironment {
 	_init_.Initialize()
 
@@ -574,7 +574,7 @@ func NewBatchComputeEnvironment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/batch_compute_environment aws_batch_compute_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/batch_compute_environment aws_batch_compute_environment} Resource.
 func NewBatchComputeEnvironment_Override(b BatchComputeEnvironment, scope constructs.Construct, id *string, config *BatchComputeEnvironmentConfig) {
 	_init_.Initialize()
 

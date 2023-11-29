@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3control_access_grants_instance aws_s3control_access_grants_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3control_access_grants_instance aws_s3control_access_grants_instance}.
 type S3ControlAccessGrantsInstance interface {
 	cdktf.TerraformResource
 	AccessGrantsInstanceArn() *string
@@ -45,6 +45,10 @@ type S3ControlAccessGrantsInstance interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	IdentityCenterApplicationArn() *string
+	IdentityCenterArn() *string
+	SetIdentityCenterArn(val *string)
+	IdentityCenterArnInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -105,6 +109,7 @@ type S3ControlAccessGrantsInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAccountId()
+	ResetIdentityCenterArn()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -254,6 +259,36 @@ func (j *jsiiProxy_S3ControlAccessGrantsInstance) Id() *string {
 	return returns
 }
 
+func (j *jsiiProxy_S3ControlAccessGrantsInstance) IdentityCenterApplicationArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityCenterApplicationArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ControlAccessGrantsInstance) IdentityCenterArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityCenterArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3ControlAccessGrantsInstance) IdentityCenterArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identityCenterArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_S3ControlAccessGrantsInstance) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -365,7 +400,7 @@ func (j *jsiiProxy_S3ControlAccessGrantsInstance) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3control_access_grants_instance aws_s3control_access_grants_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3control_access_grants_instance aws_s3control_access_grants_instance} Resource.
 func NewS3ControlAccessGrantsInstance(scope constructs.Construct, id *string, config *S3ControlAccessGrantsInstanceConfig) S3ControlAccessGrantsInstance {
 	_init_.Initialize()
 
@@ -383,7 +418,7 @@ func NewS3ControlAccessGrantsInstance(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/s3control_access_grants_instance aws_s3control_access_grants_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/s3control_access_grants_instance aws_s3control_access_grants_instance} Resource.
 func NewS3ControlAccessGrantsInstance_Override(s S3ControlAccessGrantsInstance, scope constructs.Construct, id *string, config *S3ControlAccessGrantsInstanceConfig) {
 	_init_.Initialize()
 
@@ -439,6 +474,17 @@ func (j *jsiiProxy_S3ControlAccessGrantsInstance)SetForEach(val cdktf.ITerraform
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_S3ControlAccessGrantsInstance)SetIdentityCenterArn(val *string) {
+	if err := j.validateSetIdentityCenterArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identityCenterArn",
 		val,
 	)
 }
@@ -806,6 +852,14 @@ func (s *jsiiProxy_S3ControlAccessGrantsInstance) ResetAccountId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetAccountId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_S3ControlAccessGrantsInstance) ResetIdentityCenterArn() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetIdentityCenterArn",
 		nil, // no parameters
 	)
 }

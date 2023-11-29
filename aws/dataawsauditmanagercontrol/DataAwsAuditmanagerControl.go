@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/auditmanager_control aws_auditmanager_control}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/auditmanager_control aws_auditmanager_control}.
 type DataAwsAuditmanagerControl interface {
 	cdktf.TerraformDataSource
 	ActionPlanInstructions() *string
@@ -384,7 +384,7 @@ func (j *jsiiProxy_DataAwsAuditmanagerControl) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/auditmanager_control aws_auditmanager_control} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/auditmanager_control aws_auditmanager_control} Data Source.
 func NewDataAwsAuditmanagerControl(scope constructs.Construct, id *string, config *DataAwsAuditmanagerControlConfig) DataAwsAuditmanagerControl {
 	_init_.Initialize()
 
@@ -402,7 +402,7 @@ func NewDataAwsAuditmanagerControl(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/auditmanager_control aws_auditmanager_control} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/auditmanager_control aws_auditmanager_control} Data Source.
 func NewDataAwsAuditmanagerControl_Override(d DataAwsAuditmanagerControl, scope constructs.Construct, id *string, config *DataAwsAuditmanagerControlConfig) {
 	_init_.Initialize()
 

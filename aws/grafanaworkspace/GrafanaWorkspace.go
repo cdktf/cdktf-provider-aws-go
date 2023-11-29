@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/grafana_workspace aws_grafana_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/grafana_workspace aws_grafana_workspace}.
 type GrafanaWorkspace interface {
 	cdktf.TerraformResource
 	AccountAccessType() *string
@@ -759,7 +759,7 @@ func (j *jsiiProxy_GrafanaWorkspace) VpcConfigurationInput() *GrafanaWorkspaceVp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/grafana_workspace aws_grafana_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/grafana_workspace aws_grafana_workspace} Resource.
 func NewGrafanaWorkspace(scope constructs.Construct, id *string, config *GrafanaWorkspaceConfig) GrafanaWorkspace {
 	_init_.Initialize()
 
@@ -777,7 +777,7 @@ func NewGrafanaWorkspace(scope constructs.Construct, id *string, config *Grafana
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/grafana_workspace aws_grafana_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/grafana_workspace aws_grafana_workspace} Resource.
 func NewGrafanaWorkspace_Override(g GrafanaWorkspace, scope constructs.Construct, id *string, config *GrafanaWorkspaceConfig) {
 	_init_.Initialize()
 

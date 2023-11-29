@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/ebs_snapshot_ids aws_ebs_snapshot_ids}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/ebs_snapshot_ids aws_ebs_snapshot_ids}.
 type DataAwsEbsSnapshotIds interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_DataAwsEbsSnapshotIds) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/ebs_snapshot_ids aws_ebs_snapshot_ids} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/ebs_snapshot_ids aws_ebs_snapshot_ids} Data Source.
 func NewDataAwsEbsSnapshotIds(scope constructs.Construct, id *string, config *DataAwsEbsSnapshotIdsConfig) DataAwsEbsSnapshotIds {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewDataAwsEbsSnapshotIds(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/data-sources/ebs_snapshot_ids aws_ebs_snapshot_ids} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/ebs_snapshot_ids aws_ebs_snapshot_ids} Data Source.
 func NewDataAwsEbsSnapshotIds_Override(d DataAwsEbsSnapshotIds, scope constructs.Construct, id *string, config *DataAwsEbsSnapshotIdsConfig) {
 	_init_.Initialize()
 

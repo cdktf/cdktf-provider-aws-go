@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/opsworks_static_web_layer aws_opsworks_static_web_layer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/opsworks_static_web_layer aws_opsworks_static_web_layer}.
 type OpsworksStaticWebLayer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -883,7 +883,7 @@ func (j *jsiiProxy_OpsworksStaticWebLayer) UseEbsOptimizedInstancesInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/opsworks_static_web_layer aws_opsworks_static_web_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/opsworks_static_web_layer aws_opsworks_static_web_layer} Resource.
 func NewOpsworksStaticWebLayer(scope constructs.Construct, id *string, config *OpsworksStaticWebLayerConfig) OpsworksStaticWebLayer {
 	_init_.Initialize()
 
@@ -901,7 +901,7 @@ func NewOpsworksStaticWebLayer(scope constructs.Construct, id *string, config *O
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/opsworks_static_web_layer aws_opsworks_static_web_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/opsworks_static_web_layer aws_opsworks_static_web_layer} Resource.
 func NewOpsworksStaticWebLayer_Override(o OpsworksStaticWebLayer, scope constructs.Construct, id *string, config *OpsworksStaticWebLayerConfig) {
 	_init_.Initialize()
 

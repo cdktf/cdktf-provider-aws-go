@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/account_primary_contact aws_account_primary_contact}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/account_primary_contact aws_account_primary_contact}.
 type AccountPrimaryContact interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -603,7 +603,7 @@ func (j *jsiiProxy_AccountPrimaryContact) WebsiteUrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/account_primary_contact aws_account_primary_contact} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/account_primary_contact aws_account_primary_contact} Resource.
 func NewAccountPrimaryContact(scope constructs.Construct, id *string, config *AccountPrimaryContactConfig) AccountPrimaryContact {
 	_init_.Initialize()
 
@@ -621,7 +621,7 @@ func NewAccountPrimaryContact(scope constructs.Construct, id *string, config *Ac
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/account_primary_contact aws_account_primary_contact} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/account_primary_contact aws_account_primary_contact} Resource.
 func NewAccountPrimaryContact_Override(a AccountPrimaryContact, scope constructs.Construct, id *string, config *AccountPrimaryContactConfig) {
 	_init_.Initialize()
 

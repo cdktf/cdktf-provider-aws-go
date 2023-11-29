@@ -95,6 +95,10 @@ func (j *jsiiProxy_S3ControlAccessGrantsInstance) validateSetCountParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_S3ControlAccessGrantsInstance) validateSetIdentityCenterArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3ControlAccessGrantsInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

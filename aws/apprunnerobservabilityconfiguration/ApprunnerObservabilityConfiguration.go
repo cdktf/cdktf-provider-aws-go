@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/apprunner_observability_configuration aws_apprunner_observability_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/apprunner_observability_configuration aws_apprunner_observability_configuration}.
 type ApprunnerObservabilityConfiguration interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -436,7 +436,7 @@ func (j *jsiiProxy_ApprunnerObservabilityConfiguration) TraceConfigurationInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/apprunner_observability_configuration aws_apprunner_observability_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/apprunner_observability_configuration aws_apprunner_observability_configuration} Resource.
 func NewApprunnerObservabilityConfiguration(scope constructs.Construct, id *string, config *ApprunnerObservabilityConfigurationConfig) ApprunnerObservabilityConfiguration {
 	_init_.Initialize()
 
@@ -454,7 +454,7 @@ func NewApprunnerObservabilityConfiguration(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.27.0/docs/resources/apprunner_observability_configuration aws_apprunner_observability_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/apprunner_observability_configuration aws_apprunner_observability_configuration} Resource.
 func NewApprunnerObservabilityConfiguration_Override(a ApprunnerObservabilityConfiguration, scope constructs.Construct, id *string, config *ApprunnerObservabilityConfigurationConfig) {
 	_init_.Initialize()
 
