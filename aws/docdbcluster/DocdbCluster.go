@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_cluster aws_docdb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/docdb_cluster aws_docdb_cluster}.
 type DocdbCluster interface {
 	cdktf.TerraformResource
 	AllowMajorVersionUpgrade() interface{}
@@ -135,6 +135,9 @@ type DocdbCluster interface {
 	StorageEncrypted() interface{}
 	SetStorageEncrypted(val interface{})
 	StorageEncryptedInput() interface{}
+	StorageType() *string
+	SetStorageType(val *string)
+	StorageTypeInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -214,6 +217,7 @@ type DocdbCluster interface {
 	ResetSkipFinalSnapshot()
 	ResetSnapshotIdentifier()
 	ResetStorageEncrypted()
+	ResetStorageType()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -913,6 +917,26 @@ func (j *jsiiProxy_DocdbCluster) StorageEncryptedInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DocdbCluster) StorageType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbCluster) StorageTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DocdbCluster) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -1024,7 +1048,7 @@ func (j *jsiiProxy_DocdbCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
 func NewDocdbCluster(scope constructs.Construct, id *string, config *DocdbClusterConfig) DocdbCluster {
 	_init_.Initialize()
 
@@ -1042,7 +1066,7 @@ func NewDocdbCluster(scope constructs.Construct, id *string, config *DocdbCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
 func NewDocdbCluster_Override(d DocdbCluster, scope constructs.Construct, id *string, config *DocdbClusterConfig) {
 	_init_.Initialize()
 
@@ -1392,6 +1416,17 @@ func (j *jsiiProxy_DocdbCluster)SetStorageEncrypted(val interface{}) {
 	_jsii_.Set(
 		j,
 		"storageEncrypted",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DocdbCluster)SetStorageType(val *string) {
+	if err := j.validateSetStorageTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageType",
 		val,
 	)
 }
@@ -1962,6 +1997,14 @@ func (d *jsiiProxy_DocdbCluster) ResetStorageEncrypted() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetStorageEncrypted",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DocdbCluster) ResetStorageType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetStorageType",
 		nil, // no parameters
 	)
 }

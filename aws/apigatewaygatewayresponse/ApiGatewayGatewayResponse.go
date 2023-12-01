@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/api_gateway_gateway_response aws_api_gateway_gateway_response}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/api_gateway_gateway_response aws_api_gateway_gateway_response}.
 type ApiGatewayGatewayResponse interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_ApiGatewayGatewayResponse) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/api_gateway_gateway_response aws_api_gateway_gateway_response} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/api_gateway_gateway_response aws_api_gateway_gateway_response} Resource.
 func NewApiGatewayGatewayResponse(scope constructs.Construct, id *string, config *ApiGatewayGatewayResponseConfig) ApiGatewayGatewayResponse {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewApiGatewayGatewayResponse(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/api_gateway_gateway_response aws_api_gateway_gateway_response} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/api_gateway_gateway_response aws_api_gateway_gateway_response} Resource.
 func NewApiGatewayGatewayResponse_Override(a ApiGatewayGatewayResponse, scope constructs.Construct, id *string, config *ApiGatewayGatewayResponseConfig) {
 	_init_.Initialize()
 

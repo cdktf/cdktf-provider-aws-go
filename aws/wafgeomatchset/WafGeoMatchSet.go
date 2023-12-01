@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/waf_geo_match_set aws_waf_geo_match_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/waf_geo_match_set aws_waf_geo_match_set}.
 type WafGeoMatchSet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -355,7 +355,7 @@ func (j *jsiiProxy_WafGeoMatchSet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/waf_geo_match_set aws_waf_geo_match_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/waf_geo_match_set aws_waf_geo_match_set} Resource.
 func NewWafGeoMatchSet(scope constructs.Construct, id *string, config *WafGeoMatchSetConfig) WafGeoMatchSet {
 	_init_.Initialize()
 
@@ -373,7 +373,7 @@ func NewWafGeoMatchSet(scope constructs.Construct, id *string, config *WafGeoMat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/waf_geo_match_set aws_waf_geo_match_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/waf_geo_match_set aws_waf_geo_match_set} Resource.
 func NewWafGeoMatchSet_Override(w WafGeoMatchSet, scope constructs.Construct, id *string, config *WafGeoMatchSetConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/s3_directory_buckets aws_s3_directory_buckets}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/s3_directory_buckets aws_s3_directory_buckets}.
 type DataAwsS3DirectoryBuckets interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -270,7 +270,7 @@ func (j *jsiiProxy_DataAwsS3DirectoryBuckets) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/s3_directory_buckets aws_s3_directory_buckets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/s3_directory_buckets aws_s3_directory_buckets} Data Source.
 func NewDataAwsS3DirectoryBuckets(scope constructs.Construct, id *string, config *DataAwsS3DirectoryBucketsConfig) DataAwsS3DirectoryBuckets {
 	_init_.Initialize()
 
@@ -288,7 +288,7 @@ func NewDataAwsS3DirectoryBuckets(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/s3_directory_buckets aws_s3_directory_buckets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/s3_directory_buckets aws_s3_directory_buckets} Data Source.
 func NewDataAwsS3DirectoryBuckets_Override(d DataAwsS3DirectoryBuckets, scope constructs.Construct, id *string, config *DataAwsS3DirectoryBucketsConfig) {
 	_init_.Initialize()
 

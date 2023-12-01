@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/imagebuilder_distribution_configuration aws_imagebuilder_distribution_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/imagebuilder_distribution_configuration aws_imagebuilder_distribution_configuration}.
 type DataAwsImagebuilderDistributionConfiguration interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -363,7 +363,7 @@ func (j *jsiiProxy_DataAwsImagebuilderDistributionConfiguration) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/imagebuilder_distribution_configuration aws_imagebuilder_distribution_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/imagebuilder_distribution_configuration aws_imagebuilder_distribution_configuration} Data Source.
 func NewDataAwsImagebuilderDistributionConfiguration(scope constructs.Construct, id *string, config *DataAwsImagebuilderDistributionConfigurationConfig) DataAwsImagebuilderDistributionConfiguration {
 	_init_.Initialize()
 
@@ -381,7 +381,7 @@ func NewDataAwsImagebuilderDistributionConfiguration(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/imagebuilder_distribution_configuration aws_imagebuilder_distribution_configuration} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/imagebuilder_distribution_configuration aws_imagebuilder_distribution_configuration} Data Source.
 func NewDataAwsImagebuilderDistributionConfiguration_Override(d DataAwsImagebuilderDistributionConfiguration, scope constructs.Construct, id *string, config *DataAwsImagebuilderDistributionConfigurationConfig) {
 	_init_.Initialize()
 

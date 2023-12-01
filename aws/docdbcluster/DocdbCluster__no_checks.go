@@ -203,6 +203,10 @@ func (j *jsiiProxy_DocdbCluster) validateSetStorageEncryptedParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_DocdbCluster) validateSetStorageTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DocdbCluster) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

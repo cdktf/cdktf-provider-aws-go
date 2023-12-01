@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/opsworks_mysql_layer aws_opsworks_mysql_layer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/opsworks_mysql_layer aws_opsworks_mysql_layer}.
 type OpsworksMysqlLayer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -931,7 +931,7 @@ func (j *jsiiProxy_OpsworksMysqlLayer) UseEbsOptimizedInstancesInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/opsworks_mysql_layer aws_opsworks_mysql_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/opsworks_mysql_layer aws_opsworks_mysql_layer} Resource.
 func NewOpsworksMysqlLayer(scope constructs.Construct, id *string, config *OpsworksMysqlLayerConfig) OpsworksMysqlLayer {
 	_init_.Initialize()
 
@@ -949,7 +949,7 @@ func NewOpsworksMysqlLayer(scope constructs.Construct, id *string, config *Opswo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/opsworks_mysql_layer aws_opsworks_mysql_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/opsworks_mysql_layer aws_opsworks_mysql_layer} Resource.
 func NewOpsworksMysqlLayer_Override(o OpsworksMysqlLayer, scope constructs.Construct, id *string, config *OpsworksMysqlLayerConfig) {
 	_init_.Initialize()
 

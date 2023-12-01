@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/neptune_parameter_group aws_neptune_parameter_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/neptune_parameter_group aws_neptune_parameter_group}.
 type NeptuneParameterGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -56,6 +56,9 @@ type NeptuneParameterGroup interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NamePrefix() *string
+	SetNamePrefix(val *string)
+	NamePrefixInput() *string
 	// The tree node.
 	Node() constructs.Node
 	Parameter() NeptuneParameterGroupParameterList
@@ -118,6 +121,8 @@ type NeptuneParameterGroup interface {
 	PutParameter(value interface{})
 	ResetDescription()
 	ResetId()
+	ResetName()
+	ResetNamePrefix()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -319,6 +324,26 @@ func (j *jsiiProxy_NeptuneParameterGroup) NameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NeptuneParameterGroup) NamePrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefix",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NeptuneParameterGroup) NamePrefixInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"namePrefixInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NeptuneParameterGroup) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -450,7 +475,7 @@ func (j *jsiiProxy_NeptuneParameterGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/neptune_parameter_group aws_neptune_parameter_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/neptune_parameter_group aws_neptune_parameter_group} Resource.
 func NewNeptuneParameterGroup(scope constructs.Construct, id *string, config *NeptuneParameterGroupConfig) NeptuneParameterGroup {
 	_init_.Initialize()
 
@@ -468,7 +493,7 @@ func NewNeptuneParameterGroup(scope constructs.Construct, id *string, config *Ne
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/neptune_parameter_group aws_neptune_parameter_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/neptune_parameter_group aws_neptune_parameter_group} Resource.
 func NewNeptuneParameterGroup_Override(n NeptuneParameterGroup, scope constructs.Construct, id *string, config *NeptuneParameterGroupConfig) {
 	_init_.Initialize()
 
@@ -568,6 +593,17 @@ func (j *jsiiProxy_NeptuneParameterGroup)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NeptuneParameterGroup)SetNamePrefix(val *string) {
+	if err := j.validateSetNamePrefixParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"namePrefix",
 		val,
 	)
 }
@@ -954,6 +990,22 @@ func (n *jsiiProxy_NeptuneParameterGroup) ResetId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NeptuneParameterGroup) ResetName() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetName",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NeptuneParameterGroup) ResetNamePrefix() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetNamePrefix",
 		nil, // no parameters
 	)
 }

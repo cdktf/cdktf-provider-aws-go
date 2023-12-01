@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/ec2_availability_zone_group aws_ec2_availability_zone_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ec2_availability_zone_group aws_ec2_availability_zone_group}.
 type Ec2AvailabilityZoneGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -343,7 +343,7 @@ func (j *jsiiProxy_Ec2AvailabilityZoneGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/ec2_availability_zone_group aws_ec2_availability_zone_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ec2_availability_zone_group aws_ec2_availability_zone_group} Resource.
 func NewEc2AvailabilityZoneGroup(scope constructs.Construct, id *string, config *Ec2AvailabilityZoneGroupConfig) Ec2AvailabilityZoneGroup {
 	_init_.Initialize()
 
@@ -361,7 +361,7 @@ func NewEc2AvailabilityZoneGroup(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/ec2_availability_zone_group aws_ec2_availability_zone_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ec2_availability_zone_group aws_ec2_availability_zone_group} Resource.
 func NewEc2AvailabilityZoneGroup_Override(e Ec2AvailabilityZoneGroup, scope constructs.Construct, id *string, config *Ec2AvailabilityZoneGroupConfig) {
 	_init_.Initialize()
 

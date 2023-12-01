@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appsync_api_key aws_appsync_api_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/appsync_api_key aws_appsync_api_key}.
 type AppsyncApiKey interface {
 	cdktf.TerraformResource
 	ApiId() *string
@@ -379,7 +379,7 @@ func (j *jsiiProxy_AppsyncApiKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appsync_api_key aws_appsync_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/appsync_api_key aws_appsync_api_key} Resource.
 func NewAppsyncApiKey(scope constructs.Construct, id *string, config *AppsyncApiKeyConfig) AppsyncApiKey {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewAppsyncApiKey(scope constructs.Construct, id *string, config *AppsyncApi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/appsync_api_key aws_appsync_api_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/appsync_api_key aws_appsync_api_key} Resource.
 func NewAppsyncApiKey_Override(a AppsyncApiKey, scope constructs.Construct, id *string, config *AppsyncApiKeyConfig) {
 	_init_.Initialize()
 

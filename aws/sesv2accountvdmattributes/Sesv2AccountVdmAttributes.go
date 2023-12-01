@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/sesv2_account_vdm_attributes aws_sesv2_account_vdm_attributes}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/sesv2_account_vdm_attributes aws_sesv2_account_vdm_attributes}.
 type Sesv2AccountVdmAttributes interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -368,7 +368,7 @@ func (j *jsiiProxy_Sesv2AccountVdmAttributes) VdmEnabledInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/sesv2_account_vdm_attributes aws_sesv2_account_vdm_attributes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/sesv2_account_vdm_attributes aws_sesv2_account_vdm_attributes} Resource.
 func NewSesv2AccountVdmAttributes(scope constructs.Construct, id *string, config *Sesv2AccountVdmAttributesConfig) Sesv2AccountVdmAttributes {
 	_init_.Initialize()
 
@@ -386,7 +386,7 @@ func NewSesv2AccountVdmAttributes(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/sesv2_account_vdm_attributes aws_sesv2_account_vdm_attributes} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/sesv2_account_vdm_attributes aws_sesv2_account_vdm_attributes} Resource.
 func NewSesv2AccountVdmAttributes_Override(s Sesv2AccountVdmAttributes, scope constructs.Construct, id *string, config *Sesv2AccountVdmAttributesConfig) {
 	_init_.Initialize()
 

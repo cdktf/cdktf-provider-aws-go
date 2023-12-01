@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/ecrpublic_repository_policy aws_ecrpublic_repository_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ecrpublic_repository_policy aws_ecrpublic_repository_policy}.
 type EcrpublicRepositoryPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -354,7 +354,7 @@ func (j *jsiiProxy_EcrpublicRepositoryPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/ecrpublic_repository_policy aws_ecrpublic_repository_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ecrpublic_repository_policy aws_ecrpublic_repository_policy} Resource.
 func NewEcrpublicRepositoryPolicy(scope constructs.Construct, id *string, config *EcrpublicRepositoryPolicyConfig) EcrpublicRepositoryPolicy {
 	_init_.Initialize()
 
@@ -372,7 +372,7 @@ func NewEcrpublicRepositoryPolicy(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/ecrpublic_repository_policy aws_ecrpublic_repository_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ecrpublic_repository_policy aws_ecrpublic_repository_policy} Resource.
 func NewEcrpublicRepositoryPolicy_Override(e EcrpublicRepositoryPolicy, scope constructs.Construct, id *string, config *EcrpublicRepositoryPolicyConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/appmesh_virtual_node aws_appmesh_virtual_node}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/appmesh_virtual_node aws_appmesh_virtual_node}.
 type DataAwsAppmeshVirtualNode interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -410,7 +410,7 @@ func (j *jsiiProxy_DataAwsAppmeshVirtualNode) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/appmesh_virtual_node aws_appmesh_virtual_node} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/appmesh_virtual_node aws_appmesh_virtual_node} Data Source.
 func NewDataAwsAppmeshVirtualNode(scope constructs.Construct, id *string, config *DataAwsAppmeshVirtualNodeConfig) DataAwsAppmeshVirtualNode {
 	_init_.Initialize()
 
@@ -428,7 +428,7 @@ func NewDataAwsAppmeshVirtualNode(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/data-sources/appmesh_virtual_node aws_appmesh_virtual_node} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/appmesh_virtual_node aws_appmesh_virtual_node} Data Source.
 func NewDataAwsAppmeshVirtualNode_Override(d DataAwsAppmeshVirtualNode, scope constructs.Construct, id *string, config *DataAwsAppmeshVirtualNodeConfig) {
 	_init_.Initialize()
 

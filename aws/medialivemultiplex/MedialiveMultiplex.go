@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/medialive_multiplex aws_medialive_multiplex}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/medialive_multiplex aws_medialive_multiplex}.
 type MedialiveMultiplex interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -474,7 +474,7 @@ func (j *jsiiProxy_MedialiveMultiplex) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/medialive_multiplex aws_medialive_multiplex} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/medialive_multiplex aws_medialive_multiplex} Resource.
 func NewMedialiveMultiplex(scope constructs.Construct, id *string, config *MedialiveMultiplexConfig) MedialiveMultiplex {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewMedialiveMultiplex(scope constructs.Construct, id *string, config *Media
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.28.0/docs/resources/medialive_multiplex aws_medialive_multiplex} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/medialive_multiplex aws_medialive_multiplex} Resource.
 func NewMedialiveMultiplex_Override(m MedialiveMultiplex, scope constructs.Construct, id *string, config *MedialiveMultiplexConfig) {
 	_init_.Initialize()
 

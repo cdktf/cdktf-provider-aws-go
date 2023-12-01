@@ -115,6 +115,10 @@ func (j *jsiiProxy_NeptuneParameterGroup) validateSetNameParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_NeptuneParameterGroup) validateSetNamePrefixParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NeptuneParameterGroup) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }
