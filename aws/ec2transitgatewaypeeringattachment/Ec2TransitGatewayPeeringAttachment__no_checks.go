@@ -59,7 +59,15 @@ func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachment) validateInterpolationForA
 	return nil
 }
 
+func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

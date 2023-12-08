@@ -59,7 +59,15 @@ func (s *jsiiProxy_SagemakerStudioLifecycleConfig) validateInterpolationForAttri
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerStudioLifecycleConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerStudioLifecycleConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerStudioLifecycleConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

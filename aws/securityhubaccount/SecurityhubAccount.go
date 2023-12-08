@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/securityhub_account aws_securityhub_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/securityhub_account aws_securityhub_account}.
 type SecurityhubAccount interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -98,12 +98,22 @@ type SecurityhubAccount interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -380,7 +390,7 @@ func (j *jsiiProxy_SecurityhubAccount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/securityhub_account aws_securityhub_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/securityhub_account aws_securityhub_account} Resource.
 func NewSecurityhubAccount(scope constructs.Construct, id *string, config *SecurityhubAccountConfig) SecurityhubAccount {
 	_init_.Initialize()
 
@@ -398,7 +408,7 @@ func NewSecurityhubAccount(scope constructs.Construct, id *string, config *Secur
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/securityhub_account aws_securityhub_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/securityhub_account aws_securityhub_account} Resource.
 func NewSecurityhubAccount_Override(s SecurityhubAccount, scope constructs.Construct, id *string, config *SecurityhubAccountConfig) {
 	_init_.Initialize()
 
@@ -790,6 +800,19 @@ func (s *jsiiProxy_SecurityhubAccount) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (s *jsiiProxy_SecurityhubAccount) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_SecurityhubAccount) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -817,6 +840,17 @@ func (s *jsiiProxy_SecurityhubAccount) InterpolationForAttribute(terraformAttrib
 	return returns
 }
 
+func (s *jsiiProxy_SecurityhubAccount) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_SecurityhubAccount) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -825,6 +859,17 @@ func (s *jsiiProxy_SecurityhubAccount) MoveTo(moveTarget *string, index interfac
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_SecurityhubAccount) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

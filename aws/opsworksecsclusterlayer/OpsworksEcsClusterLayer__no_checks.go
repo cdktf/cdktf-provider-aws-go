@@ -59,7 +59,15 @@ func (o *jsiiProxy_OpsworksEcsClusterLayer) validateInterpolationForAttributePar
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksEcsClusterLayer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksEcsClusterLayer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksEcsClusterLayer) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

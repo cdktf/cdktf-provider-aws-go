@@ -59,7 +59,15 @@ func (i *jsiiProxy_IvschatRoom) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (i *jsiiProxy_IvschatRoom) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IvschatRoom) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IvschatRoom) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

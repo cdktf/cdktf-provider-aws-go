@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ses_configuration_set aws_ses_configuration_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ses_configuration_set aws_ses_configuration_set}.
 type SesConfigurationSet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -103,12 +103,22 @@ type SesConfigurationSet interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -438,7 +448,7 @@ func (j *jsiiProxy_SesConfigurationSet) TrackingOptionsInput() *SesConfiguration
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ses_configuration_set aws_ses_configuration_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ses_configuration_set aws_ses_configuration_set} Resource.
 func NewSesConfigurationSet(scope constructs.Construct, id *string, config *SesConfigurationSetConfig) SesConfigurationSet {
 	_init_.Initialize()
 
@@ -456,7 +466,7 @@ func NewSesConfigurationSet(scope constructs.Construct, id *string, config *SesC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ses_configuration_set aws_ses_configuration_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ses_configuration_set aws_ses_configuration_set} Resource.
 func NewSesConfigurationSet_Override(s SesConfigurationSet, scope constructs.Construct, id *string, config *SesConfigurationSetConfig) {
 	_init_.Initialize()
 
@@ -848,6 +858,19 @@ func (s *jsiiProxy_SesConfigurationSet) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (s *jsiiProxy_SesConfigurationSet) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_SesConfigurationSet) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -875,6 +898,17 @@ func (s *jsiiProxy_SesConfigurationSet) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (s *jsiiProxy_SesConfigurationSet) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_SesConfigurationSet) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -883,6 +917,17 @@ func (s *jsiiProxy_SesConfigurationSet) MoveTo(moveTarget *string, index interfa
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_SesConfigurationSet) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

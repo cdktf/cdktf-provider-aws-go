@@ -59,7 +59,15 @@ func (c *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) val
 	return nil
 }
 
+func (c *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ChimesdkmediapipelinesMediaInsightsPipelineConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

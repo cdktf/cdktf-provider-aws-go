@@ -59,7 +59,15 @@ func (e *jsiiProxy_ElasticsearchVpcEndpoint) validateInterpolationForAttributePa
 	return nil
 }
 
+func (e *jsiiProxy_ElasticsearchVpcEndpoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticsearchVpcEndpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticsearchVpcEndpoint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

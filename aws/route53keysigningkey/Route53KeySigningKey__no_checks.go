@@ -59,7 +59,15 @@ func (r *jsiiProxy_Route53KeySigningKey) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (r *jsiiProxy_Route53KeySigningKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53KeySigningKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53KeySigningKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

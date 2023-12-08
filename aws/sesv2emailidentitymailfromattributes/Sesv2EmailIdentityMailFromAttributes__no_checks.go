@@ -59,7 +59,15 @@ func (s *jsiiProxy_Sesv2EmailIdentityMailFromAttributes) validateInterpolationFo
 	return nil
 }
 
+func (s *jsiiProxy_Sesv2EmailIdentityMailFromAttributes) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Sesv2EmailIdentityMailFromAttributes) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_Sesv2EmailIdentityMailFromAttributes) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

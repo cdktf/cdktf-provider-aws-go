@@ -59,7 +59,15 @@ func (i *jsiiProxy_IvsPlaybackKeyPair) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (i *jsiiProxy_IvsPlaybackKeyPair) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IvsPlaybackKeyPair) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IvsPlaybackKeyPair) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

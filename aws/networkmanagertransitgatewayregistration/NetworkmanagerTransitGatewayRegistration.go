@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/networkmanager_transit_gateway_registration aws_networkmanager_transit_gateway_registration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/networkmanager_transit_gateway_registration aws_networkmanager_transit_gateway_registration}.
 type NetworkmanagerTransitGatewayRegistration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -96,12 +96,22 @@ type NetworkmanagerTransitGatewayRegistration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -367,7 +377,7 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration) TransitGatewayArnIn
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/networkmanager_transit_gateway_registration aws_networkmanager_transit_gateway_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/networkmanager_transit_gateway_registration aws_networkmanager_transit_gateway_registration} Resource.
 func NewNetworkmanagerTransitGatewayRegistration(scope constructs.Construct, id *string, config *NetworkmanagerTransitGatewayRegistrationConfig) NetworkmanagerTransitGatewayRegistration {
 	_init_.Initialize()
 
@@ -385,7 +395,7 @@ func NewNetworkmanagerTransitGatewayRegistration(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/networkmanager_transit_gateway_registration aws_networkmanager_transit_gateway_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/networkmanager_transit_gateway_registration aws_networkmanager_transit_gateway_registration} Resource.
 func NewNetworkmanagerTransitGatewayRegistration_Override(n NetworkmanagerTransitGatewayRegistration, scope constructs.Construct, id *string, config *NetworkmanagerTransitGatewayRegistrationConfig) {
 	_init_.Initialize()
 
@@ -766,6 +776,19 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) GetStringMapAttribu
 	return returns
 }
 
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -793,6 +816,17 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) InterpolationForAtt
 	return returns
 }
 
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -801,6 +835,17 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) MoveTo(moveTarget *
 		n,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

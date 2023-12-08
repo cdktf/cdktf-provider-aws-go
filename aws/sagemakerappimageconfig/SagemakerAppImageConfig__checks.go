@@ -122,6 +122,14 @@ func (s *jsiiProxy_SagemakerAppImageConfig) validateInterpolationForAttributePar
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerAppImageConfig) validateMoveFromIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerAppImageConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
@@ -183,9 +191,28 @@ func (s *jsiiProxy_SagemakerAppImageConfig) validateMoveToParameters(moveTarget 
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerAppImageConfig) validateMoveToIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerAppImageConfig) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerAppImageConfig) validatePutJupyterLabImageConfigParameters(value *SagemakerAppImageConfigJupyterLabImageConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

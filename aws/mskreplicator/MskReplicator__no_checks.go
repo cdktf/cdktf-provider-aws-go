@@ -59,7 +59,15 @@ func (m *jsiiProxy_MskReplicator) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (m *jsiiProxy_MskReplicator) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MskReplicator) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MskReplicator) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (l *jsiiProxy_LicensemanagerGrant) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (l *jsiiProxy_LicensemanagerGrant) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LicensemanagerGrant) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LicensemanagerGrant) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

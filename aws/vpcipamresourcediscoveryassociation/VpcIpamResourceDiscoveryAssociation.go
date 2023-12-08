@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpc_ipam_resource_discovery_association aws_vpc_ipam_resource_discovery_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/vpc_ipam_resource_discovery_association aws_vpc_ipam_resource_discovery_association}.
 type VpcIpamResourceDiscoveryAssociation interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -108,12 +108,22 @@ type VpcIpamResourceDiscoveryAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -481,7 +491,7 @@ func (j *jsiiProxy_VpcIpamResourceDiscoveryAssociation) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpc_ipam_resource_discovery_association aws_vpc_ipam_resource_discovery_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/vpc_ipam_resource_discovery_association aws_vpc_ipam_resource_discovery_association} Resource.
 func NewVpcIpamResourceDiscoveryAssociation(scope constructs.Construct, id *string, config *VpcIpamResourceDiscoveryAssociationConfig) VpcIpamResourceDiscoveryAssociation {
 	_init_.Initialize()
 
@@ -499,7 +509,7 @@ func NewVpcIpamResourceDiscoveryAssociation(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpc_ipam_resource_discovery_association aws_vpc_ipam_resource_discovery_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/vpc_ipam_resource_discovery_association aws_vpc_ipam_resource_discovery_association} Resource.
 func NewVpcIpamResourceDiscoveryAssociation_Override(v VpcIpamResourceDiscoveryAssociation, scope constructs.Construct, id *string, config *VpcIpamResourceDiscoveryAssociationConfig) {
 	_init_.Initialize()
 
@@ -902,6 +912,19 @@ func (v *jsiiProxy_VpcIpamResourceDiscoveryAssociation) GetStringMapAttribute(te
 	return returns
 }
 
+func (v *jsiiProxy_VpcIpamResourceDiscoveryAssociation) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		v,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (v *jsiiProxy_VpcIpamResourceDiscoveryAssociation) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := v.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -929,6 +952,17 @@ func (v *jsiiProxy_VpcIpamResourceDiscoveryAssociation) InterpolationForAttribut
 	return returns
 }
 
+func (v *jsiiProxy_VpcIpamResourceDiscoveryAssociation) MoveFromId(id *string) {
+	if err := v.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (v *jsiiProxy_VpcIpamResourceDiscoveryAssociation) MoveTo(moveTarget *string, index interface{}) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -937,6 +971,17 @@ func (v *jsiiProxy_VpcIpamResourceDiscoveryAssociation) MoveTo(moveTarget *strin
 		v,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (v *jsiiProxy_VpcIpamResourceDiscoveryAssociation) MoveToId(id *string) {
+	if err := v.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

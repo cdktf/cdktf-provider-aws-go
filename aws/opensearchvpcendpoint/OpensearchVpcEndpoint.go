@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/opensearch_vpc_endpoint aws_opensearch_vpc_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opensearch_vpc_endpoint aws_opensearch_vpc_endpoint}.
 type OpensearchVpcEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -96,12 +96,22 @@ type OpensearchVpcEndpoint interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -378,7 +388,7 @@ func (j *jsiiProxy_OpensearchVpcEndpoint) VpcOptionsInput() *OpensearchVpcEndpoi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/opensearch_vpc_endpoint aws_opensearch_vpc_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opensearch_vpc_endpoint aws_opensearch_vpc_endpoint} Resource.
 func NewOpensearchVpcEndpoint(scope constructs.Construct, id *string, config *OpensearchVpcEndpointConfig) OpensearchVpcEndpoint {
 	_init_.Initialize()
 
@@ -396,7 +406,7 @@ func NewOpensearchVpcEndpoint(scope constructs.Construct, id *string, config *Op
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/opensearch_vpc_endpoint aws_opensearch_vpc_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opensearch_vpc_endpoint aws_opensearch_vpc_endpoint} Resource.
 func NewOpensearchVpcEndpoint_Override(o OpensearchVpcEndpoint, scope constructs.Construct, id *string, config *OpensearchVpcEndpointConfig) {
 	_init_.Initialize()
 
@@ -766,6 +776,19 @@ func (o *jsiiProxy_OpensearchVpcEndpoint) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
+func (o *jsiiProxy_OpensearchVpcEndpoint) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (o *jsiiProxy_OpensearchVpcEndpoint) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := o.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -793,6 +816,17 @@ func (o *jsiiProxy_OpensearchVpcEndpoint) InterpolationForAttribute(terraformAtt
 	return returns
 }
 
+func (o *jsiiProxy_OpensearchVpcEndpoint) MoveFromId(id *string) {
+	if err := o.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (o *jsiiProxy_OpensearchVpcEndpoint) MoveTo(moveTarget *string, index interface{}) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -801,6 +835,17 @@ func (o *jsiiProxy_OpensearchVpcEndpoint) MoveTo(moveTarget *string, index inter
 		o,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (o *jsiiProxy_OpensearchVpcEndpoint) MoveToId(id *string) {
+	if err := o.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

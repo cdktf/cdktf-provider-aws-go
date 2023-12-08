@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/directory_service_shared_directory_accepter aws_directory_service_shared_directory_accepter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/directory_service_shared_directory_accepter aws_directory_service_shared_directory_accepter}.
 type DirectoryServiceSharedDirectoryAccepter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -97,12 +97,22 @@ type DirectoryServiceSharedDirectoryAccepter interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -388,7 +398,7 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/directory_service_shared_directory_accepter aws_directory_service_shared_directory_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/directory_service_shared_directory_accepter aws_directory_service_shared_directory_accepter} Resource.
 func NewDirectoryServiceSharedDirectoryAccepter(scope constructs.Construct, id *string, config *DirectoryServiceSharedDirectoryAccepterConfig) DirectoryServiceSharedDirectoryAccepter {
 	_init_.Initialize()
 
@@ -406,7 +416,7 @@ func NewDirectoryServiceSharedDirectoryAccepter(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/directory_service_shared_directory_accepter aws_directory_service_shared_directory_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/directory_service_shared_directory_accepter aws_directory_service_shared_directory_accepter} Resource.
 func NewDirectoryServiceSharedDirectoryAccepter_Override(d DirectoryServiceSharedDirectoryAccepter, scope constructs.Construct, id *string, config *DirectoryServiceSharedDirectoryAccepterConfig) {
 	_init_.Initialize()
 
@@ -776,6 +786,19 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) GetStringMapAttribut
 	return returns
 }
 
+func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -803,6 +826,17 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) InterpolationForAttr
 	return returns
 }
 
+func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -811,6 +845,17 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) MoveTo(moveTarget *s
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

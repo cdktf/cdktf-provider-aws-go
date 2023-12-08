@@ -59,7 +59,15 @@ func (d *jsiiProxy_DocdbelasticCluster) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (d *jsiiProxy_DocdbelasticCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DocdbelasticCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DocdbelasticCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

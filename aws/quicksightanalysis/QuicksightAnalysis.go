@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/quicksight_analysis aws_quicksight_analysis}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/quicksight_analysis aws_quicksight_analysis}.
 type QuicksightAnalysis interface {
 	cdktf.TerraformResource
 	AnalysisId() *string
@@ -125,12 +125,22 @@ type QuicksightAnalysis interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -638,7 +648,7 @@ func (j *jsiiProxy_QuicksightAnalysis) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/quicksight_analysis aws_quicksight_analysis} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/quicksight_analysis aws_quicksight_analysis} Resource.
 func NewQuicksightAnalysis(scope constructs.Construct, id *string, config *QuicksightAnalysisConfig) QuicksightAnalysis {
 	_init_.Initialize()
 
@@ -656,7 +666,7 @@ func NewQuicksightAnalysis(scope constructs.Construct, id *string, config *Quick
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/quicksight_analysis aws_quicksight_analysis} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/quicksight_analysis aws_quicksight_analysis} Resource.
 func NewQuicksightAnalysis_Override(q QuicksightAnalysis, scope constructs.Construct, id *string, config *QuicksightAnalysisConfig) {
 	_init_.Initialize()
 
@@ -1103,6 +1113,19 @@ func (q *jsiiProxy_QuicksightAnalysis) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (q *jsiiProxy_QuicksightAnalysis) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		q,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (q *jsiiProxy_QuicksightAnalysis) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := q.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1130,6 +1153,17 @@ func (q *jsiiProxy_QuicksightAnalysis) InterpolationForAttribute(terraformAttrib
 	return returns
 }
 
+func (q *jsiiProxy_QuicksightAnalysis) MoveFromId(id *string) {
+	if err := q.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (q *jsiiProxy_QuicksightAnalysis) MoveTo(moveTarget *string, index interface{}) {
 	if err := q.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1138,6 +1172,17 @@ func (q *jsiiProxy_QuicksightAnalysis) MoveTo(moveTarget *string, index interfac
 		q,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (q *jsiiProxy_QuicksightAnalysis) MoveToId(id *string) {
+	if err := q.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

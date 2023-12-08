@@ -59,7 +59,15 @@ func (e *jsiiProxy_EksPodIdentityAssociation) validateInterpolationForAttributeP
 	return nil
 }
 
+func (e *jsiiProxy_EksPodIdentityAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EksPodIdentityAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EksPodIdentityAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

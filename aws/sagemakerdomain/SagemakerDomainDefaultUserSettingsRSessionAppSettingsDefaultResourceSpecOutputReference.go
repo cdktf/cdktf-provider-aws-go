@@ -41,6 +41,9 @@ type SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecOut
 	SagemakerImageArn() *string
 	SetSagemakerImageArn(val *string)
 	SagemakerImageArnInput() *string
+	SagemakerImageVersionAlias() *string
+	SetSagemakerImageVersionAlias(val *string)
+	SagemakerImageVersionAliasInput() *string
 	SagemakerImageVersionArn() *string
 	SetSagemakerImageVersionArn(val *string)
 	SagemakerImageVersionArnInput() *string
@@ -79,6 +82,7 @@ type SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecOut
 	ResetInstanceType()
 	ResetLifecycleConfigArn()
 	ResetSagemakerImageArn()
+	ResetSagemakerImageVersionAlias()
 	ResetSagemakerImageVersionArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -200,6 +204,26 @@ func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultR
 	_jsii_.Get(
 		j,
 		"sagemakerImageArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference) SagemakerImageVersionAlias() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sagemakerImageVersionAlias",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference) SagemakerImageVersionAliasInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sagemakerImageVersionAliasInput",
 		&returns,
 	)
 	return returns
@@ -335,6 +359,17 @@ func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultR
 	_jsii_.Set(
 		j,
 		"sagemakerImageArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference)SetSagemakerImageVersionAlias(val *string) {
+	if err := j.validateSetSagemakerImageVersionAliasParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sagemakerImageVersionAlias",
 		val,
 	)
 }
@@ -578,6 +613,14 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultR
 	_jsii_.InvokeVoid(
 		s,
 		"resetSagemakerImageArn",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference) ResetSagemakerImageVersionAlias() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSagemakerImageVersionAlias",
 		nil, // no parameters
 	)
 }

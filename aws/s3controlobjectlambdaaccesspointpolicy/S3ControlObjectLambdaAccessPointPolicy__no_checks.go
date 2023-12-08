@@ -59,7 +59,15 @@ func (s *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateInterpolation
 	return nil
 }
 
+func (s *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3ControlObjectLambdaAccessPointPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

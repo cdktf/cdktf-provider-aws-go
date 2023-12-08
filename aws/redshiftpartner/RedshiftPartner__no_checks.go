@@ -59,7 +59,15 @@ func (r *jsiiProxy_RedshiftPartner) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftPartner) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftPartner) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedshiftPartner) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

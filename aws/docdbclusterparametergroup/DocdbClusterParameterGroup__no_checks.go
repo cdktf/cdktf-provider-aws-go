@@ -59,7 +59,15 @@ func (d *jsiiProxy_DocdbClusterParameterGroup) validateInterpolationForAttribute
 	return nil
 }
 
+func (d *jsiiProxy_DocdbClusterParameterGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DocdbClusterParameterGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DocdbClusterParameterGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

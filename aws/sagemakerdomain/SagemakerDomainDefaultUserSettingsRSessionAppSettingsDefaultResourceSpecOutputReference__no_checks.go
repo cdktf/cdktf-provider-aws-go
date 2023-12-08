@@ -75,6 +75,10 @@ func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultR
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference) validateSetSagemakerImageVersionAliasParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference) validateSetSagemakerImageVersionArnParameters(val *string) error {
 	return nil
 }

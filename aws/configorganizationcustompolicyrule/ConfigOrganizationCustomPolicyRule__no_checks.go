@@ -59,7 +59,15 @@ func (c *jsiiProxy_ConfigOrganizationCustomPolicyRule) validateInterpolationForA
 	return nil
 }
 
+func (c *jsiiProxy_ConfigOrganizationCustomPolicyRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConfigOrganizationCustomPolicyRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConfigOrganizationCustomPolicyRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

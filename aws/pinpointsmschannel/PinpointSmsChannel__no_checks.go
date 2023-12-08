@@ -59,7 +59,15 @@ func (p *jsiiProxy_PinpointSmsChannel) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (p *jsiiProxy_PinpointSmsChannel) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PinpointSmsChannel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PinpointSmsChannel) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

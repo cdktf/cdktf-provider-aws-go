@@ -59,7 +59,15 @@ func (g *jsiiProxy_GrafanaLicenseAssociation) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GrafanaLicenseAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GrafanaLicenseAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GrafanaLicenseAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

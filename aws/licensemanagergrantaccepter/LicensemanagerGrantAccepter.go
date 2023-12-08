@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/licensemanager_grant_accepter aws_licensemanager_grant_accepter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/licensemanager_grant_accepter aws_licensemanager_grant_accepter}.
 type LicensemanagerGrantAccepter interface {
 	cdktf.TerraformResource
 	AllowedOperations() *[]*string
@@ -99,12 +99,22 @@ type LicensemanagerGrantAccepter interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -408,7 +418,7 @@ func (j *jsiiProxy_LicensemanagerGrantAccepter) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/licensemanager_grant_accepter aws_licensemanager_grant_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/licensemanager_grant_accepter aws_licensemanager_grant_accepter} Resource.
 func NewLicensemanagerGrantAccepter(scope constructs.Construct, id *string, config *LicensemanagerGrantAccepterConfig) LicensemanagerGrantAccepter {
 	_init_.Initialize()
 
@@ -426,7 +436,7 @@ func NewLicensemanagerGrantAccepter(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/licensemanager_grant_accepter aws_licensemanager_grant_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/licensemanager_grant_accepter aws_licensemanager_grant_accepter} Resource.
 func NewLicensemanagerGrantAccepter_Override(l LicensemanagerGrantAccepter, scope constructs.Construct, id *string, config *LicensemanagerGrantAccepterConfig) {
 	_init_.Initialize()
 
@@ -796,6 +806,19 @@ func (l *jsiiProxy_LicensemanagerGrantAccepter) GetStringMapAttribute(terraformA
 	return returns
 }
 
+func (l *jsiiProxy_LicensemanagerGrantAccepter) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		l,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (l *jsiiProxy_LicensemanagerGrantAccepter) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := l.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -823,6 +846,17 @@ func (l *jsiiProxy_LicensemanagerGrantAccepter) InterpolationForAttribute(terraf
 	return returns
 }
 
+func (l *jsiiProxy_LicensemanagerGrantAccepter) MoveFromId(id *string) {
+	if err := l.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (l *jsiiProxy_LicensemanagerGrantAccepter) MoveTo(moveTarget *string, index interface{}) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -831,6 +865,17 @@ func (l *jsiiProxy_LicensemanagerGrantAccepter) MoveTo(moveTarget *string, index
 		l,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (l *jsiiProxy_LicensemanagerGrantAccepter) MoveToId(id *string) {
+	if err := l.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

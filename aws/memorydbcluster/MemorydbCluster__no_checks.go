@@ -59,7 +59,15 @@ func (m *jsiiProxy_MemorydbCluster) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (m *jsiiProxy_MemorydbCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemorydbCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemorydbCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (a *jsiiProxy_Alb) validateInterpolationForAttributeParameters(terraformAtt
 	return nil
 }
 
+func (a *jsiiProxy_Alb) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_Alb) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_Alb) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -140,6 +148,10 @@ func (j *jsiiProxy_Alb) validateSetEnableWafFailOpenParameters(val interface{}) 
 }
 
 func (j *jsiiProxy_Alb) validateSetEnableXffClientPortParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Alb) validateSetEnforceSecurityGroupInboundRulesOnPrivateLinkTrafficParameters(val *string) error {
 	return nil
 }
 

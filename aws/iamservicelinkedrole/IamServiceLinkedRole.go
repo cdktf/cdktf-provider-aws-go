@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/iam_service_linked_role aws_iam_service_linked_role}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/iam_service_linked_role aws_iam_service_linked_role}.
 type IamServiceLinkedRole interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -108,12 +108,22 @@ type IamServiceLinkedRole interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -471,7 +481,7 @@ func (j *jsiiProxy_IamServiceLinkedRole) UniqueId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/iam_service_linked_role aws_iam_service_linked_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/iam_service_linked_role aws_iam_service_linked_role} Resource.
 func NewIamServiceLinkedRole(scope constructs.Construct, id *string, config *IamServiceLinkedRoleConfig) IamServiceLinkedRole {
 	_init_.Initialize()
 
@@ -489,7 +499,7 @@ func NewIamServiceLinkedRole(scope constructs.Construct, id *string, config *Iam
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/iam_service_linked_role aws_iam_service_linked_role} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/iam_service_linked_role aws_iam_service_linked_role} Resource.
 func NewIamServiceLinkedRole_Override(i IamServiceLinkedRole, scope constructs.Construct, id *string, config *IamServiceLinkedRoleConfig) {
 	_init_.Initialize()
 
@@ -903,6 +913,19 @@ func (i *jsiiProxy_IamServiceLinkedRole) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (i *jsiiProxy_IamServiceLinkedRole) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (i *jsiiProxy_IamServiceLinkedRole) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := i.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -930,6 +953,17 @@ func (i *jsiiProxy_IamServiceLinkedRole) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (i *jsiiProxy_IamServiceLinkedRole) MoveFromId(id *string) {
+	if err := i.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (i *jsiiProxy_IamServiceLinkedRole) MoveTo(moveTarget *string, index interface{}) {
 	if err := i.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -938,6 +972,17 @@ func (i *jsiiProxy_IamServiceLinkedRole) MoveTo(moveTarget *string, index interf
 		i,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (i *jsiiProxy_IamServiceLinkedRole) MoveToId(id *string) {
+	if err := i.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/rds_reserved_instance aws_rds_reserved_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/rds_reserved_instance aws_rds_reserved_instance}.
 type RdsReservedInstance interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -118,12 +118,22 @@ type RdsReservedInstance interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -583,7 +593,7 @@ func (j *jsiiProxy_RdsReservedInstance) UsagePrice() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/rds_reserved_instance aws_rds_reserved_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/rds_reserved_instance aws_rds_reserved_instance} Resource.
 func NewRdsReservedInstance(scope constructs.Construct, id *string, config *RdsReservedInstanceConfig) RdsReservedInstance {
 	_init_.Initialize()
 
@@ -601,7 +611,7 @@ func NewRdsReservedInstance(scope constructs.Construct, id *string, config *RdsR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/rds_reserved_instance aws_rds_reserved_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/rds_reserved_instance aws_rds_reserved_instance} Resource.
 func NewRdsReservedInstance_Override(r RdsReservedInstance, scope constructs.Construct, id *string, config *RdsReservedInstanceConfig) {
 	_init_.Initialize()
 
@@ -1015,6 +1025,19 @@ func (r *jsiiProxy_RdsReservedInstance) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (r *jsiiProxy_RdsReservedInstance) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (r *jsiiProxy_RdsReservedInstance) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1042,6 +1065,17 @@ func (r *jsiiProxy_RdsReservedInstance) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (r *jsiiProxy_RdsReservedInstance) MoveFromId(id *string) {
+	if err := r.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (r *jsiiProxy_RdsReservedInstance) MoveTo(moveTarget *string, index interface{}) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1050,6 +1084,17 @@ func (r *jsiiProxy_RdsReservedInstance) MoveTo(moveTarget *string, index interfa
 		r,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (r *jsiiProxy_RdsReservedInstance) MoveToId(id *string) {
+	if err := r.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

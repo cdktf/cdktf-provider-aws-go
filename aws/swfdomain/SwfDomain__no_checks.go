@@ -59,7 +59,15 @@ func (s *jsiiProxy_SwfDomain) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (s *jsiiProxy_SwfDomain) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SwfDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SwfDomain) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

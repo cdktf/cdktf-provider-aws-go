@@ -59,7 +59,15 @@ func (s *jsiiProxy_S3Bucket) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (s *jsiiProxy_S3Bucket) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3Bucket) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3Bucket) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

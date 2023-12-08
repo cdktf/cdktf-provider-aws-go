@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) validateInterpolationForAttribute
 	return nil
 }
 
+func (c *jsiiProxy_ComprehendEntityRecognizer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComprehendEntityRecognizer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComprehendEntityRecognizer) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

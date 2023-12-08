@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/quicksight_theme aws_quicksight_theme}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/quicksight_theme aws_quicksight_theme}.
 type QuicksightTheme interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -120,12 +120,22 @@ type QuicksightTheme interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -589,7 +599,7 @@ func (j *jsiiProxy_QuicksightTheme) VersionNumber() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/quicksight_theme aws_quicksight_theme} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/quicksight_theme aws_quicksight_theme} Resource.
 func NewQuicksightTheme(scope constructs.Construct, id *string, config *QuicksightThemeConfig) QuicksightTheme {
 	_init_.Initialize()
 
@@ -607,7 +617,7 @@ func NewQuicksightTheme(scope constructs.Construct, id *string, config *Quicksig
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/quicksight_theme aws_quicksight_theme} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/quicksight_theme aws_quicksight_theme} Resource.
 func NewQuicksightTheme_Override(q QuicksightTheme, scope constructs.Construct, id *string, config *QuicksightThemeConfig) {
 	_init_.Initialize()
 
@@ -1043,6 +1053,19 @@ func (q *jsiiProxy_QuicksightTheme) GetStringMapAttribute(terraformAttribute *st
 	return returns
 }
 
+func (q *jsiiProxy_QuicksightTheme) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		q,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (q *jsiiProxy_QuicksightTheme) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := q.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1070,6 +1093,17 @@ func (q *jsiiProxy_QuicksightTheme) InterpolationForAttribute(terraformAttribute
 	return returns
 }
 
+func (q *jsiiProxy_QuicksightTheme) MoveFromId(id *string) {
+	if err := q.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (q *jsiiProxy_QuicksightTheme) MoveTo(moveTarget *string, index interface{}) {
 	if err := q.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1078,6 +1112,17 @@ func (q *jsiiProxy_QuicksightTheme) MoveTo(moveTarget *string, index interface{}
 		q,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (q *jsiiProxy_QuicksightTheme) MoveToId(id *string) {
+	if err := q.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

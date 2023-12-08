@@ -59,7 +59,15 @@ func (b *jsiiProxy_BudgetsBudgetAction) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (b *jsiiProxy_BudgetsBudgetAction) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BudgetsBudgetAction) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BudgetsBudgetAction) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

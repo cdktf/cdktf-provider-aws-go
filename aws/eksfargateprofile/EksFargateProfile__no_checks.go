@@ -59,7 +59,15 @@ func (e *jsiiProxy_EksFargateProfile) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (e *jsiiProxy_EksFargateProfile) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EksFargateProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EksFargateProfile) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

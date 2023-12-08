@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/connect_contact_flow_module aws_connect_contact_flow_module}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/connect_contact_flow_module aws_connect_contact_flow_module}.
 type ConnectContactFlowModule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -114,12 +114,22 @@ type ConnectContactFlowModule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -509,7 +519,7 @@ func (j *jsiiProxy_ConnectContactFlowModule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/connect_contact_flow_module aws_connect_contact_flow_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/connect_contact_flow_module aws_connect_contact_flow_module} Resource.
 func NewConnectContactFlowModule(scope constructs.Construct, id *string, config *ConnectContactFlowModuleConfig) ConnectContactFlowModule {
 	_init_.Initialize()
 
@@ -527,7 +537,7 @@ func NewConnectContactFlowModule(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/connect_contact_flow_module aws_connect_contact_flow_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/connect_contact_flow_module aws_connect_contact_flow_module} Resource.
 func NewConnectContactFlowModule_Override(c ConnectContactFlowModule, scope constructs.Construct, id *string, config *ConnectContactFlowModuleConfig) {
 	_init_.Initialize()
 
@@ -974,6 +984,19 @@ func (c *jsiiProxy_ConnectContactFlowModule) GetStringMapAttribute(terraformAttr
 	return returns
 }
 
+func (c *jsiiProxy_ConnectContactFlowModule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (c *jsiiProxy_ConnectContactFlowModule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1001,6 +1024,17 @@ func (c *jsiiProxy_ConnectContactFlowModule) InterpolationForAttribute(terraform
 	return returns
 }
 
+func (c *jsiiProxy_ConnectContactFlowModule) MoveFromId(id *string) {
+	if err := c.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (c *jsiiProxy_ConnectContactFlowModule) MoveTo(moveTarget *string, index interface{}) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1009,6 +1043,17 @@ func (c *jsiiProxy_ConnectContactFlowModule) MoveTo(moveTarget *string, index in
 		c,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (c *jsiiProxy_ConnectContactFlowModule) MoveToId(id *string) {
+	if err := c.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

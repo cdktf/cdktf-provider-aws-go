@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/msk_cluster_policy aws_msk_cluster_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/msk_cluster_policy aws_msk_cluster_policy}.
 type MskClusterPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -95,12 +95,22 @@ type MskClusterPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -354,7 +364,7 @@ func (j *jsiiProxy_MskClusterPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/msk_cluster_policy aws_msk_cluster_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/msk_cluster_policy aws_msk_cluster_policy} Resource.
 func NewMskClusterPolicy(scope constructs.Construct, id *string, config *MskClusterPolicyConfig) MskClusterPolicy {
 	_init_.Initialize()
 
@@ -372,7 +382,7 @@ func NewMskClusterPolicy(scope constructs.Construct, id *string, config *MskClus
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/msk_cluster_policy aws_msk_cluster_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/msk_cluster_policy aws_msk_cluster_policy} Resource.
 func NewMskClusterPolicy_Override(m MskClusterPolicy, scope constructs.Construct, id *string, config *MskClusterPolicyConfig) {
 	_init_.Initialize()
 
@@ -753,6 +763,19 @@ func (m *jsiiProxy_MskClusterPolicy) GetStringMapAttribute(terraformAttribute *s
 	return returns
 }
 
+func (m *jsiiProxy_MskClusterPolicy) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (m *jsiiProxy_MskClusterPolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -780,6 +803,17 @@ func (m *jsiiProxy_MskClusterPolicy) InterpolationForAttribute(terraformAttribut
 	return returns
 }
 
+func (m *jsiiProxy_MskClusterPolicy) MoveFromId(id *string) {
+	if err := m.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (m *jsiiProxy_MskClusterPolicy) MoveTo(moveTarget *string, index interface{}) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -788,6 +822,17 @@ func (m *jsiiProxy_MskClusterPolicy) MoveTo(moveTarget *string, index interface{
 		m,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (m *jsiiProxy_MskClusterPolicy) MoveToId(id *string) {
+	if err := m.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

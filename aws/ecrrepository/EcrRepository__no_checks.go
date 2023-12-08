@@ -59,7 +59,15 @@ func (e *jsiiProxy_EcrRepository) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (e *jsiiProxy_EcrRepository) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcrRepository) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcrRepository) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

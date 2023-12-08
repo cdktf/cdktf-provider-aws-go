@@ -122,6 +122,14 @@ func (w *jsiiProxy_WorkspacesIpGroup) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (w *jsiiProxy_WorkspacesIpGroup) validateMoveFromIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (w *jsiiProxy_WorkspacesIpGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
@@ -178,6 +186,14 @@ func (w *jsiiProxy_WorkspacesIpGroup) validateMoveToParameters(moveTarget *strin
 		// ok
 	default:
 		return fmt.Errorf("parameter index must be one of the allowed types: *string, *float64; received %#v (a %T)", index, index)
+	}
+
+	return nil
+}
+
+func (w *jsiiProxy_WorkspacesIpGroup) validateMoveToIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
 	return nil

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer}.
 type ComprehendEntityRecognizer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -122,12 +122,22 @@ type ComprehendEntityRecognizer interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -592,7 +602,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizer) VpcConfigInput() *ComprehendEntit
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer} Resource.
 func NewComprehendEntityRecognizer(scope constructs.Construct, id *string, config *ComprehendEntityRecognizerConfig) ComprehendEntityRecognizer {
 	_init_.Initialize()
 
@@ -610,7 +620,7 @@ func NewComprehendEntityRecognizer(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer} Resource.
 func NewComprehendEntityRecognizer_Override(c ComprehendEntityRecognizer, scope constructs.Construct, id *string, config *ComprehendEntityRecognizerConfig) {
 	_init_.Initialize()
 
@@ -1068,6 +1078,19 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) GetStringMapAttribute(terraformAt
 	return returns
 }
 
+func (c *jsiiProxy_ComprehendEntityRecognizer) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (c *jsiiProxy_ComprehendEntityRecognizer) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1095,6 +1118,17 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) InterpolationForAttribute(terrafo
 	return returns
 }
 
+func (c *jsiiProxy_ComprehendEntityRecognizer) MoveFromId(id *string) {
+	if err := c.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (c *jsiiProxy_ComprehendEntityRecognizer) MoveTo(moveTarget *string, index interface{}) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1103,6 +1137,17 @@ func (c *jsiiProxy_ComprehendEntityRecognizer) MoveTo(moveTarget *string, index 
 		c,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (c *jsiiProxy_ComprehendEntityRecognizer) MoveToId(id *string) {
+	if err := c.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

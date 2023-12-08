@@ -59,7 +59,15 @@ func (e *jsiiProxy_Ec2ManagedPrefixList) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (e *jsiiProxy_Ec2ManagedPrefixList) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2ManagedPrefixList) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2ManagedPrefixList) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

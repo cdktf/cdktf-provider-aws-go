@@ -59,7 +59,15 @@ func (i *jsiiProxy_ImagebuilderImageRecipe) validateInterpolationForAttributePar
 	return nil
 }
 
+func (i *jsiiProxy_ImagebuilderImageRecipe) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_ImagebuilderImageRecipe) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_ImagebuilderImageRecipe) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (v *jsiiProxy_VolumeAttachment) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (v *jsiiProxy_VolumeAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VolumeAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VolumeAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

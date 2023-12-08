@@ -59,7 +59,15 @@ func (e *jsiiProxy_EmrBlockPublicAccessConfiguration) validateInterpolationForAt
 	return nil
 }
 
+func (e *jsiiProxy_EmrBlockPublicAccessConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrBlockPublicAccessConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmrBlockPublicAccessConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

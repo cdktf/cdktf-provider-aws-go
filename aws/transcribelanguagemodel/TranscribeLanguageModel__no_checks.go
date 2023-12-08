@@ -59,7 +59,15 @@ func (t *jsiiProxy_TranscribeLanguageModel) validateInterpolationForAttributePar
 	return nil
 }
 
+func (t *jsiiProxy_TranscribeLanguageModel) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TranscribeLanguageModel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TranscribeLanguageModel) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

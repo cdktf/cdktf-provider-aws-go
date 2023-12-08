@@ -59,7 +59,15 @@ func (c *jsiiProxy_ConnectQuickConnect) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_ConnectQuickConnect) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectQuickConnect) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectQuickConnect) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

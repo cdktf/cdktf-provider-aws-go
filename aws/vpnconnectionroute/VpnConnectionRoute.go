@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpn_connection_route aws_vpn_connection_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/vpn_connection_route aws_vpn_connection_route}.
 type VpnConnectionRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -94,12 +94,22 @@ type VpnConnectionRoute interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -343,7 +353,7 @@ func (j *jsiiProxy_VpnConnectionRoute) VpnConnectionIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpn_connection_route aws_vpn_connection_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/vpn_connection_route aws_vpn_connection_route} Resource.
 func NewVpnConnectionRoute(scope constructs.Construct, id *string, config *VpnConnectionRouteConfig) VpnConnectionRoute {
 	_init_.Initialize()
 
@@ -361,7 +371,7 @@ func NewVpnConnectionRoute(scope constructs.Construct, id *string, config *VpnCo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpn_connection_route aws_vpn_connection_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/vpn_connection_route aws_vpn_connection_route} Resource.
 func NewVpnConnectionRoute_Override(v VpnConnectionRoute, scope constructs.Construct, id *string, config *VpnConnectionRouteConfig) {
 	_init_.Initialize()
 
@@ -742,6 +752,19 @@ func (v *jsiiProxy_VpnConnectionRoute) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (v *jsiiProxy_VpnConnectionRoute) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		v,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (v *jsiiProxy_VpnConnectionRoute) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := v.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -769,6 +792,17 @@ func (v *jsiiProxy_VpnConnectionRoute) InterpolationForAttribute(terraformAttrib
 	return returns
 }
 
+func (v *jsiiProxy_VpnConnectionRoute) MoveFromId(id *string) {
+	if err := v.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (v *jsiiProxy_VpnConnectionRoute) MoveTo(moveTarget *string, index interface{}) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -777,6 +811,17 @@ func (v *jsiiProxy_VpnConnectionRoute) MoveTo(moveTarget *string, index interfac
 		v,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (v *jsiiProxy_VpnConnectionRoute) MoveToId(id *string) {
+	if err := v.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

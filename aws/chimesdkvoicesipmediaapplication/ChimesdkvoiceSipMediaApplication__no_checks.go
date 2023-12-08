@@ -59,7 +59,15 @@ func (c *jsiiProxy_ChimesdkvoiceSipMediaApplication) validateInterpolationForAtt
 	return nil
 }
 
+func (c *jsiiProxy_ChimesdkvoiceSipMediaApplication) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChimesdkvoiceSipMediaApplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ChimesdkvoiceSipMediaApplication) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

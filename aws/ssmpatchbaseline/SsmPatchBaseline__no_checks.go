@@ -59,7 +59,15 @@ func (s *jsiiProxy_SsmPatchBaseline) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_SsmPatchBaseline) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsmPatchBaseline) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsmPatchBaseline) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

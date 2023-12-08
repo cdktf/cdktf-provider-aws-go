@@ -59,7 +59,15 @@ func (r *jsiiProxy_Route53ResolverQueryLogConfig) validateInterpolationForAttrib
 	return nil
 }
 
+func (r *jsiiProxy_Route53ResolverQueryLogConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53ResolverQueryLogConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53ResolverQueryLogConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

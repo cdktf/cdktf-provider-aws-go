@@ -59,7 +59,15 @@ func (x *jsiiProxy_XrayEncryptionConfig) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (x *jsiiProxy_XrayEncryptionConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (x *jsiiProxy_XrayEncryptionConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (x *jsiiProxy_XrayEncryptionConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

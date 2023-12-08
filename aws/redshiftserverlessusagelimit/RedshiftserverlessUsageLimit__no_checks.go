@@ -59,7 +59,15 @@ func (r *jsiiProxy_RedshiftserverlessUsageLimit) validateInterpolationForAttribu
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftserverlessUsageLimit) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftserverlessUsageLimit) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedshiftserverlessUsageLimit) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

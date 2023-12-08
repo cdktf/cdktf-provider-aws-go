@@ -59,7 +59,15 @@ func (f *jsiiProxy_FisExperimentTemplate) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (f *jsiiProxy_FisExperimentTemplate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FisExperimentTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FisExperimentTemplate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

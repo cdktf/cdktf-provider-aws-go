@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/cloud9_environment_ec2 aws_cloud9_environment_ec2}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/cloud9_environment_ec2 aws_cloud9_environment_ec2}.
 type Cloud9EnvironmentEc2 interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -120,12 +120,22 @@ type Cloud9EnvironmentEc2 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -557,7 +567,7 @@ func (j *jsiiProxy_Cloud9EnvironmentEc2) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/cloud9_environment_ec2 aws_cloud9_environment_ec2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/cloud9_environment_ec2 aws_cloud9_environment_ec2} Resource.
 func NewCloud9EnvironmentEc2(scope constructs.Construct, id *string, config *Cloud9EnvironmentEc2Config) Cloud9EnvironmentEc2 {
 	_init_.Initialize()
 
@@ -575,7 +585,7 @@ func NewCloud9EnvironmentEc2(scope constructs.Construct, id *string, config *Clo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/cloud9_environment_ec2 aws_cloud9_environment_ec2} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/cloud9_environment_ec2 aws_cloud9_environment_ec2} Resource.
 func NewCloud9EnvironmentEc2_Override(c Cloud9EnvironmentEc2, scope constructs.Construct, id *string, config *Cloud9EnvironmentEc2Config) {
 	_init_.Initialize()
 
@@ -1044,6 +1054,19 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (c *jsiiProxy_Cloud9EnvironmentEc2) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (c *jsiiProxy_Cloud9EnvironmentEc2) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1071,6 +1094,17 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (c *jsiiProxy_Cloud9EnvironmentEc2) MoveFromId(id *string) {
+	if err := c.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (c *jsiiProxy_Cloud9EnvironmentEc2) MoveTo(moveTarget *string, index interface{}) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1079,6 +1113,17 @@ func (c *jsiiProxy_Cloud9EnvironmentEc2) MoveTo(moveTarget *string, index interf
 		c,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (c *jsiiProxy_Cloud9EnvironmentEc2) MoveToId(id *string) {
+	if err := c.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

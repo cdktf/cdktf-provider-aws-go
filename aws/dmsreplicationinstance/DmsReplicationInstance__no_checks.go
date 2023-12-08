@@ -59,7 +59,15 @@ func (d *jsiiProxy_DmsReplicationInstance) validateInterpolationForAttributePara
 	return nil
 }
 
+func (d *jsiiProxy_DmsReplicationInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DmsReplicationInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DmsReplicationInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

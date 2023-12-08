@@ -23,6 +23,9 @@ type LbListenerTimeoutsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Create() *string
+	SetCreate(val *string)
+	CreateInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -32,9 +35,6 @@ type LbListenerTimeoutsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Read() *string
-	SetRead(val *string)
-	ReadInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -43,6 +43,9 @@ type LbListenerTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Update() *string
+	SetUpdate(val *string)
+	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -67,7 +70,8 @@ type LbListenerTimeoutsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetRead()
+	ResetCreate()
+	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -103,6 +107,26 @@ func (j *jsiiProxy_LbListenerTimeoutsOutputReference) ComplexObjectIsFromSet() *
 	return returns
 }
 
+func (j *jsiiProxy_LbListenerTimeoutsOutputReference) Create() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"create",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListenerTimeoutsOutputReference) CreateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"createInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LbListenerTimeoutsOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -133,26 +157,6 @@ func (j *jsiiProxy_LbListenerTimeoutsOutputReference) InternalValue() interface{
 	return returns
 }
 
-func (j *jsiiProxy_LbListenerTimeoutsOutputReference) Read() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"read",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_LbListenerTimeoutsOutputReference) ReadInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"readInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_LbListenerTimeoutsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -168,6 +172,26 @@ func (j *jsiiProxy_LbListenerTimeoutsOutputReference) TerraformResource() cdktf.
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListenerTimeoutsOutputReference) Update() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"update",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbListenerTimeoutsOutputReference) UpdateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateInput",
 		&returns,
 	)
 	return returns
@@ -223,6 +247,17 @@ func (j *jsiiProxy_LbListenerTimeoutsOutputReference)SetComplexObjectIsFromSet(v
 	)
 }
 
+func (j *jsiiProxy_LbListenerTimeoutsOutputReference)SetCreate(val *string) {
+	if err := j.validateSetCreateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"create",
+		val,
+	)
+}
+
 func (j *jsiiProxy_LbListenerTimeoutsOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -230,17 +265,6 @@ func (j *jsiiProxy_LbListenerTimeoutsOutputReference)SetInternalValue(val interf
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_LbListenerTimeoutsOutputReference)SetRead(val *string) {
-	if err := j.validateSetReadParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"read",
 		val,
 	)
 }
@@ -263,6 +287,17 @@ func (j *jsiiProxy_LbListenerTimeoutsOutputReference)SetTerraformResource(val cd
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbListenerTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"update",
 		val,
 	)
 }
@@ -453,10 +488,18 @@ func (l *jsiiProxy_LbListenerTimeoutsOutputReference) InterpolationForAttribute(
 	return returns
 }
 
-func (l *jsiiProxy_LbListenerTimeoutsOutputReference) ResetRead() {
+func (l *jsiiProxy_LbListenerTimeoutsOutputReference) ResetCreate() {
 	_jsii_.InvokeVoid(
 		l,
-		"resetRead",
+		"resetCreate",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbListenerTimeoutsOutputReference) ResetUpdate() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetUpdate",
 		nil, // no parameters
 	)
 }

@@ -59,7 +59,15 @@ func (c *jsiiProxy_CodestarconnectionsHost) validateInterpolationForAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_CodestarconnectionsHost) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodestarconnectionsHost) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodestarconnectionsHost) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

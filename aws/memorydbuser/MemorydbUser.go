@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/memorydb_user aws_memorydb_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/memorydb_user aws_memorydb_user}.
 type MemorydbUser interface {
 	cdktf.TerraformResource
 	AccessString() *string
@@ -104,12 +104,22 @@ type MemorydbUser interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -436,7 +446,7 @@ func (j *jsiiProxy_MemorydbUser) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/memorydb_user aws_memorydb_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/memorydb_user aws_memorydb_user} Resource.
 func NewMemorydbUser(scope constructs.Construct, id *string, config *MemorydbUserConfig) MemorydbUser {
 	_init_.Initialize()
 
@@ -454,7 +464,7 @@ func NewMemorydbUser(scope constructs.Construct, id *string, config *MemorydbUse
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/memorydb_user aws_memorydb_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/memorydb_user aws_memorydb_user} Resource.
 func NewMemorydbUser_Override(m MemorydbUser, scope constructs.Construct, id *string, config *MemorydbUserConfig) {
 	_init_.Initialize()
 
@@ -857,6 +867,19 @@ func (m *jsiiProxy_MemorydbUser) GetStringMapAttribute(terraformAttribute *strin
 	return returns
 }
 
+func (m *jsiiProxy_MemorydbUser) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (m *jsiiProxy_MemorydbUser) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := m.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -884,6 +907,17 @@ func (m *jsiiProxy_MemorydbUser) InterpolationForAttribute(terraformAttribute *s
 	return returns
 }
 
+func (m *jsiiProxy_MemorydbUser) MoveFromId(id *string) {
+	if err := m.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (m *jsiiProxy_MemorydbUser) MoveTo(moveTarget *string, index interface{}) {
 	if err := m.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -892,6 +926,17 @@ func (m *jsiiProxy_MemorydbUser) MoveTo(moveTarget *string, index interface{}) {
 		m,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (m *jsiiProxy_MemorydbUser) MoveToId(id *string) {
+	if err := m.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

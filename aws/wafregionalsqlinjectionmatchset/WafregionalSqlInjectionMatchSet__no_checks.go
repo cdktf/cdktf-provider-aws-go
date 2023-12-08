@@ -59,7 +59,15 @@ func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateInterpolationForAttr
 	return nil
 }
 
+func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalSqlInjectionMatchSet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

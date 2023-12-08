@@ -59,7 +59,15 @@ func (l *jsiiProxy_Lexv2ModelsBotVersion) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (l *jsiiProxy_Lexv2ModelsBotVersion) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_Lexv2ModelsBotVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_Lexv2ModelsBotVersion) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

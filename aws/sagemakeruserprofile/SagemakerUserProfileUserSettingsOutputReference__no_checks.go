@@ -51,6 +51,22 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) validatePutC
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) validatePutCodeEditorAppSettingsParameters(value *SagemakerUserProfileUserSettingsCodeEditorAppSettings) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) validatePutCustomFileSystemConfigParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) validatePutCustomPosixUserConfigParameters(value *SagemakerUserProfileUserSettingsCustomPosixUserConfig) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) validatePutJupyterLabAppSettingsParameters(value *SagemakerUserProfileUserSettingsJupyterLabAppSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) validatePutJupyterServerAppSettingsParameters(value *SagemakerUserProfileUserSettingsJupyterServerAppSettings) error {
 	return nil
 }
@@ -71,6 +87,10 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) validatePutS
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) validatePutSpaceStorageSettingsParameters(value *SagemakerUserProfileUserSettingsSpaceStorageSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) validatePutTensorBoardAppSettingsParameters(value *SagemakerUserProfileUserSettingsTensorBoardAppSettings) error {
 	return nil
 }
@@ -87,6 +107,10 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) validateSetDefaultLandingUriParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) validateSetExecutionRoleParameters(val *string) error {
 	return nil
 }
@@ -96,6 +120,10 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) validateSetI
 }
 
 func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) validateSetSecurityGroupsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) validateSetStudioWebPortalParameters(val *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (l *jsiiProxy_LightsailDisk) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (l *jsiiProxy_LightsailDisk) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailDisk) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LightsailDisk) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

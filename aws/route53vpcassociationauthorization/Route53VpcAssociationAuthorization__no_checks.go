@@ -59,7 +59,15 @@ func (r *jsiiProxy_Route53VpcAssociationAuthorization) validateInterpolationForA
 	return nil
 }
 
+func (r *jsiiProxy_Route53VpcAssociationAuthorization) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53VpcAssociationAuthorization) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53VpcAssociationAuthorization) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

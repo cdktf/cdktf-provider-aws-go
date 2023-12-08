@@ -59,7 +59,15 @@ func (a *jsiiProxy_AppstreamFleetStackAssociation) validateInterpolationForAttri
 	return nil
 }
 
+func (a *jsiiProxy_AppstreamFleetStackAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppstreamFleetStackAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppstreamFleetStackAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

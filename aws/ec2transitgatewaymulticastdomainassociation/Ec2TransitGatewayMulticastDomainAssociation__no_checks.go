@@ -59,7 +59,15 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation) validateInterpol
 	return nil
 }
 
+func (e *jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2TransitGatewayMulticastDomainAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

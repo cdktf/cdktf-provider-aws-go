@@ -59,7 +59,15 @@ func (b *jsiiProxy_BedrockModelInvocationLoggingConfiguration) validateInterpola
 	return nil
 }
 
+func (b *jsiiProxy_BedrockModelInvocationLoggingConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BedrockModelInvocationLoggingConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BedrockModelInvocationLoggingConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

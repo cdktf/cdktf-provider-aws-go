@@ -59,7 +59,15 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateInterpolati
 	return nil
 }
 
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

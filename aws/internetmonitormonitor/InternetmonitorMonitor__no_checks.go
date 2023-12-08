@@ -59,7 +59,15 @@ func (i *jsiiProxy_InternetmonitorMonitor) validateInterpolationForAttributePara
 	return nil
 }
 
+func (i *jsiiProxy_InternetmonitorMonitor) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_InternetmonitorMonitor) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_InternetmonitorMonitor) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

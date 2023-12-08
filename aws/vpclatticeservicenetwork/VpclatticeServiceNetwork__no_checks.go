@@ -59,7 +59,15 @@ func (v *jsiiProxy_VpclatticeServiceNetwork) validateInterpolationForAttributePa
 	return nil
 }
 
+func (v *jsiiProxy_VpclatticeServiceNetwork) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpclatticeServiceNetwork) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpclatticeServiceNetwork) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

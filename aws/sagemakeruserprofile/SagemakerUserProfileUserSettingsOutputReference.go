@@ -15,6 +15,8 @@ type SagemakerUserProfileUserSettingsOutputReference interface {
 	cdktf.ComplexObject
 	CanvasAppSettings() SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference
 	CanvasAppSettingsInput() *SagemakerUserProfileUserSettingsCanvasAppSettings
+	CodeEditorAppSettings() SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference
+	CodeEditorAppSettingsInput() *SagemakerUserProfileUserSettingsCodeEditorAppSettings
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,6 +32,13 @@ type SagemakerUserProfileUserSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomFileSystemConfig() SagemakerUserProfileUserSettingsCustomFileSystemConfigList
+	CustomFileSystemConfigInput() interface{}
+	CustomPosixUserConfig() SagemakerUserProfileUserSettingsCustomPosixUserConfigOutputReference
+	CustomPosixUserConfigInput() *SagemakerUserProfileUserSettingsCustomPosixUserConfig
+	DefaultLandingUri() *string
+	SetDefaultLandingUri(val *string)
+	DefaultLandingUriInput() *string
 	ExecutionRole() *string
 	SetExecutionRole(val *string)
 	ExecutionRoleInput() *string
@@ -37,6 +46,8 @@ type SagemakerUserProfileUserSettingsOutputReference interface {
 	Fqn() *string
 	InternalValue() *SagemakerUserProfileUserSettings
 	SetInternalValue(val *SagemakerUserProfileUserSettings)
+	JupyterLabAppSettings() SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference
+	JupyterLabAppSettingsInput() *SagemakerUserProfileUserSettingsJupyterLabAppSettings
 	JupyterServerAppSettings() SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference
 	JupyterServerAppSettingsInput() *SagemakerUserProfileUserSettingsJupyterServerAppSettings
 	KernelGatewayAppSettings() SagemakerUserProfileUserSettingsKernelGatewayAppSettingsOutputReference
@@ -50,6 +61,11 @@ type SagemakerUserProfileUserSettingsOutputReference interface {
 	SecurityGroupsInput() *[]*string
 	SharingSettings() SagemakerUserProfileUserSettingsSharingSettingsOutputReference
 	SharingSettingsInput() *SagemakerUserProfileUserSettingsSharingSettings
+	SpaceStorageSettings() SagemakerUserProfileUserSettingsSpaceStorageSettingsOutputReference
+	SpaceStorageSettingsInput() *SagemakerUserProfileUserSettingsSpaceStorageSettings
+	StudioWebPortal() *string
+	SetStudioWebPortal(val *string)
+	StudioWebPortalInput() *string
 	TensorBoardAppSettings() SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference
 	TensorBoardAppSettingsInput() *SagemakerUserProfileUserSettingsTensorBoardAppSettings
 	// Experimental.
@@ -85,19 +101,31 @@ type SagemakerUserProfileUserSettingsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCanvasAppSettings(value *SagemakerUserProfileUserSettingsCanvasAppSettings)
+	PutCodeEditorAppSettings(value *SagemakerUserProfileUserSettingsCodeEditorAppSettings)
+	PutCustomFileSystemConfig(value interface{})
+	PutCustomPosixUserConfig(value *SagemakerUserProfileUserSettingsCustomPosixUserConfig)
+	PutJupyterLabAppSettings(value *SagemakerUserProfileUserSettingsJupyterLabAppSettings)
 	PutJupyterServerAppSettings(value *SagemakerUserProfileUserSettingsJupyterServerAppSettings)
 	PutKernelGatewayAppSettings(value *SagemakerUserProfileUserSettingsKernelGatewayAppSettings)
 	PutRSessionAppSettings(value *SagemakerUserProfileUserSettingsRSessionAppSettings)
 	PutRStudioServerProAppSettings(value *SagemakerUserProfileUserSettingsRStudioServerProAppSettings)
 	PutSharingSettings(value *SagemakerUserProfileUserSettingsSharingSettings)
+	PutSpaceStorageSettings(value *SagemakerUserProfileUserSettingsSpaceStorageSettings)
 	PutTensorBoardAppSettings(value *SagemakerUserProfileUserSettingsTensorBoardAppSettings)
 	ResetCanvasAppSettings()
+	ResetCodeEditorAppSettings()
+	ResetCustomFileSystemConfig()
+	ResetCustomPosixUserConfig()
+	ResetDefaultLandingUri()
+	ResetJupyterLabAppSettings()
 	ResetJupyterServerAppSettings()
 	ResetKernelGatewayAppSettings()
 	ResetRSessionAppSettings()
 	ResetRStudioServerProAppSettings()
 	ResetSecurityGroups()
 	ResetSharingSettings()
+	ResetSpaceStorageSettings()
+	ResetStudioWebPortal()
 	ResetTensorBoardAppSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -134,6 +162,26 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) CanvasAppSet
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) CodeEditorAppSettings() SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference {
+	var returns SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"codeEditorAppSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) CodeEditorAppSettingsInput() *SagemakerUserProfileUserSettingsCodeEditorAppSettings {
+	var returns *SagemakerUserProfileUserSettingsCodeEditorAppSettings
+	_jsii_.Get(
+		j,
+		"codeEditorAppSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) ComplexObjectIndex() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -159,6 +207,66 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) CreationStac
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) CustomFileSystemConfig() SagemakerUserProfileUserSettingsCustomFileSystemConfigList {
+	var returns SagemakerUserProfileUserSettingsCustomFileSystemConfigList
+	_jsii_.Get(
+		j,
+		"customFileSystemConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) CustomFileSystemConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customFileSystemConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) CustomPosixUserConfig() SagemakerUserProfileUserSettingsCustomPosixUserConfigOutputReference {
+	var returns SagemakerUserProfileUserSettingsCustomPosixUserConfigOutputReference
+	_jsii_.Get(
+		j,
+		"customPosixUserConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) CustomPosixUserConfigInput() *SagemakerUserProfileUserSettingsCustomPosixUserConfig {
+	var returns *SagemakerUserProfileUserSettingsCustomPosixUserConfig
+	_jsii_.Get(
+		j,
+		"customPosixUserConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) DefaultLandingUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultLandingUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) DefaultLandingUriInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultLandingUriInput",
 		&returns,
 	)
 	return returns
@@ -199,6 +307,26 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) InternalValu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) JupyterLabAppSettings() SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference {
+	var returns SagemakerUserProfileUserSettingsJupyterLabAppSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"jupyterLabAppSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) JupyterLabAppSettingsInput() *SagemakerUserProfileUserSettingsJupyterLabAppSettings {
+	var returns *SagemakerUserProfileUserSettingsJupyterLabAppSettings
+	_jsii_.Get(
+		j,
+		"jupyterLabAppSettingsInput",
 		&returns,
 	)
 	return returns
@@ -324,6 +452,46 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) SharingSetti
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) SpaceStorageSettings() SagemakerUserProfileUserSettingsSpaceStorageSettingsOutputReference {
+	var returns SagemakerUserProfileUserSettingsSpaceStorageSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"spaceStorageSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) SpaceStorageSettingsInput() *SagemakerUserProfileUserSettingsSpaceStorageSettings {
+	var returns *SagemakerUserProfileUserSettingsSpaceStorageSettings
+	_jsii_.Get(
+		j,
+		"spaceStorageSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) StudioWebPortal() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"studioWebPortal",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) StudioWebPortalInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"studioWebPortalInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) TensorBoardAppSettings() SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference {
 	var returns SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference
 	_jsii_.Get(
@@ -414,6 +582,17 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference)SetComplexObj
 	)
 }
 
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference)SetDefaultLandingUri(val *string) {
+	if err := j.validateSetDefaultLandingUriParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultLandingUri",
+		val,
+	)
+}
+
 func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference)SetExecutionRole(val *string) {
 	if err := j.validateSetExecutionRoleParameters(val); err != nil {
 		panic(err)
@@ -443,6 +622,17 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference)SetSecurityGr
 	_jsii_.Set(
 		j,
 		"securityGroups",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference)SetStudioWebPortal(val *string) {
+	if err := j.validateSetStudioWebPortalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"studioWebPortal",
 		val,
 	)
 }
@@ -666,6 +856,50 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) PutCanvasApp
 	)
 }
 
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) PutCodeEditorAppSettings(value *SagemakerUserProfileUserSettingsCodeEditorAppSettings) {
+	if err := s.validatePutCodeEditorAppSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCodeEditorAppSettings",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) PutCustomFileSystemConfig(value interface{}) {
+	if err := s.validatePutCustomFileSystemConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCustomFileSystemConfig",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) PutCustomPosixUserConfig(value *SagemakerUserProfileUserSettingsCustomPosixUserConfig) {
+	if err := s.validatePutCustomPosixUserConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCustomPosixUserConfig",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) PutJupyterLabAppSettings(value *SagemakerUserProfileUserSettingsJupyterLabAppSettings) {
+	if err := s.validatePutJupyterLabAppSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putJupyterLabAppSettings",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) PutJupyterServerAppSettings(value *SagemakerUserProfileUserSettingsJupyterServerAppSettings) {
 	if err := s.validatePutJupyterServerAppSettingsParameters(value); err != nil {
 		panic(err)
@@ -721,6 +955,17 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) PutSharingSe
 	)
 }
 
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) PutSpaceStorageSettings(value *SagemakerUserProfileUserSettingsSpaceStorageSettings) {
+	if err := s.validatePutSpaceStorageSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putSpaceStorageSettings",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) PutTensorBoardAppSettings(value *SagemakerUserProfileUserSettingsTensorBoardAppSettings) {
 	if err := s.validatePutTensorBoardAppSettingsParameters(value); err != nil {
 		panic(err)
@@ -736,6 +981,46 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) ResetCanvasA
 	_jsii_.InvokeVoid(
 		s,
 		"resetCanvasAppSettings",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) ResetCodeEditorAppSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCodeEditorAppSettings",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) ResetCustomFileSystemConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomFileSystemConfig",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) ResetCustomPosixUserConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomPosixUserConfig",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) ResetDefaultLandingUri() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDefaultLandingUri",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) ResetJupyterLabAppSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetJupyterLabAppSettings",
 		nil, // no parameters
 	)
 }
@@ -784,6 +1069,22 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) ResetSharing
 	_jsii_.InvokeVoid(
 		s,
 		"resetSharingSettings",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) ResetSpaceStorageSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSpaceStorageSettings",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsOutputReference) ResetStudioWebPortal() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetStudioWebPortal",
 		nil, // no parameters
 	)
 }

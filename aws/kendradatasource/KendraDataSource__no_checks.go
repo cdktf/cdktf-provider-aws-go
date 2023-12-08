@@ -59,7 +59,15 @@ func (k *jsiiProxy_KendraDataSource) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (k *jsiiProxy_KendraDataSource) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KendraDataSource) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KendraDataSource) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

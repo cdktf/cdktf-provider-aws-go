@@ -59,7 +59,15 @@ func (d *jsiiProxy_DbEventSubscription) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (d *jsiiProxy_DbEventSubscription) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbEventSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbEventSubscription) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (r *jsiiProxy_RbinRule) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (r *jsiiProxy_RbinRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RbinRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RbinRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

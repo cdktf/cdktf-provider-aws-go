@@ -59,7 +59,15 @@ func (a *jsiiProxy_ApprunnerDefaultAutoScalingConfigurationVersion) validateInte
 	return nil
 }
 
+func (a *jsiiProxy_ApprunnerDefaultAutoScalingConfigurationVersion) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApprunnerDefaultAutoScalingConfigurationVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApprunnerDefaultAutoScalingConfigurationVersion) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

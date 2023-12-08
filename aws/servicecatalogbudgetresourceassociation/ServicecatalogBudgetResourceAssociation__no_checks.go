@@ -59,7 +59,15 @@ func (s *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateInterpolatio
 	return nil
 }
 
+func (s *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicecatalogBudgetResourceAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

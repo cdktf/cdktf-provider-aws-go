@@ -59,7 +59,15 @@ func (s *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateInterpolationForAt
 	return nil
 }
 
+func (s *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsoadminPermissionSetInlinePolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

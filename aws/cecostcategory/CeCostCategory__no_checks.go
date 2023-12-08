@@ -59,7 +59,15 @@ func (c *jsiiProxy_CeCostCategory) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (c *jsiiProxy_CeCostCategory) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CeCostCategory) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CeCostCategory) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

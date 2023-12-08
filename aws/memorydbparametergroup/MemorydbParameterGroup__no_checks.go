@@ -59,7 +59,15 @@ func (m *jsiiProxy_MemorydbParameterGroup) validateInterpolationForAttributePara
 	return nil
 }
 
+func (m *jsiiProxy_MemorydbParameterGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemorydbParameterGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemorydbParameterGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (w *jsiiProxy_WafregionalRuleGroup) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (w *jsiiProxy_WafregionalRuleGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalRuleGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalRuleGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

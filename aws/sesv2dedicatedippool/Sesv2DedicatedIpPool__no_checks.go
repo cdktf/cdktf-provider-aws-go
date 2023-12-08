@@ -59,7 +59,15 @@ func (s *jsiiProxy_Sesv2DedicatedIpPool) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (s *jsiiProxy_Sesv2DedicatedIpPool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Sesv2DedicatedIpPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_Sesv2DedicatedIpPool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

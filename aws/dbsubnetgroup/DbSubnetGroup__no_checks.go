@@ -59,7 +59,15 @@ func (d *jsiiProxy_DbSubnetGroup) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (d *jsiiProxy_DbSubnetGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbSubnetGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbSubnetGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

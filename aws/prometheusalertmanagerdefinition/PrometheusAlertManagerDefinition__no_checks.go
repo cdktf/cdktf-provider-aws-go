@@ -59,7 +59,15 @@ func (p *jsiiProxy_PrometheusAlertManagerDefinition) validateInterpolationForAtt
 	return nil
 }
 
+func (p *jsiiProxy_PrometheusAlertManagerDefinition) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrometheusAlertManagerDefinition) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrometheusAlertManagerDefinition) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

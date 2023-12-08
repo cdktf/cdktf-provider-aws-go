@@ -59,7 +59,15 @@ func (d *jsiiProxy_DxHostedPrivateVirtualInterface) validateInterpolationForAttr
 	return nil
 }
 
+func (d *jsiiProxy_DxHostedPrivateVirtualInterface) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxHostedPrivateVirtualInterface) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxHostedPrivateVirtualInterface) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

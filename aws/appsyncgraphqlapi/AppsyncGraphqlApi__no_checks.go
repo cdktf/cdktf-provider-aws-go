@@ -59,7 +59,15 @@ func (a *jsiiProxy_AppsyncGraphqlApi) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (a *jsiiProxy_AppsyncGraphqlApi) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppsyncGraphqlApi) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppsyncGraphqlApi) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

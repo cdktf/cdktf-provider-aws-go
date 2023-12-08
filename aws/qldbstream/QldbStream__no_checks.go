@@ -59,7 +59,15 @@ func (q *jsiiProxy_QldbStream) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (q *jsiiProxy_QldbStream) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QldbStream) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (q *jsiiProxy_QldbStream) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

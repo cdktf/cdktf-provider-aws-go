@@ -59,7 +59,15 @@ func (w *jsiiProxy_Wafv2RegexPatternSet) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2RegexPatternSet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2RegexPatternSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2RegexPatternSet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

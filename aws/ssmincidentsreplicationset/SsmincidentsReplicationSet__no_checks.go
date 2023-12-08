@@ -59,7 +59,15 @@ func (s *jsiiProxy_SsmincidentsReplicationSet) validateInterpolationForAttribute
 	return nil
 }
 
+func (s *jsiiProxy_SsmincidentsReplicationSet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsmincidentsReplicationSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsmincidentsReplicationSet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

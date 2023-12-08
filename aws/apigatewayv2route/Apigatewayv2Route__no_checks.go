@@ -59,7 +59,15 @@ func (a *jsiiProxy_Apigatewayv2Route) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (a *jsiiProxy_Apigatewayv2Route) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_Apigatewayv2Route) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_Apigatewayv2Route) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

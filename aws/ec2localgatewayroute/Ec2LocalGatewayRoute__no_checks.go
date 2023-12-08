@@ -59,7 +59,15 @@ func (e *jsiiProxy_Ec2LocalGatewayRoute) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (e *jsiiProxy_Ec2LocalGatewayRoute) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2LocalGatewayRoute) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2LocalGatewayRoute) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

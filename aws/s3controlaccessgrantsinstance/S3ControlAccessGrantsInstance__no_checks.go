@@ -59,7 +59,15 @@ func (s *jsiiProxy_S3ControlAccessGrantsInstance) validateInterpolationForAttrib
 	return nil
 }
 
+func (s *jsiiProxy_S3ControlAccessGrantsInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ControlAccessGrantsInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3ControlAccessGrantsInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/lb_listener aws_lb_listener}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lb_listener aws_lb_listener}.
 type DataAwsLbListener interface {
 	cdktf.TerraformDataSource
 	AlpnPolicy() *string
@@ -51,6 +51,7 @@ type DataAwsLbListener interface {
 	LoadBalancerArn() *string
 	SetLoadBalancerArn(val *string)
 	LoadBalancerArnInput() *string
+	MutualAuthentication() DataAwsLbListenerMutualAuthenticationList
 	// The tree node.
 	Node() constructs.Node
 	Port() *float64
@@ -295,6 +296,16 @@ func (j *jsiiProxy_DataAwsLbListener) LoadBalancerArnInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsLbListener) MutualAuthentication() DataAwsLbListenerMutualAuthenticationList {
+	var returns DataAwsLbListenerMutualAuthenticationList
+	_jsii_.Get(
+		j,
+		"mutualAuthentication",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsLbListener) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -436,7 +447,7 @@ func (j *jsiiProxy_DataAwsLbListener) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/lb_listener aws_lb_listener} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lb_listener aws_lb_listener} Data Source.
 func NewDataAwsLbListener(scope constructs.Construct, id *string, config *DataAwsLbListenerConfig) DataAwsLbListener {
 	_init_.Initialize()
 
@@ -454,7 +465,7 @@ func NewDataAwsLbListener(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/lb_listener aws_lb_listener} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lb_listener aws_lb_listener} Data Source.
 func NewDataAwsLbListener_Override(d DataAwsLbListener, scope constructs.Construct, id *string, config *DataAwsLbListenerConfig) {
 	_init_.Initialize()
 

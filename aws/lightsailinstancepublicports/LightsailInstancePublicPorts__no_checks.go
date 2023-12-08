@@ -59,7 +59,15 @@ func (l *jsiiProxy_LightsailInstancePublicPorts) validateInterpolationForAttribu
 	return nil
 }
 
+func (l *jsiiProxy_LightsailInstancePublicPorts) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailInstancePublicPorts) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LightsailInstancePublicPorts) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

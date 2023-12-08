@@ -59,7 +59,15 @@ func (c *jsiiProxy_CloudwatchEventBusPolicy) validateInterpolationForAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_CloudwatchEventBusPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchEventBusPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchEventBusPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

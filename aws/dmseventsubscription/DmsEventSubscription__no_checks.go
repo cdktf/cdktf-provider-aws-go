@@ -59,7 +59,15 @@ func (d *jsiiProxy_DmsEventSubscription) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (d *jsiiProxy_DmsEventSubscription) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DmsEventSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DmsEventSubscription) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

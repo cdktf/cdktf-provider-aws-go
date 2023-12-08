@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/directory_service_region aws_directory_service_region}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/directory_service_region aws_directory_service_region}.
 type DirectoryServiceRegion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -107,12 +107,22 @@ type DirectoryServiceRegion interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -462,7 +472,7 @@ func (j *jsiiProxy_DirectoryServiceRegion) VpcSettingsInput() *DirectoryServiceR
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/directory_service_region aws_directory_service_region} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/directory_service_region aws_directory_service_region} Resource.
 func NewDirectoryServiceRegion(scope constructs.Construct, id *string, config *DirectoryServiceRegionConfig) DirectoryServiceRegion {
 	_init_.Initialize()
 
@@ -480,7 +490,7 @@ func NewDirectoryServiceRegion(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/directory_service_region aws_directory_service_region} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/directory_service_region aws_directory_service_region} Resource.
 func NewDirectoryServiceRegion_Override(d DirectoryServiceRegion, scope constructs.Construct, id *string, config *DirectoryServiceRegionConfig) {
 	_init_.Initialize()
 
@@ -894,6 +904,19 @@ func (d *jsiiProxy_DirectoryServiceRegion) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
+func (d *jsiiProxy_DirectoryServiceRegion) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DirectoryServiceRegion) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -921,6 +944,17 @@ func (d *jsiiProxy_DirectoryServiceRegion) InterpolationForAttribute(terraformAt
 	return returns
 }
 
+func (d *jsiiProxy_DirectoryServiceRegion) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DirectoryServiceRegion) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -929,6 +963,17 @@ func (d *jsiiProxy_DirectoryServiceRegion) MoveTo(moveTarget *string, index inte
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DirectoryServiceRegion) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

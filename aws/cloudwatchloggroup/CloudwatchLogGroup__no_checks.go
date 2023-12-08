@@ -59,7 +59,15 @@ func (c *jsiiProxy_CloudwatchLogGroup) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (c *jsiiProxy_CloudwatchLogGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchLogGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudwatchLogGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -100,6 +108,10 @@ func (j *jsiiProxy_CloudwatchLogGroup) validateSetKmsKeyIdParameters(val *string
 }
 
 func (j *jsiiProxy_CloudwatchLogGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudwatchLogGroup) validateSetLogGroupClassParameters(val *string) error {
 	return nil
 }
 

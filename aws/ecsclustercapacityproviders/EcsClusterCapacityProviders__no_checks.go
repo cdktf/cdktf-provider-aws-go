@@ -59,7 +59,15 @@ func (e *jsiiProxy_EcsClusterCapacityProviders) validateInterpolationForAttribut
 	return nil
 }
 
+func (e *jsiiProxy_EcsClusterCapacityProviders) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsClusterCapacityProviders) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcsClusterCapacityProviders) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

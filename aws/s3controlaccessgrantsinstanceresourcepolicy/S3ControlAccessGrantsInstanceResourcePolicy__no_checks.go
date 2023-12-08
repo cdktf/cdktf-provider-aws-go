@@ -59,7 +59,15 @@ func (s *jsiiProxy_S3ControlAccessGrantsInstanceResourcePolicy) validateInterpol
 	return nil
 }
 
+func (s *jsiiProxy_S3ControlAccessGrantsInstanceResourcePolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ControlAccessGrantsInstanceResourcePolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3ControlAccessGrantsInstanceResourcePolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

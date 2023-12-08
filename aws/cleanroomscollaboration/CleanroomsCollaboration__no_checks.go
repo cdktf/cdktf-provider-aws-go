@@ -59,7 +59,15 @@ func (c *jsiiProxy_CleanroomsCollaboration) validateInterpolationForAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_CleanroomsCollaboration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CleanroomsCollaboration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CleanroomsCollaboration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

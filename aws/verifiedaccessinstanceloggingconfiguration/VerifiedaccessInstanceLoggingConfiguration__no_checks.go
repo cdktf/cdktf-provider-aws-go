@@ -59,7 +59,15 @@ func (v *jsiiProxy_VerifiedaccessInstanceLoggingConfiguration) validateInterpola
 	return nil
 }
 
+func (v *jsiiProxy_VerifiedaccessInstanceLoggingConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VerifiedaccessInstanceLoggingConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VerifiedaccessInstanceLoggingConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

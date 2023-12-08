@@ -59,7 +59,15 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) validateInterpolationForAttribut
 	return nil
 }
 
+func (t *jsiiProxy_TranscribeMedicalVocabulary) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TranscribeMedicalVocabulary) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TranscribeMedicalVocabulary) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

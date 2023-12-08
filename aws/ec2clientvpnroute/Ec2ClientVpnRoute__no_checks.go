@@ -59,7 +59,15 @@ func (e *jsiiProxy_Ec2ClientVpnRoute) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (e *jsiiProxy_Ec2ClientVpnRoute) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2ClientVpnRoute) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2ClientVpnRoute) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

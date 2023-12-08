@@ -59,7 +59,15 @@ func (d *jsiiProxy_DirectoryServiceTrust) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (d *jsiiProxy_DirectoryServiceTrust) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectoryServiceTrust) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectoryServiceTrust) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

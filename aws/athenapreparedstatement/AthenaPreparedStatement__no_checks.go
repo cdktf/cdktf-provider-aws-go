@@ -59,7 +59,15 @@ func (a *jsiiProxy_AthenaPreparedStatement) validateInterpolationForAttributePar
 	return nil
 }
 
+func (a *jsiiProxy_AthenaPreparedStatement) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AthenaPreparedStatement) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AthenaPreparedStatement) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DetectiveInvitationAccepter) validateInterpolationForAttribut
 	return nil
 }
 
+func (d *jsiiProxy_DetectiveInvitationAccepter) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DetectiveInvitationAccepter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DetectiveInvitationAccepter) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

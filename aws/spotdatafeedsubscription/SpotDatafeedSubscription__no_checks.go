@@ -59,7 +59,15 @@ func (s *jsiiProxy_SpotDatafeedSubscription) validateInterpolationForAttributePa
 	return nil
 }
 
+func (s *jsiiProxy_SpotDatafeedSubscription) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpotDatafeedSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpotDatafeedSubscription) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

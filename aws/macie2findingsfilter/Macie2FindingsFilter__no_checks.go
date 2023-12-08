@@ -59,7 +59,15 @@ func (m *jsiiProxy_Macie2FindingsFilter) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (m *jsiiProxy_Macie2FindingsFilter) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2FindingsFilter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

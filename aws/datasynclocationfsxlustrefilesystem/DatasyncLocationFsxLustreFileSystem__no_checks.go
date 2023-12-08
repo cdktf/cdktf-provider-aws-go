@@ -59,7 +59,15 @@ func (d *jsiiProxy_DatasyncLocationFsxLustreFileSystem) validateInterpolationFor
 	return nil
 }
 
+func (d *jsiiProxy_DatasyncLocationFsxLustreFileSystem) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncLocationFsxLustreFileSystem) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatasyncLocationFsxLustreFileSystem) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

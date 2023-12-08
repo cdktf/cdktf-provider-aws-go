@@ -59,7 +59,15 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) validateInterpolatio
 	return nil
 }
 
+func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

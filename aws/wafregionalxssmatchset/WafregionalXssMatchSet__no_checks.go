@@ -59,7 +59,15 @@ func (w *jsiiProxy_WafregionalXssMatchSet) validateInterpolationForAttributePara
 	return nil
 }
 
+func (w *jsiiProxy_WafregionalXssMatchSet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalXssMatchSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalXssMatchSet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

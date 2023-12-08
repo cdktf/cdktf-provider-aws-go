@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/quicksight_ingestion aws_quicksight_ingestion}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/quicksight_ingestion aws_quicksight_ingestion}.
 type QuicksightIngestion interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -100,12 +100,22 @@ type QuicksightIngestion interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -399,7 +409,7 @@ func (j *jsiiProxy_QuicksightIngestion) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/quicksight_ingestion aws_quicksight_ingestion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/quicksight_ingestion aws_quicksight_ingestion} Resource.
 func NewQuicksightIngestion(scope constructs.Construct, id *string, config *QuicksightIngestionConfig) QuicksightIngestion {
 	_init_.Initialize()
 
@@ -417,7 +427,7 @@ func NewQuicksightIngestion(scope constructs.Construct, id *string, config *Quic
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/quicksight_ingestion aws_quicksight_ingestion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/quicksight_ingestion aws_quicksight_ingestion} Resource.
 func NewQuicksightIngestion_Override(q QuicksightIngestion, scope constructs.Construct, id *string, config *QuicksightIngestionConfig) {
 	_init_.Initialize()
 
@@ -809,6 +819,19 @@ func (q *jsiiProxy_QuicksightIngestion) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (q *jsiiProxy_QuicksightIngestion) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		q,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (q *jsiiProxy_QuicksightIngestion) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := q.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -836,6 +859,17 @@ func (q *jsiiProxy_QuicksightIngestion) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (q *jsiiProxy_QuicksightIngestion) MoveFromId(id *string) {
+	if err := q.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (q *jsiiProxy_QuicksightIngestion) MoveTo(moveTarget *string, index interface{}) {
 	if err := q.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -844,6 +878,17 @@ func (q *jsiiProxy_QuicksightIngestion) MoveTo(moveTarget *string, index interfa
 		q,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (q *jsiiProxy_QuicksightIngestion) MoveToId(id *string) {
+	if err := q.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		q,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

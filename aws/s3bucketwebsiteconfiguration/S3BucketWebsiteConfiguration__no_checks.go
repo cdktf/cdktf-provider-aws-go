@@ -59,7 +59,15 @@ func (s *jsiiProxy_S3BucketWebsiteConfiguration) validateInterpolationForAttribu
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketWebsiteConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

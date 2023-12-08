@@ -59,7 +59,15 @@ func (e *jsiiProxy_ElastictranscoderPipeline) validateInterpolationForAttributeP
 	return nil
 }
 
+func (e *jsiiProxy_ElastictranscoderPipeline) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastictranscoderPipeline) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (s *jsiiProxy_SesIdentityNotificationTopic) validateInterpolationForAttribu
 	return nil
 }
 
+func (s *jsiiProxy_SesIdentityNotificationTopic) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SesIdentityNotificationTopic) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SesIdentityNotificationTopic) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

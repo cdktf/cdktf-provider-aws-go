@@ -59,7 +59,15 @@ func (v *jsiiProxy_VerifiedaccessTrustProvider) validateInterpolationForAttribut
 	return nil
 }
 
+func (v *jsiiProxy_VerifiedaccessTrustProvider) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VerifiedaccessTrustProvider) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VerifiedaccessTrustProvider) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

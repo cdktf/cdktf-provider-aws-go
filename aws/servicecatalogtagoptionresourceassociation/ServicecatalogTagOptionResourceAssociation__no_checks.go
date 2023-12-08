@@ -59,7 +59,15 @@ func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateInterpola
 	return nil
 }
 
+func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

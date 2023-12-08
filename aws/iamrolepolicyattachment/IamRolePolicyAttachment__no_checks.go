@@ -59,7 +59,15 @@ func (i *jsiiProxy_IamRolePolicyAttachment) validateInterpolationForAttributePar
 	return nil
 }
 
+func (i *jsiiProxy_IamRolePolicyAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamRolePolicyAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamRolePolicyAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DxBgpPeer) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (d *jsiiProxy_DxBgpPeer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxBgpPeer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxBgpPeer) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

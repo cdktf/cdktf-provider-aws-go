@@ -59,7 +59,15 @@ func (d *jsiiProxy_DxMacsecKeyAssociation) validateInterpolationForAttributePara
 	return nil
 }
 
+func (d *jsiiProxy_DxMacsecKeyAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxMacsecKeyAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxMacsecKeyAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

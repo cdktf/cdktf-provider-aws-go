@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group}.
 type VerifiedaccessGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -109,12 +109,22 @@ type VerifiedaccessGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -482,7 +492,7 @@ func (j *jsiiProxy_VerifiedaccessGroup) VerifiedaccessInstanceIdInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group} Resource.
 func NewVerifiedaccessGroup(scope constructs.Construct, id *string, config *VerifiedaccessGroupConfig) VerifiedaccessGroup {
 	_init_.Initialize()
 
@@ -500,7 +510,7 @@ func NewVerifiedaccessGroup(scope constructs.Construct, id *string, config *Veri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group} Resource.
 func NewVerifiedaccessGroup_Override(v VerifiedaccessGroup, scope constructs.Construct, id *string, config *VerifiedaccessGroupConfig) {
 	_init_.Initialize()
 
@@ -914,6 +924,19 @@ func (v *jsiiProxy_VerifiedaccessGroup) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (v *jsiiProxy_VerifiedaccessGroup) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		v,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (v *jsiiProxy_VerifiedaccessGroup) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := v.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -941,6 +964,17 @@ func (v *jsiiProxy_VerifiedaccessGroup) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (v *jsiiProxy_VerifiedaccessGroup) MoveFromId(id *string) {
+	if err := v.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (v *jsiiProxy_VerifiedaccessGroup) MoveTo(moveTarget *string, index interface{}) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -949,6 +983,17 @@ func (v *jsiiProxy_VerifiedaccessGroup) MoveTo(moveTarget *string, index interfa
 		v,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (v *jsiiProxy_VerifiedaccessGroup) MoveToId(id *string) {
+	if err := v.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

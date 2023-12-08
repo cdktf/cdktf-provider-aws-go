@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lightsail_bucket_access_key aws_lightsail_bucket_access_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lightsail_bucket_access_key aws_lightsail_bucket_access_key}.
 type LightsailBucketAccessKey interface {
 	cdktf.TerraformResource
 	AccessKeyId() *string
@@ -95,12 +95,22 @@ type LightsailBucketAccessKey interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -364,7 +374,7 @@ func (j *jsiiProxy_LightsailBucketAccessKey) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lightsail_bucket_access_key aws_lightsail_bucket_access_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lightsail_bucket_access_key aws_lightsail_bucket_access_key} Resource.
 func NewLightsailBucketAccessKey(scope constructs.Construct, id *string, config *LightsailBucketAccessKeyConfig) LightsailBucketAccessKey {
 	_init_.Initialize()
 
@@ -382,7 +392,7 @@ func NewLightsailBucketAccessKey(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lightsail_bucket_access_key aws_lightsail_bucket_access_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lightsail_bucket_access_key aws_lightsail_bucket_access_key} Resource.
 func NewLightsailBucketAccessKey_Override(l LightsailBucketAccessKey, scope constructs.Construct, id *string, config *LightsailBucketAccessKeyConfig) {
 	_init_.Initialize()
 
@@ -752,6 +762,19 @@ func (l *jsiiProxy_LightsailBucketAccessKey) GetStringMapAttribute(terraformAttr
 	return returns
 }
 
+func (l *jsiiProxy_LightsailBucketAccessKey) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		l,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (l *jsiiProxy_LightsailBucketAccessKey) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := l.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -779,6 +802,17 @@ func (l *jsiiProxy_LightsailBucketAccessKey) InterpolationForAttribute(terraform
 	return returns
 }
 
+func (l *jsiiProxy_LightsailBucketAccessKey) MoveFromId(id *string) {
+	if err := l.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (l *jsiiProxy_LightsailBucketAccessKey) MoveTo(moveTarget *string, index interface{}) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -787,6 +821,17 @@ func (l *jsiiProxy_LightsailBucketAccessKey) MoveTo(moveTarget *string, index in
 		l,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (l *jsiiProxy_LightsailBucketAccessKey) MoveToId(id *string) {
+	if err := l.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

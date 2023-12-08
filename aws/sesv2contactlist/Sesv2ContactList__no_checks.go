@@ -59,7 +59,15 @@ func (s *jsiiProxy_Sesv2ContactList) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_Sesv2ContactList) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Sesv2ContactList) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_Sesv2ContactList) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

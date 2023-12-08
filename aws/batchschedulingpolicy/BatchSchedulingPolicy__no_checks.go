@@ -59,7 +59,15 @@ func (b *jsiiProxy_BatchSchedulingPolicy) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (b *jsiiProxy_BatchSchedulingPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BatchSchedulingPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BatchSchedulingPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

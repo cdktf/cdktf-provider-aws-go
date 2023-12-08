@@ -59,7 +59,15 @@ func (s *jsiiProxy_StoragegatewayFileSystemAssociation) validateInterpolationFor
 	return nil
 }
 
+func (s *jsiiProxy_StoragegatewayFileSystemAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StoragegatewayFileSystemAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StoragegatewayFileSystemAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

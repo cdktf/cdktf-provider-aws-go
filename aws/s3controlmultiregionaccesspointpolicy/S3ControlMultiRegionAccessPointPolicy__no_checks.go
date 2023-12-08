@@ -59,7 +59,15 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointPolicy) validateInterpolationF
 	return nil
 }
 
+func (s *jsiiProxy_S3ControlMultiRegionAccessPointPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ControlMultiRegionAccessPointPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3ControlMultiRegionAccessPointPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

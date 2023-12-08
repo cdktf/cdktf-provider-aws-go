@@ -59,7 +59,15 @@ func (o *jsiiProxy_OpsworksMemcachedLayer) validateInterpolationForAttributePara
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksMemcachedLayer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksMemcachedLayer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksMemcachedLayer) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (s *jsiiProxy_ShieldDrtAccessRoleArnAssociation) validateInterpolationForAt
 	return nil
 }
 
+func (s *jsiiProxy_ShieldDrtAccessRoleArnAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ShieldDrtAccessRoleArnAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_ShieldDrtAccessRoleArnAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

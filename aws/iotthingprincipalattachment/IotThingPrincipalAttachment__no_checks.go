@@ -59,7 +59,15 @@ func (i *jsiiProxy_IotThingPrincipalAttachment) validateInterpolationForAttribut
 	return nil
 }
 
+func (i *jsiiProxy_IotThingPrincipalAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotThingPrincipalAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotThingPrincipalAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (c *jsiiProxy_Cloudtrail) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (c *jsiiProxy_Cloudtrail) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudtrail) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_Cloudtrail) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

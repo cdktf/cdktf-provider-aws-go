@@ -59,7 +59,15 @@ func (s *jsiiProxy_SnsTopicDataProtectionPolicy) validateInterpolationForAttribu
 	return nil
 }
 
+func (s *jsiiProxy_SnsTopicDataProtectionPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SnsTopicDataProtectionPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SnsTopicDataProtectionPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

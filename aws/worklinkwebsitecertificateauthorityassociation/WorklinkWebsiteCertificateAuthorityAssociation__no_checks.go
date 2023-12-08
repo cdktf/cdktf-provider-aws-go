@@ -59,7 +59,15 @@ func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateInter
 	return nil
 }
 
+func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorklinkWebsiteCertificateAuthorityAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

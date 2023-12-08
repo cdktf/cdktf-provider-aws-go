@@ -59,7 +59,15 @@ func (e *jsiiProxy_EmrcontainersJobTemplate) validateInterpolationForAttributePa
 	return nil
 }
 
+func (e *jsiiProxy_EmrcontainersJobTemplate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrcontainersJobTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmrcontainersJobTemplate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

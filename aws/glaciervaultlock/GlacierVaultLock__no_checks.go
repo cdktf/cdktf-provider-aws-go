@@ -59,7 +59,15 @@ func (g *jsiiProxy_GlacierVaultLock) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (g *jsiiProxy_GlacierVaultLock) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlacierVaultLock) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlacierVaultLock) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

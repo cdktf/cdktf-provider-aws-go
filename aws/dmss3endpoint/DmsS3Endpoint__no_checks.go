@@ -59,7 +59,15 @@ func (d *jsiiProxy_DmsS3Endpoint) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (d *jsiiProxy_DmsS3Endpoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DmsS3Endpoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DmsS3Endpoint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

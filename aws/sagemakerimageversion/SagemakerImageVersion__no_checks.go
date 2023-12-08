@@ -59,7 +59,15 @@ func (s *jsiiProxy_SagemakerImageVersion) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerImageVersion) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerImageVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerImageVersion) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

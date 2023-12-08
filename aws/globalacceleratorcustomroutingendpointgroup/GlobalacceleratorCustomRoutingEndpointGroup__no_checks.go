@@ -59,7 +59,15 @@ func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroup) validateInterpol
 	return nil
 }
 
+func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlobalacceleratorCustomRoutingEndpointGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

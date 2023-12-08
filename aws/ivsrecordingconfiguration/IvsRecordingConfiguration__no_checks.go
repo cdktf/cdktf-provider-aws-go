@@ -59,7 +59,15 @@ func (i *jsiiProxy_IvsRecordingConfiguration) validateInterpolationForAttributeP
 	return nil
 }
 
+func (i *jsiiProxy_IvsRecordingConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IvsRecordingConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IvsRecordingConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

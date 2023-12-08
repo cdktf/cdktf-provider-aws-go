@@ -59,7 +59,15 @@ func (p *jsiiProxy_PinpointApnsVoipChannel) validateInterpolationForAttributePar
 	return nil
 }
 
+func (p *jsiiProxy_PinpointApnsVoipChannel) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PinpointApnsVoipChannel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PinpointApnsVoipChannel) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

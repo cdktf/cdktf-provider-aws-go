@@ -59,7 +59,15 @@ func (t *jsiiProxy_TimestreamwriteTable) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (t *jsiiProxy_TimestreamwriteTable) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TimestreamwriteTable) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TimestreamwriteTable) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

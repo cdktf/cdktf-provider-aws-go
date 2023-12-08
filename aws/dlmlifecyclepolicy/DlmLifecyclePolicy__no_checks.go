@@ -59,7 +59,15 @@ func (d *jsiiProxy_DlmLifecyclePolicy) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (d *jsiiProxy_DlmLifecyclePolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DlmLifecyclePolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DlmLifecyclePolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

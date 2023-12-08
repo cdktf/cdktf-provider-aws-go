@@ -59,7 +59,15 @@ func (e *jsiiProxy_Ec2SerialConsoleAccess) validateInterpolationForAttributePara
 	return nil
 }
 
+func (e *jsiiProxy_Ec2SerialConsoleAccess) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2SerialConsoleAccess) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2SerialConsoleAccess) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (c *jsiiProxy_ConnectBotAssociation) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_ConnectBotAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectBotAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectBotAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

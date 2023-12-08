@@ -59,7 +59,15 @@ func (f *jsiiProxy_FmsAdminAccount) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (f *jsiiProxy_FmsAdminAccount) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FmsAdminAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FmsAdminAccount) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

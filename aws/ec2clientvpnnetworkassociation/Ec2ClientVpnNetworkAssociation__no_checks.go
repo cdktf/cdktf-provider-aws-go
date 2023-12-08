@@ -59,7 +59,15 @@ func (e *jsiiProxy_Ec2ClientVpnNetworkAssociation) validateInterpolationForAttri
 	return nil
 }
 
+func (e *jsiiProxy_Ec2ClientVpnNetworkAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2ClientVpnNetworkAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2ClientVpnNetworkAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

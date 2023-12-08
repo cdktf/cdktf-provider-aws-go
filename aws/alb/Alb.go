@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb aws_alb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb aws_alb}.
 type Alb interface {
 	cdktf.TerraformResource
 	AccessLogs() AlbAccessLogsOutputReference
@@ -66,6 +66,9 @@ type Alb interface {
 	EnableXffClientPort() interface{}
 	SetEnableXffClientPort(val interface{})
 	EnableXffClientPortInput() interface{}
+	EnforceSecurityGroupInboundRulesOnPrivateLinkTraffic() *string
+	SetEnforceSecurityGroupInboundRulesOnPrivateLinkTraffic(val *string)
+	EnforceSecurityGroupInboundRulesOnPrivateLinkTrafficInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -165,12 +168,22 @@ type Alb interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -188,6 +201,7 @@ type Alb interface {
 	ResetEnableTlsVersionAndCipherSuiteHeaders()
 	ResetEnableWafFailOpen()
 	ResetEnableXffClientPort()
+	ResetEnforceSecurityGroupInboundRulesOnPrivateLinkTraffic()
 	ResetId()
 	ResetIdleTimeout()
 	ResetInternal()
@@ -516,6 +530,26 @@ func (j *jsiiProxy_Alb) EnableXffClientPortInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableXffClientPortInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Alb) EnforceSecurityGroupInboundRulesOnPrivateLinkTraffic() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enforceSecurityGroupInboundRulesOnPrivateLinkTraffic",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Alb) EnforceSecurityGroupInboundRulesOnPrivateLinkTrafficInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"enforceSecurityGroupInboundRulesOnPrivateLinkTrafficInput",
 		&returns,
 	)
 	return returns
@@ -952,7 +986,7 @@ func (j *jsiiProxy_Alb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb aws_alb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb aws_alb} Resource.
 func NewAlb(scope constructs.Construct, id *string, config *AlbConfig) Alb {
 	_init_.Initialize()
 
@@ -970,7 +1004,7 @@ func NewAlb(scope constructs.Construct, id *string, config *AlbConfig) Alb {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb aws_alb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb aws_alb} Resource.
 func NewAlb_Override(a Alb, scope constructs.Construct, id *string, config *AlbConfig) {
 	_init_.Initialize()
 
@@ -1117,6 +1151,17 @@ func (j *jsiiProxy_Alb)SetEnableXffClientPort(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableXffClientPort",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Alb)SetEnforceSecurityGroupInboundRulesOnPrivateLinkTraffic(val *string) {
+	if err := j.validateSetEnforceSecurityGroupInboundRulesOnPrivateLinkTrafficParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enforceSecurityGroupInboundRulesOnPrivateLinkTraffic",
 		val,
 	)
 }
@@ -1571,6 +1616,19 @@ func (a *jsiiProxy_Alb) GetStringMapAttribute(terraformAttribute *string) *map[s
 	return returns
 }
 
+func (a *jsiiProxy_Alb) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_Alb) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1598,6 +1656,17 @@ func (a *jsiiProxy_Alb) InterpolationForAttribute(terraformAttribute *string) cd
 	return returns
 }
 
+func (a *jsiiProxy_Alb) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_Alb) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1606,6 +1675,17 @@ func (a *jsiiProxy_Alb) MoveTo(moveTarget *string, index interface{}) {
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_Alb) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -1737,6 +1817,14 @@ func (a *jsiiProxy_Alb) ResetEnableXffClientPort() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEnableXffClientPort",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Alb) ResetEnforceSecurityGroupInboundRulesOnPrivateLinkTraffic() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEnforceSecurityGroupInboundRulesOnPrivateLinkTraffic",
 		nil, // no parameters
 	)
 }

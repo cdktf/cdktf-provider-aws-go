@@ -59,7 +59,15 @@ func (e *jsiiProxy_ElasticacheUserGroup) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (e *jsiiProxy_ElasticacheUserGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticacheUserGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticacheUserGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

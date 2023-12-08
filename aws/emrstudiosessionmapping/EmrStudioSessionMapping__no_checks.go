@@ -59,7 +59,15 @@ func (e *jsiiProxy_EmrStudioSessionMapping) validateInterpolationForAttributePar
 	return nil
 }
 
+func (e *jsiiProxy_EmrStudioSessionMapping) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrStudioSessionMapping) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmrStudioSessionMapping) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

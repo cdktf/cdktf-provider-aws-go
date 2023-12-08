@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/s3control_storage_lens_configuration aws_s3control_storage_lens_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/s3control_storage_lens_configuration aws_s3control_storage_lens_configuration}.
 type S3ControlStorageLensConfiguration interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -103,12 +103,22 @@ type S3ControlStorageLensConfiguration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -426,7 +436,7 @@ func (j *jsiiProxy_S3ControlStorageLensConfiguration) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/s3control_storage_lens_configuration aws_s3control_storage_lens_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/s3control_storage_lens_configuration aws_s3control_storage_lens_configuration} Resource.
 func NewS3ControlStorageLensConfiguration(scope constructs.Construct, id *string, config *S3ControlStorageLensConfigurationConfig) S3ControlStorageLensConfiguration {
 	_init_.Initialize()
 
@@ -444,7 +454,7 @@ func NewS3ControlStorageLensConfiguration(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/s3control_storage_lens_configuration aws_s3control_storage_lens_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/s3control_storage_lens_configuration aws_s3control_storage_lens_configuration} Resource.
 func NewS3ControlStorageLensConfiguration_Override(s S3ControlStorageLensConfiguration, scope constructs.Construct, id *string, config *S3ControlStorageLensConfigurationConfig) {
 	_init_.Initialize()
 
@@ -847,6 +857,19 @@ func (s *jsiiProxy_S3ControlStorageLensConfiguration) GetStringMapAttribute(terr
 	return returns
 }
 
+func (s *jsiiProxy_S3ControlStorageLensConfiguration) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_S3ControlStorageLensConfiguration) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -874,6 +897,17 @@ func (s *jsiiProxy_S3ControlStorageLensConfiguration) InterpolationForAttribute(
 	return returns
 }
 
+func (s *jsiiProxy_S3ControlStorageLensConfiguration) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_S3ControlStorageLensConfiguration) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -882,6 +916,17 @@ func (s *jsiiProxy_S3ControlStorageLensConfiguration) MoveTo(moveTarget *string,
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_S3ControlStorageLensConfiguration) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

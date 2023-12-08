@@ -59,7 +59,15 @@ func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicy) validateInterpolationFo
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontContinuousDeploymentPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

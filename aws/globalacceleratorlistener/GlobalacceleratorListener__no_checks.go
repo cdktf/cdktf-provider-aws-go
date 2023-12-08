@@ -59,7 +59,15 @@ func (g *jsiiProxy_GlobalacceleratorListener) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GlobalacceleratorListener) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlobalacceleratorListener) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlobalacceleratorListener) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (s *jsiiProxy_S3BucketCorsConfiguration) validateInterpolationForAttributeP
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketCorsConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketCorsConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketCorsConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

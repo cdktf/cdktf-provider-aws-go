@@ -59,7 +59,15 @@ func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) validateInterpolatio
 	return nil
 }
 
+func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcNetworkPerformanceMetricSubscription) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

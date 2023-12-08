@@ -59,7 +59,15 @@ func (d *jsiiProxy_DynamodbTableReplicaA) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (d *jsiiProxy_DynamodbTableReplicaA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DynamodbTableReplicaA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DynamodbTableReplicaA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

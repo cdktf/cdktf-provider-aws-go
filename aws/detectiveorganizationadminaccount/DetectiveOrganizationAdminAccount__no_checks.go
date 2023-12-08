@@ -59,7 +59,15 @@ func (d *jsiiProxy_DetectiveOrganizationAdminAccount) validateInterpolationForAt
 	return nil
 }
 
+func (d *jsiiProxy_DetectiveOrganizationAdminAccount) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DetectiveOrganizationAdminAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DetectiveOrganizationAdminAccount) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

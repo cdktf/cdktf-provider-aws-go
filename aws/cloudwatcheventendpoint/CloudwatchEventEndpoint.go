@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/cloudwatch_event_endpoint aws_cloudwatch_event_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/cloudwatch_event_endpoint aws_cloudwatch_event_endpoint}.
 type CloudwatchEventEndpoint interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -105,12 +105,22 @@ type CloudwatchEventEndpoint interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -460,7 +470,7 @@ func (j *jsiiProxy_CloudwatchEventEndpoint) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/cloudwatch_event_endpoint aws_cloudwatch_event_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/cloudwatch_event_endpoint aws_cloudwatch_event_endpoint} Resource.
 func NewCloudwatchEventEndpoint(scope constructs.Construct, id *string, config *CloudwatchEventEndpointConfig) CloudwatchEventEndpoint {
 	_init_.Initialize()
 
@@ -478,7 +488,7 @@ func NewCloudwatchEventEndpoint(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/cloudwatch_event_endpoint aws_cloudwatch_event_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/cloudwatch_event_endpoint aws_cloudwatch_event_endpoint} Resource.
 func NewCloudwatchEventEndpoint_Override(c CloudwatchEventEndpoint, scope constructs.Construct, id *string, config *CloudwatchEventEndpointConfig) {
 	_init_.Initialize()
 
@@ -870,6 +880,19 @@ func (c *jsiiProxy_CloudwatchEventEndpoint) GetStringMapAttribute(terraformAttri
 	return returns
 }
 
+func (c *jsiiProxy_CloudwatchEventEndpoint) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (c *jsiiProxy_CloudwatchEventEndpoint) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -897,6 +920,17 @@ func (c *jsiiProxy_CloudwatchEventEndpoint) InterpolationForAttribute(terraformA
 	return returns
 }
 
+func (c *jsiiProxy_CloudwatchEventEndpoint) MoveFromId(id *string) {
+	if err := c.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (c *jsiiProxy_CloudwatchEventEndpoint) MoveTo(moveTarget *string, index interface{}) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -905,6 +939,17 @@ func (c *jsiiProxy_CloudwatchEventEndpoint) MoveTo(moveTarget *string, index int
 		c,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventEndpoint) MoveToId(id *string) {
+	if err := c.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

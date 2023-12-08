@@ -59,7 +59,15 @@ func (s *jsiiProxy_S3BucketObjectLockConfigurationA) validateInterpolationForAtt
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketObjectLockConfigurationA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketObjectLockConfigurationA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketObjectLockConfigurationA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

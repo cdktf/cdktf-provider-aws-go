@@ -59,7 +59,15 @@ func (a *jsiiProxy_ApprunnerCustomDomainAssociation) validateInterpolationForAtt
 	return nil
 }
 
+func (a *jsiiProxy_ApprunnerCustomDomainAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApprunnerCustomDomainAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApprunnerCustomDomainAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

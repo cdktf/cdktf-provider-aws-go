@@ -59,7 +59,15 @@ func (m *jsiiProxy_MwaaEnvironment) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (m *jsiiProxy_MwaaEnvironment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwaaEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MwaaEnvironment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

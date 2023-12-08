@@ -59,7 +59,15 @@ func (a *jsiiProxy_AppmeshGatewayRoute) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (a *jsiiProxy_AppmeshGatewayRoute) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppmeshGatewayRoute) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppmeshGatewayRoute) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

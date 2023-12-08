@@ -59,7 +59,15 @@ func (s *jsiiProxy_S3ObjectCopy) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (s *jsiiProxy_S3ObjectCopy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ObjectCopy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3ObjectCopy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (r *jsiiProxy_RedshiftSnapshotSchedule) validateInterpolationForAttributePa
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftSnapshotSchedule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftSnapshotSchedule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedshiftSnapshotSchedule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (l *jsiiProxy_LexBot) validateInterpolationForAttributeParameters(terraform
 	return nil
 }
 
+func (l *jsiiProxy_LexBot) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LexBot) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LexBot) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

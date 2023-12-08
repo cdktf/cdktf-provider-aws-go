@@ -59,7 +59,15 @@ func (d *jsiiProxy_DevicefarmUpload) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (d *jsiiProxy_DevicefarmUpload) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevicefarmUpload) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DevicefarmUpload) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

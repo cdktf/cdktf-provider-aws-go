@@ -59,7 +59,15 @@ func (v *jsiiProxy_VpcIpamResourceDiscovery) validateInterpolationForAttributePa
 	return nil
 }
 
+func (v *jsiiProxy_VpcIpamResourceDiscovery) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcIpamResourceDiscovery) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcIpamResourceDiscovery) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

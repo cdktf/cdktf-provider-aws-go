@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpc_peering_connection_accepter aws_vpc_peering_connection_accepter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/vpc_peering_connection_accepter aws_vpc_peering_connection_accepter}.
 type VpcPeeringConnectionAccepterA interface {
 	cdktf.TerraformResource
 	Accepter() VpcPeeringConnectionAccepterAccepterOutputReference
@@ -111,12 +111,22 @@ type VpcPeeringConnectionAccepterA interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -519,7 +529,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA) VpcPeeringConnectionIdInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpc_peering_connection_accepter aws_vpc_peering_connection_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/vpc_peering_connection_accepter aws_vpc_peering_connection_accepter} Resource.
 func NewVpcPeeringConnectionAccepterA(scope constructs.Construct, id *string, config *VpcPeeringConnectionAccepterAConfig) VpcPeeringConnectionAccepterA {
 	_init_.Initialize()
 
@@ -537,7 +547,7 @@ func NewVpcPeeringConnectionAccepterA(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpc_peering_connection_accepter aws_vpc_peering_connection_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/vpc_peering_connection_accepter aws_vpc_peering_connection_accepter} Resource.
 func NewVpcPeeringConnectionAccepterA_Override(v VpcPeeringConnectionAccepterA, scope constructs.Construct, id *string, config *VpcPeeringConnectionAccepterAConfig) {
 	_init_.Initialize()
 
@@ -940,6 +950,19 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) GetStringMapAttribute(terrafor
 	return returns
 }
 
+func (v *jsiiProxy_VpcPeeringConnectionAccepterA) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		v,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (v *jsiiProxy_VpcPeeringConnectionAccepterA) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := v.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -967,6 +990,17 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) InterpolationForAttribute(terr
 	return returns
 }
 
+func (v *jsiiProxy_VpcPeeringConnectionAccepterA) MoveFromId(id *string) {
+	if err := v.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (v *jsiiProxy_VpcPeeringConnectionAccepterA) MoveTo(moveTarget *string, index interface{}) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -975,6 +1009,17 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) MoveTo(moveTarget *string, ind
 		v,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (v *jsiiProxy_VpcPeeringConnectionAccepterA) MoveToId(id *string) {
+	if err := v.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

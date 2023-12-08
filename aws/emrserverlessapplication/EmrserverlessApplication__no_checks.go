@@ -59,7 +59,15 @@ func (e *jsiiProxy_EmrserverlessApplication) validateInterpolationForAttributePa
 	return nil
 }
 
+func (e *jsiiProxy_EmrserverlessApplication) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrserverlessApplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmrserverlessApplication) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

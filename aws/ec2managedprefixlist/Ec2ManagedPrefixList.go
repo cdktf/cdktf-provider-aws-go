@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ec2_managed_prefix_list aws_ec2_managed_prefix_list}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_managed_prefix_list aws_ec2_managed_prefix_list}.
 type Ec2ManagedPrefixList interface {
 	cdktf.TerraformResource
 	AddressFamily() *string
@@ -108,12 +108,22 @@ type Ec2ManagedPrefixList interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -471,7 +481,7 @@ func (j *jsiiProxy_Ec2ManagedPrefixList) Version() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ec2_managed_prefix_list aws_ec2_managed_prefix_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_managed_prefix_list aws_ec2_managed_prefix_list} Resource.
 func NewEc2ManagedPrefixList(scope constructs.Construct, id *string, config *Ec2ManagedPrefixListConfig) Ec2ManagedPrefixList {
 	_init_.Initialize()
 
@@ -489,7 +499,7 @@ func NewEc2ManagedPrefixList(scope constructs.Construct, id *string, config *Ec2
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ec2_managed_prefix_list aws_ec2_managed_prefix_list} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_managed_prefix_list aws_ec2_managed_prefix_list} Resource.
 func NewEc2ManagedPrefixList_Override(e Ec2ManagedPrefixList, scope constructs.Construct, id *string, config *Ec2ManagedPrefixListConfig) {
 	_init_.Initialize()
 
@@ -903,6 +913,19 @@ func (e *jsiiProxy_Ec2ManagedPrefixList) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (e *jsiiProxy_Ec2ManagedPrefixList) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (e *jsiiProxy_Ec2ManagedPrefixList) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -930,6 +953,17 @@ func (e *jsiiProxy_Ec2ManagedPrefixList) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (e *jsiiProxy_Ec2ManagedPrefixList) MoveFromId(id *string) {
+	if err := e.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (e *jsiiProxy_Ec2ManagedPrefixList) MoveTo(moveTarget *string, index interface{}) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -938,6 +972,17 @@ func (e *jsiiProxy_Ec2ManagedPrefixList) MoveTo(moveTarget *string, index interf
 		e,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (e *jsiiProxy_Ec2ManagedPrefixList) MoveToId(id *string) {
+	if err := e.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

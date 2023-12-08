@@ -59,7 +59,15 @@ func (e *jsiiProxy_Ec2TransitGatewayMulticastDomain) validateInterpolationForAtt
 	return nil
 }
 
+func (e *jsiiProxy_Ec2TransitGatewayMulticastDomain) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2TransitGatewayMulticastDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2TransitGatewayMulticastDomain) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

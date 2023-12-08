@@ -59,7 +59,15 @@ func (s *jsiiProxy_ShieldDrtAccessLogBucketAssociation) validateInterpolationFor
 	return nil
 }
 
+func (s *jsiiProxy_ShieldDrtAccessLogBucketAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ShieldDrtAccessLogBucketAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_ShieldDrtAccessLogBucketAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -166,6 +166,14 @@ func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetComplexObjectI
 	return nil
 }
 
+func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetCreateParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
 	case cdktf.IResolvable:
@@ -190,14 +198,6 @@ func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetInternalValueP
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetReadParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -207,6 +207,14 @@ func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetTerraformAttri
 }
 
 func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

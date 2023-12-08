@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ec2_traffic_mirror_target aws_ec2_traffic_mirror_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_traffic_mirror_target aws_ec2_traffic_mirror_target}.
 type Ec2TrafficMirrorTarget interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -108,12 +108,22 @@ type Ec2TrafficMirrorTarget interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -463,7 +473,7 @@ func (j *jsiiProxy_Ec2TrafficMirrorTarget) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ec2_traffic_mirror_target aws_ec2_traffic_mirror_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_traffic_mirror_target aws_ec2_traffic_mirror_target} Resource.
 func NewEc2TrafficMirrorTarget(scope constructs.Construct, id *string, config *Ec2TrafficMirrorTargetConfig) Ec2TrafficMirrorTarget {
 	_init_.Initialize()
 
@@ -481,7 +491,7 @@ func NewEc2TrafficMirrorTarget(scope constructs.Construct, id *string, config *E
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ec2_traffic_mirror_target aws_ec2_traffic_mirror_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_traffic_mirror_target aws_ec2_traffic_mirror_target} Resource.
 func NewEc2TrafficMirrorTarget_Override(e Ec2TrafficMirrorTarget, scope constructs.Construct, id *string, config *Ec2TrafficMirrorTargetConfig) {
 	_init_.Initialize()
 
@@ -906,6 +916,19 @@ func (e *jsiiProxy_Ec2TrafficMirrorTarget) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
+func (e *jsiiProxy_Ec2TrafficMirrorTarget) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (e *jsiiProxy_Ec2TrafficMirrorTarget) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -933,6 +956,17 @@ func (e *jsiiProxy_Ec2TrafficMirrorTarget) InterpolationForAttribute(terraformAt
 	return returns
 }
 
+func (e *jsiiProxy_Ec2TrafficMirrorTarget) MoveFromId(id *string) {
+	if err := e.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (e *jsiiProxy_Ec2TrafficMirrorTarget) MoveTo(moveTarget *string, index interface{}) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -941,6 +975,17 @@ func (e *jsiiProxy_Ec2TrafficMirrorTarget) MoveTo(moveTarget *string, index inte
 		e,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (e *jsiiProxy_Ec2TrafficMirrorTarget) MoveToId(id *string) {
+	if err := e.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

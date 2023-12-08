@@ -59,7 +59,15 @@ func (s *jsiiProxy_Sesv2AccountVdmAttributes) validateInterpolationForAttributeP
 	return nil
 }
 
+func (s *jsiiProxy_Sesv2AccountVdmAttributes) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Sesv2AccountVdmAttributes) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_Sesv2AccountVdmAttributes) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

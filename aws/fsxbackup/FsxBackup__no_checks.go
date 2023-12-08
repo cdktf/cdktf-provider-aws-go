@@ -59,7 +59,15 @@ func (f *jsiiProxy_FsxBackup) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (f *jsiiProxy_FsxBackup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxBackup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxBackup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

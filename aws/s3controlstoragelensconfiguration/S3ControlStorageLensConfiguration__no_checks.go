@@ -59,7 +59,15 @@ func (s *jsiiProxy_S3ControlStorageLensConfiguration) validateInterpolationForAt
 	return nil
 }
 
+func (s *jsiiProxy_S3ControlStorageLensConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ControlStorageLensConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3ControlStorageLensConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

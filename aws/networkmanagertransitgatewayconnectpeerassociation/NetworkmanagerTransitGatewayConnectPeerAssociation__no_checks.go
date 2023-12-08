@@ -59,7 +59,15 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayConnectPeerAssociation) validateI
 	return nil
 }
 
+func (n *jsiiProxy_NetworkmanagerTransitGatewayConnectPeerAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerTransitGatewayConnectPeerAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerTransitGatewayConnectPeerAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (e *jsiiProxy_EcrRegistryScanningConfiguration) validateInterpolationForAtt
 	return nil
 }
 
+func (e *jsiiProxy_EcrRegistryScanningConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcrRegistryScanningConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcrRegistryScanningConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

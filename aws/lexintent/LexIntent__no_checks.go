@@ -59,7 +59,15 @@ func (l *jsiiProxy_LexIntent) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (l *jsiiProxy_LexIntent) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LexIntent) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LexIntent) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

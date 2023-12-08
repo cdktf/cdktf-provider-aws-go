@@ -59,7 +59,15 @@ func (w *jsiiProxy_WorklinkFleet) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (w *jsiiProxy_WorklinkFleet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorklinkFleet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorklinkFleet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

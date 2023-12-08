@@ -59,7 +59,15 @@ func (d *jsiiProxy_DetectiveMember) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DetectiveMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DetectiveMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DetectiveMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

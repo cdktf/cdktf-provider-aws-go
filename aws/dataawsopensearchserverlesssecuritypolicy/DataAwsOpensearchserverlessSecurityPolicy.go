@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/opensearchserverless_security_policy aws_opensearchserverless_security_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/opensearchserverless_security_policy aws_opensearchserverless_security_policy}.
 type DataAwsOpensearchserverlessSecurityPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -362,7 +362,7 @@ func (j *jsiiProxy_DataAwsOpensearchserverlessSecurityPolicy) TypeInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/opensearchserverless_security_policy aws_opensearchserverless_security_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/opensearchserverless_security_policy aws_opensearchserverless_security_policy} Data Source.
 func NewDataAwsOpensearchserverlessSecurityPolicy(scope constructs.Construct, id *string, config *DataAwsOpensearchserverlessSecurityPolicyConfig) DataAwsOpensearchserverlessSecurityPolicy {
 	_init_.Initialize()
 
@@ -380,7 +380,7 @@ func NewDataAwsOpensearchserverlessSecurityPolicy(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/opensearchserverless_security_policy aws_opensearchserverless_security_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/opensearchserverless_security_policy aws_opensearchserverless_security_policy} Data Source.
 func NewDataAwsOpensearchserverlessSecurityPolicy_Override(d DataAwsOpensearchserverlessSecurityPolicy, scope constructs.Construct, id *string, config *DataAwsOpensearchserverlessSecurityPolicyConfig) {
 	_init_.Initialize()
 

@@ -59,7 +59,15 @@ func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateInterpolatio
 	return nil
 }
 
+func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsoadminCustomerManagedPolicyAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

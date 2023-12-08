@@ -59,7 +59,15 @@ func (g *jsiiProxy_GlueDataCatalogEncryptionSettings) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GlueDataCatalogEncryptionSettings) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueDataCatalogEncryptionSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlueDataCatalogEncryptionSettings) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (o *jsiiProxy_OpensearchserverlessCollection) validateInterpolationForAttri
 	return nil
 }
 
+func (o *jsiiProxy_OpensearchserverlessCollection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpensearchserverlessCollection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpensearchserverlessCollection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

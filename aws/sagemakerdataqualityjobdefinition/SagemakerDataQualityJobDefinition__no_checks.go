@@ -59,7 +59,15 @@ func (s *jsiiProxy_SagemakerDataQualityJobDefinition) validateInterpolationForAt
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDataQualityJobDefinition) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDataQualityJobDefinition) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerDataQualityJobDefinition) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

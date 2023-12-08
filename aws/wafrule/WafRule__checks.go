@@ -122,6 +122,14 @@ func (w *jsiiProxy_WafRule) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (w *jsiiProxy_WafRule) validateMoveFromIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (w *jsiiProxy_WafRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
@@ -178,6 +186,14 @@ func (w *jsiiProxy_WafRule) validateMoveToParameters(moveTarget *string, index i
 		// ok
 	default:
 		return fmt.Errorf("parameter index must be one of the allowed types: *string, *float64; received %#v (a %T)", index, index)
+	}
+
+	return nil
+}
+
+func (w *jsiiProxy_WafRule) validateMoveToIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
 	return nil

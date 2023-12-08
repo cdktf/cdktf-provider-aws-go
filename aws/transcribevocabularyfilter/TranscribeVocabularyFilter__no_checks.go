@@ -59,7 +59,15 @@ func (t *jsiiProxy_TranscribeVocabularyFilter) validateInterpolationForAttribute
 	return nil
 }
 
+func (t *jsiiProxy_TranscribeVocabularyFilter) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (t *jsiiProxy_TranscribeVocabularyFilter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (t *jsiiProxy_TranscribeVocabularyFilter) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/s3control_multi_region_access_point_policy aws_s3control_multi_region_access_point_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/s3control_multi_region_access_point_policy aws_s3control_multi_region_access_point_policy}.
 type S3ControlMultiRegionAccessPointPolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -97,12 +97,22 @@ type S3ControlMultiRegionAccessPointPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -390,7 +400,7 @@ func (j *jsiiProxy_S3ControlMultiRegionAccessPointPolicy) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/s3control_multi_region_access_point_policy aws_s3control_multi_region_access_point_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/s3control_multi_region_access_point_policy aws_s3control_multi_region_access_point_policy} Resource.
 func NewS3ControlMultiRegionAccessPointPolicy(scope constructs.Construct, id *string, config *S3ControlMultiRegionAccessPointPolicyConfig) S3ControlMultiRegionAccessPointPolicy {
 	_init_.Initialize()
 
@@ -408,7 +418,7 @@ func NewS3ControlMultiRegionAccessPointPolicy(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/s3control_multi_region_access_point_policy aws_s3control_multi_region_access_point_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/s3control_multi_region_access_point_policy aws_s3control_multi_region_access_point_policy} Resource.
 func NewS3ControlMultiRegionAccessPointPolicy_Override(s S3ControlMultiRegionAccessPointPolicy, scope constructs.Construct, id *string, config *S3ControlMultiRegionAccessPointPolicyConfig) {
 	_init_.Initialize()
 
@@ -778,6 +788,19 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointPolicy) GetStringMapAttribute(
 	return returns
 }
 
+func (s *jsiiProxy_S3ControlMultiRegionAccessPointPolicy) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_S3ControlMultiRegionAccessPointPolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -805,6 +828,17 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointPolicy) InterpolationForAttrib
 	return returns
 }
 
+func (s *jsiiProxy_S3ControlMultiRegionAccessPointPolicy) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_S3ControlMultiRegionAccessPointPolicy) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -813,6 +847,17 @@ func (s *jsiiProxy_S3ControlMultiRegionAccessPointPolicy) MoveTo(moveTarget *str
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_S3ControlMultiRegionAccessPointPolicy) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

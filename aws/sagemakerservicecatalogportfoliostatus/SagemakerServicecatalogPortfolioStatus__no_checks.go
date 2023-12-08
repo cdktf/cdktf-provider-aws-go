@@ -59,7 +59,15 @@ func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateInterpolation
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

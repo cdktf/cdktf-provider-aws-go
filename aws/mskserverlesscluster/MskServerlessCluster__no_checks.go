@@ -59,7 +59,15 @@ func (m *jsiiProxy_MskServerlessCluster) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (m *jsiiProxy_MskServerlessCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MskServerlessCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MskServerlessCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

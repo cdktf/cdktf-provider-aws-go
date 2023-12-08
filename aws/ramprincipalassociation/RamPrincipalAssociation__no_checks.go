@@ -59,7 +59,15 @@ func (r *jsiiProxy_RamPrincipalAssociation) validateInterpolationForAttributePar
 	return nil
 }
 
+func (r *jsiiProxy_RamPrincipalAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RamPrincipalAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RamPrincipalAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

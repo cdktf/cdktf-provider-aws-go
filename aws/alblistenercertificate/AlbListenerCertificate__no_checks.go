@@ -59,7 +59,15 @@ func (a *jsiiProxy_AlbListenerCertificate) validateInterpolationForAttributePara
 	return nil
 }
 
+func (a *jsiiProxy_AlbListenerCertificate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlbListenerCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlbListenerCertificate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

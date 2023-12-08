@@ -59,7 +59,15 @@ func (c *jsiiProxy_CloudtrailEventDataStore) validateInterpolationForAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_CloudtrailEventDataStore) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudtrailEventDataStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudtrailEventDataStore) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

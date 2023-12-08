@@ -59,7 +59,15 @@ func (o *jsiiProxy_OpsworksCustomLayer) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksCustomLayer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksCustomLayer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksCustomLayer) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

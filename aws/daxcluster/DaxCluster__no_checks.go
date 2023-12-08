@@ -59,7 +59,15 @@ func (d *jsiiProxy_DaxCluster) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (d *jsiiProxy_DaxCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DaxCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DaxCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

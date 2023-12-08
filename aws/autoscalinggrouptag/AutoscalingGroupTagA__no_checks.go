@@ -59,7 +59,15 @@ func (a *jsiiProxy_AutoscalingGroupTagA) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (a *jsiiProxy_AutoscalingGroupTagA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingGroupTagA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutoscalingGroupTagA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

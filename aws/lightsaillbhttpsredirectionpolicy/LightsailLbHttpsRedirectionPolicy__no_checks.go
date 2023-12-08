@@ -59,7 +59,15 @@ func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) validateInterpolationForAt
 	return nil
 }
 
+func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LightsailLbHttpsRedirectionPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

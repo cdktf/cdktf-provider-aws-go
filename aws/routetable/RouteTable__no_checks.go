@@ -59,7 +59,15 @@ func (r *jsiiProxy_RouteTable) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (r *jsiiProxy_RouteTable) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RouteTable) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RouteTable) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

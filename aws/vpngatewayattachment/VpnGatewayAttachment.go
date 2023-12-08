@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpn_gateway_attachment aws_vpn_gateway_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/vpn_gateway_attachment aws_vpn_gateway_attachment}.
 type VpnGatewayAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -94,12 +94,22 @@ type VpnGatewayAttachment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -343,7 +353,7 @@ func (j *jsiiProxy_VpnGatewayAttachment) VpnGatewayIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpn_gateway_attachment aws_vpn_gateway_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/vpn_gateway_attachment aws_vpn_gateway_attachment} Resource.
 func NewVpnGatewayAttachment(scope constructs.Construct, id *string, config *VpnGatewayAttachmentConfig) VpnGatewayAttachment {
 	_init_.Initialize()
 
@@ -361,7 +371,7 @@ func NewVpnGatewayAttachment(scope constructs.Construct, id *string, config *Vpn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/vpn_gateway_attachment aws_vpn_gateway_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/vpn_gateway_attachment aws_vpn_gateway_attachment} Resource.
 func NewVpnGatewayAttachment_Override(v VpnGatewayAttachment, scope constructs.Construct, id *string, config *VpnGatewayAttachmentConfig) {
 	_init_.Initialize()
 
@@ -742,6 +752,19 @@ func (v *jsiiProxy_VpnGatewayAttachment) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (v *jsiiProxy_VpnGatewayAttachment) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		v,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (v *jsiiProxy_VpnGatewayAttachment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := v.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -769,6 +792,17 @@ func (v *jsiiProxy_VpnGatewayAttachment) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (v *jsiiProxy_VpnGatewayAttachment) MoveFromId(id *string) {
+	if err := v.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (v *jsiiProxy_VpnGatewayAttachment) MoveTo(moveTarget *string, index interface{}) {
 	if err := v.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -777,6 +811,17 @@ func (v *jsiiProxy_VpnGatewayAttachment) MoveTo(moveTarget *string, index interf
 		v,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (v *jsiiProxy_VpnGatewayAttachment) MoveToId(id *string) {
+	if err := v.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

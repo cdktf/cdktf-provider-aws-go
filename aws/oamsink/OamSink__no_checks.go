@@ -59,7 +59,15 @@ func (o *jsiiProxy_OamSink) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (o *jsiiProxy_OamSink) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OamSink) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OamSink) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

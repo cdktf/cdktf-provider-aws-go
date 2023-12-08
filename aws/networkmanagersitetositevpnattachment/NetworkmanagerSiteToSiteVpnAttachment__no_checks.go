@@ -59,7 +59,15 @@ func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachment) validateInterpolationF
 	return nil
 }
 
+func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

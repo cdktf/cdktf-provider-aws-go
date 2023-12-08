@@ -59,7 +59,15 @@ func (m *jsiiProxy_MedialiveChannel) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (m *jsiiProxy_MedialiveChannel) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveChannel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveChannel) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

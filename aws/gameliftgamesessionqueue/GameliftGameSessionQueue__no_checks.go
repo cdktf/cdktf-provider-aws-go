@@ -59,7 +59,15 @@ func (g *jsiiProxy_GameliftGameSessionQueue) validateInterpolationForAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GameliftGameSessionQueue) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GameliftGameSessionQueue) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GameliftGameSessionQueue) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (e *jsiiProxy_EvidentlySegment) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (e *jsiiProxy_EvidentlySegment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EvidentlySegment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EvidentlySegment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

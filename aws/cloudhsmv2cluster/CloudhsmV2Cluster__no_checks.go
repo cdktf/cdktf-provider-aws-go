@@ -59,7 +59,15 @@ func (c *jsiiProxy_CloudhsmV2Cluster) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_CloudhsmV2Cluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudhsmV2Cluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudhsmV2Cluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

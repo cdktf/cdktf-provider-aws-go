@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association}.
 type RdsClusterRoleAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -99,12 +99,22 @@ type RdsClusterRoleAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -390,7 +400,7 @@ func (j *jsiiProxy_RdsClusterRoleAssociation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association} Resource.
 func NewRdsClusterRoleAssociation(scope constructs.Construct, id *string, config *RdsClusterRoleAssociationConfig) RdsClusterRoleAssociation {
 	_init_.Initialize()
 
@@ -408,7 +418,7 @@ func NewRdsClusterRoleAssociation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/rds_cluster_role_association aws_rds_cluster_role_association} Resource.
 func NewRdsClusterRoleAssociation_Override(r RdsClusterRoleAssociation, scope constructs.Construct, id *string, config *RdsClusterRoleAssociationConfig) {
 	_init_.Initialize()
 
@@ -800,6 +810,19 @@ func (r *jsiiProxy_RdsClusterRoleAssociation) GetStringMapAttribute(terraformAtt
 	return returns
 }
 
+func (r *jsiiProxy_RdsClusterRoleAssociation) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (r *jsiiProxy_RdsClusterRoleAssociation) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -827,6 +850,17 @@ func (r *jsiiProxy_RdsClusterRoleAssociation) InterpolationForAttribute(terrafor
 	return returns
 }
 
+func (r *jsiiProxy_RdsClusterRoleAssociation) MoveFromId(id *string) {
+	if err := r.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (r *jsiiProxy_RdsClusterRoleAssociation) MoveTo(moveTarget *string, index interface{}) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -835,6 +869,17 @@ func (r *jsiiProxy_RdsClusterRoleAssociation) MoveTo(moveTarget *string, index i
 		r,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (r *jsiiProxy_RdsClusterRoleAssociation) MoveToId(id *string) {
+	if err := r.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

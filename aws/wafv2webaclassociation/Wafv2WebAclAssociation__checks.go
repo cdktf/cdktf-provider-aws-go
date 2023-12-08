@@ -122,6 +122,14 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) validateInterpolationForAttributePara
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2WebAclAssociation) validateMoveFromIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2WebAclAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
@@ -178,6 +186,14 @@ func (w *jsiiProxy_Wafv2WebAclAssociation) validateMoveToParameters(moveTarget *
 		// ok
 	default:
 		return fmt.Errorf("parameter index must be one of the allowed types: *string, *float64; received %#v (a %T)", index, index)
+	}
+
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclAssociation) validateMoveToIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
 	return nil

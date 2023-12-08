@@ -59,7 +59,15 @@ func (f *jsiiProxy_FinspaceKxDatabase) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (f *jsiiProxy_FinspaceKxDatabase) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FinspaceKxDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FinspaceKxDatabase) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

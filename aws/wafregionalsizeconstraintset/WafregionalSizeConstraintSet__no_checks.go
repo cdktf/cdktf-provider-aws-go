@@ -59,7 +59,15 @@ func (w *jsiiProxy_WafregionalSizeConstraintSet) validateInterpolationForAttribu
 	return nil
 }
 
+func (w *jsiiProxy_WafregionalSizeConstraintSet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalSizeConstraintSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalSizeConstraintSet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

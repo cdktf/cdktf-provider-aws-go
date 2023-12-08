@@ -59,7 +59,15 @@ func (d *jsiiProxy_DefaultVpcDhcpOptions) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (d *jsiiProxy_DefaultVpcDhcpOptions) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DefaultVpcDhcpOptions) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DefaultVpcDhcpOptions) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

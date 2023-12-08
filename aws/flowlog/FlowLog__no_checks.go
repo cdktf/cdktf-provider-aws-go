@@ -59,7 +59,15 @@ func (f *jsiiProxy_FlowLog) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (f *jsiiProxy_FlowLog) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FlowLog) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FlowLog) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DatasyncLocationHdfs) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (d *jsiiProxy_DatasyncLocationHdfs) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncLocationHdfs) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatasyncLocationHdfs) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (o *jsiiProxy_OpsworksGangliaLayer) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksGangliaLayer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksGangliaLayer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksGangliaLayer) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

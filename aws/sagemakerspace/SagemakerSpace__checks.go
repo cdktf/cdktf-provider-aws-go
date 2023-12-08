@@ -122,6 +122,14 @@ func (s *jsiiProxy_SagemakerSpace) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerSpace) validateMoveFromIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerSpace) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
@@ -178,6 +186,14 @@ func (s *jsiiProxy_SagemakerSpace) validateMoveToParameters(moveTarget *string, 
 		// ok
 	default:
 		return fmt.Errorf("parameter index must be one of the allowed types: *string, *float64; received %#v (a %T)", index, index)
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerSpace) validateMoveToIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
 	return nil
@@ -397,6 +413,14 @@ func (j *jsiiProxy_SagemakerSpace) validateSetProvisionersParameters(val *[]inte
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerSpace) validateSetSpaceDisplayNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

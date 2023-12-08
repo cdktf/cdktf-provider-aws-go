@@ -59,7 +59,15 @@ func (a *jsiiProxy_AppmeshVirtualNode) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (a *jsiiProxy_AppmeshVirtualNode) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppmeshVirtualNode) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppmeshVirtualNode) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (i *jsiiProxy_IotBillingGroup) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (i *jsiiProxy_IotBillingGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotBillingGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotBillingGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

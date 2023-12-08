@@ -51,6 +51,22 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePu
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutCodeEditorAppSettingsParameters(value *SagemakerDomainDefaultUserSettingsCodeEditorAppSettings) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutCustomFileSystemConfigParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutCustomPosixUserConfigParameters(value *SagemakerDomainDefaultUserSettingsCustomPosixUserConfig) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutJupyterLabAppSettingsParameters(value *SagemakerDomainDefaultUserSettingsJupyterLabAppSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutJupyterServerAppSettingsParameters(value *SagemakerDomainDefaultUserSettingsJupyterServerAppSettings) error {
 	return nil
 }
@@ -71,6 +87,10 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePu
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutSpaceStorageSettingsParameters(value *SagemakerDomainDefaultUserSettingsSpaceStorageSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutTensorBoardAppSettingsParameters(value *SagemakerDomainDefaultUserSettingsTensorBoardAppSettings) error {
 	return nil
 }
@@ -87,6 +107,10 @@ func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validateSetDefaultLandingUriParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validateSetExecutionRoleParameters(val *string) error {
 	return nil
 }
@@ -96,6 +120,10 @@ func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validateSe
 }
 
 func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validateSetSecurityGroupsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validateSetStudioWebPortalParameters(val *string) error {
 	return nil
 }
 

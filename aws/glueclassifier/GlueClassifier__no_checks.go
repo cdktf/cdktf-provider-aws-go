@@ -59,7 +59,15 @@ func (g *jsiiProxy_GlueClassifier) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (g *jsiiProxy_GlueClassifier) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueClassifier) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlueClassifier) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

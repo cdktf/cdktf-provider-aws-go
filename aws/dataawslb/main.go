@@ -33,6 +33,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "enableTlsVersionAndCipherSuiteHeaders", GoGetter: "EnableTlsVersionAndCipherSuiteHeaders"},
 			_jsii_.MemberProperty{JsiiProperty: "enableWafFailOpen", GoGetter: "EnableWafFailOpen"},
 			_jsii_.MemberProperty{JsiiProperty: "enableXffClientPort", GoGetter: "EnableXffClientPort"},
+			_jsii_.MemberProperty{JsiiProperty: "enforceSecurityGroupInboundRulesOnPrivateLinkTraffic", GoGetter: "EnforceSecurityGroupInboundRulesOnPrivateLinkTraffic"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},

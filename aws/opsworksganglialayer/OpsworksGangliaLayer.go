@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/opsworks_ganglia_layer aws_opsworks_ganglia_layer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_ganglia_layer aws_opsworks_ganglia_layer}.
 type OpsworksGangliaLayer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -167,12 +167,22 @@ type OpsworksGangliaLayer interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -954,7 +964,7 @@ func (j *jsiiProxy_OpsworksGangliaLayer) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/opsworks_ganglia_layer aws_opsworks_ganglia_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_ganglia_layer aws_opsworks_ganglia_layer} Resource.
 func NewOpsworksGangliaLayer(scope constructs.Construct, id *string, config *OpsworksGangliaLayerConfig) OpsworksGangliaLayer {
 	_init_.Initialize()
 
@@ -972,7 +982,7 @@ func NewOpsworksGangliaLayer(scope constructs.Construct, id *string, config *Ops
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/opsworks_ganglia_layer aws_opsworks_ganglia_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/opsworks_ganglia_layer aws_opsworks_ganglia_layer} Resource.
 func NewOpsworksGangliaLayer_Override(o OpsworksGangliaLayer, scope constructs.Construct, id *string, config *OpsworksGangliaLayerConfig) {
 	_init_.Initialize()
 
@@ -1595,6 +1605,19 @@ func (o *jsiiProxy_OpsworksGangliaLayer) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (o *jsiiProxy_OpsworksGangliaLayer) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		o,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (o *jsiiProxy_OpsworksGangliaLayer) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := o.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1622,6 +1645,17 @@ func (o *jsiiProxy_OpsworksGangliaLayer) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (o *jsiiProxy_OpsworksGangliaLayer) MoveFromId(id *string) {
+	if err := o.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (o *jsiiProxy_OpsworksGangliaLayer) MoveTo(moveTarget *string, index interface{}) {
 	if err := o.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1630,6 +1664,17 @@ func (o *jsiiProxy_OpsworksGangliaLayer) MoveTo(moveTarget *string, index interf
 		o,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (o *jsiiProxy_OpsworksGangliaLayer) MoveToId(id *string) {
+	if err := o.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

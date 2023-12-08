@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/network_acl_rule aws_network_acl_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/network_acl_rule aws_network_acl_rule}.
 type NetworkAclRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -121,12 +121,22 @@ type NetworkAclRule interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -557,7 +567,7 @@ func (j *jsiiProxy_NetworkAclRule) ToPortInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/network_acl_rule aws_network_acl_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/network_acl_rule aws_network_acl_rule} Resource.
 func NewNetworkAclRule(scope constructs.Construct, id *string, config *NetworkAclRuleConfig) NetworkAclRule {
 	_init_.Initialize()
 
@@ -575,7 +585,7 @@ func NewNetworkAclRule(scope constructs.Construct, id *string, config *NetworkAc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/network_acl_rule aws_network_acl_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/network_acl_rule aws_network_acl_rule} Resource.
 func NewNetworkAclRule_Override(n NetworkAclRule, scope constructs.Construct, id *string, config *NetworkAclRuleConfig) {
 	_init_.Initialize()
 
@@ -1055,6 +1065,19 @@ func (n *jsiiProxy_NetworkAclRule) GetStringMapAttribute(terraformAttribute *str
 	return returns
 }
 
+func (n *jsiiProxy_NetworkAclRule) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_NetworkAclRule) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1082,6 +1105,17 @@ func (n *jsiiProxy_NetworkAclRule) InterpolationForAttribute(terraformAttribute 
 	return returns
 }
 
+func (n *jsiiProxy_NetworkAclRule) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_NetworkAclRule) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1090,6 +1124,17 @@ func (n *jsiiProxy_NetworkAclRule) MoveTo(moveTarget *string, index interface{})
 		n,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NetworkAclRule) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateInterpolationFo
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

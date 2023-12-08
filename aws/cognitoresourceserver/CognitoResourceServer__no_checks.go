@@ -59,7 +59,15 @@ func (c *jsiiProxy_CognitoResourceServer) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_CognitoResourceServer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoResourceServer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoResourceServer) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

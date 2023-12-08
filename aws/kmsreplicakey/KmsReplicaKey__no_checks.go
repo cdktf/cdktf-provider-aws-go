@@ -59,7 +59,15 @@ func (k *jsiiProxy_KmsReplicaKey) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (k *jsiiProxy_KmsReplicaKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsReplicaKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsReplicaKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

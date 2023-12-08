@@ -59,7 +59,15 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateInterpolationF
 	return nil
 }
 
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshot) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DevicefarmTestGridProject) validateInterpolationForAttributeP
 	return nil
 }
 
+func (d *jsiiProxy_DevicefarmTestGridProject) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DevicefarmTestGridProject) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DevicefarmTestGridProject) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

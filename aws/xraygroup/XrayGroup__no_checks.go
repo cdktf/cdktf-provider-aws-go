@@ -59,7 +59,15 @@ func (x *jsiiProxy_XrayGroup) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (x *jsiiProxy_XrayGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (x *jsiiProxy_XrayGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (x *jsiiProxy_XrayGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

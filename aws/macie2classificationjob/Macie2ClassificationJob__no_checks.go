@@ -59,7 +59,15 @@ func (m *jsiiProxy_Macie2ClassificationJob) validateInterpolationForAttributePar
 	return nil
 }
 
+func (m *jsiiProxy_Macie2ClassificationJob) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2ClassificationJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_Macie2ClassificationJob) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

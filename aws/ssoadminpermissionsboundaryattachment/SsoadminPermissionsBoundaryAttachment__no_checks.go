@@ -59,7 +59,15 @@ func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateInterpolationF
 	return nil
 }
 
+func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

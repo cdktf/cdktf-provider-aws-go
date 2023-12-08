@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/route53recoveryreadiness_recovery_group aws_route53recoveryreadiness_recovery_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/route53recoveryreadiness_recovery_group aws_route53recoveryreadiness_recovery_group}.
 type Route53RecoveryreadinessRecoveryGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -103,12 +103,22 @@ type Route53RecoveryreadinessRecoveryGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -427,7 +437,7 @@ func (j *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/route53recoveryreadiness_recovery_group aws_route53recoveryreadiness_recovery_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/route53recoveryreadiness_recovery_group aws_route53recoveryreadiness_recovery_group} Resource.
 func NewRoute53RecoveryreadinessRecoveryGroup(scope constructs.Construct, id *string, config *Route53RecoveryreadinessRecoveryGroupConfig) Route53RecoveryreadinessRecoveryGroup {
 	_init_.Initialize()
 
@@ -445,7 +455,7 @@ func NewRoute53RecoveryreadinessRecoveryGroup(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/route53recoveryreadiness_recovery_group aws_route53recoveryreadiness_recovery_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/route53recoveryreadiness_recovery_group aws_route53recoveryreadiness_recovery_group} Resource.
 func NewRoute53RecoveryreadinessRecoveryGroup_Override(r Route53RecoveryreadinessRecoveryGroup, scope constructs.Construct, id *string, config *Route53RecoveryreadinessRecoveryGroupConfig) {
 	_init_.Initialize()
 
@@ -848,6 +858,19 @@ func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) GetStringMapAttribute(
 	return returns
 }
 
+func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		r,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := r.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -875,6 +898,17 @@ func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) InterpolationForAttrib
 	return returns
 }
 
+func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) MoveFromId(id *string) {
+	if err := r.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) MoveTo(moveTarget *string, index interface{}) {
 	if err := r.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -883,6 +917,17 @@ func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) MoveTo(moveTarget *str
 		r,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (r *jsiiProxy_Route53RecoveryreadinessRecoveryGroup) MoveToId(id *string) {
+	if err := r.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

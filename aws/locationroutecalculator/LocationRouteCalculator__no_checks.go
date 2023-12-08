@@ -59,7 +59,15 @@ func (l *jsiiProxy_LocationRouteCalculator) validateInterpolationForAttributePar
 	return nil
 }
 
+func (l *jsiiProxy_LocationRouteCalculator) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LocationRouteCalculator) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LocationRouteCalculator) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

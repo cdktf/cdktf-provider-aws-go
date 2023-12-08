@@ -59,7 +59,15 @@ func (e *jsiiProxy_EksAddon) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (e *jsiiProxy_EksAddon) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EksAddon) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EksAddon) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

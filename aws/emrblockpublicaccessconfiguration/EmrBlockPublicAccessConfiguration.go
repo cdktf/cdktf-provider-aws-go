@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/emr_block_public_access_configuration aws_emr_block_public_access_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/emr_block_public_access_configuration aws_emr_block_public_access_configuration}.
 type EmrBlockPublicAccessConfiguration interface {
 	cdktf.TerraformResource
 	BlockPublicSecurityGroupRules() interface{}
@@ -93,12 +93,22 @@ type EmrBlockPublicAccessConfiguration interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -344,7 +354,7 @@ func (j *jsiiProxy_EmrBlockPublicAccessConfiguration) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/emr_block_public_access_configuration aws_emr_block_public_access_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/emr_block_public_access_configuration aws_emr_block_public_access_configuration} Resource.
 func NewEmrBlockPublicAccessConfiguration(scope constructs.Construct, id *string, config *EmrBlockPublicAccessConfigurationConfig) EmrBlockPublicAccessConfiguration {
 	_init_.Initialize()
 
@@ -362,7 +372,7 @@ func NewEmrBlockPublicAccessConfiguration(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/emr_block_public_access_configuration aws_emr_block_public_access_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/emr_block_public_access_configuration aws_emr_block_public_access_configuration} Resource.
 func NewEmrBlockPublicAccessConfiguration_Override(e EmrBlockPublicAccessConfiguration, scope constructs.Construct, id *string, config *EmrBlockPublicAccessConfigurationConfig) {
 	_init_.Initialize()
 
@@ -732,6 +742,19 @@ func (e *jsiiProxy_EmrBlockPublicAccessConfiguration) GetStringMapAttribute(terr
 	return returns
 }
 
+func (e *jsiiProxy_EmrBlockPublicAccessConfiguration) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (e *jsiiProxy_EmrBlockPublicAccessConfiguration) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -759,6 +782,17 @@ func (e *jsiiProxy_EmrBlockPublicAccessConfiguration) InterpolationForAttribute(
 	return returns
 }
 
+func (e *jsiiProxy_EmrBlockPublicAccessConfiguration) MoveFromId(id *string) {
+	if err := e.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (e *jsiiProxy_EmrBlockPublicAccessConfiguration) MoveTo(moveTarget *string, index interface{}) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -767,6 +801,17 @@ func (e *jsiiProxy_EmrBlockPublicAccessConfiguration) MoveTo(moveTarget *string,
 		e,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (e *jsiiProxy_EmrBlockPublicAccessConfiguration) MoveToId(id *string) {
+	if err := e.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

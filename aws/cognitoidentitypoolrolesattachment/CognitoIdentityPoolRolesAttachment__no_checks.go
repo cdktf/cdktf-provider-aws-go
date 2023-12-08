@@ -59,7 +59,15 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateInterpolationForA
 	return nil
 }
 
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

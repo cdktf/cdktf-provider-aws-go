@@ -59,7 +59,15 @@ func (i *jsiiProxy_IamServiceSpecificCredential) validateInterpolationForAttribu
 	return nil
 }
 
+func (i *jsiiProxy_IamServiceSpecificCredential) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamServiceSpecificCredential) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamServiceSpecificCredential) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (a *jsiiProxy_ApprunnerObservabilityConfiguration) validateInterpolationFor
 	return nil
 }
 
+func (a *jsiiProxy_ApprunnerObservabilityConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApprunnerObservabilityConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApprunnerObservabilityConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

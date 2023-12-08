@@ -59,7 +59,15 @@ func (e *jsiiProxy_EksCluster) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (e *jsiiProxy_EksCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EksCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EksCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (e *jsiiProxy_EbsSnapshotImport) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (e *jsiiProxy_EbsSnapshotImport) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EbsSnapshotImport) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EbsSnapshotImport) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

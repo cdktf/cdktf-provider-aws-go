@@ -59,7 +59,15 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateInterpolatio
 	return nil
 }
 
+func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (n *jsiiProxy_NetworkmanagerLinkAssociation) validateInterpolationForAttrib
 	return nil
 }
 
+func (n *jsiiProxy_NetworkmanagerLinkAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerLinkAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerLinkAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

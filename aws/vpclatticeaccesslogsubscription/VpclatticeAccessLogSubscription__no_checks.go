@@ -59,7 +59,15 @@ func (v *jsiiProxy_VpclatticeAccessLogSubscription) validateInterpolationForAttr
 	return nil
 }
 
+func (v *jsiiProxy_VpclatticeAccessLogSubscription) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpclatticeAccessLogSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpclatticeAccessLogSubscription) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

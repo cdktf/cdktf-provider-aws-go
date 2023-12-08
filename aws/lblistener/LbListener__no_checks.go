@@ -59,7 +59,15 @@ func (l *jsiiProxy_LbListener) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (l *jsiiProxy_LbListener) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbListener) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbListener) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -68,6 +76,10 @@ func (l *jsiiProxy_LbListener) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func (l *jsiiProxy_LbListener) validatePutDefaultActionParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbListener) validatePutMutualAuthenticationParameters(value *LbListenerMutualAuthentication) error {
 	return nil
 }
 

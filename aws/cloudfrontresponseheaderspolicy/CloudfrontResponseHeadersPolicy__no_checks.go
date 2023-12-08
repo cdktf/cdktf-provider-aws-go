@@ -59,7 +59,15 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validateInterpolationForAttr
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

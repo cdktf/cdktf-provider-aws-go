@@ -59,7 +59,15 @@ func (p *jsiiProxy_PrometheusWorkspace) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (p *jsiiProxy_PrometheusWorkspace) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrometheusWorkspace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrometheusWorkspace) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (c *jsiiProxy_CeAnomalySubscription) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_CeAnomalySubscription) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CeAnomalySubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CeAnomalySubscription) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (l *jsiiProxy_LexBotAlias) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (l *jsiiProxy_LexBotAlias) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LexBotAlias) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LexBotAlias) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

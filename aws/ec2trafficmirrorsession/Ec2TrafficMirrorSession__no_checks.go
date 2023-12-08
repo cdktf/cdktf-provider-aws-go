@@ -59,7 +59,15 @@ func (e *jsiiProxy_Ec2TrafficMirrorSession) validateInterpolationForAttributePar
 	return nil
 }
 
+func (e *jsiiProxy_Ec2TrafficMirrorSession) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2TrafficMirrorSession) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2TrafficMirrorSession) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

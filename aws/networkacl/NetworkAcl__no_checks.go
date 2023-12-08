@@ -59,7 +59,15 @@ func (n *jsiiProxy_NetworkAcl) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (n *jsiiProxy_NetworkAcl) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkAcl) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkAcl) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

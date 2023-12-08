@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/neptune_event_subscription aws_neptune_event_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_event_subscription aws_neptune_event_subscription}.
 type NeptuneEventSubscription interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -119,12 +119,22 @@ type NeptuneEventSubscription interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -558,7 +568,7 @@ func (j *jsiiProxy_NeptuneEventSubscription) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/neptune_event_subscription aws_neptune_event_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_event_subscription aws_neptune_event_subscription} Resource.
 func NewNeptuneEventSubscription(scope constructs.Construct, id *string, config *NeptuneEventSubscriptionConfig) NeptuneEventSubscription {
 	_init_.Initialize()
 
@@ -576,7 +586,7 @@ func NewNeptuneEventSubscription(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/neptune_event_subscription aws_neptune_event_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/neptune_event_subscription aws_neptune_event_subscription} Resource.
 func NewNeptuneEventSubscription_Override(n NeptuneEventSubscription, scope constructs.Construct, id *string, config *NeptuneEventSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -1034,6 +1044,19 @@ func (n *jsiiProxy_NeptuneEventSubscription) GetStringMapAttribute(terraformAttr
 	return returns
 }
 
+func (n *jsiiProxy_NeptuneEventSubscription) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (n *jsiiProxy_NeptuneEventSubscription) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := n.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1061,6 +1084,17 @@ func (n *jsiiProxy_NeptuneEventSubscription) InterpolationForAttribute(terraform
 	return returns
 }
 
+func (n *jsiiProxy_NeptuneEventSubscription) MoveFromId(id *string) {
+	if err := n.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (n *jsiiProxy_NeptuneEventSubscription) MoveTo(moveTarget *string, index interface{}) {
 	if err := n.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1069,6 +1103,17 @@ func (n *jsiiProxy_NeptuneEventSubscription) MoveTo(moveTarget *string, index in
 		n,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (n *jsiiProxy_NeptuneEventSubscription) MoveToId(id *string) {
+	if err := n.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

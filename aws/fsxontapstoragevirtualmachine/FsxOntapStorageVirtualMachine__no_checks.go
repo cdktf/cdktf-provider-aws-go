@@ -59,7 +59,15 @@ func (f *jsiiProxy_FsxOntapStorageVirtualMachine) validateInterpolationForAttrib
 	return nil
 }
 
+func (f *jsiiProxy_FsxOntapStorageVirtualMachine) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxOntapStorageVirtualMachine) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxOntapStorageVirtualMachine) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

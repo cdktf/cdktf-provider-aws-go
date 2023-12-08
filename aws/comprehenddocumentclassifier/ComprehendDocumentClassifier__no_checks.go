@@ -59,7 +59,15 @@ func (c *jsiiProxy_ComprehendDocumentClassifier) validateInterpolationForAttribu
 	return nil
 }
 
+func (c *jsiiProxy_ComprehendDocumentClassifier) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComprehendDocumentClassifier) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComprehendDocumentClassifier) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

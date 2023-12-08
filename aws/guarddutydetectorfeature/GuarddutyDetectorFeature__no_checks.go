@@ -59,7 +59,15 @@ func (g *jsiiProxy_GuarddutyDetectorFeature) validateInterpolationForAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GuarddutyDetectorFeature) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GuarddutyDetectorFeature) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GuarddutyDetectorFeature) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

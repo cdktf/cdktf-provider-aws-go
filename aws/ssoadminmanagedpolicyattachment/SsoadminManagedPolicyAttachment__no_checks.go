@@ -59,7 +59,15 @@ func (s *jsiiProxy_SsoadminManagedPolicyAttachment) validateInterpolationForAttr
 	return nil
 }
 
+func (s *jsiiProxy_SsoadminManagedPolicyAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsoadminManagedPolicyAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsoadminManagedPolicyAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

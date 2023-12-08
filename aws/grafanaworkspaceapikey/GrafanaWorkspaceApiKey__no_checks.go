@@ -59,7 +59,15 @@ func (g *jsiiProxy_GrafanaWorkspaceApiKey) validateInterpolationForAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GrafanaWorkspaceApiKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GrafanaWorkspaceApiKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GrafanaWorkspaceApiKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

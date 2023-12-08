@@ -59,7 +59,15 @@ func (a *jsiiProxy_AppconfigConfigurationProfile) validateInterpolationForAttrib
 	return nil
 }
 
+func (a *jsiiProxy_AppconfigConfigurationProfile) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppconfigConfigurationProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppconfigConfigurationProfile) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -104,6 +112,10 @@ func (j *jsiiProxy_AppconfigConfigurationProfile) validateSetDescriptionParamete
 }
 
 func (j *jsiiProxy_AppconfigConfigurationProfile) validateSetIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppconfigConfigurationProfile) validateSetKmsKeyIdentifierParameters(val *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (i *jsiiProxy_IotIndexingConfiguration) validateInterpolationForAttributePa
 	return nil
 }
 
+func (i *jsiiProxy_IotIndexingConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotIndexingConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotIndexingConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

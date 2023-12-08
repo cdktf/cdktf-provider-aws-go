@@ -59,7 +59,15 @@ func (r *jsiiProxy_RumAppMonitor) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (r *jsiiProxy_RumAppMonitor) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RumAppMonitor) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RumAppMonitor) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

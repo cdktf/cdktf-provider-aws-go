@@ -59,7 +59,15 @@ func (m *jsiiProxy_Macie2InvitationAccepter) validateInterpolationForAttributePa
 	return nil
 }
 
+func (m *jsiiProxy_Macie2InvitationAccepter) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2InvitationAccepter) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_Macie2InvitationAccepter) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

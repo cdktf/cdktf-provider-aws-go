@@ -59,7 +59,15 @@ func (c *jsiiProxy_ConnectContactFlowModule) validateInterpolationForAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_ConnectContactFlowModule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectContactFlowModule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectContactFlowModule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

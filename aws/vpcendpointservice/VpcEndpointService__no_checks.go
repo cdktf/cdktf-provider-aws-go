@@ -59,7 +59,15 @@ func (v *jsiiProxy_VpcEndpointService) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (v *jsiiProxy_VpcEndpointService) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpointService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcEndpointService) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

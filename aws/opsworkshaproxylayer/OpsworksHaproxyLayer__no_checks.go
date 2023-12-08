@@ -59,7 +59,15 @@ func (o *jsiiProxy_OpsworksHaproxyLayer) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksHaproxyLayer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksHaproxyLayer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksHaproxyLayer) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

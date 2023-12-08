@@ -59,7 +59,15 @@ func (f *jsiiProxy_FsxWindowsFileSystem) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (f *jsiiProxy_FsxWindowsFileSystem) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxWindowsFileSystem) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxWindowsFileSystem) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

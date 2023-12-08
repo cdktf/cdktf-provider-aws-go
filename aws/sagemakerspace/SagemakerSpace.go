@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/sagemaker_space aws_sagemaker_space}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/sagemaker_space aws_sagemaker_space}.
 type SagemakerSpace interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -63,6 +63,9 @@ type SagemakerSpace interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SpaceDisplayName() *string
+	SetSpaceDisplayName(val *string)
+	SpaceDisplayNameInput() *string
 	SpaceName() *string
 	SetSpaceName(val *string)
 	SpaceNameInput() *string
@@ -80,6 +83,7 @@ type SagemakerSpace interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Url() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -104,12 +108,22 @@ type SagemakerSpace interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -118,6 +132,7 @@ type SagemakerSpace interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSpaceDisplayName()
 	ResetSpaceSettings()
 	ResetTags()
 	ResetTagsAll()
@@ -326,6 +341,26 @@ func (j *jsiiProxy_SagemakerSpace) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerSpace) SpaceDisplayName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"spaceDisplayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerSpace) SpaceDisplayNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"spaceDisplayNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerSpace) SpaceName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -436,8 +471,18 @@ func (j *jsiiProxy_SagemakerSpace) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerSpace) Url() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"url",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/sagemaker_space aws_sagemaker_space} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/sagemaker_space aws_sagemaker_space} Resource.
 func NewSagemakerSpace(scope constructs.Construct, id *string, config *SagemakerSpaceConfig) SagemakerSpace {
 	_init_.Initialize()
 
@@ -455,7 +500,7 @@ func NewSagemakerSpace(scope constructs.Construct, id *string, config *Sagemaker
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/sagemaker_space aws_sagemaker_space} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/sagemaker_space aws_sagemaker_space} Resource.
 func NewSagemakerSpace_Override(s SagemakerSpace, scope constructs.Construct, id *string, config *SagemakerSpaceConfig) {
 	_init_.Initialize()
 
@@ -552,6 +597,17 @@ func (j *jsiiProxy_SagemakerSpace)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerSpace)SetSpaceDisplayName(val *string) {
+	if err := j.validateSetSpaceDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"spaceDisplayName",
 		val,
 	)
 }
@@ -858,6 +914,19 @@ func (s *jsiiProxy_SagemakerSpace) GetStringMapAttribute(terraformAttribute *str
 	return returns
 }
 
+func (s *jsiiProxy_SagemakerSpace) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		s,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (s *jsiiProxy_SagemakerSpace) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := s.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -885,6 +954,17 @@ func (s *jsiiProxy_SagemakerSpace) InterpolationForAttribute(terraformAttribute 
 	return returns
 }
 
+func (s *jsiiProxy_SagemakerSpace) MoveFromId(id *string) {
+	if err := s.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (s *jsiiProxy_SagemakerSpace) MoveTo(moveTarget *string, index interface{}) {
 	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -893,6 +973,17 @@ func (s *jsiiProxy_SagemakerSpace) MoveTo(moveTarget *string, index interface{})
 		s,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (s *jsiiProxy_SagemakerSpace) MoveToId(id *string) {
+	if err := s.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -930,6 +1021,14 @@ func (s *jsiiProxy_SagemakerSpace) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerSpace) ResetSpaceDisplayName() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSpaceDisplayName",
 		nil, // no parameters
 	)
 }

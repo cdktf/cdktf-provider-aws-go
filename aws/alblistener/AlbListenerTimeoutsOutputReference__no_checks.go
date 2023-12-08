@@ -59,11 +59,11 @@ func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetComplexObjectI
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetCreateParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetReadParameters(val *string) error {
+func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }
 
@@ -72,6 +72,10 @@ func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetTerraformAttri
 }
 
 func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_AlbListenerTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
 	return nil
 }
 

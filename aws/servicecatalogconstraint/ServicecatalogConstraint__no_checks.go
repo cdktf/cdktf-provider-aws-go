@@ -59,7 +59,15 @@ func (s *jsiiProxy_ServicecatalogConstraint) validateInterpolationForAttributePa
 	return nil
 }
 
+func (s *jsiiProxy_ServicecatalogConstraint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicecatalogConstraint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicecatalogConstraint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

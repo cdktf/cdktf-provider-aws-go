@@ -59,7 +59,15 @@ func (g *jsiiProxy_GuarddutyOrganizationAdminAccount) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GuarddutyOrganizationAdminAccount) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GuarddutyOrganizationAdminAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GuarddutyOrganizationAdminAccount) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

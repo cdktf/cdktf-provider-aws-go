@@ -59,7 +59,15 @@ func (m *jsiiProxy_Macie2OrganizationAdminAccount) validateInterpolationForAttri
 	return nil
 }
 
+func (m *jsiiProxy_Macie2OrganizationAdminAccount) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2OrganizationAdminAccount) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_Macie2OrganizationAdminAccount) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

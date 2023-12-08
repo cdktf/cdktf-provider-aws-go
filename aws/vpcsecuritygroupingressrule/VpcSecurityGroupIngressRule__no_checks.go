@@ -59,7 +59,15 @@ func (v *jsiiProxy_VpcSecurityGroupIngressRule) validateInterpolationForAttribut
 	return nil
 }
 
+func (v *jsiiProxy_VpcSecurityGroupIngressRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcSecurityGroupIngressRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcSecurityGroupIngressRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

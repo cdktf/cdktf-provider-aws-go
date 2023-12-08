@@ -59,7 +59,15 @@ func (v *jsiiProxy_VpcIpamPreviewNextCidr) validateInterpolationForAttributePara
 	return nil
 }
 
+func (v *jsiiProxy_VpcIpamPreviewNextCidr) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcIpamPreviewNextCidr) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcIpamPreviewNextCidr) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

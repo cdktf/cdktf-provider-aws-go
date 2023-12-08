@@ -59,7 +59,15 @@ func (w *jsiiProxy_WafByteMatchSet) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (w *jsiiProxy_WafByteMatchSet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafByteMatchSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafByteMatchSet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

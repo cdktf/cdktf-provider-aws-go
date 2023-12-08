@@ -59,7 +59,15 @@ func (c *jsiiProxy_CodecatalystSourceRepository) validateInterpolationForAttribu
 	return nil
 }
 
+func (c *jsiiProxy_CodecatalystSourceRepository) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodecatalystSourceRepository) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodecatalystSourceRepository) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

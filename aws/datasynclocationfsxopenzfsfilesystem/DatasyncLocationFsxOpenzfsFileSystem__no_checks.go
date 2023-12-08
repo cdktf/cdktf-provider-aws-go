@@ -59,7 +59,15 @@ func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateInterpolationFo
 	return nil
 }
 
+func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

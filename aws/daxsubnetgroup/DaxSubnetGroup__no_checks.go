@@ -59,7 +59,15 @@ func (d *jsiiProxy_DaxSubnetGroup) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (d *jsiiProxy_DaxSubnetGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DaxSubnetGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DaxSubnetGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

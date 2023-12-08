@@ -59,7 +59,15 @@ func (r *jsiiProxy_RedshiftserverlessResourcePolicy) validateInterpolationForAtt
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftserverlessResourcePolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftserverlessResourcePolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedshiftserverlessResourcePolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

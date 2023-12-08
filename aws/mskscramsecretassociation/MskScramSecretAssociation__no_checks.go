@@ -59,7 +59,15 @@ func (m *jsiiProxy_MskScramSecretAssociation) validateInterpolationForAttributeP
 	return nil
 }
 
+func (m *jsiiProxy_MskScramSecretAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MskScramSecretAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MskScramSecretAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

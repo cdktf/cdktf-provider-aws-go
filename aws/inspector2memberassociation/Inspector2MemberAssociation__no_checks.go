@@ -59,7 +59,15 @@ func (i *jsiiProxy_Inspector2MemberAssociation) validateInterpolationForAttribut
 	return nil
 }
 
+func (i *jsiiProxy_Inspector2MemberAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_Inspector2MemberAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_Inspector2MemberAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

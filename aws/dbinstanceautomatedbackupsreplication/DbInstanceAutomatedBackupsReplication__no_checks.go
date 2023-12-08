@@ -59,7 +59,15 @@ func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateInterpolationF
 	return nil
 }
 
+func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbInstanceAutomatedBackupsReplication) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

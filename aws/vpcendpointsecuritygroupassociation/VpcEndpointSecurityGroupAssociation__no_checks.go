@@ -59,7 +59,15 @@ func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateInterpolationFor
 	return nil
 }
 
+func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcEndpointSecurityGroupAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

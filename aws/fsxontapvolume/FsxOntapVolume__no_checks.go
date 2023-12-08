@@ -59,7 +59,15 @@ func (f *jsiiProxy_FsxOntapVolume) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (f *jsiiProxy_FsxOntapVolume) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxOntapVolume) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxOntapVolume) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

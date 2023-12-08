@@ -59,7 +59,15 @@ func (k *jsiiProxy_KeyspacesKeyspace) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (k *jsiiProxy_KeyspacesKeyspace) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyspacesKeyspace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KeyspacesKeyspace) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (c *jsiiProxy_ChimeVoiceConnectorGroup) validateInterpolationForAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_ChimeVoiceConnectorGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChimeVoiceConnectorGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ChimeVoiceConnectorGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

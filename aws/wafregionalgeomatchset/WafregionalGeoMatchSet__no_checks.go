@@ -59,7 +59,15 @@ func (w *jsiiProxy_WafregionalGeoMatchSet) validateInterpolationForAttributePara
 	return nil
 }
 
+func (w *jsiiProxy_WafregionalGeoMatchSet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_WafregionalGeoMatchSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_WafregionalGeoMatchSet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

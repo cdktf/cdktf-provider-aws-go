@@ -59,7 +59,15 @@ func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) validateInterpolationForAttr
 	return nil
 }
 
+func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_StoragegatewayStoredIscsiVolume) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

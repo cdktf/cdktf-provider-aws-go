@@ -59,7 +59,15 @@ func (l *jsiiProxy_LbCookieStickinessPolicy) validateInterpolationForAttributePa
 	return nil
 }
 
+func (l *jsiiProxy_LbCookieStickinessPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbCookieStickinessPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbCookieStickinessPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (q *jsiiProxy_QuicksightFolder) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (q *jsiiProxy_QuicksightFolder) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightFolder) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (q *jsiiProxy_QuicksightFolder) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

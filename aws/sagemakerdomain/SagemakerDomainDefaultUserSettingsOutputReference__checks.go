@@ -104,6 +104,70 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePu
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutCodeEditorAppSettingsParameters(value *SagemakerDomainDefaultUserSettingsCodeEditorAppSettings) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutCustomFileSystemConfigParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*SagemakerDomainDefaultUserSettingsCustomFileSystemConfig:
+		value := value.(*[]*SagemakerDomainDefaultUserSettingsCustomFileSystemConfig)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*SagemakerDomainDefaultUserSettingsCustomFileSystemConfig:
+		value_ := value.([]*SagemakerDomainDefaultUserSettingsCustomFileSystemConfig)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*SagemakerDomainDefaultUserSettingsCustomFileSystemConfig; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutCustomPosixUserConfigParameters(value *SagemakerDomainDefaultUserSettingsCustomPosixUserConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutJupyterLabAppSettingsParameters(value *SagemakerDomainDefaultUserSettingsJupyterLabAppSettings) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutJupyterServerAppSettingsParameters(value *SagemakerDomainDefaultUserSettingsJupyterServerAppSettings) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -149,6 +213,17 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePu
 }
 
 func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutSharingSettingsParameters(value *SagemakerDomainDefaultUserSettingsSharingSettings) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validatePutSpaceStorageSettingsParameters(value *SagemakerDomainDefaultUserSettingsSpaceStorageSettings) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
@@ -243,6 +318,14 @@ func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validateSetDefaultLandingUriParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validateSetExecutionRoleParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -260,6 +343,14 @@ func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validateSe
 }
 
 func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validateSetSecurityGroupsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsOutputReference) validateSetStudioWebPortalParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

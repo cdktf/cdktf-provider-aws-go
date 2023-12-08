@@ -59,7 +59,15 @@ func (g *jsiiProxy_GluePartitionIndex) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (g *jsiiProxy_GluePartitionIndex) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GluePartitionIndex) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GluePartitionIndex) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

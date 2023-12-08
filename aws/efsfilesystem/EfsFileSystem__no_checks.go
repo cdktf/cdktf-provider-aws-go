@@ -59,7 +59,15 @@ func (e *jsiiProxy_EfsFileSystem) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (e *jsiiProxy_EfsFileSystem) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EfsFileSystem) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EfsFileSystem) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

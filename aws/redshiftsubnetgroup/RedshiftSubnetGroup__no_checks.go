@@ -59,7 +59,15 @@ func (r *jsiiProxy_RedshiftSubnetGroup) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftSubnetGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftSubnetGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedshiftSubnetGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

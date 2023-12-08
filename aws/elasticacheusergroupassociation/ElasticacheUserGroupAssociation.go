@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/elasticache_user_group_association aws_elasticache_user_group_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/elasticache_user_group_association aws_elasticache_user_group_association}.
 type ElasticacheUserGroupAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -94,12 +94,22 @@ type ElasticacheUserGroupAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -343,7 +353,7 @@ func (j *jsiiProxy_ElasticacheUserGroupAssociation) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/elasticache_user_group_association aws_elasticache_user_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/elasticache_user_group_association aws_elasticache_user_group_association} Resource.
 func NewElasticacheUserGroupAssociation(scope constructs.Construct, id *string, config *ElasticacheUserGroupAssociationConfig) ElasticacheUserGroupAssociation {
 	_init_.Initialize()
 
@@ -361,7 +371,7 @@ func NewElasticacheUserGroupAssociation(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/elasticache_user_group_association aws_elasticache_user_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/elasticache_user_group_association aws_elasticache_user_group_association} Resource.
 func NewElasticacheUserGroupAssociation_Override(e ElasticacheUserGroupAssociation, scope constructs.Construct, id *string, config *ElasticacheUserGroupAssociationConfig) {
 	_init_.Initialize()
 
@@ -742,6 +752,19 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) GetStringMapAttribute(terraf
 	return returns
 }
 
+func (e *jsiiProxy_ElasticacheUserGroupAssociation) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (e *jsiiProxy_ElasticacheUserGroupAssociation) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -769,6 +792,17 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) InterpolationForAttribute(te
 	return returns
 }
 
+func (e *jsiiProxy_ElasticacheUserGroupAssociation) MoveFromId(id *string) {
+	if err := e.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (e *jsiiProxy_ElasticacheUserGroupAssociation) MoveTo(moveTarget *string, index interface{}) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -777,6 +811,17 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) MoveTo(moveTarget *string, i
 		e,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (e *jsiiProxy_ElasticacheUserGroupAssociation) MoveToId(id *string) {
+	if err := e.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/cloudwatch_log_group aws_cloudwatch_log_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/cloudwatch_log_group aws_cloudwatch_log_group}.
 type CloudwatchLogGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -50,6 +50,9 @@ type CloudwatchLogGroup interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LogGroupClass() *string
+	SetLogGroupClass(val *string)
+	LogGroupClassInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -110,17 +113,28 @@ type CloudwatchLogGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetId()
 	ResetKmsKeyId()
+	ResetLogGroupClass()
 	ResetName()
 	ResetNamePrefix()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -280,6 +294,26 @@ func (j *jsiiProxy_CloudwatchLogGroup) Lifecycle() *cdktf.TerraformResourceLifec
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchLogGroup) LogGroupClass() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logGroupClass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchLogGroup) LogGroupClassInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"logGroupClassInput",
 		&returns,
 	)
 	return returns
@@ -476,7 +510,7 @@ func (j *jsiiProxy_CloudwatchLogGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/cloudwatch_log_group aws_cloudwatch_log_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/cloudwatch_log_group aws_cloudwatch_log_group} Resource.
 func NewCloudwatchLogGroup(scope constructs.Construct, id *string, config *CloudwatchLogGroupConfig) CloudwatchLogGroup {
 	_init_.Initialize()
 
@@ -494,7 +528,7 @@ func NewCloudwatchLogGroup(scope constructs.Construct, id *string, config *Cloud
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/cloudwatch_log_group aws_cloudwatch_log_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/cloudwatch_log_group aws_cloudwatch_log_group} Resource.
 func NewCloudwatchLogGroup_Override(c CloudwatchLogGroup, scope constructs.Construct, id *string, config *CloudwatchLogGroupConfig) {
 	_init_.Initialize()
 
@@ -572,6 +606,17 @@ func (j *jsiiProxy_CloudwatchLogGroup)SetLifecycle(val *cdktf.TerraformResourceL
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchLogGroup)SetLogGroupClass(val *string) {
+	if err := j.validateSetLogGroupClassParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logGroupClass",
 		val,
 	)
 }
@@ -930,6 +975,19 @@ func (c *jsiiProxy_CloudwatchLogGroup) GetStringMapAttribute(terraformAttribute 
 	return returns
 }
 
+func (c *jsiiProxy_CloudwatchLogGroup) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (c *jsiiProxy_CloudwatchLogGroup) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := c.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -957,6 +1015,17 @@ func (c *jsiiProxy_CloudwatchLogGroup) InterpolationForAttribute(terraformAttrib
 	return returns
 }
 
+func (c *jsiiProxy_CloudwatchLogGroup) MoveFromId(id *string) {
+	if err := c.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (c *jsiiProxy_CloudwatchLogGroup) MoveTo(moveTarget *string, index interface{}) {
 	if err := c.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -965,6 +1034,17 @@ func (c *jsiiProxy_CloudwatchLogGroup) MoveTo(moveTarget *string, index interfac
 		c,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (c *jsiiProxy_CloudwatchLogGroup) MoveToId(id *string) {
+	if err := c.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -991,6 +1071,14 @@ func (c *jsiiProxy_CloudwatchLogGroup) ResetKmsKeyId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetKmsKeyId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchLogGroup) ResetLogGroupClass() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetLogGroupClass",
 		nil, // no parameters
 	)
 }

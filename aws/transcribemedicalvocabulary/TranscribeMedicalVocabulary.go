@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/transcribe_medical_vocabulary aws_transcribe_medical_vocabulary}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/transcribe_medical_vocabulary aws_transcribe_medical_vocabulary}.
 type TranscribeMedicalVocabulary interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -107,12 +107,22 @@ type TranscribeMedicalVocabulary interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -460,7 +470,7 @@ func (j *jsiiProxy_TranscribeMedicalVocabulary) VocabularyNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/transcribe_medical_vocabulary aws_transcribe_medical_vocabulary} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/transcribe_medical_vocabulary aws_transcribe_medical_vocabulary} Resource.
 func NewTranscribeMedicalVocabulary(scope constructs.Construct, id *string, config *TranscribeMedicalVocabularyConfig) TranscribeMedicalVocabulary {
 	_init_.Initialize()
 
@@ -478,7 +488,7 @@ func NewTranscribeMedicalVocabulary(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/transcribe_medical_vocabulary aws_transcribe_medical_vocabulary} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/transcribe_medical_vocabulary aws_transcribe_medical_vocabulary} Resource.
 func NewTranscribeMedicalVocabulary_Override(t TranscribeMedicalVocabulary, scope constructs.Construct, id *string, config *TranscribeMedicalVocabularyConfig) {
 	_init_.Initialize()
 
@@ -892,6 +902,19 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) GetStringMapAttribute(terraformA
 	return returns
 }
 
+func (t *jsiiProxy_TranscribeMedicalVocabulary) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		t,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (t *jsiiProxy_TranscribeMedicalVocabulary) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := t.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -919,6 +942,17 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) InterpolationForAttribute(terraf
 	return returns
 }
 
+func (t *jsiiProxy_TranscribeMedicalVocabulary) MoveFromId(id *string) {
+	if err := t.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (t *jsiiProxy_TranscribeMedicalVocabulary) MoveTo(moveTarget *string, index interface{}) {
 	if err := t.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -927,6 +961,17 @@ func (t *jsiiProxy_TranscribeMedicalVocabulary) MoveTo(moveTarget *string, index
 		t,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (t *jsiiProxy_TranscribeMedicalVocabulary) MoveToId(id *string) {
+	if err := t.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

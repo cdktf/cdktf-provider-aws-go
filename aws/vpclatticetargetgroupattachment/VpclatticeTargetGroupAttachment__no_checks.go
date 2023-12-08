@@ -59,7 +59,15 @@ func (v *jsiiProxy_VpclatticeTargetGroupAttachment) validateInterpolationForAttr
 	return nil
 }
 
+func (v *jsiiProxy_VpclatticeTargetGroupAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpclatticeTargetGroupAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpclatticeTargetGroupAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

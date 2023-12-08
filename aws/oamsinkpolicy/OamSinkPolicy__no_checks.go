@@ -59,7 +59,15 @@ func (o *jsiiProxy_OamSinkPolicy) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (o *jsiiProxy_OamSinkPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OamSinkPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OamSinkPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

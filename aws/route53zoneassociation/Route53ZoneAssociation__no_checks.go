@@ -59,7 +59,15 @@ func (r *jsiiProxy_Route53ZoneAssociation) validateInterpolationForAttributePara
 	return nil
 }
 
+func (r *jsiiProxy_Route53ZoneAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53ZoneAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53ZoneAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

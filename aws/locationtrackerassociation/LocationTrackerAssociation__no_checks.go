@@ -59,7 +59,15 @@ func (l *jsiiProxy_LocationTrackerAssociation) validateInterpolationForAttribute
 	return nil
 }
 
+func (l *jsiiProxy_LocationTrackerAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LocationTrackerAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LocationTrackerAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

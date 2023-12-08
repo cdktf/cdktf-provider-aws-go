@@ -59,7 +59,15 @@ func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateInterpolationForA
 	return nil
 }
 
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaProvisionedConcurrencyConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

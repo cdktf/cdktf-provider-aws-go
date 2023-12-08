@@ -59,7 +59,15 @@ func (i *jsiiProxy_IamVirtualMfaDevice) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (i *jsiiProxy_IamVirtualMfaDevice) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamVirtualMfaDevice) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamVirtualMfaDevice) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

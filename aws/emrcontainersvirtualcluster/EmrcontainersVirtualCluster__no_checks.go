@@ -59,7 +59,15 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) validateInterpolationForAttribut
 	return nil
 }
 
+func (e *jsiiProxy_EmrcontainersVirtualCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrcontainersVirtualCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmrcontainersVirtualCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

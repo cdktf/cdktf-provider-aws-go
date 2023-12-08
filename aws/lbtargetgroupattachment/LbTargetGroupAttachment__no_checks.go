@@ -59,7 +59,15 @@ func (l *jsiiProxy_LbTargetGroupAttachment) validateInterpolationForAttributePar
 	return nil
 }
 
+func (l *jsiiProxy_LbTargetGroupAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbTargetGroupAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbTargetGroupAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

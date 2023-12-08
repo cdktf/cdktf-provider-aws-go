@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ec2_local_gateway_route aws_ec2_local_gateway_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_local_gateway_route aws_ec2_local_gateway_route}.
 type Ec2LocalGatewayRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -97,12 +97,22 @@ type Ec2LocalGatewayRoute interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -366,7 +376,7 @@ func (j *jsiiProxy_Ec2LocalGatewayRoute) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ec2_local_gateway_route aws_ec2_local_gateway_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_local_gateway_route aws_ec2_local_gateway_route} Resource.
 func NewEc2LocalGatewayRoute(scope constructs.Construct, id *string, config *Ec2LocalGatewayRouteConfig) Ec2LocalGatewayRoute {
 	_init_.Initialize()
 
@@ -384,7 +394,7 @@ func NewEc2LocalGatewayRoute(scope constructs.Construct, id *string, config *Ec2
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ec2_local_gateway_route aws_ec2_local_gateway_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_local_gateway_route aws_ec2_local_gateway_route} Resource.
 func NewEc2LocalGatewayRoute_Override(e Ec2LocalGatewayRoute, scope constructs.Construct, id *string, config *Ec2LocalGatewayRouteConfig) {
 	_init_.Initialize()
 
@@ -776,6 +786,19 @@ func (e *jsiiProxy_Ec2LocalGatewayRoute) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
+func (e *jsiiProxy_Ec2LocalGatewayRoute) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (e *jsiiProxy_Ec2LocalGatewayRoute) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -803,6 +826,17 @@ func (e *jsiiProxy_Ec2LocalGatewayRoute) InterpolationForAttribute(terraformAttr
 	return returns
 }
 
+func (e *jsiiProxy_Ec2LocalGatewayRoute) MoveFromId(id *string) {
+	if err := e.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (e *jsiiProxy_Ec2LocalGatewayRoute) MoveTo(moveTarget *string, index interface{}) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -811,6 +845,17 @@ func (e *jsiiProxy_Ec2LocalGatewayRoute) MoveTo(moveTarget *string, index interf
 		e,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (e *jsiiProxy_Ec2LocalGatewayRoute) MoveToId(id *string) {
+	if err := e.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

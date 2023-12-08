@@ -59,7 +59,15 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) validateInterpolationForAttribut
 	return nil
 }
 
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

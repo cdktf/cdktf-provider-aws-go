@@ -59,7 +59,15 @@ func (c *jsiiProxy_CodepipelineCustomActionType) validateInterpolationForAttribu
 	return nil
 }
 
+func (c *jsiiProxy_CodepipelineCustomActionType) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodepipelineCustomActionType) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodepipelineCustomActionType) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

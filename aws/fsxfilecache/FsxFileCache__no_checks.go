@@ -59,7 +59,15 @@ func (f *jsiiProxy_FsxFileCache) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (f *jsiiProxy_FsxFileCache) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxFileCache) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxFileCache) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (e *jsiiProxy_EbsDefaultKmsKey) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (e *jsiiProxy_EbsDefaultKmsKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EbsDefaultKmsKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EbsDefaultKmsKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (r *jsiiProxy_RdsReservedInstance) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (r *jsiiProxy_RdsReservedInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsReservedInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (r *jsiiProxy_RdsReservedInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

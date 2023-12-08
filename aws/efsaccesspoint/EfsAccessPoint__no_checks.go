@@ -59,7 +59,15 @@ func (e *jsiiProxy_EfsAccessPoint) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (e *jsiiProxy_EfsAccessPoint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EfsAccessPoint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EfsAccessPoint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

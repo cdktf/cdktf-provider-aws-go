@@ -59,7 +59,15 @@ func (f *jsiiProxy_FsxOpenzfsVolume) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (f *jsiiProxy_FsxOpenzfsVolume) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxOpenzfsVolume) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxOpenzfsVolume) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

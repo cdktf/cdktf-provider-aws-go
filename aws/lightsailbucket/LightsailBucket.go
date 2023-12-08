@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lightsail_bucket aws_lightsail_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lightsail_bucket aws_lightsail_bucket}.
 type LightsailBucket interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -109,12 +109,22 @@ type LightsailBucket interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -481,7 +491,7 @@ func (j *jsiiProxy_LightsailBucket) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lightsail_bucket aws_lightsail_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lightsail_bucket aws_lightsail_bucket} Resource.
 func NewLightsailBucket(scope constructs.Construct, id *string, config *LightsailBucketConfig) LightsailBucket {
 	_init_.Initialize()
 
@@ -499,7 +509,7 @@ func NewLightsailBucket(scope constructs.Construct, id *string, config *Lightsai
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/lightsail_bucket aws_lightsail_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lightsail_bucket aws_lightsail_bucket} Resource.
 func NewLightsailBucket_Override(l LightsailBucket, scope constructs.Construct, id *string, config *LightsailBucketConfig) {
 	_init_.Initialize()
 
@@ -913,6 +923,19 @@ func (l *jsiiProxy_LightsailBucket) GetStringMapAttribute(terraformAttribute *st
 	return returns
 }
 
+func (l *jsiiProxy_LightsailBucket) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		l,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (l *jsiiProxy_LightsailBucket) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := l.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -940,6 +963,17 @@ func (l *jsiiProxy_LightsailBucket) InterpolationForAttribute(terraformAttribute
 	return returns
 }
 
+func (l *jsiiProxy_LightsailBucket) MoveFromId(id *string) {
+	if err := l.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (l *jsiiProxy_LightsailBucket) MoveTo(moveTarget *string, index interface{}) {
 	if err := l.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -948,6 +982,17 @@ func (l *jsiiProxy_LightsailBucket) MoveTo(moveTarget *string, index interface{}
 		l,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (l *jsiiProxy_LightsailBucket) MoveToId(id *string) {
+	if err := l.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

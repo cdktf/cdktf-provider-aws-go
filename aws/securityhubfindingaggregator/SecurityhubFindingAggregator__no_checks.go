@@ -59,7 +59,15 @@ func (s *jsiiProxy_SecurityhubFindingAggregator) validateInterpolationForAttribu
 	return nil
 }
 
+func (s *jsiiProxy_SecurityhubFindingAggregator) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityhubFindingAggregator) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityhubFindingAggregator) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

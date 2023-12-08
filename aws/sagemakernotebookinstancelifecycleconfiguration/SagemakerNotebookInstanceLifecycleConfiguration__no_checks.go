@@ -59,7 +59,15 @@ func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) validateInte
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerNotebookInstanceLifecycleConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

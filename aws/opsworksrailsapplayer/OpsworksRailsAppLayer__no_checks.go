@@ -59,7 +59,15 @@ func (o *jsiiProxy_OpsworksRailsAppLayer) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (o *jsiiProxy_OpsworksRailsAppLayer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksRailsAppLayer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (o *jsiiProxy_OpsworksRailsAppLayer) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

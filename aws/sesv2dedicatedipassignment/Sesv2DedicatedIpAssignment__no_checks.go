@@ -59,7 +59,15 @@ func (s *jsiiProxy_Sesv2DedicatedIpAssignment) validateInterpolationForAttribute
 	return nil
 }
 
+func (s *jsiiProxy_Sesv2DedicatedIpAssignment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_Sesv2DedicatedIpAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_Sesv2DedicatedIpAssignment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

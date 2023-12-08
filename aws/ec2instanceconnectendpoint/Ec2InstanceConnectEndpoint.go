@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ec2_instance_connect_endpoint aws_ec2_instance_connect_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_instance_connect_endpoint aws_ec2_instance_connect_endpoint}.
 type Ec2InstanceConnectEndpoint interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -108,12 +108,22 @@ type Ec2InstanceConnectEndpoint interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -491,7 +501,7 @@ func (j *jsiiProxy_Ec2InstanceConnectEndpoint) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ec2_instance_connect_endpoint aws_ec2_instance_connect_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_instance_connect_endpoint aws_ec2_instance_connect_endpoint} Resource.
 func NewEc2InstanceConnectEndpoint(scope constructs.Construct, id *string, config *Ec2InstanceConnectEndpointConfig) Ec2InstanceConnectEndpoint {
 	_init_.Initialize()
 
@@ -509,7 +519,7 @@ func NewEc2InstanceConnectEndpoint(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ec2_instance_connect_endpoint aws_ec2_instance_connect_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_instance_connect_endpoint aws_ec2_instance_connect_endpoint} Resource.
 func NewEc2InstanceConnectEndpoint_Override(e Ec2InstanceConnectEndpoint, scope constructs.Construct, id *string, config *Ec2InstanceConnectEndpointConfig) {
 	_init_.Initialize()
 
@@ -901,6 +911,19 @@ func (e *jsiiProxy_Ec2InstanceConnectEndpoint) GetStringMapAttribute(terraformAt
 	return returns
 }
 
+func (e *jsiiProxy_Ec2InstanceConnectEndpoint) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (e *jsiiProxy_Ec2InstanceConnectEndpoint) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -928,6 +951,17 @@ func (e *jsiiProxy_Ec2InstanceConnectEndpoint) InterpolationForAttribute(terrafo
 	return returns
 }
 
+func (e *jsiiProxy_Ec2InstanceConnectEndpoint) MoveFromId(id *string) {
+	if err := e.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (e *jsiiProxy_Ec2InstanceConnectEndpoint) MoveTo(moveTarget *string, index interface{}) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -936,6 +970,17 @@ func (e *jsiiProxy_Ec2InstanceConnectEndpoint) MoveTo(moveTarget *string, index 
 		e,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (e *jsiiProxy_Ec2InstanceConnectEndpoint) MoveToId(id *string) {
+	if err := e.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

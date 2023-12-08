@@ -59,7 +59,15 @@ func (s *jsiiProxy_ShieldProtectionHealthCheckAssociation) validateInterpolation
 	return nil
 }
 
+func (s *jsiiProxy_ShieldProtectionHealthCheckAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ShieldProtectionHealthCheckAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_ShieldProtectionHealthCheckAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

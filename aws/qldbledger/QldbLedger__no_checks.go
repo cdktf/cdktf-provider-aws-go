@@ -59,7 +59,15 @@ func (q *jsiiProxy_QldbLedger) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (q *jsiiProxy_QldbLedger) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QldbLedger) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (q *jsiiProxy_QldbLedger) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

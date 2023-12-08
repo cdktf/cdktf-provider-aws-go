@@ -59,7 +59,15 @@ func (v *jsiiProxy_VerifiedaccessInstanceTrustProviderAttachment) validateInterp
 	return nil
 }
 
+func (v *jsiiProxy_VerifiedaccessInstanceTrustProviderAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VerifiedaccessInstanceTrustProviderAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (v *jsiiProxy_VerifiedaccessInstanceTrustProviderAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

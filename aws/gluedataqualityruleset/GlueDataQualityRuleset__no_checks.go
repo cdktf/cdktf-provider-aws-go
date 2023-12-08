@@ -59,7 +59,15 @@ func (g *jsiiProxy_GlueDataQualityRuleset) validateInterpolationForAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GlueDataQualityRuleset) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueDataQualityRuleset) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlueDataQualityRuleset) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

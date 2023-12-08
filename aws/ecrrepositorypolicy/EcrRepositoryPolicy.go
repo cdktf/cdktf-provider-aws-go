@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ecr_repository_policy aws_ecr_repository_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ecr_repository_policy aws_ecr_repository_policy}.
 type EcrRepositoryPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -95,12 +95,22 @@ type EcrRepositoryPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -354,7 +364,7 @@ func (j *jsiiProxy_EcrRepositoryPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ecr_repository_policy aws_ecr_repository_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ecr_repository_policy aws_ecr_repository_policy} Resource.
 func NewEcrRepositoryPolicy(scope constructs.Construct, id *string, config *EcrRepositoryPolicyConfig) EcrRepositoryPolicy {
 	_init_.Initialize()
 
@@ -372,7 +382,7 @@ func NewEcrRepositoryPolicy(scope constructs.Construct, id *string, config *EcrR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ecr_repository_policy aws_ecr_repository_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ecr_repository_policy aws_ecr_repository_policy} Resource.
 func NewEcrRepositoryPolicy_Override(e EcrRepositoryPolicy, scope constructs.Construct, id *string, config *EcrRepositoryPolicyConfig) {
 	_init_.Initialize()
 
@@ -753,6 +763,19 @@ func (e *jsiiProxy_EcrRepositoryPolicy) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (e *jsiiProxy_EcrRepositoryPolicy) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (e *jsiiProxy_EcrRepositoryPolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -780,6 +803,17 @@ func (e *jsiiProxy_EcrRepositoryPolicy) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (e *jsiiProxy_EcrRepositoryPolicy) MoveFromId(id *string) {
+	if err := e.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (e *jsiiProxy_EcrRepositoryPolicy) MoveTo(moveTarget *string, index interface{}) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -788,6 +822,17 @@ func (e *jsiiProxy_EcrRepositoryPolicy) MoveTo(moveTarget *string, index interfa
 		e,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (e *jsiiProxy_EcrRepositoryPolicy) MoveToId(id *string) {
+	if err := e.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (c *jsiiProxy_CeCostAllocationTag) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_CeCostAllocationTag) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CeCostAllocationTag) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CeCostAllocationTag) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

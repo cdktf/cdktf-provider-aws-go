@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/alb_listener aws_alb_listener}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/alb_listener aws_alb_listener}.
 type DataAwsAlbListener interface {
 	cdktf.TerraformDataSource
 	AlpnPolicy() *string
@@ -51,6 +51,7 @@ type DataAwsAlbListener interface {
 	LoadBalancerArn() *string
 	SetLoadBalancerArn(val *string)
 	LoadBalancerArnInput() *string
+	MutualAuthentication() DataAwsAlbListenerMutualAuthenticationList
 	// The tree node.
 	Node() constructs.Node
 	Port() *float64
@@ -295,6 +296,16 @@ func (j *jsiiProxy_DataAwsAlbListener) LoadBalancerArnInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsAlbListener) MutualAuthentication() DataAwsAlbListenerMutualAuthenticationList {
+	var returns DataAwsAlbListenerMutualAuthenticationList
+	_jsii_.Get(
+		j,
+		"mutualAuthentication",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsAlbListener) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -436,7 +447,7 @@ func (j *jsiiProxy_DataAwsAlbListener) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/alb_listener aws_alb_listener} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/alb_listener aws_alb_listener} Data Source.
 func NewDataAwsAlbListener(scope constructs.Construct, id *string, config *DataAwsAlbListenerConfig) DataAwsAlbListener {
 	_init_.Initialize()
 
@@ -454,7 +465,7 @@ func NewDataAwsAlbListener(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/alb_listener aws_alb_listener} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/alb_listener aws_alb_listener} Data Source.
 func NewDataAwsAlbListener_Override(d DataAwsAlbListener, scope constructs.Construct, id *string, config *DataAwsAlbListenerConfig) {
 	_init_.Initialize()
 

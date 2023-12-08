@@ -59,7 +59,15 @@ func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateInterpola
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketServerSideEncryptionConfigurationA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

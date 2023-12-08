@@ -59,7 +59,15 @@ func (e *jsiiProxy_EcsAccountSettingDefault) validateInterpolationForAttributePa
 	return nil
 }
 
+func (e *jsiiProxy_EcsAccountSettingDefault) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsAccountSettingDefault) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcsAccountSettingDefault) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

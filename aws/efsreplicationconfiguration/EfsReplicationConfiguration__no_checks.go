@@ -59,7 +59,15 @@ func (e *jsiiProxy_EfsReplicationConfiguration) validateInterpolationForAttribut
 	return nil
 }
 
+func (e *jsiiProxy_EfsReplicationConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EfsReplicationConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EfsReplicationConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

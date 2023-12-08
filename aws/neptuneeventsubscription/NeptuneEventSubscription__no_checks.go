@@ -59,7 +59,15 @@ func (n *jsiiProxy_NeptuneEventSubscription) validateInterpolationForAttributePa
 	return nil
 }
 
+func (n *jsiiProxy_NeptuneEventSubscription) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NeptuneEventSubscription) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NeptuneEventSubscription) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

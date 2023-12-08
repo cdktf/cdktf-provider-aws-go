@@ -59,7 +59,15 @@ func (s *jsiiProxy_SesReceiptRuleSet) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (s *jsiiProxy_SesReceiptRuleSet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SesReceiptRuleSet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SesReceiptRuleSet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

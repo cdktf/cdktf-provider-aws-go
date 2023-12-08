@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/appmesh_virtual_gateway aws_appmesh_virtual_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_gateway aws_appmesh_virtual_gateway}.
 type AppmeshVirtualGateway interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -109,12 +109,22 @@ type AppmeshVirtualGateway interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -482,7 +492,7 @@ func (j *jsiiProxy_AppmeshVirtualGateway) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/appmesh_virtual_gateway aws_appmesh_virtual_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_gateway aws_appmesh_virtual_gateway} Resource.
 func NewAppmeshVirtualGateway(scope constructs.Construct, id *string, config *AppmeshVirtualGatewayConfig) AppmeshVirtualGateway {
 	_init_.Initialize()
 
@@ -500,7 +510,7 @@ func NewAppmeshVirtualGateway(scope constructs.Construct, id *string, config *Ap
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/appmesh_virtual_gateway aws_appmesh_virtual_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appmesh_virtual_gateway aws_appmesh_virtual_gateway} Resource.
 func NewAppmeshVirtualGateway_Override(a AppmeshVirtualGateway, scope constructs.Construct, id *string, config *AppmeshVirtualGatewayConfig) {
 	_init_.Initialize()
 
@@ -914,6 +924,19 @@ func (a *jsiiProxy_AppmeshVirtualGateway) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
+func (a *jsiiProxy_AppmeshVirtualGateway) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_AppmeshVirtualGateway) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -941,6 +964,17 @@ func (a *jsiiProxy_AppmeshVirtualGateway) InterpolationForAttribute(terraformAtt
 	return returns
 }
 
+func (a *jsiiProxy_AppmeshVirtualGateway) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_AppmeshVirtualGateway) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -949,6 +983,17 @@ func (a *jsiiProxy_AppmeshVirtualGateway) MoveTo(moveTarget *string, index inter
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_AppmeshVirtualGateway) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

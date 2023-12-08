@@ -59,7 +59,15 @@ func (a *jsiiProxy_AppCookieStickinessPolicy) validateInterpolationForAttributeP
 	return nil
 }
 
+func (a *jsiiProxy_AppCookieStickinessPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppCookieStickinessPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppCookieStickinessPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DirectoryServiceConditionalForwarder) validateInterpolationFo
 	return nil
 }
 
+func (d *jsiiProxy_DirectoryServiceConditionalForwarder) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectoryServiceConditionalForwarder) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectoryServiceConditionalForwarder) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

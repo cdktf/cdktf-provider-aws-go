@@ -59,7 +59,15 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) validateInterpolationForAttribut
 	return nil
 }
 
+func (n *jsiiProxy_NetworkInterfaceAttachmentA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkInterfaceAttachmentA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkInterfaceAttachmentA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

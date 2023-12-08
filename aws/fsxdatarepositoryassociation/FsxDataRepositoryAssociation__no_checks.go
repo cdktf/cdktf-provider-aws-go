@@ -59,7 +59,15 @@ func (f *jsiiProxy_FsxDataRepositoryAssociation) validateInterpolationForAttribu
 	return nil
 }
 
+func (f *jsiiProxy_FsxDataRepositoryAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxDataRepositoryAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxDataRepositoryAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/auditmanager_control aws_auditmanager_control}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/auditmanager_control aws_auditmanager_control}.
 type AuditmanagerControl interface {
 	cdktf.TerraformResource
 	ActionPlanInstructions() *string
@@ -109,12 +109,22 @@ type AuditmanagerControl interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -484,7 +494,7 @@ func (j *jsiiProxy_AuditmanagerControl) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/auditmanager_control aws_auditmanager_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/auditmanager_control aws_auditmanager_control} Resource.
 func NewAuditmanagerControl(scope constructs.Construct, id *string, config *AuditmanagerControlConfig) AuditmanagerControl {
 	_init_.Initialize()
 
@@ -502,7 +512,7 @@ func NewAuditmanagerControl(scope constructs.Construct, id *string, config *Audi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/auditmanager_control aws_auditmanager_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/auditmanager_control aws_auditmanager_control} Resource.
 func NewAuditmanagerControl_Override(a AuditmanagerControl, scope constructs.Construct, id *string, config *AuditmanagerControlConfig) {
 	_init_.Initialize()
 
@@ -916,6 +926,19 @@ func (a *jsiiProxy_AuditmanagerControl) GetStringMapAttribute(terraformAttribute
 	return returns
 }
 
+func (a *jsiiProxy_AuditmanagerControl) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_AuditmanagerControl) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -943,6 +966,17 @@ func (a *jsiiProxy_AuditmanagerControl) InterpolationForAttribute(terraformAttri
 	return returns
 }
 
+func (a *jsiiProxy_AuditmanagerControl) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_AuditmanagerControl) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -951,6 +985,17 @@ func (a *jsiiProxy_AuditmanagerControl) MoveTo(moveTarget *string, index interfa
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_AuditmanagerControl) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

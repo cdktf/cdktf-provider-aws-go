@@ -59,7 +59,15 @@ func (c *jsiiProxy_CognitoUserInGroup) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (c *jsiiProxy_CognitoUserInGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoUserInGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoUserInGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

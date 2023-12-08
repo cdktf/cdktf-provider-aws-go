@@ -67,6 +67,7 @@ type SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference inter
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDefaultResourceSpec(value *SagemakerUserProfileUserSettingsTensorBoardAppSettingsDefaultResourceSpec)
+	ResetDefaultResourceSpec()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -449,6 +450,14 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputR
 		s,
 		"putDefaultResourceSpec",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsTensorBoardAppSettingsOutputReference) ResetDefaultResourceSpec() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetDefaultResourceSpec",
+		nil, // no parameters
 	)
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DbInstanceRoleAssociation) validateInterpolationForAttributeP
 	return nil
 }
 
+func (d *jsiiProxy_DbInstanceRoleAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbInstanceRoleAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DbInstanceRoleAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

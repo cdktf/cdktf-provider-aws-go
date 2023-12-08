@@ -59,7 +59,15 @@ func (d *jsiiProxy_DynamodbKinesisStreamingDestination) validateInterpolationFor
 	return nil
 }
 
+func (d *jsiiProxy_DynamodbKinesisStreamingDestination) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DynamodbKinesisStreamingDestination) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DynamodbKinesisStreamingDestination) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DxGateway) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (d *jsiiProxy_DxGateway) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxGateway) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

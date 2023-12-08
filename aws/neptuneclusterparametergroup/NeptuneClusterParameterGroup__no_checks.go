@@ -59,7 +59,15 @@ func (n *jsiiProxy_NeptuneClusterParameterGroup) validateInterpolationForAttribu
 	return nil
 }
 
+func (n *jsiiProxy_NeptuneClusterParameterGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NeptuneClusterParameterGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (n *jsiiProxy_NeptuneClusterParameterGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

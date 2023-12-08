@@ -59,7 +59,15 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateInterpolationForAttr
 	return nil
 }
 
+func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

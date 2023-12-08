@@ -59,7 +59,15 @@ func (s *jsiiProxy_ShieldApplicationLayerAutomaticResponse) validateInterpolatio
 	return nil
 }
 
+func (s *jsiiProxy_ShieldApplicationLayerAutomaticResponse) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ShieldApplicationLayerAutomaticResponse) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_ShieldApplicationLayerAutomaticResponse) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

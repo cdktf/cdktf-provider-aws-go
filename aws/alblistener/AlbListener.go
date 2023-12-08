@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener aws_alb_listener}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener aws_alb_listener}.
 type AlbListener interface {
 	cdktf.TerraformResource
 	AlpnPolicy() *string
@@ -58,6 +58,8 @@ type AlbListener interface {
 	LoadBalancerArn() *string
 	SetLoadBalancerArn(val *string)
 	LoadBalancerArnInput() *string
+	MutualAuthentication() AlbListenerMutualAuthenticationOutputReference
+	MutualAuthenticationInput() *AlbListenerMutualAuthentication
 	// The tree node.
 	Node() constructs.Node
 	Port() *float64
@@ -117,20 +119,32 @@ type AlbListener interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDefaultAction(value interface{})
+	PutMutualAuthentication(value *AlbListenerMutualAuthentication)
 	PutTimeouts(value *AlbListenerTimeouts)
 	ResetAlpnPolicy()
 	ResetCertificateArn()
 	ResetId()
+	ResetMutualAuthentication()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -355,6 +369,26 @@ func (j *jsiiProxy_AlbListener) LoadBalancerArnInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AlbListener) MutualAuthentication() AlbListenerMutualAuthenticationOutputReference {
+	var returns AlbListenerMutualAuthenticationOutputReference
+	_jsii_.Get(
+		j,
+		"mutualAuthentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbListener) MutualAuthenticationInput() *AlbListenerMutualAuthentication {
+	var returns *AlbListenerMutualAuthentication
+	_jsii_.Get(
+		j,
+		"mutualAuthenticationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlbListener) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -546,7 +580,7 @@ func (j *jsiiProxy_AlbListener) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener aws_alb_listener} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener aws_alb_listener} Resource.
 func NewAlbListener(scope constructs.Construct, id *string, config *AlbListenerConfig) AlbListener {
 	_init_.Initialize()
 
@@ -564,7 +598,7 @@ func NewAlbListener(scope constructs.Construct, id *string, config *AlbListenerC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/alb_listener aws_alb_listener} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb_listener aws_alb_listener} Resource.
 func NewAlbListener_Override(a AlbListener, scope constructs.Construct, id *string, config *AlbListenerConfig) {
 	_init_.Initialize()
 
@@ -1011,6 +1045,19 @@ func (a *jsiiProxy_AlbListener) GetStringMapAttribute(terraformAttribute *string
 	return returns
 }
 
+func (a *jsiiProxy_AlbListener) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (a *jsiiProxy_AlbListener) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := a.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1038,6 +1085,17 @@ func (a *jsiiProxy_AlbListener) InterpolationForAttribute(terraformAttribute *st
 	return returns
 }
 
+func (a *jsiiProxy_AlbListener) MoveFromId(id *string) {
+	if err := a.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (a *jsiiProxy_AlbListener) MoveTo(moveTarget *string, index interface{}) {
 	if err := a.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1046,6 +1104,17 @@ func (a *jsiiProxy_AlbListener) MoveTo(moveTarget *string, index interface{}) {
 		a,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (a *jsiiProxy_AlbListener) MoveToId(id *string) {
+	if err := a.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 
@@ -1067,6 +1136,17 @@ func (a *jsiiProxy_AlbListener) PutDefaultAction(value interface{}) {
 	_jsii_.InvokeVoid(
 		a,
 		"putDefaultAction",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AlbListener) PutMutualAuthentication(value *AlbListenerMutualAuthentication) {
+	if err := a.validatePutMutualAuthenticationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putMutualAuthentication",
 		[]interface{}{value},
 	)
 }
@@ -1102,6 +1182,14 @@ func (a *jsiiProxy_AlbListener) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbListener) ResetMutualAuthentication() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMutualAuthentication",
 		nil, // no parameters
 	)
 }

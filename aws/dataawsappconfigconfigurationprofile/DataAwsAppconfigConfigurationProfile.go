@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/appconfig_configuration_profile aws_appconfig_configuration_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/appconfig_configuration_profile aws_appconfig_configuration_profile}.
 type DataAwsAppconfigConfigurationProfile interface {
 	cdktf.TerraformDataSource
 	ApplicationId() *string
@@ -46,6 +46,7 @@ type DataAwsAppconfigConfigurationProfile interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KmsKeyIdentifier() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -267,6 +268,16 @@ func (j *jsiiProxy_DataAwsAppconfigConfigurationProfile) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsAppconfigConfigurationProfile) KmsKeyIdentifier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyIdentifier",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsAppconfigConfigurationProfile) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -408,7 +419,7 @@ func (j *jsiiProxy_DataAwsAppconfigConfigurationProfile) Validator() DataAwsAppc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/appconfig_configuration_profile aws_appconfig_configuration_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/appconfig_configuration_profile aws_appconfig_configuration_profile} Data Source.
 func NewDataAwsAppconfigConfigurationProfile(scope constructs.Construct, id *string, config *DataAwsAppconfigConfigurationProfileConfig) DataAwsAppconfigConfigurationProfile {
 	_init_.Initialize()
 
@@ -426,7 +437,7 @@ func NewDataAwsAppconfigConfigurationProfile(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/data-sources/appconfig_configuration_profile aws_appconfig_configuration_profile} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/appconfig_configuration_profile aws_appconfig_configuration_profile} Data Source.
 func NewDataAwsAppconfigConfigurationProfile_Override(d DataAwsAppconfigConfigurationProfile, scope constructs.Construct, id *string, config *DataAwsAppconfigConfigurationProfileConfig) {
 	_init_.Initialize()
 

@@ -59,7 +59,15 @@ func (e *jsiiProxy_Ec2CarrierGateway) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (e *jsiiProxy_Ec2CarrierGateway) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2CarrierGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2CarrierGateway) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

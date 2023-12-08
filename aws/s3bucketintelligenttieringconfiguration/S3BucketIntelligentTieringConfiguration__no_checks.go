@@ -59,7 +59,15 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateInterpolatio
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketIntelligentTieringConfiguration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

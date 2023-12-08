@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ec2_transit_gateway_policy_table_association aws_ec2_transit_gateway_policy_table_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_transit_gateway_policy_table_association aws_ec2_transit_gateway_policy_table_association}.
 type Ec2TransitGatewayPolicyTableAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -96,12 +96,22 @@ type Ec2TransitGatewayPolicyTableAssociation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -365,7 +375,7 @@ func (j *jsiiProxy_Ec2TransitGatewayPolicyTableAssociation) TransitGatewayPolicy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ec2_transit_gateway_policy_table_association aws_ec2_transit_gateway_policy_table_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_transit_gateway_policy_table_association aws_ec2_transit_gateway_policy_table_association} Resource.
 func NewEc2TransitGatewayPolicyTableAssociation(scope constructs.Construct, id *string, config *Ec2TransitGatewayPolicyTableAssociationConfig) Ec2TransitGatewayPolicyTableAssociation {
 	_init_.Initialize()
 
@@ -383,7 +393,7 @@ func NewEc2TransitGatewayPolicyTableAssociation(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ec2_transit_gateway_policy_table_association aws_ec2_transit_gateway_policy_table_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_transit_gateway_policy_table_association aws_ec2_transit_gateway_policy_table_association} Resource.
 func NewEc2TransitGatewayPolicyTableAssociation_Override(e Ec2TransitGatewayPolicyTableAssociation, scope constructs.Construct, id *string, config *Ec2TransitGatewayPolicyTableAssociationConfig) {
 	_init_.Initialize()
 
@@ -764,6 +774,19 @@ func (e *jsiiProxy_Ec2TransitGatewayPolicyTableAssociation) GetStringMapAttribut
 	return returns
 }
 
+func (e *jsiiProxy_Ec2TransitGatewayPolicyTableAssociation) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (e *jsiiProxy_Ec2TransitGatewayPolicyTableAssociation) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -791,6 +814,17 @@ func (e *jsiiProxy_Ec2TransitGatewayPolicyTableAssociation) InterpolationForAttr
 	return returns
 }
 
+func (e *jsiiProxy_Ec2TransitGatewayPolicyTableAssociation) MoveFromId(id *string) {
+	if err := e.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (e *jsiiProxy_Ec2TransitGatewayPolicyTableAssociation) MoveTo(moveTarget *string, index interface{}) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -799,6 +833,17 @@ func (e *jsiiProxy_Ec2TransitGatewayPolicyTableAssociation) MoveTo(moveTarget *s
 		e,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (e *jsiiProxy_Ec2TransitGatewayPolicyTableAssociation) MoveToId(id *string) {
+	if err := e.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

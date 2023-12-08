@@ -59,7 +59,15 @@ func (s *jsiiProxy_SignerSigningJob) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (s *jsiiProxy_SignerSigningJob) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SignerSigningJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SignerSigningJob) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

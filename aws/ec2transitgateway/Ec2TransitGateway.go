@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway}.
 type Ec2TransitGateway interface {
 	cdktf.TerraformResource
 	AmazonSideAsn() *float64
@@ -127,12 +127,22 @@ type Ec2TransitGateway interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -629,7 +639,7 @@ func (j *jsiiProxy_Ec2TransitGateway) VpnEcmpSupportInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway} Resource.
 func NewEc2TransitGateway(scope constructs.Construct, id *string, config *Ec2TransitGatewayConfig) Ec2TransitGateway {
 	_init_.Initialize()
 
@@ -647,7 +657,7 @@ func NewEc2TransitGateway(scope constructs.Construct, id *string, config *Ec2Tra
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ec2_transit_gateway aws_ec2_transit_gateway} Resource.
 func NewEc2TransitGateway_Override(e Ec2TransitGateway, scope constructs.Construct, id *string, config *Ec2TransitGatewayConfig) {
 	_init_.Initialize()
 
@@ -1127,6 +1137,19 @@ func (e *jsiiProxy_Ec2TransitGateway) GetStringMapAttribute(terraformAttribute *
 	return returns
 }
 
+func (e *jsiiProxy_Ec2TransitGateway) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (e *jsiiProxy_Ec2TransitGateway) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := e.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1154,6 +1177,17 @@ func (e *jsiiProxy_Ec2TransitGateway) InterpolationForAttribute(terraformAttribu
 	return returns
 }
 
+func (e *jsiiProxy_Ec2TransitGateway) MoveFromId(id *string) {
+	if err := e.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (e *jsiiProxy_Ec2TransitGateway) MoveTo(moveTarget *string, index interface{}) {
 	if err := e.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1162,6 +1196,17 @@ func (e *jsiiProxy_Ec2TransitGateway) MoveTo(moveTarget *string, index interface
 		e,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (e *jsiiProxy_Ec2TransitGateway) MoveToId(id *string) {
+	if err := e.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (e *jsiiProxy_EmrInstanceFleet) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (e *jsiiProxy_EmrInstanceFleet) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrInstanceFleet) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmrInstanceFleet) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

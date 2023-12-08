@@ -59,7 +59,15 @@ func (e *jsiiProxy_ElbAttachment) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (e *jsiiProxy_ElbAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElbAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElbAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

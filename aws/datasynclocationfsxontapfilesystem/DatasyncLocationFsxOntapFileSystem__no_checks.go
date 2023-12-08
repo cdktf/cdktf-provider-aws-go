@@ -59,7 +59,15 @@ func (d *jsiiProxy_DatasyncLocationFsxOntapFileSystem) validateInterpolationForA
 	return nil
 }
 
+func (d *jsiiProxy_DatasyncLocationFsxOntapFileSystem) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncLocationFsxOntapFileSystem) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatasyncLocationFsxOntapFileSystem) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

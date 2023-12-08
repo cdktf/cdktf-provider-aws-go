@@ -59,7 +59,15 @@ func (e *jsiiProxy_Ec2AvailabilityZoneGroup) validateInterpolationForAttributePa
 	return nil
 }
 
+func (e *jsiiProxy_Ec2AvailabilityZoneGroup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2AvailabilityZoneGroup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2AvailabilityZoneGroup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

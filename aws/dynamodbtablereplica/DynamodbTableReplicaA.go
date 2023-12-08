@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica}.
 type DynamodbTableReplicaA interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -109,12 +109,22 @@ type DynamodbTableReplicaA interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -475,7 +485,7 @@ func (j *jsiiProxy_DynamodbTableReplicaA) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica} Resource.
 func NewDynamodbTableReplicaA(scope constructs.Construct, id *string, config *DynamodbTableReplicaAConfig) DynamodbTableReplicaA {
 	_init_.Initialize()
 
@@ -493,7 +503,7 @@ func NewDynamodbTableReplicaA(scope constructs.Construct, id *string, config *Dy
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.29.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/dynamodb_table_replica aws_dynamodb_table_replica} Resource.
 func NewDynamodbTableReplicaA_Override(d DynamodbTableReplicaA, scope constructs.Construct, id *string, config *DynamodbTableReplicaAConfig) {
 	_init_.Initialize()
 
@@ -918,6 +928,19 @@ func (d *jsiiProxy_DynamodbTableReplicaA) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
+func (d *jsiiProxy_DynamodbTableReplicaA) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (d *jsiiProxy_DynamodbTableReplicaA) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := d.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -945,6 +968,17 @@ func (d *jsiiProxy_DynamodbTableReplicaA) InterpolationForAttribute(terraformAtt
 	return returns
 }
 
+func (d *jsiiProxy_DynamodbTableReplicaA) MoveFromId(id *string) {
+	if err := d.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (d *jsiiProxy_DynamodbTableReplicaA) MoveTo(moveTarget *string, index interface{}) {
 	if err := d.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -953,6 +987,17 @@ func (d *jsiiProxy_DynamodbTableReplicaA) MoveTo(moveTarget *string, index inter
 		d,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (d *jsiiProxy_DynamodbTableReplicaA) MoveToId(id *string) {
+	if err := d.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

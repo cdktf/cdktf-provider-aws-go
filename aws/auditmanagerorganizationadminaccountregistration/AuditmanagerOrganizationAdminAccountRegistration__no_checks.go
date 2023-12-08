@@ -59,7 +59,15 @@ func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateInt
 	return nil
 }
 
+func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

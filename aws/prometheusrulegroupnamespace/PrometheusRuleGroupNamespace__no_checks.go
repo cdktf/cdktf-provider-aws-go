@@ -59,7 +59,15 @@ func (p *jsiiProxy_PrometheusRuleGroupNamespace) validateInterpolationForAttribu
 	return nil
 }
 
+func (p *jsiiProxy_PrometheusRuleGroupNamespace) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrometheusRuleGroupNamespace) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (p *jsiiProxy_PrometheusRuleGroupNamespace) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

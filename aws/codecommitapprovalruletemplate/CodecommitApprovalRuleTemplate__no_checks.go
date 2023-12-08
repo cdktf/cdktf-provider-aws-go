@@ -59,7 +59,15 @@ func (c *jsiiProxy_CodecommitApprovalRuleTemplate) validateInterpolationForAttri
 	return nil
 }
 
+func (c *jsiiProxy_CodecommitApprovalRuleTemplate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodecommitApprovalRuleTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodecommitApprovalRuleTemplate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

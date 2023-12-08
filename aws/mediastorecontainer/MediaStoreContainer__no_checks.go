@@ -59,7 +59,15 @@ func (m *jsiiProxy_MediaStoreContainer) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (m *jsiiProxy_MediaStoreContainer) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaStoreContainer) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MediaStoreContainer) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (d *jsiiProxy_DirectoryServiceRadiusSettings) validateInterpolationForAttri
 	return nil
 }
 
+func (d *jsiiProxy_DirectoryServiceRadiusSettings) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectoryServiceRadiusSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectoryServiceRadiusSettings) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
