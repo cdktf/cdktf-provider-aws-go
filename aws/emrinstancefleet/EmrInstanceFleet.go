@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/emr_instance_fleet aws_emr_instance_fleet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/emr_instance_fleet aws_emr_instance_fleet}.
 type EmrInstanceFleet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -472,7 +472,7 @@ func (j *jsiiProxy_EmrInstanceFleet) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/emr_instance_fleet aws_emr_instance_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/emr_instance_fleet aws_emr_instance_fleet} Resource.
 func NewEmrInstanceFleet(scope constructs.Construct, id *string, config *EmrInstanceFleetConfig) EmrInstanceFleet {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewEmrInstanceFleet(scope constructs.Construct, id *string, config *EmrInst
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/emr_instance_fleet aws_emr_instance_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/emr_instance_fleet aws_emr_instance_fleet} Resource.
 func NewEmrInstanceFleet_Override(e EmrInstanceFleet, scope constructs.Construct, id *string, config *EmrInstanceFleetConfig) {
 	_init_.Initialize()
 

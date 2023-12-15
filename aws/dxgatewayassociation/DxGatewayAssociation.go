@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/dx_gateway_association aws_dx_gateway_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/dx_gateway_association aws_dx_gateway_association}.
 type DxGatewayAssociation interface {
 	cdktf.TerraformResource
 	AllowedPrefixes() *[]*string
@@ -507,7 +507,7 @@ func (j *jsiiProxy_DxGatewayAssociation) VpnGatewayIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/dx_gateway_association aws_dx_gateway_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/dx_gateway_association aws_dx_gateway_association} Resource.
 func NewDxGatewayAssociation(scope constructs.Construct, id *string, config *DxGatewayAssociationConfig) DxGatewayAssociation {
 	_init_.Initialize()
 
@@ -525,7 +525,7 @@ func NewDxGatewayAssociation(scope constructs.Construct, id *string, config *DxG
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/dx_gateway_association aws_dx_gateway_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/dx_gateway_association aws_dx_gateway_association} Resource.
 func NewDxGatewayAssociation_Override(d DxGatewayAssociation, scope constructs.Construct, id *string, config *DxGatewayAssociationConfig) {
 	_init_.Initialize()
 

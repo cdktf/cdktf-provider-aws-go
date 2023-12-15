@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/dms_endpoint aws_dms_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/dms_endpoint aws_dms_endpoint}.
 type DmsEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -87,6 +87,8 @@ type DmsEndpoint interface {
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
+	PostgresSettings() DmsEndpointPostgresSettingsOutputReference
+	PostgresSettingsInput() *DmsEndpointPostgresSettings
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -182,6 +184,7 @@ type DmsEndpoint interface {
 	PutKafkaSettings(value *DmsEndpointKafkaSettings)
 	PutKinesisSettings(value *DmsEndpointKinesisSettings)
 	PutMongodbSettings(value *DmsEndpointMongodbSettings)
+	PutPostgresSettings(value *DmsEndpointPostgresSettings)
 	PutRedisSettings(value *DmsEndpointRedisSettings)
 	PutRedshiftSettings(value *DmsEndpointRedshiftSettings)
 	PutS3Settings(value *DmsEndpointS3Settings)
@@ -201,6 +204,7 @@ type DmsEndpoint interface {
 	ResetPassword()
 	ResetPauseReplicationTasks()
 	ResetPort()
+	ResetPostgresSettings()
 	ResetRedisSettings()
 	ResetRedshiftSettings()
 	ResetS3Settings()
@@ -638,6 +642,26 @@ func (j *jsiiProxy_DmsEndpoint) PortInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DmsEndpoint) PostgresSettings() DmsEndpointPostgresSettingsOutputReference {
+	var returns DmsEndpointPostgresSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"postgresSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpoint) PostgresSettingsInput() *DmsEndpointPostgresSettings {
+	var returns *DmsEndpointPostgresSettings
+	_jsii_.Get(
+		j,
+		"postgresSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DmsEndpoint) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -939,7 +963,7 @@ func (j *jsiiProxy_DmsEndpoint) UsernameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
 func NewDmsEndpoint(scope constructs.Construct, id *string, config *DmsEndpointConfig) DmsEndpoint {
 	_init_.Initialize()
 
@@ -957,7 +981,7 @@ func NewDmsEndpoint(scope constructs.Construct, id *string, config *DmsEndpointC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/dms_endpoint aws_dms_endpoint} Resource.
 func NewDmsEndpoint_Override(d DmsEndpoint, scope constructs.Construct, id *string, config *DmsEndpointConfig) {
 	_init_.Initialize()
 
@@ -1642,6 +1666,17 @@ func (d *jsiiProxy_DmsEndpoint) PutMongodbSettings(value *DmsEndpointMongodbSett
 	)
 }
 
+func (d *jsiiProxy_DmsEndpoint) PutPostgresSettings(value *DmsEndpointPostgresSettings) {
+	if err := d.validatePutPostgresSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putPostgresSettings",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DmsEndpoint) PutRedisSettings(value *DmsEndpointRedisSettings) {
 	if err := d.validatePutRedisSettingsParameters(value); err != nil {
 		panic(err)
@@ -1786,6 +1821,14 @@ func (d *jsiiProxy_DmsEndpoint) ResetPort() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpoint) ResetPostgresSettings() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPostgresSettings",
 		nil, // no parameters
 	)
 }

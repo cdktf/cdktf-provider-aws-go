@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs}.
 type DatasyncLocationHdfs interface {
 	cdktf.TerraformResource
 	AgentArns() *[]*string
@@ -663,7 +663,7 @@ func (j *jsiiProxy_DatasyncLocationHdfs) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs} Resource.
 func NewDatasyncLocationHdfs(scope constructs.Construct, id *string, config *DatasyncLocationHdfsConfig) DatasyncLocationHdfs {
 	_init_.Initialize()
 
@@ -681,7 +681,7 @@ func NewDatasyncLocationHdfs(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs} Resource.
 func NewDatasyncLocationHdfs_Override(d DatasyncLocationHdfs, scope constructs.Construct, id *string, config *DatasyncLocationHdfsConfig) {
 	_init_.Initialize()
 

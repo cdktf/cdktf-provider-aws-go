@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshiftserverless_snapshot aws_redshiftserverless_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshiftserverless_snapshot aws_redshiftserverless_snapshot}.
 type RedshiftserverlessSnapshot interface {
 	cdktf.TerraformResource
 	AccountsWithProvisionedRestoreAccess() *[]*string
@@ -454,7 +454,7 @@ func (j *jsiiProxy_RedshiftserverlessSnapshot) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshiftserverless_snapshot aws_redshiftserverless_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshiftserverless_snapshot aws_redshiftserverless_snapshot} Resource.
 func NewRedshiftserverlessSnapshot(scope constructs.Construct, id *string, config *RedshiftserverlessSnapshotConfig) RedshiftserverlessSnapshot {
 	_init_.Initialize()
 
@@ -472,7 +472,7 @@ func NewRedshiftserverlessSnapshot(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshiftserverless_snapshot aws_redshiftserverless_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshiftserverless_snapshot aws_redshiftserverless_snapshot} Resource.
 func NewRedshiftserverlessSnapshot_Override(r RedshiftserverlessSnapshot, scope constructs.Construct, id *string, config *RedshiftserverlessSnapshotConfig) {
 	_init_.Initialize()
 

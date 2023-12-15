@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/storagegateway_gateway aws_storagegateway_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/storagegateway_gateway aws_storagegateway_gateway}.
 type StoragegatewayGateway interface {
 	cdktf.TerraformResource
 	ActivationKey() *string
@@ -827,7 +827,7 @@ func (j *jsiiProxy_StoragegatewayGateway) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/storagegateway_gateway aws_storagegateway_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/storagegateway_gateway aws_storagegateway_gateway} Resource.
 func NewStoragegatewayGateway(scope constructs.Construct, id *string, config *StoragegatewayGatewayConfig) StoragegatewayGateway {
 	_init_.Initialize()
 
@@ -845,7 +845,7 @@ func NewStoragegatewayGateway(scope constructs.Construct, id *string, config *St
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/storagegateway_gateway aws_storagegateway_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/storagegateway_gateway aws_storagegateway_gateway} Resource.
 func NewStoragegatewayGateway_Override(s StoragegatewayGateway, scope constructs.Construct, id *string, config *StoragegatewayGatewayConfig) {
 	_init_.Initialize()
 

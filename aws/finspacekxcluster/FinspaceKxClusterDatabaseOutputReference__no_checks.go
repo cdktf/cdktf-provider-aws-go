@@ -71,6 +71,10 @@ func (j *jsiiProxy_FinspaceKxClusterDatabaseOutputReference) validateSetDatabase
 	return nil
 }
 
+func (j *jsiiProxy_FinspaceKxClusterDatabaseOutputReference) validateSetDataviewNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FinspaceKxClusterDatabaseOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

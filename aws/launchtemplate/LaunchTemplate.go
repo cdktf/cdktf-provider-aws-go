@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/launch_template aws_launch_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/launch_template aws_launch_template}.
 type LaunchTemplate interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -1241,7 +1241,7 @@ func (j *jsiiProxy_LaunchTemplate) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/launch_template aws_launch_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/launch_template aws_launch_template} Resource.
 func NewLaunchTemplate(scope constructs.Construct, id *string, config *LaunchTemplateConfig) LaunchTemplate {
 	_init_.Initialize()
 
@@ -1259,7 +1259,7 @@ func NewLaunchTemplate(scope constructs.Construct, id *string, config *LaunchTem
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/launch_template aws_launch_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/launch_template aws_launch_template} Resource.
 func NewLaunchTemplate_Override(l LaunchTemplate, scope constructs.Construct, id *string, config *LaunchTemplateConfig) {
 	_init_.Initialize()
 

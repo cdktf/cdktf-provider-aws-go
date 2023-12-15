@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/iam_signing_certificate aws_iam_signing_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/iam_signing_certificate aws_iam_signing_certificate}.
 type IamSigningCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -388,7 +388,7 @@ func (j *jsiiProxy_IamSigningCertificate) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/iam_signing_certificate aws_iam_signing_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/iam_signing_certificate aws_iam_signing_certificate} Resource.
 func NewIamSigningCertificate(scope constructs.Construct, id *string, config *IamSigningCertificateConfig) IamSigningCertificate {
 	_init_.Initialize()
 
@@ -406,7 +406,7 @@ func NewIamSigningCertificate(scope constructs.Construct, id *string, config *Ia
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/iam_signing_certificate aws_iam_signing_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/iam_signing_certificate aws_iam_signing_certificate} Resource.
 func NewIamSigningCertificate_Override(i IamSigningCertificate, scope constructs.Construct, id *string, config *IamSigningCertificateConfig) {
 	_init_.Initialize()
 

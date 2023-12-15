@@ -7,9 +7,9 @@ package wafv2webacl
 type Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverride struct {
 	// action_to_use block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/wafv2_web_acl#action_to_use Wafv2WebAcl#action_to_use}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/wafv2_web_acl#action_to_use Wafv2WebAcl#action_to_use}
 	ActionToUse *Wafv2WebAclRuleStatementRuleGroupReferenceStatementRuleActionOverrideActionToUse `field:"required" json:"actionToUse" yaml:"actionToUse"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/wafv2_web_acl#name Wafv2WebAcl#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
 }
 

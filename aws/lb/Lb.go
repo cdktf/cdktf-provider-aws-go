@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb aws_lb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lb aws_lb}.
 type Lb interface {
 	cdktf.TerraformResource
 	AccessLogs() LbAccessLogsOutputReference
@@ -25,6 +25,8 @@ type Lb interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	ConnectionLogs() LbConnectionLogsOutputReference
+	ConnectionLogsInput() *LbConnectionLogs
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -188,9 +190,11 @@ type Lb interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAccessLogs(value *LbAccessLogs)
+	PutConnectionLogs(value *LbConnectionLogs)
 	PutSubnetMapping(value interface{})
 	PutTimeouts(value *LbTimeouts)
 	ResetAccessLogs()
+	ResetConnectionLogs()
 	ResetCustomerOwnedIpv4Pool()
 	ResetDesyncMitigationMode()
 	ResetDnsRecordClientRoutingPolicy()
@@ -290,6 +294,26 @@ func (j *jsiiProxy_Lb) Connection() interface{} {
 	_jsii_.Get(
 		j,
 		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lb) ConnectionLogs() LbConnectionLogsOutputReference {
+	var returns LbConnectionLogsOutputReference
+	_jsii_.Get(
+		j,
+		"connectionLogs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lb) ConnectionLogsInput() *LbConnectionLogs {
+	var returns *LbConnectionLogs
+	_jsii_.Get(
+		j,
+		"connectionLogsInput",
 		&returns,
 	)
 	return returns
@@ -986,7 +1010,7 @@ func (j *jsiiProxy_Lb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb aws_lb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lb aws_lb} Resource.
 func NewLb(scope constructs.Construct, id *string, config *LbConfig) Lb {
 	_init_.Initialize()
 
@@ -1004,7 +1028,7 @@ func NewLb(scope constructs.Construct, id *string, config *LbConfig) Lb {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/lb aws_lb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lb aws_lb} Resource.
 func NewLb_Override(l Lb, scope constructs.Construct, id *string, config *LbConfig) {
 	_init_.Initialize()
 
@@ -1711,6 +1735,17 @@ func (l *jsiiProxy_Lb) PutAccessLogs(value *LbAccessLogs) {
 	)
 }
 
+func (l *jsiiProxy_Lb) PutConnectionLogs(value *LbConnectionLogs) {
+	if err := l.validatePutConnectionLogsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putConnectionLogs",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_Lb) PutSubnetMapping(value interface{}) {
 	if err := l.validatePutSubnetMappingParameters(value); err != nil {
 		panic(err)
@@ -1737,6 +1772,14 @@ func (l *jsiiProxy_Lb) ResetAccessLogs() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetAccessLogs",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Lb) ResetConnectionLogs() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetConnectionLogs",
 		nil, // no parameters
 	)
 }

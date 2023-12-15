@@ -79,6 +79,10 @@ func (j *jsiiProxy_FinspaceKxClusterSavedownStorageConfigurationOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_FinspaceKxClusterSavedownStorageConfigurationOutputReference) validateSetVolumeNameParameters(val *string) error {
+	return nil
+}
+
 func validateNewFinspaceKxClusterSavedownStorageConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

@@ -52,6 +52,9 @@ type DmsEndpointElasticsearchSettingsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UseNewMappingType() interface{}
+	SetUseNewMappingType(val interface{})
+	UseNewMappingTypeInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -78,6 +81,7 @@ type DmsEndpointElasticsearchSettingsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetErrorRetryDuration()
 	ResetFullLoadErrorPercentage()
+	ResetUseNewMappingType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -243,6 +247,26 @@ func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) TerraformRes
 	return returns
 }
 
+func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) UseNewMappingType() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useNewMappingType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) UseNewMappingTypeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useNewMappingTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewDmsEndpointElasticsearchSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DmsEndpointElasticsearchSettingsOutputReference {
 	_init_.Initialize()
@@ -366,6 +390,17 @@ func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference)SetTerraformR
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference)SetUseNewMappingType(val interface{}) {
+	if err := j.validateSetUseNewMappingTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useNewMappingType",
 		val,
 	)
 }
@@ -568,6 +603,14 @@ func (d *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) ResetFullLoa
 	_jsii_.InvokeVoid(
 		d,
 		"resetFullLoadErrorPercentage",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) ResetUseNewMappingType() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUseNewMappingType",
 		nil, // no parameters
 	)
 }

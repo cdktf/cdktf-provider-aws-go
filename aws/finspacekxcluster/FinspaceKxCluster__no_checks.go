@@ -99,6 +99,14 @@ func (f *jsiiProxy_FinspaceKxCluster) validatePutSavedownStorageConfigurationPar
 	return nil
 }
 
+func (f *jsiiProxy_FinspaceKxCluster) validatePutScalingGroupConfigurationParameters(value *FinspaceKxClusterScalingGroupConfiguration) error {
+	return nil
+}
+
+func (f *jsiiProxy_FinspaceKxCluster) validatePutTickerplantLogConfigurationParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FinspaceKxCluster) validatePutTimeoutsParameters(value *FinspaceKxClusterTimeouts) error {
 	return nil
 }

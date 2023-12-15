@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_hsm_configuration aws_redshift_hsm_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_hsm_configuration aws_redshift_hsm_configuration}.
 type RedshiftHsmConfiguration interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -504,7 +504,7 @@ func (j *jsiiProxy_RedshiftHsmConfiguration) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_hsm_configuration aws_redshift_hsm_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_hsm_configuration aws_redshift_hsm_configuration} Resource.
 func NewRedshiftHsmConfiguration(scope constructs.Construct, id *string, config *RedshiftHsmConfigurationConfig) RedshiftHsmConfiguration {
 	_init_.Initialize()
 
@@ -522,7 +522,7 @@ func NewRedshiftHsmConfiguration(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/redshift_hsm_configuration aws_redshift_hsm_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshift_hsm_configuration aws_redshift_hsm_configuration} Resource.
 func NewRedshiftHsmConfiguration_Override(r RedshiftHsmConfiguration, scope constructs.Construct, id *string, config *RedshiftHsmConfigurationConfig) {
 	_init_.Initialize()
 

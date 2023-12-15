@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb aws_alb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/alb aws_alb}.
 type Alb interface {
 	cdktf.TerraformResource
 	AccessLogs() AlbAccessLogsOutputReference
@@ -25,6 +25,8 @@ type Alb interface {
 	Connection() interface{}
 	// Experimental.
 	SetConnection(val interface{})
+	ConnectionLogs() AlbConnectionLogsOutputReference
+	ConnectionLogsInput() *AlbConnectionLogs
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -188,9 +190,11 @@ type Alb interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAccessLogs(value *AlbAccessLogs)
+	PutConnectionLogs(value *AlbConnectionLogs)
 	PutSubnetMapping(value interface{})
 	PutTimeouts(value *AlbTimeouts)
 	ResetAccessLogs()
+	ResetConnectionLogs()
 	ResetCustomerOwnedIpv4Pool()
 	ResetDesyncMitigationMode()
 	ResetDnsRecordClientRoutingPolicy()
@@ -290,6 +294,26 @@ func (j *jsiiProxy_Alb) Connection() interface{} {
 	_jsii_.Get(
 		j,
 		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Alb) ConnectionLogs() AlbConnectionLogsOutputReference {
+	var returns AlbConnectionLogsOutputReference
+	_jsii_.Get(
+		j,
+		"connectionLogs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Alb) ConnectionLogsInput() *AlbConnectionLogs {
+	var returns *AlbConnectionLogs
+	_jsii_.Get(
+		j,
+		"connectionLogsInput",
 		&returns,
 	)
 	return returns
@@ -986,7 +1010,7 @@ func (j *jsiiProxy_Alb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb aws_alb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/alb aws_alb} Resource.
 func NewAlb(scope constructs.Construct, id *string, config *AlbConfig) Alb {
 	_init_.Initialize()
 
@@ -1004,7 +1028,7 @@ func NewAlb(scope constructs.Construct, id *string, config *AlbConfig) Alb {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/alb aws_alb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/alb aws_alb} Resource.
 func NewAlb_Override(a Alb, scope constructs.Construct, id *string, config *AlbConfig) {
 	_init_.Initialize()
 
@@ -1711,6 +1735,17 @@ func (a *jsiiProxy_Alb) PutAccessLogs(value *AlbAccessLogs) {
 	)
 }
 
+func (a *jsiiProxy_Alb) PutConnectionLogs(value *AlbConnectionLogs) {
+	if err := a.validatePutConnectionLogsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putConnectionLogs",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_Alb) PutSubnetMapping(value interface{}) {
 	if err := a.validatePutSubnetMappingParameters(value); err != nil {
 		panic(err)
@@ -1737,6 +1772,14 @@ func (a *jsiiProxy_Alb) ResetAccessLogs() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAccessLogs",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Alb) ResetConnectionLogs() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetConnectionLogs",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appautoscaling_target aws_appautoscaling_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appautoscaling_target aws_appautoscaling_target}.
 type AppautoscalingTarget interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -505,7 +505,7 @@ func (j *jsiiProxy_AppautoscalingTarget) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appautoscaling_target aws_appautoscaling_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appautoscaling_target aws_appautoscaling_target} Resource.
 func NewAppautoscalingTarget(scope constructs.Construct, id *string, config *AppautoscalingTargetConfig) AppautoscalingTarget {
 	_init_.Initialize()
 
@@ -523,7 +523,7 @@ func NewAppautoscalingTarget(scope constructs.Construct, id *string, config *App
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/appautoscaling_target aws_appautoscaling_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/appautoscaling_target aws_appautoscaling_target} Resource.
 func NewAppautoscalingTarget_Override(a AppautoscalingTarget, scope constructs.Construct, id *string, config *AppautoscalingTargetConfig) {
 	_init_.Initialize()
 

@@ -36,6 +36,9 @@ type FinspaceKxClusterDatabaseOutputReference interface {
 	DatabaseName() *string
 	SetDatabaseName(val *string)
 	DatabaseNameInput() *string
+	DataviewName() *string
+	SetDataviewName(val *string)
+	DataviewNameInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -75,6 +78,7 @@ type FinspaceKxClusterDatabaseOutputReference interface {
 	PutCacheConfigurations(value interface{})
 	ResetCacheConfigurations()
 	ResetChangesetId()
+	ResetDataviewName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -175,6 +179,26 @@ func (j *jsiiProxy_FinspaceKxClusterDatabaseOutputReference) DatabaseNameInput()
 	_jsii_.Get(
 		j,
 		"databaseNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FinspaceKxClusterDatabaseOutputReference) DataviewName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataviewName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FinspaceKxClusterDatabaseOutputReference) DataviewNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataviewNameInput",
 		&returns,
 	)
 	return returns
@@ -288,6 +312,17 @@ func (j *jsiiProxy_FinspaceKxClusterDatabaseOutputReference)SetDatabaseName(val 
 	_jsii_.Set(
 		j,
 		"databaseName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FinspaceKxClusterDatabaseOutputReference)SetDataviewName(val *string) {
+	if err := j.validateSetDataviewNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataviewName",
 		val,
 	)
 }
@@ -534,6 +569,14 @@ func (f *jsiiProxy_FinspaceKxClusterDatabaseOutputReference) ResetChangesetId() 
 	_jsii_.InvokeVoid(
 		f,
 		"resetChangesetId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FinspaceKxClusterDatabaseOutputReference) ResetDataviewName() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDataviewName",
 		nil, // no parameters
 	)
 }

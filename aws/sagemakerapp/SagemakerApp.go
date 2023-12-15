@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/sagemaker_app aws_sagemaker_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/sagemaker_app aws_sagemaker_app}.
 type SagemakerApp interface {
 	cdktf.TerraformResource
 	AppName() *string
@@ -507,7 +507,7 @@ func (j *jsiiProxy_SagemakerApp) UserProfileNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/sagemaker_app aws_sagemaker_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/sagemaker_app aws_sagemaker_app} Resource.
 func NewSagemakerApp(scope constructs.Construct, id *string, config *SagemakerAppConfig) SagemakerApp {
 	_init_.Initialize()
 
@@ -525,7 +525,7 @@ func NewSagemakerApp(scope constructs.Construct, id *string, config *SagemakerAp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/sagemaker_app aws_sagemaker_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/sagemaker_app aws_sagemaker_app} Resource.
 func NewSagemakerApp_Override(s SagemakerApp, scope constructs.Construct, id *string, config *SagemakerAppConfig) {
 	_init_.Initialize()
 

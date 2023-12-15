@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lb aws_lb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb aws_lb}.
 type DataAwsLb interface {
 	cdktf.TerraformDataSource
 	AccessLogs() DataAwsLbAccessLogsList
@@ -22,6 +22,7 @@ type DataAwsLb interface {
 	ArnSuffix() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ConnectionLogs() DataAwsLbConnectionLogsList
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -35,6 +36,7 @@ type DataAwsLb interface {
 	SetDependsOn(val *[]*string)
 	DesyncMitigationMode() *string
 	DnsName() *string
+	DnsRecordClientRoutingPolicy() *string
 	DropInvalidHeaderFields() cdktf.IResolvable
 	EnableCrossZoneLoadBalancing() cdktf.IResolvable
 	EnableDeletionProtection() cdktf.IResolvable
@@ -190,6 +192,16 @@ func (j *jsiiProxy_DataAwsLb) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsLb) ConnectionLogs() DataAwsLbConnectionLogsList {
+	var returns DataAwsLbConnectionLogsList
+	_jsii_.Get(
+		j,
+		"connectionLogs",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsLb) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -245,6 +257,16 @@ func (j *jsiiProxy_DataAwsLb) DnsName() *string {
 	_jsii_.Get(
 		j,
 		"dnsName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLb) DnsRecordClientRoutingPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dnsRecordClientRoutingPolicy",
 		&returns,
 	)
 	return returns
@@ -621,7 +643,7 @@ func (j *jsiiProxy_DataAwsLb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lb aws_lb} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb aws_lb} Data Source.
 func NewDataAwsLb(scope constructs.Construct, id *string, config *DataAwsLbConfig) DataAwsLb {
 	_init_.Initialize()
 
@@ -639,7 +661,7 @@ func NewDataAwsLb(scope constructs.Construct, id *string, config *DataAwsLbConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/lb aws_lb} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/lb aws_lb} Data Source.
 func NewDataAwsLb_Override(d DataAwsLb, scope constructs.Construct, id *string, config *DataAwsLbConfig) {
 	_init_.Initialize()
 

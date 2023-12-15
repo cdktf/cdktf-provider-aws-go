@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/opensearchserverless_collection aws_opensearchserverless_collection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/opensearchserverless_collection aws_opensearchserverless_collection}.
 type DataAwsOpensearchserverlessCollection interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -60,6 +60,7 @@ type DataAwsOpensearchserverlessCollection interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	StandbyReplicas() *string
 	Tags() cdktf.StringMap
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -333,6 +334,16 @@ func (j *jsiiProxy_DataAwsOpensearchserverlessCollection) RawOverrides() interfa
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsOpensearchserverlessCollection) StandbyReplicas() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"standbyReplicas",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsOpensearchserverlessCollection) Tags() cdktf.StringMap {
 	var returns cdktf.StringMap
 	_jsii_.Get(
@@ -384,7 +395,7 @@ func (j *jsiiProxy_DataAwsOpensearchserverlessCollection) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/opensearchserverless_collection aws_opensearchserverless_collection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/opensearchserverless_collection aws_opensearchserverless_collection} Data Source.
 func NewDataAwsOpensearchserverlessCollection(scope constructs.Construct, id *string, config *DataAwsOpensearchserverlessCollectionConfig) DataAwsOpensearchserverlessCollection {
 	_init_.Initialize()
 
@@ -402,7 +413,7 @@ func NewDataAwsOpensearchserverlessCollection(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/opensearchserverless_collection aws_opensearchserverless_collection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/opensearchserverless_collection aws_opensearchserverless_collection} Data Source.
 func NewDataAwsOpensearchserverlessCollection_Override(d DataAwsOpensearchserverlessCollection, scope constructs.Construct, id *string, config *DataAwsOpensearchserverlessCollectionConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster aws_finspace_kx_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster aws_finspace_kx_cluster}.
 type FinspaceKxCluster interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -100,6 +100,8 @@ type FinspaceKxCluster interface {
 	ReleaseLabelInput() *string
 	SavedownStorageConfiguration() FinspaceKxClusterSavedownStorageConfigurationOutputReference
 	SavedownStorageConfigurationInput() *FinspaceKxClusterSavedownStorageConfiguration
+	ScalingGroupConfiguration() FinspaceKxClusterScalingGroupConfigurationOutputReference
+	ScalingGroupConfigurationInput() *FinspaceKxClusterScalingGroupConfiguration
 	Status() *string
 	StatusReason() *string
 	Tags() *map[string]*string
@@ -114,6 +116,8 @@ type FinspaceKxCluster interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TickerplantLogConfiguration() FinspaceKxClusterTickerplantLogConfigurationList
+	TickerplantLogConfigurationInput() interface{}
 	Timeouts() FinspaceKxClusterTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	Type() *string
@@ -170,11 +174,14 @@ type FinspaceKxCluster interface {
 	PutCode(value *FinspaceKxClusterCode)
 	PutDatabase(value interface{})
 	PutSavedownStorageConfiguration(value *FinspaceKxClusterSavedownStorageConfiguration)
+	PutScalingGroupConfiguration(value *FinspaceKxClusterScalingGroupConfiguration)
+	PutTickerplantLogConfiguration(value interface{})
 	PutTimeouts(value *FinspaceKxClusterTimeouts)
 	PutVpcConfiguration(value *FinspaceKxClusterVpcConfiguration)
 	ResetAutoScalingConfiguration()
 	ResetAvailabilityZoneId()
 	ResetCacheStorageConfigurations()
+	ResetCapacityConfiguration()
 	ResetCode()
 	ResetCommandLineArguments()
 	ResetDatabase()
@@ -186,8 +193,10 @@ type FinspaceKxCluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSavedownStorageConfiguration()
+	ResetScalingGroupConfiguration()
 	ResetTags()
 	ResetTagsAll()
+	ResetTickerplantLogConfiguration()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -684,6 +693,26 @@ func (j *jsiiProxy_FinspaceKxCluster) SavedownStorageConfigurationInput() *Finsp
 	return returns
 }
 
+func (j *jsiiProxy_FinspaceKxCluster) ScalingGroupConfiguration() FinspaceKxClusterScalingGroupConfigurationOutputReference {
+	var returns FinspaceKxClusterScalingGroupConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"scalingGroupConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FinspaceKxCluster) ScalingGroupConfigurationInput() *FinspaceKxClusterScalingGroupConfiguration {
+	var returns *FinspaceKxClusterScalingGroupConfiguration
+	_jsii_.Get(
+		j,
+		"scalingGroupConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FinspaceKxCluster) Status() *string {
 	var returns *string
 	_jsii_.Get(
@@ -774,6 +803,26 @@ func (j *jsiiProxy_FinspaceKxCluster) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FinspaceKxCluster) TickerplantLogConfiguration() FinspaceKxClusterTickerplantLogConfigurationList {
+	var returns FinspaceKxClusterTickerplantLogConfigurationList
+	_jsii_.Get(
+		j,
+		"tickerplantLogConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FinspaceKxCluster) TickerplantLogConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"tickerplantLogConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FinspaceKxCluster) Timeouts() FinspaceKxClusterTimeoutsOutputReference {
 	var returns FinspaceKxClusterTimeoutsOutputReference
 	_jsii_.Get(
@@ -835,7 +884,7 @@ func (j *jsiiProxy_FinspaceKxCluster) VpcConfigurationInput() *FinspaceKxCluster
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster aws_finspace_kx_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster aws_finspace_kx_cluster} Resource.
 func NewFinspaceKxCluster(scope constructs.Construct, id *string, config *FinspaceKxClusterConfig) FinspaceKxCluster {
 	_init_.Initialize()
 
@@ -853,7 +902,7 @@ func NewFinspaceKxCluster(scope constructs.Construct, id *string, config *Finspa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/finspace_kx_cluster aws_finspace_kx_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/finspace_kx_cluster aws_finspace_kx_cluster} Resource.
 func NewFinspaceKxCluster_Override(f FinspaceKxCluster, scope constructs.Construct, id *string, config *FinspaceKxClusterConfig) {
 	_init_.Initialize()
 
@@ -1494,6 +1543,28 @@ func (f *jsiiProxy_FinspaceKxCluster) PutSavedownStorageConfiguration(value *Fin
 	)
 }
 
+func (f *jsiiProxy_FinspaceKxCluster) PutScalingGroupConfiguration(value *FinspaceKxClusterScalingGroupConfiguration) {
+	if err := f.validatePutScalingGroupConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putScalingGroupConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FinspaceKxCluster) PutTickerplantLogConfiguration(value interface{}) {
+	if err := f.validatePutTickerplantLogConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putTickerplantLogConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FinspaceKxCluster) PutTimeouts(value *FinspaceKxClusterTimeouts) {
 	if err := f.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1536,6 +1607,14 @@ func (f *jsiiProxy_FinspaceKxCluster) ResetCacheStorageConfigurations() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetCacheStorageConfigurations",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FinspaceKxCluster) ResetCapacityConfiguration() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetCapacityConfiguration",
 		nil, // no parameters
 	)
 }
@@ -1612,6 +1691,14 @@ func (f *jsiiProxy_FinspaceKxCluster) ResetSavedownStorageConfiguration() {
 	)
 }
 
+func (f *jsiiProxy_FinspaceKxCluster) ResetScalingGroupConfiguration() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetScalingGroupConfiguration",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FinspaceKxCluster) ResetTags() {
 	_jsii_.InvokeVoid(
 		f,
@@ -1624,6 +1711,14 @@ func (f *jsiiProxy_FinspaceKxCluster) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FinspaceKxCluster) ResetTickerplantLogConfiguration() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetTickerplantLogConfiguration",
 		nil, // no parameters
 	)
 }

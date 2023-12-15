@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/connect_lambda_function_association aws_connect_lambda_function_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/connect_lambda_function_association aws_connect_lambda_function_association}.
 type ConnectLambdaFunctionAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -353,7 +353,7 @@ func (j *jsiiProxy_ConnectLambdaFunctionAssociation) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/connect_lambda_function_association aws_connect_lambda_function_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/connect_lambda_function_association aws_connect_lambda_function_association} Resource.
 func NewConnectLambdaFunctionAssociation(scope constructs.Construct, id *string, config *ConnectLambdaFunctionAssociationConfig) ConnectLambdaFunctionAssociation {
 	_init_.Initialize()
 
@@ -371,7 +371,7 @@ func NewConnectLambdaFunctionAssociation(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/connect_lambda_function_association aws_connect_lambda_function_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/connect_lambda_function_association aws_connect_lambda_function_association} Resource.
 func NewConnectLambdaFunctionAssociation_Override(c ConnectLambdaFunctionAssociation, scope constructs.Construct, id *string, config *ConnectLambdaFunctionAssociationConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/dms_endpoint aws_dms_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/dms_endpoint aws_dms_endpoint}.
 type DataAwsDmsEndpoint interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -60,6 +60,7 @@ type DataAwsDmsEndpoint interface {
 	Node() constructs.Node
 	Password() *string
 	Port() *float64
+	PostgresSettings() DataAwsDmsEndpointPostgresSettingsList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -389,6 +390,16 @@ func (j *jsiiProxy_DataAwsDmsEndpoint) Port() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsDmsEndpoint) PostgresSettings() DataAwsDmsEndpointPostgresSettingsList {
+	var returns DataAwsDmsEndpointPostgresSettingsList
+	_jsii_.Get(
+		j,
+		"postgresSettings",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsDmsEndpoint) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -550,7 +561,7 @@ func (j *jsiiProxy_DataAwsDmsEndpoint) Username() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/dms_endpoint aws_dms_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/dms_endpoint aws_dms_endpoint} Data Source.
 func NewDataAwsDmsEndpoint(scope constructs.Construct, id *string, config *DataAwsDmsEndpointConfig) DataAwsDmsEndpoint {
 	_init_.Initialize()
 
@@ -568,7 +579,7 @@ func NewDataAwsDmsEndpoint(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/data-sources/dms_endpoint aws_dms_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/dms_endpoint aws_dms_endpoint} Data Source.
 func NewDataAwsDmsEndpoint_Override(d DataAwsDmsEndpoint, scope constructs.Construct, id *string, config *DataAwsDmsEndpointConfig) {
 	_init_.Initialize()
 

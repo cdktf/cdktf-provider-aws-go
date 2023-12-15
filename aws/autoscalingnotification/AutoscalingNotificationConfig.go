@@ -22,13 +22,13 @@ type AutoscalingNotificationConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/autoscaling_notification#group_names AutoscalingNotification#group_names}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/autoscaling_notification#group_names AutoscalingNotification#group_names}.
 	GroupNames *[]*string `field:"required" json:"groupNames" yaml:"groupNames"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/autoscaling_notification#notifications AutoscalingNotification#notifications}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/autoscaling_notification#notifications AutoscalingNotification#notifications}.
 	Notifications *[]*string `field:"required" json:"notifications" yaml:"notifications"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/autoscaling_notification#topic_arn AutoscalingNotification#topic_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/autoscaling_notification#topic_arn AutoscalingNotification#topic_arn}.
 	TopicArn *string `field:"required" json:"topicArn" yaml:"topicArn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/autoscaling_notification#id AutoscalingNotification#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/autoscaling_notification#id AutoscalingNotification#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

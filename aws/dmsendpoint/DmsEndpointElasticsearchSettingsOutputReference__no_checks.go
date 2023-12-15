@@ -87,6 +87,10 @@ func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) validateSetT
 	return nil
 }
 
+func (j *jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference) validateSetUseNewMappingTypeParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewDmsEndpointElasticsearchSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

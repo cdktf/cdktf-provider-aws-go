@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/kendra_experience aws_kendra_experience}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/kendra_experience aws_kendra_experience}.
 type KendraExperience interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -492,7 +492,7 @@ func (j *jsiiProxy_KendraExperience) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/kendra_experience aws_kendra_experience} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/kendra_experience aws_kendra_experience} Resource.
 func NewKendraExperience(scope constructs.Construct, id *string, config *KendraExperienceConfig) KendraExperience {
 	_init_.Initialize()
 
@@ -510,7 +510,7 @@ func NewKendraExperience(scope constructs.Construct, id *string, config *KendraE
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/kendra_experience aws_kendra_experience} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/kendra_experience aws_kendra_experience} Resource.
 func NewKendraExperience_Override(k KendraExperience, scope constructs.Construct, id *string, config *KendraExperienceConfig) {
 	_init_.Initialize()
 

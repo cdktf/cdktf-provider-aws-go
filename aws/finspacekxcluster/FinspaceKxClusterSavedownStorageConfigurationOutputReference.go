@@ -46,6 +46,9 @@ type FinspaceKxClusterSavedownStorageConfigurationOutputReference interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	VolumeName() *string
+	SetVolumeName(val *string)
+	VolumeNameInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,6 +73,9 @@ type FinspaceKxClusterSavedownStorageConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetSize()
+	ResetType()
+	ResetVolumeName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -195,6 +201,26 @@ func (j *jsiiProxy_FinspaceKxClusterSavedownStorageConfigurationOutputReference)
 	return returns
 }
 
+func (j *jsiiProxy_FinspaceKxClusterSavedownStorageConfigurationOutputReference) VolumeName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volumeName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FinspaceKxClusterSavedownStorageConfigurationOutputReference) VolumeNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volumeNameInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewFinspaceKxClusterSavedownStorageConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FinspaceKxClusterSavedownStorageConfigurationOutputReference {
 	_init_.Initialize()
@@ -296,6 +322,17 @@ func (j *jsiiProxy_FinspaceKxClusterSavedownStorageConfigurationOutputReference)
 	_jsii_.Set(
 		j,
 		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FinspaceKxClusterSavedownStorageConfigurationOutputReference)SetVolumeName(val *string) {
+	if err := j.validateSetVolumeNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"volumeName",
 		val,
 	)
 }
@@ -484,6 +521,30 @@ func (f *jsiiProxy_FinspaceKxClusterSavedownStorageConfigurationOutputReference)
 	)
 
 	return returns
+}
+
+func (f *jsiiProxy_FinspaceKxClusterSavedownStorageConfigurationOutputReference) ResetSize() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetSize",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FinspaceKxClusterSavedownStorageConfigurationOutputReference) ResetType() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetType",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FinspaceKxClusterSavedownStorageConfigurationOutputReference) ResetVolumeName() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetVolumeName",
+		nil, // no parameters
+	)
 }
 
 func (f *jsiiProxy_FinspaceKxClusterSavedownStorageConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

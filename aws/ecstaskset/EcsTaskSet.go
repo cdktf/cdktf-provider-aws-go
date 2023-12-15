@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ecs_task_set aws_ecs_task_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ecs_task_set aws_ecs_task_set}.
 type EcsTaskSet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -732,7 +732,7 @@ func (j *jsiiProxy_EcsTaskSet) WaitUntilStableTimeoutInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ecs_task_set aws_ecs_task_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ecs_task_set aws_ecs_task_set} Resource.
 func NewEcsTaskSet(scope constructs.Construct, id *string, config *EcsTaskSetConfig) EcsTaskSet {
 	_init_.Initialize()
 
@@ -750,7 +750,7 @@ func NewEcsTaskSet(scope constructs.Construct, id *string, config *EcsTaskSetCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.30.0/docs/resources/ecs_task_set aws_ecs_task_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/ecs_task_set aws_ecs_task_set} Resource.
 func NewEcsTaskSet_Override(e EcsTaskSet, scope constructs.Construct, id *string, config *EcsTaskSetConfig) {
 	_init_.Initialize()
 
