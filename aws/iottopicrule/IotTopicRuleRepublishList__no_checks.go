@@ -7,6 +7,10 @@ package iottopicrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IotTopicRuleRepublishList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotTopicRuleRepublishList) validateGetParameters(index *float64) error {
 	return nil
 }

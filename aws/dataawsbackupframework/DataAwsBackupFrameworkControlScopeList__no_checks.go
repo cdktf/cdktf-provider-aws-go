@@ -7,6 +7,10 @@ package dataawsbackupframework
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsBackupFrameworkControlScopeList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsBackupFrameworkControlScopeList) validateGetParameters(index *float64) error {
 	return nil
 }

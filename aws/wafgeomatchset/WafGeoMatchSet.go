@@ -5,10 +5,10 @@ package wafgeomatchset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/wafgeomatchset/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v19/wafgeomatchset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -120,6 +120,9 @@ type WafGeoMatchSet interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -878,6 +881,32 @@ func (w *jsiiProxy_WafGeoMatchSet) SynthesizeAttributes() *map[string]interface{
 	_jsii_.Invoke(
 		w,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WafGeoMatchSet) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		w,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (w *jsiiProxy_WafGeoMatchSet) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		w,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

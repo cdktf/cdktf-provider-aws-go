@@ -7,6 +7,10 @@ package dataawsalblistener
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsAlbListenerDefaultActionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsAlbListenerDefaultActionList) validateGetParameters(index *float64) error {
 	return nil
 }

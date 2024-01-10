@@ -7,6 +7,10 @@ package dataawssesv2dedicatedippool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsSesv2DedicatedIpPoolDedicatedIpsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsSesv2DedicatedIpPoolDedicatedIpsList) validateGetParameters(index *float64) error {
 	return nil
 }

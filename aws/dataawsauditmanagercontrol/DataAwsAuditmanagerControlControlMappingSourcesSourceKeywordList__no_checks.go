@@ -7,6 +7,10 @@ package dataawsauditmanagercontrol
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsAuditmanagerControlControlMappingSourcesSourceKeywordList) validateGetParameters(index *float64) error {
 	return nil
 }

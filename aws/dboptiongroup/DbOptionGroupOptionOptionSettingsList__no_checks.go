@@ -7,6 +7,10 @@ package dboptiongroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DbOptionGroupOptionOptionSettingsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DbOptionGroupOptionOptionSettingsList) validateGetParameters(index *float64) error {
 	return nil
 }

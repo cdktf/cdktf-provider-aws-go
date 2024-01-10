@@ -7,6 +7,10 @@ package dataawsorganizationsorganization
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsOrganizationsOrganizationAccountsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsOrganizationsOrganizationAccountsList) validateGetParameters(index *float64) error {
 	return nil
 }

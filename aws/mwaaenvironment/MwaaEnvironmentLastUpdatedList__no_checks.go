@@ -7,6 +7,10 @@ package mwaaenvironment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MwaaEnvironmentLastUpdatedList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwaaEnvironmentLastUpdatedList) validateGetParameters(index *float64) error {
 	return nil
 }

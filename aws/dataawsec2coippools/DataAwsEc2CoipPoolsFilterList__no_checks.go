@@ -7,6 +7,10 @@ package dataawsec2coippools
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsEc2CoipPoolsFilterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsEc2CoipPoolsFilterList) validateGetParameters(index *float64) error {
 	return nil
 }

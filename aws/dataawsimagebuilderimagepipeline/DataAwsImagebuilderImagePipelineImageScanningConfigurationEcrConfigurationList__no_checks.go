@@ -7,6 +7,10 @@ package dataawsimagebuilderimagepipeline
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsImagebuilderImagePipelineImageScanningConfigurationEcrConfigurationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsImagebuilderImagePipelineImageScanningConfigurationEcrConfigurationList) validateGetParameters(index *float64) error {
 	return nil
 }

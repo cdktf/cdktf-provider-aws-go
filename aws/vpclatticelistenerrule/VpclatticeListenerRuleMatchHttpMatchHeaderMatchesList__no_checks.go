@@ -7,6 +7,10 @@ package vpclatticelistenerrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VpclatticeListenerRuleMatchHttpMatchHeaderMatchesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpclatticeListenerRuleMatchHttpMatchHeaderMatchesList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package dataawsdmsendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsDmsEndpointS3SettingsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsDmsEndpointS3SettingsList) validateGetParameters(index *float64) error {
 	return nil
 }

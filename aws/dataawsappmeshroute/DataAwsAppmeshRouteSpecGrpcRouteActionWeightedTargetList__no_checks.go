@@ -7,6 +7,10 @@ package dataawsappmeshroute
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsAppmeshRouteSpecGrpcRouteActionWeightedTargetList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsAppmeshRouteSpecGrpcRouteActionWeightedTargetList) validateGetParameters(index *float64) error {
 	return nil
 }

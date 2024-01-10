@@ -5,10 +5,10 @@ package finspacekxscalinggroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/finspacekxscalinggroup/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v19/finspacekxscalinggroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -142,6 +142,9 @@ type FinspaceKxScalingGroup interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1121,6 +1124,32 @@ func (f *jsiiProxy_FinspaceKxScalingGroup) SynthesizeAttributes() *map[string]in
 	_jsii_.Invoke(
 		f,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FinspaceKxScalingGroup) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		f,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (f *jsiiProxy_FinspaceKxScalingGroup) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		f,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

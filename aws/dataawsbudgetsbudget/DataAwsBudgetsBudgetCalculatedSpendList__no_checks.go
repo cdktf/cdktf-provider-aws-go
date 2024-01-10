@@ -7,6 +7,10 @@ package dataawsbudgetsbudget
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsBudgetsBudgetCalculatedSpendList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsBudgetsBudgetCalculatedSpendList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package servicecatalogprovisionedproduct
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServicecatalogProvisionedProductProvisioningParametersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicecatalogProvisionedProductProvisioningParametersList) validateGetParameters(index *float64) error {
 	return nil
 }

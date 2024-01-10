@@ -7,6 +7,10 @@ package dataawslaunchconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsLaunchConfigurationRootBlockDeviceList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsLaunchConfigurationRootBlockDeviceList) validateGetParameters(index *float64) error {
 	return nil
 }

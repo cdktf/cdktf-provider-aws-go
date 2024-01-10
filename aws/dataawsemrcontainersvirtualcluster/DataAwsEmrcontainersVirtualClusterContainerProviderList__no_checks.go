@@ -7,6 +7,10 @@ package dataawsemrcontainersvirtualcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsEmrcontainersVirtualClusterContainerProviderList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsEmrcontainersVirtualClusterContainerProviderList) validateGetParameters(index *float64) error {
 	return nil
 }

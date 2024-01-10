@@ -7,6 +7,10 @@ package dataawsconnectinstancestorageconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigList) validateGetParameters(index *float64) error {
 	return nil
 }

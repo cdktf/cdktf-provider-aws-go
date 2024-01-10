@@ -7,6 +7,10 @@ package dataawsecstaskexecution
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsEcsTaskExecutionOverridesContainerOverridesEnvironmentList) validateGetParameters(index *float64) error {
 	return nil
 }

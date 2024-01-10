@@ -7,6 +7,10 @@ package dataawsroute53resolverendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsRoute53ResolverEndpointFilterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsRoute53ResolverEndpointFilterList) validateGetParameters(index *float64) error {
 	return nil
 }

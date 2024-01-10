@@ -7,6 +7,10 @@ package dataawssesv2emailidentity
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsSesv2EmailIdentityDkimSigningAttributesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsSesv2EmailIdentityDkimSigningAttributesList) validateGetParameters(index *float64) error {
 	return nil
 }

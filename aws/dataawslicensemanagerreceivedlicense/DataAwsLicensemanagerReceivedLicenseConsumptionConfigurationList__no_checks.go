@@ -7,6 +7,10 @@ package dataawslicensemanagerreceivedlicense
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsLicensemanagerReceivedLicenseConsumptionConfigurationList) validateGetParameters(index *float64) error {
 	return nil
 }

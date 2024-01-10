@@ -7,6 +7,10 @@ package dataawsec2networkinsightsanalysis
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisReturnPathComponentsTransitGatewayList) validateGetParameters(index *float64) error {
 	return nil
 }

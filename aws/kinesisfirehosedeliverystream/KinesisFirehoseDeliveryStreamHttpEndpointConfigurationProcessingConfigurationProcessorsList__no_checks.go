@@ -7,6 +7,10 @@ package kinesisfirehosedeliverystream
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStreamHttpEndpointConfigurationProcessingConfigurationProcessorsList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package macie2findingsfilter
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaCriterionList) validateGetParameters(index *float64) error {
 	return nil
 }

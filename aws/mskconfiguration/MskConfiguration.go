@@ -5,10 +5,10 @@ package mskconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/mskconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v19/mskconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -128,6 +128,9 @@ type MskConfiguration interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -966,6 +969,32 @@ func (m *jsiiProxy_MskConfiguration) SynthesizeAttributes() *map[string]interfac
 	_jsii_.Invoke(
 		m,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskConfiguration) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		m,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (m *jsiiProxy_MskConfiguration) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		m,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

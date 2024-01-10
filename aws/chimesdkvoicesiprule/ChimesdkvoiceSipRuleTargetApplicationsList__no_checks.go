@@ -7,6 +7,10 @@ package chimesdkvoicesiprule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ChimesdkvoiceSipRuleTargetApplicationsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChimesdkvoiceSipRuleTargetApplicationsList) validateGetParameters(index *float64) error {
 	return nil
 }

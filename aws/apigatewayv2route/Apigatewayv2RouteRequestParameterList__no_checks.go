@@ -7,6 +7,10 @@ package apigatewayv2route
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_Apigatewayv2RouteRequestParameterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_Apigatewayv2RouteRequestParameterList) validateGetParameters(index *float64) error {
 	return nil
 }

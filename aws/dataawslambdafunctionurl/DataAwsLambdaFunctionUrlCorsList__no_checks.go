@@ -7,6 +7,10 @@ package dataawslambdafunctionurl
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsLambdaFunctionUrlCorsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsLambdaFunctionUrlCorsList) validateGetParameters(index *float64) error {
 	return nil
 }

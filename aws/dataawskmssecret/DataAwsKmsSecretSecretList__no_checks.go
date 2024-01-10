@@ -7,6 +7,10 @@ package dataawskmssecret
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsKmsSecretSecretList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsKmsSecretSecretList) validateGetParameters(index *float64) error {
 	return nil
 }

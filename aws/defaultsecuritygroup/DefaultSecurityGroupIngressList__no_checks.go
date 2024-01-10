@@ -7,6 +7,10 @@ package defaultsecuritygroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DefaultSecurityGroupIngressList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DefaultSecurityGroupIngressList) validateGetParameters(index *float64) error {
 	return nil
 }

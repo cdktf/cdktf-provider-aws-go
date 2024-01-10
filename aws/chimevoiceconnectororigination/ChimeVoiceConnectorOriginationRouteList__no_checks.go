@@ -7,6 +7,10 @@ package chimevoiceconnectororigination
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_ChimeVoiceConnectorOriginationRouteList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChimeVoiceConnectorOriginationRouteList) validateGetParameters(index *float64) error {
 	return nil
 }

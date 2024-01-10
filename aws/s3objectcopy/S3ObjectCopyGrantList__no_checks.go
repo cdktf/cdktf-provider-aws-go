@@ -7,6 +7,10 @@ package s3objectcopy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3ObjectCopyGrantList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ObjectCopyGrantList) validateGetParameters(index *float64) error {
 	return nil
 }

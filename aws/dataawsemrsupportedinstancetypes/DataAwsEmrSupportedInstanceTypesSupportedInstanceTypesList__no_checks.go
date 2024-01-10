@@ -7,6 +7,10 @@ package dataawsemrsupportedinstancetypes
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsEmrSupportedInstanceTypesSupportedInstanceTypesList) validateGetParameters(index *float64) error {
 	return nil
 }

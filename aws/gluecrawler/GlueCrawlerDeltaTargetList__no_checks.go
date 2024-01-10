@@ -7,6 +7,10 @@ package gluecrawler
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GlueCrawlerDeltaTargetList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueCrawlerDeltaTargetList) validateGetParameters(index *float64) error {
 	return nil
 }

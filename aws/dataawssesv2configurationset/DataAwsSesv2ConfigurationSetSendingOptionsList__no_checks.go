@@ -7,6 +7,10 @@ package dataawssesv2configurationset
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsSesv2ConfigurationSetSendingOptionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsSesv2ConfigurationSetSendingOptionsList) validateGetParameters(index *float64) error {
 	return nil
 }

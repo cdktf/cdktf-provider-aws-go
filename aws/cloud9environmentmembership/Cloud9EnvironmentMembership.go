@@ -5,10 +5,10 @@ package cloud9environmentmembership
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/cloud9environmentmembership/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v19/cloud9environmentmembership/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -122,6 +122,9 @@ type Cloud9EnvironmentMembership interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -903,6 +906,32 @@ func (c *jsiiProxy_Cloud9EnvironmentMembership) SynthesizeAttributes() *map[stri
 	_jsii_.Invoke(
 		c,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_Cloud9EnvironmentMembership) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		c,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (c *jsiiProxy_Cloud9EnvironmentMembership) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		c,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

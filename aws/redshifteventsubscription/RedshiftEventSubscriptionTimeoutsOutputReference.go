@@ -5,9 +5,9 @@ package redshifteventsubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v19/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/redshifteventsubscription/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v19/redshifteventsubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

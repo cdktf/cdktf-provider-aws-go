@@ -7,6 +7,10 @@ package dataawsglobalacceleratorcustomroutingaccelerator
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsGlobalacceleratorCustomRoutingAcceleratorIpSetsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsGlobalacceleratorCustomRoutingAcceleratorIpSetsList) validateGetParameters(index *float64) error {
 	return nil
 }

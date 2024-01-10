@@ -7,6 +7,10 @@ package dataawselasticacheuser
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsElasticacheUserAuthenticationModeList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsElasticacheUserAuthenticationModeList) validateGetParameters(index *float64) error {
 	return nil
 }

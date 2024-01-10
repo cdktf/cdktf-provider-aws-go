@@ -7,6 +7,10 @@ package keyspacestable
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) validateGetParameters(index *float64) error {
 	return nil
 }

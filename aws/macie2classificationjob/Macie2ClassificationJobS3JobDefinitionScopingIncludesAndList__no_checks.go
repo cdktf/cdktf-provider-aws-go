@@ -7,6 +7,10 @@ package macie2classificationjob
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2ClassificationJobS3JobDefinitionScopingIncludesAndList) validateGetParameters(index *float64) error {
 	return nil
 }

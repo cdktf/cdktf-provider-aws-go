@@ -7,6 +7,10 @@ package redshiftparametergroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RedshiftParameterGroupParameterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftParameterGroupParameterList) validateGetParameters(index *float64) error {
 	return nil
 }

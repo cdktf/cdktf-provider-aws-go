@@ -7,6 +7,10 @@ package iotindexingconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationCustomFieldList) validateGetParameters(index *float64) error {
 	return nil
 }

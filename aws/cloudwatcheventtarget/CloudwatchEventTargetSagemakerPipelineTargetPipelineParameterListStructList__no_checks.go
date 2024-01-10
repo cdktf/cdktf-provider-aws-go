@@ -7,6 +7,10 @@ package cloudwatcheventtarget
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudwatchEventTargetSagemakerPipelineTargetPipelineParameterListStructList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchEventTargetSagemakerPipelineTargetPipelineParameterListStructList) validateGetParameters(index *float64) error {
 	return nil
 }

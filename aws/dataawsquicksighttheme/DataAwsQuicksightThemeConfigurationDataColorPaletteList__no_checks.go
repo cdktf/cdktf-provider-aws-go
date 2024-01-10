@@ -7,6 +7,10 @@ package dataawsquicksighttheme
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsQuicksightThemeConfigurationDataColorPaletteList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsQuicksightThemeConfigurationDataColorPaletteList) validateGetParameters(index *float64) error {
 	return nil
 }

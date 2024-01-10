@@ -7,6 +7,10 @@ package dataawscloudfrontresponseheaderspolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicySecurityHeadersConfigFrameOptionsList) validateGetParameters(index *float64) error {
 	return nil
 }

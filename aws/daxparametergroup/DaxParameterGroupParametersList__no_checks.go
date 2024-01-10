@@ -7,6 +7,10 @@ package daxparametergroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DaxParameterGroupParametersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DaxParameterGroupParametersList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package dataawsappmeshgatewayroute
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsAppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatchList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsAppmeshGatewayRouteSpecHttpRouteMatchQueryParameterMatchList) validateGetParameters(index *float64) error {
 	return nil
 }

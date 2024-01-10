@@ -5,10 +5,10 @@ package iotpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/iotpolicy/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v19/iotpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -124,6 +124,9 @@ type IotPolicy interface {
 	ResetOverrideLogicalId()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -923,6 +926,32 @@ func (i *jsiiProxy_IotPolicy) SynthesizeAttributes() *map[string]interface{} {
 	_jsii_.Invoke(
 		i,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IotPolicy) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		i,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IotPolicy) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		i,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

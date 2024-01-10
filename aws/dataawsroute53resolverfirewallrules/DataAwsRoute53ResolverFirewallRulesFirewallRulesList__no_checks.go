@@ -7,6 +7,10 @@ package dataawsroute53resolverfirewallrules
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRulesFirewallRulesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsRoute53ResolverFirewallRulesFirewallRulesList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package dataawselasticsearchdomain
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList) validateGetParameters(index *float64) error {
 	return nil
 }

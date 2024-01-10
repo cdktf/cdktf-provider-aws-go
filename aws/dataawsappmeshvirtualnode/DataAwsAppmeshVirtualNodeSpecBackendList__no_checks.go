@@ -7,6 +7,10 @@ package dataawsappmeshvirtualnode
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecBackendList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsAppmeshVirtualNodeSpecBackendList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package dataawsappmeshmesh
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsAppmeshMeshSpecList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsAppmeshMeshSpecList) validateGetParameters(index *float64) error {
 	return nil
 }

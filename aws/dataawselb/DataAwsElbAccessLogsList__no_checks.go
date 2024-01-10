@@ -7,6 +7,10 @@ package dataawselb
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsElbAccessLogsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsElbAccessLogsList) validateGetParameters(index *float64) error {
 	return nil
 }

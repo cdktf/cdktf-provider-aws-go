@@ -5,10 +5,10 @@ package eksaddon
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/eksaddon/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v19/eksaddon/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -161,6 +161,9 @@ type EksAddon interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1321,6 +1324,32 @@ func (e *jsiiProxy_EksAddon) SynthesizeAttributes() *map[string]interface{} {
 	_jsii_.Invoke(
 		e,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EksAddon) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		e,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (e *jsiiProxy_EksAddon) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		e,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

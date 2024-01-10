@@ -7,6 +7,10 @@ package alblistenerrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AlbListenerRuleConditionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlbListenerRuleConditionList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package securityhubinsight
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainList) validateGetParameters(index *float64) error {
 	return nil
 }

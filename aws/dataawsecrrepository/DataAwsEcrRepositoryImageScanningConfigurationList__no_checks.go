@@ -7,6 +7,10 @@ package dataawsecrrepository
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsEcrRepositoryImageScanningConfigurationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsEcrRepositoryImageScanningConfigurationList) validateGetParameters(index *float64) error {
 	return nil
 }

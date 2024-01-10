@@ -7,6 +7,10 @@ package dataawsfsxopenzfssnapshot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterList) validateGetParameters(index *float64) error {
 	return nil
 }

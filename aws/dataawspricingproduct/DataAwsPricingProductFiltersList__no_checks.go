@@ -7,6 +7,10 @@ package dataawspricingproduct
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsPricingProductFiltersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsPricingProductFiltersList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package s3controlstoragelensconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3List) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ControlStorageLensConfigurationStorageLensConfigurationDataExportS3BucketDestinationEncryptionSseS3List) validateGetParameters(index *float64) error {
 	return nil
 }

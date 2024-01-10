@@ -7,6 +7,10 @@ package dataawsefsfilesystem
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsEfsFileSystemLifecyclePolicyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsEfsFileSystemLifecyclePolicyList) validateGetParameters(index *float64) error {
 	return nil
 }

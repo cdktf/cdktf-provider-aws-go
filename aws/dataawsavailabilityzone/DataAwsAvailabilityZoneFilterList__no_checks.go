@@ -7,6 +7,10 @@ package dataawsavailabilityzone
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsAvailabilityZoneFilterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsAvailabilityZoneFilterList) validateGetParameters(index *float64) error {
 	return nil
 }

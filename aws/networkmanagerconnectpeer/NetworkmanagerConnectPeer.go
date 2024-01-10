@@ -5,10 +5,10 @@ package networkmanagerconnectpeer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkmanagerconnectpeer/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v19/networkmanagerconnectpeer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -153,6 +153,9 @@ type NetworkmanagerConnectPeer interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1236,6 +1239,32 @@ func (n *jsiiProxy_NetworkmanagerConnectPeer) SynthesizeAttributes() *map[string
 	_jsii_.Invoke(
 		n,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerConnectPeer) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		n,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkmanagerConnectPeer) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

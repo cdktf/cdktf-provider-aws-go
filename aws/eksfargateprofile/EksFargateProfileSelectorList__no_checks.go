@@ -7,6 +7,10 @@ package eksfargateprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EksFargateProfileSelectorList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EksFargateProfileSelectorList) validateGetParameters(index *float64) error {
 	return nil
 }

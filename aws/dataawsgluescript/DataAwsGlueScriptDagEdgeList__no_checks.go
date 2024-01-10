@@ -7,6 +7,10 @@ package dataawsgluescript
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsGlueScriptDagEdgeList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsGlueScriptDagEdgeList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package amicopy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AmiCopyEbsBlockDeviceList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AmiCopyEbsBlockDeviceList) validateGetParameters(index *float64) error {
 	return nil
 }

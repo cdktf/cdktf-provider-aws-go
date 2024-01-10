@@ -7,6 +7,10 @@ package lexintent
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageList) validateGetParameters(index *float64) error {
 	return nil
 }

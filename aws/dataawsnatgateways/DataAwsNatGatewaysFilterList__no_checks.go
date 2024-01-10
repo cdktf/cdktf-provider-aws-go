@@ -7,6 +7,10 @@ package dataawsnatgateways
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsNatGatewaysFilterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsNatGatewaysFilterList) validateGetParameters(index *float64) error {
 	return nil
 }

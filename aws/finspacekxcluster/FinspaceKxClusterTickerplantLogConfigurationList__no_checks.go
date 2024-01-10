@@ -7,6 +7,10 @@ package finspacekxcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FinspaceKxClusterTickerplantLogConfigurationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FinspaceKxClusterTickerplantLogConfigurationList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package ec2networkinsightsanalysis
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2NetworkInsightsAnalysisForwardPathComponentsOutboundHeaderSourcePortRangesList) validateGetParameters(index *float64) error {
 	return nil
 }

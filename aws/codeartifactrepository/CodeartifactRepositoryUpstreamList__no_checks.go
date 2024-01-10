@@ -7,6 +7,10 @@ package codeartifactrepository
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CodeartifactRepositoryUpstreamList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodeartifactRepositoryUpstreamList) validateGetParameters(index *float64) error {
 	return nil
 }

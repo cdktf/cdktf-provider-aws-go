@@ -5,10 +5,10 @@ package appsynctype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/appsynctype/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v19/appsynctype/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -124,6 +124,9 @@ type AppsyncType interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -925,6 +928,32 @@ func (a *jsiiProxy_AppsyncType) SynthesizeAttributes() *map[string]interface{} {
 	_jsii_.Invoke(
 		a,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppsyncType) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		a,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AppsyncType) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		a,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

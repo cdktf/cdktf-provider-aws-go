@@ -7,6 +7,10 @@ package ssoadmininstanceaccesscontrolattributes
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeList) validateGetParameters(index *float64) error {
 	return nil
 }

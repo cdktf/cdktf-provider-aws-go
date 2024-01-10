@@ -7,6 +7,10 @@ package sesreceiptrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SesReceiptRuleStopActionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SesReceiptRuleStopActionList) validateGetParameters(index *float64) error {
 	return nil
 }

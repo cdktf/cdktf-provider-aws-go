@@ -5,10 +5,10 @@ package dxconnectionconfirmation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/dxconnectionconfirmation/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v19/dxconnectionconfirmation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -115,6 +115,9 @@ type DxConnectionConfirmation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -824,6 +827,32 @@ func (d *jsiiProxy_DxConnectionConfirmation) SynthesizeAttributes() *map[string]
 	_jsii_.Invoke(
 		d,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DxConnectionConfirmation) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		d,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DxConnectionConfirmation) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		d,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

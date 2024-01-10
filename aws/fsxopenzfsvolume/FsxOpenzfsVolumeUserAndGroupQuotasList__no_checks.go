@@ -7,6 +7,10 @@ package fsxopenzfsvolume
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FsxOpenzfsVolumeUserAndGroupQuotasList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxOpenzfsVolumeUserAndGroupQuotasList) validateGetParameters(index *float64) error {
 	return nil
 }

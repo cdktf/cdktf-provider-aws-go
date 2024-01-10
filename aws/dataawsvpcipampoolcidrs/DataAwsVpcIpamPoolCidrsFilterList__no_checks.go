@@ -7,6 +7,10 @@ package dataawsvpcipampoolcidrs
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsVpcIpamPoolCidrsFilterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsVpcIpamPoolCidrsFilterList) validateGetParameters(index *float64) error {
 	return nil
 }

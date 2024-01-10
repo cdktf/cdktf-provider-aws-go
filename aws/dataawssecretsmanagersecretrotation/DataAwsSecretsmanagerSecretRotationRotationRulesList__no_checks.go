@@ -7,6 +7,10 @@ package dataawssecretsmanagersecretrotation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotationRotationRulesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsSecretsmanagerSecretRotationRotationRulesList) validateGetParameters(index *float64) error {
 	return nil
 }

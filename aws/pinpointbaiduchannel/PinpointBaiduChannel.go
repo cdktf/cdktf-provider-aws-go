@@ -5,10 +5,10 @@ package pinpointbaiduchannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/pinpointbaiduchannel/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v19/pinpointbaiduchannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -125,6 +125,9 @@ type PinpointBaiduChannel interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -935,6 +938,32 @@ func (p *jsiiProxy_PinpointBaiduChannel) SynthesizeAttributes() *map[string]inte
 	_jsii_.Invoke(
 		p,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PinpointBaiduChannel) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		p,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (p *jsiiProxy_PinpointBaiduChannel) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		p,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

@@ -7,6 +7,10 @@ package sagemakerproject
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerProjectServiceCatalogProvisioningDetailsProvisioningParameterList) validateGetParameters(index *float64) error {
 	return nil
 }

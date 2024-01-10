@@ -55,6 +55,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "sortBy", GoGetter: "SortBy"},
 			_jsii_.MemberProperty{JsiiProperty: "sortByInput", GoGetter: "SortByInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
+			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "tagKey", GoGetter: "TagKey"},
 			_jsii_.MemberProperty{JsiiProperty: "tagKeyInput", GoGetter: "TagKeyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
@@ -63,6 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformResourceType", GoGetter: "TerraformResourceType"},
 			_jsii_.MemberProperty{JsiiProperty: "timePeriod", GoGetter: "TimePeriod"},
 			_jsii_.MemberProperty{JsiiProperty: "timePeriodInput", GoGetter: "TimePeriodInput"},
+			_jsii_.MemberMethod{JsiiMethod: "toHclTerraform", GoMethod: "ToHclTerraform"},
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
@@ -179,6 +181,7 @@ func init() {
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterAndList",
 		reflect.TypeOf((*DataAwsCeTagsFilterAndList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -656,6 +659,7 @@ func init() {
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterOrList",
 		reflect.TypeOf((*DataAwsCeTagsFilterOrList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -871,6 +875,7 @@ func init() {
 		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsSortByList",
 		reflect.TypeOf((*DataAwsCeTagsSortByList)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},

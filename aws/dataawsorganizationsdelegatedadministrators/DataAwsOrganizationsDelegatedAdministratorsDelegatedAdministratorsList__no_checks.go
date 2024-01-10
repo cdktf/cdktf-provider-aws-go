@@ -7,6 +7,10 @@ package dataawsorganizationsdelegatedadministrators
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsList) validateGetParameters(index *float64) error {
 	return nil
 }

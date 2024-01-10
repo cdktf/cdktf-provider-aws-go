@@ -7,6 +7,10 @@ package dataawsappmeshroute
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsAppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsAppmeshRouteSpecHttp2RouteRetryPolicyPerRetryTimeoutList) validateGetParameters(index *float64) error {
 	return nil
 }

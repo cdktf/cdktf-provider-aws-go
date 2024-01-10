@@ -7,6 +7,10 @@ package iotbillinggroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_IotBillingGroupMetadataList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotBillingGroupMetadataList) validateGetParameters(index *float64) error {
 	return nil
 }

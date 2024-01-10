@@ -7,6 +7,10 @@ package dataawsec2publicipv4pools
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsEc2PublicIpv4PoolsFilterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsEc2PublicIpv4PoolsFilterList) validateGetParameters(index *float64) error {
 	return nil
 }

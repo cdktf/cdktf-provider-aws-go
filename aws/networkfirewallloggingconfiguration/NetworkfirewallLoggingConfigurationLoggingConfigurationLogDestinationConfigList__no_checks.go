@@ -7,6 +7,10 @@ package networkfirewallloggingconfiguration
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigList) validateGetParameters(index *float64) error {
 	return nil
 }

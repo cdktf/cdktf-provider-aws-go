@@ -7,6 +7,10 @@ package route53domainsregistereddomain
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_Route53DomainsRegisteredDomainNameServerList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53DomainsRegisteredDomainNameServerList) validateGetParameters(index *float64) error {
 	return nil
 }

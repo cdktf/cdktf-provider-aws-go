@@ -7,6 +7,10 @@ package appmeshroute
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppmeshRouteSpecHttp2RouteActionWeightedTargetList) validateGetParameters(index *float64) error {
 	return nil
 }

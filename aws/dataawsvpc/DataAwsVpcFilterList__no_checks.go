@@ -7,6 +7,10 @@ package dataawsvpc
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsVpcFilterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsVpcFilterList) validateGetParameters(index *float64) error {
 	return nil
 }

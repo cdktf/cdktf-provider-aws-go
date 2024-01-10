@@ -7,6 +7,10 @@ package emrcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrClusterMasterInstanceFleetInstanceTypeConfigsEbsConfigList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package medialiveinput
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MedialiveInputMediaConnectFlowsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveInputMediaConnectFlowsList) validateGetParameters(index *float64) error {
 	return nil
 }

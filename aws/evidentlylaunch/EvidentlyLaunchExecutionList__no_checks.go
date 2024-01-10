@@ -7,6 +7,10 @@ package evidentlylaunch
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (e *jsiiProxy_EvidentlyLaunchExecutionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (e *jsiiProxy_EvidentlyLaunchExecutionList) validateGetParameters(index *float64) error {
 	return nil
 }

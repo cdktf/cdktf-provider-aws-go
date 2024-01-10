@@ -7,6 +7,10 @@ package pipespipe
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipesPipeTargetParametersEcsTaskParametersOverridesContainerOverrideResourceRequirementList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package lexv2modelsbot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_Lexv2ModelsBotDataPrivacyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_Lexv2ModelsBotDataPrivacyList) validateGetParameters(index *float64) error {
 	return nil
 }

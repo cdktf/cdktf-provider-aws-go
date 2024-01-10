@@ -5,10 +5,10 @@ package lightsaillbcertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/lightsaillbcertificate/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v19/lightsaillbcertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -130,6 +130,9 @@ type LightsailLbCertificate interface {
 	ResetOverrideLogicalId()
 	ResetSubjectAlternativeNames()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -988,6 +991,32 @@ func (l *jsiiProxy_LightsailLbCertificate) SynthesizeAttributes() *map[string]in
 	_jsii_.Invoke(
 		l,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LightsailLbCertificate) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		l,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (l *jsiiProxy_LightsailLbCertificate) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		l,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

@@ -7,6 +7,10 @@ package quicksightrefreshschedule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (q *jsiiProxy_QuicksightRefreshScheduleScheduleList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightRefreshScheduleScheduleList) validateGetParameters(index *float64) error {
 	return nil
 }

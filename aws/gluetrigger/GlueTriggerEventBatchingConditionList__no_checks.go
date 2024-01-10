@@ -7,6 +7,10 @@ package gluetrigger
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GlueTriggerEventBatchingConditionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueTriggerEventBatchingConditionList) validateGetParameters(index *float64) error {
 	return nil
 }

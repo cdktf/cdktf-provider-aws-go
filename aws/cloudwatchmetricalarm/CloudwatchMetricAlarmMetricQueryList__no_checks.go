@@ -7,6 +7,10 @@ package cloudwatchmetricalarm
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchMetricAlarmMetricQueryList) validateGetParameters(index *float64) error {
 	return nil
 }

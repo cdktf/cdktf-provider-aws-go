@@ -7,6 +7,10 @@ package spotinstancerequest
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_SpotInstanceRequestEbsBlockDeviceList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpotInstanceRequestEbsBlockDeviceList) validateGetParameters(index *float64) error {
 	return nil
 }

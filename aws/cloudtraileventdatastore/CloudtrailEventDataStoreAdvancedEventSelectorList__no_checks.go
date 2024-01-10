@@ -7,6 +7,10 @@ package cloudtraileventdatastore
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorList) validateGetParameters(index *float64) error {
 	return nil
 }

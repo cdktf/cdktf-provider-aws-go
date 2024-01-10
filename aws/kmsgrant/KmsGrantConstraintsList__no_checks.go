@@ -7,6 +7,10 @@ package kmsgrant
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_KmsGrantConstraintsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsGrantConstraintsList) validateGetParameters(index *float64) error {
 	return nil
 }

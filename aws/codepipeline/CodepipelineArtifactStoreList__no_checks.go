@@ -7,6 +7,10 @@ package codepipeline
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CodepipelineArtifactStoreList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodepipelineArtifactStoreList) validateGetParameters(index *float64) error {
 	return nil
 }

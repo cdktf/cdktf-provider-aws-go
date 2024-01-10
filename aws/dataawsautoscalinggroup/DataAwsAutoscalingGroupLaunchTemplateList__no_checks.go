@@ -7,6 +7,10 @@ package dataawsautoscalinggroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsAutoscalingGroupLaunchTemplateList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsAutoscalingGroupLaunchTemplateList) validateGetParameters(index *float64) error {
 	return nil
 }

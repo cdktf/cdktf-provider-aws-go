@@ -7,6 +7,10 @@ package memorydbsnapshot
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MemorydbSnapshotClusterConfigurationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemorydbSnapshotClusterConfigurationList) validateGetParameters(index *float64) error {
 	return nil
 }

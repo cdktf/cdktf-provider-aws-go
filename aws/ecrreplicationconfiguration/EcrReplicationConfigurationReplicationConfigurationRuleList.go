@@ -5,9 +5,9 @@ package ecrreplicationconfiguration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v19/jsii"
 
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/ecrreplicationconfiguration/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v19/ecrreplicationconfiguration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,6 +31,11 @@ type EcrReplicationConfigurationReplicationConfigurationRuleList interface {
 	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 	WrapsSet() *bool
 	SetWrapsSet(val *bool)
+	// Creating an iterator for this complex list.
+	//
+	// The list will be converted into a map with the mapKeyAttributeName as the key.
+	// Experimental.
+	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) EcrReplicationConfigurationReplicationConfigurationRuleOutputReference
@@ -179,6 +184,22 @@ func (j *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleList)S
 		"wrapsSet",
 		val,
 	)
+}
+
+func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+	if err := e.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
+		panic(err)
+	}
+	var returns cdktf.DynamicListTerraformIterator
+
+	_jsii_.Invoke(
+		e,
+		"allWithMapKey",
+		[]interface{}{mapKeyAttributeName},
+		&returns,
+	)
+
+	return returns
 }
 
 func (e *jsiiProxy_EcrReplicationConfigurationReplicationConfigurationRuleList) ComputeFqn() *string {

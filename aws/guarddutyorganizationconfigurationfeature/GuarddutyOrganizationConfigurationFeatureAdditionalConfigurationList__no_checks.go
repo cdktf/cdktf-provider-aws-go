@@ -7,6 +7,10 @@ package guarddutyorganizationconfigurationfeature
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GuarddutyOrganizationConfigurationFeatureAdditionalConfigurationList) validateGetParameters(index *float64) error {
 	return nil
 }

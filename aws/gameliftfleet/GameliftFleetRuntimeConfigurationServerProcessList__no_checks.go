@@ -7,6 +7,10 @@ package gameliftfleet
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GameliftFleetRuntimeConfigurationServerProcessList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GameliftFleetRuntimeConfigurationServerProcessList) validateGetParameters(index *float64) error {
 	return nil
 }

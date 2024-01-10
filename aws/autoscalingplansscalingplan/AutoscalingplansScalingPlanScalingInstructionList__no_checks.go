@@ -7,6 +7,10 @@ package autoscalingplansscalingplan
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionList) validateGetParameters(index *float64) error {
 	return nil
 }

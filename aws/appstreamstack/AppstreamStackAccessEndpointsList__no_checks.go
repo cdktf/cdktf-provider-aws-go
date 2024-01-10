@@ -7,6 +7,10 @@ package appstreamstack
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (a *jsiiProxy_AppstreamStackAccessEndpointsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppstreamStackAccessEndpointsList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package dataawsec2localgatewayvirtualinterfacegroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroupFilterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsEc2LocalGatewayVirtualInterfaceGroupFilterList) validateGetParameters(index *float64) error {
 	return nil
 }

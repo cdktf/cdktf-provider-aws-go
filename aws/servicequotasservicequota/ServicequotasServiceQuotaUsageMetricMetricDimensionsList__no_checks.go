@@ -7,6 +7,10 @@ package servicequotasservicequota
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_ServicequotasServiceQuotaUsageMetricMetricDimensionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicequotasServiceQuotaUsageMetricMetricDimensionsList) validateGetParameters(index *float64) error {
 	return nil
 }

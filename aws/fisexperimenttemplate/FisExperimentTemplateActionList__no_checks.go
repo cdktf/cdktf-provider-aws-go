@@ -7,6 +7,10 @@ package fisexperimenttemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FisExperimentTemplateActionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FisExperimentTemplateActionList) validateGetParameters(index *float64) error {
 	return nil
 }

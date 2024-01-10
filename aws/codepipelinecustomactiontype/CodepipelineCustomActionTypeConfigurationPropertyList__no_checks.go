@@ -7,6 +7,10 @@ package codepipelinecustomactiontype
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyList) validateGetParameters(index *float64) error {
 	return nil
 }

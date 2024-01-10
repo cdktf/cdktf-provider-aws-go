@@ -7,6 +7,10 @@ package dataawsappmeshvirtualgateway
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsAppmeshVirtualGatewaySpecListenerTlsCertificateList) validateGetParameters(index *float64) error {
 	return nil
 }

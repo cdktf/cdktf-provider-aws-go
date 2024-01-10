@@ -7,6 +7,10 @@ package dataawsvpcsecuritygrouprules
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsVpcSecurityGroupRulesFilterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsVpcSecurityGroupRulesFilterList) validateGetParameters(index *float64) error {
 	return nil
 }

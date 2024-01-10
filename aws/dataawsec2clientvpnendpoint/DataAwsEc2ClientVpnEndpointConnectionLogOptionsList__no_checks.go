@@ -7,6 +7,10 @@ package dataawsec2clientvpnendpoint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsEc2ClientVpnEndpointConnectionLogOptionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsEc2ClientVpnEndpointConnectionLogOptionsList) validateGetParameters(index *float64) error {
 	return nil
 }

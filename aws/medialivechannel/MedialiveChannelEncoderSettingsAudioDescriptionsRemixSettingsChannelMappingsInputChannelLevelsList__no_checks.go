@@ -7,6 +7,10 @@ package medialivechannel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevelsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveChannelEncoderSettingsAudioDescriptionsRemixSettingsChannelMappingsInputChannelLevelsList) validateGetParameters(index *float64) error {
 	return nil
 }

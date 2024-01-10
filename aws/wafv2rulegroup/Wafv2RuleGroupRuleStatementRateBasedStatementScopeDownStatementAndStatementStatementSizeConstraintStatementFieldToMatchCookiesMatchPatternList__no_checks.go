@@ -7,6 +7,10 @@ package wafv2rulegroup
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementSizeConstraintStatementFieldToMatchCookiesMatchPatternList) validateGetParameters(index *float64) error {
 	return nil
 }

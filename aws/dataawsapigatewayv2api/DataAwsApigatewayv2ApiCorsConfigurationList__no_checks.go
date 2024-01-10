@@ -7,6 +7,10 @@ package dataawsapigatewayv2api
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsApigatewayv2ApiCorsConfigurationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsApigatewayv2ApiCorsConfigurationList) validateGetParameters(index *float64) error {
 	return nil
 }

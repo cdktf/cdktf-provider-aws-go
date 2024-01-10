@@ -7,6 +7,10 @@ package route53recoverycontrolconfigcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_Route53RecoverycontrolconfigClusterClusterEndpointsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53RecoverycontrolconfigClusterClusterEndpointsList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package neptuneglobalcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NeptuneGlobalClusterGlobalClusterMembersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NeptuneGlobalClusterGlobalClusterMembersList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package imagebuildercontainerrecipe
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (i *jsiiProxy_ImagebuilderContainerRecipeComponentList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (i *jsiiProxy_ImagebuilderContainerRecipeComponentList) validateGetParameters(index *float64) error {
 	return nil
 }

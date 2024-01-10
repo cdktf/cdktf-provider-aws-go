@@ -7,6 +7,10 @@ package dataawsssoadminapplicationassignments
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsSsoadminApplicationAssignmentsApplicationAssignmentsList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -13,6 +13,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
+func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapRelationalTableInputColumnsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	if mapKeyAttributeName == nil {
+		return fmt.Errorf("parameter mapKeyAttributeName is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightDataSetPhysicalTableMapRelationalTableInputColumnsList) validateGetParameters(index *float64) error {
 	if index == nil {
 		return fmt.Errorf("parameter index is required, but nil was provided")

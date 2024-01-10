@@ -7,6 +7,10 @@ package dataawsapigatewaydomainname
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsApiGatewayDomainNameEndpointConfigurationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsApiGatewayDomainNameEndpointConfigurationList) validateGetParameters(index *float64) error {
 	return nil
 }

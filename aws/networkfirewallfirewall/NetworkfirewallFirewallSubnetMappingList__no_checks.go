@@ -7,6 +7,10 @@ package networkfirewallfirewall
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (n *jsiiProxy_NetworkfirewallFirewallSubnetMappingList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkfirewallFirewallSubnetMappingList) validateGetParameters(index *float64) error {
 	return nil
 }

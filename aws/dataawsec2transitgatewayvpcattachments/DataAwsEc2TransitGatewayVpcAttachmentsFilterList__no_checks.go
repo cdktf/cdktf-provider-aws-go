@@ -7,6 +7,10 @@ package dataawsec2transitgatewayvpcattachments
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachmentsFilterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsEc2TransitGatewayVpcAttachmentsFilterList) validateGetParameters(index *float64) error {
 	return nil
 }

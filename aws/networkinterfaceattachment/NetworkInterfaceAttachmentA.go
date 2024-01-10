@@ -5,10 +5,10 @@ package networkinterfaceattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/networkinterfaceattachment/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v19/networkinterfaceattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -123,6 +123,9 @@ type NetworkInterfaceAttachmentA interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -914,6 +917,32 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentA) SynthesizeAttributes() *map[stri
 	_jsii_.Invoke(
 		n,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkInterfaceAttachmentA) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		n,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_NetworkInterfaceAttachmentA) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		n,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

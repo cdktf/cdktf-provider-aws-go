@@ -7,6 +7,10 @@ package backupplan
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (b *jsiiProxy_BackupPlanRuleCopyActionList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupPlanRuleCopyActionList) validateGetParameters(index *float64) error {
 	return nil
 }

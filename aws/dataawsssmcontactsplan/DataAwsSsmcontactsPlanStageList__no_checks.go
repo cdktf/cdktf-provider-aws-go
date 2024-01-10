@@ -7,6 +7,10 @@ package dataawsssmcontactsplan
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsSsmcontactsPlanStageList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsSsmcontactsPlanStageList) validateGetParameters(index *float64) error {
 	return nil
 }

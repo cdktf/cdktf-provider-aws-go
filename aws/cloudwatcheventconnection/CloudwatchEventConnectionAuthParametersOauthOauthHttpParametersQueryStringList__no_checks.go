@@ -7,6 +7,10 @@ package cloudwatcheventconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (c *jsiiProxy_CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudwatchEventConnectionAuthParametersOauthOauthHttpParametersQueryStringList) validateGetParameters(index *float64) error {
 	return nil
 }

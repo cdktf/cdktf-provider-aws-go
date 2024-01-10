@@ -7,6 +7,10 @@ package dataawscecostcategory
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsCeCostCategoryRuleRuleNotList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsCeCostCategoryRuleRuleNotList) validateGetParameters(index *float64) error {
 	return nil
 }

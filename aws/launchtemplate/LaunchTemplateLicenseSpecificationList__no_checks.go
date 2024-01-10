@@ -7,6 +7,10 @@ package launchtemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (l *jsiiProxy_LaunchTemplateLicenseSpecificationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (l *jsiiProxy_LaunchTemplateLicenseSpecificationList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package finspacekxenvironment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (f *jsiiProxy_FinspaceKxEnvironmentCustomDnsConfigurationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (f *jsiiProxy_FinspaceKxEnvironmentCustomDnsConfigurationList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package s3bucketacl
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (s *jsiiProxy_S3BucketAclAccessControlPolicyGrantList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketAclAccessControlPolicyGrantList) validateGetParameters(index *float64) error {
 	return nil
 }

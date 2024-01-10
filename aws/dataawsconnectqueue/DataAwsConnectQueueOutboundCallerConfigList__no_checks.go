@@ -7,6 +7,10 @@ package dataawsconnectqueue
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsConnectQueueOutboundCallerConfigList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsConnectQueueOutboundCallerConfigList) validateGetParameters(index *float64) error {
 	return nil
 }

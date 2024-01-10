@@ -7,6 +7,10 @@ package opsworksecsclusterlayer
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (o *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (o *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeList) validateGetParameters(index *float64) error {
 	return nil
 }

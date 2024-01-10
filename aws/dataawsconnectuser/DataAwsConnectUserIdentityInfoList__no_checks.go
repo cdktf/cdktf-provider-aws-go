@@ -7,6 +7,10 @@ package dataawsconnectuser
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsConnectUserIdentityInfoList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsConnectUserIdentityInfoList) validateGetParameters(index *float64) error {
 	return nil
 }

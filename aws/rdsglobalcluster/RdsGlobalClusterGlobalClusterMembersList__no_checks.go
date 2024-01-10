@@ -7,6 +7,10 @@ package rdsglobalcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (r *jsiiProxy_RdsGlobalClusterGlobalClusterMembersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsGlobalClusterGlobalClusterMembersList) validateGetParameters(index *float64) error {
 	return nil
 }

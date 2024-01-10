@@ -7,6 +7,10 @@ package dataawscodecatalystdevenvironment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsCodecatalystDevEnvironmentIdesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsCodecatalystDevEnvironmentIdesList) validateGetParameters(index *float64) error {
 	return nil
 }

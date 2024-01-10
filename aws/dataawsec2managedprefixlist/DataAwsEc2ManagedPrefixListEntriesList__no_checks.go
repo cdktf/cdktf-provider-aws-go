@@ -7,6 +7,10 @@ package dataawsec2managedprefixlist
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsEc2ManagedPrefixListEntriesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsEc2ManagedPrefixListEntriesList) validateGetParameters(index *float64) error {
 	return nil
 }

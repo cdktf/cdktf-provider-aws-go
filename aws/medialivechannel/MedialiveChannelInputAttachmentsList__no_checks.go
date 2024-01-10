@@ -7,6 +7,10 @@ package medialivechannel
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (m *jsiiProxy_MedialiveChannelInputAttachmentsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveChannelInputAttachmentsList) validateGetParameters(index *float64) error {
 	return nil
 }

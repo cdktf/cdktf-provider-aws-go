@@ -7,6 +7,10 @@ package dataawsimagebuilderimage
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsImagebuilderImageOutputResourcesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsImagebuilderImageOutputResourcesList) validateGetParameters(index *float64) error {
 	return nil
 }

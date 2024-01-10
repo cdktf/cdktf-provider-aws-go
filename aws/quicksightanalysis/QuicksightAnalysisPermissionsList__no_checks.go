@@ -7,6 +7,10 @@ package quicksightanalysis
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (q *jsiiProxy_QuicksightAnalysisPermissionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (q *jsiiProxy_QuicksightAnalysisPermissionsList) validateGetParameters(index *float64) error {
 	return nil
 }

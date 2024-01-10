@@ -5,10 +5,10 @@ package batchjobdefinition
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v18/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-aws-go/aws/v19/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-aws-go/aws/v18/batchjobdefinition/internal"
+	"github.com/cdktf/cdktf-provider-aws-go/aws/v19/batchjobdefinition/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -156,6 +156,9 @@ type BatchJobDefinition interface {
 	ResetTagsAll()
 	ResetTimeout()
 	SynthesizeAttributes() *map[string]interface{}
+	SynthesizeHclAttributes() *map[string]interface{}
+	// Experimental.
+	ToHclTerraform() interface{}
 	// Experimental.
 	ToMetadata() interface{}
 	// Returns a string representation of this construct.
@@ -1267,6 +1270,32 @@ func (b *jsiiProxy_BatchJobDefinition) SynthesizeAttributes() *map[string]interf
 	_jsii_.Invoke(
 		b,
 		"synthesizeAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BatchJobDefinition) SynthesizeHclAttributes() *map[string]interface{} {
+	var returns *map[string]interface{}
+
+	_jsii_.Invoke(
+		b,
+		"synthesizeHclAttributes",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (b *jsiiProxy_BatchJobDefinition) ToHclTerraform() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		b,
+		"toHclTerraform",
 		nil, // no parameters
 		&returns,
 	)

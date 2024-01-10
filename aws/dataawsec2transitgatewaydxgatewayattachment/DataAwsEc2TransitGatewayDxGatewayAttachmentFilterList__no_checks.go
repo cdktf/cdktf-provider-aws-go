@@ -7,6 +7,10 @@ package dataawsec2transitgatewaydxgatewayattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachmentFilterList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachmentFilterList) validateGetParameters(index *float64) error {
 	return nil
 }

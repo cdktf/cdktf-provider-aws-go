@@ -7,6 +7,10 @@ package dataawslambdafunction
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAwsLambdaFunctionEphemeralStorageList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsLambdaFunctionEphemeralStorageList) validateGetParameters(index *float64) error {
 	return nil
 }

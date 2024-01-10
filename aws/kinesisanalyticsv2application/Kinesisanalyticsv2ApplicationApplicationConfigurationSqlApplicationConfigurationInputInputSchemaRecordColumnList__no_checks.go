@@ -7,6 +7,10 @@ package kinesisanalyticsv2application
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumnList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (k *jsiiProxy_Kinesisanalyticsv2ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumnList) validateGetParameters(index *float64) error {
 	return nil
 }
