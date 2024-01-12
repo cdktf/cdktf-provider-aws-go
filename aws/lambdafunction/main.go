@@ -70,6 +70,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "layers", GoGetter: "Layers"},
 			_jsii_.MemberProperty{JsiiProperty: "layersInput", GoGetter: "LayersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberProperty{JsiiProperty: "loggingConfig", GoGetter: "LoggingConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "loggingConfigInput", GoGetter: "LoggingConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "memorySize", GoGetter: "MemorySize"},
 			_jsii_.MemberProperty{JsiiProperty: "memorySizeInput", GoGetter: "MemorySizeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -88,6 +90,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putEphemeralStorage", GoMethod: "PutEphemeralStorage"},
 			_jsii_.MemberMethod{JsiiMethod: "putFileSystemConfig", GoMethod: "PutFileSystemConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putImageConfig", GoMethod: "PutImageConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putLoggingConfig", GoMethod: "PutLoggingConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putSnapStart", GoMethod: "PutSnapStart"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putTracingConfig", GoMethod: "PutTracingConfig"},
@@ -115,6 +118,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetImageUri", GoMethod: "ResetImageUri"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeyArn", GoMethod: "ResetKmsKeyArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLayers", GoMethod: "ResetLayers"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLoggingConfig", GoMethod: "ResetLoggingConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMemorySize", GoMethod: "ResetMemorySize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPackageType", GoMethod: "ResetPackageType"},
@@ -384,6 +388,53 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LambdaFunctionImageConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionLoggingConfig",
+		reflect.TypeOf((*LambdaFunctionLoggingConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.lambdaFunction.LambdaFunctionLoggingConfigOutputReference",
+		reflect.TypeOf((*LambdaFunctionLoggingConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "applicationLogLevel", GoGetter: "ApplicationLogLevel"},
+			_jsii_.MemberProperty{JsiiProperty: "applicationLogLevelInput", GoGetter: "ApplicationLogLevelInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "logFormat", GoGetter: "LogFormat"},
+			_jsii_.MemberProperty{JsiiProperty: "logFormatInput", GoGetter: "LogFormatInput"},
+			_jsii_.MemberProperty{JsiiProperty: "logGroup", GoGetter: "LogGroup"},
+			_jsii_.MemberProperty{JsiiProperty: "logGroupInput", GoGetter: "LogGroupInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetApplicationLogLevel", GoMethod: "ResetApplicationLogLevel"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLogGroup", GoMethod: "ResetLogGroup"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSystemLogLevel", GoMethod: "ResetSystemLogLevel"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "systemLogLevel", GoGetter: "SystemLogLevel"},
+			_jsii_.MemberProperty{JsiiProperty: "systemLogLevelInput", GoGetter: "SystemLogLevelInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_LambdaFunctionLoggingConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

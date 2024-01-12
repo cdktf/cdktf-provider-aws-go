@@ -79,6 +79,10 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) validateSetMaxHealthyPercentageParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) validateSetMinHealthyPercentageParameters(val *float64) error {
 	return nil
 }

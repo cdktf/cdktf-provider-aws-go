@@ -62,11 +62,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ownerId", GoGetter: "OwnerId"},
 			_jsii_.MemberProperty{JsiiProperty: "performanceMode", GoGetter: "PerformanceMode"},
 			_jsii_.MemberProperty{JsiiProperty: "performanceModeInput", GoGetter: "PerformanceModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "protection", GoGetter: "Protection"},
+			_jsii_.MemberProperty{JsiiProperty: "protectionInput", GoGetter: "ProtectionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisionedThroughputInMibps", GoGetter: "ProvisionedThroughputInMibps"},
 			_jsii_.MemberProperty{JsiiProperty: "provisionedThroughputInMibpsInput", GoGetter: "ProvisionedThroughputInMibpsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putLifecyclePolicy", GoMethod: "PutLifecyclePolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "putProtection", GoMethod: "PutProtection"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAvailabilityZoneName", GoMethod: "ResetAvailabilityZoneName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCreationToken", GoMethod: "ResetCreationToken"},
@@ -76,6 +79,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetLifecyclePolicy", GoMethod: "ResetLifecyclePolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPerformanceMode", GoMethod: "ResetPerformanceMode"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProtection", GoMethod: "ResetProtection"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProvisionedThroughputInMibps", GoMethod: "ResetProvisionedThroughputInMibps"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
@@ -154,12 +158,15 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTransitionToArchive", GoMethod: "ResetTransitionToArchive"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTransitionToIa", GoMethod: "ResetTransitionToIa"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTransitionToPrimaryStorageClass", GoMethod: "ResetTransitionToPrimaryStorageClass"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "transitionToArchive", GoGetter: "TransitionToArchive"},
+			_jsii_.MemberProperty{JsiiProperty: "transitionToArchiveInput", GoGetter: "TransitionToArchiveInput"},
 			_jsii_.MemberProperty{JsiiProperty: "transitionToIa", GoGetter: "TransitionToIa"},
 			_jsii_.MemberProperty{JsiiProperty: "transitionToIaInput", GoGetter: "TransitionToIaInput"},
 			_jsii_.MemberProperty{JsiiProperty: "transitionToPrimaryStorageClass", GoGetter: "TransitionToPrimaryStorageClass"},
@@ -167,6 +174,45 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EfsFileSystemLifecyclePolicyOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtection",
+		reflect.TypeOf((*EfsFileSystemProtection)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.efsFileSystem.EfsFileSystemProtectionOutputReference",
+		reflect.TypeOf((*EfsFileSystemProtectionOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "replicationOverwrite", GoGetter: "ReplicationOverwrite"},
+			_jsii_.MemberProperty{JsiiProperty: "replicationOverwriteInput", GoGetter: "ReplicationOverwriteInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetReplicationOverwrite", GoMethod: "ResetReplicationOverwrite"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_EfsFileSystemProtectionOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

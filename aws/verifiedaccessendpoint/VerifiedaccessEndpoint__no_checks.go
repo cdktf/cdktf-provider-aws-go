@@ -147,6 +147,10 @@ func (j *jsiiProxy_VerifiedaccessEndpoint) validateSetLifecycleParameters(val *c
 	return nil
 }
 
+func (j *jsiiProxy_VerifiedaccessEndpoint) validateSetPolicyDocumentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VerifiedaccessEndpoint) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

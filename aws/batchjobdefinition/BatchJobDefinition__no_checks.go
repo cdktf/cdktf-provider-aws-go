@@ -75,6 +75,10 @@ func (b *jsiiProxy_BatchJobDefinition) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (b *jsiiProxy_BatchJobDefinition) validatePutEksPropertiesParameters(value *BatchJobDefinitionEksProperties) error {
+	return nil
+}
+
 func (b *jsiiProxy_BatchJobDefinition) validatePutRetryStrategyParameters(value *BatchJobDefinitionRetryStrategy) error {
 	return nil
 }
@@ -140,6 +144,10 @@ func (j *jsiiProxy_BatchJobDefinition) validateSetPropagateTagsParameters(val in
 }
 
 func (j *jsiiProxy_BatchJobDefinition) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_BatchJobDefinition) validateSetSchedulingPriorityParameters(val *float64) error {
 	return nil
 }
 

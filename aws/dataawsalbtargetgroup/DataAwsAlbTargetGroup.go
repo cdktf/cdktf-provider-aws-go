@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/alb_target_group aws_alb_target_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/alb_target_group aws_alb_target_group}.
 type DataAwsAlbTargetGroup interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -32,7 +32,7 @@ type DataAwsAlbTargetGroup interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	DeregistrationDelay() *float64
+	DeregistrationDelay() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -51,6 +51,9 @@ type DataAwsAlbTargetGroup interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LoadBalancingAlgorithmType() *string
+	LoadBalancingAnomalyMitigation() *string
+	SetLoadBalancingAnomalyMitigation(val *string)
+	LoadBalancingAnomalyMitigationInput() *string
 	LoadBalancingCrossZoneEnabled() *string
 	Name() *string
 	SetName(val *string)
@@ -111,6 +114,7 @@ type DataAwsAlbTargetGroup interface {
 	PutTimeouts(value *DataAwsAlbTargetGroupTimeouts)
 	ResetArn()
 	ResetId()
+	ResetLoadBalancingAnomalyMitigation()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -216,8 +220,8 @@ func (j *jsiiProxy_DataAwsAlbTargetGroup) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAlbTargetGroup) DeregistrationDelay() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataAwsAlbTargetGroup) DeregistrationDelay() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"deregistrationDelay",
@@ -311,6 +315,26 @@ func (j *jsiiProxy_DataAwsAlbTargetGroup) LoadBalancingAlgorithmType() *string {
 	_jsii_.Get(
 		j,
 		"loadBalancingAlgorithmType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAlbTargetGroup) LoadBalancingAnomalyMitigation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loadBalancingAnomalyMitigation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAlbTargetGroup) LoadBalancingAnomalyMitigationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loadBalancingAnomalyMitigationInput",
 		&returns,
 	)
 	return returns
@@ -537,7 +561,7 @@ func (j *jsiiProxy_DataAwsAlbTargetGroup) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/alb_target_group aws_alb_target_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/alb_target_group aws_alb_target_group} Data Source.
 func NewDataAwsAlbTargetGroup(scope constructs.Construct, id *string, config *DataAwsAlbTargetGroupConfig) DataAwsAlbTargetGroup {
 	_init_.Initialize()
 
@@ -555,7 +579,7 @@ func NewDataAwsAlbTargetGroup(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/alb_target_group aws_alb_target_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/alb_target_group aws_alb_target_group} Data Source.
 func NewDataAwsAlbTargetGroup_Override(d DataAwsAlbTargetGroup, scope constructs.Construct, id *string, config *DataAwsAlbTargetGroupConfig) {
 	_init_.Initialize()
 
@@ -622,6 +646,17 @@ func (j *jsiiProxy_DataAwsAlbTargetGroup)SetLifecycle(val *cdktf.TerraformResour
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsAlbTargetGroup)SetLoadBalancingAnomalyMitigation(val *string) {
+	if err := j.validateSetLoadBalancingAnomalyMitigationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"loadBalancingAnomalyMitigation",
 		val,
 	)
 }
@@ -964,6 +999,14 @@ func (d *jsiiProxy_DataAwsAlbTargetGroup) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsAlbTargetGroup) ResetLoadBalancingAnomalyMitigation() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLoadBalancingAnomalyMitigation",
 		nil, // no parameters
 	)
 }

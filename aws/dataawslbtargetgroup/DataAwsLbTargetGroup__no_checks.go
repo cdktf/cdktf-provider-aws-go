@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsLbTargetGroup) validateSetLifecycleParameters(val *cdk
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsLbTargetGroup) validateSetLoadBalancingAnomalyMitigationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsLbTargetGroup) validateSetNameParameters(val *string) error {
 	return nil
 }

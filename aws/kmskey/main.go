@@ -85,6 +85,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetXksKeyId", GoMethod: "ResetXksKeyId"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
@@ -100,6 +101,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "xksKeyId", GoGetter: "XksKeyId"},
+			_jsii_.MemberProperty{JsiiProperty: "xksKeyIdInput", GoGetter: "XksKeyIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_KmsKey{}

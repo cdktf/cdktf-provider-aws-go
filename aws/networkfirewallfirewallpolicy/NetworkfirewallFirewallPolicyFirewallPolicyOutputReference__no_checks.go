@@ -103,6 +103,10 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) validateSetTlsInspectionConfigurationArnParameters(val *string) error {
+	return nil
+}
+
 func validateNewNetworkfirewallFirewallPolicyFirewallPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

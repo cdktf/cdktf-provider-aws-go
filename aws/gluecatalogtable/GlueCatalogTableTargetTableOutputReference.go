@@ -41,6 +41,9 @@ type GlueCatalogTableTargetTableOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,6 +76,7 @@ type GlueCatalogTableTargetTableOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetRegion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -198,6 +202,26 @@ func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference) NameInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -308,6 +332,17 @@ func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference)SetName(val *strin
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -518,6 +553,14 @@ func (g *jsiiProxy_GlueCatalogTableTargetTableOutputReference) InterpolationForA
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GlueCatalogTableTargetTableOutputReference) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GlueCatalogTableTargetTableOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

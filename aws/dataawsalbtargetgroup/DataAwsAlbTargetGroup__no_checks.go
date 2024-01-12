@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsAlbTargetGroup) validateSetLifecycleParameters(val *cd
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsAlbTargetGroup) validateSetLoadBalancingAnomalyMitigationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsAlbTargetGroup) validateSetNameParameters(val *string) error {
 	return nil
 }

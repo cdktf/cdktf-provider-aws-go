@@ -95,6 +95,10 @@ func (l *jsiiProxy_LambdaFunction) validatePutImageConfigParameters(value *Lambd
 	return nil
 }
 
+func (l *jsiiProxy_LambdaFunction) validatePutLoggingConfigParameters(value *LambdaFunctionLoggingConfig) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaFunction) validatePutSnapStartParameters(value *LambdaFunctionSnapStart) error {
 	return nil
 }

@@ -168,6 +168,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetStatefulRuleGroupReference", GoMethod: "ResetStatefulRuleGroupReference"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStatelessCustomAction", GoMethod: "ResetStatelessCustomAction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStatelessRuleGroupReference", GoMethod: "ResetStatelessRuleGroupReference"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTlsInspectionConfigurationArn", GoMethod: "ResetTlsInspectionConfigurationArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "statefulDefaultActions", GoGetter: "StatefulDefaultActions"},
 			_jsii_.MemberProperty{JsiiProperty: "statefulDefaultActionsInput", GoGetter: "StatefulDefaultActionsInput"},
@@ -185,6 +186,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "statelessRuleGroupReferenceInput", GoGetter: "StatelessRuleGroupReferenceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "tlsInspectionConfigurationArn", GoGetter: "TlsInspectionConfigurationArn"},
+			_jsii_.MemberProperty{JsiiProperty: "tlsInspectionConfigurationArnInput", GoGetter: "TlsInspectionConfigurationArnInput"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {

@@ -47,6 +47,7 @@ type DataAwsNetworkfirewallFirewallPolicyFirewallPolicyOutputReference interface
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TlsInspectionConfigurationArn() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -221,6 +222,16 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyOutputRefer
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallPolicyFirewallPolicyOutputReference) TlsInspectionConfigurationArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsInspectionConfigurationArn",
 		&returns,
 	)
 	return returns

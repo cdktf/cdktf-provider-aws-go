@@ -129,6 +129,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "statelessRuleGroupReference", GoGetter: "StatelessRuleGroupReference"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberProperty{JsiiProperty: "tlsInspectionConfigurationArn", GoGetter: "TlsInspectionConfigurationArn"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 		},
 		func() interface{} {

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/prometheus_workspace aws_prometheus_workspace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/prometheus_workspace aws_prometheus_workspace}.
 type PrometheusWorkspace interface {
 	cdktf.TerraformResource
 	Alias() *string
@@ -46,6 +46,9 @@ type PrometheusWorkspace interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KmsKeyArn() *string
+	SetKmsKeyArn(val *string)
+	KmsKeyArnInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -123,6 +126,7 @@ type PrometheusWorkspace interface {
 	PutLoggingConfiguration(value *PrometheusWorkspaceLoggingConfiguration)
 	ResetAlias()
 	ResetId()
+	ResetKmsKeyArn()
 	ResetLoggingConfiguration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -272,6 +276,26 @@ func (j *jsiiProxy_PrometheusWorkspace) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrometheusWorkspace) KmsKeyArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PrometheusWorkspace) KmsKeyArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyArnInput",
 		&returns,
 	)
 	return returns
@@ -428,7 +452,7 @@ func (j *jsiiProxy_PrometheusWorkspace) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/prometheus_workspace aws_prometheus_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/prometheus_workspace aws_prometheus_workspace} Resource.
 func NewPrometheusWorkspace(scope constructs.Construct, id *string, config *PrometheusWorkspaceConfig) PrometheusWorkspace {
 	_init_.Initialize()
 
@@ -446,7 +470,7 @@ func NewPrometheusWorkspace(scope constructs.Construct, id *string, config *Prom
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/prometheus_workspace aws_prometheus_workspace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/prometheus_workspace aws_prometheus_workspace} Resource.
 func NewPrometheusWorkspace_Override(p PrometheusWorkspace, scope constructs.Construct, id *string, config *PrometheusWorkspaceConfig) {
 	_init_.Initialize()
 
@@ -513,6 +537,17 @@ func (j *jsiiProxy_PrometheusWorkspace)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PrometheusWorkspace)SetKmsKeyArn(val *string) {
+	if err := j.validateSetKmsKeyArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyArn",
 		val,
 	)
 }
@@ -945,6 +980,14 @@ func (p *jsiiProxy_PrometheusWorkspace) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PrometheusWorkspace) ResetKmsKeyArn() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetKmsKeyArn",
 		nil, // no parameters
 	)
 }

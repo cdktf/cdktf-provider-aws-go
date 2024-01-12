@@ -127,6 +127,10 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetNamespaceNameParamete
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetPortParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

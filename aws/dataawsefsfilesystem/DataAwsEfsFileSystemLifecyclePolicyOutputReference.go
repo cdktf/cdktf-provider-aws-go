@@ -40,6 +40,7 @@ type DataAwsEfsFileSystemLifecyclePolicyOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TransitionToArchive() *string
 	TransitionToIa() *string
 	TransitionToPrimaryStorageClass() *string
 	// Experimental.
@@ -146,6 +147,16 @@ func (j *jsiiProxy_DataAwsEfsFileSystemLifecyclePolicyOutputReference) Terraform
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEfsFileSystemLifecyclePolicyOutputReference) TransitionToArchive() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transitionToArchive",
 		&returns,
 	)
 	return returns

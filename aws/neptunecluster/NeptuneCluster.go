@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster aws_neptune_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/neptune_cluster aws_neptune_cluster}.
 type NeptuneCluster interface {
 	cdktf.TerraformResource
 	AllowMajorVersionUpgrade() interface{}
@@ -144,6 +144,9 @@ type NeptuneCluster interface {
 	StorageEncrypted() interface{}
 	SetStorageEncrypted(val interface{})
 	StorageEncryptedInput() interface{}
+	StorageType() *string
+	SetStorageType(val *string)
+	StorageTypeInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -237,6 +240,7 @@ type NeptuneCluster interface {
 	ResetSkipFinalSnapshot()
 	ResetSnapshotIdentifier()
 	ResetStorageEncrypted()
+	ResetStorageType()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -1009,6 +1013,26 @@ func (j *jsiiProxy_NeptuneCluster) StorageEncryptedInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NeptuneCluster) StorageType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NeptuneCluster) StorageTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NeptuneCluster) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -1120,7 +1144,7 @@ func (j *jsiiProxy_NeptuneCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster aws_neptune_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/neptune_cluster aws_neptune_cluster} Resource.
 func NewNeptuneCluster(scope constructs.Construct, id *string, config *NeptuneClusterConfig) NeptuneCluster {
 	_init_.Initialize()
 
@@ -1138,7 +1162,7 @@ func NewNeptuneCluster(scope constructs.Construct, id *string, config *NeptuneCl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster aws_neptune_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/neptune_cluster aws_neptune_cluster} Resource.
 func NewNeptuneCluster_Override(n NeptuneCluster, scope constructs.Construct, id *string, config *NeptuneClusterConfig) {
 	_init_.Initialize()
 
@@ -1510,6 +1534,17 @@ func (j *jsiiProxy_NeptuneCluster)SetStorageEncrypted(val interface{}) {
 	_jsii_.Set(
 		j,
 		"storageEncrypted",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NeptuneCluster)SetStorageType(val *string) {
+	if err := j.validateSetStorageTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageType",
 		val,
 	)
 }
@@ -2150,6 +2185,14 @@ func (n *jsiiProxy_NeptuneCluster) ResetStorageEncrypted() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetStorageEncrypted",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NeptuneCluster) ResetStorageType() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetStorageType",
 		nil, // no parameters
 	)
 }

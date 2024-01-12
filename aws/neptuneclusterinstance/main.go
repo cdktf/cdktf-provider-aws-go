@@ -105,6 +105,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "storageEncrypted", GoGetter: "StorageEncrypted"},
+			_jsii_.MemberProperty{JsiiProperty: "storageType", GoGetter: "StorageType"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},

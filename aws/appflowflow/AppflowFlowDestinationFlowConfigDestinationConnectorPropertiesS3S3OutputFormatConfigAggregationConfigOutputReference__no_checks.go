@@ -67,6 +67,10 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 	return nil
 }
 
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfigOutputReference) validateSetTargetFileSizeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

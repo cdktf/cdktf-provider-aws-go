@@ -66,7 +66,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectionType", GoMethod: "ResetConnectionType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
-			_jsii_.MemberMethod{JsiiMethod: "resetImageId", GoMethod: "ResetImageId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOwnerArn", GoMethod: "ResetOwnerArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSubnetId", GoMethod: "ResetSubnetId"},

@@ -399,6 +399,14 @@ func (j *jsiiProxy_FsxOntapFileSystem) validateSetFsxAdminPasswordParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_FsxOntapFileSystem) validateSetHaPairsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FsxOntapFileSystem) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -534,6 +542,14 @@ func (j *jsiiProxy_FsxOntapFileSystem) validateSetTagsAllParameters(val *map[str
 }
 
 func (j *jsiiProxy_FsxOntapFileSystem) validateSetThroughputCapacityParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FsxOntapFileSystem) validateSetThroughputCapacityPerHaPairParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

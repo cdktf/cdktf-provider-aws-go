@@ -5,7 +5,7 @@ package wafv2rulegroup
 
 
 type Wafv2RuleGroupRuleStatementRateBasedStatementScopeDownStatementOrStatementStatementAndStatementStatementSqliMatchStatementFieldToMatchJa3Fingerprint struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/wafv2_rule_group#fallback_behavior Wafv2RuleGroup#fallback_behavior}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/wafv2_rule_group#fallback_behavior Wafv2RuleGroup#fallback_behavior}.
 	FallbackBehavior *string `field:"required" json:"fallbackBehavior" yaml:"fallbackBehavior"`
 }
 

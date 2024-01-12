@@ -58,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putComputeResources", GoMethod: "PutComputeResources"},
 			_jsii_.MemberMethod{JsiiMethod: "putEksConfiguration", GoMethod: "PutEksConfiguration"},
+			_jsii_.MemberMethod{JsiiMethod: "putUpdatePolicy", GoMethod: "PutUpdatePolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetComputeEnvironmentName", GoMethod: "ResetComputeEnvironmentName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetComputeEnvironmentNamePrefix", GoMethod: "ResetComputeEnvironmentNamePrefix"},
@@ -69,6 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetState", GoMethod: "ResetState"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUpdatePolicy", GoMethod: "ResetUpdatePolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceRole", GoGetter: "ServiceRole"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceRoleInput", GoGetter: "ServiceRoleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "state", GoGetter: "State"},
@@ -90,6 +92,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "updatePolicy", GoGetter: "UpdatePolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "updatePolicyInput", GoGetter: "UpdatePolicyInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_BatchComputeEnvironment{}
@@ -332,6 +336,46 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BatchComputeEnvironmentEksConfigurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentUpdatePolicy",
+		reflect.TypeOf((*BatchComputeEnvironmentUpdatePolicy)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.batchComputeEnvironment.BatchComputeEnvironmentUpdatePolicyOutputReference",
+		reflect.TypeOf((*BatchComputeEnvironmentUpdatePolicyOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "jobExecutionTimeoutMinutes", GoGetter: "JobExecutionTimeoutMinutes"},
+			_jsii_.MemberProperty{JsiiProperty: "jobExecutionTimeoutMinutesInput", GoGetter: "JobExecutionTimeoutMinutesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terminateJobsOnUpdate", GoGetter: "TerminateJobsOnUpdate"},
+			_jsii_.MemberProperty{JsiiProperty: "terminateJobsOnUpdateInput", GoGetter: "TerminateJobsOnUpdateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_BatchComputeEnvironmentUpdatePolicyOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

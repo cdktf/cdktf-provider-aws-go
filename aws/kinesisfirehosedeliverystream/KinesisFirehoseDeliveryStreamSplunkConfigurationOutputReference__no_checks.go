@@ -63,6 +63,14 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) validateSetBufferingIntervalParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) validateSetBufferingSizeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

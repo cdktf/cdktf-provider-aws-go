@@ -95,6 +95,10 @@ func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateSetQuoteS
 	return nil
 }
 
+func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateSetSerdeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

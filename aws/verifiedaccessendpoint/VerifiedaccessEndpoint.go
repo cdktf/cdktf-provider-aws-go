@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint}.
 type VerifiedaccessEndpoint interface {
 	cdktf.TerraformResource
 	ApplicationDomain() *string
@@ -72,6 +72,9 @@ type VerifiedaccessEndpoint interface {
 	NetworkInterfaceOptionsInput() *VerifiedaccessEndpointNetworkInterfaceOptions
 	// The tree node.
 	Node() constructs.Node
+	PolicyDocument() *string
+	SetPolicyDocument(val *string)
+	PolicyDocumentInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -159,6 +162,7 @@ type VerifiedaccessEndpoint interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPolicyDocument()
 	ResetSecurityGroupIds()
 	ResetSseSpecification()
 	ResetTags()
@@ -482,6 +486,26 @@ func (j *jsiiProxy_VerifiedaccessEndpoint) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_VerifiedaccessEndpoint) PolicyDocument() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyDocument",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedaccessEndpoint) PolicyDocumentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyDocumentInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VerifiedaccessEndpoint) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -673,7 +697,7 @@ func (j *jsiiProxy_VerifiedaccessEndpoint) VerifiedAccessInstanceId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint} Resource.
 func NewVerifiedaccessEndpoint(scope constructs.Construct, id *string, config *VerifiedaccessEndpointConfig) VerifiedaccessEndpoint {
 	_init_.Initialize()
 
@@ -691,7 +715,7 @@ func NewVerifiedaccessEndpoint(scope constructs.Construct, id *string, config *V
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/verifiedaccess_endpoint aws_verifiedaccess_endpoint} Resource.
 func NewVerifiedaccessEndpoint_Override(v VerifiedaccessEndpoint, scope constructs.Construct, id *string, config *VerifiedaccessEndpointConfig) {
 	_init_.Initialize()
 
@@ -824,6 +848,17 @@ func (j *jsiiProxy_VerifiedaccessEndpoint)SetLifecycle(val *cdktf.TerraformResou
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VerifiedaccessEndpoint)SetPolicyDocument(val *string) {
+	if err := j.validateSetPolicyDocumentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyDocument",
 		val,
 	)
 }
@@ -1324,6 +1359,14 @@ func (v *jsiiProxy_VerifiedaccessEndpoint) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VerifiedaccessEndpoint) ResetPolicyDocument() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetPolicyDocument",
 		nil, // no parameters
 	)
 }

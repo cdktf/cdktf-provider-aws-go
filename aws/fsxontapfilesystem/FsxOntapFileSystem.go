@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/fsx_ontap_file_system aws_fsx_ontap_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/fsx_ontap_file_system aws_fsx_ontap_file_system}.
 type FsxOntapFileSystem interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -59,6 +59,9 @@ type FsxOntapFileSystem interface {
 	FsxAdminPassword() *string
 	SetFsxAdminPassword(val *string)
 	FsxAdminPasswordInput() *string
+	HaPairs() *float64
+	SetHaPairs(val *float64)
+	HaPairsInput() *float64
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -116,6 +119,9 @@ type FsxOntapFileSystem interface {
 	ThroughputCapacity() *float64
 	SetThroughputCapacity(val *float64)
 	ThroughputCapacityInput() *float64
+	ThroughputCapacityPerHaPair() *float64
+	SetThroughputCapacityPerHaPair(val *float64)
+	ThroughputCapacityPerHaPairInput() *float64
 	Timeouts() FsxOntapFileSystemTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	VpcId() *string
@@ -172,6 +178,7 @@ type FsxOntapFileSystem interface {
 	ResetDiskIopsConfiguration()
 	ResetEndpointIpAddressRange()
 	ResetFsxAdminPassword()
+	ResetHaPairs()
 	ResetId()
 	ResetKmsKeyId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -183,6 +190,8 @@ type FsxOntapFileSystem interface {
 	ResetStorageType()
 	ResetTags()
 	ResetTagsAll()
+	ResetThroughputCapacity()
+	ResetThroughputCapacityPerHaPair()
 	ResetTimeouts()
 	ResetWeeklyMaintenanceStartTime()
 	SynthesizeAttributes() *map[string]interface{}
@@ -428,6 +437,26 @@ func (j *jsiiProxy_FsxOntapFileSystem) FsxAdminPasswordInput() *string {
 	_jsii_.Get(
 		j,
 		"fsxAdminPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOntapFileSystem) HaPairs() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"haPairs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOntapFileSystem) HaPairsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"haPairsInput",
 		&returns,
 	)
 	return returns
@@ -753,6 +782,26 @@ func (j *jsiiProxy_FsxOntapFileSystem) ThroughputCapacityInput() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_FsxOntapFileSystem) ThroughputCapacityPerHaPair() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"throughputCapacityPerHaPair",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOntapFileSystem) ThroughputCapacityPerHaPairInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"throughputCapacityPerHaPairInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxOntapFileSystem) Timeouts() FsxOntapFileSystemTimeoutsOutputReference {
 	var returns FsxOntapFileSystemTimeoutsOutputReference
 	_jsii_.Get(
@@ -804,7 +853,7 @@ func (j *jsiiProxy_FsxOntapFileSystem) WeeklyMaintenanceStartTimeInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/fsx_ontap_file_system aws_fsx_ontap_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/fsx_ontap_file_system aws_fsx_ontap_file_system} Resource.
 func NewFsxOntapFileSystem(scope constructs.Construct, id *string, config *FsxOntapFileSystemConfig) FsxOntapFileSystem {
 	_init_.Initialize()
 
@@ -822,7 +871,7 @@ func NewFsxOntapFileSystem(scope constructs.Construct, id *string, config *FsxOn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/fsx_ontap_file_system aws_fsx_ontap_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/fsx_ontap_file_system aws_fsx_ontap_file_system} Resource.
 func NewFsxOntapFileSystem_Override(f FsxOntapFileSystem, scope constructs.Construct, id *string, config *FsxOntapFileSystemConfig) {
 	_init_.Initialize()
 
@@ -922,6 +971,17 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetFsxAdminPassword(val *string) {
 	_jsii_.Set(
 		j,
 		"fsxAdminPassword",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxOntapFileSystem)SetHaPairs(val *float64) {
+	if err := j.validateSetHaPairsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"haPairs",
 		val,
 	)
 }
@@ -1073,6 +1133,17 @@ func (j *jsiiProxy_FsxOntapFileSystem)SetThroughputCapacity(val *float64) {
 	_jsii_.Set(
 		j,
 		"throughputCapacity",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxOntapFileSystem)SetThroughputCapacityPerHaPair(val *float64) {
+	if err := j.validateSetThroughputCapacityPerHaPairParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"throughputCapacityPerHaPair",
 		val,
 	)
 }
@@ -1503,6 +1574,14 @@ func (f *jsiiProxy_FsxOntapFileSystem) ResetFsxAdminPassword() {
 	)
 }
 
+func (f *jsiiProxy_FsxOntapFileSystem) ResetHaPairs() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetHaPairs",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FsxOntapFileSystem) ResetId() {
 	_jsii_.InvokeVoid(
 		f,
@@ -1571,6 +1650,22 @@ func (f *jsiiProxy_FsxOntapFileSystem) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOntapFileSystem) ResetThroughputCapacity() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetThroughputCapacity",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOntapFileSystem) ResetThroughputCapacityPerHaPair() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetThroughputCapacityPerHaPair",
 		nil, // no parameters
 	)
 }

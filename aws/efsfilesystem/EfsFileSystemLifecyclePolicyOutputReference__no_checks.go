@@ -71,6 +71,10 @@ func (j *jsiiProxy_EfsFileSystemLifecyclePolicyOutputReference) validateSetTerra
 	return nil
 }
 
+func (j *jsiiProxy_EfsFileSystemLifecyclePolicyOutputReference) validateSetTransitionToArchiveParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EfsFileSystemLifecyclePolicyOutputReference) validateSetTransitionToIaParameters(val *string) error {
 	return nil
 }

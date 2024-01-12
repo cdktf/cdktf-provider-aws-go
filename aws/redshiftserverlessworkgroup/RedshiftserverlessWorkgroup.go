@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup}.
 type RedshiftserverlessWorkgroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -61,6 +61,9 @@ type RedshiftserverlessWorkgroup interface {
 	NamespaceNameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Port() *float64
+	SetPort(val *float64)
+	PortInput() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -150,6 +153,7 @@ type RedshiftserverlessWorkgroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPort()
 	ResetPubliclyAccessible()
 	ResetSecurityGroupIds()
 	ResetSubnetIds()
@@ -394,6 +398,26 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_RedshiftserverlessWorkgroup) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftserverlessWorkgroup) PortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"portInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedshiftserverlessWorkgroup) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -605,7 +629,7 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup) WorkgroupNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource.
 func NewRedshiftserverlessWorkgroup(scope constructs.Construct, id *string, config *RedshiftserverlessWorkgroupConfig) RedshiftserverlessWorkgroup {
 	_init_.Initialize()
 
@@ -623,7 +647,7 @@ func NewRedshiftserverlessWorkgroup(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/redshiftserverless_workgroup aws_redshiftserverless_workgroup} Resource.
 func NewRedshiftserverlessWorkgroup_Override(r RedshiftserverlessWorkgroup, scope constructs.Construct, id *string, config *RedshiftserverlessWorkgroupConfig) {
 	_init_.Initialize()
 
@@ -723,6 +747,17 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup)SetNamespaceName(val *string) {
 	_jsii_.Set(
 		j,
 		"namespaceName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftserverlessWorkgroup)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"port",
 		val,
 	)
 }
@@ -1223,6 +1258,14 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroup) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftserverlessWorkgroup) ResetPort() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPort",
 		nil, // no parameters
 	)
 }

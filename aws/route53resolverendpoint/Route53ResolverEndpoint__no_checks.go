@@ -123,7 +123,15 @@ func (j *jsiiProxy_Route53ResolverEndpoint) validateSetNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_Route53ResolverEndpoint) validateSetProtocolsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53ResolverEndpoint) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Route53ResolverEndpoint) validateSetResolverEndpointTypeParameters(val *string) error {
 	return nil
 }
 

@@ -111,6 +111,10 @@ func (j *jsiiProxy_PrometheusWorkspace) validateSetIdParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_PrometheusWorkspace) validateSetKmsKeyArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PrometheusWorkspace) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

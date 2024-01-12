@@ -39,6 +39,8 @@ type KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference interfa
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DocumentIdOptions() KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsOutputReference
+	DocumentIdOptionsInput() *KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptions
 	DomainArn() *string
 	SetDomainArn(val *string)
 	DomainArnInput() *string
@@ -103,6 +105,7 @@ type KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference interfa
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCloudwatchLoggingOptions(value *KinesisFirehoseDeliveryStreamOpensearchConfigurationCloudwatchLoggingOptions)
+	PutDocumentIdOptions(value *KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptions)
 	PutProcessingConfiguration(value *KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfiguration)
 	PutS3Configuration(value *KinesisFirehoseDeliveryStreamOpensearchConfigurationS3Configuration)
 	PutVpcConfig(value *KinesisFirehoseDeliveryStreamOpensearchConfigurationVpcConfig)
@@ -110,6 +113,7 @@ type KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference interfa
 	ResetBufferingSize()
 	ResetCloudwatchLoggingOptions()
 	ResetClusterEndpoint()
+	ResetDocumentIdOptions()
 	ResetDomainArn()
 	ResetIndexRotationPeriod()
 	ResetProcessingConfiguration()
@@ -237,6 +241,26 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputRef
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference) DocumentIdOptions() KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsOutputReference {
+	var returns KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"documentIdOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference) DocumentIdOptionsInput() *KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptions {
+	var returns *KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptions
+	_jsii_.Get(
+		j,
+		"documentIdOptionsInput",
 		&returns,
 	)
 	return returns
@@ -872,6 +896,17 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputRef
 	)
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference) PutDocumentIdOptions(value *KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptions) {
+	if err := k.validatePutDocumentIdOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putDocumentIdOptions",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference) PutProcessingConfiguration(value *KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfiguration) {
 	if err := k.validatePutProcessingConfigurationParameters(value); err != nil {
 		panic(err)
@@ -933,6 +968,14 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputRef
 	_jsii_.InvokeVoid(
 		k,
 		"resetClusterEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference) ResetDocumentIdOptions() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetDocumentIdOptions",
 		nil, // no parameters
 	)
 }

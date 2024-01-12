@@ -12,10 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition aws_batch_job_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_job_definition aws_batch_job_definition}.
 type BatchJobDefinition interface {
 	cdktf.TerraformResource
 	Arn() *string
+	ArnPrefix() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -35,6 +36,8 @@ type BatchJobDefinition interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EksProperties() BatchJobDefinitionEksPropertiesOutputReference
+	EksPropertiesInput() *BatchJobDefinitionEksProperties
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -80,6 +83,9 @@ type BatchJobDefinition interface {
 	RetryStrategy() BatchJobDefinitionRetryStrategyOutputReference
 	RetryStrategyInput() *BatchJobDefinitionRetryStrategy
 	Revision() *float64
+	SchedulingPriority() *float64
+	SetSchedulingPriority(val *float64)
+	SchedulingPriorityInput() *float64
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -140,9 +146,11 @@ type BatchJobDefinition interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEksProperties(value *BatchJobDefinitionEksProperties)
 	PutRetryStrategy(value *BatchJobDefinitionRetryStrategy)
 	PutTimeout(value *BatchJobDefinitionTimeout)
 	ResetContainerProperties()
+	ResetEksProperties()
 	ResetId()
 	ResetNodeProperties()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -152,6 +160,7 @@ type BatchJobDefinition interface {
 	ResetPlatformCapabilities()
 	ResetPropagateTags()
 	ResetRetryStrategy()
+	ResetSchedulingPriority()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeout()
@@ -178,6 +187,16 @@ func (j *jsiiProxy_BatchJobDefinition) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchJobDefinition) ArnPrefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arnPrefix",
 		&returns,
 	)
 	return returns
@@ -248,6 +267,26 @@ func (j *jsiiProxy_BatchJobDefinition) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchJobDefinition) EksProperties() BatchJobDefinitionEksPropertiesOutputReference {
+	var returns BatchJobDefinitionEksPropertiesOutputReference
+	_jsii_.Get(
+		j,
+		"eksProperties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchJobDefinition) EksPropertiesInput() *BatchJobDefinitionEksProperties {
+	var returns *BatchJobDefinitionEksProperties
+	_jsii_.Get(
+		j,
+		"eksPropertiesInput",
 		&returns,
 	)
 	return returns
@@ -483,6 +522,26 @@ func (j *jsiiProxy_BatchJobDefinition) Revision() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_BatchJobDefinition) SchedulingPriority() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"schedulingPriority",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchJobDefinition) SchedulingPriorityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"schedulingPriorityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BatchJobDefinition) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -594,7 +653,7 @@ func (j *jsiiProxy_BatchJobDefinition) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
 func NewBatchJobDefinition(scope constructs.Construct, id *string, config *BatchJobDefinitionConfig) BatchJobDefinition {
 	_init_.Initialize()
 
@@ -612,7 +671,7 @@ func NewBatchJobDefinition(scope constructs.Construct, id *string, config *Batch
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
 func NewBatchJobDefinition_Override(b BatchJobDefinition, scope constructs.Construct, id *string, config *BatchJobDefinitionConfig) {
 	_init_.Initialize()
 
@@ -764,6 +823,17 @@ func (j *jsiiProxy_BatchJobDefinition)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BatchJobDefinition)SetSchedulingPriority(val *float64) {
+	if err := j.validateSetSchedulingPriorityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"schedulingPriority",
 		val,
 	)
 }
@@ -1154,6 +1224,17 @@ func (b *jsiiProxy_BatchJobDefinition) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (b *jsiiProxy_BatchJobDefinition) PutEksProperties(value *BatchJobDefinitionEksProperties) {
+	if err := b.validatePutEksPropertiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putEksProperties",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BatchJobDefinition) PutRetryStrategy(value *BatchJobDefinitionRetryStrategy) {
 	if err := b.validatePutRetryStrategyParameters(value); err != nil {
 		panic(err)
@@ -1180,6 +1261,14 @@ func (b *jsiiProxy_BatchJobDefinition) ResetContainerProperties() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetContainerProperties",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BatchJobDefinition) ResetEksProperties() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetEksProperties",
 		nil, // no parameters
 	)
 }
@@ -1236,6 +1325,14 @@ func (b *jsiiProxy_BatchJobDefinition) ResetRetryStrategy() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetRetryStrategy",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BatchJobDefinition) ResetSchedulingPriority() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSchedulingPriority",
 		nil, // no parameters
 	)
 }

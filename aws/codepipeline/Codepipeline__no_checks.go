@@ -83,6 +83,10 @@ func (c *jsiiProxy_Codepipeline) validatePutStageParameters(value interface{}) e
 	return nil
 }
 
+func (c *jsiiProxy_Codepipeline) validatePutVariableParameters(value interface{}) error {
+	return nil
+}
+
 func validateCodepipeline_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -116,6 +120,10 @@ func (j *jsiiProxy_Codepipeline) validateSetLifecycleParameters(val *cdktf.Terra
 }
 
 func (j *jsiiProxy_Codepipeline) validateSetNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_Codepipeline) validateSetPipelineTypeParameters(val *string) error {
 	return nil
 }
 

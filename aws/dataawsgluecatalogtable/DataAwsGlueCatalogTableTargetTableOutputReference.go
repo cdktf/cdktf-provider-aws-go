@@ -35,6 +35,7 @@ type DataAwsGlueCatalogTableTargetTableOutputReference interface {
 	InternalValue() *DataAwsGlueCatalogTableTargetTable
 	SetInternalValue(val *DataAwsGlueCatalogTableTargetTable)
 	Name() *string
+	Region() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -157,6 +158,16 @@ func (j *jsiiProxy_DataAwsGlueCatalogTableTargetTableOutputReference) Name() *st
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsGlueCatalogTableTargetTableOutputReference) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
 		&returns,
 	)
 	return returns

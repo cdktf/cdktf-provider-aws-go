@@ -51,6 +51,10 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputRef
 	return nil
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference) validatePutDocumentIdOptionsParameters(value *KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptions) error {
+	return nil
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference) validatePutProcessingConfigurationParameters(value *KinesisFirehoseDeliveryStreamOpensearchConfigurationProcessingConfiguration) error {
 	return nil
 }

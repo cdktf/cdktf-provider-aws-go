@@ -63,6 +63,10 @@ func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) validateSetFileSystemIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) validateSetInternalValueParameters(val *EfsReplicationConfigurationDestination) error {
 	return nil
 }

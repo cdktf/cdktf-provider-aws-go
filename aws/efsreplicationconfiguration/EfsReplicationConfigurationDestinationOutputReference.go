@@ -32,6 +32,8 @@ type EfsReplicationConfigurationDestinationOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	FileSystemId() *string
+	SetFileSystemId(val *string)
+	FileSystemIdInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *EfsReplicationConfigurationDestination
@@ -76,6 +78,7 @@ type EfsReplicationConfigurationDestinationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAvailabilityZoneName()
+	ResetFileSystemId()
 	ResetKmsKeyId()
 	ResetRegion()
 	// Produce the Token's value at resolution time.
@@ -148,6 +151,16 @@ func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) FileSy
 	_jsii_.Get(
 		j,
 		"fileSystemId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) FileSystemIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"fileSystemIdInput",
 		&returns,
 	)
 	return returns
@@ -300,6 +313,17 @@ func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference)SetComp
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference)SetFileSystemId(val *string) {
+	if err := j.validateSetFileSystemIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fileSystemId",
 		val,
 	)
 }
@@ -549,6 +573,14 @@ func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) ResetA
 	_jsii_.InvokeVoid(
 		e,
 		"resetAvailabilityZoneName",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EfsReplicationConfigurationDestinationOutputReference) ResetFileSystemId() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetFileSystemId",
 		nil, // no parameters
 	)
 }

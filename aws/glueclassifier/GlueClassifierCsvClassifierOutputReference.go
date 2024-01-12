@@ -56,6 +56,9 @@ type GlueClassifierCsvClassifierOutputReference interface {
 	QuoteSymbol() *string
 	SetQuoteSymbol(val *string)
 	QuoteSymbolInput() *string
+	Serde() *string
+	SetSerde(val *string)
+	SerdeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -96,6 +99,7 @@ type GlueClassifierCsvClassifierOutputReference interface {
 	ResetDisableValueTrimming()
 	ResetHeader()
 	ResetQuoteSymbol()
+	ResetSerde()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -321,6 +325,26 @@ func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) QuoteSymbolInput(
 	return returns
 }
 
+func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) Serde() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serde",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) SerdeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serdeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -486,6 +510,17 @@ func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference)SetQuoteSymbol(val
 	_jsii_.Set(
 		j,
 		"quoteSymbol",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueClassifierCsvClassifierOutputReference)SetSerde(val *string) {
+	if err := j.validateSetSerdeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serde",
 		val,
 	)
 }
@@ -758,6 +793,14 @@ func (g *jsiiProxy_GlueClassifierCsvClassifierOutputReference) ResetQuoteSymbol(
 	_jsii_.InvokeVoid(
 		g,
 		"resetQuoteSymbol",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueClassifierCsvClassifierOutputReference) ResetSerde() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSerde",
 		nil, // no parameters
 	)
 }

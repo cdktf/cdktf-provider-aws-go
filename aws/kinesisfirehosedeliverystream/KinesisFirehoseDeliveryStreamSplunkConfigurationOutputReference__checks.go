@@ -134,6 +134,22 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) validateSetBufferingIntervalParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) validateSetBufferingSizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:

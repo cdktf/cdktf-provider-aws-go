@@ -22,24 +22,24 @@ type CustomerGatewayConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/customer_gateway#bgp_asn CustomerGateway#bgp_asn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/customer_gateway#bgp_asn CustomerGateway#bgp_asn}.
 	BgpAsn *string `field:"required" json:"bgpAsn" yaml:"bgpAsn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/customer_gateway#type CustomerGateway#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/customer_gateway#type CustomerGateway#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/customer_gateway#certificate_arn CustomerGateway#certificate_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/customer_gateway#certificate_arn CustomerGateway#certificate_arn}.
 	CertificateArn *string `field:"optional" json:"certificateArn" yaml:"certificateArn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/customer_gateway#device_name CustomerGateway#device_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/customer_gateway#device_name CustomerGateway#device_name}.
 	DeviceName *string `field:"optional" json:"deviceName" yaml:"deviceName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/customer_gateway#id CustomerGateway#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/customer_gateway#id CustomerGateway#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/customer_gateway#ip_address CustomerGateway#ip_address}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/customer_gateway#ip_address CustomerGateway#ip_address}.
 	IpAddress *string `field:"optional" json:"ipAddress" yaml:"ipAddress"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/customer_gateway#tags CustomerGateway#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/customer_gateway#tags CustomerGateway#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/customer_gateway#tags_all CustomerGateway#tags_all}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/customer_gateway#tags_all CustomerGateway#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 }
 

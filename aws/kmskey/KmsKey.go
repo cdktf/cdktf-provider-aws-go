@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/kms_key aws_kms_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/kms_key aws_kms_key}.
 type KmsKey interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -104,6 +104,9 @@ type KmsKey interface {
 	TerraformResourceType() *string
 	Timeouts() KmsKeyTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	XksKeyId() *string
+	SetXksKeyId(val *string)
+	XksKeyIdInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -165,6 +168,7 @@ type KmsKey interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
+	ResetXksKeyId()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -643,8 +647,28 @@ func (j *jsiiProxy_KmsKey) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_KmsKey) XksKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"xksKeyId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/kms_key aws_kms_key} Resource.
+func (j *jsiiProxy_KmsKey) XksKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"xksKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/kms_key aws_kms_key} Resource.
 func NewKmsKey(scope constructs.Construct, id *string, config *KmsKeyConfig) KmsKey {
 	_init_.Initialize()
 
@@ -662,7 +686,7 @@ func NewKmsKey(scope constructs.Construct, id *string, config *KmsKeyConfig) Kms
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/kms_key aws_kms_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/kms_key aws_kms_key} Resource.
 func NewKmsKey_Override(k KmsKey, scope constructs.Construct, id *string, config *KmsKeyConfig) {
 	_init_.Initialize()
 
@@ -880,6 +904,17 @@ func (j *jsiiProxy_KmsKey)SetTagsAll(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmsKey)SetXksKeyId(val *string) {
+	if err := j.validateSetXksKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"xksKeyId",
 		val,
 	)
 }
@@ -1364,6 +1399,14 @@ func (k *jsiiProxy_KmsKey) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmsKey) ResetXksKeyId() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetXksKeyId",
 		nil, // no parameters
 	)
 }

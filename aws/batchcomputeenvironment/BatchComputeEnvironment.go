@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment aws_batch_compute_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment aws_batch_compute_environment}.
 type BatchComputeEnvironment interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -93,6 +93,8 @@ type BatchComputeEnvironment interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	UpdatePolicy() BatchComputeEnvironmentUpdatePolicyOutputReference
+	UpdatePolicyInput() *BatchComputeEnvironmentUpdatePolicy
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -138,6 +140,7 @@ type BatchComputeEnvironment interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutComputeResources(value *BatchComputeEnvironmentComputeResources)
 	PutEksConfiguration(value *BatchComputeEnvironmentEksConfiguration)
+	PutUpdatePolicy(value *BatchComputeEnvironmentUpdatePolicy)
 	ResetComputeEnvironmentName()
 	ResetComputeEnvironmentNamePrefix()
 	ResetComputeResources()
@@ -150,6 +153,7 @@ type BatchComputeEnvironment interface {
 	ResetState()
 	ResetTags()
 	ResetTagsAll()
+	ResetUpdatePolicy()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -568,8 +572,28 @@ func (j *jsiiProxy_BatchComputeEnvironment) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BatchComputeEnvironment) UpdatePolicy() BatchComputeEnvironmentUpdatePolicyOutputReference {
+	var returns BatchComputeEnvironmentUpdatePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"updatePolicy",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment aws_batch_compute_environment} Resource.
+func (j *jsiiProxy_BatchComputeEnvironment) UpdatePolicyInput() *BatchComputeEnvironmentUpdatePolicy {
+	var returns *BatchComputeEnvironmentUpdatePolicy
+	_jsii_.Get(
+		j,
+		"updatePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment aws_batch_compute_environment} Resource.
 func NewBatchComputeEnvironment(scope constructs.Construct, id *string, config *BatchComputeEnvironmentConfig) BatchComputeEnvironment {
 	_init_.Initialize()
 
@@ -587,7 +611,7 @@ func NewBatchComputeEnvironment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/batch_compute_environment aws_batch_compute_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/batch_compute_environment aws_batch_compute_environment} Resource.
 func NewBatchComputeEnvironment_Override(b BatchComputeEnvironment, scope constructs.Construct, id *string, config *BatchComputeEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -1129,6 +1153,17 @@ func (b *jsiiProxy_BatchComputeEnvironment) PutEksConfiguration(value *BatchComp
 	)
 }
 
+func (b *jsiiProxy_BatchComputeEnvironment) PutUpdatePolicy(value *BatchComputeEnvironmentUpdatePolicy) {
+	if err := b.validatePutUpdatePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putUpdatePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BatchComputeEnvironment) ResetComputeEnvironmentName() {
 	_jsii_.InvokeVoid(
 		b,
@@ -1205,6 +1240,14 @@ func (b *jsiiProxy_BatchComputeEnvironment) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BatchComputeEnvironment) ResetUpdatePolicy() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetUpdatePolicy",
 		nil, // no parameters
 	)
 }

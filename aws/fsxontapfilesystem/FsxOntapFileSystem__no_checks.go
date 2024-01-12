@@ -127,6 +127,10 @@ func (j *jsiiProxy_FsxOntapFileSystem) validateSetFsxAdminPasswordParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_FsxOntapFileSystem) validateSetHaPairsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOntapFileSystem) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -176,6 +180,10 @@ func (j *jsiiProxy_FsxOntapFileSystem) validateSetTagsAllParameters(val *map[str
 }
 
 func (j *jsiiProxy_FsxOntapFileSystem) validateSetThroughputCapacityParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_FsxOntapFileSystem) validateSetThroughputCapacityPerHaPairParameters(val *float64) error {
 	return nil
 }
 

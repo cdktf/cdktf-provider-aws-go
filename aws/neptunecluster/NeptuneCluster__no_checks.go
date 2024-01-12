@@ -223,6 +223,10 @@ func (j *jsiiProxy_NeptuneCluster) validateSetStorageEncryptedParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_NeptuneCluster) validateSetStorageTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_NeptuneCluster) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

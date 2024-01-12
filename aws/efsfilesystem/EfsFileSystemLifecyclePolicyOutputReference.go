@@ -40,6 +40,9 @@ type EfsFileSystemLifecyclePolicyOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TransitionToArchive() *string
+	SetTransitionToArchive(val *string)
+	TransitionToArchiveInput() *string
 	TransitionToIa() *string
 	SetTransitionToIa(val *string)
 	TransitionToIaInput() *string
@@ -70,6 +73,7 @@ type EfsFileSystemLifecyclePolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetTransitionToArchive()
 	ResetTransitionToIa()
 	ResetTransitionToPrimaryStorageClass()
 	// Produce the Token's value at resolution time.
@@ -152,6 +156,26 @@ func (j *jsiiProxy_EfsFileSystemLifecyclePolicyOutputReference) TerraformResourc
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EfsFileSystemLifecyclePolicyOutputReference) TransitionToArchive() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transitionToArchive",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EfsFileSystemLifecyclePolicyOutputReference) TransitionToArchiveInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transitionToArchiveInput",
 		&returns,
 	)
 	return returns
@@ -276,6 +300,17 @@ func (j *jsiiProxy_EfsFileSystemLifecyclePolicyOutputReference)SetTerraformResou
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EfsFileSystemLifecyclePolicyOutputReference)SetTransitionToArchive(val *string) {
+	if err := j.validateSetTransitionToArchiveParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transitionToArchive",
 		val,
 	)
 }
@@ -486,6 +521,14 @@ func (e *jsiiProxy_EfsFileSystemLifecyclePolicyOutputReference) InterpolationFor
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_EfsFileSystemLifecyclePolicyOutputReference) ResetTransitionToArchive() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTransitionToArchive",
+		nil, // no parameters
+	)
 }
 
 func (e *jsiiProxy_EfsFileSystemLifecyclePolicyOutputReference) ResetTransitionToIa() {

@@ -163,6 +163,10 @@ func (j *jsiiProxy_KmsKey) validateSetTagsAllParameters(val *map[string]*string)
 	return nil
 }
 
+func (j *jsiiProxy_KmsKey) validateSetXksKeyIdParameters(val *string) error {
+	return nil
+}
+
 func validateNewKmsKeyParameters(scope constructs.Construct, id *string, config *KmsKeyConfig) error {
 	return nil
 }

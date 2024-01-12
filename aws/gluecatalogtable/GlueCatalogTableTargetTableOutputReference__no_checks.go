@@ -75,6 +75,10 @@ func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference) validateSetNamePa
 	return nil
 }
 
+func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

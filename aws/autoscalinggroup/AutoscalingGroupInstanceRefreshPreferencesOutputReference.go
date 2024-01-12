@@ -44,6 +44,9 @@ type AutoscalingGroupInstanceRefreshPreferencesOutputReference interface {
 	InstanceWarmupInput() *string
 	InternalValue() *AutoscalingGroupInstanceRefreshPreferences
 	SetInternalValue(val *AutoscalingGroupInstanceRefreshPreferences)
+	MaxHealthyPercentage() *float64
+	SetMaxHealthyPercentage(val *float64)
+	MaxHealthyPercentageInput() *float64
 	MinHealthyPercentage() *float64
 	SetMinHealthyPercentage(val *float64)
 	MinHealthyPercentageInput() *float64
@@ -92,6 +95,7 @@ type AutoscalingGroupInstanceRefreshPreferencesOutputReference interface {
 	ResetCheckpointDelay()
 	ResetCheckpointPercentages()
 	ResetInstanceWarmup()
+	ResetMaxHealthyPercentage()
 	ResetMinHealthyPercentage()
 	ResetScaleInProtectedInstances()
 	ResetSkipMatching()
@@ -236,6 +240,26 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) In
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) MaxHealthyPercentage() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxHealthyPercentage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) MaxHealthyPercentageInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxHealthyPercentageInput",
 		&returns,
 	)
 	return returns
@@ -442,6 +466,17 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)Set
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference)SetMaxHealthyPercentage(val *float64) {
+	if err := j.validateSetMaxHealthyPercentageParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxHealthyPercentage",
 		val,
 	)
 }
@@ -726,6 +761,14 @@ func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) Re
 	_jsii_.InvokeVoid(
 		a,
 		"resetInstanceWarmup",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) ResetMaxHealthyPercentage() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMaxHealthyPercentage",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/snapshot_create_volume_permission aws_snapshot_create_volume_permission}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/snapshot_create_volume_permission aws_snapshot_create_volume_permission}.
 type SnapshotCreateVolumePermission interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -380,7 +380,7 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/snapshot_create_volume_permission aws_snapshot_create_volume_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/snapshot_create_volume_permission aws_snapshot_create_volume_permission} Resource.
 func NewSnapshotCreateVolumePermission(scope constructs.Construct, id *string, config *SnapshotCreateVolumePermissionConfig) SnapshotCreateVolumePermission {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewSnapshotCreateVolumePermission(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/snapshot_create_volume_permission aws_snapshot_create_volume_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/snapshot_create_volume_permission aws_snapshot_create_volume_permission} Resource.
 func NewSnapshotCreateVolumePermission_Override(s SnapshotCreateVolumePermission, scope constructs.Construct, id *string, config *SnapshotCreateVolumePermissionConfig) {
 	_init_.Initialize()
 

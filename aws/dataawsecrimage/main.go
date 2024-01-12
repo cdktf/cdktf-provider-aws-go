@@ -40,6 +40,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "imageTag", GoGetter: "ImageTag"},
 			_jsii_.MemberProperty{JsiiProperty: "imageTagInput", GoGetter: "ImageTagInput"},
 			_jsii_.MemberProperty{JsiiProperty: "imageTags", GoGetter: "ImageTags"},
+			_jsii_.MemberProperty{JsiiProperty: "imageUri", GoGetter: "ImageUri"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "mostRecent", GoGetter: "MostRecent"},

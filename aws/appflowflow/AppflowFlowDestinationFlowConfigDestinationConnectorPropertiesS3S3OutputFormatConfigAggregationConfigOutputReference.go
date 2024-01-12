@@ -35,6 +35,9 @@ type AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFor
 	Fqn() *string
 	InternalValue() *AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig
 	SetInternalValue(val *AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfig)
+	TargetFileSize() *float64
+	SetTargetFileSize(val *float64)
+	TargetFileSizeInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFor
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAggregationType()
+	ResetTargetFileSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfigOutputReference) TargetFileSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetFileSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfigOutputReference) TargetFileSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"targetFileSizeInput",
 		&returns,
 	)
 	return returns
@@ -241,6 +265,17 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfigOutputReference)SetTargetFileSize(val *float64) {
+	if err := j.validateSetTargetFileSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"targetFileSize",
 		val,
 	)
 }
@@ -457,6 +492,14 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 	_jsii_.InvokeVoid(
 		a,
 		"resetAggregationType",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigAggregationConfigOutputReference) ResetTargetFileSize() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTargetFileSize",
 		nil, // no parameters
 	)
 }

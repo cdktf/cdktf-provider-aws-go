@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system aws_efs_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system aws_efs_file_system}.
 type EfsFileSystem interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -71,6 +71,8 @@ type EfsFileSystem interface {
 	PerformanceMode() *string
 	SetPerformanceMode(val *string)
 	PerformanceModeInput() *string
+	Protection() EfsFileSystemProtectionOutputReference
+	ProtectionInput() *EfsFileSystemProtection
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -144,6 +146,7 @@ type EfsFileSystem interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLifecyclePolicy(value interface{})
+	PutProtection(value *EfsFileSystemProtection)
 	ResetAvailabilityZoneName()
 	ResetCreationToken()
 	ResetEncrypted()
@@ -154,6 +157,7 @@ type EfsFileSystem interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPerformanceMode()
+	ResetProtection()
 	ResetProvisionedThroughputInMibps()
 	ResetTags()
 	ResetTagsAll()
@@ -476,6 +480,26 @@ func (j *jsiiProxy_EfsFileSystem) PerformanceModeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_EfsFileSystem) Protection() EfsFileSystemProtectionOutputReference {
+	var returns EfsFileSystemProtectionOutputReference
+	_jsii_.Get(
+		j,
+		"protection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EfsFileSystem) ProtectionInput() *EfsFileSystemProtection {
+	var returns *EfsFileSystemProtection
+	_jsii_.Get(
+		j,
+		"protectionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EfsFileSystem) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -627,7 +651,7 @@ func (j *jsiiProxy_EfsFileSystem) ThroughputModeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system aws_efs_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system aws_efs_file_system} Resource.
 func NewEfsFileSystem(scope constructs.Construct, id *string, config *EfsFileSystemConfig) EfsFileSystem {
 	_init_.Initialize()
 
@@ -645,7 +669,7 @@ func NewEfsFileSystem(scope constructs.Construct, id *string, config *EfsFileSys
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/efs_file_system aws_efs_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/efs_file_system aws_efs_file_system} Resource.
 func NewEfsFileSystem_Override(e EfsFileSystem, scope constructs.Construct, id *string, config *EfsFileSystemConfig) {
 	_init_.Initialize()
 
@@ -1198,6 +1222,17 @@ func (e *jsiiProxy_EfsFileSystem) PutLifecyclePolicy(value interface{}) {
 	)
 }
 
+func (e *jsiiProxy_EfsFileSystem) PutProtection(value *EfsFileSystemProtection) {
+	if err := e.validatePutProtectionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putProtection",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EfsFileSystem) ResetAvailabilityZoneName() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1258,6 +1293,14 @@ func (e *jsiiProxy_EfsFileSystem) ResetPerformanceMode() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetPerformanceMode",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EfsFileSystem) ResetProtection() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetProtection",
 		nil, // no parameters
 	)
 }

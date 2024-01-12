@@ -59,6 +59,9 @@ type NetworkfirewallFirewallPolicyFirewallPolicyOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TlsInspectionConfigurationArn() *string
+	SetTlsInspectionConfigurationArn(val *string)
+	TlsInspectionConfigurationArnInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -94,6 +97,7 @@ type NetworkfirewallFirewallPolicyFirewallPolicyOutputReference interface {
 	ResetStatefulRuleGroupReference()
 	ResetStatelessCustomAction()
 	ResetStatelessRuleGroupReference()
+	ResetTlsInspectionConfigurationArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -339,6 +343,26 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) T
 	return returns
 }
 
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) TlsInspectionConfigurationArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsInspectionConfigurationArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) TlsInspectionConfigurationArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsInspectionConfigurationArnInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewNetworkfirewallFirewallPolicyFirewallPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkfirewallFirewallPolicyFirewallPolicyOutputReference {
 	_init_.Initialize()
@@ -451,6 +475,17 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference)Se
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference)SetTlsInspectionConfigurationArn(val *string) {
+	if err := j.validateSetTlsInspectionConfigurationArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsInspectionConfigurationArn",
 		val,
 	)
 }
@@ -740,6 +775,14 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) R
 	_jsii_.InvokeVoid(
 		n,
 		"resetStatelessRuleGroupReference",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyOutputReference) ResetTlsInspectionConfigurationArn() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTlsInspectionConfigurationArn",
 		nil, // no parameters
 	)
 }

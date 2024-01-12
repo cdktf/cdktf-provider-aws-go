@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lambda_function aws_lambda_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/lambda_function aws_lambda_function}.
 type LambdaFunction interface {
 	cdktf.TerraformResource
 	Architectures() *[]*string
@@ -86,6 +86,8 @@ type LambdaFunction interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LoggingConfig() LambdaFunctionLoggingConfigOutputReference
+	LoggingConfigInput() *LambdaFunctionLoggingConfig
 	MemorySize() *float64
 	SetMemorySize(val *float64)
 	MemorySizeInput() *float64
@@ -214,6 +216,7 @@ type LambdaFunction interface {
 	PutEphemeralStorage(value *LambdaFunctionEphemeralStorage)
 	PutFileSystemConfig(value *LambdaFunctionFileSystemConfig)
 	PutImageConfig(value *LambdaFunctionImageConfig)
+	PutLoggingConfig(value *LambdaFunctionLoggingConfig)
 	PutSnapStart(value *LambdaFunctionSnapStart)
 	PutTimeouts(value *LambdaFunctionTimeouts)
 	PutTracingConfig(value *LambdaFunctionTracingConfig)
@@ -232,6 +235,7 @@ type LambdaFunction interface {
 	ResetImageUri()
 	ResetKmsKeyArn()
 	ResetLayers()
+	ResetLoggingConfig()
 	ResetMemorySize()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -687,6 +691,26 @@ func (j *jsiiProxy_LambdaFunction) Lifecycle() *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunction) LoggingConfig() LambdaFunctionLoggingConfigOutputReference {
+	var returns LambdaFunctionLoggingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"loggingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaFunction) LoggingConfigInput() *LambdaFunctionLoggingConfig {
+	var returns *LambdaFunctionLoggingConfig
+	_jsii_.Get(
+		j,
+		"loggingConfigInput",
 		&returns,
 	)
 	return returns
@@ -1223,7 +1247,7 @@ func (j *jsiiProxy_LambdaFunction) VpcConfigInput() *LambdaFunctionVpcConfig {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lambda_function aws_lambda_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/lambda_function aws_lambda_function} Resource.
 func NewLambdaFunction(scope constructs.Construct, id *string, config *LambdaFunctionConfig) LambdaFunction {
 	_init_.Initialize()
 
@@ -1241,7 +1265,7 @@ func NewLambdaFunction(scope constructs.Construct, id *string, config *LambdaFun
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lambda_function aws_lambda_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/lambda_function aws_lambda_function} Resource.
 func NewLambdaFunction_Override(l LambdaFunction, scope constructs.Construct, id *string, config *LambdaFunctionConfig) {
 	_init_.Initialize()
 
@@ -2014,6 +2038,17 @@ func (l *jsiiProxy_LambdaFunction) PutImageConfig(value *LambdaFunctionImageConf
 	)
 }
 
+func (l *jsiiProxy_LambdaFunction) PutLoggingConfig(value *LambdaFunctionLoggingConfig) {
+	if err := l.validatePutLoggingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putLoggingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LambdaFunction) PutSnapStart(value *LambdaFunctionSnapStart) {
 	if err := l.validatePutSnapStartParameters(value); err != nil {
 		panic(err)
@@ -2166,6 +2201,14 @@ func (l *jsiiProxy_LambdaFunction) ResetLayers() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetLayers",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LambdaFunction) ResetLoggingConfig() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetLoggingConfig",
 		nil, // no parameters
 	)
 }

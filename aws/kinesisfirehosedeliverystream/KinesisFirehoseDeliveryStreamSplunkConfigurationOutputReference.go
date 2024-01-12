@@ -13,6 +13,12 @@ import (
 
 type KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference interface {
 	cdktf.ComplexObject
+	BufferingInterval() *float64
+	SetBufferingInterval(val *float64)
+	BufferingIntervalInput() *float64
+	BufferingSize() *float64
+	SetBufferingSize(val *float64)
+	BufferingSizeInput() *float64
 	CloudwatchLoggingOptions() KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptionsOutputReference
 	CloudwatchLoggingOptionsInput() *KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions
 	// the index of the complex object in a list.
@@ -91,6 +97,8 @@ type KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference interface {
 	PutCloudwatchLoggingOptions(value *KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions)
 	PutProcessingConfiguration(value *KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration)
 	PutS3Configuration(value *KinesisFirehoseDeliveryStreamSplunkConfigurationS3Configuration)
+	ResetBufferingInterval()
+	ResetBufferingSize()
 	ResetCloudwatchLoggingOptions()
 	ResetHecAcknowledgmentTimeout()
 	ResetHecEndpointType()
@@ -110,6 +118,46 @@ type KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference interface {
 // The jsii proxy struct for KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference
 type jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) BufferingInterval() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bufferingInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) BufferingIntervalInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bufferingIntervalInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) BufferingSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bufferingSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) BufferingSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bufferingSizeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) CloudwatchLoggingOptions() KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptionsOutputReference {
@@ -387,6 +435,28 @@ func NewKinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference_Override
 		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
+	)
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference)SetBufferingInterval(val *float64) {
+	if err := j.validateSetBufferingIntervalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bufferingInterval",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference)SetBufferingSize(val *float64) {
+	if err := j.validateSetBufferingSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bufferingSize",
+		val,
 	)
 }
 
@@ -727,6 +797,22 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReferen
 		k,
 		"putS3Configuration",
 		[]interface{}{value},
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) ResetBufferingInterval() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetBufferingInterval",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) ResetBufferingSize() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetBufferingSize",
+		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/route53_resolver_endpoint aws_route53_resolver_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/route53_resolver_endpoint aws_route53_resolver_endpoint}.
 type DataAwsRoute53ResolverEndpoint interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -50,6 +50,7 @@ type DataAwsRoute53ResolverEndpoint interface {
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	Protocols() *[]*string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -59,6 +60,7 @@ type DataAwsRoute53ResolverEndpoint interface {
 	ResolverEndpointId() *string
 	SetResolverEndpointId(val *string)
 	ResolverEndpointIdInput() *string
+	ResolverEndpointType() *string
 	Status() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -288,6 +290,16 @@ func (j *jsiiProxy_DataAwsRoute53ResolverEndpoint) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsRoute53ResolverEndpoint) Protocols() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"protocols",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsRoute53ResolverEndpoint) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -323,6 +335,16 @@ func (j *jsiiProxy_DataAwsRoute53ResolverEndpoint) ResolverEndpointIdInput() *st
 	_jsii_.Get(
 		j,
 		"resolverEndpointIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRoute53ResolverEndpoint) ResolverEndpointType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resolverEndpointType",
 		&returns,
 	)
 	return returns
@@ -379,7 +401,7 @@ func (j *jsiiProxy_DataAwsRoute53ResolverEndpoint) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/route53_resolver_endpoint aws_route53_resolver_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/route53_resolver_endpoint aws_route53_resolver_endpoint} Data Source.
 func NewDataAwsRoute53ResolverEndpoint(scope constructs.Construct, id *string, config *DataAwsRoute53ResolverEndpointConfig) DataAwsRoute53ResolverEndpoint {
 	_init_.Initialize()
 
@@ -397,7 +419,7 @@ func NewDataAwsRoute53ResolverEndpoint(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/route53_resolver_endpoint aws_route53_resolver_endpoint} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/route53_resolver_endpoint aws_route53_resolver_endpoint} Data Source.
 func NewDataAwsRoute53ResolverEndpoint_Override(d DataAwsRoute53ResolverEndpoint, scope constructs.Construct, id *string, config *DataAwsRoute53ResolverEndpointConfig) {
 	_init_.Initialize()
 

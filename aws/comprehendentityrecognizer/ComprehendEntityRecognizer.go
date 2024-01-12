@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer}.
 type ComprehendEntityRecognizer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -605,7 +605,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizer) VpcConfigInput() *ComprehendEntit
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer} Resource.
 func NewComprehendEntityRecognizer(scope constructs.Construct, id *string, config *ComprehendEntityRecognizerConfig) ComprehendEntityRecognizer {
 	_init_.Initialize()
 
@@ -623,7 +623,7 @@ func NewComprehendEntityRecognizer(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/comprehend_entity_recognizer aws_comprehend_entity_recognizer} Resource.
 func NewComprehendEntityRecognizer_Override(c ComprehendEntityRecognizer, scope constructs.Construct, id *string, config *ComprehendEntityRecognizerConfig) {
 	_init_.Initialize()
 

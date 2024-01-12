@@ -2160,6 +2160,44 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptions",
+		reflect.TypeOf((*KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsOutputReference",
+		reflect.TypeOf((*KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultDocumentIdFormat", GoGetter: "DefaultDocumentIdFormat"},
+			_jsii_.MemberProperty{JsiiProperty: "defaultDocumentIdFormatInput", GoGetter: "DefaultDocumentIdFormatInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_KinesisFirehoseDeliveryStreamOpensearchConfigurationDocumentIdOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference",
 		reflect.TypeOf((*KinesisFirehoseDeliveryStreamOpensearchConfigurationOutputReference)(nil)).Elem(),
@@ -2176,6 +2214,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "documentIdOptions", GoGetter: "DocumentIdOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "documentIdOptionsInput", GoGetter: "DocumentIdOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "domainArn", GoGetter: "DomainArn"},
 			_jsii_.MemberProperty{JsiiProperty: "domainArnInput", GoGetter: "DomainArnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
@@ -2198,6 +2238,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "processingConfiguration", GoGetter: "ProcessingConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "processingConfigurationInput", GoGetter: "ProcessingConfigurationInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putCloudwatchLoggingOptions", GoMethod: "PutCloudwatchLoggingOptions"},
+			_jsii_.MemberMethod{JsiiMethod: "putDocumentIdOptions", GoMethod: "PutDocumentIdOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putProcessingConfiguration", GoMethod: "PutProcessingConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putS3Configuration", GoMethod: "PutS3Configuration"},
 			_jsii_.MemberMethod{JsiiMethod: "putVpcConfig", GoMethod: "PutVpcConfig"},
@@ -2205,6 +2246,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetBufferingSize", GoMethod: "ResetBufferingSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCloudwatchLoggingOptions", GoMethod: "ResetCloudwatchLoggingOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClusterEndpoint", GoMethod: "ResetClusterEndpoint"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDocumentIdOptions", GoMethod: "ResetDocumentIdOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDomainArn", GoMethod: "ResetDomainArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIndexRotationPeriod", GoMethod: "ResetIndexRotationPeriod"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProcessingConfiguration", GoMethod: "ResetProcessingConfiguration"},
@@ -3586,6 +3628,10 @@ func init() {
 		"@cdktf/provider-aws.kinesisFirehoseDeliveryStream.KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference",
 		reflect.TypeOf((*KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "bufferingInterval", GoGetter: "BufferingInterval"},
+			_jsii_.MemberProperty{JsiiProperty: "bufferingIntervalInput", GoGetter: "BufferingIntervalInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bufferingSize", GoGetter: "BufferingSize"},
+			_jsii_.MemberProperty{JsiiProperty: "bufferingSizeInput", GoGetter: "BufferingSizeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLoggingOptions", GoGetter: "CloudwatchLoggingOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLoggingOptionsInput", GoGetter: "CloudwatchLoggingOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3618,6 +3664,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCloudwatchLoggingOptions", GoMethod: "PutCloudwatchLoggingOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putProcessingConfiguration", GoMethod: "PutProcessingConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putS3Configuration", GoMethod: "PutS3Configuration"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBufferingInterval", GoMethod: "ResetBufferingInterval"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBufferingSize", GoMethod: "ResetBufferingSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCloudwatchLoggingOptions", GoMethod: "ResetCloudwatchLoggingOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHecAcknowledgmentTimeout", GoMethod: "ResetHecAcknowledgmentTimeout"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHecEndpointType", GoMethod: "ResetHecEndpointType"},

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_instance aws_neptune_cluster_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/neptune_cluster_instance aws_neptune_cluster_instance}.
 type NeptuneClusterInstance interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -112,6 +112,7 @@ type NeptuneClusterInstance interface {
 	// Experimental.
 	RawOverrides() interface{}
 	StorageEncrypted() cdktf.IResolvable
+	StorageType() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -740,6 +741,16 @@ func (j *jsiiProxy_NeptuneClusterInstance) StorageEncrypted() cdktf.IResolvable 
 	return returns
 }
 
+func (j *jsiiProxy_NeptuneClusterInstance) StorageType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NeptuneClusterInstance) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -841,7 +852,7 @@ func (j *jsiiProxy_NeptuneClusterInstance) Writer() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_instance aws_neptune_cluster_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/neptune_cluster_instance aws_neptune_cluster_instance} Resource.
 func NewNeptuneClusterInstance(scope constructs.Construct, id *string, config *NeptuneClusterInstanceConfig) NeptuneClusterInstance {
 	_init_.Initialize()
 
@@ -859,7 +870,7 @@ func NewNeptuneClusterInstance(scope constructs.Construct, id *string, config *N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/neptune_cluster_instance aws_neptune_cluster_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/neptune_cluster_instance aws_neptune_cluster_instance} Resource.
 func NewNeptuneClusterInstance_Override(n NeptuneClusterInstance, scope constructs.Construct, id *string, config *NeptuneClusterInstanceConfig) {
 	_init_.Initialize()
 

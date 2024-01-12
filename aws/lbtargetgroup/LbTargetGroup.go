@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lb_target_group aws_lb_target_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/lb_target_group aws_lb_target_group}.
 type LbTargetGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -65,6 +65,9 @@ type LbTargetGroup interface {
 	LoadBalancingAlgorithmType() *string
 	SetLoadBalancingAlgorithmType(val *string)
 	LoadBalancingAlgorithmTypeInput() *string
+	LoadBalancingAnomalyMitigation() *string
+	SetLoadBalancingAnomalyMitigation(val *string)
+	LoadBalancingAnomalyMitigationInput() *string
 	LoadBalancingCrossZoneEnabled() *string
 	SetLoadBalancingCrossZoneEnabled(val *string)
 	LoadBalancingCrossZoneEnabledInput() *string
@@ -182,6 +185,7 @@ type LbTargetGroup interface {
 	ResetIpAddressType()
 	ResetLambdaMultiValueHeadersEnabled()
 	ResetLoadBalancingAlgorithmType()
+	ResetLoadBalancingAnomalyMitigation()
 	ResetLoadBalancingCrossZoneEnabled()
 	ResetName()
 	ResetNamePrefix()
@@ -464,6 +468,26 @@ func (j *jsiiProxy_LbTargetGroup) LoadBalancingAlgorithmTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"loadBalancingAlgorithmTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbTargetGroup) LoadBalancingAnomalyMitigation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loadBalancingAnomalyMitigation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbTargetGroup) LoadBalancingAnomalyMitigationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loadBalancingAnomalyMitigationInput",
 		&returns,
 	)
 	return returns
@@ -860,7 +884,7 @@ func (j *jsiiProxy_LbTargetGroup) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lb_target_group aws_lb_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/lb_target_group aws_lb_target_group} Resource.
 func NewLbTargetGroup(scope constructs.Construct, id *string, config *LbTargetGroupConfig) LbTargetGroup {
 	_init_.Initialize()
 
@@ -878,7 +902,7 @@ func NewLbTargetGroup(scope constructs.Construct, id *string, config *LbTargetGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/lb_target_group aws_lb_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/lb_target_group aws_lb_target_group} Resource.
 func NewLbTargetGroup_Override(l LbTargetGroup, scope constructs.Construct, id *string, config *LbTargetGroupConfig) {
 	_init_.Initialize()
 
@@ -1000,6 +1024,17 @@ func (j *jsiiProxy_LbTargetGroup)SetLoadBalancingAlgorithmType(val *string) {
 	_jsii_.Set(
 		j,
 		"loadBalancingAlgorithmType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LbTargetGroup)SetLoadBalancingAnomalyMitigation(val *string) {
+	if err := j.validateSetLoadBalancingAnomalyMitigationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"loadBalancingAnomalyMitigation",
 		val,
 	)
 }
@@ -1615,6 +1650,14 @@ func (l *jsiiProxy_LbTargetGroup) ResetLoadBalancingAlgorithmType() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetLoadBalancingAlgorithmType",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbTargetGroup) ResetLoadBalancingAnomalyMitigation() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetLoadBalancingAnomalyMitigation",
 		nil, // no parameters
 	)
 }

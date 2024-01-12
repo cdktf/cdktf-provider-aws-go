@@ -83,6 +83,10 @@ func (n *jsiiProxy_NetworkfirewallFirewall) validatePutSubnetMappingParameters(v
 	return nil
 }
 
+func (n *jsiiProxy_NetworkfirewallFirewall) validatePutTimeoutsParameters(value *NetworkfirewallFirewallTimeouts) error {
+	return nil
+}
+
 func validateNetworkfirewallFirewall_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

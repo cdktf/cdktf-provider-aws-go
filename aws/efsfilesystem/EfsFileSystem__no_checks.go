@@ -79,6 +79,10 @@ func (e *jsiiProxy_EfsFileSystem) validatePutLifecyclePolicyParameters(value int
 	return nil
 }
 
+func (e *jsiiProxy_EfsFileSystem) validatePutProtectionParameters(value *EfsFileSystemProtection) error {
+	return nil
+}
+
 func validateEfsFileSystem_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/route53_resolver_endpoint aws_route53_resolver_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/route53_resolver_endpoint aws_route53_resolver_endpoint}.
 type Route53ResolverEndpoint interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -58,6 +58,9 @@ type Route53ResolverEndpoint interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Protocols() *[]*string
+	SetProtocols(val *[]*string)
+	ProtocolsInput() *[]*string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -68,6 +71,9 @@ type Route53ResolverEndpoint interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ResolverEndpointType() *string
+	SetResolverEndpointType(val *string)
+	ResolverEndpointTypeInput() *string
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
@@ -135,6 +141,8 @@ type Route53ResolverEndpoint interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProtocols()
+	ResetResolverEndpointType()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -356,6 +364,26 @@ func (j *jsiiProxy_Route53ResolverEndpoint) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_Route53ResolverEndpoint) Protocols() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"protocols",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53ResolverEndpoint) ProtocolsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"protocolsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Route53ResolverEndpoint) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -381,6 +409,26 @@ func (j *jsiiProxy_Route53ResolverEndpoint) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53ResolverEndpoint) ResolverEndpointType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resolverEndpointType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53ResolverEndpoint) ResolverEndpointTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resolverEndpointTypeInput",
 		&returns,
 	)
 	return returns
@@ -497,7 +545,7 @@ func (j *jsiiProxy_Route53ResolverEndpoint) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/route53_resolver_endpoint aws_route53_resolver_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/route53_resolver_endpoint aws_route53_resolver_endpoint} Resource.
 func NewRoute53ResolverEndpoint(scope constructs.Construct, id *string, config *Route53ResolverEndpointConfig) Route53ResolverEndpoint {
 	_init_.Initialize()
 
@@ -515,7 +563,7 @@ func NewRoute53ResolverEndpoint(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/route53_resolver_endpoint aws_route53_resolver_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/route53_resolver_endpoint aws_route53_resolver_endpoint} Resource.
 func NewRoute53ResolverEndpoint_Override(r Route53ResolverEndpoint, scope constructs.Construct, id *string, config *Route53ResolverEndpointConfig) {
 	_init_.Initialize()
 
@@ -608,6 +656,17 @@ func (j *jsiiProxy_Route53ResolverEndpoint)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Route53ResolverEndpoint)SetProtocols(val *[]*string) {
+	if err := j.validateSetProtocolsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"protocols",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Route53ResolverEndpoint)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
@@ -623,6 +682,17 @@ func (j *jsiiProxy_Route53ResolverEndpoint)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Route53ResolverEndpoint)SetResolverEndpointType(val *string) {
+	if err := j.validateSetResolverEndpointTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resolverEndpointType",
 		val,
 	)
 }
@@ -1055,6 +1125,22 @@ func (r *jsiiProxy_Route53ResolverEndpoint) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53ResolverEndpoint) ResetProtocols() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetProtocols",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53ResolverEndpoint) ResetResolverEndpointType() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetResolverEndpointType",
 		nil, // no parameters
 	)
 }

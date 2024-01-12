@@ -143,6 +143,10 @@ func (j *jsiiProxy_AlbTargetGroup) validateSetLoadBalancingAlgorithmTypeParamete
 	return nil
 }
 
+func (j *jsiiProxy_AlbTargetGroup) validateSetLoadBalancingAnomalyMitigationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AlbTargetGroup) validateSetLoadBalancingCrossZoneEnabledParameters(val *string) error {
 	return nil
 }

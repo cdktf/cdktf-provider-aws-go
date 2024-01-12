@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/batch_compute_environment aws_batch_compute_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/batch_compute_environment aws_batch_compute_environment}.
 type DataAwsBatchComputeEnvironment interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -69,6 +69,7 @@ type DataAwsBatchComputeEnvironment interface {
 	// Experimental.
 	TerraformResourceType() *string
 	Type() *string
+	UpdatePolicy() DataAwsBatchComputeEnvironmentUpdatePolicyList
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -388,8 +389,18 @@ func (j *jsiiProxy_DataAwsBatchComputeEnvironment) Type() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsBatchComputeEnvironment) UpdatePolicy() DataAwsBatchComputeEnvironmentUpdatePolicyList {
+	var returns DataAwsBatchComputeEnvironmentUpdatePolicyList
+	_jsii_.Get(
+		j,
+		"updatePolicy",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/batch_compute_environment aws_batch_compute_environment} Data Source.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/batch_compute_environment aws_batch_compute_environment} Data Source.
 func NewDataAwsBatchComputeEnvironment(scope constructs.Construct, id *string, config *DataAwsBatchComputeEnvironmentConfig) DataAwsBatchComputeEnvironment {
 	_init_.Initialize()
 
@@ -407,7 +418,7 @@ func NewDataAwsBatchComputeEnvironment(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/data-sources/batch_compute_environment aws_batch_compute_environment} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/batch_compute_environment aws_batch_compute_environment} Data Source.
 func NewDataAwsBatchComputeEnvironment_Override(d DataAwsBatchComputeEnvironment, scope constructs.Construct, id *string, config *DataAwsBatchComputeEnvironmentConfig) {
 	_init_.Initialize()
 

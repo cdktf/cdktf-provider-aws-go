@@ -7,7 +7,7 @@ package wafv2rulegroup
 type Wafv2RuleGroupRuleStatementRateBasedStatementCustomKeyQueryString struct {
 	// text_transformation block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/wafv2_rule_group#text_transformation Wafv2RuleGroup#text_transformation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/wafv2_rule_group#text_transformation Wafv2RuleGroup#text_transformation}
 	TextTransformation interface{} `field:"required" json:"textTransformation" yaml:"textTransformation"`
 }
 

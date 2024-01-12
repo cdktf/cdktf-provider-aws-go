@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline aws_codepipeline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline aws_codepipeline}.
 type Codepipeline interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -54,6 +54,9 @@ type Codepipeline interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PipelineType() *string
+	SetPipelineType(val *string)
+	PipelineTypeInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -81,6 +84,8 @@ type Codepipeline interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Variable() CodepipelineVariableList
+	VariableInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -126,12 +131,15 @@ type Codepipeline interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutArtifactStore(value interface{})
 	PutStage(value interface{})
+	PutVariable(value interface{})
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPipelineType()
 	ResetTags()
 	ResetTagsAll()
+	ResetVariable()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -320,6 +328,26 @@ func (j *jsiiProxy_Codepipeline) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_Codepipeline) PipelineType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pipelineType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Codepipeline) PipelineTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pipelineTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Codepipeline) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -460,8 +488,28 @@ func (j *jsiiProxy_Codepipeline) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Codepipeline) Variable() CodepipelineVariableList {
+	var returns CodepipelineVariableList
+	_jsii_.Get(
+		j,
+		"variable",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline aws_codepipeline} Resource.
+func (j *jsiiProxy_Codepipeline) VariableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"variableInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline aws_codepipeline} Resource.
 func NewCodepipeline(scope constructs.Construct, id *string, config *CodepipelineConfig) Codepipeline {
 	_init_.Initialize()
 
@@ -479,7 +527,7 @@ func NewCodepipeline(scope constructs.Construct, id *string, config *Codepipelin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/codepipeline aws_codepipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codepipeline aws_codepipeline} Resource.
 func NewCodepipeline_Override(c Codepipeline, scope constructs.Construct, id *string, config *CodepipelineConfig) {
 	_init_.Initialize()
 
@@ -557,6 +605,17 @@ func (j *jsiiProxy_Codepipeline)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Codepipeline)SetPipelineType(val *string) {
+	if err := j.validateSetPipelineTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pipelineType",
 		val,
 	)
 }
@@ -988,6 +1047,17 @@ func (c *jsiiProxy_Codepipeline) PutStage(value interface{}) {
 	)
 }
 
+func (c *jsiiProxy_Codepipeline) PutVariable(value interface{}) {
+	if err := c.validatePutVariableParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putVariable",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_Codepipeline) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1004,6 +1074,14 @@ func (c *jsiiProxy_Codepipeline) ResetOverrideLogicalId() {
 	)
 }
 
+func (c *jsiiProxy_Codepipeline) ResetPipelineType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPipelineType",
+		nil, // no parameters
+	)
+}
+
 func (c *jsiiProxy_Codepipeline) ResetTags() {
 	_jsii_.InvokeVoid(
 		c,
@@ -1016,6 +1094,14 @@ func (c *jsiiProxy_Codepipeline) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Codepipeline) ResetVariable() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetVariable",
 		nil, // no parameters
 	)
 }

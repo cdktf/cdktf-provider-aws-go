@@ -83,6 +83,10 @@ func (b *jsiiProxy_BatchComputeEnvironment) validatePutEksConfigurationParameter
 	return nil
 }
 
+func (b *jsiiProxy_BatchComputeEnvironment) validatePutUpdatePolicyParameters(value *BatchComputeEnvironmentUpdatePolicy) error {
+	return nil
+}
+
 func validateBatchComputeEnvironment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

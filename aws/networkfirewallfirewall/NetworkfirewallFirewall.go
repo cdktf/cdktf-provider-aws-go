@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall}.
 type NetworkfirewallFirewall interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -94,6 +94,8 @@ type NetworkfirewallFirewall interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() NetworkfirewallFirewallTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	UpdateToken() *string
 	VpcId() *string
 	SetVpcId(val *string)
@@ -143,6 +145,7 @@ type NetworkfirewallFirewall interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutEncryptionConfiguration(value *NetworkfirewallFirewallEncryptionConfiguration)
 	PutSubnetMapping(value interface{})
+	PutTimeouts(value *NetworkfirewallFirewallTimeouts)
 	ResetDeleteProtection()
 	ResetDescription()
 	ResetEncryptionConfiguration()
@@ -154,6 +157,7 @@ type NetworkfirewallFirewall interface {
 	ResetSubnetChangeProtection()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -572,6 +576,26 @@ func (j *jsiiProxy_NetworkfirewallFirewall) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_NetworkfirewallFirewall) Timeouts() NetworkfirewallFirewallTimeoutsOutputReference {
+	var returns NetworkfirewallFirewallTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NetworkfirewallFirewall) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NetworkfirewallFirewall) UpdateToken() *string {
 	var returns *string
 	_jsii_.Get(
@@ -603,7 +627,7 @@ func (j *jsiiProxy_NetworkfirewallFirewall) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall} Resource.
 func NewNetworkfirewallFirewall(scope constructs.Construct, id *string, config *NetworkfirewallFirewallConfig) NetworkfirewallFirewall {
 	_init_.Initialize()
 
@@ -621,7 +645,7 @@ func NewNetworkfirewallFirewall(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.31.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/networkfirewall_firewall aws_networkfirewall_firewall} Resource.
 func NewNetworkfirewallFirewall_Override(n NetworkfirewallFirewall, scope constructs.Construct, id *string, config *NetworkfirewallFirewallConfig) {
 	_init_.Initialize()
 
@@ -1185,6 +1209,17 @@ func (n *jsiiProxy_NetworkfirewallFirewall) PutSubnetMapping(value interface{}) 
 	)
 }
 
+func (n *jsiiProxy_NetworkfirewallFirewall) PutTimeouts(value *NetworkfirewallFirewallTimeouts) {
+	if err := n.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkfirewallFirewall) ResetDeleteProtection() {
 	_jsii_.InvokeVoid(
 		n,
@@ -1253,6 +1288,14 @@ func (n *jsiiProxy_NetworkfirewallFirewall) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkfirewallFirewall) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

@@ -554,6 +554,14 @@ func (j *jsiiProxy_KmsKey) validateSetTagsAllParameters(val *map[string]*string)
 	return nil
 }
 
+func (j *jsiiProxy_KmsKey) validateSetXksKeyIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewKmsKeyParameters(scope constructs.Construct, id *string, config *KmsKeyConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

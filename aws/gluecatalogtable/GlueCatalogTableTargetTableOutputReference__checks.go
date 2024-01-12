@@ -198,6 +198,14 @@ func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference) validateSetNamePa
 	return nil
 }
 
+func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference) validateSetRegionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GlueCatalogTableTargetTableOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
