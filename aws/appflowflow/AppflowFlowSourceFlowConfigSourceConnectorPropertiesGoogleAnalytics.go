@@ -5,7 +5,7 @@ package appflowflow
 
 
 type AppflowFlowSourceFlowConfigSourceConnectorPropertiesGoogleAnalytics struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/appflow_flow#object AppflowFlow#object}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/appflow_flow#object AppflowFlow#object}.
 	Object *string `field:"required" json:"object" yaml:"object"`
 }
 

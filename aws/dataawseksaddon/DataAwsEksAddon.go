@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/eks_addon aws_eks_addon}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/eks_addon aws_eks_addon}.
 type DataAwsEksAddon interface {
 	cdktf.TerraformDataSource
 	AddonName() *string
@@ -401,7 +401,7 @@ func (j *jsiiProxy_DataAwsEksAddon) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/eks_addon aws_eks_addon} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/eks_addon aws_eks_addon} Data Source.
 func NewDataAwsEksAddon(scope constructs.Construct, id *string, config *DataAwsEksAddonConfig) DataAwsEksAddon {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewDataAwsEksAddon(scope constructs.Construct, id *string, config *DataAwsE
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/eks_addon aws_eks_addon} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/eks_addon aws_eks_addon} Data Source.
 func NewDataAwsEksAddon_Override(d DataAwsEksAddon, scope constructs.Construct, id *string, config *DataAwsEksAddonConfig) {
 	_init_.Initialize()
 

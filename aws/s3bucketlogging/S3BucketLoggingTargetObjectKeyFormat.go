@@ -7,11 +7,11 @@ package s3bucketlogging
 type S3BucketLoggingTargetObjectKeyFormat struct {
 	// partitioned_prefix block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/s3_bucket_logging#partitioned_prefix S3BucketLoggingA#partitioned_prefix}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/s3_bucket_logging#partitioned_prefix S3BucketLoggingA#partitioned_prefix}
 	PartitionedPrefix *S3BucketLoggingTargetObjectKeyFormatPartitionedPrefix `field:"optional" json:"partitionedPrefix" yaml:"partitionedPrefix"`
 	// simple_prefix block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/s3_bucket_logging#simple_prefix S3BucketLoggingA#simple_prefix}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/s3_bucket_logging#simple_prefix S3BucketLoggingA#simple_prefix}
 	SimplePrefix *S3BucketLoggingTargetObjectKeyFormatSimplePrefix `field:"optional" json:"simplePrefix" yaml:"simplePrefix"`
 }
 

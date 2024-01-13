@@ -63,7 +63,7 @@ func (j *jsiiProxy_IotCaCertificateRegistrationConfigOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_IotCaCertificateRegistrationConfigOutputReference) validateSetRoleArnParameters(val interface{}) error {
+func (j *jsiiProxy_IotCaCertificateRegistrationConfigOutputReference) validateSetRoleArnParameters(val *string) error {
 	return nil
 }
 

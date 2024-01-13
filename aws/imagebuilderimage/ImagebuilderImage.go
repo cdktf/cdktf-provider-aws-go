@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/imagebuilder_image aws_imagebuilder_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/imagebuilder_image aws_imagebuilder_image}.
 type ImagebuilderImage interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -626,7 +626,7 @@ func (j *jsiiProxy_ImagebuilderImage) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/imagebuilder_image aws_imagebuilder_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/imagebuilder_image aws_imagebuilder_image} Resource.
 func NewImagebuilderImage(scope constructs.Construct, id *string, config *ImagebuilderImageConfig) ImagebuilderImage {
 	_init_.Initialize()
 
@@ -644,7 +644,7 @@ func NewImagebuilderImage(scope constructs.Construct, id *string, config *Imageb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/imagebuilder_image aws_imagebuilder_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/imagebuilder_image aws_imagebuilder_image} Resource.
 func NewImagebuilderImage_Override(i ImagebuilderImage, scope constructs.Construct, id *string, config *ImagebuilderImageConfig) {
 	_init_.Initialize()
 

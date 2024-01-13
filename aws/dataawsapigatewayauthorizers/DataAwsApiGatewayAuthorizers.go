@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/api_gateway_authorizers aws_api_gateway_authorizers}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/api_gateway_authorizers aws_api_gateway_authorizers}.
 type DataAwsApiGatewayAuthorizers interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -299,7 +299,7 @@ func (j *jsiiProxy_DataAwsApiGatewayAuthorizers) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/api_gateway_authorizers aws_api_gateway_authorizers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/api_gateway_authorizers aws_api_gateway_authorizers} Data Source.
 func NewDataAwsApiGatewayAuthorizers(scope constructs.Construct, id *string, config *DataAwsApiGatewayAuthorizersConfig) DataAwsApiGatewayAuthorizers {
 	_init_.Initialize()
 
@@ -317,7 +317,7 @@ func NewDataAwsApiGatewayAuthorizers(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/api_gateway_authorizers aws_api_gateway_authorizers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/api_gateway_authorizers aws_api_gateway_authorizers} Data Source.
 func NewDataAwsApiGatewayAuthorizers_Override(d DataAwsApiGatewayAuthorizers, scope constructs.Construct, id *string, config *DataAwsApiGatewayAuthorizersConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/ecs_capacity_provider aws_ecs_capacity_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/ecs_capacity_provider aws_ecs_capacity_provider}.
 type EcsCapacityProvider interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -415,7 +415,7 @@ func (j *jsiiProxy_EcsCapacityProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/ecs_capacity_provider aws_ecs_capacity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/ecs_capacity_provider aws_ecs_capacity_provider} Resource.
 func NewEcsCapacityProvider(scope constructs.Construct, id *string, config *EcsCapacityProviderConfig) EcsCapacityProvider {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewEcsCapacityProvider(scope constructs.Construct, id *string, config *EcsC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/ecs_capacity_provider aws_ecs_capacity_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/ecs_capacity_provider aws_ecs_capacity_provider} Resource.
 func NewEcsCapacityProvider_Override(e EcsCapacityProvider, scope constructs.Construct, id *string, config *EcsCapacityProviderConfig) {
 	_init_.Initialize()
 

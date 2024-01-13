@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group}.
 type CodeguruprofilerProfilingGroup interface {
 	cdktf.TerraformResource
 	AgentOrchestrationConfig() CodeguruprofilerProfilingGroupAgentOrchestrationConfigList
@@ -414,7 +414,7 @@ func (j *jsiiProxy_CodeguruprofilerProfilingGroup) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group} Resource.
 func NewCodeguruprofilerProfilingGroup(scope constructs.Construct, id *string, config *CodeguruprofilerProfilingGroupConfig) CodeguruprofilerProfilingGroup {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewCodeguruprofilerProfilingGroup(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/codeguruprofiler_profiling_group aws_codeguruprofiler_profiling_group} Resource.
 func NewCodeguruprofilerProfilingGroup_Override(c CodeguruprofilerProfilingGroup, scope constructs.Construct, id *string, config *CodeguruprofilerProfilingGroupConfig) {
 	_init_.Initialize()
 

@@ -5,7 +5,7 @@ package opsworksstack
 
 
 type OpsworksStackTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/opsworks_stack#create OpsworksStack#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/opsworks_stack#create OpsworksStack#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

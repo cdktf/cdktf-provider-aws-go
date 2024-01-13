@@ -5,7 +5,7 @@ package dataawsroute
 
 
 type DataAwsRouteTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/route#read DataAwsRoute#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/route#read DataAwsRoute#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

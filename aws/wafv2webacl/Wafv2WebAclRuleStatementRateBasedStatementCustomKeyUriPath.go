@@ -7,7 +7,7 @@ package wafv2webacl
 type Wafv2WebAclRuleStatementRateBasedStatementCustomKeyUriPath struct {
 	// text_transformation block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/wafv2_web_acl#text_transformation Wafv2WebAcl#text_transformation}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/wafv2_web_acl#text_transformation Wafv2WebAcl#text_transformation}
 	TextTransformation interface{} `field:"required" json:"textTransformation" yaml:"textTransformation"`
 }
 

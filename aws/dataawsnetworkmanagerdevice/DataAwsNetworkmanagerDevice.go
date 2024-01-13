@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/networkmanager_device aws_networkmanager_device}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/networkmanager_device aws_networkmanager_device}.
 type DataAwsNetworkmanagerDevice interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -434,7 +434,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerDevice) Vendor() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/networkmanager_device aws_networkmanager_device} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/networkmanager_device aws_networkmanager_device} Data Source.
 func NewDataAwsNetworkmanagerDevice(scope constructs.Construct, id *string, config *DataAwsNetworkmanagerDeviceConfig) DataAwsNetworkmanagerDevice {
 	_init_.Initialize()
 
@@ -452,7 +452,7 @@ func NewDataAwsNetworkmanagerDevice(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/data-sources/networkmanager_device aws_networkmanager_device} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/networkmanager_device aws_networkmanager_device} Data Source.
 func NewDataAwsNetworkmanagerDevice_Override(d DataAwsNetworkmanagerDevice, scope constructs.Construct, id *string, config *DataAwsNetworkmanagerDeviceConfig) {
 	_init_.Initialize()
 

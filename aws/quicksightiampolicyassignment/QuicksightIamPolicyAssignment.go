@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/quicksight_iam_policy_assignment aws_quicksight_iam_policy_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/quicksight_iam_policy_assignment aws_quicksight_iam_policy_assignment}.
 type QuicksightIamPolicyAssignment interface {
 	cdktf.TerraformResource
 	AssignmentId() *string
@@ -450,7 +450,7 @@ func (j *jsiiProxy_QuicksightIamPolicyAssignment) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/quicksight_iam_policy_assignment aws_quicksight_iam_policy_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/quicksight_iam_policy_assignment aws_quicksight_iam_policy_assignment} Resource.
 func NewQuicksightIamPolicyAssignment(scope constructs.Construct, id *string, config *QuicksightIamPolicyAssignmentConfig) QuicksightIamPolicyAssignment {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewQuicksightIamPolicyAssignment(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.0/docs/resources/quicksight_iam_policy_assignment aws_quicksight_iam_policy_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/quicksight_iam_policy_assignment aws_quicksight_iam_policy_assignment} Resource.
 func NewQuicksightIamPolicyAssignment_Override(q QuicksightIamPolicyAssignment, scope constructs.Construct, id *string, config *QuicksightIamPolicyAssignmentConfig) {
 	_init_.Initialize()
 

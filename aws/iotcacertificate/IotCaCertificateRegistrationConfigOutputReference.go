@@ -32,9 +32,9 @@ type IotCaCertificateRegistrationConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *IotCaCertificateRegistrationConfig
 	SetInternalValue(val *IotCaCertificateRegistrationConfig)
-	RoleArn() interface{}
-	SetRoleArn(val interface{})
-	RoleArnInput() interface{}
+	RoleArn() *string
+	SetRoleArn(val *string)
+	RoleArnInput() *string
 	TemplateBody() *string
 	SetTemplateBody(val *string)
 	TemplateBodyInput() *string
@@ -141,8 +141,8 @@ func (j *jsiiProxy_IotCaCertificateRegistrationConfigOutputReference) InternalVa
 	return returns
 }
 
-func (j *jsiiProxy_IotCaCertificateRegistrationConfigOutputReference) RoleArn() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotCaCertificateRegistrationConfigOutputReference) RoleArn() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"roleArn",
@@ -151,8 +151,8 @@ func (j *jsiiProxy_IotCaCertificateRegistrationConfigOutputReference) RoleArn() 
 	return returns
 }
 
-func (j *jsiiProxy_IotCaCertificateRegistrationConfigOutputReference) RoleArnInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_IotCaCertificateRegistrationConfigOutputReference) RoleArnInput() *string {
+	var returns *string
 	_jsii_.Get(
 		j,
 		"roleArnInput",
@@ -282,7 +282,7 @@ func (j *jsiiProxy_IotCaCertificateRegistrationConfigOutputReference)SetInternal
 	)
 }
 
-func (j *jsiiProxy_IotCaCertificateRegistrationConfigOutputReference)SetRoleArn(val interface{}) {
+func (j *jsiiProxy_IotCaCertificateRegistrationConfigOutputReference)SetRoleArn(val *string) {
 	if err := j.validateSetRoleArnParameters(val); err != nil {
 		panic(err)
 	}
