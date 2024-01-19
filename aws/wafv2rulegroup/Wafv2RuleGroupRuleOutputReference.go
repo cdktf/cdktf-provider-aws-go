@@ -44,8 +44,9 @@ type Wafv2RuleGroupRuleOutputReference interface {
 	PriorityInput() *float64
 	RuleLabel() Wafv2RuleGroupRuleRuleLabelList
 	RuleLabelInput() interface{}
-	Statement() Wafv2RuleGroupRuleStatementOutputReference
-	StatementInput() *Wafv2RuleGroupRuleStatement
+	Statement() interface{}
+	SetStatement(val interface{})
+	StatementInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -83,10 +84,10 @@ type Wafv2RuleGroupRuleOutputReference interface {
 	PutAction(value *Wafv2RuleGroupRuleAction)
 	PutCaptchaConfig(value *Wafv2RuleGroupRuleCaptchaConfig)
 	PutRuleLabel(value interface{})
-	PutStatement(value *Wafv2RuleGroupRuleStatement)
 	PutVisibilityConfig(value *Wafv2RuleGroupRuleVisibilityConfig)
 	ResetCaptchaConfig()
 	ResetRuleLabel()
+	ResetStatement()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -252,8 +253,8 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) RuleLabelInput() interface
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) Statement() Wafv2RuleGroupRuleStatementOutputReference {
-	var returns Wafv2RuleGroupRuleStatementOutputReference
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) Statement() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"statement",
@@ -262,8 +263,8 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) Statement() Wafv2RuleGroup
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) StatementInput() *Wafv2RuleGroupRuleStatement {
-	var returns *Wafv2RuleGroupRuleStatement
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) StatementInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"statementInput",
@@ -391,6 +392,17 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference)SetPriority(val *float64) {
 	_jsii_.Set(
 		j,
 		"priority",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference)SetStatement(val interface{}) {
+	if err := j.validateSetStatementParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"statement",
 		val,
 	)
 }
@@ -636,17 +648,6 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) PutRuleLabel(value interfa
 	)
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) PutStatement(value *Wafv2RuleGroupRuleStatement) {
-	if err := w.validatePutStatementParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		w,
-		"putStatement",
-		[]interface{}{value},
-	)
-}
-
 func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) PutVisibilityConfig(value *Wafv2RuleGroupRuleVisibilityConfig) {
 	if err := w.validatePutVisibilityConfigParameters(value); err != nil {
 		panic(err)
@@ -670,6 +671,14 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) ResetRuleLabel() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetRuleLabel",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) ResetStatement() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetStatement",
 		nil, // no parameters
 	)
 }

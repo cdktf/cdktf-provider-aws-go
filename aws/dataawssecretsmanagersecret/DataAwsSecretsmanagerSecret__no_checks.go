@@ -91,6 +91,10 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecret) validateSetNameParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsSecretsmanagerSecret) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewDataAwsSecretsmanagerSecretParameters(scope constructs.Construct, id *string, config *DataAwsSecretsmanagerSecretConfig) error {
 	return nil
 }

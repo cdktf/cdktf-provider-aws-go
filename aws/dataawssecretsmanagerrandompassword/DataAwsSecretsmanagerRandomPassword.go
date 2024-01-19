@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password}.
 type DataAwsSecretsmanagerRandomPassword interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -70,8 +70,6 @@ type DataAwsSecretsmanagerRandomPassword interface {
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
 	RandomPassword() *string
-	SetRandomPassword(val *string)
-	RandomPasswordInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	RequireEachIncludedType() interface{}
@@ -119,7 +117,6 @@ type DataAwsSecretsmanagerRandomPassword interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPasswordLength()
-	ResetRandomPassword()
 	ResetRequireEachIncludedType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -410,16 +407,6 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) RandomPassword() *string
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) RandomPasswordInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"randomPasswordInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -481,7 +468,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password} Data Source.
 func NewDataAwsSecretsmanagerRandomPassword(scope constructs.Construct, id *string, config *DataAwsSecretsmanagerRandomPasswordConfig) DataAwsSecretsmanagerRandomPassword {
 	_init_.Initialize()
 
@@ -499,7 +486,7 @@ func NewDataAwsSecretsmanagerRandomPassword(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/secretsmanager_random_password aws_secretsmanager_random_password} Data Source.
 func NewDataAwsSecretsmanagerRandomPassword_Override(d DataAwsSecretsmanagerRandomPassword, scope constructs.Construct, id *string, config *DataAwsSecretsmanagerRandomPasswordConfig) {
 	_init_.Initialize()
 
@@ -640,17 +627,6 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetProvider(val cdktf.Ter
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword)SetRandomPassword(val *string) {
-	if err := j.validateSetRandomPasswordParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"randomPassword",
 		val,
 	)
 }
@@ -1019,14 +995,6 @@ func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ResetPasswordLength() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPasswordLength",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAwsSecretsmanagerRandomPassword) ResetRandomPassword() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetRandomPassword",
 		nil, // no parameters
 	)
 }

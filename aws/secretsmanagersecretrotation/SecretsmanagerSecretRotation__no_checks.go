@@ -115,6 +115,10 @@ func (j *jsiiProxy_SecretsmanagerSecretRotation) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_SecretsmanagerSecretRotation) validateSetRotateImmediatelyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_SecretsmanagerSecretRotation) validateSetRotationLambdaArnParameters(val *string) error {
 	return nil
 }

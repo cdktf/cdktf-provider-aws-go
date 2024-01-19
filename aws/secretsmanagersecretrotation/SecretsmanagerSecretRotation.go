@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation}.
 type SecretsmanagerSecretRotation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -58,6 +58,9 @@ type SecretsmanagerSecretRotation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RotateImmediately() interface{}
+	SetRotateImmediately(val interface{})
+	RotateImmediatelyInput() interface{}
 	RotationEnabled() cdktf.IResolvable
 	RotationLambdaArn() *string
 	SetRotationLambdaArn(val *string)
@@ -121,6 +124,7 @@ type SecretsmanagerSecretRotation interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRotateImmediately()
 	ResetRotationLambdaArn()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -290,6 +294,26 @@ func (j *jsiiProxy_SecretsmanagerSecretRotation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_SecretsmanagerSecretRotation) RotateImmediately() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rotateImmediately",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecretsmanagerSecretRotation) RotateImmediatelyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rotateImmediatelyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecretsmanagerSecretRotation) RotationEnabled() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -391,7 +415,7 @@ func (j *jsiiProxy_SecretsmanagerSecretRotation) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation} Resource.
 func NewSecretsmanagerSecretRotation(scope constructs.Construct, id *string, config *SecretsmanagerSecretRotationConfig) SecretsmanagerSecretRotation {
 	_init_.Initialize()
 
@@ -409,7 +433,7 @@ func NewSecretsmanagerSecretRotation(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/secretsmanager_secret_rotation aws_secretsmanager_secret_rotation} Resource.
 func NewSecretsmanagerSecretRotation_Override(s SecretsmanagerSecretRotation, scope constructs.Construct, id *string, config *SecretsmanagerSecretRotationConfig) {
 	_init_.Initialize()
 
@@ -495,6 +519,17 @@ func (j *jsiiProxy_SecretsmanagerSecretRotation)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SecretsmanagerSecretRotation)SetRotateImmediately(val interface{}) {
+	if err := j.validateSetRotateImmediatelyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotateImmediately",
 		val,
 	)
 }
@@ -897,6 +932,14 @@ func (s *jsiiProxy_SecretsmanagerSecretRotation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecretsmanagerSecretRotation) ResetRotateImmediately() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRotateImmediately",
 		nil, // no parameters
 	)
 }

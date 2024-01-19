@@ -38,6 +38,9 @@ type BackupPlanRuleCopyActionLifecycleOutputReference interface {
 	Fqn() *string
 	InternalValue() *BackupPlanRuleCopyActionLifecycle
 	SetInternalValue(val *BackupPlanRuleCopyActionLifecycle)
+	OptInToArchiveForSupportedResources() interface{}
+	SetOptInToArchiveForSupportedResources(val interface{})
+	OptInToArchiveForSupportedResourcesInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type BackupPlanRuleCopyActionLifecycleOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetColdStorageAfter()
 	ResetDeleteAfter()
+	ResetOptInToArchiveForSupportedResources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -177,6 +181,26 @@ func (j *jsiiProxy_BackupPlanRuleCopyActionLifecycleOutputReference) InternalVal
 	return returns
 }
 
+func (j *jsiiProxy_BackupPlanRuleCopyActionLifecycleOutputReference) OptInToArchiveForSupportedResources() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"optInToArchiveForSupportedResources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BackupPlanRuleCopyActionLifecycleOutputReference) OptInToArchiveForSupportedResourcesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"optInToArchiveForSupportedResourcesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BackupPlanRuleCopyActionLifecycleOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -276,6 +300,17 @@ func (j *jsiiProxy_BackupPlanRuleCopyActionLifecycleOutputReference)SetInternalV
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BackupPlanRuleCopyActionLifecycleOutputReference)SetOptInToArchiveForSupportedResources(val interface{}) {
+	if err := j.validateSetOptInToArchiveForSupportedResourcesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optInToArchiveForSupportedResources",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (b *jsiiProxy_BackupPlanRuleCopyActionLifecycleOutputReference) ResetDelete
 	_jsii_.InvokeVoid(
 		b,
 		"resetDeleteAfter",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BackupPlanRuleCopyActionLifecycleOutputReference) ResetOptInToArchiveForSupportedResources() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetOptInToArchiveForSupportedResources",
 		nil, // no parameters
 	)
 }

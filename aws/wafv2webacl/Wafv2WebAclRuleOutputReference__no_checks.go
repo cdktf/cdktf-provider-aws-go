@@ -63,10 +63,6 @@ func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) validatePutRuleLabelParameter
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) validatePutStatementParameters(value *Wafv2WebAclRuleStatement) error {
-	return nil
-}
-
 func (w *jsiiProxy_Wafv2WebAclRuleOutputReference) validatePutVisibilityConfigParameters(value *Wafv2WebAclRuleVisibilityConfig) error {
 	return nil
 }
@@ -92,6 +88,10 @@ func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) validateSetNameParameters(val
 }
 
 func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) validateSetPriorityParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_Wafv2WebAclRuleOutputReference) validateSetStatementParameters(val interface{}) error {
 	return nil
 }
 

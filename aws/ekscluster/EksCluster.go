@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster aws_eks_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster aws_eks_cluster}.
 type EksCluster interface {
 	cdktf.TerraformResource
+	AccessConfig() EksClusterAccessConfigOutputReference
+	AccessConfigInput() *EksClusterAccessConfig
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -143,11 +145,13 @@ type EksCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAccessConfig(value *EksClusterAccessConfig)
 	PutEncryptionConfig(value *EksClusterEncryptionConfig)
 	PutKubernetesNetworkConfig(value *EksClusterKubernetesNetworkConfig)
 	PutOutpostConfig(value *EksClusterOutpostConfig)
 	PutTimeouts(value *EksClusterTimeouts)
 	PutVpcConfig(value *EksClusterVpcConfig)
+	ResetAccessConfig()
 	ResetEnabledClusterLogTypes()
 	ResetEncryptionConfig()
 	ResetId()
@@ -176,6 +180,26 @@ type EksCluster interface {
 // The jsii proxy struct for EksCluster
 type jsiiProxy_EksCluster struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_EksCluster) AccessConfig() EksClusterAccessConfigOutputReference {
+	var returns EksClusterAccessConfigOutputReference
+	_jsii_.Get(
+		j,
+		"accessConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksCluster) AccessConfigInput() *EksClusterAccessConfig {
+	var returns *EksClusterAccessConfig
+	_jsii_.Get(
+		j,
+		"accessConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_EksCluster) Arn() *string {
@@ -659,7 +683,7 @@ func (j *jsiiProxy_EksCluster) VpcConfigInput() *EksClusterVpcConfig {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster aws_eks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
 func NewEksCluster(scope constructs.Construct, id *string, config *EksClusterConfig) EksCluster {
 	_init_.Initialize()
 
@@ -677,7 +701,7 @@ func NewEksCluster(scope constructs.Construct, id *string, config *EksClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/eks_cluster aws_eks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
 func NewEksCluster_Override(e EksCluster, scope constructs.Construct, id *string, config *EksClusterConfig) {
 	_init_.Initialize()
 
@@ -1186,6 +1210,17 @@ func (e *jsiiProxy_EksCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (e *jsiiProxy_EksCluster) PutAccessConfig(value *EksClusterAccessConfig) {
+	if err := e.validatePutAccessConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putAccessConfig",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EksCluster) PutEncryptionConfig(value *EksClusterEncryptionConfig) {
 	if err := e.validatePutEncryptionConfigParameters(value); err != nil {
 		panic(err)
@@ -1238,6 +1273,14 @@ func (e *jsiiProxy_EksCluster) PutVpcConfig(value *EksClusterVpcConfig) {
 		e,
 		"putVpcConfig",
 		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EksCluster) ResetAccessConfig() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetAccessConfig",
+		nil, // no parameters
 	)
 }
 

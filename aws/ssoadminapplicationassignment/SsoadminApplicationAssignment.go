@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/ssoadmin_application_assignment aws_ssoadmin_application_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ssoadmin_application_assignment aws_ssoadmin_application_assignment}.
 type SsoadminApplicationAssignment interface {
 	cdktf.TerraformResource
 	ApplicationArn() *string
@@ -366,7 +366,7 @@ func (j *jsiiProxy_SsoadminApplicationAssignment) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/ssoadmin_application_assignment aws_ssoadmin_application_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ssoadmin_application_assignment aws_ssoadmin_application_assignment} Resource.
 func NewSsoadminApplicationAssignment(scope constructs.Construct, id *string, config *SsoadminApplicationAssignmentConfig) SsoadminApplicationAssignment {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewSsoadminApplicationAssignment(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/ssoadmin_application_assignment aws_ssoadmin_application_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ssoadmin_application_assignment aws_ssoadmin_application_assignment} Resource.
 func NewSsoadminApplicationAssignment_Override(s SsoadminApplicationAssignment, scope constructs.Construct, id *string, config *SsoadminApplicationAssignmentConfig) {
 	_init_.Initialize()
 

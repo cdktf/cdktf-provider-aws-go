@@ -119,6 +119,10 @@ func (j *jsiiProxy_LakeformationResource) validateSetRoleArnParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_LakeformationResource) validateSetUseServiceLinkedRoleParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewLakeformationResourceParameters(scope constructs.Construct, id *string, config *LakeformationResourceConfig) error {
 	return nil
 }

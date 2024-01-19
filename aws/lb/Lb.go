@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lb aws_lb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lb aws_lb}.
 type Lb interface {
 	cdktf.TerraformResource
 	AccessLogs() LbAccessLogsOutputReference
@@ -1013,7 +1013,7 @@ func (j *jsiiProxy_Lb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lb aws_lb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lb aws_lb} Resource.
 func NewLb(scope constructs.Construct, id *string, config *LbConfig) Lb {
 	_init_.Initialize()
 
@@ -1031,7 +1031,7 @@ func NewLb(scope constructs.Construct, id *string, config *LbConfig) Lb {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lb aws_lb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lb aws_lb} Resource.
 func NewLb_Override(l Lb, scope constructs.Construct, id *string, config *LbConfig) {
 	_init_.Initialize()
 

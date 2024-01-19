@@ -5,9 +5,9 @@ package gameliftgameservergroup
 
 
 type GameliftGameServerGroupTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/gamelift_game_server_group#create GameliftGameServerGroup#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/gamelift_game_server_group#create GameliftGameServerGroup#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/gamelift_game_server_group#delete GameliftGameServerGroup#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/gamelift_game_server_group#delete GameliftGameServerGroup#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

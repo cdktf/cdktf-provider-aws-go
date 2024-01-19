@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource aws_lakeformation_resource}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource aws_lakeformation_resource}.
 type LakeformationResource interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -71,6 +71,9 @@ type LakeformationResource interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UseServiceLinkedRole() interface{}
+	SetUseServiceLinkedRole(val interface{})
+	UseServiceLinkedRoleInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -119,6 +122,7 @@ type LakeformationResource interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRoleArn()
+	ResetUseServiceLinkedRole()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -367,8 +371,28 @@ func (j *jsiiProxy_LakeformationResource) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_LakeformationResource) UseServiceLinkedRole() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useServiceLinkedRole",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource aws_lakeformation_resource} Resource.
+func (j *jsiiProxy_LakeformationResource) UseServiceLinkedRoleInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useServiceLinkedRoleInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource aws_lakeformation_resource} Resource.
 func NewLakeformationResource(scope constructs.Construct, id *string, config *LakeformationResourceConfig) LakeformationResource {
 	_init_.Initialize()
 
@@ -386,7 +410,7 @@ func NewLakeformationResource(scope constructs.Construct, id *string, config *La
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/lakeformation_resource aws_lakeformation_resource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/lakeformation_resource aws_lakeformation_resource} Resource.
 func NewLakeformationResource_Override(l LakeformationResource, scope constructs.Construct, id *string, config *LakeformationResourceConfig) {
 	_init_.Initialize()
 
@@ -494,6 +518,17 @@ func (j *jsiiProxy_LakeformationResource)SetRoleArn(val *string) {
 	_jsii_.Set(
 		j,
 		"roleArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LakeformationResource)SetUseServiceLinkedRole(val interface{}) {
+	if err := j.validateSetUseServiceLinkedRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useServiceLinkedRole",
 		val,
 	)
 }
@@ -871,6 +906,14 @@ func (l *jsiiProxy_LakeformationResource) ResetRoleArn() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetRoleArn",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LakeformationResource) ResetUseServiceLinkedRole() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetUseServiceLinkedRole",
 		nil, // no parameters
 	)
 }

@@ -71,6 +71,10 @@ func (j *jsiiProxy_BackupPlanRuleLifecycleOutputReference) validateSetInternalVa
 	return nil
 }
 
+func (j *jsiiProxy_BackupPlanRuleLifecycleOutputReference) validateSetOptInToArchiveForSupportedResourcesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupPlanRuleLifecycleOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

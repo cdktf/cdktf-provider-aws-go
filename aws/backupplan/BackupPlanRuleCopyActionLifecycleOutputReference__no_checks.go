@@ -71,6 +71,10 @@ func (j *jsiiProxy_BackupPlanRuleCopyActionLifecycleOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_BackupPlanRuleCopyActionLifecycleOutputReference) validateSetOptInToArchiveForSupportedResourcesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BackupPlanRuleCopyActionLifecycleOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -343,14 +343,6 @@ func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetPasswordLengt
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetRandomPasswordParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsSecretsmanagerRandomPassword) validateSetRequireEachIncludedTypeParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

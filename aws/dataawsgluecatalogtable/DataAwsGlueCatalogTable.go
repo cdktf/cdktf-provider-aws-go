@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/glue_catalog_table aws_glue_catalog_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/glue_catalog_table aws_glue_catalog_table}.
 type DataAwsGlueCatalogTable interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -515,7 +515,7 @@ func (j *jsiiProxy_DataAwsGlueCatalogTable) ViewOriginalText() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/glue_catalog_table aws_glue_catalog_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/glue_catalog_table aws_glue_catalog_table} Data Source.
 func NewDataAwsGlueCatalogTable(scope constructs.Construct, id *string, config *DataAwsGlueCatalogTableConfig) DataAwsGlueCatalogTable {
 	_init_.Initialize()
 
@@ -533,7 +533,7 @@ func NewDataAwsGlueCatalogTable(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/data-sources/glue_catalog_table aws_glue_catalog_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/glue_catalog_table aws_glue_catalog_table} Data Source.
 func NewDataAwsGlueCatalogTable_Override(d DataAwsGlueCatalogTable, scope constructs.Construct, id *string, config *DataAwsGlueCatalogTableConfig) {
 	_init_.Initialize()
 

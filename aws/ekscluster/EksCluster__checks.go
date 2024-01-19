@@ -207,6 +207,17 @@ func (e *jsiiProxy_EksCluster) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (e *jsiiProxy_EksCluster) validatePutAccessConfigParameters(value *EksClusterAccessConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (e *jsiiProxy_EksCluster) validatePutEncryptionConfigParameters(value *EksClusterEncryptionConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

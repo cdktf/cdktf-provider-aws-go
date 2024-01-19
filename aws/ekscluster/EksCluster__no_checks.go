@@ -75,6 +75,10 @@ func (e *jsiiProxy_EksCluster) validateOverrideLogicalIdParameters(newLogicalId 
 	return nil
 }
 
+func (e *jsiiProxy_EksCluster) validatePutAccessConfigParameters(value *EksClusterAccessConfig) error {
+	return nil
+}
+
 func (e *jsiiProxy_EksCluster) validatePutEncryptionConfigParameters(value *EksClusterEncryptionConfig) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/appconfig_extension_association aws_appconfig_extension_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/appconfig_extension_association aws_appconfig_extension_association}.
 type AppconfigExtensionAssociation interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -402,7 +402,7 @@ func (j *jsiiProxy_AppconfigExtensionAssociation) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/appconfig_extension_association aws_appconfig_extension_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/appconfig_extension_association aws_appconfig_extension_association} Resource.
 func NewAppconfigExtensionAssociation(scope constructs.Construct, id *string, config *AppconfigExtensionAssociationConfig) AppconfigExtensionAssociation {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewAppconfigExtensionAssociation(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.32.1/docs/resources/appconfig_extension_association aws_appconfig_extension_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/appconfig_extension_association aws_appconfig_extension_association} Resource.
 func NewAppconfigExtensionAssociation_Override(a AppconfigExtensionAssociation, scope constructs.Construct, id *string, config *AppconfigExtensionAssociationConfig) {
 	_init_.Initialize()
 
