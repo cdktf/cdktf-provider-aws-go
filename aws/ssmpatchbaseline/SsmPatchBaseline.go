@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ssm_patch_baseline aws_ssm_patch_baseline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/ssm_patch_baseline aws_ssm_patch_baseline}.
 type SsmPatchBaseline interface {
 	cdktf.TerraformResource
 	ApprovalRule() SsmPatchBaselineApprovalRuleList
@@ -59,6 +59,7 @@ type SsmPatchBaseline interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Json() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -411,6 +412,16 @@ func (j *jsiiProxy_SsmPatchBaseline) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SsmPatchBaseline) Json() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"json",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SsmPatchBaseline) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -632,7 +643,7 @@ func (j *jsiiProxy_SsmPatchBaseline) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ssm_patch_baseline aws_ssm_patch_baseline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/ssm_patch_baseline aws_ssm_patch_baseline} Resource.
 func NewSsmPatchBaseline(scope constructs.Construct, id *string, config *SsmPatchBaselineConfig) SsmPatchBaseline {
 	_init_.Initialize()
 
@@ -650,7 +661,7 @@ func NewSsmPatchBaseline(scope constructs.Construct, id *string, config *SsmPatc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/ssm_patch_baseline aws_ssm_patch_baseline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/ssm_patch_baseline aws_ssm_patch_baseline} Resource.
 func NewSsmPatchBaseline_Override(s SsmPatchBaseline, scope constructs.Construct, id *string, config *SsmPatchBaselineConfig) {
 	_init_.Initialize()
 

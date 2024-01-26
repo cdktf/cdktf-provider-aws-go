@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/prometheus_scraper aws_prometheus_scraper}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/prometheus_scraper aws_prometheus_scraper}.
 type PrometheusScraper interface {
 	cdktf.TerraformResource
 	Alias() *string
@@ -62,6 +62,7 @@ type PrometheusScraper interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RoleArn() *string
 	ScrapeConfiguration() *string
 	SetScrapeConfiguration(val *string)
 	ScrapeConfigurationInput() *string
@@ -341,6 +342,16 @@ func (j *jsiiProxy_PrometheusScraper) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PrometheusScraper) RoleArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"roleArn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PrometheusScraper) ScrapeConfiguration() *string {
 	var returns *string
 	_jsii_.Get(
@@ -462,7 +473,7 @@ func (j *jsiiProxy_PrometheusScraper) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/prometheus_scraper aws_prometheus_scraper} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/prometheus_scraper aws_prometheus_scraper} Resource.
 func NewPrometheusScraper(scope constructs.Construct, id *string, config *PrometheusScraperConfig) PrometheusScraper {
 	_init_.Initialize()
 
@@ -480,7 +491,7 @@ func NewPrometheusScraper(scope constructs.Construct, id *string, config *Promet
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/prometheus_scraper aws_prometheus_scraper} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/prometheus_scraper aws_prometheus_scraper} Resource.
 func NewPrometheusScraper_Override(p PrometheusScraper, scope constructs.Construct, id *string, config *PrometheusScraperConfig) {
 	_init_.Initialize()
 

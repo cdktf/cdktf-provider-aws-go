@@ -83,6 +83,10 @@ func (w *jsiiProxy_Wafv2WebAcl) validatePutCaptchaConfigParameters(value *Wafv2W
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2WebAcl) validatePutChallengeConfigParameters(value *Wafv2WebAclChallengeConfig) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2WebAcl) validatePutCustomResponseBodyParameters(value interface{}) error {
 	return nil
 }

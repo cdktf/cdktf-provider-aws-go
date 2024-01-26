@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/cloudwatch_event_api_destination aws_cloudwatch_event_api_destination}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/cloudwatch_event_api_destination aws_cloudwatch_event_api_destination}.
 type CloudwatchEventApiDestination interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -461,7 +461,7 @@ func (j *jsiiProxy_CloudwatchEventApiDestination) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/cloudwatch_event_api_destination aws_cloudwatch_event_api_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/cloudwatch_event_api_destination aws_cloudwatch_event_api_destination} Resource.
 func NewCloudwatchEventApiDestination(scope constructs.Construct, id *string, config *CloudwatchEventApiDestinationConfig) CloudwatchEventApiDestination {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewCloudwatchEventApiDestination(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/cloudwatch_event_api_destination aws_cloudwatch_event_api_destination} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/cloudwatch_event_api_destination aws_cloudwatch_event_api_destination} Resource.
 func NewCloudwatchEventApiDestination_Override(c CloudwatchEventApiDestination, scope constructs.Construct, id *string, config *CloudwatchEventApiDestinationConfig) {
 	_init_.Initialize()
 

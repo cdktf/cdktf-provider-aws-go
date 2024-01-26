@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment}.
 type NetworkInterfaceSgAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -70,6 +70,8 @@ type NetworkInterfaceSgAttachment interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() NetworkInterfaceSgAttachmentTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -113,10 +115,12 @@ type NetworkInterfaceSgAttachment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *NetworkInterfaceSgAttachmentTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -355,8 +359,28 @@ func (j *jsiiProxy_NetworkInterfaceSgAttachment) TerraformResourceType() *string
 	return returns
 }
 
+func (j *jsiiProxy_NetworkInterfaceSgAttachment) Timeouts() NetworkInterfaceSgAttachmentTimeoutsOutputReference {
+	var returns NetworkInterfaceSgAttachmentTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment} Resource.
+func (j *jsiiProxy_NetworkInterfaceSgAttachment) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment} Resource.
 func NewNetworkInterfaceSgAttachment(scope constructs.Construct, id *string, config *NetworkInterfaceSgAttachmentConfig) NetworkInterfaceSgAttachment {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewNetworkInterfaceSgAttachment(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/network_interface_sg_attachment aws_network_interface_sg_attachment} Resource.
 func NewNetworkInterfaceSgAttachment_Override(n NetworkInterfaceSgAttachment, scope constructs.Construct, id *string, config *NetworkInterfaceSgAttachmentConfig) {
 	_init_.Initialize()
 
@@ -839,6 +863,17 @@ func (n *jsiiProxy_NetworkInterfaceSgAttachment) OverrideLogicalId(newLogicalId 
 	)
 }
 
+func (n *jsiiProxy_NetworkInterfaceSgAttachment) PutTimeouts(value *NetworkInterfaceSgAttachmentTimeouts) {
+	if err := n.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (n *jsiiProxy_NetworkInterfaceSgAttachment) ResetId() {
 	_jsii_.InvokeVoid(
 		n,
@@ -851,6 +886,14 @@ func (n *jsiiProxy_NetworkInterfaceSgAttachment) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NetworkInterfaceSgAttachment) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

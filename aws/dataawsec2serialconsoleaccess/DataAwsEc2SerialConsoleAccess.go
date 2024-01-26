@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/ec2_serial_console_access aws_ec2_serial_console_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/ec2_serial_console_access aws_ec2_serial_console_access}.
 type DataAwsEc2SerialConsoleAccess interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataAwsEc2SerialConsoleAccess) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/ec2_serial_console_access aws_ec2_serial_console_access} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/ec2_serial_console_access aws_ec2_serial_console_access} Data Source.
 func NewDataAwsEc2SerialConsoleAccess(scope constructs.Construct, id *string, config *DataAwsEc2SerialConsoleAccessConfig) DataAwsEc2SerialConsoleAccess {
 	_init_.Initialize()
 
@@ -318,7 +318,7 @@ func NewDataAwsEc2SerialConsoleAccess(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/ec2_serial_console_access aws_ec2_serial_console_access} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/ec2_serial_console_access aws_ec2_serial_console_access} Data Source.
 func NewDataAwsEc2SerialConsoleAccess_Override(d DataAwsEc2SerialConsoleAccess, scope constructs.Construct, id *string, config *DataAwsEc2SerialConsoleAccessConfig) {
 	_init_.Initialize()
 

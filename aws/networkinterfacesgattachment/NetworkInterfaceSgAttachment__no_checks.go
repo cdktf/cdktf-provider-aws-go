@@ -75,6 +75,10 @@ func (n *jsiiProxy_NetworkInterfaceSgAttachment) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (n *jsiiProxy_NetworkInterfaceSgAttachment) validatePutTimeoutsParameters(value *NetworkInterfaceSgAttachmentTimeouts) error {
+	return nil
+}
+
 func validateNetworkInterfaceSgAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

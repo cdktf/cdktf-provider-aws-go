@@ -450,6 +450,22 @@ func (j *jsiiProxy_EksAccessEntry) validateSetTagsAllParameters(val *map[string]
 	return nil
 }
 
+func (j *jsiiProxy_EksAccessEntry) validateSetTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_EksAccessEntry) validateSetUserNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewEksAccessEntryParameters(scope constructs.Construct, id *string, config *EksAccessEntryConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

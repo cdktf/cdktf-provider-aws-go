@@ -75,6 +75,10 @@ func (a *jsiiProxy_AccessanalyzerAnalyzer) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (a *jsiiProxy_AccessanalyzerAnalyzer) validatePutConfigurationParameters(value *AccessanalyzerAnalyzerConfiguration) error {
+	return nil
+}
+
 func validateAccessanalyzerAnalyzer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

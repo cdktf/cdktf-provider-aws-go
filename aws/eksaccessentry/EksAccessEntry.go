@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_access_entry aws_eks_access_entry}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/eks_access_entry aws_eks_access_entry}.
 type EksAccessEntry interface {
 	cdktf.TerraformResource
 	AccessEntryArn() *string
@@ -85,7 +85,11 @@ type EksAccessEntry interface {
 	Timeouts() EksAccessEntryTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	UserName() *string
+	SetUserName(val *string)
+	UserNameInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -138,6 +142,8 @@ type EksAccessEntry interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
+	ResetType()
+	ResetUserName()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -496,6 +502,16 @@ func (j *jsiiProxy_EksAccessEntry) Type() *string {
 	return returns
 }
 
+func (j *jsiiProxy_EksAccessEntry) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EksAccessEntry) UserName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -506,8 +522,18 @@ func (j *jsiiProxy_EksAccessEntry) UserName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_EksAccessEntry) UserNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userNameInput",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_access_entry aws_eks_access_entry} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/eks_access_entry aws_eks_access_entry} Resource.
 func NewEksAccessEntry(scope constructs.Construct, id *string, config *EksAccessEntryConfig) EksAccessEntry {
 	_init_.Initialize()
 
@@ -525,7 +551,7 @@ func NewEksAccessEntry(scope constructs.Construct, id *string, config *EksAccess
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/eks_access_entry aws_eks_access_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/eks_access_entry aws_eks_access_entry} Resource.
 func NewEksAccessEntry_Override(e EksAccessEntry, scope constructs.Construct, id *string, config *EksAccessEntryConfig) {
 	_init_.Initialize()
 
@@ -666,6 +692,28 @@ func (j *jsiiProxy_EksAccessEntry)SetTagsAll(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EksAccessEntry)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EksAccessEntry)SetUserName(val *string) {
+	if err := j.validateSetUserNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userName",
 		val,
 	)
 }
@@ -1078,6 +1126,22 @@ func (e *jsiiProxy_EksAccessEntry) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksAccessEntry) ResetType() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetType",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksAccessEntry) ResetUserName() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetUserName",
 		nil, // no parameters
 	)
 }

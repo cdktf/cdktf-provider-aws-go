@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/codecommit_repository aws_codecommit_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/codecommit_repository aws_codecommit_repository}.
 type CodecommitRepository interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -51,6 +51,9 @@ type CodecommitRepository interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KmsKeyId() *string
+	SetKmsKeyId(val *string)
+	KmsKeyIdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -129,6 +132,7 @@ type CodecommitRepository interface {
 	ResetDefaultBranch()
 	ResetDescription()
 	ResetId()
+	ResetKmsKeyId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -322,6 +326,26 @@ func (j *jsiiProxy_CodecommitRepository) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CodecommitRepository) KmsKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodecommitRepository) KmsKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CodecommitRepository) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -473,7 +497,7 @@ func (j *jsiiProxy_CodecommitRepository) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/codecommit_repository aws_codecommit_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/codecommit_repository aws_codecommit_repository} Resource.
 func NewCodecommitRepository(scope constructs.Construct, id *string, config *CodecommitRepositoryConfig) CodecommitRepository {
 	_init_.Initialize()
 
@@ -491,7 +515,7 @@ func NewCodecommitRepository(scope constructs.Construct, id *string, config *Cod
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/codecommit_repository aws_codecommit_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/codecommit_repository aws_codecommit_repository} Resource.
 func NewCodecommitRepository_Override(c CodecommitRepository, scope constructs.Construct, id *string, config *CodecommitRepositoryConfig) {
 	_init_.Initialize()
 
@@ -569,6 +593,17 @@ func (j *jsiiProxy_CodecommitRepository)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CodecommitRepository)SetKmsKeyId(val *string) {
+	if err := j.validateSetKmsKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyId",
 		val,
 	)
 }
@@ -1009,6 +1044,14 @@ func (c *jsiiProxy_CodecommitRepository) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CodecommitRepository) ResetKmsKeyId() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetKmsKeyId",
 		nil, // no parameters
 	)
 }

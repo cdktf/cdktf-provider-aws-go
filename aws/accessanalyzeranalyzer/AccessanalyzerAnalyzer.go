@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer}.
 type AccessanalyzerAnalyzer interface {
 	cdktf.TerraformResource
 	AnalyzerName() *string
@@ -21,6 +21,8 @@ type AccessanalyzerAnalyzer interface {
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Configuration() AccessanalyzerAnalyzerConfigurationOutputReference
+	ConfigurationInput() *AccessanalyzerAnalyzerConfiguration
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -120,6 +122,8 @@ type AccessanalyzerAnalyzer interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutConfiguration(value *AccessanalyzerAnalyzerConfiguration)
+	ResetConfiguration()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -180,6 +184,26 @@ func (j *jsiiProxy_AccessanalyzerAnalyzer) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessanalyzerAnalyzer) Configuration() AccessanalyzerAnalyzerConfigurationOutputReference {
+	var returns AccessanalyzerAnalyzerConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"configuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AccessanalyzerAnalyzer) ConfigurationInput() *AccessanalyzerAnalyzerConfiguration {
+	var returns *AccessanalyzerAnalyzerConfiguration
+	_jsii_.Get(
+		j,
+		"configurationInput",
 		&returns,
 	)
 	return returns
@@ -416,7 +440,7 @@ func (j *jsiiProxy_AccessanalyzerAnalyzer) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer} Resource.
 func NewAccessanalyzerAnalyzer(scope constructs.Construct, id *string, config *AccessanalyzerAnalyzerConfig) AccessanalyzerAnalyzer {
 	_init_.Initialize()
 
@@ -434,7 +458,7 @@ func NewAccessanalyzerAnalyzer(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/accessanalyzer_analyzer aws_accessanalyzer_analyzer} Resource.
 func NewAccessanalyzerAnalyzer_Override(a AccessanalyzerAnalyzer, scope constructs.Construct, id *string, config *AccessanalyzerAnalyzerConfig) {
 	_init_.Initialize()
 
@@ -918,6 +942,25 @@ func (a *jsiiProxy_AccessanalyzerAnalyzer) OverrideLogicalId(newLogicalId *strin
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_AccessanalyzerAnalyzer) PutConfiguration(value *AccessanalyzerAnalyzerConfiguration) {
+	if err := a.validatePutConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AccessanalyzerAnalyzer) ResetConfiguration() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetConfiguration",
+		nil, // no parameters
 	)
 }
 

@@ -71,6 +71,10 @@ func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) validateSetManagedDrainingParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) validateSetManagedTerminationProtectionParameters(val *string) error {
 	return nil
 }

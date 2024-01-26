@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system}.
 type FsxOpenzfsFileSystem interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -100,6 +100,9 @@ type FsxOpenzfsFileSystem interface {
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
+	SkipFinalBackup() interface{}
+	SetSkipFinalBackup(val interface{})
+	SkipFinalBackupInput() interface{}
 	StorageCapacity() *float64
 	SetStorageCapacity(val *float64)
 	StorageCapacityInput() *float64
@@ -192,6 +195,7 @@ type FsxOpenzfsFileSystem interface {
 	ResetRootVolumeConfiguration()
 	ResetRouteTableIds()
 	ResetSecurityGroupIds()
+	ResetSkipFinalBackup()
 	ResetStorageCapacity()
 	ResetStorageType()
 	ResetTags()
@@ -676,6 +680,26 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) SecurityGroupIdsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SkipFinalBackup() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipFinalBackup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOpenzfsFileSystem) SkipFinalBackupInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipFinalBackupInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxOpenzfsFileSystem) StorageCapacity() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -877,7 +901,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) WeeklyMaintenanceStartTimeInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system} Resource.
 func NewFsxOpenzfsFileSystem(scope constructs.Construct, id *string, config *FsxOpenzfsFileSystemConfig) FsxOpenzfsFileSystem {
 	_init_.Initialize()
 
@@ -895,7 +919,7 @@ func NewFsxOpenzfsFileSystem(scope constructs.Construct, id *string, config *Fsx
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system} Resource.
 func NewFsxOpenzfsFileSystem_Override(f FsxOpenzfsFileSystem, scope constructs.Construct, id *string, config *FsxOpenzfsFileSystemConfig) {
 	_init_.Initialize()
 
@@ -1102,6 +1126,17 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetSecurityGroupIds(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"securityGroupIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxOpenzfsFileSystem)SetSkipFinalBackup(val interface{}) {
+	if err := j.validateSetSkipFinalBackupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipFinalBackup",
 		val,
 	)
 }
@@ -1677,6 +1712,14 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) ResetSecurityGroupIds() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetSecurityGroupIds",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOpenzfsFileSystem) ResetSkipFinalBackup() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetSkipFinalBackup",
 		nil, // no parameters
 	)
 }

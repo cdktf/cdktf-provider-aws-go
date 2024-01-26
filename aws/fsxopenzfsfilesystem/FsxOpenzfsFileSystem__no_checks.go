@@ -167,6 +167,10 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetSecurityGroupIdsParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetSkipFinalBackupParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetStorageCapacityParameters(val *float64) error {
 	return nil
 }

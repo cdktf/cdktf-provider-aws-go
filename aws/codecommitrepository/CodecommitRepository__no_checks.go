@@ -111,6 +111,10 @@ func (j *jsiiProxy_CodecommitRepository) validateSetIdParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_CodecommitRepository) validateSetKmsKeyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CodecommitRepository) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

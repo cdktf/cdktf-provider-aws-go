@@ -35,6 +35,9 @@ type EcsCapacityProviderAutoScalingGroupProviderOutputReference interface {
 	Fqn() *string
 	InternalValue() *EcsCapacityProviderAutoScalingGroupProvider
 	SetInternalValue(val *EcsCapacityProviderAutoScalingGroupProvider)
+	ManagedDraining() *string
+	SetManagedDraining(val *string)
+	ManagedDrainingInput() *string
 	ManagedScaling() EcsCapacityProviderAutoScalingGroupProviderManagedScalingOutputReference
 	ManagedScalingInput() *EcsCapacityProviderAutoScalingGroupProviderManagedScaling
 	ManagedTerminationProtection() *string
@@ -73,6 +76,7 @@ type EcsCapacityProviderAutoScalingGroupProviderOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutManagedScaling(value *EcsCapacityProviderAutoScalingGroupProviderManagedScaling)
+	ResetManagedDraining()
 	ResetManagedScaling()
 	ResetManagedTerminationProtection()
 	// Produce the Token's value at resolution time.
@@ -155,6 +159,26 @@ func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) I
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) ManagedDraining() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedDraining",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) ManagedDrainingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedDrainingInput",
 		&returns,
 	)
 	return returns
@@ -288,6 +312,17 @@ func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference)Se
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference)SetManagedDraining(val *string) {
+	if err := j.validateSetManagedDrainingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managedDraining",
 		val,
 	)
 }
@@ -519,6 +554,14 @@ func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) P
 		e,
 		"putManagedScaling",
 		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EcsCapacityProviderAutoScalingGroupProviderOutputReference) ResetManagedDraining() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetManagedDraining",
+		nil, // no parameters
 	)
 }
 

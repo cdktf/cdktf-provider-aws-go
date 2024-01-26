@@ -60,6 +60,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetSource", GoMethod: "ResetSource"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberProperty{JsiiProperty: "roleArn", GoGetter: "RoleArn"},
 			_jsii_.MemberProperty{JsiiProperty: "scrapeConfiguration", GoGetter: "ScrapeConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "scrapeConfigurationInput", GoGetter: "ScrapeConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "source", GoGetter: "Source"},

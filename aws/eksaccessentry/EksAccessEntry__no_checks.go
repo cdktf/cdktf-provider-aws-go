@@ -135,6 +135,14 @@ func (j *jsiiProxy_EksAccessEntry) validateSetTagsAllParameters(val *map[string]
 	return nil
 }
 
+func (j *jsiiProxy_EksAccessEntry) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_EksAccessEntry) validateSetUserNameParameters(val *string) error {
+	return nil
+}
+
 func validateNewEksAccessEntryParameters(scope constructs.Construct, id *string, config *EksAccessEntryConfig) error {
 	return nil
 }

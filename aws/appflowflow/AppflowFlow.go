@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/appflow_flow aws_appflow_flow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/appflow_flow aws_appflow_flow}.
 type AppflowFlow interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -37,6 +37,7 @@ type AppflowFlow interface {
 	DescriptionInput() *string
 	DestinationFlowConfig() AppflowFlowDestinationFlowConfigList
 	DestinationFlowConfigInput() interface{}
+	FlowStatus() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -256,6 +257,16 @@ func (j *jsiiProxy_AppflowFlow) DestinationFlowConfigInput() interface{} {
 	_jsii_.Get(
 		j,
 		"destinationFlowConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowFlow) FlowStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"flowStatus",
 		&returns,
 	)
 	return returns
@@ -532,7 +543,7 @@ func (j *jsiiProxy_AppflowFlow) TriggerConfigInput() *AppflowFlowTriggerConfig {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/appflow_flow aws_appflow_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/appflow_flow aws_appflow_flow} Resource.
 func NewAppflowFlow(scope constructs.Construct, id *string, config *AppflowFlowConfig) AppflowFlow {
 	_init_.Initialize()
 
@@ -550,7 +561,7 @@ func NewAppflowFlow(scope constructs.Construct, id *string, config *AppflowFlowC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/resources/appflow_flow aws_appflow_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/appflow_flow aws_appflow_flow} Resource.
 func NewAppflowFlow_Override(a AppflowFlow, scope constructs.Construct, id *string, config *AppflowFlowConfig) {
 	_init_.Initialize()
 

@@ -26,6 +26,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "descriptionInput", GoGetter: "DescriptionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "destinationFlowConfig", GoGetter: "DestinationFlowConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "destinationFlowConfigInput", GoGetter: "DestinationFlowConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "flowStatus", GoGetter: "FlowStatus"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},

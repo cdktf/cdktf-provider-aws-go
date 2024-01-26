@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/ssm_patch_baseline aws_ssm_patch_baseline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/ssm_patch_baseline aws_ssm_patch_baseline}.
 type DataAwsSsmPatchBaseline interface {
 	cdktf.TerraformDataSource
 	ApprovalRule() DataAwsSsmPatchBaselineApprovalRuleList
@@ -47,6 +47,7 @@ type DataAwsSsmPatchBaseline interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Json() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -299,6 +300,16 @@ func (j *jsiiProxy_DataAwsSsmPatchBaseline) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsSsmPatchBaseline) Json() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"json",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsSsmPatchBaseline) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -470,7 +481,7 @@ func (j *jsiiProxy_DataAwsSsmPatchBaseline) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/ssm_patch_baseline aws_ssm_patch_baseline} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/ssm_patch_baseline aws_ssm_patch_baseline} Data Source.
 func NewDataAwsSsmPatchBaseline(scope constructs.Construct, id *string, config *DataAwsSsmPatchBaselineConfig) DataAwsSsmPatchBaseline {
 	_init_.Initialize()
 
@@ -488,7 +499,7 @@ func NewDataAwsSsmPatchBaseline(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.33.0/docs/data-sources/ssm_patch_baseline aws_ssm_patch_baseline} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/ssm_patch_baseline aws_ssm_patch_baseline} Data Source.
 func NewDataAwsSsmPatchBaseline_Override(d DataAwsSsmPatchBaseline, scope constructs.Construct, id *string, config *DataAwsSsmPatchBaselineConfig) {
 	_init_.Initialize()
 
