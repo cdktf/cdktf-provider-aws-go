@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/lakeformation_resource aws_lakeformation_resource}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/lakeformation_resource aws_lakeformation_resource}.
 type LakeformationResource interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -42,6 +42,9 @@ type LakeformationResource interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HybridAccessEnabled() interface{}
+	SetHybridAccessEnabled(val interface{})
+	HybridAccessEnabledInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -74,6 +77,9 @@ type LakeformationResource interface {
 	UseServiceLinkedRole() interface{}
 	SetUseServiceLinkedRole(val interface{})
 	UseServiceLinkedRoleInput() interface{}
+	WithFederation() interface{}
+	SetWithFederation(val interface{})
+	WithFederationInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -117,12 +123,14 @@ type LakeformationResource interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetHybridAccessEnabled()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRoleArn()
 	ResetUseServiceLinkedRole()
+	ResetWithFederation()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -236,6 +244,26 @@ func (j *jsiiProxy_LakeformationResource) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LakeformationResource) HybridAccessEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hybridAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LakeformationResource) HybridAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hybridAccessEnabledInput",
 		&returns,
 	)
 	return returns
@@ -391,8 +419,28 @@ func (j *jsiiProxy_LakeformationResource) UseServiceLinkedRoleInput() interface{
 	return returns
 }
 
+func (j *jsiiProxy_LakeformationResource) WithFederation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"withFederation",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/lakeformation_resource aws_lakeformation_resource} Resource.
+func (j *jsiiProxy_LakeformationResource) WithFederationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"withFederationInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/lakeformation_resource aws_lakeformation_resource} Resource.
 func NewLakeformationResource(scope constructs.Construct, id *string, config *LakeformationResourceConfig) LakeformationResource {
 	_init_.Initialize()
 
@@ -410,7 +458,7 @@ func NewLakeformationResource(scope constructs.Construct, id *string, config *La
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/lakeformation_resource aws_lakeformation_resource} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/lakeformation_resource aws_lakeformation_resource} Resource.
 func NewLakeformationResource_Override(l LakeformationResource, scope constructs.Construct, id *string, config *LakeformationResourceConfig) {
 	_init_.Initialize()
 
@@ -466,6 +514,17 @@ func (j *jsiiProxy_LakeformationResource)SetForEach(val cdktf.ITerraformIterator
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LakeformationResource)SetHybridAccessEnabled(val interface{}) {
+	if err := j.validateSetHybridAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hybridAccessEnabled",
 		val,
 	)
 }
@@ -529,6 +588,17 @@ func (j *jsiiProxy_LakeformationResource)SetUseServiceLinkedRole(val interface{}
 	_jsii_.Set(
 		j,
 		"useServiceLinkedRole",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LakeformationResource)SetWithFederation(val interface{}) {
+	if err := j.validateSetWithFederationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"withFederation",
 		val,
 	)
 }
@@ -886,6 +956,14 @@ func (l *jsiiProxy_LakeformationResource) OverrideLogicalId(newLogicalId *string
 	)
 }
 
+func (l *jsiiProxy_LakeformationResource) ResetHybridAccessEnabled() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetHybridAccessEnabled",
+		nil, // no parameters
+	)
+}
+
 func (l *jsiiProxy_LakeformationResource) ResetId() {
 	_jsii_.InvokeVoid(
 		l,
@@ -914,6 +992,14 @@ func (l *jsiiProxy_LakeformationResource) ResetUseServiceLinkedRole() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetUseServiceLinkedRole",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LakeformationResource) ResetWithFederation() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetWithFederation",
 		nil, // no parameters
 	)
 }

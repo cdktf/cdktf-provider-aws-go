@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/elasticache_subnet_group aws_elasticache_subnet_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/elasticache_subnet_group aws_elasticache_subnet_group}.
 type ElasticacheSubnetGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -439,7 +439,7 @@ func (j *jsiiProxy_ElasticacheSubnetGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/elasticache_subnet_group aws_elasticache_subnet_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/elasticache_subnet_group aws_elasticache_subnet_group} Resource.
 func NewElasticacheSubnetGroup(scope constructs.Construct, id *string, config *ElasticacheSubnetGroupConfig) ElasticacheSubnetGroup {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewElasticacheSubnetGroup(scope constructs.Construct, id *string, config *E
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/elasticache_subnet_group aws_elasticache_subnet_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/elasticache_subnet_group aws_elasticache_subnet_group} Resource.
 func NewElasticacheSubnetGroup_Override(e ElasticacheSubnetGroup, scope constructs.Construct, id *string, config *ElasticacheSubnetGroupConfig) {
 	_init_.Initialize()
 

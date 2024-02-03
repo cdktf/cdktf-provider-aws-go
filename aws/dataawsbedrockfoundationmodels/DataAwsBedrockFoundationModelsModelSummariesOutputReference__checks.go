@@ -166,25 +166,9 @@ func (j *jsiiProxy_DataAwsBedrockFoundationModelsModelSummariesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsBedrockFoundationModelsModelSummariesOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataAwsBedrockFoundationModelsModelSummaries:
-		val := val.(*DataAwsBedrockFoundationModelsModelSummaries)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataAwsBedrockFoundationModelsModelSummaries:
-		val_ := val.(DataAwsBedrockFoundationModelsModelSummaries)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAwsBedrockFoundationModelsModelSummaries; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataAwsBedrockFoundationModelsModelSummariesOutputReference) validateSetInternalValueParameters(val *DataAwsBedrockFoundationModelsModelSummaries) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

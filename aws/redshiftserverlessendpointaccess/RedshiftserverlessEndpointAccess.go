@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/redshiftserverless_endpoint_access aws_redshiftserverless_endpoint_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/redshiftserverless_endpoint_access aws_redshiftserverless_endpoint_access}.
 type RedshiftserverlessEndpointAccess interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -53,6 +53,9 @@ type RedshiftserverlessEndpointAccess interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	OwnerAccount() *string
+	SetOwnerAccount(val *string)
+	OwnerAccountInput() *string
 	Port() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -127,6 +130,7 @@ type RedshiftserverlessEndpointAccess interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetOwnerAccount()
 	ResetVpcSecurityGroupIds()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -306,6 +310,26 @@ func (j *jsiiProxy_RedshiftserverlessEndpointAccess) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_RedshiftserverlessEndpointAccess) OwnerAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftserverlessEndpointAccess) OwnerAccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownerAccountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedshiftserverlessEndpointAccess) Port() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -447,7 +471,7 @@ func (j *jsiiProxy_RedshiftserverlessEndpointAccess) WorkgroupNameInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/redshiftserverless_endpoint_access aws_redshiftserverless_endpoint_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/redshiftserverless_endpoint_access aws_redshiftserverless_endpoint_access} Resource.
 func NewRedshiftserverlessEndpointAccess(scope constructs.Construct, id *string, config *RedshiftserverlessEndpointAccessConfig) RedshiftserverlessEndpointAccess {
 	_init_.Initialize()
 
@@ -465,7 +489,7 @@ func NewRedshiftserverlessEndpointAccess(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/redshiftserverless_endpoint_access aws_redshiftserverless_endpoint_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/redshiftserverless_endpoint_access aws_redshiftserverless_endpoint_access} Resource.
 func NewRedshiftserverlessEndpointAccess_Override(r RedshiftserverlessEndpointAccess, scope constructs.Construct, id *string, config *RedshiftserverlessEndpointAccessConfig) {
 	_init_.Initialize()
 
@@ -543,6 +567,17 @@ func (j *jsiiProxy_RedshiftserverlessEndpointAccess)SetLifecycle(val *cdktf.Terr
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftserverlessEndpointAccess)SetOwnerAccount(val *string) {
+	if err := j.validateSetOwnerAccountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ownerAccount",
 		val,
 	)
 }
@@ -964,6 +999,14 @@ func (r *jsiiProxy_RedshiftserverlessEndpointAccess) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftserverlessEndpointAccess) ResetOwnerAccount() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetOwnerAccount",
 		nil, // no parameters
 	)
 }

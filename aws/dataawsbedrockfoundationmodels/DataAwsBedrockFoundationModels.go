@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/bedrock_foundation_models aws_bedrock_foundation_models}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/bedrock_foundation_models aws_bedrock_foundation_models}.
 type DataAwsBedrockFoundationModels interface {
 	cdktf.TerraformDataSource
 	ByCustomizationType() *string
@@ -53,7 +53,6 @@ type DataAwsBedrockFoundationModels interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	ModelSummaries() DataAwsBedrockFoundationModelsModelSummariesList
-	ModelSummariesInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -93,12 +92,10 @@ type DataAwsBedrockFoundationModels interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutModelSummaries(value interface{})
 	ResetByCustomizationType()
 	ResetByInferenceType()
 	ResetByOutputModality()
 	ResetByProvider()
-	ResetModelSummaries()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -301,16 +298,6 @@ func (j *jsiiProxy_DataAwsBedrockFoundationModels) ModelSummaries() DataAwsBedro
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsBedrockFoundationModels) ModelSummariesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"modelSummariesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAwsBedrockFoundationModels) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -372,7 +359,7 @@ func (j *jsiiProxy_DataAwsBedrockFoundationModels) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/bedrock_foundation_models aws_bedrock_foundation_models} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/bedrock_foundation_models aws_bedrock_foundation_models} Data Source.
 func NewDataAwsBedrockFoundationModels(scope constructs.Construct, id *string, config *DataAwsBedrockFoundationModelsConfig) DataAwsBedrockFoundationModels {
 	_init_.Initialize()
 
@@ -390,7 +377,7 @@ func NewDataAwsBedrockFoundationModels(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/bedrock_foundation_models aws_bedrock_foundation_models} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/bedrock_foundation_models aws_bedrock_foundation_models} Data Source.
 func NewDataAwsBedrockFoundationModels_Override(d DataAwsBedrockFoundationModels, scope constructs.Construct, id *string, config *DataAwsBedrockFoundationModelsConfig) {
 	_init_.Initialize()
 
@@ -776,17 +763,6 @@ func (d *jsiiProxy_DataAwsBedrockFoundationModels) OverrideLogicalId(newLogicalI
 	)
 }
 
-func (d *jsiiProxy_DataAwsBedrockFoundationModels) PutModelSummaries(value interface{}) {
-	if err := d.validatePutModelSummariesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putModelSummaries",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataAwsBedrockFoundationModels) ResetByCustomizationType() {
 	_jsii_.InvokeVoid(
 		d,
@@ -815,14 +791,6 @@ func (d *jsiiProxy_DataAwsBedrockFoundationModels) ResetByProvider() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetByProvider",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAwsBedrockFoundationModels) ResetModelSummaries() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetModelSummaries",
 		nil, // no parameters
 	)
 }

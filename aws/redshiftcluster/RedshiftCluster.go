@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/redshift_cluster aws_redshift_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/redshift_cluster aws_redshift_cluster}.
 type RedshiftCluster interface {
 	cdktf.TerraformResource
 	AllowVersionUpgrade() interface{}
@@ -137,6 +137,9 @@ type RedshiftCluster interface {
 	MasterUsername() *string
 	SetMasterUsername(val *string)
 	MasterUsernameInput() *string
+	MultiAz() interface{}
+	SetMultiAz(val interface{})
+	MultiAzInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	NodeType() *string
@@ -273,6 +276,7 @@ type RedshiftCluster interface {
 	ResetMasterPassword()
 	ResetMasterPasswordSecretKmsKeyId()
 	ResetMasterUsername()
+	ResetMultiAz()
 	ResetNumberOfNodes()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -1048,6 +1052,26 @@ func (j *jsiiProxy_RedshiftCluster) MasterUsernameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_RedshiftCluster) MultiAz() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"multiAz",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftCluster) MultiAzInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"multiAzInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedshiftCluster) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -1419,7 +1443,7 @@ func (j *jsiiProxy_RedshiftCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
 func NewRedshiftCluster(scope constructs.Construct, id *string, config *RedshiftClusterConfig) RedshiftCluster {
 	_init_.Initialize()
 
@@ -1437,7 +1461,7 @@ func NewRedshiftCluster(scope constructs.Construct, id *string, config *Redshift
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
 func NewRedshiftCluster_Override(r RedshiftCluster, scope constructs.Construct, id *string, config *RedshiftClusterConfig) {
 	_init_.Initialize()
 
@@ -1812,6 +1836,17 @@ func (j *jsiiProxy_RedshiftCluster)SetMasterUsername(val *string) {
 	_jsii_.Set(
 		j,
 		"masterUsername",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftCluster)SetMultiAz(val interface{}) {
+	if err := j.validateSetMultiAzParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"multiAz",
 		val,
 	)
 }
@@ -2592,6 +2627,14 @@ func (r *jsiiProxy_RedshiftCluster) ResetMasterUsername() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetMasterUsername",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftCluster) ResetMultiAz() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetMultiAz",
 		nil, // no parameters
 	)
 }

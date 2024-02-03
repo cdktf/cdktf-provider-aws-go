@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataAwsBedrockFoundationModels) validateOverrideLogicalIdPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsBedrockFoundationModels) validatePutModelSummariesParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataAwsBedrockFoundationModels_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

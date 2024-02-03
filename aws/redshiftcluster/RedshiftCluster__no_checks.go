@@ -231,6 +231,10 @@ func (j *jsiiProxy_RedshiftCluster) validateSetMasterUsernameParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftCluster) validateSetMultiAzParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftCluster) validateSetNodeTypeParameters(val *string) error {
 	return nil
 }

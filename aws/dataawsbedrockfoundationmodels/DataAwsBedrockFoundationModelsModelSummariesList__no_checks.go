@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataAwsBedrockFoundationModelsModelSummariesList) validateRes
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsBedrockFoundationModelsModelSummariesList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsBedrockFoundationModelsModelSummariesList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

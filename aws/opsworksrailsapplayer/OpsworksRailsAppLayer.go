@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/opsworks_rails_app_layer aws_opsworks_rails_app_layer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/opsworks_rails_app_layer aws_opsworks_rails_app_layer}.
 type OpsworksRailsAppLayer interface {
 	cdktf.TerraformResource
 	AppServer() *string
@@ -1040,7 +1040,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayer) UseEbsOptimizedInstancesInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/opsworks_rails_app_layer aws_opsworks_rails_app_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/opsworks_rails_app_layer aws_opsworks_rails_app_layer} Resource.
 func NewOpsworksRailsAppLayer(scope constructs.Construct, id *string, config *OpsworksRailsAppLayerConfig) OpsworksRailsAppLayer {
 	_init_.Initialize()
 
@@ -1058,7 +1058,7 @@ func NewOpsworksRailsAppLayer(scope constructs.Construct, id *string, config *Op
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/opsworks_rails_app_layer aws_opsworks_rails_app_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/opsworks_rails_app_layer aws_opsworks_rails_app_layer} Resource.
 func NewOpsworksRailsAppLayer_Override(o OpsworksRailsAppLayer, scope constructs.Construct, id *string, config *OpsworksRailsAppLayerConfig) {
 	_init_.Initialize()
 

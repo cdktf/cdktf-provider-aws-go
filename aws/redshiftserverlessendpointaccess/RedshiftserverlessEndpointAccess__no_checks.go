@@ -111,6 +111,10 @@ func (j *jsiiProxy_RedshiftserverlessEndpointAccess) validateSetLifecycleParamet
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftserverlessEndpointAccess) validateSetOwnerAccountParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftserverlessEndpointAccess) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

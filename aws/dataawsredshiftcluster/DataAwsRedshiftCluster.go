@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/redshift_cluster aws_redshift_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/redshift_cluster aws_redshift_cluster}.
 type DataAwsRedshiftCluster interface {
 	cdktf.TerraformDataSource
 	AllowVersionUpgrade() cdktf.IResolvable
@@ -74,6 +74,7 @@ type DataAwsRedshiftCluster interface {
 	MaintenanceTrackName() *string
 	ManualSnapshotRetentionPeriod() *float64
 	MasterUsername() *string
+	MultiAz() cdktf.IResolvable
 	// The tree node.
 	Node() constructs.Node
 	NodeType() *string
@@ -558,6 +559,16 @@ func (j *jsiiProxy_DataAwsRedshiftCluster) MasterUsername() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsRedshiftCluster) MultiAz() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"multiAz",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsRedshiftCluster) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -719,7 +730,7 @@ func (j *jsiiProxy_DataAwsRedshiftCluster) VpcSecurityGroupIds() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/redshift_cluster aws_redshift_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/redshift_cluster aws_redshift_cluster} Data Source.
 func NewDataAwsRedshiftCluster(scope constructs.Construct, id *string, config *DataAwsRedshiftClusterConfig) DataAwsRedshiftCluster {
 	_init_.Initialize()
 
@@ -737,7 +748,7 @@ func NewDataAwsRedshiftCluster(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/data-sources/redshift_cluster aws_redshift_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/redshift_cluster aws_redshift_cluster} Data Source.
 func NewDataAwsRedshiftCluster_Override(d DataAwsRedshiftCluster, scope constructs.Construct, id *string, config *DataAwsRedshiftClusterConfig) {
 	_init_.Initialize()
 

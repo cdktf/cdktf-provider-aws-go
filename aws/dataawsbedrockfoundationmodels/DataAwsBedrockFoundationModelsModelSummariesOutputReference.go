@@ -33,8 +33,8 @@ type DataAwsBedrockFoundationModelsModelSummariesOutputReference interface {
 	Fqn() *string
 	InferenceTypesSupported() *[]*string
 	InputModalities() *[]*string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsBedrockFoundationModelsModelSummaries
+	SetInternalValue(val *DataAwsBedrockFoundationModelsModelSummaries)
 	ModelArn() *string
 	ModelId() *string
 	ModelName() *string
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DataAwsBedrockFoundationModelsModelSummariesOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsBedrockFoundationModelsModelSummariesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsBedrockFoundationModelsModelSummariesOutputReference) InternalValue() *DataAwsBedrockFoundationModelsModelSummaries {
+	var returns *DataAwsBedrockFoundationModelsModelSummaries
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -298,7 +298,7 @@ func (j *jsiiProxy_DataAwsBedrockFoundationModelsModelSummariesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DataAwsBedrockFoundationModelsModelSummariesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsBedrockFoundationModelsModelSummariesOutputReference)SetInternalValue(val *DataAwsBedrockFoundationModelsModelSummaries) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

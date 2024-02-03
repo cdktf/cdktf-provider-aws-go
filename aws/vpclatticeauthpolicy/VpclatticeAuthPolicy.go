@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/vpclattice_auth_policy aws_vpclattice_auth_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/vpclattice_auth_policy aws_vpclattice_auth_policy}.
 type VpclatticeAuthPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -404,7 +404,7 @@ func (j *jsiiProxy_VpclatticeAuthPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/vpclattice_auth_policy aws_vpclattice_auth_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/vpclattice_auth_policy aws_vpclattice_auth_policy} Resource.
 func NewVpclatticeAuthPolicy(scope constructs.Construct, id *string, config *VpclatticeAuthPolicyConfig) VpclatticeAuthPolicy {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewVpclatticeAuthPolicy(scope constructs.Construct, id *string, config *Vpc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/vpclattice_auth_policy aws_vpclattice_auth_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/vpclattice_auth_policy aws_vpclattice_auth_policy} Resource.
 func NewVpclatticeAuthPolicy_Override(v VpclatticeAuthPolicy, scope constructs.Construct, id *string, config *VpclatticeAuthPolicyConfig) {
 	_init_.Initialize()
 

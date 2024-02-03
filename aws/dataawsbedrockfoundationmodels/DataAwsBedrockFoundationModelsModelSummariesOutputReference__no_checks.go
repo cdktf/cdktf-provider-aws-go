@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataAwsBedrockFoundationModelsModelSummariesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsBedrockFoundationModelsModelSummariesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsBedrockFoundationModelsModelSummariesOutputReference) validateSetInternalValueParameters(val *DataAwsBedrockFoundationModelsModelSummaries) error {
 	return nil
 }
 

@@ -5,7 +5,7 @@ package quicksighttheme
 
 
 type QuicksightThemeConfigurationSheetTileLayoutMargin struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.34.0/docs/resources/quicksight_theme#show QuicksightTheme#show}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/quicksight_theme#show QuicksightTheme#show}.
 	Show interface{} `field:"optional" json:"show" yaml:"show"`
 }
 

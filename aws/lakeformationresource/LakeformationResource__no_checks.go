@@ -103,6 +103,10 @@ func (j *jsiiProxy_LakeformationResource) validateSetCountParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_LakeformationResource) validateSetHybridAccessEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LakeformationResource) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -120,6 +124,10 @@ func (j *jsiiProxy_LakeformationResource) validateSetRoleArnParameters(val *stri
 }
 
 func (j *jsiiProxy_LakeformationResource) validateSetUseServiceLinkedRoleParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_LakeformationResource) validateSetWithFederationParameters(val interface{}) error {
 	return nil
 }
 
