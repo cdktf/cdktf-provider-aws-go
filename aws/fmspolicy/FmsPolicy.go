@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/fms_policy aws_fms_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/fms_policy aws_fms_policy}.
 type FmsPolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -665,7 +665,7 @@ func (j *jsiiProxy_FmsPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/fms_policy aws_fms_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/fms_policy aws_fms_policy} Resource.
 func NewFmsPolicy(scope constructs.Construct, id *string, config *FmsPolicyConfig) FmsPolicy {
 	_init_.Initialize()
 
@@ -683,7 +683,7 @@ func NewFmsPolicy(scope constructs.Construct, id *string, config *FmsPolicyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/fms_policy aws_fms_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/fms_policy aws_fms_policy} Resource.
 func NewFmsPolicy_Override(f FmsPolicy, scope constructs.Construct, id *string, config *FmsPolicyConfig) {
 	_init_.Initialize()
 

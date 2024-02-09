@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/redshift_cluster aws_redshift_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/redshift_cluster aws_redshift_cluster}.
 type RedshiftCluster interface {
 	cdktf.TerraformResource
 	AllowVersionUpgrade() interface{}
@@ -1443,7 +1443,7 @@ func (j *jsiiProxy_RedshiftCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
 func NewRedshiftCluster(scope constructs.Construct, id *string, config *RedshiftClusterConfig) RedshiftCluster {
 	_init_.Initialize()
 
@@ -1461,7 +1461,7 @@ func NewRedshiftCluster(scope constructs.Construct, id *string, config *Redshift
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/redshift_cluster aws_redshift_cluster} Resource.
 func NewRedshiftCluster_Override(r RedshiftCluster, scope constructs.Construct, id *string, config *RedshiftClusterConfig) {
 	_init_.Initialize()
 

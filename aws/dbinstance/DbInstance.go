@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/db_instance aws_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/db_instance aws_db_instance}.
 type DbInstance interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -88,10 +88,22 @@ type DbInstance interface {
 	SetDependsOn(val *[]*string)
 	Domain() *string
 	SetDomain(val *string)
+	DomainAuthSecretArn() *string
+	SetDomainAuthSecretArn(val *string)
+	DomainAuthSecretArnInput() *string
+	DomainDnsIps() *[]*string
+	SetDomainDnsIps(val *[]*string)
+	DomainDnsIpsInput() *[]*string
+	DomainFqdn() *string
+	SetDomainFqdn(val *string)
+	DomainFqdnInput() *string
 	DomainIamRoleName() *string
 	SetDomainIamRoleName(val *string)
 	DomainIamRoleNameInput() *string
 	DomainInput() *string
+	DomainOu() *string
+	SetDomainOu(val *string)
+	DomainOuInput() *string
 	EnabledCloudwatchLogsExports() *[]*string
 	SetEnabledCloudwatchLogsExports(val *[]*string)
 	EnabledCloudwatchLogsExportsInput() *[]*string
@@ -326,7 +338,11 @@ type DbInstance interface {
 	ResetDeleteAutomatedBackups()
 	ResetDeletionProtection()
 	ResetDomain()
+	ResetDomainAuthSecretArn()
+	ResetDomainDnsIps()
+	ResetDomainFqdn()
 	ResetDomainIamRoleName()
+	ResetDomainOu()
 	ResetEnabledCloudwatchLogsExports()
 	ResetEngine()
 	ResetEngineVersion()
@@ -831,6 +847,66 @@ func (j *jsiiProxy_DbInstance) Domain() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DbInstance) DomainAuthSecretArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainAuthSecretArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) DomainAuthSecretArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainAuthSecretArnInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) DomainDnsIps() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"domainDnsIps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) DomainDnsIpsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"domainDnsIpsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) DomainFqdn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainFqdn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) DomainFqdnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainFqdnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DbInstance) DomainIamRoleName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -856,6 +932,26 @@ func (j *jsiiProxy_DbInstance) DomainInput() *string {
 	_jsii_.Get(
 		j,
 		"domainInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) DomainOu() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainOu",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) DomainOuInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainOuInput",
 		&returns,
 	)
 	return returns
@@ -1942,7 +2038,7 @@ func (j *jsiiProxy_DbInstance) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/db_instance aws_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/db_instance aws_db_instance} Resource.
 func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceConfig) DbInstance {
 	_init_.Initialize()
 
@@ -1960,7 +2056,7 @@ func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/db_instance aws_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/db_instance aws_db_instance} Resource.
 func NewDbInstance_Override(d DbInstance, scope constructs.Construct, id *string, config *DbInstanceConfig) {
 	_init_.Initialize()
 
@@ -2199,6 +2295,39 @@ func (j *jsiiProxy_DbInstance)SetDomain(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DbInstance)SetDomainAuthSecretArn(val *string) {
+	if err := j.validateSetDomainAuthSecretArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainAuthSecretArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DbInstance)SetDomainDnsIps(val *[]*string) {
+	if err := j.validateSetDomainDnsIpsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainDnsIps",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DbInstance)SetDomainFqdn(val *string) {
+	if err := j.validateSetDomainFqdnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainFqdn",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DbInstance)SetDomainIamRoleName(val *string) {
 	if err := j.validateSetDomainIamRoleNameParameters(val); err != nil {
 		panic(err)
@@ -2206,6 +2335,17 @@ func (j *jsiiProxy_DbInstance)SetDomainIamRoleName(val *string) {
 	_jsii_.Set(
 		j,
 		"domainIamRoleName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DbInstance)SetDomainOu(val *string) {
+	if err := j.validateSetDomainOuParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainOu",
 		val,
 	)
 }
@@ -3248,10 +3388,42 @@ func (d *jsiiProxy_DbInstance) ResetDomain() {
 	)
 }
 
+func (d *jsiiProxy_DbInstance) ResetDomainAuthSecretArn() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDomainAuthSecretArn",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbInstance) ResetDomainDnsIps() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDomainDnsIps",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbInstance) ResetDomainFqdn() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDomainFqdn",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DbInstance) ResetDomainIamRoleName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDomainIamRoleName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbInstance) ResetDomainOu() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDomainOu",
 		nil, // no parameters
 	)
 }

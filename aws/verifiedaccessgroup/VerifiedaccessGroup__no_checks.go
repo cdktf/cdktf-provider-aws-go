@@ -75,6 +75,10 @@ func (v *jsiiProxy_VerifiedaccessGroup) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (v *jsiiProxy_VerifiedaccessGroup) validatePutSseConfigurationParameters(value *VerifiedaccessGroupSseConfiguration) error {
+	return nil
+}
+
 func validateVerifiedaccessGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

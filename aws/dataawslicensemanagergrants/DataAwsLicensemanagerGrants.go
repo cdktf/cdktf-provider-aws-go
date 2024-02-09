@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/licensemanager_grants aws_licensemanager_grants}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/licensemanager_grants aws_licensemanager_grants}.
 type DataAwsLicensemanagerGrants interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataAwsLicensemanagerGrants) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/licensemanager_grants aws_licensemanager_grants} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/licensemanager_grants aws_licensemanager_grants} Data Source.
 func NewDataAwsLicensemanagerGrants(scope constructs.Construct, id *string, config *DataAwsLicensemanagerGrantsConfig) DataAwsLicensemanagerGrants {
 	_init_.Initialize()
 
@@ -318,7 +318,7 @@ func NewDataAwsLicensemanagerGrants(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/data-sources/licensemanager_grants aws_licensemanager_grants} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/licensemanager_grants aws_licensemanager_grants} Data Source.
 func NewDataAwsLicensemanagerGrants_Override(d DataAwsLicensemanagerGrants, scope constructs.Construct, id *string, config *DataAwsLicensemanagerGrantsConfig) {
 	_init_.Initialize()
 

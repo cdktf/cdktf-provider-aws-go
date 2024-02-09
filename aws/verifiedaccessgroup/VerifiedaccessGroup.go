@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group}.
 type VerifiedaccessGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -68,6 +68,8 @@ type VerifiedaccessGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SseConfiguration() VerifiedaccessGroupSseConfigurationOutputReference
+	SseConfigurationInput() *VerifiedaccessGroupSseConfiguration
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -128,12 +130,14 @@ type VerifiedaccessGroup interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutSseConfiguration(value *VerifiedaccessGroupSseConfiguration)
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicyDocument()
+	ResetSseConfiguration()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -384,6 +388,26 @@ func (j *jsiiProxy_VerifiedaccessGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_VerifiedaccessGroup) SseConfiguration() VerifiedaccessGroupSseConfigurationOutputReference {
+	var returns VerifiedaccessGroupSseConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"sseConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VerifiedaccessGroup) SseConfigurationInput() *VerifiedaccessGroupSseConfiguration {
+	var returns *VerifiedaccessGroupSseConfiguration
+	_jsii_.Get(
+		j,
+		"sseConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VerifiedaccessGroup) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -495,7 +519,7 @@ func (j *jsiiProxy_VerifiedaccessGroup) VerifiedaccessInstanceIdInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group} Resource.
 func NewVerifiedaccessGroup(scope constructs.Construct, id *string, config *VerifiedaccessGroupConfig) VerifiedaccessGroup {
 	_init_.Initialize()
 
@@ -513,7 +537,7 @@ func NewVerifiedaccessGroup(scope constructs.Construct, id *string, config *Veri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/verifiedaccess_group aws_verifiedaccess_group} Resource.
 func NewVerifiedaccessGroup_Override(v VerifiedaccessGroup, scope constructs.Construct, id *string, config *VerifiedaccessGroupConfig) {
 	_init_.Initialize()
 
@@ -1011,6 +1035,17 @@ func (v *jsiiProxy_VerifiedaccessGroup) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (v *jsiiProxy_VerifiedaccessGroup) PutSseConfiguration(value *VerifiedaccessGroupSseConfiguration) {
+	if err := v.validatePutSseConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putSseConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VerifiedaccessGroup) ResetDescription() {
 	_jsii_.InvokeVoid(
 		v,
@@ -1039,6 +1074,14 @@ func (v *jsiiProxy_VerifiedaccessGroup) ResetPolicyDocument() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetPolicyDocument",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VerifiedaccessGroup) ResetSseConfiguration() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetSseConfiguration",
 		nil, // no parameters
 	)
 }

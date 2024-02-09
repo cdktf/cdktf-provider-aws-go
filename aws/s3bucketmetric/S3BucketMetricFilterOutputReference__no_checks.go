@@ -51,6 +51,10 @@ func (s *jsiiProxy_S3BucketMetricFilterOutputReference) validateResolveParameter
 	return nil
 }
 
+func (j *jsiiProxy_S3BucketMetricFilterOutputReference) validateSetAccessPointParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_S3BucketMetricFilterOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

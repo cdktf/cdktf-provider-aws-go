@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/docdb_cluster_instance aws_docdb_cluster_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/docdb_cluster_instance aws_docdb_cluster_instance}.
 type DocdbClusterInstance interface {
 	cdktf.TerraformResource
 	ApplyImmediately() interface{}
@@ -837,7 +837,7 @@ func (j *jsiiProxy_DocdbClusterInstance) Writer() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/docdb_cluster_instance aws_docdb_cluster_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/docdb_cluster_instance aws_docdb_cluster_instance} Resource.
 func NewDocdbClusterInstance(scope constructs.Construct, id *string, config *DocdbClusterInstanceConfig) DocdbClusterInstance {
 	_init_.Initialize()
 
@@ -855,7 +855,7 @@ func NewDocdbClusterInstance(scope constructs.Construct, id *string, config *Doc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/docdb_cluster_instance aws_docdb_cluster_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/docdb_cluster_instance aws_docdb_cluster_instance} Resource.
 func NewDocdbClusterInstance_Override(d DocdbClusterInstance, scope constructs.Construct, id *string, config *DocdbClusterInstanceConfig) {
 	_init_.Initialize()
 

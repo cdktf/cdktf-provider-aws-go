@@ -13,6 +13,9 @@ import (
 
 type S3BucketMetricFilterOutputReference interface {
 	cdktf.ComplexObject
+	AccessPoint() *string
+	SetAccessPoint(val *string)
+	AccessPointInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +73,7 @@ type S3BucketMetricFilterOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAccessPoint()
 	ResetPrefix()
 	ResetTags()
 	// Produce the Token's value at resolution time.
@@ -85,6 +89,26 @@ type S3BucketMetricFilterOutputReference interface {
 // The jsii proxy struct for S3BucketMetricFilterOutputReference
 type jsiiProxy_S3BucketMetricFilterOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_S3BucketMetricFilterOutputReference) AccessPoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessPoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_S3BucketMetricFilterOutputReference) AccessPointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessPointInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_S3BucketMetricFilterOutputReference) ComplexObjectIndex() interface{} {
@@ -222,6 +246,17 @@ func NewS3BucketMetricFilterOutputReference_Override(s S3BucketMetricFilterOutpu
 		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetricFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
+	)
+}
+
+func (j *jsiiProxy_S3BucketMetricFilterOutputReference)SetAccessPoint(val *string) {
+	if err := j.validateSetAccessPointParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessPoint",
+		val,
 	)
 }
 
@@ -486,6 +521,14 @@ func (s *jsiiProxy_S3BucketMetricFilterOutputReference) InterpolationForAttribut
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_S3BucketMetricFilterOutputReference) ResetAccessPoint() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAccessPoint",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_S3BucketMetricFilterOutputReference) ResetPrefix() {

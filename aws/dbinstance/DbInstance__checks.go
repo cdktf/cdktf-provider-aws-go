@@ -609,7 +609,39 @@ func (j *jsiiProxy_DbInstance) validateSetDomainParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_DbInstance) validateSetDomainAuthSecretArnParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DbInstance) validateSetDomainDnsIpsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DbInstance) validateSetDomainFqdnParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DbInstance) validateSetDomainIamRoleNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DbInstance) validateSetDomainOuParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

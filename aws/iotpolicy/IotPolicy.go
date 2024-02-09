@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/iot_policy aws_iot_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/iot_policy aws_iot_policy}.
 type IotPolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -402,7 +402,7 @@ func (j *jsiiProxy_IotPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/iot_policy aws_iot_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/iot_policy aws_iot_policy} Resource.
 func NewIotPolicy(scope constructs.Construct, id *string, config *IotPolicyConfig) IotPolicy {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewIotPolicy(scope constructs.Construct, id *string, config *IotPolicyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/iot_policy aws_iot_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/iot_policy aws_iot_policy} Resource.
 func NewIotPolicy_Override(i IotPolicy, scope constructs.Construct, id *string, config *IotPolicyConfig) {
 	_init_.Initialize()
 

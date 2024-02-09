@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/route_table aws_route_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/route_table aws_route_table}.
 type RouteTable interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -475,7 +475,7 @@ func (j *jsiiProxy_RouteTable) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/route_table aws_route_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/route_table aws_route_table} Resource.
 func NewRouteTable(scope constructs.Construct, id *string, config *RouteTableConfig) RouteTable {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewRouteTable(scope constructs.Construct, id *string, config *RouteTableCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.35.0/docs/resources/route_table aws_route_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/route_table aws_route_table} Resource.
 func NewRouteTable_Override(r RouteTable, scope constructs.Construct, id *string, config *RouteTableConfig) {
 	_init_.Initialize()
 

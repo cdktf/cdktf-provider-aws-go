@@ -85,6 +85,8 @@ func init() {
 		"@cdktf/provider-aws.s3BucketMetric.S3BucketMetricFilterOutputReference",
 		reflect.TypeOf((*S3BucketMetricFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "accessPoint", GoGetter: "AccessPoint"},
+			_jsii_.MemberProperty{JsiiProperty: "accessPointInput", GoGetter: "AccessPointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -104,6 +106,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "prefix", GoGetter: "Prefix"},
 			_jsii_.MemberProperty{JsiiProperty: "prefixInput", GoGetter: "PrefixInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccessPoint", GoMethod: "ResetAccessPoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrefix", GoMethod: "ResetPrefix"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
