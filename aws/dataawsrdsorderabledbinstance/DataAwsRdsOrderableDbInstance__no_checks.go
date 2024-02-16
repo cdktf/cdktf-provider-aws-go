@@ -83,6 +83,10 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetEngineParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetEngineLatestVersionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetEngineVersionParameters(val *string) error {
 	return nil
 }
@@ -111,7 +115,23 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetPreferredInstanceCl
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetReadReplicaCapableParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetStorageTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportedEngineModesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportedNetworkTypesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsClustersParameters(val interface{}) error {
 	return nil
 }
 
@@ -132,6 +152,10 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsIopsParamet
 }
 
 func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsKerberosAuthenticationParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) validateSetSupportsMultiAzParameters(val interface{}) error {
 	return nil
 }
 

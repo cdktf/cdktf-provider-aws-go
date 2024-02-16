@@ -79,6 +79,10 @@ func (g *jsiiProxy_GlueCatalogDatabase) validatePutCreateTableDefaultPermissionP
 	return nil
 }
 
+func (g *jsiiProxy_GlueCatalogDatabase) validatePutFederatedDatabaseParameters(value *GlueCatalogDatabaseFederatedDatabase) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueCatalogDatabase) validatePutTargetDatabaseParameters(value *GlueCatalogDatabaseTargetDatabase) error {
 	return nil
 }

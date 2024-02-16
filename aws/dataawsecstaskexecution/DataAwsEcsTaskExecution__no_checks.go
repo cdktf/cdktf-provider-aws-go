@@ -91,6 +91,10 @@ func validateDataAwsEcsTaskExecution_IsTerraformElementParameters(x interface{})
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsEcsTaskExecution) validateSetClientTokenParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsEcsTaskExecution) validateSetClusterParameters(val *string) error {
 	return nil
 }

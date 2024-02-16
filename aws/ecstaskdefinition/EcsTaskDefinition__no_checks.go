@@ -187,6 +187,10 @@ func (j *jsiiProxy_EcsTaskDefinition) validateSetTaskRoleArnParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_EcsTaskDefinition) validateSetTrackLatestParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewEcsTaskDefinitionParameters(scope constructs.Construct, id *string, config *EcsTaskDefinitionConfig) error {
 	return nil
 }

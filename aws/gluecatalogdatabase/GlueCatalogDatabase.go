@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database aws_glue_catalog_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database aws_glue_catalog_database}.
 type GlueCatalogDatabase interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -40,6 +40,8 @@ type GlueCatalogDatabase interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	FederatedDatabase() GlueCatalogDatabaseFederatedDatabaseOutputReference
+	FederatedDatabaseInput() *GlueCatalogDatabaseFederatedDatabase
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -134,10 +136,12 @@ type GlueCatalogDatabase interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCreateTableDefaultPermission(value interface{})
+	PutFederatedDatabase(value *GlueCatalogDatabaseFederatedDatabase)
 	PutTargetDatabase(value *GlueCatalogDatabaseTargetDatabase)
 	ResetCatalogId()
 	ResetCreateTableDefaultPermission()
 	ResetDescription()
+	ResetFederatedDatabase()
 	ResetId()
 	ResetLocationUri()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -280,6 +284,26 @@ func (j *jsiiProxy_GlueCatalogDatabase) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCatalogDatabase) FederatedDatabase() GlueCatalogDatabaseFederatedDatabaseOutputReference {
+	var returns GlueCatalogDatabaseFederatedDatabaseOutputReference
+	_jsii_.Get(
+		j,
+		"federatedDatabase",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCatalogDatabase) FederatedDatabaseInput() *GlueCatalogDatabaseFederatedDatabase {
+	var returns *GlueCatalogDatabaseFederatedDatabase
+	_jsii_.Get(
+		j,
+		"federatedDatabaseInput",
 		&returns,
 	)
 	return returns
@@ -536,7 +560,7 @@ func (j *jsiiProxy_GlueCatalogDatabase) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database aws_glue_catalog_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database aws_glue_catalog_database} Resource.
 func NewGlueCatalogDatabase(scope constructs.Construct, id *string, config *GlueCatalogDatabaseConfig) GlueCatalogDatabase {
 	_init_.Initialize()
 
@@ -554,7 +578,7 @@ func NewGlueCatalogDatabase(scope constructs.Construct, id *string, config *Glue
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/glue_catalog_database aws_glue_catalog_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/glue_catalog_database aws_glue_catalog_database} Resource.
 func NewGlueCatalogDatabase_Override(g GlueCatalogDatabase, scope constructs.Construct, id *string, config *GlueCatalogDatabaseConfig) {
 	_init_.Initialize()
 
@@ -1085,6 +1109,17 @@ func (g *jsiiProxy_GlueCatalogDatabase) PutCreateTableDefaultPermission(value in
 	)
 }
 
+func (g *jsiiProxy_GlueCatalogDatabase) PutFederatedDatabase(value *GlueCatalogDatabaseFederatedDatabase) {
+	if err := g.validatePutFederatedDatabaseParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putFederatedDatabase",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GlueCatalogDatabase) PutTargetDatabase(value *GlueCatalogDatabaseTargetDatabase) {
 	if err := g.validatePutTargetDatabaseParameters(value); err != nil {
 		panic(err)
@@ -1116,6 +1151,14 @@ func (g *jsiiProxy_GlueCatalogDatabase) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueCatalogDatabase) ResetFederatedDatabase() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFederatedDatabase",
 		nil, // no parameters
 	)
 }

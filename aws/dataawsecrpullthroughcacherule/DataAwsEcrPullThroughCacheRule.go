@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule}.
 type DataAwsEcrPullThroughCacheRule interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -23,6 +23,7 @@ type DataAwsEcrPullThroughCacheRule interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CredentialArn() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -134,6 +135,16 @@ func (j *jsiiProxy_DataAwsEcrPullThroughCacheRule) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcrPullThroughCacheRule) CredentialArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialArn",
 		&returns,
 	)
 	return returns
@@ -310,7 +321,7 @@ func (j *jsiiProxy_DataAwsEcrPullThroughCacheRule) UpstreamRegistryUrl() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule} Data Source.
 func NewDataAwsEcrPullThroughCacheRule(scope constructs.Construct, id *string, config *DataAwsEcrPullThroughCacheRuleConfig) DataAwsEcrPullThroughCacheRule {
 	_init_.Initialize()
 
@@ -328,7 +339,7 @@ func NewDataAwsEcrPullThroughCacheRule(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule} Data Source.
 func NewDataAwsEcrPullThroughCacheRule_Override(d DataAwsEcrPullThroughCacheRule, scope constructs.Construct, id *string, config *DataAwsEcrPullThroughCacheRuleConfig) {
 	_init_.Initialize()
 

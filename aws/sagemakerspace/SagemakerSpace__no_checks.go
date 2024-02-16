@@ -75,7 +75,15 @@ func (s *jsiiProxy_SagemakerSpace) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerSpace) validatePutOwnershipSettingsParameters(value *SagemakerSpaceOwnershipSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerSpace) validatePutSpaceSettingsParameters(value *SagemakerSpaceSpaceSettings) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerSpace) validatePutSpaceSharingSettingsParameters(value *SagemakerSpaceSpaceSharingSettings) error {
 	return nil
 }
 

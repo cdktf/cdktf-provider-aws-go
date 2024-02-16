@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/rds_engine_version aws_rds_engine_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_engine_version aws_rds_engine_version}.
 type DataAwsRdsEngineVersion interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -52,6 +52,9 @@ type DataAwsRdsEngineVersion interface {
 	IncludeAll() interface{}
 	SetIncludeAll(val interface{})
 	IncludeAllInput() interface{}
+	Latest() interface{}
+	SetLatest(val interface{})
+	LatestInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -61,6 +64,12 @@ type DataAwsRdsEngineVersion interface {
 	ParameterGroupFamily() *string
 	SetParameterGroupFamily(val *string)
 	ParameterGroupFamilyInput() *string
+	PreferredMajorTargets() *[]*string
+	SetPreferredMajorTargets(val *[]*string)
+	PreferredMajorTargetsInput() *[]*string
+	PreferredUpgradeTargets() *[]*string
+	SetPreferredUpgradeTargets(val *[]*string)
+	PreferredUpgradeTargetsInput() *[]*string
 	PreferredVersions() *[]*string
 	SetPreferredVersions(val *[]*string)
 	PreferredVersionsInput() *[]*string
@@ -88,6 +97,7 @@ type DataAwsRdsEngineVersion interface {
 	ValidUpgradeTargets() *[]*string
 	Version() *string
 	SetVersion(val *string)
+	VersionActual() *string
 	VersionDescription() *string
 	VersionInput() *string
 	// Experimental.
@@ -120,10 +130,13 @@ type DataAwsRdsEngineVersion interface {
 	ResetFilter()
 	ResetId()
 	ResetIncludeAll()
+	ResetLatest()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameterGroupFamily()
+	ResetPreferredMajorTargets()
+	ResetPreferredUpgradeTargets()
 	ResetPreferredVersions()
 	ResetVersion()
 	SynthesizeAttributes() *map[string]interface{}
@@ -345,6 +358,26 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) IncludeAllInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsRdsEngineVersion) Latest() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"latest",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion) LatestInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"latestInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsRdsEngineVersion) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -380,6 +413,46 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) ParameterGroupFamilyInput() *string 
 	_jsii_.Get(
 		j,
 		"parameterGroupFamilyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion) PreferredMajorTargets() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"preferredMajorTargets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion) PreferredMajorTargetsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"preferredMajorTargetsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion) PreferredUpgradeTargets() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"preferredUpgradeTargets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion) PreferredUpgradeTargetsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"preferredUpgradeTargetsInput",
 		&returns,
 	)
 	return returns
@@ -565,6 +638,16 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) Version() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsRdsEngineVersion) VersionActual() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionActual",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsRdsEngineVersion) VersionDescription() *string {
 	var returns *string
 	_jsii_.Get(
@@ -586,7 +669,7 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/rds_engine_version aws_rds_engine_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_engine_version aws_rds_engine_version} Data Source.
 func NewDataAwsRdsEngineVersion(scope constructs.Construct, id *string, config *DataAwsRdsEngineVersionConfig) DataAwsRdsEngineVersion {
 	_init_.Initialize()
 
@@ -604,7 +687,7 @@ func NewDataAwsRdsEngineVersion(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/rds_engine_version aws_rds_engine_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_engine_version aws_rds_engine_version} Data Source.
 func NewDataAwsRdsEngineVersion_Override(d DataAwsRdsEngineVersion, scope constructs.Construct, id *string, config *DataAwsRdsEngineVersionConfig) {
 	_init_.Initialize()
 
@@ -686,6 +769,17 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion)SetIncludeAll(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_DataAwsRdsEngineVersion)SetLatest(val interface{}) {
+	if err := j.validateSetLatestParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"latest",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataAwsRdsEngineVersion)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -704,6 +798,28 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion)SetParameterGroupFamily(val *string) 
 	_jsii_.Set(
 		j,
 		"parameterGroupFamily",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion)SetPreferredMajorTargets(val *[]*string) {
+	if err := j.validateSetPreferredMajorTargetsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preferredMajorTargets",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion)SetPreferredUpgradeTargets(val *[]*string) {
+	if err := j.validateSetPreferredUpgradeTargetsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preferredUpgradeTargets",
 		val,
 	)
 }
@@ -1066,6 +1182,14 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) ResetIncludeAll() {
 	)
 }
 
+func (d *jsiiProxy_DataAwsRdsEngineVersion) ResetLatest() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetLatest",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataAwsRdsEngineVersion) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1078,6 +1202,22 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) ResetParameterGroupFamily() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetParameterGroupFamily",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsRdsEngineVersion) ResetPreferredMajorTargets() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPreferredMajorTargets",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsRdsEngineVersion) ResetPreferredUpgradeTargets() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetPreferredUpgradeTargets",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule}.
 type EcrPullThroughCacheRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,9 @@ type EcrPullThroughCacheRule interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CredentialArn() *string
+	SetCredentialArn(val *string)
+	CredentialArnInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -114,6 +117,7 @@ type EcrPullThroughCacheRule interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetCredentialArn()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -171,6 +175,26 @@ func (j *jsiiProxy_EcrPullThroughCacheRule) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcrPullThroughCacheRule) CredentialArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcrPullThroughCacheRule) CredentialArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"credentialArnInput",
 		&returns,
 	)
 	return returns
@@ -367,7 +391,7 @@ func (j *jsiiProxy_EcrPullThroughCacheRule) UpstreamRegistryUrlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule} Resource.
 func NewEcrPullThroughCacheRule(scope constructs.Construct, id *string, config *EcrPullThroughCacheRuleConfig) EcrPullThroughCacheRule {
 	_init_.Initialize()
 
@@ -385,7 +409,7 @@ func NewEcrPullThroughCacheRule(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/ecr_pull_through_cache_rule aws_ecr_pull_through_cache_rule} Resource.
 func NewEcrPullThroughCacheRule_Override(e EcrPullThroughCacheRule, scope constructs.Construct, id *string, config *EcrPullThroughCacheRuleConfig) {
 	_init_.Initialize()
 
@@ -414,6 +438,17 @@ func (j *jsiiProxy_EcrPullThroughCacheRule)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcrPullThroughCacheRule)SetCredentialArn(val *string) {
+	if err := j.validateSetCredentialArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"credentialArn",
 		val,
 	)
 }
@@ -847,6 +882,14 @@ func (e *jsiiProxy_EcrPullThroughCacheRule) OverrideLogicalId(newLogicalId *stri
 		e,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (e *jsiiProxy_EcrPullThroughCacheRule) ResetCredentialArn() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetCredentialArn",
+		nil, // no parameters
 	)
 }
 

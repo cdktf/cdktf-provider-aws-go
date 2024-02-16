@@ -47,6 +47,18 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) validateInterpola
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) validatePutCodeEditorAppSettingsParameters(value *SagemakerSpaceSpaceSettingsCodeEditorAppSettings) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) validatePutCustomFileSystemParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) validatePutJupyterLabAppSettingsParameters(value *SagemakerSpaceSpaceSettingsJupyterLabAppSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) validatePutJupyterServerAppSettingsParameters(value *SagemakerSpaceSpaceSettingsJupyterServerAppSettings) error {
 	return nil
 }
@@ -55,7 +67,15 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) validatePutKernel
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) validatePutSpaceStorageSettingsParameters(value *SagemakerSpaceSpaceSettingsSpaceStorageSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) validateSetAppTypeParameters(val *string) error {
 	return nil
 }
 

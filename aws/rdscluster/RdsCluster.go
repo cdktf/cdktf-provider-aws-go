@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/rds_cluster aws_rds_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/rds_cluster aws_rds_cluster}.
 type RdsCluster interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -87,6 +87,12 @@ type RdsCluster interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Domain() *string
+	SetDomain(val *string)
+	DomainIamRoleName() *string
+	SetDomainIamRoleName(val *string)
+	DomainIamRoleNameInput() *string
+	DomainInput() *string
 	EnabledCloudwatchLogsExports() *[]*string
 	SetEnabledCloudwatchLogsExports(val *[]*string)
 	EnabledCloudwatchLogsExportsInput() *[]*string
@@ -288,6 +294,8 @@ type RdsCluster interface {
 	ResetDbSystemId()
 	ResetDeleteAutomatedBackups()
 	ResetDeletionProtection()
+	ResetDomain()
+	ResetDomainIamRoleName()
 	ResetEnabledCloudwatchLogsExports()
 	ResetEnableGlobalWriteForwarding()
 	ResetEnableHttpEndpoint()
@@ -768,6 +776,46 @@ func (j *jsiiProxy_RdsCluster) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) Domain() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domain",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) DomainIamRoleName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainIamRoleName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) DomainIamRoleNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainIamRoleNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) DomainInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainInput",
 		&returns,
 	)
 	return returns
@@ -1634,7 +1682,7 @@ func (j *jsiiProxy_RdsCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
 func NewRdsCluster(scope constructs.Construct, id *string, config *RdsClusterConfig) RdsCluster {
 	_init_.Initialize()
 
@@ -1652,7 +1700,7 @@ func NewRdsCluster(scope constructs.Construct, id *string, config *RdsClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
 func NewRdsCluster_Override(r RdsCluster, scope constructs.Construct, id *string, config *RdsClusterConfig) {
 	_init_.Initialize()
 
@@ -1887,6 +1935,28 @@ func (j *jsiiProxy_RdsCluster)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsCluster)SetDomain(val *string) {
+	if err := j.validateSetDomainParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domain",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsCluster)SetDomainIamRoleName(val *string) {
+	if err := j.validateSetDomainIamRoleNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"domainIamRoleName",
 		val,
 	)
 }
@@ -2807,6 +2877,22 @@ func (r *jsiiProxy_RdsCluster) ResetDeletionProtection() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetDeletionProtection",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsCluster) ResetDomain() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDomain",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsCluster) ResetDomainIamRoleName() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetDomainIamRoleName",
 		nil, // no parameters
 	)
 }

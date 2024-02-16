@@ -13,6 +13,11 @@ import (
 
 type SagemakerSpaceSpaceSettingsOutputReference interface {
 	cdktf.ComplexObject
+	AppType() *string
+	SetAppType(val *string)
+	AppTypeInput() *string
+	CodeEditorAppSettings() SagemakerSpaceSpaceSettingsCodeEditorAppSettingsOutputReference
+	CodeEditorAppSettingsInput() *SagemakerSpaceSpaceSettingsCodeEditorAppSettings
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,14 +33,20 @@ type SagemakerSpaceSpaceSettingsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomFileSystem() SagemakerSpaceSpaceSettingsCustomFileSystemList
+	CustomFileSystemInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *SagemakerSpaceSpaceSettings
 	SetInternalValue(val *SagemakerSpaceSpaceSettings)
+	JupyterLabAppSettings() SagemakerSpaceSpaceSettingsJupyterLabAppSettingsOutputReference
+	JupyterLabAppSettingsInput() *SagemakerSpaceSpaceSettingsJupyterLabAppSettings
 	JupyterServerAppSettings() SagemakerSpaceSpaceSettingsJupyterServerAppSettingsOutputReference
 	JupyterServerAppSettingsInput() *SagemakerSpaceSpaceSettingsJupyterServerAppSettings
 	KernelGatewayAppSettings() SagemakerSpaceSpaceSettingsKernelGatewayAppSettingsOutputReference
 	KernelGatewayAppSettingsInput() *SagemakerSpaceSpaceSettingsKernelGatewayAppSettings
+	SpaceStorageSettings() SagemakerSpaceSpaceSettingsSpaceStorageSettingsOutputReference
+	SpaceStorageSettingsInput() *SagemakerSpaceSpaceSettingsSpaceStorageSettings
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,10 +79,19 @@ type SagemakerSpaceSpaceSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCodeEditorAppSettings(value *SagemakerSpaceSpaceSettingsCodeEditorAppSettings)
+	PutCustomFileSystem(value interface{})
+	PutJupyterLabAppSettings(value *SagemakerSpaceSpaceSettingsJupyterLabAppSettings)
 	PutJupyterServerAppSettings(value *SagemakerSpaceSpaceSettingsJupyterServerAppSettings)
 	PutKernelGatewayAppSettings(value *SagemakerSpaceSpaceSettingsKernelGatewayAppSettings)
+	PutSpaceStorageSettings(value *SagemakerSpaceSpaceSettingsSpaceStorageSettings)
+	ResetAppType()
+	ResetCodeEditorAppSettings()
+	ResetCustomFileSystem()
+	ResetJupyterLabAppSettings()
 	ResetJupyterServerAppSettings()
 	ResetKernelGatewayAppSettings()
+	ResetSpaceStorageSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -85,6 +105,46 @@ type SagemakerSpaceSpaceSettingsOutputReference interface {
 // The jsii proxy struct for SagemakerSpaceSpaceSettingsOutputReference
 type jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) AppType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) AppTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"appTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) CodeEditorAppSettings() SagemakerSpaceSpaceSettingsCodeEditorAppSettingsOutputReference {
+	var returns SagemakerSpaceSpaceSettingsCodeEditorAppSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"codeEditorAppSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) CodeEditorAppSettingsInput() *SagemakerSpaceSpaceSettingsCodeEditorAppSettings {
+	var returns *SagemakerSpaceSpaceSettingsCodeEditorAppSettings
+	_jsii_.Get(
+		j,
+		"codeEditorAppSettingsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) ComplexObjectIndex() interface{} {
@@ -117,6 +177,26 @@ func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) CreationStack() *
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) CustomFileSystem() SagemakerSpaceSpaceSettingsCustomFileSystemList {
+	var returns SagemakerSpaceSpaceSettingsCustomFileSystemList
+	_jsii_.Get(
+		j,
+		"customFileSystem",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) CustomFileSystemInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customFileSystemInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -132,6 +212,26 @@ func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) InternalValue() *
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) JupyterLabAppSettings() SagemakerSpaceSpaceSettingsJupyterLabAppSettingsOutputReference {
+	var returns SagemakerSpaceSpaceSettingsJupyterLabAppSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"jupyterLabAppSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) JupyterLabAppSettingsInput() *SagemakerSpaceSpaceSettingsJupyterLabAppSettings {
+	var returns *SagemakerSpaceSpaceSettingsJupyterLabAppSettings
+	_jsii_.Get(
+		j,
+		"jupyterLabAppSettingsInput",
 		&returns,
 	)
 	return returns
@@ -172,6 +272,26 @@ func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) KernelGatewayAppS
 	_jsii_.Get(
 		j,
 		"kernelGatewayAppSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) SpaceStorageSettings() SagemakerSpaceSpaceSettingsSpaceStorageSettingsOutputReference {
+	var returns SagemakerSpaceSpaceSettingsSpaceStorageSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"spaceStorageSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) SpaceStorageSettingsInput() *SagemakerSpaceSpaceSettingsSpaceStorageSettings {
+	var returns *SagemakerSpaceSpaceSettingsSpaceStorageSettings
+	_jsii_.Get(
+		j,
+		"spaceStorageSettingsInput",
 		&returns,
 	)
 	return returns
@@ -222,6 +342,17 @@ func NewSagemakerSpaceSpaceSettingsOutputReference_Override(s SagemakerSpaceSpac
 		"@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference)SetAppType(val *string) {
+	if err := j.validateSetAppTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"appType",
+		val,
 	)
 }
 
@@ -466,6 +597,39 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) InterpolationForA
 	return returns
 }
 
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) PutCodeEditorAppSettings(value *SagemakerSpaceSpaceSettingsCodeEditorAppSettings) {
+	if err := s.validatePutCodeEditorAppSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCodeEditorAppSettings",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) PutCustomFileSystem(value interface{}) {
+	if err := s.validatePutCustomFileSystemParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCustomFileSystem",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) PutJupyterLabAppSettings(value *SagemakerSpaceSpaceSettingsJupyterLabAppSettings) {
+	if err := s.validatePutJupyterLabAppSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putJupyterLabAppSettings",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) PutJupyterServerAppSettings(value *SagemakerSpaceSpaceSettingsJupyterServerAppSettings) {
 	if err := s.validatePutJupyterServerAppSettingsParameters(value); err != nil {
 		panic(err)
@@ -488,6 +652,49 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) PutKernelGatewayA
 	)
 }
 
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) PutSpaceStorageSettings(value *SagemakerSpaceSpaceSettingsSpaceStorageSettings) {
+	if err := s.validatePutSpaceStorageSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putSpaceStorageSettings",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) ResetAppType() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAppType",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) ResetCodeEditorAppSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCodeEditorAppSettings",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) ResetCustomFileSystem() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomFileSystem",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) ResetJupyterLabAppSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetJupyterLabAppSettings",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) ResetJupyterServerAppSettings() {
 	_jsii_.InvokeVoid(
 		s,
@@ -500,6 +707,14 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) ResetKernelGatewa
 	_jsii_.InvokeVoid(
 		s,
 		"resetKernelGatewayAppSettings",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) ResetSpaceStorageSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSpaceStorageSettings",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/codeartifact_domain aws_codeartifact_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/codeartifact_domain aws_codeartifact_domain}.
 type CodeartifactDomain interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -69,6 +69,7 @@ type CodeartifactDomain interface {
 	// Experimental.
 	RawOverrides() interface{}
 	RepositoryCount() *float64
+	S3BucketArn() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -389,6 +390,16 @@ func (j *jsiiProxy_CodeartifactDomain) RepositoryCount() *float64 {
 	return returns
 }
 
+func (j *jsiiProxy_CodeartifactDomain) S3BucketArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"s3BucketArn",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CodeartifactDomain) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -460,7 +471,7 @@ func (j *jsiiProxy_CodeartifactDomain) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/codeartifact_domain aws_codeartifact_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/codeartifact_domain aws_codeartifact_domain} Resource.
 func NewCodeartifactDomain(scope constructs.Construct, id *string, config *CodeartifactDomainConfig) CodeartifactDomain {
 	_init_.Initialize()
 
@@ -478,7 +489,7 @@ func NewCodeartifactDomain(scope constructs.Construct, id *string, config *Codea
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/codeartifact_domain aws_codeartifact_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/codeartifact_domain aws_codeartifact_domain} Resource.
 func NewCodeartifactDomain_Override(c CodeartifactDomain, scope constructs.Construct, id *string, config *CodeartifactDomainConfig) {
 	_init_.Initialize()
 

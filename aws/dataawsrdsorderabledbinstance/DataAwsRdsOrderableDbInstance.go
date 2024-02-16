@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/rds_orderable_db_instance aws_rds_orderable_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_orderable_db_instance aws_rds_orderable_db_instance}.
 type DataAwsRdsOrderableDbInstance interface {
 	cdktf.TerraformDataSource
 	AvailabilityZoneGroup() *string
@@ -34,6 +34,9 @@ type DataAwsRdsOrderableDbInstance interface {
 	Engine() *string
 	SetEngine(val *string)
 	EngineInput() *string
+	EngineLatestVersion() interface{}
+	SetEngineLatestVersion(val interface{})
+	EngineLatestVersionInput() interface{}
 	EngineVersion() *string
 	SetEngineVersion(val *string)
 	EngineVersionInput() *string
@@ -80,12 +83,21 @@ type DataAwsRdsOrderableDbInstance interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
-	ReadReplicaCapable() cdktf.IResolvable
+	ReadReplicaCapable() interface{}
+	SetReadReplicaCapable(val interface{})
+	ReadReplicaCapableInput() interface{}
 	StorageType() *string
 	SetStorageType(val *string)
 	StorageTypeInput() *string
 	SupportedEngineModes() *[]*string
+	SetSupportedEngineModes(val *[]*string)
+	SupportedEngineModesInput() *[]*string
 	SupportedNetworkTypes() *[]*string
+	SetSupportedNetworkTypes(val *[]*string)
+	SupportedNetworkTypesInput() *[]*string
+	SupportsClusters() interface{}
+	SetSupportsClusters(val interface{})
+	SupportsClustersInput() interface{}
 	SupportsEnhancedMonitoring() interface{}
 	SetSupportsEnhancedMonitoring(val interface{})
 	SupportsEnhancedMonitoringInput() interface{}
@@ -101,6 +113,9 @@ type DataAwsRdsOrderableDbInstance interface {
 	SupportsKerberosAuthentication() interface{}
 	SetSupportsKerberosAuthentication(val interface{})
 	SupportsKerberosAuthenticationInput() interface{}
+	SupportsMultiAz() interface{}
+	SetSupportsMultiAz(val interface{})
+	SupportsMultiAzInput() interface{}
 	SupportsPerformanceInsights() interface{}
 	SetSupportsPerformanceInsights(val interface{})
 	SupportsPerformanceInsightsInput() interface{}
@@ -145,6 +160,7 @@ type DataAwsRdsOrderableDbInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAvailabilityZoneGroup()
+	ResetEngineLatestVersion()
 	ResetEngineVersion()
 	ResetId()
 	ResetInstanceClass()
@@ -154,12 +170,17 @@ type DataAwsRdsOrderableDbInstance interface {
 	ResetOverrideLogicalId()
 	ResetPreferredEngineVersions()
 	ResetPreferredInstanceClasses()
+	ResetReadReplicaCapable()
 	ResetStorageType()
+	ResetSupportedEngineModes()
+	ResetSupportedNetworkTypes()
+	ResetSupportsClusters()
 	ResetSupportsEnhancedMonitoring()
 	ResetSupportsGlobalDatabases()
 	ResetSupportsIamDatabaseAuthentication()
 	ResetSupportsIops()
 	ResetSupportsKerberosAuthentication()
+	ResetSupportsMultiAz()
 	ResetSupportsPerformanceInsights()
 	ResetSupportsStorageAutoscaling()
 	ResetSupportsStorageEncryption()
@@ -268,6 +289,26 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) EngineInput() *string {
 	_jsii_.Get(
 		j,
 		"engineInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) EngineLatestVersion() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"engineLatestVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) EngineLatestVersionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"engineLatestVersionInput",
 		&returns,
 	)
 	return returns
@@ -543,11 +584,21 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) ReadReplicaCapable() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) ReadReplicaCapable() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"readReplicaCapable",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) ReadReplicaCapableInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"readReplicaCapableInput",
 		&returns,
 	)
 	return returns
@@ -583,11 +634,51 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) SupportedEngineModes() *[]*str
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) SupportedEngineModesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"supportedEngineModesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) SupportedNetworkTypes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"supportedNetworkTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) SupportedNetworkTypesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"supportedNetworkTypesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) SupportsClusters() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"supportsClusters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) SupportsClustersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"supportsClustersInput",
 		&returns,
 	)
 	return returns
@@ -688,6 +779,26 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) SupportsKerberosAuthentication
 	_jsii_.Get(
 		j,
 		"supportsKerberosAuthenticationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) SupportsMultiAz() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"supportsMultiAz",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) SupportsMultiAzInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"supportsMultiAzInput",
 		&returns,
 	)
 	return returns
@@ -804,7 +915,7 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance) VpcInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/rds_orderable_db_instance aws_rds_orderable_db_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_orderable_db_instance aws_rds_orderable_db_instance} Data Source.
 func NewDataAwsRdsOrderableDbInstance(scope constructs.Construct, id *string, config *DataAwsRdsOrderableDbInstanceConfig) DataAwsRdsOrderableDbInstance {
 	_init_.Initialize()
 
@@ -822,7 +933,7 @@ func NewDataAwsRdsOrderableDbInstance(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/rds_orderable_db_instance aws_rds_orderable_db_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/rds_orderable_db_instance aws_rds_orderable_db_instance} Data Source.
 func NewDataAwsRdsOrderableDbInstance_Override(d DataAwsRdsOrderableDbInstance, scope constructs.Construct, id *string, config *DataAwsRdsOrderableDbInstanceConfig) {
 	_init_.Initialize()
 
@@ -870,6 +981,17 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance)SetEngine(val *string) {
 	_jsii_.Set(
 		j,
 		"engine",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance)SetEngineLatestVersion(val interface{}) {
+	if err := j.validateSetEngineLatestVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"engineLatestVersion",
 		val,
 	)
 }
@@ -967,6 +1089,17 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance)SetProvider(val cdktf.Terraform
 	)
 }
 
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance)SetReadReplicaCapable(val interface{}) {
+	if err := j.validateSetReadReplicaCapableParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readReplicaCapable",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataAwsRdsOrderableDbInstance)SetStorageType(val *string) {
 	if err := j.validateSetStorageTypeParameters(val); err != nil {
 		panic(err)
@@ -974,6 +1107,39 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance)SetStorageType(val *string) {
 	_jsii_.Set(
 		j,
 		"storageType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance)SetSupportedEngineModes(val *[]*string) {
+	if err := j.validateSetSupportedEngineModesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"supportedEngineModes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance)SetSupportedNetworkTypes(val *[]*string) {
+	if err := j.validateSetSupportedNetworkTypesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"supportedNetworkTypes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance)SetSupportsClusters(val interface{}) {
+	if err := j.validateSetSupportsClustersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"supportsClusters",
 		val,
 	)
 }
@@ -1029,6 +1195,17 @@ func (j *jsiiProxy_DataAwsRdsOrderableDbInstance)SetSupportsKerberosAuthenticati
 	_jsii_.Set(
 		j,
 		"supportsKerberosAuthentication",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsRdsOrderableDbInstance)SetSupportsMultiAz(val interface{}) {
+	if err := j.validateSetSupportsMultiAzParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"supportsMultiAz",
 		val,
 	)
 }
@@ -1370,6 +1547,14 @@ func (d *jsiiProxy_DataAwsRdsOrderableDbInstance) ResetAvailabilityZoneGroup() {
 	)
 }
 
+func (d *jsiiProxy_DataAwsRdsOrderableDbInstance) ResetEngineLatestVersion() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEngineLatestVersion",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataAwsRdsOrderableDbInstance) ResetEngineVersion() {
 	_jsii_.InvokeVoid(
 		d,
@@ -1426,10 +1611,42 @@ func (d *jsiiProxy_DataAwsRdsOrderableDbInstance) ResetPreferredInstanceClasses(
 	)
 }
 
+func (d *jsiiProxy_DataAwsRdsOrderableDbInstance) ResetReadReplicaCapable() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetReadReplicaCapable",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataAwsRdsOrderableDbInstance) ResetStorageType() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetStorageType",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsRdsOrderableDbInstance) ResetSupportedEngineModes() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSupportedEngineModes",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsRdsOrderableDbInstance) ResetSupportedNetworkTypes() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSupportedNetworkTypes",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsRdsOrderableDbInstance) ResetSupportsClusters() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSupportsClusters",
 		nil, // no parameters
 	)
 }
@@ -1470,6 +1687,14 @@ func (d *jsiiProxy_DataAwsRdsOrderableDbInstance) ResetSupportsKerberosAuthentic
 	_jsii_.InvokeVoid(
 		d,
 		"resetSupportsKerberosAuthentication",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsRdsOrderableDbInstance) ResetSupportsMultiAz() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSupportsMultiAz",
 		nil, // no parameters
 	)
 }

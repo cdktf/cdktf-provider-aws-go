@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/ecs_task_definition aws_ecs_task_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/ecs_task_definition aws_ecs_task_definition}.
 type EcsTaskDefinition interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -116,6 +116,9 @@ type EcsTaskDefinition interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TrackLatest() interface{}
+	SetTrackLatest(val interface{})
+	TrackLatestInput() interface{}
 	Volume() EcsTaskDefinitionVolumeList
 	VolumeInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
@@ -187,6 +190,7 @@ type EcsTaskDefinition interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTaskRoleArn()
+	ResetTrackLatest()
 	ResetVolume()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -776,6 +780,26 @@ func (j *jsiiProxy_EcsTaskDefinition) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_EcsTaskDefinition) TrackLatest() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"trackLatest",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinition) TrackLatestInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"trackLatestInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EcsTaskDefinition) Volume() EcsTaskDefinitionVolumeList {
 	var returns EcsTaskDefinitionVolumeList
 	_jsii_.Get(
@@ -797,7 +821,7 @@ func (j *jsiiProxy_EcsTaskDefinition) VolumeInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/ecs_task_definition aws_ecs_task_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/ecs_task_definition aws_ecs_task_definition} Resource.
 func NewEcsTaskDefinition(scope constructs.Construct, id *string, config *EcsTaskDefinitionConfig) EcsTaskDefinition {
 	_init_.Initialize()
 
@@ -815,7 +839,7 @@ func NewEcsTaskDefinition(scope constructs.Construct, id *string, config *EcsTas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/ecs_task_definition aws_ecs_task_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/ecs_task_definition aws_ecs_task_definition} Resource.
 func NewEcsTaskDefinition_Override(e EcsTaskDefinition, scope constructs.Construct, id *string, config *EcsTaskDefinitionConfig) {
 	_init_.Initialize()
 
@@ -1044,6 +1068,17 @@ func (j *jsiiProxy_EcsTaskDefinition)SetTaskRoleArn(val *string) {
 	_jsii_.Set(
 		j,
 		"taskRoleArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinition)SetTrackLatest(val interface{}) {
+	if err := j.validateSetTrackLatestParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"trackLatest",
 		val,
 	)
 }
@@ -1607,6 +1642,14 @@ func (e *jsiiProxy_EcsTaskDefinition) ResetTaskRoleArn() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetTaskRoleArn",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinition) ResetTrackLatest() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTrackLatest",
 		nil, // no parameters
 	)
 }

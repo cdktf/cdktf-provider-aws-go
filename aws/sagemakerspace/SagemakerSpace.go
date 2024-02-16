@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/sagemaker_space aws_sagemaker_space}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/sagemaker_space aws_sagemaker_space}.
 type SagemakerSpace interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -53,6 +53,8 @@ type SagemakerSpace interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	OwnershipSettings() SagemakerSpaceOwnershipSettingsOutputReference
+	OwnershipSettingsInput() *SagemakerSpaceOwnershipSettings
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -71,6 +73,8 @@ type SagemakerSpace interface {
 	SpaceNameInput() *string
 	SpaceSettings() SagemakerSpaceSpaceSettingsOutputReference
 	SpaceSettingsInput() *SagemakerSpaceSpaceSettings
+	SpaceSharingSettings() SagemakerSpaceSpaceSharingSettingsOutputReference
+	SpaceSharingSettingsInput() *SagemakerSpaceSpaceSharingSettings
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -127,13 +131,17 @@ type SagemakerSpace interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutOwnershipSettings(value *SagemakerSpaceOwnershipSettings)
 	PutSpaceSettings(value *SagemakerSpaceSpaceSettings)
+	PutSpaceSharingSettings(value *SagemakerSpaceSpaceSharingSettings)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetOwnershipSettings()
 	ResetSpaceDisplayName()
 	ResetSpaceSettings()
+	ResetSpaceSharingSettings()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -314,6 +322,26 @@ func (j *jsiiProxy_SagemakerSpace) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerSpace) OwnershipSettings() SagemakerSpaceOwnershipSettingsOutputReference {
+	var returns SagemakerSpaceOwnershipSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"ownershipSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerSpace) OwnershipSettingsInput() *SagemakerSpaceOwnershipSettings {
+	var returns *SagemakerSpaceOwnershipSettings
+	_jsii_.Get(
+		j,
+		"ownershipSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerSpace) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -404,6 +432,26 @@ func (j *jsiiProxy_SagemakerSpace) SpaceSettingsInput() *SagemakerSpaceSpaceSett
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerSpace) SpaceSharingSettings() SagemakerSpaceSpaceSharingSettingsOutputReference {
+	var returns SagemakerSpaceSpaceSharingSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"spaceSharingSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerSpace) SpaceSharingSettingsInput() *SagemakerSpaceSpaceSharingSettings {
+	var returns *SagemakerSpaceSpaceSharingSettings
+	_jsii_.Get(
+		j,
+		"spaceSharingSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerSpace) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -485,7 +533,7 @@ func (j *jsiiProxy_SagemakerSpace) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/sagemaker_space aws_sagemaker_space} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/sagemaker_space aws_sagemaker_space} Resource.
 func NewSagemakerSpace(scope constructs.Construct, id *string, config *SagemakerSpaceConfig) SagemakerSpace {
 	_init_.Initialize()
 
@@ -503,7 +551,7 @@ func NewSagemakerSpace(scope constructs.Construct, id *string, config *Sagemaker
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/sagemaker_space aws_sagemaker_space} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/sagemaker_space aws_sagemaker_space} Resource.
 func NewSagemakerSpace_Override(s SagemakerSpace, scope constructs.Construct, id *string, config *SagemakerSpaceConfig) {
 	_init_.Initialize()
 
@@ -1001,6 +1049,17 @@ func (s *jsiiProxy_SagemakerSpace) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_SagemakerSpace) PutOwnershipSettings(value *SagemakerSpaceOwnershipSettings) {
+	if err := s.validatePutOwnershipSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putOwnershipSettings",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerSpace) PutSpaceSettings(value *SagemakerSpaceSpaceSettings) {
 	if err := s.validatePutSpaceSettingsParameters(value); err != nil {
 		panic(err)
@@ -1008,6 +1067,17 @@ func (s *jsiiProxy_SagemakerSpace) PutSpaceSettings(value *SagemakerSpaceSpaceSe
 	_jsii_.InvokeVoid(
 		s,
 		"putSpaceSettings",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerSpace) PutSpaceSharingSettings(value *SagemakerSpaceSpaceSharingSettings) {
+	if err := s.validatePutSpaceSharingSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putSpaceSharingSettings",
 		[]interface{}{value},
 	)
 }
@@ -1028,6 +1098,14 @@ func (s *jsiiProxy_SagemakerSpace) ResetOverrideLogicalId() {
 	)
 }
 
+func (s *jsiiProxy_SagemakerSpace) ResetOwnershipSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOwnershipSettings",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SagemakerSpace) ResetSpaceDisplayName() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1040,6 +1118,14 @@ func (s *jsiiProxy_SagemakerSpace) ResetSpaceSettings() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSpaceSettings",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerSpace) ResetSpaceSharingSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetSpaceSharingSettings",
 		nil, // no parameters
 	)
 }

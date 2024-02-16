@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/directory_service_shared_directory_accepter aws_directory_service_shared_directory_accepter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/directory_service_shared_directory_accepter aws_directory_service_shared_directory_accepter}.
 type DirectoryServiceSharedDirectoryAccepter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectoryAccepter) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/directory_service_shared_directory_accepter aws_directory_service_shared_directory_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/directory_service_shared_directory_accepter aws_directory_service_shared_directory_accepter} Resource.
 func NewDirectoryServiceSharedDirectoryAccepter(scope constructs.Construct, id *string, config *DirectoryServiceSharedDirectoryAccepterConfig) DirectoryServiceSharedDirectoryAccepter {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewDirectoryServiceSharedDirectoryAccepter(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/directory_service_shared_directory_accepter aws_directory_service_shared_directory_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/directory_service_shared_directory_accepter aws_directory_service_shared_directory_accepter} Resource.
 func NewDirectoryServiceSharedDirectoryAccepter_Override(d DirectoryServiceSharedDirectoryAccepter, scope constructs.Construct, id *string, config *DirectoryServiceSharedDirectoryAccepterConfig) {
 	_init_.Initialize()
 

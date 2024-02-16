@@ -51,6 +51,10 @@ type EcsServiceServiceConnectConfigurationServiceOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Timeout() EcsServiceServiceConnectConfigurationServiceTimeoutOutputReference
+	TimeoutInput() *EcsServiceServiceConnectConfigurationServiceTimeout
+	Tls() EcsServiceServiceConnectConfigurationServiceTlsOutputReference
+	TlsInput() *EcsServiceServiceConnectConfigurationServiceTls
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -76,9 +80,13 @@ type EcsServiceServiceConnectConfigurationServiceOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutClientAlias(value *EcsServiceServiceConnectConfigurationServiceClientAlias)
+	PutTimeout(value *EcsServiceServiceConnectConfigurationServiceTimeout)
+	PutTls(value *EcsServiceServiceConnectConfigurationServiceTls)
 	ResetClientAlias()
 	ResetDiscoveryName()
 	ResetIngressPortOverride()
+	ResetTimeout()
+	ResetTls()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -239,6 +247,46 @@ func (j *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) 
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) Timeout() EcsServiceServiceConnectConfigurationServiceTimeoutOutputReference {
+	var returns EcsServiceServiceConnectConfigurationServiceTimeoutOutputReference
+	_jsii_.Get(
+		j,
+		"timeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) TimeoutInput() *EcsServiceServiceConnectConfigurationServiceTimeout {
+	var returns *EcsServiceServiceConnectConfigurationServiceTimeout
+	_jsii_.Get(
+		j,
+		"timeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) Tls() EcsServiceServiceConnectConfigurationServiceTlsOutputReference {
+	var returns EcsServiceServiceConnectConfigurationServiceTlsOutputReference
+	_jsii_.Get(
+		j,
+		"tls",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) TlsInput() *EcsServiceServiceConnectConfigurationServiceTls {
+	var returns *EcsServiceServiceConnectConfigurationServiceTls
+	_jsii_.Get(
+		j,
+		"tlsInput",
 		&returns,
 	)
 	return returns
@@ -557,6 +605,28 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) 
 	)
 }
 
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) PutTimeout(value *EcsServiceServiceConnectConfigurationServiceTimeout) {
+	if err := e.validatePutTimeoutParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putTimeout",
+		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) PutTls(value *EcsServiceServiceConnectConfigurationServiceTls) {
+	if err := e.validatePutTlsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putTls",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) ResetClientAlias() {
 	_jsii_.InvokeVoid(
 		e,
@@ -577,6 +647,22 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) 
 	_jsii_.InvokeVoid(
 		e,
 		"resetIngressPortOverride",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) ResetTimeout() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTimeout",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) ResetTls() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTls",
 		nil, // no parameters
 	)
 }

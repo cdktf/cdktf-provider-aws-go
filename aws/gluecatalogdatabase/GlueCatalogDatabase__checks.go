@@ -238,6 +238,17 @@ func (g *jsiiProxy_GlueCatalogDatabase) validatePutCreateTableDefaultPermissionP
 	return nil
 }
 
+func (g *jsiiProxy_GlueCatalogDatabase) validatePutFederatedDatabaseParameters(value *GlueCatalogDatabaseFederatedDatabase) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GlueCatalogDatabase) validatePutTargetDatabaseParameters(value *GlueCatalogDatabaseTargetDatabase) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

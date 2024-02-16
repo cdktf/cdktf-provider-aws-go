@@ -91,6 +91,10 @@ func (r *jsiiProxy_Route53Record) validatePutGeolocationRoutingPolicyParameters(
 	return nil
 }
 
+func (r *jsiiProxy_Route53Record) validatePutGeoproximityRoutingPolicyParameters(value *Route53RecordGeoproximityRoutingPolicy) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53Record) validatePutLatencyRoutingPolicyParameters(value *Route53RecordLatencyRoutingPolicy) error {
 	return nil
 }

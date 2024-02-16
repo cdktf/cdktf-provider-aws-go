@@ -95,11 +95,23 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) validateSetIncludeAllParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRdsEngineVersion) validateSetLatestParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRdsEngineVersion) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
 
 func (j *jsiiProxy_DataAwsRdsEngineVersion) validateSetParameterGroupFamilyParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion) validateSetPreferredMajorTargetsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion) validateSetPreferredUpgradeTargetsParameters(val *[]*string) error {
 	return nil
 }
 

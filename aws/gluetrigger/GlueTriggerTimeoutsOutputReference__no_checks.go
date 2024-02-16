@@ -79,6 +79,10 @@ func (j *jsiiProxy_GlueTriggerTimeoutsOutputReference) validateSetTerraformResou
 	return nil
 }
 
+func (j *jsiiProxy_GlueTriggerTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewGlueTriggerTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

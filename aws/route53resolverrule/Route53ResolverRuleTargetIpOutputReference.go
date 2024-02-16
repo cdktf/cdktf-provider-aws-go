@@ -38,6 +38,9 @@ type Route53ResolverRuleTargetIpOutputReference interface {
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
+	Protocol() *string
+	SetProtocol(val *string)
+	ProtocolInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,6 +74,7 @@ type Route53ResolverRuleTargetIpOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetPort()
+	ResetProtocol()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -176,6 +180,26 @@ func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) PortInput() *floa
 	return returns
 }
 
+func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) Protocol() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protocol",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) ProtocolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"protocolInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -275,6 +299,17 @@ func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference)SetPort(val *float
 	_jsii_.Set(
 		j,
 		"port",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference)SetProtocol(val *string) {
+	if err := j.validateSetProtocolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"protocol",
 		val,
 	)
 }
@@ -491,6 +526,14 @@ func (r *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) ResetPort() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) ResetProtocol() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetProtocol",
 		nil, // no parameters
 	)
 }

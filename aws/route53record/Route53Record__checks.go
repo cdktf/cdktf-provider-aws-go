@@ -251,6 +251,17 @@ func (r *jsiiProxy_Route53Record) validatePutGeolocationRoutingPolicyParameters(
 	return nil
 }
 
+func (r *jsiiProxy_Route53Record) validatePutGeoproximityRoutingPolicyParameters(value *Route53RecordGeoproximityRoutingPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (r *jsiiProxy_Route53Record) validatePutLatencyRoutingPolicyParameters(value *Route53RecordLatencyRoutingPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -127,6 +127,10 @@ func (j *jsiiProxy_AppsyncGraphqlApi) validateSetIdParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_AppsyncGraphqlApi) validateSetIntrospectionConfigParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncGraphqlApi) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }
@@ -136,6 +140,14 @@ func (j *jsiiProxy_AppsyncGraphqlApi) validateSetNameParameters(val *string) err
 }
 
 func (j *jsiiProxy_AppsyncGraphqlApi) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi) validateSetQueryDepthLimitParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi) validateSetResolverCountLimitParameters(val *float64) error {
 	return nil
 }
 

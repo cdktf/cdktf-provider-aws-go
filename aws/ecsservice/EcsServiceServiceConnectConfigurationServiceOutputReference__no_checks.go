@@ -51,6 +51,14 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) 
 	return nil
 }
 
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) validatePutTimeoutParameters(value *EcsServiceServiceConnectConfigurationServiceTimeout) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) validatePutTlsParameters(value *EcsServiceServiceConnectConfigurationServiceTls) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -71,6 +71,10 @@ func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) validateSetPortPa
 	return nil
 }
 
+func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) validateSetProtocolParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53ResolverRuleTargetIpOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

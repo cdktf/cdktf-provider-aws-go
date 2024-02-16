@@ -5,7 +5,7 @@ package cloudwatcheventtarget
 
 
 type CloudwatchEventTargetDeadLetterConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/cloudwatch_event_target#arn CloudwatchEventTarget#arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/cloudwatch_event_target#arn CloudwatchEventTarget#arn}.
 	Arn *string `field:"optional" json:"arn" yaml:"arn"`
 }
 

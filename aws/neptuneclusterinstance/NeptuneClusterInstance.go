@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/neptune_cluster_instance aws_neptune_cluster_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/neptune_cluster_instance aws_neptune_cluster_instance}.
 type NeptuneClusterInstance interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -111,6 +111,9 @@ type NeptuneClusterInstance interface {
 	PubliclyAccessibleInput() interface{}
 	// Experimental.
 	RawOverrides() interface{}
+	SkipFinalSnapshot() interface{}
+	SetSkipFinalSnapshot(val interface{})
+	SkipFinalSnapshotInput() interface{}
 	StorageEncrypted() cdktf.IResolvable
 	StorageType() *string
 	Tags() *map[string]*string
@@ -190,6 +193,7 @@ type NeptuneClusterInstance interface {
 	ResetPreferredMaintenanceWindow()
 	ResetPromotionTier()
 	ResetPubliclyAccessible()
+	ResetSkipFinalSnapshot()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -731,6 +735,26 @@ func (j *jsiiProxy_NeptuneClusterInstance) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_NeptuneClusterInstance) SkipFinalSnapshot() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipFinalSnapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_NeptuneClusterInstance) SkipFinalSnapshotInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipFinalSnapshotInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_NeptuneClusterInstance) StorageEncrypted() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -852,7 +876,7 @@ func (j *jsiiProxy_NeptuneClusterInstance) Writer() cdktf.IResolvable {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/neptune_cluster_instance aws_neptune_cluster_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/neptune_cluster_instance aws_neptune_cluster_instance} Resource.
 func NewNeptuneClusterInstance(scope constructs.Construct, id *string, config *NeptuneClusterInstanceConfig) NeptuneClusterInstance {
 	_init_.Initialize()
 
@@ -870,7 +894,7 @@ func NewNeptuneClusterInstance(scope constructs.Construct, id *string, config *N
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/neptune_cluster_instance aws_neptune_cluster_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/neptune_cluster_instance aws_neptune_cluster_instance} Resource.
 func NewNeptuneClusterInstance_Override(n NeptuneClusterInstance, scope constructs.Construct, id *string, config *NeptuneClusterInstanceConfig) {
 	_init_.Initialize()
 
@@ -1132,6 +1156,17 @@ func (j *jsiiProxy_NeptuneClusterInstance)SetPubliclyAccessible(val interface{})
 	_jsii_.Set(
 		j,
 		"publiclyAccessible",
+		val,
+	)
+}
+
+func (j *jsiiProxy_NeptuneClusterInstance)SetSkipFinalSnapshot(val interface{}) {
+	if err := j.validateSetSkipFinalSnapshotParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipFinalSnapshot",
 		val,
 	)
 }
@@ -1646,6 +1681,14 @@ func (n *jsiiProxy_NeptuneClusterInstance) ResetPubliclyAccessible() {
 	_jsii_.InvokeVoid(
 		n,
 		"resetPubliclyAccessible",
+		nil, // no parameters
+	)
+}
+
+func (n *jsiiProxy_NeptuneClusterInstance) ResetSkipFinalSnapshot() {
+	_jsii_.InvokeVoid(
+		n,
+		"resetSkipFinalSnapshot",
 		nil, // no parameters
 	)
 }

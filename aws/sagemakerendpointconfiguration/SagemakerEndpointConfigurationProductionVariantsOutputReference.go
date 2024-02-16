@@ -58,6 +58,8 @@ type SagemakerEndpointConfigurationProductionVariantsOutputReference interface {
 	ModelName() *string
 	SetModelName(val *string)
 	ModelNameInput() *string
+	RoutingConfig() SagemakerEndpointConfigurationProductionVariantsRoutingConfigList
+	RoutingConfigInput() interface{}
 	ServerlessConfig() SagemakerEndpointConfigurationProductionVariantsServerlessConfigOutputReference
 	ServerlessConfigInput() *SagemakerEndpointConfigurationProductionVariantsServerlessConfig
 	// Experimental.
@@ -99,6 +101,7 @@ type SagemakerEndpointConfigurationProductionVariantsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCoreDumpConfig(value *SagemakerEndpointConfigurationProductionVariantsCoreDumpConfig)
+	PutRoutingConfig(value interface{})
 	PutServerlessConfig(value *SagemakerEndpointConfigurationProductionVariantsServerlessConfig)
 	ResetAcceleratorType()
 	ResetContainerStartupHealthCheckTimeoutInSeconds()
@@ -108,6 +111,7 @@ type SagemakerEndpointConfigurationProductionVariantsOutputReference interface {
 	ResetInitialVariantWeight()
 	ResetInstanceType()
 	ResetModelDataDownloadTimeoutInSeconds()
+	ResetRoutingConfig()
 	ResetServerlessConfig()
 	ResetVariantName()
 	ResetVolumeSizeInGb()
@@ -351,6 +355,26 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	_jsii_.Get(
 		j,
 		"modelNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) RoutingConfig() SagemakerEndpointConfigurationProductionVariantsRoutingConfigList {
+	var returns SagemakerEndpointConfigurationProductionVariantsRoutingConfigList
+	_jsii_.Get(
+		j,
+		"routingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) RoutingConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"routingConfigInput",
 		&returns,
 	)
 	return returns
@@ -826,6 +850,17 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	)
 }
 
+func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) PutRoutingConfig(value interface{}) {
+	if err := s.validatePutRoutingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putRoutingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) PutServerlessConfig(value *SagemakerEndpointConfigurationProductionVariantsServerlessConfig) {
 	if err := s.validatePutServerlessConfigParameters(value); err != nil {
 		panic(err)
@@ -897,6 +932,14 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	_jsii_.InvokeVoid(
 		s,
 		"resetModelDataDownloadTimeoutInSeconds",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) ResetRoutingConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetRoutingConfig",
 		nil, // no parameters
 	)
 }

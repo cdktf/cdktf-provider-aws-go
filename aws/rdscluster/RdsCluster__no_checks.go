@@ -191,6 +191,14 @@ func (j *jsiiProxy_RdsCluster) validateSetDeletionProtectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_RdsCluster) validateSetDomainParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RdsCluster) validateSetDomainIamRoleNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsCluster) validateSetEnabledCloudwatchLogsExportsParameters(val *[]*string) error {
 	return nil
 }

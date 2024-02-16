@@ -99,6 +99,10 @@ func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetCountParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetCredentialArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcrPullThroughCacheRule) validateSetEcrRepositoryPrefixParameters(val *string) error {
 	return nil
 }

@@ -428,6 +428,14 @@ func (j *jsiiProxy_AppsyncGraphqlApi) validateSetIdParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_AppsyncGraphqlApi) validateSetIntrospectionConfigParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_AppsyncGraphqlApi) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
@@ -485,6 +493,22 @@ func (j *jsiiProxy_AppsyncGraphqlApi) validateSetProvisionersParameters(val *[]i
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi) validateSetQueryDepthLimitParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi) validateSetResolverCountLimitParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

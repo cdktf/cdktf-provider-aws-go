@@ -12,13 +12,16 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ecs_task_execution aws_ecs_task_execution}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ecs_task_execution aws_ecs_task_execution}.
 type DataAwsEcsTaskExecution interface {
 	cdktf.TerraformDataSource
 	CapacityProviderStrategy() DataAwsEcsTaskExecutionCapacityProviderStrategyList
 	CapacityProviderStrategyInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClientToken() *string
+	SetClientToken(val *string)
+	ClientTokenInput() *string
 	Cluster() *string
 	SetCluster(val *string)
 	ClusterInput() *string
@@ -134,6 +137,7 @@ type DataAwsEcsTaskExecution interface {
 	PutPlacementConstraints(value interface{})
 	PutPlacementStrategy(value interface{})
 	ResetCapacityProviderStrategy()
+	ResetClientToken()
 	ResetDesiredCount()
 	ResetEnableEcsManagedTags()
 	ResetEnableExecuteCommand()
@@ -196,6 +200,26 @@ func (j *jsiiProxy_DataAwsEcsTaskExecution) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsTaskExecution) ClientToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEcsTaskExecution) ClientTokenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clientTokenInput",
 		&returns,
 	)
 	return returns
@@ -682,7 +706,7 @@ func (j *jsiiProxy_DataAwsEcsTaskExecution) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ecs_task_execution aws_ecs_task_execution} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ecs_task_execution aws_ecs_task_execution} Data Source.
 func NewDataAwsEcsTaskExecution(scope constructs.Construct, id *string, config *DataAwsEcsTaskExecutionConfig) DataAwsEcsTaskExecution {
 	_init_.Initialize()
 
@@ -700,7 +724,7 @@ func NewDataAwsEcsTaskExecution(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/data-sources/ecs_task_execution aws_ecs_task_execution} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/ecs_task_execution aws_ecs_task_execution} Data Source.
 func NewDataAwsEcsTaskExecution_Override(d DataAwsEcsTaskExecution, scope constructs.Construct, id *string, config *DataAwsEcsTaskExecutionConfig) {
 	_init_.Initialize()
 
@@ -708,6 +732,17 @@ func NewDataAwsEcsTaskExecution_Override(d DataAwsEcsTaskExecution, scope constr
 		"@cdktf/provider-aws.dataAwsEcsTaskExecution.DataAwsEcsTaskExecution",
 		[]interface{}{scope, id, config},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataAwsEcsTaskExecution)SetClientToken(val *string) {
+	if err := j.validateSetClientTokenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientToken",
+		val,
 	)
 }
 
@@ -1244,6 +1279,14 @@ func (d *jsiiProxy_DataAwsEcsTaskExecution) ResetCapacityProviderStrategy() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetCapacityProviderStrategy",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsEcsTaskExecution) ResetClientToken() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetClientToken",
 		nil, // no parameters
 	)
 }

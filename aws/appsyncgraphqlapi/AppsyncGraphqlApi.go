@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api}.
 type AppsyncGraphqlApi interface {
 	cdktf.TerraformResource
 	AdditionalAuthenticationProvider() AppsyncGraphqlApiAdditionalAuthenticationProviderList
@@ -48,6 +48,9 @@ type AppsyncGraphqlApi interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IntrospectionConfig() *string
+	SetIntrospectionConfig(val *string)
+	IntrospectionConfigInput() *string
 	LambdaAuthorizerConfig() AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference
 	LambdaAuthorizerConfigInput() *AppsyncGraphqlApiLambdaAuthorizerConfig
 	// Experimental.
@@ -71,8 +74,14 @@ type AppsyncGraphqlApi interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	QueryDepthLimit() *float64
+	SetQueryDepthLimit(val *float64)
+	QueryDepthLimitInput() *float64
 	// Experimental.
 	RawOverrides() interface{}
+	ResolverCountLimit() *float64
+	SetResolverCountLimit(val *float64)
+	ResolverCountLimitInput() *float64
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
@@ -147,12 +156,15 @@ type AppsyncGraphqlApi interface {
 	PutUserPoolConfig(value *AppsyncGraphqlApiUserPoolConfig)
 	ResetAdditionalAuthenticationProvider()
 	ResetId()
+	ResetIntrospectionConfig()
 	ResetLambdaAuthorizerConfig()
 	ResetLogConfig()
 	ResetOpenidConnectConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetQueryDepthLimit()
+	ResetResolverCountLimit()
 	ResetSchema()
 	ResetTags()
 	ResetTagsAll()
@@ -327,6 +339,26 @@ func (j *jsiiProxy_AppsyncGraphqlApi) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AppsyncGraphqlApi) IntrospectionConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"introspectionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi) IntrospectionConfigInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"introspectionConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppsyncGraphqlApi) LambdaAuthorizerConfig() AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference {
 	var returns AppsyncGraphqlApiLambdaAuthorizerConfigOutputReference
 	_jsii_.Get(
@@ -447,11 +479,51 @@ func (j *jsiiProxy_AppsyncGraphqlApi) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AppsyncGraphqlApi) QueryDepthLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"queryDepthLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi) QueryDepthLimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"queryDepthLimitInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppsyncGraphqlApi) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi) ResolverCountLimit() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"resolverCountLimit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi) ResolverCountLimitInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"resolverCountLimitInput",
 		&returns,
 	)
 	return returns
@@ -618,7 +690,7 @@ func (j *jsiiProxy_AppsyncGraphqlApi) XrayEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
 func NewAppsyncGraphqlApi(scope constructs.Construct, id *string, config *AppsyncGraphqlApiConfig) AppsyncGraphqlApi {
 	_init_.Initialize()
 
@@ -636,7 +708,7 @@ func NewAppsyncGraphqlApi(scope constructs.Construct, id *string, config *Appsyn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
 func NewAppsyncGraphqlApi_Override(a AppsyncGraphqlApi, scope constructs.Construct, id *string, config *AppsyncGraphqlApiConfig) {
 	_init_.Initialize()
 
@@ -707,6 +779,17 @@ func (j *jsiiProxy_AppsyncGraphqlApi)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_AppsyncGraphqlApi)SetIntrospectionConfig(val *string) {
+	if err := j.validateSetIntrospectionConfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"introspectionConfig",
+		val,
+	)
+}
+
 func (j *jsiiProxy_AppsyncGraphqlApi)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -744,6 +827,28 @@ func (j *jsiiProxy_AppsyncGraphqlApi)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi)SetQueryDepthLimit(val *float64) {
+	if err := j.validateSetQueryDepthLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"queryDepthLimit",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi)SetResolverCountLimit(val *float64) {
+	if err := j.validateSetResolverCountLimitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resolverCountLimit",
 		val,
 	)
 }
@@ -1227,6 +1332,14 @@ func (a *jsiiProxy_AppsyncGraphqlApi) ResetId() {
 	)
 }
 
+func (a *jsiiProxy_AppsyncGraphqlApi) ResetIntrospectionConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetIntrospectionConfig",
+		nil, // no parameters
+	)
+}
+
 func (a *jsiiProxy_AppsyncGraphqlApi) ResetLambdaAuthorizerConfig() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1255,6 +1368,22 @@ func (a *jsiiProxy_AppsyncGraphqlApi) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppsyncGraphqlApi) ResetQueryDepthLimit() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetQueryDepthLimit",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppsyncGraphqlApi) ResetResolverCountLimit() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetResolverCountLimit",
 		nil, // no parameters
 	)
 }

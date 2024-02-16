@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/route53_record aws_route53_record}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/route53_record aws_route53_record}.
 type Route53Record interface {
 	cdktf.TerraformResource
 	Alias() Route53RecordAliasOutputReference
@@ -51,6 +51,8 @@ type Route53Record interface {
 	FriendlyUniqueId() *string
 	GeolocationRoutingPolicy() Route53RecordGeolocationRoutingPolicyOutputReference
 	GeolocationRoutingPolicyInput() *Route53RecordGeolocationRoutingPolicy
+	GeoproximityRoutingPolicy() Route53RecordGeoproximityRoutingPolicyOutputReference
+	GeoproximityRoutingPolicyInput() *Route53RecordGeoproximityRoutingPolicy
 	HealthCheckId() *string
 	SetHealthCheckId(val *string)
 	HealthCheckIdInput() *string
@@ -151,6 +153,7 @@ type Route53Record interface {
 	PutCidrRoutingPolicy(value *Route53RecordCidrRoutingPolicy)
 	PutFailoverRoutingPolicy(value *Route53RecordFailoverRoutingPolicy)
 	PutGeolocationRoutingPolicy(value *Route53RecordGeolocationRoutingPolicy)
+	PutGeoproximityRoutingPolicy(value *Route53RecordGeoproximityRoutingPolicy)
 	PutLatencyRoutingPolicy(value *Route53RecordLatencyRoutingPolicy)
 	PutWeightedRoutingPolicy(value *Route53RecordWeightedRoutingPolicy)
 	ResetAlias()
@@ -158,6 +161,7 @@ type Route53Record interface {
 	ResetCidrRoutingPolicy()
 	ResetFailoverRoutingPolicy()
 	ResetGeolocationRoutingPolicy()
+	ResetGeoproximityRoutingPolicy()
 	ResetHealthCheckId()
 	ResetId()
 	ResetLatencyRoutingPolicy()
@@ -372,6 +376,26 @@ func (j *jsiiProxy_Route53Record) GeolocationRoutingPolicyInput() *Route53Record
 	_jsii_.Get(
 		j,
 		"geolocationRoutingPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53Record) GeoproximityRoutingPolicy() Route53RecordGeoproximityRoutingPolicyOutputReference {
+	var returns Route53RecordGeoproximityRoutingPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"geoproximityRoutingPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53Record) GeoproximityRoutingPolicyInput() *Route53RecordGeoproximityRoutingPolicy {
+	var returns *Route53RecordGeoproximityRoutingPolicy
+	_jsii_.Get(
+		j,
+		"geoproximityRoutingPolicyInput",
 		&returns,
 	)
 	return returns
@@ -678,7 +702,7 @@ func (j *jsiiProxy_Route53Record) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/route53_record aws_route53_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/route53_record aws_route53_record} Resource.
 func NewRoute53Record(scope constructs.Construct, id *string, config *Route53RecordConfig) Route53Record {
 	_init_.Initialize()
 
@@ -696,7 +720,7 @@ func NewRoute53Record(scope constructs.Construct, id *string, config *Route53Rec
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.36.0/docs/resources/route53_record aws_route53_record} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/route53_record aws_route53_record} Resource.
 func NewRoute53Record_Override(r Route53Record, scope constructs.Construct, id *string, config *Route53RecordConfig) {
 	_init_.Initialize()
 
@@ -1282,6 +1306,17 @@ func (r *jsiiProxy_Route53Record) PutGeolocationRoutingPolicy(value *Route53Reco
 	)
 }
 
+func (r *jsiiProxy_Route53Record) PutGeoproximityRoutingPolicy(value *Route53RecordGeoproximityRoutingPolicy) {
+	if err := r.validatePutGeoproximityRoutingPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putGeoproximityRoutingPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_Route53Record) PutLatencyRoutingPolicy(value *Route53RecordLatencyRoutingPolicy) {
 	if err := r.validatePutLatencyRoutingPolicyParameters(value); err != nil {
 		panic(err)
@@ -1340,6 +1375,14 @@ func (r *jsiiProxy_Route53Record) ResetGeolocationRoutingPolicy() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetGeolocationRoutingPolicy",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53Record) ResetGeoproximityRoutingPolicy() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetGeoproximityRoutingPolicy",
 		nil, // no parameters
 	)
 }

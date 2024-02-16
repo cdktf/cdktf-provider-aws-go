@@ -51,6 +51,10 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validatePutRoutingConfigParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validatePutServerlessConfigParameters(value *SagemakerEndpointConfigurationProductionVariantsServerlessConfig) error {
 	return nil
 }
