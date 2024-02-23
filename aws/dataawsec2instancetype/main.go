@@ -68,6 +68,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumIpv4AddressesPerInterface", GoGetter: "MaximumIpv4AddressesPerInterface"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumIpv6AddressesPerInterface", GoGetter: "MaximumIpv6AddressesPerInterface"},
+			_jsii_.MemberProperty{JsiiProperty: "maximumNetworkCards", GoGetter: "MaximumNetworkCards"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumNetworkInterfaces", GoGetter: "MaximumNetworkInterfaces"},
 			_jsii_.MemberProperty{JsiiProperty: "memorySize", GoGetter: "MemorySize"},
 			_jsii_.MemberProperty{JsiiProperty: "networkPerformance", GoGetter: "NetworkPerformance"},

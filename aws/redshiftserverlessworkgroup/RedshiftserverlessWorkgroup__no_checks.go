@@ -123,6 +123,10 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetLifecycleParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetMaxCapacityParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftserverlessWorkgroup) validateSetNamespaceNameParameters(val *string) error {
 	return nil
 }

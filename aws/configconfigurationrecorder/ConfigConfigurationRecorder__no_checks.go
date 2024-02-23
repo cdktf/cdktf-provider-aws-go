@@ -79,6 +79,10 @@ func (c *jsiiProxy_ConfigConfigurationRecorder) validatePutRecordingGroupParamet
 	return nil
 }
 
+func (c *jsiiProxy_ConfigConfigurationRecorder) validatePutRecordingModeParameters(value *ConfigConfigurationRecorderRecordingMode) error {
+	return nil
+}
+
 func validateConfigConfigurationRecorder_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

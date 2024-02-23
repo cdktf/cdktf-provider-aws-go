@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/config_organization_custom_rule aws_config_organization_custom_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_organization_custom_rule aws_config_organization_custom_rule}.
 type ConfigOrganizationCustomRule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -606,7 +606,7 @@ func (j *jsiiProxy_ConfigOrganizationCustomRule) TriggerTypesInput() *[]*string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/config_organization_custom_rule aws_config_organization_custom_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_organization_custom_rule aws_config_organization_custom_rule} Resource.
 func NewConfigOrganizationCustomRule(scope constructs.Construct, id *string, config *ConfigOrganizationCustomRuleConfig) ConfigOrganizationCustomRule {
 	_init_.Initialize()
 
@@ -624,7 +624,7 @@ func NewConfigOrganizationCustomRule(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/config_organization_custom_rule aws_config_organization_custom_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_organization_custom_rule aws_config_organization_custom_rule} Resource.
 func NewConfigOrganizationCustomRule_Override(c ConfigOrganizationCustomRule, scope constructs.Construct, id *string, config *ConfigOrganizationCustomRuleConfig) {
 	_init_.Initialize()
 

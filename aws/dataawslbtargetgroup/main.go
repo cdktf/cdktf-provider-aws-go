@@ -42,6 +42,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lambdaMultiValueHeadersEnabled", GoGetter: "LambdaMultiValueHeadersEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberProperty{JsiiProperty: "loadBalancerArns", GoGetter: "LoadBalancerArns"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBalancingAlgorithmType", GoGetter: "LoadBalancingAlgorithmType"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBalancingAnomalyMitigation", GoGetter: "LoadBalancingAnomalyMitigation"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBalancingAnomalyMitigationInput", GoGetter: "LoadBalancingAnomalyMitigationInput"},

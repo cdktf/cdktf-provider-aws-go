@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/lb_target_group aws_lb_target_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/lb_target_group aws_lb_target_group}.
 type DataAwsLbTargetGroup interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -50,6 +50,7 @@ type DataAwsLbTargetGroup interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LoadBalancerArns() *[]*string
 	LoadBalancingAlgorithmType() *string
 	LoadBalancingAnomalyMitigation() *string
 	SetLoadBalancingAnomalyMitigation(val *string)
@@ -310,6 +311,16 @@ func (j *jsiiProxy_DataAwsLbTargetGroup) Lifecycle() *cdktf.TerraformResourceLif
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsLbTargetGroup) LoadBalancerArns() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"loadBalancerArns",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsLbTargetGroup) LoadBalancingAlgorithmType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -561,7 +572,7 @@ func (j *jsiiProxy_DataAwsLbTargetGroup) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/lb_target_group aws_lb_target_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/lb_target_group aws_lb_target_group} Data Source.
 func NewDataAwsLbTargetGroup(scope constructs.Construct, id *string, config *DataAwsLbTargetGroupConfig) DataAwsLbTargetGroup {
 	_init_.Initialize()
 
@@ -579,7 +590,7 @@ func NewDataAwsLbTargetGroup(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/lb_target_group aws_lb_target_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/lb_target_group aws_lb_target_group} Data Source.
 func NewDataAwsLbTargetGroup_Override(d DataAwsLbTargetGroup, scope constructs.Construct, id *string, config *DataAwsLbTargetGroupConfig) {
 	_init_.Initialize()
 

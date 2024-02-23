@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/lb_target_group aws_lb_target_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/lb_target_group aws_lb_target_group}.
 type LbTargetGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -62,6 +62,7 @@ type LbTargetGroup interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LoadBalancerArns() *[]*string
 	LoadBalancingAlgorithmType() *string
 	SetLoadBalancingAlgorithmType(val *string)
 	LoadBalancingAlgorithmTypeInput() *string
@@ -448,6 +449,16 @@ func (j *jsiiProxy_LbTargetGroup) Lifecycle() *cdktf.TerraformResourceLifecycle 
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbTargetGroup) LoadBalancerArns() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"loadBalancerArns",
 		&returns,
 	)
 	return returns
@@ -884,7 +895,7 @@ func (j *jsiiProxy_LbTargetGroup) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/lb_target_group aws_lb_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/lb_target_group aws_lb_target_group} Resource.
 func NewLbTargetGroup(scope constructs.Construct, id *string, config *LbTargetGroupConfig) LbTargetGroup {
 	_init_.Initialize()
 
@@ -902,7 +913,7 @@ func NewLbTargetGroup(scope constructs.Construct, id *string, config *LbTargetGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/lb_target_group aws_lb_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/lb_target_group aws_lb_target_group} Resource.
 func NewLbTargetGroup_Override(l LbTargetGroup, scope constructs.Construct, id *string, config *LbTargetGroupConfig) {
 	_init_.Initialize()
 

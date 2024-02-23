@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/connect_user_hierarchy_group aws_connect_user_hierarchy_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/connect_user_hierarchy_group aws_connect_user_hierarchy_group}.
 type DataAwsConnectUserHierarchyGroup interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -393,7 +393,7 @@ func (j *jsiiProxy_DataAwsConnectUserHierarchyGroup) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/connect_user_hierarchy_group aws_connect_user_hierarchy_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/connect_user_hierarchy_group aws_connect_user_hierarchy_group} Data Source.
 func NewDataAwsConnectUserHierarchyGroup(scope constructs.Construct, id *string, config *DataAwsConnectUserHierarchyGroupConfig) DataAwsConnectUserHierarchyGroup {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewDataAwsConnectUserHierarchyGroup(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/data-sources/connect_user_hierarchy_group aws_connect_user_hierarchy_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/connect_user_hierarchy_group aws_connect_user_hierarchy_group} Data Source.
 func NewDataAwsConnectUserHierarchyGroup_Override(d DataAwsConnectUserHierarchyGroup, scope constructs.Construct, id *string, config *DataAwsConnectUserHierarchyGroupConfig) {
 	_init_.Initialize()
 

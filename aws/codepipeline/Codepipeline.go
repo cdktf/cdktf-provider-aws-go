@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/codepipeline aws_codepipeline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/codepipeline aws_codepipeline}.
 type Codepipeline interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -34,6 +34,9 @@ type Codepipeline interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	ExecutionMode() *string
+	SetExecutionMode(val *string)
+	ExecutionModeInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -132,6 +135,7 @@ type Codepipeline interface {
 	PutArtifactStore(value interface{})
 	PutStage(value interface{})
 	PutVariable(value interface{})
+	ResetExecutionMode()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -233,6 +237,26 @@ func (j *jsiiProxy_Codepipeline) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Codepipeline) ExecutionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Codepipeline) ExecutionModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionModeInput",
 		&returns,
 	)
 	return returns
@@ -509,7 +533,7 @@ func (j *jsiiProxy_Codepipeline) VariableInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/codepipeline aws_codepipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/codepipeline aws_codepipeline} Resource.
 func NewCodepipeline(scope constructs.Construct, id *string, config *CodepipelineConfig) Codepipeline {
 	_init_.Initialize()
 
@@ -527,7 +551,7 @@ func NewCodepipeline(scope constructs.Construct, id *string, config *Codepipelin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/codepipeline aws_codepipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/codepipeline aws_codepipeline} Resource.
 func NewCodepipeline_Override(c Codepipeline, scope constructs.Construct, id *string, config *CodepipelineConfig) {
 	_init_.Initialize()
 
@@ -564,6 +588,17 @@ func (j *jsiiProxy_Codepipeline)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Codepipeline)SetExecutionMode(val *string) {
+	if err := j.validateSetExecutionModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"executionMode",
 		val,
 	)
 }
@@ -1055,6 +1090,14 @@ func (c *jsiiProxy_Codepipeline) PutVariable(value interface{}) {
 		c,
 		"putVariable",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_Codepipeline) ResetExecutionMode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetExecutionMode",
+		nil, // no parameters
 	)
 }
 

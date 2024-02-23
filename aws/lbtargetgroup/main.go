@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lambdaMultiValueHeadersEnabled", GoGetter: "LambdaMultiValueHeadersEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "lambdaMultiValueHeadersEnabledInput", GoGetter: "LambdaMultiValueHeadersEnabledInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberProperty{JsiiProperty: "loadBalancerArns", GoGetter: "LoadBalancerArns"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBalancingAlgorithmType", GoGetter: "LoadBalancingAlgorithmType"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBalancingAlgorithmTypeInput", GoGetter: "LoadBalancingAlgorithmTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBalancingAnomalyMitigation", GoGetter: "LoadBalancingAnomalyMitigation"},

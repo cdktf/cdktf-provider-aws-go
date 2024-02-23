@@ -111,6 +111,10 @@ func (j *jsiiProxy_Codepipeline) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_Codepipeline) validateSetExecutionModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Codepipeline) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/elasticache_subnet_group aws_elasticache_subnet_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/elasticache_subnet_group aws_elasticache_subnet_group}.
 type ElasticacheSubnetGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -80,6 +80,7 @@ type ElasticacheSubnetGroup interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	VpcId() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -438,8 +439,18 @@ func (j *jsiiProxy_ElasticacheSubnetGroup) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ElasticacheSubnetGroup) VpcId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vpcId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/elasticache_subnet_group aws_elasticache_subnet_group} Resource.
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/elasticache_subnet_group aws_elasticache_subnet_group} Resource.
 func NewElasticacheSubnetGroup(scope constructs.Construct, id *string, config *ElasticacheSubnetGroupConfig) ElasticacheSubnetGroup {
 	_init_.Initialize()
 
@@ -457,7 +468,7 @@ func NewElasticacheSubnetGroup(scope constructs.Construct, id *string, config *E
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/elasticache_subnet_group aws_elasticache_subnet_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/elasticache_subnet_group aws_elasticache_subnet_group} Resource.
 func NewElasticacheSubnetGroup_Override(e ElasticacheSubnetGroup, scope constructs.Construct, id *string, config *ElasticacheSubnetGroupConfig) {
 	_init_.Initialize()
 

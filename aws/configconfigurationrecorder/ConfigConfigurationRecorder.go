@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/config_configuration_recorder aws_config_configuration_recorder}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder aws_config_configuration_recorder}.
 type ConfigConfigurationRecorder interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -63,6 +63,8 @@ type ConfigConfigurationRecorder interface {
 	RawOverrides() interface{}
 	RecordingGroup() ConfigConfigurationRecorderRecordingGroupOutputReference
 	RecordingGroupInput() *ConfigConfigurationRecorderRecordingGroup
+	RecordingMode() ConfigConfigurationRecorderRecordingModeOutputReference
+	RecordingModeInput() *ConfigConfigurationRecorderRecordingMode
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
@@ -116,12 +118,14 @@ type ConfigConfigurationRecorder interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutRecordingGroup(value *ConfigConfigurationRecorderRecordingGroup)
+	PutRecordingMode(value *ConfigConfigurationRecorderRecordingMode)
 	ResetId()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRecordingGroup()
+	ResetRecordingMode()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -330,6 +334,26 @@ func (j *jsiiProxy_ConfigConfigurationRecorder) RecordingGroupInput() *ConfigCon
 	return returns
 }
 
+func (j *jsiiProxy_ConfigConfigurationRecorder) RecordingMode() ConfigConfigurationRecorderRecordingModeOutputReference {
+	var returns ConfigConfigurationRecorderRecordingModeOutputReference
+	_jsii_.Get(
+		j,
+		"recordingMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ConfigConfigurationRecorder) RecordingModeInput() *ConfigConfigurationRecorderRecordingMode {
+	var returns *ConfigConfigurationRecorderRecordingMode
+	_jsii_.Get(
+		j,
+		"recordingModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ConfigConfigurationRecorder) RoleArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -381,7 +405,7 @@ func (j *jsiiProxy_ConfigConfigurationRecorder) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/config_configuration_recorder aws_config_configuration_recorder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder aws_config_configuration_recorder} Resource.
 func NewConfigConfigurationRecorder(scope constructs.Construct, id *string, config *ConfigConfigurationRecorderConfig) ConfigConfigurationRecorder {
 	_init_.Initialize()
 
@@ -399,7 +423,7 @@ func NewConfigConfigurationRecorder(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs/resources/config_configuration_recorder aws_config_configuration_recorder} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/config_configuration_recorder aws_config_configuration_recorder} Resource.
 func NewConfigConfigurationRecorder_Override(c ConfigConfigurationRecorder, scope constructs.Construct, id *string, config *ConfigConfigurationRecorderConfig) {
 	_init_.Initialize()
 
@@ -875,6 +899,17 @@ func (c *jsiiProxy_ConfigConfigurationRecorder) PutRecordingGroup(value *ConfigC
 	)
 }
 
+func (c *jsiiProxy_ConfigConfigurationRecorder) PutRecordingMode(value *ConfigConfigurationRecorderRecordingMode) {
+	if err := c.validatePutRecordingModeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putRecordingMode",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ConfigConfigurationRecorder) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
@@ -903,6 +938,14 @@ func (c *jsiiProxy_ConfigConfigurationRecorder) ResetRecordingGroup() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRecordingGroup",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ConfigConfigurationRecorder) ResetRecordingMode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetRecordingMode",
 		nil, // no parameters
 	)
 }

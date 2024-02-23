@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs aws}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs aws}.
 type AwsProvider interface {
 	cdktf.TerraformProvider
 	AccessKey() *string
@@ -127,6 +127,9 @@ type AwsProvider interface {
 	TerraformResourceType() *string
 	Token() *string
 	SetToken(val *string)
+	TokenBucketRateLimiterCapacity() *float64
+	SetTokenBucketRateLimiterCapacity(val *float64)
+	TokenBucketRateLimiterCapacityInput() *float64
 	TokenInput() *string
 	UseDualstackEndpoint() interface{}
 	SetUseDualstackEndpoint(val interface{})
@@ -173,6 +176,7 @@ type AwsProvider interface {
 	ResetSkipRequestingAccountId()
 	ResetStsRegion()
 	ResetToken()
+	ResetTokenBucketRateLimiterCapacity()
 	ResetUseDualstackEndpoint()
 	ResetUseFipsEndpoint()
 	SynthesizeAttributes() *map[string]interface{}
@@ -903,6 +907,26 @@ func (j *jsiiProxy_AwsProvider) Token() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AwsProvider) TokenBucketRateLimiterCapacity() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokenBucketRateLimiterCapacity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AwsProvider) TokenBucketRateLimiterCapacityInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"tokenBucketRateLimiterCapacityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AwsProvider) TokenInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -954,7 +978,7 @@ func (j *jsiiProxy_AwsProvider) UseFipsEndpointInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs aws} Resource.
 func NewAwsProvider(scope constructs.Construct, id *string, config *AwsProviderConfig) AwsProvider {
 	_init_.Initialize()
 
@@ -972,7 +996,7 @@ func NewAwsProvider(scope constructs.Construct, id *string, config *AwsProviderC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.37.0/docs aws} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs aws} Resource.
 func NewAwsProvider_Override(a AwsProvider, scope constructs.Construct, id *string, config *AwsProviderConfig) {
 	_init_.Initialize()
 
@@ -1257,6 +1281,14 @@ func (j *jsiiProxy_AwsProvider)SetToken(val *string) {
 	_jsii_.Set(
 		j,
 		"token",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AwsProvider)SetTokenBucketRateLimiterCapacity(val *float64) {
+	_jsii_.Set(
+		j,
+		"tokenBucketRateLimiterCapacity",
 		val,
 	)
 }
@@ -1660,6 +1692,14 @@ func (a *jsiiProxy_AwsProvider) ResetToken() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetToken",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AwsProvider) ResetTokenBucketRateLimiterCapacity() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTokenBucketRateLimiterCapacity",
 		nil, // no parameters
 	)
 }
