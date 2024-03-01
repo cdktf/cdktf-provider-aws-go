@@ -206,14 +206,6 @@ func (j *jsiiProxy_ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference) validateSetReadParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
 func (j *jsiiProxy_ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -223,6 +215,14 @@ func (j *jsiiProxy_ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference) val
 }
 
 func (j *jsiiProxy_ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

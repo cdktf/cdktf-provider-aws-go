@@ -238,6 +238,14 @@ func (j *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) validateSetTagsAllParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

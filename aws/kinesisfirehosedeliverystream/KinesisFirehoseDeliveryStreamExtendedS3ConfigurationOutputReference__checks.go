@@ -253,7 +253,23 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference) validateSetCustomTimeZoneParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference) validateSetErrorOutputPrefixParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamExtendedS3ConfigurationOutputReference) validateSetFileExtensionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

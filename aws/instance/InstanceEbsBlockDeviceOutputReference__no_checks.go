@@ -91,6 +91,10 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) validateSetTagsParamet
 	return nil
 }
 
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

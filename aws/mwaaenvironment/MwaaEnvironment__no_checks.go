@@ -123,6 +123,10 @@ func (j *jsiiProxy_MwaaEnvironment) validateSetDagS3PathParameters(val *string) 
 	return nil
 }
 
+func (j *jsiiProxy_MwaaEnvironment) validateSetEndpointManagementParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwaaEnvironment) validateSetEnvironmentClassParameters(val *string) error {
 	return nil
 }

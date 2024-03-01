@@ -47,6 +47,9 @@ type SpotInstanceRequestRootBlockDeviceOutputReference interface {
 	KmsKeyIdInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformAttribute() *string
@@ -95,6 +98,7 @@ type SpotInstanceRequestRootBlockDeviceOutputReference interface {
 	ResetIops()
 	ResetKmsKeyId()
 	ResetTags()
+	ResetTagsAll()
 	ResetThroughput()
 	ResetVolumeSize()
 	ResetVolumeType()
@@ -258,6 +262,26 @@ func (j *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) Tags() *ma
 	_jsii_.Get(
 		j,
 		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
 		&returns,
 	)
 	return returns
@@ -475,6 +499,17 @@ func (j *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference)SetTags(val
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -756,6 +791,14 @@ func (s *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) ResetTags(
 	_jsii_.InvokeVoid(
 		s,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SpotInstanceRequestRootBlockDeviceOutputReference) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }

@@ -52,6 +52,9 @@ type InstanceEbsBlockDeviceOutputReference interface {
 	SnapshotIdInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformAttribute() *string
@@ -101,6 +104,7 @@ type InstanceEbsBlockDeviceOutputReference interface {
 	ResetKmsKeyId()
 	ResetSnapshotId()
 	ResetTags()
+	ResetTagsAll()
 	ResetThroughput()
 	ResetVolumeSize()
 	ResetVolumeType()
@@ -294,6 +298,26 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) Tags() *map[string]*st
 	_jsii_.Get(
 		j,
 		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
 		&returns,
 	)
 	return returns
@@ -533,6 +557,17 @@ func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetTags(val *map[string
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_InstanceEbsBlockDeviceOutputReference)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -822,6 +857,14 @@ func (i *jsiiProxy_InstanceEbsBlockDeviceOutputReference) ResetTags() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_InstanceEbsBlockDeviceOutputReference) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }

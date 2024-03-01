@@ -47,6 +47,9 @@ type InstanceRootBlockDeviceOutputReference interface {
 	KmsKeyIdInput() *string
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
 	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformAttribute() *string
@@ -95,6 +98,7 @@ type InstanceRootBlockDeviceOutputReference interface {
 	ResetIops()
 	ResetKmsKeyId()
 	ResetTags()
+	ResetTagsAll()
 	ResetThroughput()
 	ResetVolumeSize()
 	ResetVolumeType()
@@ -258,6 +262,26 @@ func (j *jsiiProxy_InstanceRootBlockDeviceOutputReference) Tags() *map[string]*s
 	_jsii_.Get(
 		j,
 		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstanceRootBlockDeviceOutputReference) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstanceRootBlockDeviceOutputReference) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
 		&returns,
 	)
 	return returns
@@ -475,6 +499,17 @@ func (j *jsiiProxy_InstanceRootBlockDeviceOutputReference)SetTags(val *map[strin
 	_jsii_.Set(
 		j,
 		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_InstanceRootBlockDeviceOutputReference)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -756,6 +791,14 @@ func (i *jsiiProxy_InstanceRootBlockDeviceOutputReference) ResetTags() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_InstanceRootBlockDeviceOutputReference) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }

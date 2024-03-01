@@ -38,9 +38,6 @@ type ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	Read() *string
-	SetRead(val *string)
-	ReadInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -75,7 +72,6 @@ type ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
-	ResetRead()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -181,26 +177,6 @@ func (j *jsiiProxy_ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference) I
 	return returns
 }
 
-func (j *jsiiProxy_ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference) Read() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"read",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference) ReadInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"readInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -300,17 +276,6 @@ func (j *jsiiProxy_ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference)Se
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference)SetRead(val *string) {
-	if err := j.validateSetReadParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"read",
 		val,
 	)
 }
@@ -535,14 +500,6 @@ func (s *jsiiProxy_ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference) R
 	_jsii_.InvokeVoid(
 		s,
 		"resetDelete",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference) ResetRead() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetRead",
 		nil, // no parameters
 	)
 }

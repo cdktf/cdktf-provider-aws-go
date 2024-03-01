@@ -83,6 +83,10 @@ func (c *jsiiProxy_Codepipeline) validatePutStageParameters(value interface{}) e
 	return nil
 }
 
+func (c *jsiiProxy_Codepipeline) validatePutTriggerParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_Codepipeline) validatePutVariableParameters(value interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/codepipeline aws_codepipeline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/codepipeline aws_codepipeline}.
 type Codepipeline interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -87,6 +87,8 @@ type Codepipeline interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Trigger() CodepipelineTriggerList
+	TriggerInput() interface{}
 	Variable() CodepipelineVariableList
 	VariableInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
@@ -134,6 +136,7 @@ type Codepipeline interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutArtifactStore(value interface{})
 	PutStage(value interface{})
+	PutTrigger(value interface{})
 	PutVariable(value interface{})
 	ResetExecutionMode()
 	ResetId()
@@ -143,6 +146,7 @@ type Codepipeline interface {
 	ResetPipelineType()
 	ResetTags()
 	ResetTagsAll()
+	ResetTrigger()
 	ResetVariable()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -512,6 +516,26 @@ func (j *jsiiProxy_Codepipeline) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Codepipeline) Trigger() CodepipelineTriggerList {
+	var returns CodepipelineTriggerList
+	_jsii_.Get(
+		j,
+		"trigger",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Codepipeline) TriggerInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"triggerInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Codepipeline) Variable() CodepipelineVariableList {
 	var returns CodepipelineVariableList
 	_jsii_.Get(
@@ -533,7 +557,7 @@ func (j *jsiiProxy_Codepipeline) VariableInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/codepipeline aws_codepipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/codepipeline aws_codepipeline} Resource.
 func NewCodepipeline(scope constructs.Construct, id *string, config *CodepipelineConfig) Codepipeline {
 	_init_.Initialize()
 
@@ -551,7 +575,7 @@ func NewCodepipeline(scope constructs.Construct, id *string, config *Codepipelin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/codepipeline aws_codepipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/codepipeline aws_codepipeline} Resource.
 func NewCodepipeline_Override(c Codepipeline, scope constructs.Construct, id *string, config *CodepipelineConfig) {
 	_init_.Initialize()
 
@@ -1082,6 +1106,17 @@ func (c *jsiiProxy_Codepipeline) PutStage(value interface{}) {
 	)
 }
 
+func (c *jsiiProxy_Codepipeline) PutTrigger(value interface{}) {
+	if err := c.validatePutTriggerParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putTrigger",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_Codepipeline) PutVariable(value interface{}) {
 	if err := c.validatePutVariableParameters(value); err != nil {
 		panic(err)
@@ -1137,6 +1172,14 @@ func (c *jsiiProxy_Codepipeline) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_Codepipeline) ResetTrigger() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTrigger",
 		nil, // no parameters
 	)
 }

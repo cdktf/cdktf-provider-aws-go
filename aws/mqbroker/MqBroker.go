@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/mq_broker aws_mq_broker}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/mq_broker aws_mq_broker}.
 type MqBroker interface {
 	cdktf.TerraformResource
 	ApplyImmediately() interface{}
@@ -42,6 +42,12 @@ type MqBroker interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DataReplicationMode() *string
+	SetDataReplicationMode(val *string)
+	DataReplicationModeInput() *string
+	DataReplicationPrimaryBrokerArn() *string
+	SetDataReplicationPrimaryBrokerArn(val *string)
+	DataReplicationPrimaryBrokerArnInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -84,6 +90,7 @@ type MqBroker interface {
 	MaintenanceWindowStartTimeInput() *MqBrokerMaintenanceWindowStartTime
 	// The tree node.
 	Node() constructs.Node
+	PendingDataReplicationMode() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -176,6 +183,8 @@ type MqBroker interface {
 	ResetAuthenticationStrategy()
 	ResetAutoMinorVersionUpgrade()
 	ResetConfiguration()
+	ResetDataReplicationMode()
+	ResetDataReplicationPrimaryBrokerArn()
 	ResetDeploymentMode()
 	ResetEncryptionOptions()
 	ResetId()
@@ -355,6 +364,46 @@ func (j *jsiiProxy_MqBroker) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MqBroker) DataReplicationMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataReplicationMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MqBroker) DataReplicationModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataReplicationModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MqBroker) DataReplicationPrimaryBrokerArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataReplicationPrimaryBrokerArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MqBroker) DataReplicationPrimaryBrokerArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataReplicationPrimaryBrokerArnInput",
 		&returns,
 	)
 	return returns
@@ -610,6 +659,16 @@ func (j *jsiiProxy_MqBroker) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_MqBroker) PendingDataReplicationMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pendingDataReplicationMode",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MqBroker) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -831,7 +890,7 @@ func (j *jsiiProxy_MqBroker) UserInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/mq_broker aws_mq_broker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/mq_broker aws_mq_broker} Resource.
 func NewMqBroker(scope constructs.Construct, id *string, config *MqBrokerConfig) MqBroker {
 	_init_.Initialize()
 
@@ -849,7 +908,7 @@ func NewMqBroker(scope constructs.Construct, id *string, config *MqBrokerConfig)
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/mq_broker aws_mq_broker} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/mq_broker aws_mq_broker} Resource.
 func NewMqBroker_Override(m MqBroker, scope constructs.Construct, id *string, config *MqBrokerConfig) {
 	_init_.Initialize()
 
@@ -922,6 +981,28 @@ func (j *jsiiProxy_MqBroker)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MqBroker)SetDataReplicationMode(val *string) {
+	if err := j.validateSetDataReplicationModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataReplicationMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MqBroker)SetDataReplicationPrimaryBrokerArn(val *string) {
+	if err := j.validateSetDataReplicationPrimaryBrokerArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataReplicationPrimaryBrokerArn",
 		val,
 	)
 }
@@ -1551,6 +1632,22 @@ func (m *jsiiProxy_MqBroker) ResetConfiguration() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MqBroker) ResetDataReplicationMode() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDataReplicationMode",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MqBroker) ResetDataReplicationPrimaryBrokerArn() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetDataReplicationPrimaryBrokerArn",
 		nil, // no parameters
 	)
 }

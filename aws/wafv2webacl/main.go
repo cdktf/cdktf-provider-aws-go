@@ -16,6 +16,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "applicationIntegrationUrl", GoGetter: "ApplicationIntegrationUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "associationConfig", GoGetter: "AssociationConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "associationConfigInput", GoGetter: "AssociationConfigInput"},

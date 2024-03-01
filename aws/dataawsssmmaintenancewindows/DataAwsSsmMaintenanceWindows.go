@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/ssm_maintenance_windows aws_ssm_maintenance_windows}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/ssm_maintenance_windows aws_ssm_maintenance_windows}.
 type DataAwsSsmMaintenanceWindows interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataAwsSsmMaintenanceWindows) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/ssm_maintenance_windows aws_ssm_maintenance_windows} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/ssm_maintenance_windows aws_ssm_maintenance_windows} Data Source.
 func NewDataAwsSsmMaintenanceWindows(scope constructs.Construct, id *string, config *DataAwsSsmMaintenanceWindowsConfig) DataAwsSsmMaintenanceWindows {
 	_init_.Initialize()
 
@@ -318,7 +318,7 @@ func NewDataAwsSsmMaintenanceWindows(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/ssm_maintenance_windows aws_ssm_maintenance_windows} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/ssm_maintenance_windows aws_ssm_maintenance_windows} Data Source.
 func NewDataAwsSsmMaintenanceWindows_Override(d DataAwsSsmMaintenanceWindows, scope constructs.Construct, id *string, config *DataAwsSsmMaintenanceWindowsConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/vpclattice_listener aws_vpclattice_listener}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/vpclattice_listener aws_vpclattice_listener}.
 type DataAwsVpclatticeListener interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -445,7 +445,7 @@ func (j *jsiiProxy_DataAwsVpclatticeListener) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/vpclattice_listener aws_vpclattice_listener} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/vpclattice_listener aws_vpclattice_listener} Data Source.
 func NewDataAwsVpclatticeListener(scope constructs.Construct, id *string, config *DataAwsVpclatticeListenerConfig) DataAwsVpclatticeListener {
 	_init_.Initialize()
 
@@ -463,7 +463,7 @@ func NewDataAwsVpclatticeListener(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/data-sources/vpclattice_listener aws_vpclattice_listener} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/data-sources/vpclattice_listener aws_vpclattice_listener} Data Source.
 func NewDataAwsVpclatticeListener_Override(d DataAwsVpclatticeListener, scope constructs.Construct, id *string, config *DataAwsVpclatticeListenerConfig) {
 	_init_.Initialize()
 

@@ -12,9 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/redshiftserverless_namespace aws_redshiftserverless_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/redshiftserverless_namespace aws_redshiftserverless_namespace}.
 type RedshiftserverlessNamespace interface {
 	cdktf.TerraformResource
+	AdminPasswordSecretArn() *string
+	AdminPasswordSecretKmsKeyId() *string
+	SetAdminPasswordSecretKmsKeyId(val *string)
+	AdminPasswordSecretKmsKeyIdInput() *string
 	AdminUsername() *string
 	SetAdminUsername(val *string)
 	AdminUsernameInput() *string
@@ -68,6 +72,9 @@ type RedshiftserverlessNamespace interface {
 	LogExports() *[]*string
 	SetLogExports(val *[]*string)
 	LogExportsInput() *[]*string
+	ManageAdminPassword() interface{}
+	SetManageAdminPassword(val interface{})
+	ManageAdminPasswordInput() interface{}
 	NamespaceId() *string
 	NamespaceName() *string
 	SetNamespaceName(val *string)
@@ -139,6 +146,7 @@ type RedshiftserverlessNamespace interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetAdminPasswordSecretKmsKeyId()
 	ResetAdminUsername()
 	ResetAdminUserPassword()
 	ResetDbName()
@@ -147,6 +155,7 @@ type RedshiftserverlessNamespace interface {
 	ResetId()
 	ResetKmsKeyId()
 	ResetLogExports()
+	ResetManageAdminPassword()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -168,6 +177,36 @@ type RedshiftserverlessNamespace interface {
 // The jsii proxy struct for RedshiftserverlessNamespace
 type jsiiProxy_RedshiftserverlessNamespace struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_RedshiftserverlessNamespace) AdminPasswordSecretArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"adminPasswordSecretArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftserverlessNamespace) AdminPasswordSecretKmsKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"adminPasswordSecretKmsKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftserverlessNamespace) AdminPasswordSecretKmsKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"adminPasswordSecretKmsKeyIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_RedshiftserverlessNamespace) AdminUsername() *string {
@@ -430,6 +469,26 @@ func (j *jsiiProxy_RedshiftserverlessNamespace) LogExportsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_RedshiftserverlessNamespace) ManageAdminPassword() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageAdminPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RedshiftserverlessNamespace) ManageAdminPasswordInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"manageAdminPasswordInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RedshiftserverlessNamespace) NamespaceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -571,7 +630,7 @@ func (j *jsiiProxy_RedshiftserverlessNamespace) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/redshiftserverless_namespace aws_redshiftserverless_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/redshiftserverless_namespace aws_redshiftserverless_namespace} Resource.
 func NewRedshiftserverlessNamespace(scope constructs.Construct, id *string, config *RedshiftserverlessNamespaceConfig) RedshiftserverlessNamespace {
 	_init_.Initialize()
 
@@ -589,7 +648,7 @@ func NewRedshiftserverlessNamespace(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/redshiftserverless_namespace aws_redshiftserverless_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/redshiftserverless_namespace aws_redshiftserverless_namespace} Resource.
 func NewRedshiftserverlessNamespace_Override(r RedshiftserverlessNamespace, scope constructs.Construct, id *string, config *RedshiftserverlessNamespaceConfig) {
 	_init_.Initialize()
 
@@ -597,6 +656,17 @@ func NewRedshiftserverlessNamespace_Override(r RedshiftserverlessNamespace, scop
 		"@cdktf/provider-aws.redshiftserverlessNamespace.RedshiftserverlessNamespace",
 		[]interface{}{scope, id, config},
 		r,
+	)
+}
+
+func (j *jsiiProxy_RedshiftserverlessNamespace)SetAdminPasswordSecretKmsKeyId(val *string) {
+	if err := j.validateSetAdminPasswordSecretKmsKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"adminPasswordSecretKmsKeyId",
+		val,
 	)
 }
 
@@ -733,6 +803,17 @@ func (j *jsiiProxy_RedshiftserverlessNamespace)SetLogExports(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"logExports",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RedshiftserverlessNamespace)SetManageAdminPassword(val interface{}) {
+	if err := j.validateSetManageAdminPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"manageAdminPassword",
 		val,
 	)
 }
@@ -1142,6 +1223,14 @@ func (r *jsiiProxy_RedshiftserverlessNamespace) OverrideLogicalId(newLogicalId *
 	)
 }
 
+func (r *jsiiProxy_RedshiftserverlessNamespace) ResetAdminPasswordSecretKmsKeyId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetAdminPasswordSecretKmsKeyId",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_RedshiftserverlessNamespace) ResetAdminUsername() {
 	_jsii_.InvokeVoid(
 		r,
@@ -1202,6 +1291,14 @@ func (r *jsiiProxy_RedshiftserverlessNamespace) ResetLogExports() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetLogExports",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RedshiftserverlessNamespace) ResetManageAdminPassword() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetManageAdminPassword",
 		nil, // no parameters
 	)
 }

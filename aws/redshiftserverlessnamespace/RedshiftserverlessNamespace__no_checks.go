@@ -91,6 +91,10 @@ func validateRedshiftserverlessNamespace_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetAdminPasswordSecretKmsKeyIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetAdminUsernameParameters(val *string) error {
 	return nil
 }
@@ -132,6 +136,10 @@ func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetLifecycleParameters(v
 }
 
 func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetLogExportsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetManageAdminPasswordParameters(val interface{}) error {
 	return nil
 }
 

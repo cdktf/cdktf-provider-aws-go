@@ -83,6 +83,10 @@ func (j *jsiiProxy_InstanceRootBlockDeviceOutputReference) validateSetTagsParame
 	return nil
 }
 
+func (j *jsiiProxy_InstanceRootBlockDeviceOutputReference) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_InstanceRootBlockDeviceOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

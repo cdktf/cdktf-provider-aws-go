@@ -71,6 +71,10 @@ func (j *jsiiProxy_SpotInstanceRequestTimeoutsOutputReference) validateSetIntern
 	return nil
 }
 
+func (j *jsiiProxy_SpotInstanceRequestTimeoutsOutputReference) validateSetReadParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SpotInstanceRequestTimeoutsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

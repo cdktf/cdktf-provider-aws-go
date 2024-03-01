@@ -143,6 +143,14 @@ func (j *jsiiProxy_MqBroker) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_MqBroker) validateSetDataReplicationModeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MqBroker) validateSetDataReplicationPrimaryBrokerArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_MqBroker) validateSetDeploymentModeParameters(val *string) error {
 	return nil
 }

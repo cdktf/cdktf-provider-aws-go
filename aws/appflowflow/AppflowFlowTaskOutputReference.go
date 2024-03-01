@@ -81,6 +81,7 @@ type AppflowFlowTaskOutputReference interface {
 	PutConnectorOperator(value interface{})
 	ResetConnectorOperator()
 	ResetDestinationField()
+	ResetSourceFields()
 	ResetTaskProperties()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -603,6 +604,14 @@ func (a *jsiiProxy_AppflowFlowTaskOutputReference) ResetDestinationField() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetDestinationField",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppflowFlowTaskOutputReference) ResetSourceFields() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSourceFields",
 		nil, // no parameters
 	)
 }

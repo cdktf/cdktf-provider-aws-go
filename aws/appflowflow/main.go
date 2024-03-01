@@ -2570,6 +2570,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putConnectorOperator", GoMethod: "PutConnectorOperator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectorOperator", GoMethod: "ResetConnectorOperator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDestinationField", GoMethod: "ResetDestinationField"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSourceFields", GoMethod: "ResetSourceFields"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTaskProperties", GoMethod: "ResetTaskProperties"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "sourceFields", GoGetter: "SourceFields"},

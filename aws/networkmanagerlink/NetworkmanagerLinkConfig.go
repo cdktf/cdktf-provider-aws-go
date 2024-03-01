@@ -24,30 +24,30 @@ type NetworkmanagerLinkConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// bandwidth block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/networkmanager_link#bandwidth NetworkmanagerLink#bandwidth}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/networkmanager_link#bandwidth NetworkmanagerLink#bandwidth}
 	Bandwidth *NetworkmanagerLinkBandwidth `field:"required" json:"bandwidth" yaml:"bandwidth"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/networkmanager_link#global_network_id NetworkmanagerLink#global_network_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/networkmanager_link#global_network_id NetworkmanagerLink#global_network_id}.
 	GlobalNetworkId *string `field:"required" json:"globalNetworkId" yaml:"globalNetworkId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/networkmanager_link#site_id NetworkmanagerLink#site_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/networkmanager_link#site_id NetworkmanagerLink#site_id}.
 	SiteId *string `field:"required" json:"siteId" yaml:"siteId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/networkmanager_link#description NetworkmanagerLink#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/networkmanager_link#description NetworkmanagerLink#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/networkmanager_link#id NetworkmanagerLink#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/networkmanager_link#id NetworkmanagerLink#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/networkmanager_link#provider_name NetworkmanagerLink#provider_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/networkmanager_link#provider_name NetworkmanagerLink#provider_name}.
 	ProviderName *string `field:"optional" json:"providerName" yaml:"providerName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/networkmanager_link#tags NetworkmanagerLink#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/networkmanager_link#tags NetworkmanagerLink#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/networkmanager_link#tags_all NetworkmanagerLink#tags_all}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/networkmanager_link#tags_all NetworkmanagerLink#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/networkmanager_link#timeouts NetworkmanagerLink#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/networkmanager_link#timeouts NetworkmanagerLink#timeouts}
 	Timeouts *NetworkmanagerLinkTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/networkmanager_link#type NetworkmanagerLink#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/networkmanager_link#type NetworkmanagerLink#type}.
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

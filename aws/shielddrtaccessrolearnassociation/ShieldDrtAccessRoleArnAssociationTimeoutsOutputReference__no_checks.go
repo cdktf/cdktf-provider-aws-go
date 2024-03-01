@@ -71,15 +71,15 @@ func (j *jsiiProxy_ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference) validateSetReadParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_ShieldDrtAccessRoleArnAssociationTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/finspace_kx_user aws_finspace_kx_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/finspace_kx_user aws_finspace_kx_user}.
 type FinspaceKxUser interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -462,7 +462,7 @@ func (j *jsiiProxy_FinspaceKxUser) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/finspace_kx_user aws_finspace_kx_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/finspace_kx_user aws_finspace_kx_user} Resource.
 func NewFinspaceKxUser(scope constructs.Construct, id *string, config *FinspaceKxUserConfig) FinspaceKxUser {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewFinspaceKxUser(scope constructs.Construct, id *string, config *FinspaceK
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/finspace_kx_user aws_finspace_kx_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/finspace_kx_user aws_finspace_kx_user} Resource.
 func NewFinspaceKxUser_Override(f FinspaceKxUser, scope constructs.Construct, id *string, config *FinspaceKxUserConfig) {
 	_init_.Initialize()
 

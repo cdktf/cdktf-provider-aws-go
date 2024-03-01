@@ -490,6 +490,22 @@ func (j *jsiiProxy_MqBroker) validateSetCountParameters(val interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_MqBroker) validateSetDataReplicationModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MqBroker) validateSetDataReplicationPrimaryBrokerArnParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_MqBroker) validateSetDeploymentModeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

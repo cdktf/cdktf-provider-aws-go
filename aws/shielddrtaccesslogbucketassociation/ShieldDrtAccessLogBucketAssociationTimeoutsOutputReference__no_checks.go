@@ -71,10 +71,6 @@ func (j *jsiiProxy_ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference) validateSetReadParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_ShieldDrtAccessLogBucketAssociationTimeoutsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

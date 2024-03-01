@@ -38,6 +38,9 @@ type InstanceTimeoutsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Read() *string
+	SetRead(val *string)
+	ReadInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -75,6 +78,7 @@ type InstanceTimeoutsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
+	ResetRead()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -176,6 +180,26 @@ func (j *jsiiProxy_InstanceTimeoutsOutputReference) InternalValue() interface{} 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstanceTimeoutsOutputReference) Read() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"read",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_InstanceTimeoutsOutputReference) ReadInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"readInput",
 		&returns,
 	)
 	return returns
@@ -300,6 +324,17 @@ func (j *jsiiProxy_InstanceTimeoutsOutputReference)SetInternalValue(val interfac
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_InstanceTimeoutsOutputReference)SetRead(val *string) {
+	if err := j.validateSetReadParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"read",
 		val,
 	)
 }
@@ -535,6 +570,14 @@ func (i *jsiiProxy_InstanceTimeoutsOutputReference) ResetDelete() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetDelete",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_InstanceTimeoutsOutputReference) ResetRead() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetRead",
 		nil, // no parameters
 	)
 }

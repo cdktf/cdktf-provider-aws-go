@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/imagebuilder_distribution_configuration aws_imagebuilder_distribution_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/imagebuilder_distribution_configuration aws_imagebuilder_distribution_configuration}.
 type ImagebuilderDistributionConfiguration interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -461,7 +461,7 @@ func (j *jsiiProxy_ImagebuilderDistributionConfiguration) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/imagebuilder_distribution_configuration aws_imagebuilder_distribution_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/imagebuilder_distribution_configuration aws_imagebuilder_distribution_configuration} Resource.
 func NewImagebuilderDistributionConfiguration(scope constructs.Construct, id *string, config *ImagebuilderDistributionConfigurationConfig) ImagebuilderDistributionConfiguration {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewImagebuilderDistributionConfiguration(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.38.0/docs/resources/imagebuilder_distribution_configuration aws_imagebuilder_distribution_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/imagebuilder_distribution_configuration aws_imagebuilder_distribution_configuration} Resource.
 func NewImagebuilderDistributionConfiguration_Override(i ImagebuilderDistributionConfiguration, scope constructs.Construct, id *string, config *ImagebuilderDistributionConfigurationConfig) {
 	_init_.Initialize()
 
