@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/controltower_control aws_controltower_control}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/controltower_control aws_controltower_control}.
 type ControltowerControl interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_ControltowerControl) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/controltower_control aws_controltower_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/controltower_control aws_controltower_control} Resource.
 func NewControltowerControl(scope constructs.Construct, id *string, config *ControltowerControlConfig) ControltowerControl {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewControltowerControl(scope constructs.Construct, id *string, config *Cont
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/controltower_control aws_controltower_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/controltower_control aws_controltower_control} Resource.
 func NewControltowerControl_Override(c ControltowerControl, scope constructs.Construct, id *string, config *ControltowerControlConfig) {
 	_init_.Initialize()
 

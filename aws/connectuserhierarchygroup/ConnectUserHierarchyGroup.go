@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/connect_user_hierarchy_group aws_connect_user_hierarchy_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/connect_user_hierarchy_group aws_connect_user_hierarchy_group}.
 type ConnectUserHierarchyGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -472,7 +472,7 @@ func (j *jsiiProxy_ConnectUserHierarchyGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/connect_user_hierarchy_group aws_connect_user_hierarchy_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/connect_user_hierarchy_group aws_connect_user_hierarchy_group} Resource.
 func NewConnectUserHierarchyGroup(scope constructs.Construct, id *string, config *ConnectUserHierarchyGroupConfig) ConnectUserHierarchyGroup {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewConnectUserHierarchyGroup(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/connect_user_hierarchy_group aws_connect_user_hierarchy_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/connect_user_hierarchy_group aws_connect_user_hierarchy_group} Resource.
 func NewConnectUserHierarchyGroup_Override(c ConnectUserHierarchyGroup, scope constructs.Construct, id *string, config *ConnectUserHierarchyGroupConfig) {
 	_init_.Initialize()
 

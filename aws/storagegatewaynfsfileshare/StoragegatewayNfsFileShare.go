@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/storagegateway_nfs_file_share aws_storagegateway_nfs_file_share}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/storagegateway_nfs_file_share aws_storagegateway_nfs_file_share}.
 type StoragegatewayNfsFileShare interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -867,7 +867,7 @@ func (j *jsiiProxy_StoragegatewayNfsFileShare) VpcEndpointDnsNameInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/storagegateway_nfs_file_share aws_storagegateway_nfs_file_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/storagegateway_nfs_file_share aws_storagegateway_nfs_file_share} Resource.
 func NewStoragegatewayNfsFileShare(scope constructs.Construct, id *string, config *StoragegatewayNfsFileShareConfig) StoragegatewayNfsFileShare {
 	_init_.Initialize()
 
@@ -885,7 +885,7 @@ func NewStoragegatewayNfsFileShare(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/storagegateway_nfs_file_share aws_storagegateway_nfs_file_share} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/storagegateway_nfs_file_share aws_storagegateway_nfs_file_share} Resource.
 func NewStoragegatewayNfsFileShare_Override(s StoragegatewayNfsFileShare, scope constructs.Construct, id *string, config *StoragegatewayNfsFileShareConfig) {
 	_init_.Initialize()
 

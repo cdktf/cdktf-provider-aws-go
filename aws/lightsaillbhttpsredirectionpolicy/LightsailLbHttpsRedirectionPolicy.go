@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/lightsail_lb_https_redirection_policy aws_lightsail_lb_https_redirection_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/lightsail_lb_https_redirection_policy aws_lightsail_lb_https_redirection_policy}.
 type LightsailLbHttpsRedirectionPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_LightsailLbHttpsRedirectionPolicy) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/lightsail_lb_https_redirection_policy aws_lightsail_lb_https_redirection_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/lightsail_lb_https_redirection_policy aws_lightsail_lb_https_redirection_policy} Resource.
 func NewLightsailLbHttpsRedirectionPolicy(scope constructs.Construct, id *string, config *LightsailLbHttpsRedirectionPolicyConfig) LightsailLbHttpsRedirectionPolicy {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewLightsailLbHttpsRedirectionPolicy(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/lightsail_lb_https_redirection_policy aws_lightsail_lb_https_redirection_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/lightsail_lb_https_redirection_policy aws_lightsail_lb_https_redirection_policy} Resource.
 func NewLightsailLbHttpsRedirectionPolicy_Override(l LightsailLbHttpsRedirectionPolicy, scope constructs.Construct, id *string, config *LightsailLbHttpsRedirectionPolicyConfig) {
 	_init_.Initialize()
 

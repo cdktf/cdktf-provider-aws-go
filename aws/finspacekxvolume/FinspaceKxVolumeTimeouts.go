@@ -5,11 +5,11 @@ package finspacekxvolume
 
 
 type FinspaceKxVolumeTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/finspace_kx_volume#create FinspaceKxVolume#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/finspace_kx_volume#create FinspaceKxVolume#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/finspace_kx_volume#delete FinspaceKxVolume#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/finspace_kx_volume#delete FinspaceKxVolume#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/finspace_kx_volume#update FinspaceKxVolume#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/finspace_kx_volume#update FinspaceKxVolume#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

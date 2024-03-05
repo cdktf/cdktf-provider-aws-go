@@ -5,9 +5,9 @@ package ecstaskdefinition
 
 
 type EcsTaskDefinitionPlacementConstraints struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/ecs_task_definition#type EcsTaskDefinition#type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/ecs_task_definition#type EcsTaskDefinition#type}.
 	Type *string `field:"required" json:"type" yaml:"type"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.0/docs/resources/ecs_task_definition#expression EcsTaskDefinition#expression}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/ecs_task_definition#expression EcsTaskDefinition#expression}.
 	Expression *string `field:"optional" json:"expression" yaml:"expression"`
 }
 
