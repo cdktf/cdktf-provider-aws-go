@@ -83,6 +83,10 @@ func (j *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) validateSetTe
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) validateSetUseOffPeakWindowParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewOpensearchDomainAutoTuneOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

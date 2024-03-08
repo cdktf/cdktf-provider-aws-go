@@ -123,6 +123,14 @@ func (j *jsiiProxy_IotRoleAlias) validateSetRoleArnParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_IotRoleAlias) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IotRoleAlias) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewIotRoleAliasParameters(scope constructs.Construct, id *string, config *IotRoleAliasConfig) error {
 	return nil
 }

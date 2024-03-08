@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/lex_slot_type aws_lex_slot_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lex_slot_type aws_lex_slot_type}.
 type DataAwsLexSlotType interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -378,7 +378,7 @@ func (j *jsiiProxy_DataAwsLexSlotType) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/lex_slot_type aws_lex_slot_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lex_slot_type aws_lex_slot_type} Data Source.
 func NewDataAwsLexSlotType(scope constructs.Construct, id *string, config *DataAwsLexSlotTypeConfig) DataAwsLexSlotType {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewDataAwsLexSlotType(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/lex_slot_type aws_lex_slot_type} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/lex_slot_type aws_lex_slot_type} Data Source.
 func NewDataAwsLexSlotType_Override(d DataAwsLexSlotType, scope constructs.Construct, id *string, config *DataAwsLexSlotTypeConfig) {
 	_init_.Initialize()
 

@@ -373,12 +373,15 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMaintenanceSchedule", GoMethod: "PutMaintenanceSchedule"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaintenanceSchedule", GoMethod: "ResetMaintenanceSchedule"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRollbackOnDisable", GoMethod: "ResetRollbackOnDisable"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUseOffPeakWindow", GoMethod: "ResetUseOffPeakWindow"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "rollbackOnDisable", GoGetter: "RollbackOnDisable"},
 			_jsii_.MemberProperty{JsiiProperty: "rollbackOnDisableInput", GoGetter: "RollbackOnDisableInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "useOffPeakWindow", GoGetter: "UseOffPeakWindow"},
+			_jsii_.MemberProperty{JsiiProperty: "useOffPeakWindowInput", GoGetter: "UseOffPeakWindowInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference{}

@@ -48,6 +48,9 @@ type OpensearchDomainAutoTuneOptionsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UseOffPeakWindow() interface{}
+	SetUseOffPeakWindow(val interface{})
+	UseOffPeakWindowInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -75,6 +78,7 @@ type OpensearchDomainAutoTuneOptionsOutputReference interface {
 	PutMaintenanceSchedule(value interface{})
 	ResetMaintenanceSchedule()
 	ResetRollbackOnDisable()
+	ResetUseOffPeakWindow()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -220,6 +224,26 @@ func (j *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) TerraformReso
 	return returns
 }
 
+func (j *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) UseOffPeakWindow() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useOffPeakWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) UseOffPeakWindowInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"useOffPeakWindowInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewOpensearchDomainAutoTuneOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OpensearchDomainAutoTuneOptionsOutputReference {
 	_init_.Initialize()
@@ -321,6 +345,17 @@ func (j *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference)SetTerraformRe
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference)SetUseOffPeakWindow(val interface{}) {
+	if err := j.validateSetUseOffPeakWindowParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"useOffPeakWindow",
 		val,
 	)
 }
@@ -534,6 +569,14 @@ func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) ResetRollback
 	_jsii_.InvokeVoid(
 		o,
 		"resetRollbackOnDisable",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) ResetUseOffPeakWindow() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetUseOffPeakWindow",
 		nil, // no parameters
 	)
 }

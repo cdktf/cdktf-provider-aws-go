@@ -5,9 +5,9 @@ package alblistener
 
 
 type AlbListenerDefaultActionForwardStickiness struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/alb_listener#duration AlbListener#duration}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/alb_listener#duration AlbListener#duration}.
 	Duration *float64 `field:"required" json:"duration" yaml:"duration"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/alb_listener#enabled AlbListener#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/alb_listener#enabled AlbListener#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
 }
 

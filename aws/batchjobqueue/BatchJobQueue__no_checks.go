@@ -75,6 +75,10 @@ func (b *jsiiProxy_BatchJobQueue) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (b *jsiiProxy_BatchJobQueue) validatePutComputeEnvironmentOrderParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BatchJobQueue) validatePutTimeoutsParameters(value *BatchJobQueueTimeouts) error {
 	return nil
 }

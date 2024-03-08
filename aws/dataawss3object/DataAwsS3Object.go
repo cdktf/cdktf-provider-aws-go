@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/s3_object aws_s3_object}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/s3_object aws_s3_object}.
 type DataAwsS3Object interface {
 	cdktf.TerraformDataSource
+	Arn() *string
 	Body() *string
 	Bucket() *string
 	SetBucket(val *string)
@@ -148,6 +149,16 @@ type DataAwsS3Object interface {
 // The jsii proxy struct for DataAwsS3Object
 type jsiiProxy_DataAwsS3Object struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataAwsS3Object) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAwsS3Object) Body() *string {
@@ -671,7 +682,7 @@ func (j *jsiiProxy_DataAwsS3Object) WebsiteRedirectLocation() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/s3_object aws_s3_object} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/s3_object aws_s3_object} Data Source.
 func NewDataAwsS3Object(scope constructs.Construct, id *string, config *DataAwsS3ObjectConfig) DataAwsS3Object {
 	_init_.Initialize()
 
@@ -689,7 +700,7 @@ func NewDataAwsS3Object(scope constructs.Construct, id *string, config *DataAwsS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/s3_object aws_s3_object} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/s3_object aws_s3_object} Data Source.
 func NewDataAwsS3Object_Override(d DataAwsS3Object, scope constructs.Construct, id *string, config *DataAwsS3ObjectConfig) {
 	_init_.Initialize()
 

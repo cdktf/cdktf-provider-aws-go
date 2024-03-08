@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version aws_rds_engine_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version aws_rds_engine_version}.
 type DataAwsRdsEngineVersion interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -46,6 +46,12 @@ type DataAwsRdsEngineVersion interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HasMajorTarget() interface{}
+	SetHasMajorTarget(val interface{})
+	HasMajorTargetInput() interface{}
+	HasMinorTarget() interface{}
+	SetHasMinorTarget(val interface{})
+	HasMinorTargetInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -94,6 +100,8 @@ type DataAwsRdsEngineVersion interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	ValidMajorTargets() *[]*string
+	ValidMinorTargets() *[]*string
 	ValidUpgradeTargets() *[]*string
 	Version() *string
 	SetVersion(val *string)
@@ -128,6 +136,8 @@ type DataAwsRdsEngineVersion interface {
 	PutFilter(value interface{})
 	ResetDefaultOnly()
 	ResetFilter()
+	ResetHasMajorTarget()
+	ResetHasMinorTarget()
 	ResetId()
 	ResetIncludeAll()
 	ResetLatest()
@@ -313,6 +323,46 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion) HasMajorTarget() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hasMajorTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion) HasMajorTargetInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hasMajorTargetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion) HasMinorTarget() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hasMinorTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion) HasMinorTargetInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"hasMinorTargetInput",
 		&returns,
 	)
 	return returns
@@ -618,6 +668,26 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsRdsEngineVersion) ValidMajorTargets() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"validMajorTargets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion) ValidMinorTargets() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"validMinorTargets",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsRdsEngineVersion) ValidUpgradeTargets() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -669,7 +739,7 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version aws_rds_engine_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version aws_rds_engine_version} Data Source.
 func NewDataAwsRdsEngineVersion(scope constructs.Construct, id *string, config *DataAwsRdsEngineVersionConfig) DataAwsRdsEngineVersion {
 	_init_.Initialize()
 
@@ -687,7 +757,7 @@ func NewDataAwsRdsEngineVersion(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/data-sources/rds_engine_version aws_rds_engine_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/rds_engine_version aws_rds_engine_version} Data Source.
 func NewDataAwsRdsEngineVersion_Override(d DataAwsRdsEngineVersion, scope constructs.Construct, id *string, config *DataAwsRdsEngineVersionConfig) {
 	_init_.Initialize()
 
@@ -743,6 +813,28 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion)SetForEach(val cdktf.ITerraformIterat
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion)SetHasMajorTarget(val interface{}) {
+	if err := j.validateSetHasMajorTargetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hasMajorTarget",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion)SetHasMinorTarget(val interface{}) {
+	if err := j.validateSetHasMinorTargetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hasMinorTarget",
 		val,
 	)
 }
@@ -1162,6 +1254,22 @@ func (d *jsiiProxy_DataAwsRdsEngineVersion) ResetFilter() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetFilter",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsRdsEngineVersion) ResetHasMajorTarget() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHasMajorTarget",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsRdsEngineVersion) ResetHasMinorTarget() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetHasMinorTarget",
 		nil, // no parameters
 	)
 }

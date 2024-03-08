@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_policy aws_iot_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_policy aws_iot_policy}.
 type IotPolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -66,6 +66,12 @@ type IotPolicy interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -122,6 +128,8 @@ type IotPolicy interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
+	ResetTagsAll()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -351,6 +359,46 @@ func (j *jsiiProxy_IotPolicy) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_IotPolicy) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotPolicy) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotPolicy) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotPolicy) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IotPolicy) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -402,7 +450,7 @@ func (j *jsiiProxy_IotPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_policy aws_iot_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_policy aws_iot_policy} Resource.
 func NewIotPolicy(scope constructs.Construct, id *string, config *IotPolicyConfig) IotPolicy {
 	_init_.Initialize()
 
@@ -420,7 +468,7 @@ func NewIotPolicy(scope constructs.Construct, id *string, config *IotPolicyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_policy aws_iot_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_policy aws_iot_policy} Resource.
 func NewIotPolicy_Override(i IotPolicy, scope constructs.Construct, id *string, config *IotPolicyConfig) {
 	_init_.Initialize()
 
@@ -528,6 +576,28 @@ func (j *jsiiProxy_IotPolicy)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IotPolicy)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IotPolicy)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -908,6 +978,22 @@ func (i *jsiiProxy_IotPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IotPolicy) ResetTags() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IotPolicy) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }

@@ -7,7 +7,7 @@ package lexv2modelsslottype
 type Lexv2ModelsSlotTypeCompositeSlotTypeSetting struct {
 	// subslots block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/lexv2models_slot_type#subslots Lexv2ModelsSlotType#subslots}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/lexv2models_slot_type#subslots Lexv2ModelsSlotType#subslots}
 	Subslots interface{} `field:"optional" json:"subslots" yaml:"subslots"`
 }
 

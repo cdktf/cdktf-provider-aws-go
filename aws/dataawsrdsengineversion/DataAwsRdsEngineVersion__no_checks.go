@@ -87,6 +87,14 @@ func (j *jsiiProxy_DataAwsRdsEngineVersion) validateSetEngineParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsRdsEngineVersion) validateSetHasMajorTargetParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_DataAwsRdsEngineVersion) validateSetHasMinorTargetParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsRdsEngineVersion) validateSetIdParameters(val *string) error {
 	return nil
 }

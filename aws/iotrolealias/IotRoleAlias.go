@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_role_alias aws_iot_role_alias}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias aws_iot_role_alias}.
 type IotRoleAlias interface {
 	cdktf.TerraformResource
 	Alias() *string
@@ -68,6 +68,12 @@ type IotRoleAlias interface {
 	RoleArn() *string
 	SetRoleArn(val *string)
 	RoleArnInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -122,6 +128,8 @@ type IotRoleAlias interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
+	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -360,6 +368,46 @@ func (j *jsiiProxy_IotRoleAlias) RoleArnInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_IotRoleAlias) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotRoleAlias) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotRoleAlias) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotRoleAlias) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IotRoleAlias) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -391,7 +439,7 @@ func (j *jsiiProxy_IotRoleAlias) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_role_alias aws_iot_role_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias aws_iot_role_alias} Resource.
 func NewIotRoleAlias(scope constructs.Construct, id *string, config *IotRoleAliasConfig) IotRoleAlias {
 	_init_.Initialize()
 
@@ -409,7 +457,7 @@ func NewIotRoleAlias(scope constructs.Construct, id *string, config *IotRoleAlia
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.39.1/docs/resources/iot_role_alias aws_iot_role_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/iot_role_alias aws_iot_role_alias} Resource.
 func NewIotRoleAlias_Override(i IotRoleAlias, scope constructs.Construct, id *string, config *IotRoleAliasConfig) {
 	_init_.Initialize()
 
@@ -528,6 +576,28 @@ func (j *jsiiProxy_IotRoleAlias)SetRoleArn(val *string) {
 	_jsii_.Set(
 		j,
 		"roleArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IotRoleAlias)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IotRoleAlias)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -905,6 +975,22 @@ func (i *jsiiProxy_IotRoleAlias) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IotRoleAlias) ResetTags() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IotRoleAlias) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }
