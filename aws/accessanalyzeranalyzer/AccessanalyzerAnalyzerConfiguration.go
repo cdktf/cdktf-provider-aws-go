@@ -7,7 +7,7 @@ package accessanalyzeranalyzer
 type AccessanalyzerAnalyzerConfiguration struct {
 	// unused_access block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/accessanalyzer_analyzer#unused_access AccessanalyzerAnalyzer#unused_access}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/accessanalyzer_analyzer#unused_access AccessanalyzerAnalyzer#unused_access}
 	UnusedAccess *AccessanalyzerAnalyzerConfigurationUnusedAccess `field:"optional" json:"unusedAccess" yaml:"unusedAccess"`
 }
 

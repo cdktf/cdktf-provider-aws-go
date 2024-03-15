@@ -79,6 +79,10 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) validatePutAdminContactParame
 	return nil
 }
 
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) validatePutBillingContactParameters(value *Route53DomainsRegisteredDomainBillingContact) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53DomainsRegisteredDomain) validatePutNameServerParameters(value interface{}) error {
 	return nil
 }
@@ -116,6 +120,10 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) validateSetAdminPrivacyParame
 }
 
 func (j *jsiiProxy_Route53DomainsRegisteredDomain) validateSetAutoRenewParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) validateSetBillingPrivacyParameters(val interface{}) error {
 	return nil
 }
 

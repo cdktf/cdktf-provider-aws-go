@@ -22,28 +22,28 @@ type KmsGrantConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/kms_grant#grantee_principal KmsGrant#grantee_principal}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/kms_grant#grantee_principal KmsGrant#grantee_principal}.
 	GranteePrincipal *string `field:"required" json:"granteePrincipal" yaml:"granteePrincipal"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/kms_grant#key_id KmsGrant#key_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/kms_grant#key_id KmsGrant#key_id}.
 	KeyId *string `field:"required" json:"keyId" yaml:"keyId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/kms_grant#operations KmsGrant#operations}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/kms_grant#operations KmsGrant#operations}.
 	Operations *[]*string `field:"required" json:"operations" yaml:"operations"`
 	// constraints block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/kms_grant#constraints KmsGrant#constraints}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/kms_grant#constraints KmsGrant#constraints}
 	Constraints interface{} `field:"optional" json:"constraints" yaml:"constraints"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/kms_grant#grant_creation_tokens KmsGrant#grant_creation_tokens}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/kms_grant#grant_creation_tokens KmsGrant#grant_creation_tokens}.
 	GrantCreationTokens *[]*string `field:"optional" json:"grantCreationTokens" yaml:"grantCreationTokens"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/kms_grant#id KmsGrant#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/kms_grant#id KmsGrant#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/kms_grant#name KmsGrant#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/kms_grant#name KmsGrant#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/kms_grant#retire_on_delete KmsGrant#retire_on_delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/kms_grant#retire_on_delete KmsGrant#retire_on_delete}.
 	RetireOnDelete interface{} `field:"optional" json:"retireOnDelete" yaml:"retireOnDelete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/kms_grant#retiring_principal KmsGrant#retiring_principal}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/kms_grant#retiring_principal KmsGrant#retiring_principal}.
 	RetiringPrincipal *string `field:"optional" json:"retiringPrincipal" yaml:"retiringPrincipal"`
 }
 

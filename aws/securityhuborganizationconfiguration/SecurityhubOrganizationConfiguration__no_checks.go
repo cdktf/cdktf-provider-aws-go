@@ -75,6 +75,14 @@ func (s *jsiiProxy_SecurityhubOrganizationConfiguration) validateOverrideLogical
 	return nil
 }
 
+func (s *jsiiProxy_SecurityhubOrganizationConfiguration) validatePutOrganizationConfigurationParameters(value *SecurityhubOrganizationConfigurationOrganizationConfiguration) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityhubOrganizationConfiguration) validatePutTimeoutsParameters(value *SecurityhubOrganizationConfigurationTimeouts) error {
+	return nil
+}
+
 func validateSecurityhubOrganizationConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

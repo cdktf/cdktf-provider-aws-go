@@ -55,6 +55,10 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) validatePutCustom
 	return nil
 }
 
+func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) validatePutPreTokenGenerationConfigParameters(value *CognitoUserPoolLambdaConfigPreTokenGenerationConfig) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

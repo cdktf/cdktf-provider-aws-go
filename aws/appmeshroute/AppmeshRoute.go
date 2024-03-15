@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/appmesh_route aws_appmesh_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/appmesh_route aws_appmesh_route}.
 type AppmeshRoute interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -518,7 +518,7 @@ func (j *jsiiProxy_AppmeshRoute) VirtualRouterNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/appmesh_route aws_appmesh_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/appmesh_route aws_appmesh_route} Resource.
 func NewAppmeshRoute(scope constructs.Construct, id *string, config *AppmeshRouteConfig) AppmeshRoute {
 	_init_.Initialize()
 
@@ -536,7 +536,7 @@ func NewAppmeshRoute(scope constructs.Construct, id *string, config *AppmeshRout
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/appmesh_route aws_appmesh_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/appmesh_route aws_appmesh_route} Resource.
 func NewAppmeshRoute_Override(a AppmeshRoute, scope constructs.Construct, id *string, config *AppmeshRouteConfig) {
 	_init_.Initialize()
 

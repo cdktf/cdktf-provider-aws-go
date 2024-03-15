@@ -43,6 +43,7 @@ type DataAwsOpensearchDomainAutoTuneOptionsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UseOffPeakWindow() cdktf.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -177,6 +178,16 @@ func (j *jsiiProxy_DataAwsOpensearchDomainAutoTuneOptionsOutputReference) Terraf
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsOpensearchDomainAutoTuneOptionsOutputReference) UseOffPeakWindow() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"useOffPeakWindow",
 		&returns,
 	)
 	return returns

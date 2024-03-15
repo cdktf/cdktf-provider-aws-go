@@ -62,6 +62,8 @@ type CognitoUserPoolLambdaConfigOutputReference interface {
 	PreSignUpInput() *string
 	PreTokenGeneration() *string
 	SetPreTokenGeneration(val *string)
+	PreTokenGenerationConfig() CognitoUserPoolLambdaConfigPreTokenGenerationConfigOutputReference
+	PreTokenGenerationConfigInput() *CognitoUserPoolLambdaConfigPreTokenGenerationConfig
 	PreTokenGenerationInput() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -103,6 +105,7 @@ type CognitoUserPoolLambdaConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCustomEmailSender(value *CognitoUserPoolLambdaConfigCustomEmailSender)
 	PutCustomSmsSender(value *CognitoUserPoolLambdaConfigCustomSmsSender)
+	PutPreTokenGenerationConfig(value *CognitoUserPoolLambdaConfigPreTokenGenerationConfig)
 	ResetCreateAuthChallenge()
 	ResetCustomEmailSender()
 	ResetCustomMessage()
@@ -114,6 +117,7 @@ type CognitoUserPoolLambdaConfigOutputReference interface {
 	ResetPreAuthentication()
 	ResetPreSignUp()
 	ResetPreTokenGeneration()
+	ResetPreTokenGenerationConfig()
 	ResetUserMigration()
 	ResetVerifyAuthChallengeResponse()
 	// Produce the Token's value at resolution time.
@@ -386,6 +390,26 @@ func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) PreTokenGeneratio
 	_jsii_.Get(
 		j,
 		"preTokenGeneration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) PreTokenGenerationConfig() CognitoUserPoolLambdaConfigPreTokenGenerationConfigOutputReference {
+	var returns CognitoUserPoolLambdaConfigPreTokenGenerationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"preTokenGenerationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) PreTokenGenerationConfigInput() *CognitoUserPoolLambdaConfigPreTokenGenerationConfig {
+	var returns *CognitoUserPoolLambdaConfigPreTokenGenerationConfig
+	_jsii_.Get(
+		j,
+		"preTokenGenerationConfigInput",
 		&returns,
 	)
 	return returns
@@ -873,6 +897,17 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) PutCustomSmsSende
 	)
 }
 
+func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) PutPreTokenGenerationConfig(value *CognitoUserPoolLambdaConfigPreTokenGenerationConfig) {
+	if err := c.validatePutPreTokenGenerationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putPreTokenGenerationConfig",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) ResetCreateAuthChallenge() {
 	_jsii_.InvokeVoid(
 		c,
@@ -957,6 +992,14 @@ func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) ResetPreTokenGene
 	_jsii_.InvokeVoid(
 		c,
 		"resetPreTokenGeneration",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPoolLambdaConfigOutputReference) ResetPreTokenGenerationConfig() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPreTokenGenerationConfig",
 		nil, // no parameters
 	)
 }

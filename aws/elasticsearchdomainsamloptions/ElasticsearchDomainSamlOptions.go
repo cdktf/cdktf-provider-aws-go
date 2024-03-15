@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/elasticsearch_domain_saml_options aws_elasticsearch_domain_saml_options}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/elasticsearch_domain_saml_options aws_elasticsearch_domain_saml_options}.
 type ElasticsearchDomainSamlOptions interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/elasticsearch_domain_saml_options aws_elasticsearch_domain_saml_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/elasticsearch_domain_saml_options aws_elasticsearch_domain_saml_options} Resource.
 func NewElasticsearchDomainSamlOptions(scope constructs.Construct, id *string, config *ElasticsearchDomainSamlOptionsConfig) ElasticsearchDomainSamlOptions {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewElasticsearchDomainSamlOptions(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/elasticsearch_domain_saml_options aws_elasticsearch_domain_saml_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/elasticsearch_domain_saml_options aws_elasticsearch_domain_saml_options} Resource.
 func NewElasticsearchDomainSamlOptions_Override(e ElasticsearchDomainSamlOptions, scope constructs.Construct, id *string, config *ElasticsearchDomainSamlOptionsConfig) {
 	_init_.Initialize()
 

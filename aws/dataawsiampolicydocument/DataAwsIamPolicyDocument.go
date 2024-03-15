@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/iam_policy_document aws_iam_policy_document}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/iam_policy_document aws_iam_policy_document}.
 type DataAwsIamPolicyDocument interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -45,6 +45,9 @@ type DataAwsIamPolicyDocument interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	OverrideJson() *string
+	SetOverrideJson(val *string)
+	OverrideJsonInput() *string
 	OverridePolicyDocuments() *[]*string
 	SetOverridePolicyDocuments(val *[]*string)
 	OverridePolicyDocumentsInput() *[]*string
@@ -57,6 +60,9 @@ type DataAwsIamPolicyDocument interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	SourceJson() *string
+	SetSourceJson(val *string)
+	SourceJsonInput() *string
 	SourcePolicyDocuments() *[]*string
 	SetSourcePolicyDocuments(val *[]*string)
 	SourcePolicyDocumentsInput() *[]*string
@@ -98,11 +104,13 @@ type DataAwsIamPolicyDocument interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutStatement(value interface{})
 	ResetId()
+	ResetOverrideJson()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetOverridePolicyDocuments()
 	ResetPolicyId()
+	ResetSourceJson()
 	ResetSourcePolicyDocuments()
 	ResetStatement()
 	ResetVersion()
@@ -245,6 +253,26 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsIamPolicyDocument) OverrideJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"overrideJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIamPolicyDocument) OverrideJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"overrideJsonInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsIamPolicyDocument) OverridePolicyDocuments() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -300,6 +328,26 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIamPolicyDocument) SourceJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIamPolicyDocument) SourceJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceJsonInput",
 		&returns,
 	)
 	return returns
@@ -396,7 +444,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/iam_policy_document aws_iam_policy_document} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/iam_policy_document aws_iam_policy_document} Data Source.
 func NewDataAwsIamPolicyDocument(scope constructs.Construct, id *string, config *DataAwsIamPolicyDocumentConfig) DataAwsIamPolicyDocument {
 	_init_.Initialize()
 
@@ -414,7 +462,7 @@ func NewDataAwsIamPolicyDocument(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/data-sources/iam_policy_document aws_iam_policy_document} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/iam_policy_document aws_iam_policy_document} Data Source.
 func NewDataAwsIamPolicyDocument_Override(d DataAwsIamPolicyDocument, scope constructs.Construct, id *string, config *DataAwsIamPolicyDocumentConfig) {
 	_init_.Initialize()
 
@@ -474,6 +522,17 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument)SetLifecycle(val *cdktf.TerraformRes
 	)
 }
 
+func (j *jsiiProxy_DataAwsIamPolicyDocument)SetOverrideJson(val *string) {
+	if err := j.validateSetOverrideJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"overrideJson",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DataAwsIamPolicyDocument)SetOverridePolicyDocuments(val *[]*string) {
 	if err := j.validateSetOverridePolicyDocumentsParameters(val); err != nil {
 		panic(err)
@@ -500,6 +559,17 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument)SetProvider(val cdktf.TerraformProvi
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsIamPolicyDocument)SetSourceJson(val *string) {
+	if err := j.validateSetSourceJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceJson",
 		val,
 	)
 }
@@ -830,6 +900,14 @@ func (d *jsiiProxy_DataAwsIamPolicyDocument) ResetId() {
 	)
 }
 
+func (d *jsiiProxy_DataAwsIamPolicyDocument) ResetOverrideJson() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetOverrideJson",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DataAwsIamPolicyDocument) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
@@ -850,6 +928,14 @@ func (d *jsiiProxy_DataAwsIamPolicyDocument) ResetPolicyId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPolicyId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsIamPolicyDocument) ResetSourceJson() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSourceJson",
 		nil, // no parameters
 	)
 }

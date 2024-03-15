@@ -320,6 +320,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "useOffPeakWindow", GoGetter: "UseOffPeakWindow"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsOpensearchDomainAutoTuneOptionsOutputReference{}

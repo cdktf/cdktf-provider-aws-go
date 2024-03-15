@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain aws_route53domains_registered_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain aws_route53domains_registered_domain}.
 type Route53DomainsRegisteredDomain interface {
 	cdktf.TerraformResource
 	AbuseContactEmail() *string
@@ -25,6 +25,11 @@ type Route53DomainsRegisteredDomain interface {
 	AutoRenew() interface{}
 	SetAutoRenew(val interface{})
 	AutoRenewInput() interface{}
+	BillingContact() Route53DomainsRegisteredDomainBillingContactOutputReference
+	BillingContactInput() *Route53DomainsRegisteredDomainBillingContact
+	BillingPrivacy() interface{}
+	SetBillingPrivacy(val interface{})
+	BillingPrivacyInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -152,6 +157,7 @@ type Route53DomainsRegisteredDomain interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAdminContact(value *Route53DomainsRegisteredDomainAdminContact)
+	PutBillingContact(value *Route53DomainsRegisteredDomainBillingContact)
 	PutNameServer(value interface{})
 	PutRegistrantContact(value *Route53DomainsRegisteredDomainRegistrantContact)
 	PutTechContact(value *Route53DomainsRegisteredDomainTechContact)
@@ -159,6 +165,8 @@ type Route53DomainsRegisteredDomain interface {
 	ResetAdminContact()
 	ResetAdminPrivacy()
 	ResetAutoRenew()
+	ResetBillingContact()
+	ResetBillingPrivacy()
 	ResetId()
 	ResetNameServer()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -265,6 +273,46 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) AutoRenewInput() interface{} 
 	_jsii_.Get(
 		j,
 		"autoRenewInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) BillingContact() Route53DomainsRegisteredDomainBillingContactOutputReference {
+	var returns Route53DomainsRegisteredDomainBillingContactOutputReference
+	_jsii_.Get(
+		j,
+		"billingContact",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) BillingContactInput() *Route53DomainsRegisteredDomainBillingContact {
+	var returns *Route53DomainsRegisteredDomainBillingContact
+	_jsii_.Get(
+		j,
+		"billingContactInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) BillingPrivacy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"billingPrivacy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53DomainsRegisteredDomain) BillingPrivacyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"billingPrivacyInput",
 		&returns,
 	)
 	return returns
@@ -731,7 +779,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain) WhoisServer() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain aws_route53domains_registered_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain aws_route53domains_registered_domain} Resource.
 func NewRoute53DomainsRegisteredDomain(scope constructs.Construct, id *string, config *Route53DomainsRegisteredDomainConfig) Route53DomainsRegisteredDomain {
 	_init_.Initialize()
 
@@ -749,7 +797,7 @@ func NewRoute53DomainsRegisteredDomain(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/route53domains_registered_domain aws_route53domains_registered_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/route53domains_registered_domain aws_route53domains_registered_domain} Resource.
 func NewRoute53DomainsRegisteredDomain_Override(r Route53DomainsRegisteredDomain, scope constructs.Construct, id *string, config *Route53DomainsRegisteredDomainConfig) {
 	_init_.Initialize()
 
@@ -778,6 +826,17 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetAutoRenew(val interface{}) 
 	_jsii_.Set(
 		j,
 		"autoRenew",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Route53DomainsRegisteredDomain)SetBillingPrivacy(val interface{}) {
+	if err := j.validateSetBillingPrivacyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"billingPrivacy",
 		val,
 	)
 }
@@ -1291,6 +1350,17 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) PutAdminContact(value *Route5
 	)
 }
 
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) PutBillingContact(value *Route53DomainsRegisteredDomainBillingContact) {
+	if err := r.validatePutBillingContactParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		r,
+		"putBillingContact",
+		[]interface{}{value},
+	)
+}
+
 func (r *jsiiProxy_Route53DomainsRegisteredDomain) PutNameServer(value interface{}) {
 	if err := r.validatePutNameServerParameters(value); err != nil {
 		panic(err)
@@ -1355,6 +1425,22 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomain) ResetAutoRenew() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetAutoRenew",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) ResetBillingContact() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetBillingContact",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53DomainsRegisteredDomain) ResetBillingPrivacy() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetBillingPrivacy",
 		nil, // no parameters
 	)
 }

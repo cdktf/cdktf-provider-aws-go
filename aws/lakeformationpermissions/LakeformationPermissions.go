@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/lakeformation_permissions aws_lakeformation_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lakeformation_permissions aws_lakeformation_permissions}.
 type LakeformationPermissions interface {
 	cdktf.TerraformResource
 	CatalogId() *string
@@ -35,6 +35,8 @@ type LakeformationPermissions interface {
 	SetCount(val interface{})
 	Database() LakeformationPermissionsDatabaseOutputReference
 	DatabaseInput() *LakeformationPermissionsDatabase
+	DataCellsFilter() LakeformationPermissionsDataCellsFilterOutputReference
+	DataCellsFilterInput() *LakeformationPermissionsDataCellsFilter
 	DataLocation() LakeformationPermissionsDataLocationOutputReference
 	DataLocationInput() *LakeformationPermissionsDataLocation
 	// Experimental.
@@ -135,6 +137,7 @@ type LakeformationPermissions interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDatabase(value *LakeformationPermissionsDatabase)
+	PutDataCellsFilter(value *LakeformationPermissionsDataCellsFilter)
 	PutDataLocation(value *LakeformationPermissionsDataLocation)
 	PutLfTag(value *LakeformationPermissionsLfTag)
 	PutLfTagPolicy(value *LakeformationPermissionsLfTagPolicy)
@@ -143,6 +146,7 @@ type LakeformationPermissions interface {
 	ResetCatalogId()
 	ResetCatalogResource()
 	ResetDatabase()
+	ResetDataCellsFilter()
 	ResetDataLocation()
 	ResetId()
 	ResetLfTag()
@@ -266,6 +270,26 @@ func (j *jsiiProxy_LakeformationPermissions) DatabaseInput() *LakeformationPermi
 	_jsii_.Get(
 		j,
 		"databaseInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LakeformationPermissions) DataCellsFilter() LakeformationPermissionsDataCellsFilterOutputReference {
+	var returns LakeformationPermissionsDataCellsFilterOutputReference
+	_jsii_.Get(
+		j,
+		"dataCellsFilter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LakeformationPermissions) DataCellsFilterInput() *LakeformationPermissionsDataCellsFilter {
+	var returns *LakeformationPermissionsDataCellsFilter
+	_jsii_.Get(
+		j,
+		"dataCellsFilterInput",
 		&returns,
 	)
 	return returns
@@ -572,7 +596,7 @@ func (j *jsiiProxy_LakeformationPermissions) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/lakeformation_permissions aws_lakeformation_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lakeformation_permissions aws_lakeformation_permissions} Resource.
 func NewLakeformationPermissions(scope constructs.Construct, id *string, config *LakeformationPermissionsConfig) LakeformationPermissions {
 	_init_.Initialize()
 
@@ -590,7 +614,7 @@ func NewLakeformationPermissions(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/lakeformation_permissions aws_lakeformation_permissions} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/lakeformation_permissions aws_lakeformation_permissions} Resource.
 func NewLakeformationPermissions_Override(l LakeformationPermissions, scope constructs.Construct, id *string, config *LakeformationPermissionsConfig) {
 	_init_.Initialize()
 
@@ -1099,6 +1123,17 @@ func (l *jsiiProxy_LakeformationPermissions) PutDatabase(value *LakeformationPer
 	)
 }
 
+func (l *jsiiProxy_LakeformationPermissions) PutDataCellsFilter(value *LakeformationPermissionsDataCellsFilter) {
+	if err := l.validatePutDataCellsFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putDataCellsFilter",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LakeformationPermissions) PutDataLocation(value *LakeformationPermissionsDataLocation) {
 	if err := l.validatePutDataLocationParameters(value); err != nil {
 		panic(err)
@@ -1174,6 +1209,14 @@ func (l *jsiiProxy_LakeformationPermissions) ResetDatabase() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetDatabase",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LakeformationPermissions) ResetDataCellsFilter() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetDataCellsFilter",
 		nil, // no parameters
 	)
 }

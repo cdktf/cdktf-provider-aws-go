@@ -67,7 +67,6 @@ type EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthorityOutputRef
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetAwsPcaAuthorityArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -451,14 +450,6 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuth
 	)
 
 	return returns
-}
-
-func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthorityOutputReference) ResetAwsPcaAuthorityArn() {
-	_jsii_.InvokeVoid(
-		e,
-		"resetAwsPcaAuthorityArn",
-		nil, // no parameters
-	)
 }
 
 func (e *jsiiProxy_EcsServiceServiceConnectConfigurationServiceTlsIssuerCertAuthorityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

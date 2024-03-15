@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/securityhub_organization_configuration aws_securityhub_organization_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/securityhub_organization_configuration aws_securityhub_organization_configuration}.
 type SecurityhubOrganizationConfiguration interface {
 	cdktf.TerraformResource
 	AutoEnable() interface{}
@@ -54,6 +54,8 @@ type SecurityhubOrganizationConfiguration interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	OrganizationConfiguration() SecurityhubOrganizationConfigurationOrganizationConfigurationOutputReference
+	OrganizationConfigurationInput() *SecurityhubOrganizationConfigurationOrganizationConfiguration
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -70,6 +72,8 @@ type SecurityhubOrganizationConfiguration interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() SecurityhubOrganizationConfigurationTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -113,11 +117,15 @@ type SecurityhubOrganizationConfiguration interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutOrganizationConfiguration(value *SecurityhubOrganizationConfigurationOrganizationConfiguration)
+	PutTimeouts(value *SecurityhubOrganizationConfigurationTimeouts)
 	ResetAutoEnableStandards()
 	ResetId()
+	ResetOrganizationConfiguration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -296,6 +304,26 @@ func (j *jsiiProxy_SecurityhubOrganizationConfiguration) Node() constructs.Node 
 	return returns
 }
 
+func (j *jsiiProxy_SecurityhubOrganizationConfiguration) OrganizationConfiguration() SecurityhubOrganizationConfigurationOrganizationConfigurationOutputReference {
+	var returns SecurityhubOrganizationConfigurationOrganizationConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"organizationConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SecurityhubOrganizationConfiguration) OrganizationConfigurationInput() *SecurityhubOrganizationConfigurationOrganizationConfiguration {
+	var returns *SecurityhubOrganizationConfigurationOrganizationConfiguration
+	_jsii_.Get(
+		j,
+		"organizationConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SecurityhubOrganizationConfiguration) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -356,8 +384,28 @@ func (j *jsiiProxy_SecurityhubOrganizationConfiguration) TerraformResourceType()
 	return returns
 }
 
+func (j *jsiiProxy_SecurityhubOrganizationConfiguration) Timeouts() SecurityhubOrganizationConfigurationTimeoutsOutputReference {
+	var returns SecurityhubOrganizationConfigurationTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/securityhub_organization_configuration aws_securityhub_organization_configuration} Resource.
+func (j *jsiiProxy_SecurityhubOrganizationConfiguration) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/securityhub_organization_configuration aws_securityhub_organization_configuration} Resource.
 func NewSecurityhubOrganizationConfiguration(scope constructs.Construct, id *string, config *SecurityhubOrganizationConfigurationConfig) SecurityhubOrganizationConfiguration {
 	_init_.Initialize()
 
@@ -375,7 +423,7 @@ func NewSecurityhubOrganizationConfiguration(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.40.0/docs/resources/securityhub_organization_configuration aws_securityhub_organization_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/securityhub_organization_configuration aws_securityhub_organization_configuration} Resource.
 func NewSecurityhubOrganizationConfiguration_Override(s SecurityhubOrganizationConfiguration, scope constructs.Construct, id *string, config *SecurityhubOrganizationConfigurationConfig) {
 	_init_.Initialize()
 
@@ -840,6 +888,28 @@ func (s *jsiiProxy_SecurityhubOrganizationConfiguration) OverrideLogicalId(newLo
 	)
 }
 
+func (s *jsiiProxy_SecurityhubOrganizationConfiguration) PutOrganizationConfiguration(value *SecurityhubOrganizationConfigurationOrganizationConfiguration) {
+	if err := s.validatePutOrganizationConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putOrganizationConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SecurityhubOrganizationConfiguration) PutTimeouts(value *SecurityhubOrganizationConfigurationTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SecurityhubOrganizationConfiguration) ResetAutoEnableStandards() {
 	_jsii_.InvokeVoid(
 		s,
@@ -856,10 +926,26 @@ func (s *jsiiProxy_SecurityhubOrganizationConfiguration) ResetId() {
 	)
 }
 
+func (s *jsiiProxy_SecurityhubOrganizationConfiguration) ResetOrganizationConfiguration() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetOrganizationConfiguration",
+		nil, // no parameters
+	)
+}
+
 func (s *jsiiProxy_SecurityhubOrganizationConfiguration) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SecurityhubOrganizationConfiguration) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

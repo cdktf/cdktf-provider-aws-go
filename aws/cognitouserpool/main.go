@@ -572,9 +572,12 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "preSignUp", GoGetter: "PreSignUp"},
 			_jsii_.MemberProperty{JsiiProperty: "preSignUpInput", GoGetter: "PreSignUpInput"},
 			_jsii_.MemberProperty{JsiiProperty: "preTokenGeneration", GoGetter: "PreTokenGeneration"},
+			_jsii_.MemberProperty{JsiiProperty: "preTokenGenerationConfig", GoGetter: "PreTokenGenerationConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "preTokenGenerationConfigInput", GoGetter: "PreTokenGenerationConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "preTokenGenerationInput", GoGetter: "PreTokenGenerationInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomEmailSender", GoMethod: "PutCustomEmailSender"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomSmsSender", GoMethod: "PutCustomSmsSender"},
+			_jsii_.MemberMethod{JsiiMethod: "putPreTokenGenerationConfig", GoMethod: "PutPreTokenGenerationConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCreateAuthChallenge", GoMethod: "ResetCreateAuthChallenge"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomEmailSender", GoMethod: "ResetCustomEmailSender"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomMessage", GoMethod: "ResetCustomMessage"},
@@ -586,6 +589,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPreAuthentication", GoMethod: "ResetPreAuthentication"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPreSignUp", GoMethod: "ResetPreSignUp"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPreTokenGeneration", GoMethod: "ResetPreTokenGeneration"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPreTokenGenerationConfig", GoMethod: "ResetPreTokenGenerationConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUserMigration", GoMethod: "ResetUserMigration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVerifyAuthChallengeResponse", GoMethod: "ResetVerifyAuthChallengeResponse"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
@@ -599,6 +603,46 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CognitoUserPoolLambdaConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfigPreTokenGenerationConfig",
+		reflect.TypeOf((*CognitoUserPoolLambdaConfigPreTokenGenerationConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.cognitoUserPool.CognitoUserPoolLambdaConfigPreTokenGenerationConfigOutputReference",
+		reflect.TypeOf((*CognitoUserPoolLambdaConfigPreTokenGenerationConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "lambdaArn", GoGetter: "LambdaArn"},
+			_jsii_.MemberProperty{JsiiProperty: "lambdaArnInput", GoGetter: "LambdaArnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "lambdaVersion", GoGetter: "LambdaVersion"},
+			_jsii_.MemberProperty{JsiiProperty: "lambdaVersionInput", GoGetter: "LambdaVersionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_CognitoUserPoolLambdaConfigPreTokenGenerationConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

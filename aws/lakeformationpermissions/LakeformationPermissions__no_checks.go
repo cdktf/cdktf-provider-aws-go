@@ -79,6 +79,10 @@ func (l *jsiiProxy_LakeformationPermissions) validatePutDatabaseParameters(value
 	return nil
 }
 
+func (l *jsiiProxy_LakeformationPermissions) validatePutDataCellsFilterParameters(value *LakeformationPermissionsDataCellsFilter) error {
+	return nil
+}
+
 func (l *jsiiProxy_LakeformationPermissions) validatePutDataLocationParameters(value *LakeformationPermissionsDataLocation) error {
 	return nil
 }
