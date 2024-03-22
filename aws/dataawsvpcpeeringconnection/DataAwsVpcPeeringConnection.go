@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection}.
 type DataAwsVpcPeeringConnection interface {
 	cdktf.TerraformDataSource
 	Accepter() cdktf.BooleanMap
@@ -45,6 +45,7 @@ type DataAwsVpcPeeringConnection interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Ipv6CidrBlockSet() DataAwsVpcPeeringConnectionIpv6CidrBlockSetList
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -58,6 +59,7 @@ type DataAwsVpcPeeringConnection interface {
 	SetPeerCidrBlock(val *string)
 	PeerCidrBlockInput() *string
 	PeerCidrBlockSet() DataAwsVpcPeeringConnectionPeerCidrBlockSetList
+	PeerIpv6CidrBlockSet() DataAwsVpcPeeringConnectionPeerIpv6CidrBlockSetList
 	PeerOwnerId() *string
 	SetPeerOwnerId(val *string)
 	PeerOwnerIdInput() *string
@@ -306,6 +308,16 @@ func (j *jsiiProxy_DataAwsVpcPeeringConnection) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsVpcPeeringConnection) Ipv6CidrBlockSet() DataAwsVpcPeeringConnectionIpv6CidrBlockSetList {
+	var returns DataAwsVpcPeeringConnectionIpv6CidrBlockSetList
+	_jsii_.Get(
+		j,
+		"ipv6CidrBlockSet",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsVpcPeeringConnection) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -371,6 +383,16 @@ func (j *jsiiProxy_DataAwsVpcPeeringConnection) PeerCidrBlockSet() DataAwsVpcPee
 	_jsii_.Get(
 		j,
 		"peerCidrBlockSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsVpcPeeringConnection) PeerIpv6CidrBlockSet() DataAwsVpcPeeringConnectionPeerIpv6CidrBlockSetList {
+	var returns DataAwsVpcPeeringConnectionPeerIpv6CidrBlockSetList
+	_jsii_.Get(
+		j,
+		"peerIpv6CidrBlockSet",
 		&returns,
 	)
 	return returns
@@ -597,7 +619,7 @@ func (j *jsiiProxy_DataAwsVpcPeeringConnection) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection} Data Source.
 func NewDataAwsVpcPeeringConnection(scope constructs.Construct, id *string, config *DataAwsVpcPeeringConnectionConfig) DataAwsVpcPeeringConnection {
 	_init_.Initialize()
 
@@ -615,7 +637,7 @@ func NewDataAwsVpcPeeringConnection(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/data-sources/vpc_peering_connection aws_vpc_peering_connection} Data Source.
 func NewDataAwsVpcPeeringConnection_Override(d DataAwsVpcPeeringConnection, scope constructs.Construct, id *string, config *DataAwsVpcPeeringConnectionConfig) {
 	_init_.Initialize()
 

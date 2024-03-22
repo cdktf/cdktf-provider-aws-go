@@ -211,6 +211,10 @@ func (j *jsiiProxy_RdsCluster) validateSetEnableHttpEndpointParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_RdsCluster) validateSetEnableLocalWriteForwardingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsCluster) validateSetEngineParameters(val *string) error {
 	return nil
 }

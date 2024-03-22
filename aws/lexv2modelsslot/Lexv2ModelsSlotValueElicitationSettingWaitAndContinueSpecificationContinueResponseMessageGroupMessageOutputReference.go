@@ -28,8 +28,8 @@ type Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueR
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	CustomPlayload() Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayloadList
-	CustomPlayloadInput() interface{}
+	CustomPayload() Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadList
+	CustomPayloadInput() interface{}
 	// Experimental.
 	Fqn() *string
 	ImageResponseCard() Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageImageResponseCardList
@@ -72,11 +72,11 @@ type Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueR
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCustomPlayload(value interface{})
+	PutCustomPayload(value interface{})
 	PutImageResponseCard(value interface{})
 	PutPlainTextMessage(value interface{})
 	PutSsmlMessage(value interface{})
-	ResetCustomPlayload()
+	ResetCustomPayload()
 	ResetImageResponseCard()
 	ResetPlainTextMessage()
 	ResetSsmlMessage()
@@ -125,21 +125,21 @@ func (j *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecific
 	return returns
 }
 
-func (j *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageOutputReference) CustomPlayload() Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayloadList {
-	var returns Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayloadList
+func (j *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageOutputReference) CustomPayload() Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadList {
+	var returns Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadList
 	_jsii_.Get(
 		j,
-		"customPlayload",
+		"customPayload",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageOutputReference) CustomPlayloadInput() interface{} {
+func (j *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageOutputReference) CustomPayloadInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"customPlayloadInput",
+		"customPayloadInput",
 		&returns,
 	)
 	return returns
@@ -514,13 +514,13 @@ func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecific
 	return returns
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageOutputReference) PutCustomPlayload(value interface{}) {
-	if err := l.validatePutCustomPlayloadParameters(value); err != nil {
+func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageOutputReference) PutCustomPayload(value interface{}) {
+	if err := l.validatePutCustomPayloadParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
-		"putCustomPlayload",
+		"putCustomPayload",
 		[]interface{}{value},
 	)
 }
@@ -558,10 +558,10 @@ func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecific
 	)
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageOutputReference) ResetCustomPlayload() {
+func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageOutputReference) ResetCustomPayload() {
 	_jsii_.InvokeVoid(
 		l,
-		"resetCustomPlayload",
+		"resetCustomPayload",
 		nil, // no parameters
 	)
 }

@@ -525,12 +525,12 @@ func init() {
 		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessage)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayload",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayload)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayload",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayload)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayloadList",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayloadList)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadList",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -545,14 +545,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayloadList{}
+			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayloadOutputReference",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayloadOutputReference)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadOutputReference",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -579,7 +579,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPlayloadOutputReference{}
+			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupMessageCustomPayloadOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -746,8 +746,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "customPlayload", GoGetter: "CustomPlayload"},
-			_jsii_.MemberProperty{JsiiProperty: "customPlayloadInput", GoGetter: "CustomPlayloadInput"},
+			_jsii_.MemberProperty{JsiiProperty: "customPayload", GoGetter: "CustomPayload"},
+			_jsii_.MemberProperty{JsiiProperty: "customPayloadInput", GoGetter: "CustomPayloadInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -765,11 +765,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "plainTextMessage", GoGetter: "PlainTextMessage"},
 			_jsii_.MemberProperty{JsiiProperty: "plainTextMessageInput", GoGetter: "PlainTextMessageInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putCustomPlayload", GoMethod: "PutCustomPlayload"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomPayload", GoMethod: "PutCustomPayload"},
 			_jsii_.MemberMethod{JsiiMethod: "putImageResponseCard", GoMethod: "PutImageResponseCard"},
 			_jsii_.MemberMethod{JsiiMethod: "putPlainTextMessage", GoMethod: "PutPlainTextMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "putSsmlMessage", GoMethod: "PutSsmlMessage"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCustomPlayload", GoMethod: "ResetCustomPlayload"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomPayload", GoMethod: "ResetCustomPayload"},
 			_jsii_.MemberMethod{JsiiMethod: "resetImageResponseCard", GoMethod: "ResetImageResponseCard"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPlainTextMessage", GoMethod: "ResetPlainTextMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSsmlMessage", GoMethod: "ResetSsmlMessage"},
@@ -951,12 +951,12 @@ func init() {
 		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariation)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayload",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayload)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayload",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayload)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayloadList",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayloadList)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadList",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -971,14 +971,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayloadList{}
+			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayloadOutputReference",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayloadOutputReference)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadOutputReference",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -1005,7 +1005,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPlayloadOutputReference{}
+			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayloadOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -1172,8 +1172,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "customPlayload", GoGetter: "CustomPlayload"},
-			_jsii_.MemberProperty{JsiiProperty: "customPlayloadInput", GoGetter: "CustomPlayloadInput"},
+			_jsii_.MemberProperty{JsiiProperty: "customPayload", GoGetter: "CustomPayload"},
+			_jsii_.MemberProperty{JsiiProperty: "customPayloadInput", GoGetter: "CustomPayloadInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -1191,11 +1191,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "plainTextMessage", GoGetter: "PlainTextMessage"},
 			_jsii_.MemberProperty{JsiiProperty: "plainTextMessageInput", GoGetter: "PlainTextMessageInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putCustomPlayload", GoMethod: "PutCustomPlayload"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomPayload", GoMethod: "PutCustomPayload"},
 			_jsii_.MemberMethod{JsiiMethod: "putImageResponseCard", GoMethod: "PutImageResponseCard"},
 			_jsii_.MemberMethod{JsiiMethod: "putPlainTextMessage", GoMethod: "PutPlainTextMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "putSsmlMessage", GoMethod: "PutSsmlMessage"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCustomPlayload", GoMethod: "ResetCustomPlayload"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomPayload", GoMethod: "ResetCustomPayload"},
 			_jsii_.MemberMethod{JsiiMethod: "resetImageResponseCard", GoMethod: "ResetImageResponseCard"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPlainTextMessage", GoMethod: "ResetPlainTextMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSsmlMessage", GoMethod: "ResetSsmlMessage"},
@@ -1954,12 +1954,12 @@ func init() {
 		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessage)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayload",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayload)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayload",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayload)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayloadList",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayloadList)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadList",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -1974,14 +1974,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayloadList{}
+			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayloadOutputReference",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayloadOutputReference)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadOutputReference",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2008,7 +2008,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPlayloadOutputReference{}
+			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupMessageCustomPayloadOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -2175,8 +2175,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "customPlayload", GoGetter: "CustomPlayload"},
-			_jsii_.MemberProperty{JsiiProperty: "customPlayloadInput", GoGetter: "CustomPlayloadInput"},
+			_jsii_.MemberProperty{JsiiProperty: "customPayload", GoGetter: "CustomPayload"},
+			_jsii_.MemberProperty{JsiiProperty: "customPayloadInput", GoGetter: "CustomPayloadInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -2194,11 +2194,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "plainTextMessage", GoGetter: "PlainTextMessage"},
 			_jsii_.MemberProperty{JsiiProperty: "plainTextMessageInput", GoGetter: "PlainTextMessageInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putCustomPlayload", GoMethod: "PutCustomPlayload"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomPayload", GoMethod: "PutCustomPayload"},
 			_jsii_.MemberMethod{JsiiMethod: "putImageResponseCard", GoMethod: "PutImageResponseCard"},
 			_jsii_.MemberMethod{JsiiMethod: "putPlainTextMessage", GoMethod: "PutPlainTextMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "putSsmlMessage", GoMethod: "PutSsmlMessage"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCustomPlayload", GoMethod: "ResetCustomPlayload"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomPayload", GoMethod: "ResetCustomPayload"},
 			_jsii_.MemberMethod{JsiiMethod: "resetImageResponseCard", GoMethod: "ResetImageResponseCard"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPlainTextMessage", GoMethod: "ResetPlainTextMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSsmlMessage", GoMethod: "ResetSsmlMessage"},
@@ -2380,12 +2380,12 @@ func init() {
 		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariation)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayload",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayload)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayload",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayload)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayloadList",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayloadList)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadList",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2400,14 +2400,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayloadList{}
+			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayloadOutputReference",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayloadOutputReference)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadOutputReference",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2434,7 +2434,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPlayloadOutputReference{}
+			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationContinueResponseMessageGroupVariationCustomPayloadOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -2601,8 +2601,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "customPlayload", GoGetter: "CustomPlayload"},
-			_jsii_.MemberProperty{JsiiProperty: "customPlayloadInput", GoGetter: "CustomPlayloadInput"},
+			_jsii_.MemberProperty{JsiiProperty: "customPayload", GoGetter: "CustomPayload"},
+			_jsii_.MemberProperty{JsiiProperty: "customPayloadInput", GoGetter: "CustomPayloadInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -2620,11 +2620,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "plainTextMessage", GoGetter: "PlainTextMessage"},
 			_jsii_.MemberProperty{JsiiProperty: "plainTextMessageInput", GoGetter: "PlainTextMessageInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putCustomPlayload", GoMethod: "PutCustomPlayload"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomPayload", GoMethod: "PutCustomPayload"},
 			_jsii_.MemberMethod{JsiiMethod: "putImageResponseCard", GoMethod: "PutImageResponseCard"},
 			_jsii_.MemberMethod{JsiiMethod: "putPlainTextMessage", GoMethod: "PutPlainTextMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "putSsmlMessage", GoMethod: "PutSsmlMessage"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCustomPlayload", GoMethod: "ResetCustomPlayload"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomPayload", GoMethod: "ResetCustomPayload"},
 			_jsii_.MemberMethod{JsiiMethod: "resetImageResponseCard", GoMethod: "ResetImageResponseCard"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPlainTextMessage", GoMethod: "ResetPlainTextMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSsmlMessage", GoMethod: "ResetSsmlMessage"},
@@ -2926,12 +2926,12 @@ func init() {
 		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessage)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayload",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayload)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayload",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayload)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayloadList",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayloadList)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadList",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -2946,14 +2946,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayloadList{}
+			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayloadOutputReference",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayloadOutputReference)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadOutputReference",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -2980,7 +2980,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPlayloadOutputReference{}
+			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupMessageCustomPayloadOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -3147,8 +3147,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "customPlayload", GoGetter: "CustomPlayload"},
-			_jsii_.MemberProperty{JsiiProperty: "customPlayloadInput", GoGetter: "CustomPlayloadInput"},
+			_jsii_.MemberProperty{JsiiProperty: "customPayload", GoGetter: "CustomPayload"},
+			_jsii_.MemberProperty{JsiiProperty: "customPayloadInput", GoGetter: "CustomPayloadInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -3166,11 +3166,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "plainTextMessage", GoGetter: "PlainTextMessage"},
 			_jsii_.MemberProperty{JsiiProperty: "plainTextMessageInput", GoGetter: "PlainTextMessageInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putCustomPlayload", GoMethod: "PutCustomPlayload"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomPayload", GoMethod: "PutCustomPayload"},
 			_jsii_.MemberMethod{JsiiMethod: "putImageResponseCard", GoMethod: "PutImageResponseCard"},
 			_jsii_.MemberMethod{JsiiMethod: "putPlainTextMessage", GoMethod: "PutPlainTextMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "putSsmlMessage", GoMethod: "PutSsmlMessage"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCustomPlayload", GoMethod: "ResetCustomPlayload"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomPayload", GoMethod: "ResetCustomPayload"},
 			_jsii_.MemberMethod{JsiiMethod: "resetImageResponseCard", GoMethod: "ResetImageResponseCard"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPlainTextMessage", GoMethod: "ResetPlainTextMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSsmlMessage", GoMethod: "ResetSsmlMessage"},
@@ -3352,12 +3352,12 @@ func init() {
 		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariation)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayload",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayload)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayload",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayload)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayloadList",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayloadList)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadList",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3372,14 +3372,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayloadList{}
+			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayloadOutputReference",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayloadOutputReference)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadOutputReference",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3406,7 +3406,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayloadOutputReference{}
+			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -3573,8 +3573,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "customPlayload", GoGetter: "CustomPlayload"},
-			_jsii_.MemberProperty{JsiiProperty: "customPlayloadInput", GoGetter: "CustomPlayloadInput"},
+			_jsii_.MemberProperty{JsiiProperty: "customPayload", GoGetter: "CustomPayload"},
+			_jsii_.MemberProperty{JsiiProperty: "customPayloadInput", GoGetter: "CustomPayloadInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -3592,11 +3592,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "plainTextMessage", GoGetter: "PlainTextMessage"},
 			_jsii_.MemberProperty{JsiiProperty: "plainTextMessageInput", GoGetter: "PlainTextMessageInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putCustomPlayload", GoMethod: "PutCustomPlayload"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomPayload", GoMethod: "PutCustomPayload"},
 			_jsii_.MemberMethod{JsiiMethod: "putImageResponseCard", GoMethod: "PutImageResponseCard"},
 			_jsii_.MemberMethod{JsiiMethod: "putPlainTextMessage", GoMethod: "PutPlainTextMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "putSsmlMessage", GoMethod: "PutSsmlMessage"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCustomPlayload", GoMethod: "ResetCustomPlayload"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomPayload", GoMethod: "ResetCustomPayload"},
 			_jsii_.MemberMethod{JsiiMethod: "resetImageResponseCard", GoMethod: "ResetImageResponseCard"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPlainTextMessage", GoMethod: "ResetPlainTextMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSsmlMessage", GoMethod: "ResetSsmlMessage"},
@@ -3833,12 +3833,12 @@ func init() {
 		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessage)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayload",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayload)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayload",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayload)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayloadList",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayloadList)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadList",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -3853,14 +3853,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayloadList{}
+			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayloadOutputReference",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayloadOutputReference)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadOutputReference",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -3887,7 +3887,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPlayloadOutputReference{}
+			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupMessageCustomPayloadOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -4054,8 +4054,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "customPlayload", GoGetter: "CustomPlayload"},
-			_jsii_.MemberProperty{JsiiProperty: "customPlayloadInput", GoGetter: "CustomPlayloadInput"},
+			_jsii_.MemberProperty{JsiiProperty: "customPayload", GoGetter: "CustomPayload"},
+			_jsii_.MemberProperty{JsiiProperty: "customPayloadInput", GoGetter: "CustomPayloadInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -4073,11 +4073,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "plainTextMessage", GoGetter: "PlainTextMessage"},
 			_jsii_.MemberProperty{JsiiProperty: "plainTextMessageInput", GoGetter: "PlainTextMessageInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putCustomPlayload", GoMethod: "PutCustomPlayload"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomPayload", GoMethod: "PutCustomPayload"},
 			_jsii_.MemberMethod{JsiiMethod: "putImageResponseCard", GoMethod: "PutImageResponseCard"},
 			_jsii_.MemberMethod{JsiiMethod: "putPlainTextMessage", GoMethod: "PutPlainTextMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "putSsmlMessage", GoMethod: "PutSsmlMessage"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCustomPlayload", GoMethod: "ResetCustomPlayload"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomPayload", GoMethod: "ResetCustomPayload"},
 			_jsii_.MemberMethod{JsiiMethod: "resetImageResponseCard", GoMethod: "ResetImageResponseCard"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPlainTextMessage", GoMethod: "ResetPlainTextMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSsmlMessage", GoMethod: "ResetSsmlMessage"},
@@ -4259,12 +4259,12 @@ func init() {
 		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariation)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayload",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayload)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayload",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayload)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayloadList",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayloadList)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadList",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -4279,14 +4279,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayloadList{}
+			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayloadOutputReference",
-		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayloadOutputReference)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlot.Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadOutputReference",
+		reflect.TypeOf((*Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -4313,7 +4313,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPlayloadOutputReference{}
+			j := jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationWaitingResponseMessageGroupVariationCustomPayloadOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
@@ -4480,8 +4480,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
-			_jsii_.MemberProperty{JsiiProperty: "customPlayload", GoGetter: "CustomPlayload"},
-			_jsii_.MemberProperty{JsiiProperty: "customPlayloadInput", GoGetter: "CustomPlayloadInput"},
+			_jsii_.MemberProperty{JsiiProperty: "customPayload", GoGetter: "CustomPayload"},
+			_jsii_.MemberProperty{JsiiProperty: "customPayloadInput", GoGetter: "CustomPayloadInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -4499,11 +4499,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "plainTextMessage", GoGetter: "PlainTextMessage"},
 			_jsii_.MemberProperty{JsiiProperty: "plainTextMessageInput", GoGetter: "PlainTextMessageInput"},
-			_jsii_.MemberMethod{JsiiMethod: "putCustomPlayload", GoMethod: "PutCustomPlayload"},
+			_jsii_.MemberMethod{JsiiMethod: "putCustomPayload", GoMethod: "PutCustomPayload"},
 			_jsii_.MemberMethod{JsiiMethod: "putImageResponseCard", GoMethod: "PutImageResponseCard"},
 			_jsii_.MemberMethod{JsiiMethod: "putPlainTextMessage", GoMethod: "PutPlainTextMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "putSsmlMessage", GoMethod: "PutSsmlMessage"},
-			_jsii_.MemberMethod{JsiiMethod: "resetCustomPlayload", GoMethod: "ResetCustomPlayload"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCustomPayload", GoMethod: "ResetCustomPayload"},
 			_jsii_.MemberMethod{JsiiMethod: "resetImageResponseCard", GoMethod: "ResetImageResponseCard"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPlainTextMessage", GoMethod: "ResetPlainTextMessage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSsmlMessage", GoMethod: "ResetSsmlMessage"},

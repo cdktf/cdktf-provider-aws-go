@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/opsworks_instance aws_opsworks_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/opsworks_instance aws_opsworks_instance}.
 type OpsworksInstance interface {
 	cdktf.TerraformResource
 	AgentVersion() *string
@@ -1217,7 +1217,7 @@ func (j *jsiiProxy_OpsworksInstance) VirtualizationTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/opsworks_instance aws_opsworks_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/opsworks_instance aws_opsworks_instance} Resource.
 func NewOpsworksInstance(scope constructs.Construct, id *string, config *OpsworksInstanceConfig) OpsworksInstance {
 	_init_.Initialize()
 
@@ -1235,7 +1235,7 @@ func NewOpsworksInstance(scope constructs.Construct, id *string, config *Opswork
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/opsworks_instance aws_opsworks_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/opsworks_instance aws_opsworks_instance} Resource.
 func NewOpsworksInstance_Override(o OpsworksInstance, scope constructs.Construct, id *string, config *OpsworksInstanceConfig) {
 	_init_.Initialize()
 

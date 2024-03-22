@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/finspace_kx_dataview aws_finspace_kx_dataview}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/finspace_kx_dataview aws_finspace_kx_dataview}.
 type FinspaceKxDataview interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -85,6 +85,9 @@ type FinspaceKxDataview interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReadWrite() interface{}
+	SetReadWrite(val interface{})
+	ReadWriteInput() interface{}
 	SegmentConfigurations() FinspaceKxDataviewSegmentConfigurationsList
 	SegmentConfigurationsInput() interface{}
 	Status() *string
@@ -154,6 +157,7 @@ type FinspaceKxDataview interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetReadWrite()
 	ResetSegmentConfigurations()
 	ResetTags()
 	ResetTagsAll()
@@ -516,6 +520,26 @@ func (j *jsiiProxy_FinspaceKxDataview) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FinspaceKxDataview) ReadWrite() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"readWrite",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FinspaceKxDataview) ReadWriteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"readWriteInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FinspaceKxDataview) SegmentConfigurations() FinspaceKxDataviewSegmentConfigurationsList {
 	var returns FinspaceKxDataviewSegmentConfigurationsList
 	_jsii_.Get(
@@ -637,7 +661,7 @@ func (j *jsiiProxy_FinspaceKxDataview) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/finspace_kx_dataview aws_finspace_kx_dataview} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/finspace_kx_dataview aws_finspace_kx_dataview} Resource.
 func NewFinspaceKxDataview(scope constructs.Construct, id *string, config *FinspaceKxDataviewConfig) FinspaceKxDataview {
 	_init_.Initialize()
 
@@ -655,7 +679,7 @@ func NewFinspaceKxDataview(scope constructs.Construct, id *string, config *Finsp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/finspace_kx_dataview aws_finspace_kx_dataview} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/finspace_kx_dataview aws_finspace_kx_dataview} Resource.
 func NewFinspaceKxDataview_Override(f FinspaceKxDataview, scope constructs.Construct, id *string, config *FinspaceKxDataviewConfig) {
 	_init_.Initialize()
 
@@ -829,6 +853,17 @@ func (j *jsiiProxy_FinspaceKxDataview)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FinspaceKxDataview)SetReadWrite(val interface{}) {
+	if err := j.validateSetReadWriteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"readWrite",
 		val,
 	)
 }
@@ -1266,6 +1301,14 @@ func (f *jsiiProxy_FinspaceKxDataview) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FinspaceKxDataview) ResetReadWrite() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetReadWrite",
 		nil, // no parameters
 	)
 }

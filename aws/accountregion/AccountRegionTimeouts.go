@@ -5,9 +5,9 @@ package accountregion
 
 
 type AccountRegionTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/account_region#create AccountRegion#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/account_region#create AccountRegion#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/account_region#update AccountRegion#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/account_region#update AccountRegion#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

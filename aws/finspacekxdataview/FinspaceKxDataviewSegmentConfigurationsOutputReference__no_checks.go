@@ -67,6 +67,10 @@ func (j *jsiiProxy_FinspaceKxDataviewSegmentConfigurationsOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_FinspaceKxDataviewSegmentConfigurationsOutputReference) validateSetOnDemandParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_FinspaceKxDataviewSegmentConfigurationsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

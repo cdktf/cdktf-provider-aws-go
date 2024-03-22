@@ -35,6 +35,9 @@ type FinspaceKxDataviewSegmentConfigurationsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	OnDemand() interface{}
+	SetOnDemand(val interface{})
+	OnDemandInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +73,7 @@ type FinspaceKxDataviewSegmentConfigurationsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetOnDemand()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -150,6 +154,26 @@ func (j *jsiiProxy_FinspaceKxDataviewSegmentConfigurationsOutputReference) Inter
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FinspaceKxDataviewSegmentConfigurationsOutputReference) OnDemand() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onDemand",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FinspaceKxDataviewSegmentConfigurationsOutputReference) OnDemandInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"onDemandInput",
 		&returns,
 	)
 	return returns
@@ -263,6 +287,17 @@ func (j *jsiiProxy_FinspaceKxDataviewSegmentConfigurationsOutputReference)SetInt
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FinspaceKxDataviewSegmentConfigurationsOutputReference)SetOnDemand(val interface{}) {
+	if err := j.validateSetOnDemandParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"onDemand",
 		val,
 	)
 }
@@ -484,6 +519,14 @@ func (f *jsiiProxy_FinspaceKxDataviewSegmentConfigurationsOutputReference) Inter
 	)
 
 	return returns
+}
+
+func (f *jsiiProxy_FinspaceKxDataviewSegmentConfigurationsOutputReference) ResetOnDemand() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetOnDemand",
+		nil, // no parameters
+	)
 }
 
 func (f *jsiiProxy_FinspaceKxDataviewSegmentConfigurationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

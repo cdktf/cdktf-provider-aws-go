@@ -47,7 +47,7 @@ func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMess
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationOutputReference) validatePutCustomPlayloadParameters(value interface{}) error {
+func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationOutputReference) validatePutCustomPayloadParameters(value interface{}) error {
 	return nil
 }
 

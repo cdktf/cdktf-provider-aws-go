@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/rds_cluster aws_rds_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/rds_cluster aws_rds_cluster}.
 type RdsCluster interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -102,6 +102,9 @@ type RdsCluster interface {
 	EnableHttpEndpoint() interface{}
 	SetEnableHttpEndpoint(val interface{})
 	EnableHttpEndpointInput() interface{}
+	EnableLocalWriteForwarding() interface{}
+	SetEnableLocalWriteForwarding(val interface{})
+	EnableLocalWriteForwardingInput() interface{}
 	Endpoint() *string
 	Engine() *string
 	SetEngine(val *string)
@@ -299,6 +302,7 @@ type RdsCluster interface {
 	ResetEnabledCloudwatchLogsExports()
 	ResetEnableGlobalWriteForwarding()
 	ResetEnableHttpEndpoint()
+	ResetEnableLocalWriteForwarding()
 	ResetEngineMode()
 	ResetEngineVersion()
 	ResetFinalSnapshotIdentifier()
@@ -876,6 +880,26 @@ func (j *jsiiProxy_RdsCluster) EnableHttpEndpointInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableHttpEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) EnableLocalWriteForwarding() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableLocalWriteForwarding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) EnableLocalWriteForwardingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableLocalWriteForwardingInput",
 		&returns,
 	)
 	return returns
@@ -1682,7 +1706,7 @@ func (j *jsiiProxy_RdsCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
 func NewRdsCluster(scope constructs.Construct, id *string, config *RdsClusterConfig) RdsCluster {
 	_init_.Initialize()
 
@@ -1700,7 +1724,7 @@ func NewRdsCluster(scope constructs.Construct, id *string, config *RdsClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
 func NewRdsCluster_Override(r RdsCluster, scope constructs.Construct, id *string, config *RdsClusterConfig) {
 	_init_.Initialize()
 
@@ -1990,6 +2014,17 @@ func (j *jsiiProxy_RdsCluster)SetEnableHttpEndpoint(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableHttpEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsCluster)SetEnableLocalWriteForwarding(val interface{}) {
+	if err := j.validateSetEnableLocalWriteForwardingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableLocalWriteForwarding",
 		val,
 	)
 }
@@ -2917,6 +2952,14 @@ func (r *jsiiProxy_RdsCluster) ResetEnableHttpEndpoint() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetEnableHttpEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsCluster) ResetEnableLocalWriteForwarding() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetEnableLocalWriteForwarding",
 		nil, // no parameters
 	)
 }

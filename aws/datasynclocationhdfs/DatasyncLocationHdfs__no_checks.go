@@ -127,7 +127,15 @@ func (j *jsiiProxy_DatasyncLocationHdfs) validateSetKerberosKeytabParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncLocationHdfs) validateSetKerberosKeytabBase64Parameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationHdfs) validateSetKerberosKrb5ConfParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_DatasyncLocationHdfs) validateSetKerberosKrb5ConfBase64Parameters(val *string) error {
 	return nil
 }
 

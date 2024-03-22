@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs}.
 type DatasyncLocationHdfs interface {
 	cdktf.TerraformResource
 	AgentArns() *[]*string
@@ -54,9 +54,15 @@ type DatasyncLocationHdfs interface {
 	IdInput() *string
 	KerberosKeytab() *string
 	SetKerberosKeytab(val *string)
+	KerberosKeytabBase64() *string
+	SetKerberosKeytabBase64(val *string)
+	KerberosKeytabBase64Input() *string
 	KerberosKeytabInput() *string
 	KerberosKrb5Conf() *string
 	SetKerberosKrb5Conf(val *string)
+	KerberosKrb5ConfBase64() *string
+	SetKerberosKrb5ConfBase64(val *string)
+	KerberosKrb5ConfBase64Input() *string
 	KerberosKrb5ConfInput() *string
 	KerberosPrincipal() *string
 	SetKerberosPrincipal(val *string)
@@ -155,7 +161,9 @@ type DatasyncLocationHdfs interface {
 	ResetBlockSize()
 	ResetId()
 	ResetKerberosKeytab()
+	ResetKerberosKeytabBase64()
 	ResetKerberosKrb5Conf()
+	ResetKerberosKrb5ConfBase64()
 	ResetKerberosPrincipal()
 	ResetKmsKeyProviderUri()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -365,6 +373,26 @@ func (j *jsiiProxy_DatasyncLocationHdfs) KerberosKeytab() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DatasyncLocationHdfs) KerberosKeytabBase64() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kerberosKeytabBase64",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatasyncLocationHdfs) KerberosKeytabBase64Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kerberosKeytabBase64Input",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DatasyncLocationHdfs) KerberosKeytabInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -380,6 +408,26 @@ func (j *jsiiProxy_DatasyncLocationHdfs) KerberosKrb5Conf() *string {
 	_jsii_.Get(
 		j,
 		"kerberosKrb5Conf",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatasyncLocationHdfs) KerberosKrb5ConfBase64() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kerberosKrb5ConfBase64",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DatasyncLocationHdfs) KerberosKrb5ConfBase64Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kerberosKrb5ConfBase64Input",
 		&returns,
 	)
 	return returns
@@ -666,7 +714,7 @@ func (j *jsiiProxy_DatasyncLocationHdfs) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs} Resource.
 func NewDatasyncLocationHdfs(scope constructs.Construct, id *string, config *DatasyncLocationHdfsConfig) DatasyncLocationHdfs {
 	_init_.Initialize()
 
@@ -684,7 +732,7 @@ func NewDatasyncLocationHdfs(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/datasync_location_hdfs aws_datasync_location_hdfs} Resource.
 func NewDatasyncLocationHdfs_Override(d DatasyncLocationHdfs, scope constructs.Construct, id *string, config *DatasyncLocationHdfsConfig) {
 	_init_.Initialize()
 
@@ -788,6 +836,17 @@ func (j *jsiiProxy_DatasyncLocationHdfs)SetKerberosKeytab(val *string) {
 	)
 }
 
+func (j *jsiiProxy_DatasyncLocationHdfs)SetKerberosKeytabBase64(val *string) {
+	if err := j.validateSetKerberosKeytabBase64Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kerberosKeytabBase64",
+		val,
+	)
+}
+
 func (j *jsiiProxy_DatasyncLocationHdfs)SetKerberosKrb5Conf(val *string) {
 	if err := j.validateSetKerberosKrb5ConfParameters(val); err != nil {
 		panic(err)
@@ -795,6 +854,17 @@ func (j *jsiiProxy_DatasyncLocationHdfs)SetKerberosKrb5Conf(val *string) {
 	_jsii_.Set(
 		j,
 		"kerberosKrb5Conf",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DatasyncLocationHdfs)SetKerberosKrb5ConfBase64(val *string) {
+	if err := j.validateSetKerberosKrb5ConfBase64Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kerberosKrb5ConfBase64",
 		val,
 	)
 }
@@ -1313,10 +1383,26 @@ func (d *jsiiProxy_DatasyncLocationHdfs) ResetKerberosKeytab() {
 	)
 }
 
+func (d *jsiiProxy_DatasyncLocationHdfs) ResetKerberosKeytabBase64() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKerberosKeytabBase64",
+		nil, // no parameters
+	)
+}
+
 func (d *jsiiProxy_DatasyncLocationHdfs) ResetKerberosKrb5Conf() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetKerberosKrb5Conf",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DatasyncLocationHdfs) ResetKerberosKrb5ConfBase64() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetKerberosKrb5ConfBase64",
 		nil, // no parameters
 	)
 }

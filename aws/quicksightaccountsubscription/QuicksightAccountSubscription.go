@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription}.
 type QuicksightAccountSubscription interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -701,7 +701,7 @@ func (j *jsiiProxy_QuicksightAccountSubscription) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription} Resource.
 func NewQuicksightAccountSubscription(scope constructs.Construct, id *string, config *QuicksightAccountSubscriptionConfig) QuicksightAccountSubscription {
 	_init_.Initialize()
 
@@ -719,7 +719,7 @@ func NewQuicksightAccountSubscription(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription} Resource.
 func NewQuicksightAccountSubscription_Override(q QuicksightAccountSubscription, scope constructs.Construct, id *string, config *QuicksightAccountSubscriptionConfig) {
 	_init_.Initialize()
 

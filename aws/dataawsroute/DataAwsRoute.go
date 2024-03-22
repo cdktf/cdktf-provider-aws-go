@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/route aws_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/data-sources/route aws_route}.
 type DataAwsRoute interface {
 	cdktf.TerraformDataSource
 	CarrierGatewayId() *string
@@ -624,7 +624,7 @@ func (j *jsiiProxy_DataAwsRoute) VpcPeeringConnectionIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/route aws_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/data-sources/route aws_route} Data Source.
 func NewDataAwsRoute(scope constructs.Construct, id *string, config *DataAwsRouteConfig) DataAwsRoute {
 	_init_.Initialize()
 
@@ -642,7 +642,7 @@ func NewDataAwsRoute(scope constructs.Construct, id *string, config *DataAwsRout
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/route aws_route} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/data-sources/route aws_route} Data Source.
 func NewDataAwsRoute_Override(d DataAwsRoute, scope constructs.Construct, id *string, config *DataAwsRouteConfig) {
 	_init_.Initialize()
 

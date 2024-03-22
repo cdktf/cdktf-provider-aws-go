@@ -5,11 +5,11 @@ package memorydbcluster
 
 
 type MemorydbClusterTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/memorydb_cluster#create MemorydbCluster#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/memorydb_cluster#create MemorydbCluster#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/memorydb_cluster#delete MemorydbCluster#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/memorydb_cluster#delete MemorydbCluster#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/memorydb_cluster#update MemorydbCluster#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/memorydb_cluster#update MemorydbCluster#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

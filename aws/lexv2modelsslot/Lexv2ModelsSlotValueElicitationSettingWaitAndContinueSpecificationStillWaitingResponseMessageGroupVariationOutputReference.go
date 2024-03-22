@@ -28,8 +28,8 @@ type Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWait
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	CustomPlayload() Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayloadList
-	CustomPlayloadInput() interface{}
+	CustomPayload() Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadList
+	CustomPayloadInput() interface{}
 	// Experimental.
 	Fqn() *string
 	ImageResponseCard() Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationImageResponseCardList
@@ -72,11 +72,11 @@ type Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWait
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutCustomPlayload(value interface{})
+	PutCustomPayload(value interface{})
 	PutImageResponseCard(value interface{})
 	PutPlainTextMessage(value interface{})
 	PutSsmlMessage(value interface{})
-	ResetCustomPlayload()
+	ResetCustomPayload()
 	ResetImageResponseCard()
 	ResetPlainTextMessage()
 	ResetSsmlMessage()
@@ -125,21 +125,21 @@ func (j *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecific
 	return returns
 }
 
-func (j *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationOutputReference) CustomPlayload() Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayloadList {
-	var returns Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPlayloadList
+func (j *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationOutputReference) CustomPayload() Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadList {
+	var returns Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationCustomPayloadList
 	_jsii_.Get(
 		j,
-		"customPlayload",
+		"customPayload",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationOutputReference) CustomPlayloadInput() interface{} {
+func (j *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationOutputReference) CustomPayloadInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"customPlayloadInput",
+		"customPayloadInput",
 		&returns,
 	)
 	return returns
@@ -514,13 +514,13 @@ func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecific
 	return returns
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationOutputReference) PutCustomPlayload(value interface{}) {
-	if err := l.validatePutCustomPlayloadParameters(value); err != nil {
+func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationOutputReference) PutCustomPayload(value interface{}) {
+	if err := l.validatePutCustomPayloadParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
-		"putCustomPlayload",
+		"putCustomPayload",
 		[]interface{}{value},
 	)
 }
@@ -558,10 +558,10 @@ func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecific
 	)
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationOutputReference) ResetCustomPlayload() {
+func (l *jsiiProxy_Lexv2ModelsSlotValueElicitationSettingWaitAndContinueSpecificationStillWaitingResponseMessageGroupVariationOutputReference) ResetCustomPayload() {
 	_jsii_.InvokeVoid(
 		l,
-		"resetCustomPlayload",
+		"resetCustomPayload",
 		nil, // no parameters
 	)
 }

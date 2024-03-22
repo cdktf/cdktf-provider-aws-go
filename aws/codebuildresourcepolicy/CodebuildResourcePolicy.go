@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/codebuild_resource_policy aws_codebuild_resource_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/codebuild_resource_policy aws_codebuild_resource_policy}.
 type CodebuildResourcePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_CodebuildResourcePolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/codebuild_resource_policy aws_codebuild_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/codebuild_resource_policy aws_codebuild_resource_policy} Resource.
 func NewCodebuildResourcePolicy(scope constructs.Construct, id *string, config *CodebuildResourcePolicyConfig) CodebuildResourcePolicy {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewCodebuildResourcePolicy(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/resources/codebuild_resource_policy aws_codebuild_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/codebuild_resource_policy aws_codebuild_resource_policy} Resource.
 func NewCodebuildResourcePolicy_Override(c CodebuildResourcePolicy, scope constructs.Construct, id *string, config *CodebuildResourcePolicyConfig) {
 	_init_.Initialize()
 

@@ -22,11 +22,11 @@ type DataAwsServicequotasTemplatesConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/servicequotas_templates#region DataAwsServicequotasTemplates#region}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/data-sources/servicequotas_templates#region DataAwsServicequotasTemplates#region}.
 	Region *string `field:"required" json:"region" yaml:"region"`
 	// templates block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.41.0/docs/data-sources/servicequotas_templates#templates DataAwsServicequotasTemplates#templates}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/data-sources/servicequotas_templates#templates DataAwsServicequotasTemplates#templates}
 	Templates interface{} `field:"optional" json:"templates" yaml:"templates"`
 }
 

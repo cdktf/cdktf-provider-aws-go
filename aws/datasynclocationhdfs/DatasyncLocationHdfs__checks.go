@@ -419,7 +419,23 @@ func (j *jsiiProxy_DatasyncLocationHdfs) validateSetKerberosKeytabParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_DatasyncLocationHdfs) validateSetKerberosKeytabBase64Parameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DatasyncLocationHdfs) validateSetKerberosKrb5ConfParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_DatasyncLocationHdfs) validateSetKerberosKrb5ConfBase64Parameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
