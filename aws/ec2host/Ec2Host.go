@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ec2_host aws_ec2_host}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ec2_host aws_ec2_host}.
 type Ec2Host interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -93,6 +93,8 @@ type Ec2Host interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() Ec2HostTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -136,6 +138,7 @@ type Ec2Host interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *Ec2HostTimeouts)
 	ResetAssetId()
 	ResetAutoPlacement()
 	ResetHostRecovery()
@@ -148,6 +151,7 @@ type Ec2Host interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -546,8 +550,28 @@ func (j *jsiiProxy_Ec2Host) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2Host) Timeouts() Ec2HostTimeoutsOutputReference {
+	var returns Ec2HostTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ec2_host aws_ec2_host} Resource.
+func (j *jsiiProxy_Ec2Host) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ec2_host aws_ec2_host} Resource.
 func NewEc2Host(scope constructs.Construct, id *string, config *Ec2HostConfig) Ec2Host {
 	_init_.Initialize()
 
@@ -565,7 +589,7 @@ func NewEc2Host(scope constructs.Construct, id *string, config *Ec2HostConfig) E
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/ec2_host aws_ec2_host} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/ec2_host aws_ec2_host} Resource.
 func NewEc2Host_Override(e Ec2Host, scope constructs.Construct, id *string, config *Ec2HostConfig) {
 	_init_.Initialize()
 
@@ -1107,6 +1131,17 @@ func (e *jsiiProxy_Ec2Host) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (e *jsiiProxy_Ec2Host) PutTimeouts(value *Ec2HostTimeouts) {
+	if err := e.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_Ec2Host) ResetAssetId() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1183,6 +1218,14 @@ func (e *jsiiProxy_Ec2Host) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2Host) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

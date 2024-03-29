@@ -135,6 +135,10 @@ func (j *jsiiProxy_VpcIpam) validateSetTagsAllParameters(val *map[string]*string
 	return nil
 }
 
+func (j *jsiiProxy_VpcIpam) validateSetTierParameters(val *string) error {
+	return nil
+}
+
 func validateNewVpcIpamParameters(scope constructs.Construct, id *string, config *VpcIpamConfig) error {
 	return nil
 }

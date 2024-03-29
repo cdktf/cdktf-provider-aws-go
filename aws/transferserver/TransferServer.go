@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/transfer_server aws_transfer_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/transfer_server aws_transfer_server}.
 type TransferServer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -847,7 +847,7 @@ func (j *jsiiProxy_TransferServer) WorkflowDetailsInput() *TransferServerWorkflo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/transfer_server aws_transfer_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/transfer_server aws_transfer_server} Resource.
 func NewTransferServer(scope constructs.Construct, id *string, config *TransferServerConfig) TransferServer {
 	_init_.Initialize()
 
@@ -865,7 +865,7 @@ func NewTransferServer(scope constructs.Construct, id *string, config *TransferS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/transfer_server aws_transfer_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/transfer_server aws_transfer_server} Resource.
 func NewTransferServer_Override(t TransferServer, scope constructs.Construct, id *string, config *TransferServerConfig) {
 	_init_.Initialize()
 

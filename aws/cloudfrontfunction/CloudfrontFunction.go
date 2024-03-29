@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/cloudfront_function aws_cloudfront_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/cloudfront_function aws_cloudfront_function}.
 type CloudfrontFunction interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -50,6 +50,9 @@ type CloudfrontFunction interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KeyValueStoreAssociations() *[]*string
+	SetKeyValueStoreAssociations(val *[]*string)
+	KeyValueStoreAssociationsInput() *[]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -128,6 +131,7 @@ type CloudfrontFunction interface {
 	OverrideLogicalId(newLogicalId *string)
 	ResetComment()
 	ResetId()
+	ResetKeyValueStoreAssociations()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -310,6 +314,26 @@ func (j *jsiiProxy_CloudfrontFunction) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CloudfrontFunction) KeyValueStoreAssociations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"keyValueStoreAssociations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudfrontFunction) KeyValueStoreAssociationsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"keyValueStoreAssociationsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudfrontFunction) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -471,7 +495,7 @@ func (j *jsiiProxy_CloudfrontFunction) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/cloudfront_function aws_cloudfront_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/cloudfront_function aws_cloudfront_function} Resource.
 func NewCloudfrontFunction(scope constructs.Construct, id *string, config *CloudfrontFunctionConfig) CloudfrontFunction {
 	_init_.Initialize()
 
@@ -489,7 +513,7 @@ func NewCloudfrontFunction(scope constructs.Construct, id *string, config *Cloud
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/resources/cloudfront_function aws_cloudfront_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/cloudfront_function aws_cloudfront_function} Resource.
 func NewCloudfrontFunction_Override(c CloudfrontFunction, scope constructs.Construct, id *string, config *CloudfrontFunctionConfig) {
 	_init_.Initialize()
 
@@ -567,6 +591,17 @@ func (j *jsiiProxy_CloudfrontFunction)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudfrontFunction)SetKeyValueStoreAssociations(val *[]*string) {
+	if err := j.validateSetKeyValueStoreAssociationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyValueStoreAssociations",
 		val,
 	)
 }
@@ -999,6 +1034,14 @@ func (c *jsiiProxy_CloudfrontFunction) ResetId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudfrontFunction) ResetKeyValueStoreAssociations() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetKeyValueStoreAssociations",
 		nil, // no parameters
 	)
 }

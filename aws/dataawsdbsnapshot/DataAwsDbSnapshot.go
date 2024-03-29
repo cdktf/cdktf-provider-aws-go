@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/data-sources/db_snapshot aws_db_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/data-sources/db_snapshot aws_db_snapshot}.
 type DataAwsDbSnapshot interface {
 	cdktf.TerraformDataSource
 	AllocatedStorage() *float64
@@ -69,6 +69,7 @@ type DataAwsDbSnapshot interface {
 	// The tree node.
 	Node() constructs.Node
 	OptionGroupName() *string
+	OriginalSnapshotCreateTime() *string
 	Port() *float64
 	// Experimental.
 	Provider() cdktf.TerraformProvider
@@ -459,6 +460,16 @@ func (j *jsiiProxy_DataAwsDbSnapshot) OptionGroupName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsDbSnapshot) OriginalSnapshotCreateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"originalSnapshotCreateTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsDbSnapshot) Port() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -620,7 +631,7 @@ func (j *jsiiProxy_DataAwsDbSnapshot) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/data-sources/db_snapshot aws_db_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/data-sources/db_snapshot aws_db_snapshot} Data Source.
 func NewDataAwsDbSnapshot(scope constructs.Construct, id *string, config *DataAwsDbSnapshotConfig) DataAwsDbSnapshot {
 	_init_.Initialize()
 
@@ -638,7 +649,7 @@ func NewDataAwsDbSnapshot(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/data-sources/db_snapshot aws_db_snapshot} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/data-sources/db_snapshot aws_db_snapshot} Data Source.
 func NewDataAwsDbSnapshot_Override(d DataAwsDbSnapshot, scope constructs.Construct, id *string, config *DataAwsDbSnapshotConfig) {
 	_init_.Initialize()
 

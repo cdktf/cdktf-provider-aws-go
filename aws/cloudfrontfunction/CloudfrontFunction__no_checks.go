@@ -111,6 +111,10 @@ func (j *jsiiProxy_CloudfrontFunction) validateSetIdParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_CloudfrontFunction) validateSetKeyValueStoreAssociationsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudfrontFunction) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

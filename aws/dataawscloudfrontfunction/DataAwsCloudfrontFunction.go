@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/data-sources/cloudfront_function aws_cloudfront_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/data-sources/cloudfront_function aws_cloudfront_function}.
 type DataAwsCloudfrontFunction interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -42,6 +42,7 @@ type DataAwsCloudfrontFunction interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KeyValueStoreAssociations() *[]*string
 	LastModifiedTime() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -247,6 +248,16 @@ func (j *jsiiProxy_DataAwsCloudfrontFunction) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsCloudfrontFunction) KeyValueStoreAssociations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"keyValueStoreAssociations",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsCloudfrontFunction) LastModifiedTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -388,7 +399,7 @@ func (j *jsiiProxy_DataAwsCloudfrontFunction) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/data-sources/cloudfront_function aws_cloudfront_function} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/data-sources/cloudfront_function aws_cloudfront_function} Data Source.
 func NewDataAwsCloudfrontFunction(scope constructs.Construct, id *string, config *DataAwsCloudfrontFunctionConfig) DataAwsCloudfrontFunction {
 	_init_.Initialize()
 
@@ -406,7 +417,7 @@ func NewDataAwsCloudfrontFunction(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.42.0/docs/data-sources/cloudfront_function aws_cloudfront_function} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/data-sources/cloudfront_function aws_cloudfront_function} Data Source.
 func NewDataAwsCloudfrontFunction_Override(d DataAwsCloudfrontFunction, scope constructs.Construct, id *string, config *DataAwsCloudfrontFunctionConfig) {
 	_init_.Initialize()
 

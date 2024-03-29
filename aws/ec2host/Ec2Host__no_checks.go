@@ -75,6 +75,10 @@ func (e *jsiiProxy_Ec2Host) validateOverrideLogicalIdParameters(newLogicalId *st
 	return nil
 }
 
+func (e *jsiiProxy_Ec2Host) validatePutTimeoutsParameters(value *Ec2HostTimeouts) error {
+	return nil
+}
+
 func validateEc2Host_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
