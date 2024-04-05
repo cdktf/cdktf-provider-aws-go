@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/redshift_parameter_group aws_redshift_parameter_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/redshift_parameter_group aws_redshift_parameter_group}.
 type RedshiftParameterGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -463,7 +463,7 @@ func (j *jsiiProxy_RedshiftParameterGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/redshift_parameter_group aws_redshift_parameter_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/redshift_parameter_group aws_redshift_parameter_group} Resource.
 func NewRedshiftParameterGroup(scope constructs.Construct, id *string, config *RedshiftParameterGroupConfig) RedshiftParameterGroup {
 	_init_.Initialize()
 
@@ -481,7 +481,7 @@ func NewRedshiftParameterGroup(scope constructs.Construct, id *string, config *R
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/redshift_parameter_group aws_redshift_parameter_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/redshift_parameter_group aws_redshift_parameter_group} Resource.
 func NewRedshiftParameterGroup_Override(r RedshiftParameterGroup, scope constructs.Construct, id *string, config *RedshiftParameterGroupConfig) {
 	_init_.Initialize()
 

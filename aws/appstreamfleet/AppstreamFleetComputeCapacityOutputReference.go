@@ -32,6 +32,9 @@ type AppstreamFleetComputeCapacityOutputReference interface {
 	DesiredInstances() *float64
 	SetDesiredInstances(val *float64)
 	DesiredInstancesInput() *float64
+	DesiredSessions() *float64
+	SetDesiredSessions(val *float64)
+	DesiredSessionsInput() *float64
 	// Experimental.
 	Fqn() *string
 	InternalValue() *AppstreamFleetComputeCapacity
@@ -70,6 +73,8 @@ type AppstreamFleetComputeCapacityOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetDesiredInstances()
+	ResetDesiredSessions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -140,6 +145,26 @@ func (j *jsiiProxy_AppstreamFleetComputeCapacityOutputReference) DesiredInstance
 	_jsii_.Get(
 		j,
 		"desiredInstancesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamFleetComputeCapacityOutputReference) DesiredSessions() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"desiredSessions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamFleetComputeCapacityOutputReference) DesiredSessionsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"desiredSessionsInput",
 		&returns,
 	)
 	return returns
@@ -262,6 +287,17 @@ func (j *jsiiProxy_AppstreamFleetComputeCapacityOutputReference)SetDesiredInstan
 	_jsii_.Set(
 		j,
 		"desiredInstances",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppstreamFleetComputeCapacityOutputReference)SetDesiredSessions(val *float64) {
+	if err := j.validateSetDesiredSessionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"desiredSessions",
 		val,
 	)
 }
@@ -483,6 +519,22 @@ func (a *jsiiProxy_AppstreamFleetComputeCapacityOutputReference) InterpolationFo
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AppstreamFleetComputeCapacityOutputReference) ResetDesiredInstances() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDesiredInstances",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppstreamFleetComputeCapacityOutputReference) ResetDesiredSessions() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetDesiredSessions",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AppstreamFleetComputeCapacityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

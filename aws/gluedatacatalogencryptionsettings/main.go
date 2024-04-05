@@ -130,6 +130,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalogEncryptionMode", GoGetter: "CatalogEncryptionMode"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogEncryptionModeInput", GoGetter: "CatalogEncryptionModeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "catalogEncryptionServiceRole", GoGetter: "CatalogEncryptionServiceRole"},
+			_jsii_.MemberProperty{JsiiProperty: "catalogEncryptionServiceRoleInput", GoGetter: "CatalogEncryptionServiceRoleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -147,6 +149,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCatalogEncryptionServiceRole", GoMethod: "ResetCatalogEncryptionServiceRole"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSseAwsKmsKeyId", GoMethod: "ResetSseAwsKmsKeyId"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "sseAwsKmsKeyId", GoGetter: "SseAwsKmsKeyId"},

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/directory_service_log_subscription aws_directory_service_log_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/directory_service_log_subscription aws_directory_service_log_subscription}.
 type DirectoryServiceLogSubscription interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_DirectoryServiceLogSubscription) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/directory_service_log_subscription aws_directory_service_log_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/directory_service_log_subscription aws_directory_service_log_subscription} Resource.
 func NewDirectoryServiceLogSubscription(scope constructs.Construct, id *string, config *DirectoryServiceLogSubscriptionConfig) DirectoryServiceLogSubscription {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewDirectoryServiceLogSubscription(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/directory_service_log_subscription aws_directory_service_log_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/directory_service_log_subscription aws_directory_service_log_subscription} Resource.
 func NewDirectoryServiceLogSubscription_Override(d DirectoryServiceLogSubscription, scope constructs.Construct, id *string, config *DirectoryServiceLogSubscriptionConfig) {
 	_init_.Initialize()
 

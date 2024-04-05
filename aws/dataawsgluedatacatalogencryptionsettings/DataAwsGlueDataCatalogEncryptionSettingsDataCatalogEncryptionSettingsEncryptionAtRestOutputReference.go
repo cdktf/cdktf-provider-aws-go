@@ -14,6 +14,7 @@ import (
 type DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference interface {
 	cdktf.ComplexObject
 	CatalogEncryptionMode() *string
+	CatalogEncryptionServiceRole() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -86,6 +87,16 @@ func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryption
 	_jsii_.Get(
 		j,
 		"catalogEncryptionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsGlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference) CatalogEncryptionServiceRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"catalogEncryptionServiceRole",
 		&returns,
 	)
 	return returns

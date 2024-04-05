@@ -159,6 +159,10 @@ func (j *jsiiProxy_AppstreamFleet) validateSetLifecycleParameters(val *cdktf.Ter
 	return nil
 }
 
+func (j *jsiiProxy_AppstreamFleet) validateSetMaxSessionsPerInstanceParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppstreamFleet) validateSetMaxUserDurationInSecondsParameters(val *float64) error {
 	return nil
 }

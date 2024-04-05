@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/batch_job_definition aws_batch_job_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/batch_job_definition aws_batch_job_definition}.
 type BatchJobDefinition interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -36,6 +36,9 @@ type BatchJobDefinition interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DeregisterOnNewRevision() interface{}
+	SetDeregisterOnNewRevision(val interface{})
+	DeregisterOnNewRevisionInput() interface{}
 	EksProperties() BatchJobDefinitionEksPropertiesOutputReference
 	EksPropertiesInput() *BatchJobDefinitionEksProperties
 	// Experimental.
@@ -150,6 +153,7 @@ type BatchJobDefinition interface {
 	PutRetryStrategy(value *BatchJobDefinitionRetryStrategy)
 	PutTimeout(value *BatchJobDefinitionTimeout)
 	ResetContainerProperties()
+	ResetDeregisterOnNewRevision()
 	ResetEksProperties()
 	ResetId()
 	ResetNodeProperties()
@@ -267,6 +271,26 @@ func (j *jsiiProxy_BatchJobDefinition) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchJobDefinition) DeregisterOnNewRevision() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deregisterOnNewRevision",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchJobDefinition) DeregisterOnNewRevisionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deregisterOnNewRevisionInput",
 		&returns,
 	)
 	return returns
@@ -653,7 +677,7 @@ func (j *jsiiProxy_BatchJobDefinition) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
 func NewBatchJobDefinition(scope constructs.Construct, id *string, config *BatchJobDefinitionConfig) BatchJobDefinition {
 	_init_.Initialize()
 
@@ -671,7 +695,7 @@ func NewBatchJobDefinition(scope constructs.Construct, id *string, config *Batch
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
 func NewBatchJobDefinition_Override(b BatchJobDefinition, scope constructs.Construct, id *string, config *BatchJobDefinitionConfig) {
 	_init_.Initialize()
 
@@ -719,6 +743,17 @@ func (j *jsiiProxy_BatchJobDefinition)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BatchJobDefinition)SetDeregisterOnNewRevision(val interface{}) {
+	if err := j.validateSetDeregisterOnNewRevisionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deregisterOnNewRevision",
 		val,
 	)
 }
@@ -1261,6 +1296,14 @@ func (b *jsiiProxy_BatchJobDefinition) ResetContainerProperties() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetContainerProperties",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BatchJobDefinition) ResetDeregisterOnNewRevision() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetDeregisterOnNewRevision",
 		nil, // no parameters
 	)
 }

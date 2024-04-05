@@ -22,32 +22,32 @@ type DatasyncLocationObjectStorageConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/datasync_location_object_storage#agent_arns DatasyncLocationObjectStorage#agent_arns}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/datasync_location_object_storage#agent_arns DatasyncLocationObjectStorage#agent_arns}.
 	AgentArns *[]*string `field:"required" json:"agentArns" yaml:"agentArns"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/datasync_location_object_storage#bucket_name DatasyncLocationObjectStorage#bucket_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/datasync_location_object_storage#bucket_name DatasyncLocationObjectStorage#bucket_name}.
 	BucketName *string `field:"required" json:"bucketName" yaml:"bucketName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/datasync_location_object_storage#server_hostname DatasyncLocationObjectStorage#server_hostname}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/datasync_location_object_storage#server_hostname DatasyncLocationObjectStorage#server_hostname}.
 	ServerHostname *string `field:"required" json:"serverHostname" yaml:"serverHostname"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/datasync_location_object_storage#access_key DatasyncLocationObjectStorage#access_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/datasync_location_object_storage#access_key DatasyncLocationObjectStorage#access_key}.
 	AccessKey *string `field:"optional" json:"accessKey" yaml:"accessKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/datasync_location_object_storage#id DatasyncLocationObjectStorage#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/datasync_location_object_storage#id DatasyncLocationObjectStorage#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/datasync_location_object_storage#secret_key DatasyncLocationObjectStorage#secret_key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/datasync_location_object_storage#secret_key DatasyncLocationObjectStorage#secret_key}.
 	SecretKey *string `field:"optional" json:"secretKey" yaml:"secretKey"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/datasync_location_object_storage#server_certificate DatasyncLocationObjectStorage#server_certificate}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/datasync_location_object_storage#server_certificate DatasyncLocationObjectStorage#server_certificate}.
 	ServerCertificate *string `field:"optional" json:"serverCertificate" yaml:"serverCertificate"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/datasync_location_object_storage#server_port DatasyncLocationObjectStorage#server_port}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/datasync_location_object_storage#server_port DatasyncLocationObjectStorage#server_port}.
 	ServerPort *float64 `field:"optional" json:"serverPort" yaml:"serverPort"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/datasync_location_object_storage#server_protocol DatasyncLocationObjectStorage#server_protocol}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/datasync_location_object_storage#server_protocol DatasyncLocationObjectStorage#server_protocol}.
 	ServerProtocol *string `field:"optional" json:"serverProtocol" yaml:"serverProtocol"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/datasync_location_object_storage#subdirectory DatasyncLocationObjectStorage#subdirectory}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/datasync_location_object_storage#subdirectory DatasyncLocationObjectStorage#subdirectory}.
 	Subdirectory *string `field:"optional" json:"subdirectory" yaml:"subdirectory"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/datasync_location_object_storage#tags DatasyncLocationObjectStorage#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/datasync_location_object_storage#tags DatasyncLocationObjectStorage#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/datasync_location_object_storage#tags_all DatasyncLocationObjectStorage#tags_all}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/datasync_location_object_storage#tags_all DatasyncLocationObjectStorage#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 }
 

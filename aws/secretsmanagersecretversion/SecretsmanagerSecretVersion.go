@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/secretsmanager_secret_version aws_secretsmanager_secret_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/secretsmanager_secret_version aws_secretsmanager_secret_version}.
 type SecretsmanagerSecretVersion interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_SecretsmanagerSecretVersion) VersionStagesInput() *[]*string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/secretsmanager_secret_version aws_secretsmanager_secret_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/secretsmanager_secret_version aws_secretsmanager_secret_version} Resource.
 func NewSecretsmanagerSecretVersion(scope constructs.Construct, id *string, config *SecretsmanagerSecretVersionConfig) SecretsmanagerSecretVersion {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewSecretsmanagerSecretVersion(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/secretsmanager_secret_version aws_secretsmanager_secret_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/secretsmanager_secret_version aws_secretsmanager_secret_version} Resource.
 func NewSecretsmanagerSecretVersion_Override(s SecretsmanagerSecretVersion, scope constructs.Construct, id *string, config *SecretsmanagerSecretVersionConfig) {
 	_init_.Initialize()
 

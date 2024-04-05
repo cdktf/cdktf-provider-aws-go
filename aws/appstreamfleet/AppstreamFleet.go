@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/appstream_fleet aws_appstream_fleet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/appstream_fleet aws_appstream_fleet}.
 type AppstreamFleet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -82,6 +82,9 @@ type AppstreamFleet interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaxSessionsPerInstance() *float64
+	SetMaxSessionsPerInstance(val *float64)
+	MaxSessionsPerInstanceInput() *float64
 	MaxUserDurationInSeconds() *float64
 	SetMaxUserDurationInSeconds(val *float64)
 	MaxUserDurationInSecondsInput() *float64
@@ -175,6 +178,7 @@ type AppstreamFleet interface {
 	ResetIdleDisconnectTimeoutInSeconds()
 	ResetImageArn()
 	ResetImageName()
+	ResetMaxSessionsPerInstance()
 	ResetMaxUserDurationInSeconds()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -571,6 +575,26 @@ func (j *jsiiProxy_AppstreamFleet) Lifecycle() *cdktf.TerraformResourceLifecycle
 	return returns
 }
 
+func (j *jsiiProxy_AppstreamFleet) MaxSessionsPerInstance() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxSessionsPerInstance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppstreamFleet) MaxSessionsPerInstanceInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxSessionsPerInstanceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppstreamFleet) MaxUserDurationInSeconds() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -772,7 +796,7 @@ func (j *jsiiProxy_AppstreamFleet) VpcConfigInput() *AppstreamFleetVpcConfig {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/appstream_fleet aws_appstream_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/appstream_fleet aws_appstream_fleet} Resource.
 func NewAppstreamFleet(scope constructs.Construct, id *string, config *AppstreamFleetConfig) AppstreamFleet {
 	_init_.Initialize()
 
@@ -790,7 +814,7 @@ func NewAppstreamFleet(scope constructs.Construct, id *string, config *Appstream
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/appstream_fleet aws_appstream_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/appstream_fleet aws_appstream_fleet} Resource.
 func NewAppstreamFleet_Override(a AppstreamFleet, scope constructs.Construct, id *string, config *AppstreamFleetConfig) {
 	_init_.Initialize()
 
@@ -967,6 +991,17 @@ func (j *jsiiProxy_AppstreamFleet)SetLifecycle(val *cdktf.TerraformResourceLifec
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppstreamFleet)SetMaxSessionsPerInstance(val *float64) {
+	if err := j.validateSetMaxSessionsPerInstanceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxSessionsPerInstance",
 		val,
 	)
 }
@@ -1515,6 +1550,14 @@ func (a *jsiiProxy_AppstreamFleet) ResetImageName() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetImageName",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppstreamFleet) ResetMaxSessionsPerInstance() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMaxSessionsPerInstance",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/emr_cluster aws_emr_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/emr_cluster aws_emr_cluster}.
 type EmrCluster interface {
 	cdktf.TerraformResource
 	AdditionalInfo() *string
@@ -147,6 +147,9 @@ type EmrCluster interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UnhealthyNodeReplacement() interface{}
+	SetUnhealthyNodeReplacement(val interface{})
+	UnhealthyNodeReplacementInput() interface{}
 	VisibleToAllUsers() interface{}
 	SetVisibleToAllUsers(val interface{})
 	VisibleToAllUsersInput() interface{}
@@ -234,6 +237,7 @@ type EmrCluster interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTerminationProtection()
+	ResetUnhealthyNodeReplacement()
 	ResetVisibleToAllUsers()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -1063,6 +1067,26 @@ func (j *jsiiProxy_EmrCluster) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_EmrCluster) UnhealthyNodeReplacement() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"unhealthyNodeReplacement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrCluster) UnhealthyNodeReplacementInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"unhealthyNodeReplacementInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EmrCluster) VisibleToAllUsers() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1084,7 +1108,7 @@ func (j *jsiiProxy_EmrCluster) VisibleToAllUsersInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/emr_cluster aws_emr_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/emr_cluster aws_emr_cluster} Resource.
 func NewEmrCluster(scope constructs.Construct, id *string, config *EmrClusterConfig) EmrCluster {
 	_init_.Initialize()
 
@@ -1102,7 +1126,7 @@ func NewEmrCluster(scope constructs.Construct, id *string, config *EmrClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/emr_cluster aws_emr_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/emr_cluster aws_emr_cluster} Resource.
 func NewEmrCluster_Override(e EmrCluster, scope constructs.Construct, id *string, config *EmrClusterConfig) {
 	_init_.Initialize()
 
@@ -1408,6 +1432,17 @@ func (j *jsiiProxy_EmrCluster)SetTerminationProtection(val interface{}) {
 	_jsii_.Set(
 		j,
 		"terminationProtection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EmrCluster)SetUnhealthyNodeReplacement(val interface{}) {
+	if err := j.validateSetUnhealthyNodeReplacementParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"unhealthyNodeReplacement",
 		val,
 	)
 }
@@ -2114,6 +2149,14 @@ func (e *jsiiProxy_EmrCluster) ResetTerminationProtection() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetTerminationProtection",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrCluster) ResetUnhealthyNodeReplacement() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetUnhealthyNodeReplacement",
 		nil, // no parameters
 	)
 }

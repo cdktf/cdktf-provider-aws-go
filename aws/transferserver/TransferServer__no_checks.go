@@ -83,6 +83,10 @@ func (t *jsiiProxy_TransferServer) validatePutProtocolDetailsParameters(value *T
 	return nil
 }
 
+func (t *jsiiProxy_TransferServer) validatePutS3StorageOptionsParameters(value *TransferServerS3StorageOptions) error {
+	return nil
+}
+
 func (t *jsiiProxy_TransferServer) validatePutWorkflowDetailsParameters(value *TransferServerWorkflowDetails) error {
 	return nil
 }

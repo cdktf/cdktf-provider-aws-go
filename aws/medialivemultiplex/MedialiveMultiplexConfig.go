@@ -22,28 +22,28 @@ type MedialiveMultiplexConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/medialive_multiplex#availability_zones MedialiveMultiplex#availability_zones}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/medialive_multiplex#availability_zones MedialiveMultiplex#availability_zones}.
 	AvailabilityZones *[]*string `field:"required" json:"availabilityZones" yaml:"availabilityZones"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/medialive_multiplex#name MedialiveMultiplex#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/medialive_multiplex#name MedialiveMultiplex#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/medialive_multiplex#id MedialiveMultiplex#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/medialive_multiplex#id MedialiveMultiplex#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// multiplex_settings block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/medialive_multiplex#multiplex_settings MedialiveMultiplex#multiplex_settings}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/medialive_multiplex#multiplex_settings MedialiveMultiplex#multiplex_settings}
 	MultiplexSettings *MedialiveMultiplexMultiplexSettings `field:"optional" json:"multiplexSettings" yaml:"multiplexSettings"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/medialive_multiplex#start_multiplex MedialiveMultiplex#start_multiplex}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/medialive_multiplex#start_multiplex MedialiveMultiplex#start_multiplex}.
 	StartMultiplex interface{} `field:"optional" json:"startMultiplex" yaml:"startMultiplex"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/medialive_multiplex#tags MedialiveMultiplex#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/medialive_multiplex#tags MedialiveMultiplex#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/medialive_multiplex#tags_all MedialiveMultiplex#tags_all}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/medialive_multiplex#tags_all MedialiveMultiplex#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/medialive_multiplex#timeouts MedialiveMultiplex#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/medialive_multiplex#timeouts MedialiveMultiplex#timeouts}
 	Timeouts *MedialiveMultiplexTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

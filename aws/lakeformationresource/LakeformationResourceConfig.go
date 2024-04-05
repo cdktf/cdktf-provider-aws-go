@@ -22,20 +22,20 @@ type LakeformationResourceConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lakeformation_resource#arn LakeformationResource#arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lakeformation_resource#arn LakeformationResource#arn}.
 	Arn *string `field:"required" json:"arn" yaml:"arn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lakeformation_resource#hybrid_access_enabled LakeformationResource#hybrid_access_enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lakeformation_resource#hybrid_access_enabled LakeformationResource#hybrid_access_enabled}.
 	HybridAccessEnabled interface{} `field:"optional" json:"hybridAccessEnabled" yaml:"hybridAccessEnabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lakeformation_resource#id LakeformationResource#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lakeformation_resource#id LakeformationResource#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lakeformation_resource#role_arn LakeformationResource#role_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lakeformation_resource#role_arn LakeformationResource#role_arn}.
 	RoleArn *string `field:"optional" json:"roleArn" yaml:"roleArn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lakeformation_resource#use_service_linked_role LakeformationResource#use_service_linked_role}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lakeformation_resource#use_service_linked_role LakeformationResource#use_service_linked_role}.
 	UseServiceLinkedRole interface{} `field:"optional" json:"useServiceLinkedRole" yaml:"useServiceLinkedRole"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/lakeformation_resource#with_federation LakeformationResource#with_federation}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/lakeformation_resource#with_federation LakeformationResource#with_federation}.
 	WithFederation interface{} `field:"optional" json:"withFederation" yaml:"withFederation"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/alb_listener aws_alb_listener}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/alb_listener aws_alb_listener}.
 type AlbListener interface {
 	cdktf.TerraformResource
 	AlpnPolicy() *string
@@ -583,7 +583,7 @@ func (j *jsiiProxy_AlbListener) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/alb_listener aws_alb_listener} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/alb_listener aws_alb_listener} Resource.
 func NewAlbListener(scope constructs.Construct, id *string, config *AlbListenerConfig) AlbListener {
 	_init_.Initialize()
 
@@ -601,7 +601,7 @@ func NewAlbListener(scope constructs.Construct, id *string, config *AlbListenerC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/alb_listener aws_alb_listener} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/alb_listener aws_alb_listener} Resource.
 func NewAlbListener_Override(a AlbListener, scope constructs.Construct, id *string, config *AlbListenerConfig) {
 	_init_.Initialize()
 

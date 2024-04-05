@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/data-sources/memorydb_subnet_group aws_memorydb_subnet_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/memorydb_subnet_group aws_memorydb_subnet_group}.
 type DataAwsMemorydbSubnetGroup interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -356,7 +356,7 @@ func (j *jsiiProxy_DataAwsMemorydbSubnetGroup) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/data-sources/memorydb_subnet_group aws_memorydb_subnet_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/memorydb_subnet_group aws_memorydb_subnet_group} Data Source.
 func NewDataAwsMemorydbSubnetGroup(scope constructs.Construct, id *string, config *DataAwsMemorydbSubnetGroupConfig) DataAwsMemorydbSubnetGroup {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewDataAwsMemorydbSubnetGroup(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/data-sources/memorydb_subnet_group aws_memorydb_subnet_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/memorydb_subnet_group aws_memorydb_subnet_group} Data Source.
 func NewDataAwsMemorydbSubnetGroup_Override(d DataAwsMemorydbSubnetGroup, scope constructs.Construct, id *string, config *DataAwsMemorydbSubnetGroupConfig) {
 	_init_.Initialize()
 

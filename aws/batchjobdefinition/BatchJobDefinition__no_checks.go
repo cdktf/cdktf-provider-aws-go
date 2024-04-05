@@ -115,6 +115,10 @@ func (j *jsiiProxy_BatchJobDefinition) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_BatchJobDefinition) validateSetDeregisterOnNewRevisionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchJobDefinition) validateSetIdParameters(val *string) error {
 	return nil
 }

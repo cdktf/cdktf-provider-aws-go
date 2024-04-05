@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/transfer_server aws_transfer_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/transfer_server aws_transfer_server}.
 type TransferServer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -104,6 +104,8 @@ type TransferServer interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	S3StorageOptions() TransferServerS3StorageOptionsOutputReference
+	S3StorageOptionsInput() *TransferServerS3StorageOptions
 	SecurityPolicyName() *string
 	SetSecurityPolicyName(val *string)
 	SecurityPolicyNameInput() *string
@@ -172,6 +174,7 @@ type TransferServer interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutEndpointDetails(value *TransferServerEndpointDetails)
 	PutProtocolDetails(value *TransferServerProtocolDetails)
+	PutS3StorageOptions(value *TransferServerS3StorageOptions)
 	PutWorkflowDetails(value *TransferServerWorkflowDetails)
 	ResetCertificate()
 	ResetDirectoryId()
@@ -192,6 +195,7 @@ type TransferServer interface {
 	ResetPreAuthenticationLoginBanner()
 	ResetProtocolDetails()
 	ResetProtocols()
+	ResetS3StorageOptions()
 	ResetSecurityPolicyName()
 	ResetStructuredLogDestinations()
 	ResetTags()
@@ -696,6 +700,26 @@ func (j *jsiiProxy_TransferServer) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_TransferServer) S3StorageOptions() TransferServerS3StorageOptionsOutputReference {
+	var returns TransferServerS3StorageOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"s3StorageOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransferServer) S3StorageOptionsInput() *TransferServerS3StorageOptions {
+	var returns *TransferServerS3StorageOptions
+	_jsii_.Get(
+		j,
+		"s3StorageOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TransferServer) SecurityPolicyName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -847,7 +871,7 @@ func (j *jsiiProxy_TransferServer) WorkflowDetailsInput() *TransferServerWorkflo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/transfer_server aws_transfer_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/transfer_server aws_transfer_server} Resource.
 func NewTransferServer(scope constructs.Construct, id *string, config *TransferServerConfig) TransferServer {
 	_init_.Initialize()
 
@@ -865,7 +889,7 @@ func NewTransferServer(scope constructs.Construct, id *string, config *TransferS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/transfer_server aws_transfer_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/transfer_server aws_transfer_server} Resource.
 func NewTransferServer_Override(t TransferServer, scope constructs.Construct, id *string, config *TransferServerConfig) {
 	_init_.Initialize()
 
@@ -1528,6 +1552,17 @@ func (t *jsiiProxy_TransferServer) PutProtocolDetails(value *TransferServerProto
 	)
 }
 
+func (t *jsiiProxy_TransferServer) PutS3StorageOptions(value *TransferServerS3StorageOptions) {
+	if err := t.validatePutS3StorageOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"putS3StorageOptions",
+		[]interface{}{value},
+	)
+}
+
 func (t *jsiiProxy_TransferServer) PutWorkflowDetails(value *TransferServerWorkflowDetails) {
 	if err := t.validatePutWorkflowDetailsParameters(value); err != nil {
 		panic(err)
@@ -1671,6 +1706,14 @@ func (t *jsiiProxy_TransferServer) ResetProtocols() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetProtocols",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransferServer) ResetS3StorageOptions() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetS3StorageOptions",
 		nil, // no parameters
 	)
 }

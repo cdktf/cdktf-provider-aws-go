@@ -16,6 +16,9 @@ type GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtR
 	CatalogEncryptionMode() *string
 	SetCatalogEncryptionMode(val *string)
 	CatalogEncryptionModeInput() *string
+	CatalogEncryptionServiceRole() *string
+	SetCatalogEncryptionServiceRole(val *string)
+	CatalogEncryptionServiceRoleInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +73,7 @@ type GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtR
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCatalogEncryptionServiceRole()
 	ResetSseAwsKmsKeyId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -101,6 +105,26 @@ func (j *jsiiProxy_GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSetting
 	_jsii_.Get(
 		j,
 		"catalogEncryptionModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference) CatalogEncryptionServiceRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"catalogEncryptionServiceRole",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference) CatalogEncryptionServiceRoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"catalogEncryptionServiceRoleInput",
 		&returns,
 	)
 	return returns
@@ -231,6 +255,17 @@ func (j *jsiiProxy_GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSetting
 	_jsii_.Set(
 		j,
 		"catalogEncryptionMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference)SetCatalogEncryptionServiceRole(val *string) {
+	if err := j.validateSetCatalogEncryptionServiceRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"catalogEncryptionServiceRole",
 		val,
 	)
 }
@@ -485,6 +520,14 @@ func (g *jsiiProxy_GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSetting
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference) ResetCatalogEncryptionServiceRole() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCatalogEncryptionServiceRole",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference) ResetSseAwsKmsKeyId() {

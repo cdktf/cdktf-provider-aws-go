@@ -63,6 +63,10 @@ func (j *jsiiProxy_AppstreamFleetComputeCapacityOutputReference) validateSetDesi
 	return nil
 }
 
+func (j *jsiiProxy_AppstreamFleetComputeCapacityOutputReference) validateSetDesiredSessionsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppstreamFleetComputeCapacityOutputReference) validateSetInternalValueParameters(val *AppstreamFleetComputeCapacity) error {
 	return nil
 }

@@ -55,6 +55,10 @@ func (j *jsiiProxy_GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSetting
 	return nil
 }
 
+func (j *jsiiProxy_GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference) validateSetCatalogEncryptionServiceRoleParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRestOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

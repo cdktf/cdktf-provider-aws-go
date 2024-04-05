@@ -231,6 +231,10 @@ func (j *jsiiProxy_EmrCluster) validateSetTerminationProtectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_EmrCluster) validateSetUnhealthyNodeReplacementParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EmrCluster) validateSetVisibleToAllUsersParameters(val interface{}) error {
 	return nil
 }

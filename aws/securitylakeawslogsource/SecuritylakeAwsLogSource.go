@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/securitylake_aws_log_source aws_securitylake_aws_log_source}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/securitylake_aws_log_source aws_securitylake_aws_log_source}.
 type SecuritylakeAwsLogSource interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -321,7 +321,7 @@ func (j *jsiiProxy_SecuritylakeAwsLogSource) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/securitylake_aws_log_source aws_securitylake_aws_log_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/securitylake_aws_log_source aws_securitylake_aws_log_source} Resource.
 func NewSecuritylakeAwsLogSource(scope constructs.Construct, id *string, config *SecuritylakeAwsLogSourceConfig) SecuritylakeAwsLogSource {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewSecuritylakeAwsLogSource(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.43.0/docs/resources/securitylake_aws_log_source aws_securitylake_aws_log_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/securitylake_aws_log_source aws_securitylake_aws_log_source} Resource.
 func NewSecuritylakeAwsLogSource_Override(s SecuritylakeAwsLogSource, scope constructs.Construct, id *string, config *SecuritylakeAwsLogSourceConfig) {
 	_init_.Initialize()
 
