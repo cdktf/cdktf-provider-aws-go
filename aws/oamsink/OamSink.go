@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/oam_sink aws_oam_sink}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/oam_sink aws_oam_sink}.
 type OamSink interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_OamSink) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/oam_sink aws_oam_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/oam_sink aws_oam_sink} Resource.
 func NewOamSink(scope constructs.Construct, id *string, config *OamSinkConfig) OamSink {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewOamSink(scope constructs.Construct, id *string, config *OamSinkConfig) O
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/oam_sink aws_oam_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/oam_sink aws_oam_sink} Resource.
 func NewOamSink_Override(o OamSink, scope constructs.Construct, id *string, config *OamSinkConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/imagebuilder_components aws_imagebuilder_components}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/imagebuilder_components aws_imagebuilder_components}.
 type DataAwsImagebuilderComponents interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -335,7 +335,7 @@ func (j *jsiiProxy_DataAwsImagebuilderComponents) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/imagebuilder_components aws_imagebuilder_components} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/imagebuilder_components aws_imagebuilder_components} Data Source.
 func NewDataAwsImagebuilderComponents(scope constructs.Construct, id *string, config *DataAwsImagebuilderComponentsConfig) DataAwsImagebuilderComponents {
 	_init_.Initialize()
 
@@ -353,7 +353,7 @@ func NewDataAwsImagebuilderComponents(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/imagebuilder_components aws_imagebuilder_components} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/imagebuilder_components aws_imagebuilder_components} Data Source.
 func NewDataAwsImagebuilderComponents_Override(d DataAwsImagebuilderComponents, scope constructs.Construct, id *string, config *DataAwsImagebuilderComponentsConfig) {
 	_init_.Initialize()
 

@@ -73,6 +73,7 @@ type SecurityhubConfigurationPolicyConfigurationPolicyOutputReference interface 
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutSecurityControlsConfiguration(value *SecurityhubConfigurationPolicyConfigurationPolicySecurityControlsConfiguration)
+	ResetEnabledStandardArns()
 	ResetSecurityControlsConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -518,6 +519,14 @@ func (s *jsiiProxy_SecurityhubConfigurationPolicyConfigurationPolicyOutputRefere
 		s,
 		"putSecurityControlsConfiguration",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SecurityhubConfigurationPolicyConfigurationPolicyOutputReference) ResetEnabledStandardArns() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEnabledStandardArns",
+		nil, // no parameters
 	)
 }
 

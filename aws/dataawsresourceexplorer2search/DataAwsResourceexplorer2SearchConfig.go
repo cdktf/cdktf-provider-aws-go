@@ -22,17 +22,17 @@ type DataAwsResourceexplorer2SearchConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/resourceexplorer2_search#query_string DataAwsResourceexplorer2Search#query_string}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/resourceexplorer2_search#query_string DataAwsResourceexplorer2Search#query_string}.
 	QueryString *string `field:"required" json:"queryString" yaml:"queryString"`
 	// resource_count block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/resourceexplorer2_search#resource_count DataAwsResourceexplorer2Search#resource_count}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/resourceexplorer2_search#resource_count DataAwsResourceexplorer2Search#resource_count}
 	ResourceCount interface{} `field:"optional" json:"resourceCount" yaml:"resourceCount"`
 	// resources block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/resourceexplorer2_search#resources DataAwsResourceexplorer2Search#resources}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/resourceexplorer2_search#resources DataAwsResourceexplorer2Search#resources}
 	Resources interface{} `field:"optional" json:"resources" yaml:"resources"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/resourceexplorer2_search#view_arn DataAwsResourceexplorer2Search#view_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/resourceexplorer2_search#view_arn DataAwsResourceexplorer2Search#view_arn}.
 	ViewArn *string `field:"optional" json:"viewArn" yaml:"viewArn"`
 }
 

@@ -75,6 +75,10 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (w *jsiiProxy_WafregionalWebAclAssociation) validatePutTimeoutsParameters(value *WafregionalWebAclAssociationTimeouts) error {
+	return nil
+}
+
 func validateWafregionalWebAclAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

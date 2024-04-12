@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/wafregional_web_acl_association aws_wafregional_web_acl_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/wafregional_web_acl_association aws_wafregional_web_acl_association}.
 type WafregionalWebAclAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -67,6 +67,8 @@ type WafregionalWebAclAssociation interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() WafregionalWebAclAssociationTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	WebAclId() *string
 	SetWebAclId(val *string)
 	WebAclIdInput() *string
@@ -113,10 +115,12 @@ type WafregionalWebAclAssociation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *WafregionalWebAclAssociationTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -335,6 +339,26 @@ func (j *jsiiProxy_WafregionalWebAclAssociation) TerraformResourceType() *string
 	return returns
 }
 
+func (j *jsiiProxy_WafregionalWebAclAssociation) Timeouts() WafregionalWebAclAssociationTimeoutsOutputReference {
+	var returns WafregionalWebAclAssociationTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_WafregionalWebAclAssociation) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_WafregionalWebAclAssociation) WebAclId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -356,7 +380,7 @@ func (j *jsiiProxy_WafregionalWebAclAssociation) WebAclIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/wafregional_web_acl_association aws_wafregional_web_acl_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/wafregional_web_acl_association aws_wafregional_web_acl_association} Resource.
 func NewWafregionalWebAclAssociation(scope constructs.Construct, id *string, config *WafregionalWebAclAssociationConfig) WafregionalWebAclAssociation {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewWafregionalWebAclAssociation(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/wafregional_web_acl_association aws_wafregional_web_acl_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/wafregional_web_acl_association aws_wafregional_web_acl_association} Resource.
 func NewWafregionalWebAclAssociation_Override(w WafregionalWebAclAssociation, scope constructs.Construct, id *string, config *WafregionalWebAclAssociationConfig) {
 	_init_.Initialize()
 
@@ -839,6 +863,17 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) OverrideLogicalId(newLogicalId 
 	)
 }
 
+func (w *jsiiProxy_WafregionalWebAclAssociation) PutTimeouts(value *WafregionalWebAclAssociationTimeouts) {
+	if err := w.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		w,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (w *jsiiProxy_WafregionalWebAclAssociation) ResetId() {
 	_jsii_.InvokeVoid(
 		w,
@@ -851,6 +886,14 @@ func (w *jsiiProxy_WafregionalWebAclAssociation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_WafregionalWebAclAssociation) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

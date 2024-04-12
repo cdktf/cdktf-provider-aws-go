@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/wafregional_rule_group aws_wafregional_rule_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/wafregional_rule_group aws_wafregional_rule_group}.
 type WafregionalRuleGroup interface {
 	cdktf.TerraformResource
 	ActivatedRule() WafregionalRuleGroupActivatedRuleList
@@ -439,7 +439,7 @@ func (j *jsiiProxy_WafregionalRuleGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/wafregional_rule_group aws_wafregional_rule_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/wafregional_rule_group aws_wafregional_rule_group} Resource.
 func NewWafregionalRuleGroup(scope constructs.Construct, id *string, config *WafregionalRuleGroupConfig) WafregionalRuleGroup {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewWafregionalRuleGroup(scope constructs.Construct, id *string, config *Waf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/wafregional_rule_group aws_wafregional_rule_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/wafregional_rule_group aws_wafregional_rule_group} Resource.
 func NewWafregionalRuleGroup_Override(w WafregionalRuleGroup, scope constructs.Construct, id *string, config *WafregionalRuleGroupConfig) {
 	_init_.Initialize()
 

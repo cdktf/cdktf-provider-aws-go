@@ -106,6 +106,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putSecurityControlsConfiguration", GoMethod: "PutSecurityControlsConfiguration"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnabledStandardArns", GoMethod: "ResetEnabledStandardArns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecurityControlsConfiguration", GoMethod: "ResetSecurityControlsConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "securityControlsConfiguration", GoGetter: "SecurityControlsConfiguration"},

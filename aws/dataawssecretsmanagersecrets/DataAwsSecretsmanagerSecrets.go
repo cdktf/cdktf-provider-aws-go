@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/secretsmanager_secrets aws_secretsmanager_secrets}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/secretsmanager_secrets aws_secretsmanager_secrets}.
 type DataAwsSecretsmanagerSecrets interface {
 	cdktf.TerraformDataSource
 	Arns() *[]*string
@@ -311,7 +311,7 @@ func (j *jsiiProxy_DataAwsSecretsmanagerSecrets) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/secretsmanager_secrets aws_secretsmanager_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/secretsmanager_secrets aws_secretsmanager_secrets} Data Source.
 func NewDataAwsSecretsmanagerSecrets(scope constructs.Construct, id *string, config *DataAwsSecretsmanagerSecretsConfig) DataAwsSecretsmanagerSecrets {
 	_init_.Initialize()
 
@@ -329,7 +329,7 @@ func NewDataAwsSecretsmanagerSecrets(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/data-sources/secretsmanager_secrets aws_secretsmanager_secrets} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/secretsmanager_secrets aws_secretsmanager_secrets} Data Source.
 func NewDataAwsSecretsmanagerSecrets_Override(d DataAwsSecretsmanagerSecrets, scope constructs.Construct, id *string, config *DataAwsSecretsmanagerSecretsConfig) {
 	_init_.Initialize()
 

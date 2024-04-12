@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/eip aws_eip}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/eip aws_eip}.
 type Eip interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -686,7 +686,7 @@ func (j *jsiiProxy_Eip) VpcInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/eip aws_eip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/eip aws_eip} Resource.
 func NewEip(scope constructs.Construct, id *string, config *EipConfig) Eip {
 	_init_.Initialize()
 
@@ -704,7 +704,7 @@ func NewEip(scope constructs.Construct, id *string, config *EipConfig) Eip {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.44.0/docs/resources/eip aws_eip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/eip aws_eip} Resource.
 func NewEip_Override(e Eip, scope constructs.Construct, id *string, config *EipConfig) {
 	_init_.Initialize()
 
