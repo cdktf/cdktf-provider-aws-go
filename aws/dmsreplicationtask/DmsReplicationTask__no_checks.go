@@ -135,6 +135,10 @@ func (j *jsiiProxy_DmsReplicationTask) validateSetReplicationTaskSettingsParamet
 	return nil
 }
 
+func (j *jsiiProxy_DmsReplicationTask) validateSetResourceIdentifierParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DmsReplicationTask) validateSetSourceEndpointArnParameters(val *string) error {
 	return nil
 }

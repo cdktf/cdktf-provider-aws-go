@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/mwaa_environment aws_mwaa_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/mwaa_environment aws_mwaa_environment}.
 type MwaaEnvironment interface {
 	cdktf.TerraformResource
 	AirflowConfigurationOptions() *map[string]*string
@@ -38,6 +38,7 @@ type MwaaEnvironment interface {
 	DagS3Path() *string
 	SetDagS3Path(val *string)
 	DagS3PathInput() *string
+	DatabaseVpcEndpointService() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -139,6 +140,7 @@ type MwaaEnvironment interface {
 	SetWebserverAccessMode(val *string)
 	WebserverAccessModeInput() *string
 	WebserverUrl() *string
+	WebserverVpcEndpointService() *string
 	WeeklyMaintenanceWindowStart() *string
 	SetWeeklyMaintenanceWindowStart(val *string)
 	WeeklyMaintenanceWindowStartInput() *string
@@ -345,6 +347,16 @@ func (j *jsiiProxy_MwaaEnvironment) DagS3PathInput() *string {
 	_jsii_.Get(
 		j,
 		"dagS3PathInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwaaEnvironment) DatabaseVpcEndpointService() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseVpcEndpointService",
 		&returns,
 	)
 	return returns
@@ -950,6 +962,16 @@ func (j *jsiiProxy_MwaaEnvironment) WebserverUrl() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MwaaEnvironment) WebserverVpcEndpointService() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"webserverVpcEndpointService",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MwaaEnvironment) WeeklyMaintenanceWindowStart() *string {
 	var returns *string
 	_jsii_.Get(
@@ -971,7 +993,7 @@ func (j *jsiiProxy_MwaaEnvironment) WeeklyMaintenanceWindowStartInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/mwaa_environment aws_mwaa_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/mwaa_environment aws_mwaa_environment} Resource.
 func NewMwaaEnvironment(scope constructs.Construct, id *string, config *MwaaEnvironmentConfig) MwaaEnvironment {
 	_init_.Initialize()
 
@@ -989,7 +1011,7 @@ func NewMwaaEnvironment(scope constructs.Construct, id *string, config *MwaaEnvi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/mwaa_environment aws_mwaa_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/mwaa_environment aws_mwaa_environment} Resource.
 func NewMwaaEnvironment_Override(m MwaaEnvironment, scope constructs.Construct, id *string, config *MwaaEnvironmentConfig) {
 	_init_.Initialize()
 

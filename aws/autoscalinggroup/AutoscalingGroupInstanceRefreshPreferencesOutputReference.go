@@ -13,6 +13,8 @@ import (
 
 type AutoscalingGroupInstanceRefreshPreferencesOutputReference interface {
 	cdktf.ComplexObject
+	AlarmSpecification() AutoscalingGroupInstanceRefreshPreferencesAlarmSpecificationOutputReference
+	AlarmSpecificationInput() *AutoscalingGroupInstanceRefreshPreferencesAlarmSpecification
 	AutoRollback() interface{}
 	SetAutoRollback(val interface{})
 	AutoRollbackInput() interface{}
@@ -91,6 +93,8 @@ type AutoscalingGroupInstanceRefreshPreferencesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAlarmSpecification(value *AutoscalingGroupInstanceRefreshPreferencesAlarmSpecification)
+	ResetAlarmSpecification()
 	ResetAutoRollback()
 	ResetCheckpointDelay()
 	ResetCheckpointPercentages()
@@ -113,6 +117,26 @@ type AutoscalingGroupInstanceRefreshPreferencesOutputReference interface {
 // The jsii proxy struct for AutoscalingGroupInstanceRefreshPreferencesOutputReference
 type jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) AlarmSpecification() AutoscalingGroupInstanceRefreshPreferencesAlarmSpecificationOutputReference {
+	var returns AutoscalingGroupInstanceRefreshPreferencesAlarmSpecificationOutputReference
+	_jsii_.Get(
+		j,
+		"alarmSpecification",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) AlarmSpecificationInput() *AutoscalingGroupInstanceRefreshPreferencesAlarmSpecification {
+	var returns *AutoscalingGroupInstanceRefreshPreferencesAlarmSpecification
+	_jsii_.Get(
+		j,
+		"alarmSpecificationInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) AutoRollback() interface{} {
@@ -731,6 +755,25 @@ func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) In
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) PutAlarmSpecification(value *AutoscalingGroupInstanceRefreshPreferencesAlarmSpecification) {
+	if err := a.validatePutAlarmSpecificationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putAlarmSpecification",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) ResetAlarmSpecification() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetAlarmSpecification",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) ResetAutoRollback() {

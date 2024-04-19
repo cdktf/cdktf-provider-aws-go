@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/dms_replication_task aws_dms_replication_task}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/dms_replication_task aws_dms_replication_task}.
 type DmsReplicationTask interface {
 	cdktf.TerraformResource
 	CdcStartPosition() *string
@@ -77,6 +77,9 @@ type DmsReplicationTask interface {
 	ReplicationTaskSettings() *string
 	SetReplicationTaskSettings(val *string)
 	ReplicationTaskSettingsInput() *string
+	ResourceIdentifier() *string
+	SetResourceIdentifier(val *string)
+	ResourceIdentifierInput() *string
 	SourceEndpointArn() *string
 	SetSourceEndpointArn(val *string)
 	SourceEndpointArnInput() *string
@@ -152,6 +155,7 @@ type DmsReplicationTask interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetReplicationTaskSettings()
+	ResetResourceIdentifier()
 	ResetStartReplicationTask()
 	ResetTags()
 	ResetTagsAll()
@@ -453,6 +457,26 @@ func (j *jsiiProxy_DmsReplicationTask) ReplicationTaskSettingsInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DmsReplicationTask) ResourceIdentifier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceIdentifier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DmsReplicationTask) ResourceIdentifierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceIdentifierInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DmsReplicationTask) SourceEndpointArn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -614,7 +638,7 @@ func (j *jsiiProxy_DmsReplicationTask) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/dms_replication_task aws_dms_replication_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/dms_replication_task aws_dms_replication_task} Resource.
 func NewDmsReplicationTask(scope constructs.Construct, id *string, config *DmsReplicationTaskConfig) DmsReplicationTask {
 	_init_.Initialize()
 
@@ -632,7 +656,7 @@ func NewDmsReplicationTask(scope constructs.Construct, id *string, config *DmsRe
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/dms_replication_task aws_dms_replication_task} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/dms_replication_task aws_dms_replication_task} Resource.
 func NewDmsReplicationTask_Override(d DmsReplicationTask, scope constructs.Construct, id *string, config *DmsReplicationTaskConfig) {
 	_init_.Initialize()
 
@@ -784,6 +808,17 @@ func (j *jsiiProxy_DmsReplicationTask)SetReplicationTaskSettings(val *string) {
 	_jsii_.Set(
 		j,
 		"replicationTaskSettings",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DmsReplicationTask)SetResourceIdentifier(val *string) {
+	if err := j.validateSetResourceIdentifierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceIdentifier",
 		val,
 	)
 }
@@ -1243,6 +1278,14 @@ func (d *jsiiProxy_DmsReplicationTask) ResetReplicationTaskSettings() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetReplicationTaskSettings",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DmsReplicationTask) ResetResourceIdentifier() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetResourceIdentifier",
 		nil, // no parameters
 	)
 }

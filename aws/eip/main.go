@@ -66,6 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "privateIp", GoGetter: "PrivateIp"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberProperty{JsiiProperty: "ptrRecord", GoGetter: "PtrRecord"},
 			_jsii_.MemberProperty{JsiiProperty: "publicDns", GoGetter: "PublicDns"},
 			_jsii_.MemberProperty{JsiiProperty: "publicIp", GoGetter: "PublicIp"},
 			_jsii_.MemberProperty{JsiiProperty: "publicIpv4Pool", GoGetter: "PublicIpv4Pool"},

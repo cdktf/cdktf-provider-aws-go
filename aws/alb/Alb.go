@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/alb aws_alb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/alb aws_alb}.
 type Alb interface {
 	cdktf.TerraformResource
 	AccessLogs() AlbAccessLogsOutputReference
@@ -21,6 +21,9 @@ type Alb interface {
 	ArnSuffix() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClientKeepAlive() *float64
+	SetClientKeepAlive(val *float64)
+	ClientKeepAliveInput() *float64
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -194,6 +197,7 @@ type Alb interface {
 	PutSubnetMapping(value interface{})
 	PutTimeouts(value *AlbTimeouts)
 	ResetAccessLogs()
+	ResetClientKeepAlive()
 	ResetConnectionLogs()
 	ResetCustomerOwnedIpv4Pool()
 	ResetDesyncMitigationMode()
@@ -287,6 +291,26 @@ func (j *jsiiProxy_Alb) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Alb) ClientKeepAlive() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"clientKeepAlive",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Alb) ClientKeepAliveInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"clientKeepAliveInput",
 		&returns,
 	)
 	return returns
@@ -1013,7 +1037,7 @@ func (j *jsiiProxy_Alb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/alb aws_alb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/alb aws_alb} Resource.
 func NewAlb(scope constructs.Construct, id *string, config *AlbConfig) Alb {
 	_init_.Initialize()
 
@@ -1031,7 +1055,7 @@ func NewAlb(scope constructs.Construct, id *string, config *AlbConfig) Alb {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/alb aws_alb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/alb aws_alb} Resource.
 func NewAlb_Override(a Alb, scope constructs.Construct, id *string, config *AlbConfig) {
 	_init_.Initialize()
 
@@ -1039,6 +1063,17 @@ func NewAlb_Override(a Alb, scope constructs.Construct, id *string, config *AlbC
 		"@cdktf/provider-aws.alb.Alb",
 		[]interface{}{scope, id, config},
 		a,
+	)
+}
+
+func (j *jsiiProxy_Alb)SetClientKeepAlive(val *float64) {
+	if err := j.validateSetClientKeepAliveParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientKeepAlive",
+		val,
 	)
 }
 
@@ -1775,6 +1810,14 @@ func (a *jsiiProxy_Alb) ResetAccessLogs() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAccessLogs",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Alb) ResetClientKeepAlive() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetClientKeepAlive",
 		nil, // no parameters
 	)
 }

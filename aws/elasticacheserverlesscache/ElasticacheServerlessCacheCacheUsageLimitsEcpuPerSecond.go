@@ -5,7 +5,9 @@ package elasticacheserverlesscache
 
 
 type ElasticacheServerlessCacheCacheUsageLimitsEcpuPerSecond struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/elasticache_serverless_cache#maximum ElasticacheServerlessCache#maximum}.
-	Maximum *float64 `field:"required" json:"maximum" yaml:"maximum"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#maximum ElasticacheServerlessCache#maximum}.
+	Maximum *float64 `field:"optional" json:"maximum" yaml:"maximum"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_serverless_cache#minimum ElasticacheServerlessCache#minimum}.
+	Minimum *float64 `field:"optional" json:"minimum" yaml:"minimum"`
 }
 

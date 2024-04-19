@@ -50,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "privateDns", GoGetter: "PrivateDns"},
 			_jsii_.MemberProperty{JsiiProperty: "privateIp", GoGetter: "PrivateIp"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
+			_jsii_.MemberProperty{JsiiProperty: "ptrRecord", GoGetter: "PtrRecord"},
 			_jsii_.MemberProperty{JsiiProperty: "publicDns", GoGetter: "PublicDns"},
 			_jsii_.MemberProperty{JsiiProperty: "publicIp", GoGetter: "PublicIp"},
 			_jsii_.MemberProperty{JsiiProperty: "publicIpInput", GoGetter: "PublicIpInput"},

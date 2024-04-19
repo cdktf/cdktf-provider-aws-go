@@ -41,6 +41,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "id", GoGetter: "Id"},
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "ipv6AddressPreferredLeaseTime", GoGetter: "Ipv6AddressPreferredLeaseTime"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "netbiosNameServers", GoGetter: "NetbiosNameServers"},
 			_jsii_.MemberProperty{JsiiProperty: "netbiosNodeType", GoGetter: "NetbiosNodeType"},

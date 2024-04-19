@@ -107,6 +107,10 @@ func validateLb_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Lb) validateSetClientKeepAliveParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_Lb) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

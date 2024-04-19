@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/lb aws_lb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/lb aws_lb}.
 type Lb interface {
 	cdktf.TerraformResource
 	AccessLogs() LbAccessLogsOutputReference
@@ -21,6 +21,9 @@ type Lb interface {
 	ArnSuffix() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClientKeepAlive() *float64
+	SetClientKeepAlive(val *float64)
+	ClientKeepAliveInput() *float64
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -194,6 +197,7 @@ type Lb interface {
 	PutSubnetMapping(value interface{})
 	PutTimeouts(value *LbTimeouts)
 	ResetAccessLogs()
+	ResetClientKeepAlive()
 	ResetConnectionLogs()
 	ResetCustomerOwnedIpv4Pool()
 	ResetDesyncMitigationMode()
@@ -287,6 +291,26 @@ func (j *jsiiProxy_Lb) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lb) ClientKeepAlive() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"clientKeepAlive",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lb) ClientKeepAliveInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"clientKeepAliveInput",
 		&returns,
 	)
 	return returns
@@ -1013,7 +1037,7 @@ func (j *jsiiProxy_Lb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/lb aws_lb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/lb aws_lb} Resource.
 func NewLb(scope constructs.Construct, id *string, config *LbConfig) Lb {
 	_init_.Initialize()
 
@@ -1031,7 +1055,7 @@ func NewLb(scope constructs.Construct, id *string, config *LbConfig) Lb {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/lb aws_lb} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/lb aws_lb} Resource.
 func NewLb_Override(l Lb, scope constructs.Construct, id *string, config *LbConfig) {
 	_init_.Initialize()
 
@@ -1039,6 +1063,17 @@ func NewLb_Override(l Lb, scope constructs.Construct, id *string, config *LbConf
 		"@cdktf/provider-aws.lb.Lb",
 		[]interface{}{scope, id, config},
 		l,
+	)
+}
+
+func (j *jsiiProxy_Lb)SetClientKeepAlive(val *float64) {
+	if err := j.validateSetClientKeepAliveParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientKeepAlive",
+		val,
 	)
 }
 
@@ -1775,6 +1810,14 @@ func (l *jsiiProxy_Lb) ResetAccessLogs() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetAccessLogs",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Lb) ResetClientKeepAlive() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetClientKeepAlive",
 		nil, // no parameters
 	)
 }

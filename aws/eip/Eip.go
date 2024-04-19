@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/eip aws_eip}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/eip aws_eip}.
 type Eip interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -83,6 +83,7 @@ type Eip interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PtrRecord() *string
 	PublicDns() *string
 	PublicIp() *string
 	PublicIpv4Pool() *string
@@ -525,6 +526,16 @@ func (j *jsiiProxy_Eip) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Eip) PtrRecord() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ptrRecord",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Eip) PublicDns() *string {
 	var returns *string
 	_jsii_.Get(
@@ -686,7 +697,7 @@ func (j *jsiiProxy_Eip) VpcInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/eip aws_eip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/eip aws_eip} Resource.
 func NewEip(scope constructs.Construct, id *string, config *EipConfig) Eip {
 	_init_.Initialize()
 
@@ -704,7 +715,7 @@ func NewEip(scope constructs.Construct, id *string, config *EipConfig) Eip {
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/eip aws_eip} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/eip aws_eip} Resource.
 func NewEip_Override(e Eip, scope constructs.Construct, id *string, config *EipConfig) {
 	_init_.Initialize()
 

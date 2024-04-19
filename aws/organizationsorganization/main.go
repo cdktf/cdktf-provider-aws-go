@@ -50,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "masterAccountArn", GoGetter: "MasterAccountArn"},
 			_jsii_.MemberProperty{JsiiProperty: "masterAccountEmail", GoGetter: "MasterAccountEmail"},
 			_jsii_.MemberProperty{JsiiProperty: "masterAccountId", GoGetter: "MasterAccountId"},
+			_jsii_.MemberProperty{JsiiProperty: "masterAccountName", GoGetter: "MasterAccountName"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},

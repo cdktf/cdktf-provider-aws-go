@@ -107,6 +107,10 @@ func validateAlb_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_Alb) validateSetClientKeepAliveParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_Alb) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

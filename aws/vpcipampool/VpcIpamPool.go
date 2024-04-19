@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/vpc_ipam_pool aws_vpc_ipam_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/vpc_ipam_pool aws_vpc_ipam_pool}.
 type VpcIpamPool interface {
 	cdktf.TerraformResource
 	AddressFamily() *string
@@ -37,6 +37,9 @@ type VpcIpamPool interface {
 	AwsService() *string
 	SetAwsService(val *string)
 	AwsServiceInput() *string
+	Cascade() interface{}
+	SetCascade(val interface{})
+	CascadeInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -165,6 +168,7 @@ type VpcIpamPool interface {
 	ResetAllocationResourceTags()
 	ResetAutoImport()
 	ResetAwsService()
+	ResetCascade()
 	ResetDescription()
 	ResetId()
 	ResetLocale()
@@ -340,6 +344,26 @@ func (j *jsiiProxy_VpcIpamPool) AwsServiceInput() *string {
 	_jsii_.Get(
 		j,
 		"awsServiceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcIpamPool) Cascade() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cascade",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcIpamPool) CascadeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cascadeInput",
 		&returns,
 	)
 	return returns
@@ -736,7 +760,7 @@ func (j *jsiiProxy_VpcIpamPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/vpc_ipam_pool aws_vpc_ipam_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/vpc_ipam_pool aws_vpc_ipam_pool} Resource.
 func NewVpcIpamPool(scope constructs.Construct, id *string, config *VpcIpamPoolConfig) VpcIpamPool {
 	_init_.Initialize()
 
@@ -754,7 +778,7 @@ func NewVpcIpamPool(scope constructs.Construct, id *string, config *VpcIpamPoolC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/vpc_ipam_pool aws_vpc_ipam_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/vpc_ipam_pool aws_vpc_ipam_pool} Resource.
 func NewVpcIpamPool_Override(v VpcIpamPool, scope constructs.Construct, id *string, config *VpcIpamPoolConfig) {
 	_init_.Initialize()
 
@@ -838,6 +862,17 @@ func (j *jsiiProxy_VpcIpamPool)SetAwsService(val *string) {
 	_jsii_.Set(
 		j,
 		"awsService",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcIpamPool)SetCascade(val interface{}) {
+	if err := j.validateSetCascadeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cascade",
 		val,
 	)
 }
@@ -1417,6 +1452,14 @@ func (v *jsiiProxy_VpcIpamPool) ResetAwsService() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetAwsService",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcIpamPool) ResetCascade() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetCascade",
 		nil, // no parameters
 	)
 }

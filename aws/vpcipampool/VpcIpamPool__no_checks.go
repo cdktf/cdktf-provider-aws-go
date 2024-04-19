@@ -123,6 +123,10 @@ func (j *jsiiProxy_VpcIpamPool) validateSetAwsServiceParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_VpcIpamPool) validateSetCascadeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpamPool) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

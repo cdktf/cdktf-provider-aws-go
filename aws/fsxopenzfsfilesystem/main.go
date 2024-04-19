@@ -37,6 +37,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "diskIopsConfiguration", GoGetter: "DiskIopsConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "diskIopsConfigurationInput", GoGetter: "DiskIopsConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "dnsName", GoGetter: "DnsName"},
+			_jsii_.MemberProperty{JsiiProperty: "endpointIpAddress", GoGetter: "EndpointIpAddress"},
 			_jsii_.MemberProperty{JsiiProperty: "endpointIpAddressRange", GoGetter: "EndpointIpAddressRange"},
 			_jsii_.MemberProperty{JsiiProperty: "endpointIpAddressRangeInput", GoGetter: "EndpointIpAddressRangeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},

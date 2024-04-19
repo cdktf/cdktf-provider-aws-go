@@ -7,11 +7,11 @@ package m2environment
 type M2EnvironmentStorageConfiguration struct {
 	// efs block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/m2_environment#efs M2Environment#efs}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/m2_environment#efs M2Environment#efs}
 	Efs interface{} `field:"optional" json:"efs" yaml:"efs"`
 	// fsx block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/m2_environment#fsx M2Environment#fsx}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/m2_environment#fsx M2Environment#fsx}
 	Fsx interface{} `field:"optional" json:"fsx" yaml:"fsx"`
 }
 

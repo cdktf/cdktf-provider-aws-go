@@ -35,6 +35,9 @@ type ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReference interf
 	Maximum() *float64
 	SetMaximum(val *float64)
 	MaximumInput() *float64
+	Minimum() *float64
+	SetMinimum(val *float64)
+	MinimumInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +73,8 @@ type ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMaximum()
+	ResetMinimum()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -150,6 +155,26 @@ func (j *jsiiProxy_ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputRe
 	_jsii_.Get(
 		j,
 		"maximumInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReference) Minimum() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minimum",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReference) MinimumInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minimumInput",
 		&returns,
 	)
 	return returns
@@ -263,6 +288,17 @@ func (j *jsiiProxy_ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputRe
 	_jsii_.Set(
 		j,
 		"maximum",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReference)SetMinimum(val *float64) {
+	if err := j.validateSetMinimumParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minimum",
 		val,
 	)
 }
@@ -484,6 +520,22 @@ func (e *jsiiProxy_ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputRe
 	)
 
 	return returns
+}
+
+func (e *jsiiProxy_ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReference) ResetMaximum() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetMaximum",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReference) ResetMinimum() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetMinimum",
+		nil, // no parameters
+	)
 }
 
 func (e *jsiiProxy_ElasticacheServerlessCacheCacheUsageLimitsDataStorageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/imagebuilder_image aws_imagebuilder_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/imagebuilder_image aws_imagebuilder_image}.
 type ImagebuilderImage interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -42,6 +42,9 @@ type ImagebuilderImage interface {
 	EnhancedImageMetadataEnabled() interface{}
 	SetEnhancedImageMetadataEnabled(val interface{})
 	EnhancedImageMetadataEnabledInput() interface{}
+	ExecutionRole() *string
+	SetExecutionRole(val *string)
+	ExecutionRoleInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -98,6 +101,8 @@ type ImagebuilderImage interface {
 	Timeouts() ImagebuilderImageTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	Version() *string
+	Workflow() ImagebuilderImageWorkflowList
+	WorkflowInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -144,9 +149,11 @@ type ImagebuilderImage interface {
 	PutImageScanningConfiguration(value *ImagebuilderImageImageScanningConfiguration)
 	PutImageTestsConfiguration(value *ImagebuilderImageImageTestsConfiguration)
 	PutTimeouts(value *ImagebuilderImageTimeouts)
+	PutWorkflow(value interface{})
 	ResetContainerRecipeArn()
 	ResetDistributionConfigurationArn()
 	ResetEnhancedImageMetadataEnabled()
+	ResetExecutionRole()
 	ResetId()
 	ResetImageRecipeArn()
 	ResetImageScanningConfiguration()
@@ -157,6 +164,7 @@ type ImagebuilderImage interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
+	ResetWorkflow()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -300,6 +308,26 @@ func (j *jsiiProxy_ImagebuilderImage) EnhancedImageMetadataEnabledInput() interf
 	_jsii_.Get(
 		j,
 		"enhancedImageMetadataEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImagebuilderImage) ExecutionRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionRole",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ImagebuilderImage) ExecutionRoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionRoleInput",
 		&returns,
 	)
 	return returns
@@ -625,8 +653,28 @@ func (j *jsiiProxy_ImagebuilderImage) Version() *string {
 	return returns
 }
 
+func (j *jsiiProxy_ImagebuilderImage) Workflow() ImagebuilderImageWorkflowList {
+	var returns ImagebuilderImageWorkflowList
+	_jsii_.Get(
+		j,
+		"workflow",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/imagebuilder_image aws_imagebuilder_image} Resource.
+func (j *jsiiProxy_ImagebuilderImage) WorkflowInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"workflowInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/imagebuilder_image aws_imagebuilder_image} Resource.
 func NewImagebuilderImage(scope constructs.Construct, id *string, config *ImagebuilderImageConfig) ImagebuilderImage {
 	_init_.Initialize()
 
@@ -644,7 +692,7 @@ func NewImagebuilderImage(scope constructs.Construct, id *string, config *Imageb
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/imagebuilder_image aws_imagebuilder_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/imagebuilder_image aws_imagebuilder_image} Resource.
 func NewImagebuilderImage_Override(i ImagebuilderImage, scope constructs.Construct, id *string, config *ImagebuilderImageConfig) {
 	_init_.Initialize()
 
@@ -714,6 +762,17 @@ func (j *jsiiProxy_ImagebuilderImage)SetEnhancedImageMetadataEnabled(val interfa
 	_jsii_.Set(
 		j,
 		"enhancedImageMetadataEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ImagebuilderImage)SetExecutionRole(val *string) {
+	if err := j.validateSetExecutionRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"executionRole",
 		val,
 	)
 }
@@ -1197,6 +1256,17 @@ func (i *jsiiProxy_ImagebuilderImage) PutTimeouts(value *ImagebuilderImageTimeou
 	)
 }
 
+func (i *jsiiProxy_ImagebuilderImage) PutWorkflow(value interface{}) {
+	if err := i.validatePutWorkflowParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putWorkflow",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_ImagebuilderImage) ResetContainerRecipeArn() {
 	_jsii_.InvokeVoid(
 		i,
@@ -1217,6 +1287,14 @@ func (i *jsiiProxy_ImagebuilderImage) ResetEnhancedImageMetadataEnabled() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetEnhancedImageMetadataEnabled",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_ImagebuilderImage) ResetExecutionRole() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetExecutionRole",
 		nil, // no parameters
 	)
 }
@@ -1281,6 +1359,14 @@ func (i *jsiiProxy_ImagebuilderImage) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_ImagebuilderImage) ResetWorkflow() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetWorkflow",
 		nil, // no parameters
 	)
 }

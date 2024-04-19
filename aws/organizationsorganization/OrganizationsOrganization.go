@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/organizations_organization aws_organizations_organization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/organizations_organization aws_organizations_organization}.
 type OrganizationsOrganization interface {
 	cdktf.TerraformResource
 	Accounts() OrganizationsOrganizationAccountsList
@@ -60,6 +60,7 @@ type OrganizationsOrganization interface {
 	MasterAccountArn() *string
 	MasterAccountEmail() *string
 	MasterAccountId() *string
+	MasterAccountName() *string
 	// The tree node.
 	Node() constructs.Node
 	NonMasterAccounts() OrganizationsOrganizationNonMasterAccountsList
@@ -368,6 +369,16 @@ func (j *jsiiProxy_OrganizationsOrganization) MasterAccountId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_OrganizationsOrganization) MasterAccountName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"masterAccountName",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OrganizationsOrganization) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -459,7 +470,7 @@ func (j *jsiiProxy_OrganizationsOrganization) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/organizations_organization aws_organizations_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/organizations_organization aws_organizations_organization} Resource.
 func NewOrganizationsOrganization(scope constructs.Construct, id *string, config *OrganizationsOrganizationConfig) OrganizationsOrganization {
 	_init_.Initialize()
 
@@ -477,7 +488,7 @@ func NewOrganizationsOrganization(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/organizations_organization aws_organizations_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/organizations_organization aws_organizations_organization} Resource.
 func NewOrganizationsOrganization_Override(o OrganizationsOrganization, scope constructs.Construct, id *string, config *OrganizationsOrganizationConfig) {
 	_init_.Initialize()
 

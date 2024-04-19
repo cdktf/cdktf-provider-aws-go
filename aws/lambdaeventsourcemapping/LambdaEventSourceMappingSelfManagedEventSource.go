@@ -5,7 +5,7 @@ package lambdaeventsourcemapping
 
 
 type LambdaEventSourceMappingSelfManagedEventSource struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/lambda_event_source_mapping#endpoints LambdaEventSourceMapping#endpoints}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/lambda_event_source_mapping#endpoints LambdaEventSourceMapping#endpoints}.
 	Endpoints *map[string]*string `field:"required" json:"endpoints" yaml:"endpoints"`
 }
 

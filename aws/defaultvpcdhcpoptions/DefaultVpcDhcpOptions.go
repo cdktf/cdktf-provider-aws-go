@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/default_vpc_dhcp_options aws_default_vpc_dhcp_options}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/default_vpc_dhcp_options aws_default_vpc_dhcp_options}.
 type DefaultVpcDhcpOptions interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -45,6 +45,7 @@ type DefaultVpcDhcpOptions interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Ipv6AddressPreferredLeaseTime() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -277,6 +278,16 @@ func (j *jsiiProxy_DefaultVpcDhcpOptions) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DefaultVpcDhcpOptions) Ipv6AddressPreferredLeaseTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6AddressPreferredLeaseTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DefaultVpcDhcpOptions) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -448,7 +459,7 @@ func (j *jsiiProxy_DefaultVpcDhcpOptions) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/default_vpc_dhcp_options aws_default_vpc_dhcp_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/default_vpc_dhcp_options aws_default_vpc_dhcp_options} Resource.
 func NewDefaultVpcDhcpOptions(scope constructs.Construct, id *string, config *DefaultVpcDhcpOptionsConfig) DefaultVpcDhcpOptions {
 	_init_.Initialize()
 
@@ -466,7 +477,7 @@ func NewDefaultVpcDhcpOptions(scope constructs.Construct, id *string, config *De
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/default_vpc_dhcp_options aws_default_vpc_dhcp_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/default_vpc_dhcp_options aws_default_vpc_dhcp_options} Resource.
 func NewDefaultVpcDhcpOptions_Override(d DefaultVpcDhcpOptions, scope constructs.Construct, id *string, config *DefaultVpcDhcpOptionsConfig) {
 	_init_.Initialize()
 

@@ -87,6 +87,10 @@ func (i *jsiiProxy_ImagebuilderImage) validatePutTimeoutsParameters(value *Image
 	return nil
 }
 
+func (i *jsiiProxy_ImagebuilderImage) validatePutWorkflowParameters(value interface{}) error {
+	return nil
+}
+
 func validateImagebuilderImage_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -120,6 +124,10 @@ func (j *jsiiProxy_ImagebuilderImage) validateSetDistributionConfigurationArnPar
 }
 
 func (j *jsiiProxy_ImagebuilderImage) validateSetEnhancedImageMetadataEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ImagebuilderImage) validateSetExecutionRoleParameters(val *string) error {
 	return nil
 }
 

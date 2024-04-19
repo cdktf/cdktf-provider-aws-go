@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/alb aws_alb}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/alb aws_alb}.
 type DataAwsAlb interface {
 	cdktf.TerraformDataSource
 	AccessLogs() DataAwsAlbAccessLogsList
@@ -22,6 +22,7 @@ type DataAwsAlb interface {
 	ArnSuffix() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClientKeepAlive() *float64
 	ConnectionLogs() DataAwsAlbConnectionLogsList
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
@@ -191,6 +192,16 @@ func (j *jsiiProxy_DataAwsAlb) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAlb) ClientKeepAlive() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"clientKeepAlive",
 		&returns,
 	)
 	return returns
@@ -647,7 +658,7 @@ func (j *jsiiProxy_DataAwsAlb) ZoneId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/alb aws_alb} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/alb aws_alb} Data Source.
 func NewDataAwsAlb(scope constructs.Construct, id *string, config *DataAwsAlbConfig) DataAwsAlb {
 	_init_.Initialize()
 
@@ -665,7 +676,7 @@ func NewDataAwsAlb(scope constructs.Construct, id *string, config *DataAwsAlbCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/data-sources/alb aws_alb} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/data-sources/alb aws_alb} Data Source.
 func NewDataAwsAlb_Override(d DataAwsAlb, scope constructs.Construct, id *string, config *DataAwsAlbConfig) {
 	_init_.Initialize()
 

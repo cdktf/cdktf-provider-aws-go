@@ -43,6 +43,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "masterAccountArn", GoGetter: "MasterAccountArn"},
 			_jsii_.MemberProperty{JsiiProperty: "masterAccountEmail", GoGetter: "MasterAccountEmail"},
 			_jsii_.MemberProperty{JsiiProperty: "masterAccountId", GoGetter: "MasterAccountId"},
+			_jsii_.MemberProperty{JsiiProperty: "masterAccountName", GoGetter: "MasterAccountName"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "nonMasterAccounts", GoGetter: "NonMasterAccounts"},
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},

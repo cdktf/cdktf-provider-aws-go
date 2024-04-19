@@ -111,6 +111,10 @@ func (j *jsiiProxy_VpcDhcpOptions) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_VpcDhcpOptions) validateSetIpv6AddressPreferredLeaseTimeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcDhcpOptions) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

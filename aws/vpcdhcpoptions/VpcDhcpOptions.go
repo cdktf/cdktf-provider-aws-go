@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/vpc_dhcp_options aws_vpc_dhcp_options}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/vpc_dhcp_options aws_vpc_dhcp_options}.
 type VpcDhcpOptions interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -49,6 +49,9 @@ type VpcDhcpOptions interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Ipv6AddressPreferredLeaseTime() *string
+	SetIpv6AddressPreferredLeaseTime(val *string)
+	Ipv6AddressPreferredLeaseTimeInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -133,6 +136,7 @@ type VpcDhcpOptions interface {
 	ResetDomainName()
 	ResetDomainNameServers()
 	ResetId()
+	ResetIpv6AddressPreferredLeaseTime()
 	ResetNetbiosNameServers()
 	ResetNetbiosNodeType()
 	ResetNtpServers()
@@ -304,6 +308,26 @@ func (j *jsiiProxy_VpcDhcpOptions) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcDhcpOptions) Ipv6AddressPreferredLeaseTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6AddressPreferredLeaseTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcDhcpOptions) Ipv6AddressPreferredLeaseTimeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6AddressPreferredLeaseTimeInput",
 		&returns,
 	)
 	return returns
@@ -500,7 +524,7 @@ func (j *jsiiProxy_VpcDhcpOptions) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/vpc_dhcp_options aws_vpc_dhcp_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/vpc_dhcp_options aws_vpc_dhcp_options} Resource.
 func NewVpcDhcpOptions(scope constructs.Construct, id *string, config *VpcDhcpOptionsConfig) VpcDhcpOptions {
 	_init_.Initialize()
 
@@ -518,7 +542,7 @@ func NewVpcDhcpOptions(scope constructs.Construct, id *string, config *VpcDhcpOp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.45.0/docs/resources/vpc_dhcp_options aws_vpc_dhcp_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/vpc_dhcp_options aws_vpc_dhcp_options} Resource.
 func NewVpcDhcpOptions_Override(v VpcDhcpOptions, scope constructs.Construct, id *string, config *VpcDhcpOptionsConfig) {
 	_init_.Initialize()
 
@@ -596,6 +620,17 @@ func (j *jsiiProxy_VpcDhcpOptions)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcDhcpOptions)SetIpv6AddressPreferredLeaseTime(val *string) {
+	if err := j.validateSetIpv6AddressPreferredLeaseTimeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6AddressPreferredLeaseTime",
 		val,
 	)
 }
@@ -1058,6 +1093,14 @@ func (v *jsiiProxy_VpcDhcpOptions) ResetId() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcDhcpOptions) ResetIpv6AddressPreferredLeaseTime() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetIpv6AddressPreferredLeaseTime",
 		nil, // no parameters
 	)
 }
