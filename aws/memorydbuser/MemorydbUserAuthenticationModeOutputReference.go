@@ -71,6 +71,7 @@ type MemorydbUserAuthenticationModeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPasswords()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -495,6 +496,14 @@ func (m *jsiiProxy_MemorydbUserAuthenticationModeOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (m *jsiiProxy_MemorydbUserAuthenticationModeOutputReference) ResetPasswords() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetPasswords",
+		nil, // no parameters
+	)
 }
 
 func (m *jsiiProxy_MemorydbUserAuthenticationModeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

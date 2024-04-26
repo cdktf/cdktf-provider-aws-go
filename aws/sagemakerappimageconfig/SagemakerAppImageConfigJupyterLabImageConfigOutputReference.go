@@ -30,6 +30,8 @@ type SagemakerAppImageConfigJupyterLabImageConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FileSystemConfig() SagemakerAppImageConfigJupyterLabImageConfigFileSystemConfigOutputReference
+	FileSystemConfigInput() *SagemakerAppImageConfigJupyterLabImageConfigFileSystemConfig
 	// Experimental.
 	Fqn() *string
 	InternalValue() *SagemakerAppImageConfigJupyterLabImageConfig
@@ -67,7 +69,9 @@ type SagemakerAppImageConfigJupyterLabImageConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutContainerConfig(value *SagemakerAppImageConfigJupyterLabImageConfigContainerConfig)
+	PutFileSystemConfig(value *SagemakerAppImageConfigJupyterLabImageConfigFileSystemConfig)
 	ResetContainerConfig()
+	ResetFileSystemConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -128,6 +132,26 @@ func (j *jsiiProxy_SagemakerAppImageConfigJupyterLabImageConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerAppImageConfigJupyterLabImageConfigOutputReference) FileSystemConfig() SagemakerAppImageConfigJupyterLabImageConfigFileSystemConfigOutputReference {
+	var returns SagemakerAppImageConfigJupyterLabImageConfigFileSystemConfigOutputReference
+	_jsii_.Get(
+		j,
+		"fileSystemConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerAppImageConfigJupyterLabImageConfigOutputReference) FileSystemConfigInput() *SagemakerAppImageConfigJupyterLabImageConfigFileSystemConfig {
+	var returns *SagemakerAppImageConfigJupyterLabImageConfigFileSystemConfig
+	_jsii_.Get(
+		j,
+		"fileSystemConfigInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (s *jsiiProxy_SagemakerAppImageConfigJupyterLabImageConfigOutputReference) 
 	)
 }
 
+func (s *jsiiProxy_SagemakerAppImageConfigJupyterLabImageConfigOutputReference) PutFileSystemConfig(value *SagemakerAppImageConfigJupyterLabImageConfigFileSystemConfig) {
+	if err := s.validatePutFileSystemConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putFileSystemConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerAppImageConfigJupyterLabImageConfigOutputReference) ResetContainerConfig() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetContainerConfig",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerAppImageConfigJupyterLabImageConfigOutputReference) ResetFileSystemConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetFileSystemConfig",
 		nil, // no parameters
 	)
 }

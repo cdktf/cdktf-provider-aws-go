@@ -19,6 +19,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
 			_jsii_.MemberProperty{JsiiProperty: "addressInput", GoGetter: "AddressInput"},
 			_jsii_.MemberProperty{JsiiProperty: "allocationId", GoGetter: "AllocationId"},
+			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "associateWithPrivateIp", GoGetter: "AssociateWithPrivateIp"},
 			_jsii_.MemberProperty{JsiiProperty: "associateWithPrivateIpInput", GoGetter: "AssociateWithPrivateIpInput"},
 			_jsii_.MemberProperty{JsiiProperty: "associationId", GoGetter: "AssociationId"},

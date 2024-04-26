@@ -13,6 +13,8 @@ import (
 
 type CeCostCategoryRuleRuleAndOutputReference interface {
 	cdktf.ComplexObject
+	And() CeCostCategoryRuleRuleAndAndList
+	AndInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,6 +38,10 @@ type CeCostCategoryRuleRuleAndOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Not() CeCostCategoryRuleRuleAndNotOutputReference
+	NotInput() *CeCostCategoryRuleRuleAndNot
+	Or() CeCostCategoryRuleRuleAndOrList
+	OrInput() interface{}
 	Tags() CeCostCategoryRuleRuleAndTagsOutputReference
 	TagsInput() *CeCostCategoryRuleRuleAndTags
 	// Experimental.
@@ -70,11 +76,17 @@ type CeCostCategoryRuleRuleAndOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAnd(value interface{})
 	PutCostCategory(value *CeCostCategoryRuleRuleAndCostCategory)
 	PutDimension(value *CeCostCategoryRuleRuleAndDimension)
+	PutNot(value *CeCostCategoryRuleRuleAndNot)
+	PutOr(value interface{})
 	PutTags(value *CeCostCategoryRuleRuleAndTags)
+	ResetAnd()
 	ResetCostCategory()
 	ResetDimension()
+	ResetNot()
+	ResetOr()
 	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -89,6 +101,26 @@ type CeCostCategoryRuleRuleAndOutputReference interface {
 // The jsii proxy struct for CeCostCategoryRuleRuleAndOutputReference
 type jsiiProxy_CeCostCategoryRuleRuleAndOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_CeCostCategoryRuleRuleAndOutputReference) And() CeCostCategoryRuleRuleAndAndList {
+	var returns CeCostCategoryRuleRuleAndAndList
+	_jsii_.Get(
+		j,
+		"and",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CeCostCategoryRuleRuleAndOutputReference) AndInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"andInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CeCostCategoryRuleRuleAndOutputReference) ComplexObjectIndex() interface{} {
@@ -176,6 +208,46 @@ func (j *jsiiProxy_CeCostCategoryRuleRuleAndOutputReference) InternalValue() int
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CeCostCategoryRuleRuleAndOutputReference) Not() CeCostCategoryRuleRuleAndNotOutputReference {
+	var returns CeCostCategoryRuleRuleAndNotOutputReference
+	_jsii_.Get(
+		j,
+		"not",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CeCostCategoryRuleRuleAndOutputReference) NotInput() *CeCostCategoryRuleRuleAndNot {
+	var returns *CeCostCategoryRuleRuleAndNot
+	_jsii_.Get(
+		j,
+		"notInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CeCostCategoryRuleRuleAndOutputReference) Or() CeCostCategoryRuleRuleAndOrList {
+	var returns CeCostCategoryRuleRuleAndOrList
+	_jsii_.Get(
+		j,
+		"or",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CeCostCategoryRuleRuleAndOutputReference) OrInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"orInput",
 		&returns,
 	)
 	return returns
@@ -490,6 +562,17 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleAndOutputReference) InterpolationForAtt
 	return returns
 }
 
+func (c *jsiiProxy_CeCostCategoryRuleRuleAndOutputReference) PutAnd(value interface{}) {
+	if err := c.validatePutAndParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putAnd",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CeCostCategoryRuleRuleAndOutputReference) PutCostCategory(value *CeCostCategoryRuleRuleAndCostCategory) {
 	if err := c.validatePutCostCategoryParameters(value); err != nil {
 		panic(err)
@@ -512,6 +595,28 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleAndOutputReference) PutDimension(value 
 	)
 }
 
+func (c *jsiiProxy_CeCostCategoryRuleRuleAndOutputReference) PutNot(value *CeCostCategoryRuleRuleAndNot) {
+	if err := c.validatePutNotParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putNot",
+		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CeCostCategoryRuleRuleAndOutputReference) PutOr(value interface{}) {
+	if err := c.validatePutOrParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putOr",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CeCostCategoryRuleRuleAndOutputReference) PutTags(value *CeCostCategoryRuleRuleAndTags) {
 	if err := c.validatePutTagsParameters(value); err != nil {
 		panic(err)
@@ -520,6 +625,14 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleAndOutputReference) PutTags(value *CeCo
 		c,
 		"putTags",
 		[]interface{}{value},
+	)
+}
+
+func (c *jsiiProxy_CeCostCategoryRuleRuleAndOutputReference) ResetAnd() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAnd",
+		nil, // no parameters
 	)
 }
 
@@ -535,6 +648,22 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleAndOutputReference) ResetDimension() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetDimension",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CeCostCategoryRuleRuleAndOutputReference) ResetNot() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetNot",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CeCostCategoryRuleRuleAndOutputReference) ResetOr() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetOr",
 		nil, // no parameters
 	)
 }

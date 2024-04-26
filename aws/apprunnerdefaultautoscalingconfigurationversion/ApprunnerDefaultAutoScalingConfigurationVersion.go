@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apprunner_default_auto_scaling_configuration_version aws_apprunner_default_auto_scaling_configuration_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apprunner_default_auto_scaling_configuration_version aws_apprunner_default_auto_scaling_configuration_version}.
 type ApprunnerDefaultAutoScalingConfigurationVersion interface {
 	cdktf.TerraformResource
 	AutoScalingConfigurationArn() *string
@@ -320,7 +320,7 @@ func (j *jsiiProxy_ApprunnerDefaultAutoScalingConfigurationVersion) TerraformRes
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apprunner_default_auto_scaling_configuration_version aws_apprunner_default_auto_scaling_configuration_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apprunner_default_auto_scaling_configuration_version aws_apprunner_default_auto_scaling_configuration_version} Resource.
 func NewApprunnerDefaultAutoScalingConfigurationVersion(scope constructs.Construct, id *string, config *ApprunnerDefaultAutoScalingConfigurationVersionConfig) ApprunnerDefaultAutoScalingConfigurationVersion {
 	_init_.Initialize()
 
@@ -338,7 +338,7 @@ func NewApprunnerDefaultAutoScalingConfigurationVersion(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/apprunner_default_auto_scaling_configuration_version aws_apprunner_default_auto_scaling_configuration_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/apprunner_default_auto_scaling_configuration_version aws_apprunner_default_auto_scaling_configuration_version} Resource.
 func NewApprunnerDefaultAutoScalingConfigurationVersion_Override(a ApprunnerDefaultAutoScalingConfigurationVersion, scope constructs.Construct, id *string, config *ApprunnerDefaultAutoScalingConfigurationVersionConfig) {
 	_init_.Initialize()
 

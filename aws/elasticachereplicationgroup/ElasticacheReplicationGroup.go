@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group}.
 type ElasticacheReplicationGroup interface {
 	cdktf.TerraformResource
 	ApplyImmediately() interface{}
@@ -183,6 +183,9 @@ type ElasticacheReplicationGroup interface {
 	TransitEncryptionEnabled() interface{}
 	SetTransitEncryptionEnabled(val interface{})
 	TransitEncryptionEnabledInput() interface{}
+	TransitEncryptionMode() *string
+	SetTransitEncryptionMode(val *string)
+	TransitEncryptionModeInput() *string
 	UserGroupIds() *[]*string
 	SetUserGroupIds(val *[]*string)
 	UserGroupIdsInput() *[]*string
@@ -272,6 +275,7 @@ type ElasticacheReplicationGroup interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetTransitEncryptionEnabled()
+	ResetTransitEncryptionMode()
 	ResetUserGroupIds()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -1301,6 +1305,26 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) TransitEncryptionEnabledInput() 
 	return returns
 }
 
+func (j *jsiiProxy_ElasticacheReplicationGroup) TransitEncryptionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transitEncryptionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheReplicationGroup) TransitEncryptionModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"transitEncryptionModeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElasticacheReplicationGroup) UserGroupIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1322,7 +1346,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) UserGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
 func NewElasticacheReplicationGroup(scope constructs.Construct, id *string, config *ElasticacheReplicationGroupConfig) ElasticacheReplicationGroup {
 	_init_.Initialize()
 
@@ -1340,7 +1364,7 @@ func NewElasticacheReplicationGroup(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
 func NewElasticacheReplicationGroup_Override(e ElasticacheReplicationGroup, scope constructs.Construct, id *string, config *ElasticacheReplicationGroupConfig) {
 	_init_.Initialize()
 
@@ -1822,6 +1846,17 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetTransitEncryptionEnabled(val i
 	_jsii_.Set(
 		j,
 		"transitEncryptionEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElasticacheReplicationGroup)SetTransitEncryptionMode(val *string) {
+	if err := j.validateSetTransitEncryptionModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"transitEncryptionMode",
 		val,
 	)
 }
@@ -2520,6 +2555,14 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) ResetTransitEncryptionEnabled() 
 	_jsii_.InvokeVoid(
 		e,
 		"resetTransitEncryptionEnabled",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElasticacheReplicationGroup) ResetTransitEncryptionMode() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTransitEncryptionMode",
 		nil, // no parameters
 	)
 }

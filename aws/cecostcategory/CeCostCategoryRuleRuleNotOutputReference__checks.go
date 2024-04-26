@@ -93,6 +93,37 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleNotOutputReference) validateInterpolati
 	return nil
 }
 
+func (c *jsiiProxy_CeCostCategoryRuleRuleNotOutputReference) validatePutAndParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*CeCostCategoryRuleRuleNotAnd:
+		value := value.(*[]*CeCostCategoryRuleRuleNotAnd)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*CeCostCategoryRuleRuleNotAnd:
+		value_ := value.([]*CeCostCategoryRuleRuleNotAnd)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CeCostCategoryRuleRuleNotAnd; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (c *jsiiProxy_CeCostCategoryRuleRuleNotOutputReference) validatePutCostCategoryParameters(value *CeCostCategoryRuleRuleNotCostCategory) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -110,6 +141,48 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleNotOutputReference) validatePutDimensio
 	}
 	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CeCostCategoryRuleRuleNotOutputReference) validatePutNotParameters(value *CeCostCategoryRuleRuleNotNot) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *jsiiProxy_CeCostCategoryRuleRuleNotOutputReference) validatePutOrParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*CeCostCategoryRuleRuleNotOr:
+		value := value.(*[]*CeCostCategoryRuleRuleNotOr)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*CeCostCategoryRuleRuleNotOr:
+		value_ := value.([]*CeCostCategoryRuleRuleNotOr)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CeCostCategoryRuleRuleNotOr; received %#v (a %T)", value, value)
+		}
 	}
 
 	return nil

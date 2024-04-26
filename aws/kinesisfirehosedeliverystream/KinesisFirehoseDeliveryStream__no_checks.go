@@ -111,6 +111,10 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutServerSideEncryptio
 	return nil
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutSnowflakeConfigurationParameters(value *KinesisFirehoseDeliveryStreamSnowflakeConfiguration) error {
+	return nil
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutSplunkConfigurationParameters(value *KinesisFirehoseDeliveryStreamSplunkConfiguration) error {
 	return nil
 }

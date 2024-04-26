@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration}.
 type BedrockModelInvocationLoggingConfiguration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -45,6 +45,7 @@ type BedrockModelInvocationLoggingConfiguration interface {
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LoggingConfig() BedrockModelInvocationLoggingConfigurationLoggingConfigOutputReference
+	LoggingConfigInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -106,6 +107,8 @@ type BedrockModelInvocationLoggingConfiguration interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutLoggingConfig(value *BedrockModelInvocationLoggingConfigurationLoggingConfig)
+	ResetLoggingConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -237,6 +240,16 @@ func (j *jsiiProxy_BedrockModelInvocationLoggingConfiguration) LoggingConfig() B
 	return returns
 }
 
+func (j *jsiiProxy_BedrockModelInvocationLoggingConfiguration) LoggingConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"loggingConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BedrockModelInvocationLoggingConfiguration) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -308,7 +321,7 @@ func (j *jsiiProxy_BedrockModelInvocationLoggingConfiguration) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration} Resource.
 func NewBedrockModelInvocationLoggingConfiguration(scope constructs.Construct, id *string, config *BedrockModelInvocationLoggingConfigurationConfig) BedrockModelInvocationLoggingConfiguration {
 	_init_.Initialize()
 
@@ -326,7 +339,7 @@ func NewBedrockModelInvocationLoggingConfiguration(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/bedrock_model_invocation_logging_configuration aws_bedrock_model_invocation_logging_configuration} Resource.
 func NewBedrockModelInvocationLoggingConfiguration_Override(b BedrockModelInvocationLoggingConfiguration, scope constructs.Construct, id *string, config *BedrockModelInvocationLoggingConfigurationConfig) {
 	_init_.Initialize()
 
@@ -755,6 +768,25 @@ func (b *jsiiProxy_BedrockModelInvocationLoggingConfiguration) OverrideLogicalId
 		b,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (b *jsiiProxy_BedrockModelInvocationLoggingConfiguration) PutLoggingConfig(value *BedrockModelInvocationLoggingConfigurationLoggingConfig) {
+	if err := b.validatePutLoggingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putLoggingConfig",
+		[]interface{}{value},
+	)
+}
+
+func (b *jsiiProxy_BedrockModelInvocationLoggingConfiguration) ResetLoggingConfig() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetLoggingConfig",
+		nil, // no parameters
 	)
 }
 

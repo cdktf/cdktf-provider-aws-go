@@ -34,6 +34,8 @@ type AppmeshMeshSpecOutputReference interface {
 	Fqn() *string
 	InternalValue() *AppmeshMeshSpec
 	SetInternalValue(val *AppmeshMeshSpec)
+	ServiceDiscovery() AppmeshMeshSpecServiceDiscoveryOutputReference
+	ServiceDiscoveryInput() *AppmeshMeshSpecServiceDiscovery
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +69,9 @@ type AppmeshMeshSpecOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutEgressFilter(value *AppmeshMeshSpecEgressFilter)
+	PutServiceDiscovery(value *AppmeshMeshSpecServiceDiscovery)
 	ResetEgressFilter()
+	ResetServiceDiscovery()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_AppmeshMeshSpecOutputReference) InternalValue() *AppmeshMeshS
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshMeshSpecOutputReference) ServiceDiscovery() AppmeshMeshSpecServiceDiscoveryOutputReference {
+	var returns AppmeshMeshSpecServiceDiscoveryOutputReference
+	_jsii_.Get(
+		j,
+		"serviceDiscovery",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppmeshMeshSpecOutputReference) ServiceDiscoveryInput() *AppmeshMeshSpecServiceDiscovery {
+	var returns *AppmeshMeshSpecServiceDiscovery
+	_jsii_.Get(
+		j,
+		"serviceDiscoveryInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +477,29 @@ func (a *jsiiProxy_AppmeshMeshSpecOutputReference) PutEgressFilter(value *Appmes
 	)
 }
 
+func (a *jsiiProxy_AppmeshMeshSpecOutputReference) PutServiceDiscovery(value *AppmeshMeshSpecServiceDiscovery) {
+	if err := a.validatePutServiceDiscoveryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putServiceDiscovery",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppmeshMeshSpecOutputReference) ResetEgressFilter() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetEgressFilter",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppmeshMeshSpecOutputReference) ResetServiceDiscovery() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetServiceDiscovery",
 		nil, // no parameters
 	)
 }

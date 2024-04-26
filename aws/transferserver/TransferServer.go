@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_server aws_transfer_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_server aws_transfer_server}.
 type TransferServer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -109,6 +109,9 @@ type TransferServer interface {
 	SecurityPolicyName() *string
 	SetSecurityPolicyName(val *string)
 	SecurityPolicyNameInput() *string
+	SftpAuthenticationMethods() *string
+	SetSftpAuthenticationMethods(val *string)
+	SftpAuthenticationMethodsInput() *string
 	StructuredLogDestinations() *[]*string
 	SetStructuredLogDestinations(val *[]*string)
 	StructuredLogDestinationsInput() *[]*string
@@ -197,6 +200,7 @@ type TransferServer interface {
 	ResetProtocols()
 	ResetS3StorageOptions()
 	ResetSecurityPolicyName()
+	ResetSftpAuthenticationMethods()
 	ResetStructuredLogDestinations()
 	ResetTags()
 	ResetTagsAll()
@@ -740,6 +744,26 @@ func (j *jsiiProxy_TransferServer) SecurityPolicyNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_TransferServer) SftpAuthenticationMethods() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sftpAuthenticationMethods",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_TransferServer) SftpAuthenticationMethodsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sftpAuthenticationMethodsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TransferServer) StructuredLogDestinations() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -871,7 +895,7 @@ func (j *jsiiProxy_TransferServer) WorkflowDetailsInput() *TransferServerWorkflo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_server aws_transfer_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_server aws_transfer_server} Resource.
 func NewTransferServer(scope constructs.Construct, id *string, config *TransferServerConfig) TransferServer {
 	_init_.Initialize()
 
@@ -889,7 +913,7 @@ func NewTransferServer(scope constructs.Construct, id *string, config *TransferS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/transfer_server aws_transfer_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/transfer_server aws_transfer_server} Resource.
 func NewTransferServer_Override(t TransferServer, scope constructs.Construct, id *string, config *TransferServerConfig) {
 	_init_.Initialize()
 
@@ -1129,6 +1153,17 @@ func (j *jsiiProxy_TransferServer)SetSecurityPolicyName(val *string) {
 	_jsii_.Set(
 		j,
 		"securityPolicyName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_TransferServer)SetSftpAuthenticationMethods(val *string) {
+	if err := j.validateSetSftpAuthenticationMethodsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sftpAuthenticationMethods",
 		val,
 	)
 }
@@ -1722,6 +1757,14 @@ func (t *jsiiProxy_TransferServer) ResetSecurityPolicyName() {
 	_jsii_.InvokeVoid(
 		t,
 		"resetSecurityPolicyName",
+		nil, // no parameters
+	)
+}
+
+func (t *jsiiProxy_TransferServer) ResetSftpAuthenticationMethods() {
+	_jsii_.InvokeVoid(
+		t,
+		"resetSftpAuthenticationMethods",
 		nil, // no parameters
 	)
 }

@@ -108,6 +108,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "passwordCount", GoGetter: "PasswordCount"},
 			_jsii_.MemberProperty{JsiiProperty: "passwords", GoGetter: "Passwords"},
 			_jsii_.MemberProperty{JsiiProperty: "passwordsInput", GoGetter: "PasswordsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPasswords", GoMethod: "ResetPasswords"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},

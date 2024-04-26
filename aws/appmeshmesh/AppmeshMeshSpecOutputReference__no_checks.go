@@ -51,6 +51,10 @@ func (a *jsiiProxy_AppmeshMeshSpecOutputReference) validatePutEgressFilterParame
 	return nil
 }
 
+func (a *jsiiProxy_AppmeshMeshSpecOutputReference) validatePutServiceDiscoveryParameters(value *AppmeshMeshSpecServiceDiscovery) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppmeshMeshSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

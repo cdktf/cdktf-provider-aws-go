@@ -33,6 +33,7 @@ type DataAwsAppmeshMeshSpecOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataAwsAppmeshMeshSpec
 	SetInternalValue(val *DataAwsAppmeshMeshSpec)
+	ServiceDiscovery() DataAwsAppmeshMeshSpecServiceDiscoveryList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -135,6 +136,16 @@ func (j *jsiiProxy_DataAwsAppmeshMeshSpecOutputReference) InternalValue() *DataA
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAppmeshMeshSpecOutputReference) ServiceDiscovery() DataAwsAppmeshMeshSpecServiceDiscoveryList {
+	var returns DataAwsAppmeshMeshSpecServiceDiscoveryList
+	_jsii_.Get(
+		j,
+		"serviceDiscovery",
 		&returns,
 	)
 	return returns

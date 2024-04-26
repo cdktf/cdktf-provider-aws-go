@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/db_instance aws_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/db_instance aws_db_instance}.
 type DbInstance interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -76,6 +76,9 @@ type DbInstance interface {
 	DbSubnetGroupName() *string
 	SetDbSubnetGroupName(val *string)
 	DbSubnetGroupNameInput() *string
+	DedicatedLogVolume() interface{}
+	SetDedicatedLogVolume(val interface{})
+	DedicatedLogVolumeInput() interface{}
 	DeleteAutomatedBackups() interface{}
 	SetDeleteAutomatedBackups(val interface{})
 	DeleteAutomatedBackupsInput() interface{}
@@ -335,6 +338,7 @@ type DbInstance interface {
 	ResetCustomIamInstanceProfile()
 	ResetDbName()
 	ResetDbSubnetGroupName()
+	ResetDedicatedLogVolume()
 	ResetDeleteAutomatedBackups()
 	ResetDeletionProtection()
 	ResetDomain()
@@ -782,6 +786,26 @@ func (j *jsiiProxy_DbInstance) DbSubnetGroupNameInput() *string {
 	_jsii_.Get(
 		j,
 		"dbSubnetGroupNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) DedicatedLogVolume() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dedicatedLogVolume",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) DedicatedLogVolumeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dedicatedLogVolumeInput",
 		&returns,
 	)
 	return returns
@@ -2038,7 +2062,7 @@ func (j *jsiiProxy_DbInstance) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/db_instance aws_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/db_instance aws_db_instance} Resource.
 func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceConfig) DbInstance {
 	_init_.Initialize()
 
@@ -2056,7 +2080,7 @@ func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/db_instance aws_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/db_instance aws_db_instance} Resource.
 func NewDbInstance_Override(d DbInstance, scope constructs.Construct, id *string, config *DbInstanceConfig) {
 	_init_.Initialize()
 
@@ -2250,6 +2274,17 @@ func (j *jsiiProxy_DbInstance)SetDbSubnetGroupName(val *string) {
 	_jsii_.Set(
 		j,
 		"dbSubnetGroupName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DbInstance)SetDedicatedLogVolume(val interface{}) {
+	if err := j.validateSetDedicatedLogVolumeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dedicatedLogVolume",
 		val,
 	)
 }
@@ -3360,6 +3395,14 @@ func (d *jsiiProxy_DbInstance) ResetDbSubnetGroupName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetDbSubnetGroupName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbInstance) ResetDedicatedLogVolume() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetDedicatedLogVolume",
 		nil, // no parameters
 	)
 }

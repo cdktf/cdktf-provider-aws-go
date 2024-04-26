@@ -33,8 +33,8 @@ type SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference in
 	DisplayNameInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() *SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec
-	SetInternalValue(val *SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec)
+	InternalValue() interface{}
+	SetInternalValue(val interface{})
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -146,8 +146,8 @@ func (j *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutp
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference) InternalValue() *SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec {
-	var returns *SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec
+func (j *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference) InternalValue() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -197,29 +197,29 @@ func (j *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutp
 }
 
 
-func NewSagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference {
+func NewSagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewSagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewSagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewSagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference_Override(s SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference_Override(s SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-aws.sagemakerAppImageConfig.SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
 }
@@ -257,7 +257,7 @@ func (j *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutp
 	)
 }
 
-func (j *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference)SetInternalValue(val *SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec) {
+func (j *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

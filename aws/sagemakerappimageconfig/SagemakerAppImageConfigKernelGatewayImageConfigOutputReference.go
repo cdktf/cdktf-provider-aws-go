@@ -34,8 +34,8 @@ type SagemakerAppImageConfigKernelGatewayImageConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *SagemakerAppImageConfigKernelGatewayImageConfig
 	SetInternalValue(val *SagemakerAppImageConfigKernelGatewayImageConfig)
-	KernelSpec() SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference
-	KernelSpecInput() *SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec
+	KernelSpec() SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecList
+	KernelSpecInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,7 +69,7 @@ type SagemakerAppImageConfigKernelGatewayImageConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutFileSystemConfig(value *SagemakerAppImageConfigKernelGatewayImageConfigFileSystemConfig)
-	PutKernelSpec(value *SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec)
+	PutKernelSpec(value interface{})
 	ResetFileSystemConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -156,8 +156,8 @@ func (j *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReference) KernelSpec() SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference {
-	var returns SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecOutputReference
+func (j *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReference) KernelSpec() SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecList {
+	var returns SagemakerAppImageConfigKernelGatewayImageConfigKernelSpecList
 	_jsii_.Get(
 		j,
 		"kernelSpec",
@@ -166,8 +166,8 @@ func (j *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReference) KernelSpecInput() *SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec {
-	var returns *SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec
+func (j *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReference) KernelSpecInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"kernelSpecInput",
@@ -476,7 +476,7 @@ func (s *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReferenc
 	)
 }
 
-func (s *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReference) PutKernelSpec(value *SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec) {
+func (s *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReference) PutKernelSpec(value interface{}) {
 	if err := s.validatePutKernelSpecParameters(value); err != nil {
 		panic(err)
 	}

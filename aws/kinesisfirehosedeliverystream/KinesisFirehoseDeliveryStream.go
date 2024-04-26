@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream}.
 type KinesisFirehoseDeliveryStream interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -88,6 +88,8 @@ type KinesisFirehoseDeliveryStream interface {
 	RedshiftConfigurationInput() *KinesisFirehoseDeliveryStreamRedshiftConfiguration
 	ServerSideEncryption() KinesisFirehoseDeliveryStreamServerSideEncryptionOutputReference
 	ServerSideEncryptionInput() *KinesisFirehoseDeliveryStreamServerSideEncryption
+	SnowflakeConfiguration() KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference
+	SnowflakeConfigurationInput() *KinesisFirehoseDeliveryStreamSnowflakeConfiguration
 	SplunkConfiguration() KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference
 	SplunkConfigurationInput() *KinesisFirehoseDeliveryStreamSplunkConfiguration
 	Tags() *map[string]*string
@@ -159,6 +161,7 @@ type KinesisFirehoseDeliveryStream interface {
 	PutOpensearchserverlessConfiguration(value *KinesisFirehoseDeliveryStreamOpensearchserverlessConfiguration)
 	PutRedshiftConfiguration(value *KinesisFirehoseDeliveryStreamRedshiftConfiguration)
 	PutServerSideEncryption(value *KinesisFirehoseDeliveryStreamServerSideEncryption)
+	PutSnowflakeConfiguration(value *KinesisFirehoseDeliveryStreamSnowflakeConfiguration)
 	PutSplunkConfiguration(value *KinesisFirehoseDeliveryStreamSplunkConfiguration)
 	PutTimeouts(value *KinesisFirehoseDeliveryStreamTimeouts)
 	ResetArn()
@@ -176,6 +179,7 @@ type KinesisFirehoseDeliveryStream interface {
 	ResetOverrideLogicalId()
 	ResetRedshiftConfiguration()
 	ResetServerSideEncryption()
+	ResetSnowflakeConfiguration()
 	ResetSplunkConfiguration()
 	ResetTags()
 	ResetTagsAll()
@@ -609,6 +613,26 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) ServerSideEncryptionInput() *K
 	return returns
 }
 
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) SnowflakeConfiguration() KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference {
+	var returns KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"snowflakeConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) SnowflakeConfigurationInput() *KinesisFirehoseDeliveryStreamSnowflakeConfiguration {
+	var returns *KinesisFirehoseDeliveryStreamSnowflakeConfiguration
+	_jsii_.Get(
+		j,
+		"snowflakeConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KinesisFirehoseDeliveryStream) SplunkConfiguration() KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference {
 	var returns KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference
 	_jsii_.Get(
@@ -740,7 +764,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) VersionIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
 func NewKinesisFirehoseDeliveryStream(scope constructs.Construct, id *string, config *KinesisFirehoseDeliveryStreamConfig) KinesisFirehoseDeliveryStream {
 	_init_.Initialize()
 
@@ -758,7 +782,7 @@ func NewKinesisFirehoseDeliveryStream(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/kinesis_firehose_delivery_stream aws_kinesis_firehose_delivery_stream} Resource.
 func NewKinesisFirehoseDeliveryStream_Override(k KinesisFirehoseDeliveryStream, scope constructs.Construct, id *string, config *KinesisFirehoseDeliveryStreamConfig) {
 	_init_.Initialize()
 
@@ -1377,6 +1401,17 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutServerSideEncryption(value 
 	)
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutSnowflakeConfiguration(value *KinesisFirehoseDeliveryStreamSnowflakeConfiguration) {
+	if err := k.validatePutSnowflakeConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putSnowflakeConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStream) PutSplunkConfiguration(value *KinesisFirehoseDeliveryStreamSplunkConfiguration) {
 	if err := k.validatePutSplunkConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1499,6 +1534,14 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ResetServerSideEncryption() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetServerSideEncryption",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) ResetSnowflakeConfiguration() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetSnowflakeConfiguration",
 		nil, // no parameters
 	)
 }

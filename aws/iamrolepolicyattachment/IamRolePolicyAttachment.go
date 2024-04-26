@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/iam_role_policy_attachment aws_iam_role_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/iam_role_policy_attachment aws_iam_role_policy_attachment}.
 type IamRolePolicyAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_IamRolePolicyAttachment) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/iam_role_policy_attachment aws_iam_role_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/iam_role_policy_attachment aws_iam_role_policy_attachment} Resource.
 func NewIamRolePolicyAttachment(scope constructs.Construct, id *string, config *IamRolePolicyAttachmentConfig) IamRolePolicyAttachment {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewIamRolePolicyAttachment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/iam_role_policy_attachment aws_iam_role_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/iam_role_policy_attachment aws_iam_role_policy_attachment} Resource.
 func NewIamRolePolicyAttachment_Override(i IamRolePolicyAttachment, scope constructs.Construct, id *string, config *IamRolePolicyAttachmentConfig) {
 	_init_.Initialize()
 

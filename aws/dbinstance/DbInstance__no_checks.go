@@ -175,6 +175,10 @@ func (j *jsiiProxy_DbInstance) validateSetDbSubnetGroupNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_DbInstance) validateSetDedicatedLogVolumeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbInstance) validateSetDeleteAutomatedBackupsParameters(val interface{}) error {
 	return nil
 }

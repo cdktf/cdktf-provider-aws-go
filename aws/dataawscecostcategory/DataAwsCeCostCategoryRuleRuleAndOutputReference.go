@@ -13,6 +13,7 @@ import (
 
 type DataAwsCeCostCategoryRuleRuleAndOutputReference interface {
 	cdktf.ComplexObject
+	And() DataAwsCeCostCategoryRuleRuleAndAndList
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,6 +35,8 @@ type DataAwsCeCostCategoryRuleRuleAndOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataAwsCeCostCategoryRuleRuleAnd
 	SetInternalValue(val *DataAwsCeCostCategoryRuleRuleAnd)
+	Not() DataAwsCeCostCategoryRuleRuleAndNotList
+	Or() DataAwsCeCostCategoryRuleRuleAndOrList
 	Tags() DataAwsCeCostCategoryRuleRuleAndTagsList
 	// Experimental.
 	TerraformAttribute() *string
@@ -80,6 +83,16 @@ type DataAwsCeCostCategoryRuleRuleAndOutputReference interface {
 // The jsii proxy struct for DataAwsCeCostCategoryRuleRuleAndOutputReference
 type jsiiProxy_DataAwsCeCostCategoryRuleRuleAndOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataAwsCeCostCategoryRuleRuleAndOutputReference) And() DataAwsCeCostCategoryRuleRuleAndAndList {
+	var returns DataAwsCeCostCategoryRuleRuleAndAndList
+	_jsii_.Get(
+		j,
+		"and",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAwsCeCostCategoryRuleRuleAndOutputReference) ComplexObjectIndex() interface{} {
@@ -147,6 +160,26 @@ func (j *jsiiProxy_DataAwsCeCostCategoryRuleRuleAndOutputReference) InternalValu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsCeCostCategoryRuleRuleAndOutputReference) Not() DataAwsCeCostCategoryRuleRuleAndNotList {
+	var returns DataAwsCeCostCategoryRuleRuleAndNotList
+	_jsii_.Get(
+		j,
+		"not",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsCeCostCategoryRuleRuleAndOutputReference) Or() DataAwsCeCostCategoryRuleRuleAndOrList {
+	var returns DataAwsCeCostCategoryRuleRuleAndOrList
+	_jsii_.Get(
+		j,
+		"or",
 		&returns,
 	)
 	return returns

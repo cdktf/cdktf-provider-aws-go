@@ -75,6 +75,10 @@ func (b *jsiiProxy_BedrockModelInvocationLoggingConfiguration) validateOverrideL
 	return nil
 }
 
+func (b *jsiiProxy_BedrockModelInvocationLoggingConfiguration) validatePutLoggingConfigParameters(value *BedrockModelInvocationLoggingConfigurationLoggingConfig) error {
+	return nil
+}
+
 func validateBedrockModelInvocationLoggingConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

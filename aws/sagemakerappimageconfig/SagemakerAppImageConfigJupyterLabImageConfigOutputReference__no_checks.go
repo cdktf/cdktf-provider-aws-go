@@ -51,6 +51,10 @@ func (s *jsiiProxy_SagemakerAppImageConfigJupyterLabImageConfigOutputReference) 
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerAppImageConfigJupyterLabImageConfigOutputReference) validatePutFileSystemConfigParameters(value *SagemakerAppImageConfigJupyterLabImageConfigFileSystemConfig) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerAppImageConfigJupyterLabImageConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

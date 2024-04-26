@@ -263,6 +263,10 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetTransitEncryptionEnab
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetTransitEncryptionModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetUserGroupIdsParameters(val *[]*string) error {
 	return nil
 }

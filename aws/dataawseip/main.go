@@ -15,6 +15,7 @@ func init() {
 		reflect.TypeOf((*DataAwsEip)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "associationId", GoGetter: "AssociationId"},
 			_jsii_.MemberProperty{JsiiProperty: "carrierIp", GoGetter: "CarrierIp"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},

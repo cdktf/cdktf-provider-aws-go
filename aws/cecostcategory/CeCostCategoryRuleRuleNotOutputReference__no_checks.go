@@ -47,11 +47,23 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleNotOutputReference) validateInterpolati
 	return nil
 }
 
+func (c *jsiiProxy_CeCostCategoryRuleRuleNotOutputReference) validatePutAndParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CeCostCategoryRuleRuleNotOutputReference) validatePutCostCategoryParameters(value *CeCostCategoryRuleRuleNotCostCategory) error {
 	return nil
 }
 
 func (c *jsiiProxy_CeCostCategoryRuleRuleNotOutputReference) validatePutDimensionParameters(value *CeCostCategoryRuleRuleNotDimension) error {
+	return nil
+}
+
+func (c *jsiiProxy_CeCostCategoryRuleRuleNotOutputReference) validatePutNotParameters(value *CeCostCategoryRuleRuleNotNot) error {
+	return nil
+}
+
+func (c *jsiiProxy_CeCostCategoryRuleRuleNotOutputReference) validatePutOrParameters(value interface{}) error {
 	return nil
 }
 

@@ -75,6 +75,10 @@ func (o *jsiiProxy_OpensearchserverlessSecurityConfig) validateOverrideLogicalId
 	return nil
 }
 
+func (o *jsiiProxy_OpensearchserverlessSecurityConfig) validatePutSamlOptionsParameters(value *OpensearchserverlessSecurityConfigSamlOptions) error {
+	return nil
+}
+
 func validateOpensearchserverlessSecurityConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

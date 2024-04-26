@@ -801,6 +801,14 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetTransitEncryptionEnab
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetTransitEncryptionModeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetUserGroupIdsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -51,7 +51,7 @@ func (s *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReference) validatePutKernelSpecParameters(value *SagemakerAppImageConfigKernelGatewayImageConfigKernelSpec) error {
+func (s *jsiiProxy_SagemakerAppImageConfigKernelGatewayImageConfigOutputReference) validatePutKernelSpecParameters(value interface{}) error {
 	return nil
 }
 

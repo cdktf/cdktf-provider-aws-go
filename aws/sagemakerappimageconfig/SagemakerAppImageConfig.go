@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/sagemaker_app_image_config aws_sagemaker_app_image_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/sagemaker_app_image_config aws_sagemaker_app_image_config}.
 type SagemakerAppImageConfig interface {
 	cdktf.TerraformResource
 	AppImageConfigName() *string
@@ -21,6 +21,8 @@ type SagemakerAppImageConfig interface {
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CodeEditorAppImageConfig() SagemakerAppImageConfigCodeEditorAppImageConfigOutputReference
+	CodeEditorAppImageConfigInput() *SagemakerAppImageConfigCodeEditorAppImageConfig
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -121,8 +123,10 @@ type SagemakerAppImageConfig interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCodeEditorAppImageConfig(value *SagemakerAppImageConfigCodeEditorAppImageConfig)
 	PutJupyterLabImageConfig(value *SagemakerAppImageConfigJupyterLabImageConfig)
 	PutKernelGatewayImageConfig(value *SagemakerAppImageConfigKernelGatewayImageConfig)
+	ResetCodeEditorAppImageConfig()
 	ResetId()
 	ResetJupyterLabImageConfig()
 	ResetKernelGatewayImageConfig()
@@ -184,6 +188,26 @@ func (j *jsiiProxy_SagemakerAppImageConfig) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerAppImageConfig) CodeEditorAppImageConfig() SagemakerAppImageConfigCodeEditorAppImageConfigOutputReference {
+	var returns SagemakerAppImageConfigCodeEditorAppImageConfigOutputReference
+	_jsii_.Get(
+		j,
+		"codeEditorAppImageConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerAppImageConfig) CodeEditorAppImageConfigInput() *SagemakerAppImageConfigCodeEditorAppImageConfig {
+	var returns *SagemakerAppImageConfigCodeEditorAppImageConfig
+	_jsii_.Get(
+		j,
+		"codeEditorAppImageConfigInput",
 		&returns,
 	)
 	return returns
@@ -440,7 +464,7 @@ func (j *jsiiProxy_SagemakerAppImageConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/sagemaker_app_image_config aws_sagemaker_app_image_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/sagemaker_app_image_config aws_sagemaker_app_image_config} Resource.
 func NewSagemakerAppImageConfig(scope constructs.Construct, id *string, config *SagemakerAppImageConfigConfig) SagemakerAppImageConfig {
 	_init_.Initialize()
 
@@ -458,7 +482,7 @@ func NewSagemakerAppImageConfig(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/sagemaker_app_image_config aws_sagemaker_app_image_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/sagemaker_app_image_config aws_sagemaker_app_image_config} Resource.
 func NewSagemakerAppImageConfig_Override(s SagemakerAppImageConfig, scope constructs.Construct, id *string, config *SagemakerAppImageConfigConfig) {
 	_init_.Initialize()
 
@@ -934,6 +958,17 @@ func (s *jsiiProxy_SagemakerAppImageConfig) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (s *jsiiProxy_SagemakerAppImageConfig) PutCodeEditorAppImageConfig(value *SagemakerAppImageConfigCodeEditorAppImageConfig) {
+	if err := s.validatePutCodeEditorAppImageConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCodeEditorAppImageConfig",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerAppImageConfig) PutJupyterLabImageConfig(value *SagemakerAppImageConfigJupyterLabImageConfig) {
 	if err := s.validatePutJupyterLabImageConfigParameters(value); err != nil {
 		panic(err)
@@ -953,6 +988,14 @@ func (s *jsiiProxy_SagemakerAppImageConfig) PutKernelGatewayImageConfig(value *S
 		s,
 		"putKernelGatewayImageConfig",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerAppImageConfig) ResetCodeEditorAppImageConfig() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCodeEditorAppImageConfig",
+		nil, // no parameters
 	)
 }
 

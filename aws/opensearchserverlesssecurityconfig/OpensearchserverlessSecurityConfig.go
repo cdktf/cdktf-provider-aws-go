@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/opensearchserverless_security_config aws_opensearchserverless_security_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/opensearchserverless_security_config aws_opensearchserverless_security_config}.
 type OpensearchserverlessSecurityConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,7 @@ type OpensearchserverlessSecurityConfig interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SamlOptions() OpensearchserverlessSecurityConfigSamlOptionsOutputReference
+	SamlOptionsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -116,10 +117,12 @@ type OpensearchserverlessSecurityConfig interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutSamlOptions(value *OpensearchserverlessSecurityConfigSamlOptions)
 	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSamlOptions()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -338,6 +341,16 @@ func (j *jsiiProxy_OpensearchserverlessSecurityConfig) SamlOptions() Opensearchs
 	return returns
 }
 
+func (j *jsiiProxy_OpensearchserverlessSecurityConfig) SamlOptionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"samlOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_OpensearchserverlessSecurityConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -389,7 +402,7 @@ func (j *jsiiProxy_OpensearchserverlessSecurityConfig) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/opensearchserverless_security_config aws_opensearchserverless_security_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/opensearchserverless_security_config aws_opensearchserverless_security_config} Resource.
 func NewOpensearchserverlessSecurityConfig(scope constructs.Construct, id *string, config *OpensearchserverlessSecurityConfigConfig) OpensearchserverlessSecurityConfig {
 	_init_.Initialize()
 
@@ -407,7 +420,7 @@ func NewOpensearchserverlessSecurityConfig(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.46.0/docs/resources/opensearchserverless_security_config aws_opensearchserverless_security_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/opensearchserverless_security_config aws_opensearchserverless_security_config} Resource.
 func NewOpensearchserverlessSecurityConfig_Override(o OpensearchserverlessSecurityConfig, scope constructs.Construct, id *string, config *OpensearchserverlessSecurityConfigConfig) {
 	_init_.Initialize()
 
@@ -872,6 +885,17 @@ func (o *jsiiProxy_OpensearchserverlessSecurityConfig) OverrideLogicalId(newLogi
 	)
 }
 
+func (o *jsiiProxy_OpensearchserverlessSecurityConfig) PutSamlOptions(value *OpensearchserverlessSecurityConfigSamlOptions) {
+	if err := o.validatePutSamlOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putSamlOptions",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OpensearchserverlessSecurityConfig) ResetDescription() {
 	_jsii_.InvokeVoid(
 		o,
@@ -884,6 +908,14 @@ func (o *jsiiProxy_OpensearchserverlessSecurityConfig) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		o,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OpensearchserverlessSecurityConfig) ResetSamlOptions() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetSamlOptions",
 		nil, // no parameters
 	)
 }

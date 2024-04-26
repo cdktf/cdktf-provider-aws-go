@@ -75,6 +75,10 @@ func (s *jsiiProxy_SagemakerAppImageConfig) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerAppImageConfig) validatePutCodeEditorAppImageConfigParameters(value *SagemakerAppImageConfigCodeEditorAppImageConfig) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerAppImageConfig) validatePutJupyterLabImageConfigParameters(value *SagemakerAppImageConfigJupyterLabImageConfig) error {
 	return nil
 }
