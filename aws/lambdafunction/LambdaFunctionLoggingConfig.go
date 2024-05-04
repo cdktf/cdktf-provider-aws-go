@@ -5,13 +5,13 @@ package lambdafunction
 
 
 type LambdaFunctionLoggingConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/lambda_function#log_format LambdaFunction#log_format}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/lambda_function#log_format LambdaFunction#log_format}.
 	LogFormat *string `field:"required" json:"logFormat" yaml:"logFormat"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/lambda_function#application_log_level LambdaFunction#application_log_level}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/lambda_function#application_log_level LambdaFunction#application_log_level}.
 	ApplicationLogLevel *string `field:"optional" json:"applicationLogLevel" yaml:"applicationLogLevel"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/lambda_function#log_group LambdaFunction#log_group}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/lambda_function#log_group LambdaFunction#log_group}.
 	LogGroup *string `field:"optional" json:"logGroup" yaml:"logGroup"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/lambda_function#system_log_level LambdaFunction#system_log_level}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/lambda_function#system_log_level LambdaFunction#system_log_level}.
 	SystemLogLevel *string `field:"optional" json:"systemLogLevel" yaml:"systemLogLevel"`
 }
 

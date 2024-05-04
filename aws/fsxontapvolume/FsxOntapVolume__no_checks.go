@@ -75,6 +75,10 @@ func (f *jsiiProxy_FsxOntapVolume) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (f *jsiiProxy_FsxOntapVolume) validatePutAggregateConfigurationParameters(value *FsxOntapVolumeAggregateConfiguration) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxOntapVolume) validatePutSnaplockConfigurationParameters(value *FsxOntapVolumeSnaplockConfiguration) error {
 	return nil
 }
@@ -147,6 +151,10 @@ func (j *jsiiProxy_FsxOntapVolume) validateSetSecurityStyleParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_FsxOntapVolume) validateSetSizeInBytesParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOntapVolume) validateSetSizeInMegabytesParameters(val *float64) error {
 	return nil
 }
@@ -172,6 +180,10 @@ func (j *jsiiProxy_FsxOntapVolume) validateSetTagsParameters(val *map[string]*st
 }
 
 func (j *jsiiProxy_FsxOntapVolume) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FsxOntapVolume) validateSetVolumeStyleParameters(val *string) error {
 	return nil
 }
 

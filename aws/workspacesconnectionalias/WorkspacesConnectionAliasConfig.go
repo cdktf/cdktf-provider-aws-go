@@ -26,13 +26,13 @@ type WorkspacesConnectionAliasConfig struct {
 	//
 	// The connection string must be in the form of a fully qualified domain name (FQDN), such as www.example.com.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/workspaces_connection_alias#connection_string WorkspacesConnectionAlias#connection_string}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/workspaces_connection_alias#connection_string WorkspacesConnectionAlias#connection_string}
 	ConnectionString *string `field:"required" json:"connectionString" yaml:"connectionString"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/workspaces_connection_alias#tags WorkspacesConnectionAlias#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/workspaces_connection_alias#tags WorkspacesConnectionAlias#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/workspaces_connection_alias#timeouts WorkspacesConnectionAlias#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/workspaces_connection_alias#timeouts WorkspacesConnectionAlias#timeouts}
 	Timeouts *WorkspacesConnectionAliasTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

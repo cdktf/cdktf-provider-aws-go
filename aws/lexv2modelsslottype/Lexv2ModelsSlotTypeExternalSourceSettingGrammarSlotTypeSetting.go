@@ -7,7 +7,7 @@ package lexv2modelsslottype
 type Lexv2ModelsSlotTypeExternalSourceSettingGrammarSlotTypeSetting struct {
 	// source block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/lexv2models_slot_type#source Lexv2ModelsSlotType#source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/lexv2models_slot_type#source Lexv2ModelsSlotType#source}
 	Source interface{} `field:"optional" json:"source" yaml:"source"`
 }
 

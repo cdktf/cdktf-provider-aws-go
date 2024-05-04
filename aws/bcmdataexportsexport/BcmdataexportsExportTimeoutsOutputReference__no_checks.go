@@ -63,10 +63,6 @@ func (j *jsiiProxy_BcmdataexportsExportTimeoutsOutputReference) validateSetCreat
 	return nil
 }
 
-func (j *jsiiProxy_BcmdataexportsExportTimeoutsOutputReference) validateSetDeleteParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_BcmdataexportsExportTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

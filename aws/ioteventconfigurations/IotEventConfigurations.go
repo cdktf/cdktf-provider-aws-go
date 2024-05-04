@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/iot_event_configurations aws_iot_event_configurations}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/iot_event_configurations aws_iot_event_configurations}.
 type IotEventConfigurations interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_IotEventConfigurations) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/iot_event_configurations aws_iot_event_configurations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/iot_event_configurations aws_iot_event_configurations} Resource.
 func NewIotEventConfigurations(scope constructs.Construct, id *string, config *IotEventConfigurationsConfig) IotEventConfigurations {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewIotEventConfigurations(scope constructs.Construct, id *string, config *I
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/iot_event_configurations aws_iot_event_configurations} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/iot_event_configurations aws_iot_event_configurations} Resource.
 func NewIotEventConfigurations_Override(i IotEventConfigurations, scope constructs.Construct, id *string, config *IotEventConfigurationsConfig) {
 	_init_.Initialize()
 

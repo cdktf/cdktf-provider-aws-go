@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/networkmanager_core_network aws_networkmanager_core_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/networkmanager_core_network aws_networkmanager_core_network}.
 type NetworkmanagerCoreNetwork interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -580,7 +580,7 @@ func (j *jsiiProxy_NetworkmanagerCoreNetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/networkmanager_core_network aws_networkmanager_core_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/networkmanager_core_network aws_networkmanager_core_network} Resource.
 func NewNetworkmanagerCoreNetwork(scope constructs.Construct, id *string, config *NetworkmanagerCoreNetworkConfig) NetworkmanagerCoreNetwork {
 	_init_.Initialize()
 
@@ -598,7 +598,7 @@ func NewNetworkmanagerCoreNetwork(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/networkmanager_core_network aws_networkmanager_core_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/networkmanager_core_network aws_networkmanager_core_network} Resource.
 func NewNetworkmanagerCoreNetwork_Override(n NetworkmanagerCoreNetwork, scope constructs.Construct, id *string, config *NetworkmanagerCoreNetworkConfig) {
 	_init_.Initialize()
 

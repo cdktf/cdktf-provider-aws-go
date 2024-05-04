@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target}.
 type CloudwatchEventTarget interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -43,6 +43,9 @@ type CloudwatchEventTarget interface {
 	EventBusName() *string
 	SetEventBusName(val *string)
 	EventBusNameInput() *string
+	ForceDestroy() interface{}
+	SetForceDestroy(val interface{})
+	ForceDestroyInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -165,6 +168,7 @@ type CloudwatchEventTarget interface {
 	ResetDeadLetterConfig()
 	ResetEcsTarget()
 	ResetEventBusName()
+	ResetForceDestroy()
 	ResetHttpTarget()
 	ResetId()
 	ResetInput()
@@ -344,6 +348,26 @@ func (j *jsiiProxy_CloudwatchEventTarget) EventBusNameInput() *string {
 	_jsii_.Get(
 		j,
 		"eventBusNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) ForceDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget) ForceDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroyInput",
 		&returns,
 	)
 	return returns
@@ -740,7 +764,7 @@ func (j *jsiiProxy_CloudwatchEventTarget) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target} Resource.
 func NewCloudwatchEventTarget(scope constructs.Construct, id *string, config *CloudwatchEventTargetConfig) CloudwatchEventTarget {
 	_init_.Initialize()
 
@@ -758,7 +782,7 @@ func NewCloudwatchEventTarget(scope constructs.Construct, id *string, config *Cl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cloudwatch_event_target aws_cloudwatch_event_target} Resource.
 func NewCloudwatchEventTarget_Override(c CloudwatchEventTarget, scope constructs.Construct, id *string, config *CloudwatchEventTargetConfig) {
 	_init_.Initialize()
 
@@ -817,6 +841,17 @@ func (j *jsiiProxy_CloudwatchEventTarget)SetEventBusName(val *string) {
 	_jsii_.Set(
 		j,
 		"eventBusName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudwatchEventTarget)SetForceDestroy(val interface{}) {
+	if err := j.validateSetForceDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceDestroy",
 		val,
 	)
 }
@@ -1427,6 +1462,14 @@ func (c *jsiiProxy_CloudwatchEventTarget) ResetEventBusName() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetEventBusName",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudwatchEventTarget) ResetForceDestroy() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetForceDestroy",
 		nil, // no parameters
 	)
 }

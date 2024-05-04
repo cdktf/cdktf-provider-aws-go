@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/lightsail_lb_certificate aws_lightsail_lb_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/lightsail_lb_certificate aws_lightsail_lb_certificate}.
 type LightsailLbCertificate interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -448,7 +448,7 @@ func (j *jsiiProxy_LightsailLbCertificate) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/lightsail_lb_certificate aws_lightsail_lb_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/lightsail_lb_certificate aws_lightsail_lb_certificate} Resource.
 func NewLightsailLbCertificate(scope constructs.Construct, id *string, config *LightsailLbCertificateConfig) LightsailLbCertificate {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewLightsailLbCertificate(scope constructs.Construct, id *string, config *L
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/lightsail_lb_certificate aws_lightsail_lb_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/lightsail_lb_certificate aws_lightsail_lb_certificate} Resource.
 func NewLightsailLbCertificate_Override(l LightsailLbCertificate, scope constructs.Construct, id *string, config *LightsailLbCertificateConfig) {
 	_init_.Initialize()
 

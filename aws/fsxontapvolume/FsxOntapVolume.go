@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume}.
 type FsxOntapVolume interface {
 	cdktf.TerraformResource
+	AggregateConfiguration() FsxOntapVolumeAggregateConfigurationOutputReference
+	AggregateConfigurationInput() *FsxOntapVolumeAggregateConfiguration
 	Arn() *string
 	BypassSnaplockEnterpriseRetention() interface{}
 	SetBypassSnaplockEnterpriseRetention(val interface{})
@@ -79,6 +81,9 @@ type FsxOntapVolume interface {
 	SecurityStyle() *string
 	SetSecurityStyle(val *string)
 	SecurityStyleInput() *string
+	SizeInBytes() *string
+	SetSizeInBytes(val *string)
+	SizeInBytesInput() *string
 	SizeInMegabytes() *float64
 	SetSizeInMegabytes(val *float64)
 	SizeInMegabytesInput() *float64
@@ -113,6 +118,9 @@ type FsxOntapVolume interface {
 	Timeouts() FsxOntapVolumeTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	Uuid() *string
+	VolumeStyle() *string
+	SetVolumeStyle(val *string)
+	VolumeStyleInput() *string
 	VolumeType() *string
 	SetVolumeType(val *string)
 	VolumeTypeInput() *string
@@ -159,9 +167,11 @@ type FsxOntapVolume interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAggregateConfiguration(value *FsxOntapVolumeAggregateConfiguration)
 	PutSnaplockConfiguration(value *FsxOntapVolumeSnaplockConfiguration)
 	PutTieringPolicy(value *FsxOntapVolumeTieringPolicy)
 	PutTimeouts(value *FsxOntapVolumeTimeouts)
+	ResetAggregateConfiguration()
 	ResetBypassSnaplockEnterpriseRetention()
 	ResetCopyTagsToBackups()
 	ResetId()
@@ -171,6 +181,8 @@ type FsxOntapVolume interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSecurityStyle()
+	ResetSizeInBytes()
+	ResetSizeInMegabytes()
 	ResetSkipFinalBackup()
 	ResetSnaplockConfiguration()
 	ResetSnapshotPolicy()
@@ -179,6 +191,7 @@ type FsxOntapVolume interface {
 	ResetTagsAll()
 	ResetTieringPolicy()
 	ResetTimeouts()
+	ResetVolumeStyle()
 	ResetVolumeType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -196,6 +209,26 @@ type FsxOntapVolume interface {
 // The jsii proxy struct for FsxOntapVolume
 type jsiiProxy_FsxOntapVolume struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_FsxOntapVolume) AggregateConfiguration() FsxOntapVolumeAggregateConfigurationOutputReference {
+	var returns FsxOntapVolumeAggregateConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"aggregateConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOntapVolume) AggregateConfigurationInput() *FsxOntapVolumeAggregateConfiguration {
+	var returns *FsxOntapVolumeAggregateConfiguration
+	_jsii_.Get(
+		j,
+		"aggregateConfigurationInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_FsxOntapVolume) Arn() *string {
@@ -498,6 +531,26 @@ func (j *jsiiProxy_FsxOntapVolume) SecurityStyleInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FsxOntapVolume) SizeInBytes() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sizeInBytes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOntapVolume) SizeInBytesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sizeInBytesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxOntapVolume) SizeInMegabytes() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -738,6 +791,26 @@ func (j *jsiiProxy_FsxOntapVolume) Uuid() *string {
 	return returns
 }
 
+func (j *jsiiProxy_FsxOntapVolume) VolumeStyle() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volumeStyle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOntapVolume) VolumeStyleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"volumeStyleInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxOntapVolume) VolumeType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -759,7 +832,7 @@ func (j *jsiiProxy_FsxOntapVolume) VolumeTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource.
 func NewFsxOntapVolume(scope constructs.Construct, id *string, config *FsxOntapVolumeConfig) FsxOntapVolume {
 	_init_.Initialize()
 
@@ -777,7 +850,7 @@ func NewFsxOntapVolume(scope constructs.Construct, id *string, config *FsxOntapV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource.
 func NewFsxOntapVolume_Override(f FsxOntapVolume, scope constructs.Construct, id *string, config *FsxOntapVolumeConfig) {
 	_init_.Initialize()
 
@@ -933,6 +1006,17 @@ func (j *jsiiProxy_FsxOntapVolume)SetSecurityStyle(val *string) {
 	)
 }
 
+func (j *jsiiProxy_FsxOntapVolume)SetSizeInBytes(val *string) {
+	if err := j.validateSetSizeInBytesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sizeInBytes",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FsxOntapVolume)SetSizeInMegabytes(val *float64) {
 	if err := j.validateSetSizeInMegabytesParameters(val); err != nil {
 		panic(err)
@@ -1006,6 +1090,17 @@ func (j *jsiiProxy_FsxOntapVolume)SetTagsAll(val *map[string]*string) {
 	_jsii_.Set(
 		j,
 		"tagsAll",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxOntapVolume)SetVolumeStyle(val *string) {
+	if err := j.validateSetVolumeStyleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"volumeStyle",
 		val,
 	)
 }
@@ -1374,6 +1469,17 @@ func (f *jsiiProxy_FsxOntapVolume) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (f *jsiiProxy_FsxOntapVolume) PutAggregateConfiguration(value *FsxOntapVolumeAggregateConfiguration) {
+	if err := f.validatePutAggregateConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putAggregateConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FsxOntapVolume) PutSnaplockConfiguration(value *FsxOntapVolumeSnaplockConfiguration) {
 	if err := f.validatePutSnaplockConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1404,6 +1510,14 @@ func (f *jsiiProxy_FsxOntapVolume) PutTimeouts(value *FsxOntapVolumeTimeouts) {
 		f,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FsxOntapVolume) ResetAggregateConfiguration() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetAggregateConfiguration",
+		nil, // no parameters
 	)
 }
 
@@ -1459,6 +1573,22 @@ func (f *jsiiProxy_FsxOntapVolume) ResetSecurityStyle() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetSecurityStyle",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOntapVolume) ResetSizeInBytes() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetSizeInBytes",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOntapVolume) ResetSizeInMegabytes() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetSizeInMegabytes",
 		nil, // no parameters
 	)
 }
@@ -1523,6 +1653,14 @@ func (f *jsiiProxy_FsxOntapVolume) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOntapVolume) ResetVolumeStyle() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetVolumeStyle",
 		nil, // no parameters
 	)
 }

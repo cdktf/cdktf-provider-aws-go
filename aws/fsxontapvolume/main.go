@@ -16,6 +16,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "aggregateConfiguration", GoGetter: "AggregateConfiguration"},
+			_jsii_.MemberProperty{JsiiProperty: "aggregateConfigurationInput", GoGetter: "AggregateConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "bypassSnaplockEnterpriseRetention", GoGetter: "BypassSnaplockEnterpriseRetention"},
 			_jsii_.MemberProperty{JsiiProperty: "bypassSnaplockEnterpriseRetentionInput", GoGetter: "BypassSnaplockEnterpriseRetentionInput"},
@@ -59,10 +61,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putAggregateConfiguration", GoMethod: "PutAggregateConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putSnaplockConfiguration", GoMethod: "PutSnaplockConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putTieringPolicy", GoMethod: "PutTieringPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAggregateConfiguration", GoMethod: "ResetAggregateConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBypassSnaplockEnterpriseRetention", GoMethod: "ResetBypassSnaplockEnterpriseRetention"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCopyTagsToBackups", GoMethod: "ResetCopyTagsToBackups"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -70,6 +74,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOntapVolumeType", GoMethod: "ResetOntapVolumeType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecurityStyle", GoMethod: "ResetSecurityStyle"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSizeInBytes", GoMethod: "ResetSizeInBytes"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSizeInMegabytes", GoMethod: "ResetSizeInMegabytes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSkipFinalBackup", GoMethod: "ResetSkipFinalBackup"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSnaplockConfiguration", GoMethod: "ResetSnaplockConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSnapshotPolicy", GoMethod: "ResetSnapshotPolicy"},
@@ -78,9 +84,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTieringPolicy", GoMethod: "ResetTieringPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVolumeStyle", GoMethod: "ResetVolumeStyle"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVolumeType", GoMethod: "ResetVolumeType"},
 			_jsii_.MemberProperty{JsiiProperty: "securityStyle", GoGetter: "SecurityStyle"},
 			_jsii_.MemberProperty{JsiiProperty: "securityStyleInput", GoGetter: "SecurityStyleInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sizeInBytes", GoGetter: "SizeInBytes"},
+			_jsii_.MemberProperty{JsiiProperty: "sizeInBytesInput", GoGetter: "SizeInBytesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sizeInMegabytes", GoGetter: "SizeInMegabytes"},
 			_jsii_.MemberProperty{JsiiProperty: "sizeInMegabytesInput", GoGetter: "SizeInMegabytesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "skipFinalBackup", GoGetter: "SkipFinalBackup"},
@@ -111,12 +120,57 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uuid", GoGetter: "Uuid"},
+			_jsii_.MemberProperty{JsiiProperty: "volumeStyle", GoGetter: "VolumeStyle"},
+			_jsii_.MemberProperty{JsiiProperty: "volumeStyleInput", GoGetter: "VolumeStyleInput"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeType", GoGetter: "VolumeType"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeTypeInput", GoGetter: "VolumeTypeInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_FsxOntapVolume{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeAggregateConfiguration",
+		reflect.TypeOf((*FsxOntapVolumeAggregateConfiguration)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.fsxOntapVolume.FsxOntapVolumeAggregateConfigurationOutputReference",
+		reflect.TypeOf((*FsxOntapVolumeAggregateConfigurationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "aggregates", GoGetter: "Aggregates"},
+			_jsii_.MemberProperty{JsiiProperty: "aggregatesInput", GoGetter: "AggregatesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "constituentsPerAggregate", GoGetter: "ConstituentsPerAggregate"},
+			_jsii_.MemberProperty{JsiiProperty: "constituentsPerAggregateInput", GoGetter: "ConstituentsPerAggregateInput"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAggregates", GoMethod: "ResetAggregates"},
+			_jsii_.MemberMethod{JsiiMethod: "resetConstituentsPerAggregate", GoMethod: "ResetConstituentsPerAggregate"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "totalConstituents", GoGetter: "TotalConstituents"},
+		},
+		func() interface{} {
+			j := jsiiProxy_FsxOntapVolumeAggregateConfigurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},
 	)

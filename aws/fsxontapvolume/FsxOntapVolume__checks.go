@@ -207,6 +207,17 @@ func (f *jsiiProxy_FsxOntapVolume) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (f *jsiiProxy_FsxOntapVolume) validatePutAggregateConfigurationParameters(value *FsxOntapVolumeAggregateConfiguration) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (f *jsiiProxy_FsxOntapVolume) validatePutSnaplockConfigurationParameters(value *FsxOntapVolumeSnaplockConfiguration) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -504,6 +515,14 @@ func (j *jsiiProxy_FsxOntapVolume) validateSetSecurityStyleParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_FsxOntapVolume) validateSetSizeInBytesParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FsxOntapVolume) validateSetSizeInMegabytesParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -577,6 +596,14 @@ func (j *jsiiProxy_FsxOntapVolume) validateSetTagsParameters(val *map[string]*st
 }
 
 func (j *jsiiProxy_FsxOntapVolume) validateSetTagsAllParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FsxOntapVolume) validateSetVolumeStyleParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/quicksight_user aws_quicksight_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/quicksight_user aws_quicksight_user}.
 type QuicksightUser interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -510,7 +510,7 @@ func (j *jsiiProxy_QuicksightUser) UserRoleInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/quicksight_user aws_quicksight_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/quicksight_user aws_quicksight_user} Resource.
 func NewQuicksightUser(scope constructs.Construct, id *string, config *QuicksightUserConfig) QuicksightUser {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewQuicksightUser(scope constructs.Construct, id *string, config *Quicksigh
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.47.0/docs/resources/quicksight_user aws_quicksight_user} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/quicksight_user aws_quicksight_user} Resource.
 func NewQuicksightUser_Override(q QuicksightUser, scope constructs.Construct, id *string, config *QuicksightUserConfig) {
 	_init_.Initialize()
 
