@@ -55,14 +55,6 @@ func (d *jsiiProxy_DataAwsResourceexplorer2Search) validateOverrideLogicalIdPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsResourceexplorer2Search) validatePutResourceCountParameters(value interface{}) error {
-	return nil
-}
-
-func (d *jsiiProxy_DataAwsResourceexplorer2Search) validatePutResourcesParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataAwsResourceexplorer2Search_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

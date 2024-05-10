@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourceCountOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourceCountOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourceCountOutputReference) validateSetInternalValueParameters(val *DataAwsResourceexplorer2SearchResourceCount) error {
 	return nil
 }
 

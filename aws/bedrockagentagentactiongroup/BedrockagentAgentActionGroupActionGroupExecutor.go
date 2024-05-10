@@ -5,7 +5,7 @@ package bedrockagentagentactiongroup
 
 
 type BedrockagentAgentActionGroupActionGroupExecutor struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/bedrockagent_agent_action_group#lambda BedrockagentAgentActionGroup#lambda}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/bedrockagent_agent_action_group#lambda BedrockagentAgentActionGroup#lambda}.
 	Lambda *string `field:"optional" json:"lambda" yaml:"lambda"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/data-sources/iam_policy_document aws_iam_policy_document}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/data-sources/iam_policy_document aws_iam_policy_document}.
 type DataAwsIamPolicyDocument interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -43,6 +43,7 @@ type DataAwsIamPolicyDocument interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MinifiedJson() *string
 	// The tree node.
 	Node() constructs.Node
 	OverrideJson() *string
@@ -238,6 +239,16 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument) Lifecycle() *cdktf.TerraformResourc
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsIamPolicyDocument) MinifiedJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"minifiedJson",
 		&returns,
 	)
 	return returns
@@ -444,7 +455,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocument) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/data-sources/iam_policy_document aws_iam_policy_document} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/data-sources/iam_policy_document aws_iam_policy_document} Data Source.
 func NewDataAwsIamPolicyDocument(scope constructs.Construct, id *string, config *DataAwsIamPolicyDocumentConfig) DataAwsIamPolicyDocument {
 	_init_.Initialize()
 
@@ -462,7 +473,7 @@ func NewDataAwsIamPolicyDocument(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/data-sources/iam_policy_document aws_iam_policy_document} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/data-sources/iam_policy_document aws_iam_policy_document} Data Source.
 func NewDataAwsIamPolicyDocument_Override(d DataAwsIamPolicyDocument, scope constructs.Construct, id *string, config *DataAwsIamPolicyDocumentConfig) {
 	_init_.Initialize()
 

@@ -36,6 +36,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "json", GoGetter: "Json"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberProperty{JsiiProperty: "minifiedJson", GoGetter: "MinifiedJson"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},
 			_jsii_.MemberProperty{JsiiProperty: "overrideJson", GoGetter: "OverrideJson"},
 			_jsii_.MemberProperty{JsiiProperty: "overrideJsonInput", GoGetter: "OverrideJsonInput"},

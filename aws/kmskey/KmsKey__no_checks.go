@@ -155,6 +155,10 @@ func (j *jsiiProxy_KmsKey) validateSetProvisionersParameters(val *[]interface{})
 	return nil
 }
 
+func (j *jsiiProxy_KmsKey) validateSetRotationPeriodInDaysParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_KmsKey) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

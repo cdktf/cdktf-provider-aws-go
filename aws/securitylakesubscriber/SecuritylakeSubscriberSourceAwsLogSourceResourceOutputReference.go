@@ -70,7 +70,6 @@ type SecuritylakeSubscriberSourceAwsLogSourceResourceOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetSourceName()
 	ResetSourceVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -486,14 +485,6 @@ func (s *jsiiProxy_SecuritylakeSubscriberSourceAwsLogSourceResourceOutputReferen
 	)
 
 	return returns
-}
-
-func (s *jsiiProxy_SecuritylakeSubscriberSourceAwsLogSourceResourceOutputReference) ResetSourceName() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetSourceName",
-		nil, // no parameters
-	)
 }
 
 func (s *jsiiProxy_SecuritylakeSubscriberSourceAwsLogSourceResourceOutputReference) ResetSourceVersion() {

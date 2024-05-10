@@ -31,13 +31,12 @@ type DataAwsResourceexplorer2SearchResourcesOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsResourceexplorer2SearchResources
+	SetInternalValue(val *DataAwsResourceexplorer2SearchResources)
 	LastReportedAt() *string
 	OwningAccountId() *string
+	Properties() DataAwsResourceexplorer2SearchResourcesPropertiesList
 	Region() *string
-	ResourceProperty() DataAwsResourceexplorer2SearchResourcesResourcePropertyList
-	ResourcePropertyInput() interface{}
 	ResourceType() *string
 	Service() *string
 	// Experimental.
@@ -72,8 +71,6 @@ type DataAwsResourceexplorer2SearchResourcesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutResourceProperty(value interface{})
-	ResetResourceProperty()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -139,8 +136,8 @@ func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) Fqn()
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) InternalValue() *DataAwsResourceexplorer2SearchResources {
+	var returns *DataAwsResourceexplorer2SearchResources
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -169,31 +166,21 @@ func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) Ownin
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) Properties() DataAwsResourceexplorer2SearchResourcesPropertiesList {
+	var returns DataAwsResourceexplorer2SearchResourcesPropertiesList
+	_jsii_.Get(
+		j,
+		"properties",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) Region() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"region",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) ResourceProperty() DataAwsResourceexplorer2SearchResourcesResourcePropertyList {
-	var returns DataAwsResourceexplorer2SearchResourcesResourcePropertyList
-	_jsii_.Get(
-		j,
-		"resourceProperty",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) ResourcePropertyInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"resourcePropertyInput",
 		&returns,
 	)
 	return returns
@@ -289,7 +276,7 @@ func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference)SetCom
 	)
 }
 
-func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference)SetInternalValue(val *DataAwsResourceexplorer2SearchResources) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -506,25 +493,6 @@ func (d *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) Inter
 	)
 
 	return returns
-}
-
-func (d *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) PutResourceProperty(value interface{}) {
-	if err := d.validatePutResourcePropertyParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putResourceProperty",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) ResetResourceProperty() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetResourceProperty",
-		nil, // no parameters
-	)
 }
 
 func (d *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

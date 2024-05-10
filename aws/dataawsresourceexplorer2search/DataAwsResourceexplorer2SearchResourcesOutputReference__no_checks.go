@@ -47,10 +47,6 @@ func (d *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) validatePutResourcePropertyParameters(value interface{}) error {
-	return nil
-}
-
 func (d *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -63,7 +59,7 @@ func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourcesOutputReference) validateSetInternalValueParameters(val *DataAwsResourceexplorer2SearchResources) error {
 	return nil
 }
 

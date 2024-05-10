@@ -114,68 +114,6 @@ func (d *jsiiProxy_DataAwsResourceexplorer2Search) validateOverrideLogicalIdPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsResourceexplorer2Search) validatePutResourceCountParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataAwsResourceexplorer2SearchResourceCount:
-		value := value.(*[]*DataAwsResourceexplorer2SearchResourceCount)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataAwsResourceexplorer2SearchResourceCount:
-		value_ := value.([]*DataAwsResourceexplorer2SearchResourceCount)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataAwsResourceexplorer2SearchResourceCount; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
-func (d *jsiiProxy_DataAwsResourceexplorer2Search) validatePutResourcesParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataAwsResourceexplorer2SearchResources:
-		value := value.(*[]*DataAwsResourceexplorer2SearchResources)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*DataAwsResourceexplorer2SearchResources:
-		value_ := value.([]*DataAwsResourceexplorer2SearchResources)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataAwsResourceexplorer2SearchResources; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
 func validateDataAwsResourceexplorer2Search_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/kms_key aws_kms_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/kms_key aws_kms_key}.
 type KmsKey interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -90,6 +90,9 @@ type KmsKey interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RotationPeriodInDays() *float64
+	SetRotationPeriodInDays(val *float64)
+	RotationPeriodInDaysInput() *float64
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -165,6 +168,7 @@ type KmsKey interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPolicy()
+	ResetRotationPeriodInDays()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -557,6 +561,26 @@ func (j *jsiiProxy_KmsKey) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_KmsKey) RotationPeriodInDays() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriodInDays",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KmsKey) RotationPeriodInDaysInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"rotationPeriodInDaysInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_KmsKey) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -668,7 +692,7 @@ func (j *jsiiProxy_KmsKey) XksKeyIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/kms_key aws_kms_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/kms_key aws_kms_key} Resource.
 func NewKmsKey(scope constructs.Construct, id *string, config *KmsKeyConfig) KmsKey {
 	_init_.Initialize()
 
@@ -686,7 +710,7 @@ func NewKmsKey(scope constructs.Construct, id *string, config *KmsKeyConfig) Kms
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/kms_key aws_kms_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/kms_key aws_kms_key} Resource.
 func NewKmsKey_Override(k KmsKey, scope constructs.Construct, id *string, config *KmsKeyConfig) {
 	_init_.Initialize()
 
@@ -882,6 +906,17 @@ func (j *jsiiProxy_KmsKey)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_KmsKey)SetRotationPeriodInDays(val *float64) {
+	if err := j.validateSetRotationPeriodInDaysParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rotationPeriodInDays",
 		val,
 	)
 }
@@ -1375,6 +1410,14 @@ func (k *jsiiProxy_KmsKey) ResetPolicy() {
 	_jsii_.InvokeVoid(
 		k,
 		"resetPolicy",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KmsKey) ResetRotationPeriodInDays() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetRotationPeriodInDays",
 		nil, // no parameters
 	)
 }

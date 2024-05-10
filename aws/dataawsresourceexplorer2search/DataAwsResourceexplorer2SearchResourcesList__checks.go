@@ -8,8 +8,6 @@ package dataawsresourceexplorer2search
 import (
 	"fmt"
 
-	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -32,34 +30,6 @@ func (d *jsiiProxy_DataAwsResourceexplorer2SearchResourcesList) validateGetParam
 func (d *jsiiProxy_DataAwsResourceexplorer2SearchResourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourcesList) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*DataAwsResourceexplorer2SearchResources:
-		val := val.(*[]*DataAwsResourceexplorer2SearchResources)
-		for idx_97dfc6, v := range *val {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
-				return err
-			}
-		}
-	case []*DataAwsResourceexplorer2SearchResources:
-		val_ := val.([]*DataAwsResourceexplorer2SearchResources)
-		val := &val_
-		for idx_97dfc6, v := range *val {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter val[%#v]", idx_97dfc6) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*DataAwsResourceexplorer2SearchResources; received %#v (a %T)", val, val)
-		}
 	}
 
 	return nil

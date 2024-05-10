@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/ssmcontacts_contact_channel aws_ssmcontacts_contact_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/ssmcontacts_contact_channel aws_ssmcontacts_contact_channel}.
 type SsmcontactsContactChannel interface {
 	cdktf.TerraformResource
 	ActivationStatus() *string
@@ -424,7 +424,7 @@ func (j *jsiiProxy_SsmcontactsContactChannel) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/ssmcontacts_contact_channel aws_ssmcontacts_contact_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/ssmcontacts_contact_channel aws_ssmcontacts_contact_channel} Resource.
 func NewSsmcontactsContactChannel(scope constructs.Construct, id *string, config *SsmcontactsContactChannelConfig) SsmcontactsContactChannel {
 	_init_.Initialize()
 
@@ -442,7 +442,7 @@ func NewSsmcontactsContactChannel(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/ssmcontacts_contact_channel aws_ssmcontacts_contact_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/ssmcontacts_contact_channel aws_ssmcontacts_contact_channel} Resource.
 func NewSsmcontactsContactChannel_Override(s SsmcontactsContactChannel, scope constructs.Construct, id *string, config *SsmcontactsContactChannelConfig) {
 	_init_.Initialize()
 

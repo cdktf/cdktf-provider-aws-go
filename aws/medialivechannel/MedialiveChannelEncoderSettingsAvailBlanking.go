@@ -7,9 +7,9 @@ package medialivechannel
 type MedialiveChannelEncoderSettingsAvailBlanking struct {
 	// avail_blanking_image block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/medialive_channel#avail_blanking_image MedialiveChannel#avail_blanking_image}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/medialive_channel#avail_blanking_image MedialiveChannel#avail_blanking_image}
 	AvailBlankingImage *MedialiveChannelEncoderSettingsAvailBlankingAvailBlankingImage `field:"optional" json:"availBlankingImage" yaml:"availBlankingImage"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/medialive_channel#state MedialiveChannel#state}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/medialive_channel#state MedialiveChannel#state}.
 	State *string `field:"optional" json:"state" yaml:"state"`
 }
 

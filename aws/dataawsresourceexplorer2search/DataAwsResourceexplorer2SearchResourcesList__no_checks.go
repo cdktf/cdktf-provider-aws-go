@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataAwsResourceexplorer2SearchResourcesList) validateResolveP
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourcesList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourcesList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

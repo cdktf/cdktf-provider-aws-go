@@ -81,9 +81,7 @@ type SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfigurati
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAuthorizationApiKeyName()
 	ResetAuthorizationApiKeyValue()
-	ResetEndpoint()
 	ResetHttpMethod()
-	ResetTargetRoleArn()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -609,26 +607,10 @@ func (s *jsiiProxy_SecuritylakeSubscriberNotificationConfigurationHttpsNotificat
 	)
 }
 
-func (s *jsiiProxy_SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationOutputReference) ResetEndpoint() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetEndpoint",
-		nil, // no parameters
-	)
-}
-
 func (s *jsiiProxy_SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationOutputReference) ResetHttpMethod() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetHttpMethod",
-		nil, // no parameters
-	)
-}
-
-func (s *jsiiProxy_SecuritylakeSubscriberNotificationConfigurationHttpsNotificationConfigurationOutputReference) ResetTargetRoleArn() {
-	_jsii_.InvokeVoid(
-		s,
-		"resetTargetRoleArn",
 		nil, // no parameters
 	)
 }

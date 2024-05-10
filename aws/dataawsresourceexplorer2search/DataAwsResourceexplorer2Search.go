@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search}.
 type DataAwsResourceexplorer2Search interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -52,9 +52,7 @@ type DataAwsResourceexplorer2Search interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceCount() DataAwsResourceexplorer2SearchResourceCountList
-	ResourceCountInput() interface{}
 	Resources() DataAwsResourceexplorer2SearchResourcesList
-	ResourcesInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -89,13 +87,9 @@ type DataAwsResourceexplorer2Search interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutResourceCount(value interface{})
-	PutResources(value interface{})
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetResourceCount()
-	ResetResources()
 	ResetViewArn()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -266,31 +260,11 @@ func (j *jsiiProxy_DataAwsResourceexplorer2Search) ResourceCount() DataAwsResour
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsResourceexplorer2Search) ResourceCountInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"resourceCountInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAwsResourceexplorer2Search) Resources() DataAwsResourceexplorer2SearchResourcesList {
 	var returns DataAwsResourceexplorer2SearchResourcesList
 	_jsii_.Get(
 		j,
 		"resources",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsResourceexplorer2Search) ResourcesInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"resourcesInput",
 		&returns,
 	)
 	return returns
@@ -347,7 +321,7 @@ func (j *jsiiProxy_DataAwsResourceexplorer2Search) ViewArnInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search} Data Source.
 func NewDataAwsResourceexplorer2Search(scope constructs.Construct, id *string, config *DataAwsResourceexplorer2SearchConfig) DataAwsResourceexplorer2Search {
 	_init_.Initialize()
 
@@ -365,7 +339,7 @@ func NewDataAwsResourceexplorer2Search(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/data-sources/resourceexplorer2_search aws_resourceexplorer2_search} Data Source.
 func NewDataAwsResourceexplorer2Search_Override(d DataAwsResourceexplorer2Search, scope constructs.Construct, id *string, config *DataAwsResourceexplorer2SearchConfig) {
 	_init_.Initialize()
 
@@ -729,48 +703,10 @@ func (d *jsiiProxy_DataAwsResourceexplorer2Search) OverrideLogicalId(newLogicalI
 	)
 }
 
-func (d *jsiiProxy_DataAwsResourceexplorer2Search) PutResourceCount(value interface{}) {
-	if err := d.validatePutResourceCountParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putResourceCount",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAwsResourceexplorer2Search) PutResources(value interface{}) {
-	if err := d.validatePutResourcesParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putResources",
-		[]interface{}{value},
-	)
-}
-
 func (d *jsiiProxy_DataAwsResourceexplorer2Search) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAwsResourceexplorer2Search) ResetResourceCount() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetResourceCount",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAwsResourceexplorer2Search) ResetResources() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetResources",
 		nil, // no parameters
 	)
 }

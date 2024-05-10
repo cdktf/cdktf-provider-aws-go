@@ -31,8 +31,8 @@ type DataAwsResourceexplorer2SearchResourceCountOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsResourceexplorer2SearchResourceCount
+	SetInternalValue(val *DataAwsResourceexplorer2SearchResourceCount)
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -131,8 +131,8 @@ func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourceCountOutputReference) F
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourceCountOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourceCountOutputReference) InternalValue() *DataAwsResourceexplorer2SearchResourceCount {
+	var returns *DataAwsResourceexplorer2SearchResourceCount
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -221,7 +221,7 @@ func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourceCountOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourceCountOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsResourceexplorer2SearchResourceCountOutputReference)SetInternalValue(val *DataAwsResourceexplorer2SearchResourceCount) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

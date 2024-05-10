@@ -22,18 +22,18 @@ type OpensearchPackageAssociationConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/opensearch_package_association#domain_name OpensearchPackageAssociation#domain_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/opensearch_package_association#domain_name OpensearchPackageAssociation#domain_name}.
 	DomainName *string `field:"required" json:"domainName" yaml:"domainName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/opensearch_package_association#package_id OpensearchPackageAssociation#package_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/opensearch_package_association#package_id OpensearchPackageAssociation#package_id}.
 	PackageId *string `field:"required" json:"packageId" yaml:"packageId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/opensearch_package_association#id OpensearchPackageAssociation#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/opensearch_package_association#id OpensearchPackageAssociation#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/opensearch_package_association#timeouts OpensearchPackageAssociation#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/opensearch_package_association#timeouts OpensearchPackageAssociation#timeouts}
 	Timeouts *OpensearchPackageAssociationTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

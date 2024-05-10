@@ -5,13 +5,13 @@ package cloudwatcheventtarget
 
 
 type CloudwatchEventTargetBatchTarget struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cloudwatch_event_target#job_definition CloudwatchEventTarget#job_definition}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/cloudwatch_event_target#job_definition CloudwatchEventTarget#job_definition}.
 	JobDefinition *string `field:"required" json:"jobDefinition" yaml:"jobDefinition"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cloudwatch_event_target#job_name CloudwatchEventTarget#job_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/cloudwatch_event_target#job_name CloudwatchEventTarget#job_name}.
 	JobName *string `field:"required" json:"jobName" yaml:"jobName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cloudwatch_event_target#array_size CloudwatchEventTarget#array_size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/cloudwatch_event_target#array_size CloudwatchEventTarget#array_size}.
 	ArraySize *float64 `field:"optional" json:"arraySize" yaml:"arraySize"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.48.0/docs/resources/cloudwatch_event_target#job_attempts CloudwatchEventTarget#job_attempts}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/cloudwatch_event_target#job_attempts CloudwatchEventTarget#job_attempts}.
 	JobAttempts *float64 `field:"optional" json:"jobAttempts" yaml:"jobAttempts"`
 }
 
