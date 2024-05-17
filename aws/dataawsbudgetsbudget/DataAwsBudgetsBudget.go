@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/data-sources/budgets_budget aws_budgets_budget}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/data-sources/budgets_budget aws_budgets_budget}.
 type DataAwsBudgetsBudget interface {
 	cdktf.TerraformDataSource
 	AccountId() *string
@@ -69,6 +69,9 @@ type DataAwsBudgetsBudget interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -109,6 +112,7 @@ type DataAwsBudgetsBudget interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -418,6 +422,26 @@ func (j *jsiiProxy_DataAwsBudgetsBudget) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsBudgetsBudget) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsBudgetsBudget) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsBudgetsBudget) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -479,7 +503,7 @@ func (j *jsiiProxy_DataAwsBudgetsBudget) TimeUnit() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/data-sources/budgets_budget aws_budgets_budget} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/data-sources/budgets_budget aws_budgets_budget} Data Source.
 func NewDataAwsBudgetsBudget(scope constructs.Construct, id *string, config *DataAwsBudgetsBudgetConfig) DataAwsBudgetsBudget {
 	_init_.Initialize()
 
@@ -497,7 +521,7 @@ func NewDataAwsBudgetsBudget(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/data-sources/budgets_budget aws_budgets_budget} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/data-sources/budgets_budget aws_budgets_budget} Data Source.
 func NewDataAwsBudgetsBudget_Override(d DataAwsBudgetsBudget, scope constructs.Construct, id *string, config *DataAwsBudgetsBudgetConfig) {
 	_init_.Initialize()
 
@@ -594,6 +618,17 @@ func (j *jsiiProxy_DataAwsBudgetsBudget)SetProvider(val cdktf.TerraformProvider)
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsBudgetsBudget)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -911,6 +946,14 @@ func (d *jsiiProxy_DataAwsBudgetsBudget) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsBudgetsBudget) ResetTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTags",
 		nil, // no parameters
 	)
 }

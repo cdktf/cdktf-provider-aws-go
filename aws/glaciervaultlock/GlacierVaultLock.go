@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/glacier_vault_lock aws_glacier_vault_lock}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/glacier_vault_lock aws_glacier_vault_lock}.
 type GlacierVaultLock interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -403,7 +403,7 @@ func (j *jsiiProxy_GlacierVaultLock) VaultNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/glacier_vault_lock aws_glacier_vault_lock} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/glacier_vault_lock aws_glacier_vault_lock} Resource.
 func NewGlacierVaultLock(scope constructs.Construct, id *string, config *GlacierVaultLockConfig) GlacierVaultLock {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewGlacierVaultLock(scope constructs.Construct, id *string, config *Glacier
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/glacier_vault_lock aws_glacier_vault_lock} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/glacier_vault_lock aws_glacier_vault_lock} Resource.
 func NewGlacierVaultLock_Override(g GlacierVaultLock, scope constructs.Construct, id *string, config *GlacierVaultLockConfig) {
 	_init_.Initialize()
 

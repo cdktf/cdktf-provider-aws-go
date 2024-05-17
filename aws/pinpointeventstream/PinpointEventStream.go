@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/pinpoint_event_stream aws_pinpoint_event_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/pinpoint_event_stream aws_pinpoint_event_stream}.
 type PinpointEventStream interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -379,7 +379,7 @@ func (j *jsiiProxy_PinpointEventStream) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/pinpoint_event_stream aws_pinpoint_event_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/pinpoint_event_stream aws_pinpoint_event_stream} Resource.
 func NewPinpointEventStream(scope constructs.Construct, id *string, config *PinpointEventStreamConfig) PinpointEventStream {
 	_init_.Initialize()
 
@@ -397,7 +397,7 @@ func NewPinpointEventStream(scope constructs.Construct, id *string, config *Pinp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/pinpoint_event_stream aws_pinpoint_event_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/pinpoint_event_stream aws_pinpoint_event_stream} Resource.
 func NewPinpointEventStream_Override(p PinpointEventStream, scope constructs.Construct, id *string, config *PinpointEventStreamConfig) {
 	_init_.Initialize()
 

@@ -151,6 +151,14 @@ func (j *jsiiProxy_BudgetsBudgetAction) validateSetProvisionersParameters(val *[
 	return nil
 }
 
+func (j *jsiiProxy_BudgetsBudgetAction) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BudgetsBudgetAction) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewBudgetsBudgetActionParameters(scope constructs.Construct, id *string, config *BudgetsBudgetActionConfig) error {
 	return nil
 }

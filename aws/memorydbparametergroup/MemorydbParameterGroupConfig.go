@@ -22,26 +22,26 @@ type MemorydbParameterGroupConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/memorydb_parameter_group#family MemorydbParameterGroup#family}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/memorydb_parameter_group#family MemorydbParameterGroup#family}.
 	Family *string `field:"required" json:"family" yaml:"family"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/memorydb_parameter_group#description MemorydbParameterGroup#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/memorydb_parameter_group#description MemorydbParameterGroup#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/memorydb_parameter_group#id MemorydbParameterGroup#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/memorydb_parameter_group#id MemorydbParameterGroup#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/memorydb_parameter_group#name MemorydbParameterGroup#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/memorydb_parameter_group#name MemorydbParameterGroup#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/memorydb_parameter_group#name_prefix MemorydbParameterGroup#name_prefix}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/memorydb_parameter_group#name_prefix MemorydbParameterGroup#name_prefix}.
 	NamePrefix *string `field:"optional" json:"namePrefix" yaml:"namePrefix"`
 	// parameter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/memorydb_parameter_group#parameter MemorydbParameterGroup#parameter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/memorydb_parameter_group#parameter MemorydbParameterGroup#parameter}
 	Parameter interface{} `field:"optional" json:"parameter" yaml:"parameter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/memorydb_parameter_group#tags MemorydbParameterGroup#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/memorydb_parameter_group#tags MemorydbParameterGroup#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/memorydb_parameter_group#tags_all MemorydbParameterGroup#tags_all}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/memorydb_parameter_group#tags_all MemorydbParameterGroup#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 }
 

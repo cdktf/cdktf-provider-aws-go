@@ -95,6 +95,10 @@ func (j *jsiiProxy_DataAwsBudgetsBudget) validateSetNamePrefixParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsBudgetsBudget) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewDataAwsBudgetsBudgetParameters(scope constructs.Construct, id *string, config *DataAwsBudgetsBudgetConfig) error {
 	return nil
 }

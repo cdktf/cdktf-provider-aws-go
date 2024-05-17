@@ -22,11 +22,11 @@ type IamGroupPolicyAttachmentConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/iam_group_policy_attachment#group IamGroupPolicyAttachment#group}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/iam_group_policy_attachment#group IamGroupPolicyAttachment#group}.
 	Group *string `field:"required" json:"group" yaml:"group"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/iam_group_policy_attachment#policy_arn IamGroupPolicyAttachment#policy_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/iam_group_policy_attachment#policy_arn IamGroupPolicyAttachment#policy_arn}.
 	PolicyArn *string `field:"required" json:"policyArn" yaml:"policyArn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/iam_group_policy_attachment#id IamGroupPolicyAttachment#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/iam_group_policy_attachment#id IamGroupPolicyAttachment#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

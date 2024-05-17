@@ -62,6 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "ipv6Addresses", GoGetter: "Ipv6Addresses"},
 			_jsii_.MemberProperty{JsiiProperty: "keyName", GoGetter: "KeyName"},
+			_jsii_.MemberProperty{JsiiProperty: "launchTime", GoGetter: "LaunchTime"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceOptions", GoGetter: "MaintenanceOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "metadataOptions", GoGetter: "MetadataOptions"},

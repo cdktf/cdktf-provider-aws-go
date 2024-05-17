@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/budgets_budget_action aws_budgets_budget_action}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/budgets_budget_action aws_budgets_budget_action}.
 type BudgetsBudgetAction interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -85,6 +85,12 @@ type BudgetsBudgetAction interface {
 	Status() *string
 	Subscriber() BudgetsBudgetActionSubscriberList
 	SubscriberInput() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -145,6 +151,8 @@ type BudgetsBudgetAction interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
+	ResetTagsAll()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -524,6 +532,46 @@ func (j *jsiiProxy_BudgetsBudgetAction) SubscriberInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BudgetsBudgetAction) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudgetAction) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudgetAction) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudgetAction) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BudgetsBudgetAction) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -575,7 +623,7 @@ func (j *jsiiProxy_BudgetsBudgetAction) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/budgets_budget_action aws_budgets_budget_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/budgets_budget_action aws_budgets_budget_action} Resource.
 func NewBudgetsBudgetAction(scope constructs.Construct, id *string, config *BudgetsBudgetActionConfig) BudgetsBudgetAction {
 	_init_.Initialize()
 
@@ -593,7 +641,7 @@ func NewBudgetsBudgetAction(scope constructs.Construct, id *string, config *Budg
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/budgets_budget_action aws_budgets_budget_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/budgets_budget_action aws_budgets_budget_action} Resource.
 func NewBudgetsBudgetAction_Override(b BudgetsBudgetAction, scope constructs.Construct, id *string, config *BudgetsBudgetActionConfig) {
 	_init_.Initialize()
 
@@ -745,6 +793,28 @@ func (j *jsiiProxy_BudgetsBudgetAction)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudgetAction)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudgetAction)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -1166,6 +1236,22 @@ func (b *jsiiProxy_BudgetsBudgetAction) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudgetAction) ResetTags() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudgetAction) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }

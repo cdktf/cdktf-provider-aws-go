@@ -155,6 +155,14 @@ func (j *jsiiProxy_BudgetsBudget) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
+func (j *jsiiProxy_BudgetsBudget) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_BudgetsBudget) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BudgetsBudget) validateSetTimePeriodEndParameters(val *string) error {
 	return nil
 }

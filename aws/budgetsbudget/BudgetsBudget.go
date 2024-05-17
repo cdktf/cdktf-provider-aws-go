@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/budgets_budget aws_budgets_budget}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/budgets_budget aws_budgets_budget}.
 type BudgetsBudget interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -87,6 +87,12 @@ type BudgetsBudget interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -164,6 +170,8 @@ type BudgetsBudget interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPlannedLimit()
+	ResetTags()
+	ResetTagsAll()
 	ResetTimePeriodEnd()
 	ResetTimePeriodStart()
 	SynthesizeAttributes() *map[string]interface{}
@@ -564,6 +572,46 @@ func (j *jsiiProxy_BudgetsBudget) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BudgetsBudget) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BudgetsBudget) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BudgetsBudget) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -655,7 +703,7 @@ func (j *jsiiProxy_BudgetsBudget) TimeUnitInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/budgets_budget aws_budgets_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/budgets_budget aws_budgets_budget} Resource.
 func NewBudgetsBudget(scope constructs.Construct, id *string, config *BudgetsBudgetConfig) BudgetsBudget {
 	_init_.Initialize()
 
@@ -673,7 +721,7 @@ func NewBudgetsBudget(scope constructs.Construct, id *string, config *BudgetsBud
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/budgets_budget aws_budgets_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/budgets_budget aws_budgets_budget} Resource.
 func NewBudgetsBudget_Override(b BudgetsBudget, scope constructs.Construct, id *string, config *BudgetsBudgetConfig) {
 	_init_.Initialize()
 
@@ -825,6 +873,28 @@ func (j *jsiiProxy_BudgetsBudget)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudget)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BudgetsBudget)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -1362,6 +1432,22 @@ func (b *jsiiProxy_BudgetsBudget) ResetPlannedLimit() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetPlannedLimit",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) ResetTags() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BudgetsBudget) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }

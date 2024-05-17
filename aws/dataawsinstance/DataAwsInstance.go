@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/data-sources/instance aws_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/data-sources/instance aws_instance}.
 type DataAwsInstance interface {
 	cdktf.TerraformDataSource
 	Ami() *string
@@ -70,6 +70,7 @@ type DataAwsInstance interface {
 	InstanceType() *string
 	Ipv6Addresses() *[]*string
 	KeyName() *string
+	LaunchTime() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -542,6 +543,16 @@ func (j *jsiiProxy_DataAwsInstance) KeyName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsInstance) LaunchTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"launchTime",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsInstance) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -873,7 +884,7 @@ func (j *jsiiProxy_DataAwsInstance) VpcSecurityGroupIds() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/data-sources/instance aws_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/data-sources/instance aws_instance} Data Source.
 func NewDataAwsInstance(scope constructs.Construct, id *string, config *DataAwsInstanceConfig) DataAwsInstance {
 	_init_.Initialize()
 
@@ -891,7 +902,7 @@ func NewDataAwsInstance(scope constructs.Construct, id *string, config *DataAwsI
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/data-sources/instance aws_instance} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/data-sources/instance aws_instance} Data Source.
 func NewDataAwsInstance_Override(d DataAwsInstance, scope constructs.Construct, id *string, config *DataAwsInstanceConfig) {
 	_init_.Initialize()
 

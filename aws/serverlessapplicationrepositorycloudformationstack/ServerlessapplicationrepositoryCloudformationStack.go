@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/serverlessapplicationrepository_cloudformation_stack aws_serverlessapplicationrepository_cloudformation_stack}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/serverlessapplicationrepository_cloudformation_stack aws_serverlessapplicationrepository_cloudformation_stack}.
 type ServerlessapplicationrepositoryCloudformationStack interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -510,7 +510,7 @@ func (j *jsiiProxy_ServerlessapplicationrepositoryCloudformationStack) TimeoutsI
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/serverlessapplicationrepository_cloudformation_stack aws_serverlessapplicationrepository_cloudformation_stack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/serverlessapplicationrepository_cloudformation_stack aws_serverlessapplicationrepository_cloudformation_stack} Resource.
 func NewServerlessapplicationrepositoryCloudformationStack(scope constructs.Construct, id *string, config *ServerlessapplicationrepositoryCloudformationStackConfig) ServerlessapplicationrepositoryCloudformationStack {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewServerlessapplicationrepositoryCloudformationStack(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.49.0/docs/resources/serverlessapplicationrepository_cloudformation_stack aws_serverlessapplicationrepository_cloudformation_stack} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/serverlessapplicationrepository_cloudformation_stack aws_serverlessapplicationrepository_cloudformation_stack} Resource.
 func NewServerlessapplicationrepositoryCloudformationStack_Override(s ServerlessapplicationrepositoryCloudformationStack, scope constructs.Construct, id *string, config *ServerlessapplicationrepositoryCloudformationStackConfig) {
 	_init_.Initialize()
 
