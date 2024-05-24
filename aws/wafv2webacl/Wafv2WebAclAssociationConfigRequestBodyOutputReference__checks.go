@@ -93,6 +93,68 @@ func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) valid
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) validatePutApiGatewayParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*Wafv2WebAclAssociationConfigRequestBodyApiGateway:
+		value := value.(*[]*Wafv2WebAclAssociationConfigRequestBodyApiGateway)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*Wafv2WebAclAssociationConfigRequestBodyApiGateway:
+		value_ := value.([]*Wafv2WebAclAssociationConfigRequestBodyApiGateway)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*Wafv2WebAclAssociationConfigRequestBodyApiGateway; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) validatePutAppRunnerServiceParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*Wafv2WebAclAssociationConfigRequestBodyAppRunnerService:
+		value := value.(*[]*Wafv2WebAclAssociationConfigRequestBodyAppRunnerService)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*Wafv2WebAclAssociationConfigRequestBodyAppRunnerService:
+		value_ := value.([]*Wafv2WebAclAssociationConfigRequestBodyAppRunnerService)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*Wafv2WebAclAssociationConfigRequestBodyAppRunnerService; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) validatePutCloudfrontParameters(value interface{}) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -118,6 +180,68 @@ func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) valid
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*Wafv2WebAclAssociationConfigRequestBodyCloudfront; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) validatePutCognitoUserPoolParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool:
+		value := value.(*[]*Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool:
+		value_ := value.([]*Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*Wafv2WebAclAssociationConfigRequestBodyCognitoUserPool; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) validatePutVerifiedAccessInstanceParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance:
+		value := value.(*[]*Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance:
+		value_ := value.([]*Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*Wafv2WebAclAssociationConfigRequestBodyVerifiedAccessInstance; received %#v (a %T)", value, value)
 		}
 	}
 

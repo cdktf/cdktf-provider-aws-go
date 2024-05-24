@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/data-sources/route53_zone aws_route53_zone}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/data-sources/route53_zone aws_route53_zone}.
 type DataAwsRoute53Zone interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -64,8 +64,6 @@ type DataAwsRoute53Zone interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ResourceRecordSetCount() *float64
-	SetResourceRecordSetCount(val *float64)
-	ResourceRecordSetCountInput() *float64
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -112,7 +110,6 @@ type DataAwsRoute53Zone interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPrivateZone()
-	ResetResourceRecordSetCount()
 	ResetTags()
 	ResetVpcId()
 	ResetZoneId()
@@ -385,16 +382,6 @@ func (j *jsiiProxy_DataAwsRoute53Zone) ResourceRecordSetCount() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsRoute53Zone) ResourceRecordSetCountInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"resourceRecordSetCountInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_DataAwsRoute53Zone) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -486,7 +473,7 @@ func (j *jsiiProxy_DataAwsRoute53Zone) ZoneIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/data-sources/route53_zone aws_route53_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/data-sources/route53_zone aws_route53_zone} Data Source.
 func NewDataAwsRoute53Zone(scope constructs.Construct, id *string, config *DataAwsRoute53ZoneConfig) DataAwsRoute53Zone {
 	_init_.Initialize()
 
@@ -504,7 +491,7 @@ func NewDataAwsRoute53Zone(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/data-sources/route53_zone aws_route53_zone} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/data-sources/route53_zone aws_route53_zone} Data Source.
 func NewDataAwsRoute53Zone_Override(d DataAwsRoute53Zone, scope constructs.Construct, id *string, config *DataAwsRoute53ZoneConfig) {
 	_init_.Initialize()
 
@@ -590,17 +577,6 @@ func (j *jsiiProxy_DataAwsRoute53Zone)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataAwsRoute53Zone)SetResourceRecordSetCount(val *float64) {
-	if err := j.validateSetResourceRecordSetCountParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"resourceRecordSetCount",
 		val,
 	)
 }
@@ -951,14 +927,6 @@ func (d *jsiiProxy_DataAwsRoute53Zone) ResetPrivateZone() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPrivateZone",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DataAwsRoute53Zone) ResetResourceRecordSetCount() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetResourceRecordSetCount",
 		nil, // no parameters
 	)
 }

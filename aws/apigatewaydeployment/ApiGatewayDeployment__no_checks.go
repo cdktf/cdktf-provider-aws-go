@@ -75,6 +75,10 @@ func (a *jsiiProxy_ApiGatewayDeployment) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (a *jsiiProxy_ApiGatewayDeployment) validatePutCanarySettingsParameters(value *ApiGatewayDeploymentCanarySettings) error {
+	return nil
+}
+
 func validateApiGatewayDeployment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

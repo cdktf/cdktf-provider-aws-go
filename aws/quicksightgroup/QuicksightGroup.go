@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/quicksight_group aws_quicksight_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/quicksight_group aws_quicksight_group}.
 type QuicksightGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -416,7 +416,7 @@ func (j *jsiiProxy_QuicksightGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/quicksight_group aws_quicksight_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/quicksight_group aws_quicksight_group} Resource.
 func NewQuicksightGroup(scope constructs.Construct, id *string, config *QuicksightGroupConfig) QuicksightGroup {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewQuicksightGroup(scope constructs.Construct, id *string, config *Quicksig
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/quicksight_group aws_quicksight_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/quicksight_group aws_quicksight_group} Resource.
 func NewQuicksightGroup_Override(q QuicksightGroup, scope constructs.Construct, id *string, config *QuicksightGroupConfig) {
 	_init_.Initialize()
 

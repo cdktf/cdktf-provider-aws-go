@@ -12,12 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/lambda_layer_version aws_lambda_layer_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/lambda_layer_version aws_lambda_layer_version}.
 type LambdaLayerVersion interface {
 	cdktf.TerraformResource
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CodeSha256() *string
 	CompatibleArchitectures() *[]*string
 	SetCompatibleArchitectures(val *[]*string)
 	CompatibleArchitecturesInput() *[]*string
@@ -194,6 +195,16 @@ func (j *jsiiProxy_LambdaLayerVersion) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LambdaLayerVersion) CodeSha256() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"codeSha256",
 		&returns,
 	)
 	return returns
@@ -650,7 +661,7 @@ func (j *jsiiProxy_LambdaLayerVersion) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/lambda_layer_version aws_lambda_layer_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/lambda_layer_version aws_lambda_layer_version} Resource.
 func NewLambdaLayerVersion(scope constructs.Construct, id *string, config *LambdaLayerVersionConfig) LambdaLayerVersion {
 	_init_.Initialize()
 
@@ -668,7 +679,7 @@ func NewLambdaLayerVersion(scope constructs.Construct, id *string, config *Lambd
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/lambda_layer_version aws_lambda_layer_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/lambda_layer_version aws_lambda_layer_version} Resource.
 func NewLambdaLayerVersion_Override(l LambdaLayerVersion, scope constructs.Construct, id *string, config *LambdaLayerVersionConfig) {
 	_init_.Initialize()
 

@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment}.
 type ApiGatewayDeployment interface {
 	cdktf.TerraformResource
+	CanarySettings() ApiGatewayDeploymentCanarySettingsOutputReference
+	CanarySettingsInput() *ApiGatewayDeploymentCanarySettings
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -128,6 +130,8 @@ type ApiGatewayDeployment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCanarySettings(value *ApiGatewayDeploymentCanarySettings)
+	ResetCanarySettings()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -153,6 +157,26 @@ type ApiGatewayDeployment interface {
 // The jsii proxy struct for ApiGatewayDeployment
 type jsiiProxy_ApiGatewayDeployment struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) CanarySettings() ApiGatewayDeploymentCanarySettingsOutputReference {
+	var returns ApiGatewayDeploymentCanarySettingsOutputReference
+	_jsii_.Get(
+		j,
+		"canarySettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ApiGatewayDeployment) CanarySettingsInput() *ApiGatewayDeploymentCanarySettings {
+	var returns *ApiGatewayDeploymentCanarySettings
+	_jsii_.Get(
+		j,
+		"canarySettingsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ApiGatewayDeployment) CdktfStack() cdktf.TerraformStack {
@@ -486,7 +510,7 @@ func (j *jsiiProxy_ApiGatewayDeployment) VariablesInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment} Resource.
 func NewApiGatewayDeployment(scope constructs.Construct, id *string, config *ApiGatewayDeploymentConfig) ApiGatewayDeployment {
 	_init_.Initialize()
 
@@ -504,7 +528,7 @@ func NewApiGatewayDeployment(scope constructs.Construct, id *string, config *Api
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/api_gateway_deployment aws_api_gateway_deployment} Resource.
 func NewApiGatewayDeployment_Override(a ApiGatewayDeployment, scope constructs.Construct, id *string, config *ApiGatewayDeploymentConfig) {
 	_init_.Initialize()
 
@@ -1010,6 +1034,25 @@ func (a *jsiiProxy_ApiGatewayDeployment) OverrideLogicalId(newLogicalId *string)
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) PutCanarySettings(value *ApiGatewayDeploymentCanarySettings) {
+	if err := a.validatePutCanarySettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putCanarySettings",
+		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_ApiGatewayDeployment) ResetCanarySettings() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCanarySettings",
+		nil, // no parameters
 	)
 }
 

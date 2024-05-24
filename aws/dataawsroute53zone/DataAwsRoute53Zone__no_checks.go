@@ -91,10 +91,6 @@ func (j *jsiiProxy_DataAwsRoute53Zone) validateSetPrivateZoneParameters(val inte
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRoute53Zone) validateSetResourceRecordSetCountParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsRoute53Zone) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

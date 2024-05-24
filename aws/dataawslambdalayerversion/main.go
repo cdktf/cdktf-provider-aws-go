@@ -17,6 +17,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "codeSha256", GoGetter: "CodeSha256"},
 			_jsii_.MemberProperty{JsiiProperty: "compatibleArchitecture", GoGetter: "CompatibleArchitecture"},
 			_jsii_.MemberProperty{JsiiProperty: "compatibleArchitectureInput", GoGetter: "CompatibleArchitectureInput"},
 			_jsii_.MemberProperty{JsiiProperty: "compatibleArchitectures", GoGetter: "CompatibleArchitectures"},

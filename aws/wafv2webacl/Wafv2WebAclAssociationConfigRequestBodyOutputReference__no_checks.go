@@ -47,7 +47,23 @@ func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) valid
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) validatePutApiGatewayParameters(value interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) validatePutAppRunnerServiceParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) validatePutCloudfrontParameters(value interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) validatePutCognitoUserPoolParameters(value interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2WebAclAssociationConfigRequestBodyOutputReference) validatePutVerifiedAccessInstanceParameters(value interface{}) error {
 	return nil
 }
 

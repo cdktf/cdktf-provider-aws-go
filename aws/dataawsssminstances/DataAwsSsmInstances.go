@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/data-sources/ssm_instances aws_ssm_instances}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/data-sources/ssm_instances aws_ssm_instances}.
 type DataAwsSsmInstances interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataAwsSsmInstances) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/data-sources/ssm_instances aws_ssm_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/data-sources/ssm_instances aws_ssm_instances} Data Source.
 func NewDataAwsSsmInstances(scope constructs.Construct, id *string, config *DataAwsSsmInstancesConfig) DataAwsSsmInstances {
 	_init_.Initialize()
 
@@ -318,7 +318,7 @@ func NewDataAwsSsmInstances(scope constructs.Construct, id *string, config *Data
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.50.0/docs/data-sources/ssm_instances aws_ssm_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/data-sources/ssm_instances aws_ssm_instances} Data Source.
 func NewDataAwsSsmInstances_Override(d DataAwsSsmInstances, scope constructs.Construct, id *string, config *DataAwsSsmInstancesConfig) {
 	_init_.Initialize()
 
