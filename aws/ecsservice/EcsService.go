@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/ecs_service aws_ecs_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/ecs_service aws_ecs_service}.
 type EcsService interface {
 	cdktf.TerraformResource
 	Alarms() EcsServiceAlarmsOutputReference
@@ -140,6 +140,8 @@ type EcsService interface {
 	Triggers() *map[string]*string
 	SetTriggers(val *map[string]*string)
 	TriggersInput() *map[string]*string
+	VolumeConfiguration() EcsServiceVolumeConfigurationOutputReference
+	VolumeConfigurationInput() *EcsServiceVolumeConfiguration
 	WaitForSteadyState() interface{}
 	SetWaitForSteadyState(val interface{})
 	WaitForSteadyStateInput() interface{}
@@ -197,6 +199,7 @@ type EcsService interface {
 	PutServiceConnectConfiguration(value *EcsServiceServiceConnectConfiguration)
 	PutServiceRegistries(value *EcsServiceServiceRegistries)
 	PutTimeouts(value *EcsServiceTimeouts)
+	PutVolumeConfiguration(value *EcsServiceVolumeConfiguration)
 	ResetAlarms()
 	ResetCapacityProviderStrategy()
 	ResetCluster()
@@ -229,6 +232,7 @@ type EcsService interface {
 	ResetTaskDefinition()
 	ResetTimeouts()
 	ResetTriggers()
+	ResetVolumeConfiguration()
 	ResetWaitForSteadyState()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -1008,6 +1012,26 @@ func (j *jsiiProxy_EcsService) TriggersInput() *map[string]*string {
 	return returns
 }
 
+func (j *jsiiProxy_EcsService) VolumeConfiguration() EcsServiceVolumeConfigurationOutputReference {
+	var returns EcsServiceVolumeConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"volumeConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsService) VolumeConfigurationInput() *EcsServiceVolumeConfiguration {
+	var returns *EcsServiceVolumeConfiguration
+	_jsii_.Get(
+		j,
+		"volumeConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EcsService) WaitForSteadyState() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1029,7 +1053,7 @@ func (j *jsiiProxy_EcsService) WaitForSteadyStateInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/ecs_service aws_ecs_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/ecs_service aws_ecs_service} Resource.
 func NewEcsService(scope constructs.Construct, id *string, config *EcsServiceConfig) EcsService {
 	_init_.Initialize()
 
@@ -1047,7 +1071,7 @@ func NewEcsService(scope constructs.Construct, id *string, config *EcsServiceCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/ecs_service aws_ecs_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/ecs_service aws_ecs_service} Resource.
 func NewEcsService_Override(e EcsService, scope constructs.Construct, id *string, config *EcsServiceConfig) {
 	_init_.Initialize()
 
@@ -1820,6 +1844,17 @@ func (e *jsiiProxy_EcsService) PutTimeouts(value *EcsServiceTimeouts) {
 	)
 }
 
+func (e *jsiiProxy_EcsService) PutVolumeConfiguration(value *EcsServiceVolumeConfiguration) {
+	if err := e.validatePutVolumeConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putVolumeConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EcsService) ResetAlarms() {
 	_jsii_.InvokeVoid(
 		e,
@@ -2056,6 +2091,14 @@ func (e *jsiiProxy_EcsService) ResetTriggers() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetTriggers",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsService) ResetVolumeConfiguration() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetVolumeConfiguration",
 		nil, // no parameters
 	)
 }

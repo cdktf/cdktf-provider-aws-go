@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/workspaces_directory aws_workspaces_directory}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/workspaces_directory aws_workspaces_directory}.
 type WorkspacesDirectory interface {
 	cdktf.TerraformResource
 	Alias() *string
@@ -589,7 +589,7 @@ func (j *jsiiProxy_WorkspacesDirectory) WorkspaceSecurityGroupId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
 func NewWorkspacesDirectory(scope constructs.Construct, id *string, config *WorkspacesDirectoryConfig) WorkspacesDirectory {
 	_init_.Initialize()
 
@@ -607,7 +607,7 @@ func NewWorkspacesDirectory(scope constructs.Construct, id *string, config *Work
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/workspaces_directory aws_workspaces_directory} Resource.
 func NewWorkspacesDirectory_Override(w WorkspacesDirectory, scope constructs.Construct, id *string, config *WorkspacesDirectoryConfig) {
 	_init_.Initialize()
 

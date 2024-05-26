@@ -22,50 +22,50 @@ type CloudformationStackSetConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloudformation_stack_set#name CloudformationStackSet#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudformation_stack_set#name CloudformationStackSet#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloudformation_stack_set#administration_role_arn CloudformationStackSet#administration_role_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudformation_stack_set#administration_role_arn CloudformationStackSet#administration_role_arn}.
 	AdministrationRoleArn *string `field:"optional" json:"administrationRoleArn" yaml:"administrationRoleArn"`
 	// auto_deployment block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloudformation_stack_set#auto_deployment CloudformationStackSet#auto_deployment}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudformation_stack_set#auto_deployment CloudformationStackSet#auto_deployment}
 	AutoDeployment *CloudformationStackSetAutoDeployment `field:"optional" json:"autoDeployment" yaml:"autoDeployment"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloudformation_stack_set#call_as CloudformationStackSet#call_as}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudformation_stack_set#call_as CloudformationStackSet#call_as}.
 	CallAs *string `field:"optional" json:"callAs" yaml:"callAs"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloudformation_stack_set#capabilities CloudformationStackSet#capabilities}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudformation_stack_set#capabilities CloudformationStackSet#capabilities}.
 	Capabilities *[]*string `field:"optional" json:"capabilities" yaml:"capabilities"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloudformation_stack_set#description CloudformationStackSet#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudformation_stack_set#description CloudformationStackSet#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloudformation_stack_set#execution_role_name CloudformationStackSet#execution_role_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudformation_stack_set#execution_role_name CloudformationStackSet#execution_role_name}.
 	ExecutionRoleName *string `field:"optional" json:"executionRoleName" yaml:"executionRoleName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloudformation_stack_set#id CloudformationStackSet#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudformation_stack_set#id CloudformationStackSet#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// managed_execution block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloudformation_stack_set#managed_execution CloudformationStackSet#managed_execution}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudformation_stack_set#managed_execution CloudformationStackSet#managed_execution}
 	ManagedExecution *CloudformationStackSetManagedExecution `field:"optional" json:"managedExecution" yaml:"managedExecution"`
 	// operation_preferences block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloudformation_stack_set#operation_preferences CloudformationStackSet#operation_preferences}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudformation_stack_set#operation_preferences CloudformationStackSet#operation_preferences}
 	OperationPreferences *CloudformationStackSetOperationPreferences `field:"optional" json:"operationPreferences" yaml:"operationPreferences"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloudformation_stack_set#parameters CloudformationStackSet#parameters}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudformation_stack_set#parameters CloudformationStackSet#parameters}.
 	Parameters *map[string]*string `field:"optional" json:"parameters" yaml:"parameters"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloudformation_stack_set#permission_model CloudformationStackSet#permission_model}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudformation_stack_set#permission_model CloudformationStackSet#permission_model}.
 	PermissionModel *string `field:"optional" json:"permissionModel" yaml:"permissionModel"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloudformation_stack_set#tags CloudformationStackSet#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudformation_stack_set#tags CloudformationStackSet#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloudformation_stack_set#tags_all CloudformationStackSet#tags_all}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudformation_stack_set#tags_all CloudformationStackSet#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloudformation_stack_set#template_body CloudformationStackSet#template_body}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudformation_stack_set#template_body CloudformationStackSet#template_body}.
 	TemplateBody *string `field:"optional" json:"templateBody" yaml:"templateBody"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloudformation_stack_set#template_url CloudformationStackSet#template_url}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudformation_stack_set#template_url CloudformationStackSet#template_url}.
 	TemplateUrl *string `field:"optional" json:"templateUrl" yaml:"templateUrl"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloudformation_stack_set#timeouts CloudformationStackSet#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudformation_stack_set#timeouts CloudformationStackSet#timeouts}
 	Timeouts *CloudformationStackSetTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

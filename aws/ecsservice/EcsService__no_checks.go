@@ -119,6 +119,10 @@ func (e *jsiiProxy_EcsService) validatePutTimeoutsParameters(value *EcsServiceTi
 	return nil
 }
 
+func (e *jsiiProxy_EcsService) validatePutVolumeConfigurationParameters(value *EcsServiceVolumeConfiguration) error {
+	return nil
+}
+
 func validateEcsService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/vpc_endpoint_connection_accepter aws_vpc_endpoint_connection_accepter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/vpc_endpoint_connection_accepter aws_vpc_endpoint_connection_accepter}.
 type VpcEndpointConnectionAccepter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_VpcEndpointConnectionAccepter) VpcEndpointState() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/vpc_endpoint_connection_accepter aws_vpc_endpoint_connection_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/vpc_endpoint_connection_accepter aws_vpc_endpoint_connection_accepter} Resource.
 func NewVpcEndpointConnectionAccepter(scope constructs.Construct, id *string, config *VpcEndpointConnectionAccepterConfig) VpcEndpointConnectionAccepter {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewVpcEndpointConnectionAccepter(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/vpc_endpoint_connection_accepter aws_vpc_endpoint_connection_accepter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/vpc_endpoint_connection_accepter aws_vpc_endpoint_connection_accepter} Resource.
 func NewVpcEndpointConnectionAccepter_Override(v VpcEndpointConnectionAccepter, scope constructs.Construct, id *string, config *VpcEndpointConnectionAccepterConfig) {
 	_init_.Initialize()
 

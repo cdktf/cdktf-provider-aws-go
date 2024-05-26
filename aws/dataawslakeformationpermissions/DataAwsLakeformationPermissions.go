@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/data-sources/lakeformation_permissions aws_lakeformation_permissions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/data-sources/lakeformation_permissions aws_lakeformation_permissions}.
 type DataAwsLakeformationPermissions interface {
 	cdktf.TerraformDataSource
 	CatalogId() *string
@@ -526,7 +526,7 @@ func (j *jsiiProxy_DataAwsLakeformationPermissions) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/data-sources/lakeformation_permissions aws_lakeformation_permissions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/data-sources/lakeformation_permissions aws_lakeformation_permissions} Data Source.
 func NewDataAwsLakeformationPermissions(scope constructs.Construct, id *string, config *DataAwsLakeformationPermissionsConfig) DataAwsLakeformationPermissions {
 	_init_.Initialize()
 
@@ -544,7 +544,7 @@ func NewDataAwsLakeformationPermissions(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/data-sources/lakeformation_permissions aws_lakeformation_permissions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/data-sources/lakeformation_permissions aws_lakeformation_permissions} Data Source.
 func NewDataAwsLakeformationPermissions_Override(d DataAwsLakeformationPermissions, scope constructs.Construct, id *string, config *DataAwsLakeformationPermissionsConfig) {
 	_init_.Initialize()
 

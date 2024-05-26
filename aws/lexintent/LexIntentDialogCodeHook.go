@@ -5,9 +5,9 @@ package lexintent
 
 
 type LexIntentDialogCodeHook struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/lex_intent#message_version LexIntent#message_version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/lex_intent#message_version LexIntent#message_version}.
 	MessageVersion *string `field:"required" json:"messageVersion" yaml:"messageVersion"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/lex_intent#uri LexIntent#uri}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/lex_intent#uri LexIntent#uri}.
 	Uri *string `field:"required" json:"uri" yaml:"uri"`
 }
 

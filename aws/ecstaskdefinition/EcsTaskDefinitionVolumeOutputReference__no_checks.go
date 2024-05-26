@@ -71,6 +71,10 @@ func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateSetComplexObj
 	return nil
 }
 
+func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateSetConfigureAtLaunchParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) validateSetHostPathParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/directory_service_radius_settings aws_directory_service_radius_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/directory_service_radius_settings aws_directory_service_radius_settings}.
 type DirectoryServiceRadiusSettings interface {
 	cdktf.TerraformResource
 	AuthenticationProtocol() *string
@@ -542,7 +542,7 @@ func (j *jsiiProxy_DirectoryServiceRadiusSettings) UseSameUsernameInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/directory_service_radius_settings aws_directory_service_radius_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/directory_service_radius_settings aws_directory_service_radius_settings} Resource.
 func NewDirectoryServiceRadiusSettings(scope constructs.Construct, id *string, config *DirectoryServiceRadiusSettingsConfig) DirectoryServiceRadiusSettings {
 	_init_.Initialize()
 
@@ -560,7 +560,7 @@ func NewDirectoryServiceRadiusSettings(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/directory_service_radius_settings aws_directory_service_radius_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/directory_service_radius_settings aws_directory_service_radius_settings} Resource.
 func NewDirectoryServiceRadiusSettings_Override(d DirectoryServiceRadiusSettings, scope constructs.Construct, id *string, config *DirectoryServiceRadiusSettingsConfig) {
 	_init_.Initialize()
 

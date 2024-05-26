@@ -22,17 +22,17 @@ type CodebuildWebhookConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/codebuild_webhook#project_name CodebuildWebhook#project_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/codebuild_webhook#project_name CodebuildWebhook#project_name}.
 	ProjectName *string `field:"required" json:"projectName" yaml:"projectName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/codebuild_webhook#branch_filter CodebuildWebhook#branch_filter}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/codebuild_webhook#branch_filter CodebuildWebhook#branch_filter}.
 	BranchFilter *string `field:"optional" json:"branchFilter" yaml:"branchFilter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/codebuild_webhook#build_type CodebuildWebhook#build_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/codebuild_webhook#build_type CodebuildWebhook#build_type}.
 	BuildType *string `field:"optional" json:"buildType" yaml:"buildType"`
 	// filter_group block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/codebuild_webhook#filter_group CodebuildWebhook#filter_group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/codebuild_webhook#filter_group CodebuildWebhook#filter_group}
 	FilterGroup interface{} `field:"optional" json:"filterGroup" yaml:"filterGroup"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/codebuild_webhook#id CodebuildWebhook#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/codebuild_webhook#id CodebuildWebhook#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

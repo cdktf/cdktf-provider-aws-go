@@ -23,6 +23,9 @@ type EcsTaskDefinitionVolumeOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfigureAtLaunch() interface{}
+	SetConfigureAtLaunch(val interface{})
+	ConfigureAtLaunchInput() interface{}
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -79,6 +82,7 @@ type EcsTaskDefinitionVolumeOutputReference interface {
 	PutDockerVolumeConfiguration(value *EcsTaskDefinitionVolumeDockerVolumeConfiguration)
 	PutEfsVolumeConfiguration(value *EcsTaskDefinitionVolumeEfsVolumeConfiguration)
 	PutFsxWindowsFileServerVolumeConfiguration(value *EcsTaskDefinitionVolumeFsxWindowsFileServerVolumeConfiguration)
+	ResetConfigureAtLaunch()
 	ResetDockerVolumeConfiguration()
 	ResetEfsVolumeConfiguration()
 	ResetFsxWindowsFileServerVolumeConfiguration()
@@ -113,6 +117,26 @@ func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) ComplexObjectIsFromSe
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) ConfigureAtLaunch() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"configureAtLaunch",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) ConfigureAtLaunchInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"configureAtLaunchInput",
 		&returns,
 	)
 	return returns
@@ -314,6 +338,17 @@ func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference)SetComplexObjectIsFrom
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsTaskDefinitionVolumeOutputReference)SetConfigureAtLaunch(val interface{}) {
+	if err := j.validateSetConfigureAtLaunchParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"configureAtLaunch",
 		val,
 	)
 }
@@ -589,6 +624,14 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) PutFsxWindowsFileServ
 		e,
 		"putFsxWindowsFileServerVolumeConfiguration",
 		[]interface{}{value},
+	)
+}
+
+func (e *jsiiProxy_EcsTaskDefinitionVolumeOutputReference) ResetConfigureAtLaunch() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetConfigureAtLaunch",
+		nil, // no parameters
 	)
 }
 

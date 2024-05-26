@@ -7,15 +7,15 @@ package cloudwatcheventconnection
 type CloudwatchEventConnectionAuthParametersInvocationHttpParameters struct {
 	// body block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloudwatch_event_connection#body CloudwatchEventConnection#body}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudwatch_event_connection#body CloudwatchEventConnection#body}
 	Body interface{} `field:"optional" json:"body" yaml:"body"`
 	// header block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloudwatch_event_connection#header CloudwatchEventConnection#header}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudwatch_event_connection#header CloudwatchEventConnection#header}
 	Header interface{} `field:"optional" json:"header" yaml:"header"`
 	// query_string block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/cloudwatch_event_connection#query_string CloudwatchEventConnection#query_string}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/cloudwatch_event_connection#query_string CloudwatchEventConnection#query_string}
 	QueryString interface{} `field:"optional" json:"queryString" yaml:"queryString"`
 }
 

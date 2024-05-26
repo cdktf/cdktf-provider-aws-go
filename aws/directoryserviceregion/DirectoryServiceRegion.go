@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/directory_service_region aws_directory_service_region}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/directory_service_region aws_directory_service_region}.
 type DirectoryServiceRegion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -475,7 +475,7 @@ func (j *jsiiProxy_DirectoryServiceRegion) VpcSettingsInput() *DirectoryServiceR
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/directory_service_region aws_directory_service_region} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/directory_service_region aws_directory_service_region} Resource.
 func NewDirectoryServiceRegion(scope constructs.Construct, id *string, config *DirectoryServiceRegionConfig) DirectoryServiceRegion {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewDirectoryServiceRegion(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.0/docs/resources/directory_service_region aws_directory_service_region} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/directory_service_region aws_directory_service_region} Resource.
 func NewDirectoryServiceRegion_Override(d DirectoryServiceRegion, scope constructs.Construct, id *string, config *DirectoryServiceRegionConfig) {
 	_init_.Initialize()
 
