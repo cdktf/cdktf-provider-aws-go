@@ -24,26 +24,26 @@ type MskServerlessClusterConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// client_authentication block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/msk_serverless_cluster#client_authentication MskServerlessCluster#client_authentication}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/msk_serverless_cluster#client_authentication MskServerlessCluster#client_authentication}
 	ClientAuthentication *MskServerlessClusterClientAuthentication `field:"required" json:"clientAuthentication" yaml:"clientAuthentication"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/msk_serverless_cluster#cluster_name MskServerlessCluster#cluster_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/msk_serverless_cluster#cluster_name MskServerlessCluster#cluster_name}.
 	ClusterName *string `field:"required" json:"clusterName" yaml:"clusterName"`
 	// vpc_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/msk_serverless_cluster#vpc_config MskServerlessCluster#vpc_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/msk_serverless_cluster#vpc_config MskServerlessCluster#vpc_config}
 	VpcConfig interface{} `field:"required" json:"vpcConfig" yaml:"vpcConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/msk_serverless_cluster#id MskServerlessCluster#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/msk_serverless_cluster#id MskServerlessCluster#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/msk_serverless_cluster#tags MskServerlessCluster#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/msk_serverless_cluster#tags MskServerlessCluster#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/msk_serverless_cluster#tags_all MskServerlessCluster#tags_all}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/msk_serverless_cluster#tags_all MskServerlessCluster#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/msk_serverless_cluster#timeouts MskServerlessCluster#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/msk_serverless_cluster#timeouts MskServerlessCluster#timeouts}
 	Timeouts *MskServerlessClusterTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

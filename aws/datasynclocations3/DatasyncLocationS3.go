@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/datasync_location_s3 aws_datasync_location_s3}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/datasync_location_s3 aws_datasync_location_s3}.
 type DatasyncLocationS3 interface {
 	cdktf.TerraformResource
 	AgentArns() *[]*string
@@ -497,7 +497,7 @@ func (j *jsiiProxy_DatasyncLocationS3) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/datasync_location_s3 aws_datasync_location_s3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/datasync_location_s3 aws_datasync_location_s3} Resource.
 func NewDatasyncLocationS3(scope constructs.Construct, id *string, config *DatasyncLocationS3Config) DatasyncLocationS3 {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewDatasyncLocationS3(scope constructs.Construct, id *string, config *Datas
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/datasync_location_s3 aws_datasync_location_s3} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/datasync_location_s3 aws_datasync_location_s3} Resource.
 func NewDatasyncLocationS3_Override(d DatasyncLocationS3, scope constructs.Construct, id *string, config *DatasyncLocationS3Config) {
 	_init_.Initialize()
 

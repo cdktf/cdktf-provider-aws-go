@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/appmesh_mesh aws_appmesh_mesh}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/appmesh_mesh aws_appmesh_mesh}.
 type AppmeshMesh interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -460,7 +460,7 @@ func (j *jsiiProxy_AppmeshMesh) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/appmesh_mesh aws_appmesh_mesh} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/appmesh_mesh aws_appmesh_mesh} Resource.
 func NewAppmeshMesh(scope constructs.Construct, id *string, config *AppmeshMeshConfig) AppmeshMesh {
 	_init_.Initialize()
 
@@ -478,7 +478,7 @@ func NewAppmeshMesh(scope constructs.Construct, id *string, config *AppmeshMeshC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/appmesh_mesh aws_appmesh_mesh} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/appmesh_mesh aws_appmesh_mesh} Resource.
 func NewAppmeshMesh_Override(a AppmeshMesh, scope constructs.Construct, id *string, config *AppmeshMeshConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/redshift_snapshot_schedule aws_redshift_snapshot_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/redshift_snapshot_schedule aws_redshift_snapshot_schedule}.
 type RedshiftSnapshotSchedule interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -488,7 +488,7 @@ func (j *jsiiProxy_RedshiftSnapshotSchedule) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/redshift_snapshot_schedule aws_redshift_snapshot_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/redshift_snapshot_schedule aws_redshift_snapshot_schedule} Resource.
 func NewRedshiftSnapshotSchedule(scope constructs.Construct, id *string, config *RedshiftSnapshotScheduleConfig) RedshiftSnapshotSchedule {
 	_init_.Initialize()
 
@@ -506,7 +506,7 @@ func NewRedshiftSnapshotSchedule(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/redshift_snapshot_schedule aws_redshift_snapshot_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/redshift_snapshot_schedule aws_redshift_snapshot_schedule} Resource.
 func NewRedshiftSnapshotSchedule_Override(r RedshiftSnapshotSchedule, scope constructs.Construct, id *string, config *RedshiftSnapshotScheduleConfig) {
 	_init_.Initialize()
 

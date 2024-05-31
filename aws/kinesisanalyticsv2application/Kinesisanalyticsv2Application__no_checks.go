@@ -103,6 +103,10 @@ func validateKinesisanalyticsv2Application_IsTerraformResourceParameters(x inter
 	return nil
 }
 
+func (j *jsiiProxy_Kinesisanalyticsv2Application) validateSetApplicationModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Kinesisanalyticsv2Application) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

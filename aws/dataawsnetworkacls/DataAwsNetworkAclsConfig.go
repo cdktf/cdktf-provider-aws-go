@@ -24,20 +24,20 @@ type DataAwsNetworkAclsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// filter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/data-sources/network_acls#filter DataAwsNetworkAcls#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/data-sources/network_acls#filter DataAwsNetworkAcls#filter}
 	Filter interface{} `field:"optional" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/data-sources/network_acls#id DataAwsNetworkAcls#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/data-sources/network_acls#id DataAwsNetworkAcls#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/data-sources/network_acls#tags DataAwsNetworkAcls#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/data-sources/network_acls#tags DataAwsNetworkAcls#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/data-sources/network_acls#timeouts DataAwsNetworkAcls#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/data-sources/network_acls#timeouts DataAwsNetworkAcls#timeouts}
 	Timeouts *DataAwsNetworkAclsTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/data-sources/network_acls#vpc_id DataAwsNetworkAcls#vpc_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/data-sources/network_acls#vpc_id DataAwsNetworkAcls#vpc_id}.
 	VpcId *string `field:"optional" json:"vpcId" yaml:"vpcId"`
 }
 

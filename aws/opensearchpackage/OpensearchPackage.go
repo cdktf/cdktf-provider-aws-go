@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/opensearch_package aws_opensearch_package}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/opensearch_package aws_opensearch_package}.
 type OpensearchPackage interface {
 	cdktf.TerraformResource
 	AvailablePackageVersion() *string
@@ -425,7 +425,7 @@ func (j *jsiiProxy_OpensearchPackage) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/opensearch_package aws_opensearch_package} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/opensearch_package aws_opensearch_package} Resource.
 func NewOpensearchPackage(scope constructs.Construct, id *string, config *OpensearchPackageConfig) OpensearchPackage {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewOpensearchPackage(scope constructs.Construct, id *string, config *Opense
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/opensearch_package aws_opensearch_package} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/opensearch_package aws_opensearch_package} Resource.
 func NewOpensearchPackage_Override(o OpensearchPackage, scope constructs.Construct, id *string, config *OpensearchPackageConfig) {
 	_init_.Initialize()
 

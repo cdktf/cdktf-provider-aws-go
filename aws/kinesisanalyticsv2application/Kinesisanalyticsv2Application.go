@@ -12,11 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/kinesisanalyticsv2_application aws_kinesisanalyticsv2_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/kinesisanalyticsv2_application aws_kinesisanalyticsv2_application}.
 type Kinesisanalyticsv2Application interface {
 	cdktf.TerraformResource
 	ApplicationConfiguration() Kinesisanalyticsv2ApplicationApplicationConfigurationOutputReference
 	ApplicationConfigurationInput() *Kinesisanalyticsv2ApplicationApplicationConfiguration
+	ApplicationMode() *string
+	SetApplicationMode(val *string)
+	ApplicationModeInput() *string
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -146,6 +149,7 @@ type Kinesisanalyticsv2Application interface {
 	PutCloudwatchLoggingOptions(value *Kinesisanalyticsv2ApplicationCloudwatchLoggingOptions)
 	PutTimeouts(value *Kinesisanalyticsv2ApplicationTimeouts)
 	ResetApplicationConfiguration()
+	ResetApplicationMode()
 	ResetCloudwatchLoggingOptions()
 	ResetDescription()
 	ResetForceStop()
@@ -190,6 +194,26 @@ func (j *jsiiProxy_Kinesisanalyticsv2Application) ApplicationConfigurationInput(
 	_jsii_.Get(
 		j,
 		"applicationConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Kinesisanalyticsv2Application) ApplicationMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"applicationMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Kinesisanalyticsv2Application) ApplicationModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"applicationModeInput",
 		&returns,
 	)
 	return returns
@@ -626,7 +650,7 @@ func (j *jsiiProxy_Kinesisanalyticsv2Application) VersionId() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/kinesisanalyticsv2_application aws_kinesisanalyticsv2_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/kinesisanalyticsv2_application aws_kinesisanalyticsv2_application} Resource.
 func NewKinesisanalyticsv2Application(scope constructs.Construct, id *string, config *Kinesisanalyticsv2ApplicationConfig) Kinesisanalyticsv2Application {
 	_init_.Initialize()
 
@@ -644,7 +668,7 @@ func NewKinesisanalyticsv2Application(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.51.1/docs/resources/kinesisanalyticsv2_application aws_kinesisanalyticsv2_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/kinesisanalyticsv2_application aws_kinesisanalyticsv2_application} Resource.
 func NewKinesisanalyticsv2Application_Override(k Kinesisanalyticsv2Application, scope constructs.Construct, id *string, config *Kinesisanalyticsv2ApplicationConfig) {
 	_init_.Initialize()
 
@@ -652,6 +676,17 @@ func NewKinesisanalyticsv2Application_Override(k Kinesisanalyticsv2Application, 
 		"@cdktf/provider-aws.kinesisanalyticsv2Application.Kinesisanalyticsv2Application",
 		[]interface{}{scope, id, config},
 		k,
+	)
+}
+
+func (j *jsiiProxy_Kinesisanalyticsv2Application)SetApplicationMode(val *string) {
+	if err := j.validateSetApplicationModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"applicationMode",
+		val,
 	)
 }
 
@@ -1212,6 +1247,14 @@ func (k *jsiiProxy_Kinesisanalyticsv2Application) ResetApplicationConfiguration(
 	_jsii_.InvokeVoid(
 		k,
 		"resetApplicationConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_Kinesisanalyticsv2Application) ResetApplicationMode() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetApplicationMode",
 		nil, // no parameters
 	)
 }
