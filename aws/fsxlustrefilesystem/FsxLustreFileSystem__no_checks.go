@@ -79,6 +79,10 @@ func (f *jsiiProxy_FsxLustreFileSystem) validatePutLogConfigurationParameters(va
 	return nil
 }
 
+func (f *jsiiProxy_FsxLustreFileSystem) validatePutMetadataConfigurationParameters(value *FsxLustreFileSystemMetadataConfiguration) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxLustreFileSystem) validatePutRootSquashConfigurationParameters(value *FsxLustreFileSystemRootSquashConfiguration) error {
 	return nil
 }

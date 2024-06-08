@@ -147,7 +147,15 @@ func (j *jsiiProxy_MwaaEnvironment) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
+func (j *jsiiProxy_MwaaEnvironment) validateSetMaxWebserversParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_MwaaEnvironment) validateSetMaxWorkersParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_MwaaEnvironment) validateSetMinWebserversParameters(val *float64) error {
 	return nil
 }
 

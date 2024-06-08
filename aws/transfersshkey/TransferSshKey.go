@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/transfer_ssh_key aws_transfer_ssh_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/transfer_ssh_key aws_transfer_ssh_key}.
 type TransferSshKey interface {
 	cdktf.TerraformResource
 	Body() *string
@@ -64,6 +64,7 @@ type TransferSshKey interface {
 	ServerId() *string
 	SetServerId(val *string)
 	ServerIdInput() *string
+	SshKeyId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -328,6 +329,16 @@ func (j *jsiiProxy_TransferSshKey) ServerIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_TransferSshKey) SshKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sshKeyId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_TransferSshKey) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -379,7 +390,7 @@ func (j *jsiiProxy_TransferSshKey) UserNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/transfer_ssh_key aws_transfer_ssh_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/transfer_ssh_key aws_transfer_ssh_key} Resource.
 func NewTransferSshKey(scope constructs.Construct, id *string, config *TransferSshKeyConfig) TransferSshKey {
 	_init_.Initialize()
 
@@ -397,7 +408,7 @@ func NewTransferSshKey(scope constructs.Construct, id *string, config *TransferS
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/transfer_ssh_key aws_transfer_ssh_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/transfer_ssh_key aws_transfer_ssh_key} Resource.
 func NewTransferSshKey_Override(t TransferSshKey, scope constructs.Construct, id *string, config *TransferSshKeyConfig) {
 	_init_.Initialize()
 

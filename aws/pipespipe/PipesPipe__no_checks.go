@@ -79,6 +79,10 @@ func (p *jsiiProxy_PipesPipe) validatePutEnrichmentParametersParameters(value *P
 	return nil
 }
 
+func (p *jsiiProxy_PipesPipe) validatePutLogConfigurationParameters(value *PipesPipeLogConfiguration) error {
+	return nil
+}
+
 func (p *jsiiProxy_PipesPipe) validatePutSourceParametersParameters(value *PipesPipeSourceParameters) error {
 	return nil
 }

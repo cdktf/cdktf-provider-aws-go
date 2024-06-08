@@ -12,11 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/data-sources/customer_gateway aws_customer_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/customer_gateway aws_customer_gateway}.
 type DataAwsCustomerGateway interface {
 	cdktf.TerraformDataSource
 	Arn() *string
 	BgpAsn() *float64
+	BgpAsnExtended() *float64
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CertificateArn() *string
@@ -137,6 +138,16 @@ func (j *jsiiProxy_DataAwsCustomerGateway) BgpAsn() *float64 {
 	_jsii_.Get(
 		j,
 		"bgpAsn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsCustomerGateway) BgpAsnExtended() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"bgpAsnExtended",
 		&returns,
 	)
 	return returns
@@ -403,7 +414,7 @@ func (j *jsiiProxy_DataAwsCustomerGateway) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/data-sources/customer_gateway aws_customer_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/customer_gateway aws_customer_gateway} Data Source.
 func NewDataAwsCustomerGateway(scope constructs.Construct, id *string, config *DataAwsCustomerGatewayConfig) DataAwsCustomerGateway {
 	_init_.Initialize()
 
@@ -421,7 +432,7 @@ func NewDataAwsCustomerGateway(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/data-sources/customer_gateway aws_customer_gateway} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/customer_gateway aws_customer_gateway} Data Source.
 func NewDataAwsCustomerGateway_Override(d DataAwsCustomerGateway, scope constructs.Construct, id *string, config *DataAwsCustomerGatewayConfig) {
 	_init_.Initialize()
 

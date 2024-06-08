@@ -255,6 +255,14 @@ func (j *jsiiProxy_CustomerGateway) validateSetBgpAsnParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_CustomerGateway) validateSetBgpAsnExtendedParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CustomerGateway) validateSetCertificateArnParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

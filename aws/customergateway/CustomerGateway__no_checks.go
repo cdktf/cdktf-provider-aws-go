@@ -95,6 +95,10 @@ func (j *jsiiProxy_CustomerGateway) validateSetBgpAsnParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_CustomerGateway) validateSetBgpAsnExtendedParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CustomerGateway) validateSetCertificateArnParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/cloudfrontkeyvaluestore_key aws_cloudfrontkeyvaluestore_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/cloudfrontkeyvaluestore_key aws_cloudfrontkeyvaluestore_key}.
 type CloudfrontkeyvaluestoreKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -377,7 +377,7 @@ func (j *jsiiProxy_CloudfrontkeyvaluestoreKey) ValueInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/cloudfrontkeyvaluestore_key aws_cloudfrontkeyvaluestore_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/cloudfrontkeyvaluestore_key aws_cloudfrontkeyvaluestore_key} Resource.
 func NewCloudfrontkeyvaluestoreKey(scope constructs.Construct, id *string, config *CloudfrontkeyvaluestoreKeyConfig) CloudfrontkeyvaluestoreKey {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewCloudfrontkeyvaluestoreKey(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/cloudfrontkeyvaluestore_key aws_cloudfrontkeyvaluestore_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/cloudfrontkeyvaluestore_key aws_cloudfrontkeyvaluestore_key} Resource.
 func NewCloudfrontkeyvaluestoreKey_Override(c CloudfrontkeyvaluestoreKey, scope constructs.Construct, id *string, config *CloudfrontkeyvaluestoreKeyConfig) {
 	_init_.Initialize()
 

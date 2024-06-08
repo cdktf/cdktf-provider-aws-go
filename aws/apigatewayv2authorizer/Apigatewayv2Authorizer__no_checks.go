@@ -79,6 +79,10 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) validatePutJwtConfigurationParameters
 	return nil
 }
 
+func (a *jsiiProxy_Apigatewayv2Authorizer) validatePutTimeoutsParameters(value *Apigatewayv2AuthorizerTimeouts) error {
+	return nil
+}
+
 func validateApigatewayv2Authorizer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

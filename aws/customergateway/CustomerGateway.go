@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/customer_gateway aws_customer_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/customer_gateway aws_customer_gateway}.
 type CustomerGateway interface {
 	cdktf.TerraformResource
 	Arn() *string
 	BgpAsn() *string
 	SetBgpAsn(val *string)
+	BgpAsnExtended() *string
+	SetBgpAsnExtended(val *string)
+	BgpAsnExtendedInput() *string
 	BgpAsnInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -129,6 +132,8 @@ type CustomerGateway interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetBgpAsn()
+	ResetBgpAsnExtended()
 	ResetCertificateArn()
 	ResetDeviceName()
 	ResetId()
@@ -171,6 +176,26 @@ func (j *jsiiProxy_CustomerGateway) BgpAsn() *string {
 	_jsii_.Get(
 		j,
 		"bgpAsn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomerGateway) BgpAsnExtended() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bgpAsnExtended",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CustomerGateway) BgpAsnExtendedInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bgpAsnExtendedInput",
 		&returns,
 	)
 	return returns
@@ -487,7 +512,7 @@ func (j *jsiiProxy_CustomerGateway) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/customer_gateway aws_customer_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/customer_gateway aws_customer_gateway} Resource.
 func NewCustomerGateway(scope constructs.Construct, id *string, config *CustomerGatewayConfig) CustomerGateway {
 	_init_.Initialize()
 
@@ -505,7 +530,7 @@ func NewCustomerGateway(scope constructs.Construct, id *string, config *Customer
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/customer_gateway aws_customer_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/customer_gateway aws_customer_gateway} Resource.
 func NewCustomerGateway_Override(c CustomerGateway, scope constructs.Construct, id *string, config *CustomerGatewayConfig) {
 	_init_.Initialize()
 
@@ -523,6 +548,17 @@ func (j *jsiiProxy_CustomerGateway)SetBgpAsn(val *string) {
 	_jsii_.Set(
 		j,
 		"bgpAsn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CustomerGateway)SetBgpAsnExtended(val *string) {
+	if err := j.validateSetBgpAsnExtendedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bgpAsnExtended",
 		val,
 	)
 }
@@ -1022,6 +1058,22 @@ func (c *jsiiProxy_CustomerGateway) OverrideLogicalId(newLogicalId *string) {
 		c,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (c *jsiiProxy_CustomerGateway) ResetBgpAsn() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBgpAsn",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CustomerGateway) ResetBgpAsnExtended() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBgpAsnExtended",
+		nil, // no parameters
 	)
 }
 

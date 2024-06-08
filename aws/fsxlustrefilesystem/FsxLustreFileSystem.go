@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system}.
 type FsxLustreFileSystem interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -89,6 +89,8 @@ type FsxLustreFileSystem interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LogConfiguration() FsxLustreFileSystemLogConfigurationOutputReference
 	LogConfigurationInput() *FsxLustreFileSystemLogConfiguration
+	MetadataConfiguration() FsxLustreFileSystemMetadataConfigurationOutputReference
+	MetadataConfigurationInput() *FsxLustreFileSystemMetadataConfiguration
 	MountName() *string
 	NetworkInterfaceIds() *[]*string
 	// The tree node.
@@ -183,6 +185,7 @@ type FsxLustreFileSystem interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLogConfiguration(value *FsxLustreFileSystemLogConfiguration)
+	PutMetadataConfiguration(value *FsxLustreFileSystemMetadataConfiguration)
 	PutRootSquashConfiguration(value *FsxLustreFileSystemRootSquashConfiguration)
 	PutTimeouts(value *FsxLustreFileSystemTimeouts)
 	ResetAutoImportPolicy()
@@ -200,6 +203,7 @@ type FsxLustreFileSystem interface {
 	ResetImportPath()
 	ResetKmsKeyId()
 	ResetLogConfiguration()
+	ResetMetadataConfiguration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -640,6 +644,26 @@ func (j *jsiiProxy_FsxLustreFileSystem) LogConfigurationInput() *FsxLustreFileSy
 	return returns
 }
 
+func (j *jsiiProxy_FsxLustreFileSystem) MetadataConfiguration() FsxLustreFileSystemMetadataConfigurationOutputReference {
+	var returns FsxLustreFileSystemMetadataConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"metadataConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxLustreFileSystem) MetadataConfigurationInput() *FsxLustreFileSystemMetadataConfiguration {
+	var returns *FsxLustreFileSystemMetadataConfiguration
+	_jsii_.Get(
+		j,
+		"metadataConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxLustreFileSystem) MountName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -951,7 +975,7 @@ func (j *jsiiProxy_FsxLustreFileSystem) WeeklyMaintenanceStartTimeInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
 func NewFsxLustreFileSystem(scope constructs.Construct, id *string, config *FsxLustreFileSystemConfig) FsxLustreFileSystem {
 	_init_.Initialize()
 
@@ -969,7 +993,7 @@ func NewFsxLustreFileSystem(scope constructs.Construct, id *string, config *FsxL
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
 func NewFsxLustreFileSystem_Override(f FsxLustreFileSystem, scope constructs.Construct, id *string, config *FsxLustreFileSystemConfig) {
 	_init_.Initialize()
 
@@ -1654,6 +1678,17 @@ func (f *jsiiProxy_FsxLustreFileSystem) PutLogConfiguration(value *FsxLustreFile
 	)
 }
 
+func (f *jsiiProxy_FsxLustreFileSystem) PutMetadataConfiguration(value *FsxLustreFileSystemMetadataConfiguration) {
+	if err := f.validatePutMetadataConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putMetadataConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FsxLustreFileSystem) PutRootSquashConfiguration(value *FsxLustreFileSystemRootSquashConfiguration) {
 	if err := f.validatePutRootSquashConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1792,6 +1827,14 @@ func (f *jsiiProxy_FsxLustreFileSystem) ResetLogConfiguration() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetLogConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxLustreFileSystem) ResetMetadataConfiguration() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetMetadataConfiguration",
 		nil, // no parameters
 	)
 }

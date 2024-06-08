@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/pipes_pipe aws_pipes_pipe}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/pipes_pipe aws_pipes_pipe}.
 type PipesPipe interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -58,6 +58,8 @@ type PipesPipe interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LogConfiguration() PipesPipeLogConfigurationOutputReference
+	LogConfigurationInput() *PipesPipeLogConfiguration
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -147,6 +149,7 @@ type PipesPipe interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEnrichmentParameters(value *PipesPipeEnrichmentParameters)
+	PutLogConfiguration(value *PipesPipeLogConfiguration)
 	PutSourceParameters(value *PipesPipeSourceParameters)
 	PutTargetParameters(value *PipesPipeTargetParameters)
 	PutTimeouts(value *PipesPipeTimeouts)
@@ -155,6 +158,7 @@ type PipesPipe interface {
 	ResetEnrichment()
 	ResetEnrichmentParameters()
 	ResetId()
+	ResetLogConfiguration()
 	ResetName()
 	ResetNamePrefix()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -378,6 +382,26 @@ func (j *jsiiProxy_PipesPipe) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipe) LogConfiguration() PipesPipeLogConfigurationOutputReference {
+	var returns PipesPipeLogConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"logConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipe) LogConfigurationInput() *PipesPipeLogConfiguration {
+	var returns *PipesPipeLogConfiguration
+	_jsii_.Get(
+		j,
+		"logConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -654,7 +678,7 @@ func (j *jsiiProxy_PipesPipe) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/pipes_pipe aws_pipes_pipe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/pipes_pipe aws_pipes_pipe} Resource.
 func NewPipesPipe(scope constructs.Construct, id *string, config *PipesPipeConfig) PipesPipe {
 	_init_.Initialize()
 
@@ -672,7 +696,7 @@ func NewPipesPipe(scope constructs.Construct, id *string, config *PipesPipeConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/pipes_pipe aws_pipes_pipe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/pipes_pipe aws_pipes_pipe} Resource.
 func NewPipesPipe_Override(p PipesPipe, scope constructs.Construct, id *string, config *PipesPipeConfig) {
 	_init_.Initialize()
 
@@ -1236,6 +1260,17 @@ func (p *jsiiProxy_PipesPipe) PutEnrichmentParameters(value *PipesPipeEnrichment
 	)
 }
 
+func (p *jsiiProxy_PipesPipe) PutLogConfiguration(value *PipesPipeLogConfiguration) {
+	if err := p.validatePutLogConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		p,
+		"putLogConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (p *jsiiProxy_PipesPipe) PutSourceParameters(value *PipesPipeSourceParameters) {
 	if err := p.validatePutSourceParametersParameters(value); err != nil {
 		panic(err)
@@ -1305,6 +1340,14 @@ func (p *jsiiProxy_PipesPipe) ResetId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipesPipe) ResetLogConfiguration() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetLogConfiguration",
 		nil, // no parameters
 	)
 }

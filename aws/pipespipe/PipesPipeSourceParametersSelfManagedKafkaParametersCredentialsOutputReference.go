@@ -76,6 +76,7 @@ type PipesPipeSourceParametersSelfManagedKafkaParametersCredentialsOutputReferen
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBasicAuth()
 	ResetClientCertificateTlsAuth()
 	ResetSaslScram256Auth()
 	ResetSaslScram512Auth()
@@ -555,6 +556,14 @@ func (p *jsiiProxy_PipesPipeSourceParametersSelfManagedKafkaParametersCredential
 	)
 
 	return returns
+}
+
+func (p *jsiiProxy_PipesPipeSourceParametersSelfManagedKafkaParametersCredentialsOutputReference) ResetBasicAuth() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetBasicAuth",
+		nil, // no parameters
+	)
 }
 
 func (p *jsiiProxy_PipesPipeSourceParametersSelfManagedKafkaParametersCredentialsOutputReference) ResetClientCertificateTlsAuth() {

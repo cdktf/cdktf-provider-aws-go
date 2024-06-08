@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/apigatewayv2_authorizer aws_apigatewayv2_authorizer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/apigatewayv2_authorizer aws_apigatewayv2_authorizer}.
 type Apigatewayv2Authorizer interface {
 	cdktf.TerraformResource
 	ApiId() *string
@@ -93,6 +93,8 @@ type Apigatewayv2Authorizer interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() Apigatewayv2AuthorizerTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -137,6 +139,7 @@ type Apigatewayv2Authorizer interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutJwtConfiguration(value *Apigatewayv2AuthorizerJwtConfiguration)
+	PutTimeouts(value *Apigatewayv2AuthorizerTimeouts)
 	ResetAuthorizerCredentialsArn()
 	ResetAuthorizerPayloadFormatVersion()
 	ResetAuthorizerResultTtlInSeconds()
@@ -148,6 +151,7 @@ type Apigatewayv2Authorizer interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -546,8 +550,28 @@ func (j *jsiiProxy_Apigatewayv2Authorizer) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Apigatewayv2Authorizer) Timeouts() Apigatewayv2AuthorizerTimeoutsOutputReference {
+	var returns Apigatewayv2AuthorizerTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/apigatewayv2_authorizer aws_apigatewayv2_authorizer} Resource.
+func (j *jsiiProxy_Apigatewayv2Authorizer) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/apigatewayv2_authorizer aws_apigatewayv2_authorizer} Resource.
 func NewApigatewayv2Authorizer(scope constructs.Construct, id *string, config *Apigatewayv2AuthorizerConfig) Apigatewayv2Authorizer {
 	_init_.Initialize()
 
@@ -565,7 +589,7 @@ func NewApigatewayv2Authorizer(scope constructs.Construct, id *string, config *A
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/apigatewayv2_authorizer aws_apigatewayv2_authorizer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/apigatewayv2_authorizer aws_apigatewayv2_authorizer} Resource.
 func NewApigatewayv2Authorizer_Override(a Apigatewayv2Authorizer, scope constructs.Construct, id *string, config *Apigatewayv2AuthorizerConfig) {
 	_init_.Initialize()
 
@@ -1118,6 +1142,17 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) PutJwtConfiguration(value *Apigateway
 	)
 }
 
+func (a *jsiiProxy_Apigatewayv2Authorizer) PutTimeouts(value *Apigatewayv2AuthorizerTimeouts) {
+	if err := a.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_Apigatewayv2Authorizer) ResetAuthorizerCredentialsArn() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1186,6 +1221,14 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_Apigatewayv2Authorizer) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

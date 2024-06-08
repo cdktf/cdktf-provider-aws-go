@@ -84,6 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "supportedModes", GoGetter: "SupportedModes"},
 			_jsii_.MemberProperty{JsiiProperty: "supportedTimezones", GoGetter: "SupportedTimezones"},
 			_jsii_.MemberProperty{JsiiProperty: "supportsGlobalDatabases", GoGetter: "SupportsGlobalDatabases"},
+			_jsii_.MemberProperty{JsiiProperty: "supportsLimitlessDatabase", GoGetter: "SupportsLimitlessDatabase"},
 			_jsii_.MemberProperty{JsiiProperty: "supportsLogExportsToCloudwatch", GoGetter: "SupportsLogExportsToCloudwatch"},
 			_jsii_.MemberProperty{JsiiProperty: "supportsParallelQuery", GoGetter: "SupportsParallelQuery"},
 			_jsii_.MemberProperty{JsiiProperty: "supportsReadReplica", GoGetter: "SupportsReadReplica"},

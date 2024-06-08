@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/data-sources/msk_vpc_connection aws_msk_vpc_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/msk_vpc_connection aws_msk_vpc_connection}.
 type DataAwsMskVpcConnection interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -367,7 +367,7 @@ func (j *jsiiProxy_DataAwsMskVpcConnection) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/data-sources/msk_vpc_connection aws_msk_vpc_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/msk_vpc_connection aws_msk_vpc_connection} Data Source.
 func NewDataAwsMskVpcConnection(scope constructs.Construct, id *string, config *DataAwsMskVpcConnectionConfig) DataAwsMskVpcConnection {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewDataAwsMskVpcConnection(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/data-sources/msk_vpc_connection aws_msk_vpc_connection} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/msk_vpc_connection aws_msk_vpc_connection} Data Source.
 func NewDataAwsMskVpcConnection_Override(d DataAwsMskVpcConnection, scope constructs.Construct, id *string, config *DataAwsMskVpcConnectionConfig) {
 	_init_.Initialize()
 

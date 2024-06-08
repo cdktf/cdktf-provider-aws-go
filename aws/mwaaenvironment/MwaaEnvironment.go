@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/mwaa_environment aws_mwaa_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/mwaa_environment aws_mwaa_environment}.
 type MwaaEnvironment interface {
 	cdktf.TerraformResource
 	AirflowConfigurationOptions() *map[string]*string
@@ -73,9 +73,15 @@ type MwaaEnvironment interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	LoggingConfiguration() MwaaEnvironmentLoggingConfigurationOutputReference
 	LoggingConfigurationInput() *MwaaEnvironmentLoggingConfiguration
+	MaxWebservers() *float64
+	SetMaxWebservers(val *float64)
+	MaxWebserversInput() *float64
 	MaxWorkers() *float64
 	SetMaxWorkers(val *float64)
 	MaxWorkersInput() *float64
+	MinWebservers() *float64
+	SetMinWebservers(val *float64)
+	MinWebserversInput() *float64
 	MinWorkers() *float64
 	SetMinWorkers(val *float64)
 	MinWorkersInput() *float64
@@ -197,7 +203,9 @@ type MwaaEnvironment interface {
 	ResetId()
 	ResetKmsKey()
 	ResetLoggingConfiguration()
+	ResetMaxWebservers()
 	ResetMaxWorkers()
+	ResetMinWebservers()
 	ResetMinWorkers()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -542,6 +550,26 @@ func (j *jsiiProxy_MwaaEnvironment) LoggingConfigurationInput() *MwaaEnvironment
 	return returns
 }
 
+func (j *jsiiProxy_MwaaEnvironment) MaxWebservers() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxWebservers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwaaEnvironment) MaxWebserversInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxWebserversInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MwaaEnvironment) MaxWorkers() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -557,6 +585,26 @@ func (j *jsiiProxy_MwaaEnvironment) MaxWorkersInput() *float64 {
 	_jsii_.Get(
 		j,
 		"maxWorkersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwaaEnvironment) MinWebservers() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minWebservers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MwaaEnvironment) MinWebserversInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"minWebserversInput",
 		&returns,
 	)
 	return returns
@@ -993,7 +1041,7 @@ func (j *jsiiProxy_MwaaEnvironment) WeeklyMaintenanceWindowStartInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/mwaa_environment aws_mwaa_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/mwaa_environment aws_mwaa_environment} Resource.
 func NewMwaaEnvironment(scope constructs.Construct, id *string, config *MwaaEnvironmentConfig) MwaaEnvironment {
 	_init_.Initialize()
 
@@ -1011,7 +1059,7 @@ func NewMwaaEnvironment(scope constructs.Construct, id *string, config *MwaaEnvi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/mwaa_environment aws_mwaa_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/mwaa_environment aws_mwaa_environment} Resource.
 func NewMwaaEnvironment_Override(m MwaaEnvironment, scope constructs.Construct, id *string, config *MwaaEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -1159,6 +1207,17 @@ func (j *jsiiProxy_MwaaEnvironment)SetLifecycle(val *cdktf.TerraformResourceLife
 	)
 }
 
+func (j *jsiiProxy_MwaaEnvironment)SetMaxWebservers(val *float64) {
+	if err := j.validateSetMaxWebserversParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxWebservers",
+		val,
+	)
+}
+
 func (j *jsiiProxy_MwaaEnvironment)SetMaxWorkers(val *float64) {
 	if err := j.validateSetMaxWorkersParameters(val); err != nil {
 		panic(err)
@@ -1166,6 +1225,17 @@ func (j *jsiiProxy_MwaaEnvironment)SetMaxWorkers(val *float64) {
 	_jsii_.Set(
 		j,
 		"maxWorkers",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MwaaEnvironment)SetMinWebservers(val *float64) {
+	if err := j.validateSetMinWebserversParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minWebservers",
 		val,
 	)
 }
@@ -1785,10 +1855,26 @@ func (m *jsiiProxy_MwaaEnvironment) ResetLoggingConfiguration() {
 	)
 }
 
+func (m *jsiiProxy_MwaaEnvironment) ResetMaxWebservers() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMaxWebservers",
+		nil, // no parameters
+	)
+}
+
 func (m *jsiiProxy_MwaaEnvironment) ResetMaxWorkers() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetMaxWorkers",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MwaaEnvironment) ResetMinWebservers() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetMinWebservers",
 		nil, // no parameters
 	)
 }

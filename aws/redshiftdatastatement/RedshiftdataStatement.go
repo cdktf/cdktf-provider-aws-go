@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/redshiftdata_statement aws_redshiftdata_statement}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/redshiftdata_statement aws_redshiftdata_statement}.
 type RedshiftdataStatement interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -548,7 +548,7 @@ func (j *jsiiProxy_RedshiftdataStatement) WorkgroupNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/redshiftdata_statement aws_redshiftdata_statement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/redshiftdata_statement aws_redshiftdata_statement} Resource.
 func NewRedshiftdataStatement(scope constructs.Construct, id *string, config *RedshiftdataStatementConfig) RedshiftdataStatement {
 	_init_.Initialize()
 
@@ -566,7 +566,7 @@ func NewRedshiftdataStatement(scope constructs.Construct, id *string, config *Re
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.52.0/docs/resources/redshiftdata_statement aws_redshiftdata_statement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/redshiftdata_statement aws_redshiftdata_statement} Resource.
 func NewRedshiftdataStatement_Override(r RedshiftdataStatement, scope constructs.Construct, id *string, config *RedshiftdataStatementConfig) {
 	_init_.Initialize()
 
