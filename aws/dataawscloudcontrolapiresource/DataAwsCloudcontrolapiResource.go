@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/cloudcontrolapi_resource aws_cloudcontrolapi_resource}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/cloudcontrolapi_resource aws_cloudcontrolapi_resource}.
 type DataAwsCloudcontrolapiResource interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataAwsCloudcontrolapiResource) TypeVersionIdInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/cloudcontrolapi_resource aws_cloudcontrolapi_resource} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/cloudcontrolapi_resource aws_cloudcontrolapi_resource} Data Source.
 func NewDataAwsCloudcontrolapiResource(scope constructs.Construct, id *string, config *DataAwsCloudcontrolapiResourceConfig) DataAwsCloudcontrolapiResource {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataAwsCloudcontrolapiResource(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/cloudcontrolapi_resource aws_cloudcontrolapi_resource} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/cloudcontrolapi_resource aws_cloudcontrolapi_resource} Data Source.
 func NewDataAwsCloudcontrolapiResource_Override(d DataAwsCloudcontrolapiResource, scope constructs.Construct, id *string, config *DataAwsCloudcontrolapiResourceConfig) {
 	_init_.Initialize()
 

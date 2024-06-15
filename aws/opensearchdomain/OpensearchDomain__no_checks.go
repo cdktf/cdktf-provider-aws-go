@@ -175,6 +175,10 @@ func (j *jsiiProxy_OpensearchDomain) validateSetIdParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_OpensearchDomain) validateSetIpAddressTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_OpensearchDomain) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

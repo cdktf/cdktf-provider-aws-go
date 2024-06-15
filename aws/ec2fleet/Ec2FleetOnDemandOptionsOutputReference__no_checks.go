@@ -47,6 +47,10 @@ func (e *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) validateInterpolation
 	return nil
 }
 
+func (e *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) validatePutCapacityReservationOptionsParameters(value *Ec2FleetOnDemandOptionsCapacityReservationOptions) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

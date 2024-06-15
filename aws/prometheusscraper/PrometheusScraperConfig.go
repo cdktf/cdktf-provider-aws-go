@@ -22,23 +22,23 @@ type PrometheusScraperConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/prometheus_scraper#scrape_configuration PrometheusScraper#scrape_configuration}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/prometheus_scraper#scrape_configuration PrometheusScraper#scrape_configuration}.
 	ScrapeConfiguration *string `field:"required" json:"scrapeConfiguration" yaml:"scrapeConfiguration"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/prometheus_scraper#alias PrometheusScraper#alias}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/prometheus_scraper#alias PrometheusScraper#alias}.
 	Alias *string `field:"optional" json:"alias" yaml:"alias"`
 	// destination block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/prometheus_scraper#destination PrometheusScraper#destination}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/prometheus_scraper#destination PrometheusScraper#destination}
 	Destination interface{} `field:"optional" json:"destination" yaml:"destination"`
 	// source block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/prometheus_scraper#source PrometheusScraper#source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/prometheus_scraper#source PrometheusScraper#source}
 	Source interface{} `field:"optional" json:"source" yaml:"source"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/prometheus_scraper#tags PrometheusScraper#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/prometheus_scraper#tags PrometheusScraper#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/prometheus_scraper#timeouts PrometheusScraper#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/prometheus_scraper#timeouts PrometheusScraper#timeouts}
 	Timeouts *PrometheusScraperTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

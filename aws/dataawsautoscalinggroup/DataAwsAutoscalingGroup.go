@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/autoscaling_group aws_autoscaling_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/autoscaling_group aws_autoscaling_group}.
 type DataAwsAutoscalingGroup interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -607,7 +607,7 @@ func (j *jsiiProxy_DataAwsAutoscalingGroup) WarmPoolSize() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/autoscaling_group aws_autoscaling_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/autoscaling_group aws_autoscaling_group} Data Source.
 func NewDataAwsAutoscalingGroup(scope constructs.Construct, id *string, config *DataAwsAutoscalingGroupConfig) DataAwsAutoscalingGroup {
 	_init_.Initialize()
 
@@ -625,7 +625,7 @@ func NewDataAwsAutoscalingGroup(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/data-sources/autoscaling_group aws_autoscaling_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/autoscaling_group aws_autoscaling_group} Data Source.
 func NewDataAwsAutoscalingGroup_Override(d DataAwsAutoscalingGroup, scope constructs.Construct, id *string, config *DataAwsAutoscalingGroupConfig) {
 	_init_.Initialize()
 

@@ -79,6 +79,10 @@ func (v *jsiiProxy_VpcEndpoint) validatePutDnsOptionsParameters(value *VpcEndpoi
 	return nil
 }
 
+func (v *jsiiProxy_VpcEndpoint) validatePutSubnetConfigurationParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpoint) validatePutTimeoutsParameters(value *VpcEndpointTimeouts) error {
 	return nil
 }

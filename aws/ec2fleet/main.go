@@ -883,12 +883,53 @@ func init() {
 		"@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptions",
 		reflect.TypeOf((*Ec2FleetOnDemandOptions)(nil)).Elem(),
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsCapacityReservationOptions",
+		reflect.TypeOf((*Ec2FleetOnDemandOptionsCapacityReservationOptions)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsCapacityReservationOptionsOutputReference",
+		reflect.TypeOf((*Ec2FleetOnDemandOptionsCapacityReservationOptionsOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUsageStrategy", GoMethod: "ResetUsageStrategy"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "usageStrategy", GoGetter: "UsageStrategy"},
+			_jsii_.MemberProperty{JsiiProperty: "usageStrategyInput", GoGetter: "UsageStrategyInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_Ec2FleetOnDemandOptionsCapacityReservationOptionsOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-aws.ec2Fleet.Ec2FleetOnDemandOptionsOutputReference",
 		reflect.TypeOf((*Ec2FleetOnDemandOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocationStrategy", GoGetter: "AllocationStrategy"},
 			_jsii_.MemberProperty{JsiiProperty: "allocationStrategyInput", GoGetter: "AllocationStrategyInput"},
+			_jsii_.MemberProperty{JsiiProperty: "capacityReservationOptions", GoGetter: "CapacityReservationOptions"},
+			_jsii_.MemberProperty{JsiiProperty: "capacityReservationOptionsInput", GoGetter: "CapacityReservationOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -910,7 +951,9 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "maxTotalPriceInput", GoGetter: "MaxTotalPriceInput"},
 			_jsii_.MemberProperty{JsiiProperty: "minTargetCapacity", GoGetter: "MinTargetCapacity"},
 			_jsii_.MemberProperty{JsiiProperty: "minTargetCapacityInput", GoGetter: "MinTargetCapacityInput"},
+			_jsii_.MemberMethod{JsiiMethod: "putCapacityReservationOptions", GoMethod: "PutCapacityReservationOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllocationStrategy", GoMethod: "ResetAllocationStrategy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetCapacityReservationOptions", GoMethod: "ResetCapacityReservationOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaxTotalPrice", GoMethod: "ResetMaxTotalPrice"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMinTargetCapacity", GoMethod: "ResetMinTargetCapacity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSingleAvailabilityZone", GoMethod: "ResetSingleAvailabilityZone"},

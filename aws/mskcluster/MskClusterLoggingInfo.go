@@ -7,7 +7,7 @@ package mskcluster
 type MskClusterLoggingInfo struct {
 	// broker_logs block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/msk_cluster#broker_logs MskCluster#broker_logs}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/msk_cluster#broker_logs MskCluster#broker_logs}
 	BrokerLogs *MskClusterLoggingInfoBrokerLogs `field:"required" json:"brokerLogs" yaml:"brokerLogs"`
 }
 

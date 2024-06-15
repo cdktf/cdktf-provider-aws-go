@@ -16,6 +16,8 @@ type Ec2FleetOnDemandOptionsOutputReference interface {
 	AllocationStrategy() *string
 	SetAllocationStrategy(val *string)
 	AllocationStrategyInput() *string
+	CapacityReservationOptions() Ec2FleetOnDemandOptionsCapacityReservationOptionsOutputReference
+	CapacityReservationOptionsInput() *Ec2FleetOnDemandOptionsCapacityReservationOptions
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -79,7 +81,9 @@ type Ec2FleetOnDemandOptionsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCapacityReservationOptions(value *Ec2FleetOnDemandOptionsCapacityReservationOptions)
 	ResetAllocationStrategy()
+	ResetCapacityReservationOptions()
 	ResetMaxTotalPrice()
 	ResetMinTargetCapacity()
 	ResetSingleAvailabilityZone()
@@ -114,6 +118,26 @@ func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) AllocationStrategyInp
 	_jsii_.Get(
 		j,
 		"allocationStrategyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) CapacityReservationOptions() Ec2FleetOnDemandOptionsCapacityReservationOptionsOutputReference {
+	var returns Ec2FleetOnDemandOptionsCapacityReservationOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"capacityReservationOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) CapacityReservationOptionsInput() *Ec2FleetOnDemandOptionsCapacityReservationOptions {
+	var returns *Ec2FleetOnDemandOptionsCapacityReservationOptions
+	_jsii_.Get(
+		j,
+		"capacityReservationOptionsInput",
 		&returns,
 	)
 	return returns
@@ -593,10 +617,29 @@ func (e *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) InterpolationForAttri
 	return returns
 }
 
+func (e *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) PutCapacityReservationOptions(value *Ec2FleetOnDemandOptionsCapacityReservationOptions) {
+	if err := e.validatePutCapacityReservationOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putCapacityReservationOptions",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) ResetAllocationStrategy() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetAllocationStrategy",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2FleetOnDemandOptionsOutputReference) ResetCapacityReservationOptions() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetCapacityReservationOptions",
 		nil, // no parameters
 	)
 }

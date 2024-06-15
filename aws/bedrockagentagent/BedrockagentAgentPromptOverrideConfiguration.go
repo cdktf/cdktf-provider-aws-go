@@ -5,9 +5,9 @@ package bedrockagentagent
 
 
 type BedrockagentAgentPromptOverrideConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/bedrockagent_agent#override_lambda BedrockagentAgent#override_lambda}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/bedrockagent_agent#override_lambda BedrockagentAgent#override_lambda}.
 	OverrideLambda *string `field:"optional" json:"overrideLambda" yaml:"overrideLambda"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/bedrockagent_agent#prompt_configurations BedrockagentAgent#prompt_configurations}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/bedrockagent_agent#prompt_configurations BedrockagentAgent#prompt_configurations}.
 	PromptConfigurations interface{} `field:"optional" json:"promptConfigurations" yaml:"promptConfigurations"`
 }
 

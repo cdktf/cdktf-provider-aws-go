@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/vpc_endpoint aws_vpc_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/vpc_endpoint aws_vpc_endpoint}.
 type VpcEndpoint interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -89,6 +89,8 @@ type VpcEndpoint interface {
 	SetServiceName(val *string)
 	ServiceNameInput() *string
 	State() *string
+	SubnetConfiguration() VpcEndpointSubnetConfigurationList
+	SubnetConfigurationInput() interface{}
 	SubnetIds() *[]*string
 	SetSubnetIds(val *[]*string)
 	SubnetIdsInput() *[]*string
@@ -156,6 +158,7 @@ type VpcEndpoint interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDnsOptions(value *VpcEndpointDnsOptions)
+	PutSubnetConfiguration(value interface{})
 	PutTimeouts(value *VpcEndpointTimeouts)
 	ResetAutoAccept()
 	ResetDnsOptions()
@@ -168,6 +171,7 @@ type VpcEndpoint interface {
 	ResetPrivateDnsEnabled()
 	ResetRouteTableIds()
 	ResetSecurityGroupIds()
+	ResetSubnetConfiguration()
 	ResetSubnetIds()
 	ResetTags()
 	ResetTagsAll()
@@ -581,6 +585,26 @@ func (j *jsiiProxy_VpcEndpoint) State() *string {
 	return returns
 }
 
+func (j *jsiiProxy_VpcEndpoint) SubnetConfiguration() VpcEndpointSubnetConfigurationList {
+	var returns VpcEndpointSubnetConfigurationList
+	_jsii_.Get(
+		j,
+		"subnetConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcEndpoint) SubnetConfigurationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"subnetConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcEndpoint) SubnetIds() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -732,7 +756,7 @@ func (j *jsiiProxy_VpcEndpoint) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/vpc_endpoint aws_vpc_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/vpc_endpoint aws_vpc_endpoint} Resource.
 func NewVpcEndpoint(scope constructs.Construct, id *string, config *VpcEndpointConfig) VpcEndpoint {
 	_init_.Initialize()
 
@@ -750,7 +774,7 @@ func NewVpcEndpoint(scope constructs.Construct, id *string, config *VpcEndpointC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/vpc_endpoint aws_vpc_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/vpc_endpoint aws_vpc_endpoint} Resource.
 func NewVpcEndpoint_Override(v VpcEndpoint, scope constructs.Construct, id *string, config *VpcEndpointConfig) {
 	_init_.Initialize()
 
@@ -1336,6 +1360,17 @@ func (v *jsiiProxy_VpcEndpoint) PutDnsOptions(value *VpcEndpointDnsOptions) {
 	)
 }
 
+func (v *jsiiProxy_VpcEndpoint) PutSubnetConfiguration(value interface{}) {
+	if err := v.validatePutSubnetConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		v,
+		"putSubnetConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (v *jsiiProxy_VpcEndpoint) PutTimeouts(value *VpcEndpointTimeouts) {
 	if err := v.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1415,6 +1450,14 @@ func (v *jsiiProxy_VpcEndpoint) ResetSecurityGroupIds() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetSecurityGroupIds",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcEndpoint) ResetSubnetConfiguration() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetSubnetConfiguration",
 		nil, // no parameters
 	)
 }

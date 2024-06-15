@@ -5,7 +5,7 @@ package bedrockagentagentalias
 
 
 type BedrockagentAgentAliasRoutingConfiguration struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.53.0/docs/resources/bedrockagent_agent_alias#agent_version BedrockagentAgentAlias#agent_version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/bedrockagent_agent_alias#agent_version BedrockagentAgentAlias#agent_version}.
 	AgentVersion *string `field:"optional" json:"agentVersion" yaml:"agentVersion"`
 }
 
