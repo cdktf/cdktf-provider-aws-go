@@ -46,6 +46,7 @@ type DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRe
 	SetInternalValue(val *DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirements)
 	LocalStorage() *string
 	LocalStorageTypes() *[]*string
+	MaxSpotPriceAsPercentageOfOptimalOnDemandPrice() *float64
 	MemoryGibPerVcpu() DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpuList
 	MemoryMib() DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMibList
 	NetworkBandwidthGbps() DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsNetworkBandwidthGbpsList
@@ -287,6 +288,16 @@ func (j *jsiiProxy_DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOver
 	_jsii_.Get(
 		j,
 		"localStorageTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsAutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference) MaxSpotPriceAsPercentageOfOptimalOnDemandPrice() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxSpotPriceAsPercentageOfOptimalOnDemandPrice",
 		&returns,
 	)
 	return returns

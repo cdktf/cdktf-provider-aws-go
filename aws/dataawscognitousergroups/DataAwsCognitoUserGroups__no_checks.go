@@ -55,10 +55,6 @@ func (d *jsiiProxy_DataAwsCognitoUserGroups) validateOverrideLogicalIdParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCognitoUserGroups) validatePutGroupsParameters(value interface{}) error {
-	return nil
-}
-
 func validateDataAwsCognitoUserGroups_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

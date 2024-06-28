@@ -874,6 +874,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "localStorage", GoGetter: "LocalStorage"},
 			_jsii_.MemberProperty{JsiiProperty: "localStorageTypes", GoGetter: "LocalStorageTypes"},
+			_jsii_.MemberProperty{JsiiProperty: "maxSpotPriceAsPercentageOfOptimalOnDemandPrice", GoGetter: "MaxSpotPriceAsPercentageOfOptimalOnDemandPrice"},
 			_jsii_.MemberProperty{JsiiProperty: "memoryGibPerVcpu", GoGetter: "MemoryGibPerVcpu"},
 			_jsii_.MemberProperty{JsiiProperty: "memoryMib", GoGetter: "MemoryMib"},
 			_jsii_.MemberProperty{JsiiProperty: "networkBandwidthGbps", GoGetter: "NetworkBandwidthGbps"},

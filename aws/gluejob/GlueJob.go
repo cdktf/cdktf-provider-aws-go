@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/glue_job aws_glue_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/glue_job aws_glue_job}.
 type GlueJob interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -66,6 +66,9 @@ type GlueJob interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaintenanceWindow() *string
+	SetMaintenanceWindow(val *string)
+	MaintenanceWindowInput() *string
 	MaxCapacity() *float64
 	SetMaxCapacity(val *float64)
 	MaxCapacityInput() *float64
@@ -172,6 +175,7 @@ type GlueJob interface {
 	ResetExecutionProperty()
 	ResetGlueVersion()
 	ResetId()
+	ResetMaintenanceWindow()
 	ResetMaxCapacity()
 	ResetMaxRetries()
 	ResetNonOverridableArguments()
@@ -458,6 +462,26 @@ func (j *jsiiProxy_GlueJob) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) MaintenanceWindow() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceWindow",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueJob) MaintenanceWindowInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceWindowInput",
 		&returns,
 	)
 	return returns
@@ -774,7 +798,7 @@ func (j *jsiiProxy_GlueJob) WorkerTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/glue_job aws_glue_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/glue_job aws_glue_job} Resource.
 func NewGlueJob(scope constructs.Construct, id *string, config *GlueJobConfig) GlueJob {
 	_init_.Initialize()
 
@@ -792,7 +816,7 @@ func NewGlueJob(scope constructs.Construct, id *string, config *GlueJobConfig) G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/glue_job aws_glue_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/glue_job aws_glue_job} Resource.
 func NewGlueJob_Override(g GlueJob, scope constructs.Construct, id *string, config *GlueJobConfig) {
 	_init_.Initialize()
 
@@ -914,6 +938,17 @@ func (j *jsiiProxy_GlueJob)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GlueJob)SetMaintenanceWindow(val *string) {
+	if err := j.validateSetMaintenanceWindowParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maintenanceWindow",
 		val,
 	)
 }
@@ -1496,6 +1531,14 @@ func (g *jsiiProxy_GlueJob) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GlueJob) ResetMaintenanceWindow() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaintenanceWindow",
 		nil, // no parameters
 	)
 }

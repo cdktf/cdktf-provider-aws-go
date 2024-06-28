@@ -361,6 +361,14 @@ func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutpu
 	return nil
 }
 
+func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) validateSetMaxSpotPriceAsPercentageOfOptimalOnDemandPriceParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Ec2FleetLaunchTemplateConfigOverrideInstanceRequirementsOutputReference) validateSetOnDemandMaxPricePercentageOverLowestPriceParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -47,6 +47,10 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputRe
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference) validatePutCustomImageParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference) validatePutDefaultResourceSpecParameters(value *SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpec) error {
 	return nil
 }

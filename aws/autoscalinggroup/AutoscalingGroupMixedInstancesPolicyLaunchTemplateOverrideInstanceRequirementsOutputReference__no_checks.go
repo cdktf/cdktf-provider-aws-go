@@ -143,6 +143,10 @@ func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideIns
 	return nil
 }
 
+func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference) validateSetMaxSpotPriceAsPercentageOfOptimalOnDemandPriceParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference) validateSetOnDemandMaxPricePercentageOverLowestPriceParameters(val *float64) error {
 	return nil
 }

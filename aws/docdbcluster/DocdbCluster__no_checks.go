@@ -75,6 +75,10 @@ func (d *jsiiProxy_DocdbCluster) validateOverrideLogicalIdParameters(newLogicalI
 	return nil
 }
 
+func (d *jsiiProxy_DocdbCluster) validatePutRestoreToPointInTimeParameters(value *DocdbClusterRestoreToPointInTime) error {
+	return nil
+}
+
 func (d *jsiiProxy_DocdbCluster) validatePutTimeoutsParameters(value *DocdbClusterTimeouts) error {
 	return nil
 }

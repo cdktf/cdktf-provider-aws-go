@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/cognito_resource_server aws_cognito_resource_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/cognito_resource_server aws_cognito_resource_server}.
 type CognitoResourceServer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_CognitoResourceServer) UserPoolIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/cognito_resource_server aws_cognito_resource_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/cognito_resource_server aws_cognito_resource_server} Resource.
 func NewCognitoResourceServer(scope constructs.Construct, id *string, config *CognitoResourceServerConfig) CognitoResourceServer {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewCognitoResourceServer(scope constructs.Construct, id *string, config *Co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/cognito_resource_server aws_cognito_resource_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/cognito_resource_server aws_cognito_resource_server} Resource.
 func NewCognitoResourceServer_Override(c CognitoResourceServer, scope constructs.Construct, id *string, config *CognitoResourceServerConfig) {
 	_init_.Initialize()
 

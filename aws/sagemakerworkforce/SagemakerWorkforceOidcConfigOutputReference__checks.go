@@ -101,6 +101,14 @@ func (s *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateResolveP
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateSetAuthenticationRequestExtraParamsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateSetAuthorizationEndpointParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -215,6 +223,14 @@ func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateSetJwksU
 }
 
 func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateSetLogoutEndpointParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateSetScopeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

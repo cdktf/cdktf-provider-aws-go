@@ -13,6 +13,9 @@ import (
 
 type DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOutputReference interface {
 	cdktf.ComplexObject
+	AddToNetworkFunctionGroup() *string
+	SetAddToNetworkFunctionGroup(val *string)
+	AddToNetworkFunctionGroupInput() *string
 	AssociationMethod() *string
 	SetAssociationMethod(val *string)
 	AssociationMethodInput() *string
@@ -76,6 +79,8 @@ type DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOutpu
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAddToNetworkFunctionGroup()
+	ResetAssociationMethod()
 	ResetRequireAcceptance()
 	ResetSegment()
 	ResetTagValueOfKey()
@@ -92,6 +97,26 @@ type DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOutpu
 // The jsii proxy struct for DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOutputReference
 type jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOutputReference) AddToNetworkFunctionGroup() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"addToNetworkFunctionGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOutputReference) AddToNetworkFunctionGroupInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"addToNetworkFunctionGroupInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOutputReference) AssociationMethod() *string {
@@ -269,6 +294,17 @@ func NewDataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOu
 		"@cdktf/provider-aws.dataAwsNetworkmanagerCoreNetworkPolicyDocument.DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
+	)
+}
+
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOutputReference)SetAddToNetworkFunctionGroup(val *string) {
+	if err := j.validateSetAddToNetworkFunctionGroupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"addToNetworkFunctionGroup",
+		val,
 	)
 }
 
@@ -555,6 +591,22 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolic
 	)
 
 	return returns
+}
+
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOutputReference) ResetAddToNetworkFunctionGroup() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAddToNetworkFunctionGroup",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOutputReference) ResetAssociationMethod() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetAssociationMethod",
+		nil, // no parameters
+	)
 }
 
 func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOutputReference) ResetRequireAcceptance() {

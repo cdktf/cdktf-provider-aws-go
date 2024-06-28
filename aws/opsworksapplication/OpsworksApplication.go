@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/opsworks_application aws_opsworks_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/opsworks_application aws_opsworks_application}.
 type OpsworksApplication interface {
 	cdktf.TerraformResource
 	AppSource() OpsworksApplicationAppSourceList
@@ -715,7 +715,7 @@ func (j *jsiiProxy_OpsworksApplication) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/opsworks_application aws_opsworks_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/opsworks_application aws_opsworks_application} Resource.
 func NewOpsworksApplication(scope constructs.Construct, id *string, config *OpsworksApplicationConfig) OpsworksApplication {
 	_init_.Initialize()
 
@@ -733,7 +733,7 @@ func NewOpsworksApplication(scope constructs.Construct, id *string, config *Opsw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/opsworks_application aws_opsworks_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/opsworks_application aws_opsworks_application} Resource.
 func NewOpsworksApplication_Override(o OpsworksApplication, scope constructs.Construct, id *string, config *OpsworksApplicationConfig) {
 	_init_.Initialize()
 

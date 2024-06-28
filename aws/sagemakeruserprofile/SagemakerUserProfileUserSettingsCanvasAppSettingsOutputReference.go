@@ -32,6 +32,8 @@ type SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference interface 
 	DirectDeploySettingsInput() *SagemakerUserProfileUserSettingsCanvasAppSettingsDirectDeploySettings
 	// Experimental.
 	Fqn() *string
+	GenerativeAiSettings() SagemakerUserProfileUserSettingsCanvasAppSettingsGenerativeAiSettingsOutputReference
+	GenerativeAiSettingsInput() *SagemakerUserProfileUserSettingsCanvasAppSettingsGenerativeAiSettings
 	IdentityProviderOauthSettings() SagemakerUserProfileUserSettingsCanvasAppSettingsIdentityProviderOauthSettingsList
 	IdentityProviderOauthSettingsInput() interface{}
 	InternalValue() *SagemakerUserProfileUserSettingsCanvasAppSettings
@@ -77,12 +79,14 @@ type SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference interface 
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDirectDeploySettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsDirectDeploySettings)
+	PutGenerativeAiSettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsGenerativeAiSettings)
 	PutIdentityProviderOauthSettings(value interface{})
 	PutKendraSettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsKendraSettings)
 	PutModelRegisterSettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsModelRegisterSettings)
 	PutTimeSeriesForecastingSettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsTimeSeriesForecastingSettings)
 	PutWorkspaceSettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsWorkspaceSettings)
 	ResetDirectDeploySettings()
+	ResetGenerativeAiSettings()
 	ResetIdentityProviderOauthSettings()
 	ResetKendraSettings()
 	ResetModelRegisterSettings()
@@ -158,6 +162,26 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputRefere
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) GenerativeAiSettings() SagemakerUserProfileUserSettingsCanvasAppSettingsGenerativeAiSettingsOutputReference {
+	var returns SagemakerUserProfileUserSettingsCanvasAppSettingsGenerativeAiSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"generativeAiSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) GenerativeAiSettingsInput() *SagemakerUserProfileUserSettingsCanvasAppSettingsGenerativeAiSettings {
+	var returns *SagemakerUserProfileUserSettingsCanvasAppSettingsGenerativeAiSettings
+	_jsii_.Get(
+		j,
+		"generativeAiSettingsInput",
 		&returns,
 	)
 	return returns
@@ -573,6 +597,17 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputRefere
 	)
 }
 
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) PutGenerativeAiSettings(value *SagemakerUserProfileUserSettingsCanvasAppSettingsGenerativeAiSettings) {
+	if err := s.validatePutGenerativeAiSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putGenerativeAiSettings",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) PutIdentityProviderOauthSettings(value interface{}) {
 	if err := s.validatePutIdentityProviderOauthSettingsParameters(value); err != nil {
 		panic(err)
@@ -632,6 +667,14 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputRefere
 	_jsii_.InvokeVoid(
 		s,
 		"resetDirectDeploySettings",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) ResetGenerativeAiSettings() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetGenerativeAiSettings",
 		nil, // no parameters
 	)
 }

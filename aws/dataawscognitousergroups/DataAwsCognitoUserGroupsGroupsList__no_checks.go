@@ -19,10 +19,6 @@ func (d *jsiiProxy_DataAwsCognitoUserGroupsGroupsList) validateResolveParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCognitoUserGroupsGroupsList) validateSetInternalValueParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataAwsCognitoUserGroupsGroupsList) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

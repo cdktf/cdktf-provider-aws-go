@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lexv2models_slot aws_lexv2models_slot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/lexv2models_slot aws_lexv2models_slot}.
 type Lexv2ModelsSlot interface {
 	cdktf.TerraformResource
 	BotId() *string
@@ -567,7 +567,7 @@ func (j *jsiiProxy_Lexv2ModelsSlot) ValueElicitationSettingInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lexv2models_slot aws_lexv2models_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/lexv2models_slot aws_lexv2models_slot} Resource.
 func NewLexv2ModelsSlot(scope constructs.Construct, id *string, config *Lexv2ModelsSlotConfig) Lexv2ModelsSlot {
 	_init_.Initialize()
 
@@ -585,7 +585,7 @@ func NewLexv2ModelsSlot(scope constructs.Construct, id *string, config *Lexv2Mod
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/lexv2models_slot aws_lexv2models_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/lexv2models_slot aws_lexv2models_slot} Resource.
 func NewLexv2ModelsSlot_Override(l Lexv2ModelsSlot, scope constructs.Construct, id *string, config *Lexv2ModelsSlotConfig) {
 	_init_.Initialize()
 

@@ -64,6 +64,10 @@ type DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputReference
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Via() DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaOutputReference
+	ViaInput() *DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsVia
+	WhenSentTo() DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhenSentToOutputReference
+	WhenSentToInput() *DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhenSentTo
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -88,12 +92,16 @@ type DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputReference
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutVia(value *DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsVia)
+	PutWhenSentTo(value *DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhenSentTo)
 	ResetDescription()
 	ResetDestinationCidrBlocks()
 	ResetDestinations()
 	ResetMode()
 	ResetShareWith()
 	ResetShareWithExcept()
+	ResetVia()
+	ResetWhenSentTo()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -334,6 +342,46 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsO
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputReference) Via() DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaOutputReference {
+	var returns DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsViaOutputReference
+	_jsii_.Get(
+		j,
+		"via",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputReference) ViaInput() *DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsVia {
+	var returns *DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsVia
+	_jsii_.Get(
+		j,
+		"viaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputReference) WhenSentTo() DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhenSentToOutputReference {
+	var returns DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhenSentToOutputReference
+	_jsii_.Get(
+		j,
+		"whenSentTo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputReference) WhenSentToInput() *DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhenSentTo {
+	var returns *DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhenSentTo
+	_jsii_.Get(
+		j,
+		"whenSentToInput",
 		&returns,
 	)
 	return returns
@@ -696,6 +744,28 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsO
 	return returns
 }
 
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputReference) PutVia(value *DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsVia) {
+	if err := d.validatePutViaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putVia",
+		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputReference) PutWhenSentTo(value *DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhenSentTo) {
+	if err := d.validatePutWhenSentToParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putWhenSentTo",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputReference) ResetDescription() {
 	_jsii_.InvokeVoid(
 		d,
@@ -740,6 +810,22 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsO
 	_jsii_.InvokeVoid(
 		d,
 		"resetShareWithExcept",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputReference) ResetVia() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetVia",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputReference) ResetWhenSentTo() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetWhenSentTo",
 		nil, // no parameters
 	)
 }

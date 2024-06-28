@@ -13,6 +13,9 @@ import (
 
 type SagemakerWorkforceOidcConfigOutputReference interface {
 	cdktf.ComplexObject
+	AuthenticationRequestExtraParams() *map[string]*string
+	SetAuthenticationRequestExtraParams(val *map[string]*string)
+	AuthenticationRequestExtraParamsInput() *map[string]*string
 	AuthorizationEndpoint() *string
 	SetAuthorizationEndpoint(val *string)
 	AuthorizationEndpointInput() *string
@@ -50,6 +53,9 @@ type SagemakerWorkforceOidcConfigOutputReference interface {
 	LogoutEndpoint() *string
 	SetLogoutEndpoint(val *string)
 	LogoutEndpointInput() *string
+	Scope() *string
+	SetScope(val *string)
+	ScopeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -88,6 +94,8 @@ type SagemakerWorkforceOidcConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAuthenticationRequestExtraParams()
+	ResetScope()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -101,6 +109,26 @@ type SagemakerWorkforceOidcConfigOutputReference interface {
 // The jsii proxy struct for SagemakerWorkforceOidcConfigOutputReference
 type jsiiProxy_SagemakerWorkforceOidcConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) AuthenticationRequestExtraParams() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"authenticationRequestExtraParams",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) AuthenticationRequestExtraParamsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"authenticationRequestExtraParamsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) AuthorizationEndpoint() *string {
@@ -273,6 +301,26 @@ func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) LogoutEndpointIn
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) Scope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) ScopeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scopeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -358,6 +406,17 @@ func NewSagemakerWorkforceOidcConfigOutputReference_Override(s SagemakerWorkforc
 		"@cdktf/provider-aws.sagemakerWorkforce.SagemakerWorkforceOidcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
+	)
+}
+
+func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference)SetAuthenticationRequestExtraParams(val *map[string]*string) {
+	if err := j.validateSetAuthenticationRequestExtraParamsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"authenticationRequestExtraParams",
+		val,
 	)
 }
 
@@ -456,6 +515,17 @@ func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference)SetLogoutEndpoint
 	_jsii_.Set(
 		j,
 		"logoutEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference)SetScope(val *string) {
+	if err := j.validateSetScopeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"scope",
 		val,
 	)
 }
@@ -688,6 +758,22 @@ func (s *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) InterpolationFor
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) ResetAuthenticationRequestExtraParams() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetAuthenticationRequestExtraParams",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) ResetScope() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetScope",
+		nil, // no parameters
+	)
 }
 
 func (s *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

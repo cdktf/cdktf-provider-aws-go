@@ -13,6 +13,7 @@ import (
 
 type DataAwsGlueCatalogTableStorageDescriptorOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalLocations() *[]*string
 	BucketColumns() *[]*string
 	Columns() DataAwsGlueCatalogTableStorageDescriptorColumnsList
 	// the index of the complex object in a list.
@@ -90,6 +91,16 @@ type DataAwsGlueCatalogTableStorageDescriptorOutputReference interface {
 // The jsii proxy struct for DataAwsGlueCatalogTableStorageDescriptorOutputReference
 type jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) AdditionalLocations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"additionalLocations",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataAwsGlueCatalogTableStorageDescriptorOutputReference) BucketColumns() *[]*string {

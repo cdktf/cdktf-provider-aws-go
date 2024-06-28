@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/wafregional_subscribed_rule_group aws_wafregional_subscribed_rule_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/data-sources/wafregional_subscribed_rule_group aws_wafregional_subscribed_rule_group}.
 type DataAwsWafregionalSubscribedRuleGroup interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -313,7 +313,7 @@ func (j *jsiiProxy_DataAwsWafregionalSubscribedRuleGroup) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/wafregional_subscribed_rule_group aws_wafregional_subscribed_rule_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/data-sources/wafregional_subscribed_rule_group aws_wafregional_subscribed_rule_group} Data Source.
 func NewDataAwsWafregionalSubscribedRuleGroup(scope constructs.Construct, id *string, config *DataAwsWafregionalSubscribedRuleGroupConfig) DataAwsWafregionalSubscribedRuleGroup {
 	_init_.Initialize()
 
@@ -331,7 +331,7 @@ func NewDataAwsWafregionalSubscribedRuleGroup(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/wafregional_subscribed_rule_group aws_wafregional_subscribed_rule_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/data-sources/wafregional_subscribed_rule_group aws_wafregional_subscribed_rule_group} Data Source.
 func NewDataAwsWafregionalSubscribedRuleGroup_Override(d DataAwsWafregionalSubscribedRuleGroup, scope constructs.Construct, id *string, config *DataAwsWafregionalSubscribedRuleGroupConfig) {
 	_init_.Initialize()
 

@@ -92,6 +92,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "preferredMaintenanceWindowInput", GoGetter: "PreferredMaintenanceWindowInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putRestoreToPointInTime", GoMethod: "PutRestoreToPointInTime"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "readerEndpoint", GoGetter: "ReaderEndpoint"},
@@ -118,6 +119,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetPort", GoMethod: "ResetPort"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPreferredBackupWindow", GoMethod: "ResetPreferredBackupWindow"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPreferredMaintenanceWindow", GoMethod: "ResetPreferredMaintenanceWindow"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRestoreToPointInTime", GoMethod: "ResetRestoreToPointInTime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSkipFinalSnapshot", GoMethod: "ResetSkipFinalSnapshot"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSnapshotIdentifier", GoMethod: "ResetSnapshotIdentifier"},
 			_jsii_.MemberMethod{JsiiMethod: "resetStorageEncrypted", GoMethod: "ResetStorageEncrypted"},
@@ -126,6 +128,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVpcSecurityGroupIds", GoMethod: "ResetVpcSecurityGroupIds"},
+			_jsii_.MemberProperty{JsiiProperty: "restoreToPointInTime", GoGetter: "RestoreToPointInTime"},
+			_jsii_.MemberProperty{JsiiProperty: "restoreToPointInTimeInput", GoGetter: "RestoreToPointInTimeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "skipFinalSnapshot", GoGetter: "SkipFinalSnapshot"},
 			_jsii_.MemberProperty{JsiiProperty: "skipFinalSnapshotInput", GoGetter: "SkipFinalSnapshotInput"},
 			_jsii_.MemberProperty{JsiiProperty: "snapshotIdentifier", GoGetter: "SnapshotIdentifier"},
@@ -161,6 +165,53 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.docdbCluster.DocdbClusterConfig",
 		reflect.TypeOf((*DocdbClusterConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.docdbCluster.DocdbClusterRestoreToPointInTime",
+		reflect.TypeOf((*DocdbClusterRestoreToPointInTime)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.docdbCluster.DocdbClusterRestoreToPointInTimeOutputReference",
+		reflect.TypeOf((*DocdbClusterRestoreToPointInTimeOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRestoreToTime", GoMethod: "ResetRestoreToTime"},
+			_jsii_.MemberMethod{JsiiMethod: "resetRestoreType", GoMethod: "ResetRestoreType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUseLatestRestorableTime", GoMethod: "ResetUseLatestRestorableTime"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "restoreToTime", GoGetter: "RestoreToTime"},
+			_jsii_.MemberProperty{JsiiProperty: "restoreToTimeInput", GoGetter: "RestoreToTimeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "restoreType", GoGetter: "RestoreType"},
+			_jsii_.MemberProperty{JsiiProperty: "restoreTypeInput", GoGetter: "RestoreTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceClusterIdentifier", GoGetter: "SourceClusterIdentifier"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceClusterIdentifierInput", GoGetter: "SourceClusterIdentifierInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "useLatestRestorableTime", GoGetter: "UseLatestRestorableTime"},
+			_jsii_.MemberProperty{JsiiProperty: "useLatestRestorableTimeInput", GoGetter: "UseLatestRestorableTimeInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_DocdbClusterRestoreToPointInTimeOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.docdbCluster.DocdbClusterTimeouts",

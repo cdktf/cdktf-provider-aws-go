@@ -75,6 +75,10 @@ func (c *jsiiProxy_ControltowerControl) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (c *jsiiProxy_ControltowerControl) validatePutParametersParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ControltowerControl) validatePutTimeoutsParameters(value *ControltowerControlTimeouts) error {
 	return nil
 }

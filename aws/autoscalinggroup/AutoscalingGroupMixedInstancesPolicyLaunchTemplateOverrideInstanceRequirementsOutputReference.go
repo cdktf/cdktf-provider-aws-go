@@ -71,6 +71,9 @@ type AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequireme
 	LocalStorageTypes() *[]*string
 	SetLocalStorageTypes(val *[]*string)
 	LocalStorageTypesInput() *[]*string
+	MaxSpotPriceAsPercentageOfOptimalOnDemandPrice() *float64
+	SetMaxSpotPriceAsPercentageOfOptimalOnDemandPrice(val *float64)
+	MaxSpotPriceAsPercentageOfOptimalOnDemandPriceInput() *float64
 	MemoryGibPerVcpu() AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpuOutputReference
 	MemoryGibPerVcpuInput() *AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryGibPerVcpu
 	MemoryMib() AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsMemoryMibOutputReference
@@ -147,6 +150,7 @@ type AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequireme
 	ResetInstanceGenerations()
 	ResetLocalStorage()
 	ResetLocalStorageTypes()
+	ResetMaxSpotPriceAsPercentageOfOptimalOnDemandPrice()
 	ResetMemoryGibPerVcpu()
 	ResetMemoryMib()
 	ResetNetworkBandwidthGbps()
@@ -496,6 +500,26 @@ func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideIns
 	_jsii_.Get(
 		j,
 		"localStorageTypesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference) MaxSpotPriceAsPercentageOfOptimalOnDemandPrice() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxSpotPriceAsPercentageOfOptimalOnDemandPrice",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference) MaxSpotPriceAsPercentageOfOptimalOnDemandPriceInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxSpotPriceAsPercentageOfOptimalOnDemandPriceInput",
 		&returns,
 	)
 	return returns
@@ -879,6 +903,17 @@ func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideIns
 	_jsii_.Set(
 		j,
 		"localStorageTypes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference)SetMaxSpotPriceAsPercentageOfOptimalOnDemandPrice(val *float64) {
+	if err := j.validateSetMaxSpotPriceAsPercentageOfOptimalOnDemandPriceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxSpotPriceAsPercentageOfOptimalOnDemandPrice",
 		val,
 	)
 }
@@ -1331,6 +1366,14 @@ func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideIns
 	_jsii_.InvokeVoid(
 		a,
 		"resetLocalStorageTypes",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AutoscalingGroupMixedInstancesPolicyLaunchTemplateOverrideInstanceRequirementsOutputReference) ResetMaxSpotPriceAsPercentageOfOptimalOnDemandPrice() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMaxSpotPriceAsPercentageOfOptimalOnDemandPrice",
 		nil, // no parameters
 	)
 }

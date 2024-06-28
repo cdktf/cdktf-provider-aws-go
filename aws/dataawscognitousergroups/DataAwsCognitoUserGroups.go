@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/cognito_user_groups aws_cognito_user_groups}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/data-sources/cognito_user_groups aws_cognito_user_groups}.
 type DataAwsCognitoUserGroups interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -36,7 +36,6 @@ type DataAwsCognitoUserGroups interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Groups() DataAwsCognitoUserGroupsGroupsList
-	GroupsInput() interface{}
 	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -84,8 +83,6 @@ type DataAwsCognitoUserGroups interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	PutGroups(value interface{})
-	ResetGroups()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -183,16 +180,6 @@ func (j *jsiiProxy_DataAwsCognitoUserGroups) Groups() DataAwsCognitoUserGroupsGr
 	_jsii_.Get(
 		j,
 		"groups",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataAwsCognitoUserGroups) GroupsInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"groupsInput",
 		&returns,
 	)
 	return returns
@@ -299,7 +286,7 @@ func (j *jsiiProxy_DataAwsCognitoUserGroups) UserPoolIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/cognito_user_groups aws_cognito_user_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/data-sources/cognito_user_groups aws_cognito_user_groups} Data Source.
 func NewDataAwsCognitoUserGroups(scope constructs.Construct, id *string, config *DataAwsCognitoUserGroupsConfig) DataAwsCognitoUserGroups {
 	_init_.Initialize()
 
@@ -317,7 +304,7 @@ func NewDataAwsCognitoUserGroups(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/cognito_user_groups aws_cognito_user_groups} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/data-sources/cognito_user_groups aws_cognito_user_groups} Data Source.
 func NewDataAwsCognitoUserGroups_Override(d DataAwsCognitoUserGroups, scope constructs.Construct, id *string, config *DataAwsCognitoUserGroupsConfig) {
 	_init_.Initialize()
 
@@ -667,25 +654,6 @@ func (d *jsiiProxy_DataAwsCognitoUserGroups) OverrideLogicalId(newLogicalId *str
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataAwsCognitoUserGroups) PutGroups(value interface{}) {
-	if err := d.validatePutGroupsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		d,
-		"putGroups",
-		[]interface{}{value},
-	)
-}
-
-func (d *jsiiProxy_DataAwsCognitoUserGroups) ResetGroups() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetGroups",
-		nil, // no parameters
 	)
 }
 

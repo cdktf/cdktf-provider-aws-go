@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/controltower_control aws_controltower_control}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/controltower_control aws_controltower_control}.
 type ControltowerControl interface {
 	cdktf.TerraformResource
+	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -51,6 +52,8 @@ type ControltowerControl interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Parameters() ControltowerControlParametersList
+	ParametersInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -115,11 +118,13 @@ type ControltowerControl interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutParameters(value interface{})
 	PutTimeouts(value *ControltowerControlTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParameters()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -137,6 +142,16 @@ type ControltowerControl interface {
 // The jsii proxy struct for ControltowerControl
 type jsiiProxy_ControltowerControl struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_ControltowerControl) Arn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"arn",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_ControltowerControl) CdktfStack() cdktf.TerraformStack {
@@ -279,6 +294,26 @@ func (j *jsiiProxy_ControltowerControl) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ControltowerControl) Parameters() ControltowerControlParametersList {
+	var returns ControltowerControlParametersList
+	_jsii_.Get(
+		j,
+		"parameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ControltowerControl) ParametersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"parametersInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ControltowerControl) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -380,7 +415,7 @@ func (j *jsiiProxy_ControltowerControl) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/controltower_control aws_controltower_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/controltower_control aws_controltower_control} Resource.
 func NewControltowerControl(scope constructs.Construct, id *string, config *ControltowerControlConfig) ControltowerControl {
 	_init_.Initialize()
 
@@ -398,7 +433,7 @@ func NewControltowerControl(scope constructs.Construct, id *string, config *Cont
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/controltower_control aws_controltower_control} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/controltower_control aws_controltower_control} Resource.
 func NewControltowerControl_Override(c ControltowerControl, scope constructs.Construct, id *string, config *ControltowerControlConfig) {
 	_init_.Initialize()
 
@@ -863,6 +898,17 @@ func (c *jsiiProxy_ControltowerControl) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (c *jsiiProxy_ControltowerControl) PutParameters(value interface{}) {
+	if err := c.validatePutParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putParameters",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_ControltowerControl) PutTimeouts(value *ControltowerControlTimeouts) {
 	if err := c.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -886,6 +932,14 @@ func (c *jsiiProxy_ControltowerControl) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_ControltowerControl) ResetParameters() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetParameters",
 		nil, // no parameters
 	)
 }

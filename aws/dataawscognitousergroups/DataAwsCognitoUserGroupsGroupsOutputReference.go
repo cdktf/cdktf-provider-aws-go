@@ -32,8 +32,8 @@ type DataAwsCognitoUserGroupsGroupsOutputReference interface {
 	// Experimental.
 	Fqn() *string
 	GroupName() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *DataAwsCognitoUserGroupsGroups
+	SetInternalValue(val *DataAwsCognitoUserGroupsGroups)
 	Precedence() *float64
 	RoleArn() *string
 	// Experimental.
@@ -143,8 +143,8 @@ func (j *jsiiProxy_DataAwsCognitoUserGroupsGroupsOutputReference) GroupName() *s
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCognitoUserGroupsGroupsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_DataAwsCognitoUserGroupsGroupsOutputReference) InternalValue() *DataAwsCognitoUserGroupsGroups {
+	var returns *DataAwsCognitoUserGroupsGroups
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_DataAwsCognitoUserGroupsGroupsOutputReference)SetComplexObjec
 	)
 }
 
-func (j *jsiiProxy_DataAwsCognitoUserGroupsGroupsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataAwsCognitoUserGroupsGroupsOutputReference)SetInternalValue(val *DataAwsCognitoUserGroupsGroups) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

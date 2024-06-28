@@ -47,6 +47,14 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsO
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputReference) validatePutViaParameters(value *DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsVia) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputReference) validatePutWhenSentToParameters(value *DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsWhenSentTo) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentSegmentActionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

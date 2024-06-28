@@ -123,6 +123,10 @@ func (j *jsiiProxy_Route53ResolverFirewallRule) validateSetFirewallDomainListIdP
 	return nil
 }
 
+func (j *jsiiProxy_Route53ResolverFirewallRule) validateSetFirewallDomainRedirectionActionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_Route53ResolverFirewallRule) validateSetFirewallRuleGroupIdParameters(val *string) error {
 	return nil
 }
@@ -144,6 +148,10 @@ func (j *jsiiProxy_Route53ResolverFirewallRule) validateSetPriorityParameters(va
 }
 
 func (j *jsiiProxy_Route53ResolverFirewallRule) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_Route53ResolverFirewallRule) validateSetQTypeParameters(val *string) error {
 	return nil
 }
 

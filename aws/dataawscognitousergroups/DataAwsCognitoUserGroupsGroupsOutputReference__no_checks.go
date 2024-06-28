@@ -59,7 +59,7 @@ func (j *jsiiProxy_DataAwsCognitoUserGroupsGroupsOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCognitoUserGroupsGroupsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_DataAwsCognitoUserGroupsGroupsOutputReference) validateSetInternalValueParameters(val *DataAwsCognitoUserGroupsGroups) error {
 	return nil
 }
 

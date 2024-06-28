@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sagemaker_workteam aws_sagemaker_workteam}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/sagemaker_workteam aws_sagemaker_workteam}.
 type SagemakerWorkteam interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -79,6 +79,8 @@ type SagemakerWorkteam interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	WorkerAccessConfiguration() SagemakerWorkteamWorkerAccessConfigurationOutputReference
+	WorkerAccessConfigurationInput() *SagemakerWorkteamWorkerAccessConfiguration
 	WorkforceName() *string
 	SetWorkforceName(val *string)
 	WorkforceNameInput() *string
@@ -130,6 +132,7 @@ type SagemakerWorkteam interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMemberDefinition(value interface{})
 	PutNotificationConfiguration(value *SagemakerWorkteamNotificationConfiguration)
+	PutWorkerAccessConfiguration(value *SagemakerWorkteamWorkerAccessConfiguration)
 	ResetId()
 	ResetNotificationConfiguration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -137,6 +140,7 @@ type SagemakerWorkteam interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
+	ResetWorkerAccessConfiguration()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -455,6 +459,26 @@ func (j *jsiiProxy_SagemakerWorkteam) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SagemakerWorkteam) WorkerAccessConfiguration() SagemakerWorkteamWorkerAccessConfigurationOutputReference {
+	var returns SagemakerWorkteamWorkerAccessConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"workerAccessConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerWorkteam) WorkerAccessConfigurationInput() *SagemakerWorkteamWorkerAccessConfiguration {
+	var returns *SagemakerWorkteamWorkerAccessConfiguration
+	_jsii_.Get(
+		j,
+		"workerAccessConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SagemakerWorkteam) WorkforceName() *string {
 	var returns *string
 	_jsii_.Get(
@@ -496,7 +520,7 @@ func (j *jsiiProxy_SagemakerWorkteam) WorkteamNameInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sagemaker_workteam aws_sagemaker_workteam} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/sagemaker_workteam aws_sagemaker_workteam} Resource.
 func NewSagemakerWorkteam(scope constructs.Construct, id *string, config *SagemakerWorkteamConfig) SagemakerWorkteam {
 	_init_.Initialize()
 
@@ -514,7 +538,7 @@ func NewSagemakerWorkteam(scope constructs.Construct, id *string, config *Sagema
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/sagemaker_workteam aws_sagemaker_workteam} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/sagemaker_workteam aws_sagemaker_workteam} Resource.
 func NewSagemakerWorkteam_Override(s SagemakerWorkteam, scope constructs.Construct, id *string, config *SagemakerWorkteamConfig) {
 	_init_.Initialize()
 
@@ -1034,6 +1058,17 @@ func (s *jsiiProxy_SagemakerWorkteam) PutNotificationConfiguration(value *Sagema
 	)
 }
 
+func (s *jsiiProxy_SagemakerWorkteam) PutWorkerAccessConfiguration(value *SagemakerWorkteamWorkerAccessConfiguration) {
+	if err := s.validatePutWorkerAccessConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putWorkerAccessConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerWorkteam) ResetId() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1070,6 +1105,14 @@ func (s *jsiiProxy_SagemakerWorkteam) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerWorkteam) ResetWorkerAccessConfiguration() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetWorkerAccessConfiguration",
 		nil, // no parameters
 	)
 }

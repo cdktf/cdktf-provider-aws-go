@@ -46,6 +46,7 @@ type DataAwsLaunchTemplateInstanceRequirementsOutputReference interface {
 	SetInternalValue(val *DataAwsLaunchTemplateInstanceRequirements)
 	LocalStorage() *string
 	LocalStorageTypes() *[]*string
+	MaxSpotPriceAsPercentageOfOptimalOnDemandPrice() *float64
 	MemoryGibPerVcpu() DataAwsLaunchTemplateInstanceRequirementsMemoryGibPerVcpuList
 	MemoryMib() DataAwsLaunchTemplateInstanceRequirementsMemoryMibList
 	NetworkBandwidthGbps() DataAwsLaunchTemplateInstanceRequirementsNetworkBandwidthGbpsList
@@ -287,6 +288,16 @@ func (j *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsOutputReference) Loc
 	_jsii_.Get(
 		j,
 		"localStorageTypes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsOutputReference) MaxSpotPriceAsPercentageOfOptimalOnDemandPrice() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxSpotPriceAsPercentageOfOptimalOnDemandPrice",
 		&returns,
 	)
 	return returns

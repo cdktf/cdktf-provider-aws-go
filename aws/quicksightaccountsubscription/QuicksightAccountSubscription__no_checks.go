@@ -147,6 +147,10 @@ func (j *jsiiProxy_QuicksightAccountSubscription) validateSetFirstNameParameters
 	return nil
 }
 
+func (j *jsiiProxy_QuicksightAccountSubscription) validateSetIamIdentityCenterInstanceArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_QuicksightAccountSubscription) validateSetIdParameters(val *string) error {
 	return nil
 }

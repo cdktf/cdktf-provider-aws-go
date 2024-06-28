@@ -255,6 +255,14 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReferen
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validateSetInferenceAmiVersionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerEndpointConfigurationProductionVariantsOutputReference) validateSetInitialInstanceCountParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

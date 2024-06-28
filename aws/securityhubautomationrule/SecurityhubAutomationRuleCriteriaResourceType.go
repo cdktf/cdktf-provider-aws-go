@@ -5,9 +5,9 @@ package securityhubautomationrule
 
 
 type SecurityhubAutomationRuleCriteriaResourceType struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/securityhub_automation_rule#comparison SecurityhubAutomationRule#comparison}.
 	Comparison *string `field:"required" json:"comparison" yaml:"comparison"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/securityhub_automation_rule#value SecurityhubAutomationRule#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

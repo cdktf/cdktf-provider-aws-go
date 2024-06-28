@@ -83,6 +83,10 @@ func (s *jsiiProxy_SagemakerWorkteam) validatePutNotificationConfigurationParame
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerWorkteam) validatePutWorkerAccessConfigurationParameters(value *SagemakerWorkteamWorkerAccessConfiguration) error {
+	return nil
+}
+
 func validateSagemakerWorkteam_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

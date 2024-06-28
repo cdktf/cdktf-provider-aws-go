@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/route53_resolver_firewall_rule aws_route53_resolver_firewall_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/route53_resolver_firewall_rule aws_route53_resolver_firewall_rule}.
 type Route53ResolverFirewallRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -49,6 +49,9 @@ type Route53ResolverFirewallRule interface {
 	FirewallDomainListId() *string
 	SetFirewallDomainListId(val *string)
 	FirewallDomainListIdInput() *string
+	FirewallDomainRedirectionAction() *string
+	SetFirewallDomainRedirectionAction(val *string)
+	FirewallDomainRedirectionActionInput() *string
 	FirewallRuleGroupId() *string
 	SetFirewallRuleGroupId(val *string)
 	FirewallRuleGroupIdInput() *string
@@ -83,6 +86,9 @@ type Route53ResolverFirewallRule interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	QType() *string
+	SetQType(val *string)
+	QTypeInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -138,10 +144,12 @@ type Route53ResolverFirewallRule interface {
 	ResetBlockOverrideDomain()
 	ResetBlockOverrideTtl()
 	ResetBlockResponse()
+	ResetFirewallDomainRedirectionAction()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetQType()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -330,6 +338,26 @@ func (j *jsiiProxy_Route53ResolverFirewallRule) FirewallDomainListIdInput() *str
 	return returns
 }
 
+func (j *jsiiProxy_Route53ResolverFirewallRule) FirewallDomainRedirectionAction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firewallDomainRedirectionAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53ResolverFirewallRule) FirewallDomainRedirectionActionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firewallDomainRedirectionActionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Route53ResolverFirewallRule) FirewallRuleGroupId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -480,6 +508,26 @@ func (j *jsiiProxy_Route53ResolverFirewallRule) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Route53ResolverFirewallRule) QType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"qType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Route53ResolverFirewallRule) QTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"qTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Route53ResolverFirewallRule) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -521,7 +569,7 @@ func (j *jsiiProxy_Route53ResolverFirewallRule) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/route53_resolver_firewall_rule aws_route53_resolver_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/route53_resolver_firewall_rule aws_route53_resolver_firewall_rule} Resource.
 func NewRoute53ResolverFirewallRule(scope constructs.Construct, id *string, config *Route53ResolverFirewallRuleConfig) Route53ResolverFirewallRule {
 	_init_.Initialize()
 
@@ -539,7 +587,7 @@ func NewRoute53ResolverFirewallRule(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/route53_resolver_firewall_rule aws_route53_resolver_firewall_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/route53_resolver_firewall_rule aws_route53_resolver_firewall_rule} Resource.
 func NewRoute53ResolverFirewallRule_Override(r Route53ResolverFirewallRule, scope constructs.Construct, id *string, config *Route53ResolverFirewallRuleConfig) {
 	_init_.Initialize()
 
@@ -646,6 +694,17 @@ func (j *jsiiProxy_Route53ResolverFirewallRule)SetFirewallDomainListId(val *stri
 	)
 }
 
+func (j *jsiiProxy_Route53ResolverFirewallRule)SetFirewallDomainRedirectionAction(val *string) {
+	if err := j.validateSetFirewallDomainRedirectionActionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"firewallDomainRedirectionAction",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Route53ResolverFirewallRule)SetFirewallRuleGroupId(val *string) {
 	if err := j.validateSetFirewallRuleGroupIdParameters(val); err != nil {
 		panic(err)
@@ -724,6 +783,17 @@ func (j *jsiiProxy_Route53ResolverFirewallRule)SetProvisioners(val *[]interface{
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Route53ResolverFirewallRule)SetQType(val *string) {
+	if err := j.validateSetQTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"qType",
 		val,
 	)
 }
@@ -1113,6 +1183,14 @@ func (r *jsiiProxy_Route53ResolverFirewallRule) ResetBlockResponse() {
 	)
 }
 
+func (r *jsiiProxy_Route53ResolverFirewallRule) ResetFirewallDomainRedirectionAction() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetFirewallDomainRedirectionAction",
+		nil, // no parameters
+	)
+}
+
 func (r *jsiiProxy_Route53ResolverFirewallRule) ResetId() {
 	_jsii_.InvokeVoid(
 		r,
@@ -1125,6 +1203,14 @@ func (r *jsiiProxy_Route53ResolverFirewallRule) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_Route53ResolverFirewallRule) ResetQType() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetQType",
 		nil, // no parameters
 	)
 }

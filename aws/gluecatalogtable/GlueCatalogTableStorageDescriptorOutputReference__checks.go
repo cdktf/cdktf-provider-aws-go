@@ -196,6 +196,14 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) validateRes
 	return nil
 }
 
+func (j *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) validateSetAdditionalLocationsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) validateSetBucketColumnsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

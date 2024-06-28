@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/docdb_cluster aws_docdb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/docdb_cluster aws_docdb_cluster}.
 type DocdbCluster interface {
 	cdktf.TerraformResource
 	AllowMajorVersionUpgrade() interface{}
@@ -126,6 +126,8 @@ type DocdbCluster interface {
 	// Experimental.
 	RawOverrides() interface{}
 	ReaderEndpoint() *string
+	RestoreToPointInTime() DocdbClusterRestoreToPointInTimeOutputReference
+	RestoreToPointInTimeInput() *DocdbClusterRestoreToPointInTime
 	SkipFinalSnapshot() interface{}
 	SetSkipFinalSnapshot(val interface{})
 	SkipFinalSnapshotInput() interface{}
@@ -198,6 +200,7 @@ type DocdbCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutRestoreToPointInTime(value *DocdbClusterRestoreToPointInTime)
 	PutTimeouts(value *DocdbClusterTimeouts)
 	ResetAllowMajorVersionUpgrade()
 	ResetApplyImmediately()
@@ -224,6 +227,7 @@ type DocdbCluster interface {
 	ResetPort()
 	ResetPreferredBackupWindow()
 	ResetPreferredMaintenanceWindow()
+	ResetRestoreToPointInTime()
 	ResetSkipFinalSnapshot()
 	ResetSnapshotIdentifier()
 	ResetStorageEncrypted()
@@ -870,6 +874,26 @@ func (j *jsiiProxy_DocdbCluster) ReaderEndpoint() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DocdbCluster) RestoreToPointInTime() DocdbClusterRestoreToPointInTimeOutputReference {
+	var returns DocdbClusterRestoreToPointInTimeOutputReference
+	_jsii_.Get(
+		j,
+		"restoreToPointInTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DocdbCluster) RestoreToPointInTimeInput() *DocdbClusterRestoreToPointInTime {
+	var returns *DocdbClusterRestoreToPointInTime
+	_jsii_.Get(
+		j,
+		"restoreToPointInTimeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DocdbCluster) SkipFinalSnapshot() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -1061,7 +1085,7 @@ func (j *jsiiProxy_DocdbCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
 func NewDocdbCluster(scope constructs.Construct, id *string, config *DocdbClusterConfig) DocdbCluster {
 	_init_.Initialize()
 
@@ -1079,7 +1103,7 @@ func NewDocdbCluster(scope constructs.Construct, id *string, config *DocdbCluste
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/docdb_cluster aws_docdb_cluster} Resource.
 func NewDocdbCluster_Override(d DocdbCluster, scope constructs.Construct, id *string, config *DocdbClusterConfig) {
 	_init_.Initialize()
 
@@ -1830,6 +1854,17 @@ func (d *jsiiProxy_DocdbCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (d *jsiiProxy_DocdbCluster) PutRestoreToPointInTime(value *DocdbClusterRestoreToPointInTime) {
+	if err := d.validatePutRestoreToPointInTimeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putRestoreToPointInTime",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DocdbCluster) PutTimeouts(value *DocdbClusterTimeouts) {
 	if err := d.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -2021,6 +2056,14 @@ func (d *jsiiProxy_DocdbCluster) ResetPreferredMaintenanceWindow() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPreferredMaintenanceWindow",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DocdbCluster) ResetRestoreToPointInTime() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRestoreToPointInTime",
 		nil, // no parameters
 	)
 }

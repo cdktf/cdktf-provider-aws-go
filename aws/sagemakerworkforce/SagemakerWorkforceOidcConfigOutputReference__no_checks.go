@@ -51,6 +51,10 @@ func (s *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateResolveP
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateSetAuthenticationRequestExtraParamsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateSetAuthorizationEndpointParameters(val *string) error {
 	return nil
 }
@@ -84,6 +88,10 @@ func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateSetJwksU
 }
 
 func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateSetLogoutEndpointParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SagemakerWorkforceOidcConfigOutputReference) validateSetScopeParameters(val *string) error {
 	return nil
 }
 

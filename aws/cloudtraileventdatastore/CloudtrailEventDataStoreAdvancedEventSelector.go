@@ -7,9 +7,9 @@ package cloudtraileventdatastore
 type CloudtrailEventDataStoreAdvancedEventSelector struct {
 	// field_selector block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/cloudtrail_event_data_store#field_selector CloudtrailEventDataStore#field_selector}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/cloudtrail_event_data_store#field_selector CloudtrailEventDataStore#field_selector}
 	FieldSelector interface{} `field:"optional" json:"fieldSelector" yaml:"fieldSelector"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/cloudtrail_event_data_store#name CloudtrailEventDataStore#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/cloudtrail_event_data_store#name CloudtrailEventDataStore#name}.
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

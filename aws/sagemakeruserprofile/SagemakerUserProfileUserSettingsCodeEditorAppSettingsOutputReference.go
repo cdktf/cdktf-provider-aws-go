@@ -28,6 +28,8 @@ type SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference interf
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomImage() SagemakerUserProfileUserSettingsCodeEditorAppSettingsCustomImageList
+	CustomImageInput() interface{}
 	DefaultResourceSpec() SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpecOutputReference
 	DefaultResourceSpecInput() *SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpec
 	// Experimental.
@@ -69,7 +71,9 @@ type SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCustomImage(value interface{})
 	PutDefaultResourceSpec(value *SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpec)
+	ResetCustomImage()
 	ResetDefaultResourceSpec()
 	ResetLifecycleConfigArns()
 	// Produce the Token's value at resolution time.
@@ -112,6 +116,26 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputRe
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference) CustomImage() SagemakerUserProfileUserSettingsCodeEditorAppSettingsCustomImageList {
+	var returns SagemakerUserProfileUserSettingsCodeEditorAppSettingsCustomImageList
+	_jsii_.Get(
+		j,
+		"customImage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference) CustomImageInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customImageInput",
 		&returns,
 	)
 	return returns
@@ -477,6 +501,17 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputRe
 	return returns
 }
 
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference) PutCustomImage(value interface{}) {
+	if err := s.validatePutCustomImageParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putCustomImage",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference) PutDefaultResourceSpec(value *SagemakerUserProfileUserSettingsCodeEditorAppSettingsDefaultResourceSpec) {
 	if err := s.validatePutDefaultResourceSpecParameters(value); err != nil {
 		panic(err)
@@ -485,6 +520,14 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputRe
 		s,
 		"putDefaultResourceSpec",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCodeEditorAppSettingsOutputReference) ResetCustomImage() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetCustomImage",
+		nil, // no parameters
 	)
 }
 

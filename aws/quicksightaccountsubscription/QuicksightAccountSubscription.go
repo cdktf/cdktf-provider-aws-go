@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription}.
 type QuicksightAccountSubscription interface {
 	cdktf.TerraformResource
 	AccountName() *string
@@ -73,6 +73,9 @@ type QuicksightAccountSubscription interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	IamIdentityCenterInstanceArn() *string
+	SetIamIdentityCenterInstanceArn(val *string)
+	IamIdentityCenterInstanceArnInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -164,6 +167,7 @@ type QuicksightAccountSubscription interface {
 	ResetDirectoryId()
 	ResetEmailAddress()
 	ResetFirstName()
+	ResetIamIdentityCenterInstanceArn()
 	ResetId()
 	ResetLastName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -500,6 +504,26 @@ func (j *jsiiProxy_QuicksightAccountSubscription) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_QuicksightAccountSubscription) IamIdentityCenterInstanceArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iamIdentityCenterInstanceArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_QuicksightAccountSubscription) IamIdentityCenterInstanceArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iamIdentityCenterInstanceArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_QuicksightAccountSubscription) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -701,7 +725,7 @@ func (j *jsiiProxy_QuicksightAccountSubscription) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription} Resource.
 func NewQuicksightAccountSubscription(scope constructs.Construct, id *string, config *QuicksightAccountSubscriptionConfig) QuicksightAccountSubscription {
 	_init_.Initialize()
 
@@ -719,7 +743,7 @@ func NewQuicksightAccountSubscription(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/quicksight_account_subscription aws_quicksight_account_subscription} Resource.
 func NewQuicksightAccountSubscription_Override(q QuicksightAccountSubscription, scope constructs.Construct, id *string, config *QuicksightAccountSubscriptionConfig) {
 	_init_.Initialize()
 
@@ -885,6 +909,17 @@ func (j *jsiiProxy_QuicksightAccountSubscription)SetForEach(val cdktf.ITerraform
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_QuicksightAccountSubscription)SetIamIdentityCenterInstanceArn(val *string) {
+	if err := j.validateSetIamIdentityCenterInstanceArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"iamIdentityCenterInstanceArn",
 		val,
 	)
 }
@@ -1398,6 +1433,14 @@ func (q *jsiiProxy_QuicksightAccountSubscription) ResetFirstName() {
 	_jsii_.InvokeVoid(
 		q,
 		"resetFirstName",
+		nil, // no parameters
+	)
+}
+
+func (q *jsiiProxy_QuicksightAccountSubscription) ResetIamIdentityCenterInstanceArn() {
+	_jsii_.InvokeVoid(
+		q,
+		"resetIamIdentityCenterInstanceArn",
 		nil, // no parameters
 	)
 }

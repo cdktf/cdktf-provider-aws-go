@@ -13,6 +13,9 @@ import (
 
 type GlueCatalogTableStorageDescriptorOutputReference interface {
 	cdktf.ComplexObject
+	AdditionalLocations() *[]*string
+	SetAdditionalLocations(val *[]*string)
+	AdditionalLocationsInput() *[]*string
 	BucketColumns() *[]*string
 	SetBucketColumns(val *[]*string)
 	BucketColumnsInput() *[]*string
@@ -103,6 +106,7 @@ type GlueCatalogTableStorageDescriptorOutputReference interface {
 	PutSerDeInfo(value *GlueCatalogTableStorageDescriptorSerDeInfo)
 	PutSkewedInfo(value *GlueCatalogTableStorageDescriptorSkewedInfo)
 	PutSortColumns(value interface{})
+	ResetAdditionalLocations()
 	ResetBucketColumns()
 	ResetColumns()
 	ResetCompressed()
@@ -129,6 +133,26 @@ type GlueCatalogTableStorageDescriptorOutputReference interface {
 // The jsii proxy struct for GlueCatalogTableStorageDescriptorOutputReference
 type jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) AdditionalLocations() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"additionalLocations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) AdditionalLocationsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"additionalLocationsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) BucketColumns() *[]*string {
@@ -486,6 +510,17 @@ func NewGlueCatalogTableStorageDescriptorOutputReference_Override(g GlueCatalogT
 		"@cdktf/provider-aws.glueCatalogTable.GlueCatalogTableStorageDescriptorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference)SetAdditionalLocations(val *[]*string) {
+	if err := j.validateSetAdditionalLocationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"additionalLocations",
+		val,
 	)
 }
 
@@ -870,6 +905,14 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) PutSortColu
 		g,
 		"putSortColumns",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) ResetAdditionalLocations() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdditionalLocations",
+		nil, // no parameters
 	)
 }
 

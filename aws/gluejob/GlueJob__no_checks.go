@@ -139,6 +139,10 @@ func (j *jsiiProxy_GlueJob) validateSetLifecycleParameters(val *cdktf.TerraformR
 	return nil
 }
 
+func (j *jsiiProxy_GlueJob) validateSetMaintenanceWindowParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueJob) validateSetMaxCapacityParameters(val *float64) error {
 	return nil
 }

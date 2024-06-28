@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/networkmanager_core_network_policy_document aws_networkmanager_core_network_policy_document}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/data-sources/networkmanager_core_network_policy_document aws_networkmanager_core_network_policy_document}.
 type DataAwsNetworkmanagerCoreNetworkPolicyDocument interface {
 	cdktf.TerraformDataSource
 	AttachmentPolicies() DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesList
@@ -47,6 +47,8 @@ type DataAwsNetworkmanagerCoreNetworkPolicyDocument interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	NetworkFunctionGroups() DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroupsList
+	NetworkFunctionGroupsInput() interface{}
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -95,10 +97,12 @@ type DataAwsNetworkmanagerCoreNetworkPolicyDocument interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAttachmentPolicies(value interface{})
 	PutCoreNetworkConfiguration(value interface{})
+	PutNetworkFunctionGroups(value interface{})
 	PutSegmentActions(value interface{})
 	PutSegments(value interface{})
 	ResetAttachmentPolicies()
 	ResetId()
+	ResetNetworkFunctionGroups()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -273,6 +277,26 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) Lifecycle() *
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) NetworkFunctionGroups() DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroupsList {
+	var returns DataAwsNetworkmanagerCoreNetworkPolicyDocumentNetworkFunctionGroupsList
+	_jsii_.Get(
+		j,
+		"networkFunctionGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) NetworkFunctionGroupsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"networkFunctionGroupsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -394,7 +418,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) VersionInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/networkmanager_core_network_policy_document aws_networkmanager_core_network_policy_document} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/data-sources/networkmanager_core_network_policy_document aws_networkmanager_core_network_policy_document} Data Source.
 func NewDataAwsNetworkmanagerCoreNetworkPolicyDocument(scope constructs.Construct, id *string, config *DataAwsNetworkmanagerCoreNetworkPolicyDocumentConfig) DataAwsNetworkmanagerCoreNetworkPolicyDocument {
 	_init_.Initialize()
 
@@ -412,7 +436,7 @@ func NewDataAwsNetworkmanagerCoreNetworkPolicyDocument(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/data-sources/networkmanager_core_network_policy_document aws_networkmanager_core_network_policy_document} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/data-sources/networkmanager_core_network_policy_document aws_networkmanager_core_network_policy_document} Data Source.
 func NewDataAwsNetworkmanagerCoreNetworkPolicyDocument_Override(d DataAwsNetworkmanagerCoreNetworkPolicyDocument, scope constructs.Construct, id *string, config *DataAwsNetworkmanagerCoreNetworkPolicyDocumentConfig) {
 	_init_.Initialize()
 
@@ -798,6 +822,17 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) PutCoreNetwor
 	)
 }
 
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) PutNetworkFunctionGroups(value interface{}) {
+	if err := d.validatePutNetworkFunctionGroupsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"putNetworkFunctionGroups",
+		[]interface{}{value},
+	)
+}
+
 func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) PutSegmentActions(value interface{}) {
 	if err := d.validatePutSegmentActionsParameters(value); err != nil {
 		panic(err)
@@ -832,6 +867,14 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) ResetId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) ResetNetworkFunctionGroups() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetNetworkFunctionGroups",
 		nil, // no parameters
 	)
 }

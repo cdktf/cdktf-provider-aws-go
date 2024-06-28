@@ -83,6 +83,10 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputR
 	return nil
 }
 
+func (j *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputReference) validateSetInferenceAmiVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputReference) validateSetInitialInstanceCountParameters(val *float64) error {
 	return nil
 }

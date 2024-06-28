@@ -143,6 +143,10 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateSe
 	return nil
 }
 
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateSetMaxSpotPriceAsPercentageOfOptimalOnDemandPriceParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateSetOnDemandMaxPricePercentageOverLowestPriceParameters(val *float64) error {
 	return nil
 }

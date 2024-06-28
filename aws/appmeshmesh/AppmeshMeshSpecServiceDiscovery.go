@@ -5,7 +5,7 @@ package appmeshmesh
 
 
 type AppmeshMeshSpecServiceDiscovery struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/appmesh_mesh#ip_preference AppmeshMesh#ip_preference}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/appmesh_mesh#ip_preference AppmeshMesh#ip_preference}.
 	IpPreference *string `field:"optional" json:"ipPreference" yaml:"ipPreference"`
 }
 

@@ -51,6 +51,10 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPolic
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOutputReference) validateSetAddToNetworkFunctionGroupParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocumentAttachmentPoliciesActionOutputReference) validateSetAssociationMethodParameters(val *string) error {
 	return nil
 }

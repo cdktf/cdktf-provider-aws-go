@@ -51,6 +51,10 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputRefere
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) validatePutGenerativeAiSettingsParameters(value *SagemakerUserProfileUserSettingsCanvasAppSettingsGenerativeAiSettings) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerUserProfileUserSettingsCanvasAppSettingsOutputReference) validatePutIdentityProviderOauthSettingsParameters(value interface{}) error {
 	return nil
 }

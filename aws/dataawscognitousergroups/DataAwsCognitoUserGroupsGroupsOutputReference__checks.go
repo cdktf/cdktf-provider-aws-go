@@ -166,25 +166,9 @@ func (j *jsiiProxy_DataAwsCognitoUserGroupsGroupsOutputReference) validateSetCom
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCognitoUserGroupsGroupsOutputReference) validateSetInternalValueParameters(val interface{}) error {
-	switch val.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *DataAwsCognitoUserGroupsGroups:
-		val := val.(*DataAwsCognitoUserGroupsGroups)
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	case DataAwsCognitoUserGroupsGroups:
-		val_ := val.(DataAwsCognitoUserGroupsGroups)
-		val := &val_
-		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
-			return err
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataAwsCognitoUserGroupsGroups; received %#v (a %T)", val, val)
-		}
+func (j *jsiiProxy_DataAwsCognitoUserGroupsGroupsOutputReference) validateSetInternalValueParameters(val *DataAwsCognitoUserGroupsGroups) error {
+	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
+		return err
 	}
 
 	return nil

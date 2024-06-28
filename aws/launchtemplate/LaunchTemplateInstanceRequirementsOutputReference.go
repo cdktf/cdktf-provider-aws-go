@@ -71,6 +71,9 @@ type LaunchTemplateInstanceRequirementsOutputReference interface {
 	LocalStorageTypes() *[]*string
 	SetLocalStorageTypes(val *[]*string)
 	LocalStorageTypesInput() *[]*string
+	MaxSpotPriceAsPercentageOfOptimalOnDemandPrice() *float64
+	SetMaxSpotPriceAsPercentageOfOptimalOnDemandPrice(val *float64)
+	MaxSpotPriceAsPercentageOfOptimalOnDemandPriceInput() *float64
 	MemoryGibPerVcpu() LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference
 	MemoryGibPerVcpuInput() *LaunchTemplateInstanceRequirementsMemoryGibPerVcpu
 	MemoryMib() LaunchTemplateInstanceRequirementsMemoryMibOutputReference
@@ -147,6 +150,7 @@ type LaunchTemplateInstanceRequirementsOutputReference interface {
 	ResetInstanceGenerations()
 	ResetLocalStorage()
 	ResetLocalStorageTypes()
+	ResetMaxSpotPriceAsPercentageOfOptimalOnDemandPrice()
 	ResetMemoryGibPerVcpu()
 	ResetNetworkBandwidthGbps()
 	ResetNetworkInterfaceCount()
@@ -494,6 +498,26 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) LocalStora
 	_jsii_.Get(
 		j,
 		"localStorageTypesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) MaxSpotPriceAsPercentageOfOptimalOnDemandPrice() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxSpotPriceAsPercentageOfOptimalOnDemandPrice",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) MaxSpotPriceAsPercentageOfOptimalOnDemandPriceInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxSpotPriceAsPercentageOfOptimalOnDemandPriceInput",
 		&returns,
 	)
 	return returns
@@ -877,6 +901,17 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetLocalSto
 	_jsii_.Set(
 		j,
 		"localStorageTypes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference)SetMaxSpotPriceAsPercentageOfOptimalOnDemandPrice(val *float64) {
+	if err := j.validateSetMaxSpotPriceAsPercentageOfOptimalOnDemandPriceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxSpotPriceAsPercentageOfOptimalOnDemandPrice",
 		val,
 	)
 }
@@ -1329,6 +1364,14 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) ResetLocal
 	_jsii_.InvokeVoid(
 		l,
 		"resetLocalStorageTypes",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) ResetMaxSpotPriceAsPercentageOfOptimalOnDemandPrice() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetMaxSpotPriceAsPercentageOfOptimalOnDemandPrice",
 		nil, // no parameters
 	)
 }

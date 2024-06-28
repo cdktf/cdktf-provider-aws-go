@@ -63,6 +63,10 @@ func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) validatePutCo
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) validatePutNetworkFunctionGroupsParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAwsNetworkmanagerCoreNetworkPolicyDocument) validatePutSegmentActionsParameters(value interface{}) error {
 	return nil
 }

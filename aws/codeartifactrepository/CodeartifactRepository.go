@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/codeartifact_repository aws_codeartifact_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/codeartifact_repository aws_codeartifact_repository}.
 type CodeartifactRepository interface {
 	cdktf.TerraformResource
 	AdministratorAccount() *string
@@ -522,7 +522,7 @@ func (j *jsiiProxy_CodeartifactRepository) UpstreamInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/codeartifact_repository aws_codeartifact_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/codeartifact_repository aws_codeartifact_repository} Resource.
 func NewCodeartifactRepository(scope constructs.Construct, id *string, config *CodeartifactRepositoryConfig) CodeartifactRepository {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewCodeartifactRepository(scope constructs.Construct, id *string, config *C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.54.1/docs/resources/codeartifact_repository aws_codeartifact_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/codeartifact_repository aws_codeartifact_repository} Resource.
 func NewCodeartifactRepository_Override(c CodeartifactRepository, scope constructs.Construct, id *string, config *CodeartifactRepositoryConfig) {
 	_init_.Initialize()
 

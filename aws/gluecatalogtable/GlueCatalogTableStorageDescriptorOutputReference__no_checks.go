@@ -71,6 +71,10 @@ func (g *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) validateRes
 	return nil
 }
 
+func (j *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) validateSetAdditionalLocationsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueCatalogTableStorageDescriptorOutputReference) validateSetBucketColumnsParameters(val *[]*string) error {
 	return nil
 }

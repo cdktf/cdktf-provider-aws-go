@@ -41,6 +41,9 @@ type SagemakerEndpointConfigurationShadowProductionVariantsOutputReference inter
 	EnableSsmAccessInput() interface{}
 	// Experimental.
 	Fqn() *string
+	InferenceAmiVersion() *string
+	SetInferenceAmiVersion(val *string)
+	InferenceAmiVersionInput() *string
 	InitialInstanceCount() *float64
 	SetInitialInstanceCount(val *float64)
 	InitialInstanceCountInput() *float64
@@ -107,6 +110,7 @@ type SagemakerEndpointConfigurationShadowProductionVariantsOutputReference inter
 	ResetContainerStartupHealthCheckTimeoutInSeconds()
 	ResetCoreDumpConfig()
 	ResetEnableSsmAccess()
+	ResetInferenceAmiVersion()
 	ResetInitialInstanceCount()
 	ResetInitialVariantWeight()
 	ResetInstanceType()
@@ -245,6 +249,26 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputR
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputReference) InferenceAmiVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inferenceAmiVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputReference) InferenceAmiVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inferenceAmiVersionInput",
 		&returns,
 	)
 	return returns
@@ -539,6 +563,17 @@ func (j *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputR
 	_jsii_.Set(
 		j,
 		"enableSsmAccess",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputReference)SetInferenceAmiVersion(val *string) {
+	if err := j.validateSetInferenceAmiVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"inferenceAmiVersion",
 		val,
 	)
 }
@@ -900,6 +935,14 @@ func (s *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputR
 	_jsii_.InvokeVoid(
 		s,
 		"resetEnableSsmAccess",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SagemakerEndpointConfigurationShadowProductionVariantsOutputReference) ResetInferenceAmiVersion() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetInferenceAmiVersion",
 		nil, // no parameters
 	)
 }
