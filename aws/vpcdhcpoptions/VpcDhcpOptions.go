@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/vpc_dhcp_options aws_vpc_dhcp_options}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/vpc_dhcp_options aws_vpc_dhcp_options}.
 type VpcDhcpOptions interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -524,7 +524,7 @@ func (j *jsiiProxy_VpcDhcpOptions) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/vpc_dhcp_options aws_vpc_dhcp_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/vpc_dhcp_options aws_vpc_dhcp_options} Resource.
 func NewVpcDhcpOptions(scope constructs.Construct, id *string, config *VpcDhcpOptionsConfig) VpcDhcpOptions {
 	_init_.Initialize()
 
@@ -542,7 +542,7 @@ func NewVpcDhcpOptions(scope constructs.Construct, id *string, config *VpcDhcpOp
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/vpc_dhcp_options aws_vpc_dhcp_options} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/vpc_dhcp_options aws_vpc_dhcp_options} Resource.
 func NewVpcDhcpOptions_Override(v VpcDhcpOptions, scope constructs.Construct, id *string, config *VpcDhcpOptionsConfig) {
 	_init_.Initialize()
 

@@ -24,11 +24,11 @@ type DevopsguruNotificationChannelConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// filters block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/devopsguru_notification_channel#filters DevopsguruNotificationChannel#filters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/devopsguru_notification_channel#filters DevopsguruNotificationChannel#filters}
 	Filters interface{} `field:"optional" json:"filters" yaml:"filters"`
 	// sns block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/devopsguru_notification_channel#sns DevopsguruNotificationChannel#sns}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/devopsguru_notification_channel#sns DevopsguruNotificationChannel#sns}
 	Sns interface{} `field:"optional" json:"sns" yaml:"sns"`
 }
 

@@ -24,24 +24,24 @@ type DatasyncLocationNfsConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// on_prem_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/datasync_location_nfs#on_prem_config DatasyncLocationNfs#on_prem_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/datasync_location_nfs#on_prem_config DatasyncLocationNfs#on_prem_config}
 	OnPremConfig *DatasyncLocationNfsOnPremConfig `field:"required" json:"onPremConfig" yaml:"onPremConfig"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/datasync_location_nfs#server_hostname DatasyncLocationNfs#server_hostname}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/datasync_location_nfs#server_hostname DatasyncLocationNfs#server_hostname}.
 	ServerHostname *string `field:"required" json:"serverHostname" yaml:"serverHostname"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/datasync_location_nfs#subdirectory DatasyncLocationNfs#subdirectory}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/datasync_location_nfs#subdirectory DatasyncLocationNfs#subdirectory}.
 	Subdirectory *string `field:"required" json:"subdirectory" yaml:"subdirectory"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/datasync_location_nfs#id DatasyncLocationNfs#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/datasync_location_nfs#id DatasyncLocationNfs#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// mount_options block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/datasync_location_nfs#mount_options DatasyncLocationNfs#mount_options}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/datasync_location_nfs#mount_options DatasyncLocationNfs#mount_options}
 	MountOptions *DatasyncLocationNfsMountOptions `field:"optional" json:"mountOptions" yaml:"mountOptions"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/datasync_location_nfs#tags DatasyncLocationNfs#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/datasync_location_nfs#tags DatasyncLocationNfs#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/datasync_location_nfs#tags_all DatasyncLocationNfs#tags_all}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/datasync_location_nfs#tags_all DatasyncLocationNfs#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 }
 

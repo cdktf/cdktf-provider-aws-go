@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/opsworks_permission aws_opsworks_permission}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/opsworks_permission aws_opsworks_permission}.
 type OpsworksPermission interface {
 	cdktf.TerraformResource
 	AllowSsh() interface{}
@@ -428,7 +428,7 @@ func (j *jsiiProxy_OpsworksPermission) UserArnInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/opsworks_permission aws_opsworks_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/opsworks_permission aws_opsworks_permission} Resource.
 func NewOpsworksPermission(scope constructs.Construct, id *string, config *OpsworksPermissionConfig) OpsworksPermission {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewOpsworksPermission(scope constructs.Construct, id *string, config *Opswo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.0/docs/resources/opsworks_permission aws_opsworks_permission} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/opsworks_permission aws_opsworks_permission} Resource.
 func NewOpsworksPermission_Override(o OpsworksPermission, scope constructs.Construct, id *string, config *OpsworksPermissionConfig) {
 	_init_.Initialize()
 
