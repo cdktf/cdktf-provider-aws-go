@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/gamelift_build aws_gamelift_build}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/gamelift_build aws_gamelift_build}.
 type GameliftBuild interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GameliftBuild) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/gamelift_build aws_gamelift_build} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/gamelift_build aws_gamelift_build} Resource.
 func NewGameliftBuild(scope constructs.Construct, id *string, config *GameliftBuildConfig) GameliftBuild {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGameliftBuild(scope constructs.Construct, id *string, config *GameliftBu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/gamelift_build aws_gamelift_build} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/gamelift_build aws_gamelift_build} Resource.
 func NewGameliftBuild_Override(g GameliftBuild, scope constructs.Construct, id *string, config *GameliftBuildConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/ec2_transit_gateway_peering_attachment aws_ec2_transit_gateway_peering_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ec2_transit_gateway_peering_attachment aws_ec2_transit_gateway_peering_attachment}.
 type Ec2TransitGatewayPeeringAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -48,6 +48,8 @@ type Ec2TransitGatewayPeeringAttachment interface {
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
+	Options() Ec2TransitGatewayPeeringAttachmentOptionsOutputReference
+	OptionsInput() *Ec2TransitGatewayPeeringAttachmentOptions
 	PeerAccountId() *string
 	SetPeerAccountId(val *string)
 	PeerAccountIdInput() *string
@@ -126,7 +128,9 @@ type Ec2TransitGatewayPeeringAttachment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutOptions(value *Ec2TransitGatewayPeeringAttachmentOptions)
 	ResetId()
+	ResetOptions()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -266,6 +270,26 @@ func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachment) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachment) Options() Ec2TransitGatewayPeeringAttachmentOptionsOutputReference {
+	var returns Ec2TransitGatewayPeeringAttachmentOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"options",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachment) OptionsInput() *Ec2TransitGatewayPeeringAttachmentOptions {
+	var returns *Ec2TransitGatewayPeeringAttachmentOptions
+	_jsii_.Get(
+		j,
+		"optionsInput",
 		&returns,
 	)
 	return returns
@@ -462,7 +486,7 @@ func (j *jsiiProxy_Ec2TransitGatewayPeeringAttachment) TransitGatewayIdInput() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/ec2_transit_gateway_peering_attachment aws_ec2_transit_gateway_peering_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ec2_transit_gateway_peering_attachment aws_ec2_transit_gateway_peering_attachment} Resource.
 func NewEc2TransitGatewayPeeringAttachment(scope constructs.Construct, id *string, config *Ec2TransitGatewayPeeringAttachmentConfig) Ec2TransitGatewayPeeringAttachment {
 	_init_.Initialize()
 
@@ -480,7 +504,7 @@ func NewEc2TransitGatewayPeeringAttachment(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/ec2_transit_gateway_peering_attachment aws_ec2_transit_gateway_peering_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ec2_transit_gateway_peering_attachment aws_ec2_transit_gateway_peering_attachment} Resource.
 func NewEc2TransitGatewayPeeringAttachment_Override(e Ec2TransitGatewayPeeringAttachment, scope constructs.Construct, id *string, config *Ec2TransitGatewayPeeringAttachmentConfig) {
 	_init_.Initialize()
 
@@ -989,10 +1013,29 @@ func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachment) OverrideLogicalId(newLogi
 	)
 }
 
+func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachment) PutOptions(value *Ec2TransitGatewayPeeringAttachmentOptions) {
+	if err := e.validatePutOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putOptions",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachment) ResetId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachment) ResetOptions() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetOptions",
 		nil, // no parameters
 	)
 }

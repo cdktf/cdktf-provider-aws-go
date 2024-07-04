@@ -75,6 +75,10 @@ func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachment) validateOverrideLogicalId
 	return nil
 }
 
+func (e *jsiiProxy_Ec2TransitGatewayPeeringAttachment) validatePutOptionsParameters(value *Ec2TransitGatewayPeeringAttachmentOptions) error {
+	return nil
+}
+
 func validateEc2TransitGatewayPeeringAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

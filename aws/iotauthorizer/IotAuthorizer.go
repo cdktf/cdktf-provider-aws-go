@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_authorizer aws_iot_authorizer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_authorizer aws_iot_authorizer}.
 type IotAuthorizer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -74,6 +74,12 @@ type IotAuthorizer interface {
 	Status() *string
 	SetStatus(val *string)
 	StatusInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -136,6 +142,8 @@ type IotAuthorizer interface {
 	ResetOverrideLogicalId()
 	ResetSigningDisabled()
 	ResetStatus()
+	ResetTags()
+	ResetTagsAll()
 	ResetTokenKeyName()
 	ResetTokenSigningPublicKeys()
 	SynthesizeAttributes() *map[string]interface{}
@@ -416,6 +424,46 @@ func (j *jsiiProxy_IotAuthorizer) StatusInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_IotAuthorizer) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotAuthorizer) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotAuthorizer) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotAuthorizer) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IotAuthorizer) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -487,7 +535,7 @@ func (j *jsiiProxy_IotAuthorizer) TokenSigningPublicKeysInput() *map[string]*str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_authorizer aws_iot_authorizer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_authorizer aws_iot_authorizer} Resource.
 func NewIotAuthorizer(scope constructs.Construct, id *string, config *IotAuthorizerConfig) IotAuthorizer {
 	_init_.Initialize()
 
@@ -505,7 +553,7 @@ func NewIotAuthorizer(scope constructs.Construct, id *string, config *IotAuthori
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/iot_authorizer aws_iot_authorizer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iot_authorizer aws_iot_authorizer} Resource.
 func NewIotAuthorizer_Override(i IotAuthorizer, scope constructs.Construct, id *string, config *IotAuthorizerConfig) {
 	_init_.Initialize()
 
@@ -646,6 +694,28 @@ func (j *jsiiProxy_IotAuthorizer)SetStatus(val *string) {
 	_jsii_.Set(
 		j,
 		"status",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IotAuthorizer)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_IotAuthorizer)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -1061,6 +1131,22 @@ func (i *jsiiProxy_IotAuthorizer) ResetStatus() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IotAuthorizer) ResetTags() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IotAuthorizer) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }

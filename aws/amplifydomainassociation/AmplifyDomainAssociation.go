@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/amplify_domain_association aws_amplify_domain_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/amplify_domain_association aws_amplify_domain_association}.
 type AmplifyDomainAssociation interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -21,6 +21,8 @@ type AmplifyDomainAssociation interface {
 	Arn() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CertificateSettings() AmplifyDomainAssociationCertificateSettingsOutputReference
+	CertificateSettingsInput() *AmplifyDomainAssociationCertificateSettings
 	CertificateVerificationDnsRecord() *string
 	// Experimental.
 	Connection() interface{}
@@ -123,7 +125,9 @@ type AmplifyDomainAssociation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCertificateSettings(value *AmplifyDomainAssociationCertificateSettings)
 	PutSubDomain(value interface{})
+	ResetCertificateSettings()
 	ResetEnableAutoSubDomain()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -183,6 +187,26 @@ func (j *jsiiProxy_AmplifyDomainAssociation) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AmplifyDomainAssociation) CertificateSettings() AmplifyDomainAssociationCertificateSettingsOutputReference {
+	var returns AmplifyDomainAssociationCertificateSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"certificateSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AmplifyDomainAssociation) CertificateSettingsInput() *AmplifyDomainAssociationCertificateSettings {
+	var returns *AmplifyDomainAssociationCertificateSettings
+	_jsii_.Get(
+		j,
+		"certificateSettingsInput",
 		&returns,
 	)
 	return returns
@@ -449,7 +473,7 @@ func (j *jsiiProxy_AmplifyDomainAssociation) WaitForVerificationInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/amplify_domain_association aws_amplify_domain_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/amplify_domain_association aws_amplify_domain_association} Resource.
 func NewAmplifyDomainAssociation(scope constructs.Construct, id *string, config *AmplifyDomainAssociationConfig) AmplifyDomainAssociation {
 	_init_.Initialize()
 
@@ -467,7 +491,7 @@ func NewAmplifyDomainAssociation(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/amplify_domain_association aws_amplify_domain_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/amplify_domain_association aws_amplify_domain_association} Resource.
 func NewAmplifyDomainAssociation_Override(a AmplifyDomainAssociation, scope constructs.Construct, id *string, config *AmplifyDomainAssociationConfig) {
 	_init_.Initialize()
 
@@ -954,6 +978,17 @@ func (a *jsiiProxy_AmplifyDomainAssociation) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (a *jsiiProxy_AmplifyDomainAssociation) PutCertificateSettings(value *AmplifyDomainAssociationCertificateSettings) {
+	if err := a.validatePutCertificateSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putCertificateSettings",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AmplifyDomainAssociation) PutSubDomain(value interface{}) {
 	if err := a.validatePutSubDomainParameters(value); err != nil {
 		panic(err)
@@ -962,6 +997,14 @@ func (a *jsiiProxy_AmplifyDomainAssociation) PutSubDomain(value interface{}) {
 		a,
 		"putSubDomain",
 		[]interface{}{value},
+	)
+}
+
+func (a *jsiiProxy_AmplifyDomainAssociation) ResetCertificateSettings() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetCertificateSettings",
+		nil, // no parameters
 	)
 }
 

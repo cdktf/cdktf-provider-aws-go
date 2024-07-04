@@ -463,6 +463,22 @@ func (j *jsiiProxy_IotAuthorizer) validateSetStatusParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_IotAuthorizer) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_IotAuthorizer) validateSetTagsAllParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_IotAuthorizer) validateSetTokenKeyNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

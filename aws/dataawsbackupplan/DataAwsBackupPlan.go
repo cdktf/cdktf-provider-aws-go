@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/data-sources/backup_plan aws_backup_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/backup_plan aws_backup_plan}.
 type DataAwsBackupPlan interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -55,6 +55,7 @@ type DataAwsBackupPlan interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Rule() DataAwsBackupPlanRuleList
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsInput() *map[string]*string
@@ -284,6 +285,16 @@ func (j *jsiiProxy_DataAwsBackupPlan) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsBackupPlan) Rule() DataAwsBackupPlanRuleList {
+	var returns DataAwsBackupPlanRuleList
+	_jsii_.Get(
+		j,
+		"rule",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsBackupPlan) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -345,7 +356,7 @@ func (j *jsiiProxy_DataAwsBackupPlan) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/data-sources/backup_plan aws_backup_plan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/backup_plan aws_backup_plan} Data Source.
 func NewDataAwsBackupPlan(scope constructs.Construct, id *string, config *DataAwsBackupPlanConfig) DataAwsBackupPlan {
 	_init_.Initialize()
 
@@ -363,7 +374,7 @@ func NewDataAwsBackupPlan(scope constructs.Construct, id *string, config *DataAw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/data-sources/backup_plan aws_backup_plan} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/backup_plan aws_backup_plan} Data Source.
 func NewDataAwsBackupPlan_Override(d DataAwsBackupPlan, scope constructs.Construct, id *string, config *DataAwsBackupPlanConfig) {
 	_init_.Initialize()
 

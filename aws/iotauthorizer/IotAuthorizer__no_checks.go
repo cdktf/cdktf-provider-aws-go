@@ -131,6 +131,14 @@ func (j *jsiiProxy_IotAuthorizer) validateSetStatusParameters(val *string) error
 	return nil
 }
 
+func (j *jsiiProxy_IotAuthorizer) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_IotAuthorizer) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotAuthorizer) validateSetTokenKeyNameParameters(val *string) error {
 	return nil
 }

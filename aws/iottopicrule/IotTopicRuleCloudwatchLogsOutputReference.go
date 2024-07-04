@@ -13,6 +13,9 @@ import (
 
 type IotTopicRuleCloudwatchLogsOutputReference interface {
 	cdktf.ComplexObject
+	BatchMode() interface{}
+	SetBatchMode(val interface{})
+	BatchModeInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +73,7 @@ type IotTopicRuleCloudwatchLogsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBatchMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -83,6 +87,26 @@ type IotTopicRuleCloudwatchLogsOutputReference interface {
 // The jsii proxy struct for IotTopicRuleCloudwatchLogsOutputReference
 type jsiiProxy_IotTopicRuleCloudwatchLogsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_IotTopicRuleCloudwatchLogsOutputReference) BatchMode() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"batchMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IotTopicRuleCloudwatchLogsOutputReference) BatchModeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"batchModeInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_IotTopicRuleCloudwatchLogsOutputReference) ComplexObjectIndex() interface{} {
@@ -220,6 +244,17 @@ func NewIotTopicRuleCloudwatchLogsOutputReference_Override(i IotTopicRuleCloudwa
 		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleCloudwatchLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
+	)
+}
+
+func (j *jsiiProxy_IotTopicRuleCloudwatchLogsOutputReference)SetBatchMode(val interface{}) {
+	if err := j.validateSetBatchModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"batchMode",
+		val,
 	)
 }
 
@@ -484,6 +519,14 @@ func (i *jsiiProxy_IotTopicRuleCloudwatchLogsOutputReference) InterpolationForAt
 	)
 
 	return returns
+}
+
+func (i *jsiiProxy_IotTopicRuleCloudwatchLogsOutputReference) ResetBatchMode() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetBatchMode",
+		nil, // no parameters
+	)
 }
 
 func (i *jsiiProxy_IotTopicRuleCloudwatchLogsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -75,6 +75,10 @@ func (a *jsiiProxy_AmplifyDomainAssociation) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (a *jsiiProxy_AmplifyDomainAssociation) validatePutCertificateSettingsParameters(value *AmplifyDomainAssociationCertificateSettings) error {
+	return nil
+}
+
 func (a *jsiiProxy_AmplifyDomainAssociation) validatePutSubDomainParameters(value interface{}) error {
 	return nil
 }

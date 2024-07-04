@@ -51,6 +51,10 @@ func (i *jsiiProxy_IotTopicRuleCloudwatchLogsOutputReference) validateResolvePar
 	return nil
 }
 
+func (j *jsiiProxy_IotTopicRuleCloudwatchLogsOutputReference) validateSetBatchModeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_IotTopicRuleCloudwatchLogsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

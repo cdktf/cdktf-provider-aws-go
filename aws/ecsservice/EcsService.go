@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/ecs_service aws_ecs_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ecs_service aws_ecs_service}.
 type EcsService interface {
 	cdktf.TerraformResource
 	Alarms() EcsServiceAlarmsOutputReference
@@ -1053,7 +1053,7 @@ func (j *jsiiProxy_EcsService) WaitForSteadyStateInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/ecs_service aws_ecs_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ecs_service aws_ecs_service} Resource.
 func NewEcsService(scope constructs.Construct, id *string, config *EcsServiceConfig) EcsService {
 	_init_.Initialize()
 
@@ -1071,7 +1071,7 @@ func NewEcsService(scope constructs.Construct, id *string, config *EcsServiceCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.56.1/docs/resources/ecs_service aws_ecs_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ecs_service aws_ecs_service} Resource.
 func NewEcsService_Override(e EcsService, scope constructs.Construct, id *string, config *EcsServiceConfig) {
 	_init_.Initialize()
 
