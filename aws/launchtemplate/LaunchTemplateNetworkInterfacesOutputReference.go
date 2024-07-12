@@ -80,6 +80,9 @@ type LaunchTemplateNetworkInterfacesOutputReference interface {
 	NetworkInterfaceId() *string
 	SetNetworkInterfaceId(val *string)
 	NetworkInterfaceIdInput() *string
+	PrimaryIpv6() *string
+	SetPrimaryIpv6(val *string)
+	PrimaryIpv6Input() *string
 	PrivateIpAddress() *string
 	SetPrivateIpAddress(val *string)
 	PrivateIpAddressInput() *string
@@ -137,6 +140,7 @@ type LaunchTemplateNetworkInterfacesOutputReference interface {
 	ResetIpv6Prefixes()
 	ResetNetworkCardIndex()
 	ResetNetworkInterfaceId()
+	ResetPrimaryIpv6()
 	ResetPrivateIpAddress()
 	ResetSecurityGroups()
 	ResetSubnetId()
@@ -525,6 +529,26 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) NetworkInterf
 	return returns
 }
 
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) PrimaryIpv6() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryIpv6",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) PrimaryIpv6Input() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryIpv6Input",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) PrivateIpAddress() *string {
 	var returns *string
 	_jsii_.Get(
@@ -838,6 +862,17 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetNetworkInte
 	_jsii_.Set(
 		j,
 		"networkInterfaceId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference)SetPrimaryIpv6(val *string) {
+	if err := j.validateSetPrimaryIpv6Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"primaryIpv6",
 		val,
 	)
 }
@@ -1207,6 +1242,14 @@ func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) ResetNetworkI
 	_jsii_.InvokeVoid(
 		l,
 		"resetNetworkInterfaceId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) ResetPrimaryIpv6() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetPrimaryIpv6",
 		nil, // no parameters
 	)
 }

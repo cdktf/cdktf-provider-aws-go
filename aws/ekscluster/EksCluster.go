@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/eks_cluster aws_eks_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/eks_cluster aws_eks_cluster}.
 type EksCluster interface {
 	cdktf.TerraformResource
 	AccessConfig() EksClusterAccessConfigOutputReference
 	AccessConfigInput() *EksClusterAccessConfig
 	Arn() *string
+	BootstrapSelfManagedAddons() interface{}
+	SetBootstrapSelfManagedAddons(val interface{})
+	BootstrapSelfManagedAddonsInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CertificateAuthority() EksClusterCertificateAuthorityList
@@ -152,6 +155,7 @@ type EksCluster interface {
 	PutTimeouts(value *EksClusterTimeouts)
 	PutVpcConfig(value *EksClusterVpcConfig)
 	ResetAccessConfig()
+	ResetBootstrapSelfManagedAddons()
 	ResetEnabledClusterLogTypes()
 	ResetEncryptionConfig()
 	ResetId()
@@ -207,6 +211,26 @@ func (j *jsiiProxy_EksCluster) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksCluster) BootstrapSelfManagedAddons() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bootstrapSelfManagedAddons",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksCluster) BootstrapSelfManagedAddonsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bootstrapSelfManagedAddonsInput",
 		&returns,
 	)
 	return returns
@@ -683,7 +707,7 @@ func (j *jsiiProxy_EksCluster) VpcConfigInput() *EksClusterVpcConfig {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
 func NewEksCluster(scope constructs.Construct, id *string, config *EksClusterConfig) EksCluster {
 	_init_.Initialize()
 
@@ -701,7 +725,7 @@ func NewEksCluster(scope constructs.Construct, id *string, config *EksClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
 func NewEksCluster_Override(e EksCluster, scope constructs.Construct, id *string, config *EksClusterConfig) {
 	_init_.Initialize()
 
@@ -709,6 +733,17 @@ func NewEksCluster_Override(e EksCluster, scope constructs.Construct, id *string
 		"@cdktf/provider-aws.eksCluster.EksCluster",
 		[]interface{}{scope, id, config},
 		e,
+	)
+}
+
+func (j *jsiiProxy_EksCluster)SetBootstrapSelfManagedAddons(val interface{}) {
+	if err := j.validateSetBootstrapSelfManagedAddonsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bootstrapSelfManagedAddons",
+		val,
 	)
 }
 
@@ -1280,6 +1315,14 @@ func (e *jsiiProxy_EksCluster) ResetAccessConfig() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetAccessConfig",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksCluster) ResetBootstrapSelfManagedAddons() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetBootstrapSelfManagedAddons",
 		nil, // no parameters
 	)
 }

@@ -13,6 +13,9 @@ import (
 
 type GlobalacceleratorCrossAccountAttachmentResourceOutputReference interface {
 	cdktf.ComplexObject
+	CidrBlock() *string
+	SetCidrBlock(val *string)
+	CidrBlockInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -70,6 +73,7 @@ type GlobalacceleratorCrossAccountAttachmentResourceOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCidrBlock()
 	ResetEndpointId()
 	ResetRegion()
 	// Produce the Token's value at resolution time.
@@ -85,6 +89,26 @@ type GlobalacceleratorCrossAccountAttachmentResourceOutputReference interface {
 // The jsii proxy struct for GlobalacceleratorCrossAccountAttachmentResourceOutputReference
 type jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceOutputReference) CidrBlock() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cidrBlock",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceOutputReference) CidrBlockInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cidrBlockInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceOutputReference) ComplexObjectIndex() interface{} {
@@ -222,6 +246,17 @@ func NewGlobalacceleratorCrossAccountAttachmentResourceOutputReference_Override(
 		"@cdktf/provider-aws.globalacceleratorCrossAccountAttachment.GlobalacceleratorCrossAccountAttachmentResourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceOutputReference)SetCidrBlock(val *string) {
+	if err := j.validateSetCidrBlockParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cidrBlock",
+		val,
 	)
 }
 
@@ -486,6 +521,14 @@ func (g *jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceOutputReferenc
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceOutputReference) ResetCidrBlock() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCidrBlock",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceOutputReference) ResetEndpointId() {

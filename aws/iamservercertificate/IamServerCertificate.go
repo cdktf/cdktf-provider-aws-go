@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iam_server_certificate aws_iam_server_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/iam_server_certificate aws_iam_server_certificate}.
 type IamServerCertificate interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -90,6 +90,8 @@ type IamServerCertificate interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() IamServerCertificateTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	UploadDate() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -134,6 +136,7 @@ type IamServerCertificate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *IamServerCertificateTimeouts)
 	ResetCertificateChain()
 	ResetId()
 	ResetName()
@@ -144,6 +147,7 @@ type IamServerCertificate interface {
 	ResetPath()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -522,6 +526,26 @@ func (j *jsiiProxy_IamServerCertificate) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_IamServerCertificate) Timeouts() IamServerCertificateTimeoutsOutputReference {
+	var returns IamServerCertificateTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_IamServerCertificate) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_IamServerCertificate) UploadDate() *string {
 	var returns *string
 	_jsii_.Get(
@@ -533,7 +557,7 @@ func (j *jsiiProxy_IamServerCertificate) UploadDate() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iam_server_certificate aws_iam_server_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/iam_server_certificate aws_iam_server_certificate} Resource.
 func NewIamServerCertificate(scope constructs.Construct, id *string, config *IamServerCertificateConfig) IamServerCertificate {
 	_init_.Initialize()
 
@@ -551,7 +575,7 @@ func NewIamServerCertificate(scope constructs.Construct, id *string, config *Iam
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/iam_server_certificate aws_iam_server_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/iam_server_certificate aws_iam_server_certificate} Resource.
 func NewIamServerCertificate_Override(i IamServerCertificate, scope constructs.Construct, id *string, config *IamServerCertificateConfig) {
 	_init_.Initialize()
 
@@ -1082,6 +1106,17 @@ func (i *jsiiProxy_IamServerCertificate) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
+func (i *jsiiProxy_IamServerCertificate) PutTimeouts(value *IamServerCertificateTimeouts) {
+	if err := i.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (i *jsiiProxy_IamServerCertificate) ResetCertificateChain() {
 	_jsii_.InvokeVoid(
 		i,
@@ -1142,6 +1177,14 @@ func (i *jsiiProxy_IamServerCertificate) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		i,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (i *jsiiProxy_IamServerCertificate) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		i,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

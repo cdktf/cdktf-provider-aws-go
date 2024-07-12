@@ -107,6 +107,7 @@ func init() {
 		reflect.TypeOf((*DataAwsEksClusterAccessConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationMode", GoGetter: "AuthenticationMode"},
+			_jsii_.MemberProperty{JsiiProperty: "bootstrapClusterCreatorAdminPermissions", GoGetter: "BootstrapClusterCreatorAdminPermissions"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},

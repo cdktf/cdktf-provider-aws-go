@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/oam_link aws_oam_link}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/oam_link aws_oam_link}.
 type OamLink interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -51,6 +51,8 @@ type OamLink interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LinkConfiguration() OamLinkLinkConfigurationOutputReference
+	LinkConfigurationInput() *OamLinkLinkConfiguration
 	LinkId() *string
 	// The tree node.
 	Node() constructs.Node
@@ -128,8 +130,10 @@ type OamLink interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutLinkConfiguration(value *OamLinkLinkConfiguration)
 	PutTimeouts(value *OamLinkTimeouts)
 	ResetId()
+	ResetLinkConfiguration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -299,6 +303,26 @@ func (j *jsiiProxy_OamLink) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OamLink) LinkConfiguration() OamLinkLinkConfigurationOutputReference {
+	var returns OamLinkLinkConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"linkConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_OamLink) LinkConfigurationInput() *OamLinkLinkConfiguration {
+	var returns *OamLinkLinkConfiguration
+	_jsii_.Get(
+		j,
+		"linkConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -495,7 +519,7 @@ func (j *jsiiProxy_OamLink) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/oam_link aws_oam_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/oam_link aws_oam_link} Resource.
 func NewOamLink(scope constructs.Construct, id *string, config *OamLinkConfig) OamLink {
 	_init_.Initialize()
 
@@ -513,7 +537,7 @@ func NewOamLink(scope constructs.Construct, id *string, config *OamLinkConfig) O
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/oam_link aws_oam_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/oam_link aws_oam_link} Resource.
 func NewOamLink_Override(o OamLink, scope constructs.Construct, id *string, config *OamLinkConfig) {
 	_init_.Initialize()
 
@@ -1011,6 +1035,17 @@ func (o *jsiiProxy_OamLink) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (o *jsiiProxy_OamLink) PutLinkConfiguration(value *OamLinkLinkConfiguration) {
+	if err := o.validatePutLinkConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"putLinkConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (o *jsiiProxy_OamLink) PutTimeouts(value *OamLinkTimeouts) {
 	if err := o.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1026,6 +1061,14 @@ func (o *jsiiProxy_OamLink) ResetId() {
 	_jsii_.InvokeVoid(
 		o,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (o *jsiiProxy_OamLink) ResetLinkConfiguration() {
+	_jsii_.InvokeVoid(
+		o,
+		"resetLinkConfiguration",
 		nil, // no parameters
 	)
 }

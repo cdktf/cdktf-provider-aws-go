@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/mskconnect_connector aws_mskconnect_connector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/mskconnect_connector aws_mskconnect_connector}.
 type DataAwsMskconnectConnector interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -55,6 +55,9 @@ type DataAwsMskconnectConnector interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -91,6 +94,7 @@ type DataAwsMskconnectConnector interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -280,6 +284,26 @@ func (j *jsiiProxy_DataAwsMskconnectConnector) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsMskconnectConnector) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsMskconnectConnector) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsMskconnectConnector) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -321,7 +345,7 @@ func (j *jsiiProxy_DataAwsMskconnectConnector) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/mskconnect_connector aws_mskconnect_connector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/mskconnect_connector aws_mskconnect_connector} Data Source.
 func NewDataAwsMskconnectConnector(scope constructs.Construct, id *string, config *DataAwsMskconnectConnectorConfig) DataAwsMskconnectConnector {
 	_init_.Initialize()
 
@@ -339,7 +363,7 @@ func NewDataAwsMskconnectConnector(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/mskconnect_connector aws_mskconnect_connector} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/mskconnect_connector aws_mskconnect_connector} Data Source.
 func NewDataAwsMskconnectConnector_Override(d DataAwsMskconnectConnector, scope constructs.Construct, id *string, config *DataAwsMskconnectConnectorConfig) {
 	_init_.Initialize()
 
@@ -414,6 +438,17 @@ func (j *jsiiProxy_DataAwsMskconnectConnector)SetProvider(val cdktf.TerraformPro
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsMskconnectConnector)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -715,6 +750,14 @@ func (d *jsiiProxy_DataAwsMskconnectConnector) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsMskconnectConnector) ResetTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTags",
 		nil, // no parameters
 	)
 }

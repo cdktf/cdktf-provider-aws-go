@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store}.
 type CloudtrailEventDataStore interface {
 	cdktf.TerraformResource
 	AdvancedEventSelector() CloudtrailEventDataStoreAdvancedEventSelectorList
 	AdvancedEventSelectorInput() interface{}
 	Arn() *string
+	BillingMode() *string
+	SetBillingMode(val *string)
+	BillingModeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -139,6 +142,7 @@ type CloudtrailEventDataStore interface {
 	PutAdvancedEventSelector(value interface{})
 	PutTimeouts(value *CloudtrailEventDataStoreTimeouts)
 	ResetAdvancedEventSelector()
+	ResetBillingMode()
 	ResetId()
 	ResetKmsKeyId()
 	ResetMultiRegionEnabled()
@@ -194,6 +198,26 @@ func (j *jsiiProxy_CloudtrailEventDataStore) Arn() *string {
 	_jsii_.Get(
 		j,
 		"arn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudtrailEventDataStore) BillingMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"billingMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudtrailEventDataStore) BillingModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"billingModeInput",
 		&returns,
 	)
 	return returns
@@ -560,7 +584,7 @@ func (j *jsiiProxy_CloudtrailEventDataStore) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store} Resource.
 func NewCloudtrailEventDataStore(scope constructs.Construct, id *string, config *CloudtrailEventDataStoreConfig) CloudtrailEventDataStore {
 	_init_.Initialize()
 
@@ -578,7 +602,7 @@ func NewCloudtrailEventDataStore(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/cloudtrail_event_data_store aws_cloudtrail_event_data_store} Resource.
 func NewCloudtrailEventDataStore_Override(c CloudtrailEventDataStore, scope constructs.Construct, id *string, config *CloudtrailEventDataStoreConfig) {
 	_init_.Initialize()
 
@@ -586,6 +610,17 @@ func NewCloudtrailEventDataStore_Override(c CloudtrailEventDataStore, scope cons
 		"@cdktf/provider-aws.cloudtrailEventDataStore.CloudtrailEventDataStore",
 		[]interface{}{scope, id, config},
 		c,
+	)
+}
+
+func (j *jsiiProxy_CloudtrailEventDataStore)SetBillingMode(val *string) {
+	if err := j.validateSetBillingModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"billingMode",
+		val,
 	)
 }
 
@@ -1135,6 +1170,14 @@ func (c *jsiiProxy_CloudtrailEventDataStore) ResetAdvancedEventSelector() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetAdvancedEventSelector",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudtrailEventDataStore) ResetBillingMode() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetBillingMode",
 		nil, // no parameters
 	)
 }

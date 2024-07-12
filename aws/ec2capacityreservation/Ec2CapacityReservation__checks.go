@@ -207,6 +207,17 @@ func (e *jsiiProxy_Ec2CapacityReservation) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (e *jsiiProxy_Ec2CapacityReservation) validatePutTimeoutsParameters(value *Ec2CapacityReservationTimeouts) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func validateEc2CapacityReservation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

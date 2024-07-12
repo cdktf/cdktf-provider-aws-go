@@ -5,9 +5,9 @@ package ecscluster
 
 
 type EcsClusterSetting struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ecs_cluster#name EcsCluster#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#name EcsCluster#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ecs_cluster#value EcsCluster#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ecs_cluster#value EcsCluster#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

@@ -1856,6 +1856,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ipv6Prefixes", GoGetter: "Ipv6Prefixes"},
 			_jsii_.MemberProperty{JsiiProperty: "networkCardIndex", GoGetter: "NetworkCardIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "networkInterfaceId", GoGetter: "NetworkInterfaceId"},
+			_jsii_.MemberProperty{JsiiProperty: "primaryIpv6", GoGetter: "PrimaryIpv6"},
 			_jsii_.MemberProperty{JsiiProperty: "privateIpAddress", GoGetter: "PrivateIpAddress"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "securityGroups", GoGetter: "SecurityGroups"},

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/networkmonitor_probe aws_networkmonitor_probe}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/networkmonitor_probe aws_networkmonitor_probe}.
 type NetworkmonitorProbe interface {
 	cdktf.TerraformResource
 	AddressFamily() *string
@@ -516,7 +516,7 @@ func (j *jsiiProxy_NetworkmonitorProbe) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/networkmonitor_probe aws_networkmonitor_probe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/networkmonitor_probe aws_networkmonitor_probe} Resource.
 func NewNetworkmonitorProbe(scope constructs.Construct, id *string, config *NetworkmonitorProbeConfig) NetworkmonitorProbe {
 	_init_.Initialize()
 
@@ -534,7 +534,7 @@ func NewNetworkmonitorProbe(scope constructs.Construct, id *string, config *Netw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/networkmonitor_probe aws_networkmonitor_probe} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/networkmonitor_probe aws_networkmonitor_probe} Resource.
 func NewNetworkmonitorProbe_Override(n NetworkmonitorProbe, scope constructs.Construct, id *string, config *NetworkmonitorProbeConfig) {
 	_init_.Initialize()
 

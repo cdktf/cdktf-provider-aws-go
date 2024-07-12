@@ -135,6 +135,10 @@ func (j *jsiiProxy_RdsCluster) validateSetBackupRetentionPeriodParameters(val *f
 	return nil
 }
 
+func (j *jsiiProxy_RdsCluster) validateSetCaCertificateIdentifierParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsCluster) validateSetClusterIdentifierParameters(val *string) error {
 	return nil
 }

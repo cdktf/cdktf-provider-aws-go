@@ -75,6 +75,10 @@ func (m *jsiiProxy_MskconnectWorkerConfiguration) validateOverrideLogicalIdParam
 	return nil
 }
 
+func (m *jsiiProxy_MskconnectWorkerConfiguration) validatePutTimeoutsParameters(value *MskconnectWorkerConfigurationTimeouts) error {
+	return nil
+}
+
 func validateMskconnectWorkerConfiguration_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -120,6 +124,14 @@ func (j *jsiiProxy_MskconnectWorkerConfiguration) validateSetPropertiesFileConte
 }
 
 func (j *jsiiProxy_MskconnectWorkerConfiguration) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_MskconnectWorkerConfiguration) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MskconnectWorkerConfiguration) validateSetTagsAllParameters(val *map[string]*string) error {
 	return nil
 }
 

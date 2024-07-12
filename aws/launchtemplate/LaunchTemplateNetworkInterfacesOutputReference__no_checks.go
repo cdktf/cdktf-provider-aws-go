@@ -127,6 +127,10 @@ func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) validateSetNe
 	return nil
 }
 
+func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) validateSetPrimaryIpv6Parameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference) validateSetPrivateIpAddressParameters(val *string) error {
 	return nil
 }

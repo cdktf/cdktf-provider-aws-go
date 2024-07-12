@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/rds_cluster aws_rds_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/rds_cluster aws_rds_cluster}.
 type RdsCluster interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -34,6 +34,10 @@ type RdsCluster interface {
 	BackupRetentionPeriod() *float64
 	SetBackupRetentionPeriod(val *float64)
 	BackupRetentionPeriodInput() *float64
+	CaCertificateIdentifier() *string
+	SetCaCertificateIdentifier(val *string)
+	CaCertificateIdentifierInput() *string
+	CaCertificateValidTill() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterIdentifier() *string
@@ -285,6 +289,7 @@ type RdsCluster interface {
 	ResetAvailabilityZones()
 	ResetBacktrackWindow()
 	ResetBackupRetentionPeriod()
+	ResetCaCertificateIdentifier()
 	ResetClusterIdentifier()
 	ResetClusterIdentifierPrefix()
 	ResetClusterMembers()
@@ -480,6 +485,36 @@ func (j *jsiiProxy_RdsCluster) BackupRetentionPeriodInput() *float64 {
 	_jsii_.Get(
 		j,
 		"backupRetentionPeriodInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) CaCertificateIdentifier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"caCertificateIdentifier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) CaCertificateIdentifierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"caCertificateIdentifierInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) CaCertificateValidTill() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"caCertificateValidTill",
 		&returns,
 	)
 	return returns
@@ -1706,7 +1741,7 @@ func (j *jsiiProxy_RdsCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
 func NewRdsCluster(scope constructs.Construct, id *string, config *RdsClusterConfig) RdsCluster {
 	_init_.Initialize()
 
@@ -1724,7 +1759,7 @@ func NewRdsCluster(scope constructs.Construct, id *string, config *RdsClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
 func NewRdsCluster_Override(r RdsCluster, scope constructs.Construct, id *string, config *RdsClusterConfig) {
 	_init_.Initialize()
 
@@ -1797,6 +1832,17 @@ func (j *jsiiProxy_RdsCluster)SetBackupRetentionPeriod(val *float64) {
 	_jsii_.Set(
 		j,
 		"backupRetentionPeriod",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsCluster)SetCaCertificateIdentifier(val *string) {
+	if err := j.validateSetCaCertificateIdentifierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"caCertificateIdentifier",
 		val,
 	)
 }
@@ -2816,6 +2862,14 @@ func (r *jsiiProxy_RdsCluster) ResetBackupRetentionPeriod() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetBackupRetentionPeriod",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsCluster) ResetCaCertificateIdentifier() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetCaCertificateIdentifier",
 		nil, // no parameters
 	)
 }

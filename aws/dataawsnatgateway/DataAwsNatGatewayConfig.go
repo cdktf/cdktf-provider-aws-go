@@ -24,24 +24,24 @@ type DataAwsNatGatewayConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// filter block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/nat_gateway#filter DataAwsNatGateway#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/nat_gateway#filter DataAwsNatGateway#filter}
 	Filter interface{} `field:"optional" json:"filter" yaml:"filter"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/nat_gateway#id DataAwsNatGateway#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/nat_gateway#id DataAwsNatGateway#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/nat_gateway#state DataAwsNatGateway#state}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/nat_gateway#state DataAwsNatGateway#state}.
 	State *string `field:"optional" json:"state" yaml:"state"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/nat_gateway#subnet_id DataAwsNatGateway#subnet_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/nat_gateway#subnet_id DataAwsNatGateway#subnet_id}.
 	SubnetId *string `field:"optional" json:"subnetId" yaml:"subnetId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/nat_gateway#tags DataAwsNatGateway#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/nat_gateway#tags DataAwsNatGateway#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/nat_gateway#timeouts DataAwsNatGateway#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/nat_gateway#timeouts DataAwsNatGateway#timeouts}
 	Timeouts *DataAwsNatGatewayTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/nat_gateway#vpc_id DataAwsNatGateway#vpc_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/nat_gateway#vpc_id DataAwsNatGateway#vpc_id}.
 	VpcId *string `field:"optional" json:"vpcId" yaml:"vpcId"`
 }
 

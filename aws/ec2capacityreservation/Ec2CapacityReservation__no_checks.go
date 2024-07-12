@@ -75,6 +75,10 @@ func (e *jsiiProxy_Ec2CapacityReservation) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (e *jsiiProxy_Ec2CapacityReservation) validatePutTimeoutsParameters(value *Ec2CapacityReservationTimeouts) error {
+	return nil
+}
+
 func validateEc2CapacityReservation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

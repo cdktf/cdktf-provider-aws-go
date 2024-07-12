@@ -147,6 +147,10 @@ func (j *jsiiProxy_FmsPolicy) validateSetRemediationEnabledParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_FmsPolicy) validateSetResourceSetIdsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FmsPolicy) validateSetResourceTagsParameters(val *map[string]*string) error {
 	return nil
 }

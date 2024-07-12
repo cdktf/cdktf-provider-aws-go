@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ec2_capacity_reservation aws_ec2_capacity_reservation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ec2_capacity_reservation aws_ec2_capacity_reservation}.
 type Ec2CapacityReservation interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -108,6 +108,8 @@ type Ec2CapacityReservation interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() Ec2CapacityReservationTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -151,6 +153,7 @@ type Ec2CapacityReservation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *Ec2CapacityReservationTimeouts)
 	ResetEbsOptimized()
 	ResetEndDate()
 	ResetEndDateType()
@@ -165,6 +168,7 @@ type Ec2CapacityReservation interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTenancy()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -663,8 +667,28 @@ func (j *jsiiProxy_Ec2CapacityReservation) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Ec2CapacityReservation) Timeouts() Ec2CapacityReservationTimeoutsOutputReference {
+	var returns Ec2CapacityReservationTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ec2_capacity_reservation aws_ec2_capacity_reservation} Resource.
+func (j *jsiiProxy_Ec2CapacityReservation) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ec2_capacity_reservation aws_ec2_capacity_reservation} Resource.
 func NewEc2CapacityReservation(scope constructs.Construct, id *string, config *Ec2CapacityReservationConfig) Ec2CapacityReservation {
 	_init_.Initialize()
 
@@ -682,7 +706,7 @@ func NewEc2CapacityReservation(scope constructs.Construct, id *string, config *E
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ec2_capacity_reservation aws_ec2_capacity_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ec2_capacity_reservation aws_ec2_capacity_reservation} Resource.
 func NewEc2CapacityReservation_Override(e Ec2CapacityReservation, scope constructs.Construct, id *string, config *Ec2CapacityReservationConfig) {
 	_init_.Initialize()
 
@@ -1279,6 +1303,17 @@ func (e *jsiiProxy_Ec2CapacityReservation) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (e *jsiiProxy_Ec2CapacityReservation) PutTimeouts(value *Ec2CapacityReservationTimeouts) {
+	if err := e.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_Ec2CapacityReservation) ResetEbsOptimized() {
 	_jsii_.InvokeVoid(
 		e,
@@ -1371,6 +1406,14 @@ func (e *jsiiProxy_Ec2CapacityReservation) ResetTenancy() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetTenancy",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_Ec2CapacityReservation) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

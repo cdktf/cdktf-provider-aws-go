@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/appstream_fleet aws_appstream_fleet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/appstream_fleet aws_appstream_fleet}.
 type AppstreamFleet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -796,7 +796,7 @@ func (j *jsiiProxy_AppstreamFleet) VpcConfigInput() *AppstreamFleetVpcConfig {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/appstream_fleet aws_appstream_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/appstream_fleet aws_appstream_fleet} Resource.
 func NewAppstreamFleet(scope constructs.Construct, id *string, config *AppstreamFleetConfig) AppstreamFleet {
 	_init_.Initialize()
 
@@ -814,7 +814,7 @@ func NewAppstreamFleet(scope constructs.Construct, id *string, config *Appstream
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/appstream_fleet aws_appstream_fleet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/appstream_fleet aws_appstream_fleet} Resource.
 func NewAppstreamFleet_Override(a AppstreamFleet, scope constructs.Construct, id *string, config *AppstreamFleetConfig) {
 	_init_.Initialize()
 

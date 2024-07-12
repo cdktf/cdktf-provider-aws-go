@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association}.
 type EksPodIdentityAssociation interface {
 	cdktf.TerraformResource
 	AssociationArn() *string
@@ -446,7 +446,7 @@ func (j *jsiiProxy_EksPodIdentityAssociation) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association} Resource.
 func NewEksPodIdentityAssociation(scope constructs.Construct, id *string, config *EksPodIdentityAssociationConfig) EksPodIdentityAssociation {
 	_init_.Initialize()
 
@@ -464,7 +464,7 @@ func NewEksPodIdentityAssociation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/eks_pod_identity_association aws_eks_pod_identity_association} Resource.
 func NewEksPodIdentityAssociation_Override(e EksPodIdentityAssociation, scope constructs.Construct, id *string, config *EksPodIdentityAssociationConfig) {
 	_init_.Initialize()
 

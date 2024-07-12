@@ -13,6 +13,15 @@ import (
 
 type CloudformationStackSetInstanceDeploymentTargetsOutputReference interface {
 	cdktf.ComplexObject
+	AccountFilterType() *string
+	SetAccountFilterType(val *string)
+	AccountFilterTypeInput() *string
+	Accounts() *[]*string
+	SetAccounts(val *[]*string)
+	AccountsInput() *[]*string
+	AccountsUrl() *string
+	SetAccountsUrl(val *string)
+	AccountsUrlInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -67,6 +76,9 @@ type CloudformationStackSetInstanceDeploymentTargetsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetAccountFilterType()
+	ResetAccounts()
+	ResetAccountsUrl()
 	ResetOrganizationalUnitIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -81,6 +93,66 @@ type CloudformationStackSetInstanceDeploymentTargetsOutputReference interface {
 // The jsii proxy struct for CloudformationStackSetInstanceDeploymentTargetsOutputReference
 type jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference) AccountFilterType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountFilterType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference) AccountFilterTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountFilterTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference) Accounts() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"accounts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference) AccountsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"accountsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference) AccountsUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountsUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference) AccountsUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accountsUrlInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference) ComplexObjectIndex() interface{} {
@@ -198,6 +270,39 @@ func NewCloudformationStackSetInstanceDeploymentTargetsOutputReference_Override(
 		"@cdktf/provider-aws.cloudformationStackSetInstance.CloudformationStackSetInstanceDeploymentTargetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
+	)
+}
+
+func (j *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference)SetAccountFilterType(val *string) {
+	if err := j.validateSetAccountFilterTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountFilterType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference)SetAccounts(val *[]*string) {
+	if err := j.validateSetAccountsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accounts",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference)SetAccountsUrl(val *string) {
+	if err := j.validateSetAccountsUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accountsUrl",
+		val,
 	)
 }
 
@@ -451,6 +556,30 @@ func (c *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReferenc
 	)
 
 	return returns
+}
+
+func (c *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference) ResetAccountFilterType() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAccountFilterType",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference) ResetAccounts() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAccounts",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference) ResetAccountsUrl() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetAccountsUrl",
+		nil, // no parameters
+	)
 }
 
 func (c *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference) ResetOrganizationalUnitIds() {

@@ -99,6 +99,10 @@ func validateCloudtrailEventDataStore_IsTerraformResourceParameters(x interface{
 	return nil
 }
 
+func (j *jsiiProxy_CloudtrailEventDataStore) validateSetBillingModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudtrailEventDataStore) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

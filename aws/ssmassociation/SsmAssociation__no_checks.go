@@ -167,6 +167,14 @@ func (j *jsiiProxy_SsmAssociation) validateSetSyncComplianceParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_SsmAssociation) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_SsmAssociation) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_SsmAssociation) validateSetWaitForSuccessTimeoutSecondsParameters(val *float64) error {
 	return nil
 }

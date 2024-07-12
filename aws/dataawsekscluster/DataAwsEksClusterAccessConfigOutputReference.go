@@ -14,6 +14,7 @@ import (
 type DataAwsEksClusterAccessConfigOutputReference interface {
 	cdktf.ComplexObject
 	AuthenticationMode() *string
+	BootstrapClusterCreatorAdminPermissions() cdktf.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -85,6 +86,16 @@ func (j *jsiiProxy_DataAwsEksClusterAccessConfigOutputReference) AuthenticationM
 	_jsii_.Get(
 		j,
 		"authenticationMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsEksClusterAccessConfigOutputReference) BootstrapClusterCreatorAdminPermissions() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"bootstrapClusterCreatorAdminPermissions",
 		&returns,
 	)
 	return returns

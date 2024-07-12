@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/mskconnect_connector aws_mskconnect_connector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/mskconnect_connector aws_mskconnect_connector}.
 type MskconnectConnector interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -86,6 +86,12 @@ type MskconnectConnector interface {
 	ServiceExecutionRoleArn() *string
 	SetServiceExecutionRoleArn(val *string)
 	ServiceExecutionRoleArnInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -154,6 +160,8 @@ type MskconnectConnector interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
+	ResetTagsAll()
 	ResetTimeouts()
 	ResetWorkerConfiguration()
 	SynthesizeAttributes() *map[string]interface{}
@@ -554,6 +562,46 @@ func (j *jsiiProxy_MskconnectConnector) ServiceExecutionRoleArnInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MskconnectConnector) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskconnectConnector) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskconnectConnector) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskconnectConnector) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MskconnectConnector) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -635,7 +683,7 @@ func (j *jsiiProxy_MskconnectConnector) WorkerConfigurationInput() *MskconnectCo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/mskconnect_connector aws_mskconnect_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/mskconnect_connector aws_mskconnect_connector} Resource.
 func NewMskconnectConnector(scope constructs.Construct, id *string, config *MskconnectConnectorConfig) MskconnectConnector {
 	_init_.Initialize()
 
@@ -653,7 +701,7 @@ func NewMskconnectConnector(scope constructs.Construct, id *string, config *Mskc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/mskconnect_connector aws_mskconnect_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/mskconnect_connector aws_mskconnect_connector} Resource.
 func NewMskconnectConnector_Override(m MskconnectConnector, scope constructs.Construct, id *string, config *MskconnectConnectorConfig) {
 	_init_.Initialize()
 
@@ -794,6 +842,28 @@ func (j *jsiiProxy_MskconnectConnector)SetServiceExecutionRoleArn(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceExecutionRoleArn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskconnectConnector)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskconnectConnector)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -1267,6 +1337,22 @@ func (m *jsiiProxy_MskconnectConnector) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskconnectConnector) ResetTags() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskconnectConnector) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }

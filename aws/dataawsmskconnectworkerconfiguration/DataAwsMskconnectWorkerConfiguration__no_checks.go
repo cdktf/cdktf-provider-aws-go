@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) validateSetNameParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsMskconnectWorkerConfiguration) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewDataAwsMskconnectWorkerConfigurationParameters(scope constructs.Construct, id *string, config *DataAwsMskconnectWorkerConfigurationConfig) error {
 	return nil
 }

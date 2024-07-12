@@ -547,6 +547,22 @@ func (j *jsiiProxy_MskconnectConnector) validateSetServiceExecutionRoleArnParame
 	return nil
 }
 
+func (j *jsiiProxy_MskconnectConnector) validateSetTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_MskconnectConnector) validateSetTagsAllParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewMskconnectConnectorParameters(scope constructs.Construct, id *string, config *MskconnectConnectorConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

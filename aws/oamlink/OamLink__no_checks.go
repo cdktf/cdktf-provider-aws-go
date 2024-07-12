@@ -75,6 +75,10 @@ func (o *jsiiProxy_OamLink) validateOverrideLogicalIdParameters(newLogicalId *st
 	return nil
 }
 
+func (o *jsiiProxy_OamLink) validatePutLinkConfigurationParameters(value *OamLinkLinkConfiguration) error {
+	return nil
+}
+
 func (o *jsiiProxy_OamLink) validatePutTimeoutsParameters(value *OamLinkTimeouts) error {
 	return nil
 }

@@ -48,6 +48,7 @@ type DataAwsLaunchTemplateNetworkInterfacesOutputReference interface {
 	Ipv6Prefixes() *[]*string
 	NetworkCardIndex() *float64
 	NetworkInterfaceId() *string
+	PrimaryIpv6() *string
 	PrivateIpAddress() *string
 	SecurityGroups() *[]*string
 	SubnetId() *string
@@ -303,6 +304,16 @@ func (j *jsiiProxy_DataAwsLaunchTemplateNetworkInterfacesOutputReference) Networ
 	_jsii_.Get(
 		j,
 		"networkInterfaceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsLaunchTemplateNetworkInterfacesOutputReference) PrimaryIpv6() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryIpv6",
 		&returns,
 	)
 	return returns

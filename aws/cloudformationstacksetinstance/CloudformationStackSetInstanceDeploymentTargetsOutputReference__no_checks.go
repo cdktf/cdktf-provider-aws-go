@@ -51,6 +51,18 @@ func (c *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference) validateSetAccountFilterTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference) validateSetAccountsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference) validateSetAccountsUrlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

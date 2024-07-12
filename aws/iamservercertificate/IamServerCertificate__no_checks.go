@@ -75,6 +75,10 @@ func (i *jsiiProxy_IamServerCertificate) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (i *jsiiProxy_IamServerCertificate) validatePutTimeoutsParameters(value *IamServerCertificateTimeouts) error {
+	return nil
+}
+
 func validateIamServerCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

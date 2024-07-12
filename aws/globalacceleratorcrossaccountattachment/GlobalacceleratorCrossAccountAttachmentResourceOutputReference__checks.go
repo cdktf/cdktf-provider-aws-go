@@ -101,6 +101,14 @@ func (g *jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceOutputReference) validateSetCidrBlockParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:

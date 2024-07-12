@@ -163,6 +163,14 @@ func (j *jsiiProxy_MskconnectConnector) validateSetServiceExecutionRoleArnParame
 	return nil
 }
 
+func (j *jsiiProxy_MskconnectConnector) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_MskconnectConnector) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewMskconnectConnectorParameters(scope constructs.Construct, id *string, config *MskconnectConnectorConfig) error {
 	return nil
 }

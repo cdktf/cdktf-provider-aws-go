@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/mskconnect_worker_configuration aws_mskconnect_worker_configuration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/mskconnect_worker_configuration aws_mskconnect_worker_configuration}.
 type MskconnectWorkerConfiguration interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -69,12 +69,20 @@ type MskconnectWorkerConfiguration interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() MskconnectWorkerConfigurationTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -118,11 +126,15 @@ type MskconnectWorkerConfiguration interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *MskconnectWorkerConfigurationTimeouts)
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
+	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -371,6 +383,46 @@ func (j *jsiiProxy_MskconnectWorkerConfiguration) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_MskconnectWorkerConfiguration) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskconnectWorkerConfiguration) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskconnectWorkerConfiguration) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskconnectWorkerConfiguration) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MskconnectWorkerConfiguration) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -401,8 +453,28 @@ func (j *jsiiProxy_MskconnectWorkerConfiguration) TerraformResourceType() *strin
 	return returns
 }
 
+func (j *jsiiProxy_MskconnectWorkerConfiguration) Timeouts() MskconnectWorkerConfigurationTimeoutsOutputReference {
+	var returns MskconnectWorkerConfigurationTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/mskconnect_worker_configuration aws_mskconnect_worker_configuration} Resource.
+func (j *jsiiProxy_MskconnectWorkerConfiguration) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/mskconnect_worker_configuration aws_mskconnect_worker_configuration} Resource.
 func NewMskconnectWorkerConfiguration(scope constructs.Construct, id *string, config *MskconnectWorkerConfigurationConfig) MskconnectWorkerConfiguration {
 	_init_.Initialize()
 
@@ -420,7 +492,7 @@ func NewMskconnectWorkerConfiguration(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/mskconnect_worker_configuration aws_mskconnect_worker_configuration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/mskconnect_worker_configuration aws_mskconnect_worker_configuration} Resource.
 func NewMskconnectWorkerConfiguration_Override(m MskconnectWorkerConfiguration, scope constructs.Construct, id *string, config *MskconnectWorkerConfigurationConfig) {
 	_init_.Initialize()
 
@@ -539,6 +611,28 @@ func (j *jsiiProxy_MskconnectWorkerConfiguration)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskconnectWorkerConfiguration)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskconnectWorkerConfiguration)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -896,6 +990,17 @@ func (m *jsiiProxy_MskconnectWorkerConfiguration) OverrideLogicalId(newLogicalId
 	)
 }
 
+func (m *jsiiProxy_MskconnectWorkerConfiguration) PutTimeouts(value *MskconnectWorkerConfigurationTimeouts) {
+	if err := m.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MskconnectWorkerConfiguration) ResetDescription() {
 	_jsii_.InvokeVoid(
 		m,
@@ -916,6 +1021,30 @@ func (m *jsiiProxy_MskconnectWorkerConfiguration) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskconnectWorkerConfiguration) ResetTags() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskconnectWorkerConfiguration) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskconnectWorkerConfiguration) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

@@ -22,11 +22,11 @@ type NetworkAclAssociationConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/network_acl_association#network_acl_id NetworkAclAssociation#network_acl_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/network_acl_association#network_acl_id NetworkAclAssociation#network_acl_id}.
 	NetworkAclId *string `field:"required" json:"networkAclId" yaml:"networkAclId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/network_acl_association#subnet_id NetworkAclAssociation#subnet_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/network_acl_association#subnet_id NetworkAclAssociation#subnet_id}.
 	SubnetId *string `field:"required" json:"subnetId" yaml:"subnetId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/network_acl_association#id NetworkAclAssociation#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/network_acl_association#id NetworkAclAssociation#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

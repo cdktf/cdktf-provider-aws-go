@@ -51,6 +51,10 @@ func (g *jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceOutputReference) validateSetCidrBlockParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlobalacceleratorCrossAccountAttachmentResourceOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

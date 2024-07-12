@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/mskconnect_custom_plugin aws_mskconnect_custom_plugin}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/mskconnect_custom_plugin aws_mskconnect_custom_plugin}.
 type MskconnectCustomPlugin interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -72,6 +72,12 @@ type MskconnectCustomPlugin interface {
 	// Experimental.
 	RawOverrides() interface{}
 	State() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -130,6 +136,8 @@ type MskconnectCustomPlugin interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
+	ResetTagsAll()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -409,6 +417,46 @@ func (j *jsiiProxy_MskconnectCustomPlugin) State() *string {
 	return returns
 }
 
+func (j *jsiiProxy_MskconnectCustomPlugin) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskconnectCustomPlugin) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskconnectCustomPlugin) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskconnectCustomPlugin) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_MskconnectCustomPlugin) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -460,7 +508,7 @@ func (j *jsiiProxy_MskconnectCustomPlugin) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/mskconnect_custom_plugin aws_mskconnect_custom_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/mskconnect_custom_plugin aws_mskconnect_custom_plugin} Resource.
 func NewMskconnectCustomPlugin(scope constructs.Construct, id *string, config *MskconnectCustomPluginConfig) MskconnectCustomPlugin {
 	_init_.Initialize()
 
@@ -478,7 +526,7 @@ func NewMskconnectCustomPlugin(scope constructs.Construct, id *string, config *M
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/mskconnect_custom_plugin aws_mskconnect_custom_plugin} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/mskconnect_custom_plugin aws_mskconnect_custom_plugin} Resource.
 func NewMskconnectCustomPlugin_Override(m MskconnectCustomPlugin, scope constructs.Construct, id *string, config *MskconnectCustomPluginConfig) {
 	_init_.Initialize()
 
@@ -597,6 +645,28 @@ func (j *jsiiProxy_MskconnectCustomPlugin)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskconnectCustomPlugin)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_MskconnectCustomPlugin)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -996,6 +1066,22 @@ func (m *jsiiProxy_MskconnectCustomPlugin) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		m,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskconnectCustomPlugin) ResetTags() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskconnectCustomPlugin) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }

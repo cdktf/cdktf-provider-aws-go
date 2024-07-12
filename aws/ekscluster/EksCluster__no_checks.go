@@ -115,6 +115,10 @@ func validateEksCluster_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
+func (j *jsiiProxy_EksCluster) validateSetBootstrapSelfManagedAddonsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EksCluster) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

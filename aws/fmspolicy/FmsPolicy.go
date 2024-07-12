@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/fms_policy aws_fms_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fms_policy aws_fms_policy}.
 type FmsPolicy interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -82,6 +82,9 @@ type FmsPolicy interface {
 	RemediationEnabled() interface{}
 	SetRemediationEnabled(val interface{})
 	RemediationEnabledInput() interface{}
+	ResourceSetIds() *[]*string
+	SetResourceSetIds(val *[]*string)
+	ResourceSetIdsInput() *[]*string
 	ResourceTags() *map[string]*string
 	SetResourceTags(val *map[string]*string)
 	ResourceTagsInput() *map[string]*string
@@ -161,6 +164,7 @@ type FmsPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRemediationEnabled()
+	ResetResourceSetIds()
 	ResetResourceTags()
 	ResetResourceType()
 	ResetResourceTypeList()
@@ -514,6 +518,26 @@ func (j *jsiiProxy_FmsPolicy) RemediationEnabledInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_FmsPolicy) ResourceSetIds() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resourceSetIds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FmsPolicy) ResourceSetIdsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resourceSetIdsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FmsPolicy) ResourceTags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -665,7 +689,7 @@ func (j *jsiiProxy_FmsPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/fms_policy aws_fms_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fms_policy aws_fms_policy} Resource.
 func NewFmsPolicy(scope constructs.Construct, id *string, config *FmsPolicyConfig) FmsPolicy {
 	_init_.Initialize()
 
@@ -683,7 +707,7 @@ func NewFmsPolicy(scope constructs.Construct, id *string, config *FmsPolicyConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/fms_policy aws_fms_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fms_policy aws_fms_policy} Resource.
 func NewFmsPolicy_Override(f FmsPolicy, scope constructs.Construct, id *string, config *FmsPolicyConfig) {
 	_init_.Initialize()
 
@@ -835,6 +859,17 @@ func (j *jsiiProxy_FmsPolicy)SetRemediationEnabled(val interface{}) {
 	_jsii_.Set(
 		j,
 		"remediationEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FmsPolicy)SetResourceSetIds(val *[]*string) {
+	if err := j.validateSetResourceSetIdsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceSetIds",
 		val,
 	)
 }
@@ -1340,6 +1375,14 @@ func (f *jsiiProxy_FmsPolicy) ResetRemediationEnabled() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetRemediationEnabled",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FmsPolicy) ResetResourceSetIds() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetResourceSetIds",
 		nil, // no parameters
 	)
 }

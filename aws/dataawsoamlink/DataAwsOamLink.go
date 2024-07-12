@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/oam_link aws_oam_link}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/oam_link aws_oam_link}.
 type DataAwsOamLink interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -45,6 +45,7 @@ type DataAwsOamLink interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LinkConfiguration() DataAwsOamLinkLinkConfigurationList
 	LinkId() *string
 	LinkIdentifier() *string
 	SetLinkIdentifier(val *string)
@@ -247,6 +248,16 @@ func (j *jsiiProxy_DataAwsOamLink) Lifecycle() *cdktf.TerraformResourceLifecycle
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsOamLink) LinkConfiguration() DataAwsOamLinkLinkConfigurationList {
+	var returns DataAwsOamLinkLinkConfigurationList
+	_jsii_.Get(
+		j,
+		"linkConfiguration",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsOamLink) LinkId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -378,7 +389,7 @@ func (j *jsiiProxy_DataAwsOamLink) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/oam_link aws_oam_link} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/oam_link aws_oam_link} Data Source.
 func NewDataAwsOamLink(scope constructs.Construct, id *string, config *DataAwsOamLinkConfig) DataAwsOamLink {
 	_init_.Initialize()
 
@@ -396,7 +407,7 @@ func NewDataAwsOamLink(scope constructs.Construct, id *string, config *DataAwsOa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/data-sources/oam_link aws_oam_link} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/oam_link aws_oam_link} Data Source.
 func NewDataAwsOamLink_Override(d DataAwsOamLink, scope constructs.Construct, id *string, config *DataAwsOamLinkConfig) {
 	_init_.Initialize()
 

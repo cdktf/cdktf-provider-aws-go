@@ -101,6 +101,30 @@ func (c *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference) validateSetAccountFilterTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference) validateSetAccountsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference) validateSetAccountsUrlParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CloudformationStackSetInstanceDeploymentTargetsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	switch val.(type) {
 	case *string:

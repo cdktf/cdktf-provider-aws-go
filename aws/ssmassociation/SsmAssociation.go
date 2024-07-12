@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ssm_association aws_ssm_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ssm_association aws_ssm_association}.
 type SsmAssociation interface {
 	cdktf.TerraformResource
 	ApplyOnlyAtCronInterval() interface{}
@@ -98,6 +98,12 @@ type SsmAssociation interface {
 	SyncCompliance() *string
 	SetSyncCompliance(val *string)
 	SyncComplianceInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
 	Targets() SsmAssociationTargetsList
 	TargetsInput() interface{}
 	// Experimental.
@@ -170,6 +176,8 @@ type SsmAssociation interface {
 	ResetParameters()
 	ResetScheduleExpression()
 	ResetSyncCompliance()
+	ResetTags()
+	ResetTagsAll()
 	ResetTargets()
 	ResetWaitForSuccessTimeoutSeconds()
 	SynthesizeAttributes() *map[string]interface{}
@@ -620,6 +628,46 @@ func (j *jsiiProxy_SsmAssociation) SyncComplianceInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_SsmAssociation) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsmAssociation) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsmAssociation) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SsmAssociation) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_SsmAssociation) Targets() SsmAssociationTargetsList {
 	var returns SsmAssociationTargetsList
 	_jsii_.Get(
@@ -691,7 +739,7 @@ func (j *jsiiProxy_SsmAssociation) WaitForSuccessTimeoutSecondsInput() *float64 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ssm_association aws_ssm_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ssm_association aws_ssm_association} Resource.
 func NewSsmAssociation(scope constructs.Construct, id *string, config *SsmAssociationConfig) SsmAssociation {
 	_init_.Initialize()
 
@@ -709,7 +757,7 @@ func NewSsmAssociation(scope constructs.Construct, id *string, config *SsmAssoci
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.57.0/docs/resources/ssm_association aws_ssm_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/ssm_association aws_ssm_association} Resource.
 func NewSsmAssociation_Override(s SsmAssociation, scope constructs.Construct, id *string, config *SsmAssociationConfig) {
 	_init_.Initialize()
 
@@ -927,6 +975,28 @@ func (j *jsiiProxy_SsmAssociation)SetSyncCompliance(val *string) {
 	_jsii_.Set(
 		j,
 		"syncCompliance",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SsmAssociation)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_SsmAssociation)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -1425,6 +1495,22 @@ func (s *jsiiProxy_SsmAssociation) ResetSyncCompliance() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetSyncCompliance",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SsmAssociation) ResetTags() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_SsmAssociation) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }
