@@ -5,7 +5,7 @@ package wafregionalwebaclassociation
 
 
 type WafregionalWebAclAssociationTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/wafregional_web_acl_association#create WafregionalWebAclAssociation#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/wafregional_web_acl_association#create WafregionalWebAclAssociation#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
 }
 

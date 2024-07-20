@@ -19,6 +19,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "authTokenEnabled", GoGetter: "AuthTokenEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "automaticFailoverEnabled", GoGetter: "AutomaticFailoverEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
+			_jsii_.MemberProperty{JsiiProperty: "clusterMode", GoGetter: "ClusterMode"},
 			_jsii_.MemberProperty{JsiiProperty: "configurationEndpointAddress", GoGetter: "ConfigurationEndpointAddress"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},

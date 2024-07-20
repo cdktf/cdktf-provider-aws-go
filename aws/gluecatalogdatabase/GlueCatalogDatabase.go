@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/glue_catalog_database aws_glue_catalog_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/glue_catalog_database aws_glue_catalog_database}.
 type GlueCatalogDatabase interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -560,7 +560,7 @@ func (j *jsiiProxy_GlueCatalogDatabase) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/glue_catalog_database aws_glue_catalog_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/glue_catalog_database aws_glue_catalog_database} Resource.
 func NewGlueCatalogDatabase(scope constructs.Construct, id *string, config *GlueCatalogDatabaseConfig) GlueCatalogDatabase {
 	_init_.Initialize()
 
@@ -578,7 +578,7 @@ func NewGlueCatalogDatabase(scope constructs.Construct, id *string, config *Glue
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/glue_catalog_database aws_glue_catalog_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/glue_catalog_database aws_glue_catalog_database} Resource.
 func NewGlueCatalogDatabase_Override(g GlueCatalogDatabase, scope constructs.Construct, id *string, config *GlueCatalogDatabaseConfig) {
 	_init_.Initialize()
 

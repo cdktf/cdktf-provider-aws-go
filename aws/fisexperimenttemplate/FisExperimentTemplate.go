@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fis_experiment_template aws_fis_experiment_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fis_experiment_template aws_fis_experiment_template}.
 type FisExperimentTemplate interface {
 	cdktf.TerraformResource
 	Action() FisExperimentTemplateActionList
@@ -36,6 +36,8 @@ type FisExperimentTemplate interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	ExperimentOptions() FisExperimentTemplateExperimentOptionsOutputReference
+	ExperimentOptionsInput() *FisExperimentTemplateExperimentOptions
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -130,10 +132,12 @@ type FisExperimentTemplate interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAction(value interface{})
+	PutExperimentOptions(value *FisExperimentTemplateExperimentOptions)
 	PutLogConfiguration(value *FisExperimentTemplateLogConfiguration)
 	PutStopCondition(value interface{})
 	PutTarget(value interface{})
 	PutTimeouts(value *FisExperimentTemplateTimeouts)
+	ResetExperimentOptions()
 	ResetId()
 	ResetLogConfiguration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -246,6 +250,26 @@ func (j *jsiiProxy_FisExperimentTemplate) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FisExperimentTemplate) ExperimentOptions() FisExperimentTemplateExperimentOptionsOutputReference {
+	var returns FisExperimentTemplateExperimentOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"experimentOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FisExperimentTemplate) ExperimentOptionsInput() *FisExperimentTemplateExperimentOptions {
+	var returns *FisExperimentTemplateExperimentOptions
+	_jsii_.Get(
+		j,
+		"experimentOptionsInput",
 		&returns,
 	)
 	return returns
@@ -522,7 +546,7 @@ func (j *jsiiProxy_FisExperimentTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fis_experiment_template aws_fis_experiment_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fis_experiment_template aws_fis_experiment_template} Resource.
 func NewFisExperimentTemplate(scope constructs.Construct, id *string, config *FisExperimentTemplateConfig) FisExperimentTemplate {
 	_init_.Initialize()
 
@@ -540,7 +564,7 @@ func NewFisExperimentTemplate(scope constructs.Construct, id *string, config *Fi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fis_experiment_template aws_fis_experiment_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fis_experiment_template aws_fis_experiment_template} Resource.
 func NewFisExperimentTemplate_Override(f FisExperimentTemplate, scope constructs.Construct, id *string, config *FisExperimentTemplateConfig) {
 	_init_.Initialize()
 
@@ -1038,6 +1062,17 @@ func (f *jsiiProxy_FisExperimentTemplate) PutAction(value interface{}) {
 	)
 }
 
+func (f *jsiiProxy_FisExperimentTemplate) PutExperimentOptions(value *FisExperimentTemplateExperimentOptions) {
+	if err := f.validatePutExperimentOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		f,
+		"putExperimentOptions",
+		[]interface{}{value},
+	)
+}
+
 func (f *jsiiProxy_FisExperimentTemplate) PutLogConfiguration(value *FisExperimentTemplateLogConfiguration) {
 	if err := f.validatePutLogConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1079,6 +1114,14 @@ func (f *jsiiProxy_FisExperimentTemplate) PutTimeouts(value *FisExperimentTempla
 		f,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (f *jsiiProxy_FisExperimentTemplate) ResetExperimentOptions() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetExperimentOptions",
+		nil, // no parameters
 	)
 }
 

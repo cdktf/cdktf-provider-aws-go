@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/codebuild_webhook aws_codebuild_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/codebuild_webhook aws_codebuild_webhook}.
 type CodebuildWebhook interface {
 	cdktf.TerraformResource
 	BranchFilter() *string
@@ -70,6 +70,8 @@ type CodebuildWebhook interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ScopeConfiguration() CodebuildWebhookScopeConfigurationOutputReference
+	ScopeConfigurationInput() *CodebuildWebhookScopeConfiguration
 	Secret() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -122,6 +124,7 @@ type CodebuildWebhook interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutFilterGroup(value interface{})
+	PutScopeConfiguration(value *CodebuildWebhookScopeConfiguration)
 	ResetBranchFilter()
 	ResetBuildType()
 	ResetFilterGroup()
@@ -129,6 +132,7 @@ type CodebuildWebhook interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetScopeConfiguration()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -387,6 +391,26 @@ func (j *jsiiProxy_CodebuildWebhook) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_CodebuildWebhook) ScopeConfiguration() CodebuildWebhookScopeConfigurationOutputReference {
+	var returns CodebuildWebhookScopeConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"scopeConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodebuildWebhook) ScopeConfigurationInput() *CodebuildWebhookScopeConfiguration {
+	var returns *CodebuildWebhookScopeConfiguration
+	_jsii_.Get(
+		j,
+		"scopeConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CodebuildWebhook) Secret() *string {
 	var returns *string
 	_jsii_.Get(
@@ -438,7 +462,7 @@ func (j *jsiiProxy_CodebuildWebhook) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/codebuild_webhook aws_codebuild_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/codebuild_webhook aws_codebuild_webhook} Resource.
 func NewCodebuildWebhook(scope constructs.Construct, id *string, config *CodebuildWebhookConfig) CodebuildWebhook {
 	_init_.Initialize()
 
@@ -456,7 +480,7 @@ func NewCodebuildWebhook(scope constructs.Construct, id *string, config *Codebui
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/codebuild_webhook aws_codebuild_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/codebuild_webhook aws_codebuild_webhook} Resource.
 func NewCodebuildWebhook_Override(c CodebuildWebhook, scope constructs.Construct, id *string, config *CodebuildWebhookConfig) {
 	_init_.Initialize()
 
@@ -943,6 +967,17 @@ func (c *jsiiProxy_CodebuildWebhook) PutFilterGroup(value interface{}) {
 	)
 }
 
+func (c *jsiiProxy_CodebuildWebhook) PutScopeConfiguration(value *CodebuildWebhookScopeConfiguration) {
+	if err := c.validatePutScopeConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		c,
+		"putScopeConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (c *jsiiProxy_CodebuildWebhook) ResetBranchFilter() {
 	_jsii_.InvokeVoid(
 		c,
@@ -979,6 +1014,14 @@ func (c *jsiiProxy_CodebuildWebhook) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CodebuildWebhook) ResetScopeConfiguration() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetScopeConfiguration",
 		nil, // no parameters
 	)
 }

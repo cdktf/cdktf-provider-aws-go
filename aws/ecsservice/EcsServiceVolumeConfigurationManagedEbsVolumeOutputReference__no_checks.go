@@ -99,7 +99,7 @@ func (j *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference) validateSetThroughputParameters(val *string) error {
+func (j *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference) validateSetThroughputParameters(val *float64) error {
 	return nil
 }
 

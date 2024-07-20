@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/alb_target_group aws_alb_target_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/alb_target_group aws_alb_target_group}.
 type AlbTargetGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -118,6 +118,8 @@ type AlbTargetGroup interface {
 	TagsInput() *map[string]*string
 	TargetFailover() AlbTargetGroupTargetFailoverList
 	TargetFailoverInput() interface{}
+	TargetGroupHealth() AlbTargetGroupTargetGroupHealthOutputReference
+	TargetGroupHealthInput() *AlbTargetGroupTargetGroupHealth
 	TargetHealthState() AlbTargetGroupTargetHealthStateList
 	TargetHealthStateInput() interface{}
 	TargetType() *string
@@ -178,6 +180,7 @@ type AlbTargetGroup interface {
 	PutHealthCheck(value *AlbTargetGroupHealthCheck)
 	PutStickiness(value *AlbTargetGroupStickiness)
 	PutTargetFailover(value interface{})
+	PutTargetGroupHealth(value *AlbTargetGroupTargetGroupHealth)
 	PutTargetHealthState(value interface{})
 	ResetConnectionTermination()
 	ResetDeregistrationDelay()
@@ -203,6 +206,7 @@ type AlbTargetGroup interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTargetFailover()
+	ResetTargetGroupHealth()
 	ResetTargetHealthState()
 	ResetTargetType()
 	ResetVpcId()
@@ -804,6 +808,26 @@ func (j *jsiiProxy_AlbTargetGroup) TargetFailoverInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_AlbTargetGroup) TargetGroupHealth() AlbTargetGroupTargetGroupHealthOutputReference {
+	var returns AlbTargetGroupTargetGroupHealthOutputReference
+	_jsii_.Get(
+		j,
+		"targetGroupHealth",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroup) TargetGroupHealthInput() *AlbTargetGroupTargetGroupHealth {
+	var returns *AlbTargetGroupTargetGroupHealth
+	_jsii_.Get(
+		j,
+		"targetGroupHealthInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AlbTargetGroup) TargetHealthState() AlbTargetGroupTargetHealthStateList {
 	var returns AlbTargetGroupTargetHealthStateList
 	_jsii_.Get(
@@ -895,7 +919,7 @@ func (j *jsiiProxy_AlbTargetGroup) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/alb_target_group aws_alb_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/alb_target_group aws_alb_target_group} Resource.
 func NewAlbTargetGroup(scope constructs.Construct, id *string, config *AlbTargetGroupConfig) AlbTargetGroup {
 	_init_.Initialize()
 
@@ -913,7 +937,7 @@ func NewAlbTargetGroup(scope constructs.Construct, id *string, config *AlbTarget
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/alb_target_group aws_alb_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/alb_target_group aws_alb_target_group} Resource.
 func NewAlbTargetGroup_Override(a AlbTargetGroup, scope constructs.Construct, id *string, config *AlbTargetGroupConfig) {
 	_init_.Initialize()
 
@@ -1598,6 +1622,17 @@ func (a *jsiiProxy_AlbTargetGroup) PutTargetFailover(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AlbTargetGroup) PutTargetGroupHealth(value *AlbTargetGroupTargetGroupHealth) {
+	if err := a.validatePutTargetGroupHealthParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putTargetGroupHealth",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AlbTargetGroup) PutTargetHealthState(value interface{}) {
 	if err := a.validatePutTargetHealthStateParameters(value); err != nil {
 		panic(err)
@@ -1781,6 +1816,14 @@ func (a *jsiiProxy_AlbTargetGroup) ResetTargetFailover() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetTargetFailover",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AlbTargetGroup) ResetTargetGroupHealth() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetTargetGroupHealth",
 		nil, // no parameters
 	)
 }

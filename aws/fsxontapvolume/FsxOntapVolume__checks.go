@@ -421,6 +421,14 @@ func (j *jsiiProxy_FsxOntapVolume) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_FsxOntapVolume) validateSetFinalBackupTagsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FsxOntapVolume) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

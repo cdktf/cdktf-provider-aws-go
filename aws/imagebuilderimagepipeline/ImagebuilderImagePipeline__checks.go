@@ -240,6 +240,37 @@ func (i *jsiiProxy_ImagebuilderImagePipeline) validatePutScheduleParameters(valu
 	return nil
 }
 
+func (i *jsiiProxy_ImagebuilderImagePipeline) validatePutWorkflowParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*ImagebuilderImagePipelineWorkflow:
+		value := value.(*[]*ImagebuilderImagePipelineWorkflow)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*ImagebuilderImagePipelineWorkflow:
+		value_ := value.([]*ImagebuilderImagePipelineWorkflow)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ImagebuilderImagePipelineWorkflow; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func validateImagebuilderImagePipeline_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
@@ -409,6 +440,14 @@ func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetEnhancedImageMetadataEn
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetExecutionRoleParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

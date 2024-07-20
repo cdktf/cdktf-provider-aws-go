@@ -87,6 +87,10 @@ func (l *jsiiProxy_LbTargetGroup) validatePutTargetFailoverParameters(value inte
 	return nil
 }
 
+func (l *jsiiProxy_LbTargetGroup) validatePutTargetGroupHealthParameters(value *LbTargetGroupTargetGroupHealth) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbTargetGroup) validatePutTargetHealthStateParameters(value interface{}) error {
 	return nil
 }

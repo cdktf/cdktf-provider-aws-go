@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system}.
 type FsxWindowsFileSystem interface {
 	cdktf.TerraformResource
 	ActiveDirectoryId() *string
@@ -58,6 +58,9 @@ type FsxWindowsFileSystem interface {
 	DiskIopsConfiguration() FsxWindowsFileSystemDiskIopsConfigurationOutputReference
 	DiskIopsConfigurationInput() *FsxWindowsFileSystemDiskIopsConfiguration
 	DnsName() *string
+	FinalBackupTags() *map[string]*string
+	SetFinalBackupTags(val *map[string]*string)
+	FinalBackupTagsInput() *map[string]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -189,6 +192,7 @@ type FsxWindowsFileSystem interface {
 	ResetDailyAutomaticBackupStartTime()
 	ResetDeploymentType()
 	ResetDiskIopsConfiguration()
+	ResetFinalBackupTags()
 	ResetId()
 	ResetKmsKeyId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -467,6 +471,26 @@ func (j *jsiiProxy_FsxWindowsFileSystem) DnsName() *string {
 	_jsii_.Get(
 		j,
 		"dnsName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxWindowsFileSystem) FinalBackupTags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"finalBackupTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxWindowsFileSystem) FinalBackupTagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"finalBackupTagsInput",
 		&returns,
 	)
 	return returns
@@ -913,7 +937,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem) WeeklyMaintenanceStartTimeInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system} Resource.
 func NewFsxWindowsFileSystem(scope constructs.Construct, id *string, config *FsxWindowsFileSystemConfig) FsxWindowsFileSystem {
 	_init_.Initialize()
 
@@ -931,7 +955,7 @@ func NewFsxWindowsFileSystem(scope constructs.Construct, id *string, config *Fsx
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_windows_file_system aws_fsx_windows_file_system} Resource.
 func NewFsxWindowsFileSystem_Override(f FsxWindowsFileSystem, scope constructs.Construct, id *string, config *FsxWindowsFileSystemConfig) {
 	_init_.Initialize()
 
@@ -1045,6 +1069,17 @@ func (j *jsiiProxy_FsxWindowsFileSystem)SetDeploymentType(val *string) {
 	_jsii_.Set(
 		j,
 		"deploymentType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxWindowsFileSystem)SetFinalBackupTags(val *map[string]*string) {
+	if err := j.validateSetFinalBackupTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"finalBackupTags",
 		val,
 	)
 }
@@ -1684,6 +1719,14 @@ func (f *jsiiProxy_FsxWindowsFileSystem) ResetDiskIopsConfiguration() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetDiskIopsConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxWindowsFileSystem) ResetFinalBackupTags() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetFinalBackupTags",
 		nil, // no parameters
 	)
 }

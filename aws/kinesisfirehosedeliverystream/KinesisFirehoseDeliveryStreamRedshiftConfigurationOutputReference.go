@@ -64,6 +64,8 @@ type KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference interface
 	S3BackupModeInput() *string
 	S3Configuration() KinesisFirehoseDeliveryStreamRedshiftConfigurationS3ConfigurationOutputReference
 	S3ConfigurationInput() *KinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configuration
+	SecretsManagerConfiguration() KinesisFirehoseDeliveryStreamRedshiftConfigurationSecretsManagerConfigurationOutputReference
+	SecretsManagerConfigurationInput() *KinesisFirehoseDeliveryStreamRedshiftConfigurationSecretsManagerConfiguration
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -103,13 +105,17 @@ type KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference interface
 	PutProcessingConfiguration(value *KinesisFirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration)
 	PutS3BackupConfiguration(value *KinesisFirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration)
 	PutS3Configuration(value *KinesisFirehoseDeliveryStreamRedshiftConfigurationS3Configuration)
+	PutSecretsManagerConfiguration(value *KinesisFirehoseDeliveryStreamRedshiftConfigurationSecretsManagerConfiguration)
 	ResetCloudwatchLoggingOptions()
 	ResetCopyOptions()
 	ResetDataTableColumns()
+	ResetPassword()
 	ResetProcessingConfiguration()
 	ResetRetryDuration()
 	ResetS3BackupConfiguration()
 	ResetS3BackupMode()
+	ResetSecretsManagerConfiguration()
+	ResetUsername()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -410,6 +416,26 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputRefer
 	_jsii_.Get(
 		j,
 		"s3ConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference) SecretsManagerConfiguration() KinesisFirehoseDeliveryStreamRedshiftConfigurationSecretsManagerConfigurationOutputReference {
+	var returns KinesisFirehoseDeliveryStreamRedshiftConfigurationSecretsManagerConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"secretsManagerConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference) SecretsManagerConfigurationInput() *KinesisFirehoseDeliveryStreamRedshiftConfigurationSecretsManagerConfiguration {
+	var returns *KinesisFirehoseDeliveryStreamRedshiftConfigurationSecretsManagerConfiguration
+	_jsii_.Get(
+		j,
+		"secretsManagerConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -867,6 +893,17 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputRefer
 	)
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference) PutSecretsManagerConfiguration(value *KinesisFirehoseDeliveryStreamRedshiftConfigurationSecretsManagerConfiguration) {
+	if err := k.validatePutSecretsManagerConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putSecretsManagerConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference) ResetCloudwatchLoggingOptions() {
 	_jsii_.InvokeVoid(
 		k,
@@ -887,6 +924,14 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputRefer
 	_jsii_.InvokeVoid(
 		k,
 		"resetDataTableColumns",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference) ResetPassword() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetPassword",
 		nil, // no parameters
 	)
 }
@@ -919,6 +964,22 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputRefer
 	_jsii_.InvokeVoid(
 		k,
 		"resetS3BackupMode",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference) ResetSecretsManagerConfiguration() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetSecretsManagerConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamRedshiftConfigurationOutputReference) ResetUsername() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetUsername",
 		nil, // no parameters
 	)
 }

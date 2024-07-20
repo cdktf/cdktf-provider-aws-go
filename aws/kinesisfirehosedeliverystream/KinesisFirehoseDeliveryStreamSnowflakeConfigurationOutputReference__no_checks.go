@@ -59,6 +59,10 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputRefe
 	return nil
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference) validatePutSecretsManagerConfigurationParameters(value *KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfiguration) error {
+	return nil
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference) validatePutSnowflakeRoleConfigurationParameters(value *KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfiguration) error {
 	return nil
 }

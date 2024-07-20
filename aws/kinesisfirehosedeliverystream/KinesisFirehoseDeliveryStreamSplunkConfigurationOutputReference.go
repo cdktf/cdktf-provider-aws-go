@@ -62,6 +62,8 @@ type KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference interface {
 	S3BackupModeInput() *string
 	S3Configuration() KinesisFirehoseDeliveryStreamSplunkConfigurationS3ConfigurationOutputReference
 	S3ConfigurationInput() *KinesisFirehoseDeliveryStreamSplunkConfigurationS3Configuration
+	SecretsManagerConfiguration() KinesisFirehoseDeliveryStreamSplunkConfigurationSecretsManagerConfigurationOutputReference
+	SecretsManagerConfigurationInput() *KinesisFirehoseDeliveryStreamSplunkConfigurationSecretsManagerConfiguration
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -97,14 +99,17 @@ type KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference interface {
 	PutCloudwatchLoggingOptions(value *KinesisFirehoseDeliveryStreamSplunkConfigurationCloudwatchLoggingOptions)
 	PutProcessingConfiguration(value *KinesisFirehoseDeliveryStreamSplunkConfigurationProcessingConfiguration)
 	PutS3Configuration(value *KinesisFirehoseDeliveryStreamSplunkConfigurationS3Configuration)
+	PutSecretsManagerConfiguration(value *KinesisFirehoseDeliveryStreamSplunkConfigurationSecretsManagerConfiguration)
 	ResetBufferingInterval()
 	ResetBufferingSize()
 	ResetCloudwatchLoggingOptions()
 	ResetHecAcknowledgmentTimeout()
 	ResetHecEndpointType()
+	ResetHecToken()
 	ResetProcessingConfiguration()
 	ResetRetryDuration()
 	ResetS3BackupMode()
+	ResetSecretsManagerConfiguration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -385,6 +390,26 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReferen
 	_jsii_.Get(
 		j,
 		"s3ConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) SecretsManagerConfiguration() KinesisFirehoseDeliveryStreamSplunkConfigurationSecretsManagerConfigurationOutputReference {
+	var returns KinesisFirehoseDeliveryStreamSplunkConfigurationSecretsManagerConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"secretsManagerConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) SecretsManagerConfigurationInput() *KinesisFirehoseDeliveryStreamSplunkConfigurationSecretsManagerConfiguration {
+	var returns *KinesisFirehoseDeliveryStreamSplunkConfigurationSecretsManagerConfiguration
+	_jsii_.Get(
+		j,
+		"secretsManagerConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -800,6 +825,17 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReferen
 	)
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) PutSecretsManagerConfiguration(value *KinesisFirehoseDeliveryStreamSplunkConfigurationSecretsManagerConfiguration) {
+	if err := k.validatePutSecretsManagerConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putSecretsManagerConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) ResetBufferingInterval() {
 	_jsii_.InvokeVoid(
 		k,
@@ -840,6 +876,14 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReferen
 	)
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) ResetHecToken() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetHecToken",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) ResetProcessingConfiguration() {
 	_jsii_.InvokeVoid(
 		k,
@@ -860,6 +904,14 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReferen
 	_jsii_.InvokeVoid(
 		k,
 		"resetS3BackupMode",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSplunkConfigurationOutputReference) ResetSecretsManagerConfiguration() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetSecretsManagerConfiguration",
 		nil, // no parameters
 	)
 }

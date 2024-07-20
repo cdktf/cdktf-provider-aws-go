@@ -87,6 +87,10 @@ func (i *jsiiProxy_ImagebuilderImagePipeline) validatePutScheduleParameters(valu
 	return nil
 }
 
+func (i *jsiiProxy_ImagebuilderImagePipeline) validatePutWorkflowParameters(value interface{}) error {
+	return nil
+}
+
 func validateImagebuilderImagePipeline_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -124,6 +128,10 @@ func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetDistributionConfigurati
 }
 
 func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetEnhancedImageMetadataEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_ImagebuilderImagePipeline) validateSetExecutionRoleParameters(val *string) error {
 	return nil
 }
 

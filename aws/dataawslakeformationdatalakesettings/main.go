@@ -17,6 +17,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "admins", GoGetter: "Admins"},
 			_jsii_.MemberProperty{JsiiProperty: "allowExternalDataFiltering", GoGetter: "AllowExternalDataFiltering"},
+			_jsii_.MemberProperty{JsiiProperty: "allowFullTableExternalDataAccess", GoGetter: "AllowFullTableExternalDataAccess"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizedSessionTagValueList", GoGetter: "AuthorizedSessionTagValueList"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogId", GoGetter: "CatalogId"},
 			_jsii_.MemberProperty{JsiiProperty: "catalogIdInput", GoGetter: "CatalogIdInput"},

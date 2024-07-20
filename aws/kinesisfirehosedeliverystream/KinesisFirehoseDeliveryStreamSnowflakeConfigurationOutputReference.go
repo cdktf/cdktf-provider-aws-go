@@ -71,6 +71,8 @@ type KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference interfac
 	Schema() *string
 	SetSchema(val *string)
 	SchemaInput() *string
+	SecretsManagerConfiguration() KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfigurationOutputReference
+	SecretsManagerConfigurationInput() *KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfiguration
 	SnowflakeRoleConfiguration() KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfigurationOutputReference
 	SnowflakeRoleConfigurationInput() *KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfiguration
 	SnowflakeVpcConfiguration() KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpcConfigurationOutputReference
@@ -116,6 +118,7 @@ type KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference interfac
 	PutCloudwatchLoggingOptions(value *KinesisFirehoseDeliveryStreamSnowflakeConfigurationCloudwatchLoggingOptions)
 	PutProcessingConfiguration(value *KinesisFirehoseDeliveryStreamSnowflakeConfigurationProcessingConfiguration)
 	PutS3Configuration(value *KinesisFirehoseDeliveryStreamSnowflakeConfigurationS3Configuration)
+	PutSecretsManagerConfiguration(value *KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfiguration)
 	PutSnowflakeRoleConfiguration(value *KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfiguration)
 	PutSnowflakeVpcConfiguration(value *KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeVpcConfiguration)
 	ResetCloudwatchLoggingOptions()
@@ -123,11 +126,14 @@ type KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference interfac
 	ResetDataLoadingOption()
 	ResetKeyPassphrase()
 	ResetMetadataColumnName()
+	ResetPrivateKey()
 	ResetProcessingConfiguration()
 	ResetRetryDuration()
 	ResetS3BackupMode()
+	ResetSecretsManagerConfiguration()
 	ResetSnowflakeRoleConfiguration()
 	ResetSnowflakeVpcConfiguration()
+	ResetUser()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -468,6 +474,26 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputRefe
 	_jsii_.Get(
 		j,
 		"schemaInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference) SecretsManagerConfiguration() KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfigurationOutputReference {
+	var returns KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"secretsManagerConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference) SecretsManagerConfigurationInput() *KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfiguration {
+	var returns *KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfiguration
+	_jsii_.Get(
+		j,
+		"secretsManagerConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -1018,6 +1044,17 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputRefe
 	)
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference) PutSecretsManagerConfiguration(value *KinesisFirehoseDeliveryStreamSnowflakeConfigurationSecretsManagerConfiguration) {
+	if err := k.validatePutSecretsManagerConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		k,
+		"putSecretsManagerConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference) PutSnowflakeRoleConfiguration(value *KinesisFirehoseDeliveryStreamSnowflakeConfigurationSnowflakeRoleConfiguration) {
 	if err := k.validatePutSnowflakeRoleConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1080,6 +1117,14 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputRefe
 	)
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference) ResetPrivateKey() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetPrivateKey",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference) ResetProcessingConfiguration() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1104,6 +1149,14 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputRefe
 	)
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference) ResetSecretsManagerConfiguration() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetSecretsManagerConfiguration",
+		nil, // no parameters
+	)
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference) ResetSnowflakeRoleConfiguration() {
 	_jsii_.InvokeVoid(
 		k,
@@ -1116,6 +1169,14 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputRefe
 	_jsii_.InvokeVoid(
 		k,
 		"resetSnowflakeVpcConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamSnowflakeConfigurationOutputReference) ResetUser() {
+	_jsii_.InvokeVoid(
+		k,
+		"resetUser",
 		nil, // no parameters
 	)
 }

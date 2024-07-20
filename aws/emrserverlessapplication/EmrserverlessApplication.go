@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/emrserverless_application aws_emrserverless_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/emrserverless_application aws_emrserverless_application}.
 type EmrserverlessApplication interface {
 	cdktf.TerraformResource
 	Architecture() *string
@@ -54,6 +54,8 @@ type EmrserverlessApplication interface {
 	ImageConfigurationInput() *EmrserverlessApplicationImageConfiguration
 	InitialCapacity() EmrserverlessApplicationInitialCapacityList
 	InitialCapacityInput() interface{}
+	InteractiveConfiguration() EmrserverlessApplicationInteractiveConfigurationOutputReference
+	InteractiveConfigurationInput() *EmrserverlessApplicationInteractiveConfiguration
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -142,6 +144,7 @@ type EmrserverlessApplication interface {
 	PutAutoStopConfiguration(value *EmrserverlessApplicationAutoStopConfiguration)
 	PutImageConfiguration(value *EmrserverlessApplicationImageConfiguration)
 	PutInitialCapacity(value interface{})
+	PutInteractiveConfiguration(value *EmrserverlessApplicationInteractiveConfiguration)
 	PutMaximumCapacity(value *EmrserverlessApplicationMaximumCapacity)
 	PutNetworkConfiguration(value *EmrserverlessApplicationNetworkConfiguration)
 	ResetArchitecture()
@@ -150,6 +153,7 @@ type EmrserverlessApplication interface {
 	ResetId()
 	ResetImageConfiguration()
 	ResetInitialCapacity()
+	ResetInteractiveConfiguration()
 	ResetMaximumCapacity()
 	ResetNetworkConfiguration()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -385,6 +389,26 @@ func (j *jsiiProxy_EmrserverlessApplication) InitialCapacityInput() interface{} 
 	return returns
 }
 
+func (j *jsiiProxy_EmrserverlessApplication) InteractiveConfiguration() EmrserverlessApplicationInteractiveConfigurationOutputReference {
+	var returns EmrserverlessApplicationInteractiveConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"interactiveConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EmrserverlessApplication) InteractiveConfigurationInput() *EmrserverlessApplicationInteractiveConfiguration {
+	var returns *EmrserverlessApplicationInteractiveConfiguration
+	_jsii_.Get(
+		j,
+		"interactiveConfigurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EmrserverlessApplication) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -606,7 +630,7 @@ func (j *jsiiProxy_EmrserverlessApplication) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/emrserverless_application aws_emrserverless_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/emrserverless_application aws_emrserverless_application} Resource.
 func NewEmrserverlessApplication(scope constructs.Construct, id *string, config *EmrserverlessApplicationConfig) EmrserverlessApplication {
 	_init_.Initialize()
 
@@ -624,7 +648,7 @@ func NewEmrserverlessApplication(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/emrserverless_application aws_emrserverless_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/emrserverless_application aws_emrserverless_application} Resource.
 func NewEmrserverlessApplication_Override(e EmrserverlessApplication, scope constructs.Construct, id *string, config *EmrserverlessApplicationConfig) {
 	_init_.Initialize()
 
@@ -1177,6 +1201,17 @@ func (e *jsiiProxy_EmrserverlessApplication) PutInitialCapacity(value interface{
 	)
 }
 
+func (e *jsiiProxy_EmrserverlessApplication) PutInteractiveConfiguration(value *EmrserverlessApplicationInteractiveConfiguration) {
+	if err := e.validatePutInteractiveConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putInteractiveConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EmrserverlessApplication) PutMaximumCapacity(value *EmrserverlessApplicationMaximumCapacity) {
 	if err := e.validatePutMaximumCapacityParameters(value); err != nil {
 		panic(err)
@@ -1243,6 +1278,14 @@ func (e *jsiiProxy_EmrserverlessApplication) ResetInitialCapacity() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetInitialCapacity",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EmrserverlessApplication) ResetInteractiveConfiguration() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetInteractiveConfiguration",
 		nil, // no parameters
 	)
 }

@@ -59,6 +59,10 @@ func (j *jsiiProxy_BedrockagentAgentActionGroupActionGroupExecutorOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_BedrockagentAgentActionGroupActionGroupExecutorOutputReference) validateSetCustomControlParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BedrockagentAgentActionGroupActionGroupExecutorOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

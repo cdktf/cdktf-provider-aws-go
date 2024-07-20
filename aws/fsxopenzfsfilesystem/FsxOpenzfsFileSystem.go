@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system}.
 type FsxOpenzfsFileSystem interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -43,6 +43,9 @@ type FsxOpenzfsFileSystem interface {
 	DailyAutomaticBackupStartTime() *string
 	SetDailyAutomaticBackupStartTime(val *string)
 	DailyAutomaticBackupStartTimeInput() *string
+	DeleteOptions() *[]*string
+	SetDeleteOptions(val *[]*string)
+	DeleteOptionsInput() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,6 +60,9 @@ type FsxOpenzfsFileSystem interface {
 	EndpointIpAddressRange() *string
 	SetEndpointIpAddressRange(val *string)
 	EndpointIpAddressRangeInput() *string
+	FinalBackupTags() *map[string]*string
+	SetFinalBackupTags(val *map[string]*string)
+	FinalBackupTagsInput() *map[string]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -185,8 +191,10 @@ type FsxOpenzfsFileSystem interface {
 	ResetCopyTagsToBackups()
 	ResetCopyTagsToVolumes()
 	ResetDailyAutomaticBackupStartTime()
+	ResetDeleteOptions()
 	ResetDiskIopsConfiguration()
 	ResetEndpointIpAddressRange()
+	ResetFinalBackupTags()
 	ResetId()
 	ResetKmsKeyId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -371,6 +379,26 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) DailyAutomaticBackupStartTimeInput() *s
 	return returns
 }
 
+func (j *jsiiProxy_FsxOpenzfsFileSystem) DeleteOptions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"deleteOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOpenzfsFileSystem) DeleteOptionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"deleteOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxOpenzfsFileSystem) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -456,6 +484,26 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) EndpointIpAddressRangeInput() *string {
 	_jsii_.Get(
 		j,
 		"endpointIpAddressRangeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOpenzfsFileSystem) FinalBackupTags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"finalBackupTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOpenzfsFileSystem) FinalBackupTagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"finalBackupTagsInput",
 		&returns,
 	)
 	return returns
@@ -912,7 +960,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) WeeklyMaintenanceStartTimeInput() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system} Resource.
 func NewFsxOpenzfsFileSystem(scope constructs.Construct, id *string, config *FsxOpenzfsFileSystemConfig) FsxOpenzfsFileSystem {
 	_init_.Initialize()
 
@@ -930,7 +978,7 @@ func NewFsxOpenzfsFileSystem(scope constructs.Construct, id *string, config *Fsx
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_openzfs_file_system aws_fsx_openzfs_file_system} Resource.
 func NewFsxOpenzfsFileSystem_Override(f FsxOpenzfsFileSystem, scope constructs.Construct, id *string, config *FsxOpenzfsFileSystemConfig) {
 	_init_.Initialize()
 
@@ -1018,6 +1066,17 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetDailyAutomaticBackupStartTime(val *st
 	)
 }
 
+func (j *jsiiProxy_FsxOpenzfsFileSystem)SetDeleteOptions(val *[]*string) {
+	if err := j.validateSetDeleteOptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteOptions",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FsxOpenzfsFileSystem)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -1044,6 +1103,17 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem)SetEndpointIpAddressRange(val *string) {
 	_jsii_.Set(
 		j,
 		"endpointIpAddressRange",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxOpenzfsFileSystem)SetFinalBackupTags(val *map[string]*string) {
+	if err := j.validateSetFinalBackupTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"finalBackupTags",
 		val,
 	)
 }
@@ -1655,6 +1725,14 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) ResetDailyAutomaticBackupStartTime() {
 	)
 }
 
+func (f *jsiiProxy_FsxOpenzfsFileSystem) ResetDeleteOptions() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetDeleteOptions",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FsxOpenzfsFileSystem) ResetDiskIopsConfiguration() {
 	_jsii_.InvokeVoid(
 		f,
@@ -1667,6 +1745,14 @@ func (f *jsiiProxy_FsxOpenzfsFileSystem) ResetEndpointIpAddressRange() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetEndpointIpAddressRange",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOpenzfsFileSystem) ResetFinalBackupTags() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetFinalBackupTags",
 		nil, // no parameters
 	)
 }

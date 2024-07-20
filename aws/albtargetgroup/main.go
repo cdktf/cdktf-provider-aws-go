@@ -82,6 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putHealthCheck", GoMethod: "PutHealthCheck"},
 			_jsii_.MemberMethod{JsiiMethod: "putStickiness", GoMethod: "PutStickiness"},
 			_jsii_.MemberMethod{JsiiMethod: "putTargetFailover", GoMethod: "PutTargetFailover"},
+			_jsii_.MemberMethod{JsiiMethod: "putTargetGroupHealth", GoMethod: "PutTargetGroupHealth"},
 			_jsii_.MemberMethod{JsiiMethod: "putTargetHealthState", GoMethod: "PutTargetHealthState"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectionTermination", GoMethod: "ResetConnectionTermination"},
@@ -106,6 +107,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetFailover", GoMethod: "ResetTargetFailover"},
+			_jsii_.MemberMethod{JsiiMethod: "resetTargetGroupHealth", GoMethod: "ResetTargetGroupHealth"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetHealthState", GoMethod: "ResetTargetHealthState"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTargetType", GoMethod: "ResetTargetType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVpcId", GoMethod: "ResetVpcId"},
@@ -121,6 +123,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "tagsInput", GoGetter: "TagsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "targetFailover", GoGetter: "TargetFailover"},
 			_jsii_.MemberProperty{JsiiProperty: "targetFailoverInput", GoGetter: "TargetFailoverInput"},
+			_jsii_.MemberProperty{JsiiProperty: "targetGroupHealth", GoGetter: "TargetGroupHealth"},
+			_jsii_.MemberProperty{JsiiProperty: "targetGroupHealthInput", GoGetter: "TargetGroupHealthInput"},
 			_jsii_.MemberProperty{JsiiProperty: "targetHealthState", GoGetter: "TargetHealthState"},
 			_jsii_.MemberProperty{JsiiProperty: "targetHealthStateInput", GoGetter: "TargetHealthStateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "targetType", GoGetter: "TargetType"},
@@ -313,6 +317,134 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlbTargetGroupTargetFailoverOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupTargetGroupHealth",
+		reflect.TypeOf((*AlbTargetGroupTargetGroupHealth)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupTargetGroupHealthDnsFailover",
+		reflect.TypeOf((*AlbTargetGroupTargetGroupHealthDnsFailover)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupTargetGroupHealthDnsFailoverOutputReference",
+		reflect.TypeOf((*AlbTargetGroupTargetGroupHealthDnsFailoverOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "minimumHealthyTargetsCount", GoGetter: "MinimumHealthyTargetsCount"},
+			_jsii_.MemberProperty{JsiiProperty: "minimumHealthyTargetsCountInput", GoGetter: "MinimumHealthyTargetsCountInput"},
+			_jsii_.MemberProperty{JsiiProperty: "minimumHealthyTargetsPercentage", GoGetter: "MinimumHealthyTargetsPercentage"},
+			_jsii_.MemberProperty{JsiiProperty: "minimumHealthyTargetsPercentageInput", GoGetter: "MinimumHealthyTargetsPercentageInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMinimumHealthyTargetsCount", GoMethod: "ResetMinimumHealthyTargetsCount"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMinimumHealthyTargetsPercentage", GoMethod: "ResetMinimumHealthyTargetsPercentage"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AlbTargetGroupTargetGroupHealthDnsFailoverOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupTargetGroupHealthOutputReference",
+		reflect.TypeOf((*AlbTargetGroupTargetGroupHealthOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dnsFailover", GoGetter: "DnsFailover"},
+			_jsii_.MemberProperty{JsiiProperty: "dnsFailoverInput", GoGetter: "DnsFailoverInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putDnsFailover", GoMethod: "PutDnsFailover"},
+			_jsii_.MemberMethod{JsiiMethod: "putUnhealthyStateRouting", GoMethod: "PutUnhealthyStateRouting"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDnsFailover", GoMethod: "ResetDnsFailover"},
+			_jsii_.MemberMethod{JsiiMethod: "resetUnhealthyStateRouting", GoMethod: "ResetUnhealthyStateRouting"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "unhealthyStateRouting", GoGetter: "UnhealthyStateRouting"},
+			_jsii_.MemberProperty{JsiiProperty: "unhealthyStateRoutingInput", GoGetter: "UnhealthyStateRoutingInput"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AlbTargetGroupTargetGroupHealthOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupTargetGroupHealthUnhealthyStateRouting",
+		reflect.TypeOf((*AlbTargetGroupTargetGroupHealthUnhealthyStateRouting)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupTargetGroupHealthUnhealthyStateRoutingOutputReference",
+		reflect.TypeOf((*AlbTargetGroupTargetGroupHealthUnhealthyStateRoutingOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "minimumHealthyTargetsCount", GoGetter: "MinimumHealthyTargetsCount"},
+			_jsii_.MemberProperty{JsiiProperty: "minimumHealthyTargetsCountInput", GoGetter: "MinimumHealthyTargetsCountInput"},
+			_jsii_.MemberProperty{JsiiProperty: "minimumHealthyTargetsPercentage", GoGetter: "MinimumHealthyTargetsPercentage"},
+			_jsii_.MemberProperty{JsiiProperty: "minimumHealthyTargetsPercentageInput", GoGetter: "MinimumHealthyTargetsPercentageInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMinimumHealthyTargetsCount", GoMethod: "ResetMinimumHealthyTargetsCount"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMinimumHealthyTargetsPercentage", GoMethod: "ResetMinimumHealthyTargetsPercentage"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AlbTargetGroupTargetGroupHealthUnhealthyStateRoutingOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

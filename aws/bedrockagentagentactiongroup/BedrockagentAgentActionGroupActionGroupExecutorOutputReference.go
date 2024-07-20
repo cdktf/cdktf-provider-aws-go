@@ -28,6 +28,9 @@ type BedrockagentAgentActionGroupActionGroupExecutorOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomControl() *string
+	SetCustomControl(val *string)
+	CustomControlInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -67,6 +70,7 @@ type BedrockagentAgentActionGroupActionGroupExecutorOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCustomControl()
 	ResetLambda()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -108,6 +112,26 @@ func (j *jsiiProxy_BedrockagentAgentActionGroupActionGroupExecutorOutputReferenc
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentAgentActionGroupActionGroupExecutorOutputReference) CustomControl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customControl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentAgentActionGroupActionGroupExecutorOutputReference) CustomControlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customControlInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +243,17 @@ func (j *jsiiProxy_BedrockagentAgentActionGroupActionGroupExecutorOutputReferenc
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BedrockagentAgentActionGroupActionGroupExecutorOutputReference)SetCustomControl(val *string) {
+	if err := j.validateSetCustomControlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customControl",
 		val,
 	)
 }
@@ -451,6 +486,14 @@ func (b *jsiiProxy_BedrockagentAgentActionGroupActionGroupExecutorOutputReferenc
 	)
 
 	return returns
+}
+
+func (b *jsiiProxy_BedrockagentAgentActionGroupActionGroupExecutorOutputReference) ResetCustomControl() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetCustomControl",
+		nil, // no parameters
+	)
 }
 
 func (b *jsiiProxy_BedrockagentAgentActionGroupActionGroupExecutorOutputReference) ResetLambda() {

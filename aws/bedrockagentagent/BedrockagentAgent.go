@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent}.
 type BedrockagentAgent interface {
 	cdktf.TerraformResource
 	AgentArn() *string
@@ -85,6 +85,9 @@ type BedrockagentAgent interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SkipResourceInUseCheck() interface{}
+	SetSkipResourceInUseCheck(val interface{})
+	SkipResourceInUseCheckInput() interface{}
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() cdktf.StringMap
@@ -151,6 +154,7 @@ type BedrockagentAgent interface {
 	ResetOverrideLogicalId()
 	ResetPrepareAgent()
 	ResetPromptOverrideConfiguration()
+	ResetSkipResourceInUseCheck()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -521,6 +525,26 @@ func (j *jsiiProxy_BedrockagentAgent) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_BedrockagentAgent) SkipResourceInUseCheck() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipResourceInUseCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentAgent) SkipResourceInUseCheckInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipResourceInUseCheckInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BedrockagentAgent) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -602,7 +626,7 @@ func (j *jsiiProxy_BedrockagentAgent) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent} Resource.
 func NewBedrockagentAgent(scope constructs.Construct, id *string, config *BedrockagentAgentConfig) BedrockagentAgent {
 	_init_.Initialize()
 
@@ -620,7 +644,7 @@ func NewBedrockagentAgent(scope constructs.Construct, id *string, config *Bedroc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/bedrockagent_agent aws_bedrockagent_agent} Resource.
 func NewBedrockagentAgent_Override(b BedrockagentAgent, scope constructs.Construct, id *string, config *BedrockagentAgentConfig) {
 	_init_.Initialize()
 
@@ -783,6 +807,17 @@ func (j *jsiiProxy_BedrockagentAgent)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BedrockagentAgent)SetSkipResourceInUseCheck(val interface{}) {
+	if err := j.validateSetSkipResourceInUseCheckParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipResourceInUseCheck",
 		val,
 	)
 }
@@ -1225,6 +1260,14 @@ func (b *jsiiProxy_BedrockagentAgent) ResetPromptOverrideConfiguration() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetPromptOverrideConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockagentAgent) ResetSkipResourceInUseCheck() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetSkipResourceInUseCheck",
 		nil, // no parameters
 	)
 }

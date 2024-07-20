@@ -35,6 +35,9 @@ type BedrockagentAgentAliasRoutingConfigurationOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	ProvisionedThroughput() *string
+	SetProvisionedThroughput(val *string)
+	ProvisionedThroughputInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type BedrockagentAgentAliasRoutingConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAgentVersion()
+	ResetProvisionedThroughput()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_BedrockagentAgentAliasRoutingConfigurationOutputReference) In
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentAgentAliasRoutingConfigurationOutputReference) ProvisionedThroughput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"provisionedThroughput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentAgentAliasRoutingConfigurationOutputReference) ProvisionedThroughputInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"provisionedThroughputInput",
 		&returns,
 	)
 	return returns
@@ -241,6 +265,17 @@ func (j *jsiiProxy_BedrockagentAgentAliasRoutingConfigurationOutputReference)Set
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BedrockagentAgentAliasRoutingConfigurationOutputReference)SetProvisionedThroughput(val *string) {
+	if err := j.validateSetProvisionedThroughputParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisionedThroughput",
 		val,
 	)
 }
@@ -457,6 +492,14 @@ func (b *jsiiProxy_BedrockagentAgentAliasRoutingConfigurationOutputReference) Re
 	_jsii_.InvokeVoid(
 		b,
 		"resetAgentVersion",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockagentAgentAliasRoutingConfigurationOutputReference) ResetProvisionedThroughput() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetProvisionedThroughput",
 		nil, // no parameters
 	)
 }

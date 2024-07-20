@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/db_snapshot_copy aws_db_snapshot_copy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/db_snapshot_copy aws_db_snapshot_copy}.
 type DbSnapshotCopy interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -715,7 +715,7 @@ func (j *jsiiProxy_DbSnapshotCopy) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/db_snapshot_copy aws_db_snapshot_copy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/db_snapshot_copy aws_db_snapshot_copy} Resource.
 func NewDbSnapshotCopy(scope constructs.Construct, id *string, config *DbSnapshotCopyConfig) DbSnapshotCopy {
 	_init_.Initialize()
 
@@ -733,7 +733,7 @@ func NewDbSnapshotCopy(scope constructs.Construct, id *string, config *DbSnapsho
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/db_snapshot_copy aws_db_snapshot_copy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/db_snapshot_copy aws_db_snapshot_copy} Resource.
 func NewDbSnapshotCopy_Override(d DbSnapshotCopy, scope constructs.Construct, id *string, config *DbSnapshotCopyConfig) {
 	_init_.Initialize()
 

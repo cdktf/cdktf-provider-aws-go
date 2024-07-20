@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_backup aws_fsx_backup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_backup aws_fsx_backup}.
 type FsxBackup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -474,7 +474,7 @@ func (j *jsiiProxy_FsxBackup) VolumeIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_backup aws_fsx_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_backup aws_fsx_backup} Resource.
 func NewFsxBackup(scope constructs.Construct, id *string, config *FsxBackupConfig) FsxBackup {
 	_init_.Initialize()
 
@@ -492,7 +492,7 @@ func NewFsxBackup(scope constructs.Construct, id *string, config *FsxBackupConfi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_backup aws_fsx_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_backup aws_fsx_backup} Resource.
 func NewFsxBackup_Override(f FsxBackup, scope constructs.Construct, id *string, config *FsxBackupConfig) {
 	_init_.Initialize()
 

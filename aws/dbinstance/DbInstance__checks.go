@@ -685,6 +685,14 @@ func (j *jsiiProxy_DbInstance) validateSetEngineParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_DbInstance) validateSetEngineLifecycleSupportParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_DbInstance) validateSetEngineVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

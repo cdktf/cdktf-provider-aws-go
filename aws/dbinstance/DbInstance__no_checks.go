@@ -219,6 +219,10 @@ func (j *jsiiProxy_DbInstance) validateSetEngineParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_DbInstance) validateSetEngineLifecycleSupportParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbInstance) validateSetEngineVersionParameters(val *string) error {
 	return nil
 }

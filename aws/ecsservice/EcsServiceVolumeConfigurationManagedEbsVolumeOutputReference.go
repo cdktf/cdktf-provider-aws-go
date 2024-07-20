@@ -61,9 +61,9 @@ type EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
-	Throughput() *string
-	SetThroughput(val *string)
-	ThroughputInput() *string
+	Throughput() *float64
+	SetThroughput(val *float64)
+	ThroughputInput() *float64
 	VolumeType() *string
 	SetVolumeType(val *string)
 	VolumeTypeInput() *string
@@ -324,8 +324,8 @@ func (j *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference) Throughput() *string {
-	var returns *string
+func (j *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference) Throughput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"throughput",
@@ -334,8 +334,8 @@ func (j *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference) ThroughputInput() *string {
-	var returns *string
+func (j *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference) ThroughputInput() *float64 {
+	var returns *float64
 	_jsii_.Get(
 		j,
 		"throughputInput",
@@ -524,7 +524,7 @@ func (j *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference)
 	)
 }
 
-func (j *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference)SetThroughput(val *string) {
+func (j *jsiiProxy_EcsServiceVolumeConfigurationManagedEbsVolumeOutputReference)SetThroughput(val *float64) {
 	if err := j.validateSetThroughputParameters(val); err != nil {
 		panic(err)
 	}

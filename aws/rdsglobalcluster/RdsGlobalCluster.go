@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/rds_global_cluster aws_rds_global_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/rds_global_cluster aws_rds_global_cluster}.
 type RdsGlobalCluster interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -41,6 +41,9 @@ type RdsGlobalCluster interface {
 	Engine() *string
 	SetEngine(val *string)
 	EngineInput() *string
+	EngineLifecycleSupport() *string
+	SetEngineLifecycleSupport(val *string)
+	EngineLifecycleSupportInput() *string
 	EngineVersion() *string
 	SetEngineVersion(val *string)
 	EngineVersionActual() *string
@@ -141,6 +144,7 @@ type RdsGlobalCluster interface {
 	ResetDatabaseName()
 	ResetDeletionProtection()
 	ResetEngine()
+	ResetEngineLifecycleSupport()
 	ResetEngineVersion()
 	ResetForceDestroy()
 	ResetId()
@@ -283,6 +287,26 @@ func (j *jsiiProxy_RdsGlobalCluster) EngineInput() *string {
 	_jsii_.Get(
 		j,
 		"engineInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsGlobalCluster) EngineLifecycleSupport() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engineLifecycleSupport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsGlobalCluster) EngineLifecycleSupportInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engineLifecycleSupportInput",
 		&returns,
 	)
 	return returns
@@ -569,7 +593,7 @@ func (j *jsiiProxy_RdsGlobalCluster) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/rds_global_cluster aws_rds_global_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/rds_global_cluster aws_rds_global_cluster} Resource.
 func NewRdsGlobalCluster(scope constructs.Construct, id *string, config *RdsGlobalClusterConfig) RdsGlobalCluster {
 	_init_.Initialize()
 
@@ -587,7 +611,7 @@ func NewRdsGlobalCluster(scope constructs.Construct, id *string, config *RdsGlob
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/rds_global_cluster aws_rds_global_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/rds_global_cluster aws_rds_global_cluster} Resource.
 func NewRdsGlobalCluster_Override(r RdsGlobalCluster, scope constructs.Construct, id *string, config *RdsGlobalClusterConfig) {
 	_init_.Initialize()
 
@@ -657,6 +681,17 @@ func (j *jsiiProxy_RdsGlobalCluster)SetEngine(val *string) {
 	_jsii_.Set(
 		j,
 		"engine",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsGlobalCluster)SetEngineLifecycleSupport(val *string) {
+	if err := j.validateSetEngineLifecycleSupportParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"engineLifecycleSupport",
 		val,
 	)
 }
@@ -1149,6 +1184,14 @@ func (r *jsiiProxy_RdsGlobalCluster) ResetEngine() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetEngine",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsGlobalCluster) ResetEngineLifecycleSupport() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetEngineLifecycleSupport",
 		nil, // no parameters
 	)
 }

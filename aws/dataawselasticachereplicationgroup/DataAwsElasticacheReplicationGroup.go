@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group}.
 type DataAwsElasticacheReplicationGroup interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -20,6 +20,7 @@ type DataAwsElasticacheReplicationGroup interface {
 	AutomaticFailoverEnabled() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClusterMode() *string
 	ConfigurationEndpointAddress() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
@@ -159,6 +160,16 @@ func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) CdktfStack() cdktf.Terraf
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) ClusterMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterMode",
 		&returns,
 	)
 	return returns
@@ -475,7 +486,7 @@ func (j *jsiiProxy_DataAwsElasticacheReplicationGroup) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group} Data Source.
 func NewDataAwsElasticacheReplicationGroup(scope constructs.Construct, id *string, config *DataAwsElasticacheReplicationGroupConfig) DataAwsElasticacheReplicationGroup {
 	_init_.Initialize()
 
@@ -493,7 +504,7 @@ func NewDataAwsElasticacheReplicationGroup(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/elasticache_replication_group aws_elasticache_replication_group} Data Source.
 func NewDataAwsElasticacheReplicationGroup_Override(d DataAwsElasticacheReplicationGroup, scope constructs.Construct, id *string, config *DataAwsElasticacheReplicationGroupConfig) {
 	_init_.Initialize()
 

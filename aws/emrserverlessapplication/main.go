@@ -48,6 +48,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "initialCapacity", GoGetter: "InitialCapacity"},
 			_jsii_.MemberProperty{JsiiProperty: "initialCapacityInput", GoGetter: "InitialCapacityInput"},
+			_jsii_.MemberProperty{JsiiProperty: "interactiveConfiguration", GoGetter: "InteractiveConfiguration"},
+			_jsii_.MemberProperty{JsiiProperty: "interactiveConfigurationInput", GoGetter: "InteractiveConfigurationInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumCapacity", GoGetter: "MaximumCapacity"},
@@ -67,6 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAutoStopConfiguration", GoMethod: "PutAutoStopConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putImageConfiguration", GoMethod: "PutImageConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putInitialCapacity", GoMethod: "PutInitialCapacity"},
+			_jsii_.MemberMethod{JsiiMethod: "putInteractiveConfiguration", GoMethod: "PutInteractiveConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putMaximumCapacity", GoMethod: "PutMaximumCapacity"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkConfiguration", GoMethod: "PutNetworkConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
@@ -78,6 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetImageConfiguration", GoMethod: "ResetImageConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInitialCapacity", GoMethod: "ResetInitialCapacity"},
+			_jsii_.MemberMethod{JsiiMethod: "resetInteractiveConfiguration", GoMethod: "ResetInteractiveConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMaximumCapacity", GoMethod: "ResetMaximumCapacity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNetworkConfiguration", GoMethod: "ResetNetworkConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -373,6 +377,48 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmrserverlessApplicationInitialCapacityOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInteractiveConfiguration",
+		reflect.TypeOf((*EmrserverlessApplicationInteractiveConfiguration)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInteractiveConfigurationOutputReference",
+		reflect.TypeOf((*EmrserverlessApplicationInteractiveConfigurationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "livyEndpointEnabled", GoGetter: "LivyEndpointEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "livyEndpointEnabledInput", GoGetter: "LivyEndpointEnabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetLivyEndpointEnabled", GoMethod: "ResetLivyEndpointEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resetStudioEnabled", GoMethod: "ResetStudioEnabled"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "studioEnabled", GoGetter: "StudioEnabled"},
+			_jsii_.MemberProperty{JsiiProperty: "studioEnabledInput", GoGetter: "StudioEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_EmrserverlessApplicationInteractiveConfigurationOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

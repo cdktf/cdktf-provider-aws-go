@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group}.
 type ElasticacheReplicationGroup interface {
 	cdktf.TerraformResource
 	ApplyImmediately() interface{}
@@ -37,6 +37,9 @@ type ElasticacheReplicationGroup interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ClusterEnabled() cdktf.IResolvable
+	ClusterMode() *string
+	SetClusterMode(val *string)
+	ClusterModeInput() *string
 	ConfigurationEndpointAddress() *string
 	// Experimental.
 	Connection() interface{}
@@ -240,8 +243,8 @@ type ElasticacheReplicationGroup interface {
 	ResetAuthTokenUpdateStrategy()
 	ResetAutomaticFailoverEnabled()
 	ResetAutoMinorVersionUpgrade()
+	ResetClusterMode()
 	ResetDataTieringEnabled()
-	ResetDescription()
 	ResetEngine()
 	ResetEngineVersion()
 	ResetFinalSnapshotIdentifier()
@@ -440,6 +443,26 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) ClusterEnabled() cdktf.IResolvab
 	_jsii_.Get(
 		j,
 		"clusterEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheReplicationGroup) ClusterMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheReplicationGroup) ClusterModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"clusterModeInput",
 		&returns,
 	)
 	return returns
@@ -1346,7 +1369,7 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) UserGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
 func NewElasticacheReplicationGroup(scope constructs.Construct, id *string, config *ElasticacheReplicationGroupConfig) ElasticacheReplicationGroup {
 	_init_.Initialize()
 
@@ -1364,7 +1387,7 @@ func NewElasticacheReplicationGroup(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/elasticache_replication_group aws_elasticache_replication_group} Resource.
 func NewElasticacheReplicationGroup_Override(e ElasticacheReplicationGroup, scope constructs.Construct, id *string, config *ElasticacheReplicationGroupConfig) {
 	_init_.Initialize()
 
@@ -1437,6 +1460,17 @@ func (j *jsiiProxy_ElasticacheReplicationGroup)SetAutoMinorVersionUpgrade(val *s
 	_jsii_.Set(
 		j,
 		"autoMinorVersionUpgrade",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElasticacheReplicationGroup)SetClusterMode(val *string) {
+	if err := j.validateSetClusterModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clusterMode",
 		val,
 	)
 }
@@ -2295,18 +2329,18 @@ func (e *jsiiProxy_ElasticacheReplicationGroup) ResetAutoMinorVersionUpgrade() {
 	)
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroup) ResetDataTieringEnabled() {
+func (e *jsiiProxy_ElasticacheReplicationGroup) ResetClusterMode() {
 	_jsii_.InvokeVoid(
 		e,
-		"resetDataTieringEnabled",
+		"resetClusterMode",
 		nil, // no parameters
 	)
 }
 
-func (e *jsiiProxy_ElasticacheReplicationGroup) ResetDescription() {
+func (e *jsiiProxy_ElasticacheReplicationGroup) ResetDataTieringEnabled() {
 	_jsii_.InvokeVoid(
 		e,
-		"resetDescription",
+		"resetDataTieringEnabled",
 		nil, // no parameters
 	)
 }

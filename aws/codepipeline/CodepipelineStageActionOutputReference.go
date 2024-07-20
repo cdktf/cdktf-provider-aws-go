@@ -73,6 +73,9 @@ type CodepipelineStageActionOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TimeoutInMinutes() *float64
+	SetTimeoutInMinutes(val *float64)
+	TimeoutInMinutesInput() *float64
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
@@ -107,6 +110,7 @@ type CodepipelineStageActionOutputReference interface {
 	ResetRegion()
 	ResetRoleArn()
 	ResetRunOrder()
+	ResetTimeoutInMinutes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -412,6 +416,26 @@ func (j *jsiiProxy_CodepipelineStageActionOutputReference) TerraformResource() c
 	return returns
 }
 
+func (j *jsiiProxy_CodepipelineStageActionOutputReference) TimeoutInMinutes() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"timeoutInMinutes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CodepipelineStageActionOutputReference) TimeoutInMinutesInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"timeoutInMinutesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CodepipelineStageActionOutputReference) Version() *string {
 	var returns *string
 	_jsii_.Get(
@@ -632,6 +656,17 @@ func (j *jsiiProxy_CodepipelineStageActionOutputReference)SetTerraformResource(v
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CodepipelineStageActionOutputReference)SetTimeoutInMinutes(val *float64) {
+	if err := j.validateSetTimeoutInMinutesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"timeoutInMinutes",
 		val,
 	)
 }
@@ -885,6 +920,14 @@ func (c *jsiiProxy_CodepipelineStageActionOutputReference) ResetRunOrder() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetRunOrder",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CodepipelineStageActionOutputReference) ResetTimeoutInMinutes() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTimeoutInMinutes",
 		nil, // no parameters
 	)
 }

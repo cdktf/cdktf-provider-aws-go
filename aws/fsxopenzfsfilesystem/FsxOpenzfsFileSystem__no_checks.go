@@ -131,11 +131,19 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetDailyAutomaticBackupStartTim
 	return nil
 }
 
+func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetDeleteOptionsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetDeploymentTypeParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetEndpointIpAddressRangeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetFinalBackupTagsParameters(val *map[string]*string) error {
 	return nil
 }
 

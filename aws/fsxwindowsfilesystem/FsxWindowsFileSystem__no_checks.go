@@ -143,6 +143,10 @@ func (j *jsiiProxy_FsxWindowsFileSystem) validateSetDeploymentTypeParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_FsxWindowsFileSystem) validateSetFinalBackupTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxWindowsFileSystem) validateSetIdParameters(val *string) error {
 	return nil
 }

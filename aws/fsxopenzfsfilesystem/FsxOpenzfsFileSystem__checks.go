@@ -434,6 +434,14 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetDailyAutomaticBackupStartTim
 	return nil
 }
 
+func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetDeleteOptionsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetDeploymentTypeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -443,6 +451,14 @@ func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetDeploymentTypeParameters(val
 }
 
 func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetEndpointIpAddressRangeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_FsxOpenzfsFileSystem) validateSetFinalBackupTagsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

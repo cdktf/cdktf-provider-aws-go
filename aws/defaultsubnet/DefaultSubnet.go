@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/default_subnet aws_default_subnet}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/default_subnet aws_default_subnet}.
 type DefaultSubnet interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -768,7 +768,7 @@ func (j *jsiiProxy_DefaultSubnet) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/default_subnet aws_default_subnet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/default_subnet aws_default_subnet} Resource.
 func NewDefaultSubnet(scope constructs.Construct, id *string, config *DefaultSubnetConfig) DefaultSubnet {
 	_init_.Initialize()
 
@@ -786,7 +786,7 @@ func NewDefaultSubnet(scope constructs.Construct, id *string, config *DefaultSub
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/default_subnet aws_default_subnet} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/default_subnet aws_default_subnet} Resource.
 func NewDefaultSubnet_Override(d DefaultSubnet, scope constructs.Construct, id *string, config *DefaultSubnetConfig) {
 	_init_.Initialize()
 

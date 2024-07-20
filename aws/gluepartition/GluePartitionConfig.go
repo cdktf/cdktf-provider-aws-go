@@ -22,24 +22,24 @@ type GluePartitionConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/glue_partition#database_name GluePartition#database_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/glue_partition#database_name GluePartition#database_name}.
 	DatabaseName *string `field:"required" json:"databaseName" yaml:"databaseName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/glue_partition#partition_values GluePartition#partition_values}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/glue_partition#partition_values GluePartition#partition_values}.
 	PartitionValues *[]*string `field:"required" json:"partitionValues" yaml:"partitionValues"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/glue_partition#table_name GluePartition#table_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/glue_partition#table_name GluePartition#table_name}.
 	TableName *string `field:"required" json:"tableName" yaml:"tableName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/glue_partition#catalog_id GluePartition#catalog_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/glue_partition#catalog_id GluePartition#catalog_id}.
 	CatalogId *string `field:"optional" json:"catalogId" yaml:"catalogId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/glue_partition#id GluePartition#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/glue_partition#id GluePartition#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/glue_partition#parameters GluePartition#parameters}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/glue_partition#parameters GluePartition#parameters}.
 	Parameters *map[string]*string `field:"optional" json:"parameters" yaml:"parameters"`
 	// storage_descriptor block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/glue_partition#storage_descriptor GluePartition#storage_descriptor}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/glue_partition#storage_descriptor GluePartition#storage_descriptor}
 	StorageDescriptor *GluePartitionStorageDescriptor `field:"optional" json:"storageDescriptor" yaml:"storageDescriptor"`
 }
 

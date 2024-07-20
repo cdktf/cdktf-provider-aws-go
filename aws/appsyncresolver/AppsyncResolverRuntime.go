@@ -5,9 +5,9 @@ package appsyncresolver
 
 
 type AppsyncResolverRuntime struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/appsync_resolver#name AppsyncResolver#name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/appsync_resolver#name AppsyncResolver#name}.
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/appsync_resolver#runtime_version AppsyncResolver#runtime_version}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/appsync_resolver#runtime_version AppsyncResolver#runtime_version}.
 	RuntimeVersion *string `field:"required" json:"runtimeVersion" yaml:"runtimeVersion"`
 }
 

@@ -115,6 +115,10 @@ func (j *jsiiProxy_RdsGlobalCluster) validateSetEngineParameters(val *string) er
 	return nil
 }
 
+func (j *jsiiProxy_RdsGlobalCluster) validateSetEngineLifecycleSupportParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsGlobalCluster) validateSetEngineVersionParameters(val *string) error {
 	return nil
 }

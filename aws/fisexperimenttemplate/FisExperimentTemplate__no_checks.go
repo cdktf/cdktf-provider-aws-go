@@ -79,6 +79,10 @@ func (f *jsiiProxy_FisExperimentTemplate) validatePutActionParameters(value inte
 	return nil
 }
 
+func (f *jsiiProxy_FisExperimentTemplate) validatePutExperimentOptionsParameters(value *FisExperimentTemplateExperimentOptions) error {
+	return nil
+}
+
 func (f *jsiiProxy_FisExperimentTemplate) validatePutLogConfigurationParameters(value *FisExperimentTemplateLogConfiguration) error {
 	return nil
 }

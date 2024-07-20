@@ -41,6 +41,8 @@ type MskReplicatorReplicationInfoListTopicReplicationOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	StartingPosition() MskReplicatorReplicationInfoListTopicReplicationStartingPositionOutputReference
+	StartingPositionInput() *MskReplicatorReplicationInfoListTopicReplicationStartingPosition
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,9 +81,11 @@ type MskReplicatorReplicationInfoListTopicReplicationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutStartingPosition(value *MskReplicatorReplicationInfoListTopicReplicationStartingPosition)
 	ResetCopyAccessControlListsForTopics()
 	ResetCopyTopicConfigurations()
 	ResetDetectAndCopyNewTopics()
+	ResetStartingPosition()
 	ResetTopicsToExclude()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -203,6 +207,26 @@ func (j *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReferen
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReference) StartingPosition() MskReplicatorReplicationInfoListTopicReplicationStartingPositionOutputReference {
+	var returns MskReplicatorReplicationInfoListTopicReplicationStartingPositionOutputReference
+	_jsii_.Get(
+		j,
+		"startingPosition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReference) StartingPositionInput() *MskReplicatorReplicationInfoListTopicReplicationStartingPosition {
+	var returns *MskReplicatorReplicationInfoListTopicReplicationStartingPosition
+	_jsii_.Get(
+		j,
+		"startingPositionInput",
 		&returns,
 	)
 	return returns
@@ -592,6 +616,17 @@ func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReferen
 	return returns
 }
 
+func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReference) PutStartingPosition(value *MskReplicatorReplicationInfoListTopicReplicationStartingPosition) {
+	if err := m.validatePutStartingPositionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		m,
+		"putStartingPosition",
+		[]interface{}{value},
+	)
+}
+
 func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReference) ResetCopyAccessControlListsForTopics() {
 	_jsii_.InvokeVoid(
 		m,
@@ -612,6 +647,14 @@ func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReferen
 	_jsii_.InvokeVoid(
 		m,
 		"resetDetectAndCopyNewTopics",
+		nil, // no parameters
+	)
+}
+
+func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReference) ResetStartingPosition() {
+	_jsii_.InvokeVoid(
+		m,
+		"resetStartingPosition",
 		nil, // no parameters
 	)
 }

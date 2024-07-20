@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/lb_target_group aws_lb_target_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/lb_target_group aws_lb_target_group}.
 type LbTargetGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -118,6 +118,8 @@ type LbTargetGroup interface {
 	TagsInput() *map[string]*string
 	TargetFailover() LbTargetGroupTargetFailoverList
 	TargetFailoverInput() interface{}
+	TargetGroupHealth() LbTargetGroupTargetGroupHealthOutputReference
+	TargetGroupHealthInput() *LbTargetGroupTargetGroupHealth
 	TargetHealthState() LbTargetGroupTargetHealthStateList
 	TargetHealthStateInput() interface{}
 	TargetType() *string
@@ -178,6 +180,7 @@ type LbTargetGroup interface {
 	PutHealthCheck(value *LbTargetGroupHealthCheck)
 	PutStickiness(value *LbTargetGroupStickiness)
 	PutTargetFailover(value interface{})
+	PutTargetGroupHealth(value *LbTargetGroupTargetGroupHealth)
 	PutTargetHealthState(value interface{})
 	ResetConnectionTermination()
 	ResetDeregistrationDelay()
@@ -203,6 +206,7 @@ type LbTargetGroup interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTargetFailover()
+	ResetTargetGroupHealth()
 	ResetTargetHealthState()
 	ResetTargetType()
 	ResetVpcId()
@@ -804,6 +808,26 @@ func (j *jsiiProxy_LbTargetGroup) TargetFailoverInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_LbTargetGroup) TargetGroupHealth() LbTargetGroupTargetGroupHealthOutputReference {
+	var returns LbTargetGroupTargetGroupHealthOutputReference
+	_jsii_.Get(
+		j,
+		"targetGroupHealth",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_LbTargetGroup) TargetGroupHealthInput() *LbTargetGroupTargetGroupHealth {
+	var returns *LbTargetGroupTargetGroupHealth
+	_jsii_.Get(
+		j,
+		"targetGroupHealthInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_LbTargetGroup) TargetHealthState() LbTargetGroupTargetHealthStateList {
 	var returns LbTargetGroupTargetHealthStateList
 	_jsii_.Get(
@@ -895,7 +919,7 @@ func (j *jsiiProxy_LbTargetGroup) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/lb_target_group aws_lb_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/lb_target_group aws_lb_target_group} Resource.
 func NewLbTargetGroup(scope constructs.Construct, id *string, config *LbTargetGroupConfig) LbTargetGroup {
 	_init_.Initialize()
 
@@ -913,7 +937,7 @@ func NewLbTargetGroup(scope constructs.Construct, id *string, config *LbTargetGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/lb_target_group aws_lb_target_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/lb_target_group aws_lb_target_group} Resource.
 func NewLbTargetGroup_Override(l LbTargetGroup, scope constructs.Construct, id *string, config *LbTargetGroupConfig) {
 	_init_.Initialize()
 
@@ -1598,6 +1622,17 @@ func (l *jsiiProxy_LbTargetGroup) PutTargetFailover(value interface{}) {
 	)
 }
 
+func (l *jsiiProxy_LbTargetGroup) PutTargetGroupHealth(value *LbTargetGroupTargetGroupHealth) {
+	if err := l.validatePutTargetGroupHealthParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putTargetGroupHealth",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_LbTargetGroup) PutTargetHealthState(value interface{}) {
 	if err := l.validatePutTargetHealthStateParameters(value); err != nil {
 		panic(err)
@@ -1781,6 +1816,14 @@ func (l *jsiiProxy_LbTargetGroup) ResetTargetFailover() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetTargetFailover",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_LbTargetGroup) ResetTargetGroupHealth() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetTargetGroupHealth",
 		nil, // no parameters
 	)
 }

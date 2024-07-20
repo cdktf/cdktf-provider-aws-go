@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/db_instance aws_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/db_instance aws_db_instance}.
 type DbInstance interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -114,6 +114,9 @@ type DbInstance interface {
 	Engine() *string
 	SetEngine(val *string)
 	EngineInput() *string
+	EngineLifecycleSupport() *string
+	SetEngineLifecycleSupport(val *string)
+	EngineLifecycleSupportInput() *string
 	EngineVersion() *string
 	SetEngineVersion(val *string)
 	EngineVersionActual() *string
@@ -349,6 +352,7 @@ type DbInstance interface {
 	ResetDomainOu()
 	ResetEnabledCloudwatchLogsExports()
 	ResetEngine()
+	ResetEngineLifecycleSupport()
 	ResetEngineVersion()
 	ResetFinalSnapshotIdentifier()
 	ResetIamDatabaseAuthenticationEnabled()
@@ -1026,6 +1030,26 @@ func (j *jsiiProxy_DbInstance) EngineInput() *string {
 	_jsii_.Get(
 		j,
 		"engineInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) EngineLifecycleSupport() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engineLifecycleSupport",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) EngineLifecycleSupportInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"engineLifecycleSupportInput",
 		&returns,
 	)
 	return returns
@@ -2062,7 +2086,7 @@ func (j *jsiiProxy_DbInstance) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/db_instance aws_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/db_instance aws_db_instance} Resource.
 func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceConfig) DbInstance {
 	_init_.Initialize()
 
@@ -2080,7 +2104,7 @@ func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/db_instance aws_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/db_instance aws_db_instance} Resource.
 func NewDbInstance_Override(d DbInstance, scope constructs.Construct, id *string, config *DbInstanceConfig) {
 	_init_.Initialize()
 
@@ -2403,6 +2427,17 @@ func (j *jsiiProxy_DbInstance)SetEngine(val *string) {
 	_jsii_.Set(
 		j,
 		"engine",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DbInstance)SetEngineLifecycleSupport(val *string) {
+	if err := j.validateSetEngineLifecycleSupportParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"engineLifecycleSupport",
 		val,
 	)
 }
@@ -3483,6 +3518,14 @@ func (d *jsiiProxy_DbInstance) ResetEngine() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetEngine",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbInstance) ResetEngineLifecycleSupport() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetEngineLifecycleSupport",
 		nil, // no parameters
 	)
 }

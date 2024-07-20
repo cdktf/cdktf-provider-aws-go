@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/lb_trust_store aws_lb_trust_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/lb_trust_store aws_lb_trust_store}.
 type LbTrustStore interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -522,7 +522,7 @@ func (j *jsiiProxy_LbTrustStore) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/lb_trust_store aws_lb_trust_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/lb_trust_store aws_lb_trust_store} Resource.
 func NewLbTrustStore(scope constructs.Construct, id *string, config *LbTrustStoreConfig) LbTrustStore {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewLbTrustStore(scope constructs.Construct, id *string, config *LbTrustStor
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/lb_trust_store aws_lb_trust_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/lb_trust_store aws_lb_trust_store} Resource.
 func NewLbTrustStore_Override(l LbTrustStore, scope constructs.Construct, id *string, config *LbTrustStoreConfig) {
 	_init_.Initialize()
 

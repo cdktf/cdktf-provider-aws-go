@@ -83,6 +83,10 @@ func (b *jsiiProxy_BedrockagentAgentActionGroup) validatePutApiSchemaParameters(
 	return nil
 }
 
+func (b *jsiiProxy_BedrockagentAgentActionGroup) validatePutFunctionSchemaParameters(value interface{}) error {
+	return nil
+}
+
 func validateBedrockagentAgentActionGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

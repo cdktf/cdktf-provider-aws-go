@@ -147,6 +147,10 @@ func (j *jsiiProxy_BedrockagentAgent) validateSetProvisionersParameters(val *[]i
 	return nil
 }
 
+func (j *jsiiProxy_BedrockagentAgent) validateSetSkipResourceInUseCheckParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_BedrockagentAgent) validateSetTagsParameters(val *map[string]*string) error {
 	return nil
 }

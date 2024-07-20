@@ -91,6 +91,10 @@ func (e *jsiiProxy_EmrserverlessApplication) validatePutInitialCapacityParameter
 	return nil
 }
 
+func (e *jsiiProxy_EmrserverlessApplication) validatePutInteractiveConfigurationParameters(value *EmrserverlessApplicationInteractiveConfiguration) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrserverlessApplication) validatePutMaximumCapacityParameters(value *EmrserverlessApplicationMaximumCapacity) error {
 	return nil
 }

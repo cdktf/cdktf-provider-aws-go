@@ -47,6 +47,10 @@ func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReferen
 	return nil
 }
 
+func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReference) validatePutStartingPositionParameters(value *MskReplicatorReplicationInfoListTopicReplicationStartingPosition) error {
+	return nil
+}
+
 func (m *jsiiProxy_MskReplicatorReplicationInfoListTopicReplicationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

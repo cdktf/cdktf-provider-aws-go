@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/dynamodb_resource_policy aws_dynamodb_resource_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/dynamodb_resource_policy aws_dynamodb_resource_policy}.
 type DynamodbResourcePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -378,7 +378,7 @@ func (j *jsiiProxy_DynamodbResourcePolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/dynamodb_resource_policy aws_dynamodb_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/dynamodb_resource_policy aws_dynamodb_resource_policy} Resource.
 func NewDynamodbResourcePolicy(scope constructs.Construct, id *string, config *DynamodbResourcePolicyConfig) DynamodbResourcePolicy {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewDynamodbResourcePolicy(scope constructs.Construct, id *string, config *D
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/dynamodb_resource_policy aws_dynamodb_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/dynamodb_resource_policy aws_dynamodb_resource_policy} Resource.
 func NewDynamodbResourcePolicy_Override(d DynamodbResourcePolicy, scope constructs.Construct, id *string, config *DynamodbResourcePolicyConfig) {
 	_init_.Initialize()
 

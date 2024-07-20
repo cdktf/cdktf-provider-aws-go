@@ -79,6 +79,10 @@ func (c *jsiiProxy_CodebuildWebhook) validatePutFilterGroupParameters(value inte
 	return nil
 }
 
+func (c *jsiiProxy_CodebuildWebhook) validatePutScopeConfigurationParameters(value *CodebuildWebhookScopeConfiguration) error {
+	return nil
+}
+
 func validateCodebuildWebhook_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

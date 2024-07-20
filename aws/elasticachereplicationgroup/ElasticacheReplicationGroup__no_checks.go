@@ -123,6 +123,10 @@ func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetAutoMinorVersionUpgra
 	return nil
 }
 
+func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetClusterModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticacheReplicationGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -107,6 +107,10 @@ func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetAllowExternalDataFi
 	return nil
 }
 
+func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetAllowFullTableExternalDataAccessParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_LakeformationDataLakeSettings) validateSetAuthorizedSessionTagValueListParameters(val *[]*string) error {
 	return nil
 }

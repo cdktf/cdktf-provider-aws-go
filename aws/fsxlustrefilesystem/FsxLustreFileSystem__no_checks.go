@@ -155,6 +155,10 @@ func (j *jsiiProxy_FsxLustreFileSystem) validateSetFileSystemTypeVersionParamete
 	return nil
 }
 
+func (j *jsiiProxy_FsxLustreFileSystem) validateSetFinalBackupTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_FsxLustreFileSystem) validateSetIdParameters(val *string) error {
 	return nil
 }
@@ -184,6 +188,10 @@ func (j *jsiiProxy_FsxLustreFileSystem) validateSetProvisionersParameters(val *[
 }
 
 func (j *jsiiProxy_FsxLustreFileSystem) validateSetSecurityGroupIdsParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_FsxLustreFileSystem) validateSetSkipFinalBackupParameters(val interface{}) error {
 	return nil
 }
 

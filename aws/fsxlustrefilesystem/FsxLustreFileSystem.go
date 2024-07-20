@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system}.
 type FsxLustreFileSystem interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -63,6 +63,9 @@ type FsxLustreFileSystem interface {
 	FileSystemTypeVersion() *string
 	SetFileSystemTypeVersion(val *string)
 	FileSystemTypeVersionInput() *string
+	FinalBackupTags() *map[string]*string
+	SetFinalBackupTags(val *map[string]*string)
+	FinalBackupTagsInput() *map[string]*string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -114,6 +117,9 @@ type FsxLustreFileSystem interface {
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
+	SkipFinalBackup() interface{}
+	SetSkipFinalBackup(val interface{})
+	SkipFinalBackupInput() interface{}
 	StorageCapacity() *float64
 	SetStorageCapacity(val *float64)
 	StorageCapacityInput() *float64
@@ -198,6 +204,7 @@ type FsxLustreFileSystem interface {
 	ResetDriveCacheType()
 	ResetExportPath()
 	ResetFileSystemTypeVersion()
+	ResetFinalBackupTags()
 	ResetId()
 	ResetImportedFileChunkSize()
 	ResetImportPath()
@@ -210,6 +217,7 @@ type FsxLustreFileSystem interface {
 	ResetPerUnitStorageThroughput()
 	ResetRootSquashConfiguration()
 	ResetSecurityGroupIds()
+	ResetSkipFinalBackup()
 	ResetStorageCapacity()
 	ResetStorageType()
 	ResetTags()
@@ -499,6 +507,26 @@ func (j *jsiiProxy_FsxLustreFileSystem) FileSystemTypeVersionInput() *string {
 	_jsii_.Get(
 		j,
 		"fileSystemTypeVersionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxLustreFileSystem) FinalBackupTags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"finalBackupTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxLustreFileSystem) FinalBackupTagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"finalBackupTagsInput",
 		&returns,
 	)
 	return returns
@@ -794,6 +822,26 @@ func (j *jsiiProxy_FsxLustreFileSystem) SecurityGroupIdsInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_FsxLustreFileSystem) SkipFinalBackup() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipFinalBackup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxLustreFileSystem) SkipFinalBackupInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipFinalBackupInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_FsxLustreFileSystem) StorageCapacity() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -975,7 +1023,7 @@ func (j *jsiiProxy_FsxLustreFileSystem) WeeklyMaintenanceStartTimeInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
 func NewFsxLustreFileSystem(scope constructs.Construct, id *string, config *FsxLustreFileSystemConfig) FsxLustreFileSystem {
 	_init_.Initialize()
 
@@ -993,7 +1041,7 @@ func NewFsxLustreFileSystem(scope constructs.Construct, id *string, config *FsxL
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_lustre_file_system aws_fsx_lustre_file_system} Resource.
 func NewFsxLustreFileSystem_Override(f FsxLustreFileSystem, scope constructs.Construct, id *string, config *FsxLustreFileSystemConfig) {
 	_init_.Initialize()
 
@@ -1144,6 +1192,17 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetFileSystemTypeVersion(val *string) {
 	)
 }
 
+func (j *jsiiProxy_FsxLustreFileSystem)SetFinalBackupTags(val *map[string]*string) {
+	if err := j.validateSetFinalBackupTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"finalBackupTags",
+		val,
+	)
+}
+
 func (j *jsiiProxy_FsxLustreFileSystem)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -1244,6 +1303,17 @@ func (j *jsiiProxy_FsxLustreFileSystem)SetSecurityGroupIds(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"securityGroupIds",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxLustreFileSystem)SetSkipFinalBackup(val interface{}) {
+	if err := j.validateSetSkipFinalBackupParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipFinalBackup",
 		val,
 	)
 }
@@ -1791,6 +1861,14 @@ func (f *jsiiProxy_FsxLustreFileSystem) ResetFileSystemTypeVersion() {
 	)
 }
 
+func (f *jsiiProxy_FsxLustreFileSystem) ResetFinalBackupTags() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetFinalBackupTags",
+		nil, // no parameters
+	)
+}
+
 func (f *jsiiProxy_FsxLustreFileSystem) ResetId() {
 	_jsii_.InvokeVoid(
 		f,
@@ -1867,6 +1945,14 @@ func (f *jsiiProxy_FsxLustreFileSystem) ResetSecurityGroupIds() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetSecurityGroupIds",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxLustreFileSystem) ResetSkipFinalBackup() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetSkipFinalBackup",
 		nil, // no parameters
 	)
 }

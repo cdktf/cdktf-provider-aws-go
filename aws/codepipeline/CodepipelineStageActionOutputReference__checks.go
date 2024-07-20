@@ -294,6 +294,14 @@ func (j *jsiiProxy_CodepipelineStageActionOutputReference) validateSetTerraformR
 	return nil
 }
 
+func (j *jsiiProxy_CodepipelineStageActionOutputReference) validateSetTimeoutInMinutesParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CodepipelineStageActionOutputReference) validateSetVersionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

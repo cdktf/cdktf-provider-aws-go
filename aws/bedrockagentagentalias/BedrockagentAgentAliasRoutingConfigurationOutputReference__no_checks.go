@@ -67,6 +67,10 @@ func (j *jsiiProxy_BedrockagentAgentAliasRoutingConfigurationOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_BedrockagentAgentAliasRoutingConfigurationOutputReference) validateSetProvisionedThroughputParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BedrockagentAgentAliasRoutingConfigurationOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

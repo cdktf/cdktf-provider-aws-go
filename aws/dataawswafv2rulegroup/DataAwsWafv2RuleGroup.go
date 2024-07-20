@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/wafv2_rule_group aws_wafv2_rule_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/wafv2_rule_group aws_wafv2_rule_group}.
 type DataAwsWafv2RuleGroup interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -333,7 +333,7 @@ func (j *jsiiProxy_DataAwsWafv2RuleGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/wafv2_rule_group aws_wafv2_rule_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/wafv2_rule_group aws_wafv2_rule_group} Data Source.
 func NewDataAwsWafv2RuleGroup(scope constructs.Construct, id *string, config *DataAwsWafv2RuleGroupConfig) DataAwsWafv2RuleGroup {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewDataAwsWafv2RuleGroup(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/data-sources/wafv2_rule_group aws_wafv2_rule_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/wafv2_rule_group aws_wafv2_rule_group} Data Source.
 func NewDataAwsWafv2RuleGroup_Override(d DataAwsWafv2RuleGroup, scope constructs.Construct, id *string, config *DataAwsWafv2RuleGroupConfig) {
 	_init_.Initialize()
 

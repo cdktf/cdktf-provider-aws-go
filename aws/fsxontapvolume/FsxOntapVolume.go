@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume}.
 type FsxOntapVolume interface {
 	cdktf.TerraformResource
 	AggregateConfiguration() FsxOntapVolumeAggregateConfigurationOutputReference
@@ -41,6 +41,9 @@ type FsxOntapVolume interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	FileSystemId() *string
+	FinalBackupTags() *map[string]*string
+	SetFinalBackupTags(val *map[string]*string)
+	FinalBackupTagsInput() *map[string]*string
 	FlexcacheEndpointType() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -174,6 +177,7 @@ type FsxOntapVolume interface {
 	ResetAggregateConfiguration()
 	ResetBypassSnaplockEnterpriseRetention()
 	ResetCopyTagsToBackups()
+	ResetFinalBackupTags()
 	ResetId()
 	ResetJunctionPath()
 	ResetOntapVolumeType()
@@ -336,6 +340,26 @@ func (j *jsiiProxy_FsxOntapVolume) FileSystemId() *string {
 	_jsii_.Get(
 		j,
 		"fileSystemId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOntapVolume) FinalBackupTags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"finalBackupTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_FsxOntapVolume) FinalBackupTagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"finalBackupTagsInput",
 		&returns,
 	)
 	return returns
@@ -832,7 +856,7 @@ func (j *jsiiProxy_FsxOntapVolume) VolumeTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource.
 func NewFsxOntapVolume(scope constructs.Construct, id *string, config *FsxOntapVolumeConfig) FsxOntapVolume {
 	_init_.Initialize()
 
@@ -850,7 +874,7 @@ func NewFsxOntapVolume(scope constructs.Construct, id *string, config *FsxOntapV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/fsx_ontap_volume aws_fsx_ontap_volume} Resource.
 func NewFsxOntapVolume_Override(f FsxOntapVolume, scope constructs.Construct, id *string, config *FsxOntapVolumeConfig) {
 	_init_.Initialize()
 
@@ -909,6 +933,17 @@ func (j *jsiiProxy_FsxOntapVolume)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_FsxOntapVolume)SetFinalBackupTags(val *map[string]*string) {
+	if err := j.validateSetFinalBackupTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"finalBackupTags",
 		val,
 	)
 }
@@ -1533,6 +1568,14 @@ func (f *jsiiProxy_FsxOntapVolume) ResetCopyTagsToBackups() {
 	_jsii_.InvokeVoid(
 		f,
 		"resetCopyTagsToBackups",
+		nil, // no parameters
+	)
+}
+
+func (f *jsiiProxy_FsxOntapVolume) ResetFinalBackupTags() {
+	_jsii_.InvokeVoid(
+		f,
+		"resetFinalBackupTags",
 		nil, // no parameters
 	)
 }

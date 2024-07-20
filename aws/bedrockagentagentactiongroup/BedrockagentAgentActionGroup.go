@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/bedrockagent_agent_action_group aws_bedrockagent_agent_action_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/bedrockagent_agent_action_group aws_bedrockagent_agent_action_group}.
 type BedrockagentAgentActionGroup interface {
 	cdktf.TerraformResource
 	ActionGroupExecutor() BedrockagentAgentActionGroupActionGroupExecutorList
@@ -59,6 +59,8 @@ type BedrockagentAgentActionGroup interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	FunctionSchema() BedrockagentAgentActionGroupFunctionSchemaList
+	FunctionSchemaInput() interface{}
 	Id() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -133,10 +135,12 @@ type BedrockagentAgentActionGroup interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutActionGroupExecutor(value interface{})
 	PutApiSchema(value interface{})
+	PutFunctionSchema(value interface{})
 	ResetActionGroupExecutor()
 	ResetActionGroupState()
 	ResetApiSchema()
 	ResetDescription()
+	ResetFunctionSchema()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -390,6 +394,26 @@ func (j *jsiiProxy_BedrockagentAgentActionGroup) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_BedrockagentAgentActionGroup) FunctionSchema() BedrockagentAgentActionGroupFunctionSchemaList {
+	var returns BedrockagentAgentActionGroupFunctionSchemaList
+	_jsii_.Get(
+		j,
+		"functionSchema",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BedrockagentAgentActionGroup) FunctionSchemaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"functionSchemaInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_BedrockagentAgentActionGroup) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -521,7 +545,7 @@ func (j *jsiiProxy_BedrockagentAgentActionGroup) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/bedrockagent_agent_action_group aws_bedrockagent_agent_action_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/bedrockagent_agent_action_group aws_bedrockagent_agent_action_group} Resource.
 func NewBedrockagentAgentActionGroup(scope constructs.Construct, id *string, config *BedrockagentAgentActionGroupConfig) BedrockagentAgentActionGroup {
 	_init_.Initialize()
 
@@ -539,7 +563,7 @@ func NewBedrockagentAgentActionGroup(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.58.0/docs/resources/bedrockagent_agent_action_group aws_bedrockagent_agent_action_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/bedrockagent_agent_action_group aws_bedrockagent_agent_action_group} Resource.
 func NewBedrockagentAgentActionGroup_Override(b BedrockagentAgentActionGroup, scope constructs.Construct, id *string, config *BedrockagentAgentActionGroupConfig) {
 	_init_.Initialize()
 
@@ -1070,6 +1094,17 @@ func (b *jsiiProxy_BedrockagentAgentActionGroup) PutApiSchema(value interface{})
 	)
 }
 
+func (b *jsiiProxy_BedrockagentAgentActionGroup) PutFunctionSchema(value interface{}) {
+	if err := b.validatePutFunctionSchemaParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putFunctionSchema",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BedrockagentAgentActionGroup) ResetActionGroupExecutor() {
 	_jsii_.InvokeVoid(
 		b,
@@ -1098,6 +1133,14 @@ func (b *jsiiProxy_BedrockagentAgentActionGroup) ResetDescription() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockagentAgentActionGroup) ResetFunctionSchema() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetFunctionSchema",
 		nil, // no parameters
 	)
 }
