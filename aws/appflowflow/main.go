@@ -47,6 +47,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "kmsArn", GoGetter: "KmsArn"},
 			_jsii_.MemberProperty{JsiiProperty: "kmsArnInput", GoGetter: "KmsArnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberProperty{JsiiProperty: "metadataCatalogConfig", GoGetter: "MetadataCatalogConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "metadataCatalogConfigInput", GoGetter: "MetadataCatalogConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -57,6 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putDestinationFlowConfig", GoMethod: "PutDestinationFlowConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putMetadataCatalogConfig", GoMethod: "PutMetadataCatalogConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putSourceFlowConfig", GoMethod: "PutSourceFlowConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putTask", GoMethod: "PutTask"},
 			_jsii_.MemberMethod{JsiiMethod: "putTriggerConfig", GoMethod: "PutTriggerConfig"},
@@ -64,6 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKmsArn", GoMethod: "ResetKmsArn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMetadataCatalogConfig", GoMethod: "ResetMetadataCatalogConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
@@ -879,9 +883,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "prefixFormat", GoGetter: "PrefixFormat"},
 			_jsii_.MemberProperty{JsiiProperty: "prefixFormatInput", GoGetter: "PrefixFormatInput"},
+			_jsii_.MemberProperty{JsiiProperty: "prefixHierarchy", GoGetter: "PrefixHierarchy"},
+			_jsii_.MemberProperty{JsiiProperty: "prefixHierarchyInput", GoGetter: "PrefixHierarchyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "prefixType", GoGetter: "PrefixType"},
 			_jsii_.MemberProperty{JsiiProperty: "prefixTypeInput", GoGetter: "PrefixTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrefixFormat", GoMethod: "ResetPrefixFormat"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrefixHierarchy", GoMethod: "ResetPrefixHierarchy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrefixType", GoMethod: "ResetPrefixType"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -1374,9 +1381,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "prefixFormat", GoGetter: "PrefixFormat"},
 			_jsii_.MemberProperty{JsiiProperty: "prefixFormatInput", GoGetter: "PrefixFormatInput"},
+			_jsii_.MemberProperty{JsiiProperty: "prefixHierarchy", GoGetter: "PrefixHierarchy"},
+			_jsii_.MemberProperty{JsiiProperty: "prefixHierarchyInput", GoGetter: "PrefixHierarchyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "prefixType", GoGetter: "PrefixType"},
 			_jsii_.MemberProperty{JsiiProperty: "prefixTypeInput", GoGetter: "PrefixTypeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPrefixFormat", GoMethod: "ResetPrefixFormat"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPrefixHierarchy", GoMethod: "ResetPrefixHierarchy"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
@@ -1542,6 +1552,88 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppflowFlowDestinationFlowConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowMetadataCatalogConfig",
+		reflect.TypeOf((*AppflowFlowMetadataCatalogConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowMetadataCatalogConfigGlueDataCatalog",
+		reflect.TypeOf((*AppflowFlowMetadataCatalogConfigGlueDataCatalog)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowMetadataCatalogConfigGlueDataCatalogOutputReference",
+		reflect.TypeOf((*AppflowFlowMetadataCatalogConfigGlueDataCatalogOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "databaseName", GoGetter: "DatabaseName"},
+			_jsii_.MemberProperty{JsiiProperty: "databaseNameInput", GoGetter: "DatabaseNameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "roleArn", GoGetter: "RoleArn"},
+			_jsii_.MemberProperty{JsiiProperty: "roleArnInput", GoGetter: "RoleArnInput"},
+			_jsii_.MemberProperty{JsiiProperty: "tablePrefix", GoGetter: "TablePrefix"},
+			_jsii_.MemberProperty{JsiiProperty: "tablePrefixInput", GoGetter: "TablePrefixInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AppflowFlowMetadataCatalogConfigGlueDataCatalogOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.appflowFlow.AppflowFlowMetadataCatalogConfigOutputReference",
+		reflect.TypeOf((*AppflowFlowMetadataCatalogConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "glueDataCatalog", GoGetter: "GlueDataCatalog"},
+			_jsii_.MemberProperty{JsiiProperty: "glueDataCatalogInput", GoGetter: "GlueDataCatalogInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "putGlueDataCatalog", GoMethod: "PutGlueDataCatalog"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGlueDataCatalog", GoMethod: "ResetGlueDataCatalog"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AppflowFlowMetadataCatalogConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

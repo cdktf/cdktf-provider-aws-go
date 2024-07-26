@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/db_cluster_snapshot aws_db_cluster_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/db_cluster_snapshot aws_db_cluster_snapshot}.
 type DbClusterSnapshot interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -72,6 +72,9 @@ type DbClusterSnapshot interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SharedAccounts() *[]*string
+	SetSharedAccounts(val *[]*string)
+	SharedAccountsInput() *[]*string
 	SnapshotType() *string
 	SourceDbClusterSnapshotArn() *string
 	Status() *string
@@ -139,6 +142,7 @@ type DbClusterSnapshot interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSharedAccounts()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -430,6 +434,26 @@ func (j *jsiiProxy_DbClusterSnapshot) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DbClusterSnapshot) SharedAccounts() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sharedAccounts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbClusterSnapshot) SharedAccountsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sharedAccountsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DbClusterSnapshot) SnapshotType() *string {
 	var returns *string
 	_jsii_.Get(
@@ -571,7 +595,7 @@ func (j *jsiiProxy_DbClusterSnapshot) VpcId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/db_cluster_snapshot aws_db_cluster_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/db_cluster_snapshot aws_db_cluster_snapshot} Resource.
 func NewDbClusterSnapshot(scope constructs.Construct, id *string, config *DbClusterSnapshotConfig) DbClusterSnapshot {
 	_init_.Initialize()
 
@@ -589,7 +613,7 @@ func NewDbClusterSnapshot(scope constructs.Construct, id *string, config *DbClus
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/db_cluster_snapshot aws_db_cluster_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/db_cluster_snapshot aws_db_cluster_snapshot} Resource.
 func NewDbClusterSnapshot_Override(d DbClusterSnapshot, scope constructs.Construct, id *string, config *DbClusterSnapshotConfig) {
 	_init_.Initialize()
 
@@ -697,6 +721,17 @@ func (j *jsiiProxy_DbClusterSnapshot)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DbClusterSnapshot)SetSharedAccounts(val *[]*string) {
+	if err := j.validateSetSharedAccountsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sharedAccounts",
 		val,
 	)
 }
@@ -1099,6 +1134,14 @@ func (d *jsiiProxy_DbClusterSnapshot) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbClusterSnapshot) ResetSharedAccounts() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSharedAccounts",
 		nil, // no parameters
 	)
 }

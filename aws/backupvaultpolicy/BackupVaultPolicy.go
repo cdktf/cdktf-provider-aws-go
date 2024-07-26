@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/backup_vault_policy aws_backup_vault_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/backup_vault_policy aws_backup_vault_policy}.
 type BackupVaultPolicy interface {
 	cdktf.TerraformResource
 	BackupVaultArn() *string
@@ -367,7 +367,7 @@ func (j *jsiiProxy_BackupVaultPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/backup_vault_policy aws_backup_vault_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/backup_vault_policy aws_backup_vault_policy} Resource.
 func NewBackupVaultPolicy(scope constructs.Construct, id *string, config *BackupVaultPolicyConfig) BackupVaultPolicy {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewBackupVaultPolicy(scope constructs.Construct, id *string, config *Backup
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/backup_vault_policy aws_backup_vault_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/backup_vault_policy aws_backup_vault_policy} Resource.
 func NewBackupVaultPolicy_Override(b BackupVaultPolicy, scope constructs.Construct, id *string, config *BackupVaultPolicyConfig) {
 	_init_.Initialize()
 

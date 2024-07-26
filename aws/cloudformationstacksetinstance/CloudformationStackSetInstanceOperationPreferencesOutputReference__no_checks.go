@@ -59,6 +59,10 @@ func (j *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputReference) validateSetConcurrencyModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputReference) validateSetFailureToleranceCountParameters(val *float64) error {
 	return nil
 }

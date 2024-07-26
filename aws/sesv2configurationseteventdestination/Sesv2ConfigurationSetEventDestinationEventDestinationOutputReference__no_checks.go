@@ -51,6 +51,10 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	return nil
 }
 
+func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) validatePutEventBridgeDestinationParameters(value *Sesv2ConfigurationSetEventDestinationEventDestinationEventBridgeDestination) error {
+	return nil
+}
+
 func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) validatePutKinesisFirehoseDestinationParameters(value *Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestination) error {
 	return nil
 }

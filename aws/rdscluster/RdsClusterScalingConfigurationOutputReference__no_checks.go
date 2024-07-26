@@ -75,6 +75,10 @@ func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) validateSetMin
 	return nil
 }
 
+func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) validateSetSecondsBeforeTimeoutParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) validateSetSecondsUntilAutoPauseParameters(val *float64) error {
 	return nil
 }

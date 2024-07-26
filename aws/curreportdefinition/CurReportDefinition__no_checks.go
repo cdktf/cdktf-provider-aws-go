@@ -151,6 +151,14 @@ func (j *jsiiProxy_CurReportDefinition) validateSetS3RegionParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_CurReportDefinition) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_CurReportDefinition) validateSetTagsAllParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CurReportDefinition) validateSetTimeUnitParameters(val *string) error {
 	return nil
 }

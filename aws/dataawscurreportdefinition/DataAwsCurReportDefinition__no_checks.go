@@ -87,6 +87,10 @@ func (j *jsiiProxy_DataAwsCurReportDefinition) validateSetReportNameParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_DataAwsCurReportDefinition) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewDataAwsCurReportDefinitionParameters(scope constructs.Construct, id *string, config *DataAwsCurReportDefinitionConfig) error {
 	return nil
 }

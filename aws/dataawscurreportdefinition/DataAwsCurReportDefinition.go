@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/cur_report_definition aws_cur_report_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/cur_report_definition aws_cur_report_definition}.
 type DataAwsCurReportDefinition interface {
 	cdktf.TerraformDataSource
 	AdditionalArtifacts() *[]*string
@@ -62,6 +62,9 @@ type DataAwsCurReportDefinition interface {
 	S3Bucket() *string
 	S3Prefix() *string
 	S3Region() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -98,6 +101,7 @@ type DataAwsCurReportDefinition interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTags()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Adds this resource to the terraform JSON output.
@@ -357,6 +361,26 @@ func (j *jsiiProxy_DataAwsCurReportDefinition) S3Region() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsCurReportDefinition) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsCurReportDefinition) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsCurReportDefinition) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -398,7 +422,7 @@ func (j *jsiiProxy_DataAwsCurReportDefinition) TimeUnit() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/cur_report_definition aws_cur_report_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/cur_report_definition aws_cur_report_definition} Data Source.
 func NewDataAwsCurReportDefinition(scope constructs.Construct, id *string, config *DataAwsCurReportDefinitionConfig) DataAwsCurReportDefinition {
 	_init_.Initialize()
 
@@ -416,7 +440,7 @@ func NewDataAwsCurReportDefinition(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/data-sources/cur_report_definition aws_cur_report_definition} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/cur_report_definition aws_cur_report_definition} Data Source.
 func NewDataAwsCurReportDefinition_Override(d DataAwsCurReportDefinition, scope constructs.Construct, id *string, config *DataAwsCurReportDefinitionConfig) {
 	_init_.Initialize()
 
@@ -491,6 +515,17 @@ func (j *jsiiProxy_DataAwsCurReportDefinition)SetReportName(val *string) {
 	_jsii_.Set(
 		j,
 		"reportName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataAwsCurReportDefinition)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -792,6 +827,14 @@ func (d *jsiiProxy_DataAwsCurReportDefinition) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataAwsCurReportDefinition) ResetTags() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetTags",
 		nil, // no parameters
 	)
 }

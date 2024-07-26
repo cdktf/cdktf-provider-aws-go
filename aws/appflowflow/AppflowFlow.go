@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/appflow_flow aws_appflow_flow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appflow_flow aws_appflow_flow}.
 type AppflowFlow interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -56,6 +56,8 @@ type AppflowFlow interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MetadataCatalogConfig() AppflowFlowMetadataCatalogConfigOutputReference
+	MetadataCatalogConfigInput() *AppflowFlowMetadataCatalogConfig
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -133,12 +135,14 @@ type AppflowFlow interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDestinationFlowConfig(value interface{})
+	PutMetadataCatalogConfig(value *AppflowFlowMetadataCatalogConfig)
 	PutSourceFlowConfig(value *AppflowFlowSourceFlowConfig)
 	PutTask(value interface{})
 	PutTriggerConfig(value *AppflowFlowTriggerConfig)
 	ResetDescription()
 	ResetId()
 	ResetKmsArn()
+	ResetMetadataCatalogConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -352,6 +356,26 @@ func (j *jsiiProxy_AppflowFlow) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
+func (j *jsiiProxy_AppflowFlow) MetadataCatalogConfig() AppflowFlowMetadataCatalogConfigOutputReference {
+	var returns AppflowFlowMetadataCatalogConfigOutputReference
+	_jsii_.Get(
+		j,
+		"metadataCatalogConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowFlow) MetadataCatalogConfigInput() *AppflowFlowMetadataCatalogConfig {
+	var returns *AppflowFlowMetadataCatalogConfig
+	_jsii_.Get(
+		j,
+		"metadataCatalogConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppflowFlow) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -543,7 +567,7 @@ func (j *jsiiProxy_AppflowFlow) TriggerConfigInput() *AppflowFlowTriggerConfig {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/appflow_flow aws_appflow_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appflow_flow aws_appflow_flow} Resource.
 func NewAppflowFlow(scope constructs.Construct, id *string, config *AppflowFlowConfig) AppflowFlow {
 	_init_.Initialize()
 
@@ -561,7 +585,7 @@ func NewAppflowFlow(scope constructs.Construct, id *string, config *AppflowFlowC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/appflow_flow aws_appflow_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appflow_flow aws_appflow_flow} Resource.
 func NewAppflowFlow_Override(a AppflowFlow, scope constructs.Construct, id *string, config *AppflowFlowConfig) {
 	_init_.Initialize()
 
@@ -1070,6 +1094,17 @@ func (a *jsiiProxy_AppflowFlow) PutDestinationFlowConfig(value interface{}) {
 	)
 }
 
+func (a *jsiiProxy_AppflowFlow) PutMetadataCatalogConfig(value *AppflowFlowMetadataCatalogConfig) {
+	if err := a.validatePutMetadataCatalogConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putMetadataCatalogConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppflowFlow) PutSourceFlowConfig(value *AppflowFlowSourceFlowConfig) {
 	if err := a.validatePutSourceFlowConfigParameters(value); err != nil {
 		panic(err)
@@ -1123,6 +1158,14 @@ func (a *jsiiProxy_AppflowFlow) ResetKmsArn() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetKmsArn",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppflowFlow) ResetMetadataCatalogConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetMetadataCatalogConfig",
 		nil, // no parameters
 	)
 }

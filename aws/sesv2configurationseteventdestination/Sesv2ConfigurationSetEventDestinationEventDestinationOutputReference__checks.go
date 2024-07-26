@@ -104,6 +104,17 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputRe
 	return nil
 }
 
+func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) validatePutEventBridgeDestinationParameters(value *Sesv2ConfigurationSetEventDestinationEventDestinationEventBridgeDestination) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationOutputReference) validatePutKinesisFirehoseDestinationParameters(value *Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestination) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

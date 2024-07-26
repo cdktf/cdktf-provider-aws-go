@@ -22,25 +22,25 @@ type SecuritylakeSubscriberConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/securitylake_subscriber#access_type SecuritylakeSubscriber#access_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/securitylake_subscriber#access_type SecuritylakeSubscriber#access_type}.
 	AccessType *string `field:"optional" json:"accessType" yaml:"accessType"`
 	// source block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/securitylake_subscriber#source SecuritylakeSubscriber#source}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/securitylake_subscriber#source SecuritylakeSubscriber#source}
 	Source interface{} `field:"optional" json:"source" yaml:"source"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/securitylake_subscriber#subscriber_description SecuritylakeSubscriber#subscriber_description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/securitylake_subscriber#subscriber_description SecuritylakeSubscriber#subscriber_description}.
 	SubscriberDescription *string `field:"optional" json:"subscriberDescription" yaml:"subscriberDescription"`
 	// subscriber_identity block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/securitylake_subscriber#subscriber_identity SecuritylakeSubscriber#subscriber_identity}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/securitylake_subscriber#subscriber_identity SecuritylakeSubscriber#subscriber_identity}
 	SubscriberIdentity interface{} `field:"optional" json:"subscriberIdentity" yaml:"subscriberIdentity"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/securitylake_subscriber#subscriber_name SecuritylakeSubscriber#subscriber_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/securitylake_subscriber#subscriber_name SecuritylakeSubscriber#subscriber_name}.
 	SubscriberName *string `field:"optional" json:"subscriberName" yaml:"subscriberName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/securitylake_subscriber#tags SecuritylakeSubscriber#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/securitylake_subscriber#tags SecuritylakeSubscriber#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/securitylake_subscriber#timeouts SecuritylakeSubscriber#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/securitylake_subscriber#timeouts SecuritylakeSubscriber#timeouts}
 	Timeouts *SecuritylakeSubscriberTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

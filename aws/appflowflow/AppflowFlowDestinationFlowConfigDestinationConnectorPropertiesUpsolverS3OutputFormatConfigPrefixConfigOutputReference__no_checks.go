@@ -67,6 +67,10 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 	return nil
 }
 
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfigOutputReference) validateSetPrefixHierarchyParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesUpsolverS3OutputFormatConfigPrefixConfigOutputReference) validateSetPrefixTypeParameters(val *string) error {
 	return nil
 }

@@ -79,6 +79,10 @@ func (a *jsiiProxy_AppflowFlow) validatePutDestinationFlowConfigParameters(value
 	return nil
 }
 
+func (a *jsiiProxy_AppflowFlow) validatePutMetadataCatalogConfigParameters(value *AppflowFlowMetadataCatalogConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppflowFlow) validatePutSourceFlowConfigParameters(value *AppflowFlowSourceFlowConfig) error {
 	return nil
 }

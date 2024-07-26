@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/storagegateway_cached_iscsi_volume aws_storagegateway_cached_iscsi_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/storagegateway_cached_iscsi_volume aws_storagegateway_cached_iscsi_volume}.
 type StoragegatewayCachedIscsiVolume interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -623,7 +623,7 @@ func (j *jsiiProxy_StoragegatewayCachedIscsiVolume) VolumeSizeInBytesInput() *fl
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/storagegateway_cached_iscsi_volume aws_storagegateway_cached_iscsi_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/storagegateway_cached_iscsi_volume aws_storagegateway_cached_iscsi_volume} Resource.
 func NewStoragegatewayCachedIscsiVolume(scope constructs.Construct, id *string, config *StoragegatewayCachedIscsiVolumeConfig) StoragegatewayCachedIscsiVolume {
 	_init_.Initialize()
 
@@ -641,7 +641,7 @@ func NewStoragegatewayCachedIscsiVolume(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/storagegateway_cached_iscsi_volume aws_storagegateway_cached_iscsi_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/storagegateway_cached_iscsi_volume aws_storagegateway_cached_iscsi_volume} Resource.
 func NewStoragegatewayCachedIscsiVolume_Override(s StoragegatewayCachedIscsiVolume, scope constructs.Construct, id *string, config *StoragegatewayCachedIscsiVolumeConfig) {
 	_init_.Initialize()
 

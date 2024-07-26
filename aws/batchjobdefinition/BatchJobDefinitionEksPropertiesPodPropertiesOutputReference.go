@@ -38,6 +38,8 @@ type BatchJobDefinitionEksPropertiesPodPropertiesOutputReference interface {
 	HostNetwork() interface{}
 	SetHostNetwork(val interface{})
 	HostNetworkInput() interface{}
+	ImagePullSecret() BatchJobDefinitionEksPropertiesPodPropertiesImagePullSecretList
+	ImagePullSecretInput() interface{}
 	InternalValue() *BatchJobDefinitionEksPropertiesPodProperties
 	SetInternalValue(val *BatchJobDefinitionEksPropertiesPodProperties)
 	Metadata() BatchJobDefinitionEksPropertiesPodPropertiesMetadataOutputReference
@@ -80,10 +82,12 @@ type BatchJobDefinitionEksPropertiesPodPropertiesOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutContainers(value *BatchJobDefinitionEksPropertiesPodPropertiesContainers)
+	PutImagePullSecret(value interface{})
 	PutMetadata(value *BatchJobDefinitionEksPropertiesPodPropertiesMetadata)
 	PutVolumes(value interface{})
 	ResetDnsPolicy()
 	ResetHostNetwork()
+	ResetImagePullSecret()
 	ResetMetadata()
 	ResetServiceAccountName()
 	ResetVolumes()
@@ -197,6 +201,26 @@ func (j *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesOutputReference) 
 	_jsii_.Get(
 		j,
 		"hostNetworkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesOutputReference) ImagePullSecret() BatchJobDefinitionEksPropertiesPodPropertiesImagePullSecretList {
+	var returns BatchJobDefinitionEksPropertiesPodPropertiesImagePullSecretList
+	_jsii_.Get(
+		j,
+		"imagePullSecret",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesOutputReference) ImagePullSecretInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"imagePullSecretInput",
 		&returns,
 	)
 	return returns
@@ -605,6 +629,17 @@ func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesOutputReference) 
 	)
 }
 
+func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesOutputReference) PutImagePullSecret(value interface{}) {
+	if err := b.validatePutImagePullSecretParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putImagePullSecret",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesOutputReference) PutMetadata(value *BatchJobDefinitionEksPropertiesPodPropertiesMetadata) {
 	if err := b.validatePutMetadataParameters(value); err != nil {
 		panic(err)
@@ -639,6 +674,14 @@ func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesOutputReference) 
 	_jsii_.InvokeVoid(
 		b,
 		"resetHostNetwork",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesOutputReference) ResetImagePullSecret() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetImagePullSecret",
 		nil, // no parameters
 	)
 }

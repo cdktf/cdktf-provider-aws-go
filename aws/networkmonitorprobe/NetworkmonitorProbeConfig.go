@@ -22,19 +22,19 @@ type NetworkmonitorProbeConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/networkmonitor_probe#destination NetworkmonitorProbe#destination}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/networkmonitor_probe#destination NetworkmonitorProbe#destination}.
 	Destination *string `field:"required" json:"destination" yaml:"destination"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/networkmonitor_probe#monitor_name NetworkmonitorProbe#monitor_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/networkmonitor_probe#monitor_name NetworkmonitorProbe#monitor_name}.
 	MonitorName *string `field:"required" json:"monitorName" yaml:"monitorName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/networkmonitor_probe#protocol NetworkmonitorProbe#protocol}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/networkmonitor_probe#protocol NetworkmonitorProbe#protocol}.
 	Protocol *string `field:"required" json:"protocol" yaml:"protocol"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/networkmonitor_probe#source_arn NetworkmonitorProbe#source_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/networkmonitor_probe#source_arn NetworkmonitorProbe#source_arn}.
 	SourceArn *string `field:"required" json:"sourceArn" yaml:"sourceArn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/networkmonitor_probe#destination_port NetworkmonitorProbe#destination_port}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/networkmonitor_probe#destination_port NetworkmonitorProbe#destination_port}.
 	DestinationPort *float64 `field:"optional" json:"destinationPort" yaml:"destinationPort"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/networkmonitor_probe#packet_size NetworkmonitorProbe#packet_size}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/networkmonitor_probe#packet_size NetworkmonitorProbe#packet_size}.
 	PacketSize *float64 `field:"optional" json:"packetSize" yaml:"packetSize"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/networkmonitor_probe#tags NetworkmonitorProbe#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/networkmonitor_probe#tags NetworkmonitorProbe#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
 }
 

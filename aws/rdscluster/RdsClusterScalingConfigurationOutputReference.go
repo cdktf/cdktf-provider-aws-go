@@ -41,6 +41,9 @@ type RdsClusterScalingConfigurationOutputReference interface {
 	MinCapacity() *float64
 	SetMinCapacity(val *float64)
 	MinCapacityInput() *float64
+	SecondsBeforeTimeout() *float64
+	SetSecondsBeforeTimeout(val *float64)
+	SecondsBeforeTimeoutInput() *float64
 	SecondsUntilAutoPause() *float64
 	SetSecondsUntilAutoPause(val *float64)
 	SecondsUntilAutoPauseInput() *float64
@@ -82,6 +85,7 @@ type RdsClusterScalingConfigurationOutputReference interface {
 	ResetAutoPause()
 	ResetMaxCapacity()
 	ResetMinCapacity()
+	ResetSecondsBeforeTimeout()
 	ResetSecondsUntilAutoPause()
 	ResetTimeoutAction()
 	// Produce the Token's value at resolution time.
@@ -204,6 +208,26 @@ func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) MinCapacityInp
 	_jsii_.Get(
 		j,
 		"minCapacityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) SecondsBeforeTimeout() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"secondsBeforeTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) SecondsBeforeTimeoutInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"secondsBeforeTimeoutInput",
 		&returns,
 	)
 	return returns
@@ -359,6 +383,17 @@ func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference)SetMinCapacity(
 	_jsii_.Set(
 		j,
 		"minCapacity",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference)SetSecondsBeforeTimeout(val *float64) {
+	if err := j.validateSetSecondsBeforeTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secondsBeforeTimeout",
 		val,
 	)
 }
@@ -613,6 +648,14 @@ func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) ResetMinCapaci
 	_jsii_.InvokeVoid(
 		r,
 		"resetMinCapacity",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsClusterScalingConfigurationOutputReference) ResetSecondsBeforeTimeout() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSecondsBeforeTimeout",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/cur_report_definition aws_cur_report_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/cur_report_definition aws_cur_report_definition}.
 type CurReportDefinition interface {
 	cdktf.TerraformResource
 	AdditionalArtifacts() *[]*string
@@ -89,6 +89,12 @@ type CurReportDefinition interface {
 	S3Region() *string
 	SetS3Region(val *string)
 	S3RegionInput() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsAll() *map[string]*string
+	SetTagsAll(val *map[string]*string)
+	TagsAllInput() *map[string]*string
+	TagsInput() *map[string]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -149,6 +155,8 @@ type CurReportDefinition interface {
 	ResetRefreshClosedReports()
 	ResetReportVersioning()
 	ResetS3Prefix()
+	ResetTags()
+	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -527,6 +535,46 @@ func (j *jsiiProxy_CurReportDefinition) S3RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_CurReportDefinition) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurReportDefinition) TagsAll() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAll",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurReportDefinition) TagsAllInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsAllInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CurReportDefinition) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CurReportDefinition) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -578,7 +626,7 @@ func (j *jsiiProxy_CurReportDefinition) TimeUnitInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/cur_report_definition aws_cur_report_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/cur_report_definition aws_cur_report_definition} Resource.
 func NewCurReportDefinition(scope constructs.Construct, id *string, config *CurReportDefinitionConfig) CurReportDefinition {
 	_init_.Initialize()
 
@@ -596,7 +644,7 @@ func NewCurReportDefinition(scope constructs.Construct, id *string, config *CurR
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/cur_report_definition aws_cur_report_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/cur_report_definition aws_cur_report_definition} Resource.
 func NewCurReportDefinition_Override(c CurReportDefinition, scope constructs.Construct, id *string, config *CurReportDefinitionConfig) {
 	_init_.Initialize()
 
@@ -792,6 +840,28 @@ func (j *jsiiProxy_CurReportDefinition)SetS3Region(val *string) {
 	_jsii_.Set(
 		j,
 		"s3Region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CurReportDefinition)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CurReportDefinition)SetTagsAll(val *map[string]*string) {
+	if err := j.validateSetTagsAllParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tagsAll",
 		val,
 	)
 }
@@ -1204,6 +1274,22 @@ func (c *jsiiProxy_CurReportDefinition) ResetS3Prefix() {
 	_jsii_.InvokeVoid(
 		c,
 		"resetS3Prefix",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CurReportDefinition) ResetTags() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CurReportDefinition) ResetTagsAll() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetTagsAll",
 		nil, // no parameters
 	)
 }

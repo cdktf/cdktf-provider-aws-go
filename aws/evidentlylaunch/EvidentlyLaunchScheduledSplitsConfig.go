@@ -7,7 +7,7 @@ package evidentlylaunch
 type EvidentlyLaunchScheduledSplitsConfig struct {
 	// steps block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/evidently_launch#steps EvidentlyLaunch#steps}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/evidently_launch#steps EvidentlyLaunch#steps}
 	Steps interface{} `field:"required" json:"steps" yaml:"steps"`
 }
 

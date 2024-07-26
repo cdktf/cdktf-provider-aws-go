@@ -135,6 +135,10 @@ func (j *jsiiProxy_DbSnapshotCopy) validateSetProvisionersParameters(val *[]inte
 	return nil
 }
 
+func (j *jsiiProxy_DbSnapshotCopy) validateSetSharedAccountsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbSnapshotCopy) validateSetSourceDbSnapshotIdentifierParameters(val *string) error {
 	return nil
 }

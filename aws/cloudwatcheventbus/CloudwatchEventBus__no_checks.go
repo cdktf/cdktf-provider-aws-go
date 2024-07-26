@@ -107,6 +107,10 @@ func (j *jsiiProxy_CloudwatchEventBus) validateSetIdParameters(val *string) erro
 	return nil
 }
 
+func (j *jsiiProxy_CloudwatchEventBus) validateSetKmsKeyIdentifierParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_CloudwatchEventBus) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

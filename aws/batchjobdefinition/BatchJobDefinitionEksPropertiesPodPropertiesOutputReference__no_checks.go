@@ -51,6 +51,10 @@ func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesOutputReference) 
 	return nil
 }
 
+func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesOutputReference) validatePutImagePullSecretParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BatchJobDefinitionEksPropertiesPodPropertiesOutputReference) validatePutMetadataParameters(value *BatchJobDefinitionEksPropertiesPodPropertiesMetadata) error {
 	return nil
 }

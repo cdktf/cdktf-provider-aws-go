@@ -238,6 +238,17 @@ func (a *jsiiProxy_AppflowFlow) validatePutDestinationFlowConfigParameters(value
 	return nil
 }
 
+func (a *jsiiProxy_AppflowFlow) validatePutMetadataCatalogConfigParameters(value *AppflowFlowMetadataCatalogConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (a *jsiiProxy_AppflowFlow) validatePutSourceFlowConfigParameters(value *AppflowFlowSourceFlowConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -35,6 +35,9 @@ type AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFor
 	PrefixFormat() *string
 	SetPrefixFormat(val *string)
 	PrefixFormatInput() *string
+	PrefixHierarchy() *[]*string
+	SetPrefixHierarchy(val *[]*string)
+	PrefixHierarchyInput() *[]*string
 	PrefixType() *string
 	SetPrefixType(val *string)
 	PrefixTypeInput() *string
@@ -71,6 +74,7 @@ type AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFor
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetPrefixFormat()
+	ResetPrefixHierarchy()
 	ResetPrefixType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,6 +156,26 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 	_jsii_.Get(
 		j,
 		"prefixFormatInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfigOutputReference) PrefixHierarchy() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"prefixHierarchy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfigOutputReference) PrefixHierarchyInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"prefixHierarchyInput",
 		&returns,
 	)
 	return returns
@@ -265,6 +289,17 @@ func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 	_jsii_.Set(
 		j,
 		"prefixFormat",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfigOutputReference)SetPrefixHierarchy(val *[]*string) {
+	if err := j.validateSetPrefixHierarchyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"prefixHierarchy",
 		val,
 	)
 }
@@ -492,6 +527,14 @@ func (a *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertie
 	_jsii_.InvokeVoid(
 		a,
 		"resetPrefixFormat",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppflowFlowDestinationFlowConfigDestinationConnectorPropertiesS3S3OutputFormatConfigPrefixConfigOutputReference) ResetPrefixHierarchy() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetPrefixHierarchy",
 		nil, // no parameters
 	)
 }

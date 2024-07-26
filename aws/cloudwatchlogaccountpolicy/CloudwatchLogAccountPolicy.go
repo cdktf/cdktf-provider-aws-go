@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/cloudwatch_log_account_policy aws_cloudwatch_log_account_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/cloudwatch_log_account_policy aws_cloudwatch_log_account_policy}.
 type CloudwatchLogAccountPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_CloudwatchLogAccountPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/cloudwatch_log_account_policy aws_cloudwatch_log_account_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/cloudwatch_log_account_policy aws_cloudwatch_log_account_policy} Resource.
 func NewCloudwatchLogAccountPolicy(scope constructs.Construct, id *string, config *CloudwatchLogAccountPolicyConfig) CloudwatchLogAccountPolicy {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewCloudwatchLogAccountPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.59.0/docs/resources/cloudwatch_log_account_policy aws_cloudwatch_log_account_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/cloudwatch_log_account_policy aws_cloudwatch_log_account_policy} Resource.
 func NewCloudwatchLogAccountPolicy_Override(c CloudwatchLogAccountPolicy, scope constructs.Construct, id *string, config *CloudwatchLogAccountPolicyConfig) {
 	_init_.Initialize()
 

@@ -210,6 +210,14 @@ func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) validateSetMin
 	return nil
 }
 
+func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) validateSetSecondsBeforeTimeoutParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_RdsClusterScalingConfigurationOutputReference) validateSetSecondsUntilAutoPauseParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
