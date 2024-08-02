@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/vpc_ipv6_cidr_block_association aws_vpc_ipv6_cidr_block_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/vpc_ipv6_cidr_block_association aws_vpc_ipv6_cidr_block_association}.
 type VpcIpv6CidrBlockAssociation interface {
 	cdktf.TerraformResource
+	AssignGeneratedIpv6CidrBlock() interface{}
+	SetAssignGeneratedIpv6CidrBlock(val interface{})
+	AssignGeneratedIpv6CidrBlockInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -51,6 +54,9 @@ type VpcIpv6CidrBlockAssociation interface {
 	Ipv6NetmaskLength() *float64
 	SetIpv6NetmaskLength(val *float64)
 	Ipv6NetmaskLengthInput() *float64
+	Ipv6Pool() *string
+	SetIpv6Pool(val *string)
+	Ipv6PoolInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -122,9 +128,12 @@ type VpcIpv6CidrBlockAssociation interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *VpcIpv6CidrBlockAssociationTimeouts)
+	ResetAssignGeneratedIpv6CidrBlock()
 	ResetId()
 	ResetIpv6CidrBlock()
+	ResetIpv6IpamPoolId()
 	ResetIpv6NetmaskLength()
+	ResetIpv6Pool()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -145,6 +154,26 @@ type VpcIpv6CidrBlockAssociation interface {
 // The jsii proxy struct for VpcIpv6CidrBlockAssociation
 type jsiiProxy_VpcIpv6CidrBlockAssociation struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) AssignGeneratedIpv6CidrBlock() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"assignGeneratedIpv6CidrBlock",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) AssignGeneratedIpv6CidrBlockInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"assignGeneratedIpv6CidrBlockInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) CdktfStack() cdktf.TerraformStack {
@@ -307,6 +336,26 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) Ipv6NetmaskLengthInput() *float6
 	return returns
 }
 
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) Ipv6Pool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6Pool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) Ipv6PoolInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6PoolInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -428,7 +477,7 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/vpc_ipv6_cidr_block_association aws_vpc_ipv6_cidr_block_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/vpc_ipv6_cidr_block_association aws_vpc_ipv6_cidr_block_association} Resource.
 func NewVpcIpv6CidrBlockAssociation(scope constructs.Construct, id *string, config *VpcIpv6CidrBlockAssociationConfig) VpcIpv6CidrBlockAssociation {
 	_init_.Initialize()
 
@@ -446,7 +495,7 @@ func NewVpcIpv6CidrBlockAssociation(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/vpc_ipv6_cidr_block_association aws_vpc_ipv6_cidr_block_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/vpc_ipv6_cidr_block_association aws_vpc_ipv6_cidr_block_association} Resource.
 func NewVpcIpv6CidrBlockAssociation_Override(v VpcIpv6CidrBlockAssociation, scope constructs.Construct, id *string, config *VpcIpv6CidrBlockAssociationConfig) {
 	_init_.Initialize()
 
@@ -454,6 +503,17 @@ func NewVpcIpv6CidrBlockAssociation_Override(v VpcIpv6CidrBlockAssociation, scop
 		"@cdktf/provider-aws.vpcIpv6CidrBlockAssociation.VpcIpv6CidrBlockAssociation",
 		[]interface{}{scope, id, config},
 		v,
+	)
+}
+
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetAssignGeneratedIpv6CidrBlock(val interface{}) {
+	if err := j.validateSetAssignGeneratedIpv6CidrBlockParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"assignGeneratedIpv6CidrBlock",
+		val,
 	)
 }
 
@@ -535,6 +595,17 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetIpv6NetmaskLength(val *float64
 	_jsii_.Set(
 		j,
 		"ipv6NetmaskLength",
+		val,
+	)
+}
+
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation)SetIpv6Pool(val *string) {
+	if err := j.validateSetIpv6PoolParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Pool",
 		val,
 	)
 }
@@ -944,6 +1015,14 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) PutTimeouts(value *VpcIpv6CidrBl
 	)
 }
 
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) ResetAssignGeneratedIpv6CidrBlock() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetAssignGeneratedIpv6CidrBlock",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) ResetId() {
 	_jsii_.InvokeVoid(
 		v,
@@ -960,10 +1039,26 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) ResetIpv6CidrBlock() {
 	)
 }
 
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) ResetIpv6IpamPoolId() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetIpv6IpamPoolId",
+		nil, // no parameters
+	)
+}
+
 func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) ResetIpv6NetmaskLength() {
 	_jsii_.InvokeVoid(
 		v,
 		"resetIpv6NetmaskLength",
+		nil, // no parameters
+	)
+}
+
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) ResetIpv6Pool() {
+	_jsii_.InvokeVoid(
+		v,
+		"resetIpv6Pool",
 		nil, // no parameters
 	)
 }

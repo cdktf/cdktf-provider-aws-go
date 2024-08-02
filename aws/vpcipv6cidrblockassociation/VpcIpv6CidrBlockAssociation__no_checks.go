@@ -95,6 +95,10 @@ func validateVpcIpv6CidrBlockAssociation_IsTerraformResourceParameters(x interfa
 	return nil
 }
 
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) validateSetAssignGeneratedIpv6CidrBlockParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -116,6 +120,10 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) validateSetIpv6IpamPoolIdParamet
 }
 
 func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) validateSetIpv6NetmaskLengthParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) validateSetIpv6PoolParameters(val *string) error {
 	return nil
 }
 

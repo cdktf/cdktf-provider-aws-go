@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/eks_cluster aws_eks_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/eks_cluster aws_eks_cluster}.
 type EksCluster interface {
 	cdktf.TerraformResource
 	AccessConfig() EksClusterAccessConfigOutputReference
@@ -100,6 +100,8 @@ type EksCluster interface {
 	TerraformResourceType() *string
 	Timeouts() EksClusterTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	UpgradePolicy() EksClusterUpgradePolicyOutputReference
+	UpgradePolicyInput() *EksClusterUpgradePolicy
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
@@ -153,6 +155,7 @@ type EksCluster interface {
 	PutKubernetesNetworkConfig(value *EksClusterKubernetesNetworkConfig)
 	PutOutpostConfig(value *EksClusterOutpostConfig)
 	PutTimeouts(value *EksClusterTimeouts)
+	PutUpgradePolicy(value *EksClusterUpgradePolicy)
 	PutVpcConfig(value *EksClusterVpcConfig)
 	ResetAccessConfig()
 	ResetBootstrapSelfManagedAddons()
@@ -167,6 +170,7 @@ type EksCluster interface {
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
+	ResetUpgradePolicy()
 	ResetVersion()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -666,6 +670,26 @@ func (j *jsiiProxy_EksCluster) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_EksCluster) UpgradePolicy() EksClusterUpgradePolicyOutputReference {
+	var returns EksClusterUpgradePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"upgradePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EksCluster) UpgradePolicyInput() *EksClusterUpgradePolicy {
+	var returns *EksClusterUpgradePolicy
+	_jsii_.Get(
+		j,
+		"upgradePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_EksCluster) Version() *string {
 	var returns *string
 	_jsii_.Get(
@@ -707,7 +731,7 @@ func (j *jsiiProxy_EksCluster) VpcConfigInput() *EksClusterVpcConfig {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
 func NewEksCluster(scope constructs.Construct, id *string, config *EksClusterConfig) EksCluster {
 	_init_.Initialize()
 
@@ -725,7 +749,7 @@ func NewEksCluster(scope constructs.Construct, id *string, config *EksClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/eks_cluster aws_eks_cluster} Resource.
 func NewEksCluster_Override(e EksCluster, scope constructs.Construct, id *string, config *EksClusterConfig) {
 	_init_.Initialize()
 
@@ -1300,6 +1324,17 @@ func (e *jsiiProxy_EksCluster) PutTimeouts(value *EksClusterTimeouts) {
 	)
 }
 
+func (e *jsiiProxy_EksCluster) PutUpgradePolicy(value *EksClusterUpgradePolicy) {
+	if err := e.validatePutUpgradePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putUpgradePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_EksCluster) PutVpcConfig(value *EksClusterVpcConfig) {
 	if err := e.validatePutVpcConfigParameters(value); err != nil {
 		panic(err)
@@ -1395,6 +1430,14 @@ func (e *jsiiProxy_EksCluster) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EksCluster) ResetUpgradePolicy() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetUpgradePolicy",
 		nil, // no parameters
 	)
 }

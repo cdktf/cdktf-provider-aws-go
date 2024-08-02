@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/ssoadmin_application_providers aws_ssoadmin_application_providers}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/ssoadmin_application_providers aws_ssoadmin_application_providers}.
 type DataAwsSsoadminApplicationProviders interface {
 	cdktf.TerraformDataSource
 	ApplicationProviders() DataAwsSsoadminApplicationProvidersApplicationProvidersList
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DataAwsSsoadminApplicationProviders) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/ssoadmin_application_providers aws_ssoadmin_application_providers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/ssoadmin_application_providers aws_ssoadmin_application_providers} Data Source.
 func NewDataAwsSsoadminApplicationProviders(scope constructs.Construct, id *string, config *DataAwsSsoadminApplicationProvidersConfig) DataAwsSsoadminApplicationProviders {
 	_init_.Initialize()
 
@@ -294,7 +294,7 @@ func NewDataAwsSsoadminApplicationProviders(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/ssoadmin_application_providers aws_ssoadmin_application_providers} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/ssoadmin_application_providers aws_ssoadmin_application_providers} Data Source.
 func NewDataAwsSsoadminApplicationProviders_Override(d DataAwsSsoadminApplicationProviders, scope constructs.Construct, id *string, config *DataAwsSsoadminApplicationProvidersConfig) {
 	_init_.Initialize()
 

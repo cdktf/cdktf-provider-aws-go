@@ -5,7 +5,7 @@ package lexv2modelsslot
 
 
 type Lexv2ModelsSlotValueElicitationSettingPromptSpecificationMessageGroupVariationCustomPayload struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/lexv2models_slot#value Lexv2ModelsSlot#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

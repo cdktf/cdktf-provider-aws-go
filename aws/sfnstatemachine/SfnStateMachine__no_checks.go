@@ -75,6 +75,10 @@ func (s *jsiiProxy_SfnStateMachine) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
+func (s *jsiiProxy_SfnStateMachine) validatePutEncryptionConfigurationParameters(value *SfnStateMachineEncryptionConfiguration) error {
+	return nil
+}
+
 func (s *jsiiProxy_SfnStateMachine) validatePutLoggingConfigurationParameters(value *SfnStateMachineLoggingConfiguration) error {
 	return nil
 }

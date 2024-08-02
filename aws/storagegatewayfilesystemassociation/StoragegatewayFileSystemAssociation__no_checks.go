@@ -79,6 +79,10 @@ func (s *jsiiProxy_StoragegatewayFileSystemAssociation) validatePutCacheAttribut
 	return nil
 }
 
+func (s *jsiiProxy_StoragegatewayFileSystemAssociation) validatePutTimeoutsParameters(value *StoragegatewayFileSystemAssociationTimeouts) error {
+	return nil
+}
+
 func validateStoragegatewayFileSystemAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

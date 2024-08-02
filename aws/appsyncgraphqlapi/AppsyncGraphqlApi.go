@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api}.
 type AppsyncGraphqlApi interface {
 	cdktf.TerraformResource
 	AdditionalAuthenticationProvider() AppsyncGraphqlApiAdditionalAuthenticationProviderList
@@ -37,6 +37,8 @@ type AppsyncGraphqlApi interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EnhancedMetricsConfig() AppsyncGraphqlApiEnhancedMetricsConfigOutputReference
+	EnhancedMetricsConfigInput() *AppsyncGraphqlApiEnhancedMetricsConfig
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -150,11 +152,13 @@ type AppsyncGraphqlApi interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAdditionalAuthenticationProvider(value interface{})
+	PutEnhancedMetricsConfig(value *AppsyncGraphqlApiEnhancedMetricsConfig)
 	PutLambdaAuthorizerConfig(value *AppsyncGraphqlApiLambdaAuthorizerConfig)
 	PutLogConfig(value *AppsyncGraphqlApiLogConfig)
 	PutOpenidConnectConfig(value *AppsyncGraphqlApiOpenidConnectConfig)
 	PutUserPoolConfig(value *AppsyncGraphqlApiUserPoolConfig)
 	ResetAdditionalAuthenticationProvider()
+	ResetEnhancedMetricsConfig()
 	ResetId()
 	ResetIntrospectionConfig()
 	ResetLambdaAuthorizerConfig()
@@ -284,6 +288,26 @@ func (j *jsiiProxy_AppsyncGraphqlApi) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi) EnhancedMetricsConfig() AppsyncGraphqlApiEnhancedMetricsConfigOutputReference {
+	var returns AppsyncGraphqlApiEnhancedMetricsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"enhancedMetricsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppsyncGraphqlApi) EnhancedMetricsConfigInput() *AppsyncGraphqlApiEnhancedMetricsConfig {
+	var returns *AppsyncGraphqlApiEnhancedMetricsConfig
+	_jsii_.Get(
+		j,
+		"enhancedMetricsConfigInput",
 		&returns,
 	)
 	return returns
@@ -690,7 +714,7 @@ func (j *jsiiProxy_AppsyncGraphqlApi) XrayEnabledInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
 func NewAppsyncGraphqlApi(scope constructs.Construct, id *string, config *AppsyncGraphqlApiConfig) AppsyncGraphqlApi {
 	_init_.Initialize()
 
@@ -708,7 +732,7 @@ func NewAppsyncGraphqlApi(scope constructs.Construct, id *string, config *Appsyn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appsync_graphql_api aws_appsync_graphql_api} Resource.
 func NewAppsyncGraphqlApi_Override(a AppsyncGraphqlApi, scope constructs.Construct, id *string, config *AppsyncGraphqlApiConfig) {
 	_init_.Initialize()
 
@@ -1272,6 +1296,17 @@ func (a *jsiiProxy_AppsyncGraphqlApi) PutAdditionalAuthenticationProvider(value 
 	)
 }
 
+func (a *jsiiProxy_AppsyncGraphqlApi) PutEnhancedMetricsConfig(value *AppsyncGraphqlApiEnhancedMetricsConfig) {
+	if err := a.validatePutEnhancedMetricsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putEnhancedMetricsConfig",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppsyncGraphqlApi) PutLambdaAuthorizerConfig(value *AppsyncGraphqlApiLambdaAuthorizerConfig) {
 	if err := a.validatePutLambdaAuthorizerConfigParameters(value); err != nil {
 		panic(err)
@@ -1320,6 +1355,14 @@ func (a *jsiiProxy_AppsyncGraphqlApi) ResetAdditionalAuthenticationProvider() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetAdditionalAuthenticationProvider",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppsyncGraphqlApi) ResetEnhancedMetricsConfig() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetEnhancedMetricsConfig",
 		nil, // no parameters
 	)
 }

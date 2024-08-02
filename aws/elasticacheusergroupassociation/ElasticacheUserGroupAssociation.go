@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/elasticache_user_group_association aws_elasticache_user_group_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/elasticache_user_group_association aws_elasticache_user_group_association}.
 type ElasticacheUserGroupAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,8 @@ type ElasticacheUserGroupAssociation interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() ElasticacheUserGroupAssociationTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	UserGroupId() *string
 	SetUserGroupId(val *string)
 	UserGroupIdInput() *string
@@ -113,10 +115,12 @@ type ElasticacheUserGroupAssociation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *ElasticacheUserGroupAssociationTimeouts)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -315,6 +319,26 @@ func (j *jsiiProxy_ElasticacheUserGroupAssociation) TerraformResourceType() *str
 	return returns
 }
 
+func (j *jsiiProxy_ElasticacheUserGroupAssociation) Timeouts() ElasticacheUserGroupAssociationTimeoutsOutputReference {
+	var returns ElasticacheUserGroupAssociationTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticacheUserGroupAssociation) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElasticacheUserGroupAssociation) UserGroupId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -356,7 +380,7 @@ func (j *jsiiProxy_ElasticacheUserGroupAssociation) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/elasticache_user_group_association aws_elasticache_user_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/elasticache_user_group_association aws_elasticache_user_group_association} Resource.
 func NewElasticacheUserGroupAssociation(scope constructs.Construct, id *string, config *ElasticacheUserGroupAssociationConfig) ElasticacheUserGroupAssociation {
 	_init_.Initialize()
 
@@ -374,7 +398,7 @@ func NewElasticacheUserGroupAssociation(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/elasticache_user_group_association aws_elasticache_user_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/elasticache_user_group_association aws_elasticache_user_group_association} Resource.
 func NewElasticacheUserGroupAssociation_Override(e ElasticacheUserGroupAssociation, scope constructs.Construct, id *string, config *ElasticacheUserGroupAssociationConfig) {
 	_init_.Initialize()
 
@@ -839,6 +863,17 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) OverrideLogicalId(newLogical
 	)
 }
 
+func (e *jsiiProxy_ElasticacheUserGroupAssociation) PutTimeouts(value *ElasticacheUserGroupAssociationTimeouts) {
+	if err := e.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		e,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (e *jsiiProxy_ElasticacheUserGroupAssociation) ResetId() {
 	_jsii_.InvokeVoid(
 		e,
@@ -851,6 +886,14 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElasticacheUserGroupAssociation) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

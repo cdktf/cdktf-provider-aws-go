@@ -287,6 +287,18 @@ func (j *jsiiProxy_RdsCluster) validateSetNetworkTypeParameters(val *string) err
 	return nil
 }
 
+func (j *jsiiProxy_RdsCluster) validateSetPerformanceInsightsEnabledParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_RdsCluster) validateSetPerformanceInsightsKmsKeyIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_RdsCluster) validateSetPerformanceInsightsRetentionPeriodParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsCluster) validateSetPortParameters(val *float64) error {
 	return nil
 }

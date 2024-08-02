@@ -34,6 +34,9 @@ type PipesPipeLogConfigurationOutputReference interface {
 	FirehoseLogDestinationInput() *PipesPipeLogConfigurationFirehoseLogDestination
 	// Experimental.
 	Fqn() *string
+	IncludeExecutionData() *[]*string
+	SetIncludeExecutionData(val *[]*string)
+	IncludeExecutionDataInput() *[]*string
 	InternalValue() *PipesPipeLogConfiguration
 	SetInternalValue(val *PipesPipeLogConfiguration)
 	Level() *string
@@ -78,6 +81,7 @@ type PipesPipeLogConfigurationOutputReference interface {
 	PutS3LogDestination(value *PipesPipeLogConfigurationS3LogDestination)
 	ResetCloudwatchLogsLogDestination()
 	ResetFirehoseLogDestination()
+	ResetIncludeExecutionData()
 	ResetS3LogDestination()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -169,6 +173,26 @@ func (j *jsiiProxy_PipesPipeLogConfigurationOutputReference) Fqn() *string {
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeLogConfigurationOutputReference) IncludeExecutionData() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeExecutionData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PipesPipeLogConfigurationOutputReference) IncludeExecutionDataInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeExecutionDataInput",
 		&returns,
 	)
 	return returns
@@ -290,6 +314,17 @@ func (j *jsiiProxy_PipesPipeLogConfigurationOutputReference)SetComplexObjectIsFr
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PipesPipeLogConfigurationOutputReference)SetIncludeExecutionData(val *[]*string) {
+	if err := j.validateSetIncludeExecutionDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeExecutionData",
 		val,
 	)
 }
@@ -569,6 +604,14 @@ func (p *jsiiProxy_PipesPipeLogConfigurationOutputReference) ResetFirehoseLogDes
 	_jsii_.InvokeVoid(
 		p,
 		"resetFirehoseLogDestination",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PipesPipeLogConfigurationOutputReference) ResetIncludeExecutionData() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetIncludeExecutionData",
 		nil, // no parameters
 	)
 }

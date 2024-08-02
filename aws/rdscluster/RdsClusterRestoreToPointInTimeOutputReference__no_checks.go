@@ -75,6 +75,10 @@ func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) validateSetSou
 	return nil
 }
 
+func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) validateSetSourceClusterResourceIdParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

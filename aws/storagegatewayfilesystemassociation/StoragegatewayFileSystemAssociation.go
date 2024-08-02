@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/storagegateway_file_system_association aws_storagegateway_file_system_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/storagegateway_file_system_association aws_storagegateway_file_system_association}.
 type StoragegatewayFileSystemAssociation interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -85,6 +85,8 @@ type StoragegatewayFileSystemAssociation interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() StoragegatewayFileSystemAssociationTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
@@ -132,6 +134,7 @@ type StoragegatewayFileSystemAssociation interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCacheAttributes(value *StoragegatewayFileSystemAssociationCacheAttributes)
+	PutTimeouts(value *StoragegatewayFileSystemAssociationTimeouts)
 	ResetAuditDestinationArn()
 	ResetCacheAttributes()
 	ResetId()
@@ -140,6 +143,7 @@ type StoragegatewayFileSystemAssociation interface {
 	ResetOverrideLogicalId()
 	ResetTags()
 	ResetTagsAll()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -488,6 +492,26 @@ func (j *jsiiProxy_StoragegatewayFileSystemAssociation) TerraformResourceType() 
 	return returns
 }
 
+func (j *jsiiProxy_StoragegatewayFileSystemAssociation) Timeouts() StoragegatewayFileSystemAssociationTimeoutsOutputReference {
+	var returns StoragegatewayFileSystemAssociationTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_StoragegatewayFileSystemAssociation) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_StoragegatewayFileSystemAssociation) Username() *string {
 	var returns *string
 	_jsii_.Get(
@@ -509,7 +533,7 @@ func (j *jsiiProxy_StoragegatewayFileSystemAssociation) UsernameInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/storagegateway_file_system_association aws_storagegateway_file_system_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/storagegateway_file_system_association aws_storagegateway_file_system_association} Resource.
 func NewStoragegatewayFileSystemAssociation(scope constructs.Construct, id *string, config *StoragegatewayFileSystemAssociationConfig) StoragegatewayFileSystemAssociation {
 	_init_.Initialize()
 
@@ -527,7 +551,7 @@ func NewStoragegatewayFileSystemAssociation(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/storagegateway_file_system_association aws_storagegateway_file_system_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/storagegateway_file_system_association aws_storagegateway_file_system_association} Resource.
 func NewStoragegatewayFileSystemAssociation_Override(s StoragegatewayFileSystemAssociation, scope constructs.Construct, id *string, config *StoragegatewayFileSystemAssociationConfig) {
 	_init_.Initialize()
 
@@ -1058,6 +1082,17 @@ func (s *jsiiProxy_StoragegatewayFileSystemAssociation) PutCacheAttributes(value
 	)
 }
 
+func (s *jsiiProxy_StoragegatewayFileSystemAssociation) PutTimeouts(value *StoragegatewayFileSystemAssociationTimeouts) {
+	if err := s.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_StoragegatewayFileSystemAssociation) ResetAuditDestinationArn() {
 	_jsii_.InvokeVoid(
 		s,
@@ -1102,6 +1137,14 @@ func (s *jsiiProxy_StoragegatewayFileSystemAssociation) ResetTagsAll() {
 	_jsii_.InvokeVoid(
 		s,
 		"resetTagsAll",
+		nil, // no parameters
+	)
+}
+
+func (s *jsiiProxy_StoragegatewayFileSystemAssociation) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

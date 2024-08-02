@@ -24,11 +24,11 @@ type SagemakerDeviceConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// device block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/sagemaker_device#device SagemakerDevice#device}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/sagemaker_device#device SagemakerDevice#device}
 	Device *SagemakerDeviceDevice `field:"required" json:"device" yaml:"device"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/sagemaker_device#device_fleet_name SagemakerDevice#device_fleet_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/sagemaker_device#device_fleet_name SagemakerDevice#device_fleet_name}.
 	DeviceFleetName *string `field:"required" json:"deviceFleetName" yaml:"deviceFleetName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/sagemaker_device#id SagemakerDevice#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/sagemaker_device#id SagemakerDevice#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

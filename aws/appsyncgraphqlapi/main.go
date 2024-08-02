@@ -26,6 +26,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
 			_jsii_.MemberProperty{JsiiProperty: "dependsOn", GoGetter: "DependsOn"},
+			_jsii_.MemberProperty{JsiiProperty: "enhancedMetricsConfig", GoGetter: "EnhancedMetricsConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "enhancedMetricsConfigInput", GoGetter: "EnhancedMetricsConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "forEach", GoGetter: "ForEach"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "friendlyUniqueId", GoGetter: "FriendlyUniqueId"},
@@ -62,6 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putAdditionalAuthenticationProvider", GoMethod: "PutAdditionalAuthenticationProvider"},
+			_jsii_.MemberMethod{JsiiMethod: "putEnhancedMetricsConfig", GoMethod: "PutEnhancedMetricsConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putLambdaAuthorizerConfig", GoMethod: "PutLambdaAuthorizerConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putLogConfig", GoMethod: "PutLogConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putOpenidConnectConfig", GoMethod: "PutOpenidConnectConfig"},
@@ -70,6 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "queryDepthLimitInput", GoGetter: "QueryDepthLimitInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdditionalAuthenticationProvider", GoMethod: "ResetAdditionalAuthenticationProvider"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnhancedMetricsConfig", GoMethod: "ResetEnhancedMetricsConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIntrospectionConfig", GoMethod: "ResetIntrospectionConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLambdaAuthorizerConfig", GoMethod: "ResetLambdaAuthorizerConfig"},
@@ -325,6 +329,48 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiConfig",
 		reflect.TypeOf((*AppsyncGraphqlApiConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiEnhancedMetricsConfig",
+		reflect.TypeOf((*AppsyncGraphqlApiEnhancedMetricsConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiEnhancedMetricsConfigOutputReference",
+		reflect.TypeOf((*AppsyncGraphqlApiEnhancedMetricsConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dataSourceLevelMetricsBehavior", GoGetter: "DataSourceLevelMetricsBehavior"},
+			_jsii_.MemberProperty{JsiiProperty: "dataSourceLevelMetricsBehaviorInput", GoGetter: "DataSourceLevelMetricsBehaviorInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "operationLevelMetricsConfig", GoGetter: "OperationLevelMetricsConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "operationLevelMetricsConfigInput", GoGetter: "OperationLevelMetricsConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "resolverLevelMetricsBehavior", GoGetter: "ResolverLevelMetricsBehavior"},
+			_jsii_.MemberProperty{JsiiProperty: "resolverLevelMetricsBehaviorInput", GoGetter: "ResolverLevelMetricsBehaviorInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AppsyncGraphqlApiEnhancedMetricsConfigOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appsyncGraphqlApi.AppsyncGraphqlApiLambdaAuthorizerConfig",

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/opsworks_php_app_layer aws_opsworks_php_app_layer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/opsworks_php_app_layer aws_opsworks_php_app_layer}.
 type OpsworksPhpAppLayer interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -896,7 +896,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayer) UseEbsOptimizedInstancesInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/opsworks_php_app_layer aws_opsworks_php_app_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/opsworks_php_app_layer aws_opsworks_php_app_layer} Resource.
 func NewOpsworksPhpAppLayer(scope constructs.Construct, id *string, config *OpsworksPhpAppLayerConfig) OpsworksPhpAppLayer {
 	_init_.Initialize()
 
@@ -914,7 +914,7 @@ func NewOpsworksPhpAppLayer(scope constructs.Construct, id *string, config *Opsw
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/opsworks_php_app_layer aws_opsworks_php_app_layer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/opsworks_php_app_layer aws_opsworks_php_app_layer} Resource.
 func NewOpsworksPhpAppLayer_Override(o OpsworksPhpAppLayer, scope constructs.Construct, id *string, config *OpsworksPhpAppLayerConfig) {
 	_init_.Initialize()
 

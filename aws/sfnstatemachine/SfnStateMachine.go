@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/sfn_state_machine aws_sfn_state_machine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/sfn_state_machine aws_sfn_state_machine}.
 type SfnStateMachine interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -37,6 +37,8 @@ type SfnStateMachine interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	EncryptionConfiguration() SfnStateMachineEncryptionConfigurationOutputReference
+	EncryptionConfigurationInput() *SfnStateMachineEncryptionConfiguration
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -144,9 +146,11 @@ type SfnStateMachine interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryptionConfiguration(value *SfnStateMachineEncryptionConfiguration)
 	PutLoggingConfiguration(value *SfnStateMachineLoggingConfiguration)
 	PutTimeouts(value *SfnStateMachineTimeouts)
 	PutTracingConfiguration(value *SfnStateMachineTracingConfiguration)
+	ResetEncryptionConfiguration()
 	ResetId()
 	ResetLoggingConfiguration()
 	ResetName()
@@ -273,6 +277,26 @@ func (j *jsiiProxy_SfnStateMachine) Description() *string {
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfnStateMachine) EncryptionConfiguration() SfnStateMachineEncryptionConfigurationOutputReference {
+	var returns SfnStateMachineEncryptionConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfnStateMachine) EncryptionConfigurationInput() *SfnStateMachineEncryptionConfiguration {
+	var returns *SfnStateMachineEncryptionConfiguration
+	_jsii_.Get(
+		j,
+		"encryptionConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -649,7 +673,7 @@ func (j *jsiiProxy_SfnStateMachine) VersionDescription() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/sfn_state_machine aws_sfn_state_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/sfn_state_machine aws_sfn_state_machine} Resource.
 func NewSfnStateMachine(scope constructs.Construct, id *string, config *SfnStateMachineConfig) SfnStateMachine {
 	_init_.Initialize()
 
@@ -667,7 +691,7 @@ func NewSfnStateMachine(scope constructs.Construct, id *string, config *SfnState
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/sfn_state_machine aws_sfn_state_machine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/sfn_state_machine aws_sfn_state_machine} Resource.
 func NewSfnStateMachine_Override(s SfnStateMachine, scope constructs.Construct, id *string, config *SfnStateMachineConfig) {
 	_init_.Initialize()
 
@@ -1198,6 +1222,17 @@ func (s *jsiiProxy_SfnStateMachine) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (s *jsiiProxy_SfnStateMachine) PutEncryptionConfiguration(value *SfnStateMachineEncryptionConfiguration) {
+	if err := s.validatePutEncryptionConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putEncryptionConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (s *jsiiProxy_SfnStateMachine) PutLoggingConfiguration(value *SfnStateMachineLoggingConfiguration) {
 	if err := s.validatePutLoggingConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1228,6 +1263,14 @@ func (s *jsiiProxy_SfnStateMachine) PutTracingConfiguration(value *SfnStateMachi
 		s,
 		"putTracingConfiguration",
 		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SfnStateMachine) ResetEncryptionConfiguration() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEncryptionConfiguration",
+		nil, // no parameters
 	)
 }
 

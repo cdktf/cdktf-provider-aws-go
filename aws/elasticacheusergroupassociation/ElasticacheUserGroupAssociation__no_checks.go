@@ -75,6 +75,10 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) validateOverrideLogicalIdPar
 	return nil
 }
 
+func (e *jsiiProxy_ElasticacheUserGroupAssociation) validatePutTimeoutsParameters(value *ElasticacheUserGroupAssociationTimeouts) error {
+	return nil
+}
+
 func validateElasticacheUserGroupAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

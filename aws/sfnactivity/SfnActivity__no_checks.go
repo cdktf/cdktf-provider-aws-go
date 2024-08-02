@@ -75,6 +75,10 @@ func (s *jsiiProxy_SfnActivity) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func (s *jsiiProxy_SfnActivity) validatePutEncryptionConfigurationParameters(value *SfnActivityEncryptionConfiguration) error {
+	return nil
+}
+
 func validateSfnActivity_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -95,6 +95,10 @@ func (e *jsiiProxy_EksCluster) validatePutTimeoutsParameters(value *EksClusterTi
 	return nil
 }
 
+func (e *jsiiProxy_EksCluster) validatePutUpgradePolicyParameters(value *EksClusterUpgradePolicy) error {
+	return nil
+}
+
 func (e *jsiiProxy_EksCluster) validatePutVpcConfigParameters(value *EksClusterVpcConfig) error {
 	return nil
 }

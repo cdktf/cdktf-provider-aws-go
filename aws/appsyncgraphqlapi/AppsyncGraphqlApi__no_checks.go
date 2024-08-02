@@ -79,6 +79,10 @@ func (a *jsiiProxy_AppsyncGraphqlApi) validatePutAdditionalAuthenticationProvide
 	return nil
 }
 
+func (a *jsiiProxy_AppsyncGraphqlApi) validatePutEnhancedMetricsConfigParameters(value *AppsyncGraphqlApiEnhancedMetricsConfig) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppsyncGraphqlApi) validatePutLambdaAuthorizerConfigParameters(value *AppsyncGraphqlApiLambdaAuthorizerConfig) error {
 	return nil
 }

@@ -199,6 +199,14 @@ func (j *jsiiProxy_PipesPipeLogConfigurationOutputReference) validateSetComplexO
 	return nil
 }
 
+func (j *jsiiProxy_PipesPipeLogConfigurationOutputReference) validateSetIncludeExecutionDataParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_PipesPipeLogConfigurationOutputReference) validateSetInternalValueParameters(val *PipesPipeLogConfiguration) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err

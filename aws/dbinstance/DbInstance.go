@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/db_instance aws_db_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/db_instance aws_db_instance}.
 type DbInstance interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -272,6 +272,9 @@ type DbInstance interface {
 	Timezone() *string
 	SetTimezone(val *string)
 	TimezoneInput() *string
+	UpgradeStorageConfig() interface{}
+	SetUpgradeStorageConfig(val interface{})
+	UpgradeStorageConfigInput() interface{}
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
@@ -395,6 +398,7 @@ type DbInstance interface {
 	ResetTagsAll()
 	ResetTimeouts()
 	ResetTimezone()
+	ResetUpgradeStorageConfig()
 	ResetUsername()
 	ResetVpcSecurityGroupIds()
 	SynthesizeAttributes() *map[string]interface{}
@@ -2045,6 +2049,26 @@ func (j *jsiiProxy_DbInstance) TimezoneInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DbInstance) UpgradeStorageConfig() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"upgradeStorageConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbInstance) UpgradeStorageConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"upgradeStorageConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DbInstance) Username() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2086,7 +2110,7 @@ func (j *jsiiProxy_DbInstance) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/db_instance aws_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/db_instance aws_db_instance} Resource.
 func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceConfig) DbInstance {
 	_init_.Initialize()
 
@@ -2104,7 +2128,7 @@ func NewDbInstance(scope constructs.Construct, id *string, config *DbInstanceCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/db_instance aws_db_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/db_instance aws_db_instance} Resource.
 func NewDbInstance_Override(d DbInstance, scope constructs.Construct, id *string, config *DbInstanceConfig) {
 	_init_.Initialize()
 
@@ -2883,6 +2907,17 @@ func (j *jsiiProxy_DbInstance)SetTimezone(val *string) {
 	_jsii_.Set(
 		j,
 		"timezone",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DbInstance)SetUpgradeStorageConfig(val interface{}) {
+	if err := j.validateSetUpgradeStorageConfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"upgradeStorageConfig",
 		val,
 	)
 }
@@ -3846,6 +3881,14 @@ func (d *jsiiProxy_DbInstance) ResetTimezone() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetTimezone",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbInstance) ResetUpgradeStorageConfig() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetUpgradeStorageConfig",
 		nil, // no parameters
 	)
 }

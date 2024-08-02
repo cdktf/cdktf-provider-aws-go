@@ -5,9 +5,9 @@ package iottopicrule
 
 
 type IotTopicRuleErrorActionHttpHttpHeader struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/iot_topic_rule#key IotTopicRule#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/iot_topic_rule#key IotTopicRule#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/iot_topic_rule#value IotTopicRule#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/iot_topic_rule#value IotTopicRule#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

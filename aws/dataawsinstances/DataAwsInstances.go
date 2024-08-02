@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/instances aws_instances}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/instances aws_instances}.
 type DataAwsInstances interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -405,7 +405,7 @@ func (j *jsiiProxy_DataAwsInstances) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/instances aws_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/instances aws_instances} Data Source.
 func NewDataAwsInstances(scope constructs.Construct, id *string, config *DataAwsInstancesConfig) DataAwsInstances {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewDataAwsInstances(scope constructs.Construct, id *string, config *DataAws
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/data-sources/instances aws_instances} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/instances aws_instances} Data Source.
 func NewDataAwsInstances_Override(d DataAwsInstances, scope constructs.Construct, id *string, config *DataAwsInstancesConfig) {
 	_init_.Initialize()
 

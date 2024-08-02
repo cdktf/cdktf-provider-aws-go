@@ -532,6 +532,14 @@ func (j *jsiiProxy_Wafv2WebAcl) validateSetProvisionersParameters(val *[]interfa
 	return nil
 }
 
+func (j *jsiiProxy_Wafv2WebAcl) validateSetRuleJsonParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_Wafv2WebAcl) validateSetScopeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

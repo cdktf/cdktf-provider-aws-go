@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/qldb_ledger aws_qldb_ledger}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/qldb_ledger aws_qldb_ledger}.
 type QldbLedger interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -488,7 +488,7 @@ func (j *jsiiProxy_QldbLedger) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/qldb_ledger aws_qldb_ledger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/qldb_ledger aws_qldb_ledger} Resource.
 func NewQldbLedger(scope constructs.Construct, id *string, config *QldbLedgerConfig) QldbLedger {
 	_init_.Initialize()
 
@@ -506,7 +506,7 @@ func NewQldbLedger(scope constructs.Construct, id *string, config *QldbLedgerCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/qldb_ledger aws_qldb_ledger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/qldb_ledger aws_qldb_ledger} Resource.
 func NewQldbLedger_Override(q QldbLedger, scope constructs.Construct, id *string, config *QldbLedgerConfig) {
 	_init_.Initialize()
 

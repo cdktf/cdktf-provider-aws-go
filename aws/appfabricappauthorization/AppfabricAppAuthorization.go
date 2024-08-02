@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appfabric_app_authorization aws_appfabric_app_authorization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appfabric_app_authorization aws_appfabric_app_authorization}.
 type AppfabricAppAuthorization interface {
 	cdktf.TerraformResource
 	App() *string
@@ -528,7 +528,7 @@ func (j *jsiiProxy_AppfabricAppAuthorization) UpdatedAt() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appfabric_app_authorization aws_appfabric_app_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appfabric_app_authorization aws_appfabric_app_authorization} Resource.
 func NewAppfabricAppAuthorization(scope constructs.Construct, id *string, config *AppfabricAppAuthorizationConfig) AppfabricAppAuthorization {
 	_init_.Initialize()
 
@@ -546,7 +546,7 @@ func NewAppfabricAppAuthorization(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/appfabric_app_authorization aws_appfabric_app_authorization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/appfabric_app_authorization aws_appfabric_app_authorization} Resource.
 func NewAppfabricAppAuthorization_Override(a AppfabricAppAuthorization, scope constructs.Construct, id *string, config *AppfabricAppAuthorizationConfig) {
 	_init_.Initialize()
 

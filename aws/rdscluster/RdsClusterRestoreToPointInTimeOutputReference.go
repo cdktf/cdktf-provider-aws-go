@@ -41,6 +41,9 @@ type RdsClusterRestoreToPointInTimeOutputReference interface {
 	SourceClusterIdentifier() *string
 	SetSourceClusterIdentifier(val *string)
 	SourceClusterIdentifierInput() *string
+	SourceClusterResourceId() *string
+	SetSourceClusterResourceId(val *string)
+	SourceClusterResourceIdInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -78,6 +81,8 @@ type RdsClusterRestoreToPointInTimeOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetRestoreToTime()
 	ResetRestoreType()
+	ResetSourceClusterIdentifier()
+	ResetSourceClusterResourceId()
 	ResetUseLatestRestorableTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -199,6 +204,26 @@ func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) SourceClusterI
 	_jsii_.Get(
 		j,
 		"sourceClusterIdentifierInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) SourceClusterResourceId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceClusterResourceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) SourceClusterResourceIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceClusterResourceIdInput",
 		&returns,
 	)
 	return returns
@@ -334,6 +359,17 @@ func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference)SetSourceCluste
 	_jsii_.Set(
 		j,
 		"sourceClusterIdentifier",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference)SetSourceClusterResourceId(val *string) {
+	if err := j.validateSetSourceClusterResourceIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceClusterResourceId",
 		val,
 	)
 }
@@ -569,6 +605,22 @@ func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) ResetRestoreTy
 	_jsii_.InvokeVoid(
 		r,
 		"resetRestoreType",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) ResetSourceClusterIdentifier() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSourceClusterIdentifier",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsClusterRestoreToPointInTimeOutputReference) ResetSourceClusterResourceId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetSourceClusterResourceId",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/rds_cluster aws_rds_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/rds_cluster aws_rds_cluster}.
 type RdsCluster interface {
 	cdktf.TerraformResource
 	AllocatedStorage() *float64
@@ -175,6 +175,15 @@ type RdsCluster interface {
 	NetworkTypeInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PerformanceInsightsEnabled() interface{}
+	SetPerformanceInsightsEnabled(val interface{})
+	PerformanceInsightsEnabledInput() interface{}
+	PerformanceInsightsKmsKeyId() *string
+	SetPerformanceInsightsKmsKeyId(val *string)
+	PerformanceInsightsKmsKeyIdInput() *string
+	PerformanceInsightsRetentionPeriod() *float64
+	SetPerformanceInsightsRetentionPeriod(val *float64)
+	PerformanceInsightsRetentionPeriodInput() *float64
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
@@ -329,6 +338,9 @@ type RdsCluster interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPerformanceInsightsEnabled()
+	ResetPerformanceInsightsKmsKeyId()
+	ResetPerformanceInsightsRetentionPeriod()
 	ResetPort()
 	ResetPreferredBackupWindow()
 	ResetPreferredMaintenanceWindow()
@@ -1354,6 +1366,66 @@ func (j *jsiiProxy_RdsCluster) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_RdsCluster) PerformanceInsightsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"performanceInsightsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) PerformanceInsightsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"performanceInsightsEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) PerformanceInsightsKmsKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"performanceInsightsKmsKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) PerformanceInsightsKmsKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"performanceInsightsKmsKeyIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) PerformanceInsightsRetentionPeriod() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"performanceInsightsRetentionPeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_RdsCluster) PerformanceInsightsRetentionPeriodInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"performanceInsightsRetentionPeriodInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_RdsCluster) Port() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -1765,7 +1837,7 @@ func (j *jsiiProxy_RdsCluster) VpcSecurityGroupIdsInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
 func NewRdsCluster(scope constructs.Construct, id *string, config *RdsClusterConfig) RdsCluster {
 	_init_.Initialize()
 
@@ -1783,7 +1855,7 @@ func NewRdsCluster(scope constructs.Construct, id *string, config *RdsClusterCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/rds_cluster aws_rds_cluster} Resource.
 func NewRdsCluster_Override(r RdsCluster, scope constructs.Construct, id *string, config *RdsClusterConfig) {
 	_init_.Initialize()
 
@@ -2290,6 +2362,39 @@ func (j *jsiiProxy_RdsCluster)SetNetworkType(val *string) {
 	_jsii_.Set(
 		j,
 		"networkType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsCluster)SetPerformanceInsightsEnabled(val interface{}) {
+	if err := j.validateSetPerformanceInsightsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"performanceInsightsEnabled",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsCluster)SetPerformanceInsightsKmsKeyId(val *string) {
+	if err := j.validateSetPerformanceInsightsKmsKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"performanceInsightsKmsKeyId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_RdsCluster)SetPerformanceInsightsRetentionPeriod(val *float64) {
+	if err := j.validateSetPerformanceInsightsRetentionPeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"performanceInsightsRetentionPeriod",
 		val,
 	)
 }
@@ -3177,6 +3282,30 @@ func (r *jsiiProxy_RdsCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		r,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsCluster) ResetPerformanceInsightsEnabled() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPerformanceInsightsEnabled",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsCluster) ResetPerformanceInsightsKmsKeyId() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPerformanceInsightsKmsKeyId",
+		nil, // no parameters
+	)
+}
+
+func (r *jsiiProxy_RdsCluster) ResetPerformanceInsightsRetentionPeriod() {
+	_jsii_.InvokeVoid(
+		r,
+		"resetPerformanceInsightsRetentionPeriod",
 		nil, // no parameters
 	)
 }

@@ -71,6 +71,10 @@ func (j *jsiiProxy_PipesPipeLogConfigurationOutputReference) validateSetComplexO
 	return nil
 }
 
+func (j *jsiiProxy_PipesPipeLogConfigurationOutputReference) validateSetIncludeExecutionDataParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PipesPipeLogConfigurationOutputReference) validateSetInternalValueParameters(val *PipesPipeLogConfiguration) error {
 	return nil
 }

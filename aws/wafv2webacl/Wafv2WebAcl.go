@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl}.
 type Wafv2WebAcl interface {
 	cdktf.TerraformResource
 	ApplicationIntegrationUrl() *string
@@ -80,6 +80,9 @@ type Wafv2WebAcl interface {
 	RawOverrides() interface{}
 	Rule() Wafv2WebAclRuleList
 	RuleInput() interface{}
+	RuleJson() *string
+	SetRuleJson(val *string)
+	RuleJsonInput() *string
 	Scope() *string
 	SetScope(val *string)
 	ScopeInput() *string
@@ -160,6 +163,7 @@ type Wafv2WebAcl interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRule()
+	ResetRuleJson()
 	ResetTags()
 	ResetTagsAll()
 	ResetTokenDomains()
@@ -531,6 +535,26 @@ func (j *jsiiProxy_Wafv2WebAcl) RuleInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_Wafv2WebAcl) RuleJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ruleJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Wafv2WebAcl) RuleJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ruleJsonInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Wafv2WebAcl) Scope() *string {
 	var returns *string
 	_jsii_.Get(
@@ -662,7 +686,7 @@ func (j *jsiiProxy_Wafv2WebAcl) VisibilityConfigInput() *Wafv2WebAclVisibilityCo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
 func NewWafv2WebAcl(scope constructs.Construct, id *string, config *Wafv2WebAclConfig) Wafv2WebAcl {
 	_init_.Initialize()
 
@@ -680,7 +704,7 @@ func NewWafv2WebAcl(scope constructs.Construct, id *string, config *Wafv2WebAclC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/wafv2_web_acl aws_wafv2_web_acl} Resource.
 func NewWafv2WebAcl_Override(w Wafv2WebAcl, scope constructs.Construct, id *string, config *Wafv2WebAclConfig) {
 	_init_.Initialize()
 
@@ -788,6 +812,17 @@ func (j *jsiiProxy_Wafv2WebAcl)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Wafv2WebAcl)SetRuleJson(val *string) {
+	if err := j.validateSetRuleJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ruleJson",
 		val,
 	)
 }
@@ -1326,6 +1361,14 @@ func (w *jsiiProxy_Wafv2WebAcl) ResetRule() {
 	_jsii_.InvokeVoid(
 		w,
 		"resetRule",
+		nil, // no parameters
+	)
+}
+
+func (w *jsiiProxy_Wafv2WebAcl) ResetRuleJson() {
+	_jsii_.InvokeVoid(
+		w,
+		"resetRuleJson",
 		nil, // no parameters
 	)
 }

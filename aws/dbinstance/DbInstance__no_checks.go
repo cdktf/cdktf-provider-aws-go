@@ -379,6 +379,10 @@ func (j *jsiiProxy_DbInstance) validateSetTimezoneParameters(val *string) error 
 	return nil
 }
 
+func (j *jsiiProxy_DbInstance) validateSetUpgradeStorageConfigParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DbInstance) validateSetUsernameParameters(val *string) error {
 	return nil
 }

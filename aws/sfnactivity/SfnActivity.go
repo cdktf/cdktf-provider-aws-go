@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/sfn_activity aws_sfn_activity}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/sfn_activity aws_sfn_activity}.
 type SfnActivity interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -32,6 +32,8 @@ type SfnActivity interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptionConfiguration() SfnActivityEncryptionConfigurationOutputReference
+	EncryptionConfigurationInput() *SfnActivityEncryptionConfiguration
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -117,6 +119,8 @@ type SfnActivity interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryptionConfiguration(value *SfnActivityEncryptionConfiguration)
+	ResetEncryptionConfiguration()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -196,6 +200,26 @@ func (j *jsiiProxy_SfnActivity) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfnActivity) EncryptionConfiguration() SfnActivityEncryptionConfigurationOutputReference {
+	var returns SfnActivityEncryptionConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_SfnActivity) EncryptionConfigurationInput() *SfnActivityEncryptionConfiguration {
+	var returns *SfnActivityEncryptionConfiguration
+	_jsii_.Get(
+		j,
+		"encryptionConfigurationInput",
 		&returns,
 	)
 	return returns
@@ -392,7 +416,7 @@ func (j *jsiiProxy_SfnActivity) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/sfn_activity aws_sfn_activity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/sfn_activity aws_sfn_activity} Resource.
 func NewSfnActivity(scope constructs.Construct, id *string, config *SfnActivityConfig) SfnActivity {
 	_init_.Initialize()
 
@@ -410,7 +434,7 @@ func NewSfnActivity(scope constructs.Construct, id *string, config *SfnActivityC
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.60.0/docs/resources/sfn_activity aws_sfn_activity} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/sfn_activity aws_sfn_activity} Resource.
 func NewSfnActivity_Override(s SfnActivity, scope constructs.Construct, id *string, config *SfnActivityConfig) {
 	_init_.Initialize()
 
@@ -883,6 +907,25 @@ func (s *jsiiProxy_SfnActivity) OverrideLogicalId(newLogicalId *string) {
 		s,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (s *jsiiProxy_SfnActivity) PutEncryptionConfiguration(value *SfnActivityEncryptionConfiguration) {
+	if err := s.validatePutEncryptionConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"putEncryptionConfiguration",
+		[]interface{}{value},
+	)
+}
+
+func (s *jsiiProxy_SfnActivity) ResetEncryptionConfiguration() {
+	_jsii_.InvokeVoid(
+		s,
+		"resetEncryptionConfiguration",
+		nil, // no parameters
 	)
 }
 
