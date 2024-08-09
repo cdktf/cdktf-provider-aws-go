@@ -103,6 +103,10 @@ func (j *jsiiProxy_GrafanaLicenseAssociation) validateSetCountParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_GrafanaLicenseAssociation) validateSetGrafanaTokenParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GrafanaLicenseAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

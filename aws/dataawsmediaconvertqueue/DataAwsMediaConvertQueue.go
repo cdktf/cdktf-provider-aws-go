@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/media_convert_queue aws_media_convert_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/data-sources/media_convert_queue aws_media_convert_queue}.
 type DataAwsMediaConvertQueue interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DataAwsMediaConvertQueue) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/media_convert_queue aws_media_convert_queue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/data-sources/media_convert_queue aws_media_convert_queue} Data Source.
 func NewDataAwsMediaConvertQueue(scope constructs.Construct, id *string, config *DataAwsMediaConvertQueueConfig) DataAwsMediaConvertQueue {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDataAwsMediaConvertQueue(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/data-sources/media_convert_queue aws_media_convert_queue} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/data-sources/media_convert_queue aws_media_convert_queue} Data Source.
 func NewDataAwsMediaConvertQueue_Override(d DataAwsMediaConvertQueue, scope constructs.Construct, id *string, config *DataAwsMediaConvertQueueConfig) {
 	_init_.Initialize()
 

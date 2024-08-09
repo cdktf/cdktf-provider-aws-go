@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/ecs_service aws_ecs_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_service aws_ecs_service}.
 type EcsService interface {
 	cdktf.TerraformResource
 	Alarms() EcsServiceAlarmsOutputReference
@@ -57,6 +57,9 @@ type EcsService interface {
 	EnableExecuteCommand() interface{}
 	SetEnableExecuteCommand(val interface{})
 	EnableExecuteCommandInput() interface{}
+	ForceDelete() interface{}
+	SetForceDelete(val interface{})
+	ForceDeleteInput() interface{}
 	ForceNewDeployment() interface{}
 	SetForceNewDeployment(val interface{})
 	ForceNewDeploymentInput() interface{}
@@ -210,6 +213,7 @@ type EcsService interface {
 	ResetDesiredCount()
 	ResetEnableEcsManagedTags()
 	ResetEnableExecuteCommand()
+	ResetForceDelete()
 	ResetForceNewDeployment()
 	ResetHealthCheckGracePeriodSeconds()
 	ResetIamRole()
@@ -497,6 +501,26 @@ func (j *jsiiProxy_EcsService) EnableExecuteCommandInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableExecuteCommandInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsService) ForceDelete() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDelete",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_EcsService) ForceDeleteInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDeleteInput",
 		&returns,
 	)
 	return returns
@@ -1053,7 +1077,7 @@ func (j *jsiiProxy_EcsService) WaitForSteadyStateInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/ecs_service aws_ecs_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_service aws_ecs_service} Resource.
 func NewEcsService(scope constructs.Construct, id *string, config *EcsServiceConfig) EcsService {
 	_init_.Initialize()
 
@@ -1071,7 +1095,7 @@ func NewEcsService(scope constructs.Construct, id *string, config *EcsServiceCon
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/ecs_service aws_ecs_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ecs_service aws_ecs_service} Resource.
 func NewEcsService_Override(e EcsService, scope constructs.Construct, id *string, config *EcsServiceConfig) {
 	_init_.Initialize()
 
@@ -1174,6 +1198,17 @@ func (j *jsiiProxy_EcsService)SetEnableExecuteCommand(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableExecuteCommand",
+		val,
+	)
+}
+
+func (j *jsiiProxy_EcsService)SetForceDelete(val interface{}) {
+	if err := j.validateSetForceDeleteParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceDelete",
 		val,
 	)
 }
@@ -1931,6 +1966,14 @@ func (e *jsiiProxy_EcsService) ResetEnableExecuteCommand() {
 	_jsii_.InvokeVoid(
 		e,
 		"resetEnableExecuteCommand",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_EcsService) ResetForceDelete() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetForceDelete",
 		nil, // no parameters
 	)
 }

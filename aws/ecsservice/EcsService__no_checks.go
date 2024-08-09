@@ -171,6 +171,10 @@ func (j *jsiiProxy_EcsService) validateSetEnableExecuteCommandParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_EcsService) validateSetForceDeleteParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_EcsService) validateSetForceNewDeploymentParameters(val interface{}) error {
 	return nil
 }

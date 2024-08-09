@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/prometheus_scraper aws_prometheus_scraper}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/prometheus_scraper aws_prometheus_scraper}.
 type PrometheusScraper interface {
 	cdktf.TerraformResource
 	Alias() *string
@@ -473,7 +473,7 @@ func (j *jsiiProxy_PrometheusScraper) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/prometheus_scraper aws_prometheus_scraper} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/prometheus_scraper aws_prometheus_scraper} Resource.
 func NewPrometheusScraper(scope constructs.Construct, id *string, config *PrometheusScraperConfig) PrometheusScraper {
 	_init_.Initialize()
 
@@ -491,7 +491,7 @@ func NewPrometheusScraper(scope constructs.Construct, id *string, config *Promet
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/prometheus_scraper aws_prometheus_scraper} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/prometheus_scraper aws_prometheus_scraper} Resource.
 func NewPrometheusScraper_Override(p PrometheusScraper, scope constructs.Construct, id *string, config *PrometheusScraperConfig) {
 	_init_.Initialize()
 

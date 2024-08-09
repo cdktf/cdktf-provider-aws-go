@@ -75,6 +75,10 @@ func (j *jsiiProxy_LbTargetGroupTargetHealthStateOutputReference) validateSetTer
 	return nil
 }
 
+func (j *jsiiProxy_LbTargetGroupTargetHealthStateOutputReference) validateSetUnhealthyDrainingIntervalParameters(val *float64) error {
+	return nil
+}
+
 func validateNewLbTargetGroupTargetHealthStateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }

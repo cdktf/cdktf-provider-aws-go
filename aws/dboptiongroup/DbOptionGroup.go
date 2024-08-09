@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/db_option_group aws_db_option_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/db_option_group aws_db_option_group}.
 type DbOptionGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -76,6 +76,9 @@ type DbOptionGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SkipDestroy() interface{}
+	SetSkipDestroy(val interface{})
+	SkipDestroyInput() interface{}
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -143,6 +146,7 @@ type DbOptionGroup interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetSkipDestroy()
 	ResetTags()
 	ResetTagsAll()
 	ResetTimeouts()
@@ -444,6 +448,26 @@ func (j *jsiiProxy_DbOptionGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DbOptionGroup) SkipDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbOptionGroup) SkipDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DbOptionGroup) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -535,7 +559,7 @@ func (j *jsiiProxy_DbOptionGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/db_option_group aws_db_option_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/db_option_group aws_db_option_group} Resource.
 func NewDbOptionGroup(scope constructs.Construct, id *string, config *DbOptionGroupConfig) DbOptionGroup {
 	_init_.Initialize()
 
@@ -553,7 +577,7 @@ func NewDbOptionGroup(scope constructs.Construct, id *string, config *DbOptionGr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/db_option_group aws_db_option_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/db_option_group aws_db_option_group} Resource.
 func NewDbOptionGroup_Override(d DbOptionGroup, scope constructs.Construct, id *string, config *DbOptionGroupConfig) {
 	_init_.Initialize()
 
@@ -694,6 +718,17 @@ func (j *jsiiProxy_DbOptionGroup)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DbOptionGroup)SetSkipDestroy(val interface{}) {
+	if err := j.validateSetSkipDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipDestroy",
 		val,
 	)
 }
@@ -1139,6 +1174,14 @@ func (d *jsiiProxy_DbOptionGroup) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbOptionGroup) ResetSkipDestroy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSkipDestroy",
 		nil, // no parameters
 	)
 }

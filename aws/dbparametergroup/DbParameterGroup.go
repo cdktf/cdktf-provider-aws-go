@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/db_parameter_group aws_db_parameter_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/db_parameter_group aws_db_parameter_group}.
 type DbParameterGroup interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -73,6 +73,9 @@ type DbParameterGroup interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SkipDestroy() interface{}
+	SetSkipDestroy(val interface{})
+	SkipDestroyInput() interface{}
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -137,6 +140,7 @@ type DbParameterGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParameter()
+	ResetSkipDestroy()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -417,6 +421,26 @@ func (j *jsiiProxy_DbParameterGroup) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_DbParameterGroup) SkipDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DbParameterGroup) SkipDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DbParameterGroup) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -488,7 +512,7 @@ func (j *jsiiProxy_DbParameterGroup) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/db_parameter_group aws_db_parameter_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/db_parameter_group aws_db_parameter_group} Resource.
 func NewDbParameterGroup(scope constructs.Construct, id *string, config *DbParameterGroupConfig) DbParameterGroup {
 	_init_.Initialize()
 
@@ -506,7 +530,7 @@ func NewDbParameterGroup(scope constructs.Construct, id *string, config *DbParam
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/db_parameter_group aws_db_parameter_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/db_parameter_group aws_db_parameter_group} Resource.
 func NewDbParameterGroup_Override(d DbParameterGroup, scope constructs.Construct, id *string, config *DbParameterGroupConfig) {
 	_init_.Initialize()
 
@@ -636,6 +660,17 @@ func (j *jsiiProxy_DbParameterGroup)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DbParameterGroup)SetSkipDestroy(val interface{}) {
+	if err := j.validateSetSkipDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipDestroy",
 		val,
 	)
 }
@@ -1070,6 +1105,14 @@ func (d *jsiiProxy_DbParameterGroup) ResetParameter() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetParameter",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DbParameterGroup) ResetSkipDestroy() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetSkipDestroy",
 		nil, // no parameters
 	)
 }

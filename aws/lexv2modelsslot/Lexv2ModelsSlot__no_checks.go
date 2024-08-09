@@ -83,6 +83,10 @@ func (l *jsiiProxy_Lexv2ModelsSlot) validatePutObfuscationSettingParameters(valu
 	return nil
 }
 
+func (l *jsiiProxy_Lexv2ModelsSlot) validatePutSubSlotSettingParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_Lexv2ModelsSlot) validatePutTimeoutsParameters(value *Lexv2ModelsSlotTimeouts) error {
 	return nil
 }

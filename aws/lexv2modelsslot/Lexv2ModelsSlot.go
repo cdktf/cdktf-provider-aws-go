@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/lexv2models_slot aws_lexv2models_slot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/lexv2models_slot aws_lexv2models_slot}.
 type Lexv2ModelsSlot interface {
 	cdktf.TerraformResource
 	BotId() *string
@@ -82,6 +82,8 @@ type Lexv2ModelsSlot interface {
 	SlotTypeId() *string
 	SetSlotTypeId(val *string)
 	SlotTypeIdInput() *string
+	SubSlotSetting() Lexv2ModelsSlotSubSlotSettingList
+	SubSlotSettingInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -137,6 +139,7 @@ type Lexv2ModelsSlot interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMultipleValuesSetting(value interface{})
 	PutObfuscationSetting(value interface{})
+	PutSubSlotSetting(value interface{})
 	PutTimeouts(value *Lexv2ModelsSlotTimeouts)
 	PutValueElicitationSetting(value interface{})
 	ResetDescription()
@@ -146,6 +149,7 @@ type Lexv2ModelsSlot interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetSlotTypeId()
+	ResetSubSlotSetting()
 	ResetTimeouts()
 	ResetValueElicitationSetting()
 	SynthesizeAttributes() *map[string]interface{}
@@ -496,6 +500,26 @@ func (j *jsiiProxy_Lexv2ModelsSlot) SlotTypeIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Lexv2ModelsSlot) SubSlotSetting() Lexv2ModelsSlotSubSlotSettingList {
+	var returns Lexv2ModelsSlotSubSlotSettingList
+	_jsii_.Get(
+		j,
+		"subSlotSetting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Lexv2ModelsSlot) SubSlotSettingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"subSlotSettingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Lexv2ModelsSlot) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -567,7 +591,7 @@ func (j *jsiiProxy_Lexv2ModelsSlot) ValueElicitationSettingInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/lexv2models_slot aws_lexv2models_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/lexv2models_slot aws_lexv2models_slot} Resource.
 func NewLexv2ModelsSlot(scope constructs.Construct, id *string, config *Lexv2ModelsSlotConfig) Lexv2ModelsSlot {
 	_init_.Initialize()
 
@@ -585,7 +609,7 @@ func NewLexv2ModelsSlot(scope constructs.Construct, id *string, config *Lexv2Mod
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/lexv2models_slot aws_lexv2models_slot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/lexv2models_slot aws_lexv2models_slot} Resource.
 func NewLexv2ModelsSlot_Override(l Lexv2ModelsSlot, scope constructs.Construct, id *string, config *Lexv2ModelsSlotConfig) {
 	_init_.Initialize()
 
@@ -1116,6 +1140,17 @@ func (l *jsiiProxy_Lexv2ModelsSlot) PutObfuscationSetting(value interface{}) {
 	)
 }
 
+func (l *jsiiProxy_Lexv2ModelsSlot) PutSubSlotSetting(value interface{}) {
+	if err := l.validatePutSubSlotSettingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		l,
+		"putSubSlotSetting",
+		[]interface{}{value},
+	)
+}
+
 func (l *jsiiProxy_Lexv2ModelsSlot) PutTimeouts(value *Lexv2ModelsSlotTimeouts) {
 	if err := l.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1174,6 +1209,14 @@ func (l *jsiiProxy_Lexv2ModelsSlot) ResetSlotTypeId() {
 	_jsii_.InvokeVoid(
 		l,
 		"resetSlotTypeId",
+		nil, // no parameters
+	)
+}
+
+func (l *jsiiProxy_Lexv2ModelsSlot) ResetSubSlotSetting() {
+	_jsii_.InvokeVoid(
+		l,
+		"resetSubSlotSetting",
 		nil, // no parameters
 	)
 }

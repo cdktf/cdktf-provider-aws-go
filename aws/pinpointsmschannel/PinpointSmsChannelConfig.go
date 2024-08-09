@@ -22,18 +22,18 @@ type PinpointSmsChannelConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/pinpoint_sms_channel#application_id PinpointSmsChannel#application_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/pinpoint_sms_channel#application_id PinpointSmsChannel#application_id}.
 	ApplicationId *string `field:"required" json:"applicationId" yaml:"applicationId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/pinpoint_sms_channel#enabled PinpointSmsChannel#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/pinpoint_sms_channel#enabled PinpointSmsChannel#enabled}.
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/pinpoint_sms_channel#id PinpointSmsChannel#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/pinpoint_sms_channel#id PinpointSmsChannel#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/pinpoint_sms_channel#sender_id PinpointSmsChannel#sender_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/pinpoint_sms_channel#sender_id PinpointSmsChannel#sender_id}.
 	SenderId *string `field:"optional" json:"senderId" yaml:"senderId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/pinpoint_sms_channel#short_code PinpointSmsChannel#short_code}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/pinpoint_sms_channel#short_code PinpointSmsChannel#short_code}.
 	ShortCode *string `field:"optional" json:"shortCode" yaml:"shortCode"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/grafana_license_association aws_grafana_license_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/grafana_license_association aws_grafana_license_association}.
 type GrafanaLicenseAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -40,6 +40,9 @@ type GrafanaLicenseAssociation interface {
 	FreeTrialExpiration() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GrafanaToken() *string
+	SetGrafanaToken(val *string)
+	GrafanaTokenInput() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -118,6 +121,7 @@ type GrafanaLicenseAssociation interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GrafanaLicenseAssociationTimeouts)
+	ResetGrafanaToken()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -226,6 +230,26 @@ func (j *jsiiProxy_GrafanaLicenseAssociation) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GrafanaLicenseAssociation) GrafanaToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"grafanaToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GrafanaLicenseAssociation) GrafanaTokenInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"grafanaTokenInput",
 		&returns,
 	)
 	return returns
@@ -402,7 +426,7 @@ func (j *jsiiProxy_GrafanaLicenseAssociation) WorkspaceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/grafana_license_association aws_grafana_license_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/grafana_license_association aws_grafana_license_association} Resource.
 func NewGrafanaLicenseAssociation(scope constructs.Construct, id *string, config *GrafanaLicenseAssociationConfig) GrafanaLicenseAssociation {
 	_init_.Initialize()
 
@@ -420,7 +444,7 @@ func NewGrafanaLicenseAssociation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.61.0/docs/resources/grafana_license_association aws_grafana_license_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/grafana_license_association aws_grafana_license_association} Resource.
 func NewGrafanaLicenseAssociation_Override(g GrafanaLicenseAssociation, scope constructs.Construct, id *string, config *GrafanaLicenseAssociationConfig) {
 	_init_.Initialize()
 
@@ -465,6 +489,17 @@ func (j *jsiiProxy_GrafanaLicenseAssociation)SetForEach(val cdktf.ITerraformIter
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GrafanaLicenseAssociation)SetGrafanaToken(val *string) {
+	if err := j.validateSetGrafanaTokenParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"grafanaToken",
 		val,
 	)
 }
@@ -893,6 +928,14 @@ func (g *jsiiProxy_GrafanaLicenseAssociation) PutTimeouts(value *GrafanaLicenseA
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GrafanaLicenseAssociation) ResetGrafanaToken() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGrafanaToken",
+		nil, // no parameters
 	)
 }
 

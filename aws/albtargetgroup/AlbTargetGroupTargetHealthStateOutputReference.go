@@ -43,6 +43,9 @@ type AlbTargetGroupTargetHealthStateOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UnhealthyDrainingInterval() *float64
+	SetUnhealthyDrainingInterval(val *float64)
+	UnhealthyDrainingIntervalInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type AlbTargetGroupTargetHealthStateOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetUnhealthyDrainingInterval()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -172,6 +176,26 @@ func (j *jsiiProxy_AlbTargetGroupTargetHealthStateOutputReference) TerraformReso
 	return returns
 }
 
+func (j *jsiiProxy_AlbTargetGroupTargetHealthStateOutputReference) UnhealthyDrainingInterval() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"unhealthyDrainingInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AlbTargetGroupTargetHealthStateOutputReference) UnhealthyDrainingIntervalInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"unhealthyDrainingIntervalInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewAlbTargetGroupTargetHealthStateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AlbTargetGroupTargetHealthStateOutputReference {
 	_init_.Initialize()
@@ -262,6 +286,17 @@ func (j *jsiiProxy_AlbTargetGroupTargetHealthStateOutputReference)SetTerraformRe
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_AlbTargetGroupTargetHealthStateOutputReference)SetUnhealthyDrainingInterval(val *float64) {
+	if err := j.validateSetUnhealthyDrainingIntervalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"unhealthyDrainingInterval",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (a *jsiiProxy_AlbTargetGroupTargetHealthStateOutputReference) Interpolation
 	)
 
 	return returns
+}
+
+func (a *jsiiProxy_AlbTargetGroupTargetHealthStateOutputReference) ResetUnhealthyDrainingInterval() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetUnhealthyDrainingInterval",
+		nil, // no parameters
+	)
 }
 
 func (a *jsiiProxy_AlbTargetGroupTargetHealthStateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
