@@ -5,7 +5,7 @@ package s3bucketinventory
 
 
 type S3BucketInventoryFilter struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/s3_bucket_inventory#prefix S3BucketInventory#prefix}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/s3_bucket_inventory#prefix S3BucketInventory#prefix}.
 	Prefix *string `field:"optional" json:"prefix" yaml:"prefix"`
 }
 

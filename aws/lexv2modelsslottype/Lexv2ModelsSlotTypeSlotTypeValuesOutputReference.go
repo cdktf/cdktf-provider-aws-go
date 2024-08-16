@@ -32,8 +32,8 @@ type Lexv2ModelsSlotTypeSlotTypeValuesOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	SlotTypeValue() Lexv2ModelsSlotTypeSlotTypeValuesSlotTypeValueList
-	SlotTypeValueInput() interface{}
+	SampleValue() Lexv2ModelsSlotTypeSlotTypeValuesSampleValueList
+	SampleValueInput() interface{}
 	Synonyms() Lexv2ModelsSlotTypeSlotTypeValuesSynonymsList
 	SynonymsInput() interface{}
 	// Experimental.
@@ -68,9 +68,9 @@ type Lexv2ModelsSlotTypeSlotTypeValuesOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutSlotTypeValue(value interface{})
+	PutSampleValue(value interface{})
 	PutSynonyms(value interface{})
-	ResetSlotTypeValue()
+	ResetSampleValue()
 	ResetSynonyms()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -137,21 +137,21 @@ func (j *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesOutputReference) InternalVal
 	return returns
 }
 
-func (j *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesOutputReference) SlotTypeValue() Lexv2ModelsSlotTypeSlotTypeValuesSlotTypeValueList {
-	var returns Lexv2ModelsSlotTypeSlotTypeValuesSlotTypeValueList
+func (j *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesOutputReference) SampleValue() Lexv2ModelsSlotTypeSlotTypeValuesSampleValueList {
+	var returns Lexv2ModelsSlotTypeSlotTypeValuesSampleValueList
 	_jsii_.Get(
 		j,
-		"slotTypeValue",
+		"sampleValue",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesOutputReference) SlotTypeValueInput() interface{} {
+func (j *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesOutputReference) SampleValueInput() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
-		"slotTypeValueInput",
+		"sampleValueInput",
 		&returns,
 	)
 	return returns
@@ -466,13 +466,13 @@ func (l *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesOutputReference) Interpolati
 	return returns
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesOutputReference) PutSlotTypeValue(value interface{}) {
-	if err := l.validatePutSlotTypeValueParameters(value); err != nil {
+func (l *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesOutputReference) PutSampleValue(value interface{}) {
+	if err := l.validatePutSampleValueParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		l,
-		"putSlotTypeValue",
+		"putSampleValue",
 		[]interface{}{value},
 	)
 }
@@ -488,10 +488,10 @@ func (l *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesOutputReference) PutSynonyms
 	)
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesOutputReference) ResetSlotTypeValue() {
+func (l *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesOutputReference) ResetSampleValue() {
 	_jsii_.InvokeVoid(
 		l,
-		"resetSlotTypeValue",
+		"resetSampleValue",
 		nil, // no parameters
 	)
 }

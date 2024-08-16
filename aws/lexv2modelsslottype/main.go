@@ -461,13 +461,13 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
-			_jsii_.MemberMethod{JsiiMethod: "putSlotTypeValue", GoMethod: "PutSlotTypeValue"},
+			_jsii_.MemberMethod{JsiiMethod: "putSampleValue", GoMethod: "PutSampleValue"},
 			_jsii_.MemberMethod{JsiiMethod: "putSynonyms", GoMethod: "PutSynonyms"},
-			_jsii_.MemberMethod{JsiiMethod: "resetSlotTypeValue", GoMethod: "ResetSlotTypeValue"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSampleValue", GoMethod: "ResetSampleValue"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSynonyms", GoMethod: "ResetSynonyms"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
-			_jsii_.MemberProperty{JsiiProperty: "slotTypeValue", GoGetter: "SlotTypeValue"},
-			_jsii_.MemberProperty{JsiiProperty: "slotTypeValueInput", GoGetter: "SlotTypeValueInput"},
+			_jsii_.MemberProperty{JsiiProperty: "sampleValue", GoGetter: "SampleValue"},
+			_jsii_.MemberProperty{JsiiProperty: "sampleValueInput", GoGetter: "SampleValueInput"},
 			_jsii_.MemberProperty{JsiiProperty: "synonyms", GoGetter: "Synonyms"},
 			_jsii_.MemberProperty{JsiiProperty: "synonymsInput", GoGetter: "SynonymsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
@@ -481,12 +481,12 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSlotTypeValue",
-		reflect.TypeOf((*Lexv2ModelsSlotTypeSlotTypeValuesSlotTypeValue)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSampleValue",
+		reflect.TypeOf((*Lexv2ModelsSlotTypeSlotTypeValuesSampleValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSlotTypeValueList",
-		reflect.TypeOf((*Lexv2ModelsSlotTypeSlotTypeValuesSlotTypeValueList)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSampleValueList",
+		reflect.TypeOf((*Lexv2ModelsSlotTypeSlotTypeValuesSampleValueList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -501,14 +501,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "wrapsSet", GoGetter: "WrapsSet"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesSlotTypeValueList{}
+			j := jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesSampleValueList{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSlotTypeValueOutputReference",
-		reflect.TypeOf((*Lexv2ModelsSlotTypeSlotTypeValuesSlotTypeValueOutputReference)(nil)).Elem(),
+		"@cdktf/provider-aws.lexv2ModelsSlotType.Lexv2ModelsSlotTypeSlotTypeValuesSampleValueOutputReference",
+		reflect.TypeOf((*Lexv2ModelsSlotTypeSlotTypeValuesSampleValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
@@ -535,7 +535,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
 		},
 		func() interface{} {
-			j := jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesSlotTypeValueOutputReference{}
+			j := jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesSampleValueOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

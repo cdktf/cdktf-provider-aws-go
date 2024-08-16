@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ec2_image_block_public_access aws_ec2_image_block_public_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ec2_image_block_public_access aws_ec2_image_block_public_access}.
 type Ec2ImageBlockPublicAccess interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_Ec2ImageBlockPublicAccess) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ec2_image_block_public_access aws_ec2_image_block_public_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ec2_image_block_public_access aws_ec2_image_block_public_access} Resource.
 func NewEc2ImageBlockPublicAccess(scope constructs.Construct, id *string, config *Ec2ImageBlockPublicAccessConfig) Ec2ImageBlockPublicAccess {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewEc2ImageBlockPublicAccess(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/ec2_image_block_public_access aws_ec2_image_block_public_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/ec2_image_block_public_access aws_ec2_image_block_public_access} Resource.
 func NewEc2ImageBlockPublicAccess_Override(e Ec2ImageBlockPublicAccess, scope constructs.Construct, id *string, config *Ec2ImageBlockPublicAccessConfig) {
 	_init_.Initialize()
 

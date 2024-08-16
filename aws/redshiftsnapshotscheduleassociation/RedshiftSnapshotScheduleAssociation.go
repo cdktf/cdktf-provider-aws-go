@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/redshift_snapshot_schedule_association aws_redshift_snapshot_schedule_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/redshift_snapshot_schedule_association aws_redshift_snapshot_schedule_association}.
 type RedshiftSnapshotScheduleAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_RedshiftSnapshotScheduleAssociation) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/redshift_snapshot_schedule_association aws_redshift_snapshot_schedule_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/redshift_snapshot_schedule_association aws_redshift_snapshot_schedule_association} Resource.
 func NewRedshiftSnapshotScheduleAssociation(scope constructs.Construct, id *string, config *RedshiftSnapshotScheduleAssociationConfig) RedshiftSnapshotScheduleAssociation {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewRedshiftSnapshotScheduleAssociation(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/redshift_snapshot_schedule_association aws_redshift_snapshot_schedule_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/redshift_snapshot_schedule_association aws_redshift_snapshot_schedule_association} Resource.
 func NewRedshiftSnapshotScheduleAssociation_Override(r RedshiftSnapshotScheduleAssociation, scope constructs.Construct, id *string, config *RedshiftSnapshotScheduleAssociationConfig) {
 	_init_.Initialize()
 

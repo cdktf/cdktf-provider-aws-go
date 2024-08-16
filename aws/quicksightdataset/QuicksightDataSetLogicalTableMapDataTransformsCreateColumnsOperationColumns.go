@@ -5,11 +5,11 @@ package quicksightdataset
 
 
 type QuicksightDataSetLogicalTableMapDataTransformsCreateColumnsOperationColumns struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/quicksight_data_set#column_id QuicksightDataSet#column_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/quicksight_data_set#column_id QuicksightDataSet#column_id}.
 	ColumnId *string `field:"required" json:"columnId" yaml:"columnId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/quicksight_data_set#column_name QuicksightDataSet#column_name}.
 	ColumnName *string `field:"required" json:"columnName" yaml:"columnName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/quicksight_data_set#expression QuicksightDataSet#expression}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/quicksight_data_set#expression QuicksightDataSet#expression}.
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
 }
 

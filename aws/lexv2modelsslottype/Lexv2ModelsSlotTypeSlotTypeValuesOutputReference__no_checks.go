@@ -47,7 +47,7 @@ func (l *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesOutputReference) validateInt
 	return nil
 }
 
-func (l *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesOutputReference) validatePutSlotTypeValueParameters(value interface{}) error {
+func (l *jsiiProxy_Lexv2ModelsSlotTypeSlotTypeValuesOutputReference) validatePutSampleValueParameters(value interface{}) error {
 	return nil
 }
 

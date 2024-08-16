@@ -5,17 +5,17 @@ package pipespipe
 
 
 type PipesPipeTargetParametersRedshiftDataParameters struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/pipes_pipe#database PipesPipe#database}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/pipes_pipe#database PipesPipe#database}.
 	Database *string `field:"required" json:"database" yaml:"database"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/pipes_pipe#sqls PipesPipe#sqls}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/pipes_pipe#sqls PipesPipe#sqls}.
 	Sqls *[]*string `field:"required" json:"sqls" yaml:"sqls"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/pipes_pipe#db_user PipesPipe#db_user}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/pipes_pipe#db_user PipesPipe#db_user}.
 	DbUser *string `field:"optional" json:"dbUser" yaml:"dbUser"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/pipes_pipe#secret_manager_arn PipesPipe#secret_manager_arn}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/pipes_pipe#secret_manager_arn PipesPipe#secret_manager_arn}.
 	SecretManagerArn *string `field:"optional" json:"secretManagerArn" yaml:"secretManagerArn"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/pipes_pipe#statement_name PipesPipe#statement_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/pipes_pipe#statement_name PipesPipe#statement_name}.
 	StatementName *string `field:"optional" json:"statementName" yaml:"statementName"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/pipes_pipe#with_event PipesPipe#with_event}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/pipes_pipe#with_event PipesPipe#with_event}.
 	WithEvent interface{} `field:"optional" json:"withEvent" yaml:"withEvent"`
 }
 

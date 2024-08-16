@@ -5,13 +5,13 @@ package lexv2modelsslottype
 
 
 type Lexv2ModelsSlotTypeSlotTypeValues struct {
-	// slot_type_value block.
+	// sample_value block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/lexv2models_slot_type#slot_type_value Lexv2ModelsSlotType#slot_type_value}
-	SlotTypeValue interface{} `field:"optional" json:"slotTypeValue" yaml:"slotTypeValue"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/lexv2models_slot_type#sample_value Lexv2ModelsSlotType#sample_value}
+	SampleValue interface{} `field:"optional" json:"sampleValue" yaml:"sampleValue"`
 	// synonyms block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/lexv2models_slot_type#synonyms Lexv2ModelsSlotType#synonyms}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/lexv2models_slot_type#synonyms Lexv2ModelsSlotType#synonyms}
 	Synonyms interface{} `field:"optional" json:"synonyms" yaml:"synonyms"`
 }
 

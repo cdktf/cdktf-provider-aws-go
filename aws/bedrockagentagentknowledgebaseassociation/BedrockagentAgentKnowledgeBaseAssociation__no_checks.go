@@ -75,6 +75,10 @@ func (b *jsiiProxy_BedrockagentAgentKnowledgeBaseAssociation) validateOverrideLo
 	return nil
 }
 
+func (b *jsiiProxy_BedrockagentAgentKnowledgeBaseAssociation) validatePutTimeoutsParameters(value *BedrockagentAgentKnowledgeBaseAssociationTimeouts) error {
+	return nil
+}
+
 func validateBedrockagentAgentKnowledgeBaseAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

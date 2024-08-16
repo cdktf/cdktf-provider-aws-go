@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/vpc_endpoint_service_private_dns_verification aws_vpc_endpoint_service_private_dns_verification}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/vpc_endpoint_service_private_dns_verification aws_vpc_endpoint_service_private_dns_verification}.
 type VpcEndpointServicePrivateDnsVerification interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -357,7 +357,7 @@ func (j *jsiiProxy_VpcEndpointServicePrivateDnsVerification) WaitForVerification
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/vpc_endpoint_service_private_dns_verification aws_vpc_endpoint_service_private_dns_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/vpc_endpoint_service_private_dns_verification aws_vpc_endpoint_service_private_dns_verification} Resource.
 func NewVpcEndpointServicePrivateDnsVerification(scope constructs.Construct, id *string, config *VpcEndpointServicePrivateDnsVerificationConfig) VpcEndpointServicePrivateDnsVerification {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewVpcEndpointServicePrivateDnsVerification(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/vpc_endpoint_service_private_dns_verification aws_vpc_endpoint_service_private_dns_verification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/vpc_endpoint_service_private_dns_verification aws_vpc_endpoint_service_private_dns_verification} Resource.
 func NewVpcEndpointServicePrivateDnsVerification_Override(v VpcEndpointServicePrivateDnsVerification, scope constructs.Construct, id *string, config *VpcEndpointServicePrivateDnsVerificationConfig) {
 	_init_.Initialize()
 

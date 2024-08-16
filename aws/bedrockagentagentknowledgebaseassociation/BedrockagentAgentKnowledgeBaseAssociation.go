@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/bedrockagent_agent_knowledge_base_association aws_bedrockagent_agent_knowledge_base_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/bedrockagent_agent_knowledge_base_association aws_bedrockagent_agent_knowledge_base_association}.
 type BedrockagentAgentKnowledgeBaseAssociation interface {
 	cdktf.TerraformResource
 	AgentId() *string
@@ -77,6 +77,8 @@ type BedrockagentAgentKnowledgeBaseAssociation interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() BedrockagentAgentKnowledgeBaseAssociationTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -120,10 +122,12 @@ type BedrockagentAgentKnowledgeBaseAssociation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutTimeouts(value *BedrockagentAgentKnowledgeBaseAssociationTimeouts)
 	ResetAgentVersion()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -412,8 +416,28 @@ func (j *jsiiProxy_BedrockagentAgentKnowledgeBaseAssociation) TerraformResourceT
 	return returns
 }
 
+func (j *jsiiProxy_BedrockagentAgentKnowledgeBaseAssociation) Timeouts() BedrockagentAgentKnowledgeBaseAssociationTimeoutsOutputReference {
+	var returns BedrockagentAgentKnowledgeBaseAssociationTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/bedrockagent_agent_knowledge_base_association aws_bedrockagent_agent_knowledge_base_association} Resource.
+func (j *jsiiProxy_BedrockagentAgentKnowledgeBaseAssociation) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/bedrockagent_agent_knowledge_base_association aws_bedrockagent_agent_knowledge_base_association} Resource.
 func NewBedrockagentAgentKnowledgeBaseAssociation(scope constructs.Construct, id *string, config *BedrockagentAgentKnowledgeBaseAssociationConfig) BedrockagentAgentKnowledgeBaseAssociation {
 	_init_.Initialize()
 
@@ -431,7 +455,7 @@ func NewBedrockagentAgentKnowledgeBaseAssociation(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.62.0/docs/resources/bedrockagent_agent_knowledge_base_association aws_bedrockagent_agent_knowledge_base_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/bedrockagent_agent_knowledge_base_association aws_bedrockagent_agent_knowledge_base_association} Resource.
 func NewBedrockagentAgentKnowledgeBaseAssociation_Override(b BedrockagentAgentKnowledgeBaseAssociation, scope constructs.Construct, id *string, config *BedrockagentAgentKnowledgeBaseAssociationConfig) {
 	_init_.Initialize()
 
@@ -918,6 +942,17 @@ func (b *jsiiProxy_BedrockagentAgentKnowledgeBaseAssociation) OverrideLogicalId(
 	)
 }
 
+func (b *jsiiProxy_BedrockagentAgentKnowledgeBaseAssociation) PutTimeouts(value *BedrockagentAgentKnowledgeBaseAssociationTimeouts) {
+	if err := b.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BedrockagentAgentKnowledgeBaseAssociation) ResetAgentVersion() {
 	_jsii_.InvokeVoid(
 		b,
@@ -930,6 +965,14 @@ func (b *jsiiProxy_BedrockagentAgentKnowledgeBaseAssociation) ResetOverrideLogic
 	_jsii_.InvokeVoid(
 		b,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BedrockagentAgentKnowledgeBaseAssociation) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }
