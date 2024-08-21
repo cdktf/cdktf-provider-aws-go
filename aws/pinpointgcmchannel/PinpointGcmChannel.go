@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/pinpoint_gcm_channel aws_pinpoint_gcm_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/pinpoint_gcm_channel aws_pinpoint_gcm_channel}.
 type PinpointGcmChannel interface {
 	cdktf.TerraformResource
 	ApiKey() *string
@@ -33,6 +33,9 @@ type PinpointGcmChannel interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DefaultAuthenticationMethod() *string
+	SetDefaultAuthenticationMethod(val *string)
+	DefaultAuthenticationMethodInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -67,6 +70,9 @@ type PinpointGcmChannel interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ServiceJson() *string
+	SetServiceJson(val *string)
+	ServiceJsonInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -116,11 +122,14 @@ type PinpointGcmChannel interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetApiKey()
+	ResetDefaultAuthenticationMethod()
 	ResetEnabled()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetServiceJson()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -214,6 +223,26 @@ func (j *jsiiProxy_PinpointGcmChannel) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PinpointGcmChannel) DefaultAuthenticationMethod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultAuthenticationMethod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PinpointGcmChannel) DefaultAuthenticationMethodInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultAuthenticationMethodInput",
 		&returns,
 	)
 	return returns
@@ -349,6 +378,26 @@ func (j *jsiiProxy_PinpointGcmChannel) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_PinpointGcmChannel) ServiceJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_PinpointGcmChannel) ServiceJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceJsonInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_PinpointGcmChannel) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -380,7 +429,7 @@ func (j *jsiiProxy_PinpointGcmChannel) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/pinpoint_gcm_channel aws_pinpoint_gcm_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/pinpoint_gcm_channel aws_pinpoint_gcm_channel} Resource.
 func NewPinpointGcmChannel(scope constructs.Construct, id *string, config *PinpointGcmChannelConfig) PinpointGcmChannel {
 	_init_.Initialize()
 
@@ -398,7 +447,7 @@ func NewPinpointGcmChannel(scope constructs.Construct, id *string, config *Pinpo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/pinpoint_gcm_channel aws_pinpoint_gcm_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/pinpoint_gcm_channel aws_pinpoint_gcm_channel} Resource.
 func NewPinpointGcmChannel_Override(p PinpointGcmChannel, scope constructs.Construct, id *string, config *PinpointGcmChannelConfig) {
 	_init_.Initialize()
 
@@ -449,6 +498,17 @@ func (j *jsiiProxy_PinpointGcmChannel)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PinpointGcmChannel)SetDefaultAuthenticationMethod(val *string) {
+	if err := j.validateSetDefaultAuthenticationMethodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultAuthenticationMethod",
 		val,
 	)
 }
@@ -517,6 +577,17 @@ func (j *jsiiProxy_PinpointGcmChannel)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_PinpointGcmChannel)SetServiceJson(val *string) {
+	if err := j.validateSetServiceJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceJson",
 		val,
 	)
 }
@@ -874,6 +945,22 @@ func (p *jsiiProxy_PinpointGcmChannel) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (p *jsiiProxy_PinpointGcmChannel) ResetApiKey() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetApiKey",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PinpointGcmChannel) ResetDefaultAuthenticationMethod() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetDefaultAuthenticationMethod",
+		nil, // no parameters
+	)
+}
+
 func (p *jsiiProxy_PinpointGcmChannel) ResetEnabled() {
 	_jsii_.InvokeVoid(
 		p,
@@ -894,6 +981,14 @@ func (p *jsiiProxy_PinpointGcmChannel) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		p,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_PinpointGcmChannel) ResetServiceJson() {
+	_jsii_.InvokeVoid(
+		p,
+		"resetServiceJson",
 		nil, // no parameters
 	)
 }

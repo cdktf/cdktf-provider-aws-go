@@ -5,7 +5,7 @@ package configconfigrule
 
 
 type ConfigConfigRuleEvaluationMode struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/config_config_rule#mode ConfigConfigRule#mode}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/config_config_rule#mode ConfigConfigRule#mode}.
 	Mode *string `field:"optional" json:"mode" yaml:"mode"`
 }
 

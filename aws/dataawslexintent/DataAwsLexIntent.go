@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/lex_intent aws_lex_intent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/lex_intent aws_lex_intent}.
 type DataAwsLexIntent interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -378,7 +378,7 @@ func (j *jsiiProxy_DataAwsLexIntent) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/lex_intent aws_lex_intent} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/lex_intent aws_lex_intent} Data Source.
 func NewDataAwsLexIntent(scope constructs.Construct, id *string, config *DataAwsLexIntentConfig) DataAwsLexIntent {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewDataAwsLexIntent(scope constructs.Construct, id *string, config *DataAws
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/lex_intent aws_lex_intent} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/lex_intent aws_lex_intent} Data Source.
 func NewDataAwsLexIntent_Override(d DataAwsLexIntent, scope constructs.Construct, id *string, config *DataAwsLexIntentConfig) {
 	_init_.Initialize()
 

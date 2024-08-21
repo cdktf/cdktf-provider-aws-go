@@ -5,7 +5,7 @@ package guarddutyorganizationconfiguration
 
 
 type GuarddutyOrganizationConfigurationDatasourcesKubernetesAuditLogs struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/guardduty_organization_configuration#enable GuarddutyOrganizationConfiguration#enable}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/guardduty_organization_configuration#enable GuarddutyOrganizationConfiguration#enable}.
 	Enable interface{} `field:"required" json:"enable" yaml:"enable"`
 }
 

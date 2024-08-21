@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/security_group aws_security_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/security_group aws_security_group}.
 type DataAwsSecurityGroup interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -407,7 +407,7 @@ func (j *jsiiProxy_DataAwsSecurityGroup) VpcIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/security_group aws_security_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/security_group aws_security_group} Data Source.
 func NewDataAwsSecurityGroup(scope constructs.Construct, id *string, config *DataAwsSecurityGroupConfig) DataAwsSecurityGroup {
 	_init_.Initialize()
 
@@ -425,7 +425,7 @@ func NewDataAwsSecurityGroup(scope constructs.Construct, id *string, config *Dat
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/security_group aws_security_group} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/security_group aws_security_group} Data Source.
 func NewDataAwsSecurityGroup_Override(d DataAwsSecurityGroup, scope constructs.Construct, id *string, config *DataAwsSecurityGroupConfig) {
 	_init_.Initialize()
 

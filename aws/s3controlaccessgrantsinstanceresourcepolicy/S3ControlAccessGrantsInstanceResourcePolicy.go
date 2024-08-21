@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/s3control_access_grants_instance_resource_policy aws_s3control_access_grants_instance_resource_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/s3control_access_grants_instance_resource_policy aws_s3control_access_grants_instance_resource_policy}.
 type S3ControlAccessGrantsInstanceResourcePolicy interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -344,7 +344,7 @@ func (j *jsiiProxy_S3ControlAccessGrantsInstanceResourcePolicy) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/s3control_access_grants_instance_resource_policy aws_s3control_access_grants_instance_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/s3control_access_grants_instance_resource_policy aws_s3control_access_grants_instance_resource_policy} Resource.
 func NewS3ControlAccessGrantsInstanceResourcePolicy(scope constructs.Construct, id *string, config *S3ControlAccessGrantsInstanceResourcePolicyConfig) S3ControlAccessGrantsInstanceResourcePolicy {
 	_init_.Initialize()
 
@@ -362,7 +362,7 @@ func NewS3ControlAccessGrantsInstanceResourcePolicy(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/s3control_access_grants_instance_resource_policy aws_s3control_access_grants_instance_resource_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/s3control_access_grants_instance_resource_policy aws_s3control_access_grants_instance_resource_policy} Resource.
 func NewS3ControlAccessGrantsInstanceResourcePolicy_Override(s S3ControlAccessGrantsInstanceResourcePolicy, scope constructs.Construct, id *string, config *S3ControlAccessGrantsInstanceResourcePolicyConfig) {
 	_init_.Initialize()
 

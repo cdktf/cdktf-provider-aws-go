@@ -5,7 +5,7 @@ package sesv2configurationset
 
 
 type Sesv2ConfigurationSetVdmOptionsDashboardOptions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/sesv2_configuration_set#engagement_metrics Sesv2ConfigurationSet#engagement_metrics}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/sesv2_configuration_set#engagement_metrics Sesv2ConfigurationSet#engagement_metrics}.
 	EngagementMetrics *string `field:"optional" json:"engagementMetrics" yaml:"engagementMetrics"`
 }
 

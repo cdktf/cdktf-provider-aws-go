@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/batch_job_queue aws_batch_job_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/batch_job_queue aws_batch_job_queue}.
 type BatchJobQueue interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -46,6 +46,8 @@ type BatchJobQueue interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
+	JobStateTimeLimitAction() BatchJobQueueJobStateTimeLimitActionList
+	JobStateTimeLimitActionInput() interface{}
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -130,9 +132,11 @@ type BatchJobQueue interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutComputeEnvironmentOrder(value interface{})
+	PutJobStateTimeLimitAction(value interface{})
 	PutTimeouts(value *BatchJobQueueTimeouts)
 	ResetComputeEnvironmentOrder()
 	ResetComputeEnvironments()
+	ResetJobStateTimeLimitAction()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -292,6 +296,26 @@ func (j *jsiiProxy_BatchJobQueue) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchJobQueue) JobStateTimeLimitAction() BatchJobQueueJobStateTimeLimitActionList {
+	var returns BatchJobQueueJobStateTimeLimitActionList
+	_jsii_.Get(
+		j,
+		"jobStateTimeLimitAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchJobQueue) JobStateTimeLimitActionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"jobStateTimeLimitActionInput",
 		&returns,
 	)
 	return returns
@@ -508,7 +532,7 @@ func (j *jsiiProxy_BatchJobQueue) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/batch_job_queue aws_batch_job_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/batch_job_queue aws_batch_job_queue} Resource.
 func NewBatchJobQueue(scope constructs.Construct, id *string, config *BatchJobQueueConfig) BatchJobQueue {
 	_init_.Initialize()
 
@@ -526,7 +550,7 @@ func NewBatchJobQueue(scope constructs.Construct, id *string, config *BatchJobQu
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/batch_job_queue aws_batch_job_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/batch_job_queue aws_batch_job_queue} Resource.
 func NewBatchJobQueue_Override(b BatchJobQueue, scope constructs.Construct, id *string, config *BatchJobQueueConfig) {
 	_init_.Initialize()
 
@@ -1035,6 +1059,17 @@ func (b *jsiiProxy_BatchJobQueue) PutComputeEnvironmentOrder(value interface{}) 
 	)
 }
 
+func (b *jsiiProxy_BatchJobQueue) PutJobStateTimeLimitAction(value interface{}) {
+	if err := b.validatePutJobStateTimeLimitActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		b,
+		"putJobStateTimeLimitAction",
+		[]interface{}{value},
+	)
+}
+
 func (b *jsiiProxy_BatchJobQueue) PutTimeouts(value *BatchJobQueueTimeouts) {
 	if err := b.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1058,6 +1093,14 @@ func (b *jsiiProxy_BatchJobQueue) ResetComputeEnvironments() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetComputeEnvironments",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BatchJobQueue) ResetJobStateTimeLimitAction() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetJobStateTimeLimitAction",
 		nil, // no parameters
 	)
 }

@@ -79,6 +79,10 @@ func (b *jsiiProxy_BatchJobQueue) validatePutComputeEnvironmentOrderParameters(v
 	return nil
 }
 
+func (b *jsiiProxy_BatchJobQueue) validatePutJobStateTimeLimitActionParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BatchJobQueue) validatePutTimeoutsParameters(value *BatchJobQueueTimeouts) error {
 	return nil
 }

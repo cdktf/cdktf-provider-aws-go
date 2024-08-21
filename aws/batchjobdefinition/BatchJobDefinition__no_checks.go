@@ -119,6 +119,10 @@ func (j *jsiiProxy_BatchJobDefinition) validateSetDeregisterOnNewRevisionParamet
 	return nil
 }
 
+func (j *jsiiProxy_BatchJobDefinition) validateSetEcsPropertiesParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_BatchJobDefinition) validateSetIdParameters(val *string) error {
 	return nil
 }

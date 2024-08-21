@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/connect_user aws_connect_user}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/connect_user aws_connect_user}.
 type DataAwsConnectUser interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -437,7 +437,7 @@ func (j *jsiiProxy_DataAwsConnectUser) UserIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/connect_user aws_connect_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/connect_user aws_connect_user} Data Source.
 func NewDataAwsConnectUser(scope constructs.Construct, id *string, config *DataAwsConnectUserConfig) DataAwsConnectUser {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewDataAwsConnectUser(scope constructs.Construct, id *string, config *DataA
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/data-sources/connect_user aws_connect_user} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/connect_user aws_connect_user} Data Source.
 func NewDataAwsConnectUser_Override(d DataAwsConnectUser, scope constructs.Construct, id *string, config *DataAwsConnectUserConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/batch_job_definition aws_batch_job_definition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/batch_job_definition aws_batch_job_definition}.
 type BatchJobDefinition interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -39,6 +39,9 @@ type BatchJobDefinition interface {
 	DeregisterOnNewRevision() interface{}
 	SetDeregisterOnNewRevision(val interface{})
 	DeregisterOnNewRevisionInput() interface{}
+	EcsProperties() *string
+	SetEcsProperties(val *string)
+	EcsPropertiesInput() *string
 	EksProperties() BatchJobDefinitionEksPropertiesOutputReference
 	EksPropertiesInput() *BatchJobDefinitionEksProperties
 	// Experimental.
@@ -154,6 +157,7 @@ type BatchJobDefinition interface {
 	PutTimeout(value *BatchJobDefinitionTimeout)
 	ResetContainerProperties()
 	ResetDeregisterOnNewRevision()
+	ResetEcsProperties()
 	ResetEksProperties()
 	ResetId()
 	ResetNodeProperties()
@@ -291,6 +295,26 @@ func (j *jsiiProxy_BatchJobDefinition) DeregisterOnNewRevisionInput() interface{
 	_jsii_.Get(
 		j,
 		"deregisterOnNewRevisionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchJobDefinition) EcsProperties() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ecsProperties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_BatchJobDefinition) EcsPropertiesInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ecsPropertiesInput",
 		&returns,
 	)
 	return returns
@@ -677,7 +701,7 @@ func (j *jsiiProxy_BatchJobDefinition) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
 func NewBatchJobDefinition(scope constructs.Construct, id *string, config *BatchJobDefinitionConfig) BatchJobDefinition {
 	_init_.Initialize()
 
@@ -695,7 +719,7 @@ func NewBatchJobDefinition(scope constructs.Construct, id *string, config *Batch
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/batch_job_definition aws_batch_job_definition} Resource.
 func NewBatchJobDefinition_Override(b BatchJobDefinition, scope constructs.Construct, id *string, config *BatchJobDefinitionConfig) {
 	_init_.Initialize()
 
@@ -754,6 +778,17 @@ func (j *jsiiProxy_BatchJobDefinition)SetDeregisterOnNewRevision(val interface{}
 	_jsii_.Set(
 		j,
 		"deregisterOnNewRevision",
+		val,
+	)
+}
+
+func (j *jsiiProxy_BatchJobDefinition)SetEcsProperties(val *string) {
+	if err := j.validateSetEcsPropertiesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ecsProperties",
 		val,
 	)
 }
@@ -1304,6 +1339,14 @@ func (b *jsiiProxy_BatchJobDefinition) ResetDeregisterOnNewRevision() {
 	_jsii_.InvokeVoid(
 		b,
 		"resetDeregisterOnNewRevision",
+		nil, // no parameters
+	)
+}
+
+func (b *jsiiProxy_BatchJobDefinition) ResetEcsProperties() {
+	_jsii_.InvokeVoid(
+		b,
+		"resetEcsProperties",
 		nil, // no parameters
 	)
 }

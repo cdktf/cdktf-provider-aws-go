@@ -107,6 +107,10 @@ func (j *jsiiProxy_PinpointGcmChannel) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_PinpointGcmChannel) validateSetDefaultAuthenticationMethodParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_PinpointGcmChannel) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }
@@ -120,6 +124,10 @@ func (j *jsiiProxy_PinpointGcmChannel) validateSetLifecycleParameters(val *cdktf
 }
 
 func (j *jsiiProxy_PinpointGcmChannel) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_PinpointGcmChannel) validateSetServiceJsonParameters(val *string) error {
 	return nil
 }
 

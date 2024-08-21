@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/security_group_rule aws_security_group_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/security_group_rule aws_security_group_rule}.
 type SecurityGroupRule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -604,7 +604,7 @@ func (j *jsiiProxy_SecurityGroupRule) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/security_group_rule aws_security_group_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/security_group_rule aws_security_group_rule} Resource.
 func NewSecurityGroupRule(scope constructs.Construct, id *string, config *SecurityGroupRuleConfig) SecurityGroupRule {
 	_init_.Initialize()
 
@@ -622,7 +622,7 @@ func NewSecurityGroupRule(scope constructs.Construct, id *string, config *Securi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.0/docs/resources/security_group_rule aws_security_group_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/security_group_rule aws_security_group_rule} Resource.
 func NewSecurityGroupRule_Override(s SecurityGroupRule, scope constructs.Construct, id *string, config *SecurityGroupRuleConfig) {
 	_init_.Initialize()
 
