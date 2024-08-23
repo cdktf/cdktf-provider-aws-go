@@ -5,7 +5,7 @@ package wafv2regexpatternset
 
 
 type Wafv2RegexPatternSetRegularExpression struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/wafv2_regex_pattern_set#regex_string Wafv2RegexPatternSet#regex_string}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/wafv2_regex_pattern_set#regex_string Wafv2RegexPatternSet#regex_string}.
 	RegexString *string `field:"required" json:"regexString" yaml:"regexString"`
 }
 

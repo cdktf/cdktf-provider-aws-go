@@ -5,7 +5,7 @@ package gluejob
 
 
 type GlueJobNotificationProperty struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/glue_job#notify_delay_after GlueJob#notify_delay_after}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/glue_job#notify_delay_after GlueJob#notify_delay_after}.
 	NotifyDelayAfter *float64 `field:"optional" json:"notifyDelayAfter" yaml:"notifyDelayAfter"`
 }
 

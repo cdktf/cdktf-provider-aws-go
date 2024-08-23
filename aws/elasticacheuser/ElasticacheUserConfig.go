@@ -22,34 +22,34 @@ type ElasticacheUserConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/elasticache_user#access_string ElasticacheUser#access_string}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/elasticache_user#access_string ElasticacheUser#access_string}.
 	AccessString *string `field:"required" json:"accessString" yaml:"accessString"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/elasticache_user#engine ElasticacheUser#engine}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/elasticache_user#engine ElasticacheUser#engine}.
 	Engine *string `field:"required" json:"engine" yaml:"engine"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/elasticache_user#user_id ElasticacheUser#user_id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/elasticache_user#user_id ElasticacheUser#user_id}.
 	UserId *string `field:"required" json:"userId" yaml:"userId"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/elasticache_user#user_name ElasticacheUser#user_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/elasticache_user#user_name ElasticacheUser#user_name}.
 	UserName *string `field:"required" json:"userName" yaml:"userName"`
 	// authentication_mode block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/elasticache_user#authentication_mode ElasticacheUser#authentication_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/elasticache_user#authentication_mode ElasticacheUser#authentication_mode}
 	AuthenticationMode *ElasticacheUserAuthenticationMode `field:"optional" json:"authenticationMode" yaml:"authenticationMode"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/elasticache_user#id ElasticacheUser#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/elasticache_user#id ElasticacheUser#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/elasticache_user#no_password_required ElasticacheUser#no_password_required}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/elasticache_user#no_password_required ElasticacheUser#no_password_required}.
 	NoPasswordRequired interface{} `field:"optional" json:"noPasswordRequired" yaml:"noPasswordRequired"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/elasticache_user#passwords ElasticacheUser#passwords}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/elasticache_user#passwords ElasticacheUser#passwords}.
 	Passwords *[]*string `field:"optional" json:"passwords" yaml:"passwords"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/elasticache_user#tags ElasticacheUser#tags}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/elasticache_user#tags ElasticacheUser#tags}.
 	Tags *map[string]*string `field:"optional" json:"tags" yaml:"tags"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/elasticache_user#tags_all ElasticacheUser#tags_all}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/elasticache_user#tags_all ElasticacheUser#tags_all}.
 	TagsAll *map[string]*string `field:"optional" json:"tagsAll" yaml:"tagsAll"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/elasticache_user#timeouts ElasticacheUser#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/elasticache_user#timeouts ElasticacheUser#timeouts}
 	Timeouts *ElasticacheUserTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

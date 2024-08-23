@@ -75,6 +75,10 @@ func (a *jsiiProxy_AppautoscalingTarget) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (a *jsiiProxy_AppautoscalingTarget) validatePutSuspendedStateParameters(value *AppautoscalingTargetSuspendedState) error {
+	return nil
+}
+
 func validateAppautoscalingTarget_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

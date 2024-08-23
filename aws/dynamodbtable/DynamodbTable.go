@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/dynamodb_table aws_dynamodb_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/dynamodb_table aws_dynamodb_table}.
 type DynamodbTable interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -95,6 +95,9 @@ type DynamodbTable interface {
 	RestoreSourceName() *string
 	SetRestoreSourceName(val *string)
 	RestoreSourceNameInput() *string
+	RestoreSourceTableArn() *string
+	SetRestoreSourceTableArn(val *string)
+	RestoreSourceTableArnInput() *string
 	RestoreToLatestTime() interface{}
 	SetRestoreToLatestTime(val interface{})
 	RestoreToLatestTimeInput() interface{}
@@ -199,6 +202,7 @@ type DynamodbTable interface {
 	ResetReplica()
 	ResetRestoreDateTime()
 	ResetRestoreSourceName()
+	ResetRestoreSourceTableArn()
 	ResetRestoreToLatestTime()
 	ResetServerSideEncryption()
 	ResetStreamEnabled()
@@ -667,6 +671,26 @@ func (j *jsiiProxy_DynamodbTable) RestoreSourceNameInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DynamodbTable) RestoreSourceTableArn() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"restoreSourceTableArn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DynamodbTable) RestoreSourceTableArnInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"restoreSourceTableArnInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DynamodbTable) RestoreToLatestTime() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -918,7 +942,7 @@ func (j *jsiiProxy_DynamodbTable) WriteCapacityInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
 func NewDynamodbTable(scope constructs.Construct, id *string, config *DynamodbTableConfig) DynamodbTable {
 	_init_.Initialize()
 
@@ -936,7 +960,7 @@ func NewDynamodbTable(scope constructs.Construct, id *string, config *DynamodbTa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/dynamodb_table aws_dynamodb_table} Resource.
 func NewDynamodbTable_Override(d DynamodbTable, scope constructs.Construct, id *string, config *DynamodbTableConfig) {
 	_init_.Initialize()
 
@@ -1110,6 +1134,17 @@ func (j *jsiiProxy_DynamodbTable)SetRestoreSourceName(val *string) {
 	_jsii_.Set(
 		j,
 		"restoreSourceName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DynamodbTable)SetRestoreSourceTableArn(val *string) {
+	if err := j.validateSetRestoreSourceTableArnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"restoreSourceTableArn",
 		val,
 	)
 }
@@ -1759,6 +1794,14 @@ func (d *jsiiProxy_DynamodbTable) ResetRestoreSourceName() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetRestoreSourceName",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DynamodbTable) ResetRestoreSourceTableArn() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetRestoreSourceTableArn",
 		nil, // no parameters
 	)
 }

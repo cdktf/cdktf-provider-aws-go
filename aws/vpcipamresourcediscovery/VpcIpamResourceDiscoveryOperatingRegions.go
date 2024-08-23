@@ -5,7 +5,7 @@ package vpcipamresourcediscovery
 
 
 type VpcIpamResourceDiscoveryOperatingRegions struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/vpc_ipam_resource_discovery#region_name VpcIpamResourceDiscovery#region_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/vpc_ipam_resource_discovery#region_name VpcIpamResourceDiscovery#region_name}.
 	RegionName *string `field:"required" json:"regionName" yaml:"regionName"`
 }
 

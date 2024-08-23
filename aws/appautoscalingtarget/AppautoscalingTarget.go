@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/appautoscaling_target aws_appautoscaling_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/appautoscaling_target aws_appautoscaling_target}.
 type AppautoscalingTarget interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -77,6 +77,8 @@ type AppautoscalingTarget interface {
 	ServiceNamespace() *string
 	SetServiceNamespace(val *string)
 	ServiceNamespaceInput() *string
+	SuspendedState() AppautoscalingTargetSuspendedStateOutputReference
+	SuspendedStateInput() *AppautoscalingTargetSuspendedState
 	Tags() *map[string]*string
 	SetTags(val *map[string]*string)
 	TagsAll() *map[string]*string
@@ -132,11 +134,13 @@ type AppautoscalingTarget interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutSuspendedState(value *AppautoscalingTargetSuspendedState)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetRoleArn()
+	ResetSuspendedState()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -437,6 +441,26 @@ func (j *jsiiProxy_AppautoscalingTarget) ServiceNamespaceInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_AppautoscalingTarget) SuspendedState() AppautoscalingTargetSuspendedStateOutputReference {
+	var returns AppautoscalingTargetSuspendedStateOutputReference
+	_jsii_.Get(
+		j,
+		"suspendedState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_AppautoscalingTarget) SuspendedStateInput() *AppautoscalingTargetSuspendedState {
+	var returns *AppautoscalingTargetSuspendedState
+	_jsii_.Get(
+		j,
+		"suspendedStateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_AppautoscalingTarget) Tags() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -508,7 +532,7 @@ func (j *jsiiProxy_AppautoscalingTarget) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/appautoscaling_target aws_appautoscaling_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/appautoscaling_target aws_appautoscaling_target} Resource.
 func NewAppautoscalingTarget(scope constructs.Construct, id *string, config *AppautoscalingTargetConfig) AppautoscalingTarget {
 	_init_.Initialize()
 
@@ -526,7 +550,7 @@ func NewAppautoscalingTarget(scope constructs.Construct, id *string, config *App
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/appautoscaling_target aws_appautoscaling_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/appautoscaling_target aws_appautoscaling_target} Resource.
 func NewAppautoscalingTarget_Override(a AppautoscalingTarget, scope constructs.Construct, id *string, config *AppautoscalingTargetConfig) {
 	_init_.Initialize()
 
@@ -1057,6 +1081,17 @@ func (a *jsiiProxy_AppautoscalingTarget) OverrideLogicalId(newLogicalId *string)
 	)
 }
 
+func (a *jsiiProxy_AppautoscalingTarget) PutSuspendedState(value *AppautoscalingTargetSuspendedState) {
+	if err := a.validatePutSuspendedStateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"putSuspendedState",
+		[]interface{}{value},
+	)
+}
+
 func (a *jsiiProxy_AppautoscalingTarget) ResetId() {
 	_jsii_.InvokeVoid(
 		a,
@@ -1077,6 +1112,14 @@ func (a *jsiiProxy_AppautoscalingTarget) ResetRoleArn() {
 	_jsii_.InvokeVoid(
 		a,
 		"resetRoleArn",
+		nil, // no parameters
+	)
+}
+
+func (a *jsiiProxy_AppautoscalingTarget) ResetSuspendedState() {
+	_jsii_.InvokeVoid(
+		a,
+		"resetSuspendedState",
 		nil, // no parameters
 	)
 }

@@ -5,9 +5,9 @@ package transferworkflow
 
 
 type TransferWorkflowOnExceptionStepsTagStepDetailsTags struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/transfer_workflow#key TransferWorkflow#key}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/transfer_workflow#key TransferWorkflow#key}.
 	Key *string `field:"required" json:"key" yaml:"key"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/transfer_workflow#value TransferWorkflow#value}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/transfer_workflow#value TransferWorkflow#value}.
 	Value *string `field:"required" json:"value" yaml:"value"`
 }
 

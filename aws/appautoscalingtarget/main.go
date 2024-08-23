@@ -51,10 +51,12 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
+			_jsii_.MemberMethod{JsiiMethod: "putSuspendedState", GoMethod: "PutSuspendedState"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRoleArn", GoMethod: "ResetRoleArn"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSuspendedState", GoMethod: "ResetSuspendedState"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTagsAll", GoMethod: "ResetTagsAll"},
 			_jsii_.MemberProperty{JsiiProperty: "resourceId", GoGetter: "ResourceId"},
@@ -65,6 +67,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "scalableDimensionInput", GoGetter: "ScalableDimensionInput"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceNamespace", GoGetter: "ServiceNamespace"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceNamespaceInput", GoGetter: "ServiceNamespaceInput"},
+			_jsii_.MemberProperty{JsiiProperty: "suspendedState", GoGetter: "SuspendedState"},
+			_jsii_.MemberProperty{JsiiProperty: "suspendedStateInput", GoGetter: "SuspendedStateInput"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
@@ -88,5 +92,50 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-aws.appautoscalingTarget.AppautoscalingTargetConfig",
 		reflect.TypeOf((*AppautoscalingTargetConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-aws.appautoscalingTarget.AppautoscalingTargetSuspendedState",
+		reflect.TypeOf((*AppautoscalingTargetSuspendedState)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-aws.appautoscalingTarget.AppautoscalingTargetSuspendedStateOutputReference",
+		reflect.TypeOf((*AppautoscalingTargetSuspendedStateOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "dynamicScalingInSuspended", GoGetter: "DynamicScalingInSuspended"},
+			_jsii_.MemberProperty{JsiiProperty: "dynamicScalingInSuspendedInput", GoGetter: "DynamicScalingInSuspendedInput"},
+			_jsii_.MemberProperty{JsiiProperty: "dynamicScalingOutSuspended", GoGetter: "DynamicScalingOutSuspended"},
+			_jsii_.MemberProperty{JsiiProperty: "dynamicScalingOutSuspendedInput", GoGetter: "DynamicScalingOutSuspendedInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDynamicScalingInSuspended", GoMethod: "ResetDynamicScalingInSuspended"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDynamicScalingOutSuspended", GoMethod: "ResetDynamicScalingOutSuspended"},
+			_jsii_.MemberMethod{JsiiMethod: "resetScheduledScalingSuspended", GoMethod: "ResetScheduledScalingSuspended"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "scheduledScalingSuspended", GoGetter: "ScheduledScalingSuspended"},
+			_jsii_.MemberProperty{JsiiProperty: "scheduledScalingSuspendedInput", GoGetter: "ScheduledScalingSuspendedInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_AppautoscalingTargetSuspendedStateOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
 	)
 }

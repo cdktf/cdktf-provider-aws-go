@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/eks_fargate_profile aws_eks_fargate_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/eks_fargate_profile aws_eks_fargate_profile}.
 type EksFargateProfile interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -520,7 +520,7 @@ func (j *jsiiProxy_EksFargateProfile) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/eks_fargate_profile aws_eks_fargate_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/eks_fargate_profile aws_eks_fargate_profile} Resource.
 func NewEksFargateProfile(scope constructs.Construct, id *string, config *EksFargateProfileConfig) EksFargateProfile {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewEksFargateProfile(scope constructs.Construct, id *string, config *EksFar
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/eks_fargate_profile aws_eks_fargate_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/eks_fargate_profile aws_eks_fargate_profile} Resource.
 func NewEksFargateProfile_Override(e EksFargateProfile, scope constructs.Construct, id *string, config *EksFargateProfileConfig) {
 	_init_.Initialize()
 

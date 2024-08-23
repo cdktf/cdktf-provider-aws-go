@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/opensearch_domain aws_opensearch_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/data-sources/opensearch_domain aws_opensearch_domain}.
 type DataAwsOpensearchDomain interface {
 	cdktf.TerraformDataSource
 	AccessPolicies() *string
@@ -32,11 +32,13 @@ type DataAwsOpensearchDomain interface {
 	SetCount(val interface{})
 	Created() cdktf.IResolvable
 	DashboardEndpoint() *string
+	DashboardEndpointV2() *string
 	Deleted() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DomainEndpointV2HostedZoneId() *string
 	DomainId() *string
 	DomainName() *string
 	SetDomainName(val *string)
@@ -44,6 +46,7 @@ type DataAwsOpensearchDomain interface {
 	EbsOptions() DataAwsOpensearchDomainEbsOptionsList
 	EncryptionAtRest() DataAwsOpensearchDomainEncryptionAtRestList
 	Endpoint() *string
+	EndpointV2() *string
 	EngineVersion() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -258,6 +261,16 @@ func (j *jsiiProxy_DataAwsOpensearchDomain) DashboardEndpoint() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataAwsOpensearchDomain) DashboardEndpointV2() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dashboardEndpointV2",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataAwsOpensearchDomain) Deleted() cdktf.IResolvable {
 	var returns cdktf.IResolvable
 	_jsii_.Get(
@@ -273,6 +286,16 @@ func (j *jsiiProxy_DataAwsOpensearchDomain) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsOpensearchDomain) DomainEndpointV2HostedZoneId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"domainEndpointV2HostedZoneId",
 		&returns,
 	)
 	return returns
@@ -333,6 +356,16 @@ func (j *jsiiProxy_DataAwsOpensearchDomain) Endpoint() *string {
 	_jsii_.Get(
 		j,
 		"endpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataAwsOpensearchDomain) EndpointV2() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointV2",
 		&returns,
 	)
 	return returns
@@ -589,7 +622,7 @@ func (j *jsiiProxy_DataAwsOpensearchDomain) VpcOptions() DataAwsOpensearchDomain
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source.
 func NewDataAwsOpensearchDomain(scope constructs.Construct, id *string, config *DataAwsOpensearchDomainConfig) DataAwsOpensearchDomain {
 	_init_.Initialize()
 
@@ -607,7 +640,7 @@ func NewDataAwsOpensearchDomain(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/data-sources/opensearch_domain aws_opensearch_domain} Data Source.
 func NewDataAwsOpensearchDomain_Override(d DataAwsOpensearchDomain, scope constructs.Construct, id *string, config *DataAwsOpensearchDomainConfig) {
 	_init_.Initialize()
 

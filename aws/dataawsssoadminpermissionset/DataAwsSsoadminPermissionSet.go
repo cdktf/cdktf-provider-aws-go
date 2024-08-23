@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/ssoadmin_permission_set aws_ssoadmin_permission_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/data-sources/ssoadmin_permission_set aws_ssoadmin_permission_set}.
 type DataAwsSsoadminPermissionSet interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -404,7 +404,7 @@ func (j *jsiiProxy_DataAwsSsoadminPermissionSet) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/ssoadmin_permission_set aws_ssoadmin_permission_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/data-sources/ssoadmin_permission_set aws_ssoadmin_permission_set} Data Source.
 func NewDataAwsSsoadminPermissionSet(scope constructs.Construct, id *string, config *DataAwsSsoadminPermissionSetConfig) DataAwsSsoadminPermissionSet {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewDataAwsSsoadminPermissionSet(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/ssoadmin_permission_set aws_ssoadmin_permission_set} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/data-sources/ssoadmin_permission_set aws_ssoadmin_permission_set} Data Source.
 func NewDataAwsSsoadminPermissionSet_Override(d DataAwsSsoadminPermissionSet, scope constructs.Construct, id *string, config *DataAwsSsoadminPermissionSetConfig) {
 	_init_.Initialize()
 

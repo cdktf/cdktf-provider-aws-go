@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/devopsguru_event_sources_config aws_devopsguru_event_sources_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/devopsguru_event_sources_config aws_devopsguru_event_sources_config}.
 type DevopsguruEventSourcesConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -321,7 +321,7 @@ func (j *jsiiProxy_DevopsguruEventSourcesConfig) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/devopsguru_event_sources_config aws_devopsguru_event_sources_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/devopsguru_event_sources_config aws_devopsguru_event_sources_config} Resource.
 func NewDevopsguruEventSourcesConfig(scope constructs.Construct, id *string, config *DevopsguruEventSourcesConfigConfig) DevopsguruEventSourcesConfig {
 	_init_.Initialize()
 
@@ -339,7 +339,7 @@ func NewDevopsguruEventSourcesConfig(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/devopsguru_event_sources_config aws_devopsguru_event_sources_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/devopsguru_event_sources_config aws_devopsguru_event_sources_config} Resource.
 func NewDevopsguruEventSourcesConfig_Override(d DevopsguruEventSourcesConfig, scope constructs.Construct, id *string, config *DevopsguruEventSourcesConfigConfig) {
 	_init_.Initialize()
 

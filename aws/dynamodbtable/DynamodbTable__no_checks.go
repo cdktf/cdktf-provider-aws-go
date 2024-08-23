@@ -179,6 +179,10 @@ func (j *jsiiProxy_DynamodbTable) validateSetRestoreSourceNameParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_DynamodbTable) validateSetRestoreSourceTableArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_DynamodbTable) validateSetRestoreToLatestTimeParameters(val interface{}) error {
 	return nil
 }

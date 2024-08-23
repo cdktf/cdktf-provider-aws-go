@@ -5,7 +5,7 @@ package route53record
 
 
 type Route53RecordLatencyRoutingPolicy struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/resources/route53_record#region Route53Record#region}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/route53_record#region Route53Record#region}.
 	Region *string `field:"required" json:"region" yaml:"region"`
 }
 

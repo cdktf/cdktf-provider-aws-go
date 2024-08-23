@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/ec2_instance_type_offerings aws_ec2_instance_type_offerings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/data-sources/ec2_instance_type_offerings aws_ec2_instance_type_offerings}.
 type DataAwsEc2InstanceTypeOfferings interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_DataAwsEc2InstanceTypeOfferings) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/ec2_instance_type_offerings aws_ec2_instance_type_offerings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/data-sources/ec2_instance_type_offerings aws_ec2_instance_type_offerings} Data Source.
 func NewDataAwsEc2InstanceTypeOfferings(scope constructs.Construct, id *string, config *DataAwsEc2InstanceTypeOfferingsConfig) DataAwsEc2InstanceTypeOfferings {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewDataAwsEc2InstanceTypeOfferings(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.63.1/docs/data-sources/ec2_instance_type_offerings aws_ec2_instance_type_offerings} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/data-sources/ec2_instance_type_offerings aws_ec2_instance_type_offerings} Data Source.
 func NewDataAwsEc2InstanceTypeOfferings_Override(d DataAwsEc2InstanceTypeOfferings, scope constructs.Construct, id *string, config *DataAwsEc2InstanceTypeOfferingsConfig) {
 	_init_.Initialize()
 
