@@ -131,6 +131,10 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetNameParameters
 	return nil
 }
 
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetProcessParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

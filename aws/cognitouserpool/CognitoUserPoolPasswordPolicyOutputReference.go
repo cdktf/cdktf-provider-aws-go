@@ -35,6 +35,9 @@ type CognitoUserPoolPasswordPolicyOutputReference interface {
 	MinimumLength() *float64
 	SetMinimumLength(val *float64)
 	MinimumLengthInput() *float64
+	PasswordHistorySize() *float64
+	SetPasswordHistorySize(val *float64)
+	PasswordHistorySizeInput() *float64
 	RequireLowercase() interface{}
 	SetRequireLowercase(val interface{})
 	RequireLowercaseInput() interface{}
@@ -83,6 +86,7 @@ type CognitoUserPoolPasswordPolicyOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetMinimumLength()
+	ResetPasswordHistorySize()
 	ResetRequireLowercase()
 	ResetRequireNumbers()
 	ResetRequireSymbols()
@@ -168,6 +172,26 @@ func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) MinimumLengthIn
 	_jsii_.Get(
 		j,
 		"minimumLengthInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) PasswordHistorySize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordHistorySize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) PasswordHistorySizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"passwordHistorySizeInput",
 		&returns,
 	)
 	return returns
@@ -361,6 +385,17 @@ func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference)SetMinimumLength
 	_jsii_.Set(
 		j,
 		"minimumLength",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference)SetPasswordHistorySize(val *float64) {
+	if err := j.validateSetPasswordHistorySizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"passwordHistorySize",
 		val,
 	)
 }
@@ -632,6 +667,14 @@ func (c *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) ResetMinimumLen
 	_jsii_.InvokeVoid(
 		c,
 		"resetMinimumLength",
+		nil, // no parameters
+	)
+}
+
+func (c *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) ResetPasswordHistorySize() {
+	_jsii_.InvokeVoid(
+		c,
+		"resetPasswordHistorySize",
 		nil, // no parameters
 	)
 }

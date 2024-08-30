@@ -67,6 +67,10 @@ func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) validateSetMini
 	return nil
 }
 
+func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) validateSetPasswordHistorySizeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) validateSetRequireLowercaseParameters(val interface{}) error {
 	return nil
 }

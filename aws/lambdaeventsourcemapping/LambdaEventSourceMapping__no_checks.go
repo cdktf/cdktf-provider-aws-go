@@ -159,6 +159,10 @@ func (j *jsiiProxy_LambdaEventSourceMapping) validateSetIdParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_LambdaEventSourceMapping) validateSetKmsKeyArnParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_LambdaEventSourceMapping) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

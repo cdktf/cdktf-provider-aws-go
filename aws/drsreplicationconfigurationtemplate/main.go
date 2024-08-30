@@ -75,7 +75,6 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetEbsEncryptionKeyArn", GoMethod: "ResetEbsEncryptionKeyArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPitPolicy", GoMethod: "ResetPitPolicy"},
-			_jsii_.MemberMethod{JsiiMethod: "resetStagingAreaTags", GoMethod: "ResetStagingAreaTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "stagingAreaSubnetId", GoGetter: "StagingAreaSubnetId"},

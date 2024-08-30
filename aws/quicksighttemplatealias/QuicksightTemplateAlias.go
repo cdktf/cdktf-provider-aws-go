@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/quicksight_template_alias aws_quicksight_template_alias}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/quicksight_template_alias aws_quicksight_template_alias}.
 type QuicksightTemplateAlias interface {
 	cdktf.TerraformResource
 	AliasName() *string
@@ -401,7 +401,7 @@ func (j *jsiiProxy_QuicksightTemplateAlias) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/quicksight_template_alias aws_quicksight_template_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/quicksight_template_alias aws_quicksight_template_alias} Resource.
 func NewQuicksightTemplateAlias(scope constructs.Construct, id *string, config *QuicksightTemplateAliasConfig) QuicksightTemplateAlias {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewQuicksightTemplateAlias(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/quicksight_template_alias aws_quicksight_template_alias} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/quicksight_template_alias aws_quicksight_template_alias} Resource.
 func NewQuicksightTemplateAlias_Override(q QuicksightTemplateAlias, scope constructs.Construct, id *string, config *QuicksightTemplateAliasConfig) {
 	_init_.Initialize()
 

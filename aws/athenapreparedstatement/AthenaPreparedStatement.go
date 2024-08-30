@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/athena_prepared_statement aws_athena_prepared_statement}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/athena_prepared_statement aws_athena_prepared_statement}.
 type AthenaPreparedStatement interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_AthenaPreparedStatement) WorkgroupInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/athena_prepared_statement aws_athena_prepared_statement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/athena_prepared_statement aws_athena_prepared_statement} Resource.
 func NewAthenaPreparedStatement(scope constructs.Construct, id *string, config *AthenaPreparedStatementConfig) AthenaPreparedStatement {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewAthenaPreparedStatement(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/athena_prepared_statement aws_athena_prepared_statement} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/athena_prepared_statement aws_athena_prepared_statement} Resource.
 func NewAthenaPreparedStatement_Override(a AthenaPreparedStatement, scope constructs.Construct, id *string, config *AthenaPreparedStatementConfig) {
 	_init_.Initialize()
 

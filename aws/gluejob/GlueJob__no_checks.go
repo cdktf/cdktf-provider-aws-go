@@ -135,6 +135,10 @@ func (j *jsiiProxy_GlueJob) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_GlueJob) validateSetJobRunQueuingEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GlueJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

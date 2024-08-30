@@ -182,6 +182,14 @@ func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) validateSetMini
 	return nil
 }
 
+func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) validateSetPasswordHistorySizeParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_CognitoUserPoolPasswordPolicyOutputReference) validateSetRequireLowercaseParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

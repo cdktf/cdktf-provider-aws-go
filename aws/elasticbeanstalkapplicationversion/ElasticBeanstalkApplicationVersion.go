@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/elastic_beanstalk_application_version aws_elastic_beanstalk_application_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/elastic_beanstalk_application_version aws_elastic_beanstalk_application_version}.
 type ElasticBeanstalkApplicationVersion interface {
 	cdktf.TerraformResource
 	Application() *string
@@ -67,6 +67,9 @@ type ElasticBeanstalkApplicationVersion interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Process() interface{}
+	SetProcess(val interface{})
+	ProcessInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -138,6 +141,7 @@ type ElasticBeanstalkApplicationVersion interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProcess()
 	ResetTags()
 	ResetTagsAll()
 	SynthesizeAttributes() *map[string]interface{}
@@ -408,6 +412,26 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) Process() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"process",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) ProcessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"processInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -509,7 +533,7 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/elastic_beanstalk_application_version aws_elastic_beanstalk_application_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/elastic_beanstalk_application_version aws_elastic_beanstalk_application_version} Resource.
 func NewElasticBeanstalkApplicationVersion(scope constructs.Construct, id *string, config *ElasticBeanstalkApplicationVersionConfig) ElasticBeanstalkApplicationVersion {
 	_init_.Initialize()
 
@@ -527,7 +551,7 @@ func NewElasticBeanstalkApplicationVersion(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/elastic_beanstalk_application_version aws_elastic_beanstalk_application_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/elastic_beanstalk_application_version aws_elastic_beanstalk_application_version} Resource.
 func NewElasticBeanstalkApplicationVersion_Override(e ElasticBeanstalkApplicationVersion, scope constructs.Construct, id *string, config *ElasticBeanstalkApplicationVersionConfig) {
 	_init_.Initialize()
 
@@ -660,6 +684,17 @@ func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_ElasticBeanstalkApplicationVersion)SetProcess(val interface{}) {
+	if err := j.validateSetProcessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"process",
 		val,
 	)
 }
@@ -1086,6 +1121,14 @@ func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) ResetOverrideLogicalId() 
 	_jsii_.InvokeVoid(
 		e,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (e *jsiiProxy_ElasticBeanstalkApplicationVersion) ResetProcess() {
+	_jsii_.InvokeVoid(
+		e,
+		"resetProcess",
 		nil, // no parameters
 	)
 }

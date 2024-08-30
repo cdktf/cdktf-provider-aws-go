@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/data-sources/lakeformation_resource aws_lakeformation_resource}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/lakeformation_resource aws_lakeformation_resource}.
 type DataAwsLakeformationResource interface {
 	cdktf.TerraformDataSource
 	Arn() *string
@@ -310,7 +310,7 @@ func (j *jsiiProxy_DataAwsLakeformationResource) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/data-sources/lakeformation_resource aws_lakeformation_resource} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/lakeformation_resource aws_lakeformation_resource} Data Source.
 func NewDataAwsLakeformationResource(scope constructs.Construct, id *string, config *DataAwsLakeformationResourceConfig) DataAwsLakeformationResource {
 	_init_.Initialize()
 
@@ -328,7 +328,7 @@ func NewDataAwsLakeformationResource(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/data-sources/lakeformation_resource aws_lakeformation_resource} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/data-sources/lakeformation_resource aws_lakeformation_resource} Data Source.
 func NewDataAwsLakeformationResource_Override(d DataAwsLakeformationResource, scope constructs.Construct, id *string, config *DataAwsLakeformationResourceConfig) {
 	_init_.Initialize()
 

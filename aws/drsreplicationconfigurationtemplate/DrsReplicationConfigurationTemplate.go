@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/drs_replication_configuration_template aws_drs_replication_configuration_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/drs_replication_configuration_template aws_drs_replication_configuration_template}.
 type DrsReplicationConfigurationTemplate interface {
 	cdktf.TerraformResource
 	Arn() *string
@@ -161,7 +161,6 @@ type DrsReplicationConfigurationTemplate interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPitPolicy()
-	ResetStagingAreaTags()
 	ResetTags()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -693,7 +692,7 @@ func (j *jsiiProxy_DrsReplicationConfigurationTemplate) UseDedicatedReplicationS
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/drs_replication_configuration_template aws_drs_replication_configuration_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/drs_replication_configuration_template aws_drs_replication_configuration_template} Resource.
 func NewDrsReplicationConfigurationTemplate(scope constructs.Construct, id *string, config *DrsReplicationConfigurationTemplateConfig) DrsReplicationConfigurationTemplate {
 	_init_.Initialize()
 
@@ -711,7 +710,7 @@ func NewDrsReplicationConfigurationTemplate(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/drs_replication_configuration_template aws_drs_replication_configuration_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/drs_replication_configuration_template aws_drs_replication_configuration_template} Resource.
 func NewDrsReplicationConfigurationTemplate_Override(d DrsReplicationConfigurationTemplate, scope constructs.Construct, id *string, config *DrsReplicationConfigurationTemplateConfig) {
 	_init_.Initialize()
 
@@ -1347,14 +1346,6 @@ func (d *jsiiProxy_DrsReplicationConfigurationTemplate) ResetPitPolicy() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetPitPolicy",
-		nil, // no parameters
-	)
-}
-
-func (d *jsiiProxy_DrsReplicationConfigurationTemplate) ResetStagingAreaTags() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetStagingAreaTags",
 		nil, // no parameters
 	)
 }

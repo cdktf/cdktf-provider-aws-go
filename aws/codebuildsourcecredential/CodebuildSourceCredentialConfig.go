@@ -22,18 +22,18 @@ type CodebuildSourceCredentialConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/codebuild_source_credential#auth_type CodebuildSourceCredential#auth_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/codebuild_source_credential#auth_type CodebuildSourceCredential#auth_type}.
 	AuthType *string `field:"required" json:"authType" yaml:"authType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/codebuild_source_credential#server_type CodebuildSourceCredential#server_type}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/codebuild_source_credential#server_type CodebuildSourceCredential#server_type}.
 	ServerType *string `field:"required" json:"serverType" yaml:"serverType"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/codebuild_source_credential#token CodebuildSourceCredential#token}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/codebuild_source_credential#token CodebuildSourceCredential#token}.
 	Token *string `field:"required" json:"token" yaml:"token"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/codebuild_source_credential#id CodebuildSourceCredential#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/codebuild_source_credential#id CodebuildSourceCredential#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.64.0/docs/resources/codebuild_source_credential#user_name CodebuildSourceCredential#user_name}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/aws/5.65.0/docs/resources/codebuild_source_credential#user_name CodebuildSourceCredential#user_name}.
 	UserName *string `field:"optional" json:"userName" yaml:"userName"`
 }
 
